@@ -5,104 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Development Storyboard - Business of Marketing in Sport</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* Development-specific styles */
-        .storyboard-header {
-            background: linear-gradient(135deg, #1e3a8a, #dc2626);
-            color: white;
-            padding: var(--space-8) 0;
-            text-align: center;
-        }
+        /* Development Storyboard - Integration with styles.css */
         
         .dev-badge {
-            background: #dc2626;
-            color: white;
-            padding: var(--space-1) var(--space-3);
-            border-radius: var(--border-radius);
-            font-size: var(--font-size-xs);
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
             display: inline-block;
-            margin-bottom: var(--space-4);
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
         }
         
         .course-learning-outcome {
-            background: var(--primary-color);
+            background: #2c2c2c;
             color: white;
-            padding: var(--space-4);
-            border-radius: var(--border-radius);
-            margin-bottom: var(--space-4);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid #c5b783;
         }
         
         .module-storyboard {
-            border: 2px solid var(--border);
-            border-radius: var(--border-radius-lg);
-            padding: var(--space-6);
-            margin-bottom: var(--space-8);
-            background: var(--surface);
+            border: 2px solid #c5b783;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background: #fafaf8;
         }
         
         .module-storyboard h3 {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: var(--space-2);
-            margin-bottom: var(--space-4);
+            color: #2c2c2c;
+            border-bottom: 2px solid #c5b783;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
         }
         
         .outcome-mapping {
-            background: #f0f9ff;
-            border: 1px solid #0284c7;
-            border-radius: var(--border-radius);
-            padding: var(--space-4);
-            margin: var(--space-4) 0;
+            background: #f5f4f0;
+            border: 1px solid #c5b783;
+            padding: 1rem;
+            margin: 1rem 0;
         }
         
         .outcome-tag {
-            background: var(--secondary-color);
-            color: white;
-            padding: var(--space-1) var(--space-2);
-            border-radius: var(--border-radius);
-            font-size: var(--font-size-xs);
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
             font-weight: 600;
-            margin-right: var(--space-2);
+            margin-right: 0.5rem;
+            margin-bottom: 0.25rem;
             display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
         
         .activity-list {
             background: white;
-            border: 1px solid var(--border);
-            border-radius: var(--border-radius);
-            padding: var(--space-4);
-            margin: var(--space-4) 0;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            margin: 1rem 0;
         }
         
         .executive-profile {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: #2c2c2c;
             color: white;
-            padding: var(--space-4);
-            border-radius: var(--border-radius);
-            margin: var(--space-4) 0;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 4px solid #c5b783;
         }
         
         .content-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-4);
-            margin: var(--space-6) 0;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        /* Override container for better integration */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            background: white;
+            margin-top: 0;
+            margin-bottom: 0;
+            border-radius: 0;
+            box-shadow: none;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <header class="storyboard-header">
-        <div class="container">
-            <div class="dev-badge">Development Storyboard</div>
-            <h1>The Business of Marketing in Sport</h1>
-            <p class="course-subtitle">Course Development & Implementation Guide</p>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">BOMS</div>
+                    <div class="header-text">
+                        <h1>The Business of Marketing in Sport</h1>
+                        <p class="subtitle">Course Development & Implementation Guide</p>
+                    </div>
+                </div>
+                <div class="dev-badge">Development Storyboard</div>
+            </div>
+        </header>
 
-    <main class="container">
-        <!-- Course Learning Outcomes Overview -->
+        <main>
+            <!-- Course Learning Outcomes Overview -->
         <section id="course-outcomes">
             <h2>Course Learning Outcomes (CLO)</h2>
             <p>Six measurable outcomes that students will achieve through module-specific activities:</p>
@@ -521,10 +535,9 @@
                 </div>
             </div>
         </section>
-    </main>
+        </main>
 
-    <footer>
-        <div class="container">
+        <footer>
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Development Team</h4>
@@ -547,8 +560,8 @@
                     <p>Five executive-led modules with real-world case studies, strategic frameworks, and hands-on application opportunities.</p>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="assets/js/main.js"></script>
 </body>

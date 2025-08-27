@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Session - Module 1</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        .progress-fill {
+            width: 75%;
+        }
+        
+        .session-hero {
+            background: linear-gradient(135deg, #2c2c2c, #4a4a4a);
+            color: white;
+            padding: 3rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .executive-profile {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin: 2rem 0;
+        }
+        
+        .executive-avatar {
+            width: 120px;
+            height: 120px;
+            background: #c5b783;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2c2c2c;
+        }
+        
+        .session-details {
+            background: #fafaf8;
+            border: 2px solid #c5b783;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .agenda-section {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .agenda-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: #fafaf8;
+            border-left: 4px solid #c5b783;
+        }
+        
+        .agenda-time {
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 0.5rem 1rem;
+            font-weight: 600;
+            min-width: 80px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        
+        .question-bank {
+            background: #f5f4f0;
+            border: 1px solid #c5b783;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .question-category {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .question-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin: 1rem 0;
+            padding: 0.75rem;
+            background: #fafaf8;
+            border-left: 3px solid #c5b783;
+        }
+        
+        .question-checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #c5b783;
+            background: white;
+            cursor: pointer;
+            flex-shrink: 0;
+            margin-top: 0.1rem;
+        }
+        
+        .question-checkbox.selected {
+            background: #c5b783;
+        }
+        
+        .question-checkbox.selected::after {
+            content: "✓";
+            color: white;
+            font-weight: bold;
+            font-size: 0.75rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .live-session {
+            background: #2c2c2c;
+            color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .session-status {
+            background: #dc2626;
+            color: white;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .session-status.upcoming {
+            background: #c5b783;
+            color: #2c2c2c;
+        }
+        
+        .session-status.live {
+            background: #dc2626;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .participation-tips {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .tech-check {
+            background: #f0f9ff;
+            border: 1px solid #0284c7;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .my-questions {
+            background: white;
+            border: 2px dashed #c5b783;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .question-input {
+            width: 100%;
+            min-height: 100px;
+            padding: 1rem;
+            border: 1px solid #c5b783;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        .saved-questions {
+            background: #fafaf8;
+            border-left: 4px solid #c5b783;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .saved-question {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .delete-question {
+            background: #dc2626;
+            color: white;
+            border: none;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <nav aria-label="Breadcrumb">
+                <a href="../../index.html">Course Home</a>
+                <span>→</span>
+                <a href="index.html">Module 1</a>
+                <span>→</span>
+                <span>Executive Session</span>
+            </nav>
+        </div>
+        
+        <!-- Module Header -->
+        <header>
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">M1</div>
+                    <div class="header-text">
+                        <h1>Executive Session</h1>
+                        <p class="subtitle">Live Discussion with Bell Media Leadership</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <!-- Progress Tracking -->
+            <section class="progress-section">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="step-indicator">
+                    <div class="step completed">
+                        <div class="step-number">1</div>
+                        <span>Overview</span>
+                    </div>
+                    <div class="step completed">
+                        <div class="step-number">2</div>
+                        <span>Resources</span>
+                    </div>
+                    <div class="step active">
+                        <div class="step-number">3</div>
+                        <span>Executive Session</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <span>Application</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Session Hero -->
+            <section class="session-hero">
+                <div class="session-status upcoming" id="session-status">
+                    Session Starting Soon
+                </div>
+                <h2>Live with Bell Media / TSN / RDS Executive</h2>
+                <p style="font-size: 1.25rem; margin: 1.5rem 0;">This is your opportunity to engage directly with a senior leader shaping Canada's sports media landscape.</p>
+            </section>
+            
+            <!-- Executive Profile -->
+            <section class="session-details">
+                <h2>Meet Your Executive Leader</h2>
+                <div class="executive-profile">
+                    <div class="executive-avatar">TSN</div>
+                    <div>
+                        <h3>Senior Executive, Bell Media / TSN / RDS</h3>
+                        <p><strong>Background:</strong> Over 15 years leading content strategy, media rights negotiations, and audience development at Canada's premier sports media company.</p>
+                        <p><strong>Recent Projects:</strong> Led digital transformation initiatives, negotiated major league partnerships, and developed innovative programming strategies that increased viewership by 23% over three years.</p>
+                        <p><strong>Expertise:</strong> Media rights valuation, content programming, digital platform strategy, and audience analytics.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Session Agenda -->
+            <section class="agenda-section">
+                <h2>Session Agenda (90 minutes)</h2>
+                <div class="agenda-item">
+                    <div class="agenda-time">5 min</div>
+                    <div>
+                        <h4>Welcome & Introductions</h4>
+                        <p>Brief welcome and executive background</p>
+                    </div>
+                </div>
+                
+                <div class="agenda-item">
+                    <div class="agenda-time">20 min</div>
+                    <div>
+                        <h4>Media Rights Landscape Overview</h4>
+                        <p>Current state of Canadian sports media rights, key players, and market dynamics</p>
+                    </div>
+                </div>
+                
+                <div class="agenda-item">
+                    <div class="agenda-time">25 min</div>
+                    <div>
+                        <h4>Case Study: Real Rights Negotiation</h4>
+                        <p>Behind-the-scenes look at a major media rights deal (anonymized but real)</p>
+                    </div>
+                </div>
+                
+                <div class="agenda-item">
+                    <div class="agenda-time">30 min</div>
+                    <div>
+                        <h4>Student Q&A Session</h4>
+                        <p>Your questions answered directly by our executive leader</p>
+                    </div>
+                </div>
+                
+                <div class="agenda-item">
+                    <div class="agenda-time">10 min</div>
+                    <div>
+                        <h4>Key Takeaways & Next Steps</h4>
+                        <p>Summary of insights and preparation for application activities</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Question Preparation -->
+            <section class="question-bank">
+                <h2>Prepare Your Questions</h2>
+                <p>Choose from these suggested questions or add your own. Great questions lead to great insights!</p>
+                
+                <div class="question-category">
+                    <h3>📊 Valuation & Strategy Questions</h3>
+                    <div class="question-item">
+                        <div class="question-checkbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                        <div>
+                            <strong>How do you determine the fair market value for sports rights in a rapidly changing media landscape?</strong>
+                            <p>Great for understanding valuation methodologies and market factors.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-checkbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                        <div>
+                            <strong>What's the biggest mistake you see companies make in media rights negotiations?</strong>
+                            <p>Learn from real-world experience and common pitfalls.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-checkbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                        <div>
+                            <strong>How has cord-cutting affected your approach to rights valuations?</strong>
+                            <p>Understand how industry disruption impacts strategic decisions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-category">
+                    <h3>📺 Content & Programming Questions</h3>
+                    <div class="question-item">
+                        <div class="question-checkbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                        <div>
+                            <strong>How do you balance marquee programming with shoulder content in your schedules?</strong>
+                            <p>Learn about comprehensive programming strategy beyond just the big games.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-checkbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                        <div>
+                            <strong>What role does data analytics play in your content decisions?</strong>
+                            <p>Understand how audience insights drive programming choices.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question-category">
+                    <h3>🔮 Future & Innovation Questions</h3>
+                    <div class="question-item">
+                        <div class="question-checkbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                        <div>
+                            <strong>Where do you see sports media rights heading in the next 5-10 years?</strong>
+                            <p>Get insights on industry trends and future opportunities.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-checkbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                        <div>
+                            <strong>How are emerging technologies changing how you think about content distribution?</strong>
+                            <p>Explore the impact of new tech on traditional broadcasting.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Personal Questions Section -->
+            <section class="my-questions">
+                <h2>Your Personal Questions</h2>
+                <p>Based on your readings and interests, what specific questions do you want to ask?</p>
+                
+                <textarea class="question-input" id="new-question" placeholder="Write your question here... (e.g., 'Given your experience with the NHL rights situation, how do you advise smaller leagues on positioning themselves for media partnerships?')"></textarea>
+                
+                <button class="btn-primary" onclick="addQuestion()" style="margin-top: 1rem;">Add Question</button>
+                
+                <div id="saved-questions" class="saved-questions" style="display: none;">
+                    <h4>Your Saved Questions:</h4>
+                    <div id="questions-list"></div>
+                </div>
+            </section>
+            
+            <!-- Participation Tips -->
+            <section class="participation-tips">
+                <h2>💡 Getting the Most from Your Session</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 1.5rem 0;">
+                    <div class="overview-card">
+                        <h4>📝 Before the Session</h4>
+                        <ul>
+                            <li>Review your pre-reading notes</li>
+                            <li>Prepare 2-3 specific questions</li>
+                            <li>Test your tech setup</li>
+                            <li>Find a quiet space for participation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <h4>🗣️ During the Session</h4>
+                        <ul>
+                            <li>Take notes on key insights</li>
+                            <li>Ask follow-up questions</li>
+                            <li>Reference specific examples from readings</li>
+                            <li>Listen actively to classmates' questions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <h4>📚 After the Session</h4>
+                        <ul>
+                            <li>Review session recording (available within 4 hours)</li>
+                            <li>Complete your reflection activity</li>
+                            <li>Connect insights to case study work</li>
+                            <li>Share thoughts in discussion forum</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Tech Check -->
+            <section class="tech-check">
+                <h3>🔧 Technical Requirements</h3>
+                <p><strong>Platform:</strong> Zoom (link provided 30 minutes before session)</p>
+                <p><strong>Requirements:</strong> Stable internet connection, webcam optional but encouraged, microphone for Q&A</p>
+                <p><strong>Accessibility:</strong> Live captions provided, recording with full transcript available post-session</p>
+                <p><strong>Backup:</strong> Audio-only dial-in option available, session materials accessible in multiple formats</p>
+            </section>
+            
+            <!-- Live Session Area -->
+            <section class="live-session">
+                <h2>🔴 Live Session</h2>
+                <div id="session-content">
+                    <p style="font-size: 1.25rem; margin: 1.5rem 0;">Session begins at your scheduled time</p>
+                    <p>The Zoom link will appear here 30 minutes before your session starts.</p>
+                    
+                    <div style="margin: 2rem 0;">
+                        <button class="btn-primary" style="opacity: 0.5; pointer-events: none;" id="join-session-btn">
+                            Join Live Session
+                        </button>
+                    </div>
+                    
+                    <p style="font-size: 0.875rem; opacity: 0.8;">Can't make the live session? Don't worry - full recordings with transcripts are available within 4 hours.</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Session Support</h4>
+                    <ul>
+                        <li><a href="#tech-help">Technical Help</a></li>
+                        <li><a href="#accessibility">Accessibility Options</a></li>
+                        <li><a href="#recording">Session Recording</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Questions?</h4>
+                    <ul>
+                        <li><a href="#discussion">Discussion Forum</a></li>
+                        <li><a href="#office-hours">Office Hours</a></li>
+                        <li><a href="#email">Email Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Up Next</h4>
+                    <p>After the session, you'll apply your insights to real case studies.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        // Question selection functionality
+        document.querySelectorAll('.question-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('click', function() {
+                this.classList.toggle('selected');
+                const isSelected = this.classList.contains('selected');
+                this.setAttribute('aria-checked', isSelected.toString());
+            });
+            
+            checkbox.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+        
+        // Personal questions functionality
+        let savedQuestions = JSON.parse(localStorage.getItem('module1-questions') || '[]');
+        
+        function addQuestion() {
+            const input = document.getElementById('new-question');
+            const question = input.value.trim();
+            
+            if (question) {
+                savedQuestions.push({
+                    id: Date.now(),
+                    text: question,
+                    timestamp: new Date().toLocaleDateString()
+                });
+                
+                localStorage.setItem('module1-questions', JSON.stringify(savedQuestions));
+                input.value = '';
+                renderQuestions();
+                
+                if (window.announceToScreenReader) {
+                    window.announceToScreenReader('Question added to your list');
+                }
+            }
+        }
+        
+        function deleteQuestion(id) {
+            savedQuestions = savedQuestions.filter(q => q.id !== id);
+            localStorage.setItem('module1-questions', JSON.stringify(savedQuestions));
+            renderQuestions();
+        }
+        
+        function renderQuestions() {
+            const container = document.getElementById('saved-questions');
+            const list = document.getElementById('questions-list');
+            
+            if (savedQuestions.length > 0) {
+                container.style.display = 'block';
+                list.innerHTML = savedQuestions.map(q => `
+                    <div class="saved-question">
+                        <div>
+                            <strong>${q.text}</strong>
+                            <div style="font-size: 0.875rem; color: #666; margin-top: 0.25rem;">Added: ${q.timestamp}</div>
+                        </div>
+                        <button class="delete-question" onclick="deleteQuestion(${q.id})">Delete</button>
+                    </div>
+                `).join('');
+            } else {
+                container.style.display = 'none';
+            }
+        }
+        
+        // Load saved questions on page load
+        renderQuestions();
+        
+        // Enter key support for question input
+        document.getElementById('new-question').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && e.ctrlKey) {
+                addQuestion();
+            }
+        });
+        
+        // Session status simulation (in real implementation, this would be dynamic)
+        function updateSessionStatus() {
+            const now = new Date();
+            const sessionTime = new Date(); // In real app, this would be the actual session time
+            sessionTime.setHours(sessionTime.getHours() + 1); // Example: session in 1 hour
+            
+            const status = document.getElementById('session-status');
+            const joinBtn = document.getElementById('join-session-btn');
+            
+            // This is just a simulation - real implementation would check actual session times
+            const timeUntilSession = sessionTime - now;
+            
+            if (timeUntilSession > 30 * 60 * 1000) { // More than 30 minutes
+                status.textContent = 'Session Starting Soon';
+                status.className = 'session-status upcoming';
+            } else if (timeUntilSession > 0) { // Within 30 minutes
+                status.textContent = 'Join Session Now';
+                status.className = 'session-status live';
+                joinBtn.style.opacity = '1';
+                joinBtn.style.pointerEvents = 'auto';
+                joinBtn.textContent = 'Join Live Session - Starting Soon';
+            } else { // Session time passed
+                status.textContent = 'Session Completed';
+                status.className = 'session-status completed';
+                joinBtn.textContent = 'View Session Recording';
+            }
+        }
+        
+        // Update session status every minute
+        updateSessionStatus();
+        setInterval(updateSessionStatus, 60000);
+    </script>
+</body>
+</html>

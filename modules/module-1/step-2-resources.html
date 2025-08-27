@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Reading & Resources - Module 1</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <style>
+        /* Step 2 specific styling */
+        .progress-fill {
+            background: #c5b783;
+            height: 100%;
+            width: 50%;
+            transition: width 0.3s ease;
+        }
+        
+        .resource-section {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .resource-type-badge {
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .reading-checklist {
+            background: #fafaf8;
+            border-left: 4px solid #c5b783;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .reading-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: white;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .reading-checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #c5b783;
+            background: white;
+            cursor: pointer;
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+            position: relative;
+        }
+        
+        .reading-checkbox.checked {
+            background: #c5b783;
+        }
+        
+        .reading-checkbox.checked::after {
+            content: "✓";
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            font-size: 0.875rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .reading-content h4 {
+            margin-bottom: 0.5rem;
+            color: #2c2c2c;
+        }
+        
+        .reading-meta {
+            color: #666;
+            font-size: 0.875rem;
+            margin: 0.5rem 0;
+        }
+        
+        .key-concepts {
+            background: #f5f4f0;
+            border: 1px solid #c5b783;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .concept-tag {
+            background: white;
+            border: 1px solid #c5b783;
+            color: #2c2c2c;
+            padding: 0.25rem 0.75rem;
+            margin: 0.25rem;
+            font-size: 0.875rem;
+            display: inline-block;
+        }
+        
+        .interactive-tool {
+            background: linear-gradient(135deg, #2c2c2c, #4a4a4a);
+            color: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .tool-preview {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .progress-tracker {
+            background: #fafaf8;
+            border: 2px solid #c5b783;
+            padding: 1.5rem;
+            position: sticky;
+            top: 2rem;
+        }
+        
+        .progress-text {
+            font-size: 0.875rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .video-placeholder {
+            background: #f5f4f0;
+            border: 2px dashed #c5b783;
+            padding: 3rem;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        
+        .accessibility-features {
+            background: #f0f9ff;
+            border: 1px solid #0284c7;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <nav aria-label="Breadcrumb">
+                <a href="../../index.html">Course Home</a>
+                <span>→</span>
+                <a href="index.html">Module 1</a>
+                <span>→</span>
+                <span>Pre-Reading & Resources</span>
+            </nav>
+        </div>
+        
+        <!-- Module Header -->
+        <header>
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">M1</div>
+                    <div class="header-text">
+                        <h1>Pre-Reading & Resources</h1>
+                        <p class="subtitle">Essential Background for Media Rights Understanding</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <!-- Progress Tracking -->
+            <section class="progress-section">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="step-indicator">
+                    <div class="step completed">
+                        <div class="step-number">1</div>
+                        <span>Overview</span>
+                    </div>
+                    <div class="step active">
+                        <div class="step-number">2</div>
+                        <span>Resources</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <span>Executive Session</span>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <span>Application</span>
+                    </div>
+                </div>
+            </section>
+
+            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; align-items: start;">
+                <div>
+                    <!-- Essential Reading -->
+                    <section class="resource-section">
+                        <div class="resource-type-badge">Essential Reading</div>
+                        <h2>Industry Reports & Background</h2>
+                        <p>These readings provide the foundation you'll need to engage meaningfully with our Bell Media executive.</p>
+                        
+                        <div class="reading-checklist">
+                            <h3>Complete These Readings (45-60 minutes total)</h3>
+                            
+                            <div class="reading-item">
+                                <div class="reading-checkbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                                <div class="reading-content">
+                                    <h4>Global Sports Media Rights Report 2024</h4>
+                                    <div class="reading-meta">📄 Pages 1-15, 28-35 • ⏱️ 20 minutes</div>
+                                    <p>Focus on the Canadian market analysis and digital platform trends. Pay special attention to the section on "Streaming vs. Traditional Broadcast Revenue Models."</p>
+                                    <div class="accessibility-features">
+                                        <strong>Available in:</strong> PDF with screen reader support, audio version (25 min), large print version
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="reading-item">
+                                <div class="reading-checkbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                                <div class="reading-content">
+                                    <h4>Canadian Broadcasting Landscape Analysis</h4>
+                                    <div class="reading-meta">📄 Full article • ⏱️ 15 minutes</div>
+                                    <p>Understanding the competitive dynamics between Rogers Sportsnet, TSN/RDS, and CBC Sports. This gives crucial context for our executive discussion.</p>
+                                    <div class="accessibility-features">
+                                        <strong>Available in:</strong> Web article with adjustable text size, podcast summary (18 min)
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="reading-item">
+                                <div class="reading-checkbox" role="checkbox" aria-checked="false" tabindex="0"></div>
+                                <div class="reading-content">
+                                    <h4>Case Study: TSN's NHL Rights Strategy</h4>
+                                    <div class="reading-meta">📄 Case study • ⏱️ 12 minutes</div>
+                                    <p>How TSN maintained relevance after losing national NHL rights to Rogers. A masterclass in strategic adaptation.</p>
+                                    <div class="accessibility-features">
+                                        <strong>Available in:</strong> Interactive case study, text version, video summary (15 min)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Key Concepts -->
+                    <section class="key-concepts">
+                        <h3>Key Concepts to Understand</h3>
+                        <p>Make sure you're comfortable with these terms before the executive session:</p>
+                        
+                        <div style="margin: 1rem 0;">
+                            <span class="concept-tag">Media Rights Valuation</span>
+                            <span class="concept-tag">Audience Reach</span>
+                            <span class="concept-tag">CPM (Cost Per Mille)</span>
+                            <span class="concept-tag">Carriage Fees</span>
+                            <span class="concept-tag">Digital Streaming Rights</span>
+                            <span class="concept-tag">Shoulder Programming</span>
+                            <span class="concept-tag">Live+7 Ratings</span>
+                            <span class="concept-tag">Cord-Cutting</span>
+                            <span class="concept-tag">OTT Platforms</span>
+                        </div>
+                        
+                        <p><strong>Need definitions?</strong> Hover over any concept tag for a quick definition, or check the glossary in your course materials.</p>
+                    </section>
+                    
+                    <!-- Interactive Content -->
+                    <section class="interactive-tool">
+                        <h2>🛠️ Hands-On: Media Rights Valuation Calculator</h2>
+                        <p>Before meeting with our executive, get hands-on experience with the tools and metrics they use daily.</p>
+                        
+                        <div class="tool-preview">
+                            <h3>What You'll Calculate:</h3>
+                            <ul style="text-align: left; max-width: 500px; margin: 0 auto;">
+                                <li><strong>Audience Value:</strong> Convert viewership numbers into revenue potential</li>
+                                <li><strong>Market Comparisons:</strong> See how different sports properties stack up</li>
+                                <li><strong>Platform Analysis:</strong> Traditional TV vs. streaming value propositions</li>
+                                <li><strong>Regional Factors:</strong> How Canadian market dynamics affect valuations</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="video-placeholder">
+                            <h4>📹 Video Tutorial: Using the Calculator (8 minutes)</h4>
+                            <p>Watch our step-by-step guide to the media rights calculator</p>
+                            <div class="accessibility-features">
+                                <strong>Accessibility:</strong> Full captions, audio description available, transcript provided
+                            </div>
+                        </div>
+                        
+                        <a href="#calculator" class="btn-primary" style="margin-top: 1rem;">Launch Media Rights Calculator</a>
+                    </section>
+                    
+                    <!-- Preparation Questions -->
+                    <section class="resource-section">
+                        <div class="resource-type-badge">Executive Session Prep</div>
+                        <h2>Questions to Consider</h2>
+                        <p>As you complete the readings, think about these questions. You'll have a chance to ask our executive directly!</p>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+                            <div class="overview-card">
+                                <h4>📊 Valuation Questions</h4>
+                                <ul>
+                                    <li>What factors most influence media rights pricing in Canada?</li>
+                                    <li>How do you measure ROI on a major sports rights deal?</li>
+                                    <li>What's the impact of cord-cutting on rights valuations?</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="overview-card">
+                                <h4>📺 Strategy Questions</h4>
+                                <ul>
+                                    <li>How do you build programming around marquee sports properties?</li>
+                                    <li>What role does shoulder programming play in rights deals?</li>
+                                    <li>How do you compete with streaming platforms?</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="overview-card">
+                                <h4>🔮 Future Questions</h4>
+                                <ul>
+                                    <li>Where do you see sports media rights heading in the next 5 years?</li>
+                                    <li>How important will direct-to-consumer streaming become?</li>
+                                    <li>What new technologies are changing the game?</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Optional Deep Dive -->
+                    <section class="resource-section" style="border-style: dashed; opacity: 0.8;">
+                        <div class="resource-type-badge" style="background: #666;">Optional Deep Dive</div>
+                        <h2>For Those Who Want More</h2>
+                        <p>These materials aren't required, but they'll give you even deeper insights:</p>
+                        
+                        <div class="reading-item">
+                            <div class="reading-content">
+                                <h4>📚 Academic Research: "The Economics of Sports Broadcasting"</h4>
+                                <div class="reading-meta">📄 Research paper • ⏱️ 30 minutes</div>
+                                <p>Peer-reviewed analysis of market dynamics and valuation methodologies in North American sports media.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="reading-item">
+                            <div class="reading-content">
+                                <h4>🎧 Podcast: "Media Rights Insider" - Episode 47</h4>
+                                <div class="reading-meta">🎧 Podcast • ⏱️ 45 minutes</div>
+                                <p>Interview with former ESPN executive on the future of sports media rights negotiations.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="reading-item">
+                            <div class="reading-content">
+                                <h4>🌍 International Comparison: UK Sports Media Market</h4>
+                                <div class="reading-meta">📄 Case study • ⏱️ 20 minutes</div>
+                                <p>How Sky Sports and BT Sport compete, and lessons for the Canadian market.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                
+                <!-- Sidebar -->
+                <div>
+                    <div class="progress-tracker">
+                        <h3>Your Progress</h3>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin: 1rem 0;">
+                            <div style="width: 60px; height: 60px; background: #f5f4f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: bold; color: #c5b783;">
+                                <span id="progress-percentage">0%</span>
+                            </div>
+                            <div>
+                                <div style="font-weight: 600;">Readings Completed</div>
+                                <div class="progress-text" id="progress-text">0 of 3 essential readings</div>
+                            </div>
+                        </div>
+                        
+                        <div style="margin: 1.5rem 0;">
+                            <h4>Up Next:</h4>
+                            <p style="font-size: 0.875rem;">Complete your readings, then join our executive session to discuss real-world applications.</p>
+                        </div>
+                        
+                        <a href="step-3-executive.html" class="btn-primary" style="width: 100%; text-align: center; opacity: 0.5; pointer-events: none;" id="next-step-btn">
+                            Executive Session →
+                        </a>
+                        <p style="font-size: 0.75rem; margin-top: 0.5rem; color: #666;">Complete essential readings to continue</p>
+                    </div>
+                    
+                    <!-- Study Tips -->
+                    <div style="background: #f5f4f0; border: 1px solid #c5b783; padding: 1.5rem; margin: 1rem 0;">
+                        <h4>💡 Study Tips</h4>
+                        <ul style="font-size: 0.875rem; margin: 1rem 0;">
+                            <li>Take notes as you read - you'll use them in the executive session</li>
+                            <li>Focus on Canadian examples and case studies</li>
+                            <li>Try the calculator with different scenarios</li>
+                            <li>Prepare 2-3 specific questions for our guest</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Reading Support</h4>
+                    <ul>
+                        <li><a href="#audioversions">Audio Versions</a></li>
+                        <li><a href="#transcripts">Transcripts Available</a></li>
+                        <li><a href="#translations">Translation Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Questions?</h4>
+                    <ul>
+                        <li><a href="#discussion">Ask in Discussion Forum</a></li>
+                        <li><a href="#office-hours">Virtual Office Hours</a></li>
+                        <li><a href="#study-groups">Join Study Groups</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Module Navigation</h4>
+                    <p>Step 2 of 4 - You're doing great!</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        // Reading checklist functionality
+        let completedReadings = 0;
+        const totalReadings = 3;
+        
+        document.querySelectorAll('.reading-checkbox').forEach((checkbox, index) => {
+            checkbox.addEventListener('click', function() {
+                const isChecked = this.classList.contains('checked');
+                
+                if (!isChecked) {
+                    this.classList.add('checked');
+                    this.setAttribute('aria-checked', 'true');
+                    completedReadings++;
+                } else {
+                    this.classList.remove('checked');
+                    this.setAttribute('aria-checked', 'false');
+                    completedReadings--;
+                }
+                
+                updateProgress();
+            });
+            
+            // Keyboard support
+            checkbox.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+        
+        function updateProgress() {
+            const percentage = Math.round((completedReadings / totalReadings) * 100);
+            document.getElementById('progress-percentage').textContent = percentage + '%';
+            document.getElementById('progress-text').textContent = `${completedReadings} of ${totalReadings} essential readings`;
+            
+            const nextBtn = document.getElementById('next-step-btn');
+            if (completedReadings === totalReadings) {
+                nextBtn.style.opacity = '1';
+                nextBtn.style.pointerEvents = 'auto';
+                nextBtn.nextElementSibling.textContent = 'Ready for executive session!';
+                
+                if (window.announceToScreenReader) {
+                    window.announceToScreenReader('All essential readings completed. You can now proceed to the executive session.');
+                }
+            } else {
+                nextBtn.style.opacity = '0.5';
+                nextBtn.style.pointerEvents = 'none';
+            }
+        }
+        
+        // Save progress to localStorage
+        function saveProgress() {
+            localStorage.setItem('module1-readings', completedReadings);
+        }
+        
+        // Load progress from localStorage
+        function loadProgress() {
+            const saved = localStorage.getItem('module1-readings');
+            if (saved) {
+                completedReadings = parseInt(saved);
+                updateProgress();
+                
+                // Check the appropriate boxes
+                document.querySelectorAll('.reading-checkbox').forEach((checkbox, index) => {
+                    if (index < completedReadings) {
+                        checkbox.classList.add('checked');
+                        checkbox.setAttribute('aria-checked', 'true');
+                    }
+                });
+            }
+        }
+        
+        // Load progress on page load
+        loadProgress();
+        
+        // Save progress when checkboxes change
+        document.querySelectorAll('.reading-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('click', saveProgress);
+        });
+    </script>
+</body>
+</html>

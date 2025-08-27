@@ -354,12 +354,58 @@ We follow **Web Content Accessibility Guidelines** Level AA:
 2. **Review CLAUDE.md**: See development log for current priorities
 3. **Ask Questions**: Don't hesitate to ask what needs work
 
+#### Fork-Based Collaboration Workflow
+
+**Important**: This project uses a **fork-based workflow** for collaboration. Here's how it works:
+
+1. **Fork the Repository**: 
+   - Go to the main repository on GitHub
+   - Click the "Fork" button (top right)
+   - This creates your own copy of the project
+
+2. **Clone Your Fork**:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/business-of-marketing-in-sport.git
+   cd business-of-marketing-in-sport
+   ```
+
+3. **Set Up Remotes**:
+   ```bash
+   # Your fork is automatically set as 'origin'
+   # Add the main repository as 'upstream'
+   git remote add upstream https://github.com/MAIN_OWNER/business-of-marketing-in-sport.git
+   
+   # Verify your remotes
+   git remote -v
+   ```
+
 #### Task Workflow
-1. **Pick a Task**: Choose something appropriate for your skill level
-2. **Create a Branch**: `git checkout -b feature/module-2-development`
-3. **Make Changes**: Work on your assigned task
-4. **Test Thoroughly**: Check functionality and accessibility
-5. **Submit for Review**: Create a pull request
+1. **Sync with Upstream**: Always start by getting the latest changes
+   ```bash
+   git checkout main
+   git pull upstream main
+   git push origin main  # Update your fork
+   ```
+
+2. **Pick a Task**: Choose something appropriate for your skill level
+
+3. **Create a Feature Branch**: 
+   ```bash
+   git checkout -b feature/module-2-development
+   ```
+
+4. **Make Changes**: Work on your assigned task
+
+5. **Push to Your Fork**:
+   ```bash
+   git push origin feature/module-2-development
+   ```
+
+6. **Create Pull Request**: 
+   - Go to GitHub and create a Pull Request from your fork to the main repository
+   - Describe what your changes do and why
+
+7. **Wait for Review**: The project maintainer will review and merge your changes
 
 #### Writing Good Commit Messages
 ```bash
@@ -391,11 +437,30 @@ git commit -m "update stuff"
 - **Naming Conventions**: Use descriptive, consistent names
 
 ### Pull Request Process
-1. **Create Branch**: Work on a feature branch, not main
-2. **Write Description**: Explain what your changes do
-3. **Include Screenshots**: Show before/after for visual changes
-4. **Test Checklist**: Confirm you've tested your changes
-5. **Request Review**: Ask a team member to review
+1. **Create Feature Branch**: Always work on a feature branch, never directly on main
+2. **Push to Your Fork**: Push your feature branch to your forked repository
+3. **Create Pull Request**: 
+   - Go to the main repository on GitHub
+   - Click "New Pull Request"
+   - Select "compare across forks"
+   - Choose your fork and feature branch as the source
+   - Choose the main repository and main branch as the destination
+4. **Write Description**: Explain what your changes do and why they're needed
+5. **Include Screenshots**: Show before/after for visual changes
+6. **Test Checklist**: Confirm you've tested your changes
+7. **Request Review**: The pull request will automatically notify maintainers
+
+### Keeping Your Fork Updated
+```bash
+# Before starting new work, always sync with upstream
+git checkout main
+git pull upstream main
+git push origin main
+
+# If you're working on a long-running branch, keep it updated
+git checkout your-feature-branch
+git merge main  # Or use rebase if you prefer
+```
 
 ---
 

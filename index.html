@@ -3,197 +3,520 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Business of Marketing in Sport - Course Portal</title>
+    <title>Course Development Storyboard - Business of Marketing in Sport</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Development-specific styles */
+        .storyboard-header {
+            background: linear-gradient(135deg, #1e3a8a, #dc2626);
+            color: white;
+            padding: var(--space-8) 0;
+            text-align: center;
+        }
+        
+        .dev-badge {
+            background: #dc2626;
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: var(--space-4);
+        }
+        
+        .course-learning-outcome {
+            background: var(--primary-color);
+            color: white;
+            padding: var(--space-4);
+            border-radius: var(--border-radius);
+            margin-bottom: var(--space-4);
+        }
+        
+        .module-storyboard {
+            border: 2px solid var(--border);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-6);
+            margin-bottom: var(--space-8);
+            background: var(--surface);
+        }
+        
+        .module-storyboard h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: var(--space-2);
+            margin-bottom: var(--space-4);
+        }
+        
+        .outcome-mapping {
+            background: #f0f9ff;
+            border: 1px solid #0284c7;
+            border-radius: var(--border-radius);
+            padding: var(--space-4);
+            margin: var(--space-4) 0;
+        }
+        
+        .outcome-tag {
+            background: var(--secondary-color);
+            color: white;
+            padding: var(--space-1) var(--space-2);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            margin-right: var(--space-2);
+            display: inline-block;
+        }
+        
+        .activity-list {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--border-radius);
+            padding: var(--space-4);
+            margin: var(--space-4) 0;
+        }
+        
+        .executive-profile {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: var(--space-4);
+            border-radius: var(--border-radius);
+            margin: var(--space-4) 0;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-4);
+            margin: var(--space-6) 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="storyboard-header">
         <div class="container">
+            <div class="dev-badge">Development Storyboard</div>
             <h1>The Business of Marketing in Sport</h1>
-            <p class="course-subtitle">Executive Leadership • Real-World Insights • Strategic Marketing</p>
-            <nav>
-                <ul>
-                    <li><a href="#overview">Course Overview</a></li>
-                    <li><a href="#modules">Modules</a></li>
-                    <li><a href="#resources">Resources</a></li>
-                    <li><a href="#support">Support</a></li>
-                </ul>
-            </nav>
+            <p class="course-subtitle">Course Development & Implementation Guide</p>
         </div>
     </header>
 
     <main class="container">
-        <!-- Course Overview Section -->
-        <section id="overview" class="course-overview">
-            <h2>Course Overview</h2>
+        <!-- Course Learning Outcomes Overview -->
+        <section id="course-outcomes">
+            <h2>Course Learning Outcomes (CLO)</h2>
+            <p>Six measurable outcomes that students will achieve through module-specific activities:</p>
             
-            <div class="overview-grid">
-                <div class="overview-card">
-                    <h3>Course Purpose</h3>
-                    <p>This first-of-its-kind course at Ivey fills a significant gap by exploring the fast-growing, high-stakes world of sports marketing business through exclusive access to top-tier industry executives.</p>
+            <div class="content-grid">
+                <div class="course-learning-outcome">
+                    <h4>CLO 1: Analyze Revenue Drivers</h4>
+                    <p>Understand and evaluate the core revenue drivers and marketing strategies that power the sports industry</p>
                 </div>
                 
-                <div class="overview-card">
-                    <h3>Format</h3>
-                    <ul>
-                        <li><strong>Duration:</strong> 5 weeks, 30-40 hours total</li>
-                        <li><strong>Structure:</strong> Live sessions + pre-readings + executive Q&A</li>
-                        <li><strong>Enrollment:</strong> 50 students maximum</li>
-                        <li><strong>Delivery:</strong> Blended learning approach</li>
-                    </ul>
+                <div class="course-learning-outcome">
+                    <h4>CLO 2: Evaluate Business Models</h4>
+                    <p>Critically analyze business models behind media rights, live content, and fan engagement strategies</p>
                 </div>
-            </div>
-
-            <!-- Learning Outcomes -->
-            <div class="learning-outcomes">
-                <h3>Learning Outcomes</h3>
-                <p class="outcomes-intro">By the end of this course, you will be able to:</p>
-                <div class="outcomes-grid">
-                    <div class="outcome-card">
-                        <div class="outcome-number">1</div>
-                        <h4>Analyze Revenue Drivers</h4>
-                        <p>Understand and evaluate the core revenue drivers and marketing strategies that power the sports industry</p>
-                    </div>
-                    
-                    <div class="outcome-card">
-                        <div class="outcome-number">2</div>
-                        <h4>Evaluate Business Models</h4>
-                        <p>Critically analyze business models behind media rights, live content, and fan engagement strategies</p>
-                    </div>
-                    
-                    <div class="outcome-card">
-                        <div class="outcome-number">3</div>
-                        <h4>Assess Sponsorship Programs</h4>
-                        <p>Evaluate the structure and effectiveness of sports sponsorship programs using industry frameworks</p>
-                    </div>
-                    
-                    <div class="outcome-card">
-                        <div class="outcome-number">4</div>
-                        <h4>Explore Women's Sports Growth</h4>
-                        <p>Analyze the explosive growth of women's sports and related brand investment opportunities</p>
-                    </div>
-                    
-                    <div class="outcome-card">
-                        <div class="outcome-number">5</div>
-                        <h4>Strategic Athlete Branding</h4>
-                        <p>Gain strategic insights into athlete branding and endorsement negotiation processes</p>
-                    </div>
-                    
-                    <div class="outcome-card">
-                        <div class="outcome-number">6</div>
-                        <h4>Assess Emerging Trends</h4>
-                        <p>Develop critical frameworks to assess emerging trends like sports betting and experiential technology</p>
-                    </div>
+                
+                <div class="course-learning-outcome">
+                    <h4>CLO 3: Assess Sponsorship Programs</h4>
+                    <p>Evaluate the structure and effectiveness of sports sponsorship programs using industry frameworks</p>
+                </div>
+                
+                <div class="course-learning-outcome">
+                    <h4>CLO 4: Explore Women's Sports Growth</h4>
+                    <p>Analyze the explosive growth of women's sports and related brand investment opportunities</p>
+                </div>
+                
+                <div class="course-learning-outcome">
+                    <h4>CLO 5: Strategic Athlete Branding</h4>
+                    <p>Gain strategic insights into athlete branding and endorsement negotiation processes</p>
+                </div>
+                
+                <div class="course-learning-outcome">
+                    <h4>CLO 6: Assess Emerging Trends</h4>
+                    <p>Develop critical frameworks to assess emerging trends like sports betting and experiential technology</p>
                 </div>
             </div>
         </section>
 
-        <!-- Modules Section -->
-        <section id="modules" class="modules-section">
-            <h2>Course Modules</h2>
-            <p class="modules-intro">Each module features real-world case studies led by industry executives, combining theoretical foundations with practical application.</p>
+        <!-- Module Storyboards -->
+        <section id="modules">
+            <h2>Module Development Storyboards</h2>
             
-            <div class="modules-grid">
-                <div class="module-card">
-                    <div class="module-header">
-                        <span class="module-number">Module 1</span>
-                        <h3>Live Content & Media Rights</h3>
+            <!-- Module 1 Storyboard -->
+            <div class="module-storyboard">
+                <h3>Module 1: Live Content & Media Rights</h3>
+                
+                <div class="executive-profile">
+                    <strong>Executive Leader:</strong> Bell Media / TSN / RDS Senior Executive<br>
+                    <strong>Industry Focus:</strong> Broadcasting, media rights valuation, content strategy
+                </div>
+                
+                <h4>Module Learning Outcomes & Course Alignment</h4>
+                <div class="outcome-mapping">
+                    <div class="outcome-tag">CLO 1</div>
+                    <div class="outcome-tag">CLO 2</div>
+                    <strong>MLO 1.1:</strong> Analyze media rights valuation factors and pricing models for different sports properties<br><br>
+                    
+                    <div class="outcome-tag">CLO 1</div>
+                    <div class="outcome-tag">CLO 2</div>
+                    <strong>MLO 1.2:</strong> Examine content strategies that maximize audience engagement and revenue generation<br><br>
+                    
+                    <div class="outcome-tag">CLO 2</div>
+                    <div class="outcome-tag">CLO 6</div>
+                    <strong>MLO 1.3:</strong> Compare traditional broadcasting with digital platforms and assess marketing strategy impact<br><br>
+                    
+                    <div class="outcome-tag">CLO 1</div>
+                    <strong>MLO 1.4:</strong> Apply audience data and analytics to inform content decisions and demonstrate ROI
+                </div>
+                
+                <h4>Supporting Activities</h4>
+                <div class="activity-list">
+                    <ul>
+                        <li><strong>Pre-Reading:</strong> Global Sports Media Rights Report 2024, Canadian Broadcasting Analysis</li>
+                        <li><strong>Interactive Tool:</strong> Media Rights Valuation Calculator with real industry data</li>
+                        <li><strong>Executive Session:</strong> Live Q&A with Bell Media executive on content strategy</li>
+                        <li><strong>Case Analysis:</strong> TSN Programming Strategy - audience development and revenue optimization</li>
+                        <li><strong>Application Project:</strong> Create media rights valuation proposal for assigned sports property</li>
+                    </ul>
+                </div>
+                
+                <h4>Industry Examples & Content</h4>
+                <div class="content-grid">
+                    <div class="overview-card">
+                        <h5>Canadian Context</h5>
+                        <ul>
+                            <li>TSN/RDS exclusive NHL rights deal analysis</li>
+                            <li>Rogers Sportsnet MLB partnership case study</li>
+                            <li>CBC Hockey Night in Canada heritage programming</li>
+                        </ul>
                     </div>
-                    <div class="module-content">
-                        <p class="module-description">Explore the fundamentals of media rights, broadcasting, and content creation in sports marketing.</p>
-                        <div class="module-details">
-                            <p><strong>Executive Leader:</strong> Bell Media / TSN / RDS Executive</p>
-                            <p><strong>Key Topics:</strong> Media rights valuation, content strategy, audience engagement</p>
-                        </div>
-                        <a href="modules/module-1/index.html" class="module-link">Enter Module 1</a>
+                    <div class="overview-card">
+                        <h5>Digital Transformation</h5>
+                        <ul>
+                            <li>Streaming vs. traditional broadcast revenue models</li>
+                            <li>Social media content distribution strategies</li>
+                            <li>Mobile-first content development approaches</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="module-card">
-                    <div class="module-header">
-                        <span class="module-number">Module 2</span>
-                        <h3>Sports Betting Marketing</h3>
+            <!-- Module 2 Storyboard -->
+            <div class="module-storyboard">
+                <h3>Module 2: Sports Betting Marketing</h3>
+                
+                <div class="executive-profile">
+                    <strong>Executive Leader:</strong> Andrew Sneyd, EVP Brand & Marketing, FanDuel<br>
+                    <strong>Industry Focus:</strong> Sports betting, regulatory compliance, consumer behavior
+                </div>
+                
+                <h4>Module Learning Outcomes & Course Alignment</h4>
+                <div class="outcome-mapping">
+                    <div class="outcome-tag">CLO 6</div>
+                    <strong>MLO 2.1:</strong> Evaluate the regulatory landscape and compliance requirements for sports betting marketing<br><br>
+                    
+                    <div class="outcome-tag">CLO 1</div>
+                    <div class="outcome-tag">CLO 6</div>
+                    <strong>MLO 2.2:</strong> Analyze consumer behavior patterns and decision-making in sports betting contexts<br><br>
+                    
+                    <div class="outcome-tag">CLO 3</div>
+                    <div class="outcome-tag">CLO 6</div>
+                    <strong>MLO 2.3:</strong> Assess responsible gaming initiatives and their integration into marketing strategies<br><br>
+                    
+                    <div class="outcome-tag">CLO 2</div>
+                    <div class="outcome-tag">CLO 6</div>
+                    <strong>MLO 2.4:</strong> Design marketing campaigns that balance growth objectives with social responsibility
+                </div>
+                
+                <h4>Supporting Activities</h4>
+                <div class="activity-list">
+                    <ul>
+                        <li><strong>Regulatory Analysis:</strong> Compare sports betting laws across Canadian provinces</li>
+                        <li><strong>Consumer Research:</strong> Analyze demographic data and betting behavior patterns</li>
+                        <li><strong>Executive Workshop:</strong> FanDuel marketing strategy deep-dive with Andrew Sneyd</li>
+                        <li><strong>Ethical Framework:</strong> Develop responsible gaming marketing guidelines</li>
+                        <li><strong>Campaign Development:</strong> Create compliant marketing campaign for hypothetical sportsbook launch</li>
+                    </ul>
+                </div>
+                
+                <h4>Industry Examples & Content</h4>
+                <div class="content-grid">
+                    <div class="overview-card">
+                        <h5>Market Entry Strategies</h5>
+                        <ul>
+                            <li>FanDuel's Canadian market expansion approach</li>
+                            <li>DraftKings partnership with major leagues</li>
+                            <li>BetMGM celebrity endorsement campaigns</li>
+                        </ul>
                     </div>
-                    <div class="module-content">
-                        <p class="module-description">Analyze the rapidly evolving sports betting landscape and marketing strategies.</p>
-                        <div class="module-details">
-                            <p><strong>Executive Leader:</strong> Andrew Sneyd, EVP Brand & Marketing, FanDuel</p>
-                            <p><strong>Key Topics:</strong> Regulatory environment, consumer behavior, responsible gaming</p>
-                        </div>
-                        <a href="modules/module-2/index.html" class="module-link">Enter Module 2</a>
+                    <div class="overview-card">
+                        <h5>Responsible Gaming</h5>
+                        <ul>
+                            <li>Industry self-regulation initiatives</li>
+                            <li>Technology solutions for problem gambling</li>
+                            <li>Partnership with sports leagues on messaging</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="module-card">
-                    <div class="module-header">
-                        <span class="module-number">Module 3</span>
-                        <h3>Athlete Branding & Endorsements</h3>
+            <!-- Module 3 Storyboard -->
+            <div class="module-storyboard">
+                <h3>Module 3: Athlete Branding & Endorsements</h3>
+                
+                <div class="executive-profile">
+                    <strong>Executive Leader:</strong> Senior Sports Agent (CAA Sports / Wasserman / Octagon)<br>
+                    <strong>Industry Focus:</strong> Personal branding, contract negotiations, social media strategy
+                </div>
+                
+                <h4>Module Learning Outcomes & Course Alignment</h4>
+                <div class="outcome-mapping">
+                    <div class="outcome-tag">CLO 5</div>
+                    <strong>MLO 3.1:</strong> Analyze the components of successful athlete personal brand development<br><br>
+                    
+                    <div class="outcome-tag">CLO 3</div>
+                    <div class="outcome-tag">CLO 5</div>
+                    <strong>MLO 3.2:</strong> Evaluate endorsement deal structures and their strategic value for both parties<br><br>
+                    
+                    <div class="outcome-tag">CLO 5</div>
+                    <div class="outcome-tag">CLO 6</div>
+                    <strong>MLO 3.3:</strong> Assess social media strategies for athlete brand building and fan engagement<br><br>
+                    
+                    <div class="outcome-tag">CLO 5</div>
+                    <strong>MLO 3.4:</strong> Design comprehensive branding strategy for emerging or established athlete
+                </div>
+                
+                <h4>Supporting Activities</h4>
+                <div class="activity-list">
+                    <ul>
+                        <li><strong>Brand Audit:</strong> Analyze successful athlete brands (Connor McDavid, Bianca Andreescu)</li>
+                        <li><strong>Contract Analysis:</strong> Deconstruct major endorsement deals and negotiation strategies</li>
+                        <li><strong>Agent Masterclass:</strong> Live session on athlete representation and brand development</li>
+                        <li><strong>Social Strategy:</strong> Create content calendar and engagement strategy for assigned athlete</li>
+                        <li><strong>Crisis Management:</strong> Develop brand protection protocols for reputation challenges</li>
+                    </ul>
+                </div>
+                
+                <h4>Industry Examples & Content</h4>
+                <div class="content-grid">
+                    <div class="overview-card">
+                        <h5>Canadian Athletes</h5>
+                        <ul>
+                            <li>Connor McDavid's marketing portfolio analysis</li>
+                            <li>Bianca Andreescu's breakthrough brand strategy</li>
+                            <li>Alphonso Davies' global brand development</li>
+                        </ul>
                     </div>
-                    <div class="module-content">
-                        <p class="module-description">Understand the strategic elements of athlete personal branding and endorsement negotiations.</p>
-                        <div class="module-details">
-                            <p><strong>Executive Leader:</strong> Senior Sports Agent</p>
-                            <p><strong>Key Topics:</strong> Brand building, contract negotiations, social media strategy</p>
-                        </div>
-                        <a href="modules/module-3/index.html" class="module-link">Enter Module 3</a>
+                    <div class="overview-card">
+                        <h5>Brand Categories</h5>
+                        <ul>
+                            <li>Athletic performance partnerships (Nike, Adidas)</li>
+                            <li>Lifestyle and consumer goods endorsements</li>
+                            <li>Financial services and technology partnerships</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="module-card">
-                    <div class="module-header">
-                        <span class="module-number">Module 4</span>
-                        <h3>League & Team Marketing Strategy</h3>
+            <!-- Module 4 Storyboard -->
+            <div class="module-storyboard">
+                <h3>Module 4: League & Team Marketing Strategy</h3>
+                
+                <div class="executive-profile">
+                    <strong>Executive Leader:</strong> MLSE Senior Executive (Maple Leafs/Raptors/TFC)<br>
+                    <strong>Industry Focus:</strong> Fan engagement, season campaigns, venue marketing, corporate partnerships
+                </div>
+                
+                <h4>Module Learning Outcomes & Course Alignment</h4>
+                <div class="outcome-mapping">
+                    <div class="outcome-tag">CLO 1</div>
+                    <div class="outcome-tag">CLO 2</div>
+                    <strong>MLO 4.1:</strong> Analyze comprehensive fan engagement strategies across multiple touchpoints<br><br>
+                    
+                    <div class="outcome-tag">CLO 3</div>
+                    <strong>MLO 4.2:</strong> Evaluate corporate partnership structures and activation strategies<br><br>
+                    
+                    <div class="outcome-tag">CLO 1</div>
+                    <div class="outcome-tag">CLO 4</div>
+                    <strong>MLO 4.3:</strong> Assess venue marketing and game-day experience optimization<br><br>
+                    
+                    <div class="outcome-tag">CLO 2</div>
+                    <div class="outcome-tag">CLO 6</div>
+                    <strong>MLO 4.4:</strong> Design integrated marketing campaigns that drive attendance, viewership, and revenue
+                </div>
+                
+                <h4>Supporting Activities</h4>
+                <div class="activity-list">
+                    <ul>
+                        <li><strong>Fan Journey Mapping:</strong> Track touchpoints from awareness to loyalty for major Toronto teams</li>
+                        <li><strong>Partnership Analysis:</strong> Deconstruct MLSE's corporate partnership portfolio</li>
+                        <li><strong>Executive Strategy Session:</strong> MLSE leadership on multi-team marketing approach</li>
+                        <li><strong>Venue Experience Design:</strong> Optimize game-day experience at Scotiabank Arena</li>
+                        <li><strong>Campaign Development:</strong> Create integrated season launch campaign for assigned team</li>
+                    </ul>
+                </div>
+                
+                <h4>Industry Examples & Content</h4>
+                <div class="content-grid">
+                    <div class="overview-card">
+                        <h5>MLSE Portfolio</h5>
+                        <ul>
+                            <li>Maple Leafs heritage marketing and fan traditions</li>
+                            <li>Raptors "We The North" campaign analysis</li>
+                            <li>TFC supporter culture and community building</li>
+                        </ul>
                     </div>
-                    <div class="module-content">
-                        <p class="module-description">Examine comprehensive marketing strategies for sports leagues and individual teams.</p>
-                        <div class="module-details">
-                            <p><strong>Executive Leader:</strong> MLSE Senior Executive</p>
-                            <p><strong>Key Topics:</strong> Fan engagement, season campaigns, venue marketing</p>
-                        </div>
-                        <a href="modules/module-4/index.html" class="module-link">Enter Module 4</a>
+                    <div class="overview-card">
+                        <h5>Fan Engagement</h5>
+                        <ul>
+                            <li>Digital fan communities and social engagement</li>
+                            <li>Loyalty programs and season ticket holder retention</li>
+                            <li>Youth development and next-generation fans</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="module-card">
-                    <div class="module-header">
-                        <span class="module-number">Module 5</span>
-                        <h3>Legacy, History & Sport Culture</h3>
+            <!-- Module 5 Storyboard -->
+            <div class="module-storyboard">
+                <h3>Module 5: Legacy, History & Sport Culture</h3>
+                
+                <div class="executive-profile">
+                    <strong>Executive Leader:</strong> Mike Gartner, Chair, Hockey Hall of Fame<br>
+                    <strong>Industry Focus:</strong> Heritage marketing, cultural impact, legacy brand management
+                </div>
+                
+                <h4>Module Learning Outcomes & Course Alignment</h4>
+                <div class="outcome-mapping">
+                    <div class="outcome-tag">CLO 2</div>
+                    <div class="outcome-tag">CLO 4</div>
+                    <strong>MLO 5.1:</strong> Analyze how sports heritage and cultural significance influence marketing strategies<br><br>
+                    
+                    <div class="outcome-tag">CLO 1</div>
+                    <div class="outcome-tag">CLO 2</div>
+                    <strong>MLO 5.2:</strong> Evaluate legacy institutions' approaches to modern marketing while preserving tradition<br><br>
+                    
+                    <div class="outcome-tag">CLO 4</div>
+                    <strong>MLO 5.3:</strong> Assess the role of sports in cultural identity and community building<br><br>
+                    
+                    <div class="outcome-tag">CLO 6</div>
+                    <strong>MLO 5.4:</strong> Design marketing approaches that balance heritage preservation with innovation
+                </div>
+                
+                <h4>Supporting Activities</h4>
+                <div class="activity-list">
+                    <ul>
+                        <li><strong>Heritage Analysis:</strong> Study Hockey Hall of Fame's evolution and marketing transformation</li>
+                        <li><strong>Cultural Impact Assessment:</strong> Analyze sports' role in Canadian national identity</li>
+                        <li><strong>Legacy Leadership Session:</strong> Mike Gartner on preserving hockey culture while driving growth</li>
+                        <li><strong>Museum Marketing:</strong> Develop visitor engagement strategy for sports heritage institution</li>
+                        <li><strong>Tradition Innovation:</strong> Create campaign that honors sports history while attracting new audiences</li>
+                    </ul>
+                </div>
+                
+                <h4>Industry Examples & Content</h4>
+                <div class="content-grid">
+                    <div class="overview-card">
+                        <h5>Heritage Institutions</h5>
+                        <ul>
+                            <li>Hockey Hall of Fame digital transformation</li>
+                            <li>Canadian Sports Hall of Fame community outreach</li>
+                            <li>Olympic legacy and ongoing brand management</li>
+                        </ul>
                     </div>
-                    <div class="module-content">
-                        <p class="module-description">Explore how sports heritage and culture influence modern marketing approaches.</p>
-                        <div class="module-details">
-                            <p><strong>Executive Leader:</strong> Mike Gartner, Chair, Hockey Hall of Fame</p>
-                            <p><strong>Key Topics:</strong> Brand heritage, cultural impact, legacy marketing</p>
-                        </div>
-                        <a href="modules/module-5/index.html" class="module-link">Enter Module 5</a>
+                    <div class="overview-card">
+                        <h5>Cultural Marketing</h5>
+                        <ul>
+                            <li>Indigenous sport traditions and modern integration</li>
+                            <li>Women's sports history and growth narrative</li>
+                            <li>Community sport culture and grassroots marketing</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Assessment Overview -->
-        <section class="assessment-section">
-            <h2>Assessment & Projects</h2>
-            <div class="assessment-grid">
-                <div class="assessment-card">
-                    <h3>Group Marketing Project</h3>
-                    <p>Develop a comprehensive marketing plan or campaign for a sport property, team, or event. Choose from multiple presentation formats to demonstrate your strategic thinking.</p>
+        <section id="assessment">
+            <h2>Assessment & Evaluation Framework</h2>
+            
+            <div class="content-grid">
+                <div class="module-storyboard">
+                    <h3>Group Marketing Project (60%)</h3>
+                    <div class="outcome-mapping">
+                        <div class="outcome-tag">All CLOs</div>
+                        <strong>Comprehensive strategic marketing plan development</strong>
+                    </div>
+                    <div class="activity-list">
+                        <h4>Project Components:</h4>
+                        <ul>
+                            <li>Industry analysis and market research (CLO 1, 2, 6)</li>
+                            <li>Strategic positioning and target audience (CLO 3, 4, 5)</li>
+                            <li>Campaign development and execution plan (CLO 1, 3, 6)</li>
+                            <li>Executive presentation and defense (All CLOs)</li>
+                        </ul>
+                        <h4>UDL Expression Options:</h4>
+                        <ul>
+                            <li>Written strategic plan with visual components</li>
+                            <li>Video presentation with supporting materials</li>
+                            <li>Interactive digital campaign proposal</li>
+                            <li>Live presentation with Q&A session</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="module-storyboard">
+                    <h3>Executive Case Engagement (40%)</h3>
+                    <div class="outcome-mapping">
+                        <div class="outcome-tag">Module-Specific</div>
+                        <strong>Active participation and application across all modules</strong>
+                    </div>
+                    <div class="activity-list">
+                        <h4>Engagement Components:</h4>
+                        <ul>
+                            <li>Pre-session preparation and research (20%)</li>
+                            <li>Live session participation and questions (30%)</li>
+                            <li>Post-session reflection and application (30%)</li>
+                            <li>Peer collaboration and knowledge sharing (20%)</li>
+                        </ul>
+                        <h4>Multiple Assessment Methods:</h4>
+                        <ul>
+                            <li>Written case analysis submissions</li>
+                            <li>Recorded video reflections</li>
+                            <li>Interactive discussion contributions</li>
+                            <li>Creative application projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Status -->
+        <section id="development">
+            <h2>Development Status & Next Steps</h2>
+            
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>Completed ✅</h3>
                     <ul>
-                        <li>Strategic analysis and market research</li>
-                        <li>Campaign development and execution plan</li>
-                        <li>Multiple presentation options (written, visual, video, interactive)</li>
-                        <li>Executive panel review and feedback</li>
+                        <li>Course learning outcomes mapped to QM standards</li>
+                        <li>Module 1 complete development with UDL compliance</li>
+                        <li>Technical framework (HTML, CSS, JS) with accessibility</li>
+                        <li>Executive integration structure established</li>
+                        <li>Assessment framework aligned with learning outcomes</li>
                     </ul>
                 </div>
                 
-                <div class="assessment-card">
-                    <h3>Executive Case Studies</h3>
-                    <p>Engage with real-world case studies presented by industry leaders, with multiple ways to demonstrate understanding and application.</p>
+                <div class="overview-card">
+                    <h3>In Development 🚧</h3>
                     <ul>
-                        <li>Interactive discussions and Q&A sessions</li>
-                        <li>Case analysis submissions (various formats accepted)</li>
-                        <li>Peer collaboration and knowledge sharing</li>
-                        <li>Reflection and application exercises</li>
+                        <li>Module 2-5 detailed content development</li>
+                        <li>Resource templates and content guidelines</li>
+                        <li>Enhanced student progress tracking system</li>
+                        <li>Interactive tools and simulations</li>
+                        <li>Accessibility testing and optimization</li>
                     </ul>
                 </div>
             </div>
@@ -204,24 +527,24 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Course Information</h4>
-                    <p>Faculty: Matthew Diamond<br>
-                    Format: 5-week intensive<br>
-                    Enrollment: 50 students maximum</p>
+                    <h4>Development Team</h4>
+                    <p>Faculty Lead: Matthew Diamond<br>
+                    Educational Design: UDL & QM Compliance<br>
+                    Technical Implementation: Accessible Web Framework</p>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Support Resources</h4>
+                    <h4>Educational Standards</h4>
                     <ul>
-                        <li><a href="#support">Technical Support</a></li>
-                        <li><a href="#accessibility">Accessibility Services</a></li>
-                        <li><a href="#academic">Academic Support</a></li>
+                        <li>Quality Matters (QM) Higher Education Standards</li>
+                        <li>Universal Design for Learning (UDL) Guidelines</li>
+                        <li>WCAG 2.1 AA Accessibility Compliance</li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Course Principles</h4>
-                    <p>This course is designed following Universal Design for Learning (UDL) principles and Quality Matters (QM) standards to ensure accessibility and inclusive learning for all students.</p>
+                    <h4>Industry Integration</h4>
+                    <p>Five executive-led modules with real-world case studies, strategic frameworks, and hands-on application opportunities.</p>
                 </div>
             </div>
         </div>

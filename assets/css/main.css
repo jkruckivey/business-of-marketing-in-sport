@@ -1,0 +1,471 @@
+/* Universal Design for Learning - Accessible Course Styles */
+
+/* CSS Custom Properties for Consistency and Accessibility */
+:root {
+    /* Color Palette - WCAG AA Compliant */
+    --primary-color: #1e3a8a;          /* Ivey Blue */
+    --secondary-color: #059669;         /* Success Green */
+    --accent-color: #dc2626;            /* Alert Red */
+    --text-primary: #1f2937;            /* Dark Gray */
+    --text-secondary: #6b7280;          /* Medium Gray */
+    --background: #ffffff;              /* White */
+    --surface: #f9fafb;                 /* Light Gray */
+    --border: #e5e7eb;                  /* Light Border */
+    
+    /* Typography Scale */
+    --font-family-base: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    
+    /* Spacing Scale */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    
+    /* Layout */
+    --container-max: 1200px;
+    --border-radius: 0.5rem;
+    --border-radius-lg: 1rem;
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--background);
+}
+
+/* Focus Management for Accessibility */
+*:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Skip Navigation Link */
+.skip-nav {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    z-index: 1000;
+}
+
+.skip-nav:focus {
+    top: 6px;
+}
+
+/* Container System */
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 var(--space-4);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: var(--space-4);
+    color: var(--text-primary);
+}
+
+h1 { font-size: var(--font-size-4xl); }
+h2 { font-size: var(--font-size-3xl); }
+h3 { font-size: var(--font-size-2xl); }
+h4 { font-size: var(--font-size-xl); }
+h5 { font-size: var(--font-size-lg); }
+h6 { font-size: var(--font-size-base); }
+
+p {
+    margin-bottom: var(--space-4);
+    line-height: 1.7;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: var(--space-4);
+    padding-left: var(--space-6);
+}
+
+li {
+    margin-bottom: var(--space-2);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, var(--primary-color), #1e40af);
+    color: white;
+    padding: var(--space-8) 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: var(--space-2);
+    font-size: var(--font-size-4xl);
+}
+
+.course-subtitle {
+    font-size: var(--font-size-lg);
+    opacity: 0.9;
+    margin-bottom: var(--space-8);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-6);
+}
+
+nav a {
+    color: white;
+    font-weight: 600;
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--border-radius);
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover, nav a:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    padding: var(--space-16) 0;
+}
+
+section {
+    margin-bottom: var(--space-16);
+}
+
+/* Grid Systems */
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-8);
+    margin-bottom: var(--space-12);
+}
+
+.outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+}
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-8);
+}
+
+.assessment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--space-8);
+}
+
+/* Cards */
+.overview-card,
+.outcome-card,
+.module-card,
+.assessment-card {
+    background: var(--surface);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-8);
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.overview-card:hover,
+.module-card:hover,
+.assessment-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Learning Outcomes */
+.learning-outcomes {
+    margin-top: var(--space-12);
+}
+
+.outcomes-intro {
+    font-size: var(--font-size-lg);
+    text-align: center;
+    margin-bottom: var(--space-8);
+    color: var(--text-secondary);
+}
+
+.outcome-card {
+    text-align: center;
+    position: relative;
+    border: 2px solid var(--border);
+    transition: border-color 0.2s ease;
+}
+
+.outcome-card:hover {
+    border-color: var(--secondary-color);
+}
+
+.outcome-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary-color);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: var(--font-size-sm);
+}
+
+.outcome-card h4 {
+    margin-top: var(--space-4);
+    color: var(--primary-color);
+}
+
+/* Modules */
+.modules-intro {
+    text-align: center;
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-12);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.module-header {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+.module-number {
+    background: var(--primary-color);
+    color: white;
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: var(--space-3);
+}
+
+.module-header h3 {
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.module-description {
+    color: var(--text-secondary);
+    margin-bottom: var(--space-6);
+}
+
+.module-details p {
+    margin-bottom: var(--space-3);
+    font-size: var(--font-size-sm);
+}
+
+.module-details strong {
+    color: var(--primary-color);
+}
+
+.module-link {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: var(--space-3) var(--space-6);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    margin-top: var(--space-4);
+    transition: background-color 0.2s ease;
+}
+
+.module-link:hover, .module-link:focus {
+    background: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* Assessment Cards */
+.assessment-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-4);
+}
+
+.assessment-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.assessment-card li {
+    position: relative;
+    padding-left: var(--space-6);
+    margin-bottom: var(--space-3);
+}
+
+.assessment-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: var(--text-primary);
+    color: white;
+    padding: var(--space-12) 0 var(--space-8);
+    margin-top: var(--space-16);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-8);
+}
+
+.footer-section h4 {
+    color: white;
+    margin-bottom: var(--space-4);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: var(--space-2);
+}
+
+.footer-section a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-section a:hover, .footer-section a:focus {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    :root {
+        --font-size-4xl: 2rem;
+        --font-size-3xl: 1.5rem;
+        --space-16: 2rem;
+        --space-12: 2rem;
+        --space-8: 1.5rem;
+    }
+    
+    .container {
+        padding: 0 var(--space-3);
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: var(--space-3);
+    }
+    
+    .overview-grid,
+    .outcomes-grid,
+    .modules-grid,
+    .assessment-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000080;
+        --secondary-color: #006400;
+        --text-primary: #000000;
+        --border: #000000;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    * {
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+    
+    header {
+        background: none !important;
+        color: black !important;
+    }
+    
+    .module-link,
+    nav {
+        display: none;
+    }
+}

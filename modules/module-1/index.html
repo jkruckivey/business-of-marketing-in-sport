@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Live Content & Media Rights - Business of Marketing in Sport</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <style>
+        /* Module-specific styles */
+        .module-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: var(--space-12) 0;
+            text-align: center;
+        }
+        
+        .breadcrumb {
+            background: var(--surface);
+            padding: var(--space-4) 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .breadcrumb nav {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-sm);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+        }
+        
+        .learning-path {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+            margin: var(--space-8) 0;
+        }
+        
+        .path-step {
+            background: var(--surface);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-6);
+            border-left: 4px solid var(--secondary-color);
+            position: relative;
+        }
+        
+        .path-step.active {
+            background: var(--primary-color);
+            color: white;
+            border-left-color: var(--accent-color);
+        }
+        
+        .path-step h4 {
+            margin-bottom: var(--space-3);
+            font-size: var(--font-size-lg);
+        }
+        
+        .path-step.active h4 {
+            color: white;
+        }
+        
+        .executive-spotlight {
+            background: var(--surface);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-8);
+            margin: var(--space-8) 0;
+            border: 2px solid var(--border);
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-6);
+            margin: var(--space-8) 0;
+        }
+        
+        .resource-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-6);
+            transition: border-color 0.2s ease;
+        }
+        
+        .resource-card:hover {
+            border-color: var(--secondary-color);
+        }
+        
+        .resource-type {
+            background: var(--primary-color);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: var(--space-3);
+        }
+        
+        .accessibility-note {
+            background: #f0f9ff;
+            border: 1px solid #0284c7;
+            border-radius: var(--border-radius);
+            padding: var(--space-4);
+            margin: var(--space-6) 0;
+            font-size: var(--font-size-sm);
+        }
+        
+        .engagement-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-4);
+            margin: var(--space-6) 0;
+        }
+        
+        .engagement-option {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: var(--border-radius);
+            padding: var(--space-4);
+            text-align: center;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .engagement-option:hover {
+            border-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .engagement-option.selected {
+            border-color: var(--primary-color);
+            background: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="../../index.html">Course Home</a>
+                <span>→</span>
+                <span>Module 1: Live Content & Media Rights</span>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Module Hero -->
+    <section class="module-hero">
+        <div class="container">
+            <h1>Module 1: Live Content & Media Rights</h1>
+            <p class="course-subtitle">Understanding the Foundation of Sports Media Business</p>
+            <div class="learning-path">
+                <div class="path-step active">
+                    <h4>1. Overview & Preparation</h4>
+                    <p>Current section - review objectives and prepare for learning</p>
+                </div>
+                <div class="path-step">
+                    <h4>2. Pre-Reading & Resources</h4>
+                    <p>Essential background materials and industry context</p>
+                </div>
+                <div class="path-step">
+                    <h4>3. Executive Session</h4>
+                    <p>Live discussion with Bell Media / TSN / RDS executive</p>
+                </div>
+                <div class="path-step">
+                    <h4>4. Application & Reflection</h4>
+                    <p>Case study analysis and knowledge integration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main id="main-content" class="container">
+        <!-- Module Overview -->
+        <section class="module-overview">
+            <h2>Module Learning Outcomes</h2>
+            <p>By the end of this module, you will be able to:</p>
+            
+            <div class="outcomes-grid">
+                <div class="outcome-card">
+                    <div class="outcome-number">1</div>
+                    <h4>Analyze Media Rights Valuation</h4>
+                    <p>Evaluate the factors that determine the value of media rights for different sports properties and understand pricing models.</p>
+                </div>
+                
+                <div class="outcome-card">
+                    <div class="outcome-number">2</div>
+                    <h4>Assess Content Strategy</h4>
+                    <p>Examine how media companies develop content strategies to maximize audience engagement and revenue generation.</p>
+                </div>
+                
+                <div class="outcome-card">
+                    <div class="outcome-number">3</div>
+                    <h4>Evaluate Distribution Channels</h4>
+                    <p>Compare traditional broadcasting with digital platforms and assess the impact on sports marketing strategies.</p>
+                </div>
+                
+                <div class="outcome-card">
+                    <div class="outcome-number">4</div>
+                    <h4>Apply Audience Analytics</h4>
+                    <p>Use audience data and analytics to inform content decisions and demonstrate ROI to stakeholders.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Executive Spotlight -->
+        <section class="executive-spotlight">
+            <h2>Executive Leadership</h2>
+            <h3>Bell Media / TSN / RDS Executive</h3>
+            <p>This module features insights from a senior executive at Bell Media, Canada's leading media company. Our guest leader will share real-world experience in:</p>
+            <ul>
+                <li><strong>Media Rights Negotiations:</strong> Strategic approaches to acquiring and valuing sports content</li>
+                <li><strong>Content Programming:</strong> How to build compelling sports programming schedules</li>
+                <li><strong>Audience Development:</strong> Strategies for growing and retaining sports viewership</li>
+                <li><strong>Digital Integration:</strong> Balancing traditional broadcast with streaming platforms</li>
+                <li><strong>Revenue Optimization:</strong> Maximizing advertising and subscription revenue streams</li>
+            </ul>
+            
+            <div class="accessibility-note">
+                <strong>Accessibility Note:</strong> All live sessions include real-time captions, and recordings with full transcripts will be available within 24 hours. Session materials are provided in multiple formats (audio, visual, text) to support diverse learning preferences.
+            </div>
+        </section>
+        
+        <!-- Learning Resources -->
+        <section class="learning-resources">
+            <h2>Learning Resources & Materials</h2>
+            <p class="modules-intro">Access multiple types of resources to support different learning styles and preferences. Choose the combination that works best for you.</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <span class="resource-type">Essential Reading</span>
+                    <h3>Industry Reports & Analysis</h3>
+                    <ul>
+                        <li>Global Sports Media Rights Report 2024</li>
+                        <li>Canadian Broadcasting Landscape Analysis</li>
+                        <li>Streaming vs. Traditional: Market Trends</li>
+                    </ul>
+                    <p><strong>Estimated Time:</strong> 45-60 minutes</p>
+                </div>
+                
+                <div class="resource-card">
+                    <span class="resource-type">Video Content</span>
+                    <h3>Visual Learning Materials</h3>
+                    <ul>
+                        <li>Media Rights Negotiation Process (12 min)</li>
+                        <li>TSN Programming Strategy Case Study (8 min)</li>
+                        <li>Digital Platform Integration (10 min)</li>
+                    </ul>
+                    <p><strong>Features:</strong> Closed captions, transcript, 1.5x speed option</p>
+                </div>
+                
+                <div class="resource-card">
+                    <span class="resource-type">Interactive</span>
+                    <h3>Hands-On Activities</h3>
+                    <ul>
+                        <li>Media Rights Valuation Calculator</li>
+                        <li>Audience Analytics Dashboard</li>
+                        <li>Content Strategy Planning Tool</li>
+                    </ul>
+                    <p><strong>Purpose:</strong> Practice applying concepts with real data</p>
+                </div>
+                
+                <div class="resource-card">
+                    <span class="resource-type">Optional</span>
+                    <h3>Extension Materials</h3>
+                    <ul>
+                        <li>Academic Research Papers</li>
+                        <li>International Case Studies</li>
+                        <li>Podcast Episodes with Industry Leaders</li>
+                    </ul>
+                    <p><strong>For:</strong> Students wanting deeper exploration</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Engagement Options -->
+        <section class="engagement-section">
+            <h2>How Would You Like to Engage?</h2>
+            <p>Choose your preferred way to participate in this module. You can change your selection at any time.</p>
+            
+            <div class="engagement-options">
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
+                    <h4>Visual Learner</h4>
+                    <p>Focus on infographics, charts, and video content</p>
+                </div>
+                
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
+                    <h4>Audio Learner</h4>
+                    <p>Emphasize podcasts, audio summaries, and discussions</p>
+                </div>
+                
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
+                    <h4>Interactive Learner</h4>
+                    <p>Hands-on tools, simulations, and collaborative activities</p>
+                </div>
+                
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
+                    <h4>Reading & Research</h4>
+                    <p>Text-based materials, case studies, and written analysis</p>
+                </div>
+            </div>
+            
+            <div class="accessibility-note">
+                <strong>Universal Design Note:</strong> All content is available in multiple formats regardless of your selection. This preference simply helps us highlight the most relevant materials for your learning style.
+            </div>
+        </section>
+        
+        <!-- Key Questions -->
+        <section class="key-questions">
+            <h2>Key Questions to Consider</h2>
+            <p>As you work through this module, keep these strategic questions in mind:</p>
+            
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>Strategic</h3>
+                    <ul>
+                        <li>How do media companies determine the value of sports rights?</li>
+                        <li>What factors influence the success of sports programming?</li>
+                        <li>How is digital transformation changing the media landscape?</li>
+                    </ul>
+                </div>
+                
+                <div class="overview-card">
+                    <h3>Practical</h3>
+                    <ul>
+                        <li>What metrics matter most for sports content performance?</li>
+                        <li>How do you balance traditional and digital distribution?</li>
+                        <li>What makes a sports media partnership successful?</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Next Steps -->
+        <section class="next-steps">
+            <h2>Ready to Begin?</h2>
+            <div class="assessment-grid">
+                <div class="assessment-card">
+                    <h3>Start with Pre-Reading</h3>
+                    <p>Begin with the essential background materials to prepare for the executive session.</p>
+                    <a href="resources/pre-reading.html" class="module-link">Access Pre-Reading Materials</a>
+                </div>
+                
+                <div class="assessment-card">
+                    <h3>Join the Discussion</h3>
+                    <p>Connect with classmates to discuss initial thoughts and questions about media rights.</p>
+                    <a href="#discussion" class="module-link">Join Module Discussion</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Module Support</h4>
+                    <ul>
+                        <li><a href="#help">Technical Help</a></li>
+                        <li><a href="#accessibility">Accessibility Options</a></li>
+                        <li><a href="#feedback">Module Feedback</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Learning Support</h4>
+                    <ul>
+                        <li><a href="#study-groups">Study Groups</a></li>
+                        <li><a href="#office-hours">Virtual Office Hours</a></li>
+                        <li><a href="#resources">Additional Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Module Progress</h4>
+                    <p>Track your learning journey and connect concepts across all five modules.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        // Interactive engagement options
+        document.querySelectorAll('.engagement-option').forEach(option => {
+            option.addEventListener('click', function() {
+                // Remove selected class from all options
+                document.querySelectorAll('.engagement-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                    opt.setAttribute('aria-pressed', 'false');
+                });
+                
+                // Add selected class to clicked option
+                this.classList.add('selected');
+                this.setAttribute('aria-pressed', 'true');
+                
+                // Store preference (could be saved to localStorage or user profile)
+                const preference = this.querySelector('h4').textContent;
+                console.log('Learning preference selected:', preference);
+            });
+            
+            // Keyboard support
+            option.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

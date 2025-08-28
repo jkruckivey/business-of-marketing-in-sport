@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Learning Outcomes</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 1rem;
+            font-family: 'Benton Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #ffffff;
+        }
+        
+        .outcomes-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .outcome-card {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 1.5rem;
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .outcome-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(197, 183, 131, 0.2);
+        }
+        
+        .outcome-number {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #c5b783;
+            color: #2c2c2c;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.875rem;
+        }
+        
+        .outcome-card h4 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.75rem;
+            color: #2c2c2c;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+        
+        .outcome-card p {
+            margin: 0;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .clo-tags {
+            margin-top: 0.75rem;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .clo-tag {
+            background: #f5f4f0;
+            border: 1px solid #c5b783;
+            color: #2c2c2c;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .intro-text {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c2c2c;
+        }
+        
+        .intro-text h2 {
+            color: #2c2c2c;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* LMS embedding optimizations */
+        @media (max-width: 600px) {
+            .outcomes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            body {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outcomes-container">
+        <div class="intro-text">
+            <h2>Module 1 Learning Outcomes</h2>
+            <p>By the end of this module, you will be able to:</p>
+        </div>
+        
+        <div class="outcomes-grid">
+            <div class="outcome-card">
+                <div class="outcome-number">1</div>
+                <h4>Calculate Media Rights Valuations</h4>
+                <p>Calculate media rights valuations using industry pricing models for different sports properties.</p>
+                <div class="clo-tags">
+                    <span class="clo-tag">CLO 1</span>
+                    <span class="clo-tag">CLO 2</span>
+                </div>
+            </div>
+            
+            <div class="outcome-card">
+                <div class="outcome-number">2</div>
+                <h4>Evaluate Content Strategies</h4>
+                <p>Evaluate content strategies that maximize audience engagement and revenue generation.</p>
+                <div class="clo-tags">
+                    <span class="clo-tag">CLO 2</span>
+                </div>
+            </div>
+            
+            <div class="outcome-card">
+                <div class="outcome-number">3</div>
+                <h4>Compare Broadcasting Platforms</h4>
+                <p>Compare traditional broadcasting with digital platform strategies and their marketing impact.</p>
+                <div class="clo-tags">
+                    <span class="clo-tag">CLO 2</span>
+                    <span class="clo-tag">CLO 6</span>
+                </div>
+            </div>
+            
+            <div class="outcome-card">
+                <div class="outcome-number">4</div>
+                <h4>Apply Audience Analytics</h4>
+                <p>Apply audience analytics to create ROI reports for content decisions.</p>
+                <div class="clo-tags">
+                    <span class="clo-tag">CLO 1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Analytics for LMS embedding
+        if (window.parent !== window) {
+            // This is embedded in an iframe
+            console.log('Learning Outcomes widget loaded in LMS');
+            
+            // Post message to parent frame when interactions occur
+            document.addEventListener('click', function(e) {
+                if (e.target.closest('.outcome-card')) {
+                    window.parent.postMessage({
+                        type: 'outcome-interaction',
+                        outcome: e.target.closest('.outcome-card').querySelector('h4').textContent
+                    }, '*');
+                }
+            });
+        }
+        
+        // Accessibility enhancements
+        document.querySelectorAll('.outcome-card').forEach((card, index) => {
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('role', 'article');
+            card.setAttribute('aria-labelledby', `outcome-title-${index}`);
+            card.querySelector('h4').id = `outcome-title-${index}`;
+        });
+    </script>
+</body>
+</html>

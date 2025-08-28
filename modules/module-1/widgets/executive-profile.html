@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Profile - Bell Media</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 1rem;
+            font-family: 'Benton Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #2c2c2c;
+            color: white;
+        }
+        
+        .profile-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .executive-avatar {
+            width: 100px;
+            height: 100px;
+            background: #c5b783;
+            color: #2c2c2c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .executive-info h2 {
+            margin: 0 0 0.5rem 0;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .executive-title {
+            color: #c5b783;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .executive-company {
+            color: #ccc;
+            font-size: 0.875rem;
+        }
+        
+        .profile-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 4px solid #c5b783;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .profile-section h3 {
+            color: #c5b783;
+            margin: 0 0 1rem 0;
+            font-size: 1.125rem;
+        }
+        
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .expertise-item {
+            background: rgba(197, 183, 131, 0.1);
+            border: 1px solid rgba(197, 183, 131, 0.3);
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .expertise-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .expertise-title {
+            color: #c5b783;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            font-size: 0.875rem;
+        }
+        
+        .expertise-desc {
+            color: #ccc;
+            font-size: 0.75rem;
+            line-height: 1.4;
+        }
+        
+        .achievements-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        
+        .achievements-list li {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 3px solid #c5b783;
+            padding: 0.75rem 1rem;
+            margin: 0.5rem 0;
+        }
+        
+        .achievements-list li strong {
+            color: #c5b783;
+        }
+        
+        .session-preview {
+            background: rgba(197, 183, 131, 0.1);
+            border: 1px solid #c5b783;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        
+        .session-preview h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .preview-topics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .topic-tag {
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .quote-section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(197, 183, 131, 0.3);
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+            font-style: italic;
+            position: relative;
+        }
+        
+        .quote-section::before {
+            content: """;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: #c5b783;
+            line-height: 1;
+        }
+        
+        .quote-text {
+            font-size: 1.125rem;
+            color: #ccc;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .quote-attribution {
+            color: #c5b783;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        /* LMS embedding optimizations */
+        @media (max-width: 600px) {
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .preview-topics {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="executive-avatar">TSN</div>
+            <div class="executive-info">
+                <h2>Senior Executive</h2>
+                <div class="executive-title">Vice President, Content Strategy & Rights</div>
+                <div class="executive-company">Bell Media / TSN / RDS</div>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <h3>Background & Experience</h3>
+            <p>Over 15 years of leadership experience in sports media, driving content strategy, media rights negotiations, and audience development at Canada's premier sports network. Led the team through digital transformation while maintaining TSN's position as Canada's Sports Leader.</p>
+        </div>
+        
+        <div class="profile-section">
+            <h3>Areas of Expertise</h3>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <span class="expertise-icon">💰</span>
+                    <div class="expertise-title">Media Rights Valuation</div>
+                    <div class="expertise-desc">Multi-million dollar negotiations with leagues and properties</div>
+                </div>
+                
+                <div class="expertise-item">
+                    <span class="expertise-icon">📺</span>
+                    <div class="expertise-title">Content Programming</div>
+                    <div class="expertise-desc">Building compelling schedules that drive viewership</div>
+                </div>
+                
+                <div class="expertise-item">
+                    <span class="expertise-icon">📊</span>
+                    <div class="expertise-title">Audience Analytics</div>
+                    <div class="expertise-desc">Data-driven decision making and ROI optimization</div>
+                </div>
+                
+                <div class="expertise-item">
+                    <span class="expertise-icon">📱</span>
+                    <div class="expertise-title">Digital Strategy</div>
+                    <div class="expertise-desc">Integrating traditional broadcast with streaming platforms</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="profile-section">
+            <h3>Recent Achievements</h3>
+            <ul class="achievements-list">
+                <li><strong>Audience Growth:</strong> Led initiatives that increased TSN viewership by 23% over three years despite losing NHL national rights</li>
+                <li><strong>Digital Innovation:</strong> Pioneered TSN Direct streaming service, reaching 500K+ subscribers in first year</li>
+                <li><strong>Strategic Partnerships:</strong> Negotiated exclusive rights deals with CFL, IIHF World Championship, and March Madness</li>
+                <li><strong>Content Diversification:</strong> Expanded shoulder programming to include podcasts, documentaries, and original series</li>
+            </ul>
+        </div>
+        
+        <div class="quote-section">
+            <div class="quote-text">
+                The media rights landscape is evolving faster than ever. Success comes from understanding not just what fans want to watch, but how, when, and where they want to consume sports content.
+            </div>
+            <div class="quote-attribution">— TSN Executive on Industry Evolution</div>
+        </div>
+        
+        <div class="session-preview">
+            <h3>What You'll Learn in Our Session</h3>
+            <p>Get insider insights into the real decisions shaping Canada's sports media landscape</p>
+            
+            <div class="preview-topics">
+                <span class="topic-tag">Rights Negotiations</span>
+                <span class="topic-tag">Audience Development</span>
+                <span class="topic-tag">Digital Strategy</span>
+                <span class="topic-tag">Revenue Optimization</span>
+                <span class="topic-tag">Competition Analysis</span>
+                <span class="topic-tag">Future Trends</span>
+            </div>
+            
+            <p style="margin-top: 1.5rem; font-size: 0.875rem; color: #ccc;">
+                This is your opportunity to ask direct questions about real deals, strategic decisions, and industry insights from someone making these choices every day.
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        // LMS integration
+        if (window.parent !== window) {
+            console.log('Executive Profile widget loaded in LMS');
+            
+            // Track engagement
+            let engagementTime = 0;
+            const startTime = Date.now();
+            
+            window.addEventListener('beforeunload', function() {
+                engagementTime = Date.now() - startTime;
+                window.parent.postMessage({
+                    type: 'executive-profile-engagement',
+                    timeSpent: engagementTime,
+                    profileViewed: true
+                }, '*');
+            });
+            
+            // Track scroll depth
+            let maxScroll = 0;
+            window.addEventListener('scroll', function() {
+                const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+                if (scrollPercent > maxScroll) {
+                    maxScroll = scrollPercent;
+                }
+            });
+            
+            // Send final engagement data
+            setInterval(function() {
+                window.parent.postMessage({
+                    type: 'executive-profile-progress',
+                    scrollDepth: maxScroll,
+                    timeSpent: Date.now() - startTime
+                }, '*');
+            }, 30000); // Every 30 seconds
+        }
+        
+        // Accessibility enhancements
+        document.querySelectorAll('.expertise-item').forEach((item, index) => {
+            item.setAttribute('tabindex', '0');
+            item.setAttribute('role', 'article');
+            item.setAttribute('aria-labelledby', `expertise-title-${index}`);
+            item.querySelector('.expertise-title').id = `expertise-title-${index}`;
+        });
+    </script>
+</body>
+</html>

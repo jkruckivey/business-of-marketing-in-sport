@@ -1,0 +1,9 @@
+# Visual Studio
+.vs/
+
+# Course materials (keep out of repo)
+Course Materials/
+
+# OS files
+.DS_Store
+Thumbs.db

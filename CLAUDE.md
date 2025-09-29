@@ -77,7 +77,43 @@ business-of-marketing-in-sport/
 - [ ] Implement enhanced student progress tracking system
 - [ ] Add multilingual support options
 
-## Course Structure Implemented
+## Course Structure (5-Week SME Outline)
+
+### Week 1: The Business of Sport - Where the Money Flows
+- **Core Case**: NHL Vancouver Canucks: Competing on Revenue Sharing (W14149)
+- **Guest Executive**: Bell Media / TSN senior leader
+- **Focus**: Revenue streams (media rights, sponsorship, ticketing, merchandising, betting, licensing)
+- **Interactive Widgets**: Revenue Empire Builder, Business Model Comparator
+
+### Week 2: Media, Content & Fan Engagement (The Core Product)
+- **Core Case**: Rogers Communications: Sportsnet and NHL Rights Deal (W16179)
+- **Guest Executive**: TSN or DAZN Canada leader
+- **Focus**: Media rights valuation, streaming vs traditional broadcasting
+- **Interactive Widgets**: Streaming Wars Strategy, Media Rights Calculator
+
+### Week 3: Sponsorship & Betting - The Growth Engines
+- **Core Case**: FanDuel: Betting on Sports (HBS 520038)
+- **Guest Executives**: Andrew Sneyd (FanDuel) + brand sponsor leader
+- **Focus**: Sponsorship ROI, sports betting as growth driver
+- **Interactive Widgets**: ROI Calculator, Betting Market Simulator
+
+### Week 4: Athletes, Brands & Emerging Sports
+- **Core Case**: Serena Williams: Building a Brand (HBS 517050)
+- **Guest Executives**: Sports agent + Don Rea (PGA) + Niki da Silva (Golf Canada) + Matt Rubinoff
+- **Focus**: Athlete branding, women's sports, emerging markets (Pickleball, Padel, esports)
+- **Interactive Widgets**: Athlete Brand Value Calculator, Emerging Sport Investment Tool
+
+### Week 5: Legacy, Culture & The Future of Monetization
+- **Core Case**: Hockey Hall of Fame: Managing Tradition and Growth (custom case)
+- **Guest Executives**: Jamie Dinsmore (HHOF) + Keith Pelley (MLSE)
+- **Focus**: Heritage properties, future trends, balancing tradition with innovation
+- **Interactive Widgets**: Legacy vs Innovation Matrix, Future Trends Predictor
+
+### Technical Framework
+- **Semantic HTML5**: Proper heading structure, ARIA labels, landmark regions
+- **CSS Custom Properties**: Consistent design system with accessibility considerations
+- **JavaScript Enhancements**: Screen reader announcements, keyboard navigation, user preferences
+- **Progress Tracking**: Local storage for user preferences and learning analytics
 
 ### Main Portal Features
 - **Universal Design for Learning (UDL) Compliance**: Multiple means of representation, engagement, and action/expression
@@ -85,19 +121,6 @@ business-of-marketing-in-sport/
 - **WCAG AA Accessibility**: Color contrast, keyboard navigation, screen reader support, focus management
 - **Responsive Design**: Mobile-friendly layout with flexible grid systems
 - **Interactive Elements**: Engagement preference selection, progress tracking, accessibility toolbar
-
-### Module 1 Implementation
-- **Learning Outcomes**: 4 measurable outcomes aligned with course objectives
-- **Multiple Learning Paths**: Visual, audio, interactive, and text-based options
-- **Executive Integration**: Structured preparation for Bell Media/TSN executive session
-- **Accessibility Features**: Real-time captions, transcripts, multiple format options
-- **Assessment Alignment**: Pre-reading, case studies, reflection activities
-
-### Technical Framework
-- **Semantic HTML5**: Proper heading structure, ARIA labels, landmark regions
-- **CSS Custom Properties**: Consistent design system with accessibility considerations
-- **JavaScript Enhancements**: Screen reader announcements, keyboard navigation, user preferences
-- **Progress Tracking**: Local storage for user preferences and learning analytics
 - **Performance Optimization**: Efficient loading, reduced motion options, print-friendly styles
 
 ## Notes for Future Development

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 1: Live Content & Media Rights - Business of Marketing in Sport</title>
+    <title>Week 1: The Business of Sport - Where the Money Flows</title>
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="../../styles.css">
     <style>
@@ -147,6 +147,81 @@
             box-shadow: none;
             border: none;
         }
+
+        /* Interactive Activities Section */
+        .interactive-activities {
+            background: #f5f4f0;
+            padding: 3rem;
+            margin: 2rem 0;
+        }
+
+        .interactive-activities h2 {
+            color: #2c2c2c;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 1.75rem;
+            font-weight: 700;
+        }
+
+        .interactive-activities p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .activity-card {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-3px);
+            border-color: #b8a56f;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-card h3 {
+            color: #2c2c2c;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .activity-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            text-align: left;
+        }
+
+        .module-link {
+            background: #2c2c2c;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.25rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s ease;
+            font-size: 0.875rem;
+        }
+
+        .module-link:hover {
+            background: #1a1a1a;
+            transform: translateY(-1px);
+        }
     </style>
 </head>
 <body>
@@ -159,7 +234,7 @@
             <nav aria-label="Breadcrumb">
                 <a href="../../index.html">Course Home</a>
                 <span>→</span>
-                <span>Module 1: Live Content & Media Rights</span>
+                <span>Week 1: The Business of Sport - Where the Money Flows</span>
             </nav>
         </div>
         
@@ -169,8 +244,8 @@
                 <div class="logo-section">
                     <div class="logo-icon">M1</div>
                     <div class="header-text">
-                        <h1>Module 1: Live Content & Media Rights</h1>
-                        <p class="subtitle">Understanding the Foundation of Sports Media Business</p>
+                        <h1>Week 1: The Business of Sport</h1>
+                        <p class="subtitle">Where the Money Flows - Understanding Revenue Ecosystems</p>
                     </div>
                 </div>
             </div>
@@ -191,7 +266,7 @@
                     </div>
                     <div class="path-step">
                         <h4>3. Executive Session</h4>
-                        <p>Live discussion with Bell Media / TSN / RDS executive</p>
+                        <p>Live discussion with Bell Media / TSN executive on revenue streams and media rights</p>
                     </div>
                     <div class="path-step">
                         <h4>4. Application & Reflection</h4>
@@ -208,26 +283,26 @@
             <div class="outcomes-grid">
                 <div class="outcome-card">
                     <div class="outcome-number">1</div>
-                    <h4>Calculate Media Rights Valuations</h4>
-                    <p>Calculate media rights valuations using industry pricing models for different sports properties (CLO 1, CLO 2)</p>
+                    <h4>Map Major Revenue Streams</h4>
+                    <p>Map the major revenue streams in sport: media rights, sponsorship, ticketing, merchandising, betting, licensing (CLO 1)</p>
                 </div>
-                
+
                 <div class="outcome-card">
                     <div class="outcome-number">2</div>
-                    <h4>Evaluate Content Strategies</h4>
-                    <p>Evaluate content strategies that maximize audience engagement and revenue generation (CLO 2)</p>
+                    <h4>Understand Sports Business Model</h4>
+                    <p>Understand how sport's business model differs from traditional consumer industries (CLO 1)</p>
                 </div>
-                
+
                 <div class="outcome-card">
                     <div class="outcome-number">3</div>
-                    <h4>Compare Broadcasting Platforms</h4>
-                    <p>Compare traditional broadcasting with digital platform strategies and their marketing impact (CLO 2, CLO 6)</p>
+                    <h4>Analyze Revenue Vulnerability</h4>
+                    <p>Debate which revenue streams are most vulnerable and which hold the most growth potential (CLO 1)</p>
                 </div>
-                
+
                 <div class="outcome-card">
                     <div class="outcome-number">4</div>
-                    <h4>Apply Audience Analytics</h4>
-                    <p>Apply audience analytics to create ROI reports for content decisions (CLO 1)</p>
+                    <h4>Evaluate Revenue Sharing</h4>
+                    <p>Analyze revenue sharing models and their impact on competitive balance using NHL Vancouver Canucks case (CLO 1)</p>
                 </div>
             </div>
         </section>
@@ -235,14 +310,14 @@
         <!-- Executive Spotlight -->
         <section class="executive-spotlight">
             <h2>Executive Leadership</h2>
-            <h3>Bell Media / TSN / RDS Executive</h3>
-            <p>This module features insights from a senior executive at Bell Media, Canada's leading media company. Our guest leader will share real-world experience in:</p>
+            <h3>Bell Media / TSN Senior Leader</h3>
+            <p>This module features insights from a senior executive at Bell Media, Canada's leading sports media company. Our guest leader will share real-world experience in:</p>
             <ul>
-                <li><strong>Media Rights Negotiations:</strong> Strategic approaches to acquiring and valuing sports content</li>
-                <li><strong>Content Programming:</strong> How to build compelling sports programming schedules</li>
-                <li><strong>Audience Development:</strong> Strategies for growing and retaining sports viewership</li>
-                <li><strong>Digital Integration:</strong> Balancing traditional broadcast with streaming platforms</li>
-                <li><strong>Revenue Optimization:</strong> Maximizing advertising and subscription revenue streams</li>
+                <li><strong>Revenue Stream Mapping:</strong> Understanding the six major revenue sources in sports business</li>
+                <li><strong>Media Rights Strategy:</strong> How TSN evaluates and negotiates for sports properties</li>
+                <li><strong>Business Model Innovation:</strong> What makes sports different from traditional industries</li>
+                <li><strong>Revenue Vulnerability:</strong> Identifying risks and growth opportunities across revenue streams</li>
+                <li><strong>Revenue Sharing:</strong> Lessons from professional leagues and competitive balance</li>
             </ul>
             
             <div class="accessibility-note">
@@ -252,17 +327,17 @@
         
         <!-- Learning Resources -->
         <section class="learning-resources">
-            <h2>Learning Resources & Materials</h2>
-            <p class="modules-intro">Access multiple types of resources to support different learning styles and preferences. Choose the combination that works best for you.</p>
+            <h2>Content Structure</h2>
+            <p class="modules-intro">Week 1 content organized by delivery format and learning approach:</p>
             
             <div class="resources-grid">
                 <div class="resource-card">
                     <span class="resource-type">Essential Reading</span>
-                    <h3>Industry Reports & Analysis</h3>
+                    <h3>Core Case Study & Analysis</h3>
                     <ul>
-                        <li>Global Sports Media Rights Report 2024</li>
-                        <li>Canadian Broadcasting Landscape Analysis</li>
-                        <li>Streaming vs. Traditional: Market Trends</li>
+                        <li>NHL Vancouver Canucks: Competing on Revenue Sharing (HBS W14149)</li>
+                        <li>The Business of Sports: Text and Cases (excerpt)</li>
+                        <li>Canadian Sponsorship Landscape Study 2023</li>
                     </ul>
                     <p><strong>Estimated Time:</strong> 45-60 minutes</p>
                 </div>
@@ -271,9 +346,9 @@
                     <span class="resource-type">Video Content</span>
                     <h3>Visual Learning Materials</h3>
                     <ul>
-                        <li>Media Rights Negotiation Process (12 min)</li>
-                        <li>TSN Programming Strategy Case Study (8 min)</li>
-                        <li>Digital Platform Integration (10 min)</li>
+                        <li>Sports Revenue Streams Overview (12 min)</li>
+                        <li>NHL Business Model Deep Dive (8 min)</li>
+                        <li>Revenue Sharing in Professional Sports (10 min)</li>
                     </ul>
                     <p><strong>Features:</strong> Closed captions, transcript, 1.5x speed option</p>
                 </div>
@@ -282,11 +357,11 @@
                     <span class="resource-type">Interactive</span>
                     <h3>Hands-On Activities</h3>
                     <ul>
-                        <li>Media Rights Valuation Calculator</li>
-                        <li>Audience Analytics Dashboard</li>
-                        <li>Content Strategy Planning Tool</li>
+                        <li><button class="module-link" onclick="openWidget('widgets/case-study-rogers-tsn.html')" style="padding: 0.25rem 0.5rem; font-size: 0.8rem; margin: 0.25rem 0;">Rogers vs TSN Analysis Tool</button></li>
+                        <li><button class="module-link" onclick="openWidget('widgets/executive-profile.html')" style="padding: 0.25rem 0.5rem; font-size: 0.8rem; margin: 0.25rem 0;">Executive Profile Explorer</button></li>
+                        <li><button class="module-link" onclick="openWidget('widgets/reading-checklist.html')" style="padding: 0.25rem 0.5rem; font-size: 0.8rem; margin: 0.25rem 0;">Reading & Progress Tracker</button></li>
                     </ul>
-                    <p><strong>Purpose:</strong> Practice applying concepts with real data</p>
+                    <p><strong>Format:</strong> Interactive tools for concept application</p>
                 </div>
                 
                 <div class="resource-card">
@@ -302,78 +377,116 @@
             </div>
         </section>
         
-        <!-- Engagement Options -->
+        <!-- UDL Approach -->
         <section class="engagement-section">
-            <h2>How Would You Like to Engage?</h2>
-            <p>Choose your preferred way to participate in this module. You can change your selection at any time.</p>
-            
+            <h2>Universal Design for Learning Implementation</h2>
+            <p>Week 1 content available in multiple formats to support diverse learning preferences:</p>
+
             <div class="engagement-options">
-                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
-                    <h4>Visual Learner</h4>
-                    <p>Focus on infographics, charts, and video content</p>
+                <div class="engagement-option">
+                    <h4>Visual Components</h4>
+                    <p>Infographics, charts, and video content</p>
                 </div>
-                
-                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
-                    <h4>Audio Learner</h4>
-                    <p>Emphasize podcasts, audio summaries, and discussions</p>
+
+                <div class="engagement-option">
+                    <h4>Audio Components</h4>
+                    <p>Podcasts, audio summaries, and discussions</p>
                 </div>
-                
-                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
-                    <h4>Interactive Learner</h4>
+
+                <div class="engagement-option">
+                    <h4>Interactive Components</h4>
                     <p>Hands-on tools, simulations, and collaborative activities</p>
                 </div>
-                
-                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
-                    <h4>Reading & Research</h4>
-                    <p>Text-based materials, case studies, and written analysis</p>
+
+                <div class="engagement-option">
+                    <h4>Text Components</h4>
+                    <p>Case studies, readings, and written analysis</p>
                 </div>
             </div>
-            
+
             <div class="accessibility-note">
-                <strong>Universal Design Note:</strong> All content is available in multiple formats regardless of your selection. This preference simply helps us highlight the most relevant materials for your learning style.
+                <strong>UDL Implementation:</strong> All content accessible in multiple formats with WCAG 2.1 AA compliance.
             </div>
         </section>
         
-        <!-- Key Questions -->
+        <!-- Content Framework -->
         <section class="key-questions">
-            <h2>Key Questions to Consider</h2>
-            <p>As you work through this module, keep these strategic questions in mind:</p>
+            <h2>Content Framework</h2>
+            <p>Week 1 content structured around these key business questions:</p>
             
             <div class="overview-grid">
                 <div class="overview-card">
                     <h3>Strategic</h3>
                     <ul>
-                        <li>How do media companies determine the value of sports rights?</li>
-                        <li>What factors influence the success of sports programming?</li>
-                        <li>How is digital transformation changing the media landscape?</li>
+                        <li>Which revenue streams are most vulnerable to disruption?</li>
+                        <li>How does sports business differ from traditional consumer industries?</li>
+                        <li>What makes revenue sharing effective in professional leagues?</li>
                     </ul>
                 </div>
-                
+
                 <div class="overview-card">
                     <h3>Practical</h3>
                     <ul>
-                        <li>What metrics matter most for sports content performance?</li>
-                        <li>How do you balance traditional and digital distribution?</li>
-                        <li>What makes a sports media partnership successful?</li>
+                        <li>How do you map revenue interdependencies in sports organizations?</li>
+                        <li>What growth opportunities exist across the six revenue streams?</li>
+                        <li>How can the NHL Canucks case inform other sports business decisions?</li>
                     </ul>
                 </div>
             </div>
         </section>
         
-        <!-- Next Steps -->
+        <!-- Interactive Activities Section -->
+        <section class="interactive-activities">
+            <h2>Interactive Components</h2>
+            <p>Week 1 interactive tools and case study materials:</p>
+
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <h3>📊 Case Study Tool</h3>
+                    <p>Rogers vs TSN competitive analysis framework.</p>
+                    <button class="module-link" onclick="openWidget('widgets/case-study-rogers-tsn.html')">View Tool</button>
+                </div>
+
+                <div class="activity-card">
+                    <h3>👔 Executive Profile</h3>
+                    <p>Industry leadership and decision-making frameworks.</p>
+                    <button class="module-link" onclick="openWidget('widgets/executive-profile.html')">View Profile</button>
+                </div>
+
+                <div class="activity-card">
+                    <h3>🎯 Learning Outcomes</h3>
+                    <p>CLO alignment and module progression tracking.</p>
+                    <button class="module-link" onclick="openWidget('widgets/learning-outcomes.html')">View Tracker</button>
+                </div>
+
+                <div class="activity-card">
+                    <h3>📚 Reading Materials</h3>
+                    <p>NHL Canucks case and supporting readings organization.</p>
+                    <button class="module-link" onclick="openWidget('widgets/reading-checklist.html')">View List</button>
+                </div>
+
+                <div class="activity-card">
+                    <h3>✅ Progress Tracking</h3>
+                    <p>Module completion and assessment status.</p>
+                    <button class="module-link" onclick="openWidget('widgets/completion-tracker.html')">View Status</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assessment Structure -->
         <section class="next-steps">
-            <h2>Ready to Begin?</h2>
+            <h2>Assessment Components</h2>
             <div class="assessment-grid">
                 <div class="assessment-card">
-                    <h3>Start with Pre-Reading</h3>
-                    <p>Begin with the essential background materials to prepare for the executive session.</p>
-                    <a href="resources/pre-reading.html" class="module-link">Access Pre-Reading Materials</a>
+                    <h3>Core Case Analysis</h3>
+                    <p>NHL Vancouver Canucks revenue sharing case study.</p>
+                    <button class="module-link" onclick="openWidget('widgets/reading-checklist.html')">View Materials</button>
                 </div>
-                
+
                 <div class="assessment-card">
-                    <h3>Join the Discussion</h3>
-                    <p>Connect with classmates to discuss initial thoughts and questions about media rights.</p>
-                    <a href="#discussion" class="module-link">Join Module Discussion</a>
+                    <h3>Executive Session Prep</h3>
+                    <p>Bell Media/TSN revenue stream analysis framework.</p>
+                    <button class="module-link" onclick="openWidget('widgets/case-study-rogers-tsn.html')">View Framework</button>
                 </div>
             </div>
         </section>
@@ -435,6 +548,20 @@
                 }
             });
         });
+
+        // Widget opening function
+        function openWidget(widgetPath) {
+            // Open widget in new window with optimal size for learning tools
+            const widgetWindow = window.open(widgetPath, 'widget', 'width=1200,height=900,resizable=yes,scrollbars=yes');
+
+            // Focus the new window if it opened successfully
+            if (widgetWindow) {
+                widgetWindow.focus();
+            } else {
+                // Fallback if popup was blocked - open in current tab
+                window.location.href = widgetPath;
+            }
+        }
     </script>
 </body>
 </html>

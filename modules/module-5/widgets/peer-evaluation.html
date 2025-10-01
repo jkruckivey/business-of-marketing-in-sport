@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Evaluation Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .confidential-notice {
+            background: rgba(251, 191, 36, 0.1);
+            border: 2px solid #fbbf24;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            color: #fbbf24;
+            font-size: 0.9rem;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .section-description {
+            color: #ccc;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            color: #c5b783;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 6px;
+            color: #f5f4f0;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus,
+        .input-group textarea:focus {
+            outline: none;
+            border-color: #c5b783;
+        }
+
+        .input-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .teammate-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .teammate-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .teammate-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .teammate-name {
+            color: #c5b783;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .remove-btn {
+            padding: 0.5rem 1rem;
+            background: rgba(248, 113, 113, 0.2);
+            border: 2px solid #f87171;
+            border-radius: 6px;
+            color: #f87171;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .remove-btn:hover {
+            background: rgba(248, 113, 113, 0.3);
+        }
+
+        .rating-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+
+        .rating-label {
+            color: #f5f4f0;
+            font-size: 0.95rem;
+        }
+
+        .rating-select {
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 6px;
+            color: #f5f4f0;
+            font-size: 0.9rem;
+        }
+
+        .rating-select:focus {
+            outline: none;
+            border-color: #c5b783;
+        }
+
+        .add-btn {
+            padding: 0.75rem 1.5rem;
+            background: rgba(74, 222, 128, 0.2);
+            border: 2px solid #4ade80;
+            border-radius: 6px;
+            color: #4ade80;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        .add-btn:hover {
+            background: rgba(74, 222, 128, 0.3);
+        }
+
+        .export-btn {
+            background: linear-gradient(135deg, #c5b783, #b8a56f);
+            color: #2c2c2c;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            margin: 2rem auto 0;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(197, 183, 131, 0.3);
+        }
+
+        .help-text {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        .rating-scale {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .rating-scale h3 {
+            color: #c5b783;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .rating-scale ul {
+            list-style: none;
+            color: #ccc;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        .rating-scale li {
+            padding-left: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .rating-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤝 Peer Evaluation Form</h1>
+        <p class="subtitle">Provide honest, constructive feedback on your teammates' contributions to the Anchor Project. This evaluation helps ensure fair grade distribution and recognizes individual effort.</p>
+
+        <div class="confidential-notice">
+            <strong>⚠️ Confidential:</strong> Your responses will be kept confidential and aggregated with other team member evaluations. Be honest and fair in your assessments.
+        </div>
+
+        <div class="section">
+            <h2>Evaluator Information</h2>
+
+            <div class="input-group">
+                <label for="evaluator-name">Your Name</label>
+                <input type="text" id="evaluator-name" placeholder="Full name">
+            </div>
+
+            <div class="input-group">
+                <label for="team-name">Team Name</label>
+                <input type="text" id="team-name" placeholder="e.g., Revenue Raptors, Pickleball Pioneers">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Rating Scale</h2>
+
+            <div class="rating-scale">
+                <h3>Use the following scale for all ratings:</h3>
+                <ul>
+                    <li><strong>5 - Exceptional:</strong> Went far above and beyond expectations, exceptional leadership and contribution</li>
+                    <li><strong>4 - Exceeds Expectations:</strong> Consistently high quality work, proactive, highly reliable</li>
+                    <li><strong>3 - Meets Expectations:</strong> Completed assigned work on time with good quality, collaborative team member</li>
+                    <li><strong>2 - Below Expectations:</strong> Inconsistent contributions, required reminders, quality concerns</li>
+                    <li><strong>1 - Far Below Expectations:</strong> Minimal contribution, missed deadlines, not responsive to team</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Team Member Evaluations</h2>
+            <p class="section-description">Evaluate each teammate (excluding yourself) on the following criteria.</p>
+
+            <div class="teammate-list" id="teammate-list">
+                <!-- Generated dynamically -->
+            </div>
+
+            <button class="add-btn" onclick="addTeammate()">+ Add Team Member</button>
+        </div>
+
+        <div class="section">
+            <h2>Overall Team Dynamics</h2>
+
+            <div class="input-group">
+                <label for="team-strengths">What were the biggest strengths of your team?</label>
+                <textarea id="team-strengths" placeholder="Describe what worked well in your team collaboration..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="team-improvements">What could your team improve for future projects?</label>
+                <textarea id="team-improvements" placeholder="Identify areas where your team could work more effectively..."></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="conflicts">Were there any unresolved conflicts or concerns?</label>
+                <textarea id="conflicts" placeholder="Optional: Describe any challenges the team faced that faculty should be aware of..."></textarea>
+                <span class="help-text">This information will be handled confidentially by faculty</span>
+            </div>
+        </div>
+
+        <button class="export-btn" onclick="exportEvaluation()">📄 Submit Peer Evaluation</button>
+    </div>
+
+    <script>
+        let teammateCount = 0;
+
+        function addTeammate() {
+            teammateCount++;
+            const container = document.getElementById('teammate-list');
+            const card = document.createElement('div');
+            card.className = 'teammate-card';
+            card.id = `teammate-${teammateCount}`;
+
+            card.innerHTML = `
+                <div class="teammate-header">
+                    <div class="teammate-name">Team Member #${teammateCount}</div>
+                    <button class="remove-btn" onclick="removeTeammate(${teammateCount})">Remove</button>
+                </div>
+
+                <div class="input-group" style="margin-bottom: 1.5rem;">
+                    <label>Team Member Name</label>
+                    <input type="text" class="member-name" placeholder="Full name">
+                </div>
+
+                <div class="rating-grid">
+                    <div class="rating-label">Quality of Work</div>
+                    <select class="rating-select quality-rating">
+                        <option value="">Select...</option>
+                        <option value="5">5 - Exceptional</option>
+                        <option value="4">4 - Exceeds Expectations</option>
+                        <option value="3">3 - Meets Expectations</option>
+                        <option value="2">2 - Below Expectations</option>
+                        <option value="1">1 - Far Below Expectations</option>
+                    </select>
+                </div>
+
+                <div class="rating-grid">
+                    <div class="rating-label">Contribution & Effort</div>
+                    <select class="rating-select contribution-rating">
+                        <option value="">Select...</option>
+                        <option value="5">5 - Exceptional</option>
+                        <option value="4">4 - Exceeds Expectations</option>
+                        <option value="3">3 - Meets Expectations</option>
+                        <option value="2">2 - Below Expectations</option>
+                        <option value="1">1 - Far Below Expectations</option>
+                    </select>
+                </div>
+
+                <div class="rating-grid">
+                    <div class="rating-label">Communication & Collaboration</div>
+                    <select class="rating-select communication-rating">
+                        <option value="">Select...</option>
+                        <option value="5">5 - Exceptional</option>
+                        <option value="4">4 - Exceeds Expectations</option>
+                        <option value="3">3 - Meets Expectations</option>
+                        <option value="2">2 - Below Expectations</option>
+                        <option value="1">1 - Far Below Expectations</option>
+                    </select>
+                </div>
+
+                <div class="rating-grid">
+                    <div class="rating-label">Reliability & Timeliness</div>
+                    <select class="rating-select reliability-rating">
+                        <option value="">Select...</option>
+                        <option value="5">5 - Exceptional</option>
+                        <option value="4">4 - Exceeds Expectations</option>
+                        <option value="3">3 - Meets Expectations</option>
+                        <option value="2">2 - Below Expectations</option>
+                        <option value="1">1 - Far Below Expectations</option>
+                    </select>
+                </div>
+
+                <div class="rating-grid">
+                    <div class="rating-label">Leadership & Initiative</div>
+                    <select class="rating-select leadership-rating">
+                        <option value="">Select...</option>
+                        <option value="5">5 - Exceptional</option>
+                        <option value="4">4 - Exceeds Expectations</option>
+                        <option value="3">3 - Meets Expectations</option>
+                        <option value="2">2 - Below Expectations</option>
+                        <option value="1">1 - Far Below Expectations</option>
+                    </select>
+                </div>
+
+                <div class="input-group" style="margin-top: 1.5rem;">
+                    <label>Specific Contributions</label>
+                    <textarea class="contributions" rows="3" placeholder="What specific contributions did this team member make? (e.g., led revenue analysis, designed all slides, coordinated meetings)"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label>Constructive Feedback</label>
+                    <textarea class="feedback" rows="3" placeholder="Optional: What could this team member do to improve their contribution in future projects?"></textarea>
+                </div>
+            `;
+
+            container.appendChild(card);
+        }
+
+        function removeTeammate(id) {
+            const teammate = document.getElementById(`teammate-${id}`);
+            if (teammate) {
+                teammate.remove();
+                renumberTeammates();
+            }
+        }
+
+        function renumberTeammates() {
+            const teammates = document.querySelectorAll('.teammate-card');
+            teammates.forEach((teammate, index) => {
+                const header = teammate.querySelector('.teammate-name');
+                if (header) {
+                    header.textContent = `Team Member #${index + 1}`;
+                }
+            });
+        }
+
+        function exportEvaluation() {
+            const evaluatorName = document.getElementById('evaluator-name').value;
+            const teamName = document.getElementById('team-name').value;
+
+            if (!evaluatorName || !teamName) {
+                alert('Please complete evaluator information before submitting.');
+                return;
+            }
+
+            // Collect teammate evaluations
+            const teammates = [];
+            document.querySelectorAll('.teammate-card').forEach(card => {
+                const name = card.querySelector('.member-name')?.value || '';
+                const quality = card.querySelector('.quality-rating')?.value || '';
+                const contribution = card.querySelector('.contribution-rating')?.value || '';
+                const communication = card.querySelector('.communication-rating')?.value || '';
+                const reliability = card.querySelector('.reliability-rating')?.value || '';
+                const leadership = card.querySelector('.leadership-rating')?.value || '';
+                const contributions = card.querySelector('.contributions')?.value || '';
+                const feedback = card.querySelector('.feedback')?.value || '';
+
+                if (name) {
+                    teammates.push({
+                        name, quality, contribution, communication, reliability, leadership, contributions, feedback
+                    });
+                }
+            });
+
+            if (teammates.length === 0) {
+                alert('Please evaluate at least one team member before submitting.');
+                return;
+            }
+
+            // Check for incomplete ratings
+            let incompleteCount = 0;
+            teammates.forEach(tm => {
+                if (!tm.quality || !tm.contribution || !tm.communication || !tm.reliability || !tm.leadership) {
+                    incompleteCount++;
+                }
+            });
+
+            if (incompleteCount > 0) {
+                if (!confirm(`${incompleteCount} team member(s) have incomplete ratings. Do you want to submit anyway?`)) {
+                    return;
+                }
+            }
+
+            const teamStrengths = document.getElementById('team-strengths').value;
+            const teamImprovements = document.getElementById('team-improvements').value;
+            const conflicts = document.getElementById('conflicts').value;
+
+            const ratingLabels = {
+                '5': 'Exceptional',
+                '4': 'Exceeds Expectations',
+                '3': 'Meets Expectations',
+                '2': 'Below Expectations',
+                '1': 'Far Below Expectations'
+            };
+
+            let teammatesText = '';
+            teammates.forEach((tm, i) => {
+                const avgRating = [tm.quality, tm.contribution, tm.communication, tm.reliability, tm.leadership]
+                    .filter(r => r !== '')
+                    .map(r => parseInt(r))
+                    .reduce((sum, r, idx, arr) => idx === arr.length - 1 ? (sum + r) / arr.length : sum + r, 0);
+
+                teammatesText += `
+${i + 1}. ${tm.name}
+   ────────────────────────────────
+   Quality of Work: ${tm.quality ? ratingLabels[tm.quality] : 'Not rated'}
+   Contribution & Effort: ${tm.contribution ? ratingLabels[tm.contribution] : 'Not rated'}
+   Communication & Collaboration: ${tm.communication ? ratingLabels[tm.communication] : 'Not rated'}
+   Reliability & Timeliness: ${tm.reliability ? ratingLabels[tm.reliability] : 'Not rated'}
+   Leadership & Initiative: ${tm.leadership ? ratingLabels[tm.leadership] : 'Not rated'}
+
+   Average Rating: ${avgRating > 0 ? avgRating.toFixed(2) : 'N/A'}/5.00
+
+   Specific Contributions:
+   ${tm.contributions || 'Not specified'}
+
+   Constructive Feedback:
+   ${tm.feedback || 'Not specified'}
+
+`;
+            });
+
+            const content = `
+═══════════════════════════════════════════════════════════════
+PEER EVALUATION - CONFIDENTIAL
+Business of Marketing in Sport - Anchor Project
+═══════════════════════════════════════════════════════════════
+
+EVALUATOR INFORMATION
+─────────────────────
+Name: ${evaluatorName}
+Team: ${teamName}
+Submission Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}
+
+
+TEAM MEMBER EVALUATIONS
+───────────────────────
+${teammatesText}
+
+OVERALL TEAM DYNAMICS
+─────────────────────
+
+Team Strengths:
+${teamStrengths || 'Not specified'}
+
+Areas for Improvement:
+${teamImprovements || 'Not specified'}
+
+Unresolved Conflicts/Concerns:
+${conflicts || 'None reported'}
+
+
+═══════════════════════════════════════════════════════════════
+RATING SCALE REFERENCE
+═══════════════════════════════════════════════════════════════
+
+5 - Exceptional: Went far above and beyond expectations
+4 - Exceeds Expectations: Consistently high quality work, proactive
+3 - Meets Expectations: Completed assigned work on time, collaborative
+2 - Below Expectations: Inconsistent contributions, required reminders
+1 - Far Below Expectations: Minimal contribution, not responsive
+
+
+This evaluation will be kept confidential and used in conjunction with
+other peer evaluations to ensure fair grade distribution (15% of grade).
+
+            `.trim();
+
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `peer-evaluation-${evaluatorName.toLowerCase().replace(/\s+/g, '-')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('✅ Peer Evaluation submitted! Your feedback has been recorded. Please submit this file to your instructor through the course portal.');
+        }
+
+        // Initialize with 4 teammate slots (typical team of 5)
+        addTeammate();
+        addTeammate();
+        addTeammate();
+        addTeammate();
+    </script>
+</body>
+</html>

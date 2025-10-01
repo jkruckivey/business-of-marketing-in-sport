@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive Analysis Mapper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .section-description {
+            color: #ccc;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            color: #c5b783;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 6px;
+            color: #f5f4f0;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus,
+        .input-group textarea:focus {
+            outline: none;
+            border-color: #c5b783;
+        }
+
+        .competitors-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .competitor-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .competitor-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .competitor-number {
+            color: #c5b783;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .remove-btn {
+            padding: 0.5rem 1rem;
+            background: rgba(248, 113, 113, 0.2);
+            border: 2px solid #f87171;
+            border-radius: 6px;
+            color: #f87171;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .remove-btn:hover {
+            background: rgba(248, 113, 113, 0.3);
+        }
+
+        .add-btn {
+            padding: 0.75rem 1.5rem;
+            background: rgba(74, 222, 128, 0.2);
+            border: 2px solid #4ade80;
+            border-radius: 6px;
+            color: #4ade80;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        .add-btn:hover {
+            background: rgba(74, 222, 128, 0.3);
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        .comparison-table th {
+            background: rgba(197, 183, 131, 0.2);
+            color: #c5b783;
+            padding: 0.75rem;
+            text-align: left;
+            font-weight: 600;
+            border: 1px solid rgba(197, 183, 131, 0.3);
+        }
+
+        .comparison-table td {
+            padding: 0.75rem;
+            border: 1px solid rgba(197, 183, 131, 0.2);
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .comparison-table td input {
+            width: 100%;
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(197, 183, 131, 0.2);
+            border-radius: 4px;
+            color: #f5f4f0;
+            font-size: 0.9rem;
+        }
+
+        .comparison-table td input:focus {
+            outline: none;
+            border-color: #c5b783;
+        }
+
+        .export-btn {
+            background: linear-gradient(135deg, #c5b783, #b8a56f);
+            color: #2c2c2c;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            margin: 2rem auto 0;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(197, 183, 131, 0.3);
+        }
+
+        .help-text {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        .swot-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .swot-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .swot-card h3 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .swot-card.strengths {
+            border-color: #4ade80;
+        }
+
+        .swot-card.strengths h3 {
+            color: #4ade80;
+        }
+
+        .swot-card.weaknesses {
+            border-color: #f87171;
+        }
+
+        .swot-card.weaknesses h3 {
+            color: #f87171;
+        }
+
+        .swot-card.opportunities {
+            border-color: #60a5fa;
+        }
+
+        .swot-card.opportunities h3 {
+            color: #60a5fa;
+        }
+
+        .swot-card.threats {
+            border-color: #fbbf24;
+        }
+
+        .swot-card.threats h3 {
+            color: #fbbf24;
+        }
+
+        @media (max-width: 968px) {
+            .analysis-grid,
+            .swot-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗺️ Competitive Analysis Mapper</h1>
+        <p class="subtitle">Map competitive landscape and identify strategic positioning opportunities</p>
+
+        <div class="section">
+            <h2>1. Your Property</h2>
+            <p class="section-description">Start by identifying your own sports property.</p>
+
+            <div class="input-group">
+                <label for="your-property">Property Name</label>
+                <input type="text" id="your-property" placeholder="e.g., NHL Ottawa Senators, Canadian Pickleball League">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Direct Competitors</h2>
+            <p class="section-description">Identify 3-5 direct competitors - properties competing for the same audience, sponsors, or market position.</p>
+
+            <div class="competitors-list" id="competitors-list">
+                <!-- Generated dynamically -->
+            </div>
+
+            <button class="add-btn" onclick="addCompetitor()">+ Add Competitor</button>
+        </div>
+
+        <div class="section">
+            <h2>3. Competitive Comparison Matrix</h2>
+            <p class="section-description">Rate each property (including yours) on key competitive dimensions. Use 1-5 scale (1=Weak, 5=Strong).</p>
+
+            <button class="export-btn" style="margin: 0 0 1.5rem 0;" onclick="generateMatrix()">↻ Generate Comparison Table</button>
+
+            <div id="matrix-container">
+                <!-- Table generated dynamically -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. SWOT Analysis (Your Property)</h2>
+            <p class="section-description">Analyze your property's position relative to competitors.</p>
+
+            <div class="swot-grid">
+                <div class="swot-card strengths">
+                    <h3>💪 Strengths</h3>
+                    <div class="input-group">
+                        <textarea id="swot-strengths" rows="4" placeholder="What advantages do you have over competitors? (e.g., brand heritage, facilities, fanbase, innovation)"></textarea>
+                    </div>
+                </div>
+
+                <div class="swot-card weaknesses">
+                    <h3>⚠️ Weaknesses</h3>
+                    <div class="input-group">
+                        <textarea id="swot-weaknesses" rows="4" placeholder="Where do competitors outperform you? (e.g., funding, market share, visibility)"></textarea>
+                    </div>
+                </div>
+
+                <div class="swot-card opportunities">
+                    <h3>🌟 Opportunities</h3>
+                    <div class="input-group">
+                        <textarea id="swot-opportunities" rows="4" placeholder="What market gaps or trends can you exploit? (e.g., emerging demographics, underserved markets)"></textarea>
+                    </div>
+                </div>
+
+                <div class="swot-card threats">
+                    <h3>⚡ Threats</h3>
+                    <div class="input-group">
+                        <textarea id="swot-threats" rows="4" placeholder="What external factors could impact your position? (e.g., new entrants, changing preferences)"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Strategic Insights</h2>
+            <p class="section-description">Synthesize your competitive analysis into actionable positioning insights.</p>
+
+            <div class="input-group">
+                <label for="positioning-opportunity">Key Positioning Opportunity</label>
+                <textarea id="positioning-opportunity" rows="3" placeholder="Based on this analysis, where is the biggest opportunity to differentiate your property?"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="competitive-strategy">Recommended Competitive Strategy</label>
+                <textarea id="competitive-strategy" rows="3" placeholder="What strategic actions should you take to strengthen your competitive position?"></textarea>
+            </div>
+        </div>
+
+        <button class="export-btn" onclick="exportAnalysis()">📄 Export Competitive Analysis</button>
+    </div>
+
+    <script>
+        let competitorCount = 0;
+        const dimensions = [
+            'Brand Awareness',
+            'Fan Engagement',
+            'Revenue Strength',
+            'Sponsorship Appeal',
+            'Media Coverage',
+            'Digital Presence',
+            'Facilities/Assets',
+            'Market Position'
+        ];
+
+        function addCompetitor() {
+            competitorCount++;
+            const container = document.getElementById('competitors-list');
+            const card = document.createElement('div');
+            card.className = 'competitor-card';
+            card.id = `competitor-${competitorCount}`;
+
+            card.innerHTML = `
+                <div class="competitor-header">
+                    <div class="competitor-number">Competitor #${competitorCount}</div>
+                    <button class="remove-btn" onclick="removeCompetitor(${competitorCount})">Remove</button>
+                </div>
+
+                <div class="analysis-grid">
+                    <div class="input-group">
+                        <label>Competitor Name</label>
+                        <input type="text" class="competitor-name" placeholder="e.g., Toronto Maple Leafs, Major League Pickleball">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Market Position</label>
+                        <select class="competitor-position">
+                            <option value="">Select position...</option>
+                            <option value="Market Leader">Market Leader</option>
+                            <option value="Strong Challenger">Strong Challenger</option>
+                            <option value="Niche Player">Niche Player</option>
+                            <option value="Emerging Competitor">Emerging Competitor</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Key Strengths</label>
+                    <textarea class="competitor-strengths" rows="2" placeholder="What are their main competitive advantages?"></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label>Key Weaknesses</label>
+                    <textarea class="competitor-weaknesses" rows="2" placeholder="Where are they vulnerable?"></textarea>
+                </div>
+            `;
+
+            container.appendChild(card);
+        }
+
+        function removeCompetitor(id) {
+            const competitor = document.getElementById(`competitor-${id}`);
+            if (competitor) {
+                competitor.remove();
+                renumberCompetitors();
+            }
+        }
+
+        function renumberCompetitors() {
+            const competitors = document.querySelectorAll('.competitor-card');
+            competitors.forEach((comp, index) => {
+                const header = comp.querySelector('.competitor-number');
+                if (header) {
+                    header.textContent = `Competitor #${index + 1}`;
+                }
+            });
+        }
+
+        function generateMatrix() {
+            const yourProperty = document.getElementById('your-property').value;
+            if (!yourProperty) {
+                alert('Please enter your property name first.');
+                return;
+            }
+
+            const competitors = [];
+            document.querySelectorAll('.competitor-card').forEach(card => {
+                const name = card.querySelector('.competitor-name')?.value;
+                if (name) {
+                    competitors.push(name);
+                }
+            });
+
+            if (competitors.length === 0) {
+                alert('Please add at least one competitor.');
+                return;
+            }
+
+            const properties = [yourProperty, ...competitors];
+
+            let tableHTML = '<table class="comparison-table">';
+            tableHTML += '<thead><tr><th>Dimension</th>';
+            properties.forEach(prop => {
+                tableHTML += `<th>${prop}</th>`;
+            });
+            tableHTML += '</tr></thead><tbody>';
+
+            dimensions.forEach((dim, dimIndex) => {
+                tableHTML += `<tr><td><strong>${dim}</strong></td>`;
+                properties.forEach((prop, propIndex) => {
+                    tableHTML += `<td><input type="number" min="1" max="5" class="matrix-score" data-dimension="${dimIndex}" data-property="${propIndex}" placeholder="1-5"></td>`;
+                });
+                tableHTML += '</tr>';
+            });
+
+            tableHTML += '</tbody></table>';
+
+            document.getElementById('matrix-container').innerHTML = tableHTML;
+        }
+
+        function exportAnalysis() {
+            const yourProperty = document.getElementById('your-property').value;
+
+            if (!yourProperty) {
+                alert('Please complete the analysis before exporting.');
+                return;
+            }
+
+            // Collect competitors
+            const competitors = [];
+            document.querySelectorAll('.competitor-card').forEach(card => {
+                const name = card.querySelector('.competitor-name')?.value || '';
+                const position = card.querySelector('.competitor-position')?.value || '';
+                const strengths = card.querySelector('.competitor-strengths')?.value || '';
+                const weaknesses = card.querySelector('.competitor-weaknesses')?.value || '';
+                if (name) {
+                    competitors.push({ name, position, strengths, weaknesses });
+                }
+            });
+
+            // Collect matrix scores
+            let matrixText = '';
+            if (document.querySelectorAll('.matrix-score').length > 0) {
+                const properties = [yourProperty];
+                competitors.forEach(c => properties.push(c.name));
+
+                matrixText = '\nCOMPETITIVE COMPARISON MATRIX (1-5 Scale)\n────────────────────────────────────────\n\n';
+
+                dimensions.forEach((dim, dimIndex) => {
+                    matrixText += `${dim}:\n`;
+                    properties.forEach((prop, propIndex) => {
+                        const input = document.querySelector(`.matrix-score[data-dimension="${dimIndex}"][data-property="${propIndex}"]`);
+                        const score = input?.value || 'N/A';
+                        matrixText += `  ${prop}: ${score}/5\n`;
+                    });
+                    matrixText += '\n';
+                });
+            }
+
+            // Collect SWOT
+            const swotStrengths = document.getElementById('swot-strengths').value;
+            const swotWeaknesses = document.getElementById('swot-weaknesses').value;
+            const swotOpportunities = document.getElementById('swot-opportunities').value;
+            const swotThreats = document.getElementById('swot-threats').value;
+
+            // Collect strategic insights
+            const positioningOpp = document.getElementById('positioning-opportunity').value;
+            const competitiveStrategy = document.getElementById('competitive-strategy').value;
+
+            let competitorsText = '';
+            if (competitors.length > 0) {
+                competitors.forEach((comp, i) => {
+                    competitorsText += `\n${i + 1}. ${comp.name}\n   Position: ${comp.position || 'Not specified'}\n   Strengths: ${comp.strengths || 'Not specified'}\n   Weaknesses: ${comp.weaknesses || 'Not specified'}\n`;
+                });
+            } else {
+                competitorsText = '\nNot specified';
+            }
+
+            const content = `
+═══════════════════════════════════════════════════════════════
+COMPETITIVE ANALYSIS
+Business of Marketing in Sport - Anchor Project
+═══════════════════════════════════════════════════════════════
+
+YOUR PROPERTY
+─────────────
+${yourProperty}
+
+
+DIRECT COMPETITORS
+──────────────────
+${competitorsText}
+
+${matrixText}
+
+SWOT ANALYSIS (${yourProperty})
+──────────────────────────────
+
+💪 STRENGTHS:
+${swotStrengths || 'Not specified'}
+
+⚠️ WEAKNESSES:
+${swotWeaknesses || 'Not specified'}
+
+🌟 OPPORTUNITIES:
+${swotOpportunities || 'Not specified'}
+
+⚡ THREATS:
+${swotThreats || 'Not specified'}
+
+
+STRATEGIC INSIGHTS
+──────────────────
+
+Key Positioning Opportunity:
+${positioningOpp || 'Not specified'}
+
+Recommended Competitive Strategy:
+${competitiveStrategy || 'Not specified'}
+
+
+═══════════════════════════════════════════════════════════════
+NEXT STEPS
+═══════════════════════════════════════════════════════════════
+
+For Week 4 Deliverable:
+1. Integrate competitive insights into brand positioning statement
+2. Identify white space opportunities in the market
+3. Develop differentiation strategy based on competitor weaknesses
+4. Include competitive analysis summary in Brand Strategy Brief
+
+
+Generated: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}
+Business of Marketing in Sport - Anchor Project (Week 4)
+            `.trim();
+
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `competitive-analysis-${yourProperty.toLowerCase().replace(/\s+/g, '-')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('✅ Competitive Analysis exported! Use this to inform your brand positioning and strategic recommendations.');
+        }
+
+        // Initialize with 3 competitor slots
+        addCompetitor();
+        addCompetitor();
+        addCompetitor();
+    </script>
+</body>
+</html>

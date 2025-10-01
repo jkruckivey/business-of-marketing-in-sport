@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Pitch Checklist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .progress-bar {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            height: 24px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #4ade80, #22c55e);
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2c2c2c;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-description {
+            color: #999;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .checklist {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            border: 2px solid rgba(197, 183, 131, 0.2);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .checklist-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(197, 183, 131, 0.4);
+        }
+
+        .checklist-item.checked {
+            border-color: #4ade80;
+            background: rgba(74, 222, 128, 0.1);
+        }
+
+        .checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid rgba(197, 183, 131, 0.5);
+            border-radius: 6px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            margin-top: 2px;
+        }
+
+        .checklist-item.checked .checkbox {
+            background: #4ade80;
+            border-color: #4ade80;
+            color: #2c2c2c;
+        }
+
+        .item-content {
+            flex: 1;
+        }
+
+        .item-title {
+            color: #f5f4f0;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+
+        .item-description {
+            color: #ccc;
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .section-progress {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(197, 183, 131, 0.2);
+            color: #999;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section-progress.complete {
+            color: #4ade80;
+            font-weight: 600;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        .export-btn {
+            background: linear-gradient(135deg, #c5b783, #b8a56f);
+            color: #2c2c2c;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            margin: 2rem auto 0;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(197, 183, 131, 0.3);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(197, 183, 131, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #c5b783;
+        }
+
+        .stat-label {
+            color: #ccc;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✅ Executive Pitch Checklist</h1>
+        <p class="subtitle">Ensure your Anchor Project presentation is executive-ready</p>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="overall-progress">0%</div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value" id="total-checked">0</div>
+                <div class="stat-label">Items Complete</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="total-items">0</div>
+                <div class="stat-label">Total Items</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="completion-pct">0%</div>
+                <div class="stat-label">Completion</div>
+            </div>
+        </div>
+
+        <div class="section" id="section-content">
+            <h2><span class="icon">📊</span> Content & Structure</h2>
+            <p class="section-description">Your presentation should tell a clear, compelling story with strong analysis backing every recommendation.</p>
+
+            <div class="checklist" data-section="content">
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Opening Hook (30 seconds)</div>
+                        <div class="item-description">Start with a compelling statistic, trend, or insight that captures attention and sets up the problem/opportunity</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Property Overview & Context</div>
+                        <div class="item-description">Clearly introduce your chosen property, its current market position, and why it matters</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Revenue Model Analysis</div>
+                        <div class="item-description">Present current/projected revenue streams with clear breakdown and supporting evidence (Week 3 work)</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Sponsorship Strategy</div>
+                        <div class="item-description">Identify top 3 sponsorship opportunities with ROI framework and activation ideas (Week 3 work)</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Brand Positioning & Differentiation</div>
+                        <div class="item-description">Clear positioning statement with competitive analysis showing how you stand out (Week 4 work)</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Target Audience Definition</div>
+                        <div class="item-description">Well-defined persona(s) with demographics, psychographics, and key needs addressed</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Strategic Recommendations (3-5 Key Actions)</div>
+                        <div class="item-description">Prioritized, actionable recommendations with clear rationale and expected impact</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Financial Projections & ROI</div>
+                        <div class="item-description">Credible financial impact estimates with clear assumptions stated</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Implementation Timeline</div>
+                        <div class="item-description">Realistic roadmap showing phased approach (e.g., Year 1, Year 2-3, Year 4-5)</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Risks & Mitigation</div>
+                        <div class="item-description">Acknowledge key risks with proactive mitigation strategies</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Closing Call-to-Action</div>
+                        <div class="item-description">End with a clear, compelling CTA - what should executives do with this plan?</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-progress" data-section="content">
+                <span>Section Progress:</span>
+                <span class="progress-count">0/11 complete</span>
+            </div>
+        </div>
+
+        <div class="section" id="section-design">
+            <h2><span class="icon">🎨</span> Slide Design & Visuals</h2>
+            <p class="section-description">Professional, executive-ready slides that enhance (not distract from) your message.</p>
+
+            <div class="checklist" data-section="design">
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Consistent Visual Theme</div>
+                        <div class="item-description">Cohesive color palette, fonts, and layout throughout deck</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Minimal Text per Slide</div>
+                        <div class="item-description">Avoid walls of text - use bullet points, headlines, and visuals to tell story</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Data Visualization</div>
+                        <div class="item-description">Use charts, graphs, and infographics to make data compelling and easy to grasp</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">High-Quality Images/Graphics</div>
+                        <div class="item-description">Use professional photos, logos, and graphics (properly sourced/licensed)</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Slide Count (10-12 slides)</div>
+                        <div class="item-description">Stay within target range to maintain pacing and executive attention</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Logical Flow & Transitions</div>
+                        <div class="item-description">Each slide builds on the previous, with smooth narrative transitions</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-progress" data-section="design">
+                <span>Section Progress:</span>
+                <span class="progress-count">0/6 complete</span>
+            </div>
+        </div>
+
+        <div class="section" id="section-delivery">
+            <h2><span class="icon">🎤</span> Delivery & Presentation Skills</h2>
+            <p class="section-description">Strong content needs strong delivery - practice until you can present with confidence and executive presence.</p>
+
+            <div class="checklist" data-section="delivery">
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Rehearsed Timing (8-10 min target)</div>
+                        <div class="item-description">Practiced multiple times to stay within limit without rushing</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Equal Team Participation</div>
+                        <div class="item-description">All team members present a section - balanced speaking roles</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Smooth Handoffs Between Speakers</div>
+                        <div class="item-description">Practiced transitions to maintain flow and professionalism</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Eye Contact & Body Language</div>
+                        <div class="item-description">Engaging delivery - not reading slides, making eye contact with audience</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Q&A Preparation</div>
+                        <div class="item-description">Anticipated 5-7 likely executive questions with prepared responses</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Backup Slides (Appendix)</div>
+                        <div class="item-description">Additional data/analysis ready if executives ask for deeper dive</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-progress" data-section="delivery">
+                <span>Section Progress:</span>
+                <span class="progress-count">0/6 complete</span>
+            </div>
+        </div>
+
+        <div class="section" id="section-technical">
+            <h2><span class="icon">🔧</span> Technical & Logistics</h2>
+            <p class="section-description">Don't let technical issues derail your pitch - be prepared with backups and contingencies.</p>
+
+            <div class="checklist" data-section="technical">
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">File Format Tested</div>
+                        <div class="item-description">Presentation works on presentation computer/system (test in advance)</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Backup Copy Available</div>
+                        <div class="item-description">File saved in cloud, USB, and email as contingency</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">PDF Version Ready</div>
+                        <div class="item-description">Static PDF backup in case software compatibility issues arise</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Presenter Notes Prepared</div>
+                        <div class="item-description">Key talking points documented (but not read verbatim)</div>
+                    </div>
+                </div>
+
+                <div class="checklist-item" onclick="toggleItem(this)">
+                    <div class="checkbox"></div>
+                    <div class="item-content">
+                        <div class="item-title">Team Coordination Plan</div>
+                        <div class="item-description">Clear roles for who advances slides, handles tech, answers specific question types</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-progress" data-section="technical">
+                <span>Section Progress:</span>
+                <span class="progress-count">0/5 complete</span>
+            </div>
+        </div>
+
+        <button class="export-btn" onclick="exportChecklist()">📄 Export Checklist Summary</button>
+    </div>
+
+    <script>
+        let checkedItems = new Set();
+        const totalItems = document.querySelectorAll('.checklist-item').length;
+
+        // Load saved state from localStorage
+        const savedState = localStorage.getItem('pitchChecklist');
+        if (savedState) {
+            checkedItems = new Set(JSON.parse(savedState));
+            checkedItems.forEach(index => {
+                const items = document.querySelectorAll('.checklist-item');
+                if (items[index]) {
+                    items[index].classList.add('checked');
+                    items[index].querySelector('.checkbox').textContent = '✓';
+                }
+            });
+        }
+
+        document.getElementById('total-items').textContent = totalItems;
+        updateProgress();
+
+        function toggleItem(element) {
+            const items = Array.from(document.querySelectorAll('.checklist-item'));
+            const index = items.indexOf(element);
+
+            if (element.classList.contains('checked')) {
+                element.classList.remove('checked');
+                element.querySelector('.checkbox').textContent = '';
+                checkedItems.delete(index);
+            } else {
+                element.classList.add('checked');
+                element.querySelector('.checkbox').textContent = '✓';
+                checkedItems.add(index);
+            }
+
+            // Save state
+            localStorage.setItem('pitchChecklist', JSON.stringify([...checkedItems]));
+
+            updateProgress();
+        }
+
+        function updateProgress() {
+            const checked = checkedItems.size;
+            const percentage = Math.round((checked / totalItems) * 100);
+
+            document.getElementById('total-checked').textContent = checked;
+            document.getElementById('completion-pct').textContent = percentage + '%';
+
+            const progressFill = document.getElementById('overall-progress');
+            progressFill.style.width = percentage + '%';
+            progressFill.textContent = percentage + '%';
+
+            // Update section progress
+            document.querySelectorAll('.checklist').forEach(section => {
+                const sectionItems = section.querySelectorAll('.checklist-item');
+                const sectionChecked = Array.from(sectionItems).filter(item => item.classList.contains('checked')).length;
+                const sectionName = section.dataset.section;
+                const progressElement = document.querySelector(`.section-progress[data-section="${sectionName}"] .progress-count`);
+
+                if (progressElement) {
+                    progressElement.textContent = `${sectionChecked}/${sectionItems.length} complete`;
+
+                    const sectionProgress = progressElement.closest('.section-progress');
+                    if (sectionChecked === sectionItems.length) {
+                        sectionProgress.classList.add('complete');
+                        progressElement.textContent = `✓ ${sectionChecked}/${sectionItems.length} complete`;
+                    } else {
+                        sectionProgress.classList.remove('complete');
+                    }
+                }
+            });
+        }
+
+        function exportChecklist() {
+            const sections = [
+                { name: 'Content & Structure', id: 'section-content' },
+                { name: 'Slide Design & Visuals', id: 'section-design' },
+                { name: 'Delivery & Presentation Skills', id: 'section-delivery' },
+                { name: 'Technical & Logistics', id: 'section-technical' }
+            ];
+
+            let content = `
+═══════════════════════════════════════════════════════════════
+EXECUTIVE PITCH CHECKLIST
+Business of Marketing in Sport - Anchor Project
+═══════════════════════════════════════════════════════════════
+
+Overall Progress: ${checkedItems.size}/${totalItems} items complete (${Math.round((checkedItems.size / totalItems) * 100)}%)
+
+`;
+
+            sections.forEach(section => {
+                const sectionEl = document.getElementById(section.id);
+                const items = sectionEl.querySelectorAll('.checklist-item');
+                const checkedCount = Array.from(items).filter(item => item.classList.contains('checked')).length;
+
+                content += `\n${section.name.toUpperCase()}\n`;
+                content += `${'─'.repeat(section.name.length)}\n`;
+                content += `Progress: ${checkedCount}/${items.length} complete\n\n`;
+
+                items.forEach((item, index) => {
+                    const title = item.querySelector('.item-title').textContent;
+                    const checked = item.classList.contains('checked');
+                    content += `${checked ? '✓' : '☐'} ${title}\n`;
+                });
+
+                content += '\n';
+            });
+
+            content += `
+═══════════════════════════════════════════════════════════════
+REMAINING ITEMS
+═══════════════════════════════════════════════════════════════
+
+`;
+
+            const uncheckedItems = [];
+            document.querySelectorAll('.checklist-item').forEach(item => {
+                if (!item.classList.contains('checked')) {
+                    const section = item.closest('.section').querySelector('h2').textContent.replace(/[^\w\s&]/g, '').trim();
+                    const title = item.querySelector('.item-title').textContent;
+                    uncheckedItems.push(`• ${title} (${section})`);
+                }
+            });
+
+            if (uncheckedItems.length > 0) {
+                content += uncheckedItems.join('\n');
+            } else {
+                content += '✓ All items complete! You are ready for your executive presentation.';
+            }
+
+            content += `\n\n\nGenerated: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}\nBusiness of Marketing in Sport - Anchor Project (Week 5)`;
+
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'pitch-checklist-summary.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('✅ Checklist summary exported! Review remaining items and complete before your presentation.');
+        }
+    </script>
+</body>
+</html>

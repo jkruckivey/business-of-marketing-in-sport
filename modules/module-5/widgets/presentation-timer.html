@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Timer & Rehearsal Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .timer-display {
+            background: rgba(255, 255, 255, 0.05);
+            border: 4px solid #c5b783;
+            border-radius: 16px;
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .time {
+            font-size: 6rem;
+            font-weight: 700;
+            color: #c5b783;
+            font-variant-numeric: tabular-nums;
+            margin-bottom: 1rem;
+        }
+
+        .time.warning {
+            color: #fbbf24;
+            animation: pulse 1s infinite;
+        }
+
+        .time.critical {
+            color: #f87171;
+            animation: pulse 0.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .status-message {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .control-btn {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            min-width: 150px;
+        }
+
+        .control-btn.start {
+            background: linear-gradient(135deg, #4ade80, #22c55e);
+            color: #2c2c2c;
+        }
+
+        .control-btn.start:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(74, 222, 128, 0.3);
+        }
+
+        .control-btn.pause {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #2c2c2c;
+        }
+
+        .control-btn.pause:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(251, 191, 36, 0.3);
+        }
+
+        .control-btn.reset {
+            background: linear-gradient(135deg, #f87171, #ef4444);
+            color: #2c2c2c;
+        }
+
+        .control-btn.reset:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(248, 113, 113, 0.3);
+        }
+
+        .control-btn:disabled {
+            background: rgba(255, 255, 255, 0.1);
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .preset-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .preset-btn {
+            padding: 1rem;
+            background: rgba(197, 183, 131, 0.2);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            color: #c5b783;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .preset-btn:hover {
+            background: rgba(197, 183, 131, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .preset-btn.active {
+            background: #c5b783;
+            color: #2c2c2c;
+        }
+
+        .custom-time {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-end;
+        }
+
+        .input-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .input-group label {
+            color: #c5b783;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .input-group input {
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 6px;
+            color: #f5f4f0;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #c5b783;
+        }
+
+        .slide-tracker {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .tracker-section {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .tracker-section h3 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .slide-input {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .slide-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .slide-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.05);
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #c5b783;
+        }
+
+        .slide-number {
+            color: #c5b783;
+            font-weight: 600;
+        }
+
+        .slide-time {
+            color: #ccc;
+        }
+
+        .notes-area {
+            margin-top: 1.5rem;
+        }
+
+        .notes-area textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 6px;
+            color: #f5f4f0;
+            font-family: inherit;
+            font-size: 0.9rem;
+            resize: vertical;
+        }
+
+        .notes-area textarea:focus {
+            outline: none;
+            border-color: #c5b783;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #c5b783;
+        }
+
+        .stat-label {
+            color: #ccc;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .time {
+                font-size: 4rem;
+            }
+
+            .slide-tracker {
+                grid-template-columns: 1fr;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .control-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⏱️ Presentation Timer & Rehearsal Tool</h1>
+        <p class="subtitle">Practice your Anchor Project presentation with timing and slide tracking</p>
+
+        <div class="timer-display">
+            <div class="time" id="timer-display">8:00</div>
+            <div class="status-message" id="status-message">Ready to start your rehearsal</div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn start" id="start-btn" onclick="startTimer()">▶️ Start</button>
+            <button class="control-btn pause" id="pause-btn" onclick="pauseTimer()" disabled>⏸️ Pause</button>
+            <button class="control-btn reset" id="reset-btn" onclick="resetTimer()">↻ Reset</button>
+        </div>
+
+        <div class="section">
+            <h2>Presentation Length</h2>
+
+            <div class="preset-buttons">
+                <button class="preset-btn active" onclick="setTime(8, 0)">8 Minutes<br><small>(Main Presentation)</small></button>
+                <button class="preset-btn" onclick="setTime(10, 0)">10 Minutes<br><small>(With Buffer)</small></button>
+                <button class="preset-btn" onclick="setTime(5, 0)">5 Minutes<br><small>(Q&A Practice)</small></button>
+                <button class="preset-btn" onclick="setTime(13, 0)">13 Minutes<br><small>(Full Session)</small></button>
+            </div>
+
+            <div class="custom-time">
+                <div class="input-group">
+                    <label for="custom-minutes">Minutes</label>
+                    <input type="number" id="custom-minutes" min="0" max="60" value="8">
+                </div>
+                <div class="input-group">
+                    <label for="custom-seconds">Seconds</label>
+                    <input type="number" id="custom-seconds" min="0" max="59" value="0">
+                </div>
+                <button class="preset-btn" onclick="setCustomTime()">Set Custom Time</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Slide Tracker</h2>
+
+            <div class="slide-tracker">
+                <div class="tracker-section">
+                    <h3>Current Progress</h3>
+                    <div class="slide-input">
+                        <div class="input-group">
+                            <label>Current Slide #</label>
+                            <input type="number" id="current-slide" min="1" value="1">
+                        </div>
+                        <button class="preset-btn" onclick="markSlide()" style="margin: 0; align-self: flex-end;">Mark Time</button>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-value" id="slides-complete">0</div>
+                            <div class="stat-label">Slides Covered</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" id="avg-time">0:00</div>
+                            <div class="stat-label">Avg per Slide</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tracker-section">
+                    <h3>Slide Timing Log</h3>
+                    <ul class="slide-list" id="slide-list">
+                        <li style="color: #999; text-align: center; padding: 2rem 0;">No slides tracked yet. Click "Mark Time" as you advance slides.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Rehearsal Notes</h2>
+            <div class="notes-area">
+                <textarea id="notes" placeholder="Track what went well, areas to improve, timing issues, transition notes, Q&A prep points..."></textarea>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-runs">0</div>
+                    <div class="stat-label">Total Rehearsals</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="best-time">--:--</div>
+                    <div class="stat-label">Best Time</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="target-time">8:00</div>
+                    <div class="stat-label">Target Time</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let timerInterval;
+        let timeRemaining = 480; // 8 minutes in seconds
+        let targetTime = 480;
+        let isRunning = false;
+        let slideMarks = [];
+        let rehearsalCount = parseInt(localStorage.getItem('rehearsalCount') || '0');
+        let bestTime = parseInt(localStorage.getItem('bestTime') || '0');
+
+        document.getElementById('total-runs').textContent = rehearsalCount;
+        if (bestTime > 0) {
+            document.getElementById('best-time').textContent = formatTime(bestTime);
+        }
+
+        function formatTime(seconds) {
+            const mins = Math.floor(Math.abs(seconds) / 60);
+            const secs = Math.abs(seconds) % 60;
+            const sign = seconds < 0 ? '-' : '';
+            return `${sign}${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        function updateDisplay() {
+            const display = document.getElementById('timer-display');
+            const status = document.getElementById('status-message');
+
+            display.textContent = formatTime(timeRemaining);
+
+            // Color coding
+            display.classList.remove('warning', 'critical');
+            if (timeRemaining <= 60 && timeRemaining > 0) {
+                display.classList.add('warning');
+                status.textContent = '⚠️ One minute remaining';
+            } else if (timeRemaining <= 0) {
+                display.classList.add('critical');
+                status.textContent = '⚠️ TIME IS UP! You are over limit';
+            } else if (timeRemaining <= 120) {
+                status.textContent = '⏰ Two minutes remaining - wrap up soon';
+            } else if (isRunning) {
+                status.textContent = '🎤 Presentation in progress...';
+            }
+        }
+
+        function startTimer() {
+            if (isRunning) return;
+
+            isRunning = true;
+            document.getElementById('start-btn').disabled = true;
+            document.getElementById('pause-btn').disabled = false;
+            document.getElementById('status-message').textContent = '🎤 Presentation in progress...';
+
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                updateDisplay();
+            }, 1000);
+        }
+
+        function pauseTimer() {
+            isRunning = false;
+            clearInterval(timerInterval);
+            document.getElementById('start-btn').disabled = false;
+            document.getElementById('start-btn').innerHTML = '▶️ Resume';
+            document.getElementById('pause-btn').disabled = true;
+            document.getElementById('status-message').textContent = '⏸️ Paused - click Resume to continue';
+        }
+
+        function resetTimer() {
+            isRunning = false;
+            clearInterval(timerInterval);
+
+            // Save stats if this was a complete run
+            if (slideMarks.length > 0) {
+                rehearsalCount++;
+                localStorage.setItem('rehearsalCount', rehearsalCount);
+                document.getElementById('total-runs').textContent = rehearsalCount;
+
+                const elapsed = targetTime - timeRemaining;
+                if (bestTime === 0 || Math.abs(elapsed - targetTime) < Math.abs(bestTime - targetTime)) {
+                    bestTime = elapsed;
+                    localStorage.setItem('bestTime', bestTime);
+                    document.getElementById('best-time').textContent = formatTime(bestTime);
+                }
+            }
+
+            timeRemaining = targetTime;
+            slideMarks = [];
+            updateDisplay();
+            updateSlideStats();
+
+            document.getElementById('start-btn').disabled = false;
+            document.getElementById('start-btn').innerHTML = '▶️ Start';
+            document.getElementById('pause-btn').disabled = true;
+            document.getElementById('status-message').textContent = 'Ready to start your rehearsal';
+            document.getElementById('slide-list').innerHTML = '<li style="color: #999; text-align: center; padding: 2rem 0;">No slides tracked yet. Click "Mark Time" as you advance slides.</li>';
+
+            const presets = document.querySelectorAll('.preset-btn');
+            presets.forEach(btn => btn.classList.remove('active'));
+        }
+
+        function setTime(minutes, seconds) {
+            if (isRunning) {
+                alert('Please reset the timer before changing duration.');
+                return;
+            }
+
+            targetTime = (minutes * 60) + seconds;
+            timeRemaining = targetTime;
+            updateDisplay();
+
+            document.getElementById('target-time').textContent = formatTime(targetTime);
+
+            const presets = document.querySelectorAll('.preset-btn');
+            presets.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function setCustomTime() {
+            const minutes = parseInt(document.getElementById('custom-minutes').value) || 0;
+            const seconds = parseInt(document.getElementById('custom-seconds').value) || 0;
+            setTime(minutes, seconds);
+        }
+
+        function markSlide() {
+            if (!isRunning && slideMarks.length === 0) {
+                alert('Please start the timer before marking slides.');
+                return;
+            }
+
+            const slideNum = parseInt(document.getElementById('current-slide').value) || 1;
+            const elapsed = targetTime - timeRemaining;
+
+            slideMarks.push({ slide: slideNum, time: elapsed });
+
+            // Update list
+            const list = document.getElementById('slide-list');
+            if (slideMarks.length === 1) {
+                list.innerHTML = '';
+            }
+
+            const item = document.createElement('li');
+            item.className = 'slide-item';
+            item.innerHTML = `
+                <span class="slide-number">Slide ${slideNum}</span>
+                <span class="slide-time">${formatTime(elapsed)}</span>
+            `;
+            list.appendChild(item);
+
+            // Increment slide number
+            document.getElementById('current-slide').value = slideNum + 1;
+
+            updateSlideStats();
+        }
+
+        function updateSlideStats() {
+            document.getElementById('slides-complete').textContent = slideMarks.length;
+
+            if (slideMarks.length > 1) {
+                const totalTime = slideMarks[slideMarks.length - 1].time - (slideMarks[0].time || 0);
+                const avgTime = totalTime / (slideMarks.length - 1);
+                document.getElementById('avg-time').textContent = formatTime(Math.round(avgTime));
+            } else if (slideMarks.length === 1) {
+                document.getElementById('avg-time').textContent = formatTime(slideMarks[0].time);
+            } else {
+                document.getElementById('avg-time').textContent = '0:00';
+            }
+        }
+
+        updateDisplay();
+    </script>
+</body>
+</html>

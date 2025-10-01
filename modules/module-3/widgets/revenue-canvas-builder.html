@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Model Canvas Builder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .section-description {
+            color: #ccc;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .property-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .input-group label {
+            color: #c5b783;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 6px;
+            color: #f5f4f0;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus,
+        .input-group textarea:focus {
+            outline: none;
+            border-color: #c5b783;
+        }
+
+        .revenue-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .revenue-category {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .revenue-category:hover {
+            border-color: #c5b783;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-icon {
+            font-size: 2rem;
+        }
+
+        .category-title {
+            color: #c5b783;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .revenue-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .percentage-input {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .percentage-input input {
+            flex: 1;
+            text-align: right;
+        }
+
+        .percentage-input span {
+            color: #c5b783;
+            font-weight: 600;
+        }
+
+        .total-display {
+            background: linear-gradient(135deg, rgba(197, 183, 131, 0.2), rgba(197, 183, 131, 0.1));
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .total-label {
+            color: #c5b783;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .total-amount {
+            color: #f5f4f0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .validation-message {
+            color: #f87171;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .validation-message.show {
+            display: block;
+        }
+
+        .sponsorship-opportunities {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .opportunity {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .opportunity-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .opportunity-number {
+            color: #c5b783;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .remove-btn {
+            padding: 0.5rem 1rem;
+            background: rgba(248, 113, 113, 0.2);
+            border: 2px solid #f87171;
+            border-radius: 6px;
+            color: #f87171;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .remove-btn:hover {
+            background: rgba(248, 113, 113, 0.3);
+        }
+
+        .category-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .category-chip {
+            padding: 0.5rem 1rem;
+            background: rgba(197, 183, 131, 0.2);
+            border: 1px solid #c5b783;
+            border-radius: 20px;
+            color: #c5b783;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .category-chip:hover {
+            background: rgba(197, 183, 131, 0.3);
+        }
+
+        .export-btn {
+            background: linear-gradient(135deg, #c5b783, #b8a56f);
+            color: #2c2c2c;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            margin: 2rem auto 0;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(197, 183, 131, 0.3);
+        }
+
+        .help-text {
+            color: #999;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 968px) {
+            .revenue-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .revenue-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .property-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Revenue Model Canvas Builder</h1>
+        <p class="subtitle">Map current and projected revenue streams for your chosen sports property</p>
+
+        <div class="section">
+            <h2>1. Property Information</h2>
+            <p class="section-description">Start by identifying your property and timeframe for this revenue model.</p>
+
+            <div class="property-info">
+                <div class="input-group">
+                    <label for="property-name">Sports Property</label>
+                    <input type="text" id="property-name" placeholder="e.g., NHL Ottawa Senators, Canadian Pickleball League">
+                </div>
+
+                <div class="input-group">
+                    <label for="timeframe">Revenue Timeframe</label>
+                    <select id="timeframe">
+                        <option value="">Select timeframe...</option>
+                        <option value="current">Current State (most recent fiscal year)</option>
+                        <option value="1-year">1-Year Projection</option>
+                        <option value="3-year">3-Year Projection</option>
+                        <option value="5-year">5-Year Projection</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="total-revenue">Total Revenue Estimate</label>
+                <input type="text" id="total-revenue" placeholder="e.g., $150,000,000" oninput="formatCurrency(this); calculateBreakdown()">
+                <p class="help-text">Enter your best estimate of total annual revenue. For emerging sports, this may be a projection based on comparable properties.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Revenue Stream Breakdown</h2>
+            <p class="section-description">Allocate percentages across the six primary revenue categories. Your total must equal 100%.</p>
+
+            <div class="revenue-grid">
+                <div class="revenue-category">
+                    <div class="category-header">
+                        <div class="category-icon">📺</div>
+                        <div class="category-title">Media Rights</div>
+                    </div>
+                    <div class="revenue-inputs">
+                        <div class="percentage-input">
+                            <input type="number" id="media-pct" min="0" max="100" step="1" placeholder="0" oninput="validatePercentages(); calculateBreakdown()">
+                            <span>%</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="media-amount" readonly placeholder="$0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="revenue-category">
+                    <div class="category-header">
+                        <div class="category-icon">🤝</div>
+                        <div class="category-title">Sponsorship</div>
+                    </div>
+                    <div class="revenue-inputs">
+                        <div class="percentage-input">
+                            <input type="number" id="sponsorship-pct" min="0" max="100" step="1" placeholder="0" oninput="validatePercentages(); calculateBreakdown()">
+                            <span>%</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="sponsorship-amount" readonly placeholder="$0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="revenue-category">
+                    <div class="category-header">
+                        <div class="category-icon">🎟️</div>
+                        <div class="category-title">Ticketing</div>
+                    </div>
+                    <div class="revenue-inputs">
+                        <div class="percentage-input">
+                            <input type="number" id="ticketing-pct" min="0" max="100" step="1" placeholder="0" oninput="validatePercentages(); calculateBreakdown()">
+                            <span>%</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="ticketing-amount" readonly placeholder="$0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="revenue-category">
+                    <div class="category-header">
+                        <div class="category-icon">👕</div>
+                        <div class="category-title">Merchandising</div>
+                    </div>
+                    <div class="revenue-inputs">
+                        <div class="percentage-input">
+                            <input type="number" id="merchandising-pct" min="0" max="100" step="1" placeholder="0" oninput="validatePercentages(); calculateBreakdown()">
+                            <span>%</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="merchandising-amount" readonly placeholder="$0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="revenue-category">
+                    <div class="category-header">
+                        <div class="category-icon">🎲</div>
+                        <div class="category-title">Betting/Gaming</div>
+                    </div>
+                    <div class="revenue-inputs">
+                        <div class="percentage-input">
+                            <input type="number" id="betting-pct" min="0" max="100" step="1" placeholder="0" oninput="validatePercentages(); calculateBreakdown()">
+                            <span>%</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="betting-amount" readonly placeholder="$0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="revenue-category">
+                    <div class="category-header">
+                        <div class="category-icon">💼</div>
+                        <div class="category-title">Other</div>
+                    </div>
+                    <div class="revenue-inputs">
+                        <div class="percentage-input">
+                            <input type="number" id="other-pct" min="0" max="100" step="1" placeholder="0" oninput="validatePercentages(); calculateBreakdown()">
+                            <span>%</span>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="other-amount" readonly placeholder="$0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="total-display">
+                <div class="total-label">Total Percentage Allocated</div>
+                <div class="total-amount" id="total-percentage">0%</div>
+                <div class="validation-message" id="validation-msg">⚠️ Total must equal 100%</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Top 3 Sponsorship Opportunities</h2>
+            <p class="section-description">Identify the three most promising sponsorship categories for this property and explain the rationale.</p>
+
+            <div class="category-suggestions">
+                <strong style="color: #c5b783; width: 100%; margin-bottom: 0.5rem;">Suggested Categories:</strong>
+                <div class="category-chip" onclick="fillCategory(0, 'Title/Presenting Sponsor')">Title/Presenting Sponsor</div>
+                <div class="category-chip" onclick="fillCategory(0, 'Jersey/Uniform Sponsor')">Jersey/Uniform Sponsor</div>
+                <div class="category-chip" onclick="fillCategory(0, 'Venue Naming Rights')">Venue Naming Rights</div>
+                <div class="category-chip" onclick="fillCategory(0, 'Broadcast Sponsor')">Broadcast Sponsor</div>
+                <div class="category-chip" onclick="fillCategory(0, 'Digital/Social Media Partner')">Digital/Social Media Partner</div>
+                <div class="category-chip" onclick="fillCategory(0, 'Official League Partner')">Official League Partner</div>
+                <div class="category-chip" onclick="fillCategory(0, 'Community/Grassroots Sponsor')">Community/Grassroots Sponsor</div>
+            </div>
+
+            <div class="sponsorship-opportunities" id="sponsorship-opportunities">
+                <!-- Generated dynamically -->
+            </div>
+        </div>
+
+        <button class="export-btn" onclick="exportCanvas()">📄 Generate Revenue Model Canvas</button>
+    </div>
+
+    <script>
+        let opportunityCount = 0;
+
+        function formatCurrency(input) {
+            let value = input.value.replace(/[^0-9]/g, '');
+            if (value) {
+                input.value = '$' + parseInt(value).toLocaleString();
+            }
+        }
+
+        function validatePercentages() {
+            const media = parseFloat(document.getElementById('media-pct').value) || 0;
+            const sponsorship = parseFloat(document.getElementById('sponsorship-pct').value) || 0;
+            const ticketing = parseFloat(document.getElementById('ticketing-pct').value) || 0;
+            const merchandising = parseFloat(document.getElementById('merchandising-pct').value) || 0;
+            const betting = parseFloat(document.getElementById('betting-pct').value) || 0;
+            const other = parseFloat(document.getElementById('other-pct').value) || 0;
+
+            const total = media + sponsorship + ticketing + merchandising + betting + other;
+
+            document.getElementById('total-percentage').textContent = total.toFixed(0) + '%';
+
+            const validationMsg = document.getElementById('validation-msg');
+            if (total === 100) {
+                validationMsg.classList.remove('show');
+                validationMsg.style.color = '#4ade80';
+                validationMsg.textContent = '✓ Perfect! Total equals 100%';
+                validationMsg.classList.add('show');
+            } else if (total > 0) {
+                validationMsg.classList.add('show');
+                validationMsg.style.color = '#f87171';
+                validationMsg.textContent = `⚠️ Total must equal 100% (currently ${total.toFixed(0)}%)`;
+            }
+        }
+
+        function calculateBreakdown() {
+            const totalStr = document.getElementById('total-revenue').value.replace(/[^0-9]/g, '');
+            const total = parseFloat(totalStr) || 0;
+
+            const categories = ['media', 'sponsorship', 'ticketing', 'merchandising', 'betting', 'other'];
+
+            categories.forEach(cat => {
+                const pct = parseFloat(document.getElementById(`${cat}-pct`).value) || 0;
+                const amount = (total * pct / 100);
+                document.getElementById(`${cat}-amount`).value = '$' + amount.toLocaleString(undefined, {maximumFractionDigits: 0});
+            });
+        }
+
+        function addOpportunity() {
+            opportunityCount++;
+            const container = document.getElementById('sponsorship-opportunities');
+            const opportunity = document.createElement('div');
+            opportunity.className = 'opportunity';
+            opportunity.id = `opportunity-${opportunityCount}`;
+
+            opportunity.innerHTML = `
+                <div class="opportunity-header">
+                    <div class="opportunity-number">Opportunity #${opportunityCount}</div>
+                    <button class="remove-btn" onclick="removeOpportunity(${opportunityCount})">Remove</button>
+                </div>
+
+                <div class="input-group" style="margin-bottom: 1rem;">
+                    <label>Sponsorship Category</label>
+                    <input type="text" class="opp-category" placeholder="e.g., Title Sponsor, Jersey Rights, Venue Naming">
+                </div>
+
+                <div class="input-group">
+                    <label>Strategic Rationale (Why is this a strong fit?)</label>
+                    <textarea class="opp-rationale" rows="3" placeholder="Explain why this sponsorship category aligns with the property's brand, audience, and growth strategy..."></textarea>
+                </div>
+            `;
+
+            container.appendChild(opportunity);
+        }
+
+        function removeOpportunity(id) {
+            const opportunity = document.getElementById(`opportunity-${id}`);
+            if (opportunity) {
+                opportunity.remove();
+                renumberOpportunities();
+            }
+        }
+
+        function renumberOpportunities() {
+            const opportunities = document.querySelectorAll('.opportunity');
+            opportunities.forEach((opp, index) => {
+                const header = opp.querySelector('.opportunity-number');
+                if (header) {
+                    header.textContent = `Opportunity #${index + 1}`;
+                }
+            });
+        }
+
+        function fillCategory(index, category) {
+            const opportunities = document.querySelectorAll('.opp-category');
+            if (opportunities[index]) {
+                opportunities[index].value = category;
+            }
+        }
+
+        function exportCanvas() {
+            const propertyName = document.getElementById('property-name').value;
+            const timeframe = document.getElementById('timeframe').value;
+            const totalRevenue = document.getElementById('total-revenue').value;
+
+            if (!propertyName || !timeframe || !totalRevenue) {
+                alert('Please complete the Property Information section before generating the canvas.');
+                return;
+            }
+
+            const totalPct = parseFloat(document.getElementById('total-percentage').textContent);
+            if (totalPct !== 100) {
+                alert('Revenue percentages must total 100% before generating the canvas.');
+                return;
+            }
+
+            // Collect revenue breakdown
+            const categories = [
+                { name: 'Media Rights', icon: '📺', pct: 'media-pct', amt: 'media-amount' },
+                { name: 'Sponsorship', icon: '🤝', pct: 'sponsorship-pct', amt: 'sponsorship-amount' },
+                { name: 'Ticketing', icon: '🎟️', pct: 'ticketing-pct', amt: 'ticketing-amount' },
+                { name: 'Merchandising', icon: '👕', pct: 'merchandising-pct', amt: 'merchandising-amount' },
+                { name: 'Betting/Gaming', icon: '🎲', pct: 'betting-pct', amt: 'betting-amount' },
+                { name: 'Other', icon: '💼', pct: 'other-pct', amt: 'other-amount' }
+            ];
+
+            let breakdown = '';
+            categories.forEach(cat => {
+                const pct = document.getElementById(cat.pct).value || '0';
+                const amt = document.getElementById(cat.amt).value || '$0';
+                breakdown += `${cat.icon} ${cat.name}: ${pct}% (${amt})\n`;
+            });
+
+            // Collect sponsorship opportunities
+            const oppElements = document.querySelectorAll('.opportunity');
+            const opportunities = Array.from(oppElements).map((opp, i) => {
+                const category = opp.querySelector('.opp-category')?.value || '';
+                const rationale = opp.querySelector('.opp-rationale')?.value || '';
+                return { category, rationale };
+            }).filter(o => o.category && o.rationale);
+
+            let oppText = '';
+            if (opportunities.length > 0) {
+                opportunities.forEach((opp, i) => {
+                    oppText += `\n${i + 1}. ${opp.category}\n   ${opp.rationale}\n`;
+                });
+            } else {
+                oppText = '\nNot specified';
+            }
+
+            const timeframeLabels = {
+                'current': 'Current State (Most Recent Fiscal Year)',
+                '1-year': '1-Year Projection',
+                '3-year': '3-Year Projection',
+                '5-year': '5-Year Projection'
+            };
+
+            const content = `
+═══════════════════════════════════════════════════════════════
+REVENUE MODEL CANVAS
+Business of Marketing in Sport - Anchor Project
+═══════════════════════════════════════════════════════════════
+
+PROPERTY INFORMATION
+────────────────────
+Sports Property: ${propertyName}
+Revenue Timeframe: ${timeframeLabels[timeframe]}
+Total Revenue: ${totalRevenue}
+
+
+REVENUE STREAM BREAKDOWN
+────────────────────────
+${breakdown}
+
+Total Allocation: 100% ✓
+
+
+TOP 3 SPONSORSHIP OPPORTUNITIES
+────────────────────────────────
+${oppText}
+
+
+═══════════════════════════════════════════════════════════════
+NEXT STEPS
+────────────────────────────────────────────────────────────────
+
+For Week 3 Deliverable:
+1. Validate revenue assumptions with industry benchmarks
+2. Develop detailed ROI framework for one sponsorship category
+3. Prepare 2-page Revenue Model Canvas for peer review
+4. Be ready to defend revenue projections in executive session
+
+
+Generated: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}
+Business of Marketing in Sport - Anchor Project (Week 3)
+            `.trim();
+
+            // Create downloadable file
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `revenue-canvas-${propertyName.toLowerCase().replace(/\s+/g, '-')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('✅ Revenue Model Canvas generated! Use this as the foundation for your Week 3 deliverable. Don\'t forget to develop the detailed ROI framework for one sponsorship category.');
+        }
+
+        // Initialize with 3 opportunity slots
+        addOpportunity();
+        addOpportunity();
+        addOpportunity();
+    </script>
+</body>
+</html>

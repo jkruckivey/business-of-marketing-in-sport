@@ -217,3 +217,35 @@ business-of-marketing-in-sport/
     - Clear alignment visibility between outcomes and activities
     - Minimal styling allows focus on content structure
     - Accessible navigation between course overview and module details
+
+- 2025-10-01: Anchor Project Threading Complete
+  - **Anchor Project Structure**: Created comprehensive 4-milestone progression across Weeks 2-5
+    - Week 2: Team Formation & Property Selection
+    - Week 3: Revenue Model & Sponsorship Strategy
+    - Week 4: Brand Strategy & Market Positioning
+    - Week 5: Final Presentation & Executive Pitch
+  - **Module Outline Updates**: Added Anchor Project sections to all module outlines (modules/module-2 through module-5)
+    - Each section includes milestone description, time investment, activities, deliverables, resources, and embedded tool links
+    - Week 3 includes peer feedback protocol
+    - Week 4 includes faculty review process
+    - Week 5 includes complete grading rubric (40% of final grade) and presentation guidelines
+  - **Week 2 Tools Created**:
+    - Property Selection Tool (modules/module-2/widgets/property-selector.html): 19 curated properties across Legacy/Emerging/Events with filtering and export
+    - Team Charter Builder (modules/module-2/widgets/team-charter.html): 5-section charter with roster management, communication norms, working guidelines, conflict resolution
+  - **Week 3 Tools Created**:
+    - Revenue Model Canvas Builder (modules/module-3/widgets/revenue-canvas-builder.html): 6-category revenue breakdown with percentage validation, sponsorship opportunities, export
+    - Sponsorship ROI Calculator: Existing tool already suitable for Anchor Project context
+  - **Week 4 Tools Created**:
+    - Brand Positioning Builder (modules/module-4/widgets/positioning-builder.html): Interactive brand attributes selection (25 options), differentiation framework, auto-generating positioning statement
+    - Competitive Analysis Mapper (modules/module-4/widgets/competitive-mapper.html): Competitor tracking, 8-dimension comparison matrix, SWOT analysis, strategic insights export
+    - Athlete Brand Calculator: Existing tool already created
+  - **Week 5 Tools Created**:
+    - Presentation Timer & Rehearsal Tool (modules/module-5/widgets/presentation-timer.html): Live countdown timer with warning states, slide tracking, rehearsal notes, localStorage persistence for stats
+    - Executive Pitch Checklist (modules/module-5/widgets/pitch-checklist.html): 28-item checklist across 4 sections (Content, Design, Delivery, Technical) with progress tracking and localStorage persistence
+    - Peer Evaluation Form (modules/module-5/widgets/peer-evaluation.html): 5-criteria ratings per teammate, team dynamics feedback, confidential export format
+  - **Implementation Approach**:
+    - Progressive disclosure: Each week builds one component without overwhelming students upfront
+    - Faculty support: Mid-week feedback in Week 4, peer review in Week 3
+    - Executive validation: Final presentations to industry guests with Q&A
+    - All tools follow consistent design system (gold #c5b783, dark theme, responsive, export functionality)
+    - Tools designed for standalone use and integration with weekly learning outcomes

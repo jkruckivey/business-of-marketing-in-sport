@@ -63,6 +63,27 @@
         .nav a:hover {
             color: #c5b783;
         }
+        .activity-button {
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.25rem 0.5rem 0.25rem 0;
+            font-size: 0.9rem;
+        }
+        .activity-button:hover {
+            background: #b8a56f;
+        }
+        .activity-embed {
+            background: #fafaf8;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 2px solid #c5b783;
+        }
     </style>
 </head>
 <body>
@@ -98,6 +119,11 @@
         <li>Executive session: Sports agent panel on brand strategy and representation</li>
         <li>Post-session: Peer-reviewed memo - Should Brand X sign Athlete Y?</li>
     </ul>
+
+    <div class="activity-embed">
+        <strong>📊 Interactive Activities:</strong><br>
+        <button class="activity-button" onclick="openWidget('widgets/athlete-brand-calculator.html')">Athlete Brand Value Calculator</button>
+    </div>
 
     <hr>
 
@@ -140,6 +166,11 @@
         <li>Executive session: Investment pitch practice with executive feedback</li>
         <li>Post-session: Memo addresses emerging sport investment opportunity</li>
     </ul>
+
+    <div class="activity-embed">
+        <strong>📊 Interactive Activities:</strong><br>
+        <button class="activity-button" onclick="openWidget('widgets/emerging-sport-investment.html')">Emerging Sport Investment Tool</button>
+    </div>
 
     <hr>
 
@@ -244,5 +275,16 @@
     <div class="nav">
         <a href="../../index.html">← Back to Course Storyboard</a>
     </div>
+
+    <script>
+        function openWidget(widgetPath) {
+            const widgetWindow = window.open(widgetPath, 'widget', 'width=1200,height=900,resizable=yes,scrollbars=yes');
+            if (widgetWindow) {
+                widgetWindow.focus();
+            } else {
+                window.location.href = widgetPath;
+            }
+        }
+    </script>
 </body>
 </html>

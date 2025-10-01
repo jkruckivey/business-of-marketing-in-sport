@@ -63,6 +63,27 @@
         .nav a:hover {
             color: #c5b783;
         }
+        .activity-button {
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.25rem 0.5rem 0.25rem 0;
+            font-size: 0.9rem;
+        }
+        .activity-button:hover {
+            background: #b8a56f;
+        }
+        .activity-embed {
+            background: #fafaf8;
+            padding: 1rem;
+            margin: 1rem 0;
+            border: 2px solid #c5b783;
+        }
     </style>
 </head>
 <body>
@@ -99,6 +120,11 @@
         <li>Post-session: 2-page mini-case memo on Rogers deal success/failure</li>
     </ul>
 
+    <div class="activity-embed">
+        <strong>📊 Interactive Activities:</strong><br>
+        <button class="activity-button" onclick="openWidget('widgets/media-rights-calculator.html')">Media Rights Calculator</button>
+    </div>
+
     <hr>
 
     <h3>MLO 2.2: Compare Broadcasting Models</h3>
@@ -119,6 +145,11 @@
         <li>Executive session: Interactive Widget - Streaming Wars Strategy simulation</li>
         <li>Post-session: Included in memo - platform recommendation with rationale</li>
     </ul>
+
+    <div class="activity-embed">
+        <strong>📊 Interactive Activities:</strong><br>
+        <button class="activity-button" onclick="openWidget('widgets/platform-comparison.html')">Linear vs DTC Platform Comparison</button>
+    </div>
 
     <hr>
 
@@ -242,5 +273,17 @@
     <div class="nav">
         <a href="../../index.html">← Back to Course Storyboard</a>
     </div>
+
+    <script>
+        // Widget opening function
+        function openWidget(widgetPath) {
+            const widgetWindow = window.open(widgetPath, 'widget', 'width=1200,height=900,resizable=yes,scrollbars=yes');
+            if (widgetWindow) {
+                widgetWindow.focus();
+            } else {
+                window.location.href = widgetPath;
+            }
+        }
+    </script>
 </body>
 </html>

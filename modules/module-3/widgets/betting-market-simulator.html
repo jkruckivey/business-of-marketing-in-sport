@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Betting Market Simulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+        }
+
+        .market-selector {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .market-selector h2 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+        }
+
+        .market-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .market-btn {
+            padding: 1rem;
+            background: rgba(197, 183, 131, 0.2);
+            border: 2px solid #c5b783;
+            border-radius: 4px;
+            color: #f5f4f0;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .market-btn:hover {
+            background: rgba(197, 183, 131, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .market-btn.active {
+            background: #c5b783;
+            color: #2c2c2c;
+        }
+
+        .market-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .market-details {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .market-details h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .detail-section h3 {
+            color: #f5f4f0;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .detail-item {
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            margin-bottom: 0.75rem;
+            border-radius: 4px;
+            border-left: 3px solid #c5b783;
+        }
+
+        .detail-item strong {
+            color: #c5b783;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .opportunities {
+            background: rgba(197, 183, 131, 0.1);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .opportunities h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .opportunity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .opportunity-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 4px;
+            border-left: 4px solid #c5b783;
+        }
+
+        .opportunity-card h3 {
+            color: #c5b783;
+            margin-bottom: 0.75rem;
+        }
+
+        .opportunity-card ul {
+            margin-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .risks {
+            background: rgba(248, 113, 113, 0.1);
+            border: 2px solid #f87171;
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .risks h2 {
+            color: #f87171;
+            margin-bottom: 1.5rem;
+        }
+
+        .risk-item {
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border-left: 4px solid #f87171;
+        }
+
+        .risk-item strong {
+            color: #f87171;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 968px) {
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Sports Betting Market Simulator</h1>
+        <p class="subtitle">Explore sports betting market size, growth opportunities, and regulatory considerations</p>
+
+        <div class="market-selector">
+            <h2>Select Market</h2>
+            <div class="market-buttons">
+                <button class="market-btn active" onclick="loadMarket('canada')">Canada</button>
+                <button class="market-btn" onclick="loadMarket('us')">United States</button>
+                <button class="market-btn" onclick="loadMarket('uk')">United Kingdom</button>
+                <button class="market-btn" onclick="loadMarket('ontario')">Ontario (Provincial)</button>
+            </div>
+        </div>
+
+        <div class="market-overview" id="market-overview">
+            <!-- Will be populated dynamically -->
+        </div>
+
+        <div class="market-details" id="market-details">
+            <!-- Will be populated dynamically -->
+        </div>
+
+        <div class="opportunities" id="opportunities">
+            <!-- Will be populated dynamically -->
+        </div>
+
+        <div class="risks" id="risks">
+            <!-- Will be populated dynamically -->
+        </div>
+    </div>
+
+    <script>
+        const markets = {
+            canada: {
+                name: 'Canada',
+                metrics: {
+                    marketSize: '$4.6B',
+                    growth: '+35%',
+                    penetration: '12%',
+                    operators: '15+'
+                },
+                details: {
+                    regulatory: {
+                        title: 'Regulatory Environment',
+                        items: [
+                            { label: 'Status', value: 'Legal nationwide since 2021' },
+                            { label: 'Model', value: 'Provincial licensing (iGaming Ontario, etc.)' },
+                            { label: 'Tax Rate', value: '20% on gross gaming revenue' },
+                            { label: 'Advertising', value: 'Permitted with restrictions' }
+                        ]
+                    },
+                    market: {
+                        title: 'Market Characteristics',
+                        items: [
+                            { label: 'Launch', value: 'April 2022 (Ontario single-event)' },
+                            { label: 'Population', value: '38M total, 15M Ontario' },
+                            { label: 'Top Sports', value: 'NHL, NBA, NFL, MLS' },
+                            { label: 'Mobile Dominance', value: '90% of handle' }
+                        ]
+                    }
+                },
+                opportunities: [
+                    {
+                        title: 'Market Entry',
+                        items: [
+                            'Provincial expansion (BC, Alberta, Quebec next)',
+                            'Limited operators = less competition than US',
+                            'Hockey-centric betting culture',
+                            'Parlay/same-game-parlay popularity'
+                        ]
+                    },
+                    {
+                        title: 'Partnerships',
+                        items: [
+                            'TSN/Sportsnet media integration',
+                            'Team sponsorships (Maple Leafs, Raptors)',
+                            'Arena/stadium naming rights opportunities',
+                            'Live in-game betting experiences'
+                        ]
+                    },
+                    {
+                        title: 'Growth Drivers',
+                        items: [
+                            'Young market - early adopter advantages',
+                            'Cross-border US player acquisition',
+                            'NHL betting partnerships expanding',
+                            'Grey market conversion to legal operators'
+                        ]
+                    }
+                ],
+                risks: [
+                    { title: 'Regulatory Risk', description: 'Provincial model creates fragmented regulations and compliance costs' },
+                    { title: 'Marketing Restrictions', description: 'Advertising regulations tightening - limits customer acquisition channels' },
+                    { title: 'Responsible Gaming', description: 'Increasing pressure for self-exclusion tools and problem gambling support' },
+                    { title: 'Tax Uncertainty', description: 'Provinces may increase tax rates as markets mature, squeezing margins' }
+                ]
+            },
+            us: {
+                name: 'United States',
+                metrics: {
+                    marketSize: '$93B',
+                    growth: '+28%',
+                    penetration: '18%',
+                    operators: '30+'
+                },
+                details: {
+                    regulatory: {
+                        title: 'Regulatory Environment',
+                        items: [
+                            { label: 'Status', value: 'Legal in 38 states + DC' },
+                            { label: 'Model', value: 'State-by-state licensing' },
+                            { label: 'Tax Rate', value: '6.75% (NV) to 51% (NY)' },
+                            { label: 'Advertising', value: 'Varies by state' }
+                        ]
+                    },
+                    market: {
+                        title: 'Market Characteristics',
+                        items: [
+                            { label: 'Launch', value: 'May 2018 (PASPA repeal)' },
+                            { label: 'Population', value: '335M (270M in legal states)' },
+                            { label: 'Top Sports', value: 'NFL, NBA, MLB, NCAA' },
+                            { label: 'Mobile Dominance', value: '85% of handle' }
+                        ]
+                    }
+                },
+                opportunities: [
+                    {
+                        title: 'Market Scale',
+                        items: [
+                            'Largest sports betting market globally',
+                            'NFL drives 35% of annual handle',
+                            'March Madness = $3B+ wagered',
+                            'Multiple major league partnerships available'
+                        ]
+                    },
+                    {
+                        title: 'Media Integration',
+                        items: [
+                            'ESPN Bet, FanDuel TV, DraftKings Network',
+                            'Live odds integration in broadcasts',
+                            'Streaming platform partnerships',
+                            'Talent/celebrity endorsements'
+                        ]
+                    },
+                    {
+                        title: 'Product Innovation',
+                        items: [
+                            'Micro-betting (next pitch, next play)',
+                            'Fantasy sports crossover',
+                            'Social betting features',
+                            'AI-powered personalization'
+                        ]
+                    }
+                ],
+                risks: [
+                    { title: 'Customer Acquisition Cost', description: '$400-$600 per customer - profitability takes years' },
+                    { title: 'Intense Competition', description: '30+ operators fighting for market share - promotional spend unsustainable' },
+                    { title: 'State Tax Variability', description: 'NY 51% tax kills margins, creates state-shopping complexity' },
+                    { title: 'Hold Rate Pressure', description: 'Competitive markets = lower hold rates (5-7% vs 8-10% optimal)' }
+                ]
+            },
+            uk: {
+                name: 'United Kingdom',
+                metrics: {
+                    marketSize: '£14B',
+                    growth: '+4%',
+                    penetration: '48%',
+                    operators: '50+'
+                },
+                details: {
+                    regulatory: {
+                        title: 'Regulatory Environment',
+                        items: [
+                            { label: 'Status', value: 'Legal since 2005' },
+                            { label: 'Model', value: 'UK Gambling Commission licensing' },
+                            { label: 'Tax Rate', value: '15% on gross gaming revenue' },
+                            { label: 'Advertising', value: 'Heavily regulated, jersey ban' }
+                        ]
+                    },
+                    market: {
+                        title: 'Market Characteristics',
+                        items: [
+                            { label: 'Maturity', value: 'Mature market (20+ years legal)' },
+                            { label: 'Population', value: '67M (32M adults gamble)' },
+                            { label: 'Top Sports', value: 'Football, horse racing, cricket' },
+                            { label: 'Mobile Dominance', value: '80% of handle' }
+                        ]
+                    }
+                },
+                opportunities: [
+                    {
+                        title: 'Market Leadership',
+                        items: [
+                            'Most sophisticated betting market globally',
+                            'In-play betting highly developed',
+                            'Strong bettor education/sophistication',
+                            'Betting shop + online hybrid model'
+                        ]
+                    },
+                    {
+                        title: 'Product Maturity',
+                        items: [
+                            'Cash-out features standard',
+                            'Betting exchanges (Betfair model)',
+                            'Cross-sport accumulators',
+                            'Virtual sports betting'
+                        ]
+                    },
+                    {
+                        title: 'Global Expansion',
+                        items: [
+                            'UK operators expanding to US/Canada',
+                            'Proven tech platforms and operations',
+                            'Brand recognition (Bet365, William Hill)',
+                            'Regulatory compliance expertise'
+                        ]
+                    }
+                ],
+                risks: [
+                    { title: 'Affordability Checks', description: 'New regulations require income verification - may reduce handle' },
+                    { title: 'Advertising Restrictions', description: 'Jersey sponsorship ban, pre-watershed TV ads banned' },
+                    { title: 'Market Saturation', description: 'Low growth market - consolidation likely, margins compressed' },
+                    { title: 'Problem Gambling Focus', description: 'Increasing regulatory scrutiny on harm prevention' }
+                ]
+            },
+            ontario: {
+                name: 'Ontario',
+                metrics: {
+                    marketSize: '$1.8B',
+                    growth: '+45%',
+                    penetration: '15%',
+                    operators: '12'
+                },
+                details: {
+                    regulatory: {
+                        title: 'Regulatory Environment',
+                        items: [
+                            { label: 'Status', value: 'Legal since April 2022' },
+                            { label: 'Model', value: 'iGaming Ontario licensing' },
+                            { label: 'Tax Rate', value: '20% on gross gaming revenue' },
+                            { label: 'Advertising', value: 'Self-regulated with restrictions' }
+                        ]
+                    },
+                    market: {
+                        title: 'Market Characteristics',
+                        items: [
+                            { label: 'Launch', value: 'April 4, 2022' },
+                            { label: 'Population', value: '15M (39% of Canada)' },
+                            { label: 'Top Sports', value: 'NHL (Leafs/Sens), NBA (Raptors), NFL' },
+                            { label: 'Mobile Dominance', value: '95% of handle' }
+                        ]
+                    }
+                },
+                opportunities: [
+                    {
+                        title: 'Market Leadership',
+                        items: [
+                            'Largest provincial market in Canada',
+                            'Toronto = major metro with 3 Big 4 teams',
+                            'First-mover advantage for brand building',
+                            'Grey market players converting to legal sites'
+                        ]
+                    },
+                    {
+                        title: 'Local Partnerships',
+                        items: [
+                            'Maple Leafs Sports & Entertainment deals',
+                            'Scotiabank Arena integrations',
+                            'TSN/Sportsnet local broadcasts',
+                            'OLG lottery customer crossover'
+                        ]
+                    },
+                    {
+                        title: 'Product Focus',
+                        items: [
+                            'Leafs/Raptors live betting huge opportunity',
+                            'Parlay betting extremely popular',
+                            'Hockey-specific props and markets',
+                            'Cross-border US event betting (Super Bowl, March Madness)'
+                        ]
+                    }
+                ],
+                risks: [
+                    { title: 'Single Province Risk', description: 'Concentrated in one jurisdiction - regulatory changes impact entire business' },
+                    { title: 'Competitive Entry', description: 'US giants (FanDuel, DraftKings, BetMGM) well-funded and aggressive' },
+                    { title: 'Advertising Scrutiny', description: 'Ontario tightening ads during live sports - limits brand visibility' },
+                    { title: 'Tax Rate Pressure', description: 'Province may increase 20% rate to match US states (NY = 51%)' }
+                ]
+            }
+        };
+
+        function loadMarket(marketKey) {
+            // Update button states
+            document.querySelectorAll('.market-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const market = markets[marketKey];
+
+            // Market Overview
+            const overviewHTML = `
+                <div class="metric-card">
+                    <div class="metric-value">${market.metrics.marketSize}</div>
+                    <div class="metric-label">Market Size (Annual)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">${market.metrics.growth}</div>
+                    <div class="metric-label">YoY Growth</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">${market.metrics.penetration}</div>
+                    <div class="metric-label">Market Penetration</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">${market.metrics.operators}</div>
+                    <div class="metric-label">Licensed Operators</div>
+                </div>
+            `;
+            document.getElementById('market-overview').innerHTML = overviewHTML;
+
+            // Market Details
+            const detailsHTML = `
+                <h2>${market.name} Market Analysis</h2>
+                <div class="detail-grid">
+                    <div class="detail-section">
+                        <h3>${market.details.regulatory.title}</h3>
+                        ${market.details.regulatory.items.map(item => `
+                            <div class="detail-item">
+                                <strong>${item.label}</strong>
+                                ${item.value}
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="detail-section">
+                        <h3>${market.details.market.title}</h3>
+                        ${market.details.market.items.map(item => `
+                            <div class="detail-item">
+                                <strong>${item.label}</strong>
+                                ${item.value}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            document.getElementById('market-details').innerHTML = detailsHTML;
+
+            // Opportunities
+            const opportunitiesHTML = `
+                <h2>💰 Market Opportunities</h2>
+                <div class="opportunity-grid">
+                    ${market.opportunities.map(opp => `
+                        <div class="opportunity-card">
+                            <h3>${opp.title}</h3>
+                            <ul>
+                                ${opp.items.map(item => `<li>${item}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+            document.getElementById('opportunities').innerHTML = opportunitiesHTML;
+
+            // Risks
+            const risksHTML = `
+                <h2>⚠️ Key Risks & Challenges</h2>
+                ${market.risks.map(risk => `
+                    <div class="risk-item">
+                        <strong>${risk.title}</strong>
+                        ${risk.description}
+                    </div>
+                `).join('')}
+            `;
+            document.getElementById('risks').innerHTML = risksHTML;
+        }
+
+        // Load default market on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            loadMarket('canada');
+        });
+    </script>
+</body>
+</html>

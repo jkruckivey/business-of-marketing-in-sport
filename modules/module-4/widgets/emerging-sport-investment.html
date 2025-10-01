@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerging Sport Investment Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+        }
+
+        .sport-selector {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .sport-selector h2 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+        }
+
+        .sport-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .sport-btn {
+            padding: 1rem;
+            background: rgba(197, 183, 131, 0.2);
+            border: 2px solid #c5b783;
+            border-radius: 4px;
+            color: #f5f4f0;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .sport-btn:hover {
+            background: rgba(197, 183, 131, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .sport-btn.active {
+            background: #c5b783;
+            color: #2c2c2c;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-trend {
+            font-size: 0.85rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .trend-up {
+            background: rgba(74, 222, 128, 0.2);
+            color: #4ade80;
+        }
+
+        .trend-down {
+            background: rgba(248, 113, 113, 0.2);
+            color: #f87171;
+        }
+
+        .trend-flat {
+            background: rgba(251, 191, 36, 0.2);
+            color: #fbbf24;
+        }
+
+        .analysis {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .analysis h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .analysis-section h3 {
+            color: #f5f4f0;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .analysis-item {
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            margin-bottom: 0.75rem;
+            border-radius: 4px;
+            border-left: 3px solid #c5b783;
+        }
+
+        .analysis-item strong {
+            color: #c5b783;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .investment-recommendation {
+            background: rgba(197, 183, 131, 0.1);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .investment-recommendation h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .recommendation-score {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .recommendation-score .score {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+        }
+
+        .recommendation-score .label {
+            color: #ccc;
+            font-size: 1rem;
+        }
+
+        .recommendation-details {
+            line-height: 1.8;
+        }
+
+        .recommendation-details h3 {
+            color: #c5b783;
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        .recommendation-details ul {
+            margin-left: 1.5rem;
+            line-height: 2;
+        }
+
+        @media (max-width: 968px) {
+            .analysis-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Emerging Sport Investment Tool</h1>
+        <p class="subtitle">Compare investment opportunities in emerging sports vs traditional properties</p>
+
+        <div class="sport-selector">
+            <h2>Select Sport to Analyze</h2>
+            <div class="sport-buttons">
+                <button class="sport-btn active" onclick="loadSport('pickleball')">Pickleball</button>
+                <button class="sport-btn" onclick="loadSport('padel')">Padel</button>
+                <button class="sport-btn" onclick="loadSport('womens-soccer')">Women's Soccer</button>
+                <button class="sport-btn" onclick="loadSport('esports')">Esports</button>
+                <button class="sport-btn" onclick="loadSport('rugby-sevens')">Rugby Sevens</button>
+                <button class="sport-btn" onclick="loadSport('3x3-basketball')">3x3 Basketball</button>
+            </div>
+        </div>
+
+        <div class="comparison-grid" id="metrics">
+            <!-- Will be populated dynamically -->
+        </div>
+
+        <div class="analysis" id="analysis">
+            <!-- Will be populated dynamically -->
+        </div>
+
+        <div class="investment-recommendation" id="recommendation">
+            <!-- Will be populated dynamically -->
+        </div>
+    </div>
+
+    <script>
+        const sports = {
+            pickleball: {
+                name: 'Pickleball',
+                metrics: {
+                    marketSize: '$1.5B',
+                    marketTrend: 'up',
+                    growth: '+158%',
+                    participants: '8.9M',
+                    participantsTrend: 'up',
+                    avgAge: '38',
+                    mediaValue: '$50M',
+                    mediaTrend: 'up',
+                    sponsorInterest: 'High'
+                },
+                analysis: {
+                    strengths: [
+                        { label: 'Fastest Growing Sport', value: 'Explosive 158% YoY growth in participation' },
+                        { label: 'Affluent Demographics', value: 'Average HHI $150K+, high disposable income' },
+                        { label: 'Low Barrier to Entry', value: 'Easy to learn, minimal equipment, social atmosphere' },
+                        { label: 'Real Estate Play', value: 'Facility development opportunity, courts in demand' }
+                    ],
+                    opportunities: [
+                        { label: 'Professional League', value: 'Major League Pickleball gaining traction, TV deals emerging' },
+                        { label: 'Equipment Market', value: 'Paddle manufacturers, apparel brands entering space' },
+                        { label: 'Media Rights', value: 'ESPN, Tennis Channel showing interest in pro events' },
+                        { label: 'Lifestyle Brand', value: 'Community-focused, wellness positioning' }
+                    ],
+                    risks: [
+                        { label: 'Fad Concern', value: 'Will growth sustain or plateau? Too early to tell' },
+                        { label: 'Viewership Challenge', value: 'Hard to make exciting for TV - small court, quick rallies' },
+                        { label: 'Fragmented Governance', value: 'Multiple competing organizations, no unified body' },
+                        { label: 'Amateur Dominant', value: 'Most players recreational - pro monetization uncertain' }
+                    ]
+                },
+                recommendation: {
+                    score: 7.5,
+                    rating: 'Strong Investment',
+                    thesis: 'Pickleball represents a rare ground-floor opportunity in a rapidly growing participation sport with affluent demographics. While professional league viability remains uncertain, the real opportunity lies in grassroots infrastructure, equipment, and community-building.',
+                    timeline: '3-5 years',
+                    investmentType: 'Facilities, equipment, lifestyle brands',
+                    exitStrategy: 'Participation growth will drive facility/equipment value regardless of pro league success'
+                }
+            },
+            padel: {
+                name: 'Padel',
+                metrics: {
+                    marketSize: '$2.8B',
+                    marketTrend: 'up',
+                    growth: '+45%',
+                    participants: '25M',
+                    participantsTrend: 'up',
+                    avgAge: '35',
+                    mediaValue: '$120M',
+                    mediaTrend: 'up',
+                    sponsorInterest: 'Medium-High'
+                },
+                analysis: {
+                    strengths: [
+                        { label: 'European Dominance', value: 'Massive in Spain/Argentina, expanding to rest of Europe' },
+                        { label: 'Social by Design', value: 'Doubles-only format, community-building naturally' },
+                        { label: 'Tennis Crossover', value: 'Appeals to tennis players, easier to learn' },
+                        { label: 'Professional Ecosystem', value: 'Premier Padel tour backed by Qatar Sports Investments' }
+                    ],
+                    opportunities: [
+                        { label: 'North American Growth', value: 'Still nascent in US/Canada - massive expansion potential' },
+                        { label: 'Premium Positioning', value: 'Upscale clubs, luxury brand associations' },
+                        { label: 'Media Rights', value: 'Established pro circuit creates content opportunities' },
+                        { label: 'Real Estate Integration', value: 'Clubs, resorts, mixed-use developments' }
+                    ],
+                    risks: [
+                        { label: 'Market Confusion', value: 'Competition with pickleball for same demographic' },
+                        { label: 'Facility Cost', value: 'Court construction more expensive than pickleball' },
+                        { label: 'Regional Limitations', value: 'May not translate culturally outside certain markets' },
+                        { label: 'Governance Issues', value: 'Professional tour fragmentation, competing organizations' }
+                    ]
+                },
+                recommendation: {
+                    score: 7.0,
+                    rating: 'Strong Investment (Selective Markets)',
+                    thesis: 'Padel is proven in Europe with clear monetization models. North American expansion represents opportunity but faces competition from pickleball. Best suited for premium facilities and markets with existing tennis culture.',
+                    timeline: '5-7 years',
+                    investmentType: 'Premium facilities, club memberships, pro team ownership',
+                    exitStrategy: 'European model provides blueprint - monetize through facility operations and F&B'
+                }
+            },
+            'womens-soccer': {
+                name: "Women's Soccer",
+                metrics: {
+                    marketSize: '$900M',
+                    marketTrend: 'up',
+                    growth: '+32%',
+                    participants: '30M',
+                    participantsTrend: 'up',
+                    avgAge: '24',
+                    mediaValue: '$600M',
+                    mediaTrend: 'up',
+                    sponsorInterest: 'Very High'
+                },
+                analysis: {
+                    strengths: [
+                        { label: 'FIFA World Cup Momentum', value: '2023 WWC shattered viewership and attendance records' },
+                        { label: 'Equal Pay Movement', value: 'Increased investment from federations and sponsors' },
+                        { label: 'Elite Athletes', value: 'Star power (Messi-level players emerging)' },
+                        { label: 'Sponsor Demand', value: 'Purpose-driven brands eager to invest' }
+                    ],
+                    opportunities: [
+                        { label: 'Professional Leagues', value: 'NWSL, WSL growing rapidly - expansion teams selling for $50M+' },
+                        { label: 'Broadcast Rights', value: 'Media deals growing 3-5x - still undervalued vs men' },
+                        { label: 'Athlete Endorsements', value: 'Female athletes more affordable, authentic connections' },
+                        { label: 'Youth Participation', value: 'Girls playing soccer at record rates - pipeline strong' }
+                    ],
+                    risks: [
+                        { label: 'Profitability Timeline', value: 'Leagues still losing money - long road to breakeven' },
+                        { label: 'Salary Growth', value: 'Equal pay demands will squeeze margins short-term' },
+                        { label: 'Competition Window', value: 'Limited window before valuations match performance' },
+                        { label: 'Regional Variability', value: 'Massive in Europe, still building in North America' }
+                    ]
+                },
+                recommendation: {
+                    score: 8.5,
+                    rating: 'Excellent Investment (Timing Critical)',
+                    thesis: 'Women\'s soccer is at inflection point - proven product with massive tailwinds but still undervalued. Investment window closing as prices rise. Combination of on-field quality, cultural momentum, and sponsor demand creates rare opportunity.',
+                    timeline: '2-4 years',
+                    investmentType: 'Team ownership, athlete endorsements, media rights',
+                    exitStrategy: 'Valuations will normalize to men\'s soccer multiples as revenue grows - 3-5x return potential'
+                }
+            },
+            esports: {
+                name: 'Esports',
+                metrics: {
+                    marketSize: '$1.8B',
+                    marketTrend: 'flat',
+                    growth: '+8%',
+                    participants: '500M',
+                    participantsTrend: 'up',
+                    avgAge: '26',
+                    mediaValue: '$900M',
+                    mediaTrend: 'flat',
+                    sponsorInterest: 'Medium'
+                },
+                analysis: {
+                    strengths: [
+                        { label: 'Massive Audience', value: '500M+ viewers globally, predominantly Gen Z' },
+                        { label: 'Digital Native', value: 'Built for streaming, mobile-first engagement' },
+                        { label: 'Low Overhead', value: 'No stadiums, travel minimal, venue costs low' },
+                        { label: 'Global Scale', value: 'No geographic barriers, truly worldwide competitions' }
+                    ],
+                    opportunities: [
+                        { label: 'Publisher Partnerships', value: 'Work with game developers on exclusive content' },
+                        { label: 'Regional Leagues', value: 'Asia and Latin America still developing pro scenes' },
+                        { label: 'Content Creation', value: 'Streaming, YouTube, TikTok crossover opportunities' },
+                        { label: 'Web3 Integration', value: 'NFTs, crypto sponsorships, metaverse activations' }
+                    ],
+                    risks: [
+                        { label: 'Profitability Crisis', value: 'Most teams/leagues losing money, business model broken' },
+                        { label: 'Publisher Control', value: 'Game developers control IP - can shut down overnight' },
+                        { label: 'Viewership Plateau', value: 'Growth slowing, "next big thing" hasn\'t materialized' },
+                        { label: 'Fragmentation', value: 'Too many games, no dominant league, attention scattered' }
+                    ]
+                },
+                recommendation: {
+                    score: 5.5,
+                    rating: 'Cautious Approach',
+                    thesis: 'Esports bubble has burst. Despite massive audience, monetization remains elusive. Traditional sports investment strategies don\'t work - no scarcity, publisher risk, unclear path to profitability. Wait for consolidation and clearer business models.',
+                    timeline: '5-10 years (or never)',
+                    investmentType: 'Content/media only - avoid team ownership',
+                    exitStrategy: 'Industry needs fundamental restructuring before traditional sports investment makes sense'
+                }
+            },
+            'rugby-sevens': {
+                name: 'Rugby Sevens',
+                metrics: {
+                    marketSize: '$450M',
+                    marketTrend: 'up',
+                    growth: '+18%',
+                    participants: '9M',
+                    participantsTrend: 'up',
+                    avgAge: '28',
+                    mediaValue: '$180M',
+                    mediaTrend: 'up',
+                    sponsorInterest: 'Medium'
+                },
+                analysis: {
+                    strengths: [
+                        { label: 'Olympic Sport', value: 'Re-added to Olympics 2016, 4-year cycle visibility boost' },
+                        { label: 'Fast-Paced Format', value: '7 players, 14 min games - perfect for attention spans' },
+                        { label: 'Global Reach', value: 'Popular in Commonwealth, expanding in US' },
+                        { label: 'Affordable Live Event', value: 'Tournament format, multiple games, family-friendly' }
+                    ],
+                    opportunities: [
+                        { label: 'US Market Entry', value: 'Growing collegiate programs, LA 2028 Olympics tailwind' },
+                        { label: 'Tournament Circuit', value: 'World Rugby Sevens Series established and growing' },
+                        { label: 'Crossover Athletes', value: 'NFL interest in rugby as training/crossover sport' },
+                        { label: 'Women\'s Sevens', value: 'Women\'s game equally exciting, strong participation growth' }
+                    ],
+                    risks: [
+                        { label: 'Niche Appeal', value: 'Still unknown in North America, education required' },
+                        { label: 'Traditional Rugby Shadow', value: 'Seen as "lesser" version by rugby purists' },
+                        { label: 'Limited Media', value: 'Hard to find on US TV, streaming not established' },
+                        { label: 'Competition', value: 'Competing with 15s rugby for same audience/sponsors' }
+                    ]
+                },
+                recommendation: {
+                    score: 6.0,
+                    rating: 'Speculative Investment',
+                    thesis: 'Rugby Sevens has Olympic credibility and format advantages but faces awareness challenges in key growth markets. Best for patient investors who believe in LA 2028 Olympics creating inflection point for US market.',
+                    timeline: '7-10 years',
+                    investmentType: 'Team ownership in World Series, athlete endorsements, facility development',
+                    exitStrategy: 'Long-term play banking on US market development post-LA 2028 Olympics'
+                }
+            },
+            '3x3-basketball': {
+                name: '3x3 Basketball',
+                metrics: {
+                    marketSize: '$280M',
+                    marketTrend: 'up',
+                    growth: '+22%',
+                    participants: '6M',
+                    participantsTrend: 'up',
+                    avgAge: '25',
+                    mediaValue: '$75M',
+                    mediaTrend: 'up',
+                    sponsorInterest: 'Medium'
+                },
+                analysis: {
+                    strengths: [
+                        { label: 'Olympic Sport', value: 'Added to Olympics 2020, legitimacy established' },
+                        { label: 'Urban Appeal', value: 'Streetball culture, hip-hop crossover, authentic vibe' },
+                        { label: 'Fast Format', value: '10 min games, non-stop action, made-for-social media' },
+                        { label: 'Basketball Halo', value: 'Benefits from NBA popularity, easy to understand' }
+                    ],
+                    opportunities: [
+                        { label: 'Red Bull Partnership', value: 'Red Bull 3x3 tour established, energy drink fit' },
+                        { label: 'Urban Events', value: 'Pop-up courts, city activations, festival integrations' },
+                        { label: 'Youth Development', value: 'Pathway to 5v5 basketball, AAU integration' },
+                        { label: 'International Growth', value: 'FIBA pushing hard in emerging markets' }
+                    ],
+                    risks: [
+                        { label: 'NBA Shadow', value: 'Hard to get attention when 5v5 dominates' },
+                        { label: 'Monetization Model', value: 'Unclear how to make money - free events vs tickets?' },
+                        { label: 'Viewing Experience', value: 'Better to play than watch - limited broadcast appeal' },
+                        { label: 'Talent Drain', value: 'Best players leave for 5v5 leagues' }
+                    ]
+                },
+                recommendation: {
+                    score: 6.5,
+                    rating: 'Niche Investment Opportunity',
+                    thesis: '3x3 basketball works as urban lifestyle brand and Olympic showcase but struggles as standalone commercial property. Best for brands seeking authentic urban/streetball positioning rather than traditional sports investment.',
+                    timeline: '4-6 years',
+                    investmentType: 'Event sponsorship, lifestyle brands, urban facility development',
+                    exitStrategy: 'Brand building tool more than profit center - measure success by brand lift not revenue'
+                }
+            }
+        };
+
+        function loadSport(sportKey) {
+            // Update button states
+            document.querySelectorAll('.sport-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            const sport = sports[sportKey];
+
+            // Metrics
+            const metricsHTML = `
+                <div class="metric-card">
+                    <div class="metric-value">${sport.metrics.marketSize}</div>
+                    <div class="metric-label">Market Size</div>
+                    <div class="metric-trend trend-${sport.metrics.marketTrend}">${sport.metrics.growth} YoY</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">${sport.metrics.participants}</div>
+                    <div class="metric-label">Global Participants</div>
+                    <div class="metric-trend trend-${sport.metrics.participantsTrend}">Growing</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">${sport.metrics.avgAge}</div>
+                    <div class="metric-label">Average Age</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">${sport.metrics.mediaValue}</div>
+                    <div class="metric-label">Media Rights Value</div>
+                    <div class="metric-trend trend-${sport.metrics.mediaTrend}">${sport.metrics.sponsorInterest} Sponsor Interest</div>
+                </div>
+            `;
+            document.getElementById('metrics').innerHTML = metricsHTML;
+
+            // Analysis
+            const analysisHTML = `
+                <h2>${sport.name} Investment Analysis</h2>
+                <div class="analysis-grid">
+                    <div class="analysis-section">
+                        <h3>✅ Strengths</h3>
+                        ${sport.analysis.strengths.map(item => `
+                            <div class="analysis-item">
+                                <strong>${item.label}</strong>
+                                ${item.value}
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="analysis-section">
+                        <h3>💡 Opportunities</h3>
+                        ${sport.analysis.opportunities.map(item => `
+                            <div class="analysis-item">
+                                <strong>${item.label}</strong>
+                                ${item.value}
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+                <div class="analysis-grid" style="margin-top: 2rem;">
+                    <div class="analysis-section">
+                        <h3>⚠️ Risks</h3>
+                        ${sport.analysis.risks.map(item => `
+                            <div class="analysis-item">
+                                <strong>${item.label}</strong>
+                                ${item.value}
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="analysis-section">
+                        <h3>📈 Investment Fit</h3>
+                        <div class="analysis-item">
+                            <strong>Timeline:</strong>
+                            ${sport.recommendation.timeline}
+                        </div>
+                        <div class="analysis-item">
+                            <strong>Investment Type:</strong>
+                            ${sport.recommendation.investmentType}
+                        </div>
+                        <div class="analysis-item">
+                            <strong>Exit Strategy:</strong>
+                            ${sport.recommendation.exitStrategy}
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('analysis').innerHTML = analysisHTML;
+
+            // Recommendation
+            const recommendationHTML = `
+                <h2>Investment Recommendation</h2>
+                <div class="recommendation-score">
+                    <div class="score">${sport.recommendation.score}/10</div>
+                    <div class="label">${sport.recommendation.rating}</div>
+                </div>
+                <div class="recommendation-details">
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        ${sport.recommendation.thesis}
+                    </p>
+                </div>
+            `;
+            document.getElementById('recommendation').innerHTML = recommendationHTML;
+        }
+
+        // Load default sport on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            loadSport('pickleball');
+        });
+    </script>
+</body>
+</html>

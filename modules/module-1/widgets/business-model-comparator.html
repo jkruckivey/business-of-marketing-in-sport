@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Model Comparator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .model-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .model-card h2 {
+            color: #c5b783;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .factor-group {
+            margin-bottom: 2rem;
+        }
+
+        .factor-group h3 {
+            color: #f5f4f0;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(197, 183, 131, 0.3);
+        }
+
+        .factor-item {
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            margin-bottom: 0.75rem;
+            border-radius: 4px;
+            border-left: 3px solid #c5b783;
+        }
+
+        .factor-label {
+            color: #c5b783;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .factor-value {
+            color: #f5f4f0;
+            line-height: 1.6;
+        }
+
+        .key-differences {
+            background: rgba(197, 183, 131, 0.1);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .key-differences h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .difference-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .difference-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 4px;
+            border-left: 4px solid #c5b783;
+        }
+
+        .difference-card h3 {
+            color: #c5b783;
+            margin-bottom: 0.75rem;
+        }
+
+        .difference-card ul {
+            margin-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 968px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏢 Business Model Comparator</h1>
+        <p class="subtitle">Compare how sports business models differ from traditional consumer industries</p>
+
+        <div class="comparison-grid">
+            <div class="model-card">
+                <h2>🏟️ Sports Business Model</h2>
+
+                <div class="factor-group">
+                    <h3>Product & Competition</h3>
+                    <div class="factor-item">
+                        <div class="factor-label">Product</div>
+                        <div class="factor-value">Uncertain outcome entertainment - fans don't know who will win</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Competition</div>
+                        <div class="factor-value">Competitors are <strong>partners</strong> - you need strong opponents to create exciting product</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">League Structure</div>
+                        <div class="factor-value">Cartel model with revenue sharing to maintain competitive balance</div>
+                    </div>
+                </div>
+
+                <div class="factor-group">
+                    <h3>Customer Relationship</h3>
+                    <div class="factor-item">
+                        <div class="factor-label">Loyalty</div>
+                        <div class="factor-value">Extreme brand loyalty - multi-generational, emotional connection</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Switching Costs</div>
+                        <div class="factor-value">Very high - fans rarely change teams (identity, community, tradition)</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Customer Lifetime Value</div>
+                        <div class="factor-value">Decades-long relationships from childhood through retirement</div>
+                    </div>
+                </div>
+
+                <div class="factor-group">
+                    <h3>Revenue Model</h3>
+                    <div class="factor-item">
+                        <div class="factor-label">Direct Sales</div>
+                        <div class="factor-value">Tickets, merchandise - but only ~40% of total revenue</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">B2B Revenue</div>
+                        <div class="factor-value">Sponsorship, media rights dominate - selling attention/reach to other businesses</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Pricing Power</div>
+                        <div class="factor-value">Premium pricing in top markets due to scarcity and loyalty</div>
+                    </div>
+                </div>
+
+                <div class="factor-group">
+                    <h3>Supply & Demand</h3>
+                    <div class="factor-item">
+                        <div class="factor-label">Inventory</div>
+                        <div class="factor-value">Fixed supply - can't add more home games if demand increases</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Perishability</div>
+                        <div class="factor-value">Tickets expire at game time - unsold seats = lost revenue forever</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Simultaneity</div>
+                        <div class="factor-value">Production and consumption happen simultaneously - can't stockpile</div>
+                    </div>
+                </div>
+
+                <div class="factor-group">
+                    <h3>Market Dynamics</h3>
+                    <div class="factor-item">
+                        <div class="factor-label">Barriers to Entry</div>
+                        <div class="factor-value">Extremely high - leagues control franchise rights, limited expansion</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Geographic Monopoly</div>
+                        <div class="factor-value">One team per market in most cases - protected territories</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Content Value</div>
+                        <div class="factor-value">Live sports = must-watch TV - can't be time-shifted without losing value</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-card">
+                <h2>🏪 Traditional Consumer Business</h2>
+
+                <div class="factor-group">
+                    <h3>Product & Competition</h3>
+                    <div class="factor-item">
+                        <div class="factor-label">Product</div>
+                        <div class="factor-value">Predictable, standardized offering - customer knows what they're getting</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Competition</div>
+                        <div class="factor-value">Competitors are <strong>threats</strong> - goal is to eliminate or outperform rivals</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Market Structure</div>
+                        <div class="factor-value">Independent businesses competing for market share</div>
+                    </div>
+                </div>
+
+                <div class="factor-group">
+                    <h3>Customer Relationship</h3>
+                    <div class="factor-item">
+                        <div class="factor-label">Loyalty</div>
+                        <div class="factor-value">Moderate brand loyalty - driven by quality, price, and convenience</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Switching Costs</div>
+                        <div class="factor-value">Low to moderate - customers will switch for better value/quality</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Customer Lifetime Value</div>
+                        <div class="factor-value">Variable - depends on category (consumables vs durables)</div>
+                    </div>
+                </div>
+
+                <div class="factor-group">
+                    <h3>Revenue Model</h3>
+                    <div class="factor-item">
+                        <div class="factor-label">Direct Sales</div>
+                        <div class="factor-value">Primary revenue from selling products/services to consumers</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">B2B Revenue</div>
+                        <div class="factor-value">Minimal - may exist in wholesale channels but not core model</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Pricing Power</div>
+                        <div class="factor-value">Constrained by competition and price sensitivity</div>
+                    </div>
+                </div>
+
+                <div class="factor-group">
+                    <h3>Supply & Demand</h3>
+                    <div class="factor-item">
+                        <div class="factor-label">Inventory</div>
+                        <div class="factor-value">Flexible supply - can increase production to meet demand</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Perishability</div>
+                        <div class="factor-value">Most products can be stored and sold later (except fresh food)</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Simultaneity</div>
+                        <div class="factor-value">Production happens before consumption - inventory management</div>
+                    </div>
+                </div>
+
+                <div class="factor-group">
+                    <h3>Market Dynamics</h3>
+                    <div class="factor-item">
+                        <div class="factor-label">Barriers to Entry</div>
+                        <div class="factor-value">Variable - depends on industry (tech vs manufacturing vs retail)</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Geographic Monopoly</div>
+                        <div class="factor-value">Rare - usually compete in same markets with multiple brands</div>
+                    </div>
+                    <div class="factor-item">
+                        <div class="factor-label">Content Value</div>
+                        <div class="factor-value">Value not time-dependent - customers consume when convenient</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="key-differences">
+            <h2>🔑 Key Strategic Implications</h2>
+            <div class="difference-grid">
+                <div class="difference-card">
+                    <h3>1. Interdependence Paradox</h3>
+                    <ul>
+                        <li>Sports: Strong opponents make YOU more valuable</li>
+                        <li>Consumer: Weak competitors give you market share</li>
+                        <li><strong>Result:</strong> Revenue sharing to maintain parity</li>
+                    </ul>
+                </div>
+
+                <div class="difference-card">
+                    <h3>2. Dual Revenue Model</h3>
+                    <ul>
+                        <li>Sports: B2C (fans) AND B2B (sponsors, media)</li>
+                        <li>Consumer: Primarily B2C or B2B, not both</li>
+                        <li><strong>Result:</strong> Must optimize for two different customers</li>
+                    </ul>
+                </div>
+
+                <div class="difference-card">
+                    <h3>3. Emotional vs Rational</h3>
+                    <ul>
+                        <li>Sports: Emotional, identity-driven loyalty</li>
+                        <li>Consumer: Rational choice based on value</li>
+                        <li><strong>Result:</strong> Higher price tolerance, lifetime value</li>
+                    </ul>
+                </div>
+
+                <div class="difference-card">
+                    <h3>4. Supply Constraints</h3>
+                    <ul>
+                        <li>Sports: Can't scale inventory (82 games is 82 games)</li>
+                        <li>Consumer: Scale production to meet demand</li>
+                        <li><strong>Result:</strong> Scarcity pricing, dynamic pricing</li>
+                    </ul>
+                </div>
+
+                <div class="difference-card">
+                    <h3>5. Content Perishability</h3>
+                    <ul>
+                        <li>Sports: Value disappears after game (spoilers)</li>
+                        <li>Consumer: Products retain value over time</li>
+                        <li><strong>Result:</strong> Premium on live viewing/attendance</li>
+                    </ul>
+                </div>
+
+                <div class="difference-card">
+                    <h3>6. Competitive Balance</h3>
+                    <ul>
+                        <li>Sports: League enforces parity (draft, salary cap)</li>
+                        <li>Consumer: Winner-take-all dynamics are fine</li>
+                        <li><strong>Result:</strong> Every team needs chance to win</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Crisis Simulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .scenario-intro {
+            background: rgba(248, 113, 113, 0.1);
+            border: 2px solid #f87171;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .scenario-intro h2 {
+            color: #f87171;
+            margin-bottom: 1rem;
+        }
+
+        .crisis-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .crisis-stat {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .crisis-stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #f87171;
+        }
+
+        .crisis-stat-label {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .decision-section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .decision-section h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .decision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .decision-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .decision-card.selected {
+            border-color: #c5b783;
+            background: rgba(197, 183, 131, 0.1);
+        }
+
+        .decision-card h3 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .decision-option {
+            margin-bottom: 1rem;
+        }
+
+        .decision-option label {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .decision-option label:hover {
+            background: rgba(197, 183, 131, 0.1);
+        }
+
+        .decision-option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .decision-option input[type="range"] {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .slider-value {
+            color: #c5b783;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .impact-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .impact-positive {
+            background: rgba(74, 222, 128, 0.2);
+            color: #4ade80;
+        }
+
+        .impact-negative {
+            background: rgba(248, 113, 113, 0.2);
+            color: #f87171;
+        }
+
+        .impact-neutral {
+            background: rgba(251, 191, 36, 0.2);
+            color: #fbbf24;
+        }
+
+        .simulate-btn {
+            background: linear-gradient(135deg, #c5b783, #b8a56f);
+            color: #2c2c2c;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            margin: 2rem auto;
+        }
+
+        .simulate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(197, 183, 131, 0.3);
+        }
+
+        .results-section {
+            display: none;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .results-section.visible {
+            display: block;
+        }
+
+        .results-section h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .year-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .year-tab {
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .year-tab.active {
+            background: rgba(197, 183, 131, 0.2);
+            border-color: #c5b783;
+        }
+
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .outcome-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .outcome-title {
+            color: #c5b783;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .outcome-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .outcome-change {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .narrative-box {
+            background: rgba(197, 183, 131, 0.1);
+            border-left: 4px solid #c5b783;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 6px;
+        }
+
+        .narrative-box h3 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .decision-grid, .outcomes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚠️ Revenue Crisis Simulator</h1>
+        <p class="subtitle">Navigate a 30% revenue shortfall and make strategic decisions to stabilize your franchise</p>
+
+        <div class="scenario-intro">
+            <h2>The Situation</h2>
+            <p>You're the CFO of the <strong>Ottawa Senators</strong>, a mid-market NHL franchise. The team has missed the playoffs for 4 consecutive seasons, attendance is down 35%, and your largest sponsor just pulled out. The ownership group is demanding a path to profitability within 3 years.</p>
+
+            <div class="crisis-stats">
+                <div class="crisis-stat">
+                    <div class="crisis-stat-value">$160M</div>
+                    <div class="crisis-stat-label">Current Revenue (was $230M)</div>
+                </div>
+                <div class="crisis-stat">
+                    <div class="crisis-stat-value">-$35M</div>
+                    <div class="crisis-stat-label">Annual Operating Loss</div>
+                </div>
+                <div class="crisis-stat">
+                    <div class="crisis-stat-value">78%</div>
+                    <div class="crisis-stat-label">Arena Capacity (was 98%)</div>
+                </div>
+                <div class="crisis-stat">
+                    <div class="crisis-stat-value">26th</div>
+                    <div class="crisis-stat-label">League Standings (of 32)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decision-section">
+            <h2>Decision 1: Payroll Strategy</h2>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">Your player payroll is $85M against the $83.5M cap. How do you manage roster costs?</p>
+
+            <div class="decision-grid">
+                <div class="decision-card">
+                    <h3>🔻 Deep Rebuild</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="payroll" value="rebuild">
+                            <span>Trade veterans for picks, cut to $60M payroll</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Save $25M/year but lose more games short-term. Fan base frustrated for 2-3 years.</p>
+                    <div class="impact-badge impact-negative">Revenue: -15% Year 1</div>
+                    <div class="impact-badge impact-positive">Cap Flexibility: +$25M</div>
+                </div>
+
+                <div class="decision-card">
+                    <h3>⚖️ Balanced Approach</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="payroll" value="balanced" checked>
+                            <span>Keep core players, stay near cap floor ($60-70M)</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Maintain competitiveness while controlling costs. Moderate risk, moderate reward.</p>
+                    <div class="impact-badge impact-neutral">Revenue: -5% Year 1</div>
+                    <div class="impact-badge impact-neutral">Cap Flexibility: +$15M</div>
+                </div>
+
+                <div class="decision-card">
+                    <h3>🚀 Win-Now Push</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="payroll" value="winnow">
+                            <span>Add talent, push to $88M (Upper cap limit)</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Spend to compete now. High risk: if it fails, financial crisis deepens.</p>
+                    <div class="impact-badge impact-positive">Revenue: +10% if playoffs</div>
+                    <div class="impact-badge impact-negative">Risk: 60% chance of failure</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decision-section">
+            <h2>Decision 2: Ticket Pricing & Promotions</h2>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">With empty seats and declining interest, what's your ticketing strategy?</p>
+
+            <div class="decision-grid">
+                <div class="decision-card">
+                    <h3>💰 Aggressive Discounting</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="tickets" value="discount">
+                            <span>Cut prices 30%, flash sales, family packs</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Fill the building but sacrifice per-ticket revenue. Risks devaluing season tickets.</p>
+                    <div class="impact-badge impact-negative">Avg Ticket: -30%</div>
+                    <div class="impact-badge impact-positive">Attendance: +25%</div>
+                </div>
+
+                <div class="decision-card">
+                    <h3>🎯 Premium Experience</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="tickets" value="premium" checked>
+                            <span>Maintain pricing, invest $5M in arena upgrades</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Better fan experience justifies prices. Targets high-value customers.</p>
+                    <div class="impact-badge impact-neutral">Avg Ticket: 0%</div>
+                    <div class="impact-badge impact-neutral">Attendance: +10%</div>
+                </div>
+
+                <div class="decision-card">
+                    <h3>📊 Dynamic Pricing</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="tickets" value="dynamic">
+                            <span>AI-driven pricing, surge for rivals, discounts for weak opponents</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Maximize revenue per seat. Requires $2M tech investment.</p>
+                    <div class="impact-badge impact-positive">Avg Ticket: +12%</div>
+                    <div class="impact-badge impact-neutral">Attendance: +8%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decision-section">
+            <h2>Decision 3: Sponsorship & Partnerships</h2>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">Your top sponsor (TD Bank, $8M/year) ended their deal. How do you replace this revenue?</p>
+
+            <div class="decision-grid">
+                <div class="decision-card">
+                    <h3>🎰 Betting Partnerships</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="sponsor" value="betting">
+                            <span>$12M/year deal with sportsbook, arena naming rights</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Highest revenue but controversial. Some fans oppose gambling association.</p>
+                    <div class="impact-badge impact-positive">Revenue: +$12M/year</div>
+                    <div class="impact-badge impact-negative">Brand Risk: Medium</div>
+                </div>
+
+                <div class="decision-card">
+                    <h3>🏢 Corporate Portfolio</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="sponsor" value="corporate" checked>
+                            <span>Spread across 5 mid-sized partners ($6M total)</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Diversified, lower risk, but doesn't replace lost revenue fully.</p>
+                    <div class="impact-badge impact-neutral">Revenue: +$6M/year</div>
+                    <div class="impact-badge impact-positive">Brand Risk: Low</div>
+                </div>
+
+                <div class="decision-card">
+                    <h3>🌱 Community Focus</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="sponsor" value="community">
+                            <span>Local brands + city partnership ($4M + goodwill)</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Build local loyalty and civic pride. Long-term play but lower immediate revenue.</p>
+                    <div class="impact-badge impact-negative">Revenue: +$4M/year</div>
+                    <div class="impact-badge impact-positive">Fan Loyalty: +15%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="decision-section">
+            <h2>Decision 4: Media & Content Strategy</h2>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">Your local TV deal is up for renewal. Ratings are down 40% from peak. What's your approach?</p>
+
+            <div class="decision-grid">
+                <div class="decision-card">
+                    <h3>📺 Traditional TV Deal</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="media" value="traditional">
+                            <span>TSN/Rogers regional deal: $15M/year (down from $22M)</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Guaranteed money but declining value. Safe but limits future growth.</p>
+                    <div class="impact-badge impact-neutral">Revenue: $15M/year guaranteed</div>
+                    <div class="impact-badge impact-neutral">Growth Potential: Low</div>
+                </div>
+
+                <div class="decision-card">
+                    <h3>🎬 Direct-to-Consumer (DTC)</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="media" value="dtc" checked>
+                            <span>Build own streaming platform: $5M upfront, revenue share model</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Control content and data but requires investment and risk. Could yield $20M+ if successful.</p>
+                    <div class="impact-badge impact-negative">Year 1: -$3M (net)</div>
+                    <div class="impact-badge impact-positive">Year 3: +$20M potential</div>
+                </div>
+
+                <div class="decision-card">
+                    <h3>🤝 Hybrid Model</h3>
+                    <div class="decision-option">
+                        <label>
+                            <input type="radio" name="media" value="hybrid">
+                            <span>TV for 30 games ($10M), stream 11 games direct</span>
+                        </label>
+                    </div>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Balance guaranteed money with experimentation. Build capabilities while maintaining revenue.</p>
+                    <div class="impact-badge impact-neutral">Revenue: $12M/year</div>
+                    <div class="impact-badge impact-positive">Future Flexibility: High</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="simulate-btn" onclick="runSimulation()">🎯 Run 3-Year Simulation</button>
+
+        <div class="results-section" id="results">
+            <h2>📊 Simulation Results</h2>
+
+            <div class="year-tabs">
+                <div class="year-tab active" onclick="showYear(1)">Year 1</div>
+                <div class="year-tab" onclick="showYear(2)">Year 2</div>
+                <div class="year-tab" onclick="showYear(3)">Year 3</div>
+            </div>
+
+            <div id="year-content"></div>
+        </div>
+    </div>
+
+    <script>
+        function runSimulation() {
+            const payroll = document.querySelector('input[name="payroll"]:checked').value;
+            const tickets = document.querySelector('input[name="tickets"]:checked').value;
+            const sponsor = document.querySelector('input[name="sponsor"]:checked').value;
+            const media = document.querySelector('input[name="media"]:checked').value;
+
+            const decisions = { payroll, tickets, sponsor, media };
+
+            // Calculate outcomes based on decisions
+            const results = calculateOutcomes(decisions);
+
+            // Show results
+            document.getElementById('results').classList.add('visible');
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // Store results globally
+            window.simulationResults = results;
+            showYear(1);
+        }
+
+        function calculateOutcomes(d) {
+            let baseRevenue = 160;
+            let baseAttendance = 78;
+            let baseFanSatisfaction = 45;
+            let baseTeamQuality = 40;
+
+            const results = [];
+
+            for (let year = 1; year <= 3; year++) {
+                let yearData = {
+                    year: year,
+                    revenue: baseRevenue,
+                    attendance: baseAttendance,
+                    fanSatisfaction: baseFanSatisfaction,
+                    teamQuality: baseTeamQuality,
+                    profitLoss: 0,
+                    narrative: ''
+                };
+
+                // Payroll impacts
+                if (d.payroll === 'rebuild') {
+                    yearData.revenue -= 15 * (4 - year); // Improves over time
+                    yearData.teamQuality += 8 * year; // Builds over time
+                    yearData.attendance -= 8 * (4 - year);
+                    yearData.profitLoss += 25; // Cost savings
+                } else if (d.payroll === 'winnow') {
+                    const success = Math.random() > 0.6; // 40% success rate
+                    if (success || year >= 2) {
+                        yearData.revenue += 15 * year;
+                        yearData.teamQuality += 15;
+                        yearData.attendance += 12 * year;
+                        yearData.profitLoss -= 5 * year;
+                    } else {
+                        yearData.revenue -= 10;
+                        yearData.profitLoss -= 25;
+                    }
+                } else { // balanced
+                    yearData.revenue += 3 * year;
+                    yearData.teamQuality += 5 * year;
+                    yearData.attendance += 4 * year;
+                    yearData.profitLoss += 15;
+                }
+
+                // Ticket strategy impacts
+                if (d.tickets === 'discount') {
+                    yearData.revenue -= 18 - (3 * year);
+                    yearData.attendance += 20;
+                    yearData.fanSatisfaction += 10;
+                } else if (d.tickets === 'premium') {
+                    yearData.revenue += 5 * year;
+                    yearData.attendance += 8;
+                    yearData.fanSatisfaction += 5;
+                    yearData.profitLoss -= 5; // Investment cost
+                } else { // dynamic
+                    yearData.revenue += 8 * year;
+                    yearData.attendance += 6;
+                    yearData.profitLoss -= 2; // Tech cost
+                }
+
+                // Sponsorship impacts
+                if (d.sponsor === 'betting') {
+                    yearData.revenue += 12;
+                    yearData.fanSatisfaction -= 5;
+                } else if (d.sponsor === 'community') {
+                    yearData.revenue += 4;
+                    yearData.fanSatisfaction += 10 * year;
+                } else { // corporate
+                    yearData.revenue += 6;
+                }
+
+                // Media impacts
+                if (d.media === 'traditional') {
+                    yearData.revenue += 15;
+                } else if (d.media === 'dtc') {
+                    if (year === 1) yearData.revenue -= 3;
+                    else yearData.revenue += (8 * year);
+                } else { // hybrid
+                    yearData.revenue += 12 + (2 * year);
+                }
+
+                // Calculate final metrics
+                yearData.profitLoss += (yearData.revenue - 160) - 35; // Original loss
+
+                // Create narrative
+                yearData.narrative = generateNarrative(d, yearData);
+
+                results.push(yearData);
+
+                // Update base values for next year
+                baseRevenue = yearData.revenue;
+                baseAttendance = yearData.attendance;
+                baseFanSatisfaction = yearData.fanSatisfaction;
+                baseTeamQuality = yearData.teamQuality;
+            }
+
+            return results;
+        }
+
+        function generateNarrative(decisions, data) {
+            let narrative = `<strong>Year ${data.year} Summary:</strong><br><br>`;
+
+            if (data.revenue > 180) {
+                narrative += "📈 Strong revenue recovery! Your strategic decisions are paying off. ";
+            } else if (data.revenue < 150) {
+                narrative += "📉 Revenue continues to struggle. The franchise needs to reconsider its approach. ";
+            } else {
+                narrative += "⚖️ Modest improvement. The path to stability is challenging but achievable. ";
+            }
+
+            if (data.profitLoss > 0) {
+                narrative += `The team posted a <span style="color: #4ade80;">profit of $${data.profitLoss.toFixed(1)}M</span>. `;
+            } else {
+                narrative += `The team still operates at a <span style="color: #f87171;">loss of $${Math.abs(data.profitLoss).toFixed(1)}M</span>. `;
+            }
+
+            if (data.attendance > 85) {
+                narrative += "🎉 The arena is buzzing again! Fans are returning in strong numbers.";
+            } else if (data.attendance < 75) {
+                narrative += "😟 Empty seats remain a concern. Fan engagement is critical.";
+            }
+
+            narrative += "<br><br><strong>Key Developments:</strong><br>";
+
+            if (decisions.payroll === 'rebuild') {
+                if (data.year === 1) narrative += "• Deep rebuild begins. Veteran trades yield draft capital but fans are frustrated.<br>";
+                else if (data.year === 2) narrative += "• Young core develops. On-ice performance improving slowly.<br>";
+                else narrative += "• Rebuild paying dividends. Exciting young talent drawing renewed interest.<br>";
+            } else if (decisions.payroll === 'winnow') {
+                if (data.teamQuality > 55) narrative += "• Win-now strategy succeeds! Team makes playoffs, energizing the fanbase.<br>";
+                else narrative += "• Expensive gamble falls short. Pressure mounts on management.<br>";
+            }
+
+            if (decisions.tickets === 'discount' && data.year === 1) {
+                narrative += "• Aggressive discounting fills seats but concerns about long-term pricing power.<br>";
+            }
+
+            if (decisions.sponsor === 'betting') {
+                narrative += "• Sportsbook partnership controversial but generates significant revenue.<br>";
+            }
+
+            if (decisions.media === 'dtc' && data.year >= 2) {
+                narrative += "• DTC streaming platform gaining subscribers. Future potential looks strong.<br>";
+            }
+
+            return narrative;
+        }
+
+        function showYear(year) {
+            if (!window.simulationResults) return;
+
+            const yearData = window.simulationResults[year - 1];
+            const content = document.getElementById('year-content');
+
+            // Update active tab
+            document.querySelectorAll('.year-tab').forEach((tab, index) => {
+                tab.classList.toggle('active', index === year - 1);
+            });
+
+            // Revenue change
+            const revenueChange = yearData.revenue - 160;
+            const revenueColor = revenueChange > 0 ? '#4ade80' : '#f87171';
+
+            // Profit change
+            const profitColor = yearData.profitLoss > 0 ? '#4ade80' : '#f87171';
+
+            // Attendance change
+            const attendanceChange = yearData.attendance - 78;
+            const attendanceColor = attendanceChange > 0 ? '#4ade80' : '#f87171';
+
+            content.innerHTML = `
+                <div class="outcomes-grid">
+                    <div class="outcome-card">
+                        <div class="outcome-title">Total Revenue</div>
+                        <div class="outcome-value" style="color: ${revenueColor}">$${yearData.revenue.toFixed(1)}M</div>
+                        <div class="outcome-change" style="color: ${revenueColor}">
+                            ${revenueChange > 0 ? '+' : ''}${revenueChange.toFixed(1)}M from baseline
+                        </div>
+                    </div>
+
+                    <div class="outcome-card">
+                        <div class="outcome-title">Profit / (Loss)</div>
+                        <div class="outcome-value" style="color: ${profitColor}">
+                            ${yearData.profitLoss > 0 ? '$' + yearData.profitLoss.toFixed(1) + 'M' : '($' + Math.abs(yearData.profitLoss).toFixed(1) + 'M)'}
+                        </div>
+                        <div class="outcome-change" style="color: ${profitColor}">
+                            ${yearData.profitLoss > 0 ? 'Profitable!' : 'Still in red'}
+                        </div>
+                    </div>
+
+                    <div class="outcome-card">
+                        <div class="outcome-title">Arena Capacity</div>
+                        <div class="outcome-value" style="color: ${attendanceColor}">${yearData.attendance.toFixed(0)}%</div>
+                        <div class="outcome-change" style="color: ${attendanceColor}">
+                            ${attendanceChange > 0 ? '+' : ''}${attendanceChange.toFixed(0)}% from baseline
+                        </div>
+                    </div>
+
+                    <div class="outcome-card">
+                        <div class="outcome-title">Fan Satisfaction</div>
+                        <div class="outcome-value" style="color: #c5b783">${yearData.fanSatisfaction.toFixed(0)}/100</div>
+                        <div class="outcome-change">
+                            ${yearData.fanSatisfaction > 60 ? 'Strong support' : yearData.fanSatisfaction > 45 ? 'Cautious optimism' : 'Frustration remains'}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="narrative-box">
+                    <h3>What Happened in Year ${year}</h3>
+                    <p style="line-height: 1.8; color: #f5f4f0;">${yearData.narrative}</p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

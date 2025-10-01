@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Rights Deal Negotiation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .negotiation-setup {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .party-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .party-card.active {
+            border-color: #4ade80;
+            background: rgba(74, 222, 128, 0.05);
+        }
+
+        .party-card h2 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+        }
+
+        .objectives {
+            margin-top: 1rem;
+        }
+
+        .objective-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            border-left: 3px solid #c5b783;
+        }
+
+        .negotiation-panel {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .negotiation-panel h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .deal-terms {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .term-section {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+
+        .term-section h3 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .term-option {
+            margin-bottom: 1.5rem;
+        }
+
+        .term-option label {
+            display: block;
+            color: #f5f4f0;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .radio-option:hover {
+            background: rgba(197, 183, 131, 0.1);
+        }
+
+        .radio-option input[type="radio"] {
+            width: 18px;
+            height: 18px;
+        }
+
+        .slider-container {
+            margin-top: 0.75rem;
+        }
+
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        .slider-value-display {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 0.75rem;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: rgba(255, 255, 255, 0.1);
+            outline: none;
+        }
+
+        .impact-indicator {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+        }
+
+        .impact-item {
+            text-align: center;
+        }
+
+        .impact-label {
+            font-size: 0.8rem;
+            color: #999;
+            margin-bottom: 0.25rem;
+        }
+
+        .impact-value {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .negotiate-btn {
+            background: linear-gradient(135deg, #c5b783, #b8a56f);
+            color: #2c2c2c;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            margin: 2rem auto;
+        }
+
+        .negotiate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(197, 183, 131, 0.3);
+        }
+
+        .results-section {
+            display: none;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .results-section.visible {
+            display: block;
+        }
+
+        .results-section h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .outcome-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .outcome-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .outcome-title {
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .outcome-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+        }
+
+        .outcome-description {
+            font-size: 0.85rem;
+            color: #ccc;
+        }
+
+        .scorecard {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .scorecard-party {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .scorecard-party h3 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .score-display {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .score-breakdown {
+            margin-top: 1rem;
+        }
+
+        .score-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .narrative-box {
+            background: rgba(197, 183, 131, 0.1);
+            border-left: 4px solid #c5b783;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 6px;
+        }
+
+        .narrative-box h3 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-projection {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .timeline-projection h3 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .year-projection {
+            display: grid;
+            grid-template-columns: 100px 1fr 1fr;
+            gap: 1rem;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 6px;
+        }
+
+        .year-label {
+            font-weight: 600;
+            color: #c5b783;
+        }
+
+        @media (max-width: 968px) {
+            .negotiation-setup, .deal-terms, .scorecard {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤝 Media Rights Deal Negotiation</h1>
+        <p class="subtitle">Negotiate a 10-year media rights deal from both perspectives: League/Team vs Broadcaster</p>
+
+        <div class="negotiation-setup">
+            <div class="party-card active">
+                <h2>🏒 Canadian Hockey League (CHL)</h2>
+                <p style="color: #ccc; margin-bottom: 1rem;">Major junior hockey league seeking national broadcast partner for 10-year deal</p>
+                <div class="objectives">
+                    <div style="color: #c5b783; font-weight: 600; margin-bottom: 0.5rem;">Your Objectives:</div>
+                    <div class="objective-item">💰 Maximize guaranteed revenue</div>
+                    <div class="objective-item">📺 Ensure broad distribution and exposure</div>
+                    <div class="objective-item">🚀 Maintain flexibility for future growth</div>
+                    <div class="objective-item">⚖️ Balance short-term cash with long-term value</div>
+                </div>
+            </div>
+
+            <div class="party-card">
+                <h2>📡 National Sports Network</h2>
+                <p style="color: #ccc; margin-bottom: 1rem;">Regional sports broadcaster looking to expand national programming portfolio</p>
+                <div class="objectives">
+                    <div style="color: #c5b783; font-weight: 600; margin-bottom: 0.5rem;">Your Objectives:</div>
+                    <div class="objective-item">📊 Manage financial risk and maximize ROI</div>
+                    <div class="objective-item">🎯 Acquire exclusive content to drive subscribers</div>
+                    <div class="objective-item">💻 Explore digital/streaming opportunities</div>
+                    <div class="objective-item">🔒 Lock in favorable terms before market heats up</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="negotiation-panel">
+            <h2>📋 Structure Your Deal</h2>
+            <p style="color: #ccc; margin-bottom: 2rem;">As the CHL, choose your negotiating positions across these key deal terms:</p>
+
+            <div class="deal-terms">
+                <div class="term-section">
+                    <h3>1. Deal Structure</h3>
+                    <div class="term-option">
+                        <label>Annual Rights Fee</label>
+                        <div class="slider-container">
+                            <div class="slider-value-display" id="rights-fee-value">$35M / year</div>
+                            <div class="slider-labels">
+                                <span>$20M</span>
+                                <span>$50M</span>
+                            </div>
+                            <input type="range" id="rights-fee" min="20" max="50" value="35" step="1" oninput="updateValues()">
+                        </div>
+                        <div class="impact-indicator">
+                            <div class="impact-item">
+                                <div class="impact-label">Revenue Certainty</div>
+                                <div class="impact-value" id="certainty-impact">High</div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-label">Broadcaster Risk</div>
+                                <div class="impact-value" id="risk-impact">Medium</div>
+                            </div>
+                            <div class="impact-item">
+                                <div class="impact-label">Market Value</div>
+                                <div class="impact-value" id="market-impact">Fair</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="term-section">
+                    <h3>2. Revenue Share Model</h3>
+                    <div class="term-option">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="revenue-model" value="guaranteed" checked>
+                                <div>
+                                    <strong>100% Guaranteed</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Fixed annual payment, no revenue share. Safe but limited upside.</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="revenue-model" value="hybrid">
+                                <div>
+                                    <strong>70% Guaranteed + 30% Revenue Share</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Base payment plus share of ad/sub revenue above threshold.</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="revenue-model" value="share">
+                                <div>
+                                    <strong>40% Guaranteed + 60% Revenue Share</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Lower base, higher upside. Risk if ratings don't materialize.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="term-section">
+                    <h3>3. Exclusivity Terms</h3>
+                    <div class="term-option">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="exclusivity" value="full" checked>
+                                <div>
+                                    <strong>Full Exclusivity</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">All games, all platforms. Broadcaster pays premium (+30%).</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="exclusivity" value="linear">
+                                <div>
+                                    <strong>Linear TV Only</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">TV exclusive, league retains digital/streaming rights.</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="exclusivity" value="selective">
+                                <div>
+                                    <strong>Selective Package</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">60 games exclusive, 40 games to other partners. Maximize distribution.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="term-section">
+                    <h3>4. Digital & Streaming Rights</h3>
+                    <div class="term-option">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="digital" value="broadcaster">
+                                <div>
+                                    <strong>Included in Deal</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Broadcaster gets all digital rights (+$8M/year to rights fee).</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="digital" value="shared" checked>
+                                <div>
+                                    <strong>Shared Rights</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Broadcaster streams live, league controls highlights/clips.</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="digital" value="league">
+                                <div>
+                                    <strong>League Retains</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Build own DTC platform. Risky but massive long-term potential.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="term-section">
+                    <h3>5. Contract Length & Escalators</h3>
+                    <div class="term-option">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="length" value="flat">
+                                <div>
+                                    <strong>10 Years, Flat Fee</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Predictable but no inflation protection.</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="length" value="escalator" checked>
+                                <div>
+                                    <strong>10 Years, 4% Annual Escalator</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Fee grows with inflation/market. Standard for major deals.</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="length" value="short">
+                                <div>
+                                    <strong>5 Years, Option for 5 More</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Flexibility to renegotiate if market value surges. Broadcaster wary.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="term-section">
+                    <h3>6. Production & Marketing Commitments</h3>
+                    <div class="term-option">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="production" value="premium">
+                                <div>
+                                    <strong>Premium Production</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Top-tier broadcast quality, 12+ cameras, national promotion.</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="production" value="standard" checked>
+                                <div>
+                                    <strong>Standard Production</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Solid quality, 6-8 cameras, regional promotion focus.</span>
+                                </div>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="production" value="basic">
+                                <div>
+                                    <strong>Basic Production</strong><br>
+                                    <span style="font-size: 0.85rem; color: #999;">Cost-effective, 4-6 cameras. League supplements with own content.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="negotiate-btn" onclick="calculateDealOutcome()">🤝 Finalize Negotiation</button>
+        </div>
+
+        <div class="results-section" id="results">
+            <h2>📊 Deal Outcome & 10-Year Projection</h2>
+
+            <div class="narrative-box">
+                <h3>Deal Summary</h3>
+                <p id="deal-narrative" style="line-height: 1.8;"></p>
+            </div>
+
+            <div class="outcome-grid">
+                <div class="outcome-card">
+                    <div class="outcome-title">Total 10-Year Value</div>
+                    <div class="outcome-value" id="total-value">$0M</div>
+                    <div class="outcome-description">Guaranteed + projected revenue share</div>
+                </div>
+                <div class="outcome-card">
+                    <div class="outcome-title">Average Annual Value</div>
+                    <div class="outcome-value" id="annual-value">$0M</div>
+                    <div class="outcome-description">Year-over-year average</div>
+                </div>
+                <div class="outcome-card">
+                    <div class="outcome-title">Deal Risk Level</div>
+                    <div class="outcome-value" id="risk-level">Medium</div>
+                    <div class="outcome-description">League perspective</div>
+                </div>
+                <div class="outcome-card">
+                    <div class="outcome-title">Market Position</div>
+                    <div class="outcome-value" id="market-position">Fair</div>
+                    <div class="outcome-description">vs comparable properties</div>
+                </div>
+            </div>
+
+            <div class="scorecard">
+                <div class="scorecard-party">
+                    <h3>🏒 CHL Score</h3>
+                    <div class="score-display" style="color: #4ade80;" id="chl-score">0</div>
+                    <div class="score-breakdown" id="chl-breakdown"></div>
+                </div>
+
+                <div class="scorecard-party">
+                    <h3>📡 Network Score</h3>
+                    <div class="score-display" style="color: #fbbf24;" id="network-score">0</div>
+                    <div class="score-breakdown" id="network-breakdown"></div>
+                </div>
+            </div>
+
+            <div class="timeline-projection">
+                <h3>Year-by-Year Revenue Projection</h3>
+                <div id="timeline-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateValues() {
+            const rightsFee = document.getElementById('rights-fee').value;
+            document.getElementById('rights-fee-value').textContent = `$${rightsFee}M / year`;
+
+            // Update impact indicators
+            if (rightsFee >= 45) {
+                document.getElementById('certainty-impact').textContent = 'Very High';
+                document.getElementById('certainty-impact').style.color = '#4ade80';
+                document.getElementById('risk-impact').textContent = 'High';
+                document.getElementById('risk-impact').style.color = '#f87171';
+                document.getElementById('market-impact').textContent = 'Premium';
+                document.getElementById('market-impact').style.color = '#4ade80';
+            } else if (rightsFee >= 35) {
+                document.getElementById('certainty-impact').textContent = 'High';
+                document.getElementById('certainty-impact').style.color = '#4ade80';
+                document.getElementById('risk-impact').textContent = 'Medium';
+                document.getElementById('risk-impact').style.color = '#fbbf24';
+                document.getElementById('market-impact').textContent = 'Fair';
+                document.getElementById('market-impact').style.color = '#c5b783';
+            } else {
+                document.getElementById('certainty-impact').textContent = 'Medium';
+                document.getElementById('certainty-impact').style.color = '#fbbf24';
+                document.getElementById('risk-impact').textContent = 'Low';
+                document.getElementById('risk-impact').style.color = '#4ade80';
+                document.getElementById('market-impact').textContent = 'Below Market';
+                document.getElementById('market-impact').style.color = '#f87171';
+            }
+        }
+
+        function calculateDealOutcome() {
+            const rightsFee = parseInt(document.getElementById('rights-fee').value);
+            const revenueModel = document.querySelector('input[name="revenue-model"]:checked').value;
+            const exclusivity = document.querySelector('input[name="exclusivity"]:checked').value;
+            const digital = document.querySelector('input[name="digital"]:checked').value;
+            const length = document.querySelector('input[name="length"]:checked').value;
+            const production = document.querySelector('input[name="production"]:checked').value;
+
+            // Calculate base value
+            let baseValue = rightsFee;
+
+            // Exclusivity adjustments
+            if (exclusivity === 'full') baseValue += 8;
+            else if (exclusivity === 'selective') baseValue -= 5;
+
+            // Digital rights adjustments
+            if (digital === 'broadcaster') baseValue += 8;
+            else if (digital === 'league') baseValue -= 3;
+
+            // Production adjustments
+            if (production === 'premium') baseValue += 3;
+            else if (production === 'basic') baseValue -= 2;
+
+            // Calculate 10-year projection
+            let totalValue = 0;
+            let yearlyRevenue = [];
+
+            for (let year = 1; year <= 10; year++) {
+                let yearValue = baseValue;
+
+                // Apply escalators
+                if (length === 'escalator') {
+                    yearValue = baseValue * Math.pow(1.04, year - 1);
+                } else if (length === 'short' && year > 5) {
+                    yearValue = baseValue * 1.25; // Renegotiated higher
+                }
+
+                // Apply revenue share
+                if (revenueModel === 'hybrid') {
+                    yearValue = yearValue * 0.7 + (yearValue * 0.3 * (1 + year * 0.03));
+                } else if (revenueModel === 'share') {
+                    yearValue = yearValue * 0.4 + (yearValue * 0.6 * (1 + year * 0.05));
+                }
+
+                totalValue += yearValue;
+                yearlyRevenue.push(yearValue);
+            }
+
+            // Calculate scores
+            const chlScore = calculateCHLScore(rightsFee, revenueModel, exclusivity, digital, length, production);
+            const networkScore = calculateNetworkScore(rightsFee, revenueModel, exclusivity, digital, length, production);
+
+            // Display results
+            displayResults(totalValue, totalValue / 10, yearlyRevenue, chlScore, networkScore, {
+                rightsFee, revenueModel, exclusivity, digital, length, production
+            });
+
+            document.getElementById('results').classList.add('visible');
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function calculateCHLScore(fee, model, excl, digital, length, prod) {
+            let score = 0;
+            const breakdown = [];
+
+            // Rights fee (0-30 points)
+            const feeScore = Math.min(30, ((fee - 20) / 30) * 30);
+            score += feeScore;
+            breakdown.push({ label: 'Rights Fee Value', score: feeScore.toFixed(0) });
+
+            // Revenue model (0-20 points)
+            let modelScore = 0;
+            if (model === 'guaranteed') modelScore = 20;
+            else if (model === 'hybrid') modelScore = 16;
+            else modelScore = 10;
+            score += modelScore;
+            breakdown.push({ label: 'Revenue Certainty', score: modelScore.toFixed(0) });
+
+            // Exclusivity (0-15 points)
+            let exclScore = 0;
+            if (excl === 'selective') exclScore = 15;
+            else if (excl === 'linear') exclScore = 12;
+            else exclScore = 8;
+            score += exclScore;
+            breakdown.push({ label: 'Distribution Flexibility', score: exclScore.toFixed(0) });
+
+            // Digital rights (0-20 points)
+            let digitalScore = 0;
+            if (digital === 'league') digitalScore = 20;
+            else if (digital === 'shared') digitalScore = 14;
+            else digitalScore = 8;
+            score += digitalScore;
+            breakdown.push({ label: 'Digital/Future Rights', score: digitalScore.toFixed(0) });
+
+            // Length (0-10 points)
+            let lengthScore = 0;
+            if (length === 'short') lengthScore = 10;
+            else if (length === 'escalator') lengthScore = 8;
+            else lengthScore = 5;
+            score += lengthScore;
+            breakdown.push({ label: 'Contract Flexibility', score: lengthScore.toFixed(0) });
+
+            // Production (0-5 points)
+            let prodScore = 0;
+            if (prod === 'premium') prodScore = 5;
+            else if (prod === 'standard') prodScore = 4;
+            else prodScore = 2;
+            score += prodScore;
+            breakdown.push({ label: 'Brand Quality', score: prodScore.toFixed(0) });
+
+            return { score, breakdown };
+        }
+
+        function calculateNetworkScore(fee, model, excl, digital, length, prod) {
+            let score = 0;
+            const breakdown = [];
+
+            // Cost control (0-30 points)
+            const costScore = Math.min(30, ((50 - fee) / 30) * 30);
+            score += costScore;
+            breakdown.push({ label: 'Cost Management', score: costScore.toFixed(0) });
+
+            // Revenue model (0-20 points)
+            let modelScore = 0;
+            if (model === 'share') modelScore = 20;
+            else if (model === 'hybrid') modelScore = 15;
+            else modelScore = 10;
+            score += modelScore;
+            breakdown.push({ label: 'Revenue Upside', score: modelScore.toFixed(0) });
+
+            // Exclusivity (0-20 points)
+            let exclScore = 0;
+            if (excl === 'full') exclScore = 20;
+            else if (excl === 'linear') exclScore = 14;
+            else exclScore = 8;
+            score += exclScore;
+            breakdown.push({ label: 'Content Exclusivity', score: exclScore.toFixed(0) });
+
+            // Digital rights (0-15 points)
+            let digitalScore = 0;
+            if (digital === 'broadcaster') digitalScore = 15;
+            else if (digital === 'shared') digitalScore = 10;
+            else digitalScore = 5;
+            score += digitalScore;
+            breakdown.push({ label: 'Digital Control', score: digitalScore.toFixed(0) });
+
+            // Length (0-10 points)
+            let lengthScore = 0;
+            if (length === 'flat') lengthScore = 10;
+            else if (length === 'escalator') lengthScore = 6;
+            else lengthScore = 4;
+            score += lengthScore;
+            breakdown.push({ label: 'Cost Predictability', score: lengthScore.toFixed(0) });
+
+            // Production (0-5 points)
+            let prodScore = 0;
+            if (prod === 'basic') prodScore = 5;
+            else if (prod === 'standard') prodScore = 4;
+            else prodScore = 2;
+            score += prodScore;
+            breakdown.push({ label: 'Production Efficiency', score: prodScore.toFixed(0) });
+
+            return { score, breakdown };
+        }
+
+        function displayResults(total, annual, yearly, chlScore, networkScore, terms) {
+            document.getElementById('total-value').textContent = `$${total.toFixed(0)}M`;
+            document.getElementById('annual-value').textContent = `$${annual.toFixed(1)}M`;
+
+            // Risk level
+            let riskLevel = 'Medium';
+            if (terms.revenueModel === 'guaranteed' && terms.rightsFee >= 35) riskLevel = 'Low';
+            else if (terms.revenueModel === 'share' || terms.digital === 'league') riskLevel = 'High';
+            document.getElementById('risk-level').textContent = riskLevel;
+            document.getElementById('risk-level').style.color = riskLevel === 'Low' ? '#4ade80' : riskLevel === 'High' ? '#f87171' : '#fbbf24';
+
+            // Market position
+            let marketPos = 'Fair';
+            if (annual >= 42) marketPos = 'Premium';
+            else if (annual < 32) marketPos = 'Below Market';
+            document.getElementById('market-position').textContent = marketPos;
+            document.getElementById('market-position').style.color = marketPos === 'Premium' ? '#4ade80' : marketPos === 'Below Market' ? '#f87171' : '#c5b783';
+
+            // Scores
+            document.getElementById('chl-score').textContent = chlScore.score.toFixed(0);
+            document.getElementById('network-score').textContent = networkScore.score.toFixed(0);
+
+            // Breakdowns
+            let chlHTML = '';
+            chlScore.breakdown.forEach(item => {
+                chlHTML += `<div class="score-item"><span>${item.label}</span><span style="color: #4ade80;">${item.score}/30</span></div>`;
+            });
+            document.getElementById('chl-breakdown').innerHTML = chlHTML;
+
+            let networkHTML = '';
+            networkScore.breakdown.forEach(item => {
+                networkHTML += `<div class="score-item"><span>${item.label}</span><span style="color: #fbbf24;">${item.score}/30</span></div>`;
+            });
+            document.getElementById('network-breakdown').innerHTML = networkHTML;
+
+            // Narrative
+            const narrative = generateNarrative(terms, chlScore.score, networkScore.score, total);
+            document.getElementById('deal-narrative').innerHTML = narrative;
+
+            // Timeline
+            let timelineHTML = '';
+            yearly.forEach((value, index) => {
+                timelineHTML += `
+                    <div class="year-projection">
+                        <div class="year-label">Year ${index + 1}</div>
+                        <div style="color: #4ade80; font-weight: 600;">$${value.toFixed(1)}M</div>
+                        <div style="color: #999; font-size: 0.9rem;">
+                            ${index === 0 ? 'Launch year' : index === 4 && terms.length === 'short' ? 'Renegotiation opportunity' : `+${((value / yearly[0] - 1) * 100).toFixed(0)}% from Year 1`}
+                        </div>
+                    </div>
+                `;
+            });
+            document.getElementById('timeline-content').innerHTML = timelineHTML;
+        }
+
+        function generateNarrative(terms, chlScore, networkScore, total) {
+            let narrative = '<strong>Deal Finalized:</strong><br><br>';
+
+            narrative += `The CHL and National Sports Network agree to a <strong>${terms.length === 'flat' ? '10-year flat' : terms.length === 'escalator' ? '10-year escalating' : '5+5 year option'}</strong> media rights deal worth <strong>$${total.toFixed(0)}M total</strong>. `;
+
+            if (terms.exclusivity === 'full') {
+                narrative += 'The network gains full exclusivity across all platforms, positioning CHL as a cornerstone property. ';
+            } else if (terms.exclusivity === 'selective') {
+                narrative += 'The selective package allows the CHL to maintain multiple broadcast partners, maximizing distribution. ';
+            }
+
+            if (terms.digital === 'league') {
+                narrative += 'The league retains digital rights, betting on building its own DTC platform long-term. ';
+            } else if (terms.digital === 'broadcaster') {
+                narrative += 'The network gains all digital rights, enabling a comprehensive streaming strategy. ';
+            }
+
+            narrative += '<br><br><strong>Deal Assessment:</strong><br><br>';
+
+            if (chlScore > 75 && networkScore > 75) {
+                narrative += '✅ <strong>Win-Win Deal:</strong> Both parties achieve strong outcomes. Balanced structure supports long-term partnership.';
+            } else if (chlScore > networkScore + 15) {
+                narrative += '🏒 <strong>CHL Favorable:</strong> League negotiates strong terms. Network may seek concessions or performance clauses.';
+            } else if (networkScore > chlScore + 15) {
+                narrative += '📡 <strong>Network Favorable:</strong> Broadcaster secures advantageous deal. League may have left money on table.';
+            } else {
+                narrative += '⚖️ <strong>Balanced Deal:</strong> Fair terms for both sides with room for mutual growth over contract length.';
+            }
+
+            return narrative;
+        }
+
+        // Initialize
+        updateValues();
+    </script>
+</body>
+</html>

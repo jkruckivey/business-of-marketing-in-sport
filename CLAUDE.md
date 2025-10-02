@@ -249,3 +249,39 @@ business-of-marketing-in-sport/
     - Executive validation: Final presentations to industry guests with Q&A
     - All tools follow consistent design system (gold #c5b783, dark theme, responsive, export functionality)
     - Tools designed for standalone use and integration with weekly learning outcomes
+
+- 2025-10-02: Asynchronous Learning Conversion Complete
+  - **Full Async Transition**: Converted all live session references to asynchronous recorded video content
+    - Removed all "live session" language across course materials
+    - Updated "Executive Session" → "Executive Video Content"
+    - Changed "Post-Session" → "After Video Activities"
+    - Updated time investments to reflect async team coordination
+  - **Module Outlines Updated (All 5 Weeks)**:
+    - Module 1: Executive video content (90 min) with async discussion forums
+    - Module 2: Async team coordination for Anchor Project (no live requirement)
+    - Module 3: 2-3 hours async team work with peer feedback protocol
+    - Module 4: 3-4 hours async work with mid-week faculty review
+    - Module 5: Video presentations with peer review (no live presentations)
+  - **Module 1 Step Files Updated**:
+    - step-1-overview.html: Updated all executive session references to video
+    - step-3-executive.html: Changed live join buttons to video access
+    - index.html: Updated learning path and accessibility notes
+  - **Engagement Model Revised**:
+    - Discussion forum participation replaces live Q&A
+    - Async team collaboration tools emphasized
+    - Video engagement metrics replace live participation
+    - Optional office hours for faculty feedback (not required)
+  - **Assessment Language Updated**:
+    - "Live session participation" → "Discussion forum participation and video engagement"
+    - All timed activities now reflect async flexibility
+    - Peer feedback protocols remain but async
+  - **Files Modified**:
+    - 5 module outline files (modules/module-1 through module-5/outline.html)
+    - 3 Module 1 step files (index.html, step-1-overview.html, step-3-executive.html)
+    - Main index.html (development storyboard)
+    - course-outline.html (master outline)
+  - **Learning Flexibility Enhanced**:
+    - Students watch videos at own pace
+    - Team coordination via discussion boards and collaboration tools
+    - No synchronous attendance requirements
+    - Maintains executive industry insights through recorded content

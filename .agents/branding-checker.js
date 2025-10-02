@@ -1,4 +1,4 @@
-import { Agent } from '@anthropic-ai/claude-agent-sdk';
+import { query } from '@anthropic-ai/claude-agent-sdk';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -8,10 +8,7 @@ dotenv.config();
  * Ensures all projects follow Ivey design system standards
  */
 
-const brandingAgent = new Agent({
-  name: 'ivey-branding-checker',
-
-  instructions: `You are the Ivey Business School branding consistency expert.
+const brandingPrompt = `You are the Ivey Business School branding consistency expert.
 
 OFFICIAL IVEY DESIGN SYSTEM:
 
@@ -49,46 +46,60 @@ Your audit should:
 - Identify missing responsive breakpoints
 - Suggest fixes with exact CSS code
 
-Provide a branding compliance score (0-100%).`,
+Provide a branding compliance score (0-100%).`;
 
-  tools: ['read', 'grep', 'glob', 'write'],
+async function checkBranding(filePath) {
+  console.log(`🎨 Checking Ivey branding consistency for: ${filePath}\n`);
 
-  permissions: {
-    allow: [
-      'Read(*.css)',
-      'Read(*.html)',
-      'Grep(*)',
-      'Glob(*)',
-      'Write(*.md)'
-    ]
+  try {
+    const result = query({
+      prompt: `Audit ${filePath} for Ivey branding compliance.
+
+Check:
+1. Color usage against official palette
+2. Typography (fonts, sizes, weights)
+3. Spacing consistency
+4. Responsive design implementation
+5. Component styling standards
+
+Generate a report as branding-report.md with:
+- Compliance score
+- Violations by file
+- Specific CSS fixes
+- Recommendations`,
+
+      options: {
+        agents: {
+          'branding-checker': {
+            description: 'Ivey branding consistency checker',
+            tools: ['read', 'grep', 'glob', 'write'],
+            prompt: brandingPrompt,
+            model: 'sonnet'
+          }
+        },
+        systemPrompt: brandingPrompt,
+        permissionMode: 'bypassPermissions'
+      }
+    });
+
+    for await (const message of result) {
+      if (message.type === 'assistant' && message.message?.content) {
+        const content = message.message.content;
+        for (const block of content) {
+          if (block.type === 'text') {
+            console.log(block.text);
+          }
+        }
+      }
+    }
+
+    console.log('\n✅ Branding check complete!');
+  } catch (error) {
+    console.error('❌ Error during branding check:', error.message);
   }
-});
-
-async function checkBranding(projectPath) {
-  console.log(`🎨 Checking Ivey branding consistency for: ${projectPath}\n`);
-
-  const result = await brandingAgent.run({
-    userMessage: `Audit all CSS and HTML files in ${projectPath} for Ivey branding compliance.
-
-    Check:
-    1. Color usage against official palette
-    2. Typography (fonts, sizes, weights)
-    3. Spacing consistency
-    4. Responsive design implementation
-    5. Component styling standards
-
-    Save the report as branding-report.md with:
-    - Compliance score
-    - Violations by file
-    - Specific CSS fixes
-    - Recommendations`
-  });
-
-  console.log('✅ Branding check complete!');
-  console.log(result);
 }
 
-export { brandingAgent, checkBranding };
+export { checkBranding };
 
 if (process.argv[2]) {
   checkBranding(process.argv[2]);

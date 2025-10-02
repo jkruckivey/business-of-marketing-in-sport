@@ -86,7 +86,8 @@ Generate a report as canvas-validation-report.md with:
             model: 'sonnet'
           }
         },
-        systemPrompt: canvasValidatorPrompt
+        systemPrompt: canvasValidatorPrompt,
+        permissionMode: 'bypassPermissions'
       }
     });
 

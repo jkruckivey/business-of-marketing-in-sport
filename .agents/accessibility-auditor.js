@@ -78,7 +78,8 @@ Save the report as accessibility-report.md in the current directory.`,
             model: 'sonnet'
           }
         },
-        systemPrompt: accessibilityAgentPrompt
+        systemPrompt: accessibilityAgentPrompt,
+        permissionMode: 'bypassPermissions'
       }
     });
 

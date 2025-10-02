@@ -86,7 +86,8 @@ Generate a test report as widget-test-report.md with:
             model: 'sonnet'
           }
         },
-        systemPrompt: widgetTesterPrompt
+        systemPrompt: widgetTesterPrompt,
+        permissionMode: 'bypassPermissions'
       }
     });
 

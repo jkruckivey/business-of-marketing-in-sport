@@ -81,24 +81,28 @@ async function reviewContent(filePath) {
 
   try {
     const result = query({
-      prompt: `Review the educational content in ${filePath} for the Business of Marketing in Sport course.
+      prompt: `Review the educational content in the file at: ${filePath}
+
+This is for the Business of Marketing in Sport course.
 
 Evaluate:
 1. Learning outcomes alignment with module objectives
-2. Sports marketing industry accuracy
+2. Sports marketing industry accuracy (2024-2025)
 3. UDL principles implementation
 4. Quality Matters standards compliance
 5. MBA-level rigor and strategic thinking
 6. Executive session preparation value
 7. Anchor Project integration
 
-Generate a report as content-review-report.md with:
-- Overall content quality score
+Generate a comprehensive report and save it as content-review-report.md in the .agents folder with:
+- Overall content quality score (0-100%)
 - Learning outcomes assessment
 - Sports marketing accuracy check
 - Pedagogical effectiveness analysis
 - Specific improvement recommendations
-- Suggested revisions with examples`,
+- Suggested revisions with examples
+
+IMPORTANT: You have full access to read files. Proceed with the review immediately.`,
 
       options: {
         agents: {
@@ -109,7 +113,8 @@ Generate a report as content-review-report.md with:
             model: 'sonnet'
           }
         },
-        systemPrompt: sportsContentPrompt
+        systemPrompt: sportsContentPrompt,
+        permissionMode: 'bypassPermissions'
       }
     });
 

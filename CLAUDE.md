@@ -77,7 +77,43 @@ business-of-marketing-in-sport/
 - [ ] Implement enhanced student progress tracking system
 - [ ] Add multilingual support options
 
-## Course Structure Implemented
+## Course Structure (5-Week SME Outline)
+
+### Week 1: The Business of Sport - Where the Money Flows
+- **Core Case**: NHL Vancouver Canucks: Competing on Revenue Sharing (W14149)
+- **Guest Executive**: Bell Media / TSN senior leader
+- **Focus**: Revenue streams (media rights, sponsorship, ticketing, merchandising, betting, licensing)
+- **Interactive Widgets**: Revenue Empire Builder, Business Model Comparator
+
+### Week 2: Media, Content & Fan Engagement (The Core Product)
+- **Core Case**: Rogers Communications: Sportsnet and NHL Rights Deal (W16179)
+- **Guest Executive**: TSN or DAZN Canada leader
+- **Focus**: Media rights valuation, streaming vs traditional broadcasting
+- **Interactive Widgets**: Streaming Wars Strategy, Media Rights Calculator
+
+### Week 3: Sponsorship & Betting - The Growth Engines
+- **Core Case**: FanDuel: Betting on Sports (HBS 520038)
+- **Guest Executives**: Andrew Sneyd (FanDuel) + brand sponsor leader
+- **Focus**: Sponsorship ROI, sports betting as growth driver
+- **Interactive Widgets**: ROI Calculator, Betting Market Simulator
+
+### Week 4: Athletes, Brands & Emerging Sports
+- **Core Case**: Serena Williams: Building a Brand (HBS 517050)
+- **Guest Executives**: Sports agent + Don Rea (PGA) + Niki da Silva (Golf Canada) + Matt Rubinoff
+- **Focus**: Athlete branding, women's sports, emerging markets (Pickleball, Padel, esports)
+- **Interactive Widgets**: Athlete Brand Value Calculator, Emerging Sport Investment Tool
+
+### Week 5: Legacy, Culture & The Future of Monetization
+- **Core Case**: Hockey Hall of Fame: Managing Tradition and Growth (custom case)
+- **Guest Executives**: Jamie Dinsmore (HHOF) + Keith Pelley (MLSE)
+- **Focus**: Heritage properties, future trends, balancing tradition with innovation
+- **Interactive Widgets**: Legacy vs Innovation Matrix, Future Trends Predictor
+
+### Technical Framework
+- **Semantic HTML5**: Proper heading structure, ARIA labels, landmark regions
+- **CSS Custom Properties**: Consistent design system with accessibility considerations
+- **JavaScript Enhancements**: Screen reader announcements, keyboard navigation, user preferences
+- **Progress Tracking**: Local storage for user preferences and learning analytics
 
 ### Main Portal Features
 - **Universal Design for Learning (UDL) Compliance**: Multiple means of representation, engagement, and action/expression
@@ -85,19 +121,6 @@ business-of-marketing-in-sport/
 - **WCAG AA Accessibility**: Color contrast, keyboard navigation, screen reader support, focus management
 - **Responsive Design**: Mobile-friendly layout with flexible grid systems
 - **Interactive Elements**: Engagement preference selection, progress tracking, accessibility toolbar
-
-### Module 1 Implementation
-- **Learning Outcomes**: 4 measurable outcomes aligned with course objectives
-- **Multiple Learning Paths**: Visual, audio, interactive, and text-based options
-- **Executive Integration**: Structured preparation for Bell Media/TSN executive session
-- **Accessibility Features**: Real-time captions, transcripts, multiple format options
-- **Assessment Alignment**: Pre-reading, case studies, reflection activities
-
-### Technical Framework
-- **Semantic HTML5**: Proper heading structure, ARIA labels, landmark regions
-- **CSS Custom Properties**: Consistent design system with accessibility considerations
-- **JavaScript Enhancements**: Screen reader announcements, keyboard navigation, user preferences
-- **Progress Tracking**: Local storage for user preferences and learning analytics
 - **Performance Optimization**: Efficient loading, reduced motion options, print-friendly styles
 
 ## Notes for Future Development
@@ -105,7 +128,11 @@ business-of-marketing-in-sport/
 - All 5 modules mapped to executive sessions and industry themes
 - Focus on sports marketing industry relevance successfully integrated
 - Accessibility and inclusivity implemented at foundational level
-- QM and UDL principles embedded throughout structure
+- **QM COMPLIANCE CRITICAL**: All learning outcomes now use single, measurable action verbs
+  - Essential for assessment design and accreditation review
+  - Enables clear rubric development and student evaluation
+  - Team members must maintain this standard when developing additional content
+- UDL principles embedded throughout structure with multiple means of engagement/expression
 - Regular alignment maintained between outcomes, activities, and assessments
 
 ## Key Educational Principles to Implement
@@ -124,4 +151,137 @@ business-of-marketing-in-sport/
   - Implemented Module 1 with executive integration and accessibility features
   - Developed complete technical framework (HTML5, CSS, JavaScript)
   - Created exhaustive README documentation for new team member
+  - Integrated custom stylesheet with professional gold/beige design system
+  - **CRITICAL QM FIX**: Revised all learning outcomes to use single, measurable action verbs
+    - Course Learning Outcomes: Analyze, Evaluate, Assess, Compare, Design, Develop
+    - Module Learning Outcomes: 20 specific, measurable tasks across all modules
+    - Removed compound verbs ("understand and evaluate") and unmeasurable language ("gain insights")
+    - Maintained proper CLO-to-MLO alignment throughout all modules
   - Established development roadmap for remaining modules
+
+- 2025-09-29: SME Alignment and Course Integration
+  - **SME Structure Integration**: Aligned course with 5-week SME materials structure
+    - Updated from 6-module to 5-week framework per SME requirements
+    - Integrated specific case studies: NHL Canucks, Rogers/TSN, FanDuel, Serena Williams, Hockey Hall of Fame
+    - Added executive leaders for each week: Bell Media/TSN, DAZN, FanDuel/sponsors, sports agents/PGA, HHOF/MLSE
+  - **Learning Outcomes Realignment**: Updated CLO structure to match 5-week format
+    - CLO 1: Analyze Revenue Ecosystems (Week 1)
+    - CLO 2: Evaluate Media & Fan Monetization (Week 2)
+    - CLO 3: Design Sponsorship & Betting Strategies (Week 3)
+    - CLO 4: Build Athlete & Emerging Sport Brands (Week 4)
+    - CLO 5: Balance Legacy & Innovation (Week 5)
+  - **Widget Development and Integration**: Created 5 interactive widgets for Week 1
+    - Fan Engagement Lab, Streaming Wars Strategy, ROI Calculator, NHL Commissioner Scenarios, Revenue Empire Builder
+    - Updated learning objectives for all widgets to align with new CLO structure
+    - Fixed contrast issues across all widget interfaces (changed #64748b to #374151)
+  - **Accessibility Enhancements**: Implemented comprehensive high contrast mode
+    - Added toggle button with localStorage persistence
+    - Created black/white high contrast CSS theme
+    - Fixed CLO heading visibility issues with pure white text (#ffffff !important)
+  - **Course Index Integration**: Linked existing components into main development storyboard
+    - Connected Module 1 index to main storyboard with prominent links
+    - Created student-facing course hub (course-index.html) for demo purposes
+    - Updated Module 1 title and content to align with "Week 1: The Business of Sport - Where the Money Flows"
+  - **Module 1 Complete Alignment**: Updated Module 1 index for SME review format
+    - Changed title from "Live Content & Media Rights" to "Week 1: The Business of Sport"
+    - Updated learning outcomes to focus on revenue streams mapping (CLO 1 alignment)
+    - Updated executive session to focus on Bell Media/TSN revenue strategies
+    - Added embedded interactive widgets with direct launch functionality
+    - Simplified language for SME review context rather than student-facing guidance
+  - **Interactive Widget Embedding**: Integrated all 5 Module 1 widgets directly into module outline
+    - Created interactive components section with visual activity grid
+    - Added JavaScript widget launcher with popup windows (1200x900px)
+    - Updated resources section with working launch buttons for immediate SME review
+    - Maintained technical demonstration while removing student-facing instructional language
+
+- 2025-10-01: Simplified Outline Format Development
+  - **Simplified Module Outlines Created**: Developed clean, scannable outline format for all 5 modules
+    - Format structure: Outcome → Supporting Content → Aligned Assessment
+    - Removed excessive formatting and visual elements for better readability
+    - Created individual outline.html files for each module (modules/module-1/outline.html through module-5)
+    - Each module shows clear CLO alignment with dedicated alignment boxes
+  - **Comprehensive Course Outline**: Created master course-outline.html
+    - Overview of all 5 CLOs with descriptions
+    - Week-by-week module summaries with executive info, cases, and key assessments
+    - Direct links to detailed module outlines
+    - Assessment structure breakdown (40% weekly engagement, 60% final project)
+    - UDL and QM compliance documentation
+  - **Consistent Structure Across All Modules**:
+    - Meta information (executives, cases, industry focus) at top
+    - Learning outcomes with CLO alignment, supporting content, and assessments for each MLO
+    - Weekly assessment summary (formative, active learning, summative)
+    - Executive session structure breakdown (90 min format)
+    - UDL implementation details (representation, engagement, expression)
+  - **Format Benefits**:
+    - Easy to scan and update
+    - Clear alignment visibility between outcomes and activities
+    - Minimal styling allows focus on content structure
+    - Accessible navigation between course overview and module details
+
+- 2025-10-01: Anchor Project Threading Complete
+  - **Anchor Project Structure**: Created comprehensive 4-milestone progression across Weeks 2-5
+    - Week 2: Team Formation & Property Selection
+    - Week 3: Revenue Model & Sponsorship Strategy
+    - Week 4: Brand Strategy & Market Positioning
+    - Week 5: Final Presentation & Executive Pitch
+  - **Module Outline Updates**: Added Anchor Project sections to all module outlines (modules/module-2 through module-5)
+    - Each section includes milestone description, time investment, activities, deliverables, resources, and embedded tool links
+    - Week 3 includes peer feedback protocol
+    - Week 4 includes faculty review process
+    - Week 5 includes complete grading rubric (40% of final grade) and presentation guidelines
+  - **Week 2 Tools Created**:
+    - Property Selection Tool (modules/module-2/widgets/property-selector.html): 19 curated properties across Legacy/Emerging/Events with filtering and export
+    - Team Charter Builder (modules/module-2/widgets/team-charter.html): 5-section charter with roster management, communication norms, working guidelines, conflict resolution
+  - **Week 3 Tools Created**:
+    - Revenue Model Canvas Builder (modules/module-3/widgets/revenue-canvas-builder.html): 6-category revenue breakdown with percentage validation, sponsorship opportunities, export
+    - Sponsorship ROI Calculator: Existing tool already suitable for Anchor Project context
+  - **Week 4 Tools Created**:
+    - Brand Positioning Builder (modules/module-4/widgets/positioning-builder.html): Interactive brand attributes selection (25 options), differentiation framework, auto-generating positioning statement
+    - Competitive Analysis Mapper (modules/module-4/widgets/competitive-mapper.html): Competitor tracking, 8-dimension comparison matrix, SWOT analysis, strategic insights export
+    - Athlete Brand Calculator: Existing tool already created
+  - **Week 5 Tools Created**:
+    - Presentation Timer & Rehearsal Tool (modules/module-5/widgets/presentation-timer.html): Live countdown timer with warning states, slide tracking, rehearsal notes, localStorage persistence for stats
+    - Executive Pitch Checklist (modules/module-5/widgets/pitch-checklist.html): 28-item checklist across 4 sections (Content, Design, Delivery, Technical) with progress tracking and localStorage persistence
+    - Peer Evaluation Form (modules/module-5/widgets/peer-evaluation.html): 5-criteria ratings per teammate, team dynamics feedback, confidential export format
+  - **Implementation Approach**:
+    - Progressive disclosure: Each week builds one component without overwhelming students upfront
+    - Faculty support: Mid-week feedback in Week 4, peer review in Week 3
+    - Executive validation: Final presentations to industry guests with Q&A
+    - All tools follow consistent design system (gold #c5b783, dark theme, responsive, export functionality)
+    - Tools designed for standalone use and integration with weekly learning outcomes
+
+- 2025-10-02: Asynchronous Learning Conversion Complete
+  - **Full Async Transition**: Converted all live session references to asynchronous recorded video content
+    - Removed all "live session" language across course materials
+    - Updated "Executive Session" → "Executive Video Content"
+    - Changed "Post-Session" → "After Video Activities"
+    - Updated time investments to reflect async team coordination
+  - **Module Outlines Updated (All 5 Weeks)**:
+    - Module 1: Executive video content (90 min) with async discussion forums
+    - Module 2: Async team coordination for Anchor Project (no live requirement)
+    - Module 3: 2-3 hours async team work with peer feedback protocol
+    - Module 4: 3-4 hours async work with mid-week faculty review
+    - Module 5: Video presentations with peer review (no live presentations)
+  - **Module 1 Step Files Updated**:
+    - step-1-overview.html: Updated all executive session references to video
+    - step-3-executive.html: Changed live join buttons to video access
+    - index.html: Updated learning path and accessibility notes
+  - **Engagement Model Revised**:
+    - Discussion forum participation replaces live Q&A
+    - Async team collaboration tools emphasized
+    - Video engagement metrics replace live participation
+    - Optional office hours for faculty feedback (not required)
+  - **Assessment Language Updated**:
+    - "Live session participation" → "Discussion forum participation and video engagement"
+    - All timed activities now reflect async flexibility
+    - Peer feedback protocols remain but async
+  - **Files Modified**:
+    - 5 module outline files (modules/module-1 through module-5/outline.html)
+    - 3 Module 1 step files (index.html, step-1-overview.html, step-3-executive.html)
+    - Main index.html (development storyboard)
+    - course-outline.html (master outline)
+  - **Learning Flexibility Enhanced**:
+    - Students watch videos at own pace
+    - Team coordination via discussion boards and collaboration tools
+    - No synchronous attendance requirements
+    - Maintains executive industry insights through recorded content

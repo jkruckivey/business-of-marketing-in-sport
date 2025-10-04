@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Reading Checklist</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 1rem;
+            font-family: 'Benton Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafaf8;
+        }
+        
+        .checklist-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background: #2c2c2c;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .progress-summary {
+            background: #f5f4f0;
+            border: 1px solid #c5b783;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .progress-circle {
+            width: 60px;
+            height: 60px;
+            background: #c5b783;
+            color: #2c2c2c;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .reading-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            background: white;
+            border: 2px solid #e2e8f0;
+            transition: border-color 0.2s ease;
+        }
+        
+        .reading-item:hover {
+            border-color: #c5b783;
+        }
+        
+        .reading-item.completed {
+            border-color: #c5b783;
+            background: #fafaf8;
+        }
+        
+        .reading-checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #c5b783;
+            background: white;
+            cursor: pointer;
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+        
+        .reading-checkbox:hover {
+            transform: scale(1.1);
+        }
+        
+        .reading-checkbox.checked {
+            background: #c5b783;
+        }
+        
+        .reading-checkbox.checked::after {
+            content: "✓";
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .reading-content h4 {
+            margin: 0 0 0.5rem 0;
+            color: #2c2c2c;
+            font-weight: 600;
+        }
+        
+        .reading-meta {
+            color: #c5b783;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin: 0.5rem 0;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .reading-description {
+            color: #666;
+            margin: 0.75rem 0;
+            line-height: 1.6;
+        }
+        
+        .accessibility-info {
+            background: #f0f9ff;
+            border: 1px solid #0284c7;
+            padding: 0.75rem;
+            margin-top: 0.75rem;
+            font-size: 0.875rem;
+            color: #0284c7;
+        }
+        
+        .completion-message {
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 2rem;
+            font-weight: 600;
+            display: none;
+        }
+        
+        .completion-message.show {
+            display: block;
+            animation: slideIn 0.5s ease;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* LMS embedding optimizations */
+        @media (max-width: 600px) {
+            body {
+                padding: 0.5rem;
+            }
+            
+            .reading-item {
+                padding: 1rem;
+            }
+            
+            .reading-meta {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="checklist-container">
+        <div class="header">
+            <h2>Essential Pre-Reading</h2>
+            <p>Complete these readings before the executive session</p>
+        </div>
+        
+        <div class="progress-summary">
+            <div class="progress-circle" id="progress-circle">0%</div>
+            <div>
+                <strong id="progress-text">0 of 3 readings completed</strong>
+                <div style="font-size: 0.875rem; color: #666; margin-top: 0.25rem;">
+                    Track your progress through the essential materials
+                </div>
+            </div>
+        </div>
+        
+        <div class="reading-item" data-reading="1">
+            <div class="reading-checkbox" role="checkbox" aria-checked="false" tabindex="0" aria-label="Mark Global Sports Media Rights Report as completed"></div>
+            <div class="reading-content">
+                <h4>Global Sports Media Rights Report 2024</h4>
+                <div class="reading-meta">
+                    <span>📄 Pages 1-15, 28-35</span>
+                    <span>⏱️ 20 minutes</span>
+                </div>
+                <div class="reading-description">
+                    Focus on the Canadian market analysis and digital platform trends. Pay special attention to the section on "Streaming vs. Traditional Broadcast Revenue Models."
+                </div>
+                <div class="accessibility-info">
+                    <strong>Available formats:</strong> PDF with screen reader support, audio version (25 min), large print version
+                </div>
+            </div>
+        </div>
+        
+        <div class="reading-item" data-reading="2">
+            <div class="reading-checkbox" role="checkbox" aria-checked="false" tabindex="0" aria-label="Mark Canadian Broadcasting Landscape Analysis as completed"></div>
+            <div class="reading-content">
+                <h4>Canadian Broadcasting Landscape Analysis</h4>
+                <div class="reading-meta">
+                    <span>📄 Full article</span>
+                    <span>⏱️ 15 minutes</span>
+                </div>
+                <div class="reading-description">
+                    Understanding the competitive dynamics between Rogers Sportsnet, TSN/RDS, and CBC Sports. This gives crucial context for our executive discussion.
+                </div>
+                <div class="accessibility-info">
+                    <strong>Available formats:</strong> Web article with adjustable text size, podcast summary (18 min)
+                </div>
+            </div>
+        </div>
+        
+        <div class="reading-item" data-reading="3">
+            <div class="reading-checkbox" role="checkbox" aria-checked="false" tabindex="0" aria-label="Mark TSN NHL Rights Strategy case study as completed"></div>
+            <div class="reading-content">
+                <h4>Case Study: TSN's NHL Rights Strategy</h4>
+                <div class="reading-meta">
+                    <span>📄 Case study</span>
+                    <span>⏱️ 12 minutes</span>
+                </div>
+                <div class="reading-description">
+                    How TSN maintained relevance after losing national NHL rights to Rogers. A masterclass in strategic adaptation and content diversification.
+                </div>
+                <div class="accessibility-info">
+                    <strong>Available formats:</strong> Interactive case study, text version, video summary (15 min)
+                </div>
+            </div>
+        </div>
+        
+        <div class="completion-message" id="completion-message">
+            🎉 Excellent work! You've completed all essential readings and are ready for the executive session.
+        </div>
+    </div>
+    
+    <script>
+        let completedReadings = 0;
+        const totalReadings = 3;
+        
+        // Load saved progress
+        function loadProgress() {
+            const saved = localStorage.getItem('module1-readings-progress');
+            if (saved) {
+                const progress = JSON.parse(saved);
+                completedReadings = progress.completed || 0;
+                
+                // Restore checkboxes
+                document.querySelectorAll('.reading-checkbox').forEach((checkbox, index) => {
+                    if (progress.items && progress.items[index]) {
+                        checkbox.classList.add('checked');
+                        checkbox.setAttribute('aria-checked', 'true');
+                        checkbox.closest('.reading-item').classList.add('completed');
+                    }
+                });
+                
+                updateProgress();
+            }
+        }
+        
+        // Save progress
+        function saveProgress() {
+            const items = [];
+            document.querySelectorAll('.reading-checkbox').forEach(checkbox => {
+                items.push(checkbox.classList.contains('checked'));
+            });
+            
+            localStorage.setItem('module1-readings-progress', JSON.stringify({
+                completed: completedReadings,
+                items: items,
+                timestamp: new Date().toISOString()
+            }));
+            
+            // Post message to parent frame (LMS)
+            if (window.parent !== window) {
+                window.parent.postMessage({
+                    type: 'reading-progress',
+                    completed: completedReadings,
+                    total: totalReadings,
+                    percentage: Math.round((completedReadings / totalReadings) * 100)
+                }, '*');
+            }
+        }
+        
+        // Update progress display
+        function updateProgress() {
+            const percentage = Math.round((completedReadings / totalReadings) * 100);
+            document.getElementById('progress-circle').textContent = percentage + '%';
+            document.getElementById('progress-text').textContent = `${completedReadings} of ${totalReadings} readings completed`;
+            
+            if (completedReadings === totalReadings) {
+                document.getElementById('completion-message').classList.add('show');
+            } else {
+                document.getElementById('completion-message').classList.remove('show');
+            }
+        }
+        
+        // Checkbox functionality
+        document.querySelectorAll('.reading-checkbox').forEach((checkbox, index) => {
+            checkbox.addEventListener('click', function() {
+                const isChecked = this.classList.contains('checked');
+                
+                if (!isChecked) {
+                    this.classList.add('checked');
+                    this.setAttribute('aria-checked', 'true');
+                    this.closest('.reading-item').classList.add('completed');
+                    completedReadings++;
+                } else {
+                    this.classList.remove('checked');
+                    this.setAttribute('aria-checked', 'false');
+                    this.closest('.reading-item').classList.remove('completed');
+                    completedReadings--;
+                }
+                
+                updateProgress();
+                saveProgress();
+            });
+            
+            // Keyboard support
+            checkbox.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+        
+        // Initialize
+        loadProgress();
+        
+        // Announce to screen readers when embedded
+        if (window.parent !== window) {
+            console.log('Reading Checklist widget loaded in LMS');
+        }
+    </script>
+</body>
+</html>

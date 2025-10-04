@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Positioning Builder</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .section-description {
+            color: #ccc;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            color: #c5b783;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 6px;
+            color: #f5f4f0;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus,
+        .input-group textarea:focus {
+            outline: none;
+            border-color: #c5b783;
+        }
+
+        .input-group textarea {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .help-text {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        .persona-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .attribute-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .attribute-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            transition: all 0.3s;
+        }
+
+        .attribute-card:hover {
+            border-color: #c5b783;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .attribute-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .attribute-icon {
+            font-size: 1.5rem;
+        }
+
+        .attribute-label {
+            color: #c5b783;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .positioning-statement-box {
+            background: linear-gradient(135deg, rgba(197, 183, 131, 0.2), rgba(197, 183, 131, 0.1));
+            border: 3px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .statement-preview {
+            color: #f5f4f0;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            font-weight: 500;
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .statement-label {
+            color: #c5b783;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .template-help {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid #c5b783;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            color: #ccc;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .brand-attributes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .attribute-chip {
+            padding: 0.5rem 1rem;
+            background: rgba(197, 183, 131, 0.2);
+            border: 1px solid #c5b783;
+            border-radius: 20px;
+            color: #c5b783;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .attribute-chip:hover {
+            background: rgba(197, 183, 131, 0.3);
+        }
+
+        .attribute-chip.selected {
+            background: #c5b783;
+            color: #2c2c2c;
+            font-weight: 600;
+        }
+
+        .export-btn {
+            background: linear-gradient(135deg, #c5b783, #b8a56f);
+            color: #2c2c2c;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            margin: 2rem auto 0;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(197, 183, 131, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .persona-grid,
+            .attribute-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Brand Positioning Builder</h1>
+        <p class="subtitle">Craft a compelling brand positioning statement for your sports property</p>
+
+        <div class="section">
+            <h2>1. Property Identity</h2>
+            <p class="section-description">Define the basic identity of your sports property.</p>
+
+            <div class="input-group">
+                <label for="property-name">Property Name</label>
+                <input type="text" id="property-name" placeholder="e.g., NHL Ottawa Senators, Canadian Pickleball League">
+            </div>
+
+            <div class="input-group">
+                <label for="property-category">Property Category</label>
+                <select id="property-category">
+                    <option value="">Select category...</option>
+                    <option value="Professional Team">Professional Team</option>
+                    <option value="League/Organization">League/Organization</option>
+                    <option value="Event">Major Event</option>
+                    <option value="Facility/Venue">Facility/Venue</option>
+                    <option value="Emerging Sport">Emerging Sport</option>
+                    <option value="Athlete/Brand">Athlete/Brand</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Target Audience Persona</h2>
+            <p class="section-description">Define your primary target audience - who are you positioning this property for?</p>
+
+            <div class="persona-grid">
+                <div class="input-group">
+                    <label for="audience-demo">Demographics</label>
+                    <input type="text" id="audience-demo" placeholder="e.g., 25-45, urban professionals">
+                    <span class="help-text">Age range, location, occupation</span>
+                </div>
+
+                <div class="input-group">
+                    <label for="audience-psycho">Psychographics</label>
+                    <input type="text" id="audience-psycho" placeholder="e.g., Active lifestyle, community-minded">
+                    <span class="help-text">Values, interests, lifestyle</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="audience-needs">Key Needs & Pain Points</label>
+                <textarea id="audience-needs" placeholder="What does this audience seek in sports entertainment? What problems can your property solve?"></textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Brand Attributes</h2>
+            <p class="section-description">Select 3-5 core attributes that define your brand's personality. Click to select/deselect.</p>
+
+            <div class="brand-attributes" id="brand-attributes">
+                <!-- Generated dynamically -->
+            </div>
+
+            <div class="input-group" style="margin-top: 1.5rem;">
+                <label for="custom-attributes">Additional Custom Attributes</label>
+                <input type="text" id="custom-attributes" placeholder="Add your own attributes, separated by commas">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Differentiation & Competitive Advantage</h2>
+            <p class="section-description">What makes your property unique? How do you stand out from competitors?</p>
+
+            <div class="attribute-grid">
+                <div class="attribute-card">
+                    <div class="attribute-header">
+                        <div class="attribute-icon">🏆</div>
+                        <div class="attribute-label">Unique Strength</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="unique-strength" placeholder="e.g., Heritage, innovation, accessibility">
+                    </div>
+                </div>
+
+                <div class="attribute-card">
+                    <div class="attribute-header">
+                        <div class="attribute-icon">🎯</div>
+                        <div class="attribute-label">Key Benefit</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="key-benefit" placeholder="e.g., Family-friendly, competitive, social">
+                    </div>
+                </div>
+
+                <div class="attribute-card">
+                    <div class="attribute-header">
+                        <div class="attribute-icon">✨</div>
+                        <div class="attribute-label">Emotional Appeal</div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="emotional-appeal" placeholder="e.g., Pride, excitement, belonging">
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="competitive-difference">How You Differ from Competitors</label>
+                <textarea id="competitive-difference" placeholder="Explain what sets you apart from similar properties in the market..."></textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Positioning Statement</h2>
+            <p class="section-description">Build your positioning statement using the classic framework below.</p>
+
+            <div class="template-help">
+                <strong>Positioning Statement Template:</strong><br><br>
+                For <em>[target audience]</em>, <em>[property name]</em> is the <em>[category]</em> that <em>[unique benefit/differentiation]</em> because <em>[reason to believe]</em>.
+            </div>
+
+            <div class="input-group">
+                <label for="reason-to-believe">Reason to Believe (Evidence)</label>
+                <textarea id="reason-to-believe" placeholder="What proof points support your positioning? (e.g., track record, facilities, fan base, innovation)"></textarea>
+            </div>
+
+            <div class="positioning-statement-box">
+                <div class="statement-label">Your Positioning Statement</div>
+                <div class="statement-preview" id="statement-preview">
+                    Complete the form above to generate your positioning statement
+                </div>
+            </div>
+
+            <button class="export-btn" style="margin-top: 1.5rem;" onclick="generateStatement()">↻ Generate Statement</button>
+        </div>
+
+        <button class="export-btn" onclick="exportBrief()">📄 Export Brand Positioning Brief</button>
+    </div>
+
+    <script>
+        const attributes = [
+            'Authentic', 'Innovative', 'Accessible', 'Elite', 'Community-Driven',
+            'Exciting', 'Family-Friendly', 'Competitive', 'Inclusive', 'Heritage',
+            'Modern', 'Passionate', 'Entertaining', 'Professional', 'Dynamic',
+            'Welcoming', 'Aspirational', 'Grassroots', 'Global', 'Local',
+            'Bold', 'Traditional', 'Cutting-Edge', 'Sustainable', 'Social'
+        ];
+
+        let selectedAttributes = [];
+
+        function initializeAttributes() {
+            const container = document.getElementById('brand-attributes');
+            attributes.forEach(attr => {
+                const chip = document.createElement('div');
+                chip.className = 'attribute-chip';
+                chip.textContent = attr;
+                chip.onclick = () => toggleAttribute(attr, chip);
+                container.appendChild(chip);
+            });
+        }
+
+        function toggleAttribute(attr, element) {
+            if (selectedAttributes.includes(attr)) {
+                selectedAttributes = selectedAttributes.filter(a => a !== attr);
+                element.classList.remove('selected');
+            } else {
+                if (selectedAttributes.length < 5) {
+                    selectedAttributes.push(attr);
+                    element.classList.add('selected');
+                } else {
+                    alert('Please select a maximum of 5 core attributes for focus.');
+                }
+            }
+        }
+
+        function generateStatement() {
+            const propertyName = document.getElementById('property-name').value;
+            const category = document.getElementById('property-category').value;
+            const audienceDemo = document.getElementById('audience-demo').value;
+            const audiencePsycho = document.getElementById('audience-psycho').value;
+            const uniqueStrength = document.getElementById('unique-strength').value;
+            const keyBenefit = document.getElementById('key-benefit').value;
+            const reasonToBelieve = document.getElementById('reason-to-believe').value;
+
+            if (!propertyName || !category || !audienceDemo || !uniqueStrength || !keyBenefit) {
+                alert('Please complete all required fields to generate positioning statement.');
+                return;
+            }
+
+            const targetAudience = audiencePsycho ? `${audienceDemo} ${audiencePsycho}` : audienceDemo;
+
+            const statement = `For ${targetAudience}, ${propertyName} is the ${category.toLowerCase()} that ${keyBenefit} through ${uniqueStrength}${reasonToBelieve ? `, because ${reasonToBelieve}` : ''}.`;
+
+            document.getElementById('statement-preview').textContent = statement;
+        }
+
+        function exportBrief() {
+            const propertyName = document.getElementById('property-name').value;
+            const category = document.getElementById('property-category').value;
+            const audienceDemo = document.getElementById('audience-demo').value;
+            const audiencePsycho = document.getElementById('audience-psycho').value;
+            const audienceNeeds = document.getElementById('audience-needs').value;
+            const customAttributes = document.getElementById('custom-attributes').value;
+            const uniqueStrength = document.getElementById('unique-strength').value;
+            const keyBenefit = document.getElementById('key-benefit').value;
+            const emotionalAppeal = document.getElementById('emotional-appeal').value;
+            const competitiveDifference = document.getElementById('competitive-difference').value;
+            const reasonToBelieve = document.getElementById('reason-to-believe').value;
+            const statement = document.getElementById('statement-preview').textContent;
+
+            if (!propertyName || statement.includes('Complete the form')) {
+                alert('Please complete the positioning statement before exporting.');
+                return;
+            }
+
+            const allAttributes = [...selectedAttributes];
+            if (customAttributes) {
+                allAttributes.push(...customAttributes.split(',').map(a => a.trim()));
+            }
+
+            const content = `
+═══════════════════════════════════════════════════════════════
+BRAND POSITIONING BRIEF
+Business of Marketing in Sport - Anchor Project
+═══════════════════════════════════════════════════════════════
+
+PROPERTY IDENTITY
+─────────────────
+Name: ${propertyName}
+Category: ${category}
+
+
+TARGET AUDIENCE
+───────────────
+Demographics: ${audienceDemo}
+Psychographics: ${audiencePsycho || 'Not specified'}
+
+Key Needs & Pain Points:
+${audienceNeeds || 'Not specified'}
+
+
+BRAND ATTRIBUTES
+────────────────
+Core Attributes: ${allAttributes.join(', ') || 'Not specified'}
+
+
+DIFFERENTIATION & COMPETITIVE ADVANTAGE
+────────────────────────────────────────
+Unique Strength: ${uniqueStrength}
+Key Benefit: ${keyBenefit}
+Emotional Appeal: ${emotionalAppeal || 'Not specified'}
+
+How We Differ from Competitors:
+${competitiveDifference || 'Not specified'}
+
+
+POSITIONING STATEMENT
+──────────────────────
+${statement}
+
+Reason to Believe:
+${reasonToBelieve || 'Not specified'}
+
+
+═══════════════════════════════════════════════════════════════
+NEXT STEPS
+═══════════════════════════════════════════════════════════════
+
+For Week 4 Deliverable:
+1. Validate positioning with target audience research
+2. Develop athlete partnership strategy aligned with brand attributes
+3. Complete competitive analysis mapping
+4. Submit draft for faculty feedback by mid-week
+
+
+Generated: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}
+Business of Marketing in Sport - Anchor Project (Week 4)
+            `.trim();
+
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `positioning-brief-${propertyName.toLowerCase().replace(/\s+/g, '-')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('✅ Brand Positioning Brief exported! Use this as the foundation for your Week 4 Brand Strategy deliverable.');
+        }
+
+        // Initialize on load
+        initializeAttributes();
+
+        // Auto-generate statement on key inputs
+        ['property-name', 'property-category', 'audience-demo', 'unique-strength', 'key-benefit', 'reason-to-believe'].forEach(id => {
+            document.getElementById(id)?.addEventListener('blur', generateStatement);
+        });
+    </script>
+</body>
+</html>

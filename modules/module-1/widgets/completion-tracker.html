@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Completion Tracker</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 1rem;
+            font-family: 'Benton Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafaf8;
+        }
+        
+        .tracker-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .completion-header {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .progress-circle {
+            width: 80px;
+            height: 80px;
+            background: #c5b783;
+            color: #2c2c2c;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .checklist-section {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #fafaf8;
+            border-left: 4px solid transparent;
+            transition: all 0.2s ease;
+        }
+        
+        .checklist-item.completed {
+            border-left-color: #c5b783;
+            background: #f5f4f0;
+        }
+        
+        .checklist-checkbox {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #c5b783;
+            background: white;
+            cursor: pointer;
+            flex-shrink: 0;
+            margin-top: 0.125rem;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+        
+        .checklist-checkbox:hover {
+            transform: scale(1.1);
+        }
+        
+        .checklist-checkbox.checked {
+            background: #c5b783;
+        }
+        
+        .checklist-checkbox.checked::after {
+            content: "✓";
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .item-content h4 {
+            margin: 0 0 0.25rem 0;
+            color: #2c2c2c;
+            font-weight: 600;
+        }
+        
+        .item-description {
+            color: #666;
+            font-size: 0.875rem;
+            margin: 0;
+        }
+        
+        .completion-status {
+            background: #f5f4f0;
+            border: 1px solid #c5b783;
+            padding: 1.5rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .status-incomplete {
+            color: #666;
+        }
+        
+        .status-complete {
+            background: #c5b783;
+            color: #2c2c2c;
+            font-weight: 600;
+            animation: celebrate 0.5s ease;
+        }
+        
+        @keyframes celebrate {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        .next-module-preview {
+            background: white;
+            border: 2px dashed #c5b783;
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+        
+        .next-module-preview.available {
+            opacity: 1;
+            border-style: solid;
+        }
+        
+        .btn-next-module {
+            background: #c5b783;
+            color: #2c2c2c;
+            border: none;
+            padding: 1rem 2rem;
+            font-family: inherit;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        .btn-next-module.enabled {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .btn-next-module.enabled:hover {
+            background: #b8a56f;
+            transform: translateY(-2px);
+        }
+        
+        .achievement-badge {
+            background: linear-gradient(135deg, #c5b783, #b8a56f);
+            color: #2c2c2c;
+            padding: 1rem;
+            text-align: center;
+            margin: 2rem 0;
+            display: none;
+        }
+        
+        .achievement-badge.show {
+            display: block;
+            animation: slideIn 0.5s ease;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* LMS embedding optimizations */
+        @media (max-width: 600px) {
+            body {
+                padding: 0.5rem;
+            }
+            
+            .checklist-item {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tracker-container">
+        <div class="completion-header">
+            <div class="progress-circle" id="progress-circle">0%</div>
+            <h2>Module 1 Completion</h2>
+            <p id="completion-summary">Track your progress through all module components</p>
+        </div>
+        
+        <div class="checklist-section">
+            <h3>Required Components</h3>
+            
+            <div class="checklist-item" data-component="readings">
+                <div class="checklist-checkbox" role="checkbox" aria-checked="false" tabindex="0" aria-label="Mark pre-reading materials as completed"></div>
+                <div class="item-content">
+                    <h4>Complete Pre-Reading Materials</h4>
+                    <p class="item-description">Global Sports Media Rights Report, Canadian Broadcasting Analysis, TSN Case Study</p>
+                </div>
+            </div>
+            
+            <div class="checklist-item" data-component="executive">
+                <div class="checklist-checkbox" role="checkbox" aria-checked="false" tabindex="0" aria-label="Mark executive session as completed"></div>
+                <div class="item-content">
+                    <h4>Attend Executive Session</h4>
+                    <p class="item-description">Live session with Bell Media executive or complete recording with transcript</p>
+                </div>
+            </div>
+            
+            <div class="checklist-item" data-component="calculator">
+                <div class="checklist-checkbox" role="checkbox" aria-checked="false" tabindex="0" aria-label="Mark media calculator as completed"></div>
+                <div class="item-content">
+                    <h4>Use Media Rights Calculator</h4>
+                    <p class="item-description">Complete valuation exercises with Canadian Premier League scenario</p>
+                </div>
+            </div>
+            
+            <div class="checklist-item" data-component="case-study">
+                <div class="checklist-checkbox" role="checkbox" aria-checked="false" tabindex="0" aria-label="Mark case study analysis as completed"></div>
+                <div class="item-content">
+                    <h4>Complete Case Study Analysis</h4>
+                    <p class="item-description">Rogers vs. TSN analysis from multiple perspectives with written responses</p>
+                </div>
+            </div>
+            
+            <div class="checklist-item" data-component="reflection">
+                <div class="checklist-checkbox" role="checkbox" aria-checked="false" tabindex="0" aria-label="Mark reflection submission as completed"></div>
+                <div class="item-content">
+                    <h4>Submit Learning Reflection</h4>
+                    <p class="item-description">Key insights from executive session in your chosen format</p>
+                </div>
+            </div>
+            
+            <div class="checklist-item" data-component="discussion">
+                <div class="checklist-checkbox" role="checkbox" aria-checked="false" tabindex="0" aria-label="Mark discussion participation as completed"></div>
+                <div class="item-content">
+                    <h4>Participate in Discussion Forum</h4>
+                    <p class="item-description">Share insights and engage with classmates' perspectives</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="completion-status" id="completion-status">
+            <p class="status-incomplete" id="status-text">Complete all components to finish Module 1</p>
+        </div>
+        
+        <div class="achievement-badge" id="achievement-badge">
+            <h3>🏆 Module 1 Complete!</h3>
+            <p>You've mastered the fundamentals of media rights and content strategy. Ready for Module 2!</p>
+        </div>
+        
+        <div class="next-module-preview" id="next-module">
+            <h3>Coming Next: Module 2</h3>
+            <h4>Sports Betting Marketing</h4>
+            <p>Explore the rapidly evolving world of sports betting marketing with FanDuel's Andrew Sneyd.</p>
+            <button class="btn-next-module" id="next-btn">Begin Module 2 →</button>
+        </div>
+    </div>
+    
+    <script>
+        let completedComponents = 0;
+        const totalComponents = 6;
+        const components = ['readings', 'executive', 'calculator', 'case-study', 'reflection', 'discussion'];
+        let componentStatus = {};
+        
+        // Initialize component status
+        components.forEach(component => {
+            componentStatus[component] = false;
+        });
+        
+        // Load saved progress
+        function loadProgress() {
+            const saved = localStorage.getItem('module1-completion-tracker');
+            if (saved) {
+                const data = JSON.parse(saved);
+                componentStatus = { ...componentStatus, ...data.status };
+                completedComponents = data.completed || 0;
+                
+                // Restore checkboxes
+                Object.keys(componentStatus).forEach(component => {
+                    if (componentStatus[component]) {
+                        const item = document.querySelector(`[data-component="${component}"]`);
+                        if (item) {
+                            const checkbox = item.querySelector('.checklist-checkbox');
+                            checkbox.classList.add('checked');
+                            checkbox.setAttribute('aria-checked', 'true');
+                            item.classList.add('completed');
+                        }
+                    }
+                });
+                
+                updateProgress();
+            }
+        }
+        
+        // Save progress
+        function saveProgress() {
+            const data = {
+                status: componentStatus,
+                completed: completedComponents,
+                timestamp: new Date().toISOString()
+            };
+            
+            localStorage.setItem('module1-completion-tracker', JSON.stringify(data));
+            
+            // Notify parent frame (LMS)
+            if (window.parent !== window) {
+                window.parent.postMessage({
+                    type: 'module-completion-progress',
+                    completed: completedComponents,
+                    total: totalComponents,
+                    percentage: Math.round((completedComponents / totalComponents) * 100),
+                    components: componentStatus
+                }, '*');
+            }
+        }
+        
+        // Update progress display
+        function updateProgress() {
+            const percentage = Math.round((completedComponents / totalComponents) * 100);
+            
+            document.getElementById('progress-circle').textContent = percentage + '%';
+            document.getElementById('completion-summary').textContent = 
+                `${completedComponents} of ${totalComponents} components completed`;
+            
+            const statusDiv = document.getElementById('completion-status');
+            const statusText = document.getElementById('status-text');
+            
+            if (completedComponents === totalComponents) {
+                statusDiv.className = 'completion-status status-complete';
+                statusText.textContent = '🎉 Module 1 Complete! Ready for Module 2';
+                
+                document.getElementById('achievement-badge').classList.add('show');
+                document.getElementById('next-module').classList.add('available');
+                document.getElementById('next-btn').classList.add('enabled');
+            } else {
+                statusDiv.className = 'completion-status';
+                statusText.textContent = `Complete ${totalComponents - completedComponents} more component${totalComponents - completedComponents !== 1 ? 's' : ''} to finish Module 1`;
+            }
+        }
+        
+        // Checkbox functionality
+        document.querySelectorAll('.checklist-checkbox').forEach(checkbox => {
+            checkbox.addEventListener('click', function() {
+                const item = this.closest('.checklist-item');
+                const component = item.dataset.component;
+                const isChecked = this.classList.contains('checked');
+                
+                if (!isChecked) {
+                    this.classList.add('checked');
+                    this.setAttribute('aria-checked', 'true');
+                    item.classList.add('completed');
+                    componentStatus[component] = true;
+                    completedComponents++;
+                } else {
+                    this.classList.remove('checked');
+                    this.setAttribute('aria-checked', 'false');
+                    item.classList.remove('completed');
+                    componentStatus[component] = false;
+                    completedComponents--;
+                }
+                
+                updateProgress();
+                saveProgress();
+            });
+            
+            // Keyboard support
+            checkbox.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+        
+        // Next module button
+        document.getElementById('next-btn').addEventListener('click', function() {
+            if (this.classList.contains('enabled')) {
+                // In real implementation, this would navigate to Module 2
+                if (window.parent !== window) {
+                    window.parent.postMessage({
+                        type: 'navigate-to-module',
+                        module: 2
+                    }, '*');
+                } else {
+                    alert('Module 2 would begin here in the full course!');
+                }
+            }
+        });
+        
+        // Auto-check components based on other widgets' data
+        function checkIntegrations() {
+            // Check if readings are completed
+            const readingsData = localStorage.getItem('module1-readings-progress');
+            if (readingsData) {
+                const readings = JSON.parse(readingsData);
+                if (readings.completed === 3) {
+                    const readingsCheckbox = document.querySelector('[data-component="readings"] .checklist-checkbox');
+                    if (!readingsCheckbox.classList.contains('checked')) {
+                        readingsCheckbox.click();
+                    }
+                }
+            }
+            
+            // Check if case study is completed
+            const caseData = localStorage.getItem('module1-case-study');
+            if (caseData) {
+                const caseStudy = JSON.parse(caseData);
+                const hasAllAnalyses = caseStudy.rogers?.trim().length > 50 && 
+                                      caseStudy.tsn?.trim().length > 50 && 
+                                      caseStudy.market?.trim().length > 50;
+                if (hasAllAnalyses) {
+                    const caseCheckbox = document.querySelector('[data-component="case-study"] .checklist-checkbox');
+                    if (!caseCheckbox.classList.contains('checked')) {
+                        caseCheckbox.click();
+                    }
+                }
+            }
+        }
+        
+        // Initialize
+        loadProgress();
+        checkIntegrations();
+        
+        // Check integrations periodically
+        setInterval(checkIntegrations, 5000);
+        
+        // LMS integration
+        if (window.parent !== window) {
+            console.log('Completion Tracker widget loaded in LMS');
+        }
+    </script>
+</body>
+</html>

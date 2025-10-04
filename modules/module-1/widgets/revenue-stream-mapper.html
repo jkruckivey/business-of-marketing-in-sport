@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Stream Mapper</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .org-selector {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .org-selector label {
+            display: block;
+            color: #c5b783;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .org-selector select {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(197, 183, 131, 0.3);
+            border-radius: 4px;
+            color: #f5f4f0;
+            font-size: 1rem;
+        }
+
+        .streams-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stream-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .stream-card:hover {
+            transform: translateY(-5px);
+            border-color: #b8a56f;
+        }
+
+        .stream-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .stream-icon {
+            font-size: 2rem;
+        }
+
+        .stream-title {
+            color: #c5b783;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .revenue-display {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4ade80;
+            margin-bottom: 1rem;
+        }
+
+        .percentage {
+            color: #c5b783;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .stream-details {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(197, 183, 131, 0.3);
+        }
+
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .detail-label {
+            color: #ccc;
+        }
+
+        .detail-value {
+            color: #f5f4f0;
+            font-weight: 600;
+        }
+
+        .summary {
+            background: rgba(197, 183, 131, 0.1);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .summary h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .summary-item {
+            text-align: center;
+        }
+
+        .summary-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+        }
+
+        .summary-label {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .insights {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        .insights h2 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+        }
+
+        .insights ul {
+            margin-left: 1.5rem;
+            line-height: 2;
+        }
+
+        .chart-container {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-container h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .bar-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .bar-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .bar-label {
+            width: 150px;
+            color: #f5f4f0;
+            font-weight: 600;
+        }
+
+        .bar-track {
+            flex: 1;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #c5b783, #b8a56f);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 0.5rem;
+            transition: width 0.5s ease;
+        }
+
+        .bar-value {
+            color: #2c2c2c;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .streams-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Revenue Stream Mapper</h1>
+        <p class="subtitle">Explore how different sports organizations generate revenue across six major streams</p>
+
+        <div style="background: rgba(251, 191, 36, 0.1); border: 2px solid #fbbf24; border-radius: 8px; padding: 1rem; margin-bottom: 2rem;">
+            <p style="margin: 0; color: #f5f4f0; font-size: 0.9rem;">
+                <strong style="color: #fbbf24;">📊 Educational Tool:</strong> Revenue figures are estimates based on industry reports (Forbes, Sports Business Journal, team financial disclosures 2022-2023). Actual values vary by season, market conditions, and team performance. Use for comparative analysis and concept learning.
+            </p>
+        </div>
+
+        <div class="org-selector">
+            <label for="organization">Select Sports Organization</label>
+            <select id="organization" onchange="loadOrganization()">
+                <option value="nhl-team">NHL Team (Toronto Maple Leafs)</option>
+                <option value="nba-team">NBA Team (Toronto Raptors)</option>
+                <option value="mls-team">MLS Team (Toronto FC)</option>
+                <option value="golf-tournament">Golf Tournament (RBC Canadian Open)</option>
+                <option value="esports-org">Esports Organization (TSM)</option>
+            </select>
+        </div>
+
+        <div class="chart-container">
+            <h2>Revenue Distribution</h2>
+            <div class="bar-chart" id="bar-chart">
+                <!-- Bars will be generated dynamically -->
+            </div>
+        </div>
+
+        <div class="summary" id="summary">
+            <!-- Summary will be generated dynamically -->
+        </div>
+
+        <div class="streams-grid" id="streams-grid">
+            <!-- Stream cards will be generated dynamically -->
+        </div>
+
+        <div class="insights" id="insights">
+            <!-- Insights will be generated dynamically -->
+        </div>
+    </div>
+
+    <script>
+        const organizations = {
+            'nhl-team': {
+                name: 'NHL Team (Toronto Maple Leafs)',
+                totalRevenue: 281,
+                source: 'Forbes NHL Team Valuations 2023',
+                streams: {
+                    mediaRights: {
+                        icon: '📺',
+                        title: 'Media Rights',
+                        revenue: 75,
+                        growth: '+6%',
+                        risk: 'Medium',
+                        description: 'Share of national/local TV deals (Rogers, TSN)',
+                        source: 'NHL national rights ~$625M/32 teams + local deals'
+                    },
+                    sponsorship: {
+                        icon: '🤝',
+                        title: 'Sponsorship',
+                        revenue: 65,
+                        growth: '+9%',
+                        risk: 'Low',
+                        description: 'Jersey patches, arena naming, signage',
+                        source: 'MLSE sponsorship portfolio estimates 2023'
+                    },
+                    ticketing: {
+                        icon: '🎟️',
+                        title: 'Ticketing',
+                        revenue: 82,
+                        growth: '+4%',
+                        risk: 'Medium',
+                        description: 'Season tickets, single game sales, suites',
+                        source: 'Scotiabank Arena 18,800 capacity × 41 games × avg $180'
+                    },
+                    merchandising: {
+                        icon: '👕',
+                        title: 'Merchandising',
+                        revenue: 28,
+                        growth: '+3%',
+                        risk: 'Low',
+                        description: 'Jerseys, hats, collectibles, licensing',
+                        source: 'NHL league avg ~10% of revenue'
+                    },
+                    betting: {
+                        icon: '🎲',
+                        title: 'Betting Partnerships',
+                        revenue: 18,
+                        growth: '+32%',
+                        risk: 'High',
+                        description: 'Sportsbook partnerships, data licensing',
+                        source: 'Ontario sports betting launch 2022, explosive growth'
+                    },
+                    other: {
+                        icon: '📊',
+                        title: 'Other Revenue',
+                        revenue: 13,
+                        growth: '+2%',
+                        risk: 'Low',
+                        description: 'Concessions, parking, events',
+                        source: 'Scotiabank Arena non-game revenue'
+                    }
+                },
+                insights: [
+                    'Ticketing dominates at 29% of total revenue - Leafs sell out every game at premium prices (Source: Forbes)',
+                    'Media rights provide 27% - Rogers $5.2B national deal runs through 2026 (Source: Rogers Communications)',
+                    'Betting partnerships smallest but fastest growing (+32% YoY) - Ontario legalization 2022 (Source: iGaming Ontario)',
+                    'Sponsorship stable at 23% - MLSE portfolio includes Scotiabank, Canadian Tire, Molson (Source: MLSE)',
+                    'Heavy reliance on in-person attendance (ticketing + concessions) = 34% of revenue - arena dependency'
+                ]
+            },
+            'nba-team': {
+                name: 'NBA Team (Toronto Raptors)',
+                totalRevenue: 306,
+                source: 'Forbes NBA Team Valuations 2023',
+                streams: {
+                    mediaRights: {
+                        icon: '📺',
+                        title: 'Media Rights',
+                        revenue: 92,
+                        growth: '+7%',
+                        risk: 'Medium',
+                        description: 'NBA national TV deal share',
+                        source: 'NBA national media ~$2.66B/30 teams = $88.7M + local TSN deal'
+                    },
+                    sponsorship: {
+                        icon: '🤝',
+                        title: 'Sponsorship',
+                        revenue: 78,
+                        growth: '+10%',
+                        risk: 'Low',
+                        description: 'Jersey patch, court signage, partnerships',
+                        source: 'Sun Life jersey patch + MLSE partnership portfolio 2023'
+                    },
+                    ticketing: {
+                        icon: '🎟️',
+                        title: 'Ticketing',
+                        revenue: 73,
+                        growth: '+4%',
+                        risk: 'Medium',
+                        description: 'Regular season + playoffs premium',
+                        source: 'Scotiabank Arena 19,800 capacity × 41 games × avg $160'
+                    },
+                    merchandising: {
+                        icon: '👕',
+                        title: 'Merchandising',
+                        revenue: 36,
+                        growth: '+6%',
+                        risk: 'Low',
+                        description: 'Global appeal drives merchandise sales',
+                        source: '2019 championship bump sustained, "We The North" brand'
+                    },
+                    betting: {
+                        icon: '🎲',
+                        title: 'Betting Partnerships',
+                        revenue: 17,
+                        growth: '+30%',
+                        risk: 'High',
+                        description: 'Official betting partners, in-game odds',
+                        source: 'MGM partnership + Ontario sports betting legalization 2022'
+                    },
+                    other: {
+                        icon: '📊',
+                        title: 'Other Revenue',
+                        revenue: 10,
+                        growth: '+3%',
+                        risk: 'Low',
+                        description: 'Arena events, digital content',
+                        source: 'Scotiabank Arena concerts, conferences, MLSE digital properties'
+                    }
+                },
+                insights: [
+                    'More balanced revenue mix than NHL - less ticketing dependent at 24% (Source: Forbes)',
+                    'Media rights lead at 30% - NBA $2.66B annual national deal through 2024-25 (Source: NBA)',
+                    'Sponsorship growing fastest among stable streams (+10% YoY) - Sun Life jersey patch premium (Source: MLSE)',
+                    'Global brand recognition drives higher merchandise revenue - 2019 championship legacy (Source: Sports Business Journal)',
+                    'Betting partnerships growing explosively (+30%) as Ontario legalization expands MGM deal (Source: iGaming Ontario)'
+                ]
+            },
+            'mls-team': {
+                name: 'MLS Team (Toronto FC)',
+                totalRevenue: 58,
+                source: 'Forbes MLS Team Valuations 2023 + Sports Business Journal',
+                streams: {
+                    mediaRights: {
+                        icon: '📺',
+                        title: 'Media Rights',
+                        revenue: 9,
+                        growth: '+3%',
+                        risk: 'High',
+                        description: 'MLS Apple TV deal share',
+                        source: 'MLS Apple TV $250M/year ÷ 29 teams = ~$8.6M per team 2023'
+                    },
+                    sponsorship: {
+                        icon: '🤝',
+                        title: 'Sponsorship',
+                        revenue: 19,
+                        growth: '+12%',
+                        risk: 'Medium',
+                        description: 'Jersey, stadium naming, local partners',
+                        source: 'BMO Field naming rights + jersey sponsors (BMO, Wealthsimple) 2023'
+                    },
+                    ticketing: {
+                        icon: '🎟️',
+                        title: 'Ticketing',
+                        revenue: 17,
+                        growth: '+5%',
+                        risk: 'Medium',
+                        description: 'Season tickets, supporter sections',
+                        source: 'BMO Field 30,000 capacity × 17 home games × avg $70'
+                    },
+                    merchandising: {
+                        icon: '👕',
+                        title: 'Merchandising',
+                        revenue: 5,
+                        growth: '+4%',
+                        risk: 'Low',
+                        description: 'Jerseys, scarves, supporter gear',
+                        source: 'Adidas MLS partnership, TFC supporter culture merchandise'
+                    },
+                    betting: {
+                        icon: '🎲',
+                        title: 'Betting Partnerships',
+                        revenue: 3,
+                        growth: '+20%',
+                        risk: 'High',
+                        description: 'Emerging betting interest in soccer',
+                        source: 'Ontario sports betting launch 2022, soccer betting growth'
+                    },
+                    other: {
+                        icon: '📊',
+                        title: 'Other Revenue',
+                        revenue: 5,
+                        growth: '+2%',
+                        risk: 'Low',
+                        description: 'Youth academies, international tours',
+                        source: 'TFC Academy player sales, friendly matches, BMO Field events'
+                    }
+                },
+                insights: [
+                    'Sponsorship dominates at 33% - most reliable revenue stream with BMO multi-property deal (Source: MLSE)',
+                    'Media rights only 16% - MLS Apple TV $250M/year deal reflects lower ratings vs Big 4 (Source: MLS)',
+                    'Apple TV deal is DTC experiment - guaranteed revenue but subscription uncertainty (Source: Sports Business Journal)',
+                    'Ticketing strong at 29% due to passionate supporter culture - Red Patch Boys, U-Sector (Source: Forbes)',
+                    'Smaller $58M revenue base means every stream matters - half of NHL/NBA counterparts'
+                ]
+            },
+            'golf-tournament': {
+                name: 'Golf Tournament (RBC Canadian Open)',
+                totalRevenue: 38,
+                source: 'PGA Tour event economics 2023 + Golf Canada estimates',
+                streams: {
+                    mediaRights: {
+                        icon: '📺',
+                        title: 'Media Rights',
+                        revenue: 2,
+                        growth: '0%',
+                        risk: 'Low',
+                        description: 'Part of PGA Tour package deal',
+                        source: 'PGA Tour negotiates centrally - minimal per-event allocation'
+                    },
+                    sponsorship: {
+                        icon: '🤝',
+                        title: 'Sponsorship',
+                        revenue: 22,
+                        growth: '+6%',
+                        risk: 'Medium',
+                        description: 'Title sponsor (RBC), corporate tents',
+                        source: 'RBC $8-10M title sponsorship + ~100 corporate tents at $15-50K each'
+                    },
+                    ticketing: {
+                        icon: '🎟️',
+                        title: 'Ticketing',
+                        revenue: 8,
+                        growth: '+4%',
+                        risk: 'High',
+                        description: 'Daily admission, pro-am access',
+                        source: 'Oakdale Golf & Country Club ~150K attendance × $50-80 avg ticket'
+                    },
+                    merchandising: {
+                        icon: '👕',
+                        title: 'Merchandising',
+                        revenue: 2,
+                        growth: '+2%',
+                        risk: 'Low',
+                        description: 'Tournament apparel, memorabilia',
+                        source: 'Limited tournament-specific merchandise vs team sports'
+                    },
+                    betting: {
+                        icon: '🎲',
+                        title: 'Betting Partnerships',
+                        revenue: 1.5,
+                        growth: '+15%',
+                        risk: 'Medium',
+                        description: 'Betting operator partnerships',
+                        source: 'PGA Tour FanDuel partnership, in-tournament betting activations'
+                    },
+                    other: {
+                        icon: '📊',
+                        title: 'Other Revenue',
+                        revenue: 2.5,
+                        growth: '+3%',
+                        risk: 'Low',
+                        description: 'Hospitality, pro-am fees',
+                        source: 'Pro-am entries $5-10K, premium hospitality experiences'
+                    }
+                },
+                insights: [
+                    'Sponsorship dominates at 58% - RBC $8-10M title deal is foundation (Source: Golf Canada)',
+                    'Media rights only 5% - PGA Tour centralized TV deal limits per-event share (Source: PGA Tour)',
+                    'Ticketing vulnerable at 21% to weather and star player field - Rory McIlroy impact (Source: TSN)',
+                    'Corporate hospitality more important than general admission - 100+ tents at premium pricing (Source: RBC Canadian Open)',
+                    'One-week event model concentrates all revenue risk into single June window'
+                ]
+            },
+            'esports-org': {
+                name: 'Esports Organization (TSM)',
+                totalRevenue: 53,
+                source: 'Forbes Esports Valuations 2023 + Esports Charts',
+                streams: {
+                    mediaRights: {
+                        icon: '📺',
+                        title: 'Media Rights',
+                        revenue: 9,
+                        growth: '+15%',
+                        risk: 'Medium',
+                        description: 'Streaming deals (Twitch, YouTube)',
+                        source: 'TSM exclusive streaming partnerships, Twitch Creator Deals 2022-23'
+                    },
+                    sponsorship: {
+                        icon: '🤝',
+                        title: 'Sponsorship',
+                        revenue: 26,
+                        growth: '+20%',
+                        risk: 'Low',
+                        description: 'Endemic brands, crypto, energy drinks',
+                        source: 'TSM FTX deal terminated, replaced by Razer, Red Bull, Grubhub 2023'
+                    },
+                    ticketing: {
+                        icon: '🎟️',
+                        title: 'Ticketing',
+                        revenue: 2,
+                        growth: '+10%',
+                        risk: 'High',
+                        description: 'Live event attendance (limited)',
+                        source: 'League Championship Series, Valorant Champions Tour live events'
+                    },
+                    merchandising: {
+                        icon: '👕',
+                        title: 'Merchandising',
+                        revenue: 8,
+                        growth: '+12%',
+                        risk: 'Low',
+                        description: 'Jerseys, gaming gear, digital items',
+                        source: 'TSM Store, player jersey sales, gaming peripheral collaborations'
+                    },
+                    betting: {
+                        icon: '🎲',
+                        title: 'Betting Partnerships',
+                        revenue: 5,
+                        growth: '+40%',
+                        risk: 'Very High',
+                        description: 'Esports betting, skin gambling',
+                        source: 'Esports betting market growth, regulatory uncertainty post-2022'
+                    },
+                    other: {
+                        icon: '📊',
+                        title: 'Other Revenue',
+                        revenue: 3,
+                        growth: '+8%',
+                        risk: 'Medium',
+                        description: 'Content creation, player streaming',
+                        source: 'YouTube content revenue, player-streamer hybrid model earnings'
+                    }
+                },
+                insights: [
+                    'Sponsorship drives 49% of revenue - brands targeting Gen Z with Red Bull, Razer replacing FTX (Source: Forbes)',
+                    'Digital-first model at 4% ticketing vs 25-30% for traditional sports - fundamentally different (Source: Esports Charts)',
+                    'Betting growing fastest (+40%) but regulatory uncertainty - skin gambling concerns (Source: Esports Integrity Commission)',
+                    'Merchandise at 15% includes digital items and gaming peripherals - crossover with gaming gear (Source: TSM)',
+                    'Revenue model evolving rapidly - high growth but volatile, crypto sponsor losses 2022-23'
+                ]
+            }
+        };
+
+        function loadOrganization() {
+            const orgKey = document.getElementById('organization').value;
+            const org = organizations[orgKey];
+
+            // Generate bar chart
+            const barChart = document.getElementById('bar-chart');
+            barChart.innerHTML = '';
+
+            Object.keys(org.streams).forEach(key => {
+                const stream = org.streams[key];
+                const percentage = (stream.revenue / org.totalRevenue * 100).toFixed(1);
+
+                const barItem = document.createElement('div');
+                barItem.className = 'bar-item';
+                barItem.innerHTML = `
+                    <div class="bar-label">${stream.title}</div>
+                    <div class="bar-track">
+                        <div class="bar-fill" style="width: ${percentage}%">
+                            <span class="bar-value">${percentage}%</span>
+                        </div>
+                    </div>
+                `;
+                barChart.appendChild(barItem);
+            });
+
+            // Generate summary
+            const summary = document.getElementById('summary');
+            const topStream = Object.keys(org.streams).reduce((a, b) =>
+                org.streams[a].revenue > org.streams[b].revenue ? a : b
+            );
+            const fastestGrowing = Object.keys(org.streams).reduce((a, b) =>
+                parseInt(org.streams[a].growth) > parseInt(org.streams[b].growth) ? a : b
+            );
+
+            summary.innerHTML = `
+                <h2>Summary - ${org.name}</h2>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <div class="summary-value">$${org.totalRevenue}M</div>
+                        <div class="summary-label">Total Revenue</div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-value">${Object.keys(org.streams).length}</div>
+                        <div class="summary-label">Revenue Streams</div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-value">${org.streams[topStream].title}</div>
+                        <div class="summary-label">Largest Stream</div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-value">${org.streams[fastestGrowing].title}</div>
+                        <div class="summary-label">Fastest Growing</div>
+                    </div>
+                </div>
+            `;
+
+            // Generate stream cards
+            const streamsGrid = document.getElementById('streams-grid');
+            streamsGrid.innerHTML = '';
+
+            Object.keys(org.streams).forEach(key => {
+                const stream = org.streams[key];
+                const percentage = (stream.revenue / org.totalRevenue * 100).toFixed(1);
+
+                const card = document.createElement('div');
+                card.className = 'stream-card';
+                card.innerHTML = `
+                    <div class="stream-header">
+                        <div class="stream-icon">${stream.icon}</div>
+                        <div class="stream-title">${stream.title}</div>
+                    </div>
+                    <div class="revenue-display">$${stream.revenue}M</div>
+                    <div class="percentage">${percentage}% of total revenue</div>
+                    <p style="color: #ccc; font-size: 0.9rem;">${stream.description}</p>
+                    <div class="stream-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Growth Rate:</span>
+                            <span class="detail-value" style="color: ${parseInt(stream.growth) > 5 ? '#4ade80' : '#fbbf24'}">${stream.growth} YoY</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Risk Level:</span>
+                            <span class="detail-value" style="color: ${stream.risk === 'Low' ? '#4ade80' : stream.risk === 'Medium' ? '#fbbf24' : '#f87171'}">${stream.risk}</span>
+                        </div>
+                    </div>
+                `;
+                streamsGrid.appendChild(card);
+            });
+
+            // Generate insights
+            const insights = document.getElementById('insights');
+            insights.innerHTML = `
+                <h2>💡 Key Insights</h2>
+                <ul>
+                    ${org.insights.map(insight => `<li>${insight}</li>`).join('')}
+                </ul>
+            `;
+        }
+
+        // Load default organization on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            loadOrganization();
+        });
+    </script>
+</body>
+</html>

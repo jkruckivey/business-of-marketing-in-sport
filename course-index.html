@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Business of Marketing in Sport - Interactive Learning Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* High contrast toggle styles */
+        .high-contrast-toggle {
+            background: #e5e7eb;
+            color: #374151;
+            border: 2px solid #d1d5db;
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .high-contrast-toggle:hover {
+            background: #d1d5db;
+            border-color: #9ca3af;
+        }
+
+        .toggle-icon {
+            font-size: 1rem;
+        }
+
+        /* High contrast mode styles */
+        body.high-contrast {
+            background: #000000 !important;
+            color: #ffffff !important;
+        }
+
+        body.high-contrast .container {
+            background: #000000 !important;
+            border: 2px solid #ffffff !important;
+        }
+
+        body.high-contrast header {
+            background: #000000 !important;
+            border-bottom: 2px solid #ffffff !important;
+        }
+
+        body.high-contrast .hero {
+            background: #000000 !important;
+        }
+
+        body.high-contrast .module-card,
+        body.high-contrast .widget-category,
+        body.high-contrast .resource-card,
+        body.high-contrast .feature {
+            background: #000000 !important;
+            border: 2px solid #ffffff !important;
+            color: #ffffff !important;
+        }
+
+        body.high-contrast .btn {
+            background: #ffffff !important;
+            color: #000000 !important;
+            border: 2px solid #ffffff !important;
+        }
+
+        body.high-contrast .btn:hover {
+            background: #000000 !important;
+            color: #ffffff !important;
+            border: 2px solid #ffffff !important;
+        }
+
+        body.high-contrast .high-contrast-toggle {
+            background: #ffffff !important;
+            color: #000000 !important;
+            border: 2px solid #ffffff !important;
+        }
+
+        /* Course specific styles */
+        .site-header {
+            background: #fff;
+            border-bottom: 2px solid #c5b783;
+            padding: 2rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-content h1 {
+            color: #2c2c2c;
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .tagline {
+            color: #666;
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+        }
+
+        .main-nav {
+            background: #fafaf8;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 0;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: #2c2c2c;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #c5b783;
+            border-bottom-color: #c5b783;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #fafaf8 0%, #f5f4f0 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .hero h2 {
+            color: #2c2c2c;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            color: #666;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #2c2c2c;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1a1a1a;
+        }
+
+        .btn-secondary {
+            background: #c5b783;
+            color: #2c2c2c;
+        }
+
+        .btn-secondary:hover {
+            background: #b8a56f;
+        }
+
+        .modules-section {
+            padding: 4rem 0;
+        }
+
+        .modules-section h2 {
+            text-align: center;
+            color: #2c2c2c;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .module-card {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .module-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-color: #b8a56f;
+        }
+
+        .module-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .module-card h3 {
+            color: #2c2c2c;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .module-topics {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .module-topics li {
+            color: #666;
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .module-topics li::before {
+            content: "▸";
+            color: #c5b783;
+            position: absolute;
+            left: 0;
+        }
+
+        .btn-module {
+            background: #2c2c2c;
+            color: white;
+            width: 100%;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .widgets-section {
+            background: #fafaf8;
+            padding: 4rem 2rem;
+        }
+
+        .widgets-section h2 {
+            text-align: center;
+            color: #2c2c2c;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .widget-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .widget-category {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 2rem;
+        }
+
+        .widget-category h3 {
+            color: #2c2c2c;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .widget-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .widget-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+            background: #fafaf8;
+        }
+
+        .btn-small {
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-small:hover {
+            background: #b8a56f;
+        }
+
+        .resources-section,
+        .about-section {
+            padding: 4rem 2rem;
+        }
+
+        .resources-section h2,
+        .about-section h2 {
+            text-align: center;
+            color: #2c2c2c;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            font-weight: 700;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .resource-card {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-2px);
+            border-color: #b8a56f;
+        }
+
+        .resource-card h3 {
+            color: #2c2c2c;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .resource-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #2c2c2c;
+            border: 2px solid #c5b783;
+        }
+
+        .btn-outline:hover {
+            background: #c5b783;
+            color: #2c2c2c;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h4 {
+            color: #2c2c2c;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .feature p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .site-footer {
+            background: #2c2c2c;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-content p {
+            margin: 0.5rem 0;
+            color: #ccc;
+        }
+
+        /* Skip navigation for accessibility */
+        .skip-nav {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+
+        .skip-nav:focus {
+            top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-content">
+            <div>
+                <h1>The Business of Marketing in Sport</h1>
+                <p class="tagline">Master sports marketing through interactive learning</p>
+            </div>
+            <button class="high-contrast-toggle" onclick="toggleHighContrast()" aria-label="Toggle high contrast mode">
+                <span class="toggle-icon">◐</span>
+                High Contrast
+            </button>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="nav-content">
+            <a href="#modules" class="nav-link">Modules</a>
+            <a href="#widgets" class="nav-link">Interactive Tools</a>
+            <a href="#resources" class="nav-link">Resources</a>
+            <a href="#about" class="nav-link">About</a>
+        </div>
+    </nav>
+
+    <main class="main-content" id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Your Sports Marketing Journey</h2>
+                <p>Explore the dynamic world of sports business through hands-on demonstrations, real-world case studies, and interactive tools designed for the modern sports marketer.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('modules')">Start Learning</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('widgets')">Explore Tools</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modules Section -->
+        <section id="modules" class="modules-section">
+            <h2>5-Week Course Structure</h2>
+            <div class="modules-grid">
+                <div class="module-card" data-module="1">
+                    <div class="module-icon">💰</div>
+                    <h3>Week 1: The Business of Sport</h3>
+                    <p>Map major revenue streams and understand sport's unique business model.</p>
+                    <ul class="module-topics">
+                        <li>Media Rights & Sponsorship</li>
+                        <li>Ticketing & Merchandising</li>
+                        <li>Betting & Licensing</li>
+                    </ul>
+                    <button class="btn btn-module" onclick="openModule(1)">Enter Week 1</button>
+                </div>
+
+                <div class="module-card" data-module="2">
+                    <div class="module-icon">📺</div>
+                    <h3>Week 2: Media & Fan Engagement</h3>
+                    <p>Explore media rights valuation and fan monetization strategies.</p>
+                    <ul class="module-topics">
+                        <li>Broadcasting vs Streaming</li>
+                        <li>Direct-to-Consumer Models</li>
+                        <li>Fan Monetization</li>
+                    </ul>
+                    <button class="btn btn-module" onclick="openModule(2)">Enter Week 2</button>
+                </div>
+
+                <div class="module-card" data-module="3">
+                    <div class="module-icon">🎰</div>
+                    <h3>Week 3: Sponsorship & Betting</h3>
+                    <p>The financial backbone and new growth engines of sport.</p>
+                    <ul class="module-topics">
+                        <li>Sponsorship ROI</li>
+                        <li>Sports Betting Markets</li>
+                        <li>Partnership Activation</li>
+                    </ul>
+                    <button class="btn btn-module" onclick="openModule(3)">Enter Week 3</button>
+                </div>
+
+                <div class="module-card" data-module="4">
+                    <div class="module-icon">⭐</div>
+                    <h3>Week 4: Athletes & Emerging Sports</h3>
+                    <p>Athlete branding, women's sports, and new market opportunities.</p>
+                    <ul class="module-topics">
+                        <li>Athlete Endorsements</li>
+                        <li>Women's Sports Growth</li>
+                        <li>Pickleball, Padel, Esports</li>
+                    </ul>
+                    <button class="btn btn-module" onclick="openModule(4)">Enter Week 4</button>
+                </div>
+
+                <div class="module-card" data-module="5">
+                    <div class="module-icon">🏛️</div>
+                    <h3>Week 5: Legacy & Future</h3>
+                    <p>Balancing tradition with innovation in sports monetization.</p>
+                    <ul class="module-topics">
+                        <li>Heritage Properties</li>
+                        <li>Innovation vs Tradition</li>
+                        <li>Future Trends</li>
+                    </ul>
+                    <button class="btn btn-module" onclick="openModule(5)">Enter Week 5</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Widgets Section -->
+        <section id="widgets" class="widgets-section">
+            <h2>Interactive Tools</h2>
+            <div class="widget-categories">
+                <div class="widget-category">
+                    <h3>📊 Module 1 Tools</h3>
+                    <div class="widget-list">
+                        <div class="widget-item">
+                            <span>Case Study: Rogers vs TSN</span>
+                            <button class="btn-small" onclick="openWidget('modules/module-1/widgets/case-study-rogers-tsn')">Launch</button>
+                        </div>
+                        <div class="widget-item">
+                            <span>Executive Profile Tool</span>
+                            <button class="btn-small" onclick="openWidget('modules/module-1/widgets/executive-profile')">Launch</button>
+                        </div>
+                        <div class="widget-item">
+                            <span>Learning Outcomes Tracker</span>
+                            <button class="btn-small" onclick="openWidget('modules/module-1/widgets/learning-outcomes')">Launch</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget-category">
+                    <h3>🎯 Progress Tracking</h3>
+                    <div class="widget-list">
+                        <div class="widget-item">
+                            <span>Reading Checklist</span>
+                            <button class="btn-small" onclick="openWidget('modules/module-1/widgets/reading-checklist')">Launch</button>
+                        </div>
+                        <div class="widget-item">
+                            <span>Completion Tracker</span>
+                            <button class="btn-small" onclick="openWidget('modules/module-1/widgets/completion-tracker')">Launch</button>
+                        </div>
+                        <div class="widget-item">
+                            <span>Course Development Storyboard</span>
+                            <button class="btn-small" onclick="window.location.href='index.html'">View</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget-category">
+                    <h3>📈 Coming Soon</h3>
+                    <div class="widget-list">
+                        <div class="widget-item">
+                            <span>Fan Persona Builder</span>
+                            <button class="btn-small" disabled>Week 2</button>
+                        </div>
+                        <div class="widget-item">
+                            <span>Sponsorship ROI Calculator</span>
+                            <button class="btn-small" disabled>Week 3</button>
+                        </div>
+                        <div class="widget-item">
+                            <span>Athlete Brand Value Tool</span>
+                            <button class="btn-small" disabled>Week 4</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="resources-section">
+            <h2>Learning Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>📚 Case Studies</h3>
+                    <p>Real-world examples from professional sports organizations.</p>
+                    <button class="btn btn-outline" onclick="alert('Case study library coming soon!')">Browse Cases</button>
+                </div>
+                <div class="resource-card">
+                    <h3>📖 Reading List</h3>
+                    <p>Essential books and articles for sports marketers.</p>
+                    <button class="btn btn-outline" onclick="alert('Reading list coming soon!')">View Reading List</button>
+                </div>
+                <div class="resource-card">
+                    <h3>🎥 Video Library</h3>
+                    <p>Expert interviews and campaign breakdowns.</p>
+                    <button class="btn btn-outline" onclick="alert('Video library coming soon!')">Watch Videos</button>
+                </div>
+                <div class="resource-card">
+                    <h3>📝 Templates</h3>
+                    <p>Professional templates for proposals and reports.</p>
+                    <button class="btn btn-outline" onclick="alert('Templates coming soon!')">Download Templates</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About This Course</h2>
+            <div class="about-content">
+                <p>This interactive learning platform is designed to provide hands-on experience with the tools and strategies used by professional sports marketers. Whether you're a student, professional, or sports enthusiast, you'll gain practical skills that can be immediately applied in the sports industry.</p>
+
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">✨</div>
+                        <h4>Interactive Learning</h4>
+                        <p>Engage with real-world scenarios and tools</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📊</div>
+                        <h4>Data-Driven</h4>
+                        <p>Make decisions based on analytics and metrics</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Practical Focus</h4>
+                        <p>Apply concepts immediately in your work</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">♿</div>
+                        <h4>Accessible</h4>
+                        <p>WCAG 2.1 AA compliant for all learners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 The Business of Marketing in Sport. Educational use only.</p>
+            <p>Built with ❤️ for sports business education</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation and interaction functions
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // High contrast mode toggle
+        function toggleHighContrast() {
+            const body = document.body;
+            const isHighContrast = body.classList.contains('high-contrast');
+
+            if (isHighContrast) {
+                body.classList.remove('high-contrast');
+                localStorage.setItem('high-contrast', 'false');
+            } else {
+                body.classList.add('high-contrast');
+                localStorage.setItem('high-contrast', 'true');
+            }
+        }
+
+        // Load high contrast preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const highContrastPreference = localStorage.getItem('high-contrast');
+            if (highContrastPreference === 'true') {
+                document.body.classList.add('high-contrast');
+            }
+        });
+
+        function openModule(weekNumber) {
+            // Navigate to module page (currently only Module 1 exists)
+            if (weekNumber === 1) {
+                window.location.href = `modules/module-1/index.html`;
+            } else {
+                // For other weeks, show coming soon message
+                alert(`Week ${weekNumber} content is under development. Coming soon!`);
+            }
+        }
+
+        function openWidget(widgetPath) {
+            // Check if widget exists by attempting to open it
+            if (widgetPath.includes('module-1/widgets')) {
+                window.open(`${widgetPath}.html`, 'widget', 'width=1200,height=900,resizable=yes');
+            } else {
+                alert('Widget coming soon in future course updates!');
+            }
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                if (targetId) {
+                    scrollToSection(targetId);
+                }
+            });
+        });
+
+        // Add active state to navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPosition = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${sectionId}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

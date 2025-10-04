@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Market Entry Simulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .step-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 6px;
+            opacity: 0.5;
+            transition: all 0.3s;
+        }
+
+        .step.active {
+            opacity: 1;
+            border-color: #c5b783;
+            background: rgba(197, 183, 131, 0.1);
+        }
+
+        .step.completed {
+            opacity: 1;
+            border-color: #4ade80;
+        }
+
+        .step-number {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #c5b783;
+            color: #2c2c2c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        .section {
+            display: none;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .section h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .option-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .option-card:hover {
+            border-color: #c5b783;
+            transform: translateY(-3px);
+        }
+
+        .option-card.selected {
+            border-color: #c5b783;
+            background: rgba(197, 183, 131, 0.15);
+        }
+
+        .option-card h3 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .option-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(197, 183, 131, 0.3);
+        }
+
+        .stat {
+            font-size: 0.9rem;
+        }
+
+        .stat-label {
+            color: #999;
+            font-size: 0.8rem;
+        }
+
+        .stat-value {
+            color: #c5b783;
+            font-weight: 600;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #c5b783, #b8a56f);
+            color: #2c2c2c;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-right: 1rem;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #f5f4f0;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .results-dashboard {
+            display: none;
+        }
+
+        .results-dashboard.visible {
+            display: block;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .timeline {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .timeline h3 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(197, 183, 131, 0.2);
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .timeline-year {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #c5b783;
+            min-width: 80px;
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+
+        .timeline-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .timeline-metric {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 0.75rem;
+            border-radius: 6px;
+        }
+
+        .alert-box {
+            background: rgba(251, 191, 36, 0.1);
+            border: 2px solid #fbbf24;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .alert-box strong {
+            color: #fbbf24;
+        }
+
+        @media (max-width: 768px) {
+            .step-indicator {
+                flex-wrap: wrap;
+            }
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 New Market Entry Simulator</h1>
+        <p class="subtitle">Build a sports franchise from scratch and navigate 5 years of strategic decisions</p>
+
+        <div class="step-indicator">
+            <div class="step active" id="step-1">
+                <div class="step-number">1</div>
+                <span>Choose Property</span>
+            </div>
+            <div class="step" id="step-2">
+                <div class="step-number">2</div>
+                <span>Select Market</span>
+            </div>
+            <div class="step" id="step-3">
+                <div class="step-number">3</div>
+                <span>Revenue Strategy</span>
+            </div>
+            <div class="step" id="step-4">
+                <div class="step-number">4</div>
+                <span>Investment Plan</span>
+            </div>
+        </div>
+
+        <!-- Step 1: Property Type -->
+        <div class="section active" id="section-1">
+            <h2>Step 1: Choose Your Sports Property</h2>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">Select the type of franchise you want to launch</p>
+
+            <div class="options-grid">
+                <div class="option-card" onclick="selectProperty('nhl')">
+                    <h3>🏒 NHL Expansion Team</h3>
+                    <p style="color: #ccc; margin-bottom: 1rem;">Join the National Hockey League as the 33rd franchise</p>
+                    <div class="option-stats">
+                        <div class="stat">
+                            <div class="stat-label">Entry Fee</div>
+                            <div class="stat-value">$750M</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Market Size</div>
+                            <div class="stat-value">Large</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Risk</div>
+                            <div class="stat-value">Medium</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Revenue Potential</div>
+                            <div class="stat-value">$200M+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="option-card" onclick="selectProperty('mls')">
+                    <h3>⚽ MLS Expansion Team</h3>
+                    <p style="color: #ccc; margin-bottom: 1rem;">Launch a Major League Soccer franchise</p>
+                    <div class="option-stats">
+                        <div class="stat">
+                            <div class="stat-label">Entry Fee</div>
+                            <div class="stat-value">$500M</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Market Size</div>
+                            <div class="stat-value">Medium</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Risk</div>
+                            <div class="stat-value">Medium</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Revenue Potential</div>
+                            <div class="stat-value">$70M+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="option-card" onclick="selectProperty('esports')">
+                    <h3>🎮 Esports Organization</h3>
+                    <p style="color: #ccc; margin-bottom: 1rem;">Build a multi-game esports brand</p>
+                    <div class="option-stats">
+                        <div class="stat">
+                            <div class="stat-label">Entry Fee</div>
+                            <div class="stat-value">$25M</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Market Size</div>
+                            <div class="stat-value">Global</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Risk</div>
+                            <div class="stat-value">High</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Revenue Potential</div>
+                            <div class="stat-value">$50M+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn" onclick="nextStep(1)" id="next-1" disabled>Continue →</button>
+            </div>
+        </div>
+
+        <!-- Step 2: Market Selection -->
+        <div class="section" id="section-2">
+            <h2>Step 2: Select Your Market</h2>
+            <p style="margin-bottom: 1.5rem; color: #ccc;" id="market-instruction">Choose where to establish your franchise</p>
+
+            <div class="options-grid" id="market-options">
+                <!-- Generated dynamically -->
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-secondary" onclick="prevStep(2)">← Back</button>
+                <button class="btn" onclick="nextStep(2)" id="next-2" disabled>Continue →</button>
+            </div>
+        </div>
+
+        <!-- Step 3: Revenue Strategy -->
+        <div class="section" id="section-3">
+            <h2>Step 3: Design Your Revenue Strategy</h2>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">Choose your primary revenue focus (will shape your business model)</p>
+
+            <div class="options-grid">
+                <div class="option-card" onclick="selectRevenue('ticket')">
+                    <h3>🎟️ Ticket-Driven</h3>
+                    <p style="color: #ccc;">Build exceptional in-person experience. Premium seating, luxury suites, fan engagement.</p>
+                    <div class="option-stats">
+                        <div class="stat">
+                            <div class="stat-label">Upfront Investment</div>
+                            <div class="stat-value">High</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Revenue Stability</div>
+                            <div class="stat-value">High</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Growth Ceiling</div>
+                            <div class="stat-value">Medium</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Best For</div>
+                            <div class="stat-value">NHL, MLS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="option-card" onclick="selectRevenue('media')">
+                    <h3>📺 Media-First</h3>
+                    <p style="color: #ccc;">Prioritize broadcast quality, streaming infrastructure, and content creation.</p>
+                    <div class="option-stats">
+                        <div class="stat">
+                            <div class="stat-label">Upfront Investment</div>
+                            <div class="stat-value">Medium</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Revenue Stability</div>
+                            <div class="stat-value">Medium</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Growth Ceiling</div>
+                            <div class="stat-value">Very High</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Best For</div>
+                            <div class="stat-value">All</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="option-card" onclick="selectRevenue('sponsor')">
+                    <h3>🤝 Sponsorship-Led</h3>
+                    <p style="color: #ccc;">Build brand partnerships, activations, and corporate relationships first.</p>
+                    <div class="option-stats">
+                        <div class="stat">
+                            <div class="stat-label">Upfront Investment</div>
+                            <div class="stat-value">Low</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Revenue Stability</div>
+                            <div class="stat-value">High</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Growth Ceiling</div>
+                            <div class="stat-value">Medium</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Best For</div>
+                            <div class="stat-value">MLS, Esports</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="option-card" onclick="selectRevenue('digital')">
+                    <h3>💻 Digital Ecosystem</h3>
+                    <p style="color: #ccc;">Build apps, NFTs, gaming integrations, and digital-first fan engagement.</p>
+                    <div class="option-stats">
+                        <div class="stat">
+                            <div class="stat-label">Upfront Investment</div>
+                            <div class="stat-value">Medium</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Revenue Stability</div>
+                            <div class="stat-value">Low</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Growth Ceiling</div>
+                            <div class="stat-value">Very High</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Best For</div>
+                            <div class="stat-value">Esports</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-secondary" onclick="prevStep(3)">← Back</button>
+                <button class="btn" onclick="nextStep(3)" id="next-3" disabled>Continue →</button>
+            </div>
+        </div>
+
+        <!-- Step 4: Investment Allocation -->
+        <div class="section" id="section-4">
+            <h2>Step 4: Allocate Your Year 1 Investment</h2>
+            <div class="alert-box">
+                <strong>💰 Budget:</strong> You have <span id="total-budget">$100M</span> to allocate across four categories. Balance short-term needs with long-term growth.
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <label style="color: #c5b783; font-weight: 600;">🏟️ Venue & Facilities</label>
+                        <span class="slider-value" id="venue-value">$25M (25%)</span>
+                    </div>
+                    <input type="range" id="venue-slider" min="0" max="100" value="25" oninput="updateBudget()">
+                    <p style="color: #999; font-size: 0.9rem; margin-top: 0.5rem;">Arena upgrades, training facilities, fan experience</p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <label style="color: #c5b783; font-weight: 600;">👥 Talent & Team</label>
+                        <span class="slider-value" id="talent-value">$40M (40%)</span>
+                    </div>
+                    <input type="range" id="talent-slider" min="0" max="100" value="40" oninput="updateBudget()">
+                    <p style="color: #999; font-size: 0.9rem; margin-top: 0.5rem;">Player salaries, coaching staff, front office</p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <label style="color: #c5b783; font-weight: 600;">📱 Marketing & Brand</label>
+                        <span class="slider-value" id="marketing-value">$20M (20%)</span>
+                    </div>
+                    <input type="range" id="marketing-slider" min="0" max="100" value="20" oninput="updateBudget()">
+                    <p style="color: #999; font-size: 0.9rem; margin-top: 0.5rem;">Advertising, social media, community engagement</p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                        <label style="color: #c5b783; font-weight: 600;">💻 Technology & Content</label>
+                        <span class="slider-value" id="tech-value">$15M (15%)</span>
+                    </div>
+                    <input type="range" id="tech-slider" min="0" max="100" value="15" oninput="updateBudget()">
+                    <p style="color: #999; font-size: 0.9rem; margin-top: 0.5rem;">Streaming, apps, analytics, digital infrastructure</p>
+                </div>
+
+                <div style="text-align: center; padding: 1.5rem; background: rgba(197, 183, 131, 0.1); border-radius: 8px;">
+                    <div style="font-size: 0.9rem; color: #999; margin-bottom: 0.5rem;">Remaining Budget</div>
+                    <div style="font-size: 2rem; font-weight: 700; color: #c5b783;" id="remaining-budget">$0M</div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-secondary" onclick="prevStep(4)">← Back</button>
+                <button class="btn" onclick="runSimulation()">🎯 Launch Franchise →</button>
+            </div>
+        </div>
+
+        <!-- Results Dashboard -->
+        <div class="results-dashboard" id="results">
+            <h2 style="color: #c5b783; margin-bottom: 2rem;">📊 5-Year Franchise Simulation</h2>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value" id="final-revenue">$0M</div>
+                    <div class="metric-label">Year 5 Revenue</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="roi-value">0%</div>
+                    <div class="metric-label">5-Year ROI</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="brand-value">0</div>
+                    <div class="metric-label">Brand Score</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value" id="market-share">0%</div>
+                    <div class="metric-label">Market Share</div>
+                </div>
+            </div>
+
+            <div class="timeline" id="timeline">
+                <!-- Generated dynamically -->
+            </div>
+
+            <div class="button-group">
+                <button class="btn" onclick="location.reload()">Start New Simulation</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const state = {
+            property: null,
+            market: null,
+            revenue: null,
+            budget: {
+                venue: 25,
+                talent: 40,
+                marketing: 20,
+                tech: 15
+            }
+        };
+
+        const markets = {
+            nhl: [
+                { id: 'houston', name: 'Houston, TX', population: '2.3M', gdp: 'Very High', competition: 'Medium', cost: 'Medium' },
+                { id: 'portland', name: 'Portland, OR', population: '650K', gdp: 'High', competition: 'Low', cost: 'High' },
+                { id: 'quebec', name: 'Quebec City, QC', population: '540K', gdp: 'Medium', competition: 'Low', cost: 'Low' }
+            ],
+            mls: [
+                { id: 'phoenix', name: 'Phoenix, AZ', population: '1.7M', gdp: 'High', competition: 'Medium', cost: 'Medium' },
+                { id: 'detroit', name: 'Detroit, MI', population: '670K', gdp: 'Medium', competition: 'Low', cost: 'Low' },
+                { id: 'sandiego', name: 'San Diego, CA', population: '1.4M', gdp: 'Very High', competition: 'High', cost: 'Very High' }
+            ],
+            esports: [
+                { id: 'la', name: 'Los Angeles, CA', population: '4M', gdp: 'Very High', competition: 'Very High', cost: 'Very High' },
+                { id: 'remote', name: 'Remote/Digital First', population: 'Global', gdp: 'N/A', competition: 'Very High', cost: 'Low' },
+                { id: 'seoul', name: 'Seoul, South Korea', population: '9.7M', gdp: 'Very High', competition: 'High', cost: 'High' }
+            ]
+        };
+
+        function selectProperty(type) {
+            state.property = type;
+            document.querySelectorAll('#section-1 .option-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            event.target.closest('.option-card').classList.add('selected');
+            document.getElementById('next-1').disabled = false;
+
+            // Generate market options
+            const marketOptions = document.getElementById('market-options');
+            marketOptions.innerHTML = '';
+            markets[type].forEach(market => {
+                const card = document.createElement('div');
+                card.className = 'option-card';
+                card.onclick = () => selectMarket(market.id);
+                card.innerHTML = `
+                    <h3>📍 ${market.name}</h3>
+                    <p style="color: #ccc; margin-bottom: 1rem;">Population: ${market.population}</p>
+                    <div class="option-stats">
+                        <div class="stat">
+                            <div class="stat-label">GDP/Wealth</div>
+                            <div class="stat-value">${market.gdp}</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Competition</div>
+                            <div class="stat-value">${market.competition}</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-label">Operating Cost</div>
+                            <div class="stat-value">${market.cost}</div>
+                        </div>
+                    </div>
+                `;
+                marketOptions.appendChild(card);
+            });
+        }
+
+        function selectMarket(id) {
+            state.market = id;
+            document.querySelectorAll('#section-2 .option-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            event.target.closest('.option-card').classList.add('selected');
+            document.getElementById('next-2').disabled = false;
+        }
+
+        function selectRevenue(type) {
+            state.revenue = type;
+            document.querySelectorAll('#section-3 .option-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            event.target.closest('.option-card').classList.add('selected');
+            document.getElementById('next-3').disabled = false;
+        }
+
+        function nextStep(current) {
+            document.getElementById(`section-${current}`).classList.remove('active');
+            document.getElementById(`section-${current + 1}`).classList.add('active');
+            document.getElementById(`step-${current}`).classList.remove('active');
+            document.getElementById(`step-${current}`).classList.add('completed');
+            document.getElementById(`step-${current + 1}`).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        function prevStep(current) {
+            document.getElementById(`section-${current}`).classList.remove('active');
+            document.getElementById(`section-${current - 1}`).classList.add('active');
+            document.getElementById(`step-${current}`).classList.remove('active');
+            document.getElementById(`step-${current - 1}`).classList.remove('completed');
+            document.getElementById(`step-${current - 1}`).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        function updateBudget() {
+            const venue = parseInt(document.getElementById('venue-slider').value);
+            const talent = parseInt(document.getElementById('talent-slider').value);
+            const marketing = parseInt(document.getElementById('marketing-slider').value);
+            const tech = parseInt(document.getElementById('tech-slider').value);
+
+            const total = venue + talent + marketing + tech;
+            const baseBudget = state.property === 'nhl' ? 100 : state.property === 'mls' ? 60 : 25;
+
+            document.getElementById('venue-value').textContent = `$${(venue * baseBudget / 100).toFixed(0)}M (${venue}%)`;
+            document.getElementById('talent-value').textContent = `$${(talent * baseBudget / 100).toFixed(0)}M (${talent}%)`;
+            document.getElementById('marketing-value').textContent = `$${(marketing * baseBudget / 100).toFixed(0)}M (${marketing}%)`;
+            document.getElementById('tech-value').textContent = `$${(tech * baseBudget / 100).toFixed(0)}M (${tech}%)`;
+
+            const remaining = 100 - total;
+            document.getElementById('remaining-budget').textContent = `$${(remaining * baseBudget / 100).toFixed(0)}M`;
+            document.getElementById('remaining-budget').style.color = remaining === 0 ? '#4ade80' : remaining < 0 ? '#f87171' : '#c5b783';
+
+            state.budget = { venue, talent, marketing, tech };
+        }
+
+        function runSimulation() {
+            const results = calculateResults();
+            displayResults(results);
+
+            document.getElementById('section-4').classList.remove('active');
+            document.getElementById('results').classList.add('visible');
+            window.scrollTo(0, 0);
+        }
+
+        function calculateResults() {
+            const baseBudget = state.property === 'nhl' ? 100 : state.property === 'mls' ? 60 : 25;
+            const baseRevenue = state.property === 'nhl' ? 120 : state.property === 'mls' ? 40 : 20;
+
+            const years = [];
+            let currentRevenue = baseRevenue;
+
+            for (let year = 1; year <= 5; year++) {
+                // Calculate growth based on decisions
+                let revenueGrowth = 0;
+
+                // Revenue strategy impact
+                if (state.revenue === 'ticket') revenueGrowth += 0.08;
+                else if (state.revenue === 'media') revenueGrowth += 0.12;
+                else if (state.revenue === 'sponsor') revenueGrowth += 0.10;
+                else if (state.revenue === 'digital') revenueGrowth += 0.15;
+
+                // Budget allocation impact
+                revenueGrowth += (state.budget.talent / 100) * 0.05; // Talent drives performance
+                revenueGrowth += (state.budget.marketing / 100) * 0.08; // Marketing drives awareness
+                revenueGrowth += (state.budget.tech / 100) * 0.06; // Tech enables scale
+
+                currentRevenue = currentRevenue * (1 + revenueGrowth);
+
+                years.push({
+                    year: year,
+                    revenue: currentRevenue,
+                    profit: currentRevenue - (baseBudget * 0.85),
+                    brandScore: 50 + (year * 8) + (state.budget.marketing * 0.3),
+                    marketShare: Math.min(25, 5 * year + (state.budget.marketing * 0.15))
+                });
+            }
+
+            return years;
+        }
+
+        function displayResults(years) {
+            const finalYear = years[4];
+            const entryFee = state.property === 'nhl' ? 750 : state.property === 'mls' ? 500 : 25;
+            const totalRevenue = years.reduce((sum, y) => sum + y.revenue, 0);
+            const roi = ((totalRevenue - entryFee) / entryFee * 100).toFixed(0);
+
+            document.getElementById('final-revenue').textContent = `$${finalYear.revenue.toFixed(0)}M`;
+            document.getElementById('roi-value').textContent = `${roi}%`;
+            document.getElementById('brand-value').textContent = finalYear.brandScore.toFixed(0);
+            document.getElementById('market-share').textContent = `${finalYear.marketShare.toFixed(0)}%`;
+
+            const timeline = document.getElementById('timeline');
+            timeline.innerHTML = '<h3>Year-by-Year Performance</h3>';
+
+            years.forEach(year => {
+                const item = document.createElement('div');
+                item.className = 'timeline-item';
+                item.innerHTML = `
+                    <div class="timeline-year">Year ${year.year}</div>
+                    <div class="timeline-content">
+                        <p style="color: #f5f4f0; margin-bottom: 1rem;">${generateYearNarrative(year, state)}</p>
+                        <div class="timeline-metrics">
+                            <div class="timeline-metric">
+                                <div style="color: #999; font-size: 0.8rem;">Revenue</div>
+                                <div style="color: #4ade80; font-weight: 600;">$${year.revenue.toFixed(0)}M</div>
+                            </div>
+                            <div class="timeline-metric">
+                                <div style="color: #999; font-size: 0.8rem;">Profit</div>
+                                <div style="color: ${year.profit > 0 ? '#4ade80' : '#f87171'}; font-weight: 600;">
+                                    ${year.profit > 0 ? '$' + year.profit.toFixed(0) + 'M' : '($' + Math.abs(year.profit).toFixed(0) + 'M)'}
+                                </div>
+                            </div>
+                            <div class="timeline-metric">
+                                <div style="color: #999; font-size: 0.8rem;">Brand Score</div>
+                                <div style="color: #c5b783; font-weight: 600;">${year.brandScore.toFixed(0)}/100</div>
+                            </div>
+                            <div class="timeline-metric">
+                                <div style="color: #999; font-size: 0.8rem;">Market Share</div>
+                                <div style="color: #c5b783; font-weight: 600;">${year.marketShare.toFixed(0)}%</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                timeline.appendChild(item);
+            });
+        }
+
+        function generateYearNarrative(year, state) {
+            const narratives = {
+                1: `Launch year brings excitement and challenges. Your ${state.revenue}-first strategy begins taking shape. Early brand awareness campaigns reach ${(state.budget.marketing * 500000).toLocaleString()} people.`,
+                2: `Growing pains as operations scale. ${state.budget.talent > 40 ? 'Strong talent investment pays off with competitive performance.' : 'Talent constraints limit on-field success.'} Fan base growing steadily.`,
+                3: `Hitting stride. ${state.revenue === 'media' ? 'Streaming platform reaches 150K subscribers.' : state.revenue === 'sponsor' ? 'Major sponsorship portfolio locked in.' : 'Season ticket renewals at 85%.'} Brand recognition strengthening.`,
+                4: `Maturity phase. ${state.budget.tech > 20 ? 'Digital infrastructure enables innovative fan experiences.' : 'Limited tech investment constrains growth opportunities.'} Market position solidifying.`,
+                5: `Established franchise. ${year.marketShare > 20 ? 'Strong market share makes you a major player.' : 'Building toward sustainable long-term position.'} Looking toward next phase of growth.`
+            };
+            return narratives[year.year];
+        }
+
+        // Initialize budget display
+        updateBudget();
+    </script>
+</body>
+</html>

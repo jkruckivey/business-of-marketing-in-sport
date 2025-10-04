@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study - Rogers vs TSN</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 1rem;
+            font-family: 'Benton Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafaf8;
+        }
+        
+        .case-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .case-header {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .case-title {
+            color: #2c2c2c;
+            margin: 0 0 0.5rem 0;
+            font-size: 1.75rem;
+        }
+        
+        .case-subtitle {
+            color: #666;
+            margin: 0;
+            font-size: 1.125rem;
+        }
+        
+        .scenario-section {
+            background: white;
+            border-left: 4px solid #c5b783;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .data-showcase {
+            background: #f5f4f0;
+            border: 1px solid #c5b783;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .data-point {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .data-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #c5b783;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .data-label {
+            color: #2c2c2c;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        
+        .analysis-section {
+            background: white;
+            border: 2px dashed #c5b783;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .perspective-tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 2rem;
+            border: 2px solid #c5b783;
+        }
+        
+        .tab-button {
+            background: #f5f4f0;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-family: inherit;
+            font-weight: 600;
+            color: #2c2c2c;
+            cursor: pointer;
+            flex: 1;
+            transition: all 0.2s ease;
+            border-right: 1px solid #c5b783;
+        }
+        
+        .tab-button:last-child {
+            border-right: none;
+        }
+        
+        .tab-button.active {
+            background: #c5b783;
+            color: #2c2c2c;
+        }
+        
+        .tab-button:hover {
+            background: #e6dfc7;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .analysis-prompt {
+            background: #f0f9ff;
+            border: 1px solid #0284c7;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-size: 0.875rem;
+            color: #0284c7;
+        }
+        
+        .response-area {
+            margin: 1.5rem 0;
+        }
+        
+        .response-textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 1rem;
+            border: 2px solid #c5b783;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+            transition: border-color 0.2s ease;
+        }
+        
+        .response-textarea:focus {
+            outline: none;
+            border-color: #b8a56f;
+            box-shadow: 0 0 0 3px rgba(197, 183, 131, 0.1);
+        }
+        
+        .word-count {
+            text-align: right;
+            font-size: 0.875rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        .save-indicator {
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            transform: translateY(-100px);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .save-indicator.show {
+            transform: translateY(0);
+        }
+        
+        .progress-tracker {
+            background: white;
+            border: 2px solid #c5b783;
+            padding: 1rem;
+            margin: 2rem 0;
+            position: sticky;
+            top: 1rem;
+        }
+        
+        .progress-bar {
+            background: #f5f4f0;
+            height: 8px;
+            margin: 1rem 0;
+        }
+        
+        .progress-fill {
+            background: #c5b783;
+            height: 100%;
+            transition: width 0.3s ease;
+            width: 0%;
+        }
+        
+        .completion-message {
+            background: #c5b783;
+            color: #2c2c2c;
+            padding: 1.5rem;
+            text-align: center;
+            margin: 2rem 0;
+            font-weight: 600;
+            display: none;
+        }
+        
+        .completion-message.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        /* LMS embedding optimizations */
+        @media (max-width: 700px) {
+            body {
+                padding: 0.5rem;
+            }
+            
+            .perspective-tabs {
+                flex-direction: column;
+            }
+            
+            .tab-button {
+                border-right: none;
+                border-bottom: 1px solid #c5b783;
+            }
+            
+            .tab-button:last-child {
+                border-bottom: none;
+            }
+            
+            .data-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .data-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="save-indicator" id="save-indicator">
+        ✓ Analysis Saved
+    </div>
+    
+    <div class="case-container">
+        <div class="case-header">
+            <h1 class="case-title">Case Study: The $5.2 Billion Decision</h1>
+            <p class="case-subtitle">Rogers vs. TSN - Analyzing the NHL Rights Battle</p>
+        </div>
+        
+        <div class="scenario-section">
+            <h2>The Scenario</h2>
+            <p>In 2014, Rogers Communications made a bold move that reshaped Canadian sports media forever. They paid an unprecedented <strong>$5.2 billion</strong> for exclusive NHL rights in Canada, outbidding TSN and dramatically changing the competitive landscape.</p>
+            
+            <p>TSN, which had been known as "The Home of Hockey" and built much of its identity around NHL coverage, suddenly found itself without its most valuable content. Meanwhile, Rogers bet their entire sports strategy on this massive investment.</p>
+            
+            <p><strong>Your challenge:</strong> Analyze this pivotal moment from multiple perspectives using the frameworks and insights you've learned.</p>
+        </div>
+        
+        <div class="data-showcase">
+            <h3>Key Data Points</h3>
+            <div class="data-grid">
+                <div class="data-point">
+                    <span class="data-value">$5.2B</span>
+                    <span class="data-label">Rogers Deal Value</span>
+                </div>
+                <div class="data-point">
+                    <span class="data-value">12</span>
+                    <span class="data-label">Contract Years</span>
+                </div>
+                <div class="data-point">
+                    <span class="data-value">2.9M</span>
+                    <span class="data-label">Avg NHL Viewers (2013)</span>
+                </div>
+                <div class="data-point">
+                    <span class="data-value">23%</span>
+                    <span class="data-label">TSN Viewership Decline</span>
+                </div>
+                <div class="data-point">
+                    <span class="data-value">$433M</span>
+                    <span class="data-label">Annual Rights Cost</span>
+                </div>
+                <div class="data-point">
+                    <span class="data-value">82</span>
+                    <span class="data-label">Regular Season Games</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="analysis-section">
+            <h3>Multi-Perspective Analysis</h3>
+            <p>Apply your understanding of media rights valuation, content strategy, and market dynamics to analyze this case from three critical viewpoints:</p>
+            
+            <div class="perspective-tabs">
+                <button class="tab-button active" data-tab="rogers">Rogers' Perspective</button>
+                <button class="tab-button" data-tab="tsn">TSN's Response</button>
+                <button class="tab-button" data-tab="market">Market Impact</button>
+            </div>
+            
+            <div class="tab-content active" id="rogers-tab">
+                <div class="analysis-prompt">
+                    <strong>Consider:</strong> Audience reach potential, advertising revenue opportunities, subscriber acquisition strategy, brand positioning advantages, competitive moats, ROI calculations
+                </div>
+                
+                <h4>Was Rogers' $5.2B investment justified? Analyze their strategic rationale.</h4>
+                <div class="response-area">
+                    <textarea class="response-textarea" id="rogers-analysis" placeholder="Think about: How might Rogers have calculated the value? What strategic advantages were they buying beyond just hockey games? Consider their broader business goals..."></textarea>
+                    <div class="word-count" id="rogers-count">0 words</div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="tsn-tab">
+                <div class="analysis-prompt">
+                    <strong>Consider:</strong> Alternative content strategies, audience retention tactics, cost structure adjustments, new partnership opportunities, brand repositioning
+                </div>
+                
+                <h4>How did TSN adapt to losing NHL rights? Evaluate their response strategy.</h4>
+                <div class="response-area">
+                    <textarea class="response-textarea" id="tsn-analysis" placeholder="Analyze: What content did TSN pivot to? How did they maintain their sports leadership position? What lessons can other networks learn from their adaptation?"></textarea>
+                    <div class="word-count" id="tsn-count">0 words</div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="market-tab">
+                <div class="analysis-prompt">
+                    <strong>Consider:</strong> Competition effects on pricing, consumer impact and choice, industry precedents set, influence on future negotiations, regulatory implications
+                </div>
+                
+                <h4>What were the broader implications for Canadian sports media?</h4>
+                <div class="response-area">
+                    <textarea class="response-textarea" id="market-analysis" placeholder="Examine: How did this deal change the competitive dynamics? What precedents did it set for other sports properties? How did consumers benefit or lose from this change?"></textarea>
+                    <div class="word-count" id="market-count">0 words</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="progress-tracker">
+            <h4>Analysis Progress</h4>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <p id="progress-text">Complete all three perspectives to finish your analysis</p>
+        </div>
+        
+        <div class="completion-message" id="completion-message">
+            🎉 Excellent analysis! You've examined this pivotal case from all key perspectives. Your insights demonstrate a solid understanding of media rights strategy and market dynamics.
+        </div>
+    </div>
+    
+    <script>
+        let saveTimeout;
+        let analysisProgress = { rogers: false, tsn: false, market: false };
+        
+        // Tab functionality
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const tabName = this.dataset.tab;
+                
+                // Update active tab button
+                document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Update active tab content
+                document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+                document.getElementById(tabName + '-tab').classList.add('active');
+                
+                // Focus on textarea when tab opens
+                const textarea = document.getElementById(tabName + '-analysis');
+                if (textarea) {
+                    setTimeout(() => textarea.focus(), 100);
+                }
+            });
+        });
+        
+        // Auto-save functionality
+        function showSaveIndicator() {
+            const indicator = document.getElementById('save-indicator');
+            indicator.classList.add('show');
+            setTimeout(() => indicator.classList.remove('show'), 2000);
+        }
+        
+        function saveAnalysis() {
+            clearTimeout(saveTimeout);
+            saveTimeout = setTimeout(() => {
+                const data = {
+                    rogers: document.getElementById('rogers-analysis').value,
+                    tsn: document.getElementById('tsn-analysis').value,
+                    market: document.getElementById('market-analysis').value,
+                    timestamp: new Date().toISOString()
+                };
+                
+                localStorage.setItem('module1-case-study', JSON.stringify(data));
+                showSaveIndicator();
+                
+                // Update progress
+                analysisProgress.rogers = data.rogers.trim().length > 50;
+                analysisProgress.tsn = data.tsn.trim().length > 50;
+                analysisProgress.market = data.market.trim().length > 50;
+                
+                updateProgress();
+                
+                // Notify parent frame (LMS)
+                if (window.parent !== window) {
+                    window.parent.postMessage({
+                        type: 'case-study-progress',
+                        progress: analysisProgress,
+                        wordCounts: {
+                            rogers: countWords(data.rogers),
+                            tsn: countWords(data.tsn),
+                            market: countWords(data.market)
+                        }
+                    }, '*');
+                }
+            }, 2000);
+        }
+        
+        // Word counting
+        function countWords(text) {
+            return text.trim().split(/\s+/).filter(word => word.length > 0).length;
+        }
+        
+        function updateWordCount(textareaId, countId) {
+            const textarea = document.getElementById(textareaId);
+            const counter = document.getElementById(countId);
+            
+            textarea.addEventListener('input', function() {
+                const words = countWords(this.value);
+                counter.textContent = words + ' word' + (words !== 1 ? 's' : '');
+                saveAnalysis();
+            });
+        }
+        
+        // Initialize word counters
+        updateWordCount('rogers-analysis', 'rogers-count');
+        updateWordCount('tsn-analysis', 'tsn-count');
+        updateWordCount('market-analysis', 'market-count');
+        
+        // Progress tracking
+        function updateProgress() {
+            const completed = Object.values(analysisProgress).filter(Boolean).length;
+            const percentage = (completed / 3) * 100;
+            
+            document.getElementById('progress-fill').style.width = percentage + '%';
+            
+            if (completed === 3) {
+                document.getElementById('progress-text').textContent = 'Analysis complete - well done!';
+                document.getElementById('completion-message').classList.add('show');
+            } else {
+                document.getElementById('progress-text').textContent = `${completed}/3 perspectives analyzed`;
+            }
+        }
+        
+        // Load saved data
+        function loadSavedData() {
+            const saved = localStorage.getItem('module1-case-study');
+            if (saved) {
+                const data = JSON.parse(saved);
+                
+                document.getElementById('rogers-analysis').value = data.rogers || '';
+                document.getElementById('tsn-analysis').value = data.tsn || '';
+                document.getElementById('market-analysis').value = data.market || '';
+                
+                // Trigger word count updates
+                document.getElementById('rogers-analysis').dispatchEvent(new Event('input'));
+                document.getElementById('tsn-analysis').dispatchEvent(new Event('input'));
+                document.getElementById('market-analysis').dispatchEvent(new Event('input'));
+            }
+        }
+        
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case '1':
+                        e.preventDefault();
+                        document.querySelector('[data-tab="rogers"]').click();
+                        break;
+                    case '2':
+                        e.preventDefault();
+                        document.querySelector('[data-tab="tsn"]').click();
+                        break;
+                    case '3':
+                        e.preventDefault();
+                        document.querySelector('[data-tab="market"]').click();
+                        break;
+                    case 's':
+                        e.preventDefault();
+                        saveAnalysis();
+                        break;
+                }
+            }
+        });
+        
+        // Initialize
+        loadSavedData();
+        
+        // LMS integration
+        if (window.parent !== window) {
+            console.log('Case Study widget loaded in LMS');
+        }
+        
+        // Accessibility enhancements
+        document.querySelectorAll('.tab-button').forEach((button, index) => {
+            button.setAttribute('aria-describedby', `tab-desc-${index}`);
+        });
+    </script>
+</body>
+</html>

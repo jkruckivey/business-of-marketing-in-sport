@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete Brand Value Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #999;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .panel h2 {
+            color: #c5b783;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #c5b783;
+            padding-bottom: 0.5rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            display: block;
+            color: #f5f4f0;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(197, 183, 131, 0.3);
+            border-radius: 4px;
+            color: #f5f4f0;
+            font-size: 1rem;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus {
+            outline: none;
+            border-color: #c5b783;
+        }
+
+        .slider-container {
+            margin-top: 0.5rem;
+        }
+
+        .slider-value {
+            color: #c5b783;
+            font-weight: 600;
+            margin-top: 0.25rem;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: rgba(197, 183, 131, 0.3);
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #c5b783;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #c5b783;
+            cursor: pointer;
+            border: none;
+        }
+
+        .help-text {
+            font-size: 0.85rem;
+            color: #999;
+            margin-top: 0.25rem;
+        }
+
+        .calculate-btn {
+            width: 100%;
+            padding: 1rem;
+            background: #c5b783;
+            color: #2c2c2c;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .calculate-btn:hover {
+            background: #b8a56f;
+            transform: translateY(-2px);
+        }
+
+        .results {
+            background: rgba(197, 183, 131, 0.1);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .results h2 {
+            color: #c5b783;
+            margin-bottom: 1.5rem;
+        }
+
+        .brand-value-display {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .brand-value-display .value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+        }
+
+        .brand-value-display .label {
+            color: #ccc;
+            font-size: 1rem;
+        }
+
+        .breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .breakdown-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .breakdown-card .value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+        }
+
+        .breakdown-card .label {
+            color: #ccc;
+            font-size: 0.85rem;
+        }
+
+        .recommendations {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 4px;
+            border-left: 4px solid #c5b783;
+        }
+
+        .recommendations h3 {
+            color: #c5b783;
+            margin-bottom: 1rem;
+        }
+
+        .recommendations ul {
+            margin-left: 1.5rem;
+            line-height: 2;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⭐ Athlete Brand Value Calculator</h1>
+        <p class="subtitle">Estimate endorsement potential and brand value for athletes</p>
+
+        <div class="grid">
+            <div class="panel">
+                <h2>Athletic Performance</h2>
+
+                <div class="input-group">
+                    <label for="sport">Sport / League</label>
+                    <select id="sport">
+                        <option value="1.5">NFL</option>
+                        <option value="1.4">NBA</option>
+                        <option value="1.2">MLB</option>
+                        <option value="1.3">NHL</option>
+                        <option value="1.1">MLS</option>
+                        <option value="1.6">Tennis (Grand Slam)</option>
+                        <option value="1.5">Golf (PGA)</option>
+                        <option value="0.9">Other</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="performance">Performance Level</label>
+                    <div class="slider-container">
+                        <input type="range" id="performance" min="1" max="10" value="7" step="1">
+                        <div class="slider-value">Level: <span id="performance-value">7</span>/10</div>
+                    </div>
+                    <div class="help-text">1=Rookie, 5=Solid Starter, 10=Superstar/MVP</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="championships">Championships / Awards</label>
+                    <input type="number" id="championships" value="1" min="0" step="1">
+                    <div class="help-text">Titles, All-Star selections, major awards</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="team-market">Team Market Size</label>
+                    <select id="team-market">
+                        <option value="1.5">Major (NY, LA, Toronto, London)</option>
+                        <option value="1.2">Large (Chicago, Boston, Dallas)</option>
+                        <option value="1.0">Medium (Denver, Phoenix, Seattle)</option>
+                        <option value="0.8">Small (Milwaukee, OKC, Winnipeg)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Marketability Factors</h2>
+
+                <div class="input-group">
+                    <label for="social-media">Social Media Following (Millions)</label>
+                    <input type="number" id="social-media" value="2" min="0" step="0.1">
+                    <div class="help-text">Combined Instagram, Twitter, TikTok followers</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="engagement">Social Media Engagement</label>
+                    <div class="slider-container">
+                        <input type="range" id="engagement" min="1" max="10" value="6" step="1">
+                        <div class="slider-value">Level: <span id="engagement-value">6</span>/10</div>
+                    </div>
+                    <div class="help-text">Likes, comments, shares, authentic connection</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="personality">Personality / Charisma</label>
+                    <div class="slider-container">
+                        <input type="range" id="personality" min="1" max="10" value="7" step="1">
+                        <div class="slider-value">Level: <span id="personality-value">7</span>/10</div>
+                    </div>
+                    <div class="help-text">Media presence, likability, authenticity</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="controversy">Controversy Risk</label>
+                    <select id="controversy">
+                        <option value="1.0">Clean reputation</option>
+                        <option value="0.9">Minor past issues</option>
+                        <option value="0.7">Moderate concerns</option>
+                        <option value="0.5">High risk</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Demographics & Reach</h2>
+
+                <div class="input-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" value="25" min="18" max="45" step="1">
+                </div>
+
+                <div class="input-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender">
+                        <option value="1.0">Male</option>
+                        <option value="1.2">Female</option>
+                        <option value="1.0">Non-binary</option>
+                    </select>
+                    <div class="help-text">Women's sports growing faster = bonus multiplier</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="diversity">Representation Value</label>
+                    <div class="slider-container">
+                        <input type="range" id="diversity" min="0" max="30" value="10" step="5">
+                        <div class="slider-value">Bonus: +<span id="diversity-value">10</span>%</div>
+                    </div>
+                    <div class="help-text">Underrepresented communities, cultural impact</div>
+                </div>
+
+                <div class="input-group">
+                    <label for="international">International Appeal</label>
+                    <select id="international">
+                        <option value="1.0">Domestic only</option>
+                        <option value="1.3">Regional (North America)</option>
+                        <option value="1.6">Global (2-3 continents)</option>
+                        <option value="2.0">Worldwide star</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Career Stage & Trajectory</h2>
+
+                <div class="input-group">
+                    <label for="career-stage">Career Stage</label>
+                    <select id="career-stage">
+                        <option value="0.7">Rookie (Year 1-2)</option>
+                        <option value="1.0">Emerging (Year 3-5)</option>
+                        <option value="1.3">Prime (Year 6-10)</option>
+                        <option value="1.1">Veteran (Year 11+)</option>
+                        <option value="0.8">Late Career</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="trajectory">Performance Trajectory</label>
+                    <select id="trajectory">
+                        <option value="1.3">Rising star (improving rapidly)</option>
+                        <option value="1.1">Steady performer</option>
+                        <option value="1.0">Plateau</option>
+                        <option value="0.8">Declining</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="longevity">Career Longevity Outlook</label>
+                    <div class="slider-container">
+                        <input type="range" id="longevity" min="1" max="10" value="7" step="1">
+                        <div class="slider-value">Years: <span id="longevity-value">7</span>+</div>
+                    </div>
+                    <div class="help-text">Expected years at high level</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="calculate-btn" onclick="calculateBrandValue()">Calculate Brand Value</button>
+
+        <div id="results" style="display: none;">
+            <div class="results">
+                <h2>Brand Value Assessment</h2>
+
+                <div class="brand-value-display">
+                    <div class="value" id="total-value">$0M</div>
+                    <div class="label">Annual Endorsement Potential</div>
+                </div>
+
+                <div class="breakdown">
+                    <div class="breakdown-card">
+                        <div class="value" id="base-value">$0M</div>
+                        <div class="label">Base Performance Value</div>
+                    </div>
+                    <div class="breakdown-card">
+                        <div class="value" id="social-value">$0M</div>
+                        <div class="label">Social Media Value</div>
+                    </div>
+                    <div class="breakdown-card">
+                        <div class="value" id="market-value">$0M</div>
+                        <div class="label">Market Reach</div>
+                    </div>
+                    <div class="breakdown-card">
+                        <div class="value" id="multiplier">0x</div>
+                        <div class="label">Total Multiplier</div>
+                    </div>
+                </div>
+
+                <div class="recommendations" id="recommendations">
+                    <!-- Will be populated dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Update slider displays
+        document.getElementById('performance').addEventListener('input', function(e) {
+            document.getElementById('performance-value').textContent = e.target.value;
+        });
+
+        document.getElementById('engagement').addEventListener('input', function(e) {
+            document.getElementById('engagement-value').textContent = e.target.value;
+        });
+
+        document.getElementById('personality').addEventListener('input', function(e) {
+            document.getElementById('personality-value').textContent = e.target.value;
+        });
+
+        document.getElementById('diversity').addEventListener('input', function(e) {
+            document.getElementById('diversity-value').textContent = e.target.value;
+        });
+
+        document.getElementById('longevity').addEventListener('input', function(e) {
+            document.getElementById('longevity-value').textContent = e.target.value;
+        });
+
+        function calculateBrandValue() {
+            // Get all inputs
+            const sport = parseFloat(document.getElementById('sport').value);
+            const performance = parseFloat(document.getElementById('performance').value);
+            const championships = parseFloat(document.getElementById('championships').value);
+            const teamMarket = parseFloat(document.getElementById('team-market').value);
+            const socialMedia = parseFloat(document.getElementById('social-media').value);
+            const engagement = parseFloat(document.getElementById('engagement').value);
+            const personality = parseFloat(document.getElementById('personality').value);
+            const controversy = parseFloat(document.getElementById('controversy').value);
+            const age = parseFloat(document.getElementById('age').value);
+            const gender = parseFloat(document.getElementById('gender').value);
+            const diversity = parseFloat(document.getElementById('diversity').value);
+            const international = parseFloat(document.getElementById('international').value);
+            const careerStage = parseFloat(document.getElementById('career-stage').value);
+            const trajectory = parseFloat(document.getElementById('trajectory').value);
+            const longevity = parseFloat(document.getElementById('longevity').value);
+
+            // Base value calculation (performance-driven)
+            const baseValue = (performance * 0.5) + (championships * 0.3);
+
+            // Social media value (followers + engagement)
+            const socialValue = (socialMedia * 0.1) * (engagement / 10);
+
+            // Market reach value
+            const marketValue = teamMarket * international * (1 + (diversity / 100)) * gender;
+
+            // Total multiplier
+            const totalMultiplier = sport * controversy * careerStage * trajectory * (longevity / 10);
+
+            // Final calculation
+            const totalValue = (baseValue + socialValue + marketValue) * totalMultiplier;
+
+            // Display results
+            document.getElementById('total-value').textContent = '$' + totalValue.toFixed(1) + 'M';
+            document.getElementById('base-value').textContent = '$' + baseValue.toFixed(1) + 'M';
+            document.getElementById('social-value').textContent = '$' + socialValue.toFixed(1) + 'M';
+            document.getElementById('market-value').textContent = '$' + marketValue.toFixed(1) + 'M';
+            document.getElementById('multiplier').textContent = totalMultiplier.toFixed(2) + 'x';
+
+            // Generate recommendations
+            const recommendations = [];
+
+            if (socialMedia < 1) {
+                recommendations.push('📱 <strong>Social Media Growth:</strong> Focus on building authentic social presence - critical for modern endorsements');
+            }
+
+            if (engagement < 5) {
+                recommendations.push('💬 <strong>Engagement Strategy:</strong> Low engagement limits value - work on authentic fan connection and content quality');
+            }
+
+            if (personality < 6) {
+                recommendations.push('🎤 <strong>Media Training:</strong> Invest in media presence and personality development for better marketability');
+            }
+
+            if (controversy < 1.0) {
+                recommendations.push('⚠️ <strong>Reputation Risk:</strong> Past controversies significantly impact brand value - reputation management crucial');
+            }
+
+            if (international < 1.3) {
+                recommendations.push('🌍 <strong>Global Expansion:</strong> Limited international appeal - consider partnerships that expand global reach');
+            }
+
+            if (age > 30 && careerStage === 1.1) {
+                recommendations.push('⏰ <strong>Career Stage:</strong> Veteran status - maximize near-term deals, consider post-career brand planning');
+            }
+
+            if (performance >= 8 && socialMedia < 2) {
+                recommendations.push('🚀 <strong>Opportunity Gap:</strong> Elite performance but low social presence - huge growth potential with digital strategy');
+            }
+
+            if (gender === 1.2 && totalValue > 3) {
+                recommendations.push('📈 <strong>Women\'s Sports Boom:</strong> Positioned well for women\'s sports sponsorship growth - timing is excellent');
+            }
+
+            if (diversity > 15) {
+                recommendations.push('🌟 <strong>Representation Value:</strong> Strong representation appeal - leverage cultural impact for purpose-driven brands');
+            }
+
+            if (totalValue > 10) {
+                recommendations.push('💰 <strong>Elite Tier:</strong> Top-tier brand value - target premium global brands (Nike, Adidas, luxury)');
+            } else if (totalValue > 5) {
+                recommendations.push('💰 <strong>Strong Value:</strong> Solid endorsement potential - target major brands and regional sponsors');
+            } else if (totalValue > 2) {
+                recommendations.push('💰 <strong>Emerging Value:</strong> Building brand value - focus on emerging brands and performance-based deals');
+            } else {
+                recommendations.push('💰 <strong>Developing Brand:</strong> Early stage - focus on performance and building authentic presence');
+            }
+
+            document.getElementById('recommendations').innerHTML = `
+                <h3>📊 Brand Strategy Recommendations</h3>
+                <ul>
+                    ${recommendations.map(rec => `<li>${rec}</li>`).join('')}
+                </ul>
+            `;
+
+            // Show results
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+</html>

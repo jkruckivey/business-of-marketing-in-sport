@@ -49,12 +49,20 @@ node sports-content-reviewer-fast.js "../modules/module-1/index.html"
 **Depth:** Thorough iterative review with verification
 **Output:** Detailed markdown reports
 
-**Available:**
+**Quality Assurance Agents:**
 1. **sports-content-reviewer.js** - Comprehensive pedagogical review
 2. **accessibility-auditor.js** - Full WCAG 2.1 AA compliance audit
 3. **branding-checker.js** - Ivey design system validation
 4. **canvas-lms-validator.js** - LMS integration compatibility
 5. **widget-tester.js** - Interactive functionality testing
+
+**Advanced Simulation & Analysis Agents:**
+6. **widget-student-simulator.js** - Simulates MBA students using widgets (3 personas)
+7. **sports-industry-updater.js** - Checks for outdated 2024-25 industry content
+8. **student-journey-simulator.js** - Simulates complete 5-week student experience
+9. **consistency-checker.js** - Cross-module narrative flow & concept threading
+10. **rubric-generator.js** - Auto-generates QM-aligned rubrics from learning outcomes
+11. **udl-content-generator.js** - Creates multimodal content (audio, visual, interactive)
 
 **Usage:**
 ```bash
@@ -249,12 +257,20 @@ node watch.js
 ├── Fast API Agents (5-15 seconds)
 │   └── sports-content-reviewer-fast.js
 │
-├── SDK Agents (2-5 minutes, thorough)
+├── SDK Agents - Quality Assurance (2-5 minutes)
 │   ├── sports-content-reviewer.js
 │   ├── accessibility-auditor.js
 │   ├── branding-checker.js
 │   ├── canvas-lms-validator.js
 │   └── widget-tester.js
+│
+├── SDK Agents - Advanced Analysis (3-8 minutes)
+│   ├── widget-student-simulator.js
+│   ├── sports-industry-updater.js
+│   ├── student-journey-simulator.js (uses Opus)
+│   ├── consistency-checker.js (uses Opus)
+│   ├── rubric-generator.js
+│   └── udl-content-generator.js
 │
 ├── Automation
 │   └── watch.js (file monitoring)
@@ -264,7 +280,117 @@ node watch.js
     ├── accessibility-report.md
     ├── branding-report.md
     ├── canvas-validation-report.md
-    └── widget-test-report.md
+    ├── widget-test-report.md
+    ├── widget-simulation-report.md
+    ├── industry-context-update-report.md
+    ├── student-journey-report.md
+    ├── cross-module-consistency-report.md
+    ├── [assignment]-rubric-student.md
+    ├── [assignment]-rubric-faculty.md
+    └── [module]-udl-*.md (audio, infographic, activities, etc.)
+```
+
+---
+
+## 🎯 Advanced Agent Capabilities
+
+### Widget Student Simulator
+**What it does**: Simulates 3 MBA student personas interacting with widgets
+- **Quick Learner**: Confident, tests edge cases, expects instant results
+- **Methodical Analyst**: Thorough, validates manually, checks all features
+- **Struggling Student**: Less tech-savvy, may skip instructions, needs clear errors
+
+**Output**: widget-simulation-report.md with pass/fail per persona, UX issues, recommended fixes
+
+**Usage**:
+```bash
+node widget-student-simulator.js "../modules/module-1/widgets/revenue-empire-builder.html"
+```
+
+---
+
+### Sports Industry Context Updater
+**What it does**: Identifies outdated 2024-25 sports business content
+- Flags old financial data (media rights, sponsorships, team values)
+- Checks executive/company references (TSN, FanDuel, MLSE, HHOF)
+- Validates case study relevance (have circumstances changed?)
+- Suggests current replacements with sources
+
+**Output**: industry-context-update-report.md with priority updates
+
+**Usage**:
+```bash
+node sports-industry-updater.js "../modules/module-1/index.html"
+```
+
+---
+
+### Student Journey Simulator
+**What it does**: Simulates complete 5-week student experience through all modules
+- **4 Personas**: Visual Learner, Analytical Thinker, Collaborative Leader, Time-Constrained Professional
+- Tests learning progression, Anchor Project feasibility, cognitive load
+- Identifies transition issues, prerequisite gaps, workload bottlenecks
+
+**Output**: student-journey-report.md with completion metrics, persona logs, critical issues
+
+**Usage**:
+```bash
+node student-journey-simulator.js "../modules"
+```
+
+**Note**: Uses Opus model for complex journey analysis
+
+---
+
+### Cross-Module Consistency Checker
+**What it does**: Ensures course narrative flows cohesively across weeks
+- **Concept Threading**: Tracks Week 1 concepts through Week 5
+- **CLO Alignment**: Validates outcome-to-assessment connections
+- **Terminology Consistency**: Builds glossary, flags inconsistent usage
+- **Anchor Project Integration**: Checks if weekly content supports milestones
+
+**Output**: cross-module-consistency-report.md with threading map, CLO matrix, priority fixes
+
+**Usage**:
+```bash
+node consistency-checker.js "../modules"
+```
+
+**Note**: Uses Opus model for cross-module synthesis
+
+---
+
+### Assessment Rubric Generator
+**What it does**: Auto-generates QM-aligned rubrics from learning outcomes
+- Extracts assessment criteria from learning outcomes
+- Creates 4-5 performance levels (Exemplary → Missing)
+- Generates TWO versions: student-facing & faculty grading
+- Includes sports business context and MBA-level expectations
+
+**Output**:
+- `[assignment]-rubric-student.md` (clear, encouraging, with examples)
+- `[assignment]-rubric-faculty.md` (point allocation, calibration notes)
+
+**Usage**:
+```bash
+node rubric-generator.js "../modules/module-1/assessment-reflection-memo.md"
+```
+
+---
+
+### UDL Multimodal Content Generator
+**What it does**: Transforms text content into alternative UDL formats
+- **Audio Scripts**: Complete narration for auditory learners
+- **Infographic Blueprints**: Visual design specs for key concepts
+- **Interactive Activities**: Kinesthetic exercises (card sorts, simulations)
+- **Reading Scaffolds**: Support for text learners (vocabulary, organizers)
+- **Podcast Outlines**: Collaborative learning format
+
+**Output**: 6 files per module (audio, infographic, activities, reading, podcast, summary)
+
+**Usage**:
+```bash
+node udl-content-generator.js "../modules/module-1/index.html"
 ```
 
 ---

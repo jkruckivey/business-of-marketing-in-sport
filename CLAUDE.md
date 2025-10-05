@@ -285,3 +285,39 @@ business-of-marketing-in-sport/
     - Team coordination via discussion boards and collaboration tools
     - No synchronous attendance requirements
     - Maintains executive industry insights through recorded content
+
+- 2025-10-05: AI Agent System Expansion and Module 1 SME Alignment
+  - **AI Agent Infrastructure Enhancement**:
+    - Built two-track agent system: Fast API agents (5-15s) + SDK agents (2-5min)
+    - Created sports-content-reviewer-fast.js using direct Anthropic API with streaming
+    - Updated system prompt to respect SME-approved design choices (reflection memos, "Understand" verbs where appropriate, gradual Anchor Project introduction)
+    - All agents now save markdown reports while streaming to console
+  - **Advanced Agent Development** (6 new SDK-based agents):
+    - widget-student-simulator.js: Simulates 3 MBA personas (Quick Learner, Methodical Analyst, Struggling Student) testing widgets, found critical bugs in revenue-crisis-simulator (random outcomes line 559, missing export, hidden calculations)
+    - sports-industry-updater.js: Validates 2024-25 sports business context, checks executive/company updates, flags outdated financial data
+    - student-journey-simulator.js: Simulates complete 5-week experience with 4 personas (Visual Learner, Analytical Thinker, Collaborative Leader, Time-Constrained Professional), uses Opus for complex analysis
+    - consistency-checker.js: Cross-module narrative flow analysis, concept threading (Week 1→5), CLO alignment matrix, terminology glossary, uses Opus
+    - rubric-generator.js: Auto-generates QM-aligned rubrics from learning outcomes, creates student-facing and faculty grading versions
+    - udl-content-generator.js: Transforms content into multimodal formats (audio scripts, infographic blueprints, interactive activities, reading scaffolds, podcast outlines)
+  - **Interactive Launcher System**:
+    - agent-launcher.js: Beautiful CLI menu with colored output (chalk library), 11 agents total
+    - LAUNCH-AGENTS.bat: Windows double-click launcher with Node.js and .env validation
+    - Quick actions: w1-w5 for module reviews, journey/consistency shortcuts
+    - Added npm scripts: "npm start" launches interactive menu
+    - Created LAUNCHER-GUIDE.md with usage instructions and .exe build process
+  - **Module 1 SME Alignment Completion**:
+    - Integrated NHL Vancouver Canucks case (W14149) as Week 1 centerpiece
+    - Updated learning outcomes to focus on regional sports media strategy (maintaining measurable verbs: Analyze, Assess, Evaluate, Apply)
+    - Connected Bell Media/TSN executive session to Canucks case analysis
+    - Specified 1-page reflection memo assessment (20% of grade) with format requirements
+    - Updated resources to prioritize case materials and Canadian context
+  - **Repository Cleanup**:
+    - Merged feature/storyboard-development branch into main (resolved conflicts preserving recent SME work)
+    - Deleted feature branch (local and remote)
+    - Consolidated all course development work into single main branch
+  - **Agent Capabilities Summary**:
+    - All agents generate comprehensive markdown reports with priority-ranked issues
+    - Provide before/after code examples with specific line numbers
+    - Strategic model usage: Haiku (fast), Sonnet (standard), Opus (complex reasoning)
+    - Persona-based testing reveals UX issues across student skill levels
+    - Export functionality, calculation transparency, help systems identified as critical needs

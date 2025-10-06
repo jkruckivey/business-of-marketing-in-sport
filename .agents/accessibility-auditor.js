@@ -5,7 +5,7 @@ dotenv.config();
 
 /**
  * Accessibility Auditor Agent
- * Scans educational widgets for WCAG 2.1 AA compliance
+ * Scans educational widgets for WCAG 2.2 AA compliance
  *
  * Checks:
  * - Color contrast ratios (4.5:1 for normal text, 3:1 for large text)
@@ -13,9 +13,10 @@ dotenv.config();
  * - Keyboard navigation support
  * - Screen reader compatibility
  * - Alt text for images
+ * - WCAG 2.2 specific criteria (focus appearance, dragging, target size, etc.)
  */
 
-const accessibilityAgentPrompt = `You are a WCAG 2.1 AA accessibility compliance expert for educational technology tools.
+const accessibilityAgentPrompt = `You are a WCAG 2.2 AA accessibility compliance expert for educational technology tools.
 
 Your role is to audit HTML/CSS files and identify accessibility issues:
 
@@ -42,16 +43,29 @@ Your role is to audit HTML/CSS files and identify accessibility issues:
    - Link text is descriptive (not "click here")
    - Dynamic content has aria-live regions
 
-5. IVEY SPECIFIC STANDARDS
+5. WCAG 2.2 NEW CRITERIA (Level AA)
+   - 2.4.11 Focus Not Obscured (Minimum): Focused element must be at least partially visible
+   - 2.4.12 Focus Not Obscured (Enhanced): Focused element fully visible (AAA, check if possible)
+   - 2.4.13 Focus Appearance: Focus indicator has minimum 2px perimeter, 3:1 contrast
+   - 2.5.7 Dragging Movements: Provide single-pointer alternative for drag operations
+   - 2.5.8 Target Size (Minimum): Interactive targets at least 24x24 CSS pixels (with exceptions)
+   - 3.2.6 Consistent Help: Help mechanisms in consistent order across pages
+   - 3.3.7 Redundant Entry: Don't ask for same info twice (use autocomplete)
+   - 3.3.8 Accessible Authentication (Minimum): No cognitive function tests for auth
+   - 3.3.9 Accessible Authentication (Enhanced): No cognitive tests at all (AAA)
+
+6. IVEY SPECIFIC STANDARDS
    - Colors: #034638 (green), #582C83 (purple), #c5b783 (gold)
    - All colors must meet contrast requirements
    - Check responsive design at 320px, 768px, 1024px
+   - Interactive widgets must support touch and mouse
 
 Provide:
 - Specific line numbers for issues
 - Exact fixes with code examples
 - Priority levels (Critical, High, Medium, Low)
-- Total compliance score (%)`;
+- WCAG 2.2 compliance score (%)
+- List which new 2.2 criteria apply`;
 
 // Example usage function
 async function auditProject(projectPath) {
@@ -59,20 +73,21 @@ async function auditProject(projectPath) {
 
   try {
     const result = query({
-      prompt: `Please audit all HTML and CSS files in ${projectPath} for WCAG 2.1 AA compliance.
+      prompt: `Please audit all HTML and CSS files in ${projectPath} for WCAG 2.2 AA compliance.
 
 Generate a detailed accessibility report with:
-1. Summary of critical issues
+1. Summary of critical issues (including WCAG 2.2 criteria)
 2. File-by-file breakdown with line numbers
 3. Specific code fixes
-4. Overall compliance score
+4. Overall WCAG 2.2 compliance score
+5. Which WCAG 2.2 new criteria are applicable
 
 Save the report as accessibility-report.md in the current directory.`,
 
       options: {
         agents: {
           'accessibility-auditor': {
-            description: 'WCAG 2.1 AA compliance auditor for educational widgets',
+            description: 'WCAG 2.2 AA compliance auditor for educational widgets',
             tools: ['read', 'grep', 'glob', 'write'],
             prompt: accessibilityAgentPrompt,
             model: 'sonnet'

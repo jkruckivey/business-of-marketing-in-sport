@@ -152,6 +152,47 @@
             outline: 3px solid var(--accent-color);
             outline-offset: 2px;
         }
+
+        /* Skip navigation styles */
+        .skip-nav {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+            z-index: 100;
+            font-weight: 600;
+        }
+
+        .skip-nav:focus {
+            top: 0;
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* Focus-visible for keyboard-only focus indicators */
+        .engagement-option:focus-visible,
+        a:focus-visible,
+        .module-link:focus-visible {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* Visually hidden text for screen readers */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
     </style>
 </head>
 <body>
@@ -163,8 +204,8 @@
         <div class="container">
             <nav aria-label="Breadcrumb">
                 <a href="../../index.html">Course Home</a>
-                <span>→</span>
-                <span>Module 1: Live Content & Media Rights</span>
+                <span aria-hidden="true">→</span>
+                <span aria-current="page">Module 1: Live Content & Media Rights</span>
             </nav>
         </div>
     </div>
@@ -269,7 +310,7 @@
             
             <div class="resources-grid">
                 <div class="resource-card">
-                    <span class="resource-type">Essential Reading</span>
+                    <span class="resource-type" aria-label="Resource type: Essential Reading">Essential Reading</span>
                     <h3>Case Study & Context Materials</h3>
                     <ul>
                         <li><strong>NHL Vancouver Canucks Case Study (W14149)</strong> - Primary (45 min)</li>
@@ -281,7 +322,7 @@
                 </div>
                 
                 <div class="resource-card">
-                    <span class="resource-type">Video Content</span>
+                    <span class="resource-type" aria-label="Resource type: Video Content">Video Content</span>
                     <h3>Visual Learning Materials</h3>
                     <ul>
                         <li>Media Rights Negotiation Process (12 min)</li>
@@ -292,7 +333,7 @@
                 </div>
                 
                 <div class="resource-card">
-                    <span class="resource-type">Interactive</span>
+                    <span class="resource-type" aria-label="Resource type: Interactive">Interactive</span>
                     <h3>Hands-On Activities</h3>
                     <ul>
                         <li>Media Rights Valuation Calculator</li>
@@ -303,7 +344,7 @@
                 </div>
                 
                 <div class="resource-card">
-                    <span class="resource-type">Optional</span>
+                    <span class="resource-type" aria-label="Resource type: Optional">Optional</span>
                     <h3>Extension Materials</h3>
                     <ul>
                         <li>Academic Research Papers</li>
@@ -344,27 +385,29 @@
             <h2 id="engagement-heading">How Would You Like to Engage?</h2>
             <p>Choose your preferred way to participate in this module. You can change your selection at any time.</p>
             
-            <div class="engagement-options" aria-labelledby="engagement-heading">
-                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
+            <div class="engagement-options" aria-labelledby="engagement-heading" role="group">
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false" aria-label="Select Visual Learner preference: Focus on infographics, charts, and video content">
                     <h4>Visual Learner</h4>
                     <p>Focus on infographics, charts, and video content</p>
                 </div>
-                
-                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
+
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false" aria-label="Select Audio Learner preference: Emphasize podcasts, audio summaries, and discussions">
                     <h4>Audio Learner</h4>
                     <p>Emphasize podcasts, audio summaries, and discussions</p>
                 </div>
-                
-                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
+
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false" aria-label="Select Interactive Learner preference: Hands-on tools, simulations, and collaborative activities">
                     <h4>Interactive Learner</h4>
                     <p>Hands-on tools, simulations, and collaborative activities</p>
                 </div>
-                
-                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
+
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false" aria-label="Select Reading and Research preference: Text-based materials, case studies, and written analysis">
                     <h4>Reading & Research</h4>
                     <p>Text-based materials, case studies, and written analysis</p>
                 </div>
             </div>
+
+            <div role="status" aria-live="polite" aria-atomic="true" class="sr-only" id="preference-announcement"></div>
             
             <div class="accessibility-note">
                 <strong>Universal Design Note:</strong> All content is available in multiple formats regardless of your selection. This preference simply helps us highlight the most relevant materials for your learning style.
@@ -416,29 +459,29 @@
         </section>
     </main>
     
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Module Support</h4>
+                    <h3>Module Support</h3>
                     <ul>
                         <li><a href="#help">Technical Help</a></li>
                         <li><a href="#accessibility">Accessibility Options</a></li>
                         <li><a href="#feedback">Module Feedback</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h4>Learning Support</h4>
+                    <h3>Learning Support</h3>
                     <ul>
                         <li><a href="#study-groups">Study Groups</a></li>
                         <li><a href="#office-hours">Virtual Office Hours</a></li>
                         <li><a href="#resources">Additional Resources</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
-                    <h4>Module Progress</h4>
+                    <h3>Module Progress</h3>
                     <p>Track your learning journey and connect concepts across all five modules.</p>
                 </div>
             </div>
@@ -463,6 +506,10 @@
                 // Store preference (could be saved to localStorage or user profile)
                 const preference = this.querySelector('h4').textContent;
                 console.log('Learning preference selected:', preference);
+
+                // Announce preference to screen readers
+                const announcement = document.getElementById('preference-announcement');
+                announcement.textContent = `${preference} preference selected. Content will be personalized to your learning style.`;
             });
             
             // Keyboard support

@@ -84,12 +84,33 @@
             margin: 1rem 0;
             border: 2px solid #c5b783;
         }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2c2c2c;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        .nav a:focus,
+        .activity-button:focus {
+            outline: 3px solid #2c2c2c;
+            outline-offset: 2px;
+        }
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="nav">
         <a href="../../index.html">← Back to Course Storyboard</a>
     </div>
+
+    <main id="main-content">
 
     <h1>Week 2: Media, Content & Fan Engagement (The Core Product)</h1>
 
@@ -122,10 +143,10 @@
 
     <div class="activity-embed">
         <strong>📊 Interactive Activities:</strong><br>
-        <button class="activity-button" onclick="openWidget('widgets/media-rights-calculator.html')">Media Rights Calculator</button>
+        <button class="activity-button" onclick="openWidget('widgets/media-rights-calculator.html')" aria-label="Open Media Rights Calculator widget in new window">Media Rights Calculator</button>
     </div>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h3>MLO 2.2: Compare Broadcasting Models</h3>
     <div class="alignment">Aligns with CLO 2: Evaluate Media & Fan Monetization</div>
@@ -148,10 +169,10 @@
 
     <div class="activity-embed">
         <strong>📊 Interactive Activities:</strong><br>
-        <button class="activity-button" onclick="openWidget('widgets/platform-comparison.html')">Linear vs DTC Platform Comparison</button>
+        <button class="activity-button" onclick="openWidget('widgets/platform-comparison.html')" aria-label="Open Linear vs DTC Platform Comparison widget in new window">Linear vs DTC Platform Comparison</button>
     </div>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h3>MLO 2.3: Understand Fan Engagement Monetization</h3>
     <div class="alignment">Aligns with CLO 2: Evaluate Media & Fan Monetization</div>
@@ -172,7 +193,7 @@
         <li>After video: Memo includes engagement strategy for Rogers/Sportsnet</li>
     </ul>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h3>MLO 2.4: Evaluate Rogers NHL Deal</h3>
     <div class="alignment">Aligns with CLO 2: Evaluate Media & Fan Monetization</div>
@@ -193,7 +214,7 @@
         <li>After video: 2-page mini-case memo - was the deal worth it?</li>
     </ul>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h2>Anchor Project: Team Formation & Property Selection</h2>
 
@@ -222,11 +243,11 @@
 
     <div class="activity-embed">
         <strong>🎯 Anchor Project Tools:</strong><br>
-        <button class="activity-button" onclick="openWidget('widgets/property-selector.html')">Property Selection Tool</button>
-        <button class="activity-button" onclick="openWidget('widgets/team-charter.html')">Team Charter Builder</button>
+        <button class="activity-button" onclick="openWidget('widgets/property-selector.html')" aria-label="Open Property Selection Tool widget in new window">Property Selection Tool</button>
+        <button class="activity-button" onclick="openWidget('widgets/team-charter.html')" aria-label="Open Team Charter Builder widget in new window">Team Charter Builder</button>
     </div>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h2>Week 2 Assessment Summary</h2>
 
@@ -251,7 +272,7 @@
         <li><strong>2-page mini-case memo (all MLOs):</strong> Evaluate Rogers $5.2B NHL deal with platform strategy recommendation, fan engagement tactics, and executive insights integration</li>
     </ul>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h2>Executive Video Content (90 minutes total)</h2>
 
@@ -275,7 +296,7 @@
         <li>Future of sports media rights in Canada</li>
     </ul>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h2>Content Delivery Formats (UDL)</h2>
 
@@ -302,6 +323,8 @@
         <li><strong>Strategic:</strong> Platform recommendations and engagement tactics</li>
         <li><strong>Collaborative:</strong> Group simulation participation and discussion</li>
     </ul>
+
+    </main>
 
     <div class="nav">
         <a href="../../index.html">← Back to Course Storyboard</a>

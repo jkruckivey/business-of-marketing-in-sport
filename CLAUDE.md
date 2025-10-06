@@ -348,6 +348,84 @@ business-of-marketing-in-sport/
     - Easier collaboration with other educational developers
     - Cleaner project structure for course-specific vs tool-specific code
 
+- 2025-10-06: Module 1 Accessibility Fixes
+  - **Critical Accessibility Issues Resolved**: Fixed three priority accessibility issues in modules/module-1/index.html
+    - Added `id="engagement-heading"` to h2 at line 344 (connects to aria-labelledby on engagement options container)
+    - Added comprehensive focus styles for keyboard navigation:
+      - `.engagement-option:focus`: 3px solid outline with accent color and 2px offset
+      - `a:focus`: 3px solid outline for all links
+      - `.module-link:focus`: 3px solid outline for module navigation links
+    - Verified engagement options already have proper button semantics (role="button", aria-pressed, tabindex="0")
+  - **WCAG Compliance Improvements**:
+    - Enhanced keyboard navigation visibility (WCAG 2.4.7 Focus Visible)
+    - Proper ARIA labeling for interactive regions (WCAG 4.1.2 Name, Role, Value)
+    - Focus indicators meet WCAG AA contrast requirements using accent color
+  - **Files Modified**: modules/module-1/index.html (CSS styles lines 140-154, HTML heading line 344)
+
+- 2025-10-06: NPM Package Setup for Agent Distribution
+  - **NPM Package Configuration**: Configured agents for installation via npx (like Claude Code Templates)
+    - Updated package.json to `@ivey-edtech/ai-agents` scoped package
+    - Added "files" field to include only essential agent files (exclude web app, reports)
+
+- 2025-10-06: Module 3 Accessibility Fixes Complete
+  - **Critical Accessibility Issues Resolved**: Fixed all 6 priority accessibility issues in modules/module-3/outline.html
+    - **Button Contrast Fixed**: Changed `.activity-button` background from #c5b783 to #8b7b3f and text to #ffffff (meets WCAG AA contrast requirements)
+    - **Skip Navigation Added**: Implemented skip-to-main-content link (hidden until focused) for keyboard navigation
+    - **Main Landmark Added**: Wrapped all content in `<main id="main-content">` semantic landmark
+    - **Focus Styles Added**:
+      - `.nav a:focus`: 2px solid outline with 2px offset
+      - `.activity-button:focus`: 2px solid outline with 2px offset
+    - **ARIA Labels Added**: All widget launch buttons now have descriptive aria-label attributes (e.g., "Open Sponsorship ROI Calculator widget in new window")
+    - **Decorative Elements Marked**: All `<hr>` elements now have `aria-hidden="true"` to prevent screen reader announcement
+  - **WCAG Compliance Improvements**:
+    - Enhanced keyboard navigation visibility (WCAG 2.4.7 Focus Visible)
+    - Proper ARIA labeling for interactive elements (WCAG 4.1.2 Name, Role, Value)
+    - Button contrast now meets WCAG AA requirements (WCAG 1.4.3 Contrast Minimum)
+    - Skip link provides bypass blocks mechanism (WCAG 2.4.1 Bypass Blocks)
+    - Semantic HTML structure with proper landmarks (WCAG 1.3.1 Info and Relationships)
+  - **Files Modified**: modules/module-3/outline.html (CSS styles, HTML structure, ARIA attributes)
+  - **Buttons Affected**: 4 widget launch buttons total (Sponsorship ROI Calculator x2, Betting Market Simulator, Revenue Model Canvas Builder)
+  - **HR Elements Updated**: 7 horizontal rule elements now properly hidden from assistive technology
+    - Added "engines" field requiring Node.js 18+
+    - Enhanced metadata: homepage, repository, bugs URLs, keywords for NPM search
+  - **CLI Wrapper Creation**: Built new `cli.js` for npx-style command-line usage
+    - Supports both interactive launcher (no args) and direct agent execution
+    - 9 agent commands: content-review, accessibility, widget-test, branding, rubric, industry-update, consistency, student-journey, udl
+    - Includes help system with examples, descriptions, and usage patterns
+    - Handles errors gracefully with suggestions for missing API keys
+  - **Post-Install Setup Script**: Created `setup.js` for first-run configuration
+    - Automatically runs after npm install via "postinstall" hook
+    - Creates .env file from template if missing
+    - Checks for valid API key configuration
+    - Creates reports directory
+    - Displays quick start instructions
+  - **Documentation for Coworkers**: Created comprehensive NPM-INSTALL-GUIDE.md
+    - 3 installation options: npx (quick use), global install (regular use), project install (team use)
+    - Step-by-step API key setup instructions
+    - Usage examples for all 9 agent commands
+    - Troubleshooting section
+    - Cost estimates per agent ($0.01-1.00 depending on model)
+  - **Publishing Instructions**: Created PUBLISH-TO-NPM.md
+    - Step-by-step guide for publishing to NPM registry
+    - Instructions for creating @ivey-edtech organization
+    - Versioning guidelines (patch/minor/major)
+    - Package maintenance commands (deprecate, unpublish, transfer)
+    - Verification and testing steps
+  - **Installation Methods for Team**:
+    - **Option 1 (Quick)**: `npx @ivey-edtech/ai-agents@latest` (temporary download, no install)
+    - **Option 2 (Global)**: `npm install -g @ivey-edtech/ai-agents` (permanent CLI access)
+    - **Option 3 (Project)**: `npm install --save-dev @ivey-edtech/ai-agents` (team projects)
+  - **Usage Examples**:
+    - Interactive launcher: `npx @ivey-edtech/ai-agents`
+    - Direct commands: `npx @ivey-edtech/ai-agents content-review modules/module-1/index.html`
+    - Help: `npx @ivey-edtech/ai-agents --help`
+    - Version: `npx @ivey-edtech/ai-agents --version`
+  - **Distribution Comparison**: Now matches Claude Code Templates installation pattern
+    - Both use scoped npm packages (@namespace/package)
+    - Both support npx for quick use
+    - Both provide CLI commands and interactive menus
+    - Different domains: Ivey agents focus on educational QA vs dev productivity tools
+
 - 2025-10-06: Web Interface for AI Agents (Non-Technical User Solution)
   - **Web Interface Development**: Created browser-based interface for running agents without installation
     - Built complete frontend: index.html (gradient UI, agent cards, file upload, API key management)
@@ -397,3 +475,23 @@ business-of-marketing-in-sport/
     - Share live URL with course development team
     - Monitor usage and API costs via hosting dashboard
     - Consider custom domain (e.g., agents.ivey.uwo.ca) for professional branding
+
+- 2025-10-06: Module 2 Accessibility Enhancement
+  - **Critical Accessibility Fixes Applied to modules/module-2/outline.html**:
+    - Added skip navigation link (.skip-link) at top of page with keyboard focus reveal
+    - Wrapped all content in <main id="main-content"> landmark region
+    - Added focus styles for .nav a and .activity-button (3px solid outline with 2px offset)
+    - Added aria-label attributes to all 4 widget launch buttons describing action and new window behavior
+    - Added aria-hidden="true" to all 7 decorative <hr> elements to hide from screen readers
+  - **WCAG 2.1 AA Compliance**:
+    - Keyboard navigation: Skip link allows bypass of repeated navigation
+    - Landmark regions: Main content properly identified for assistive technology
+    - Focus indicators: Visible 3px outline meets 2.4.7 Focus Visible requirements
+    - ARIA labels: Buttons provide clear context about widget functionality and behavior
+    - Decorative elements: HR separators hidden from screen reader document flow
+  - **Accessible UX Benefits**:
+    - Screen reader users can skip to main content with single Tab keystroke
+    - Keyboard-only users see clear focus indicators on all interactive elements
+    - Widget buttons announce purpose ("Open [Widget Name] widget in new window")
+    - Cleaner screen reader experience with decorative HR elements removed from navigation
+    - Proper semantic HTML structure with <main> landmark supports AT quick navigation

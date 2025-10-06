@@ -63,9 +63,13 @@
         .nav a:hover {
             color: #c5b783;
         }
+        .nav a:focus {
+            outline: 2px solid #2c2c2c;
+            outline-offset: 2px;
+        }
         .activity-button {
-            background: #c5b783;
-            color: #2c2c2c;
+            background: #8b7b3f;
+            color: #ffffff;
             padding: 0.5rem 1rem;
             border: none;
             cursor: pointer;
@@ -76,7 +80,24 @@
             font-size: 0.9rem;
         }
         .activity-button:hover {
-            background: #b8a56f;
+            background: #6f6332;
+        }
+        .activity-button:focus {
+            outline: 2px solid #2c2c2c;
+            outline-offset: 2px;
+        }
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #2c2c2c;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
         }
         .activity-embed {
             background: #fafaf8;
@@ -87,10 +108,13 @@
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <div class="nav">
         <a href="../../index.html">← Back to Course Storyboard</a>
     </div>
 
+    <main id="main-content">
     <h1>Week 3: Sponsorship & Betting - The Growth Engines</h1>
 
     <div class="meta">
@@ -122,10 +146,10 @@
 
     <div class="activity-embed">
         <strong>📊 Interactive Activities:</strong><br>
-        <button class="activity-button" onclick="openWidget('widgets/sponsorship-roi-calculator.html')">Sponsorship ROI Calculator</button>
+        <button class="activity-button" onclick="openWidget('widgets/sponsorship-roi-calculator.html')" aria-label="Open Sponsorship ROI Calculator widget in new window">Sponsorship ROI Calculator</button>
     </div>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h3>MLO 3.2: Analyze Sports Betting Growth</h3>
     <div class="alignment">Aligns with CLO 3: Design Sponsorship & Betting Strategies</div>
@@ -148,10 +172,10 @@
 
     <div class="activity-embed">
         <strong>📊 Interactive Activities:</strong><br>
-        <button class="activity-button" onclick="openWidget('widgets/betting-market-simulator.html')">Betting Market Simulator</button>
+        <button class="activity-button" onclick="openWidget('widgets/betting-market-simulator.html')" aria-label="Open Betting Market Simulator widget in new window">Betting Market Simulator</button>
     </div>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h3>MLO 3.3: Calculate Sponsorship ROI</h3>
     <div class="alignment">Aligns with CLO 3: Design Sponsorship & Betting Strategies</div>
@@ -172,7 +196,7 @@
         <li>After video: Group plan must include projected ROI with justification</li>
     </ul>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h3>MLO 3.4: Design Sponsorship Activations</h3>
     <div class="alignment">Aligns with CLO 3: Design Sponsorship & Betting Strategies</div>
@@ -193,7 +217,7 @@
         <li>After video: 1-page activation plan with budget, timeline, KPIs</li>
     </ul>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h2>Anchor Project: Revenue Model & Sponsorship Strategy</h2>
 
@@ -234,11 +258,11 @@
 
     <div class="activity-embed">
         <strong>🎯 Anchor Project Tools:</strong><br>
-        <button class="activity-button" onclick="openWidget('widgets/revenue-canvas-builder.html')">Revenue Model Canvas Builder</button>
-        <button class="activity-button" onclick="openWidget('widgets/sponsorship-roi-calculator.html')">Sponsorship ROI Calculator</button>
+        <button class="activity-button" onclick="openWidget('widgets/revenue-canvas-builder.html')" aria-label="Open Revenue Model Canvas Builder widget in new window">Revenue Model Canvas Builder</button>
+        <button class="activity-button" onclick="openWidget('widgets/sponsorship-roi-calculator.html')" aria-label="Open Sponsorship ROI Calculator widget in new window">Sponsorship ROI Calculator</button>
     </div>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h2>Week 3 Assessment Summary</h2>
 
@@ -263,7 +287,7 @@
         <li><strong>Group sprint deliverable (all MLOs):</strong> 1-page sponsorship activation plan for FanDuel (or partner brand) including activation tactics, projected ROI, budget, timeline, and KPIs</li>
     </ul>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h2>Executive Video Content (90 minutes total)</h2>
 
@@ -289,7 +313,7 @@
         <li>Responsible gaming and partnership considerations</li>
     </ul>
 
-    <hr>
+    <hr aria-hidden="true">
 
     <h2>Content Delivery Formats (UDL)</h2>
 
@@ -316,6 +340,8 @@
         <li><strong>Creative:</strong> Activation concept development</li>
         <li><strong>Verbal:</strong> Team presentations and executive discussions</li>
     </ul>
+
+    </main>
 
     <div class="nav">
         <a href="../../index.html">← Back to Course Storyboard</a>

@@ -136,6 +136,22 @@
             background: var(--primary-color);
             color: white;
         }
+
+        /* Focus styles for accessibility */
+        .engagement-option:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        a:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        .module-link:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
     </style>
 </head>
 <body>
@@ -325,10 +341,10 @@
 
         <!-- Engagement Options -->
         <section class="engagement-section">
-            <h2>How Would You Like to Engage?</h2>
+            <h2 id="engagement-heading">How Would You Like to Engage?</h2>
             <p>Choose your preferred way to participate in this module. You can change your selection at any time.</p>
             
-            <div class="engagement-options">
+            <div class="engagement-options" aria-labelledby="engagement-heading">
                 <div class="engagement-option" tabindex="0" role="button" aria-pressed="false">
                     <h4>Visual Learner</h4>
                     <p>Focus on infographics, charts, and video content</p>

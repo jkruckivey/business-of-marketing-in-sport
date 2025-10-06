@@ -1,11 +1,12 @@
 {
-  "name": "ivey-ai-agents",
-  "version": "1.0.0",
-  "description": "Custom Claude AI agents for Ivey EdTech Lab development",
+  "name": "education-ai-agents",
+  "version": "1.2.0",
+  "description": "AI-powered quality assurance agents for educational course development. Automated accessibility audits, content review, rubric generation, and UDL compliance checking.",
   "type": "module",
-  "main": "index.js",
+  "main": "agent-launcher.js",
   "scripts": {
     "start": "node agent-launcher.js",
+    "postinstall": "node setup.js",
     "web": "node web/server.js",
     "launcher": "node agent-launcher.js",
     "audit:accessibility": "node accessibility-auditor.js",
@@ -21,18 +22,49 @@
     "build:exe": "pkg agent-launcher.js --targets node18-win-x64 --output bin/ivey-agents.exe"
   },
   "bin": {
-    "ivey-agents": "./agent-launcher.js"
+    "edu-agents": "./cli.js"
   },
-  "keywords": [
-    "claude",
-    "ai",
-    "agents",
-    "accessibility",
-    "wcag",
-    "educational-technology"
+  "files": [
+    "*.js",
+    "templates/**/*.md",
+    "templates/*.html",
+    "mcp-servers/**/*.js",
+    "mcp-servers/**/*.json",
+    "!web/**",
+    "!reports/**",
+    "!node_modules/**",
+    ".env.example",
+    "README.md",
+    "QUICK-REFERENCE.md",
+    "TEAM-GUIDE.md",
+    "NPM-INSTALL-GUIDE.md",
+    "ACCESSIBILITY-WORKFLOW.md",
+    "AGENTS-COMMAND.md"
   ],
-  "author": "Ivey EdTech Lab",
+  "keywords": [
+    "claude-ai",
+    "educational-technology",
+    "accessibility",
+    "wcag-2.2",
+    "quality-matters",
+    "udl",
+    "course-development",
+    "ai-agents",
+    "ivey-business-school"
+  ],
+  "author": "James Kruck <jameskruck@gmail.com>",
+  "homepage": "https://github.com/jameskruck/education-ai-agents#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jameskruck/education-ai-agents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jameskruck/education-ai-agents/issues"
+  },
   "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "pkg": {
     "scripts": [
       "*.js"

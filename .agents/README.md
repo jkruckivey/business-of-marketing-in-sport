@@ -1,47 +1,47 @@
-# Ivey Education Agents
+# Education AI Agents
 
 **AI-Powered Quality Assurance & Course Development Tools**
 
-## ⚠️ Repository Moved
+Three ways to use the agents:
+1. **📦 NPM Package** - Install templates and MCP servers globally
+2. **🤖 Claude Code Templates** - Pre-configured prompts for common tasks
+3. **🔧 MCP Servers** - Always-on persistent agents with custom tools
 
-The agent system has been split into its own dedicated repository for reusability across multiple course projects.
-
-### New Repository Location
-
-**GitHub**: https://github.com/jameskruck/ivey-education-agents
-
-**Local Path**: `C:\Users\james\OneDrive\Documents2\GitHub\ivey-education-agents\`
+**NPM Package**: `education-ai-agents`
+**GitHub**: https://github.com/jameskruck/education-ai-agents
 
 ---
 
-## Quick Setup
+## Quick Start
 
-### 1. Create GitHub Repository
+### Install Templates (For Occasional Use)
 
-Go to https://github.com/new and create:
-- Repository name: `ivey-education-agents`
-- Description: `AI-Powered Quality Assurance & Course Development Tools for Ivey Business School EdTech Lab`
-- Public repository
-- **Do NOT initialize** with README (we already have it)
-
-### 2. Push Local Repository
-
-The repository is already set up locally at:
-```
-C:\Users\james\OneDrive\Documents2\GitHub\ivey-education-agents\
-```
-
-After creating on GitHub, run:
 ```bash
-cd C:\Users\james\OneDrive\Documents2\GitHub\ivey-education-agents
-git remote add origin https://github.com/jameskruck/ivey-education-agents.git
-git branch -M main
-git push -u origin main
+npx education-ai-agents@latest --template=accessibility-auditor --yes
+npx education-ai-agents@latest --template=content-reviewer --yes
 ```
+
+Then in Claude Code:
+```
+Use the accessibility-auditor template on modules/module-1/index.html
+```
+
+### Install MCP Servers (For Frequent Use)
+
+```bash
+npx education-ai-agents@latest --create-agent accessibility-auditor --yes
+```
+
+**Restart Claude Code**, then just ask naturally:
+```
+Audit modules/module-1/index.html for accessibility
+```
+
+**See**: [MCP-SERVER-GUIDE.md](MCP-SERVER-GUIDE.md) for full details
 
 ---
 
-## Running Agents from This Course Project
+## Usage Options
 
 ### Option 1: Use Launcher from New Location
 

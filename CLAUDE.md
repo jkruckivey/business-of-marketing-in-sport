@@ -322,11 +322,38 @@ business-of-marketing-in-sport/
     - Persona-based testing reveals UX issues across student skill levels
     - Export functionality, calculation transparency, help systems identified as critical needs
 
-- 2025-10-06: AI Agents Repository Split
-  - **Repository Separation**: Split agents into dedicated ivey-education-agents repository
-    - New location: `C:\Users\james\OneDrive\Documents2\GitHub\ivey-education-agents\`
-    - GitHub: https://github.com/jameskruck/ivey-education-agents
-    - Rationale: Enable reusability across multiple Ivey course projects (AI Prototyping, other courses)
+- 2025-10-06: AI Agents Repository Split and MCP Server Infrastructure
+  - **Repository Separation**: Split agents into dedicated education-ai-agents repository
+    - NPM Package: `education-ai-agents` (v1.2.0)
+    - GitHub: https://github.com/jameskruck/education-ai-agents
+    - Rationale: Enable reusability across multiple course projects and shareable distribution
+  - **Three Distribution Methods**:
+    1. **Templates**: Install to `~/.claude/templates/` via `npx education-ai-agents --template=name`
+    2. **MCP Servers**: Always-on background agents via `npx education-ai-agents --create-agent name`
+    3. **SDK Workflows**: Autonomous scripts via `node accessibility-workflow.js`
+  - **MCP Server Infrastructure Created**:
+    - Built accessibility-auditor MCP server with 3 custom tools:
+      - `audit_file(file_path)` - Single file WCAG 2.2 AA audit
+      - `audit_directory(directory_path, recursive)` - Batch audit all HTML files
+      - `get_wcag_guidance(wcag_criterion)` - WCAG criterion guidance lookup
+    - MCP server runs as persistent Node.js process in background
+    - Available across all Claude Code conversations (not just current session)
+    - Natural language invocation: "Audit modules/module-1/index.html"
+  - **Package Published to NPM**:
+    - Version 1.2.0 includes templates, MCP servers, SDK workflows
+    - Coworkers can install with: `npx education-ai-agents@latest --create-agent accessibility-auditor`
+    - Same experience as aitmpl.com Claude Code templates
+  - **Accessibility Improvements via Subagents**:
+    - Created 3 parallel subagents to audit Modules 1-3
+    - Applied fixes across all modules: focus styles, skip links, ARIA labels, semantic landmarks
+    - Module 1: 92% WCAG 2.2 AA compliance (up from 87%)
+    - Module 2: Fixed 5 critical issues (skip link, main landmark, focus styles, ARIA labels)
+    - Module 3: Fixed button contrast (2.85:1 → 4.5:1), added accessibility infrastructure
+  - **Documentation Created**:
+    - MCP-SERVER-GUIDE.md: Complete guide to installing and using MCP servers
+    - Updated README.md with three distribution methods
+    - Updated CLI to route --create-agent flag to MCP installer
+  - **Files Committed**: Accessibility fixes, MCP infrastructure, NPM package v1.2.0
   - **New Repository Structure**:
     - Created comprehensive README.md with setup instructions, agent capabilities, usage examples
     - Created .gitignore (excludes node_modules, reports, .env)

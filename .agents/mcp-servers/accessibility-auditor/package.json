@@ -1,0 +1,23 @@
+{
+  "name": "@education-ai-agents/accessibility-auditor-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for WCAG 2.2 AA accessibility auditing",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "accessibility-auditor-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "accessibility",
+    "wcag",
+    "a11y",
+    "auditing"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0"
+  }
+}

@@ -136,9 +136,13 @@ async function runAgent(command, filePath) {
 const args = process.argv.slice(2);
 
 // Check for template installation flags
-const hasTemplateFlag = args.some(arg => arg.startsWith('--template=') || arg === '--create-agent');
+const hasTemplateFlag = args.some(arg => arg.startsWith('--template='));
+const hasCreateAgentFlag = args.some(arg => arg === '--create-agent' || arg === '--list-agents');
 
-if (hasTemplateFlag) {
+if (hasCreateAgentFlag) {
+  // Delegate to MCP server creator
+  const { default: creator } = await import('./create-agent.js');
+} else if (hasTemplateFlag) {
   // Delegate to template installer
   const { default: installer } = await import('./install-template.js');
 } else if (args.length === 0) {

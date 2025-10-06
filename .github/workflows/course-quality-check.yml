@@ -1,0 +1,106 @@
+# Automated Course Quality Check
+# Runs AI agents on HTML files when changes are pushed
+
+name: Course Quality Check
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'modules/**/*.html'
+      - '.agents/**'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'modules/**/*.html'
+  workflow_dispatch:  # Manual trigger
+
+jobs:
+  quality-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      working-directory: .agents
+      run: npm install
+
+    - name: Run Content Reviewer on all modules
+      working-directory: .agents
+      env:
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      run: |
+        echo "🔍 Running Content Reviewer on all HTML files..."
+        mkdir -p reports
+
+        # Find all module index.html files
+        for file in ../modules/*/index.html; do
+          if [ -f "$file" ]; then
+            echo "Reviewing: $file"
+            node sports-content-reviewer-fast.js "$file" || true
+          fi
+        done
+
+    - name: Run Accessibility Auditor on Module 1
+      working-directory: .agents
+      env:
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      run: |
+        echo "♿ Running Accessibility Auditor..."
+        node accessibility-auditor.js "../modules/module-1/index.html" || true
+
+    - name: Run Widget Tester on widgets
+      working-directory: .agents
+      env:
+        ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      run: |
+        echo "🧪 Testing widgets..."
+        # Test a few key widgets
+        node widget-tester.js "../modules/module-1/widgets/fan-engagement-lab.html" || true
+
+    - name: Upload reports as artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: quality-reports-${{ github.sha }}
+        path: .agents/reports/
+        retention-days: 30
+
+    - name: Comment on PR (if PR)
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          const path = require('path');
+
+          // Read the most recent report
+          const reportsDir = '.agents/reports';
+          if (fs.existsSync(reportsDir)) {
+            const files = fs.readdirSync(reportsDir)
+              .filter(f => f.endsWith('.md'))
+              .sort((a, b) => {
+                return fs.statSync(path.join(reportsDir, b)).mtime -
+                       fs.statSync(path.join(reportsDir, a)).mtime;
+              });
+
+            if (files.length > 0) {
+              const reportContent = fs.readFileSync(
+                path.join(reportsDir, files[0]),
+                'utf8'
+              );
+
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `## 🤖 AI Quality Check Results\n\n${reportContent.slice(0, 5000)}\n\n*Full reports available in workflow artifacts*`
+              });
+            }
+          }

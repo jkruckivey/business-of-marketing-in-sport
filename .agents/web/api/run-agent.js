@@ -1,16 +1,9 @@
 // Serverless API endpoint for running agents
 // Compatible with Vercel/Netlify
 
-import { Anthropic } from '@anthropic-ai/sdk';
-import { spawn } from 'child_process';
-import { promisify } from 'util';
-import { exec as execCallback } from 'child_process';
-
-const exec = promisify(execCallback);
-
 export default async function handler(req, res) {
     // Enable CORS
-    res.setHeader('Access-Control-Allow-Credentials', true);
+    res.setHeader('Access-Control-Allow-Credentials', 'true');
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
     res.setHeader('Access-Control-Allow-Headers', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version');
@@ -27,6 +20,9 @@ export default async function handler(req, res) {
     }
 
     try {
+        // Dynamic import for Anthropic SDK
+        const { default: Anthropic } = await import('@anthropic-ai/sdk');
+
         const { agent, content, apiKey } = req.body;
 
         // Validate inputs
@@ -76,7 +72,8 @@ export default async function handler(req, res) {
     } catch (error) {
         console.error('Error running agent:', error);
         return res.status(500).json({
-            error: error.message || 'Internal server error'
+            error: error.message || 'Internal server error',
+            stack: error.stack
         });
     }
 }

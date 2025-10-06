@@ -321,3 +321,29 @@ business-of-marketing-in-sport/
     - Strategic model usage: Haiku (fast), Sonnet (standard), Opus (complex reasoning)
     - Persona-based testing reveals UX issues across student skill levels
     - Export functionality, calculation transparency, help systems identified as critical needs
+
+- 2025-10-06: AI Agents Repository Split
+  - **Repository Separation**: Split agents into dedicated ivey-education-agents repository
+    - New location: `C:\Users\james\OneDrive\Documents2\GitHub\ivey-education-agents\`
+    - GitHub: https://github.com/jameskruck/ivey-education-agents
+    - Rationale: Enable reusability across multiple Ivey course projects (AI Prototyping, other courses)
+  - **New Repository Structure**:
+    - Created comprehensive README.md with setup instructions, agent capabilities, usage examples
+    - Created .gitignore (excludes node_modules, reports, .env)
+    - Created .env.example template
+    - Created SETUP.md with GitHub repository creation instructions
+    - Updated package.json with proper metadata (repository URL, author, homepage)
+    - Initial commit: 20 files (11 agent .js files, launcher system, documentation)
+  - **Course Project Updates**:
+    - Updated .agents/README.md with repository redirect and setup instructions
+    - Added quick reference for running agents from new location
+    - Maintained agent list and capabilities summary for reference
+  - **Next Steps for User**:
+    1. Create GitHub repository at https://github.com/new (name: ivey-education-agents)
+    2. Push local repository to GitHub (commands in .agents/README.md)
+    3. Verify repository is public and accessible
+  - **Benefits of Split**:
+    - Agents can be used across multiple course projects
+    - Separate issue tracking and version control
+    - Easier collaboration with other educational developers
+    - Cleaner project structure for course-specific vs tool-specific code

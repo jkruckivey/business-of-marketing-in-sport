@@ -10,7 +10,11 @@
       "Bash(git remote set-url:*)",
       "Bash(git fetch:*)",
       "Bash(git branch:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(npm install:*)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/ivey-education-agents/**)",
+      "Bash(gh repo create:*)",
+      "Bash(git remote add:*)"
     ],
     "deny": [],
     "ask": [],

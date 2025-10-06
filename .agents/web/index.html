@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivey Education Agents - Web Interface</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .agent-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .agent-card {
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: white;
+        }
+
+        .agent-card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .agent-card.selected {
+            border-color: #3b82f6;
+            background: #eff6ff;
+        }
+
+        .agent-card h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: #1e3a8a;
+        }
+
+        .agent-card p {
+            font-size: 0.875rem;
+            color: #6b7280;
+            line-height: 1.4;
+        }
+
+        .agent-badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-fast {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .badge-standard {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .badge-opus {
+            background: #fce7f3;
+            color: #9f1239;
+        }
+
+        .upload-area {
+            border: 2px dashed #d1d5db;
+            border-radius: 8px;
+            padding: 3rem;
+            text-align: center;
+            background: #f9fafb;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .upload-area:hover {
+            border-color: #3b82f6;
+            background: #eff6ff;
+        }
+
+        .upload-area.dragover {
+            border-color: #3b82f6;
+            background: #eff6ff;
+            transform: scale(1.02);
+        }
+
+        .upload-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .text-input {
+            width: 100%;
+            min-height: 200px;
+            padding: 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.875rem;
+            resize: vertical;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            width: 100%;
+        }
+
+        .btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: #6b7280;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .loading.active {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .results {
+            display: none;
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .results.active {
+            display: block;
+        }
+
+        .results pre {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            max-height: 500px;
+            overflow-y: auto;
+            border: 1px solid #e5e7eb;
+        }
+
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .alert-info {
+            background: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #93c5fd;
+        }
+
+        .alert-warning {
+            background: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fcd34d;
+        }
+
+        .alert-error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fca5a5;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .tab {
+            padding: 0.75rem 1.5rem;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: #6b7280;
+            font-weight: 500;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.2s;
+        }
+
+        .tab:hover {
+            color: #3b82f6;
+        }
+
+        .tab.active {
+            color: #3b82f6;
+            border-bottom-color: #3b82f6;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .api-key-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+
+        .api-key-input:focus {
+            outline: none;
+            border-color: #3b82f6;
+        }
+
+        .help-text {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+        }
+
+        .footer {
+            background: #f9fafb;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.875rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .footer a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Ivey Education Agents</h1>
+            <p>AI-Powered Course Quality Assurance Tools</p>
+        </div>
+
+        <div class="content">
+            <!-- API Key Section -->
+            <div class="section">
+                <div class="alert alert-info">
+                    <strong>🔑 API Key Required:</strong> You need an Anthropic API key to use these agents.
+                    <a href="https://console.anthropic.com/" target="_blank" style="color: #1e40af; font-weight: 600;">Get one here</a> (free tier available)
+                </div>
+                <input
+                    type="password"
+                    class="api-key-input"
+                    id="apiKey"
+                    placeholder="Enter your Anthropic API key (e.g., sk-ant-...)"
+                    autocomplete="off"
+                >
+                <p class="help-text">Your API key is stored in your browser and never sent to our servers</p>
+            </div>
+
+            <!-- Agent Selection -->
+            <div class="section">
+                <h2>1. Select an Agent</h2>
+                <div class="agent-grid" id="agentGrid">
+                    <div class="agent-card" data-agent="sports-content-reviewer-fast">
+                        <span class="agent-badge badge-fast">⚡ Fast (5-15s)</span>
+                        <h3>Content Reviewer</h3>
+                        <p>Quick quality check for course content and learning materials</p>
+                    </div>
+                    <div class="agent-card" data-agent="accessibility-auditor">
+                        <span class="agent-badge badge-standard">📊 Standard (2-5min)</span>
+                        <h3>Accessibility Auditor</h3>
+                        <p>WCAG 2.1 AA compliance checking for your content</p>
+                    </div>
+                    <div class="agent-card" data-agent="branding-checker">
+                        <span class="agent-badge badge-standard">📊 Standard (2-5min)</span>
+                        <h3>Branding Checker</h3>
+                        <p>Validates Ivey design system and brand consistency</p>
+                    </div>
+                    <div class="agent-card" data-agent="widget-tester">
+                        <span class="agent-badge badge-standard">📊 Standard (3-5min)</span>
+                        <h3>Widget Tester</h3>
+                        <p>Tests interactive widget functionality and UX</p>
+                    </div>
+                    <div class="agent-card" data-agent="rubric-generator">
+                        <span class="agent-badge badge-standard">📊 Standard (3-5min)</span>
+                        <h3>Rubric Generator</h3>
+                        <p>Auto-generates QM-aligned assessment rubrics</p>
+                    </div>
+                    <div class="agent-card" data-agent="student-journey-simulator">
+                        <span class="agent-badge badge-opus">🔥 Advanced (5-8min)</span>
+                        <h3>Student Journey</h3>
+                        <p>Simulates complete student experience with personas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Method -->
+            <div class="section">
+                <h2>2. Provide Content</h2>
+                <div class="tabs">
+                    <button class="tab active" data-tab="file">Upload File</button>
+                    <button class="tab" data-tab="paste">Paste Content</button>
+                    <button class="tab" data-tab="url">Enter URL</button>
+                </div>
+
+                <!-- File Upload Tab -->
+                <div class="tab-content active" id="file-tab">
+                    <div class="upload-area" id="uploadArea">
+                        <div class="upload-icon">📁</div>
+                        <h3>Drop HTML file here or click to browse</h3>
+                        <p class="help-text">Supports: .html, .htm files</p>
+                        <input type="file" id="fileInput" class="file-input" accept=".html,.htm">
+                    </div>
+                    <p id="fileName" class="help-text" style="margin-top: 1rem; font-weight: 600;"></p>
+                </div>
+
+                <!-- Paste Content Tab -->
+                <div class="tab-content" id="paste-tab">
+                    <textarea
+                        class="text-input"
+                        id="contentInput"
+                        placeholder="Paste your HTML content here..."
+                    ></textarea>
+                </div>
+
+                <!-- URL Tab -->
+                <div class="tab-content" id="url-tab">
+                    <input
+                        type="url"
+                        class="text-input"
+                        id="urlInput"
+                        placeholder="https://example.com/page.html"
+                        style="min-height: auto; font-family: inherit;"
+                    >
+                    <p class="help-text">Enter a publicly accessible URL to analyze</p>
+                </div>
+            </div>
+
+            <!-- Run Button -->
+            <div class="section">
+                <button class="btn" id="runBtn" disabled>
+                    Run Analysis
+                </button>
+            </div>
+
+            <!-- Loading State -->
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <h3>Running <span id="agentName">agent</span>...</h3>
+                <p class="help-text">This may take <span id="estimatedTime">a few moments</span></p>
+            </div>
+
+            <!-- Results -->
+            <div class="results" id="results">
+                <h2>Analysis Results</h2>
+                <button class="btn btn-secondary" id="downloadBtn" style="margin-bottom: 1rem; width: auto; padding: 0.5rem 1rem;">
+                    📥 Download Report
+                </button>
+                <pre id="resultContent"></pre>
+            </div>
+        </div>
+
+        <div class="footer">
+            Built with ❤️ by <a href="https://www.ivey.uwo.ca/" target="_blank">Ivey EdTech Lab</a> |
+            <a href="https://github.com/jkruckivey/ivey-education-agents" target="_blank">GitHub</a> |
+            Powered by <a href="https://www.anthropic.com/" target="_blank">Claude AI</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node agent-launcher.js",
+    "web": "node web/server.js",
     "launcher": "node agent-launcher.js",
     "audit:accessibility": "node accessibility-auditor.js",
     "audit:branding": "node branding-checker.js",
@@ -32,11 +33,24 @@
   ],
   "author": "Ivey EdTech Lab",
   "license": "MIT",
+  "pkg": {
+    "scripts": [
+      "*.js"
+    ],
+    "assets": [
+      "node_modules/**/*"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "bin"
+  },
   "dependencies": {
     "@anthropic-ai/claude-agent-sdk": "^0.1.1",
     "@anthropic-ai/sdk": "^0.65.0",
     "chalk": "^5.6.2",
     "chokidar": "^4.0.3",
-    "dotenv": "^17.2.3"
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2"
   }
 }

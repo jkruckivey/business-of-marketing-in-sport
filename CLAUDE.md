@@ -347,3 +347,53 @@ business-of-marketing-in-sport/
     - Separate issue tracking and version control
     - Easier collaboration with other educational developers
     - Cleaner project structure for course-specific vs tool-specific code
+
+- 2025-10-06: Web Interface for AI Agents (Non-Technical User Solution)
+  - **Web Interface Development**: Created browser-based interface for running agents without installation
+    - Built complete frontend: index.html (gradient UI, agent cards, file upload, API key management)
+    - Built frontend JavaScript: app.js (agent selection, tab switching, drag-and-drop, localStorage persistence)
+    - Built backend API: api/run-agent.js (serverless function with 6 agent handlers using Anthropic SDK)
+    - Created local test server: server.js (Express-based development server)
+    - Added Express dependency to package.json (v4.21.2)
+  - **Web Interface Features**:
+    - Zero installation required (browser-based)
+    - Three input methods: file upload with drag-and-drop, paste content, enter URL
+    - 6 agents available: Content Reviewer (Haiku, 5-15s), Accessibility Auditor (Sonnet, 2-5min), Branding Checker (Sonnet), Widget Tester (Sonnet), Rubric Generator (Sonnet), Student Journey Simulator (Opus, 5-8min)
+    - API key stored in browser localStorage (never sent to backend servers)
+    - Loading states with estimated time, markdown-formatted results, download report functionality
+    - Beautiful Ivey-branded design with gradient header and responsive layout
+  - **Deployment Configuration**:
+    - Created vercel.json for Vercel deployment (serverless functions)
+    - Created netlify.toml for Netlify deployment (serverless functions)
+    - Created web/package.json with dependencies (@anthropic-ai/sdk, express)
+    - Created test-sample.html for testing agents (simple revenue calculator widget)
+    - Created comprehensive README.md with quick start, testing instructions, troubleshooting
+    - Created DEPLOYMENT.md with step-by-step Vercel/Netlify deployment guides
+  - **Testing & Validation**:
+    - Successfully started local server at http://localhost:3000
+    - Verified Express installation and serverless function routing
+    - Created test sample HTML file for agent validation
+    - All 6 agent handlers implemented with appropriate Claude models (Haiku/Sonnet/Opus)
+    - CORS headers configured for cross-origin browser access
+  - **Files Created**:
+    - web/index.html (485 lines) - Main interface with full UI
+    - web/app.js (199 lines) - Frontend JavaScript with all interactions
+    - web/api/run-agent.js (312 lines) - Backend API with 6 agent implementations
+    - web/server.js (26 lines) - Local Express test server
+    - web/test-sample.html (74 lines) - Sample widget for testing
+    - web/package.json (23 lines) - Dependencies and scripts
+    - web/vercel.json (16 lines) - Vercel deployment config
+    - web/netlify.toml (11 lines) - Netlify deployment config
+    - web/README.md (108 lines) - Usage and testing documentation
+    - web/DEPLOYMENT.md (195 lines) - Complete deployment guide for both platforms
+  - **Rationale for Web Interface**:
+    - Original .exe build failed due to ES module + Anthropic SDK incompatibility
+    - Node.js installation too complex for non-technical users
+    - Web interface provides zero-installation solution accessible via URL
+    - Can be deployed for free on Vercel/Netlify with serverless functions
+    - Perfect for Ivey EdTech Lab team members and course developers
+  - **Next Steps**:
+    - Deploy to Vercel or Netlify (both free for personal projects)
+    - Share live URL with course development team
+    - Monitor usage and API costs via hosting dashboard
+    - Consider custom domain (e.g., agents.ivey.uwo.ca) for professional branding

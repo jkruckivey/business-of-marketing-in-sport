@@ -18,7 +18,7 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-const SYSTEM_PROMPT = `You are a sports marketing education expert reviewing content for Ivey Business School's "Business of Marketing in Sport" course.
+const SYSTEM_PROMPT = `You are a sports marketing education expert reviewing content for Ivey Business School's "Business of Sports Marketing" course.
 
 CRITICAL: Review content against SME-approved course design. DO NOT suggest changes that contradict SME materials.
 
@@ -66,7 +66,7 @@ async function reviewContent(filePath) {
       system: SYSTEM_PROMPT,
       messages: [{
         role: 'user',
-        content: `Review this educational content for the Business of Marketing in Sport course:
+        content: `Review this educational content for the Business of Sports Marketing course:
 
 FILE: ${path.basename(filePath)}
 

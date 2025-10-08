@@ -9,7 +9,7 @@ dotenv.config();
  * Tests learning progression, transitions, and Anchor Project flow
  */
 
-const journeySimulatorPrompt = `You are an AI simulating the complete 5-week student journey through the Business of Marketing in Sport course.
+const journeySimulatorPrompt = `You are an AI simulating the complete 5-week student journey through the Business of Sports Marketing course.
 
 YOUR ROLE: Experience the course as different student personas and identify pedagogical issues.
 

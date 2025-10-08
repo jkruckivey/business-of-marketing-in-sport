@@ -184,6 +184,6 @@ This toolkit is developed for Ivey Business School EdTech Lab. For questions or 
 
 ---
 
-**Example Project:** [Business of Marketing in Sport](https://github.com/jkruckivey/business-of-marketing-in-sport)
+**Example Project:** [Business of Sports Marketing](https://github.com/jkruckivey/business-of-sports-marketing)
 
 Built with ❤️ by Ivey EdTech Lab

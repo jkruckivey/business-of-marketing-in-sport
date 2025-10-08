@@ -5,7 +5,7 @@
 All agent reports are saved in the **`.agents/` directory**:
 
 ```
-business-of-marketing-in-sport/
+business-of-sports-marketing/
 └── .agents/
     ├── accessibility-report.md       ← Accessibility issues
     ├── branding-report.md            ← Design system violations

@@ -1,12 +1,12 @@
 @echo off
 REM Debug version - shows errors and stays open
 
-title AI Agent Watcher - Business of Marketing in Sport (DEBUG)
+title AI Agent Watcher - Business of Sports Marketing (DEBUG)
 
 echo.
 echo ========================================
 echo   AI AGENT FILE WATCHER (DEBUG MODE)
-echo   Business of Marketing in Sport
+echo   Business of Sports Marketing
 echo ========================================
 echo.
 echo Checking setup...

@@ -93,7 +93,7 @@ const QUICK_ACTIONS = {
 
 console.clear();
 console.log(chalk.bold.yellow('\n╔════════════════════════════════════════════════════════╗'));
-console.log(chalk.bold.yellow('║   🎓 Business of Marketing in Sport - AI Agents 🤖   ║'));
+console.log(chalk.bold.yellow('║   🎓 Business of Sports Marketing - AI Agents 🤖   ║'));
 console.log(chalk.bold.yellow('╚════════════════════════════════════════════════════════╝\n'));
 
 const rl = createInterface({

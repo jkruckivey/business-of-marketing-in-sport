@@ -6,7 +6,7 @@ This workflow automatically runs AI agents on your course content whenever you p
 
 ### 1. Add Anthropic API Key to GitHub Secrets
 
-1. Go to your repo: https://github.com/jkruckivey/business-of-marketing-in-sport
+1. Go to your repo: https://github.com/jkruckivey/business-of-sports-marketing
 2. Click **Settings** → **Secrets and variables** → **Actions**
 3. Click **New repository secret**
 4. Name: `ANTHROPIC_API_KEY`
@@ -16,7 +16,7 @@ This workflow automatically runs AI agents on your course content whenever you p
 ### 2. Commit and Push the Workflow
 
 ```bash
-cd "C:\Users\jkruck\Ivey Business School\EdTech Lab - Documents\Github\business-of-marketing-in-sport"
+cd "C:\Users\jkruck\Ivey Business School\EdTech Lab - Documents\Github\business-of-sports-marketing"
 git add .github/workflows/course-quality-check.yml
 git commit -m "Add automated quality check workflow"
 git push

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Market Entry Simulator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,9 +15,9 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
-            color: #f5f4f0;
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: white;
+            color: #2d3748;
             padding: 2rem;
             min-height: 100vh;
         }
@@ -25,13 +28,13 @@
         }
 
         h1 {
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 0.5rem;
             font-size: 2rem;
         }
 
         .subtitle {
-            color: #999;
+            color: #6b7280;
             margin-bottom: 2rem;
             font-size: 1rem;
         }
@@ -48,8 +51,8 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.75rem 1.5rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(197, 183, 131, 0.3);
+            background: #f9fafb;
+            border: 2px solid #d1d5db;
             border-radius: 6px;
             opacity: 0.5;
             transition: all 0.3s;
@@ -57,8 +60,8 @@
 
         .step.active {
             opacity: 1;
-            border-color: #c5b783;
-            background: rgba(197, 183, 131, 0.1);
+            border-color: #2d3748;
+            background: #f9fafb;
         }
 
         .step.completed {
@@ -70,8 +73,8 @@
             width: 28px;
             height: 28px;
             border-radius: 50%;
-            background: #c5b783;
-            color: #2c2c2c;
+            background: #2d3748;
+            color: white;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -80,8 +83,8 @@
 
         .section {
             display: none;
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
@@ -92,7 +95,7 @@
         }
 
         .section h2 {
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 1.5rem;
         }
 
@@ -104,8 +107,8 @@
         }
 
         .option-card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 2px solid rgba(197, 183, 131, 0.3);
+            background: white;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 1.5rem;
             cursor: pointer;
@@ -113,17 +116,17 @@
         }
 
         .option-card:hover {
-            border-color: #c5b783;
+            border-color: #2d3748;
             transform: translateY(-3px);
         }
 
         .option-card.selected {
-            border-color: #c5b783;
-            background: rgba(197, 183, 131, 0.15);
+            border-color: #2d3748;
+            background: #f9fafb;
         }
 
         .option-card h3 {
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 1rem;
             font-size: 1.3rem;
         }
@@ -134,7 +137,7 @@
             gap: 0.75rem;
             margin-top: 1rem;
             padding-top: 1rem;
-            border-top: 1px solid rgba(197, 183, 131, 0.3);
+            border-top: 1px solid #d1d5db;
         }
 
         .stat {
@@ -142,18 +145,18 @@
         }
 
         .stat-label {
-            color: #999;
+            color: #374151;
             font-size: 0.8rem;
         }
 
         .stat-value {
-            color: #c5b783;
+            color: #1f2937;
             font-weight: 600;
         }
 
         .btn {
-            background: linear-gradient(135deg, #c5b783, #b8a56f);
-            color: #2c2c2c;
+            background: #2d3748;
+            color: white;
             border: none;
             padding: 0.75rem 2rem;
             font-size: 1rem;
@@ -165,12 +168,18 @@
         }
 
         .btn:hover {
+            background: #1a202c;
             transform: translateY(-2px);
         }
 
         .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
-            color: #f5f4f0;
+            background: #f9fafb;
+            color: #2d3748;
+            border: 1px solid #d1d5db;
+        }
+
+        .btn-secondary:hover {
+            background: white;
         }
 
         .button-group {
@@ -195,8 +204,8 @@
         }
 
         .metric-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(197, 183, 131, 0.3);
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 1.5rem;
             text-align: center;
@@ -205,25 +214,25 @@
         .metric-value {
             font-size: 2.5rem;
             font-weight: 700;
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 0.5rem;
         }
 
         .metric-label {
-            color: #999;
+            color: #6b7280;
             font-size: 0.9rem;
         }
 
         .timeline {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .timeline h3 {
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 1.5rem;
         }
 
@@ -232,7 +241,7 @@
             gap: 1.5rem;
             margin-bottom: 2rem;
             padding-bottom: 2rem;
-            border-bottom: 1px solid rgba(197, 183, 131, 0.2);
+            border-bottom: 1px solid #d1d5db;
         }
 
         .timeline-item:last-child {
@@ -244,7 +253,7 @@
         .timeline-year {
             font-size: 1.5rem;
             font-weight: 700;
-            color: #c5b783;
+            color: #1f2937;
             min-width: 80px;
         }
 
@@ -260,9 +269,10 @@
         }
 
         .timeline-metric {
-            background: rgba(255, 255, 255, 0.03);
+            background: white;
             padding: 0.75rem;
             border-radius: 6px;
+            border: 1px solid #d1d5db;
         }
 
         .alert-box {
@@ -314,12 +324,12 @@
         <!-- Step 1: Property Type -->
         <div class="section active" id="section-1">
             <h2>Step 1: Choose Your Sports Property</h2>
-            <p style="margin-bottom: 1.5rem; color: #ccc;">Select the type of franchise you want to launch</p>
+            <p style="margin-bottom: 1.5rem; color: #6b7280;">Select the type of franchise you want to launch</p>
 
             <div class="options-grid">
                 <div class="option-card" onclick="selectProperty('nhl')">
                     <h3>🏒 NHL Expansion Team</h3>
-                    <p style="color: #ccc; margin-bottom: 1rem;">Join the National Hockey League as the 33rd franchise</p>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Join the National Hockey League as the 33rd franchise</p>
                     <div class="option-stats">
                         <div class="stat">
                             <div class="stat-label">Entry Fee</div>
@@ -342,7 +352,7 @@
 
                 <div class="option-card" onclick="selectProperty('mls')">
                     <h3>⚽ MLS Expansion Team</h3>
-                    <p style="color: #ccc; margin-bottom: 1rem;">Launch a Major League Soccer franchise</p>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Launch a Major League Soccer franchise</p>
                     <div class="option-stats">
                         <div class="stat">
                             <div class="stat-label">Entry Fee</div>
@@ -365,7 +375,7 @@
 
                 <div class="option-card" onclick="selectProperty('esports')">
                     <h3>🎮 Esports Organization</h3>
-                    <p style="color: #ccc; margin-bottom: 1rem;">Build a multi-game esports brand</p>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Build a multi-game esports brand</p>
                     <div class="option-stats">
                         <div class="stat">
                             <div class="stat-label">Entry Fee</div>
@@ -395,7 +405,7 @@
         <!-- Step 2: Market Selection -->
         <div class="section" id="section-2">
             <h2>Step 2: Select Your Market</h2>
-            <p style="margin-bottom: 1.5rem; color: #ccc;" id="market-instruction">Choose where to establish your franchise</p>
+            <p style="margin-bottom: 1.5rem; color: #6b7280;" id="market-instruction">Choose where to establish your franchise</p>
 
             <div class="options-grid" id="market-options">
                 <!-- Generated dynamically -->
@@ -410,12 +420,12 @@
         <!-- Step 3: Revenue Strategy -->
         <div class="section" id="section-3">
             <h2>Step 3: Design Your Revenue Strategy</h2>
-            <p style="margin-bottom: 1.5rem; color: #ccc;">Choose your primary revenue focus (will shape your business model)</p>
+            <p style="margin-bottom: 1.5rem; color: #6b7280;">Choose your primary revenue focus (will shape your business model)</p>
 
             <div class="options-grid">
                 <div class="option-card" onclick="selectRevenue('ticket')">
                     <h3>🎟️ Ticket-Driven</h3>
-                    <p style="color: #ccc;">Build exceptional in-person experience. Premium seating, luxury suites, fan engagement.</p>
+                    <p style="color: #6b7280;">Build exceptional in-person experience. Premium seating, luxury suites, fan engagement.</p>
                     <div class="option-stats">
                         <div class="stat">
                             <div class="stat-label">Upfront Investment</div>
@@ -438,7 +448,7 @@
 
                 <div class="option-card" onclick="selectRevenue('media')">
                     <h3>📺 Media-First</h3>
-                    <p style="color: #ccc;">Prioritize broadcast quality, streaming infrastructure, and content creation.</p>
+                    <p style="color: #6b7280;">Prioritize broadcast quality, streaming infrastructure, and content creation.</p>
                     <div class="option-stats">
                         <div class="stat">
                             <div class="stat-label">Upfront Investment</div>
@@ -461,7 +471,7 @@
 
                 <div class="option-card" onclick="selectRevenue('sponsor')">
                     <h3>🤝 Sponsorship-Led</h3>
-                    <p style="color: #ccc;">Build brand partnerships, activations, and corporate relationships first.</p>
+                    <p style="color: #6b7280;">Build brand partnerships, activations, and corporate relationships first.</p>
                     <div class="option-stats">
                         <div class="stat">
                             <div class="stat-label">Upfront Investment</div>
@@ -484,7 +494,7 @@
 
                 <div class="option-card" onclick="selectRevenue('digital')">
                     <h3>💻 Digital Ecosystem</h3>
-                    <p style="color: #ccc;">Build apps, NFTs, gaming integrations, and digital-first fan engagement.</p>
+                    <p style="color: #6b7280;">Build apps, NFTs, gaming integrations, and digital-first fan engagement.</p>
                     <div class="option-stats">
                         <div class="stat">
                             <div class="stat-label">Upfront Investment</div>
@@ -522,43 +532,43 @@
             <div style="margin-bottom: 2rem;">
                 <div style="margin-bottom: 2rem;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                        <label style="color: #c5b783; font-weight: 600;">🏟️ Venue & Facilities</label>
+                        <label style="color: #374151; font-weight: 600;">🏟️ Venue & Facilities</label>
                         <span class="slider-value" id="venue-value">$25M (25%)</span>
                     </div>
                     <input type="range" id="venue-slider" min="0" max="100" value="25" oninput="updateBudget()">
-                    <p style="color: #999; font-size: 0.9rem; margin-top: 0.5rem;">Arena upgrades, training facilities, fan experience</p>
+                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 0.5rem;">Arena upgrades, training facilities, fan experience</p>
                 </div>
 
                 <div style="margin-bottom: 2rem;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                        <label style="color: #c5b783; font-weight: 600;">👥 Talent & Team</label>
+                        <label style="color: #374151; font-weight: 600;">👥 Talent & Team</label>
                         <span class="slider-value" id="talent-value">$40M (40%)</span>
                     </div>
                     <input type="range" id="talent-slider" min="0" max="100" value="40" oninput="updateBudget()">
-                    <p style="color: #999; font-size: 0.9rem; margin-top: 0.5rem;">Player salaries, coaching staff, front office</p>
+                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 0.5rem;">Player salaries, coaching staff, front office</p>
                 </div>
 
                 <div style="margin-bottom: 2rem;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                        <label style="color: #c5b783; font-weight: 600;">📱 Marketing & Brand</label>
+                        <label style="color: #374151; font-weight: 600;">📱 Marketing & Brand</label>
                         <span class="slider-value" id="marketing-value">$20M (20%)</span>
                     </div>
                     <input type="range" id="marketing-slider" min="0" max="100" value="20" oninput="updateBudget()">
-                    <p style="color: #999; font-size: 0.9rem; margin-top: 0.5rem;">Advertising, social media, community engagement</p>
+                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 0.5rem;">Advertising, social media, community engagement</p>
                 </div>
 
                 <div style="margin-bottom: 2rem;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
-                        <label style="color: #c5b783; font-weight: 600;">💻 Technology & Content</label>
+                        <label style="color: #374151; font-weight: 600;">💻 Technology & Content</label>
                         <span class="slider-value" id="tech-value">$15M (15%)</span>
                     </div>
                     <input type="range" id="tech-slider" min="0" max="100" value="15" oninput="updateBudget()">
-                    <p style="color: #999; font-size: 0.9rem; margin-top: 0.5rem;">Streaming, apps, analytics, digital infrastructure</p>
+                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 0.5rem;">Streaming, apps, analytics, digital infrastructure</p>
                 </div>
 
-                <div style="text-align: center; padding: 1.5rem; background: rgba(197, 183, 131, 0.1); border-radius: 8px;">
-                    <div style="font-size: 0.9rem; color: #999; margin-bottom: 0.5rem;">Remaining Budget</div>
-                    <div style="font-size: 2rem; font-weight: 700; color: #c5b783;" id="remaining-budget">$0M</div>
+                <div style="text-align: center; padding: 1.5rem; background: #f9fafb; border: 1px solid #d1d5db; border-radius: 8px;">
+                    <div style="font-size: 0.9rem; color: #6b7280; margin-bottom: 0.5rem;">Remaining Budget</div>
+                    <div style="font-size: 2rem; font-weight: 700; color: #1f2937;" id="remaining-budget">$0M</div>
                 </div>
             </div>
 
@@ -570,7 +580,7 @@
 
         <!-- Results Dashboard -->
         <div class="results-dashboard" id="results">
-            <h2 style="color: #c5b783; margin-bottom: 2rem;">📊 5-Year Franchise Simulation</h2>
+            <h2 style="color: #1f2937; margin-bottom: 2rem;">📊 5-Year Franchise Simulation</h2>
 
             <div class="metrics-grid">
                 <div class="metric-card">
@@ -649,7 +659,7 @@
                 card.onclick = () => selectMarket(market.id);
                 card.innerHTML = `
                     <h3>📍 ${market.name}</h3>
-                    <p style="color: #ccc; margin-bottom: 1rem;">Population: ${market.population}</p>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Population: ${market.population}</p>
                     <div class="option-stats">
                         <div class="stat">
                             <div class="stat-label">GDP/Wealth</div>
@@ -721,7 +731,7 @@
 
             const remaining = 100 - total;
             document.getElementById('remaining-budget').textContent = `$${(remaining * baseBudget / 100).toFixed(0)}M`;
-            document.getElementById('remaining-budget').style.color = remaining === 0 ? '#4ade80' : remaining < 0 ? '#f87171' : '#c5b783';
+            document.getElementById('remaining-budget').style.color = remaining === 0 ? '#4ade80' : remaining < 0 ? '#f87171' : '#1f2937';
 
             state.budget = { venue, talent, marketing, tech };
         }
@@ -791,25 +801,25 @@
                 item.innerHTML = `
                     <div class="timeline-year">Year ${year.year}</div>
                     <div class="timeline-content">
-                        <p style="color: #f5f4f0; margin-bottom: 1rem;">${generateYearNarrative(year, state)}</p>
+                        <p style="color: #2d3748; margin-bottom: 1rem;">${generateYearNarrative(year, state)}</p>
                         <div class="timeline-metrics">
                             <div class="timeline-metric">
-                                <div style="color: #999; font-size: 0.8rem;">Revenue</div>
+                                <div style="color: #6b7280; font-size: 0.8rem;">Revenue</div>
                                 <div style="color: #4ade80; font-weight: 600;">$${year.revenue.toFixed(0)}M</div>
                             </div>
                             <div class="timeline-metric">
-                                <div style="color: #999; font-size: 0.8rem;">Profit</div>
+                                <div style="color: #6b7280; font-size: 0.8rem;">Profit</div>
                                 <div style="color: ${year.profit > 0 ? '#4ade80' : '#f87171'}; font-weight: 600;">
                                     ${year.profit > 0 ? '$' + year.profit.toFixed(0) + 'M' : '($' + Math.abs(year.profit).toFixed(0) + 'M)'}
                                 </div>
                             </div>
                             <div class="timeline-metric">
-                                <div style="color: #999; font-size: 0.8rem;">Brand Score</div>
-                                <div style="color: #c5b783; font-weight: 600;">${year.brandScore.toFixed(0)}/100</div>
+                                <div style="color: #6b7280; font-size: 0.8rem;">Brand Score</div>
+                                <div style="color: #1f2937; font-weight: 600;">${year.brandScore.toFixed(0)}/100</div>
                             </div>
                             <div class="timeline-metric">
-                                <div style="color: #999; font-size: 0.8rem;">Market Share</div>
-                                <div style="color: #c5b783; font-weight: 600;">${year.marketShare.toFixed(0)}%</div>
+                                <div style="color: #6b7280; font-size: 0.8rem;">Market Share</div>
+                                <div style="color: #1f2937; font-weight: 600;">${year.marketShare.toFixed(0)}%</div>
                             </div>
                         </div>
                     </div>

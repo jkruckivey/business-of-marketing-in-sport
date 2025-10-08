@@ -116,7 +116,7 @@ Create UDL alternatives for all step files in modules/module-3/
 
 [INTRO MUSIC - upbeat, 5 seconds]
 
-**HOST**: Welcome to Week 1 of Business of Marketing in Sport! Today, we're diving into the money side of professional sports. Where does the cash actually come from?
+**HOST**: Welcome to Week 1 of Business of Sports Marketing! Today, we're diving into the money side of professional sports. Where does the cash actually come from?
 
 [PAUSE - 1 second]
 

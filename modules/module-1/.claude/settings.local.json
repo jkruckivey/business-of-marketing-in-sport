@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/business-of-sports-marketing/Project Knowledge/Uplimit/**)",
+      "Bash(for file in revenue-crisis-simulator.html revenue-stream-mapper.html rights-deal-negotiation.html)",
+      "Bash(do cp \"$file\" \"$file.backup\")",
+      "Bash(done)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

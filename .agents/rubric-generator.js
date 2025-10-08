@@ -141,7 +141,7 @@ Process:
    - Student-facing: Clear, encouraging, with examples
    - Faculty grading: Point allocation, calibration notes, common errors
 
-For this Business of Marketing in Sport course, ensure:
+For this Business of Sports Marketing course, ensure:
 - Industry relevance (2024-25 sports business context)
 - Canadian market appropriateness
 - Executive-level quality expectations

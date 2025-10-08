@@ -21,7 +21,7 @@ You can run AI quality checks on your course content using **Claude Code** - no 
 1. Open your terminal/command prompt
 2. Navigate to the course folder:
    ```
-   cd "path/to/business-of-marketing-in-sport"
+   cd "path/to/business-of-sports-marketing"
    ```
 3. Type: `claude`
 4. Claude Code will open in your terminal

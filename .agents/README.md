@@ -64,10 +64,10 @@ npm start
 cd C:\Users\james\OneDrive\Documents2\GitHub\ivey-education-agents
 
 # Fast content review (5-15 seconds)
-node sports-content-reviewer-fast.js "../business-of-marketing-in-sport/modules/module-1/index.html"
+node sports-content-reviewer-fast.js "../business-of-sports-marketing/modules/module-1/index.html"
 
 # Widget testing (3-5 minutes)
-node widget-student-simulator.js "../business-of-marketing-in-sport/modules/module-1/widgets/fan-engagement-lab.html"
+node widget-student-simulator.js "../business-of-sports-marketing/modules/module-1/widgets/fan-engagement-lab.html"
 ```
 
 ---
@@ -96,5 +96,5 @@ Complete documentation, setup instructions, and usage examples:
 
 ---
 
-**For**: Business of Marketing in Sport Course
+**For**: Business of Sports Marketing Course
 **Updated**: October 6, 2025

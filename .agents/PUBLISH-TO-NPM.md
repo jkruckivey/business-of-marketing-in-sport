@@ -39,7 +39,7 @@ Since the package is `@ivey-edtech/ai-agents`, you need to create the `ivey-edte
 From the `.agents` directory:
 
 ```bash
-cd "C:\Users\jkruck\Ivey Business School\EdTech Lab - Documents\Github\business-of-marketing-in-sport\.agents"
+cd "C:\Users\jkruck\Ivey Business School\EdTech Lab - Documents\Github\business-of-sports-marketing\.agents"
 ```
 
 Test the package locally:

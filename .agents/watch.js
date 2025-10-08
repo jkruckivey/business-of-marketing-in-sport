@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 /**
- * Agent File Watcher for Business of Marketing in Sport
+ * Agent File Watcher for Business of Sports Marketing
  *
  * Automatically runs agents when files are saved
  * - HTML/CSS/JS changes trigger widget tests

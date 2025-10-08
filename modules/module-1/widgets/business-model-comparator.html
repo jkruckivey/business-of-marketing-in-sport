@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Model Comparator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,9 +15,9 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
-            color: #f5f4f0;
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: white;
+            color: #2d3748;
             padding: 2rem;
             min-height: 100vh;
         }
@@ -25,14 +28,14 @@
         }
 
         h1 {
-            color: #c5b783;
+            color: #2d3748;
             margin-bottom: 0.5rem;
             font-size: 2rem;
             text-align: center;
         }
 
         .subtitle {
-            color: #999;
+            color: #6b7280;
             margin-bottom: 2rem;
             font-size: 1rem;
             text-align: center;
@@ -46,17 +49,18 @@
         }
 
         .model-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 2rem;
         }
 
         .model-card h2 {
-            color: #c5b783;
+            color: #1f2937;
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
             text-align: center;
+            font-weight: 600;
         }
 
         .factor-group {
@@ -64,43 +68,47 @@
         }
 
         .factor-group h3 {
-            color: #f5f4f0;
+            color: #374151;
             font-size: 1.1rem;
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
-            border-bottom: 1px solid rgba(197, 183, 131, 0.3);
+            border-bottom: 1px solid #e5e7eb;
+            font-weight: 600;
         }
 
         .factor-item {
             padding: 0.75rem;
-            background: rgba(255, 255, 255, 0.03);
+            background: white;
             margin-bottom: 0.75rem;
             border-radius: 4px;
-            border-left: 3px solid #c5b783;
+            border-left: none;
         }
 
         .factor-label {
-            color: #c5b783;
-            font-weight: 600;
+            color: #1f2937;
+            font-weight: 500;
             margin-bottom: 0.25rem;
+            font-size: 14px;
         }
 
         .factor-value {
-            color: #f5f4f0;
-            line-height: 1.6;
+            color: #6b7280;
+            line-height: 1.4;
+            font-size: 14px;
         }
 
         .key-differences {
-            background: rgba(197, 183, 131, 0.1);
-            border: 2px solid #c5b783;
-            border-radius: 8px;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .key-differences h2 {
-            color: #c5b783;
+            color: #2d3748;
             margin-bottom: 1.5rem;
+            font-weight: 600;
         }
 
         .difference-grid {
@@ -110,20 +118,24 @@
         }
 
         .difference-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             padding: 1.5rem;
-            border-radius: 4px;
-            border-left: 4px solid #c5b783;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
         }
 
         .difference-card h3 {
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 0.75rem;
+            font-weight: 600;
+            font-size: 16px;
         }
 
         .difference-card ul {
             margin-left: 1.5rem;
             line-height: 1.8;
+            color: #4a5568;
+            font-size: 14px;
         }
 
         @media (max-width: 968px) {
@@ -135,12 +147,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>🏢 Business Model Comparator</h1>
+        <h1>Business Model Comparator</h1>
         <p class="subtitle">Compare how sports business models differ from traditional consumer industries</p>
 
         <div class="comparison-grid">
             <div class="model-card">
-                <h2>🏟️ Sports Business Model</h2>
+                <h2>Sports Business Model</h2>
 
                 <div class="factor-group">
                     <h3>Product & Competition</h3>
@@ -224,7 +236,7 @@
             </div>
 
             <div class="model-card">
-                <h2>🏪 Traditional Consumer Business</h2>
+                <h2>Traditional Consumer Business</h2>
 
                 <div class="factor-group">
                     <h3>Product & Competition</h3>
@@ -309,7 +321,7 @@
         </div>
 
         <div class="key-differences">
-            <h2>🔑 Key Strategic Implications</h2>
+            <h2>Key Strategic Implications</h2>
             <div class="difference-grid">
                 <div class="difference-card">
                     <h3>1. Interdependence Paradox</h3>

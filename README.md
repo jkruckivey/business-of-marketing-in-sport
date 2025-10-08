@@ -1,8 +1,8 @@
-# The Business of Marketing in Sport - Course Development
+# The Business of Sports Marketing - Course Development
 
 ## 🎯 Project Overview
 
-Welcome to the development repository for "The Business of Marketing in Sport," a first-of-its-kind course at Ivey Business School. This project creates a comprehensive, accessible, and inclusive online course that follows Universal Design for Learning (UDL) principles and Quality Matters (QM) standards.
+Welcome to the development repository for "The Business of Sports Marketing," a first-of-its-kind course at Ivey Business School. This project creates a comprehensive, accessible, and inclusive online course that follows Universal Design for Learning (UDL) principles and Quality Matters (QM) standards.
 
 ### Course Details
 - **Duration**: 5-week intensive cohort
@@ -15,7 +15,7 @@ Welcome to the development repository for "The Business of Marketing in Sport," 
 ## 🏗️ Project Structure
 
 ```
-business-of-marketing-in-sport/
+business-of-sports-marketing/
 ├── 📄 README.md                    # This file - your starting point
 ├── 📄 CLAUDE.md                    # Development log and project notes
 ├── 🌐 index.html                   # Main course portal
@@ -58,7 +58,7 @@ A **repository** (or "repo") is like a project folder that tracks all changes to
 2. **Install and Sign In**: Use your GitHub account credentials
 3. **Clone This Repository**:
    - Click "Clone a repository from the Internet"
-   - Find "business-of-marketing-in-sport" in your list
+   - Find "business-of-sports-marketing" in your list
    - Choose where to save it on your computer
    - Click "Clone"
 
@@ -68,10 +68,10 @@ A **repository** (or "repo") is like a project folder that tracks all changes to
 cd /path/to/your/projects
 
 # Clone the repository
-git clone https://github.com/[username]/business-of-marketing-in-sport.git
+git clone https://github.com/[username]/business-of-sports-marketing.git
 
 # Enter the project directory
-cd business-of-marketing-in-sport
+cd business-of-sports-marketing
 ```
 
 ### Step 3: Open the Project
@@ -365,15 +365,15 @@ We follow **Web Content Accessibility Guidelines** Level AA:
 
 2. **Clone Your Fork**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/business-of-marketing-in-sport.git
-   cd business-of-marketing-in-sport
+   git clone https://github.com/YOUR_USERNAME/business-of-sports-marketing.git
+   cd business-of-sports-marketing
    ```
 
 3. **Set Up Remotes**:
    ```bash
    # Your fork is automatically set as 'origin'
    # Add the main repository as 'upstream'
-   git remote add upstream https://github.com/MAIN_OWNER/business-of-marketing-in-sport.git
+   git remote add upstream https://github.com/MAIN_OWNER/business-of-sports-marketing.git
    
    # Verify your remotes
    git remote -v

@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revenue Crisis Simulator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -15,9 +12,9 @@
         }
 
         body {
-            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: white;
-            color: #2d3748;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: #f5f4f0;
             padding: 2rem;
             min-height: 100vh;
         }
@@ -28,13 +25,13 @@
         }
 
         h1 {
-            color: #1f2937;
+            color: #c5b783;
             margin-bottom: 0.5rem;
             font-size: 2rem;
         }
 
         .subtitle {
-            color: #6b7280;
+            color: #999;
             margin-bottom: 2rem;
             font-size: 1rem;
         }
@@ -60,7 +57,7 @@
         }
 
         .crisis-stat {
-            background: #f9fafb;
+            background: rgba(255, 255, 255, 0.05);
             padding: 1rem;
             border-radius: 6px;
             text-align: center;
@@ -73,21 +70,21 @@
         }
 
         .crisis-stat-label {
-            color: #6b7280;
+            color: #ccc;
             font-size: 0.9rem;
             margin-top: 0.5rem;
         }
 
         .decision-section {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .decision-section h2 {
-            color: #1f2937;
+            color: #c5b783;
             margin-bottom: 1.5rem;
         }
 
@@ -98,20 +95,20 @@
         }
 
         .decision-card {
-            background: white;
-            border: 1px solid #d1d5db;
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.3);
             border-radius: 8px;
             padding: 1.5rem;
             transition: all 0.3s;
         }
 
         .decision-card.selected {
-            border-color: #1f2937;
-            background: rgba(31, 41, 55, 0.1);
+            border-color: #c5b783;
+            background: rgba(197, 183, 131, 0.1);
         }
 
         .decision-card h3 {
-            color: #1f2937;
+            color: #c5b783;
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
@@ -125,14 +122,14 @@
             align-items: center;
             gap: 0.75rem;
             padding: 0.75rem;
-            background: #f9fafb;
+            background: rgba(255, 255, 255, 0.05);
             border-radius: 6px;
             cursor: pointer;
             transition: all 0.2s;
         }
 
         .decision-option label:hover {
-            background: rgba(31, 41, 55, 0.1);
+            background: rgba(197, 183, 131, 0.1);
         }
 
         .decision-option input[type="radio"] {
@@ -146,7 +143,7 @@
         }
 
         .slider-value {
-            color: #1f2937;
+            color: #c5b783;
             font-weight: 600;
             font-size: 1.1rem;
             margin-top: 0.5rem;
@@ -177,8 +174,8 @@
         }
 
         .simulate-btn {
-            background: #2d3748;
-            color: white;
+            background: linear-gradient(135deg, #c5b783, #b8a56f);
+            color: #2c2c2c;
             border: none;
             padding: 1rem 3rem;
             font-size: 1.2rem;
@@ -191,15 +188,14 @@
         }
 
         .simulate-btn:hover {
-            background: #1a202c;
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(45, 55, 72, 0.3);
+            box-shadow: 0 10px 30px rgba(197, 183, 131, 0.3);
         }
 
         .results-section {
             display: none;
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid #c5b783;
             border-radius: 8px;
             padding: 2rem;
             margin-top: 2rem;
@@ -210,7 +206,7 @@
         }
 
         .results-section h2 {
-            color: #1f2937;
+            color: #c5b783;
             margin-bottom: 1.5rem;
         }
 
@@ -222,16 +218,16 @@
 
         .year-tab {
             padding: 0.75rem 1.5rem;
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(197, 183, 131, 0.3);
             border-radius: 6px;
             cursor: pointer;
             transition: all 0.2s;
         }
 
         .year-tab.active {
-            background: rgba(31, 41, 55, 0.2);
-            border-color: #1f2937;
+            background: rgba(197, 183, 131, 0.2);
+            border-color: #c5b783;
         }
 
         .outcomes-grid {
@@ -242,14 +238,14 @@
         }
 
         .outcome-card {
-            background: white;
-            border: 1px solid #d1d5db;
+            background: rgba(255, 255, 255, 0.03);
+            border: 2px solid rgba(197, 183, 131, 0.3);
             border-radius: 8px;
             padding: 1.5rem;
         }
 
         .outcome-title {
-            color: #1f2937;
+            color: #c5b783;
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
@@ -266,15 +262,15 @@
         }
 
         .narrative-box {
-            background: rgba(31, 41, 55, 0.1);
-            border-left: 4px solid #1f2937;
+            background: rgba(197, 183, 131, 0.1);
+            border-left: 4px solid #c5b783;
             padding: 1.5rem;
             margin-top: 2rem;
             border-radius: 6px;
         }
 
         .narrative-box h3 {
-            color: #1f2937;
+            color: #c5b783;
             margin-bottom: 1rem;
         }
 
@@ -316,7 +312,7 @@
 
         <div class="decision-section">
             <h2>Decision 1: Payroll Strategy</h2>
-            <p style="margin-bottom: 1.5rem; color: #6b7280;">Your player payroll is $85M against the $83.5M cap. How do you manage roster costs?</p>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">Your player payroll is $85M against the $83.5M cap. How do you manage roster costs?</p>
 
             <div class="decision-grid">
                 <div class="decision-card">
@@ -327,7 +323,7 @@
                             <span>Trade veterans for picks, cut to $60M payroll</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Save $25M/year but lose more games short-term. Fan base frustrated for 2-3 years.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Save $25M/year but lose more games short-term. Fan base frustrated for 2-3 years.</p>
                     <div class="impact-badge impact-negative">Revenue: -15% Year 1</div>
                     <div class="impact-badge impact-positive">Cap Flexibility: +$25M</div>
                 </div>
@@ -340,7 +336,7 @@
                             <span>Keep core players, stay near cap floor ($60-70M)</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Maintain competitiveness while controlling costs. Moderate risk, moderate reward.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Maintain competitiveness while controlling costs. Moderate risk, moderate reward.</p>
                     <div class="impact-badge impact-neutral">Revenue: -5% Year 1</div>
                     <div class="impact-badge impact-neutral">Cap Flexibility: +$15M</div>
                 </div>
@@ -353,7 +349,7 @@
                             <span>Add talent, push to $88M (Upper cap limit)</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Spend to compete now. High risk: if it fails, financial crisis deepens.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Spend to compete now. High risk: if it fails, financial crisis deepens.</p>
                     <div class="impact-badge impact-positive">Revenue: +10% if playoffs</div>
                     <div class="impact-badge impact-negative">Risk: 60% chance of failure</div>
                 </div>
@@ -362,7 +358,7 @@
 
         <div class="decision-section">
             <h2>Decision 2: Ticket Pricing & Promotions</h2>
-            <p style="margin-bottom: 1.5rem; color: #6b7280;">With empty seats and declining interest, what's your ticketing strategy?</p>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">With empty seats and declining interest, what's your ticketing strategy?</p>
 
             <div class="decision-grid">
                 <div class="decision-card">
@@ -373,7 +369,7 @@
                             <span>Cut prices 30%, flash sales, family packs</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Fill the building but sacrifice per-ticket revenue. Risks devaluing season tickets.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Fill the building but sacrifice per-ticket revenue. Risks devaluing season tickets.</p>
                     <div class="impact-badge impact-negative">Avg Ticket: -30%</div>
                     <div class="impact-badge impact-positive">Attendance: +25%</div>
                 </div>
@@ -386,7 +382,7 @@
                             <span>Maintain pricing, invest $5M in arena upgrades</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Better fan experience justifies prices. Targets high-value customers.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Better fan experience justifies prices. Targets high-value customers.</p>
                     <div class="impact-badge impact-neutral">Avg Ticket: 0%</div>
                     <div class="impact-badge impact-neutral">Attendance: +10%</div>
                 </div>
@@ -399,7 +395,7 @@
                             <span>AI-driven pricing, surge for rivals, discounts for weak opponents</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Maximize revenue per seat. Requires $2M tech investment.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Maximize revenue per seat. Requires $2M tech investment.</p>
                     <div class="impact-badge impact-positive">Avg Ticket: +12%</div>
                     <div class="impact-badge impact-neutral">Attendance: +8%</div>
                 </div>
@@ -408,7 +404,7 @@
 
         <div class="decision-section">
             <h2>Decision 3: Sponsorship & Partnerships</h2>
-            <p style="margin-bottom: 1.5rem; color: #6b7280;">Your top sponsor (TD Bank, $8M/year) ended their deal. How do you replace this revenue?</p>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">Your top sponsor (TD Bank, $8M/year) ended their deal. How do you replace this revenue?</p>
 
             <div class="decision-grid">
                 <div class="decision-card">
@@ -419,7 +415,7 @@
                             <span>$12M/year deal with sportsbook, arena naming rights</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Highest revenue but controversial. Some fans oppose gambling association.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Highest revenue but controversial. Some fans oppose gambling association.</p>
                     <div class="impact-badge impact-positive">Revenue: +$12M/year</div>
                     <div class="impact-badge impact-negative">Brand Risk: Medium</div>
                 </div>
@@ -432,7 +428,7 @@
                             <span>Spread across 5 mid-sized partners ($6M total)</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Diversified, lower risk, but doesn't replace lost revenue fully.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Diversified, lower risk, but doesn't replace lost revenue fully.</p>
                     <div class="impact-badge impact-neutral">Revenue: +$6M/year</div>
                     <div class="impact-badge impact-positive">Brand Risk: Low</div>
                 </div>
@@ -445,7 +441,7 @@
                             <span>Local brands + city partnership ($4M + goodwill)</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Build local loyalty and civic pride. Long-term play but lower immediate revenue.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Build local loyalty and civic pride. Long-term play but lower immediate revenue.</p>
                     <div class="impact-badge impact-negative">Revenue: +$4M/year</div>
                     <div class="impact-badge impact-positive">Fan Loyalty: +15%</div>
                 </div>
@@ -454,7 +450,7 @@
 
         <div class="decision-section">
             <h2>Decision 4: Media & Content Strategy</h2>
-            <p style="margin-bottom: 1.5rem; color: #6b7280;">Your local TV deal is up for renewal. Ratings are down 40% from peak. What's your approach?</p>
+            <p style="margin-bottom: 1.5rem; color: #ccc;">Your local TV deal is up for renewal. Ratings are down 40% from peak. What's your approach?</p>
 
             <div class="decision-grid">
                 <div class="decision-card">
@@ -465,7 +461,7 @@
                             <span>TSN/Rogers regional deal: $15M/year (down from $22M)</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Guaranteed money but declining value. Safe but limits future growth.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Guaranteed money but declining value. Safe but limits future growth.</p>
                     <div class="impact-badge impact-neutral">Revenue: $15M/year guaranteed</div>
                     <div class="impact-badge impact-neutral">Growth Potential: Low</div>
                 </div>
@@ -478,7 +474,7 @@
                             <span>Build own streaming platform: $5M upfront, revenue share model</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Control content and data but requires investment and risk. Could yield $20M+ if successful.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Control content and data but requires investment and risk. Could yield $20M+ if successful.</p>
                     <div class="impact-badge impact-negative">Year 1: -$3M (net)</div>
                     <div class="impact-badge impact-positive">Year 3: +$20M potential</div>
                 </div>
@@ -491,7 +487,7 @@
                             <span>TV for 30 games ($10M), stream 11 games direct</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Balance guaranteed money with experimentation. Build capabilities while maintaining revenue.</p>
+                    <p style="color: #ccc; font-size: 0.9rem; margin-top: 1rem;">Balance guaranteed money with experimentation. Build capabilities while maintaining revenue.</p>
                     <div class="impact-badge impact-neutral">Revenue: $12M/year</div>
                     <div class="impact-badge impact-positive">Future Flexibility: High</div>
                 </div>
@@ -733,7 +729,7 @@
 
                     <div class="outcome-card">
                         <div class="outcome-title">Fan Satisfaction</div>
-                        <div class="outcome-value" style="color: #1f2937">${yearData.fanSatisfaction.toFixed(0)}/100</div>
+                        <div class="outcome-value" style="color: #c5b783">${yearData.fanSatisfaction.toFixed(0)}/100</div>
                         <div class="outcome-change">
                             ${yearData.fanSatisfaction > 60 ? 'Strong support' : yearData.fanSatisfaction > 45 ? 'Cautious optimism' : 'Frustration remains'}
                         </div>
@@ -742,7 +738,7 @@
 
                 <div class="narrative-box">
                     <h3>What Happened in Year ${year}</h3>
-                    <p style="line-height: 1.8; color: #2d3748;">${yearData.narrative}</p>
+                    <p style="line-height: 1.8; color: #f5f4f0;">${yearData.narrative}</p>
                 </div>
             `;
         }

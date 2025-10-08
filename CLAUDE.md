@@ -1,7 +1,7 @@
-# Business of Marketing in Sport - Course Development Log
+# Business of Sports Marketing - Course Development Log
 
 ## Project Overview
-This project involves creating a comprehensive, accessible, and inclusive course outline for "The Business of Marketing in Sport" that adheres to:
+This project involves creating a comprehensive, accessible, and inclusive course outline for "The Business of Sports Marketing" that adheres to:
 - Quality Matters (QM) standards for measurable learning outcomes
 - Universal Design for Learning (UDL) principles
 - Inclusive learning environment best practices
@@ -39,7 +39,7 @@ This project involves creating a comprehensive, accessible, and inclusive course
 
 ## File Structure
 ```
-business-of-marketing-in-sport/
+business-of-sports-marketing/
 ├── CLAUDE.md (this file)
 ├── index.html (main landing page)
 ├── modules/
@@ -522,3 +522,134 @@ business-of-marketing-in-sport/
     - Widget buttons announce purpose ("Open [Widget Name] widget in new window")
     - Cleaner screen reader experience with decorative HR elements removed from navigation
     - Proper semantic HTML structure with <main> landmark supports AT quick navigation
+
+- 2025-10-07: Claude Code Subagents Published to NPM
+  - **NPM Package Publication**: Successfully published `@jameskruck/claude-subagents@2.0.0` to NPM registry
+    - Package available at: https://www.npmjs.com/package/@jameskruck/claude-subagents
+    - Installation command: `npx @jameskruck/claude-subagents --agent=all`
+    - **Package Rename**: Changed from `@jameskruck/ivey-subagents` to `@jameskruck/claude-subagents` (removed institution name)
+    - Package size: 24.7 KB compressed, 73.5 KB unpacked
+    - **Repository URL Removed**: No GitHub repo required for NPM publication
+    - **README Updated**: Cleaner, more generic documentation without course-specific references
+    - 11 files included: package.json, cli.js, 7 subagent .md files, README.md, INSTALL-GUIDE.md
+  - **Subagents Included (7 total)**:
+    - **accessibility-auditor**: WCAG 2.2 AA compliance checking with WebFetch capability (Tools: Read, Glob, Grep, WebFetch)
+    - **widget-tester**: 3-persona widget testing (Sarah - Quick Learner, James - Methodical Analyst, Maria - Struggling Student)
+    - **branding-checker**: Canvas LMS and Uplimit platform branding validation (detects Uplimit Geist font, neutral grays, NO colored labels)
+    - **rubric-generator**: QM-aligned assessment rubrics from learning outcomes with student/faculty versions (Tools: Read, Glob, Grep)
+    - **student-journey-simulator**: 4-persona course experience testing across multiple weeks (Sarah, Marcus, Priya, Alex)
+    - **consistency-checker**: Cross-module terminology consistency, concept threading, outcome alignment validation (Tools: Read, Glob, Grep)
+    - **udl-content-generator**: Transforms content into multiple formats - audio scripts, infographics, interactive activities, reading scaffolds (Tools: Read, Glob, Grep)
+  - **CLI Installation System**:
+    - Interactive help: `npx @jameskruck/claude-subagents --help`
+    - Install single agent: `npx @jameskruck/claude-subagents --agent=accessibility-auditor`
+    - Install all agents: `npx @jameskruck/claude-subagents --agent=all`
+    - Colored console output with visual feedback (✓ success, ✗ error, cyan headers)
+    - Auto-creates `~/.claude/agents/` directory if missing
+    - Copies .md subagent files to user's Claude Code agents directory
+  - **Natural Language Invocation**:
+    - After installing and restarting Claude Code, subagents work with natural language
+    - "Audit modules/module-1/index.html for accessibility" → Uses accessibility-auditor
+    - "Test the fan engagement lab widget" → Uses widget-tester
+    - "Check if this matches Uplimit branding" → Uses branding-checker
+  - **Benefits vs MCP Servers**:
+    - ✅ FREE: Uses Claude Code subscription (no API costs)
+    - ✅ Simple setup: Single npx command + restart Claude Code
+    - ✅ Works like aitmpl.com agents: No API keys, configuration files, or MCP server infrastructure
+    - ⚠️ Limited to Claude Code built-in tools (Read, Glob, Grep, WebFetch)
+  - **Documentation Updated**:
+    - Updated README.md with @jameskruck/claude-subagents package name
+    - Updated NPM-PUBLISH-GUIDE.md with @jameskruck/claude-subagents package name
+    - Updated cli.js header comments and help output
+    - Changed author from "Ivey EdTech Lab" to "James Kruck"
+    - Removed "ivey" keyword from package.json
+    - All installation commands now use generic package name
+  - **Testing & Verification**:
+    - Successfully published to NPM: `+ @jameskruck/claude-subagents@1.1.0`
+    - Tested CLI help: `npx @jameskruck/claude-subagents@latest --help` (colored output works)
+    - Tested full installation: `npx @jameskruck/claude-subagents@latest --agent=all` (installed 3 subagents)
+    - Verified files in `~/.claude/agents/`: accessibility-auditor.md, widget-tester.md, branding-checker.md
+  - **Distribution Model**:
+    - Used personal NPM scope (@jameskruck) - no organization setup required
+    - Public package (free, unlimited downloads)
+    - Versioned with semantic versioning (2.0.0 - major version for 4 new subagents)
+    - Future updates: `npm version patch/minor/major` then `npm publish --access public`
+  - **Version History**:
+    - v1.0.0: Initial publish with 3 subagents (@jameskruck/ivey-subagents)
+    - v1.1.0: Renamed package, removed institution branding
+    - v1.1.1: Updated README and repository URL
+    - v1.1.2: Removed repository field (no GitHub required)
+    - v2.0.0: Added 4 pedagogy subagents (rubric-generator, student-journey-simulator, consistency-checker, udl-content-generator)
+  - **Team Installation Instructions**:
+    - Coworkers run: `npx @jameskruck/claude-subagents@latest --agent=all`
+    - Restart Claude Code
+    - Use natural language to invoke subagents (no explicit /commands needed)
+    - No API keys, no configuration, no GitHub tokens required- 2025-10-07: Claude Code Subagents Package v2.2.1 - Assessment Designer with Bundled Knowledge Base
+  - **Assessment Designer Subagent with Bundled Knowledge Base**: Published v2.2.0 → v2.2.1
+    - **Knowledge Base Integration**: Converted PDF research to markdown and bundled with NPM package
+      - 4 Framework Guides (64.3 KB): UDL, Quality Matters, Inclusive Teaching, Assessment Templates
+      - 5 Research Papers (304.5 KB): AI Assessment Framework, Acceptable AI Use, Alternative Assessments, Academic Integrity, GenAI in Higher Ed
+    - **Embedded Core Knowledge**: Added AI assessment principles directly in assessment-designer.md prompt
+      - "Where's the Line?" research findings (51.6% used "drawing a line" metaphor)
+      - Three Critical Dimensions: Feasibility of Enforcement, Preservation of Authentic Learning, Emotional Wellbeing
+      - Social Boundary Theory (Who/Where/When/What boundaries for AI use)
+      - AI-Resistant Design Principles (contextualized, process-oriented, unique, metacognitive, synthesis-based)
+      - Three-Tier Permission Model (AI Prohibited, AI Permitted with Documentation, AI Required)
+    - **Hybrid Knowledge Approach**: Quick embedded knowledge + comprehensive bundled files
+      - Subagent works standalone with embedded knowledge for immediate responses
+      - Enhanced capability when reading bundled files for detailed guidance
+      - All knowledge files portable in NPM package (no external dependencies)
+    - **Updated File Access Patterns**: Changed from asking user for paths to reading bundled files
+      - Before: `Glob: **/Universal-Design*.md` (search user's system)
+      - After: `Read: assessment-knowledge/frameworks/udl-guide.md` (bundled file)
+      - All framework and research files copied to `~/.claude/agents/assessment-knowledge/`
+    - **Fixed Installer (v2.2.1)**: Added recursive directory copy function to cli.js
+      - copyDirectoryRecursive() function copies assessment-knowledge folder structure
+      - Special handling for assessment-designer: copies 9 knowledge files automatically
+      - Installation message: "✓ Installed knowledge base (9 files, 464 KB)"
+      - Verified all files exist in `~/.claude/agents/assessment-knowledge/frameworks/` and `/research/`
+    - **Package Stats**: Total 21 files, 150.9 KB compressed, 465.1 KB unpacked
+    - **New Keywords**: ai-assessment, quality-matters, inclusive-teaching
+    - **Installation**: `npx @jameskruck/claude-subagents@latest --agent=assessment-designer`
+    - **Usage Examples**:
+      - "Help me design an AI-resistant assessment for my course"
+      - "Check my quiz for UDL compliance"
+      - "Create a rubric using the Three-Tier AI model"
+      - "What are alternatives to traditional exams that work with AI tools?"
+    - **Research-Backed Guidance**: Authentic assessment in AI era, enforcement feasibility, student/teacher wellbeing
+
+- 2025-10-07: Claude Code Subagents v2.2.2 - Clarified Subagent Roles
+  - **Description Updates**: Clarified distinction between rubric-generator and assessment-designer
+    - **rubric-generator**: "QUICK rubric generation" - fast path for rubric-only tasks
+    - **assessment-designer**: "Comprehensive assessment design" - strategic path with AI integration, UDL/QM compliance, research-backed guidance
+  - **Cross-References Added**: Both subagents now reference each other in descriptions
+    - rubric-generator → "For comprehensive assessment design with AI integration, use assessment-designer instead"
+    - assessment-designer → "For quick rubric-only generation, use rubric-generator instead"
+  - **README.md Enhanced**: Added "Best For" sections to clarify use cases
+    - rubric-generator: "Fast rubric-only tasks without AI integration or UDL compliance needs"
+    - assessment-designer: "Strategic assessment design, AI integration questions, compliance checking, alternative assessment exploration"
+  - **Knowledge Base Highlighted**: README now mentions "464 KB of bundled frameworks and AI assessment research (9 files)"
+  - **Recommendation**: Use assessment-designer first for most tasks (research knowledge, AI considerations, better recommendations)
+    - Only use rubric-generator for literal "just need a rubric document" scenarios (rare)
+    - Trade-off: 10-20 seconds slower but much higher quality
+
+- 2025-10-08: Course Name Correction
+  - **Course Renaming**: Corrected course name from "Business of Marketing in Sport" to "Business of Sports Marketing"
+  - **Files Updated**: Applied find-and-replace across all HTML, MD, JS, BAT, and JSON files
+  - **Scope**: 31 occurrences updated across course materials, widgets, agents, and documentation
+  - **URL Slug Updated**: Changed all references from "business-of-marketing-in-sport" to "business-of-sports-marketing"
+
+- 2025-10-08: Student Journey Simulation and High-Priority Fixes
+  - **Student Journey Simulation**: Ran student-journey-simulator subagent on Module 1 with 4 personas
+    - Sarah (Visual Learner): 72/100 - struggled with text-heavy content, no visual scaffolding
+    - Marcus (Analytical Thinker): 85/100 - frustrated by missing data sources and undefined methodology
+    - Priya (Collaborative Leader): 68/100 - isolated by lack of collaboration, forum as afterthought
+    - Alex (Time-Constrained Professional): 78/100 - overwhelmed by time overruns (6-8 hrs actual vs 4.5-5.5 stated)
+  - **Critical Issues Identified**: 8 high-priority, 12 medium-priority issues found
+  - **High-Priority Fixes Applied** (modules/module-1/):
+    - ✅ Replaced "Live Session" language with "Recorded Video" across index.html and step-3-executive.html
+    - ✅ Added prominent rubric links in index.html (learning path) and step-4-application.html (before activities begin)
+    - ✅ Recalibrated time estimates from 4.5-5.5 hours to 6-8 hours in step-1-overview.html
+    - ✅ Added NHL Canucks case access notice in step-2-resources.html with warning that case is required
+  - **Remaining Issues**: Missing primary source materials (case study, media reports), no visual content for visual learners, no collaborative activities for social learners
+  - **Overall Module Assessment**: Strong pedagogical design with excellent rubrics and industry integration, but critical implementation gaps prevent full completion

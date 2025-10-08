@@ -1,10 +1,10 @@
 @echo off
-title AI Agent Watcher - Business of Marketing in Sport
+title AI Agent Watcher - Business of Sports Marketing
 
 echo.
 echo ========================================
 echo   AI AGENT FILE WATCHER
-echo   Business of Marketing in Sport
+echo   Business of Sports Marketing
 echo ========================================
 echo.
 echo IMPORTANT:

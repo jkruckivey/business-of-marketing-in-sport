@@ -50,7 +50,7 @@ For each key concept, create:
 Timing: [X minutes]
 
 INTRO (30 sec):
-"Welcome to Week [X] of Business of Marketing in Sport. Today we're exploring [concept].
+"Welcome to Week [X] of Business of Sports Marketing. Today we're exploring [concept].
 By the end, you'll understand [outcome]."
 
 MAIN CONTENT (3-5 min):

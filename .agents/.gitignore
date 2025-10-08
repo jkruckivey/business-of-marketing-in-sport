@@ -2,6 +2,9 @@
 *-report.md
 reports/
 
+# Subagents (now maintained in separate repo)
+subagents/
+
 # Environment files
 .env
 

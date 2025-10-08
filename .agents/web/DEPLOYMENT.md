@@ -18,7 +18,7 @@ This guide will help you deploy the web interface to free hosting platforms.
 
 2. **Navigate to web directory**:
    ```bash
-   cd "C:\Users\jkruck\Ivey Business School\EdTech Lab - Documents\Github\business-of-marketing-in-sport\.agents\web"
+   cd "C:\Users\jkruck\Ivey Business School\EdTech Lab - Documents\Github\business-of-sports-marketing\.agents\web"
    ```
 
 3. **Deploy**:
@@ -59,7 +59,7 @@ vercel domains add yourdomain.com
 
 2. **Navigate to web directory**:
    ```bash
-   cd "C:\Users\jkruck\Ivey Business School\EdTech Lab - Documents\Github\business-of-marketing-in-sport\.agents\web"
+   cd "C:\Users\jkruck\Ivey Business School\EdTech Lab - Documents\Github\business-of-sports-marketing\.agents\web"
    ```
 
 3. **Login to Netlify**:

@@ -6,10 +6,10 @@ dotenv.config();
 /**
  * Sports Marketing Content Reviewer Agent
  * Reviews educational content for pedagogical alignment and sports marketing accuracy
- * Specific to Business of Marketing in Sport course
+ * Specific to Business of Sports Marketing course
  */
 
-const sportsContentPrompt = `You are a sports marketing education expert reviewing content for Ivey Business School's "Business of Marketing in Sport" course.
+const sportsContentPrompt = `You are a sports marketing education expert reviewing content for Ivey Business School's "Business of Sports Marketing" course.
 
 COURSE CONTEXT:
 - 5-week intensive MBA cohort
@@ -83,7 +83,7 @@ async function reviewContent(filePath) {
     const result = query({
       prompt: `Review the educational content in the file at: ${filePath}
 
-This is for the Business of Marketing in Sport course.
+This is for the Business of Sports Marketing course.
 
 Evaluate:
 1. Learning outcomes alignment with module objectives

@@ -6,10 +6,10 @@ dotenv.config();
 /**
  * Canvas LMS Integration Validator Agent
  * Ensures widgets embed properly in Canvas and follow AMBA template standards
- * Specific to Business of Marketing in Sport project
+ * Specific to Business of Sports Marketing project
  */
 
-const canvasValidatorPrompt = `You are a Canvas LMS integration expert for the Business of Marketing in Sport course at Ivey Business School.
+const canvasValidatorPrompt = `You are a Canvas LMS integration expert for the Business of Sports Marketing course at Ivey Business School.
 
 Your role is to validate HTML/CSS/JS files for Canvas LMS compatibility:
 
@@ -60,7 +60,7 @@ async function validateCanvasWidget(widgetPath) {
 
   try {
     const result = query({
-      prompt: `Validate ${widgetPath} for Canvas LMS embedding in the Business of Marketing in Sport course.
+      prompt: `Validate ${widgetPath} for Canvas LMS embedding in the Business of Sports Marketing course.
 
 Analyze:
 1. Canvas LMS compatibility (iframe, security, resources)

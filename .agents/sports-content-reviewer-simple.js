@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
  * Direct API approach without Agent SDK restrictions
  */
 
-const sportsContentPrompt = `You are a sports marketing education expert reviewing content for Ivey Business School's "Business of Marketing in Sport" course.
+const sportsContentPrompt = `You are a sports marketing education expert reviewing content for Ivey Business School's "Business of Sports Marketing" course.
 
 COURSE CONTEXT:
 - 5-week intensive MBA cohort
@@ -102,7 +102,7 @@ async function reviewContent(filePath) {
       system: sportsContentPrompt,
       messages: [{
         role: 'user',
-        content: `Please review this educational content for the Business of Marketing in Sport course.
+        content: `Please review this educational content for the Business of Sports Marketing course.
 
 FILE: ${path.basename(absolutePath)}
 

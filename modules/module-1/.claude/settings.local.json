@@ -4,7 +4,11 @@
       "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/business-of-sports-marketing/Project Knowledge/Uplimit/**)",
       "Bash(for file in revenue-crisis-simulator.html revenue-stream-mapper.html rights-deal-negotiation.html)",
       "Bash(do cp \"$file\" \"$file.backup\")",
-      "Bash(done)"
+      "Bash(done)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/Uplimit Training/**)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/business-of-marketing-in-sport/modules/module-2/**)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/business-of-marketing-in-sport/modules/**)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/**)"
     ],
     "deny": [],
     "ask": []

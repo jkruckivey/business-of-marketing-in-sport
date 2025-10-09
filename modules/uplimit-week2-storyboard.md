@@ -1139,10 +1139,23 @@ are great for crowdsourcing ideas from other teams.
 - ☐ `week2-rogers-case.docx` (10-12 pages, full Rogers NHL case study)
 
 ### Videos to Create/Upload:
-- ☐ `week2-executive-session.mp4` (90 minutes, 3-part structure)
+
+**Instructional Videos** (Concept explainers - narrated with animation):
+- ☐ `week2-video1-valuation-framework.mp4` (2 minutes) - 5-factor media rights valuation
+- ☐ `week2-video1-valuation-framework.vtt` (VTT captions file)
+- ☐ Script: See `modules/video-scripts/week2-instructional-videos-2min.md` (Video 1)
+
+- ☐ `week2-video2-linear-vs-streaming.mp4` (2 minutes) - Business model comparison
+- ☐ `week2-video2-linear-vs-streaming.vtt` (VTT captions file)
+- ☐ Script: See `modules/video-scripts/week2-instructional-videos-2min.md` (Video 2)
+
+**Executive Session Video** (SME-led interview):
+- ☐ `week2-executive-session.mp4` (90 minutes, 3-part structure) - SME handles this separately
 - ☐ `week2-executive-transcript.vtt` (VTT captions file)
 - ☐ `week2-executive-poster.jpg` (thumbnail image)
-- ☐ `week2-rogers-retrospective.mp4` (14 minutes, "10 Years Later" analysis)
+
+**Case Study Video** (Optional - can be cut if not needed):
+- ☐ `week2-rogers-retrospective.mp4` (14 minutes) - "10 Years Later" analysis
 - ☐ `week2-rogers-retrospective.vtt` (VTT captions file)
 
 ### Custom Widgets:

@@ -653,3 +653,72 @@ business-of-sports-marketing/
     - ✅ Added NHL Canucks case access notice in step-2-resources.html with warning that case is required
   - **Remaining Issues**: Missing primary source materials (case study, media reports), no visual content for visual learners, no collaborative activities for social learners
   - **Overall Module Assessment**: Strong pedagogical design with excellent rubrics and industry integration, but critical implementation gaps prevent full completion
+
+- 2025-10-09: Instructional Video Scripts, Visual Content Specs, and Collaborative Learning Materials Complete
+  - **Instructional Video Scripts Created**: Concept explainer videos to supplement SME executive interviews (NOT interview scripts)
+    - **Week 1 Instructional Videos** (3 videos, ~25 minutes total): Narrated explainers with animated graphics
+      - Video 1: Understanding Revenue Streams (8-10m) - Introduces 5 revenue streams before executive video
+      - Video 2: Revenue Sharing Models (7-8m) - Deep dive on NHL/NFL/EPL models before Canucks case
+      - Video 3: Rogers NHL Deal Overview (10m) - Sets up Week 2 case analysis with financial context
+      - File: modules/video-scripts/week1-instructional-videos.md
+    - **Week 2 Instructional Videos** (2 videos, ~18 minutes total): Narrated explainers on media economics
+      - Video 1: How to Value Sports Media Rights (10-12m) - Teaches 5-factor framework before simulation
+      - Video 2: Linear TV vs. Streaming Economics (8m) - Compares business models with financial analysis
+      - File: modules/video-scripts/week2-instructional-videos.md
+    - **Format**: Animated motion graphics with voiceover narration (not talking-head interviews)
+    - **Purpose**: Introduce and explain complex concepts; SME executive interviews handled separately by instructor
+    - **Production Options**: Professional animation ($500-1,500/video) or DIY with Canva Pro ($13/month)
+    - **Total Duration**: 5 videos, ~43 minutes combined
+  - **Visual Content Specifications Document**: Comprehensive design specs addressing visual learner needs (Sarah persona: 72/100 → target 85/100)
+    - **5 Core Visual Assets Specified**:
+      1. NHL Revenue Flow Diagram (1200×800px): Shows centralized vs. team-retained revenue streams
+      2. Revenue Interdependence Ecosystem (1200×1200px): Circular diagram showing flywheel effect
+      3. Fan Engagement Value Chain (1600×900px): Progression from passive viewing to super-fan monetization
+      4. Linear TV vs. Streaming Economics (1400×1000px): Side-by-side business model comparison
+      5. Rogers NHL Deal Performance Dashboard (1600×1200px): 6-metric dashboard with financial data visualization
+    - **Additional Enhancements**: Animated concepts (optional), data visualization standards, accessibility checklist
+    - **Production Options**: DIY (Canva Pro, $13/month, 15-20 hours), Professional ($1,500-2,500), Hybrid (recommended, $800-1,200)
+    - **WCAG 2.2 AA Compliance**: Color palette, typography standards, contrast ratios, alt text specifications
+    - File: modules/visual-content-specifications.md
+  - **Discussion Forum Prompts & Peer Review Protocols**: Structured collaborative learning addressing Priya persona needs (68/100 → target 82/100)
+    - **Week 1 Discussion Prompts (3 total)**:
+      1. Revenue Interdependence in Action (Module 2): Apply ecosystem thinking to personal sports fandom
+      2. Investment Trade-Offs (Module 4): Share simulation strategies and learn from peers
+      3. Strategic vs. Financial Value (Module 6): Debate when "strategic value" justifies losses
+    - **Week 2 Discussion Prompts (2 total)**:
+      4. Your Streaming Wars Strategy (Module 4): Document simulation approach before watching executive debrief
+      5. Rogers' 2026 Decision (Module 6): Debate renewal options with evidence-based recommendations
+    - **Peer Review Protocols (2 comprehensive protocols)**:
+      - Week 1 Reflection Memo: 4-criterion structured feedback form with rubric alignment
+      - Week 2 Mini-Case Memo: 5-criterion structured feedback form with exhibit references
+      - Optional participation: 5 bonus points per review, spot-checked for quality
+      - Google Docs integration for draft sharing and commenting
+    - **Implementation Guidelines**: Forum setup, grading efficiency, best practices for students and instructors
+    - File: modules/discussion-prompts-and-peer-review-protocols.md
+  - **Rationale for Content Creation**:
+    - Addresses REMAINING-WORK-REPORT.md Phase 4 outstanding issues (visual content gaps, limited collaboration)
+    - Provides SME with production-ready scripts for executive video recording
+    - Gives design team clear specifications for visual asset creation
+    - Enables instructional designer to implement structured peer learning
+  - **Implementation Timeline**:
+    - Video Scripts: Ready for executive review and booking (2-3 week lead time typical)
+    - Visual Assets: 2-3 weeks for professional design or 1 week DIY with Canva
+    - Discussion Prompts: Ready for immediate implementation in Uplimit platform
+    - Peer Review: Deploy for Week 1 deadline minus 2-3 days (optional formative feedback)
+  - **Expected Impact**:
+    - Visual content: Increase Sarah (Visual Learner) score from 72/100 to 85/100 target
+    - Collaborative activities: Increase Priya (Collaborative Leader) score from 68/100 to 82/100 target
+    - Video scripts: Enable high-quality executive content production with clear learning objectives and accessibility compliance
+  - **Storyboard Updates**:
+    - Updated uplimit-week1-storyboard.md to reference instructional videos in "Videos to Create/Upload" section
+    - Updated uplimit-week2-storyboard.md to reference instructional videos in "Videos to Create/Upload" section
+    - Both storyboards now distinguish between instructional concept explainers (narrated with animation) and SME-led executive interviews
+    - Clear script references point to modules/video-scripts/ directory for production team
+  - **2-Minute Video Format**:
+    - Created condensed 2-minute versions of all video scripts per SME request
+    - Week 1: 3 videos x 2 minutes = 6 minutes total (down from 25 minutes)
+    - Week 2: 2 videos x 2 minutes = 4 minutes total (down from 18 minutes)
+    - Files: week1-instructional-videos-2min.md and week2-instructional-videos-2min.md
+    - Fast-paced format focuses on essential concepts only
+    - Production time estimate: 3-5 hours per video (DIY) or 3-5 business days (professional)
+    - Updated storyboards to reference 2-minute versions instead of longer originals

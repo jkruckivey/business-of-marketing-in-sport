@@ -974,7 +974,22 @@ sport business, they're excellent resources.
 - ☐ `week1-canucks-case.docx` (8-10 pages, full case study)
 
 ### Videos to Create/Upload:
-- ☐ `week1-executive-session.mp4` (90 minutes)
+
+**Instructional Videos** (Concept explainers - narrated with animation):
+- ☐ `week1-video1-revenue-streams.mp4` (2 minutes) - Introduction to 5 revenue streams
+- ☐ `week1-video1-revenue-streams.vtt` (VTT captions file)
+- ☐ Script: See `modules/video-scripts/week1-instructional-videos-2min.md` (Video 1)
+
+- ☐ `week1-video2-revenue-sharing.mp4` (2 minutes) - Revenue sharing models comparison
+- ☐ `week1-video2-revenue-sharing.vtt` (VTT captions file)
+- ☐ Script: See `modules/video-scripts/week1-instructional-videos-2min.md` (Video 2)
+
+- ☐ `week1-video3-rogers-overview.mp4` (2 minutes) - Rogers NHL deal overview for Week 2 prep
+- ☐ `week1-video3-rogers-overview.vtt` (VTT captions file)
+- ☐ Script: See `modules/video-scripts/week1-instructional-videos-2min.md` (Video 3)
+
+**Executive Session Video** (SME-led interview):
+- ☐ `week1-executive-session.mp4` (90 minutes) - SME handles this separately
 - ☐ `week1-executive-transcript.vtt` (VTT captions file)
 - ☐ `week1-executive-poster.jpg` (thumbnail image)
 

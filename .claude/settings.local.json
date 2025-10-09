@@ -45,10 +45,9 @@
       "Bash(del jameskruck-claude-subagents-2.2.0.tgz)",
       "Bash(npm cache clean:*)",
       "Bash(find:*)",
-      "Bash(mv:*)",
-      "Bash(cp:*)",
-      "Bash(awk:*)",
-      "Bash(tree:*)"
+      "Bash(for file in sponsorship-roi-calculator.html revenue-mix-slider.html dynamic-pricing-simulator.html ecosystem-cascade-simulator.html)",
+      "Bash(do echo \"Processing: $file\")",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": [],

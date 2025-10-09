@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Mix Slider - Build Your Revenue Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #0f1419;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            color: #c5b783;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .sliders-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .slider-group {
+            background: #1a1f2e;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--stream-color);
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .stream-name {
+            font-weight: 600;
+            color: var(--stream-color);
+            font-size: 0.95rem;
+        }
+
+        .stream-value {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 4px;
+            background: #2a2f3e;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--stream-color);
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--stream-color);
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Stream-specific colors */
+        .media { --stream-color: #3b82f6; }
+        .ticketing { --stream-color: #10b981; }
+        .sponsorship { --stream-color: #f59e0b; }
+        .merchandising { --stream-color: #8b5cf6; }
+        .betting { --stream-color: #ef4444; }
+
+        .visualization {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .pie-chart {
+            width: 100%;
+            aspect-ratio: 1;
+            background: #1a1f2e;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metrics {
+            background: #1a1f2e;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #2a2f3e;
+        }
+
+        .metric-row:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .metric-value {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .metric-value.good {
+            color: #10b981;
+        }
+
+        .metric-value.medium {
+            color: #f59e0b;
+        }
+
+        .metric-value.bad {
+            color: #ef4444;
+        }
+
+        .total-bar {
+            background: #2a2f3e;
+            height: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        .total-bar-fill {
+            height: 100%;
+            transition: width 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .total-bar-fill.complete {
+            background: #10b981;
+        }
+
+        .total-bar-fill.incomplete {
+            background: #ef4444;
+        }
+
+        .insights {
+            background: #1a1f2e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .insights h3 {
+            color: #c5b783;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .insight-item {
+            padding: 10px;
+            background: #0f1419;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border-left: 3px solid #c5b783;
+        }
+
+        .insight-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .reset-btn {
+            background: #c5b783;
+            color: #0f1419;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+            margin-top: 20px;
+            transition: background 0.2s;
+        }
+
+        .reset-btn:hover {
+            background: #d4c89a;
+        }
+
+        .reset-btn:focus {
+            outline: 3px solid #c5b783;
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Revenue Mix Slider</h1>
+        <p class="subtitle">Build your revenue portfolio and see how it performs</p>
+
+        <div class="total-bar" aria-label="Total revenue allocation" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div id="totalBarFill" class="total-bar-fill incomplete">0%</div>
+        </div>
+
+        <div class="grid">
+            <!-- Sliders Section -->
+            <div class="sliders-section">
+                <div class="slider-group media">
+                    <div class="slider-header">
+                        <span class="stream-name">📺 Media Rights</span>
+                        <span class="stream-value"><span id="mediaValue">40</span>%</span>
+                    </div>
+                    <label for="mediaSlider" class="sr-only">Media Rights percentage</label>
+                    <input type="range" id="mediaSlider" min="0" max="100" value="40" step="1"
+                           aria-label="Media Rights allocation slider">
+                </div>
+
+                <div class="slider-group ticketing">
+                    <div class="slider-header">
+                        <span class="stream-name">🎫 Ticketing & Live Events</span>
+                        <span class="stream-value"><span id="ticketingValue">25</span>%</span>
+                    </div>
+                    <label for="ticketingSlider" class="sr-only">Ticketing percentage</label>
+                    <input type="range" id="ticketingSlider" min="0" max="100" value="25" step="1"
+                           aria-label="Ticketing allocation slider">
+                </div>
+
+                <div class="slider-group sponsorship">
+                    <div class="slider-header">
+                        <span class="stream-name">🤝 Sponsorship</span>
+                        <span class="stream-value"><span id="sponsorshipValue">20</span>%</span>
+                    </div>
+                    <label for="sponsorshipSlider" class="sr-only">Sponsorship percentage</label>
+                    <input type="range" id="sponsorshipSlider" min="0" max="100" value="20" step="1"
+                           aria-label="Sponsorship allocation slider">
+                </div>
+
+                <div class="slider-group merchandising">
+                    <div class="slider-header">
+                        <span class="stream-name">👕 Merchandising</span>
+                        <span class="stream-value"><span id="merchandisingValue">10</span>%</span>
+                    </div>
+                    <label for="merchandisingSlider" class="sr-only">Merchandising percentage</label>
+                    <input type="range" id="merchandisingSlider" min="0" max="100" value="10" step="1"
+                           aria-label="Merchandising allocation slider">
+                </div>
+
+                <div class="slider-group betting">
+                    <div class="slider-header">
+                        <span class="stream-name">🎲 Betting & Gaming</span>
+                        <span class="stream-value"><span id="bettingValue">5</span>%</span>
+                    </div>
+                    <label for="bettingSlider" class="sr-only">Betting percentage</label>
+                    <input type="range" id="bettingSlider" min="0" max="100" value="5" step="1"
+                           aria-label="Betting allocation slider">
+                </div>
+            </div>
+
+            <!-- Visualization Section -->
+            <div class="visualization">
+                <div class="metrics">
+                    <div class="metric-row">
+                        <span class="metric-label">Risk Score</span>
+                        <span id="riskScore" class="metric-value medium">Medium</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-label">Growth Potential</span>
+                        <span id="growthPotential" class="metric-value good">Moderate</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-label">Stability Rating</span>
+                        <span id="stabilityRating" class="metric-value good">Stable</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-label">Portfolio Type</span>
+                        <span id="portfolioType" class="metric-value">Balanced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="insights">
+            <h3>💡 Insights</h3>
+            <div id="insightsContainer"></div>
+        </div>
+
+        <button class="reset-btn" onclick="resetToDefaults()">Reset to Typical League Mix</button>
+    </div>
+
+    <script>
+        const sliders = {
+            media: document.getElementById('mediaSlider'),
+            ticketing: document.getElementById('ticketingSlider'),
+            sponsorship: document.getElementById('sponsorshipSlider'),
+            merchandising: document.getElementById('merchandisingSlider'),
+            betting: document.getElementById('bettingSlider')
+        };
+
+        const values = {
+            media: document.getElementById('mediaValue'),
+            ticketing: document.getElementById('ticketingValue'),
+            sponsorship: document.getElementById('sponsorshipValue'),
+            merchandising: document.getElementById('merchandisingValue'),
+            betting: document.getElementById('bettingValue')
+        };
+
+        // Add event listeners to all sliders
+        Object.keys(sliders).forEach(key => {
+            sliders[key].addEventListener('input', () => updateDisplay());
+        });
+
+        function getValues() {
+            return {
+                media: parseInt(sliders.media.value),
+                ticketing: parseInt(sliders.ticketing.value),
+                sponsorship: parseInt(sliders.sponsorship.value),
+                merchandising: parseInt(sliders.merchandising.value),
+                betting: parseInt(sliders.betting.value)
+            };
+        }
+
+        function updateDisplay() {
+            const current = getValues();
+            const total = current.media + current.ticketing + current.sponsorship +
+                         current.merchandising + current.betting;
+
+            // Update value displays
+            values.media.textContent = current.media;
+            values.ticketing.textContent = current.ticketing;
+            values.sponsorship.textContent = current.sponsorship;
+            values.merchandising.textContent = current.merchandising;
+            values.betting.textContent = current.betting;
+
+            // Update total bar
+            const totalBar = document.getElementById('totalBarFill');
+            totalBar.style.width = Math.min(total, 100) + '%';
+            totalBar.textContent = total + '%';
+            totalBar.className = 'total-bar-fill ' + (total === 100 ? 'complete' : 'incomplete');
+            totalBar.parentElement.setAttribute('aria-valuenow', total);
+
+            if (total === 100) {
+                calculateMetrics(current);
+            } else {
+                clearMetrics();
+            }
+        }
+
+        function calculateMetrics(current) {
+            // Risk calculation (betting/growth = high risk, media = low risk)
+            const riskScore = (current.betting * 2 + current.media * 0.5 + current.sponsorship * 1.5 +
+                              current.ticketing * 1 + current.merchandising * 0.8) / 100;
+
+            let riskText, riskClass;
+            if (riskScore < 1) {
+                riskText = 'Low'; riskClass = 'good';
+            } else if (riskScore < 1.5) {
+                riskText = 'Medium'; riskClass = 'medium';
+            } else {
+                riskText = 'High'; riskClass = 'bad';
+            }
+
+            // Growth potential (betting/tech = high growth, ticketing = low growth)
+            const growthScore = (current.betting * 2 + current.media * 1.2 + current.sponsorship * 1.3 +
+                                current.ticketing * 0.5 + current.merchandising * 0.8) / 100;
+
+            let growthText, growthClass;
+            if (growthScore < 0.9) {
+                growthText = 'Low'; growthClass = 'bad';
+            } else if (growthScore < 1.3) {
+                growthText = 'Moderate'; growthClass = 'medium';
+            } else {
+                growthText = 'High'; growthClass = 'good';
+            }
+
+            // Stability (media/ticketing = stable, betting = unstable)
+            const stabilityScore = (current.media * 2 + current.ticketing * 1.8 + current.sponsorship * 1.2 +
+                                   current.merchandising * 1.5 + current.betting * 0.3) / 100;
+
+            let stabilityText, stabilityClass;
+            if (stabilityScore < 1) {
+                stabilityText = 'Unstable'; stabilityClass = 'bad';
+            } else if (stabilityScore < 1.5) {
+                stabilityText = 'Moderate'; stabilityClass = 'medium';
+            } else {
+                stabilityText = 'Stable'; stabilityClass = 'good';
+            }
+
+            // Portfolio type
+            let portfolioType = 'Balanced';
+            if (current.media > 60) portfolioType = 'Media-Dependent';
+            else if (current.betting > 20) portfolioType = 'High-Growth Aggressive';
+            else if (current.ticketing > 40) portfolioType = 'Traditional/Conservative';
+            else if (current.sponsorship + current.merchandising > 40) portfolioType = 'Brand-Driven';
+
+            // Update display
+            const riskEl = document.getElementById('riskScore');
+            riskEl.textContent = riskText;
+            riskEl.className = 'metric-value ' + riskClass;
+
+            const growthEl = document.getElementById('growthPotential');
+            growthEl.textContent = growthText;
+            growthEl.className = 'metric-value ' + growthClass;
+
+            const stabilityEl = document.getElementById('stabilityRating');
+            stabilityEl.textContent = stabilityText;
+            stabilityEl.className = 'metric-value ' + stabilityClass;
+
+            document.getElementById('portfolioType').textContent = portfolioType;
+
+            generateInsights(current, portfolioType);
+        }
+
+        function generateInsights(current, portfolioType) {
+            const insights = [];
+
+            if (current.media > 60) {
+                insights.push('⚠️ Heavy media dependence creates vulnerability to cord-cutting and streaming disruption.');
+            }
+            if (current.betting > 15) {
+                insights.push('📈 High betting allocation offers growth potential but carries regulatory risk.');
+            }
+            if (current.ticketing > 35) {
+                insights.push('🏟️ Ticketing-heavy model is capacity-limited—difficult to scale revenue.');
+            }
+            if (current.sponsorship + current.merchandising > 45) {
+                insights.push('🎯 Brand-driven revenue requires strong team performance and market presence.');
+            }
+            if (current.media < 30) {
+                insights.push('💡 Low media rights may limit ability to attract top talent in revenue-sharing leagues.');
+            }
+            if (current.media >= 35 && current.media <= 50 && current.ticketing >= 20 && current.ticketing <= 30) {
+                insights.push('✅ This mix resembles a typical major league portfolio—balanced and proven.');
+            }
+
+            const container = document.getElementById('insightsContainer');
+            if (insights.length === 0) {
+                container.innerHTML = '<div class="insight-item">Adjust your sliders to see strategic insights about your revenue mix.</div>';
+            } else {
+                container.innerHTML = insights.map(insight =>
+                    `<div class="insight-item">${insight}</div>`
+                ).join('');
+            }
+        }
+
+        function clearMetrics() {
+            document.getElementById('riskScore').textContent = '—';
+            document.getElementById('growthPotential').textContent = '—';
+            document.getElementById('stabilityRating').textContent = '—';
+            document.getElementById('portfolioType').textContent = '—';
+            document.getElementById('insightsContainer').innerHTML =
+                '<div class="insight-item">⚠️ Total must equal 100% to calculate metrics</div>';
+        }
+
+        function resetToDefaults() {
+            sliders.media.value = 40;
+            sliders.ticketing.value = 25;
+            sliders.sponsorship.value = 20;
+            sliders.merchandising.value = 10;
+            sliders.betting.value = 5;
+            updateDisplay();
+        }
+
+        // Initialize
+        updateDisplay();
+    </script>
+</body>
+</html>

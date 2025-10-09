@@ -61,7 +61,87 @@ Successful organizations build revenue **ecosystems**, not portfolios.
 
 ---
 
-## Video 2: Revenue Sharing Models (2 minutes)
+## Video 2: Sponsorship & Merchandising Overview (2 minutes) ⭐ **NEW FOR MODULE 3**
+
+**Purpose:** Visual break at midpoint of Module 3; covers brand-driven revenue streams
+**Placement:** Module 3, Element 12 (after ticketing, before detailed sponsorship text)
+**Visual Style:** Clean animated graphics with brand logos and examples
+
+### SCRIPT
+
+**[OPENING - 0:00-0:15]**
+
+**[ON-SCREEN: Brand logos (Scotiabank, Nike, FanDuel) surrounding sports team logos]**
+
+**NARRATOR:**
+While media rights and ticketing depend on the game itself, two revenue streams are driven by **brand value**: sponsorship and merchandising.
+
+Let's see how teams monetize their brands through corporate partnerships and consumer products.
+
+---
+
+**[SECTION: SPONSORSHIP - 0:15-1:00]**
+
+**[ANIMATION: Stadium with naming rights, jersey patches, in-venue signage]**
+
+**NARRATOR:**
+**Sponsorship: 15-25% of Revenue**
+
+The most visible sponsorship deals are **naming rights**: Scotiabank Arena in Toronto—$800 million over 20 years. That's $40 million per year just for the name.
+
+**[ON-SCREEN: Jersey patch examples from NBA]**
+
+**Jersey sponsorship** arrived in North America in 2017. The NBA allows a 2.5-inch patch on uniforms. Top deals reach $20-30 million per year—Golden State Warriors and Rakuten, $20 million annually.
+
+**[ANIMATION: Sponsor activation examples]**
+
+But the best sponsors don't just buy logos—they create **experiences**. Scotiabank's "Scene+ Night" at Leafs games integrates their loyalty program with ticket offers and in-arena experiences. Fans remember positive moments, not just a logo.
+
+**Key sponsorship categories:**
+- Naming rights ($15-50M/year)
+- Jersey/uniform patches ($5-30M/year)
+- Category partnerships—official bank, beer, airline ($500K-10M/year)
+
+---
+
+**[SECTION: MERCHANDISING - 1:00-1:45]**
+
+**[ANIMATION: Jerseys, hats, merchandise flooding screen]**
+
+**NARRATOR:**
+**Merchandising: 5-10% of Revenue**
+
+Most major North American leagues—NFL, NHL, MLB—use a **centralized model**. The league manages all licensing, then splits revenue equally among teams.
+
+Why? **Competitive balance.** This prevents the Yankees and Cowboys from dominating merchandise sales and creating massive revenue gaps.
+
+**[ON-SCREEN: LeBron Lakers jersey, Championship gear, City Edition designs]**
+
+**Revenue spikes during:**
+- **Championship runs:** Sales increase 200-400% during playoffs
+- **Star acquisitions:** LeBron's trade to the Lakers generated over $1 million in jersey sales within hours
+- **New designs:** NBA "City Edition" jerseys generate over $100 million annually
+
+**[ANIMATION: Digital commerce icons]**
+
+Digital commerce transformed merchandising—teams now sell globally without retail partnerships. The Toronto Raptors ship merchandise to **85+ countries** through their online store.
+
+---
+
+**[CONCLUSION - 1:45-2:00]**
+
+**[ON-SCREEN: Sponsorship + Merchandising = Brand-Driven Revenue]**
+
+**NARRATOR:**
+**Key insight:** These are **brand-driven revenue streams**. The stronger your brand, the more valuable your sponsorship inventory and the more merchandise you sell.
+
+Next up: **Betting**—the newest and fastest-growing revenue frontier.
+
+**[END SCREEN]**
+
+---
+
+## Video 3 (Original): Revenue Sharing Models (2 minutes)
 
 **Purpose:** Explain why and how leagues share revenue
 **Placement:** Module 5 (Before Case Study)

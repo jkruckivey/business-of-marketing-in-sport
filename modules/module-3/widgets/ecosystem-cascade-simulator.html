@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Ecosystem Cascade Simulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(197, 183, 131, 0.2);
+        }
+
+        h1 {
+            color: #c5b783;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #a0a0a0;
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+
+        .scenario-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .scenario-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .scenario-card:hover {
+            border-color: #c5b783;
+            background: rgba(197, 183, 131, 0.1);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(197, 183, 131, 0.2);
+        }
+
+        .scenario-card.active {
+            border-color: #c5b783;
+            background: rgba(197, 183, 131, 0.15);
+            box-shadow: 0 0 20px rgba(197, 183, 131, 0.3);
+        }
+
+        .scenario-card:focus {
+            outline: 3px solid rgba(197, 183, 131, 0.5);
+            outline-offset: 2px;
+        }
+
+        .scenario-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .scenario-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 8px;
+        }
+
+        .scenario-desc {
+            font-size: 14px;
+            color: #d0d0d0;
+            line-height: 1.5;
+        }
+
+        .scenario-cost {
+            font-size: 16px;
+            font-weight: 700;
+            color: #ef4444;
+            margin-top: 12px;
+        }
+
+        .investment-box {
+            background: rgba(239, 68, 68, 0.1);
+            border: 2px solid #ef4444;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .investment-label {
+            font-size: 14px;
+            color: #a0a0a0;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .investment-amount {
+            font-size: 48px;
+            font-weight: 700;
+            color: #ef4444;
+            margin-bottom: 4px;
+        }
+
+        .investment-desc {
+            font-size: 14px;
+            color: #d0d0d0;
+        }
+
+        .cascade-container {
+            margin-bottom: 32px;
+        }
+
+        .cascade-section {
+            margin-bottom: 24px;
+        }
+
+        .cascade-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 16px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .cascade-header:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .cascade-header:focus {
+            outline: 3px solid rgba(197, 183, 131, 0.5);
+            outline-offset: 2px;
+        }
+
+        .cascade-header.active {
+            border-color: #c5b783;
+        }
+
+        .cascade-header.direct {
+            border-left: 4px solid #f59e0b;
+        }
+
+        .cascade-header.indirect {
+            border-left: 4px solid #10b981;
+        }
+
+        .cascade-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .cascade-title.direct {
+            color: #f59e0b;
+        }
+
+        .cascade-title.indirect {
+            color: #10b981;
+        }
+
+        .cascade-total {
+            font-size: 24px;
+            font-weight: 700;
+            color: #c5b783;
+        }
+
+        .cascade-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .cascade-content.expanded {
+            max-height: 1000px;
+        }
+
+        .cascade-items {
+            padding: 20px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .cascade-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideIn 0.4s forwards;
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .cascade-item:nth-child(1) { animation-delay: 0.1s; }
+        .cascade-item:nth-child(2) { animation-delay: 0.2s; }
+        .cascade-item:nth-child(3) { animation-delay: 0.3s; }
+        .cascade-item:nth-child(4) { animation-delay: 0.4s; }
+        .cascade-item:nth-child(5) { animation-delay: 0.5s; }
+
+        .cascade-item-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .cascade-item-icon {
+            font-size: 24px;
+        }
+
+        .cascade-item-text {
+            font-size: 16px;
+            color: #d0d0d0;
+        }
+
+        .cascade-item-value {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .cascade-item-value.positive {
+            color: #10b981;
+        }
+
+        .cascade-item-value.neutral {
+            color: #f59e0b;
+        }
+
+        .net-result {
+            background: linear-gradient(135deg, rgba(197, 183, 131, 0.15) 0%, rgba(197, 183, 131, 0.05) 100%);
+            border: 3px solid #c5b783;
+            border-radius: 12px;
+            padding: 32px;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .net-label {
+            font-size: 18px;
+            color: #a0a0a0;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .net-value {
+            font-size: 56px;
+            font-weight: 700;
+            color: #10b981;
+            margin-bottom: 8px;
+        }
+
+        .net-desc {
+            font-size: 16px;
+            color: #d0d0d0;
+            line-height: 1.6;
+        }
+
+        .roi-metric {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            margin-top: 12px;
+        }
+
+        .insights {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .insights h3 {
+            color: #c5b783;
+            font-size: 20px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .insight-item {
+            background: rgba(255, 255, 255, 0.02);
+            border-left: 3px solid #3b82f6;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .insight-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .insight-title {
+            font-weight: 700;
+            color: #c5b783;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+
+        .insight-text {
+            color: #d0d0d0;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #c5b783;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #d4c699;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(197, 183, 131, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .btn:focus {
+            outline: 3px solid rgba(197, 183, 131, 0.5);
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .scenario-selector {
+                grid-template-columns: 1fr;
+            }
+
+            .investment-amount {
+                font-size: 36px;
+            }
+
+            .net-value {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Revenue Ecosystem Cascade Simulator</h1>
+        <p class="subtitle">See how one strategic investment amplifies across all revenue streams</p>
+
+        <div class="scenario-selector">
+            <div class="scenario-card active" tabindex="0" role="button" aria-pressed="true"
+                 onclick="loadScenario('mcdavid')" onkeypress="handleKeyPress(event, 'mcdavid')"
+                 aria-label="Connor McDavid signing scenario">
+                <div class="scenario-icon">⭐</div>
+                <div class="scenario-title">Sign Connor McDavid</div>
+                <div class="scenario-desc">Superstar player acquisition creates cascading revenue across all streams</div>
+                <div class="scenario-cost">Cost: $12.5M/year</div>
+            </div>
+
+            <div class="scenario-card" tabindex="0" role="button" aria-pressed="false"
+                 onclick="loadScenario('arena')" onkeypress="handleKeyPress(event, 'arena')"
+                 aria-label="New arena construction scenario">
+                <div class="scenario-icon">🏟️</div>
+                <div class="scenario-title">Build New Arena</div>
+                <div class="scenario-desc">State-of-the-art facility drives premium seating and corporate partnerships</div>
+                <div class="scenario-cost">Cost: $50M/year (amortized)</div>
+            </div>
+
+            <div class="scenario-card" tabindex="0" role="button" aria-pressed="false"
+                 onclick="loadScenario('betting')" onkeypress="handleKeyPress(event, 'betting')"
+                 aria-label="Betting platform partnership scenario">
+                <div class="scenario-icon">🎲</div>
+                <div class="scenario-title">Launch Betting Platform</div>
+                <div class="scenario-desc">Exclusive partnership with sports betting operator creates new revenue stream</div>
+                <div class="scenario-cost">Cost: $8M/year (partnership)</div>
+            </div>
+
+            <div class="scenario-card" tabindex="0" role="button" aria-pressed="false"
+                 onclick="loadScenario('streaming')" onkeypress="handleKeyPress(event, 'streaming')"
+                 aria-label="Streaming service launch scenario">
+                <div class="scenario-icon">📺</div>
+                <div class="scenario-title">Launch Streaming Service</div>
+                <div class="scenario-desc">Direct-to-consumer platform captures digital audience and global reach</div>
+                <div class="scenario-cost">Cost: $15M/year (platform)</div>
+            </div>
+        </div>
+
+        <div class="investment-box">
+            <div class="investment-label">Annual Investment</div>
+            <div class="investment-amount" id="investmentAmount">$12.5M</div>
+            <div class="investment-desc" id="investmentDesc">Salary cost for superstar player</div>
+        </div>
+
+        <div class="cascade-container">
+            <div class="cascade-section">
+                <div class="cascade-header direct" tabindex="0" role="button" aria-expanded="false"
+                     onclick="toggleCascade('direct')" onkeypress="handleKeyPress(event, 'direct')">
+                    <div class="cascade-title direct">
+                        <span>📊</span>
+                        <span>Direct Effects</span>
+                    </div>
+                    <div class="cascade-total" id="directTotal">Click to reveal</div>
+                </div>
+                <div class="cascade-content" id="directContent">
+                    <div class="cascade-items" id="directItems">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="cascade-section">
+                <div class="cascade-header indirect" tabindex="0" role="button" aria-expanded="false"
+                     onclick="toggleCascade('indirect')" onkeypress="handleKeyPress(event, 'indirect')">
+                    <div class="cascade-title indirect">
+                        <span>🌊</span>
+                        <span>Indirect Effects</span>
+                    </div>
+                    <div class="cascade-total" id="indirectTotal">Click to reveal</div>
+                </div>
+                <div class="cascade-content" id="indirectContent">
+                    <div class="cascade-items" id="indirectItems">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="net-result" id="netResult" style="display: none;">
+            <div class="net-label">Total Ecosystem Value</div>
+            <div class="net-value" id="netValue">+$30M</div>
+            <div class="net-desc" id="netDesc">
+                Annual net gain after accounting for initial investment
+                <div class="roi-metric" id="roiMetric">240% ROI</div>
+            </div>
+        </div>
+
+        <div class="insights" id="insightsSection" style="display: none;">
+            <h3>💡 Key Insights</h3>
+            <div id="insightsList">
+                <!-- Dynamic insights -->
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-secondary" onclick="resetCascade()" aria-label="Reset cascade and hide all effects">
+                Reset Cascade
+            </button>
+            <button class="btn btn-primary" onclick="exportScenario()" aria-label="Export scenario data as JSON">
+                Export Scenario
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const scenarios = {
+            mcdavid: {
+                name: "Sign Connor McDavid",
+                cost: 12.5,
+                costDesc: "Salary cost for superstar player",
+                direct: [
+                    { icon: "🎫", label: "Increased ticket sales", value: 5.0, desc: "Attendance boost 15-20%, premium pricing" },
+                    { icon: "👕", label: "Merchandise spike", value: 3.0, desc: "Jersey sales, fan gear demand" },
+                    { icon: "📱", label: "Digital engagement", value: 1.5, desc: "Social media, app downloads, highlights" }
+                ],
+                indirect: [
+                    { icon: "📺", label: "Media rights value increase", value: 10.0, desc: "Playoff appearances, national TV games" },
+                    { icon: "🤝", label: "Sponsorship renewals", value: 5.0, desc: "Premium pricing, new category partners" },
+                    { icon: "🏆", label: "Playoff revenue", value: 15.0, desc: "Additional home games, premium pricing" },
+                    { icon: "🎲", label: "Betting engagement", value: 2.0, desc: "Increased wagers on star-driven games" },
+                    { icon: "🌍", label: "International expansion", value: 3.5, desc: "Global jersey sales, exhibition games" }
+                ],
+                insights: [
+                    {
+                        title: "Ecosystem Multiplier Effect",
+                        text: "McDavid's $12.5M salary generates 3.4x return through cascading effects. Direct revenue ($9.5M) covers 76% of cost, but indirect effects ($35.5M) create the real value proposition."
+                    },
+                    {
+                        title: "Why Teams 'Overpay' for Stars",
+                        text: "Conventional analysis only considers direct ticket/merch revenue. Ecosystem thinking reveals media, sponsorship, and playoff multipliers that justify premium salaries."
+                    },
+                    {
+                        title: "Long-Term Value Creation",
+                        text: "Superstar acquisitions drive 5-7 year cycles: Year 1-2 (jersey sales, attendance), Year 3-5 (playoff revenue, media), Year 6-7 (championship premium, legacy revenue)."
+                    }
+                ]
+            },
+            arena: {
+                name: "Build New Arena",
+                cost: 50.0,
+                costDesc: "Annual amortized construction cost",
+                direct: [
+                    { icon: "💎", label: "Premium seating revenue", value: 25.0, desc: "Luxury suites, club seats (40-50% of revenue)" },
+                    { icon: "🍔", label: "Concession upgrades", value: 8.0, desc: "Premium F&B, experiential dining" },
+                    { icon: "🎪", label: "Non-game events", value: 12.0, desc: "Concerts, corporate events (100+ dates/year)" }
+                ],
+                indirect: [
+                    { icon: "🏢", label: "Naming rights deal", value: 20.0, desc: "20-year partnership ($400M total)" },
+                    { icon: "🤝", label: "Sponsorship inventory", value: 15.0, desc: "New signage, activation spaces" },
+                    { icon: "📺", label: "Media production value", value: 5.0, desc: "Better broadcast aesthetics, tech" },
+                    { icon: "🏙️", label: "Real estate development", value: 30.0, desc: "Adjacent mixed-use development revenue" },
+                    { icon: "🎟️", label: "Season ticket waitlist", value: 10.0, desc: "Increased demand, PSL revenue" }
+                ],
+                insights: [
+                    {
+                        title: "Real Estate Play",
+                        text: "Modern arenas are anchors for $500M-1B mixed-use developments. Real estate appreciation ($30M/year) often exceeds sports revenue."
+                    },
+                    {
+                        title: "Premium Seat Economics",
+                        text: "10-15% of seats (luxury suites, club) generate 40-50% of revenue. New arenas prioritize premium inventory over capacity."
+                    },
+                    {
+                        title: "Multi-Use Revenue",
+                        text: "Arenas average 200+ event days/year. Non-sports events (concerts, conferences) generate $12M+ annually with higher margins than sports."
+                    }
+                ]
+            },
+            betting: {
+                name: "Launch Betting Platform",
+                cost: 8.0,
+                costDesc: "Partnership investment and platform costs",
+                direct: [
+                    { icon: "💰", label: "Partnership fees", value: 5.0, desc: "Annual guaranteed minimum" },
+                    { icon: "📊", label: "Data licensing", value: 2.5, desc: "Real-time stats, official feeds" },
+                    { icon: "📱", label: "In-app advertising", value: 1.5, desc: "Platform promotion during broadcasts" }
+                ],
+                indirect: [
+                    { icon: "📺", label: "Media rights boost", value: 8.0, desc: "Live betting drives viewership retention" },
+                    { icon: "🎟️", label: "Attendance increase", value: 3.0, desc: "In-stadium betting terminals" },
+                    { icon: "🤝", label: "Cross-promotion value", value: 4.0, desc: "Joint marketing, fan engagement" },
+                    { icon: "👥", label: "Younger demographic", value: 2.0, desc: "18-34 audience growth" },
+                    { icon: "📈", label: "Sponsorship category", value: 5.0, desc: "New betting sponsor tier" }
+                ],
+                insights: [
+                    {
+                        title: "Fastest-Growing Revenue Stream",
+                        text: "Betting revenue grew 40% annually (2020-2024). Early movers (MGM, FanDuel partnerships) secured $5-20M annual deals before market saturation."
+                    },
+                    {
+                        title: "Media Synergy",
+                        text: "Live betting increases broadcast viewing time by 18-25%. Networks pay premium for betting-integrated games, driving media rights value."
+                    },
+                    {
+                        title: "Regulatory Risk",
+                        text: "38 US states legalized (2024), but federal regulation remains uncertain. Partnership terms include flexibility clauses for regulatory changes."
+                    }
+                ]
+            },
+            streaming: {
+                name: "Launch Streaming Service",
+                cost: 15.0,
+                costDesc: "Platform development and content production",
+                direct: [
+                    { icon: "💳", label: "Subscription revenue", value: 12.0, desc: "DTC subscribers ($10-15/month)" },
+                    { icon: "📹", label: "Exclusive content", value: 4.0, desc: "Behind-the-scenes, documentaries" },
+                    { icon: "🌍", label: "International subscribers", value: 6.0, desc: "Global reach beyond broadcast" }
+                ],
+                indirect: [
+                    { icon: "📊", label: "First-party data", value: 8.0, desc: "Fan insights, targeted advertising" },
+                    { icon: "🤝", label: "Sponsorship integration", value: 6.0, desc: "Digital activation, branded content" },
+                    { icon: "👥", label: "Fan engagement metrics", value: 3.0, desc: "Personalization, retention insights" },
+                    { icon: "🎟️", label: "Ticket conversion", value: 4.0, desc: "Streaming-to-attendance funnel" },
+                    { icon: "📺", label: "Media negotiation leverage", value: 10.0, desc: "Alternative distribution threat" }
+                ],
+                insights: [
+                    {
+                        title: "Direct-to-Consumer Shift",
+                        text: "Traditional media pays $110B (NFL), but DTC captures 100% revenue vs. 50-60% in media deals. Trade-off: Scale vs. margin."
+                    },
+                    {
+                        title: "Data as Revenue Driver",
+                        text: "First-party fan data worth $8M/year in targeted advertising. Traditional broadcast provides no fan-level insights."
+                    },
+                    {
+                        title: "Negotiation Leverage",
+                        text: "Streaming platform creates BATNA (Best Alternative) in media negotiations. NFL used 'NFL+' to increase ESPN/Amazon bids by 15-20%."
+                    }
+                ]
+            }
+        };
+
+        let currentScenario = 'mcdavid';
+        let directRevealed = false;
+        let indirectRevealed = false;
+
+        function loadScenario(scenarioKey) {
+            currentScenario = scenarioKey;
+            const scenario = scenarios[scenarioKey];
+
+            // Reset cascade state
+            directRevealed = false;
+            indirectRevealed = false;
+
+            // Update active card
+            document.querySelectorAll('.scenario-card').forEach(card => {
+                card.classList.remove('active');
+                card.setAttribute('aria-pressed', 'false');
+            });
+            event.target.closest('.scenario-card').classList.add('active');
+            event.target.closest('.scenario-card').setAttribute('aria-pressed', 'true');
+
+            // Update investment display
+            document.getElementById('investmentAmount').textContent = `$${scenario.cost}M`;
+            document.getElementById('investmentDesc').textContent = scenario.costDesc;
+
+            // Reset cascade headers
+            document.getElementById('directTotal').textContent = 'Click to reveal';
+            document.getElementById('indirectTotal').textContent = 'Click to reveal';
+
+            // Hide content
+            document.getElementById('directContent').classList.remove('expanded');
+            document.getElementById('indirectContent').classList.remove('expanded');
+            document.getElementById('netResult').style.display = 'none';
+            document.getElementById('insightsSection').style.display = 'none';
+
+            // Reset aria-expanded
+            document.querySelectorAll('.cascade-header').forEach(header => {
+                header.setAttribute('aria-expanded', 'false');
+                header.classList.remove('active');
+            });
+        }
+
+        function toggleCascade(type) {
+            const scenario = scenarios[currentScenario];
+            const content = document.getElementById(`${type}Content`);
+            const items = document.getElementById(`${type}Items`);
+            const total = document.getElementById(`${type}Total`);
+            const header = event.target.closest('.cascade-header');
+
+            const isExpanded = content.classList.contains('expanded');
+
+            if (isExpanded) {
+                content.classList.remove('expanded');
+                header.setAttribute('aria-expanded', 'false');
+                header.classList.remove('active');
+                total.textContent = 'Click to reveal';
+                if (type === 'direct') directRevealed = false;
+                if (type === 'indirect') indirectRevealed = false;
+            } else {
+                // Build items
+                const effects = scenario[type];
+                const totalValue = effects.reduce((sum, item) => sum + item.value, 0);
+
+                items.innerHTML = effects.map(effect => `
+                    <div class="cascade-item">
+                        <div class="cascade-item-label">
+                            <span class="cascade-item-icon" aria-hidden="true">${effect.icon}</span>
+                            <div>
+                                <div class="cascade-item-text">${effect.label}</div>
+                                <div style="font-size: 12px; color: #a0a0a0; margin-top: 4px;">${effect.desc}</div>
+                            </div>
+                        </div>
+                        <div class="cascade-item-value positive">+$${effect.value}M</div>
+                    </div>
+                `).join('');
+
+                content.classList.add('expanded');
+                header.setAttribute('aria-expanded', 'true');
+                header.classList.add('active');
+                total.textContent = `+$${totalValue}M`;
+
+                if (type === 'direct') directRevealed = true;
+                if (type === 'indirect') indirectRevealed = true;
+
+                // Show net result if both revealed
+                if (directRevealed && indirectRevealed) {
+                    showNetResult();
+                }
+            }
+        }
+
+        function showNetResult() {
+            const scenario = scenarios[currentScenario];
+            const directTotal = scenario.direct.reduce((sum, item) => sum + item.value, 0);
+            const indirectTotal = scenario.indirect.reduce((sum, item) => sum + item.value, 0);
+            const totalRevenue = directTotal + indirectTotal;
+            const netGain = totalRevenue - scenario.cost;
+            const roi = Math.round((netGain / scenario.cost) * 100);
+
+            document.getElementById('netValue').textContent = `+$${netGain.toFixed(1)}M`;
+            document.getElementById('netDesc').innerHTML = `
+                Annual net gain after accounting for $${scenario.cost}M investment
+                <div class="roi-metric">${roi}% ROI</div>
+            `;
+            document.getElementById('netResult').style.display = 'block';
+
+            // Show insights
+            const insightsList = document.getElementById('insightsList');
+            insightsList.innerHTML = scenario.insights.map(insight => `
+                <div class="insight-item">
+                    <div class="insight-title">${insight.title}</div>
+                    <div class="insight-text">${insight.text}</div>
+                </div>
+            `).join('');
+            document.getElementById('insightsSection').style.display = 'block';
+        }
+
+        function resetCascade() {
+            directRevealed = false;
+            indirectRevealed = false;
+
+            document.getElementById('directContent').classList.remove('expanded');
+            document.getElementById('indirectContent').classList.remove('expanded');
+            document.getElementById('directTotal').textContent = 'Click to reveal';
+            document.getElementById('indirectTotal').textContent = 'Click to reveal';
+            document.getElementById('netResult').style.display = 'none';
+            document.getElementById('insightsSection').style.display = 'none';
+
+            document.querySelectorAll('.cascade-header').forEach(header => {
+                header.setAttribute('aria-expanded', 'false');
+                header.classList.remove('active');
+            });
+        }
+
+        function exportScenario() {
+            const scenario = scenarios[currentScenario];
+            const directTotal = scenario.direct.reduce((sum, item) => sum + item.value, 0);
+            const indirectTotal = scenario.indirect.reduce((sum, item) => sum + item.value, 0);
+            const totalRevenue = directTotal + indirectTotal;
+            const netGain = totalRevenue - scenario.cost;
+
+            const data = {
+                scenario: scenario.name,
+                investment: `$${scenario.cost}M`,
+                directEffects: scenario.direct,
+                directTotal: `$${directTotal}M`,
+                indirectEffects: scenario.indirect,
+                indirectTotal: `$${indirectTotal}M`,
+                totalRevenue: `$${totalRevenue}M`,
+                netGain: `$${netGain.toFixed(1)}M`,
+                roi: `${Math.round((netGain / scenario.cost) * 100)}%`,
+                insights: scenario.insights,
+                timestamp: new Date().toISOString()
+            };
+
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `ecosystem-cascade-${currentScenario}-${Date.now()}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function handleKeyPress(event, action) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                if (action === 'mcdavid' || action === 'arena' || action === 'betting' || action === 'streaming') {
+                    loadScenario(action);
+                } else if (action === 'direct' || action === 'indirect') {
+                    toggleCascade(action);
+                }
+            }
+        }
+
+        // Initialize with McDavid scenario
+        window.addEventListener('load', () => {
+            // Already set as default
+        });
+    </script>
+</body>
+</html>

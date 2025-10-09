@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/business-of-marketing-in-sport/**)"
+      "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/business-of-marketing-in-sport/**)",
+      "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/Claude Demo/uplimit-training/**)"
     ],
     "deny": [],
     "ask": []

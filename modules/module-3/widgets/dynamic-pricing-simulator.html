@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Pricing Simulator - Optimize Ticket Revenue</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(197, 183, 131, 0.2);
+        }
+
+        h1 {
+            color: #c5b783;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #a0a0a0;
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+
+        .scenario-box {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 32px;
+        }
+
+        .scenario-box h2 {
+            color: #3b82f6;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .scenario-box p {
+            color: #d0d0d0;
+            line-height: 1.6;
+        }
+
+        .controls-section {
+            display: grid;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .control-group {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .control-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .control-label {
+            font-weight: 600;
+            color: #c5b783;
+            font-size: 16px;
+        }
+
+        .control-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* Slider styling */
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 4px;
+            background: linear-gradient(to right, #c5b783 0%, #c5b783 50%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.1) 100%);
+            outline: none;
+            -webkit-appearance: none;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #c5b783;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(197, 183, 131, 0.4);
+            transition: all 0.2s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            background: #d4c699;
+            transform: scale(1.1);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #c5b783;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 8px rgba(197, 183, 131, 0.4);
+            transition: all 0.2s;
+        }
+
+        input[type="range"]::-moz-range-thumb:hover {
+            background: #d4c699;
+            transform: scale(1.1);
+        }
+
+        input[type="range"]:focus {
+            outline: 3px solid rgba(197, 183, 131, 0.5);
+            outline-offset: 2px;
+        }
+
+        /* Dropdown styling */
+        select {
+            width: 100%;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(197, 183, 131, 0.3);
+            border-radius: 8px;
+            color: #e0e0e0;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        select:hover {
+            border-color: #c5b783;
+        }
+
+        select:focus {
+            outline: 3px solid rgba(197, 183, 131, 0.5);
+            outline-offset: 2px;
+            border-color: #c5b783;
+        }
+
+        option {
+            background: #16213e;
+            color: #e0e0e0;
+        }
+
+        .quality-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 12px;
+            color: #a0a0a0;
+        }
+
+        /* Results section */
+        .results-section {
+            background: linear-gradient(135deg, rgba(197, 183, 131, 0.1) 0%, rgba(197, 183, 131, 0.05) 100%);
+            border: 2px solid #c5b783;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .result-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .result-label {
+            font-size: 13px;
+            color: #a0a0a0;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .result-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #c5b783;
+        }
+
+        .result-subtitle {
+            font-size: 14px;
+            color: #d0d0d0;
+            margin-top: 4px;
+        }
+
+        /* Revenue breakdown */
+        .revenue-breakdown {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .revenue-breakdown h3 {
+            color: #c5b783;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+        .breakdown-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .breakdown-row:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            color: #c5b783;
+        }
+
+        /* Insights section */
+        .insights {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .insights h3 {
+            color: #c5b783;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .insight-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border-left: 3px solid transparent;
+        }
+
+        .insight-item.warning {
+            border-left-color: #f59e0b;
+        }
+
+        .insight-item.success {
+            border-left-color: #10b981;
+        }
+
+        .insight-item.info {
+            border-left-color: #3b82f6;
+        }
+
+        .insight-icon {
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .insight-text {
+            color: #d0d0d0;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        /* Examples section */
+        .examples {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .examples h3 {
+            color: #c5b783;
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .example-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .example-btn {
+            background: rgba(197, 183, 131, 0.1);
+            border: 1px solid rgba(197, 183, 131, 0.3);
+            color: #c5b783;
+            padding: 12px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s;
+            text-align: left;
+        }
+
+        .example-btn:hover {
+            background: rgba(197, 183, 131, 0.2);
+            border-color: #c5b783;
+            transform: translateY(-2px);
+        }
+
+        .example-btn:focus {
+            outline: 3px solid rgba(197, 183, 131, 0.5);
+            outline-offset: 2px;
+        }
+
+        .example-title {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .example-desc {
+            font-size: 12px;
+            color: #a0a0a0;
+        }
+
+        /* Action buttons */
+        .actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #c5b783;
+            color: #1a1a2e;
+        }
+
+        .btn-primary:hover {
+            background: #d4c699;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(197, 183, 131, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #e0e0e0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .btn:focus {
+            outline: 3px solid rgba(197, 183, 131, 0.5);
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .example-buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Pricing Simulator</h1>
+        <p class="subtitle">Optimize ticket prices based on demand factors</p>
+
+        <div class="scenario-box">
+            <h2>📍 Scenario: Toronto Raptors Home Game</h2>
+            <p>You're the VP of Ticketing for the Toronto Raptors. Adjust pricing factors to maximize revenue while maintaining fan loyalty. See how opponent quality, game day, and team performance affect optimal pricing.</p>
+        </div>
+
+        <div class="examples">
+            <h3>🎯 Try These Scenarios</h3>
+            <div class="example-buttons">
+                <button class="example-btn" onclick="loadExample('lakers')" aria-label="Load Lakers Saturday scenario">
+                    <div class="example-title">🔥 Lakers (Saturday)</div>
+                    <div class="example-desc">Premium matchup, winning season</div>
+                </button>
+                <button class="example-btn" onclick="loadExample('pistons')" aria-label="Load Pistons Tuesday scenario">
+                    <div class="example-title">❄️ Pistons (Tuesday)</div>
+                    <div class="example-desc">Low-tier opponent, losing season</div>
+                </button>
+                <button class="example-btn" onclick="loadExample('celtics')" aria-label="Load Celtics Friday scenario">
+                    <div class="example-title">🏆 Celtics (Friday)</div>
+                    <div class="example-desc">Rivalry game, mid-season</div>
+                </button>
+                <button class="example-btn" onclick="loadExample('bucks')" aria-label="Load Bucks Sunday scenario">
+                    <div class="example-title">⭐ Bucks (Sunday)</div>
+                    <div class="example-desc">Star player, good team record</div>
+                </button>
+            </div>
+        </div>
+
+        <div class="controls-section">
+            <div class="control-group">
+                <div class="control-header">
+                    <label for="opponentQuality" class="control-label">Opponent Quality</label>
+                    <span class="control-value" id="opponentQualityValue">Mid-Tier</span>
+                </div>
+                <input type="range" id="opponentQuality" min="1" max="5" value="3" step="1"
+                       aria-label="Opponent quality slider from Low-Tier to Elite"
+                       aria-valuemin="1" aria-valuemax="5" aria-valuenow="3">
+                <div class="quality-labels">
+                    <span>Low-Tier</span>
+                    <span>Below Avg</span>
+                    <span>Mid-Tier</span>
+                    <span>Contender</span>
+                    <span>Elite</span>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="control-header">
+                    <label for="dayOfWeek" class="control-label">Day of Week</label>
+                </div>
+                <select id="dayOfWeek" aria-label="Select day of week">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday" selected>Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <div class="control-header">
+                    <label for="teamRecord" class="control-label">Team Performance</label>
+                    <span class="control-value" id="teamRecordValue">Mid-Season Form</span>
+                </div>
+                <input type="range" id="teamRecord" min="1" max="5" value="3" step="1"
+                       aria-label="Team performance slider from Struggling to Championship Form"
+                       aria-valuemin="1" aria-valuemax="5" aria-valuenow="3">
+                <div class="quality-labels">
+                    <span>Struggling</span>
+                    <span>Below .500</span>
+                    <span>Mid-Season</span>
+                    <span>Playoff Push</span>
+                    <span>Championship</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-label">Recommended Price</div>
+                    <div class="result-value" id="ticketPrice">$185</div>
+                    <div class="result-subtitle" id="priceChange">vs. $150 base</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">Expected Attendance</div>
+                    <div class="result-value" id="attendance">17,200</div>
+                    <div class="result-subtitle" id="capacityPct">95% capacity</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-label">Total Revenue</div>
+                    <div class="result-value" id="totalRevenue">$3.18M</div>
+                    <div class="result-subtitle" id="revenueChange">+24% vs. base</div>
+                </div>
+            </div>
+
+            <div class="revenue-breakdown">
+                <h3>💰 Revenue Breakdown</h3>
+                <div class="breakdown-row">
+                    <span>Ticket Sales (18,100 capacity)</span>
+                    <span id="ticketRevenue">$3,182,000</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>Projected Concessions ($45/person)</span>
+                    <span id="concessionRevenue">$774,000</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>Projected Parking ($30/car, 40% drive)</span>
+                    <span id="parkingRevenue">$206,400</span>
+                </div>
+                <div class="breakdown-row">
+                    <span>Total Game Revenue</span>
+                    <span id="totalGameRevenue">$4,162,400</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="insights">
+            <h3>💡 Insights & Recommendations</h3>
+            <div id="insightsContainer">
+                <!-- Dynamic insights will be added here -->
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-secondary" onclick="resetToBase()" aria-label="Reset all inputs to baseline values">
+                Reset to Base
+            </button>
+            <button class="btn btn-primary" onclick="exportData()" aria-label="Export pricing scenario as JSON">
+                Export Scenario
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Base pricing constants
+        const BASE_PRICE = 150;
+        const CAPACITY = 18100;
+
+        // Day of week multipliers
+        const dayMultipliers = {
+            monday: 0.85,
+            tuesday: 0.80,
+            wednesday: 0.85,
+            thursday: 0.90,
+            friday: 1.10,
+            saturday: 1.25,
+            sunday: 1.15
+        };
+
+        // Opponent quality labels and multipliers
+        const opponentLabels = ['Low-Tier', 'Below Average', 'Mid-Tier', 'Contender', 'Elite'];
+        const opponentMultipliers = [0.75, 0.85, 1.0, 1.35, 1.80];
+
+        // Team performance labels and multipliers
+        const teamLabels = ['Struggling', 'Below .500', 'Mid-Season Form', 'Playoff Push', 'Championship Form'];
+        const teamMultipliers = [0.70, 0.85, 1.0, 1.20, 1.40];
+
+        // Get DOM elements
+        const opponentQuality = document.getElementById('opponentQuality');
+        const dayOfWeek = document.getElementById('dayOfWeek');
+        const teamRecord = document.getElementById('teamRecord');
+
+        // Add event listeners
+        opponentQuality.addEventListener('input', updateCalculations);
+        dayOfWeek.addEventListener('change', updateCalculations);
+        teamRecord.addEventListener('input', updateCalculations);
+
+        // Update display values
+        opponentQuality.addEventListener('input', function() {
+            const label = opponentLabels[this.value - 1];
+            document.getElementById('opponentQualityValue').textContent = label;
+            this.setAttribute('aria-valuenow', this.value);
+            updateSliderGradient(this);
+        });
+
+        teamRecord.addEventListener('input', function() {
+            const label = teamLabels[this.value - 1];
+            document.getElementById('teamRecordValue').textContent = label;
+            this.setAttribute('aria-valuenow', this.value);
+            updateSliderGradient(this);
+        });
+
+        function updateSliderGradient(slider) {
+            const percentage = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+            slider.style.background = `linear-gradient(to right, #c5b783 0%, #c5b783 ${percentage}%, rgba(255,255,255,0.1) ${percentage}%, rgba(255,255,255,0.1) 100%)`;
+        }
+
+        function updateCalculations() {
+            // Get current values
+            const oppQuality = parseInt(opponentQuality.value);
+            const day = dayOfWeek.value;
+            const teamPerf = parseInt(teamRecord.value);
+
+            // Calculate price multiplier
+            const oppMultiplier = opponentMultipliers[oppQuality - 1];
+            const dayMultiplier = dayMultipliers[day];
+            const teamMultiplier = teamMultipliers[teamPerf - 1];
+
+            const totalMultiplier = oppMultiplier * dayMultiplier * teamMultiplier;
+            const recommendedPrice = Math.round(BASE_PRICE * totalMultiplier);
+
+            // Calculate attendance (higher prices reduce attendance slightly)
+            const priceElasticity = 0.3; // 10% price increase = 3% attendance decrease
+            const priceRatio = recommendedPrice / BASE_PRICE;
+            const attendanceMultiplier = Math.max(0.7, Math.min(1.0, 1.2 - (priceRatio - 1) * priceElasticity));
+
+            // Base attendance varies by factors
+            const baseAttendance = CAPACITY * 0.85; // 85% base
+            const demandBoost = (oppMultiplier - 1) * 0.15 + (teamMultiplier - 1) * 0.10;
+            const attendance = Math.round(Math.min(CAPACITY, baseAttendance * (1 + demandBoost) * attendanceMultiplier));
+
+            // Calculate revenue
+            const ticketRevenue = recommendedPrice * attendance;
+            const concessionRevenue = attendance * 45; // $45 per person average
+            const parkingRevenue = Math.round(attendance * 0.40) * 30; // 40% drive, $30/car
+            const totalGameRevenue = ticketRevenue + concessionRevenue + parkingRevenue;
+
+            // Update display
+            document.getElementById('ticketPrice').textContent = '$' + recommendedPrice;
+            const priceChangePercent = Math.round(((recommendedPrice - BASE_PRICE) / BASE_PRICE) * 100);
+            const priceChangeSign = priceChangePercent >= 0 ? '+' : '';
+            document.getElementById('priceChange').textContent = `${priceChangeSign}${priceChangePercent}% vs. $${BASE_PRICE} base`;
+
+            document.getElementById('attendance').textContent = attendance.toLocaleString();
+            const capacityPct = Math.round((attendance / CAPACITY) * 100);
+            document.getElementById('capacityPct').textContent = capacityPct + '% capacity';
+
+            document.getElementById('totalRevenue').textContent = '$' + (ticketRevenue / 1000000).toFixed(2) + 'M';
+            const baseRevenue = BASE_PRICE * (CAPACITY * 0.85);
+            const revenueChangePercent = Math.round(((ticketRevenue - baseRevenue) / baseRevenue) * 100);
+            const revenueChangeSign = revenueChangePercent >= 0 ? '+' : '';
+            document.getElementById('revenueChange').textContent = `${revenueChangeSign}${revenueChangePercent}% vs. base`;
+
+            // Update breakdown
+            document.getElementById('ticketRevenue').textContent = '$' + ticketRevenue.toLocaleString();
+            document.getElementById('concessionRevenue').textContent = '$' + concessionRevenue.toLocaleString();
+            document.getElementById('parkingRevenue').textContent = '$' + parkingRevenue.toLocaleString();
+            document.getElementById('totalGameRevenue').textContent = '$' + totalGameRevenue.toLocaleString();
+
+            // Generate insights
+            generateInsights(recommendedPrice, attendance, capacityPct, oppQuality, day, teamPerf);
+        }
+
+        function generateInsights(price, attendance, capacityPct, oppQuality, day, teamPerf) {
+            const insights = [];
+
+            // Price insights
+            if (price > BASE_PRICE * 1.5) {
+                insights.push({
+                    type: 'warning',
+                    icon: '⚠️',
+                    text: `High premium pricing ($${price}). Monitor fan satisfaction and consider loyalty discounts for season ticket holders.`
+                });
+            } else if (price < BASE_PRICE * 0.85) {
+                insights.push({
+                    type: 'info',
+                    icon: '📊',
+                    text: `Low-demand game. Consider promotional offers (family packs, student discounts) to boost attendance.`
+                });
+            }
+
+            // Capacity insights
+            if (capacityPct > 95) {
+                insights.push({
+                    type: 'success',
+                    icon: '🎯',
+                    text: `Near sell-out expected (${capacityPct}%). Consider dynamic pricing increases 48 hours before game.`
+                });
+            } else if (capacityPct < 75) {
+                insights.push({
+                    type: 'warning',
+                    icon: '📉',
+                    text: `Low projected attendance (${capacityPct}%). Consider flash sales or group ticket promotions.`
+                });
+            }
+
+            // Day-specific insights
+            if (day === 'saturday' || day === 'sunday') {
+                insights.push({
+                    type: 'success',
+                    icon: '📅',
+                    text: `Weekend game commands premium pricing. Family-friendly promotions could boost concession revenue.`
+                });
+            } else if (day === 'tuesday' || day === 'monday') {
+                insights.push({
+                    type: 'info',
+                    icon: '🎫',
+                    text: `Weekday game. Consider corporate partnership nights or local community discounts to fill seats.`
+                });
+            }
+
+            // Opponent-specific insights
+            if (oppQuality >= 4) {
+                insights.push({
+                    type: 'success',
+                    icon: '⭐',
+                    text: `Premium opponent. Highlight star players in marketing. Secondary market prices may exceed face value.`
+                });
+            }
+
+            // Team performance insights
+            if (teamPerf >= 4) {
+                insights.push({
+                    type: 'success',
+                    icon: '🏆',
+                    text: `Team in playoff contention. Season ticket renewal rates likely high. Good time for upsell campaigns.`
+                });
+            } else if (teamPerf <= 2) {
+                insights.push({
+                    type: 'warning',
+                    icon: '📢',
+                    text: `Team struggling. Focus marketing on fan experience, arena amenities, and opponent star power.`
+                });
+            }
+
+            // Revenue optimization insights
+            const revenuePerSeat = price;
+            if (revenuePerSeat > 200 && capacityPct > 90) {
+                insights.push({
+                    type: 'success',
+                    icon: '💰',
+                    text: `Optimal revenue scenario. High prices with strong demand. Monitor real-time sales for micro-adjustments.`
+                });
+            }
+
+            // Render insights
+            const container = document.getElementById('insightsContainer');
+            container.innerHTML = insights.map(insight => `
+                <div class="insight-item ${insight.type}">
+                    <span class="insight-icon" aria-hidden="true">${insight.icon}</span>
+                    <span class="insight-text">${insight.text}</span>
+                </div>
+            `).join('');
+        }
+
+        function loadExample(scenario) {
+            const scenarios = {
+                lakers: {
+                    opponent: 5,
+                    day: 'saturday',
+                    team: 4,
+                    description: 'Lakers on Saturday (Premium matchup, playoff contention)'
+                },
+                pistons: {
+                    opponent: 1,
+                    day: 'tuesday',
+                    team: 2,
+                    description: 'Pistons on Tuesday (Low-tier opponent, below .500)'
+                },
+                celtics: {
+                    opponent: 4,
+                    day: 'friday',
+                    team: 3,
+                    description: 'Celtics on Friday (Rivalry game, mid-season)'
+                },
+                bucks: {
+                    opponent: 4,
+                    day: 'sunday',
+                    team: 4,
+                    description: 'Bucks on Sunday (Star player matchup, playoff push)'
+                }
+            };
+
+            const selected = scenarios[scenario];
+            if (selected) {
+                opponentQuality.value = selected.opponent;
+                dayOfWeek.value = selected.day;
+                teamRecord.value = selected.team;
+
+                // Update labels
+                document.getElementById('opponentQualityValue').textContent = opponentLabels[selected.opponent - 1];
+                document.getElementById('teamRecordValue').textContent = teamLabels[selected.team - 1];
+
+                // Update slider gradients
+                updateSliderGradient(opponentQuality);
+                updateSliderGradient(teamRecord);
+
+                // Recalculate
+                updateCalculations();
+
+                // Announce to screen readers
+                const announcement = document.createElement('div');
+                announcement.setAttribute('role', 'status');
+                announcement.setAttribute('aria-live', 'polite');
+                announcement.className = 'sr-only';
+                announcement.textContent = `Loaded scenario: ${selected.description}`;
+                document.body.appendChild(announcement);
+                setTimeout(() => announcement.remove(), 1000);
+            }
+        }
+
+        function resetToBase() {
+            opponentQuality.value = 3;
+            dayOfWeek.value = 'friday';
+            teamRecord.value = 3;
+
+            document.getElementById('opponentQualityValue').textContent = 'Mid-Tier';
+            document.getElementById('teamRecordValue').textContent = 'Mid-Season Form';
+
+            updateSliderGradient(opponentQuality);
+            updateSliderGradient(teamRecord);
+            updateCalculations();
+        }
+
+        function exportData() {
+            const data = {
+                scenario: {
+                    opponentQuality: opponentLabels[opponentQuality.value - 1],
+                    dayOfWeek: dayOfWeek.value,
+                    teamPerformance: teamLabels[teamRecord.value - 1]
+                },
+                results: {
+                    recommendedPrice: document.getElementById('ticketPrice').textContent,
+                    expectedAttendance: document.getElementById('attendance').textContent,
+                    totalRevenue: document.getElementById('totalRevenue').textContent,
+                    ticketRevenue: document.getElementById('ticketRevenue').textContent,
+                    concessionRevenue: document.getElementById('concessionRevenue').textContent,
+                    parkingRevenue: document.getElementById('parkingRevenue').textContent,
+                    totalGameRevenue: document.getElementById('totalGameRevenue').textContent
+                },
+                timestamp: new Date().toISOString()
+            };
+
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `pricing-scenario-${Date.now()}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Initialize on load
+        updateSliderGradient(opponentQuality);
+        updateSliderGradient(teamRecord);
+        updateCalculations();
+    </script>
+</body>
+</html>

@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sponsorship ROI Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --border-radius: 8px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,9 +30,9 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
-            color: #f5f4f0;
+            font-family: var(--font-family-primary);
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
             padding: 2rem;
             min-height: 100vh;
         }
@@ -25,13 +43,13 @@
         }
 
         h1 {
-            color: #c5b783;
+            color: var(--color-neutral-900);
             margin-bottom: 0.5rem;
             font-size: 2rem;
         }
 
         .subtitle {
-            color: #999;
+            color: var(--color-neutral-500);
             margin-bottom: 2rem;
         }
 
@@ -43,17 +61,17 @@
         }
 
         .panel {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
+            background: white;
+            border: 1px solid var(--color-neutral-200);
             border-radius: 8px;
             padding: 1.5rem;
         }
 
         .panel h2 {
-            color: #c5b783;
+            color: var(--color-neutral-900);
             font-size: 1.3rem;
             margin-bottom: 1.5rem;
-            border-bottom: 2px solid #c5b783;
+            border-bottom: 2px solid var(--color-neutral-300);
             padding-bottom: 0.5rem;
         }
 
@@ -63,7 +81,7 @@
 
         .input-group label {
             display: block;
-            color: #f5f4f0;
+            color: var(--color-neutral-900);
             margin-bottom: 0.5rem;
             font-weight: 500;
         }
@@ -71,23 +89,23 @@
         .input-group input {
             width: 100%;
             padding: 0.75rem;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(197, 183, 131, 0.3);
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 4px;
-            color: #f5f4f0;
+            color: var(--color-neutral-900);
             font-size: 1rem;
         }
 
         .input-group input:focus {
             outline: none;
-            border-color: #c5b783;
+            border-color: var(--color-neutral-900);
         }
 
         .calculate-btn {
             width: 100%;
             padding: 1rem;
-            background: #c5b783;
-            color: #2c2c2c;
+            background: var(--color-neutral-900);
+            color: white;
             border: none;
             border-radius: 4px;
             font-size: 1.1rem;
@@ -97,20 +115,20 @@
         }
 
         .calculate-btn:hover {
-            background: #b8a56f;
+            background: var(--color-neutral-700);
             transform: translateY(-2px);
         }
 
         .results {
-            background: rgba(197, 183, 131, 0.1);
-            border: 2px solid #c5b783;
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-neutral-200);
             border-radius: 8px;
             padding: 2rem;
             margin-top: 2rem;
         }
 
         .results h2 {
-            color: #c5b783;
+            color: var(--color-neutral-900);
             margin-bottom: 1.5rem;
         }
 
@@ -122,7 +140,7 @@
         }
 
         .metric-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             padding: 1.5rem;
             border-radius: 4px;
             text-align: center;
@@ -131,25 +149,25 @@
         .metric-value {
             font-size: 2rem;
             font-weight: 700;
-            color: #c5b783;
+            color: var(--color-neutral-900);
             margin-bottom: 0.5rem;
         }
 
         .metric-label {
-            color: #ccc;
+            color: var(--color-neutral-600);
             font-size: 0.9rem;
         }
 
         .roi-rating {
             padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             border-radius: 4px;
-            border-left: 4px solid #c5b783;
+            border-left: 3px solid var(--color-neutral-400);
             margin-bottom: 1.5rem;
         }
 
         .roi-rating h3 {
-            color: #c5b783;
+            color: var(--color-neutral-900);
             margin-bottom: 0.75rem;
         }
 
@@ -158,7 +176,7 @@
         }
 
         .breakdown h3 {
-            color: #c5b783;
+            color: var(--color-neutral-900);
             margin-bottom: 1rem;
         }
 
@@ -166,18 +184,18 @@
             display: flex;
             justify-content: space-between;
             padding: 0.75rem;
-            background: rgba(255, 255, 255, 0.03);
+            background: var(--color-neutral-50);
             margin-bottom: 0.5rem;
             border-radius: 4px;
         }
 
         .breakdown-label {
-            color: #ccc;
+            color: var(--color-neutral-600);
         }
 
         .breakdown-value {
             font-weight: 600;
-            color: #f5f4f0;
+            color: var(--color-neutral-900);
         }
 
         .full-width {
@@ -186,7 +204,7 @@
 
         .help-text {
             font-size: 0.85rem;
-            color: #999;
+            color: var(--color-neutral-500);
             margin-top: 0.25rem;
         }
 
@@ -437,29 +455,29 @@
             if (roiPercentage >= 150) {
                 rating = 'Excellent';
                 ratingText = 'Outstanding ROI - well above industry benchmarks. Strong case for renewal and expansion.';
-                ratingColor = '#4ade80';
+                ratingColor = 'var(--color-neutral-700)';
             } else if (roiPercentage >= 100) {
                 rating = 'Good';
                 ratingText = 'Solid ROI meeting industry benchmarks. Sponsorship is delivering value, consider optimizing activation.';
-                ratingColor = '#4ade80';
+                ratingColor = 'var(--color-neutral-700)';
             } else if (roiPercentage >= 50) {
                 rating = 'Fair';
                 ratingText = 'Moderate ROI - below expectations. Review activation strategy and measurement methodology.';
-                ratingColor = '#fbbf24';
+                ratingColor = 'var(--color-neutral-600)';
             } else if (roiPercentage >= 0) {
                 rating = 'Poor';
                 ratingText = 'Low ROI - not meeting objectives. Consider renegotiating terms or ending partnership.';
-                ratingColor = '#f87171';
+                ratingColor = 'var(--color-neutral-600)';
             } else {
                 rating = 'Negative';
                 ratingText = 'Negative ROI - losing money on this sponsorship. Immediate action required.';
-                ratingColor = '#f87171';
+                ratingColor = 'var(--color-neutral-600)';
             }
 
             document.getElementById('roi-rating').innerHTML = `
                 <h3 style="color: ${ratingColor}">Rating: ${rating} (${roiPercentage}% ROI)</h3>
-                <p style="color: #f5f4f0; line-height: 1.6;">${ratingText}</p>
-                <p style="color: #ccc; margin-top: 1rem; font-size: 0.9rem;">
+                <p style="color: var(--color-neutral-900); line-height: 1.6;">${ratingText}</p>
+                <p style="color: var(--color-neutral-600); margin-top: 1rem; font-size: 0.9rem;">
                     <strong>Industry Benchmark:</strong> Most sponsors target 100-200% ROI for sports partnerships.
                     Activation budget typically matches rights fee (1:1 ratio).
                 </p>

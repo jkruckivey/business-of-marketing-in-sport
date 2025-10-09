@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Betting Market Simulator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --border-radius: 8px;
+            --spacing-unit: 8px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,9 +31,9 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
-            color: #f5f4f0;
+            font-family: var(--font-family-primary);
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
             padding: 2rem;
             min-height: 100vh;
         }
@@ -25,27 +44,29 @@
         }
 
         h1 {
-            color: #c5b783;
+            color: var(--color-neutral-900);
             margin-bottom: 0.5rem;
             font-size: 2rem;
+            font-weight: 600;
         }
 
         .subtitle {
-            color: #999;
+            color: var(--color-neutral-500);
             margin-bottom: 2rem;
         }
 
         .market-selector {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
-            border-radius: 8px;
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-neutral-300);
+            border-radius: var(--border-radius);
             padding: 1.5rem;
             margin-bottom: 2rem;
         }
 
         .market-selector h2 {
-            color: #c5b783;
+            color: var(--color-neutral-900);
             margin-bottom: 1rem;
+            font-weight: 600;
         }
 
         .market-buttons {
@@ -56,24 +77,26 @@
 
         .market-btn {
             padding: 1rem;
-            background: rgba(197, 183, 131, 0.2);
-            border: 2px solid #c5b783;
-            border-radius: 4px;
-            color: #f5f4f0;
+            background: white;
+            border: 1px solid var(--color-neutral-300);
+            border-radius: var(--border-radius);
+            color: var(--color-neutral-700);
             cursor: pointer;
-            transition: all 0.3s;
+            transition: all 0.2s;
             font-size: 1rem;
             font-weight: 500;
+            font-family: var(--font-family-primary);
         }
 
         .market-btn:hover {
-            background: rgba(197, 183, 131, 0.4);
-            transform: translateY(-2px);
+            background: var(--color-neutral-100);
+            border-color: var(--color-neutral-400);
         }
 
         .market-btn.active {
-            background: #c5b783;
-            color: #2c2c2c;
+            background: var(--color-neutral-900);
+            color: white;
+            border-color: var(--color-neutral-900);
         }
 
         .market-overview {
@@ -84,36 +107,37 @@
         }
 
         .metric-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
-            border-radius: 8px;
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
             padding: 1.5rem;
             text-align: center;
         }
 
         .metric-value {
             font-size: 2rem;
-            font-weight: 700;
-            color: #c5b783;
+            font-weight: 600;
+            color: var(--color-neutral-900);
             margin-bottom: 0.5rem;
         }
 
         .metric-label {
-            color: #ccc;
+            color: var(--color-neutral-500);
             font-size: 0.9rem;
         }
 
         .market-details {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
-            border-radius: 8px;
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .market-details h2 {
-            color: #c5b783;
+            color: var(--color-neutral-900);
             margin-bottom: 1.5rem;
+            font-weight: 600;
         }
 
         .detail-grid {
@@ -123,36 +147,39 @@
         }
 
         .detail-section h3 {
-            color: #f5f4f0;
+            color: var(--color-neutral-900);
             margin-bottom: 1rem;
             font-size: 1.1rem;
+            font-weight: 600;
         }
 
         .detail-item {
             padding: 0.75rem;
-            background: rgba(255, 255, 255, 0.03);
+            background: var(--color-neutral-50);
             margin-bottom: 0.75rem;
-            border-radius: 4px;
-            border-left: 3px solid #c5b783;
+            border-radius: var(--border-radius);
+            border-left: 3px solid var(--color-neutral-400);
         }
 
         .detail-item strong {
-            color: #c5b783;
+            color: var(--color-neutral-700);
             display: block;
             margin-bottom: 0.25rem;
+            font-weight: 600;
         }
 
         .opportunities {
-            background: rgba(197, 183, 131, 0.1);
-            border: 2px solid #c5b783;
-            border-radius: 8px;
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .opportunities h2 {
-            color: #c5b783;
+            color: var(--color-neutral-900);
             margin-bottom: 1.5rem;
+            font-weight: 600;
         }
 
         .opportunity-grid {
@@ -162,15 +189,16 @@
         }
 
         .opportunity-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             padding: 1.5rem;
-            border-radius: 4px;
-            border-left: 4px solid #c5b783;
+            border-radius: var(--border-radius);
+            border-left: 3px solid var(--color-neutral-400);
         }
 
         .opportunity-card h3 {
-            color: #c5b783;
+            color: var(--color-neutral-900);
             margin-bottom: 0.75rem;
+            font-weight: 600;
         }
 
         .opportunity-card ul {
@@ -179,29 +207,31 @@
         }
 
         .risks {
-            background: rgba(248, 113, 113, 0.1);
-            border: 2px solid #f87171;
-            border-radius: 8px;
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
             padding: 2rem;
         }
 
         .risks h2 {
-            color: #f87171;
+            color: var(--color-neutral-900);
             margin-bottom: 1.5rem;
+            font-weight: 600;
         }
 
         .risk-item {
             padding: 1rem;
-            background: rgba(255, 255, 255, 0.03);
+            background: white;
             margin-bottom: 1rem;
-            border-radius: 4px;
-            border-left: 4px solid #f87171;
+            border-radius: var(--border-radius);
+            border-left: 3px solid var(--color-neutral-400);
         }
 
         .risk-item strong {
-            color: #f87171;
+            color: var(--color-neutral-700);
             display: block;
             margin-bottom: 0.5rem;
+            font-weight: 600;
         }
 
         @media (max-width: 968px) {

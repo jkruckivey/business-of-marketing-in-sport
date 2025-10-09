@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentation Timer & Rehearsal Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,9 +15,9 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
-            color: #f5f4f0;
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: white;
+            color: #2d3748;
             padding: 2rem;
             min-height: 100vh;
         }
@@ -25,22 +28,22 @@
         }
 
         h1 {
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 0.5rem;
             font-size: 2rem;
             text-align: center;
         }
 
         .subtitle {
-            color: #999;
+            color: #6b7280;
             margin-bottom: 2rem;
             font-size: 1rem;
             text-align: center;
         }
 
         .timer-display {
-            background: rgba(255, 255, 255, 0.05);
-            border: 4px solid #c5b783;
+            background: #f9fafb;
+            border: 2px solid #d1d5db;
             border-radius: 16px;
             padding: 4rem 2rem;
             margin-bottom: 2rem;
@@ -50,7 +53,7 @@
         .time {
             font-size: 6rem;
             font-weight: 700;
-            color: #c5b783;
+            color: #1f2937;
             font-variant-numeric: tabular-nums;
             margin-bottom: 1rem;
         }
@@ -72,7 +75,7 @@
 
         .status-message {
             font-size: 1.2rem;
-            color: #ccc;
+            color: #4a5568;
             margin-bottom: 2rem;
         }
 
@@ -132,15 +135,15 @@
         }
 
         .section {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .section h2 {
-            color: #c5b783;
+            color: #2d3748;
             margin-bottom: 1.5rem;
             font-size: 1.3rem;
         }
@@ -154,10 +157,10 @@
 
         .preset-btn {
             padding: 1rem;
-            background: rgba(197, 183, 131, 0.2);
-            border: 2px solid #c5b783;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
-            color: #c5b783;
+            color: #2d3748;
             cursor: pointer;
             font-weight: 600;
             transition: all 0.3s;
@@ -165,13 +168,13 @@
         }
 
         .preset-btn:hover {
-            background: rgba(197, 183, 131, 0.3);
+            background: #f3f4f6;
             transform: translateY(-2px);
         }
 
         .preset-btn.active {
-            background: #c5b783;
-            color: #2c2c2c;
+            background: #2d3748;
+            color: white;
         }
 
         .custom-time {
@@ -188,24 +191,24 @@
         }
 
         .input-group label {
-            color: #c5b783;
+            color: #2d3748;
             font-size: 0.9rem;
             font-weight: 600;
         }
 
         .input-group input {
             padding: 0.75rem;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(197, 183, 131, 0.3);
+            background: white;
+            border: 1px solid #d1d5db;
             border-radius: 6px;
-            color: #f5f4f0;
+            color: #2d3748;
             font-family: inherit;
             font-size: 1rem;
         }
 
         .input-group input:focus {
             outline: none;
-            border-color: #c5b783;
+            border-color: #2d3748;
         }
 
         .slide-tracker {
@@ -221,7 +224,7 @@
         }
 
         .tracker-section h3 {
-            color: #c5b783;
+            color: #2d3748;
             margin-bottom: 1rem;
             font-size: 1.1rem;
         }
@@ -241,19 +244,19 @@
             display: flex;
             justify-content: space-between;
             padding: 0.75rem;
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             margin-bottom: 0.5rem;
             border-radius: 6px;
-            border-left: 4px solid #c5b783;
+            border-left: 4px solid #2d3748;
         }
 
         .slide-number {
-            color: #c5b783;
+            color: #2d3748;
             font-weight: 600;
         }
 
         .slide-time {
-            color: #ccc;
+            color: #4a5568;
         }
 
         .notes-area {
@@ -264,10 +267,10 @@
             width: 100%;
             min-height: 120px;
             padding: 0.75rem;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(197, 183, 131, 0.3);
+            background: white;
+            border: 1px solid #d1d5db;
             border-radius: 6px;
-            color: #f5f4f0;
+            color: #2d3748;
             font-family: inherit;
             font-size: 0.9rem;
             resize: vertical;
@@ -275,7 +278,7 @@
 
         .notes-area textarea:focus {
             outline: none;
-            border-color: #c5b783;
+            border-color: #2d3748;
         }
 
         .stats-grid {
@@ -286,7 +289,7 @@
         }
 
         .stat-card {
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             padding: 1rem;
             border-radius: 6px;
             text-align: center;
@@ -295,11 +298,11 @@
         .stat-value {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #c5b783;
+            color: #2d3748;
         }
 
         .stat-label {
-            color: #ccc;
+            color: #4a5568;
             font-size: 0.85rem;
             margin-top: 0.5rem;
         }

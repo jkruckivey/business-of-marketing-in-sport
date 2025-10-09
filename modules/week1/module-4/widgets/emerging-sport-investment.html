@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerging Sport Investment Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,9 +15,9 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
-            color: #f5f4f0;
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: white;
+            color: #2d3748;
             padding: 2rem;
             min-height: 100vh;
         }
@@ -25,26 +28,26 @@
         }
 
         h1 {
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 0.5rem;
             font-size: 2rem;
         }
 
         .subtitle {
-            color: #999;
+            color: #6b7280;
             margin-bottom: 2rem;
         }
 
         .sport-selector {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 1.5rem;
             margin-bottom: 2rem;
         }
 
         .sport-selector h2 {
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 1rem;
         }
 
@@ -56,10 +59,10 @@
 
         .sport-btn {
             padding: 1rem;
-            background: rgba(197, 183, 131, 0.2);
-            border: 2px solid #c5b783;
+            background: white;
+            border: 1px solid #d1d5db;
             border-radius: 4px;
-            color: #f5f4f0;
+            color: #2d3748;
             cursor: pointer;
             transition: all 0.3s;
             font-size: 1rem;
@@ -68,13 +71,13 @@
         }
 
         .sport-btn:hover {
-            background: rgba(197, 183, 131, 0.4);
+            border-color: #2d3748;
             transform: translateY(-2px);
         }
 
         .sport-btn.active {
-            background: #c5b783;
-            color: #2c2c2c;
+            background: #2d3748;
+            color: white;
         }
 
         .comparison-grid {
@@ -85,8 +88,8 @@
         }
 
         .metric-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 1.5rem;
             text-align: center;
@@ -95,12 +98,12 @@
         .metric-value {
             font-size: 2rem;
             font-weight: 700;
-            color: #c5b783;
+            color: #2d3748;
             margin-bottom: 0.5rem;
         }
 
         .metric-label {
-            color: #ccc;
+            color: #4a5568;
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
@@ -129,15 +132,15 @@
         }
 
         .analysis {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid #c5b783;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .analysis h2 {
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 1.5rem;
         }
 
@@ -148,42 +151,42 @@
         }
 
         .analysis-section h3 {
-            color: #f5f4f0;
+            color: #2d3748;
             margin-bottom: 1rem;
             font-size: 1.1rem;
         }
 
         .analysis-item {
             padding: 0.75rem;
-            background: rgba(255, 255, 255, 0.03);
+            background: white;
             margin-bottom: 0.75rem;
             border-radius: 4px;
-            border-left: 3px solid #c5b783;
+            border-left: 3px solid #2d3748;
         }
 
         .analysis-item strong {
-            color: #c5b783;
+            color: #1f2937;
             display: block;
             margin-bottom: 0.25rem;
         }
 
         .investment-recommendation {
-            background: rgba(197, 183, 131, 0.1);
-            border: 2px solid #c5b783;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .investment-recommendation h2 {
-            color: #c5b783;
+            color: #1f2937;
             margin-bottom: 1.5rem;
         }
 
         .recommendation-score {
             text-align: center;
             padding: 2rem;
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             border-radius: 8px;
             margin-bottom: 1.5rem;
         }
@@ -191,12 +194,12 @@
         .recommendation-score .score {
             font-size: 3rem;
             font-weight: 700;
-            color: #c5b783;
+            color: #2d3748;
             margin-bottom: 0.5rem;
         }
 
         .recommendation-score .label {
-            color: #ccc;
+            color: #4a5568;
             font-size: 1rem;
         }
 
@@ -205,7 +208,7 @@
         }
 
         .recommendation-details h3 {
-            color: #c5b783;
+            color: #1f2937;
             margin: 1.5rem 0 0.75rem;
         }
 

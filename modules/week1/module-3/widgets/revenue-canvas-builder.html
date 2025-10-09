@@ -120,16 +120,16 @@
         }
 
         .revenue-category {
-            background: rgba(255, 255, 255, 0.03);
-            border: 2px solid rgba(197, 183, 131, 0.2);
+            background: white;
+            border: 2px solid #d1d5db;
             border-radius: 8px;
             padding: 1.5rem;
             transition: all 0.3s;
         }
 
         .revenue-category:hover {
-            border-color: var(--color-neutral-400);
-            background: white;
+            border-color: #6b7280;
+            background: #f9fafb;
         }
 
         .category-header {
@@ -172,8 +172,8 @@
         }
 
         .total-display {
-            background: linear-gradient(135deg, rgba(197, 183, 131, 0.2), rgba(197, 183, 131, 0.1));
-            border: 1px solid var(--color-neutral-200);
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 8px;
             padding: 1.5rem;
             text-align: center;
@@ -210,8 +210,8 @@
         }
 
         .opportunity {
-            background: rgba(255, 255, 255, 0.03);
-            border: 2px solid rgba(197, 183, 131, 0.2);
+            background: white;
+            border: 2px solid #d1d5db;
             border-radius: 8px;
             padding: 1.5rem;
         }
@@ -253,22 +253,22 @@
 
         .category-chip {
             padding: 0.5rem 1rem;
-            background: rgba(197, 183, 131, 0.2);
-            border: 1px solid #c5b783;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
             border-radius: 20px;
-            color: var(--color-neutral-900);
+            color: #2d3748;
             font-size: 0.85rem;
             cursor: pointer;
             transition: all 0.2s;
         }
 
         .category-chip:hover {
-            background: rgba(197, 183, 131, 0.3);
+            background: #e5e7eb;
         }
 
         .export-btn {
-            background: linear-gradient(135deg, #c5b783, #b8a56f);
-            color: #2c2c2c;
+            background: var(--color-neutral-900);
+            color: white;
             border: none;
             padding: 1rem 3rem;
             font-size: 1.2rem;
@@ -281,8 +281,9 @@
         }
 
         .export-btn:hover {
+            background: var(--color-neutral-700);
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(197, 183, 131, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         .help-text {
@@ -457,7 +458,7 @@
             <p class="section-description">Identify the three most promising sponsorship categories for this property and explain the rationale.</p>
 
             <div class="category-suggestions">
-                <strong style="color: #c5b783; width: 100%; margin-bottom: 0.5rem;">Suggested Categories:</strong>
+                <strong style="color: #6b7280; width: 100%; margin-bottom: 0.5rem;">Suggested Categories:</strong>
                 <div class="category-chip" onclick="fillCategory(0, 'Title/Presenting Sponsor')">Title/Presenting Sponsor</div>
                 <div class="category-chip" onclick="fillCategory(0, 'Jersey/Uniform Sponsor')">Jersey/Uniform Sponsor</div>
                 <div class="category-chip" onclick="fillCategory(0, 'Venue Naming Rights')">Venue Naming Rights</div>

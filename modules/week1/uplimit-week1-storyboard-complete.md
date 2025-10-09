@@ -353,6 +353,24 @@ Create 5 numbered items:
 
 #### Element 4: iFrame Widget - Revenue Mix Slider
 
+### 🎯 Interactive Activity: Revenue Mix Slider
+
+**Practice: MLO 1.1 (Map major revenue streams) & MLO 1.3 (Evaluate growth potential and risks)**
+
+You've just learned about the five major revenue streams in professional sport. Now it's time to see how they work together as an ecosystem.
+
+In this interactive activity, you'll build your own revenue portfolio by allocating 100% across the five streams: Media Rights, Ticketing, Sponsorship, Merchandising, and Betting. As you adjust the sliders, you'll see real-time feedback on your portfolio's risk level and growth potential.
+
+**What you'll discover:**
+- Why most leagues depend heavily on media rights (40-60%)
+- The trade-offs between high-growth streams (Betting) and stable streams (Ticketing)
+- How different allocation strategies create different risk profiles
+
+**Time commitment:** 3 minutes
+**Learning outcomes practiced:** MLO 1.1 (Mapping revenue streams), MLO 1.3 (Evaluating growth potential and risks)
+
+---
+
 **Widget Purpose:** Interactive portfolio builder where students allocate 100% across 5 revenue streams and see real-time feedback on risk/growth projections.
 
 **How It Works:**
@@ -394,7 +412,7 @@ Create 5 numbered items:
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
 | 5 | **Text** 🔴 Required | Why media is 40-60% | 1 min | 100 | Type directly |
-| 6 | **🎮 iFrame Widget** 🟡 Recommended | **Media Deal Calculator** | 4 min | - | Embed `media-deal-calculator.html` |
+| 6 | **🎮 iFrame Widget** 🟡 Recommended | **Media Rights Calculator** | 4 min | - | Embed `media-rights-calculator.html` |
 | 7 | **Infobox** 🔴 Required | Key insight: Appointment viewing | 1 min | 50 | Type directly |
 | 8 | **Image** 🟡 Recommended | Media rights timeline | 1 min | - | Upload `media-rights-timeline.png` |
 | 9 | **Text** 🔴 Required | Streaming vs. Traditional | 1 min | 120 | Type directly |
@@ -419,7 +437,26 @@ These deals are massive: the NFL's current media rights contracts total **$110 b
 For leagues, broadcast deals provide **predictable, long-term revenue** (often 9-12 year contracts), allowing teams to make long-term financial commitments like player contracts and facility investments.
 ```
 
-#### Element 6: iFrame Widget - Media Deal Calculator
+#### Element 6: iFrame Widget - Media Rights Calculator
+
+### 🎯 Interactive Activity: Media Rights Calculator
+
+**Practice: MLO 1.1 (Map major revenue streams) & MLO 1.3 (Evaluate growth potential)**
+
+You've learned that media rights are the largest revenue stream for most leagues (40-60% of total revenue). But what determines how much a media deal is worth?
+
+In this interactive calculator, you'll input key factors—league size, audience reach, advertising rates (CPM), and contract length—to calculate total media deal value. You'll see how variables like viewership and cost-per-thousand viewers multiply to create deals worth billions.
+
+**What you'll discover:**
+- Why the NFL's $110B deal dwarfs other leagues
+- How audience size and advertising rates interact
+- The impact of contract length on total deal value
+- The difference between shared vs. local media revenue
+
+**Time commitment:** 4 minutes
+**Learning outcomes practiced:** MLO 1.1 (Understanding media rights mechanics), MLO 1.3 (Evaluating what drives growth)
+
+---
 
 **Widget Purpose:** Calculate media rights value based on inputs (league size, audience, ad rates, contract length).
 
@@ -434,10 +471,10 @@ For leagues, broadcast deals provide **predictable, long-term revenue** (often 9
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/media-deal-calculator.html"
+<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/module-2/widgets/media-rights-calculator.html"
         width="800"
         height="600"
-        title="Media Deal Calculator - Calculate media rights value"
+        title="Media Rights Calculator - Calculate media rights value"
         frameborder="0"
         allowfullscreen>
 </iframe>
@@ -518,7 +555,7 @@ Leagues increasingly split rights packages to maximize total revenue: sell tradi
 | 13 | **🎮 iFrame Widget** 🔴 Required | **Dynamic Pricing Simulator** | 5 min | - | Embed `dynamic-pricing-simulator.html` |
 | 14 | **Image** 🟡 Recommended | Premium seating breakdown | 1 min | - | Upload `premium-seating-breakdown.png` |
 | 15 | **Text** 🔴 Required | Premium seating strategy | 1 min | 120 | Type directly |
-| 16 | **🎮 iFrame Widget** 🟡 Recommended | **Stadium Revenue Optimizer** | 4 min | - | Embed `stadium-revenue-optimizer.html` |
+| 16 | **🎮 iFrame Widget** 🟢 Optional (Phase 3) | **Stadium Revenue Optimizer** | 4 min | - | Embed `stadium-revenue-optimizer.html` |
 | 17 | **Infobox** 🟡 Recommended | Premium seat economics insight | 1 min | 50 | Type directly |
 | 18 | **Details** 🟢 Optional | PSL case study (SoFi Stadium) | 1 min | - | Type directly |
 
@@ -538,6 +575,25 @@ Over a full season, dynamic pricing can **increase ticketing revenue by 15-25%**
 ```
 
 #### Element 13: iFrame Widget - Dynamic Pricing Simulator
+
+### 🎯 Interactive Activity: Dynamic Pricing Simulator
+
+**Practice: MLO 1.1 (Understand ticketing mechanics) & MLO 1.3 (Evaluate revenue optimization strategies)**
+
+Ticketing generates 20-30% of team revenue, but not all games are equal. Dynamic pricing lets teams adjust prices based on demand factors—and can increase annual revenue by 15-25%.
+
+In this simulator, you'll set ticket prices for Toronto Raptors games based on opponent strength, day of week, team record, and special events. Watch how these factors impact attendance and total revenue in real time.
+
+**What you'll discover:**
+- Why Lakers tickets cost $400 but Pistons tickets cost $120
+- The trade-off between higher prices and lower attendance
+- How dynamic pricing captures more value than static pricing
+- Which factors have the biggest impact on demand
+
+**Time commitment:** 5 minutes
+**Learning outcomes practiced:** MLO 1.1 (Understanding ticketing revenue stream), MLO 1.3 (Evaluating optimization strategies)
+
+---
 
 **Widget Purpose:** Simulate dynamic ticket pricing for Toronto Raptors games based on demand factors.
 
@@ -603,9 +659,11 @@ The evolution of stadium economics has shifted dramatically from a **"fill the s
 
 #### Element 16: iFrame Widget - Stadium Revenue Optimizer
 
-**Widget Purpose:** Design premium vs. general seating mix to maximize revenue.
+**Widget Status:** ⭕ Phase 3 widget - TO BE BUILT
 
-**Widget Status:** ✅ Phase 2 widget - BUILT AND READY
+This widget is planned for future development. Once built, it will let students design the premium vs. general admission seating mix to maximize revenue while maintaining fan accessibility.
+
+**Widget Purpose:** Design premium vs. general seating mix to maximize revenue.
 
 **How It Works:**
 - **Inputs:** Total capacity (18,000), % luxury suites, % club seats, % general admission
@@ -696,6 +754,25 @@ The best sponsors **activate** beyond logos—creating fan experiences that buil
 
 #### Element 21: iFrame Widget - Sponsorship ROI Calculator
 
+### 🎯 Interactive Activity: Sponsorship ROI Calculator
+
+**Practice: MLO 1.1 (Understand sponsorship mechanics) & MLO 1.3 (Evaluate activation strategies)**
+
+Sponsorship generates 15-25% of team revenue, but not all sponsorships are equal. The best sponsors activate beyond logos—creating fan experiences that build positive brand associations.
+
+In this calculator, you'll input deal type (naming rights, jersey patch, category partner), market size, and activation level to calculate brand impressions, estimated brand lift, and deal value. You'll see why activation matters more than logo placement alone.
+
+**What you'll discover:**
+- Why Scotiabank Arena costs $40M/year but smaller markets pay $10M
+- How "full integration" drives 3-5× more value than "logo only"
+- The relationship between brand impressions and sponsorship value
+- Why sponsors measure success beyond visibility
+
+**Time commitment:** 4 minutes
+**Learning outcomes practiced:** MLO 1.1 (Understanding sponsorship revenue stream), MLO 1.3 (Evaluating activation strategies)
+
+---
+
 **Widget Purpose:** Calculate sponsor value from brand exposure based on deal type, market size, and activation level.
 
 **Widget Status:** ✅ Phase 2 widget - BUILT AND READY
@@ -764,7 +841,7 @@ Create 3 tiles (1x3 horizontal layout):
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
 | 25 | **Text** 🔴 Required | Betting growth | 1 min | 100 | Type directly |
-| 26 | **🎮 iFrame Widget** 🟢 Optional | **Betting Legalization Timeline** | 3 min | - | Embed `betting-timeline.html` |
+| 26 | **🎮 iFrame Widget** 🟢 Optional | **Betting Market Simulator** | 3 min | - | Embed `betting-market-simulator.html` |
 | 27 | **Infobox** 🟡 Recommended | Betting growth statistics | 1 min | - | Type directly |
 
 #### Element 25: Betting Growth Text
@@ -788,31 +865,56 @@ Sports betting represents the **newest and fastest-growing revenue stream**, cur
 **Strategic Value:** Fans with bets watch **30-40% more sports content**, games between weak teams gain interest, in-game betting keeps fans engaged throughout.
 ```
 
-#### Element 26: iFrame Widget - Betting Legalization Timeline
+#### Element 26: iFrame Widget - Betting Market Simulator
 
-**Widget Purpose:** Visualize betting legalization spread across North America (2018-2024).
+### 🎯 Interactive Activity: Betting Market Simulator
 
-**Widget Status:** ⭕ Phase 3 widget - TO BE BUILT
+**Practice: MLO 1.1 (Map emerging revenue streams) & MLO 1.3 (Evaluate growth potential and risks)**
+
+Sports betting is the fastest-growing revenue stream (30-40% year-over-year growth), currently representing 2-8% of league revenue. Legalization has fundamentally changed how leagues monetize fan engagement.
+
+In this simulator, you'll make strategic decisions about betting partnerships, data licensing deals, and media integration. You'll see how different approaches impact revenue, fan engagement, and risk exposure.
+
+**What you'll discover:**
+- How betting legalization creates multiple revenue opportunities
+- Trade-offs between official partnerships vs. open market approaches
+- Why data licensing is a separate (and valuable) revenue stream
+- How betting integration drives increased viewership across all content
+
+**Time commitment:** 3 minutes
+**Learning outcomes practiced:** MLO 1.1 (Understanding betting revenue stream), MLO 1.3 (Evaluating growth potential and regulatory risks)
+
+---
+
+**Widget Purpose:** Explore betting market strategies and understand revenue opportunities from legalization.
+
+**Widget Status:** ✅ Built and Ready (located in module-3/widgets/)
+
+**File Location:** `modules/week1/module-3/widgets/betting-market-simulator.html`
 
 **How It Works:**
-- **Interaction:** Slider from 2018 → 2024, map lights up as states legalize
-- **Data points:**
-  - 2018: PASPA struck down, 8 states legal
-  - 2021: Canada legalizes single-game betting
-  - 2024: 38+ US states legal (70%+ population)
-- **Click state:** See legalization date, market size, league partnerships
-- **Learning:** Speed and scale of betting integration
+- **Inputs:** Partnership strategy selection, data licensing approach, media integration level
+- **Outputs:** Revenue projections, engagement metrics, risk assessment
+- **Scenarios:** Official partner deals, data licensing, media integration
+- **Learning:** Understand how betting creates multiple revenue streams
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/betting-timeline.html"
+<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/module-3/widgets/betting-market-simulator.html"
         width="900"
         height="650"
-        title="Betting Legalization Timeline - Interactive map 2018-2024"
+        title="Betting Market Simulator - Explore betting revenue strategies"
         frameborder="0"
         allowfullscreen>
 </iframe>
 ```
+
+**Accessibility:**
+- ✅ Keyboard navigation for all controls
+- ✅ ARIA labels on interactive elements
+- ✅ Screen reader compatible
+- ✅ High contrast mode support
+- ✅ WCAG 2.2 AA compliant
 
 #### Element 27: Infobox - Betting Growth Statistics
 ```
@@ -851,6 +953,25 @@ This explains why teams "overpay" for stars. They're investing in **ecosystem am
 ```
 
 #### Element 29: iFrame Widget - Ecosystem Cascade Simulator
+
+### 🎯 Interactive Activity: Ecosystem Cascade Simulator
+
+**Practice: MLO 1.1 (See revenue stream interconnections) & MLO 1.2 (Understand sport's unique business model) & MLO 1.3 (Evaluate strategic investments)**
+
+This is where everything comes together. You've explored each revenue stream individually—now it's time to see how they form an **ecosystem** rather than a portfolio.
+
+In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to an $8-year, $100 million contract. At first glance, it looks like a losing investment: $12.5M salary vs. $8M direct revenue. But click to reveal the **indirect effects** and watch the ecosystem amplification unfold.
+
+**What you'll discover:**
+- How a single investment cascades through all five revenue streams
+- Why teams "overpay" for stars (ecosystem thinking vs. direct ROI)
+- The difference between direct effects (tickets, merchandise) and indirect effects (media, sponsorship, playoffs, betting)
+- How strategic decisions create ripple effects worth $30-40M+ annually
+
+**Time commitment:** 5 minutes
+**Learning outcomes practiced:** MLO 1.1 (Seeing interconnections), MLO 1.2 (Understanding sport's unique model), MLO 1.3 (Evaluating strategic investments)
+
+---
 
 **Widget Purpose:** Demonstrate how one strategic investment (signing Connor McDavid) creates cascading effects across all revenue streams.
 
@@ -949,9 +1070,31 @@ This explains why teams "overpay" for stars. They're investing in **ecosystem am
 ```
 Title: 🏟️ Activity: Build Your Revenue Empire
 
-You are the new CFO of a mid-market professional sports team. Your challenge:
-maximize revenue over a 5-year period by strategically investing in different
-revenue streams.
+### 🎯 Interactive Activity: Revenue Empire Builder
+
+**Practice: MLO 1.1 (Apply revenue stream knowledge) & MLO 1.3 (Evaluate growth potential and manage risks)**
+
+You've explored each revenue stream through interactive simulations. Now it's time to put it all together and build a complete revenue strategy.
+
+You are the new CFO of a mid-market professional sports team. Your challenge: maximize revenue over a 5-year period by strategically investing $50M across the five revenue streams. You'll make year-by-year decisions, respond to market events, and balance growth against risk.
+
+**What you'll practice:**
+- Allocating budget across media rights, ticketing, sponsorship, merchandising, and betting
+- Managing portfolio risk vs. growth potential
+- Responding to market events (recessions, new competitors, regulatory changes)
+- Understanding how revenue streams create synergies
+
+**Strategic considerations:**
+- Media rights provide stability but require long-term contracts
+- Ticketing is capacity-limited (ceiling on growth)
+- Sponsorship takes time to build but can be very profitable
+- Betting offers high growth but carries regulatory risk
+- Diversification helps weather market changes
+
+**Time commitment:** 30-45 minutes (can be completed in multiple sessions)
+**Learning outcomes practiced:** MLO 1.1 (Applying revenue stream knowledge), MLO 1.3 (Evaluating growth potential and managing risks)
+
+---
 
 Learning Objectives:
 • Apply MLO 1.1: Understand how revenue streams work together
@@ -1585,17 +1728,18 @@ sport business, they're excellent resources.
 
 ### Phase 2: High-Value Widgets ✅ ALL BUILT
 
-#### 4. Media Deal Calculator ✅ COMPLETE
-- **File:** `media-deal-calculator.html`
+#### 4. Media Rights Calculator ✅ COMPLETE
+- **File:** `media-rights-calculator.html`
 - **Status:** Built and tested
 - **Build Time:** 4 hours
 - **Accessibility:** WCAG 2.2 AA compliant
+- **Location:** `module-2/widgets/media-rights-calculator.html`
 
-#### 5. Stadium Revenue Optimizer ✅ COMPLETE
+#### 5. Stadium Revenue Optimizer ⭕ TO BE BUILT (Phase 3)
 - **File:** `stadium-revenue-optimizer.html`
-- **Status:** Built and tested
-- **Build Time:** 5 hours
-- **Accessibility:** WCAG 2.2 AA compliant
+- **Status:** Not yet built - Phase 3 optional widget
+- **Estimated Build Time:** 5 hours
+- **Priority:** Optional
 
 #### 6. Sponsorship ROI Calculator ✅ COMPLETE
 - **File:** `sponsorship-roi-calculator.html`
@@ -1611,11 +1755,12 @@ sport business, they're excellent resources.
 - **Estimated Build Time:** 6 hours
 - **Priority:** Optional (Module 3, Element 11)
 
-#### 8. Betting Legalization Timeline ⭕ PENDING
-- **File:** `betting-timeline.html`
-- **Status:** Design complete, not yet built
-- **Estimated Build Time:** 5 hours
+#### 8. Betting Market Simulator ✅ COMPLETE
+- **File:** `betting-market-simulator.html`
+- **Status:** Built and ready
+- **Build Time:** 5 hours
 - **Priority:** Optional (Module 3, Element 26)
+- **Location:** `module-3/widgets/betting-market-simulator.html`
 
 ### Widget Base Template
 
@@ -1677,7 +1822,7 @@ All widgets use consistent structure:
 - ⭕ `betting-timeline.html`
 
 **Module 4 Widget:**
-- ☐ `revenue-empire-builder.html` (interactive simulation)
+- ☐ `revenue-empire-builder.html` (interactive simulation) - TO BE BUILT (12-15 hours estimated)
 
 ### Images
 

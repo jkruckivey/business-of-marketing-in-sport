@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaming Wars Decision Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-accent: #c5b783;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: var(--color-neutral-500);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .game-card {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .scenario-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--color-neutral-200);
+        }
+
+        .scenario-icon {
+            font-size: 3rem;
+        }
+
+        .scenario-title {
+            flex: 1;
+        }
+
+        .scenario-title h2 {
+            font-size: 1.8rem;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .scenario-title .label {
+            color: var(--color-neutral-500);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .scenario-description {
+            background: #fef3c7;
+            border-left: 4px solid #fbbf24;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .scenario-description p {
+            line-height: 1.8;
+            color: var(--color-neutral-700);
+            margin-bottom: 1rem;
+        }
+
+        .scenario-description p:last-child {
+            margin-bottom: 0;
+        }
+
+        .context-box {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .context-box h3 {
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .context-box ul {
+            margin-left: 1.5rem;
+            color: var(--color-neutral-600);
+            line-height: 1.8;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .option-card {
+            background: white;
+            border: 3px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .option-card:hover {
+            border-color: var(--color-neutral-900);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .option-card:focus {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        .option-card.selected {
+            border-color: var(--color-accent);
+            background: #fefce8;
+        }
+
+        .option-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .option-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .option-badge {
+            background: var(--color-neutral-900);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .option-description {
+            color: var(--color-neutral-600);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .option-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--color-neutral-200);
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-label {
+            color: var(--color-neutral-500);
+            font-size: 0.85rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .metric-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .metric-value.positive {
+            color: #10b981;
+        }
+
+        .metric-value.negative {
+            color: #ef4444;
+        }
+
+        .btn {
+            background: var(--color-neutral-900);
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            margin: 2rem auto 0;
+        }
+
+        .btn:hover {
+            background: var(--color-neutral-700);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn:focus {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        .btn:disabled {
+            background: var(--color-neutral-300);
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .result-card {
+            background: #f0fdf4;
+            border: 2px solid #10b981;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+            display: none;
+        }
+
+        .result-card.show {
+            display: block;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .result-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .result-icon {
+            font-size: 3rem;
+        }
+
+        .result-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .result-body p {
+            color: var(--color-neutral-700);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .insights {
+            background: white;
+            border: 1px solid #10b981;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .insights h4 {
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .insights ul {
+            margin-left: 1.5rem;
+            color: var(--color-neutral-600);
+            line-height: 1.8;
+        }
+
+        .progress-tracker {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .progress-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--color-neutral-300);
+            transition: all 0.3s;
+        }
+
+        .progress-dot.active {
+            background: var(--color-accent);
+            transform: scale(1.3);
+        }
+
+        .progress-dot.completed {
+            background: #10b981;
+        }
+
+        @media (max-width: 768px) {
+            .option-metrics {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📺 Streaming Wars Decision Game</h1>
+        <p class="subtitle">Navigate the evolving media rights landscape through strategic decisions</p>
+
+        <div class="progress-tracker" id="progress-tracker"></div>
+
+        <div id="scenarios-container"></div>
+    </div>
+
+    <script>
+        const scenarios = [
+            {
+                id: 1,
+                icon: '📱',
+                title: 'The Streaming Offer',
+                label: 'Scenario 1 of 3',
+                description: 'You are the media rights director for a mid-market professional league. Your current 5-year broadcast deal with a traditional network generates $10M/year and expires in 2 years. A major streaming platform approaches you with an early buyout offer: $18M/year for 7 years, exclusive digital rights.',
+                context: {
+                    title: 'Key Considerations:',
+                    points: [
+                        'Traditional broadcast reaches 15M households (older, loyal fans)',
+                        'Streaming platform has 50M subscribers (younger demographic)',
+                        'Your current fanbase: 60% over age 45, 40% under 45',
+                        'League sponsors value broad reach for brand awareness'
+                    ]
+                },
+                options: [
+                    {
+                        id: 'accept-streaming',
+                        title: 'Accept Streaming-Only Deal',
+                        badge: 'HIGH GROWTH',
+                        description: 'Take the $18M/year exclusive streaming deal. Move all games to the streaming platform, ending the traditional broadcast relationship.',
+                        metrics: {
+                            revenue: '+80%',
+                            reach: '-40%',
+                            risk: 'High'
+                        },
+                        outcome: {
+                            icon: '🚀',
+                            title: 'Revenue Surge, But Audience Challenges',
+                            description: 'The streaming deal delivers $18M/year, an 80% revenue increase. However, older fans struggle to access games on the streaming platform. Season 1 viewership drops 35% as traditional fans cancel subscriptions. Sponsors express concern about the narrower demographic reach.',
+                            insights: [
+                                'Revenue maximization doesn\'t always equal audience maximization',
+                                'Digital transitions require fan education and support systems',
+                                'Sponsors value both quantity (reach) and quality (engagement) of viewers',
+                                'Streaming platforms excel at younger demographics but may alienate older fans'
+                            ]
+                        }
+                    },
+                    {
+                        id: 'renew-traditional',
+                        title: 'Renew Traditional Broadcast',
+                        badge: 'STABLE',
+                        description: 'Negotiate a renewal with your current broadcast partner. Secure $12M/year for 5 years with gradual increases.',
+                        metrics: {
+                            revenue: '+20%',
+                            reach: 'Stable',
+                            risk: 'Low'
+                        },
+                        outcome: {
+                            icon: '🛡️',
+                            title: 'Stability Over Growth',
+                            description: 'You renew at $12M/year, a modest 20% increase. Viewership remains stable, sponsors are satisfied with continued broad reach. However, 2 years later, you watch a rival league sign a $25M/year streaming deal. Your board questions whether you left money on the table.',
+                            insights: [
+                                'Conservative strategies minimize risk but may sacrifice growth opportunities',
+                                'Traditional broadcast provides stability but has a growth ceiling',
+                                'Market windows for premium deals can close quickly',
+                                'Being "first mover" in streaming carries risk but can yield premium valuations'
+                            ]
+                        }
+                    },
+                    {
+                        id: 'hybrid-model',
+                        title: 'Negotiate Hybrid Deal',
+                        badge: 'BALANCED',
+                        description: 'Counter-offer: streaming gets exclusive digital rights for $10M/year, traditional broadcast keeps linear TV for $8M/year. Total: $18M/year.',
+                        metrics: {
+                            revenue: '+80%',
+                            reach: '+20%',
+                            risk: 'Medium'
+                        },
+                        outcome: {
+                            icon: '🎯',
+                            title: 'Best of Both Worlds',
+                            description: 'The hybrid deal generates $18M/year total while maintaining broad reach. Older fans watch on traditional broadcast, younger fans stream. Total viewership increases 15% within 2 years. Sponsors love the expanded demographic coverage. This becomes the industry standard within 3 years.',
+                            insights: [
+                                'Hybrid models can capture growth while maintaining existing audience',
+                                'Diversification across platforms reduces dependency risk',
+                                'Different platforms serve different demographic segments effectively',
+                                'Creative deal structures can satisfy multiple stakeholders'
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                id: 2,
+                icon: '🌍',
+                title: 'International Expansion',
+                label: 'Scenario 2 of 3',
+                description: 'Your hybrid media strategy is performing well. A European streaming service offers $5M/year for exclusive international rights to stream games in 40 countries. Currently, international viewership is minimal (50K viewers globally), but the service promises promotion and localization.',
+                context: {
+                    title: 'Key Considerations:',
+                    points: [
+                        'Your league is 95% North American audience today',
+                        'International rights are currently unsold (no revenue)',
+                        'Time zone differences: most games air 2-4am in Europe',
+                        'European service has 30M subscribers, strong sports portfolio'
+                    ]
+                },
+                options: [
+                    {
+                        id: 'accept-intl',
+                        title: 'Accept International Deal',
+                        badge: 'EXPANSION',
+                        description: 'Sign the $5M/year international streaming deal with localization and promotion commitments.',
+                        metrics: {
+                            revenue: '+25%',
+                            reach: '+500%',
+                            risk: 'Medium'
+                        },
+                        outcome: {
+                            icon: '🌏',
+                            title: 'Global Reach Unlocked',
+                            description: 'International viewership grows from 50K to 400K within 18 months. Three European sponsors join ($2M combined). Merchandise sales in Europe increase 300%. The league develops a small but passionate international fanbase. Time zones remain challenging, but VOD viewing thrives.',
+                            insights: [
+                                'International markets offer untapped growth potential',
+                                'VOD (video on demand) compensates for time zone challenges',
+                                'Small passionate fanbases in new markets can drive disproportionate merchandise revenue',
+                                'International expansion creates new sponsor categories (e.g., European brands)'
+                            ]
+                        }
+                    },
+                    {
+                        id: 'decline-focus',
+                        title: 'Decline and Focus on North America',
+                        badge: 'FOCUSED',
+                        description: 'Prioritize domestic growth. Use resources to deepen North American penetration instead of international expansion.',
+                        metrics: {
+                            revenue: '0%',
+                            reach: '0%',
+                            risk: 'Low'
+                        },
+                        outcome: {
+                            icon: '🎯',
+                            title: 'Domestic Dominance',
+                            description: 'Focusing on North America, you negotiate improved terms with domestic partners. Viewership increases 10% domestically. However, 3 years later, international rights for comparable leagues are selling for $15M/year. Your board regrets not establishing an international presence earlier.',
+                            insights: [
+                                'Focus strategies can deepen market penetration but limit diversification',
+                                'First-mover advantage in international markets compounds over time',
+                                'International rights valuations increased 200-300% from 2018-2024',
+                                'Geographic concentration increases risk if domestic market weakens'
+                            ]
+                        }
+                    },
+                    {
+                        id: 'co-production',
+                        title: 'Counter-Offer Co-Production Deal',
+                        badge: 'STRATEGIC',
+                        description: 'Propose $3M/year guaranteed, plus 50% revenue share on international subscription growth and merchandise.',
+                        metrics: {
+                            revenue: '+15% + upside',
+                            reach: '+500%',
+                            risk: 'Low'
+                        },
+                        outcome: {
+                            icon: '🤝',
+                            title: 'Aligned Incentives',
+                            description: 'The co-production deal starts at $3M/year but performance-based revenue sharing drives year-over-year increases. By Year 3, you\'re earning $7M/year internationally. Both parties invest in growth, creating a true partnership. This becomes your template for expansion into Asia.',
+                            insights: [
+                                'Revenue-sharing aligns incentives between leagues and platforms',
+                                'Lower guarantees with upside participation can outperform fixed deals',
+                                'Partnership models encourage mutual investment in growth',
+                                'Success in one market creates templates for expansion into others'
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                id: 3,
+                icon: '🎮',
+                title: 'Emerging Platform Decision',
+                label: 'Scenario 3 of 3',
+                description: 'Your league now has robust domestic (hybrid) and international (streaming) deals generating $23M/year combined. A gaming platform approaches you to stream games within their platform, targeting esports fans. They offer $2M/year, plus integration with your league\'s fantasy game.',
+                context: {
+                    title: 'Key Considerations:',
+                    points: [
+                        'Gaming platform has 150M monthly active users (ages 18-34)',
+                        'Your current youngest demographic (18-24) is only 8% of viewership',
+                        'Integration allows in-stream betting, fantasy updates, live stats overlay',
+                        'Some traditional media partners may view this as competitive'
+                    ]
+                },
+                options: [
+                    {
+                        id: 'accept-gaming',
+                        title: 'Accept Gaming Platform Deal',
+                        badge: 'INNOVATION',
+                        description: 'Sign the $2M/year deal with full integration (betting, fantasy, interactive features).',
+                        metrics: {
+                            revenue: '+8%',
+                            reach: '+1000%',
+                            risk: 'Medium'
+                        },
+                        outcome: {
+                            icon: '🎯',
+                            title: 'Demographic Breakthrough',
+                            description: 'The gaming platform drives 600K new viewers (ages 18-24) within 12 months. In-stream betting increases engagement 40%. Fantasy integration boosts participation 25%. Your traditional broadcast partner initially protests but negotiates to adopt similar features. You\'ve found the next generation of fans.',
+                            insights: [
+                                'Non-traditional platforms access demographics traditional media cannot reach',
+                                'Interactive features (betting, fantasy) drive engagement beyond passive viewing',
+                                'Innovation can pressure existing partners to modernize their offerings',
+                                'Youth audience acquisition compounds in value over decades of fandom'
+                            ]
+                        }
+                    },
+                    {
+                        id: 'decline-protect',
+                        title: 'Decline to Protect Existing Partnerships',
+                        badge: 'CONSERVATIVE',
+                        description: 'Decline the offer to avoid complications with traditional broadcast and streaming partners.',
+                        metrics: {
+                            revenue: '0%',
+                            reach: '0%',
+                            risk: 'Low'
+                        },
+                        outcome: {
+                            icon: '⚠️',
+                            title: 'Opportunity Cost',
+                            description: 'You maintain positive relationships with existing partners. However, 2 years later, a rival league launches on the gaming platform and captures 1M+ viewers aged 18-24. Your league\'s average viewer age increases to 48. Sponsors begin shifting budgets to the rival league to reach younger consumers.',
+                            insights: [
+                                'Protecting legacy partnerships can prevent necessary innovation',
+                                'Audience aging is an existential risk for sports leagues',
+                                'Competitors who capture younger demos gain long-term advantage',
+                                'Reluctance to cannibalize existing deals can result in being disrupted by others'
+                            ]
+                        }
+                    },
+                    {
+                        id: 'pilot-test',
+                        title: 'Launch Limited Pilot Program',
+                        badge: 'STRATEGIC',
+                        description: 'Test with 20 games (out of 100/season) for $500K. Evaluate performance before full commitment.',
+                        metrics: {
+                            revenue: '+2%',
+                            reach: '+200%',
+                            risk: 'Very Low'
+                        },
+                        outcome: {
+                            icon: '🧪',
+                            title: 'Smart Testing Approach',
+                            description: 'The pilot generates 150K viewers and proves interactive features drive engagement. After 1 season, you renegotiate to $3M/year for full access. The pilot data gave you leverage. Existing partners see the value and don\'t object. You captured the upside while minimizing risk.',
+                            insights: [
+                                'Pilot programs reduce risk while testing new platforms',
+                                'Data from limited tests provides negotiating leverage for full deals',
+                                'Gradual rollouts give partners time to adapt rather than react',
+                                'Proof of concept can increase deal values 3-5× over initial offers'
+                            ]
+                        }
+                    }
+                ]
+            }
+        ];
+
+        let gameState = {
+            currentScenario: 0,
+            selections: []
+        };
+
+        function initGame() {
+            renderProgressTracker();
+            renderScenario(scenarios[0]);
+        }
+
+        function renderProgressTracker() {
+            const tracker = document.getElementById('progress-tracker');
+            tracker.innerHTML = '';
+
+            scenarios.forEach((s, index) => {
+                const dot = document.createElement('div');
+                dot.className = 'progress-dot';
+                if (index === gameState.currentScenario) {
+                    dot.classList.add('active');
+                } else if (index < gameState.currentScenario) {
+                    dot.classList.add('completed');
+                }
+                tracker.appendChild(dot);
+            });
+        }
+
+        function renderScenario(scenario) {
+            const container = document.getElementById('scenarios-container');
+            container.innerHTML = '';
+
+            const card = document.createElement('div');
+            card.className = 'game-card';
+
+            card.innerHTML = `
+                <div class="scenario-header">
+                    <div class="scenario-icon">${scenario.icon}</div>
+                    <div class="scenario-title">
+                        <div class="label">${scenario.label}</div>
+                        <h2>${scenario.title}</h2>
+                    </div>
+                </div>
+
+                <div class="scenario-description">
+                    <p>${scenario.description}</p>
+                </div>
+
+                <div class="context-box">
+                    <h3>${scenario.context.title}</h3>
+                    <ul>
+                        ${scenario.context.points.map(p => `<li>${p}</li>`).join('')}
+                    </ul>
+                </div>
+
+                <div class="options-container" id="options-${scenario.id}"></div>
+
+                <button class="btn" id="submit-btn" onclick="submitChoice()" disabled aria-label="Submit your decision">Make Decision</button>
+
+                <div class="result-card" id="result-${scenario.id}"></div>
+            `;
+
+            container.appendChild(card);
+
+            // Render options
+            const optionsContainer = document.getElementById(`options-${scenario.id}`);
+            scenario.options.forEach(option => {
+                const optionCard = document.createElement('div');
+                optionCard.className = 'option-card';
+                optionCard.tabIndex = 0;
+                optionCard.setAttribute('role', 'button');
+                optionCard.setAttribute('aria-label', `Option: ${option.title}`);
+
+                const revenueClass = option.metrics.revenue.includes('+') ? 'positive' : option.metrics.revenue === '0%' ? '' : 'negative';
+                const reachClass = option.metrics.reach.includes('+') ? 'positive' : option.metrics.reach === '0%' ? '' : option.metrics.reach.includes('-') ? 'negative' : '';
+
+                optionCard.innerHTML = `
+                    <div class="option-header">
+                        <div>
+                            <div class="option-title">${option.title}</div>
+                        </div>
+                        <div class="option-badge">${option.badge}</div>
+                    </div>
+                    <div class="option-description">${option.description}</div>
+                    <div class="option-metrics">
+                        <div class="metric">
+                            <div class="metric-label">Revenue Impact</div>
+                            <div class="metric-value ${revenueClass}">${option.metrics.revenue}</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Reach Impact</div>
+                            <div class="metric-value ${reachClass}">${option.metrics.reach}</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Risk Level</div>
+                            <div class="metric-value">${option.metrics.risk}</div>
+                        </div>
+                    </div>
+                `;
+
+                optionCard.onclick = () => selectOption(scenario.id, option.id, optionCard);
+                optionCard.onkeypress = (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        selectOption(scenario.id, option.id, optionCard);
+                    }
+                };
+
+                optionsContainer.appendChild(optionCard);
+            });
+        }
+
+        function selectOption(scenarioId, optionId, element) {
+            // Deselect all options
+            document.querySelectorAll(`#options-${scenarioId} .option-card`).forEach(card => {
+                card.classList.remove('selected');
+            });
+
+            // Select this option
+            element.classList.add('selected');
+
+            // Store selection
+            const scenario = scenarios.find(s => s.id === scenarioId);
+            const option = scenario.options.find(o => o.id === optionId);
+
+            gameState.selections[gameState.currentScenario] = {
+                scenarioId,
+                optionId,
+                option
+            };
+
+            // Enable submit button
+            document.getElementById('submit-btn').disabled = false;
+        }
+
+        function submitChoice() {
+            const selection = gameState.selections[gameState.currentScenario];
+            if (!selection) return;
+
+            const scenario = scenarios[gameState.currentScenario];
+            const option = selection.option;
+
+            // Show result
+            const resultCard = document.getElementById(`result-${scenario.id}`);
+            resultCard.innerHTML = `
+                <div class="result-header">
+                    <div class="result-icon">${option.outcome.icon}</div>
+                    <div class="result-title">${option.outcome.title}</div>
+                </div>
+                <div class="result-body">
+                    <p>${option.outcome.description}</p>
+                    <div class="insights">
+                        <h4>💡 Strategic Insights</h4>
+                        <ul>
+                            ${option.outcome.insights.map(i => `<li>${i}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+            resultCard.classList.add('show');
+
+            // Update button
+            const submitBtn = document.getElementById('submit-btn');
+            if (gameState.currentScenario < scenarios.length - 1) {
+                submitBtn.textContent = 'Continue to Next Scenario';
+                submitBtn.onclick = nextScenario;
+            } else {
+                submitBtn.textContent = 'Download Summary';
+                submitBtn.onclick = exportResults;
+            }
+        }
+
+        function nextScenario() {
+            gameState.currentScenario++;
+            renderProgressTracker();
+            renderScenario(scenarios[gameState.currentScenario]);
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function exportResults() {
+            let content = `
+STREAMING WARS DECISION GAME - RESULTS
+═══════════════════════════════════════
+
+YOUR STRATEGIC CHOICES
+──────────────────────
+
+`;
+
+            gameState.selections.forEach((selection, index) => {
+                const scenario = scenarios[index];
+                content += `\nScenario ${index + 1}: ${scenario.title}\n`;
+                content += `Decision: ${selection.option.title}\n`;
+                content += `Outcome: ${selection.option.outcome.title}\n`;
+                content += `\nKey Insights:\n`;
+                selection.option.outcome.insights.forEach((insight, i) => {
+                    content += `${i + 1}. ${insight}\n`;
+                });
+                content += `\n`;
+            });
+
+            content += `\n═══════════════════════════════════════
+Generated: ${new Date().toLocaleString()}
+Business of Sports Marketing - Week 1 Module 3
+`;
+
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'streaming-wars-decisions.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Initialize on load
+        initGame();
+    </script>
+</body>
+</html>

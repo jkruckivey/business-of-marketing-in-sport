@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stadium Revenue Optimizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-accent: #c5b783;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-danger: #ef4444;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: var(--color-neutral-500);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .card h2 {
+            color: var(--color-neutral-900);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .seating-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .control-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .control-label {
+            color: var(--color-neutral-900);
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .control-icon {
+            font-size: 1.5rem;
+        }
+
+        .control-value {
+            color: var(--color-accent);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .slider-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .slider {
+            width: 100%;
+            height: 8px;
+            border-radius: 4px;
+            background: var(--color-neutral-200);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--color-neutral-900);
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--color-neutral-900);
+            cursor: pointer;
+            border: none;
+        }
+
+        .slider:focus {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-neutral-500);
+            font-size: 0.85rem;
+        }
+
+        .capacity-breakdown {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .breakdown-title {
+            color: var(--color-neutral-700);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .breakdown-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .breakdown-item {
+            text-align: center;
+        }
+
+        .breakdown-label {
+            color: var(--color-neutral-500);
+            font-size: 0.85rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .breakdown-value {
+            color: var(--color-neutral-900);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .stadium-visual {
+            background: linear-gradient(180deg, #f0f9ff 0%, white 100%);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 2rem;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .stadium-diagram {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .seating-tier {
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s;
+            cursor: help;
+        }
+
+        .seating-tier:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .tier-label {
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+            opacity: 0.9;
+        }
+
+        .tier-value {
+            font-size: 1.3rem;
+        }
+
+        .suites {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        }
+
+        .club {
+            background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+        }
+
+        .general {
+            background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%);
+        }
+
+        .results-section {
+            grid-column: 1 / -1;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .metric-label {
+            color: var(--color-neutral-600);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .metric-value {
+            color: var(--color-neutral-900);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .metric-value.highlight {
+            color: var(--color-accent);
+        }
+
+        .insights-box {
+            background: #f0fdf4;
+            border: 2px solid #10b981;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .insights-box h3 {
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .insights-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .insight-item {
+            color: var(--color-neutral-700);
+            line-height: 1.6;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .insight-item::before {
+            content: '💡';
+            position: absolute;
+            left: 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        .comparison-table th {
+            background: var(--color-neutral-100);
+            color: var(--color-neutral-700);
+            font-weight: 600;
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 2px solid var(--color-neutral-300);
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--color-neutral-200);
+            color: var(--color-neutral-700);
+        }
+
+        .comparison-table tr:hover {
+            background: var(--color-neutral-50);
+        }
+
+        .btn {
+            background: var(--color-neutral-900);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+            margin-top: 1.5rem;
+        }
+
+        .btn:hover {
+            background: var(--color-neutral-700);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn:focus {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 968px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .breakdown-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏟️ Stadium Revenue Optimizer</h1>
+        <p class="subtitle">Design the optimal seating mix to maximize revenue while maintaining fan accessibility</p>
+
+        <div class="content-grid">
+            <!-- Controls Section -->
+            <div class="card">
+                <h2>⚙️ Seating Configuration</h2>
+
+                <div class="seating-controls">
+                    <!-- Luxury Suites -->
+                    <div class="control-group">
+                        <div class="control-header">
+                            <label class="control-label" for="suites-slider">
+                                <span class="control-icon">👑</span>
+                                Luxury Suites
+                            </label>
+                            <span class="control-value" id="suites-pct">5%</span>
+                        </div>
+                        <div class="slider-container">
+                            <input type="range"
+                                   class="slider"
+                                   id="suites-slider"
+                                   min="0"
+                                   max="15"
+                                   step="1"
+                                   value="5"
+                                   oninput="updateSeating()"
+                                   aria-label="Percentage of luxury suites">
+                            <div class="slider-labels">
+                                <span>0%</span>
+                                <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Club Seats -->
+                    <div class="control-group">
+                        <div class="control-header">
+                            <label class="control-label" for="club-slider">
+                                <span class="control-icon">⭐</span>
+                                Club Seats
+                            </label>
+                            <span class="control-value" id="club-pct">15%</span>
+                        </div>
+                        <div class="slider-container">
+                            <input type="range"
+                                   class="slider"
+                                   id="club-slider"
+                                   min="0"
+                                   max="30"
+                                   step="1"
+                                   value="15"
+                                   oninput="updateSeating()"
+                                   aria-label="Percentage of club seats">
+                            <div class="slider-labels">
+                                <span>0%</span>
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- General Admission -->
+                    <div class="control-group">
+                        <div class="control-header">
+                            <label class="control-label">
+                                <span class="control-icon">🎟️</span>
+                                General Admission
+                            </label>
+                            <span class="control-value" id="ga-pct">80%</span>
+                        </div>
+                        <div style="color: var(--color-neutral-500); font-size: 0.9rem; font-style: italic;">
+                            Automatically calculated (remaining capacity)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="capacity-breakdown">
+                    <div class="breakdown-title">Capacity Breakdown (18,000 Total)</div>
+                    <div class="breakdown-grid">
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">Suites</div>
+                            <div class="breakdown-value" id="suites-seats">900</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">Club Seats</div>
+                            <div class="breakdown-value" id="club-seats">2,700</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="breakdown-label">General Admission</div>
+                            <div class="breakdown-value" id="ga-seats">14,400</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visual Section -->
+            <div class="card">
+                <h2>📊 Stadium Visualization</h2>
+                <div class="stadium-visual">
+                    <div class="stadium-diagram" id="stadium-diagram">
+                        <div class="seating-tier suites" id="visual-suites" title="Luxury Suites - Premium private boxes">
+                            <div class="tier-label">Luxury Suites</div>
+                            <div class="tier-value">5%</div>
+                        </div>
+                        <div class="seating-tier club" id="visual-club" title="Club Seats - Premium seating with amenities">
+                            <div class="tier-label">Club Seats</div>
+                            <div class="tier-value">15%</div>
+                        </div>
+                        <div class="seating-tier general" id="visual-ga" title="General Admission - Standard seating">
+                            <div class="tier-label">General Admission</div>
+                            <div class="tier-value">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="card results-section">
+                <h2>💰 Revenue Analysis</h2>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Total Revenue</div>
+                        <div class="metric-value highlight" id="total-revenue">$0</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Revenue per Seat</div>
+                        <div class="metric-value" id="revenue-per-seat">$0</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Premium %</div>
+                        <div class="metric-value" id="premium-pct">0%</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-label">Accessibility Score</div>
+                        <div class="metric-value" id="accessibility-score">0/100</div>
+                    </div>
+                </div>
+
+                <div class="insights-box">
+                    <h3>Strategic Insights</h3>
+                    <ul class="insights-list" id="insights-list"></ul>
+                </div>
+
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Seating Type</th>
+                            <th>Capacity</th>
+                            <th>Price/Seat</th>
+                            <th>Total Revenue</th>
+                            <th>% of Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comparison-tbody"></tbody>
+                </table>
+
+                <button class="btn" onclick="exportAnalysis()" aria-label="Download revenue analysis">📄 Download Analysis</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const TOTAL_CAPACITY = 18000;
+        const GAMES_PER_SEASON = 41;
+
+        const PRICING = {
+            suites: 200000, // Per season per suite
+            club: 10000,    // Per season per seat
+            ga: 75          // Per game per seat
+        };
+
+        function updateSeating() {
+            const suitesPct = parseInt(document.getElementById('suites-slider').value);
+            const clubPct = parseInt(document.getElementById('club-slider').value);
+            const gaPct = 100 - suitesPct - clubPct;
+
+            // Update percentage displays
+            document.getElementById('suites-pct').textContent = suitesPct + '%';
+            document.getElementById('club-pct').textContent = clubPct + '%';
+            document.getElementById('ga-pct').textContent = gaPct + '%';
+
+            // Calculate seats
+            const suitesSeats = Math.round(TOTAL_CAPACITY * (suitesPct / 100));
+            const clubSeats = Math.round(TOTAL_CAPACITY * (clubPct / 100));
+            const gaSeats = TOTAL_CAPACITY - suitesSeats - clubSeats;
+
+            // Update seat counts
+            document.getElementById('suites-seats').textContent = suitesSeats.toLocaleString();
+            document.getElementById('club-seats').textContent = clubSeats.toLocaleString();
+            document.getElementById('ga-seats').textContent = gaSeats.toLocaleString();
+
+            // Update visual
+            document.getElementById('visual-suites').querySelector('.tier-value').textContent = suitesPct + '%';
+            document.getElementById('visual-club').querySelector('.tier-value').textContent = clubPct + '%';
+            document.getElementById('visual-ga').querySelector('.tier-value').textContent = gaPct + '%';
+
+            // Update visual heights
+            document.getElementById('visual-suites').style.flex = suitesPct;
+            document.getElementById('visual-club').style.flex = clubPct;
+            document.getElementById('visual-ga').style.flex = gaPct;
+
+            // Calculate revenue
+            calculateRevenue(suitesSeats, clubSeats, gaSeats, suitesPct, clubPct, gaPct);
+        }
+
+        function calculateRevenue(suitesSeats, clubSeats, gaSeats, suitesPct, clubPct, gaPct) {
+            // Calculate revenues
+            const suitesRevenue = suitesSeats * PRICING.suites;
+            const clubRevenue = clubSeats * PRICING.club;
+            const gaRevenue = gaSeats * PRICING.ga * GAMES_PER_SEASON;
+
+            const totalRevenue = suitesRevenue + clubRevenue + gaRevenue;
+            const revenuePerSeat = totalRevenue / TOTAL_CAPACITY;
+            const premiumPct = ((suitesPct + clubPct) / 100) * 100;
+
+            // Calculate accessibility score (higher GA = more accessible)
+            const accessibilityScore = Math.round(gaPct);
+
+            // Update metrics
+            document.getElementById('total-revenue').textContent = '$' + (totalRevenue / 1000000).toFixed(1) + 'M';
+            document.getElementById('revenue-per-seat').textContent = '$' + Math.round(revenuePerSeat).toLocaleString();
+            document.getElementById('premium-pct').textContent = Math.round(premiumPct) + '%';
+            document.getElementById('accessibility-score').textContent = accessibilityScore + '/100';
+
+            // Update table
+            updateComparisonTable(suitesSeats, clubSeats, gaSeats, suitesRevenue, clubRevenue, gaRevenue, totalRevenue);
+
+            // Generate insights
+            generateInsights(totalRevenue, premiumPct, accessibilityScore, suitesRevenue, clubRevenue, gaRevenue);
+        }
+
+        function updateComparisonTable(suitesSeats, clubSeats, gaSeats, suitesRevenue, clubRevenue, gaRevenue, totalRevenue) {
+            const tbody = document.getElementById('comparison-tbody');
+            tbody.innerHTML = `
+                <tr>
+                    <td>👑 Luxury Suites</td>
+                    <td>${suitesSeats.toLocaleString()}</td>
+                    <td>$${PRICING.suites.toLocaleString()}/season</td>
+                    <td>$${(suitesRevenue / 1000000).toFixed(2)}M</td>
+                    <td>${((suitesRevenue / totalRevenue) * 100).toFixed(1)}%</td>
+                </tr>
+                <tr>
+                    <td>⭐ Club Seats</td>
+                    <td>${clubSeats.toLocaleString()}</td>
+                    <td>$${PRICING.club.toLocaleString()}/season</td>
+                    <td>$${(clubRevenue / 1000000).toFixed(2)}M</td>
+                    <td>${((clubRevenue / totalRevenue) * 100).toFixed(1)}%</td>
+                </tr>
+                <tr>
+                    <td>🎟️ General Admission</td>
+                    <td>${gaSeats.toLocaleString()}</td>
+                    <td>$${PRICING.ga}/game × ${GAMES_PER_SEASON} games</td>
+                    <td>$${(gaRevenue / 1000000).toFixed(2)}M</td>
+                    <td>${((gaRevenue / totalRevenue) * 100).toFixed(1)}%</td>
+                </tr>
+                <tr style="background: var(--color-neutral-100); font-weight: 700;">
+                    <td>TOTAL</td>
+                    <td>${TOTAL_CAPACITY.toLocaleString()}</td>
+                    <td>-</td>
+                    <td>$${(totalRevenue / 1000000).toFixed(2)}M</td>
+                    <td>100%</td>
+                </tr>
+            `;
+        }
+
+        function generateInsights(totalRevenue, premiumPct, accessibilityScore, suitesRevenue, clubRevenue, gaRevenue) {
+            const insights = [];
+
+            // Revenue insights
+            if (totalRevenue > 100000000) {
+                insights.push('Excellent revenue optimization! Your configuration generates over $100M annually.');
+            } else if (totalRevenue > 80000000) {
+                insights.push('Strong revenue performance. Consider increasing premium seating for higher revenue.');
+            } else {
+                insights.push('Revenue can be improved. Increase luxury suites and club seats to maximize revenue per seat.');
+            }
+
+            // Premium seating insights
+            const premiumRevenueShare = ((suitesRevenue + clubRevenue) / totalRevenue) * 100;
+            if (premiumRevenueShare > 50) {
+                insights.push(`Premium seating generates ${premiumRevenueShare.toFixed(0)}% of total revenue despite being only ${premiumPct.toFixed(0)}% of capacity. This is the "premium paradox" in action.`);
+            }
+
+            // Accessibility insights
+            if (accessibilityScore > 75) {
+                insights.push('High accessibility score ensures broad fan access. Great for fan loyalty and community support.');
+            } else if (accessibilityScore < 60) {
+                insights.push('⚠️ Low accessibility score may limit fan access and reduce community support. Consider balancing revenue with accessibility.');
+            }
+
+            // Comparison insights
+            if (suitesRevenue > clubRevenue + gaRevenue) {
+                insights.push('Luxury suites alone generate more revenue than all other seating combined. This shows the power of high-margin premium inventory.');
+            }
+
+            // Strategic insights
+            if (premiumPct > 25) {
+                insights.push('Heavy premium focus maximizes revenue but may create perception issues around affordability and fan experience.');
+            } else if (premiumPct < 15) {
+                insights.push('Conservative premium allocation leaves revenue on the table. Most teams allocate 20-30% to premium seating.');
+            }
+
+            const insightsList = document.getElementById('insights-list');
+            insightsList.innerHTML = '';
+            insights.forEach(insight => {
+                const li = document.createElement('li');
+                li.className = 'insight-item';
+                li.textContent = insight;
+                insightsList.appendChild(li);
+            });
+        }
+
+        function exportAnalysis() {
+            const suitesPct = parseInt(document.getElementById('suites-slider').value);
+            const clubPct = parseInt(document.getElementById('club-slider').value);
+            const gaPct = 100 - suitesPct - clubPct;
+
+            const suitesSeats = Math.round(TOTAL_CAPACITY * (suitesPct / 100));
+            const clubSeats = Math.round(TOTAL_CAPACITY * (clubPct / 100));
+            const gaSeats = TOTAL_CAPACITY - suitesSeats - clubSeats;
+
+            const suitesRevenue = suitesSeats * PRICING.suites;
+            const clubRevenue = clubSeats * PRICING.club;
+            const gaRevenue = gaSeats * PRICING.ga * GAMES_PER_SEASON;
+            const totalRevenue = suitesRevenue + clubRevenue + gaRevenue;
+
+            let content = `
+STADIUM REVENUE OPTIMIZER - ANALYSIS
+═══════════════════════════════════════
+
+SEATING CONFIGURATION
+─────────────────────
+Total Capacity: ${TOTAL_CAPACITY.toLocaleString()} seats
+
+Luxury Suites: ${suitesPct}% (${suitesSeats.toLocaleString()} seats)
+Club Seats: ${clubPct}% (${clubSeats.toLocaleString()} seats)
+General Admission: ${gaPct}% (${gaSeats.toLocaleString()} seats)
+
+REVENUE BREAKDOWN
+─────────────────
+Luxury Suites: $${(suitesRevenue / 1000000).toFixed(2)}M (${((suitesRevenue / totalRevenue) * 100).toFixed(1)}%)
+  - ${suitesSeats.toLocaleString()} seats × $${PRICING.suites.toLocaleString()}/season
+
+Club Seats: $${(clubRevenue / 1000000).toFixed(2)}M (${((clubRevenue / totalRevenue) * 100).toFixed(1)}%)
+  - ${clubSeats.toLocaleString()} seats × $${PRICING.club.toLocaleString()}/season
+
+General Admission: $${(gaRevenue / 1000000).toFixed(2)}M (${((gaRevenue / totalRevenue) * 100).toFixed(1)}%)
+  - ${gaSeats.toLocaleString()} seats × $${PRICING.ga}/game × ${GAMES_PER_SEASON} games
+
+TOTAL ANNUAL REVENUE: $${(totalRevenue / 1000000).toFixed(2)}M
+
+KEY METRICS
+───────────
+Revenue per Seat: $${Math.round(totalRevenue / TOTAL_CAPACITY).toLocaleString()}
+Premium Seating %: ${Math.round((suitesPct + clubPct))}%
+Accessibility Score: ${gaPct}/100
+
+STRATEGIC INSIGHTS
+──────────────────
+`;
+
+            const insights = document.querySelectorAll('#insights-list .insight-item');
+            insights.forEach((item, i) => {
+                content += `${i + 1}. ${item.textContent.replace('💡 ', '')}\n`;
+            });
+
+            content += `\n\nGenerated: ${new Date().toLocaleString()}
+Business of Sports Marketing - Week 1 Module 3
+`;
+
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'stadium-revenue-analysis.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Initialize on load
+        updateSeating();
+    </script>
+</body>
+</html>

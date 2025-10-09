@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Empire Builder - 5-Year Simulation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-accent: #c5b783;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-danger: #ef4444;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: var(--color-neutral-500);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .screen {
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        .intro-screen {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro-screen h2 {
+            color: var(--color-neutral-900);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .intro-screen p {
+            color: var(--color-neutral-600);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .scenario-box {
+            background: #fef3c7;
+            border: 2px solid #fbbf24;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .scenario-box h3 {
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .scenario-box ul {
+            margin-left: 1.5rem;
+            color: var(--color-neutral-700);
+            line-height: 1.8;
+        }
+
+        .btn {
+            background: var(--color-neutral-900);
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .btn:hover {
+            background: var(--color-neutral-700);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn:focus {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        .year-header {
+            background: var(--color-neutral-900);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px 12px 0 0;
+            margin-bottom: 0;
+        }
+
+        .year-header h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .year-header .budget {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            font-weight: 700;
+        }
+
+        .allocation-section {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 0 0 12px 12px;
+            padding: 2rem;
+        }
+
+        .stream-card {
+            background: var(--color-neutral-50);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s;
+        }
+
+        .stream-card:hover {
+            border-color: var(--color-neutral-400);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .stream-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .stream-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .stream-icon {
+            font-size: 2rem;
+        }
+
+        .stream-description {
+            color: var(--color-neutral-600);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .slider {
+            flex: 1;
+            height: 8px;
+            border-radius: 4px;
+            background: var(--color-neutral-200);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--color-neutral-900);
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--color-neutral-900);
+            cursor: pointer;
+            border: none;
+        }
+
+        .slider:focus {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        .amount-display {
+            min-width: 120px;
+            text-align: right;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--color-neutral-900);
+        }
+
+        .allocation-summary {
+            background: #f0f9ff;
+            border: 2px solid #0ea5e9;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .summary-label {
+            color: var(--color-neutral-700);
+            font-weight: 600;
+        }
+
+        .summary-value {
+            color: var(--color-neutral-900);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .risk-meter {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #bae6fd;
+        }
+
+        .risk-label {
+            color: var(--color-neutral-700);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .risk-bar {
+            height: 30px;
+            background: linear-gradient(to right, #10b981, #f59e0b, #ef4444);
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .risk-indicator {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: var(--color-neutral-900);
+            transition: left 0.3s;
+        }
+
+        .risk-text {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .event-screen {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .event-icon {
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .event-screen h2 {
+            color: var(--color-neutral-900);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .event-description {
+            color: var(--color-neutral-600);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .choices {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .choice-btn {
+            background: white;
+            border: 2px solid var(--color-neutral-300);
+            border-radius: 8px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: left;
+        }
+
+        .choice-btn:hover {
+            border-color: var(--color-neutral-900);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .choice-btn:focus {
+            outline: 3px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        .choice-title {
+            font-weight: 700;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .choice-description {
+            color: var(--color-neutral-600);
+            font-size: 0.95rem;
+        }
+
+        .results-screen {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 3rem;
+        }
+
+        .final-score {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .final-score h2 {
+            font-size: 2.5rem;
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+        }
+
+        .score-value {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .score-label {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+        }
+
+        .performance-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .performance-card {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .performance-card h3 {
+            color: var(--color-neutral-700);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .performance-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .insights {
+            background: #f0fdf4;
+            border: 2px solid #10b981;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .insights h3 {
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .insights ul {
+            margin-left: 1.5rem;
+            color: var(--color-neutral-700);
+            line-height: 2;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-neutral-900);
+            border: 2px solid var(--color-neutral-300);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-neutral-50);
+            border-color: var(--color-neutral-900);
+        }
+
+        @media (max-width: 768px) {
+            .performance-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏟️ Revenue Empire Builder</h1>
+        <p class="subtitle">Build and manage a professional sports team's revenue strategy over 5 years</p>
+
+        <!-- Intro Screen -->
+        <div class="screen active" id="intro-screen">
+            <div class="intro-screen">
+                <h2>Welcome, CFO!</h2>
+                <p>You've just been appointed as the Chief Financial Officer of a mid-market professional sports team. Your mission: maximize revenue over the next 5 years through strategic investment across five major revenue streams.</p>
+
+                <div class="scenario-box">
+                    <h3>Your Challenge:</h3>
+                    <ul>
+                        <li><strong>Initial Budget:</strong> $50 million to allocate in Year 1</li>
+                        <li><strong>Goal:</strong> Grow total annual revenue to $200+ million by Year 5</li>
+                        <li><strong>Constraint:</strong> Balance risk vs. growth potential</li>
+                        <li><strong>Wildcards:</strong> Respond to market events and opportunities</li>
+                    </ul>
+                </div>
+
+                <p>Each revenue stream has different characteristics:</p>
+                <ul style="margin-left: 1.5rem; color: var(--color-neutral-600); line-height: 1.8; margin-bottom: 2rem;">
+                    <li><strong>Media Rights:</strong> Stable, long-term contracts (low risk, moderate growth)</li>
+                    <li><strong>Ticketing:</strong> Capacity-limited (low risk, low growth ceiling)</li>
+                    <li><strong>Sponsorship:</strong> Relationship-driven (moderate risk, high growth)</li>
+                    <li><strong>Merchandising:</strong> Performance-dependent (moderate risk, moderate growth)</li>
+                    <li><strong>Betting/Gaming:</strong> Emerging frontier (high risk, very high growth)</li>
+                </ul>
+
+                <button class="btn" onclick="startSimulation()" aria-label="Start the 5-year revenue simulation">Start Simulation</button>
+            </div>
+        </div>
+
+        <!-- Year Allocation Screens (1-5) -->
+        <div class="screen" id="year-screen">
+            <div class="year-header">
+                <h2 id="year-title">Year 1: Initial Investment</h2>
+                <div class="budget" id="year-budget">Budget: $50,000,000</div>
+            </div>
+            <div class="allocation-section">
+                <div id="streams-container"></div>
+
+                <div class="allocation-summary">
+                    <div class="summary-grid">
+                        <div class="summary-item">
+                            <span class="summary-label">Total Allocated:</span>
+                            <span class="summary-value" id="total-allocated">$0</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="summary-label">Remaining:</span>
+                            <span class="summary-value" id="remaining-budget">$50,000,000</span>
+                        </div>
+                    </div>
+
+                    <div class="risk-meter">
+                        <label class="risk-label">Portfolio Risk Level</label>
+                        <div class="risk-bar">
+                            <div class="risk-indicator" id="risk-indicator"></div>
+                        </div>
+                        <div class="risk-text" id="risk-text">Balanced</div>
+                    </div>
+                </div>
+
+                <button class="btn" onclick="confirmAllocation()" style="margin-top: 2rem; display: block; margin-left: auto; margin-right: auto;" aria-label="Confirm year allocation and continue">Confirm Allocation</button>
+            </div>
+        </div>
+
+        <!-- Event Screen -->
+        <div class="screen" id="event-screen">
+            <div class="event-screen">
+                <div class="event-icon" id="event-icon">⚡</div>
+                <h2 id="event-title">Market Event</h2>
+                <p class="event-description" id="event-description"></p>
+                <div class="choices" id="event-choices"></div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="screen" id="results-screen">
+            <div class="results-screen">
+                <div class="final-score">
+                    <h2>5-Year Performance Summary</h2>
+                    <div class="score-value" id="final-revenue">$0</div>
+                    <div class="score-label">Total Annual Revenue (Year 5)</div>
+                </div>
+
+                <div class="performance-grid">
+                    <div class="performance-card">
+                        <h3>Revenue Growth</h3>
+                        <div class="performance-value" id="growth-rate">0%</div>
+                    </div>
+                    <div class="performance-card">
+                        <h3>Risk Score</h3>
+                        <div class="performance-value" id="final-risk">0</div>
+                    </div>
+                    <div class="performance-card">
+                        <h3>Grade</h3>
+                        <div class="performance-value" id="final-grade">-</div>
+                    </div>
+                </div>
+
+                <div class="insights">
+                    <h3>Strategic Insights</h3>
+                    <ul id="insights-list"></ul>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" onclick="location.reload()" aria-label="Restart simulation from beginning">Play Again</button>
+                    <button class="btn" onclick="exportResults()" aria-label="Download your performance summary">Download Summary</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Game State
+        const gameState = {
+            currentYear: 1,
+            budget: 50000000,
+            totalRevenue: 100000000,
+            yearlyAllocations: [],
+            events: [],
+            streams: [
+                {
+                    id: 'media',
+                    name: 'Media Rights',
+                    icon: '📺',
+                    description: 'Broadcasting and streaming deals. Stable, long-term revenue with moderate growth.',
+                    riskLevel: 2,
+                    growthRate: 1.08,
+                    allocation: 0
+                },
+                {
+                    id: 'ticketing',
+                    name: 'Ticketing',
+                    icon: '🎟️',
+                    description: 'Gate receipts and premium seating. Capacity-limited with stable returns.',
+                    riskLevel: 1,
+                    growthRate: 1.05,
+                    allocation: 0
+                },
+                {
+                    id: 'sponsorship',
+                    name: 'Sponsorship',
+                    icon: '🤝',
+                    description: 'Corporate partnerships and naming rights. Relationship-driven with high potential.',
+                    riskLevel: 3,
+                    growthRate: 1.12,
+                    allocation: 0
+                },
+                {
+                    id: 'merchandising',
+                    name: 'Merchandising',
+                    icon: '👕',
+                    description: 'Apparel and licensed products. Performance-dependent with moderate growth.',
+                    riskLevel: 3,
+                    growthRate: 1.10,
+                    allocation: 0
+                },
+                {
+                    id: 'betting',
+                    name: 'Betting/Gaming',
+                    icon: '🎲',
+                    description: 'Sports betting partnerships. Emerging frontier with highest growth and risk.',
+                    riskLevel: 5,
+                    growthRate: 1.35,
+                    allocation: 0
+                }
+            ],
+            marketEvents: [
+                {
+                    year: 2,
+                    icon: '📱',
+                    title: 'Streaming Service Opportunity',
+                    description: 'A major streaming platform offers a 3-year media rights deal worth $15M/year, but it requires giving up some traditional broadcast revenue. Your current traditional deal generates $12M/year.',
+                    choices: [
+                        { text: 'Accept Streaming Deal (+$15M/year, -10% traditional media)', impact: { media: 1.15, risk: 0.1 } },
+                        { text: 'Decline and Renew Traditional Deal (keep $12M/year, no risk)', impact: { media: 1.05, risk: 0 } },
+                        { text: 'Negotiate Hybrid Deal (+$13M streaming + $6M traditional)', impact: { media: 1.10, risk: 0.05 } }
+                    ]
+                },
+                {
+                    year: 3,
+                    icon: '💼',
+                    title: 'Sponsorship Partnership Opportunity',
+                    description: 'A major financial institution wants to become your title sponsor for $8M/year, but they require exclusive category rights (blocking other financial sponsors).',
+                    choices: [
+                        { text: 'Accept Exclusive Deal (+$8M/year, lock out other financial brands)', impact: { sponsorship: 1.20, risk: 0.15 } },
+                        { text: 'Decline and Keep Category Open (maintain flexibility)', impact: { sponsorship: 1.05, risk: 0 } },
+                        { text: 'Counter-Offer Non-Exclusive Deal (+$5M/year, keep flexibility)', impact: { sponsorship: 1.10, risk: 0.05 } }
+                    ]
+                },
+                {
+                    year: 4,
+                    icon: '⚠️',
+                    title: 'Economic Downturn',
+                    description: 'An economic recession hits. Consumer spending is down 15%, and corporate marketing budgets are being slashed. How do you respond?',
+                    choices: [
+                        { text: 'Double Down on Fan Experience (invest $5M in ticketing upgrades)', impact: { ticketing: 0.95, sponsorship: 0.85, risk: 0.2 } },
+                        { text: 'Cut Costs and Weather the Storm (reduce all investments 20%)', impact: { all: 0.90, risk: -0.1 } },
+                        { text: 'Pivot to Digital/Betting Revenue (shift $8M to betting)', impact: { betting: 1.30, sponsorship: 0.80, risk: 0.25 } }
+                    ]
+                },
+                {
+                    year: 5,
+                    icon: '🏆',
+                    title: 'Championship Run',
+                    description: 'Your team makes a deep playoff run! Merchandise sales spike, media viewership increases, and sponsors want renewed deals. How do you capitalize?',
+                    choices: [
+                        { text: 'Lock in Long-Term Deals Now (secure 10% premium on all renewals)', impact: { all: 1.15, risk: 0 } },
+                        { text: 'Hold Out for Better Offers (risk missing the window for 20% premium)', impact: { all: 1.25, risk: 0.3 } },
+                        { text: 'Balanced Approach (renew key deals, negotiate others)', impact: { all: 1.18, risk: 0.1 } }
+                    ]
+                }
+            ]
+        };
+
+        function startSimulation() {
+            showScreen('year-screen');
+            renderYearScreen(1);
+        }
+
+        function renderYearScreen(year) {
+            gameState.currentYear = year;
+
+            const yearTitle = year === 1 ? 'Year 1: Initial Investment' : `Year ${year}: Reinvestment Strategy`;
+            const budget = year === 1 ? 50000000 : gameState.totalRevenue * 0.25; // 25% of previous year revenue
+            gameState.budget = budget;
+
+            document.getElementById('year-title').textContent = yearTitle;
+            document.getElementById('year-budget').textContent = `Budget: ${formatCurrency(budget)}`;
+
+            const container = document.getElementById('streams-container');
+            container.innerHTML = '';
+
+            gameState.streams.forEach(stream => {
+                const card = document.createElement('div');
+                card.className = 'stream-card';
+                card.innerHTML = `
+                    <div class="stream-header">
+                        <div>
+                            <span class="stream-icon">${stream.icon}</span>
+                            <span class="stream-title">${stream.name}</span>
+                        </div>
+                    </div>
+                    <div class="stream-description">${stream.description}</div>
+                    <div class="slider-container">
+                        <input type="range"
+                               class="slider"
+                               id="slider-${stream.id}"
+                               min="0"
+                               max="${budget}"
+                               step="1000000"
+                               value="${stream.allocation}"
+                               oninput="updateAllocation('${stream.id}', this.value)"
+                               aria-label="Allocate budget to ${stream.name}">
+                        <div class="amount-display" id="amount-${stream.id}">$0</div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            updateSummary();
+        }
+
+        function updateAllocation(streamId, value) {
+            const stream = gameState.streams.find(s => s.id === streamId);
+            stream.allocation = parseInt(value);
+
+            document.getElementById(`amount-${streamId}`).textContent = formatCurrency(value);
+            updateSummary();
+        }
+
+        function updateSummary() {
+            const totalAllocated = gameState.streams.reduce((sum, s) => sum + s.allocation, 0);
+            const remaining = gameState.budget - totalAllocated;
+
+            document.getElementById('total-allocated').textContent = formatCurrency(totalAllocated);
+            document.getElementById('remaining-budget').textContent = formatCurrency(remaining);
+
+            // Calculate risk
+            const totalRisk = gameState.streams.reduce((sum, s) => {
+                const weight = s.allocation / totalAllocated || 0;
+                return sum + (s.riskLevel * weight);
+            }, 0);
+
+            const riskPercentage = (totalRisk / 5) * 100;
+            document.getElementById('risk-indicator').style.left = `${riskPercentage}%`;
+
+            let riskLabel = 'Balanced';
+            if (totalRisk < 2) riskLabel = 'Very Low Risk';
+            else if (totalRisk < 2.5) riskLabel = 'Low Risk';
+            else if (totalRisk < 3.5) riskLabel = 'Balanced';
+            else if (totalRisk < 4.5) riskLabel = 'High Risk';
+            else riskLabel = 'Very High Risk';
+
+            document.getElementById('risk-text').textContent = riskLabel;
+        }
+
+        function confirmAllocation() {
+            const totalAllocated = gameState.streams.reduce((sum, s) => sum + s.allocation, 0);
+
+            if (totalAllocated < gameState.budget * 0.8) {
+                alert('You should allocate at least 80% of your budget to maximize growth.');
+                return;
+            }
+
+            // Save allocation
+            gameState.yearlyAllocations.push({
+                year: gameState.currentYear,
+                allocations: gameState.streams.map(s => ({ ...s }))
+            });
+
+            // Calculate revenue growth
+            gameState.streams.forEach(stream => {
+                const weight = stream.allocation / totalAllocated;
+                gameState.totalRevenue *= (1 + ((stream.growthRate - 1) * weight));
+            });
+
+            // Check for event
+            const event = gameState.marketEvents.find(e => e.year === gameState.currentYear + 1);
+
+            if (event) {
+                showEvent(event);
+            } else if (gameState.currentYear < 5) {
+                gameState.currentYear++;
+                renderYearScreen(gameState.currentYear);
+            } else {
+                showResults();
+            }
+        }
+
+        function showEvent(event) {
+            document.getElementById('event-icon').textContent = event.icon;
+            document.getElementById('event-title').textContent = event.title;
+            document.getElementById('event-description').textContent = event.description;
+
+            const choicesContainer = document.getElementById('event-choices');
+            choicesContainer.innerHTML = '';
+
+            event.choices.forEach((choice, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'choice-btn';
+                btn.setAttribute('aria-label', `Choice ${index + 1}: ${choice.text}`);
+                btn.innerHTML = `
+                    <div class="choice-title">Option ${index + 1}</div>
+                    <div class="choice-description">${choice.text}</div>
+                `;
+                btn.onclick = () => handleEventChoice(choice.impact);
+                choicesContainer.appendChild(btn);
+            });
+
+            showScreen('event-screen');
+        }
+
+        function handleEventChoice(impact) {
+            if (impact.all) {
+                gameState.streams.forEach(s => {
+                    s.growthRate *= impact.all;
+                });
+            } else {
+                Object.keys(impact).forEach(streamId => {
+                    if (streamId !== 'risk') {
+                        const stream = gameState.streams.find(s => s.id === streamId);
+                        if (stream) {
+                            stream.growthRate *= impact[streamId];
+                        }
+                    }
+                });
+            }
+
+            gameState.currentYear++;
+
+            if (gameState.currentYear <= 5) {
+                renderYearScreen(gameState.currentYear);
+                showScreen('year-screen');
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            const initialRevenue = 100000000;
+            const finalRevenue = gameState.totalRevenue;
+            const growthRate = ((finalRevenue - initialRevenue) / initialRevenue * 100).toFixed(1);
+
+            // Calculate risk score
+            const avgRisk = gameState.streams.reduce((sum, s) => sum + s.riskLevel, 0) / gameState.streams.length;
+
+            // Calculate grade
+            let grade = 'F';
+            if (finalRevenue >= 250000000) grade = 'A+';
+            else if (finalRevenue >= 225000000) grade = 'A';
+            else if (finalRevenue >= 200000000) grade = 'B+';
+            else if (finalRevenue >= 175000000) grade = 'B';
+            else if (finalRevenue >= 150000000) grade = 'C';
+            else if (finalRevenue >= 125000000) grade = 'D';
+
+            document.getElementById('final-revenue').textContent = formatCurrency(finalRevenue);
+            document.getElementById('growth-rate').textContent = `+${growthRate}%`;
+            document.getElementById('final-risk').textContent = avgRisk.toFixed(1) + '/5';
+            document.getElementById('final-grade').textContent = grade;
+
+            // Generate insights
+            const insights = [];
+            if (finalRevenue >= 200000000) {
+                insights.push('Excellent revenue growth! You successfully balanced risk and opportunity.');
+            } else if (finalRevenue >= 150000000) {
+                insights.push('Good performance. Consider more aggressive investments in high-growth streams.');
+            } else {
+                insights.push('Revenue growth was below target. Review your allocation strategy and event decisions.');
+            }
+
+            const bettingAllocation = gameState.yearlyAllocations.reduce((sum, y) => {
+                const betting = y.allocations.find(a => a.id === 'betting');
+                return sum + (betting ? betting.allocation : 0);
+            }, 0);
+
+            if (bettingAllocation > 50000000) {
+                insights.push('Your aggressive betting strategy paid off with high growth, but carried significant risk.');
+            }
+
+            const mediaAllocation = gameState.yearlyAllocations.reduce((sum, y) => {
+                const media = y.allocations.find(a => a.id === 'media');
+                return sum + (media ? media.allocation : 0);
+            }, 0);
+
+            if (mediaAllocation > 75000000) {
+                insights.push('Heavy media rights investment provided stability, though growth was more conservative.');
+            }
+
+            if (avgRisk > 3.5) {
+                insights.push('Your high-risk portfolio created volatility. Diversification could have reduced exposure.');
+            } else if (avgRisk < 2.5) {
+                insights.push('Your conservative approach minimized risk but may have limited growth potential.');
+            }
+
+            const insightsList = document.getElementById('insights-list');
+            insightsList.innerHTML = '';
+            insights.forEach(insight => {
+                const li = document.createElement('li');
+                li.textContent = insight;
+                insightsList.appendChild(li);
+            });
+
+            showScreen('results-screen');
+        }
+
+        function exportResults() {
+            const finalRevenue = gameState.totalRevenue;
+            const initialRevenue = 100000000;
+            const growthRate = ((finalRevenue - initialRevenue) / initialRevenue * 100).toFixed(1);
+
+            let content = `
+REVENUE EMPIRE BUILDER - PERFORMANCE SUMMARY
+═══════════════════════════════════════════════
+
+FINAL RESULTS
+─────────────
+Final Revenue (Year 5): ${formatCurrency(finalRevenue)}
+Initial Revenue: ${formatCurrency(initialRevenue)}
+Growth Rate: +${growthRate}%
+Grade: ${document.getElementById('final-grade').textContent}
+
+YEARLY ALLOCATIONS
+──────────────────
+`;
+
+            gameState.yearlyAllocations.forEach(year => {
+                content += `\nYear ${year.year}:\n`;
+                year.allocations.forEach(stream => {
+                    if (stream.allocation > 0) {
+                        content += `  ${stream.name}: ${formatCurrency(stream.allocation)}\n`;
+                    }
+                });
+            });
+
+            content += `\n\nSTRATEGIC INSIGHTS
+──────────────────\n`;
+            const insights = document.querySelectorAll('#insights-list li');
+            insights.forEach((li, i) => {
+                content += `${i + 1}. ${li.textContent}\n`;
+            });
+
+            content += `\n\nGenerated: ${new Date().toLocaleString()}
+Business of Sports Marketing - Week 1 Module 4
+`;
+
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'revenue-empire-builder-results.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function formatCurrency(value) {
+            return '$' + parseInt(value).toLocaleString();
+        }
+    </script>
+</body>
+</html>

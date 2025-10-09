@@ -41,23 +41,39 @@ This project involves creating a comprehensive, accessible, and inclusive course
 ```
 business-of-sports-marketing/
 ├── CLAUDE.md (this file)
-├── index.html (main landing page)
+├── index.html (main development storyboard)
+├── course-outline.html (master course outline)
+├── course-index.html (student-facing hub)
 ├── modules/
-│   ├── module-1/
-│   │   ├── index.html
-│   │   └── resources/
-│   ├── module-2/
-│   │   ├── index.html
-│   │   └── resources/
-│   └── ...
+│   ├── week1/  ⬅️ ALL WEEK 1 CONTENT
+│   │   ├── module-1/ (Module 1-5 content, historically misnamed)
+│   │   ├── module-2/
+│   │   ├── module-3/
+│   │   ├── module-4/
+│   │   ├── module-5/
+│   │   ├── text-content/ (markdown reading materials)
+│   │   ├── video-scripts/ (2-min instructional videos)
+│   │   ├── uplimit-week1-storyboard.md
+│   │   └── week1-module3-redesign-v3-interactive.md
+│   ├── week2/  ⬅️ WEEK 2 CONTENT
+│   │   ├── text-content/
+│   │   ├── video-scripts/
+│   │   └── uplimit-week2-storyboard.md
+│   ├── week3/ (placeholder)
+│   ├── week4/ (placeholder)
+│   ├── week5/ (placeholder)
+│   └── shared-resources/ (cross-week materials)
+│       ├── discussion-prompts-and-peer-review-protocols.md
+│       ├── visual-content-specifications.md
+│       └── REMAINING-WORK-REPORT.md
 ├── assets/
 │   ├── css/
 │   ├── js/
 │   └── images/
-└── resources/
-    ├── Course Proposal/
-    └── Educational Principles/
+└── .agents/ (AI subagent templates for QA)
 ```
+
+**Note on Naming**: The course has **weeks** (Week 1-5) but the folder structure historically used "module-1" through "module-5" within Week 1. All 5 modules actually belong to Week 1 content. This has been reorganized into a week-based structure (week1/, week2/, etc.) for clarity.
 
 ## Development Tasks Completed
 - [x] Project initialization and structure planning
@@ -938,3 +954,30 @@ business-of-sports-marketing/
     - Addresses visual learner needs (Sarah: 72/100) through interactive manipulation
     - Addresses time-constrained learner needs (Alex: 78/100) through micro-learning chunks
     - Higher retention and application through active discovery vs. passive reading
+
+- 2025-10-09: Repository Reorganization - Week-Based Folder Structure
+  - **Problem Identified**: Course has "weeks" but folders were named "module-1" through "module-5", causing confusion
+  - **Solution**: Reorganized into week-based hierarchy (modules/week1/, modules/week2/, etc.)
+  - **Changes Made**:
+    - Created week1/, week2/, week3/, week4/, week5/ folders under modules/
+    - Moved all module-1 through module-5 folders into modules/week1/ (all belong to Week 1)
+    - Moved uplimit-week1-storyboard.md into modules/week1/
+    - Moved uplimit-week2-storyboard.md into modules/week2/
+    - Moved text-content/ and video-scripts/ into respective week folders
+    - Created modules/shared-resources/ for cross-week materials
+    - Updated all file references in HTML files (index.html, course-outline.html, course-index.html)
+  - **New Structure**:
+    - modules/week1/ contains 5 module folders + text content + video scripts + storyboard
+    - modules/week2/ contains text content + video scripts + storyboard
+    - modules/shared-resources/ contains discussion prompts, visual specs, work reports
+  - **Benefits**:
+    - Clear week-based navigation for SME and course developers
+    - Eliminates confusion between "week" terminology in storyboards vs "module" in folders
+    - Scales properly for future week additions (Week 3-5 content can be added to week3/, week4/, week5/)
+    - Separates week-specific content from shared course resources
+  - **Files Modified**:
+    - [index.html](index.html) - Updated 5 module outline links
+    - [course-outline.html](course-outline.html) - Updated 5 module outline links
+    - [course-index.html](course-index.html) - Updated 5 widget launch paths + openModule() function
+    - CLAUDE.md - Updated file structure documentation
+  - **Verification**: 37 HTML files and 31 markdown files successfully moved to week1/, all links functional

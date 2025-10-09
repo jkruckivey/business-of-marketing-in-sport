@@ -44,7 +44,11 @@
       "Bash(npm unpublish:*)",
       "Bash(del jameskruck-claude-subagents-2.2.0.tgz)",
       "Bash(npm cache clean:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(mv:*)",
+      "Bash(cp:*)",
+      "Bash(awk:*)",
+      "Bash(tree:*)"
     ],
     "deny": [],
     "ask": [],

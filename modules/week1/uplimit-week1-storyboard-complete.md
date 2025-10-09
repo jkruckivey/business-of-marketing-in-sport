@@ -712,7 +712,7 @@ Total non-ticket revenue can reach **$40-50 per attendee** (concessions $15-30, 
 
 ---
 
-### Section 4: Sponsorship & Merchandising (Elements 19-24)
+### Section 4: Sponsorship & Merchandising (Elements 19-24a)
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
@@ -722,6 +722,7 @@ Total non-ticket revenue can reach **$40-50 per attendee** (concessions $15-30, 
 | 22 | **Image** 🟡 Recommended | Sponsorship activation pyramid | 1 min | - | Upload `sponsorship-activation-pyramid.png` |
 | 23 | **Text** 🔴 Required | Merchandising models | 1 min | 100 | Type directly |
 | 24 | **Tiles** 🟡 Recommended | 3 merchandising spikes | 1 min | - | Type directly |
+| 24a | **🎮 iFrame Widget** 🟡 Recommended | **Revenue Canvas Builder** | 5 min | - | Embed `revenue-canvas-builder.html` |
 
 #### Element 19: Video - Sponsorship & Merchandising Overview
 - **File:** `week1-video2-sponsorship-merch.mp4`
@@ -833,6 +834,61 @@ Create 3 tiles (1x3 horizontal layout):
 
 **Tile 3 - Title:** "🎨 Limited Designs"
 **Tile 3 - Description:** "Special edition jerseys (City Edition, throwbacks, collaborations) create artificial scarcity and drive $100M+ in annual revenue."
+
+#### Element 24a: iFrame Widget - Revenue Canvas Builder
+
+### 🎯 Interactive Activity: Revenue Canvas Builder
+
+**Practice: MLO 1.1 (Map major revenue streams) & MLO 1.3 (Analyze revenue allocation and strategy)**
+
+Now that you've explored all revenue streams individually, it's time to build a complete revenue model. This canvas builder helps you visualize how different revenue streams work together in a professional sports organization.
+
+In this activity, you'll allocate percentages across six revenue categories (Media Rights, Sponsorship, Ticketing, Merchandising, Betting/Gaming, Other), identify top sponsorship opportunities, and generate a complete revenue model canvas. This tool is especially valuable for your Anchor Project work.
+
+**What you'll discover:**
+- How to allocate revenue strategically across multiple streams
+- Why percentage validation matters (must total 100%)
+- How to identify and justify sponsorship opportunities
+- How to create exportable revenue models for strategic planning
+
+**Time commitment:** 5 minutes
+**Learning outcomes practiced:** MLO 1.1 (Mapping all revenue streams), MLO 1.3 (Strategic revenue allocation)
+
+---
+
+**Widget Purpose:** Build a complete revenue model canvas with percentage allocation and sponsorship opportunity identification.
+
+**Widget Status:** ✅ Built and Ready (located in module-3/widgets/)
+
+**File Location:** `modules/week1/module-3/widgets/revenue-canvas-builder.html`
+
+**How It Works:**
+- **Section 1:** Enter property information (name, timeframe, total revenue estimate)
+- **Section 2:** Allocate percentages across 6 revenue categories with real-time validation (must = 100%)
+- **Section 3:** Identify top 3 sponsorship opportunities with strategic rationale
+- **Output:** Generate and download complete revenue model canvas as text file
+- **Anchor Project Integration:** Canvas designed for Week 3 deliverable preparation
+
+**Uplimit Implementation:**
+```html
+<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/module-3/widgets/revenue-canvas-builder.html"
+        width="900"
+        height="900"
+        title="Revenue Canvas Builder - Build complete revenue model"
+        frameborder="0"
+        allowfullscreen>
+</iframe>
+```
+
+**Accessibility:**
+- ✅ Keyboard navigation for all inputs
+- ✅ ARIA labels on all form controls
+- ✅ Real-time validation feedback
+- ✅ Screen reader compatible
+- ✅ High contrast mode support
+- ✅ WCAG 2.2 AA compliant
+
+**Pedagogical Note:** This widget bridges individual revenue stream learning with holistic strategic planning. It's particularly useful for students working on the Anchor Project, as it provides a structured framework for revenue model development.
 
 ---
 
@@ -1762,6 +1818,15 @@ sport business, they're excellent resources.
 - **Priority:** Optional (Module 3, Element 26)
 - **Location:** `module-3/widgets/betting-market-simulator.html`
 
+#### 9. Revenue Canvas Builder ✅ COMPLETE
+- **File:** `revenue-canvas-builder.html`
+- **Status:** Built and ready
+- **Build Time:** 6 hours
+- **Priority:** Recommended (Module 3, Element 24a)
+- **Location:** `module-3/widgets/revenue-canvas-builder.html`
+- **Accessibility:** WCAG 2.2 AA compliant
+- **Special Features:** Percentage validation, sponsorship opportunity builder, exportable canvas
+
 ### Widget Base Template
 
 All widgets use consistent structure:
@@ -1989,7 +2054,7 @@ Verify that every element serves the MLOs:
 ## Summary: Week 1 Complete Build Specifications
 
 **Total Modules:** 7
-**Total Elements:** ~55 (across all modules)
+**Total Elements:** ~56 (across all modules)
 
 **Element Breakdown:**
 - **Infoboxes:** 7 (various variants)
@@ -2000,11 +2065,12 @@ Verify that every element serves the MLOs:
 - **Vertical List:** 1 (5 items)
 - **Tables:** 2 (Streaming vs Traditional, NHL revenue sharing)
 - **Details:** 10+ accordions
-- **iFrame Widgets:** 9 total (8 in Module 3, 1 in Module 4)
+- **iFrame Widgets:** 10 total (9 in Module 3, 1 in Module 4)
   - ✅ Phase 1 complete: 3 widgets
-  - ✅ Phase 2 complete: 3 widgets
-  - ⭕ Phase 3 pending: 2 widgets
-  - ☐ Module 4: 1 widget to build
+  - ✅ Phase 2 complete: 3 widgets (Media Rights Calculator, Sponsorship ROI Calculator, Revenue Canvas Builder)
+  - ✅ Phase 3 complete: 1 widget (Betting Market Simulator)
+  - ⭕ Phase 3 pending: 2 widgets (Streaming Wars Game, Stadium Revenue Optimizer)
+  - ☐ Module 4: 1 widget to build (Revenue Empire Builder)
 - **AI Chat Widgets:** 3
 - **Text Response:** 1 (with comprehensive rubric)
 - **Images:** 5

@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Knowledge Pre-Assessment Quiz</title>
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-success: #22c55e;
+            --color-error: #ef4444;
+            --color-warning: #f59e0b;
+            --color-info: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--color-neutral-200);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: var(--color-neutral-600);
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background: var(--color-neutral-100);
+            border-left: 4px solid var(--color-info);
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: var(--color-neutral-700);
+        }
+
+        .question-container {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: var(--color-neutral-50);
+            border-radius: 8px;
+            border: 1px solid var(--color-neutral-200);
+        }
+
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .question-number {
+            display: inline-block;
+            background: var(--color-neutral-800);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .question-type {
+            font-size: 12px;
+            color: var(--color-neutral-500);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .question-text {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--color-neutral-900);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option {
+            padding: 15px 20px;
+            background: white;
+            border: 2px solid var(--color-neutral-300);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .option:hover {
+            border-color: var(--color-neutral-500);
+            background: var(--color-neutral-50);
+        }
+
+        .option input[type="radio"],
+        .option input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .option.selected {
+            border-color: var(--color-neutral-800);
+            background: var(--color-neutral-100);
+        }
+
+        .option.correct {
+            border-color: var(--color-success);
+            background: #f0fdf4;
+        }
+
+        .option.incorrect {
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 15px;
+            border: 2px solid var(--color-neutral-300);
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 14px;
+            resize: vertical;
+            transition: border-color 0.2s ease;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--color-neutral-700);
+        }
+
+        .feedback {
+            margin-top: 20px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+            display: none;
+        }
+
+        .feedback.show {
+            display: block;
+        }
+
+        .feedback.correct {
+            background: #f0fdf4;
+            border-left: 4px solid var(--color-success);
+            color: var(--color-neutral-900);
+        }
+
+        .feedback.incorrect {
+            background: #fef2f2;
+            border-left: 4px solid var(--color-error);
+            color: var(--color-neutral-900);
+        }
+
+        .feedback strong {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .submit-btn {
+            background: var(--color-neutral-800);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background: var(--color-neutral-700);
+        }
+
+        .submit-btn:disabled {
+            background: var(--color-neutral-400);
+            cursor: not-allowed;
+        }
+
+        .results-container {
+            display: none;
+            margin-top: 40px;
+            padding: 40px;
+            background: var(--color-neutral-50);
+            border-radius: 12px;
+            border: 2px solid var(--color-neutral-300);
+        }
+
+        .results-container.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            border: 12px solid var(--color-neutral-200);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .score-label {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--color-neutral-600);
+            margin-top: 5px;
+        }
+
+        .level-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .level-badge.newcomer {
+            background: var(--color-neutral-200);
+            color: var(--color-neutral-900);
+        }
+
+        .level-badge.intuition {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .level-badge.expert {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .level-badge.insider {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .learning-path {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .learning-path h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: var(--color-neutral-900);
+        }
+
+        .learning-path ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .learning-path li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: var(--color-neutral-700);
+        }
+
+        .learning-path li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--color-neutral-500);
+            font-weight: bold;
+        }
+
+        .outcome-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .outcome-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--color-neutral-200);
+        }
+
+        .outcome-card h4 {
+            font-size: 14px;
+            color: var(--color-neutral-600);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .outcome-score {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--color-neutral-200);
+            border-radius: 4px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--color-neutral-800);
+            transition: width 0.5s ease;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .question-text {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Revenue Knowledge Pre-Assessment</h1>
+            <p class="subtitle">Test your understanding of sport revenue ecosystems</p>
+            <div class="info-box">
+                <strong>This quiz is not graded.</strong> It's a self-diagnostic tool to help you understand what you already know and where to focus your energy this week. Answer honestly to get the most helpful personalized learning path.
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <!-- Question 1: Multiple Choice -->
+            <div class="question-container" data-question="1" data-outcome="MLO1.1">
+                <div class="question-header">
+                    <span class="question-number">Question 1 of 10</span>
+                    <span class="question-type">Multiple Choice</span>
+                </div>
+                <div class="question-text">Which revenue stream accounts for the largest percentage of total revenue for most major professional leagues?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q1" value="A">
+                        <span>A) Ticketing and attendance (20-30%)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="B">
+                        <span>B) Media rights (40-60%)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="C">
+                        <span>C) Sponsorship and partnerships (15-25%)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="D">
+                        <span>D) Merchandising and licensing (5-10%)</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(1, 'B')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 2: Short Answer -->
+            <div class="question-container" data-question="2" data-outcome="MLO1.2">
+                <div class="question-header">
+                    <span class="question-number">Question 2 of 10</span>
+                    <span class="question-type">Short Answer</span>
+                </div>
+                <div class="question-text">In 2-3 sentences, explain why professional sports teams share revenue with their competitors.</div>
+                <textarea id="q2-answer" placeholder="Type your answer here..."></textarea>
+                <button class="submit-btn" onclick="checkShortAnswer(2)">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 3: Scenario -->
+            <div class="question-container" data-question="3" data-outcome="MLO1.3">
+                <div class="question-header">
+                    <span class="question-number">Question 3 of 10</span>
+                    <span class="question-type">Scenario Analysis</span>
+                </div>
+                <div class="question-text">The Edmonton Oilers sign Connor McDavid to an 8-year, $100 million contract ($12.5M/year). Direct revenue increases: ticket sales +$5M/year, jersey sales +$3M/year (total = $8M/year). Based on these numbers alone, is this a good investment? Why or why not?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q3" value="A">
+                        <span>A) No, the team loses $4.5M/year ($12.5M cost - $8M revenue)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="B">
+                        <span>B) Yes, ticket and jersey sales cover most of the salary</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="C">
+                        <span>C) Can't determine without knowing indirect effects on other revenue streams</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="D">
+                        <span>D) Yes, because star players always generate positive ROI</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(3, 'C')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 4: True/False -->
+            <div class="question-container" data-question="4" data-outcome="MLO1.1">
+                <div class="question-header">
+                    <span class="question-number">Question 4 of 10</span>
+                    <span class="question-type">True/False</span>
+                </div>
+                <div class="question-text">Betting legalization creates only one new revenue stream for leagues: betting partnerships. True or False?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q4" value="True">
+                        <span>True</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="False">
+                        <span>False</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(4, 'False')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 5: Ranking -->
+            <div class="question-container" data-question="5" data-outcome="MLO1.3">
+                <div class="question-header">
+                    <span class="question-number">Question 5 of 10</span>
+                    <span class="question-type">Knowledge Check</span>
+                </div>
+                <div class="question-text">Which revenue stream currently has the highest annual growth rate?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q5" value="A">
+                        <span>A) Ticketing (flat to declining)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="B">
+                        <span>B) Media rights (5-10% growth)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="C">
+                        <span>C) Betting and gaming (30-40% growth)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q5" value="D">
+                        <span>D) Merchandising (3-5% growth)</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(5, 'C')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 6: Multiple Choice -->
+            <div class="question-container" data-question="6" data-outcome="MLO1.2">
+                <div class="question-header">
+                    <span class="question-number">Question 6 of 10</span>
+                    <span class="question-type">Multiple Choice</span>
+                </div>
+                <div class="question-text">What makes sports broadcasting rights more valuable than scripted television programming?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q6" value="A">
+                        <span>A) Larger total audience size</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q6" value="B">
+                        <span>B) "Appointment viewing" drives simultaneous audiences and higher ad rates</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q6" value="C">
+                        <span>C) Lower production costs</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q6" value="D">
+                        <span>D) Longer contract durations</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(6, 'B')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 7: Application -->
+            <div class="question-container" data-question="7" data-outcome="MLO1.4">
+                <div class="question-header">
+                    <span class="question-number">Question 7 of 10</span>
+                    <span class="question-type">Application</span>
+                </div>
+                <div class="question-text">The Vancouver Canucks (mid-market team) participate in the NHL's revenue sharing system. What is one advantage and one disadvantage for the Canucks?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q7" value="A">
+                        <span>A) Advantage: Keep all local revenue. Disadvantage: Must share media rights.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q7" value="B">
+                        <span>B) Advantage: Receive equal share of national media. Disadvantage: Limits entrepreneurial upside from local success.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q7" value="C">
+                        <span>C) Advantage: No revenue sharing required. Disadvantage: Compete against wealthier teams.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q7" value="D">
+                        <span>D) Advantage: Higher ticket prices. Disadvantage: Lower merchandise sales.</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(7, 'B')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 8: Concept -->
+            <div class="question-container" data-question="8" data-outcome="MLO1.2">
+                <div class="question-header">
+                    <span class="question-number">Question 8 of 10</span>
+                    <span class="question-type">Concept Understanding</span>
+                </div>
+                <div class="question-text">What does "revenue ecosystem" mean in professional sport?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q8" value="A">
+                        <span>A) Revenue streams operate independently and don't affect each other</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q8" value="B">
+                        <span>B) Investment in one stream creates positive effects across other streams</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q8" value="C">
+                        <span>C) Teams share all revenue equally</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q8" value="D">
+                        <span>D) Fans are the only source of revenue</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(8, 'B')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 9: Data Interpretation -->
+            <div class="question-container" data-question="9" data-outcome="MLO1.3">
+                <div class="question-header">
+                    <span class="question-number">Question 9 of 10</span>
+                    <span class="question-type">Data Interpretation</span>
+                </div>
+                <div class="question-text">Premium seating (luxury suites, club seats) represents only 10-15% of venue capacity. What percentage of total ticketing revenue does it generate?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q9" value="A">
+                        <span>A) 10-15% (proportional to capacity)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q9" value="B">
+                        <span>B) 25-30%</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q9" value="C">
+                        <span>C) 40-50%</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q9" value="D">
+                        <span>D) 60-70%</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(9, 'C')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 10: Strategic Thinking -->
+            <div class="question-container" data-question="10" data-outcome="MLO1.4">
+                <div class="question-header">
+                    <span class="question-number">Question 10 of 10</span>
+                    <span class="question-type">Strategic Thinking</span>
+                </div>
+                <div class="question-text">Why does the NFL share 60% of all revenue equally among teams while European soccer leagues allow teams to keep most local revenue?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q10" value="A">
+                        <span>A) NFL teams are less profitable than soccer clubs</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q10" value="B">
+                        <span>B) NFL prioritizes competitive balance; soccer prioritizes rewarding success</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q10" value="C">
+                        <span>C) Soccer has higher total revenue</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q10" value="D">
+                        <span>D) NFL teams don't generate local revenue</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(10, 'B')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-container" id="results">
+            <div class="score-circle" id="score-display">
+                <div>
+                    <span id="score-number">0</span>/10
+                    <div class="score-label">Your Score</div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <span class="level-badge" id="level-badge">Revenue Newcomer</span>
+                <h2 id="level-title" style="margin-bottom: 20px;"></h2>
+            </div>
+
+            <div class="outcome-breakdown">
+                <div class="outcome-card">
+                    <h4>MLO 1.1: Map Revenue Streams</h4>
+                    <div class="outcome-score" id="outcome-1-1">0/3</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-1-1" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="outcome-card">
+                    <h4>MLO 1.2: Unique Model</h4>
+                    <div class="outcome-score" id="outcome-1-2">0/3</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-1-2" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="outcome-card">
+                    <h4>MLO 1.3: Growth vs. Risk</h4>
+                    <div class="outcome-score" id="outcome-1-3">0/3</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-1-3" style="width: 0%"></div>
+                    </div>
+                </div>
+                <div class="outcome-card">
+                    <h4>MLO 1.4: Revenue Sharing</h4>
+                    <div class="outcome-score" id="outcome-1-4">0/2</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-1-4" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="learning-path" id="learning-path">
+                <h3>Your Personalized Learning Path</h3>
+                <p id="path-description"></p>
+                <ul id="path-recommendations"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const answers = {};
+        const outcomeScores = {
+            'MLO1.1': { correct: 0, total: 3 },
+            'MLO1.2': { correct: 0, total: 3 },
+            'MLO1.3': { correct: 0, total: 3 },
+            'MLO1.4': { correct: 0, total: 2 }
+        };
+
+        const feedbackData = {
+            1: {
+                correct: "Correct! Media rights typically account for 40-60% of total revenue for major leagues, making it the largest single revenue stream. The NFL's media deals total $110 billion over 11 years, while the NHL's Rogers deal is worth $5.2 billion over 12 years.",
+                incorrect: "Not quite. Media rights (40-60%) are the largest revenue stream for most major leagues. While ticketing, sponsorship, and merchandising are important, they each represent smaller percentages of total revenue."
+            },
+            2: {
+                model: "Teams share revenue to maintain competitive balance. Without revenue sharing, wealthy teams would monopolize talent, creating predictable outcomes that decrease fan engagement and media value for all teams. Sharing ensures the league product (competitive games) remains valuable.",
+                keywords: ['competitive balance', 'monopolize', 'parity', 'equal', 'fair', 'talent', 'predictable', 'league', 'share']
+            },
+            3: {
+                correct: "Excellent! You understand the ecosystem principle. The $8M in direct revenue doesn't account for indirect effects: increased media rights value (+$10M), sponsorship premiums (+$5M), playoff revenue ($15M+), and betting engagement (+$2M). Total ecosystem value: $30-40M annually, making this a strong investment.",
+                incorrect: "This answer treats revenue streams as independent. In sport's revenue ecosystem, a star player creates cascading effects: higher media rights value, premium sponsorship renewals, playoff revenue, franchise valuation increases, and betting engagement. The indirect effects ($30M+) far exceed direct revenue ($8M)."
+            },
+            4: {
+                correct: "Correct! Betting legalization creates multiple revenue streams: 1) Official partner designations ($50-200M/year), 2) Data licensing fees ($10-50M/year), 3) Media integration revenue, 4) Increased viewership (fans with bets watch 30-40% more content, boosting ad revenue across all platforms).",
+                incorrect: "False. Betting creates at least four revenue streams: official partnerships, data licensing, media integration, and increased viewership that boosts advertising revenue. Plus, betting drives engagement with otherwise low-interest games (weak teams, midweek matchups)."
+            },
+            5: {
+                correct: "Correct! Betting and gaming is growing 30-40% year-over-year, faster than any other revenue stream. Since legalization began in 2018 (U.S.) and 2021 (Canada), the market has exploded from near-zero to a $200B+ global industry. Currently 2-8% of league revenue but projected to reach 10-15% within 5 years.",
+                incorrect: "Betting and gaming is currently the fastest-growing stream at 30-40% annually. While media rights grow steadily (5-10%), ticketing is flat or declining, and merchandising grows slowly (3-5%). Betting's rapid growth explains why every major league now has official betting partners."
+            },
+            6: {
+                correct: "Exactly! Sports are the last true 'appointment viewing'—you can't watch later without spoiler risk from social media. This creates simultaneous audiences (rare in 2024), commanding 3-4× higher advertising rates ($50-70 CPM vs. $15-25 for scripted TV). Plus, sports drive subscription retention for streaming platforms.",
+                incorrect: "The key differentiator is 'appointment viewing.' Sports can't be watched on delay without spoiler risk, creating simultaneous audiences that command premium ad rates (3-4× higher than scripted TV). This unique characteristic explains why media companies pay seemingly irrational prices for sports rights."
+            },
+            7: {
+                correct: "Correct! Advantage: The Canucks receive an equal share of national media rights revenue (worth more than they'd generate alone in a mid-market). Disadvantage: Revenue sharing limits entrepreneurial upside—if they build a dynasty and sell out every game, they can't fully capitalize because media revenue is pooled.",
+                incorrect: "The correct answer is B. The Canucks benefit from equal distribution of national media rights (worth more than their solo market value) but sacrifice entrepreneurial upside. If they dominate and sell out every game, they can't fully capitalize because national media revenue is shared equally regardless of performance."
+            },
+            8: {
+                correct: "Perfect! The revenue ecosystem concept means investments in one area create positive spillover effects across all streams. Signing Connor McDavid increases ticketing AND media rights value AND sponsorship AND merchandising AND betting engagement simultaneously. This is why teams 'overpay' for stars—the total ecosystem return exceeds direct revenue.",
+                incorrect: "A revenue ecosystem means streams are interdependent, not independent. Investment in one area (like signing a star player) creates cascading positive effects across media, ticketing, sponsorship, merchandise, and betting. This interconnection explains why sport economics differs from traditional business models."
+            },
+            9: {
+                correct: "Exactly right! Premium seating is only 10-15% of capacity but generates 40-50% of ticketing revenue. This is why virtually every stadium renovation prioritizes luxury suite expansion—20-30 new suites generate more revenue than 2,000 upper bowl seats. Stadium economics shifted from 'fill the seats' to 'maximize per-capita revenue.'",
+                incorrect: "Premium seating represents 10-15% of capacity but generates 40-50% of ticketing revenue. Luxury suites ($100K-500K/season), club seats ($5K-15K/seat), and courtside tickets ($500-2,000/game) command exponential premiums over general admission. This explains modern stadium design priorities."
+            },
+            10: {
+                correct: "Spot on! The NFL prioritizes competitive balance (any team can win any season), which requires revenue sharing to prevent wealthy teams from monopolizing talent. European soccer rewards entrepreneurial success—popular clubs like Real Madrid earn vastly more than smaller clubs. Different philosophies: parity vs. meritocracy.",
+                incorrect: "The NFL shares revenue to ensure competitive balance—small-market Green Bay can compete with large-market New York. This 'any team can win' model maximizes fan engagement and media value. European soccer prioritizes rewarding success—Real Madrid earns 10-20× more than smaller clubs, creating wealth disparity but rewarding brand-building."
+            }
+        };
+
+        // Event listeners for option selection
+        document.querySelectorAll('.option').forEach(option => {
+            option.addEventListener('click', function() {
+                const radio = this.querySelector('input');
+                radio.checked = true;
+
+                // Remove selected class from siblings
+                this.parentElement.querySelectorAll('.option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+
+                // Add selected class to this option
+                this.classList.add('selected');
+            });
+        });
+
+        function checkAnswer(questionNum, correctAnswer) {
+            const container = document.querySelector(`[data-question="${questionNum}"]`);
+            const selectedInput = container.querySelector('input:checked');
+
+            if (!selectedInput) {
+                alert('Please select an answer before submitting.');
+                return;
+            }
+
+            const selectedValue = selectedInput.value;
+            const isCorrect = selectedValue === correctAnswer;
+            const outcome = container.dataset.outcome;
+
+            // Store answer
+            answers[questionNum] = { correct: isCorrect, outcome: outcome };
+
+            // Update outcome scores
+            if (isCorrect) {
+                outcomeScores[outcome].correct++;
+            }
+
+            // Show feedback
+            const feedbackDiv = container.querySelector('.feedback');
+            const feedbackStrong = feedbackDiv.querySelector('strong');
+            const feedbackP = feedbackDiv.querySelector('p');
+
+            feedbackDiv.classList.remove('correct', 'incorrect');
+            feedbackDiv.classList.add(isCorrect ? 'correct' : 'incorrect', 'show');
+
+            feedbackStrong.textContent = isCorrect ? '✓ Correct!' : '✗ Not quite.';
+            feedbackP.textContent = isCorrect ? feedbackData[questionNum].correct : feedbackData[questionNum].incorrect;
+
+            // Visual feedback on options
+            container.querySelectorAll('.option').forEach(opt => {
+                const input = opt.querySelector('input');
+                if (input.value === correctAnswer) {
+                    opt.classList.add('correct');
+                } else if (input.value === selectedValue && !isCorrect) {
+                    opt.classList.add('incorrect');
+                }
+            });
+
+            // Disable submit button
+            container.querySelector('.submit-btn').disabled = true;
+            container.querySelector('.submit-btn').textContent = 'Answer Submitted';
+
+            // Check if all questions answered
+            checkIfComplete();
+        }
+
+        function checkShortAnswer(questionNum) {
+            const container = document.querySelector(`[data-question="${questionNum}"]`);
+            const textarea = container.querySelector('textarea');
+            const answer = textarea.value.trim().toLowerCase();
+
+            if (answer.length < 20) {
+                alert('Please provide a more detailed answer (at least 2-3 sentences).');
+                return;
+            }
+
+            const outcome = container.dataset.outcome;
+            const keywords = feedbackData[questionNum].keywords;
+            const keywordCount = keywords.filter(kw => answer.includes(kw)).length;
+            const isCorrect = keywordCount >= 2; // Need at least 2 keywords for credit
+
+            // Store answer
+            answers[questionNum] = { correct: isCorrect, outcome: outcome };
+
+            // Update outcome scores
+            if (isCorrect) {
+                outcomeScores[outcome].correct++;
+            }
+
+            // Show feedback
+            const feedbackDiv = container.querySelector('.feedback');
+            const feedbackStrong = feedbackDiv.querySelector('strong');
+            const feedbackP = feedbackDiv.querySelector('p');
+
+            feedbackDiv.classList.remove('correct', 'incorrect');
+            feedbackDiv.classList.add(isCorrect ? 'correct' : 'incorrect', 'show');
+
+            feedbackStrong.textContent = isCorrect ? '✓ Good answer!' : '✓ Partial credit';
+            feedbackP.textContent = `Model answer: ${feedbackData[questionNum].model}`;
+
+            // Disable submit button
+            container.querySelector('.submit-btn').disabled = true;
+            container.querySelector('.submit-btn').textContent = 'Answer Submitted';
+            textarea.disabled = true;
+
+            // Check if all questions answered
+            checkIfComplete();
+        }
+
+        function checkIfComplete() {
+            const answeredCount = Object.keys(answers).length;
+
+            if (answeredCount === 10) {
+                // Scroll to results
+                setTimeout(() => {
+                    showResults();
+                }, 1000);
+            }
+        }
+
+        function showResults() {
+            const totalCorrect = Object.values(answers).filter(a => a.correct).length;
+            const percentage = (totalCorrect / 10) * 100;
+
+            // Update score display
+            document.getElementById('score-number').textContent = totalCorrect;
+
+            // Determine level
+            let level, levelClass, levelTitle, pathDescription, recommendations;
+
+            if (totalCorrect <= 3) {
+                level = 'Revenue Newcomer';
+                levelClass = 'newcomer';
+                levelTitle = 'Welcome! This week is designed for you.';
+                pathDescription = "You're starting from a clean slate, which means you won't have to unlearn misconceptions. Focus your energy on building foundational knowledge through hands-on learning.";
+                recommendations = [
+                    'Module 3 (Core Content - Revenue Streams) - spend extra time here',
+                    'All 8 interactive widgets - hands-on learning will help concepts stick',
+                    'Executive session - listen for how the expert explains interconnections',
+                    'Revenue Empire Builder (Module 4) - practice strategic thinking'
+                ];
+            } else if (totalCorrect <= 6) {
+                level = 'Strategic Intuition';
+                levelClass = 'intuition';
+                levelTitle = 'You have good business instincts!';
+                pathDescription = "You understand some fundamentals, but you're missing sport-specific knowledge. Focus on the unique characteristics that separate sport from traditional business.";
+                recommendations = [
+                    'The differences between sport and traditional business (Module 3, Section 6)',
+                    'Revenue sharing mechanics (Module 5 - Canucks Case)',
+                    'Emerging streams like betting (Module 3, Section 5)',
+                    'Ecosystem thinking vs. portfolio thinking (Module 3, Section 6)'
+                ];
+            } else if (totalCorrect <= 9) {
+                level = 'Revenue Expert';
+                levelClass = 'expert';
+                levelTitle = 'You already understand the fundamentals!';
+                pathDescription = "You have strong foundational knowledge. Challenge yourself with application and synthesis activities that test your ability to use this knowledge strategically.";
+                recommendations = [
+                    'The Canucks case (Module 5) - test your ability to apply knowledge',
+                    'Revenue Empire Builder (Module 4) - strategic decision-making',
+                    'Reflection Memo (Module 6) - synthesize knowledge for executive audience',
+                    'Help classmates in discussion forums - teaching reinforces learning'
+                ];
+            } else {
+                level = 'Industry Insider';
+                levelClass = 'insider';
+                levelTitle = 'Impressive! You likely have sport business experience.';
+                pathDescription = "You're already operating at a high level. Use this week to validate your mental models against academic frameworks and discover new perspectives.";
+                recommendations = [
+                    'Validate your mental models against academic frameworks',
+                    'Discover new perspectives from the executive session',
+                    'Help classmates in discussion forums and peer learning',
+                    'Think ahead: How will you apply this to your Group Marketing Project?'
+                ];
+            }
+
+            // Update results display
+            document.getElementById('level-badge').textContent = level;
+            document.getElementById('level-badge').className = `level-badge ${levelClass}`;
+            document.getElementById('level-title').textContent = levelTitle;
+            document.getElementById('path-description').textContent = pathDescription;
+
+            const recList = document.getElementById('path-recommendations');
+            recList.innerHTML = '';
+            recommendations.forEach(rec => {
+                const li = document.createElement('li');
+                li.textContent = rec;
+                recList.appendChild(li);
+            });
+
+            // Update outcome breakdown
+            updateOutcomeBreakdown();
+
+            // Show results container
+            document.getElementById('results').classList.add('show');
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function updateOutcomeBreakdown() {
+            // MLO 1.1 (3 questions: 1, 4, and one more we'll assign)
+            const mlo11Score = outcomeScores['MLO1.1'].correct;
+            const mlo11Total = outcomeScores['MLO1.1'].total;
+            document.getElementById('outcome-1-1').textContent = `${mlo11Score}/${mlo11Total}`;
+            document.getElementById('progress-1-1').style.width = `${(mlo11Score / mlo11Total) * 100}%`;
+
+            // MLO 1.2 (3 questions)
+            const mlo12Score = outcomeScores['MLO1.2'].correct;
+            const mlo12Total = outcomeScores['MLO1.2'].total;
+            document.getElementById('outcome-1-2').textContent = `${mlo12Score}/${mlo12Total}`;
+            document.getElementById('progress-1-2').style.width = `${(mlo12Score / mlo12Total) * 100}%`;
+
+            // MLO 1.3 (3 questions)
+            const mlo13Score = outcomeScores['MLO1.3'].correct;
+            const mlo13Total = outcomeScores['MLO1.3'].total;
+            document.getElementById('outcome-1-3').textContent = `${mlo13Score}/${mlo13Total}`;
+            document.getElementById('progress-1-3').style.width = `${(mlo13Score / mlo13Total) * 100}%`;
+
+            // MLO 1.4 (2 questions)
+            const mlo14Score = outcomeScores['MLO1.4'].correct;
+            const mlo14Total = outcomeScores['MLO1.4'].total;
+            document.getElementById('outcome-1-4').textContent = `${mlo14Score}/${mlo14Total}`;
+            document.getElementById('progress-1-4').style.width = `${(mlo14Score / mlo14Total) * 100}%`;
+        }
+    </script>
+</body>
+</html>

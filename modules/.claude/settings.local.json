@@ -2,7 +2,16 @@
   "permissions": {
     "allow": [
       "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/business-of-marketing-in-sport/**)",
-      "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/Claude Demo/uplimit-training/**)"
+      "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/Claude Demo/uplimit-training/**)",
+      "Bash(git push:*)",
+      "WebFetch(domain:www.anthropic.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git branch:*)",
+      "Bash(gh repo create:*)",
+      "Read(//c/Users/jkruck/.claude/**)",
+      "Bash(git remote add:*)",
+      "Bash(claude-code --version)"
     ],
     "deny": [],
     "ask": []

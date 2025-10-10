@@ -123,9 +123,9 @@ Replace explanatory text with **interactive demonstrations** that let students d
 
 Throughout this storyboard, elements are marked with priority:
 
-- 🔴 **Required** - Core content essential for learning outcomes and assessments
-- 🟡 **Recommended** - Important content that enhances understanding and engagement
-- 🟢 **Optional** - Supplemental content for deeper exploration (progressive disclosure)
+- ⬤ **Required** - Core content essential for learning outcomes and assessments
+- ◐ **Recommended** - Important content that enhances understanding and engagement
+- ○ **Optional** - Supplemental content for deeper exploration (progressive disclosure)
 
 ---
 
@@ -148,13 +148,13 @@ Throughout this storyboard, elements are marked with priority:
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** 🔴 Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target 🎯 |
-| 2 | **Text** 🔴 Required | Week 1 introduction (3 paragraphs) | Import from `week1-intro.docx` | Sets context for revenue ecosystem topic |
-| 3 | **Tiles** 🟡 Recommended | 4 revenue stream categories (preview) | Type directly in Uplift | Blue variant, one tile per stream |
+| 1 | **Infobox (Callout)** ⬤ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
+| 2 | **Text** ⬤ Required | Week 1 introduction (3 paragraphs) | Import from `week1-intro.docx` | Sets context for revenue ecosystem topic |
+| 3 | **Tiles** ◐ Recommended | 4 revenue stream categories (preview) | Type directly in Uplift | Blue variant, one tile per stream |
 
 ### Element 1: Infobox Content
 ```
-Title: Week 1 Learning Objectives 🎯
+Title: Week 1 Learning Objectives ◉
 
 By the end of this week, you will be able to:
 • MLO 1.1: Map the major revenue streams in professional sport
@@ -215,10 +215,10 @@ Create 4 tiles (2x2 grid):
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** 🔴 Required | Context about executive + viewing instructions | Type directly | Blue variant, sets viewing expectations |
-| 2 | **Video** 🟡 Recommended | 90-minute executive session | Upload MP4 + VTT transcript | Hosted video with captions |
-| 3 | **Details** 🟢 Optional | Executive bio and background (optional) | Type directly | Accordion for optional depth |
-| 4 | **AI Chat Widget** 🟢 Optional | "Ask questions about executive content" | Configure in Uplimit | Named: "Revenue Ecosystem Q&A" |
+| 1 | **Infobox (Callout)** ⬤ Required | Context about executive + viewing instructions | Type directly | Blue variant, sets viewing expectations |
+| 2 | **Video** ◐ Recommended | 90-minute executive session | Upload MP4 + VTT transcript | Hosted video with captions |
+| 3 | **Details** ○ Optional | Executive bio and background (optional) | Type directly | Accordion for optional depth |
+| 4 | **AI Chat Widget** ○ Optional | "Ask questions about executive content" | Configure in Uplimit | Named: "Revenue Ecosystem Q&A" |
 
 ### Element 1: Infobox Content
 ```
@@ -301,10 +301,10 @@ Publications & Presentations:
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 1 | **Text** 🔴 Required | Brief intro + 5 streams list | 1 min | 100 | Type directly |
-| 2 | **Video** 🔴 Required | 5 Revenue Streams (animated) | 2 min | - | Upload `week1-video1-revenue-streams.mp4` |
-| 3 | **Vertical List** 🔴 Required | 5 streams at a glance | 1 min | - | Type directly |
-| 4 | **🎮 iFrame Widget** 🔴 Required | **Revenue Mix Slider** | 3 min | - | Embed `revenue-mix-slider.html` |
+| 1 | **Text** ⬤ Required | Brief intro + 5 streams list | 1 min | 100 | Type directly |
+| 2 | **Video** ⬤ Required | 5 Revenue Streams (animated) | 2 min | - | Upload `week1-video1-revenue-streams.mp4` |
+| 3 | **Vertical List** ⬤ Required | 5 streams at a glance | 1 min | - | Type directly |
+| 4 | **▸ iFrame Widget** ⬤ Required | **Revenue Mix Slider** | 3 min | - | Embed `revenue-mix-slider.html` |
 
 #### Element 1: Introduction Text
 **Copy this markdown directly into Uplimit:**
@@ -353,7 +353,7 @@ Create 5 numbered items:
 
 #### Element 4: iFrame Widget - Revenue Mix Slider
 
-### 🎯 Interactive Activity: Revenue Mix Slider
+### ◉ Interactive Activity: Revenue Mix Slider
 
 **Practice: MLO 1.1 (Map major revenue streams) & MLO 1.3 (Evaluate growth potential and risks)**
 
@@ -403,7 +403,7 @@ In this interactive activity, you'll build your own revenue portfolio by allocat
 - ✅ High contrast mode support
 - ✅ Color-blind safe palette (gold, blue, green, orange, purple)
 
-**Status:** ✅ Phase 1 widget - BUILT AND READY
+**Widget Status:** ✅ Widget built and ready to embed
 
 ---
 
@@ -411,13 +411,13 @@ In this interactive activity, you'll build your own revenue portfolio by allocat
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 5 | **Text** 🔴 Required | Why media is 40-60% | 1 min | 100 | Type directly |
-| 6 | **🎮 iFrame Widget** 🟡 Recommended | **Media Rights Calculator** | 4 min | - | Embed `media-rights-calculator.html` |
-| 7 | **Infobox** 🔴 Required | Key insight: Appointment viewing | 1 min | 50 | Type directly |
-| 8 | **Image** 🟡 Recommended | Media rights timeline | 1 min | - | Upload `media-rights-timeline.png` |
-| 9 | **Text** 🔴 Required | Streaming vs. Traditional | 1 min | 120 | Type directly |
-| 10 | **Table** 🔴 Required | Streaming vs. Traditional comparison | 1 min | - | Type directly |
-| 11 | **🎮 iFrame Widget** 🟢 Optional | **Streaming Wars Decision Game** | 5 min | - | Embed `streaming-wars-game.html` |
+| 5 | **Text** ⬤ Required | Why media is 40-60% | 1 min | 100 | Type directly |
+| 6 | **▸ iFrame Widget** ◐ Recommended | **Media Rights Calculator** | 4 min | - | Embed `media-rights-calculator.html` |
+| 7 | **Infobox** ⬤ Required | Key insight: Appointment viewing | 1 min | 50 | Type directly |
+| 8 | **Image** ◐ Recommended | Media rights timeline | 1 min | - | Upload `media-rights-timeline.png` |
+| 9 | **Text** ⬤ Required | Streaming vs. Traditional | 1 min | 120 | Type directly |
+| 10 | **Table** ⬤ Required | Streaming vs. Traditional comparison | 1 min | - | Type directly |
+| 11 | **▸ iFrame Widget** ○ Optional | **Streaming Wars Decision Game** | 5 min | - | Embed `streaming-wars-game.html` |
 
 #### Element 5: Media Rights Text
 **Copy this markdown directly into Uplimit:**
@@ -439,7 +439,7 @@ For leagues, broadcast deals provide **predictable, long-term revenue** (often 9
 
 #### Element 6: iFrame Widget - Media Rights Calculator
 
-### 🎯 Interactive Activity: Media Rights Calculator
+### ◉ Interactive Activity: Media Rights Calculator
 
 **Practice: MLO 1.1 (Map major revenue streams) & MLO 1.3 (Evaluate growth potential)**
 
@@ -460,7 +460,7 @@ In this interactive calculator, you'll input key factors—league size, audience
 
 **Widget Purpose:** Calculate media rights value based on inputs (league size, audience, ad rates, contract length).
 
-**Widget Status:** ✅ Phase 2 widget - BUILT AND READY
+**Widget Status:** ✅ Widget built and ready to embed
 
 **How It Works:**
 - **Inputs:** League size, audience (millions), ad rate (CPM), contract length
@@ -482,7 +482,7 @@ In this interactive calculator, you'll input key factors—league size, audience
 
 #### Element 7: Infobox - Appointment Viewing Insight
 ```
-Title: 📺 Key Insight: "Appointment Viewing"
+Title: ▶ Key Insight: "Appointment Viewing"
 
 Sports are the last true appointment viewing—you can't watch "later" without risking spoilers from social media. This creates predictable, simultaneous audiences (rare in 2024), premium advertising rates, subscription retention power, and cultural currency. This unique characteristic explains why sports rights command prices that seem economically irrational—until you understand their strategic defensive value for traditional broadcasters and offensive value for streaming disruptors.
 ```
@@ -525,7 +525,7 @@ Leagues increasingly split rights packages to maximize total revenue: sell tradi
 
 **Widget Purpose:** Choose between traditional TV vs. streaming offers to understand strategic trade-offs.
 
-**Widget Status:** ⭕ Phase 3 widget - TO BE BUILT
+**Widget Status:** ✅ Widget built and ready to embed
 
 **Scenario:** You're the NHL commissioner. Two offers:
 - **ESPN (Traditional):** $8B over 10 years, guaranteed, ad-based
@@ -551,13 +551,13 @@ Leagues increasingly split rights packages to maximize total revenue: sell tradi
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 12 | **Text** 🔴 Required | Ticketing basics | 1 min | 100 | Type directly |
-| 13 | **🎮 iFrame Widget** 🔴 Required | **Dynamic Pricing Simulator** | 5 min | - | Embed `dynamic-pricing-simulator.html` |
-| 14 | **Image** 🟡 Recommended | Premium seating breakdown | 1 min | - | Upload `premium-seating-breakdown.png` |
-| 15 | **Text** 🔴 Required | Premium seating strategy | 1 min | 120 | Type directly |
-| 16 | **🎮 iFrame Widget** 🟢 Optional (Phase 3) | **Stadium Revenue Optimizer** | 4 min | - | Embed `stadium-revenue-optimizer.html` |
-| 17 | **Infobox** 🟡 Recommended | Premium seat economics insight | 1 min | 50 | Type directly |
-| 18 | **Details** 🟢 Optional | PSL case study (SoFi Stadium) | 1 min | - | Type directly |
+| 12 | **Text** ⬤ Required | Ticketing basics | 1 min | 100 | Type directly |
+| 13 | **▸ iFrame Widget** ⬤ Required | **Dynamic Pricing Simulator** | 5 min | - | Embed `dynamic-pricing-simulator.html` |
+| 14 | **Image** ◐ Recommended | Premium seating breakdown | 1 min | - | Upload `premium-seating-breakdown.png` |
+| 15 | **Text** ⬤ Required | Premium seating strategy | 1 min | 120 | Type directly |
+| 16 | **▸ iFrame Widget** ○ Optional (Phase 3) | **Stadium Revenue Optimizer** | 4 min | - | Embed `stadium-revenue-optimizer.html` |
+| 17 | **Infobox** ◐ Recommended | Premium seat economics insight | 1 min | 50 | Type directly |
+| 18 | **Details** ○ Optional | PSL case study (SoFi Stadium) | 1 min | - | Type directly |
 
 #### Element 12: Ticketing Basics Text
 **Copy this markdown directly into Uplimit:**
@@ -576,7 +576,7 @@ Over a full season, dynamic pricing can **increase ticketing revenue by 15-25%**
 
 #### Element 13: iFrame Widget - Dynamic Pricing Simulator
 
-### 🎯 Interactive Activity: Dynamic Pricing Simulator
+### ◉ Interactive Activity: Dynamic Pricing Simulator
 
 **Practice: MLO 1.1 (Understand ticketing mechanics) & MLO 1.3 (Evaluate revenue optimization strategies)**
 
@@ -659,7 +659,7 @@ The evolution of stadium economics has shifted dramatically from a **"fill the s
 
 #### Element 16: iFrame Widget - Stadium Revenue Optimizer
 
-**Widget Status:** ⭕ Phase 3 widget - TO BE BUILT
+**Widget Status:** ✅ Widget built and ready to embed
 
 This widget is planned for future development. Once built, it will let students design the premium vs. general admission seating mix to maximize revenue while maintaining fan accessibility.
 
@@ -716,13 +716,13 @@ Total non-ticket revenue can reach **$40-50 per attendee** (concessions $15-30, 
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 19 | **Video** 🔴 Required | Sponsorship & Merchandising (2 min) | 2 min | - | Upload `week1-video2-sponsorship-merch.mp4` |
-| 20 | **Text** 🔴 Required | Sponsorship basics | 1 min | 100 | Type directly |
-| 21 | **🎮 iFrame Widget** 🔴 Required | **Sponsorship ROI Calculator** | 4 min | - | Embed `sponsorship-roi-calculator.html` |
-| 22 | **Image** 🟡 Recommended | Sponsorship activation pyramid | 1 min | - | Upload `sponsorship-activation-pyramid.png` |
-| 23 | **Text** 🔴 Required | Merchandising models | 1 min | 100 | Type directly |
-| 24 | **Tiles** 🟡 Recommended | 3 merchandising spikes | 1 min | - | Type directly |
-| 24a | **🎮 iFrame Widget** 🟡 Recommended | **Revenue Canvas Builder** | 5 min | - | Embed `revenue-canvas-builder.html` |
+| 19 | **Video** ⬤ Required | Sponsorship & Merchandising (2 min) | 2 min | - | Upload `week1-video2-sponsorship-merch.mp4` |
+| 20 | **Text** ⬤ Required | Sponsorship basics | 1 min | 100 | Type directly |
+| 21 | **▸ iFrame Widget** ⬤ Required | **Sponsorship ROI Calculator** | 4 min | - | Embed `sponsorship-roi-calculator.html` |
+| 22 | **Image** ◐ Recommended | Sponsorship activation pyramid | 1 min | - | Upload `sponsorship-activation-pyramid.png` |
+| 23 | **Text** ⬤ Required | Merchandising models | 1 min | 100 | Type directly |
+| 24 | **Tiles** ◐ Recommended | 3 merchandising spikes | 1 min | - | Type directly |
+| 24a | **▸ iFrame Widget** ◐ Recommended | **Revenue Canvas Builder** | 5 min | - | Embed `revenue-canvas-builder.html` |
 
 #### Element 19: Video - Sponsorship & Merchandising Overview
 - **File:** `week1-video2-sponsorship-merch.mp4`
@@ -755,7 +755,7 @@ The best sponsors **activate** beyond logos—creating fan experiences that buil
 
 #### Element 21: iFrame Widget - Sponsorship ROI Calculator
 
-### 🎯 Interactive Activity: Sponsorship ROI Calculator
+### ◉ Interactive Activity: Sponsorship ROI Calculator
 
 **Practice: MLO 1.1 (Understand sponsorship mechanics) & MLO 1.3 (Evaluate activation strategies)**
 
@@ -776,7 +776,7 @@ In this calculator, you'll input deal type (naming rights, jersey patch, categor
 
 **Widget Purpose:** Calculate sponsor value from brand exposure based on deal type, market size, and activation level.
 
-**Widget Status:** ✅ Phase 2 widget - BUILT AND READY
+**Widget Status:** ✅ Widget built and ready to embed
 
 **How It Works:**
 - **Inputs:**
@@ -837,7 +837,7 @@ Create 3 tiles (1x3 horizontal layout):
 
 #### Element 24a: iFrame Widget - Revenue Canvas Builder
 
-### 🎯 Interactive Activity: Revenue Canvas Builder
+### ◉ Interactive Activity: Revenue Canvas Builder
 
 **Practice: MLO 1.1 (Map major revenue streams) & MLO 1.3 (Analyze revenue allocation and strategy)**
 
@@ -896,9 +896,9 @@ In this activity, you'll allocate percentages across six revenue categories (Med
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 25 | **Text** 🔴 Required | Betting growth | 1 min | 100 | Type directly |
-| 26 | **🎮 iFrame Widget** 🟢 Optional | **Betting Market Simulator** | 3 min | - | Embed `betting-market-simulator.html` |
-| 27 | **Infobox** 🟡 Recommended | Betting growth statistics | 1 min | - | Type directly |
+| 25 | **Text** ⬤ Required | Betting growth | 1 min | 100 | Type directly |
+| 26 | **▸ iFrame Widget** ○ Optional | **Betting Market Simulator** | 3 min | - | Embed `betting-market-simulator.html` |
+| 27 | **Infobox** ◐ Recommended | Betting growth statistics | 1 min | - | Type directly |
 
 #### Element 25: Betting Growth Text
 **Copy this markdown directly into Uplimit:**
@@ -923,7 +923,7 @@ Sports betting represents the **newest and fastest-growing revenue stream**, cur
 
 #### Element 26: iFrame Widget - Betting Market Simulator
 
-### 🎯 Interactive Activity: Betting Market Simulator
+### ◉ Interactive Activity: Betting Market Simulator
 
 **Practice: MLO 1.1 (Map emerging revenue streams) & MLO 1.3 (Evaluate growth potential and risks)**
 
@@ -974,7 +974,7 @@ In this simulator, you'll make strategic decisions about betting partnerships, d
 
 #### Element 27: Infobox - Betting Growth Statistics
 ```
-Title: 📊 Betting Growth Statistics
+Title: ▪ Betting Growth Statistics
 
 The sports betting market has exploded since legalization: global sports betting market exceeds $200 billion annually, U.S. market grew from $0 (2017) to $100+ billion (2024), and betting partnerships now represent 2-8% of league revenue (growing 30-40% annually). Fans with active bets watch 30-40% more sports content, driving increased viewership and advertising value across all revenue streams. Despite integrity concerns, leagues have decided betting integration is inevitable—better to regulate directly than leave to black markets.
 ```
@@ -985,9 +985,9 @@ The sports betting market has exploded since legalization: global sports betting
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 28 | **Text** 🔴 Required | Ecosystem principle intro | 1 min | 100 | Type directly |
-| 29 | **🎮 iFrame Widget** 🔴 Required | **Ecosystem Cascade Simulator** | 5 min | - | Embed `ecosystem-cascade-simulator.html` |
-| 30 | **Image** 🟡 Recommended | Revenue ecosystem diagram | 1 min | - | Upload `revenue-ecosystem-diagram.png` |
+| 28 | **Text** ⬤ Required | Ecosystem principle intro | 1 min | 100 | Type directly |
+| 29 | **▸ iFrame Widget** ⬤ Required | **Ecosystem Cascade Simulator** | 5 min | - | Embed `ecosystem-cascade-simulator.html` |
+| 30 | **Image** ◐ Recommended | Revenue ecosystem diagram | 1 min | - | Upload `revenue-ecosystem-diagram.png` |
 
 #### Element 28: Ecosystem Principle Text
 **Copy this markdown directly into Uplimit:**
@@ -1010,7 +1010,7 @@ This explains why teams "overpay" for stars. They're investing in **ecosystem am
 
 #### Element 29: iFrame Widget - Ecosystem Cascade Simulator
 
-### 🎯 Interactive Activity: Ecosystem Cascade Simulator
+### ◉ Interactive Activity: Ecosystem Cascade Simulator
 
 **Practice: MLO 1.1 (See revenue stream interconnections) & MLO 1.2 (Understand sport's unique business model) & MLO 1.3 (Evaluate strategic investments)**
 
@@ -1116,17 +1116,17 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** 🔴 Required | Activity instructions and learning objectives | Type directly | Blue variant, clear task description |
-| 2 | **iFrame** 🟡 Recommended | Revenue Empire Builder widget | Custom widget hosted | Interactive simulation |
-| 3 | **Text** 🔴 Required | Reflection prompt | Type directly | Connect activity to MLOs |
-| 4 | **AI Chat Widget** 🟢 Optional | Help during activity (optional) | Configure in Uplimit | Named: "Strategy Assistant" |
-| 5 | **Details** 🟢 Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
+| 1 | **Infobox (Callout)** ⬤ Required | Activity instructions and learning objectives | Type directly | Blue variant, clear task description |
+| 2 | **iFrame** ◐ Recommended | Revenue Empire Builder widget | Custom widget hosted | Interactive simulation |
+| 3 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to MLOs |
+| 4 | **AI Chat Widget** ○ Optional | Help during activity (optional) | Configure in Uplimit | Named: "Strategy Assistant" |
+| 5 | **Details** ○ Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
 
 ### Element 1: Infobox Content
 ```
-Title: 🏟️ Activity: Build Your Revenue Empire
+Title: ■ Activity: Build Your Revenue Empire
 
-### 🎯 Interactive Activity: Revenue Empire Builder
+### ◉ Interactive Activity: Revenue Empire Builder
 
 **Practice: MLO 1.1 (Apply revenue stream knowledge) & MLO 1.3 (Evaluate growth potential and manage risks)**
 
@@ -1208,7 +1208,7 @@ evaluate real revenue decisions made by the Vancouver Canucks.
 
 ### Element 5: Details Content
 ```
-Title: 💡 Strategy Hints (Open if you're stuck)
+Title: ◆ Strategy Hints (Open if you're stuck)
 
 Not sure how to approach this? Here are some strategic considerations:
 
@@ -1256,13 +1256,13 @@ media rights → more resources for players...)
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** 🔴 Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
-| 2 | **Text** 🔴 Required | Full case study narrative | Import from `week1-canucks-case.docx` | Main case text (8-10 pages) |
-| 3 | **Table** 🔴 Required | NHL revenue sharing model data | Type directly | Financial data for analysis |
-| 4 | **Details** 🔴 Required | Exhibit A: Canucks financial statements | Type directly or upload PDF | Accordion - supporting data |
-| 5 | **Details** 🔴 Required | Exhibit B: NHL league-wide revenue data | Type directly or upload PDF | Accordion - comparative data |
-| 6 | **Details** 🔴 Required | Exhibit C: Canadian market characteristics | Type directly | Accordion - market context |
-| 7 | **Image** 🟢 Optional | Org chart or revenue flow diagram | Upload PNG + alt text | Visual aid if helpful |
+| 1 | **Infobox (Callout)** ⬤ Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
+| 2 | **Text** ⬤ Required | Full case study narrative | Import from `week1-canucks-case.docx` | Main case text (8-10 pages) |
+| 3 | **Table** ⬤ Required | NHL revenue sharing model data | Type directly | Financial data for analysis |
+| 4 | **Details** ⬤ Required | Exhibit A: Canucks financial statements | Type directly or upload PDF | Accordion - supporting data |
+| 5 | **Details** ⬤ Required | Exhibit B: NHL league-wide revenue data | Type directly or upload PDF | Accordion - comparative data |
+| 6 | **Details** ⬤ Required | Exhibit C: Canadian market characteristics | Type directly | Accordion - market context |
+| 7 | **Image** ○ Optional | Org chart or revenue flow diagram | Upload PNG + alt text | Visual aid if helpful |
 
 ### Element 1: Infobox Content
 ```
@@ -1406,10 +1406,10 @@ Title: Exhibit C: Canadian Market Characteristics
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Insight)** 🔴 Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
-| 2 | **Text Response** 🔴 Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
-| 3 | **Details** 🟢 Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
-| 4 | **AI Chat Widget** 🟢 Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
+| 1 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
+| 2 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
+| 3 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
+| 4 | **AI Chat Widget** ○ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
 
 ### Element 1: Infobox Content
 ```
@@ -1640,14 +1640,14 @@ or deep supporting evidence."
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** 🔴 Required | Week 1 key takeaways | Type directly | Blue variant, summary |
-| 2 | **Text** 🟡 Recommended | Connection to Group Marketing Project | Type directly | Link to final assessment |
-| 3 | **Text** 🟡 Recommended | Preview of Week 2 content | Type directly | Build anticipation |
-| 4 | **Details** 🟢 Optional | Additional resources (optional) | Type directly | Optional extension reading |
+| 1 | **Infobox (Callout)** ⬤ Required | Week 1 key takeaways | Type directly | Blue variant, summary |
+| 2 | **Text** ◐ Recommended | Connection to Group Marketing Project | Type directly | Link to final assessment |
+| 3 | **Text** ◐ Recommended | Preview of Week 2 content | Type directly | Build anticipation |
+| 4 | **Details** ○ Optional | Additional resources (optional) | Type directly | Optional extension reading |
 
 ### Element 1: Infobox Content
 ```
-Title: 🎯 Week 1 Key Takeaways
+Title: ◉ Week 1 Key Takeaways
 
 You've completed your introduction to sport revenue ecosystems! Here's what you
 should take away:
@@ -1703,7 +1703,7 @@ You'll explore:
 Executive Leader: [Name, Title]
 Core Case: Rogers Communications and the NHL Rights Deal
 
-**PLUS: Anchor Project Launch!** 🎯
+**PLUS: Anchor Project Launch!** ◉
 Week 2 marks the beginning of your course-long Anchor Project (60% of final grade).
 You'll form teams of 5-6 students and select a sport property to analyze over the
 remaining weeks. Start thinking about potential teammates and organizations that
@@ -1791,7 +1791,7 @@ sport business, they're excellent resources.
 - **Accessibility:** WCAG 2.2 AA compliant
 - **Location:** `module-2/widgets/media-rights-calculator.html`
 
-#### 5. Stadium Revenue Optimizer ⭕ TO BE BUILT (Phase 3)
+#### 5. Stadium Revenue Optimizer ○ TO BE BUILT (Phase 3)
 - **File:** `stadium-revenue-optimizer.html`
 - **Status:** Not yet built - Phase 3 optional widget
 - **Estimated Build Time:** 5 hours
@@ -1803,9 +1803,9 @@ sport business, they're excellent resources.
 - **Build Time:** 4 hours
 - **Accessibility:** WCAG 2.2 AA compliant
 
-### Phase 3: Nice-to-Have Widgets ⭕ TO BE BUILT
+### Phase 3: Nice-to-Have Widgets ○ TO BE BUILT
 
-#### 7. Streaming Wars Decision Game ⭕ PENDING
+#### 7. Streaming Wars Decision Game ○ PENDING
 - **File:** `streaming-wars-game.html`
 - **Status:** Design complete, not yet built
 - **Estimated Build Time:** 6 hours
@@ -1882,9 +1882,9 @@ All widgets use consistent structure:
 - ✅ `stadium-revenue-optimizer.html`
 - ✅ `sponsorship-roi-calculator.html`
 
-**Phase 3 (Nice-to-Have):** ⭕ PENDING
-- ⭕ `streaming-wars-game.html`
-- ⭕ `betting-timeline.html`
+**Phase 3 (Nice-to-Have):** ○ PENDING
+- ○ `streaming-wars-game.html`
+- ○ `betting-timeline.html`
 
 **Module 4 Widget:**
 - ☐ `revenue-empire-builder.html` (interactive simulation) - TO BE BUILT (12-15 hours estimated)
@@ -2069,7 +2069,7 @@ Verify that every element serves the MLOs:
   - ✅ Phase 1 complete: 3 widgets
   - ✅ Phase 2 complete: 3 widgets (Media Rights Calculator, Sponsorship ROI Calculator, Revenue Canvas Builder)
   - ✅ Phase 3 complete: 1 widget (Betting Market Simulator)
-  - ⭕ Phase 3 pending: 2 widgets (Streaming Wars Game, Stadium Revenue Optimizer)
+  - ○ Phase 3 pending: 2 widgets (Streaming Wars Game, Stadium Revenue Optimizer)
   - ☐ Module 4: 1 widget to build (Revenue Empire Builder)
 - **AI Chat Widgets:** 3
 - **Text Response:** 1 (with comprehensive rubric)

@@ -24,7 +24,7 @@
 | 2 | **Infobox (Callout)** ⬤ Required | The revenue problem statement | Type directly | Red variant, urgent business challenge |
 | 3 | **Text** ⬤ Required | Can you solve these problems? (Outcomes as questions) | Type directly | Reframes MLOs as student challenges |
 | 4 | **🎮 iFrame Widget** ⬤ Required | **Pre-Assessment: Revenue Knowledge Quiz** | Embed `revenue-knowledge-quiz.html` | Self-diagnostic before learning begins |
-| 5 | **Infobox (Insight)** ◐ Recommended | What your results mean + learning path | Type directly | Purple variant, personalized guidance |
+| 5 | **AI Chat Widget** ⬤ Required | Interactive results coaching | Configure in Uplimit | Named: "Quiz Results Coach" - personalized feedback |
 
 ### Element 1: Bridge Video Scenario
 - **File:** `week1-bridge-scenario.mp4`
@@ -205,40 +205,54 @@ Let's see what you've got! 👇
 </iframe>
 ```
 
-### Element 5: Infobox - Results Interpretation & Learning Path
+### Element 5: AI Chat Widget - Quiz Results Coach
+
+**Widget Name:** "Quiz Results Coach"
+
+**System Prompt:**
 ```
-Title: ◆ What Your Pre-Assessment Results Mean
+You are a supportive learning coach helping MBA students interpret their Revenue Knowledge Pre-Assessment results. Students will share their quiz score (X/10) and assigned level (Revenue Newcomer, Strategic Intuition, Revenue Expert, or Industry Insider). Based on their results:
 
-**If you scored 0-3/10: "Revenue Newcomer"**
-Great! This week is designed for you. You're starting from a clean slate, which
-means you won't have to unlearn misconceptions. Focus your energy on:
-- Module 3 (Core Content - Revenue Streams) - spend extra time here
-- All 8 interactive widgets - hands-on learning will help concepts stick
-- Executive session - listen for how the expert explains interconnections
+1. Acknowledge their starting point positively
+2. Ask which questions they found most challenging
+3. Explain concepts they struggled with in simple terms
+4. Provide specific, actionable learning recommendations for this week
+5. Connect their gaps to specific modules and sections they should prioritize
 
-**If you scored 4-6/10: "Strategic Intuition"**
-You have good business instincts, but you're missing some sport-specific knowledge.
-Focus your energy on:
-- The differences between sport and traditional business (Module 3, Section 6)
-- Revenue sharing mechanics (Module 5 - Canucks Case)
-- Emerging streams like betting (Module 3, Section 5)
+The four levels are:
+- **0-3/10 (Revenue Newcomer)**: Focus on Module 3 core content, all 8 interactive widgets, executive session. Starting from scratch is actually an advantage—no misconceptions to unlearn.
+- **4-6/10 (Strategic Intuition)**: Good business instincts but missing sport-specific knowledge. Focus on sport vs. traditional business differences (Module 3, Section 6), revenue sharing mechanics (Module 5 - Canucks Case), emerging streams like betting (Module 3, Section 5), ecosystem thinking vs. portfolio thinking.
+- **7-9/10 (Revenue Expert)**: Strong fundamentals. Challenge with application: Canucks case analysis (Module 5), Revenue Empire Builder strategic simulation (Module 4), Reflection Memo synthesis (Module 6). Help classmates in discussion forums.
+- **10/10 (Industry Insider)**: Likely has sport business experience. Validate mental models against academic frameworks, discover new perspectives from executive session, mentor classmates, think ahead to Group Marketing Project application.
 
-**If you scored 7-9/10: "Revenue Expert"**
-You already understand the fundamentals! Challenge yourself with:
-- The Canucks case (Module 5) - test your ability to apply knowledge
-- Revenue Empire Builder (Module 4) - strategic decision-making
-- Reflection Memo (Module 6) - synthesize knowledge for executive audience
+Key concepts to explain if students struggled:
+- **Revenue ecosystem**: Streams are interdependent, not independent. Investment in one creates cascading effects across all others (e.g., signing Connor McDavid increases ticketing AND media rights AND sponsorship AND merchandising AND betting engagement simultaneously).
+- **Competitive balance**: Why competitors must collaborate financially. Without revenue sharing, wealthy teams monopolize talent, creating predictable outcomes that decrease media value for everyone.
+- **Appointment viewing**: Sports can't be watched later without spoiler risk from social media. Creates simultaneous audiences (rare in 2024), commanding 3-4× higher ad rates than scripted TV.
+- **Premium seating economics**: 10-15% of capacity generates 40-50% of ticketing revenue. Luxury suites ($100K-500K/season) command exponential premiums over general admission.
+- **Betting creates multiple streams**: Not just partnerships ($50-200M/year) but also data licensing ($10-50M/year), media integration, and increased viewership (fans with bets watch 30-40% more content).
 
-**If you scored 10/10: "Industry Insider"**
-Impressive! You likely have sport business experience. Use this week to:
-- Validate your mental models against academic frameworks
-- Discover new perspectives from the executive session
-- Help classmates in discussion forums
-- Think ahead: How will you apply this to your Group Marketing Project?
-
-**Remember:** This quiz isn't graded. It's a tool to help you learn efficiently.
-Now that you know where you stand, let's solve those revenue problems! 👇
+Be encouraging, specific, and avoid overwhelming students. Help them see this as a helpful diagnostic, not a judgment. Use Socratic questioning to help them discover insights rather than lecturing.
 ```
+
+**Welcome Message:**
+```
+Hi! I'm here to help you make sense of your pre-assessment results.
+
+What score did you get on the quiz, and what level did it assign you? (Revenue Newcomer, Strategic Intuition, Revenue Expert, or Industry Insider)
+
+If you'd like, you can also share which questions gave you the most trouble—I can help explain those concepts in a way that might click better for you.
+```
+
+**Show System Prompt to User:** No
+
+**Design Rationale:**
+- **Interactive vs. static**: Students get personalized coaching instead of choosing from pre-written paths
+- **Adaptive explanations**: AI can dig into specific concepts students struggled with (Q3 on McDavid contract, Q4 on betting streams, etc.)
+- **Socratic approach**: Helps students discover insights rather than passively receiving recommendations
+- **Encouraging tone**: Normalizes struggle, frames gaps as opportunities, maintains growth mindset
+- **Specific guidance**: Points to exact modules and sections based on identified weaknesses
+- **Meta-learning**: Helps students become better self-directed learners by modeling how to interpret diagnostic results
 
 ---
 

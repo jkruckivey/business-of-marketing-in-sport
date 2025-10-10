@@ -523,16 +523,35 @@ Leagues increasingly split rights packages to maximize total revenue: sell tradi
 
 #### Element 11: iFrame Widget - Streaming Wars Decision Game
 
-**Widget Purpose:** Choose between traditional TV vs. streaming offers to understand strategic trade-offs.
+### ◉ Interactive Activity: Streaming Wars Decision Game
+
+**Practice: MLO 1.1 (Understand media rights options) & MLO 1.3 (Evaluate strategic trade-offs)**
+
+Leagues increasingly face a critical question: traditional TV with guaranteed revenue, or streaming with global reach and uncertain returns? The NHL, NBA, and NFL have all split rights packages to hedge their bets.
+
+In this decision game, you're the NHL commissioner choosing between two media offers: ESPN (traditional, $8B/10 years, advertising-based) or Apple TV+ (streaming, $10B/10 years, subscription-based, global reach). You'll see 5-year financial projections and understand why "hybrid deals" became the industry standard.
+
+**What you'll discover:**
+- Why streaming offers higher total value but more uncertainty
+- The trade-offs between guaranteed ad revenue vs. subscription growth
+- How cord-cutting trends impact long-term broadcast value
+- Why leagues split rights packages instead of choosing one platform
+
+**Time commitment:** 5 minutes
+**Learning outcomes practiced:** MLO 1.1 (Understanding media rights landscape), MLO 1.3 (Evaluating strategic media decisions)
+
+---
 
 **Widget Status:** ✅ Widget built and ready to embed
 
-**Scenario:** You're the NHL commissioner. Two offers:
-- **ESPN (Traditional):** $8B over 10 years, guaranteed, ad-based
-- **Apple TV+ (Streaming):** $10B over 10 years, subscription-based, global reach
+**Widget Purpose:** Choose between traditional TV vs. streaming offers to understand strategic trade-offs.
 
-**Decision:** Students choose and see 5-year projection
-**Learning:** Why leagues split rights packages (hedge strategy)
+**How It Works:**
+- **Scenario:** You're the NHL commissioner evaluating two media deals
+- **Option A - ESPN (Traditional):** $8B over 10 years, guaranteed, ad-based revenue
+- **Option B - Apple TV+ (Streaming):** $10B over 10 years, subscription-based, global distribution
+- **Outputs:** 5-year financial projection, risk assessment, audience reach comparison
+- **Learning:** Why leagues split rights packages (hedge strategy) instead of all-or-nothing decisions
 
 **Uplimit Implementation:**
 ```html
@@ -659,18 +678,35 @@ The evolution of stadium economics has shifted dramatically from a **"fill the s
 
 #### Element 16: iFrame Widget - Stadium Revenue Optimizer
 
+### ◉ Interactive Activity: Stadium Revenue Optimizer
+
+**Practice: MLO 1.1 (Understand ticketing economics) & MLO 1.3 (Evaluate premium seating strategy)**
+
+Premium seating represents only 10-15% of venue capacity but generates 40-50% of ticketing revenue. Why do teams prioritize luxury suites over general admission seats?
+
+In this optimizer, you'll design the seating mix for an 18,000-capacity arena by allocating percentages to luxury suites ($200K/season), club seats ($10K/seat), and general admission ($75/game). You'll see total revenue and discover why teams continuously expand premium inventory.
+
+**What you'll discover:**
+- Why 30 luxury suites generate more revenue than 2,000 upper bowl seats
+- The trade-off between maximum revenue and fan accessibility
+- How pricing tiers multiply to create exponential premium value
+- Why every stadium renovation prioritizes premium seating expansion
+
+**Time commitment:** 4 minutes
+**Learning outcomes practiced:** MLO 1.1 (Understanding ticketing revenue structure), MLO 1.3 (Evaluating premium seating economics)
+
+---
+
 **Widget Status:** ✅ Widget built and ready to embed
 
-This widget is planned for future development. Once built, it will let students design the premium vs. general admission seating mix to maximize revenue while maintaining fan accessibility.
-
-**Widget Purpose:** Design premium vs. general seating mix to maximize revenue.
+**Widget Purpose:** Design premium vs. general seating mix to maximize revenue while balancing fan accessibility.
 
 **How It Works:**
 - **Inputs:** Total capacity (18,000), % luxury suites, % club seats, % general admission
 - **Pricing:** Suites ($200K/season), Club ($10K/seat), GA ($75/game × 41 games)
-- **Output:** Total ticketing revenue + breakdown
-- **Challenge:** Maximize revenue while maintaining fan accessibility
-- **Learning:** Why teams prioritize premium seating expansion
+- **Outputs:** Total ticketing revenue + breakdown by tier, revenue per seat comparison
+- **Challenge:** Maximize revenue while maintaining reasonable accessibility
+- **Learning:** Why teams prioritize premium seating expansion (40-50% of revenue from 10-15% of seats)
 
 **Uplimit Implementation:**
 ```html
@@ -685,7 +721,7 @@ This widget is planned for future development. Once built, it will let students 
 
 #### Element 17: Infobox - Premium Seat Economics
 ```
-Title: 💎 Key Insight: Premium Seat Economics
+Title: ◆ Key Insight: Premium Seat Economics
 
 Premium seating represents only 10-15% of total venue capacity but generates 40-50% of total ticketing revenue. Luxury suites ($100K-500K per season), club seats ($5K-15K per seat), and courtside/field level tickets ($500-2,000+ per game) command exponential premiums over general admission seating. This revolutionary insight transformed modern stadium design—virtually every renovation or new construction prioritizes premium inventory expansion because 20-30 new luxury suites generate more revenue than 2,000 upper bowl seats combined.
 ```

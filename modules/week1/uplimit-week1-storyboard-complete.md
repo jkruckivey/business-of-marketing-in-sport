@@ -9,7 +9,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 1. [Course Context & Learning Outcomes](#course-context)
 2. [V3 Interactive-First Philosophy](#v3-philosophy)
@@ -41,7 +41,7 @@
 ### Week 1 Focus
 **Primary:** CLO 1 (Analyze Revenue Ecosystems)
 **Assessment:** Contributes to Group Marketing Project (60%) + Case Engagement (40%)
-**⏱️ Estimated Time:** 6-8 hours total (90-min video + readings + simulation + case + memo)
+**Estimated Time:** 6-8 hours total (90-min video + readings + simulation + case + memo)
 
 ### Week 1 Module Learning Outcomes (MLOs)
 - **MLO 1.1:** Map the major revenue streams in professional sport (Knowledge)
@@ -283,7 +283,7 @@ Publications & Presentations:
 
 ---
 
-## MODULE 3: Core Content - Revenue Streams ⭐ **V3 INTERACTIVE-FIRST REDESIGN**
+## MODULE 3: Core Content - Revenue Streams ★ **V3 INTERACTIVE-FIRST REDESIGN**
 **Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports MLO 1.1, 1.2, 1.3)
 
 **Uplimit Structure:** Third module in Unit 1
@@ -826,13 +826,13 @@ Merchandising and licensing revenue represents **5-10% of revenue** for most tea
 #### Element 24: Tiles - 3 Merchandising Spikes
 Create 3 tiles (1x3 horizontal layout):
 
-**Tile 1 - Title:** "🏆 Championships"
+**Tile 1 - Title:** "Championships"
 **Tile 1 - Description:** "Playoff runs drive 200-400% sales increases. Winning teams sell championship gear, commemorative items, and celebration merchandise."
 
-**Tile 2 - Title:** "⭐ Star Players"
+**Tile 2 - Title:** "★ Star Players"
 **Tile 2 - Description:** "Superstar acquisitions create immediate sales spikes. LeBron to Lakers = $1M+ in jersey sales within hours of announcement."
 
-**Tile 3 - Title:** "🎨 Limited Designs"
+**Tile 3 - Title:** "Limited Designs"
 **Tile 3 - Description:** "Special edition jerseys (City Edition, throwbacks, collaborations) create artificial scarcity and drive $100M+ in annual revenue."
 
 #### Element 24a: iFrame Widget - Revenue Canvas Builder
@@ -1413,7 +1413,7 @@ Title: Exhibit C: Canadian Market Characteristics
 
 ### Element 1: Infobox Content
 ```
-Title: 📝 Assessment: Revenue Ecosystem Reflection Memo
+Title: Assessment: Revenue Ecosystem Reflection Memo
 
 Task:
 Write a 1-page executive memo (max 500 words) analyzing the revenue ecosystem
@@ -1717,7 +1717,7 @@ Get ready for another intensive week of learning! See you in Week 2.
 
 ### Element 4: Details Content
 ```
-Title: 📚 Optional Extension Resources
+Title: Optional Extension Resources
 
 [Expand for additional reading and resources]
 

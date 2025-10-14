@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed:*)",
+      "Bash(powershell:*)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/Uplimit Training/**)",
+      "WebFetch(domain:www.frontiersin.org)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/business-of-marketing-in-sport/modules/shared-resources/**)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/claude-subagents/**)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/education-toolkit/**)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nv2.0.0: Add evidence-based assessment methodologies\n\nMajor Update:\n- Added PAIRR (Peer and AI Review + Reflection) methodology to assessment-designer\n- Added AI Roleplay exercise design guidance (diagnostic/formative/summative)\n- Added diagnostic rubrics (3-level) to rubric-generator\n- Added uplimit-storyboard-builder agent (9 agents total, up from 7)\n- Updated README with new capabilities and v2.0.0 changelog\n- Consolidated from claude-subagents NPM package (now deprecated)\n\nKey Enhancements:\n- assessment-designer: PAIRR workflow, AI Roleplay types, implementation tips\n- rubric-generator: Diagnostic rubrics, PAIRR bonus structure, AI feedback prompts\n- uplimit-storyboard-builder: Complete copy-paste implementation guides\n\n🤖 Generated with Claude Code (https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nDeprecate repository - consolidate into education-toolkit\n\nThis repository is now deprecated in favor of education-toolkit:\nhttps://github.com/jameskruck/education-toolkit\n\nChanges:\n- Added DEPRECATION-NOTICE.md with full migration guide\n- Updated README.md with deprecation warning and redirect\n- NPM package (@jameskruck/claude-subagents) remains functional but unmaintained\n- All future updates will be in education-toolkit\n\nRationale:\n- education-toolkit offers same 9 agents + 6 slash commands\n- Plugin distribution is easier than NPM for Claude Code users\n- Single maintained codebase reduces duplication\n- education-toolkit v2.0.0 includes new PAIRR, AI Roleplay, diagnostic rubrics\n\n🤖 Generated with Claude Code (https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

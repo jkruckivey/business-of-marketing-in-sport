@@ -191,9 +191,9 @@ Published to NPM as `@jameskruck/claude-subagents@2.2.2`:
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- 2025-10-06: Module 2 Accessibility Enhancement
+## Detailed Changelog
+
+### 2025-10-06: Module 2 Accessibility Enhancement
   - **Critical Accessibility Fixes Applied to modules/module-2/outline.html**:
     - Added skip navigation link (.skip-link) at top of page with keyboard focus reveal
     - Wrapped all content in <main id="main-content"> landmark region
@@ -768,9 +768,6 @@ Published to NPM as `@jameskruck/claude-subagents@2.2.2`:
     - Higher retention through active discovery vs. passive reading
     - Capstone widget integrates ALL Week 2 learning (synthesis/evaluation Bloom's level)
 
-=======
-*Last updated: 2025-10-11*
->>>>>>> Stashed changes
-=======
-*Last updated: 2025-10-11*
->>>>>>> Stashed changes
+---
+
+*Last updated: 2025-10-14*

@@ -981,3 +981,116 @@ business-of-sports-marketing/
     - [course-index.html](course-index.html) - Updated 5 widget launch paths + openModule() function
     - CLAUDE.md - Updated file structure documentation
   - **Verification**: 37 HTML files and 31 markdown files successfully moved to week1/, all links functional
+
+- 2025-10-12: Week 2 Storyboard Alignment with Week 1 Format
+  - **Storyboard Formatting Standardization**: Updated modules/week2/uplimit-week2-storyboard.md to match Week 1's professional format
+    - **Emoji Replacement**: Changed all colored emoji (🔴 🟡 🟢) to black symbols (⬤ ◐ ○) for accessibility and neutral design
+    - **Infobox Title Updates**: Replaced all emoji symbols with Week 1 style (◉ ▶ ▪ ■ ◆) for consistency
+      - Learning Objectives: ◉
+      - Key Insights: ▶
+      - Activities: ■
+      - Assessments: ▪
+      - Case Studies: ▸
+      - Other Content: ◆
+  - **Widget Specifications Enhanced**: Added detailed "How It Works" sections for all 3 Week 2 widgets
+    - **Streaming Wars Strategy Widget**: Added complete inputs/outputs, real examples (Rogers Sportsnet NOW, DAZN, TSN), scenarios, learning objectives
+    - **Property Selection Tool**: Added filtering capabilities, 19 curated properties, comparison view, export functionality
+    - **Team Charter Builder**: Added 4-section structure (roster, communication norms, working guidelines, conflict resolution), PDF export
+    - **Widget Status Indicators**: Added "✅ Phase X widget - BUILT AND READY" lines to all widgets
+    - **Accessibility Checklists**: Added complete WCAG 2.2 AA compliance details for each widget (keyboard navigation, ARIA labels, screen reader support, high contrast, focus indicators)
+  - **Uplimit Implementation**: Enhanced all widget embed code blocks with proper HTML structure, titles, and allowfullscreen attributes
+  - **Pedagogical Alignment**: Verified all widgets support stated MLOs with explicit learning objective mappings
+  - **Format Consistency**: Week 2 storyboard now matches Week 1's professional presentation style and detail level
+  - **Files Modified**: modules/week2/uplimit-week2-storyboard.md (multiple sections updated for consistency)
+
+- 2025-10-13: Week 2 Storyboard Alignment Complete - Video Duration Standardization
+  - **Video Duration Standardization Completed**: Finalized all video references in Week 2 storyboard to match Week 1's brief format
+    - **Rogers Retrospective Video Updated**: Reduced from 14-minute to 2-minute format (6 edits across storyboard)
+      - Line 695: Video duration specification updated to 2 minutes
+      - Lines 700-704: Removed detailed 14-minute timestamped outline (incompatible with 2-minute format)
+      - Line 1212: Content Preparation Checklist updated to 2 minutes
+      - Line 1264: Build Timeline updated to "2min retrospective"
+      - Line 1294: UDL Verification updated to "2min + 2min"
+      - Line 1360: Summary Element Breakdown updated to "2min + 2min"
+    - **Executive Session Video**: Previously updated to 2-minute format (Task 4)
+  - **Week 2 Alignment Project Complete**: All 8 formatting tasks finished
+    - ✅ Task 1: Priority badge symbols (colored emoji → black symbols ⬤ ◐ ○)
+    - ✅ Task 2: Infobox title symbols (emoji → black symbols ◉ ▶ ▪ ■ ◆ ▸)
+    - ✅ Task 3: .docx references replaced with embedded markdown (4 files)
+    - ✅ Task 4: Executive session video reduced to 2-minute format
+    - ✅ Task 5: Rogers retrospective video reduced to 2-minute format (6 edits)
+    - ✅ Task 6: Widget 'How It Works' sections added (3 widgets)
+    - ✅ Task 7: Widget status indicators added ("✅ Built and Ready")
+    - ✅ Task 8: Widget accessibility checklists added (WCAG 2.2 AA compliance)
+  - **Format Consistency Achieved**: Week 2 storyboard now fully aligned with Week 1 standards
+    - Accessibility-first design: Black symbols, neutral colors, WCAG 2.2 AA compliance
+    - Brief video format: All videos 2 minutes (not 14, 90, or longer formats)
+    - Embedded content: Markdown embedded directly (no separate .docx files)
+    - Widget specifications: Complete inputs/outputs, accessibility, learning objectives
+  - **Files Modified**: modules/week2/uplimit-week2-storyboard.md (1414 lines, 6 edits in final task)
+
+- 2025-10-13: Week 2 V3 Interactive Redesign Document Complete
+  - **Comprehensive V3 Redesign Created**: Built complete week2-v3-redesign-interactive.md (1,950 lines) following Week 1 Module 3 redesign format
+    - **Module 3: Media Rights Framework Redesign** - From 1 element (6-7 pages text) → 12 micro-elements with 4 widgets
+      - Text reduced 67% (4,000 words → 1,320 words)
+      - Reading time reduced 65% (15-18 min → 5-6 min)
+      - Added 14 minutes interactive widget time (0 → 14 min)
+      - Active engagement increased from 10% → 60%
+    - **Module 5: Rogers Case Study Redesign** - From 7 elements (10-12 pages case) → 15 micro-elements with 4 widgets
+      - Text reduced 70% (4,000 words → 1,200 words)
+      - Reading time reduced 68% (25-30 min → 8-10 min)
+      - Added 15 minutes interactive case analysis time
+      - Active engagement increased from 5% → 65%
+    - **8 New Interactive Widgets Specified**:
+      - **Module 3 Widgets** (4 total): Audience Size Calculator, Exclusivity Bidding Simulator, Platform Economics Visualizer, Engagement Value Chain Builder
+      - **Module 5 Widgets** (4 total): Rogers Deal Terms Explorer, Projections vs. Actuals Visualizer, Viewership Trends Analyzer, 2026 Decision Simulator (capstone)
+  - **Widget Specifications Complete**: All 8 widgets have comprehensive specs
+    - Purpose and learning objectives (explicit MLO connections)
+    - How It Works (student experience flow with step-by-step interactions)
+    - Inputs and outputs (detailed with real examples: NFL $110B, NHL $5.2B, MLS $250M)
+    - Technical specifications (JavaScript calculation logic, HTML structure, Chart.js integration)
+    - Accessibility features (WCAG 2.2 AA - keyboard navigation, ARIA labels, screen reader support, high contrast, focus indicators)
+    - Implementation time estimates (4-15 hours per widget)
+  - **Element-by-Element Content Specifications**: Every text element has full copy-paste-ready markdown
+    - 20 text blocks total (150 words max each) with embedded markdown in code blocks
+    - 2 video scripts (2 minutes each) with complete narration and timing
+    - 4 tables with all data filled (Linear vs. Streaming comparison, Rogers deal summary, Competitor comparison)
+    - 4 infoboxes with complete copy (Appointment viewing insight, Forecasting failure, Key insights)
+    - 1 vertical list (5 valuation factors) fully written
+  - **Pedagogical Research Foundation**: Research-backed design principles throughout
+    - Active Learning (Bonwell & Eison, 1991): Students construct knowledge through manipulation
+    - Cognitive Load Theory (Sweller, 1988): Short chunks + visuals reduce extraneous load
+    - Dual Coding Theory (Paivio, 1971): Text + interaction enhances retention
+    - Constructivism (Vygotsky): Scaffolded experimentation builds deeper mental models
+    - UDL Engagement: Multiple means of engagement through varied modalities
+  - **Implementation Roadmap**: Phased approach with realistic timelines
+    - **Phase 1: Must-Have** (21-25 hours) - 4 Module 3 core widgets
+    - **Phase 2: High-Value** (20-23 hours) - 3 Module 5 case analysis widgets
+    - **Phase 3: Capstone** (12-15 hours) - 1 strategic decision simulator (most complex, highest pedagogical value)
+    - **Phase 4: Testing & Refinement** (20 hours) - Accessibility testing, cross-browser, user testing with 3 personas
+    - **Total Implementation**: 73-83 hours for full V3 Week 2
+  - **Comparison Metrics V1 vs. V3**: Dramatic transformation documented
+    - Total text words: 4,500 → 1,500 (-67%)
+    - Reading time: 40-48 min → 13-16 min (-65%)
+    - Interactive widgets: 1 → 9 (+800%)
+    - Interactive time: 5 min → 29 min (+480%)
+    - Active engagement %: 15% → 75% (+400%)
+    - Passive → Active ratio: 85:15 → 25:75 (DRAMATIC SHIFT)
+  - **Quality Standards Met**: Comprehensive, production-ready document
+    - ✅ Completeness: Every text element fully written (no placeholders)
+    - ✅ Pedagogical soundness: Every element supports specific MLOs with explicit alignment
+    - ✅ Accessibility: WCAG 2.2 AA compliance built into all widget specifications
+    - ✅ Usability: Clear module-by-module structure with copy-paste markdown, implementation roadmap with dependencies
+  - **Handoff Instructions**: Clear guidance for next steps
+    - Accessibility audit: Use accessibility-auditor agent after widgets built
+    - Widget testing: Use widget-tester agent with 3 student personas
+    - Consistency checking: Use consistency-checker agent across Week 1 and Week 2
+    - Student journey simulation: Use student-journey-simulator with 4 personas
+  - **File Created**: modules/week2/week2-v3-redesign-interactive.md (1,950 lines, 200KB)
+  - **Expected Impact**:
+    - Student feedback shift: "Too much reading" → "Fun, engaging, learned by doing"
+    - Addresses visual learner needs (Sarah: 72/100 → target 85+/100) through interactive manipulation
+    - Addresses time-constrained needs (Alex: 78/100 → target 85+/100) through micro-learning chunks
+    - Higher retention through active discovery vs. passive reading
+    - Capstone widget integrates ALL Week 2 learning (synthesis/evaluation Bloom's level)
+

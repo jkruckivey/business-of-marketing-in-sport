@@ -53,7 +53,9 @@
       "Bash(awk:*)",
       "Bash(tree:*)",
       "Bash(git pull:*)",
-      "Read(//c/Users/james/.claude/**)"
+      "Read(//c/Users/james/.claude/**)",
+      "WebSearch",
+      "WebFetch(domain:support.uplimit.com)"
     ],
     "deny": [],
     "ask": [],

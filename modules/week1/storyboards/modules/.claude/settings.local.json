@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/business-of-marketing-in-sport/modules/week1/**)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/business-of-marketing-in-sport/modules/**)",
+      "Read(//c/Users/james/OneDrive/Documents2/GitHub/education-toolkit/agents/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

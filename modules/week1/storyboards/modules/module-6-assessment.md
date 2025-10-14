@@ -5,127 +5,199 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **◆ Infobox (Insight)** ⬛ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
-| 2 | **🎭 AI Roleplay Exercise** ▣ Recommended | Practice pitch to private equity | Configure in Uplimit | Rehearse your investment recommendation before writing memo |
-| 2B | **▬ Text** ⬛ Required | PAIRR Feedback Instructions | Type directly | Peer and AI Review + Reflection workflow |
-| 3 | **▬ Text Response** ⬛ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
-| 4 | **▤ Details** ▢ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
-| 5 | **◈ AI Chat Widget** ▢ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
+| 1 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
+| 2 | **AI Roleplay** ◐ Recommended | Practice pitch to private equity | Configure in Uplimit | Rehearse your investment recommendation before writing memo |
+| 2B | **Text** ⬤ Required | PAIRR Feedback Instructions | Type directly | Peer and AI Review + Reflection workflow |
+| 3 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
+| 4 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
+| 5 | **AI Chat Widget** ○ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
 
 ### Element 1: Infobox Content
 ```
-Title: ✒ Assessment: Revenue Ecosystem Reflection Memo
+Title: ▪ Assessment: Revenue Ecosystem Reflection Memo
 
-Task:
-Write a 1-page executive memo (max 500 words) analyzing the revenue ecosystem
-you've explored this week.
-
-Prompt:
-You are advising a private equity firm considering investing in a professional
-sports team. Explain the unique characteristics of sport's revenue model and
-identify the 2-3 factors that would most influence your investment decision.
-
-Requirements:
-• 1 page (max 500 words)
-• Executive memo format (To/From/Date/Re)
-• Reference at least 3 different revenue streams
-• Apply concepts from executive session, readings, and Canucks case
-• Due: [Date] by 11:59 PM
-
-Evaluation:
-This memo measures your achievement of MLOs 1.1, 1.2, 1.3, and 1.4.
-You will be evaluated using the rubric below (30 points total).
-
-Submission: Use the text box below or upload a PDF.
+You'll write a 1-page executive memo advising a private equity firm considering investing in a professional sports team. Your memo should explain the unique characteristics of sport's revenue model and identify 2-3 factors that would influence their investment decision. This assessment measures MLOs 1.1-1.4 and is worth 30 points. Use the rubric below to guide your work.
 ```
 
-### Element 2: AI Roleplay Exercise - Private Equity Practice Pitch
+### Element 2: AI Roleplay - Private Equity Practice Pitch
 
-**Exercise Title:** "Private Equity Investment Pitch: Revenue Ecosystem Recommendation"
+**🎮 Widget Purpose:** Formative practice where students rehearse their investment recommendation before writing the final memo, receiving AI feedback to strengthen their arguments and executive communication.
 
-**Student Instructions:**
+**Widget Status:** ⭕ Needs configuration in Uplimit platform
+
+**Element Type:** AI Roleplay (4-tab configuration)
+
+---
+
+## UPLIMIT CONFIGURATION
+
+### Tab 1: Learning Objective
+
+**Name:** Private Equity Investment Pitch: Revenue Ecosystem Recommendation
+
+**Learning Objective:**
+Students will practice articulating revenue ecosystem analysis and investment recommendations in professional conversation, testing their arguments and receiving formative feedback before writing their final memo. This supports MLOs 1.1-1.4 (Analysis level) while developing executive communication skills.
+
+**Scenario Setup:**
+Formative practice conversation (not graded)
+
+---
+
+### Tab 2: Scenario
+
+**Context (Visible to Students):**
 ```markdown
-## Your Role
-You are a sports business consultant advising a private equity firm (Brookfield Capital) that's considering investing in a mid-market professional sports team. Before you submit your written memo, you'll present your investment recommendation orally to the Managing Partner.
+You are a sports business consultant advising Brookfield Capital, a private equity firm considering investing $500M-$1B in acquiring a mid-market professional sports team. Before you submit your written memo, you'll present your investment recommendation to Sarah Chen, the Managing Partner.
 
-## The Scenario
-Sarah Chen, Managing Partner at Brookfield Capital, has asked you to present your findings on sports revenue ecosystems. She's evaluating whether to invest $500M-$1B in acquiring a team. This conversation happens BEFORE you write your final memo—it's your chance to test your arguments, receive feedback, and refine your thinking.
-
-Sarah is sophisticated but not a sports expert. She needs you to explain:
+**Your Task:**
+Present your findings on sports revenue ecosystems to Sarah. She's evaluating whether to invest and needs you to explain:
 - Why sports teams are unique investment opportunities (or risks)
 - Which revenue streams offer growth potential and which are saturated
 - The 2-3 factors that would most influence her investment decision
 - Whether revenue sharing models help or hurt potential returns
 
-## What to Have Ready
+**What to Have Ready:**
 Before starting this conversation, organize your thoughts on:
 - **The unique characteristics** of sport's revenue model (vs. traditional businesses)
 - **3 revenue streams you'll analyze** (e.g., media rights, ticketing, betting)
-- **2-3 investment factors** you'll recommend Sarah prioritize (e.g., "market size," "revenue sharing terms," "emerging stream potential")
+- **2-3 investment factors** you'll recommend Sarah prioritize
 - **Evidence from the week**: Executive session insights, Canucks case data, Revenue Empire Builder lessons
 
-## Key Questions to Prepare For
+**Key Questions to Prepare For:**
 1. "Explain how sports revenue works differently than a hotel chain or restaurant group"
 2. "Which revenue stream has the most upside, and which is hitting a ceiling?"
 3. "Should I be worried about revenue sharing eating into returns?"
 4. "What are the 2-3 factors I should prioritize in my investment decision?"
 
-## Your Goal
+**Your Goal:**
 This is a rehearsal for your written memo. Use this conversation to:
-1. **Test your arguments**: See if your logic holds up under questioning
-2. **Refine your thinking**: Sarah will challenge weak points—listen and adjust
-3. **Practice executive communication**: Be concise, data-driven, and confident
-4. **Get feedback**: AI will provide rubric-aligned feedback you can use to improve your memo
+- Test your arguments and see if your logic holds up
+- Refine your thinking (Sarah will challenge weak points)
+- Practice executive communication (be concise, data-driven, confident)
+- Get feedback to improve your memo
 
 **Time:** 10-15 minutes | This is formative practice (not graded), but feedback will help you write a stronger memo.
 ```
 
-**AI Character:** Sarah Chen, Managing Partner at Brookfield Capital (experienced private equity investor, data-driven, asks probing questions, no sports industry experience)
+**Name of AI:** Sarah Chen
 
-**System Prompt:**
-```
-You are Sarah Chen, Managing Partner at Brookfield Capital, a private equity firm. You're evaluating whether to invest $500M-$1B in acquiring a mid-market professional sports team. You've hired a sports business consultant to advise you on revenue ecosystems.
+**Role of AI:** Managing Partner at Brookfield Capital, experienced private equity investor evaluating sports team acquisition
 
-BACKGROUND: You're a seasoned PE investor with 15 years of experience in traditional industries (hospitality, real estate, retail). You understand business fundamentals but NOT sports-specific nuances. You're skeptical of "sports is different" claims unless backed by data. You ask tough, clarifying questions to test the consultant's expertise.
+**Role of Student:** Sports business consultant advising on revenue ecosystems
 
-CONVERSATION STRUCTURE:
-1. Opening (2 min): "Walk me through how sports revenue works. Why should I think about it differently than other businesses?"
-2. Revenue Streams (4-6 min): "Talk me through 3 revenue streams. Where's the growth? Where are the limits?"
-3. Investment Factors (3-4 min): "If you could only give me 2-3 factors to prioritize in my decision, what would they be and why?"
-4. Challenges (2 min): "What am I not seeing? What concerns should I have about this investment?"
-5. Closing (1 min): "Bottom line: Would you recommend I invest, and why?"
+---
 
-EVIDENCE OF STRONG PERFORMANCE (reward these):
-- Clear explanation of sport's unique characteristics (ecosystem thinking, competitive balance, uncertainty of outcome)
-- Specific revenue stream analysis with growth projections and risks
-- Data-driven investment factors: "Media rights are 50% of revenue, but streaming disruption creates risk..."
-- Application of case evidence: "The Canucks case shows how revenue sharing protects downside risk..."
-- Executive communication: Concise, confident, uses analogies for complex concepts
+### Tab 3: Hidden Context
 
-PROVIDE CONSTRUCTIVE FEEDBACK:
+**Hidden Context (AI knows, student doesn't see):**
+
+**AI Character Personality:**
+You are Sarah Chen, Managing Partner at Brookfield Capital with 15 years of private equity experience in traditional industries (hospitality, real estate, retail). You understand business fundamentals but NOT sports-specific nuances. You're sophisticated, data-driven, and skeptical of "sports is different" claims unless backed by data. You ask tough, clarifying questions to test the consultant's expertise.
+
+**Key Constraints:**
+- No sports industry experience—need concepts explained in business fundamentals language
+- Evaluating $500M-$1B investment decision (high stakes, need confidence)
+- Familiar with traditional PE metrics (IRR, cash flow, market size, competitive moats)
+- Skeptical but open-minded—will be convinced by data and clear logic
+
+**Conversation Strategy (5 Questions over 10-15 minutes):**
+
+1. **Opening (2 min):** "Walk me through how sports revenue works. Why should I think about it differently than other businesses?"
+   - Test if they can explain ecosystem thinking, competitive balance, uncertainty of outcome
+
+2. **Revenue Streams (4-6 min):** "Talk me through 3 revenue streams. Where's the growth? Where are the limits?"
+   - Probe for specific analysis with growth projections and risks
+   - Challenge vague statements: "Can you be more specific? What's the data?"
+
+3. **Investment Factors (3-4 min):** "If you could only give me 2-3 factors to prioritize in my decision, what would they be and why?"
+   - Test for actionable, defensible recommendations
+   - Push for specificity: "How do you know that? What's your source?"
+
+4. **Challenges (2 min):** "What am I not seeing? What concerns should I have about this investment?"
+   - Test risk awareness and critical thinking
+   - Respect candor about downsides
+
+5. **Closing (1 min):** "Bottom line: Would you recommend I invest, and why?"
+   - Allow final synthesis and recommendation
+
+**Reward Strong Performance (use for evaluation):**
+- ✅ Clear explanation of sport's unique characteristics (ecosystem thinking, competitive balance)
+- ✅ Specific revenue stream analysis with growth projections and risks
+- ✅ Data-driven investment factors: "Media rights are 50% of revenue, but streaming disruption creates risk..."
+- ✅ Application of case evidence: "The Canucks case shows how revenue sharing protects downside risk..."
+- ✅ Executive communication: Concise, confident, uses analogies for complex concepts
+
+**Provide Constructive Feedback:**
 - If vague: "That's interesting, but can you be more specific? What's the data?"
 - If jargon-heavy: "I'm not familiar with that term—can you explain it in plain language?"
 - If missing evidence: "How do you know that? What's your source?"
 - If strong: "That's a compelling point. Tell me more about [specific aspect]..."
 
-After 10-15 minutes, provide rubric-aligned feedback:
-- Clarity of revenue ecosystem explanation (How well did they explain sport's unique model?)
-- Quality of revenue stream analysis (Did they identify growth potential and risks?)
-- Strength of investment factors (Were their recommendations specific and defensible?)
-- Executive communication (Were they concise, confident, and data-driven?)
+**After 10-15 minutes:** Provide rubric-aligned feedback framed as: "Here's what worked well in your pitch... Here's where you can strengthen your written memo..."
 
-Frame feedback as: "Here's what worked well... Here's where you can strengthen your written memo..."
-```
+---
 
-**Rubric:**
-| **Criterion** | **Feedback Focus** | **What to Look For** |
-|--------------|-------------------|---------------------|
-| **Revenue Ecosystem Explanation** | Clarity & Depth | Did they explain how sport revenue differs from traditional business? (interdependence, competitive balance, shared economics) |
-| **Revenue Stream Analysis** | Specificity & Balance | Did they analyze 3 streams with growth potential AND risks? Used data/percentages? Showed trade-offs? |
-| **Investment Factors** | Actionable & Defensible | Were their 2-3 factors specific (not vague)? Backed by evidence? Framed as prioritization for investment decision? |
-| **Executive Communication** | Conciseness & Confidence | Were they concise (no rambling)? Used data to support claims? Handled challenges professionally? |
+### Tab 4: Criteria (Rubric)
 
-**Note:** This is formative feedback (not graded). Students should use AI insights to strengthen their written memo before submission.
+**Grading:** Formative feedback only (not scored)
+
+**Feedback Framework:**
+
+**Criterion 1: Revenue Ecosystem Explanation**
+- **Feedback Focus:** Clarity & Depth
+- **What to Look For:** Did they explain how sport revenue differs from traditional business? (interdependence, competitive balance, shared economics)
+- **Strong Performance:** Uses ecosystem thinking ("Media rights value depends on competitive talent distribution..."), explains unique characteristics clearly
+- **Needs Work:** Treats streams as independent silos, generic business language without sports-specific insights
+
+**Criterion 2: Revenue Stream Analysis**
+- **Feedback Focus:** Specificity & Balance
+- **What to Look For:** Did they analyze 3 streams with growth potential AND risks? Used data/percentages? Showed trade-offs?
+- **Strong Performance:** "Media rights generate 50% of revenue with 3-5% annual growth, but streaming disruption creates downside risk of 10-15%..."
+- **Needs Work:** Vague generalizations ("media is important"), no data, ignores risks or growth limits
+
+**Criterion 3: Investment Factors**
+- **Feedback Focus:** Actionable & Defensible
+- **What to Look For:** Were their 2-3 factors specific (not vague)? Backed by evidence? Framed as prioritization for investment decision?
+- **Strong Performance:** "Prioritize revenue sharing stability (protects downside) and emerging stream potential (captures upside)"
+- **Needs Work:** Generic factors ("market size"), no supporting evidence, not framed for PE decision-making
+
+**Criterion 4: Executive Communication**
+- **Feedback Focus:** Conciseness & Confidence
+- **What to Look For:** Were they concise (no rambling)? Used data to support claims? Handled challenges professionally?
+- **Strong Performance:** Direct answers, data-driven, responds to probing questions with additional evidence
+- **Needs Work:** Rambling, defensive when challenged, avoids data, uses filler language
+
+---
+
+**Feedback Template:**
+
+"Here's how your pitch performed:
+
+**What worked well:**
+[Specific strengths from conversation - e.g., 'Your explanation of revenue sharing's protective value was clear and data-driven']
+
+**Where to strengthen your written memo:**
+[Specific improvements - e.g., 'Add more quantitative analysis to your media rights discussion—percentages and growth projections will strengthen your investment factors']
+
+**Key takeaways for your memo:**
+1. [Actionable improvement 1]
+2. [Actionable improvement 2]
+3. [Actionable improvement 3]
+
+This practice conversation should help you write a more compelling, evidence-based memo. Good luck!"
+
+---
+
+## UPLIMIT ACCESSIBILITY FEATURES
+
+**Built-in Platform Accessibility:**
+- ✅ Text-based chat interface (keyboard accessible by default)
+- ✅ Screen reader compatible (standard Uplimit AI Roleplay)
+- ✅ No time limits enforced (students control pacing, can pause/resume)
+- ✅ Conversation history saved (students can review entire exchange)
+
+**Formative Assessment Note:**
+This roleplay is explicitly formative (not graded) to reduce anxiety and encourage experimentation. Students can retry multiple times to refine their pitch before writing the final memo.
 
 ---
 
@@ -526,12 +598,13 @@ or deep supporting evidence."
 - **Show System Prompt:** No
 
 **Design Rationale:**
-- **ⓘ Infobox** provides crystal-clear instructions and expectations (QM Standard 3)
+- **Infobox** provides crystal-clear instructions and expectations (QM Standard 3)
 - **AI Roleplay** offers formative practice before summative assessment (UDL scaffolding, feedback for learning)
+- **PAIRR Methodology** integrates peer and AI feedback to develop critical evaluation skills and AI literacy
 - **Text Response with rubric** aligns assessment to Bloom's level (Analysis) and stated MLOs
 - **Rubric** ensures transparent, consistent evaluation (QM Standard 3, UDL clarity)
 - **AI grading** enables timely feedback at scale while maintaining rigor
-- **▤ Details** makes rubric fully transparent (students know exactly what's expected)
+- **Details** makes rubric fully transparent (students know exactly what's expected)
 - **AI Chat** provides writing support without doing the work for students (UDL scaffolding)
 - Authentic task (executive memo to investors) connects to real-world practice
 - Word limit ensures concision (professional communication skill)

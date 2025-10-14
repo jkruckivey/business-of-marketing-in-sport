@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewership Trends Analyzer - Rogers NHL Performance</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        /* CSS Design System */
+        :root {
+            --color-primary: #c5b783;
+            --color-primary-dark: #8b7b3f;
+            --color-dark: #2c2c2c;
+            --color-success: #4a7c59;
+            --color-danger: #dc2626;
+            --color-warning: #d97706;
+            --color-info: #2563eb;
+            --color-white: #ffffff;
+            --color-light-gray: #f9fafb;
+            --color-gray: #6b7280;
+            --border-radius: 12px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            color: var(--color-dark);
+            padding: 24px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            padding: 32px;
+            box-shadow: var(--shadow);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: var(--color-dark);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--color-gray);
+            font-size: 1.1rem;
+        }
+
+        /* Tabs */
+        .tab-list {
+            display: flex;
+            gap: 8px;
+            border-bottom: 2px solid var(--color-light-gray);
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            padding: 12px 24px;
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-gray);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-button:hover {
+            color: var(--color-primary-dark);
+            background: var(--color-light-gray);
+        }
+
+        .tab-button[aria-selected="true"] {
+            color: var(--color-primary-dark);
+            border-bottom-color: var(--color-primary);
+        }
+
+        .tab-button:focus {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        .tab-panel {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Chart Section */
+        .chart-section {
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 450px;
+            background: var(--color-white);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        /* Key Metrics */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .metric-card {
+            background: var(--color-white);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: var(--color-gray);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--color-dark);
+        }
+
+        .metric-value.negative {
+            color: var(--color-danger);
+        }
+
+        .metric-value.positive {
+            color: var(--color-success);
+        }
+
+        /* Insights */
+        .insights-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid var(--color-warning);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .insights-box h3 {
+            margin-bottom: 12px;
+            color: var(--color-dark);
+        }
+
+        .insights-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .insights-box li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .insights-box li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--color-warning);
+            font-weight: bold;
+        }
+
+        /* Data Table */
+        .data-table-section {
+            margin-top: 24px;
+            background: var(--color-white);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table th {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid var(--color-light-gray);
+        }
+
+        .data-table tr:hover {
+            background: var(--color-light-gray);
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-export {
+            background: var(--color-info);
+            color: var(--color-white);
+        }
+
+        .btn-export:hover {
+            background: #1d4ed8;
+        }
+
+        .btn:focus {
+            outline: 3px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📊 Viewership Trends Analyzer</h1>
+            <p class="subtitle">Analyze Hockey Night in Canada ratings, streaming growth, and demographic shifts</p>
+        </header>
+
+        <!-- Tabs -->
+        <div role="tablist" aria-label="Viewership analysis tabs" class="tab-list">
+            <button role="tab" aria-selected="true" aria-controls="panel-ratings" id="tab-ratings" class="tab-button" tabindex="0">
+                📺 Linear TV Ratings
+            </button>
+            <button role="tab" aria-selected="false" aria-controls="panel-streaming" id="tab-streaming" class="tab-button" tabindex="-1">
+                📱 Streaming Subscribers
+            </button>
+            <button role="tab" aria-selected="false" aria-controls="panel-demographics" id="tab-demographics" class="tab-button" tabindex="-1">
+                👥 Demographics
+            </button>
+        </div>
+
+        <!-- Tab Panel 1: Linear TV Ratings -->
+        <div role="tabpanel" id="panel-ratings" aria-labelledby="tab-ratings" class="tab-panel active">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-label">2014-15 Baseline</div>
+                    <div class="metric-value">1.6M</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">2023-24 Current</div>
+                    <div class="metric-value">1.3M</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">10-Year Change</div>
+                    <div class="metric-value negative">-19%</div>
+                </div>
+            </div>
+
+            <div class="chart-section">
+                <h3 style="text-align: center; margin-bottom: 16px;">Hockey Night in Canada Viewership (2014-2024)</h3>
+                <div class="chart-container">
+                    <canvas id="ratingsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="insights-box">
+                <h3>💡 Key Insights</h3>
+                <ul>
+                    <li><strong>Steady Decline:</strong> 19% viewership drop from 1.6M (2014-15) to 1.3M (2023-24)</li>
+                    <li><strong>COVID Impact:</strong> Largest single-year drop in 2020-21 (-23%) due to no fans, Canadian division only</li>
+                    <li><strong>Weak Canadian Teams:</strong> Only 1-2 Canadian teams in playoffs most years reduces "must-watch" games</li>
+                    <li><strong>Generational Shift:</strong> Younger viewers (18-34) prefer highlights and social clips over full 3-hour games</li>
+                    <li><strong>Rogers' Problem:</strong> Declining linear TV viewership erodes advertising revenue, the main profit driver</li>
+                </ul>
+            </div>
+
+            <div class="data-table-section">
+                <h3 style="margin-bottom: 12px;">Complete Viewership Data</h3>
+                <table class="data-table" id="ratings-table">
+                    <thead>
+                        <tr>
+                            <th>Season</th>
+                            <th>Avg. Viewers (millions)</th>
+                            <th>Change vs. Previous</th>
+                            <th>Key Events</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Tab Panel 2: Streaming Subscribers -->
+        <div role="tabpanel" id="panel-streaming" aria-labelledby="tab-streaming" class="tab-panel">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Year 5 Target</div>
+                    <div class="metric-value">1.0M</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Year 5 Actual</div>
+                    <div class="metric-value">350K</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Gap</div>
+                    <div class="metric-value negative">-65%</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">2024 Current</div>
+                    <div class="metric-value">450K</div>
+                </div>
+            </div>
+
+            <div class="chart-section">
+                <h3 style="text-align: center; margin-bottom: 16px;">Sportsnet NOW Subscribers: Target vs. Actual</h3>
+                <div class="chart-container">
+                    <canvas id="streamingChart"></canvas>
+                </div>
+            </div>
+
+            <div class="insights-box">
+                <h3>💡 Key Insights</h3>
+                <ul>
+                    <li><strong>Massive Shortfall:</strong> Achieved only 350K of 1M target subscribers by Year 5 (2018-19) — 65% miss</li>
+                    <li><strong>NHL-Only Problem:</strong> Fans wanted multi-sport packages (TSN Direct, DAZN) rather than single-league services</li>
+                    <li><strong>Pricing Issue:</strong> $27.99/month for NHL-only vs. DAZN $24.99 for 5+ sports made Sportsnet NOW uncompetitive</li>
+                    <li><strong>Slow Growth Post-COVID:</strong> Streaming adoption accelerated during pandemic but Sportsnet NOW only grew 100K in 4 years</li>
+                    <li><strong>$300M Revenue Miss:</strong> 1M subs @ $25/month = $300M/year projected. Actual: $135M/year (450K × $25 × 12) = $165M shortfall</li>
+                </ul>
+            </div>
+
+            <div class="data-table-section">
+                <h3 style="margin-bottom: 12px;">Streaming Growth Data</h3>
+                <table class="data-table" id="streaming-table">
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Season</th>
+                            <th>Target Subscribers</th>
+                            <th>Actual Subscribers</th>
+                            <th>Gap</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Tab Panel 3: Demographics -->
+        <div role="tabpanel" id="panel-demographics" aria-labelledby="tab-demographics" class="tab-panel">
+            <div class="chart-section">
+                <h3 style="text-align: center; margin-bottom: 16px;">Audience Demographics: 2014 vs. 2024</h3>
+                <div class="chart-container">
+                    <canvas id="demographicsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="insights-box">
+                <h3>💡 Key Demographic Shifts</h3>
+                <ul>
+                    <li><strong>Aging Audience:</strong> 18-34 dropped from 28% to 19% (-32% decline) while 55+ grew from 35% to 44% (+26%)</li>
+                    <li><strong>Gender Balance Improved:</strong> Female viewership grew from 38% (2014) to 42% (2024) — positive trend</li>
+                    <li><strong>Regional Concentration:</strong> Toronto/Montreal account for 55% of total viewership (down from 60% in 2014)</li>
+                    <li><strong>Advertiser Problem:</strong> Advertisers pay premium for 18-49 demo, but NHL audience skews older and less affluent</li>
+                    <li><strong>Generational Challenge:</strong> Young fans consume NHL via highlights (TikTok, Instagram) not full games — harder to monetize</li>
+                </ul>
+            </div>
+
+            <div class="data-table-section">
+                <h3 style="margin-bottom: 12px;">Demographic Breakdown (2024)</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Demographic</th>
+                            <th>2014</th>
+                            <th>2024</th>
+                            <th>Change</th>
+                            <th>Advertiser Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Age 18-34</strong></td>
+                            <td>28%</td>
+                            <td>19%</td>
+                            <td style="color: var(--color-danger)">-32%</td>
+                            <td>High value (CPM $70+)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Age 35-54</strong></td>
+                            <td>37%</td>
+                            <td>37%</td>
+                            <td>Stable</td>
+                            <td>Medium value (CPM $55)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Age 55+</strong></td>
+                            <td>35%</td>
+                            <td>44%</td>
+                            <td style="color: var(--color-danger)">+26%</td>
+                            <td>Low value (CPM $40)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Female Viewers</strong></td>
+                            <td>38%</td>
+                            <td>42%</td>
+                            <td style="color: var(--color-success)">+11%</td>
+                            <td>High value (broader appeal)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Toronto/Montreal</strong></td>
+                            <td>60%</td>
+                            <td>55%</td>
+                            <td>-8%</td>
+                            <td>High value (premium markets)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-export" id="export-btn">
+                ⬇ Export All Data (CSV)
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Data
+        const ratingsData = [
+            { season: '2014-15', viewers: 1.6, change: null, event: 'Year 1: Launch struggles, weak Canadian teams' },
+            { season: '2015-16', viewers: 1.5, change: -6.3, event: 'Cord-cutting accelerates' },
+            { season: '2016-17', viewers: 1.48, change: -1.3, event: 'Streaming launch, multi-sport competition' },
+            { season: '2017-18', viewers: 1.43, change: -3.4, event: 'Maple Leafs playoff boost' },
+            { season: '2018-19', viewers: 1.41, change: -1.4, event: 'Ad CPMs declining' },
+            { season: '2019-20', viewers: 1.37, change: -2.8, event: 'COVID-19 season suspended March 12' },
+            { season: '2020-21', viewers: 1.05, change: -23.4, event: 'Worst year: No fans, Canadian division' },
+            { season: '2021-22', viewers: 1.22, change: 16.2, event: 'Partial recovery, fans return' },
+            { season: '2022-23', viewers: 1.28, change: 4.9, event: 'Maple Leafs playoff run' },
+            { season: '2023-24', viewers: 1.3, change: 1.6, event: 'Final year of Rogers exclusivity' }
+        ];
+
+        const streamingData = [
+            { year: 1, season: '2016-17', target: 200, actual: 50 },
+            { year: 2, season: '2017-18', target: 400, actual: 150 },
+            { year: 3, season: '2018-19', target: 600, actual: 250 },
+            { year: 4, season: '2019-20', target: 800, actual: 300 },
+            { year: 5, season: '2020-21', target: 1000, actual: 350 },
+            { year: 6, season: '2021-22', target: 1200, actual: 380 },
+            { year: 7, season: '2022-23', target: 1400, actual: 420 },
+            { year: 8, season: '2023-24', target: 1600, actual: 450 }
+        ];
+
+        let ratingsChart, streamingChart, demographicsChart;
+
+        // Initialize
+        createRatingsChart();
+        createStreamingChart();
+        createDemographicsChart();
+        populateRatingsTable();
+        populateStreamingTable();
+        setupTabs();
+
+        // Tab functionality
+        function setupTabs() {
+            const tabButtons = document.querySelectorAll('[role="tab"]');
+            const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+
+            tabButtons.forEach((button, index) => {
+                button.addEventListener('click', () => switchTab(index));
+
+                button.addEventListener('keydown', (e) => {
+                    let targetIndex = null;
+
+                    if (e.key === 'ArrowRight') {
+                        targetIndex = (index + 1) % tabButtons.length;
+                    } else if (e.key === 'ArrowLeft') {
+                        targetIndex = (index - 1 + tabButtons.length) % tabButtons.length;
+                    }
+
+                    if (targetIndex !== null) {
+                        e.preventDefault();
+                        switchTab(targetIndex);
+                        tabButtons[targetIndex].focus();
+                    }
+                });
+            });
+
+            function switchTab(targetIndex) {
+                tabButtons.forEach((btn, i) => {
+                    const isSelected = i === targetIndex;
+                    btn.setAttribute('aria-selected', isSelected);
+                    btn.setAttribute('tabindex', isSelected ? '0' : '-1');
+                });
+
+                tabPanels.forEach((panel, i) => {
+                    if (i === targetIndex) {
+                        panel.classList.add('active');
+                    } else {
+                        panel.classList.remove('active');
+                    }
+                });
+            }
+        }
+
+        // Chart 1: Ratings
+        function createRatingsChart() {
+            const ctx = document.getElementById('ratingsChart').getContext('2d');
+            const labels = ratingsData.map(d => d.season);
+            const data = ratingsData.map(d => d.viewers);
+
+            ratingsChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels,
+                    datasets: [{
+                        label: 'Average Viewers (millions)',
+                        data,
+                        borderColor: '#dc2626',
+                        backgroundColor: 'rgba(220, 38, 38, 0.1)',
+                        borderWidth: 3,
+                        tension: 0.3,
+                        fill: true,
+                        pointRadius: 5,
+                        pointHoverRadius: 7
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: true },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => {
+                                    return context.parsed.y.toFixed(2) + 'M viewers';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 0.8,
+                            max: 1.8,
+                            title: {
+                                display: true,
+                                text: 'Average Viewers (millions)',
+                                font: { size: 14, weight: 'bold' }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Chart 2: Streaming
+        function createStreamingChart() {
+            const ctx = document.getElementById('streamingChart').getContext('2d');
+            const labels = streamingData.map(d => d.season);
+            const target = streamingData.map(d => d.target);
+            const actual = streamingData.map(d => d.actual);
+
+            streamingChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels,
+                    datasets: [
+                        {
+                            label: 'Target Subscribers (thousands)',
+                            data: target,
+                            borderColor: '#c5b783',
+                            borderWidth: 3,
+                            borderDash: [10, 5],
+                            tension: 0.3,
+                            fill: false,
+                            pointRadius: 5
+                        },
+                        {
+                            label: 'Actual Subscribers (thousands)',
+                            data: actual,
+                            borderColor: '#dc2626',
+                            backgroundColor: 'rgba(220, 38, 38, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3,
+                            fill: true,
+                            pointRadius: 5
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: true }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Subscribers (thousands)',
+                                font: { size: 14, weight: 'bold' }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Chart 3: Demographics
+        function createDemographicsChart() {
+            const ctx = document.getElementById('demographicsChart').getContext('2d');
+
+            demographicsChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['18-34', '35-54', '55+', 'Female', 'Toronto/Montreal'],
+                    datasets: [
+                        {
+                            label: '2014',
+                            data: [28, 37, 35, 38, 60],
+                            backgroundColor: 'rgba(197, 183, 131, 0.7)',
+                            borderColor: '#c5b783',
+                            borderWidth: 2
+                        },
+                        {
+                            label: '2024',
+                            data: [19, 37, 44, 42, 55],
+                            backgroundColor: 'rgba(220, 38, 38, 0.7)',
+                            borderColor: '#dc2626',
+                            borderWidth: 2
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: true },
+                        tooltip: {
+                            callbacks: {
+                                label: (context) => context.dataset.label + ': ' + context.parsed.y + '%'
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100,
+                            title: {
+                                display: true,
+                                text: 'Percentage of Audience (%)',
+                                font: { size: 14, weight: 'bold' }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Populate tables
+        function populateRatingsTable() {
+            const tbody = document.querySelector('#ratings-table tbody');
+            tbody.innerHTML = ratingsData.map(d => `
+                <tr>
+                    <td>${d.season}</td>
+                    <td>${d.viewers.toFixed(2)}M</td>
+                    <td style="color: ${d.change && d.change < 0 ? 'var(--color-danger)' : 'var(--color-success)'}">
+                        ${d.change ? (d.change > 0 ? '+' : '') + d.change.toFixed(1) + '%' : 'N/A'}
+                    </td>
+                    <td>${d.event}</td>
+                </tr>
+            `).join('');
+        }
+
+        function populateStreamingTable() {
+            const tbody = document.querySelector('#streaming-table tbody');
+            tbody.innerHTML = streamingData.map(d => {
+                const gap = ((d.actual - d.target) / d.target * 100).toFixed(0);
+                return `
+                    <tr>
+                        <td>${d.year}</td>
+                        <td>${d.season}</td>
+                        <td>${d.target}K</td>
+                        <td>${d.actual}K</td>
+                        <td style="color: var(--color-danger)">${gap}%</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Export functionality
+        document.getElementById('export-btn').addEventListener('click', () => {
+            const csvContent = [
+                'RATINGS DATA',
+                'Season,Viewers (M),Change (%),Event',
+                ...ratingsData.map(d => `${d.season},${d.viewers},${d.change || 'N/A'},"${d.event}"`),
+                '',
+                'STREAMING DATA',
+                'Year,Season,Target (K),Actual (K),Gap (%)',
+                ...streamingData.map(d => `${d.year},${d.season},${d.target},${d.actual},${((d.actual - d.target) / d.target * 100).toFixed(0)}`),
+            ].join('\n');
+
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `viewership-trends-analysis-${Date.now()}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>

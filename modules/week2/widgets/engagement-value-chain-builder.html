@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement Value Chain Builder</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        /* CSS Design System */
+        :root {
+            --color-primary: #c5b783;
+            --color-primary-dark: #8b7b3f;
+            --color-dark: #2c2c2c;
+            --color-success: #4a7c59;
+            --color-danger: #dc2626;
+            --color-warning: #d97706;
+            --color-info: #2563eb;
+            --color-white: #ffffff;
+            --color-light-gray: #f9fafb;
+            --color-gray: #6b7280;
+            --border-radius: 12px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            color: var(--color-dark);
+            padding: 24px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            padding: 32px;
+            box-shadow: var(--shadow);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: var(--color-dark);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--color-gray);
+            font-size: 1.1rem;
+        }
+
+        /* Main Grid */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        /* Left Panel: Tactics */
+        .tactics-section {
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+            padding: 24px;
+        }
+
+        .tactics-section h2 {
+            margin-bottom: 20px;
+            color: var(--color-dark);
+        }
+
+        .baseline-info {
+            background: var(--color-white);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--color-primary);
+        }
+
+        .baseline-info strong {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--color-dark);
+        }
+
+        .tactic-checkbox {
+            background: var(--color-white);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .tactic-checkbox:hover {
+            border-color: var(--color-primary);
+        }
+
+        .tactic-checkbox.selected {
+            border-color: var(--color-success);
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        }
+
+        .tactic-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .tactic-header input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .tactic-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--color-dark);
+        }
+
+        .tactic-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            font-size: 0.85rem;
+            padding-left: 32px;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-label {
+            color: var(--color-gray);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .stat-value {
+            font-weight: 600;
+            color: var(--color-dark);
+        }
+
+        /* Right Panel: Results */
+        .results-section {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            border-left: 4px solid var(--color-warning);
+        }
+
+        .results-section h2 {
+            margin-bottom: 20px;
+            color: var(--color-dark);
+        }
+
+        .result-card {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .result-label {
+            font-size: 0.9rem;
+            color: var(--color-gray);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .result-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--color-dark);
+        }
+
+        .result-value.highlight {
+            font-size: 2.2rem;
+            color: var(--color-primary-dark);
+        }
+
+        .result-value.positive {
+            color: var(--color-success);
+        }
+
+        /* Chart Section */
+        .chart-section {
+            grid-column: 1 / -1;
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+            padding: 24px;
+        }
+
+        .chart-section h3 {
+            margin-bottom: 16px;
+            color: var(--color-dark);
+            text-align: center;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            background: var(--color-white);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        /* Insights Section */
+        .insights-section {
+            grid-column: 1 / -1;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            border-left: 4px solid var(--color-info);
+        }
+
+        .insights-section h3 {
+            margin-bottom: 16px;
+            color: var(--color-dark);
+        }
+
+        .insights-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .insights-list li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--color-dark);
+        }
+
+        .insights-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--color-info);
+            font-weight: bold;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-reset {
+            background: var(--color-gray);
+            color: var(--color-white);
+        }
+
+        .btn-reset:hover {
+            background: #4b5563;
+        }
+
+        .btn-export {
+            background: var(--color-info);
+            color: var(--color-white);
+        }
+
+        .btn-export:hover {
+            background: #1d4ed8;
+        }
+
+        .btn:focus {
+            outline: 3px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .tactic-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎯 Fan Engagement Value Chain Builder</h1>
+            <p class="subtitle">Build your engagement strategy and see how tactics increase fan value</p>
+        </header>
+
+        <!-- Main Grid -->
+        <div class="main-grid">
+            <!-- Tactics Section -->
+            <div class="tactics-section">
+                <h2>Select Engagement Tactics</h2>
+
+                <div class="baseline-info">
+                    <strong>Starting Baseline:</strong>
+                    1,000,000 fans × $10/year = $10M/year (passive viewing only)
+                </div>
+
+                <!-- Tactic 1: Mobile App -->
+                <label class="tactic-checkbox" for="tactic-app">
+                    <div class="tactic-header">
+                        <input type="checkbox" id="tactic-app" data-tactic="app"
+                            aria-label="Mobile app engagement tactic">
+                        <span class="tactic-name">📱 Mobile App</span>
+                    </div>
+                    <div class="tactic-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">$2.0M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Adoption</span>
+                            <span class="stat-value">30%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Value/Fan</span>
+                            <span class="stat-value">+$5</span>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Tactic 2: Fantasy Integration -->
+                <label class="tactic-checkbox" for="tactic-fantasy">
+                    <div class="tactic-header">
+                        <input type="checkbox" id="tactic-fantasy" data-tactic="fantasy"
+                            aria-label="Fantasy integration engagement tactic">
+                        <span class="tactic-name">🏆 Fantasy Integration</span>
+                    </div>
+                    <div class="tactic-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">$0.5M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Adoption</span>
+                            <span class="stat-value">15%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Value/Fan</span>
+                            <span class="stat-value">+$15</span>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Tactic 3: Betting Partnerships -->
+                <label class="tactic-checkbox" for="tactic-betting">
+                    <div class="tactic-header">
+                        <input type="checkbox" id="tactic-betting" data-tactic="betting"
+                            aria-label="Betting partnerships engagement tactic">
+                        <span class="tactic-name">🎰 Betting Partnerships</span>
+                    </div>
+                    <div class="tactic-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">$0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Adoption</span>
+                            <span class="stat-value">10%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Value/Fan</span>
+                            <span class="stat-value">+$30</span>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Tactic 4: Exclusive Content -->
+                <label class="tactic-checkbox" for="tactic-content">
+                    <div class="tactic-header">
+                        <input type="checkbox" id="tactic-content" data-tactic="content"
+                            aria-label="Exclusive content engagement tactic">
+                        <span class="tactic-name">🎬 Exclusive Content</span>
+                    </div>
+                    <div class="tactic-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">$3.0M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Adoption</span>
+                            <span class="stat-value">20%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Value/Fan</span>
+                            <span class="stat-value">+$25</span>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Tactic 5: Social Media -->
+                <label class="tactic-checkbox" for="tactic-social">
+                    <div class="tactic-header">
+                        <input type="checkbox" id="tactic-social" data-tactic="social"
+                            aria-label="Social media engagement tactic">
+                        <span class="tactic-name">📢 Social Media Strategy</span>
+                    </div>
+                    <div class="tactic-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">$1.0M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Adoption</span>
+                            <span class="stat-value">50%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Value/Fan</span>
+                            <span class="stat-value">+$8</span>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Tactic 6: Gamification -->
+                <label class="tactic-checkbox" for="tactic-gamification">
+                    <div class="tactic-header">
+                        <input type="checkbox" id="tactic-gamification" data-tactic="gamification"
+                            aria-label="Gamification engagement tactic">
+                        <span class="tactic-name">🎮 Gamification</span>
+                    </div>
+                    <div class="tactic-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Cost</span>
+                            <span class="stat-value">$1.5M</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Adoption</span>
+                            <span class="stat-value">25%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Value/Fan</span>
+                            <span class="stat-value">+$12</span>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" role="region" aria-label="Engagement calculations" aria-live="polite">
+                <h2>Calculated Results</h2>
+
+                <div class="result-card">
+                    <div class="result-label">Total Fan Value (Annual)</div>
+                    <div class="result-value highlight" id="total-value">$10.0M</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Total Investment Cost</div>
+                    <div class="result-value" id="total-cost">$0</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">ROI (Return on Investment)</div>
+                    <div class="result-value positive" id="roi">N/A</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Affordable Rights Budget</div>
+                    <div class="result-value" id="affordable-rights">$7.0M/year</div>
+                </div>
+
+                <div class="result-card">
+                    <div class="result-label">Average Fan Value</div>
+                    <div class="result-value" id="avg-fan-value">$10</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="chart-section">
+            <h3>Engagement Funnel: Passive → Engaged → Super-Fan</h3>
+            <div class="chart-container">
+                <canvas id="funnelChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Insights Section -->
+        <div class="insights-section">
+            <h3>💡 Strategic Insights</h3>
+            <ul class="insights-list" id="insights-list">
+                <li>Select engagement tactics above to see personalized insights</li>
+            </ul>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-reset" id="reset-btn">
+                ↺ Clear All Tactics
+            </button>
+            <button class="btn btn-export" id="export-btn">
+                ⬇ Export Strategy (JSON)
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Tactics data
+        const tacticsData = {
+            app: { name: "Mobile App", cost: 2000000, adoptionRate: 0.30, valuePerFan: 5 },
+            fantasy: { name: "Fantasy Integration", cost: 500000, adoptionRate: 0.15, valuePerFan: 15 },
+            betting: { name: "Betting Partnerships", cost: 0, adoptionRate: 0.10, valuePerFan: 30 },
+            content: { name: "Exclusive Content", cost: 3000000, adoptionRate: 0.20, valuePerFan: 25 },
+            social: { name: "Social Media Strategy", cost: 1000000, adoptionRate: 0.50, valuePerFan: 8 },
+            gamification: { name: "Gamification", cost: 1500000, adoptionRate: 0.25, valuePerFan: 12 }
+        };
+
+        const baseFans = 1000000;
+        const baseFanValue = 10;
+
+        let chart = null;
+
+        // DOM elements
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const tacticLabels = document.querySelectorAll('.tactic-checkbox');
+        const resetBtn = document.getElementById('reset-btn');
+        const exportBtn = document.getElementById('export-btn');
+
+        // Initialize
+        calculateResults();
+
+        // Event listeners
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                updateTacticSelection(checkbox);
+                calculateResults();
+            });
+        });
+
+        resetBtn.addEventListener('click', resetAll);
+        exportBtn.addEventListener('click', exportData);
+
+        function updateTacticSelection(checkbox) {
+            const label = checkbox.closest('.tactic-checkbox');
+            if (checkbox.checked) {
+                label.classList.add('selected');
+            } else {
+                label.classList.remove('selected');
+            }
+        }
+
+        function calculateResults() {
+            const selectedTactics = [];
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    const tacticKey = checkbox.dataset.tactic;
+                    selectedTactics.push(tacticsData[tacticKey]);
+                }
+            });
+
+            let baseValue = baseFans * baseFanValue;
+            let totalCost = 0;
+            let engagementBreakdown = {
+                passive: baseFans,
+                engaged: 0,
+                superfan: 0
+            };
+
+            selectedTactics.forEach(tactic => {
+                const engagedFans = baseFans * tactic.adoptionRate;
+                baseValue += engagedFans * tactic.valuePerFan;
+                totalCost += tactic.cost;
+
+                // Categorize fans
+                if (tactic.valuePerFan >= 20) {
+                    engagementBreakdown.superfan += engagedFans;
+                } else {
+                    engagementBreakdown.engaged += engagedFans;
+                }
+            });
+
+            const totalValue = baseValue;
+            const roi = totalCost > 0 ? ((totalValue - baseFans * baseFanValue - totalCost) / totalCost) * 100 : 0;
+            const affordableRights = totalValue * 0.70; // 30% profit margin
+            const avgFanValue = totalValue / baseFans;
+
+            // Update UI
+            document.getElementById('total-value').textContent = formatCurrency(totalValue);
+            document.getElementById('total-cost').textContent = formatCurrency(totalCost);
+            document.getElementById('roi').textContent = totalCost > 0 ? roi.toFixed(0) + '%' : 'N/A';
+            document.getElementById('affordable-rights').textContent = formatCurrency(affordableRights) + '/year';
+            document.getElementById('avg-fan-value').textContent = '$' + avgFanValue.toFixed(2) + '/fan';
+
+            // Update chart
+            updateChart(engagementBreakdown);
+
+            // Generate insights
+            generateInsights(selectedTactics, totalValue, totalCost, roi, affordableRights);
+        }
+
+        function updateChart(breakdown) {
+            const ctx = document.getElementById('funnelChart').getContext('2d');
+
+            if (chart) {
+                chart.destroy();
+            }
+
+            chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Fan Distribution'],
+                    datasets: [
+                        {
+                            label: 'Passive Viewers',
+                            data: [breakdown.passive],
+                            backgroundColor: 'rgba(107, 114, 128, 0.7)',
+                            borderColor: '#6b7280',
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Engaged Fans',
+                            data: [breakdown.engaged],
+                            backgroundColor: 'rgba(197, 183, 131, 0.7)',
+                            borderColor: '#c5b783',
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Super-Fans',
+                            data: [breakdown.superfan],
+                            backgroundColor: 'rgba(74, 124, 89, 0.7)',
+                            borderColor: '#4a7c59',
+                            borderWidth: 2
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: {
+                            position: 'top'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const value = context.parsed.x;
+                                    const percentage = ((value / baseFans) * 100).toFixed(1);
+                                    return context.dataset.label + ': ' + formatNumber(value) + ' fans (' + percentage + '%)';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            stacked: true,
+                            title: {
+                                display: true,
+                                text: 'Number of Fans',
+                                font: { size: 14, weight: 'bold' }
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return formatNumber(value);
+                                }
+                            }
+                        },
+                        y: {
+                            stacked: true
+                        }
+                    }
+                }
+            });
+        }
+
+        function generateInsights(tactics, totalValue, totalCost, roi, affordableRights) {
+            const insights = [];
+
+            if (tactics.length === 0) {
+                insights.push('Select engagement tactics above to see personalized insights');
+                insights.push('Each tactic increases fan value and justifies higher media rights costs');
+                insights.push('Real example: NBA + DraftKings increased fan value from $12 → $45/year');
+            } else {
+                const multiplier = (totalValue / (baseFans * baseFanValue)).toFixed(2);
+                insights.push(`Your strategy increases total fan value by ${multiplier}x (${formatCurrency(baseFans * baseFanValue)} → ${formatCurrency(totalValue)})`);
+
+                if (roi > 0) {
+                    insights.push(`ROI of ${roi.toFixed(0)}% suggests this strategy is financially viable`);
+                } else if (totalCost > 0) {
+                    insights.push(`Negative ROI suggests costs outweigh incremental value - consider different mix`);
+                }
+
+                insights.push(`With this engagement strategy, you can afford ${formatCurrency(affordableRights)}/year in rights (70% of total fan value)`);
+
+                // Tactic-specific insights
+                const hasBetting = tactics.some(t => t.valuePerFan === 30);
+                if (hasBetting) {
+                    insights.push('Betting integration is high-value ($30/fan) with zero upfront cost - revenue share model works');
+                }
+
+                const hasFantasy = tactics.some(t => t.valuePerFan === 15);
+                if (hasFantasy) {
+                    insights.push('Fantasy integration creates stickiness: fans who play fantasy watch 40% more games');
+                }
+
+                const hasSocial = tactics.some(t => t.adoptionRate === 0.50);
+                if (hasSocial) {
+                    insights.push('Social media has highest reach (50% adoption) but lower per-fan value - good for awareness');
+                }
+
+                const highCostTactics = tactics.filter(t => t.cost >= 2000000);
+                if (highCostTactics.length >= 2) {
+                    insights.push(`⚠️ Caution: ${highCostTactics.length} high-cost tactics selected. Ensure ROI justifies ${formatCurrency(totalCost)} investment`);
+                }
+            }
+
+            const insightsList = document.getElementById('insights-list');
+            insightsList.innerHTML = insights.map(text => `<li>${text}</li>`).join('');
+        }
+
+        function formatCurrency(value) {
+            if (value >= 1000000000) {
+                return '$' + (value / 1000000000).toFixed(2) + 'B';
+            } else if (value >= 1000000) {
+                return '$' + (value / 1000000).toFixed(1) + 'M';
+            } else {
+                return '$' + (value / 1000).toFixed(0) + 'K';
+            }
+        }
+
+        function formatNumber(value) {
+            if (value >= 1000000) {
+                return (value / 1000000).toFixed(1) + 'M';
+            } else if (value >= 1000) {
+                return (value / 1000).toFixed(0) + 'K';
+            } else {
+                return value.toString();
+            }
+        }
+
+        function resetAll() {
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+                checkbox.closest('.tactic-checkbox').classList.remove('selected');
+            });
+            calculateResults();
+        }
+
+        function exportData() {
+            const selectedTactics = [];
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    const tacticKey = checkbox.dataset.tactic;
+                    selectedTactics.push(tacticsData[tacticKey].name);
+                }
+            });
+
+            const data = {
+                strategy: selectedTactics,
+                results: {
+                    totalValue: document.getElementById('total-value').textContent,
+                    totalCost: document.getElementById('total-cost').textContent,
+                    roi: document.getElementById('roi').textContent,
+                    affordableRights: document.getElementById('affordable-rights').textContent,
+                    avgFanValue: document.getElementById('avg-fan-value').textContent
+                }
+            };
+
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `engagement-strategy-${Date.now()}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogers 2026 NHL Decision Simulator - CAPSTONE</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        /* CSS Design System */
+        :root {
+            --color-primary: #c5b783;
+            --color-primary-dark: #8b7b3f;
+            --color-dark: #2c2c2c;
+            --color-success: #4a7c59;
+            --color-danger: #dc2626;
+            --color-warning: #d97706;
+            --color-info: #2563eb;
+            --color-white: #ffffff;
+            --color-light-gray: #f9fafb;
+            --color-gray: #6b7280;
+            --border-radius: 12px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            color: var(--color-dark);
+            padding: 24px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            padding: 32px;
+            box-shadow: var(--shadow);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: var(--color-dark);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--color-gray);
+            font-size: 1.1rem;
+        }
+
+        /* Phase Navigation */
+        .phase-nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+
+        .phase-btn {
+            padding: 12px 24px;
+            background: var(--color-light-gray);
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--color-gray);
+        }
+
+        .phase-btn.active {
+            background: var(--color-primary);
+            color: var(--color-white);
+            border-color: var(--color-primary-dark);
+        }
+
+        .phase-btn.completed {
+            background: var(--color-success);
+            color: var(--color-white);
+        }
+
+        .phase-btn:hover:not(.active) {
+            background: rgba(197, 183, 131, 0.2);
+        }
+
+        .phase-btn:focus {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        /* Phase Sections */
+        .phase-section {
+            display: none;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .phase-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .phase-title {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            color: var(--color-dark);
+        }
+
+        /* Assumptions Section (Phase 1) */
+        .assumptions-grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .assumption-item {
+            background: var(--color-light-gray);
+            padding: 20px;
+            border-radius: var(--border-radius);
+        }
+
+        .assumption-label {
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--color-dark);
+        }
+
+        .assumption-value {
+            color: var(--color-primary-dark);
+            font-size: 1.1rem;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: #ddd;
+            outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="range"]:focus {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: var(--color-white);
+            cursor: pointer;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+
+        /* Options Section (Phase 2) */
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        .option-card {
+            background: var(--color-light-gray);
+            border: 3px solid transparent;
+            border-radius: var(--border-radius);
+            padding: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .option-card:hover {
+            border-color: var(--color-primary);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .option-card.selected {
+            border-color: var(--color-success);
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        }
+
+        .option-card:focus {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        .option-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 12px;
+        }
+
+        .option-cost {
+            font-size: 1.5rem;
+            color: var(--color-primary-dark);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .option-pros, .option-cons {
+            margin-top: 12px;
+        }
+
+        .option-pros h4, .option-cons h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .option-pros h4 {
+            color: var(--color-success);
+        }
+
+        .option-cons h4 {
+            color: var(--color-danger);
+        }
+
+        .option-pros ul, .option-cons ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .option-pros li::before {
+            content: "✓ ";
+            color: var(--color-success);
+            font-weight: bold;
+        }
+
+        .option-cons li::before {
+            content: "✗ ";
+            color: var(--color-danger);
+            font-weight: bold;
+        }
+
+        /* Projection Section (Phase 3) */
+        .chart-section {
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin-bottom: 24px;
+            background: var(--color-white);
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .metric-card {
+            background: var(--color-white);
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: var(--color-gray);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--color-dark);
+        }
+
+        .metric-value.positive {
+            color: var(--color-success);
+        }
+
+        .metric-value.negative {
+            color: var(--color-danger);
+        }
+
+        /* Strategic Scorecard */
+        .scorecard {
+            background: var(--color-white);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .scorecard h3 {
+            margin-bottom: 16px;
+            color: var(--color-dark);
+        }
+
+        .scorecard-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--color-light-gray);
+        }
+
+        .scorecard-item:last-child {
+            border-bottom: none;
+        }
+
+        .scorecard-label {
+            font-weight: 600;
+            color: var(--color-dark);
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        /* Comparison Table (Phase 4) */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .comparison-table th {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 16px;
+            border-bottom: 1px solid var(--color-light-gray);
+        }
+
+        .comparison-table tr:hover {
+            background: var(--color-light-gray);
+        }
+
+        .comparison-table .best {
+            background: #f0fdf4;
+            font-weight: 600;
+        }
+
+        /* Recommendation Section (Phase 5) - Visual Decision Matrix */
+        .recommendation-section {
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+            padding: 24px;
+        }
+
+        .decision-matrix-wrapper {
+            overflow-x: auto;
+            margin-bottom: 24px;
+        }
+
+        .decision-matrix {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: var(--color-white);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .decision-matrix th {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 16px;
+            text-align: left;
+            font-weight: 600;
+            border: 1px solid var(--color-primary-dark);
+        }
+
+        .decision-matrix td {
+            padding: 16px;
+            border: 1px solid #e5e7eb;
+            vertical-align: middle;
+        }
+
+        .decision-matrix tr:hover td {
+            background: var(--color-light-gray);
+        }
+
+        .criterion-label {
+            font-weight: 600;
+            color: var(--color-dark);
+        }
+
+        .rating-cell {
+            text-align: center;
+        }
+
+        .rating-stars {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .rating-star {
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: #d1d5db;
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+
+        .rating-star:hover {
+            transform: scale(1.1);
+        }
+
+        .rating-star.filled {
+            color: #fbbf24;
+        }
+
+        .rating-star.active {
+            animation: pulse 0.3s ease;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .cell-score {
+            margin-top: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 12px;
+            display: inline-block;
+        }
+
+        .cell-score.low {
+            background: #fecaca;
+            color: #991b1b;
+        }
+
+        .cell-score.medium {
+            background: #fde68a;
+            color: #78350f;
+        }
+
+        .cell-score.high {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .recommendation-summary {
+            background: var(--color-white);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+            border-left: 4px solid var(--color-primary);
+        }
+
+        .recommendation-summary h4 {
+            color: var(--color-dark);
+            margin-bottom: 12px;
+        }
+
+        .recommendation-summary .winner {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-success);
+            margin-bottom: 8px;
+        }
+
+        .recommendation-summary .rationale {
+            color: var(--color-gray);
+            line-height: 1.6;
+        }
+
+        .optional-notes {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 2px solid #e5e7eb;
+        }
+
+        .optional-notes h4 {
+            color: var(--color-dark);
+            margin-bottom: 12px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 16px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+
+        .char-count {
+            text-align: right;
+            margin-top: 8px;
+            color: var(--color-gray);
+            font-size: 0.9rem;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .btn-primary:hover {
+            background: var(--color-primary-dark);
+        }
+
+        .btn-secondary {
+            background: var(--color-gray);
+            color: var(--color-white);
+        }
+
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+
+        .btn-success {
+            background: var(--color-success);
+            color: var(--color-white);
+        }
+
+        .btn-success:hover {
+            background: #3d6449;
+        }
+
+        .btn:focus {
+            outline: 3px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎯 Rogers 2026 NHL Decision Simulator</h1>
+            <p class="subtitle">CAPSTONE: Make your strategic recommendation for Rogers' next move</p>
+        </header>
+
+        <!-- Phase Navigation -->
+        <nav class="phase-nav" role="navigation" aria-label="Decision simulator phases">
+            <button class="phase-btn active" data-phase="1" aria-label="Phase 1: Set Assumptions">
+                1. Set Assumptions
+            </button>
+            <button class="phase-btn" data-phase="2" aria-label="Phase 2: Choose Option">
+                2. Choose Option
+            </button>
+            <button class="phase-btn" data-phase="3" aria-label="Phase 3: View Projection">
+                3. View Projection
+            </button>
+            <button class="phase-btn" data-phase="4" aria-label="Phase 4: Compare Alternatives">
+                4. Compare Alternatives
+            </button>
+            <button class="phase-btn" data-phase="5" aria-label="Phase 5: Make Recommendation">
+                5. Make Recommendation
+            </button>
+        </nav>
+
+        <!-- PHASE 1: Set Assumptions -->
+        <div id="phase-1" class="phase-section active">
+            <h2 class="phase-title">Phase 1: Set Your Assumptions</h2>
+            <p style="margin-bottom: 24px; color: var(--color-gray);">
+                Adjust the sliders to reflect your forecast for 2026-2036. These assumptions will drive the financial projections.
+            </p>
+
+            <div class="assumptions-grid">
+                <div class="assumption-item">
+                    <div class="assumption-label">
+                        <span>📉 Cord-Cutting Rate (Annual)</span>
+                        <span class="assumption-value" id="cord-cutting-value">5%</span>
+                    </div>
+                    <input type="range" id="cord-cutting" min="3" max="8" step="0.5" value="5"
+                        aria-label="Cord-cutting rate" aria-valuemin="3" aria-valuemax="8" aria-valuenow="5">
+                    <p style="font-size: 0.9rem; color: var(--color-gray); margin-top: 8px;">
+                        How fast will linear TV subscribers decline? (Past: 8%/year 2014-2024)
+                    </p>
+                </div>
+
+                <div class="assumption-item">
+                    <div class="assumption-label">
+                        <span>📈 Streaming Growth Rate (Annual)</span>
+                        <span class="assumption-value" id="streaming-growth-value">15%</span>
+                    </div>
+                    <input type="range" id="streaming-growth" min="5" max="25" step="5" value="15"
+                        aria-label="Streaming growth rate" aria-valuemin="5" aria-valuemax="25" aria-valuenow="15">
+                    <p style="font-size: 0.9rem; color: var(--color-gray); margin-top: 8px;">
+                        How fast will streaming subscribers grow? (Past: Sportsnet NOW grew 12%/year but missed targets)
+                    </p>
+                </div>
+
+                <div class="assumption-item">
+                    <div class="assumption-label">
+                        <span>📊 NHL Viewership Trend</span>
+                    </div>
+                    <select id="viewership-trend" aria-label="NHL viewership trend">
+                        <option value="-2">Decline 2%/year (pessimistic)</option>
+                        <option value="0" selected>Stable (flat ratings)</option>
+                        <option value="2">Grow 2%/year (optimistic)</option>
+                    </select>
+                    <p style="font-size: 0.9rem; color: var(--color-gray); margin-top: 8px;">
+                        Will Hockey Night in Canada ratings improve? (Past: -28% over 10 years)
+                    </p>
+                </div>
+
+                <div class="assumption-item">
+                    <div class="assumption-label">
+                        <span>⚔️ Competitive Intensity</span>
+                    </div>
+                    <select id="competitive-intensity" aria-label="Competitive intensity">
+                        <option value="low">Low (TSN, DAZN only)</option>
+                        <option value="medium" selected>Medium (+ Amazon Prime Video)</option>
+                        <option value="high">High (+ Apple TV+, Google/YouTube)</option>
+                    </select>
+                    <p style="font-size: 0.9rem; color: var(--color-gray); margin-top: 8px;">
+                        How many bidders will compete for NHL rights in 2026?
+                    </p>
+                </div>
+
+                <div class="assumption-item">
+                    <div class="assumption-label">
+                        <span>🎰 Betting Revenue Opportunity (Annual)</span>
+                        <span class="assumption-value" id="betting-revenue-value">$50M</span>
+                    </div>
+                    <input type="range" id="betting-revenue" min="0" max="100" step="25" value="50"
+                        aria-label="Betting revenue" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                    <p style="font-size: 0.9rem; color: var(--color-gray); margin-top: 8px;">
+                        Can Rogers monetize betting integration? (ESPN+DraftKings: ~$75M/year)
+                    </p>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="goToPhase(2)">
+                    Continue to Options →
+                </button>
+            </div>
+        </div>
+
+        <!-- PHASE 2: Choose Option -->
+        <div id="phase-2" class="phase-section">
+            <h2 class="phase-title">Phase 2: Choose Your Strategic Option</h2>
+            <p style="margin-bottom: 24px; color: var(--color-gray);">
+                Select one option. Each has different financial and strategic implications based on your assumptions.
+            </p>
+
+            <div class="options-grid">
+                <div class="option-card" data-option="renew" role="button" tabindex="0"
+                    aria-label="Option 1: Renew Exclusive">
+                    <div class="option-title">Option 1: Renew Exclusive</div>
+                    <div class="option-cost">$325M/year</div>
+                    <p style="margin-bottom: 16px;">Full national package (all games, playoffs, streaming rights)</p>
+
+                    <div class="option-pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Control entire Canadian NHL audience</li>
+                            <li>Leverage for betting partnerships</li>
+                            <li>Brand prestige (flagship property)</li>
+                        </ul>
+                    </div>
+                    <div class="option-cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>High fixed cost ($3.25B over 10 years)</li>
+                            <li>Risk of repeating 2014-2024 losses</li>
+                            <li>Single-property concentration risk</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="option-card" data-option="split" role="button" tabindex="0"
+                    aria-label="Option 2: Split Package">
+                    <div class="option-title">Option 2: Split Package</div>
+                    <div class="option-cost">$200M/year</div>
+                    <p style="margin-bottom: 16px;">Regional games + streaming (share national with TSN/Amazon)</p>
+
+                    <div class="option-pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>Lower cost = lower risk ($2B vs. $3.25B)</li>
+                            <li>Still own streaming rights</li>
+                            <li>Free up $125M/year for other properties</li>
+                        </ul>
+                    </div>
+                    <div class="option-cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Share marquee games with competitors</li>
+                            <li>Less negotiating power with advertisers</li>
+                            <li>Brand dilution (not THE NHL partner)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="option-card" data-option="walk" role="button" tabindex="0"
+                    aria-label="Option 3: Walk Away">
+                    <div class="option-title">Option 3: Walk Away</div>
+                    <div class="option-cost">$0/year</div>
+                    <p style="margin-bottom: 16px;">Exit NHL, acquire other properties (NFL, EPL, F1, etc.)</p>
+
+                    <div class="option-pros">
+                        <h4>Pros</h4>
+                        <ul>
+                            <li>No sunk cost fallacy</li>
+                            <li>Diversify portfolio (DAZN model)</li>
+                            <li>Acquire growth properties (F1, UFC, soccer)</li>
+                        </ul>
+                    </div>
+                    <div class="option-cons">
+                        <h4>Cons</h4>
+                        <ul>
+                            <li>Lose Canada's #1 sport</li>
+                            <li>TSN becomes dominant sports brand</li>
+                            <li>Risky pivot after 12-year investment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-secondary" onclick="goToPhase(1)">
+                    ← Back to Assumptions
+                </button>
+                <button class="btn btn-primary" onclick="calculateProjections()">
+                    View 10-Year Projection →
+                </button>
+            </div>
+        </div>
+
+        <!-- PHASE 3: View Projection -->
+        <div id="phase-3" class="phase-section">
+            <h2 class="phase-title">Phase 3: 10-Year Financial Projection</h2>
+            <p style="margin-bottom: 24px; color: var(--color-gray);">
+                Based on your assumptions and option choice, here's the projected financial performance.
+            </p>
+
+            <!-- Metrics Summary -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Break-Even Year</div>
+                    <div class="metric-value" id="break-even-result">Year 5</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Year 10 Annual Profit</div>
+                    <div class="metric-value" id="year10-profit">$0M</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Cumulative 10-Year Profit</div>
+                    <div class="metric-value" id="cumulative-result">$0M</div>
+                </div>
+            </div>
+
+            <!-- Chart -->
+            <div class="chart-section">
+                <h3 style="margin-bottom: 16px;">Annual Revenue vs. Costs</h3>
+                <div class="chart-container">
+                    <canvas id="projectionChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Strategic Scorecard -->
+            <div class="scorecard">
+                <h3>Strategic Scorecard</h3>
+                <div id="scorecard-items">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-secondary" onclick="goToPhase(2)">
+                    ← Change Option
+                </button>
+                <button class="btn btn-primary" onclick="goToPhase(4)">
+                    Compare Alternatives →
+                </button>
+            </div>
+        </div>
+
+        <!-- PHASE 4: Compare Alternatives -->
+        <div id="phase-4" class="phase-section">
+            <h2 class="phase-title">Phase 4: Compare All Three Options</h2>
+            <p style="margin-bottom: 24px; color: var(--color-gray);">
+                Side-by-side comparison showing how each option performs under your assumptions.
+            </p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Option 1: Renew ($325M)</th>
+                        <th>Option 2: Split ($200M)</th>
+                        <th>Option 3: Walk Away ($0)</th>
+                    </tr>
+                </thead>
+                <tbody id="comparison-tbody">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+
+            <div class="action-buttons">
+                <button class="btn btn-secondary" onclick="goToPhase(3)">
+                    ← Back to Projection
+                </button>
+                <button class="btn btn-primary" onclick="goToPhase(5)">
+                    Make Recommendation →
+                </button>
+            </div>
+        </div>
+
+        <!-- PHASE 5: Executive Recommendation (Visual Decision Matrix) -->
+        <div id="phase-5" class="phase-section">
+            <h2 class="phase-title">Phase 5: Your Executive Recommendation</h2>
+            <p style="margin-bottom: 24px; color: var(--color-gray);">
+                Rate each option on 5 strategic criteria (1-5 stars). Your ratings will automatically generate a recommendation.
+            </p>
+
+            <div class="recommendation-section">
+                <h3 style="margin-bottom: 16px;">Decision Matrix: Rate Each Option</h3>
+
+                <div class="decision-matrix-wrapper">
+                    <table class="decision-matrix" role="table" aria-label="Strategic decision matrix">
+                        <thead>
+                            <tr>
+                                <th scope="col">Criterion</th>
+                                <th scope="col">Option 1: Renew ($325M)</th>
+                                <th scope="col">Option 2: Split ($200M)</th>
+                                <th scope="col">Option 3: Walk Away ($0)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div class="criterion-label">Financial Return</div><small>Profitability & ROI</small></td>
+                                <td class="rating-cell" data-option="renew" data-criterion="financial">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                                <td class="rating-cell" data-option="split" data-criterion="financial">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                                <td class="rating-cell" data-option="walk" data-criterion="financial">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="criterion-label">Risk Management</div><small>Downside protection</small></td>
+                                <td class="rating-cell" data-option="renew" data-criterion="risk">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                                <td class="rating-cell" data-option="split" data-criterion="risk">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                                <td class="rating-cell" data-option="walk" data-criterion="risk">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="criterion-label">Strategic Fit</div><small>Brand alignment</small></td>
+                                <td class="rating-cell" data-option="renew" data-criterion="strategic">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                                <td class="rating-cell" data-option="split" data-criterion="strategic">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                                <td class="rating-cell" data-option="walk" data-criterion="strategic">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="criterion-label">Growth Potential</div><small>Future upside</small></td>
+                                <td class="rating-cell" data-option="renew" data-criterion="growth">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                                <td class="rating-cell" data-option="split" data-criterion="growth">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                                <td class="rating-cell" data-option="walk" data-criterion="growth">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="criterion-label">Competitive Position</div><small>Market strength</small></td>
+                                <td class="rating-cell" data-option="renew" data-criterion="competitive">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                                <td class="rating-cell" data-option="split" data-criterion="competitive">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                                <td class="rating-cell" data-option="walk" data-criterion="competitive">
+                                    <div class="rating-stars">
+                                        <span class="rating-star" data-value="1">★</span>
+                                        <span class="rating-star" data-value="2">★</span>
+                                        <span class="rating-star" data-value="3">★</span>
+                                        <span class="rating-star" data-value="4">★</span>
+                                        <span class="rating-star" data-value="5">★</span>
+                                    </div>
+                                    <div class="cell-score"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Auto-generated Recommendation Summary -->
+                <div class="recommendation-summary" id="recommendation-summary" style="display: none;">
+                    <h4>📊 Analysis Complete</h4>
+                    <div class="winner" id="winner-text"></div>
+                    <div class="rationale" id="rationale-text"></div>
+                </div>
+
+                <!-- Optional Text Notes -->
+                <div class="optional-notes">
+                    <h4>💡 Optional: Additional Commentary</h4>
+                    <p style="color: var(--color-gray); font-size: 0.9rem; margin-bottom: 12px;">
+                        Add any additional context or caveats to support your visual ratings (optional, 150 words max).
+                    </p>
+                    <textarea id="recommendation-text" placeholder="Example: 'While Split Package scores highest overall, Rogers' brand identity as THE NHL partner may justify the premium for Renew...'"
+                        aria-label="Optional additional commentary" maxlength="1000"></textarea>
+                    <div class="char-count">
+                        <span id="word-count">0</span> / 150 words
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-secondary" onclick="goToPhase(4)">
+                    ← Back to Comparison
+                </button>
+                <button class="btn btn-success" onclick="exportAnalysis()">
+                    ⬇ Export Full Analysis (JSON)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // State management
+        let state = {
+            assumptions: {
+                cordCutting: 5,
+                streamingGrowth: 15,
+                viewershipTrend: 0,
+                competitiveIntensity: 'medium',
+                bettingRevenue: 50
+            },
+            selectedOption: null,
+            projections: {},
+            recommendation: ''
+        };
+
+        let projectionChart = null;
+
+        // DOM elements
+        const phaseButtons = document.querySelectorAll('.phase-btn');
+        const optionCards = document.querySelectorAll('.option-card');
+
+        // Initialize
+        initializeEventListeners();
+
+        function initializeEventListeners() {
+            // Phase navigation
+            phaseButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const phase = parseInt(btn.dataset.phase);
+                    goToPhase(phase);
+                });
+            });
+
+            // Assumptions sliders
+            document.getElementById('cord-cutting').addEventListener('input', (e) => {
+                state.assumptions.cordCutting = parseFloat(e.target.value);
+                document.getElementById('cord-cutting-value').textContent = e.target.value + '%';
+            });
+
+            document.getElementById('streaming-growth').addEventListener('input', (e) => {
+                state.assumptions.streamingGrowth = parseFloat(e.target.value);
+                document.getElementById('streaming-growth-value').textContent = e.target.value + '%';
+            });
+
+            document.getElementById('betting-revenue').addEventListener('input', (e) => {
+                state.assumptions.bettingRevenue = parseFloat(e.target.value);
+                document.getElementById('betting-revenue-value').textContent = '$' + e.target.value + 'M';
+            });
+
+            document.getElementById('viewership-trend').addEventListener('change', (e) => {
+                state.assumptions.viewershipTrend = parseFloat(e.target.value);
+            });
+
+            document.getElementById('competitive-intensity').addEventListener('change', (e) => {
+                state.assumptions.competitiveIntensity = e.target.value;
+            });
+
+            // Option selection
+            optionCards.forEach(card => {
+                card.addEventListener('click', () => selectOption(card));
+                card.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        selectOption(card);
+                    }
+                });
+            });
+
+            // Recommendation text
+            document.getElementById('recommendation-text').addEventListener('input', (e) => {
+                const text = e.target.value;
+                const words = text.trim().split(/\s+/).filter(w => w.length > 0).length;
+                const wordCountEl = document.getElementById('word-count');
+                wordCountEl.textContent = words;
+
+                const charCountEl = wordCountEl.parentElement;
+                if (words > 250) {
+                    charCountEl.classList.add('exceeded');
+                    charCountEl.classList.remove('warning');
+                } else if (words > 225) {
+                    charCountEl.classList.add('warning');
+                    charCountEl.classList.remove('exceeded');
+                } else {
+                    charCountEl.classList.remove('warning', 'exceeded');
+                }
+
+                state.recommendation = text;
+            });
+        }
+
+        function goToPhase(phaseNum) {
+            // Hide all phases
+            document.querySelectorAll('.phase-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show target phase
+            document.getElementById(`phase-${phaseNum}`).classList.add('active');
+
+            // Update navigation buttons
+            phaseButtons.forEach(btn => {
+                const btnPhase = parseInt(btn.dataset.phase);
+                btn.classList.remove('active', 'completed');
+
+                if (btnPhase === phaseNum) {
+                    btn.classList.add('active');
+                } else if (btnPhase < phaseNum) {
+                    btn.classList.add('completed');
+                }
+            });
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function selectOption(card) {
+            optionCards.forEach(c => c.classList.remove('selected'));
+            card.classList.add('selected');
+            state.selectedOption = card.dataset.option;
+        }
+
+        function calculateProjections() {
+            if (!state.selectedOption) {
+                alert('Please select an option first');
+                return;
+            }
+
+            const option = state.selectedOption;
+            const assumptions = state.assumptions;
+
+            // Calculate 10-year projection based on option and assumptions
+            let projections;
+            if (option === 'renew') {
+                projections = calculateRenewProjection(assumptions);
+            } else if (option === 'split') {
+                projections = calculateSplitProjection(assumptions);
+            } else {
+                projections = calculateWalkProjection(assumptions);
+            }
+
+            state.projections = projections;
+
+            // Update UI
+            updateProjectionResults(projections);
+            updateComparisonTable();
+
+            goToPhase(3);
+        }
+
+        function calculateRenewProjection(assumptions) {
+            const rightsCost = 325; // $325M/year
+            const years = 10;
+            const results = [];
+
+            let linearSubs = 8.1; // Million (starting 2026, already declined from 11.2M)
+            let streamingSubs = 450; // Thousand
+
+            for (let year = 1; year <= years; year++) {
+                // Linear TV decline
+                linearSubs *= (1 - assumptions.cordCutting / 100);
+
+                // Streaming growth
+                streamingSubs *= (1 + assumptions.streamingGrowth / 100);
+
+                // Calculate revenue
+                const adRevenue = (linearSubs * 0.15 * 272 * 55) / 1000; // viewership * games * CPM
+                const carriageRevenue = linearSubs * 0.50 * 12; // subs * monthly fee
+                const streamingRevenue = (streamingSubs / 1000) * 20 * 12; // subs * price
+                const bettingRevenue = assumptions.bettingRevenue;
+                const viewershipAdjustment = 1 + (assumptions.viewershipTrend / 100 * year);
+
+                const totalRevenue = (adRevenue + carriageRevenue + streamingRevenue + bettingRevenue) * viewershipAdjustment;
+                const costs = rightsCost + 50; // rights + production
+                const profit = totalRevenue - costs;
+
+                results.push({ year, revenue: totalRevenue, costs, profit });
+            }
+
+            return results;
+        }
+
+        function calculateSplitProjection(assumptions) {
+            const rightsCost = 200; // $200M/year (lower cost)
+            const years = 10;
+            const results = [];
+
+            let linearSubs = 8.1;
+            let streamingSubs = 450;
+
+            for (let year = 1; year <= years; year++) {
+                linearSubs *= (1 - assumptions.cordCutting / 100);
+                streamingSubs *= (1 + assumptions.streamingGrowth / 100);
+
+                // Reduced revenue (share national games)
+                const adRevenue = (linearSubs * 0.10 * 272 * 55) / 1000; // Lower viewership share
+                const carriageRevenue = linearSubs * 0.50 * 12;
+                const streamingRevenue = (streamingSubs / 1000) * 20 * 12;
+                const bettingRevenue = assumptions.bettingRevenue * 0.7; // Less leverage
+                const viewershipAdjustment = 1 + (assumptions.viewershipTrend / 100 * year);
+
+                const totalRevenue = (adRevenue + carriageRevenue + streamingRevenue + bettingRevenue) * viewershipAdjustment;
+                const costs = rightsCost + 35; // Lower costs
+                const profit = totalRevenue - costs;
+
+                results.push({ year, revenue: totalRevenue, costs, profit });
+            }
+
+            return results;
+        }
+
+        function calculateWalkProjection(assumptions) {
+            // Alternative property portfolio
+            const years = 10;
+            const results = [];
+
+            for (let year = 1; year <= years; year++) {
+                // Diversified portfolio: F1, EPL, UFC, etc. (hypothetical)
+                const revenue = 150 + (year * 15); // Growing portfolio
+                const costs = 120 + (year * 5); // Acquisition + production
+                const profit = revenue - costs;
+
+                results.push({ year, revenue, costs, profit });
+            }
+
+            return results;
+        }
+
+        function updateProjectionResults(projections) {
+            // Find break-even
+            let breakEven = null;
+            for (let i = 0; i < projections.length; i++) {
+                if (projections[i].profit > 0) {
+                    breakEven = projections[i].year;
+                    break;
+                }
+            }
+
+            document.getElementById('break-even-result').textContent = breakEven ? `Year ${breakEven}` : 'Never';
+
+            const year10Profit = projections[9].profit;
+            const year10El = document.getElementById('year10-profit');
+            year10El.textContent = formatCurrency(year10Profit);
+            year10El.className = 'metric-value ' + (year10Profit > 0 ? 'positive' : 'negative');
+
+            const cumulative = projections.reduce((sum, p) => sum + p.profit, 0);
+            const cumulativeEl = document.getElementById('cumulative-result');
+            cumulativeEl.textContent = formatCurrency(cumulative);
+            cumulativeEl.className = 'metric-value ' + (cumulative > 0 ? 'positive' : 'negative');
+
+            // Draw chart
+            createProjectionChart(projections);
+
+            // Create scorecard
+            createScorecard(projections, breakEven, cumulative);
+        }
+
+        function createProjectionChart(projections) {
+            const ctx = document.getElementById('projectionChart').getContext('2d');
+
+            if (projectionChart) {
+                projectionChart.destroy();
+            }
+
+            const years = projections.map(p => `Year ${p.year}`);
+            const revenues = projections.map(p => p.revenue);
+            const costs = projections.map(p => p.costs);
+            const profits = projections.map(p => p.profit);
+
+            projectionChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: years,
+                    datasets: [
+                        {
+                            label: 'Revenue',
+                            data: revenues,
+                            borderColor: '#2563eb',
+                            backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3
+                        },
+                        {
+                            label: 'Costs',
+                            data: costs,
+                            borderColor: '#dc2626',
+                            backgroundColor: 'rgba(220, 38, 38, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3
+                        },
+                        {
+                            label: 'Profit',
+                            data: profits,
+                            borderColor: '#4a7c59',
+                            backgroundColor: 'rgba(74, 124, 89, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3,
+                            fill: true
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: true }
+                    },
+                    scales: {
+                        y: {
+                            title: { display: true, text: 'Millions ($)' },
+                            ticks: {
+                                callback: (value) => '$' + value.toFixed(0) + 'M'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function createScorecard(projections, breakEven, cumulative) {
+            const scorecard = document.getElementById('scorecard-items');
+
+            const financial = cumulative > 500 ? 5 : cumulative > 100 ? 4 : cumulative > 0 ? 3 : cumulative > -500 ? 2 : 1;
+            const risk = state.selectedOption === 'walk' ? 4 : state.selectedOption === 'split' ? 4 : 2;
+            const strategic = state.selectedOption === 'renew' ? 5 : state.selectedOption === 'split' ? 3 : 2;
+            const growth = state.assumptions.streamingGrowth > 15 ? 5 : state.assumptions.streamingGrowth > 10 ? 4 : 3;
+            const competitive = state.assumptions.competitiveIntensity === 'high' ? 3 : state.assumptions.competitiveIntensity === 'medium' ? 4 : 5;
+
+            const scores = [
+                { label: 'Financial Return', stars: financial },
+                { label: 'Risk Management', stars: risk },
+                { label: 'Strategic Fit', stars: strategic },
+                { label: 'Growth Potential', stars: growth },
+                { label: 'Competitive Position', stars: competitive }
+            ];
+
+            scorecard.innerHTML = scores.map(s => `
+                <div class="scorecard-item">
+                    <span class="scorecard-label">${s.label}</span>
+                    <span class="stars">${'★'.repeat(s.stars)}${'☆'.repeat(5 - s.stars)}</span>
+                </div>
+            `).join('');
+        }
+
+        function updateComparisonTable() {
+            // Calculate all three options
+            const renewProj = calculateRenewProjection(state.assumptions);
+            const splitProj = calculateSplitProjection(state.assumptions);
+            const walkProj = calculateWalkProjection(state.assumptions);
+
+            const tbody = document.getElementById('comparison-tbody');
+
+            const metrics = [
+                {
+                    label: 'Year 10 Revenue',
+                    renew: formatCurrency(renewProj[9].revenue),
+                    split: formatCurrency(splitProj[9].revenue),
+                    walk: formatCurrency(walkProj[9].revenue)
+                },
+                {
+                    label: 'Year 10 Profit',
+                    renew: formatCurrency(renewProj[9].profit),
+                    split: formatCurrency(splitProj[9].profit),
+                    walk: formatCurrency(walkProj[9].profit)
+                },
+                {
+                    label: 'Cumulative 10-Year Profit',
+                    renew: formatCurrency(renewProj.reduce((s, p) => s + p.profit, 0)),
+                    split: formatCurrency(splitProj.reduce((s, p) => s + p.profit, 0)),
+                    walk: formatCurrency(walkProj.reduce((s, p) => s + p.profit, 0))
+                },
+                {
+                    label: 'Break-Even Year',
+                    renew: findBreakEven(renewProj),
+                    split: findBreakEven(splitProj),
+                    walk: findBreakEven(walkProj)
+                },
+                {
+                    label: 'Total Rights Investment',
+                    renew: '$3.25B',
+                    split: '$2.0B',
+                    walk: '$1.2B (alt. properties)'
+                }
+            ];
+
+            tbody.innerHTML = metrics.map(m => `
+                <tr>
+                    <td><strong>${m.label}</strong></td>
+                    <td>${m.renew}</td>
+                    <td>${m.split}</td>
+                    <td>${m.walk}</td>
+                </tr>
+            `).join('');
+        }
+
+        function findBreakEven(projections) {
+            for (let i = 0; i < projections.length; i++) {
+                if (projections[i].profit > 0) {
+                    return `Year ${projections[i].year}`;
+                }
+            }
+            return 'Never';
+        }
+
+        function formatCurrency(value) {
+            const absValue = Math.abs(value);
+            if (absValue >= 1000) {
+                return (value < 0 ? '-' : '') + '$' + (absValue / 1000).toFixed(2) + 'B';
+            } else {
+                return (value < 0 ? '-' : '') + '$' + absValue.toFixed(0) + 'M';
+            }
+        }
+
+        // Phase 5: Decision Matrix Star Rating System
+        const matrixRatings = {
+            renew: { financial: 0, risk: 0, strategic: 0, growth: 0, competitive: 0 },
+            split: { financial: 0, risk: 0, strategic: 0, growth: 0, competitive: 0 },
+            walk: { financial: 0, risk: 0, strategic: 0, growth: 0, competitive: 0 }
+        };
+
+        // Initialize star rating event listeners
+        document.querySelectorAll('.rating-cell').forEach(cell => {
+            const option = cell.dataset.option;
+            const criterion = cell.dataset.criterion;
+            const stars = cell.querySelectorAll('.rating-star');
+            const scoreDisplay = cell.querySelector('.cell-score');
+
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    const value = parseInt(star.dataset.value);
+                    matrixRatings[option][criterion] = value;
+
+                    // Update star display (fill stars up to clicked value)
+                    stars.forEach((s, idx) => {
+                        if (idx < value) {
+                            s.classList.add('filled');
+                        } else {
+                            s.classList.remove('filled');
+                        }
+                    });
+
+                    // Pulse animation on clicked star
+                    star.classList.add('active');
+                    setTimeout(() => star.classList.remove('active'), 300);
+
+                    // Update score badge
+                    let scoreClass = value <= 2 ? 'low' : value <= 3 ? 'medium' : 'high';
+                    let scoreText = value <= 2 ? 'Weak' : value <= 3 ? 'Moderate' : 'Strong';
+                    scoreDisplay.className = `cell-score ${scoreClass}`;
+                    scoreDisplay.textContent = scoreText;
+
+                    // Check if all ratings complete, then show winner
+                    updateRecommendationSummary();
+                });
+
+                // Hover effect: preview stars
+                star.addEventListener('mouseenter', () => {
+                    const value = parseInt(star.dataset.value);
+                    stars.forEach((s, idx) => {
+                        if (idx < value) {
+                            s.style.color = '#fbbf24';
+                        } else {
+                            s.style.color = '#d1d5db';
+                        }
+                    });
+                });
+
+                // Mouse leave: restore actual rating
+                star.addEventListener('mouseleave', () => {
+                    const currentRating = matrixRatings[option][criterion];
+                    stars.forEach((s, idx) => {
+                        if (idx < currentRating) {
+                            s.style.color = '#fbbf24';
+                        } else {
+                            s.style.color = '#d1d5db';
+                        }
+                    });
+                });
+            });
+        });
+
+        function updateRecommendationSummary() {
+            // Calculate total scores
+            const renewTotal = Object.values(matrixRatings.renew).reduce((sum, v) => sum + v, 0);
+            const splitTotal = Object.values(matrixRatings.split).reduce((sum, v) => sum + v, 0);
+            const walkTotal = Object.values(matrixRatings.walk).reduce((sum, v) => sum + v, 0);
+
+            // Check if all cells rated (minimum 1 star in each of 15 cells: 5 criteria × 3 options)
+            const totalRated = renewTotal + splitTotal + walkTotal;
+            if (totalRated < 15) return; // Not all cells rated yet (need at least 1 star per cell)
+
+            // Determine winner
+            const scores = [
+                { option: 'Option 1: Renew Exclusive ($325M/year)', total: renewTotal },
+                { option: 'Option 2: Split Package ($200M/year)', total: splitTotal },
+                { option: 'Option 3: Walk Away ($0/year)', total: walkTotal }
+            ];
+            scores.sort((a, b) => b.total - a.total);
+
+            // Display winner
+            const summaryEl = document.getElementById('recommendation-summary');
+            const winnerEl = document.getElementById('winner-text');
+            const rationaleEl = document.getElementById('rationale-text');
+
+            winnerEl.textContent = `🏆 Recommended: ${scores[0].option} (Score: ${scores[0].total}/25)`;
+
+            // Generate smart rationale based on scores
+            const margin = scores[0].total - scores[1].total;
+            let rationale = `This option scored highest across all 5 strategic criteria. `;
+
+            if (margin >= 5) {
+                rationale += `With a ${margin}-point lead over the second-place option, this is a clear winner based on your strategic analysis.`;
+            } else if (margin >= 3) {
+                rationale += `While the ${margin}-point margin is moderate, this option edges out ${scores[1].option} (${scores[1].total}/25).`;
+            } else {
+                rationale += `This is a close call—only ${margin} point(s) ahead of ${scores[1].option} (${scores[1].total}/25). Consider reviewing your ratings carefully.`;
+            }
+
+            rationale += ` ${scores[2].option} scored ${scores[2].total}/25.`;
+
+            rationaleEl.textContent = rationale;
+
+            summaryEl.style.display = 'block';
+
+            // Scroll to recommendation summary
+            summaryEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+            // Update state for export
+            state.matrixRatings = matrixRatings;
+            state.recommendation = `${scores[0].option} - Score: ${scores[0].total}/25. Rationale: ${rationale}`;
+        }
+
+        // Update word count for optional textarea (reduced from 250 to 150 words)
+        document.getElementById('recommendation-text').addEventListener('input', (e) => {
+            const text = e.target.value;
+            const words = text.trim().split(/\s+/).filter(w => w.length > 0).length;
+            const wordCountEl = document.getElementById('word-count');
+            wordCountEl.textContent = words;
+
+            const charCountEl = wordCountEl.parentElement;
+            if (words > 150) {
+                charCountEl.style.color = '#dc2626';
+                charCountEl.style.fontWeight = '600';
+            } else if (words > 135) {
+                charCountEl.style.color = '#d97706';
+                charCountEl.style.fontWeight = '600';
+            } else {
+                charCountEl.style.color = 'var(--color-gray)';
+                charCountEl.style.fontWeight = '400';
+            }
+
+            // Update state with optional notes
+            if (state.recommendation && state.recommendation.includes('Score:')) {
+                // Keep the matrix recommendation, append notes
+                const baseRecommendation = state.recommendation.split('. Optional notes:')[0];
+                state.recommendation = text ? `${baseRecommendation}. Optional notes: ${text}` : baseRecommendation;
+            }
+        });
+
+        function exportAnalysis() {
+            const exportData = {
+                timestamp: new Date().toISOString(),
+                assumptions: state.assumptions,
+                selectedOption: state.selectedOption,
+                projections: state.projections,
+                recommendation: state.recommendation
+            };
+
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `rogers-2026-decision-analysis-${Date.now()}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('Analysis exported successfully! You can now submit this file with your mini-case memo.');
+        }
+    </script>
+</body>
+</html>

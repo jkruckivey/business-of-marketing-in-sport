@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogers NHL Deal Terms Explorer</title>
+    <style>
+        /* CSS Design System */
+        :root {
+            --color-primary: #c5b783;
+            --color-primary-dark: #8b7b3f;
+            --color-dark: #2c2c2c;
+            --color-success: #4a7c59;
+            --color-danger: #dc2626;
+            --color-warning: #d97706;
+            --color-info: #2563eb;
+            --color-white: #ffffff;
+            --color-light-gray: #f9fafb;
+            --color-gray: #6b7280;
+            --border-radius: 12px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            color: var(--color-dark);
+            padding: 24px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            padding: 32px;
+            box-shadow: var(--shadow);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: var(--color-dark);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--color-gray);
+            font-size: 1.1rem;
+        }
+
+        /* Deal Overview */
+        .deal-overview {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            margin-bottom: 32px;
+            border-left: 4px solid var(--color-warning);
+        }
+
+        .deal-overview h2 {
+            margin-bottom: 16px;
+            color: var(--color-dark);
+        }
+
+        .deal-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--color-gray);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--color-primary-dark);
+        }
+
+        /* Tabs */
+        .tabs-container {
+            margin-bottom: 32px;
+        }
+
+        .tab-list {
+            display: flex;
+            gap: 8px;
+            border-bottom: 2px solid var(--color-light-gray);
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            padding: 12px 24px;
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-gray);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-button:hover {
+            color: var(--color-primary-dark);
+            background: var(--color-light-gray);
+        }
+
+        .tab-button[aria-selected="true"] {
+            color: var(--color-primary-dark);
+            border-bottom-color: var(--color-primary);
+        }
+
+        .tab-button:focus {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        .tab-panel {
+            display: none;
+            padding: 24px;
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .tab-panel h3 {
+            margin-bottom: 16px;
+            color: var(--color-dark);
+            font-size: 1.5rem;
+        }
+
+        .tab-panel p {
+            margin-bottom: 16px;
+            color: var(--color-dark);
+        }
+
+        .tab-panel ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tab-panel li {
+            padding: 12px;
+            margin-bottom: 8px;
+            background: var(--color-white);
+            border-radius: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .tab-panel li::before {
+            content: "✓";
+            color: var(--color-success);
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .tab-panel li.negative::before {
+            content: "✗";
+            color: var(--color-danger);
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: var(--color-white);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .comparison-table th {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 12px;
+            border-bottom: 1px solid var(--color-light-gray);
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:hover {
+            background: var(--color-light-gray);
+        }
+
+        .increase {
+            color: var(--color-danger);
+            font-weight: 700;
+        }
+
+        /* Forecast Timeline */
+        .forecast-timeline {
+            background: var(--color-white);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 100px 1fr 120px;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--color-light-gray);
+            align-items: center;
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-year {
+            font-weight: 700;
+            color: var(--color-primary-dark);
+            font-size: 1.1rem;
+        }
+
+        .timeline-value {
+            font-weight: 700;
+            font-size: 1.2rem;
+            text-align: right;
+            color: var(--color-dark);
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            border-left: 4px solid var(--color-info);
+            padding: 16px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+
+        .highlight-box strong {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--color-dark);
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-export {
+            background: var(--color-info);
+            color: var(--color-white);
+        }
+
+        .btn-export:hover {
+            background: #1d4ed8;
+        }
+
+        .btn:focus {
+            outline: 3px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .tab-button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .timeline-item {
+                grid-template-columns: 80px 1fr;
+                gap: 12px;
+            }
+
+            .timeline-value {
+                grid-column: 2;
+                text-align: left;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🏒 Rogers NHL Deal Terms Explorer</h1>
+            <p class="subtitle">Explore the comprehensive $5.2B rights agreement (2014-2026)</p>
+        </header>
+
+        <!-- Deal Overview -->
+        <div class="deal-overview">
+            <h2>Deal Overview</h2>
+            <div class="deal-stats">
+                <div class="stat-card">
+                    <div class="stat-label">Total Value</div>
+                    <div class="stat-value">$5.2B</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Contract Length</div>
+                    <div class="stat-value">12 years</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Annual Cost</div>
+                    <div class="stat-value">$433M</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Contract Term</div>
+                    <div class="stat-value" style="font-size: 1.2rem;">2014-2026</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs-container">
+            <div role="tablist" aria-label="Rogers NHL Deal Terms" class="tab-list">
+                <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" class="tab-button" tabindex="0">
+                    Rights Included
+                </button>
+                <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" class="tab-button" tabindex="-1">
+                    Platforms Covered
+                </button>
+                <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" class="tab-button" tabindex="-1">
+                    Exclusivity Terms
+                </button>
+                <button role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4" class="tab-button" tabindex="-1">
+                    Revenue Projections
+                </button>
+                <button role="tab" aria-selected="false" aria-controls="panel-5" id="tab-5" class="tab-button" tabindex="-1">
+                    Comparison
+                </button>
+            </div>
+
+            <!-- Tab Panel 1: Rights Included -->
+            <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" class="tab-panel active">
+                <h3>Rights Included - What Rogers Acquired</h3>
+                <p>Rogers obtained the most comprehensive NHL rights package in Canadian broadcasting history:</p>
+                <ul>
+                    <li><strong>All National Games (Hockey Night in Canada):</strong> Every Saturday night prime-time game across Canada, the country's most-watched weekly sports broadcast</li>
+                    <li><strong>All Regional Games (7 Canadian Teams):</strong> 82 games × 7 teams = 574 regional telecasts covering Toronto, Montreal, Ottawa, Calgary, Edmonton, Vancouver, Winnipeg</li>
+                    <li><strong>All Playoff Games (Stanley Cup Playoffs):</strong> Complete coverage of all 4 rounds, including all Canadian team matchups and Stanley Cup Finals</li>
+                    <li><strong>International Tournaments:</strong> World Cup of Hockey, Olympics qualifier games, exhibition tournaments</li>
+                    <li><strong>Shoulder Programming:</strong> Pre-game shows, post-game analysis, highlight packages, weekly wrap-ups, behind-the-scenes content</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Total Content Volume:</strong>
+                    1,000+ games per season + 200+ hours of shoulder programming = comprehensive NHL monopoly
+                </div>
+            </div>
+
+            <!-- Tab Panel 2: Platforms Covered -->
+            <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" class="tab-panel">
+                <h3>Platforms Covered - Distribution Flexibility</h3>
+                <p>Rogers gained rights across all modern distribution platforms, giving them complete control over audience access:</p>
+                <ul>
+                    <li><strong>📺 Linear TV Networks:</strong> Sportsnet (flagship), Sportsnet One, Sportsnet 360, City TV — Rogers controlled game placement across 4 networks</li>
+                    <li><strong>📱 Streaming Service:</strong> Sportsnet NOW (launched 2016) — subscription DTC service ($25/month) for cord-cutters and younger demographics</li>
+                    <li><strong>💻 Digital Platforms:</strong> Sportsnet.ca website, iOS/Android mobile apps, tablet apps — full game streaming and highlight access</li>
+                    <li><strong>📻 Radio Network:</strong> Sportsnet Radio — play-by-play and talk radio covering all games</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Strategic Flexibility:</strong>
+                    Rogers could shift games across platforms based on ratings strategy (e.g., move Maple Leafs to Sportsnet 360 to boost that network's carriage fees). This flexibility was unprecedented in Canadian sports media.
+                </div>
+            </div>
+
+            <!-- Tab Panel 3: Exclusivity Terms -->
+            <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" class="tab-panel">
+                <h3>Exclusivity Terms - Market Impact</h3>
+                <p>The exclusivity clause gave Rogers a near-monopoly on NHL content in Canada, reshaping the competitive landscape:</p>
+                <ul class="negative">
+                    <li><strong>TSN Lost National Rights:</strong> Previously co-held national games with CBC since 2004, completely shut out after 2014</li>
+                    <li><strong>CBC Sublicensed from Rogers:</strong> CBC retained "Hockey Night in Canada" brand name but paid Rogers for free-to-air Saturday broadcasts — no longer an independent rights holder</li>
+                    <li><strong>National Exclusivity:</strong> No other Canadian broadcaster could acquire NHL games for national distribution (2014-2026 term)</li>
+                </ul>
+                <ul>
+                    <li><strong>Limited Regional Exceptions:</strong> Some teams retained existing regional TV deals (e.g., TSN kept Ottawa Senators regional rights, but Rogers still controlled national appearances)</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Result:</strong>
+                    Rogers controlled 95%+ of NHL content distribution in Canada. This monopoly position allowed aggressive pricing but created enormous risk if viewership declined.
+                </div>
+            </div>
+
+            <!-- Tab Panel 4: Revenue Projections -->
+            <div role="tabpanel" id="panel-4" aria-labelledby="tab-4" class="tab-panel">
+                <h3>Revenue Projections - Rogers' Internal Forecast</h3>
+                <p>Rogers' investment thesis was based on aggressive growth assumptions for advertising revenue and streaming subscriptions:</p>
+
+                <div class="forecast-timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-year">Year 1<br>(2014-15)</span>
+                        <span class="timeline-desc">Launch year: Stabilize linear TV + launch Sportsnet NOW streaming</span>
+                        <span class="timeline-value">$300M</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">Year 3<br>(2016-17)</span>
+                        <span class="timeline-desc">Subscriber growth + premium ad rates as audience stabilizes</span>
+                        <span class="timeline-value">$425M</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">Year 5<br>(2018-19)</span>
+                        <span class="timeline-desc"><strong>Break-even target:</strong> Revenue = $433M annual cost + operations</span>
+                        <span class="timeline-value">$500M</span>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="timeline-year">Year 7<br>(2020-21)</span>
+                        <span class="timeline-desc">Sustained profitability: Mature streaming + stable linear TV</span>
+                        <span class="timeline-value">$550M</span>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <strong>Key Assumptions (Critical for Later Analysis):</strong>
+                    <ul style="margin-top: 8px; padding-left: 20px;">
+                        <li>1 million Sportsnet NOW subscribers by Year 5 ($25/month = $300M/year streaming revenue)</li>
+                        <li>Linear TV advertising revenue would remain stable despite cord-cutting trends</li>
+                        <li>Canadian team playoff success would drive ratings growth</li>
+                        <li><strong style="color: var(--color-danger);">No contingency planning for black swan events (COVID, lockouts, strikes)</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tab Panel 5: Comparison -->
+            <div role="tabpanel" id="panel-5" aria-labelledby="tab-5" class="tab-panel">
+                <h3>Comparison to Previous Deal - 209% Increase</h3>
+                <p>Rogers paid dramatically more than the previous CBC/TSN partnership, justified by exclusivity and digital rights:</p>
+
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Previous Deal<br>(CBC/TSN 2004-2014)</th>
+                            <th>Rogers Deal<br>(2014-2026)</th>
+                            <th>Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Total Value</strong></td>
+                            <td>$1.4 billion</td>
+                            <td>$5.2 billion</td>
+                            <td class="increase">+$3.8B (+271%)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Contract Length</strong></td>
+                            <td>10 years</td>
+                            <td>12 years</td>
+                            <td>+2 years</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Annual Cost</strong></td>
+                            <td>$140 million/year</td>
+                            <td>$433 million/year</td>
+                            <td class="increase">+$293M/year (+209%)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Per-Game Cost</strong></td>
+                            <td>~$140,000/game</td>
+                            <td>~$433,000/game</td>
+                            <td class="increase">+209% per game</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Exclusivity</strong></td>
+                            <td>Shared (CBC + TSN)</td>
+                            <td>Exclusive (Rogers only)</td>
+                            <td>Monopoly advantage</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Digital Rights</strong></td>
+                            <td>Limited (websites only)</td>
+                            <td>Full (streaming apps)</td>
+                            <td>Streaming era rights</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="highlight-box">
+                    <strong>Justification for 3x Increase:</strong>
+                    <ul style="margin-top: 8px; padding-left: 20px;">
+                        <li><strong>Exclusivity Premium:</strong> Rogers eliminated competition (TSN), justifying higher prices to advertisers</li>
+                        <li><strong>Digital Rights:</strong> Streaming wasn't viable in 2004; by 2014, cord-cutting and DTC models were emerging</li>
+                        <li><strong>Inflation + NHL Growth:</strong> 10 years of inflation (2004→2014) + NHL Canadian fanbase expansion (Winnipeg Jets returned 2011)</li>
+                        <li><strong>Strategic Value:</strong> Rogers owned wireless/internet infrastructure — could bundle NHL content with telecom services</li>
+                    </ul>
+                </div>
+
+                <p style="margin-top: 20px; font-style: italic; color: var(--color-gray);">
+                    <strong>Question for Analysis:</strong> Did Rogers overpay? At $433M/year, they needed $500M+ in annual revenue to break even. Was this achievable given cord-cutting trends and streaming challenges?
+                </p>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-export" id="export-btn">
+                ⬇ Export Deal Terms (JSON)
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('[role="tab"]');
+        const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+
+        tabButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                switchTab(index);
+            });
+
+            button.addEventListener('keydown', (e) => {
+                let targetIndex = null;
+
+                // Arrow key navigation
+                if (e.key === 'ArrowRight') {
+                    targetIndex = (index + 1) % tabButtons.length;
+                } else if (e.key === 'ArrowLeft') {
+                    targetIndex = (index - 1 + tabButtons.length) % tabButtons.length;
+                } else if (e.key === 'Home') {
+                    targetIndex = 0;
+                } else if (e.key === 'End') {
+                    targetIndex = tabButtons.length - 1;
+                }
+
+                if (targetIndex !== null) {
+                    e.preventDefault();
+                    switchTab(targetIndex);
+                    tabButtons[targetIndex].focus();
+                }
+            });
+        });
+
+        function switchTab(targetIndex) {
+            // Update buttons
+            tabButtons.forEach((btn, i) => {
+                const isSelected = i === targetIndex;
+                btn.setAttribute('aria-selected', isSelected);
+                btn.setAttribute('tabindex', isSelected ? '0' : '-1');
+            });
+
+            // Update panels
+            tabPanels.forEach((panel, i) => {
+                if (i === targetIndex) {
+                    panel.classList.add('active');
+                } else {
+                    panel.classList.remove('active');
+                }
+            });
+        }
+
+        // Export functionality
+        document.getElementById('export-btn').addEventListener('click', () => {
+            const dealData = {
+                overview: {
+                    totalValue: '$5.2B',
+                    contractLength: '12 years',
+                    annualCost: '$433M',
+                    term: '2014-2026'
+                },
+                rightsIncluded: [
+                    'All national games (Hockey Night in Canada)',
+                    'All regional games (7 Canadian teams, 574 games)',
+                    'All playoff games (Stanley Cup Playoffs)',
+                    'International tournaments',
+                    'Shoulder programming (200+ hours)'
+                ],
+                platforms: [
+                    'Linear TV: Sportsnet, Sportsnet One, Sportsnet 360, City TV',
+                    'Streaming: Sportsnet NOW',
+                    'Digital: Sportsnet.ca, mobile apps',
+                    'Radio: Sportsnet Radio'
+                ],
+                exclusivity: {
+                    tsnOut: true,
+                    cbcSublicensed: true,
+                    nationalMonopoly: true
+                },
+                revenueProjections: [
+                    { year: 1, season: '2014-15', projected: '$300M' },
+                    { year: 3, season: '2016-17', projected: '$425M' },
+                    { year: 5, season: '2018-19', projected: '$500M (break-even target)' },
+                    { year: 7, season: '2020-21', projected: '$550M' }
+                ],
+                comparison: {
+                    previousDeal: '$1.4B over 10 years ($140M/year)',
+                    rogersDeal: '$5.2B over 12 years ($433M/year)',
+                    increase: '+209% per year'
+                }
+            };
+
+            const blob = new Blob([JSON.stringify(dealData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `rogers-nhl-deal-terms-${Date.now()}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Economics Visualizer - Linear TV vs. Streaming</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        /* CSS Design System */
+        :root {
+            --color-primary: #c5b783;
+            --color-primary-dark: #8b7b3f;
+            --color-dark: #2c2c2c;
+            --color-success: #4a7c59;
+            --color-danger: #dc2626;
+            --color-warning: #d97706;
+            --color-info: #2563eb;
+            --color-white: #ffffff;
+            --color-light-gray: #f9fafb;
+            --color-gray: #6b7280;
+            --border-radius: 12px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            color: var(--color-dark);
+            padding: 24px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            padding: 32px;
+            box-shadow: var(--shadow);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: var(--color-dark);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--color-gray);
+            font-size: 1.1rem;
+        }
+
+        /* Model Toggle Section */
+        .model-toggle-section {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .toggle-container {
+            display: inline-flex;
+            background: var(--color-light-gray);
+            border-radius: 50px;
+            padding: 4px;
+            margin-top: 12px;
+        }
+
+        .toggle-btn {
+            padding: 12px 32px;
+            background: transparent;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--color-gray);
+        }
+
+        .toggle-btn.active {
+            background: var(--color-primary);
+            color: var(--color-white);
+            box-shadow: 0 2px 8px rgba(197, 183, 131, 0.3);
+        }
+
+        .toggle-btn:hover:not(.active) {
+            background: rgba(197, 183, 131, 0.1);
+        }
+
+        .toggle-btn:focus {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        /* Controls Grid */
+        .controls-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .controls-panel {
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+            padding: 24px;
+        }
+
+        .controls-panel h3 {
+            color: var(--color-dark);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .slider-group {
+            margin-bottom: 24px;
+        }
+
+        .slider-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .slider-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--color-dark);
+        }
+
+        .slider-value {
+            color: var(--color-primary-dark);
+            font-size: 1.1rem;
+            min-width: 100px;
+            text-align: right;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: #ddd;
+            outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="range"]:focus {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        /* Presets Section */
+        .presets-section {
+            margin-bottom: 32px;
+        }
+
+        .presets-section h3 {
+            text-align: center;
+            margin-bottom: 16px;
+            color: var(--color-dark);
+        }
+
+        .presets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+        }
+
+        .preset-btn {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: var(--color-white);
+            border: none;
+            border-radius: var(--border-radius);
+            padding: 16px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .preset-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .preset-btn:focus {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 2px;
+        }
+
+        .preset-label {
+            display: block;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 4px;
+        }
+
+        /* Chart Section */
+        .chart-section {
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            margin-bottom: 32px;
+            border: 2px solid var(--color-light-gray);
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin-bottom: 16px;
+        }
+
+        /* Metrics Grid */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .metric-card {
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            text-align: center;
+            border-left: 4px solid var(--color-primary);
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: var(--color-gray);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--color-dark);
+        }
+
+        .metric-value.positive {
+            color: var(--color-success);
+        }
+
+        .metric-value.negative {
+            color: var(--color-danger);
+        }
+
+        /* Insights Section */
+        .insights-section {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            border-left: 4px solid var(--color-warning);
+            margin-bottom: 24px;
+        }
+
+        .insights-section h3 {
+            color: var(--color-dark);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .insights-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .insights-list li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--color-dark);
+        }
+
+        .insights-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--color-warning);
+            font-weight: bold;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-reset {
+            background: var(--color-gray);
+            color: var(--color-white);
+        }
+
+        .btn-reset:hover {
+            background: #4b5563;
+        }
+
+        .btn-export {
+            background: var(--color-info);
+            color: var(--color-white);
+        }
+
+        .btn-export:hover {
+            background: #1d4ed8;
+        }
+
+        .btn:focus {
+            outline: 3px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        /* Hidden by default */
+        .hidden {
+            display: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .controls-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        @media (prefers-contrast: high) {
+            .toggle-btn.active {
+                border: 2px solid var(--color-dark);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📊 Platform Economics Visualizer</h1>
+            <p class="subtitle">Compare linear TV vs. streaming profitability models</p>
+        </header>
+
+        <!-- Model Toggle -->
+        <div class="model-toggle-section">
+            <h2>Choose Business Model:</h2>
+            <div class="toggle-container" role="tablist" aria-label="Platform business model">
+                <button
+                    id="toggle-linear"
+                    class="toggle-btn active"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="linear-controls"
+                    tabindex="0">
+                    📺 Linear TV
+                </button>
+                <button
+                    id="toggle-streaming"
+                    class="toggle-btn"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="streaming-controls"
+                    tabindex="-1">
+                    🌐 Streaming/DTC
+                </button>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls-grid">
+            <!-- Linear TV Controls -->
+            <div id="linear-controls" class="controls-panel" role="tabpanel" aria-labelledby="toggle-linear">
+                <h3>Linear TV Model Parameters</h3>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="linear-rights-cost">Rights Cost ($/year)</label>
+                        <span class="slider-value" id="linear-rights-cost-value">$433M</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="linear-rights-cost"
+                        min="50"
+                        max="1000"
+                        step="10"
+                        value="433"
+                        aria-valuemin="50"
+                        aria-valuemax="1000"
+                        aria-valuenow="433"
+                        aria-valuetext="433 million dollars">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="linear-ad-cpm">Ad CPM ($)</label>
+                        <span class="slider-value" id="linear-ad-cpm-value">$55</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="linear-ad-cpm"
+                        min="20"
+                        max="100"
+                        step="5"
+                        value="55"
+                        aria-valuemin="20"
+                        aria-valuemax="100"
+                        aria-valuenow="55"
+                        aria-valuetext="55 dollars">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="linear-carriage-fee">Monthly Carriage Fee ($)</label>
+                        <span class="slider-value" id="linear-carriage-fee-value">$0.50</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="linear-carriage-fee"
+                        min="0.10"
+                        max="3.00"
+                        step="0.10"
+                        value="0.50"
+                        aria-valuemin="0.10"
+                        aria-valuemax="3.00"
+                        aria-valuenow="0.50"
+                        aria-valuetext="50 cents">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="linear-starting-subs">Starting Subscribers (millions)</label>
+                        <span class="slider-value" id="linear-starting-subs-value">11.2M</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="linear-starting-subs"
+                        min="1"
+                        max="20"
+                        step="0.5"
+                        value="11.2"
+                        aria-valuemin="1"
+                        aria-valuemax="20"
+                        aria-valuenow="11.2"
+                        aria-valuetext="11.2 million">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="linear-decline">Annual Subscriber Decline (%)</label>
+                        <span class="slider-value" id="linear-decline-value">8%</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="linear-decline"
+                        min="0"
+                        max="20"
+                        step="1"
+                        value="8"
+                        aria-valuemin="0"
+                        aria-valuemax="20"
+                        aria-valuenow="8"
+                        aria-valuetext="8 percent">
+                </div>
+            </div>
+
+            <!-- Streaming Controls -->
+            <div id="streaming-controls" class="controls-panel hidden" role="tabpanel" aria-labelledby="toggle-streaming">
+                <h3>Streaming/DTC Model Parameters</h3>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="streaming-rights-cost">Rights Cost ($/year)</label>
+                        <span class="slider-value" id="streaming-rights-cost-value">$50M</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="streaming-rights-cost"
+                        min="10"
+                        max="500"
+                        step="10"
+                        value="50"
+                        aria-valuemin="10"
+                        aria-valuemax="500"
+                        aria-valuenow="50"
+                        aria-valuetext="50 million dollars">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="streaming-sub-price">Monthly Subscription ($)</label>
+                        <span class="slider-value" id="streaming-sub-price-value">$20</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="streaming-sub-price"
+                        min="5"
+                        max="50"
+                        step="1"
+                        value="20"
+                        aria-valuemin="5"
+                        aria-valuemax="50"
+                        aria-valuenow="20"
+                        aria-valuetext="20 dollars">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="streaming-starting-subs">Starting Subscribers (thousands)</label>
+                        <span class="slider-value" id="streaming-starting-subs-value">50K</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="streaming-starting-subs"
+                        min="10"
+                        max="500"
+                        step="10"
+                        value="50"
+                        aria-valuemin="10"
+                        aria-valuemax="500"
+                        aria-valuenow="50"
+                        aria-valuetext="50 thousand">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="streaming-growth">Monthly Growth Rate (%)</label>
+                        <span class="slider-value" id="streaming-growth-value">5%</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="streaming-growth"
+                        min="0"
+                        max="20"
+                        step="0.5"
+                        value="5"
+                        aria-valuemin="0"
+                        aria-valuemax="20"
+                        aria-valuenow="5"
+                        aria-valuetext="5 percent">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="streaming-churn">Monthly Churn Rate (%)</label>
+                        <span class="slider-value" id="streaming-churn-value">3%</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="streaming-churn"
+                        min="0"
+                        max="15"
+                        step="0.5"
+                        value="3"
+                        aria-valuemin="0"
+                        aria-valuemax="15"
+                        aria-valuenow="3"
+                        aria-valuetext="3 percent">
+                </div>
+
+                <div class="slider-group">
+                    <div class="slider-label">
+                        <label for="streaming-cac">Customer Acquisition Cost ($)</label>
+                        <span class="slider-value" id="streaming-cac-value">$50</span>
+                    </div>
+                    <input
+                        type="range"
+                        id="streaming-cac"
+                        min="10"
+                        max="200"
+                        step="10"
+                        value="50"
+                        aria-valuemin="10"
+                        aria-valuemax="200"
+                        aria-valuenow="50"
+                        aria-valuetext="50 dollars">
+                </div>
+            </div>
+        </div>
+
+        <!-- Presets -->
+        <div class="presets-section">
+            <h3>Load Real-World Examples:</h3>
+            <div class="presets-grid">
+                <button class="preset-btn" data-preset="rogers" aria-label="Load Rogers NHL linear TV preset">
+                    Rogers NHL (2014-2026)
+                    <span class="preset-label">Linear TV - Never Profitable</span>
+                </button>
+                <button class="preset-btn" data-preset="dazn" aria-label="Load DAZN Canada streaming preset">
+                    DAZN Canada
+                    <span class="preset-label">Streaming - Profitable Year 4</span>
+                </button>
+                <button class="preset-btn" data-preset="apple" aria-label="Load Apple TV Plus MLS streaming preset">
+                    Apple TV+ MLS
+                    <span class="preset-label">Streaming - Profitable Year 5</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Chart -->
+        <div class="chart-section">
+            <h3 style="text-align: center; margin-bottom: 20px;">10-Year Financial Projection</h3>
+            <div class="chart-container">
+                <canvas id="profitChart" role="img" aria-label="10-year financial projection chart showing revenue and costs over time"></canvas>
+            </div>
+        </div>
+
+        <!-- Metrics -->
+        <div class="metrics-grid" role="region" aria-label="Financial metrics summary">
+            <div class="metric-card">
+                <div class="metric-label">Break-Even Year</div>
+                <div class="metric-value" id="break-even-year">Year 4</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Year 10 Annual Profit</div>
+                <div class="metric-value" id="year10-profit">$0</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Cumulative Profit (10 Years)</div>
+                <div class="metric-value" id="cumulative-profit">$0</div>
+            </div>
+        </div>
+
+        <!-- Strategic Insights -->
+        <div class="insights-section" role="region" aria-label="Strategic insights">
+            <h3>💡 Strategic Insights</h3>
+            <ul class="insights-list" id="insights-list" aria-live="polite">
+                <li>Adjust parameters above to see strategic insights</li>
+            </ul>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-reset" id="reset-btn" aria-label="Reset to default parameters">
+                ↺ Reset to Defaults
+            </button>
+            <button class="btn btn-export" id="export-btn" aria-label="Export data to JSON">
+                ⬇ Export Data (JSON)
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let currentModel = 'linear';
+        let chart = null;
+
+        // DOM elements
+        const toggleLinear = document.getElementById('toggle-linear');
+        const toggleStreaming = document.getElementById('toggle-streaming');
+        const linearControls = document.getElementById('linear-controls');
+        const streamingControls = document.getElementById('streaming-controls');
+        const resetBtn = document.getElementById('reset-btn');
+        const exportBtn = document.getElementById('export-btn');
+        const presetButtons = document.querySelectorAll('[data-preset]');
+
+        // Slider elements - Linear
+        const linearRightsCost = document.getElementById('linear-rights-cost');
+        const linearAdCPM = document.getElementById('linear-ad-cpm');
+        const linearCarriageFee = document.getElementById('linear-carriage-fee');
+        const linearStartingSubs = document.getElementById('linear-starting-subs');
+        const linearDecline = document.getElementById('linear-decline');
+
+        // Slider elements - Streaming
+        const streamingRightsCost = document.getElementById('streaming-rights-cost');
+        const streamingSubPrice = document.getElementById('streaming-sub-price');
+        const streamingStartingSubs = document.getElementById('streaming-starting-subs');
+        const streamingGrowth = document.getElementById('streaming-growth');
+        const streamingChurn = document.getElementById('streaming-churn');
+        const streamingCAC = document.getElementById('streaming-cac');
+
+        // Initialize chart
+        const ctx = document.getElementById('profitChart').getContext('2d');
+
+        function createChart(data) {
+            if (chart) {
+                chart.destroy();
+            }
+
+            const years = data.map(d => `Year ${d.year}`);
+            const revenues = data.map(d => d.revenue / 1000000);
+            const costs = data.map(d => d.costs / 1000000);
+            const profits = data.map(d => d.profit / 1000000);
+
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: years,
+                    datasets: [
+                        {
+                            label: 'Revenue ($M)',
+                            data: revenues,
+                            borderColor: '#2563eb',
+                            backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3,
+                            fill: false
+                        },
+                        {
+                            label: 'Costs ($M)',
+                            data: costs,
+                            borderColor: '#dc2626',
+                            backgroundColor: 'rgba(220, 38, 38, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3,
+                            fill: false
+                        },
+                        {
+                            label: 'Profit ($M)',
+                            data: profits,
+                            borderColor: '#4a7c59',
+                            backgroundColor: 'rgba(74, 124, 89, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3,
+                            fill: true
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false,
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                },
+                                padding: 15
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    label += '$' + context.parsed.y.toFixed(1) + 'M';
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Millions ($)',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value.toFixed(0) + 'M';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Calculation functions
+        function calculateLinearTV(rightsCost, adCPM, carriageFee, startingSubs, annualDecline, years = 10) {
+            let results = [];
+            let subscribers = startingSubs * 1000000; // Convert to actual number
+
+            for (let year = 1; year <= years; year++) {
+                subscribers *= (1 - annualDecline / 100);
+                const avgViewership = subscribers * 0.15; // 15% tune in per game
+                const gamesPerYear = 272; // NHL season games
+                const adRevenue = (avgViewership * gamesPerYear * adCPM) / 1000;
+                const carriageRevenue = subscribers * carriageFee * 12;
+                const totalRevenue = adRevenue + carriageRevenue;
+                const productionCost = avgViewership * 2; // $2 per viewer in production
+                const costs = (rightsCost * 1000000) + productionCost;
+
+                results.push({
+                    year,
+                    revenue: totalRevenue,
+                    costs,
+                    profit: totalRevenue - costs
+                });
+            }
+            return results;
+        }
+
+        function calculateStreaming(rightsCost, subPrice, startingSubs, monthlyGrowth, churnRate, CAC, years = 10) {
+            let results = [];
+            let subscribers = startingSubs * 1000; // Convert to actual number
+            const initialSubs = subscribers;
+
+            for (let year = 1; year <= years; year++) {
+                // Compound growth monthly for the year
+                for (let month = 1; month <= 12; month++) {
+                    const newSubs = subscribers * (monthlyGrowth / 100);
+                    const churnedSubs = subscribers * (churnRate / 100);
+                    subscribers = subscribers + newSubs - churnedSubs;
+                }
+
+                const revenue = subscribers * subPrice * 12;
+                const acquisitionCost = initialSubs * CAC; // One-time CAC for initial cohort
+                const contentCost = rightsCost * 1000000;
+                const platformCost = subscribers * 2; // $2 per sub for platform ops
+                const costs = contentCost + platformCost + (year === 1 ? acquisitionCost : 0);
+
+                results.push({
+                    year,
+                    revenue,
+                    costs,
+                    profit: revenue - costs
+                });
+            }
+            return results;
+        }
+
+        // Update metrics and insights
+        function updateMetrics(data) {
+            // Find break-even year
+            let breakEvenYear = null;
+            for (let i = 0; i < data.length; i++) {
+                if (data[i].profit > 0) {
+                    breakEvenYear = data[i].year;
+                    break;
+                }
+            }
+
+            document.getElementById('break-even-year').textContent = breakEvenYear ? `Year ${breakEvenYear}` : 'Never';
+
+            const year10Profit = data[9].profit;
+            const year10Element = document.getElementById('year10-profit');
+            year10Element.textContent = formatCurrency(year10Profit);
+            year10Element.className = 'metric-value ' + (year10Profit > 0 ? 'positive' : 'negative');
+
+            const cumulativeProfit = data.reduce((sum, d) => sum + d.profit, 0);
+            const cumulativeElement = document.getElementById('cumulative-profit');
+            cumulativeElement.textContent = formatCurrency(cumulativeProfit);
+            cumulativeElement.className = 'metric-value ' + (cumulativeProfit > 0 ? 'positive' : 'negative');
+
+            // Generate insights
+            generateInsights(data, breakEvenYear, cumulativeProfit);
+        }
+
+        function generateInsights(data, breakEvenYear, cumulativeProfit) {
+            const insights = [];
+            const year10Profit = data[9].profit;
+
+            if (currentModel === 'linear') {
+                if (breakEvenYear === null) {
+                    insights.push("This linear TV model NEVER breaks even over 10 years—a warning sign of cord-cutting impact.");
+                }
+                if (cumulativeProfit < 0) {
+                    insights.push(`Cumulative loss of ${formatCurrency(Math.abs(cumulativeProfit))} suggests the rights cost is too high for declining subscriber base.`);
+                }
+                const year1Subs = parseFloat(linearStartingSubs.value);
+                const decline = parseFloat(linearDecline.value);
+                const year10Subs = year1Subs * Math.pow(1 - decline/100, 10);
+                const lossPercent = ((year1Subs - year10Subs) / year1Subs * 100).toFixed(0);
+                insights.push(`Cord-cutting projection: Lose ${lossPercent}% of subscribers over 10 years (${year1Subs.toFixed(1)}M → ${year10Subs.toFixed(1)}M).`);
+
+                if (year10Profit < 0) {
+                    insights.push("Consider: Can you renegotiate rights cost downward? Increase carriage fees? This model isn't sustainable.");
+                }
+            } else {
+                if (breakEvenYear && breakEvenYear <= 5) {
+                    insights.push(`Break-even in Year ${breakEvenYear} is strong for streaming—validates 'invest in growth' strategy.`);
+                } else if (breakEvenYear && breakEvenYear > 5) {
+                    insights.push(`Break-even in Year ${breakEvenYear} is slow—may need higher growth rate or lower CAC to justify investment.`);
+                }
+
+                if (cumulativeProfit > 0 && breakEvenYear) {
+                    insights.push(`Cumulative profit of ${formatCurrency(cumulativeProfit)} by Year 10 justifies early losses. Customer LTV model works.`);
+                }
+
+                const growth = parseFloat(streamingGrowth.value);
+                const churn = parseFloat(streamingChurn.value);
+                const netGrowth = growth - churn;
+                if (netGrowth < 1) {
+                    insights.push(`Net monthly growth (${netGrowth.toFixed(1)}%) is low—high churn erodes acquisition efforts. Focus on retention.`);
+                }
+
+                if (year10Profit > 0 && breakEvenYear) {
+                    insights.push("This streaming model validates why tech giants 'overpay': Long-term LTV exceeds upfront rights cost.");
+                }
+            }
+
+            // Render insights
+            const insightsList = document.getElementById('insights-list');
+            insightsList.innerHTML = insights.map(text => `<li>${text}</li>`).join('');
+        }
+
+        function formatCurrency(value) {
+            const absValue = Math.abs(value);
+            if (absValue >= 1000000000) {
+                return (value < 0 ? '-' : '') + '$' + (absValue / 1000000000).toFixed(2) + 'B';
+            } else if (absValue >= 1000000) {
+                return (value < 0 ? '-' : '') + '$' + (absValue / 1000000).toFixed(1) + 'M';
+            } else {
+                return (value < 0 ? '-' : '') + '$' + (absValue / 1000).toFixed(0) + 'K';
+            }
+        }
+
+        // Update display and calculations
+        function updateCalculations() {
+            let data;
+            if (currentModel === 'linear') {
+                data = calculateLinearTV(
+                    parseFloat(linearRightsCost.value),
+                    parseFloat(linearAdCPM.value),
+                    parseFloat(linearCarriageFee.value),
+                    parseFloat(linearStartingSubs.value),
+                    parseFloat(linearDecline.value)
+                );
+            } else {
+                data = calculateStreaming(
+                    parseFloat(streamingRightsCost.value),
+                    parseFloat(streamingSubPrice.value),
+                    parseFloat(streamingStartingSubs.value),
+                    parseFloat(streamingGrowth.value),
+                    parseFloat(streamingChurn.value),
+                    parseFloat(streamingCAC.value)
+                );
+            }
+
+            createChart(data);
+            updateMetrics(data);
+        }
+
+        // Update slider value displays
+        function updateSliderDisplays() {
+            document.getElementById('linear-rights-cost-value').textContent = '$' + linearRightsCost.value + 'M';
+            document.getElementById('linear-ad-cpm-value').textContent = '$' + linearAdCPM.value;
+            document.getElementById('linear-carriage-fee-value').textContent = '$' + linearCarriageFee.value;
+            document.getElementById('linear-starting-subs-value').textContent = linearStartingSubs.value + 'M';
+            document.getElementById('linear-decline-value').textContent = linearDecline.value + '%';
+
+            document.getElementById('streaming-rights-cost-value').textContent = '$' + streamingRightsCost.value + 'M';
+            document.getElementById('streaming-sub-price-value').textContent = '$' + streamingSubPrice.value;
+            document.getElementById('streaming-starting-subs-value').textContent = streamingStartingSubs.value + 'K';
+            document.getElementById('streaming-growth-value').textContent = streamingGrowth.value + '%';
+            document.getElementById('streaming-churn-value').textContent = streamingChurn.value + '%';
+            document.getElementById('streaming-cac-value').textContent = '$' + streamingCAC.value;
+        }
+
+        // Toggle between models
+        function switchModel(model) {
+            currentModel = model;
+
+            if (model === 'linear') {
+                toggleLinear.classList.add('active');
+                toggleStreaming.classList.remove('active');
+                toggleLinear.setAttribute('aria-selected', 'true');
+                toggleStreaming.setAttribute('aria-selected', 'false');
+                toggleLinear.setAttribute('tabindex', '0');
+                toggleStreaming.setAttribute('tabindex', '-1');
+                linearControls.classList.remove('hidden');
+                streamingControls.classList.add('hidden');
+            } else {
+                toggleStreaming.classList.add('active');
+                toggleLinear.classList.remove('active');
+                toggleStreaming.setAttribute('aria-selected', 'true');
+                toggleLinear.setAttribute('aria-selected', 'false');
+                toggleStreaming.setAttribute('tabindex', '0');
+                toggleLinear.setAttribute('tabindex', '-1');
+                streamingControls.classList.remove('hidden');
+                linearControls.classList.add('hidden');
+            }
+
+            updateCalculations();
+        }
+
+        // Preset scenarios
+        const presets = {
+            rogers: {
+                model: 'linear',
+                values: {
+                    rightsCost: 433,
+                    adCPM: 55,
+                    carriageFee: 0.50,
+                    startingSubs: 11.2,
+                    decline: 8
+                }
+            },
+            dazn: {
+                model: 'streaming',
+                values: {
+                    rightsCost: 50,
+                    subPrice: 20,
+                    startingSubs: 50,
+                    growth: 5,
+                    churn: 3,
+                    cac: 50
+                }
+            },
+            apple: {
+                model: 'streaming',
+                values: {
+                    rightsCost: 250,
+                    subPrice: 15,
+                    startingSubs: 100,
+                    growth: 8,
+                    churn: 4,
+                    cac: 75
+                }
+            }
+        };
+
+        function loadPreset(presetName) {
+            const preset = presets[presetName];
+            switchModel(preset.model);
+
+            if (preset.model === 'linear') {
+                linearRightsCost.value = preset.values.rightsCost;
+                linearAdCPM.value = preset.values.adCPM;
+                linearCarriageFee.value = preset.values.carriageFee;
+                linearStartingSubs.value = preset.values.startingSubs;
+                linearDecline.value = preset.values.decline;
+            } else {
+                streamingRightsCost.value = preset.values.rightsCost;
+                streamingSubPrice.value = preset.values.subPrice;
+                streamingStartingSubs.value = preset.values.startingSubs;
+                streamingGrowth.value = preset.values.growth;
+                streamingChurn.value = preset.values.churn;
+                streamingCAC.value = preset.values.cac;
+            }
+
+            updateSliderDisplays();
+            updateCalculations();
+        }
+
+        // Event listeners
+        toggleLinear.addEventListener('click', () => switchModel('linear'));
+        toggleStreaming.addEventListener('click', () => switchModel('streaming'));
+
+        // All sliders
+        const allSliders = [
+            linearRightsCost, linearAdCPM, linearCarriageFee, linearStartingSubs, linearDecline,
+            streamingRightsCost, streamingSubPrice, streamingStartingSubs, streamingGrowth, streamingChurn, streamingCAC
+        ];
+
+        allSliders.forEach(slider => {
+            slider.addEventListener('input', () => {
+                updateSliderDisplays();
+                updateCalculations();
+            });
+        });
+
+        // Preset buttons
+        presetButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                loadPreset(btn.dataset.preset);
+            });
+        });
+
+        // Reset button
+        resetBtn.addEventListener('click', () => {
+            loadPreset('rogers'); // Default to Rogers preset
+        });
+
+        // Export button
+        exportBtn.addEventListener('click', () => {
+            let data;
+            const params = {};
+
+            if (currentModel === 'linear') {
+                params.model = 'Linear TV';
+                params.rightsCost = linearRightsCost.value + 'M';
+                params.adCPM = '$' + linearAdCPM.value;
+                params.carriageFee = '$' + linearCarriageFee.value;
+                params.startingSubs = linearStartingSubs.value + 'M';
+                params.decline = linearDecline.value + '%';
+
+                data = calculateLinearTV(
+                    parseFloat(linearRightsCost.value),
+                    parseFloat(linearAdCPM.value),
+                    parseFloat(linearCarriageFee.value),
+                    parseFloat(linearStartingSubs.value),
+                    parseFloat(linearDecline.value)
+                );
+            } else {
+                params.model = 'Streaming/DTC';
+                params.rightsCost = streamingRightsCost.value + 'M';
+                params.subPrice = '$' + streamingSubPrice.value;
+                params.startingSubs = streamingStartingSubs.value + 'K';
+                params.growth = streamingGrowth.value + '%';
+                params.churn = streamingChurn.value + '%';
+                params.cac = '$' + streamingCAC.value;
+
+                data = calculateStreaming(
+                    parseFloat(streamingRightsCost.value),
+                    parseFloat(streamingSubPrice.value),
+                    parseFloat(streamingStartingSubs.value),
+                    parseFloat(streamingGrowth.value),
+                    parseFloat(streamingChurn.value),
+                    parseFloat(streamingCAC.value)
+                );
+            }
+
+            const exportData = {
+                model: currentModel,
+                parameters: params,
+                projections: data
+            };
+
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `platform-economics-${currentModel}-${Date.now()}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+
+        // Initialize
+        updateSliderDisplays();
+        updateCalculations();
+    </script>
+</body>
+</html>

@@ -134,7 +134,7 @@ Create 3 tiles (1x3 or 2x2 grid with one empty):
 | 1 | **Infobox (Callout)** ⬤ Required | Context about executive + viewing guide | Type directly | Blue variant, sets expectations |
 | 2 | **Video** ◐ Recommended | 2-minute executive session | Upload MP4 + VTT transcript | Hosted video with captions |
 | 3 | **Details** ○ Optional | Executive bio and background (optional) | Type directly | Accordion for optional depth |
-| 4 | **AI Chat Widget** ○ Optional | "Ask about media strategy concepts" | Configure in Uplimit | Named: "Media Strategy Q&A" |
+| 4 | **AI Chat Widget** ◐ Recommended | Your Learning Coach for media strategy concepts | Configure in Uplimit | Named: "Media Strategy Q&A" |
 
 **Detailed Content Specifications:**
 
@@ -197,8 +197,24 @@ Current Portfolio:
 - **Video** provides concise expert practitioner perspective on media strategy (UDL engagement)
 - **VTT transcript** ensures accessibility and enables text-based review
 - **Details** offers optional executive background without cluttering main flow (UDL choice)
-- **AI Chat** provides on-demand concept clarification (UDL scaffolding)
+- **AI Chat** serves as your core learning coach—use it to clarify concepts, test your understanding, or explore questions raised by the executive session (UDL scaffolding + active learning)
 - Brief format delivers key insights efficiently while maintaining executive credibility
+
+---
+
+## 🌟 MENTAL BREAK #1: Pause & Recharge
+
+**You've completed:** Welcome, learning objectives, and executive insights
+**Coming next:** Interactive media rights framework (12-15 minutes)
+
+**Take a moment to:**
+- Stand up and stretch for 30 seconds
+- Get water or a quick snack
+- Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
+
+**Progress:** You're 25% through Week 2 content! The next module uses interactive widgets to help you explore media economics—it's engaging, but give yourself permission to take breaks between widgets if needed.
+
+*This break is optional but recommended. Return when you're ready to dive into valuation frameworks.*
 
 ---
 
@@ -347,6 +363,36 @@ function calculateRightsValue(avgViewers, numGames, covetedDemoPercent, cpm) {
 
 ---
 
+### 📝 CHECK YOUR UNDERSTANDING: Media Rights Valuation
+
+**Quick Quiz (2 minutes)** - Test your grasp of rights valuation fundamentals before moving forward.
+
+**Question 1: Which factor is the PRIMARY driver of media rights valuations?**
+- A) Content volume (number of games)
+- B) League brand prestige
+- C) **Audience size and demographics** ✓
+- D) Platform flexibility
+
+**Answer:** C - Audience size is the #1 valuation driver. The NFL commands $10B/year ($110B over 11 years) primarily because of 17M average viewers per game, not just brand prestige.
+
+**Question 2: The NFL's media rights are worth $10B/year. MLS rights are worth $250M/year (40x less). What's the main reason?**
+- A) MLS has fewer games than NFL
+- B) **MLS averages 300K viewers vs. NFL's 17M viewers** ✓
+- C) NFL has more expensive production costs
+- D) MLS doesn't offer digital rights
+
+**Answer:** B - Total audience reach matters most. NFL: 17M viewers × 272 games = massive reach. MLS: 300K viewers × 408 games = much smaller reach, despite more games.
+
+**Question 3: Why do sports command premium CPM advertising rates ($50-70) vs. scripted TV ($15-25)?**
+- A) Sports fans have higher incomes
+- B) **Sports deliver "appointment viewing" (simultaneous, engaged audiences)** ✓
+- C) Sports have longer commercial breaks
+- D) Sports attract younger demographics
+
+**Answer:** B - Sports are the last "appointment viewing" in an on-demand world. Fans watch live (can't avoid spoilers), creating simultaneous, engaged audiences that advertisers pay premiums to reach.
+
+---
+
 ### Element 5: Text - Exclusivity & Competition Dynamics (150 words)
 
 Copy the markdown below directly into Uplimit:
@@ -443,6 +489,36 @@ This unique characteristic explains why sports rights command prices that seem e
 ```
 
 **Design Note:** Yellow Infobox (Note variant). Reinforces WHY bidders compete aggressively.
+
+---
+
+### 📝 CHECK YOUR UNDERSTANDING: Exclusivity & Competition
+
+**Quick Quiz (2 minutes)** - Test your grasp of exclusivity dynamics and appointment viewing before continuing.
+
+**Question 1: Why do exclusive rights cost 2-3x more than non-exclusive packages?**
+- A) Exclusive deals require more legal work
+- B) **Exclusivity creates competitive bidding wars between traditional networks, streamers, and tech giants** ✓
+- C) Exclusive content has higher production costs
+- D) Non-exclusive deals aren't available for major sports
+
+**Answer:** B - When Amazon entered NFL rights bidding (2021), it drove prices up 75% despite stable ratings. Multiple bidders (networks + streamers + tech giants) competing for exclusive access creates exponential price increases.
+
+**Question 2: What makes sports "appointment viewing" in 2024?**
+- A) Sports are scheduled at convenient times
+- B) Sports games are shorter than movies
+- C) **Sports can't be watched "later" without risking spoilers from social media** ✓
+- D) Sports require expensive cable subscriptions
+
+**Answer:** C - Sports are the last content you MUST watch live. Social media, news alerts, and friends will spoil results if you wait. This creates predictable, simultaneous audiences—extremely valuable in an on-demand world.
+
+**Question 3: When the NFL split packages across CBS, FOX, NBC, ESPN, and Amazon (instead of single exclusive bidder), the result was:**
+- A) Lower total rights value (less competition)
+- B) **Higher total rights value (multiple bidders maximized revenue)** ✓
+- C) Confused fans who couldn't find games
+- D) Lower production quality across networks
+
+**Answer:** B - NFL maximized total value by creating competition among multiple bidders. Each network/platform paid premium prices to secure THEIR exclusive package. Total: $110B over 11 years. Strategy: split to multiply bidding wars.
 
 ---
 
@@ -656,6 +732,38 @@ function calculateEngagementValue(baseFans, baseFanValue, selectedTactics) {
 
 ---
 
+### 📝 CHECK YOUR UNDERSTANDING: Platforms & Fan Engagement (Final Check)
+
+**Quick Quiz (2 minutes)** - Test your mastery of platform economics and engagement monetization before moving to the simulation.
+
+**Question 1: What's the key difference between linear TV and streaming/DTC profitability timelines?**
+- A) Linear TV is always more profitable
+- B) **Linear TV expects immediate profitability; streaming uses 3-5 year customer LTV model** ✓
+- C) Streaming is cheaper to operate than linear TV
+- D) Linear TV has higher subscriber growth rates
+
+**Answer:** B - Linear TV business model: Immediate ROI required (ad revenue + carriage fees). Streaming model: Invest in growth for 3-5 years, bet on customer lifetime value. Different economics, different timelines.
+
+**Question 2: Which statement about Rogers NHL deal vs. DAZN Canada is TRUE?**
+- A) Rogers' $433M/year NHL-only strategy was more profitable than DAZN's $50M/year multi-sport approach
+- B) **DAZN's multi-sport portfolio ($50M/year) achieved profitability in Year 4; Rogers never broke even** ✓
+- C) Both companies failed financially due to cord-cutting
+- D) DAZN copied Rogers' exclusive NHL strategy
+
+**Answer:** B - DAZN's diversification strategy (soccer, boxing, NFL, combat sports at $50M/year total) spread risk and achieved profitability Year 4. Rogers' single-property bet ($433M/year NHL-only) created concentration risk and never broke even after 10 years. Lesson: Portfolio diversification matters.
+
+**Question 3: In the fan engagement value chain, what drives a fan from "Passive Viewer" ($5-15/year value) to "Super-Fan" ($300-500+/year value)?**
+- A) Team winning records
+- B) **Active engagement tactics: fantasy integration, betting, exclusive content subscriptions, app usage** ✓
+- C) Lower ticket prices
+- D) More TV games available
+
+**Answer:** B - Passive viewers watch occasionally (basic ad value). Super-fans engage deeply: fantasy sports, betting partnerships, exclusive content subscriptions, app features. Platforms that drive engagement (DraftKings+NBA, Apple TV+MLS) extract 20-50x more value per fan. Engagement = monetization multiplier.
+
+**🎯 Module 3 Complete!** You've mastered media rights valuation, exclusivity dynamics, platform economics, and fan engagement. Next: Apply these frameworks in the Streaming Wars simulation.
+
+---
+
 **Design Rationale:**
 - **V3 Philosophy:** Replace passive "reading ABOUT concepts" with active "experiencing concepts through manipulation"
 - **Micro-chunking:** No text over 150 words prevents cognitive overload
@@ -664,6 +772,46 @@ function calculateEngagementValue(baseFans, baseFanValue, selectedTactics) {
 - **Progressive complexity:** Simple calculator (Widget 1) → Complex simulation (Widget 3)
 - **Real-world data:** NFL $110B, NHL $5.2B, MLS $250M examples ground learning in authenticity
 - **Supports all MLOs:** 2.1 (valuation via Widgets 1-2), 2.2 (platforms via Widget 3), 2.3 (engagement via Widget 4)
+
+---
+
+## 💬 DISCUSSION PROMPT #1: Media Rights Framework Takeaway
+
+**Post to Discussion Forum** (⬤ Required - 5 points)
+
+**Prompt:**
+Post your #1 takeaway from the media rights framework. What surprised you most about how sports content is valued and monetized?
+
+**Requirements:**
+- **Your Post:** 20 words minimum
+- **Peer Engagement:** Reply to at least 2 peers' posts with thoughtful responses
+- **Deadline:** Before moving to Module 4 simulation
+
+**Example Starter:**
+"The biggest surprise for me was [insight]. This challenges my assumption that [previous belief]. I'm curious how [question for peers]..."
+
+**Why This Matters:**
+Sharing insights helps you process what you've learned through the widgets and prepares you to apply frameworks in the simulation. Learning from peers' perspectives strengthens understanding.
+
+**Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
+- 3 points: Thoughtful original post (20+ words)
+- 2 points: Two quality peer replies
+
+---
+
+## 🌟 MENTAL BREAK #2: Reset Before Simulation
+
+**You've completed:** Media rights valuation framework with 4 interactive widgets
+**Coming next:** Streaming Wars simulation (30-45 minutes)
+
+**Take a moment to:**
+- Walk around for 2-3 minutes (get your blood flowing)
+- Grab a drink or snack if needed
+- Close your eyes and take 3 deep breaths
+
+**Progress:** You're 50% through Week 2 content! You've learned the frameworks—now you'll apply them in a strategic simulation. The next module is a game-like experience where you'll make real platform decisions.
+
+*Consider this your halftime break. The simulation ahead is engaging but requires focus. Return refreshed and ready to build your streaming empire!*
 
 ---
 
@@ -677,7 +825,7 @@ function calculateEngagementValue(baseFans, baseFanValue, selectedTactics) {
 | 1 | **Infobox (Callout)** ⬤ Required | Activity instructions and learning objectives | Type directly | Blue variant, clear task |
 | 2 | **iFrame** ◐ Recommended | Streaming Wars Strategy widget | Custom widget hosted | Interactive simulation |
 | 3 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to MLOs |
-| 4 | **AI Chat Widget** ○ Optional | Strategy advisor (optional) | Configure in Uplimit | Named: "Platform Strategy Assistant" |
+| 4 | **AI Chat Widget** ◐ Recommended | Your Strategy Coach for simulation decisions | Configure in Uplimit | Named: "Platform Strategy Assistant" |
 | 5 | **Details** ○ Optional | Hints and strategic considerations (optional) | Type directly | Accordion for struggling students |
 
 **Detailed Content Specifications:**
@@ -821,261 +969,961 @@ What is your differentiation? Why do subscribers choose YOU over competitors?
 
 ---
 
-## MODULE 5: Case Study - Rogers Communications & NHL Rights Deal
-**Purpose:** Analyze $5.2B media rights mega-deal (supports MLO 2.4 - Evaluation level, integrates all Week 2 MLOs)
+## 💬 DISCUSSION PROMPT #2: Share Your Streaming Wars Strategy
 
-**Uplimit Structure:** Fifth module in Unit 2
+**Post to Discussion Forum** (⬤ Required - 5 points)
 
-| Order | Element | Content/Purpose | Source | Implementation Notes |
-|-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
-| 2 | **Text** ⬤ Required | Full case study narrative | Import from `week2-rogers-case.docx` | Main case text (10-12 pages) |
-| 3 | **Table** ⬤ Required | Rogers NHL deal financial summary | Type directly | Key deal terms and performance |
-| 4 | **Details** ⬤ Required | Exhibit A: Rogers financial projections vs. actuals | Type directly or upload PDF | Accordion - detailed financials |
-| 5 | **Details** ⬤ Required | Exhibit B: NHL viewership and ratings data | Type directly or upload PDF | Accordion - performance metrics |
-| 6 | **Details** ⬤ Required | Exhibit C: Competitive landscape (TSN, DAZN, others) | Type directly | Accordion - market context |
-| 7 | **Video** ◐ Recommended | "Rogers NHL Deal: 10 Years Later" (2 min) | Upload MP4 + VTT | Retrospective analysis |
+**Prompt:**
+Share your Streaming Wars simulation results and strategy. Did you achieve profitability? What key decisions led to your outcome?
 
-**Detailed Content Specifications:**
+**Requirements:**
+- **Screenshot:** Upload an image of your final simulation dashboard (profitability timeline, subscriber count, etc.)
+- **Reflection:** 50 words minimum explaining your strategy and what you learned
+- **Peer Engagement:** React to at least 2 peers' strategies with questions or observations
+- **Deadline:** Before starting Module 5 case study
 
-### Infobox Content:
+**Example Post:**
+"[Screenshot attached] I achieved profitability in Year 4 by [strategy]. My biggest lesson was [insight]. Seeing others' approaches, I'm curious: Did anyone succeed with [alternative strategy]?"
+
+**Why This Matters:**
+Comparing strategies reveals multiple paths to success and failure. You'll see how different approaches to rights acquisition, pricing, and engagement affect profitability—directly preparing you to evaluate Rogers' actual decisions in the case study.
+
+**Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
+- 3 points: Screenshot + 50-word reflection
+- 2 points: Two quality peer reactions
+
+---
+
+## 🌟 MENTAL BREAK #3: Prepare for Case Analysis
+
+**You've completed:** Framework learning + strategic simulation
+**Coming next:** Rogers $5.2B NHL case study (23-25 minutes)
+
+**Take a moment to:**
+- Stand and do 5 shoulder rolls backward, 5 forward
+- Get fresh water or coffee
+- Step outside for 60 seconds if possible (fresh air resets focus)
+
+**Progress:** You're 70% through Week 2 content! The simulation showed you platform strategy in action. Now you'll analyze a real mega-deal to see where theory meets reality. This case has 4 interactive data widgets—it's fascinating but dense.
+
+*This is your most important break. The case study requires critical thinking and synthesis. Take 3-5 minutes to truly reset before diving into the Rogers deal.*
+
+---
+
+## MODULE 5A: Rogers NHL Case Study - Deal Context (V3 INTERACTIVE-FIRST REDESIGN)
+**Purpose:** Understand the Rogers/NHL deal structure, terms, and strategic rationale (supports MLO 2.1, 2.4)
+
+⭐ **V3 REDESIGN - INTERACTIVE-FIRST**: This module has been redesigned from passive case reading (10-12 pages, 25-30 min) to active case analysis split into TWO microlearning modules (5A + 5B, 23-25 min total, 65% active engagement).
+
+**Uplimit Structure:** Fifth module in Unit 2 (Part A of 2-part case study)
+**Time:** ~10 minutes | Focus: Deal context, terms, and strategic rationale
+
+| Order | Element | Content/Purpose | Time | Implementation Notes |
+|-------|---------|----------------|------|---------------------|
+| 1 | **Infobox** ⬤ Required | Case overview + key questions | 1 min | Blue variant |
+| 2 | **Text** ⬤ Required | Case background: Rogers + NHL 2013 (150 words) | 1 min | Embedded markdown below |
+| 3 | **🎮 iFrame Widget** ◐ Recommended | Widget 5: Rogers Deal Terms Explorer | 3 min | Phase 2 widget (NEEDS TO BE BUILT) |
+| 4 | **Text** ⬤ Required | Strategic rationale: Why $5.2B? (150 words) | 1 min | Embedded markdown below |
+| 5 | **Video** ◐ Recommended | Executive retrospective (2 min) | 2 min | week2-rogers-retrospective.mp4 |
+| 6 | **Text** ⬤ Required | Performance overview (150 words) | 1 min | Embedded markdown below |
+| 7 | **🎮 iFrame Widget** ◐ Recommended | Widget 6: Projections vs. Actuals Visualizer | 4 min | Phase 2 widget (NEEDS TO BE BUILT) |
+
+**Module 5A Metrics:**
+- **Total Time:** ~10 minutes
+- **Reading Time:** 4 minutes (3 text blocks × 1 min + 1 min financial tutorial)
+- **Interactive Time:** 7 minutes (2 widgets + 1 video)
+- **Active Engagement:** 70%
+
+---
+
+### Element 1: Infobox - Case Overview
+
 ```
 Title: Case Study: Rogers Communications - The $5.2 Billion NHL Bet ▸
 
 Context:
-In 2013, Rogers Communications shocked the sports media world by paying $5.2 billion
-for exclusive Canadian NHL rights—12 years, all platforms, all games. It was the
-largest sports media deal in Canadian history and a massive strategic bet on hockey's
-enduring value.
+In 2013, Rogers Communications shocked the sports media world by paying $5.2 billion for exclusive Canadian NHL rights—12 years, all platforms, all games. It was the largest sports media deal in Canadian history and a massive strategic bet on hockey's enduring value.
 
 Key Questions for Analysis:
 1. How did Rogers value the NHL rights at $5.2 billion? What assumptions did they make?
 2. What were the strategic goals beyond pure ROI (e.g., brand positioning, competitive defense)?
 3. How did the deal perform vs. expectations? What went right and wrong?
-4. Would you have made this deal? What would you have done differently?
+4. What should Rogers do in 2026 when the deal expires?
 
 This case addresses all Week 2 MLOs:
 • MLO 2.1: Rights valuation methodology
 • MLO 2.2: Platform strategy (linear Sportsnet + streaming)
 • MLO 2.3: Fan engagement and monetization tactics
 • MLO 2.4: Evaluation of mega-deal success/failure
-
-Preparation: Read the full case and all exhibits. Watch the retrospective video.
-Be ready for executive discussion.
 ```
 
-### Text Content (week2-rogers-case.docx):
-**Document Structure:**
-```
-# Rogers Communications: The $5.2 Billion NHL Rights Deal
+---
 
-## Case Background
-[2-3 pages: Company history, strategic context, media landscape 2013]
+### Element 2: Text - Case Background (150 words)
 
-## The Deal
-[2-3 pages: Terms, exclusivity, platforms covered, competitive bidding]
+Copy the markdown below directly into Uplimit:
 
-## Rogers' Strategic Rationale
-[2-3 pages: Why they bid, what they hoped to achieve, financial projections]
+```markdown
+# Rogers Communications: Company Background (2013)
 
-## Implementation and Performance
-[2-3 pages: 2014-2024 performance, challenges encountered, strategic pivots]
+**Who:** Rogers Communications, Canada's largest telecommunications and media company. In 2013, Rogers owned:
+- Rogers Wireless (largest mobile carrier, 9.5M subscribers)
+- Rogers Cable (cable TV and internet, 2.3M subscribers)
+- **Sportsnet** (sports broadcasting network, distant #2 to TSN)
 
-## The Verdict (10 Years Later)
-[1-2 pages: Did it work? Financial outcomes, strategic outcomes]
+**Strategic Challenge:** By 2013, Rogers faced existential threats:
+- Cord-cutting accelerating (cable subscribers declining 5%/year)
+- TSN (Bell Media) dominated sports broadcasting with NHL, NBA, CFL, FIFA
+- Netflix and streaming disrupting traditional TV
 
-## Questions for Discussion
-[1 page: Structured analytical questions]
+**The Opportunity:** NHL's Canadian rights deal with CBC/TSN was expiring in 2014. Rogers saw a chance to acquire the crown jewel of Canadian sports and transform Sportsnet from challenger to leader.
 
-Total: 10-12 pages
-```
+**The Stakes:** A $5.2B bet—equivalent to 15% of Rogers' entire market capitalization. Success could secure Rogers' media future. Failure could cripple the company for a decade.
 
-**Import Settings:**
-- Preserve all heading hierarchy
-- Include charts/graphs (financial projections, viewership trends)
-- Maintain case formatting (quotes, tables, bullet lists)
-
-### Table Content - Rogers NHL Deal Summary:
-
-| **Deal Component** | **Details** | **2024 Assessment** |
-|-------------------|------------|-------------------|
-| **Total Value** | $5.2 billion CAD over 12 years | Largest Canadian sports media deal ever |
-| **Annual Cost** | ~$433 million/year | 2.5x previous deal ($1.4B/10 years) |
-| **Rights Included** | All NHL games (national + regional)<br>All platforms (TV, digital, mobile) | Exclusive in Canada |
-| **Platforms** | Sportsnet (linear TV)<br>Sportsnet NOW (streaming) | Dual distribution strategy |
-| **Revenue Projections** | $500M/year by Year 5 (ads + subs) | Fell short: ~$350M/year actual |
-| **Profitability Target** | Break-even by Year 7 | Not achieved; restructured 2021 |
-| **Strategic Goals** | Defend cable subscribers<br>Build streaming brand | Mixed results |
-
-**Table Caption:** "Rogers NHL Deal: Key Terms and 10-Year Performance Summary"
-
-### Details - Exhibit A Content:
-```
-Title: Exhibit A: Rogers Financial Projections vs. Actuals
-
-[Expand for detailed financial analysis]
-
-## Original Projections (2014)
-
-| Year | Content Costs | Revenue | Operating Income | Notes |
-|------|--------------|---------|-----------------|-------|
-| Year 1 | $433M | $300M | ($133M) | Ramp-up phase |
-| Year 3 | $433M | $425M | ($8M) | Approaching break-even |
-| Year 5 | $433M | $500M | $67M | Target profitability |
-| Year 7 | $433M | $550M | $117M | Sustained profitability |
-
-## Actual Performance (2014-2024)
-
-| Year | Content Costs | Revenue | Operating Income | Key Events |
-|------|--------------|---------|-----------------|-----------|
-| Year 1 (2014-15) | $433M | $280M | ($153M) | Lower than expected ad revenue |
-| Year 3 (2016-17) | $433M | $310M | ($123M) | Cord-cutting accelerates |
-| Year 5 (2018-19) | $433M | $350M | ($83M) | Streaming growth slow |
-| Year 7 (2020-21) | $433M | $200M* | ($233M)* | *COVID: no fans, shortened season |
-| Year 10 (2023-24) | $433M | $380M | ($53M) | Still unprofitable |
-
-## Key Variances - What Went Wrong?
-
-• **Advertising Revenue:** Projected $300M, actual ~$200M (cord-cutting faster than expected)
-• **Subscription Revenue:** Projected $200M, actual ~$100M (slower Sportsnet NOW adoption)
-• **Cord-Cutting:** Accelerated 2016-2020, faster than industry projections
-• **COVID Impact:** 2020-21 season devastated revenue, no recovery clause in contract
-• **Canadian Dollar:** USD/CAD exchange rate fluctuations increased effective costs
+**Next: Explore the deal terms and what Rogers got for $5.2 billion.**
 ```
 
-### Details - Exhibit B Content:
+---
+
+### Element 3: Widget 5 - Rogers Deal Terms Explorer
+
+**🎮 Widget Purpose:** Let students explore the comprehensive terms of the Rogers NHL deal interactively, understanding what $5.2B bought.
+
+**Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (5-6 hours estimated)
+
+**How It Works:**
+1. **Deal Overview Screen:**
+   - Total value: $5.2 billion over 12 years
+   - Annual cost: $433 million/year
+   - Contract term: 2014-15 season → 2025-26 season
+2. **Interactive Tabs (Click to Explore):**
+   - **Rights Included:** What Rogers acquired
+   - **Platforms Covered:** Where games could be shown
+   - **Exclusivity Terms:** What competitors lost
+   - **Revenue Projections:** What Rogers expected to earn
+   - **Comparison to Previous Deal:** How much more Rogers paid
+
+**Tab Content:**
+
+**Tab 1: Rights Included**
+- ✅ All national games (Hockey Night in Canada - Saturday nights)
+- ✅ All regional games (all 7 Canadian teams - 82 games × 7 = 574 regional games)
+- ✅ All playoff games (Stanley Cup Playoffs - Canadian teams + all rounds)
+- ✅ International tournaments (World Cup of Hockey, Olympics qualifier games)
+- ✅ Shoulder programming (pre-game, post-game, highlight shows)
+- **Total:** 1,000+ games per season + shoulder content
+
+**Tab 2: Platforms Covered**
+- 📺 Linear TV: Sportsnet, Sportsnet One, Sportsnet 360, City TV
+- 📱 Streaming: Sportsnet NOW (subscription service, launched 2016)
+- 💻 Digital: Sportsnet.ca website, mobile apps
+- 📻 Radio: Sportsnet Radio network
+- **Flexibility:** Rogers controlled all platforms (could shift games based on strategy)
+
+**Tab 3: Exclusivity Terms**
+- 🚫 TSN lost national rights (previously co-held with CBC)
+- 🚫 CBC retained Hockey Night in Canada brand but sublicensed from Rogers (free over-air broadcast Saturdays)
+- 🚫 No other Canadian broadcaster could show NHL games (except CBC sublicense)
+- ✅ Regional rights for some teams retained by others (e.g., TSN had regional Ottawa Senators rights)
+- **Result:** Rogers had near-monopoly on NHL content in Canada
+
+**Tab 4: Revenue Projections (Rogers' Internal Forecast)**
+- **Year 1 (2014-15):** $300M revenue (advertising + Sportsnet NOW subscriptions)
+- **Year 3 (2016-17):** $425M revenue (subscriber growth + premium ad rates)
+- **Year 5 (2018-19):** $500M revenue (break-even point)
+- **Year 7 (2020-21):** $550M revenue (sustained profitability)
+- **Assumptions:** 1M Sportsnet NOW subscribers by Year 5 @ $25/month + stable linear TV ad revenue
+
+**Tab 5: Comparison to Previous Deal**
+- **Previous (CBC/TSN 2004-2014):** $1.4B over 10 years = $140M/year
+- **Rogers (2014-2026):** $5.2B over 12 years = $433M/year
+- **Increase:** 209% higher per year ($433M vs. $140M)
+- **Per-game cost:** Previous: $140K/game → Rogers: $433K/game (3x increase)
+- **Justification:** Exclusivity premium + digital rights + inflation + NHL's growing Canadian fanbase
+
+**Learning Objectives:**
+- **MLO 2.4:** Understand comprehensive scope of rights deal (not just TV games)
+- **MLO 2.1:** Recognize valuation factors (exclusivity, platform flexibility, content volume)
+- Appreciate why Rogers paid 3x more than previous deal (exclusivity + digital platforms)
+- Understand revenue projection assumptions (critical for later analysis when projections fail)
+
+**Accessibility:**
+- ✅ Keyboard navigation (Tab to switch tabs, Enter to activate)
+- ✅ ARIA tabs pattern (role="tablist", aria-selected)
+- ✅ Screen reader announces tab content when switching
+- ✅ High contrast mode for tab indicators
+- ✅ Focus indicators on active tab
+
+**Implementation Notes:** Tab interface + content panels + comparison overlay + export button. 5 tabs with comprehensive data.
+
+---
+
+### 💡 FINANCIAL ANALYSIS TUTORIAL: How to Read Case Exhibits
+
+**Quick Guide (2 minutes)** - Before you analyze Rogers' performance, learn how to read financial projections like an MBA analyst.
+
+**1. Variance Analysis (Projected vs. Actual)**
+- **What it is:** Compare what was forecasted to what actually happened
+- **How to calculate:** Variance = Actual - Projected (negative = shortfall, positive = beat expectations)
+- **What to look for:** Consistent misses suggest flawed assumptions (not just bad luck)
+- **Example:** Rogers projected $500M Year 5 revenue, actual was $350M → -$150M variance (30% shortfall)
+
+**2. Break-Even Analysis**
+- **What it is:** When does revenue exceed costs? When does cumulative profit turn positive?
+- **Red flag:** Break-even keeps getting pushed back (Year 5 → Year 7 → Never)
+- **Rogers reality:** Projected break-even Year 5. Actual: Never achieved after 10 years.
+
+**3. Key Metrics to Track**
+- **Revenue growth rate:** Is it accelerating or decelerating?
+- **Cost structure:** Are costs fixed or variable? Can they flex down if revenue misses?
+- **Cumulative profit/loss:** Add up annual profits/losses to see total financial impact
+- **ROI calculation:** (Total Return - Total Investment) / Total Investment
+
+**4. Common Red Flags**
+- ⚠️ **Overly optimistic growth rates** (e.g., "subscribers will grow 100%/year for 5 years")
+- ⚠️ **No downside scenarios** (what if things go wrong?)
+- ⚠️ **Missing force majeure clauses** (COVID, strikes, lockouts)
+- ⚠️ **Revenue projections that assume "build it and they will come"** without customer acquisition strategy
+
+**🎯 Use This Framework:** As you explore Rogers' financial data in the next widgets, ask yourself: Where did projections go wrong? What assumptions failed? Could this have been predicted?
+
+---
+
+### Element 4: Text - Strategic Rationale (150 words)
+
+Copy the markdown below directly into Uplimit:
+
+```markdown
+# Why Rogers Paid $5.2 Billion: The Strategic Rationale
+
+Rogers' board approved the $5.2B bid despite knowing it would lose money for 3-5 years. **Why?**
+
+## Defensive Strategy: Protect the Core Business
+- Cable subscribers were cancelling at 5%/year (cord-cutting accelerating)
+- NHL games were **the #1 reason Canadians kept cable** (survey: 42% said "hockey" was must-have)
+- Losing NHL rights would accelerate cord-cutting → death spiral for cable business
+- **Logic:** Pay $433M/year to prevent $1B+/year cable revenue loss
+
+## Offensive Strategy: Build Streaming Brand
+- Sportsnet NOW (streaming service) launched 2016 with NHL as exclusive content
+- Target: 1M+ subscribers by Year 5 @ $25/month = $300M/year new revenue
+- Position Sportsnet as **Canada's sports streaming destination** before Netflix, DAZN, Apple entered
+
+## Competitive Defense: Hurt TSN (Bell Media)
+- TSN (Rogers' main competitor) lost national NHL rights
+- Weakened TSN's #1 sports brand positioning
+- Rogers could justify cable carriage fee increases ("We have NHL, TSN doesn't")
+
+**Next: What actually happened? (Spoiler: Most assumptions proved wrong)**
 ```
-Title: Exhibit B: NHL Viewership and Ratings Data (Canada)
 
-[Expand for audience metrics]
+---
 
-## National Broadcast Ratings (Hockey Night in Canada)
+### Element 5: Video - Executive Retrospective (2 minutes)
 
-| Season | Avg. Viewers (millions) | Year-over-Year Change |
-|--------|----------------------|---------------------|
-| 2013-14 (Pre-Rogers) | 1.8M | Baseline |
-| 2014-15 (Year 1) | 1.6M | -11% (Canadian teams weak) |
-| 2016-17 (Year 3) | 1.4M | -13% (continued decline) |
-| 2018-19 (Year 5) | 1.5M | +7% (Leafs, Flames strong) |
-| 2020-21 (COVID) | 1.2M | -20% (pandemic fatigue) |
-| 2023-24 (Year 10) | 1.3M | +8% (McDavid effect) |
-
-## Sportsnet NOW Streaming Subscribers
-
-| Year | Subscribers | Monthly ARPU | Annual Revenue |
-|------|------------|--------------|----------------|
-| 2016 (Launch) | 50K | $19.99 | ~$12M |
-| 2018 | 200K | $19.99 | ~$48M |
-| 2020 | 350K | $24.99 | ~$105M |
-| 2024 | 450K | $27.99 | ~$151M |
-
-**Comparison:** DAZN Canada (launched 2017) reached 300K subscribers by 2020 with soccer,
-boxing, NFL. Sportsnet NOW underperformed expectations for NHL-only service.
-
-## Fan Engagement Metrics
-
-• App Downloads: 2.5M (below target of 5M by Year 5)
-• Social Media Followers: 1.8M across platforms (strong)
-• Fantasy Hockey Integration: Limited success, low engagement
-```
-
-### Details - Exhibit C Content:
-```
-Title: Exhibit C: Canadian Sports Media Competitive Landscape
-
-[Expand for market context]
-
-## Major Competitors (2014-2024)
-
-**TSN (Bell Media):**
-• Lost NHL national rights to Rogers but retained regional rights for some teams
-• Diversified into CFL, NBA, FIFA World Cup, curling
-• Launched TSN Direct streaming (2018)
-• Estimated subscribers: 400K by 2024
-
-**DAZN Canada:**
-• Launched 2017 as global streaming disruptor
-• Focus: Soccer, boxing, NFL, combat sports
-• Lower-cost subscription ($20/month vs. Sportsnet $28/month)
-• Niche strategy vs. Rogers' mass-market hockey bet
-
-**CBC (Public Broadcaster):**
-• Retained Saturday night Hockey Night in Canada sublicense from Rogers
-• Free over-the-air, ad-supported
-• Cannibalized some Sportsnet viewership
-
-## Market Shifts (2014-2024)
-
-• Canadian cable/satellite subscribers: 11.2M (2014) → 8.1M (2024) [-28%]
-• Streaming adoption: 35% (2014) → 85% (2024)
-• Sports betting legalization (2021): New revenue opportunity Rogers didn't fully capitalize on
-• Younger demographics (18-34): Shift to highlights, social clips vs. full games
-```
-
-### Video Specification:
+**Video Specifications:**
 - **File:** `week2-rogers-retrospective.mp4`
 - **Duration:** 2 minutes
-- **VTT Transcript:** `week2-rogers-retrospective.vtt`
+- **VTT Transcript:** `week2-rogers-retrospective.vtt` (required)
 - **Video Title:** "Rogers NHL Deal: 10 Years Later - What Went Wrong (and Right)"
-- **Video Caption:** "Industry analysis of the $5.2B bet and lessons for sports media strategy"
 
-**Design Rationale:**
-- **Infobox** frames case and provides guiding questions (QM clear objectives)
-- **Text** delivers comprehensive case narrative with strategic context
-- **Table** presents deal summary for quick reference (structured data)
-- **Multiple Details** layer financial, viewership, and competitive data (UDL progressive disclosure)
-- **Video** provides retrospective industry analysis (multiple perspectives)
-- Supports MLO 2.4 (evaluate deal) while integrating MLO 2.1-2.3 (valuation, platforms, engagement)
-- Real, complex case with no clear "right" answer (authentic analysis)
+**Script Content:**
+
+```
+[0:00-0:20] Introduction
+"In 2013, Rogers bet $5.2 billion on NHL hockey. Ten years later, the deal is widely considered a financial disaster. But was it a complete failure? Let's analyze what went right and wrong."
+
+[0:20-0:45] What Went Wrong
+"Three major miscalculations sank profitability:
+1. Cord-cutting accelerated faster than projected—cable subscribers declined 28% vs. 15% expected
+2. Sportsnet NOW reached only 450K subscribers vs. 1M target—exclusive hockey wasn't enough
+3. COVID-19 devastated Year 7 revenue (projected $550M, actual $200M)—no force majeure clause in contract"
+
+[0:45-1:10] What Went Right (Sort Of)
+"Rogers DID achieve some strategic goals:
+1. Defended cable subscribers—without NHL, decline would've been 35-40% instead of 28%
+2. Established Sportsnet as Canada's sports brand—brand value increased despite financial losses
+3. Built streaming infrastructure—Sportsnet NOW technology platform now supports other content"
+
+[1:10-1:35] The Financial Reality
+"Cumulative losses estimated at $1.5 billion over 10 years. Annual losses: $50-150M/year.
+Rogers never achieved profitability. Break-even pushed from Year 5 → Year 7 → Never."
+
+[1:35-2:00] 2026 Decision Ahead
+"Contract expires 2026. Rogers must decide: Renew? Renegotiate? Walk away?
+NHL knows Rogers overpaid. Next deal will likely be 30-40% less ($300M/year range).
+Question: Is NHL still worth it at ANY price given streaming disruption?"
+```
+
+---
+
+### Element 6: Text - Performance Overview (150 words)
+
+Copy the markdown below directly into Uplimit:
+
+```markdown
+# What Actually Happened: 2014-2024 Performance
+
+Rogers' optimistic projections collided with harsh market realities.
+
+## Financial Performance (vs. Projections)
+- **Year 1:** Revenue $280M (projected $300M) ❌ Below target
+- **Year 3:** Revenue $310M (projected $425M) ❌ 27% shortfall
+- **Year 5:** Revenue $350M (projected $500M) ❌ 30% shortfall
+- **Year 7 (COVID):** Revenue $200M (projected $550M) ❌ 64% shortfall
+- **Year 10:** Revenue $380M (projected $600M+) ❌ Still unprofitable
+
+## Three Critical Failures
+1. **Advertising Revenue Collapsed:** Cord-cutting reduced linear TV viewership faster than Sportsnet NOW growth offset it
+2. **Streaming Underperformance:** 450K subscribers vs. 1M target (55% shortfall) → $150M/year revenue gap
+3. **No Flexibility:** Contract had no force majeure clause—COVID losses couldn't be renegotiated
+
+**Cumulative Result:** $1.5B+ total losses over 10 years. Never achieved profitability.
+
+**Next: Explore the data behind these failures.**
+```
+
+---
+
+### Element 7: Widget 6 - Projections vs. Actuals Visualizer
+
+**🎮 Widget Purpose:** Let students interactively compare Rogers' financial projections with actual performance, identifying variance drivers.
+
+**Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (7-8 hours estimated)
+
+**How It Works:**
+1. **10-Year Timeline (2014-2024):**
+   - X-axis: Years 1-10
+   - Y-axis: Revenue in $M (0-$700M)
+2. **Three Lines on Chart:**
+   - **Blue line:** Projected revenue (Rogers' original forecast)
+   - **Red line:** Actual revenue (what really happened)
+   - **Green line:** Break-even point ($433M/year) - horizontal line
+3. **Interactive Scrubber:**
+   - Drag slider across Years 1-10
+   - Hover over any year to see detailed breakdown
+4. **Year Detail Panel (when hovering):**
+   - **Projected:** $XXM
+   - **Actual:** $XXM
+   - **Variance:** $XXM (XX% below/above)
+   - **Key Event:** What happened that year
+
+**Learning Objectives:**
+- **MLO 2.4:** Analyze where and why Rogers' projections failed
+- **MLO 2.2:** Understand streaming adoption challenges (target 1M subs, achieved 450K)
+- **MLO 2.1:** Recognize importance of scenario planning (COVID was unforeseeable, but contract had no flexibility)
+- Develop financial analysis skills (variance analysis, trend identification)
+
+**Accessibility:**
+- ✅ Keyboard navigation (Arrow keys to scrub timeline, Enter to select year)
+- ✅ Data table alternative (screen readers access tabular data)
+- ✅ ARIA labels on chart elements
+- ✅ High contrast mode (patterns + colors for lines)
+- ✅ Focus indicators on scrubber and year selection
+
+**Implementation Notes:** Chart.js integration + interactive scrubber + data table + variance calculations. 10-year data with key events.
+
+---
+
+## 🏆 MODULE 5A COMPLETE: Deal Context Mastered
+
+**You've completed Module 5A!** You now understand:
+✅ Rogers' $5.2B NHL deal structure and comprehensive terms
+✅ Strategic rationale: Why Rogers paid 3x the previous deal
+✅ Financial performance: Rogers never achieved profitability
+
+**🎖️ Achievement Unlocked:** "Deal Context Mastered"
+
+**Coming Next in Module 5B:** Performance analysis, competitive dynamics, and the critical 2026 decision. You'll use your understanding of the deal context to evaluate Rogers' mistakes and recommend next steps.
+
+**Optional Break:** This is a good moment to pause (5B is another 13 minutes). Return when you're ready to analyze what went wrong and what Rogers should do in 2026.
+
+---
+
+## MODULE 5B: Rogers NHL Case Study - Performance Analysis (V3 INTERACTIVE-FIRST REDESIGN)
+**Purpose:** Analyze Rogers' performance failures, competitive landscape, and 2026 strategic decision (supports MLO 2.3, 2.4)
+
+**Uplimit Structure:** Sixth module in Unit 2 (Part B of 2-part case study)
+**Time:** ~13 minutes | Focus: Performance gaps, viewership trends, competitive analysis, strategic recommendation
+
+| Order | Element | Content/Purpose | Time | Implementation Notes |
+|-------|---------|----------------|------|---------------------|
+| 8 | **Infobox (Note)** ⬤ Required | Key insight: Why forecasts failed | 1 min | Yellow variant |
+| 9 | **Text** ⬤ Required | Audience trends (150 words) | 1 min | Embedded markdown below |
+| 10 | **🎮 iFrame Widget** ◐ Recommended | Widget 7: Viewership Trends Analyzer | 3 min | Phase 2 widget (NEEDS TO BE BUILT) |
+| 11 | **Text** ⬤ Required | Competitive landscape (150 words) | 1 min | Embedded markdown below |
+| 12 | **Table** ⬤ Required | Rogers vs. Competitors comparison | 1 min | Type directly |
+| 13 | **Text** ⬤ Required | The 2026 decision (150 words) | 1 min | Embedded markdown below |
+| 14 | **🎮 iFrame Widget** ⬤ Required | Widget 8: 2026 Decision Simulator (CAPSTONE) | 5 min | Phase 3 widget (NEEDS TO BE BUILT) |
+| 15 | **Details** ○ Optional | Full case narrative (optional) | Optional | Accordion for deep dive |
+
+**Module 5B Metrics:**
+- **Total Time:** ~13 minutes
+- **Reading Time:** 4 minutes (3 text blocks × 1 min + 1 min table)
+- **Interactive Time:** 8 minutes (2 widgets)
+- **Active Engagement:** 62%
+
+**Combined 5A + 5B Metrics:**
+- **Total Time:** 23 minutes (complies with Uplimit microlearning: each module <15 min)
+- **Interactive Time:** 15 minutes
+- **Active Engagement:** 65% (up from 5% in V1)
+
+---
+
+### Element 8: Infobox (Note) - Key Insight: Why Forecasts Failed
+
+```
+Title: ▶ Critical Insight: The Forecasting Failure
+
+Rogers' projections failed for three interconnected reasons:
+
+1. **Underestimated Cord-Cutting Speed**
+   - Assumed linear TV would decline 15% over 10 years
+   - Actual: 28% decline (nearly double)
+   - Impact: $150M/year advertising revenue shortfall
+
+2. **Overestimated Streaming Adoption**
+   - Assumed NHL-only service would attract 1M+ subscribers
+   - Actual: Hockey alone wasn't enough—fans wanted multi-sport (DAZN model)
+   - Impact: $150M/year subscription revenue shortfall
+
+3. **No Scenario Planning for Black Swan Events**
+   - Contract had no force majeure clause (COVID, lockouts, other disruptions)
+   - Impact: $350M loss in Year 7 with no recourse
+
+**Lesson:** Media rights deals require scenario planning. Rogers optimized for "base case" and had no hedge for downside risks. NHL's next deal will include flexibility clauses.
+```
+
+---
+
+### Element 9: Text - Audience Trends (150 words)
+
+Copy the markdown below directly into Uplimit:
+
+```markdown
+# Viewership Trends: The Audience Story
+
+Beyond financial projections, Rogers faced declining and fragmented audiences.
+
+## National Broadcast Ratings (Hockey Night in Canada)
+- **2013-14 (Pre-Rogers):** 1.8M average viewers (baseline)
+- **2014-15 (Year 1):** 1.6M viewers (-11%) ⬇️ Weak Canadian teams
+- **2023-24 (Year 10):** 1.3M viewers (-28% vs. baseline) ⬇️ Continued erosion
+
+## Why Viewership Declined
+1. **Canadian Team Performance:** Only 1-2 Canadian teams made playoffs most years (reduces "must-watch" games)
+2. **Generational Shift:** Younger audiences (18-34) prefer highlights and social clips over 3-hour games
+3. **Competition:** More viewing options (Netflix, gaming, other sports) fragment attention
+
+## Sportsnet NOW Subscriber Growth (Too Slow)
+- **2016 (Launch):** 50K subscribers
+- **2020 (Target Year 5):** 350K subscribers (vs. 1M target)
+- **2024 (Current):** 450K subscribers ⬆️ Growth stalled
+
+**Lesson:** Exclusive content isn't enough if underlying audience is declining. Rogers needed multi-sport strategy like DAZN.
+
+**Next: Explore viewership data interactively.**
+```
+
+---
+
+### Element 10: Widget 7 - Viewership Trends Analyzer
+
+**🎮 Widget Purpose:** Let students explore Hockey Night in Canada viewership trends, subscriber growth, and audience demographics to understand market dynamics.
+
+**Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (8-9 hours estimated)
+
+**How It Works:**
+1. **Three Tabs to Explore:**
+   - **Tab 1: Linear TV Ratings** (Hockey Night in Canada viewership 2014-2024)
+   - **Tab 2: Sportsnet NOW Subscribers** (Streaming growth vs. targets)
+   - **Tab 3: Demographic Breakdown** (Age, gender, regional trends)
+
+**Learning Objectives:**
+- **MLO 2.4:** Analyze viewership trends and identify market dynamics
+- **MLO 2.3:** Understand fan engagement challenges (younger demos not engaging with full games)
+- Recognize importance of demographic trends for long-term rights valuation
+- Compare target vs. actual performance (gap analysis skill)
+
+**Accessibility:**
+- ✅ Keyboard navigation (Tab to switch tabs, Arrow keys for chart navigation)
+- ✅ ARIA tabs pattern with proper roles
+- ✅ Data table alternatives for all charts
+- ✅ High contrast mode for chart elements
+- ✅ Focus indicators on tab buttons and filters
+
+**Implementation Notes:** 3 separate charts + tab interface + data tables + annotations. Comprehensive viewership analysis.
+
+---
+
+### Element 11: Text - Competitive Landscape (150 words)
+
+Copy the markdown below directly into Uplimit:
+
+```markdown
+# The Competitive Landscape: TSN, DAZN, and New Entrants
+
+While Rogers struggled with the NHL deal, competitors evolved with diversified strategies.
+
+## TSN (Bell Media): The Diversification Winner
+- **Lost:** NHL national rights to Rogers (painful in 2014)
+- **Pivoted:** Acquired CFL, NBA, FIFA World Cup, MLS regional, curling, tennis
+- **Result:** Multi-sport strategy created stable revenue (no single property = 50% of costs)
+- **TSN Direct (streaming):** Launched 2018, reached 400K subscribers by 2024 (vs. Sportsnet NOW 450K)
+
+## DAZN Canada: The Disruptor
+- **Launched:** 2017 with soccer (EPL, Champions League, Serie A) + boxing + NFL
+- **Strategy:** Lower price ($24.99 vs. Sportsnet $27.99), multi-sport, niche fan targeting
+- **Subscribers:** 300K by 2020 (competitive with Sportsnet NOW despite later launch)
+
+## Apple TV+ / Amazon: The Tech Giants
+- **Apple:** MLS exclusive deal ($2.5B, 2023-2032) → Global strategy, not ROI-focused
+- **Amazon:** NFL Thursday Night Football → Subscription driver for Prime
+
+**Lesson:** Rogers' single-property bet looked increasingly risky as market fragmented and tech giants entered with deep pockets.
+
+**Next: Compare Rogers' strategy to competitors.**
+```
+
+---
+
+### Element 12: Table - Rogers vs. Competitors Comparison
+
+| **Company** | **Rights Portfolio** | **Annual Rights Costs** | **Streaming Strategy** | **2024 Subscribers** | **Profitability** | **Strategic Approach** |
+|------------|---------------------|------------------------|----------------------|---------------------|------------------|---------------------|
+| **Rogers (Sportsnet)** | NHL exclusive | $433M/year | Sportsnet NOW (NHL-only) | 450K | ❌ Unprofitable (10 years) | Single-property bet, defensive strategy |
+| **Bell (TSN)** | Multi-sport (CFL, NBA, FIFA, MLS) | $250M/year total | TSN Direct (multi-sport) | 400K | ✅ Profitable Year 3 | Diversification, lower risk |
+| **DAZN Canada** | Soccer, boxing, NFL, combat sports | $50M/year | DAZN multi-sport | 300K | ✅ Profitable Year 4 | Niche targeting, global content |
+| **Apple TV+** | MLS exclusive (global) | $250M/year | Apple TV+ bundle | 2M+ (MLS Season Pass) | ❌ Strategic investment (not ROI-focused) | Tech giant deep pockets, global strategy |
+
+**Table Caption:** "Canadian Sports Streaming Competitive Landscape (2024)"
+
+**Key Takeaway:**
+Rogers' single-property, NHL-exclusive strategy created concentration risk. TSN's multi-sport portfolio and DAZN's niche targeting proved more resilient. Tech giants (Apple, Amazon) can afford "strategic losses" that traditional broadcasters cannot.
+
+---
+
+### Element 13: Text - The 2026 Decision (150 words)
+
+Copy the markdown below directly into Uplimit:
+
+```markdown
+# 2026: Renew, Renegotiate, or Walk Away?
+
+Rogers' NHL contract expires after the 2025-26 season. The company must decide its next move.
+
+## Three Options on the Table
+
+**Option 1: Renew at Reduced Price**
+- NHL knows Rogers overpaid and lost money
+- Next deal likely $300-350M/year (30% reduction)
+- **Pros:** Keep NHL content, spread costs over longer term (15 years?), flexibility clauses (force majeure)
+- **Cons:** Still a massive bet, streaming market even more competitive, younger demos not watching full games
+
+**Option 2: Split Rights Package**
+- Rogers takes regional (7 Canadian teams) + streaming
+- TSN or Amazon takes national (Saturday nights)
+- **Pros:** Lower cost ($200M/year range), shared risk, broader distribution
+- **Cons:** Lose exclusivity competitive advantage, coordination challenges
+
+**Option 3: Walk Away Completely**
+- Let TSN, DAZN, Apple, or Amazon bid for NHL
+- Rogers focuses on other sports or exits sports media
+- **Pros:** Cut losses, reallocate capital, focus on wireless/cable core business
+- **Cons:** Lose sports brand identity, accelerate cable cord-cutting (NHL was subscriber retention tool)
+
+**Your Task:** What would YOU recommend? Use the decision simulator to explore trade-offs.
+```
+
+---
+
+### Element 14: Widget 8 - 2026 Decision Simulator (CAPSTONE)
+
+**🎮 Widget Purpose:** Let students make a strategic recommendation for Rogers' 2026 NHL rights decision, weighing financial, competitive, and strategic factors.
+
+**Widget Status:** ⭕ Phase 3 widget - NEEDS TO BE BUILT (12-15 hours estimated)
+
+**How It Works (CAPSTONE - Tests ALL Week 2 MLOs):**
+
+**Phase 1: Set Your Assumptions**
+- Cord-cutting rate: 3-8%/year (slider)
+- Streaming growth rate: 5-25%/year (slider)
+- NHL viewership trend: Decline 2%/year, Stable, Grow 2%/year (dropdown)
+- Competitive intensity: Low (TSN, DAZN), Medium (+Amazon), High (+Apple, Google) (dropdown)
+- Betting revenue opportunity: $0, $50M/year, $100M+/year (slider)
+
+**Phase 2: Choose Your Option**
+- **Option 1:** Renew Exclusive (Full Package) at $300-$350M/year
+- **Option 2:** Split Package (Regional + Streaming) at $200M/year
+- **Option 3:** Walk Away (exit or acquire other properties)
+
+**Phase 3: View 10-Year Projection**
+- Annual revenue line chart (year-by-year)
+- Cumulative profit/loss
+- Break-even year (or "Never")
+- Strategic scorecard (5 criteria, star ratings)
+
+**Phase 4: Compare to Alternatives**
+- Side-by-side comparison table of all 3 options
+
+**Phase 5: Executive Recommendation**
+- Student writes brief recommendation (text box, 250 words max)
+- Export full analysis (assumptions + projections + recommendation) as PDF
+
+**Learning Objectives (CAPSTONE):**
+- **MLO 2.1:** Apply rights valuation framework to new deal terms
+- **MLO 2.2:** Compare platform strategies (exclusive streaming vs. split package vs. exit)
+- **MLO 2.3:** Evaluate fan engagement opportunities (betting integration, app features)
+- **MLO 2.4:** Make comprehensive strategic recommendation weighing financial, competitive, and market factors
+- **Bloom's Level:** SYNTHESIS/EVALUATION (highest level - create new solution + justify with evidence)
+
+**Accessibility:**
+- ✅ Keyboard navigation (Tab through phases, Arrow keys for sliders)
+- ✅ ARIA labels on all inputs
+- ✅ Screen reader announces projection results
+- ✅ High contrast mode for charts and option cards
+- ✅ Focus indicators on phase navigation and option selection
+
+**Implementation Notes:** Multi-phase interface (5 phases) + complex calculations + comparison logic + export functionality. Most complex widget but highest pedagogical value.
+
+---
+
+### Element 15: Details - Full Case Narrative (Optional Deep Dive)
+
+```
+Title: ◆ Optional: Full Rogers NHL Case Study Narrative
+
+[Expand for complete case narrative - 10-12 pages]
+
+# Rogers Communications: The $5.2 Billion NHL Rights Deal
+
+## Company Background
+
+[Import full case text from week2-rogers-case.docx]
+
+[Content includes:]
+- Rogers history and strategic position (2013)
+- NHL's Canadian rights history (CBC/TSN previous deal)
+- Bidding process and competitive dynamics
+- Contract terms and structure
+- Implementation and performance (2014-2024)
+- Financial analysis with all exhibits
+- Strategic analysis and lessons learned
+- Discussion questions
+
+[Total: 10-12 pages of detailed case content]
+
+**Note:** This optional section provides the traditional case study format for students who want comprehensive narrative beyond the interactive elements above. All key data and analysis have been covered in Elements 1-14.
+```
+
+---
+
+## 🏆 MODULE 5B COMPLETE: Performance Analysis Mastered
+
+**You've completed Module 5B!** You now understand:
+✅ Why Rogers' financial projections failed (cord-cutting, streaming shortfall, COVID)
+✅ Viewership and audience trends that undermined the deal
+✅ How competitors (TSN, DAZN) succeeded with diversification strategies
+✅ The critical 2026 decision Rogers faces: Renew, renegotiate, or walk away
+
+**🎖️ Achievement Unlocked:** "Performance Analysis Mastered"
+
+**Full Case Analysis Complete:** You've now analyzed the entire Rogers $5.2B NHL deal from initial context through performance analysis. You're ready to write your Mini-Case Memo (Module 6) with evidence-based recommendations.
+
+**Progress:** You're 75% through Week 2 content! The assessment module is next.
+
+---
+
+## 💬 DISCUSSION PROMPT #3: Debate Rogers' 2026 Decision
+
+**Post to Discussion Forum** (⬤ Required - 5 points)
+
+**Prompt:**
+Debate Rogers' 2026 decision when the NHL deal expires. Should Rogers renew exclusive rights, renegotiate for a split package, or walk away entirely? Take a position and defend it with evidence.
+
+**Requirements:**
+- **Your Position:** 100 words minimum arguing for ONE option (renew/split/walk)
+- **Evidence-Based:** Reference specific data from Widgets 6-8, financial performance, competitive landscape
+- **Peer Challenge:** Reply to at least 1 peer who chose a DIFFERENT option—respectfully challenge their reasoning
+- **Deadline:** Before starting Module 6 (Mini-Case Memo)
+
+**Example Post:**
+"I recommend Rogers [OPTION] because [3 evidence-based reasons]. While some might argue [counterargument], the data shows [rebuttal]. Looking at Widget 8's projections, [specific insight]..."
+
+**Why This Matters:**
+There is NO single right answer—this is a strategic judgment call with legitimate arguments on all sides. Engaging with peers who chose differently will strengthen your own analysis and prepare you to write a more nuanced, defensible memo in Module 6.
+
+**Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
+- 3 points: 100-word position with evidence
+- 2 points: Respectful challenge to 1 peer with different position
+
+---
+
+**Design Rationale (Modules 5A + 5B):**
+- **V3 Philosophy:** Case analysis scaffolded progressively (context → data → analysis → decision)
+- **Micro-chunking:** No text over 150 words prevents cognitive overload
+- **Interactive widgets every 2-3 elements:** Students manipulate real financial data instead of passively reading exhibits
+- **Capstone widget:** Requires synthesis of ALL Week 2 concepts (rights valuation, platform economics, engagement, strategic evaluation)
+- **Multiple valid recommendations:** No single "right answer" - authentic business decision
+- **Progressive disclosure:** Optional full case in Details accordion AFTER interactive exploration
+- **Supports all MLOs:** 2.1 (valuation via Widget 5), 2.2 (platforms via Widget 6-7), 2.3 (engagement via trends analysis), 2.4 (evaluation via Widget 8 capstone)
+
+---
+
+### 🤖 AI CASE ANALYSIS COACH
+
+**AI Chat Widget Configuration** - Available throughout Module 5 to guide your case analysis thinking
+
+**Widget Name:** "Rogers Case Analysis Coach"
+
+**Purpose:** Provide Socratic guidance for case analysis without giving direct answers. Help students apply frameworks, develop evidence-based reasoning, and prepare for their Mini-Case Memo.
+
+**System Prompt:**
+```
+You are a case analysis coach for MBA students working on the Rogers NHL rights deal case study. Your role is to ask probing Socratic questions that help students think critically, NOT to provide direct answers or write content for them.
+
+When students ask for help:
+1. Ask clarifying questions: "What data have you looked at? What patterns do you notice?"
+2. Point them to relevant frameworks: "Have you applied the rights valuation framework from Module 3? How do the 5 factors play out here?"
+3. Challenge assumptions: "You said Rogers made a mistake. What evidence supports that? Could there be another interpretation?"
+4. Help structure thinking: "Let's break this down. What were Rogers' goals? What actually happened? Where's the gap?"
+5. Encourage synthesis: "You've identified three mistakes. How do they connect? Is there a pattern?"
+
+DO NOT:
+- Write memo content for students
+- Provide direct answers to case questions
+- Give "the right answer" (there isn't one)
+- Do financial calculations for them (teach them HOW instead)
+
+DO:
+- Ask "why" and "how" questions
+- Reference specific data points from widgets: "Look at the Widget 6 variance data. What do you notice about Year 5?"
+- Connect to Week 2 frameworks: "How does this relate to platform economics we learned in Module 3?"
+- Help students develop confidence in their reasoning: "That's a solid insight. What evidence would make it even stronger?"
+
+Tone: Supportive but challenging. Like a good professor during office hours.
+```
+
+**Welcome Message:**
+"Hi! I'm here to help you think through the Rogers case analysis. I won't write your memo, but I'll ask questions to help you develop stronger arguments. What aspect of the case are you working on?"
+
+**Show System Prompt to User:** No
+
+**Uplimit Implementation Notes:**
+- Place widget at end of Module 5 (after Element 15)
+- Make available as optional support tool
+- Students can access anytime during Module 5 work
+- Widget persists conversation (students can come back)
+
+**Sample Interactions:**
+
+**Student:** "What should I say about Rogers' mistakes?"
+**Coach:** "Great question! Let's think this through together. First, what data have you explored? Have you looked at the Widget 6 financial projections vs. actuals? What patterns jump out at you?"
+
+**Student:** "I think Rogers overpaid"
+**Coach:** "Interesting perspective. What does 'overpaid' mean to you? Compared to what benchmark? Walk me through your reasoning."
+
+**Student:** "I'm stuck on the 2026 recommendation"
+**Coach:** "Let's break this down. What are Rogers' options? For each option, what would you need to believe for it to be the right choice? Which assumptions seem most realistic given what you've learned?"
+
+---
+
+## 🌟 MENTAL BREAK #4: Prepare to Write (CRITICAL BREAK)
+
+**You've completed:** ALL Week 2 learning content (framework + simulation + case)
+**Coming next:** Mini-Case Memo assessment (2-page written analysis)
+
+**Take a moment to:**
+- **Stand and walk for 5 minutes** (critical for mental clarity before writing)
+- Stretch your neck, shoulders, and wrists
+- Get water, use the restroom, grab a snack
+- Review your notes from the Rogers case
+- Set up your writing environment (quiet space, no distractions)
+
+**Progress:** You're 90% through Week 2! You've learned media valuation frameworks, simulated platform strategy, and analyzed a real $5.2B deal. Now you'll synthesize everything into an executive memo.
+
+*DO NOT SKIP THIS BREAK. Writing requires fresh mental energy. Take at least 5-10 minutes. Consider this your "pre-game" before the assessment. You've got this!*
+
+**Pro tip:** Before you start writing, take 2 minutes to jot down your 3 main points on scratch paper. This roadmap will make your memo stronger.
 
 ---
 
 ## MODULE 6: Assessment - Mini-Case Memo
 **Purpose:** Assess student understanding of Week 2 content (measures MLO 2.1, 2.2, 2.3, 2.4)
 
-**Uplimit Structure:** Sixth module in Unit 2
+⭐ **SCAFFOLDED ASSESSMENT**: This module breaks memo writing into 3 micro-steps with AI feedback BEFORE final submission. Reduces writing anxiety and improves quality through iterative improvement.
+
+**Uplimit Structure:** Seventh module in Unit 2 (renumbered after 5A/5B split)
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
-| 2 | **Text Response** ⬤ Required | 2-page mini-case memo submission | Configure in Uplimit | Rubric evaluation mode |
-| 3 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
-| 4 | **AI Chat Widget** ○ Optional | Case analysis support (optional) | Configure in Uplimit | Named: "Case Analysis Assistant" |
+| 1 | **Infobox (Insight)** ⬤ Required | Assessment overview + scaffolded approach | Type directly | Purple variant, explains 3-step process |
+| 2 | **Text Response** ⬤ Required | MICRO-STEP 1: Key Mistakes (3 bullets) | Configure in Uplimit | AI feedback enabled, 5 pts |
+| 3 | **Text Response** ⬤ Required | MICRO-STEP 2: Deal Evaluation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
+| 4 | **Text Response** ⬤ Required | MICRO-STEP 3: 2026 Recommendation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
+| 5 | **Infobox (Callout)** ⬤ Required | Transition to full memo synthesis | Type directly | Blue variant, encouragement |
+| 6 | **Text Response** ⬤ Required | FINAL MEMO: 2-page synthesis (1000 words max) | Configure in Uplimit | Rubric evaluation mode, 40 pts |
+| 7 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
+| 8 | **AI Chat Widget** ◐ Recommended | Your Case Analysis Coach (guides thinking, not answers) | Configure in Uplimit | Named: "Rogers Case Analysis Coach" |
+
+**Scaffolding Rationale:**
+- **Reduces writing anxiety**: Students build confidence through small wins before tackling full memo
+- **Improves quality**: AI feedback on micro-steps catches weak arguments early (before final submission)
+- **Maintains rigor**: Final memo still requires synthesis and executive-level writing
+- **UDL support**: Multiple checkpoints provide scaffolding without lowering standards
 
 **Detailed Content Specifications:**
 
-### Infobox Content:
+### Infobox Content (Element 1):
 ```
-Title: ▪ Assessment: Rogers NHL Deal Mini-Case Memo
+Title: ▪ Assessment: Rogers NHL Deal Mini-Case Memo (Scaffolded Approach)
 
-Task:
-Write a 2-page executive memo (max 1000 words) evaluating the Rogers NHL deal and
-providing strategic recommendations.
+**Your Task:**
+Write a 2-page executive memo (max 1000 words) evaluating the Rogers NHL deal and providing strategic recommendations for the 2026 decision.
 
-Prompt:
-You are a consultant hired by Rogers Communications in 2024 to assess the NHL deal's
-performance and recommend next steps. Your memo should:
+**How This Works (4-Step Scaffolded Process):**
 
-1. **Evaluate the Deal:** Was the $5.2B investment justified? Use frameworks from Week 2.
-2. **Identify Key Mistakes:** What did Rogers get wrong? (Valuation? Platform strategy? Engagement?)
-3. **Provide Recommendations:** What should Rogers do when the deal expires in 2026?
-   (Renew? Renegotiate? Walk away? Pivot to different sports?)
+To help you write a stronger memo, this assessment is broken into 3 micro-steps with AI feedback BEFORE you write your final memo:
 
-Requirements:
-• 2 pages (max 1000 words)
+1. **Micro-Step 1:** Identify 3 key mistakes Rogers made (3 bullets, AI feedback)
+2. **Micro-Step 2:** Evaluate the deal using Week 2 frameworks (1 paragraph, AI feedback)
+3. **Micro-Step 3:** Recommend Rogers' 2026 strategy (1 paragraph, AI feedback)
+4. **Final Memo:** Synthesize all 3 micro-steps into polished 2-page executive memo
+
+**Why This Approach?**
+- Each micro-step earns 5 participation points (15 pts total)
+- AI feedback helps you strengthen arguments BEFORE final submission
+- Reduces writing anxiety by building confidence through small wins
+- Final memo is worth 40 points (graded with full rubric)
+
+**Prompt:**
+You are a consultant hired by Rogers Communications in 2024 to assess the NHL deal's performance and recommend next steps.
+
+**Requirements:**
+• Complete all 3 micro-steps first (AI will provide feedback)
+• Then write final 2-page memo (max 1000 words)
 • Executive memo format (To/From/Date/Re)
 • Apply concepts from readings, executive session, and simulation
-• Reference specific data from case exhibits
+• Reference specific data from case widgets (Widgets 6, 7, 8)
 • Due: [Date] by 11:59 PM
 
-Evaluation:
-This memo measures your achievement of MLOs 2.1, 2.2, 2.3, and 2.4.
-You will be evaluated using the rubric below (40 points total).
-
-Submission: Type directly or upload PDF.
+**Total Points:** 55 points (15 micro-steps + 40 final memo)
+**MLOs Assessed:** 2.1, 2.2, 2.3, 2.4
 ```
 
-### Text Response Question Configuration:
+---
+
+### Element 2: Micro-Step 1 - Key Mistakes (Text Response)
+
+**Question Text:**
+```
+MICRO-STEP 1: Identify Rogers' Key Mistakes
+
+List 3 specific mistakes Rogers made in the NHL deal. For each mistake, provide:
+• What went wrong (1 sentence)
+• Evidence from the case data (reference specific numbers from Widgets 6, 7, or 8)
+
+Format: Use bullet points. Be specific and evidence-based.
+
+Example:
+• Mistake 1: [What went wrong]. Evidence: [Widget X shows Y data point].
+• Mistake 2: [What went wrong]. Evidence: [specific number from case].
+• Mistake 3: [What went wrong]. Evidence: [comparison or variance].
+```
+
+**AI Feedback Configuration:**
+- ✅ Enable AI feedback
+- **Feedback Prompt:** "Review this student's 3 key mistakes. For each mistake: (1) Confirm if it's evidence-based and specific, (2) Ask if they can quantify the impact (e.g., revenue shortfall, subscriber gap), (3) Suggest one deeper question they should consider. Be encouraging but push for precision. Example: 'Good start! For Mistake #2, you identified streaming underperformance. Can you quantify the subscriber gap? Widget 6 shows the exact numbers—what percentage did Rogers miss their target by?'"
+- **Points:** 5 points (participation credit, not graded rigorously)
+- **Purpose:** Build confidence, get students comfortable analyzing data
+
+---
+
+### Element 3: Micro-Step 2 - Deal Evaluation (Text Response)
+
+**Question Text:**
+```
+MICRO-STEP 2: Evaluate the Deal
+
+Write 1 paragraph (100-150 words) evaluating whether Rogers' $5.2B investment was justified.
+
+Apply Week 2 frameworks:
+• Media rights valuation framework (MLO 2.1): Did Rogers properly value audience size, exclusivity, platform flexibility?
+• Platform economics (MLO 2.2): Did the linear TV + streaming strategy make sense?
+• Fan engagement (MLO 2.3): Did Rogers effectively monetize beyond rights fees?
+
+Was the deal justified given Rogers' strategic goals (defend cable, build Sportsnet brand, enter streaming)?
+```
+
+**AI Feedback Configuration:**
+- ✅ Enable AI feedback
+- **Feedback Prompt:** "Review this student's deal evaluation paragraph. Check: (1) Did they apply at least 2 Week 2 frameworks? (2) Did they distinguish between financial ROI and strategic value? (3) Is their evaluation nuanced (acknowledging both successes and failures)? Provide specific feedback. Example: 'Strong use of the valuation framework! You mentioned exclusivity as a key factor. Now, can you add the platform economics lens? How did Rogers' linear + streaming strategy compare to what you learned in the Streaming Wars simulation? Would a multi-sport approach (like DAZN) have been smarter?'"
+- **Points:** 5 points (participation credit)
+- **Purpose:** Ensure students apply frameworks, not just opinionate
+
+---
+
+### Element 4: Micro-Step 3 - 2026 Recommendation (Text Response)
+
+**Question Text:**
+```
+MICRO-STEP 3: 2026 Strategic Recommendation
+
+Write 1 paragraph (100-150 words) recommending what Rogers should do in 2026 when the NHL deal expires.
+
+Choose ONE option and defend it:
+• Option 1: Renew exclusive rights (at what price?)
+• Option 2: Renegotiate for split package with competitors
+• Option 3: Walk away entirely
+
+Your recommendation should:
+• State your chosen option clearly
+• Provide 2-3 reasons with evidence
+• Acknowledge the risks/trade-offs of your choice
+• Reference market dynamics (competitors, streaming trends, viewership data)
+```
+
+**AI Feedback Configuration:**
+- ✅ Enable AI feedback
+- **Feedback Prompt:** "Review this student's 2026 recommendation. Check: (1) Is their recommendation clear and specific? (2) Did they provide evidence-based reasons? (3) Did they acknowledge risks/trade-offs? (4) Did they consider competitive landscape and market trends? Provide constructive feedback. Example: 'Clear recommendation! You chose Option 2 (split package). Strong reasons about cost reduction and risk management. Now, what's your Plan B if the NHL refuses to split rights? Also, you mentioned TSN as a potential partner—what makes that partnership viable given the competitive history? Widget 7's competitor data might help you strengthen this argument.'"
+- **Points:** 5 points (participation credit)
+- **Purpose:** Force students to commit to a position before final memo (builds conviction)
+
+---
+
+### Element 5: Transition Infobox
+
+```
+Title: ✅ Micro-Steps Complete! Ready to Write Your Full Memo
+
+**Great work!** You've now:
+✅ Identified 3 key mistakes with evidence
+✅ Evaluated the deal using Week 2 frameworks
+✅ Developed a clear 2026 recommendation
+
+**You've earned 15 participation points so far.**
+
+**Final Step: Synthesize Into Executive Memo**
+
+Now, use your 3 micro-steps as building blocks to write a polished 2-page executive memo.
+
+**Tips for synthesis:**
+• Don't just copy-paste your micro-steps—refine and integrate them
+• Add an executive summary at the top (2-3 sentences)
+• Use professional memo format (To/From/Date/Re)
+• Strengthen your arguments with additional evidence
+• Proofread for clarity and concision (you have 1000 words max—use them wisely!)
+
+**This final memo is worth 40 points and will be graded with the full rubric.**
+
+**Your AI Case Analysis Coach is available if you need help structuring or strengthening your arguments!**
+```
+
+---
+
+### Element 6: Final Memo Submission (Text Response)
+
+**Question Text:**
 
 **Question Text:**
 ```
@@ -1256,9 +2104,9 @@ but may lack depth or miss less obvious strategic errors."
 ```
 
 ### AI Chat Widget Configuration:
-- **Widget Name:** "Case Analysis Assistant"
+- **Widget Name:** "Rogers Case Analysis Coach"
 - **System Prompt:** "You are a helpful case analysis coach for MBA students. Provide guidance on analyzing the Rogers NHL case study. Do NOT write content for students. Instead, ask probing questions to help them think critically: What does this data point tell you? How does this connect to the frameworks from readings? What are the underlying assumptions? Focus on: case analysis methodology, framework application, evidence-based reasoning, and strategic thinking. If students ask you to write their memo, redirect them to develop their own analysis with your guidance."
-- **Welcome Message:** "Need help analyzing the Rogers case? I can help you think through the frameworks, interpret the exhibits, or structure your argument. What part of your analysis are you working on?"
+- **Welcome Message:** "Hi! I'm here to coach you through your Rogers case analysis. I won't write your memo, but I'll ask questions to help you develop stronger arguments. What aspect of the case are you working on?"
 - **Show System Prompt:** No
 
 **Design Rationale:**
@@ -1267,7 +2115,7 @@ but may lack depth or miss less obvious strategic errors."
 - **Rubric** ensures transparent, consistent evaluation (QM Standard 3, UDL clarity)
 - **AI grading** enables timely feedback at scale with quality maintenance
 - **Details** makes rubric fully transparent with examples (students know exactly what excellence looks like)
-- **AI Chat** provides case analysis coaching without doing the work (UDL scaffolding)
+- **AI Chat Coach** serves as your thinking partner during case analysis—use it to test your arguments, clarify framework application, or structure your reasoning (UDL scaffolding + active learning)
 - Authentic consulting task (executive memo format) mirrors real-world practice
 - Word limit ensures concision and prioritization (executive communication skill)
 - Measures all 4 MLOs comprehensively in integrated assessment
@@ -1558,10 +2406,10 @@ are great for crowdsourcing ideas from other teams.
 - ☐ Text Response rubric (Module 6)
 - ☐ Anchor Project instructions (Module 7)
 
-### AI Chat Widgets to Configure:
-- ☐ "Media Strategy Q&A" (Module 2)
-- ☐ "Platform Strategy Assistant" (Module 4)
-- ☐ "Case Analysis Assistant" (Module 6)
+### AI Chat Widgets to Configure (Core Learning Coaches):
+- ☐ "Media Strategy Q&A" (Module 2) - Your Learning Coach
+- ☐ "Platform Strategy Assistant" (Module 4) - Your Strategy Coach
+- ☐ "Rogers Case Analysis Coach" (Module 6) - Your Case Analysis Coach
 
 ---
 

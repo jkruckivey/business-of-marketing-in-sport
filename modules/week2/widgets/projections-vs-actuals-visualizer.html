@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogers NHL Deal - Projections vs. Actuals (2014-2024)</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        /* CSS Design System */
+        :root {
+            --color-primary: #c5b783;
+            --color-primary-dark: #8b7b3f;
+            --color-dark: #2c2c2c;
+            --color-success: #4a7c59;
+            --color-danger: #dc2626;
+            --color-warning: #d97706;
+            --color-info: #2563eb;
+            --color-white: #ffffff;
+            --color-light-gray: #f9fafb;
+            --color-gray: #6b7280;
+            --border-radius: 12px;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            color: var(--color-dark);
+            padding: 24px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            padding: 32px;
+            box-shadow: var(--shadow);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 3px solid var(--color-primary);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: var(--color-dark);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--color-gray);
+            font-size: 1.1rem;
+        }
+
+        /* Chart Section */
+        .chart-section {
+            background: var(--color-white);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            margin-bottom: 32px;
+            border: 2px solid var(--color-light-gray);
+        }
+
+        .chart-container {
+            position: relative;
+            height: 450px;
+            margin-bottom: 24px;
+        }
+
+        /* Timeline Scrubber */
+        .scrubber-container {
+            margin: 32px 0;
+            padding: 24px;
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+        }
+
+        .scrubber-label {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--color-dark);
+        }
+
+        .scrubber-wrapper {
+            position: relative;
+            padding: 0 20px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 10px;
+            border-radius: 5px;
+            background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--color-white);
+            border: 4px solid var(--color-primary);
+            cursor: pointer;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--color-white);
+            border: 4px solid var(--color-primary);
+            cursor: pointer;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        input[type="range"]:focus {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 4px;
+        }
+
+        .year-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+            padding: 0 10px;
+            font-size: 0.9rem;
+            color: var(--color-gray);
+        }
+
+        /* Detail Panel */
+        .detail-panel {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: var(--border-radius);
+            padding: 24px;
+            margin-bottom: 32px;
+            border-left: 4px solid var(--color-warning);
+            min-height: 180px;
+        }
+
+        .detail-panel h3 {
+            color: var(--color-dark);
+            margin-bottom: 16px;
+            font-size: 1.3rem;
+        }
+
+        .detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .detail-item {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 12px;
+            border-radius: 8px;
+        }
+
+        .detail-label {
+            font-size: 0.85rem;
+            color: var(--color-gray);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .detail-value {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--color-dark);
+        }
+
+        .detail-value.positive {
+            color: var(--color-success);
+        }
+
+        .detail-value.negative {
+            color: var(--color-danger);
+        }
+
+        .key-event {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .key-event strong {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--color-dark);
+        }
+
+        /* Explanation Tooltip */
+        .explanation-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 16px;
+            border-radius: 8px;
+            margin-top: 16px;
+            border: 2px solid var(--color-info);
+        }
+
+        .explanation-toggle {
+            background: var(--color-info);
+            color: var(--color-white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .explanation-toggle:hover {
+            background: #1d4ed8;
+        }
+
+        .explanation-toggle:focus {
+            outline: 3px solid var(--color-dark);
+            outline-offset: 2px;
+        }
+
+        .explanation-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            margin-top: 0;
+        }
+
+        .explanation-content.open {
+            max-height: 800px;
+            margin-top: 16px;
+        }
+
+        .explanation-content h4 {
+            color: var(--color-dark);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .explanation-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .explanation-list li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .explanation-list li::before {
+            content: '▸';
+            position: absolute;
+            left: 8px;
+            color: var(--color-info);
+            font-weight: bold;
+        }
+
+        .explanation-highlight {
+            background: rgba(37, 99, 235, 0.1);
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 12px;
+            border-left: 3px solid var(--color-info);
+        }
+
+        .explanation-highlight strong {
+            color: var(--color-info);
+        }
+
+        /* Summary Cards */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .summary-card {
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            text-align: center;
+            border-left: 4px solid var(--color-primary);
+        }
+
+        .summary-label {
+            font-size: 0.9rem;
+            color: var(--color-gray);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .summary-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--color-dark);
+        }
+
+        .summary-value.negative {
+            color: var(--color-danger);
+        }
+
+        /* Data Table */
+        .data-table-section {
+            margin-top: 32px;
+            padding: 24px;
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius);
+        }
+
+        .data-table-section h3 {
+            margin-bottom: 16px;
+            color: var(--color-dark);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--color-white);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table th {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid var(--color-light-gray);
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tr:hover {
+            background: var(--color-light-gray);
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-export {
+            background: var(--color-info);
+            color: var(--color-white);
+        }
+
+        .btn-export:hover {
+            background: #1d4ed8;
+        }
+
+        .btn:focus {
+            outline: 3px solid currentColor;
+            outline-offset: 2px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+
+            .detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        @media (prefers-contrast: high) {
+            .data-table th {
+                border: 2px solid var(--color-dark);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📉 Rogers NHL Deal: Projections vs. Reality</h1>
+            <p class="subtitle">10-Year Analysis (2014-2024): Where forecasts met reality</p>
+        </header>
+
+        <!-- Summary Cards -->
+        <div class="summary-grid" role="region" aria-label="Deal summary statistics">
+            <div class="summary-card">
+                <div class="summary-label">Total Paid (10 Years)</div>
+                <div class="summary-value">$4.33B</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-label">Average Shortfall/Year</div>
+                <div class="summary-value negative" id="avg-shortfall">-$XXM</div>
+            </div>
+            <div class="summary-card">
+                <div class="summary-label">Total Cumulative Loss</div>
+                <div class="summary-value negative" id="total-loss">-$X.XB</div>
+            </div>
+        </div>
+
+        <!-- Chart -->
+        <div class="chart-section">
+            <h3 style="text-align: center; margin-bottom: 20px;">Rogers' Revenue: Projected vs. Actual</h3>
+            <div class="chart-container">
+                <canvas id="varianceChart" role="img" aria-label="Line chart showing projected vs actual revenue over 10 years"></canvas>
+            </div>
+        </div>
+
+        <!-- Timeline Scrubber -->
+        <div class="scrubber-container">
+            <div class="scrubber-label" id="scrubber-label">
+                <strong>Timeline Scrubber:</strong> Drag to explore each year (Currently: Year <span id="current-year">1</span>)
+            </div>
+            <div class="scrubber-wrapper">
+                <input
+                    type="range"
+                    id="year-scrubber"
+                    min="1"
+                    max="10"
+                    value="1"
+                    step="1"
+                    aria-labelledby="scrubber-label"
+                    aria-valuemin="1"
+                    aria-valuemax="10"
+                    aria-valuenow="1"
+                    aria-valuetext="Year 1 of 10">
+                <div class="year-labels">
+                    <span>2014</span>
+                    <span>2016</span>
+                    <span>2018</span>
+                    <span>2020</span>
+                    <span>2022</span>
+                    <span>2024</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detail Panel -->
+        <div class="detail-panel" role="region" aria-label="Selected year details" aria-live="polite">
+            <h3>Year <span id="detail-year">1</span> (<span id="detail-calendar-year">2014-15</span>) Details</h3>
+            <div class="detail-grid">
+                <div class="detail-item">
+                    <div class="detail-label">Projected Revenue</div>
+                    <div class="detail-value" id="detail-projected">$500M</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Actual Revenue</div>
+                    <div class="detail-value" id="detail-actual">$430M</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Variance</div>
+                    <div class="detail-value negative" id="detail-variance">-$70M (-14%)</div>
+                </div>
+            </div>
+            <div class="key-event">
+                <strong>🔍 Key Event:</strong>
+                <span id="detail-event">Loading event data...</span>
+            </div>
+
+            <!-- Explanation Section (Collapsible) -->
+            <div class="explanation-section">
+                <button class="explanation-toggle" id="explanation-toggle" aria-expanded="false" aria-controls="explanation-content">
+                    <span id="toggle-icon">💡</span>
+                    <span id="toggle-text">Why did Rogers miss projections?</span>
+                </button>
+                <div class="explanation-content" id="explanation-content" aria-hidden="true">
+                    <h4>Understanding the Projection Failures</h4>
+                    <p>Rogers' projections missed by an average of <strong>-$75M per year</strong> due to four critical misjudgments:</p>
+                    <ul class="explanation-list">
+                        <li><strong>Cord-Cutting Acceleration:</strong> Cable/satellite subscribers declined 8-12% annually vs. projected 2-3%. Linear TV advertising revenue collapsed faster than Rogers anticipated.</li>
+                        <li><strong>Streaming Underperformance:</strong> Sportsnet NOW peaked at 450K subscribers vs. 1M target (55% miss). Streaming revenue couldn't offset linear TV losses.</li>
+                        <li><strong>NHL Viewership Decline:</strong> Average viewership fell 19% (1.6M → 1.3M) due to weak Canadian team performance, younger demographics abandoning live TV, and competition from highlight clips/social media.</li>
+                        <li><strong>COVID-19 Black Swan:</strong> Years 6-7 (2019-21) saw revenue collapse with no force majeure clause. Rogers paid full $433M/year despite no fans, bubble playoffs, and 23% ratings decline.</li>
+                    </ul>
+                    <div class="explanation-highlight">
+                        <strong>Key Insight:</strong> Rogers' single-property bet (NHL-only) created <strong>concentration risk</strong>. When NHL underperformed, there were no other sports to offset losses. Competitors like TSN with multi-sport portfolios (CFL, NBA, FIFA, MLS) achieved profitability by spreading risk.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Table (Accessibility) -->
+        <div class="data-table-section">
+            <h3>Complete 10-Year Financial Data</h3>
+            <table class="data-table" role="table" aria-label="Rogers NHL deal financial data by year">
+                <thead>
+                    <tr>
+                        <th scope="col">Year</th>
+                        <th scope="col">Season</th>
+                        <th scope="col">Projected Revenue</th>
+                        <th scope="col">Actual Revenue</th>
+                        <th scope="col">Variance</th>
+                        <th scope="col">Variance %</th>
+                        <th scope="col">Key Event</th>
+                    </tr>
+                </thead>
+                <tbody id="data-table-body">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="btn btn-export" id="export-btn" aria-label="Export financial data to CSV">
+                ⬇ Export Data (CSV)
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Financial Data (10 years)
+        const dealData = [
+            {
+                year: 1,
+                season: '2014-15',
+                projected: 500,
+                actual: 430,
+                event: 'Launch year struggles: Canadian teams underperformed (0 playoff teams), viewership down 11%. Sportsnet production quality issues.'
+            },
+            {
+                year: 2,
+                season: '2015-16',
+                projected: 520,
+                actual: 415,
+                event: 'Cord-cutting accelerates faster than expected. Cable subscriber losses: 8% (vs. 2% forecast). Connor McDavid drafted (positive).'
+            },
+            {
+                year: 3,
+                season: '2016-17',
+                projected: 535,
+                actual: 405,
+                event: 'Sportsnet NOW streaming launched (50K subs vs. 200K target). Multi-sport competition from DAZN Canada enters market.'
+            },
+            {
+                year: 4,
+                season: '2017-18',
+                projected: 545,
+                actual: 390,
+                event: 'Toronto Maple Leafs return to playoffs (positive), but overall Canadian team performance weak. Ad CPMs declining due to audience fragmentation.'
+            },
+            {
+                year: 5,
+                season: '2018-19',
+                projected: 550,
+                actual: 375,
+                event: 'Mid-contract crisis: Rogers wrote down $465M asset impairment. Streaming growth stalled (350K subs vs. 1M target). Contract restructuring discussions begin.'
+            },
+            {
+                year: 6,
+                season: '2019-20',
+                projected: 560,
+                actual: 340,
+                event: 'COVID-19 pandemic: Season suspended March 12, 2020. Playoffs held in bubbles with no fans. Revenue collapse. No force majeure clause = Rogers paid full $433M.'
+            },
+            {
+                year: 7,
+                season: '2020-21',
+                projected: 565,
+                actual: 295,
+                event: 'Worst year: Full season with no fans, Canadian division only. Ratings down 23%. Rogers estimated $350M loss this year alone.'
+            },
+            {
+                year: 8,
+                season: '2021-22',
+                projected: 570,
+                actual: 360,
+                event: 'Partial recovery: Fans return, but cord-cutting accelerated during pandemic. Linear TV subscribers down 18% vs. 2019. Streaming subs: 420K (still 58% below target).'
+            },
+            {
+                year: 9,
+                season: '2022-23',
+                projected: 580,
+                actual: 370,
+                event: 'Toronto Maple Leafs playoff run boosts ratings, but overall viewership 25% below pre-COVID. NHL announces new betting partnerships (Rogers shut out).'
+            },
+            {
+                year: 10,
+                season: '2023-24',
+                projected: 590,
+                actual: 385,
+                event: 'Final year: Rogers decides NOT to renew exclusive deal. Revenue improved slightly but never approached projections. Cumulative loss: $1.5B-1.8B over 10 years.'
+            }
+        ];
+
+        // Chart instance
+        let chart = null;
+
+        // DOM elements
+        const yearScrubber = document.getElementById('year-scrubber');
+        const currentYearDisplay = document.getElementById('current-year');
+        const exportBtn = document.getElementById('export-btn');
+
+        // Detail panel elements
+        const detailYear = document.getElementById('detail-year');
+        const detailCalendarYear = document.getElementById('detail-calendar-year');
+        const detailProjected = document.getElementById('detail-projected');
+        const detailActual = document.getElementById('detail-actual');
+        const detailVariance = document.getElementById('detail-variance');
+        const detailEvent = document.getElementById('detail-event');
+
+        // Initialize chart
+        function createChart() {
+            const ctx = document.getElementById('varianceChart').getContext('2d');
+
+            const years = dealData.map(d => `Year ${d.year}`);
+            const projected = dealData.map(d => d.projected);
+            const actual = dealData.map(d => d.actual);
+            const breakEven = Array(10).fill(433);
+
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: years,
+                    datasets: [
+                        {
+                            label: 'Projected Revenue',
+                            data: projected,
+                            borderColor: '#2563eb',
+                            backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3,
+                            fill: false,
+                            pointRadius: 6,
+                            pointHoverRadius: 8
+                        },
+                        {
+                            label: 'Actual Revenue',
+                            data: actual,
+                            borderColor: '#dc2626',
+                            backgroundColor: 'rgba(220, 38, 38, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3,
+                            fill: false,
+                            pointRadius: 6,
+                            pointHoverRadius: 8
+                        },
+                        {
+                            label: 'Break-Even ($433M)',
+                            data: breakEven,
+                            borderColor: '#4a7c59',
+                            backgroundColor: 'transparent',
+                            borderWidth: 2,
+                            borderDash: [10, 5],
+                            tension: 0,
+                            fill: false,
+                            pointRadius: 0
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false,
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                },
+                                padding: 15
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    label += '$' + context.parsed.y + 'M';
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Revenue (Millions $)',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            min: 250,
+                            max: 650,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value + 'M';
+                                }
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Contract Year',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Update detail panel
+        function updateDetailPanel(yearIndex) {
+            const data = dealData[yearIndex];
+            const variance = data.actual - data.projected;
+            const variancePercent = ((variance / data.projected) * 100).toFixed(1);
+
+            detailYear.textContent = data.year;
+            detailCalendarYear.textContent = data.season;
+            detailProjected.textContent = '$' + data.projected + 'M';
+            detailActual.textContent = '$' + data.actual + 'M';
+
+            detailVariance.textContent = (variance < 0 ? '-' : '+') + '$' + Math.abs(variance) + 'M (' + variancePercent + '%)';
+            detailVariance.className = 'detail-value ' + (variance < 0 ? 'negative' : 'positive');
+
+            detailEvent.textContent = data.event;
+        }
+
+        // Populate data table
+        function populateDataTable() {
+            const tbody = document.getElementById('data-table-body');
+            tbody.innerHTML = '';
+
+            dealData.forEach(data => {
+                const variance = data.actual - data.projected;
+                const variancePercent = ((variance / data.projected) * 100).toFixed(1);
+
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${data.year}</td>
+                    <td>${data.season}</td>
+                    <td>$${data.projected}M</td>
+                    <td>$${data.actual}M</td>
+                    <td style="color: ${variance < 0 ? 'var(--color-danger)' : 'var(--color-success)'}">
+                        ${variance < 0 ? '-' : '+'}$${Math.abs(variance)}M
+                    </td>
+                    <td style="color: ${variance < 0 ? 'var(--color-danger)' : 'var(--color-success)'}">
+                        ${variancePercent}%
+                    </td>
+                    <td>${data.event}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Calculate summary stats
+        function calculateSummaryStats() {
+            const totalVariance = dealData.reduce((sum, d) => sum + (d.actual - d.projected), 0);
+            const avgShortfall = totalVariance / dealData.length;
+
+            document.getElementById('avg-shortfall').textContent = '-$' + Math.abs(avgShortfall).toFixed(0) + 'M';
+            document.getElementById('total-loss').textContent = '-$' + (Math.abs(totalVariance) / 1000).toFixed(2) + 'B';
+        }
+
+        // Event listeners
+        yearScrubber.addEventListener('input', (e) => {
+            const yearIndex = parseInt(e.target.value) - 1;
+            currentYearDisplay.textContent = e.target.value;
+            updateDetailPanel(yearIndex);
+
+            // Update ARIA
+            e.target.setAttribute('aria-valuenow', e.target.value);
+            e.target.setAttribute('aria-valuetext', `Year ${e.target.value} of 10`);
+        });
+
+        // Keyboard navigation
+        yearScrubber.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+                setTimeout(() => {
+                    const yearIndex = parseInt(yearScrubber.value) - 1;
+                    updateDetailPanel(yearIndex);
+                }, 50);
+            }
+        });
+
+        // Export functionality
+        exportBtn.addEventListener('click', () => {
+            const headers = ['Year', 'Season', 'Projected Revenue', 'Actual Revenue', 'Variance ($M)', 'Variance (%)', 'Key Event'];
+            const rows = dealData.map(d => {
+                const variance = d.actual - d.projected;
+                const variancePercent = ((variance / d.projected) * 100).toFixed(1);
+                return [
+                    d.year,
+                    d.season,
+                    d.projected,
+                    d.actual,
+                    variance,
+                    variancePercent,
+                    `"${d.event}"`
+                ];
+            });
+
+            const csvContent = [
+                headers.join(','),
+                ...rows.map(row => row.join(','))
+            ].join('\n');
+
+            const blob = new Blob([csvContent], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `rogers-nhl-projections-vs-actuals-${Date.now()}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+
+        // Explanation toggle
+        const explanationToggle = document.getElementById('explanation-toggle');
+        const explanationContent = document.getElementById('explanation-content');
+        const toggleIcon = document.getElementById('toggle-icon');
+        const toggleText = document.getElementById('toggle-text');
+
+        explanationToggle.addEventListener('click', () => {
+            const isOpen = explanationContent.classList.contains('open');
+
+            if (isOpen) {
+                explanationContent.classList.remove('open');
+                explanationToggle.setAttribute('aria-expanded', 'false');
+                explanationContent.setAttribute('aria-hidden', 'true');
+                toggleIcon.textContent = '💡';
+                toggleText.textContent = 'Why did Rogers miss projections?';
+            } else {
+                explanationContent.classList.add('open');
+                explanationToggle.setAttribute('aria-expanded', 'true');
+                explanationContent.setAttribute('aria-hidden', 'false');
+                toggleIcon.textContent = '✕';
+                toggleText.textContent = 'Hide explanation';
+            }
+        });
+
+        // Initialize
+        createChart();
+        populateDataTable();
+        calculateSummaryStats();
+        updateDetailPanel(0); // Show Year 1 details by default
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-# Uplimit Storyboard: Business of Sports Marketing - Week 1
+﻿# Uplimit Storyboard: Business of Sports Marketing - Week 1
 
 # 
 
@@ -20,11 +20,12 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Video** ⬤ Required | Business problem scenario (3 min) | Upload `week1-bridge-scenario.mp4` | Real executive facing revenue dilemma |
-| 2 | **Infobox (Callout)** ⬤ Required | The revenue problem statement | Type directly | Red variant, urgent business challenge |
-| 3 | **Text** ⬤ Required | Can you solve these problems? (Outcomes as questions) | Type directly | Reframes MLOs as student challenges |
-| 4 | **🎮 iFrame Widget** ⬤ Required | **Pre-Assessment: Revenue Knowledge Quiz** | Embed `revenue-knowledge-quiz.html` | Self-diagnostic before learning begins |
-| 5 | **AI Chat Widget** ⬤ Required | Interactive results coaching | Configure in Uplimit | Named: "Quiz Results Coach" - personalized feedback |
+| 1 | **▶ Video** ⬛ Required | Business problem scenario (3 min) | Upload `week1-bridge-scenario.mp4` | Real executive facing revenue dilemma |
+| 2 | **🎭 AI Roleplay Exercise** ▣ Recommended | The $100M Question diagnostic | Configure in Uplimit | Reveal knowledge gaps before learning begins |
+| 3 | **ⓘ Infobox (Callout)** ⬛ Required | The revenue problem statement | Type directly | Red variant, urgent business challenge |
+| 4 | **▬ Text** ⬛ Required | Can you solve these problems? (Outcomes as questions) | Type directly | Reframes MLOs as student challenges |
+| 5 | **⚙ iFrame Widget** ⬛ Required | **Pre-Assessment: Revenue Knowledge Quiz** | Embed `revenue-knowledge-quiz.html` | Self-diagnostic before learning begins |
+| 6 | **◆ Infobox (Insight)** ▣ Recommended | What your results mean + learning path | Type directly | Purple variant, personalized guidance |
 
 ### Element 1: Bridge Video Scenario
 - **File:** `week1-bridge-scenario.mp4`
@@ -58,9 +59,209 @@ the revenue ecosystem.
 But first: Do you already have the knowledge to solve this problem? Let's find out."
 ```
 
-### Element 2: Infobox - The Revenue Problem
+### Element 2: AI Roleplay Exercise - The $100 Million Question
+
+**Exercise Title:** "The $100 Million Question: Can You Solve It Now?"
+
+**Purpose:** Diagnostic activity that reveals knowledge gaps and creates cognitive dissonance before content delivery. Students attempt to answer the executive's question from the video using their current understanding—most will struggle, which creates the "need to know" motivation for Week 1 content.
+
+**When to Use:** Immediately after the bridge video (Element 1) while the narrative momentum is high.
+
+**Assessment Type:** Diagnostic/Formative (not graded). Students are expected to struggle. The goal is to reveal what they DON'T know yet, making them hungry for the content that follows.
+
+---
+
+#### Student Instructions
+
+**Copy this markdown into Uplimit's Student Instructions field:**
+
+```markdown
+### Your Role
+You are a **junior analyst** who just watched your executive present the Connor McDavid contract dilemma. The executive has turned to you and asked: "Can you explain this to the board?"
+
+### The Scenario
+The executive from the video is waiting for your answer. They know you're new to sports business, so they're patient—but they need a clear explanation of why the $12.5M cost minus $8M in direct revenue doesn't tell the whole story.
+
+### What to Have Ready
+- **Your current understanding** of how sports revenue works (it's okay if this is limited!)
+- **Your best attempt** at explaining why the McDavid contract might create value beyond ticket and jersey sales
+- **Curiosity** about what you DON'T know yet
+
+### Your Goal
+⚠️ **This is diagnostic—you're not expected to ace this!** Most students struggle before learning the Week 1 content. The goal is to:
+1. Attempt to answer the executive's question using your current knowledge
+2. Discover gaps in your understanding (this is GOOD—it shows you what to focus on)
+3. Get motivated to learn the revenue ecosystem concepts that would help you answer confidently
+
+### Time Limit
+- **5-7 minutes** for the conversation
+- The AI will probe your understanding with 3-4 follow-up questions
+- If you get stuck, that's the point! Notice where you struggle—those are your learning priorities.
+
+### What Happens Next
+After this exercise, you'll take a pre-assessment quiz that helps you identify exactly what you need to learn. By the end of Week 1, you'll return to this question and answer it confidently using the revenue ecosystem framework.
 ```
-Title: ▲ The Revenue Problem Professional Sport Faces
+
+---
+
+#### AI Character Configuration
+
+**Copy this into Uplimit's AI Character field:**
+
+```markdown
+You are the **same executive from the bridge video**—a senior leader at an NHL franchise who just presented the Connor McDavid contract dilemma. You're talking to a junior analyst who's new to sports business.
+
+**Your Personality:**
+- **Patient but probing**: You know they're new, so you don't expect perfection—but you do want to understand their thinking
+- **Business-focused**: You care about clear explanations backed by reasoning, not jargon
+- **Socratic**: When they struggle, you ask questions that help them discover gaps rather than lecturing
+- **Realistic**: You acknowledge that sports economics is complex and counterintuitive
+
+**Your Goal:**
+Help the student discover what they DON'T know yet about sports revenue by probing their understanding of:
+1. **Revenue streams**: Do they know the 5 major sources beyond tickets/jerseys?
+2. **Ecosystem thinking**: Do they understand that revenues are interdependent, not independent?
+3. **Indirect effects**: Can they articulate how star players amplify multiple revenue streams?
+
+**Conversation Flow:**
+1. **Opening**: "Alright, you heard the problem. Walk me through your thinking—why might this contract make sense despite the apparent $4.5M annual loss?"
+2. **Probe #1**: Listen to their answer. If they mention only direct revenue (tickets/jerseys), ask: "What other ways do you think Connor McDavid might generate revenue for us?"
+3. **Probe #2**: If they struggle to identify streams, ask: "Think about how fans engage with the team. Beyond coming to games and buying jerseys, how else do we make money?"
+4. **Probe #3**: If they start listing streams but treat them as separate, ask: "Interesting. Do you think those revenue sources are independent of each other, or could they be connected somehow?"
+5. **Closing**: Acknowledge their effort and gaps: "You've identified some pieces, but I can tell you're missing the full picture—and that's completely normal before learning the revenue ecosystem framework. This week's content will give you the tools to answer this question confidently."
+
+**Key Phrases to Use:**
+- "Walk me through your reasoning..."
+- "What makes you think that?"
+- "You're on the right track, but what are you missing?"
+- "Think bigger—what other ways could this move impact the business?"
+- "That's a common gap—most people don't see the connections until they learn the ecosystem model."
+```
+
+---
+
+#### System Prompt
+
+**Copy this into Uplimit's System Prompt field:**
+
+```markdown
+This is a DIAGNOSTIC conversation, not an evaluation. The student is attempting to answer a complex sports revenue question BEFORE learning the Week 1 content. Your role is to:
+
+1. **Probe understanding** of three key concepts through 3-4 questions:
+   - Revenue streams (5 major sources: media, ticketing, sponsorship, merchandising, betting)
+   - Ecosystem thinking (revenues are interdependent, not independent)
+   - Amplification effects (star players increase ALL revenue streams, not just tickets/jerseys)
+
+2. **Reveal gaps gently**:
+   - If they can't name all 5 revenue streams → Ask "What other ways do fans engage with the team?"
+   - If they list streams but don't connect them → Ask "Are these independent, or connected somehow?"
+   - If they focus only on direct revenue → Ask "What about indirect effects?"
+
+3. **End with encouragement and preview**:
+   - Acknowledge what they got right
+   - Explicitly name 1-2 gaps they revealed (e.g., "You haven't learned about revenue interdependence yet")
+   - Preview that Week 1 content will give them the tools to answer confidently
+   - Say: "Let's see what the pre-assessment quiz shows you about where to focus your learning."
+
+4. **Keep it 5-7 minutes**: Aim for 3-4 exchanges maximum. Don't let them spiral into long explanations.
+
+5. **What success looks like**: Student finishes feeling:
+   - ✅ "I tried my best with what I know"
+   - ✅ "I can see specific gaps in my understanding"
+   - ✅ "I'm curious to learn the revenue ecosystem framework"
+   - ❌ NOT "I failed" or "This is too hard"
+
+**Conversation Structure:**
+- **Turn 1**: Student's initial answer to "Why might the contract make sense?"
+- **Turn 2**: Probe for revenue streams beyond tickets/jerseys
+- **Turn 3**: Probe for connections/ecosystem thinking (if they list streams separately)
+- **Turn 4**: Close with acknowledgment of effort + specific gaps + preview of what they'll learn
+
+**Exit gracefully after 7 minutes** even if they're still struggling. The goal is diagnosis, not mastery.
+```
+
+---
+
+#### Diagnostic Rubric (Formative Only - Not Graded)
+
+**Purpose:** This rubric helps you and your instructor identify your current understanding BEFORE learning Week 1 content. Most students are "Beginning" or "Developing" at this stage—that's completely normal and expected.
+
+---
+
+**Student-Facing Version**
+
+**Copy this markdown into Uplimit's Student Instructions or Post-Exercise Feedback:**
+
+```markdown
+### How to Use This
+
+After your AI conversation, review the criteria below to see where you are right now. This helps you focus your learning during Week 1.
+
+| Criterion | Beginning | Developing | Proficient |
+|-----------|-----------|------------|------------|
+| **Revenue Streams Knowledge** | Can name 1-2 revenue sources (typically tickets and/or jerseys) | Can name 3-4 revenue sources (might include sponsorship, media, or merchandising) | Can name all 5 major streams (media rights, ticketing, sponsorship, merchandising, betting) and explain their relative importance |
+| **Ecosystem Thinking** | Views revenue streams as independent/separate (e.g., "Tickets go up, jerseys go up") | Recognizes some connections between streams but can't explain how they influence each other | Understands that revenue streams are interdependent (e.g., "Star player increases ALL streams simultaneously through amplification effects") |
+| **Amplification Effects** | Focuses only on direct revenue (ticket sales, jersey sales directly tied to player) | Mentions indirect effects but can't quantify or give specific examples (e.g., "Maybe sponsorships increase?") | Can articulate how star players amplify multiple streams with specific mechanisms (e.g., "Media rights increase because more viewers watch games") |
+
+**What Your Level Means:**
+
+- **Beginning**: You're entering Week 1 with foundational business knowledge but limited sports-specific expertise. **Focus on:** Understanding how sports economics differs from traditional business models.
+- **Developing**: You have some sports business intuition but gaps in systematic thinking. **Focus on:** Learning the revenue ecosystem framework and interdependence principles.
+- **Proficient**: You already have strong sports business fundamentals. **Focus on:** Applying the framework to complex scenarios like the Canucks case.
+
+**Next Steps:**
+1. Take the pre-assessment quiz (Element 5) to confirm your diagnostic level
+2. Review your personalized learning plan based on your quiz results
+3. Pay special attention to Week 1 modules that address your identified gaps
+```
+
+---
+
+**Faculty Grading Version**
+
+**Copy this markdown into Uplimit's Faculty Rubric Configuration:**
+
+```markdown
+### Faculty Diagnostic Rubric
+
+**How to Use This:** Review the AI conversation transcript and student responses. Check the boxes that best describe their current understanding. Add 1-2 sentences of custom feedback highlighting their strongest area and biggest gap.
+
+**Typical Distribution:** In past cohorts, ~50% Beginning, ~35% Developing, ~15% Proficient at this pre-learning stage.
+
+| Criterion | Beginning (50% of students) | Developing (35% of students) | Proficient (15% of students) |
+|-----------|------------|------------|------------|
+| **Revenue Streams Knowledge**<br><br>*Probed with: "What other ways do we make money?"* | □ **Named 1-2 streams only**<br><br>Typical responses:<br>- "Ticket sales and jersey sales"<br>- "Game attendance and merchandise"<br>- Struggles when asked for more | □ **Named 3-4 streams**<br><br>Typical responses:<br>- Includes sponsorship OR media<br>- Forgets betting/licensing<br>- Can list but struggles to explain importance | □ **Named all 5 streams + context**<br><br>Typical responses:<br>- Lists all 5 systematically<br>- Mentions media as largest (40-50%)<br>- Shows awareness of betting as emerging |
+| **Ecosystem Thinking**<br><br>*Probed with: "Are these independent or connected?"* | □ **Views streams as separate**<br><br>Typical responses:<br>- "Each one goes up separately"<br>- Lists streams as bullet points without connections<br>- Uses "and" instead of "because" | □ **Recognizes connections but vague**<br><br>Typical responses:<br>- "They probably affect each other"<br>- Can't explain HOW they connect<br>- Uses phrases like "might increase" without specifics | □ **Articulates interdependence clearly**<br><br>Typical responses:<br>- Uses causal language ("increases X which drives Y")<br>- Mentions flywheel/ecosystem concepts<br>- Gives 1+ specific connection example |
+| **Amplification Effects**<br><br>*Probed with: "Think bigger—what other impacts?"* | □ **Direct revenue only**<br><br>Typical responses:<br>- "More ticket sales, more jersey sales"<br>- Can't identify indirect effects<br>- Focuses on single transaction | □ **Mentions indirect but no details**<br><br>Typical responses:<br>- "Sponsorships might increase"<br>- "More fans = more revenue somehow"<br>- Intuition without mechanism | □ **Explains amplification mechanism**<br><br>Typical responses:<br>- "Media rights increase because ratings go up"<br>- "Sponsors pay more for exposure to larger audience"<br>- Connects star player to 3+ stream increases |
+
+**Support Flags:**
+- ⚠️ **All Beginning**: Schedule for office hours—needs foundational support
+- ⚠️ **Two Beginning + One Developing**: Monitor during Week 1—may need scaffolding
+- ✅ **Mix of Developing/Proficient**: On track—standard Week 1 content should work
+
+**Custom Feedback Template:**
+
+```
+**What You Demonstrated:**
+[1-2 sentences on strongest criterion or insight they showed]
+
+**Primary Gap to Address:**
+[1 sentence on biggest gap—use criterion name for consistency]
+
+**Week 1 Focus Areas:**
+- [Personalized 1-2 module suggestions based on gaps]
+
+**Remember:** Your performance here is diagnostic—it shows where you are NOW, not where you'll be after Week 1. Students who struggle most here often learn most during the week because they know exactly what to focus on.
+```
+
+**Grading Time Estimate:** 2-3 minutes per student (review transcript + check 3 boxes + write 2-3 sentences)
+```
+
+---
+
+### Element 3: Infobox - The Revenue Problem
+```
+Title: △ The Revenue Problem Professional Sport Faces
 
 **The Challenge:**
 Professional sports teams operate with a business model that defies conventional
@@ -81,7 +282,7 @@ NHL Vancouver Canucks, the Rogers NHL media deal, and Connor McDavid's contract.
 But first: Let's see what you already know.
 ```
 
-### Element 3: Text - Outcomes as "Can You..." Questions
+### Element 4: Text - Outcomes as "Can You..." Questions
 ```markdown
 # Can You Solve These Revenue Problems?
 
@@ -154,16 +355,16 @@ sharing for a mid-market team? (Pre-assessment question 7)
 Before you dive into this week's content, take the 10-question Revenue Knowledge Quiz
 below. This isn't graded—it's a self-diagnostic to help you understand:
 
-✓ What you already know (so you can focus on what's new)
-✓ Where you have knowledge gaps (so you know what to prioritize)
-✓ How your business intuition applies to sport (or doesn't)
+- What you already know (so you can focus on what's new)
+- Where you have knowledge gaps (so you know what to prioritize)
+- How your business intuition applies to sport (or doesn't)
 
 **Your results will give you a personalized learning path for this week.**
 
-Let's see what you've got! 👇
+Let's see what you've got! ↓
 ```
 
-### Element 4: iFrame Widget - Revenue Knowledge Pre-Assessment Quiz
+### Element 5: iFrame Widget - Revenue Knowledge Pre-Assessment Quiz
 
 **Widget Purpose:** 10-question self-diagnostic quiz covering all 4 learning outcomes
 
@@ -172,7 +373,7 @@ Let's see what you've got! 👇
 1. **Multiple Choice:** "Which revenue stream accounts for the largest percentage of
    total revenue for most major professional leagues?"
    - A) Ticketing (20-30%)
-   - B) Media rights (40-60%) ✓
+   - B) Media rights (40-60%)
    - C) Sponsorship (15-25%)
    - D) Merchandising (5-10%)
 
@@ -205,33 +406,44 @@ Let's see what you've got! 👇
 </iframe>
 ```
 
-### Element 5: AI Chat Widget - Quiz Results Coach
-
-**Widget Name:** "Quiz Results Coach"
-
-**System Prompt:**
+### Element 6: Infobox - Results Interpretation & Learning Path
 ```
+<<<<<<< Updated upstream
 https://learn.ivey.ca/courses/6726
+=======
+Title: ◆ What Your Pre-Assessment Results Mean
+
+**If you scored 0-3/10: "Revenue Newcomer"**
+Great! This week is designed for you. You're starting from a clean slate, which
+means you won't have to unlearn misconceptions. Focus your energy on:
+- Module 3 (Core Content - Revenue Streams) - spend extra time here
+- All 8 interactive widgets - hands-on learning will help concepts stick
+- Executive session - listen for how the expert explains interconnections
+
+**If you scored 4-6/10: "Strategic Intuition"**
+You have good business instincts, but you're missing some sport-specific knowledge.
+Focus your energy on:
+- The differences between sport and traditional business (Module 3, Section 6)
+- Revenue sharing mechanics (Module 5 - Canucks Case)
+- Emerging streams like betting (Module 3, Section 5)
+
+**If you scored 7-9/10: "Revenue Expert"**
+You already understand the fundamentals! Challenge yourself with:
+- The Canucks case (Module 5) - test your ability to apply knowledge
+- Revenue Empire Builder (Module 4) - strategic decision-making
+- Reflection Memo (Module 6) - synthesize knowledge for executive audience
+
+**If you scored 10/10: "Industry Insider"**
+Impressive! You likely have sport business experience. Use this week to:
+- Validate your mental models against academic frameworks
+- Discover new perspectives from the executive session
+- Help classmates in discussion forums
+- Think ahead: How will you apply this to your Group Marketing Project?
+
+**Remember:** This quiz isn't graded. It's a tool to help you learn efficiently.
+Now that you know where you stand, let's solve those revenue problems! ↓
+>>>>>>> Stashed changes
 ```
-
-**Welcome Message:**
-```
-Hi! I'm here to help you make sense of your pre-assessment results.
-
-What score did you get on the quiz, and what level did it assign you? (Revenue Newcomer, Strategic Intuition, Revenue Expert, or Industry Insider)
-
-If you'd like, you can also share which questions gave you the most trouble—I can help explain those concepts in a way that might click better for you.
-```
-
-**Show System Prompt to User:** No
-
-**Design Rationale:**
-- **Interactive vs. static**: Students get personalized coaching instead of choosing from pre-written paths
-- **Adaptive explanations**: AI can dig into specific concepts students struggled with (Q3 on McDavid contract, Q4 on betting streams, etc.)
-- **Socratic approach**: Helps students discover insights rather than passively receiving recommendations
-- **Encouraging tone**: Normalizes struggle, frames gaps as opportunities, maintains growth mindset
-- **Specific guidance**: Points to exact modules and sections based on identified weaknesses
-- **Meta-learning**: Helps students become better self-directed learners by modeling how to interpret diagnostic results
 
 ---
 
@@ -242,13 +454,13 @@ If you'd like, you can also share which questions gave you the most trouble—I 
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
-| 2 | **Text** ⬤ Required | Week 1 introduction (3 paragraphs) | Import from `week1-intro.docx` | Sets context for revenue ecosystem topic |
-| 3 | **Tiles** ◐ Recommended | 4 revenue stream categories (preview) | Type directly in Uplift | Blue variant, one tile per stream |
+| 1 | **ⓘ Infobox (Callout)** ⬛ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
+| 2 | **▬ Text** ⬛ Required | Week 1 introduction (3 paragraphs) | Import from `week1-intro.docx` | Sets context for revenue ecosystem topic |
+| 3 | **◫ Tiles** ▣ Recommended | 4 revenue stream categories (preview) | Type directly in Uplift | Blue variant, one tile per stream |
 
 ### Element 1: Infobox Content
 ```
-Title: Week 1 Learning Objectives ◉
+Title: ◉ Week 1 Learning Objectives
 
 By the end of this week, you will be able to:
 • MLO 1.1: Map the major revenue streams in professional sport
@@ -295,9 +507,9 @@ Create 4 tiles (2x2 grid):
 **Tile 4 - Description:** "Betting integration, NFTs, metaverse experiences. Innovation at the revenue frontier."
 
 **Design Rationale:**
-- **Infobox (Callout)** makes learning objectives visible (QM Standard 2, UDL engagement)
+- **ⓘ Infobox (Callout)** makes learning objectives visible (QM Standard 2, UDL engagement)
 - **Text** provides narrative context (UDL representation)
-- **Tiles** create visual preview and chunking (UDL engagement, scannable overview)
+- **◫ Tiles** create visual preview and chunking (UDL engagement, scannable overview)
 - Students immediately understand week's scope and expectations
 
 ---
@@ -309,10 +521,10 @@ Create 4 tiles (2x2 grid):
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Context about executive + viewing instructions | Type directly | Blue variant, sets viewing expectations |
-| 2 | **Video** ◐ Recommended | 90-minute executive session | Upload MP4 + VTT transcript | Hosted video with captions |
-| 3 | **Details** ○ Optional | Executive bio and background (optional) | Type directly | Accordion for optional depth |
-| 4 | **AI Chat Widget** ○ Optional | "Ask questions about executive content" | Configure in Uplimit | Named: "Revenue Ecosystem Q&A" |
+| 1 | **ⓘ Infobox (Callout)** ⬛ Required | Context about executive + viewing instructions | Type directly | Blue variant, sets viewing expectations |
+| 2 | **▶ Video** ▣ Recommended | 90-minute executive session | Upload MP4 + VTT transcript | Hosted video with captions |
+| 3 | **▤ Details** ▢ Optional | Executive bio and background (optional) | Type directly | Accordion for optional depth |
+| 4 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about executive content" | Configure in Uplimit | Named: "Revenue Ecosystem Q&A" |
 
 ### Element 1: Infobox Content
 ```
@@ -371,13 +583,13 @@ Publications & Presentations:
 **Design Rationale:**
 - **Video** provides expert practitioner perspective (UDL engagement, real-world relevance)
 - **VTT transcript** ensures accessibility and allows text-based review
-- **Details** provides optional background without overwhelming main flow (UDL choice)
+- **▤ Details** provides optional background without overwhelming main flow (UDL choice)
 - **AI Chat** offers on-demand support for confused students (UDL scaffolding)
 - Multiple means of representation: video (visual+audio), transcript (text), chat (interactive)
 
 ---
 
-## MODULE 3: Core Content - Revenue Streams ⭐ **V3 INTERACTIVE-FIRST REDESIGN**
+## MODULE 3: Core Content - Revenue Streams • **V3 INTERACTIVE-FIRST REDESIGN**
 **Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports MLO 1.1, 1.2, 1.3)
 
 **Uplimit Structure:** Third module in Unit 1
@@ -395,10 +607,10 @@ Publications & Presentations:
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 1 | **Text** ⬤ Required | Brief intro + 5 streams list | 1 min | 100 | Type directly |
-| 2 | **Video** ⬤ Required | 5 Revenue Streams (animated) | 2 min | - | Upload `week1-video1-revenue-streams.mp4` |
-| 3 | **Vertical List** ⬤ Required | 5 streams at a glance | 1 min | - | Type directly |
-| 4 | **🎮 iFrame Widget** ⬤ Required | **Revenue Mix Slider** | 3 min | - | Embed `revenue-mix-slider.html` |
+| 1 | **▬ Text** ⬛ Required | Brief intro + 5 streams list | 1 min | 100 | Type directly |
+| 2 | **▶ Video** ⬛ Required | 5 Revenue Streams (animated) | 2 min | - | Upload `week1-video1-revenue-streams.mp4` |
+| 3 | **⊞ Vertical List** ⬛ Required | 5 streams at a glance | 1 min | - | Type directly |
+| 4 | **⚙ iFrame Widget** ⬛ Required | **Revenue Mix Slider** | 3 min | - | Embed `revenue-mix-slider.html` |
 
 #### Element 1: Introduction Text
 **Copy this markdown directly into Uplimit:**
@@ -447,7 +659,7 @@ Create 5 numbered items:
 
 #### Element 4: iFrame Widget - Revenue Mix Slider
 
-### ◉ Interactive Activity: Revenue Mix Slider
+### ⚙ Interactive Activity: Revenue Mix Slider
 
 **Practice: MLO 1.1 (Map major revenue streams) & MLO 1.3 (Evaluate growth potential and risks)**
 
@@ -506,13 +718,13 @@ In this interactive activity, you'll build your own revenue portfolio by allocat
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 5 | **Text** ⬤ Required | Why media is 40-60% | 1 min | 100 | Type directly |
-| 6 | **🎮 iFrame Widget** ◐ Recommended | **Media Rights Calculator** | 4 min | - | Embed `media-rights-calculator.html` |
-| 7 | **Infobox** ⬤ Required | Key insight: Appointment viewing | 1 min | 50 | Type directly |
-| 8 | **Image** ◐ Recommended | Media rights timeline | 1 min | - | Upload `media-rights-timeline.png` |
-| 9 | **Text** ⬤ Required | Streaming vs. Traditional | 1 min | 120 | Type directly |
-| 10 | **Table** ⬤ Required | Streaming vs. Traditional comparison | 1 min | - | Type directly |
-| 11 | **🎮 iFrame Widget** ○ Optional | **Streaming Wars Decision Game** | 5 min | - | Embed `streaming-wars-game.html` |
+| 5 | **▬ Text** ⬛ Required | Why media is 40-60% | 1 min | 100 | Type directly |
+| 6 | **⚙ iFrame Widget** ▣ Recommended | **Media Rights Calculator** | 4 min | - | Embed `media-rights-calculator.html` |
+| 7 | **ⓘ Infobox** ⬛ Required | Key insight: Appointment viewing | 1 min | 50 | Type directly |
+| 8 | **▭ Image** ▣ Recommended | Media rights timeline | 1 min | - | Upload `media-rights-timeline.png` |
+| 9 | **▬ Text** ⬛ Required | Streaming vs. Traditional | 1 min | 120 | Type directly |
+| 10 | **▦ Table** ⬛ Required | Streaming vs. Traditional comparison | 1 min | - | Type directly |
+| 11 | **⚙ iFrame Widget** ▢ Optional | **Streaming Wars Decision Game** | 5 min | - | Embed `streaming-wars-game.html` |
 
 #### Element 5: Media Rights Text
 **Copy this markdown directly into Uplimit:**
@@ -534,7 +746,7 @@ For leagues, broadcast deals provide **predictable, long-term revenue** (often 9
 
 #### Element 6: iFrame Widget - Media Rights Calculator
 
-### ◉ Interactive Activity: Media Rights Calculator
+### ⚙ Interactive Activity: Media Rights Calculator
 
 **Practice: MLO 1.1 (Map major revenue streams) & MLO 1.3 (Evaluate growth potential)**
 
@@ -577,7 +789,7 @@ In this interactive calculator, you'll input key factors—league size, audience
 
 #### Element 7: Infobox - Appointment Viewing Insight
 ```
-Title: ▶ Key Insight: "Appointment Viewing"
+Title: ◆ Key Insight: "Appointment Viewing"
 
 Sports are the last true appointment viewing—you can't watch "later" without risking spoilers from social media. This creates predictable, simultaneous audiences (rare in 2024), premium advertising rates, subscription retention power, and cultural currency. This unique characteristic explains why sports rights command prices that seem economically irrational—until you understand their strategic defensive value for traditional broadcasters and offensive value for streaming disruptors.
 ```
@@ -618,7 +830,7 @@ Leagues increasingly split rights packages to maximize total revenue: sell tradi
 
 #### Element 11: iFrame Widget - Streaming Wars Decision Game
 
-### ◉ Interactive Activity: Streaming Wars Decision Game
+### ⚙ Interactive Activity: Streaming Wars Decision Game
 
 **Practice: MLO 1.1 (Understand media rights options) & MLO 1.3 (Evaluate strategic trade-offs)**
 
@@ -666,13 +878,13 @@ In this decision game, you're the NHL commissioner choosing between two media of
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 12 | **Text** ⬤ Required | Ticketing basics | 1 min | 100 | Type directly |
-| 13 | **🎮 iFrame Widget** ⬤ Required | **Dynamic Pricing Simulator** | 5 min | - | Embed `dynamic-pricing-simulator.html` |
-| 14 | **Image** ◐ Recommended | Premium seating breakdown | 1 min | - | Upload `premium-seating-breakdown.png` |
-| 15 | **Text** ⬤ Required | Premium seating strategy | 1 min | 120 | Type directly |
-| 16 | **🎮 iFrame Widget** ○ Optional (Phase 3) | **Stadium Revenue Optimizer** | 4 min | - | Embed `stadium-revenue-optimizer.html` |
-| 17 | **Infobox** ◐ Recommended | Premium seat economics insight | 1 min | 50 | Type directly |
-| 18 | **Details** ○ Optional | PSL case study (SoFi Stadium) | 1 min | - | Type directly |
+| 12 | **▬ Text** ⬛ Required | Ticketing basics | 1 min | 100 | Type directly |
+| 13 | **⚙ iFrame Widget** ⬛ Required | **Dynamic Pricing Simulator** | 5 min | - | Embed `dynamic-pricing-simulator.html` |
+| 14 | **▭ Image** ▣ Recommended | Premium seating breakdown | 1 min | - | Upload `premium-seating-breakdown.png` |
+| 15 | **▬ Text** ⬛ Required | Premium seating strategy | 1 min | 120 | Type directly |
+| 16 | **⚙ iFrame Widget** ▢ Optional (Phase 3) | **Stadium Revenue Optimizer** | 4 min | - | Embed `stadium-revenue-optimizer.html` |
+| 17 | **ⓘ Infobox** ▣ Recommended | Premium seat economics insight | 1 min | 50 | Type directly |
+| 18 | **▤ Details** ▢ Optional | PSL case study (SoFi Stadium) | 1 min | - | Type directly |
 
 #### Element 12: Ticketing Basics Text
 **Copy this markdown directly into Uplimit:**
@@ -691,7 +903,7 @@ Over a full season, dynamic pricing can **increase ticketing revenue by 15-25%**
 
 #### Element 13: iFrame Widget - Dynamic Pricing Simulator
 
-### ◉ Interactive Activity: Dynamic Pricing Simulator
+### ⚙ Interactive Activity: Dynamic Pricing Simulator
 
 **Practice: MLO 1.1 (Understand ticketing mechanics) & MLO 1.3 (Evaluate revenue optimization strategies)**
 
@@ -774,7 +986,7 @@ The evolution of stadium economics has shifted dramatically from a **"fill the s
 
 #### Element 16: iFrame Widget - Stadium Revenue Optimizer
 
-### ◉ Interactive Activity: Stadium Revenue Optimizer
+### ⚙ Interactive Activity: Stadium Revenue Optimizer
 
 **Practice: MLO 1.1 (Understand ticketing revenue structure) & MLO 1.3 (Evaluate revenue optimization strategies)**
 
@@ -848,12 +1060,12 @@ Total non-ticket revenue can reach **$40-50 per attendee** (concessions $15-30, 
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 19 | **Video** ⬤ Required | Sponsorship & Merchandising (2 min) | 2 min | - | Upload `week1-video2-sponsorship-merch.mp4` |
-| 20 | **Text** ⬤ Required | Sponsorship basics | 1 min | 100 | Type directly |
-| 21 | **🎮 iFrame Widget** ⬤ Required | **Sponsorship ROI Calculator** | 4 min | - | Embed `sponsorship-roi-calculator.html` |
-| 22 | **Image** ◐ Recommended | Sponsorship activation pyramid | 1 min | - | Upload `sponsorship-activation-pyramid.png` |
-| 23 | **Text** ⬤ Required | Merchandising models | 1 min | 100 | Type directly |
-| 24 | **Tiles** ◐ Recommended | 3 merchandising spikes | 1 min | - | Type directly |
+| 19 | **▶ Video** ⬛ Required | Sponsorship & Merchandising (2 min) | 2 min | - | Upload `week1-video2-sponsorship-merch.mp4` |
+| 20 | **▬ Text** ⬛ Required | Sponsorship basics | 1 min | 100 | Type directly |
+| 21 | **⚙ iFrame Widget** ⬛ Required | **Sponsorship ROI Calculator** | 4 min | - | Embed `sponsorship-roi-calculator.html` |
+| 22 | **▭ Image** ▣ Recommended | Sponsorship activation pyramid | 1 min | - | Upload `sponsorship-activation-pyramid.png` |
+| 23 | **▬ Text** ⬛ Required | Merchandising models | 1 min | 100 | Type directly |
+| 24 | **◫ Tiles** ▣ Recommended | 3 merchandising spikes | 1 min | - | Type directly |
 
 #### Element 19: Video - Sponsorship & Merchandising Overview
 - **File:** `week1-video2-sponsorship-merch.mp4`
@@ -886,7 +1098,7 @@ The best sponsors **activate** beyond logos—creating fan experiences that buil
 
 #### Element 21: iFrame Widget - Sponsorship ROI Calculator
 
-### ◉ Interactive Activity: Sponsorship ROI Calculator
+### ⚙ Interactive Activity: Sponsorship ROI Calculator
 
 **Practice: MLO 1.1 (Understand sponsorship mechanics) & MLO 1.3 (Evaluate activation strategies)**
 
@@ -958,13 +1170,13 @@ Merchandising and licensing revenue represents **5-10% of revenue** for most tea
 #### Element 24: Tiles - 3 Merchandising Spikes
 Create 3 tiles (1x3 horizontal layout):
 
-**Tile 1 - Title:** "🏆 Championships"
+**Tile 1 - Title:** "• Championships"
 **Tile 1 - Description:** "Playoff runs drive 200-400% sales increases. Winning teams sell championship gear, commemorative items, and celebration merchandise."
 
-**Tile 2 - Title:** "⭐ Star Players"
+**Tile 2 - Title:** "• Star Players"
 **Tile 2 - Description:** "Superstar acquisitions create immediate sales spikes. LeBron to Lakers = $1M+ in jersey sales within hours of announcement."
 
-**Tile 3 - Title:** "🎨 Limited Designs"
+**Tile 3 - Title:** "• Limited Designs"
 **Tile 3 - Description:** "Special edition jerseys (City Edition, throwbacks, collaborations) create artificial scarcity and drive $100M+ in annual revenue."
 
 ---
@@ -973,9 +1185,9 @@ Create 3 tiles (1x3 horizontal layout):
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 25 | **Text** ⬤ Required | Betting growth | 1 min | 100 | Type directly |
-| 26 | **🎮 iFrame Widget** ○ Optional | **Betting Market Simulator** | 3 min | - | Embed `betting-market-simulator.html` |
-| 27 | **Infobox** ◐ Recommended | Betting growth statistics | 1 min | - | Type directly |
+| 25 | **▬ Text** ⬛ Required | Betting growth | 1 min | 100 | Type directly |
+| 26 | **⚙ iFrame Widget** ▢ Optional | **Betting Market Simulator** | 3 min | - | Embed `betting-market-simulator.html` |
+| 27 | **ⓘ Infobox** ▣ Recommended | Betting growth statistics | 1 min | - | Type directly |
 
 #### Element 25: Betting Growth Text
 **Copy this markdown directly into Uplimit:**
@@ -1000,7 +1212,7 @@ Sports betting represents the **newest and fastest-growing revenue stream**, cur
 
 #### Element 26: iFrame Widget - Betting Market Simulator
 
-### ◉ Interactive Activity: Betting Market Simulator
+### ⚙ Interactive Activity: Betting Market Simulator
 
 **Practice: MLO 1.1 (Map emerging revenue streams) & MLO 1.3 (Evaluate growth potential and risks)**
 
@@ -1051,7 +1263,7 @@ In this simulator, you'll make strategic decisions about betting partnerships, d
 
 #### Element 27: Infobox - Betting Growth Statistics
 ```
-Title: ▪ Betting Growth Statistics
+Title: ◆ Betting Growth Statistics
 
 The sports betting market has exploded since legalization: global sports betting market exceeds $200 billion annually, U.S. market grew from $0 (2017) to $100+ billion (2024), and betting partnerships now represent 2-8% of league revenue (growing 30-40% annually). Fans with active bets watch 30-40% more sports content, driving increased viewership and advertising value across all revenue streams. Despite integrity concerns, leagues have decided betting integration is inevitable—better to regulate directly than leave to black markets.
 ```
@@ -1062,9 +1274,9 @@ The sports betting market has exploded since legalization: global sports betting
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 28 | **Text** ⬤ Required | Ecosystem principle intro | 1 min | 100 | Type directly |
-| 29 | **🎮 iFrame Widget** ⬤ Required | **Ecosystem Cascade Simulator** | 5 min | - | Embed `ecosystem-cascade-simulator.html` |
-| 30 | **Image** ◐ Recommended | Revenue ecosystem diagram | 1 min | - | Upload `revenue-ecosystem-diagram.png` |
+| 28 | **▬ Text** ⬛ Required | Ecosystem principle intro | 1 min | 100 | Type directly |
+| 29 | **⚙ iFrame Widget** ⬛ Required | **Ecosystem Cascade Simulator** | 5 min | - | Embed `ecosystem-cascade-simulator.html` |
+| 30 | **▭ Image** ▣ Recommended | Revenue ecosystem diagram | 1 min | - | Upload `revenue-ecosystem-diagram.png` |
 
 #### Element 28: Ecosystem Principle Text
 **Copy this markdown directly into Uplimit:**
@@ -1087,7 +1299,7 @@ This explains why teams "overpay" for stars. They're investing in **ecosystem am
 
 #### Element 29: iFrame Widget - Ecosystem Cascade Simulator
 
-### ◉ Interactive Activity: Ecosystem Cascade Simulator
+### ⚙ Interactive Activity: Ecosystem Cascade Simulator
 
 **Practice: MLO 1.1 (See revenue stream interconnections) & MLO 1.2 (Understand sport's unique business model) & MLO 1.3 (Evaluate strategic investments)**
 
@@ -1193,17 +1405,17 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Activity instructions and learning objectives | Type directly | Blue variant, clear task description |
-| 2 | **iFrame** ◐ Recommended | Revenue Empire Builder widget | Custom widget hosted | Interactive simulation |
-| 3 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to MLOs |
-| 4 | **AI Chat Widget** ○ Optional | Help during activity (optional) | Configure in Uplimit | Named: "Strategy Assistant" |
-| 5 | **Details** ○ Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
+| 1 | **ⓘ Infobox (Callout)** ⬛ Required | Activity instructions and learning objectives | Type directly | Blue variant, clear task description |
+| 2 | **⚙ iFrame** ▣ Recommended | Revenue Empire Builder widget | Custom widget hosted | Interactive simulation |
+| 3 | **🎭 AI Roleplay Exercise** ⬛ Required | Board strategy defense | Configure in Uplimit | Defend your Revenue Empire Builder strategy |
+| 4 | **◈ AI Chat Widget** ▢ Optional | Help during activity (optional) | Configure in Uplimit | Named: "Strategy Assistant" |
+| 5 | **▤ Details** ▢ Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
 
 ### Element 1: Infobox Content
 ```
-Title: ■ Activity: Build Your Revenue Empire
+Title: ⚙ Activity: Build Your Revenue Empire
 
-### ◉ Interactive Activity: Revenue Empire Builder
+### ⚙ Interactive Activity: Revenue Empire Builder
 
 **Practice: MLO 1.1 (Apply revenue stream knowledge) & MLO 1.3 (Evaluate growth potential and manage risks)**
 
@@ -1263,19 +1475,76 @@ Time: 30-45 minutes | Can be completed in multiple sessions
 - Color-blind safe color scheme ✅
 - Screen reader compatible ✅
 
-### Element 3: Text Content (Reflection Prompt)
-```
-After completing the Revenue Empire Builder:
+### Element 3: AI Roleplay Exercise - Board Strategy Defense
 
-Reflect on your strategic decisions:
-• Which revenue stream did you invest in most heavily? Why?
-• What surprised you about how the streams interacted?
-• How did market events (e.g., recession, new competitor) impact your strategy?
-• If you played again, what would you do differently?
+**Exercise Title:** "Board Strategy Defense: Revenue Empire Presentation"
 
-This activity prepares you for the case study analysis in Module 5, where you'll
-evaluate real revenue decisions made by the Vancouver Canucks.
+**Student Instructions:**
+```markdown
+## Your Role
+You are the newly appointed CFO of a mid-market professional sports team. You've just completed your first strategic planning exercise (Revenue Empire Builder) and must now defend your 5-year revenue investment strategy to the Board of Directors.
+
+## The Scenario
+You're presenting to Margaret Torres, Chair of the Board Finance Committee. She's a former Fortune 500 CFO with no sports industry experience—which means she'll challenge assumptions and demand clear explanations.
+
+The board wants to know:
+- How you allocated your $50M investment budget across the five revenue streams
+- Why you made those specific choices (what was your strategic rationale?)
+- What risks you're taking and how you'll mitigate them
+- What you learned during the simulation (e.g., market events that forced pivots)
+
+## What to Have Ready
+Before starting this conversation, make sure you remember:
+- Your final revenue allocation percentages (Media, Ticketing, Sponsorship, Merch, Betting)
+- Key decisions you made during the 5-year simulation
+- How you responded to market events (recession, regulatory changes, etc.)
+- Your final revenue growth and risk score
+
+## Your Goal
+Demonstrate that you understand:
+1. How each revenue stream works and why you allocated as you did
+2. The trade-offs between high-growth (risky) and stable (limited upside) streams
+3. How revenue streams create synergies (ecosystem thinking)
+4. Real-world constraints (capacity limits, regulatory risk, competitive dynamics)
+
+**Time:** 10-15 minutes | Your defense will be evaluated using the rubric below.
 ```
+
+**AI Character:** Margaret Torres, Board Finance Committee Chair (former Fortune 500 CFO, skeptical, data-driven, expects rigorous financial logic)
+
+**System Prompt:**
+```
+You are Margaret Torres, Chair of the Board Finance Committee for a mid-market professional sports team. You're evaluating the CFO's 5-year revenue investment strategy after they completed the Revenue Empire Builder simulation.
+
+BACKGROUND: You're a former Fortune 500 CFO with 20 years of experience, but you're NEW to sports. You expect the same financial rigor you demanded in traditional industries. You're skeptical when people say "sports is different"—prove it with data.
+
+CONVERSATION STRUCTURE:
+1. Opening (2 min): "Walk me through your investment allocation across the five revenue streams and explain your strategic rationale"
+2. Deep Dive (6-8 min): Probe specific allocation decisions, challenge assumptions
+3. Risk Assessment (3-4 min): Test their understanding of vulnerabilities
+4. Lessons Learned (2 min): "What did the simulation teach you that surprised you?"
+5. Closing (1 min): "If you could re-do this, what would you change?"
+
+EVIDENCE OF STRONG PERFORMANCE (reward these):
+- Clear articulation of allocation strategy with percentages
+- Ecosystem thinking: "I balanced media and ticketing because star players drive both"
+- Risk awareness: "Betting is high-growth but volatile, so I capped it at 15%"
+- Specific simulation moments: "In Year 3, the recession hit, so I shifted from..."
+- Data-driven: "My final ROI was X%, driven primarily by..."
+
+EVALUATE ON: Strategic justification (10 pts), Risk management (10 pts), Simulation engagement (5 pts), Communication (5 pts). Total: 30 points.
+
+After 10-15 minutes, provide rubric-aligned feedback on their performance.
+```
+
+**Rubric:**
+| **Criterion** | **Points** | **Description** |
+|--------------|-----------|----------------|
+| **Strategic Justification** | 10 pts | Clear allocation with strong rationale; explains trade-offs between growth/stability; ecosystem thinking evident |
+| **Risk Management** | 10 pts | Identifies 2-3 specific risks per stream; proposes concrete mitigation strategies; shows scenario planning |
+| **Simulation Engagement** | 5 pts | Recalls specific decisions, market events, pivots; demonstrates active learning from widget |
+| **Communication** | 5 pts | Clear, confident, uses data, handles challenges professionally |
+**Total:** 30 points
 
 ### Element 4: AI Chat Widget Configuration
 - **Widget Name:** "Strategy Assistant"
@@ -1317,10 +1586,10 @@ media rights → more resources for players...)
 
 **Design Rationale:**
 - **iFrame widget** provides hands-on, experiential learning (UDL engagement, Application level)
-- **Infobox** clearly frames the task and connects to MLOs (QM clarity)
+- **ⓘ Infobox** clearly frames the task and connects to MLOs (QM clarity)
 - **Reflection prompt** encourages metacognition and transfer (deeper learning)
 - **AI Chat** offers adaptive support based on student needs (UDL scaffolding)
-- **Details** provides hints without giving answers (progressive disclosure for struggling learners)
+- **▤ Details** provides hints without giving answers (progressive disclosure for struggling learners)
 - Multiple paths to success - no single "right" strategy (UDL choice)
 - Directly supports MLO 1.3 (evaluating growth potential and risks) through authentic practice
 
@@ -1333,17 +1602,18 @@ media rights → more resources for players...)
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
-| 2 | **Text** ⬤ Required | Full case study narrative | Import from `week1-canucks-case.docx` | Main case text (8-10 pages) |
-| 3 | **Table** ⬤ Required | NHL revenue sharing model data | Type directly | Financial data for analysis |
-| 4 | **Details** ⬤ Required | Exhibit A: Canucks financial statements | Type directly or upload PDF | Accordion - supporting data |
-| 5 | **Details** ⬤ Required | Exhibit B: NHL league-wide revenue data | Type directly or upload PDF | Accordion - comparative data |
-| 6 | **Details** ⬤ Required | Exhibit C: Canadian market characteristics | Type directly | Accordion - market context |
-| 7 | **Image** ○ Optional | Org chart or revenue flow diagram | Upload PNG + alt text | Visual aid if helpful |
+| 1 | **ⓘ Infobox (Callout)** ⬛ Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
+| 2 | **▬ Text** ⬛ Required | Full case study narrative | Import from `week1-canucks-case.docx` | Main case text (8-10 pages) |
+| 3 | **▦ Table** ⬛ Required | NHL revenue sharing model data | Type directly | Financial data for analysis |
+| 4 | **▤ Details** ⬛ Required | Exhibit A: Canucks financial statements | Type directly or upload PDF | Accordion - supporting data |
+| 5 | **▤ Details** ⬛ Required | Exhibit B: NHL league-wide revenue data | Type directly or upload PDF | Accordion - comparative data |
+| 6 | **▤ Details** ⬛ Required | Exhibit C: Canadian market characteristics | Type directly | Accordion - market context |
+| 7 | **▭ Image** ▢ Optional | Org chart or revenue flow diagram | Upload PNG + alt text | Visual aid if helpful |
+| 8 | **🎭 AI Roleplay Exercise** ▣ Recommended | NHL Board of Governors meeting | Configure in Uplimit | Defend Canucks position on revenue sharing |
 
 ### Element 1: Infobox Content
 ```
-Title: Case Study: Vancouver Canucks - Competing on Revenue Sharing ▸
+Title: ▤ Case Study: Vancouver Canucks - Competing on Revenue Sharing
 
 Context:
 The Vancouver Canucks operate in a unique market: large Canadian city, strong fan
@@ -1465,12 +1735,88 @@ Title: Exhibit C: Canadian Market Characteristics
 - **Caption:** "NHL Revenue Sharing Model - Centralized vs. Local Revenue Streams"
 - **Size:** Optimized for web, max 800px width
 
+### Element 8: AI Roleplay Exercise - NHL Board of Governors Meeting
+
+**Exercise Title:** "NHL Board of Governors: Revenue Sharing Debate"
+
+**Student Instructions:**
+```markdown
+## Your Role
+You are Jim Rutherford, President of Hockey Operations and interim GM of the Vancouver Canucks. You're attending an NHL Board of Governors meeting where revenue sharing reform is on the agenda. You need to defend the Canucks' position while navigating complex stakeholder interests.
+
+## The Scenario
+The NHL's revenue sharing model is under review. You're presenting to Commissioner Gary Bettman and 31 other team representatives. The league is divided into three factions:
+
+**Small-market teams** (Arizona, Winnipeg, Carolina) want MORE revenue sharing
+**Large-market teams** (Toronto, Montreal, New York Rangers) want LESS revenue sharing
+**Canadian teams** (Vancouver, Toronto, Montreal, Calgary, Edmonton, Ottawa, Winnipeg) face unique currency challenges
+
+## What to Have Ready
+Before starting this conversation, review the case materials and be prepared to discuss:
+- The Canucks' current revenue position ($XXM total revenue, $XM from sharing)
+- How the NHL's 50% sharing on national media/licensing impacts Vancouver
+- The Canadian dollar disadvantage (USD/CAD exchange rate impact)
+- Your proposed changes to the revenue sharing formula (if any)
+- Trade-offs between competitive balance and entrepreneurial freedom
+
+## Key Questions to Prepare For
+1. Does Vancouver benefit more from revenue sharing or lose potential revenue?
+2. Should Canadian teams receive special consideration for currency issues?
+3. What changes (if any) would you propose to the current formula?
+4. How do you balance the Canucks' self-interest with league-wide competitive balance?
+
+## Your Goal
+Demonstrate that you understand:
+1. **Mechanics**: How NHL revenue sharing works and impacts the Canucks specifically
+2. **Stakeholder Positions**: Why different teams have conflicting interests
+3. **Data Usage**: Reference specific case exhibits (revenue data, market comparisons)
+4. **Concrete Proposals**: Offer specific, defensible recommendations (not vague suggestions)
+
+**Time:** 10-15 minutes | Your advocacy will be evaluated using the rubric below.
+```
+
+**AI Character:** Gary Bettman, NHL Commissioner (pragmatic, data-driven, focused on league-wide competitive balance and long-term health)
+
+**System Prompt:**
+```
+You are Gary Bettman, Commissioner of the National Hockey League, moderating a Board of Governors meeting on revenue sharing reform. Jim Rutherford (Vancouver Canucks) is presenting the Canadian teams' perspective.
+
+BACKGROUND: You've been NHL Commissioner for 30+ years. Your priority is league-wide competitive balance and long-term financial health. You're skeptical of self-serving proposals but open to data-driven arguments that benefit the league overall. You understand that Canadian teams face unique currency challenges, but you also know large-market Canadian teams (Toronto, Montreal) have very different interests than smaller markets (Winnipeg).
+
+CONVERSATION STRUCTURE:
+1. Opening (2 min): "Jim, walk us through the Canucks' revenue picture and how revenue sharing impacts you specifically"
+2. Stakeholder Tension (4-6 min): Introduce conflicting perspectives. "Toronto argues they subsidize weaker franchises. Arizona says sharing keeps them competitive. Where do the Canucks stand?"
+3. Canadian Dollar Issue (2-3 min): "Seven Canadian teams face currency headwinds. Should the league account for that in the formula?"
+4. Concrete Proposals (2-3 min): "If you could change one thing about revenue sharing, what would it be—and why would it benefit the league, not just Vancouver?"
+5. Closing (1 min): "Final thoughts: Is the current system working for the Canucks?"
+
+EVIDENCE OF STRONG PERFORMANCE (reward these):
+- Uses case data: "Exhibit B shows the Canucks received $XM but contributed $YM..."
+- Acknowledges trade-offs: "We benefit from national media sharing, but local revenue disparities hurt us..."
+- Stakeholder awareness: "I recognize Toronto's perspective, but here's why our proposal benefits competitive balance..."
+- Concrete proposals: "Add a currency adjustment factor of 5-7% for Canadian teams based on 5-year average exchange rates"
+- Strategic framing: Links Canucks' interests to league-wide benefits
+
+EVALUATE ON: Revenue sharing mechanics understanding (10 pts), Use of case data (10 pts), Stakeholder awareness (5 pts), Concrete proposals (5 pts). Total: 30 points.
+
+After 10-15 minutes, provide rubric-aligned feedback on their performance.
+```
+
+**Rubric:**
+| **Criterion** | **Points** | **Description** |
+|--------------|-----------|----------------|
+| **Revenue Sharing Mechanics** | 10 pts | Accurately explains how NHL revenue sharing works; identifies which streams are shared (50% national media, licensing) vs. local (tickets, sponsorship, local broadcast); calculates Canucks' net position (pay in vs. receive) |
+| **Use of Case Data** | 10 pts | References specific exhibits (Canucks financials, league revenue data, Canadian market characteristics); cites dollar figures, percentages, comparisons; uses data to support arguments |
+| **Stakeholder Awareness** | 5 pts | Acknowledges conflicting interests (small-market, large-market, Canadian teams); understands why Toronto/Montreal have different positions than Winnipeg; shows empathy for other perspectives while defending Canucks |
+| **Concrete Proposals** | 5 pts | Offers specific, actionable recommendations (not vague "we need more sharing"); proposals are defensible and address league-wide concerns; frames Canucks' interests as aligned with competitive balance |
+**Total:** 30 points
+
 **Design Rationale:**
-- **Infobox** frames the case and provides guiding questions (QM clear objectives)
+- **ⓘ Infobox** frames the case and provides guiding questions (QM clear objectives)
 - **Text** delivers the full case narrative (comprehensive context)
-- **Table** presents key data for analysis (structured information)
+- **▦ Table** presents key data for analysis (structured information)
 - **Multiple Details** layer supporting information without overwhelming (UDL progressive disclosure)
-- **Image** provides visual representation if helpful (UDL representation)
+- **▭ Image** provides visual representation if helpful (UDL representation)
 - Supports MLO 1.4 (analyze revenue sharing models) through authentic, complex case
 - Prepares students for executive case discussion and reflection memo (assessed later)
 
@@ -1483,14 +1829,16 @@ Title: Exhibit C: Canadian Market Characteristics
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
-| 2 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
-| 3 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
-| 4 | **AI Chat Widget** ○ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
+| 1 | **◆ Infobox (Insight)** ⬛ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
+| 2 | **🎭 AI Roleplay Exercise** ▣ Recommended | Practice pitch to private equity | Configure in Uplimit | Rehearse your investment recommendation before writing memo |
+| 2B | **▬ Text** ⬛ Required | PAIRR Feedback Instructions | Type directly | Peer and AI Review + Reflection workflow |
+| 3 | **▬ Text Response** ⬛ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
+| 4 | **▤ Details** ▢ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
+| 5 | **◈ AI Chat Widget** ▢ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
 
 ### Element 1: Infobox Content
 ```
-Title: ▪ Assessment: Revenue Ecosystem Reflection Memo
+Title: ✒ Assessment: Revenue Ecosystem Reflection Memo
 
 Task:
 Write a 1-page executive memo (max 500 words) analyzing the revenue ecosystem
@@ -1515,7 +1863,311 @@ You will be evaluated using the rubric below (30 points total).
 Submission: Use the text box below or upload a PDF.
 ```
 
-### Element 2: Text Response Question Configuration
+### Element 2: AI Roleplay Exercise - Private Equity Practice Pitch
+
+**Exercise Title:** "Private Equity Investment Pitch: Revenue Ecosystem Recommendation"
+
+**Student Instructions:**
+```markdown
+## Your Role
+You are a sports business consultant advising a private equity firm (Brookfield Capital) that's considering investing in a mid-market professional sports team. Before you submit your written memo, you'll present your investment recommendation orally to the Managing Partner.
+
+## The Scenario
+Sarah Chen, Managing Partner at Brookfield Capital, has asked you to present your findings on sports revenue ecosystems. She's evaluating whether to invest $500M-$1B in acquiring a team. This conversation happens BEFORE you write your final memo—it's your chance to test your arguments, receive feedback, and refine your thinking.
+
+Sarah is sophisticated but not a sports expert. She needs you to explain:
+- Why sports teams are unique investment opportunities (or risks)
+- Which revenue streams offer growth potential and which are saturated
+- The 2-3 factors that would most influence her investment decision
+- Whether revenue sharing models help or hurt potential returns
+
+## What to Have Ready
+Before starting this conversation, organize your thoughts on:
+- **The unique characteristics** of sport's revenue model (vs. traditional businesses)
+- **3 revenue streams you'll analyze** (e.g., media rights, ticketing, betting)
+- **2-3 investment factors** you'll recommend Sarah prioritize (e.g., "market size," "revenue sharing terms," "emerging stream potential")
+- **Evidence from the week**: Executive session insights, Canucks case data, Revenue Empire Builder lessons
+
+## Key Questions to Prepare For
+1. "Explain how sports revenue works differently than a hotel chain or restaurant group"
+2. "Which revenue stream has the most upside, and which is hitting a ceiling?"
+3. "Should I be worried about revenue sharing eating into returns?"
+4. "What are the 2-3 factors I should prioritize in my investment decision?"
+
+## Your Goal
+This is a rehearsal for your written memo. Use this conversation to:
+1. **Test your arguments**: See if your logic holds up under questioning
+2. **Refine your thinking**: Sarah will challenge weak points—listen and adjust
+3. **Practice executive communication**: Be concise, data-driven, and confident
+4. **Get feedback**: AI will provide rubric-aligned feedback you can use to improve your memo
+
+**Time:** 10-15 minutes | This is formative practice (not graded), but feedback will help you write a stronger memo.
+```
+
+**AI Character:** Sarah Chen, Managing Partner at Brookfield Capital (experienced private equity investor, data-driven, asks probing questions, no sports industry experience)
+
+**System Prompt:**
+```
+You are Sarah Chen, Managing Partner at Brookfield Capital, a private equity firm. You're evaluating whether to invest $500M-$1B in acquiring a mid-market professional sports team. You've hired a sports business consultant to advise you on revenue ecosystems.
+
+BACKGROUND: You're a seasoned PE investor with 15 years of experience in traditional industries (hospitality, real estate, retail). You understand business fundamentals but NOT sports-specific nuances. You're skeptical of "sports is different" claims unless backed by data. You ask tough, clarifying questions to test the consultant's expertise.
+
+CONVERSATION STRUCTURE:
+1. Opening (2 min): "Walk me through how sports revenue works. Why should I think about it differently than other businesses?"
+2. Revenue Streams (4-6 min): "Talk me through 3 revenue streams. Where's the growth? Where are the limits?"
+3. Investment Factors (3-4 min): "If you could only give me 2-3 factors to prioritize in my decision, what would they be and why?"
+4. Challenges (2 min): "What am I not seeing? What concerns should I have about this investment?"
+5. Closing (1 min): "Bottom line: Would you recommend I invest, and why?"
+
+EVIDENCE OF STRONG PERFORMANCE (reward these):
+- Clear explanation of sport's unique characteristics (ecosystem thinking, competitive balance, uncertainty of outcome)
+- Specific revenue stream analysis with growth projections and risks
+- Data-driven investment factors: "Media rights are 50% of revenue, but streaming disruption creates risk..."
+- Application of case evidence: "The Canucks case shows how revenue sharing protects downside risk..."
+- Executive communication: Concise, confident, uses analogies for complex concepts
+
+PROVIDE CONSTRUCTIVE FEEDBACK:
+- If vague: "That's interesting, but can you be more specific? What's the data?"
+- If jargon-heavy: "I'm not familiar with that term—can you explain it in plain language?"
+- If missing evidence: "How do you know that? What's your source?"
+- If strong: "That's a compelling point. Tell me more about [specific aspect]..."
+
+After 10-15 minutes, provide rubric-aligned feedback:
+- Clarity of revenue ecosystem explanation (How well did they explain sport's unique model?)
+- Quality of revenue stream analysis (Did they identify growth potential and risks?)
+- Strength of investment factors (Were their recommendations specific and defensible?)
+- Executive communication (Were they concise, confident, and data-driven?)
+
+Frame feedback as: "Here's what worked well... Here's where you can strengthen your written memo..."
+```
+
+**Rubric:**
+| **Criterion** | **Feedback Focus** | **What to Look For** |
+|--------------|-------------------|---------------------|
+| **Revenue Ecosystem Explanation** | Clarity & Depth | Did they explain how sport revenue differs from traditional business? (interdependence, competitive balance, shared economics) |
+| **Revenue Stream Analysis** | Specificity & Balance | Did they analyze 3 streams with growth potential AND risks? Used data/percentages? Showed trade-offs? |
+| **Investment Factors** | Actionable & Defensible | Were their 2-3 factors specific (not vague)? Backed by evidence? Framed as prioritization for investment decision? |
+| **Executive Communication** | Conciseness & Confidence | Were they concise (no rambling)? Used data to support claims? Handled challenges professionally? |
+
+**Note:** This is formative feedback (not graded). Students should use AI insights to strengthen their written memo before submission.
+
+---
+
+### Element 2B: PAIRR Feedback Instructions
+
+**Purpose:** Integrate Peer and AI Review + Reflection (PAIRR) methodology to develop critical evaluation skills, AI literacy, and improve writing quality through dual feedback sources.
+
+**Pedagogical Foundation:** Based on Frontiers in Communication research (2025) - PAIRR model promotes educational equity, AI literacy, and student writerly agency.
+
+**Implementation:** Copy the markdown below into Uplimit as a "Text" element between Element 2 (AI Roleplay) and Element 3 (Text Response).
+
+---
+
+**Copy this markdown into Uplimit:**
+
+```markdown
+# PAIRR Feedback Phase: Peer and AI Review + Reflection
+
+Before submitting your final memo, you'll receive feedback from TWO sources: a classmate and an AI writing assistant. Your task is to **critically evaluate both sources** and decide which feedback to apply.
+
+---
+
+## Step 1: Submit Your Draft (Due: [Date] by 11:59 PM)
+
+Upload your 80% complete draft to the shared Google Drive folder:
+- **Format:** Google Doc (enable "Commenting" permissions)
+- **Filename:** `YourLastName_ReflectionMemo_Draft.docx`
+- **Completeness:** Must have all major sections (not rough notes)
+
+**Draft Requirements:**
+- Revenue stream analysis (at least 3 streams)
+- Investment factors (2-3 specific recommendations)
+- Evidence from course content
+- Memo format (To/From/Date/Re)
+- 400-500 words (can expand to 500 in revision)
+
+---
+
+## Step 2A: Peer Review (Due: [Date] by 11:59 PM)
+
+You've been paired with a classmate (check announcement for your partner). Complete the structured peer review form for your partner's draft.
+
+**Access Peer Review Form:** [Link to Google Form or PDF]
+
+**Review Focus:**
+1. **Revenue Stream Analysis** (10 pts): Are 3+ streams analyzed? Do they show interdependencies?
+2. **Investment Factors** (10 pts): Are 2-3 factors specific and well-justified?
+3. **Application of Concepts** (5 pts): Do they reference executive session, readings, Canucks case?
+4. **Business Communication** (5 pts): Professional format? Clear? Within word limit?
+
+**Time Estimate:** 20-30 minutes
+
+**Reminder:** Be constructive and specific. Your goal is to help your peer improve their work.
+
+---
+
+## Step 2B: AI Feedback (Due: [Date] by 11:59 PM)
+
+Use an AI writing assistant (ChatGPT, Claude, or Gemini) to get feedback on the same draft you submitted for peer review.
+
+### AI Feedback Prompt Template
+
+**Copy this prompt into your AI tool (ChatGPT, Claude, etc.):**
+
+```
+You are a business writing coach evaluating a 1-page executive memo for an MBA course assignment. The assignment asks students to advise a private equity firm considering investing in a professional sports team, explaining the unique characteristics of sport's revenue model.
+
+RUBRIC CRITERIA (30 points total):
+1. Revenue Stream Analysis (10 pts): Accurately describes and analyzes at least 3 revenue streams. Demonstrates understanding of interdependencies and unique characteristics.
+2. Investment Factors (10 pts): Identifies 2-3 specific, well-justified factors that would influence investment decision. Factors are supported with evidence from course content.
+3. Application of Concepts (5 pts): Effectively applies concepts from executive session, readings, and case study. Makes relevant connections.
+4. Business Communication (5 pts): Professional memo format. Clear, concise writing. Appropriate tone for executive audience. Within 500-word limit.
+
+Please evaluate my draft memo against these criteria. For each criterion:
+- Identify what I did well (strengths)
+- Identify what could be improved (specific, actionable suggestions)
+- Estimate a score (Exceeds/Meets/Developing/Needs Improvement)
+
+Here is my draft:
+
+[PASTE YOUR DRAFT HERE]
+```
+
+**Important Instructions:**
+1. Use the EXACT prompt above (ensures consistent feedback)
+2. Copy the AI's response into a document for later comparison
+3. Take screenshots showing the AI conversation (for your reflection)
+
+**Time Estimate:** 5-10 minutes
+
+---
+
+## Step 3: Comparative Reflection (Due: [Date] by 11:59 PM)
+
+Now that you have feedback from BOTH sources, critically compare them.
+
+**Answer these questions in 150-200 words:**
+
+### Question 1: Feedback Quality Comparison
+- What did your peer reviewer notice that the AI missed?
+- What did the AI notice that your peer missed?
+- Were there areas where they disagreed? Which feedback seemed more accurate?
+
+### Question 2: Strengths and Limitations
+**Peer Feedback:**
+- Strength: [What was most valuable about peer feedback?]
+- Limitation: [What was missing or unclear?]
+
+**AI Feedback:**
+- Strength: [What was most valuable about AI feedback?]
+- Limitation: [What was inaccurate or generic?]
+
+### Question 3: Application Strategy
+- Which feedback will you prioritize in your revision? Why?
+- What criteria are you using to decide which suggestions to implement?
+- How does this exercise change how you'll use AI in future writing tasks?
+
+**Submit your reflection here:** [Link to submission box]
+
+---
+
+## Step 4: Revise Your Memo (Days 7-8)
+
+Apply the insights from BOTH feedback sources:
+
+**Revision Checklist:**
+- [ ] Addressed peer feedback on revenue stream analysis
+- [ ] Addressed AI feedback on business communication
+- [ ] Evaluated competing suggestions and chose best approach
+- [ ] Maintained executive memo format and tone
+- [ ] Stayed within 500-word limit
+- [ ] Cited course content appropriately
+
+**Tip:** You are NOT required to implement ALL suggestions. Use your judgment to prioritize changes that most improve your argument.
+
+---
+
+## Step 5: Post-Revision Reflection (Submit with final memo)
+
+After revising your memo, complete this brief reflection (100 words):
+
+**Prompt:**
+"Which feedback source (peer or AI) had the most influence on your revisions? Give 1-2 specific examples of changes you made based on each source. Did the comparative reflection process help you make better revision decisions than you would have with a single feedback source?"
+
+**Format:** Include this reflection as an addendum to your final memo submission (does not count toward 500-word limit).
+
+---
+
+## Grading
+
+**Final Memo:** 30 points (evaluated using original rubric criteria)
+
+**PAIRR Participation Bonus:** Up to 5 bonus points
+- Completed peer review form: 2 points
+- Obtained AI feedback (verified by screenshot): 1 point
+- Completed comparative reflection: 1 point
+- Completed post-revision reflection: 1 point
+
+**Total Possible:** 35 points (30 base + 5 bonus)
+
+---
+
+## Why PAIRR?
+
+**Prepares you for AI-integrated workplaces:**
+Sports marketing professionals increasingly use AI tools for content creation, fan engagement analysis, and campaign optimization. This exercise teaches you to:
+- Leverage AI for writing improvement (not replacement)
+- Critically evaluate AI output (it's not always right!)
+- Combine human insight with AI efficiency
+- Maintain your voice and strategic thinking
+
+**Benefits you'll experience:**
+1. **Multiple perspectives:** Peer sees reader experience; AI sees technical patterns
+2. **Critical thinking:** You decide what feedback is valid (not blindly accepting)
+3. **Better writing:** Two sources catch more issues than one
+4. **Workplace readiness:** Practice balancing AI assistance with human judgment
+
+**Research shows:** Students who use PAIRR write stronger final drafts than those who receive only peer feedback OR only AI feedback. The comparative reflection is the key—it develops your evaluation skills.
+```
+
+---
+
+**Instructor Implementation Notes for Element 2B:**
+
+**Setup Requirements:**
+1. Create shared Google Drive folder for draft submissions (or use Uplimit draft sharing feature)
+2. Randomly pair students for peer review (avoid self-selection bias)
+3. Provide peer review form link (use existing Week 1 protocol from `discussion-prompts-and-peer-review-protocols.md`)
+4. Create comparative reflection submission box (Google Form or Uplimit text response)
+
+**Timeline Announcement Template:**
+```
+PAIRR Timeline for Reflection Memo:
+- Day 1-3 (Mon-Wed): Draft development (80% complete)
+- Day 4 (Thu): Submit draft to Google Drive by 11:59 PM
+- Day 5 (Fri): Peer review pairings announced
+- Days 4-5 (Thu-Fri): Complete peer review + AI feedback
+- Day 6 (Sat): Submit comparative reflection by 11:59 PM
+- Days 7-8 (Sun-Mon): Revise based on feedback
+- Day 9 (Tue): Complete post-revision reflection
+- Day 10 (Wed): Final memo submission by 11:59 PM
+
+Bonus Points: Up to 5 points for full PAIRR participation!
+```
+
+**Grading Efficiency:**
+- Peer reviews: Spot-check 20% for quality (5 min each)
+- Comparative reflections: Quick scan for engagement (2 min each)
+- Post-revision reflections: Read with final memo (1 min each)
+- **Total added time:** ~2-3 hours for 30-student cohort
+
+**Support Materials:**
+- Detailed implementation guide: `modules/week1/storyboards/PAIRR-Workflow-Module6.md`
+- Existing peer review protocol: `modules/shared-resources/discussion-prompts-and-peer-review-protocols.md`
+
+---
+
+### Element 3: Text Response Question Configuration
 
 **Question Text:**
 ```
@@ -1531,12 +2183,12 @@ Reminder: Max 500 words, executive memo format
 **Additional Instructions:**
 ```
 Before submitting, check that you have:
-✓ Explained sport's unique revenue characteristics
-✓ Analyzed at least 3 revenue streams
-✓ Identified 2-3 investment decision factors
-✓ Applied concepts from this week's content
-✓ Used professional business writing (memo format)
-✓ Stayed within 500-word limit
+- Explained sport's unique revenue characteristics
+- Analyzed at least 3 revenue streams
+- Identified 2-3 investment decision factors
+- Applied concepts from this week's content
+- Used professional business writing (memo format)
+- Stayed within 500-word limit
 ```
 
 **Evaluation Method:** ✅ Rubric (AI-assisted grading enabled)
@@ -1636,7 +2288,7 @@ This material is foundational for the rest of the course. I'm here to help you
 master it.
 ```
 
-### Element 3: Details - Rubric Examples Content
+### Element 4: Details - Rubric Examples Content
 ```
 Title: Rubric Details & Example Excerpts
 
@@ -1691,22 +2343,24 @@ or deep supporting evidence."
 [Continue with remaining rubric criteria...]
 ```
 
-### Element 4: AI Chat Widget Configuration
+### Element 5: AI Chat Widget Configuration
 - **Widget Name:** "Writing Assistant"
 - **System Prompt:** "You are a helpful writing coach for MBA students. Provide feedback and suggestions on business memo writing, structure, and analysis. Do NOT write content for students. Instead, ask questions to help them clarify their thinking. Focus on: clear executive communication, logical argumentation, evidence-based reasoning, and concise writing. If students ask you to write their memo, redirect them to develop their own analysis with your guidance."
 - **Welcome Message:** "Need help with your reflection memo? I can help you organize your thoughts, strengthen your arguments, or improve your business writing. What would you like to work on?"
 - **Show System Prompt:** No
 
 **Design Rationale:**
+- **ⓘ Infobox** provides crystal-clear instructions and expectations (QM Standard 3)
+- **AI Roleplay** offers formative practice before summative assessment (UDL scaffolding, feedback for learning)
 - **Text Response with rubric** aligns assessment to Bloom's level (Analysis) and stated MLOs
-- **Infobox** provides crystal-clear instructions and expectations (QM Standard 3)
 - **Rubric** ensures transparent, consistent evaluation (QM Standard 3, UDL clarity)
 - **AI grading** enables timely feedback at scale while maintaining rigor
-- **Details** makes rubric fully transparent (students know exactly what's expected)
+- **▤ Details** makes rubric fully transparent (students know exactly what's expected)
 - **AI Chat** provides writing support without doing the work for students (UDL scaffolding)
 - Authentic task (executive memo to investors) connects to real-world practice
 - Word limit ensures concision (professional communication skill)
 - Measures all 4 MLOs (comprehensive assessment of Week 1 learning)
+- **Practice-before-performance model**: AI Roleplay (Element 2) lets students rehearse arguments and receive feedback before submitting final memo (Element 3)
 
 ---
 
@@ -1717,28 +2371,28 @@ or deep supporting evidence."
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Week 1 key takeaways | Type directly | Blue variant, summary |
-| 2 | **Text** ◐ Recommended | Connection to Group Marketing Project | Type directly | Link to final assessment |
-| 3 | **Text** ◐ Recommended | Preview of Week 2 content | Type directly | Build anticipation |
-| 4 | **Details** ○ Optional | Additional resources (optional) | Type directly | Optional extension reading |
+| 1 | **ⓘ Infobox (Callout)** ⬛ Required | Week 1 key takeaways | Type directly | Blue variant, summary |
+| 2 | **Text** ▣ Recommended | Connection to Group Marketing Project | Type directly | Link to final assessment |
+| 3 | **Text** ▣ Recommended | Preview of Week 2 content | Type directly | Build anticipation |
+| 4 | **▤ Details** ▢ Optional | Additional resources (optional) | Type directly | Optional extension reading |
 
 ### Element 1: Infobox Content
 ```
-Title: ◉ Week 1 Key Takeaways
+Title: ✦ Week 1 Key Takeaways
 
 You've completed your introduction to sport revenue ecosystems! Here's what you
 should take away:
 
-✓ Revenue streams are interdependent, not independent
-✓ Sport's business model is unique—competition on field, collaboration on economics
-✓ Revenue sharing creates competitive balance but constrains entrepreneurial upside
-✓ Growth opportunities exist at the frontier (betting, streaming, international)
+- Revenue streams are interdependent, not independent
+- Sport's business model is unique—competition on field, collaboration on economics
+- Revenue sharing creates competitive balance but constrains entrepreneurial upside
+- Growth opportunities exist at the frontier (betting, streaming, international)
 
 This foundation prepares you for Week 2, where we'll dive deep into media rights
 and fan engagement monetization—two of the highest-value and fastest-changing
 revenue streams.
 
-Well done! ✓
+Well done!
 ```
 
 ### Element 2: Text Content - Group Marketing Project Connection
@@ -1794,7 +2448,7 @@ Get ready for another intensive week of learning! See you in Week 2.
 
 ### Element 4: Details Content
 ```
-Title: 📚 Optional Extension Resources
+Title: Optional Extension Resources
 
 [Expand for additional reading and resources]
 
@@ -1824,10 +2478,10 @@ sport business, they're excellent resources.
 ```
 
 **Design Rationale:**
-- **Infobox** reinforces key concepts from week (repetition aids retention)
+- **ⓘ Infobox** reinforces key concepts from week (repetition aids retention)
 - **Project connection** shows relevance and application (UDL engagement, real-world purpose)
 - **Week 2 preview** builds anticipation and helps students prepare (scaffolding)
-- **Details** provides optional resources without overwhelming (UDL choice)
+- **▤ Details** provides optional resources without overwhelming (UDL choice)
 - Creates closure for Week 1 while launching into Week 2
 - Students leave with clear understanding of what they've learned and what's next
 

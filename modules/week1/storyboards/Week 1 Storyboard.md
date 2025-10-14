@@ -409,8 +409,11 @@ Let's see what you've got! ↓
 ### Element 6: Infobox - Results Interpretation & Learning Path
 ```
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 https://learn.ivey.ca/courses/6726
 =======
+=======
+>>>>>>> Stashed changes
 Title: ◆ What Your Pre-Assessment Results Mean
 
 **If you scored 0-3/10: "Revenue Newcomer"**
@@ -442,6 +445,9 @@ Impressive! You likely have sport business experience. Use this week to:
 
 **Remember:** This quiz isn't graded. It's a tool to help you learn efficiently.
 Now that you know where you stand, let's solve those revenue problems! ↓
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 ```
 

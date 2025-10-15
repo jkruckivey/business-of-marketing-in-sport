@@ -3,30 +3,18 @@
 
 **Uplimit Structure:** Final module in Unit 1
 
-| Order | Element | Content/Purpose | Source | Implementation Notes |
-|-------|---------|----------------|--------|---------------------|
-| 1 | **ⓘ Infobox (Callout)** ⬛ Required | Week 1 key takeaways | Type directly | Blue variant, summary |
-| 2 | **Text** ▣ Recommended | Connection to Group Marketing Project | Type directly | Link to final assessment |
-| 3 | **Text** ▣ Recommended | Preview of Week 2 content | Type directly | Build anticipation |
-| 4 | **▤ Details** ▢ Optional | Additional resources (optional) | Type directly | Optional extension reading |
+| Order | Element | Content/Purpose | Source | Priority | Time |
+|-------|---------|----------------|--------|----------|------|
+| 1 | **Infobox (Callout)** | Week 1 key takeaways | Type directly | ⬤ Required | 1 min |
+| 2 | **Text** | Connection to Group Marketing Project | Type directly | ◐ Recommended | 3 min |
+| 3 | **Text** | Preview of Week 2 content | Type directly | ◐ Recommended | 3 min |
+| 4 | **Details** | Additional resources (optional) | Type directly | ○ Optional | 5 min |
 
 ### Element 1: Infobox Content
 ```
-Title: ✦ Week 1 Key Takeaways
+Title: ◉ Week 1 Key Takeaways
 
-You've completed your introduction to sport revenue ecosystems! Here's what you
-should take away:
-
-- Revenue streams are interdependent, not independent
-- Sport's business model is unique—competition on field, collaboration on economics
-- Revenue sharing creates competitive balance but constrains entrepreneurial upside
-- Growth opportunities exist at the frontier (betting, streaming, international)
-
-This foundation prepares you for Week 2, where we'll dive deep into media rights
-and fan engagement monetization—two of the highest-value and fastest-changing
-revenue streams.
-
-Well done!
+You've completed your introduction to sport revenue ecosystems! The four critical insights: revenue streams are interdependent (not isolated), sport operates uniquely with on-field competition alongside economic collaboration, revenue sharing balances competitive equality against entrepreneurial constraints, and frontier opportunities exist in betting and streaming. This foundation prepares you for Week 2's deep dive into media rights and fan engagement monetization—two of the highest-value and fastest-changing revenue streams. Well done!
 ```
 
 ### Element 2: Text Content - Group Marketing Project Connection
@@ -112,10 +100,10 @@ sport business, they're excellent resources.
 ```
 
 **Design Rationale:**
-- **ⓘ Infobox** reinforces key concepts from week (repetition aids retention)
+- **Infobox** reinforces key concepts from week (repetition aids retention)
 - **Project connection** shows relevance and application (UDL engagement, real-world purpose)
 - **Week 2 preview** builds anticipation and helps students prepare (scaffolding)
-- **▤ Details** provides optional resources without overwhelming (UDL choice)
+- **Details** provides optional resources without overwhelming (UDL choice)
 - Creates closure for Week 1 while launching into Week 2
 - Students leave with clear understanding of what they've learned and what's next
 

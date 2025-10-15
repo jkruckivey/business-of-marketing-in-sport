@@ -45,45 +45,12 @@ Formative practice conversation (not graded)
 
 ### Tab 2: Scenario
 
-**Context (Visible to Students):**
-```markdown
-You are a sports business consultant advising Brookfield Capital, a private equity firm considering investing $500M-$1B in acquiring a mid-market professional sports team. Before you submit your written memo, you'll present your investment recommendation to Sarah Chen, the Managing Partner.
+**Context:**
+Brookfield Capital, a private equity firm, is considering investing $500M-$1B in acquiring a mid-market professional sports team. The firm's Managing Partner, Sarah Chen, has hired a sports business consultant to advise on the investment opportunity. The learner will present findings on sports revenue ecosystems, explaining why sports teams represent unique investment opportunities (or risks), identifying which revenue streams offer growth potential versus saturation, recommending 2-3 factors that would most influence the investment decision, and assessing whether revenue sharing models help or hurt potential returns. This is a formative practice conversation (not graded) designed to help the learner rehearse their arguments before writing a final memo.
 
-**Your Task:**
-Present your findings on sports revenue ecosystems to Sarah. She's evaluating whether to invest and needs you to explain:
-- Why sports teams are unique investment opportunities (or risks)
-- Which revenue streams offer growth potential and which are saturated
-- The 2-3 factors that would most influence her investment decision
-- Whether revenue sharing models help or hurt potential returns
+**Role of AI (Sarah Chen):** Sarah Chen is the Managing Partner at Brookfield Capital with 15 years of private equity experience in traditional industries (hospitality, real estate, retail). She understands business fundamentals but not sports-specific nuances, and she is sophisticated, data-driven, and skeptical of "sports is different" claims unless backed by data.
 
-**What to Have Ready:**
-Before starting this conversation, organize your thoughts on:
-- **The unique characteristics** of sport's revenue model (vs. traditional businesses)
-- **3 revenue streams you'll analyze** (e.g., media rights, ticketing, betting)
-- **2-3 investment factors** you'll recommend Sarah prioritize
-- **Evidence from the week**: Executive session insights, Canucks case data, Revenue Empire Builder lessons
-
-**Key Questions to Prepare For:**
-1. "Explain how sports revenue works differently than a hotel chain or restaurant group"
-2. "Which revenue stream has the most upside, and which is hitting a ceiling?"
-3. "Should I be worried about revenue sharing eating into returns?"
-4. "What are the 2-3 factors I should prioritize in my investment decision?"
-
-**Your Goal:**
-This is a rehearsal for your written memo. Use this conversation to:
-- Test your arguments and see if your logic holds up
-- Refine your thinking (Sarah will challenge weak points)
-- Practice executive communication (be concise, data-driven, confident)
-- Get feedback to improve your memo
-
-**Time:** 10-15 minutes | This is formative practice (not graded), but feedback will help you write a stronger memo.
-```
-
-**Name of AI:** Sarah Chen
-
-**Role of AI:** Managing Partner at Brookfield Capital, experienced private equity investor evaluating sports team acquisition
-
-**Role of Student:** Sports business consultant advising on revenue ecosystems
+**Role of Student:** The learner plays the role of a sports business consultant advising Brookfield Capital on revenue ecosystem analysis and investment recommendations.
 
 ---
 
@@ -139,52 +106,74 @@ You are Sarah Chen, Managing Partner at Brookfield Capital with 15 years of priv
 
 ### Tab 4: Criteria (Rubric)
 
-**Grading:** Formative feedback only (not scored)
-
-**Feedback Framework:**
-
-**Criterion 1: Revenue Ecosystem Explanation**
-- **Feedback Focus:** Clarity & Depth
-- **What to Look For:** Did they explain how sport revenue differs from traditional business? (interdependence, competitive balance, shared economics)
-- **Strong Performance:** Uses ecosystem thinking ("Media rights value depends on competitive talent distribution..."), explains unique characteristics clearly
-- **Needs Work:** Treats streams as independent silos, generic business language without sports-specific insights
-
-**Criterion 2: Revenue Stream Analysis**
-- **Feedback Focus:** Specificity & Balance
-- **What to Look For:** Did they analyze 3 streams with growth potential AND risks? Used data/percentages? Showed trade-offs?
-- **Strong Performance:** "Media rights generate 50% of revenue with 3-5% annual growth, but streaming disruption creates downside risk of 10-15%..."
-- **Needs Work:** Vague generalizations ("media is important"), no data, ignores risks or growth limits
-
-**Criterion 3: Investment Factors**
-- **Feedback Focus:** Actionable & Defensible
-- **What to Look For:** Were their 2-3 factors specific (not vague)? Backed by evidence? Framed as prioritization for investment decision?
-- **Strong Performance:** "Prioritize revenue sharing stability (protects downside) and emerging stream potential (captures upside)"
-- **Needs Work:** Generic factors ("market size"), no supporting evidence, not framed for PE decision-making
-
-**Criterion 4: Executive Communication**
-- **Feedback Focus:** Conciseness & Confidence
-- **What to Look For:** Were they concise (no rambling)? Used data to support claims? Handled challenges professionally?
-- **Strong Performance:** Direct answers, data-driven, responds to probing questions with additional evidence
-- **Needs Work:** Rambling, defensive when challenged, avoids data, uses filler language
+**Uplimit Configuration:**
+- ✅ Enable automated AI grading
+- ✅ Include evaluation levels
+- ⭕ Apply points (disabled - formative feedback only, not scored)
 
 ---
 
-**Feedback Template:**
+**CRITERION 1: Revenue Ecosystem Explanation**
 
-"Here's how your pitch performed:
+**Description:**
+Clearly explains how sports revenue differs from traditional business models.
 
-**What worked well:**
-[Specific strengths from conversation - e.g., 'Your explanation of revenue sharing's protective value was clear and data-driven']
+**Does not meet expectations:**
+The learner treats revenue streams as independent silos and uses generic business language without sports-specific insights about interdependence or competitive balance.
 
-**Where to strengthen your written memo:**
-[Specific improvements - e.g., 'Add more quantitative analysis to your media rights discussion—percentages and growth projections will strengthen your investment factors']
+**Partially meets expectations:**
+The learner acknowledges that sports revenue works differently but may not fully explain the ecosystem dynamics or may miss key unique characteristics like shared economics.
 
-**Key takeaways for your memo:**
-1. [Actionable improvement 1]
-2. [Actionable improvement 2]
-3. [Actionable improvement 3]
+**Fully meets expectations:**
+The learner uses ecosystem thinking to explain unique characteristics clearly, demonstrating how media rights value depends on competitive talent distribution and how revenue streams interconnect.
 
-This practice conversation should help you write a more compelling, evidence-based memo. Good luck!"
+---
+
+**CRITERION 2: Revenue Stream Analysis**
+
+**Description:**
+Analyzes multiple revenue streams with specificity, showing both growth potential and risks.
+
+**Does not meet expectations:**
+The learner provides vague generalizations about revenue streams without data, ignores risks, or fails to show trade-offs between growth and constraints.
+
+**Partially meets expectations:**
+The learner analyzes revenue streams with some specificity but may lack data/percentages or may focus only on growth without discussing risks and limits.
+
+**Fully meets expectations:**
+The learner analyzes 3+ streams with specific data and percentages, clearly articulates both growth potential and risks, and demonstrates understanding of trade-offs (e.g., "Media rights generate 50% of revenue with 3-5% annual growth, but streaming disruption creates downside risk").
+
+---
+
+**CRITERION 3: Investment Factors**
+
+**Description:**
+Identifies specific, actionable investment factors backed by evidence.
+
+**Does not meet expectations:**
+The learner provides generic factors without supporting evidence or fails to frame recommendations as prioritization for investment decision-making.
+
+**Partially meets expectations:**
+The learner identifies reasonable factors with some justification but may lack specificity or may not clearly frame how these factors guide investment decisions.
+
+**Fully meets expectations:**
+The learner identifies 2-3 specific, defensible factors backed by evidence and frames them as actionable priorities for investment decisions (e.g., "Prioritize revenue sharing stability to protect downside and emerging stream potential to capture upside").
+
+---
+
+**CRITERION 4: Executive Communication**
+
+**Description:**
+Communicates concisely and confidently with data-driven reasoning.
+
+**Does not meet expectations:**
+The learner rambles, avoids using data to support claims, or responds defensively when challenged on weak points.
+
+**Partially meets expectations:**
+The learner communicates reasonably well but may include some filler language, lack conciseness, or miss opportunities to support claims with data.
+
+**Fully meets expectations:**
+The learner provides direct, concise answers supported by data, responds to probing questions with additional evidence, and demonstrates confident executive communication style.
 
 ---
 
@@ -417,18 +406,20 @@ Bonus Points: Up to 5 points for full PAIRR participation!
 
 ### Element 3: Text Response Question Configuration
 
-**Question Text:**
+**Element Type:** Text Response (File upload enabled)
+
+---
+
+## UPLIMIT CONFIGURATION
+
+### Tab 1: Instructions
+
+**Question:**
 ```
 Submit your 1-page Revenue Ecosystem Reflection Memo here.
-
-You may either:
-• Type directly in the text box below, OR
-• Upload a PDF file
-
-Reminder: Max 500 words, executive memo format
 ```
 
-**Additional Instructions:**
+**Additional Instructions (optional):**
 ```
 Before submitting, check that you have:
 - Explained sport's unique revenue characteristics
@@ -439,102 +430,92 @@ Before submitting, check that you have:
 - Stayed within 500-word limit
 ```
 
-**Evaluation Method:** ✅ Rubric (AI-assisted grading enabled)
+**Template Upload:** No template provided
 
-**Rubric Criteria:**
+---
 
-| **Criterion** | **Points** | **Description** |
-|--------------|-----------|----------------|
-| **Revenue Stream Analysis** | 10 pts | Accurately describes and analyzes at least 3 revenue streams. Demonstrates understanding of interdependencies and unique characteristics. |
-| **Investment Factors** | 10 pts | Identifies 2-3 specific, well-justified factors that would influence investment decision. Factors are supported with evidence from course content. |
-| **Application of Concepts** | 5 pts | Effectively applies concepts from executive session, readings, and Canucks case. Makes relevant connections. |
-| **Business Communication** | 5 pts | Professional memo format. Clear, concise writing. Appropriate tone for executive audience. Within word limit. |
+### Tab 2: Criteria (Feedback Rubric)
 
-**Total:** 30 points
-
-**AI Grading Settings:**
+**Uplimit Configuration:**
 - ✅ Enable automated AI grading
-- ✅ Include evaluation levels (Excellent / Proficient / Developing / Needs Improvement)
-- ✅ Apply points (30 total)
+- ✅ Include evaluation levels
+- ✅ Apply points (30 points total)
 
-**Feedback Templates:**
+---
 
-**After Submission (All Students):**
-```
-Thank you for submitting your Revenue Ecosystem Reflection Memo. Your work will
-be evaluated against the rubric criteria. You should receive feedback within
-[X days].
+**CRITERION 1: Revenue Stream Analysis**
 
-In the meantime:
-• Review the case study again with your analysis in mind
-• Prepare questions for the executive case discussion
-• Begin thinking about how revenue strategy connects to the marketing plan you'll
-  develop for your Group Marketing Project
-```
+**Points:** 10
 
-**Feedback for Excellent Work (27-30 points):**
-```
-Excellent analysis! Your memo demonstrates strong understanding of sport's revenue
-ecosystem and applies course concepts effectively. Your investment factors are
-well-reasoned and supported with evidence.
+**Description:**
+Accurately describes and analyzes at least 3 revenue streams with understanding of interdependencies.
 
-Strengths: [AI-generated specific feedback]
+**Does not meet expectations:**
+The learner analyzes fewer than 3 streams, provides minimal analysis, or treats streams as independent silos without showing interdependencies.
 
-Consider: [AI-generated growth opportunity]
+**Partially meets expectations:**
+The learner analyzes 3 streams but may lack depth or miss some key interdependencies and unique characteristics.
 
-This level of analysis will serve you well in the executive case discussion and
-your Group Marketing Project.
-```
+**Fully meets expectations:**
+The learner accurately describes and analyzes 3+ revenue streams, demonstrating clear understanding of interdependencies and unique characteristics of sport's revenue model.
 
-**Feedback for Proficient Work (21-26 points):**
-```
-Proficient work. Your memo shows good understanding of revenue streams and makes
-relevant investment recommendations.
+---
 
-Strengths: [AI-generated specific feedback]
+**CRITERION 2: Investment Factors**
 
-To strengthen your analysis:
-[AI-generated improvement suggestions, may include:]
-• Explore the interdependencies between revenue streams more deeply
-• Provide more specific evidence from the Canucks case
-• Sharpen your investment factors with quantitative reasoning
+**Points:** 10
 
-Review [specific content] before the executive case discussion.
-```
+**Description:**
+Identifies 2-3 specific, well-justified investment decision factors supported by evidence.
 
-**Feedback for Developing Work (15-20 points):**
-```
-Your memo demonstrates developing understanding of sport revenue ecosystems.
-There are opportunities to strengthen your analysis.
+**Does not meet expectations:**
+The learner provides generic or vague factors without supporting evidence from course content, or identifies fewer than 2 factors.
 
-[AI-generated specific feedback on gaps]
+**Partially meets expectations:**
+The learner identifies 2-3 reasonable factors with some justification but may lack specificity or full support from course evidence.
 
-To improve:
-• Re-watch key sections of the executive session [timestamps]
-• Revisit the revenue streams reading, focusing on interdependencies
-• Study the Canucks case Exhibit B for data-driven insights
-• Consider office hours for one-on-one support
+**Fully meets expectations:**
+The learner identifies 2-3 specific, defensible factors that would influence investment decision, clearly supported with evidence from course content.
 
-This foundational understanding is critical for upcoming modules. Let's make
-sure you're solid on these concepts.
-```
+---
 
-**Feedback for Needs Improvement Work (<15 points):**
-```
-Your submission shows you're still building understanding of sport revenue models.
-Let's work together to strengthen your foundation.
+**CRITERION 3: Application of Concepts**
 
-[AI-generated specific gaps identified]
+**Points:** 5
 
-Required next steps:
-• Schedule office hours to discuss revenue ecosystem concepts
-• Re-engage with the Revenue Empire Builder activity (with AI assistant)
-• Review the Canucks case with a study group
-• Resubmit a revised memo by [date] for re-evaluation
+**Description:**
+Effectively applies concepts from executive session, readings, and case study.
 
-This material is foundational for the rest of the course. I'm here to help you
-master it.
-```
+**Does not meet expectations:**
+The learner makes minimal or no reference to course content, relying primarily on general business knowledge.
+
+**Partially meets expectations:**
+The learner applies some course concepts but may miss opportunities to make deeper connections or reference specific case data.
+
+**Fully meets expectations:**
+The learner effectively applies concepts from executive session, readings, and Canucks case, making relevant and specific connections.
+
+---
+
+**CRITERION 4: Business Communication**
+
+**Points:** 5
+
+**Description:**
+Professional memo format with clear, concise writing appropriate for executive audience.
+
+**Does not meet expectations:**
+The learner does not use memo format, exceeds word limit significantly, or uses unclear/unprofessional communication style.
+
+**Partially meets expectations:**
+The learner uses memo format but may have minor formatting issues, slightly exceed word limit, or have some clarity issues.
+
+**Fully meets expectations:**
+The learner uses professional memo format, writes clearly and concisely with appropriate tone for executive audience, and stays within 500-word limit.
+
+---
+
+**Total Points:** 30
 
 ### Element 4: Details - Rubric Examples Content
 ```

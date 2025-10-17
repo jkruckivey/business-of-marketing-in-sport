@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FanDuel Competitive Analysis Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            color: var(--color-neutral-600);
+            margin-bottom: 2rem;
+        }
+
+        .controls {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .control-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.5rem;
+        }
+
+        select {
+            width: 100%;
+            padding: 0.625rem;
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+            font-family: 'Geist', sans-serif;
+            font-size: 0.875rem;
+            color: var(--color-neutral-900);
+            background: white;
+            transition: all 0.2s ease;
+        }
+
+        select:hover {
+            border-color: var(--color-neutral-400);
+        }
+
+        select:focus {
+            outline: none;
+            border-color: var(--color-neutral-900);
+            box-shadow: 0 0 0 3px var(--color-neutral-100);
+        }
+
+        .chart-container {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            height: 500px;
+        }
+
+        .scorecard {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .scorecard h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+        }
+
+        .scorecard-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .scorecard-table th,
+        .scorecard-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-neutral-200);
+            font-size: 0.875rem;
+        }
+
+        .scorecard-table th {
+            font-weight: 600;
+            color: var(--color-neutral-700);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        .scorecard-table td {
+            color: var(--color-neutral-900);
+        }
+
+        .scorecard-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .operator-a {
+            color: var(--color-neutral-700);
+            font-weight: 500;
+        }
+
+        .operator-b {
+            color: var(--color-neutral-600);
+            font-weight: 500;
+        }
+
+        .insights {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .insights h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+        }
+
+        .insight-section {
+            margin-bottom: 1rem;
+        }
+
+        .insight-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .insight-section h4 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-neutral-800);
+            margin-bottom: 0.5rem;
+        }
+
+        .insight-section p {
+            font-size: 0.875rem;
+            color: var(--color-neutral-700);
+            line-height: 1.5;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+        }
+
+        button {
+            padding: 0.625rem 1.25rem;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Geist', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: var(--color-neutral-900);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--color-neutral-800);
+        }
+
+        .btn-primary:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--color-neutral-300);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-neutral-900);
+            border: 1px solid var(--color-neutral-300);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-neutral-50);
+            border-color: var(--color-neutral-400);
+        }
+
+        .btn-secondary:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--color-neutral-200);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .control-group {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .chart-container {
+                height: 400px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FanDuel Competitive Analysis Tool</h1>
+        <p class="subtitle">Compare operators across 8 competitive dimensions using 2024 industry data</p>
+
+        <div class="controls">
+            <div class="control-group">
+                <div>
+                    <label for="operatorA">Operator A</label>
+                    <select id="operatorA" aria-describedby="operatorA-desc">
+                        <option value="FanDuel">FanDuel</option>
+                        <option value="DraftKings">DraftKings</option>
+                        <option value="BetMGM">BetMGM</option>
+                        <option value="Caesars">Caesars</option>
+                        <option value="ESPN Bet">ESPN Bet</option>
+                        <option value="Fanatics">Fanatics</option>
+                    </select>
+                    <span id="operatorA-desc" class="sr-only">Select first operator to compare</span>
+                </div>
+
+                <div>
+                    <label for="operatorB">Operator B</label>
+                    <select id="operatorB" aria-describedby="operatorB-desc">
+                        <option value="FanDuel">FanDuel</option>
+                        <option value="DraftKings" selected>DraftKings</option>
+                        <option value="BetMGM">BetMGM</option>
+                        <option value="Caesars">Caesars</option>
+                        <option value="ESPN Bet">ESPN Bet</option>
+                        <option value="Fanatics">Fanatics</option>
+                    </select>
+                    <span id="operatorB-desc" class="sr-only">Select second operator to compare</span>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-primary" onclick="updateComparison()">Update Comparison</button>
+                <button class="btn-secondary" onclick="copyToClipboard()">📋 Copy Analysis</button>
+                <button class="btn-secondary" onclick="exportPlainText()">📄 Download Text</button>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="radarChart" role="img" aria-label="Radar chart comparing operators across 8 dimensions"></canvas>
+        </div>
+
+        <div class="scorecard">
+            <h3>Competitive Scorecard</h3>
+            <table class="scorecard-table" role="table">
+                <thead>
+                    <tr>
+                        <th>Dimension</th>
+                        <th id="scoreA" class="operator-a">FanDuel</th>
+                        <th id="scoreB" class="operator-b">DraftKings</th>
+                    </tr>
+                </thead>
+                <tbody id="scorecardBody">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="insights">
+            <h3>Competitive Analysis</h3>
+            <div id="insightsContent">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Operator data (2024 industry reports + case study)
+        const operatorData = {
+            'FanDuel': {
+                'Market Share': 45,
+                'App Rating': 94, // 4.7/5 = 94%
+                'Promo Spend': 70, // $420/$600 max = 70%
+                'Partnerships': 100, // 5 major = 100%
+                'State Coverage': 100, // 32/32 available = 100%
+                'Product Breadth': 100, // 200+ bet types = 100%
+                'Live Betting': 100, // 5/5 rating = 100%
+                'Brand Power': 100 // 5/5 = 100%
+            },
+            'DraftKings': {
+                'Market Share': 25,
+                'App Rating': 90, // 4.5/5 = 90%
+                'Promo Spend': 65, // $390/$600 = 65%
+                'Partnerships': 100, // 5 major = 100%
+                'State Coverage': 94, // 30/32 = 94%
+                'Product Breadth': 90, // 180/200 = 90%
+                'Live Betting': 80, // 4/5 = 80%
+                'Brand Power': 100 // 5/5 = 100%
+            },
+            'BetMGM': {
+                'Market Share': 12,
+                'App Rating': 86, // 4.3/5 = 86%
+                'Promo Spend': 58, // $350/$600 = 58%
+                'Partnerships': 80, // 4 major = 80%
+                'State Coverage': 88, // 28/32 = 88%
+                'Product Breadth': 80, // 160/200 = 80%
+                'Live Betting': 80, // 4/5 = 80%
+                'Brand Power': 80 // 4/5 = 80%
+            },
+            'Caesars': {
+                'Market Share': 10,
+                'App Rating': 82, // 4.1/5 = 82%
+                'Promo Spend': 62, // $370/$600 = 62%
+                'Partnerships': 60, // 3 major = 60%
+                'State Coverage': 91, // 29/32 = 91%
+                'Product Breadth': 75, // 150/200 = 75%
+                'Live Betting': 60, // 3/5 = 60%
+                'Brand Power': 90 // 4.5/5 = 90% (casino brand)
+            },
+            'ESPN Bet': {
+                'Market Share': 5,
+                'App Rating': 76, // 3.8/5 = 76%
+                'Promo Spend': 100, // $600+/600 = 100% (new entrant)
+                'Partnerships': 20, // 1 major (ESPN) = 20%
+                'State Coverage': 56, // 18/32 = 56%
+                'Product Breadth': 70, // 140/200 = 70%
+                'Live Betting': 60, // 3/5 = 60%
+                'Brand Power': 100 // 5/5 (ESPN) = 100%
+            },
+            'Fanatics': {
+                'Market Share': 3,
+                'App Rating': 72, // 3.6/5 = 72%
+                'Promo Spend': 100, // $600+/600 = 100% (new entrant)
+                'Partnerships': 40, // 2 major = 40%
+                'State Coverage': 31, // 10/32 = 31%
+                'Product Breadth': 65, // 130/200 = 65%
+                'Live Betting': 40, // 2/5 = 40%
+                'Brand Power': 70 // 3.5/5 = 70%
+            }
+        };
+
+        // Raw metric values for scorecard
+        const rawMetrics = {
+            'FanDuel': {
+                'Market Share': '45%',
+                'App Rating': '4.7/5',
+                'Promo Spend': '$420',
+                'Partnerships': '5 major',
+                'State Coverage': '32 states',
+                'Product Breadth': '200+ types',
+                'Live Betting': '5/5',
+                'Brand Power': '5/5'
+            },
+            'DraftKings': {
+                'Market Share': '25%',
+                'App Rating': '4.5/5',
+                'Promo Spend': '$390',
+                'Partnerships': '5 major',
+                'State Coverage': '30 states',
+                'Product Breadth': '180+ types',
+                'Live Betting': '4/5',
+                'Brand Power': '5/5'
+            },
+            'BetMGM': {
+                'Market Share': '12%',
+                'App Rating': '4.3/5',
+                'Promo Spend': '$350',
+                'Partnerships': '4 major',
+                'State Coverage': '28 states',
+                'Product Breadth': '160+ types',
+                'Live Betting': '4/5',
+                'Brand Power': '4/5'
+            },
+            'Caesars': {
+                'Market Share': '10%',
+                'App Rating': '4.1/5',
+                'Promo Spend': '$370',
+                'Partnerships': '3 major',
+                'State Coverage': '29 states',
+                'Product Breadth': '150+ types',
+                'Live Betting': '3/5',
+                'Brand Power': '4.5/5'
+            },
+            'ESPN Bet': {
+                'Market Share': '5%',
+                'App Rating': '3.8/5',
+                'Promo Spend': '$600+',
+                'Partnerships': '1 major',
+                'State Coverage': '18 states',
+                'Product Breadth': '140+ types',
+                'Live Betting': '3/5',
+                'Brand Power': '5/5'
+            },
+            'Fanatics': {
+                'Market Share': '3%',
+                'App Rating': '3.6/5',
+                'Promo Spend': '$600+',
+                'Partnerships': '2 major',
+                'State Coverage': '10 states',
+                'Product Breadth': '130+ types',
+                'Live Betting': '2/5',
+                'Brand Power': '3.5/5'
+            }
+        };
+
+        let chart;
+
+        function initChart() {
+            const ctx = document.getElementById('radarChart').getContext('2d');
+            const operatorA = document.getElementById('operatorA').value;
+            const operatorB = document.getElementById('operatorB').value;
+
+            const dimensions = Object.keys(operatorData[operatorA]);
+
+            if (chart) {
+                chart.destroy();
+            }
+
+            chart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: dimensions,
+                    datasets: [
+                        {
+                            label: operatorA,
+                            data: Object.values(operatorData[operatorA]),
+                            borderColor: 'rgba(64, 64, 64, 1)',
+                            backgroundColor: 'rgba(64, 64, 64, 0.2)',
+                            borderWidth: 2,
+                            pointBackgroundColor: 'rgba(64, 64, 64, 1)',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: 'rgba(64, 64, 64, 1)'
+                        },
+                        {
+                            label: operatorB,
+                            data: Object.values(operatorData[operatorB]),
+                            borderColor: 'rgba(163, 163, 163, 1)',
+                            backgroundColor: 'rgba(163, 163, 163, 0.2)',
+                            borderWidth: 2,
+                            pointBackgroundColor: 'rgba(163, 163, 163, 1)',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: 'rgba(163, 163, 163, 1)'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            min: 0,
+                            max: 100,
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 20,
+                                font: {
+                                    family: "'Geist', sans-serif",
+                                    size: 11
+                                },
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-600').trim()
+                            },
+                            grid: {
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-200').trim()
+                            },
+                            angleLines: {
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-200').trim()
+                            },
+                            pointLabels: {
+                                font: {
+                                    family: "'Geist', sans-serif",
+                                    size: 12,
+                                    weight: '500'
+                                },
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-900').trim()
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                font: {
+                                    family: "'Geist', sans-serif",
+                                    size: 14,
+                                    weight: '500'
+                                },
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-900').trim(),
+                                padding: 20,
+                                usePointStyle: true
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-900').trim(),
+                            titleFont: {
+                                family: "'Geist', sans-serif",
+                                size: 13,
+                                weight: '600'
+                            },
+                            bodyFont: {
+                                family: "'Geist', sans-serif",
+                                size: 12
+                            },
+                            padding: 12,
+                            displayColors: true,
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.parsed.r + '/100';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateScorecard() {
+            const operatorA = document.getElementById('operatorA').value;
+            const operatorB = document.getElementById('operatorB').value;
+
+            document.getElementById('scoreA').textContent = operatorA;
+            document.getElementById('scoreB').textContent = operatorB;
+
+            const dimensions = Object.keys(rawMetrics[operatorA]);
+            const tbody = document.getElementById('scorecardBody');
+            tbody.innerHTML = '';
+
+            dimensions.forEach(dimension => {
+                const row = tbody.insertRow();
+                row.innerHTML = `
+                    <td><strong>${dimension}</strong></td>
+                    <td class="operator-a">${rawMetrics[operatorA][dimension]}</td>
+                    <td class="operator-b">${rawMetrics[operatorB][dimension]}</td>
+                `;
+            });
+        }
+
+        function generateInsights() {
+            const operatorA = document.getElementById('operatorA').value;
+            const operatorB = document.getElementById('operatorB').value;
+
+            const dataA = operatorData[operatorA];
+            const dataB = operatorData[operatorB];
+
+            // Find strengths for each operator
+            const dimensions = Object.keys(dataA);
+            const advantagesA = [];
+            const advantagesB = [];
+
+            dimensions.forEach(dim => {
+                if (dataA[dim] > dataB[dim] + 5) { // 5-point threshold
+                    advantagesA.push(dim);
+                } else if (dataB[dim] > dataA[dim] + 5) {
+                    advantagesB.push(dim);
+                }
+            });
+
+            // Generate insights
+            let insights = `
+                <div class="insight-section">
+                    <h4>${operatorA} Competitive Advantages</h4>
+                    <p>${advantagesA.length > 0 ?
+                        `${operatorA} leads in: ${advantagesA.join(', ')}. ` + getStrategicContext(operatorA, advantagesA) :
+                        `${operatorA} and ${operatorB} are closely matched across most dimensions.`}
+                    </p>
+                </div>
+
+                <div class="insight-section">
+                    <h4>${operatorB} Competitive Advantages</h4>
+                    <p>${advantagesB.length > 0 ?
+                        `${operatorB} leads in: ${advantagesB.join(', ')}. ` + getStrategicContext(operatorB, advantagesB) :
+                        `${operatorB} has parity with ${operatorA} in most competitive areas.`}
+                    </p>
+                </div>
+
+                <div class="insight-section">
+                    <h4>Strategic Recommendation</h4>
+                    <p>${getRecommendation(operatorA, operatorB, dataA, dataB)}</p>
+                </div>
+
+                <div class="insight-section">
+                    <h4>Case Study Connection</h4>
+                    <p>${getCaseConnection(operatorA, operatorB)}</p>
+                </div>
+            `;
+
+            document.getElementById('insightsContent').innerHTML = insights;
+        }
+
+        function getStrategicContext(operator, advantages) {
+            const contexts = {
+                'FanDuel': {
+                    'Market Share': 'This dominance stems from first-mover advantage post-PASPA and aggressive NFL/NBA partnerships.',
+                    'App Rating': 'Superior UX reflects years of refinement from daily fantasy sports (DFS) era.',
+                    'Partnerships': 'Exclusive PGA and NASCAR deals plus shared NFL/NBA give unmatched league portfolio.'
+                },
+                'DraftKings': {
+                    'Partnerships': 'MLB exclusive plus NFL/NBA shared creates strong sports coverage.',
+                    'Product Breadth': 'DFS integration provides unique betting options competitors lack.',
+                    'State Coverage': 'Early regulatory compliance in key states built infrastructure advantage.'
+                },
+                'BetMGM': {
+                    'Brand Power': 'MGM casino brand provides instant credibility with traditional gamblers.',
+                    'Promo Spend': 'Lower CAC via casino cross-sell reduces reliance on paid marketing.'
+                },
+                'Caesars': {
+                    'State Coverage': 'Existing casino relationships accelerated state-by-state launches.',
+                    'Brand Power': 'Caesars Rewards loyalty program drives retention.'
+                },
+                'ESPN Bet': {
+                    'Brand Power': 'ESPN media integration provides unmatched brand recognition.',
+                    'Promo Spend': 'Penn Entertainment backing enables aggressive customer acquisition.'
+                },
+                'Fanatics': {
+                    'Brand Power': 'Merchandise platform enables unique fan engagement model.',
+                    'Promo Spend': 'Late entrant compensating with high promotional bonuses.'
+                }
+            };
+
+            return advantages.map(adv => contexts[operator]?.[adv] || '').filter(Boolean).join(' ') ||
+                   'These strengths position them competitively in specific market segments.';
+        }
+
+        function getRecommendation(opA, opB, dataA, dataB) {
+            const avgA = Object.values(dataA).reduce((a, b) => a + b) / Object.values(dataA).length;
+            const avgB = Object.values(dataB).reduce((a, b) => a + b) / Object.values(dataB).length;
+
+            if (avgA > avgB + 10) {
+                return `${opA} holds a clear competitive advantage (${Math.round(avgA)}% vs ${Math.round(avgB)}% average). Their dominance in Market Share and App Rating creates network effects that are difficult for ${opB} to overcome. Recommended strategy for ${opB}: Focus on niche differentiation rather than head-to-head competition.`;
+            } else if (avgB > avgA + 10) {
+                return `${opB} holds a clear competitive advantage (${Math.round(avgB)}% vs ${Math.round(avgA)}% average). ${opA} needs to invest in areas where ${opB} leads to remain competitive.`;
+            } else {
+                return `${opA} and ${opB} are closely matched (${Math.round(avgA)}% vs ${Math.round(avgB)}% average). Competition will be won through execution excellence, partnership strategy, and customer retention rather than product superiority. Both operators should focus on exclusive partnerships and state-by-state market share gains.`;
+            }
+        }
+
+        function getCaseConnection(opA, opB) {
+            if (opA === 'FanDuel' || opB === 'FanDuel') {
+                return `Per case Exhibit 3, FanDuel's 45% market share came from aggressive partnerships (NFL $55M/year, NBA $40M/year) that drove $152 CAC vs. $400 industry average. Their advantage in Market Share and Partnerships validates the case study's central argument: strategic partnerships deliver measurable ROI through lower customer acquisition costs.`;
+            }
+            return `The case study shows FanDuel captured 45% share through partnerships. This comparison reveals how competing operators must differentiate: ${opA} and ${opB} compete by focusing on ${opA === 'ESPN Bet' || opB === 'ESPN Bet' ? 'media integration' : opA === 'BetMGM' || opB === 'BetMGM' ? 'casino cross-sell' : 'product innovation'} rather than matching FanDuel's partnership portfolio dollar-for-dollar.`;
+        }
+
+        function updateComparison() {
+            initChart();
+            updateScorecard();
+            generateInsights();
+        }
+
+        function copyToClipboard() {
+            const operatorA = document.getElementById('operatorA').value;
+            const operatorB = document.getElementById('operatorB').value;
+
+            const dimensions = Object.keys(rawMetrics[operatorA]);
+            let scorecardText = '';
+
+            dimensions.forEach(dimension => {
+                scorecardText += `${dimension}:\n`;
+                scorecardText += `  ${operatorA}: ${rawMetrics[operatorA][dimension]}\n`;
+                scorecardText += `  ${operatorB}: ${rawMetrics[operatorB][dimension]}\n\n`;
+            });
+
+            const insightsText = document.getElementById('insightsContent').innerText;
+
+            const copyText = `
+FANDUEL COMPETITIVE ANALYSIS
+${operatorA} vs. ${operatorB}
+
+COMPETITIVE SCORECARD
+=====================
+${scorecardText}
+
+STRATEGIC ANALYSIS
+==================
+${insightsText}
+
+---
+Generated by: FanDuel Competitive Analysis Tool
+Use this data in your FanDuel case analysis (Module 4)
+`;
+
+            navigator.clipboard.writeText(copyText).then(() => {
+                alert('✓ Analysis copied to clipboard! Paste into your case analysis document.');
+            }).catch(err => {
+                console.error('Copy failed:', err);
+                alert('Copy failed. Please manually copy the analysis from the page.');
+            });
+        }
+
+        function exportPlainText() {
+            const operatorA = document.getElementById('operatorA').value;
+            const operatorB = document.getElementById('operatorB').value;
+
+            const timestamp = new Date().toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            const dimensions = Object.keys(rawMetrics[operatorA]);
+            let scorecardText = '';
+
+            dimensions.forEach(dimension => {
+                const paddedDim = dimension.padEnd(18, ' ');
+                const valA = String(rawMetrics[operatorA][dimension]).padEnd(15, ' ');
+                const valB = rawMetrics[operatorB][dimension];
+                scorecardText += `${paddedDim} ${valA} ${valB}\n`;
+            });
+
+            const insightsText = document.getElementById('insightsContent').innerText;
+
+            const plainText = `
+================================================================================
+FANDUEL COMPETITIVE ANALYSIS
+${operatorA} vs. ${operatorB}
+Generated: ${timestamp}
+================================================================================
+
+COMPETITIVE SCORECARD
+────────────────────────────────────────────────────────────────────────────
+
+Dimension          ${operatorA.padEnd(15, ' ')} ${operatorB}
+─────────────────  ───────────────  ───────────────
+${scorecardText}
+
+STRATEGIC INSIGHTS
+────────────────────────────────────────────────────────────────────────────
+
+${insightsText}
+
+
+HOW TO USE THIS ANALYSIS
+────────────────────────────────────────────────────────────────────────────
+
+This competitive analysis supports your FanDuel case study (Module 4). Use this
+data to:
+
+1. Compare FanDuel's competitive positioning vs. key rivals
+2. Identify strategic advantages and vulnerabilities
+3. Support your partnership valuation recommendations
+4. Reference specific metrics in your case analysis memo
+
+Attach this analysis as an appendix to your case submission (doesn't count
+toward page limit).
+
+
+================================================================================
+Generated by: FanDuel Competitive Analysis Tool
+Course: Business of Sports Marketing - Week 3, Module 4
+================================================================================
+`;
+
+            const blob = new Blob([plainText], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `competitive-analysis-${operatorA}-vs-${operatorB}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('✓ Text file downloaded! Open in Notepad/TextEdit to view the full analysis.');
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateComparison();
+
+            document.getElementById('operatorA').addEventListener('change', updateComparison);
+            document.getElementById('operatorB').addEventListener('change', updateComparison);
+        });
+    </script>
+</body>
+</html>

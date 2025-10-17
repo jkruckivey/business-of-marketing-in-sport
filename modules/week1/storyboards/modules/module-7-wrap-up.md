@@ -1,4 +1,4 @@
-## MODULE 7: Wrap-Up & Preview
+## MODULE 7: Wrap-Up & Preview (BOPPPS: Summary)
 **Purpose:** Consolidate Week 1 learning, preview Week 2
 
 **Uplimit Structure:** Final module in Unit 1
@@ -7,7 +7,7 @@
 |-------|---------|----------------|--------|----------|------|
 | 1 | **Infobox (Callout)** | Week 1 key takeaways | Type directly | ⬤ Required | 1 min |
 | 2 | **Text** | Connection to Group Marketing Project | Type directly | ◐ Recommended | 3 min |
-| 3 | **Text** | Preview of Week 2 content | Type directly | ◐ Recommended | 3 min |
+| 3 | **Text** | Week 1 complete + Week 2 preview | Type directly | ⬤ Required | 4 min |
 | 4 | **Details** | Additional resources (optional) | Type directly | ○ Optional | 5 min |
 
 ### Element 1: Infobox Content
@@ -41,29 +41,45 @@ Start thinking about project teams and organization selection. More details in
 the Project Guide (available on course homepage).
 ```
 
-### Element 3: Text Content - Week 2 Preview
-```
+### Element 3: Text Content - Week 1 Complete + Week 2 Preview
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+## Congratulations! Week 1 is Complete.
+
+You've traveled from the Connor McDavid paradox to mastering revenue ecosystem analysis. You explored five revenue streams through interactive discovery, built your own strategic portfolio, analyzed the Vancouver Canucks' real challenges, and demonstrated your learning through a comprehensive reflection memo.
+
+**Your Week 1 Journey:**
+- Module 0: Hooked by the $100M question
+- Module 1: Established learning outcomes
+- Module 2: Heard expert perspective
+- Module 3: Discovered revenue streams through 8 interactive widgets
+- Module 4: Built your own revenue empire strategy
+- Module 5: Analyzed the Canucks case
+- Module 6: Synthesized learning in reflection memo
+- Module 7: Consolidated takeaways and previewed Week 2
+
+---
+
 ## Looking Ahead: Week 2 - Media, Content & Fan Engagement
 
 Next week, we go deep on the largest and most dynamic revenue stream: media rights.
 
-You'll explore:
+**You'll explore:**
 • How media rights are valued and negotiated
 • The shift from traditional broadcasting to streaming
 • Fan engagement strategies and monetization
-• Major deals analysis (e.g., Rogers/NHL $5.2 billion)
+• Major deals analysis (Rogers/NHL $5.2 billion)
 
-Executive Leader: [Name, Title]
-Core Case: Rogers Communications and the NHL Rights Deal
+**Executive Leader:** [Name, Title]
+**Core Case:** Rogers Communications and the NHL Rights Deal
 
 **PLUS: Anchor Project Launch!** ◉
-Week 2 marks the beginning of your course-long Anchor Project (60% of final grade).
-You'll form teams of 5-6 students and select a sport property to analyze over the
-remaining weeks. Start thinking about potential teammates and organizations that
-interest you!
+Week 2 marks the beginning of your course-long Anchor Project (60% of final grade). You'll form teams of 5-6 students and select a sport property to analyze over the remaining weeks. Start thinking about potential teammates and organizations that interest you!
 
-**Estimated Time Commitment:** Week 2 = 7-9 hours total (includes 2-3 hours for team
-formation and property selection)
+**Estimated Time Commitment:** Week 2 = 7-9 hours total (includes 2-3 hours for team formation and property selection)
+
+**You're Now Ready For:** Everything you learned in Week 1 becomes the foundation for Week 2's specialized focus on media rights and fan monetization—the two largest and most strategically complex revenue streams.
 
 Get ready for another intensive week of learning! See you in Week 2.
 ```
@@ -102,10 +118,10 @@ sport business, they're excellent resources.
 **Design Rationale:**
 - **Infobox** reinforces key concepts from week (repetition aids retention)
 - **Project connection** shows relevance and application (UDL engagement, real-world purpose)
-- **Week 2 preview** builds anticipation and helps students prepare (scaffolding)
+- **Week 1 complete + Week 2 preview** creates closure and builds anticipation (scaffolding, narrative arc)
 - **Details** provides optional resources without overwhelming (UDL choice)
-- Creates closure for Week 1 while launching into Week 2
-- Students leave with clear understanding of what they've learned and what's next
+- Creates clear ending for Week 1 while launching into Week 2
+- Students leave with celebration of accomplishment and clear preview of what's next
 
 ---
 

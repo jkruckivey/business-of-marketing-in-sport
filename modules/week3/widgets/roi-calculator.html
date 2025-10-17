@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsorship ROI Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--color-neutral-600);
+            margin-bottom: 2rem;
+        }
+
+        .presets {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        .preset-btn {
+            padding: 0.5rem 1rem;
+            background: var(--color-neutral-100);
+            color: var(--color-neutral-700);
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+            font-family: 'Geist', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .preset-btn:hover {
+            background: var(--color-neutral-200);
+            border-color: var(--color-neutral-400);
+        }
+
+        .preset-btn:focus {
+            outline: 3px solid var(--color-neutral-900);
+            outline-offset: 2px;
+        }
+
+        .input-section {
+            margin-bottom: 2rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.5rem;
+        }
+
+        .input-with-value {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        input[type="range"] {
+            flex: 1;
+            height: 6px;
+            background: var(--color-neutral-200);
+            border-radius: 3px;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: var(--color-neutral-700);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            background: var(--color-neutral-700);
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="range"]:focus::-webkit-slider-thumb {
+            outline: 3px solid var(--color-neutral-900);
+            outline-offset: 2px;
+        }
+
+        input[type="range"]:focus::-moz-range-thumb {
+            outline: 3px solid var(--color-neutral-900);
+            outline-offset: 2px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 0.625rem;
+            font-family: 'Geist', sans-serif;
+            font-size: 0.875rem;
+            color: var(--color-neutral-900);
+            background: white;
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+        }
+
+        input[type="number"]:focus {
+            outline: 3px solid var(--color-neutral-900);
+            outline-offset: 2px;
+            border-color: var(--color-neutral-400);
+        }
+
+        .value-display {
+            min-width: 120px;
+            padding: 0.5rem 0.75rem;
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+            text-align: right;
+        }
+
+        .results {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .results h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 1.5rem;
+        }
+
+        .funnel-section {
+            margin-bottom: 2rem;
+        }
+
+        .funnel-chart {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .funnel-table {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .funnel-table th {
+            text-align: left;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--color-neutral-600);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.5rem;
+            border-bottom: 1px solid var(--color-neutral-300);
+        }
+
+        .funnel-table td {
+            padding: 0.75rem 0.5rem;
+            font-size: 0.875rem;
+            color: var(--color-neutral-700);
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .metric {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--color-neutral-600);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-value {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+        }
+
+        .grade-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .grade-excellent {
+            background: var(--color-neutral-200);
+            color: var(--color-neutral-800);
+        }
+
+        .grade-good {
+            background: var(--color-neutral-300);
+            color: var(--color-neutral-900);
+        }
+
+        .grade-fair {
+            background: var(--color-neutral-400);
+            color: white;
+        }
+
+        .grade-poor {
+            background: var(--color-neutral-600);
+            color: white;
+        }
+
+        .insight-box {
+            background: white;
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .insight-box p {
+            font-size: 0.875rem;
+            color: var(--color-neutral-700);
+            line-height: 1.6;
+        }
+
+        .actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--color-neutral-200);
+        }
+
+        .btn {
+            padding: 0.625rem 1.25rem;
+            font-family: 'Geist', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid;
+        }
+
+        .btn-primary {
+            background: var(--color-neutral-900);
+            color: white;
+            border-color: var(--color-neutral-900);
+        }
+
+        .btn-primary:hover {
+            background: var(--color-neutral-800);
+            border-color: var(--color-neutral-800);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-neutral-700);
+            border-color: var(--color-neutral-300);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-neutral-100);
+            border-color: var(--color-neutral-400);
+        }
+
+        .btn:focus {
+            outline: 3px solid var(--color-neutral-900);
+            outline-offset: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .presets {
+                flex-direction: column;
+            }
+
+            .preset-btn {
+                width: 100%;
+            }
+
+            .input-with-value {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .value-display {
+                text-align: center;
+            }
+
+            .metric-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sponsorship ROI Calculator</h1>
+        <p class="subtitle">Model sponsorship ROI using reach, engagement, and conversion metrics with industry-standard assumptions.</p>
+
+        <div class="presets" role="group" aria-label="Preset sponsorship scenarios">
+            <button class="preset-btn" onclick="loadPreset('nike')" aria-label="Load Nike NFL preset">Nike NFL (37% ROI)</button>
+            <button class="preset-btn" onclick="loadPreset('redbull')" aria-label="Load Red Bull F1 preset">Red Bull F1 (180% ROI)</button>
+            <button class="preset-btn" onclick="loadPreset('gatorade')" aria-label="Load Gatorade NBA preset">Gatorade NBA (52% ROI)</button>
+        </div>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="investment">Total Investment (Rights + Activation)</label>
+                <div class="input-with-value">
+                    <input type="range" id="investment" min="10" max="500" value="100" step="10"
+                           oninput="updateCalculations()" aria-describedby="investmentValue">
+                    <span class="value-display" id="investmentValue" aria-live="polite">$100M</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="impressions">Total Impressions (Millions)</label>
+                <input type="number" id="impressions" value="1000" step="100"
+                       oninput="updateCalculations()" aria-describedby="impressionsHelp">
+                <span id="impressionsHelp" class="sr-only">Enter total reach in millions</span>
+            </div>
+
+            <div class="input-group">
+                <label for="engagementRate">Engagement Rate (%)</label>
+                <div class="input-with-value">
+                    <input type="range" id="engagementRate" min="0.01" max="0.10" value="0.02" step="0.01"
+                           oninput="updateCalculations()" aria-describedby="engagementValue">
+                    <span class="value-display" id="engagementValue" aria-live="polite">0.02%</span>
+                </div>
+                <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">% who interact (app download, retail visit, social engage)</p>
+            </div>
+
+            <div class="input-group">
+                <label for="conversionRate">Conversion Rate (%)</label>
+                <div class="input-with-value">
+                    <input type="range" id="conversionRate" min="0.5" max="5.0" value="1.5" step="0.1"
+                           oninput="updateCalculations()" aria-describedby="conversionValue">
+                    <span class="value-display" id="conversionValue" aria-live="polite">1.5%</span>
+                </div>
+                <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">% of engaged users who purchase</p>
+            </div>
+
+            <div class="input-group">
+                <label for="avgPurchase">Average Purchase Value ($)</label>
+                <div class="input-with-value">
+                    <input type="range" id="avgPurchase" min="10" max="500" value="75" step="5"
+                           oninput="updateCalculations()" aria-describedby="purchaseValue">
+                    <span class="value-display" id="purchaseValue" aria-live="polite">$75</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="results" role="region" aria-label="ROI calculation results">
+            <h2>ROI Results</h2>
+
+            <div class="funnel-section">
+                <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem;">Attribution Funnel</h3>
+                <div class="funnel-chart">
+                    <canvas id="funnelChart" role="img" aria-label="Attribution funnel visualization"></canvas>
+                </div>
+
+                <table class="funnel-table" role="table">
+                    <thead>
+                        <tr>
+                            <th>Stage</th>
+                            <th>Volume</th>
+                            <th>Conversion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="funnelTableBody">
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="metric-grid">
+                <div class="metric">
+                    <div class="metric-label">Direct Revenue</div>
+                    <div class="metric-value" id="directRevenue" aria-live="polite">$0M</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Total Attributed Revenue</div>
+                    <div class="metric-value" id="totalRevenue" aria-live="polite">$0M</div>
+                    <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">Includes 1.5x brand lift multiplier</p>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Return on Investment</div>
+                    <div class="metric-value" id="roiValue" aria-live="polite">0%</div>
+                    <div id="gradeBadge" aria-live="polite"></div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Payback Period</div>
+                    <div class="metric-value" id="paybackPeriod" aria-live="polite">0 years</div>
+                </div>
+            </div>
+
+            <div class="insight-box" role="complementary" aria-label="Performance insights">
+                <p id="insightText" aria-live="polite"></p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-primary" onclick="exportData()" aria-label="Export ROI model as JSON">
+                Export ROI Model
+            </button>
+            <button class="btn btn-secondary" onclick="resetCalculator()" aria-label="Reset calculator to default values">
+                Reset Calculator
+            </button>
+        </div>
+    </div>
+
+    <script>
+        let funnelChart = null;
+
+        const presets = {
+            nike: {
+                investment: 400,
+                impressions: 5000,
+                engagementRate: 0.02,
+                conversionRate: 1.5,
+                avgPurchase: 120
+            },
+            redbull: {
+                investment: 150,
+                impressions: 2000,
+                engagementRate: 0.05,
+                conversionRate: 2.5,
+                avgPurchase: 85
+            },
+            gatorade: {
+                investment: 80,
+                impressions: 1200,
+                engagementRate: 0.03,
+                conversionRate: 2.0,
+                avgPurchase: 65
+            }
+        };
+
+        function loadPreset(type) {
+            const preset = presets[type];
+            document.getElementById('investment').value = preset.investment;
+            document.getElementById('impressions').value = preset.impressions;
+            document.getElementById('engagementRate').value = preset.engagementRate;
+            document.getElementById('conversionRate').value = preset.conversionRate;
+            document.getElementById('avgPurchase').value = preset.avgPurchase;
+
+            updateCalculations();
+        }
+
+        function updateCalculations() {
+            // Get input values
+            const investment = parseFloat(document.getElementById('investment').value);
+            const impressions = parseFloat(document.getElementById('impressions').value) * 1000000;
+            const engagementRate = parseFloat(document.getElementById('engagementRate').value) / 100;
+            const conversionRate = parseFloat(document.getElementById('conversionRate').value) / 100;
+            const avgPurchase = parseFloat(document.getElementById('avgPurchase').value);
+
+            // Update value displays
+            document.getElementById('investmentValue').textContent = `$${investment}M`;
+            document.getElementById('engagementValue').textContent = `${document.getElementById('engagementRate').value}%`;
+            document.getElementById('conversionValue').textContent = `${document.getElementById('conversionRate').value}%`;
+            document.getElementById('purchaseValue').textContent = `$${avgPurchase}`;
+
+            // Calculate funnel
+            const engaged = impressions * engagementRate;
+            const customers = engaged * conversionRate;
+            const directRevenue = (customers * avgPurchase) / 1000000;
+            const totalRevenue = directRevenue * 1.5; // Brand lift multiplier
+
+            // Calculate ROI
+            const roi = ((totalRevenue - investment) / investment) * 100;
+            const payback = investment / (totalRevenue / 3); // Assumes 3-year partnership
+
+            // Update results
+            document.getElementById('directRevenue').textContent = `$${directRevenue.toFixed(1)}M`;
+            document.getElementById('totalRevenue').textContent = `$${totalRevenue.toFixed(1)}M`;
+            document.getElementById('roiValue').textContent = `${roi.toFixed(1)}%`;
+            document.getElementById('paybackPeriod').textContent = `${payback.toFixed(1)} years`;
+
+            // Determine grade
+            let grade, gradeClass, gradeText;
+            if (roi >= 50) {
+                grade = 'Excellent';
+                gradeClass = 'grade-excellent';
+                gradeText = 'Outstanding performance - significantly exceeds typical sponsorship benchmarks.';
+            } else if (roi >= 20) {
+                grade = 'Good';
+                gradeClass = 'grade-good';
+                gradeText = 'Good performance - meets or exceeds industry standards for sponsorship ROI.';
+            } else if (roi >= 0) {
+                grade = 'Fair';
+                gradeClass = 'grade-fair';
+                gradeText = 'Fair performance - positive return but below typical sponsorship expectations.';
+            } else {
+                grade = 'Poor';
+                gradeClass = 'grade-poor';
+                gradeText = 'Poor performance - negative return. Consider adjusting engagement tactics or reducing investment.';
+            }
+
+            document.getElementById('gradeBadge').innerHTML = `<span class="grade-badge ${gradeClass}">${grade}</span>`;
+            document.getElementById('insightText').textContent = `Your ${roi.toFixed(1)}% ROI is rated ${grade}. ${gradeText} ${payback < 2 ? 'Fast payback period indicates strong immediate returns.' : 'Consider strategies to accelerate payback period through higher conversion rates.'}`;
+
+            // Update funnel visualization
+            updateFunnelChart(impressions, engaged, customers);
+            updateFunnelTable(impressions, engaged, customers, engagementRate, conversionRate);
+        }
+
+        function updateFunnelChart(impressions, engaged, customers) {
+            const ctx = document.getElementById('funnelChart').getContext('2d');
+
+            if (funnelChart) {
+                funnelChart.destroy();
+            }
+
+            funnelChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Reach (Impressions)', 'Engagement (Interactions)', 'Conversion (Customers)'],
+                    datasets: [{
+                        label: 'Volume',
+                        data: [impressions, engaged, customers],
+                        backgroundColor: [
+                            'rgba(64, 64, 64, 0.8)',
+                            'rgba(115, 115, 115, 0.8)',
+                            'rgba(163, 163, 163, 0.8)'
+                        ],
+                        borderColor: [
+                            'rgb(64, 64, 64)',
+                            'rgb(115, 115, 115)',
+                            'rgb(163, 163, 163)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Attribution Funnel: Reach → Engagement → Conversion',
+                            font: {
+                                family: 'Geist',
+                                size: 14,
+                                weight: '600'
+                            },
+                            color: '#171717'
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    if (value >= 1000000) {
+                                        return (value / 1000000).toFixed(0) + 'M';
+                                    } else if (value >= 1000) {
+                                        return (value / 1000).toFixed(0) + 'K';
+                                    }
+                                    return value;
+                                },
+                                font: {
+                                    family: 'Geist',
+                                    size: 11
+                                },
+                                color: '#737373'
+                            },
+                            grid: {
+                                color: '#e5e5e5'
+                            }
+                        },
+                        y: {
+                            ticks: {
+                                font: {
+                                    family: 'Geist',
+                                    size: 11
+                                },
+                                color: '#737373'
+                            },
+                            grid: {
+                                display: false
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateFunnelTable(impressions, engaged, customers, engagementRate, conversionRate) {
+            const tbody = document.getElementById('funnelTableBody');
+            tbody.innerHTML = '';
+
+            const stages = [
+                { name: 'Reach', volume: formatNumber(impressions), conversion: '100%' },
+                { name: 'Engagement', volume: formatNumber(engaged), conversion: `${(engagementRate * 100).toFixed(2)}%` },
+                { name: 'Conversion', volume: formatNumber(customers), conversion: `${(conversionRate * 100).toFixed(2)}%` }
+            ];
+
+            stages.forEach(stage => {
+                const row = tbody.insertRow();
+                row.innerHTML = `
+                    <td><strong>${stage.name}</strong></td>
+                    <td>${stage.volume}</td>
+                    <td>${stage.conversion}</td>
+                `;
+            });
+        }
+
+        function formatNumber(num) {
+            if (num >= 1000000) {
+                return (num / 1000000).toFixed(1) + 'M';
+            } else if (num >= 1000) {
+                return (num / 1000).toFixed(1) + 'K';
+            }
+            return num.toFixed(0);
+        }
+
+        function exportData() {
+            const investment = parseFloat(document.getElementById('investment').value);
+            const impressions = parseFloat(document.getElementById('impressions').value);
+            const engagementRate = parseFloat(document.getElementById('engagementRate').value);
+            const conversionRate = parseFloat(document.getElementById('conversionRate').value);
+            const avgPurchase = parseFloat(document.getElementById('avgPurchase').value);
+
+            const data = {
+                inputs: {
+                    investment: `$${investment}M`,
+                    impressions: `${impressions}M`,
+                    engagementRate: `${engagementRate}%`,
+                    conversionRate: `${conversionRate}%`,
+                    avgPurchaseValue: `$${avgPurchase}`
+                },
+                results: {
+                    directRevenue: document.getElementById('directRevenue').textContent,
+                    totalAttributedRevenue: document.getElementById('totalRevenue').textContent,
+                    roi: document.getElementById('roiValue').textContent,
+                    paybackPeriod: document.getElementById('paybackPeriod').textContent,
+                    grade: document.getElementById('gradeBadge').textContent.trim(),
+                    insight: document.getElementById('insightText').textContent
+                },
+                timestamp: new Date().toISOString()
+            };
+
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'sponsorship-roi-model.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function resetCalculator() {
+            document.getElementById('investment').value = 100;
+            document.getElementById('impressions').value = 1000;
+            document.getElementById('engagementRate').value = 0.02;
+            document.getElementById('conversionRate').value = 1.5;
+            document.getElementById('avgPurchase').value = 75;
+
+            updateCalculations();
+        }
+
+        // Initialize on page load
+        window.addEventListener('DOMContentLoaded', function() {
+            updateCalculations();
+        });
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-## MODULE 4: Interactive Activity - Revenue Empire Builder
+## MODULE 4: Interactive Activity - Revenue Empire Builder (BOPPPS: Participatory - Application)
 **Purpose:** Active learning - build a revenue strategy (supports MLO 1.1, 1.3 - Application level)
 
 **Uplimit Structure:** Fourth module in Unit 1
@@ -235,6 +235,25 @@ media rights → more resources for players...)
 - Written defense mirrors real-world executive communication (authentic assessment)
 - Directly supports MLO 1.3 (evaluating growth potential and risks) through authentic practice
 - 30-point rubric ensures transparent, consistent evaluation (QM Standard 3)
+
+---
+
+## Module 4 Complete - Transition to Module 5
+
+**What You've Learned:**
+You've applied everything from Modules 2-3 by building a complete revenue strategy. Through the Revenue Empire Builder simulation, you made real-time allocation decisions across all five revenue streams, responded to market events, and balanced growth against risk. Your Board Strategy Defense memo demonstrates your ability to justify strategic choices with data and sophisticated thinking.
+
+**Key Takeaways:**
+- Strategic allocation requires balancing growth potential against risk exposure
+- No single "correct" strategy exists—success depends on justifying your choices
+- Revenue streams create synergies when managed as an ecosystem
+- Market events require adaptive thinking and strategic pivots
+- Executive communication demands clear reasoning and evidence-based arguments
+
+**Up Next: Module 5 - Real-World Case Analysis**
+You've built a theoretical strategy. Now it's time to analyze a real organization facing real constraints. In Module 5, you'll examine the Vancouver Canucks and their revenue-sharing challenges—applying your framework to actual financial data and strategic dilemmas.
+
+Ready to see theory meet reality? Let's dive into the case!
 
 ---
 

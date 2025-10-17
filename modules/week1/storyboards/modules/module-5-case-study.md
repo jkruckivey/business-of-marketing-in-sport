@@ -1,18 +1,19 @@
-## MODULE 5: Case Study - NHL Vancouver Canucks
+## MODULE 5: Case Study - NHL Vancouver Canucks (BOPPPS: Participatory - Case Analysis)
 **Purpose:** Analyze real revenue-sharing decisions (supports MLO 1.4 - Analysis level)
 
 **Uplimit Structure:** Fifth module in Unit 1
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
-| 2 | **Text** ⬤ Required | Full case study narrative | Import from `week1-canucks-case.docx` | Main case text (8-10 pages) |
-| 3 | **Table** ⬤ Required | NHL revenue sharing model data | Type directly | Financial data for analysis |
-| 4 | **Details** ⬤ Required | Exhibit A: Canucks financial statements | Type directly or upload PDF | Accordion - supporting data |
-| 5 | **Details** ⬤ Required | Exhibit B: NHL league-wide revenue data | Type directly or upload PDF | Accordion - comparative data |
-| 6 | **Details** ⬤ Required | Exhibit C: Canadian market characteristics | Type directly | Accordion - market context |
-| 7 | **Image** ○ Optional | Org chart or revenue flow diagram | Upload PNG + alt text | Visual aid if helpful |
-| 8 | **AI Chat Widget (Roleplay)** ◐ Recommended | NHL Board of Governors meeting | Configure in Uplimit | Defend Canucks position on revenue sharing |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 4 | Type directly | Sets context, connects narrative |
+| 2 | **Infobox (Callout)** ⬤ Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
+| 3 | **Text** ⬤ Required | Full case study narrative | **🔗 ATTACH CASE HERE:** Upload Canucks case PDF or type markdown | Main case text (8-10 pages) |
+| 4 | **Table** ⬤ Required | NHL revenue sharing model data | Type directly | Financial data for analysis |
+| 5 | **Details** ⬤ Required | Exhibit A: Canucks financial statements | **🔗 ATTACH EXHIBIT A:** Upload PDF with financial statements | Accordion - supporting data |
+| 6 | **Details** ⬤ Required | Exhibit B: NHL league-wide revenue data | **🔗 ATTACH EXHIBIT B:** Upload PDF with league data | Accordion - comparative data |
+| 7 | **Details** ⬤ Required | Exhibit C: Canadian market characteristics | **🔗 ATTACH EXHIBIT C:** Type or upload market context | Accordion - market context |
+| 8 | **Image** ○ Optional | Org chart or revenue flow diagram | Upload PNG + alt text | Visual aid if helpful |
+| 9 | **AI Chat Widget (Roleplay)** ◐ Recommended | NHL Board of Governors meeting | Configure in Uplimit | Defend Canucks position on revenue sharing |
 
 **Content Priority Badges:**
 - ⬤ **Required** - Core content essential for learning outcomes and assessments
@@ -21,7 +22,16 @@
 
 ---
 
-### Element 1: Infobox Content
+### Element 1: Connecting Introduction Text
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+You've now built your own theoretical revenue strategy through the Revenue Empire Builder simulation, making allocation decisions across all five streams while managing growth and risk. You've written a Board Strategy Defense memo justifying your choices.
+
+Now it's time to see how theory meets reality. The Vancouver Canucks face actual constraints that your simulation didn't include: NHL revenue sharing formulas, Canadian dollar currency challenges, a competitive Western Conference, and market-size limitations. In this module, you'll analyze real financial data, real strategic dilemmas, and real stakeholder tensions. This is where sports business gets messy—and interesting.
+```
+
+### Element 2: Infobox Content
 ```
 Title: ▸ Case Study: Vancouver Canucks - Competing on Revenue Sharing
 
@@ -41,7 +51,7 @@ This case directly addresses MLO 1.4: Analyze different revenue sharing models.
 Preparation: Read the full case and all exhibits before the executive case discussion.
 ```
 
-### Element 2: Text Content (week1-canucks-case.docx)
+### Element 3: Text Content - Case Study Template
 **Document Structure:**
 ```
 # NHL Vancouver Canucks: Competing on Revenue Sharing
@@ -69,7 +79,7 @@ Total: 8-10 pages
 - Include any charts/graphs from original (or extract as separate images)
 - Maintain case formatting (may include indented quotes, bullet lists)
 
-### Element 3: Table Content - NHL Revenue Sharing Model
+### Element 4: Table Content - NHL Revenue Sharing Model
 
 | **Revenue Type** | **% Shared** | **Distribution Method** | **Canucks Impact** |
 |-----------------|-------------|----------------------|------------------|
@@ -81,7 +91,7 @@ Total: 8-10 pages
 
 **Table Caption:** "NHL Revenue Sharing Formula - Impact on Vancouver Canucks (Simplified). Source: NHL CBA 2020-2026"
 
-### Element 4: Details - Exhibit A Content
+### Element 5: Details - Exhibit A Content
 ```
 Title: Exhibit A: Vancouver Canucks Financial Statements (Summary)
 
@@ -100,7 +110,7 @@ Title: Exhibit A: Vancouver Canucks Financial Statements (Summary)
 [2-3 explanatory notes about the numbers]
 ```
 
-### Element 5: Details - Exhibit B Content
+### Element 6: Details - Exhibit B Content
 ```
 Title: Exhibit B: NHL League-Wide Revenue Data
 
@@ -120,7 +130,7 @@ Title: Exhibit B: NHL League-Wide Revenue Data
 [Table comparing all 7 Canadian NHL teams]
 ```
 
-### Element 6: Details - Exhibit C Content
+### Element 7: Details - Exhibit C Content
 ```
 Title: Exhibit C: Canadian Market Characteristics
 
@@ -139,90 +149,136 @@ Title: Exhibit C: Canadian Market Characteristics
 [Information about Canadian broadcast rights, Rogers Sportsnet deal]
 ```
 
-### Element 7: Image Specification (if used)
+### Element 8: Image Specification (if used)
 - **File:** `nhl-revenue-flow-diagram.png`
 - **Alt Text:** "Diagram showing NHL revenue sharing flow: National media and licensing revenue flows to central league office, 50% redistributed equally to all 32 teams. Local revenue (tickets, sponsorship, local media) stays with individual teams. Arrows indicate direction of money flow."
 - **Caption:** "NHL Revenue Sharing Model - Centralized vs. Local Revenue Streams"
 - **Size:** Optimized for web, max 800px width
 
-### Element 8: AI Roleplay - NHL Board of Governors Meeting
+### Element 9: AI Roleplay - NHL Board of Governors Meeting
 
 **🎮 Widget Purpose:** Authentic roleplay where students defend Vancouver Canucks' position on revenue sharing reform, demonstrating understanding of revenue sharing mechanics and stakeholder analysis.
 
 **Widget Status:** ⭕ Needs configuration in Uplimit platform
 
-**Element Type:** AI Roleplay (4-tab configuration)
+**Element Type:** AI Roleplay
 
 ---
 
 ## UPLIMIT CONFIGURATION
 
-### Tab 1: Learning Objective
+**Step 1: Select "AI Roleplay Scenario" element in Uplimit builder**
 
-**Name:** NHL Board of Governors: Revenue Sharing Debate
+**Step 2: Set Learning Objective**
 
-**Learning Objective:**
+Choose: **"Add objective myself"** (to test specific skills and ensure learning goals are achieved)
+
+Copy this into the **Objective** field:
+
+```
 Students will analyze the NHL's revenue sharing model and defend the Vancouver Canucks' position by applying case data, acknowledging stakeholder tensions, and proposing concrete reforms that balance team interests with league-wide competitive balance. (MLO 1.4 - Analysis level)
+```
 
-**Scenario Setup:**
-Debate/Negotiation
-
----
-
-### Tab 2: Scenario
-
-**Context:**
-The NHL is conducting a Board of Governors meeting where revenue sharing reform is on the agenda. The league's current revenue sharing model is under review, and Commissioner Gary Bettman is hearing from team representatives across 32 franchises. The league is divided into three factions: small-market teams (Arizona, Winnipeg, Carolina) seeking increased revenue sharing, large-market teams (Toronto, Montreal, New York Rangers) advocating for reduced sharing, and Canadian teams facing unique currency challenges due to USD/CAD exchange rates. The learner will defend the Vancouver Canucks' position on revenue sharing reform by analyzing case data, acknowledging stakeholder tensions, and proposing concrete reforms that balance team interests with league-wide competitive balance.
-
-**Role of AI (Gary Bettman):** Gary Bettman is the NHL Commissioner moderating the Board of Governors meeting on revenue sharing reform. He is pragmatic, data-driven, and focused on league-wide competitive balance and long-term financial health.
-
-**Role of Student:** The learner plays the role of Jim Rutherford, President of Hockey Operations for the Vancouver Canucks, presenting the Canadian teams' perspective on revenue sharing reform.
+**Scenario Setup:** Debate/Negotiation
 
 ---
 
-### Tab 3: Hidden Context
+**Step 3: Create Scenario**
 
-**Hidden Context (AI knows, student doesn't see):**
+Choose: **"Create your own scenario"**
 
-**AI Character Personality:**
-You are Gary Bettman, NHL Commissioner for 30+ years. You are pragmatic, data-driven, and laser-focused on league-wide competitive balance and long-term financial health. You're skeptical of self-serving proposals but genuinely open to data-driven arguments that benefit the league overall—not just individual teams.
+Copy this into the **Scenario Context** field:
 
-**Key Constraints:**
-- You understand that Canadian teams face unique currency challenges (USD/CAD exchange rates)
-- You know large-market Canadian teams (Toronto, Montreal) have very different interests than smaller markets (Winnipeg)
-- You're protective of small-market U.S. teams who depend on revenue sharing for survival
-- You respect executives who acknowledge trade-offs rather than claiming win-win solutions
+```
+The NHL is conducting a Board of Governors meeting where revenue sharing reform is on the agenda. The league's current revenue sharing model is under review, and Commissioner Gary Bettman is hearing from team representatives across 32 franchises. The league is divided into three factions: small-market teams (Arizona, Winnipeg, Carolina) seeking increased revenue sharing, large-market teams (Toronto, Montreal, New York Rangers) advocating for reduced sharing, and Canadian teams facing unique currency challenges due to USD/CAD exchange rates.
 
-**Conversation Strategy (5 Questions over 10-15 minutes):**
+You are presenting the Vancouver Canucks' position on revenue sharing reform to Commissioner Bettman and the Board.
 
-1. **Opening (2 min):** "Jim, walk us through the Canucks' revenue picture and how revenue sharing impacts you specifically"
+Conversation structure: Commissioner Bettman will ask 5 questions to test your understanding and strategic thinking.
+```
+
+Copy this into the **AI Role** field:
+
+```
+You are Gary Bettman, NHL Commissioner for 30+ years. You are pragmatic, data-driven, and focused on league-wide competitive balance and long-term financial health. You're moderating a Board of Governors meeting on revenue sharing reform.
+
+Your personality:
+- Pragmatic: You care about league-wide benefits, not individual team interests
+- Data-driven: You respect arguments backed by case exhibits and financial data
+- Skeptical: You're wary of self-serving proposals that don't benefit competitive balance
+- Fair: You genuinely listen to well-reasoned arguments that acknowledge trade-offs
+
+Your conversation strategy:
+
+Ask 5 questions to test the student's understanding:
+
+1. **Opening:** "Jim, walk us through the Canucks' revenue picture and how revenue sharing impacts you specifically"
    - Test if they understand the basic mechanics (which streams are shared, Canucks' net position)
 
-2. **Stakeholder Tension (4-6 min):** "Toronto argues they subsidize weaker franchises. Arizona says sharing keeps them competitive. Where do the Canucks stand?"
+2. **Stakeholder Tension:** "Toronto argues they subsidize weaker franchises. Arizona says sharing keeps them competitive. Where do the Canucks stand?"
    - Probe for stakeholder awareness and ability to navigate conflicting interests
 
-3. **Canadian Dollar Issue (2-3 min):** "Seven Canadian teams face currency headwinds. Should the league account for that in the formula?"
+3. **Canadian Dollar Issue:** "Seven Canadian teams face currency headwinds. Should the league account for that in the formula?"
    - Test if they can make a compelling case for special consideration without alienating U.S. teams
 
-4. **Concrete Proposals (2-3 min):** "If you could change one thing about revenue sharing, what would it be—and why would it benefit the league, not just Vancouver?"
+4. **Concrete Proposals:** "If you could change one thing about revenue sharing, what would it be—and why would it benefit the league, not just Vancouver?"
    - Demand specificity (not vague "we need more sharing")
    - Reward proposals framed as league-wide benefits
 
-5. **Closing (1 min):** "Final thoughts: Is the current system working for the Canucks?"
+5. **Closing:** "Final thoughts: Is the current system working for the Canucks?"
    - Allow final summary and advocacy
 
-**Reward Strong Performance (use for evaluation):**
+After these 5 questions, provide rubric-aligned feedback on their performance.
+```
+
+Copy this into the **Student Role** field:
+
+```
+You are Jim Rutherford, President of Hockey Operations for the Vancouver Canucks, presenting to the NHL Board of Governors on revenue sharing reform. Use case data to support your position and acknowledge competing stakeholder interests.
+```
+
+**Note:** Keep this field minimal since it displays to students without formatting. The detailed instructions will appear in the "Student Instructions" section (Step 6) with proper markdown formatting.
+
+---
+
+**Step 4: Hidden Context (AI-only information)**
+
+Copy this into the **Hidden Context** field:
+
+```
+**AI Character Context:**
+You are Gary Bettman conducting a case-based executive debate. The student has read the Vancouver Canucks case (Exhibits A, B, C) and must now defend a position on revenue sharing reform.
+
+**Key Constraints (inform your skepticism):**
+- Canadian teams face unique currency challenges (USD/CAD exchange rates)
+- Large-market Canadian teams (Toronto, Montreal) have very different interests than smaller markets (Winnipeg)
+- Small-market U.S. teams depend on revenue sharing for survival
+- Executives who acknowledge trade-offs are more credible than those claiming win-win solutions
+
+**What Strong Performance Looks Like (use for evaluation):**
 - ✅ Uses case data: "Exhibit B shows the Canucks received $XM but contributed $YM..."
 - ✅ Acknowledges trade-offs: "We benefit from national media sharing, but local revenue disparities hurt us..."
 - ✅ Stakeholder awareness: "I recognize Toronto's perspective, but here's why our proposal benefits competitive balance..."
 - ✅ Concrete proposals: "Add a currency adjustment factor of 5-7% for Canadian teams based on 5-year average exchange rates"
 - ✅ Strategic framing: Links Canucks' interests to league-wide benefits (competitive balance, fan engagement, market stability)
 
-**After 10-15 minutes:** Provide rubric-aligned feedback on their performance using the Criteria tab rubric.
+**Conversation Objectives (5 questions):**
+1. Test revenue sharing mechanics understanding (which streams are shared)
+2. Probe stakeholder awareness (Toronto vs. Arizona vs. Vancouver tensions)
+3. Assess ability to make data-driven arguments from case exhibits
+4. Evaluate strategic framing (league-wide benefits, not just Canucks' interests)
+5. Determine specificity of reform proposals (concrete vs. vague)
+
+**After completing 5 questions:** Provide rubric-aligned feedback using the 4 criteria defined in the rubric.
+```
 
 ---
 
-### Tab 4: Criteria (Rubric)
+**Step 5: Configure Feedback Rubric**
+
+Uplimit will auto-generate a rubric based on your scenario. Click **"Auto-regenerate"** if needed, then customize:
+
+**Add/Edit these criteria:**
 
 **Uplimit Configuration:**
 - ✅ Enable automated AI grading
@@ -303,6 +359,75 @@ The learner offers specific, actionable recommendations (e.g., "Add 5-7% currenc
 
 ---
 
+**Step 6: Student Instructions**
+
+Copy this into the **Instructions for Students** field:
+
+```markdown
+### Your Role
+You are **Jim Rutherford, President of Hockey Operations** for the Vancouver Canucks. You're presenting to the NHL Board of Governors on revenue sharing reform.
+
+### The Scenario
+Commissioner Gary Bettman is moderating a Board meeting where revenue sharing reform is on the agenda. The league is divided:
+- **Small-market teams** (Arizona, Winnipeg, Carolina) want increased sharing
+- **Large-market teams** (Toronto, Montreal, NY Rangers) want reduced sharing
+- **Canadian teams** face unique currency challenges (USD/CAD exchange rates)
+
+You must defend the Canucks' position using case data from Exhibits A, B, and C.
+
+### What to Have Ready
+- **Case knowledge:** Exhibits A (Canucks financials), B (league-wide data), C (Canadian market context)
+- **Strategic thinking:** How to frame Canucks' interests as league-wide benefits
+- **Stakeholder awareness:** Acknowledge Toronto's and Arizona's perspectives
+- **Concrete proposals:** Specific, actionable reforms (not vague requests)
+
+### Your Goal
+Present a data-driven argument that:
+1. Explains how revenue sharing impacts the Canucks specifically
+2. Acknowledges competing stakeholder interests
+3. Proposes concrete reforms that balance team interests with league-wide competitive balance
+4. Uses case exhibits to support your position
+
+### Conversation Structure
+- Commissioner Bettman will ask **5 questions** testing your understanding
+- Answer each question thoughtfully, using case data to support your arguments
+- Focus on strategic framing: How do your proposals benefit the entire league?
+
+### What Happens Next
+After this roleplay, you'll receive rubric-aligned feedback on four criteria: Revenue Sharing Mechanics (10 pts), Use of Case Data (10 pts), Stakeholder Awareness (5 pts), and Concrete Proposals (5 pts).
+```
+
+---
+
+**Step 7: Title and Save**
+
+**Title:** "NHL Board of Governors: Revenue Sharing Debate"
+
+Click **"Save"** to create the AI Roleplay Scenario.
+
+---
+
+**Step 8: Post-Creation Configuration**
+
+After saving, Uplimit will show additional configuration fields:
+
+**Exercise Title (Optional):**
+```
+NHL Board of Governors Meeting
+```
+
+**Exercise Instructions (Optional):**
+```
+Add any (optional) instructions for your exercise here...
+```
+Leave this blank - the "Ready to begin your roleplay?" section below will contain all student instructions.
+
+**"Ready to begin your roleplay?" Section:**
+
+This is the student-facing scenario text that appears when they launch the roleplay. Copy the markdown from Step 6 (Student Instructions) into this section - it will display in the roleplay interface.
+
+---
+
 ## UPLIMIT ACCESSIBILITY FEATURES
 
 **Built-in Platform Accessibility:**
@@ -315,12 +440,15 @@ The learner offers specific, actionable recommendations (e.g., "Add 5-7% currenc
 Students with anxiety about AI roleplay can submit a written position memo instead (750-1000 words defending Canucks' position using same rubric criteria). Email instructor within 48 hours of module release to request alternative format.
 
 **Content Status:**
-- ✅ Infobox content written (Element 1)
-- ⭕ Case study needs to be created (Element 2 - 8-10 pages)
-- ✅ Table data ready to type (Element 3)
-- ⭕ Exhibits need financial data sourcing (Elements 4-6)
-- ✅ Image spec complete (Element 7)
-- ⭕ AI Roleplay needs configuration testing (Element 8)
+- ✅ Connecting intro text written (Element 1)
+- ✅ Infobox content written (Element 2)
+- 🔗 **ATTACH CASE:** Element 3 - Vancouver Canucks case study (8-10 pages PDF or markdown)
+- ✅ Table data ready to type (Element 4)
+- 🔗 **ATTACH EXHIBIT A:** Element 5 - Canucks financial statements (PDF format)
+- 🔗 **ATTACH EXHIBIT B:** Element 6 - NHL league-wide revenue data (PDF format)
+- 🔗 **ATTACH EXHIBIT C:** Element 7 - Canadian market characteristics (type directly or PDF)
+- ✅ Image spec complete (Element 8 - optional)
+- ⭕ AI Roleplay needs configuration testing (Element 9)
 
 **Design Rationale:**
 - **Infobox** frames the case and provides guiding questions (QM clear objectives)
@@ -376,6 +504,25 @@ Students with anxiety about AI roleplay can submit a written position memo inste
 - ✅ All interactive elements keyboard accessible
 - ✅ Color not sole means of conveying information (symbols + text labels)
 - ✅ Sufficient color contrast throughout (tested with WCAG tool)
+
+---
+
+## Module 5 Complete - Transition to Module 6
+
+**What You've Learned:**
+You've analyzed a real professional sports organization facing complex revenue-sharing challenges. The Vancouver Canucks case revealed how NHL's revenue-sharing formula impacts team strategy, how Canadian teams face unique currency headwinds, and how mid-market franchises navigate tensions between large-market contributors and small-market recipients. You've seen theory applied to actual financial constraints and governance dynamics.
+
+**Key Takeaways:**
+- Revenue sharing creates winners and losers—mid-market teams face complex trade-offs
+- Canadian dollar fluctuations add major financial risk for Canadian franchises
+- Revenue sharing limits strategic autonomy while maintaining competitive balance
+- Real organizations face constraints theoretical models don't capture (currency, market size, ownership priorities)
+- Stakeholder analysis reveals competing interests (Toronto vs. Arizona vs. Vancouver)
+
+**Up Next: Module 6 - Your Assessment**
+You've learned the framework (Modules 2-3), applied it strategically (Module 4), and analyzed a real case (Module 5). Now it's time to demonstrate mastery. In Module 6, you'll write a comprehensive Reflection Memo synthesizing all Week 1 learning and applying it to a strategic investment decision.
+
+Ready to show what you've learned? Let's wrap up Week 1!
 
 ---
 

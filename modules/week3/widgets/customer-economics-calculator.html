@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Acquisition Economics Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            color: var(--color-neutral-600);
+            margin-bottom: 2rem;
+        }
+
+        .presets {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .preset-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .preset-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .preset-btn {
+            padding: 0.75rem;
+            border: 1px solid var(--color-neutral-300);
+            background: white;
+            border-radius: 6px;
+            font-family: 'Geist', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-900);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .preset-btn:hover {
+            background: var(--color-neutral-50);
+            border-color: var(--color-neutral-400);
+        }
+
+        .preset-btn:focus {
+            outline: none;
+            border-color: var(--color-neutral-900);
+            box-shadow: 0 0 0 3px var(--color-neutral-100);
+        }
+
+        .inputs {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.5rem;
+        }
+
+        .input-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        input[type="range"] {
+            flex: 1;
+            height: 6px;
+            border-radius: 3px;
+            background: var(--color-neutral-200);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--color-neutral-900);
+            cursor: pointer;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--color-neutral-900);
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="range"]:focus {
+            outline: none;
+        }
+
+        input[type="range"]:focus::-webkit-slider-thumb {
+            box-shadow: 0 0 0 3px var(--color-neutral-300);
+        }
+
+        .value-display {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            min-width: 80px;
+            text-align: right;
+        }
+
+        .chart-container {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            height: 400px;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.25rem;
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-neutral-600);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+        }
+
+        .metric-detail {
+            font-size: 0.75rem;
+            color: var(--color-neutral-600);
+            margin-top: 0.25rem;
+        }
+
+        .insights {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .insights h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+        }
+
+        .insight-item {
+            font-size: 0.875rem;
+            color: var(--color-neutral-700);
+            line-height: 1.5;
+            margin-bottom: 0.75rem;
+        }
+
+        .insight-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+        }
+
+        button {
+            padding: 0.625rem 1.25rem;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Geist', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: var(--color-neutral-900);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--color-neutral-800);
+        }
+
+        .btn-primary:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--color-neutral-300);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-neutral-900);
+            border: 1px solid var(--color-neutral-300);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-neutral-50);
+            border-color: var(--color-neutral-400);
+        }
+
+        .btn-secondary:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--color-neutral-200);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .input-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .metrics {
+                grid-template-columns: 1fr;
+            }
+
+            .preset-buttons {
+                grid-template-columns: 1fr;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Acquisition Economics Calculator</h1>
+        <p class="subtitle">Model CAC, LTV, and payback period using FanDuel case data</p>
+
+        <div class="presets">
+            <span class="preset-label">Load Preset Scenario:</span>
+            <div class="preset-buttons">
+                <button class="preset-btn" onclick="loadPreset('fanduel')">FanDuel Base ($400 CAC)</button>
+                <button class="preset-btn" onclick="loadPreset('partnership')">FanDuel Partnership ($152 CAC)</button>
+                <button class="preset-btn" onclick="loadPreset('draftkings')">DraftKings ($390 CAC)</button>
+                <button class="preset-btn" onclick="loadPreset('betmgm')">BetMGM ($350 CAC)</button>
+            </div>
+        </div>
+
+        <div class="inputs">
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="cac">Customer Acquisition Cost (CAC)</label>
+                    <div class="input-row">
+                        <input type="range" id="cac" min="50" max="600" value="400" step="10" aria-describedby="cac-value">
+                        <span id="cac-value" class="value-display">$400</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="wager">Average Annual Wager</label>
+                    <div class="input-row">
+                        <input type="range" id="wager" min="500" max="5000" value="2400" step="100" aria-describedby="wager-value">
+                        <span id="wager-value" class="value-display">$2,400</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="margin">Operator Margin</label>
+                    <div class="input-row">
+                        <input type="range" id="margin" min="5" max="10" value="7" step="0.5" aria-describedby="margin-value">
+                        <span id="margin-value" class="value-display">7.0%</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="tenure">Customer Tenure (Years)</label>
+                    <div class="input-row">
+                        <input type="range" id="tenure" min="5" max="15" value="10" step="1" aria-describedby="tenure-value">
+                        <span id="tenure-value" class="value-display">10 years</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="churn">Year 1 Churn Rate</label>
+                    <div class="input-row">
+                        <input type="range" id="churn" min="20" max="60" value="40" step="5" aria-describedby="churn-value">
+                        <span id="churn-value" class="value-display">40%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="metrics">
+            <div class="metric-card">
+                <div class="metric-label">Annual Profit</div>
+                <div class="metric-value" id="annualProfit">$168</div>
+                <div class="metric-detail">Per customer per year</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-label">Lifetime Value</div>
+                <div class="metric-value" id="ltv">$1,008</div>
+                <div class="metric-detail">After churn adjustment</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-label">Payback Period</div>
+                <div class="metric-value" id="payback">2.4 years</div>
+                <div class="metric-detail">Time to breakeven</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-label">Total Profit</div>
+                <div class="metric-value" id="totalProfit">$608</div>
+                <div class="metric-detail">LTV - CAC</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="timelineChart" role="img" aria-label="Profitability timeline showing cumulative profit over 10 years"></canvas>
+        </div>
+
+        <div class="insights">
+            <h3>Economic Analysis</h3>
+            <div id="insightsContent" aria-live="polite">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button class="btn-primary" onclick="calculate()">Recalculate</button>
+            <button class="btn-secondary" onclick="copyToClipboard()">📋 Copy Results</button>
+            <button class="btn-secondary" onclick="exportPlainText()">📄 Download Text</button>
+        </div>
+    </div>
+
+    <script>
+        let chart;
+
+        const presets = {
+            fanduel: {
+                cac: 400,
+                wager: 2400,
+                margin: 7,
+                tenure: 10,
+                churn: 40
+            },
+            partnership: {
+                cac: 152,
+                wager: 2400,
+                margin: 7,
+                tenure: 12, // Better retention from partnership trust
+                churn: 35 // Lower churn
+            },
+            draftkings: {
+                cac: 390,
+                wager: 2300,
+                margin: 7,
+                tenure: 10,
+                churn: 38
+            },
+            betmgm: {
+                cac: 350,
+                wager: 2100,
+                margin: 6.5, // Casino cross-sell
+                tenure: 11, // Casino loyalty
+                churn: 35
+            }
+        };
+
+        function loadPreset(preset) {
+            const data = presets[preset];
+            document.getElementById('cac').value = data.cac;
+            document.getElementById('wager').value = data.wager;
+            document.getElementById('margin').value = data.margin;
+            document.getElementById('tenure').value = data.tenure;
+            document.getElementById('churn').value = data.churn;
+
+            updateValueDisplays();
+            calculate();
+        }
+
+        function updateValueDisplays() {
+            const cac = parseFloat(document.getElementById('cac').value);
+            const wager = parseFloat(document.getElementById('wager').value);
+            const margin = parseFloat(document.getElementById('margin').value);
+            const tenure = parseFloat(document.getElementById('tenure').value);
+            const churn = parseFloat(document.getElementById('churn').value);
+
+            document.getElementById('cac-value').textContent = `$${cac}`;
+            document.getElementById('wager-value').textContent = `$${wager.toLocaleString()}`;
+            document.getElementById('margin-value').textContent = `${margin.toFixed(1)}%`;
+            document.getElementById('tenure-value').textContent = `${tenure} years`;
+            document.getElementById('churn-value').textContent = `${churn}%`;
+        }
+
+        function calculate() {
+            const cac = parseFloat(document.getElementById('cac').value);
+            const wager = parseFloat(document.getElementById('wager').value);
+            const margin = parseFloat(document.getElementById('margin').value) / 100;
+            const tenure = parseFloat(document.getElementById('tenure').value);
+            const churn = parseFloat(document.getElementById('churn').value) / 100;
+
+            // Annual profit per customer
+            const annualProfit = wager * margin;
+
+            // Effective years (accounting for churn)
+            // Simple model: Year 1 loses (churn)%, remaining customers stay for full tenure
+            const retainedCustomers = 1 - churn;
+            const effectiveYears = retainedCustomers * tenure;
+
+            // LTV
+            const ltv = annualProfit * effectiveYears;
+
+            // Payback period
+            const payback = cac / annualProfit;
+
+            // Total profit
+            const totalProfit = ltv - cac;
+
+            // Update metrics
+            document.getElementById('annualProfit').textContent = `$${Math.round(annualProfit)}`;
+            document.getElementById('ltv').textContent = `$${Math.round(ltv).toLocaleString()}`;
+            document.getElementById('payback').textContent = `${payback.toFixed(1)} years`;
+            document.getElementById('totalProfit').textContent = `$${Math.round(totalProfit).toLocaleString()}`;
+
+            // Generate timeline data
+            generateTimeline(cac, annualProfit, tenure, churn);
+
+            // Generate insights
+            generateInsights(cac, wager, margin, tenure, churn, ltv, payback, totalProfit);
+        }
+
+        function generateTimeline(cac, annualProfit, maxTenure, churn) {
+            const years = [];
+            const cumulativeProfit = [];
+
+            for (let year = 0; year <= maxTenure; year++) {
+                years.push(`Year ${year}`);
+
+                if (year === 0) {
+                    cumulativeProfit.push(-cac);
+                } else {
+                    // Apply churn: After Year 1, only (1 - churn)% remain
+                    const retentionMultiplier = year === 1 ? 1 : (1 - churn);
+                    const yearlyProfit = annualProfit * retentionMultiplier;
+                    const previousCumulative = cumulativeProfit[year - 1];
+                    cumulativeProfit.push(previousCumulative + yearlyProfit);
+                }
+            }
+
+            updateChart(years, cumulativeProfit);
+        }
+
+        function updateChart(years, data) {
+            const ctx = document.getElementById('timelineChart').getContext('2d');
+
+            if (chart) {
+                chart.destroy();
+            }
+
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: years,
+                    datasets: [{
+                        label: 'Cumulative Profit',
+                        data: data,
+                        borderColor: 'rgba(64, 64, 64, 1)',
+                        backgroundColor: 'rgba(64, 64, 64, 0.1)',
+                        borderWidth: 2,
+                        fill: true,
+                        tension: 0.1,
+                        pointRadius: 4,
+                        pointBackgroundColor: 'rgba(64, 64, 64, 1)',
+                        pointBorderColor: '#fff',
+                        pointHoverRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-900').trim(),
+                            titleFont: {
+                                family: "'Geist', sans-serif",
+                                size: 13,
+                                weight: '600'
+                            },
+                            bodyFont: {
+                                family: "'Geist', sans-serif",
+                                size: 12
+                            },
+                            padding: 12,
+                            callbacks: {
+                                label: function(context) {
+                                    const value = context.parsed.y;
+                                    return value >= 0 ?
+                                        `Profit: $${Math.round(value).toLocaleString()}` :
+                                        `Loss: -$${Math.round(Math.abs(value)).toLocaleString()}`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-200').trim()
+                            },
+                            ticks: {
+                                font: {
+                                    family: "'Geist', sans-serif",
+                                    size: 11
+                                },
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-600').trim()
+                            }
+                        },
+                        y: {
+                            grid: {
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-200').trim()
+                            },
+                            ticks: {
+                                font: {
+                                    family: "'Geist', sans-serif",
+                                    size: 11
+                                },
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-600').trim(),
+                                callback: function(value) {
+                                    return value >= 0 ?
+                                        `$${(value / 1000).toFixed(0)}K` :
+                                        `-$${Math.abs(value / 1000).toFixed(0)}K`;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function generateInsights(cac, wager, margin, tenure, churn, ltv, payback, totalProfit) {
+            const insights = [];
+
+            // Breakeven timing
+            const breakeven = Math.ceil(payback);
+            insights.push(`<strong>Breakeven Timing:</strong> Customer becomes profitable in Year ${breakeven}. Initial investment of $${cac} is recovered through ${breakeven} years of $${Math.round(wager * margin)}/year profit.`);
+
+            // Profitability assessment
+            if (totalProfit > 0) {
+                const roi = (totalProfit / cac) * 100;
+                insights.push(`<strong>Profitability:</strong> Positive unit economics with ${roi.toFixed(0)}% ROI. Each customer generates $${Math.round(totalProfit)} profit over their lifetime.`);
+            } else {
+                insights.push(`<strong>Profitability:</strong> Negative unit economics. Customer lifetime profit ($${Math.round(ltv)}) does not cover acquisition cost ($${cac}). Reduce CAC or increase retention.`);
+            }
+
+            // Sensitivity analysis - CAC
+            const cacImpact = (((cac * 1.1) - ltv) / ((cac - ltv))) * 100 - 100;
+            insights.push(`<strong>CAC Sensitivity:</strong> If CAC increases by 10% (to $${Math.round(cac * 1.1)}), profit decreases by ${Math.abs(cacImpact).toFixed(0)}%. ${cac > 300 ? 'High CAC makes you vulnerable to marketing cost inflation.' : 'Low CAC provides buffer against marketing cost increases.'}`);
+
+            // Sensitivity analysis - Churn
+            const newChurn = churn + 0.1;
+            const newEffectiveYears = (1 - newChurn) * tenure;
+            const newLTV = (wager * margin) * newEffectiveYears;
+            const churnImpact = ((newLTV - ltv) / ltv) * 100;
+            insights.push(`<strong>Churn Sensitivity:</strong> If Year 1 churn increases by 10% (to ${Math.round(newChurn * 100)}%), LTV decreases by ${Math.abs(churnImpact).toFixed(0)}% and payback extends to ${(cac / (wager * margin)).toFixed(1)} years. ${churn > 0.35 ? 'High churn is your biggest risk—invest in retention.' : 'Low churn provides strong economics.'}`);
+
+            // Case study connection
+            if (cac <= 160) {
+                insights.push(`<strong>Case Study Connection:</strong> Your $${cac} CAC matches FanDuel's partnership-driven CAC ($152 from NFL/NBA deals, per case Exhibit 6). This validates their $1.1B partnership strategy: lower CAC dramatically improves unit economics.`);
+            } else if (cac >= 380 && cac <= 420) {
+                insights.push(`<strong>Case Study Connection:</strong> Your $${cac} CAC matches FanDuel's base case ($400 industry average, per case Exhibit 5). This is why operators aggressively pursue partnerships—reducing CAC from $400 to $152 increases profit per customer by ${Math.round((856 - 608) / 608 * 100)}%.`);
+            } else {
+                insights.push(`<strong>Case Study Connection:</strong> Per case Exhibit 5, FanDuel's base CAC is $400 (paid marketing) vs. $152 (partnerships). Your $${cac} CAC is ${cac < 400 ? 'more efficient than' : 'less efficient than'} their base case.`);
+            }
+
+            document.getElementById('insightsContent').innerHTML = insights.map(i => `<div class="insight-item">${i}</div>`).join('');
+        }
+
+        function copyToClipboard() {
+            const cac = parseFloat(document.getElementById('cac').value);
+            const wager = parseFloat(document.getElementById('wager').value);
+            const margin = parseFloat(document.getElementById('margin').value) / 100;
+            const tenure = parseFloat(document.getElementById('tenure').value);
+            const churn = parseFloat(document.getElementById('churn').value) / 100;
+
+            const annualProfit = wager * margin;
+            const effectiveYears = (1 - churn) * tenure;
+            const ltv = annualProfit * effectiveYears;
+            const payback = cac / annualProfit;
+            const totalProfit = ltv - cac;
+            const roi = (totalProfit / cac) * 100;
+
+            const insightsText = document.getElementById('insightsContent').innerText;
+
+            const copyText = `
+CUSTOMER ACQUISITION ECONOMICS
+===============================
+
+INPUTS
+------
+Customer Acquisition Cost (CAC):  $${cac}
+Average Annual Wager:              $${wager.toLocaleString()}
+Operator Margin:                   ${(margin * 100).toFixed(1)}%
+Customer Tenure:                   ${tenure} years
+Year 1 Churn Rate:                 ${(churn * 100)}%
+
+
+CALCULATIONS
+------------
+Annual Profit per Customer:        $${Math.round(annualProfit)}
+Effective Years (after churn):     ${effectiveYears.toFixed(1)} years
+Lifetime Value (LTV):              $${Math.round(ltv).toLocaleString()}
+Payback Period:                    ${payback.toFixed(1)} years
+Total Profit (LTV - CAC):          $${Math.round(totalProfit).toLocaleString()}
+Return on Investment (ROI):        ${roi.toFixed(0)}%
+
+
+ECONOMIC ANALYSIS
+-----------------
+${insightsText}
+
+
+---
+Generated by: Customer Acquisition Economics Calculator
+Use this data in your FanDuel case analysis (Module 4)
+`;
+
+            navigator.clipboard.writeText(copyText).then(() => {
+                alert('✓ Results copied to clipboard! Paste into your case analysis document.');
+            }).catch(err => {
+                console.error('Copy failed:', err);
+                alert('Copy failed. Please manually copy the results from the page.');
+            });
+        }
+
+        function exportPlainText() {
+            const cac = parseFloat(document.getElementById('cac').value);
+            const wager = parseFloat(document.getElementById('wager').value);
+            const margin = parseFloat(document.getElementById('margin').value) / 100;
+            const tenure = parseFloat(document.getElementById('tenure').value);
+            const churn = parseFloat(document.getElementById('churn').value) / 100;
+
+            const annualProfit = wager * margin;
+            const effectiveYears = (1 - churn) * tenure;
+            const ltv = annualProfit * effectiveYears;
+            const payback = cac / annualProfit;
+            const totalProfit = ltv - cac;
+            const roi = (totalProfit / cac) * 100;
+
+            const insightsText = document.getElementById('insightsContent').innerText;
+            const timestamp = new Date().toLocaleString();
+
+            const plainText = `
+================================================================================
+CUSTOMER ACQUISITION ECONOMICS
+FanDuel Case Study Analysis
+Generated: ${timestamp}
+================================================================================
+
+PART 1: INPUT PARAMETERS
+────────────────────────────────────────────────────────────────────────────
+
+Customer Acquisition Cost (CAC):     $${cac}
+Average Annual Wager per Customer:   $${wager.toLocaleString()}
+Operator Margin:                      ${(margin * 100).toFixed(1)}%
+Expected Customer Tenure:             ${tenure} years
+Year 1 Churn Rate:                    ${(churn * 100)}%
+
+
+PART 2: CALCULATED METRICS
+────────────────────────────────────────────────────────────────────────────
+
+Annual Profit per Customer:           $${Math.round(annualProfit)}
+  (Calculation: $${wager.toLocaleString()} × ${(margin * 100).toFixed(1)}% = $${Math.round(annualProfit)})
+
+Effective Customer Years:             ${effectiveYears.toFixed(1)} years
+  (Calculation: (1 - ${(churn * 100)}%) × ${tenure} years = ${effectiveYears.toFixed(1)} years)
+
+Lifetime Value (LTV):                 $${Math.round(ltv).toLocaleString()}
+  (Calculation: $${Math.round(annualProfit)} × ${effectiveYears.toFixed(1)} years = $${Math.round(ltv).toLocaleString()})
+
+Payback Period:                       ${payback.toFixed(1)} years
+  (Calculation: $${cac} ÷ $${Math.round(annualProfit)} = ${payback.toFixed(1)} years)
+
+Total Profit (LTV - CAC):             $${Math.round(totalProfit).toLocaleString()}
+  (Calculation: $${Math.round(ltv).toLocaleString()} - $${cac} = $${Math.round(totalProfit).toLocaleString()})
+
+Return on Investment (ROI):           ${roi.toFixed(0)}%
+  (Calculation: ($${Math.round(totalProfit).toLocaleString()} ÷ $${cac}) × 100 = ${roi.toFixed(0)}%)
+
+
+PART 3: ECONOMIC ANALYSIS
+────────────────────────────────────────────────────────────────────────────
+
+${insightsText}
+
+
+PART 4: HOW TO USE THIS ANALYSIS
+────────────────────────────────────────────────────────────────────────────
+
+This customer economics model helps you evaluate FanDuel's unit economics:
+
+1. Compare your results to FanDuel's base case (CAC $400, per Exhibit 5)
+2. Test partnership scenarios (CAC $152, per Exhibit 6) to see CAC reduction impact
+3. Evaluate sensitivity to churn rate (FanDuel's biggest retention challenge)
+4. Calculate breakeven timing to assess investment risk
+5. Compare to competitors (DraftKings $390 CAC, BetMGM $350 CAC)
+
+Use these insights in your case analysis to:
+- Justify FanDuel's $1.1B partnership spending strategy
+- Evaluate their customer retention programs
+- Recommend optimal CAC allocation across channels
+- Assess long-term profitability sustainability
+
+
+================================================================================
+Generated by: Customer Acquisition Economics Calculator
+Course: Business of Sports Marketing - Week 3 (Sponsorship & Betting)
+Case Study: FanDuel - Betting on Sports (HBS 520038)
+================================================================================
+`;
+
+            const blob = new Blob([plainText], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `customer-economics-CAC${cac}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('✓ Text file downloaded! Open in Notepad/TextEdit to view your analysis.');
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputs = ['cac', 'wager', 'margin', 'tenure', 'churn'];
+
+            inputs.forEach(id => {
+                const input = document.getElementById(id);
+                input.addEventListener('input', function() {
+                    updateValueDisplays();
+                    calculate();
+                });
+            });
+
+            updateValueDisplays();
+            calculate();
+        });
+    </script>
+</body>
+</html>

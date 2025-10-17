@@ -1,13 +1,14 @@
 ## MODULE 1: Welcome & Learning Objectives (BOPPPS: Outcomes)
 **Purpose:** Orient students to Week 1, establish learning expectations
+**Estimated Time:** 5-7 minutes
 
 **Uplimit Structure:** First module in Unit 1
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **ⓘ Infobox (Callout)** ⬛ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
-| 2 | **▬ Text** ⬛ Required | Week 1 introduction (3 paragraphs) | Import from `week1-intro.docx` | Sets context for revenue ecosystem topic |
-| 3 | **◫ Tiles** ▣ Recommended | 4 revenue stream categories (preview) | Type directly in Uplift | Blue variant, one tile per stream |
+| 1 | **ⓘ Infobox (Callout)** ⬤ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
+| 2 | **▬ Text** ⬤ Required | Week 1 introduction (3 paragraphs) | Embedded below | Sets context for revenue ecosystem topic |
+| 3 | **◫ Tiles** ◐ Recommended | 4 revenue stream categories (preview) | Type directly in Uplimit | Blue variant, one tile per stream |
 
 ### Element 1: Infobox Content
 ```
@@ -15,14 +16,14 @@ Title: ◉ Week 1 Learning Objectives
 
 By the end of this week, you will be able to:
 • MLO 1.1: Map the major revenue streams in professional sport
-• MLO 1.2: Understand sport's unique business model characteristics
+• MLO 1.2: Explain sport's unique business model characteristics
 • MLO 1.3: Evaluate the vulnerabilities and growth potential of each revenue stream
 • MLO 1.4: Analyze different revenue sharing models across leagues
 
 This week focuses on CLO 1: Analyzing Revenue Ecosystems
 ```
 
-### Element 2: Text Content (week1-intro.docx)
+### Element 2: Text Content
 ```
 The Business of Sport: A Unique Revenue Ecosystem
 
@@ -43,25 +44,43 @@ betting legalization fundamentally changes sport's economic equation.
 ```
 
 ### Element 3: Tiles Content
-Create 4 tiles (2x2 grid):
+Create 5 tiles:
 
 **Tile 1 - Title:** "Media Rights"
-**Tile 1 - Description:** "Broadcasting, streaming, and digital content deals. The largest revenue source for most leagues."
+**Tile 1 - Description:** "Broadcasting, streaming, and digital content deals. The largest revenue source for most leagues (40-60%)."
 
 **Tile 2 - Title:** "Ticketing & Live Events"
-**Tile 2 - Description:** "Gate receipts, premium seating, hospitality. Direct fan engagement and the gameday experience."
+**Tile 2 - Description:** "Gate receipts, premium seating, hospitality. Direct fan engagement and the gameday experience (20-30%)."
 
 **Tile 3 - Title:** "Sponsorship & Partners"
-**Tile 3 - Description:** "Corporate partnerships, naming rights, jersey sponsors. Brand alignment and activation."
+**Tile 3 - Description:** "Corporate partnerships, naming rights, jersey sponsors. Brand alignment and activation (15-25%)."
 
-**Tile 4 - Title:** "Emerging Streams"
-**Tile 4 - Description:** "Betting integration, NFTs, metaverse experiences. Innovation at the revenue frontier."
+**Tile 4 - Title:** "Merchandising"
+**Tile 4 - Description:** "Apparel, licensed products, and brand extensions. Centralized models support competitive balance (5-10%)."
+
+**Tile 5 - Title:** "Betting & Gaming"
+**Tile 5 - Description:** "Sports betting partnerships and data licensing. The newest and fastest-growing frontier (2-8%, growing 30-40% annually)."
 
 **Design Rationale:**
 - **ⓘ Infobox (Callout)** makes learning objectives visible (QM Standard 2, UDL engagement)
 - **Text** provides narrative context (UDL representation)
 - **◫ Tiles** create visual preview and chunking (UDL engagement, scannable overview)
 - Students immediately understand week's scope and expectations
+
+---
+
+## Module 1 Complete - Transition to Module 2
+
+**What You've Accomplished:**
+You now know exactly where you're headed this week. You've seen the four learning objectives that will transform how you understand sports business, and you've been introduced to the five major revenue streams that power professional sport. You understand that this week focuses on analyzing revenue ecosystems—seeing sport as a unique business model where financial collaboration between competitors creates value.
+
+**Key Insight:**
+These five revenue streams don't operate independently—they form an interconnected ecosystem. This is the fundamental principle you'll explore throughout Week 1. When teams make strategic decisions, they're not just choosing between options—they're triggering cascading effects across their entire revenue ecosystem.
+
+**Up Next: Module 2 - Executive Perspective**
+Before diving into the technical details of each revenue stream, you'll hear from a senior sports business executive who has actually negotiated media deals, managed sponsorship portfolios, and built revenue strategies. They'll share the real-world challenges and strategic decisions that bring these concepts to life.
+
+Ready to learn from someone who's done it? Let's hear the executive perspective.
 
 ---
 

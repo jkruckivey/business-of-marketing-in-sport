@@ -274,6 +274,14 @@
             font-size: 1.2rem;
         }
 
+        .summary-value.zero {
+            color: var(--color-success);
+        }
+
+        .summary-value.over-budget {
+            color: var(--color-danger);
+        }
+
         .risk-meter {
             margin-top: 1.5rem;
             padding-top: 1.5rem;
@@ -749,14 +757,30 @@
             });
 
             updateSummary();
+            updateSliderMaxValues();
         }
 
         function updateAllocation(streamId, value) {
             const stream = gameState.streams.find(s => s.id === streamId);
             stream.allocation = parseInt(value);
 
-            document.getElementById(`amount-${streamId}`).textContent = formatCurrency(value);
+            document.getElementById(`amount-${streamId}`).textContent = formatCurrency(stream.allocation);
             updateSummary();
+            updateSliderMaxValues();
+        }
+
+        function updateSliderMaxValues() {
+            const totalAllocated = gameState.streams.reduce((sum, s) => sum + s.allocation, 0);
+            const remaining = gameState.budget - totalAllocated;
+
+            // Update each slider's max value to be current allocation + remaining budget
+            gameState.streams.forEach(stream => {
+                const slider = document.getElementById(`slider-${stream.id}`);
+                if (slider) {
+                    const maxForThisStream = stream.allocation + remaining;
+                    slider.max = maxForThisStream;
+                }
+            });
         }
 
         function updateSummary() {
@@ -764,7 +788,17 @@
             const remaining = gameState.budget - totalAllocated;
 
             document.getElementById('total-allocated').textContent = formatCurrency(totalAllocated);
-            document.getElementById('remaining-budget').textContent = formatCurrency(remaining);
+
+            const remainingElement = document.getElementById('remaining-budget');
+            remainingElement.textContent = formatCurrency(remaining);
+
+            // Add visual feedback for budget status
+            remainingElement.classList.remove('zero', 'over-budget');
+            if (remaining === 0) {
+                remainingElement.classList.add('zero');
+            } else if (remaining < 0) {
+                remainingElement.classList.add('over-budget');
+            }
 
             // Calculate risk
             const totalRisk = gameState.streams.reduce((sum, s) => {

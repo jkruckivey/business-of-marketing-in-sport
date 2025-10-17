@@ -1,25 +1,35 @@
-## MODULE 6: Assessment - Reflection Memo
+## MODULE 6: Assessment - Reflection Memo (BOPPPS: Post-Assessment)
 **Purpose:** Assess student understanding of Week 1 content (measures MLO 1.1, 1.2, 1.3, 1.4)
 
 **Uplimit Structure:** Sixth module in Unit 1
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
-| 2 | **AI Roleplay** ◐ Recommended | Practice pitch to private equity | Configure in Uplimit | Rehearse your investment recommendation before writing memo |
-| 2B | **Text** ⬤ Required | PAIRR Feedback Instructions | Type directly | Peer and AI Review + Reflection workflow |
-| 3 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
-| 4 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
-| 5 | **AI Chat Widget** ○ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 5 | Type directly | Sets context, connects narrative |
+| 2 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
+| 3 | **AI Roleplay** ◐ Recommended | Practice pitch to private equity | Configure in Uplimit | Rehearse your investment recommendation before writing memo |
+| 4 | **Text** ⬤ Required | PAIRR Feedback Instructions | Type directly | Peer and AI Review + Reflection workflow |
+| 5 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
+| 6 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
+| 7 | **AI Chat Widget** ○ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
 
-### Element 1: Infobox Content
+### Element 1: Connecting Introduction Text
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+You've explored revenue streams through interactive discovery in Module 3, built a five-year strategy in Module 4, and analyzed the Vancouver Canucks' real-world challenges in Module 5. You've seen how revenue ecosystems work in theory and in practice.
+
+Now it's time to demonstrate what you've learned. In this final assessment, you'll step into the role of a strategic advisor to a private equity firm considering a major investment in professional sports. They need to understand whether sports teams operate like other businesses—and if not, what makes them different. Your task: write a clear, evidence-based executive memo that synthesizes everything you've learned this week into actionable investment guidance.
+```
+
+### Element 2: Infobox Content
 ```
 Title: ▪ Assessment: Revenue Ecosystem Reflection Memo
 
 You'll write a 1-page executive memo advising a private equity firm considering investing in a professional sports team. Your memo should explain the unique characteristics of sport's revenue model and identify 2-3 factors that would influence their investment decision. This assessment measures MLOs 1.1-1.4 and is worth 30 points. Use the rubric below to guide your work.
 ```
 
-### Element 2: AI Roleplay - Private Equity Practice Pitch
+### Element 3: AI Roleplay - Private Equity Practice Pitch
 
 **🎮 Widget Purpose:** Formative practice where students rehearse their investment recommendation before writing the final memo, receiving AI feedback to strengthen their arguments and executive communication.
 
@@ -67,24 +77,24 @@ You are Sarah Chen, Managing Partner at Brookfield Capital with 15 years of priv
 - Familiar with traditional PE metrics (IRR, cash flow, market size, competitive moats)
 - Skeptical but open-minded—will be convinced by data and clear logic
 
-**Conversation Strategy (5 Questions over 10-15 minutes):**
+**Conversation Strategy (5 Questions):**
 
-1. **Opening (2 min):** "Walk me through how sports revenue works. Why should I think about it differently than other businesses?"
+1. **Opening:** "Walk me through how sports revenue works. Why should I think about it differently than other businesses?"
    - Test if they can explain ecosystem thinking, competitive balance, uncertainty of outcome
 
-2. **Revenue Streams (4-6 min):** "Talk me through 3 revenue streams. Where's the growth? Where are the limits?"
+2. **Revenue Streams:** "Talk me through 3 revenue streams. Where's the growth? Where are the limits?"
    - Probe for specific analysis with growth projections and risks
    - Challenge vague statements: "Can you be more specific? What's the data?"
 
-3. **Investment Factors (3-4 min):** "If you could only give me 2-3 factors to prioritize in my decision, what would they be and why?"
+3. **Investment Factors:** "If you could only give me 2-3 factors to prioritize in my decision, what would they be and why?"
    - Test for actionable, defensible recommendations
    - Push for specificity: "How do you know that? What's your source?"
 
-4. **Challenges (2 min):** "What am I not seeing? What concerns should I have about this investment?"
+4. **Challenges:** "What am I not seeing? What concerns should I have about this investment?"
    - Test risk awareness and critical thinking
    - Respect candor about downsides
 
-5. **Closing (1 min):** "Bottom line: Would you recommend I invest, and why?"
+5. **Closing:** "Bottom line: Would you recommend I invest, and why?"
    - Allow final synthesis and recommendation
 
 **Reward Strong Performance (use for evaluation):**
@@ -100,7 +110,7 @@ You are Sarah Chen, Managing Partner at Brookfield Capital with 15 years of priv
 - If missing evidence: "How do you know that? What's your source?"
 - If strong: "That's a compelling point. Tell me more about [specific aspect]..."
 
-**After 10-15 minutes:** Provide rubric-aligned feedback framed as: "Here's what worked well in your pitch... Here's where you can strengthen your written memo..."
+**After completing 5 questions:** Provide rubric-aligned feedback framed as: "Here's what worked well in your pitch... Here's where you can strengthen your written memo..."
 
 ---
 
@@ -190,7 +200,7 @@ This roleplay is explicitly formative (not graded) to reduce anxiety and encoura
 
 ---
 
-### Element 2B: PAIRR Feedback Instructions
+### Element 4: PAIRR Feedback Instructions
 
 **Purpose:** Integrate Peer and AI Review + Reflection (PAIRR) methodology to develop critical evaluation skills, AI literacy, and improve writing quality through dual feedback sources.
 
@@ -369,7 +379,7 @@ Sports marketing professionals increasingly use AI tools for content creation, f
 
 ---
 
-**Instructor Implementation Notes for Element 2B:**
+**Instructor Implementation Notes for Element 4:**
 
 **Setup Requirements:**
 1. Create shared Google Drive folder for draft submissions (or use Uplimit draft sharing feature)
@@ -404,7 +414,7 @@ Bonus Points: Up to 5 points for full PAIRR participation!
 
 ---
 
-### Element 3: Text Response Question Configuration
+### Element 5: Text Response Question Configuration
 
 **Element Type:** Text Response (File upload enabled)
 
@@ -517,7 +527,7 @@ The learner uses professional memo format, writes clearly and concisely with app
 
 **Total Points:** 30
 
-### Element 4: Details - Rubric Examples Content
+### Element 6: Details - Rubric Examples Content
 ```
 Title: Rubric Details & Example Excerpts
 
@@ -572,7 +582,7 @@ or deep supporting evidence."
 [Continue with remaining rubric criteria...]
 ```
 
-### Element 5: AI Chat Widget Configuration
+### Element 7: AI Chat Widget Configuration
 - **Widget Name:** "Writing Assistant"
 - **System Prompt:** "You are a helpful writing coach for MBA students. Provide feedback and suggestions on business memo writing, structure, and analysis. Do NOT write content for students. Instead, ask questions to help them clarify their thinking. Focus on: clear executive communication, logical argumentation, evidence-based reasoning, and concise writing. If students ask you to write their memo, redirect them to develop their own analysis with your guidance."
 - **Welcome Message:** "Need help with your reflection memo? I can help you organize your thoughts, strengthen your arguments, or improve your business writing. What would you like to work on?"
@@ -591,6 +601,25 @@ or deep supporting evidence."
 - Word limit ensures concision (professional communication skill)
 - Measures all 4 MLOs (comprehensive assessment of Week 1 learning)
 - **Practice-before-performance model**: AI Roleplay (Element 2) lets students rehearse arguments and receive feedback before submitting final memo (Element 3)
+
+---
+
+## Module 6 Complete - Transition to Module 7
+
+**What You've Accomplished:**
+You've completed Week 1's summative assessment—a comprehensive reflection memo demonstrating your mastery of all four learning outcomes. You've synthesized knowledge from modules 2-5, applied the revenue ecosystem framework to a strategic investment scenario, and communicated your analysis with executive-level clarity. This 30-point assessment measures your ability to analyze revenue ecosystems holistically.
+
+**Key Takeaways:**
+- You can map all five major revenue streams and their relative importance
+- You understand sport's unique business model (why competitors collaborate financially)
+- You can evaluate growth potential and vulnerabilities across revenue sources
+- You can analyze revenue-sharing models and their strategic implications
+- You've practiced the PAIRR methodology (Peer and AI Review + Reflection)
+
+**Up Next: Module 7 - Wrap-Up and Week 2 Preview**
+Week 1 is nearly complete. In Module 7, you'll consolidate your learning with key takeaways, see how this week connects to your course project, and get a preview of Week 2's focus on media rights and fan monetization strategies.
+
+One more module to go—let's bring Week 1 home!
 
 ---
 

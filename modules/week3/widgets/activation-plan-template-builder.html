@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activation Plan Template Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 0.875rem;
+            color: var(--color-neutral-600);
+            margin-bottom: 2rem;
+        }
+
+        .inputs {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .input-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.5rem;
+        }
+
+        select {
+            width: 100%;
+            padding: 0.625rem;
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+            font-family: 'Geist', sans-serif;
+            font-size: 0.875rem;
+            color: var(--color-neutral-900);
+            background: white;
+            transition: all 0.2s ease;
+        }
+
+        select:hover {
+            border-color: var(--color-neutral-400);
+        }
+
+        select:focus {
+            outline: none;
+            border-color: var(--color-neutral-900);
+            box-shadow: 0 0 0 3px var(--color-neutral-100);
+        }
+
+        .input-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        input[type="range"] {
+            flex: 1;
+            height: 6px;
+            border-radius: 3px;
+            background: var(--color-neutral-200);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--color-neutral-900);
+            cursor: pointer;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--color-neutral-900);
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="range"]:focus::-webkit-slider-thumb {
+            box-shadow: 0 0 0 3px var(--color-neutral-300);
+        }
+
+        .value-display {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            min-width: 80px;
+            text-align: right;
+        }
+
+        .section {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+        }
+
+        .section h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-neutral-800);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .section h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .template-text {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 4px;
+            padding: 1rem;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            color: var(--color-neutral-700);
+            margin-bottom: 1rem;
+        }
+
+        .template-text strong {
+            color: var(--color-neutral-900);
+        }
+
+        .editable {
+            background: var(--color-neutral-100);
+            padding: 0.125rem 0.25rem;
+            border-radius: 2px;
+            font-style: italic;
+        }
+
+        .question-prompt {
+            background: var(--color-neutral-50);
+            border-left: 3px solid var(--color-neutral-400);
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .question-prompt .question {
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .question-prompt .hint {
+            font-size: 0.75rem;
+            color: var(--color-neutral-600);
+            font-style: italic;
+            margin-bottom: 0.75rem;
+        }
+
+        .answer-field {
+            width: 100%;
+            min-height: 80px;
+            padding: 0.75rem;
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 4px;
+            font-family: 'Geist', sans-serif;
+            font-size: 0.875rem;
+            color: var(--color-neutral-900);
+            resize: vertical;
+        }
+
+        .answer-field:focus {
+            outline: none;
+            border-color: var(--color-neutral-900);
+            box-shadow: 0 0 0 3px var(--color-neutral-100);
+        }
+
+        .guidance-box {
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 4px;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 0.75rem;
+            color: var(--color-neutral-700);
+        }
+
+        .guidance-box strong {
+            color: var(--color-neutral-900);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border: 1px solid var(--color-neutral-200);
+            font-size: 0.875rem;
+        }
+
+        th {
+            background: var(--color-neutral-100);
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            color: var(--color-neutral-700);
+        }
+
+        .number {
+            text-align: right;
+            font-weight: 500;
+            color: var(--color-neutral-900);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 0.625rem 1.25rem;
+            border: none;
+            border-radius: 6px;
+            font-family: 'Geist', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: var(--color-neutral-900);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--color-neutral-800);
+        }
+
+        .btn-primary:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--color-neutral-300);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-neutral-900);
+            border: 1px solid var(--color-neutral-300);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-neutral-50);
+            border-color: var(--color-neutral-400);
+        }
+
+        .btn-secondary:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--color-neutral-200);
+        }
+
+        .helper-text {
+            font-size: 0.75rem;
+            color: var(--color-neutral-600);
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .input-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            table {
+                font-size: 0.75rem;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Activation Plan Template Builder</h1>
+        <p class="subtitle">Answer guided questions to build your sponsorship activation plan (question-based scaffolding)</p>
+
+        <div class="inputs">
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="brand">Brand</label>
+                    <select id="brand">
+                        <option value="Nike">Nike (Sports Performance)</option>
+                        <option value="Coca-Cola">Coca-Cola (Mass Market)</option>
+                        <option value="Verizon">Verizon (Technology)</option>
+                        <option value="American Express">American Express (Premium)</option>
+                        <option value="Bud Light">Bud Light (Alcohol)</option>
+                        <option value="Custom">Custom Brand</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="operator">Betting Operator</label>
+                    <select id="operator">
+                        <option value="FanDuel">FanDuel</option>
+                        <option value="DraftKings">DraftKings</option>
+                        <option value="BetMGM">BetMGM</option>
+                        <option value="Caesars">Caesars</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="budget">Total Activation Budget</label>
+                    <div class="input-row">
+                        <input type="range" id="budget" min="10" max="15" value="12.5" step="0.5" aria-describedby="budget-value">
+                        <span id="budget-value" class="value-display">$12.5M</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="btn-primary" onclick="generateTemplate()">Generate Template</button>
+                <button class="btn-secondary" onclick="copyTemplate()">📋 Copy to Clipboard</button>
+                <button class="btn-secondary" onclick="exportPlainText()">📄 Download Text File</button>
+                <button class="btn-secondary" onclick="exportPDF()">📑 Download PDF</button>
+            </div>
+            <p class="helper-text" style="margin-top: 0.5rem;">
+                <strong>Export Options:</strong> Copy to paste into Google Docs, or download as Text/PDF for your records
+            </p>
+        </div>
+
+        <div class="section" id="strategySection">
+            <h2>Part 1: Strategic Foundation</h2>
+            <div id="strategyContent">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="section" id="budgetSection">
+            <h2>Part 2: Budget Allocation</h2>
+            <div id="budgetContent">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+
+        <div class="section" id="roiSection">
+            <h2>Part 3: ROI Projections</h2>
+            <div id="roiContent">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const brandProfiles = {
+            'Nike': {
+                category: 'Sports Performance',
+                audience: '18-34 year old male sneakerheads and NBA fans who bet on sports',
+                objectives: [
+                    'Increase Nike app downloads by 250,000 among NBA bettors within 12 months',
+                    'Drive 15% sales lift in basketball footwear category through betting audience targeting',
+                    'Build first-party data partnership with operator to enable attribution tracking'
+                ],
+                rationale: 'Nike targets younger, digitally-native consumers who over-index on sports betting. Partnership provides access to highly engaged NBA bettors with disposable income.',
+                budgetMix: { advertising: 30, digital: 35, retail: 20, experiential: 10, measurement: 5 },
+                cpm: 35,
+                engagement: 0.8,
+                conversion: 6
+            },
+            'Coca-Cola': {
+                category: 'Mass Market',
+                audience: 'Broad demographic NFL/MLB betting audience, ages 25-54',
+                objectives: [
+                    'Achieve 500M brand impressions across betting platforms within 12 months',
+                    'Increase purchase intent by 12% among sports bettors (measured via geo-lift study)',
+                    'Drive retail sales lift of 8% in convenience stores near stadiums'
+                ],
+                rationale: 'Coca-Cola seeks mass reach and brand visibility. Betting operators provide access to millions of engaged sports fans across all demographics.',
+                budgetMix: { advertising: 45, digital: 20, retail: 20, experiential: 10, measurement: 5 },
+                cpm: 25,
+                engagement: 0.4,
+                conversion: 3
+            },
+            'Verizon': {
+                category: 'Technology',
+                audience: 'Tech-savvy sports bettors ages 25-45, high data usage consumers',
+                objectives: [
+                    'Acquire 100,000 new wireless customers from betting audience (tracked via promo codes)',
+                    'Drive 20% increase in 5G device upgrades among existing betting customers',
+                    'Build attribution model linking betting app usage to Verizon network performance'
+                ],
+                rationale: 'Verizon targets high-value customers who stream live games and use data-intensive betting apps. Partnership validates network quality for live betting.',
+                budgetMix: { advertising: 25, digital: 40, retail: 15, experiential: 15, measurement: 5 },
+                cpm: 40,
+                engagement: 0.6,
+                conversion: 4
+            },
+            'American Express': {
+                category: 'Premium',
+                audience: 'High net worth sports bettors, ages 35-55, $150K+ household income',
+                objectives: [
+                    'Acquire 50,000 new Platinum Card members from betting audience ($550 annual fee)',
+                    'Drive 25% increase in card usage at sports betting operators and sports bars',
+                    'Build exclusive hospitality program for Amex + operator VIP customers'
+                ],
+                rationale: 'American Express targets affluent customers who bet larger amounts. Operator data enables precision targeting of high-value bettors.',
+                budgetMix: { advertising: 20, digital: 25, retail: 10, experiential: 40, measurement: 5 },
+                cpm: 60,
+                engagement: 1.2,
+                conversion: 8
+            },
+            'Bud Light': {
+                category: 'Alcohol',
+                audience: 'Male sports fans ages 21-45 who bet on NFL/MLB/NHL',
+                objectives: [
+                    'Increase Bud Light sales by 10% in markets with legal sports betting',
+                    'Drive 300,000 promo code redemptions for co-branded betting promotions',
+                    'Build geo-fenced targeting around stadiums to drive same-day purchase lift'
+                ],
+                rationale: 'Bud Light targets male sports viewers who consume alcohol while watching games and betting. Partnership links game-day drinking to betting behavior.',
+                budgetMix: { advertising: 40, digital: 25, retail: 25, experiential: 5, measurement: 5 },
+                cpm: 20,
+                engagement: 0.5,
+                conversion: 4
+            },
+            'Custom': {
+                category: 'Custom',
+                audience: '[Define your target audience: age, gender, income, betting behavior]',
+                objectives: [
+                    '[Objective 1: Specific, Measurable, Achievable, Relevant, Time-bound]',
+                    '[Objective 2: Include quantifiable target]',
+                    '[Objective 3: Tie to business outcome (sales, acquisition, retention)]'
+                ],
+                rationale: '[Explain why this brand-operator pairing makes strategic sense based on audience overlap, category fit, and competitive positioning]',
+                budgetMix: { advertising: 35, digital: 25, retail: 20, experiential: 15, measurement: 5 },
+                cpm: 30,
+                engagement: 0.5,
+                conversion: 4
+            }
+        };
+
+        function updateBudgetDisplay() {
+            const budget = parseFloat(document.getElementById('budget').value);
+            document.getElementById('budget-value').textContent = `$${budget.toFixed(1)}M`;
+        }
+
+        function generateTemplate() {
+            const brand = document.getElementById('brand').value;
+            const operator = document.getElementById('operator').value;
+            const budget = parseFloat(document.getElementById('budget').value);
+
+            const profile = brandProfiles[brand];
+
+            // Generate Strategy Section with QUESTIONS instead of answers
+            const strategyHTML = `
+                <div class="guidance-box">
+                    <strong>${brand} × ${operator} Partnership</strong><br>
+                    You selected ${brand} (${profile.category} category) partnering with ${operator}. Now answer the questions below to build your strategic foundation.
+                </div>
+
+                <h3>1. Strategic Rationale</h3>
+                <div class="question-prompt">
+                    <div class="question">Why does this brand-operator pairing make strategic sense?</div>
+                    <div class="hint">Consider: audience overlap, category fit, competitive positioning, first-party data opportunities</div>
+                    <textarea class="answer-field" id="rationale-answer" placeholder="Explain your strategic rationale (2-3 sentences)..." aria-label="Strategic rationale answer"></textarea>
+                </div>
+
+                <h3>2. Target Audience Definition</h3>
+                <div class="question-prompt">
+                    <div class="question">Who is your primary target audience?</div>
+                    <div class="hint">Include: age range, gender, income level, psychographic profile (e.g., sneakerheads, casual fans), quantified size in millions</div>
+                    <textarea class="answer-field" id="audience-answer" placeholder="Example: Men 25-40, $75K+ household income, NBA fans who bet weekly, ~8M people in legal betting states..." aria-label="Target audience answer"></textarea>
+                </div>
+                <div class="guidance-box">
+                    <strong>Betting Behavior Context:</strong> ${getBettingBehavior(operator)}
+                </div>
+
+                <h3>3. SMART Objectives (Write 3)</h3>
+                <div class="question-prompt">
+                    <div class="question">Objective 1: What specific, measurable business outcome will you achieve?</div>
+                    <div class="hint">Must include: specific metric, quantifiable target (%), timeframe (12 months). Example: "Increase Nike app downloads by 250,000 among NBA bettors within 12 months"</div>
+                    <textarea class="answer-field" id="objective1-answer" placeholder="Write your first SMART objective..." aria-label="Objective 1 answer"></textarea>
+                </div>
+                <div class="question-prompt">
+                    <div class="question">Objective 2: What sales or engagement lift will this partnership drive?</div>
+                    <div class="hint">Tie to revenue or customer acquisition. Use % lift and category specificity.</div>
+                    <textarea class="answer-field" id="objective2-answer" placeholder="Write your second SMART objective..." aria-label="Objective 2 answer"></textarea>
+                </div>
+                <div class="question-prompt">
+                    <div class="question">Objective 3: How will you leverage betting partnership advantages?</div>
+                    <div class="hint">Consider: first-party data access, attribution tracking, engagement multiplier effects</div>
+                    <textarea class="answer-field" id="objective3-answer" placeholder="Write your third SMART objective..." aria-label="Objective 3 answer"></textarea>
+                </div>
+            `;
+            document.getElementById('strategyContent').innerHTML = strategyHTML;
+
+            // Generate Budget Section with guidance
+            const budgetHTML = generateBudgetTable(profile.budgetMix, budget);
+            document.getElementById('budgetContent').innerHTML = budgetHTML;
+
+            // Generate ROI Section with scaffolding questions
+            const roiHTML = generateROITable(profile, budget);
+            document.getElementById('roiContent').innerHTML = roiHTML;
+        }
+
+        function getBettingBehavior(operator) {
+            const behaviors = {
+                'FanDuel': 'High engagement users (45% market share), prefer NFL/NBA betting, avg $2,400/year wager',
+                'DraftKings': 'DFS-crossover users (25% market share), prefer MLB/NBA, avg $2,300/year wager',
+                'BetMGM': 'Casino crossover users (12% market share), prefer in-person + online hybrid, avg $2,100/year wager',
+                'Caesars': 'Loyalty program members (10% market share), prefer casino + sports combo, avg $2,200/year wager'
+            };
+            return behaviors[operator];
+        }
+
+        function generateBudgetTable(mix, totalBudget) {
+            const channels = [
+                { name: 'Advertising', key: 'advertising', examples: 'TV spots during games, digital ads in operator app, social media campaigns' },
+                { name: 'Digital/Social', key: 'digital', examples: 'Influencer partnerships, co-branded content, social media amplification' },
+                { name: 'Retail/Product', key: 'retail', examples: 'In-store promotions, limited-edition products, QR code integrations' },
+                { name: 'Experiential', key: 'experiential', examples: 'Stadium activations, VIP hospitality, fan events' },
+                { name: 'Measurement', key: 'measurement', examples: 'Analytics platform, attribution tracking, geo-lift studies' }
+            ];
+
+            let tableHTML = `
+                <div class="guidance-box">
+                    <strong>Budget Planning Guidance</strong><br>
+                    Industry standard: ${mix.advertising}% Advertising, ${mix.digital}% Digital, ${mix.retail}% Retail, ${mix.experiential}% Experiential, ${mix.measurement}% Measurement<br>
+                    Your budget: $${totalBudget.toFixed(1)}M total activation budget
+                </div>
+
+                <table role="table">
+                    <thead>
+                        <tr>
+                            <th>Channel</th>
+                            <th>Your Allocation %</th>
+                            <th>Your Spend ($M)</th>
+                            <th>What Tactics Will You Use?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            channels.forEach(channel => {
+                const percentage = mix[channel.key];
+                const spend = (totalBudget * percentage / 100).toFixed(2);
+                tableHTML += `
+                    <tr>
+                        <td><strong>${channel.name}</strong></td>
+                        <td class="number"><input type="number" min="0" max="100" value="${percentage}" style="width: 60px; text-align: right;" aria-label="${channel.name} allocation percentage">%</td>
+                        <td class="number">$<span class="spend-calc">${spend}</span>M</td>
+                        <td><textarea class="answer-field" style="min-height: 60px;" placeholder="Example: ${channel.examples}" aria-label="${channel.name} tactics"></textarea></td>
+                    </tr>
+                `;
+            });
+
+            tableHTML += `
+                    <tr style="background: var(--color-neutral-100);">
+                        <td><strong>Total</strong></td>
+                        <td class="number"><strong id="total-percent">100%</strong></td>
+                        <td class="number"><strong>$${totalBudget.toFixed(1)}M</strong></td>
+                        <td><em>Activation budget (should follow 2-3× rights fee rule)</em></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="helper-text">
+                <strong>Questions to Answer:</strong><br>
+                • Why did you allocate more to certain channels? (Justify based on your brand's priorities)<br>
+                • How do your tactics leverage the betting partnership advantage?<br>
+                • Does your measurement budget (5-10%) support robust attribution tracking?
+            </p>
+            `;
+
+            return tableHTML;
+        }
+
+        function generateROITable(profile, activationBudget) {
+            const rightsFee = 5; // Assume $5M rights fee
+            const totalInvestment = rightsFee + activationBudget;
+
+            // Industry benchmarks (not answers - just guidance)
+            const avgPurchase = profile.category === 'Premium' ? 250 : profile.category === 'Sports Performance' ? 150 : 100;
+
+            let tableHTML = `
+                <div class="guidance-box">
+                    <strong>ROI Calculation Framework</strong><br>
+                    Use course widgets (Sponsorship Valuation Calculator, Customer Economics Calculator) to calculate these metrics based on YOUR activation strategy.
+                </div>
+
+                <h3>Step 1: Calculate Your Assumptions</h3>
+                <div class="question-prompt">
+                    <div class="question">What CPM will your activation achieve?</div>
+                    <div class="hint">Industry benchmarks: TV $25-40, Digital $5-15, Social $2-5. Use Sponsorship Valuation Calculator from Module 2 to model YOUR brand's CPM.</div>
+                    <input type="number" class="answer-field" style="min-height: 40px;" placeholder="Enter your CPM (e.g., 35)..." aria-label="CPM assumption">
+                </div>
+
+                <div class="question-prompt">
+                    <div class="question">What engagement rate do you expect?</div>
+                    <div class="hint">Engagement multiplier from Module 3: Bettors watch 35-50% more games. How does this translate to your activation? (e.g., 0.5% click-through rate, 2% app install rate)</div>
+                    <input type="number" class="answer-field" style="min-height: 40px;" placeholder="Enter engagement rate as % (e.g., 0.8)..." aria-label="Engagement rate assumption" step="0.1">
+                </div>
+
+                <div class="question-prompt">
+                    <div class="question">What conversion rate do you project?</div>
+                    <div class="hint">% of engaged users who make a purchase. Typical range: 2-8%. Premium brands higher, mass market lower. Reference FanDuel case conversion data.</div>
+                    <input type="number" class="answer-field" style="min-height: 40px;" placeholder="Enter conversion rate as % (e.g., 6)..." aria-label="Conversion rate assumption" step="0.1">
+                </div>
+
+                <h3>Step 2: Calculate Your ROI Projections</h3>
+                <div class="template-text">
+                    <strong>Your ROI Calculation Framework:</strong><br><br>
+                    1. <strong>Total Investment:</strong> Rights fee ($5M assumed) + Activation budget ($${activationBudget.toFixed(1)}M) = $${totalInvestment.toFixed(1)}M<br>
+                    2. <strong>Total Impressions:</strong> Investment / Your CPM × 1,000 = ?<br>
+                    3. <strong>Engaged Users:</strong> Impressions × Your Engagement Rate = ?<br>
+                    4. <strong>New Customers:</strong> Engaged × Your Conversion Rate = ?<br>
+                    5. <strong>Avg Purchase Value:</strong> ${profile.category} category benchmark ≈ $${avgPurchase} (adjust based on your brand)<br>
+                    6. <strong>Total Revenue:</strong> Customers × Avg Purchase = ?<br>
+                    7. <strong>ROI %:</strong> (Revenue - Investment) / Investment × 100 = ?
+                </div>
+
+                <h3>Step 3: Document Your Attribution Methodology</h3>
+                <div class="question-prompt">
+                    <div class="question">How will you attribute revenue to this sponsorship (vs. what would have happened anyway)?</div>
+                    <div class="hint">FanDuel case best practice: 30% attribution discount. OR use control group comparison. Explain your methodology and assumptions.</div>
+                    <textarea class="answer-field" placeholder="Describe your attribution approach (e.g., 'We'll apply a 30% attribution discount, assuming 70% of conversions are incremental. Validated via geo-lift study comparing markets with vs. without activation.')..." aria-label="Attribution methodology"></textarea>
+                </div>
+
+                <div class="question-prompt">
+                    <div class="question">Are your assumptions conservative or optimistic? Why?</div>
+                    <div class="hint">Good ROI projections acknowledge uncertainty. State which assumptions are conservative (e.g., "Using 35% engagement multiplier, low end of 35-50% range from Module 3 data").</div>
+                    <textarea class="answer-field" placeholder="Explain your conservatism or optimism (e.g., 'Our 6% conversion rate is conservative vs. industry 8% avg because we lack first-party data integration in Year 1.')..." aria-label="Conservative assumptions explanation"></textarea>
+                </div>
+
+                <p class="helper-text">
+                    <strong>Use widgets to validate calculations:</strong><br>
+                    • Module 2: Sponsorship Valuation Calculator → CPM benchmarks<br>
+                    • Module 3: Betting Market Simulator → Engagement multiplier data<br>
+                    • Module 4: Customer Economics Calculator → Conversion funnels<br><br>
+                    <strong>Attach widget screenshots</strong> as appendix (doesn't count toward 2-page limit) to show your calculation logic.
+                </p>
+            `;
+
+            return tableHTML;
+        }
+
+        function copyTemplate() {
+            const brand = document.getElementById('brand').value;
+            const operator = document.getElementById('operator').value;
+
+            // Collect student answers from text fields
+            const rationale = document.getElementById('rationale-answer')?.value || '[Complete your rationale]';
+            const audience = document.getElementById('audience-answer')?.value || '[Define your target audience]';
+            const obj1 = document.getElementById('objective1-answer')?.value || '[Write SMART objective 1]';
+            const obj2 = document.getElementById('objective2-answer')?.value || '[Write SMART objective 2]';
+            const obj3 = document.getElementById('objective3-answer')?.value || '[Write SMART objective 3]';
+
+            const fullTemplate = `ACTIVATION PLAN TEMPLATE: ${brand} × ${operator}
+
+=== PART 1: STRATEGIC FOUNDATION ===
+
+Strategic Rationale:
+${rationale}
+
+Target Audience:
+${audience}
+
+Strategic Objectives:
+1. ${obj1}
+2. ${obj2}
+3. ${obj3}
+
+=== PART 2: BUDGET ALLOCATION ===
+
+[Copy your budget allocation table and tactics from the widget]
+
+=== PART 3: ROI PROJECTIONS ===
+
+[Copy your ROI assumptions and calculations from the widget]
+[Attach widget screenshots as appendix to show calculation logic]
+
+---
+Generated by Activation Plan Template Builder
+Complete all questions in the widget, then copy your answers to your final PDF`;
+
+            navigator.clipboard.writeText(fullTemplate).then(() => {
+                alert('Your answers copied to clipboard! Paste into Google Docs and complete remaining sections.');
+            }).catch(err => {
+                console.error('Copy failed:', err);
+                alert('Copy failed. Please manually copy your answers from the widget.');
+            });
+        }
+
+        function exportPlainText() {
+            const brand = document.getElementById('brand').value;
+            const operator = document.getElementById('operator').value;
+            const budget = parseFloat(document.getElementById('budget').value);
+
+            // Collect student answers
+            const rationale = document.getElementById('rationale-answer')?.value || '[Complete your rationale]';
+            const audience = document.getElementById('audience-answer')?.value || '[Define your target audience]';
+            const obj1 = document.getElementById('objective1-answer')?.value || '[Write SMART objective 1]';
+            const obj2 = document.getElementById('objective2-answer')?.value || '[Write SMART objective 2]';
+            const obj3 = document.getElementById('objective3-answer')?.value || '[Write SMART objective 3]';
+
+            const timestamp = new Date().toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+
+            const plainText = `
+================================================================================
+SPONSORSHIP ACTIVATION PLAN
+${brand} × ${operator} Partnership
+Generated: ${timestamp}
+================================================================================
+
+PART 1: STRATEGIC FOUNDATION
+────────────────────────────────────────────────────────────────────────────
+
+Partnership Details:
+• Brand: ${brand}
+• Betting Operator: ${operator}
+• Activation Budget: $${budget.toFixed(1)}M
+
+Strategic Rationale:
+${rationale}
+
+Target Audience:
+${audience}
+
+Strategic Objectives:
+1. ${obj1}
+
+2. ${obj2}
+
+3. ${obj3}
+
+
+PART 2: BUDGET ALLOCATION
+────────────────────────────────────────────────────────────────────────────
+
+[Complete budget allocation table in the widget above, then manually copy
+your channel allocations and tactics here]
+
+Total Activation Budget: $${budget.toFixed(1)}M
+
+
+PART 3: ROI PROJECTIONS
+────────────────────────────────────────────────────────────────────────────
+
+[Use course widgets to calculate your ROI assumptions:
+• Module 2: Sponsorship Valuation Calculator → CPM benchmarks
+• Module 3: Betting Market Simulator → Engagement multiplier data
+• Module 4: Customer Economics Calculator → Conversion funnels
+
+Then document your calculations and assumptions here.]
+
+
+APPENDIX: Widget Screenshots
+────────────────────────────────────────────────────────────────────────────
+
+Attach screenshots of:
+• Activation Plan Template Builder (this widget)
+• Sponsorship Valuation Calculator (CPM calculation)
+• Customer Economics Calculator (ROI projection)
+
+
+================================================================================
+Generated by: Activation Plan Template Builder
+Course: Business of Sports Marketing - Week 3
+Module 5: Group Sprint Assessment
+
+Next Steps:
+1. Complete all questions in the widget
+2. Copy/export your answers
+3. Paste into Google Docs or Word
+4. Add budget allocation details
+5. Complete ROI calculations using course widgets
+6. Format as professional 2-page PDF
+7. Submit via Uplimit by end of Module 6
+================================================================================
+`;
+
+            const blob = new Blob([plainText], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `activation-plan-${brand}-${operator}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('✓ Text file downloaded! Open in Notepad/TextEdit to view your plan.');
+        }
+
+        function exportPDF() {
+            alert('PDF Export Coming Soon!\n\nFor now, please:\n1. Click "Copy to Clipboard"\n2. Paste into Google Docs\n3. Add your budget and ROI details\n4. File → Download → PDF\n\nThis creates a professional PDF ready for submission.');
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('brand').addEventListener('change', generateTemplate);
+            document.getElementById('operator').addEventListener('change', generateTemplate);
+            document.getElementById('budget').addEventListener('input', function() {
+                updateBudgetDisplay();
+                generateTemplate();
+            });
+
+            updateBudgetDisplay();
+            generateTemplate();
+        });
+    </script>
+</body>
+</html>

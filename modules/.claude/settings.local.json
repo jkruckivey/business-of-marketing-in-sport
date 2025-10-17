@@ -12,7 +12,9 @@
       "Read(//c/Users/jkruck/.claude/**)",
       "Bash(git remote add:*)",
       "Bash(claude-code --version)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git pull:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []

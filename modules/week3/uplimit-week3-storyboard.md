@@ -135,7 +135,16 @@ Build a 1-page activation plan with ROI projections using real brand and propert
 
 **Embed Code:**
 ```html
-<iframe src="[Uplimit video URL]" width="100%" height="450" style="border:none;" allow="autoplay; fullscreen" title="Andrew Sneyd - FanDuel Betting Industry Overview"></iframe>
+<iframe
+  src="[Uplimit video URL]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Andrew Sneyd - FanDuel Betting Industry Overview"
+  aria-label="Video interview with Andrew Sneyd from FanDuel discussing sports betting industry transformation and growth statistics"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 **Video Script (2 minutes):**
@@ -171,7 +180,16 @@ Build a 1-page activation plan with ROI projections using real brand and propert
 
 **Embed Code:**
 ```html
-<iframe src="[Uplimit video URL]" width="100%" height="450" style="border:none;" allow="autoplay; fullscreen" title="Brand Sponsor - Sports Partnership ROI Framework"></iframe>
+<iframe
+  src="[Uplimit video URL]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Brand Sponsor - Sports Partnership ROI Framework"
+  aria-label="Video interview with brand sponsorship executive explaining ROI framework and activation budget strategies"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 **Video Script (2 minutes):**
@@ -342,6 +360,8 @@ You've connected Week 2's media rights focus to Week 3's sponsorship and betting
 
 **Up Next: Module 2 - Sponsorship Framework**
 Now that you understand why sponsorship matters, let's build the framework: how do brands evaluate partnership opportunities, calculate ROI, and design activations that deliver measurable value? You'll use interactive widgets to model real sponsorship deals and practice the ROI calculations brands use daily.
+
+Ready to calculate ROI like a brand strategist? Let's build the framework!
 
 ---
 
@@ -604,6 +624,26 @@ Export your calculation and move to the next widget (Activation Budget Builder).
 
 ## Element 3: Interactive Widget - Sponsorship Valuation Calculator
 
+### ⚙ Interactive Activity: Sponsorship Valuation Calculator
+
+**Practice: MLO 3.3 (Calculate how brands measure ROI)**
+
+You're now ready to use the industry-standard method that brands use to evaluate sponsorship deals. In this hands-on calculator, you'll step into the role of a brand's CMO evaluating a potential sports sponsorship. Your challenge: determine whether you're paying a fair price per impression compared to traditional advertising channels.
+
+This calculator empowers you to input real deal parameters—rights fees, broadcast reach, stadium attendance, digital impressions—and instantly see how they translate into total impressions and cost-per-thousand (CPM). You'll benchmark your deal against TV advertising and social media to determine if it represents excellent, good, fair, or poor value. By the end, you'll understand why small logos on NFL jerseys command $25M+ annual fees while understanding the mathematical justification behind those numbers.
+
+**What you'll discover:**
+
+- How to calculate total impressions across broadcast, in-stadium, and digital channels using weighted formulas
+- Industry-standard CPM calculations and how sponsorships compare to traditional advertising benchmarks
+- Why frequency (multiple exposures over a season) often delivers more value than single high-reach moments
+- How to grade deal value using real-world benchmarks from NFL, EPL, NBA, and MLS partnerships
+
+**Time commitment:** 8-10 minutes
+**Learning outcomes practiced:** MLO 3.3 (Calculate how brands measure ROI in sport partnerships)
+
+---
+
 **🎮 Widget Purpose:** Calculate CPM, total impressions, and exposure value for sponsorship deals using industry-standard formulas.
 
 **Widget Status:** ✅ Built and ready (558 lines, 100% Uplimit compliance)
@@ -656,12 +696,16 @@ Export your calculation and move to the next widget (Activation Budget Builder).
 
 **Embed Code:**
 ```html
-<iframe src="modules/week3/widgets/sponsorship-valuation-calculator.html"
-        width="100%"
-        height="700"
-        style="border: 1px solid #e2e8f0; border-radius: 8px;"
-        allow="clipboard-write"
-        title="Sponsorship Valuation Calculator - Calculate CPM and exposure value"></iframe>
+<iframe
+  src="modules/week3/widgets/sponsorship-valuation-calculator.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Sponsorship Valuation Calculator - Calculate CPM and exposure value"
+  aria-label="Interactive calculator for sponsorship valuation where you input venue capacity, games per season, and media impressions to calculate cost per thousand impressions"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 ---
@@ -727,6 +771,26 @@ Export your activation budget. You'll use it in Module 5's group sprint to desig
 
 ## Element 5: Interactive Widget - Activation Budget Builder
 
+### ⚙ Interactive Activity: Activation Budget Builder
+
+**Practice: MLO 3.4 (Design sponsorship activations that deliver measurable value)**
+
+Now that you've calculated your sponsorship's CPM value, it's time to design the activation strategy that will extract maximum ROI from your partnership. Remember the 1:2-3 rule: for every dollar spent on rights fees, brands invest $2-3 on activation to amplify the partnership. This widget puts you in the driver's seat as a Sponsorship Activation Manager allocating a multi-million dollar budget across strategic channels.
+
+You'll apply the activation multiplier to calculate your total investment, then strategically distribute that budget across six key channels: advertising, hospitality, retail, digital content, experiential events, and measurement. The widget provides real-world benchmarks from mass market brands (Coca-Cola), premium brands (American Express), and digital-first brands (Red Bull) so you can see how your allocation compares to industry standards. Your goal: design a balanced mix that aligns with your brand category while maximizing impact across touchpoints.
+
+**What you'll discover:**
+
+- How to apply the 1:2-3 activation multiplier rule to calculate total sponsorship investment beyond rights fees
+- Strategic budget allocation patterns across six activation channels based on brand category positioning
+- Industry benchmarks from real partnerships (Coca-Cola World Cup, American Express PGA, Red Bull F1)
+- How to evaluate "strategic fit" by comparing your allocation to category norms and identifying intentional deviations
+
+**Time commitment:** 10-12 minutes
+**Learning outcomes practiced:** MLO 3.4 (Design sponsorship activations that deliver measurable value)
+
+---
+
 **🎮 Widget Purpose:** Design activation mix across channels (advertising, hospitality, retail, digital, events) within a total budget constraint.
 
 **Widget Status:** ✅ Built and ready (671 lines, 100% Uplimit compliance)
@@ -787,12 +851,16 @@ Export your activation budget. You'll use it in Module 5's group sprint to desig
 
 **Embed Code:**
 ```html
-<iframe src="modules/week3/widgets/activation-budget-builder.html"
-        width="100%"
-        height="750"
-        style="border: 1px solid #e2e8f0; border-radius: 8px;"
-        allow="clipboard-write"
-        title="Activation Budget Builder - Design channel allocation mix"></iframe>
+<iframe
+  src="modules/week3/widgets/activation-budget-builder.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Activation Budget Builder - Design channel allocation mix"
+  aria-label="Interactive budget builder for activation strategy where you allocate marketing spend across six channels including digital advertising, hospitality, and experiential marketing"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 ---
@@ -884,6 +952,26 @@ Export your ROI model. Compare it to your activation budget—if ROI < 15%, real
 
 ## Element 8: Interactive Widget - ROI Calculator
 
+### ⚙ Interactive Activity: ROI Calculator
+
+**Practice: MLO 3.3 (Calculate how brands measure ROI in sport partnerships)**
+
+You've valued the sponsorship using CPM and designed your activation budget allocation. Now comes the critical question every CMO must answer: "What revenue will this partnership generate?" This ROI Calculator takes you through the complete attribution funnel that brands use to justify sponsorship investments to their boards and shareholders.
+
+You'll model the full customer journey from initial reach (total impressions) through engagement (interaction with sponsored content) to conversion (actual purchases) and final revenue generation. Using industry-standard engagement and conversion rates from real partnerships like Nike's NFL deal and Red Bull's F1 sponsorship, you'll calculate total attributed revenue, ROI percentage, payback period, and breakeven point. This exercise reveals why some partnerships deliver 180% ROI while others struggle to break even—and what drives those differences.
+
+**What you'll discover:**
+
+- How to build a three-stage attribution funnel (Reach → Engagement → Conversion → Revenue) using realistic assumptions
+- Industry benchmarks for engagement rates and conversion rates across different sponsorship categories
+- Why multi-year measurement is essential for evaluating sponsorship ROI (most deals break even in Year 2-3)
+- The relationship between payback period and partnership value, and how to present ROI projections to executives
+
+**Time commitment:** 10-12 minutes
+**Learning outcomes practiced:** MLO 3.3 (Calculate how brands measure ROI in sport partnerships)
+
+---
+
 **🎮 Widget Purpose:** Model sponsorship ROI using reach, engagement, and conversion metrics with industry-standard assumptions.
 
 **Widget Status:** ✅ Built and ready (538 lines, 100% Uplimit compliance)
@@ -948,12 +1036,16 @@ Actually, I need to think about this differently. Sponsorship ROI is typically m
 
 **Embed Code:**
 ```html
-<iframe src="modules/week3/widgets/roi-calculator.html"
-        width="100%"
-        height="800"
-        style="border: 1px solid #e2e8f0; border-radius: 8px;"
-        allow="clipboard-write"
-        title="Sponsorship ROI Calculator - Model reach, engagement, conversion funnel"></iframe>
+<iframe
+  src="modules/week3/widgets/roi-calculator.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Sponsorship ROI Calculator - Model reach, engagement, conversion funnel"
+  aria-label="Interactive ROI calculator modeling sponsorship effectiveness through reach, engagement, and conversion metrics to calculate return on investment"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 ---
@@ -1025,6 +1117,8 @@ You've learned how brands evaluate sponsorship opportunities using CPM calculati
 **Up Next: Module 3 - Sports Betting Economics**
 Now that you understand sponsorship fundamentals, let's explore why sports betting became the fastest-growing sponsorship category. You'll analyze betting's impact on fan engagement, media consumption, and league revenue—and learn why operators like FanDuel and DraftKings now rank among the top 10 sports sponsors.
 
+Ready to discover why betting changed everything? Let's dive in!
+
 ---
 
 ## 🎯 FINAL PROJECT CONNECTION
@@ -1049,6 +1143,22 @@ In Week 5, you'll need to convince investors/executives that YOUR property can d
 **Action Item:** Export your work from the 3 Module 2 widgets (Sponsorship Valuation Calculator, Activation Budget Builder, ROI Calculator). Save these JSON files—you'll use this data in your final project's financial appendix.
 
 **Real-World Application:** The FanDuel case (Module 4) shows these frameworks in action. FanDuel calculated $152 partnership CAC vs. $400 paid marketing CAC to justify $1.1B in league partnerships. Your final project needs the same rigor.
+
+---
+
+## 🌟 MENTAL BREAK #1: Pause & Recharge
+
+**You've completed:** Welcome, learning objectives, and sponsorship ROI framework with 3 interactive calculators
+**Coming next:** Sports betting economics and fan engagement analysis (~15 minutes)
+
+**Take a moment to:**
+- Stand up and stretch for 30 seconds
+- Get water or a quick snack
+- Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
+
+**Progress:** You're 35% through Week 3 content! You've built the sponsorship foundation—now you'll discover why betting partnerships became the most valuable sponsorship category.
+
+*This break is optional but recommended. Return when you're ready to explore sports betting's transformation of the industry.*
 
 ---
 
@@ -1164,6 +1274,26 @@ Export your market model. Compare state tax revenue to operator profit—this te
 
 ## Element 3: Interactive Widget - Betting Market Simulator
 
+### ⚙ Interactive Activity: Betting Market Simulator
+
+**Practice: MLO 3.2 (Analyze sports betting as a new growth driver in the industry)**
+
+Sports betting has transformed from an illegal underground activity to a $100+ billion regulated industry in just five years. But how do states evaluate whether to legalize betting? And how do operators like FanDuel project market opportunity? This simulator gives you the tools state legislators and betting operators use to model market economics before entering a new state.
+
+You'll input key parameters—state population, participation rates, average wager amounts, operator margins, and tax rates—to calculate the total betting handle (total dollars wagered), gross gaming revenue (the operator's take after paying out winnings), and state tax revenue. By experimenting with different scenarios, you'll see why New Jersey became the gold standard for mature betting markets, why New York's 51% tax rate is considered punitive, and how new markets like Ohio are projected to scale over time.
+
+**What you'll discover:**
+
+- How to calculate total market handle from population demographics and participation rate assumptions
+- The difference between "handle" (total bets) and "gross gaming revenue" (operator profit after payouts)
+- Why operator margins (house edge) typically range from 5-8% and how they vary by sport and bet type
+- The trade-off between state tax rates and operator profitability, and how tax policy affects market growth
+
+**Time commitment:** 8-10 minutes
+**Learning outcomes practiced:** MLO 3.2 (Analyze sports betting as a new growth driver in the industry)
+
+---
+
 **🎮 Widget Purpose:** Model state sports betting market size, operator revenue, and tax revenue using real parameters.
 
 **Widget Status:** ✅ Built and ready (602 lines, 100% Uplimit compliance)
@@ -1217,12 +1347,16 @@ Export your market model. Compare state tax revenue to operator profit—this te
 
 **Embed Code:**
 ```html
-<iframe src="modules/week3/widgets/betting-market-simulator.html"
-        width="100%"
-        height="750"
-        style="border: 1px solid #e2e8f0; border-radius: 8px;"
-        allow="clipboard-write"
-        title="Betting Market Simulator - Model state market size and revenue"></iframe>
+<iframe
+  src="modules/week3/widgets/betting-market-simulator.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Betting Market Simulator - Model state market size and revenue"
+  aria-label="Interactive market simulator where you model state-by-state sports betting legalization scenarios and calculate revenue projections based on population and handle assumptions"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 ---
@@ -1302,6 +1436,26 @@ Export your engagement analysis. This data proves why betting partnerships deliv
 
 ## Element 5: Interactive Widget - Engagement Multiplier Calculator
 
+### ⚙ Interactive Activity: Engagement Multiplier Calculator
+
+**Practice: MLO 3.2 (Analyze sports betting as a new growth driver in the industry)**
+
+Here's the insight that's reshaping sports media strategy: bettors watch more games, stay tuned longer, and engage more deeply than non-bettors. But how much more? And what does that mean for media rights valuations and sponsorship pricing? This calculator quantifies the "engagement multiplier effect" that makes betting partnerships among the most valuable in sports.
+
+You'll compare viewing behavior between bettors and non-bettors by inputting fan base demographics, participation rates, and engagement multipliers derived from industry research. The widget calculates total viewership contributions from each group and reveals what percentage of total engagement comes from the relatively small proportion of fans who bet. You'll see why leagues like the NFL, NBA, and NHL are rushing to integrate betting content into broadcasts—and why betting sponsors are willing to pay premium rates for access to this hyper-engaged audience.
+
+**What you'll discover:**
+
+- How to quantify the "engagement multiplier" by comparing bettor vs. non-bettor viewing patterns across different sports
+- Why a 15% bettor population can contribute 25-30% of total engagement value through increased viewing frequency
+- The relationship between betting participation rates and average revenue per user (ARPU) for media platforms
+- How leagues and broadcasters use engagement data to justify betting-focused content and sponsorship premiums
+
+**Time commitment:** 7-9 minutes
+**Learning outcomes practiced:** MLO 3.2 (Analyze sports betting as a new growth driver in the industry)
+
+---
+
 **🎮 Widget Purpose:** Compare bettor vs. non-bettor behavior to quantify betting's engagement impact.
 
 **Widget Status:** ✅ Built and ready (~580 lines, 99% Uplimit compliance)
@@ -1354,12 +1508,16 @@ Actually, the inputs should be simpler:
 
 **Embed Code:**
 ```html
-<iframe src="modules/week3/widgets/engagement-multiplier-calculator.html"
-        width="100%"
-        height="650"
-        style="border: 1px solid #e2e8f0; border-radius: 8px;"
-        allow="clipboard-write"
-        title="Engagement Multiplier Calculator - Compare bettor vs. non-bettor behavior"></iframe>
+<iframe
+  src="modules/week3/widgets/engagement-multiplier-calculator.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Engagement Multiplier Calculator - Compare bettor vs. non-bettor behavior"
+  aria-label="Interactive calculator comparing sports bettor engagement behavior versus non-bettors including games watched, merchandise purchased, and social media interactions"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 ---
@@ -1488,6 +1646,26 @@ Export your premium analysis. If your property can command 20-30% betting sponso
 
 ## Element 9: Interactive Widget - Partnership Valuation Tool
 
+### ⚙ Interactive Activity: Partnership Valuation Tool
+
+**Practice: MLO 3.3 (Calculate how brands measure ROI in sport partnerships)**
+
+You've seen that bettors engage more than non-bettors. Now comes the financial implication: should betting operators pay a premium for sponsorships compared to traditional brands? And if so, how much? This valuation tool helps you calculate the justified price premium for betting partnerships based on quantifiable engagement advantages.
+
+You'll compare traditional sponsorship CPM to betting sponsor CPM by factoring in the engagement multiplier and bettor population percentage. The widget calculates effective impressions for each sponsorship type and determines what premium is justified by the enhanced engagement value betting partnerships deliver. You'll analyze real deals like NFL jersey sponsorships, NBA court advertisements, and NHL betting kiosk placements to understand why operators like FanDuel are willing to pay 20-35% premiums for exclusive betting category rights.
+
+**What you'll discover:**
+
+- How to translate engagement multipliers into financial valuation premiums using effective impression calculations
+- The relationship between bettor population percentage, engagement boost, and justified sponsorship premium
+- Why betting partnerships command 20-35% premiums despite reaching smaller audience subsets
+- The additional value betting operators gain from attribution data access and in-app conversion tracking
+
+**Time commitment:** 8-10 minutes
+**Learning outcomes practiced:** MLO 3.3 (Calculate how brands measure ROI in sport partnerships)
+
+---
+
 **🎮 Widget Purpose:** Calculate betting sponsor value premium over traditional sponsors using engagement multipliers.
 
 **Widget Status:** ✅ Built and ready (~600 lines, 99% Uplimit compliance)
@@ -1536,12 +1714,16 @@ Export your premium analysis. If your property can command 20-30% betting sponso
 
 **Embed Code:**
 ```html
-<iframe src="modules/week3/widgets/partnership-valuation-tool.html"
-        width="100%"
-        height="700"
-        style="border: 1px solid #e2e8f0; border-radius: 8px;"
-        allow="clipboard-write"
-        title="Partnership Valuation Tool - Calculate betting sponsor premium"></iframe>
+<iframe
+  src="modules/week3/widgets/partnership-valuation-tool.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Partnership Valuation Tool - Calculate betting sponsor premium"
+  aria-label="Interactive partnership valuation tool where you calculate the premium value betting operators provide compared to traditional sponsors through engagement multipliers"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 ---
@@ -1609,6 +1791,8 @@ You've analyzed the sports betting regulatory landscape (PASPA repeal, state-by-
 
 **Up Next: Module 4 - FanDuel Case Study**
 Now that you understand betting economics and sponsorship value, let's apply these frameworks to a real case. You'll analyze FanDuel's rise from zero to $50B+ handle by 2024, evaluate their partnership strategy, and assess their competitive positioning against DraftKings, BetMGM, and new entrants. This case analysis prepares you for Module 5's group sprint—designing a sponsorship activation plan.
+
+Ready to see theory meet reality? Let's dive into the case!
 
 ---
 
@@ -1806,6 +1990,26 @@ Export your competitive analysis. Use it to answer case questions: "How sustaina
 
 ## Element 4: Interactive Widget - FanDuel Competitive Analysis Tool
 
+### ⚙ Interactive Activity: FanDuel Competitive Analysis Tool
+
+**Practice: MLO 3.2 (Analyze sports betting as a new growth driver in the industry)**
+
+FanDuel dominates the US sports betting market with 45% share, but how did they achieve this leadership position? And what competitive advantages sustain it against rivals like DraftKings and BetMGM? This competitive analysis tool lets you compare operators across eight strategic dimensions to understand what separates market leaders from challengers.
+
+You'll select two operators to compare and visualize their competitive positioning across market share, app quality, promotional spending, partnership portfolio, state availability, product breadth, live betting capabilities, and brand recognition. Using real data from the FanDuel case study and 2024 industry reports, you'll see how FanDuel's partnership strategy (5 major league deals including NFL, NBA, NHL) and superior app experience (4.7 rating) create defensible advantages. The radar chart visualization makes competitive gaps immediately visible and helps you identify strategic opportunities.
+
+**What you'll discover:**
+
+- How to conduct multi-dimensional competitive analysis using radar charts to visualize strategic positioning
+- FanDuel's key competitive advantages: market share leadership, app quality, and partnership portfolio depth
+- The role of promotional spending ($420 per customer) in customer acquisition and how it affects profitability
+- How state regulatory approval and product breadth (200+ bet types) create barriers to entry for new competitors
+
+**Time commitment:** 9-11 minutes
+**Learning outcomes practiced:** MLO 3.2 (Analyze sports betting as a new growth driver in the industry)
+
+---
+
 **🎮 Widget Purpose:** Compare FanDuel vs. DraftKings vs. BetMGM across key competitive dimensions.
 
 **Widget Status:** ✅ Built and ready (~740 lines, 98% Uplimit compliance)
@@ -1851,12 +2055,16 @@ Export your competitive analysis. Use it to answer case questions: "How sustaina
 
 **Embed Code:**
 ```html
-<iframe src="modules/week3/widgets/fanduel-competitive-analysis.html"
-        width="100%"
-        height="750"
-        style="border: 1px solid #e2e8f0; border-radius: 8px;"
-        allow="clipboard-write"
-        title="FanDuel Competitive Analysis - Compare operators across 8 dimensions"></iframe>
+<iframe
+  src="modules/week3/widgets/fanduel-competitive-analysis.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="FanDuel Competitive Analysis - Compare operators across 8 dimensions"
+  aria-label="Interactive competitive analysis tool comparing FanDuel, DraftKings, BetMGM, and Caesars across eight dimensions including market share, user experience, and partnership strategy"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 ---
@@ -1971,6 +2179,26 @@ Export your customer economics model. Test the sensitivity scenarios (CAC +10%, 
 
 ## Element 7: Interactive Widget - Customer Acquisition Economics Calculator
 
+### ⚙ Interactive Activity: Customer Acquisition Economics Calculator
+
+**Practice: MLO 3.3 (Calculate how brands measure ROI in sport partnerships)**
+
+Every betting operator faces the same critical question: "How much should we spend to acquire a customer?" Spend too little and you lose market share to rivals. Spend too much and you'll never achieve profitability. This calculator models the complete customer economics that FanDuel and competitors use to guide acquisition spending and evaluate partnerships.
+
+You'll input customer acquisition cost (CAC), average annual wager, operator margin, customer tenure, and churn rate to calculate annual profit per customer, lifetime value (LTV), payback period, and total profitability over time. The widget visualizes cumulative profit over 10 years so you can see exactly when customers become profitable and how retention drives long-term value. You'll compare FanDuel's base acquisition ($400 CAC) against partnership-driven acquisition ($152 CAC) to understand why strategic partnerships are financially superior to paid advertising.
+
+**What you'll discover:**
+
+- How to calculate lifetime value (LTV) using annual profit, customer tenure, and churn rate adjustments
+- The critical relationship between customer acquisition cost (CAC) and payback period in determining viable growth strategies
+- Why FanDuel's partnership strategy reduces CAC from $400 to $152, dramatically improving unit economics
+- The impact of Year 1 churn (40%) on long-term profitability and why retention programs are essential investments
+
+**Time commitment:** 10-12 minutes
+**Learning outcomes practiced:** MLO 3.3 (Calculate how brands measure ROI in sport partnerships)
+
+---
+
 **🎮 Widget Purpose:** Model FanDuel customer economics (CAC, LTV, payback period, profitability) using case data.
 
 **Widget Status:** ✅ Built and ready (~650 lines, 98% Uplimit compliance)
@@ -2018,12 +2246,16 @@ Export your customer economics model. Test the sensitivity scenarios (CAC +10%, 
 
 **Embed Code:**
 ```html
-<iframe src="modules/week3/widgets/customer-economics-calculator.html"
-        width="100%"
-        height="750"
-        style="border: 1px solid #e2e8f0; border-radius: 8px;"
-        allow="clipboard-write"
-        title="Customer Acquisition Economics Calculator - Model CAC, LTV, payback"></iframe>
+<iframe
+  src="modules/week3/widgets/customer-economics-calculator.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Customer Acquisition Economics Calculator - Model CAC, LTV, payback"
+  aria-label="Interactive customer economics calculator modeling customer acquisition cost, lifetime value, and payback period for sports betting partnerships"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 ---
@@ -2746,6 +2978,26 @@ Use the generated template as your GROUP STARTING POINT. Customize strategy, adj
 
 ## Element 4: Interactive Widget - Activation Plan Template Builder
 
+### ⚙ Interactive Activity: Activation Plan Template Builder
+
+**Practice: MLO 3.4 (Design sponsorship activations that deliver measurable value)**
+
+You're ready to design your Week 3 group sprint deliverable: a comprehensive sponsorship activation plan for a brand-betting operator partnership. This template builder scaffolds your planning process by guiding you through eight strategic questions while providing industry context and examples at every step.
+
+You'll select your brand (Nike, Coca-Cola, Verizon, American Express, Bud Light, or custom), your betting operator partner (FanDuel, DraftKings, BetMGM, Caesars), and your total budget. Then you'll answer structured prompts about strategic rationale, target audience, budget allocation, activation tactics, measurement frameworks, and ROI projections. The widget doesn't pre-fill answers—instead, it provides guidance and industry benchmarks to help you develop original, strategic responses. Your completed plan downloads as plain text ready for submission and peer review.
+
+**What you'll discover:**
+
+- How to evaluate brand-operator partnership fit based on audience overlap, category alignment, and strategic objectives
+- A structured framework for allocating activation budget across channels with category-specific guidance
+- Industry-standard approaches to ROI calculation including reach, engagement, conversion, and revenue attribution
+- The strategic questions that distinguish excellent activation plans from generic templates
+
+**Time commitment:** 15-20 minutes (initial template), 45-60 minutes (complete activation plan with group)
+**Learning outcomes practiced:** MLO 3.4 (Design sponsorship activations that deliver measurable value)
+
+---
+
 **🎮 Widget Purpose:** Auto-generate activation plan structure based on user inputs (brand, operator, budget).
 
 **Widget Status:** ✅ Built and ready (~630 lines, 98% Uplimit compliance)
@@ -2783,12 +3035,16 @@ Use the generated template as your GROUP STARTING POINT. Customize strategy, adj
 
 **Embed Code:**
 ```html
-<iframe src="modules/week3/widgets/activation-plan-template-builder.html"
-        width="100%"
-        height="600"
-        style="border: 1px solid #e2e8f0; border-radius: 8px;"
-        allow="clipboard-write"
-        title="Activation Plan Template Builder - Generate starter templates"></iframe>
+<iframe
+  src="modules/week3/widgets/activation-plan-template-builder.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Activation Plan Template Builder - Generate starter templates"
+  aria-label="Interactive template builder generating customized sponsorship activation plans with budget allocations, timelines, and channel strategies based on your inputs"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 ---
@@ -3078,6 +3334,8 @@ If you've completed your activation plan draft, move to Module 6 for finalizatio
 
 **Up Next: Module 6 - Assessment & Reflection**
 Submit your activation plan, participate in peer review, reflect on Week 3 learning, and preview Week 4 (Athletes, Brands & Emerging Sports). Final module of Week 3—let's finish strong.
+
+Ready to finalize and submit your work? Let's wrap up Week 3!
 
 ---
 

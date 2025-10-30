@@ -118,6 +118,45 @@ Guest executives across weeks:
 - Are executives referenced across weeks? ("As the TSN exec mentioned in Week 1...")
 - Does executive expertise match that week's content focus?
 
+7. STRUCTURAL CONSISTENCY (UX & Formatting)
+
+**Module Opening Patterns**:
+- Do all modules start with consistent structure?
+- Is there a standard "Purpose" or "Learning Objectives" format?
+- Do modules use consistent heading hierarchy (H1 → H2 → H3)?
+- Are Uplimit element tables formatted identically?
+
+**Module Closing Patterns**:
+- Do all modules end with "What You've Accomplished" section?
+- Is there a consistent "Up Next" preview format?
+- Do closings reference MLOs achieved?
+- Is transition language consistent ("Ready for Module X?")?
+
+**Widget Introduction Patterns**:
+- Are widget purposes introduced the same way ("Widget Purpose:", "Functionality:", etc.)?
+- Do all widgets have consistent embed code format?
+- Are widget descriptions structured similarly?
+- Do widget sections include accessibility notes consistently?
+
+**Element Ordering Patterns**:
+- Do similar module types follow same element order?
+- Example: Do all "Core Content" modules follow: Text → Widget → Reflection?
+- Are BOPPPS elements ordered consistently within module types?
+
+**Formatting Conventions**:
+- Are markdown code blocks used consistently for embed codes?
+- Are bullet lists formatted the same (- vs * vs numbered)?
+- Are callout boxes (Infobox, Details) introduced consistently?
+- Are time estimates presented in same format across modules?
+
+**Check For**:
+- Module A opens with learning objectives, Module B doesn't
+- Widget introductions vary (some have "Purpose:", others don't)
+- Inconsistent heading levels (Module 1 uses H1 for title, Module 2 uses H2)
+- Different markdown formatting styles across storyboards
+- Transition language varies (some say "Up Next:", others "Next Module:")
+- Inconsistent table formatting in Uplimit element specifications
+
 ISSUE CATEGORIZATION:
 
 **Critical Inconsistencies**:
@@ -172,7 +211,15 @@ Generate cross-module-consistency-report.md with:
    - How sessions build on each other
    - Opportunities for cross-referencing
 
-7. **Priority Fixes**
+7. **Structural Consistency Analysis**
+   - Module opening pattern comparison
+   - Module closing pattern comparison
+   - Widget introduction pattern comparison
+   - Element ordering pattern validation
+   - Formatting conventions audit
+   - Standardization recommendations
+
+8. **Priority Fixes**
    - Critical issues to address immediately
    - High-priority improvements
    - Before/after examples`;
@@ -182,7 +229,7 @@ async function checkConsistency(modulesPath = '../modules') {
 
   try {
     const result = query({
-      prompt: `Analyze all modules in ${modulesPath} for cross-module consistency and narrative flow.
+      prompt: `Analyze all modules in ${modulesPath} for cross-module consistency, narrative flow, AND structural consistency.
 
 Perform comprehensive analysis:
 
@@ -192,6 +239,7 @@ Perform comprehensive analysis:
 4. **Anchor Project Integration**: Check if weekly content supports that week's project milestone
 5. **Narrative Arc**: Assess complexity progression and transition smoothness
 6. **Executive Session Coherence**: Validate how guest sessions build on each other
+7. **Structural Consistency**: Check module opening patterns, closing patterns, widget introductions, element ordering, and formatting conventions
 
 Generate cross-module-consistency-report.md with:
 - Concept threading map (Week 1 → Week 5)
@@ -200,9 +248,10 @@ Generate cross-module-consistency-report.md with:
 - Anchor Project milestone readiness assessment
 - Narrative flow evaluation
 - Executive session coherence check
+- Structural consistency analysis (openings, closings, widget patterns, formatting)
 - Priority fixes with specific examples
 
-Focus on finding breaks in learning progression and missing prerequisite knowledge.`,
+Focus on finding breaks in learning progression, missing prerequisite knowledge, AND inconsistent structural patterns that harm UX.`,
 
       options: {
         agents: {

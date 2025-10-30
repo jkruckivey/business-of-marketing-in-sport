@@ -74,13 +74,21 @@ This document translates **Week 2** of the "Business of Sports Marketing" course
 ```
 Title: Week 2 Learning Objectives ◉
 
-By the end of this week, you will be able to:
-• MLO 2.1: Explore how media rights deals are valued and monetized
-• MLO 2.2: Compare linear broadcasting to streaming/DTC models
-• MLO 2.3: Understand fan engagement monetization strategies
-• MLO 2.4: Evaluate the Rogers $5.2B NHL deal and its implications
+By the end of this week, you will:
 
-This week focuses on CLO 2: Evaluating Media & Fan Monetization
+**MLO 2.1: Explore how media rights deals are valued and monetized** (Bloom's: Understand)
+Explain the frameworks broadcasters and streaming platforms use to price sports content, including audience reach, exclusivity value, and subscription/advertising revenue potential.
+
+**MLO 2.2: Compare linear broadcasting to streaming/DTC models** (Bloom's: Analyze)
+Contrast traditional broadcasting economics (advertising-driven, mass audience) with direct-to-consumer streaming models (subscription-driven, targeted engagement) and assess trade-offs for leagues and media companies.
+
+**MLO 2.3: Understand fan engagement monetization strategies** (Bloom's: Understand)
+Describe how platforms extend value beyond passive viewing through interactive features, betting integration, social engagement, and multi-platform distribution to maximize advertising, subscription, and sponsorship revenue.
+
+**MLO 2.4: Evaluate the Rogers $5.2B NHL deal and its implications** (Bloom's: Evaluate)
+Analyze Rogers Communications' 12-year NHL rights acquisition, assess its strategic outcomes, and determine lessons for future media rights negotiations in the streaming era.
+
+**This week focuses on CLO 2: Evaluating Media & Fan Monetization**
 ```
 
 ### Text Content (week2-intro.docx):
@@ -121,6 +129,25 @@ Create 3 tiles (1x3 or 2x2 grid with one empty):
 - **Text** bridges Week 1 concepts and sets Week 2 context (scaffolding, UDL representation)
 - **Tiles** preview three core themes for visual organization (UDL engagement)
 - Connection to Week 1 revenue streams creates continuity
+
+---
+
+## Module 1 Complete - Transition to Module 2
+
+**What You've Accomplished:**
+You now understand Week 2's focus: evaluating media and fan monetization strategies. You've seen the four learning objectives that will transform how you analyze billion-dollar media rights deals, and you've been introduced to the three strategic dimensions—rights valuation, linear vs. streaming economics, and fan engagement monetization. You understand that this week builds directly on Week 1's revenue ecosystem foundation, diving deep into the largest revenue stream in professional sports.
+
+**Key Takeaways:**
+- **Media rights represent 40-60% of league revenue**—the foundation of modern sports economics
+- Sports content is the **last "appointment viewing"** in the streaming era, commanding premium valuations
+- Week 2 explores **three strategic dimensions**: rights valuation frameworks, linear vs. DTC economics, and fan engagement monetization
+- The **Rogers/NHL $5.2B deal** serves as the case study for evaluating mega-deals
+- This week's learning **directly supports Anchor Project Milestone 1** (team formation and property selection)
+
+**Up Next: Module 2 - Executive Perspective**
+Before diving into valuation frameworks and strategic models, you'll hear from a senior media executive who has negotiated major sports rights deals. They'll share the real-world challenges, trade-offs, and strategic decisions that bring media economics theory to life.
+
+Ready to learn from someone who's done it? Let's hear the executive perspective.
 
 ---
 
@@ -199,6 +226,25 @@ Current Portfolio:
 - **Details** offers optional executive background without cluttering main flow (UDL choice)
 - **AI Chat** serves as your core learning coach—use it to clarify concepts, test your understanding, or explore questions raised by the executive session (UDL scaffolding + active learning)
 - Brief format delivers key insights efficiently while maintaining executive credibility
+
+---
+
+## Module 2 Complete - Transition to Module 3
+
+**What You've Accomplished:**
+You've heard directly from a senior media executive who has negotiated billion-dollar sports rights deals. You now understand how practitioners value sports content, assess platform trade-offs between linear broadcasting and streaming, and navigate the strategic decisions that shape media partnerships. You've gained authentic insights into the challenges facing both rights holders (leagues/teams) and rights buyers (broadcasters/streamers).
+
+**Key Takeaways:**
+- **Real-world media deals** involve complex trade-offs between reach, exclusivity, and profitability
+- **Linear vs. streaming economics** differ fundamentally: advertising-driven mass audience vs. subscription-driven targeted engagement
+- **Sports content commands premium valuations** because it's the last "appointment viewing" that can't be delayed
+- Executive perspective reveals that **theoretical frameworks meet messy reality**—regulatory constraints, competitive dynamics, and stakeholder pressures shape every deal
+- The insights you've gained will directly inform your analysis of the **Rogers/NHL $5.2B deal** coming in Module 4
+
+**Up Next: Module 3 - Interactive Media Rights Framework**
+You've heard the executive perspective. Now it's time to build your own understanding through hands-on exploration. Module 3 uses interactive widgets to help you discover media valuation principles through experimentation—not passive reading. Get ready for active learning!
+
+Ready to dive in? Let's explore media economics interactively!
 
 ---
 
@@ -312,6 +358,26 @@ Create 5 numbered items:
 
 ### Element 4: Widget 1 - Audience Size Calculator
 
+### ⚙ Interactive Activity: Audience Size Calculator
+
+**Practice: MLO 2.1 (Explore media rights valuation)**
+
+You've learned that media rights represent 40-60% of league revenue—but what actually determines how much a league can charge for its rights? The answer starts with audience size and demographics.
+
+In this interactive activity, you'll calculate the estimated media rights value for different leagues (NFL, NHL, NBA, MLS, Premier League, or create your own custom league) by manipulating audience size, game count, demographic premiums, and advertising rates. Watch how changing just one variable—like increasing coveted demo percentage from 30% to 50%—can add hundreds of millions to annual rights value.
+
+**What you'll discover:**
+
+- Why total audience reach (viewers × games) matters more than per-game ratings
+- How the "coveted demo" (18-49 with $75K+ income) creates valuation premiums
+- Why the NFL commands $10B annually while MLS gets $250M despite similar game counts
+- That rights valuation is formula-driven, not arbitrary—you can calculate it yourself
+
+**Time commitment:** 4-5 minutes
+**Learning outcomes practiced:** MLO 2.1 (Explore media rights valuation frameworks)
+
+---
+
 **🎮 Widget Purpose:** Demonstrate how audience size and demographics drive rights valuations using real league examples.
 
 **Widget Status:** ⭕ Phase 3 widget - NEEDS TO BE BUILT (4-5 hours estimated)
@@ -424,6 +490,26 @@ When Amazon entered NFL rights bidding (2021), traditional networks had to raise
 ---
 
 ### Element 6: Widget 2 - Exclusivity Bidding Simulator
+
+### ⚙ Interactive Activity: Exclusivity Bidding Simulator
+
+**Practice: MLO 2.1 (Explore media rights valuation and deal structures)**
+
+You've calculated what drives rights valuation—now experience the strategic decision leagues face when multiple bidders compete for exclusive rights.
+
+In this simulation, you're the NHL commissioner in 2025 facing three bidders for Canadian national rights: Rogers offers $450M/year (cautious after losing money), DAZN offers $550M/year (aggressive growth), and Apple TV+ offers $700M/year (strategic play). Do you accept Apple's exclusive $700M? Or split rights across all three for $1.15B total revenue but lose exclusivity? There's no obviously "right" answer—just strategic trade-offs.
+
+**What you'll discover:**
+
+- Why a single bidder paying $700M can be worth LESS than multiple bidders paying $1.15B combined
+- How exclusivity creates bidding premiums (Apple pays more to be the ONLY platform)
+- The hidden costs of split rights packages (coordination complexity, partner conflicts)
+- Why leagues sometimes choose lower bids for strategic reasons (accessibility, partner reliability)
+
+**Time commitment:** 5-6 minutes
+**Learning outcomes practiced:** MLO 2.1 (Explore media rights valuation and competitive dynamics)
+
+---
 
 **🎮 Widget Purpose:** Let students experience competitive bidding dynamics and understand why exclusive rights command premium prices.
 
@@ -561,6 +647,26 @@ Traditional linear broadcasting and direct-to-consumer streaming have **fundamen
 
 ### Element 10: Widget 3 - Platform Economics Visualizer
 
+### ⚙ Interactive Activity: Platform Economics Visualizer
+
+**Practice: MLO 2.2 (Compare linear broadcasting to streaming/DTC models)**
+
+You've learned that linear TV and streaming platforms operate on fundamentally different economics. But what does that actually mean for profitability? Why do streaming platforms lose money for years while traditional broadcasters either profit immediately or never break even?
+
+In this interactive activity, you'll toggle between Linear TV and Streaming/DTC models, adjusting key variables (rights costs, ad rates, subscription price, churn rate, customer acquisition costs) and watching a 10-year projection chart show when—or if—each platform becomes profitable. Try recreating Rogers' NHL deal (linear TV, never profitable, ~$1.5B loss) or DAZN Canada (streaming, profitable by Year 4).
+
+**What you'll discover:**
+
+- Why streaming platforms lose money for 3-5 years by design (customer lifetime value thinking)
+- How cord-cutting destroys linear TV profitability even if rights deals seem "fair" at signing
+- Why tech giants like Apple can "overpay" for rights—they're buying subscribers, not immediate profit
+- The mathematics behind Rogers' $1.5B loss on the NHL deal (subscriber decline killed them)
+
+**Time commitment:** 6-7 minutes
+**Learning outcomes practiced:** MLO 2.2 (Compare linear vs. streaming economics and profitability models)
+
+---
+
 **🎮 Widget Purpose:** Let students manipulate platform economics variables and see how profitability timelines differ between linear TV and streaming models.
 
 **Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (6-7 hours estimated)
@@ -666,6 +772,26 @@ Platforms that drive engagement (interactive features, fantasy integration, bett
 ---
 
 ### Element 12: Widget 4 - Engagement Value Chain Builder
+
+### ⚙ Interactive Activity: Engagement Value Chain Builder
+
+**Practice: MLO 2.3 (Understand fan engagement monetization strategies)**
+
+You've explored how platforms make money from media rights. But passive viewing generates only $5-15 per fan per year. The real value comes from ENGAGEMENT—converting passive viewers into active participants who bet, play fantasy, subscribe to exclusive content, and interact with team apps.
+
+In this interactive activity, you'll construct an engagement strategy by selecting tactics (mobile app, fantasy integration, betting partnerships, exclusive content, social media, gamification) and watching your fan value transform. Start with 1M passive fans worth $10M/year—then see how adding betting partnerships alone can increase value to $13M+ despite costing nothing (revenue share model). Build the optimal engagement mix.
+
+**What you'll discover:**
+
+- Why a fan who bets is worth 6-10x more than a passive viewer ($30 vs. $5 per year)
+- How engagement tactics have vastly different cost/benefit profiles (betting = $0 cost, high value; exclusive content = $3M cost, high value)
+- Why platforms with engagement capabilities (ESPN Bet, DraftKings partnerships) can justify paying more for rights
+- The mathematics of converting 10% of your audience to "super-fans" worth $300-500 each
+
+**Time commitment:** 5-6 minutes
+**Learning outcomes practiced:** MLO 2.3 (Understand fan engagement monetization beyond passive viewing)
+
+---
 
 **🎮 Widget Purpose:** Let students construct an engagement strategy and see how different tactics increase fan value and justify higher rights costs.
 
@@ -799,6 +925,25 @@ Sharing insights helps you process what you've learned through the widgets and p
 
 ---
 
+## Module 3 Complete - Transition to Module 4
+
+**What You've Accomplished:**
+You've explored media rights economics through hands-on discovery using 4 interactive widgets. You understand how leagues calculate media rights value, how streaming platform economics differ from traditional broadcasting, how rights holders compare linear vs. DTC strategies, and why fan engagement drives monetization across multiple channels. You've actively manipulated variables, experimented with scenarios, and discovered principles through exploration—not passive reading.
+
+**Key Takeaways:**
+- **Media rights valuation** depends on audience size, demographics, exclusivity, and platform reach—not just viewership numbers
+- **Streaming economics** fundamentally differ from linear broadcasting: subscription-driven, targeted engagement vs. advertising-driven, mass reach
+- **Rights holders face strategic trade-offs**: guaranteed fees from traditional broadcasters vs. potential upside from DTC platforms
+- **Fan engagement extends monetization** beyond passive viewing through betting integration, interactive features, and multi-platform distribution
+- The 4 widgets you used revealed that **no single "right" strategy exists**—success depends on league maturity, market position, and risk tolerance
+
+**Up Next: Module 4 - Streaming Wars Simulation**
+You've learned the frameworks. Now it's time to apply them strategically. In Module 4, you'll simulate platform strategy decisions as a streaming executive building a sports content empire. You'll make real-time trade-offs, respond to competitive moves, and see how your choices affect revenue, subscriber growth, and market position.
+
+Ready to build your streaming empire? Let's compete!
+
+---
+
 ## 🌟 MENTAL BREAK #2: Reset Before Simulation
 
 **You've completed:** Media rights valuation framework with 4 interactive widgets
@@ -881,12 +1026,15 @@ Part of Week 2 Executive Session (40 min block)
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/streaming-wars-strategy.html"
-        width="800"
-        height="700"
-        title="Streaming Wars Strategy - Build a profitable sports streaming service"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/streaming-wars-strategy.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Streaming Wars Strategy - Build a profitable sports streaming service"
+  aria-label="Interactive strategy builder where you design a sports streaming service by choosing content, pricing, and distribution models"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 
@@ -1086,6 +1234,26 @@ Copy the markdown below directly into Uplimit:
 ---
 
 ### Element 3: Widget 5 - Rogers Deal Terms Explorer
+
+### ⚙ Interactive Activity: Rogers Deal Terms Explorer
+
+**Practice: MLO 2.4 (Evaluate the Rogers $5.2B NHL deal and its implications)**
+
+You've learned how media rights are valued and how platforms make money. Now analyze the most famous—and controversial—media rights deal in Canadian history: Rogers' $5.2 billion, 12-year exclusive NHL agreement. What exactly did $5.2 billion buy? Was it worth it?
+
+In this interactive activity, you'll explore 5 tabs revealing what Rogers acquired: Rights Included (1,000+ games per season), Platforms Covered (linear TV, streaming, digital, radio), Exclusivity Terms (near-monopoly on NHL in Canada), Revenue Projections (Rogers forecasted break-even by Year 5), and Comparison to Previous Deal (209% more expensive than CBC/TSN's prior deal). Click through each tab to understand the deal's scope.
+
+**What you'll discover:**
+
+- The sheer SCOPE of $433M/year—Rogers bought every meaningful NHL touchpoint in Canada
+- Why exclusivity commanded such a premium (TSN lost access entirely; Rogers could control distribution strategy)
+- Rogers' internal revenue projections assumed 1M Sportsnet NOW subscribers by Year 5—spoiler: they never reached half that
+- That the deal was 209% more expensive than the previous one—either Rogers overpaid or the NHL was vastly undervalued before
+
+**Time commitment:** 5-6 minutes
+**Learning outcomes practiced:** MLO 2.4 (Evaluate Rogers deal terms, projections, and strategic rationale)
+
+---
 
 **🎮 Widget Purpose:** Let students explore the comprehensive terms of the Rogers NHL deal interactively, understanding what $5.2B bought.
 
@@ -1287,6 +1455,26 @@ Rogers' optimistic projections collided with harsh market realities.
 
 ### Element 7: Widget 6 - Projections vs. Actuals Visualizer
 
+### ⚙ Interactive Activity: Projections vs. Actuals Visualizer
+
+**Practice: MLO 2.4 (Evaluate Rogers deal performance)**
+
+Rogers projected break-even by Year 5 ($500M revenue). By Year 10, they were still losing $50-150M annually. But where exactly did the projections go wrong? And by how much?
+
+In this interactive activity, you'll scrub through a 10-year timeline (2014-2024) comparing three lines: Rogers' original revenue projections (blue), actual revenue achieved (red), and the break-even threshold at $433M/year (green horizontal line). Hover over any year to see detailed variance breakdowns and key events (e.g., Year 7: COVID-19 devastated revenue, projected $550M, actual $200M, -64% variance).
+
+**What you'll discover:**
+
+- Rogers' projections were optimistic from Day 1—even Year 1 actuals fell short by 15%
+- The gap WIDENED over time—by Year 5, actuals were 40% below projections
+- COVID-19 wasn't the main problem (though it crushed Year 7)—cord-cutting and failed streaming adoption were
+- Rogers NEVER crossed the break-even line in 10 years—losses totaled ~$1.5B
+
+**Time commitment:** 7-8 minutes
+**Learning outcomes practiced:** MLO 2.4 (Evaluate mega-deal performance through variance analysis)
+
+---
+
 **🎮 Widget Purpose:** Let students interactively compare Rogers' financial projections with actual performance, identifying variance drivers.
 
 **Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (7-8 hours estimated)
@@ -1429,6 +1617,26 @@ Beyond financial projections, Rogers faced declining and fragmented audiences.
 
 ### Element 10: Widget 7 - Viewership Trends Analyzer
 
+### ⚙ Interactive Activity: Viewership Trends Analyzer
+
+**Practice: MLO 2.3 (Understand fan engagement challenges) & MLO 2.4 (Analyze market dynamics)**
+
+Rogers lost $1.5B on the NHL deal. But what were the underlying AUDIENCE trends driving those losses? Did viewership decline? Did younger fans stop watching? Did streaming adoption stall?
+
+In this interactive activity, you'll explore 3 tabs of audience data: (1) Linear TV Ratings showing Hockey Night in Canada's Saturday night viewership from 2014-2024, (2) Sportsnet NOW Subscribers tracking streaming growth vs. Rogers' 1M target, and (3) Demographic Breakdown revealing which age groups, genders, and regions engaged—and which didn't. Filter by year, hover for details, and identify the trends Rogers missed.
+
+**What you'll discover:**
+
+- Hockey Night in Canada ratings declined 35% over 10 years—steady erosion, not sudden collapse
+- Sportsnet NOW peaked at 450K subscribers (55% short of target)—hockey alone wasn't a streaming driver
+- Viewers aged 18-34 declined 50% while 55+ held steady—aging audience crisis
+- Regional disparities: Toronto/Montreal strong, Vancouver/Calgary declining—not all Canadian markets equal
+
+**Time commitment:** 8-9 minutes
+**Learning outcomes practiced:** MLO 2.3 (Fan engagement patterns), MLO 2.4 (Market trend analysis)
+
+---
+
 **🎮 Widget Purpose:** Let students explore Hockey Night in Canada viewership trends, subscriber growth, and audience demographics to understand market dynamics.
 
 **Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (8-9 hours estimated)
@@ -1538,6 +1746,28 @@ Rogers' NHL contract expires after the 2025-26 season. The company must decide i
 ---
 
 ### Element 14: Widget 8 - 2026 Decision Simulator (CAPSTONE)
+
+### ⚙ CAPSTONE Activity: 2026 Decision Simulator
+
+**Synthesis: ALL 4 MLOs (2.1, 2.2, 2.3, 2.4) — This is your Week 2 capstone**
+
+The year is 2026. Rogers' $5.2 billion NHL contract expires. After losing $1.5 billion over 12 years, Rogers CEO asks you: "Should we renew? If so, at what price and on what terms? Or should we walk away?" There's no "right" answer—only defensible strategic recommendations supported by evidence.
+
+This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll set market assumptions (cord-cutting rate, streaming growth, NHL viewership trends, competitive intensity, betting revenue), choose from 3 options (renew exclusive $300-350M/year, split package $200M/year, or walk away), view 10-year financial projections for your choice, compare alternatives side-by-side, and write an executive recommendation (250 words) justifying your decision. Export your full analysis as PDF.
+
+**What this capstone tests:**
+
+- **MLO 2.1:** Can you value NHL rights in 2026 given changed market conditions? (Apply frameworks from Widgets 1-2)
+- **MLO 2.2:** Can you evaluate platform strategies (exclusive vs. split vs. exit)? (Apply economics from Widget 3)
+- **MLO 2.3:** Can you assess fan engagement opportunities (betting, apps, exclusive content)? (Apply insights from Widget 4)
+- **MLO 2.4:** Can you synthesize financial, competitive, and strategic factors into ONE coherent recommendation? (Demonstrate Bloom's Synthesis/Evaluation level)
+
+**Time commitment:** 15-20 minutes (most complex widget, highest pedagogical value)
+**Learning outcomes synthesized:** ALL Week 2 MLOs (2.1, 2.2, 2.3, 2.4)
+
+**Note:** This is Week 2's capstone demonstration of mastery. Your recommendation will inform your Week 2 reflection memo.
+
+---
 
 **🎮 Widget Purpose:** Let students make a strategic recommendation for Rogers' 2026 NHL rights decision, weighing financial, competitive, and strategic factors.
 
@@ -2226,12 +2456,15 @@ on team composition, property selection defensibility, and articulated challenge
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/modules/module-2/widgets/property-selector.html"
-        width="800"
-        height="600"
-        title="Property Selection Tool - Choose your Anchor Project property"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-sports-marketing/modules/module-2/widgets/property-selector.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Property Selection Tool - Choose your Anchor Project property"
+  aria-label="Interactive selection tool for choosing your sports business property focus for the Anchor Project"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 
@@ -2263,12 +2496,15 @@ on team composition, property selection defensibility, and articulated challenge
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/modules/module-2/widgets/team-charter.html"
-        width="800"
-        height="700"
-        title="Team Charter Builder - Create your team agreements"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-sports-marketing/modules/module-2/widgets/team-charter.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Team Charter Builder - Create your team agreements"
+  aria-label="Interactive team charter builder where you establish working agreements and roles for collaborative projects"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 

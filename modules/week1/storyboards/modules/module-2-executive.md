@@ -249,3 +249,19 @@ Ready to dive in? Let's go!
 
 ---
 
+## 🌟 MENTAL BREAK #1: Pause & Recharge
+
+**You've completed:** Welcome, learning objectives, and executive insights on revenue ecosystems
+**Coming next:** Interactive revenue streams exploration (8 hands-on widgets, ~35 minutes)
+
+**Take a moment to:**
+- Stand up and stretch for 30 seconds
+- Get water or a quick snack
+- Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
+
+**Progress:** You're 30% through Week 1 content! Next up is the most interactive module—you'll manipulate revenue models, test pricing strategies, and explore ecosystem dynamics through hands-on widgets.
+
+*This break is optional but recommended. Return when you're ready to dive into interactive discovery.*
+
+---
+

@@ -4,6 +4,11 @@
 
 **Uplimit Structure:** First module in Unit 1
 
+**Content Priority Badges:**
+- ⬤ **Required** - Core content essential for learning outcomes and assessments
+- ◐ **Recommended** - Important content that enhances understanding and engagement
+- ○ **Optional** - Supplemental content for deeper exploration (progressive disclosure)
+
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **ⓘ Infobox (Callout)** ⬤ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
@@ -14,13 +19,21 @@
 ```
 Title: ◉ Week 1 Learning Objectives
 
-By the end of this week, you will be able to:
-• MLO 1.1: Map the major revenue streams in professional sport
-• MLO 1.2: Explain sport's unique business model characteristics
-• MLO 1.3: Evaluate the vulnerabilities and growth potential of each revenue stream
-• MLO 1.4: Analyze different revenue sharing models across leagues
+By the end of this week, you will:
 
-This week focuses on CLO 1: Analyzing Revenue Ecosystems
+**MLO 1.1: Map the major revenue streams in professional sport** (Bloom's: Understand)
+Identify and explain the five major revenue streams (media rights, ticketing, sponsorship, merchandising, betting) and their relative contribution to league and team finances.
+
+**MLO 1.2: Explain sport's unique business model characteristics** (Bloom's: Understand)
+Describe how professional sport differs from traditional business models through competitive balance requirements, revenue interdependence, and collaborative competition.
+
+**MLO 1.3: Evaluate the vulnerabilities and growth potential of each revenue stream** (Bloom's: Evaluate)
+Assess risks and opportunities across revenue streams using market data, trends, and strategic frameworks to identify which streams offer sustainable growth.
+
+**MLO 1.4: Analyze different revenue sharing models across leagues** (Bloom's: Analyze)
+Compare revenue sharing approaches (NFL vs. NBA vs. European soccer) and determine how these models affect competitive balance and financial sustainability.
+
+**This week focuses on CLO 1: Analyzing Revenue Ecosystems**
 ```
 
 ### Element 2: Text Content
@@ -74,8 +87,12 @@ Create 5 tiles:
 **What You've Accomplished:**
 You now know exactly where you're headed this week. You've seen the four learning objectives that will transform how you understand sports business, and you've been introduced to the five major revenue streams that power professional sport. You understand that this week focuses on analyzing revenue ecosystems—seeing sport as a unique business model where financial collaboration between competitors creates value.
 
-**Key Insight:**
-These five revenue streams don't operate independently—they form an interconnected ecosystem. This is the fundamental principle you'll explore throughout Week 1. When teams make strategic decisions, they're not just choosing between options—they're triggering cascading effects across their entire revenue ecosystem.
+**Key Takeaways:**
+- Sport operates as an **interconnected revenue ecosystem**, not isolated revenue streams
+- **Five major revenue streams** power professional sport: media rights (40-60%), ticketing (20-30%), sponsorship (15-25%), merchandising (5-10%), and betting (2-8%, growing 30-40%)
+- Teams must **collaborate financially** to maintain competitive balance despite competing on the field
+- Revenue sharing models vary dramatically: NFL shares 60% equally; European soccer operates entrepreneurially
+- Strategic decisions trigger **cascading effects** across the entire revenue ecosystem
 
 **Up Next: Module 2 - Executive Perspective**
 Before diving into the technical details of each revenue stream, you'll hear from a senior sports business executive who has actually negotiated media deals, managed sponsorship portfolios, and built revenue strategies. They'll share the real-world challenges and strategic decisions that bring these concepts to life.

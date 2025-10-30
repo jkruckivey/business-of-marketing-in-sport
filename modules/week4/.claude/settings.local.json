@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/business-of-marketing-in-sport/modules/week1/storyboards/modules/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

@@ -156,12 +156,15 @@ In this interactive activity, you'll build your own revenue portfolio by allocat
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/revenue-mix-slider.html"
-        width="800"
-        height="500"
-        title="Revenue Mix Slider - Build your revenue portfolio"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/revenue-mix-slider.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Revenue Mix Slider - Build your revenue portfolio"
+  aria-label="Interactive revenue portfolio builder where you allocate 100% across 5 revenue streams using sliders to see risk and growth projections"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 
@@ -240,12 +243,15 @@ In this interactive calculator, you'll input key factors—league size, audience
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/module-2/widgets/media-rights-calculator.html"
-        width="800"
-        height="600"
-        title="Media Rights Calculator - Calculate media rights value"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/module-2/widgets/media-rights-calculator.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Media Rights Calculator - Calculate media rights value"
+  aria-label="Interactive calculator for media rights valuation based on league size, audience reach, advertising rates, and contract length"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 
@@ -325,12 +331,15 @@ In this decision game, you're the NHL commissioner choosing between two media of
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/streaming-wars-game.html"
-        width="900"
-        height="650"
-        title="Streaming Wars Decision Game - Choose ESPN vs Apple deal"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/streaming-wars-game.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Streaming Wars Decision Game - Choose ESPN vs Apple deal"
+  aria-label="Interactive decision game where you choose between traditional TV and streaming media offers with 5-year financial projections"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 
@@ -407,12 +416,15 @@ In this simulator, you'll set ticket prices for Toronto Raptors games based on o
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/dynamic-pricing-simulator.html"
-        width="900"
-        height="700"
-        title="Dynamic Pricing Simulator - Optimize Raptors ticket prices"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/dynamic-pricing-simulator.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Dynamic Pricing Simulator - Optimize Raptors ticket prices"
+  aria-label="Interactive ticket pricing simulator where you adjust prices based on opponent strength, day of week, and team performance to maximize revenue"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 
@@ -480,12 +492,15 @@ In this optimizer, you'll design the seating mix for an 18,000-seat arena by adj
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/stadium-revenue-optimizer.html"
-        width="850"
-        height="650"
-        title="Stadium Revenue Optimizer - Design premium vs GA mix"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/stadium-revenue-optimizer.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Stadium Revenue Optimizer - Design premium vs GA mix"
+  aria-label="Interactive stadium seating designer where you allocate capacity between luxury suites, club seats, and general admission to maximize revenue"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 
@@ -681,12 +696,15 @@ In this calculator, you'll input deal type (naming rights, jersey patch, categor
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/sponsorship-roi-calculator.html"
-        width="850"
-        height="650"
-        title="Sponsorship ROI Calculator - Calculate brand value"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/sponsorship-roi-calculator.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Sponsorship ROI Calculator - Calculate brand value"
+  aria-label="Interactive calculator for sponsorship value based on deal type, market size, and activation level to estimate brand impressions and ROI"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 
@@ -789,12 +807,15 @@ In this simulator, you'll make strategic decisions about betting partnerships, d
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/module-3/widgets/betting-market-simulator.html"
-        width="900"
-        height="650"
-        title="Betting Market Simulator - Explore betting revenue strategies"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/module-3/widgets/betting-market-simulator.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Betting Market Simulator - Explore betting revenue strategies"
+  aria-label="Interactive simulator for sports betting partnerships where you make strategic decisions about data licensing and media integration"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 
@@ -883,12 +904,15 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 
 **Uplimit Implementation:**
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/ecosystem-cascade-simulator.html"
-        width="1000"
-        height="800"
-        title="Ecosystem Cascade Simulator - Connor McDavid investment analysis"
-        frameborder="0"
-        allowfullscreen>
+<iframe
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/ecosystem-cascade-simulator.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Ecosystem Cascade Simulator - Connor McDavid investment analysis"
+  aria-label="Interactive simulator showing how signing Connor McDavid creates cascading effects across all revenue streams with direct and indirect value calculations"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 

@@ -875,13 +875,15 @@ hover: #1a202c (darker gray)
 **Step 4:** Copy this embed code (update URL to your hosted location):
 
 ```html
-<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/revenue-knowledge-quiz.html"
-        width="900"
-        height="700"
-        title="Revenue Knowledge Pre-Assessment Quiz - Self-diagnostic for Week 1 learning path"
-        frameborder="0"
-        allowfullscreen
-        aria-label="Interactive pre-assessment quiz with 10 questions covering sports revenue streams, business models, growth potential, and revenue sharing">
+<iframe
+  src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/revenue-knowledge-quiz.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Revenue Knowledge Pre-Assessment Quiz - Self-diagnostic for Week 1 learning path"
+  aria-label="Interactive pre-assessment quiz with 10 questions covering sports revenue streams, business models, growth potential, and revenue sharing where you can test your baseline knowledge"
+  allowfullscreen
+  loading="lazy">
 </iframe>
 ```
 

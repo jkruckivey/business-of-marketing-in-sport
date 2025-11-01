@@ -79,7 +79,7 @@ This case study teaches you how operators compete in a capital-intensive, regula
 
 ---
 
-## Element 3: Text - Case Reading Guide
+## Element 3: **RENUMBERED** - Text - Case Reading Guide (was Element 2)
 
 **Copy this markdown directly into Uplimit:**
 
@@ -162,7 +162,7 @@ Export your competitive analysis. Use it to answer case questions: "How sustaina
 
 ---
 
-## Element 4: Interactive Widget - FanDuel Competitive Analysis Tool
+## Element 4: **RENUMBERED** - Interactive Widget - FanDuel Competitive Analysis Tool (was Element 3)
 
 ### ⚙ Interactive Activity: FanDuel Competitive Analysis Tool
 
@@ -243,7 +243,7 @@ You'll select two operators to compare and visualize their competitive positioni
 
 ---
 
-## Element 5: Text - Partnership Strategy Analysis
+## Element 5: **RENUMBERED** - Text - Partnership Strategy Analysis (was Element 4)
 
 **Copy this markdown directly into Uplimit:**
 
@@ -280,7 +280,7 @@ FanDuel made a bold bet: spend aggressively on league partnerships to build bran
 
 ---
 
-## Element 6: Table - FanDuel Partnership Portfolio (2024)
+## Element 6: **RENUMBERED** - Table - FanDuel Partnership Portfolio (2024) (was Element 5)
 
 ```
 Title: FanDuel Partnership Portfolio Summary (2024)
@@ -351,7 +351,7 @@ Export your customer economics model. Test the sensitivity scenarios (CAC +10%, 
 
 ---
 
-## Element 7: Interactive Widget - Customer Acquisition Economics Calculator
+## Element 7: **RENUMBERED** - Interactive Widget - Customer Acquisition Economics Calculator (was Element 6)
 
 ### ⚙ Interactive Activity: Customer Acquisition Economics Calculator
 
@@ -434,7 +434,7 @@ You'll input customer acquisition cost (CAC), average annual wager, operator mar
 
 ---
 
-## Element 8: Infobox - FanDuel Key Metrics
+## Element 8: **RENUMBERED** - Infobox - FanDuel Key Metrics (was Element 7)
 
 ```
 Title: ▪ Key Metric: FanDuel Customer Economics
@@ -461,7 +461,7 @@ Title: ▪ Key Metric: FanDuel Customer Economics
 
 ---
 
-## Element 9: Video - Case Debrief with Andrew Sneyd
+## Element 9: **RENUMBERED** - Video - Case Debrief with Andrew Sneyd (was Element 8)
 
 **Video Specifications:**
 - **Length:** 2 minutes
@@ -492,7 +492,7 @@ Title: ▪ Key Metric: FanDuel Customer Economics
 
 ---
 
-## Element 10: AI Chat Widget - Case Analysis Coach
+## Element 10: **RENUMBERED** - AI Chat Widget - Case Analysis Coach (was Element 9)
 
 **Element Type:** AI Chat Widget (Socratic coaching for case analysis)
 

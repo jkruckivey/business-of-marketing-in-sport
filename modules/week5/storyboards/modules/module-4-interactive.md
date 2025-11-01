@@ -39,10 +39,10 @@ strategies balancing tradition with innovation), MLO 5.4 (Create integrated 5-ye
 
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element

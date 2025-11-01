@@ -105,7 +105,7 @@ Export your calculation and move to the next widget (Activation Budget Builder).
 
 ---
 
-## Element 3: Interactive Widget - Sponsorship Valuation Calculator
+## Element 3: **RENUMBERED** - Interactive Widget - Sponsorship Valuation Calculator (was Element 2)
 
 ### ⚙ Interactive Activity: Sponsorship Valuation Calculator
 
@@ -193,7 +193,7 @@ This calculator empowers you to input real deal parameters—rights fees, broadc
 
 ---
 
-## Element 4: Text - Activation vs. Rights Fees
+## Element 4: **RENUMBERED** - Text - Activation vs. Rights Fees (was Element 3)
 
 **Copy this markdown directly into Uplimit:**
 
@@ -252,7 +252,7 @@ Export your activation budget. You'll use it in Module 5's group sprint to desig
 
 ---
 
-## Element 5: Interactive Widget - Activation Budget Builder
+## Element 5: **RENUMBERED** - Interactive Widget - Activation Budget Builder (was Element 4)
 
 ### ⚙ Interactive Activity: Activation Budget Builder
 
@@ -348,7 +348,7 @@ You'll apply the activation multiplier to calculate your total investment, then 
 
 ---
 
-## Element 6: Infobox - Industry Standard
+## Element 6: **RENUMBERED** - Infobox - Industry Standard (was Element 5)
 
 ```
 Title: ▶ Key Insight: The $2-3 Activation Rule
@@ -364,7 +364,7 @@ Industry standard: For every $1 in sponsorship rights fees, brands spend $2-3 on
 
 ---
 
-## Element 7: Text - ROI Measurement Framework
+## Element 7: **RENUMBERED** - Text - ROI Measurement Framework (was Element 6)
 
 **Copy this markdown directly into Uplimit:**
 
@@ -433,7 +433,7 @@ Export your ROI model. Compare it to your activation budget—if ROI < 15%, real
 
 ---
 
-## Element 8: Interactive Widget - ROI Calculator
+## Element 8: **RENUMBERED** - Interactive Widget - ROI Calculator (was Element 7)
 
 ### ⚙ Interactive Activity: ROI Calculator
 
@@ -533,7 +533,7 @@ Actually, I need to think about this differently. Sponsorship ROI is typically m
 
 ---
 
-## Element 9: Table - Sponsorship Category Benchmarks
+## Element 9: **RENUMBERED** - Table - Sponsorship Category Benchmarks (was Element 8)
 
 ```
 Title: Sponsorship CPM Benchmarks by Sport & Category
@@ -555,7 +555,7 @@ Title: Sponsorship CPM Benchmarks by Sport & Category
 
 ---
 
-## Element 10: Details - Advanced Attribution Modeling
+## Element 10: **RENUMBERED** - Details - Advanced Attribution Modeling (was Element 9)
 
 ```
 Title: Advanced: How Brands Attribute Sales to Sponsorships (Optional)

@@ -37,7 +37,7 @@ This module features advanced simulations that force difficult decisions with in
 
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element
@@ -63,7 +63,7 @@ This module features advanced simulations that force difficult decisions with in
 
 ---
 
-## Element 3: Post-Career Wealth Simulator Widget
+## Element 3: **RENUMBERED** - Post-Career Wealth Simulator Widget (was Element 2)
 
 ### ⚙ Interactive Activity: Post-Career Wealth Simulator
 
@@ -142,7 +142,7 @@ This isn't just about making "good" decisions—it's about understanding the mat
 
 ---
 
-## Element 4: Reflection Prompt
+## Element 4: **RENUMBERED** - Reflection Prompt (was Element 3)
 
 ```markdown
 ### What Does Wealth Preservation Require?
@@ -165,7 +165,7 @@ After simulating career paths:
 
 ---
 
-## Element 5: Athlete Decision Tree Widget
+## Element 5: **RENUMBERED** - Athlete Decision Tree Widget (was Element 4)
 
 ### ⚙ Interactive Activity: Athlete Decision Tree
 
@@ -205,7 +205,7 @@ Unlike the calculators that show you the math, this tool walks you through the d
 
 ---
 
-## Element 6: Details - Case Study: Why Athletes Go Broke
+## Element 6: **RENUMBERED** - Details - Case Study: Why Athletes Go Broke (was Element 5)
 
 ```markdown
 Title: Case Study: Why 78% of NFL Players Are Broke Within 3 Years of Retirement

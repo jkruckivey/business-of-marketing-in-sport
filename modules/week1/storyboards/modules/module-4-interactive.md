@@ -28,7 +28,7 @@ After completing the simulation, you'll write a Board Strategy Defense memo (750
 
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element

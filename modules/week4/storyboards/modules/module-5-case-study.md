@@ -53,7 +53,7 @@ Let's dive into the case.
 
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element
@@ -79,7 +79,7 @@ Let's dive into the case.
 
 ---
 
-## Element 3: Infobox - Case Access Instructions
+## Element 3: **RENUMBERED** - Infobox - Case Access Instructions (was Element 2)
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -94,7 +94,7 @@ The Serena Williams: Building a Brand case (HBS 517050, 22 pages) is attached be
 
 ---
 
-## Element 4: File Attachment - HBS Case
+## Element 4: **RENUMBERED** - File Attachment - HBS Case (was Element 3)
 
 **Uplimit Implementation:**
 1. Select **File Attachment** element
@@ -104,7 +104,7 @@ The Serena Williams: Building a Brand case (HBS 517050, 22 pages) is attached be
 
 ---
 
-## Element 5: Analysis Framework - 4 Guiding Questions
+## Element 5: **RENUMBERED** - Analysis Framework - 4 Guiding Questions (was Element 4)
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -219,7 +219,7 @@ This synthesis will form the foundation of your Week 4 assessment.
 
 ---
 
-## Element 6: Serena's Brand Portfolio Analyzer Widget
+## Element 6: **RENUMBERED** - Serena's Brand Portfolio Analyzer Widget (was Element 5)
 
 ### ⚙ Interactive Activity: Serena's Brand Portfolio Analyzer
 
@@ -267,7 +267,7 @@ What if Serena had taken Nike's larger endorsement deal instead of launching S b
 
 ---
 
-## Element 7: Details - Serena Ventures Deep Dive
+## Element 7: **RENUMBERED** - Details - Serena Ventures Deep Dive (was Element 6)
 
 ```markdown
 Title: Deep Dive: Serena Ventures Portfolio Analysis
@@ -314,7 +314,7 @@ Serena proved that investing in underrepresented founders is NOT a trade-off bet
 
 ---
 
-## Element 8: AI Chat Widget - Case Discussion Partner
+## Element 8: **RENUMBERED** - AI Chat Widget - Case Discussion Partner (was Element 7)
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element

@@ -263,7 +263,7 @@ Output: Final 2-page activation plan PDF
 
 ---
 
-## Element 3: Details - Full Assignment Instructions
+## Element 3: **RENUMBERED** - Details - Full Assignment Instructions (was Element 2)
 
 ```
 Title: Full Assignment Instructions (Expand for Detailed Requirements)
@@ -488,7 +488,7 @@ Use the generated template as your GROUP STARTING POINT. Customize strategy, adj
 
 ---
 
-## Element 4: Interactive Widget - Activation Plan Template Builder
+## Element 4: **RENUMBERED** - Interactive Widget - Activation Plan Template Builder (was Element 3)
 
 ### ⚙ Interactive Activity: Activation Plan Template Builder
 
@@ -561,7 +561,7 @@ You'll select your brand (Nike, Coca-Cola, Verizon, American Express, Bud Light,
 
 ---
 
-## Element 5: Video - Group Sprint Tips
+## Element 5: **RENUMBERED** - Video - Group Sprint Tips (was Element 4)
 
 **Video Specifications:**
 - **Length:** 2 minutes
@@ -601,7 +601,7 @@ All members contribute ideas, but clear ownership prevents duplicated work."
 
 ---
 
-## Element 6: AI Chat Widget - Activation Plan Coach
+## Element 6: **RENUMBERED** - AI Chat Widget - Activation Plan Coach (was Element 5)
 
 **AI Chat Widget Configuration:**
 
@@ -648,7 +648,7 @@ You: "I can't calculate it for you, but I can help you think through the inputs.
 
 ---
 
-## Element 7: Details - Example Activation Plans
+## Element 7: **RENUMBERED** - Details - Example Activation Plans (was Element 6)
 
 ```
 Title: Example Activation Plans (3 Models: A, B, C Grades)

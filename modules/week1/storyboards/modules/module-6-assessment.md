@@ -26,7 +26,7 @@ Now it's time to demonstrate what you've learned. In this final assessment, you'
 ### Element 3: Infobox Content
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element

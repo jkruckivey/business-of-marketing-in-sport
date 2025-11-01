@@ -38,7 +38,7 @@ Their insights will ground the theory you're about to explore in Module 3 with r
 
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element
@@ -64,7 +64,7 @@ Their insights will ground the theory you're about to explore in Module 3 with r
 
 ---
 
-## Element 3: Infobox Content
+## Element 3: **RENUMBERED** - Infobox Content (was Element 2)
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -79,7 +79,7 @@ This module features four videos: one short concept video (2 minutes) introducin
 
 ---
 
-## Element 4: Video 1 - Athlete Revenue Streams Overview
+## Element 4: **RENUMBERED** - Video 1 - Athlete Revenue Streams Overview (was Element 3)
 
 **File:** `week4-video1-athlete-revenue-streams.mp4`
 **Duration:** 2 minutes
@@ -143,7 +143,7 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
-## Element 5: Video 2 - Sports Agent Interview
+## Element 5: **RENUMBERED** - Video 2 - Sports Agent Interview (was Element 4)
 
 **File:** `week4-video2-sports-agent-interview.mp4`
 **Duration:** 10-12 minutes
@@ -177,7 +177,7 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
-## Element 6: Video 3 - Don Rea, PGA Tour Interview
+## Element 6: **RENUMBERED** - Video 3 - Don Rea, PGA Tour Interview (was Element 5)
 
 **File:** `week4-video3-don-rea-pga-interview.mp4`
 **Duration:** 10-12 minutes
@@ -211,7 +211,7 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
-## Element 7: Video 4 - Women's Sports Investment Expert
+## Element 7: **RENUMBERED** - Video 4 - Women's Sports Investment Expert (was Element 6)
 
 **File:** `week4-video4-womens-sports-expert.mp4`
 **Duration:** 8-10 minutes
@@ -245,7 +245,7 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
-## Element 8: Details Accordion - Video Transcripts
+## Element 8: **RENUMBERED** - Details Accordion - Video Transcripts (was Element 7)
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -274,7 +274,7 @@ reading to watching videos.
 
 ---
 
-## Element 9: AI Chat Widget Configuration
+## Element 9: **RENUMBERED** - AI Chat Widget Configuration (was Element 8)
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element

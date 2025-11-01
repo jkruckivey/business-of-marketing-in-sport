@@ -196,7 +196,7 @@ Students drag initiatives onto the matrix:
 
 ---
 
-## Element 3: Reflection Prompt After Widget 1
+## Element 3: **RENUMBERED** - Reflection Prompt After Widget 1 (was Element 2)
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -230,7 +230,7 @@ The Hockey Hall of Fame faces this exact dilemma. Jamie Dinsmore (President & CE
 
 ---
 
-## Element 4: Future Trends Predictor Widget
+## Element 4: **RENUMBERED** - Future Trends Predictor Widget (was Element 3)
 
 ### ⚙ Interactive Activity: Future Trends Predictor
 
@@ -376,7 +376,7 @@ Based on trend choices, widget plots your organization on 2x2 matrix:
 
 ---
 
-## Element 5: Reflection Prompt After Widget 2
+## Element 5: **RENUMBERED** - Reflection Prompt After Widget 2 (was Element 4)
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -426,7 +426,7 @@ This Future Trends widget helps you see how emerging trends will reshape the ent
 
 ---
 
-## Element 6: Details Accordion - Deep Dive: Heritage Property Economics
+## Element 6: **RENUMBERED** - Details Accordion - Deep Dive: Heritage Property Economics (was Element 5)
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -608,7 +608,7 @@ Your Strategic Vision Memo must make this trade-off explicit and justify it base
 
 ---
 
-## Element 7: AI Chat Widget Configuration
+## Element 7: **RENUMBERED** - AI Chat Widget Configuration (was Element 6)
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element

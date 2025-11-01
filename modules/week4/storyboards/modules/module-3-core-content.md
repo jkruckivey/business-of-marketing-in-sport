@@ -54,7 +54,7 @@ Ready? Let's experiment.
 
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element
@@ -80,7 +80,7 @@ Ready? Let's experiment.
 
 ---
 
-## Element 3: Athlete Brand Calculator Widget
+## Element 3: **RENUMBERED** - Athlete Brand Calculator Widget (was Element 2)
 
 ### ⚙ Interactive Activity: Athlete Brand Calculator
 
@@ -158,7 +158,7 @@ This isn't a passive calculation—it's an experimentation lab. Try extreme allo
 
 ---
 
-## Element 4: Reflection Prompt After Widget 1
+## Element 4: **RENUMBERED** - Reflection Prompt After Widget 1 (was Element 3)
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -188,7 +188,7 @@ After experimenting with the Athlete Brand Calculator, take 2 minutes to reflect
 
 ---
 
-## Element 5: Emerging Sports Investment Tool Widget
+## Element 5: **RENUMBERED** - Emerging Sports Investment Tool Widget (was Element 4)
 
 ### ⚙ Interactive Activity: Emerging Sports Investment Tool
 
@@ -275,7 +275,7 @@ Here's the strategic question driving this widget: Why are NWSL franchises value
 
 ---
 
-## Element 6: Reflection Prompt After Widget 2
+## Element 6: **RENUMBERED** - Reflection Prompt After Widget 2 (was Element 5)
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -308,7 +308,7 @@ After experimenting with the Emerging Sports Investment Tool, reflect:
 
 ---
 
-## Element 7: Details Accordion - Deep Dive: Why Equity Beats Fees
+## Element 7: **RENUMBERED** - Details Accordion - Deep Dive: Why Equity Beats Fees (was Element 6)
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -420,7 +420,7 @@ The math doesn't lie: Given sufficient time, equity always beats fees.
 
 ---
 
-## Element 8: AI Chat Widget Configuration
+## Element 8: **RENUMBERED** - AI Chat Widget Configuration (was Element 7)
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element

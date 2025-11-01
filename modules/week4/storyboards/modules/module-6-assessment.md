@@ -67,7 +67,7 @@ Let's show what you can do.
 
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element
@@ -93,7 +93,7 @@ Let's show what you can do.
 
 ---
 
-## Element 3: Infobox - PAIRR Assessment Overview
+## Element 3: **RENUMBERED** - Infobox - PAIRR Assessment Overview (was Element 2)
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -124,7 +124,7 @@ Reflect on revision choices: Which feedback influenced you most? (200-300 words,
 
 ---
 
-## Element 4: Assessment Prompt + Scenario (Phase 1: Draft)
+## Element 4: **RENUMBERED** - Assessment Prompt + Scenario (Phase 1: Draft) (was Element 3)
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -265,7 +265,7 @@ Your memo must include these specific calculations (can be in tables or inline t
 
 ---
 
-## Element 5: Phase 2A - Peer Feedback Instructions
+## Element 5: **NEW** - Phase 2A - Peer Feedback Instructions (was Element 4)
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -333,7 +333,7 @@ Submit your feedback via Element 11 (Peer Feedback Submission Box) by Day 5.
 
 ---
 
-## Element 6: Phase 2B - AI Feedback Instructions
+## Element 6: **NEW** - Phase 2B - AI Feedback Instructions (was Element 5)
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -402,7 +402,7 @@ By getting feedback from both a peer (human) and ChatGPT (AI), you'll develop cr
 
 ---
 
-## Element 7: Phase 3 - Comparative Reflection
+## Element 7: **NEW** - Phase 3 - Comparative Reflection (was Element 6)
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -466,7 +466,7 @@ Submit your 300-400 word comparative reflection via Element 13 (Comparative Refl
 
 ---
 
-## Element 8: Phase 5 - Post-Revision Reflection
+## Element 8: **NEW** - Phase 5 - Post-Revision Reflection (was Element 7)
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -520,7 +520,7 @@ Submit your 200-300 word post-revision reflection via Element 15 (Post-Revision 
 
 ---
 
-## Element 9: File Attachment - Rubric with Bonus Structure
+## Element 9: **UPDATED** - File Attachment - Rubric with Bonus Structure (was Element 8)
 
 **Uplimit Implementation:**
 1. Select **File Attachment** element
@@ -555,7 +555,7 @@ Submit your 200-300 word post-revision reflection via Element 15 (Post-Revision 
 
 ---
 
-## Element 10: Phase 1 Draft Submission Box
+## Element 10: **NEW** - Phase 1 Draft Submission Box (was Element 9)
 
 **Uplimit Implementation:**
 1. Select **Text Submission** or **Assignment Submission** element

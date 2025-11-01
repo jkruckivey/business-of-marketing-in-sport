@@ -35,7 +35,7 @@ Now it's time to see how theory meets reality. The Vancouver Canucks face actual
 ### Element 3: Infobox Content
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element

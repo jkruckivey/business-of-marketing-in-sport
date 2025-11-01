@@ -75,7 +75,7 @@ This module features two recorded executive sessions that bring real-world persp
 
 ---
 
-## Element 3: Video 1 - Jamie Dinsmore (Hockey Hall of Fame CEO)
+## Element 3: **RENUMBERED** - Video 1 - Jamie Dinsmore (Hockey Hall of Fame CEO) (was Element 2)
 
 - **File:** `week5-video1-jamie-dinsmore-hhof.mp4`
 - **Duration:** 12-15 minutes
@@ -383,7 +383,7 @@ That's the challenge. That's why this work is sophisticated."
 
 ---
 
-## Element 4: Discussion Prompt - Jamie Dinsmore Session
+## Element 4: **RENUMBERED** - Discussion Prompt - Jamie Dinsmore Session (was Element 3)
 
 **Uplimit Implementation:**
 1. Select **Discussion Prompt** element in module builder
@@ -444,7 +444,7 @@ What do you notice about the APPROVED innovations that the REJECTED innovations 
 
 ---
 
-## Element 5: Video 2 - Keith Pelley (MLSE CEO)
+## Element 5: **RENUMBERED** - Video 2 - Keith Pelley (MLSE CEO) (was Element 4)
 
 - **File:** `week5-video2-keith-pelley-mlse.mp4`
 - **Duration:** 12-15 minutes
@@ -790,7 +790,7 @@ Just with different risk tolerance and growth expectations."
 
 ---
 
-## Element 6: Discussion Prompt - Keith Pelley Session
+## Element 6: **RENUMBERED** - Discussion Prompt - Keith Pelley Session (was Element 5)
 
 **Uplimit Implementation:**
 1. Select **Discussion Prompt** element in module builder
@@ -851,7 +851,7 @@ Or do they fundamentally disagree on what "serves the mission"?
 
 ---
 
-## Element 7: Comparison Prompt - Dialogue Synthesis
+## Element 7: **RENUMBERED** - Comparison Prompt - Dialogue Synthesis (was Element 6)
 
 **Uplimit Implementation:**
 1. Select **Discussion Prompt** element in module builder
@@ -901,7 +901,7 @@ Explain your reasoning. What factors would influence your choice?
 
 ---
 
-## Element 8: Details Accordion - Video Transcripts
+## Element 8: **RENUMBERED** - Details Accordion - Video Transcripts (was Element 7)
 
 **Uplimit Implementation:**
 1. Select **Details** element in module builder

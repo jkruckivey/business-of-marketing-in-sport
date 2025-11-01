@@ -8,14 +8,16 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 5 | Type directly | Launches submission and reflection |
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **Text Response** ⬤ Required | Activation Plan Submission (File Upload) | Configure in Uplimit | 40 points, rubric grading |
-| 3 | **▬ Text** ◐ Recommended | PAIRR Feedback Phase Instructions | Type directly | Dual feedback methodology (5 bonus pts) |
-| 5 | **Text Response** ◐ Recommended | Peer Review Submission | Configure in Uplimit | 2 bonus points for peer feedback |
-| 6 | **Text Response** ◐ Recommended | Comparative Reflection | Configure in Uplimit | 1 bonus point - compare peer vs AI |
-| 7 | **Text Response** ◐ Recommended | Post-Revision Reflection | Configure in Uplimit | 1 bonus point - feedback integration |
-| 8 | **Text Response** ◐ Recommended | Week 3 Reflection (250 words) | Configure in Uplimit | 3 reflection questions (ungraded) |
-| 9 | **Video** ⬤ Required | Week 3 Wrap-Up & Week 4 Preview (2 min) | Upload MP4 | Consolidate learning, preview athletes |
-| 10 | **Infobox (Next Steps)** ⬤ Required | Week 4 Preview and Preparation | Type directly | Green variant, transition |
+| 3 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
+| 4 | **Text Response** ⬤ Required | Activation Plan Submission (File Upload) | Configure in Uplimit | 40 points, rubric grading |
+| 5 | **▬ Text** ◐ Recommended | PAIRR Feedback Phase Instructions | Type directly | Dual feedback methodology (5 bonus pts) |
+| 6 | **Text Response** ◐ Recommended | Peer Review Submission | Configure in Uplimit | 2 bonus points for peer feedback |
+| 7 | **Text Response** ◐ Recommended | AI Feedback Submission | Configure in Uplimit | 1 bonus point - paste ChatGPT output |
+| 8 | **Text Response** ◐ Recommended | Comparative Reflection | Configure in Uplimit | 1 bonus point - compare peer vs AI |
+| 9 | **Text Response** ◐ Recommended | Post-Revision Reflection | Configure in Uplimit | 1 bonus point - feedback integration |
+| 10 | **Text Response** ◐ Recommended | Week 3 Reflection (250 words) | Configure in Uplimit | 3 reflection questions (ungraded) |
+| 11 | **Video** ⬤ Required | Week 3 Wrap-Up & Week 4 Preview (2 min) | Upload MP4 | Consolidate learning, preview athletes |
+| 12 | **Infobox (Next Steps)** ⬤ Required | Week 4 Preview and Preparation | Type directly | Green variant, transition |
 
 ---
 
@@ -39,7 +41,41 @@ Let's finish Week 3 strong. Submit your plan and celebrate what you've built.
 
 ---
 
-## Element 2: Text Response - Activation Plan Submission
+## Element 3: **NEW** - PAIRR Assessment Overview
+
+**Uplimit Implementation:**
+1. Select **Infobox** element
+2. Choose variant: **Callout**
+3. Copy markdown below:
+
+```markdown
+Title: ◉ PAIRR Assessment: Group Activation Plan with Dual Feedback
+
+This group assignment combines activation plan design with dual feedback (peer + AI) to develop both strategic execution skills and AI literacy.
+
+**Phase 1: Build Your Activation Plan (Due Day 6)**
+- Design activation plan with your group using Module 5 tools
+- Submit 80-90% complete draft for feedback (File upload, no points yet)
+
+**Phase 2: Dual Feedback (Due Day 8)**
+- Peer review: Review assigned group's draft using rubric (2 pts bonus)
+- AI review: Generate ChatGPT feedback on your own group's draft (1 pt bonus)
+
+**Phase 3: Comparative Reflection (Due Day 8)**
+- Compare peer vs. AI feedback: Which was more useful? (150-250 words, 1 pt bonus)
+
+**Phase 4: Revision (Due Day 10)**
+- Revise activation plan incorporating feedback. Submit final version for grading (40-point rubric).
+
+**Phase 5: Post-Revision Reflection (Due Day 10)**
+- Reflect on revision choices: Which feedback influenced you most? (75-100 words, 1 pt bonus)
+
+**Total Possible: 45 points** (40 pts activation plan + 5 pts PAIRR bonus)
+```
+
+---
+
+## Element 4: **RENUMBERED** - Text Response - Activation Plan Submission (was Element 3)
 
 **Element Type:** Text Response (File upload, rubric grading)
 
@@ -155,7 +191,7 @@ The plan demonstrates professional executive summary quality with polished forma
 
 ---
 
-## Element 3: Text - PAIRR Feedback Phase Instructions
+## Element 5: **RENUMBERED** - Text - PAIRR Feedback Phase Instructions (was Element 3)
 
 **Copy this markdown directly into Uplimit:**
 
@@ -344,12 +380,12 @@ You're a marketing manager at Nike. Your agency presents a $20M FanDuel partners
 
 This is the future of marketing strategy work. Practice it now.
 
-**Next elements:** Peer review form (Element 4), Comparative reflection form (Element 4B), Post-revision reflection form (Element 4C).
+**Next elements:** Peer review form (Element 6), AI feedback submission (Element 7), Comparative reflection form (Element 8), Post-revision reflection form (Element 9).
 ```
 
 ---
 
-## Element 4: Text Response - Peer Review Submission
+## Element 6: **RENUMBERED** - Text Response - Peer Review Submission (was Element 4)
 
 **Element Type:** Text Response (Short answer, bonus credit)
 
@@ -417,7 +453,57 @@ Complete this peer review form for the assigned group's activation plan.
 
 ---
 
-## Element 5: Text Response - Comparative Reflection
+## Element 7: **NEW** - Text Response - AI Feedback Submission
+
+**Element Type:** Text Response (Short answer, 1 bonus point)
+
+**Uplimit Configuration:**
+
+### Tab 1: Instructions
+
+**Question:**
+```
+Paste the complete ChatGPT (or Claude/Gemini) feedback response for your group's activation plan draft.
+```
+
+**Additional Instructions:**
+```
+**AI Feedback Submission**
+
+After your group generated AI feedback using the prompt template in Element 5 (Step 2B), paste the complete AI response here.
+
+**What to Submit:**
+- The full AI-generated feedback (copy-paste the entire response)
+- Include all sections: strengths, improvement suggestions, score estimates
+
+**Grading:**
+You're graded on successfully generating and submitting AI feedback (not on the quality of that feedback, which is out of your control).
+
+This submission verifies your group engaged with AI-assisted learning tools.
+
+**Time Estimate:** 2 minutes (just copy-paste from ChatGPT/Claude/Gemini)
+
+**Submission:** ONE group member submits on behalf of the group.
+```
+
+**Template Upload:** No template
+
+---
+
+### Tab 2: Criteria (Bonus Credit, No Rubric)
+
+**Uplimit Configuration:**
+- ⭕ DO NOT enable rubric grading (this is bonus credit)
+- ✅ Spot-check for completeness (verify AI feedback was generated, not student-written)
+- ✅ Award 1 bonus point for submitting AI-generated feedback (part of 5-point PAIRR bonus)
+
+**Instructor Grading Notes:**
+- 1 point: Complete AI feedback submitted (clearly AI-generated with rubric-aligned structure)
+- 0 points: Missing submission or obviously student-written instead of AI-generated
+
+---
+
+## Element 8: **RENUMBERED** - Text Response - Comparative Reflection (was Element 5)
 
 **Element Type:** Text Response (Short answer, 1 bonus point)
 
@@ -489,7 +575,7 @@ Do NOT assign points or grades. Focus on validating critical evaluation skills.
 
 ---
 
-## Element 6: Text Response - Post-Revision Reflection
+## Element 9: **RENUMBERED** - Text Response - Post-Revision Reflection (was Element 6)
 
 **Element Type:** Text Response (Short answer, 1 bonus point)
 
@@ -546,7 +632,7 @@ Do NOT assign points or grades. Focus on reinforcing learning about AI collabora
 
 ---
 
-## Element 7: Text Response - Week 3 Reflection
+## Element 10: **RENUMBERED** - Text Response - Week 3 Reflection (was Element 7)
 
 **Element Type:** Text Response (Short answer, ungraded)
 
@@ -599,7 +685,7 @@ Do NOT assign points or grades. Focus on learning consolidation.
 
 ---
 
-## Element 8: Video - Week 3 Wrap-Up & Week 4 Preview
+## Element 11: **RENUMBERED** - Video - Week 3 Wrap-Up & Week 4 Preview (was Element 8)
 
 **Video Specifications:**
 - **Length:** 2 minutes
@@ -643,7 +729,7 @@ Do NOT assign points or grades. Focus on learning consolidation.
 
 ---
 
-## Element 9: Infobox - Week 4 Preview
+## Element 12: **RENUMBERED** - Infobox - Week 4 Preview (was Element 9)
 
 ```
 Title: ▶ Next Steps: Week 4 - Athletes, Brands & Emerging Sports

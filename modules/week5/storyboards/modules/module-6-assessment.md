@@ -5,15 +5,25 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 5 | Type directly | Sets context for capstone assessment |
+| 1 | **▬ Text** ⬤ Required | Connecting intro + PAIRR overview | Type directly | Sets context for capstone + 105 pts total |
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, capstone focus |
-| 3 | **AI Roleplay** ◐ Recommended | Practice pitch to Board of Directors | Configure in Uplimit | Rehearse strategic vision before writing memo |
-| 5 | **Text** ⬤ Required | Submission checklist and strategic vision memo requirements | Type directly | Clear expectations for final deliverable |
-| 6 | **Text Response** ⬤ Required | Strategic vision memo submission (1,500-2,000 words) | Configure in Uplimit | Rubric evaluation mode, 100 points |
-| 7 | **Details** ○ Optional | Rubric details and scoring examples | Type directly | Accordion - transparent criteria |
-| 8 | **AI Chat Widget** ○ Optional | Strategic planning assistant | Configure in Uplimit | Named: "Strategy Planning Assistant" |
-| 9 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-6.html` | Shows how module outcomes connect to course goals |
+| 3 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
+| 4 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, capstone focus |
+| 5 | **AI Roleplay** ◐ Recommended | Practice pitch to Board of Directors | Configure in Uplimit | Formative practice before writing |
+| 6 | **Text** ⬤ Required | Submission checklist and requirements | Type directly | Clear expectations for deliverable |
+| 7 | **Text Response** ⬤ Required | DRAFT Strategic Vision Memo submission | Configure in Uplimit | Submission only, no grading yet |
+| 8 | **Text** ◐ Recommended | **Phase 2A: Peer Feedback Instructions** | Type directly | How to provide effective peer feedback |
+| 9 | **Text** ◐ Recommended | **Phase 2B: AI Feedback Instructions** | Type directly | ChatGPT prompt template |
+| 10 | **Text Response** ◐ Recommended | **Peer Feedback Submission** | Configure in Uplimit | 2 pts bonus, due Day 7 |
+| 11 | **Text Response** ◐ Recommended | **AI Feedback Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
+| 12 | **Text** ◐ Recommended | **Phase 3: Comparative Reflection** | Type directly | Instructions for comparing feedback |
+| 13 | **Text Response** ◐ Recommended | **Comparative Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
+| 14 | **Text Response** ⬤ Required | **FINAL REVISED Strategic Vision Memo** | Configure in Uplimit | Rubric grading, 100 pts, due Day 10 |
+| 15 | **Text** ◐ Recommended | **Phase 5: Post-Revision Reflection** | Type directly | Instructions for reflection |
+| 16 | **Text Response** ◐ Recommended | **Post-Revision Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 10 |
+| 17 | **Details** ○ Optional | Rubric details and scoring examples | Type directly | Accordion - transparent criteria |
+| 18 | **AI Chat Widget** ○ Optional | Strategic planning assistant | Configure in Uplimit | Named: "Strategy Planning Assistant" |
+| 19 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - MLO-CLO mapping | Embed widget | Shows course-level outcome connections |
 
 ### Element 1: Connecting Introduction Text
 **Copy this markdown directly into Uplimit:**
@@ -25,11 +35,14 @@ You've analyzed the Hockey Hall of Fame's strategic dilemma, experimented with t
 
 Now it's time to demonstrate the full scope of what you've learned. In this capstone assessment, you'll step into the role of Chief Strategy Officer for a sports property of your choice—a professional team, league, venue, heritage institution, or major event. Your Board of Directors needs a comprehensive 5-year strategic vision that integrates everything from revenue streams to future trends, from media strategy to legacy management. Your task: create an executive strategy memo that synthesizes all five weeks into a cohesive, actionable roadmap for the future.
 
+**Optional PAIRR Bonus (5 points):** This capstone assessment includes an optional Peer and AI Review + Reflection (PAIRR) process. Submit your draft by Day 5, receive peer and AI feedback by Day 7, and earn up to 5 bonus points for thoughtful engagement with the feedback process (2 pts peer review + 1 pt AI feedback + 1 pt comparative reflection + 1 pt post-revision reflection). Total possible: 105 points.
 
-## Element 2: Learning Outcomes Widget
 ---
 
-## Element 2: Learning Outcomes Widget
+## Element 2: **NEW** - Learning Outcomes Widget
+---
+
+## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element
@@ -55,10 +68,41 @@ Now it's time to demonstrate the full scope of what you've learned. In this caps
 
 ---
 
+## Element 3: **NEW** - PAIRR Assessment Overview
+
+**Uplimit Implementation:**
+1. Select **Infobox** element
+2. Choose variant: **Callout**
+3. Copy markdown below:
+
+```markdown
+Title: ◉ PAIRR Assessment: Capstone Strategic Vision with Dual Feedback
+
+This capstone assessment combines comprehensive strategic analysis with dual feedback (peer + AI) to develop both strategic thinking and AI literacy.
+
+**Phase 1: Build Your Strategic Vision (Due Day 5)**
+- Draft your 5-year strategic vision memo (80% version for feedback)
+- Complete all required sections (Executive Summary, Current State, Strategic Vision, 5-Year Roadmap, Risk Analysis)
+
+**Phase 2: Dual Feedback (Due Day 7)**
+- Peer review: Review assigned classmate's draft using rubric (2 pts bonus)
+- AI review: Generate ChatGPT feedback on your own draft (1 pt bonus)
+
+**Phase 3: Comparative Reflection (Due Day 7)**
+- Compare peer vs. AI feedback: Which was more useful? (300-400 words, 1 pt bonus)
+
+**Phase 4: Revision (Due Day 10)**
+- Revise strategic vision incorporating feedback. Submit final version for grading (100-point rubric).
+
+**Phase 5: Post-Revision Reflection (Due Day 10)**
+- Reflect on revision choices: Which feedback influenced you most? (200-300 words, 1 pt bonus)
+
+**Total Possible: 105 points** (100 pts final memo + 5 pts PAIRR bonus)
+```
 
 ---
 
-### Element 4: Infobox Content
+## Element 4: **RENUMBERED** - Infobox Content (was Element 3)
 
 Title: ▪ Capstone Assessment: 5-Year Strategic Vision
 
@@ -1290,3 +1334,40 @@ Real sports business executives create strategic vision memos for Boards of Dire
 **Status:** Ready for Uplimit implementation
 **Last Updated:** October 30, 2025
 **Word Count:** ~8,500 words (comprehensive build specification)
+
+
+---
+
+## Element 3: **NEW** - PAIRR Assessment Overview
+
+**Uplimit Implementation:**
+1. Select **Infobox** element
+2. Choose variant: **Callout**
+3. Copy markdown below:
+
+```markdown
+Title: ◉ PAIRR Assessment: Capstone Strategic Vision with Dual Feedback
+
+This capstone assessment combines comprehensive strategic analysis with dual feedback (peer + AI) to develop both strategic thinking and AI literacy.
+
+**Phase 1: Build Your Strategic Vision (Due Day 5)**
+- Draft your 5-year strategic vision memo (80% version for feedback)
+- Complete all required sections (Executive Summary, Current State, Strategic Vision, 5-Year Roadmap, Risk Analysis)
+
+**Phase 2: Dual Feedback (Due Day 7)**
+- Peer review: Review assigned classmate's draft using rubric (2 pts bonus)
+- AI review: Generate ChatGPT feedback on your own draft (1 pt bonus)
+
+**Phase 3: Comparative Reflection (Due Day 7)**
+- Compare peer vs. AI feedback: Which was more useful? (300-400 words, 1 pt bonus)
+
+**Phase 4: Revision (Due Day 10)**
+- Revise strategic vision incorporating feedback. Submit final version for grading (100-point rubric).
+
+**Phase 5: Post-Revision Reflection (Due Day 10)**
+- Reflect on revision choices: Which feedback influenced you most? (200-300 words, 1 pt bonus)
+
+**Total Possible: 105 points** (100 pts final memo + 5 pts PAIRR bonus)
+```
+
+---

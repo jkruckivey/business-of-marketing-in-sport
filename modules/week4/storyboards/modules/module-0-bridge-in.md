@@ -14,10 +14,16 @@
 | 2 | **◈ AI Roleplay** ◐ Recommended | The Brand Value Question diagnostic | Configure in Uplimit | Reveal knowledge gaps before learning begins |
 | 3 | **ⓘ Infobox** ⬤ Required | The athlete brand problem statement | Type directly | Use **Callout** variant, urgent business challenge |
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 | 4 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Athlete Brand Challenge + Quiz** | Embed `athlete-brand-pre-assessment.html` | Combined challenge text and quiz in single widget |
 | 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
 | 6 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-0.html` | Shows how module outcomes connect to course goals |
 
+=======
+| 4 | **▬ Text** ⬤ Required | Can you solve these problems? (Outcomes as questions) | Type directly | Reframes MLOs as student challenges |
+| 5 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Athlete Brand Knowledge Quiz** | Embed `athlete-brand-quiz.html` | Self-diagnostic before learning begins |
+| 6 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
+>>>>>>> Stashed changes
 =======
 | 4 | **▬ Text** ⬤ Required | Can you solve these problems? (Outcomes as questions) | Type directly | Reframes MLOs as student challenges |
 | 5 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Athlete Brand Knowledge Quiz** | Embed `athlete-brand-quiz.html` | Self-diagnostic before learning begins |
@@ -300,6 +306,7 @@ Check the box: **"Provide feedback but do not grade"**
 ---
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 **Student-Facing Instructions** (Copy into Uplimit "Instructions for Students" field):
 
 ```markdown
@@ -333,12 +340,17 @@ Your supervisor knows you're new to athlete brand strategy, so they're patient�
 ### What Happens Next
 After this exercise, you'll take a pre-assessment quiz that helps you identify exactly what you need to learn. By the end of Week 4, you'll return to this question and answer it confidently using the athlete brand framework.
 =======
+=======
+>>>>>>> Stashed changes
 **Student-Facing Instructions** (Optional - if Uplimit provides separate Instructions field):
 
 ```
 You are a junior analyst who just watched the Serena Williams brand valuation video. Your supervisor asks: "Can you explain where that extra $150-200M in brand value comes from?"
 
 Start the conversation by sharing your current thinking about how athletes build wealth beyond prize money and endorsements. This is a diagnostic exercise—struggle is expected and helps identify what you need to learn this week. The conversation will last 3-4 exchanges.
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 ```
 
@@ -369,6 +381,7 @@ Elite athletes face a strategic paradox: their playing career (8-12 years) occur
 
 ---
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 ## Element 4: Athlete Brand Pre-Assessment (Combined Widget)
 
@@ -414,6 +427,8 @@ Elite athletes face a strategic paradox: their playing career (8-12 years) occur
 
 ## Element 5: Infobox - Results Interpretation & Learning Path
 =======
+=======
+>>>>>>> Stashed changes
 ## Element 4: Text - Outcomes as "Can You..." Questions
 
 **Uplimit Implementation:**
@@ -512,6 +527,9 @@ Let's see what you've got! ↓
 ---
 
 ## Element 6: Infobox - Results Interpretation & Learning Path
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 **Uplimit Implementation:**
@@ -529,6 +547,7 @@ Your quiz results create a personalized learning path for this week. Lower score
 
 ---
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 ## 🎯 FINAL PROJECT CONNECTION
 
@@ -585,6 +604,9 @@ When you create your 5-year strategic vision in Week 5, Module 0's athlete brand
 =======
 ## Module 0 Complete - Transition to Module 1
 >>>>>>> Stashed changes
+=======
+## Module 0 Complete - Transition to Module 1
+>>>>>>> Stashed changes
 
 **What You've Accomplished:**
 You've been hooked by a real athlete branding problem—the Serena Williams $500M valuation paradox—and you've taken your first steps toward solving it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your knowledge gaps are. That's strategic clarity.
@@ -596,7 +618,11 @@ The fact that you struggled with explaining where the $150-200M additional brand
 Now that you've seen the problem and identified your knowledge gaps, Module 1 will show you exactly what you're going to learn this week. You'll see the four key challenges you'll be able to solve—challenges that will transform you from someone who thinks "athlete brand = endorsements" into someone who can design a comprehensive wealth-building strategy for elite athletes.
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path!
+=======
+Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
+>>>>>>> Stashed changes
 =======
 Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
 >>>>>>> Stashed changes

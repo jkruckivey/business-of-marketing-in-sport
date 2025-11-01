@@ -8,16 +8,22 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro from Module 3 | Type directly | Bridge from experimentation to application |
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
 | 3 | **⚙ iFrame Widget** ⬤ Required | **Post-Career Wealth Simulator** | Embed widget | Simulate retirement scenarios, see wealth preservation  |
 | 4 | **▬ Text** ◐ Recommended | Reflection prompt | Type directly | Process insights from simulation |
 | 5 | **⚙ iFrame Widget** ◐ Recommended | **Athlete Decision Tree** | Embed widget | Navigate endorsement vs. equity trade-offs |
 | 6 | **▤ Details** ○ Optional | Case study: Why 78% of NFL players go broke | Type directly | Real data on wealth preservation failure |
 =======
+=======
+>>>>>>> Stashed changes
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Post-Career Wealth Simulator** | Embed widget | Simulate retirement scenarios, see wealth preservation  |
 | 3 | **▬ Text** ◐ Recommended | Reflection prompt | Type directly | Process insights from simulation |
 | 4 | **⚙ iFrame Widget** ◐ Recommended | **Athlete Decision Tree** | Embed widget | Navigate endorsement vs. equity trade-offs |
 | 5 | **▤ Details** ○ Optional | Case study: Why 78% of NFL players go broke | Type directly | Real data on wealth preservation failure |
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 ---
@@ -44,6 +50,7 @@ This module features advanced simulations that force difficult decisions with in
 
 ---
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 ## Element 2: **NEW** - Learning Outcomes Widget
 
@@ -95,6 +102,9 @@ This isn't just about making "good" decisions—it's about understanding the mat
 =======
 ## Element 2: Post-Career Wealth Simulator Widget
 >>>>>>> Stashed changes
+=======
+## Element 2: Post-Career Wealth Simulator Widget
+>>>>>>> Stashed changes
 
 **Widget Purpose:** Simulate how different career decisions create dramatically different retirement wealth outcomes
 
@@ -140,6 +150,7 @@ This isn't just about making "good" decisions—it's about understanding the mat
 **Uplimit Embed Code:**
 ```html
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/post-career-wealth-simulator.html"
   width="100%"
@@ -150,12 +161,17 @@ This isn't just about making "good" decisions—it's about understanding the mat
   allowfullscreen
   loading="lazy">
 =======
+=======
+>>>>>>> Stashed changes
 <iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/post-career-wealth-simulator.html"
         width="900"
         height="800"
         title="Post-Career Wealth Simulator - See how career decisions affect retirement wealth"
         frameborder="0"
         aria-label="Interactive simulation of athlete wealth across career phases with strategic decision points">
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 </iframe>
 ```
@@ -163,7 +179,11 @@ This isn't just about making "good" decisions—it's about understanding the mat
 ---
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## Element 4: **RENUMBERED** - Reflection Prompt (was Element 3)
+=======
+## Element 3: Reflection Prompt
+>>>>>>> Stashed changes
 =======
 ## Element 3: Reflection Prompt
 >>>>>>> Stashed changes
@@ -190,6 +210,7 @@ After simulating career paths:
 ---
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## Element 5: **RENUMBERED** - Athlete Decision Tree Widget (was Element 4)
 
 ### ⚙ Interactive Activity: Athlete Decision Tree
@@ -214,11 +235,15 @@ Unlike the calculators that show you the math, this tool walks you through the d
 =======
 ## Element 4: Athlete Decision Tree Widget
 >>>>>>> Stashed changes
+=======
+## Element 4: Athlete Decision Tree Widget
+>>>>>>> Stashed changes
 
 **Widget Purpose:** Interactive decision tree navigating endorsement vs. equity trade-offs
 
 **Uplimit Embed Code:**
 ```html
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/athlete-decision-tree.html"
@@ -230,12 +255,17 @@ Unlike the calculators that show you the math, this tool walks you through the d
   allowfullscreen
   loading="lazy">
 =======
+=======
+>>>>>>> Stashed changes
 <iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/athlete-decision-tree.html"
         width="900"
         height="700"
         title="Athlete Decision Tree - Navigate endorsement vs equity strategic trade-offs"
         frameborder="0"
         aria-label="Interactive decision tree for evaluating athlete brand strategy decisions">
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 </iframe>
 ```
@@ -243,7 +273,11 @@ Unlike the calculators that show you the math, this tool walks you through the d
 ---
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## Element 6: **RENUMBERED** - Details - Case Study: Why Athletes Go Broke (was Element 5)
+=======
+## Element 5: Details - Case Study: Why Athletes Go Broke
+>>>>>>> Stashed changes
 =======
 ## Element 5: Details - Case Study: Why Athletes Go Broke
 >>>>>>> Stashed changes
@@ -329,6 +363,7 @@ You've built frameworks, experimented with simulations, and analyzed why athlete
 - Strategic decisions you would replicate—and what you'd change
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Ready to analyze a $500M brand strategy? Let's dive into Serena's case!
 
 ---
@@ -354,6 +389,9 @@ When you craft your 5-year strategic vision in Week 5, Module 4's simulation ins
 - **Post-Exit Value:** Your vision should explain what sustains value after the initial 5-year period. Module 4 showed assets that retain value vs. those that don't.
 
 **Real-World Application:** The simulations you completed mirror the financial models athlete advisors use. Your Week 5 capstone should demonstrate similar long-term thinking.
+=======
+Ready to analyze a real case? Let's dive in.
+>>>>>>> Stashed changes
 =======
 Ready to analyze a real case? Let's dive in.
 >>>>>>> Stashed changes

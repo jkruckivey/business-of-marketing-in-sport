@@ -27,12 +27,17 @@
         .mlo-item.active .connection-indicator { display: block; }
         .course-outcomes { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         .course-outcomes h4 { color: #2d3748; font-size: 1rem; font-weight: 600; margin-bottom: 0; display: flex; align-items: center; justify-content: space-between; cursor: pointer; user-select: none; }
         .course-outcomes h4:hover { color: #1f2937; }
         .toggle-icon { font-size: 1.2rem; color: #6b7280; transition: transform 0.2s ease; }
         .toggle-icon.expanded { transform: rotate(180deg); }
         .clo-list { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem; max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
         .clo-list.expanded { max-height: 1000px; }
+=======
+        .course-outcomes h4 { color: #2d3748; font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
+        .clo-list { display: flex; flex-direction: column; gap: 0.75rem; }
+>>>>>>> Stashed changes
 =======
         .course-outcomes h4 { color: #2d3748; font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
         .clo-list { display: flex; flex-direction: column; gap: 0.75rem; }
@@ -70,11 +75,16 @@
 
         <div class="course-outcomes">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <h4 onclick="toggleCLOs()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleCLOs();}" tabindex="0" role="button" aria-expanded="false" aria-controls="clo-list">
                 <span>Course-Level Outcomes</span>
                 <span class="toggle-icon" aria-hidden="true">▼</span>
             </h4>
             <div class="clo-list" role="list" id="clo-list"></div>
+=======
+            <h4>Course-Level Outcomes</h4>
+            <div class="clo-list" role="list"></div>
+>>>>>>> Stashed changes
 =======
             <h4>Course-Level Outcomes</h4>
             <div class="clo-list" role="list"></div>
@@ -89,17 +99,23 @@
     <script>
         const courseOutcomes = [
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             { code: 'CLO 1', text: 'Analyze Revenue Ecosystems - Map and evaluate interdependencies of major revenue streams in sports business' },
             { code: 'CLO 2', text: 'Evaluate Media & Fan Monetization - Compare traditional broadcasting vs DTC models and design fan engagement strategies' },
             { code: 'CLO 3', text: 'Design Sponsorship & Betting Strategies - Calculate sponsorship ROI and assess sports betting\'s role as growth engine' },
             { code: 'CLO 4', text: 'Build Athlete & Emerging Sport Brands - Create branding strategies for athletes and evaluate investment opportunities' },
             { code: 'CLO 5', text: 'Balance Legacy & Innovation - Develop strategies to monetize heritage properties while integrating future trends' }
 =======
+=======
+>>>>>>> Stashed changes
             { code: 'CLO 1', text: 'Analyze revenue generation strategies across sports business ecosystems' },
             { code: 'CLO 2', text: 'Evaluate media & fan monetization approaches' },
             { code: 'CLO 3', text: 'Design sponsorship & betting growth strategies' },
             { code: 'CLO 4', text: 'Build athlete & emerging sport brands' },
             { code: 'CLO 5', text: 'Balance legacy properties with innovation trends' }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         ];
 
@@ -107,7 +123,11 @@
             {
                 code: 'MLO 3.1',
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 text: 'Understand sponsorship as the financial backbone of sport',
+=======
+                text: 'Explore sponsorship as the financial backbone through framework building',
+>>>>>>> Stashed changes
 =======
                 text: 'Explore sponsorship as the financial backbone through framework building',
 >>>>>>> Stashed changes
@@ -116,7 +136,11 @@
             {
                 code: 'MLO 3.3',
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 text: 'Calculate how brands measure ROI in sport partnerships',
+=======
+                text: 'Learn ROI measurement fundamentals and brand evaluation criteria',
+>>>>>>> Stashed changes
 =======
                 text: 'Learn ROI measurement fundamentals and brand evaluation criteria',
 >>>>>>> Stashed changes
@@ -128,7 +152,10 @@
         const cloList = document.querySelector('.clo-list');
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         // Render MLOs
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         mlos.forEach(mlo => {
@@ -149,7 +176,10 @@
         });
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         // Render CLOs
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         courseOutcomes.forEach(clo => {
@@ -168,6 +198,7 @@
         function highlight(cloCodes, mloEl) {
             const wasActive = mloEl.classList.contains('active');
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             const cloList = document.getElementById('clo-list');
 
             // Auto-expand CLOs when user clicks an MLO
@@ -175,6 +206,8 @@
                 toggleCLOs();
             }
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
             document.querySelectorAll('.mlo-item').forEach(el => el.classList.remove('active'));
@@ -188,6 +221,7 @@
             }
         }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
         function toggleCLOs() {
             const cloList = document.getElementById('clo-list');
@@ -199,6 +233,8 @@
             toggleIcon.classList.toggle('expanded');
             heading.setAttribute('aria-expanded', !isExpanded);
         }
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     </script>

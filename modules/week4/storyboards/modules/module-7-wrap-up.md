@@ -13,8 +13,11 @@
 | 5 | **▬ Text** ◐ Recommended | Preview Week 5 | Type directly | Build anticipation for final week |
 | 6 | **◈ AI Chat Widget** ○ Optional | "Office hours" | Configure in Uplimit | Final questions before moving on |
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 | 7 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -125,6 +128,7 @@ You're leaving Week 4 as a strategic advisor who can:
 ## Element 2: Week 4 Concept Map Widget
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ### ⚙ Interactive Activity: Week 4 Concept Map
 
 **Practice: Synthesis of all Week 4 MLOs (4.1-4.4)**
@@ -147,6 +151,8 @@ Click on any node to explore its definition and connections. Start with the four
 
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 **Widget Purpose:** Interactive visualization showing how Week 4 frameworks connect
 
 **File:** `week4-concept-map.html`
@@ -164,6 +170,7 @@ Click on any node to explore its definition and connections. Start with the four
 **Uplimit Embed Code:**
 ```html
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/week4-concept-map.html"
   width="100%"
@@ -174,12 +181,17 @@ Click on any node to explore its definition and connections. Start with the four
   allowfullscreen
   loading="lazy">
 =======
+=======
+>>>>>>> Stashed changes
 <iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/week4-concept-map.html"
         width="900"
         height="700"
         title="Week 4 Concept Map - Interactive visualization of athlete brand frameworks"
         frameborder="0"
         aria-label="Interactive concept map showing relationships between Week 4 athlete brand frameworks">
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 </iframe>
 ```
@@ -392,6 +404,7 @@ Hi! Welcome to Week 4 office hours. I'm here to answer any remaining questions a
 ---
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ## 🎯 FINAL PROJECT CONNECTION
 
 **How Week 4 Supports Your Final Strategic Vision:**
@@ -425,6 +438,8 @@ Your Week 5 strategic vision integrates Week 4's athlete brand frameworks across
 
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 ### What's Next:
 
 **Immediate:**
@@ -440,6 +455,7 @@ Your Week 5 strategic vision integrates Week 4's athlete brand frameworks across
 ---
 
 **See you in Week 5—the final push!**
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
 ### Element 7: Learning Outcomes Widget
@@ -469,5 +485,7 @@ Your Week 5 strategic vision integrates Week 4's athlete brand frameworks across
 - Interactive highlighting shows connections between module and course goals
 - WCAG 2.2 AA compliant with keyboard navigation and screen reader support
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

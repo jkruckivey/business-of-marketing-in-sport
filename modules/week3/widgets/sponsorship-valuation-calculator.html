@@ -90,8 +90,62 @@
             outline-offset: 2px;
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 2000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         .input-section {
-            margin-bottom: 2rem;
+            margin-bottom: 0;
         }
 
         .input-group {
@@ -380,89 +434,103 @@
         <h1>Sponsorship Valuation Calculator</h1>
         <p class="subtitle">Calculate CPM, total impressions, and exposure value for sponsorship deals using industry-standard formulas.</p>
 
-        <div class="presets" role="group" aria-label="Preset sponsorship deals">
-            <button class="preset-btn" onclick="loadPreset('nfl')" aria-label="Load NFL Jersey Sponsor preset">NFL Jersey Sponsor ($25M)</button>
-            <button class="preset-btn" onclick="loadPreset('epl')" aria-label="Load EPL Shirt Sponsor preset">EPL Shirt Sponsor (£50M)</button>
-            <button class="preset-btn" onclick="loadPreset('mls')" aria-label="Load MLS Jersey Sponsor preset">MLS Jersey ($5M)</button>
-            <button class="preset-btn" onclick="loadPreset('nba')" aria-label="Load NBA Court Ad preset">NBA Court Ad ($3M)</button>
-            <button class="preset-btn" onclick="loadPreset('mlb')" aria-label="Load MLB Dugout Suite preset">MLB Dugout Suite ($1M)</button>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('inputs')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('inputs');}" tabindex="0" role="button" aria-expanded="true" aria-controls="inputs-content">
+                <h2>Valuation Inputs</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="inputs-content">
+                <div class="section-inner input-section">
+                    <div class="presets" role="group" aria-label="Preset sponsorship deals">
+                        <button class="preset-btn" onclick="loadPreset('nfl')" aria-label="Load NFL Jersey Sponsor preset">NFL Jersey Sponsor ($25M)</button>
+                        <button class="preset-btn" onclick="loadPreset('epl')" aria-label="Load EPL Shirt Sponsor preset">EPL Shirt Sponsor (£50M)</button>
+                        <button class="preset-btn" onclick="loadPreset('mls')" aria-label="Load MLS Jersey Sponsor preset">MLS Jersey ($5M)</button>
+                        <button class="preset-btn" onclick="loadPreset('nba')" aria-label="Load NBA Court Ad preset">NBA Court Ad ($3M)</button>
+                        <button class="preset-btn" onclick="loadPreset('mlb')" aria-label="Load MLB Dugout Suite preset">MLB Dugout Suite ($1M)</button>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="rightsFee">Rights Fee ($ Millions)</label>
+                        <div class="input-with-value">
+                            <input type="range" id="rightsFee" min="1" max="100" value="20" step="1"
+                                   oninput="updateCalculations()" aria-describedby="rightsFeeValue">
+                            <span class="value-display" id="rightsFeeValue" aria-live="polite">$20M</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="broadcastReach">Broadcast Reach (Avg Viewers Per Game)</label>
+                        <input type="number" id="broadcastReach" value="1500000" step="100000"
+                               oninput="updateCalculations()" aria-describedby="broadcastReachHelp">
+                        <span id="broadcastReachHelp" class="sr-only">Enter average number of viewers per broadcast game</span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="gamesPerSeason">Games Per Season</label>
+                        <select id="gamesPerSeason" onchange="updateCalculations()" aria-describedby="gamesHelp">
+                            <option value="38">38 (EPL/La Liga)</option>
+                            <option value="41">41 (NBA home games)</option>
+                            <option value="82" selected>82 (NBA/NHL full season)</option>
+                            <option value="162">162 (MLB full season)</option>
+                        </select>
+                        <span id="gamesHelp" class="sr-only">Select number of games in season</span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="attendance">In-Stadium Attendance (Avg Per Game)</label>
+                        <input type="number" id="attendance" value="18000" step="1000"
+                               oninput="updateCalculations()" aria-describedby="attendanceHelp">
+                        <span id="attendanceHelp" class="sr-only">Enter average in-stadium attendance per game</span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="digitalImpressions">Digital Impressions (Millions/Year)</label>
+                        <div class="input-with-value">
+                            <input type="range" id="digitalImpressions" min="10" max="500" value="50" step="10"
+                                   oninput="updateCalculations()" aria-describedby="digitalImpressionsValue">
+                            <span class="value-display" id="digitalImpressionsValue" aria-live="polite">50M</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="logoExposure">Logo Exposure Time (% of Broadcast)</label>
+                        <div class="input-with-value">
+                            <input type="range" id="logoExposure" min="5" max="50" value="15" step="1"
+                                   oninput="updateCalculations()" aria-describedby="logoExposureValue">
+                            <span class="value-display" id="logoExposureValue" aria-live="polite">15%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="input-section">
-            <div class="input-group">
-                <label for="rightsFee">Rights Fee ($ Millions)</label>
-                <div class="input-with-value">
-                    <input type="range" id="rightsFee" min="1" max="100" value="20" step="1"
-                           oninput="updateCalculations()" aria-describedby="rightsFeeValue">
-                    <span class="value-display" id="rightsFeeValue" aria-live="polite">$20M</span>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('results')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('results');}" tabindex="0" role="button" aria-expanded="false" aria-controls="results-content">
+                <h2>Valuation Results</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="results-content">
+                <div class="section-inner">
+                    <div class="metric-grid">
+                        <div class="metric">
+                            <div class="metric-label">Total Impressions</div>
+                            <div class="metric-value" id="totalImpressions" aria-live="polite">0M</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Cost Per Thousand (CPM)</div>
+                            <div class="metric-value" id="cpmValue" aria-live="polite">$0</div>
+                            <div id="gradeBadge" aria-live="polite"></div>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="benchmarkChart" role="img" aria-label="CPM benchmark comparison chart"></canvas>
+                    </div>
+
+                    <div class="insight-box" role="complementary" aria-label="Valuation insights">
+                        <p id="insightText" aria-live="polite"></p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="input-group">
-                <label for="broadcastReach">Broadcast Reach (Avg Viewers Per Game)</label>
-                <input type="number" id="broadcastReach" value="1500000" step="100000"
-                       oninput="updateCalculations()" aria-describedby="broadcastReachHelp">
-                <span id="broadcastReachHelp" class="sr-only">Enter average number of viewers per broadcast game</span>
-            </div>
-
-            <div class="input-group">
-                <label for="gamesPerSeason">Games Per Season</label>
-                <select id="gamesPerSeason" onchange="updateCalculations()" aria-describedby="gamesHelp">
-                    <option value="38">38 (EPL/La Liga)</option>
-                    <option value="41">41 (NBA home games)</option>
-                    <option value="82" selected>82 (NBA/NHL full season)</option>
-                    <option value="162">162 (MLB full season)</option>
-                </select>
-                <span id="gamesHelp" class="sr-only">Select number of games in season</span>
-            </div>
-
-            <div class="input-group">
-                <label for="attendance">In-Stadium Attendance (Avg Per Game)</label>
-                <input type="number" id="attendance" value="18000" step="1000"
-                       oninput="updateCalculations()" aria-describedby="attendanceHelp">
-                <span id="attendanceHelp" class="sr-only">Enter average in-stadium attendance per game</span>
-            </div>
-
-            <div class="input-group">
-                <label for="digitalImpressions">Digital Impressions (Millions/Year)</label>
-                <div class="input-with-value">
-                    <input type="range" id="digitalImpressions" min="10" max="500" value="50" step="10"
-                           oninput="updateCalculations()" aria-describedby="digitalImpressionsValue">
-                    <span class="value-display" id="digitalImpressionsValue" aria-live="polite">50M</span>
-                </div>
-            </div>
-
-            <div class="input-group">
-                <label for="logoExposure">Logo Exposure Time (% of Broadcast)</label>
-                <div class="input-with-value">
-                    <input type="range" id="logoExposure" min="5" max="50" value="15" step="1"
-                           oninput="updateCalculations()" aria-describedby="logoExposureValue">
-                    <span class="value-display" id="logoExposureValue" aria-live="polite">15%</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="results" role="region" aria-label="Calculation results">
-            <h2>Valuation Results</h2>
-
-            <div class="metric-grid">
-                <div class="metric">
-                    <div class="metric-label">Total Impressions</div>
-                    <div class="metric-value" id="totalImpressions" aria-live="polite">0M</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-label">Cost Per Thousand (CPM)</div>
-                    <div class="metric-value" id="cpmValue" aria-live="polite">$0</div>
-                    <div id="gradeBadge" aria-live="polite"></div>
-                </div>
-            </div>
-
-            <div class="chart-container">
-                <canvas id="benchmarkChart" role="img" aria-label="CPM benchmark comparison chart"></canvas>
-            </div>
-
-            <div class="insight-box" role="complementary" aria-label="Valuation insights">
-                <p id="insightText" aria-live="polite"></p>
             </div>
         </div>
 
@@ -712,6 +780,17 @@
             document.getElementById('logoExposure').value = 15;
 
             updateCalculations();
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
 
         // Initialize on page load

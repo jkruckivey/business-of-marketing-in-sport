@@ -6,13 +6,14 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 4 | Type directly | Sets context, connects narrative |
-| 2 | **Infobox (Callout)** ⬤ Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
-| 3 | **Text** ⬤ Required | Full case study narrative | **🔗 ATTACH CASE HERE:** Upload Canucks case PDF or type markdown | Main case text (8-10 pages) |
-| 4 | **Table** ⬤ Required | NHL revenue sharing model data | Type directly | Financial data for analysis |
-| 5 | **Details** ⬤ Required | Exhibit A: Canucks financial statements | **🔗 ATTACH EXHIBIT A:** Upload PDF with financial statements | Accordion - supporting data |
-| 6 | **Details** ⬤ Required | Exhibit B: NHL league-wide revenue data | **🔗 ATTACH EXHIBIT B:** Upload PDF with league data | Accordion - comparative data |
-| 7 | **Details** ⬤ Required | Exhibit C: Canadian market characteristics | **🔗 ATTACH EXHIBIT C:** Type or upload market context | Accordion - market context |
-| 8 | **Image** ○ Optional | Org chart or revenue flow diagram | Upload PNG + alt text | Visual aid if helpful |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
+| 3 | **Infobox (Callout)** ⬤ Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
+| 4 | **Text** ⬤ Required | Full case study narrative | **🔗 ATTACH CASE HERE:** Upload Canucks case PDF or type markdown | Main case text (8-10 pages) |
+| 5 | **Table** ⬤ Required | NHL revenue sharing model data | Type directly | Financial data for analysis |
+| 8 | **Details** ⬤ Required | Exhibit A: Canucks financial statements | **🔗 ATTACH EXHIBIT A:** Upload PDF with financial statements | Accordion - supporting data |
+| 8 | **Details** ⬤ Required | Exhibit B: NHL league-wide revenue data | **🔗 ATTACH EXHIBIT B:** Upload PDF with league data | Accordion - comparative data |
+| 8 | **Details** ⬤ Required | Exhibit C: Canadian market characteristics | **🔗 ATTACH EXHIBIT C:** Type or upload market context | Accordion - market context |
+| 9 | **Image** ○ Optional | Org chart or revenue flow diagram | Upload PNG + alt text | Visual aid if helpful |
 | 9 | **AI Chat Widget (Roleplay)** ◐ Recommended | NHL Board of Governors meeting | Configure in Uplimit | Defend Canucks position on revenue sharing |
 
 **Content Priority Badges:**
@@ -31,7 +32,35 @@ You've now built your own theoretical revenue strategy through the Revenue Empir
 Now it's time to see how theory meets reality. The Vancouver Canucks face actual constraints that your simulation didn't include: NHL revenue sharing formulas, Canadian dollar currency challenges, a competitive Western Conference, and market-size limitations. In this module, you'll analyze real financial data, real strategic dilemmas, and real stakeholder tensions. This is where sports business gets messy—and interesting.
 ```
 
-### Element 2: Infobox Content
+### Element 3: Infobox Content
+---
+
+## Element 2: Learning Outcomes Widget
+
+**Uplimit Implementation:**
+1. Select **iFrame Widget** element
+2. Copy embed code below:
+
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-5.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Module 5 Learning Outcomes"
+  aria-label="Visual map showing which learning outcomes are practiced in Module 5"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows which Week 1 MLOs are practiced in this module (case study analysis)
+- Visual badge indicating Module 5: Case Study
+- Interactive: Click to see how Canucks case connects to all frameworks
+
+---
+
 ```
 Title: ▸ Case Study: Vancouver Canucks - Competing on Revenue Sharing
 
@@ -51,7 +80,9 @@ This case directly addresses MLO 1.4: Analyze different revenue sharing models.
 Preparation: Read the full case and all exhibits before the executive case discussion.
 ```
 
-### Element 3: Text Content - Case Study Template
+---
+
+### Element 4: Text Content - Case Study Template
 **Document Structure:**
 ```
 # NHL Vancouver Canucks: Competing on Revenue Sharing
@@ -79,7 +110,9 @@ Total: 8-10 pages
 - Include any charts/graphs from original (or extract as separate images)
 - Maintain case formatting (may include indented quotes, bullet lists)
 
-### Element 4: Table Content - NHL Revenue Sharing Model
+---
+
+### Element 5: Table Content - NHL Revenue Sharing Model
 
 | **Revenue Type** | **% Shared** | **Distribution Method** | **Canucks Impact** |
 |-----------------|-------------|----------------------|------------------|
@@ -91,7 +124,13 @@ Total: 8-10 pages
 
 **Table Caption:** "NHL Revenue Sharing Formula - Impact on Vancouver Canucks (Simplified). Source: NHL CBA 2020-2026"
 
-### Element 5: Details - Exhibit A Content
+---
+
+---
+
+---
+
+### Element 8: Details - Exhibit A Content
 ```
 Title: Exhibit A: Vancouver Canucks Financial Statements (Summary)
 
@@ -110,7 +149,11 @@ Title: Exhibit A: Vancouver Canucks Financial Statements (Summary)
 [2-3 explanatory notes about the numbers]
 ```
 
-### Element 6: Details - Exhibit B Content
+---
+
+---
+
+### Element 8: Details - Exhibit B Content
 ```
 Title: Exhibit B: NHL League-Wide Revenue Data
 
@@ -130,7 +173,9 @@ Title: Exhibit B: NHL League-Wide Revenue Data
 [Table comparing all 7 Canadian NHL teams]
 ```
 
-### Element 7: Details - Exhibit C Content
+---
+
+### Element 8: Details - Exhibit C Content
 ```
 Title: Exhibit C: Canadian Market Characteristics
 
@@ -149,7 +194,9 @@ Title: Exhibit C: Canadian Market Characteristics
 [Information about Canadian broadcast rights, Rogers Sportsnet deal]
 ```
 
-### Element 8: Image Specification (if used)
+---
+
+### Element 9: Image Specification (if used)
 - **File:** `nhl-revenue-flow-diagram.png`
 - **Alt Text:** "Diagram showing NHL revenue sharing flow: National media and licensing revenue flows to central league office, 50% redistributed equally to all 32 teams. Local revenue (tickets, sponsorship, local media) stays with individual teams. Arrows indicate direction of money flow."
 - **Caption:** "NHL Revenue Sharing Model - Centralized vs. Local Revenue Streams"
@@ -504,6 +551,30 @@ Students with anxiety about AI roleplay can submit a written position memo inste
 - ✅ All interactive elements keyboard accessible
 - ✅ Color not sole means of conveying information (symbols + text labels)
 - ✅ Sufficient color contrast throughout (tested with WCAG tool)
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 5 Supports Your Final Strategic Vision:**
+
+Module 5 applied all Week 1 frameworks to a real NHL franchise facing complex revenue-sharing and currency challenges. This case analysis prepares you to analyze YOUR chosen property in Week 5.
+
+**What You Learned:**
+- Revenue sharing creates strategic constraints (NHL's 50% sharing limits Canucks' flexibility)
+- Mid-market teams face unique challenges (contributing to large-market sharing pools while competing with small-market recipients)
+- Currency headwinds impact Canadian teams (earn CAD, pay salaries in USD)
+- Real cases involve governance politics, not just financial optimization
+
+**How to Apply This to Your Final Project:**
+
+When you analyze your chosen property in Week 5, use the Canucks case as your analytical template:
+
+- **Contextual Constraints:** Acknowledge the structural factors beyond your control. The Canucks can't exit NHL revenue sharing; you likely face similar constraints in your property's league/sport. Your vision should work within these realities.
+- **Strategic Positioning:** The Canucks are a mid-market team—neither dominant like NYR/TOR nor struggling like ARI/FLA. Where does YOUR property fit? Module 5 taught you to analyze positioning: Are you a market leader, challenger, or underdog? Each requires different strategies.
+- **Financial Modeling:** Use the Canucks' revenue breakdown as a benchmark. If your property is an NHL team, compare your projections to the Canucks' actual financials. If you're in a different sport, adapt the framework.
+
+**Real-World Application:** The Canucks case revealed that financial statements don't tell the whole story. Governance structures, league politics, and macroeconomic forces shape strategy. Your Week 5 capstone must account for these non-financial factors—Module 5 taught you how.
 
 ---
 

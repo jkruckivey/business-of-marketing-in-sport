@@ -168,8 +168,27 @@ Ready to master these capabilities? Let's begin.
 
 **Widget Purpose:** Interactive visualization showing Week 4's learning journey and how outcomes connect
 
-**Implementation:**
-Embed iframe widget showing visual roadmap from MLO 4.1 → 4.2 → 4.3 → 4.4 with Serena Williams case as capstone
+**Uplimit Implementation:**
+1. Select **iFrame Widget** element
+2. Copy embed code below:
+
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-1.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Module 1 Learning Outcomes"
+  aria-label="Visual map showing which learning outcomes are practiced in Module 1"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Visual roadmap from MLO 4.1 → 4.2 → 4.3 → 4.4 with Serena Williams case as capstone
+- Interactive: Click outcomes to see details
+- Shows learning progression through Week 4
 
 ---
 
@@ -232,6 +251,30 @@ When you submit Milestone 3 at the end of Week 4, you'll reference this week's f
 
 Week 4 isn't just theory—it's the strategic toolkit you'll apply to your Anchor Project's implementation plan this week.
 ```
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 1 Supports Your Final Strategic Vision:**
+
+Module 1 established the four learning outcomes that define athlete brand strategy. This framework is essential if your Week 5 capstone involves athlete partnerships, women's sports investment, or emerging sports properties.
+
+**What You Learned:**
+- Five athlete revenue streams and which create equity-based wealth vs. fee-based income
+- Owned assets (businesses, investments) compound over decades; endorsements stop when relevance fades
+- Women's sports and emerging sports represent high-growth investment opportunities (NWSL franchises: $3M in 2015 → $40M+ in 2023)
+- Post-career transition strategies separate temporary prosperity from generational wealth
+
+**How to Apply This to Your Final Project:**
+
+When you craft your 5-year strategic vision in Week 5, Module 1's athlete frameworks inform several strategic dimensions:
+
+- **Partnership Structure:** If your property signs athletes, explain the economic model. Will you pay appearance fees, offer revenue share, or provide equity stakes? Module 1 taught you which structures build long-term value.
+- **Women's Sports Investment Thesis:** If analyzing women's sports or emerging properties, reference Module 1's growth data. Example: "NWSL valuations grew 13× in 8 years (Week 4 data), projecting similar trajectory for our property."
+- **Asset vs. Income Focus:** Your vision should prioritize equity-building activities over fee-generating transactions. Module 1 taught this distinction.
+
+**Real-World Application:** Your strategic vision must answer: How does this property create sustainable value? Module 1 taught you that equity compounds, income doesn't—apply this principle throughout your capstone.
 
 ---
 

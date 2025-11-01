@@ -9,13 +9,15 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 0 | Type directly | Sets context, introduces both executives |
-| 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about executive sessions + viewing instructions | Type directly | Blue variant, explains both perspectives |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
+| 3 | **ⓘ Infobox (Callout)** ⬛ Required | Context about executive sessions + viewing instructions | Type directly | Blue variant, explains both perspectives |
 | 3 | **▶ Video 1** ⬛ Required | Jamie Dinsmore (HHOF CEO) - Heritage Institution Perspective (12-15 min) | Upload MP4 + VTT transcript | Focus: Preserving authenticity while growing revenue |
-| 4 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Jamie's session | Type directly | 3-5 prompts guiding synthesis |
-| 5 | **▶ Video 2** ⬛ Required | Keith Pelley (MLSE CEO) - Modern Franchise Perspective (12-15 min) | Upload MP4 + VTT transcript | Focus: Balancing tradition with aggressive growth |
-| 6 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Keith's session | Type directly | 3-5 prompts guiding synthesis |
-| 7 | **◈ Comparison Prompt** ▢ Optional | Dialogue synthesis: Where do these perspectives align/conflict? | Type directly | Synthesizes heritage vs. growth tension |
-| 8 | **▤ Details** ▢ Optional | Video transcripts (optional) | Type directly | Accordion for text versions |
+| 5 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Jamie's session | Type directly | 3-5 prompts guiding synthesis |
+| 6 | **▶ Video 2** ⬛ Required | Keith Pelley (MLSE CEO) - Modern Franchise Perspective (12-15 min) | Upload MP4 + VTT transcript | Focus: Balancing tradition with aggressive growth |
+| 7 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Keith's session | Type directly | 3-5 prompts guiding synthesis |
+| 8 | **◈ Comparison Prompt** ▢ Optional | Dialogue synthesis: Where do these perspectives align/conflict? | Type directly | Synthesizes heritage vs. growth tension |
+| 9 | **▤ Details** ▢ Optional | Video transcripts (optional) | Type directly | Accordion for text versions |
+| 10 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-2.html` | Shows how module outcomes connect to course goals |
 
 ---
 
@@ -1030,5 +1032,33 @@ Ready to build your heritage strategy toolkit? Let's go!
 ---
 
 **Ready for implementation!** This Module 2 can be copy-pasted directly into Uplimit using the platform's video, discussion, and details elements.
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 2 Supports Your Final Strategic Vision:**
+
+Module 2 delivered authentic practitioner insights from two executives navigating heritage property strategy from opposite perspectives. These real-world voices ground your Strategic Vision Memo in operational reality and stakeholder complexity.
+
+**What You Learned:**
+- Heritage institutions (Jamie Dinsmore/HHOF) face authenticity constraints—curatorial veto power, donor expectations, and institutional credibility requirements limit growth options
+- Modern franchises (Keith Pelley/MLSE) leverage heritage as a growth asset—tradition creates emotional connection that drives ALL revenue streams
+- Both executives prioritize authenticity as a business asset, not just cultural value
+- Risk tolerance differs: Heritage institutions are conservative (preservation is the product); franchises are aggressive (heritage enables innovation)
+- Common language around "stewardship" and "knowing your limits"—even growth-focused executives recognize boundaries
+
+**How to Apply This to Your Final Project:**
+
+When you craft your Strategic Vision Memo in Module 6, reference executive decision-making frameworks from Module 2:
+
+- **Stakeholder Management Section:** Jamie discussed how donors, curatorial staff, and partner leagues (NHL, Hockey Canada) have veto power. If YOUR property has similar stakeholder constraints, acknowledge them explicitly and explain how your vision navigates these relationships.
+- **Heritage as Revenue Driver:** Keith explained how MLSE integrates Maple Leafs' 100+ year history into modern fan experiences (premium seating with historical exhibits, digital content celebrating legends). Your vision should show HOW heritage translates to revenue, not just that it exists.
+- **Risk Calibration:** Jamie's "Disneyfication trap" and Keith's "never compromise authenticity" both emphasize limits. Your Strategic Vision must identify where you'll draw the line—what innovations are you willing to reject to preserve brand integrity?
+- **Executive Voice:** Both interviews model executive communication style: Data-driven, explicit about trade-offs, anticipating skeptical questions. Your memo should emulate this voice—you're writing for a Board of Directors, not a marketing campaign.
+
+**Real-World Application:** Jamie and Keith make multi-million dollar decisions on exactly the trade-offs you're analyzing. When you pitch your 5-year vision, you'll face similar scrutiny from skeptical stakeholders. Module 2 taught you how practitioners defend strategic choices under real constraints.
+
+---
 
 **Next File:** [MODULE 3: Core Content - Heritage Monetization & Future Trends](module-3-core-content.md)

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Selection Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: white;
+            color: #2d3748;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .filter-section {
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-section h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            color: #2d3748;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .filter-btn:hover {
+            border-color: #2d3748;
+            background: #f9fafb;
+        }
+
+        .filter-btn.active {
+            border-color: #2d3748;
+            background: #2d3748;
+            color: white;
+        }
+
+        .properties-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .property-card {
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .property-card:hover {
+            border-color: #2d3748;
+            transform: translateY(-3px);
+        }
+
+        .property-card.selected {
+            border-color: #4ade80;
+            background: rgba(74, 222, 128, 0.1);
+        }
+
+        .property-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .property-icon {
+            font-size: 2.5rem;
+        }
+
+        .property-title {
+            flex: 1;
+        }
+
+        .property-title h3 {
+            color: #1f2937;
+            font-size: 1.3rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .property-category {
+            color: #6b7280;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .property-description {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .property-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            padding: 0.25rem 0.75rem;
+            background: white;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            color: #2d3748;
+        }
+
+        .property-factors {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .factor {
+            text-align: center;
+        }
+
+        .factor-label {
+            font-size: 0.75rem;
+            color: #6b7280;
+            margin-bottom: 0.25rem;
+        }
+
+        .factor-value {
+            font-weight: 700;
+            color: #2d3748;
+        }
+
+        .selection-panel {
+            background: rgba(74, 222, 128, 0.1);
+            border: 2px solid #4ade80;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+            display: none;
+        }
+
+        .selection-panel.visible {
+            display: block;
+        }
+
+        .selection-panel h2 {
+            color: #4ade80;
+            margin-bottom: 1rem;
+        }
+
+        .rationale-input {
+            width: 100%;
+            min-height: 120px;
+            padding: 1rem;
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            color: #2d3748;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: vertical;
+            margin-top: 1rem;
+        }
+
+        .word-count {
+            text-align: right;
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .export-btn {
+            background: linear-gradient(135deg, #4ade80, #22c55e);
+            color: #1a1a1a;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 1.5rem;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(74, 222, 128, 0.3);
+        }
+
+        .export-btn:disabled {
+            background: #f9fafb;
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 768px) {
+            .properties-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Collapsible Section Styles */
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: #f9fafb;
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: #e5e7eb;
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: #6b7280;
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 5000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Property Selection Tool</h1>
+        <p class="subtitle">Choose your sport property for the Anchor Project - explore options across Legacy Properties, Emerging Sports, and Major Events</p>
+
+        <!-- Section 1: Property Browser (Expanded by default) -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('browser')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('browser');}" tabindex="0" role="button" aria-expanded="true" aria-controls="browser-content">
+                <h2>Property Browser</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="browser-content">
+                <div class="section-inner">
+                    <div class="filter-section">
+                        <h3>Filter by Category</h3>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" onclick="filterProperties('all')">All Properties</button>
+                            <button class="filter-btn" onclick="filterProperties('legacy')">Legacy Properties</button>
+                            <button class="filter-btn" onclick="filterProperties('emerging')">Emerging Sports</button>
+                            <button class="filter-btn" onclick="filterProperties('event')">Major Events</button>
+                        </div>
+                    </div>
+
+                    <div class="properties-grid" id="properties-grid">
+                        <!-- Properties will be generated dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Your Selection (Collapsed by default, shown when property selected) -->
+        <div class="section" id="selection-section" style="display: none;">
+            <div class="section-header" onclick="toggleSection('selection')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('selection');}" tabindex="0" role="button" aria-expanded="false" aria-controls="selection-content">
+                <h2>Your Selection & Rationale</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="selection-content">
+                <div class="section-inner">
+        <div class="selection-panel" id="selection-panel">
+            <h2>Your Selected Property</h2>
+            <p id="selected-property-name" style="font-size: 1.3rem; color: #c5b783; margin-bottom: 1rem;"></p>
+
+            <p style="margin-bottom: 0.5rem;"><strong>Why is this property interesting? What marketing challenges does it present?</strong></p>
+            <p style="color: #999; font-size: 0.9rem; margin-bottom: 1rem;">Write a 250-word rationale explaining your choice. Consider: market opportunity, competitive landscape, revenue potential, unique challenges.</p>
+
+            <textarea id="rationale" class="rationale-input" placeholder="Begin writing your rationale here..." oninput="updateWordCount()"></textarea>
+            <div class="word-count" id="word-count">0 / 250 words</div>
+
+            <button class="export-btn" onclick="exportSelection()" id="export-btn" disabled>📄 Export Property Proposal</button>
+        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
+        }
+        const properties = [
+            // Legacy Properties - Professional Teams
+            {
+                id: 'nhl-senators',
+                category: 'legacy',
+                icon: '🏒',
+                name: 'NHL Team - Ottawa Senators',
+                description: 'Mid-market NHL franchise with rebuilding phase, new ownership, arena challenges, passionate but shrinking fanbase.',
+                tags: ['Professional', 'Established', 'Rebuild Phase'],
+                complexity: 'High',
+                dataAvailability: 'Excellent',
+                timeframe: 'Long-term'
+            },
+            {
+                id: 'nhl-expansion',
+                category: 'legacy',
+                icon: '🏒',
+                name: 'NHL Expansion Team - Houston',
+                description: 'Hypothetical NHL expansion into fourth-largest US market, untapped hockey market, competitive sports landscape.',
+                tags: ['Professional', 'Expansion', 'Greenfield'],
+                complexity: 'Very High',
+                dataAvailability: 'Good',
+                timeframe: 'Long-term'
+            },
+            {
+                id: 'mls-team',
+                category: 'legacy',
+                icon: '⚽',
+                name: 'MLS Team - Toronto FC',
+                description: 'Established MLS franchise, passionate supporter culture, competing in crowded Toronto market, Apple TV deal implications.',
+                tags: ['Professional', 'Passionate Fanbase', 'Market Leader'],
+                complexity: 'Medium',
+                dataAvailability: 'Excellent',
+                timeframe: 'Medium-term'
+            },
+            {
+                id: 'cfl-team',
+                category: 'legacy',
+                icon: '🏈',
+                name: 'CFL Team - Any Franchise',
+                description: 'Canadian Football League team facing declining attendance, aging fanbase, competition from NFL, need for reinvention.',
+                tags: ['Professional', 'Heritage', 'Challenges'],
+                complexity: 'High',
+                dataAvailability: 'Good',
+                timeframe: 'Urgent'
+            },
+            {
+                id: 'nba-raptors',
+                category: 'legacy',
+                icon: '🏀',
+                name: 'NBA Team - Toronto Raptors',
+                description: 'Championship-winning franchise, strong brand ("We The North"), post-championship era challenges, maintaining momentum.',
+                tags: ['Professional', 'Championship Pedigree', 'Brand Strong'],
+                complexity: 'Medium',
+                dataAvailability: 'Excellent',
+                timeframe: 'Medium-term'
+            },
+
+            // Legacy Properties - Heritage Institutions
+            {
+                id: 'hhof',
+                category: 'legacy',
+                icon: '🏛️',
+                name: 'Hockey Hall of Fame',
+                description: 'Heritage institution balancing tradition with modernization, digital transformation needs, attracting younger audiences.',
+                tags: ['Heritage', 'Tourism', 'Cultural Icon'],
+                complexity: 'High',
+                dataAvailability: 'Good',
+                timeframe: 'Medium-term'
+            },
+            {
+                id: 'pga-tour',
+                category: 'legacy',
+                icon: '⛳',
+                name: 'PGA Tour Event - RBC Canadian Open',
+                description: 'Established golf tournament facing LIV Golf competition, weather risks, one-week revenue concentration, corporate hospitality focus.',
+                tags: ['Tournament', 'Established', 'Premium'],
+                complexity: 'High',
+                dataAvailability: 'Good',
+                timeframe: 'Annual'
+            },
+
+            // Emerging Sports
+            {
+                id: 'pickleball-league',
+                category: 'emerging',
+                icon: '🏓',
+                name: 'Pickleball Professional League',
+                description: 'Fastest-growing sport in North America, aging population appeal, low barrier to entry, nascent professional ecosystem.',
+                tags: ['Emerging', 'High Growth', 'Accessible'],
+                complexity: 'Medium',
+                dataAvailability: 'Limited',
+                timeframe: 'Short-term'
+            },
+            {
+                id: 'padel-facility',
+                category: 'emerging',
+                icon: '🎾',
+                name: 'Padel Facility & League',
+                description: 'European sport expanding to North America, social/recreational focus, facility investment required, community building opportunity.',
+                tags: ['Emerging', 'Social', 'European Success'],
+                complexity: 'High',
+                dataAvailability: 'Limited',
+                timeframe: 'Medium-term'
+            },
+            {
+                id: 'womens-hockey',
+                category: 'emerging',
+                icon: '🏒',
+                name: 'Professional Women\'s Hockey League (PWHL)',
+                description: 'New professional women\'s hockey league, strong talent base, growing media interest, finding sustainable business model.',
+                tags: ['Professional', 'Women\'s Sports', 'New League'],
+                complexity: 'High',
+                dataAvailability: 'Limited',
+                timeframe: 'Critical Phase'
+            },
+            {
+                id: 'womens-soccer',
+                category: 'emerging',
+                icon: '⚽',
+                name: 'Women\'s Professional Soccer - NWSL/CPL',
+                description: 'Rapidly growing women\'s soccer, World Cup momentum, sponsorship boom, Canadian market opportunities.',
+                tags: ['Professional', 'Women\'s Sports', 'Momentum'],
+                complexity: 'Medium',
+                dataAvailability: 'Good',
+                timeframe: 'Growth Phase'
+            },
+            {
+                id: 'esports-org',
+                category: 'emerging',
+                icon: '🎮',
+                name: 'Esports Organization - Canadian Team',
+                description: 'Competitive gaming organization, Gen Z audience, digital-first, volatile sponsorship market, regulatory uncertainty.',
+                tags: ['Digital', 'Gen Z', 'Global'],
+                complexity: 'Very High',
+                dataAvailability: 'Limited',
+                timeframe: 'Short-term'
+            },
+            {
+                id: 'ultimate-frisbee',
+                category: 'emerging',
+                icon: '🥏',
+                name: 'Ultimate Frisbee Professional League',
+                description: 'Growing sport with young demographic, minimal commercial infrastructure, grassroots energy, low operating costs.',
+                tags: ['Emerging', 'Youth', 'Community'],
+                complexity: 'Medium',
+                dataAvailability: 'Very Limited',
+                timeframe: 'Early Stage'
+            },
+
+            // Major Events
+            {
+                id: 'world-cup',
+                category: 'event',
+                icon: '🏆',
+                name: 'FIFA World Cup 2026 - Canada Host City',
+                description: 'Once-in-a-generation mega-event, multi-city hosting, legacy planning, tourism and economic impact, short window.',
+                tags: ['Mega Event', 'Legacy', 'International'],
+                complexity: 'Very High',
+                dataAvailability: 'Excellent',
+                timeframe: '2026'
+            },
+            {
+                id: 'grey-cup',
+                category: 'event',
+                icon: '🏈',
+                name: 'Grey Cup Festival',
+                description: 'Canadian football championship week, host city festival, corporate hospitality, balancing tradition with modern experience.',
+                tags: ['Annual Event', 'Canadian', 'Festival'],
+                complexity: 'Medium',
+                dataAvailability: 'Good',
+                timeframe: 'Annual'
+            },
+            {
+                id: 'womens-hockey-worlds',
+                category: 'event',
+                icon: '🏒',
+                name: 'Women\'s World Hockey Championship',
+                description: 'IIHF Women\'s World Championship, growing audience, Canadian host city opportunity, breaking attendance records.',
+                tags: ['International', 'Women\'s Sports', 'Growth'],
+                complexity: 'High',
+                dataAvailability: 'Good',
+                timeframe: 'Biennial'
+            },
+            {
+                id: 'marathon',
+                category: 'event',
+                icon: '🏃',
+                name: 'City Marathon - Toronto/Vancouver/Montreal',
+                description: 'Major urban marathon, mass participation event, community engagement, sponsorship-heavy model, road closure challenges.',
+                tags: ['Participation', 'Community', 'Annual'],
+                complexity: 'Medium',
+                dataAvailability: 'Excellent',
+                timeframe: 'Annual'
+            },
+            {
+                id: 'invictus-games',
+                category: 'event',
+                icon: '🎖️',
+                name: 'Invictus Games - Canadian Bid',
+                description: 'Paralympic-style event for wounded veterans, high emotional appeal, limited commercial precedent, mission-driven.',
+                tags: ['International', 'Social Impact', 'Prestige'],
+                complexity: 'High',
+                dataAvailability: 'Limited',
+                timeframe: 'Multi-year'
+            }
+        ];
+
+        let selectedProperty = null;
+
+        function renderProperties(filter = 'all') {
+            const grid = document.getElementById('properties-grid');
+            grid.innerHTML = '';
+
+            const filtered = filter === 'all'
+                ? properties
+                : properties.filter(p => p.category === filter);
+
+            filtered.forEach(property => {
+                const card = document.createElement('div');
+                card.className = 'property-card';
+                if (selectedProperty && selectedProperty.id === property.id) {
+                    card.classList.add('selected');
+                }
+                card.onclick = () => selectProperty(property);
+
+                card.innerHTML = `
+                    <div class="property-header">
+                        <div class="property-icon">${property.icon}</div>
+                        <div class="property-title">
+                            <h3>${property.name}</h3>
+                            <div class="property-category">${property.category}</div>
+                        </div>
+                    </div>
+                    <p class="property-description">${property.description}</p>
+                    <div class="property-tags">
+                        ${property.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                    </div>
+                    <div class="property-factors">
+                        <div class="factor">
+                            <div class="factor-label">Complexity</div>
+                            <div class="factor-value">${property.complexity}</div>
+                        </div>
+                        <div class="factor">
+                            <div class="factor-label">Data Available</div>
+                            <div class="factor-value">${property.dataAvailability}</div>
+                        </div>
+                        <div class="factor">
+                            <div class="factor-label">Timeframe</div>
+                            <div class="factor-value">${property.timeframe}</div>
+                        </div>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        function filterProperties(category) {
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            renderProperties(category);
+        }
+
+        function selectProperty(property) {
+            selectedProperty = property;
+            renderProperties(document.querySelector('.filter-btn.active').textContent.toLowerCase().replace(' properties', '').replace('all', 'all'));
+
+            document.getElementById('selected-property-name').textContent = property.icon + ' ' + property.name;
+
+            // Show and expand selection section
+            const selectionSection = document.getElementById('selection-section');
+            selectionSection.style.display = 'block';
+            const selectionContent = document.getElementById('selection-content');
+            if (!selectionContent.classList.contains('expanded')) {
+                toggleSection('selection');
+            }
+            selectionSection.scrollIntoView({ behavior: 'smooth' });
+
+            validateExport();
+        }
+
+        function updateWordCount() {
+            const text = document.getElementById('rationale').value;
+            const words = text.trim().split(/\s+/).filter(w => w.length > 0).length;
+            document.getElementById('word-count').textContent = `${words} / 250 words`;
+
+            validateExport();
+        }
+
+        function validateExport() {
+            const rationale = document.getElementById('rationale').value;
+            const words = rationale.trim().split(/\s+/).filter(w => w.length > 0).length;
+            const exportBtn = document.getElementById('export-btn');
+
+            exportBtn.disabled = !selectedProperty || words < 100;
+        }
+
+        function exportSelection() {
+            if (!selectedProperty) return;
+
+            const rationale = document.getElementById('rationale').value;
+            const words = rationale.trim().split(/\s+/).filter(w => w.length > 0).length;
+
+            const content = `
+ANCHOR PROJECT - PROPERTY PROPOSAL
+===================================
+
+Selected Property: ${selectedProperty.name}
+Category: ${selectedProperty.category.toUpperCase()}
+
+PROPERTY OVERVIEW
+${selectedProperty.description}
+
+Tags: ${selectedProperty.tags.join(', ')}
+
+Project Factors:
+- Complexity: ${selectedProperty.complexity}
+- Data Availability: ${selectedProperty.dataAvailability}
+- Project Timeframe: ${selectedProperty.timeframe}
+
+RATIONALE (${words} words)
+${rationale}
+
+---
+Generated: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}
+Business of Sports Marketing - Anchor Project
+            `.trim();
+
+            // Create downloadable file
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `property-proposal-${selectedProperty.id}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('✅ Property proposal exported! Share this file with your team and submit to faculty.');
+        }
+
+        // Initialize
+        renderProperties();
+    </script>
+</body>
+</html>
+<!-- Agent test 07:56:29 -->
+<!-- Test change at 07:59:50 -->
+<!-- Watcher test at 08:13:16 -->
+<!-- Final test at 08:19:12 -->

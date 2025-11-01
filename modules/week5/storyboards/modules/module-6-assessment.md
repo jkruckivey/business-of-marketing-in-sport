@@ -6,12 +6,14 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 5 | Type directly | Sets context for capstone assessment |
-| 2 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, capstone focus |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
+| 3 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, capstone focus |
 | 3 | **AI Roleplay** ◐ Recommended | Practice pitch to Board of Directors | Configure in Uplimit | Rehearse strategic vision before writing memo |
-| 4 | **Text** ⬤ Required | Submission checklist and strategic vision memo requirements | Type directly | Clear expectations for final deliverable |
-| 5 | **Text Response** ⬤ Required | Strategic vision memo submission (1,500-2,000 words) | Configure in Uplimit | Rubric evaluation mode, 100 points |
-| 6 | **Details** ○ Optional | Rubric details and scoring examples | Type directly | Accordion - transparent criteria |
-| 7 | **AI Chat Widget** ○ Optional | Strategic planning assistant | Configure in Uplimit | Named: "Strategy Planning Assistant" |
+| 5 | **Text** ⬤ Required | Submission checklist and strategic vision memo requirements | Type directly | Clear expectations for final deliverable |
+| 6 | **Text Response** ⬤ Required | Strategic vision memo submission (1,500-2,000 words) | Configure in Uplimit | Rubric evaluation mode, 100 points |
+| 7 | **Details** ○ Optional | Rubric details and scoring examples | Type directly | Accordion - transparent criteria |
+| 8 | **AI Chat Widget** ○ Optional | Strategic planning assistant | Configure in Uplimit | Named: "Strategy Planning Assistant" |
+| 9 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-6.html` | Shows how module outcomes connect to course goals |
 
 ### Element 1: Connecting Introduction Text
 **Copy this markdown directly into Uplimit:**
@@ -24,14 +26,56 @@ You've analyzed the Hockey Hall of Fame's strategic dilemma, experimented with t
 Now it's time to demonstrate the full scope of what you've learned. In this capstone assessment, you'll step into the role of Chief Strategy Officer for a sports property of your choice—a professional team, league, venue, heritage institution, or major event. Your Board of Directors needs a comprehensive 5-year strategic vision that integrates everything from revenue streams to future trends, from media strategy to legacy management. Your task: create an executive strategy memo that synthesizes all five weeks into a cohesive, actionable roadmap for the future.
 
 
-### Element 2: Infobox Content
+## Element 2: Learning Outcomes Widget
+---
 
-Title: ▪ Capstone Assessment: 5-Year Strategic Vision Memo
+## Element 2: Learning Outcomes Widget
 
-You'll create a comprehensive 5-year strategic vision for a sports property of your choice (team, league, venue, heritage institution, or event). Your executive strategy memo must integrate frameworks from all 5 weeks of the course and demonstrate sophisticated analysis of trade-offs, opportunities, and risks. This capstone assessment measures MLOs 5.1-5.4 and CLOs 1-5, and is worth 100 points. Use the detailed rubric below to guide your work.
+**Uplimit Implementation:**
+1. Select **iFrame Widget** element
+2. Copy embed code below:
+
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-6.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Module 6 Learning Outcomes"
+  aria-label="Visual map showing which learning outcomes are practiced in Module 6"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows which Week 2 MLOs are practiced in this module
+- Visual badge indicating Module 6
+- Interactive: Click to see how content connects to frameworks
+
+---
 
 
-### Element 3: AI Roleplay - Board of Directors Strategy Pitch
+---
+
+### Element 4: Infobox Content
+
+Title: ▪ Capstone Assessment: 5-Year Strategic Vision
+
+You'll create a comprehensive 5-year strategic vision for a sports property of your choice (team, league, venue, heritage institution, or event). Your strategic vision must integrate frameworks from all 5 weeks of the course and demonstrate sophisticated analysis of trade-offs, opportunities, and risks. This capstone assessment measures MLOs 5.1-5.4 and CLOs 1-5, and is worth 100 points.
+
+**Format Options (Choose ONE):**
+1. **Written Memo** (1,500-2,000 words) - Executive strategy document
+2. **Live Presentation** (8-10 minutes) - Board pitch with slide deck
+3. **Video Presentation** (8-10 minutes) - Recorded strategic pitch
+4. **Digital Campaign** (Interactive microsite or slide deck with multimedia)
+
+All formats must cover the same content requirements and will be evaluated using the same rubric. Choose the format that best demonstrates your strategic thinking and communication strengths.
+
+
+---
+
+### Element 4: AI Roleplay - Board of Directors Strategy Pitch
 
 **🎮 Widget Purpose:** Formative practice where students rehearse their strategic vision presentation to a skeptical Board of Directors, receiving AI feedback to strengthen their arguments, identify gaps, and refine their executive communication before writing the final memo.
 
@@ -210,22 +254,52 @@ This roleplay is explicitly formative (not graded) to reduce anxiety and encoura
 
 ---
 
-### Element 4: Submission Checklist and Requirements
+---
+
+### Element 5: Submission Checklist and Requirements
 
 **Purpose:** Provide crystal-clear expectations for the strategic vision memo format, content requirements, and submission process.
 
 **Copy this markdown into Uplimit:**
 
 
-# Strategic Vision Memo: Submission Requirements
+# Strategic Vision: Submission Requirements & Format Guidelines
 
-## Format Requirements
+## Format Options
 
-**Document Type:** Executive strategy memo (formal business communication)
+You have **FOUR format options** for submitting your Strategic Vision. Choose the format that best demonstrates your strategic thinking and communication strengths. All formats are evaluated using the same rubric.
 
-**Length:** 1,500-2,000 words (approximately 6-8 pages with standard formatting)
+### Option 1: Written Memo (1,500-2,000 words)
+- Executive strategy document following professional memo structure
+- Memo header: To/From/Date/Re
+- 1,500-2,000 words (6-8 pages with standard formatting)
+- Submit as PDF or Word document
 
-**Structure:** Your memo MUST include these sections:
+### Option 2: Live Presentation (8-10 minutes)
+- In-person or synchronous Zoom presentation
+- Slide deck (8-12 slides recommended)
+- Professional delivery with executive presence
+- Q&A period (5 minutes) where you defend strategic choices
+- Submit slide deck 24 hours before + schedule presentation slot
+
+### Option 3: Video Presentation (8-10 minutes)
+- Pre-recorded video presentation (ideal for asynchronous courses)
+- Slide deck or visual aids required
+- Professional setting (appropriate background, lighting, audio quality)
+- Upload to YouTube/Vimeo (unlisted) OR upload video file directly
+
+### Option 4: Digital Campaign (Interactive Experience)
+- Interactive microsite, multimedia slide deck, or digital storyboard
+- Multimedia elements (video clips, data visualizations, interactive charts)
+- Professional design (consistent branding, accessible, mobile-friendly)
+- Include 1-page PDF executive summary
+- Submit URL (if hosted) OR zipped files with viewing instructions
+
+---
+
+## Required Content (ALL FORMATS)
+
+Regardless of format chosen, your Strategic Vision MUST include these sections:
 
 ### Required Sections:
 
@@ -403,7 +477,9 @@ If you have questions about the assignment:
 
 ---
 
-### Element 5: Text Response Question Configuration
+---
+
+### Element 6: Text Response Question Configuration
 
 **Element Type:** Text Response (File upload enabled)
 
@@ -643,7 +719,9 @@ The learner uses professional memo format (To/From/Date/Re), writes clearly and 
 
 ---
 
-### Element 6: Details - Rubric Examples Content
+---
+
+### Element 7: Details - Rubric Examples Content
 
 **Copy this markdown into Uplimit Details accordion:**
 
@@ -946,7 +1024,9 @@ Use this checklist to self-evaluate against the rubric:
 
 ---
 
-### Element 7: AI Chat Widget Configuration
+---
+
+### Element 8: AI Chat Widget Configuration
 
 **Widget Name:** "Strategy Planning Assistant"
 
@@ -1170,6 +1250,39 @@ A: Minimum 5 citations from course content (cases, executive sessions, readings)
 - [ ] Grading timeline communicated to students
 - [ ] Late policy clearly stated
 - [ ] Academic integrity policy reminder posted
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**Module 6 IS Your Final Strategic Vision:**
+
+Module 6 is the capstone assessment where you integrate all five weeks of learning into a comprehensive 5-year Strategic Vision Memo. This isn't another step toward the final project—this IS the final project.
+
+**What This Assessment Measures:**
+
+Your Strategic Vision Memo demonstrates mastery of all five Course Learning Outcomes (CLOs):
+- **CLO 1 (Week 1):** Analyze revenue ecosystems—your memo must show sophisticated understanding of the five revenue streams and their interdependencies
+- **CLO 2 (Week 2):** Evaluate media & fan monetization strategies—your memo must address media rights valuation and fan engagement economics
+- **CLO 3 (Week 3):** Design sponsorship & betting strategies—your memo must include ROI-justified sponsorship activation and position on betting partnerships
+- **CLO 4 (Week 4):** Build athlete & emerging sport brands—your memo must address talent/brand strategy and opportunities in emerging markets
+- **CLO 5 (Week 5):** Balance legacy & innovation—your memo must navigate heritage preservation while forecasting future trends
+
+**What Makes This Assessment Comprehensive:**
+
+The Strategic Vision Memo requires you to:
+1. **Select a sports property** (team, league, venue, heritage institution, major event) and define its strategic context
+2. **Conduct situation analysis** using frameworks from Weeks 1-5 (revenue mix, media strategy, sponsorship portfolio, brand positioning, heritage assessment)
+3. **Identify strategic priorities** based on property-specific opportunities and constraints
+4. **Develop 5-year roadmap** with phased implementation, capital allocation, and success metrics
+5. **Defend strategic choices** with evidence-based reasoning and explicit acknowledgment of trade-offs
+6. **Communicate at executive level** using data-driven analysis and board-ready recommendations
+
+**Why This Format:**
+
+Real sports business executives create strategic vision memos for Boards of Directors, investors, league commissioners, and ownership groups to secure approval for multi-million dollar strategic initiatives. This assessment mirrors that professional deliverable—teaching you not just what to think, but how to communicate strategic thinking to decision-makers who control resources.
+
+**Your Memo Demonstrates:** Analytical rigor, strategic thinking, financial literacy, stakeholder awareness, and executive communication—the five capabilities that define sports business leadership.
 
 ---
 

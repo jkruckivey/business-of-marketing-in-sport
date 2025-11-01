@@ -20,6 +20,8 @@
 | 2 | **▶ Video** ⬛ Required | 5 Revenue Streams (animated) | 2 min | - | Upload `week1-video1-revenue-streams.mp4` |
 | 3 | **⊞ Vertical List** ⬛ Required | 5 streams at a glance | 1 min | - | Type directly |
 | 4 | **⚙ iFrame Widget** ⬛ Required | **Revenue Mix Slider** | 3 min | - | Embed `revenue-mix-slider.html` |
+| 5 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-3.html` | Shows how module outcomes connect to course goals |
+
 
 #### Element 1: Introduction Text
 **Copy this markdown directly into Uplimit:**
@@ -120,6 +122,34 @@ Create 5 numbered items:
 **Item 5 - Description:** "Sports betting partnerships and data licensing. Emerging stream, growing rapidly. Risk: Regulatory changes and integrity concerns."
 
 #### Element 4: iFrame Widget - Revenue Mix Slider
+
+### Element 5: Learning Outcomes Widget
+
+**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
+
+**Uplimit Implementation:**
+
+**Widget File:** `learning-outcomes-module-3.html`
+
+**Embed Code:**
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-3.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Learning Outcomes - Module 3"
+  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Click any module outcome to see which course-level outcomes it contributes to
+- Interactive highlighting shows connections between module and course goals
+- WCAG 2.2 AA compliant with keyboard navigation and screen reader support
+
 
 ### ⚙ Interactive Activity: Revenue Mix Slider
 
@@ -963,6 +993,31 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 **Total Time:** ~35 minutes
 **Active Engagement:** 25 minutes (75%)
 **Passive Reading:** 8 minutes (25%)
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 3 Supports Your Final Strategic Vision:**
+
+Module 3 taught you the core content for all five revenue streams through interactive discovery. This deep knowledge enables sophisticated revenue modeling in your Week 5 capstone.
+
+**What You Learned:**
+- Media rights (40-60%) dominate, but streaming vs. linear creates strategic trade-offs
+- Ticketing generates 20-30% but dynamic pricing can increase by 15-25%
+- Sponsorship ROI requires activation spending (2-3× rights fees)
+- Merchandising spikes during success periods (championships drive 40-60% increases)
+- Betting (2-8% currently) is growing 30-40% annually
+
+**How to Apply This to Your Final Project:**
+
+When you build your 5-year strategic vision in Week 5, Module 3's interactive widgets provide the quantitative foundation:
+
+- **Revenue Projections:** Use the ecosystem cascade model to forecast interdependent revenue growth. Don't project streams independently—show how investment in one stream amplifies others (e.g., signing star player → ticket sales + merchandise + media value).
+- **Pricing Strategy:** Reference the dynamic pricing simulator to justify your ticketing approach. Example: "Implementing dynamic pricing (as modeled in Week 1) could increase gate receipts by 15-25% without reducing sellouts."
+- **Sponsorship Value Proposition:** Use Module 3's sponsorship ROI framework to explain what sponsors get for their investment. Your vision should quantify reach, engagement, and conversion potential.
+
+**Real-World Application:** The interactive widgets you used aren't theoretical—they're based on actual league data and industry benchmarks. When you pitch your strategic vision, reference these tools to ground your projections in reality.
 
 ---
 

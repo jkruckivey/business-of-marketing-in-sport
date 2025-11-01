@@ -415,6 +415,60 @@
                 transition-duration: 0.01ms !important;
             }
         }
+
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 12px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-light-gray);
+            border-radius: 12px 12px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: #f3f4f6;
+        }
+
+        .section-header h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-gray);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 4000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -425,6 +479,13 @@
         </header>
 
         <!-- Model Toggle -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('model')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('model');}" tabindex="0" role="button" aria-expanded="true" aria-controls="model-content">
+                <h2>Business Model Selection</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="model-content">
+                <div class="section-inner">
         <div class="model-toggle-section">
             <h2>Choose Business Model:</h2>
             <div class="toggle-container" role="tablist" aria-label="Platform business model">
@@ -659,8 +720,18 @@
                 </div>
             </div>
         </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Presets -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('presets')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('presets');}" tabindex="0" role="button" aria-expanded="false" aria-controls="presets-content">
+                <h2>Real-World Examples</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="presets-content">
+                <div class="section-inner">
         <div class="presets-section">
             <h3>Load Real-World Examples:</h3>
             <div class="presets-grid">
@@ -678,16 +749,36 @@
                 </button>
             </div>
         </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Chart -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('chart')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('chart');}" tabindex="0" role="button" aria-expanded="false" aria-controls="chart-content">
+                <h2>Financial Projection</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="chart-content">
+                <div class="section-inner">
         <div class="chart-section">
             <h3 style="text-align: center; margin-bottom: 20px;">10-Year Financial Projection</h3>
             <div class="chart-container">
                 <canvas id="profitChart" role="img" aria-label="10-year financial projection chart showing revenue and costs over time"></canvas>
             </div>
         </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Metrics -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('metrics');}" tabindex="0" role="button" aria-expanded="false" aria-controls="metrics-content">
+                <h2>Key Metrics</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="metrics-content">
+                <div class="section-inner">
         <div class="metrics-grid" role="region" aria-label="Financial metrics summary">
             <div class="metric-card">
                 <div class="metric-label">Break-Even Year</div>
@@ -710,6 +801,9 @@
                 <li>Adjust parameters above to see strategic insights</li>
             </ul>
         </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Action Buttons -->
         <div class="action-buttons">
@@ -723,6 +817,17 @@
     </div>
 
     <script>
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
+        }
+
         // Global state
         let currentModel = 'linear';
         let chart = null;
@@ -1015,6 +1120,16 @@
 
             createChart(data);
             updateMetrics(data);
+
+            // Auto-expand chart and metrics sections when calculations run
+            const chartSection = document.getElementById('chart-content');
+            const metricsSection = document.getElementById('metrics-content');
+            if (!chartSection.classList.contains('expanded')) {
+                toggleSection('chart');
+            }
+            if (!metricsSection.classList.contains('expanded')) {
+                toggleSection('metrics');
+            }
         }
 
         // Update slider value displays

@@ -63,6 +63,60 @@
             font-size: 1.1rem;
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: var(--color-white);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-light-gray);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.3s;
+        }
+
+        .section-header:hover {
+            background: #f0f0f0;
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-gray);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 3000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         /* Main Grid */
         .main-grid {
             display: grid;
@@ -347,16 +401,18 @@
             <p class="subtitle">Build your engagement strategy and see how tactics increase fan value</p>
         </header>
 
-        <!-- Main Grid -->
-        <div class="main-grid">
-            <!-- Tactics Section -->
-            <div class="tactics-section">
+        <!-- Section 1: Tactics Selection -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('tactics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('tactics');}" tabindex="0" role="button" aria-expanded="true" aria-controls="tactics-content">
                 <h2>Select Engagement Tactics</h2>
-
-                <div class="baseline-info">
-                    <strong>Starting Baseline:</strong>
-                    1,000,000 fans × $10/year = $10M/year (passive viewing only)
-                </div>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="tactics-content">
+                <div class="section-inner">
+                    <div class="baseline-info">
+                        <strong>Starting Baseline:</strong>
+                        1,000,000 fans × $10/year = $10M/year (passive viewing only)
+                    </div>
 
                 <!-- Tactic 1: Mobile App -->
                 <label class="tactic-checkbox" for="tactic-app">
@@ -495,11 +551,19 @@
                         </div>
                     </div>
                 </label>
+                </div>
             </div>
+        </div>
 
-            <!-- Results Section -->
-            <div class="results-section" role="region" aria-label="Engagement calculations" aria-live="polite">
+        <!-- Section 2: Calculated Results -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('results')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('results');}" tabindex="0" role="button" aria-expanded="false" aria-controls="results-content">
                 <h2>Calculated Results</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="results-content">
+                <div class="section-inner">
+                    <div class="results-section" role="region" aria-label="Engagement calculations" aria-live="polite">
 
                 <div class="result-card">
                     <div class="result-label">Total Fan Value (Annual)</div>
@@ -525,23 +589,39 @@
                     <div class="result-label">Average Fan Value</div>
                     <div class="result-value" id="avg-fan-value">$10</div>
                 </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Chart Section -->
-        <div class="chart-section">
-            <h3>Engagement Funnel: Passive → Engaged → Super-Fan</h3>
-            <div class="chart-container">
-                <canvas id="funnelChart"></canvas>
+        <!-- Section 3: Engagement Funnel Visualization -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('funnel')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('funnel');}" tabindex="0" role="button" aria-expanded="false" aria-controls="funnel-content">
+                <h2>Engagement Funnel Visualization</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="funnel-content">
+                <div class="section-inner">
+                    <div class="chart-container">
+                        <canvas id="funnelChart"></canvas>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Insights Section -->
-        <div class="insights-section">
-            <h3>💡 Strategic Insights</h3>
-            <ul class="insights-list" id="insights-list">
-                <li>Select engagement tactics above to see personalized insights</li>
-            </ul>
+        <!-- Section 4: Strategic Insights -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('insights')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('insights');}" tabindex="0" role="button" aria-expanded="false" aria-controls="insights-content">
+                <h2>Strategic Insights</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="insights-content">
+                <div class="section-inner">
+                    <ul class="insights-list" id="insights-list">
+                        <li>Select engagement tactics above to see personalized insights</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <!-- Action Buttons -->
@@ -826,6 +906,17 @@
             a.click();
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
     </script>
 </body>

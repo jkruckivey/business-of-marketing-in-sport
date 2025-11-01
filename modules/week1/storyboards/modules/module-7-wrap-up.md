@@ -9,6 +9,8 @@
 | 2 | **Text** | Connection to Group Marketing Project | Type directly | ◐ Recommended | 3 min |
 | 3 | **Text** | Week 1 complete + Week 2 preview | Type directly | ⬤ Required | 4 min |
 | 4 | **Details** | Additional resources (optional) | Type directly | ○ Optional | 5 min |
+| 5 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
+
 
 ### Element 1: Infobox Content
 ```
@@ -92,6 +94,34 @@ Title: Optional Extension Resources
 
 Want to go deeper on revenue ecosystems? Check out these resources:
 
+### Element 5: Learning Outcomes Widget
+
+**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
+
+**Uplimit Implementation:**
+
+**Widget File:** `learning-outcomes-module-7.html`
+
+**Embed Code:**
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-7.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Learning Outcomes - Module 7"
+  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Click any module outcome to see which course-level outcomes it contributes to
+- Interactive highlighting shows connections between module and course goals
+- WCAG 2.2 AA compliant with keyboard navigation and screen reader support
+
+
 ## Articles & Reports
 • [Industry report 1 - Title, Link]
 • [Industry report 2 - Title, Link]
@@ -122,6 +152,37 @@ sport business, they're excellent resources.
 - **Details** provides optional resources without overwhelming (UDL choice)
 - Creates clear ending for Week 1 while launching into Week 2
 - Students leave with celebration of accomplishment and clear preview of what's next
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Week 1 Supports Your Final Strategic Vision:**
+
+Week 1 provided the foundational framework for analyzing ANY sports property. This is the analytical bedrock for your Week 5 capstone.
+
+**What You Mastered:**
+- The 5-stream revenue model (media, ticketing, sponsorship, merchandising, betting) and how to map any property's revenue mix
+- Ecosystem thinking (investments in one stream cascade through all others)
+- Revenue sharing models and their strategic constraints (NFL 60%, NHL 50%, EPL tiered)
+- Strategic communication (defending recommendations with data)
+
+**How to Apply This to Your Final Project:**
+
+Your Week 5 strategic vision MUST begin with Week 1's frameworks. Every subsequent week (media rights, sponsorship/betting, athlete brands, heritage/innovation) builds on this foundation:
+
+- **Revenue Analysis Section:** Structure your analysis using the 5-stream model. Show current state, then project 5-year growth by stream. Explain interdependencies (e.g., "Signing star player increases merchandise 30%, ticketing 15%, and media value 10%").
+- **Constraint Mapping:** Identify structural constraints (revenue sharing, league rules, market size) that limit your strategic options. Week 1 taught you that great strategy works within reality—acknowledge constraints upfront.
+- **Ecosystem Effects:** When you propose any major investment (new stadium, signing athlete, launching streaming service), quantify the cascade effects across all revenue streams. This is Week 1's core insight.
+
+**Integration Across All Weeks:**
+- Week 1 = Foundation (revenue ecosystem framework)
+- Week 2 = Media rights specialization (how to evaluate and negotiate)
+- Week 3 = Sponsorship/betting specialization (how to calculate and activate)
+- Week 4 = Athlete brand specialization (how to build equity assets)
+- Week 5 = Integration (synthesizing all frameworks into coherent 5-year vision)
+
+**Real-World Application:** Every sports executive starts with the same question: "How do we make money?" Week 1 gave you the universal answer framework. Weeks 2-5 add depth and sophistication. Your capstone synthesizes everything.
 
 ---
 

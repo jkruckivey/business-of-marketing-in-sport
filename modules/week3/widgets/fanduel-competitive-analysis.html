@@ -58,19 +58,10 @@
             margin-bottom: 2rem;
         }
 
-        .controls {
-            background: var(--color-neutral-50);
-            border: 1px solid var(--color-neutral-200);
-            border-radius: 6px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
         .control-group {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
-            margin-bottom: 1rem;
         }
 
         label {
@@ -104,28 +95,8 @@
         }
 
         .chart-container {
-            background: var(--color-neutral-50);
-            border: 1px solid var(--color-neutral-200);
-            border-radius: 6px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
             position: relative;
             height: 500px;
-        }
-
-        .scorecard {
-            background: var(--color-neutral-50);
-            border: 1px solid var(--color-neutral-200);
-            border-radius: 6px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .scorecard h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--color-neutral-900);
-            margin-bottom: 1rem;
         }
 
         .scorecard-table {
@@ -165,21 +136,6 @@
         .operator-b {
             color: var(--color-neutral-600);
             font-weight: 500;
-        }
-
-        .insights {
-            background: var(--color-neutral-50);
-            border: 1px solid var(--color-neutral-200);
-            border-radius: 6px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .insights h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--color-neutral-900);
-            margin-bottom: 1rem;
         }
 
         .insight-section {
@@ -250,6 +206,72 @@
             box-shadow: 0 0 0 3px var(--color-neutral-200);
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 2000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 1rem;
@@ -283,66 +305,98 @@
         <h1>FanDuel Competitive Analysis Tool</h1>
         <p class="subtitle">Compare operators across 8 competitive dimensions using 2024 industry data</p>
 
-        <div class="controls">
-            <div class="control-group">
-                <div>
-                    <label for="operatorA">Operator A</label>
-                    <select id="operatorA" aria-describedby="operatorA-desc">
-                        <option value="FanDuel">FanDuel</option>
-                        <option value="DraftKings">DraftKings</option>
-                        <option value="BetMGM">BetMGM</option>
-                        <option value="Caesars">Caesars</option>
-                        <option value="ESPN Bet">ESPN Bet</option>
-                        <option value="Fanatics">Fanatics</option>
-                    </select>
-                    <span id="operatorA-desc" class="sr-only">Select first operator to compare</span>
-                </div>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('operators')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('operators');}" tabindex="0" role="button" aria-expanded="true" aria-controls="operators-content">
+                <h2>Operator Selection</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="operators-content">
+                <div class="section-inner">
+                    <div class="control-group">
+                        <div>
+                            <label for="operatorA">Operator A</label>
+                            <select id="operatorA" aria-describedby="operatorA-desc">
+                                <option value="FanDuel">FanDuel</option>
+                                <option value="DraftKings">DraftKings</option>
+                                <option value="BetMGM">BetMGM</option>
+                                <option value="Caesars">Caesars</option>
+                                <option value="ESPN Bet">ESPN Bet</option>
+                                <option value="Fanatics">Fanatics</option>
+                            </select>
+                            <span id="operatorA-desc" class="sr-only">Select first operator to compare</span>
+                        </div>
 
-                <div>
-                    <label for="operatorB">Operator B</label>
-                    <select id="operatorB" aria-describedby="operatorB-desc">
-                        <option value="FanDuel">FanDuel</option>
-                        <option value="DraftKings" selected>DraftKings</option>
-                        <option value="BetMGM">BetMGM</option>
-                        <option value="Caesars">Caesars</option>
-                        <option value="ESPN Bet">ESPN Bet</option>
-                        <option value="Fanatics">Fanatics</option>
-                    </select>
-                    <span id="operatorB-desc" class="sr-only">Select second operator to compare</span>
+                        <div>
+                            <label for="operatorB">Operator B</label>
+                            <select id="operatorB" aria-describedby="operatorB-desc">
+                                <option value="FanDuel">FanDuel</option>
+                                <option value="DraftKings" selected>DraftKings</option>
+                                <option value="BetMGM">BetMGM</option>
+                                <option value="Caesars">Caesars</option>
+                                <option value="ESPN Bet">ESPN Bet</option>
+                                <option value="Fanatics">Fanatics</option>
+                            </select>
+                            <span id="operatorB-desc" class="sr-only">Select second operator to compare</span>
+                        </div>
+                    </div>
+
+                    <div class="button-group" style="margin-top: 1.5rem;">
+                        <button class="btn-primary" onclick="updateComparison()">Update Comparison</button>
+                        <button class="btn-secondary" onclick="copyToClipboard()">📋 Copy Analysis</button>
+                        <button class="btn-secondary" onclick="exportPlainText()">📄 Download Text</button>
+                    </div>
                 </div>
             </div>
+        </div>
 
-            <div class="button-group">
-                <button class="btn-primary" onclick="updateComparison()">Update Comparison</button>
-                <button class="btn-secondary" onclick="copyToClipboard()">📋 Copy Analysis</button>
-                <button class="btn-secondary" onclick="exportPlainText()">📄 Download Text</button>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('visual')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('visual');}" tabindex="0" role="button" aria-expanded="false" aria-controls="visual-content">
+                <h2>Visual Comparison</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="visual-content">
+                <div class="section-inner">
+                    <div class="chart-container">
+                        <canvas id="radarChart" role="img" aria-label="Radar chart comparing operators across 8 dimensions"></canvas>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="chart-container">
-            <canvas id="radarChart" role="img" aria-label="Radar chart comparing operators across 8 dimensions"></canvas>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('scorecard')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('scorecard');}" tabindex="0" role="button" aria-expanded="false" aria-controls="scorecard-content">
+                <h2>Competitive Scorecard</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="scorecard-content">
+                <div class="section-inner">
+                    <table class="scorecard-table" role="table">
+                        <thead>
+                            <tr>
+                                <th>Dimension</th>
+                                <th id="scoreA" class="operator-a">FanDuel</th>
+                                <th id="scoreB" class="operator-b">DraftKings</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scorecardBody">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
 
-        <div class="scorecard">
-            <h3>Competitive Scorecard</h3>
-            <table class="scorecard-table" role="table">
-                <thead>
-                    <tr>
-                        <th>Dimension</th>
-                        <th id="scoreA" class="operator-a">FanDuel</th>
-                        <th id="scoreB" class="operator-b">DraftKings</th>
-                    </tr>
-                </thead>
-                <tbody id="scorecardBody">
-                    <!-- Populated by JavaScript -->
-                </tbody>
-            </table>
-        </div>
-
-        <div class="insights">
-            <h3>Competitive Analysis</h3>
-            <div id="insightsContent">
-                <!-- Populated by JavaScript -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('insights')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('insights');}" tabindex="0" role="button" aria-expanded="false" aria-controls="insights-content">
+                <h2>Strategic Insights</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="insights-content">
+                <div class="section-inner">
+                    <div id="insightsContent">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -836,6 +890,17 @@ Course: Business of Sports Marketing - Week 3, Module 4
             URL.revokeObjectURL(url);
 
             alert('✓ Text file downloaded! Open in Notepad/TextEdit to view the full analysis.');
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
 
         // Initialize on page load

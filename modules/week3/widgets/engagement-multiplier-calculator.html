@@ -90,8 +90,62 @@
             outline-offset: 2px;
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 2000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         .input-section {
-            margin-bottom: 2rem;
+            margin-bottom: 0;
         }
 
         .input-group {
@@ -180,18 +234,7 @@
         }
 
         .results {
-            background: var(--color-neutral-50);
-            border: 1px solid var(--color-neutral-200);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .results h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--color-neutral-900);
-            margin-bottom: 1.5rem;
+            margin: 0;
         }
 
         .chart-container {
@@ -394,13 +437,18 @@
         <h1>Engagement Multiplier Calculator</h1>
         <p class="subtitle">Compare bettor vs. non-bettor behavior to quantify betting's engagement impact on viewership and revenue.</p>
 
-        <div class="presets" role="group" aria-label="League engagement presets">
-            <button class="preset-btn" onclick="loadPreset('nfl')">NFL (15% bettors, 40% multiplier)</button>
-            <button class="preset-btn" onclick="loadPreset('nba')">NBA (12% bettors, 50% multiplier)</button>
-            <button class="preset-btn" onclick="loadPreset('nhl')">NHL (10% bettors, 35% multiplier)</button>
-        </div>
-
-        <div class="input-section">
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('inputs')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('inputs');}" tabindex="0" role="button" aria-expanded="true" aria-controls="inputs-content">
+                <h2>Inputs</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="inputs-content">
+                <div class="section-inner input-section">
+                    <div class="presets" role="group" aria-label="League engagement presets">
+                        <button class="preset-btn" onclick="loadPreset('nfl')">NFL (15% bettors, 40% multiplier)</button>
+                        <button class="preset-btn" onclick="loadPreset('nba')">NBA (12% bettors, 50% multiplier)</button>
+                        <button class="preset-btn" onclick="loadPreset('nhl')">NHL (10% bettors, 35% multiplier)</button>
+                    </div>
             <div class="input-group">
                 <label for="avgViewers">Average Viewers Per Game</label>
                 <div class="input-with-value">
@@ -437,10 +485,17 @@
                     <span class="value-display" id="multiplierValue" aria-live="polite">40%</span>
                 </div>
             </div>
+                </div>
+            </div>
         </div>
 
-        <div class="results" role="region" aria-label="Engagement analysis results">
-            <h2>Engagement Analysis</h2>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('viewership')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('viewership');}" tabindex="0" role="button" aria-expanded="false" aria-controls="viewership-content">
+                <h2>Viewership Analysis</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="viewership-content">
+                <div class="section-inner results" role="region" aria-label="Engagement analysis results">
 
             <div class="comparison-grid">
                 <div class="comparison-card">
@@ -477,6 +532,8 @@
             <div class="insight-box" role="complementary" aria-label="Revenue implications">
                 <h3>Revenue Implications</h3>
                 <p id="revenueInsight"></p>
+            </div>
+                </div>
             </div>
         </div>
 
@@ -697,6 +754,17 @@
             document.getElementById('engagementMultiplier').value = 40;
 
             updateCalculations();
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
 
         // Initialize on page load

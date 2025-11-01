@@ -389,6 +389,60 @@
         }
 
         /* Accessibility */
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 3000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         .sr-only {
             position: absolute;
             width: 1px;
@@ -445,10 +499,25 @@
         <h1>Legacy vs Innovation Matrix</h1>
         <p class="subtitle">Drag strategic initiatives onto the matrix to build your heritage property portfolio</p>
 
-        <div class="instructions">
-            <p><strong>How to use:</strong> Drag cards from the left panel onto the matrix. Position initiatives based on their tradition preservation (X-axis) and revenue growth potential (Y-axis). Aim for the "Sweet Spot" quadrant while maintaining portfolio balance.</p>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('instructions')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('instructions');}" tabindex="0" role="button" aria-expanded="true" aria-controls="instructions-content">
+                <h2>Instructions</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="instructions-content">
+                <div class="section-inner">
+                    <p><strong>How to use:</strong> Drag cards from the left panel onto the matrix. Position initiatives based on their tradition preservation (X-axis) and revenue growth potential (Y-axis). Aim for the "Sweet Spot" quadrant while maintaining portfolio balance.</p>
+                </div>
+            </div>
         </div>
 
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('matrix')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('matrix');}" tabindex="0" role="button" aria-expanded="true" aria-controls="matrix-content">
+                <h2>Strategic Portfolio Matrix</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="matrix-content">
+                <div class="section-inner">
         <div class="main-grid">
             <!-- Card Pool -->
             <div class="card-pool">
@@ -490,8 +559,18 @@
                 </div>
             </div>
         </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Analytics -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('analytics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('analytics');}" tabindex="0" role="button" aria-expanded="false" aria-controls="analytics-content">
+                <h2>Portfolio Analytics</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="analytics-content">
+                <div class="section-inner">
         <div class="analytics">
             <div class="analytics-card" style="--card-color: #6b7280;">
                 <h3>Portfolio Balance Score</h3>
@@ -514,8 +593,18 @@
                 <div class="analytics-description">Heritage preservation (0-100)</div>
             </div>
         </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Comparison -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('comparison')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('comparison');}" tabindex="0" role="button" aria-expanded="false" aria-controls="comparison-content">
+                <h2>Real-World Comparison</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="comparison-content">
+                <div class="section-inner">
         <div class="comparison">
             <h3>Compare to Real Heritage Properties</h3>
             <div class="comparison-grid">
@@ -578,6 +667,9 @@
                         <span class="comparison-label">Growth:</span>
                         <span class="comparison-value">+6%</span>
                     </div>
+                </div>
+            </div>
+        </div>
                 </div>
             </div>
         </div>
@@ -867,6 +959,17 @@
             URL.revokeObjectURL(url);
 
             alert('Report exported! Note: In production, this would generate a formatted PDF using jsPDF library.');
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
 
         // Initialize on load

@@ -132,6 +132,29 @@ Create 3 tiles (1x3 or 2x2 grid with one empty):
 
 ---
 
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 1 Supports Your Final Strategic Vision:**
+
+Module 1 established that media rights (40-60% of revenue) are the foundation of modern sports economics. This focus prepares you to analyze media strategy in your Week 5 capstone.
+
+**What You Learned:**
+- Media rights are the largest and most strategically complex revenue stream
+- Sports content is the last "appointment viewing" commanding premium valuations
+- Week 2 dives deep into rights valuation, linear vs. streaming trade-offs, and fan monetization
+
+**How to Apply This to Your Final Project:**
+
+When you craft your 5-year strategic vision in Week 5, Module 1's media focus shapes your revenue projections:
+
+- **Media Rights Strategy Section:** Your capstone must explain how your property will monetize content. Will you pursue traditional linear deals (guaranteed revenue, broad reach) or DTC streaming (potential upside, direct fan relationships)? Module 1 introduced these trade-offs.
+- **Revenue Weighting:** If media rights represent 40-60% of sports revenue, your property's media strategy demands the most sophisticated analysis in your vision. Module 1 signals where to invest analytical depth.
+- **Market Context:** Use Week 2's frameworks to justify your media approach. Example: "Given declining linear viewership but sports' premium positioning as live content, our property will pursue a hybrid model—linear for reach, streaming for engagement."
+
+**Real-World Application:** The Rogers/NHL $5.2B deal you'll analyze this week mirrors the decisions facing YOUR chosen property. Week 2 teaches you how executives evaluate billion-dollar media strategies.
+
+---
+
 ## Module 1 Complete - Transition to Module 2
 
 **What You've Accomplished:**
@@ -226,6 +249,29 @@ Current Portfolio:
 - **Details** offers optional executive background without cluttering main flow (UDL choice)
 - **AI Chat** serves as your core learning coach—use it to clarify concepts, test your understanding, or explore questions raised by the executive session (UDL scaffolding + active learning)
 - Brief format delivers key insights efficiently while maintaining executive credibility
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 2 Supports Your Final Strategic Vision:**
+
+Module 2 delivered practitioner insights from executives who negotiate billion-dollar media deals. This real-world perspective grounds your Week 5 media strategy in operational reality.
+
+**What You Learned:**
+- Media deals involve complex trade-offs: reach vs. exclusivity, guaranteed fees vs. revenue share, linear vs. streaming
+- Sports content commands premiums because it's live, communal, and can't be delayed
+- Executives balance stakeholder pressures (leagues want maximum revenue, broadcasters want profitability, fans want access)
+
+**How to Apply This to Your Final Project:**
+
+When you design your 5-year media strategy in Week 5, reference Module 2's executive frameworks:
+
+- **Platform Selection Rationale:** Justify your media partner choice using executive decision criteria. Example: "Following TSN's model of prioritizing guaranteed fees over revenue share (Week 2 executive interview), our property will pursue traditional broadcast deals to minimize downside risk during our growth phase."
+- **Stakeholder Management:** Your vision must satisfy multiple stakeholders. Executives taught you that boards want revenue stability, fans want accessibility, and partners want exclusivity. Show how your media strategy balances these tensions.
+- **Realistic Constraints:** Acknowledge market realities. If you're a small-market property, you won't command Rogers' $5.2B valuations. Module 2's executive insights help you set realistic expectations.
+
+**Real-World Application:** The executive you heard from evaluates media opportunities daily. Your Week 5 capstone will undergo similar scrutiny from skeptical stakeholders. Module 2 taught you how practitioners defend media strategies.
 
 ---
 
@@ -925,6 +971,30 @@ Sharing insights helps you process what you've learned through the widgets and p
 
 ---
 
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 3 Supports Your Final Strategic Vision:**
+
+Module 3 taught media rights valuation and platform economics through interactive widgets. This quantitative foundation enables sophisticated media strategy in your Week 5 capstone.
+
+**What You Learned:**
+- Media rights valuation frameworks (audience size × demographics × exclusivity × platform reach)
+- Streaming economics vs. linear broadcasting (subscription vs. advertising models)
+- Platform comparison tools for evaluating linear, streaming, and hybrid strategies
+- Fan engagement extends monetization beyond viewing (betting, interactive features, multi-platform)
+
+**How to Apply This to Your Final Project:**
+
+When you build your 5-year strategic vision in Week 5, Module 3's widgets provide your media analysis toolkit:
+
+- **Rights Valuation:** Use Module 3's valuation calculator to estimate your property's media rights value. Example: "Our property reaches 2M viewers (demographics: 18-49, high income), projected 3-year deal value: $150-200M using Week 2's valuation framework."
+- **Platform Strategy:** Reference the platform comparison widget to justify linear vs. streaming vs. hybrid approach. Show trade-offs quantitatively: guaranteed revenue vs. potential upside, reach vs. engagement, risk vs. reward.
+- **Fan Monetization Model:** Module 3 taught that media value extends beyond broadcast fees. Your vision should quantify multi-platform monetization: subscription revenue + advertising + betting partnerships + interactive features.
+
+**Real-World Application:** The interactive widgets you used mirror the financial models media executives build to evaluate deals. When you pitch your media strategy, reference these tools to ground projections in industry standards.
+
+---
+
 ## Module 3 Complete - Transition to Module 4
 
 **What You've Accomplished:**
@@ -1155,6 +1225,29 @@ Comparing strategies reveals multiple paths to success and failure. You'll see h
 **Progress:** You're 70% through Week 2 content! The simulation showed you platform strategy in action. Now you'll analyze a real mega-deal to see where theory meets reality. This case has 4 interactive data widgets—it's fascinating but dense.
 
 *This is your most important break. The case study requires critical thinking and synthesis. Take 3-5 minutes to truly reset before diving into the Rogers deal.*
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 4 Supports Your Final Strategic Vision:**
+
+Module 4's Streaming Wars simulation gave you hands-on experience building a direct-to-consumer media strategy. This is critical for your Week 5 capstone if your property pursues DTC.
+
+**What You Learned:**
+- Streaming economics require balancing content acquisition costs, customer acquisition, pricing, and churn
+- Platform profitability takes 3-5 years due to upfront investment in content and marketing
+- Strategic trade-offs: exclusive rights (2-3× cost) vs. non-exclusive, broad content portfolio vs. niche focus
+
+**How to Apply This to Your Final Project:**
+
+When you craft your 5-year media strategy in Week 5, Module 4's simulation provides your DTC analysis framework:
+
+- **Build vs. License Decision:** If your property considers launching its own streaming service, use Module 4's economics to model profitability timelines. Example: "Following Streaming Wars simulation learnings, our DTC platform requires $50M initial investment with break-even projected in Year 4."
+- **Content Strategy:** Module 4 taught portfolio balance—anchor properties (broad appeal, high cost) + niche content (retention, lower cost). Apply this to your property's content mix.
+- **Customer Economics:** Reference Module 4's LTV calculations to justify pricing. Show subscriber lifetime value exceeds acquisition cost.
+
+**Real-World Application:** Major leagues (NBA, NFL, NHL) are evaluating DTC strategies. Module 4's simulation mirrors the financial models they build to decide whether to launch proprietary streaming services.
 
 ---
 
@@ -1525,6 +1618,29 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
 **Coming Next in Module 5B:** Performance analysis, competitive dynamics, and the critical 2026 decision. You'll use your understanding of the deal context to evaluate Rogers' mistakes and recommend next steps.
 
 **Optional Break:** This is a good moment to pause (5B is another 13 minutes). Return when you're ready to analyze what went wrong and what Rogers should do in 2026.
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 5A Supports Your Final Strategic Vision:**
+
+Module 5A analyzed the Rogers/NHL deal structure and rationale. This template applies directly to evaluating media deals for YOUR property in Week 5.
+
+**What You Learned:**
+- How to structure billion-dollar media rights deals (term, exclusivity, rights scope, revenue model)
+- Strategic rationale for paying premiums (Rogers paid 3× previous deal based on assumptions about streaming growth and hockey's cultural primacy)
+- Deal modeling: projected revenue streams vs. costs over 12-year term
+
+**How to Apply This to Your Final Project:**
+
+When you design your 5-year media strategy in Week 5, Module 5A's deal structure framework guides your approach:
+
+- **Rights Package Definition:** Define what your property offers media partners. Example: "Our property offers exclusive domestic streaming rights + non-exclusive linear broadcast rights, following Rogers' hybrid model but learning from their overreliance on exclusivity."
+- **Valuation Justification:** Rogers' $5.2B valuation assumed specific audience/engagement metrics. Your vision must justify media rights value using similar frameworks: audience size × engagement × demographics × exclusivity premium.
+- **Risk Assessment:** Module 5A showed Rogers' optimistic assumptions. Your vision should stress-test assumptions: "What if streaming subscribers grow 50% slower than projected? What if cord-cutting accelerates?"
+
+**Real-World Application:** The Rogers case is a cautionary tale. Your Week 5 capstone must avoid Rogers' mistakes: overoptimistic projections, insufficient flexibility, underestimating disruption.
 
 ---
 
@@ -1978,6 +2094,29 @@ Tone: Supportive but challenging. Like a good professor during office hours.
 
 ---
 
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 5B Supports Your Final Strategic Vision:**
+
+Module 5B analyzed Rogers' performance failures and 2026 decision. This post-mortem analysis teaches risk management for your Week 5 capstone.
+
+**What You Learned:**
+- What went wrong: advertising collapsed, streaming underperformed, no contractual flexibility for black swan events (COVID)
+- How to evaluate strategic mistakes using data (projected vs. actual variance analysis)
+- Strategic decision frameworks for renewing, renegotiating, or exiting media deals
+
+**How to Apply This to Your Final Project:**
+
+When you craft your 5-year strategic vision in Week 5, Module 5B's failure analysis informs your risk management:
+
+- **Scenario Planning:** Rogers assumed linear decline would be gradual. Your vision must include downside scenarios. Example: "If cord-cutting accelerates 2× faster than baseline, our media revenue declines from $500M (Year 1) to $300M (Year 5). Mitigation: diversify into DTC and retain 30% revenue from non-media streams."
+- **Contractual Flexibility:** Rogers had no force majeure clause. Your vision should specify deal terms that protect downside: "Seek performance-based revenue share vs. guaranteed fees, with renegotiation triggers if viewership declines >20%."
+- **Post-Investment Review:** Module 5B taught how to evaluate deals ex-post. Your vision should include monitoring KPIs and decision points: "If streaming subs <500K by Year 2, pivot from DTC to licensing model."
+
+**Real-World Application:** Rogers lost $1.5B+ over 10 years. Your Week 5 capstone must demonstrate you've learned from their mistakes: conservative projections, downside protection, strategic flexibility.
+
+---
+
 ## MODULE 6: Assessment - Mini-Case Memo
 **Purpose:** Assess student understanding of Week 2 content (measures MLO 2.1, 2.2, 2.3, 2.4)
 
@@ -2349,6 +2488,31 @@ but may lack depth or miss less obvious strategic errors."
 - Authentic consulting task (executive memo format) mirrors real-world practice
 - Word limit ensures concision and prioritization (executive communication skill)
 - Measures all 4 MLOs comprehensively in integrated assessment
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 6 Supports Your Final Strategic Vision:**
+
+Module 6's Mini-Case Memo is practice for your Week 5 capstone assessment. You've now written an executive-level strategic analysis synthesizing Week 2 frameworks.
+
+**What You Learned:**
+- How to evaluate billion-dollar deals using multiple frameworks (rights valuation, platform economics, engagement, strategic fit)
+- How to identify strategic mistakes with evidence (not opinions)
+- How to recommend next steps with explicit trade-off analysis
+- How to write concisely for executive audiences (500-750 words)
+
+**How to Apply This to Your Final Project:**
+
+When you write your 5-year strategic vision in Week 5, Module 6's memo structure becomes your template:
+
+- **Analytical Rigor:** Your capstone requires the same evidence-based analysis you practiced here. Every claim needs data/framework support: "Rogers' mistake was X (evidence: Exhibit A shows Y variance). Our property avoids this by Z strategy."
+- **Trade-Off Clarity:** Module 6 forced you to weigh renew vs. renegotiate vs. exit. Week 5 will require similar decision frameworks: build vs. license, DTC vs. linear, exclusive vs. non-exclusive.
+- **Executive Communication:** The memo format you practiced—situation analysis → evaluation → recommendation → rationale—is exactly what your Week 5 capstone requires. Scale it from 750 words to 2,000 words.
+- **Peer + AI Review:** You used AI feedback and peer review in Module 6. Apply the same iterative improvement process to your Week 5 capstone.
+
+**Real-World Application:** The Mini-Case Memo you wrote mirrors the strategy documents executives submit to boards for multi-million dollar decisions. Your Week 5 capstone scales this skill to a comprehensive 5-year vision.
 
 ---
 
@@ -2751,6 +2915,37 @@ Verify that every element serves the MLOs:
 | **MLO 2.4:** Evaluate Rogers NHL deal | Evaluation | • Text (full case narrative)<br>• Table (deal summary)<br>• Details (3 exhibits with financial/viewership data)<br>• Video (10-year retrospective)<br>• Video (executive session Part 3) | Mini-Case Memo (overall deal evaluation + recommendations) |
 
 **Alignment Check:** ✅ All MLOs supported by multiple elements and measured comprehensively by assessment
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Week 2 Supports Your Final Strategic Vision:**
+
+Week 2 taught you how to evaluate and design media rights strategies—the largest revenue stream (40-60%) for most sports properties. This expertise is central to your Week 5 capstone.
+
+**What You Mastered:**
+- Media rights valuation frameworks (audience × demographics × exclusivity × platform reach)
+- Platform economics (linear advertising vs. streaming subscription models)
+- Deal structure and negotiation (term, exclusivity, revenue models, flexibility clauses)
+- Performance evaluation (projected vs. actual analysis, mistake identification, strategic pivots)
+
+**How to Apply This to Your Final Project:**
+
+Your Week 5 strategic vision must integrate Week 2's media frameworks comprehensively:
+
+- **Media Rights Section (likely 30-40% of your capstone):** This is your property's largest revenue stream. Use Week 2's valuation tools, platform comparison frameworks, and deal structure templates to design a sophisticated 5-year media strategy.
+- **Integration with Other Weeks:** Media strategy connects to everything: Week 1 (ecosystem effects), Week 3 (sponsorship amplification through media), Week 4 (athlete brand exposure via media), Week 5 (heritage vs. innovation in media approach).
+- **Real Numbers:** Your vision needs quantitative projections. Use Week 2's widgets and case data to benchmark realistic media rights valuations for your property.
+
+**Integration Across All Weeks:**
+- Week 1 = Revenue ecosystem foundation
+- **Week 2 = Media rights specialization (40-60% of revenue)**
+- Week 3 = Sponsorship/betting specialization
+- Week 4 = Athlete brand specialization
+- Week 5 = Synthesis into 5-year vision
+
+**Real-World Application:** Media strategy is the foundation of modern sports economics. Your Week 5 capstone must demonstrate mastery of this domain—Week 2 provided the technical toolkit.
 
 ---
 

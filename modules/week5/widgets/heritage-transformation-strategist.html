@@ -493,6 +493,60 @@
             }
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 5000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         .sr-only {
             position: absolute;
             width: 1px;
@@ -518,8 +572,13 @@
 
         <!-- Phase 1: Setup -->
         <div class="phase active" id="phase1">
-            <div class="card">
-                <h2>Phase 1: Strategic Foundation</h2>
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('phase1-inputs')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase1-inputs');}" tabindex="0" role="button" aria-expanded="true" aria-controls="phase1-inputs-content">
+                    <h2>Phase 1: Strategic Foundation</h2>
+                    <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content expanded" id="phase1-inputs-content">
+                    <div class="section-inner">
                 <p style="margin-bottom: 24px;">Select your heritage property type and assess its current state. These choices will affect your constraints and opportunities throughout the simulation.</p>
 
                 <h3>Property Type</h3>
@@ -586,6 +645,8 @@
                         Continue to Budget Allocation
                     </button>
                 </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -593,8 +654,13 @@
         <div class="phase" id="phase2">
             <div class="two-column">
                 <div>
-                    <div class="card">
-                        <h2>Phase 2: Budget Allocation</h2>
+                    <div class="section">
+                        <div class="section-header" onclick="toggleSection('phase2-budget')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase2-budget');}" tabindex="0" role="button" aria-expanded="true" aria-controls="phase2-budget-content">
+                            <h2>Phase 2: Budget Allocation</h2>
+                            <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+                        </div>
+                        <div class="section-content expanded" id="phase2-budget-content">
+                            <div class="section-inner">
                         <p style="margin-bottom: 24px;">Allocate your $25M transformation budget across five strategic categories. Heritage Preservation must be at least 20% of the total budget.</p>
 
                         <div class="slider-group">
@@ -684,6 +750,8 @@
                                 Continue to Scenarios
                             </button>
                         </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -737,8 +805,13 @@
         <div class="phase" id="phase3">
             <div class="two-column">
                 <div>
-                    <div class="card">
-                        <h2>Phase 3: Navigate Stakeholder Scenarios</h2>
+                    <div class="section">
+                        <div class="section-header" onclick="toggleSection('phase3-scenarios')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase3-scenarios');}" tabindex="0" role="button" aria-expanded="true" aria-controls="phase3-scenarios-content">
+                            <h2>Phase 3: Navigate Stakeholder Scenarios</h2>
+                            <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+                        </div>
+                        <div class="section-content expanded" id="phase3-scenarios-content">
+                            <div class="section-inner">
                         <p style="margin-bottom: 24px;">Over five years, you'll face critical decisions that test your strategy. Each choice affects revenue, authenticity, and stakeholder satisfaction.</p>
 
                         <div id="scenariosContainer"></div>
@@ -750,6 +823,8 @@
                             <button class="btn" id="continueToResults" onclick="startPhase4()" disabled aria-label="Continue to Phase 4: Results">
                                 View Results
                             </button>
+                        </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -794,8 +869,13 @@
 
         <!-- Phase 4: Results -->
         <div class="phase" id="phase4">
-            <div class="card">
-                <h2>Phase 4: 5-Year Transformation Results</h2>
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('phase4-outcomes')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase4-outcomes');}" tabindex="0" role="button" aria-expanded="false" aria-controls="phase4-outcomes-content">
+                    <h2>Phase 4: Final Outcomes</h2>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="phase4-outcomes-content">
+                    <div class="section-inner">
 
                 <div class="grade" id="gradeDisplay">B+</div>
                 <p style="text-align: center; color: var(--color-neutral-600); margin-bottom: 32px;" id="gradeDescription">
@@ -821,6 +901,18 @@
                     </div>
                 </div>
 
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('phase4-analysis')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase4-analysis');}" tabindex="0" role="button" aria-expanded="false" aria-controls="phase4-analysis-content">
+                    <h2>Impact Analysis & Risk Assessment</h2>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="phase4-analysis-content">
+                    <div class="section-inner">
+
                 <h3>Revenue Trajectory (5 Years)</h3>
                 <div class="chart-container">
                     <canvas id="revenueChart"></canvas>
@@ -833,17 +925,20 @@
                 <h3>Risk Assessment</h3>
                 <div id="riskAssessment"></div>
 
-                <div class="btn-group">
-                    <button class="btn btn-secondary" onclick="goToPhase(3)" aria-label="Go back to Phase 3">
-                        Back
-                    </button>
-                    <button class="btn" onclick="exportToPDF()" aria-label="Export strategy summary to PDF">
-                        Export to PDF
-                    </button>
-                    <button class="btn" onclick="resetSimulation()" aria-label="Start new simulation">
-                        Start New Simulation
-                    </button>
+                    </div>
                 </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-secondary" onclick="goToPhase(3)" aria-label="Go back to Phase 3">
+                    Back
+                </button>
+                <button class="btn" onclick="exportToPDF()" aria-label="Export strategy summary to PDF">
+                    Export to PDF
+                </button>
+                <button class="btn" onclick="resetSimulation()" aria-label="Start new simulation">
+                    Start New Simulation
+                </button>
             </div>
         </div>
     </div>
@@ -1469,6 +1564,17 @@
             announcement.textContent = `Navigated to Phase ${phaseNumber}`;
             document.body.appendChild(announcement);
             setTimeout(() => announcement.remove(), 1000);
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
     </script>
 </body>

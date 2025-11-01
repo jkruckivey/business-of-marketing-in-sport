@@ -7,12 +7,13 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro to case | Type directly | Bridge from simulations to real analysis |
-| 2 | **ⓘ Infobox (Callout)** ⬤ Required | Case access + reading instructions | Type directly | How to access HBS case, time estimate |
-| 3 | **📄 File Attachment** ⬤ Required | Serena Williams: Building a Brand (HBS 517050) | Attach PDF | HBS case study |
-| 4 | **▬ Text** ⬤ Required | Analysis framework: 4 questions to guide reading | Type directly | Structured case analysis approach |
-| 5 | **⚙ iFrame Widget** ◐ Recommended | **Serena's Brand Portfolio Analyzer** | Embed widget | Interactive analysis of her actual strategy |
-| 6 | **▤ Details** ○ Optional | Serena Ventures portfolio analysis | Type directly | Deep dive on her $111M investment fund |
-| 7 | **◈ AI Chat Widget** ○ Optional | "Case discussion partner" | Configure in Uplimit | On-demand case analysis support |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
+| 3 | **ⓘ Infobox (Callout)** ⬤ Required | Case access + reading instructions | Type directly | How to access HBS case, time estimate |
+| 4 | **📄 File Attachment** ⬤ Required | Serena Williams: Building a Brand (HBS 517050) | Attach PDF | HBS case study |
+| 5 | **▬ Text** ⬤ Required | Analysis framework: 4 questions to guide reading | Type directly | Structured case analysis approach |
+| 6 | **⚙ iFrame Widget** ◐ Recommended | **Serena's Brand Portfolio Analyzer** | Embed widget | Interactive analysis of her actual strategy |
+| 7 | **▤ Details** ○ Optional | Serena Ventures portfolio analysis | Type directly | Deep dive on her $111M investment fund |
+| 8 | **◈ AI Chat Widget** ○ Optional | "Case discussion partner" | Configure in Uplimit | On-demand case analysis support |
 
 ---
 
@@ -52,7 +53,33 @@ Let's dive into the case.
 
 ---
 
-## Element 2: Infobox - Case Access Instructions
+## Element 2: Learning Outcomes Widget
+
+**Uplimit Implementation:**
+1. Select **iFrame Widget** element
+2. Copy embed code below:
+
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-5.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Module 5 Learning Outcomes"
+  aria-label="Visual map showing which learning outcomes are practiced in Module 5"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows which Week 4 MLOs are practiced in this module (case study analysis)
+- Visual badge indicating Module 5: Case Study
+- Interactive: Click to see how Serena Williams case connects to all frameworks
+
+---
+
+## Element 3: Infobox - Case Access Instructions
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -67,7 +94,7 @@ The Serena Williams: Building a Brand case (HBS 517050, 22 pages) is attached be
 
 ---
 
-## Element 3: File Attachment - HBS Case
+## Element 4: File Attachment - HBS Case
 
 **Uplimit Implementation:**
 1. Select **File Attachment** element
@@ -77,7 +104,7 @@ The Serena Williams: Building a Brand case (HBS 517050, 22 pages) is attached be
 
 ---
 
-## Element 4: Analysis Framework - 4 Guiding Questions
+## Element 5: Analysis Framework - 4 Guiding Questions
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -192,7 +219,7 @@ This synthesis will form the foundation of your Week 4 assessment.
 
 ---
 
-## Element 5: Serena's Brand Portfolio Analyzer Widget
+## Element 6: Serena's Brand Portfolio Analyzer Widget
 
 ### ⚙ Interactive Activity: Serena's Brand Portfolio Analyzer
 
@@ -240,7 +267,7 @@ What if Serena had taken Nike's larger endorsement deal instead of launching S b
 
 ---
 
-## Element 6: Details - Serena Ventures Deep Dive
+## Element 7: Details - Serena Ventures Deep Dive
 
 ```markdown
 Title: Deep Dive: Serena Ventures Portfolio Analysis
@@ -287,7 +314,7 @@ Serena proved that investing in underrepresented founders is NOT a trade-off bet
 
 ---
 
-## Element 7: AI Chat Widget - Case Discussion Partner
+## Element 8: AI Chat Widget - Case Discussion Partner
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element
@@ -335,3 +362,27 @@ You've analyzed Serena's strategy. Now you'll apply these frameworks to a strate
 **Assessment Prompt:** "An elite 25-year-old athlete has hired you as brand strategist. They have 10-year peak career ahead and want to build generational wealth. Using frameworks from Week 4 and lessons from Serena's case, design their 10-year brand strategy."
 
 Ready to become a brand strategist? Let's build your strategy!
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 5 Supports Your Final Strategic Vision:**
+
+Module 5's Serena Williams case analysis provides a proven template for building sustainable value. This strategic approach applies directly to your Week 5 capstone.
+
+**What You Learned:**
+- Serena allocated 70% of capital to owned assets (S by Serena, Serena Ventures) vs. 30% to endorsements
+- Her $111M VC fund focused on undervalued markets (women founders, underrepresented entrepreneurs) capturing first-mover returns
+- Women's sports investments (NWSL, Angel City FC) delivered 10-15× returns as category grew from niche to mainstream
+- Strategic timing: Built assets during peak brand years (2014-2018) that generate value post-retirement (2023+)
+
+**How to Apply This to Your Final Project:**
+
+When you craft your 5-year strategic vision in Week 5, use Serena's case as your strategic template:
+
+- **Portfolio Allocation:** Reference Serena's 70/30 split to justify your property's capital allocation. Example: "Following Serena Williams' model (Week 4 case), we allocate 70% of profits to equity-building initiatives (owned media platform, IP development) vs. 30% to operational expenses."
+- **First-Mover Advantage:** Serena identified undervalued markets early. Your vision should identify similar opportunities in your space and justify why early entry creates competitive moats.
+- **Post-Period Value:** Serena built assets that sustain value post-retirement. Your 5-year vision should explain what assets remain valuable in Years 6-10.
+
+**Real-World Application:** Serena's case demonstrates wealth creation vs. income generation. Your Week 5 capstone must show you understand this distinction—Module 5 taught you the blueprint.

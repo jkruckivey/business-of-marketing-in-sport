@@ -456,6 +456,61 @@
                 transition-duration: 0.01ms !important;
             }
         }
+
+        /* Collapsible Section Styles */
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-light-gray);
+            border-radius: var(--border-radius);
+            background: var(--color-white);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: #e5e7eb;
+        }
+
+        .section-header h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-gray);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 3000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -465,32 +520,32 @@
             <p class="subtitle">10-Year Analysis (2014-2024): Where forecasts met reality</p>
         </header>
 
-        <!-- Summary Cards -->
-        <div class="summary-grid" role="region" aria-label="Deal summary statistics">
-            <div class="summary-card">
-                <div class="summary-label">Total Paid (10 Years)</div>
-                <div class="summary-value">$4.33B</div>
+        <!-- Section 1: Timeline Controls (Expanded by default) -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('timeline')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('timeline');}" tabindex="0" role="button" aria-expanded="true" aria-controls="timeline-content">
+                <h3>Timeline Controls</h3>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="summary-card">
-                <div class="summary-label">Average Shortfall/Year</div>
-                <div class="summary-value negative" id="avg-shortfall">-$XXM</div>
-            </div>
-            <div class="summary-card">
-                <div class="summary-label">Total Cumulative Loss</div>
-                <div class="summary-value negative" id="total-loss">-$X.XB</div>
-            </div>
-        </div>
+            <div class="section-content expanded" id="timeline-content">
+                <div class="section-inner">
+                    <!-- Summary Cards -->
+                    <div class="summary-grid" role="region" aria-label="Deal summary statistics">
+                        <div class="summary-card">
+                            <div class="summary-label">Total Paid (10 Years)</div>
+                            <div class="summary-value">$4.33B</div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-label">Average Shortfall/Year</div>
+                            <div class="summary-value negative" id="avg-shortfall">-$XXM</div>
+                        </div>
+                        <div class="summary-card">
+                            <div class="summary-label">Total Cumulative Loss</div>
+                            <div class="summary-value negative" id="total-loss">-$X.XB</div>
+                        </div>
+                    </div>
 
-        <!-- Chart -->
-        <div class="chart-section">
-            <h3 style="text-align: center; margin-bottom: 20px;">Rogers' Revenue: Projected vs. Actual</h3>
-            <div class="chart-container">
-                <canvas id="varianceChart" role="img" aria-label="Line chart showing projected vs actual revenue over 10 years"></canvas>
-            </div>
-        </div>
-
-        <!-- Timeline Scrubber -->
-        <div class="scrubber-container">
+                    <!-- Timeline Scrubber -->
+                    <div class="scrubber-container">
             <div class="scrubber-label" id="scrubber-label">
                 <strong>Timeline Scrubber:</strong> Drag to explore each year (Currently: Year <span id="current-year">1</span>)
             </div>
@@ -517,7 +572,36 @@
                 </div>
             </div>
         </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Section 2: Chart Visualization (Collapsed by default) -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('chart')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('chart');}" tabindex="0" role="button" aria-expanded="false" aria-controls="chart-content">
+                <h3>Chart Visualization</h3>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="chart-content">
+                <div class="section-inner">
+                    <div class="chart-section">
+                        <h3 style="text-align: center; margin-bottom: 20px;">Rogers' Revenue: Projected vs. Actual</h3>
+                        <div class="chart-container">
+                            <canvas id="varianceChart" role="img" aria-label="Line chart showing projected vs actual revenue over 10 years"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Year Details (Collapsed by default) -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('details')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('details');}" tabindex="0" role="button" aria-expanded="false" aria-controls="details-content">
+                <h3>Year Details & Context</h3>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="details-content">
+                <div class="section-inner">
         <!-- Detail Panel -->
         <div class="detail-panel" role="region" aria-label="Selected year details" aria-live="polite">
             <h3>Year <span id="detail-year">1</span> (<span id="detail-calendar-year">2014-15</span>) Details</h3>
@@ -561,7 +645,18 @@
                 </div>
             </div>
         </div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Section 4: Data Table (Collapsed by default) -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('datatable')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('datatable');}" tabindex="0" role="button" aria-expanded="false" aria-controls="datatable-content">
+                <h3>Complete Financial Data</h3>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="datatable-content">
+                <div class="section-inner">
         <!-- Data Table (Accessibility) -->
         <div class="data-table-section">
             <h3>Complete 10-Year Financial Data</h3>
@@ -589,9 +684,22 @@
                 ⬇ Export Data (CSV)
             </button>
         </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
+        }
         // Financial Data (10 years)
         const dealData = [
             {

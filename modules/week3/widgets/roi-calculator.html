@@ -90,8 +90,62 @@
             outline-offset: 2px;
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 2000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         .input-section {
-            margin-bottom: 2rem;
+            margin-bottom: 0;
         }
 
         .input-group {
@@ -404,104 +458,125 @@
         <h1>Sponsorship ROI Calculator</h1>
         <p class="subtitle">Model sponsorship ROI using reach, engagement, and conversion metrics with industry-standard assumptions.</p>
 
-        <div class="presets" role="group" aria-label="Preset sponsorship scenarios">
-            <button class="preset-btn" onclick="loadPreset('nike')" aria-label="Load Nike NFL preset">Nike NFL (37% ROI)</button>
-            <button class="preset-btn" onclick="loadPreset('redbull')" aria-label="Load Red Bull F1 preset">Red Bull F1 (180% ROI)</button>
-            <button class="preset-btn" onclick="loadPreset('gatorade')" aria-label="Load Gatorade NBA preset">Gatorade NBA (52% ROI)</button>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('inputs')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('inputs');}" tabindex="0" role="button" aria-expanded="true" aria-controls="inputs-content">
+                <h2>Sponsorship Inputs</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="inputs-content">
+                <div class="section-inner input-section">
+                    <div class="presets" role="group" aria-label="Preset sponsorship scenarios">
+                        <button class="preset-btn" onclick="loadPreset('nike')" aria-label="Load Nike NFL preset">Nike NFL (37% ROI)</button>
+                        <button class="preset-btn" onclick="loadPreset('redbull')" aria-label="Load Red Bull F1 preset">Red Bull F1 (180% ROI)</button>
+                        <button class="preset-btn" onclick="loadPreset('gatorade')" aria-label="Load Gatorade NBA preset">Gatorade NBA (52% ROI)</button>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="investment">Total Investment (Rights + Activation)</label>
+                        <div class="input-with-value">
+                            <input type="range" id="investment" min="10" max="500" value="100" step="10"
+                                   oninput="updateCalculations()" aria-describedby="investmentValue">
+                            <span class="value-display" id="investmentValue" aria-live="polite">$100M</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="impressions">Total Impressions (Millions)</label>
+                        <input type="number" id="impressions" value="1000" step="100"
+                               oninput="updateCalculations()" aria-describedby="impressionsHelp">
+                        <span id="impressionsHelp" class="sr-only">Enter total reach in millions</span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="engagementRate">Engagement Rate (%)</label>
+                        <div class="input-with-value">
+                            <input type="range" id="engagementRate" min="0.01" max="0.10" value="0.02" step="0.01"
+                                   oninput="updateCalculations()" aria-describedby="engagementValue">
+                            <span class="value-display" id="engagementValue" aria-live="polite">0.02%</span>
+                        </div>
+                        <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">% who interact (app download, retail visit, social engage)</p>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="conversionRate">Conversion Rate (%)</label>
+                        <div class="input-with-value">
+                            <input type="range" id="conversionRate" min="0.5" max="5.0" value="1.5" step="0.1"
+                                   oninput="updateCalculations()" aria-describedby="conversionValue">
+                            <span class="value-display" id="conversionValue" aria-live="polite">1.5%</span>
+                        </div>
+                        <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">% of engaged users who purchase</p>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="avgPurchase">Average Purchase Value ($)</label>
+                        <div class="input-with-value">
+                            <input type="range" id="avgPurchase" min="10" max="500" value="75" step="5"
+                                   oninput="updateCalculations()" aria-describedby="purchaseValue">
+                            <span class="value-display" id="purchaseValue" aria-live="polite">$75</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="input-section">
-            <div class="input-group">
-                <label for="investment">Total Investment (Rights + Activation)</label>
-                <div class="input-with-value">
-                    <input type="range" id="investment" min="10" max="500" value="100" step="10"
-                           oninput="updateCalculations()" aria-describedby="investmentValue">
-                    <span class="value-display" id="investmentValue" aria-live="polite">$100M</span>
-                </div>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('funnel')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('funnel');}" tabindex="0" role="button" aria-expanded="false" aria-controls="funnel-content">
+                <h2>Attribution Funnel</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
             </div>
+            <div class="section-content" id="funnel-content">
+                <div class="section-inner">
+                    <div class="funnel-chart">
+                        <canvas id="funnelChart" role="img" aria-label="Attribution funnel visualization"></canvas>
+                    </div>
 
-            <div class="input-group">
-                <label for="impressions">Total Impressions (Millions)</label>
-                <input type="number" id="impressions" value="1000" step="100"
-                       oninput="updateCalculations()" aria-describedby="impressionsHelp">
-                <span id="impressionsHelp" class="sr-only">Enter total reach in millions</span>
-            </div>
-
-            <div class="input-group">
-                <label for="engagementRate">Engagement Rate (%)</label>
-                <div class="input-with-value">
-                    <input type="range" id="engagementRate" min="0.01" max="0.10" value="0.02" step="0.01"
-                           oninput="updateCalculations()" aria-describedby="engagementValue">
-                    <span class="value-display" id="engagementValue" aria-live="polite">0.02%</span>
-                </div>
-                <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">% who interact (app download, retail visit, social engage)</p>
-            </div>
-
-            <div class="input-group">
-                <label for="conversionRate">Conversion Rate (%)</label>
-                <div class="input-with-value">
-                    <input type="range" id="conversionRate" min="0.5" max="5.0" value="1.5" step="0.1"
-                           oninput="updateCalculations()" aria-describedby="conversionValue">
-                    <span class="value-display" id="conversionValue" aria-live="polite">1.5%</span>
-                </div>
-                <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">% of engaged users who purchase</p>
-            </div>
-
-            <div class="input-group">
-                <label for="avgPurchase">Average Purchase Value ($)</label>
-                <div class="input-with-value">
-                    <input type="range" id="avgPurchase" min="10" max="500" value="75" step="5"
-                           oninput="updateCalculations()" aria-describedby="purchaseValue">
-                    <span class="value-display" id="purchaseValue" aria-live="polite">$75</span>
+                    <table class="funnel-table" role="table">
+                        <thead>
+                            <tr>
+                                <th>Stage</th>
+                                <th>Volume</th>
+                                <th>Conversion</th>
+                            </tr>
+                        </thead>
+                        <tbody id="funnelTableBody">
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
 
-        <div class="results" role="region" aria-label="ROI calculation results">
-            <h2>ROI Results</h2>
-
-            <div class="funnel-section">
-                <h3 style="font-size: 1rem; font-weight: 600; margin-bottom: 1rem;">Attribution Funnel</h3>
-                <div class="funnel-chart">
-                    <canvas id="funnelChart" role="img" aria-label="Attribution funnel visualization"></canvas>
-                </div>
-
-                <table class="funnel-table" role="table">
-                    <thead>
-                        <tr>
-                            <th>Stage</th>
-                            <th>Volume</th>
-                            <th>Conversion</th>
-                        </tr>
-                    </thead>
-                    <tbody id="funnelTableBody">
-                    </tbody>
-                </table>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('metrics');}" tabindex="0" role="button" aria-expanded="false" aria-controls="metrics-content">
+                <h2>ROI Metrics</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
             </div>
+            <div class="section-content" id="metrics-content">
+                <div class="section-inner">
+                    <div class="metric-grid">
+                        <div class="metric">
+                            <div class="metric-label">Direct Revenue</div>
+                            <div class="metric-value" id="directRevenue" aria-live="polite">$0M</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Total Attributed Revenue</div>
+                            <div class="metric-value" id="totalRevenue" aria-live="polite">$0M</div>
+                            <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">Includes 1.5x brand lift multiplier</p>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Return on Investment</div>
+                            <div class="metric-value" id="roiValue" aria-live="polite">0%</div>
+                            <div id="gradeBadge" aria-live="polite"></div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Payback Period</div>
+                            <div class="metric-value" id="paybackPeriod" aria-live="polite">0 years</div>
+                        </div>
+                    </div>
 
-            <div class="metric-grid">
-                <div class="metric">
-                    <div class="metric-label">Direct Revenue</div>
-                    <div class="metric-value" id="directRevenue" aria-live="polite">$0M</div>
+                    <div class="insight-box" role="complementary" aria-label="Performance insights">
+                        <p id="insightText" aria-live="polite"></p>
+                    </div>
                 </div>
-                <div class="metric">
-                    <div class="metric-label">Total Attributed Revenue</div>
-                    <div class="metric-value" id="totalRevenue" aria-live="polite">$0M</div>
-                    <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">Includes 1.5x brand lift multiplier</p>
-                </div>
-                <div class="metric">
-                    <div class="metric-label">Return on Investment</div>
-                    <div class="metric-value" id="roiValue" aria-live="polite">0%</div>
-                    <div id="gradeBadge" aria-live="polite"></div>
-                </div>
-                <div class="metric">
-                    <div class="metric-label">Payback Period</div>
-                    <div class="metric-value" id="paybackPeriod" aria-live="polite">0 years</div>
-                </div>
-            </div>
-
-            <div class="insight-box" role="complementary" aria-label="Performance insights">
-                <p id="insightText" aria-live="polite"></p>
             </div>
         </div>
 
@@ -770,6 +845,17 @@
             document.getElementById('avgPurchase').value = 75;
 
             updateCalculations();
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
 
         // Initialize on page load

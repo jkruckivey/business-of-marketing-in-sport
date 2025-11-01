@@ -7,11 +7,13 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Infobox (Callout)** ⬤ Required | Activity introduction and context | Type directly | Blue variant, sets transformation challenge |
-| 2 | **Text** ⬌ Required | Detailed instructions and strategic framework | Type directly | Full setup, heritage/growth tension guidance |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
+| 3 | **Text** ⬌ Required | Detailed instructions and strategic framework | Type directly | Full setup, heritage/growth tension guidance |
 | 3 | **iFrame** ⬌ Required | Heritage Transformation Strategist widget | Custom widget hosted | Interactive strategy builder simulation |
-| 4 | **Text Response** ⬌ Required | Strategic Transformation Defense submission | Configure in Uplimit | Written defense with 35-point rubric |
-| 5 | **AI Chat Widget** ○ Optional | Heritage Strategy Coach (optional) | Configure in Uplimit | Named: "Heritage Strategy Coach" |
-| 6 | **Details** ○ Optional | Strategic hints and decision frameworks (optional) | Type directly | Accordion for struggling students |
+| 5 | **Text Response** ⬌ Required | Strategic Transformation Defense submission | Configure in Uplimit | Written defense with 35-point rubric |
+| 6 | **AI Chat Widget** ○ Optional | Heritage Strategy Coach (optional) | Configure in Uplimit | Named: "Heritage Strategy Coach" |
+| 7 | **Details** ○ Optional | Strategic hints and decision frameworks (optional) | Type directly | Accordion for struggling students |
+| 8 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-4.html` | Shows how module outcomes connect to course goals |
 
 ---
 
@@ -37,7 +39,39 @@ strategies balancing tradition with innovation), MLO 5.4 (Create integrated 5-ye
 
 ---
 
-### Element 2: Text Content - Activity Instructions
+## Element 2: Learning Outcomes Widget
+---
+
+## Element 2: Learning Outcomes Widget
+
+**Uplimit Implementation:**
+1. Select **iFrame Widget** element
+2. Copy embed code below:
+
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-4.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Module 4 Learning Outcomes"
+  aria-label="Visual map showing which learning outcomes are practiced in Module 4"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows which Week 2 MLOs are practiced in this module
+- Visual badge indicating Module 4
+- Interactive: Click to see how content connects to frameworks
+
+---
+
+
+---
+
+### Element 4: Text Content - Activity Instructions
 
 **Copy this markdown directly into Uplimit:**
 
@@ -133,7 +167,9 @@ The memo will be evaluated on:
 
 ---
 
-### Element 3: iFrame Specifications
+---
+
+### Element 4: iFrame Specifications
 
 - **Widget Name:** "Heritage Transformation Strategist"
 - **Widget File:** `heritage-transformation-strategist.html` (custom interactive strategy builder)
@@ -181,7 +217,9 @@ The memo will be evaluated on:
 
 ---
 
-### Element 4: Text Response - Strategic Transformation Defense
+---
+
+### Element 5: Text Response - Strategic Transformation Defense
 
 **Assessment Type:** Written submission with rubric evaluation
 
@@ -298,7 +336,9 @@ Before submitting, check that you have:
 
 ---
 
-### Element 5: AI Chat Widget Configuration
+---
+
+### Element 6: AI Chat Widget Configuration
 
 - **Widget Name:** "Heritage Strategy Coach"
 - **System Prompt:** "You are a strategic advisor helping MBA students design heritage property transformation strategies. Your role: Help them think critically about the tension between heritage preservation and revenue growth. Do NOT write their memo for them. Instead, ask probing questions: How does your strategy strengthen (not compromise) institutional identity? Which stakeholder concerns did you address? What would traditionalists worry about? How does digital innovation align with your property's core mission? Which revenue streams create the strongest synergies? What happens if one initiative fails? Focus on: heritage asset analysis, authentic integration of tradition and innovation, sophisticated trade-off reasoning, stakeholder awareness. If students ask you to write content, redirect them to develop their own strategic thinking with your guidance."
@@ -307,7 +347,9 @@ Before submitting, check that you have:
 
 ---
 
-### Element 6: Details Content
+---
+
+### Element 7: Details Content
 
 
 Title: ◆ Strategic Decision Framework (Open if you need guidance)
@@ -376,5 +418,31 @@ revenue challenges, digital transformation imperatives, and cultural preservatio
 your framework to actual financial data and institutional constraints.
 
 Ready to analyze real heritage decisions? Let's dive into the case!
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 4 Supports Your Final Strategic Vision:**
+
+Module 4 gave you hands-on practice designing heritage transformation strategy through interactive simulation. This application-level experience directly prepares you for the Strategic Vision Memo where you must defend difficult strategic choices.
+
+**What You Learned:**
+- Heritage transformation requires allocating limited resources ($25M budget) across five strategic categories: admissions innovation, events, sponsorship, digital/media, and retail
+- Every strategic decision involves trade-offs: Investment in digital experiences may cannibalize physical attendance; aggressive sponsorship may alienate traditionalist donors
+- Stakeholder management is central: You must navigate competing demands from growth-focused board members vs. authenticity-focused curators
+- Strategic rationale matters more than the decisions themselves: A well-defended conservative strategy is better than a poorly explained aggressive one
+- Transformation isn't about maximizing ONE metric (revenue or authenticity)—it's about optimizing the RELATIONSHIP between them
+
+**How to Apply This to Your Final Project:**
+
+When you build your Strategic Vision Memo in Module 6, Module 4's simulation methodology provides your decision-making framework:
+
+- **Budget Allocation Section:** Show your $X investment portfolio across strategic initiatives. Don't just list initiatives—explain your allocation logic using Module 4's framework: Which revenue streams get priority? Why? How does this portfolio balance preservation with growth?
+- **Trade-Off Defense:** Module 4 forced you to justify difficult choices. Your Strategic Vision must do the same. Example: "We're investing $15M in digital content despite risk of trivializing physical experience because..." Show you've considered downside scenarios.
+- **Stakeholder Navigation:** Reference Module 4's stakeholder tension management. If YOUR property has competing stakeholder groups (e.g., legacy donors vs. young fans, traditionalist board members vs. growth-focused investors), explicitly address how your strategy satisfies both—or defend why you're prioritizing one over the other.
+- **Strategic Transformation Defense Structure:** Module 4 required 900-1,200 word written defense. Your Strategic Vision Memo (1,500-2,000 words) should follow similar structure: Situation analysis → Strategic choices → Rationale → Trade-offs acknowledged → Mitigation strategies → Expected outcomes.
+
+**Real-World Application:** Your simulation memo practiced the exact communication style your Strategic Vision needs: Executive voice, explicit about constraints, data-driven but acknowledging uncertainty, transparent about risks. Module 4 taught you how to defend strategy under scrutiny—the core skill every sports business leader needs.
 
 ---

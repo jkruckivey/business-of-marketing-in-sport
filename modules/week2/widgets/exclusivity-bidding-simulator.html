@@ -406,6 +406,62 @@
                 animation: none !important;
             }
         }
+
+        /* Collapsible Sections */
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-light);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: #e5e5e5;
+        }
+
+        .section-header h2,
+        .section-header h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-text-light);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 3000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -421,8 +477,14 @@
             <p><strong>Challenge:</strong> Do you take the highest exclusive bid, or split rights among multiple partners for higher total revenue?</p>
         </div>
 
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('bidders')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('bidders');}" tabindex="0" role="button" aria-expanded="true" aria-controls="bidders-content">
+                <h3>Step 1: Reveal the Bids</h3>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="bidders-content">
+                <div class="section-inner">
         <div class="bidders-container">
-            <h3>The Bidders</h3>
             <p style="text-align: center; color: var(--color-text-light); margin-bottom: 20px;">Click "Reveal All Bids" to see what each company is offering</p>
 
             <button
@@ -474,7 +536,17 @@
                 </div>
             </div>
         </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('decision')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('decision');}" tabindex="0" role="button" aria-expanded="false" aria-controls="decision-content">
+                <h3>Step 2: Make Your Decision</h3>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="decision-content">
+                <div class="section-inner">
         <div class="decision-section" id="decision-section" aria-live="polite">
             <h3>Your Decision: Exclusive or Split?</h3>
             <p style="text-align: center; color: var(--color-text-light); margin-bottom: 24px;">
@@ -557,6 +629,9 @@
             <button class="reset-btn" id="reset-btn" aria-label="Reset simulation and try again">
                 Reset & Try Again
             </button>
+        </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -683,6 +758,17 @@
             // Scroll to top
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
+        }
     </script>
 </body>
 </html>

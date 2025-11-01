@@ -1,18 +1,34 @@
-# MODULE 3: Core Content - Legacy vs Innovation (BOPPPS: Presentation)
+# MODULE 3: Core Content - Legacy vs Innovation (BOPPPS: Presentation) • **V3 INTERACTIVE-FIRST REDESIGN**
 
 **Purpose:** Interactive discovery of heritage monetization strategies and future trends through experimentation
 
 **Uplimit Structure:** Fourth module in Unit 5 (Week 5)
 
-| Order | Element | Content/Purpose | Source | Implementation Notes |
-|-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | Type directly | Sets interactive learning approach for heritage properties |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Legacy vs Innovation Matrix** | Embed widget | Map strategic decisions balancing tradition & growth |
-| 3 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Process learning from strategic mapping |
-| 4 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | Embed widget | Forecast 5-year sports business evolution |
-| 5 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize future vision insights |
-| 6 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | Type directly | Financial analysis of museums, halls of fame, legacy events |
-| 7 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Configure in Uplimit | On-demand support for strategic planning |
+### V3 Module 3 Structure
+
+**Content Summary:**
+- **Total text:** ~800 words broken into 3 micro-readings (200-300 words each, ~1-2 minutes each)
+- **Total video:** 0 minutes (no video in this module, content delivered through interactive widgets)
+- **Interactive widgets:** 2 major widgets, ~33 minutes total hands-on engagement
+- **Visual elements:** 2 infoboxes, 2 text blocks, 1 details accordion, 1 AI chat widget (optional)
+- **Total time:** 55-67 minutes (approximately **75% ACTIVE engagement** through widgets)
+
+**Content Priority Badges:**
+- ⬤ **Required** - Core content essential for learning outcomes and assessments
+- ◐ **Recommended** - Important content that enhances understanding and engagement
+- ○ **Optional** - Supplemental content for deeper exploration (progressive disclosure)
+
+| Order | Element | Content/Purpose | Time | Source | Implementation Notes |
+|-------|---------|----------------|------|--------|---------------------|
+| 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | 2 min | Type directly | Sets interactive learning approach for heritage properties |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
+| 3 | **⚙ iFrame Widget** ⬤ Required | **Legacy vs Innovation Matrix** | 8-10 min | Embed widget | Map strategic decisions balancing tradition & growth |
+| 3 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Process learning from strategic mapping |
+| 5 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
+| 6 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
+| 7 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
+| 8 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Variable | Configure in Uplimit | On-demand support for strategic planning |
+| 9 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | 2 min | Embed `learning-outcomes-module-3.html` | Shows how module outcomes connect to course goals |
 
 ---
 
@@ -686,4 +702,33 @@ Ready to transform a heritage icon? Let's apply your frameworks!
 **File Status:** ✅ Complete and ready for Uplimit implementation
 **Copy-Paste Ready:** All text blocks and iframe codes provided
 **Widget Build Status:** Specifications complete, HTML files to be created in `/modules/week5/widgets/` directory
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 3 Supports Your Final Strategic Vision:**
+
+Module 3 taught you the core frameworks for heritage property strategy through interactive discovery. These tools enable sophisticated strategic planning in your Week 5 capstone deliverable.
+
+**What You Learned:**
+- The Legacy vs Innovation Matrix reveals the four strategic quadrants: Stagnation (low preservation, low growth), Museum Trap (high preservation, low growth), Disneyfication (low preservation, high growth), and Sweet Spot (high preservation, high growth)
+- You can't maximize both heritage preservation AND revenue growth simultaneously—strategic balance requires explicit trade-offs
+- Different heritage properties position differently: Hockey Hall of Fame (60/40 preservation/innovation), FIFA Museum (35/65), Olympics Legacy (50/50)
+- Future Trends Predictor shows which emerging forces (AI, VR/AR, women's sports, sustainability, new demographics) create highest ROI across the five revenue streams from Week 1
+- Risk-adjusted scenario planning is essential: Optimistic, Realistic, and Pessimistic forecasts reveal strategic vulnerability
+
+**How to Apply This to Your Final Project:**
+
+When you build your Strategic Vision Memo in Module 6, Module 3's interactive tools provide your strategic methodology:
+
+- **Heritage Strategy Portfolio:** Use the Legacy vs Innovation Matrix to map YOUR property's current position and desired future state. Explicitly identify which quadrant you occupy now and which quadrant your 5-year vision targets. Explain WHY this movement is strategically sound for your specific institutional context.
+- **Initiative Allocation:** Reference the 15 strategic initiatives from the Matrix (VR tours, physical archives, betting partnerships, strict curation, NFT collections, etc.) to justify your innovation choices. Don't just list initiatives—explain where they fall on the preservation vs. growth spectrum and how they create portfolio balance.
+- **Future Trends Prioritization:** Apply the Future Trends Predictor methodology to forecast which trends offer highest strategic value for YOUR property. Show your $50M investment allocation and defend why certain trends (e.g., AI personalization) get priority over others (e.g., metaverse experiences).
+- **Risk Mitigation:** Use Module 3's risk-adjusted scenarios to address "what if" questions skeptical board members will ask. Example: "If women's sports growth is 20% lower than projected, how does that affect our 5-year revenue targets?"
+
+**Real-World Application:** Your Strategic Vision Memo must demonstrate HOW you'll balance heritage with growth—not just claim you will. Module 3's Matrix and Predictor tools give you the methodology to show your strategic thinking process, making your vision credible and actionable.
+
+---
+
 **Next Steps:** Build Module 4 (Interactive Activity - HHOF Transformation Simulation)

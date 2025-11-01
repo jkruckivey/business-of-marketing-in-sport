@@ -58,12 +58,62 @@
             margin-bottom: 2rem;
         }
 
-        .config-section {
-            background: var(--color-neutral-50);
+        .section {
+            margin-bottom: 1.5rem;
             border: 1px solid var(--color-neutral-200);
             border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 3000px;
+        }
+
+        .section-inner {
             padding: 1.5rem;
-            margin-bottom: 2rem;
+        }
+
+        .config-section {
+            margin-bottom: 0;
         }
 
         .config-grid {
@@ -213,14 +263,7 @@
         }
 
         .sliders-section {
-            margin: 2rem 0;
-        }
-
-        .sliders-section h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--color-neutral-900);
-            margin-bottom: 1.5rem;
+            margin: 0;
         }
 
         .allocation-slider {
@@ -271,7 +314,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
-            margin: 2rem 0;
+            margin: 0;
         }
 
         .chart-container {
@@ -455,7 +498,13 @@
         <h1>Activation Budget Builder</h1>
         <p class="subtitle">Design activation mix across channels within your total budget constraint. Remember: activation costs typically run 2-3x rights fees.</p>
 
-        <div class="config-section">
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('configuration')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('configuration');}" tabindex="0" role="button" aria-expanded="true" aria-controls="configuration-content">
+                <h2>Configuration</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="configuration-content">
+                <div class="section-inner config-section">
             <div class="config-grid">
                 <div class="input-group">
                     <label for="rightsFee">Rights Fee</label>
@@ -497,10 +546,17 @@
                 <button class="preset-btn" onclick="loadPreset('amex')">American Express PGA (Premium)</button>
                 <button class="preset-btn" onclick="loadPreset('redbull')">Red Bull F1 (Digital-First)</button>
             </div>
+                </div>
+            </div>
         </div>
 
-        <div class="sliders-section">
-            <h2>Channel Allocation (Must Equal 100%)</h2>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('allocation')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('allocation');}" tabindex="0" role="button" aria-expanded="false" aria-controls="allocation-content">
+                <h2>Channel Allocation</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="allocation-content">
+                <div class="section-inner sliders-section">
 
             <div class="allocation-slider">
                 <div class="slider-header">
@@ -577,9 +633,18 @@
             <div class="total-display total-valid" id="allocationTotal" aria-live="assertive">
                 Total Allocation: 100%
             </div>
+                </div>
+            </div>
         </div>
 
-        <div class="results-grid">
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('breakdown')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('breakdown');}" tabindex="0" role="button" aria-expanded="false" aria-controls="breakdown-content">
+                <h2>Budget Breakdown</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="breakdown-content">
+                <div class="section-inner">
+                    <div class="results-grid">
             <div class="chart-container">
                 <h3>Budget Allocation</h3>
                 <canvas id="allocationChart" role="img" aria-label="Budget allocation pie chart"></canvas>
@@ -599,12 +664,15 @@
                     </tbody>
                 </table>
             </div>
-        </div>
+                    </div>
 
-        <div class="insight-box" role="complementary" aria-label="Strategic insights">
-            <h3>Strategic Fit Analysis</h3>
-            <p id="insightText"></p>
-            <span class="score-badge" id="fitScore">Strategic Fit: 85/100</span>
+                    <div class="insight-box" role="complementary" aria-label="Strategic insights">
+                        <h3>Strategic Fit Analysis</h3>
+                        <p id="insightText"></p>
+                        <span class="score-badge" id="fitScore">Strategic Fit: 85/100</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="actions">
@@ -875,6 +943,17 @@
             document.getElementById('measurement').value = 5;
 
             updateBudget();
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
 
         // Initialize on page load

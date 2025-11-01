@@ -179,15 +179,64 @@
             border-color: #d4d4d4;
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: #fafafa;
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: #f5f5f5;
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #171717;
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: #525252;
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 2000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         .legend {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 12px;
-            margin-bottom: 16px;
-            padding: 16px;
-            background: white;
-            border: 1px solid #e5e5e5;
-            border-radius: 8px;
         }
 
         .legend-item {
@@ -271,55 +320,85 @@
         <h1>Week 5 Concept Map</h1>
         <p class="subtitle">Interactive visualization of Legacy, Culture & Future frameworks</p>
 
-        <div class="legend">
-            <div class="legend-item">
-                <div class="legend-color" style="background: #4A5568;"></div>
-                <span>Learning Outcomes</span>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('legend')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('legend');}" tabindex="0" role="button" aria-expanded="true" aria-controls="legend-content">
+                <h2>Legend</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: #718096;"></div>
-                <span>Key Concepts</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: #A0AEC0;"></div>
-                <span>Strategic Frameworks</span>
-            </div>
-            <div class="legend-item">
-                <div class="legend-color" style="background: #CBD5E0;"></div>
-                <span>Real Examples</span>
-            </div>
-        </div>
-
-        <div class="controls">
-            <input type="text" class="search-box" id="search" placeholder="Search concepts, heritage properties, future trends...">
-            <button class="reset-btn" id="reset">Reset View</button>
-        </div>
-
-        <div class="layout">
-            <div id="graph-container"></div>
-
-            <div id="definition-panel">
-                <div class="panel-empty" id="panel-empty">
-                    Click any node to explore concepts and connections
+            <div class="section-content expanded" id="legend-content">
+                <div class="section-inner">
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #4A5568;"></div>
+                            <span>Learning Outcomes</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #718096;"></div>
+                            <span>Key Concepts</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #A0AEC0;"></div>
+                            <span>Strategic Frameworks</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background: #CBD5E0;"></div>
+                            <span>Real Examples</span>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="panel-content" id="panel-content">
-                    <div class="panel-label" id="panel-label"></div>
-                    <div class="panel-type" id="panel-type"></div>
-
-                    <div class="panel-section">
-                        <div class="panel-section-title">Definition</div>
-                        <div class="panel-section-content" id="panel-definition"></div>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('controls')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('controls');}" tabindex="0" role="button" aria-expanded="true" aria-controls="controls-content">
+                <h2>Search & Controls</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="controls-content">
+                <div class="section-inner">
+                    <div class="controls">
+                        <input type="text" class="search-box" id="search" placeholder="Search concepts, heritage properties, future trends...">
+                        <button class="reset-btn" id="reset">Reset View</button>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="panel-section" id="panel-extra" style="display: none;">
-                        <div class="panel-section-title" id="panel-extra-title"></div>
-                        <div class="panel-section-content" id="panel-extra-content"></div>
-                    </div>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('visualization')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('visualization');}" tabindex="0" role="button" aria-expanded="true" aria-controls="visualization-content">
+                <h2>Interactive Concept Map</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="visualization-content">
+                <div class="section-inner">
+                    <div class="layout">
+                        <div id="graph-container"></div>
 
-                    <div class="panel-section">
-                        <div class="panel-section-title">Connected To</div>
-                        <ul class="connected-list" id="panel-connected"></ul>
+                        <div id="definition-panel">
+                            <div class="panel-empty" id="panel-empty">
+                                Click any node to explore concepts and connections
+                            </div>
+
+                            <div class="panel-content" id="panel-content">
+                                <div class="panel-label" id="panel-label"></div>
+                                <div class="panel-type" id="panel-type"></div>
+
+                                <div class="panel-section">
+                                    <div class="panel-section-title">Definition</div>
+                                    <div class="panel-section-content" id="panel-definition"></div>
+                                </div>
+
+                                <div class="panel-section" id="panel-extra" style="display: none;">
+                                    <div class="panel-section-title" id="panel-extra-title"></div>
+                                    <div class="panel-section-content" id="panel-extra-content"></div>
+                                </div>
+
+                                <div class="panel-section">
+                                    <div class="panel-section-title">Connected To</div>
+                                    <ul class="connected-list" id="panel-connected"></ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -565,6 +644,17 @@
             node.classed('dimmed', n => !matches.includes(n.id));
             link.classed('dimmed', true);
         });
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
+        }
     </script>
 </body>
 </html>

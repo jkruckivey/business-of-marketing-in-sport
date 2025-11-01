@@ -650,6 +650,61 @@
                 transition-duration: 0.01ms !important;
             }
         }
+
+        /* Collapsible Sections */
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-light-gray);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: #e5e7eb;
+        }
+
+        .section-header h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-gray);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 5000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -680,7 +735,13 @@
 
         <!-- PHASE 1: Set Assumptions -->
         <div id="phase-1" class="phase-section active">
-            <h2 class="phase-title">Phase 1: Set Your Assumptions</h2>
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('phase1-inputs')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase1-inputs');}" tabindex="0" role="button" aria-expanded="true" aria-controls="phase1-inputs-content">
+                    <h2>Phase 1: Set Your Assumptions</h2>
+                    <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content expanded" id="phase1-inputs-content">
+                    <div class="section-inner">
             <p style="margin-bottom: 24px; color: var(--color-gray);">
                 Adjust the sliders to reflect your forecast for 2026-2036. These assumptions will drive the financial projections.
             </p>
@@ -756,11 +817,20 @@
                     Continue to Options →
                 </button>
             </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- PHASE 2: Choose Option -->
         <div id="phase-2" class="phase-section">
-            <h2 class="phase-title">Phase 2: Choose Your Strategic Option</h2>
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('phase2-options')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase2-options');}" tabindex="0" role="button" aria-expanded="true" aria-controls="phase2-options-content">
+                    <h2>Phase 2: Choose Your Strategic Option</h2>
+                    <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content expanded" id="phase2-options-content">
+                    <div class="section-inner">
             <p style="margin-bottom: 24px; color: var(--color-gray);">
                 Select one option. Each has different financial and strategic implications based on your assumptions.
             </p>
@@ -847,15 +917,20 @@
                     View 10-Year Projection →
                 </button>
             </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- PHASE 3: View Projection -->
         <div id="phase-3" class="phase-section">
-            <h2 class="phase-title">Phase 3: 10-Year Financial Projection</h2>
-            <p style="margin-bottom: 24px; color: var(--color-gray);">
-                Based on your assumptions and option choice, here's the projected financial performance.
-            </p>
-
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('phase3-metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase3-metrics');}" tabindex="0" role="button" aria-expanded="false" aria-controls="phase3-metrics-content">
+                    <h2>Financial Summary Metrics</h2>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="phase3-metrics-content">
+                    <div class="section-inner">
             <!-- Metrics Summary -->
             <div class="metrics-grid">
                 <div class="metric-card">
@@ -871,7 +946,17 @@
                     <div class="metric-value" id="cumulative-result">$0M</div>
                 </div>
             </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('phase3-chart')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase3-chart');}" tabindex="0" role="button" aria-expanded="false" aria-controls="phase3-chart-content">
+                    <h2>10-Year Revenue & Cost Projection</h2>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="phase3-chart-content">
+                    <div class="section-inner">
             <!-- Chart -->
             <div class="chart-section">
                 <h3 style="margin-bottom: 16px;">Annual Revenue vs. Costs</h3>
@@ -880,11 +965,24 @@
                 </div>
             </div>
 
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('phase3-scorecard')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase3-scorecard');}" tabindex="0" role="button" aria-expanded="false" aria-controls="phase3-scorecard-content">
+                    <h2>Strategic Scorecard</h2>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="phase3-scorecard-content">
+                    <div class="section-inner">
             <!-- Strategic Scorecard -->
             <div class="scorecard">
-                <h3>Strategic Scorecard</h3>
                 <div id="scorecard-items">
                     <!-- Populated by JavaScript -->
+                </div>
+            </div>
+                    </div>
                 </div>
             </div>
 
@@ -900,7 +998,13 @@
 
         <!-- PHASE 4: Compare Alternatives -->
         <div id="phase-4" class="phase-section">
-            <h2 class="phase-title">Phase 4: Compare All Three Options</h2>
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('phase4-comparison')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase4-comparison');}" tabindex="0" role="button" aria-expanded="false" aria-controls="phase4-comparison-content">
+                    <h2>Phase 4: Compare All Three Options</h2>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="phase4-comparison-content">
+                    <div class="section-inner">
             <p style="margin-bottom: 24px; color: var(--color-gray);">
                 Side-by-side comparison showing how each option performs under your assumptions.
             </p>
@@ -918,6 +1022,9 @@
                     <!-- Populated by JavaScript -->
                 </tbody>
             </table>
+                    </div>
+                </div>
+            </div>
 
             <div class="action-buttons">
                 <button class="btn btn-secondary" onclick="goToPhase(3)">
@@ -931,7 +1038,13 @@
 
         <!-- PHASE 5: Executive Recommendation (Visual Decision Matrix) -->
         <div id="phase-5" class="phase-section">
-            <h2 class="phase-title">Phase 5: Your Executive Recommendation</h2>
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('phase5-matrix')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('phase5-matrix');}" tabindex="0" role="button" aria-expanded="false" aria-controls="phase5-matrix-content">
+                    <h2>Decision Matrix: Rate Each Option</h2>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="phase5-matrix-content">
+                    <div class="section-inner">
             <p style="margin-bottom: 24px; color: var(--color-gray);">
                 Rate each option on 5 strategic criteria (1-5 stars). Your ratings will automatically generate a recommendation.
             </p>
@@ -1136,6 +1249,9 @@
                         aria-label="Optional additional commentary" maxlength="1000"></textarea>
                     <div class="char-count">
                         <span id="word-count">0</span> / 150 words
+                    </div>
+                </div>
+            </div>
                     </div>
                 </div>
             </div>
@@ -1728,6 +1844,17 @@
             URL.revokeObjectURL(url);
 
             alert('Analysis exported successfully! You can now submit this file with your mini-case memo.');
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
     </script>
 </body>

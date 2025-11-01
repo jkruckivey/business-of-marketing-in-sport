@@ -7,12 +7,13 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | Type directly | Sets interactive learning approach |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
-| 3 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Process learning from experimentation |
-| 4 | **⚙ iFrame Widget** ⬤ Required | **Emerging Sports Investment Tool** | Embed widget | Evaluate women's sports & emerging market opportunities |
-| 5 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize investment insights |
-| 6 | **▤ Details** ○ Optional | Deep dive: Why equity beats fees | Type directly | Mathematical proof with NPV calculations |
-| 7 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Configure in Uplimit | On-demand support for struggling students |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
+| 3 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
+| 4 | **▬ Text** ◐ Recommended | Reflection prompt after widget 1 | Type directly | Process learning from experimentation |
+| 5 | **⚙ iFrame Widget** ⬤ Required | **Emerging Sports Investment Tool** | Embed widget | Evaluate women's sports & emerging market opportunities |
+| 6 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize investment insights |
+| 7 | **▤ Details** ○ Optional | Deep dive: Why equity beats fees | Type directly | Mathematical proof with NPV calculations |
+| 8 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Configure in Uplimit | On-demand support for struggling students |
 
 ---
 
@@ -53,7 +54,33 @@ Ready? Let's experiment.
 
 ---
 
-## Element 2: Athlete Brand Calculator Widget
+## Element 2: Learning Outcomes Widget
+
+**Uplimit Implementation:**
+1. Select **iFrame Widget** element
+2. Copy embed code below:
+
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-3.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Module 3 Learning Outcomes"
+  aria-label="Visual map showing which learning outcomes are practiced in Module 3"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows which Week 4 MLOs are practiced in this module (interactive discovery through widgets)
+- Visual badge indicating Module 3: Core Content
+- Interactive: Click to see how experimentation connects to learning outcomes
+
+---
+
+## Element 3: Athlete Brand Calculator Widget
 
 ### ⚙ Interactive Activity: Athlete Brand Calculator
 
@@ -131,7 +158,7 @@ This isn't a passive calculation—it's an experimentation lab. Try extreme allo
 
 ---
 
-## Element 3: Reflection Prompt After Widget 1
+## Element 4: Reflection Prompt After Widget 1
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -161,7 +188,7 @@ After experimenting with the Athlete Brand Calculator, take 2 minutes to reflect
 
 ---
 
-## Element 4: Emerging Sports Investment Tool Widget
+## Element 5: Emerging Sports Investment Tool Widget
 
 ### ⚙ Interactive Activity: Emerging Sports Investment Tool
 
@@ -248,7 +275,7 @@ Here's the strategic question driving this widget: Why are NWSL franchises value
 
 ---
 
-## Element 5: Reflection Prompt After Widget 2
+## Element 6: Reflection Prompt After Widget 2
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -281,7 +308,7 @@ After experimenting with the Emerging Sports Investment Tool, reflect:
 
 ---
 
-## Element 6: Details Accordion - Deep Dive: Why Equity Beats Fees
+## Element 7: Details Accordion - Deep Dive: Why Equity Beats Fees
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -393,7 +420,7 @@ The math doesn't lie: Given sufficient time, equity always beats fees.
 
 ---
 
-## Element 7: AI Chat Widget Configuration
+## Element 8: AI Chat Widget Configuration
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element
@@ -417,6 +444,29 @@ Provide clear, business-focused explanations with specific numbers and examples.
 ```
 Hi! I can help you understand insights from the Athlete Brand Calculator and Emerging Sports Investment Tool. What questions do you have about portfolio strategies, investment returns, or how to apply these frameworks?
 ```
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 3 Supports Your Final Strategic Vision:**
+
+Module 3 taught athlete brand economics and revenue stream allocation. This expertise applies if your Week 5 capstone involves athlete partnerships or emerging sports properties.
+
+**What You Learned:**
+- Five athlete revenue streams: endorsements (fee-based income), owned businesses (equity wealth), investments (portfolio appreciation), media/content production (IP value), licensing (passive income)
+- Wealth formula: equity compounds over decades, fees don't. Michael Jordan earns more from Nike royalties ($130M/year) than entire playing career ($93M total)
+- Allocation strategy: elite athletes allocate 30% to endorsements (immediate cash flow), 70% to equity investments (long-term wealth)
+
+**How to Apply This to Your Final Project:**
+
+When you craft your 5-year strategic vision in Week 5, Module 3's athlete economics inform partnership and investment strategy:
+
+- **Athlete Deal Structure:** If your property signs athletes, reference Module 3's allocation model. Example: "Rather than paying $5M/year endorsement fees, we offer equity stakes (10% merchandise revenue share) aligning long-term incentives. Week 4 taught us equity creates wealth, fees don't."
+- **Revenue Mix Optimization:** Apply athlete portfolio thinking to your property's revenue mix. Prioritize revenue streams that build equity value (owned media platforms, IP licensing) over transaction-based income (one-time appearance fees).
+- **Investment vs. Expense Mindset:** Module 3 taught that Jordan's Nike deal was an investment (percentage of sales), not an expense (flat fee). Apply this thinking to your property's strategic decisions.
+
+**Real-World Application:** The athlete brand calculator you used models real wealth-building strategies. Your Week 5 capstone should demonstrate this same sophisticated allocation thinking.
 
 ---
 

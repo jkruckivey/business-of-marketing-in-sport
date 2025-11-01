@@ -13,9 +13,10 @@
 | 1 | **▶ Video** ⬛ Required | Business problem scenario (3 min) | Upload `week1-bridge-scenario.mp4` + VTT | Real executive facing revenue dilemma |
 | 2 | **◈ AI Roleplay** ◐ Recommended | The $100M Question diagnostic | Configure in Uplimit | Reveal knowledge gaps before learning begins |
 | 3 | **ⓘ Infobox** ⬤ Required | The revenue problem statement | Type directly | Use **Callout** variant, urgent business challenge |
-| 4 | **▬ Text** ⬤ Required | Can you solve these problems? (Outcomes as questions) | Type directly | Reframes MLOs as student challenges |
-| 5 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Revenue Knowledge Quiz** | Embed `revenue-knowledge-quiz.html` | Self-diagnostic before learning begins |
-| 6 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
+| 4 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Revenue Strategy Challenge + Quiz** | Embed `revenue-strategy-pre-assessment.html` | Combined challenge text and quiz in single widget |
+| 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
+| 6 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-0.html` | Shows how module outcomes connect to course goals |
+
 
 ---
 
@@ -373,99 +374,45 @@ Professional sports teams operate with a business model that defies conventional
 
 ---
 
-## Element 4: Text - Outcomes as "Can You..." Questions
+## Element 4: Revenue Strategy Pre-Assessment (Combined Widget)
+
+**Widget Purpose:** Combined challenge text + 10-question self-diagnostic quiz covering all 4 learning outcomes (MLO 1.1, 1.2, 1.3, 1.4)
+
+**Three-Screen Structure:**
+1. **Challenge Preview:** Four revenue problem scenarios students will learn to solve this week
+2. **Interactive Quiz:** 10 questions testing baseline knowledge with immediate feedback
+3. **Results + Learning Path:** Personalized recommendations based on performance
 
 **Uplimit Implementation:**
-1. Select **Text** element in module builder
-2. Copy the markdown below directly into the text field
 
-```markdown
-# Can You Solve These Revenue Problems?
+**Widget File:** `revenue-strategy-pre-assessment.html`
 
-Professional sport presents unique business challenges that traditional MBA frameworks don't fully address. This week tests whether you can apply strategic thinking to an industry where the rules are different.
-
-## **Challenge 1: Map the Revenue Ecosystem**
-**The Problem:** A private equity firm asks you: "Where does sport revenue come from, and which streams matter most?" Can you map the five major revenue sources and explain how they interconnect?
-
-**What you'll need to know:**
-- Media rights, ticketing, sponsorship, merchandising, betting/gaming
-- Relative size and growth trajectory of each stream
-- Why sport revenue streams are interdependent (ecosystem vs. portfolio)
-
-**Test yourself now:** Can you name all five major revenue streams and estimate their percentage of total revenue? (Take the pre-assessment below to find out)
-
----
-
-## **Challenge 2: Understand Sport's Unique Business Model**
-**The Problem:** Your CEO asks: "Why can't we run a sports team like we run our hotel chain?" Can you explain what makes sport economics fundamentally different?
-
-**What you'll need to know:**
-- Why competitors must collaborate financially (revenue sharing, draft systems)
-- The concept of competitive balance as an economic asset
-- How sport creates value through uncertainty of outcome
-
-**Test yourself now:** Can you explain why the NFL shares 60% of all revenue equally, and whether that's good or bad for business? (Pre-assessment question 3)
-
----
-
-## **Challenge 3: Evaluate Growth Potential vs. Risk**
-**The Problem:** You have $50 million to invest across five revenue streams. Some offer high growth but high risk (betting). Others offer stability but limited upside (ticketing). Can you build a portfolio that maximizes revenue while managing vulnerability?
-
-**What you'll need to know:**
-- Which streams are capacity-constrained (ceiling effects)
-- Which streams face regulatory or market uncertainty
-- How to balance growth, stability, and diversification
-
-**Test yourself now:** Which revenue stream has the highest growth rate right now, and why? (Pre-assessment question 5)
-
----
-
-## **Challenge 4: Analyze Revenue Sharing Models**
-**The Problem:** The Vancouver Canucks receive $X million from NHL revenue sharing but contribute $Y million to the pool. The team's owner asks: "Are we better off in a league with revenue sharing, or should we lobby to change the system?" Can you analyze the trade-offs?
-
-**What you'll need to know:**
-- How the NHL's revenue sharing formula works
-- Which teams benefit (small market) vs. which contribute (large market)
-- The strategic implications for competitive balance and franchise value
-
-**Test yourself now:** Can you explain one advantage and one disadvantage of revenue sharing for a mid-market team? (Pre-assessment question 7)
-
----
-
-## **Ready to Test Your Knowledge?**
-
-Before you dive into this week's content, take the 10-question Revenue Knowledge Quiz below. This isn't graded—it's a self-diagnostic to help you understand:
-
-- What you already know (so you can focus on what's new)
-- Where you have knowledge gaps (so you know what to prioritize)
-- How your business intuition applies to sport (or doesn't)
-
-**Your results will give you a personalized learning path for this week.**
-
-Let's see what you've got! ↓
+**Embed Code:**
+```html
+<iframe
+  src="../../widgets/revenue-strategy-pre-assessment.html"
+  width="100%"
+  height="800"
+  style="border: none; border-radius: 8px;"
+  title="Revenue Strategy Pre-Assessment - Challenge preview and diagnostic quiz"
+  aria-label="Interactive pre-assessment with revenue challenge scenarios and 10-question quiz"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
----
-
-## Element 5: Revenue Knowledge Pre-Assessment Quiz
-
-**Widget Purpose:** 10-question self-diagnostic quiz covering all 4 learning outcomes (MLO 1.1, 1.2, 1.3, 1.4)
-
-**Implementation Options:**
-- **Option A:** Use iframe widget (custom HTML with interactive features)
-- **Option B:** Build manually in Uplimit using quiz builder (questions provided below)
-
-**Quiz Features:**
-- Immediate feedback after each question
-- Explanation for correct/incorrect answers
-- Final score + breakdown by learning outcome
-- Personalized learning path based on results (0-3 = Newcomer, 4-6 = Strategic Intuition, 7-9 = Expert, 10 = Insider)
+**Widget Features:**
+- Challenge preview screen with 4 revenue problem scenarios
+- 10-question diagnostic quiz with immediate feedback
+- Results screen with personalized learning path recommendations
+- WCAG 2.2 AA compliant
+- Uplimit branding (Geist font, neutral grays)
 
 ---
 
-### QUIZ CONTENT (All 10 Questions)
+### QUIZ CONTENT REFERENCE (10 Questions)
 
-Copy these questions into Uplimit's quiz builder if not using iframe widget:
+The widget includes these questions (full content embedded in HTML file):
 
 ---
 
@@ -672,9 +619,11 @@ Correct matches! Understanding these constraints is crucial for strategy:
 
 Strategic insight: Diversify across streams with different constraint types to build resilient portfolios.
 
+**Note:** Full quiz content, feedback, and scoring logic are embedded in `revenue-strategy-pre-assessment.html` widget.
+
 ---
 
-**QUESTION 9** (MLO 1.3 - Growth Potential vs. Risk)
+**REFERENCE ONLY - QUESTION 9** (MLO 1.3 - Growth Potential vs. Risk)
 
 **Question:** A team invests $300M in a new stadium. Which revenue streams will this investment directly impact? (Select all that apply)
 
@@ -722,212 +671,7 @@ Think about the math: Toronto's $200M local revenue far exceeds Arizona's $60M, 
 
 ---
 
-### Quiz Scoring and Learning Paths
-
-**Scoring:**
-- Questions 1, 2, 4, 6, 8, 9, 10: 1 point each = 7 points
-- Questions 3, 5, 7 (short answer): Up to 3 points each based on rubric = 9 points maximum
-- **Total: 16 points possible (7 points from multiple choice/matching + up to 9 points from short answer)**
-
-**Score Interpretation:**
-- **0-5 points (Newcomer):** You're starting fresh! Focus heavily on Module 3's core content and all interactive widgets. Spend extra time with the Revenue Mix Slider and Ecosystem Cascade Simulator. Don't skip the Details accordions—they'll build your foundation.
-- **6-10 points (Strategic Intuition):** You have business intuition that applies to sports! Focus on Module 3's interdependence concepts and the Canucks case in Module 5. Your challenge: moving from generic business thinking to sport-specific ecosystem thinking.
-- **11-14 points (Expert):** Strong baseline knowledge! Challenge yourself with the Revenue Empire Builder simulation in Module 4 and the NHL Board of Governors roleplay in Module 5. Your focus: applying knowledge to complex, multi-stakeholder scenarios.
-- **15-16 points (Insider):** You already know this content well! Speed through Modules 2-3, then dive deep into the Canucks case (Module 5) and Reflection Memo (Module 6). Consider: What would YOU change about NHL revenue sharing?
-
----
-
-### OPTION A: Uplimit Implementation (iframe Widget)
-
-**Step 1:** Build the widget as standalone HTML file (`revenue-knowledge-quiz.html`) with:
-- **One question at a time** (not all 10 on one page)
-- Navigation: "Next" button after answering, progress indicator (Question 1 of 10)
-- Immediate feedback after each answer with explanation
-- Cannot advance until question is answered
-- Final score calculation with results summary page
-- Results breakdown by MLO
-- Personalized learning path based on score ranges
-- "Review Answers" option to see all questions/answers/feedback after completion
-- WCAG 2.2 AA accessibility compliance (see checklist below)
-- **Uplimit branding compliance** (see design specifications below)
-
-**User Flow:**
-1. **Start Screen:** Brief introduction with "Begin Quiz" button
-2. **Question 1:** Display first question with answer options, "Question 1 of 10" progress indicator
-3. **Answer Selected:** Student selects answer, "Submit Answer" button appears
-4. **Feedback Displayed:** Immediate feedback (correct/incorrect + explanation) appears below question
-5. **Navigation:** "Next Question" button appears after feedback shown
-6. **Repeat:** Steps 2-5 for questions 2-10
-7. **Results Summary:** Final score, breakdown by MLO, personalized learning path
-8. **Review Option:** "Review All Answers" button to see complete quiz with all feedback
-
-**Widget Accessibility (WCAG 2.2 AA Compliance):**
-- ✅ Keyboard navigation (Tab, Arrow keys, Enter for all interactions)
-- ✅ ARIA labels on all form inputs and buttons
-- ✅ ARIA live regions announce feedback and progress ("Question 2 of 10 loaded")
-- ✅ Screen reader announcements for correct/incorrect feedback
-- ✅ High contrast mode support (4.5:1 minimum for text)
-- ✅ Focus indicators visible (3px solid outline)
-- ✅ No time limits enforced (students control pacing)
-- ✅ Color not sole means of conveying correct/incorrect (text + icons: ✅ ❌)
-- ✅ Progress indicator visible and screen reader accessible
-
-**Uplimit Design Specifications:**
-
-**Typography:**
-- Font family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif
-- Body text: 14px, line-height 1.5, color #4a5568 (medium gray)
-- Question titles: 18px, font-weight 600, color #2d3748 (dark gray)
-- Labels: 12px, font-weight 500, color #1f2937 (darkest gray)
-- Feedback text: 14px, line-height 1.6, color #2d3748
-
-**Color Palette (Uplimit Standards):**
-- **Primary UI elements** (question numbers, buttons): #2d3748 (dark gray), NOT green
-- **Success indicators ONLY** (correct answer checkmarks): #10b981 (green)
-- **Error indicators ONLY** (incorrect answer X): #ef4444 (red)
-- **Interactive selection** (radio buttons, focus states): #3182ce (blue)
-- **Backgrounds**: white, #f9fafb (very light gray), #f7fafc (light gray)
-- **Borders (neutral)**: #e2e8f0 (light gray), #d1d5db (medium gray)
-- **Text hierarchy**: #1f2937 (darkest) → #2d3748 (dark) → #4a5568 (medium) → #6b7280 (light)
-
-**Component Styling:**
-
-*Question Container:*
-```
-background: white
-border: 1px solid #e2e8f0
-border-radius: 12px
-padding: 24px
-box-shadow: 0 1px 3px rgba(0,0,0,0.05)
-```
-
-*Question Number Badge:*
-```
-background: #2d3748 (dark gray - NOT green)
-color: white
-border-radius: 50%
-width: 32px, height: 32px
-font-size: 14px, font-weight 600
-```
-
-*Answer Options (unselected):*
-```
-background: #f9fafb
-border: 1px solid #e2e8f0
-border-radius: 8px
-padding: 12px 16px
-cursor: pointer
-transition: all 0.2s
-```
-
-*Answer Options (selected):*
-```
-background: #f7fafc
-border: 1px solid #3182ce (blue)
-box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.1)
-```
-
-*Feedback Section (correct):*
-```
-background: #f0fdf4 (very light green)
-border-left: 4px solid #10b981 (green - success state)
-padding: 16px
-border-radius: 8px
-```
-
-*Feedback Section (incorrect):*
-```
-background: #fef2f2 (very light red)
-border-left: 4px solid #ef4444 (red - error state)
-padding: 16px
-border-radius: 8px
-```
-
-*Progress Indicator:*
-```
-background: #e2e8f0
-height: 4px
-border-radius: 2px
-Progress fill: #3182ce (blue)
-```
-
-*Buttons (Primary):*
-```
-background: #2d3748 (dark gray)
-color: white
-padding: 10px 20px
-border-radius: 6px
-font-weight: 500
-hover: #1a202c (darker gray)
-```
-
-**Critical: Green Color Usage Rules**
-- ✅ USE green (#10b981) ONLY for: Correct answer checkmarks, completion badges, success messages
-- ❌ DO NOT use green for: Question numbers, primary buttons, borders (unless indicating success)
-- This prevents confusion—green should only signal "correct/success"
-
-**Step 2:** Host the widget on GitHub Pages or institutional server
-
-**Hosting Note:** Upload widget HTML file to institutional GitHub Pages, LMS file storage, or CDN. Update the `src` URL in the embed code below to match your deployment location.
-
-**Step 3:** In Uplimit module builder, select **iFrame** element
-
-**Step 4:** Copy this embed code (update URL to your hosted location):
-
-```html
-<iframe
-  src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/revenue-knowledge-quiz.html"
-  width="100%"
-  height="700"
-  style="border: none; border-radius: 8px;"
-  title="Revenue Knowledge Pre-Assessment Quiz - Self-diagnostic for Week 1 learning path"
-  aria-label="Interactive pre-assessment quiz with 10 questions covering sports revenue streams, business models, growth potential, and revenue sharing where you can test your baseline knowledge"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Step 5:** Add element title in Uplimit: "Pre-Assessment: Revenue Knowledge Quiz"
-
-**Step 6:** Optional: Add instructions below the widget:
-```
-This 10-question quiz is not graded. It helps you understand your current knowledge level and creates a personalized learning path for Week 1. Allow 10-12 minutes to complete.
-```
-
----
-
-### OPTION B: Uplimit Implementation (Manual Quiz Builder)
-
-If iframe embedding is not available, use Uplimit's built-in quiz builder:
-
-**Step 1:** In Uplimit module builder, select **Quiz** or **Assessment** element (platform-specific name)
-
-**Step 2:** Configure quiz settings:
-- **Grading:** Not graded / Diagnostic only
-- **Attempts:** Unlimited
-- **Feedback:** Show immediately after each question
-- **Randomize:** Optional (randomize question order for variety)
-
-**Step 3:** Add all 10 questions from the "QUIZ CONTENT" section above:
-- Copy question text, answer options, correct answers, and feedback verbatim
-- Use appropriate question types: Multiple Choice, Ordering/Ranking, Short Answer, True/False, Matching, Multiple Select
-- For short answer questions (Q3, Q7): Use AI grading with rubric provided, or manual grading
-
-**Step 4:** Configure score interpretation display:
-- Show final score out of 16 points
-- Display personalized learning path based on score ranges (see "Score Interpretation" section above)
-- Optionally: Show breakdown by MLO (Questions 1,2,8 = MLO 1.1; Questions 3,4 = MLO 1.2; Questions 5,6,9 = MLO 1.3; Questions 7,10 = MLO 1.4)
-
-**Step 5:** Add element title: "Pre-Assessment: Revenue Knowledge Quiz"
-
-**Step 6:** Add instructions:
-```
-This 10-question quiz is not graded. It helps you understand your current knowledge level and creates a personalized learning path for Week 1. Answer honestly—this diagnostic helps you focus your learning where you need it most.
-```
-
----
-
-## Element 6: Infobox - Results Interpretation & Learning Path
+## Element 5: Infobox - Results Interpretation & Learning Path
 
 **Uplimit Implementation:**
 1. Select **Infobox** element in module builder
@@ -944,7 +688,35 @@ Your quiz results create a personalized learning path for this week. Lower score
 
 ---
 
-## Module 0 Complete - Transition to Module 1
+
+### Element 6: Learning Outcomes Widget
+
+**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
+
+**Uplimit Implementation:**
+
+**Widget File:** `learning-outcomes-module-0.html`
+
+**Embed Code:**
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-0.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Learning Outcomes - Module 0"
+  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Click any module outcome to see which course-level outcomes it contributes to
+- Interactive highlighting shows connections between module and course goals
+- WCAG 2.2 AA compliant with keyboard navigation and screen reader support
+
+## Module Summary
 
 **What You've Accomplished:**
 You've been hooked by a real business problem—the Connor McDavid $100M paradox—and you've taken your first steps toward solving it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your knowledge gaps are. That's not a weakness—it's a strategic advantage. You now know precisely what you need to learn this week.
@@ -956,6 +728,29 @@ The fact that you struggled with the diagnostic exercise is actually the point. 
 Now that you've seen the problem and identified your knowledge gaps, Module 1 will show you exactly what you're going to learn this week. You'll see the four key challenges you'll be able to solve by Friday—challenges that will transform you from someone who sees the McDavid contract as a loss into someone who can confidently defend it to a skeptical board with data they can't argue with.
 
 Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 0 Supports Your Final Strategic Vision:**
+
+Module 0 introduced you to the fundamental challenge of sports business strategy: revenue streams are interdependent ecosystems, not independent channels. This systems thinking is the foundation for your Week 5 capstone deliverable.
+
+**What You Discovered:**
+- Professional sports revenue works differently than traditional business models
+- Investments in one stream (Connor McDavid's $100M contract) create ripple effects across the entire ecosystem ($132M total value)
+- What looks like a loss on one line item can be a strategic gain when ecosystem effects are considered
+
+**How to Apply This to Your Final Project:**
+
+When you create your 5-year strategic vision in Week 5, you'll need to demonstrate this ecosystem thinking throughout your analysis. Module 0 taught you to never evaluate a single decision (hiring an athlete, signing a media deal, pricing tickets) in isolation—always trace the cascade effects:
+
+- **Revenue Model Section:** Explain how your property's revenue streams reinforce each other (ticket sales → fan data → sponsorship value → media rights premiums)
+- **Investment Decisions:** Justify seemingly expensive investments by quantifying ecosystem effects across all 5 revenue streams
+- **Risk Analysis:** Identify how problems in one revenue stream cascade through the ecosystem (e.g., declining attendance → reduced sponsorship appeal → lower media rights value)
+
+**Real-World Application:** The McDavid paradox you analyzed today is the same challenge you'll face in Week 5: How do you convince stakeholders that strategic investments create value beyond their immediate cost? Module 0 taught you the answer: map the ecosystem effects.
 
 ---
 

@@ -90,8 +90,62 @@
             outline-offset: 2px;
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 2000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         .input-section {
-            margin-bottom: 2rem;
+            margin-bottom: 0;
         }
 
         .input-group {
@@ -163,18 +217,7 @@
         }
 
         .results {
-            background: var(--color-neutral-50);
-            border: 1px solid var(--color-neutral-200);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .results h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--color-neutral-900);
-            margin-bottom: 1.5rem;
+            margin: 0;
         }
 
         .chart-container {
@@ -387,7 +430,13 @@
             <button class="preset-btn" onclick="loadPreset('nhl')">NHL Betting Kiosk (35% premium)</button>
         </div>
 
-        <div class="input-section">
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('inputs')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('inputs');}" tabindex="0" role="button" aria-expanded="true" aria-controls="inputs-content">
+                <h2>Partnership Inputs</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="inputs-content">
+                <div class="section-inner input-section">
             <div class="input-group">
                 <label for="traditionalCPM">Traditional Sponsor CPM</label>
                 <div class="input-with-value">
@@ -432,12 +481,18 @@
                     <span class="value-display" id="rightsFeeValue" aria-live="polite">$10M</span>
                 </div>
             </div>
+                </div>
+            </div>
         </div>
 
-        <div class="results" role="region" aria-label="Partnership valuation results">
-            <h2>Value Comparison</h2>
-
-            <div class="chart-container">
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('comparison')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('comparison');}" tabindex="0" role="button" aria-expanded="false" aria-controls="comparison-content">
+                <h2>Value Comparison</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="comparison-content">
+                <div class="section-inner">
+                    <div class="chart-container">
                 <canvas id="valueChart" role="img" aria-label="Sponsor value comparison chart"></canvas>
             </div>
 
@@ -458,9 +513,18 @@
                     <div class="metric-subtext">Additional impressions</div>
                 </div>
             </div>
+                </div>
+            </div>
+        </div>
 
-            <div class="comparison-section">
-                <h3>Premium Analysis</h3>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('premium')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('premium');}" tabindex="0" role="button" aria-expanded="false" aria-controls="premium-content">
+                <h2>Premium Analysis</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="premium-content">
+                <div class="section-inner">
+                    <div class="comparison-section">
                 <table class="comparison-table">
                     <thead>
                         <tr>
@@ -473,11 +537,13 @@
                     <tbody id="comparisonTableBody">
                     </tbody>
                 </table>
-            </div>
+                    </div>
 
-            <div class="insight-box" role="complementary" aria-label="Premium justification">
-                <h3>Premium Justification</h3>
-                <p id="justificationText"></p>
+                    <div class="insight-box" role="complementary" aria-label="Premium justification">
+                        <h3>Premium Justification</h3>
+                        <p id="justificationText"></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -751,6 +817,17 @@
             document.getElementById('rightsFee').value = 10;
 
             updateCalculations();
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
 
         // Initialize on page load

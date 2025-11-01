@@ -361,6 +361,61 @@
                 transition-duration: 0.01ms !important;
             }
         }
+
+        /* Collapsible Sections */
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-light-gray);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: #e5e7eb;
+        }
+
+        .section-header h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-gray);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 3000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -371,8 +426,14 @@
         </header>
 
         <!-- Deal Overview -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('overview')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('overview');}" tabindex="0" role="button" aria-expanded="true" aria-controls="overview-content">
+                <h2>Deal Overview</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="overview-content">
+                <div class="section-inner">
         <div class="deal-overview">
-            <h2>Deal Overview</h2>
             <div class="deal-stats">
                 <div class="stat-card">
                     <div class="stat-label">Total Value</div>
@@ -392,8 +453,18 @@
                 </div>
             </div>
         </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Tabs -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('tabs')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('tabs');}" tabindex="0" role="button" aria-expanded="false" aria-controls="tabs-content">
+                <h2>Detailed Deal Terms</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="tabs-content">
+                <div class="section-inner">
         <div class="tabs-container">
             <div role="tablist" aria-label="Rogers NHL Deal Terms" class="tab-list">
                 <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" class="tab-button" tabindex="0">
@@ -572,6 +643,9 @@
                 </p>
             </div>
         </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Action Buttons -->
         <div class="action-buttons">
@@ -681,6 +755,17 @@
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
         });
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
+        }
     </script>
 </body>
 </html>

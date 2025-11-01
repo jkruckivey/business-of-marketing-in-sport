@@ -63,6 +63,60 @@
             font-size: 1.1rem;
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: var(--color-white);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-light-gray);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.3s;
+        }
+
+        .section-header:hover {
+            background: #f0f0f0;
+        }
+
+        .section-header h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-gray);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 3000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         /* Tabs */
         .tab-list {
             display: flex;
@@ -320,185 +374,285 @@
 
         <!-- Tab Panel 1: Linear TV Ratings -->
         <div role="tabpanel" id="panel-ratings" aria-labelledby="tab-ratings" class="tab-panel active">
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div class="metric-label">2014-15 Baseline</div>
-                    <div class="metric-value">1.6M</div>
+            <!-- Section: Key Metrics -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('ratings-metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('ratings-metrics');}" tabindex="0" role="button" aria-expanded="true" aria-controls="ratings-metrics-content">
+                    <h3>Key Metrics</h3>
+                    <span class="toggle-icon expanded" aria-hidden="true">▼</span>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-label">2023-24 Current</div>
-                    <div class="metric-value">1.3M</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-label">10-Year Change</div>
-                    <div class="metric-value negative">-19%</div>
+                <div class="section-content expanded" id="ratings-metrics-content">
+                    <div class="section-inner">
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-label">2014-15 Baseline</div>
+                                <div class="metric-value">1.6M</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">2023-24 Current</div>
+                                <div class="metric-value">1.3M</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">10-Year Change</div>
+                                <div class="metric-value negative">-19%</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="chart-section">
-                <h3 style="text-align: center; margin-bottom: 16px;">Hockey Night in Canada Viewership (2014-2024)</h3>
-                <div class="chart-container">
-                    <canvas id="ratingsChart"></canvas>
+            <!-- Section: Viewership Trend Chart -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('ratings-chart')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('ratings-chart');}" tabindex="0" role="button" aria-expanded="false" aria-controls="ratings-chart-content">
+                    <h3>Viewership Trend (2014-2024)</h3>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="ratings-chart-content">
+                    <div class="section-inner">
+                        <div class="chart-container">
+                            <canvas id="ratingsChart"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="insights-box">
-                <h3>💡 Key Insights</h3>
-                <ul>
-                    <li><strong>Steady Decline:</strong> 19% viewership drop from 1.6M (2014-15) to 1.3M (2023-24)</li>
-                    <li><strong>COVID Impact:</strong> Largest single-year drop in 2020-21 (-23%) due to no fans, Canadian division only</li>
-                    <li><strong>Weak Canadian Teams:</strong> Only 1-2 Canadian teams in playoffs most years reduces "must-watch" games</li>
-                    <li><strong>Generational Shift:</strong> Younger viewers (18-34) prefer highlights and social clips over full 3-hour games</li>
-                    <li><strong>Rogers' Problem:</strong> Declining linear TV viewership erodes advertising revenue, the main profit driver</li>
-                </ul>
+            <!-- Section: Key Insights -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('ratings-insights')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('ratings-insights');}" tabindex="0" role="button" aria-expanded="false" aria-controls="ratings-insights-content">
+                    <h3>Key Insights</h3>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="ratings-insights-content">
+                    <div class="section-inner">
+                        <div class="insights-box">
+                            <ul>
+                                <li><strong>Steady Decline:</strong> 19% viewership drop from 1.6M (2014-15) to 1.3M (2023-24)</li>
+                                <li><strong>COVID Impact:</strong> Largest single-year drop in 2020-21 (-23%) due to no fans, Canadian division only</li>
+                                <li><strong>Weak Canadian Teams:</strong> Only 1-2 Canadian teams in playoffs most years reduces "must-watch" games</li>
+                                <li><strong>Generational Shift:</strong> Younger viewers (18-34) prefer highlights and social clips over full 3-hour games</li>
+                                <li><strong>Rogers' Problem:</strong> Declining linear TV viewership erodes advertising revenue, the main profit driver</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="data-table-section">
-                <h3 style="margin-bottom: 12px;">Complete Viewership Data</h3>
-                <table class="data-table" id="ratings-table">
-                    <thead>
-                        <tr>
-                            <th>Season</th>
-                            <th>Avg. Viewers (millions)</th>
-                            <th>Change vs. Previous</th>
-                            <th>Key Events</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Populated by JavaScript -->
-                    </tbody>
-                </table>
+            <!-- Section: Complete Data Table -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('ratings-data')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('ratings-data');}" tabindex="0" role="button" aria-expanded="false" aria-controls="ratings-data-content">
+                    <h3>Complete Viewership Data</h3>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="ratings-data-content">
+                    <div class="section-inner">
+                        <table class="data-table" id="ratings-table">
+                            <thead>
+                                <tr>
+                                    <th>Season</th>
+                                    <th>Avg. Viewers (millions)</th>
+                                    <th>Change vs. Previous</th>
+                                    <th>Key Events</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Tab Panel 2: Streaming Subscribers -->
         <div role="tabpanel" id="panel-streaming" aria-labelledby="tab-streaming" class="tab-panel">
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div class="metric-label">Year 5 Target</div>
-                    <div class="metric-value">1.0M</div>
+            <!-- Section: Streaming Metrics -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('streaming-metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('streaming-metrics');}" tabindex="0" role="button" aria-expanded="true" aria-controls="streaming-metrics-content">
+                    <h3>Key Metrics</h3>
+                    <span class="toggle-icon expanded" aria-hidden="true">▼</span>
                 </div>
-                <div class="metric-card">
-                    <div class="metric-label">Year 5 Actual</div>
-                    <div class="metric-value">350K</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-label">Gap</div>
-                    <div class="metric-value negative">-65%</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-label">2024 Current</div>
-                    <div class="metric-value">450K</div>
+                <div class="section-content expanded" id="streaming-metrics-content">
+                    <div class="section-inner">
+                        <div class="metrics-grid">
+                            <div class="metric-card">
+                                <div class="metric-label">Year 5 Target</div>
+                                <div class="metric-value">1.0M</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">Year 5 Actual</div>
+                                <div class="metric-value">350K</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">Gap</div>
+                                <div class="metric-value negative">-65%</div>
+                            </div>
+                            <div class="metric-card">
+                                <div class="metric-label">2024 Current</div>
+                                <div class="metric-value">450K</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="chart-section">
-                <h3 style="text-align: center; margin-bottom: 16px;">Sportsnet NOW Subscribers: Target vs. Actual</h3>
-                <div class="chart-container">
-                    <canvas id="streamingChart"></canvas>
+            <!-- Section: Growth Chart -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('streaming-chart')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('streaming-chart');}" tabindex="0" role="button" aria-expanded="false" aria-controls="streaming-chart-content">
+                    <h3>Target vs. Actual Growth</h3>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="streaming-chart-content">
+                    <div class="section-inner">
+                        <div class="chart-container">
+                            <canvas id="streamingChart"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="insights-box">
-                <h3>💡 Key Insights</h3>
-                <ul>
-                    <li><strong>Massive Shortfall:</strong> Achieved only 350K of 1M target subscribers by Year 5 (2018-19) — 65% miss</li>
-                    <li><strong>NHL-Only Problem:</strong> Fans wanted multi-sport packages (TSN Direct, DAZN) rather than single-league services</li>
-                    <li><strong>Pricing Issue:</strong> $27.99/month for NHL-only vs. DAZN $24.99 for 5+ sports made Sportsnet NOW uncompetitive</li>
-                    <li><strong>Slow Growth Post-COVID:</strong> Streaming adoption accelerated during pandemic but Sportsnet NOW only grew 100K in 4 years</li>
-                    <li><strong>$300M Revenue Miss:</strong> 1M subs @ $25/month = $300M/year projected. Actual: $135M/year (450K × $25 × 12) = $165M shortfall</li>
-                </ul>
+            <!-- Section: Streaming Insights -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('streaming-insights')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('streaming-insights');}" tabindex="0" role="button" aria-expanded="false" aria-controls="streaming-insights-content">
+                    <h3>Key Insights</h3>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="streaming-insights-content">
+                    <div class="section-inner">
+                        <div class="insights-box">
+                            <ul>
+                                <li><strong>Massive Shortfall:</strong> Achieved only 350K of 1M target subscribers by Year 5 (2018-19) — 65% miss</li>
+                                <li><strong>NHL-Only Problem:</strong> Fans wanted multi-sport packages (TSN Direct, DAZN) rather than single-league services</li>
+                                <li><strong>Pricing Issue:</strong> $27.99/month for NHL-only vs. DAZN $24.99 for 5+ sports made Sportsnet NOW uncompetitive</li>
+                                <li><strong>Slow Growth Post-COVID:</strong> Streaming adoption accelerated during pandemic but Sportsnet NOW only grew 100K in 4 years</li>
+                                <li><strong>$300M Revenue Miss:</strong> 1M subs @ $25/month = $300M/year projected. Actual: $135M/year (450K × $25 × 12) = $165M shortfall</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="data-table-section">
-                <h3 style="margin-bottom: 12px;">Streaming Growth Data</h3>
-                <table class="data-table" id="streaming-table">
-                    <thead>
-                        <tr>
-                            <th>Year</th>
-                            <th>Season</th>
-                            <th>Target Subscribers</th>
-                            <th>Actual Subscribers</th>
-                            <th>Gap</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Populated by JavaScript -->
-                    </tbody>
-                </table>
+            <!-- Section: Streaming Data Table -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('streaming-data')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('streaming-data');}" tabindex="0" role="button" aria-expanded="false" aria-controls="streaming-data-content">
+                    <h3>Streaming Growth Data</h3>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="streaming-data-content">
+                    <div class="section-inner">
+                        <table class="data-table" id="streaming-table">
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Season</th>
+                                    <th>Target Subscribers</th>
+                                    <th>Actual Subscribers</th>
+                                    <th>Gap</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Tab Panel 3: Demographics -->
         <div role="tabpanel" id="panel-demographics" aria-labelledby="tab-demographics" class="tab-panel">
-            <div class="chart-section">
-                <h3 style="text-align: center; margin-bottom: 16px;">Audience Demographics: 2014 vs. 2024</h3>
-                <div class="chart-container">
-                    <canvas id="demographicsChart"></canvas>
+            <!-- Section: Demographics Chart -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('demo-chart')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('demo-chart');}" tabindex="0" role="button" aria-expanded="true" aria-controls="demo-chart-content">
+                    <h3>Demographics Comparison (2014 vs. 2024)</h3>
+                    <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content expanded" id="demo-chart-content">
+                    <div class="section-inner">
+                        <div class="chart-container">
+                            <canvas id="demographicsChart"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="insights-box">
-                <h3>💡 Key Demographic Shifts</h3>
-                <ul>
-                    <li><strong>Aging Audience:</strong> 18-34 dropped from 28% to 19% (-32% decline) while 55+ grew from 35% to 44% (+26%)</li>
-                    <li><strong>Gender Balance Improved:</strong> Female viewership grew from 38% (2014) to 42% (2024) — positive trend</li>
-                    <li><strong>Regional Concentration:</strong> Toronto/Montreal account for 55% of total viewership (down from 60% in 2014)</li>
-                    <li><strong>Advertiser Problem:</strong> Advertisers pay premium for 18-49 demo, but NHL audience skews older and less affluent</li>
-                    <li><strong>Generational Challenge:</strong> Young fans consume NHL via highlights (TikTok, Instagram) not full games — harder to monetize</li>
-                </ul>
+            <!-- Section: Demographic Insights -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('demo-insights')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('demo-insights');}" tabindex="0" role="button" aria-expanded="false" aria-controls="demo-insights-content">
+                    <h3>Key Demographic Shifts</h3>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="demo-insights-content">
+                    <div class="section-inner">
+                        <div class="insights-box">
+                            <ul>
+                                <li><strong>Aging Audience:</strong> 18-34 dropped from 28% to 19% (-32% decline) while 55+ grew from 35% to 44% (+26%)</li>
+                                <li><strong>Gender Balance Improved:</strong> Female viewership grew from 38% (2014) to 42% (2024) — positive trend</li>
+                                <li><strong>Regional Concentration:</strong> Toronto/Montreal account for 55% of total viewership (down from 60% in 2014)</li>
+                                <li><strong>Advertiser Problem:</strong> Advertisers pay premium for 18-49 demo, but NHL audience skews older and less affluent</li>
+                                <li><strong>Generational Challenge:</strong> Young fans consume NHL via highlights (TikTok, Instagram) not full games — harder to monetize</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="data-table-section">
-                <h3 style="margin-bottom: 12px;">Demographic Breakdown (2024)</h3>
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Demographic</th>
-                            <th>2014</th>
-                            <th>2024</th>
-                            <th>Change</th>
-                            <th>Advertiser Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Age 18-34</strong></td>
-                            <td>28%</td>
-                            <td>19%</td>
-                            <td style="color: var(--color-danger)">-32%</td>
-                            <td>High value (CPM $70+)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Age 35-54</strong></td>
-                            <td>37%</td>
-                            <td>37%</td>
-                            <td>Stable</td>
-                            <td>Medium value (CPM $55)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Age 55+</strong></td>
-                            <td>35%</td>
-                            <td>44%</td>
-                            <td style="color: var(--color-danger)">+26%</td>
-                            <td>Low value (CPM $40)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Female Viewers</strong></td>
-                            <td>38%</td>
-                            <td>42%</td>
-                            <td style="color: var(--color-success)">+11%</td>
-                            <td>High value (broader appeal)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Toronto/Montreal</strong></td>
-                            <td>60%</td>
-                            <td>55%</td>
-                            <td>-8%</td>
-                            <td>High value (premium markets)</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- Section: Demographics Data Table -->
+            <div class="section">
+                <div class="section-header" onclick="toggleSection('demo-data')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('demo-data');}" tabindex="0" role="button" aria-expanded="false" aria-controls="demo-data-content">
+                    <h3>Demographic Breakdown</h3>
+                    <span class="toggle-icon" aria-hidden="true">▼</span>
+                </div>
+                <div class="section-content" id="demo-data-content">
+                    <div class="section-inner">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Demographic</th>
+                                    <th>2014</th>
+                                    <th>2024</th>
+                                    <th>Change</th>
+                                    <th>Advertiser Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Age 18-34</strong></td>
+                                    <td>28%</td>
+                                    <td>19%</td>
+                                    <td style="color: var(--color-danger)">-32%</td>
+                                    <td>High value (CPM $70+)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Age 35-54</strong></td>
+                                    <td>37%</td>
+                                    <td>37%</td>
+                                    <td>Stable</td>
+                                    <td>Medium value (CPM $55)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Age 55+</strong></td>
+                                    <td>35%</td>
+                                    <td>44%</td>
+                                    <td style="color: var(--color-danger)">+26%</td>
+                                    <td>Low value (CPM $40)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Female Viewers</strong></td>
+                                    <td>38%</td>
+                                    <td>42%</td>
+                                    <td style="color: var(--color-success)">+11%</td>
+                                    <td>High value (broader appeal)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Toronto/Montreal</strong></td>
+                                    <td>60%</td>
+                                    <td>55%</td>
+                                    <td>-8%</td>
+                                    <td>High value (premium markets)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -797,6 +951,18 @@
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
         });
+
+        // Toggle section function
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
+        }
     </script>
 </body>
 </html>

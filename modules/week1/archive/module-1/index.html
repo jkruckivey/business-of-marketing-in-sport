@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Live Content & Media Rights - Business of Sports Marketing</title>
+    <link rel="stylesheet" href="../../../assets/css/main.css">
+    <style>
+        /* Module-specific styles */
+        .module-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: var(--space-12) 0;
+            text-align: center;
+        }
+        
+        .breadcrumb {
+            background: var(--surface);
+            padding: var(--space-4) 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .breadcrumb nav {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            font-size: var(--font-size-sm);
+        }
+        
+        .breadcrumb a {
+            color: var(--primary-color);
+        }
+        
+        .learning-path {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+            margin: var(--space-8) 0;
+        }
+        
+        .path-step {
+            background: var(--surface);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-6);
+            border-left: 4px solid var(--secondary-color);
+            position: relative;
+        }
+        
+        .path-step.active {
+            background: var(--primary-color);
+            color: white;
+            border-left-color: var(--accent-color);
+        }
+        
+        .path-step h4 {
+            margin-bottom: var(--space-3);
+            font-size: var(--font-size-lg);
+        }
+        
+        .path-step.active h4 {
+            color: white;
+        }
+        
+        .executive-spotlight {
+            background: var(--surface);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-8);
+            margin: var(--space-8) 0;
+            border: 2px solid var(--border);
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-6);
+            margin: var(--space-8) 0;
+        }
+        
+        .resource-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-6);
+            transition: border-color 0.2s ease;
+        }
+        
+        .resource-card:hover {
+            border-color: var(--secondary-color);
+        }
+        
+        .resource-type {
+            background: var(--primary-color);
+            color: white;
+            padding: var(--space-1) var(--space-3);
+            border-radius: var(--border-radius);
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: var(--space-3);
+        }
+        
+        .accessibility-note {
+            background: #f0f9ff;
+            border: 1px solid #0284c7;
+            border-radius: var(--border-radius);
+            padding: var(--space-4);
+            margin: var(--space-6) 0;
+            font-size: var(--font-size-sm);
+        }
+        
+        .engagement-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-4);
+            margin: var(--space-6) 0;
+        }
+        
+        .engagement-option {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: var(--border-radius);
+            padding: var(--space-4);
+            text-align: center;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+        
+        .engagement-option:hover {
+            border-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .engagement-option.selected {
+            border-color: var(--primary-color);
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Focus styles for accessibility */
+        .engagement-option:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        a:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        .module-link:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* Skip navigation styles */
+        .skip-nav {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 0 0 4px 0;
+            z-index: 100;
+            font-weight: 600;
+        }
+
+        .skip-nav:focus {
+            top: 0;
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* Focus-visible for keyboard-only focus indicators */
+        .engagement-option:focus-visible,
+        a:focus-visible,
+        .module-link:focus-visible {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* Visually hidden text for screen readers */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <a href="../../../index.html">Course Home</a>
+                <span aria-hidden="true">→</span>
+                <span aria-current="page">Module 1: Live Content & Media Rights</span>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Module Hero -->
+    <section class="module-hero">
+        <div class="container">
+            <h1>Module 1: Live Content & Media Rights</h1>
+            <p class="course-subtitle">Understanding the Foundation of Sports Media Business</p>
+            <div class="learning-path">
+                <div class="path-step active">
+                    <h4>1. Overview & Preparation</h4>
+                    <p>Current section - review objectives and prepare for learning</p>
+                </div>
+                <div class="path-step">
+                    <h4>2. Pre-Reading & Resources</h4>
+                    <p>Essential background materials and industry context</p>
+                </div>
+                <div class="path-step">
+                    <h4>3. Executive Video</h4>
+                    <p>Recorded discussion with Bell Media / TSN / RDS executive</p>
+                </div>
+                <div class="path-step">
+                    <h4>4. Reflection Memo (20% of Grade)</h4>
+                    <p>1-page individual reflection on NHL Canucks case insights</p>
+                    <p style="font-size: 0.875rem; margin-top: 0.5rem;"><a href="week1-reflection-memo-rubric-student.md" target="_blank" style="color: #c5b783; text-decoration: underline;">📋 View Assessment Rubric</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main id="main-content" class="container">
+        <!-- Module Overview -->
+        <section class="module-overview">
+            <h2>Module Learning Outcomes</h2>
+            <p>By the end of this module, you will be able to:</p>
+            
+            <div class="outcomes-grid">
+                <div class="outcome-card">
+                    <div class="outcome-number">1</div>
+                    <h4>Analyze Regional Sports Media Rights</h4>
+                    <p>Evaluate how regional sports properties like the NHL Canucks determine media rights value and negotiate distribution partnerships in the Canadian market.</p>
+                </div>
+
+                <div class="outcome-card">
+                    <div class="outcome-number">2</div>
+                    <h4>Assess Regional Brand Strategy</h4>
+                    <p>Examine how regional sports teams balance local fan engagement with broader media visibility through content and distribution decisions.</p>
+                </div>
+
+                <div class="outcome-card">
+                    <div class="outcome-number">3</div>
+                    <h4>Evaluate Distribution Channel Trade-offs</h4>
+                    <p>Compare regional broadcasting partnerships with national platforms and assess the strategic implications for team marketing.</p>
+                </div>
+
+                <div class="outcome-card">
+                    <div class="outcome-number">4</div>
+                    <h4>Apply Media Strategy Insights</h4>
+                    <p>Use case analysis and executive insights to develop strategic recommendations for regional sports properties.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Case Study Focus -->
+        <section class="executive-spotlight">
+            <h2>Week 1 Case Study</h2>
+            <h3>NHL Vancouver Canucks: Competing on Revenue Sharing (W14149)</h3>
+            <p>Examine how the Vancouver Canucks navigated media rights, regional broadcasting partnerships, and fan engagement in a changing media landscape.</p>
+            <div class="case-details">
+                <h4>Case Context:</h4>
+                <ul>
+                    <li><strong>Regional Sports Brand Strategy:</strong> How the Canucks position themselves in the Canadian market</li>
+                    <li><strong>Media Rights Negotiations:</strong> Distribution partnerships and revenue sharing models</li>
+                    <li><strong>Local vs. National Visibility:</strong> Balancing regional identity with broader reach</li>
+                    <li><strong>Fan Engagement:</strong> Connecting with audiences across traditional and digital platforms</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Executive Spotlight -->
+        <section class="executive-spotlight">
+            <h2>Executive Leadership Session</h2>
+            <h3>Bell Media / TSN / RDS Executive</h3>
+            <p><strong>Connecting Industry Practice to Case Study:</strong> Following your analysis of the Vancouver Canucks case, hear directly from a senior executive at Bell Media about:</p>
+            <ul>
+                <li><strong>Regional Sports Properties:</strong> How TSN approaches regional NHL team partnerships</li>
+                <li><strong>Media Rights Strategy:</strong> Valuation and negotiation approaches for team-broadcaster relationships</li>
+                <li><strong>Content Distribution:</strong> Balancing regional broadcast with national platforms</li>
+                <li><strong>Fan Engagement:</strong> Using media partnerships to build and retain audiences</li>
+            </ul>
+            <p><strong>Preparation:</strong> Come ready to discuss your Canucks case insights and ask questions about applying these concepts in practice.</p>
+            
+            <div class="accessibility-note">
+                <strong>Accessibility Note:</strong> All live sessions include real-time captions, and recordings with full transcripts will be available within 24 hours. Session materials are provided in multiple formats (audio, visual, text) to support diverse learning preferences.
+            </div>
+        </section>
+        
+        <!-- Learning Resources -->
+        <section class="learning-resources">
+            <h2>Learning Resources & Materials</h2>
+            <p class="modules-intro">Access multiple types of resources to support different learning styles and preferences. Choose the combination that works best for you.</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <span class="resource-type" aria-label="Resource type: Essential Reading">Essential Reading</span>
+                    <h3>Case Study & Context Materials</h3>
+                    <ul>
+                        <li><strong>NHL Vancouver Canucks Case Study (W14149)</strong> - Primary (45 min)</li>
+                        <li>Canadian Regional Sports Broadcasting Overview</li>
+                        <li>NHL Media Rights Landscape 2024-25</li>
+                        <li>Supplemental: Global Sports Media Rights Report (Optional)</li>
+                    </ul>
+                    <p><strong>Estimated Time:</strong> 60-75 minutes (case + context)</p>
+                </div>
+                
+                <div class="resource-card">
+                    <span class="resource-type" aria-label="Resource type: Video Content">Video Content</span>
+                    <h3>Visual Learning Materials</h3>
+                    <ul>
+                        <li>Media Rights Negotiation Process (12 min)</li>
+                        <li>TSN Programming Strategy Case Study (8 min)</li>
+                        <li>Digital Platform Integration (10 min)</li>
+                    </ul>
+                    <p><strong>Features:</strong> Closed captions, transcript, 1.5x speed option</p>
+                </div>
+                
+                <div class="resource-card">
+                    <span class="resource-type" aria-label="Resource type: Interactive">Interactive</span>
+                    <h3>Hands-On Activities</h3>
+                    <ul>
+                        <li>Media Rights Valuation Calculator</li>
+                        <li>Audience Analytics Dashboard</li>
+                        <li>Content Strategy Planning Tool</li>
+                    </ul>
+                    <p><strong>Purpose:</strong> Practice applying concepts with real data</p>
+                </div>
+                
+                <div class="resource-card">
+                    <span class="resource-type" aria-label="Resource type: Optional">Optional</span>
+                    <h3>Extension Materials</h3>
+                    <ul>
+                        <li>Academic Research Papers</li>
+                        <li>International Case Studies</li>
+                        <li>Podcast Episodes with Industry Leaders</li>
+                    </ul>
+                    <p><strong>For:</strong> Students wanting deeper exploration</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assessment Requirements -->
+        <section class="executive-spotlight">
+            <h2>Week 1 Assessment: Individual Reflection Memo</h2>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>Format & Length</h3>
+                    <ul>
+                        <li><strong>Length:</strong> 1 page (single-spaced, 11-12pt font)</li>
+                        <li><strong>Format:</strong> Professional business memo</li>
+                        <li><strong>Grading Weight:</strong> 20% of final course grade</li>
+                    </ul>
+                </div>
+                <div class="overview-card">
+                    <h3>Content Focus</h3>
+                    <ul>
+                        <li>Key insights from NHL Canucks case on regional sports media strategy</li>
+                        <li>Application to Bell Media/TSN executive session learnings</li>
+                        <li>1-2 strategic recommendations for regional sports properties</li>
+                    </ul>
+                </div>
+            </div>
+            <p><strong>Note:</strong> This is the first of your individual reflection assignments. Detailed memo guidelines and rubric will be provided in the assessment section.</p>
+        </section>
+
+        <!-- Engagement Options -->
+        <section class="engagement-section">
+            <h2 id="engagement-heading">How Would You Like to Engage?</h2>
+            <p>Choose your preferred way to participate in this module. You can change your selection at any time.</p>
+            
+            <div class="engagement-options" aria-labelledby="engagement-heading" role="group">
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false" aria-label="Select Visual Learner preference: Focus on infographics, charts, and video content">
+                    <h4>Visual Learner</h4>
+                    <p>Focus on infographics, charts, and video content</p>
+                </div>
+
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false" aria-label="Select Audio Learner preference: Emphasize podcasts, audio summaries, and discussions">
+                    <h4>Audio Learner</h4>
+                    <p>Emphasize podcasts, audio summaries, and discussions</p>
+                </div>
+
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false" aria-label="Select Interactive Learner preference: Hands-on tools, simulations, and collaborative activities">
+                    <h4>Interactive Learner</h4>
+                    <p>Hands-on tools, simulations, and collaborative activities</p>
+                </div>
+
+                <div class="engagement-option" tabindex="0" role="button" aria-pressed="false" aria-label="Select Reading and Research preference: Text-based materials, case studies, and written analysis">
+                    <h4>Reading & Research</h4>
+                    <p>Text-based materials, case studies, and written analysis</p>
+                </div>
+            </div>
+
+            <div role="status" aria-live="polite" aria-atomic="true" class="sr-only" id="preference-announcement"></div>
+            
+            <div class="accessibility-note">
+                <strong>Universal Design Note:</strong> All content is available in multiple formats regardless of your selection. This preference simply helps us highlight the most relevant materials for your learning style.
+            </div>
+        </section>
+        
+        <!-- Key Questions -->
+        <section class="key-questions">
+            <h2>Key Questions to Consider</h2>
+            <p>As you work through this module, keep these strategic questions in mind:</p>
+            
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <h3>Strategic</h3>
+                    <ul>
+                        <li>How do media companies determine the value of sports rights?</li>
+                        <li>What factors influence the success of sports programming?</li>
+                        <li>How is digital transformation changing the media landscape?</li>
+                    </ul>
+                </div>
+                
+                <div class="overview-card">
+                    <h3>Practical</h3>
+                    <ul>
+                        <li>What metrics matter most for sports content performance?</li>
+                        <li>How do you balance traditional and digital distribution?</li>
+                        <li>What makes a sports media partnership successful?</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Next Steps -->
+        <section class="next-steps">
+            <h2>Ready to Begin?</h2>
+            <div class="assessment-grid">
+                <div class="assessment-card">
+                    <h3>Start with Pre-Reading</h3>
+                    <p>Begin with the essential background materials to prepare for the executive session.</p>
+                    <a href="resources/pre-reading.html" class="module-link">Access Pre-Reading Materials</a>
+                </div>
+                
+                <div class="assessment-card">
+                    <h3>Join the Discussion</h3>
+                    <p>Connect with classmates to discuss initial thoughts and questions about media rights.</p>
+                    <a href="#discussion" class="module-link">Join Module Discussion</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Module Support</h3>
+                    <ul>
+                        <li><a href="#help">Technical Help</a></li>
+                        <li><a href="#accessibility">Accessibility Options</a></li>
+                        <li><a href="#feedback">Module Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Learning Support</h3>
+                    <ul>
+                        <li><a href="#study-groups">Study Groups</a></li>
+                        <li><a href="#office-hours">Virtual Office Hours</a></li>
+                        <li><a href="#resources">Additional Resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Module Progress</h3>
+                    <p>Track your learning journey and connect concepts across all five modules.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../../../assets/js/main.js"></script>
+    <script>
+        // Interactive engagement options
+        document.querySelectorAll('.engagement-option').forEach(option => {
+            option.addEventListener('click', function() {
+                // Remove selected class from all options
+                document.querySelectorAll('.engagement-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                    opt.setAttribute('aria-pressed', 'false');
+                });
+                
+                // Add selected class to clicked option
+                this.classList.add('selected');
+                this.setAttribute('aria-pressed', 'true');
+                
+                // Store preference (could be saved to localStorage or user profile)
+                const preference = this.querySelector('h4').textContent;
+                console.log('Learning preference selected:', preference);
+
+                // Announce preference to screen readers
+                const announcement = document.getElementById('preference-announcement');
+                announcement.textContent = `${preference} preference selected. Content will be personalized to your learning style.`;
+            });
+            
+            // Keyboard support
+            option.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    this.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html><!-- Test comment for GitHub Actions -->

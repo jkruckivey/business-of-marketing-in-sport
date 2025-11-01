@@ -57,12 +57,62 @@
             margin-bottom: 2rem;
         }
 
-        .inputs {
-            background: var(--color-neutral-50);
+        .section {
+            margin-bottom: 1.5rem;
             border: 1px solid var(--color-neutral-200);
-            border-radius: 6px;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 4000px;
+        }
+
+        .section-inner {
             padding: 1.5rem;
-            margin-bottom: 2rem;
+        }
+
+        .inputs {
+            margin-bottom: 0;
         }
 
         .input-grid {
@@ -152,22 +202,11 @@
             text-align: right;
         }
 
-        .section {
-            background: var(--color-neutral-50);
-            border: 1px solid var(--color-neutral-200);
-            border-radius: 6px;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
+        .content-section {
+            margin-bottom: 0;
         }
 
-        .section h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--color-neutral-900);
-            margin-bottom: 1rem;
-        }
-
-        .section h3 {
+        .content-section h3 {
             font-size: 1rem;
             font-weight: 600;
             color: var(--color-neutral-800);
@@ -175,7 +214,7 @@
             margin-bottom: 0.75rem;
         }
 
-        .section h3:first-of-type {
+        .content-section h3:first-of-type {
             margin-top: 0;
         }
 
@@ -377,7 +416,13 @@
         <h1>Activation Plan Template Builder</h1>
         <p class="subtitle">Answer guided questions to build your sponsorship activation plan (question-based scaffolding)</p>
 
-        <div class="inputs">
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('basic-config')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('basic-config');}" tabindex="0" role="button" aria-expanded="true" aria-controls="basic-config-content">
+                <h2>Basic Configuration</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="basic-config-content">
+                <div class="section-inner inputs">
             <div class="input-grid">
                 <div class="input-group">
                     <label for="brand">Brand</label>
@@ -419,26 +464,31 @@
             <p class="helper-text" style="margin-top: 0.5rem;">
                 <strong>Export Options:</strong> Copy to paste into Google Docs, or download as Text/PDF for your records
             </p>
-        </div>
-
-        <div class="section" id="strategySection">
-            <h2>Part 1: Strategic Foundation</h2>
-            <div id="strategyContent">
-                <!-- Populated by JavaScript -->
+                </div>
             </div>
         </div>
 
-        <div class="section" id="budgetSection">
-            <h2>Part 2: Budget Allocation</h2>
-            <div id="budgetContent">
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('strategic')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('strategic');}" tabindex="0" role="button" aria-expanded="false" aria-controls="strategic-content">
+                <h2>Strategic Foundation</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="strategic-content">
+                <div class="section-inner content-section" id="strategyContent">
                 <!-- Populated by JavaScript -->
+                </div>
             </div>
         </div>
 
-        <div class="section" id="roiSection">
-            <h2>Part 3: ROI Projections</h2>
-            <div id="roiContent">
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('budget')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('budget');}" tabindex="0" role="button" aria-expanded="false" aria-controls="budget-content">
+                <h2>Budget & ROI</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="budget-content">
+                <div class="section-inner content-section" id="budgetContent">
                 <!-- Populated by JavaScript -->
+                </div>
             </div>
         </div>
     </div>
@@ -586,13 +636,10 @@
             `;
             document.getElementById('strategyContent').innerHTML = strategyHTML;
 
-            // Generate Budget Section with guidance
+            // Generate Budget Section with guidance (includes both budget AND ROI)
             const budgetHTML = generateBudgetTable(profile.budgetMix, budget);
-            document.getElementById('budgetContent').innerHTML = budgetHTML;
-
-            // Generate ROI Section with scaffolding questions
             const roiHTML = generateROITable(profile, budget);
-            document.getElementById('roiContent').innerHTML = roiHTML;
+            document.getElementById('budgetContent').innerHTML = budgetHTML + roiHTML;
         }
 
         function getBettingBehavior(operator) {
@@ -674,6 +721,7 @@
             const avgPurchase = profile.category === 'Premium' ? 250 : profile.category === 'Sports Performance' ? 150 : 100;
 
             let tableHTML = `
+                <h3 style="margin-top: 2rem; font-size: 1.1rem;">ROI Projections</h3>
                 <div class="guidance-box">
                     <strong>ROI Calculation Framework</strong><br>
                     Use course widgets (Sponsorship Valuation Calculator, Customer Economics Calculator) to calculate these metrics based on YOUR activation strategy.
@@ -889,6 +937,17 @@ Next Steps:
 
         function exportPDF() {
             alert('PDF Export Coming Soon!\n\nFor now, please:\n1. Click "Copy to Clipboard"\n2. Paste into Google Docs\n3. Add your budget and ROI details\n4. File → Download → PDF\n\nThis creates a professional PDF ready for submission.');
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
 
         // Event listeners

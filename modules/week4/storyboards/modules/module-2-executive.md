@@ -7,13 +7,14 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 1 | Type directly | Sets context, connects narrative |
-| 2 | **ⓘ Infobox (Callout)** ⬤ Required | Context about videos + viewing instructions | Type directly | Sets viewing expectations |
-| 3 | **▶ Video 1** ⬤ Required | Athlete Revenue Streams Overview (2 min) | Upload MP4 + VTT | Introduction to 5 revenue streams |
-| 4 | **▶ Video 2** ⬤ Required | Executive Interview: Sports Agent (10-12 min) | Upload MP4 + VTT | Athlete representation strategy |
-| 5 | **▶ Video 3** ⬤ Required | Executive Interview: Don Rea, PGA Tour (10-12 min) | Upload MP4 + VTT | Golf's global expansion & emerging markets |
-| 6 | **▶ Video 4** ◐ Recommended | Executive Interview: Women's Sports Expert (8-10 min) | Upload MP4 + VTT | Investment thesis for women's sports |
-| 7 | **▤ Details** ○ Optional | Video transcripts | Type directly | Accordion for text versions |
-| 8 | **◈ AI Chat Widget** ○ Optional | "Ask questions about athlete brands" | Configure in Uplimit | Named: "Athlete Brand Strategy Q&A" |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
+| 3 | **ⓘ Infobox (Callout)** ⬤ Required | Context about videos + viewing instructions | Type directly | Sets viewing expectations |
+| 4 | **▶ Video 1** ⬤ Required | Athlete Revenue Streams Overview (2 min) | Upload MP4 + VTT | Introduction to 5 revenue streams |
+| 5 | **▶ Video 2** ⬤ Required | Executive Interview: Sports Agent (10-12 min) | Upload MP4 + VTT | Athlete representation strategy |
+| 6 | **▶ Video 3** ⬤ Required | Executive Interview: Don Rea, PGA Tour (10-12 min) | Upload MP4 + VTT | Golf's global expansion & emerging markets |
+| 7 | **▶ Video 4** ◐ Recommended | Executive Interview: Women's Sports Expert (8-10 min) | Upload MP4 + VTT | Investment thesis for women's sports |
+| 8 | **▤ Details** ○ Optional | Video transcripts | Type directly | Accordion for text versions |
+| 9 | **◈ AI Chat Widget** ○ Optional | "Ask questions about athlete brands" | Configure in Uplimit | Named: "Athlete Brand Strategy Q&A" |
 
 ---
 
@@ -37,7 +38,33 @@ Their insights will ground the theory you're about to explore in Module 3 with r
 
 ---
 
-## Element 2: Infobox Content
+## Element 2: Learning Outcomes Widget
+
+**Uplimit Implementation:**
+1. Select **iFrame Widget** element
+2. Copy embed code below:
+
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-2.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Module 2 Learning Outcomes"
+  aria-label="Visual map showing which learning outcomes are practiced in Module 2"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows which Week 4 MLOs are practiced in this module (executive perspectives)
+- Visual badge indicating Module 2: Executive Perspectives
+- Interactive: Click to see how practitioner insights connect to frameworks
+
+---
+
+## Element 3: Infobox Content
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -52,7 +79,7 @@ This module features four videos: one short concept video (2 minutes) introducin
 
 ---
 
-## Element 3: Video 1 - Athlete Revenue Streams Overview
+## Element 4: Video 1 - Athlete Revenue Streams Overview
 
 **File:** `week4-video1-athlete-revenue-streams.mp4`
 **Duration:** 2 minutes
@@ -116,7 +143,7 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
-## Element 4: Video 2 - Sports Agent Interview
+## Element 5: Video 2 - Sports Agent Interview
 
 **File:** `week4-video2-sports-agent-interview.mp4`
 **Duration:** 10-12 minutes
@@ -150,7 +177,7 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
-## Element 5: Video 3 - Don Rea, PGA Tour Interview
+## Element 6: Video 3 - Don Rea, PGA Tour Interview
 
 **File:** `week4-video3-don-rea-pga-interview.mp4`
 **Duration:** 10-12 minutes
@@ -184,7 +211,7 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
-## Element 6: Video 4 - Women's Sports Investment Expert
+## Element 7: Video 4 - Women's Sports Investment Expert
 
 **File:** `week4-video4-womens-sports-expert.mp4`
 **Duration:** 8-10 minutes
@@ -218,7 +245,7 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
-## Element 7: Details Accordion - Video Transcripts
+## Element 8: Details Accordion - Video Transcripts
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -247,7 +274,7 @@ reading to watching videos.
 
 ---
 
-## Element 8: AI Chat Widget Configuration
+## Element 9: AI Chat Widget Configuration
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element
@@ -274,6 +301,30 @@ Hi! I can help explain concepts from the athlete brand and emerging sports video
 ```
 
 **Show System Prompt to User:** No
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 2 Supports Your Final Strategic Vision:**
+
+Module 2 delivered practitioner insights from sports agents, PGA executives, and women's sports experts. This real-world perspective grounds your Week 5 athlete partnership strategy in operational reality.
+
+**What You Learned:**
+- Sports agents structure deals to maximize athlete equity, not just endorsement fees
+- Global expansion (PGA's model) requires understanding local markets, cultural dynamics, and infrastructure gaps
+- Women's sports experts see 300% faster growth than men's sports despite 1/10th the valuation—massive arbitrage opportunity
+- Athlete brand building requires 10-year thinking, not quarterly thinking
+
+**How to Apply This to Your Final Project:**
+
+When you design your 5-year strategic vision in Week 5, reference Module 2's executive frameworks:
+
+- **Athlete Partnership Strategy:** If your property involves athlete deals, cite the sports agent framework. Example: "Following Week 4's agent model, we offer athletes equity stakes (5-10% of merchandise revenue) vs. flat endorsement fees, aligning long-term incentives."
+- **Global Expansion:** If your property has international ambitions, apply PGA's expansion framework from Module 2. Don Rea taught you to assess market readiness, not just market size.
+- **Women's Sports Positioning:** If your property targets women's sports, reference Module 2's expert insights to justify growth projections and valuation premiums.
+
+**Real-World Application:** The executives you heard from evaluate athlete partnerships and market opportunities daily. Your Week 5 capstone will undergo similar scrutiny—Module 2 taught you how practitioners defend athlete brand strategies.
 
 ---
 

@@ -4,11 +4,17 @@
 
 **Uplimit Structure:** First module in Week 5
 
+**Content Priority Badges:**
+- ⬤ **Required** - Core content essential for learning outcomes and assessments
+- ◐ **Recommended** - Important content that enhances understanding and engagement
+- ○ **Optional** - Supplemental content for deeper exploration (progressive disclosure)
+
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **ⓘ Infobox (Callout)** ⬜ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
-| 2 | **▬ Text** ⬜ Required | Week 5 introduction (3 paragraphs) | Embedded below | Sets context for legacy, culture & future |
+| 1 | **ⓘ Infobox (Callout)** ⬤ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
+| 2 | **▬ Text** ⬤ Required | Week 5 introduction (3 paragraphs) | Embedded below | Sets context for legacy, culture & future |
 | 3 | **◫ Tiles** ◐ Recommended | 4 strategic focus areas | Type directly in Uplimit | Blue variant, one tile per focus area |
+| 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-1.html` | Shows how module outcomes connect to course goals |
 
 ### Element 1: Infobox Content
 
@@ -92,5 +98,30 @@ difficult strategic choices, managed stakeholder expectations, and positioned he
 for sustainable growth. Their insights will frame everything you learn this week.
 
 Ready to hear from leaders who balance tradition with transformation? Let's go!
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 1 Supports Your Final Strategic Vision:**
+
+Module 1 established the four learning outcomes that define Week 5's capstone challenge. This clarity of purpose directly supports your Strategic Vision Memo—the culminating deliverable that integrates all five weeks of learning.
+
+**What You Learned:**
+- Heritage properties face unique strategic tension: tradition creates competitive advantage but can also constrain innovation
+- The four dimensions of heritage strategy: heritage assets, tradition vs. innovation balance, emerging trends, and strategic vision development
+- Successful sports properties don't choose between legacy OR growth—they orchestrate both
+- Week 5 synthesizes all previous weeks: revenue streams (Week 1), media strategy (Week 2), sponsorship ROI (Week 3), and athlete branding (Week 4) all apply within heritage context
+
+**How to Apply This to Your Final Project:**
+
+When you craft your Strategic Vision Memo in Module 6, Module 1's frameworks provide your strategic foundation:
+
+- **Heritage as Asset Section:** Reference MLO 5.1 to explain how your property's history creates competitive advantage. Cite specific heritage elements (championships, legendary players, iconic venue, cultural significance) and quantify their economic value through fan loyalty metrics.
+- **Innovation Tension Section:** Acknowledge the strategic tension from MLO 5.2. Your vision must explicitly address: "How will we innovate without abandoning what makes us authentic?" Show you understand this isn't a compromise—it's strategic integration.
+- **Future Trends Analysis:** Apply MLO 5.3 by forecasting which emerging trends (women's sports, AI/VR, sustainability, new demographics) create opportunities vs. threats for YOUR specific property. Don't just list trends—evaluate their strategic impact.
+- **5-Year Roadmap:** MLO 5.4 requires you to synthesize everything into an actionable plan. Your roadmap should integrate Weeks 1-5: revenue growth + media strategy + sponsorship activation + brand development + heritage preservation.
+
+**Real-World Application:** Your Strategic Vision Memo answers the same question every sports executive faces: "How do we honor the past while building the future?" Module 1 taught you that the most valuable answer acknowledges both forces and shows how they reinforce each other strategically.
 
 ---

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heritage Strategy Pre-Assessment - Legacy & Innovation Knowledge Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --color-neutral-50: #fafafa;
@@ -317,9 +320,15 @@
 
         .nav-buttons {
             display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
+            justify-content: flex-end;
+            margin-top: 40px;
             gap: 10px;
+        }
+
+        .submit-btn-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
         }
 
         .submit-btn, .next-btn {
@@ -916,7 +925,9 @@
                 </div>
                 <div class="question-text">${q.question}</div>
                 ${optionsHTML}
-                <button class="submit-btn" onclick="submitAnswer(${index})">Submit Answer</button>
+                <div class="submit-btn-container">
+                    <button class="submit-btn" onclick="submitAnswer(${index})">Submit Answer</button>
+                </div>
                 <div class="feedback">
                     <strong></strong>
                     <p></p>

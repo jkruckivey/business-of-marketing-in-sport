@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Charter Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: white;
+            color: #2d3748;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .section {
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .section-description {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .team-members {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .member-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .input-group label {
+            color: #1f2937;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            padding: 0.75rem;
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            color: #2d3748;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .input-group input:focus,
+        .input-group select:focus,
+        .input-group textarea:focus {
+            outline: none;
+            border-color: #2d3748;
+        }
+
+        .input-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .remove-btn {
+            padding: 0.5rem 1rem;
+            background: rgba(248, 113, 113, 0.2);
+            border: 2px solid #f87171;
+            border-radius: 6px;
+            color: #f87171;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .remove-btn:hover {
+            background: rgba(248, 113, 113, 0.3);
+        }
+
+        .add-btn {
+            padding: 0.75rem 1.5rem;
+            background: rgba(74, 222, 128, 0.2);
+            border: 2px solid #4ade80;
+            border-radius: 6px;
+            color: #4ade80;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+
+        .add-btn:hover {
+            background: rgba(74, 222, 128, 0.3);
+        }
+
+        .role-suggestions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .role-chip {
+            padding: 0.5rem 1rem;
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 20px;
+            color: #2d3748;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .role-chip:hover {
+            background: #f9fafb;
+        }
+
+        .guideline-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .guideline-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .guideline-icon {
+            font-size: 1.5rem;
+            min-width: 40px;
+        }
+
+        .guideline-content {
+            flex: 1;
+        }
+
+        .guideline-title {
+            color: #1f2937;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .guideline-text {
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+
+        .export-btn {
+            background: #2d3748;
+            color: white;
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: block;
+            margin: 2rem auto 0;
+        }
+
+        .export-btn:hover {
+            background: #1f2937;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(45, 55, 72, 0.3);
+        }
+
+        .export-btn:disabled {
+            background: #f9fafb;
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        @media (max-width: 768px) {
+            .member-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Collapsible Section Styles */
+        .collapsible-section {
+            margin-bottom: 1.5rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: #f9fafb;
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: #e5e7eb;
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: #6b7280;
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 3000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👥 Team Charter Builder</h1>
+        <p class="subtitle">Establish clear roles, communication norms, and expectations for your Anchor Project team</p>
+
+        <!-- Section 1: Team Information (Expanded by default) -->
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection('teaminfo')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('teaminfo');}" tabindex="0" role="button" aria-expanded="true" aria-controls="teaminfo-content">
+                <h2>1. Team Information</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="teaminfo-content">
+                <div class="section-inner">
+                    <p class="section-description">Start by giving your team a name and defining the core purpose of your collaboration.</p>
+
+                    <div class="input-group" style="margin-bottom: 1.5rem;">
+                        <label for="team-name">Team Name</label>
+                        <input type="text" id="team-name" placeholder="e.g., The Revenue Raptors, Pickleball Pioneers">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="team-purpose">Team Purpose & Goals</label>
+                        <textarea id="team-purpose" placeholder="What is your team's purpose for this project? What do you hope to achieve together?"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Team Roster & Roles (Expanded by default) -->
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection('roster')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('roster');}" tabindex="0" role="button" aria-expanded="true" aria-controls="roster-content">
+                <h2>2. Team Roster & Roles</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="roster-content">
+                <div class="section-inner">
+                    <p class="section-description">Identify each team member and their primary role. Clear roles prevent duplication and ensure accountability.</p>
+
+                    <div class="role-suggestions">
+                        <strong style="color: #c5b783; width: 100%; margin-bottom: 0.5rem;">Suggested Roles:</strong>
+                        <div class="role-chip">Project Lead</div>
+                        <div class="role-chip">Research Coordinator</div>
+                        <div class="role-chip">Financial Analyst</div>
+                        <div class="role-chip">Creative Director</div>
+                        <div class="role-chip">Presentation Designer</div>
+                        <div class="role-chip">Content Writer</div>
+                    </div>
+
+                    <div class="team-members" id="team-members">
+                        <!-- Member rows will be generated dynamically -->
+                    </div>
+
+                    <button class="add-btn" onclick="addMember()">+ Add Team Member</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Communication Norms (Collapsed by default) -->
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection('communication')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('communication');}" tabindex="0" role="button" aria-expanded="false" aria-controls="communication-content">
+                <h2>3. Communication Norms</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="communication-content">
+                <div class="section-inner">
+                    <p class="section-description">How will your team stay connected? Define primary channels, response expectations, and meeting frequency.</p>
+
+                    <div class="input-group" style="margin-bottom: 1.5rem;">
+                        <label for="comm-primary">Primary Communication Channel</label>
+                        <select id="comm-primary">
+                            <option value="">Select primary channel...</option>
+                            <option value="Slack">Slack</option>
+                            <option value="Microsoft Teams">Microsoft Teams</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="Discord">Discord</option>
+                            <option value="Email">Email</option>
+                            <option value="Text/SMS">Text/SMS</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group" style="margin-bottom: 1.5rem;">
+                        <label for="comm-response">Expected Response Time</label>
+                        <select id="comm-response">
+                            <option value="">Select response expectation...</option>
+                            <option value="Within 2 hours">Within 2 hours</option>
+                            <option value="Within 12 hours">Within 12 hours</option>
+                            <option value="Within 24 hours">Within 24 hours</option>
+                            <option value="Within 48 hours">Within 48 hours</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group" style="margin-bottom: 1.5rem;">
+                        <label for="meeting-frequency">Meeting Frequency</label>
+                        <input type="text" id="meeting-frequency" placeholder="e.g., Weekly on Tuesdays 7pm, Twice weekly via Zoom">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="meeting-platform">Meeting Platform</label>
+                        <select id="meeting-platform">
+                            <option value="">Select meeting platform...</option>
+                            <option value="Zoom">Zoom</option>
+                            <option value="Microsoft Teams">Microsoft Teams</option>
+                            <option value="Google Meet">Google Meet</option>
+                            <option value="In-person">In-person</option>
+                            <option value="Hybrid">Hybrid (mix of virtual and in-person)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Working Guidelines (Collapsed by default) -->
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection('guidelines')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('guidelines');}" tabindex="0" role="button" aria-expanded="false" aria-controls="guidelines-content">
+                <h2>4. Working Guidelines</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="guidelines-content">
+                <div class="section-inner">
+                    <p class="section-description">Establish shared expectations around deadlines, quality, and collaboration style.</p>
+
+                    <div class="guideline-list">
+                        <div class="guideline-item">
+                            <div class="guideline-icon">⏰</div>
+                            <div class="guideline-content">
+                                <div class="guideline-title">Deadlines & Timeliness</div>
+                                <div class="guideline-text">
+                                    <div class="input-group" style="margin-top: 0.5rem;">
+                                        <textarea id="deadline-norm" placeholder="e.g., Submit all work 24 hours before team deadline. If running late, notify team immediately." rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guideline-item">
+                            <div class="guideline-icon">✨</div>
+                            <div class="guideline-content">
+                                <div class="guideline-title">Quality Standards</div>
+                                <div class="guideline-text">
+                                    <div class="input-group" style="margin-top: 0.5rem;">
+                                        <textarea id="quality-norm" placeholder="e.g., All work reviewed by at least one other team member before submission. Drafts expected, not perfection." rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guideline-item">
+                            <div class="guideline-icon">🤝</div>
+                            <div class="guideline-content">
+                                <div class="guideline-title">Collaboration Style</div>
+                                <div class="guideline-text">
+                                    <div class="input-group" style="margin-top: 0.5rem;">
+                                        <textarea id="collab-norm" placeholder="e.g., Open feedback culture. Everyone's ideas welcomed. Decisions made by consensus." rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5: Conflict Resolution (Collapsed by default) -->
+        <div class="collapsible-section">
+            <div class="section-header" onclick="toggleSection('conflict')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('conflict');}" tabindex="0" role="button" aria-expanded="false" aria-controls="conflict-content">
+                <h2>5. Conflict Resolution</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="conflict-content">
+                <div class="section-inner">
+                    <p class="section-description">How will your team handle disagreements or challenges? Having a plan prevents escalation.</p>
+
+                    <div class="input-group">
+                        <label for="conflict-process">Conflict Resolution Process</label>
+                        <textarea id="conflict-process" placeholder="e.g., 1) Direct conversation between parties, 2) If unresolved, bring to full team discussion, 3) If still unresolved, request faculty mediation" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="export-btn" onclick="exportCharter()" id="export-btn">📄 Generate Team Charter</button>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
+        }
+        let memberCount = 0;
+
+        function addMember() {
+            memberCount++;
+            const container = document.getElementById('team-members');
+            const row = document.createElement('div');
+            row.className = 'member-row';
+            row.id = `member-${memberCount}`;
+
+            row.innerHTML = `
+                <div class="input-group">
+                    <label>Name</label>
+                    <input type="text" class="member-name" placeholder="Full name">
+                </div>
+                <div class="input-group">
+                    <label>Role</label>
+                    <input type="text" class="member-role" placeholder="e.g., Project Lead">
+                </div>
+                <button class="remove-btn" onclick="removeMember(${memberCount})">Remove</button>
+            `;
+
+            container.appendChild(row);
+        }
+
+        function removeMember(id) {
+            const member = document.getElementById(`member-${id}`);
+            if (member) {
+                member.remove();
+            }
+        }
+
+        function exportCharter() {
+            const teamName = document.getElementById('team-name').value;
+            const teamPurpose = document.getElementById('team-purpose').value;
+            const commPrimary = document.getElementById('comm-primary').value;
+            const commResponse = document.getElementById('comm-response').value;
+            const meetingFrequency = document.getElementById('meeting-frequency').value;
+            const meetingPlatform = document.getElementById('meeting-platform').value;
+            const deadlineNorm = document.getElementById('deadline-norm').value;
+            const qualityNorm = document.getElementById('quality-norm').value;
+            const collabNorm = document.getElementById('collab-norm').value;
+            const conflictProcess = document.getElementById('conflict-process').value;
+
+            // Collect team members
+            const memberElements = document.querySelectorAll('.member-row');
+            const members = Array.from(memberElements).map(row => {
+                const name = row.querySelector('.member-name')?.value || '';
+                const role = row.querySelector('.member-role')?.value || '';
+                return { name, role };
+            }).filter(m => m.name && m.role);
+
+            if (!teamName || members.length === 0) {
+                alert('Please provide at least a team name and one team member before generating the charter.');
+                return;
+            }
+
+            const content = `
+═══════════════════════════════════════════════════════════════
+TEAM CHARTER
+Business of Sports Marketing - Anchor Project
+═══════════════════════════════════════════════════════════════
+
+TEAM INFORMATION
+────────────────
+Team Name: ${teamName}
+
+Team Purpose & Goals:
+${teamPurpose || 'Not specified'}
+
+
+TEAM ROSTER & ROLES
+───────────────────
+${members.map((m, i) => `${i + 1}. ${m.name} - ${m.role}`).join('\n')}
+
+
+COMMUNICATION NORMS
+───────────────────
+Primary Channel: ${commPrimary || 'Not specified'}
+Response Time: ${commResponse || 'Not specified'}
+Meeting Frequency: ${meetingFrequency || 'Not specified'}
+Meeting Platform: ${meetingPlatform || 'Not specified'}
+
+
+WORKING GUIDELINES
+──────────────────
+Deadlines & Timeliness:
+${deadlineNorm || 'Not specified'}
+
+Quality Standards:
+${qualityNorm || 'Not specified'}
+
+Collaboration Style:
+${collabNorm || 'Not specified'}
+
+
+CONFLICT RESOLUTION
+───────────────────
+${conflictProcess || 'Not specified'}
+
+
+═══════════════════════════════════════════════════════════════
+TEAM AGREEMENT
+───────────────────────────────────────────────────────────────
+
+By proceeding with this charter, all team members agree to:
+
+✓ Respect the roles and responsibilities outlined above
+✓ Communicate proactively and transparently
+✓ Meet deadlines and notify the team if challenges arise
+✓ Contribute equally and support each other's success
+✓ Address conflicts constructively and professionally
+✓ Hold ourselves accountable to the quality standards we've set
+
+
+Signatures (Digital):
+${members.map(m => `___________________ (${m.name})`).join('\n')}
+
+
+Generated: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}
+Business of Sports Marketing - Anchor Project
+            `.trim();
+
+            // Create downloadable file
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `team-charter-${teamName.toLowerCase().replace(/\s+/g, '-')}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+
+            alert('✅ Team Charter generated! All team members should review, sign (digitally or physically), and keep a copy for reference throughout the project.');
+        }
+
+        // Initialize with 3 member slots
+        addMember();
+        addMember();
+        addMember();
+    </script>
+</body>
+</html>

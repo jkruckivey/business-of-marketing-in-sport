@@ -7,10 +7,11 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro from Module 3 | Type directly | Bridge from experimentation to application |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Post-Career Wealth Simulator** | Embed widget | Simulate retirement scenarios, see wealth preservation  |
-| 3 | **▬ Text** ◐ Recommended | Reflection prompt | Type directly | Process insights from simulation |
-| 4 | **⚙ iFrame Widget** ◐ Recommended | **Athlete Decision Tree** | Embed widget | Navigate endorsement vs. equity trade-offs |
-| 5 | **▤ Details** ○ Optional | Case study: Why 78% of NFL players go broke | Type directly | Real data on wealth preservation failure |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
+| 3 | **⚙ iFrame Widget** ⬤ Required | **Post-Career Wealth Simulator** | Embed widget | Simulate retirement scenarios, see wealth preservation  |
+| 4 | **▬ Text** ◐ Recommended | Reflection prompt | Type directly | Process insights from simulation |
+| 5 | **⚙ iFrame Widget** ◐ Recommended | **Athlete Decision Tree** | Embed widget | Navigate endorsement vs. equity trade-offs |
+| 6 | **▤ Details** ○ Optional | Case study: Why 78% of NFL players go broke | Type directly | Real data on wealth preservation failure |
 
 ---
 
@@ -36,7 +37,33 @@ This module features advanced simulations that force difficult decisions with in
 
 ---
 
-## Element 2: Post-Career Wealth Simulator Widget
+## Element 2: Learning Outcomes Widget
+
+**Uplimit Implementation:**
+1. Select **iFrame Widget** element
+2. Copy embed code below:
+
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-4.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Module 4 Learning Outcomes"
+  aria-label="Visual map showing which learning outcomes are practiced in Module 4"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows which Week 4 MLOs are practiced in this module (advanced simulations)
+- Visual badge indicating Module 4: Advanced Interactive Simulations
+- Interactive: Click to see how complex scenarios connect to frameworks
+
+---
+
+## Element 3: Post-Career Wealth Simulator Widget
 
 ### ⚙ Interactive Activity: Post-Career Wealth Simulator
 
@@ -115,7 +142,7 @@ This isn't just about making "good" decisions—it's about understanding the mat
 
 ---
 
-## Element 3: Reflection Prompt
+## Element 4: Reflection Prompt
 
 ```markdown
 ### What Does Wealth Preservation Require?
@@ -138,7 +165,7 @@ After simulating career paths:
 
 ---
 
-## Element 4: Athlete Decision Tree Widget
+## Element 5: Athlete Decision Tree Widget
 
 ### ⚙ Interactive Activity: Athlete Decision Tree
 
@@ -178,7 +205,7 @@ Unlike the calculators that show you the math, this tool walks you through the d
 
 ---
 
-## Element 5: Details - Case Study: Why Athletes Go Broke
+## Element 6: Details - Case Study: Why Athletes Go Broke
 
 ```markdown
 Title: Case Study: Why 78% of NFL Players Are Broke Within 3 Years of Retirement
@@ -261,3 +288,27 @@ You've built frameworks, experimented with simulations, and analyzed why athlete
 - Strategic decisions you would replicate—and what you'd change
 
 Ready to analyze a $500M brand strategy? Let's dive into Serena's case!
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 4 Supports Your Final Strategic Vision:**
+
+Module 4's interactive simulations gave you hands-on practice with athlete wealth-building strategies. This experience informs strategic planning for your Week 5 capstone.
+
+**What You Learned:**
+- Athlete Brand Calculator: Testing allocation scenarios (endorsements vs. owned businesses vs. investments) and seeing 20-year wealth outcomes
+- Lifestyle discipline: Athletes living on 30-40% of income vs. 80-90% see 10× wealth differences after retirement
+- Post-career value: Owned assets (businesses, investments) retain 70-90% of value post-retirement; endorsements drop to 10-20%
+- Magic Johnson case: $1.2B wealth from businesses built during career, not $18M playing salary
+
+**How to Apply This to Your Final Project:**
+
+When you craft your 5-year strategic vision in Week 5, Module 4's simulation insights inform financial planning:
+
+- **Investment Strategy:** Reference simulation learnings to justify capital allocation. Example: "Following Week 4's simulation results, we'll retain 40% of profits for reinvestment vs. distributing 100%, building enterprise value from $50M (Year 1) to $200M+ (Year 5)."
+- **Discipline Over Time:** Module 4 taught that lifestyle discipline compounds. Apply this to your property: prioritize long-term value creation over short-term revenue extraction.
+- **Post-Exit Value:** Your vision should explain what sustains value after the initial 5-year period. Module 4 showed assets that retain value vs. those that don't.
+
+**Real-World Application:** The simulations you completed mirror the financial models athlete advisors use. Your Week 5 capstone should demonstrate similar long-term thinking.

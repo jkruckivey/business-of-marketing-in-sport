@@ -6,12 +6,13 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 5 | Type directly | Sets context, connects narrative |
-| 2 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
-| 3 | **AI Roleplay** ◐ Recommended | Practice pitch to private equity | Configure in Uplimit | Rehearse your investment recommendation before writing memo |
-| 4 | **Text** ⬤ Required | PAIRR Feedback Instructions | Type directly | Peer and AI Review + Reflection workflow |
-| 5 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
-| 6 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
-| 7 | **AI Chat Widget** ○ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs assessed |
+| 3 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
+| 4 | **AI Roleplay** ◐ Recommended | Practice pitch to private equity | Configure in Uplimit | Rehearse your investment recommendation before writing memo |
+| 5 | **Text** ⬤ Required | PAIRR Feedback Instructions | Type directly | Peer and AI Review + Reflection workflow |
+| 6 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
+| 7 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
+| 8 | **AI Chat Widget** ○ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
 
 ### Element 1: Connecting Introduction Text
 **Copy this markdown directly into Uplimit:**
@@ -22,14 +23,44 @@ You've explored revenue streams through interactive discovery in Module 3, built
 Now it's time to demonstrate what you've learned. In this final assessment, you'll step into the role of a strategic advisor to a private equity firm considering a major investment in professional sports. They need to understand whether sports teams operate like other businesses—and if not, what makes them different. Your task: write a clear, evidence-based executive memo that synthesizes everything you've learned this week into actionable investment guidance.
 ```
 
-### Element 2: Infobox Content
+### Element 3: Infobox Content
+---
+
+## Element 2: Learning Outcomes Widget
+
+**Uplimit Implementation:**
+1. Select **iFrame Widget** element
+2. Copy embed code below:
+
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-6.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Module 6 Learning Outcomes"
+  aria-label="Visual map showing which learning outcomes are assessed in Module 6"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows which Week 1 MLOs are assessed in this module (all 4 MLOs)
+- Visual badge indicating Module 6: Assessment
+- Interactive: Click to see assessment criteria for each MLO
+
+---
+
 ```
 Title: ▪ Assessment: Revenue Ecosystem Reflection Memo
 
 You'll write a 1-page executive memo advising a private equity firm considering investing in a professional sports team. Your memo should explain the unique characteristics of sport's revenue model and identify 2-3 factors that would influence their investment decision. This assessment measures MLOs 1.1-1.4 and is worth 30 points. Use the rubric below to guide your work.
 ```
 
-### Element 3: AI Roleplay - Private Equity Practice Pitch
+---
+
+### Element 4: AI Roleplay - Private Equity Practice Pitch
 
 **🎮 Widget Purpose:** Formative practice where students rehearse their investment recommendation before writing the final memo, receiving AI feedback to strengthen their arguments and executive communication.
 
@@ -200,7 +231,9 @@ This roleplay is explicitly formative (not graded) to reduce anxiety and encoura
 
 ---
 
-### Element 4: PAIRR Feedback Instructions
+---
+
+### Element 5: PAIRR Feedback Instructions
 
 **Purpose:** Integrate Peer and AI Review + Reflection (PAIRR) methodology to develop critical evaluation skills, AI literacy, and improve writing quality through dual feedback sources.
 
@@ -414,7 +447,9 @@ Bonus Points: Up to 5 points for full PAIRR participation!
 
 ---
 
-### Element 5: Text Response Question Configuration
+---
+
+### Element 6: Text Response Question Configuration
 
 **Element Type:** Text Response (File upload enabled)
 
@@ -527,7 +562,9 @@ The learner uses professional memo format, writes clearly and concisely with app
 
 **Total Points:** 30
 
-### Element 6: Details - Rubric Examples Content
+---
+
+### Element 7: Details - Rubric Examples Content
 ```
 Title: Rubric Details & Example Excerpts
 
@@ -582,7 +619,9 @@ or deep supporting evidence."
 [Continue with remaining rubric criteria...]
 ```
 
-### Element 7: AI Chat Widget Configuration
+---
+
+### Element 8: AI Chat Widget Configuration
 - **Widget Name:** "Writing Assistant"
 - **System Prompt:** "You are a helpful writing coach for MBA students. Provide feedback and suggestions on business memo writing, structure, and analysis. Do NOT write content for students. Instead, ask questions to help them clarify their thinking. Focus on: clear executive communication, logical argumentation, evidence-based reasoning, and concise writing. If students ask you to write their memo, redirect them to develop their own analysis with your guidance."
 - **Welcome Message:** "Need help with your reflection memo? I can help you organize your thoughts, strengthen your arguments, or improve your business writing. What would you like to work on?"
@@ -601,6 +640,31 @@ or deep supporting evidence."
 - Word limit ensures concision (professional communication skill)
 - Measures all 4 MLOs (comprehensive assessment of Week 1 learning)
 - **Practice-before-performance model**: AI Roleplay (Element 2) lets students rehearse arguments and receive feedback before submitting final memo (Element 3)
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 6 Supports Your Final Strategic Vision:**
+
+Module 6's reflection memo is the direct precursor to your Week 5 capstone assessment. You've now practiced synthesizing complex frameworks into coherent strategic recommendations.
+
+**What You Learned:**
+- How to structure executive-level strategic analysis (intro → framework → analysis → recommendation → justification)
+- How to defend strategic choices with data and evidence (not opinions)
+- How to consider stakeholder perspectives (investors care about ROI, leagues care about competitive balance, fans care about experience)
+- How to write with clarity and precision for business audiences
+
+**How to Apply This to Your Final Project:**
+
+When you write your 5-year strategic vision in Week 5, Module 6's reflection memo becomes your template:
+
+- **Structure:** Your capstone will follow the same framework: situation analysis → strategic vision → implementation plan → risk management → expected outcomes. Module 6 taught you this structure.
+- **Evidence-Based Argumentation:** Just as you justified the McDavid investment with ecosystem cascade logic, your Week 5 vision must justify every major decision with frameworks from all 5 weeks.
+- **Executive Communication:** Your capstone audience is the Board of Directors—the same skeptical stakeholders you wrote for in Module 6. Use the same tone: confident but not arrogant, data-driven but not overwhelming, strategic but not vague.
+- **Peer + AI Review:** Apply the PAIRR methodology again in Week 5. Get AI feedback on your draft, then peer feedback, then refine. Module 6 proved this workflow works.
+
+**Real-World Application:** The reflection memo you wrote mirrors the strategy documents executives create for boards, investors, and league commissioners. Your Week 5 capstone will be 3-4 times longer, but the core skill—translating analysis into strategic recommendations—is identical.
 
 ---
 

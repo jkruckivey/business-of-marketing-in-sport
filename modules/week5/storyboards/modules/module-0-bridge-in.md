@@ -15,6 +15,7 @@
 | 3 | **ⓘ Infobox** ⬤ Required | The tradition vs. innovation problem statement | Type directly | Use **Callout** variant, urgent strategic challenge |
 | 4 | **⚙ iFrame Widget** ⬤ Required | **Heritage Strategy Pre-Assessment** (Challenges + 10-Question Quiz) | Embed widget | Combined challenge preview with self-diagnostic quiz |
 | 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
+| 6 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-0.html` | Shows how module outcomes connect to course goals |
 
 ---
 
@@ -298,7 +299,7 @@ Check the box: **"Provide feedback but do not grade"**
 
 Copy this into the **Instructions for Students** field:
 
-
+```markdown
 ### Your Role
 You are a **strategy consultant** hired by the Hockey Hall of Fame Board. The CEO has turned to you and asked: "Should we proceed with this $15M digital transformation? If so, how do we balance revenue growth with preserving our authenticity?"
 
@@ -334,7 +335,7 @@ Current situation:
 
 ### What Happens Next
 After this exercise, you'll take a pre-assessment quiz that helps you identify exactly what you need to learn. By the end of Week 5, you'll return to this question and answer it confidently using legacy vs. innovation frameworks.
-
+```
 
 ---
 
@@ -501,7 +502,34 @@ Your quiz results create a personalized learning path for this final week. Lower
 
 ---
 
-## Module 0 Complete - Transition to Module 1
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 0 Supports Your Final Strategic Vision:**
+
+Module 0 introduced heritage properties' unique strategic challenge: honoring tradition while embracing innovation. This tension is central to your Week 5 capstone—the culmination of all course learning.
+
+**What You Discovered:**
+- Heritage properties face legacy paradox: tradition creates brand value but can limit growth
+- Hockey Hall of Fame generates revenue from nostalgia (exhibits, archives) but must monetize future trends (digital, esports integration)
+- Strategic decisions require balancing stakeholder expectations: purists want preservation, investors want growth
+
+**How Module 0 Frames Your Capstone:**
+
+Module 0's diagnostic exercise prepares you for Week 5's **final strategic vision memo**—your course capstone. This 5-year vision synthesizes all frameworks from Weeks 1-5:
+
+- **Week 1 Ecosystem Thinking:** Your vision must show how revenue streams interconnect
+- **Week 2 Media Strategy:** Media rights (40-60%) demand sophisticated analysis
+- **Week 3 Sponsorship/Betting:** Activation strategies and ROI calculations
+- **Week 4 Athlete/Emerging Sports:** Partnership structures and growth opportunities
+- **Week 5 Heritage/Innovation:** Balancing tradition with future market trends
+
+Module 0's heritage challenge applies to ANY property in your vision: How do you preserve what makes your property valuable while adapting to changing markets?
+
+**Real-World Application:** Your capstone answers the ultimate strategic question: "How does this property create sustainable value over 5 years?" Module 0 taught you that answering requires balancing competing forces—tradition vs. innovation, stakeholders vs. markets, short-term revenue vs. long-term equity.
+
+---
+
+## Module Summary
 
 **What You've Accomplished:**
 You've been hooked by a real strategic dilemma—the Hockey Hall of Fame's tradition vs. innovation challenge—and you've taken your first steps toward solving it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your strategic thinking excels and where it needs refinement. That self-awareness isn't a weakness—it's your competitive advantage for this week.

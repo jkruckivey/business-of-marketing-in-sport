@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/business-of-marketing-in-sport/modules/week1/storyboards/modules/**)"
+      "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/business-of-marketing-in-sport/modules/week1/storyboards/modules/**)",
+      "Bash(done)",
+      "Bash(for mod in 2 3 4 5)",
+      "Bash(do echo '=== Week 2 Module $mod element table ===' head -20 ../week2/storyboards/modules/module-$mod-*.md)",
+      "Bash(do echo '=== Module $mod ===')",
+      "Bash(head:*)",
+      "Bash(bash:*)"
     ],
     "deny": [],
     "ask": []

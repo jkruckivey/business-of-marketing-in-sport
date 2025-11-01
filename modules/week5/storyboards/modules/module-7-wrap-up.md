@@ -14,6 +14,7 @@
 | 6 | **Details** | Continued Learning Resources (optional) | Type directly | ○ Optional | 5 min |
 | 7 | **Text** | Final Reflection: Your Role in Sports Business | Type directly | ⬀ Recommended | 3 min |
 | 8 | **Infobox (Callout)** | Course Completion & Next Steps | Type directly | ⬀ Recommended | 2 min |
+| 9 | **⚙ iFrame Widget** | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-7.html` | ⬀ Recommended | 3 min |
 
 ---
 
@@ -743,3 +744,94 @@ Final infobox mirrors opening structure (consistency aids retention). Message: Y
 - **Module 7: Wrap-Up & Synthesis ✅ (THIS FILE)**
 
 **Next Steps:** Build remaining interactive widgets for Week 5 and implement Week 3-4 storyboards using this same framework.
+
+---
+
+## 🎯 FINAL PROJECT - COURSE SYNTHESIS
+
+**How Week 5 Completes Your Strategic Vision:**
+
+Week 5 was your capstone—synthesizing 5 weeks of learning into a comprehensive 5-year strategic vision for a sports property. Every module this week contributed directly to your final assessment.
+
+**Week 5's Contribution to Your Capstone:**
+- **M0 (Bridge-In):** Identified heritage vs. innovation tension that applies to ANY property
+- **M1 (Learning Outcomes):** Established framework for comprehensive strategic analysis
+- **M2 (Executive Perspectives):** Delivered real-world practitioner insights on transformation and future trends
+- **M3 (Core Content):** Taught Legacy vs Innovation Matrix and future trend forecasting frameworks
+- **M4 (Interactive Widgets):** Provided hands-on practice balancing competing strategic priorities
+- **M5 (Hockey Hall of Fame Case):** Demonstrated how to analyze heritage properties facing disruption
+- **M6 (Strategic Vision Memo):** THE CAPSTONE—your 2,000-word synthesis of all course frameworks applied to YOUR chosen property
+- **M7 (Wrap-Up):** Consolidated learning and celebrated completion
+
+**Complete Course Integration (Weeks 1-5):**
+
+Your Strategic Vision Memo synthesized:
+- **Week 1:** 5-stream revenue model + ecosystem thinking (investments cascade across all streams)
+- **Week 2:** Media rights strategy (40-60% of revenue) with platform economics and valuation frameworks
+- **Week 3:** Sponsorship ROI + betting partnerships with activation strategies
+- **Week 4:** Athlete brand partnerships + women's/emerging sports investment thesis
+- **Week 5:** Heritage preservation + innovation adoption + future trend integration
+
+**What You've Mastered:**
+
+You can now:
+1. **Analyze revenue ecosystems** holistically (not just sum of parts)
+2. **Design media strategies** that balance linear, streaming, and DTC economics
+3. **Calculate sponsorship ROI** and structure activation plans that justify investments
+4. **Build athlete brand partnerships** that create equity, not just generate fees
+5. **Balance tradition with innovation** in heritage properties facing disruption
+6. **Synthesize complex frameworks** into coherent 5-year strategic visions
+7. **Communicate executive-level strategy** with evidence-based justifications
+
+**Real-World Application:**
+
+The Strategic Vision Memo you created mirrors the documents sports property executives submit to boards, investors, and league commissioners for approval of multi-million dollar strategic initiatives. You've developed the analytical frameworks, financial modeling skills, and executive communication capabilities that define sports business strategy professionals.
+
+**Congratulations on completing the Business of Sports Marketing course!**
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**Reflecting on Your Strategic Vision Journey:**
+
+Module 7 completes your 5-week journey from foundational concepts to capstone strategic vision. The Strategic Vision Memo you created in Module 6 represents the culmination of everything you've learned.
+
+**How Your Final Project Integrated All Five Weeks:**
+
+Your Strategic Vision Memo wasn't just a Week 5 deliverable—it synthesized frameworks and insights from every week of the course:
+
+- **Week 1 (Revenue Ecosystems):** Your memo's financial foundation came from understanding the five revenue streams, their interdependencies, and the ecosystem cascade effects. You analyzed YOUR property's revenue mix and projected growth across all streams.
+- **Week 2 (Media & Fan Engagement):** Your memo's media strategy section applied valuation frameworks from Week 2, comparing linear vs. streaming economics and forecasting how platform choices affect long-term revenue and fan engagement.
+- **Week 3 (Sponsorship & Betting):** Your memo's partnership strategy demonstrated ROI thinking from Week 3, showing sponsors what they receive for investment and positioning your property on betting integration (embrace, cautious approach, or avoid).
+- **Week 4 (Athletes & Emerging Sports):** Your memo's talent/brand strategy drew from Week 4's frameworks, addressing how athlete partnerships create value and whether emerging sports markets (women's sports, new demographics, international expansion) offer strategic opportunities.
+- **Week 5 (Legacy & Innovation):** Your memo's heritage positioning and future trends sections applied Week 5's Legacy vs Innovation Matrix and Future Trends Predictor, showing HOW you'll balance tradition with growth over 5 years.
+
+**What Your Final Project Reveals About Sports Business Strategy:**
+
+The Strategic Vision Memo taught you that great strategy isn't about:
+- ✗ Maximizing ONE metric (revenue OR authenticity, growth OR preservation)
+- ✗ Following industry best practices without context
+- ✗ Creating bold vision statements without operational plans
+- ✗ Ignoring trade-offs and constraints
+
+Great strategy IS about:
+- ✓ **Optimization across competing objectives:** Finding the intersection where heritage preservation AND revenue growth reinforce each other
+- ✓ **Context-specific solutions:** Adapting frameworks to YOUR property's unique situation (market, heritage, stakeholders, competitive position)
+- ✓ **Explicit trade-off management:** Acknowledging what you're NOT doing and why
+- ✓ **Evidence-based justification:** Using data, case examples, and financial projections to defend choices
+- ✓ **Executive communication:** Speaking the language of Boards and investors who control strategic resources
+
+**Beyond This Course:**
+
+Your Strategic Vision Memo mirrors the documents real sports executives create for high-stakes decisions. You've developed the analytical frameworks, financial modeling skills, stakeholder awareness, and executive communication capabilities that sports business professionals use daily. Whether you're joining a league office, team front office, sports marketing agency, or building your own venture, the strategic thinking process you practiced in this course—from situation analysis through implementation roadmap—transfers directly to professional contexts.
+
+**Thank You:**
+
+Thank you for your intellectual engagement, curiosity, and willingness to tackle complex strategic challenges throughout this course. Sports business is undergoing unprecedented transformation—from streaming economics to betting integration, from women's sports growth to sustainability demands. The strategic thinking skills you've developed position you to lead through this change, not just react to it.
+
+The sports industry needs leaders who can balance competing objectives, communicate data-driven strategy, and execute under resource constraints. You've proven you can do all three.
+
+**Congratulations on completing the Business of Sports Marketing course!**
+
+---

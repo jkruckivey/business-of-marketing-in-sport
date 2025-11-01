@@ -297,6 +297,60 @@
             box-shadow: 0 0 0 3px var(--color-neutral-200);
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 3000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 1rem;
@@ -337,61 +391,78 @@
         <h1>Customer Acquisition Economics Calculator</h1>
         <p class="subtitle">Model CAC, LTV, and payback period using FanDuel case data</p>
 
-        <div class="presets">
-            <span class="preset-label">Load Preset Scenario:</span>
-            <div class="preset-buttons">
-                <button class="preset-btn" onclick="loadPreset('fanduel')">FanDuel Base ($400 CAC)</button>
-                <button class="preset-btn" onclick="loadPreset('partnership')">FanDuel Partnership ($152 CAC)</button>
-                <button class="preset-btn" onclick="loadPreset('draftkings')">DraftKings ($390 CAC)</button>
-                <button class="preset-btn" onclick="loadPreset('betmgm')">BetMGM ($350 CAC)</button>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('inputs')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('inputs');}" tabindex="0" role="button" aria-expanded="true" aria-controls="inputs-content">
+                <h2>Customer Inputs</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="inputs-content">
+                <div class="section-inner">
+                    <div class="presets">
+                        <span class="preset-label">Load Preset Scenario:</span>
+                        <div class="preset-buttons">
+                            <button class="preset-btn" onclick="loadPreset('fanduel')">FanDuel Base ($400 CAC)</button>
+                            <button class="preset-btn" onclick="loadPreset('partnership')">FanDuel Partnership ($152 CAC)</button>
+                            <button class="preset-btn" onclick="loadPreset('draftkings')">DraftKings ($390 CAC)</button>
+                            <button class="preset-btn" onclick="loadPreset('betmgm')">BetMGM ($350 CAC)</button>
+                        </div>
+                    </div>
+
+                    <div class="inputs">
+                        <div class="input-grid">
+                            <div class="input-group">
+                                <label for="cac">Customer Acquisition Cost (CAC)</label>
+                                <div class="input-row">
+                                    <input type="range" id="cac" min="50" max="600" value="400" step="10" aria-describedby="cac-value">
+                                    <span id="cac-value" class="value-display">$400</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="wager">Average Annual Wager</label>
+                                <div class="input-row">
+                                    <input type="range" id="wager" min="500" max="5000" value="2400" step="100" aria-describedby="wager-value">
+                                    <span id="wager-value" class="value-display">$2,400</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="margin">Operator Margin</label>
+                                <div class="input-row">
+                                    <input type="range" id="margin" min="5" max="10" value="7" step="0.5" aria-describedby="margin-value">
+                                    <span id="margin-value" class="value-display">7.0%</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="tenure">Customer Tenure (Years)</label>
+                                <div class="input-row">
+                                    <input type="range" id="tenure" min="5" max="15" value="10" step="1" aria-describedby="tenure-value">
+                                    <span id="tenure-value" class="value-display">10 years</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="churn">Year 1 Churn Rate</label>
+                                <div class="input-row">
+                                    <input type="range" id="churn" min="20" max="60" value="40" step="5" aria-describedby="churn-value">
+                                    <span id="churn-value" class="value-display">40%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="inputs">
-            <div class="input-grid">
-                <div class="input-group">
-                    <label for="cac">Customer Acquisition Cost (CAC)</label>
-                    <div class="input-row">
-                        <input type="range" id="cac" min="50" max="600" value="400" step="10" aria-describedby="cac-value">
-                        <span id="cac-value" class="value-display">$400</span>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="wager">Average Annual Wager</label>
-                    <div class="input-row">
-                        <input type="range" id="wager" min="500" max="5000" value="2400" step="100" aria-describedby="wager-value">
-                        <span id="wager-value" class="value-display">$2,400</span>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="margin">Operator Margin</label>
-                    <div class="input-row">
-                        <input type="range" id="margin" min="5" max="10" value="7" step="0.5" aria-describedby="margin-value">
-                        <span id="margin-value" class="value-display">7.0%</span>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="tenure">Customer Tenure (Years)</label>
-                    <div class="input-row">
-                        <input type="range" id="tenure" min="5" max="15" value="10" step="1" aria-describedby="tenure-value">
-                        <span id="tenure-value" class="value-display">10 years</span>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <label for="churn">Year 1 Churn Rate</label>
-                    <div class="input-row">
-                        <input type="range" id="churn" min="20" max="60" value="40" step="5" aria-describedby="churn-value">
-                        <span id="churn-value" class="value-display">40%</span>
-                    </div>
-                </div>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('metrics');}" tabindex="0" role="button" aria-expanded="false" aria-controls="metrics-content">
+                <h2>Key Metrics</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
             </div>
-        </div>
-
-        <div class="metrics">
+            <div class="section-content" id="metrics-content">
+                <div class="section-inner">
+                    <div class="metrics">
             <div class="metric-card">
                 <div class="metric-label">Annual Profit</div>
                 <div class="metric-value" id="annualProfit">$168</div>
@@ -415,16 +486,29 @@
                 <div class="metric-value" id="totalProfit">$608</div>
                 <div class="metric-detail">LTV - CAC</div>
             </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="chart-container">
-            <canvas id="timelineChart" role="img" aria-label="Profitability timeline showing cumulative profit over 10 years"></canvas>
-        </div>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('timeline')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('timeline');}" tabindex="0" role="button" aria-expanded="false" aria-controls="timeline-content">
+                <h2>Timeline Analysis</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="timeline-content">
+                <div class="section-inner">
+                    <div class="chart-container">
+                        <canvas id="timelineChart" role="img" aria-label="Profitability timeline showing cumulative profit over 10 years"></canvas>
+                    </div>
 
-        <div class="insights">
-            <h3>Economic Analysis</h3>
-            <div id="insightsContent" aria-live="polite">
-                <!-- Populated by JavaScript -->
+                    <div class="insights">
+                        <h3>Economic Analysis</h3>
+                        <div id="insightsContent" aria-live="polite">
+                            <!-- Populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -835,6 +919,17 @@ Case Study: FanDuel - Betting on Sports (HBS 520038)
             URL.revokeObjectURL(url);
 
             alert('✓ Text file downloaded! Open in Notepad/TextEdit to view your analysis.');
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
 
         // Event listeners

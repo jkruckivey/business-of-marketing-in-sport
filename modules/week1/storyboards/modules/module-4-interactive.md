@@ -6,11 +6,12 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Infobox (Callout)** ⬤ Required | Brief activity introduction | Type directly | Blue variant, sets context |
-| 2 | **Text** ⬤ Required | Detailed instructions and strategic considerations | Type directly | Full setup and guidance |
-| 3 | **iFrame** ⬤ Required | Revenue Empire Builder widget | Custom widget hosted | Interactive simulation |
-| 4 | **Text Response** ⬤ Required | Board Strategy Defense submission | Configure in Uplimit | Written defense with 30-point rubric |
-| 5 | **AI Chat Widget** ○ Optional | Board Strategy Coach (optional) | Configure in Uplimit | Named: "Board Strategy Coach" |
-| 6 | **Details** ○ Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
+| 3 | **Text** ⬤ Required | Detailed instructions and strategic considerations | Type directly | Full setup and guidance |
+| 4 | **iFrame** ⬤ Required | Revenue Empire Builder widget | Custom widget hosted | Interactive simulation |
+| 5 | **Text Response** ⬤ Required | Board Strategy Defense submission | Configure in Uplimit | Written defense with 30-point rubric |
+| 6 | **AI Chat Widget** ○ Optional | Board Strategy Coach (optional) | Configure in Uplimit | Named: "Board Strategy Coach" |
+| 7 | **Details** ○ Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
 
 ### Element 1: Infobox Content
 ```
@@ -25,7 +26,35 @@ After completing the simulation, you'll write a Board Strategy Defense memo (750
 **Time:** 30-45 minutes (simulation) + 45-60 minutes (written defense)
 ```
 
-### Element 2: Text Content - Activity Instructions
+---
+
+## Element 2: Learning Outcomes Widget
+
+**Uplimit Implementation:**
+1. Select **iFrame Widget** element
+2. Copy embed code below:
+
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-4.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Module 4 Learning Outcomes"
+  aria-label="Visual map showing which learning outcomes are practiced in Module 4"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows which Week 1 MLOs are practiced in this module (interactive application)
+- Visual badge indicating Module 4: Interactive Activity
+- Interactive: Click to see how simulation connects to frameworks
+
+---
+
+### Element 3: Text Content - Activity Instructions
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
@@ -99,7 +128,9 @@ Once you complete the Revenue Empire Builder, you'll write an executive memo (75
 - Color-blind safe color scheme ✅
 - Screen reader compatible ✅
 
-### Element 4: Text Response - Board Strategy Defense
+---
+
+### Element 5: Text Response - Board Strategy Defense
 
 **Assessment Type:** Written submission with rubric evaluation
 
@@ -187,13 +218,17 @@ Before submitting, check that you have:
 - ✅ Include evaluation levels (Excellent / Proficient / Developing / Needs Improvement)
 - ✅ Apply points (30 total)
 
-### Element 5: AI Chat Widget Configuration
+---
+
+### Element 6: AI Chat Widget Configuration
 - **Widget Name:** "Board Strategy Coach"
 - **System Prompt:** "You are a helpful strategy coach for MBA students preparing their Board Strategy Defense memo. Help them think critically about their Revenue Empire Builder results and how to articulate their strategy. Do NOT write their memo for them. Instead, ask probing questions: What trade-offs did you consider? How do your streams create synergies? What risks emerged during the simulation? How would you defend that allocation choice? Focus on: strategic justification, risk management, ecosystem thinking, and professional communication. If students ask you to write content, redirect them to develop their own analysis with your guidance."
 - **Welcome Message:** "Ready to prepare your Board Strategy Defense? I can help you think through your allocation decisions, identify key risks, and structure your argument. What aspect of your strategy are you working on?"
 - **Show System Prompt:** No
 
-### Element 6: Details Content
+---
+
+### Element 7: Details Content
 ```
 Title: ◆ Strategy Hints (Open if you're stuck)
 
@@ -235,6 +270,30 @@ media rights → more resources for players...)
 - Written defense mirrors real-world executive communication (authentic assessment)
 - Directly supports MLO 1.3 (evaluating growth potential and risks) through authentic practice
 - 30-point rubric ensures transparent, consistent evaluation (QM Standard 3)
+
+---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 4 Supports Your Final Strategic Vision:**
+
+Module 4 gave you hands-on practice building integrated revenue strategies and defending them under scrutiny. This is the exact skill required for your Week 5 capstone.
+
+**What You Learned:**
+- Revenue allocation across streams requires balancing growth potential vs. risk vs. competitive positioning
+- Strategic decisions must be justified with data, not assumptions (Board Strategy Defense memo practice)
+- Market events (economic downturns, streaming disruption, betting legalization) force real-time strategic pivots
+- Integrated thinking beats stream-by-stream optimization
+
+**How to Apply This to Your Final Project:**
+
+When you craft your 5-year strategic vision in Week 5, Module 4's Board Strategy Defense becomes your template:
+
+- **Strategic Rationale:** Every major decision in your vision needs explicit justification. Module 4 taught you to anticipate skeptical questions and pre-emptively address them: "Why invest $50M in this stream? Because our modeling shows 3-year payback with 15% IRR."
+- **Risk Management:** Use Module 4's scenario modeling to stress-test your vision. What happens if media rights decline 20%? If betting is banned in your jurisdiction? Your capstone should include contingency plans.
+- **Integrated Strategy:** Don't present five separate revenue stream strategies. Module 4 taught you to show how streams reinforce each other. Your vision should demonstrate ecosystem thinking throughout.
+
+**Real-World Application:** The Revenue Empire Builder simulation forced you to make strategic trade-offs under constraints. Your Week 5 capstone will face the same challenge: limited capital, competing priorities, uncertain futures. Module 4 taught you how to navigate that complexity.
 
 ---
 

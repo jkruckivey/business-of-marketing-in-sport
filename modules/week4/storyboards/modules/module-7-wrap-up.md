@@ -12,6 +12,8 @@
 | 4 | **ⓘ Infobox (Callout)** ⬤ Required | Anchor Project Milestone 3 reminder | Type directly | Due this week, application of Week 4 |
 | 5 | **▬ Text** ◐ Recommended | Preview Week 5 | Type directly | Build anticipation for final week |
 | 6 | **◈ AI Chat Widget** ○ Optional | "Office hours" | Configure in Uplimit | Final questions before moving on |
+| 7 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
+
 
 ---
 
@@ -374,6 +376,37 @@ Hi! Welcome to Week 4 office hours. I'm here to answer any remaining questions a
 
 ---
 
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Week 4 Supports Your Final Strategic Vision:**
+
+Week 4 taught you how athletes build generational wealth and how to identify high-growth investment opportunities. This strategic thinking applies directly to your Week 5 capstone.
+
+**What You Mastered:**
+- Five athlete revenue streams and which create equity-based wealth vs. fee-based income
+- Owned asset strategy (businesses, investments) vs. endorsement strategy (short-term cash flow)
+- Women's sports and emerging sports investment thesis (undervalued assets with 300% faster growth)
+- Post-career transition strategies that preserve wealth over decades
+
+**How to Apply This to Your Final Project:**
+
+Your Week 5 strategic vision integrates Week 4's athlete brand frameworks across multiple dimensions:
+
+- **Partnership Strategy:** If your property involves athlete deals, use Week 4's equity vs. endorsement framework to structure relationships. Prioritize long-term alignment over short-term transactions.
+- **Growth Opportunities:** If your property targets women's sports or emerging markets, reference Week 4's investment thesis with quantitative growth data. This justifies premium valuations and aggressive investment.
+- **Long-Term Value Creation:** Week 4 taught that equity compounds, income doesn't. Apply this principle throughout your vision: prioritize investments that build enterprise value over those that generate one-time revenue.
+
+**Integration Across All Weeks:**
+- Week 1 = Revenue ecosystem foundation
+- Week 2 = Media rights specialization
+- Week 3 = Sponsorship/betting specialization
+- **Week 4 = Athlete brand & emerging sports specialization**
+- Week 5 = Synthesis into 5-year vision
+
+**Real-World Application:** The athlete wealth-building strategies you mastered apply to property-level strategy. Your Week 5 capstone must demonstrate you can build assets, not just generate revenue—Week 4 taught you how.
+
+---
+
 ### What's Next:
 
 **Immediate:**
@@ -389,3 +422,31 @@ Hi! Welcome to Week 4 office hours. I'm here to answer any remaining questions a
 ---
 
 **See you in Week 5—the final push!**
+
+### Element 7: Learning Outcomes Widget
+
+**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
+
+**Uplimit Implementation:**
+
+**Widget File:** `learning-outcomes-module-7.html`
+
+**Embed Code:**
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-7.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Learning Outcomes - Module 7"
+  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Click any module outcome to see which course-level outcomes it contributes to
+- Interactive highlighting shows connections between module and course goals
+- WCAG 2.2 AA compliant with keyboard navigation and screen reader support
+

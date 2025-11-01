@@ -90,8 +90,62 @@
             outline-offset: 2px;
         }
 
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            background: white;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 2000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
         .input-section {
-            margin-bottom: 2rem;
+            margin-bottom: 0;
         }
 
         .input-group {
@@ -163,18 +217,7 @@
         }
 
         .results {
-            background: var(--color-neutral-50);
-            border: 1px solid var(--color-neutral-200);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .results h2 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--color-neutral-900);
-            margin-bottom: 1.5rem;
+            margin-top: 0;
         }
 
         .chart-container {
@@ -368,63 +411,78 @@
         <h1>Betting Market Simulator</h1>
         <p class="subtitle">Model state sports betting market size, operator revenue, and tax revenue using real parameters from legalized markets.</p>
 
-        <div class="presets" role="group" aria-label="State market presets">
-            <button class="preset-btn" onclick="loadPreset('nj')">New Jersey (Mature)</button>
-            <button class="preset-btn" onclick="loadPreset('ny')">New York (Highest Handle)</button>
-            <button class="preset-btn" onclick="loadPreset('pa')">Pennsylvania</button>
-            <button class="preset-btn" onclick="loadPreset('mi')">Michigan</button>
-            <button class="preset-btn" onclick="loadPreset('oh')">Ohio (New Market)</button>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('parameters')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('parameters');}" tabindex="0" role="button" aria-expanded="true" aria-controls="parameters-content">
+                <h2>Market Parameters</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded" id="parameters-content">
+                <div class="section-inner">
+                    <div class="presets" role="group" aria-label="State market presets">
+                        <button class="preset-btn" onclick="loadPreset('nj')">New Jersey (Mature)</button>
+                        <button class="preset-btn" onclick="loadPreset('ny')">New York (Highest Handle)</button>
+                        <button class="preset-btn" onclick="loadPreset('pa')">Pennsylvania</button>
+                        <button class="preset-btn" onclick="loadPreset('mi')">Michigan</button>
+                        <button class="preset-btn" onclick="loadPreset('oh')">Ohio (New Market)</button>
+                    </div>
+
+                    <div class="input-section">
+                        <div class="input-group">
+                            <label for="population">State Population (Millions)</label>
+                            <div class="input-with-value">
+                                <input type="range" id="population" min="1" max="20" value="10" step="0.5"
+                                       oninput="updateCalculations()" aria-describedby="populationValue">
+                                <span class="value-display" id="populationValue" aria-live="polite">10.0M</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="participation">Betting Participation Rate (% of Adults)</label>
+                            <div class="input-with-value">
+                                <input type="range" id="participation" min="5" max="20" value="10" step="1"
+                                       oninput="updateCalculations()" aria-describedby="participationValue">
+                                <span class="value-display" id="participationValue" aria-live="polite">10%</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="avgWager">Average Wager per Bettor per Year</label>
+                            <div class="input-with-value">
+                                <input type="range" id="avgWager" min="500" max="5000" value="2400" step="100"
+                                       oninput="updateCalculations()" aria-describedby="wagerValue">
+                                <span class="value-display" id="wagerValue" aria-live="polite">$2,400</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="operatorMargin">Operator Margin / House Edge (%)</label>
+                            <div class="input-with-value">
+                                <input type="range" id="operatorMargin" min="5" max="10" value="7" step="0.5"
+                                       oninput="updateCalculations()" aria-describedby="marginValue">
+                                <span class="value-display" id="marginValue" aria-live="polite">7.0%</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="taxRate">State Tax Rate on GGR (%)</label>
+                            <div class="input-with-value">
+                                <input type="range" id="taxRate" min="10" max="51" value="20" step="1"
+                                       oninput="updateCalculations()" aria-describedby="taxValue">
+                                <span class="value-display" id="taxValue" aria-live="polite">20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="input-section">
-            <div class="input-group">
-                <label for="population">State Population (Millions)</label>
-                <div class="input-with-value">
-                    <input type="range" id="population" min="1" max="20" value="10" step="0.5"
-                           oninput="updateCalculations()" aria-describedby="populationValue">
-                    <span class="value-display" id="populationValue" aria-live="polite">10.0M</span>
-                </div>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('economics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('economics');}" tabindex="0" role="button" aria-expanded="false" aria-controls="economics-content">
+                <h2>Market Economics</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
             </div>
-
-            <div class="input-group">
-                <label for="participation">Betting Participation Rate (% of Adults)</label>
-                <div class="input-with-value">
-                    <input type="range" id="participation" min="5" max="20" value="10" step="1"
-                           oninput="updateCalculations()" aria-describedby="participationValue">
-                    <span class="value-display" id="participationValue" aria-live="polite">10%</span>
-                </div>
-            </div>
-
-            <div class="input-group">
-                <label for="avgWager">Average Wager per Bettor per Year</label>
-                <div class="input-with-value">
-                    <input type="range" id="avgWager" min="500" max="5000" value="2400" step="100"
-                           oninput="updateCalculations()" aria-describedby="wagerValue">
-                    <span class="value-display" id="wagerValue" aria-live="polite">$2,400</span>
-                </div>
-            </div>
-
-            <div class="input-group">
-                <label for="operatorMargin">Operator Margin / House Edge (%)</label>
-                <div class="input-with-value">
-                    <input type="range" id="operatorMargin" min="5" max="10" value="7" step="0.5"
-                           oninput="updateCalculations()" aria-describedby="marginValue">
-                    <span class="value-display" id="marginValue" aria-live="polite">7.0%</span>
-                </div>
-            </div>
-
-            <div class="input-group">
-                <label for="taxRate">State Tax Rate on GGR (%)</label>
-                <div class="input-with-value">
-                    <input type="range" id="taxRate" min="10" max="51" value="20" step="1"
-                           oninput="updateCalculations()" aria-describedby="taxValue">
-                    <span class="value-display" id="taxValue" aria-live="polite">20%</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="results" role="region" aria-label="Market simulation results">
-            <h2>Market Economics</h2>
+            <div class="section-content" id="economics-content">
+                <div class="section-inner results" role="region" aria-label="Market simulation results">
 
             <div class="metric-grid">
                 <div class="metric">
@@ -464,12 +522,24 @@
                 <tbody id="funnelTableBody">
                 </tbody>
             </table>
+                </div>
+            </div>
+        </div>
 
-            <div class="insight-box" role="complementary" aria-label="Market insights">
-                <h3>Market Analysis</h3>
-                <p id="profitabilityText"></p>
-                <p id="stateBenefitText"></p>
-                <p id="benchmarkText"></p>
+        <div class="section">
+            <div class="section-header" onclick="toggleSection('analysis')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('analysis');}" tabindex="0" role="button" aria-expanded="false" aria-controls="analysis-content">
+                <h2>Market Analysis</h2>
+                <span class="toggle-icon" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content" id="analysis-content">
+                <div class="section-inner">
+                    <div class="insight-box" role="complementary" aria-label="Market insights">
+                        <h3>Market Analysis</h3>
+                        <p id="profitabilityText"></p>
+                        <p id="stateBenefitText"></p>
+                        <p id="benchmarkText"></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -747,6 +817,17 @@
             document.getElementById('taxRate').value = 20;
 
             updateCalculations();
+        }
+
+        function toggleSection(sectionId) {
+            const content = document.getElementById(`${sectionId}-content`);
+            const header = content.previousElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
         }
 
         // Initialize on page load

@@ -168,6 +168,7 @@ Ready to master these capabilities? Let's begin.
 
 **Widget Purpose:** Interactive visualization showing Week 4's learning journey and how outcomes connect
 
+<<<<<<< Updated upstream
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element
 2. Copy embed code below:
@@ -189,6 +190,10 @@ Ready to master these capabilities? Let's begin.
 - Visual roadmap from MLO 4.1 → 4.2 → 4.3 → 4.4 with Serena Williams case as capstone
 - Interactive: Click outcomes to see details
 - Shows learning progression through Week 4
+=======
+**Implementation:**
+Embed iframe widget showing visual roadmap from MLO 4.1 → 4.2 → 4.3 → 4.4 with Serena Williams case as capstone
+>>>>>>> Stashed changes
 
 ---
 
@@ -254,6 +259,7 @@ Week 4 isn't just theory—it's the strategic toolkit you'll apply to your Ancho
 
 ---
 
+<<<<<<< Updated upstream
 ## 🎯 FINAL PROJECT CONNECTION
 
 **How Module 1 Supports Your Final Strategic Vision:**
@@ -278,6 +284,8 @@ When you craft your 5-year strategic vision in Week 5, Module 1's athlete framew
 
 ---
 
+=======
+>>>>>>> Stashed changes
 ## Module 1 Complete - Transition to Module 2
 
 **What You've Accomplished:**
@@ -289,7 +297,11 @@ The highest-earning retired athletes all share one strategy: they built equity-b
 **Up Next: Module 2 - Executive Perspectives**
 Now that you know what you're learning and why it matters, you'll hear from practitioners who've actually done this work: a sports agent who represents elite athletes, Don Rea from the PGA Tour navigating golf's global expansion, and experts in women's sports investment and athlete brand building. Their insights will ground the frameworks you're about to learn.
 
+<<<<<<< Updated upstream
 Ready to hear from the experts? Let's go!
+=======
+Ready to hear from the experts? Let's go.
+>>>>>>> Stashed changes
 
 ---
 

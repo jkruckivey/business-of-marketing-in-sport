@@ -1,0 +1,9 @@
+Remaining Week 1 widgets to create: Module 2, 3, 4, 5, 6
+Remaining Week 3 widgets to create: Module 2, 3, 4, 5, 6
+
+Data structures are complete in:
+- modules/week1/widgets/learning-outcomes-mapper-data.js
+- modules/week3/widgets/learning-outcomes-mapper-data.js
+
+Module 1 widgets created as templates for both weeks.
+Pattern established - all remaining widgets follow same structure with different module-specific MLO content.

@@ -7,6 +7,7 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro to assessment | Type directly | Sets assessment context |
+<<<<<<< Updated upstream
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs assessed in this module |
 | 3 | **ⓘ Infobox (Callout)** ⬤ Required | PAIRR workflow overview + timeline | Type directly | 5-phase assessment structure |
 | 4 | **▬ Text** ⬤ Required | Assessment prompt + scenario | Type directly | Strategic memo assignment (Jordan Taylor) |
@@ -23,6 +24,14 @@
 | 15 | **💬 Text Submission** ⬤ Required | Post-revision reflection submission | Configure in Uplimit | 200-300 words (1 pt bonus) |
 | 16 | **◈ AI Roleplay** ○ Optional | Practice pitch to athlete client | Configure in Uplimit | Optional: Present strategy before drafting |
 | 17 | **▤ Details** ○ Optional | Assessment FAQs | Type directly | Common questions answered |
+=======
+| 2 | **ⓘ Infobox (Callout)** ⬤ Required | Assessment details (format, rubric, time) | Type directly | Clear expectations |
+| 3 | **▬ Text** ⬤ Required | Assessment prompt + scenario | Type directly | Strategic memo assignment |
+| 4 | **📄 File Attachment** ⬤ Required | Assessment rubric (faculty + student versions) | Attach PDF | Grading criteria |
+| 5 | **💬 Text Submission** ⬤ Required | Memo submission box | Configure in Uplimit | Students submit 1200-1500 word memo |
+| 6 | **◈ AI Roleplay** ◐ Recommended | Practice pitch to athlete client | Configure in Uplimit | Optional: Present strategy before submitting |
+| 7 | **▤ Details** ○ Optional | Assessment FAQs | Type directly | Common questions answered |
+>>>>>>> Stashed changes
 
 ---
 
@@ -33,6 +42,7 @@
 2. Copy markdown below:
 
 ```markdown
+<<<<<<< Updated upstream
 # From Analysis to Strategy: Your Turn to Build an Athlete Brand (with PAIRR Assessment)
 
 You've mastered the frameworks. You've experimented with simulations. You've analyzed Serena Williams' actual strategy. Now it's time to demonstrate what you've learned by solving a real strategic problem.
@@ -40,6 +50,12 @@ You've mastered the frameworks. You've experimented with simulations. You've ana
 **What Makes This Assessment Different:**
 This is a **PAIRR assessment** (Peer and AI Review + Reflection), designed to develop your AI literacy alongside strategic thinking. You'll draft a strategy memo, receive feedback from BOTH a peer and ChatGPT, reflect on which feedback is more useful, revise your work, then reflect on your revision choices. This dual-feedback approach mirrors real-world strategic work where you synthesize multiple perspectives.
 
+=======
+# From Analysis to Strategy: Your Turn to Build an Athlete Brand
+
+You've mastered the frameworks. You've experimented with simulations. You've analyzed Serena Williams' actual strategy. Now it's time to demonstrate what you've learned by solving a real strategic problem.
+
+>>>>>>> Stashed changes
 ### The Challenge
 
 An elite 25-year-old athlete has hired you as their brand strategist. They have:
@@ -67,6 +83,7 @@ Let's show what you can do.
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
@@ -94,6 +111,9 @@ Let's show what you can do.
 ---
 
 ## Element 3: **RENUMBERED** - Infobox - PAIRR Assessment Overview (was Element 2)
+=======
+## Element 2: Infobox - Assessment Details
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -101,6 +121,7 @@ Let's show what you can do.
 3. Copy markdown below:
 
 ```markdown
+<<<<<<< Updated upstream
 Title: ◉ PAIRR Assessment: 5-Phase Workflow + Timeline
 
 **Phase 1: Draft** (Due Day 3 of Week 4)
@@ -120,11 +141,20 @@ Revise memo incorporating feedback. Submit final version for grading (100-point 
 Reflect on revision choices: Which feedback influenced you most? (200-300 words, 1 pt bonus)
 
 **Total Possible: 105 points** (100 pts memo + 5 pts bonus). Bonus structure develops AI literacy and metacognitive skills.
+=======
+Title: ◉ Assessment Details: Strategic Brand Memo
+
+Submit an individual written memo (1200-1500 words) via the text submission box below. Grading uses a 100-point rubric aligned to Week 4 MLOs (see Element 4). Allow 90-120 minutes for planning (30 min), writing and analysis (60 min), and revision (15 min). Your memo must include revenue stream allocation with percentages, owned versus endorsed asset strategy with NPV analysis, 2-3 investment opportunities with IRR projections, and post-career transition plan. Cite Serena Williams case insights and provide supporting financial projections. External research is not required. Review the rubric before writing.
+>>>>>>> Stashed changes
 ```
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 4: **RENUMBERED** - Assessment Prompt + Scenario (Phase 1: Draft) (was Element 3)
+=======
+## Element 3: Assessment Prompt + Scenario
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -260,11 +290,16 @@ Your memo must include these specific calculations (can be in tables or inline t
 4. Copy-paste into submission box below (Element 5)
 5. Submit by end of Week 4
 
+<<<<<<< Updated upstream
 **Good luck on your draft! Remember: This is Phase 1 (Draft) of the PAIRR assessment. You'll receive feedback in Phase 2 before finalizing your memo.**
+=======
+**Good luck! Show us what you've learned.**
+>>>>>>> Stashed changes
 ```
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 5: **NEW** - Phase 2A - Peer Feedback Instructions (was Element 4)
 
 **Uplimit Implementation:**
@@ -521,10 +556,14 @@ Submit your 200-300 word post-revision reflection via Element 15 (Post-Revision 
 ---
 
 ## Element 9: **UPDATED** - File Attachment - Rubric with Bonus Structure (was Element 8)
+=======
+## Element 4: File Attachment - Rubric
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **File Attachment** element
 2. Upload: `week4-assessment-rubric-athlete-brand-memo.pdf`
+<<<<<<< Updated upstream
 3. Title: "Assessment Rubric: Athlete Brand Strategy Memo (100 pts + 5 pt bonus)"
 4. Description: "Detailed grading criteria aligned to Week 4 MLOs with PAIRR bonus structure"
 
@@ -532,6 +571,13 @@ Submit your 200-300 word post-revision reflection via Element 15 (Post-Revision 
 
 ### Base Assessment (100 points)
 
+=======
+3. Title: "Assessment Rubric: Athlete Brand Strategy Memo"
+4. Description: "Detailed grading criteria aligned to Week 4 MLOs (100 points total)"
+
+**Rubric Summary (Full rubric in PDF):**
+
+>>>>>>> Stashed changes
 | Criterion | Points | What's Assessed |
 |-----------|--------|----------------|
 | **MLO 4.1: Revenue Stream Allocation** | 25 pts | Identifies all 5 streams, provides justified % allocation, shows phase-based strategy |
@@ -539,6 +585,7 @@ Submit your 200-300 word post-revision reflection via Element 15 (Post-Revision 
 | **MLO 4.3: Investment Opportunities** | 25 pts | 2-3 specific opportunities, IRR projections, risk assessment, justification |
 | **MLO 4.4: Post-Career Transition** | 20 pts | Wealth preservation plan, asset longevity analysis, age 50 net worth projection |
 | **Financial Rigor & Analysis** | 5 pts | Accurate calculations, realistic assumptions, tables/projections included |
+<<<<<<< Updated upstream
 | **SUBTOTAL** | **100 pts** | Final revised memo (Phase 4) graded using these criteria |
 
 ### PAIRR Bonus Structure (5 points)
@@ -556,19 +603,35 @@ Submit your 200-300 word post-revision reflection via Element 15 (Post-Revision 
 ---
 
 ## Element 10: **NEW** - Phase 1 Draft Submission Box (was Element 9)
+=======
+| **TOTAL** | **100 pts** | |
+
+---
+
+## Element 5: Text Submission Box
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Text Submission** or **Assignment Submission** element
 2. Configure:
+<<<<<<< Updated upstream
    - **Title:** "Phase 1: Submit Draft Memo (80% Version)"
    - **Instructions:** "Paste your draft memo (1200-1500 words) below. This is an 80% version for feedback—doesn't need to be perfect. Ensure all 4 sections present."
    - **Word Count:** Display word count to student
    - **Submission Attempts:** 1 attempt
    - **Due Date:** Day 3 of Week 4
+=======
+   - **Title:** "Submit Your Athlete Brand Strategy Memo"
+   - **Instructions:** "Paste your 1200-1500 word memo below. Ensure all 4 sections and financial projections are included."
+   - **Word Count:** Display word count to student (helps them stay within range)
+   - **Submission Attempts:** 1 attempt (no resubmissions after deadline)
+   - **Due Date:** End of Week 4
+>>>>>>> Stashed changes
    - **Late Policy:** As per course policy
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 11: Peer Feedback Submission Box
 
 **Uplimit Implementation:**
@@ -636,6 +699,9 @@ Submit your 200-300 word post-revision reflection via Element 15 (Post-Revision 
 ---
 
 ## Element 16: AI Roleplay - Practice Pitch (Optional)
+=======
+## Element 6: AI Roleplay - Practice Pitch (Optional)
+>>>>>>> Stashed changes
 
 **Purpose:** Students practice presenting their strategy to athlete client before submitting final memo
 
@@ -680,7 +746,11 @@ You are presenting your athlete brand strategy to your client, Jordan Taylor. St
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 17: Details - Assessment FAQs
+=======
+## Element 7: Details - Assessment FAQs
+>>>>>>> Stashed changes
 
 ```markdown
 Title: Assessment FAQs
@@ -733,6 +803,7 @@ This assessment tests all 4 Week 4 learning outcomes:
 
 After submitting your assessment, you'll reflect on Week 4's journey, connect insights to your Anchor Project's Milestone 3, and preview Week 5.
 
+<<<<<<< Updated upstream
 Ready to reflect on your athlete brand mastery? Let's wrap up Week 4!
 
 ---
@@ -759,3 +830,6 @@ When you write your 5-year strategic vision in Week 5, Module 6's assessment str
 - **Executive Communication:** The memo format you practiced—strategic context → allocation strategy → financial projections → risk mitigation—is exactly what Week 5 requires.
 
 **Real-World Application:** The athlete brand strategy you designed mirrors the strategic plans property executives create for boards. Your Week 5 capstone scales this skill to a comprehensive 5-year vision.
+=======
+Good luck on your assessment! You've got the frameworks—now show us the strategy.
+>>>>>>> Stashed changes

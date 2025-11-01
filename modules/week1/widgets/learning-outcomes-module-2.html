@@ -54,7 +54,11 @@
         <div class="module-outcomes">
             <h4>
                 <span class="module-badge">MODULE 2</span>
+<<<<<<< Updated upstream
                 <span>Executive Perspectives</span>
+=======
+                <span>Executive Leader Perspective</span>
+>>>>>>> Stashed changes
             </h4>
             <div class="mlo-list" role="list"></div>
         </div>
@@ -71,22 +75,38 @@
 
     <script>
         const courseOutcomes = [
+<<<<<<< Updated upstream
             { code: 'CLO 1', text: 'Analyze Revenue Ecosystems - Map and evaluate interdependencies of major revenue streams in sports business' },
             { code: 'CLO 2', text: 'Evaluate Media & Fan Monetization - Compare traditional broadcasting vs DTC models and design fan engagement strategies' },
             { code: 'CLO 3', text: 'Design Sponsorship & Betting Strategies - Calculate sponsorship ROI and assess sports betting\'s role as growth engine' },
             { code: 'CLO 4', text: 'Build Athlete & Emerging Sport Brands - Create branding strategies for athletes and evaluate investment opportunities' },
             { code: 'CLO 5', text: 'Balance Legacy & Innovation - Develop strategies to monetize heritage properties while integrating future trends' }
+=======
+            { code: 'CLO 1', text: 'Analyze revenue generation strategies across sports business ecosystems' },
+            { code: 'CLO 2', text: 'Evaluate media & fan monetization approaches' },
+            { code: 'CLO 3', text: 'Design sponsorship & betting growth strategies' },
+            { code: 'CLO 4', text: 'Build athlete & emerging sport brands' },
+            { code: 'CLO 5', text: 'Balance legacy properties with innovation trends' }
+>>>>>>> Stashed changes
         ];
 
         const mlos = [
             {
                 code: 'MLO 1.1',
+<<<<<<< Updated upstream
                 text: 'Map the major revenue streams in professional sport',
+=======
+                text: 'Identify the five revenue streams through executive insights and practitioner examples',
+>>>>>>> Stashed changes
                 clos: ['CLO 1']
             },
             {
                 code: 'MLO 1.2',
+<<<<<<< Updated upstream
                 text: 'Explain sport\'s unique business model characteristics',
+=======
+                text: 'Understand sport\'s unique business model from Bell Media/TSN executive perspective',
+>>>>>>> Stashed changes
                 clos: ['CLO 1']
             }
         ];
@@ -94,26 +114,39 @@
         const mloList = document.querySelector('.mlo-list');
         const cloList = document.querySelector('.clo-list');
 
+<<<<<<< Updated upstream
         // Render MLOs
+=======
+>>>>>>> Stashed changes
         mlos.forEach(mlo => {
             const div = document.createElement('div');
             div.className = 'mlo-item';
             div.setAttribute('tabindex', '0');
             div.setAttribute('role', 'button');
+<<<<<<< Updated upstream
             div.setAttribute('aria-label', `${mlo.code}: ${mlo.text}. Click to see course connections.`);
+=======
+>>>>>>> Stashed changes
             div.innerHTML = `
                 <div class="mlo-header">
                     <span class="mlo-code">${mlo.code}</span>
                     <span class="mlo-text">${mlo.text}</span>
                 </div>
+<<<<<<< Updated upstream
                 <div class="connection-indicator" aria-live="polite">↓ Contributes to: ${mlo.clos.join(', ')}</div>
+=======
+                <div class="connection-indicator">↓ Contributes to: ${mlo.clos.join(', ')}</div>
+>>>>>>> Stashed changes
             `;
             div.onclick = () => highlight(mlo.clos, div);
             div.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); highlight(mlo.clos, div); } };
             mloList.appendChild(div);
         });
 
+<<<<<<< Updated upstream
         // Render CLOs
+=======
+>>>>>>> Stashed changes
         courseOutcomes.forEach(clo => {
             const div = document.createElement('div');
             div.className = 'clo-item';

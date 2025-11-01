@@ -1,6 +1,7 @@
 {
   "permissions": {
     "allow": [
+<<<<<<< Updated upstream
       "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/business-of-marketing-in-sport/modules/week1/storyboards/modules/**)",
       "Bash(done)",
       "Bash(for mod in 2 3 4 5)",
@@ -8,6 +9,9 @@
       "Bash(do echo '=== Module $mod ===')",
       "Bash(head:*)",
       "Bash(bash:*)"
+=======
+      "Read(//c/Users/jkruck/Ivey Business School/EdTech Lab - Documents/Github/business-of-marketing-in-sport/modules/week1/storyboards/modules/**)"
+>>>>>>> Stashed changes
     ],
     "deny": [],
     "ask": []

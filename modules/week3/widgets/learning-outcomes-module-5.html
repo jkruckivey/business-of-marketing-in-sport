@@ -54,7 +54,11 @@
         <div class="module-outcomes">
             <h4>
                 <span class="module-badge">MODULE 5</span>
+<<<<<<< Updated upstream
                 <span>Group Sprint - Activation Plan</span>
+=======
+                <span>Group Sprint: Activation Plan</span>
+>>>>>>> Stashed changes
             </h4>
             <div class="mlo-list" role="list"></div>
         </div>
@@ -71,17 +75,34 @@
 
     <script>
         const courseOutcomes = [
+<<<<<<< Updated upstream
             { code: 'CLO 1', text: 'Analyze Revenue Ecosystems - Map and evaluate interdependencies of major revenue streams in sports business' },
             { code: 'CLO 2', text: 'Evaluate Media & Fan Monetization - Compare traditional broadcasting vs DTC models and design fan engagement strategies' },
             { code: 'CLO 3', text: 'Design Sponsorship & Betting Strategies - Calculate sponsorship ROI and assess sports betting\'s role as growth engine' },
             { code: 'CLO 4', text: 'Build Athlete & Emerging Sport Brands - Create branding strategies for athletes and evaluate investment opportunities' },
             { code: 'CLO 5', text: 'Balance Legacy & Innovation - Develop strategies to monetize heritage properties while integrating future trends' }
+=======
+            { code: 'CLO 1', text: 'Analyze revenue generation strategies across sports business ecosystems' },
+            { code: 'CLO 2', text: 'Evaluate media & fan monetization approaches' },
+            { code: 'CLO 3', text: 'Design sponsorship & betting growth strategies' },
+            { code: 'CLO 4', text: 'Build athlete & emerging sport brands' },
+            { code: 'CLO 5', text: 'Balance legacy properties with innovation trends' }
+>>>>>>> Stashed changes
         ];
 
         const mlos = [
             {
                 code: 'MLO 3.4',
+<<<<<<< Updated upstream
                 text: 'Design sponsorship activations that deliver measurable value',
+=======
+                text: 'Design 1-page sponsorship activation plan with measurable outcomes',
+                clos: ['CLO 3']
+            },
+            {
+                code: 'MLO 3.3',
+                text: 'Calculate ROI projections using industry frameworks',
+>>>>>>> Stashed changes
                 clos: ['CLO 3']
             }
         ];
@@ -89,7 +110,10 @@
         const mloList = document.querySelector('.mlo-list');
         const cloList = document.querySelector('.clo-list');
 
+<<<<<<< Updated upstream
         // Render MLOs
+=======
+>>>>>>> Stashed changes
         mlos.forEach(mlo => {
             const div = document.createElement('div');
             div.className = 'mlo-item';
@@ -107,7 +131,10 @@
             mloList.appendChild(div);
         });
 
+<<<<<<< Updated upstream
         // Render CLOs
+=======
+>>>>>>> Stashed changes
         courseOutcomes.forEach(clo => {
             const div = document.createElement('div');
             div.className = 'clo-item';

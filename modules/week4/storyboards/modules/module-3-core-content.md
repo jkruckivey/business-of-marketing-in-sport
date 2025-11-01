@@ -7,6 +7,7 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | Type directly | Sets interactive learning approach |
+<<<<<<< Updated upstream
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
 | 3 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
 | 4 | **▬ Text** ◐ Recommended | Reflection prompt after widget 1 | Type directly | Process learning from experimentation |
@@ -14,6 +15,14 @@
 | 6 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize investment insights |
 | 7 | **▤ Details** ○ Optional | Deep dive: Why equity beats fees | Type directly | Mathematical proof with NPV calculations |
 | 8 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Configure in Uplimit | On-demand support for struggling students |
+=======
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
+| 3 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Process learning from experimentation |
+| 4 | **⚙ iFrame Widget** ⬤ Required | **Emerging Sports Investment Tool** | Embed widget | Evaluate women's sports & emerging market opportunities |
+| 5 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize investment insights |
+| 6 | **▤ Details** ○ Optional | Deep dive: Why equity beats fees | Type directly | Mathematical proof with NPV calculations |
+| 7 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Configure in Uplimit | On-demand support for struggling students |
+>>>>>>> Stashed changes
 
 ---
 
@@ -54,6 +63,7 @@ Ready? Let's experiment.
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
@@ -101,6 +111,9 @@ This isn't a passive calculation—it's an experimentation lab. Try extreme allo
 **Learning outcomes practiced:** MLO 4.1 (Five athlete revenue streams), MLO 4.2 (Owned assets vs. endorsements)
 
 ---
+=======
+## Element 2: Athlete Brand Calculator Widget
+>>>>>>> Stashed changes
 
 **Widget Purpose:** Interactive tool for building athlete revenue portfolios and comparing 20-year wealth outcomes
 
@@ -144,6 +157,7 @@ This isn't a passive calculation—it's an experimentation lab. Try extreme allo
 
 **Uplimit Embed Code:**
 ```html
+<<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/athlete-brand-calculator.html"
   width="100%"
@@ -153,12 +167,25 @@ This isn't a passive calculation—it's an experimentation lab. Try extreme allo
   aria-label="Interactive calculator where you build athlete brand revenue portfolios by allocating fifty million dollars across five streams including endorsements, owned businesses, and investments to see twenty-year wealth outcomes"
   allowfullscreen
   loading="lazy">
+=======
+<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/athlete-brand-calculator.html"
+        width="900"
+        height="800"
+        title="Athlete Brand Calculator - Build revenue portfolios and compare 20-year wealth outcomes"
+        frameborder="0"
+        allowfullscreen
+        aria-label="Interactive calculator for building athlete brand revenue portfolios across five streams with 20-year projections">
+>>>>>>> Stashed changes
 </iframe>
 ```
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 4: **RENUMBERED** - Reflection Prompt After Widget 1 (was Element 3)
+=======
+## Element 3: Reflection Prompt After Widget 1
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -188,6 +215,7 @@ After experimenting with the Athlete Brand Calculator, take 2 minutes to reflect
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 5: **RENUMBERED** - Emerging Sports Investment Tool Widget (was Element 4)
 
 ### ⚙ Interactive Activity: Emerging Sports Investment Tool
@@ -209,6 +237,9 @@ Here's the strategic question driving this widget: Why are NWSL franchises value
 **Learning outcomes practiced:** MLO 4.3 (Women's sports and emerging sports investment opportunities)
 
 ---
+=======
+## Element 4: Emerging Sports Investment Tool Widget
+>>>>>>> Stashed changes
 
 **Widget Purpose:** Interactive tool for evaluating women's sports and emerging market investment opportunities
 
@@ -261,6 +292,7 @@ Here's the strategic question driving this widget: Why are NWSL franchises value
 
 **Uplimit Embed Code:**
 ```html
+<<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/emerging-sports-investment-tool.html"
   width="100%"
@@ -270,12 +302,25 @@ Here's the strategic question driving this widget: Why are NWSL franchises value
   aria-label="Interactive investment calculator for evaluating women's sports and emerging market opportunities where you adjust growth rates, risk premiums, and time horizons to calculate expected internal rate of return"
   allowfullscreen
   loading="lazy">
+=======
+<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/emerging-sports-investment-tool.html"
+        width="900"
+        height="800"
+        title="Emerging Sports Investment Tool - Evaluate women's sports and emerging market opportunities"
+        frameborder="0"
+        allowfullscreen
+        aria-label="Interactive investment calculator for women's sports and emerging sports properties with IRR and risk analysis">
+>>>>>>> Stashed changes
 </iframe>
 ```
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 6: **RENUMBERED** - Reflection Prompt After Widget 2 (was Element 5)
+=======
+## Element 5: Reflection Prompt After Widget 2
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -308,7 +353,11 @@ After experimenting with the Emerging Sports Investment Tool, reflect:
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 7: **RENUMBERED** - Details Accordion - Deep Dive: Why Equity Beats Fees (was Element 6)
+=======
+## Element 6: Details Accordion - Deep Dive: Why Equity Beats Fees
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -420,7 +469,11 @@ The math doesn't lie: Given sufficient time, equity always beats fees.
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 8: **RENUMBERED** - AI Chat Widget Configuration (was Element 7)
+=======
+## Element 7: AI Chat Widget Configuration
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element
@@ -447,6 +500,7 @@ Hi! I can help you understand insights from the Athlete Brand Calculator and Eme
 
 ---
 
+<<<<<<< Updated upstream
 ## 🎯 FINAL PROJECT CONNECTION
 
 **How Module 3 Supports Your Final Strategic Vision:**
@@ -470,6 +524,8 @@ When you craft your 5-year strategic vision in Week 5, Module 3's athlete econom
 
 ---
 
+=======
+>>>>>>> Stashed changes
 ## Module 3 Complete - Transition to Module 4
 
 **What You've Learned:**
@@ -488,8 +544,11 @@ Through hands-on experimentation, you've discovered:
 **Up Next: Module 4 - Advanced Interactive Simulations**
 You've built foundational understanding through experimentation. Now you'll apply these frameworks to complex multi-variable scenarios and strategic trade-offs.
 
+<<<<<<< Updated upstream
 Ready to tackle complex wealth-building scenarios? Let's apply your frameworks!
 
+=======
+>>>>>>> Stashed changes
 ---
 
 ## MODULE 3 Complete - Summary

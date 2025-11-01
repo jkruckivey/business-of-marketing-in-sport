@@ -260,7 +260,7 @@ reading to watching videos.
 **Design Rationale:**
 - **Two 2-minute concept videos** provide foundational knowledge in digestible chunks (prevents cognitive overload)
 - **10-12 minute executive interview** delivers authentic practitioner perspective from Bell Media/TSN leader
-- **VTT transcripts** ensure accessibility and allow text-based review
+- **VTT transcripts** ensure accessakjdskjsibility and allow text-based review
 - **▤ Details** provides text versions for students who prefer reading (UDL choice)
 - **AI Chat** offers on-demand support for confused students (UDL scaffolding)
 - Multiple means of representation: video (visual+audio), transcript (text), chat (interactive)

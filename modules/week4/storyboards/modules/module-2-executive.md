@@ -7,6 +7,7 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 1 | Type directly | Sets context, connects narrative |
+<<<<<<< Updated upstream
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
 | 3 | **ⓘ Infobox (Callout)** ⬤ Required | Context about videos + viewing instructions | Type directly | Sets viewing expectations |
 | 4 | **▶ Video 1** ⬤ Required | Athlete Revenue Streams Overview (2 min) | Upload MP4 + VTT | Introduction to 5 revenue streams |
@@ -15,6 +16,15 @@
 | 7 | **▶ Video 4** ◐ Recommended | Executive Interview: Women's Sports Expert (8-10 min) | Upload MP4 + VTT | Investment thesis for women's sports |
 | 8 | **▤ Details** ○ Optional | Video transcripts | Type directly | Accordion for text versions |
 | 9 | **◈ AI Chat Widget** ○ Optional | "Ask questions about athlete brands" | Configure in Uplimit | Named: "Athlete Brand Strategy Q&A" |
+=======
+| 2 | **ⓘ Infobox (Callout)** ⬤ Required | Context about videos + viewing instructions | Type directly | Sets viewing expectations |
+| 3 | **▶ Video 1** ⬤ Required | Athlete Revenue Streams Overview (2 min) | Upload MP4 + VTT | Introduction to 5 revenue streams |
+| 4 | **▶ Video 2** ⬤ Required | Executive Interview: Sports Agent (10-12 min) | Upload MP4 + VTT | Athlete representation strategy |
+| 5 | **▶ Video 3** ⬤ Required | Executive Interview: Don Rea, PGA Tour (10-12 min) | Upload MP4 + VTT | Golf's global expansion & emerging markets |
+| 6 | **▶ Video 4** ◐ Recommended | Executive Interview: Women's Sports Expert (8-10 min) | Upload MP4 + VTT | Investment thesis for women's sports |
+| 7 | **▤ Details** ○ Optional | Video transcripts | Type directly | Accordion for text versions |
+| 8 | **◈ AI Chat Widget** ○ Optional | "Ask questions about athlete brands" | Configure in Uplimit | Named: "Athlete Brand Strategy Q&A" |
+>>>>>>> Stashed changes
 
 ---
 
@@ -38,6 +48,7 @@ Their insights will ground the theory you're about to explore in Module 3 with r
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 2: **NEW** - Learning Outcomes Widget
 
 **Uplimit Implementation:**
@@ -65,6 +76,9 @@ Their insights will ground the theory you're about to explore in Module 3 with r
 ---
 
 ## Element 3: **RENUMBERED** - Infobox Content (was Element 2)
+=======
+## Element 2: Infobox Content
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -79,7 +93,11 @@ This module features four videos: one short concept video (2 minutes) introducin
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 4: **RENUMBERED** - Video 1 - Athlete Revenue Streams Overview (was Element 3)
+=======
+## Element 3: Video 1 - Athlete Revenue Streams Overview
+>>>>>>> Stashed changes
 
 **File:** `week4-video1-athlete-revenue-streams.mp4`
 **Duration:** 2 minutes
@@ -143,7 +161,11 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 5: **RENUMBERED** - Video 2 - Sports Agent Interview (was Element 4)
+=======
+## Element 4: Video 2 - Sports Agent Interview
+>>>>>>> Stashed changes
 
 **File:** `week4-video2-sports-agent-interview.mp4`
 **Duration:** 10-12 minutes
@@ -177,7 +199,11 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 6: **RENUMBERED** - Video 3 - Don Rea, PGA Tour Interview (was Element 5)
+=======
+## Element 5: Video 3 - Don Rea, PGA Tour Interview
+>>>>>>> Stashed changes
 
 **File:** `week4-video3-don-rea-pga-interview.mp4`
 **Duration:** 10-12 minutes
@@ -211,7 +237,11 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 7: **RENUMBERED** - Video 4 - Women's Sports Investment Expert (was Element 6)
+=======
+## Element 6: Video 4 - Women's Sports Investment Expert
+>>>>>>> Stashed changes
 
 **File:** `week4-video4-womens-sports-expert.mp4`
 **Duration:** 8-10 minutes
@@ -245,7 +275,11 @@ Successful athletes build wealth engines, not just income streams.
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 8: **RENUMBERED** - Details Accordion - Video Transcripts (was Element 7)
+=======
+## Element 7: Details Accordion - Video Transcripts
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -274,7 +308,11 @@ reading to watching videos.
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 9: **RENUMBERED** - AI Chat Widget Configuration (was Element 8)
+=======
+## Element 8: AI Chat Widget Configuration
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element
@@ -304,6 +342,7 @@ Hi! I can help explain concepts from the athlete brand and emerging sports video
 
 ---
 
+<<<<<<< Updated upstream
 ## 🎯 FINAL PROJECT CONNECTION
 
 **How Module 2 Supports Your Final Strategic Vision:**
@@ -328,6 +367,8 @@ When you design your 5-year strategic vision in Week 5, reference Module 2's exe
 
 ---
 
+=======
+>>>>>>> Stashed changes
 ## Module 2 Complete - Transition to Module 3
 
 **What You've Learned:**
@@ -351,6 +392,7 @@ Now that you've heard from practitioners, it's time to explore these concepts ha
 - Evaluate women's sports investments using the **Emerging Sports Investment Tool**
 - Simulate post-career wealth scenarios to see the power of compounding
 
+<<<<<<< Updated upstream
 Ready to experiment with athlete brand strategies? Let's go!
 
 ---
@@ -368,6 +410,9 @@ Ready to experiment with athlete brand strategies? Let's go!
 **Progress:** You're 40% through Week 4 content! You've heard from real sports agents, PGA executives, and women's sports investors—now you'll apply their frameworks through hands-on experimentation.
 
 *This break is optional but recommended. Return when you're ready to build athlete brand portfolios and evaluate emerging sports investments.*
+=======
+Ready to experiment? Let's go!
+>>>>>>> Stashed changes
 
 ---
 

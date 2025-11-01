@@ -13,10 +13,16 @@
 | 1 | **▶ Video** ⬤ Required | Athlete brand problem scenario (3 min) | Upload `week4-bridge-scenario.mp4` + VTT | Real executive facing athlete brand dilemma |
 | 2 | **◈ AI Roleplay** ◐ Recommended | The Brand Value Question diagnostic | Configure in Uplimit | Reveal knowledge gaps before learning begins |
 | 3 | **ⓘ Infobox** ⬤ Required | The athlete brand problem statement | Type directly | Use **Callout** variant, urgent business challenge |
+<<<<<<< Updated upstream
 | 4 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Athlete Brand Challenge + Quiz** | Embed `athlete-brand-pre-assessment.html` | Combined challenge text and quiz in single widget |
 | 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
 | 6 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-0.html` | Shows how module outcomes connect to course goals |
 
+=======
+| 4 | **▬ Text** ⬤ Required | Can you solve these problems? (Outcomes as questions) | Type directly | Reframes MLOs as student challenges |
+| 5 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Athlete Brand Knowledge Quiz** | Embed `athlete-brand-quiz.html` | Self-diagnostic before learning begins |
+| 6 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
+>>>>>>> Stashed changes
 
 ---
 
@@ -293,6 +299,7 @@ Check the box: **"Provide feedback but do not grade"**
 
 ---
 
+<<<<<<< Updated upstream
 **Student-Facing Instructions** (Copy into Uplimit "Instructions for Students" field):
 
 ```markdown
@@ -325,6 +332,14 @@ Your supervisor knows you're new to athlete brand strategy, so they're patient�
 
 ### What Happens Next
 After this exercise, you'll take a pre-assessment quiz that helps you identify exactly what you need to learn. By the end of Week 4, you'll return to this question and answer it confidently using the athlete brand framework.
+=======
+**Student-Facing Instructions** (Optional - if Uplimit provides separate Instructions field):
+
+```
+You are a junior analyst who just watched the Serena Williams brand valuation video. Your supervisor asks: "Can you explain where that extra $150-200M in brand value comes from?"
+
+Start the conversation by sharing your current thinking about how athletes build wealth beyond prize money and endorsements. This is a diagnostic exercise—struggle is expected and helps identify what you need to learn this week. The conversation will last 3-4 exchanges.
+>>>>>>> Stashed changes
 ```
 
 ---
@@ -354,6 +369,7 @@ Elite athletes face a strategic paradox: their playing career (8-12 years) occur
 
 ---
 
+<<<<<<< Updated upstream
 ## Element 4: Athlete Brand Pre-Assessment (Combined Widget)
 
 **Widget Purpose:** Combined challenge text + 10-question self-diagnostic quiz covering all 4 learning outcomes (MLO 4.1, 4.2, 4.3, 4.4)
@@ -397,6 +413,106 @@ Elite athletes face a strategic paradox: their playing career (8-12 years) occur
 ---
 
 ## Element 5: Infobox - Results Interpretation & Learning Path
+=======
+## Element 4: Text - Outcomes as "Can You..." Questions
+
+**Uplimit Implementation:**
+1. Select **Text** element in module builder
+2. Copy the markdown below directly into the text field
+
+```markdown
+# Can You Solve These Athlete Brand Problems?
+
+Elite athletes face unique strategic challenges that traditional business frameworks don't fully address. This week tests whether you can apply brand strategy thinking to individuals whose "product" is themselves.
+
+## **Challenge 1: Map the Five Athlete Revenue Streams**
+**The Problem:** A sports agent asks you: "My client just won Olympic gold. Where should we focus to build long-term wealth?" Can you map the five major athlete revenue streams and explain which create equity versus income?
+
+**What you'll need to know:**
+- Endorsements, owned businesses, investments, media/content, licensing
+- Fee-based income vs. equity-based wealth
+- Strategic timing: when to prioritize each stream
+
+**Test yourself now:** Can you name all five revenue streams and explain which ones build generational wealth? (Take the pre-assessment below to find out)
+
+---
+
+## **Challenge 2: Analyze Owned Assets vs. Endorsement Strategy**
+**The Problem:** Your client has two offers: (A) $10M to endorse Nike, or (B) $2M investment to launch her own athletic wear line. Which creates more value over 20 years? Can you calculate the trade-offs?
+
+**What you'll need to know:**
+- Equity value creation vs. fee income
+- Why Michael Jordan makes more from Nike royalties than he earned playing basketball
+- When endorsements make sense vs. when owned businesses are better
+- Capital requirements and risk profiles
+
+**Test yourself now:** Would you advise taking the $10M endorsement or investing in an owned business? Why? (Pre-assessment question 3)
+
+---
+
+## **Challenge 3: Evaluate Women's Sports Investment Thesis**
+**The Problem:** An investor asks: "Why should I invest in women's sports when viewership is 1/10th of men's?" Can you articulate the strategic opportunity?
+
+**What you'll need to know:**
+- Growth rate vs. absolute size (women's sports growing 300% faster)
+- Valuation gaps creating investment opportunities
+- Why first movers capture disproportionate returns
+- Examples: NWSL, WNBA, women's soccer, women's tennis
+
+**Test yourself now:** Can you explain three reasons why women's sports represent better ROI than investing in established men's leagues? (Pre-assessment question 5)
+
+---
+
+## **Challenge 4: Design Post-Career Transition Strategy**
+**The Problem:** Serena Williams retires at 41. She has $350M in career earnings. Her agent asks: "What should she do with the next 40 years?" Can you design a strategy that maximizes her brand value post-retirement?
+
+**What you'll need to know:**
+- How athlete brand value changes post-retirement (typically declines 60-80%)
+- Which assets maintain value (owned businesses, investments)
+- Which assets lose value (endorsements tied to playing career)
+- Case study: How Serena built Serena Ventures ($111M investment fund investing in companies founded by women and people of color)
+
+**Test yourself now:** Can you identify two assets Serena built DURING her playing career that generate value AFTER retirement? (Pre-assessment question 7)
+
+---
+
+## **Ready to Test Your Knowledge?**
+
+Before you dive into this week's content, take the 10-question Athlete Brand Knowledge Quiz below. This isn't graded—it's a self-diagnostic to help you understand:
+
+- What you already know (so you can focus on what's new)
+- Where you have knowledge gaps (so you know what to prioritize)
+- How your business intuition applies to athlete brands (or doesn't)
+
+**Your results will give you a personalized learning path for this week.**
+
+Let's see what you've got! ↓
+```
+
+---
+
+## Element 5: Athlete Brand Knowledge Pre-Assessment Quiz
+
+**Widget Purpose:** 10-question self-diagnostic quiz covering all 4 learning outcomes (MLO 4.1, 4.2, 4.3, 4.4)
+
+**Implementation:** Use iframe widget (HTML file to be created) or Uplimit quiz builder
+
+**Quiz Features:**
+- Immediate feedback after each question
+- Explanation for correct/incorrect answers
+- Final score + breakdown by learning outcome
+- Personalized learning path based on results
+
+[Note: Full quiz content with 10 questions would be developed following the same pattern as Week 1's quiz, testing knowledge of:
+- MLO 4.1: Five athlete revenue streams (endorsements, owned businesses, investments, media/content, licensing)
+- MLO 4.2: Owned assets vs. endorsement strategy (equity building vs. fee income)
+- MLO 4.3: Women's sports investment thesis (growth rates, valuation gaps, first-mover advantages)
+- MLO 4.4: Post-career transition strategy (asset longevity, brand value decline, case studies)]
+
+---
+
+## Element 6: Infobox - Results Interpretation & Learning Path
+>>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Infobox** element in module builder
@@ -413,6 +529,7 @@ Your quiz results create a personalized learning path for this week. Lower score
 
 ---
 
+<<<<<<< Updated upstream
 ## 🎯 FINAL PROJECT CONNECTION
 
 **How Module 0 Supports Your Final Strategic Vision:**
@@ -465,6 +582,9 @@ When you create your 5-year strategic vision in Week 5, Module 0's athlete brand
 - WCAG 2.2 AA compliant with keyboard navigation and screen reader support
 
 ## Module Summary
+=======
+## Module 0 Complete - Transition to Module 1
+>>>>>>> Stashed changes
 
 **What You've Accomplished:**
 You've been hooked by a real athlete branding problem—the Serena Williams $500M valuation paradox—and you've taken your first steps toward solving it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your knowledge gaps are. That's strategic clarity.
@@ -475,7 +595,11 @@ The fact that you struggled with explaining where the $150-200M additional brand
 **Up Next: Module 1 - Learning Outcomes**
 Now that you've seen the problem and identified your knowledge gaps, Module 1 will show you exactly what you're going to learn this week. You'll see the four key challenges you'll be able to solve—challenges that will transform you from someone who thinks "athlete brand = endorsements" into someone who can design a comprehensive wealth-building strategy for elite athletes.
 
+<<<<<<< Updated upstream
 Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path!
+=======
+Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
+>>>>>>> Stashed changes
 
 ---
 

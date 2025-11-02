@@ -73,7 +73,7 @@
             color: var(--color-neutral-700);
             border: 1px solid var(--color-neutral-300);
             border-radius: 6px;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             cursor: pointer;
@@ -340,7 +340,7 @@
 
         .btn {
             padding: 0.625rem 1.25rem;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             border-radius: 6px;
@@ -505,11 +505,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('results')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('results');}" tabindex="0" role="button" aria-expanded="false" aria-controls="results-content">
+            <div class="section-header" onclick="toggleSection('results')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('results');}" tabindex="0" role="button" aria-expanded="true" aria-controls="results-content">
                 <h2>Valuation Results</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="results-content">
+            <div class="section-content expanded" id="results-content">
                 <div class="section-inner">
                     <div class="metric-grid">
                         <div class="metric">
@@ -535,8 +535,8 @@
         </div>
 
         <div class="actions">
-            <button class="btn btn-primary" onclick="exportData()" aria-label="Export calculations as JSON">
-                Export Calculations
+            <button class="btn btn-primary" onclick="exportData()" aria-label="Export calculations as CSV">
+                Export Data (CSV)
             </button>
             <button class="btn btn-secondary" onclick="resetCalculator()" aria-label="Reset calculator to default values">
                 Reset Calculator
@@ -671,14 +671,14 @@
                         label: 'CPM ($)',
                         data: [sponsorshipCPM, 7000, 30],
                         backgroundColor: [
-                            'rgba(64, 64, 64, 0.8)',
-                            'rgba(163, 163, 163, 0.8)',
-                            'rgba(212, 212, 212, 0.8)'
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-300') + 'cc'
                         ],
                         borderColor: [
-                            'rgb(64, 64, 64)',
-                            'rgb(163, 163, 163)',
-                            'rgb(212, 212, 212)'
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700'),
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400'),
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-300')
                         ],
                         borderWidth: 1
                     }]
@@ -698,7 +698,7 @@
                                 size: 14,
                                 weight: '600'
                             },
-                            color: '#171717'
+                            color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-900')
                         }
                     },
                     scales: {
@@ -711,17 +711,17 @@
                                     family: 'Geist',
                                     size: 12
                                 },
-                                color: '#525252'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-600')
                             },
                             ticks: {
                                 font: {
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#737373'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500')
                             },
                             grid: {
-                                color: '#e5e5e5'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-200')
                             }
                         },
                         x: {
@@ -730,7 +730,7 @@
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#737373'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500')
                             },
                             grid: {
                                 display: false
@@ -742,29 +742,32 @@
         }
 
         function exportData() {
-            const data = {
-                inputs: {
-                    rightsFee: `$${document.getElementById('rightsFee').value}M`,
-                    broadcastReach: document.getElementById('broadcastReach').value,
-                    gamesPerSeason: document.getElementById('gamesPerSeason').value,
-                    attendance: document.getElementById('attendance').value,
-                    digitalImpressions: `${document.getElementById('digitalImpressions').value}M`,
-                    logoExposure: `${document.getElementById('logoExposure').value}%`
-                },
-                results: {
-                    totalImpressions: document.getElementById('totalImpressions').textContent,
-                    cpm: document.getElementById('cpmValue').textContent,
-                    grade: document.getElementById('gradeBadge').textContent.trim(),
-                    insight: document.getElementById('insightText').textContent
-                },
-                timestamp: new Date().toISOString()
-            };
+            // Build CSV content
+            const csvRows = [
+                ['Sponsorship Valuation Calculator - Export'],
+                ['Timestamp', new Date().toISOString()],
+                [],
+                ['INPUTS'],
+                ['Rights Fee', `$${document.getElementById('rightsFee').value}M`],
+                ['Broadcast Reach', document.getElementById('broadcastReach').value],
+                ['Games Per Season', document.getElementById('gamesPerSeason').value],
+                ['Attendance', document.getElementById('attendance').value],
+                ['Digital Impressions', `${document.getElementById('digitalImpressions').value}M`],
+                ['Logo Exposure', `${document.getElementById('logoExposure').value}%`],
+                [],
+                ['RESULTS'],
+                ['Total Impressions', document.getElementById('totalImpressions').textContent],
+                ['CPM', document.getElementById('cpmValue').textContent],
+                ['Grade', document.getElementById('gradeBadge').textContent.trim()],
+                ['Insight', document.getElementById('insightText').textContent]
+            ];
 
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const csvContent = csvRows.map(row => row.join(',')).join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'sponsorship-valuation.json';
+            a.download = 'sponsorship-valuation.csv';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);

@@ -477,31 +477,26 @@ function calculateRightsValue(avgViewers, numGames, covetedDemoPercent, cpm) {
 
 ### 📝 CHECK YOUR UNDERSTANDING: Media Rights Valuation
 
+### ⚙ Interactive Widget: Media Rights Valuation Knowledge Check
+
 **Quick Quiz (2 minutes)** - Test your grasp of rights valuation fundamentals before moving forward.
 
-**Question 1: Which factor is the PRIMARY driver of media rights valuations?**
-- A) Content volume (number of games)
-- B) League brand prestige
-- C) **Audience size and demographics** ✓
-- D) Platform flexibility
+This interactive knowledge check covers three key concepts:
+1. Primary drivers of media rights valuations (audience size vs. other factors)
+2. How total audience reach determines rights value (NFL vs. MLS comparison)
+3. Why sports command premium advertising rates ("appointment viewing" phenomenon)
 
-**Answer:** C - Audience size is the #1 valuation driver. The NFL commands $10B/year ($110B over 11 years) primarily because of 17M average viewers per game, not just brand prestige.
+This is not graded—it's designed to help you identify concepts to focus on as you continue through the module. You'll receive immediate feedback on each question with explanations.
 
-**Question 2: The NFL's media rights are worth $10B/year. MLS rights are worth $250M/year (40x less). What's the main reason?**
-- A) MLS has fewer games than NFL
-- B) **MLS averages 300K viewers vs. NFL's 17M viewers** ✓
-- C) NFL has more expensive production costs
-- D) MLS doesn't offer digital rights
+**Embed:** `modules/week2/widgets/media-rights-valuation-quiz.html`
 
-**Answer:** B - Total audience reach matters most. NFL: 17M viewers × 272 games = massive reach. MLS: 300K viewers × 408 games = much smaller reach, despite more games.
+**Accessibility features:**
+- ✅ Full keyboard navigation
+- ✅ Screen reader support with ARIA labels
+- ✅ High contrast mode compatible
+- ✅ Immediate feedback with explanations
 
-**Question 3: Why do sports command premium CPM advertising rates ($50-70) vs. scripted TV ($15-25)?**
-- A) Sports fans have higher incomes
-- B) **Sports deliver "appointment viewing" (simultaneous, engaged audiences)** ✓
-- C) Sports have longer commercial breaks
-- D) Sports attract younger demographics
-
-**Answer:** B - Sports are the last "appointment viewing" in an on-demand world. Fans watch live (can't avoid spoilers), creating simultaneous, engaged audiences that advertisers pay premiums to reach.
+**Implementation Notes:** HTML quiz with 3 multiple-choice questions, JavaScript validation, instant feedback system, score tracking with personalized guidance.
 
 ---
 
@@ -626,31 +621,26 @@ This unique characteristic explains why sports rights command prices that seem e
 
 ### 📝 CHECK YOUR UNDERSTANDING: Exclusivity & Competition
 
+### ⚙ Interactive Widget: Exclusivity & Competition Knowledge Check
+
 **Quick Quiz (2 minutes)** - Test your grasp of exclusivity dynamics and appointment viewing before continuing.
 
-**Question 1: Why do exclusive rights cost 2-3x more than non-exclusive packages?**
-- A) Exclusive deals require more legal work
-- B) **Exclusivity creates competitive bidding wars between traditional networks, streamers, and tech giants** ✓
-- C) Exclusive content has higher production costs
-- D) Non-exclusive deals aren't available for major sports
+This interactive knowledge check covers three key concepts:
+1. Why exclusive rights command 2-3x premium pricing (competitive bidding wars)
+2. What makes sports "appointment viewing" in 2024 (spoiler risk forcing live viewing)
+3. NFL's strategic package splits (maximizing total value through multiple bidders)
 
-**Answer:** B - When Amazon entered NFL rights bidding (2021), it drove prices up 75% despite stable ratings. Multiple bidders (networks + streamers + tech giants) competing for exclusive access creates exponential price increases.
+This is not graded—it's designed to help you identify concepts to focus on as you continue through the module. You'll receive immediate feedback on each question with real-world examples.
 
-**Question 2: What makes sports "appointment viewing" in 2024?**
-- A) Sports are scheduled at convenient times
-- B) Sports games are shorter than movies
-- C) **Sports can't be watched "later" without risking spoilers from social media** ✓
-- D) Sports require expensive cable subscriptions
+**Embed:** `modules/week2/widgets/exclusivity-competition-quiz.html`
 
-**Answer:** C - Sports are the last content you MUST watch live. Social media, news alerts, and friends will spoil results if you wait. This creates predictable, simultaneous audiences—extremely valuable in an on-demand world.
+**Accessibility features:**
+- ✅ Full keyboard navigation
+- ✅ Screen reader support with ARIA labels
+- ✅ High contrast mode compatible
+- ✅ Immediate feedback with explanations
 
-**Question 3: When the NFL split packages across CBS, FOX, NBC, ESPN, and Amazon (instead of single exclusive bidder), the result was:**
-- A) Lower total rights value (less competition)
-- B) **Higher total rights value (multiple bidders maximized revenue)** ✓
-- C) Confused fans who couldn't find games
-- D) Lower production quality across networks
-
-**Answer:** B - NFL maximized total value by creating competition among multiple bidders. Each network/platform paid premium prices to secure THEIR exclusive package. Total: $110B over 11 years. Strategy: split to multiply bidding wars.
+**Implementation Notes:** HTML quiz with 3 multiple-choice questions, JavaScript validation, instant feedback system with NFL and Amazon case examples, score tracking with personalized guidance.
 
 ---
 
@@ -906,33 +896,29 @@ function calculateEngagementValue(baseFans, baseFanValue, selectedTactics) {
 
 ### 📝 CHECK YOUR UNDERSTANDING: Platforms & Fan Engagement (Final Check)
 
+### ⚙ Interactive Widget: Platforms & Fan Engagement Knowledge Check
+
 **Quick Quiz (2 minutes)** - Test your mastery of platform economics and engagement monetization before moving to the simulation.
 
-**Question 1: What's the key difference between linear TV and streaming/DTC profitability timelines?**
-- A) Linear TV is always more profitable
-- B) **Linear TV expects immediate profitability; streaming uses 3-5 year customer LTV model** ✓
-- C) Streaming is cheaper to operate than linear TV
-- D) Linear TV has higher subscriber growth rates
+This final knowledge check covers three advanced concepts:
+1. Linear TV vs. streaming profitability timelines (immediate ROI vs. 3-5 year LTV model)
+2. Rogers NHL vs. DAZN Canada case comparison (concentration risk vs. portfolio diversification)
+3. Fan engagement value chain (passive viewer to super-fan transformation tactics)
 
-**Answer:** B - Linear TV business model: Immediate ROI required (ad revenue + carriage fees). Streaming model: Invest in growth for 3-5 years, bet on customer lifetime value. Different economics, different timelines.
+This is not graded—it confirms you're ready for the interactive simulation. You'll receive immediate feedback on each question with detailed explanations and real-world case examples.
 
-**Question 2: Which statement about Rogers NHL deal vs. DAZN Canada is TRUE?**
-- A) Rogers' $433M/year NHL-only strategy was more profitable than DAZN's $50M/year multi-sport approach
-- B) **DAZN's multi-sport portfolio ($50M/year) achieved profitability in Year 4; Rogers never broke even** ✓
-- C) Both companies failed financially due to cord-cutting
-- D) DAZN copied Rogers' exclusive NHL strategy
+**Embed:** `modules/week2/widgets/platforms-fan-engagement-quiz.html`
 
-**Answer:** B - DAZN's diversification strategy (soccer, boxing, NFL, combat sports at $50M/year total) spread risk and achieved profitability Year 4. Rogers' single-property bet ($433M/year NHL-only) created concentration risk and never broke even after 10 years. Lesson: Portfolio diversification matters.
+**Accessibility features:**
+- ✅ Full keyboard navigation
+- ✅ Screen reader support with ARIA labels
+- ✅ High contrast mode compatible
+- ✅ Immediate feedback with case examples
+- ✅ Completion badge for Module 3
 
-**Question 3: In the fan engagement value chain, what drives a fan from "Passive Viewer" ($5-15/year value) to "Super-Fan" ($300-500+/year value)?**
-- A) Team winning records
-- B) **Active engagement tactics: fantasy integration, betting, exclusive content subscriptions, app usage** ✓
-- C) Lower ticket prices
-- D) More TV games available
+**Implementation Notes:** HTML quiz with 3 multiple-choice questions covering platform economics and engagement monetization, JavaScript validation with Rogers/DAZN case analysis, score tracking with personalized guidance, completion message indicating readiness for Streaming Wars simulation.
 
-**Answer:** B - Passive viewers watch occasionally (basic ad value). Super-fans engage deeply: fantasy sports, betting partnerships, exclusive content subscriptions, app features. Platforms that drive engagement (DraftKings+NBA, Apple TV+MLS) extract 20-50x more value per fan. Engagement = monetization multiplier.
-
-**🎯 Module 3 Complete!** You've mastered media rights valuation, exclusivity dynamics, platform economics, and fan engagement. Next: Apply these frameworks in the Streaming Wars simulation.
+**🎯 Module 3 Complete!** After completing this quiz, you've mastered media rights valuation, exclusivity dynamics, platform economics, and fan engagement. Next: Apply these frameworks in the Streaming Wars simulation.
 
 ---
 

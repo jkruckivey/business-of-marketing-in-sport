@@ -414,7 +414,7 @@
         }
 
         .level-badge.master {
-            background: #fef3c7;
+            background: var(--color-neutral-100);
             color: #92400e;
         }
 
@@ -1076,10 +1076,10 @@
             feedbackDiv.classList.add(isCorrect ? 'correct' : 'incorrect', 'show');
 
             if (q.isRanking) {
-                feedbackStrong.textContent = isCorrect ? '✓ Correct!' : '◐ Partial credit';
+                feedbackStrong.textContent = isCorrect ? 'Correct!' : 'Partial credit';
                 feedbackP.textContent = q.feedback;
             } else {
-                feedbackStrong.textContent = isCorrect ? '✓ Correct!' : '✗ Not quite.';
+                feedbackStrong.textContent = isCorrect ? 'Correct!' : 'Not quite.';
                 feedbackP.textContent = isCorrect ? q.feedback.correct : q.feedback.incorrect;
             }
 

@@ -5,16 +5,41 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Week 2 key takeaways | Type directly | Blue variant, summary |
-| 2 | **Text** ⬤ Required | Anchor Project Milestone 1: Team Formation | Type directly | Launch group project |
-| 3 | **iFrame** ⬤ Required | Property Selection Tool | Custom widget hosted | Interactive team activity |
-| 4 | **iFrame** ⬤ Required | Team Charter Builder | Custom widget hosted | Team formation tool |
-| 5 | **Text** ◐ Recommended | Preview of Week 3 content | Type directly | Build anticipation |
-| 6 | **Details** ○ Optional | Anchor Project FAQs (optional) | Type directly | Optional guidance |
-| 7 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
+| 1 | **Text** ⬤ Required | Connecting introduction from Module 6 | Type directly | Narrative bridge to wrap-up |
+| 2 | **Infobox (Callout)** ⬤ Required | Week 2 key takeaways + journey recap + reflection | Type directly | Blue variant, comprehensive summary |
+| 3 | **Text** ⬤ Required | Anchor Project Milestone 1: Team Formation | Type directly | Launch group project |
+| 4 | **iFrame** ⬤ Required | Property Selection Tool | Custom widget hosted | Interactive team activity |
+| 5 | **iFrame** ⬤ Required | Team Charter Builder | Custom widget hosted | Team formation tool |
+| 6 | **Text** ◐ Recommended | Preview of Week 3 content | Type directly | Build anticipation |
+| 7 | **Details** ○ Optional | Anchor Project FAQs (optional) | Type directly | Optional guidance |
+| 8 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
+| 9 | **Text** ⬤ Required | Final Project Connection | Type directly | How Week 2 supports capstone |
+| 10 | **Text** ⬤ Required | Module 7 Complete - Transition to Week 3 | Type directly | Recap and preview |
 
+---
 
-**Detailed Content Specifications:**
+## Element 1: Connecting Introduction
+
+You've just completed the Rogers NHL Mini-Case Memo (Module 6), analyzing a billion-dollar media rights deal and practicing strategic recommendations. You used peer and AI feedback through the PAIRR methodology to refine your analysis—a process that mirrors real executive decision-making.
+
+Now it's time to wrap up Week 2 and apply your media strategy expertise to your Anchor Project. Module 7 consolidates your learning across all six modules, launches your team formation process, and previews Week 3's focus on sponsorship and betting. You'll also reflect on your Week 2 journey and select the sport property that will be the focus of your final capstone project.
+
+---
+
+## Element 2: Week 2 Key Takeaways & Journey Recap
+
+### Your Week 2 Journey:
+
+Let's look back at what you've accomplished across all seven modules:
+
+- **Module 0 (Bridge):** Explored the Rogers NHL mega-deal announcement and set context
+- **Module 1 (Welcome):** Established 4 learning outcomes focused on media rights and fan monetization
+- **Module 2 (Executive):** Heard from a TSN/DAZN leader on rights valuation trade-offs and platform economics
+- **Module 3 (Framework):** Explored media valuation frameworks and platform economics through readings
+- **Module 4 (Interactive):** Simulated streaming wars and made strategic media strategy decisions
+- **Module 5 (Case Study):** Deep-dived into the Rogers $5.2B NHL deal with case analysis and retrospective
+- **Module 6 (Assessment):** Wrote a strategic mini-case memo with PAIRR feedback (peer + AI)
+- **Module 7 (Wrap-Up):** Now! Team formation, property selection, Week 3 preview
 
 ### Infobox Content:
 ```
@@ -35,6 +60,22 @@ Plus: This week you'll form your Anchor Project team and select your sport prope
 
 Well done! 👏
 ```
+
+### Week 2 Reflection
+
+Take 5-10 minutes to reflect on your Week 2 learning:
+
+**1. Strategic Insight:** What surprised you most about media rights economics? How did the Rogers/NHL case challenge your assumptions about billion-dollar deals?
+
+**2. Application Readiness:** How confident do you feel analyzing media strategies for your Anchor Project property? What concepts from Week 2 need reinforcement?
+
+**3. Professional Growth:** How will Week 2's media frameworks change how you evaluate sports business decisions in your career?
+
+**4. Connection to Week 3:** How do you expect media strategy to interact with sponsorship and betting (Week 3's focus)?
+
+---
+
+## Element 3: Anchor Project Milestone 1 - Team Formation & Property Selection
 
 ### Text Content - Anchor Project Milestone 1:
 ```
@@ -84,7 +125,62 @@ on team composition, property selection defensibility, and articulated challenge
 **Use the tools below to get started!**
 ```
 
-### iFrame 1 Specifications - Property Selection Tool:
+---
+
+## Element 4: Property Selection Tool (Interactive Widget)
+
+### Student-Facing Text Content:
+**Copy this markdown directly into Uplimit BEFORE the widget:**
+
+```markdown
+# Step 2: Choose Your Sport Property
+
+Your team is formed—now it's time to select the sport property you'll analyze for the Anchor Project. This decision shapes your entire semester, so choose wisely!
+
+## Why This Matters
+
+The property you select determines:
+- **Complexity of analysis**: Established teams have abundant data; emerging properties require more inference
+- **Marketing challenges**: Some properties face sponsorship saturation, others struggle with awareness
+- **Team interest**: You'll spend 20+ hours on this property—choose something you're passionate about
+
+## Using the Property Selection Tool
+
+The interactive tool below helps you explore **19 curated Canadian sport properties** across three categories:
+
+**Legacy Properties** - Established teams with long histories (e.g., Toronto FC, Vancouver Whitecaps)
+- ✅ **Advantages**: Rich data, multiple revenue streams, clear market position
+- ⚠️ **Challenges**: Mature markets, limited growth headroom, heavy competition
+
+**Emerging Sports** - High-growth opportunities (e.g., Canadian Premier League, National Lacrosse League)
+- ✅ **Advantages**: Untapped markets, innovation opportunities, entrepreneurial spirit
+- ⚠️ **Challenges**: Limited financial data, uncertain trajectories, smaller budgets
+
+**Major Events** - One-time or recurring spectacles (e.g., 2026 FIFA World Cup - Toronto/Vancouver)
+- ✅ **Advantages**: Massive scale, global visibility, legacy planning challenges
+- ⚠️ **Challenges**: Time-limited, different dynamics than year-round properties
+
+## How It Works
+
+1. **Filter by Category, Market Size, Revenue Tier** - Narrow your options based on team interests
+2. **Explore Property Cards** - Each card shows: Name, league, market, revenue estimate, key marketing challenges
+3. **Compare Properties** - Select up to 3 properties for side-by-side comparison
+4. **Export Shortlist** - Download your top 3-5 options as PDF for team discussion
+
+## Strategic Considerations
+
+Before choosing, discuss as a team:
+- **Data availability**: Can you find financial reports, attendance data, sponsorship lists?
+- **Scope appropriateness**: Is it manageable in 4 weeks but substantial enough for an MBA-level analysis?
+- **Marketing challenges**: Does it present interesting problems (not just "spend more on social media")?
+- **Team expertise**: Does anyone have knowledge of this sport/league that could add depth?
+
+**Time:** 15-20 minutes to explore, discuss, and select your property
+```
+
+---
+
+### iFrame Specifications (For LMS Builder):
 
 **Widget Purpose:** Help teams explore and select a sport property for their Anchor Project marketing plan.
 
@@ -123,7 +219,73 @@ on team composition, property selection defensibility, and articulated challenge
 - ✅ High contrast card design
 - ✅ Focus indicators on clickable cards
 
-### iFrame 2 Specifications - Team Charter Builder:
+---
+
+## Element 5: Team Charter Builder (Interactive Widget)
+
+### Student-Facing Text Content:
+**Copy this markdown directly into Uplimit BEFORE the widget:**
+
+```markdown
+# Step 1: Build Your Team Charter
+
+Before diving into the Anchor Project, your team needs a foundation: clear roles, communication norms, and conflict resolution processes. Research shows teams with explicit agreements outperform those without by 40%.
+
+## Why Team Charters Matter
+
+Group projects fail for predictable reasons:
+- ❌ **Unclear roles**: "I thought YOU were doing that..."
+- ❌ **Unequal workload**: 2 people do 80% of the work
+- ❌ **Communication breakdowns**: Missed deadlines because someone didn't check Slack
+- ❌ **Unresolved conflicts**: Tension festers until it's too late to fix
+
+A Team Charter prevents these issues by establishing agreements **before** problems arise.
+
+## What You'll Create
+
+The Team Charter Builder guides you through **4 essential sections**:
+
+### Section 1: Team Roster
+- Names, roles, strengths, contact information
+- **Roles to assign**: Project Manager (coordinates timelines), Research Lead (gathers data), Financial Analyst (numbers/projections), Creative Lead (presentation design), Editor (polishes deliverables)
+- **Tip**: Match roles to individual strengths, not just "who volunteers first"
+
+### Section 2: Communication Norms
+- Meeting frequency (weekly? bi-weekly? synchronous or async?)
+- Communication tools (Slack, Teams, email, text?)
+- Response time expectations (24 hours? 48 hours?)
+- **Tip**: Over-communicate availability—share schedules, exam periods, work commitments upfront
+
+### Section 3: Working Guidelines
+- Decision-making process (consensus? majority vote? PM has tiebreaker?)
+- Work distribution approach (divide-and-conquer? collaborative drafting?)
+- Accountability mechanisms (how do we handle missed deadlines?)
+- **Tip**: Agree on "minimum viable participation" (e.g., everyone attends 80% of meetings, completes assigned tasks on time)
+
+### Section 4: Conflict Resolution
+- Escalation steps (direct conversation → full team meeting → instructor mediation)
+- Ground rules for disagreements (assume good intent, focus on ideas not people, no ghosting)
+- **Tip**: Name conflicts early and small before they become big and personal
+
+## How It Works
+
+1. **Complete Each Section** - The widget provides prompts and examples for each charter component
+2. **Discuss as Team** - Use the widget to facilitate conversation (project on screen during first team meeting)
+3. **Export as PDF** - Save your completed charter and share with all team members
+4. **Email Reminders** - Optionally send charter to everyone's inbox for future reference
+
+## After Completing Your Charter
+
+- **Submit your charter** as part of your Week 2 Anchor Project deliverable
+- **Refer back to it** throughout the project when questions arise ("What did we agree about deadlines?")
+- **Update if needed** - Charters aren't rigid; adjust if team dynamics change
+
+**Ready to build your team's foundation?** Use the Team Charter Builder below to establish your working agreements. Spend 20-25 minutes on this—it's an investment that will save hours of conflict later.
+```
+
+---
+
+### iFrame Specifications (For LMS Builder):
 
 **Widget Purpose:** Guide teams through creating a comprehensive team charter to establish norms, roles, and conflict resolution processes.
 
@@ -164,6 +326,10 @@ on team composition, property selection defensibility, and articulated challenge
 - ✅ Clear focus indicators on active fields
 - ✅ Error messages announced to screen readers
 
+---
+
+## Element 6: Week 3 Preview - Sponsorship & Betting
+
 ### Text Content - Week 3 Preview:
 ```
 ## Looking Ahead: Week 3 - Sponsorship & Betting (The Growth Engines)
@@ -186,6 +352,10 @@ to develop your property's revenue strategy.
 
 Get ready for another intensive week! See you in Week 3.
 ```
+
+---
+
+## Element 7: Anchor Project FAQs (Optional Guidance)
 
 ### Details Content - Anchor Project FAQs:
 ```
@@ -227,8 +397,9 @@ check-ins. The AI chat assistants can help with specific questions. Discussion f
 are great for crowdsourcing ideas from other teams.
 ```
 
+---
 
-### Element 7: Learning Outcomes Widget
+## Element 8: Learning Outcomes Widget
 
 **Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
 
@@ -263,6 +434,81 @@ are great for crowdsourcing ideas from other teams.
 - **Details (FAQs)** answers common questions without overwhelming main flow (UDL progressive disclosure)
 - Anchor Project integrates course content into applied, collaborative work (authentic assessment, teamwork)
 - Tools reduce coordination friction and provide structure (scaffolding for group work)
+
+---
+
+## Element 9: Final Project Connection
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Week 2 Supports Your Final Strategic Vision:**
+
+Week 2 taught you how to evaluate and design media rights strategies—the largest revenue stream (40-60%) for most sports properties. This expertise is central to your Week 5 capstone.
+
+**What You Mastered:**
+- Media rights valuation frameworks (audience × demographics × exclusivity × platform reach)
+- Platform economics (linear advertising vs. streaming subscription models)
+- Deal structure and negotiation (term, exclusivity, revenue models, flexibility clauses)
+- Performance evaluation (projected vs. actual analysis, mistake identification, strategic pivots)
+
+**How to Apply This to Your Final Project:**
+
+Your Week 5 strategic vision must integrate Week 2's media frameworks comprehensively:
+
+- **Media Rights Section (likely 30-40% of your capstone):** This is your property's largest revenue stream. Use Week 2's valuation tools, platform comparison frameworks, and deal structure templates to design a sophisticated 5-year media strategy.
+- **Integration with Other Weeks:** Media strategy connects to everything: Week 1 (ecosystem effects), Week 3 (sponsorship amplification through media), Week 4 (athlete brand exposure via media), Week 5 (heritage vs. innovation in media approach).
+- **Real Numbers:** Your vision needs quantitative projections. Use Week 2's widgets and case data to benchmark realistic media rights valuations for your property.
+
+**Integration Across All Weeks:**
+- Week 1 = Revenue ecosystem foundation
+- **Week 2 = Media rights specialization (40-60% of revenue)**
+- Week 3 = Sponsorship/betting specialization
+- Week 4 = Athlete brand specialization
+- Week 5 = Synthesis into 5-year vision
+
+**Real-World Application:** Media strategy is the foundation of modern sports economics. Your Week 5 capstone must demonstrate mastery of this domain—Week 2 provided the technical toolkit.
+
+---
+
+## Element 10: Module 7 Complete - Transition to Week 3
+
+**What You've Accomplished:**
+
+You've completed Week 2! You've formed your Anchor Project team, selected your sport property, and synthesized Week 2's media strategy frameworks. You now understand how to value media rights, compare platform economics, and evaluate billion-dollar deals like Rogers/NHL.
+
+**Key Takeaways:**
+- Your team is formed with clear roles and communication norms (Team Charter)
+- Your property is selected with defensible rationale for marketing challenges
+- Week 2's media frameworks (40-60% of revenue) are now tools in your strategic toolkit
+- You've practiced PAIRR methodology (peer + AI feedback) that develops both strategic thinking and AI literacy
+- You understand the last "appointment viewing" phenomenon that makes sports content premium
+
+**Module 7 Reflection:**
+- You've reflected on your Week 2 learning journey across 7 modules
+- You've identified which concepts need reinforcement for your Anchor Project
+- You've connected media strategy to professional growth and career application
+
+**Up Next: Week 3 - Sponsorship & Betting (The Growth Engines)**
+
+Next week shifts to the fastest-growing revenue streams: corporate sponsorship activation and sports betting integration. You'll explore:
+- How sponsorship ROI is measured and maximized (beyond logo placement)
+- Betting partnerships and data monetization strategies
+- Regulatory landscape and integrity concerns
+- Real tactics used by FanDuel, MGM, and major leagues
+
+**Executive Leaders:** Andrew Sneyd (FanDuel) + Brand Sponsor Executive
+**Core Case:** FanDuel - Betting on Sports (HBS 520038)
+
+**Anchor Project Continues:** Week 3 Milestone is **Revenue Model & Sponsorship Strategy**. You'll use the Revenue Model Canvas Builder and Sponsorship ROI Calculator to develop your property's revenue strategy.
+
+Get ready for another intensive week—and **congratulations on completing Week 2!** See you in Week 3.
+
+---
+
+---
+
+# INSTRUCTOR IMPLEMENTATION NOTES
+**The content below is for LMS builders and instructors only. Not student-facing.**
 
 ---
 
@@ -427,37 +673,6 @@ Verify that every element serves the MLOs:
 | **MLO 2.4:** Evaluate Rogers NHL deal | Evaluation | • Text (full case narrative)<br>• Table (deal summary)<br>• Details (3 exhibits with financial/viewership data)<br>• Video (10-year retrospective)<br>• Video (executive session Part 3) | Mini-Case Memo (overall deal evaluation + recommendations) |
 
 **Alignment Check:** ✅ All MLOs supported by multiple elements and measured comprehensively by assessment
-
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Week 2 Supports Your Final Strategic Vision:**
-
-Week 2 taught you how to evaluate and design media rights strategies—the largest revenue stream (40-60%) for most sports properties. This expertise is central to your Week 5 capstone.
-
-**What You Mastered:**
-- Media rights valuation frameworks (audience × demographics × exclusivity × platform reach)
-- Platform economics (linear advertising vs. streaming subscription models)
-- Deal structure and negotiation (term, exclusivity, revenue models, flexibility clauses)
-- Performance evaluation (projected vs. actual analysis, mistake identification, strategic pivots)
-
-**How to Apply This to Your Final Project:**
-
-Your Week 5 strategic vision must integrate Week 2's media frameworks comprehensively:
-
-- **Media Rights Section (likely 30-40% of your capstone):** This is your property's largest revenue stream. Use Week 2's valuation tools, platform comparison frameworks, and deal structure templates to design a sophisticated 5-year media strategy.
-- **Integration with Other Weeks:** Media strategy connects to everything: Week 1 (ecosystem effects), Week 3 (sponsorship amplification through media), Week 4 (athlete brand exposure via media), Week 5 (heritage vs. innovation in media approach).
-- **Real Numbers:** Your vision needs quantitative projections. Use Week 2's widgets and case data to benchmark realistic media rights valuations for your property.
-
-**Integration Across All Weeks:**
-- Week 1 = Revenue ecosystem foundation
-- **Week 2 = Media rights specialization (40-60% of revenue)**
-- Week 3 = Sponsorship/betting specialization
-- Week 4 = Athlete brand specialization
-- Week 5 = Synthesis into 5-year vision
-
-**Real-World Application:** Media strategy is the foundation of modern sports economics. Your Week 5 capstone must demonstrate mastery of this domain—Week 2 provided the technical toolkit.
 
 ---
 

@@ -8,6 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d1d5db;
+            --color-neutral-900: #171717;
+            --color-text-primary: #2d3748;
+            --color-text-secondary: #6b7280;
+            --color-text-dark: #1f2937;
+            --color-text-gray: #4a5568;
+            --color-bg-gray: #f9fafb;
+            --color-positive: #4ade80;
+            --color-negative: #f87171;
+            --color-bg-hover: #f3f4f6;
+            --color-border-light: #ddd;
+            --color-bg-light: #f0f0f0;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -17,7 +34,7 @@
         body {
             font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: white;
-            color: #2d3748;
+            color: var(--color-text-primary);
             padding: 2rem;
             min-height: 100vh;
         }
@@ -28,14 +45,14 @@
         }
 
         h1 {
-            color: #1f2937;
+            color: var(--color-text-dark);
             margin-bottom: 0.5rem;
             font-size: 2rem;
             text-align: center;
         }
 
         .subtitle {
-            color: #6b7280;
+            color: var(--color-text-secondary);
             margin-bottom: 2rem;
             font-size: 1rem;
             text-align: center;
@@ -49,8 +66,8 @@
         }
 
         .platform-card {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-bg-gray);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
             transition: all 0.3s;
@@ -58,11 +75,11 @@
 
         .platform-card:hover {
             transform: translateY(-5px);
-            border-color: #2d3748;
+            border-color: var(--color-text-primary);
         }
 
         .platform-card h2 {
-            color: #1f2937;
+            color: var(--color-text-dark);
             font-size: 1.8rem;
             margin-bottom: 1rem;
             text-align: center;
@@ -73,10 +90,10 @@
         }
 
         .metric-group h3 {
-            color: #2d3748;
+            color: var(--color-text-primary);
             font-size: 1.2rem;
             margin-bottom: 1rem;
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid var(--color-neutral-200);
             padding-bottom: 0.5rem;
         }
 
@@ -91,7 +108,7 @@
         }
 
         .metric-label {
-            color: #4a5568;
+            color: var(--color-text-gray);
         }
 
         .metric-value {
@@ -100,15 +117,15 @@
         }
 
         .positive {
-            color: #4ade80;
+            color: var(--color-positive);
         }
 
         .negative {
-            color: #f87171;
+            color: var(--color-negative);
         }
 
         .neutral {
-            color: #6b7280;
+            color: var(--color-text-secondary);
         }
 
         .pros-cons {
@@ -116,7 +133,7 @@
         }
 
         .pros-cons h4 {
-            color: #1f2937;
+            color: var(--color-text-dark);
             margin-bottom: 0.75rem;
             font-size: 1rem;
         }
@@ -132,15 +149,15 @@
         }
 
         .scenario-selector {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-bg-gray);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .scenario-selector h2 {
-            color: #1f2937;
+            color: var(--color-text-dark);
             margin-bottom: 1rem;
         }
 
@@ -153,36 +170,37 @@
         .scenario-btn {
             padding: 1rem;
             background: white;
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-neutral-300);
             border-radius: 4px;
-            color: #2d3748;
+            color: var(--color-text-primary);
             cursor: pointer;
             transition: all 0.3s;
             font-size: 1rem;
             font-weight: 500;
+            font-family: inherit;
         }
 
         .scenario-btn:hover {
-            background: #f9fafb;
+            background: var(--color-bg-gray);
             transform: translateY(-2px);
         }
 
         .scenario-btn.active {
-            background: #2d3748;
+            background: var(--color-text-primary);
             color: white;
-            border-color: #2d3748;
+            border-color: var(--color-text-primary);
         }
 
         .recommendation {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-bg-gray);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
             margin-top: 2rem;
         }
 
         .recommendation h2 {
-            color: #1f2937;
+            color: var(--color-text-dark);
             margin-bottom: 1rem;
         }
 
@@ -192,7 +210,7 @@
 
         .section {
             margin-bottom: 1.5rem;
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             background: white;
         }
@@ -204,25 +222,25 @@
             padding: 1rem 1.5rem;
             cursor: pointer;
             user-select: none;
-            background: #f9fafb;
+            background: var(--color-bg-gray);
             border-radius: 8px 8px 0 0;
             transition: background 0.2s;
         }
 
         .section-header:hover {
-            background: #f3f4f6;
+            background: var(--color-bg-hover);
         }
 
         .section-header h2 {
             font-size: 1.3rem;
             font-weight: 600;
-            color: #1f2937;
+            color: var(--color-text-dark);
             margin: 0;
         }
 
         .toggle-icon {
             font-size: 1.2rem;
-            color: #6b7280;
+            color: var(--color-text-secondary);
             transition: transform 0.2s ease;
         }
 
@@ -253,8 +271,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>📺 Linear vs DTC Platform Comparison</h1>
-        <p class="subtitle">Compare broadcasting economics and strategy for different property types</p>
+        <h1>Linear vs <abbr title="Direct-to-Consumer - property owns distribution directly to fans">DTC</abbr> Platform Comparison</h1>
+        <p class="subtitle">Compare broadcasting economics and strategy for different property types. <strong>DTC</strong> = Direct-to-Consumer streaming (property owns distribution)</p>
 
         <div class="section">
             <div class="section-header" onclick="toggleSection('scenario')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('scenario');}" tabindex="0" role="button" aria-expanded="true" aria-controls="scenario-content">
@@ -276,11 +294,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('comparison')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('comparison');}" tabindex="0" role="button" aria-expanded="false" aria-controls="comparison-content">
+            <div class="section-header" onclick="toggleSection('comparison')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('comparison');}" tabindex="0" role="button" aria-expanded="true" aria-controls="comparison-content">
                 <h2>Platform Comparison</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="comparison-content">
+            <div class="section-content expanded" id="comparison-content">
                 <div class="section-inner">
         <div class="comparison-grid" id="comparison-grid">
             <!-- Content will be loaded dynamically -->
@@ -380,7 +398,7 @@
                 },
                 recommendation: {
                     title: "Hybrid Approach Recommended",
-                    content: "For established properties like NHL, a hybrid model offers the best balance: secure guaranteed linear revenue while building DTC capabilities for future optionality. Start with exclusive linear deal + digital rights retained, then gradually shift as DTC scales."
+                    content: "For established properties like NHL, a hybrid model offers the best balance: secure guaranteed linear revenue ($400-500M/year) while building DTC capabilities for future optionality. Start with an exclusive linear deal but retain digital/streaming rights to build your own platform alongside. As your DTC subscriber base reaches 2-3M users, renegotiate to reclaim more rights. This strategy minimizes risk while creating long-term strategic flexibility—exactly what NBA is executing with their 2025+ deals."
                 }
             },
             emerging: {
@@ -444,7 +462,7 @@
                 },
                 recommendation: {
                     title: "DTC-First with Selective Linear",
-                    content: "For emerging sports, invest in DTC to build community and own your audience from day one. Accept small linear deals only if they don't compromise digital rights. Focus on converting participants into viewers."
+                    content: "For emerging sports like pickleball, invest in DTC to build community and own your audience from day one. A $5-10M linear deal might sound attractive, but if it locks up digital rights for 5 years, you've capped your growth potential. Instead, launch a low-cost DTC platform ($10-15/year), focus on converting the 36M active pickleball players into viewers, and only accept linear deals that are non-exclusive or Saturday-only windows. Own the data, own the relationship, own the future."
                 }
             },
             niche: {
@@ -506,7 +524,7 @@
                 },
                 recommendation: {
                     title: "DTC Only - Linear Isn't Worth It",
-                    content: "For niche properties, linear offers minimal value. Go full DTC with affordable production, leverage existing platforms (YouTube, ESPN+), and focus on community + sponsorship revenue rather than subscriptions alone."
+                    content: "For niche properties like lacrosse, linear offers minimal value—$1-3M rights fees don't justify giving up control. Go full DTC but keep costs low: produce games for $5-10K each, distribute via YouTube or partner with ESPN+ for carriage, and build a hybrid revenue model. Target passionate core fans with $50/year subscriptions, then layer in sponsorships from equipment brands and local businesses. The goal isn't to build Netflix for Lacrosse—it's to create a sustainable, community-driven media ecosystem that breaks even at 20-30K subscribers."
                 }
             },
             premium: {
@@ -571,7 +589,7 @@
                 },
                 recommendation: {
                     title: "Hybrid with Strategic DTC Investment",
-                    content: "Premium properties should maximize linear guarantees while investing heavily in DTC infrastructure for future optionality. Use linear for broad reach and revenue security, DTC for innovation and fan relationship building."
+                    content: "Premium properties like the Olympics should continue maximizing linear guarantees ($1B+ per cycle from NBC, CBC, BBC globally) while investing $100-200M into world-class DTC infrastructure. Linear delivers unmatched reach (30M+ peak viewers) and guaranteed revenue, while DTC enables personalized experiences (choose your own events, multi-angle viewing, athlete cams) and builds direct global fan relationships. This isn't either/or—it's both. Use linear money to fund DTC innovation, then leverage DTC data to command even higher linear fees in next renewal cycle. IOC's Olympics.com streaming platform is the blueprint."
                 }
             }
         };
@@ -592,7 +610,7 @@
             // Build comparison HTML
             const comparisonHTML = `
                 <div class="platform-card">
-                    <h2>📺 Linear Broadcasting</h2>
+                    <h2>Linear Broadcasting</h2>
 
                     <div class="metric-group">
                         <h3>Revenue Model</h3>
@@ -658,7 +676,7 @@
                 </div>
 
                 <div class="platform-card">
-                    <h2>📱 DTC Streaming</h2>
+                    <h2>DTC Streaming</h2>
 
                     <div class="metric-group">
                         <h3>Revenue Model</h3>
@@ -740,7 +758,7 @@
 
             // Update recommendation
             const recommendationHTML = `
-                <h2>💡 Strategic Recommendation: ${data.recommendation.title}</h2>
+                <h2>Strategic Recommendation: ${data.recommendation.title}</h2>
                 <div class="recommendation-content">
                     <p>${data.recommendation.content}</p>
                 </div>

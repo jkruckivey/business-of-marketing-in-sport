@@ -9,6 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles.css">
     <style>
+        :root {
+            --color-neutral-50: #f9fafb;
+            --color-neutral-200: #e5e7eb;
+            --color-neutral-300: #d1d5db;
+            --color-neutral-500: #6b7280;
+            --color-neutral-800: #2d3748;
+            --color-neutral-900: #1f2937;
+            --color-border: #e2e8f0;
+        }
+
         body {
             margin: 0;
             padding: 1rem;
@@ -22,8 +32,8 @@
         }
         
         .completion-header {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
             text-align: center;
@@ -33,7 +43,7 @@
         .progress-circle {
             width: 80px;
             height: 80px;
-            background: #2d3748;
+            background: var(--color-neutral-800);
             color: white;
             border-radius: 50%;
             display: inline-flex;
@@ -46,33 +56,33 @@
 
         .checklist-section {
             background: white;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             padding: 2rem;
             margin: 2rem 0;
         }
-        
+
         .checklist-item {
             display: flex;
             align-items: flex-start;
             gap: 1rem;
             margin: 1rem 0;
             padding: 1rem;
-            background: #f9fafb;
+            background: var(--color-neutral-50);
             border-left: 3px solid transparent;
             border-radius: 6px;
             transition: all 0.2s ease;
         }
 
         .checklist-item.completed {
-            border-left-color: #2d3748;
-            background: #e5e7eb;
+            border-left-color: var(--color-neutral-800);
+            background: var(--color-neutral-200);
         }
 
         .checklist-checkbox {
             width: 24px;
             height: 24px;
-            border: 2px solid #d1d5db;
+            border: 2px solid var(--color-neutral-300);
             border-radius: 4px;
             background: white;
             cursor: pointer;
@@ -84,12 +94,12 @@
 
         .checklist-checkbox:hover {
             transform: scale(1.1);
-            border-color: #2d3748;
+            border-color: var(--color-neutral-800);
         }
 
         .checklist-checkbox.checked {
-            background: #2d3748;
-            border-color: #2d3748;
+            background: var(--color-neutral-800);
+            border-color: var(--color-neutral-800);
         }
         
         .checklist-checkbox.checked::after {
@@ -105,19 +115,19 @@
         
         .item-content h4 {
             margin: 0 0 0.25rem 0;
-            color: #1f2937;
+            color: var(--color-neutral-900);
             font-weight: 600;
         }
 
         .item-description {
-            color: #6b7280;
+            color: var(--color-neutral-500);
             font-size: 0.875rem;
             margin: 0;
         }
 
         .completion-status {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 1.5rem;
             text-align: center;
@@ -125,24 +135,24 @@
         }
 
         .status-incomplete {
-            color: #6b7280;
+            color: var(--color-neutral-500);
         }
 
         .status-complete {
-            background: #2d3748;
+            background: var(--color-neutral-800);
             color: white;
             font-weight: 600;
             animation: celebrate 0.5s ease;
         }
-        
+
         @keyframes celebrate {
             0%, 100% { transform: scale(1); }
             50% { transform: scale(1.02); }
         }
-        
+
         .next-module-preview {
             background: white;
-            border: 2px dashed #d1d5db;
+            border: 2px dashed var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
             text-align: center;
@@ -154,11 +164,11 @@
         .next-module-preview.available {
             opacity: 1;
             border-style: solid;
-            border-color: #2d3748;
+            border-color: var(--color-neutral-800);
         }
 
         .btn-next-module {
-            background: #2d3748;
+            background: var(--color-neutral-800);
             color: white;
             border: none;
             border-radius: 6px;
@@ -184,7 +194,7 @@
         }
 
         .achievement-badge {
-            background: #2d3748;
+            background: var(--color-neutral-800);
             color: white;
             padding: 1rem;
             border-radius: 8px;
@@ -280,7 +290,7 @@
         </div>
         
         <div class="achievement-badge" id="achievement-badge">
-            <h3>🏆 Module 1 Complete!</h3>
+            <h3>Module 1 Complete!</h3>
             <p>You've mastered the fundamentals of media rights and content strategy. Ready for Module 2!</p>
         </div>
         
@@ -363,7 +373,7 @@
             
             if (completedComponents === totalComponents) {
                 statusDiv.className = 'completion-status status-complete';
-                statusText.textContent = '🎉 Module 1 Complete! Ready for Module 2';
+                statusText.textContent = 'Module 1 Complete! Ready for Module 2';
                 
                 document.getElementById('achievement-badge').classList.add('show');
                 document.getElementById('next-module').classList.add('available');

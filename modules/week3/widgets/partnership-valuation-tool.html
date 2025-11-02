@@ -73,7 +73,7 @@
             color: var(--color-neutral-700);
             border: 1px solid var(--color-neutral-300);
             border-radius: 6px;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             cursor: pointer;
@@ -331,7 +331,7 @@
 
         .btn {
             padding: 0.625rem 1.25rem;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             border-radius: 6px;
@@ -486,11 +486,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('comparison')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('comparison');}" tabindex="0" role="button" aria-expanded="false" aria-controls="comparison-content">
+            <div class="section-header" onclick="toggleSection('comparison')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('comparison');}" tabindex="0" role="button" aria-expanded="true" aria-controls="comparison-content">
                 <h2>Value Comparison</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="comparison-content">
+            <div class="section-content expanded" id="comparison-content">
                 <div class="section-inner">
                     <div class="chart-container">
                 <canvas id="valueChart" role="img" aria-label="Sponsor value comparison chart"></canvas>
@@ -518,11 +518,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('premium')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('premium');}" tabindex="0" role="button" aria-expanded="false" aria-controls="premium-content">
+            <div class="section-header" onclick="toggleSection('premium')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('premium');}" tabindex="0" role="button" aria-expanded="true" aria-controls="premium-content">
                 <h2>Premium Analysis</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="premium-content">
+            <div class="section-content expanded" id="premium-content">
                 <div class="section-inner">
                     <div class="comparison-section">
                 <table class="comparison-table">
@@ -701,12 +701,12 @@
                         label: 'Effective Reach (Billions)',
                         data: [tradImpressions / 1000000000, bettingImpressions / 1000000000],
                         backgroundColor: [
-                            'rgba(163, 163, 163, 0.8)',
-                            'rgba(64, 64, 64, 0.8)'
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700') + 'cc'
                         ],
                         borderColor: [
-                            'rgb(163, 163, 163)',
-                            'rgb(64, 64, 64)'
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400'),
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700')
                         ],
                         borderWidth: 1
                     }]
@@ -726,7 +726,7 @@
                                 size: 14,
                                 weight: '600'
                             },
-                            color: '#171717'
+                            color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-900')
                         }
                     },
                     scales: {
@@ -739,7 +739,7 @@
                                     family: 'Geist',
                                     size: 12
                                 },
-                                color: '#525252'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-600')
                             },
                             ticks: {
                                 callback: function(value) {
@@ -749,10 +749,10 @@
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#737373'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500')
                             },
                             grid: {
-                                color: '#e5e5e5'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-200')
                             }
                         },
                         x: {
@@ -761,7 +761,7 @@
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#737373'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500')
                             },
                             grid: {
                                 display: false

@@ -14,10 +14,32 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-surface: #f9fafb;
+            --color-border: #d1d5db;
+            --color-text-primary: #1f2937;
+            --color-text-secondary: #2d3748;
+            --color-text-muted: #6b7280;
+            --color-error: #f87171;
+            --color-success: #4ade80;
+            --color-warning: #fbbf24;
+            --color-primary: #2d3748;
+        }
+
         body {
             font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: white;
-            color: #2d3748;
+            color: var(--color-text-secondary);
             padding: 2rem;
             min-height: 100vh;
         }
@@ -28,27 +50,27 @@
         }
 
         h1 {
-            color: #1f2937;
+            color: var(--color-text-primary);
             margin-bottom: 0.5rem;
             font-size: 2rem;
         }
 
         .subtitle {
-            color: #6b7280;
+            color: var(--color-text-muted);
             margin-bottom: 2rem;
             font-size: 1rem;
         }
 
         .scenario-intro {
             background: rgba(248, 113, 113, 0.1);
-            border: 2px solid #f87171;
+            border: 2px solid var(--color-error);
             border-radius: 8px;
             padding: 1.5rem;
             margin-bottom: 2rem;
         }
 
         .scenario-intro h2 {
-            color: #f87171;
+            color: var(--color-error);
             margin-bottom: 1rem;
         }
 
@@ -60,7 +82,7 @@
         }
 
         .crisis-stat {
-            background: #f9fafb;
+            background: var(--color-surface);
             padding: 1rem;
             border-radius: 6px;
             text-align: center;
@@ -69,25 +91,25 @@
         .crisis-stat-value {
             font-size: 2rem;
             font-weight: 700;
-            color: #f87171;
+            color: var(--color-error);
         }
 
         .crisis-stat-label {
-            color: #6b7280;
+            color: var(--color-text-muted);
             font-size: 0.9rem;
             margin-top: 0.5rem;
         }
 
         .decision-section {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .decision-section h2 {
-            color: #1f2937;
+            color: var(--color-text-primary);
             margin-bottom: 1.5rem;
         }
 
@@ -99,19 +121,19 @@
 
         .decision-card {
             background: white;
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             padding: 1.5rem;
             transition: all 0.3s;
         }
 
         .decision-card.selected {
-            border-color: #1f2937;
+            border-color: var(--color-text-primary);
             background: rgba(31, 41, 55, 0.1);
         }
 
         .decision-card h3 {
-            color: #1f2937;
+            color: var(--color-text-primary);
             margin-bottom: 1rem;
             font-size: 1.2rem;
         }
@@ -125,7 +147,7 @@
             align-items: center;
             gap: 0.75rem;
             padding: 0.75rem;
-            background: #f9fafb;
+            background: var(--color-surface);
             border-radius: 6px;
             cursor: pointer;
             transition: all 0.2s;
@@ -146,7 +168,7 @@
         }
 
         .slider-value {
-            color: #1f2937;
+            color: var(--color-text-primary);
             font-weight: 600;
             font-size: 1.1rem;
             margin-top: 0.5rem;
@@ -163,24 +185,25 @@
 
         .impact-positive {
             background: rgba(74, 222, 128, 0.2);
-            color: #4ade80;
+            color: var(--color-success);
         }
 
         .impact-negative {
             background: rgba(248, 113, 113, 0.2);
-            color: #f87171;
+            color: var(--color-error);
         }
 
         .impact-neutral {
             background: rgba(251, 191, 36, 0.2);
-            color: #fbbf24;
+            color: var(--color-warning);
         }
 
         .simulate-btn {
-            background: #2d3748;
+            background: var(--color-primary);
             color: white;
             border: none;
             padding: 1rem 3rem;
+            font-family: inherit;
             font-size: 1.2rem;
             font-weight: 700;
             border-radius: 8px;
@@ -191,15 +214,15 @@
         }
 
         .simulate-btn:hover {
-            background: #1a202c;
+            background: var(--color-neutral-900);
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(45, 55, 72, 0.3);
         }
 
         .results-section {
             display: none;
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             padding: 2rem;
             margin-top: 2rem;
@@ -210,7 +233,7 @@
         }
 
         .results-section h2 {
-            color: #1f2937;
+            color: var(--color-text-primary);
             margin-bottom: 1.5rem;
         }
 
@@ -222,8 +245,8 @@
 
         .year-tab {
             padding: 0.75rem 1.5rem;
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
             border-radius: 6px;
             cursor: pointer;
             transition: all 0.2s;
@@ -231,7 +254,7 @@
 
         .year-tab.active {
             background: rgba(31, 41, 55, 0.2);
-            border-color: #1f2937;
+            border-color: var(--color-text-primary);
         }
 
         .outcomes-grid {
@@ -243,13 +266,13 @@
 
         .outcome-card {
             background: white;
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             padding: 1.5rem;
         }
 
         .outcome-title {
-            color: #1f2937;
+            color: var(--color-text-primary);
             font-size: 0.9rem;
             margin-bottom: 0.5rem;
         }
@@ -267,14 +290,14 @@
 
         .narrative-box {
             background: rgba(31, 41, 55, 0.1);
-            border-left: 4px solid #1f2937;
+            border-left: 4px solid var(--color-text-primary);
             padding: 1.5rem;
             margin-top: 2rem;
             border-radius: 6px;
         }
 
         .narrative-box h3 {
-            color: #1f2937;
+            color: var(--color-text-primary);
             margin-bottom: 1rem;
         }
 
@@ -287,7 +310,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>⚠️ Revenue Crisis Simulator</h1>
+        <h1>Revenue Crisis Simulator</h1>
         <p class="subtitle">Navigate a 30% revenue shortfall and make strategic decisions to stabilize your franchise</p>
 
         <div class="scenario-intro">
@@ -316,24 +339,24 @@
 
         <div class="decision-section">
             <h2>Decision 1: Payroll Strategy</h2>
-            <p style="margin-bottom: 1.5rem; color: #6b7280;">Your player payroll is $85M against the $83.5M cap. How do you manage roster costs?</p>
+            <p style="margin-bottom: 1.5rem; color: var(--color-text-muted);">Your player payroll is $85M against the $83.5M cap. How do you manage roster costs?</p>
 
             <div class="decision-grid">
                 <div class="decision-card">
-                    <h3>🔻 Deep Rebuild</h3>
+                    <h3>Deep Rebuild</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="payroll" value="rebuild">
                             <span>Trade veterans for picks, cut to $60M payroll</span>
                         </label>
                     </div>
-                    <p style="color: #6b7280; font-size: 0.9rem; margin-top: 1rem;">Save $25M/year but lose more games short-term. Fan base frustrated for 2-3 years.</p>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-top: 1rem;">Save $25M/year but lose more games short-term. Fan base frustrated for 2-3 years.</p>
                     <div class="impact-badge impact-negative">Revenue: -15% Year 1</div>
                     <div class="impact-badge impact-positive">Cap Flexibility: +$25M</div>
                 </div>
 
                 <div class="decision-card">
-                    <h3>⚖️ Balanced Approach</h3>
+                    <h3>Balanced Approach</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="payroll" value="balanced" checked>
@@ -346,7 +369,7 @@
                 </div>
 
                 <div class="decision-card">
-                    <h3>🚀 Win-Now Push</h3>
+                    <h3>Win-Now Push</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="payroll" value="winnow">
@@ -366,7 +389,7 @@
 
             <div class="decision-grid">
                 <div class="decision-card">
-                    <h3>💰 Aggressive Discounting</h3>
+                    <h3>Aggressive Discounting</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="tickets" value="discount">
@@ -379,7 +402,7 @@
                 </div>
 
                 <div class="decision-card">
-                    <h3>🎯 Premium Experience</h3>
+                    <h3>Premium Experience</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="tickets" value="premium" checked>
@@ -392,7 +415,7 @@
                 </div>
 
                 <div class="decision-card">
-                    <h3>📊 Dynamic Pricing</h3>
+                    <h3>Dynamic Pricing</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="tickets" value="dynamic">
@@ -412,7 +435,7 @@
 
             <div class="decision-grid">
                 <div class="decision-card">
-                    <h3>🎰 Betting Partnerships</h3>
+                    <h3>Betting Partnerships</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="sponsor" value="betting">
@@ -425,7 +448,7 @@
                 </div>
 
                 <div class="decision-card">
-                    <h3>🏢 Corporate Portfolio</h3>
+                    <h3>Corporate Portfolio</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="sponsor" value="corporate" checked>
@@ -438,7 +461,7 @@
                 </div>
 
                 <div class="decision-card">
-                    <h3>🌱 Community Focus</h3>
+                    <h3>Community Focus</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="sponsor" value="community">
@@ -458,7 +481,7 @@
 
             <div class="decision-grid">
                 <div class="decision-card">
-                    <h3>📺 Traditional TV Deal</h3>
+                    <h3>Traditional TV Deal</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="media" value="traditional">
@@ -471,7 +494,7 @@
                 </div>
 
                 <div class="decision-card">
-                    <h3>🎬 Direct-to-Consumer (DTC)</h3>
+                    <h3>Direct-to-Consumer (DTC)</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="media" value="dtc" checked>
@@ -484,7 +507,7 @@
                 </div>
 
                 <div class="decision-card">
-                    <h3>🤝 Hybrid Model</h3>
+                    <h3>Hybrid Model</h3>
                     <div class="decision-option">
                         <label>
                             <input type="radio" name="media" value="hybrid">
@@ -498,10 +521,10 @@
             </div>
         </div>
 
-        <button class="simulate-btn" onclick="runSimulation()">🎯 Run 3-Year Simulation</button>
+        <button class="simulate-btn" onclick="runSimulation()">Run 3-Year Simulation</button>
 
         <div class="results-section" id="results">
-            <h2>📊 Simulation Results</h2>
+            <h2>Simulation Results</h2>
 
             <div class="year-tabs">
                 <div class="year-tab active" onclick="showYear(1)">Year 1</div>
@@ -636,23 +659,23 @@
             let narrative = `<strong>Year ${data.year} Summary:</strong><br><br>`;
 
             if (data.revenue > 180) {
-                narrative += "📈 Strong revenue recovery! Your strategic decisions are paying off. ";
+                narrative += "Strong revenue recovery! Your strategic decisions are paying off. ";
             } else if (data.revenue < 150) {
-                narrative += "📉 Revenue continues to struggle. The franchise needs to reconsider its approach. ";
+                narrative += "Revenue continues to struggle. The franchise needs to reconsider its approach. ";
             } else {
-                narrative += "⚖️ Modest improvement. The path to stability is challenging but achievable. ";
+                narrative += "Modest improvement. The path to stability is challenging but achievable. ";
             }
 
             if (data.profitLoss > 0) {
-                narrative += `The team posted a <span style="color: #4ade80;">profit of $${data.profitLoss.toFixed(1)}M</span>. `;
+                narrative += `The team posted a <span style="color: var(--color-success);">profit of $${data.profitLoss.toFixed(1)}M</span>. `;
             } else {
-                narrative += `The team still operates at a <span style="color: #f87171;">loss of $${Math.abs(data.profitLoss).toFixed(1)}M</span>. `;
+                narrative += `The team still operates at a <span style="color: var(--color-error);">loss of $${Math.abs(data.profitLoss).toFixed(1)}M</span>. `;
             }
 
             if (data.attendance > 85) {
-                narrative += "🎉 The arena is buzzing again! Fans are returning in strong numbers.";
+                narrative += "The arena is buzzing again! Fans are returning in strong numbers.";
             } else if (data.attendance < 75) {
-                narrative += "😟 Empty seats remain a concern. Fan engagement is critical.";
+                narrative += "Empty seats remain a concern. Fan engagement is critical.";
             }
 
             narrative += "<br><br><strong>Key Developments:</strong><br>";
@@ -694,14 +717,14 @@
 
             // Revenue change
             const revenueChange = yearData.revenue - 160;
-            const revenueColor = revenueChange > 0 ? '#4ade80' : '#f87171';
+            const revenueColor = revenueChange > 0 ? 'var(--color-success)' : 'var(--color-error)';
 
             // Profit change
-            const profitColor = yearData.profitLoss > 0 ? '#4ade80' : '#f87171';
+            const profitColor = yearData.profitLoss > 0 ? 'var(--color-success)' : 'var(--color-error)';
 
             // Attendance change
             const attendanceChange = yearData.attendance - 78;
-            const attendanceColor = attendanceChange > 0 ? '#4ade80' : '#f87171';
+            const attendanceColor = attendanceChange > 0 ? 'var(--color-success)' : 'var(--color-error)';
 
             content.innerHTML = `
                 <div class="outcomes-grid">
@@ -733,7 +756,7 @@
 
                     <div class="outcome-card">
                         <div class="outcome-title">Fan Satisfaction</div>
-                        <div class="outcome-value" style="color: #1f2937">${yearData.fanSatisfaction.toFixed(0)}/100</div>
+                        <div class="outcome-value" style="color: var(--color-text-primary)">${yearData.fanSatisfaction.toFixed(0)}/100</div>
                         <div class="outcome-change">
                             ${yearData.fanSatisfaction > 60 ? 'Strong support' : yearData.fanSatisfaction > 45 ? 'Cautious optimism' : 'Frustration remains'}
                         </div>
@@ -742,7 +765,7 @@
 
                 <div class="narrative-box">
                     <h3>What Happened in Year ${year}</h3>
-                    <p style="line-height: 1.8; color: #2d3748;">${yearData.narrative}</p>
+                    <p style="line-height: 1.8; color: var(--color-text-secondary);">${yearData.narrative}</p>
                 </div>
             `;
         }

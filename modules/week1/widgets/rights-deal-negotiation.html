@@ -8,6 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-danger: #ef4444;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -15,9 +32,9 @@
         }
 
         body {
-            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: var(--font-family-primary);
             background: white;
-            color: #2d3748;
+            color: var(--color-neutral-700);
             padding: 2rem;
             min-height: 100vh;
         }
@@ -72,19 +89,19 @@
             padding: 0.75rem;
             margin-bottom: 0.5rem;
             border-radius: 6px;
-            border-left: 3px solid #d1d5db;
+            border-left: 3px solid var(--color-neutral-300);
         }
 
         .negotiation-panel {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .negotiation-panel h2 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 1.5rem;
         }
 
@@ -153,14 +170,14 @@
             justify-content: space-between;
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
-            color: #6b7280;
+            color: var(--color-neutral-500);
         }
 
         .slider-value-display {
             text-align: center;
             font-size: 1.5rem;
             font-weight: 700;
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 0.75rem;
         }
 
@@ -168,7 +185,7 @@
             width: 100%;
             height: 6px;
             border-radius: 3px;
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--color-neutral-200);
             outline: none;
         }
 
@@ -188,7 +205,7 @@
 
         .impact-label {
             font-size: 0.8rem;
-            color: #6b7280;
+            color: var(--color-neutral-500);
             margin-bottom: 0.25rem;
         }
 
@@ -198,10 +215,11 @@
         }
 
         .negotiate-btn {
-            background: #2d3748;
+            background: var(--color-neutral-700);
             color: white;
             border: none;
             padding: 1rem 3rem;
+            font-family: inherit;
             font-size: 1.2rem;
             font-weight: 700;
             border-radius: 8px;
@@ -213,14 +231,14 @@
 
         .negotiate-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px #d1d5db;
-            background: #1a202c;
+            box-shadow: 0 10px 30px var(--color-neutral-300);
+            background: var(--color-neutral-900);
         }
 
         .results-section {
             display: none;
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
         }
@@ -281,7 +299,7 @@
         }
 
         .scorecard-party h3 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 1rem;
             text-align: center;
         }
@@ -301,19 +319,19 @@
             display: flex;
             justify-content: space-between;
             padding: 0.5rem 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid var(--color-neutral-200);
         }
 
         .narrative-box {
-            background: #f9fafb;
-            border-left: 4px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border-left: 4px solid var(--color-neutral-300);
             padding: 1.5rem;
             margin-bottom: 2rem;
             border-radius: 6px;
         }
 
         .narrative-box h3 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 1rem;
         }
 
@@ -324,7 +342,7 @@
         }
 
         .timeline-projection h3 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 1.5rem;
         }
 
@@ -341,7 +359,7 @@
 
         .year-label {
             font-weight: 600;
-            color: #1f2937;
+            color: var(--color-neutral-900);
         }
 
         @media (max-width: 968px) {
@@ -353,38 +371,38 @@
 </head>
 <body>
     <div class="container">
-        <h1>🤝 Media Rights Deal Negotiation</h1>
+        <h1>Media Rights Deal Negotiation</h1>
         <p class="subtitle">Negotiate a 10-year media rights deal from both perspectives: League/Team vs Broadcaster</p>
 
         <div class="negotiation-setup">
             <div class="party-card active">
-                <h2>🏒 Canadian Hockey League (CHL)</h2>
-                <p style="color: #6b7280; margin-bottom: 1rem;">Major junior hockey league seeking national broadcast partner for 10-year deal</p>
+                <h2>Canadian Hockey League (CHL)</h2>
+                <p style="color: var(--color-neutral-500); margin-bottom: 1rem;">Major junior hockey league seeking national broadcast partner for 10-year deal</p>
                 <div class="objectives">
-                    <div style="color: #1f2937; font-weight: 600; margin-bottom: 0.5rem;">Your Objectives:</div>
-                    <div class="objective-item">💰 Maximize guaranteed revenue</div>
-                    <div class="objective-item">📺 Ensure broad distribution and exposure</div>
-                    <div class="objective-item">🚀 Maintain flexibility for future growth</div>
-                    <div class="objective-item">⚖️ Balance short-term cash with long-term value</div>
+                    <div style="color: var(--color-neutral-900); font-weight: 600; margin-bottom: 0.5rem;">Your Objectives:</div>
+                    <div class="objective-item">Maximize guaranteed revenue</div>
+                    <div class="objective-item">Ensure broad distribution and exposure</div>
+                    <div class="objective-item">Maintain flexibility for future growth</div>
+                    <div class="objective-item">Balance short-term cash with long-term value</div>
                 </div>
             </div>
 
             <div class="party-card">
-                <h2>📡 National Sports Network</h2>
-                <p style="color: #6b7280; margin-bottom: 1rem;">Regional sports broadcaster looking to expand national programming portfolio</p>
+                <h2>National Sports Network</h2>
+                <p style="color: var(--color-neutral-500); margin-bottom: 1rem;">Regional sports broadcaster looking to expand national programming portfolio</p>
                 <div class="objectives">
-                    <div style="color: #1f2937; font-weight: 600; margin-bottom: 0.5rem;">Your Objectives:</div>
-                    <div class="objective-item">📊 Manage financial risk and maximize ROI</div>
-                    <div class="objective-item">🎯 Acquire exclusive content to drive subscribers</div>
-                    <div class="objective-item">💻 Explore digital/streaming opportunities</div>
-                    <div class="objective-item">🔒 Lock in favorable terms before market heats up</div>
+                    <div style="color: var(--color-neutral-900); font-weight: 600; margin-bottom: 0.5rem;">Your Objectives:</div>
+                    <div class="objective-item">Manage financial risk and maximize ROI</div>
+                    <div class="objective-item">Acquire exclusive content to drive subscribers</div>
+                    <div class="objective-item">Explore digital/streaming opportunities</div>
+                    <div class="objective-item">Lock in favorable terms before market heats up</div>
                 </div>
             </div>
         </div>
 
         <div class="negotiation-panel">
-            <h2>📋 Structure Your Deal</h2>
-            <p style="color: #6b7280; margin-bottom: 2rem;">As the CHL, choose your negotiating positions across these key deal terms:</p>
+            <h2>Structure Your Deal</h2>
+            <p style="color: var(--color-neutral-500); margin-bottom: 2rem;">As the CHL, choose your negotiating positions across these key deal terms:</p>
 
             <div class="deal-terms">
                 <div class="term-section">
@@ -424,21 +442,21 @@
                                 <input type="radio" name="revenue-model" value="guaranteed" checked>
                                 <div>
                                     <strong>100% Guaranteed</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Fixed annual payment, no revenue share. Safe but limited upside.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Fixed annual payment, no revenue share. Safe but limited upside.</span>
                                 </div>
                             </label>
                             <label class="radio-option">
                                 <input type="radio" name="revenue-model" value="hybrid">
                                 <div>
                                     <strong>70% Guaranteed + 30% Revenue Share</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Base payment plus share of ad/sub revenue above threshold.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Base payment plus share of ad/sub revenue above threshold.</span>
                                 </div>
                             </label>
                             <label class="radio-option">
                                 <input type="radio" name="revenue-model" value="share">
                                 <div>
                                     <strong>40% Guaranteed + 60% Revenue Share</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Lower base, higher upside. Risk if ratings don't materialize.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Lower base, higher upside. Risk if ratings don't materialize.</span>
                                 </div>
                             </label>
                         </div>
@@ -453,21 +471,21 @@
                                 <input type="radio" name="exclusivity" value="full" checked>
                                 <div>
                                     <strong>Full Exclusivity</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">All games, all platforms. Broadcaster pays premium (+30%).</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">All games, all platforms. Broadcaster pays premium (+30%).</span>
                                 </div>
                             </label>
                             <label class="radio-option">
                                 <input type="radio" name="exclusivity" value="linear">
                                 <div>
                                     <strong>Linear TV Only</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">TV exclusive, league retains digital/streaming rights.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">TV exclusive, league retains digital/streaming rights.</span>
                                 </div>
                             </label>
                             <label class="radio-option">
                                 <input type="radio" name="exclusivity" value="selective">
                                 <div>
                                     <strong>Selective Package</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">60 games exclusive, 40 games to other partners. Maximize distribution.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">60 games exclusive, 40 games to other partners. Maximize distribution.</span>
                                 </div>
                             </label>
                         </div>
@@ -482,21 +500,21 @@
                                 <input type="radio" name="digital" value="broadcaster">
                                 <div>
                                     <strong>Included in Deal</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Broadcaster gets all digital rights (+$8M/year to rights fee).</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Broadcaster gets all digital rights (+$8M/year to rights fee).</span>
                                 </div>
                             </label>
                             <label class="radio-option">
                                 <input type="radio" name="digital" value="shared" checked>
                                 <div>
                                     <strong>Shared Rights</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Broadcaster streams live, league controls highlights/clips.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Broadcaster streams live, league controls highlights/clips.</span>
                                 </div>
                             </label>
                             <label class="radio-option">
                                 <input type="radio" name="digital" value="league">
                                 <div>
                                     <strong>League Retains</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Build own DTC platform. Risky but massive long-term potential.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Build own DTC platform. Risky but massive long-term potential.</span>
                                 </div>
                             </label>
                         </div>
@@ -511,21 +529,21 @@
                                 <input type="radio" name="length" value="flat">
                                 <div>
                                     <strong>10 Years, Flat Fee</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Predictable but no inflation protection.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Predictable but no inflation protection.</span>
                                 </div>
                             </label>
                             <label class="radio-option">
                                 <input type="radio" name="length" value="escalator" checked>
                                 <div>
                                     <strong>10 Years, 4% Annual Escalator</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Fee grows with inflation/market. Standard for major deals.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Fee grows with inflation/market. Standard for major deals.</span>
                                 </div>
                             </label>
                             <label class="radio-option">
                                 <input type="radio" name="length" value="short">
                                 <div>
                                     <strong>5 Years, Option for 5 More</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Flexibility to renegotiate if market value surges. Broadcaster wary.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Flexibility to renegotiate if market value surges. Broadcaster wary.</span>
                                 </div>
                             </label>
                         </div>
@@ -540,21 +558,21 @@
                                 <input type="radio" name="production" value="premium">
                                 <div>
                                     <strong>Premium Production</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Top-tier broadcast quality, 12+ cameras, national promotion.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Top-tier broadcast quality, 12+ cameras, national promotion.</span>
                                 </div>
                             </label>
                             <label class="radio-option">
                                 <input type="radio" name="production" value="standard" checked>
                                 <div>
                                     <strong>Standard Production</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Solid quality, 6-8 cameras, regional promotion focus.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Solid quality, 6-8 cameras, regional promotion focus.</span>
                                 </div>
                             </label>
                             <label class="radio-option">
                                 <input type="radio" name="production" value="basic">
                                 <div>
                                     <strong>Basic Production</strong><br>
-                                    <span style="font-size: 0.85rem; color: #6b7280;">Cost-effective, 4-6 cameras. League supplements with own content.</span>
+                                    <span style="font-size: 0.85rem; color: var(--color-neutral-500);">Cost-effective, 4-6 cameras. League supplements with own content.</span>
                                 </div>
                             </label>
                         </div>
@@ -562,11 +580,11 @@
                 </div>
             </div>
 
-            <button class="negotiate-btn" onclick="calculateDealOutcome()">🤝 Finalize Negotiation</button>
+            <button class="negotiate-btn" onclick="calculateDealOutcome()">Finalize Negotiation</button>
         </div>
 
         <div class="results-section" id="results">
-            <h2>📊 Deal Outcome & 10-Year Projection</h2>
+            <h2>Deal Outcome & 10-Year Projection</h2>
 
             <div class="narrative-box">
                 <h3>Deal Summary</h3>
@@ -598,14 +616,14 @@
 
             <div class="scorecard">
                 <div class="scorecard-party">
-                    <h3>🏒 CHL Score</h3>
-                    <div class="score-display" style="color: #4ade80;" id="chl-score">0</div>
+                    <h3>CHL Score</h3>
+                    <div class="score-display" style="color: var(--color-success);" id="chl-score">0</div>
                     <div class="score-breakdown" id="chl-breakdown"></div>
                 </div>
 
                 <div class="scorecard-party">
-                    <h3>📡 Network Score</h3>
-                    <div class="score-display" style="color: #fbbf24;" id="network-score">0</div>
+                    <h3>Network Score</h3>
+                    <div class="score-display" style="color: var(--color-warning);" id="network-score">0</div>
                     <div class="score-breakdown" id="network-breakdown"></div>
                 </div>
             </div>
@@ -625,25 +643,25 @@
             // Update impact indicators
             if (rightsFee >= 45) {
                 document.getElementById('certainty-impact').textContent = 'Very High';
-                document.getElementById('certainty-impact').style.color = '#4ade80';
+                document.getElementById('certainty-impact').style.color = 'var(--color-success)';
                 document.getElementById('risk-impact').textContent = 'High';
-                document.getElementById('risk-impact').style.color = '#f87171';
+                document.getElementById('risk-impact').style.color = 'var(--color-danger)';
                 document.getElementById('market-impact').textContent = 'Premium';
-                document.getElementById('market-impact').style.color = '#4ade80';
+                document.getElementById('market-impact').style.color = 'var(--color-success)';
             } else if (rightsFee >= 35) {
                 document.getElementById('certainty-impact').textContent = 'High';
-                document.getElementById('certainty-impact').style.color = '#4ade80';
+                document.getElementById('certainty-impact').style.color = 'var(--color-success)';
                 document.getElementById('risk-impact').textContent = 'Medium';
-                document.getElementById('risk-impact').style.color = '#fbbf24';
+                document.getElementById('risk-impact').style.color = 'var(--color-warning)';
                 document.getElementById('market-impact').textContent = 'Fair';
-                document.getElementById('market-impact').style.color = '#1f2937';
+                document.getElementById('market-impact').style.color = 'var(--color-neutral-900)';
             } else {
                 document.getElementById('certainty-impact').textContent = 'Medium';
-                document.getElementById('certainty-impact').style.color = '#fbbf24';
+                document.getElementById('certainty-impact').style.color = 'var(--color-warning)';
                 document.getElementById('risk-impact').textContent = 'Low';
-                document.getElementById('risk-impact').style.color = '#4ade80';
+                document.getElementById('risk-impact').style.color = 'var(--color-success)';
                 document.getElementById('market-impact').textContent = 'Below Market';
-                document.getElementById('market-impact').style.color = '#f87171';
+                document.getElementById('market-impact').style.color = 'var(--color-danger)';
             }
         }
 
@@ -821,14 +839,14 @@
             if (terms.revenueModel === 'guaranteed' && terms.rightsFee >= 35) riskLevel = 'Low';
             else if (terms.revenueModel === 'share' || terms.digital === 'league') riskLevel = 'High';
             document.getElementById('risk-level').textContent = riskLevel;
-            document.getElementById('risk-level').style.color = riskLevel === 'Low' ? '#4ade80' : riskLevel === 'High' ? '#f87171' : '#fbbf24';
+            document.getElementById('risk-level').style.color = riskLevel === 'Low' ? 'var(--color-success)' : riskLevel === 'High' ? 'var(--color-danger)' : 'var(--color-warning)';
 
             // Market position
             let marketPos = 'Fair';
             if (annual >= 42) marketPos = 'Premium';
             else if (annual < 32) marketPos = 'Below Market';
             document.getElementById('market-position').textContent = marketPos;
-            document.getElementById('market-position').style.color = marketPos === 'Premium' ? '#4ade80' : marketPos === 'Below Market' ? '#f87171' : '#1f2937';
+            document.getElementById('market-position').style.color = marketPos === 'Premium' ? 'var(--color-success)' : marketPos === 'Below Market' ? 'var(--color-danger)' : 'var(--color-neutral-900)';
 
             // Scores
             document.getElementById('chl-score').textContent = chlScore.score.toFixed(0);
@@ -837,13 +855,13 @@
             // Breakdowns
             let chlHTML = '';
             chlScore.breakdown.forEach(item => {
-                chlHTML += `<div class="score-item"><span>${item.label}</span><span style="color: #4ade80;">${item.score}/30</span></div>`;
+                chlHTML += `<div class="score-item"><span>${item.label}</span><span style="color: var(--color-success);">${item.score}/30</span></div>`;
             });
             document.getElementById('chl-breakdown').innerHTML = chlHTML;
 
             let networkHTML = '';
             networkScore.breakdown.forEach(item => {
-                networkHTML += `<div class="score-item"><span>${item.label}</span><span style="color: #fbbf24;">${item.score}/30</span></div>`;
+                networkHTML += `<div class="score-item"><span>${item.label}</span><span style="color: var(--color-warning);">${item.score}/30</span></div>`;
             });
             document.getElementById('network-breakdown').innerHTML = networkHTML;
 
@@ -857,8 +875,8 @@
                 timelineHTML += `
                     <div class="year-projection">
                         <div class="year-label">Year ${index + 1}</div>
-                        <div style="color: #4ade80; font-weight: 600;">$${value.toFixed(1)}M</div>
-                        <div style="color: #6b7280; font-size: 0.9rem;">
+                        <div style="color: var(--color-success); font-weight: 600;">$${value.toFixed(1)}M</div>
+                        <div style="color: var(--color-neutral-500); font-size: 0.9rem;">
                             ${index === 0 ? 'Launch year' : index === 4 && terms.length === 'short' ? 'Renegotiation opportunity' : `+${((value / yearly[0] - 1) * 100).toFixed(0)}% from Year 1`}
                         </div>
                     </div>
@@ -887,13 +905,13 @@
             narrative += '<br><br><strong>Deal Assessment:</strong><br><br>';
 
             if (chlScore > 75 && networkScore > 75) {
-                narrative += '✅ <strong>Win-Win Deal:</strong> Both parties achieve strong outcomes. Balanced structure supports long-term partnership.';
+                narrative += '<strong>Win-Win Deal:</strong> Both parties achieve strong outcomes. Balanced structure supports long-term partnership.';
             } else if (chlScore > networkScore + 15) {
-                narrative += '🏒 <strong>CHL Favorable:</strong> League negotiates strong terms. Network may seek concessions or performance clauses.';
+                narrative += '<strong>CHL Favorable:</strong> League negotiates strong terms. Network may seek concessions or performance clauses.';
             } else if (networkScore > chlScore + 15) {
-                narrative += '📡 <strong>Network Favorable:</strong> Broadcaster secures advantageous deal. League may have left money on table.';
+                narrative += '<strong>Network Favorable:</strong> Broadcaster secures advantageous deal. League may have left money on table.';
             } else {
-                narrative += '⚖️ <strong>Balanced Deal:</strong> Fair terms for both sides with room for mutual growth over contract length.';
+                narrative += '<strong>Balanced Deal:</strong> Fair terms for both sides with room for mutual growth over contract length.';
             }
 
             return narrative;

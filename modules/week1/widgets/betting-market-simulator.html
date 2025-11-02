@@ -81,11 +81,11 @@
             border: 1px solid var(--color-neutral-300);
             border-radius: var(--border-radius);
             color: var(--color-neutral-700);
+            font-family: inherit;
             cursor: pointer;
             transition: all 0.2s;
             font-size: 1rem;
             font-weight: 500;
-            font-family: var(--font-family-primary);
         }
 
         .market-btn:hover {
@@ -243,7 +243,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎲 Sports Betting Market Simulator</h1>
+        <h1>Sports Betting Market Simulator</h1>
         <p class="subtitle">Explore sports betting market size, growth opportunities, and regulatory considerations</p>
 
         <div class="market-selector">
@@ -589,7 +589,7 @@
 
             // Opportunities
             const opportunitiesHTML = `
-                <h2>💰 Market Opportunities</h2>
+                <h2>Market Opportunities</h2>
                 <div class="opportunity-grid">
                     ${market.opportunities.map(opp => `
                         <div class="opportunity-card">
@@ -605,7 +605,7 @@
 
             // Risks
             const risksHTML = `
-                <h2>⚠️ Key Risks & Challenges</h2>
+                <h2>Key Risks & Challenges</h2>
                 ${market.risks.map(risk => `
                     <div class="risk-item">
                         <strong>${risk.title}</strong>

@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rogers NHL Deal Terms Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* CSS Design System */
         :root {
-            --color-primary: #c5b783;
-            --color-primary-dark: #8b7b3f;
+            --color-primary: #171717;
+            --color-primary-dark: #404040;
             --color-dark: #2c2c2c;
             --color-success: #4a7c59;
             --color-danger: #dc2626;
             --color-warning: #d97706;
+            --color-warning-light: #fef3c7;
+            --color-warning-lighter: #fde68a;
             --color-info: #2563eb;
+            --color-info-dark: #1d4ed8;
+            --color-info-light: #e0f2fe;
+            --color-info-lighter: #bae6fd;
             --color-white: #ffffff;
             --color-light-gray: #f9fafb;
             --color-gray: #6b7280;
+            --color-gray-border: #e0e0e0;
+            --color-gray-hover: #e5e7eb;
+            --color-neutral-800: #2c2c2c;
             --border-radius: 12px;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -28,8 +39,8 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, var(--color-light-gray) 0%, var(--color-gray-hover) 100%);
             color: var(--color-dark);
             padding: 24px;
             line-height: 1.6;
@@ -64,11 +75,11 @@
 
         /* Deal Overview */
         .deal-overview {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            background: var(--color-light-gray);
             border-radius: var(--border-radius);
             padding: 24px;
             margin-bottom: 32px;
-            border-left: 4px solid var(--color-warning);
+            border-left: 4px solid var(--color-neutral-800);
         }
 
         .deal-overview h2 {
@@ -125,6 +136,7 @@
             color: var(--color-gray);
             cursor: pointer;
             transition: all 0.3s ease;
+            font-family: inherit;
         }
 
         .tab-button:hover {
@@ -270,7 +282,7 @@
 
         /* Highlight Box */
         .highlight-box {
-            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            background: linear-gradient(135deg, var(--color-info-light) 0%, var(--color-info-lighter) 100%);
             border-left: 4px solid var(--color-info);
             padding: 16px;
             border-radius: 8px;
@@ -300,6 +312,7 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
+            font-family: inherit;
         }
 
         .btn-export {
@@ -308,7 +321,7 @@
         }
 
         .btn-export:hover {
-            background: #1d4ed8;
+            background: var(--color-info-dark);
         }
 
         .btn:focus {
@@ -365,9 +378,9 @@
         /* Collapsible Sections */
         .section {
             margin-bottom: 1.5rem;
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--color-gray-border);
             border-radius: 8px;
-            background: white;
+            background: var(--color-white);
         }
 
         .section-header {
@@ -383,7 +396,7 @@
         }
 
         .section-header:hover {
-            background: #e5e7eb;
+            background: var(--color-gray-hover);
         }
 
         .section-header h2 {
@@ -421,7 +434,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>🏒 Rogers NHL Deal Terms Explorer</h1>
+            <h1>Rogers NHL Deal Terms Explorer</h1>
             <p class="subtitle">Explore the comprehensive $5.2B rights agreement (2014-2026)</p>
         </header>
 
@@ -506,14 +519,14 @@
                 <h3>Platforms Covered - Distribution Flexibility</h3>
                 <p>Rogers gained rights across all modern distribution platforms, giving them complete control over audience access:</p>
                 <ul>
-                    <li><strong>📺 Linear TV Networks:</strong> Sportsnet (flagship), Sportsnet One, Sportsnet 360, City TV — Rogers controlled game placement across 4 networks</li>
-                    <li><strong>📱 Streaming Service:</strong> Sportsnet NOW (launched 2016) — subscription DTC service ($25/month) for cord-cutters and younger demographics</li>
-                    <li><strong>💻 Digital Platforms:</strong> Sportsnet.ca website, iOS/Android mobile apps, tablet apps — full game streaming and highlight access</li>
-                    <li><strong>📻 Radio Network:</strong> Sportsnet Radio — play-by-play and talk radio covering all games</li>
+                    <li><strong>Linear TV Networks:</strong> Sportsnet (flagship), Sportsnet One, Sportsnet 360, City TV — Rogers controlled game placement across 4 networks</li>
+                    <li><strong>Streaming Service:</strong> Sportsnet NOW (launched 2016) — subscription DTC service ($25/month) for cord-cutters and younger demographics</li>
+                    <li><strong>Digital Platforms:</strong> Sportsnet.ca website, iOS/Android mobile apps, tablet apps — full game streaming and highlight access</li>
+                    <li><strong>Radio Network:</strong> Sportsnet Radio — play-by-play and talk radio covering all games</li>
                 </ul>
                 <div class="highlight-box">
                     <strong>Strategic Flexibility:</strong>
-                    Rogers could shift games across platforms based on ratings strategy (e.g., move Maple Leafs to Sportsnet 360 to boost that network's carriage fees). This flexibility was unprecedented in Canadian sports media.
+                    Rogers could shift games across platforms based on ratings strategy (e.g., move Maple Leafs to Sportsnet 360 to boost that network's <abbr title="Fee cable/satellite providers pay to carry a channel - higher ratings justify higher fees">carriage fees</abbr>). This flexibility was unprecedented in Canadian sports media.
                 </div>
             </div>
 
@@ -523,7 +536,7 @@
                 <p>The exclusivity clause gave Rogers a near-monopoly on NHL content in Canada, reshaping the competitive landscape:</p>
                 <ul class="negative">
                     <li><strong>TSN Lost National Rights:</strong> Previously co-held national games with CBC since 2004, completely shut out after 2014</li>
-                    <li><strong>CBC Sublicensed from Rogers:</strong> CBC retained "Hockey Night in Canada" brand name but paid Rogers for free-to-air Saturday broadcasts — no longer an independent rights holder</li>
+                    <li><strong>CBC <abbr title="Rights acquired from another broadcaster who holds the primary rights, not directly from the league">Sublicensed</abbr> from Rogers:</strong> CBC retained "Hockey Night in Canada" brand name but paid Rogers for free-to-air Saturday broadcasts — no longer an independent rights holder</li>
                     <li><strong>National Exclusivity:</strong> No other Canadian broadcaster could acquire NHL games for national distribution (2014-2026 term)</li>
                 </ul>
                 <ul>
@@ -650,7 +663,7 @@
         <!-- Action Buttons -->
         <div class="action-buttons">
             <button class="btn btn-export" id="export-btn">
-                ⬇ Export Deal Terms (JSON)
+                Export Deal Terms (CSV)
             </button>
         </div>
     </div>
@@ -707,49 +720,50 @@
 
         // Export functionality
         document.getElementById('export-btn').addEventListener('click', () => {
-            const dealData = {
-                overview: {
-                    totalValue: '$5.2B',
-                    contractLength: '12 years',
-                    annualCost: '$433M',
-                    term: '2014-2026'
-                },
-                rightsIncluded: [
-                    'All national games (Hockey Night in Canada)',
-                    'All regional games (7 Canadian teams, 574 games)',
-                    'All playoff games (Stanley Cup Playoffs)',
-                    'International tournaments',
-                    'Shoulder programming (200+ hours)'
-                ],
-                platforms: [
-                    'Linear TV: Sportsnet, Sportsnet One, Sportsnet 360, City TV',
-                    'Streaming: Sportsnet NOW',
-                    'Digital: Sportsnet.ca, mobile apps',
-                    'Radio: Sportsnet Radio'
-                ],
-                exclusivity: {
-                    tsnOut: true,
-                    cbcSublicensed: true,
-                    nationalMonopoly: true
-                },
-                revenueProjections: [
-                    { year: 1, season: '2014-15', projected: '$300M' },
-                    { year: 3, season: '2016-17', projected: '$425M' },
-                    { year: 5, season: '2018-19', projected: '$500M (break-even target)' },
-                    { year: 7, season: '2020-21', projected: '$550M' }
-                ],
-                comparison: {
-                    previousDeal: '$1.4B over 10 years ($140M/year)',
-                    rogersDeal: '$5.2B over 12 years ($433M/year)',
-                    increase: '+209% per year'
-                }
-            };
+            // Build CSV
+            let csv = 'Category,Item,Value\n';
 
-            const blob = new Blob([JSON.stringify(dealData, null, 2)], { type: 'application/json' });
+            // Overview section
+            csv += 'Overview,Total Value,$5.2B\n';
+            csv += 'Overview,Contract Length,12 years\n';
+            csv += 'Overview,Annual Cost,$433M\n';
+            csv += 'Overview,Contract Term,2014-2026\n';
+
+            // Rights Included section
+            csv += 'Rights Included,All national games,Hockey Night in Canada\n';
+            csv += 'Rights Included,All regional games,7 Canadian teams - 574 games\n';
+            csv += 'Rights Included,All playoff games,Stanley Cup Playoffs\n';
+            csv += 'Rights Included,International tournaments,World Cup - Olympics qualifiers\n';
+            csv += 'Rights Included,Shoulder programming,200+ hours\n';
+
+            // Platforms section
+            csv += 'Platforms,Linear TV,"Sportsnet, Sportsnet One, Sportsnet 360, City TV"\n';
+            csv += 'Platforms,Streaming,Sportsnet NOW\n';
+            csv += 'Platforms,Digital,"Sportsnet.ca, mobile apps"\n';
+            csv += 'Platforms,Radio,Sportsnet Radio\n';
+
+            // Exclusivity section
+            csv += 'Exclusivity,TSN Status,Lost all national rights\n';
+            csv += 'Exclusivity,CBC Status,Sublicensed from Rogers\n';
+            csv += 'Exclusivity,Market Position,National monopoly (95%+ control)\n';
+
+            // Revenue Projections section
+            csv += 'Revenue Projections,Year 1 (2014-15),$300M\n';
+            csv += 'Revenue Projections,Year 3 (2016-17),$425M\n';
+            csv += 'Revenue Projections,Year 5 (2018-19),$500M (break-even target)\n';
+            csv += 'Revenue Projections,Year 7 (2020-21),$550M\n';
+
+            // Comparison section
+            csv += 'Comparison,Previous Deal (CBC/TSN 2004-2014),$1.4B over 10 years ($140M/year)\n';
+            csv += 'Comparison,Rogers Deal (2014-2026),$5.2B over 12 years ($433M/year)\n';
+            csv += 'Comparison,Annual Cost Increase,+209% per year (+$293M/year)\n';
+            csv += 'Comparison,Total Value Increase,+271% (+$3.8B)\n';
+
+            const blob = new Blob([csv], { type: 'text/csv' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `rogers-nhl-deal-terms-${Date.now()}.json`;
+            a.download = `rogers-nhl-deal-terms-${Date.now()}.csv`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);

@@ -121,15 +121,15 @@
 
         .revenue-category {
             background: white;
-            border: 2px solid #d1d5db;
+            border: 2px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 1.5rem;
             transition: all 0.3s;
         }
 
         .revenue-category:hover {
-            border-color: #6b7280;
-            background: #f9fafb;
+            border-color: var(--color-neutral-500);
+            background: var(--color-neutral-50);
         }
 
         .category-header {
@@ -172,8 +172,8 @@
         }
 
         .total-display {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 1.5rem;
             text-align: center;
@@ -211,7 +211,7 @@
 
         .opportunity {
             background: white;
-            border: 2px solid #d1d5db;
+            border: 2px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 1.5rem;
         }
@@ -236,6 +236,7 @@
             border-radius: 6px;
             color: var(--color-neutral-700);
             cursor: pointer;
+            font-family: inherit;
             font-weight: 600;
             transition: all 0.3s;
         }
@@ -253,17 +254,17 @@
 
         .category-chip {
             padding: 0.5rem 1rem;
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 20px;
-            color: #2d3748;
+            color: var(--color-neutral-800);
             font-size: 0.85rem;
             cursor: pointer;
             transition: all 0.2s;
         }
 
         .category-chip:hover {
-            background: #e5e7eb;
+            background: var(--color-neutral-200);
         }
 
         .export-btn {
@@ -271,6 +272,7 @@
             color: white;
             border: none;
             padding: 1rem 3rem;
+            font-family: inherit;
             font-size: 1.2rem;
             font-weight: 700;
             border-radius: 8px;
@@ -312,7 +314,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>💰 Revenue Model Canvas Builder</h1>
+        <h1>Revenue Model Canvas Builder</h1>
         <p class="subtitle">Map current and projected revenue streams for your chosen sports property</p>
 
         <div class="section">
@@ -351,8 +353,7 @@
             <div class="revenue-grid">
                 <div class="revenue-category">
                     <div class="category-header">
-                        <div class="category-icon">📺</div>
-                        <div class="category-title">Media Rights</div>
+                        <div class="category-icon">Media Rights</div>
                     </div>
                     <div class="revenue-inputs">
                         <div class="percentage-input">
@@ -367,7 +368,6 @@
 
                 <div class="revenue-category">
                     <div class="category-header">
-                        <div class="category-icon">🤝</div>
                         <div class="category-title">Sponsorship</div>
                     </div>
                     <div class="revenue-inputs">
@@ -383,7 +383,6 @@
 
                 <div class="revenue-category">
                     <div class="category-header">
-                        <div class="category-icon">🎟️</div>
                         <div class="category-title">Ticketing</div>
                     </div>
                     <div class="revenue-inputs">
@@ -399,7 +398,6 @@
 
                 <div class="revenue-category">
                     <div class="category-header">
-                        <div class="category-icon">👕</div>
                         <div class="category-title">Merchandising</div>
                     </div>
                     <div class="revenue-inputs">
@@ -415,7 +413,6 @@
 
                 <div class="revenue-category">
                     <div class="category-header">
-                        <div class="category-icon">🎲</div>
                         <div class="category-title">Betting/Gaming</div>
                     </div>
                     <div class="revenue-inputs">
@@ -431,7 +428,6 @@
 
                 <div class="revenue-category">
                     <div class="category-header">
-                        <div class="category-icon">💼</div>
                         <div class="category-title">Other</div>
                     </div>
                     <div class="revenue-inputs">
@@ -449,7 +445,7 @@
             <div class="total-display">
                 <div class="total-label">Total Percentage Allocated</div>
                 <div class="total-amount" id="total-percentage">0%</div>
-                <div class="validation-message" id="validation-msg">⚠️ Total must equal 100%</div>
+                <div class="validation-message" id="validation-msg">Total must equal 100%</div>
             </div>
         </div>
 
@@ -458,7 +454,7 @@
             <p class="section-description">Identify the three most promising sponsorship categories for this property and explain the rationale.</p>
 
             <div class="category-suggestions">
-                <strong style="color: #6b7280; width: 100%; margin-bottom: 0.5rem;">Suggested Categories:</strong>
+                <strong style="color: var(--color-neutral-500); width: 100%; margin-bottom: 0.5rem;">Suggested Categories:</strong>
                 <div class="category-chip" onclick="fillCategory(0, 'Title/Presenting Sponsor')">Title/Presenting Sponsor</div>
                 <div class="category-chip" onclick="fillCategory(0, 'Jersey/Uniform Sponsor')">Jersey/Uniform Sponsor</div>
                 <div class="category-chip" onclick="fillCategory(0, 'Venue Naming Rights')">Venue Naming Rights</div>
@@ -473,7 +469,7 @@
             </div>
         </div>
 
-        <button class="export-btn" onclick="exportCanvas()">📄 Generate Revenue Model Canvas</button>
+        <button class="export-btn" onclick="exportCanvas()">Generate Revenue Model Canvas</button>
     </div>
 
     <script>
@@ -501,13 +497,13 @@
             const validationMsg = document.getElementById('validation-msg');
             if (total === 100) {
                 validationMsg.classList.remove('show');
-                validationMsg.style.color = '#4ade80';
-                validationMsg.textContent = '✓ Perfect! Total equals 100%';
+                validationMsg.style.color = 'var(--color-success, #4ade80)';
+                validationMsg.textContent = 'Perfect! Total equals 100%';
                 validationMsg.classList.add('show');
             } else if (total > 0) {
                 validationMsg.classList.add('show');
-                validationMsg.style.color = '#f87171';
-                validationMsg.textContent = `⚠️ Total must equal 100% (currently ${total.toFixed(0)}%)`;
+                validationMsg.style.color = 'var(--color-error, #f87171)';
+                validationMsg.textContent = `Total must equal 100% (currently ${total.toFixed(0)}%)`;
             }
         }
 
@@ -594,19 +590,19 @@
 
             // Collect revenue breakdown
             const categories = [
-                { name: 'Media Rights', icon: '📺', pct: 'media-pct', amt: 'media-amount' },
-                { name: 'Sponsorship', icon: '🤝', pct: 'sponsorship-pct', amt: 'sponsorship-amount' },
-                { name: 'Ticketing', icon: '🎟️', pct: 'ticketing-pct', amt: 'ticketing-amount' },
-                { name: 'Merchandising', icon: '👕', pct: 'merchandising-pct', amt: 'merchandising-amount' },
-                { name: 'Betting/Gaming', icon: '🎲', pct: 'betting-pct', amt: 'betting-amount' },
-                { name: 'Other', icon: '💼', pct: 'other-pct', amt: 'other-amount' }
+                { name: 'Media Rights', pct: 'media-pct', amt: 'media-amount' },
+                { name: 'Sponsorship', pct: 'sponsorship-pct', amt: 'sponsorship-amount' },
+                { name: 'Ticketing', pct: 'ticketing-pct', amt: 'ticketing-amount' },
+                { name: 'Merchandising', pct: 'merchandising-pct', amt: 'merchandising-amount' },
+                { name: 'Betting/Gaming', pct: 'betting-pct', amt: 'betting-amount' },
+                { name: 'Other', pct: 'other-pct', amt: 'other-amount' }
             ];
 
             let breakdown = '';
             categories.forEach(cat => {
                 const pct = document.getElementById(cat.pct).value || '0';
                 const amt = document.getElementById(cat.amt).value || '$0';
-                breakdown += `${cat.icon} ${cat.name}: ${pct}% (${amt})\n`;
+                breakdown += `${cat.name}: ${pct}% (${amt})\n`;
             });
 
             // Collect sponsorship opportunities
@@ -684,7 +680,7 @@ Business of Sports Marketing - Anchor Project (Week 3)
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
 
-            alert('✅ Revenue Model Canvas generated! Use this as the foundation for your Week 3 deliverable. Don\'t forget to develop the detailed ROI framework for one sponsorship category.');
+            alert('Revenue Model Canvas generated! Use this as the foundation for your Week 3 deliverable. Don\'t forget to develop the detailed ROI framework for one sponsorship category.');
         }
 
         // Initialize with 3 opportunity slots

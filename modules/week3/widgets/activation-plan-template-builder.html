@@ -336,7 +336,7 @@
             padding: 0.625rem 1.25rem;
             border: none;
             border-radius: 6px;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             cursor: pointer;
@@ -457,9 +457,9 @@
 
             <div class="button-group">
                 <button class="btn-primary" onclick="generateTemplate()">Generate Template</button>
-                <button class="btn-secondary" onclick="copyTemplate()">📋 Copy to Clipboard</button>
-                <button class="btn-secondary" onclick="exportPlainText()">📄 Download Text File</button>
-                <button class="btn-secondary" onclick="exportPDF()">📑 Download PDF</button>
+                <button class="btn-secondary" onclick="copyTemplate()">Copy to Clipboard</button>
+                <button class="btn-secondary" onclick="exportPlainText()">Download Text File</button>
+                <button class="btn-secondary" onclick="exportPDF()">Download PDF</button>
             </div>
             <p class="helper-text" style="margin-top: 0.5rem;">
                 <strong>Export Options:</strong> Copy to paste into Google Docs, or download as Text/PDF for your records
@@ -469,11 +469,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('strategic')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('strategic');}" tabindex="0" role="button" aria-expanded="false" aria-controls="strategic-content">
+            <div class="section-header" onclick="toggleSection('strategic')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('strategic');}" tabindex="0" role="button" aria-expanded="true" aria-controls="strategic-content">
                 <h2>Strategic Foundation</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="strategic-content">
+            <div class="section-content expanded" id="strategic-content">
                 <div class="section-inner content-section" id="strategyContent">
                 <!-- Populated by JavaScript -->
                 </div>
@@ -481,11 +481,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('budget')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('budget');}" tabindex="0" role="button" aria-expanded="false" aria-controls="budget-content">
+            <div class="section-header" onclick="toggleSection('budget')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('budget');}" tabindex="0" role="button" aria-expanded="true" aria-controls="budget-content">
                 <h2>Budget & ROI</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="budget-content">
+            <div class="section-content expanded" id="budget-content">
                 <div class="section-inner content-section" id="budgetContent">
                 <!-- Populated by JavaScript -->
                 </div>
@@ -932,7 +932,7 @@ Next Steps:
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
 
-            alert('✓ Text file downloaded! Open in Notepad/TextEdit to view your plan.');
+            alert('Success: Text file downloaded! Open in Notepad/TextEdit to view your plan.');
         }
 
         function exportPDF() {

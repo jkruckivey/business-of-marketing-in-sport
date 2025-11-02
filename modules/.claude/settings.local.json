@@ -14,7 +14,22 @@
       "Bash(claude-code --version)",
       "Bash(git add:*)",
       "Bash(git pull:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(python:*)",
+      "Bash(xargs:*)",
+      "Bash(for file in week2/widgets/*.html week3/widgets/*.html week4/widgets/*.html week1/widgets/*.html)",
+      "Bash(do grep -l \"background:\\|color:\\|border\" $file)",
+      "Bash(done)",
+      "Bash(awk:*)",
+      "Bash(for file in week2/widgets/learning-outcomes-module-*.html)",
+      "Bash(for file in week2/widgets/audience-size-calculator.html week2/widgets/platform-economics-visualizer.html week2/widgets/projections-vs-actuals-visualizer.html week2/widgets/rogers-deal-terms-explorer.html week2/widgets/viewership-trends-analyzer.html week2/widgets/2026-decision-simulator.html)",
+      "Bash(do echo \"=== $file ===\")",
+      "Bash(do grep -l \"button\\|\\.btn\" $file)",
+      "Bash(for file in week1/widgets/*.html week2/widgets/*.html week3/widgets/*.html week4/widgets/*.html)",
+      "Bash(do if grep -q ..*btn.*{ $file)",
+      "Bash(then if ! grep -q 'font-family: inherit' $file)",
+      "Bash(then echo $file)",
+      "Bash(fi)"
     ],
     "deny": [],
     "ask": []

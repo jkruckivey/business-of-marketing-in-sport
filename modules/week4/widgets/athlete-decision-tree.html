@@ -268,7 +268,7 @@
         }
 
         .risk-low { background: #d1fae5; color: #065f46; }
-        .risk-moderate { background: #fef3c7; color: #92400e; }
+        .risk-moderate { background: var(--color-neutral-100); color: var(--color-neutral-800); }
         .risk-high { background: #fee2e2; color: #991b1b; }
 
         .athlete-example {
@@ -532,7 +532,7 @@
         <!-- Recommendation -->
         <div class="recommendation" id="recommendation">
             <div class="rec-header">
-                <div class="rec-title">✓ Your Personalized Strategy</div>
+                <div class="rec-title">Your Personalized Strategy</div>
                 <div class="rec-strategy" id="rec-strategy">Loading...</div>
             </div>
 
@@ -605,7 +605,7 @@
             'rookie-low-conservative': {
                 strategy: '90% Endorsement, 10% Equity',
                 rationale: 'You\'re early in your career with limited cash flow. Prioritize guaranteed income to cover expenses and build a financial cushion. Save 10% for future equity opportunities when your earnings increase.',
-                action: '✓ Take the $10M/year endorsement deal<br>✓ Save $1M annually for future equity investments<br>✓ Focus on building your brand and increasing salary<br>✓ Revisit equity investments when salary exceeds $5M/year',
+                action: 'Take the $10M/year endorsement deal<br>Save $1M annually for future equity investments<br>Focus on building your brand and increasing salary<br>Revisit equity investments when salary exceeds $5M/year',
                 projection: { endorseOnly: 78, yourStrategy: 87, advantage: '+12%' },
                 risk: 'Very Low',
                 riskDetails: 'Guaranteed income minimizes downside risk. Steady wealth building with minimal volatility.',
@@ -615,7 +615,7 @@
             'peak-elite-high': {
                 strategy: '70% Equity, 30% Endorsement',
                 rationale: 'You\'re at peak brand value with significant capital. This is your window to build generational wealth. Take the endorsement for cash flow, but aggressively invest in owned businesses and equity.',
-                action: '✓ Negotiate the endorsement deal for equity component (5-10% stake)<br>✓ Accept $10M/year but use cash flow to fund $2M business investment<br>✓ Structure as: $10M endorsement + $2M equity = 70/30 split<br>✓ Diversify equity across 3-5 businesses',
+                action: 'Negotiate the endorsement deal for equity component (5-10% stake)<br>Accept $10M/year but use cash flow to fund $2M business investment<br>Structure as: $10M endorsement + $2M equity = 70/30 split<br>Diversify equity across 3-5 businesses',
                 projection: { endorseOnly: 87, yourStrategy: 312, advantage: '+259%' },
                 risk: 'Moderate-High',
                 riskDetails: 'Equity investments carry risk but your capital position allows diversification. Maintain $4M cash reserve for stability.',
@@ -625,7 +625,7 @@
             'veteran-immediate-retirement': {
                 strategy: '20% Equity, 80% Conservative Investments',
                 rationale: 'With 1-2 years until retirement, your priority is wealth preservation. Avoid risky equity investments and focus on stable, liquid assets that will support you post-career.',
-                action: '✓ Pass on the $2M equity investment (too risky near retirement)<br>✓ Take endorsement if low effort required<br>✓ Move existing assets to conservative 60/40 portfolio<br>✓ Establish 4% annual withdrawal rate for post-career income',
+                action: 'Pass on the $2M equity investment (too risky near retirement)<br>Take endorsement if low effort required<br>Move existing assets to conservative 60/40 portfolio<br>Establish 4% annual withdrawal rate for post-career income',
                 projection: { endorseOnly: 124, yourStrategy: 124, advantage: '±0%' },
                 risk: 'Low',
                 riskDetails: 'Conservative allocation protects wealth. 4% withdrawal provides stable income while preserving capital.',

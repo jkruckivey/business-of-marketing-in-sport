@@ -8,6 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --color-dark-gray: #374151;
+            --color-darker-gray: #1f2937;
+            --color-green: #059669;
+            --color-green-dark: #047857;
+            --color-text-primary: #2d3748;
+            --color-text-secondary: #6b7280;
+            --color-bg-gray: #f9fafb;
+            --color-border: #d1d5db;
+            --color-border-light: #e5e7eb;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -17,7 +29,7 @@
         body {
             font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: white;
-            color: #2d3748;
+            color: var(--color-text-primary);
             padding: 2rem;
             min-height: 100vh;
         }
@@ -25,20 +37,20 @@
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-bg-gray);
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             padding: 2rem;
         }
 
         h1 {
-            color: #1f2937;
+            color: var(--color-darker-gray);
             margin-bottom: 0.5rem;
             font-size: 2rem;
         }
 
         .subtitle {
-            color: #6b7280;
+            color: var(--color-text-secondary);
             margin-bottom: 2rem;
             font-size: 1rem;
         }
@@ -59,35 +71,36 @@
         .filter-btn {
             padding: 0.5rem 1rem;
             background: white;
-            border: 2px solid #d1d5db;
+            border: 2px solid var(--color-border);
             border-radius: 4px;
-            color: #2d3748;
+            color: var(--color-text-primary);
             font-weight: 500;
             cursor: pointer;
             transition: all 0.2s;
             font-size: 0.9rem;
+            font-family: inherit;
         }
 
         .filter-btn:hover {
-            border-color: #2d3748;
-            background: #f9fafb;
+            border-color: var(--color-text-primary);
+            background: var(--color-bg-gray);
         }
 
         .filter-btn.active {
-            background: #2d3748;
+            background: var(--color-text-primary);
             color: white;
-            border-color: #2d3748;
+            border-color: var(--color-text-primary);
         }
 
         .filter-btn:focus {
-            outline: 2px solid #2d3748;
+            outline: 2px solid var(--color-text-primary);
             outline-offset: 2px;
         }
 
         .timeline-container {
             background: white;
             padding: 2rem;
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-border);
             border-radius: 8px;
         }
 
@@ -97,7 +110,7 @@
             margin-bottom: 1rem;
             padding: 0 80px 0 120px;
             font-weight: 600;
-            color: #6b7280;
+            color: var(--color-text-secondary);
             font-size: 0.9rem;
         }
 
@@ -142,7 +155,7 @@
         }
 
         .year-line {
-            border-right: 1px dashed #e5e7eb;
+            border-right: 1px dashed var(--color-border-light);
         }
 
         .deal-bar {
@@ -162,13 +175,13 @@
         }
 
         .deal-bar.traditional {
-            background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
-            border: 1px solid #1f2937;
+            background: linear-gradient(135deg, var(--color-dark-gray) 0%, var(--color-darker-gray) 100%);
+            border: 1px solid var(--color-darker-gray);
         }
 
         .deal-bar.streaming {
-            background: linear-gradient(135deg, #059669 0%, #047857 100%);
-            border: 1px solid #047857;
+            background: linear-gradient(135deg, var(--color-green) 0%, var(--color-green-dark) 100%);
+            border: 1px solid var(--color-green-dark);
         }
 
         .deal-bar:hover {
@@ -178,7 +191,7 @@
         }
 
         .deal-bar:focus {
-            outline: 3px solid #2d3748;
+            outline: 3px solid var(--color-text-primary);
             outline-offset: 2px;
             z-index: 10;
         }
@@ -198,13 +211,13 @@
             transform: translateY(-50%);
             font-size: 0.85rem;
             font-weight: 600;
-            color: #2d3748;
+            color: var(--color-text-primary);
             white-space: nowrap;
         }
 
         .tooltip {
             position: fixed;
-            background: #1f2937;
+            background: var(--color-darker-gray);
             color: white;
             padding: 1rem;
             border-radius: 6px;
@@ -236,7 +249,7 @@
         }
 
         .tooltip-label {
-            color: #d1d5db;
+            color: var(--color-border);
         }
 
         .tooltip-value {
@@ -249,7 +262,7 @@
             gap: 2rem;
             margin-top: 2rem;
             padding: 1rem;
-            background: #f9fafb;
+            background: var(--color-bg-gray);
             border-radius: 6px;
             justify-content: center;
         }
@@ -268,11 +281,11 @@
         }
 
         .legend-box.traditional {
-            background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+            background: linear-gradient(135deg, var(--color-dark-gray) 0%, var(--color-darker-gray) 100%);
         }
 
         .legend-box.streaming {
-            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            background: linear-gradient(135deg, var(--color-green) 0%, var(--color-green-dark) 100%);
         }
 
         .year-slider {
@@ -282,7 +295,7 @@
 
         .slider-label {
             font-weight: 600;
-            color: #2d3748;
+            color: var(--color-text-primary);
             margin-bottom: 0.5rem;
             display: flex;
             justify-content: space-between;
@@ -291,14 +304,14 @@
 
         .current-year {
             font-size: 1.2rem;
-            color: #059669;
+            color: var(--color-green);
         }
 
         input[type="range"] {
             width: 100%;
             height: 8px;
             border-radius: 4px;
-            background: #d1d5db;
+            background: var(--color-border);
             outline: none;
             -webkit-appearance: none;
         }
@@ -308,7 +321,7 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background: #059669;
+            background: var(--color-green);
             cursor: pointer;
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
         }
@@ -317,7 +330,7 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background: #059669;
+            background: var(--color-green);
             cursor: pointer;
             border: none;
             box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -327,7 +340,7 @@
             margin-top: 2rem;
             padding: 1.5rem;
             background: white;
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-border);
             border-radius: 8px;
         }
 
@@ -341,20 +354,20 @@
         .stat-item {
             text-align: center;
             padding: 1rem;
-            background: #f9fafb;
+            background: var(--color-bg-gray);
             border-radius: 6px;
         }
 
         .stat-value {
             font-size: 1.8rem;
             font-weight: 700;
-            color: #2d3748;
+            color: var(--color-text-primary);
             margin-bottom: 0.3rem;
         }
 
         .stat-label {
             font-size: 0.85rem;
-            color: #6b7280;
+            color: var(--color-text-secondary);
             font-weight: 500;
         }
 
@@ -409,12 +422,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>📊 Major Media Rights Deals, 2020–2035</h1>
+        <h1>Major Media Rights Deals, 2020–2035</h1>
         <p class="subtitle">Interactive timeline showing the evolution from traditional broadcasters to streaming platforms</p>
 
         <div class="controls">
             <div class="filter-group">
-                <span style="font-weight: 600; color: #6b7280;">Filter by League:</span>
+                <span style="font-weight: 600; color: var(--color-text-secondary);">Filter by League:</span>
                 <button class="filter-btn active" onclick="filterLeague('all')" data-league="all">All Leagues</button>
                 <button class="filter-btn" onclick="filterLeague('NHL')" data-league="NHL">NHL</button>
                 <button class="filter-btn" onclick="filterLeague('NBA')" data-league="NBA">NBA</button>
@@ -425,7 +438,7 @@
 
         <div class="controls">
             <div class="filter-group">
-                <span style="font-weight: 600; color: #6b7280;">Filter by Type:</span>
+                <span style="font-weight: 600; color: var(--color-text-secondary);">Filter by Type:</span>
                 <button class="filter-btn active" onclick="filterType('all')" data-type="all">All Platforms</button>
                 <button class="filter-btn" onclick="filterType('traditional')" data-type="traditional">Traditional Only</button>
                 <button class="filter-btn" onclick="filterType('streaming')" data-type="streaming">Streaming Only</button>
@@ -454,7 +467,7 @@
                 <div class="timeline-row" data-league="NHL">
                     <div class="league-icon">
                         <svg viewBox="0 0 100 100" width="60" height="60">
-                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="#2d3748">NHL</text>
+                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="var(--color-text-primary)">NHL</text>
                         </svg>
                     </div>
                     <div class="deals-track">
@@ -506,7 +519,7 @@
                 <div class="timeline-row" data-league="NBA">
                     <div class="league-icon">
                         <svg viewBox="0 0 100 100" width="60" height="60">
-                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="#2d3748">NBA</text>
+                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="var(--color-text-primary)">NBA</text>
                         </svg>
                     </div>
                     <div class="deals-track">
@@ -558,7 +571,7 @@
                 <div class="timeline-row" data-league="NFL">
                     <div class="league-icon">
                         <svg viewBox="0 0 100 100" width="60" height="60">
-                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="#2d3748">NFL</text>
+                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="var(--color-text-primary)">NFL</text>
                         </svg>
                     </div>
                     <div class="deals-track">
@@ -610,7 +623,7 @@
                 <div class="timeline-row" data-league="MLB">
                     <div class="league-icon">
                         <svg viewBox="0 0 100 100" width="60" height="60">
-                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="#2d3748">MLB</text>
+                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="var(--color-text-primary)">MLB</text>
                         </svg>
                     </div>
                     <div class="deals-track">
@@ -662,7 +675,7 @@
                 <div class="timeline-row" data-league="MLB">
                     <div class="league-icon">
                         <svg viewBox="0 0 100 100" width="60" height="60">
-                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="#2d3748">MLB</text>
+                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="var(--color-text-primary)">MLB</text>
                         </svg>
                     </div>
                     <div class="deals-track">
@@ -724,7 +737,7 @@
         </div>
 
         <div class="stats-panel">
-            <h2 style="color: #1f2937; margin-bottom: 0.5rem;">Deal Insights</h2>
+            <h2 style="color: var(--color-darker-gray); margin-bottom: 0.5rem;">Deal Insights</h2>
             <div class="stats-grid" id="stats-grid">
                 <div class="stat-item">
                     <div class="stat-value" id="total-deals">10</div>

@@ -73,7 +73,7 @@
             color: var(--color-neutral-700);
             border: 1px solid var(--color-neutral-300);
             border-radius: 6px;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             cursor: pointer;
@@ -340,7 +340,7 @@
 
         .btn {
             padding: 0.625rem 1.25rem;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             border-radius: 6px;
@@ -490,11 +490,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('viewership')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('viewership');}" tabindex="0" role="button" aria-expanded="false" aria-controls="viewership-content">
+            <div class="section-header" onclick="toggleSection('viewership')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('viewership');}" tabindex="0" role="button" aria-expanded="true" aria-controls="viewership-content">
                 <h2>Viewership Analysis</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="viewership-content">
+            <div class="section-content expanded" id="viewership-content">
                 <div class="section-inner results" role="region" aria-label="Engagement analysis results">
 
             <div class="comparison-grid">
@@ -636,15 +636,15 @@
                         {
                             label: 'Non-Bettors',
                             data: [(1 - percentBettors) * 100, ((nonBettorViews / (nonBettorViews + bettorViews)) * 100)],
-                            backgroundColor: 'rgba(163, 163, 163, 0.8)',
-                            borderColor: 'rgb(163, 163, 163)',
+                            backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400') + 'cc',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400'),
                             borderWidth: 1
                         },
                         {
                             label: 'Bettors',
                             data: [percentBettors * 100, bettorContribution],
-                            backgroundColor: 'rgba(64, 64, 64, 0.8)',
-                            borderColor: 'rgb(64, 64, 64)',
+                            backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700') + 'cc',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700'),
                             borderWidth: 1
                         }
                     ]
@@ -660,7 +660,7 @@
                                     family: 'Geist',
                                     size: 12
                                 },
-                                color: '#525252',
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-600'),
                                 padding: 12
                             }
                         },
@@ -672,7 +672,7 @@
                                 size: 14,
                                 weight: '600'
                             },
-                            color: '#171717'
+                            color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-900')
                         }
                     },
                     scales: {
@@ -687,10 +687,10 @@
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#737373'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500')
                             },
                             grid: {
-                                color: '#e5e5e5'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-200')
                             }
                         },
                         x: {
@@ -699,7 +699,7 @@
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#737373'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500')
                             },
                             grid: {
                                 display: false

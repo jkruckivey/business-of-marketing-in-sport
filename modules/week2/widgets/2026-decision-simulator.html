@@ -4,21 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rogers 2026 NHL Decision Simulator - CAPSTONE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
-        /* CSS Design System */
+        /* CSS Design System - Standardized Neutral Palette */
         :root {
-            --color-primary: #c5b783;
-            --color-primary-dark: #8b7b3f;
-            --color-dark: #2c2c2c;
-            --color-success: #4a7c59;
-            --color-danger: #dc2626;
-            --color-warning: #d97706;
-            --color-info: #2563eb;
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-primary: #171717;
+            --color-primary-dark: #404040;
+            --color-primary-light: #f5f5f5;
+            --color-success: #22c55e;
+            --color-error: #ef4444;
+            --color-warning: #f59e0b;
+            --color-info: #3b82f6;
             --color-white: #ffffff;
-            --color-light-gray: #f9fafb;
-            --color-gray: #6b7280;
-            --border-radius: 12px;
+            --color-light-gray: #fafafa;
+            --color-gray: #525252;
+            --color-star: #fbbf24;
+            --color-error-light: #fecaca;
+            --color-warning-light: #fde68a;
+            --color-success-light: #d1fae5;
+            --border-radius: 8px;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -29,9 +45,9 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
-            color: var(--color-dark);
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: white;
+            color: var(--color-neutral-900);
             padding: 24px;
             line-height: 1.6;
         }
@@ -53,14 +69,14 @@
         }
 
         .header h1 {
-            font-size: 2rem;
-            color: var(--color-dark);
+            font-size: 1.8rem;
+            color: var(--color-neutral-900);
             margin-bottom: 8px;
         }
 
         .subtitle {
             color: var(--color-gray);
-            font-size: 1.1rem;
+            font-size: 0.95rem;
         }
 
         /* Phase Navigation */
@@ -74,32 +90,36 @@
 
         .phase-btn {
             padding: 12px 24px;
-            background: var(--color-light-gray);
-            border: 2px solid transparent;
+            background: var(--color-neutral-100);
+            border: 2px solid var(--color-neutral-300);
             border-radius: 8px;
-            font-weight: 600;
+            font-weight: 500;
+            font-family: inherit;
             cursor: pointer;
             transition: all 0.3s ease;
-            color: var(--color-gray);
+            color: var(--color-neutral-700);
+            font-size: 0.95rem;
         }
 
         .phase-btn.active {
-            background: var(--color-primary);
+            background: var(--color-neutral-900);
             color: var(--color-white);
-            border-color: var(--color-primary-dark);
+            border-color: var(--color-neutral-900);
         }
 
         .phase-btn.completed {
-            background: var(--color-success);
+            background: var(--color-neutral-700);
             color: var(--color-white);
+            border-color: var(--color-neutral-700);
         }
 
         .phase-btn:hover:not(.active) {
-            background: rgba(197, 183, 131, 0.2);
+            background: var(--color-neutral-200);
+            border-color: var(--color-neutral-400);
         }
 
         .phase-btn:focus {
-            outline: 3px solid var(--color-primary);
+            outline: 2px solid var(--color-info);
             outline-offset: 2px;
         }
 
@@ -119,9 +139,9 @@
         }
 
         .phase-title {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             margin-bottom: 24px;
-            color: var(--color-dark);
+            color: var(--color-neutral-900);
         }
 
         /* Assumptions Section (Phase 1) */
@@ -142,7 +162,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: var(--color-dark);
+            color: var(--color-neutral-900);
         }
 
         .assumption-value {
@@ -154,7 +174,7 @@
             width: 100%;
             height: 8px;
             border-radius: 5px;
-            background: #ddd;
+            background: var(--color-light-gray);
             outline: none;
             -webkit-appearance: none;
             appearance: none;
@@ -187,7 +207,7 @@
         select {
             width: 100%;
             padding: 12px;
-            border: 2px solid #ddd;
+            border: 2px solid var(--color-light-gray);
             border-radius: 8px;
             font-size: 1rem;
             background: var(--color-white);
@@ -223,7 +243,7 @@
 
         .option-card.selected {
             border-color: var(--color-success);
-            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            background: var(--color-success-light);
         }
 
         .option-card:focus {
@@ -234,7 +254,7 @@
         .option-title {
             font-size: 1.3rem;
             font-weight: 700;
-            color: var(--color-dark);
+            color: var(--color-neutral-900);
             margin-bottom: 12px;
         }
 
@@ -250,7 +270,7 @@
         }
 
         .option-pros h4, .option-cons h4 {
-            font-size: 0.9rem;
+            font-size: 0.875rem;
             text-transform: uppercase;
             margin-bottom: 8px;
         }
@@ -260,7 +280,7 @@
         }
 
         .option-cons h4 {
-            color: var(--color-danger);
+            color: var(--color-error);
         }
 
         .option-pros ul, .option-cons ul {
@@ -276,7 +296,7 @@
 
         .option-cons li::before {
             content: "✗ ";
-            color: var(--color-danger);
+            color: var(--color-error);
             font-weight: bold;
         }
 
@@ -312,7 +332,7 @@
         }
 
         .metric-label {
-            font-size: 0.85rem;
+            font-size: 0.875rem;
             color: var(--color-gray);
             text-transform: uppercase;
             font-weight: 600;
@@ -320,9 +340,9 @@
         }
 
         .metric-value {
-            font-size: 1.6rem;
+            font-size: 2rem;
             font-weight: 700;
-            color: var(--color-dark);
+            color: var(--color-neutral-900);
         }
 
         .metric-value.positive {
@@ -330,7 +350,7 @@
         }
 
         .metric-value.negative {
-            color: var(--color-danger);
+            color: var(--color-error);
         }
 
         /* Strategic Scorecard */
@@ -342,7 +362,7 @@
 
         .scorecard h3 {
             margin-bottom: 16px;
-            color: var(--color-dark);
+            color: var(--color-neutral-900);
         }
 
         .scorecard-item {
@@ -359,11 +379,11 @@
 
         .scorecard-label {
             font-weight: 600;
-            color: var(--color-dark);
+            color: var(--color-neutral-900);
         }
 
         .stars {
-            color: #fbbf24;
+            color: var(--color-star);
             font-size: 1.2rem;
         }
 
@@ -394,7 +414,7 @@
         }
 
         .comparison-table .best {
-            background: #f0fdf4;
+            background: var(--color-success-light);
             font-weight: 600;
         }
 
@@ -430,7 +450,7 @@
 
         .decision-matrix td {
             padding: 16px;
-            border: 1px solid #e5e7eb;
+            border: 1px solid var(--color-neutral-200);
             vertical-align: middle;
         }
 
@@ -440,7 +460,7 @@
 
         .criterion-label {
             font-weight: 600;
-            color: var(--color-dark);
+            color: var(--color-neutral-900);
         }
 
         .rating-cell {
@@ -454,9 +474,9 @@
         }
 
         .rating-star {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             cursor: pointer;
-            color: #d1d5db;
+            color: var(--color-neutral-300);
             transition: all 0.2s ease;
             user-select: none;
         }
@@ -466,7 +486,7 @@
         }
 
         .rating-star.filled {
-            color: #fbbf24;
+            color: var(--color-star);
         }
 
         .rating-star.active {
@@ -480,7 +500,7 @@
 
         .cell-score {
             margin-top: 8px;
-            font-size: 0.85rem;
+            font-size: 0.875rem;
             font-weight: 600;
             padding: 4px 12px;
             border-radius: 12px;
@@ -488,18 +508,18 @@
         }
 
         .cell-score.low {
-            background: #fecaca;
-            color: #991b1b;
+            background: var(--color-error-light);
+            color: var(--color-error);
         }
 
         .cell-score.medium {
-            background: #fde68a;
-            color: #78350f;
+            background: var(--color-light-gray);
+            color: var(--color-neutral-800);
         }
 
         .cell-score.high {
-            background: #d1fae5;
-            color: #065f46;
+            background: var(--color-success-light);
+            color: var(--color-success);
         }
 
         .recommendation-summary {
@@ -511,7 +531,7 @@
         }
 
         .recommendation-summary h4 {
-            color: var(--color-dark);
+            color: var(--color-neutral-900);
             margin-bottom: 12px;
         }
 
@@ -530,11 +550,11 @@
         .optional-notes {
             margin-top: 24px;
             padding-top: 24px;
-            border-top: 2px solid #e5e7eb;
+            border-top: 2px solid var(--color-neutral-200);
         }
 
         .optional-notes h4 {
-            color: var(--color-dark);
+            color: var(--color-neutral-900);
             margin-bottom: 12px;
         }
 
@@ -542,7 +562,7 @@
             width: 100%;
             min-height: 120px;
             padding: 16px;
-            border: 2px solid #ddd;
+            border: 2px solid var(--color-light-gray);
             border-radius: 8px;
             font-family: inherit;
             font-size: 1rem;
@@ -558,7 +578,7 @@
             text-align: right;
             margin-top: 8px;
             color: var(--color-gray);
-            font-size: 0.9rem;
+            font-size: 0.875rem;
         }
 
         /* Action Buttons */
@@ -574,37 +594,38 @@
             padding: 14px 28px;
             border: none;
             border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
+            font-size: 0.95rem;
+            font-weight: 500;
+            font-family: inherit;
             cursor: pointer;
             transition: all 0.3s ease;
         }
 
         .btn-primary {
-            background: var(--color-primary);
+            background: var(--color-neutral-900);
             color: var(--color-white);
         }
 
         .btn-primary:hover {
-            background: var(--color-primary-dark);
+            background: var(--color-neutral-700);
         }
 
         .btn-secondary {
-            background: var(--color-gray);
+            background: var(--color-neutral-600);
             color: var(--color-white);
         }
 
         .btn-secondary:hover {
-            background: #4b5563;
+            background: var(--color-neutral-700);
         }
 
         .btn-success {
-            background: var(--color-success);
+            background: var(--color-neutral-900);
             color: var(--color-white);
         }
 
         .btn-success:hover {
-            background: #3d6449;
+            background: var(--color-neutral-700);
         }
 
         .btn:focus {
@@ -654,9 +675,9 @@
         /* Collapsible Sections */
         .section {
             margin-bottom: 1.5rem;
-            border: 1px solid #e0e0e0;
+            border: 1px solid var(--color-neutral-200);
             border-radius: 8px;
-            background: white;
+            background: var(--color-white);
         }
 
         .section-header {
@@ -672,13 +693,13 @@
         }
 
         .section-header:hover {
-            background: #e5e7eb;
+            background: var(--color-neutral-200);
         }
 
         .section-header h2 {
             font-size: 1.3rem;
             font-weight: 600;
-            color: var(--color-dark);
+            color: var(--color-neutral-900);
             margin: 0;
         }
 
@@ -710,7 +731,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>🎯 Rogers 2026 NHL Decision Simulator</h1>
+            <h1>Rogers 2026 NHL Decision Simulator</h1>
             <p class="subtitle">CAPSTONE: Make your strategic recommendation for Rogers' next move</p>
         </header>
 
@@ -749,64 +770,64 @@
             <div class="assumptions-grid">
                 <div class="assumption-item">
                     <div class="assumption-label">
-                        <span>📉 Cord-Cutting Rate (Annual)</span>
+                        <span>Cord-Cutting Rate (Annual)</span>
                         <span class="assumption-value" id="cord-cutting-value">5%</span>
                     </div>
                     <input type="range" id="cord-cutting" min="3" max="8" step="0.5" value="5"
                         aria-label="Cord-cutting rate" aria-valuemin="3" aria-valuemax="8" aria-valuenow="5">
-                    <p style="font-size: 0.9rem; color: var(--color-gray); margin-top: 8px;">
+                    <p style="font-size: 0.875rem; color: var(--color-gray); margin-top: 8px;">
                         How fast will linear TV subscribers decline? (Past: 8%/year 2014-2024)
                     </p>
                 </div>
 
                 <div class="assumption-item">
                     <div class="assumption-label">
-                        <span>📈 Streaming Growth Rate (Annual)</span>
+                        <span>Streaming Growth Rate (Annual)</span>
                         <span class="assumption-value" id="streaming-growth-value">15%</span>
                     </div>
                     <input type="range" id="streaming-growth" min="5" max="25" step="5" value="15"
                         aria-label="Streaming growth rate" aria-valuemin="5" aria-valuemax="25" aria-valuenow="15">
-                    <p style="font-size: 0.9rem; color: var(--color-gray); margin-top: 8px;">
+                    <p style="font-size: 0.875rem; color: var(--color-gray); margin-top: 8px;">
                         How fast will streaming subscribers grow? (Past: Sportsnet NOW grew 12%/year but missed targets)
                     </p>
                 </div>
 
                 <div class="assumption-item">
                     <div class="assumption-label">
-                        <span>📊 NHL Viewership Trend</span>
+                        <span>NHL Viewership Trend</span>
                     </div>
                     <select id="viewership-trend" aria-label="NHL viewership trend">
                         <option value="-2">Decline 2%/year (pessimistic)</option>
                         <option value="0" selected>Stable (flat ratings)</option>
                         <option value="2">Grow 2%/year (optimistic)</option>
                     </select>
-                    <p style="font-size: 0.9rem; color: var(--color-gray); margin-top: 8px;">
+                    <p style="font-size: 0.875rem; color: var(--color-gray); margin-top: 8px;">
                         Will Hockey Night in Canada ratings improve? (Past: -28% over 10 years)
                     </p>
                 </div>
 
                 <div class="assumption-item">
                     <div class="assumption-label">
-                        <span>⚔️ Competitive Intensity</span>
+                        <span>Competitive Intensity</span>
                     </div>
                     <select id="competitive-intensity" aria-label="Competitive intensity">
                         <option value="low">Low (TSN, DAZN only)</option>
                         <option value="medium" selected>Medium (+ Amazon Prime Video)</option>
                         <option value="high">High (+ Apple TV+, Google/YouTube)</option>
                     </select>
-                    <p style="font-size: 0.9rem; color: var(--color-gray); margin-top: 8px;">
+                    <p style="font-size: 0.875rem; color: var(--color-gray); margin-top: 8px;">
                         How many bidders will compete for NHL rights in 2026?
                     </p>
                 </div>
 
                 <div class="assumption-item">
                     <div class="assumption-label">
-                        <span>🎰 Betting Revenue Opportunity (Annual)</span>
+                        <span>Betting Revenue Opportunity (Annual)</span>
                         <span class="assumption-value" id="betting-revenue-value">$50M</span>
                     </div>
                     <input type="range" id="betting-revenue" min="0" max="100" step="25" value="50"
                         aria-label="Betting revenue" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-                    <p style="font-size: 0.9rem; color: var(--color-gray); margin-top: 8px;">
+                    <p style="font-size: 0.875rem; color: var(--color-gray); margin-top: 8px;">
                         Can Rogers monetize betting integration? (ESPN+DraftKings: ~$75M/year)
                     </p>
                 </div>
@@ -1234,15 +1255,15 @@
 
                 <!-- Auto-generated Recommendation Summary -->
                 <div class="recommendation-summary" id="recommendation-summary" style="display: none;">
-                    <h4>📊 Analysis Complete</h4>
+                    <h4>Analysis Complete</h4>
                     <div class="winner" id="winner-text"></div>
                     <div class="rationale" id="rationale-text"></div>
                 </div>
 
                 <!-- Optional Text Notes -->
                 <div class="optional-notes">
-                    <h4>💡 Optional: Additional Commentary</h4>
-                    <p style="color: var(--color-gray); font-size: 0.9rem; margin-bottom: 12px;">
+                    <h4>Optional: Additional Commentary</h4>
+                    <p style="color: var(--color-gray); font-size: 0.875rem; margin-bottom: 12px;">
                         Add any additional context or caveats to support your visual ratings (optional, 150 words max).
                     </p>
                     <textarea id="recommendation-text" placeholder="Example: 'While Split Package scores highest overall, Rogers' brand identity as THE NHL partner may justify the premium for Renew...'"
@@ -1261,7 +1282,7 @@
                     ← Back to Comparison
                 </button>
                 <button class="btn btn-success" onclick="exportAnalysis()">
-                    ⬇ Export Full Analysis (JSON)
+                    Export Full Analysis (PDF)
                 </button>
             </div>
         </div>
@@ -1542,24 +1563,24 @@
                         {
                             label: 'Revenue',
                             data: revenues,
-                            borderColor: '#2563eb',
-                            backgroundColor: 'rgba(37, 99, 235, 0.1)',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-info').trim(),
+                            backgroundColor: 'rgba(59, 130, 246, 0.1)',
                             borderWidth: 3,
                             tension: 0.3
                         },
                         {
                             label: 'Costs',
                             data: costs,
-                            borderColor: '#dc2626',
-                            backgroundColor: 'rgba(220, 38, 38, 0.1)',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-error').trim(),
+                            backgroundColor: 'rgba(239, 68, 68, 0.1)',
                             borderWidth: 3,
                             tension: 0.3
                         },
                         {
                             label: 'Profit',
                             data: profits,
-                            borderColor: '#4a7c59',
-                            backgroundColor: 'rgba(74, 124, 89, 0.1)',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-success').trim(),
+                            backgroundColor: 'rgba(34, 197, 94, 0.1)',
                             borderWidth: 3,
                             tension: 0.3,
                             fill: true
@@ -1723,11 +1744,13 @@
                 // Hover effect: preview stars
                 star.addEventListener('mouseenter', () => {
                     const value = parseInt(star.dataset.value);
+                    const starColor = getComputedStyle(document.documentElement).getPropertyValue('--color-star').trim();
+                    const neutralColor = getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-300').trim();
                     stars.forEach((s, idx) => {
                         if (idx < value) {
-                            s.style.color = '#fbbf24';
+                            s.style.color = starColor;
                         } else {
-                            s.style.color = '#d1d5db';
+                            s.style.color = neutralColor;
                         }
                     });
                 });
@@ -1735,11 +1758,13 @@
                 // Mouse leave: restore actual rating
                 star.addEventListener('mouseleave', () => {
                     const currentRating = matrixRatings[option][criterion];
+                    const starColor = getComputedStyle(document.documentElement).getPropertyValue('--color-star').trim();
+                    const neutralColor = getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-300').trim();
                     stars.forEach((s, idx) => {
                         if (idx < currentRating) {
-                            s.style.color = '#fbbf24';
+                            s.style.color = starColor;
                         } else {
-                            s.style.color = '#d1d5db';
+                            s.style.color = neutralColor;
                         }
                     });
                 });
@@ -1769,7 +1794,7 @@
             const winnerEl = document.getElementById('winner-text');
             const rationaleEl = document.getElementById('rationale-text');
 
-            winnerEl.textContent = `🏆 Recommended: ${scores[0].option} (Score: ${scores[0].total}/25)`;
+            winnerEl.textContent = `Recommended: ${scores[0].option} (Score: ${scores[0].total}/25)`;
 
             // Generate smart rationale based on scores
             const margin = scores[0].total - scores[1].total;
@@ -1806,13 +1831,13 @@
 
             const charCountEl = wordCountEl.parentElement;
             if (words > 150) {
-                charCountEl.style.color = '#dc2626';
+                charCountEl.style.color = getComputedStyle(document.documentElement).getPropertyValue('--color-error').trim();
                 charCountEl.style.fontWeight = '600';
             } else if (words > 135) {
-                charCountEl.style.color = '#d97706';
+                charCountEl.style.color = getComputedStyle(document.documentElement).getPropertyValue('--color-warning').trim();
                 charCountEl.style.fontWeight = '600';
             } else {
-                charCountEl.style.color = 'var(--color-gray)';
+                charCountEl.style.color = getComputedStyle(document.documentElement).getPropertyValue('--color-gray').trim();
                 charCountEl.style.fontWeight = '400';
             }
 
@@ -1825,25 +1850,131 @@
         });
 
         function exportAnalysis() {
-            const exportData = {
-                timestamp: new Date().toISOString(),
-                assumptions: state.assumptions,
-                selectedOption: state.selectedOption,
-                projections: state.projections,
-                recommendation: state.recommendation
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            // Title
+            doc.setFontSize(18);
+            doc.setFont(undefined, 'bold');
+            doc.text('Rogers 2026 NHL Decision Analysis', 105, 15, { align: 'center' });
+
+            // Timestamp
+            doc.setFontSize(10);
+            doc.setFont(undefined, 'normal');
+            doc.text(`Generated: ${new Date().toLocaleString()}`, 105, 22, { align: 'center' });
+
+            let yPos = 35;
+
+            // Section 1: Assumptions
+            doc.setFontSize(14);
+            doc.setFont(undefined, 'bold');
+            doc.text('1. Market Assumptions', 15, yPos);
+            yPos += 8;
+
+            doc.setFontSize(10);
+            doc.setFont(undefined, 'normal');
+            doc.text(`Cord-Cutting Rate: ${state.assumptions.cordCutting}% annually`, 20, yPos);
+            yPos += 6;
+            doc.text(`Streaming Growth Rate: ${state.assumptions.streamingGrowth}% annually`, 20, yPos);
+            yPos += 6;
+            doc.text(`NHL Viewership Trend: ${state.assumptions.viewershipTrend}% annually`, 20, yPos);
+            yPos += 6;
+            doc.text(`Competitive Intensity: ${state.assumptions.competitiveIntensity}`, 20, yPos);
+            yPos += 6;
+            doc.text(`Betting Revenue Opportunity: $${state.assumptions.bettingRevenue}M annually`, 20, yPos);
+            yPos += 12;
+
+            // Section 2: Selected Option
+            doc.setFontSize(14);
+            doc.setFont(undefined, 'bold');
+            doc.text('2. Strategic Option Selected', 15, yPos);
+            yPos += 8;
+
+            doc.setFontSize(10);
+            doc.setFont(undefined, 'normal');
+            const optionNames = {
+                'renew': 'Option 1: Renew Exclusive ($325M/year)',
+                'split': 'Option 2: Split Package ($200M/year)',
+                'walk': 'Option 3: Walk Away ($0/year)'
             };
+            doc.text(optionNames[state.selectedOption] || 'Not selected', 20, yPos);
+            yPos += 12;
 
-            const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `rogers-2026-decision-analysis-${Date.now()}.json`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+            // Section 3: Financial Summary
+            if (state.projections && state.projections.length > 0) {
+                doc.setFontSize(14);
+                doc.setFont(undefined, 'bold');
+                doc.text('3. Financial Projection Summary', 15, yPos);
+                yPos += 8;
 
-            alert('Analysis exported successfully! You can now submit this file with your mini-case memo.');
+                doc.setFontSize(10);
+                doc.setFont(undefined, 'normal');
+                const year10 = state.projections[9];
+                const cumulative = state.projections.reduce((sum, p) => sum + p.profit, 0);
+
+                doc.text(`Year 10 Revenue: ${formatCurrency(year10.revenue)}`, 20, yPos);
+                yPos += 6;
+                doc.text(`Year 10 Profit: ${formatCurrency(year10.profit)}`, 20, yPos);
+                yPos += 6;
+                doc.text(`Cumulative 10-Year Profit: ${formatCurrency(cumulative)}`, 20, yPos);
+                yPos += 12;
+            }
+
+            // Section 4: Decision Matrix Scores
+            if (state.matrixRatings) {
+                doc.setFontSize(14);
+                doc.setFont(undefined, 'bold');
+                doc.text('4. Decision Matrix Scores', 15, yPos);
+                yPos += 8;
+
+                doc.setFontSize(10);
+                doc.setFont(undefined, 'normal');
+
+                const renewTotal = Object.values(state.matrixRatings.renew).reduce((sum, v) => sum + v, 0);
+                const splitTotal = Object.values(state.matrixRatings.split).reduce((sum, v) => sum + v, 0);
+                const walkTotal = Object.values(state.matrixRatings.walk).reduce((sum, v) => sum + v, 0);
+
+                doc.text(`Option 1 (Renew): ${renewTotal}/25`, 20, yPos);
+                yPos += 6;
+                doc.text(`Option 2 (Split): ${splitTotal}/25`, 20, yPos);
+                yPos += 6;
+                doc.text(`Option 3 (Walk Away): ${walkTotal}/25`, 20, yPos);
+                yPos += 12;
+            }
+
+            // Section 5: Recommendation
+            doc.setFontSize(14);
+            doc.setFont(undefined, 'bold');
+            doc.text('5. Final Recommendation', 15, yPos);
+            yPos += 8;
+
+            doc.setFontSize(10);
+            doc.setFont(undefined, 'normal');
+
+            const recommendationText = state.recommendation || 'No recommendation provided';
+            const lines = doc.splitTextToSize(recommendationText, 175);
+            doc.text(lines, 20, yPos);
+            yPos += (lines.length * 6);
+
+            // Optional notes
+            const optionalNotes = document.getElementById('recommendation-text').value;
+            if (optionalNotes) {
+                yPos += 6;
+                doc.setFontSize(12);
+                doc.setFont(undefined, 'bold');
+                doc.text('Additional Commentary:', 20, yPos);
+                yPos += 6;
+
+                doc.setFontSize(10);
+                doc.setFont(undefined, 'normal');
+                const notesLines = doc.splitTextToSize(optionalNotes, 175);
+                doc.text(notesLines, 20, yPos);
+            }
+
+            // Save PDF
+            doc.save(`rogers-2026-decision-analysis-${Date.now()}.pdf`);
+
+            alert('Analysis exported successfully as PDF! You can now submit this file with your mini-case memo.');
         }
 
         function toggleSection(sectionId) {

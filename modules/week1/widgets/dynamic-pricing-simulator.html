@@ -32,7 +32,7 @@
         body {
             font-family: var(--font-family-primary);
             background: white;
-            color: #2d3748;
+            color: var(--color-neutral-800);
             padding: 20px;
             min-height: 100vh;
         }
@@ -40,11 +40,11 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: #f9fafb;
+            background: var(--color-neutral-50);
             border-radius: 16px;
             padding: 32px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-neutral-300);
         }
 
         h1 {
@@ -88,10 +88,10 @@
         }
 
         .control-group {
-            background: #f9fafb;
+            background: var(--color-neutral-50);
             padding: 20px;
             border-radius: 12px;
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-neutral-300);
         }
 
         .control-header {
@@ -110,7 +110,7 @@
         .control-value {
             font-size: 18px;
             font-weight: 700;
-            color: #2d3748;
+            color: var(--color-neutral-800);
         }
 
         /* Slider styling */
@@ -118,7 +118,7 @@
             width: 100%;
             height: 8px;
             border-radius: 4px;
-            background: #d1d5db;
+            background: var(--color-neutral-300);
             outline: none;
             -webkit-appearance: none;
             cursor: pointer;
@@ -167,27 +167,27 @@
             width: 100%;
             padding: 12px;
             background: white;
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
-            color: #2d3748;
+            color: var(--color-neutral-800);
             font-size: 16px;
             cursor: pointer;
             transition: all 0.2s;
         }
 
         select:hover {
-            border-color: #6b7280;
+            border-color: var(--color-neutral-500);
         }
 
         select:focus {
             outline: 3px solid #3182ce;
             outline-offset: 2px;
-            border-color: #6b7280;
+            border-color: var(--color-neutral-500);
         }
 
         option {
             background: white;
-            color: #2d3748;
+            color: var(--color-neutral-800);
         }
 
         .quality-labels {
@@ -200,8 +200,8 @@
 
         /* Results section */
         .results-section {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 12px;
             padding: 24px;
             margin-bottom: 32px;
@@ -245,7 +245,7 @@
         .revenue-breakdown {
             margin-top: 20px;
             padding-top: 20px;
-            border-top: 1px solid #d1d5db;
+            border-top: 1px solid var(--color-neutral-300);
         }
 
         .revenue-breakdown h3 {
@@ -258,25 +258,25 @@
             display: flex;
             justify-content: space-between;
             padding: 8px 0;
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid var(--color-neutral-200);
         }
 
         .breakdown-row:last-child {
             border-bottom: none;
             font-weight: 700;
-            color: #1f2937;
+            color: var(--color-neutral-900);
         }
 
         /* Insights section */
         .insights {
-            background: #f9fafb;
+            background: var(--color-neutral-50);
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 24px;
         }
 
         .insights h3 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             font-size: 18px;
             margin-bottom: 16px;
         }
@@ -293,15 +293,15 @@
         }
 
         .insight-item.warning {
-            border-left-color: #6b7280;
+            border-left-color: var(--color-neutral-500);
         }
 
         .insight-item.success {
-            border-left-color: #6b7280;
+            border-left-color: var(--color-neutral-500);
         }
 
         .insight-item.info {
-            border-left-color: #6b7280;
+            border-left-color: var(--color-neutral-500);
         }
 
         .insight-icon {
@@ -310,21 +310,21 @@
         }
 
         .insight-text {
-            color: #4a5568;
+            color: var(--color-neutral-600);
             line-height: 1.5;
             font-size: 14px;
         }
 
         /* Examples section */
         .examples {
-            background: #f9fafb;
+            background: var(--color-neutral-50);
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 24px;
         }
 
         .examples h3 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             font-size: 18px;
             margin-bottom: 16px;
         }
@@ -337,11 +337,12 @@
 
         .example-btn {
             background: white;
-            border: 1px solid #d1d5db;
-            color: #2d3748;
+            border: 1px solid var(--color-neutral-300);
+            color: var(--color-neutral-800);
             padding: 12px 16px;
             border-radius: 8px;
             cursor: pointer;
+            font-family: inherit;
             font-size: 14px;
             font-weight: 600;
             transition: all 0.2s;
@@ -349,8 +350,8 @@
         }
 
         .example-btn:hover {
-            background: #f9fafb;
-            border-color: #6b7280;
+            background: var(--color-neutral-50);
+            border-color: var(--color-neutral-500);
             transform: translateY(-2px);
         }
 
@@ -379,6 +380,7 @@
         .btn {
             padding: 12px 24px;
             border-radius: 8px;
+            font-family: inherit;
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
@@ -399,12 +401,12 @@
 
         .btn-secondary {
             background: white;
-            color: #2d3748;
-            border: 1px solid #d1d5db;
+            color: var(--color-neutral-800);
+            border: 1px solid var(--color-neutral-300);
         }
 
         .btn-secondary:hover {
-            background: #f9fafb;
+            background: var(--color-neutral-50);
             transform: translateY(-2px);
         }
 
@@ -438,27 +440,27 @@
         <p class="subtitle">Optimize ticket prices based on demand factors</p>
 
         <div class="scenario-box">
-            <h2>📍 Scenario: Toronto Raptors Home Game</h2>
+            <h2>Scenario: Toronto Raptors Home Game</h2>
             <p>You're the VP of Ticketing for the Toronto Raptors. Adjust pricing factors to maximize revenue while maintaining fan loyalty. See how opponent quality, game day, and team performance affect optimal pricing.</p>
         </div>
 
         <div class="examples">
-            <h3>🎯 Try These Scenarios</h3>
+            <h3>Try These Scenarios</h3>
             <div class="example-buttons">
                 <button class="example-btn" onclick="loadExample('lakers')" aria-label="Load Lakers Saturday scenario">
-                    <div class="example-title">🔥 Lakers (Saturday)</div>
+                    <div class="example-title">Lakers (Saturday)</div>
                     <div class="example-desc">Premium matchup, winning season</div>
                 </button>
                 <button class="example-btn" onclick="loadExample('pistons')" aria-label="Load Pistons Tuesday scenario">
-                    <div class="example-title">❄️ Pistons (Tuesday)</div>
+                    <div class="example-title">Pistons (Tuesday)</div>
                     <div class="example-desc">Low-tier opponent, losing season</div>
                 </button>
                 <button class="example-btn" onclick="loadExample('celtics')" aria-label="Load Celtics Friday scenario">
-                    <div class="example-title">🏆 Celtics (Friday)</div>
+                    <div class="example-title">Celtics (Friday)</div>
                     <div class="example-desc">Rivalry game, mid-season</div>
                 </button>
                 <button class="example-btn" onclick="loadExample('bucks')" aria-label="Load Bucks Sunday scenario">
-                    <div class="example-title">⭐ Bucks (Sunday)</div>
+                    <div class="example-title">Bucks (Sunday)</div>
                     <div class="example-desc">Star player, good team record</div>
                 </button>
             </div>
@@ -535,7 +537,7 @@
             </div>
 
             <div class="revenue-breakdown">
-                <h3>💰 Revenue Breakdown</h3>
+                <h3>Revenue Breakdown</h3>
                 <div class="breakdown-row">
                     <span>Ticket Sales (18,100 capacity)</span>
                     <span id="ticketRevenue">$3,182,000</span>
@@ -556,7 +558,7 @@
         </div>
 
         <div class="insights">
-            <h3>💡 Insights & Recommendations</h3>
+            <h3>Insights & Recommendations</h3>
             <div id="insightsContainer">
                 <!-- Dynamic insights will be added here -->
             </div>
@@ -566,8 +568,8 @@
             <button class="btn btn-secondary" onclick="resetToBase()" aria-label="Reset all inputs to baseline values">
                 Reset to Base
             </button>
-            <button class="btn btn-primary" onclick="exportData()" aria-label="Export pricing scenario as JSON">
-                Export Scenario
+            <button class="btn btn-primary" onclick="exportData()" aria-label="Export pricing scenario as CSV">
+                Export Data (CSV)
             </button>
         </div>
     </div>
@@ -623,7 +625,7 @@
 
         function updateSliderGradient(slider) {
             const percentage = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
-            slider.style.background = `linear-gradient(to right, #6b7280 0%, #6b7280 ${percentage}%, #d1d5db ${percentage}%, #d1d5db 100%)`;
+            slider.style.background = `linear-gradient(to right, var(--color-neutral-500) 0%, var(--color-neutral-500) ${percentage}%, var(--color-neutral-300) ${percentage}%, var(--color-neutral-300) 100%)`;
         }
 
         function updateCalculations() {
@@ -689,13 +691,13 @@
             if (price > BASE_PRICE * 1.5) {
                 insights.push({
                     type: 'warning',
-                    icon: '⚠️',
+                    icon: '',
                     text: `High premium pricing ($${price}). Monitor fan satisfaction and consider loyalty discounts for season ticket holders.`
                 });
             } else if (price < BASE_PRICE * 0.85) {
                 insights.push({
                     type: 'info',
-                    icon: '📊',
+                    icon: '',
                     text: `Low-demand game. Consider promotional offers (family packs, student discounts) to boost attendance.`
                 });
             }
@@ -704,13 +706,13 @@
             if (capacityPct > 95) {
                 insights.push({
                     type: 'success',
-                    icon: '🎯',
+                    icon: '',
                     text: `Near sell-out expected (${capacityPct}%). Consider dynamic pricing increases 48 hours before game.`
                 });
             } else if (capacityPct < 75) {
                 insights.push({
                     type: 'warning',
-                    icon: '📉',
+                    icon: '',
                     text: `Low projected attendance (${capacityPct}%). Consider flash sales or group ticket promotions.`
                 });
             }
@@ -719,13 +721,13 @@
             if (day === 'saturday' || day === 'sunday') {
                 insights.push({
                     type: 'success',
-                    icon: '📅',
+                    icon: '',
                     text: `Weekend game commands premium pricing. Family-friendly promotions could boost concession revenue.`
                 });
             } else if (day === 'tuesday' || day === 'monday') {
                 insights.push({
                     type: 'info',
-                    icon: '🎫',
+                    icon: '',
                     text: `Weekday game. Consider corporate partnership nights or local community discounts to fill seats.`
                 });
             }
@@ -734,7 +736,7 @@
             if (oppQuality >= 4) {
                 insights.push({
                     type: 'success',
-                    icon: '⭐',
+                    icon: '',
                     text: `Premium opponent. Highlight star players in marketing. Secondary market prices may exceed face value.`
                 });
             }
@@ -743,13 +745,13 @@
             if (teamPerf >= 4) {
                 insights.push({
                     type: 'success',
-                    icon: '🏆',
+                    icon: '',
                     text: `Team in playoff contention. Season ticket renewal rates likely high. Good time for upsell campaigns.`
                 });
             } else if (teamPerf <= 2) {
                 insights.push({
                     type: 'warning',
-                    icon: '📢',
+                    icon: '',
                     text: `Team struggling. Focus marketing on fan experience, arena amenities, and opponent star power.`
                 });
             }
@@ -759,7 +761,7 @@
             if (revenuePerSeat > 200 && capacityPct > 90) {
                 insights.push({
                     type: 'success',
-                    icon: '💰',
+                    icon: '',
                     text: `Optimal revenue scenario. High prices with strong demand. Monitor real-time sales for micro-adjustments.`
                 });
             }
@@ -844,29 +846,37 @@
         }
 
         function exportData() {
-            const data = {
-                scenario: {
-                    opponentQuality: opponentLabels[opponentQuality.value - 1],
-                    dayOfWeek: dayOfWeek.value,
-                    teamPerformance: teamLabels[teamRecord.value - 1]
-                },
-                results: {
-                    recommendedPrice: document.getElementById('ticketPrice').textContent,
-                    expectedAttendance: document.getElementById('attendance').textContent,
-                    totalRevenue: document.getElementById('totalRevenue').textContent,
-                    ticketRevenue: document.getElementById('ticketRevenue').textContent,
-                    concessionRevenue: document.getElementById('concessionRevenue').textContent,
-                    parkingRevenue: document.getElementById('parkingRevenue').textContent,
-                    totalGameRevenue: document.getElementById('totalGameRevenue').textContent
-                },
-                timestamp: new Date().toISOString()
-            };
+            // Prepare CSV data
+            const csvRows = [];
 
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            // Header row
+            csvRows.push('Category,Metric,Value');
+
+            // Scenario parameters
+            csvRows.push(`Scenario,Opponent Quality,${opponentLabels[opponentQuality.value - 1]}`);
+            csvRows.push(`Scenario,Day of Week,${dayOfWeek.value}`);
+            csvRows.push(`Scenario,Team Performance,${teamLabels[teamRecord.value - 1]}`);
+
+            // Results
+            csvRows.push(`Results,Recommended Price,${document.getElementById('ticketPrice').textContent}`);
+            csvRows.push(`Results,Expected Attendance,${document.getElementById('attendance').textContent}`);
+            csvRows.push(`Results,Total Revenue,${document.getElementById('totalRevenue').textContent}`);
+            csvRows.push(`Results,Ticket Revenue,${document.getElementById('ticketRevenue').textContent}`);
+            csvRows.push(`Results,Concession Revenue,${document.getElementById('concessionRevenue').textContent}`);
+            csvRows.push(`Results,Parking Revenue,${document.getElementById('parkingRevenue').textContent}`);
+            csvRows.push(`Results,Total Game Revenue,${document.getElementById('totalGameRevenue').textContent}`);
+
+            // Metadata
+            csvRows.push(`Metadata,Timestamp,${new Date().toISOString()}`);
+
+            // Join rows with newlines
+            const csvContent = csvRows.join('\n');
+
+            const blob = new Blob([csvContent], { type: 'text/csv' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `pricing-scenario-${Date.now()}.json`;
+            a.download = `pricing-scenario-${Date.now()}.csv`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);

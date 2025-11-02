@@ -7,25 +7,28 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Insight)** ⬤ Required | Assessment overview + scaffolded approach + PAIRR | Type directly | Purple variant, 60 pts total |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
-| 4 | **Text Response** ⬤ Required | MICRO-STEP 1: Key Mistakes (3 bullets) | Configure in Uplimit | AI feedback enabled, 5 pts |
-| 5 | **Text Response** ⬤ Required | MICRO-STEP 2: Deal Evaluation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
-| 6 | **Text Response** ⬤ Required | MICRO-STEP 3: 2026 Recommendation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
-| 7 | **Infobox (Callout)** ⬤ Required | Transition to full memo synthesis | Type directly | Blue variant, encouragement |
-| 8 | **Text Response** ⬤ Required | DRAFT MEMO: 2-page synthesis for feedback (1000 words max) | Configure in Uplimit | Submission only, no grading yet |
-| 9 | **Text** ◐ Recommended | **Phase 2A: Peer Feedback Instructions** | Type directly | How to provide effective peer feedback |
-| 10 | **Text** ◐ Recommended | **Phase 2B: AI Feedback Instructions** | Type directly | ChatGPT prompt template |
-| 11 | **Text Response** ◐ Recommended | **Peer Feedback Submission** | Configure in Uplimit | 2 pts bonus, due Day 5 |
-| 12 | **Text Response** ◐ Recommended | **AI Feedback Submission** | Configure in Uplimit | 1 pt bonus, due Day 5 |
-| 13 | **Text** ◐ Recommended | **Phase 3: Comparative Reflection** | Type directly | Instructions for comparing feedback |
-| 14 | **Text Response** ◐ Recommended | **Comparative Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 5 |
-| 15 | **Text Response** ⬤ Required | **FINAL REVISED MEMO** | Configure in Uplimit | Rubric grading, 40 pts, due Day 7 |
-| 16 | **Text** ◐ Recommended | **Phase 5: Post-Revision Reflection** | Type directly | Instructions for reflection |
-| 17 | **Text Response** ◐ Recommended | **Post-Revision Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
-| 18 | **Details** ○ Optional | Rubric details and examples | Type directly | Accordion - transparent criteria |
-| 19 | **AI Chat Widget** ◐ Recommended | Rogers Case Analysis Coach | Configure in Uplimit | Guides thinking, not answers |
+| 1 | **Text** ⬤ Required | Connecting introduction from Module 5 | Type directly | Narrative bridge to assessment |
+| 2 | **Infobox (Insight)** ⬤ Required | Assessment overview + scaffolded approach + PAIRR | Type directly | Purple variant, 60 pts total |
+| 3 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
+| 4 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
+| 5 | **Text Response** ⬤ Required | MICRO-STEP 1: Key Mistakes (3 bullets) | Configure in Uplimit | AI feedback enabled, 5 pts |
+| 6 | **Text Response** ⬤ Required | MICRO-STEP 2: Deal Evaluation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
+| 7 | **Text Response** ⬤ Required | MICRO-STEP 3: 2026 Recommendation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
+| 8 | **Infobox (Callout)** ⬤ Required | Transition to full memo synthesis | Type directly | Blue variant, encouragement |
+| 9 | **Text Response** ⬤ Required | DRAFT MEMO: 2-page synthesis for feedback (1000 words max) | Configure in Uplimit | Submission only, no grading yet |
+| 10 | **Text** ◐ Recommended | **Phase 2A: Peer Feedback Instructions** | Type directly | How to provide effective peer feedback |
+| 11 | **Text** ◐ Recommended | **Phase 2B: AI Feedback Instructions** | Type directly | ChatGPT prompt template |
+| 12 | **Text Response** ◐ Recommended | **Peer Feedback Submission** | Configure in Uplimit | 2 pts bonus, due Day 5 |
+| 13 | **Text Response** ◐ Recommended | **AI Feedback Submission** | Configure in Uplimit | 1 pt bonus, due Day 5 |
+| 14 | **Text** ◐ Recommended | **Phase 3: Comparative Reflection** | Type directly | Instructions for comparing feedback |
+| 15 | **Text Response** ◐ Recommended | **Comparative Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 5 |
+| 16 | **Text Response** ⬤ Required | **FINAL REVISED MEMO** | Configure in Uplimit | Rubric grading, 40 pts, due Day 7 |
+| 17 | **Text** ◐ Recommended | **Phase 5: Post-Revision Reflection** | Type directly | Instructions for reflection |
+| 18 | **Text Response** ◐ Recommended | **Post-Revision Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
+| 19 | **Details** ○ Optional | Rubric details and examples | Type directly | Accordion - transparent criteria |
+| 20 | **AI Chat Widget** ◐ Recommended | Rogers Case Analysis Coach | Configure in Uplimit | Guides thinking, not answers |
+| 21 | **Text** ⬤ Required | Final Project Connection | Type directly | How Module 6 supports capstone |
+| 22 | **Text** ⬤ Required | Module 6 Complete - Transition to Module 7 | Type directly | Recap and preview |
 
 **Scaffolding Rationale:**
 - **Reduces writing anxiety**: Students build confidence through small wins before tackling full memo
@@ -33,9 +36,19 @@
 - **Maintains rigor**: Final memo still requires synthesis and executive-level writing
 - **UDL support**: Multiple checkpoints provide scaffolding without lowering standards
 
-**Detailed Content Specifications:**
+---
 
-### Infobox Content (Element 1):
+## Element 1: Connecting Introduction
+
+You've just analyzed the Rogers/NHL mega-deal through multiple lenses (Module 5)—watching the 10-year retrospective, exploring financial exhibits, and using interactive widgets to project scenarios. You understand the deal's context, structure, and outcomes.
+
+Now it's time to demonstrate your mastery. Module 6 is your Week 2 summative assessment: a strategic mini-case memo evaluating the Rogers deal and recommending next steps. This assessment uses a scaffolded approach with PAIRR methodology (peer + AI feedback) to develop both your strategic thinking and AI literacy skills.
+
+---
+
+## Element 2: Assessment Overview (Infobox - Insight)
+
+### Infobox Content (Element 2):
 ```
 Title: ▪ Assessment: Rogers NHL Deal Mini-Case Memo (Scaffolded Approach)
 
@@ -79,10 +92,27 @@ You are a consultant hired by Rogers Communications in 2024 to assess the NHL de
 
 ---
 
-## Element 2: **NEW** - Learning Outcomes Widget
+## Element 3: Learning Outcomes Widget
+
+### Student-Facing Text Content:
+**Copy this markdown directly into Uplimit BEFORE the widget:**
+
+```markdown
+## Which Learning Outcomes Does This Assessment Practice?
+
+This module is your Week 2 summative assessment—the Mini-Case Memo evaluates all four learning outcomes you've been practicing throughout the week. Use this interactive widget to see which MLOs are assessed and how they connect to your memo writing.
+
+**Click any learning outcome to see:**
+- How it's assessed in the micro-steps and final memo
+- Which frameworks and concepts support it
+- What excellence looks like for this MLO
+
+**Why this matters:** Understanding which outcomes you're demonstrating helps you focus your analysis and ensure comprehensive coverage in your memo.
+```
+
 ---
 
-## Element 2: **NEW** - Learning Outcomes Widget
+### Widget Implementation (For LMS Builder):
 
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element
@@ -108,7 +138,7 @@ You are a consultant hired by Rogers Communications in 2024 to assess the NHL de
 
 ---
 
-## Element 3: **NEW** - PAIRR Assessment Overview
+## Element 4: PAIRR Assessment Overview (Infobox - Callout)
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -142,7 +172,7 @@ This assessment combines scaffolded micro-steps with dual feedback (peer + AI) t
 
 ---
 
-## Element 4: **RENUMBERED** - Micro-Step 1 - Key Mistakes (Text Response) (was Element 3)
+## Element 5: Micro-Step 1 - Key Mistakes (Text Response)
 
 **Question Text:**
 ```
@@ -168,7 +198,7 @@ Example:
 
 ---
 
-## Element 5: **RENUMBERED** - Micro-Step 2 - Deal Evaluation (Text Response) (was Element 4)
+## Element 6: Micro-Step 2 - Deal Evaluation (Text Response)
 
 **Question Text:**
 ```
@@ -192,7 +222,7 @@ Was the deal justified given Rogers' strategic goals (defend cable, build Sports
 
 ---
 
-## Element 6: **RENUMBERED** - Micro-Step 3 - 2026 Recommendation (Text Response) (was Element 5)
+## Element 7: Micro-Step 3 - 2026 Recommendation (Text Response)
 
 **Question Text:**
 ```
@@ -220,7 +250,7 @@ Your recommendation should:
 
 ---
 
-## Element 7: **RENUMBERED** - Transition Infobox (was Element 6)
+## Element 8: Transition Infobox (Callout)
 
 ```
 Title: ✅ Micro-Steps Complete! Ready to Write Your Full Memo
@@ -250,7 +280,7 @@ Now, use your 3 micro-steps as building blocks to write a polished 2-page execut
 
 ---
 
-## Element 8: **NEW** - Draft Memo Submission (Text Response)
+## Element 9: Draft Memo Submission (Text Response)
 
 **Question Text:**
 ```
@@ -273,7 +303,7 @@ Reminder: Max 1000 words, executive memo format
 
 ---
 
-## Element 9: **NEW** - Phase 2A: Peer Feedback Instructions
+## Element 10: Phase 2A - Peer Feedback Instructions
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -338,7 +368,7 @@ Submit via peer feedback submission box (Element 11) by Day 5.
 
 ---
 
-## Element 10: **NEW** - Phase 2B: AI Feedback Instructions
+## Element 11: Phase 2B - AI Feedback Instructions
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -406,7 +436,7 @@ Submit the ChatGPT response via Element 12 by Day 5.
 
 ---
 
-## Element 11: **NEW** - Peer Feedback Submission Box
+## Element 12: Peer Feedback Submission Box (Text Response)
 
 **Uplimit Implementation:**
 1. Select **Text Response** element
@@ -428,7 +458,7 @@ Reminder: Your feedback should address:
 
 ---
 
-## Element 12: **NEW** - AI Feedback Submission Box
+## Element 13: AI Feedback Submission Box (Text Response)
 
 **Uplimit Implementation:**
 1. Select **Text Response** element
@@ -447,7 +477,7 @@ You're graded on submitting AI-generated feedback (not on the quality of that fe
 
 ---
 
-## Element 13: **NEW** - Phase 3: Comparative Reflection Instructions
+## Element 14: Phase 3 - Comparative Reflection Instructions
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -486,7 +516,7 @@ Submit via Element 14 by Day 5.
 
 ---
 
-## Element 14: **NEW** - Comparative Reflection Submission Box
+## Element 15: Comparative Reflection Submission Box (Text Response)
 
 **Uplimit Implementation:**
 1. Select **Text Response** element
@@ -505,7 +535,7 @@ Compare the peer feedback you received vs. the AI feedback you generated. Which 
 
 ---
 
-## Element 15: **RENUMBERED** - Final Revised Memo Submission (Text Response) (was Element 7)
+## Element 16: Final Revised Memo Submission (Text Response)
 
 **Question Text:**
 ```
@@ -629,7 +659,7 @@ Case analysis is a core MBA skill. Let's work together to build your proficiency
 
 ---
 
-## Element 16: **NEW** - Phase 5: Post-Revision Reflection Instructions
+## Element 17: Phase 5 - Post-Revision Reflection Instructions
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -664,7 +694,7 @@ Submit via Element 17 by Day 7.
 
 ---
 
-## Element 17: **NEW** - Post-Revision Reflection Submission Box
+## Element 18: Post-Revision Reflection Submission Box (Text Response)
 
 **Uplimit Implementation:**
 1. Select **Text Response** element
@@ -683,7 +713,7 @@ Reflect on which feedback most influenced your final revision. What did this pro
 
 ---
 
-## Element 18: **RENUMBERED** - Details - Rubric Examples (was Element 8)
+## Element 19: Details - Rubric Examples (Optional)
 ```
 Title: Rubric Details & Example Excerpts
 
@@ -747,7 +777,53 @@ but may lack depth or miss less obvious strategic errors."
 
 ---
 
-## Element 19: **RENUMBERED** - AI Chat Widget Configuration (was Element 9)
+## Element 20: AI Chat Widget - Rogers Case Analysis Coach
+
+### Student-Facing Text Content:
+**Copy this markdown directly into Uplimit BEFORE the widget:**
+
+```markdown
+## Your AI Case Analysis Coach
+
+Feeling stuck on your memo? Not sure if your argument is strong enough? Want to test your reasoning before submitting?
+
+Use the **Rogers Case Analysis Coach** as your thinking partner throughout this assessment. This AI coach won't write your memo for you (that would defeat the learning purpose), but it WILL help you develop stronger arguments through Socratic questioning.
+
+### How to Use the Coach
+
+**When to use it:**
+- ✅ Testing your micro-step arguments: "Does this mistake I identified make sense?"
+- ✅ Clarifying framework application: "How do I apply MLO 2.2 to Rogers' streaming strategy?"
+- ✅ Structuring your reasoning: "What's the best way to organize my deal evaluation?"
+- ✅ Checking evidence quality: "Is this data point strong enough to support my claim?"
+
+**When NOT to use it:**
+- ❌ Asking it to write sections: "Write my 2026 recommendation for me"
+- ❌ Generating content wholesale: "What should I say about Rogers' mistakes?"
+
+### What to Expect
+
+The coach will respond with **probing questions** to help you think deeper:
+- "What does that data point tell you about Rogers' assumptions?"
+- "How does this connect to the valuation framework from Module 3?"
+- "What are the underlying assumptions in your recommendation?"
+- "What evidence supports that claim? What evidence contradicts it?"
+
+### Example Interaction
+
+**You:** "I think Rogers made a mistake by overestimating streaming subscribers."
+
+**Coach:** "Good start! Let's strengthen that argument. What was their subscriber target? What did they actually achieve? Can you quantify the revenue impact of that gap? And critically—could this have been predicted in 2014, or was it unforeseeable?"
+
+**Why this approach works:** The coach forces you to develop YOUR analysis, not copy someone else's. This builds critical thinking skills that will serve you throughout your MBA and career.
+
+**Ready to start?** Open the Rogers Case Analysis Coach below and ask your first question.
+```
+
+---
+
+### AI Chat Widget Configuration (For LMS Builder):
+
 - **Widget Name:** "Rogers Case Analysis Coach"
 - **System Prompt:** "You are a helpful case analysis coach for MBA students. Provide guidance on analyzing the Rogers NHL case study. Do NOT write content for students. Instead, ask probing questions to help them think critically: What does this data point tell you? How does this connect to the frameworks from readings? What are the underlying assumptions? Focus on: case analysis methodology, framework application, evidence-based reasoning, and strategic thinking. If students ask you to write their memo, redirect them to develop their own analysis with your guidance."
 - **Welcome Message:** "Hi! I'm here to coach you through your Rogers case analysis. I won't write your memo, but I'll ask questions to help you develop stronger arguments. What aspect of the case are you working on?"
@@ -765,6 +841,8 @@ but may lack depth or miss less obvious strategic errors."
 - Measures all 4 MLOs comprehensively in integrated assessment
 
 ---
+
+## Element 21: Final Project Connection
 
 ## 🎯 FINAL PROJECT CONNECTION
 
@@ -788,6 +866,39 @@ When you write your 5-year strategic vision in Week 5, Module 6's memo structure
 - **Peer + AI Review:** You used AI feedback and peer review in Module 6. Apply the same iterative improvement process to your Week 5 capstone.
 
 **Real-World Application:** The Mini-Case Memo you wrote mirrors the strategy documents executives submit to boards for multi-million dollar decisions. Your Week 5 capstone scales this skill to a comprehensive 5-year vision.
+
+---
+
+## Element 22: Module 6 Complete - Transition to Module 7
+
+**What You've Accomplished:**
+
+You've completed Week 2's summative assessment! You've written an executive-level strategic memo evaluating the Rogers/NHL mega-deal, incorporating insights from Week 2's frameworks, executive interviews, and case analysis. You've experienced the PAIRR methodology—using both peer and AI feedback to improve your strategic thinking and develop AI literacy.
+
+**Key Takeaways:**
+- You can evaluate billion-dollar media deals using multiple analytical frameworks
+- You can identify strategic mistakes with evidence-based reasoning (not just opinions)
+- You can recommend next steps with explicit trade-off analysis and risk assessment
+- You can write concisely for executive audiences under word limits
+- You've learned how to leverage both peer and AI feedback effectively
+
+**PAIRR Process Mastery:**
+- You compared peer vs. AI feedback quality and usefulness
+- You discovered AI's strengths (systematic rubric checking, completeness) and limitations (lacks context, misses strategic nuances)
+- You practiced iterative revision—a critical skill for professional strategy work
+- You reflected on which feedback influenced your final revision decisions
+
+**Assessment Context:**
+This Mini-Case Memo contributes to your Week 2 grade and prepares you for the Week 5 capstone. The memo structure, analytical rigor, and PAIRR process you practiced here will scale to your final strategic vision project.
+
+**Up Next: Module 7 - Wrap-Up & Anchor Project Launch**
+
+Now that you've demonstrated mastery of Week 2 content, it's time to wrap up the week, reflect on your learning journey, and launch your Anchor Project. In Module 7, you'll:
+- Form your team (5-6 students) and establish working agreements
+- Select your sport property for the semester-long marketing plan
+- Preview Week 3's focus on sponsorship and betting
+
+Get ready to apply everything you've learned to a real sport property! See you in Module 7.
 
 ---
 

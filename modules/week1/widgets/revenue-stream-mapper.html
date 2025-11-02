@@ -8,6 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-danger: #ef4444;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -15,9 +32,9 @@
         }
 
         body {
-            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: var(--font-family-primary);
             background: white;
-            color: #2d3748;
+            color: var(--color-neutral-700);
             padding: 2rem;
             min-height: 100vh;
         }
@@ -28,20 +45,20 @@
         }
 
         h1 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 0.5rem;
             font-size: 2rem;
         }
 
         .subtitle {
-            color: #6b7280;
+            color: var(--color-neutral-500);
             margin-bottom: 2rem;
             font-size: 1rem;
         }
 
         .org-selector {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 1.5rem;
             margin-bottom: 2rem;
@@ -49,7 +66,7 @@
 
         .org-selector label {
             display: block;
-            color: #1f2937;
+            color: var(--color-neutral-900);
             font-weight: 600;
             margin-bottom: 0.75rem;
         }
@@ -58,9 +75,9 @@
             width: 100%;
             padding: 0.75rem;
             background: white;
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-neutral-300);
             border-radius: 4px;
-            color: #2d3748;
+            color: var(--color-neutral-700);
             font-size: 1rem;
         }
 
@@ -72,8 +89,8 @@
         }
 
         .stream-card {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 1.5rem;
             transition: all 0.3s;
@@ -81,7 +98,7 @@
 
         .stream-card:hover {
             transform: translateY(-5px);
-            border-color: #d1d5db;
+            border-color: var(--color-neutral-300);
         }
 
         .stream-header {
@@ -96,7 +113,7 @@
         }
 
         .stream-title {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             font-size: 1.3rem;
             font-weight: 600;
         }
@@ -104,12 +121,12 @@
         .revenue-display {
             font-size: 2rem;
             font-weight: 700;
-            color: #4ade80;
+            color: var(--color-success);
             margin-bottom: 1rem;
         }
 
         .percentage {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             font-size: 1rem;
             margin-bottom: 1rem;
         }
@@ -117,7 +134,7 @@
         .stream-details {
             margin-top: 1rem;
             padding-top: 1rem;
-            border-top: 1px solid #d1d5db;
+            border-top: 1px solid var(--color-neutral-300);
         }
 
         .detail-item {
@@ -128,24 +145,24 @@
         }
 
         .detail-label {
-            color: #6b7280;
+            color: var(--color-neutral-500);
         }
 
         .detail-value {
-            color: #2d3748;
+            color: var(--color-neutral-700);
             font-weight: 600;
         }
 
         .summary {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .summary h2 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 1.5rem;
         }
 
@@ -162,24 +179,24 @@
         .summary-value {
             font-size: 2rem;
             font-weight: 700;
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 0.5rem;
         }
 
         .summary-label {
-            color: #6b7280;
+            color: var(--color-neutral-500);
             font-size: 0.9rem;
         }
 
         .insights {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
         }
 
         .insights h2 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 1rem;
         }
 
@@ -189,15 +206,15 @@
         }
 
         .chart-container {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .chart-container h2 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 1.5rem;
         }
 
@@ -215,7 +232,7 @@
 
         .bar-label {
             width: 150px;
-            color: #2d3748;
+            color: var(--color-neutral-700);
             font-weight: 600;
         }
 
@@ -230,7 +247,7 @@
 
         .bar-fill {
             height: 100%;
-            background: #2d3748;
+            background: var(--color-neutral-700);
             display: flex;
             align-items: center;
             justify-content: flex-end;
@@ -253,12 +270,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>💰 Revenue Stream Mapper</h1>
+        <h1>Revenue Stream Mapper</h1>
         <p class="subtitle">Explore how different sports organizations generate revenue across six major streams</p>
 
-        <div style="background: #f9fafb; border: 1px solid #d1d5db; border-radius: 8px; padding: 1rem; margin-bottom: 2rem;">
-            <p style="margin: 0; color: #2d3748; font-size: 0.9rem;">
-                <strong style="color: #1f2937;">📊 Educational Tool:</strong> Revenue figures are estimates based on industry reports (Forbes, Sports Business Journal, team financial disclosures 2022-2023). Actual values vary by season, market conditions, and team performance. Use for comparative analysis and concept learning.
+        <div style="background: var(--color-neutral-50); border: 1px solid var(--color-neutral-300); border-radius: 8px; padding: 1rem; margin-bottom: 2rem;">
+            <p style="margin: 0; color: var(--color-neutral-700); font-size: 0.9rem;">
+                <strong style="color: var(--color-neutral-900);">Educational Tool:</strong> Revenue figures are estimates based on industry reports (Forbes, Sports Business Journal, team financial disclosures 2022-2023). Actual values vary by season, market conditions, and team performance. Use for comparative analysis and concept learning.
             </p>
         </div>
 
@@ -301,7 +318,7 @@
                 source: 'Forbes NHL Team Valuations 2023',
                 streams: {
                     mediaRights: {
-                        icon: '📺',
+                        icon: '',
                         title: 'Media Rights',
                         revenue: 75,
                         growth: '+6%',
@@ -310,7 +327,7 @@
                         source: 'NHL national rights ~$625M/32 teams + local deals'
                     },
                     sponsorship: {
-                        icon: '🤝',
+                        icon: '',
                         title: 'Sponsorship',
                         revenue: 65,
                         growth: '+9%',
@@ -319,7 +336,7 @@
                         source: 'MLSE sponsorship portfolio estimates 2023'
                     },
                     ticketing: {
-                        icon: '🎟️',
+                        icon: '',
                         title: 'Ticketing',
                         revenue: 82,
                         growth: '+4%',
@@ -328,7 +345,7 @@
                         source: 'Scotiabank Arena 18,800 capacity × 41 games × avg $180'
                     },
                     merchandising: {
-                        icon: '👕',
+                        icon: '',
                         title: 'Merchandising',
                         revenue: 28,
                         growth: '+3%',
@@ -337,7 +354,7 @@
                         source: 'NHL league avg ~10% of revenue'
                     },
                     betting: {
-                        icon: '🎲',
+                        icon: '',
                         title: 'Betting Partnerships',
                         revenue: 18,
                         growth: '+32%',
@@ -346,7 +363,7 @@
                         source: 'Ontario sports betting launch 2022, explosive growth'
                     },
                     other: {
-                        icon: '📊',
+                        icon: '',
                         title: 'Other Revenue',
                         revenue: 13,
                         growth: '+2%',
@@ -369,7 +386,7 @@
                 source: 'Forbes NBA Team Valuations 2023',
                 streams: {
                     mediaRights: {
-                        icon: '📺',
+                        icon: '',
                         title: 'Media Rights',
                         revenue: 92,
                         growth: '+7%',
@@ -378,7 +395,7 @@
                         source: 'NBA national media ~$2.66B/30 teams = $88.7M + local TSN deal'
                     },
                     sponsorship: {
-                        icon: '🤝',
+                        icon: '',
                         title: 'Sponsorship',
                         revenue: 78,
                         growth: '+10%',
@@ -387,7 +404,7 @@
                         source: 'Sun Life jersey patch + MLSE partnership portfolio 2023'
                     },
                     ticketing: {
-                        icon: '🎟️',
+                        icon: '',
                         title: 'Ticketing',
                         revenue: 73,
                         growth: '+4%',
@@ -396,7 +413,7 @@
                         source: 'Scotiabank Arena 19,800 capacity × 41 games × avg $160'
                     },
                     merchandising: {
-                        icon: '👕',
+                        icon: '',
                         title: 'Merchandising',
                         revenue: 36,
                         growth: '+6%',
@@ -405,7 +422,7 @@
                         source: '2019 championship bump sustained, "We The North" brand'
                     },
                     betting: {
-                        icon: '🎲',
+                        icon: '',
                         title: 'Betting Partnerships',
                         revenue: 17,
                         growth: '+30%',
@@ -414,7 +431,7 @@
                         source: 'MGM partnership + Ontario sports betting legalization 2022'
                     },
                     other: {
-                        icon: '📊',
+                        icon: '',
                         title: 'Other Revenue',
                         revenue: 10,
                         growth: '+3%',
@@ -437,7 +454,7 @@
                 source: 'Forbes MLS Team Valuations 2023 + Sports Business Journal',
                 streams: {
                     mediaRights: {
-                        icon: '📺',
+                        icon: '',
                         title: 'Media Rights',
                         revenue: 9,
                         growth: '+3%',
@@ -446,7 +463,7 @@
                         source: 'MLS Apple TV $250M/year ÷ 29 teams = ~$8.6M per team 2023'
                     },
                     sponsorship: {
-                        icon: '🤝',
+                        icon: '',
                         title: 'Sponsorship',
                         revenue: 19,
                         growth: '+12%',
@@ -455,7 +472,7 @@
                         source: 'BMO Field naming rights + jersey sponsors (BMO, Wealthsimple) 2023'
                     },
                     ticketing: {
-                        icon: '🎟️',
+                        icon: '',
                         title: 'Ticketing',
                         revenue: 17,
                         growth: '+5%',
@@ -464,7 +481,7 @@
                         source: 'BMO Field 30,000 capacity × 17 home games × avg $70'
                     },
                     merchandising: {
-                        icon: '👕',
+                        icon: '',
                         title: 'Merchandising',
                         revenue: 5,
                         growth: '+4%',
@@ -473,7 +490,7 @@
                         source: 'Adidas MLS partnership, TFC supporter culture merchandise'
                     },
                     betting: {
-                        icon: '🎲',
+                        icon: '',
                         title: 'Betting Partnerships',
                         revenue: 3,
                         growth: '+20%',
@@ -482,7 +499,7 @@
                         source: 'Ontario sports betting launch 2022, soccer betting growth'
                     },
                     other: {
-                        icon: '📊',
+                        icon: '',
                         title: 'Other Revenue',
                         revenue: 5,
                         growth: '+2%',
@@ -505,7 +522,7 @@
                 source: 'PGA Tour event economics 2023 + Golf Canada estimates',
                 streams: {
                     mediaRights: {
-                        icon: '📺',
+                        icon: '',
                         title: 'Media Rights',
                         revenue: 2,
                         growth: '0%',
@@ -514,7 +531,7 @@
                         source: 'PGA Tour negotiates centrally - minimal per-event allocation'
                     },
                     sponsorship: {
-                        icon: '🤝',
+                        icon: '',
                         title: 'Sponsorship',
                         revenue: 22,
                         growth: '+6%',
@@ -523,7 +540,7 @@
                         source: 'RBC $8-10M title sponsorship + ~100 corporate tents at $15-50K each'
                     },
                     ticketing: {
-                        icon: '🎟️',
+                        icon: '',
                         title: 'Ticketing',
                         revenue: 8,
                         growth: '+4%',
@@ -532,7 +549,7 @@
                         source: 'Oakdale Golf & Country Club ~150K attendance × $50-80 avg ticket'
                     },
                     merchandising: {
-                        icon: '👕',
+                        icon: '',
                         title: 'Merchandising',
                         revenue: 2,
                         growth: '+2%',
@@ -541,7 +558,7 @@
                         source: 'Limited tournament-specific merchandise vs team sports'
                     },
                     betting: {
-                        icon: '🎲',
+                        icon: '',
                         title: 'Betting Partnerships',
                         revenue: 1.5,
                         growth: '+15%',
@@ -550,7 +567,7 @@
                         source: 'PGA Tour FanDuel partnership, in-tournament betting activations'
                     },
                     other: {
-                        icon: '📊',
+                        icon: '',
                         title: 'Other Revenue',
                         revenue: 2.5,
                         growth: '+3%',
@@ -573,7 +590,7 @@
                 source: 'Forbes Esports Valuations 2023 + Esports Charts',
                 streams: {
                     mediaRights: {
-                        icon: '📺',
+                        icon: '',
                         title: 'Media Rights',
                         revenue: 9,
                         growth: '+15%',
@@ -582,7 +599,7 @@
                         source: 'TSM exclusive streaming partnerships, Twitch Creator Deals 2022-23'
                     },
                     sponsorship: {
-                        icon: '🤝',
+                        icon: '',
                         title: 'Sponsorship',
                         revenue: 26,
                         growth: '+20%',
@@ -591,7 +608,7 @@
                         source: 'TSM FTX deal terminated, replaced by Razer, Red Bull, Grubhub 2023'
                     },
                     ticketing: {
-                        icon: '🎟️',
+                        icon: '',
                         title: 'Ticketing',
                         revenue: 2,
                         growth: '+10%',
@@ -600,7 +617,7 @@
                         source: 'League Championship Series, Valorant Champions Tour live events'
                     },
                     merchandising: {
-                        icon: '👕',
+                        icon: '',
                         title: 'Merchandising',
                         revenue: 8,
                         growth: '+12%',
@@ -609,7 +626,7 @@
                         source: 'TSM Store, player jersey sales, gaming peripheral collaborations'
                     },
                     betting: {
-                        icon: '🎲',
+                        icon: '',
                         title: 'Betting Partnerships',
                         revenue: 5,
                         growth: '+40%',
@@ -618,7 +635,7 @@
                         source: 'Esports betting market growth, regulatory uncertainty post-2022'
                     },
                     other: {
-                        icon: '📊',
+                        icon: '',
                         title: 'Other Revenue',
                         revenue: 3,
                         growth: '+8%',
@@ -710,15 +727,15 @@
                     </div>
                     <div class="revenue-display">$${stream.revenue}M</div>
                     <div class="percentage">${percentage}% of total revenue</div>
-                    <p style="color: #6b7280; font-size: 0.9rem;">${stream.description}</p>
+                    <p style="color: var(--color-neutral-500); font-size: 0.9rem;">${stream.description}</p>
                     <div class="stream-details">
                         <div class="detail-item">
                             <span class="detail-label">Growth Rate:</span>
-                            <span class="detail-value" style="color: ${parseInt(stream.growth) > 5 ? '#4ade80' : '#fbbf24'}">${stream.growth} YoY</span>
+                            <span class="detail-value" style="color: ${parseInt(stream.growth) > 5 ? 'var(--color-success)' : 'var(--color-warning)'}">${stream.growth} YoY</span>
                         </div>
                         <div class="detail-item">
                             <span class="detail-label">Risk Level:</span>
-                            <span class="detail-value" style="color: ${stream.risk === 'Low' ? '#4ade80' : stream.risk === 'Medium' ? '#fbbf24' : '#f87171'}">${stream.risk}</span>
+                            <span class="detail-value" style="color: ${stream.risk === 'Low' ? 'var(--color-success)' : stream.risk === 'Medium' ? 'var(--color-warning)' : 'var(--color-danger)'}">${stream.risk}</span>
                         </div>
                     </div>
                 `;
@@ -728,7 +745,7 @@
             // Generate insights
             const insights = document.getElementById('insights');
             insights.innerHTML = `
-                <h2>💡 Key Insights</h2>
+                <h2>Key Insights</h2>
                 <ul>
                     ${org.insights.map(insight => `<li>${insight}</li>`).join('')}
                 </ul>

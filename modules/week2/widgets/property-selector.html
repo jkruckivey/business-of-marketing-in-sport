@@ -8,6 +8,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --color-primary: #171717;
+            --color-dark: #2d3748;
+            --color-dark-alt: #1f2937;
+            --color-success: #4ade80;
+            --color-success-dark: #22c55e;
+            --color-white: #ffffff;
+            --color-light-gray: #f9fafb;
+            --color-gray: #6b7280;
+            --color-gray-border: #d1d5db;
+            --color-gray-hover: #e5e7eb;
+            --color-text: #4a5568;
+            --color-text-dark: #1a1a1a;
+            --color-text-muted: #999;
+            --color-disabled: #666;
+            --border-radius: 8px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -16,8 +34,8 @@
 
         body {
             font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: white;
-            color: #2d3748;
+            background: var(--color-white);
+            color: var(--color-dark);
             padding: 2rem;
             min-height: 100vh;
         }
@@ -28,27 +46,27 @@
         }
 
         h1 {
-            color: #1f2937;
+            color: var(--color-dark-alt);
             margin-bottom: 0.5rem;
             font-size: 2rem;
         }
 
         .subtitle {
-            color: #6b7280;
+            color: var(--color-gray);
             margin-bottom: 2rem;
             font-size: 1rem;
         }
 
         .filter-section {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
-            border-radius: 8px;
+            background: var(--color-light-gray);
+            border: 1px solid var(--color-gray-border);
+            border-radius: var(--border-radius);
             padding: 1.5rem;
             margin-bottom: 2rem;
         }
 
         .filter-section h3 {
-            color: #1f2937;
+            color: var(--color-dark-alt);
             margin-bottom: 1rem;
         }
 
@@ -60,24 +78,25 @@
 
         .filter-btn {
             padding: 0.75rem 1.5rem;
-            background: white;
-            border: 1px solid #d1d5db;
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-border);
             border-radius: 6px;
-            color: #2d3748;
+            color: var(--color-dark);
             cursor: pointer;
             transition: all 0.3s;
             font-weight: 600;
+            font-family: inherit;
         }
 
         .filter-btn:hover {
-            border-color: #2d3748;
-            background: #f9fafb;
+            border-color: var(--color-dark);
+            background: var(--color-light-gray);
         }
 
         .filter-btn.active {
-            border-color: #2d3748;
-            background: #2d3748;
-            color: white;
+            border-color: var(--color-dark);
+            background: var(--color-dark);
+            color: var(--color-white);
         }
 
         .properties-grid {
@@ -88,21 +107,21 @@
         }
 
         .property-card {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
-            border-radius: 8px;
+            background: var(--color-light-gray);
+            border: 1px solid var(--color-gray-border);
+            border-radius: var(--border-radius);
             padding: 1.5rem;
             transition: all 0.3s;
             cursor: pointer;
         }
 
         .property-card:hover {
-            border-color: #2d3748;
+            border-color: var(--color-dark);
             transform: translateY(-3px);
         }
 
         .property-card.selected {
-            border-color: #4ade80;
+            border-color: var(--color-success);
             background: rgba(74, 222, 128, 0.1);
         }
 
@@ -122,20 +141,20 @@
         }
 
         .property-title h3 {
-            color: #1f2937;
+            color: var(--color-dark-alt);
             font-size: 1.3rem;
             margin-bottom: 0.25rem;
         }
 
         .property-category {
-            color: #6b7280;
+            color: var(--color-gray);
             font-size: 0.85rem;
             font-weight: 600;
             text-transform: uppercase;
         }
 
         .property-description {
-            color: #4a5568;
+            color: var(--color-text);
             line-height: 1.6;
             margin-bottom: 1rem;
         }
@@ -149,10 +168,10 @@
 
         .tag {
             padding: 0.25rem 0.75rem;
-            background: white;
+            background: var(--color-white);
             border-radius: 12px;
             font-size: 0.8rem;
-            color: #2d3748;
+            color: var(--color-dark);
         }
 
         .property-factors {
@@ -160,7 +179,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 0.75rem;
             padding-top: 1rem;
-            border-top: 1px solid #e5e7eb;
+            border-top: 1px solid var(--color-gray-hover);
         }
 
         .factor {
@@ -169,19 +188,19 @@
 
         .factor-label {
             font-size: 0.75rem;
-            color: #6b7280;
+            color: var(--color-gray);
             margin-bottom: 0.25rem;
         }
 
         .factor-value {
             font-weight: 700;
-            color: #2d3748;
+            color: var(--color-dark);
         }
 
         .selection-panel {
             background: rgba(74, 222, 128, 0.1);
-            border: 2px solid #4ade80;
-            border-radius: 8px;
+            border: 2px solid var(--color-success);
+            border-radius: var(--border-radius);
             padding: 2rem;
             margin-top: 2rem;
             display: none;
@@ -192,7 +211,7 @@
         }
 
         .selection-panel h2 {
-            color: #4ade80;
+            color: var(--color-success);
             margin-bottom: 1rem;
         }
 
@@ -200,10 +219,10 @@
             width: 100%;
             min-height: 120px;
             padding: 1rem;
-            background: white;
-            border: 1px solid #d1d5db;
+            background: var(--color-white);
+            border: 1px solid var(--color-gray-border);
             border-radius: 6px;
-            color: #2d3748;
+            color: var(--color-dark);
             font-family: inherit;
             font-size: 1rem;
             resize: vertical;
@@ -212,14 +231,14 @@
 
         .word-count {
             text-align: right;
-            color: #6b7280;
+            color: var(--color-gray);
             font-size: 0.9rem;
             margin-top: 0.5rem;
         }
 
         .export-btn {
-            background: linear-gradient(135deg, #4ade80, #22c55e);
-            color: #1a1a1a;
+            background: linear-gradient(135deg, var(--color-success), var(--color-success-dark));
+            color: var(--color-text-dark);
             border: none;
             padding: 1rem 2rem;
             font-size: 1.1rem;
@@ -228,6 +247,7 @@
             cursor: pointer;
             transition: all 0.3s;
             margin-top: 1.5rem;
+            font-family: inherit;
         }
 
         .export-btn:hover {
@@ -236,8 +256,8 @@
         }
 
         .export-btn:disabled {
-            background: #f9fafb;
-            color: #666;
+            background: var(--color-light-gray);
+            color: var(--color-disabled);
             cursor: not-allowed;
         }
 
@@ -250,9 +270,9 @@
         /* Collapsible Section Styles */
         .section {
             margin-bottom: 1.5rem;
-            border: 1px solid #d1d5db;
-            border-radius: 8px;
-            background: white;
+            border: 1px solid var(--color-gray-border);
+            border-radius: var(--border-radius);
+            background: var(--color-white);
         }
 
         .section-header {
@@ -262,25 +282,25 @@
             padding: 1rem 1.5rem;
             cursor: pointer;
             user-select: none;
-            background: #f9fafb;
-            border-radius: 8px 8px 0 0;
+            background: var(--color-light-gray);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
             transition: background 0.2s;
         }
 
         .section-header:hover {
-            background: #e5e7eb;
+            background: var(--color-gray-hover);
         }
 
         .section-header h2 {
             font-size: 1.1rem;
             font-weight: 600;
-            color: #1f2937;
+            color: var(--color-dark-alt);
             margin: 0;
         }
 
         .toggle-icon {
             font-size: 1.2rem;
-            color: #6b7280;
+            color: var(--color-gray);
             transition: transform 0.2s ease;
         }
 
@@ -305,7 +325,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎯 Property Selection Tool</h1>
+        <h1>Property Selection Tool</h1>
         <p class="subtitle">Choose your sport property for the Anchor Project - explore options across Legacy Properties, Emerging Sports, and Major Events</p>
 
         <!-- Section 1: Property Browser (Expanded by default) -->
@@ -343,10 +363,10 @@
                 <div class="section-inner">
         <div class="selection-panel" id="selection-panel">
             <h2>Your Selected Property</h2>
-            <p id="selected-property-name" style="font-size: 1.3rem; color: #c5b783; margin-bottom: 1rem;"></p>
+            <p id="selected-property-name" style="font-size: 1.3rem; color: var(--color-primary); margin-bottom: 1rem;"></p>
 
             <p style="margin-bottom: 0.5rem;"><strong>Why is this property interesting? What marketing challenges does it present?</strong></p>
-            <p style="color: #999; font-size: 0.9rem; margin-bottom: 1rem;">Write a 250-word rationale explaining your choice. Consider: market opportunity, competitive landscape, revenue potential, unique challenges.</p>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Write a 250-word rationale explaining your choice. Consider: market opportunity, competitive landscape, revenue potential, unique challenges.</p>
 
             <textarea id="rationale" class="rationale-input" placeholder="Begin writing your rationale here..." oninput="updateWordCount()"></textarea>
             <div class="word-count" id="word-count">0 / 250 words</div>
@@ -374,7 +394,7 @@
             {
                 id: 'nhl-senators',
                 category: 'legacy',
-                icon: '🏒',
+                icon: 'NHL',
                 name: 'NHL Team - Ottawa Senators',
                 description: 'Mid-market NHL franchise with rebuilding phase, new ownership, arena challenges, passionate but shrinking fanbase.',
                 tags: ['Professional', 'Established', 'Rebuild Phase'],
@@ -385,7 +405,7 @@
             {
                 id: 'nhl-expansion',
                 category: 'legacy',
-                icon: '🏒',
+                icon: 'NHL',
                 name: 'NHL Expansion Team - Houston',
                 description: 'Hypothetical NHL expansion into fourth-largest US market, untapped hockey market, competitive sports landscape.',
                 tags: ['Professional', 'Expansion', 'Greenfield'],
@@ -396,7 +416,7 @@
             {
                 id: 'mls-team',
                 category: 'legacy',
-                icon: '⚽',
+                icon: 'MLS',
                 name: 'MLS Team - Toronto FC',
                 description: 'Established MLS franchise, passionate supporter culture, competing in crowded Toronto market, Apple TV deal implications.',
                 tags: ['Professional', 'Passionate Fanbase', 'Market Leader'],
@@ -407,7 +427,7 @@
             {
                 id: 'cfl-team',
                 category: 'legacy',
-                icon: '🏈',
+                icon: 'CFL',
                 name: 'CFL Team - Any Franchise',
                 description: 'Canadian Football League team facing declining attendance, aging fanbase, competition from NFL, need for reinvention.',
                 tags: ['Professional', 'Heritage', 'Challenges'],
@@ -418,7 +438,7 @@
             {
                 id: 'nba-raptors',
                 category: 'legacy',
-                icon: '🏀',
+                icon: 'NBA',
                 name: 'NBA Team - Toronto Raptors',
                 description: 'Championship-winning franchise, strong brand ("We The North"), post-championship era challenges, maintaining momentum.',
                 tags: ['Professional', 'Championship Pedigree', 'Brand Strong'],
@@ -431,7 +451,7 @@
             {
                 id: 'hhof',
                 category: 'legacy',
-                icon: '🏛️',
+                icon: 'HHOF',
                 name: 'Hockey Hall of Fame',
                 description: 'Heritage institution balancing tradition with modernization, digital transformation needs, attracting younger audiences.',
                 tags: ['Heritage', 'Tourism', 'Cultural Icon'],
@@ -442,7 +462,7 @@
             {
                 id: 'pga-tour',
                 category: 'legacy',
-                icon: '⛳',
+                icon: 'PGA',
                 name: 'PGA Tour Event - RBC Canadian Open',
                 description: 'Established golf tournament facing LIV Golf competition, weather risks, one-week revenue concentration, corporate hospitality focus.',
                 tags: ['Tournament', 'Established', 'Premium'],
@@ -455,7 +475,7 @@
             {
                 id: 'pickleball-league',
                 category: 'emerging',
-                icon: '🏓',
+                icon: 'PBL',
                 name: 'Pickleball Professional League',
                 description: 'Fastest-growing sport in North America, aging population appeal, low barrier to entry, nascent professional ecosystem.',
                 tags: ['Emerging', 'High Growth', 'Accessible'],
@@ -466,7 +486,7 @@
             {
                 id: 'padel-facility',
                 category: 'emerging',
-                icon: '🎾',
+                icon: 'PADEL',
                 name: 'Padel Facility & League',
                 description: 'European sport expanding to North America, social/recreational focus, facility investment required, community building opportunity.',
                 tags: ['Emerging', 'Social', 'European Success'],
@@ -477,7 +497,7 @@
             {
                 id: 'womens-hockey',
                 category: 'emerging',
-                icon: '🏒',
+                icon: 'PWHL',
                 name: 'Professional Women\'s Hockey League (PWHL)',
                 description: 'New professional women\'s hockey league, strong talent base, growing media interest, finding sustainable business model.',
                 tags: ['Professional', 'Women\'s Sports', 'New League'],
@@ -488,7 +508,7 @@
             {
                 id: 'womens-soccer',
                 category: 'emerging',
-                icon: '⚽',
+                icon: 'NWSL',
                 name: 'Women\'s Professional Soccer - NWSL/CPL',
                 description: 'Rapidly growing women\'s soccer, World Cup momentum, sponsorship boom, Canadian market opportunities.',
                 tags: ['Professional', 'Women\'s Sports', 'Momentum'],
@@ -499,7 +519,7 @@
             {
                 id: 'esports-org',
                 category: 'emerging',
-                icon: '🎮',
+                icon: 'ESPORTS',
                 name: 'Esports Organization - Canadian Team',
                 description: 'Competitive gaming organization, Gen Z audience, digital-first, volatile sponsorship market, regulatory uncertainty.',
                 tags: ['Digital', 'Gen Z', 'Global'],
@@ -510,7 +530,7 @@
             {
                 id: 'ultimate-frisbee',
                 category: 'emerging',
-                icon: '🥏',
+                icon: 'AUDL',
                 name: 'Ultimate Frisbee Professional League',
                 description: 'Growing sport with young demographic, minimal commercial infrastructure, grassroots energy, low operating costs.',
                 tags: ['Emerging', 'Youth', 'Community'],
@@ -523,7 +543,7 @@
             {
                 id: 'world-cup',
                 category: 'event',
-                icon: '🏆',
+                icon: 'FIFA',
                 name: 'FIFA World Cup 2026 - Canada Host City',
                 description: 'Once-in-a-generation mega-event, multi-city hosting, legacy planning, tourism and economic impact, short window.',
                 tags: ['Mega Event', 'Legacy', 'International'],
@@ -534,7 +554,7 @@
             {
                 id: 'grey-cup',
                 category: 'event',
-                icon: '🏈',
+                icon: 'CFL',
                 name: 'Grey Cup Festival',
                 description: 'Canadian football championship week, host city festival, corporate hospitality, balancing tradition with modern experience.',
                 tags: ['Annual Event', 'Canadian', 'Festival'],
@@ -545,7 +565,7 @@
             {
                 id: 'womens-hockey-worlds',
                 category: 'event',
-                icon: '🏒',
+                icon: 'IIHF',
                 name: 'Women\'s World Hockey Championship',
                 description: 'IIHF Women\'s World Championship, growing audience, Canadian host city opportunity, breaking attendance records.',
                 tags: ['International', 'Women\'s Sports', 'Growth'],
@@ -556,7 +576,7 @@
             {
                 id: 'marathon',
                 category: 'event',
-                icon: '🏃',
+                icon: 'MARATHON',
                 name: 'City Marathon - Toronto/Vancouver/Montreal',
                 description: 'Major urban marathon, mass participation event, community engagement, sponsorship-heavy model, road closure challenges.',
                 tags: ['Participation', 'Community', 'Annual'],
@@ -567,7 +587,7 @@
             {
                 id: 'invictus-games',
                 category: 'event',
-                icon: '🎖️',
+                icon: 'INVICTUS',
                 name: 'Invictus Games - Canadian Bid',
                 description: 'Paralympic-style event for wounded veterans, high emotional appeal, limited commercial precedent, mission-driven.',
                 tags: ['International', 'Social Impact', 'Prestige'],
@@ -713,7 +733,7 @@ Business of Sports Marketing - Anchor Project
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
 
-            alert('✅ Property proposal exported! Share this file with your team and submit to faculty.');
+            alert('Property proposal exported! Share this file with your team and submit to faculty.');
         }
 
         // Initialize

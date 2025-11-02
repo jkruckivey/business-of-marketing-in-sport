@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platform Economics Visualizer - Linear TV vs. Streaming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
         /* CSS Design System */
         :root {
-            --color-primary: #c5b783;
-            --color-primary-dark: #8b7b3f;
+            --color-primary: #171717;
+            --color-primary-dark: #404040;
             --color-dark: #2c2c2c;
             --color-success: #4a7c59;
             --color-danger: #dc2626;
             --color-warning: #d97706;
+            --color-warning-light: #fef3c7;
+            --color-warning-lighter: #fde68a;
             --color-info: #2563eb;
+            --color-info-dark: #1d4ed8;
             --color-white: #ffffff;
             --color-light-gray: #f9fafb;
             --color-gray: #6b7280;
+            --color-gray-hover: #4b5563;
             --border-radius: 12px;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -29,8 +36,8 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, var(--color-light-gray) 0%, var(--color-gray-hover) 100%);
             color: var(--color-dark);
             padding: 24px;
             line-height: 1.6;
@@ -87,6 +94,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             color: var(--color-gray);
+            font-family: inherit;
         }
 
         .toggle-btn.active {
@@ -148,11 +156,19 @@
             text-align: right;
         }
 
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d1d5db;
+            --color-neutral-900: #171717;
+            --color-gray-hover: #e5e7eb;
+        }
+
         input[type="range"] {
             width: 100%;
             height: 8px;
             border-radius: 5px;
-            background: #ddd;
+            background: var(--color-neutral-300);
             outline: none;
             -webkit-appearance: none;
             appearance: none;
@@ -212,6 +228,7 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            font-family: inherit;
         }
 
         .preset-btn:hover {
@@ -286,10 +303,10 @@
 
         /* Insights Section */
         .insights-section {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            background: var(--color-light-gray);
             border-radius: var(--border-radius);
             padding: 24px;
-            border-left: 4px solid var(--color-warning);
+            border-left: 4px solid var(--color-neutral-800);
             margin-bottom: 24px;
         }
 
@@ -340,6 +357,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            font-family: inherit;
         }
 
         .btn-reset {
@@ -348,7 +366,7 @@
         }
 
         .btn-reset:hover {
-            background: #4b5563;
+            background: var(--color-gray-hover);
         }
 
         .btn-export {
@@ -357,7 +375,7 @@
         }
 
         .btn-export:hover {
-            background: #1d4ed8;
+            background: var(--color-info-dark);
         }
 
         .btn:focus {
@@ -418,7 +436,7 @@
 
         .section {
             margin-bottom: 1.5rem;
-            border: 1px solid #d1d5db;
+            border: 1px solid var(--color-neutral-300);
             border-radius: 12px;
             background: white;
         }
@@ -436,7 +454,7 @@
         }
 
         .section-header:hover {
-            background: #f3f4f6;
+            background: var(--color-gray-hover);
         }
 
         .section-header h2 {
@@ -474,7 +492,7 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>📊 Platform Economics Visualizer</h1>
+            <h1>Platform Economics Visualizer</h1>
             <p class="subtitle">Compare linear TV vs. streaming profitability models</p>
         </header>
 
@@ -496,7 +514,7 @@
                     aria-selected="true"
                     aria-controls="linear-controls"
                     tabindex="0">
-                    📺 Linear TV
+                    Linear TV
                 </button>
                 <button
                     id="toggle-streaming"
@@ -505,7 +523,7 @@
                     aria-selected="false"
                     aria-controls="streaming-controls"
                     tabindex="-1">
-                    🌐 Streaming/DTC
+                    Streaming/DTC
                 </button>
             </div>
         </div>
@@ -536,7 +554,7 @@
 
                 <div class="slider-group">
                     <div class="slider-label">
-                        <label for="linear-ad-cpm">Ad CPM ($)</label>
+                        <label for="linear-ad-cpm"><abbr title="Cost Per Mille (thousand impressions) - what advertisers pay per 1,000 viewers">CPM</abbr> - Ad Cost per Thousand Viewers ($)</label>
                         <span class="slider-value" id="linear-ad-cpm-value">$55</span>
                     </div>
                     <input
@@ -554,7 +572,7 @@
 
                 <div class="slider-group">
                     <div class="slider-label">
-                        <label for="linear-carriage-fee">Monthly Carriage Fee ($)</label>
+                        <label for="linear-carriage-fee">Monthly <abbr title="Fee cable/satellite providers pay to carry a channel - based on number of subscribers">Carriage Fee</abbr> ($)</label>
                         <span class="slider-value" id="linear-carriage-fee-value">$0.50</span>
                     </div>
                     <input
@@ -685,7 +703,7 @@
 
                 <div class="slider-group">
                     <div class="slider-label">
-                        <label for="streaming-churn">Monthly Churn Rate (%)</label>
+                        <label for="streaming-churn">Monthly <abbr title="Percentage of subscribers who cancel each month - key metric for retention">Churn Rate</abbr> (%)</label>
                         <span class="slider-value" id="streaming-churn-value">3%</span>
                     </div>
                     <input
@@ -703,7 +721,7 @@
 
                 <div class="slider-group">
                     <div class="slider-label">
-                        <label for="streaming-cac">Customer Acquisition Cost ($)</label>
+                        <label for="streaming-cac"><abbr title="Customer Acquisition Cost - marketing spend per new subscriber">CAC</abbr> - Customer Acquisition Cost ($)</label>
                         <span class="slider-value" id="streaming-cac-value">$50</span>
                     </div>
                     <input
@@ -755,11 +773,11 @@
 
         <!-- Chart -->
         <div class="section">
-            <div class="section-header" onclick="toggleSection('chart')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('chart');}" tabindex="0" role="button" aria-expanded="false" aria-controls="chart-content">
+            <div class="section-header" onclick="toggleSection('chart')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('chart');}" tabindex="0" role="button" aria-expanded="true" aria-controls="chart-content">
                 <h2>Financial Projection</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="chart-content">
+            <div class="section-content expanded" id="chart-content">
                 <div class="section-inner">
         <div class="chart-section">
             <h3 style="text-align: center; margin-bottom: 20px;">10-Year Financial Projection</h3>
@@ -773,11 +791,11 @@
 
         <!-- Metrics -->
         <div class="section">
-            <div class="section-header" onclick="toggleSection('metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('metrics');}" tabindex="0" role="button" aria-expanded="false" aria-controls="metrics-content">
+            <div class="section-header" onclick="toggleSection('metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('metrics');}" tabindex="0" role="button" aria-expanded="true" aria-controls="metrics-content">
                 <h2>Key Metrics</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="metrics-content">
+            <div class="section-content expanded" id="metrics-content">
                 <div class="section-inner">
         <div class="metrics-grid" role="region" aria-label="Financial metrics summary">
             <div class="metric-card">
@@ -796,7 +814,7 @@
 
         <!-- Strategic Insights -->
         <div class="insights-section" role="region" aria-label="Strategic insights">
-            <h3>💡 Strategic Insights</h3>
+            <h3>Strategic Insights</h3>
             <ul class="insights-list" id="insights-list" aria-live="polite">
                 <li>Adjust parameters above to see strategic insights</li>
             </ul>
@@ -810,8 +828,8 @@
             <button class="btn btn-reset" id="reset-btn" aria-label="Reset to default parameters">
                 ↺ Reset to Defaults
             </button>
-            <button class="btn btn-export" id="export-btn" aria-label="Export data to JSON">
-                ⬇ Export Data (JSON)
+            <button class="btn btn-export" id="export-btn" aria-label="Export data to CSV">
+                Export Data (CSV)
             </button>
         </div>
     </div>
@@ -877,7 +895,7 @@
                         {
                             label: 'Revenue ($M)',
                             data: revenues,
-                            borderColor: '#2563eb',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-info').trim(),
                             backgroundColor: 'rgba(37, 99, 235, 0.1)',
                             borderWidth: 3,
                             tension: 0.3,
@@ -886,7 +904,7 @@
                         {
                             label: 'Costs ($M)',
                             data: costs,
-                            borderColor: '#dc2626',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-danger').trim(),
                             backgroundColor: 'rgba(220, 38, 38, 0.1)',
                             borderWidth: 3,
                             tension: 0.3,
@@ -895,7 +913,7 @@
                         {
                             label: 'Profit ($M)',
                             data: profits,
-                            borderColor: '#4a7c59',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-success').trim(),
                             backgroundColor: 'rgba(74, 124, 89, 0.1)',
                             borderWidth: 3,
                             tension: 0.3,
@@ -1065,7 +1083,7 @@
                 }
 
                 if (cumulativeProfit > 0 && breakEvenYear) {
-                    insights.push(`Cumulative profit of ${formatCurrency(cumulativeProfit)} by Year 10 justifies early losses. Customer LTV model works.`);
+                    insights.push(`Cumulative profit of ${formatCurrency(cumulativeProfit)} by Year 10 justifies early losses. Customer <abbr title="Lifetime Value - total revenue expected from a customer over their entire relationship">LTV</abbr> model works.`);
                 }
 
                 const growth = parseFloat(streamingGrowth.value);
@@ -1076,7 +1094,7 @@
                 }
 
                 if (year10Profit > 0 && breakEvenYear) {
-                    insights.push("This streaming model validates why tech giants 'overpay': Long-term LTV exceeds upfront rights cost.");
+                    insights.push("This streaming model validates why tech giants 'overpay': Long-term <abbr title=\"Lifetime Value - total revenue expected from a customer over their entire relationship\">LTV</abbr> exceeds upfront rights cost.");
                 }
             }
 
@@ -1302,17 +1320,30 @@
                 );
             }
 
-            const exportData = {
-                model: currentModel,
-                parameters: params,
-                projections: data
-            };
+            // Build CSV
+            let csv = 'Category,Item,Value\n';
 
-            const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+            // Parameters section
+            csv += 'Model,Business Model,' + params.model + '\n';
+            delete params.model;
+
+            for (const [key, value] of Object.entries(params)) {
+                const label = key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+                csv += 'Parameters,' + label + ',' + value + '\n';
+            }
+
+            // Projections section
+            data.forEach(yearData => {
+                csv += 'Year ' + yearData.year + ',Revenue,$' + (yearData.revenue / 1000000).toFixed(2) + 'M\n';
+                csv += 'Year ' + yearData.year + ',Costs,$' + (yearData.costs / 1000000).toFixed(2) + 'M\n';
+                csv += 'Year ' + yearData.year + ',Profit,$' + (yearData.profit / 1000000).toFixed(2) + 'M\n';
+            });
+
+            const blob = new Blob([csv], { type: 'text/csv' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `platform-economics-${currentModel}-${Date.now()}.json`;
+            a.download = `platform-economics-${currentModel}-${Date.now()}.csv`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);

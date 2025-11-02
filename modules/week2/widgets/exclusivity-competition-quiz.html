@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusivity & Competition Knowledge Check</title>
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-success: #22c55e;
+            --color-error: #ef4444;
+            --color-warning: #f59e0b;
+            --color-info: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--color-neutral-200);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            color: var(--color-neutral-600);
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background: var(--color-neutral-100);
+            border-left: 4px solid var(--color-info);
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: var(--color-neutral-700);
+        }
+
+        .question-container {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: var(--color-neutral-50);
+            border-radius: 8px;
+            border: 1px solid var(--color-neutral-200);
+        }
+
+        .question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .question-number {
+            display: inline-block;
+            background: var(--color-neutral-800);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .question-type {
+            font-size: 12px;
+            color: var(--color-neutral-500);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .question-text {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--color-neutral-900);
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option {
+            padding: 15px 20px;
+            background: white;
+            border: 2px solid var(--color-neutral-300);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .option:hover {
+            border-color: var(--color-neutral-500);
+            background: var(--color-neutral-50);
+        }
+
+        .option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .option.selected {
+            border-color: var(--color-neutral-800);
+            background: var(--color-neutral-100);
+        }
+
+        .option.correct {
+            border-color: var(--color-success);
+            background: #f0fdf4;
+        }
+
+        .option.incorrect {
+            border-color: var(--color-error);
+            background: #fef2f2;
+        }
+
+        .feedback {
+            margin-top: 20px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.6;
+            display: none;
+        }
+
+        .feedback.show {
+            display: block;
+        }
+
+        .feedback.correct {
+            background: #f0fdf4;
+            border-left: 4px solid var(--color-success);
+            color: var(--color-neutral-900);
+        }
+
+        .feedback.incorrect {
+            background: #fef2f2;
+            border-left: 4px solid var(--color-error);
+            color: var(--color-neutral-900);
+        }
+
+        .feedback strong {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .submit-btn {
+            background: var(--color-neutral-800);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            margin-top: 10px;
+            font-family: inherit;
+        }
+
+        .submit-btn:hover {
+            background: var(--color-neutral-700);
+        }
+
+        .submit-btn:disabled {
+            background: var(--color-neutral-400);
+            cursor: not-allowed;
+        }
+
+        .results-container {
+            display: none;
+            margin-top: 40px;
+            padding: 40px;
+            background: var(--color-neutral-50);
+            border-radius: 12px;
+            border: 2px solid var(--color-neutral-300);
+            text-align: center;
+        }
+
+        .results-container.show {
+            display: block;
+        }
+
+        .score-circle {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            border: 12px solid var(--color-neutral-200);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .score-circle.perfect {
+            border-color: var(--color-success);
+        }
+
+        .score-circle.good {
+            border-color: var(--color-info);
+        }
+
+        .score-circle.needs-review {
+            border-color: var(--color-warning);
+        }
+
+        .score-label {
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--color-neutral-600);
+            margin-top: 5px;
+        }
+
+        .results-message {
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--color-neutral-900);
+            margin-bottom: 20px;
+        }
+
+        .results-guidance {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .results-guidance h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--color-neutral-900);
+        }
+
+        .results-guidance p {
+            font-size: 14px;
+            color: var(--color-neutral-700);
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .question-text {
+                font-size: 16px;
+            }
+
+            .score-circle {
+                width: 150px;
+                height: 150px;
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Exclusivity & Competition</h1>
+            <p class="subtitle">Check Your Understanding</p>
+            <div class="info-box">
+                <strong>Quick Knowledge Check (2 minutes)</strong><br>
+                Test your grasp of exclusivity dynamics and appointment viewing before continuing. This is not graded—it's designed to help you identify concepts to focus on.
+            </div>
+        </header>
+
+        <div id="quiz-container">
+            <!-- Question 1 -->
+            <div class="question-container" data-question="1">
+                <div class="question-header">
+                    <span class="question-number">Question 1 of 3</span>
+                    <span class="question-type">Multiple Choice</span>
+                </div>
+                <div class="question-text">Why do exclusive rights cost 2-3x more than non-exclusive packages?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q1" value="A">
+                        <span>A) Exclusive deals require more legal work</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="B">
+                        <span>B) Exclusivity creates competitive bidding wars between traditional networks, streamers, and tech giants</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="C">
+                        <span>C) Exclusive content has higher production costs</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="D">
+                        <span>D) Non-exclusive deals aren't available for major sports</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(1, 'B')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-container" data-question="2">
+                <div class="question-header">
+                    <span class="question-number">Question 2 of 3</span>
+                    <span class="question-type">Multiple Choice</span>
+                </div>
+                <div class="question-text">What makes sports "appointment viewing" in 2024?</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q2" value="A">
+                        <span>A) Sports are scheduled at convenient times</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="B">
+                        <span>B) Sports games are shorter than movies</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="C">
+                        <span>C) Sports can't be watched "later" without risking spoilers from social media</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="D">
+                        <span>D) Sports require expensive cable subscriptions</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(2, 'C')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-container" data-question="3">
+                <div class="question-header">
+                    <span class="question-number">Question 3 of 3</span>
+                    <span class="question-type">Multiple Choice</span>
+                </div>
+                <div class="question-text">When the NFL split packages across CBS, FOX, NBC, ESPN, and Amazon (instead of single exclusive bidder), the result was:</div>
+                <div class="options">
+                    <label class="option">
+                        <input type="radio" name="q3" value="A">
+                        <span>A) Lower total rights value (less competition)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="B">
+                        <span>B) Higher total rights value (multiple bidders maximized revenue)</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="C">
+                        <span>C) Confused fans who couldn't find games</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="D">
+                        <span>D) Lower production quality across networks</span>
+                    </label>
+                </div>
+                <button class="submit-btn" onclick="checkAnswer(3, 'B')">Submit Answer</button>
+                <div class="feedback">
+                    <strong></strong>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-container" id="results">
+            <div class="score-circle" id="score-display">
+                <div>
+                    <span id="score-number">0</span>/3
+                    <div class="score-label">Your Score</div>
+                </div>
+            </div>
+
+            <div class="results-message" id="results-message"></div>
+
+            <div class="results-guidance">
+                <h3>Next Steps</h3>
+                <p id="guidance-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const answers = {};
+        const feedbackData = {
+            1: {
+                correct: "Correct! When Amazon entered NFL rights bidding (2021), it drove prices up 75% despite stable ratings. Multiple bidders (networks + streamers + tech giants) competing for exclusive access creates exponential price increases. Exclusivity turns media rights into scarce commodities that trigger bidding wars.",
+                incorrect: "Not quite. The answer is B. When Amazon entered NFL rights bidding in 2021, it drove prices up 75% despite stable ratings. Multiple bidders (traditional networks + streamers + tech giants) competing for exclusive access creates exponential price increases. Legal work, production costs, and deal availability don't explain the 2-3x premium—competitive bidding does."
+            },
+            2: {
+                correct: "Perfect! Sports are the last content you MUST watch live. Social media, news alerts, and friends will spoil results if you wait. This creates predictable, simultaneous audiences—extremely valuable in an on-demand world where most content is consumed asynchronously.",
+                incorrect: "Not quite. The answer is C. Sports are the last content you MUST watch live. If you wait to watch later, social media, news alerts, and friends will spoil the results. This creates predictable, simultaneous audiences—extremely valuable in 2024 when most content is consumed on-demand at different times. It's not about scheduling, length, or cable costs—it's about spoiler risk forcing live viewing."
+            },
+            3: {
+                correct: "Exactly right! The NFL maximized total value by creating competition among multiple bidders. Each network/platform paid premium prices to secure THEIR exclusive package. Total: $110B over 11 years. Strategy: split packages to multiply bidding wars rather than selling to one exclusive partner.",
+                incorrect: "Not quite. The answer is B. The NFL maximized total value by creating competition among multiple bidders. Instead of one exclusive partner, they split packages (CBS gets AFC Sunday, FOX gets NFC Sunday, NBC gets Sunday Night, ESPN gets Monday Night, Amazon gets Thursday Night). Each network/platform paid premium to secure THEIR exclusive window. Total: $110B over 11 years—far more than one exclusive bidder would pay."
+            }
+        };
+
+        // Event listeners for option selection
+        document.querySelectorAll('.option').forEach(option => {
+            option.addEventListener('click', function() {
+                const radio = this.querySelector('input');
+                radio.checked = true;
+
+                // Remove selected class from siblings
+                this.parentElement.querySelectorAll('.option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+
+                // Add selected class to this option
+                this.classList.add('selected');
+            });
+        });
+
+        function checkAnswer(questionNum, correctAnswer) {
+            const container = document.querySelector(`[data-question="${questionNum}"]`);
+            const selectedInput = container.querySelector('input:checked');
+
+            if (!selectedInput) {
+                alert('Please select an answer before submitting.');
+                return;
+            }
+
+            const selectedValue = selectedInput.value;
+            const isCorrect = selectedValue === correctAnswer;
+
+            // Store answer
+            answers[questionNum] = isCorrect;
+
+            // Show feedback
+            const feedbackDiv = container.querySelector('.feedback');
+            const feedbackStrong = feedbackDiv.querySelector('strong');
+            const feedbackP = feedbackDiv.querySelector('p');
+
+            feedbackDiv.classList.remove('correct', 'incorrect');
+            feedbackDiv.classList.add(isCorrect ? 'correct' : 'incorrect', 'show');
+
+            feedbackStrong.textContent = isCorrect ? 'Correct!' : 'Not quite.';
+            feedbackP.textContent = isCorrect ? feedbackData[questionNum].correct : feedbackData[questionNum].incorrect;
+
+            // Visual feedback on options
+            container.querySelectorAll('.option').forEach(opt => {
+                const input = opt.querySelector('input');
+                if (input.value === correctAnswer) {
+                    opt.classList.add('correct');
+                } else if (input.value === selectedValue && !isCorrect) {
+                    opt.classList.add('incorrect');
+                }
+            });
+
+            // Disable submit button
+            container.querySelector('.submit-btn').disabled = true;
+            container.querySelector('.submit-btn').textContent = 'Answer Submitted';
+
+            // Check if all questions answered
+            checkIfComplete();
+        }
+
+        function checkIfComplete() {
+            const answeredCount = Object.keys(answers).length;
+
+            if (answeredCount === 3) {
+                // Scroll to results after a short delay
+                setTimeout(() => {
+                    showResults();
+                }, 1000);
+            }
+        }
+
+        function showResults() {
+            const correctCount = Object.values(answers).filter(a => a).length;
+
+            // Update score display
+            document.getElementById('score-number').textContent = correctCount;
+
+            const scoreCircle = document.getElementById('score-display');
+            const resultsMessage = document.getElementById('results-message');
+            const guidanceText = document.getElementById('guidance-text');
+
+            // Determine performance level and guidance
+            if (correctCount === 3) {
+                scoreCircle.classList.add('perfect');
+                resultsMessage.textContent = "Excellent! You understand exclusivity dynamics.";
+                guidanceText.textContent = "You have a strong grasp of how exclusivity creates bidding wars, why 'appointment viewing' matters, and how leagues maximize value through strategic package splits. Continue to the next section to explore how these dynamics play out across different platform types (linear TV vs. streaming).";
+            } else if (correctCount === 2) {
+                scoreCircle.classList.add('good');
+                resultsMessage.textContent = "Good work! You're on the right track.";
+                guidanceText.textContent = "You understand most of the key concepts. Review the feedback on the question you missed to solidify your understanding. Focus on: (1) how multiple bidders drive exponential price increases, (2) why spoiler risk forces live viewing in social media era, and (3) how package splits maximize total rights value.";
+            } else {
+                scoreCircle.classList.add('needs-review');
+                resultsMessage.textContent = "Review recommended before continuing.";
+                guidanceText.textContent = "Consider revisiting the previous section on exclusivity and competition. Focus on understanding: (1) competitive bidding dynamics (Amazon's NFL entry drove 75% price increase), (2) 'appointment viewing' phenomenon (social media spoilers force live viewing), and (3) strategic package splits (NFL's $110B across 5 partners vs. single exclusive bidder). These concepts are critical for understanding modern media rights negotiations.";
+            }
+
+            // Show results container
+            document.getElementById('results').classList.add('show');
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
+</body>
+</html>

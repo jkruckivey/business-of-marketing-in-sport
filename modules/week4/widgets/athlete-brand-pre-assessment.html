@@ -44,7 +44,7 @@
             margin: 0 auto;
             background: white;
             border-radius: 8px;
-            border: 1px solid #d4d4d4;
+            border: 1px solid var(--color-neutral-300);
             padding: 40px;
         }
 
@@ -103,7 +103,7 @@
             padding: 30px;
             background: var(--color-neutral-50);
             border-radius: 8px;
-            border: 1px solid #e5e5e5;
+            border: 1px solid var(--color-neutral-200);
         }
 
         .challenge-section h2 {
@@ -140,7 +140,7 @@
             display: block;
             margin: 40px auto 0;
             padding: 10px 24px;
-            background: #171717;
+            background: var(--color-neutral-900);
             color: white;
             border: none;
             border-radius: 8px;
@@ -152,7 +152,7 @@
         }
 
         .cta-button:hover {
-            background: #404040;
+            background: var(--color-neutral-700);
         }
 
         .cta-button:focus {
@@ -197,7 +197,7 @@
             padding: 30px;
             background: var(--color-neutral-50);
             border-radius: 8px;
-            border: 1px solid #e5e5e5;
+            border: 1px solid var(--color-neutral-200);
             display: none;
         }
 
@@ -252,7 +252,7 @@
         .option {
             padding: 15px 20px;
             background: white;
-            border: 1px solid #d4d4d4;
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.2s;
@@ -332,7 +332,7 @@
         }
 
         .submit-btn, .next-btn {
-            background: #171717;
+            background: var(--color-neutral-900);
             color: white;
             border: none;
             padding: 10px 24px;
@@ -344,7 +344,7 @@
         }
 
         .submit-btn:hover, .next-btn:hover {
-            background: #404040;
+            background: var(--color-neutral-700);
         }
 
         .submit-btn:focus, .next-btn:focus {
@@ -372,7 +372,7 @@
             height: 200px;
             margin: 0 auto 30px;
             border-radius: 50%;
-            border: 8px solid #e5e5e5;
+            border: 8px solid var(--color-neutral-200);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -414,7 +414,7 @@
         }
 
         .level-badge.master {
-            background: #fef3c7;
+            background: var(--color-neutral-100);
             color: #92400e;
         }
 
@@ -469,7 +469,7 @@
             background: white;
             padding: 20px;
             border-radius: 8px;
-            border: 1px solid #e5e5e5;
+            border: 1px solid var(--color-neutral-200);
         }
 
         .outcome-card h4 {
@@ -489,7 +489,7 @@
         .progress-bar {
             width: 100%;
             height: 8px;
-            background: #e5e5e5;
+            background: var(--color-neutral-200);
             border-radius: 4px;
             margin-top: 10px;
             overflow: hidden;
@@ -497,7 +497,7 @@
 
         .progress-fill {
             height: 100%;
-            background: #171717;
+            background: var(--color-neutral-900);
             transition: width 0.5s ease;
         }
 
@@ -1079,10 +1079,10 @@
             feedbackDiv.classList.add(isCorrect ? 'correct' : 'incorrect', 'show');
 
             if (q.isRanking) {
-                feedbackStrong.textContent = isCorrect ? '✓ Correct!' : '◐ Partial credit';
+                feedbackStrong.textContent = isCorrect ? 'Correct!' : 'Partial credit';
                 feedbackP.textContent = q.feedback;
             } else {
-                feedbackStrong.textContent = isCorrect ? '✓ Correct!' : '✗ Not quite.';
+                feedbackStrong.textContent = isCorrect ? 'Correct!' : 'Not quite.';
                 feedbackP.textContent = isCorrect ? q.feedback.correct : q.feedback.incorrect;
             }
 

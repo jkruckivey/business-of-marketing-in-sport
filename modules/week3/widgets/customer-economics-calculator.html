@@ -260,7 +260,7 @@
             padding: 0.625rem 1.25rem;
             border: none;
             border-radius: 6px;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             cursor: pointer;
@@ -456,11 +456,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('metrics');}" tabindex="0" role="button" aria-expanded="false" aria-controls="metrics-content">
+            <div class="section-header" onclick="toggleSection('metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('metrics');}" tabindex="0" role="button" aria-expanded="true" aria-controls="metrics-content">
                 <h2>Key Metrics</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="metrics-content">
+            <div class="section-content expanded" id="metrics-content">
                 <div class="section-inner">
                     <div class="metrics">
             <div class="metric-card">
@@ -492,11 +492,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('timeline')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('timeline');}" tabindex="0" role="button" aria-expanded="false" aria-controls="timeline-content">
+            <div class="section-header" onclick="toggleSection('timeline')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('timeline');}" tabindex="0" role="button" aria-expanded="true" aria-controls="timeline-content">
                 <h2>Timeline Analysis</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="timeline-content">
+            <div class="section-content expanded" id="timeline-content">
                 <div class="section-inner">
                     <div class="chart-container">
                         <canvas id="timelineChart" role="img" aria-label="Profitability timeline showing cumulative profit over 10 years"></canvas>
@@ -514,8 +514,8 @@
 
         <div class="button-group">
             <button class="btn-primary" onclick="calculate()">Recalculate</button>
-            <button class="btn-secondary" onclick="copyToClipboard()">📋 Copy Results</button>
-            <button class="btn-secondary" onclick="exportPlainText()">📄 Download Text</button>
+            <button class="btn-secondary" onclick="copyToClipboard()">Copy Results</button>
+            <button class="btn-secondary" onclick="exportPlainText()">Download Text</button>
         </div>
     </div>
 
@@ -814,7 +814,7 @@ Use this data in your FanDuel case analysis (Module 4)
 `;
 
             navigator.clipboard.writeText(copyText).then(() => {
-                alert('✓ Results copied to clipboard! Paste into your case analysis document.');
+                alert('Success: Results copied to clipboard! Paste into your case analysis document.');
             }).catch(err => {
                 console.error('Copy failed:', err);
                 alert('Copy failed. Please manually copy the results from the page.');
@@ -918,7 +918,7 @@ Case Study: FanDuel - Betting on Sports (HBS 520038)
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
 
-            alert('✓ Text file downloaded! Open in Notepad/TextEdit to view your analysis.');
+            alert('Success: Text file downloaded! Open in Notepad/TextEdit to view your analysis.');
         }
 
         function toggleSection(sectionId) {

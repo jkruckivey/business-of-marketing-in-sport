@@ -169,7 +169,7 @@
             padding: 0.625rem 1.25rem;
             border: none;
             border-radius: 6px;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             cursor: pointer;
@@ -342,19 +342,19 @@
 
                     <div class="button-group" style="margin-top: 1.5rem;">
                         <button class="btn-primary" onclick="updateComparison()">Update Comparison</button>
-                        <button class="btn-secondary" onclick="copyToClipboard()">📋 Copy Analysis</button>
-                        <button class="btn-secondary" onclick="exportPlainText()">📄 Download Text</button>
+                        <button class="btn-secondary" onclick="copyToClipboard()">Copy Analysis</button>
+                        <button class="btn-secondary" onclick="exportPlainText()">Download Text</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('visual')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('visual');}" tabindex="0" role="button" aria-expanded="false" aria-controls="visual-content">
+            <div class="section-header" onclick="toggleSection('visual')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('visual');}" tabindex="0" role="button" aria-expanded="true" aria-controls="visual-content">
                 <h2>Visual Comparison</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="visual-content">
+            <div class="section-content expanded" id="visual-content">
                 <div class="section-inner">
                     <div class="chart-container">
                         <canvas id="radarChart" role="img" aria-label="Radar chart comparing operators across 8 dimensions"></canvas>
@@ -364,11 +364,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('scorecard')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('scorecard');}" tabindex="0" role="button" aria-expanded="false" aria-controls="scorecard-content">
+            <div class="section-header" onclick="toggleSection('scorecard')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('scorecard');}" tabindex="0" role="button" aria-expanded="true" aria-controls="scorecard-content">
                 <h2>Competitive Scorecard</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="scorecard-content">
+            <div class="section-content expanded" id="scorecard-content">
                 <div class="section-inner">
                     <table class="scorecard-table" role="table">
                         <thead>
@@ -387,11 +387,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('insights')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('insights');}" tabindex="0" role="button" aria-expanded="false" aria-controls="insights-content">
+            <div class="section-header" onclick="toggleSection('insights')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('insights');}" tabindex="0" role="button" aria-expanded="true" aria-controls="insights-content">
                 <h2>Strategic Insights</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="insights-content">
+            <div class="section-content expanded" id="insights-content">
                 <div class="section-inner">
                     <div id="insightsContent">
                         <!-- Populated by JavaScript -->
@@ -809,7 +809,7 @@ Use this data in your FanDuel case analysis (Module 4)
 `;
 
             navigator.clipboard.writeText(copyText).then(() => {
-                alert('✓ Analysis copied to clipboard! Paste into your case analysis document.');
+                alert('Success: Analysis copied to clipboard! Paste into your case analysis document.');
             }).catch(err => {
                 console.error('Copy failed:', err);
                 alert('Copy failed. Please manually copy the analysis from the page.');
@@ -889,7 +889,7 @@ Course: Business of Sports Marketing - Week 3, Module 4
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
 
-            alert('✓ Text file downloaded! Open in Notepad/TextEdit to view the full analysis.');
+            alert('Success: Text file downloaded! Open in Notepad/TextEdit to view the full analysis.');
         }
 
         function toggleSection(sectionId) {

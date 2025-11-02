@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viewership Trends Analyzer - Rogers NHL Performance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
         /* CSS Design System */
         :root {
-            --color-primary: #c5b783;
-            --color-primary-dark: #8b7b3f;
+            --color-primary: #171717;
+            --color-primary-dark: #404040;
             --color-dark: #2c2c2c;
             --color-success: #4a7c59;
             --color-danger: #dc2626;
             --color-warning: #d97706;
             --color-info: #2563eb;
+            --color-info-dark: #1d4ed8;
             --color-white: #ffffff;
             --color-light-gray: #f9fafb;
             --color-gray: #6b7280;
+            --color-neutral-200: #e5e7eb;
+            --color-warning-light: #fef3c7;
+            --color-border-section: #ddd;
+            --color-bg-hover: #f0f0f0;
             --border-radius: 12px;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -29,8 +35,8 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: linear-gradient(135deg, #f9fafb 0%, #e5e7eb 100%);
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg, var(--color-light-gray) 0%, var(--color-neutral-200) 100%);
             color: var(--color-dark);
             padding: 24px;
             line-height: 1.6;
@@ -65,7 +71,7 @@
 
         .section {
             margin-bottom: 1.5rem;
-            border: 1px solid #ddd;
+            border: 1px solid var(--color-border-section);
             border-radius: 8px;
             background: var(--color-white);
         }
@@ -83,7 +89,7 @@
         }
 
         .section-header:hover {
-            background: #f0f0f0;
+            background: var(--color-bg-hover);
         }
 
         .section-header h3 {
@@ -136,6 +142,7 @@
             color: var(--color-gray);
             cursor: pointer;
             transition: all 0.3s ease;
+            font-family: inherit;
         }
 
         .tab-button:hover {
@@ -223,8 +230,8 @@
 
         /* Insights */
         .insights-box {
-            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-            border-left: 4px solid var(--color-warning);
+            background: var(--color-light-gray);
+            border-left: 4px solid var(--color-neutral-800);
             padding: 20px;
             border-radius: 8px;
         }
@@ -249,7 +256,7 @@
             content: "→";
             position: absolute;
             left: 0;
-            color: var(--color-warning);
+            color: var(--color-neutral-800);
             font-weight: bold;
         }
 
@@ -300,6 +307,7 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
+            font-family: inherit;
         }
 
         .btn-export {
@@ -308,7 +316,7 @@
         }
 
         .btn-export:hover {
-            background: #1d4ed8;
+            background: var(--color-info-dark);
         }
 
         .btn:focus {
@@ -355,20 +363,20 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>📊 Viewership Trends Analyzer</h1>
+            <h1>Viewership Trends Analyzer</h1>
             <p class="subtitle">Analyze Hockey Night in Canada ratings, streaming growth, and demographic shifts</p>
         </header>
 
         <!-- Tabs -->
         <div role="tablist" aria-label="Viewership analysis tabs" class="tab-list">
             <button role="tab" aria-selected="true" aria-controls="panel-ratings" id="tab-ratings" class="tab-button" tabindex="0">
-                📺 Linear TV Ratings
+                Linear TV Ratings
             </button>
             <button role="tab" aria-selected="false" aria-controls="panel-streaming" id="tab-streaming" class="tab-button" tabindex="-1">
-                📱 Streaming Subscribers
+                Streaming Subscribers
             </button>
             <button role="tab" aria-selected="false" aria-controls="panel-demographics" id="tab-demographics" class="tab-button" tabindex="-1">
-                👥 Demographics
+                Demographics
             </button>
         </div>
 
@@ -659,7 +667,7 @@
         <!-- Action Buttons -->
         <div class="action-buttons">
             <button class="btn btn-export" id="export-btn">
-                ⬇ Export All Data (CSV)
+                Export All Data (CSV)
             </button>
         </div>
     </div>
@@ -755,7 +763,7 @@
                     datasets: [{
                         label: 'Average Viewers (millions)',
                         data,
-                        borderColor: '#dc2626',
+                        borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-danger').trim(),
                         backgroundColor: 'rgba(220, 38, 38, 0.1)',
                         borderWidth: 3,
                         tension: 0.3,
@@ -808,7 +816,7 @@
                         {
                             label: 'Target Subscribers (thousands)',
                             data: target,
-                            borderColor: '#c5b783',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-primary').trim(),
                             borderWidth: 3,
                             borderDash: [10, 5],
                             tension: 0.3,
@@ -818,7 +826,7 @@
                         {
                             label: 'Actual Subscribers (thousands)',
                             data: actual,
-                            borderColor: '#dc2626',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-danger').trim(),
                             backgroundColor: 'rgba(220, 38, 38, 0.1)',
                             borderWidth: 3,
                             tension: 0.3,
@@ -860,14 +868,14 @@
                             label: '2014',
                             data: [28, 37, 35, 38, 60],
                             backgroundColor: 'rgba(197, 183, 131, 0.7)',
-                            borderColor: '#c5b783',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-primary').trim(),
                             borderWidth: 2
                         },
                         {
                             label: '2024',
                             data: [19, 37, 44, 42, 55],
                             backgroundColor: 'rgba(220, 38, 38, 0.7)',
-                            borderColor: '#dc2626',
+                            borderColor: getComputedStyle(document.documentElement).getPropertyValue('--color-danger').trim(),
                             borderWidth: 2
                         }
                     ]

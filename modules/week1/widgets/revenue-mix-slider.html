@@ -32,7 +32,7 @@
         body {
             font-family: var(--font-family-primary);
             background: white;
-            color: #2d3748;
+            color: var(--color-neutral-800);
             padding: 20px;
             line-height: 1.6;
         }
@@ -40,14 +40,14 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            background: #f9fafb;
+            background: var(--color-neutral-50);
             border-radius: 16px;
             padding: 30px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             font-size: 1.8rem;
             margin-bottom: 10px;
             text-align: center;
@@ -55,7 +55,7 @@
 
         .subtitle {
             text-align: center;
-            color: #6b7280;
+            color: var(--color-neutral-500);
             margin-bottom: 30px;
             font-size: 0.95rem;
         }
@@ -96,14 +96,14 @@
         .stream-value {
             font-size: 1.1rem;
             font-weight: bold;
-            color: #2d3748;
+            color: var(--color-neutral-800);
         }
 
         input[type="range"] {
             width: 100%;
             height: 8px;
             border-radius: 4px;
-            background: #d1d5db;
+            background: var(--color-neutral-300);
             outline: none;
             -webkit-appearance: none;
         }
@@ -130,11 +130,11 @@
         }
 
         /* Stream-specific colors */
-        .media { --stream-color: #6b7280; }
-        .ticketing { --stream-color: #6b7280; }
-        .sponsorship { --stream-color: #6b7280; }
-        .merchandising { --stream-color: #6b7280; }
-        .betting { --stream-color: #6b7280; }
+        .media { --stream-color: var(--color-neutral-500); }
+        .ticketing { --stream-color: var(--color-neutral-500); }
+        .sponsorship { --stream-color: var(--color-neutral-500); }
+        .merchandising { --stream-color: var(--color-neutral-500); }
+        .betting { --stream-color: var(--color-neutral-500); }
 
         .visualization {
             display: flex;
@@ -161,7 +161,7 @@
             display: flex;
             justify-content: space-between;
             padding: 10px 0;
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid var(--color-neutral-200);
         }
 
         .metric-row:last-child {
@@ -169,7 +169,7 @@
         }
 
         .metric-label {
-            color: #6b7280;
+            color: var(--color-neutral-500);
             font-size: 0.9rem;
         }
 
@@ -179,19 +179,19 @@
         }
 
         .metric-value.good {
-            color: #6b7280;
+            color: var(--color-neutral-500);
         }
 
         .metric-value.medium {
-            color: #6b7280;
+            color: var(--color-neutral-500);
         }
 
         .metric-value.bad {
-            color: #6b7280;
+            color: var(--color-neutral-500);
         }
 
         .total-bar {
-            background: #e5e7eb;
+            background: var(--color-neutral-200);
             height: 40px;
             border-radius: 8px;
             overflow: hidden;
@@ -211,11 +211,11 @@
         }
 
         .total-bar-fill.complete {
-            background: #6b7280;
+            background: var(--color-neutral-500);
         }
 
         .total-bar-fill.incomplete {
-            background: #9ca3af;
+            background: var(--color-neutral-400);
         }
 
         .insights {
@@ -226,17 +226,17 @@
         }
 
         .insights h3 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 15px;
             font-size: 1.1rem;
         }
 
         .insight-item {
             padding: 10px;
-            background: #f9fafb;
+            background: var(--color-neutral-50);
             border-radius: 4px;
             margin-bottom: 10px;
-            border-left: 3px solid #6b7280;
+            border-left: 3px solid var(--color-neutral-500);
         }
 
         .insight-item:last-child {
@@ -249,6 +249,7 @@
             border: none;
             padding: 12px 24px;
             border-radius: 8px;
+            font-family: inherit;
             font-weight: 600;
             cursor: pointer;
             font-size: 1rem;
@@ -262,7 +263,7 @@
         }
 
         .reset-btn:focus {
-            outline: 3px solid #3182ce;
+            outline: 3px solid var(--color-neutral-600);
             outline-offset: 2px;
         }
 
@@ -300,7 +301,7 @@
             <div class="sliders-section">
                 <div class="slider-group media">
                     <div class="slider-header">
-                        <span class="stream-name">📺 Media Rights</span>
+                        <span class="stream-name">Media Rights</span>
                         <span class="stream-value"><span id="mediaValue">40</span>%</span>
                     </div>
                     <label for="mediaSlider" class="sr-only">Media Rights percentage</label>
@@ -310,7 +311,7 @@
 
                 <div class="slider-group ticketing">
                     <div class="slider-header">
-                        <span class="stream-name">🎫 Ticketing & Live Events</span>
+                        <span class="stream-name">Ticketing & Live Events</span>
                         <span class="stream-value"><span id="ticketingValue">25</span>%</span>
                     </div>
                     <label for="ticketingSlider" class="sr-only">Ticketing percentage</label>
@@ -320,7 +321,7 @@
 
                 <div class="slider-group sponsorship">
                     <div class="slider-header">
-                        <span class="stream-name">🤝 Sponsorship</span>
+                        <span class="stream-name">Sponsorship</span>
                         <span class="stream-value"><span id="sponsorshipValue">20</span>%</span>
                     </div>
                     <label for="sponsorshipSlider" class="sr-only">Sponsorship percentage</label>
@@ -330,7 +331,7 @@
 
                 <div class="slider-group merchandising">
                     <div class="slider-header">
-                        <span class="stream-name">👕 Merchandising</span>
+                        <span class="stream-name">Merchandising</span>
                         <span class="stream-value"><span id="merchandisingValue">10</span>%</span>
                     </div>
                     <label for="merchandisingSlider" class="sr-only">Merchandising percentage</label>
@@ -340,7 +341,7 @@
 
                 <div class="slider-group betting">
                     <div class="slider-header">
-                        <span class="stream-name">🎲 Betting & Gaming</span>
+                        <span class="stream-name">Betting & Gaming</span>
                         <span class="stream-value"><span id="bettingValue">5</span>%</span>
                     </div>
                     <label for="bettingSlider" class="sr-only">Betting percentage</label>
@@ -373,7 +374,7 @@
         </div>
 
         <div class="insights">
-            <h3>💡 Insights</h3>
+            <h3>Insights</h3>
             <div id="insightsContainer"></div>
         </div>
 
@@ -507,22 +508,22 @@
             const insights = [];
 
             if (current.media > 60) {
-                insights.push('⚠️ Heavy media dependence creates vulnerability to cord-cutting and streaming disruption.');
+                insights.push('Heavy media dependence creates vulnerability to cord-cutting and streaming disruption.');
             }
             if (current.betting > 15) {
-                insights.push('📈 High betting allocation offers growth potential but carries regulatory risk.');
+                insights.push('High betting allocation offers growth potential but carries regulatory risk.');
             }
             if (current.ticketing > 35) {
-                insights.push('🏟️ Ticketing-heavy model is capacity-limited—difficult to scale revenue.');
+                insights.push('Ticketing-heavy model is capacity-limited—difficult to scale revenue.');
             }
             if (current.sponsorship + current.merchandising > 45) {
-                insights.push('🎯 Brand-driven revenue requires strong team performance and market presence.');
+                insights.push('Brand-driven revenue requires strong team performance and market presence.');
             }
             if (current.media < 30) {
-                insights.push('💡 Low media rights may limit ability to attract top talent in revenue-sharing leagues.');
+                insights.push('Low media rights may limit ability to attract top talent in revenue-sharing leagues.');
             }
             if (current.media >= 35 && current.media <= 50 && current.ticketing >= 20 && current.ticketing <= 30) {
-                insights.push('✅ This mix resembles a typical major league portfolio—balanced and proven.');
+                insights.push('This mix resembles a typical major league portfolio—balanced and proven.');
             }
 
             const container = document.getElementById('insightsContainer');
@@ -541,7 +542,7 @@
             document.getElementById('stabilityRating').textContent = '—';
             document.getElementById('portfolioType').textContent = '—';
             document.getElementById('insightsContainer').innerHTML =
-                '<div class="insight-item">⚠️ Total must equal 100% to calculate metrics</div>';
+                '<div class="insight-item">Total must equal 100% to calculate metrics</div>';
         }
 
         function resetToDefaults() {

@@ -245,7 +245,7 @@
             color: var(--color-neutral-700);
             border: 1px solid var(--color-neutral-300);
             border-radius: 6px;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             cursor: pointer;
@@ -414,7 +414,7 @@
 
         .btn {
             padding: 0.625rem 1.25rem;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             border-radius: 6px;
@@ -551,11 +551,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('allocation')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('allocation');}" tabindex="0" role="button" aria-expanded="false" aria-controls="allocation-content">
+            <div class="section-header" onclick="toggleSection('allocation')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('allocation');}" tabindex="0" role="button" aria-expanded="true" aria-controls="allocation-content">
                 <h2>Channel Allocation</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="allocation-content">
+            <div class="section-content expanded" id="allocation-content">
                 <div class="section-inner sliders-section">
 
             <div class="allocation-slider">
@@ -638,11 +638,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('breakdown')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('breakdown');}" tabindex="0" role="button" aria-expanded="false" aria-controls="breakdown-content">
+            <div class="section-header" onclick="toggleSection('breakdown')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('breakdown');}" tabindex="0" role="button" aria-expanded="true" aria-controls="breakdown-content">
                 <h2>Budget Breakdown</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="breakdown-content">
+            <div class="section-content expanded" id="breakdown-content">
                 <div class="section-inner">
                     <div class="results-grid">
             <div class="chart-container">
@@ -792,12 +792,12 @@
                     datasets: [{
                         data: data,
                         backgroundColor: [
-                            'rgba(64, 64, 64, 0.8)',
-                            'rgba(115, 115, 115, 0.8)',
-                            'rgba(163, 163, 163, 0.8)',
-                            'rgba(212, 212, 212, 0.8)',
-                            'rgba(229, 229, 229, 0.8)',
-                            'rgba(245, 245, 245, 0.8)'
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-300') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-200') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-100') + 'cc'
                         ],
                         borderColor: 'white',
                         borderWidth: 2
@@ -814,7 +814,7 @@
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#525252',
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-600'),
                                 padding: 12,
                                 usePointStyle: true
                             }

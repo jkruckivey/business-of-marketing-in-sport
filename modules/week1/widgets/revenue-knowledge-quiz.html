@@ -219,6 +219,7 @@
             cursor: pointer;
             transition: background 0.2s ease;
             margin-top: 10px;
+            font-family: inherit;
         }
 
         .submit-btn:hover {
@@ -290,7 +291,7 @@
         }
 
         .level-badge.insider {
-            background: #fef3c7;
+            background: var(--color-neutral-100);
             color: #92400e;
         }
 
@@ -841,7 +842,7 @@
             feedbackDiv.classList.remove('correct', 'incorrect');
             feedbackDiv.classList.add(isCorrect ? 'correct' : 'incorrect', 'show');
 
-            feedbackStrong.textContent = isCorrect ? '✓ Correct!' : '✗ Not quite.';
+            feedbackStrong.textContent = isCorrect ? 'Correct!' : 'Not quite.';
             feedbackP.textContent = isCorrect ? feedbackData[questionNum].correct : feedbackData[questionNum].incorrect;
 
             // Visual feedback on options
@@ -893,7 +894,7 @@
             feedbackDiv.classList.remove('correct', 'incorrect');
             feedbackDiv.classList.add(isCorrect ? 'correct' : 'incorrect', 'show');
 
-            feedbackStrong.textContent = isCorrect ? '✓ Good answer!' : '✓ Partial credit';
+            feedbackStrong.textContent = isCorrect ? 'Good answer!' : 'Partial credit';
             feedbackP.textContent = `Model answer: ${feedbackData[questionNum].model}`;
 
             // Disable submit button

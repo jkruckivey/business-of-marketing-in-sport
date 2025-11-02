@@ -5,14 +5,60 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Activity instructions and learning objectives | Type directly | Blue variant, clear task |
+| 1 | **Text** ⬤ Required | Connecting introduction from Module 3 | Type directly | Pattern: "You've just [previous] → Now [current]" |
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **iFrame** ◐ Recommended | Streaming Wars Strategy widget | Custom widget hosted | Interactive simulation |
-| 3 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to MLOs |
-| 5 | **AI Chat Widget** ◐ Recommended | Your Strategy Coach for simulation decisions | Configure in Uplimit | Named: "Platform Strategy Assistant" |
-| 6 | **Details** ○ Optional | Hints and strategic considerations (optional) | Type directly | Accordion for struggling students |
+| 3 | **Infobox (Callout)** ⬤ Required | Activity instructions and learning objectives | Type directly | Blue variant, clear task |
+| 4 | **iFrame** ◐ Recommended | Streaming Wars Strategy widget | Custom widget hosted | Interactive simulation |
+| 5 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to MLOs |
+| 6 | **AI Chat Widget** ◐ Recommended | Your Strategy Coach for simulation decisions | Configure in Uplimit | Named: "Platform Strategy Assistant" |
+| 7 | **Details** ○ Optional | Hints and strategic considerations | Type directly | Accordion for struggling students |
+| 8 | **Text** ⬤ Required | Discussion Prompt #2 - Share Your Strategy | Type directly | Forum post with screenshot requirement |
+| 9 | **Text** ◐ Recommended | Mental Break #3 - Prepare for Case Analysis | Type directly | Rest before Module 5 case study |
+| 10 | **Text** ⬤ Required | 🎯 Final Project Connection | Type directly | Connects simulation to Week 5 capstone |
+| 11 | **Text** ⬤ Required | Module 4 Complete - Transition to Module 5 | Type directly | Preview Rogers case study |
 
 **Detailed Content Specifications:**
+
+---
+
+## Element 1: Connecting Introduction
+
+You've just explored media rights valuation, exclusivity dynamics, and platform economics through frameworks and knowledge checks (Module 3). Now you'll **apply these concepts** in a strategic simulation where you build a sports streaming platform from scratch.
+
+In this module, you'll step into the role of VP of Content Strategy for a Canadian streaming platform, making the same high-stakes decisions that Rogers, DAZN, and TSN faced when building their streaming services. This hands-on experience prepares you to critically analyze the Rogers $5.2B NHL deal in Module 5.
+
+**Estimated Time:** 30-45 minutes (can be completed in multiple sessions)
+
+---
+
+## Element 2: Learning Outcomes Widget
+
+### ⚙ Interactive Widget: Module 4 Learning Outcomes
+
+This module provides hands-on practice for the following learning outcomes:
+
+**Embed:**
+```html
+<iframe
+  src="https://jkruckivey.github.io/business-of-sports-marketing/modules/week2/widgets/learning-outcomes-module-4.html"
+  width="100%"
+  height="400"
+  style="border: none; border-radius: 8px;"
+  title="Module 4 Learning Outcomes - Interactive Activity"
+  aria-label="Learning outcomes widget showing which Week 2 outcomes are practiced in Module 4"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Module 4 Practices:**
+- **MLO 2.1:** Explore media rights valuation through simulated rights acquisition decisions
+- **MLO 2.2:** Compare linear broadcasting vs. streaming economics through hands-on platform building
+- **MLO 2.3:** Assess fan engagement monetization through retention strategy decisions
+
+---
+
+## Element 3: Activity Instructions
 
 ### Infobox Content:
 ```
@@ -34,10 +80,85 @@ Instructions:
 4. Achieve profitability within 5 years while managing churn
 
 Time: 30-45 minutes | Can be completed in multiple sessions
-Part of Week 2 Executive Session (40 min block)
 ```
 
-### iFrame Specifications:
+---
+
+## Element 4: Streaming Wars Strategy Widget
+
+### Student-Facing Text Content:
+**Copy this markdown directly into Uplimit BEFORE the widget:**
+
+```markdown
+# Interactive Simulation: Streaming Wars Strategy
+
+You've learned the frameworks for valuing media rights and comparing linear vs. streaming economics (Module 3). Now you'll **experience these trade-offs** firsthand by building and managing a Canadian sports streaming platform from scratch.
+
+## Your Challenge
+
+As VP of Content Strategy, you'll make the same high-stakes decisions that Rogers, DAZN, and TSN executives face:
+
+1. **Acquire Sports Rights** - Which leagues and teams should you bid on? Hockey is expensive but popular. Soccer has growth potential but lower current demand. Emerging sports are cheap but risky.
+
+2. **Set Pricing Strategy** - Price too high ($29.99/month) and subscribers won't sign up. Price too low ($9.99/month) and you'll never cover content costs. What's the sweet spot?
+
+3. **Manage Growth vs. Profitability** - Do you invest heavily in content to attract subscribers (lose money short-term) or grow slowly with cheaper content (miss market window)?
+
+4. **Respond to Market Events** - Competitors will launch. Recessions will hit. Star players will get traded. How will you adapt?
+
+## What You'll Practice
+
+- **MLO 2.2:** Compare linear broadcasting economics to streaming/DTC models through real-time financial feedback
+- **MLO 2.1:** Make media rights valuation decisions under budget constraints
+- **MLO 2.3:** Balance fan engagement monetization with content investment
+
+## Strategic Considerations
+
+Before you start, consider these insights from Module 3:
+
+- **Content Costs are Fixed:** Once you acquire rights, you pay regardless of subscribers. This creates massive downside risk if growth disappoints.
+- **Subscriber Acquisition Takes Time:** Rogers projected 1M subscribers by Year 5. They achieved 300K. Growth is slower than executives predict.
+- **Churn is Brutal:** If 10% of subscribers cancel each month (industry average), you need constant new sign-ups just to maintain your base.
+- **Break-Even Takes 3-5 Years:** Streaming platforms lose money initially. Can you (and your board) handle years of red ink?
+
+**Key Strategic Principle:** The economics that work for Netflix (mass-market content, global scale) don't automatically work for sports streaming (expensive niche content, regional restrictions).
+
+## How the Simulation Works
+
+**Phase 1: Rights Acquisition (Year 1)**
+- You have a $50M annual budget for rights
+- Choose from: NHL ($40M), NBA ($25M), MLS ($15M), CPL ($5M)
+- Each property delivers different subscriber appeal and retention
+
+**Phase 2: Pricing & Launch**
+- Set monthly subscription price ($9.99 - $29.99)
+- Launch to market and watch subscribers sign up (or not)
+- Monitor churn rate and monthly recurring revenue (MRR)
+
+**Phase 3: Quarterly Decisions (Years 2-5)**
+- **Renewal decisions:** Rights expire annually - renew or walk away?
+- **Pricing adjustments:** Lower price to grow faster or raise price to improve margins?
+- **Engagement investments:** Spend $5M on features (mobile app, 4K, DVR) to reduce churn?
+- **Market events:** Respond to competitor launches, recessions, playoff runs
+
+**Phase 4: Results Dashboard**
+- See your 5-year profitability curve
+- Compare your strategy to Rogers, DAZN, and TSN benchmarks
+- Export your results to reference in Module 5 case analysis
+
+## After the Simulation
+
+Once you complete the simulation, you'll:
+1. Reflect on strategic questions (Element 5)
+2. Share your strategy in Discussion Forum #2
+3. Use your insights to analyze Rogers' real $5.2B NHL deal (Module 5)
+
+**Ready?** Launch the Streaming Wars Strategy simulation below and start building your platform. Remember: there's no single "correct" strategy - your goal is to make defensible choices and learn from the outcomes.
+```
+
+---
+
+### iFrame Specifications (For LMS Builder):
 
 **Widget Purpose:** Simulate streaming platform strategy decisions to understand trade-offs between content costs, pricing, and subscriber growth.
 
@@ -85,6 +206,10 @@ Part of Week 2 Executive Session (40 min block)
 - ✅ Color-blind safe visualization (blue, orange, gray palette)
 - ✅ Focus indicators on all interactive elements
 
+---
+
+## Element 5: Reflection Prompt
+
 ### Text Content (Reflection Prompt):
 ```
 After completing the Streaming Wars Strategy simulation:
@@ -100,11 +225,19 @@ essentially made these same strategic decisions—but with $5.2 billion at stake
 Consider: Would you have made the Rogers deal using the insights from this simulation?
 ```
 
+---
+
+## Element 6: AI Chat Widget - Platform Strategy Assistant
+
 ### AI Chat Widget Configuration:
 - **Widget Name:** "Platform Strategy Assistant"
 - **System Prompt:** "You are a helpful strategy advisor for MBA students learning about streaming platform economics. Provide guidance for the Streaming Wars Strategy simulation. Don't give direct answers, but ask Socratic questions to help students think through their platform strategy decisions. Focus on: content portfolio diversification, subscriber lifetime value, churn management, pricing psychology, and rights cost vs. subscriber growth trade-offs."
 - **Welcome Message:** "Working through your platform strategy? I can help you think through your rights acquisition and pricing decisions. What aspect of your strategy are you considering?"
 - **Show System Prompt:** No
+
+---
+
+## Element 7: Strategic Considerations (Hints)
 
 ### Details Content:
 ```
@@ -156,6 +289,8 @@ What is your differentiation? Why do subscribers choose YOU over competitors?
 
 ---
 
+## Element 8: Discussion Prompt - Share Your Strategy
+
 ## 💬 DISCUSSION PROMPT #2: Share Your Streaming Wars Strategy
 
 **Post to Discussion Forum** (⬤ Required - 5 points)
@@ -181,6 +316,8 @@ Comparing strategies reveals multiple paths to success and failure. You'll see h
 
 ---
 
+## Element 9: Mental Break - Prepare for Case Analysis
+
 ## 🌟 MENTAL BREAK #3: Prepare for Case Analysis
 
 **You've completed:** Framework learning + strategic simulation
@@ -196,6 +333,8 @@ Comparing strategies reveals multiple paths to success and failure. You'll see h
 *This is your most important break. The case study requires critical thinking and synthesis. Take 3-5 minutes to truly reset before diving into the Rogers deal.*
 
 ---
+
+## Element 10: Final Project Connection
 
 ## 🎯 FINAL PROJECT CONNECTION
 
@@ -220,3 +359,26 @@ When you craft your 5-year media strategy in Week 5, Module 4's simulation provi
 
 ---
 
+## Element 11: Module 4 Complete - Transition to Module 5
+
+**🎯 Module 4 Complete!** You've simulated the strategic decisions that media companies face when building streaming platforms. You experienced firsthand the tension between content costs, pricing, and subscriber growth—the same calculus that shaped Rogers' $5.2 billion NHL deal.
+
+**Key Insights from Your Simulation:**
+- Streaming profitability requires 3-5 year horizons (not immediate ROI like linear TV)
+- Content portfolio balance matters (anchor properties + niche content for retention)
+- Pricing psychology affects both acquisition and churn
+
+**Strategic Competency Achieved:**
+You can now evaluate real-world media rights deals through the lens of platform economics. When you read about Netflix paying $500M for WWE rights or Apple TV+ securing MLS for $250M/year, you understand the LTV calculations, subscriber acquisition costs, and profitability timelines driving those decisions.
+
+**Next: Module 5 - Rogers NHL Case Study (23-25 minutes)**
+
+Now you'll analyze Rogers Communications' actual $5.2B, 12-year NHL deal—the largest media rights agreement in Canadian history. Armed with Module 4's simulation experience, you'll critically evaluate their decisions using 4 interactive data widgets:
+
+- Was Rogers' exclusive NHL bet brilliant long-term thinking or strategic overreach?
+- How did changing consumer behavior (cord-cutting) impact their projections?
+- What would YOU have done differently with $5.2B at stake?
+
+The case has real financial data, competitive analysis tools, and viewership trend visualizers. This is where theory meets reality.
+
+---

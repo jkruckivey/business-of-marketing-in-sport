@@ -19,7 +19,7 @@
             --color-neutral-700: #404040;
             --color-neutral-800: #262626;
             --color-neutral-900: #171717;
-            --color-accent: #c5b783;
+            --color-accent: #171717;
             --color-success: #10b981;
             --color-warning: #f59e0b;
             --color-danger: #ef4444;
@@ -202,7 +202,7 @@
         }
 
         .stadium-visual {
-            background: linear-gradient(180deg, #f0f9ff 0%, white 100%);
+            background: linear-gradient(180deg, var(--color-neutral-50) 0%, white 100%);
             border: 2px solid var(--color-neutral-200);
             border-radius: 12px;
             padding: 2rem;
@@ -251,15 +251,15 @@
         }
 
         .suites {
-            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            background: linear-gradient(135deg, var(--color-neutral-700) 0%, var(--color-neutral-600) 100%);
         }
 
         .club {
-            background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+            background: linear-gradient(135deg, var(--color-neutral-600) 0%, var(--color-neutral-500) 100%);
         }
 
         .general {
-            background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 100%);
+            background: linear-gradient(135deg, var(--color-neutral-500) 0%, var(--color-neutral-400) 100%);
         }
 
         .results-section {
@@ -327,7 +327,7 @@
         }
 
         .insight-item::before {
-            content: '💡';
+            content: '';
             position: absolute;
             left: 0;
         }
@@ -369,6 +369,7 @@
             transition: all 0.3s;
             display: inline-block;
             margin-top: 1.5rem;
+            font-family: inherit;
         }
 
         .btn:hover {
@@ -399,20 +400,20 @@
 </head>
 <body>
     <div class="container">
-        <h1>🏟️ Stadium Revenue Optimizer</h1>
+        <h1>Stadium Revenue Optimizer</h1>
         <p class="subtitle">Design the optimal seating mix to maximize revenue while maintaining fan accessibility</p>
 
         <div class="content-grid">
             <!-- Controls Section -->
             <div class="card">
-                <h2>⚙️ Seating Configuration</h2>
+                <h2>Seating Configuration</h2>
 
                 <div class="seating-controls">
                     <!-- Luxury Suites -->
                     <div class="control-group">
                         <div class="control-header">
                             <label class="control-label" for="suites-slider">
-                                <span class="control-icon">👑</span>
+                                <span class="control-icon"></span>
                                 Luxury Suites
                             </label>
                             <span class="control-value" id="suites-pct">5%</span>
@@ -438,7 +439,7 @@
                     <div class="control-group">
                         <div class="control-header">
                             <label class="control-label" for="club-slider">
-                                <span class="control-icon">⭐</span>
+                                <span class="control-icon"></span>
                                 Club Seats
                             </label>
                             <span class="control-value" id="club-pct">15%</span>
@@ -464,7 +465,7 @@
                     <div class="control-group">
                         <div class="control-header">
                             <label class="control-label">
-                                <span class="control-icon">🎟️</span>
+                                <span class="control-icon"></span>
                                 General Admission
                             </label>
                             <span class="control-value" id="ga-pct">80%</span>
@@ -496,7 +497,7 @@
 
             <!-- Visual Section -->
             <div class="card">
-                <h2>📊 Stadium Visualization</h2>
+                <h2>Stadium Visualization</h2>
                 <div class="stadium-visual">
                     <div class="stadium-diagram" id="stadium-diagram">
                         <div class="seating-tier suites" id="visual-suites" title="Luxury Suites - Premium private boxes">
@@ -517,7 +518,7 @@
 
             <!-- Results Section -->
             <div class="card results-section">
-                <h2>💰 Revenue Analysis</h2>
+                <h2>Revenue Analysis</h2>
 
                 <div class="metrics-grid">
                     <div class="metric-card">
@@ -556,7 +557,7 @@
                     <tbody id="comparison-tbody"></tbody>
                 </table>
 
-                <button class="btn" onclick="exportAnalysis()" aria-label="Download revenue analysis">📄 Download Analysis</button>
+                <button class="btn" onclick="exportAnalysis()" aria-label="Download revenue analysis">Download Analysis</button>
             </div>
         </div>
     </div>
@@ -635,21 +636,21 @@
             const tbody = document.getElementById('comparison-tbody');
             tbody.innerHTML = `
                 <tr>
-                    <td>👑 Luxury Suites</td>
+                    <td>Luxury Suites</td>
                     <td>${suitesSeats.toLocaleString()}</td>
                     <td>$${PRICING.suites.toLocaleString()}/season</td>
                     <td>$${(suitesRevenue / 1000000).toFixed(2)}M</td>
                     <td>${((suitesRevenue / totalRevenue) * 100).toFixed(1)}%</td>
                 </tr>
                 <tr>
-                    <td>⭐ Club Seats</td>
+                    <td>Club Seats</td>
                     <td>${clubSeats.toLocaleString()}</td>
                     <td>$${PRICING.club.toLocaleString()}/season</td>
                     <td>$${(clubRevenue / 1000000).toFixed(2)}M</td>
                     <td>${((clubRevenue / totalRevenue) * 100).toFixed(1)}%</td>
                 </tr>
                 <tr>
-                    <td>🎟️ General Admission</td>
+                    <td>General Admission</td>
                     <td>${gaSeats.toLocaleString()}</td>
                     <td>$${PRICING.ga}/game × ${GAMES_PER_SEASON} games</td>
                     <td>$${(gaRevenue / 1000000).toFixed(2)}M</td>
@@ -687,7 +688,7 @@
             if (accessibilityScore > 75) {
                 insights.push('High accessibility score ensures broad fan access. Great for fan loyalty and community support.');
             } else if (accessibilityScore < 60) {
-                insights.push('⚠️ Low accessibility score may limit fan access and reduce community support. Consider balancing revenue with accessibility.');
+                insights.push('Low accessibility score may limit fan access and reduce community support. Consider balancing revenue with accessibility.');
             }
 
             // Comparison insights
@@ -763,7 +764,7 @@ STRATEGIC INSIGHTS
 
             const insights = document.querySelectorAll('#insights-list .insight-item');
             insights.forEach((item, i) => {
-                content += `${i + 1}. ${item.textContent.replace('💡 ', '')}\n`;
+                content += `${i + 1}. ${item.textContent}\n`;
             });
 
             content += `\n\nGenerated: ${new Date().toLocaleString()}

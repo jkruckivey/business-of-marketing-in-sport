@@ -285,7 +285,7 @@
 
         .net-result {
             background: linear-gradient(135deg, rgba(197, 183, 131, 0.15) 0%, rgba(197, 183, 131, 0.05) 100%);
-            border: 3px solid #c5b783;
+            border: 3px solid var(--color-neutral-800);
             border-radius: 12px;
             padding: 32px;
             text-align: center;
@@ -375,6 +375,7 @@
             border-radius: 8px;
             font-size: 16px;
             font-weight: 600;
+            font-family: inherit;
             cursor: pointer;
             transition: all 0.2s;
             border: none;
@@ -448,7 +449,7 @@
             <div class="scenario-card" tabindex="0" role="button" aria-pressed="false"
                  onclick="loadScenario('arena')" onkeypress="handleKeyPress(event, 'arena')"
                  aria-label="New arena construction scenario">
-                <div class="scenario-icon">🏟️</div>
+                <div class="scenario-icon">️</div>
                 <div class="scenario-title">Build New Arena</div>
                 <div class="scenario-desc">State-of-the-art facility drives premium seating and corporate partnerships</div>
                 <div class="scenario-cost">Cost: $50M/year (amortized)</div>
@@ -457,7 +458,7 @@
             <div class="scenario-card" tabindex="0" role="button" aria-pressed="false"
                  onclick="loadScenario('betting')" onkeypress="handleKeyPress(event, 'betting')"
                  aria-label="Betting platform partnership scenario">
-                <div class="scenario-icon">🎲</div>
+                <div class="scenario-icon"></div>
                 <div class="scenario-title">Launch Betting Platform</div>
                 <div class="scenario-desc">Exclusive partnership with sports betting operator creates new revenue stream</div>
                 <div class="scenario-cost">Cost: $8M/year (partnership)</div>
@@ -466,7 +467,7 @@
             <div class="scenario-card" tabindex="0" role="button" aria-pressed="false"
                  onclick="loadScenario('streaming')" onkeypress="handleKeyPress(event, 'streaming')"
                  aria-label="Streaming service launch scenario">
-                <div class="scenario-icon">📺</div>
+                <div class="scenario-icon"></div>
                 <div class="scenario-title">Launch Streaming Service</div>
                 <div class="scenario-desc">Direct-to-consumer platform captures digital audience and global reach</div>
                 <div class="scenario-cost">Cost: $15M/year (platform)</div>
@@ -481,15 +482,15 @@
 
         <div class="cascade-container">
             <div class="cascade-section">
-                <div class="cascade-header direct" tabindex="0" role="button" aria-expanded="false"
+                <div class="cascade-header direct active" tabindex="0" role="button" aria-expanded="true"
                      onclick="toggleCascade('direct')" onkeypress="handleKeyPress(event, 'direct')">
                     <div class="cascade-title direct">
-                        <span>📊</span>
+                        <span></span>
                         <span>Direct Effects</span>
                     </div>
                     <div class="cascade-total" id="directTotal">Click to reveal</div>
                 </div>
-                <div class="cascade-content" id="directContent">
+                <div class="cascade-content expanded" id="directContent">
                     <div class="cascade-items" id="directItems">
                         <!-- Dynamic content -->
                     </div>
@@ -497,15 +498,15 @@
             </div>
 
             <div class="cascade-section">
-                <div class="cascade-header indirect" tabindex="0" role="button" aria-expanded="false"
+                <div class="cascade-header indirect active" tabindex="0" role="button" aria-expanded="true"
                      onclick="toggleCascade('indirect')" onkeypress="handleKeyPress(event, 'indirect')">
                     <div class="cascade-title indirect">
-                        <span>🌊</span>
+                        <span></span>
                         <span>Indirect Effects</span>
                     </div>
                     <div class="cascade-total" id="indirectTotal">Click to reveal</div>
                 </div>
-                <div class="cascade-content" id="indirectContent">
+                <div class="cascade-content expanded" id="indirectContent">
                     <div class="cascade-items" id="indirectItems">
                         <!-- Dynamic content -->
                     </div>
@@ -523,7 +524,7 @@
         </div>
 
         <div class="insights" id="insightsSection" style="display: none;">
-            <h3>💡 Key Insights</h3>
+            <h3> Key Insights</h3>
             <div id="insightsList">
                 <!-- Dynamic insights -->
             </div>
@@ -533,8 +534,8 @@
             <button class="btn btn-secondary" onclick="resetCascade()" aria-label="Reset cascade and hide all effects">
                 Reset Cascade
             </button>
-            <button class="btn btn-primary" onclick="exportScenario()" aria-label="Export scenario data as JSON">
-                Export Scenario
+            <button class="btn btn-primary" onclick="exportScenario()" aria-label="Export scenario data as CSV">
+                Export Data (CSV)
             </button>
         </div>
     </div>
@@ -546,16 +547,16 @@
                 cost: 12.5,
                 costDesc: "Salary cost for superstar player",
                 direct: [
-                    { icon: "🎫", label: "Increased ticket sales", value: 5.0, desc: "Attendance boost 15-20%, premium pricing" },
-                    { icon: "👕", label: "Merchandise spike", value: 3.0, desc: "Jersey sales, fan gear demand" },
-                    { icon: "📱", label: "Digital engagement", value: 1.5, desc: "Social media, app downloads, highlights" }
+                    { icon: "", label: "Increased ticket sales", value: 5.0, desc: "Attendance boost 15-20%, premium pricing" },
+                    { icon: "", label: "Merchandise spike", value: 3.0, desc: "Jersey sales, fan gear demand" },
+                    { icon: "", label: "Digital engagement", value: 1.5, desc: "Social media, app downloads, highlights" }
                 ],
                 indirect: [
-                    { icon: "📺", label: "Media rights value increase", value: 10.0, desc: "Playoff appearances, national TV games" },
-                    { icon: "🤝", label: "Sponsorship renewals", value: 5.0, desc: "Premium pricing, new category partners" },
-                    { icon: "🏆", label: "Playoff revenue", value: 15.0, desc: "Additional home games, premium pricing" },
-                    { icon: "🎲", label: "Betting engagement", value: 2.0, desc: "Increased wagers on star-driven games" },
-                    { icon: "🌍", label: "International expansion", value: 3.5, desc: "Global jersey sales, exhibition games" }
+                    { icon: "", label: "Media rights value increase", value: 10.0, desc: "Playoff appearances, national TV games" },
+                    { icon: "", label: "Sponsorship renewals", value: 5.0, desc: "Premium pricing, new category partners" },
+                    { icon: "", label: "Playoff revenue", value: 15.0, desc: "Additional home games, premium pricing" },
+                    { icon: "", label: "Betting engagement", value: 2.0, desc: "Increased wagers on star-driven games" },
+                    { icon: "", label: "International expansion", value: 3.5, desc: "Global jersey sales, exhibition games" }
                 ],
                 insights: [
                     {
@@ -577,16 +578,16 @@
                 cost: 50.0,
                 costDesc: "Annual amortized construction cost",
                 direct: [
-                    { icon: "💎", label: "Premium seating revenue", value: 25.0, desc: "Luxury suites, club seats (40-50% of revenue)" },
-                    { icon: "🍔", label: "Concession upgrades", value: 8.0, desc: "Premium F&B, experiential dining" },
-                    { icon: "🎪", label: "Non-game events", value: 12.0, desc: "Concerts, corporate events (100+ dates/year)" }
+                    { icon: "", label: "Premium seating revenue", value: 25.0, desc: "Luxury suites, club seats (40-50% of revenue)" },
+                    { icon: "", label: "Concession upgrades", value: 8.0, desc: "Premium F&B, experiential dining" },
+                    { icon: "", label: "Non-game events", value: 12.0, desc: "Concerts, corporate events (100+ dates/year)" }
                 ],
                 indirect: [
-                    { icon: "🏢", label: "Naming rights deal", value: 20.0, desc: "20-year partnership ($400M total)" },
-                    { icon: "🤝", label: "Sponsorship inventory", value: 15.0, desc: "New signage, activation spaces" },
-                    { icon: "📺", label: "Media production value", value: 5.0, desc: "Better broadcast aesthetics, tech" },
-                    { icon: "🏙️", label: "Real estate development", value: 30.0, desc: "Adjacent mixed-use development revenue" },
-                    { icon: "🎟️", label: "Season ticket waitlist", value: 10.0, desc: "Increased demand, PSL revenue" }
+                    { icon: "", label: "Naming rights deal", value: 20.0, desc: "20-year partnership ($400M total)" },
+                    { icon: "", label: "Sponsorship inventory", value: 15.0, desc: "New signage, activation spaces" },
+                    { icon: "", label: "Media production value", value: 5.0, desc: "Better broadcast aesthetics, tech" },
+                    { icon: "️", label: "Real estate development", value: 30.0, desc: "Adjacent mixed-use development revenue" },
+                    { icon: "️", label: "Season ticket waitlist", value: 10.0, desc: "Increased demand, PSL revenue" }
                 ],
                 insights: [
                     {
@@ -608,16 +609,16 @@
                 cost: 8.0,
                 costDesc: "Partnership investment and platform costs",
                 direct: [
-                    { icon: "💰", label: "Partnership fees", value: 5.0, desc: "Annual guaranteed minimum" },
-                    { icon: "📊", label: "Data licensing", value: 2.5, desc: "Real-time stats, official feeds" },
-                    { icon: "📱", label: "In-app advertising", value: 1.5, desc: "Platform promotion during broadcasts" }
+                    { icon: "", label: "Partnership fees", value: 5.0, desc: "Annual guaranteed minimum" },
+                    { icon: "", label: "Data licensing", value: 2.5, desc: "Real-time stats, official feeds" },
+                    { icon: "", label: "In-app advertising", value: 1.5, desc: "Platform promotion during broadcasts" }
                 ],
                 indirect: [
-                    { icon: "📺", label: "Media rights boost", value: 8.0, desc: "Live betting drives viewership retention" },
-                    { icon: "🎟️", label: "Attendance increase", value: 3.0, desc: "In-stadium betting terminals" },
-                    { icon: "🤝", label: "Cross-promotion value", value: 4.0, desc: "Joint marketing, fan engagement" },
-                    { icon: "👥", label: "Younger demographic", value: 2.0, desc: "18-34 audience growth" },
-                    { icon: "📈", label: "Sponsorship category", value: 5.0, desc: "New betting sponsor tier" }
+                    { icon: "", label: "Media rights boost", value: 8.0, desc: "Live betting drives viewership retention" },
+                    { icon: "️", label: "Attendance increase", value: 3.0, desc: "In-stadium betting terminals" },
+                    { icon: "", label: "Cross-promotion value", value: 4.0, desc: "Joint marketing, fan engagement" },
+                    { icon: "", label: "Younger demographic", value: 2.0, desc: "18-34 audience growth" },
+                    { icon: "", label: "Sponsorship category", value: 5.0, desc: "New betting sponsor tier" }
                 ],
                 insights: [
                     {
@@ -639,16 +640,16 @@
                 cost: 15.0,
                 costDesc: "Platform development and content production",
                 direct: [
-                    { icon: "💳", label: "Subscription revenue", value: 12.0, desc: "DTC subscribers ($10-15/month)" },
-                    { icon: "📹", label: "Exclusive content", value: 4.0, desc: "Behind-the-scenes, documentaries" },
-                    { icon: "🌍", label: "International subscribers", value: 6.0, desc: "Global reach beyond broadcast" }
+                    { icon: "", label: "Subscription revenue", value: 12.0, desc: "DTC subscribers ($10-15/month)" },
+                    { icon: "", label: "Exclusive content", value: 4.0, desc: "Behind-the-scenes, documentaries" },
+                    { icon: "", label: "International subscribers", value: 6.0, desc: "Global reach beyond broadcast" }
                 ],
                 indirect: [
-                    { icon: "📊", label: "First-party data", value: 8.0, desc: "Fan insights, targeted advertising" },
-                    { icon: "🤝", label: "Sponsorship integration", value: 6.0, desc: "Digital activation, branded content" },
-                    { icon: "👥", label: "Fan engagement metrics", value: 3.0, desc: "Personalization, retention insights" },
-                    { icon: "🎟️", label: "Ticket conversion", value: 4.0, desc: "Streaming-to-attendance funnel" },
-                    { icon: "📺", label: "Media negotiation leverage", value: 10.0, desc: "Alternative distribution threat" }
+                    { icon: "", label: "First-party data", value: 8.0, desc: "Fan insights, targeted advertising" },
+                    { icon: "", label: "Sponsorship integration", value: 6.0, desc: "Digital activation, branded content" },
+                    { icon: "", label: "Fan engagement metrics", value: 3.0, desc: "Personalization, retention insights" },
+                    { icon: "️", label: "Ticket conversion", value: 4.0, desc: "Streaming-to-attendance funnel" },
+                    { icon: "", label: "Media negotiation leverage", value: 10.0, desc: "Alternative distribution threat" }
                 ],
                 insights: [
                     {
@@ -806,26 +807,51 @@
             const indirectTotal = scenario.indirect.reduce((sum, item) => sum + item.value, 0);
             const totalRevenue = directTotal + indirectTotal;
             const netGain = totalRevenue - scenario.cost;
+            const roi = Math.round((netGain / scenario.cost) * 100);
 
-            const data = {
-                scenario: scenario.name,
-                investment: `$${scenario.cost}M`,
-                directEffects: scenario.direct,
-                directTotal: `$${directTotal}M`,
-                indirectEffects: scenario.indirect,
-                indirectTotal: `$${indirectTotal}M`,
-                totalRevenue: `$${totalRevenue}M`,
-                netGain: `$${netGain.toFixed(1)}M`,
-                roi: `${Math.round((netGain / scenario.cost) * 100)}%`,
-                insights: scenario.insights,
-                timestamp: new Date().toISOString()
-            };
+            // Prepare CSV data
+            const csvRows = [];
 
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            // Header row
+            csvRows.push('Category,Type,Item,Value,Description');
+
+            // Scenario overview
+            csvRows.push(`Overview,Scenario,${scenario.name},,,`);
+            csvRows.push(`Overview,Investment,,$${scenario.cost}M,${scenario.costDesc}`);
+
+            // Direct effects
+            scenario.direct.forEach(effect => {
+                csvRows.push(`Direct Effects,Revenue,${effect.label},$${effect.value}M,"${effect.desc}"`);
+            });
+            csvRows.push(`Direct Effects,Total,,$${directTotal}M,`);
+
+            // Indirect effects
+            scenario.indirect.forEach(effect => {
+                csvRows.push(`Indirect Effects,Revenue,${effect.label},$${effect.value}M,"${effect.desc}"`);
+            });
+            csvRows.push(`Indirect Effects,Total,,$${indirectTotal}M,`);
+
+            // Summary
+            csvRows.push(`Summary,Total Revenue,,$${totalRevenue}M,`);
+            csvRows.push(`Summary,Net Gain,,$${netGain.toFixed(1)}M,`);
+            csvRows.push(`Summary,ROI,,${roi}%,`);
+
+            // Insights
+            scenario.insights.forEach((insight, idx) => {
+                csvRows.push(`Insights,Insight ${idx + 1},${insight.title},,"${insight.text}"`);
+            });
+
+            // Metadata
+            csvRows.push(`Metadata,Timestamp,,${new Date().toISOString()},`);
+
+            // Join rows with newlines
+            const csvContent = csvRows.join('\n');
+
+            const blob = new Blob([csvContent], { type: 'text/csv' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = `ecosystem-cascade-${currentScenario}-${Date.now()}.json`;
+            a.download = `ecosystem-cascade-${currentScenario}-${Date.now()}.csv`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
@@ -843,9 +869,54 @@
             }
         }
 
-        // Initialize with McDavid scenario
+        // Initialize with McDavid scenario and expand both sections
         window.addEventListener('load', () => {
-            // Already set as default
+            const scenario = scenarios[currentScenario];
+
+            // Expand direct effects
+            const directItems = document.getElementById('directItems');
+            const directTotal = document.getElementById('directTotal');
+            const directEffects = scenario.direct;
+            const directTotalValue = directEffects.reduce((sum, item) => sum + item.value, 0);
+
+            directItems.innerHTML = directEffects.map(effect => `
+                <div class="cascade-item">
+                    <div class="cascade-item-label">
+                        <span class="cascade-item-icon" aria-hidden="true">${effect.icon}</span>
+                        <div>
+                            <div class="cascade-item-text">${effect.label}</div>
+                            <div style="font-size: 12px; color: var(--color-neutral-500); margin-top: 4px;">${effect.desc}</div>
+                        </div>
+                    </div>
+                    <div class="cascade-item-value positive">+$${effect.value}M</div>
+                </div>
+            `).join('');
+            directTotal.textContent = `+$${directTotalValue}M`;
+            directRevealed = true;
+
+            // Expand indirect effects
+            const indirectItems = document.getElementById('indirectItems');
+            const indirectTotal = document.getElementById('indirectTotal');
+            const indirectEffects = scenario.indirect;
+            const indirectTotalValue = indirectEffects.reduce((sum, item) => sum + item.value, 0);
+
+            indirectItems.innerHTML = indirectEffects.map(effect => `
+                <div class="cascade-item">
+                    <div class="cascade-item-label">
+                        <span class="cascade-item-icon" aria-hidden="true">${effect.icon}</span>
+                        <div>
+                            <div class="cascade-item-text">${effect.label}</div>
+                            <div style="font-size: 12px; color: var(--color-neutral-500); margin-top: 4px;">${effect.desc}</div>
+                        </div>
+                    </div>
+                    <div class="cascade-item-value positive">+$${effect.value}M</div>
+                </div>
+            `).join('');
+            indirectTotal.textContent = `+$${indirectTotalValue}M`;
+            indirectRevealed = true;
+
+            // Show net result
+            showNetResult();
         });
     </script>
 </body>

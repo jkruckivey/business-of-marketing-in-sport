@@ -19,7 +19,7 @@
             --color-neutral-700: #404040;
             --color-neutral-800: #262626;
             --color-neutral-900: #171717;
-            --color-accent: #c5b783;
+            --color-accent: #171717;
             --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
 
@@ -93,7 +93,7 @@
         }
 
         .scenario-description {
-            background: #fef3c7;
+            background: var(--color-neutral-100);
             border-left: 4px solid #fbbf24;
             padding: 1.5rem;
             margin-bottom: 2rem;
@@ -239,6 +239,7 @@
             transition: all 0.3s;
             display: block;
             margin: 2rem auto 0;
+            font-family: inherit;
         }
 
         .btn:hover {
@@ -360,7 +361,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>📺 Streaming Wars Decision Game</h1>
+        <h1>Streaming Wars Decision Game</h1>
         <p class="subtitle">Navigate the evolving media rights landscape through strategic decisions</p>
 
         <div class="progress-tracker" id="progress-tracker"></div>
@@ -372,7 +373,7 @@
         const scenarios = [
             {
                 id: 1,
-                icon: '📱',
+                icon: '',
                 title: 'The Streaming Offer',
                 label: 'Scenario 1 of 3',
                 description: 'You are the media rights director for a mid-market professional league. Your current 5-year broadcast deal with a traditional network generates $10M/year and expires in 2 years. A major streaming platform approaches you with an early buyout offer: $18M/year for 7 years, exclusive digital rights.',
@@ -397,7 +398,7 @@
                             risk: 'High'
                         },
                         outcome: {
-                            icon: '🚀',
+                            icon: '',
                             title: 'Revenue Surge, But Audience Challenges',
                             description: 'The streaming deal delivers $18M/year, an 80% revenue increase. However, older fans struggle to access games on the streaming platform. Season 1 viewership drops 35% as traditional fans cancel subscriptions. Sponsors express concern about the narrower demographic reach.',
                             insights: [
@@ -419,7 +420,7 @@
                             risk: 'Low'
                         },
                         outcome: {
-                            icon: '🛡️',
+                            icon: '',
                             title: 'Stability Over Growth',
                             description: 'You renew at $12M/year, a modest 20% increase. Viewership remains stable, sponsors are satisfied with continued broad reach. However, 2 years later, you watch a rival league sign a $25M/year streaming deal. Your board questions whether you left money on the table.',
                             insights: [
@@ -441,7 +442,7 @@
                             risk: 'Medium'
                         },
                         outcome: {
-                            icon: '🎯',
+                            icon: '',
                             title: 'Best of Both Worlds',
                             description: 'The hybrid deal generates $18M/year total while maintaining broad reach. Older fans watch on traditional broadcast, younger fans stream. Total viewership increases 15% within 2 years. Sponsors love the expanded demographic coverage. This becomes the industry standard within 3 years.',
                             insights: [
@@ -456,7 +457,7 @@
             },
             {
                 id: 2,
-                icon: '🌍',
+                icon: '',
                 title: 'International Expansion',
                 label: 'Scenario 2 of 3',
                 description: 'Your hybrid media strategy is performing well. A European streaming service offers $5M/year for exclusive international rights to stream games in 40 countries. Currently, international viewership is minimal (50K viewers globally), but the service promises promotion and localization.',
@@ -481,7 +482,7 @@
                             risk: 'Medium'
                         },
                         outcome: {
-                            icon: '🌏',
+                            icon: '',
                             title: 'Global Reach Unlocked',
                             description: 'International viewership grows from 50K to 400K within 18 months. Three European sponsors join ($2M combined). Merchandise sales in Europe increase 300%. The league develops a small but passionate international fanbase. Time zones remain challenging, but VOD viewing thrives.',
                             insights: [
@@ -503,7 +504,7 @@
                             risk: 'Low'
                         },
                         outcome: {
-                            icon: '🎯',
+                            icon: '',
                             title: 'Domestic Dominance',
                             description: 'Focusing on North America, you negotiate improved terms with domestic partners. Viewership increases 10% domestically. However, 3 years later, international rights for comparable leagues are selling for $15M/year. Your board regrets not establishing an international presence earlier.',
                             insights: [
@@ -525,7 +526,7 @@
                             risk: 'Low'
                         },
                         outcome: {
-                            icon: '🤝',
+                            icon: '',
                             title: 'Aligned Incentives',
                             description: 'The co-production deal starts at $3M/year but performance-based revenue sharing drives year-over-year increases. By Year 3, you\'re earning $7M/year internationally. Both parties invest in growth, creating a true partnership. This becomes your template for expansion into Asia.',
                             insights: [
@@ -540,7 +541,7 @@
             },
             {
                 id: 3,
-                icon: '🎮',
+                icon: '',
                 title: 'Emerging Platform Decision',
                 label: 'Scenario 3 of 3',
                 description: 'Your league now has robust domestic (hybrid) and international (streaming) deals generating $23M/year combined. A gaming platform approaches you to stream games within their platform, targeting esports fans. They offer $2M/year, plus integration with your league\'s fantasy game.',
@@ -565,7 +566,7 @@
                             risk: 'Medium'
                         },
                         outcome: {
-                            icon: '🎯',
+                            icon: '',
                             title: 'Demographic Breakthrough',
                             description: 'The gaming platform drives 600K new viewers (ages 18-24) within 12 months. In-stream betting increases engagement 40%. Fantasy integration boosts participation 25%. Your traditional broadcast partner initially protests but negotiates to adopt similar features. You\'ve found the next generation of fans.',
                             insights: [
@@ -587,7 +588,7 @@
                             risk: 'Low'
                         },
                         outcome: {
-                            icon: '⚠️',
+                            icon: '',
                             title: 'Opportunity Cost',
                             description: 'You maintain positive relationships with existing partners. However, 2 years later, a rival league launches on the gaming platform and captures 1M+ viewers aged 18-24. Your league\'s average viewer age increases to 48. Sponsors begin shifting budgets to the rival league to reach younger consumers.',
                             insights: [
@@ -609,7 +610,7 @@
                             risk: 'Very Low'
                         },
                         outcome: {
-                            icon: '🧪',
+                            icon: '',
                             title: 'Smart Testing Approach',
                             description: 'The pilot generates 150K viewers and proves interactive features drive engagement. After 1 season, you renegotiate to $3M/year for full access. The pilot data gave you leverage. Existing partners see the value and don\'t object. You captured the upside while minimizing risk.',
                             insights: [
@@ -774,7 +775,7 @@
                 <div class="result-body">
                     <p>${option.outcome.description}</p>
                     <div class="insights">
-                        <h4>💡 Strategic Insights</h4>
+                        <h4>Strategic Insights</h4>
                         <ul>
                             ${option.outcome.insights.map(i => `<li>${i}</li>`).join('')}
                         </ul>

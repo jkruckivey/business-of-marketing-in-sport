@@ -73,7 +73,7 @@
             color: var(--color-neutral-700);
             border: 1px solid var(--color-neutral-300);
             border-radius: 6px;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             cursor: pointer;
@@ -318,7 +318,7 @@
 
         .btn {
             padding: 0.625rem 1.25rem;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             border-radius: 6px;
@@ -477,11 +477,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('economics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('economics');}" tabindex="0" role="button" aria-expanded="false" aria-controls="economics-content">
+            <div class="section-header" onclick="toggleSection('economics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('economics');}" tabindex="0" role="button" aria-expanded="true" aria-controls="economics-content">
                 <h2>Market Economics</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="economics-content">
+            <div class="section-content expanded" id="economics-content">
                 <div class="section-inner results" role="region" aria-label="Market simulation results">
 
             <div class="metric-grid">
@@ -527,11 +527,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('analysis')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('analysis');}" tabindex="0" role="button" aria-expanded="false" aria-controls="analysis-content">
+            <div class="section-header" onclick="toggleSection('analysis')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('analysis');}" tabindex="0" role="button" aria-expanded="true" aria-controls="analysis-content">
                 <h2>Market Analysis</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="analysis-content">
+            <div class="section-content expanded" id="analysis-content">
                 <div class="section-inner">
                     <div class="insight-box" role="complementary" aria-label="Market insights">
                         <h3>Market Analysis</h3>
@@ -676,16 +676,16 @@
                         label: 'Revenue Flow ($)',
                         data: [handle, ggr, operatorNet, stateTax],
                         backgroundColor: [
-                            'rgba(64, 64, 64, 0.8)',
-                            'rgba(115, 115, 115, 0.8)',
-                            'rgba(163, 163, 163, 0.8)',
-                            'rgba(212, 212, 212, 0.8)'
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-300') + 'cc'
                         ],
                         borderColor: [
-                            'rgb(64, 64, 64)',
-                            'rgb(115, 115, 115)',
-                            'rgb(163, 163, 163)',
-                            'rgb(212, 212, 212)'
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700'),
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500'),
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400'),
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-300')
                         ],
                         borderWidth: 1
                     }]
@@ -706,7 +706,7 @@
                                 size: 14,
                                 weight: '600'
                             },
-                            color: '#171717'
+                            color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-900')
                         }
                     },
                     scales: {
@@ -725,10 +725,10 @@
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#737373'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500')
                             },
                             grid: {
-                                color: '#e5e5e5'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-200')
                             }
                         },
                         y: {
@@ -737,7 +737,7 @@
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#737373'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500')
                             },
                             grid: {
                                 display: false

@@ -73,7 +73,7 @@
             color: var(--color-neutral-700);
             border: 1px solid var(--color-neutral-300);
             border-radius: 6px;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             cursor: pointer;
@@ -365,7 +365,7 @@
 
         .btn {
             padding: 0.625rem 1.25rem;
-            font-family: 'Geist', sans-serif;
+            font-family: inherit;
             font-size: 0.875rem;
             font-weight: 500;
             border-radius: 6px;
@@ -520,11 +520,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('funnel')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('funnel');}" tabindex="0" role="button" aria-expanded="false" aria-controls="funnel-content">
+            <div class="section-header" onclick="toggleSection('funnel')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('funnel');}" tabindex="0" role="button" aria-expanded="true" aria-controls="funnel-content">
                 <h2>Attribution Funnel</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="funnel-content">
+            <div class="section-content expanded" id="funnel-content">
                 <div class="section-inner">
                     <div class="funnel-chart">
                         <canvas id="funnelChart" role="img" aria-label="Attribution funnel visualization"></canvas>
@@ -546,11 +546,11 @@
         </div>
 
         <div class="section">
-            <div class="section-header" onclick="toggleSection('metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('metrics');}" tabindex="0" role="button" aria-expanded="false" aria-controls="metrics-content">
+            <div class="section-header" onclick="toggleSection('metrics')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('metrics');}" tabindex="0" role="button" aria-expanded="true" aria-controls="metrics-content">
                 <h2>ROI Metrics</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="metrics-content">
+            <div class="section-content expanded" id="metrics-content">
                 <div class="section-inner">
                     <div class="metric-grid">
                         <div class="metric">
@@ -581,8 +581,8 @@
         </div>
 
         <div class="actions">
-            <button class="btn btn-primary" onclick="exportData()" aria-label="Export ROI model as JSON">
-                Export ROI Model
+            <button class="btn btn-primary" onclick="exportData()" aria-label="Export ROI model as CSV">
+                Export Data (CSV)
             </button>
             <button class="btn btn-secondary" onclick="resetCalculator()" aria-label="Reset calculator to default values">
                 Reset Calculator
@@ -701,14 +701,14 @@
                         label: 'Volume',
                         data: [impressions, engaged, customers],
                         backgroundColor: [
-                            'rgba(64, 64, 64, 0.8)',
-                            'rgba(115, 115, 115, 0.8)',
-                            'rgba(163, 163, 163, 0.8)'
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500') + 'cc',
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400') + 'cc'
                         ],
                         borderColor: [
-                            'rgb(64, 64, 64)',
-                            'rgb(115, 115, 115)',
-                            'rgb(163, 163, 163)'
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700'),
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500'),
+                            getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400')
                         ],
                         borderWidth: 1
                     }]
@@ -729,7 +729,7 @@
                                 size: 14,
                                 weight: '600'
                             },
-                            color: '#171717'
+                            color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-900')
                         }
                     },
                     scales: {
@@ -748,10 +748,10 @@
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#737373'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500')
                             },
                             grid: {
-                                color: '#e5e5e5'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-200')
                             }
                         },
                         y: {
@@ -760,7 +760,7 @@
                                     family: 'Geist',
                                     size: 11
                                 },
-                                color: '#737373'
+                                color: getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-500')
                             },
                             grid: {
                                 display: false
@@ -807,30 +807,33 @@
             const conversionRate = parseFloat(document.getElementById('conversionRate').value);
             const avgPurchase = parseFloat(document.getElementById('avgPurchase').value);
 
-            const data = {
-                inputs: {
-                    investment: `$${investment}M`,
-                    impressions: `${impressions}M`,
-                    engagementRate: `${engagementRate}%`,
-                    conversionRate: `${conversionRate}%`,
-                    avgPurchaseValue: `$${avgPurchase}`
-                },
-                results: {
-                    directRevenue: document.getElementById('directRevenue').textContent,
-                    totalAttributedRevenue: document.getElementById('totalRevenue').textContent,
-                    roi: document.getElementById('roiValue').textContent,
-                    paybackPeriod: document.getElementById('paybackPeriod').textContent,
-                    grade: document.getElementById('gradeBadge').textContent.trim(),
-                    insight: document.getElementById('insightText').textContent
-                },
-                timestamp: new Date().toISOString()
-            };
+            // Build CSV content
+            const csvRows = [
+                ['Sponsorship ROI Calculator - Export'],
+                ['Timestamp', new Date().toISOString()],
+                [],
+                ['INPUTS'],
+                ['Investment', `$${investment}M`],
+                ['Impressions', `${impressions}M`],
+                ['Engagement Rate', `${engagementRate}%`],
+                ['Conversion Rate', `${conversionRate}%`],
+                ['Average Purchase Value', `$${avgPurchase}`],
+                [],
+                ['RESULTS'],
+                ['Direct Revenue', document.getElementById('directRevenue').textContent],
+                ['Total Attributed Revenue', document.getElementById('totalRevenue').textContent],
+                ['ROI', document.getElementById('roiValue').textContent],
+                ['Payback Period', document.getElementById('paybackPeriod').textContent],
+                ['Grade', document.getElementById('gradeBadge').textContent.trim()],
+                ['Insight', document.getElementById('insightText').textContent]
+            ];
 
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const csvContent = csvRows.map(row => row.join(',')).join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'sponsorship-roi-model.json';
+            a.download = 'sponsorship-roi-model.csv';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);

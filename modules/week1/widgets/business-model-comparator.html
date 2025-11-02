@@ -8,6 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --color-neutral-50: #f9fafb;
+            --color-neutral-100: #f8f9fa;
+            --color-neutral-200: #e5e7eb;
+            --color-neutral-300: #d1d5db;
+            --color-neutral-400: #9ca3af;
+            --color-neutral-500: #6b7280;
+            --color-neutral-600: #4a5568;
+            --color-neutral-700: #374151;
+            --color-neutral-800: #2d3748;
+            --color-neutral-900: #1f2937;
+            --color-border: #e2e8f0;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -17,7 +31,7 @@
         body {
             font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: white;
-            color: #2d3748;
+            color: var(--color-neutral-800);
             padding: 2rem;
             min-height: 100vh;
         }
@@ -28,14 +42,14 @@
         }
 
         h1 {
-            color: #2d3748;
+            color: var(--color-neutral-800);
             margin-bottom: 0.5rem;
             font-size: 2rem;
             text-align: center;
         }
 
         .subtitle {
-            color: #6b7280;
+            color: var(--color-neutral-500);
             margin-bottom: 2rem;
             font-size: 1rem;
             text-align: center;
@@ -49,14 +63,14 @@
         }
 
         .model-card {
-            background: #f9fafb;
-            border: 1px solid #d1d5db;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-300);
             border-radius: 8px;
             padding: 2rem;
         }
 
         .model-card h2 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
             text-align: center;
@@ -68,11 +82,11 @@
         }
 
         .factor-group h3 {
-            color: #374151;
+            color: var(--color-neutral-700);
             font-size: 1.1rem;
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
-            border-bottom: 1px solid #e5e7eb;
+            border-bottom: 1px solid var(--color-neutral-200);
             font-weight: 600;
         }
 
@@ -85,28 +99,28 @@
         }
 
         .factor-label {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             font-weight: 500;
             margin-bottom: 0.25rem;
             font-size: 14px;
         }
 
         .factor-value {
-            color: #6b7280;
+            color: var(--color-neutral-500);
             line-height: 1.4;
             font-size: 14px;
         }
 
         .key-differences {
-            background: #f8f9fa;
-            border: 1px solid #e2e8f0;
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-border);
             border-radius: 12px;
             padding: 2rem;
             margin-bottom: 2rem;
         }
 
         .key-differences h2 {
-            color: #2d3748;
+            color: var(--color-neutral-800);
             margin-bottom: 1.5rem;
             font-weight: 600;
         }
@@ -121,11 +135,11 @@
             background: white;
             padding: 1.5rem;
             border-radius: 8px;
-            border: 1px solid #e2e8f0;
+            border: 1px solid var(--color-border);
         }
 
         .difference-card h3 {
-            color: #1f2937;
+            color: var(--color-neutral-900);
             margin-bottom: 0.75rem;
             font-weight: 600;
             font-size: 16px;
@@ -134,7 +148,7 @@
         .difference-card ul {
             margin-left: 1.5rem;
             line-height: 1.8;
-            color: #4a5568;
+            color: var(--color-neutral-600);
             font-size: 14px;
         }
 

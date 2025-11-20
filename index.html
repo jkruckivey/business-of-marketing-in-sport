@@ -3,549 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Development Storyboard - Business of Sports Marketing</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Business of Sports Marketing - Course Resources</title>
     <style>
-        /* Development Storyboard - Integration with styles.css */
-        
-        .dev-badge {
-            background: #c5b783;
-            color: #2c2c2c;
-            padding: 0.5rem 1rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-bottom: 1rem;
-            letter-spacing: 0.05em;
-        }
-        
-        .course-learning-outcome {
-            background: #1f2937;
-            color: #ffffff;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            border-left: 4px solid #c5b783;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .course-learning-outcome h4 {
-            color: #ffffff !important;
-        }
-        
-        .module-storyboard {
-            border: 2px solid #c5b783;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            background: #fafaf8;
-        }
-        
-        .module-storyboard h3 {
-            color: #2c2c2c;
-            border-bottom: 2px solid #c5b783;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        .outcome-mapping {
-            background: #f5f4f0;
-            border: 1px solid #c5b783;
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-        
-        .outcome-tag {
-            background: #f59e0b;
-            color: #1f2937;
-            padding: 0.25rem 0.5rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-right: 0.5rem;
-            margin-bottom: 0.25rem;
-            display: inline-block;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-        
-        .activity-list {
-            background: white;
-            border: 1px solid #e2e8f0;
-            padding: 1rem;
-            margin: 1rem 0;
-        }
-        
-        .executive-profile {
-            background: #2c2c2c;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
             color: white;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-left: 4px solid #c5b783;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
         }
-        
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-        
-        /* Override container for better integration */
+
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0;
-            background: white;
-            margin-top: 0;
-            margin-bottom: 0;
-            border-radius: 0;
-            box-shadow: none;
-            border: none;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #c5b783;
+            margin-bottom: 3rem;
+        }
+
+        .resource-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .resource-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(197, 183, 131, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        .resource-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #c5b783;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(197, 183, 131, 0.2);
+        }
+
+        .resource-card h2 {
+            font-size: 1.5rem;
+            color: #c5b783;
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-card p {
+            color: #d0d0d0;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .resource-tag {
+            display: inline-block;
+            background: rgba(197, 183, 131, 0.2);
+            color: #c5b783;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(197, 183, 131, 0.2);
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .resource-card {
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="header-content">
-                <div class="logo-section">
-                    <div class="logo-icon">BOMS</div>
-                    <div class="header-text">
-                        <h1>The Business of Sports Marketing</h1>
-                        <p class="subtitle">Course Development & Implementation Guide</p>
-                    </div>
-                </div>
-                <div class="dev-badge">Development Storyboard</div>
-            </div>
-        </header>
+        <h1>Business of Sports Marketing</h1>
+        <p class="subtitle">MBA Course Resources & Documentation</p>
 
-        <main>
-            <!-- Course Learning Outcomes Overview -->
-        <section id="course-outcomes">
-            <h2>Course Learning Outcomes (CLO)</h2>
-            <p>Five measurable outcomes aligned with our 5-week journey through sports marketing:</p>
+        <div class="resource-grid">
+            <a href="marketing-cheat-sheet.html" class="resource-card">
+                <h2>📋 Marketing Cheat Sheet</h2>
+                <p>Internal reference guide with embedded widget demos, detailed executive interview profiles, anchor project breakdown, and key marketing messages. Perfect for sharing with prospects or training new team members.</p>
+                <span class="resource-tag">For Marketing Team</span>
+            </a>
 
-            <div class="content-grid">
-                <div class="course-learning-outcome">
-                    <h4>CLO 1: Analyze Revenue Ecosystems</h4>
-                    <p>Map and evaluate the interdependencies of major revenue streams (media rights, sponsorship, ticketing, merchandising, betting, licensing) in sports business</p>
-                    <span class="outcome-tag">Week 1</span>
-                </div>
+            <a href="course-outline.html" class="resource-card">
+                <h2>📚 Course Outline</h2>
+                <p>Complete course structure with 5 Course Learning Outcomes (CLOs), week-by-week module breakdown, assessment architecture, and detailed anchor project milestone progression. Includes UDL and QM alignment documentation.</p>
+                <span class="resource-tag">Academic Planning</span>
+            </a>
 
-                <div class="course-learning-outcome">
-                    <h4>CLO 2: Evaluate Media & Fan Monetization</h4>
-                    <p>Compare traditional broadcasting vs DTC models and design fan engagement strategies that maximize revenue</p>
-                    <span class="outcome-tag">Week 2</span>
-                </div>
+            <a href="course-marketing.html" class="resource-card">
+                <h2>🎯 Marketing Page</h2>
+                <p>External-facing marketing page showcasing the course's interactive scenarios, AI-enhanced learning methodology, executive insights, and comprehensive anchor project structure. Designed for prospective students.</p>
+                <span class="resource-tag">Student Recruitment</span>
+            </a>
 
-                <div class="course-learning-outcome">
-                    <h4>CLO 3: Design Sponsorship & Betting Strategies</h4>
-                    <p>Calculate sponsorship ROI and assess sports betting's role as a growth engine in modern sports marketing</p>
-                    <span class="outcome-tag">Week 3</span>
-                </div>
+            <a href="course-index.html" class="resource-card">
+                <h2>🗂️ Student Hub</h2>
+                <p>Student-facing navigation hub for accessing all course materials, weekly modules, interactive widgets, case studies, and assessment resources. Central access point during course delivery.</p>
+                <span class="resource-tag">Course Delivery</span>
+            </a>
+        </div>
 
-                <div class="course-learning-outcome">
-                    <h4>CLO 4: Build Athlete & Emerging Sport Brands</h4>
-                    <p>Create branding strategies for athletes and evaluate investment opportunities in emerging sports (women's sports, Pickleball, Padel, esports)</p>
-                    <span class="outcome-tag">Week 4</span>
-                </div>
-
-                <div class="course-learning-outcome">
-                    <h4>CLO 5: Balance Legacy & Innovation</h4>
-                    <p>Develop strategies to monetize heritage properties while integrating future trends (tech, betting, new sports)</p>
-                    <span class="outcome-tag">Week 5</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Module Storyboards -->
-        <section id="modules">
-            <h2>Module Development Storyboards</h2>
-            
-            <!-- Week 1 Storyboard -->
-            <div class="module-storyboard">
-                <h3>Week 1: The Business of Sport - Where the Money Flows</h3>
-
-                <div class="executive-profile">
-                    <strong>Executive Leader:</strong> Bell Media / TSN Senior Leader<br>
-                    <strong>Core Case:</strong> NHL Vancouver Canucks: Competing on Revenue Sharing (W14149)<br>
-                    <strong>Industry Focus:</strong> Revenue streams, business model differentiation, growth potential
-                </div>
-
-                <h4>Module Learning Outcomes & Course Alignment</h4>
-                <div class="outcome-mapping">
-                    <div class="outcome-tag">CLO 1</div>
-                    <strong>MLO 1.1:</strong> Map the major revenue streams in sport: media rights, sponsorship, ticketing, merchandising, betting, licensing<br><br>
-
-                    <div class="outcome-tag">CLO 1</div>
-                    <strong>MLO 1.2:</strong> Understand how sport's business model differs from traditional consumer industries<br><br>
-
-                    <div class="outcome-tag">CLO 1</div>
-                    <strong>MLO 1.3:</strong> Debate which revenue streams are most vulnerable and which hold the most growth potential<br><br>
-
-                    <div class="outcome-tag">CLO 1</div>
-                    <strong>MLO 1.4:</strong> Analyze revenue sharing models and their impact on competitive balance
-                </div>
-
-                <h4>Supporting Activities</h4>
-                <div class="activity-list">
-                    <ul>
-                        <li><strong>Core Case:</strong> NHL Vancouver Canucks: Competing on Revenue Sharing</li>
-                        <li><strong>Supporting Readings:</strong> The Business of Sports: Text and Cases (HBS excerpt), Canadian Sponsorship Landscape Study 2023</li>
-                        <li><strong>Interactive Widget:</strong> Revenue Empire Builder - build your sports franchise portfolio</li>
-                        <li><strong>Executive Video:</strong> Bell Media/TSN on media rights & monetization (90 min)</li>
-                        <li><strong>Assignment:</strong> 1-page reflection memo on most at-risk revenue stream</li>
-                    </ul>
-                    <div class="dev-badge">
-                        <a href="modules/week1/archive/module-1/outline.html" style="color: #2c2c2c; text-decoration: none;">→ VIEW WEEK 1 OUTLINE</a>
-                    </div>
-                </div>
-                
-                <h4>Industry Examples & Content</h4>
-                <div class="content-grid">
-                    <div class="overview-card">
-                        <h5>Canadian Context</h5>
-                        <ul>
-                            <li>TSN/RDS exclusive NHL rights deal analysis</li>
-                            <li>Rogers Sportsnet MLB partnership case study</li>
-                            <li>CBC Hockey Night in Canada heritage programming</li>
-                        </ul>
-                    </div>
-                    <div class="overview-card">
-                        <h5>Digital Transformation</h5>
-                        <ul>
-                            <li>Streaming vs. traditional broadcast revenue models</li>
-                            <li>Social media content distribution strategies</li>
-                            <li>Mobile-first content development approaches</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 2 Storyboard -->
-            <div class="module-storyboard">
-                <h3>Week 2: Media, Content & Fan Engagement (The Core Product)</h3>
-
-                <div class="executive-profile">
-                    <strong>Executive Leader:</strong> TSN or DAZN Canada Leader<br>
-                    <strong>Core Case:</strong> Rogers Communications: Sportsnet and NHL Rights Deal (W16179)<br>
-                    <strong>Industry Focus:</strong> Media rights valuation, streaming vs traditional, fan monetization
-                </div>
-
-                <h4>Module Learning Outcomes & Course Alignment</h4>
-                <div class="outcome-mapping">
-                    <div class="outcome-tag">CLO 2</div>
-                    <strong>MLO 2.1:</strong> Explore how media rights deals are valued and monetized<br><br>
-
-                    <div class="outcome-tag">CLO 2</div>
-                    <strong>MLO 2.2:</strong> Compare linear broadcasting economics to streaming/direct-to-consumer<br><br>
-
-                    <div class="outcome-tag">CLO 2</div>
-                    <strong>MLO 2.3:</strong> Understand how fan engagement extends monetization through ads, subscriptions, and sponsorship activation<br><br>
-
-                    <div class="outcome-tag">CLO 2</div>
-                    <strong>MLO 2.4:</strong> Evaluate the Rogers $5.2B NHL deal and its industry implications
-                </div>
-
-                <h4>Supporting Activities</h4>
-                <div class="activity-list">
-                    <ul>
-                        <li><strong>Core Case:</strong> Rogers Communications: Sportsnet and NHL Rights Deal</li>
-                        <li><strong>Supporting Readings:</strong> Why Sports Rights Are the Last Must-Have for TV (HBR 2021)</li>
-                        <li><strong>Interactive Widget:</strong> Streaming Wars Strategy - navigate DTC vs traditional decisions</li>
-                        <li><strong>Executive Video:</strong> TSN/DAZN on valuation, streaming risks, fan engagement (90 min)</li>
-                        <li><strong>Assignment:</strong> 2-page mini-case memo on guaranteed rights vs DTC models</li>
-                    </ul>
-                    <div class="dev-badge">
-                        <a href="modules/week2/week2-module-2-outline.html" style="color: #2c2c2c; text-decoration: none;">→ VIEW WEEK 2 OUTLINE</a>
-                    </div>
-                </div>
-
-                <h4>Industry Examples & Content</h4>
-                <div class="content-grid">
-                    <div class="overview-card">
-                        <h5>Market Entry Strategies</h5>
-                        <ul>
-                            <li>FanDuel's Canadian market expansion approach</li>
-                            <li>DraftKings partnership with major leagues</li>
-                            <li>BetMGM celebrity endorsement campaigns</li>
-                        </ul>
-                    </div>
-                    <div class="overview-card">
-                        <h5>Responsible Gaming</h5>
-                        <ul>
-                            <li>Industry self-regulation initiatives</li>
-                            <li>Technology solutions for problem gambling</li>
-                            <li>Partnership with sports leagues on messaging</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 3 Storyboard -->
-            <div class="module-storyboard">
-                <h3>Week 3: Sponsorship & Betting - The Growth Engines</h3>
-
-                <div class="executive-profile">
-                    <strong>Executive Leaders:</strong> Andrew Sneyd (FanDuel) + Brand Sponsor Leader<br>
-                    <strong>Core Case:</strong> FanDuel: Betting on Sports (HBS 520038)<br>
-                    <strong>Industry Focus:</strong> Sponsorship ROI, sports betting growth, brand partnerships
-                </div>
-
-                <h4>Module Learning Outcomes & Course Alignment</h4>
-                <div class="outcome-mapping">
-                    <div class="outcome-tag">CLO 3</div>
-                    <strong>MLO 3.1:</strong> Understand sponsorship as the financial backbone of sport<br><br>
-
-                    <div class="outcome-tag">CLO 3</div>
-                    <strong>MLO 3.2:</strong> Analyze sports betting as a new growth driver in the industry<br><br>
-
-                    <div class="outcome-tag">CLO 3</div>
-                    <strong>MLO 3.3:</strong> Calculate how brands measure ROI in sport partnerships<br><br>
-
-                    <div class="outcome-tag">CLO 3</div>
-                    <strong>MLO 3.4:</strong> Design sponsorship activations that deliver measurable value for FanDuel and partners
-                </div>
-
-                <h4>Supporting Activities</h4>
-                <div class="activity-list">
-                    <ul>
-                        <li><strong>Core Case:</strong> FanDuel: Betting on Sports (HBS 520038)</li>
-                        <li><strong>Supporting Readings:</strong> The ROI of Sports Sponsorships (HBR), Canadian Sponsorship Landscape Study 2023</li>
-                        <li><strong>Interactive Widget:</strong> ROI Calculator - measure sponsorship returns</li>
-                        <li><strong>Executive Video:</strong> Andrew Sneyd (FanDuel) on Canada entry + sponsor leader (90 min)</li>
-                        <li><strong>Assignment:</strong> Group sprint - 1-page sponsorship activation plan</li>
-                    </ul>
-                    <div class="dev-badge">
-                        <a href="modules/week1/archive/module-3/outline.html" style="color: #2c2c2c; text-decoration: none;">→ VIEW WEEK 3 OUTLINE</a>
-                    </div>
-                </div>
-
-                <h4>Industry Examples & Content</h4>
-                <div class="content-grid">
-                    <div class="overview-card">
-                        <h5>Canadian Athletes</h5>
-                        <ul>
-                            <li>Connor McDavid's marketing portfolio analysis</li>
-                            <li>Bianca Andreescu's breakthrough brand strategy</li>
-                            <li>Alphonso Davies' global brand development</li>
-                        </ul>
-                    </div>
-                    <div class="overview-card">
-                        <h5>Brand Categories</h5>
-                        <ul>
-                            <li>Athletic performance partnerships (Nike, Adidas)</li>
-                            <li>Lifestyle and consumer goods endorsements</li>
-                            <li>Financial services and technology partnerships</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 4 Storyboard -->
-            <div class="module-storyboard">
-                <h3>Week 4: Athletes, Brands & Emerging Sports</h3>
-
-                <div class="executive-profile">
-                    <strong>Executive Leaders:</strong> Sports agent + Don Rea (PGA) + Niki da Silva (Golf Canada) + Matt Rubinoff (Fairgrounds)<br>
-                    <strong>Core Case:</strong> Serena Williams: Building a Brand (HBS 517050)<br>
-                    <strong>Industry Focus:</strong> Athlete branding, women's sports, emerging markets (Pickleball, Padel, esports)
-                </div>
-
-                <h4>Module Learning Outcomes & Course Alignment</h4>
-                <div class="outcome-mapping">
-                    <div class="outcome-tag">CLO 4</div>
-                    <strong>MLO 4.1:</strong> Design athlete branding and endorsement strategies<br><br>
-
-                    <div class="outcome-tag">CLO 4</div>
-                    <strong>MLO 4.2:</strong> Analyze women's sport as a growing sponsorship opportunity<br><br>
-
-                    <div class="outcome-tag">CLO 4</div>
-                    <strong>MLO 4.3:</strong> Evaluate emerging sports (Pickleball, Padel, esports) as new markets<br><br>
-
-                    <div class="outcome-tag">CLO 4</div>
-                    <strong>MLO 4.4:</strong> Assess investment opportunities in new vs traditional sports properties
-                </div>
-
-                <h4>Supporting Activities</h4>
-                <div class="activity-list">
-                    <ul>
-                        <li><strong>Core Case:</strong> Serena Williams: Building a Brand (HBS 517050)</li>
-                        <li><strong>Supporting Readings:</strong> HBR: The New Sponsorship Playbook - Women's Sports & Inclusion</li>
-                        <li><strong>Interactive Widget:</strong> Athlete Brand Value Calculator</li>
-                        <li><strong>Executive Panel:</strong> Sports agent, Don Rea, Niki da Silva, Matt Rubinoff (90 min)</li>
-                        <li><strong>Assignment:</strong> Peer-reviewed memo - Should Brand X sign Athlete Y?</li>
-                    </ul>
-                    <div class="dev-badge">
-                        <a href="modules/week1/archive/module-4/outline.html" style="color: #2c2c2c; text-decoration: none;">→ VIEW WEEK 4 OUTLINE</a>
-                    </div>
-                </div>
-                
-                <h4>Industry Examples & Content</h4>
-                <div class="content-grid">
-                    <div class="overview-card">
-                        <h5>MLSE Portfolio</h5>
-                        <ul>
-                            <li>Maple Leafs heritage marketing and fan traditions</li>
-                            <li>Raptors "We The North" campaign analysis</li>
-                            <li>TFC supporter culture and community building</li>
-                        </ul>
-                    </div>
-                    <div class="overview-card">
-                        <h5>Fan Engagement</h5>
-                        <ul>
-                            <li>Digital fan communities and social engagement</li>
-                            <li>Loyalty programs and season ticket holder retention</li>
-                            <li>Youth development and next-generation fans</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Week 5 Storyboard -->
-            <div class="module-storyboard">
-                <h3>Week 5: Legacy, Culture & The Future of Monetization</h3>
-
-                <div class="executive-profile">
-                    <strong>Executive Leaders:</strong> Jamie Dinsmore (HHOF) + Keith Pelley (MLSE/League exec)<br>
-                    <strong>Core Case:</strong> Hockey Hall of Fame: Managing Tradition and Growth (custom case)<br>
-                    <strong>Industry Focus:</strong> Heritage properties, future trends, balancing tradition with innovation
-                </div>
-
-                <h4>Module Learning Outcomes & Course Alignment</h4>
-                <div class="outcome-mapping">
-                    <div class="outcome-tag">CLO 5</div>
-                    <strong>MLO 5.1:</strong> Balance tradition and innovation in sports marketing<br><br>
-
-                    <div class="outcome-tag">CLO 5</div>
-                    <strong>MLO 5.2:</strong> Monetize heritage properties (Hockey Hall of Fame, Olympics, FIFA)<br><br>
-
-                    <div class="outcome-tag">CLO 5</div>
-                    <strong>MLO 5.3:</strong> Forecast the next wave: tech, betting, new sports<br><br>
-
-                    <div class="outcome-tag">CLO 5</div>
-                    <strong>MLO 5.4:</strong> Develop strategies that preserve culture while driving growth
-                </div>
-
-                <h4>Supporting Activities</h4>
-                <div class="activity-list">
-                    <ul>
-                        <li><strong>Core Case:</strong> Hockey Hall of Fame: Managing Tradition and Growth</li>
-                        <li><strong>Supporting Readings:</strong> HBR: The Future of Sports Business - Tech, Betting, Experiences</li>
-                        <li><strong>Interactive Widget:</strong> Legacy vs Innovation Matrix</li>
-                        <li><strong>Executive Video:</strong> Jamie Dinsmore (HHOF) + Keith Pelley on preserving culture (90 min)</li>
-                        <li><strong>Final Project:</strong> Marketing plan for sport property/team/event (8-10 min presentation)</li>
-                    </ul>
-                    <div class="dev-badge">
-                        <a href="modules/week1/archive/module-5/outline.html" style="color: #2c2c2c; text-decoration: none;">→ VIEW WEEK 5 OUTLINE</a>
-                    </div>
-                </div>
-                
-                <h4>Industry Examples & Content</h4>
-                <div class="content-grid">
-                    <div class="overview-card">
-                        <h5>Heritage Institutions</h5>
-                        <ul>
-                            <li>Hockey Hall of Fame digital transformation</li>
-                            <li>Canadian Sports Hall of Fame community outreach</li>
-                            <li>Olympic legacy and ongoing brand management</li>
-                        </ul>
-                    </div>
-                    <div class="overview-card">
-                        <h5>Cultural Marketing</h5>
-                        <ul>
-                            <li>Indigenous sport traditions and modern integration</li>
-                            <li>Women's sports history and growth narrative</li>
-                            <li>Community sport culture and grassroots marketing</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Assessment Overview -->
-        <section id="assessment">
-            <h2>Assessment & Evaluation Framework</h2>
-            
-            <div class="content-grid">
-                <div class="module-storyboard">
-                    <h3>Group Marketing Project (60%)</h3>
-                    <div class="outcome-mapping">
-                        <div class="outcome-tag">All CLOs</div>
-                        <strong>Comprehensive strategic marketing plan development</strong>
-                    </div>
-                    <div class="activity-list">
-                        <h4>Project Components:</h4>
-                        <ul>
-                            <li>Industry analysis and market research (CLO 1, 2, 6)</li>
-                            <li>Strategic positioning and target audience (CLO 3, 4, 5)</li>
-                            <li>Campaign development and execution plan (CLO 1, 3, 6)</li>
-                            <li>Executive presentation and defense (All CLOs)</li>
-                        </ul>
-                        <h4>UDL Expression Options:</h4>
-                        <ul>
-                            <li>Written strategic plan with visual components</li>
-                            <li>Video presentation with supporting materials</li>
-                            <li>Interactive digital campaign proposal</li>
-                            <li>Live presentation with Q&A session</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="module-storyboard">
-                    <h3>Executive Case Engagement (40%)</h3>
-                    <div class="outcome-mapping">
-                        <div class="outcome-tag">Module-Specific</div>
-                        <strong>Active participation and application across all modules</strong>
-                    </div>
-                    <div class="activity-list">
-                        <h4>Engagement Components:</h4>
-                        <ul>
-                            <li>Pre-session preparation and research (20%)</li>
-                            <li>Discussion forum participation and video engagement (30%)</li>
-                            <li>Post-session reflection and application (30%)</li>
-                            <li>Peer collaboration and knowledge sharing (20%)</li>
-                        </ul>
-                        <h4>Multiple Assessment Methods:</h4>
-                        <ul>
-                            <li>Written case analysis submissions</li>
-                            <li>Recorded video reflections</li>
-                            <li>Interactive discussion contributions</li>
-                            <li>Creative application projects</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        </main>
-
-        <footer>
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Development Team</h4>
-                    <p>Faculty Lead: Matthew Diamond<br>
-                    Educational Design: UDL & QM Compliance<br>
-                    Technical Implementation: Accessible Web Framework</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Educational Standards</h4>
-                    <ul>
-                        <li>Quality Matters (QM) Higher Education Standards</li>
-                        <li>Universal Design for Learning (UDL) Guidelines</li>
-                        <li>WCAG 2.1 AA Accessibility Compliance</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Industry Integration</h4>
-                    <p>Five executive-led modules with real-world case studies, strategic frameworks, and hands-on application opportunities.</p>
-                </div>
-            </div>
-        </footer>
+        <div class="footer">
+            <p>The Business of Sports Marketing | MBA-Level Course</p>
+            <p>5 Weeks • 40+ Interactive Scenarios • 8 Industry Executives • 105-Point Capstone</p>
+        </div>
     </div>
-
-    <script src="assets/js/main.js"></script>
 </body>
 </html>

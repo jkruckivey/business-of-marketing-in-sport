@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Cheat Sheet - Business of Sports Marketing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+            border-bottom: 4px solid #c5b783;
+            padding-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1a1a1a;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #c5b783;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: #2c2c2c;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            color: #c5b783;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f8f7f4;
+            border-radius: 8px;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #c5b783;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: #fafaf8;
+            border-left: 4px solid #c5b783;
+        }
+
+        .widget-embed {
+            margin: 2rem 0;
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .widget-embed iframe {
+            width: 100%;
+            border: none;
+            display: block;
+        }
+
+        .widget-header {
+            background: #2c2c2c;
+            color: white;
+            padding: 1rem 1.5rem;
+            font-weight: 600;
+        }
+
+        .interview-card {
+            background: white;
+            border: 2px solid #c5b783;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .interview-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .interview-meta {
+            flex: 1;
+        }
+
+        .interview-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 0.25rem;
+        }
+
+        .interview-title {
+            font-size: 1rem;
+            color: #c5b783;
+            font-weight: 600;
+        }
+
+        .interview-duration {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.25rem;
+        }
+
+        .interview-topics {
+            background: #f8f7f4;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        .interview-topics h5 {
+            font-size: 1rem;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .interview-topics ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .interview-topics li {
+            padding: 0.5rem 0;
+            color: #555;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .interview-topics li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #c5b783;
+            font-weight: 700;
+        }
+
+        .interview-quote {
+            background: #fff9e6;
+            border-left: 4px solid #c5b783;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .milestone-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .milestone {
+            background: white;
+            border: 2px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border-top: 4px solid #c5b783;
+        }
+
+        .milestone-number {
+            display: inline-block;
+            background: #c5b783;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 35px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .milestone h4 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+
+        .milestone p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .scenario {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .scenario:hover {
+            border-color: #c5b783;
+            box-shadow: 0 4px 12px rgba(197, 183, 131, 0.2);
+        }
+
+        .scenario-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .scenario h4 {
+            margin-top: 0;
+            color: #1a1a1a;
+        }
+
+        .scenario p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .ai-section {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+
+        .ai-section h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .ai-section p {
+            color: #d0d0d0;
+        }
+
+        .ai-example {
+            background: rgba(0,0,0,0.3);
+            border-left: 3px solid #c5b783;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #e5e5e5;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        th {
+            background: #f8f7f4;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .scenario-grid,
+            .milestone-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Marketing Cheat Sheet</h1>
+        <p class="subtitle">Internal Reference for The Business of Sports Marketing MBA Course</p>
+
+        <div class="stat-grid">
+            <div class="stat">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Intensive Weeks</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">40+</span>
+                <span class="stat-label">Interactive Scenarios</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">8</span>
+                <span class="stat-label">Industry Executives</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">105</span>
+                <span class="stat-label">Total Points (Capstone)</span>
+            </div>
+        </div>
+
+        <!-- Anchor Project Overview -->
+        <h2>📌 The Anchor Project Thread</h2>
+        <p>The Anchor Project is a collaborative, scaffolded assessment where teams build a comprehensive 5-year strategic vision for a real Canadian sports property. It spans Weeks 2-5, with each week adding a layer of strategic depth.</p>
+
+        <div class="milestone-grid">
+            <div class="milestone">
+                <span class="milestone-number">1</span>
+                <h4>Week 2: Team Formation</h4>
+                <p><strong>Deliverable:</strong> 1-page proposal (10 pts)</p>
+                <p>Form 5-6 person teams, select from 19 Canadian properties (Toronto FC, Canadian Premier League, 2026 FIFA World Cup), create team charter with roles/norms.</p>
+                <p><strong>Tools:</strong> Property Selector, Team Charter Builder</p>
+            </div>
+
+            <div class="milestone">
+                <span class="milestone-number">2</span>
+                <h4>Week 3: Revenue Model</h4>
+                <p><strong>Deliverable:</strong> Revenue canvas + sponsorship strategy</p>
+                <p>Map property's 5 revenue streams, develop sponsorship activation concepts with ROI projections.</p>
+                <p><strong>Tools:</strong> Revenue Canvas Builder, Sponsorship ROI Calculator</p>
+            </div>
+
+            <div class="milestone">
+                <span class="milestone-number">3</span>
+                <h4>Week 4: Brand Strategy</h4>
+                <p><strong>Deliverable:</strong> Athlete/brand analysis</p>
+                <p>Apply branding frameworks to athletes, analyze competitive positioning, assess emerging market opportunities.</p>
+                <p><strong>Focus:</strong> Brand architecture, women's sports, emerging leagues</p>
+            </div>
+
+            <div class="milestone">
+                <span class="milestone-number">4</span>
+                <h4>Week 5: Strategic Vision</h4>
+                <p><strong>Deliverable:</strong> 1,500-2,000 word memo OR 8-10 min presentation (105 pts)</p>
+                <p>5-year vision integrating ALL 5 weeks: Executive Summary, Current State, Vision, Roadmap, Risk Analysis. Rubric: CLO1 (20), CLO2 (15), CLO3 (15), CLO4 (15), CLO5 (20), Synthesis (15) + 5 PAIRR bonus.</p>
+            </div>
+        </div>
+
+        <!-- Executive Interviews -->
+        <h2>🎙️ Executive Interview Library</h2>
+        <p>Real practitioners who've made billion-dollar decisions share unfiltered insights. These aren't promotional videos—they're strategic deep-dives that ground theory in operational reality.</p>
+
+        <div class="interview-card">
+            <div class="interview-header">
+                <div class="interview-meta">
+                    <div class="interview-name">Al Dak</div>
+                    <div class="interview-title">SVP Revenue, Rogers Sports & Media</div>
+                    <div class="interview-duration">⏱️ 45 minutes | Week 2</div>
+                </div>
+            </div>
+            <p><strong>Context:</strong> Al oversees revenue for Rogers' sports empire: Sportsnet, Toronto Blue Jays, and NHL properties. He grew Sportsnet ad revenue from $90M → $540M (6x) following the $5.2B NHL rights acquisition.</p>
+
+            <div class="interview-topics">
+                <h5>Key Topics Covered:</h5>
+                <ul>
+                    <li><strong>Rogers NHL Deal ($5.2B):</strong> 3-part investment thesis—(1) protect cable distribution (sports slows cord-cutting), (2) leverage premium content to extract bigger agency deals, (3) long-term play for team ownership (now 75% of MLSE)</li>
+                    <li><strong>Dynamic Pricing Revolution:</strong> Evolved from "checking account to portfolio" approach—now prices inventory game-by-game like airlines (supply-demand optimization, real-time playoff adjustments)</li>
+                    <li><strong>Data as "Lifeblood":</strong> From zero brand health studies 10 years ago → tracking 90% of sponsors annually with real-time engagement metrics and attribution modeling</li>
+                    <li><strong>Vertical Integration Advantage:</strong> Owning rights + teams + distribution + venue creates compounding value across entire sports ecosystem</li>
+                    <li><strong>Linear vs. Streaming Future:</strong> Cable won't disappear—will evolve into bundled streaming apps (similar to original cable model)</li>
+                </ul>
+            </div>
+
+            <div class="interview-quote">
+                "The $5.2 billion wasn't just about content. It was a chess move. We protected our cable business, leveraged advertising negotiations, and positioned ourselves to own the teams. Now Rogers is the largest sports owner in North America—that's the real value unlock."
+            </div>
+
+            <p><strong>Marketing Hook:</strong> "Hear how Rogers' SVP defended a $5.2B bet to skeptical executives—and grew revenue 6x in the process."</p>
+        </div>
+
+        <div class="interview-card">
+            <div class="interview-header">
+                <div class="interview-meta">
+                    <div class="interview-name">Kevin Abrams</div>
+                    <div class="interview-title">SVP Football Operations & Strategy, New York Giants</div>
+                    <div class="interview-duration">⏱️ 32 minutes | Week 4</div>
+                </div>
+            </div>
+            <p><strong>Context:</strong> Kevin manages team building, salary cap strategy, and data/AI integration for one of the NFL's most iconic franchises. He's navigating the NIL era where players arrive as established brands.</p>
+
+            <div class="interview-topics">
+                <h5>Key Topics Covered:</h5>
+                <ul>
+                    <li><strong>AI & Enterprise ChatGPT:</strong> How the Giants rolled out AI for talent evaluation, HR recruitment, and operations—quality of prompts dictates output, learning from Fortune 500 companies</li>
+                    <li><strong>Salary Cap as Portfolio:</strong> Evolution from expense tracking to investment committee framework—balancing coaching urgency (7-day cycles) vs. GM long-term vision, opportunity cost analysis</li>
+                    <li><strong>Data Revolution in NFL:</strong> From basic combine metrics (1999) to tracking data, computer vision, next-gen stats—data now integrated into every department (even equipment room uses it for collectibles)</li>
+                    <li><strong>NIL & Athlete Brands:</strong> Players arrive as brands from college—Giants connect them to corporate partners, reducing off-field distractions while increasing earning potential (win-win-win)</li>
+                    <li><strong>Ownership as "Mom-and-Pop Shop":</strong> Despite $10B valuation, daily owner access enables quick decisions, football-business collaboration, sponsor advisory boards for facility planning</li>
+                </ul>
+            </div>
+
+            <div class="interview-quote">
+                "We moved from treating the salary cap like a checking account to managing it like a portfolio. It's not about what you spend—it's about the opportunity cost of those dollars. That mindset shift transformed how we build the roster."
+            </div>
+
+            <p><strong>Marketing Hook:</strong> "The NY Giants SVP reveals how AI is transforming NFL scouting—and why the salary cap is now managed like a hedge fund."</p>
+        </div>
+
+        <div class="interview-card">
+            <div class="interview-header">
+                <div class="interview-meta">
+                    <div class="interview-name">Matt Rubinoff</div>
+                    <div class="interview-title">Co-Founder, Fairgrounds (Pickleball/Paddle)</div>
+                    <div class="interview-duration">⏱️ 38 minutes | Week 4</div>
+                </div>
+            </div>
+            <p><strong>Context:</strong> Matt built a national pickleball/paddle brand from zero to 75,000 members across 11 locations. He's a case study in emerging sports scaling and brand differentiation.</p>
+
+            <div class="interview-topics">
+                <h5>Key Topics Covered:</h5>
+                <ul>
+                    <li><strong>"White Space" Strategy:</strong> Positioned between public courts (free, low-quality) and private clubs ($3K/year)—hitting the $150-300/month sweet spot for quality without exclusivity</li>
+                    <li><strong>Proof-of-Concept Methodology:</strong> Started with one location, perfected brand/operations, then scaled using vacant retail spaces (big box stores, failed businesses)</li>
+                    <li><strong>Intentional Brand/Marketing Focus:</strong> Unlike traditional club operators (engineers/accountants), Fairgrounds hired brand experts early—differentiation through design, community, experience (not just courts)</li>
+                    <li><strong>Geographic Expansion Logic:</strong> Target underserved markets where demographics want social sports experiences but lack accessible options—community-based growth over density</li>
+                    <li><strong>First-Mover Advantages in Emerging Sports:</strong> Lower competition, higher media attention, ability to define category standards before incumbents arrive</li>
+                </ul>
+            </div>
+
+            <div class="interview-quote">
+                "Emerging sports offer a 5-10 year window where you can build a national brand before the big operators wake up. We're not just building courts—we're defining what premium pickleball looks like in North America."
+            </div>
+
+            <p><strong>Marketing Hook:</strong> "How to build a national sports brand from scratch: 75,000 members in 3 years by targeting the 'white space' between free and exclusive."</p>
+        </div>
+
+        <div class="interview-card">
+            <div class="interview-header">
+                <div class="interview-meta">
+                    <div class="interview-name">Jamie Dinsmore & Keith Pelley</div>
+                    <div class="interview-title">HHOF CEO & MLSE President (Counterpoint Dialogue)</div>
+                    <div class="interview-duration">⏱️ 12-15 min each (24-30 min total) | Week 5</div>
+                </div>
+            </div>
+            <p><strong>Context:</strong> A unique "counterpoint dialogue" between a heritage institution guardian (HHOF) and a modern franchise operator (MLSE). Same tension, opposite perspectives.</p>
+
+            <div class="interview-topics">
+                <h5>Jamie Dinsmore (HHOF) - Heritage Preservation Perspective:</h5>
+                <ul>
+                    <li><strong>Authenticity as Economic Asset:</strong> Heritage institutions derive value FROM preservation—credibility creates revenue, not growth for growth's sake</li>
+                    <li><strong>The "Disneyfication" Trap:</strong> Real examples of heritage properties that over-commercialized and lost credibility—lessons on boundaries</li>
+                    <li><strong>Stakeholder Veto Power:</strong> Donors, curatorial staff, partner leagues (NHL, Hockey Canada) constrain strategy—heritage properties don't have full autonomy</li>
+                    <li><strong>Growth Without Compromise:</strong> What innovations Jamie approved vs. rejected—decision framework balancing revenue with institutional integrity</li>
+                </ul>
+            </div>
+
+            <div class="interview-topics">
+                <h5>Keith Pelley (MLSE) - Modern Franchise Perspective:</h5>
+                <ul>
+                    <li><strong>Heritage as Emotional Currency:</strong> Maple Leafs/Raptors history drives ALL revenue streams (media, ticketing, sponsorship)—tradition creates pricing power</li>
+                    <li><strong>Aggressive Innovation Within Guardrails:</strong> How MLSE balances respecting Toronto's sports legacy with digital transformation, international expansion</li>
+                    <li><strong>Fan Stewardship Responsibility:</strong> Multi-generational fans expect tradition to be honored—violate that, lose the pricing premium that makes franchises valuable</li>
+                    <li><strong>Integration Not Replacement:</strong> New experiences (VR, betting) enhance tradition rather than replace it—additive strategy</li>
+                </ul>
+            </div>
+
+            <div class="interview-quote">
+                <strong>Jamie:</strong> "The moment you lose institutional credibility, you can't get it back. That's the constraint heritage properties face that modern franchises don't."<br><br>
+                <strong>Keith:</strong> "Heritage isn't a constraint—it's our competitive advantage. Tradition gives us pricing power no startup sports property will ever have."
+            </div>
+
+            <p><strong>Marketing Hook:</strong> "Two sports executives, one tension: When does innovation cross the line into 'Disneyfication'? Hear both sides of the heritage debate."</p>
+        </div>
+
+        <!-- Interactive Scenarios with Embedded Widgets -->
+        <h2>🎮 Interactive Scenario Library (Embedded Demos)</h2>
+        <p>These are the <strong>actual working widgets</strong> students interact with. Marketing can demo these live to show the hands-on, simulation-based pedagogy.</p>
+
+        <h3>Revenue & Pricing Scenarios</h3>
+
+        <div class="widget-embed">
+            <div class="widget-header">Revenue Mix Slider - Allocate $500M Across 5 Revenue Streams</div>
+            <iframe src="modules/week1/widgets/revenue-mix-slider.html" height="600"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> Teaches revenue diversification, risk-return trade-offs, and ecosystem thinking. Students see real-time impact of over-concentrating in media vs. balancing across streams.</p>
+
+        <div class="widget-embed">
+            <div class="widget-header">Dynamic Pricing Simulator - Set Ticket Prices Based on 7 Variables</div>
+            <iframe src="modules/week1/widgets/dynamic-pricing-simulator.html" height="700"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> Demonstrates yield management principles (airline-style pricing), balancing revenue maximization with fan accessibility. Students manage full season with trade-offs.</p>
+
+        <div class="widget-embed">
+            <div class="widget-header">Ecosystem Cascade Simulator - See Ripple Effects Across Revenue Streams</div>
+            <iframe src="modules/week1/widgets/ecosystem-cascade-simulator.html" height="650"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> Shows interdependencies—how investing in one stream (e.g., signing star player) cascades across media, sponsorship, betting simultaneously. Proves Connor McDavid's $100M value.</p>
+
+        <h3>Media & Platform Economics</h3>
+
+        <div class="widget-embed">
+            <div class="widget-header">Streaming Wars Strategy - Run a Sports Streaming Platform for 10 Years</div>
+            <iframe src="modules/week1/widgets/streaming-wars-game.html" height="800"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> 10-year simulation where students bid on NHL rights, set subscription prices, manage content costs, and try to achieve profitability before cash runs out. Teaches platform economics (LTV vs. CAC) and why Rogers struggled.</p>
+
+        <div class="widget-embed">
+            <div class="widget-header">Media Rights Calculator - Value Sports Content Using 5-Factor Framework</div>
+            <iframe src="modules/week2/widgets/media-rights-calculator.html" height="600"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> Quantitative valuation tool using audience size, demographics, exclusivity, platform reach, and term to calculate rights value. Students learn how Al Dak's team justifies pricing to buyers.</p>
+
+        <h3>Sponsorship & Betting</h3>
+
+        <div class="widget-embed">
+            <div class="widget-header">Sponsorship ROI Calculator - Design Activation and Measure Brand Impact</div>
+            <iframe src="modules/week1/widgets/sponsorship-roi-calculator.html" height="700"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> Multi-channel activation modeling (TV spots, in-venue, digital, hospitality) with impressions, engagement, and conversion metrics. Students calculate cost-per-impression and compare to benchmarks.</p>
+
+        <div class="widget-embed">
+            <div class="widget-header">Betting Market Simulator - Understand Operator Economics and Partnership Revenue</div>
+            <iframe src="modules/week1/widgets/betting-market-simulator.html" height="650"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> Models sports betting from operator's perspective—set odds, manage risk, see how partnerships with leagues create new revenue streams. Explains FanDuel's business model.</p>
+
+        <h3>Athlete Branding & Emerging Sports</h3>
+
+        <div class="widget-embed">
+            <div class="widget-header">Athlete Brand Calculator - Build 10-Year Wealth Plan for Elite Athlete</div>
+            <iframe src="modules/week4/widgets/athlete-brand-calculator.html" height="750"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> Students design revenue strategy across salary, endorsements, owned businesses, investments, and post-career transition. Target: $200M net worth by age 50. Teaches diversification and equity vs. fee trade-offs.</p>
+
+        <div class="widget-embed">
+            <div class="widget-header">Emerging Sports Investment Tool - Evaluate New Leagues/Sports Using 8 Criteria</div>
+            <iframe src="modules/week4/widgets/emerging-sports-investment-tool.html" height="700"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> Scoring framework for women's sports, pickleball, esports using market size, growth trajectory, media potential, demographics, barriers to entry. Students compare across 6 opportunities.</p>
+
+        <h3>Heritage & Future Strategy</h3>
+
+        <div class="widget-embed">
+            <div class="widget-header">Legacy vs Innovation Matrix - Balance Tradition with Revenue Growth</div>
+            <iframe src="modules/week5/widgets/legacy-innovation-matrix.html" height="700"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> 2x2 matrix where students place 15 strategic initiatives. Shows portfolio balance analysis—too traditional = stagnation, too innovative = authenticity loss. Students compare to real heritage properties (HHOF, Olympics).</p>
+
+        <div class="widget-embed">
+            <div class="widget-header">Future Trends Predictor - Allocate $50M Across 12 Emerging Trends</div>
+            <iframe src="modules/week5/widgets/future-trends-predictor.html" height="750"></iframe>
+        </div>
+        <p><strong>Pedagogy:</strong> Investment allocation across AI, VR/AR, new demographics, emerging sports, betting, sustainability, etc. See 5-10 year projections with optimistic/realistic/pessimistic scenarios. Compares to McKinsey/Deloitte forecasts.</p>
+
+        <!-- AI Integration -->
+        <div class="ai-section">
+            <h3>🤖 AI-Enhanced Learning (PAIRR Methodology)</h3>
+            <p>Every major assessment uses <strong>Peer and AI Review + Reflection (PAIRR)</strong> to develop AI literacy alongside sports business expertise. This is a signature pedagogical innovation—not just "use ChatGPT," but <em>compare human vs. AI feedback quality</em>.</p>
+
+            <h4>PAIRR 5-Phase Process:</h4>
+            <div class="ai-example">
+<strong>Phase 1:</strong> Submit 80% draft by Day 5<br>
+<strong>Phase 2:</strong> Receive BOTH peer + ChatGPT feedback by Day 7<br>
+<strong>Phase 3:</strong> Comparative Reflection (300-400 words): Which was more useful? Why?<br>
+<strong>Phase 4:</strong> Revise using integrated insights, submit final version Day 10<br>
+<strong>Phase 5:</strong> Post-Revision Reflection (200-300 words): How did feedback change your thinking?
+            </div>
+
+            <h4>AI Roleplay Scenarios (Diagnostic Practice):</h4>
+            <div class="ai-example">
+<strong>Example: "The $100M Question"</strong><br><br>
+You're presenting to the GM who just signed Connor McDavid to $100M over 8 years.<br>
+The CFO shows: $12.5M cost - $8M revenue = -$4.5M loss per year.<br><br>
+<strong>Challenge:</strong> Defend the deal to a skeptical Board. Where's the missing $22-32M in value?<br><br>
+<strong>AI Executive Response:</strong> "Your CFO is measuring the wrong things. Walk me through your revenue ecosystem analysis. I want to see media leverage, sponsorship multipliers, and betting handle impact—with numbers I can defend to our owners."
+            </div>
+
+            <p><strong>Marketing Angle:</strong> "Not just another course that says 'use AI'—we train students to <em>evaluate AI quality</em> through systematic peer comparison. That's the literacy employers actually need."</p>
+        </div>
+
+        <!-- Quick Reference Table -->
+        <h2>📊 Quick Reference: Course Statistics</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Count</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Total Weeks</strong></td>
+                    <td>5</td>
+                    <td>Intensive MBA-level course (6-8 hours per week)</td>
+                </tr>
+                <tr>
+                    <td><strong>Interactive Scenarios</strong></td>
+                    <td>40+</td>
+                    <td>Embedded working widgets (demos above)</td>
+                </tr>
+                <tr>
+                    <td><strong>Executive Interviews</strong></td>
+                    <td>8</td>
+                    <td>45 min avg, unfiltered practitioner insights</td>
+                </tr>
+                <tr>
+                    <td><strong>HBS Case Studies</strong></td>
+                    <td>4</td>
+                    <td>Rogers NHL ($5.2B), FanDuel, Serena Williams, + 1 custom (HHOF)</td>
+                </tr>
+                <tr>
+                    <td><strong>Anchor Project Milestones</strong></td>
+                    <td>4</td>
+                    <td>Weeks 2-5, cumulative team project (60% of grade)</td>
+                </tr>
+                <tr>
+                    <td><strong>PAIRR Assessments</strong></td>
+                    <td>4</td>
+                    <td>Dual feedback (peer + AI) in Weeks 2-5</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Capstone Points</strong></td>
+                    <td>105</td>
+                    <td>100 pts rubric + 5 pts PAIRR bonus</td>
+                </tr>
+                <tr>
+                    <td><strong>Canadian Properties in Database</strong></td>
+                    <td>19</td>
+                    <td>Legacy (6), Emerging (10), Events (3)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Marketing Messaging -->
+        <h2>💬 Key Marketing Messages</h2>
+
+        <div class="section">
+            <h4>Core Value Proposition:</h4>
+            <p>"The only MBA sports business course where you build a $500M revenue strategy <em>by actually manipulating a $500M budget</em>—not by reading about someone else who did."</p>
+        </div>
+
+        <div class="section">
+            <h4>Differentiation vs. Traditional Sports Business Courses:</h4>
+            <p><strong>Traditional:</strong> Read cases, write memos, discuss in class<br>
+            <strong>This Course:</strong> Simulate billion-dollar decisions in real-time, defend strategies to AI executives, compare peer vs. ChatGPT feedback quality, build portfolio piece (5-year vision for real property)</p>
+        </div>
+
+        <div class="section">
+            <h4>Target Learner:</h4>
+            <p>MBA students or professionals who want to <em>operate</em> in sports business—not just work adjacent to it. Designed for those who will negotiate media deals, manage franchises, value athlete endorsements, or invest in emerging leagues.</p>
+        </div>
+
+        <div class="section">
+            <h4>Time Commitment (Be Transparent):</h4>
+            <p>6-8 hours per week × 5 weeks = 30-40 hours total. Intensive but manageable. Students report spending ~40% on interactive scenarios (fun), ~30% on reading/videos (foundational), ~30% on assessments (portfolio-building).</p>
+        </div>
+
+        <div class="section">
+            <h4>Portfolio Outcome:</h4>
+            <p>Students leave with a complete 5-year strategic vision for a real Canadian sports property—defensible to executives, grounded in financial projections, and demonstrating mastery of media, sponsorship, branding, and heritage strategy. <strong>This becomes their calling card</strong> when interviewing for sports business roles.</p>
+        </div>
+
+        <!-- Social Proof Placeholder -->
+        <h2>🎓 Testimonials (Placeholder - To Be Collected)</h2>
+        <div class="section">
+            <p><em>Note for marketing team: Collect testimonials focused on:</em></p>
+            <ul>
+                <li>Interactive scenarios as "game-changer" vs. passive learning</li>
+                <li>Executive interviews providing insights textbooks can't</li>
+                <li>PAIRR methodology developing AI literacy they'll use in careers</li>
+                <li>Anchor Project as portfolio piece that got them interviews/jobs</li>
+                <li>Specific "aha moments" (e.g., "I finally understood why Rogers lost $5.2B")</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

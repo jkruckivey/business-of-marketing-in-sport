@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Business of Sports Marketing - MBA Course</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+            color: white;
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            color: #c5b783;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .hero .description {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.8;
+            color: #e5e5e5;
+        }
+
+        .hero .stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #c5b783;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #d0d0d0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #c5b783;
+            margin: 1rem auto 0;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 700px;
+            margin: 1rem auto 0;
+        }
+
+        /* Anchor Project Showcase */
+        .anchor-project {
+            background: linear-gradient(135deg, #f8f7f4 0%, #ffffff 100%);
+        }
+
+        .project-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .milestone {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 5px solid #c5b783;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .milestone:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+
+        .milestone-number {
+            display: inline-block;
+            background: #c5b783;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .milestone h3 {
+            font-size: 1.3rem;
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+        }
+
+        .milestone .week-label {
+            font-size: 0.9rem;
+            color: #c5b783;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .milestone p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .milestone ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+            color: #666;
+        }
+
+        .milestone li {
+            margin: 0.5rem 0;
+        }
+
+        /* Interactive Scenarios */
+        .scenarios {
+            background: #ffffff;
+        }
+
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .scenario-card {
+            background: white;
+            border: 2px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scenario-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #c5b783, #d4c89a);
+        }
+
+        .scenario-card:hover {
+            border-color: #c5b783;
+            box-shadow: 0 8px 24px rgba(197, 183, 131, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .scenario-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .scenario-card h3 {
+            font-size: 1.4rem;
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+        }
+
+        .scenario-card .scenario-type {
+            font-size: 0.85rem;
+            color: #c5b783;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+        }
+
+        .scenario-card p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .scenario-features {
+            background: #f8f7f4;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .scenario-features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .scenario-features li {
+            padding: 0.4rem 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .scenario-features li::before {
+            content: '✓ ';
+            color: #c5b783;
+            font-weight: 700;
+            margin-right: 0.5rem;
+        }
+
+        /* AI Integration */
+        .ai-features {
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            color: white;
+        }
+
+        .ai-features .section-header h2 {
+            color: white;
+        }
+
+        .ai-features .section-header h2::after {
+            background: #c5b783;
+        }
+
+        .ai-features .section-header p {
+            color: #d0d0d0;
+        }
+
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .ai-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(197, 183, 131, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .ai-card h3 {
+            font-size: 1.4rem;
+            color: #c5b783;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .ai-icon {
+            font-size: 1.8rem;
+        }
+
+        .ai-card p {
+            color: #d0d0d0;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .ai-example {
+            background: rgba(0,0,0,0.3);
+            border-left: 3px solid #c5b783;
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #e5e5e5;
+        }
+
+        .ai-example strong {
+            color: #c5b783;
+        }
+
+        /* Module Depth */
+        .module-depth {
+            background: #f8f7f4;
+        }
+
+        .module-accordion {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .module-item {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .module-header {
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .module-header:hover {
+            background: #f8f7f4;
+        }
+
+        .module-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .module-title .week-num {
+            color: #c5b783;
+            font-weight: 700;
+        }
+
+        .module-expand {
+            font-size: 1.5rem;
+            color: #c5b783;
+            transition: transform 0.3s ease;
+        }
+
+        .module-item.active .module-expand {
+            transform: rotate(180deg);
+        }
+
+        .module-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .module-item.active .module-content {
+            max-height: 1000px;
+        }
+
+        .module-body {
+            padding: 0 2rem 2rem;
+        }
+
+        .module-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .meta-item strong {
+            color: #1a1a1a;
+        }
+
+        .module-outcomes {
+            background: #f8f7f4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .module-outcomes h4 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .module-outcomes ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .module-outcomes li {
+            padding: 0.5rem 0;
+            color: #555;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .module-outcomes li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #c5b783;
+            font-weight: 700;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #c5b783 0%, #b8a56f 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #1a1a1a;
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero .stats {
+                gap: 2rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .project-timeline,
+            .scenario-grid,
+            .ai-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>The Business of Sports Marketing</h1>
+        <p class="tagline">Where Strategy Meets The Game</p>
+        <p class="description">
+            A 5-week MBA-level course that takes you inside the billion-dollar business of professional sports—
+            from media rights negotiations to athlete branding, from sponsorship ROI to emerging markets.
+        </p>
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Weeks Intensive</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">40+</span>
+                <span class="stat-label">Interactive Scenarios</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">8</span>
+                <span class="stat-label">Industry Executives</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">105</span>
+                <span class="stat-label">Total Points</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Anchor Project Section -->
+    <section class="anchor-project">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Anchor Project</h2>
+                <p>Build a comprehensive 5-year strategic vision for a real Canadian sports property—incrementally, across all 5 weeks</p>
+            </div>
+
+            <div class="project-timeline">
+                <div class="milestone">
+                    <span class="milestone-number">1</span>
+                    <div class="week-label">Week 2</div>
+                    <h3>Team Formation & Property Selection</h3>
+                    <p>Form your 5-6 person team and select from 19 curated Canadian sports properties:</p>
+                    <ul>
+                        <li><strong>Legacy:</strong> Toronto FC, Vancouver Whitecaps, Rugby Canada</li>
+                        <li><strong>Emerging:</strong> Canadian Premier League, National Lacrosse League</li>
+                        <li><strong>Events:</strong> 2026 FIFA World Cup (Toronto/Vancouver)</li>
+                    </ul>
+                    <p><strong>Deliverable:</strong> 1-page proposal with team charter (10 points)</p>
+                </div>
+
+                <div class="milestone">
+                    <span class="milestone-number">2</span>
+                    <div class="week-label">Week 3</div>
+                    <h3>Revenue Model & Sponsorship Strategy</h3>
+                    <p>Map your property's revenue ecosystem and develop sponsorship activation plans:</p>
+                    <ul>
+                        <li>Apply Week 1 revenue frameworks to your property</li>
+                        <li>Build revenue model canvas with 5 streams</li>
+                        <li>Calculate sponsorship ROI with financial projections</li>
+                    </ul>
+                    <p><strong>Tools:</strong> Revenue Canvas Builder, Sponsorship ROI Calculator</p>
+                </div>
+
+                <div class="milestone">
+                    <span class="milestone-number">3</span>
+                    <div class="week-label">Week 4</div>
+                    <h3>Brand Strategy & Competitive Analysis</h3>
+                    <p>Develop athlete brand strategies and evaluate emerging market opportunities:</p>
+                    <ul>
+                        <li>Apply athlete branding frameworks to key players</li>
+                        <li>Analyze competitive positioning in Canadian market</li>
+                        <li>Assess women's sports and emerging leagues</li>
+                    </ul>
+                    <p><strong>Focus:</strong> Brand architecture, investment evaluation</p>
+                </div>
+
+                <div class="milestone">
+                    <span class="milestone-number">4</span>
+                    <div class="week-label">Week 5</div>
+                    <h3>Strategic Vision Capstone</h3>
+                    <p>Synthesize all 5 weeks into a comprehensive strategic vision:</p>
+                    <ul>
+                        <li>1,500-2,000 word memo OR 8-10 min presentation</li>
+                        <li>5-year roadmap integrating all CLOs</li>
+                        <li>Executive Summary, Current State, Vision, Roadmap, Risk Analysis</li>
+                    </ul>
+                    <p><strong>Grading:</strong> 100 points + 5 PAIRR bonus = 105 points total</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Scenarios Section -->
+    <section class="scenarios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Interactive Learning Scenarios</h2>
+                <p>Over 40 hands-on simulations and calculators replace passive reading with active problem-solving</p>
+            </div>
+
+            <div class="scenario-grid">
+                <div class="scenario-card">
+                    <div class="scenario-icon">📊</div>
+                    <div class="scenario-type">Revenue Analysis</div>
+                    <h3>Revenue Mix Slider</h3>
+                    <p>Adjust revenue allocations across 5 streams (media, ticketing, sponsorship, merch, betting) and see real-time impact on total revenue, risk profile, and growth potential.</p>
+                    <div class="scenario-features">
+                        <ul>
+                            <li>Real-time financial modeling</li>
+                            <li>Risk-return trade-off visualization</li>
+                            <li>Benchmark against NHL/MLS averages</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-icon">💰</div>
+                    <div class="scenario-type">Pricing Strategy</div>
+                    <h3>Dynamic Pricing Simulator</h3>
+                    <p>Set ticket prices based on opponent quality, day of week, weather, and team performance. Balance revenue maximization with fan accessibility.</p>
+                    <div class="scenario-features">
+                        <ul>
+                            <li>Multi-variable pricing engine</li>
+                            <li>Revenue vs. attendance trade-offs</li>
+                            <li>Season-long financial projections</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-icon">🔄</div>
+                    <div class="scenario-type">Ecosystem Effects</div>
+                    <h3>Ecosystem Cascade Simulator</h3>
+                    <p>Invest in one revenue stream and watch the ripple effects across the entire ecosystem. See how signing a star player impacts media, sponsorship, and betting simultaneously.</p>
+                    <div class="scenario-features">
+                        <ul>
+                            <li>Interdependency modeling</li>
+                            <li>Primary & secondary revenue impacts</li>
+                            <li>ROI calculation across all streams</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-icon">📺</div>
+                    <div class="scenario-type">Media Rights</div>
+                    <h3>Streaming Wars Strategy</h3>
+                    <p>You're a streaming platform CEO. Bid on NHL rights, set subscription prices, and manage content costs. Can you achieve profitability before your cash runs out?</p>
+                    <div class="scenario-features">
+                        <ul>
+                            <li>10-year platform simulation</li>
+                            <li>Linear TV vs. streaming economics</li>
+                            <li>Subscriber LTV modeling</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-icon">🎯</div>
+                    <div class="scenario-type">Sponsorship</div>
+                    <h3>Sponsorship ROI Calculator</h3>
+                    <p>Design activation strategies for brands partnering with sports properties. Calculate impressions, engagement, and conversion to measure real marketing ROI.</p>
+                    <div class="scenario-features">
+                        <ul>
+                            <li>Multi-channel activation modeling</li>
+                            <li>Brand awareness & sales lift metrics</li>
+                            <li>Cost-per-impression benchmarking</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-icon">⚾</div>
+                    <div class="scenario-type">Betting Economics</div>
+                    <h3>Betting Market Simulator</h3>
+                    <p>Model sports betting economics from the operator's perspective. Set odds, manage risk, and understand how betting partnerships create new revenue streams for leagues.</p>
+                    <div class="scenario-features">
+                        <ul>
+                            <li>Operator margin modeling</li>
+                            <li>Partnership revenue sharing</li>
+                            <li>Fan engagement multiplier effects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-icon">🌟</div>
+                    <div class="scenario-type">Athlete Branding</div>
+                    <h3>Athlete Brand Calculator</h3>
+                    <p>Build a 10-year financial model for an elite athlete. Balance salary, endorsements, owned businesses, and post-career transition to achieve $200M net worth.</p>
+                    <div class="scenario-features">
+                        <ul>
+                            <li>Revenue stream diversification</li>
+                            <li>Owned vs. endorsed business trade-offs</li>
+                            <li>Generational wealth modeling</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-icon">🏛️</div>
+                    <div class="scenario-type">Heritage Properties</div>
+                    <h3>Legacy vs Innovation Matrix</h3>
+                    <p>Balance tradition preservation with revenue growth for heritage properties like the Hockey Hall of Fame. Map 15 strategic initiatives across competing priorities.</p>
+                    <div class="scenario-features">
+                        <ul>
+                            <li>2x2 strategic positioning matrix</li>
+                            <li>Portfolio balance analysis</li>
+                            <li>Authenticity vs. monetization tensions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="scenario-card">
+                    <div class="scenario-icon">🔮</div>
+                    <div class="scenario-type">Future Trends</div>
+                    <h3>Future Trends Predictor</h3>
+                    <p>Allocate $50M across 12 emerging trends (AI, VR/AR, new demographics, emerging sports). See 5-10 year projections across all revenue streams.</p>
+                    <div class="scenario-features">
+                        <ul>
+                            <li>Multi-scenario forecasting</li>
+                            <li>Expert prediction benchmarking</li>
+                            <li>Technology adoption curve modeling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Integration Section -->
+    <section class="ai-features">
+        <div class="container">
+            <div class="section-header">
+                <h2>AI-Enhanced Learning</h2>
+                <p>Develop AI literacy alongside sports business expertise through dual-feedback methodology</p>
+            </div>
+
+            <div class="ai-grid">
+                <div class="ai-card">
+                    <h3><span class="ai-icon">🎭</span> AI Roleplay Scenarios</h3>
+                    <p>Practice high-stakes conversations with AI-powered executives before writing your analysis:</p>
+                    <div class="ai-example">
+                        <strong>Scenario:</strong> "The $100M Question"<br><br>
+                        <em>You're presenting to the GM who just signed Connor McDavid to $100M. The CFO says you're losing $4.5M per year. Defend the deal using revenue ecosystem analysis.</em><br><br>
+                        <strong>AI Executive:</strong> Challenges your logic, probes assumptions, forces quantitative defense
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <h3><span class="ai-icon">🔄</span> PAIRR Methodology</h3>
+                    <p>Every major assessment uses Peer and AI Review + Reflection to compare feedback sources:</p>
+                    <div class="ai-example">
+                        <strong>Phase 1:</strong> Submit 80% draft<br>
+                        <strong>Phase 2:</strong> Receive BOTH peer + ChatGPT feedback<br>
+                        <strong>Phase 3:</strong> Compare: Which was more useful?<br>
+                        <strong>Phase 4:</strong> Revise using integrated insights<br>
+                        <strong>Phase 5:</strong> Reflect: How did feedback change your thinking?
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <h3><span class="ai-icon">💬</span> Strategic AI Coaches</h3>
+                    <p>Context-aware AI chat assistants provide just-in-time support throughout each module:</p>
+                    <div class="ai-example">
+                        <strong>Media Strategy Coach:</strong> "How do I value a streaming deal differently than linear TV?"<br><br>
+                        <strong>Case Analysis Coach:</strong> "What data should I emphasize in my Rogers NHL memo?"<br><br>
+                        <strong>Strategy Planning Assistant:</strong> "How do I balance heritage preservation with revenue growth?"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module Depth Section -->
+    <section class="module-depth">
+        <div class="container">
+            <div class="section-header">
+                <h2>Course Module Structure</h2>
+                <p>Click each week to explore module content, learning outcomes, and executive insights</p>
+            </div>
+
+            <div class="module-accordion">
+                <div class="module-item">
+                    <div class="module-header" onclick="toggleModule(this)">
+                        <div class="module-title">
+                            <span class="week-num">Week 1:</span> The Business of Sport - Where the Money Flows
+                        </div>
+                        <div class="module-expand">▼</div>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-body">
+                            <div class="module-meta">
+                                <div class="meta-item"><strong>Executive:</strong> Bell Media / TSN Senior Leader</div>
+                                <div class="meta-item"><strong>Case:</strong> NHL Vancouver Canucks (HBS W14149)</div>
+                                <div class="meta-item"><strong>Time:</strong> 5-6 hours</div>
+                            </div>
+                            <p>Professional sports teams face a unique business challenge: How do you maximize revenue when your competitors are also your business partners? Week 1 tackles real revenue strategy problems facing leagues and teams.</p>
+
+                            <div class="module-outcomes">
+                                <h4>Learning Outcomes:</h4>
+                                <ul>
+                                    <li>Map the 5 major revenue streams (media, ticketing, sponsorship, merchandising, betting)</li>
+                                    <li>Understand sport's unique business model characteristics (revenue sharing, competitive balance)</li>
+                                    <li>Evaluate growth potential and risk across different revenue sources</li>
+                                    <li>Analyze revenue sharing models and their strategic implications</li>
+                                </ul>
+                            </div>
+
+                            <p><strong>Key Scenarios:</strong> Revenue Mix Slider, Dynamic Pricing Simulator, Ecosystem Cascade Simulator</p>
+                            <p><strong>Assessment:</strong> 1-page reflection memo on most at-risk revenue stream</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item">
+                    <div class="module-header" onclick="toggleModule(this)">
+                        <div class="module-title">
+                            <span class="week-num">Week 2:</span> Media, Content & Fan Engagement
+                        </div>
+                        <div class="module-expand">▼</div>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-body">
+                            <div class="module-meta">
+                                <div class="meta-item"><strong>Executive:</strong> TSN or DAZN Canada Leader</div>
+                                <div class="meta-item"><strong>Case:</strong> Rogers NHL $5.2B Deal (HBS W16179)</div>
+                                <div class="meta-item"><strong>Time:</strong> 7-9 hours</div>
+                            </div>
+                            <p>Sports content is the last "appointment viewing" in the streaming era. Week 2 explores how media rights are valued, how platform economics differ, and how the Rogers/NHL mega-deal reshaped Canadian sports broadcasting.</p>
+
+                            <div class="module-outcomes">
+                                <h4>Learning Outcomes:</h4>
+                                <ul>
+                                    <li>Explore how media rights deals are valued using 5-factor framework</li>
+                                    <li>Compare linear broadcasting economics to streaming/DTC models</li>
+                                    <li>Understand fan engagement monetization through ads, subscriptions, data</li>
+                                    <li>Evaluate the Rogers $5.2B NHL deal and analyze what went wrong</li>
+                                </ul>
+                            </div>
+
+                            <p><strong>Key Scenarios:</strong> Streaming Wars Strategy, Media Rights Calculator, Platform Economics Visualizer</p>
+                            <p><strong>Assessment:</strong> 2-page strategic memo + Anchor Project Milestone 1 (team formation)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item">
+                    <div class="module-header" onclick="toggleModule(this)">
+                        <div class="module-title">
+                            <span class="week-num">Week 3:</span> Sponsorship & Betting - The Growth Engines
+                        </div>
+                        <div class="module-expand">▼</div>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-body">
+                            <div class="module-meta">
+                                <div class="meta-item"><strong>Executives:</strong> Andrew Sneyd (FanDuel) + Brand Sponsor</div>
+                                <div class="meta-item"><strong>Case:</strong> FanDuel: Betting on Sports (HBS 520038)</div>
+                                <div class="meta-item"><strong>Time:</strong> 4-5 hours</div>
+                            </div>
+                            <p>Sponsorship activation and sports betting are the fastest-growing revenue streams in professional sport. Week 3 teaches you how to calculate ROI, design activations, and integrate betting partnerships.</p>
+
+                            <div class="module-outcomes">
+                                <h4>Learning Outcomes:</h4>
+                                <ul>
+                                    <li>Understand sponsorship as the financial backbone of sport (30-40% of revenue)</li>
+                                    <li>Analyze sports betting as a new growth driver in the industry</li>
+                                    <li>Calculate how brands measure ROI in sport partnerships</li>
+                                    <li>Design sponsorship activations that deliver measurable value</li>
+                                </ul>
+                            </div>
+
+                            <p><strong>Key Scenarios:</strong> Sponsorship ROI Calculator, Betting Market Simulator, Activation Budget Builder</p>
+                            <p><strong>Assessment:</strong> Group sprint activation plan (40 pts) + Milestone 2 (revenue model)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item">
+                    <div class="module-header" onclick="toggleModule(this)">
+                        <div class="module-title">
+                            <span class="week-num">Week 4:</span> Athletes, Brands & Emerging Sports
+                        </div>
+                        <div class="module-expand">▼</div>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-body">
+                            <div class="module-meta">
+                                <div class="meta-item"><strong>Executives:</strong> Sports Agent, Don Rea (PGA), Niki da Silva, Matt Rubinoff</div>
+                                <div class="meta-item"><strong>Case:</strong> Serena Williams: Building a Brand (HBS 517050)</div>
+                                <div class="meta-item"><strong>Time:</strong> 6-7 hours</div>
+                            </div>
+                            <p>How do athletes build generational wealth? What makes women's sports and emerging leagues investable? Week 4 explores athlete branding strategy and new market opportunities.</p>
+
+                            <div class="module-outcomes">
+                                <h4>Learning Outcomes:</h4>
+                                <ul>
+                                    <li>Design athlete branding and endorsement strategies for career longevity</li>
+                                    <li>Analyze women's sport as a growing sponsorship opportunity</li>
+                                    <li>Evaluate emerging sports (Pickleball, Padel, esports) as new markets</li>
+                                    <li>Assess investment opportunities in new vs traditional sports properties</li>
+                                </ul>
+                            </div>
+
+                            <p><strong>Key Scenarios:</strong> Athlete Brand Calculator, Emerging Sports Investment Tool, Women's Sports ROI Model</p>
+                            <p><strong>Assessment:</strong> Strategic brand memo (100 pts + 5 PAIRR) + Milestone 3 (brand strategy)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module-item">
+                    <div class="module-header" onclick="toggleModule(this)">
+                        <div class="module-title">
+                            <span class="week-num">Week 5:</span> Legacy, Culture & Future of Monetization
+                        </div>
+                        <div class="module-expand">▼</div>
+                    </div>
+                    <div class="module-content">
+                        <div class="module-body">
+                            <div class="module-meta">
+                                <div class="meta-item"><strong>Executives:</strong> Jamie Dinsmore (HHOF), Keith Pelley (MLSE)</div>
+                                <div class="meta-item"><strong>Case:</strong> Hockey Hall of Fame (custom case)</div>
+                                <div class="meta-item"><strong>Time:</strong> 6-7.5 hours</div>
+                            </div>
+                            <p>Heritage properties face a unique challenge: How do you monetize history without compromising authenticity? Week 5 tackles the tension between tradition and innovation—then synthesizes all 5 weeks into your strategic vision.</p>
+
+                            <div class="module-outcomes">
+                                <h4>Learning Outcomes:</h4>
+                                <ul>
+                                    <li>Evaluate heritage properties as revenue assets (museums, halls of fame, Olympics)</li>
+                                    <li>Design strategies balancing tradition preservation with innovation</li>
+                                    <li>Assess future trends in sports business (AI, VR/AR, demographics, emerging markets)</li>
+                                    <li>Create 5-year strategic vision integrating Week 1-5 frameworks (CAPSTONE)</li>
+                                </ul>
+                            </div>
+
+                            <p><strong>Key Scenarios:</strong> Legacy vs Innovation Matrix, Heritage Property Analyzer, Future Trends Predictor</p>
+                            <p><strong>Assessment:</strong> Anchor Project Milestone 4 - Strategic Vision Capstone (105 points total)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Master Sports Business Strategy?</h2>
+            <p>Join the next cohort and transform how you analyze the business of sport</p>
+            <a href="#" class="cta-button">Get Course Details</a>
+        </div>
+    </section>
+
+    <script>
+        function toggleModule(header) {
+            const moduleItem = header.parentElement;
+            const wasActive = moduleItem.classList.contains('active');
+
+            // Close all modules
+            document.querySelectorAll('.module-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Toggle clicked module
+            if (!wasActive) {
+                moduleItem.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

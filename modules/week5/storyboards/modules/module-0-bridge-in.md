@@ -1,4 +1,5 @@
 # MODULE 0: Bridge In - The Heritage Monetization Dilemma (BOPPPS: Bridge + Pre-Assessment)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Hook students with the tradition vs. innovation tension, reframe outcomes as challenges, enable self-assessment
 
@@ -15,7 +16,6 @@
 | 3 | **ⓘ Infobox** ⬤ Required | The tradition vs. innovation problem statement | Type directly | Use **Callout** variant, urgent strategic challenge |
 | 4 | **⚙ iFrame Widget** ⬤ Required | **Heritage Strategy Pre-Assessment** (Challenges + 10-Question Quiz) | Embed widget | Combined challenge preview with self-diagnostic quiz |
 | 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
-| 6 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-0.html` | Shows how module outcomes connect to course goals |
 
 ---
 
@@ -366,7 +366,7 @@ Heritage sports properties—halls of fame, historic venues, Olympic legacies, F
 
 ### ⚙ Pre-Assessment Activity: Heritage Strategy Diagnostic
 
-**Measure your readiness: MLO 5.1, 5.2, 5.3, 5.4**
+**Measure your readiness: WLO 5.1, 5.2, 5.3, 5.4**
 
 Before diving into Week 5, test your baseline knowledge. Can you already solve heritage strategy problems? Or will this week transform how you think about balancing tradition and innovation?
 
@@ -374,19 +374,19 @@ This diagnostic combines two experiences: (1) a challenge preview showing 4 real
 
 **What this assessment reveals:**
 
-- Whether you understand heritage property business models (MLO 5.1)
-- If you can identify the tradition-innovation tension strategically (MLO 5.2)
-- Your ability to assess emerging trends impacting sports business (MLO 5.3)
-- Whether you're ready to develop 5-year strategic visions (MLO 5.4)
+- Whether you understand heritage property business models (WLO 5.1)
+- If you can identify the tradition-innovation tension strategically (WLO 5.2)
+- Your ability to assess emerging trends impacting sports business (WLO 5.3)
+- Whether you're ready to develop 5-year strategic visions (WLO 5.4)
 
 **Time commitment:** 6-8 minutes (4 challenge previews + 10 quiz questions)
-**Learning outcomes measured:** All 4 MLOs (5.1, 5.2, 5.3, 5.4)
+**Learning outcomes measured:** All 4 WLOs (5.1, 5.2, 5.3, 5.4)
 
 **Note:** This is ungraded and formative—results help you focus your learning this week.
 
 ---
 
-**Widget Purpose:** Combined challenge preview and 10-question self-diagnostic quiz covering all 4 learning outcomes (MLO 5.1-5.4)
+**Widget Purpose:** Combined challenge preview and 10-question self-diagnostic quiz covering all 4 learning outcomes (WLO 5.1-5.4)
 
 **Uplimit Implementation:**
 1. Select **iFrame** element in module builder
@@ -407,8 +407,8 @@ This diagnostic combines two experiences: (1) a challenge preview showing 4 real
 
 **Widget Features:**
 - **Screen 1:** Challenge preview with 4 strategic problems students will solve this week
-- **Screen 2:** 10-question quiz (MLO 5.1-5.4) with immediate feedback
-- **Screen 3:** Results with personalized learning path based on MLO performance
+- **Screen 2:** 10-question quiz (WLO 5.1-5.4) with immediate feedback
+- **Screen 3:** Results with personalized learning path based on WLO performance
 
 **What This Replaces:**
 This single widget combines the challenge preview text and quiz that were previously two separate elements, creating a seamless diagnostic experience.
@@ -500,34 +500,6 @@ Title: What Your Pre-Assessment Results Mean
 Your quiz results create a personalized learning path for this final week. Lower scores (0-4/14) suggest spending extra time with Module 3's Legacy vs Innovation Matrix framework and all interactive widgets—you're building heritage property strategy from scratch, which is perfect for developing strong synthesis skills. Higher scores (10-14/14) indicate solid strategic thinking, so challenge yourself with the Hockey Hall of Fame Transformation Simulation and final Strategic Vision Memo. Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently and identify where to focus your energy. Now that you know where you stand, let's solve those heritage strategy problems and create your 5-year vision.
 
 
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 0 Supports Your Final Strategic Vision:**
-
-Module 0 introduced heritage properties' unique strategic challenge: honoring tradition while embracing innovation. This tension is central to your Week 5 capstone—the culmination of all course learning.
-
-**What You Discovered:**
-- Heritage properties face legacy paradox: tradition creates brand value but can limit growth
-- Hockey Hall of Fame generates revenue from nostalgia (exhibits, archives) but must monetize future trends (digital, esports integration)
-- Strategic decisions require balancing stakeholder expectations: purists want preservation, investors want growth
-
-**How Module 0 Frames Your Capstone:**
-
-Module 0's diagnostic exercise prepares you for Week 5's **final strategic vision memo**—your course capstone. This 5-year vision synthesizes all frameworks from Weeks 1-5:
-
-- **Week 1 Ecosystem Thinking:** Your vision must show how revenue streams interconnect
-- **Week 2 Media Strategy:** Media rights (40-60%) demand sophisticated analysis
-- **Week 3 Sponsorship/Betting:** Activation strategies and ROI calculations
-- **Week 4 Athlete/Emerging Sports:** Partnership structures and growth opportunities
-- **Week 5 Heritage/Innovation:** Balancing tradition with future market trends
-
-Module 0's heritage challenge applies to ANY property in your vision: How do you preserve what makes your property valuable while adapting to changing markets?
-
-**Real-World Application:** Your capstone answers the ultimate strategic question: "How does this property create sustainable value over 5 years?" Module 0 taught you that answering requires balancing competing forces—tradition vs. innovation, stakeholders vs. markets, short-term revenue vs. long-term equity.
-
----
 
 ## Module Summary
 

@@ -1,7 +1,5 @@
 ## MODULE 3: Core Content - Revenue Streams (BOPPPS: Participatory - Interactive Discovery) • **V3 INTERACTIVE-FIRST REDESIGN**
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
-
-**Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports WLO 1.1, 1.2, 1.3)
+**Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports MLO 1.1, 1.2, 1.3)
 
 **Uplimit Structure:** Third module in Unit 1
 
@@ -22,6 +20,7 @@
 | 2 | **▶ Video** ⬛ Required | 5 Revenue Streams (animated) | 2 min | - | Upload `week1-video1-revenue-streams.mp4` |
 | 3 | **⊞ Vertical List** ⬛ Required | 5 streams at a glance | 1 min | - | Type directly |
 | 4 | **⚙ iFrame Widget** ⬛ Required | **Revenue Mix Slider** | 3 min | - | Embed `revenue-mix-slider.html` |
+| 5 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-3.html` | Shows how module outcomes connect to course goals |
 
 
 #### Element 1: Introduction Text
@@ -29,6 +28,18 @@
 
 ```markdown
 # Understanding Sport Revenue Streams
+
+**Applied question:** Which stream do you believe is the best near-term growth lever for your chosen team, and what evidence would change your mind?
+
+
+
+> **Personalized pickup from Module 1**
+>
+> You identified **{{m1_stream_choice}}** as the most volatile revenue stream and noted: “{{m1_volatility_reason}}.”
+> In this module, you’ll put that instinct to the test. If you didn’t make a selection earlier, choose one now and keep it in mind as you use the simulators.
+
+**Design note:** To avoid redundancy, we **won’t re-define** each stream here. For concise definitions, see **Module 1**. Below, each section starts with an **applied question** and a tool to explore trade-offs.
+
 
 In Module 1, you saw a preview of professional sport's five major revenue streams. Now it's time to explore each one in depth—how they work, what drives their value, and most importantly, how they interconnect.
 
@@ -124,9 +135,37 @@ Create 5 numbered items:
 
 #### Element 4: iFrame Widget - Revenue Mix Slider
 
+### Element 5: Learning Outcomes Widget
+
+**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
+
+**Uplimit Implementation:**
+
+**Widget File:** `learning-outcomes-module-3.html`
+
+**Embed Code:**
+```html
+<iframe
+  src="../../widgets/learning-outcomes-module-3.html"
+  width="100%"
+  height="600"
+  style="border: none; border-radius: 8px;"
+  title="Learning Outcomes - Module 3"
+  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Click any module outcome to see which course-level outcomes it contributes to
+- Interactive highlighting shows connections between module and course goals
+- WCAG 2.2 AA compliant with keyboard navigation and screen reader support
+
+
 ### ⚙ Interactive Activity: Revenue Mix Slider
 
-**Practice: WLO 1.1 (Map major revenue streams) & WLO 1.3 (Evaluate growth potential and risks)**
+**Practice: MLO 1.1 (Map major revenue streams) & MLO 1.3 (Evaluate growth potential and risks)**
 
 You've just learned about the five major revenue streams in professional sport. Now it's time to see how they work together as an ecosystem.
 
@@ -139,7 +178,7 @@ In this interactive activity, you'll build your own revenue portfolio by allocat
 - How different allocation strategies create different risk profiles
 
 **Time commitment:** 3 minutes
-**Learning outcomes practiced:** WLO 1.1 (Mapping revenue streams), WLO 1.3 (Evaluating growth potential and risks)
+**Learning outcomes practiced:** MLO 1.1 (Mapping revenue streams), MLO 1.3 (Evaluating growth potential and risks)
 
 ---
 
@@ -154,8 +193,8 @@ In this interactive activity, you'll build your own revenue portfolio by allocat
 - Export allocation as JSON for student portfolios
 
 **Learning Objectives:**
-- WLO 1.1: Understand relative size of each revenue stream
-- WLO 1.3: Explore trade-offs between high-growth (high-risk) and stable streams
+- MLO 1.1: Understand relative size of each revenue stream
+- MLO 1.3: Explore trade-offs between high-growth (high-risk) and stable streams
 
 **Uplimit Implementation:**
 ```html
@@ -200,6 +239,9 @@ In this interactive activity, you'll build your own revenue portfolio by allocat
 ```markdown
 # Media Rights: The Dominance
 
+**Applied question:** If national media revenue flattened next season, where could you reallocate effort to defend total revenue without eroding fan experience?
+
+
 Media rights—the fees paid by broadcasters and streaming services to air games—represent the **largest revenue stream** for most professional leagues, typically accounting for **40-60% of total revenue**.
 
 These deals are massive: the NFL's current media rights contracts total **$110 billion over 11 years** ($10B/year), while the English Premier League generates over **$5 billion per year** from domestic and international broadcast rights.
@@ -216,7 +258,7 @@ For leagues, broadcast deals provide **predictable, long-term revenue** (often 9
 
 ### ⚙ Interactive Activity: Media Rights Calculator
 
-**Practice: WLO 1.1 (Map major revenue streams) & WLO 1.3 (Evaluate growth potential)**
+**Practice: MLO 1.1 (Map major revenue streams) & MLO 1.3 (Evaluate growth potential)**
 
 You've learned that media rights are the largest revenue stream for most leagues (40-60% of total revenue). But what determines how much a media deal is worth?
 
@@ -229,7 +271,7 @@ In this interactive calculator, you'll input key factors—league size, audience
 - The difference between shared vs. local media revenue
 
 **Time commitment:** 4 minutes
-**Learning outcomes practiced:** WLO 1.1 (Understanding media rights mechanics), WLO 1.3 (Evaluating what drives growth)
+**Learning outcomes practiced:** MLO 1.1 (Understanding media rights mechanics), MLO 1.3 (Evaluating what drives growth)
 
 ---
 
@@ -277,6 +319,9 @@ Sports are the last true appointment viewing—you can't watch "later" without r
 ```markdown
 # The Streaming Wars
 
+**Applied question:** How would a mid-season shift from cable to streaming change your pricing, sponsorship inventory, or content strategy this month?
+
+
 The rise of streaming has fundamentally disrupted sports media economics. Companies like Amazon, Apple, and DAZN have entered bidding wars, driving rights values higher while introducing new business models.
 
 **How Streaming Differs from Traditional Broadcasting:**
@@ -303,7 +348,7 @@ Leagues increasingly split rights packages to maximize total revenue: sell tradi
 
 ### ⚙ Interactive Activity: Streaming Wars Decision Game
 
-**Practice: WLO 1.1 (Understand media rights options) & WLO 1.3 (Evaluate strategic trade-offs)**
+**Practice: MLO 1.1 (Understand media rights options) & MLO 1.3 (Evaluate strategic trade-offs)**
 
 Leagues increasingly face a critical question: traditional TV with guaranteed revenue, or streaming with global reach and uncertain returns? The NHL, NBA, and NFL have all split rights packages to hedge their bets.
 
@@ -316,7 +361,7 @@ In this decision game, you're the NHL commissioner choosing between two media of
 - Why leagues split rights packages instead of choosing one platform
 
 **Time commitment:** 5 minutes
-**Learning outcomes practiced:** WLO 1.1 (Understanding media rights landscape), WLO 1.3 (Evaluating strategic media decisions)
+**Learning outcomes practiced:** MLO 1.1 (Understanding media rights landscape), MLO 1.3 (Evaluating strategic media decisions)
 
 ---
 
@@ -366,6 +411,9 @@ In this decision game, you're the NHL commissioner choosing between two media of
 ```markdown
 # Ticketing: The Live Experience
 
+**Applied question:** If you had to raise total ticket yield by 8% without raising face value, what two levers would you test first—and why?
+
+
 Ticketing and live event revenue—including ticket sales, premium seating, and in-venue spending—accounts for **20-30% of total revenue** for most teams. Unlike media rights, which are negotiated at the league level and often shared, ticketing revenue is largely **local and team-controlled**.
 
 **Dynamic Pricing Revolution:**
@@ -379,7 +427,7 @@ Over a full season, dynamic pricing can **increase ticketing revenue by 15-25%**
 
 ### ⚙ Interactive Activity: Dynamic Pricing Simulator
 
-**Practice: WLO 1.1 (Understand ticketing mechanics) & WLO 1.3 (Evaluate revenue optimization strategies)**
+**Practice: MLO 1.1 (Understand ticketing mechanics) & MLO 1.3 (Evaluate revenue optimization strategies)**
 
 Ticketing generates 20-30% of team revenue, but not all games are equal. Dynamic pricing lets teams adjust prices based on demand factors—and can increase annual revenue by 15-25%.
 
@@ -392,7 +440,7 @@ In this simulator, you'll set ticket prices for Toronto Raptors games based on o
 - Which factors have the biggest impact on demand
 
 **Time commitment:** 5 minutes
-**Learning outcomes practiced:** WLO 1.1 (Understanding ticketing revenue stream), WLO 1.3 (Evaluating optimization strategies)
+**Learning outcomes practiced:** MLO 1.1 (Understanding ticketing revenue stream), MLO 1.3 (Evaluating optimization strategies)
 
 ---
 
@@ -414,8 +462,8 @@ In this simulator, you'll set ticket prices for Toronto Raptors games based on o
 - **Real Examples:** Lakers (Saturday, winning) = $400 | Pistons (Tuesday, losing) = $120
 
 **Learning Objectives:**
-- WLO 1.1: Understand ticketing revenue stream mechanics
-- WLO 1.3: Evaluate revenue optimization strategies and trade-offs
+- MLO 1.1: Understand ticketing revenue stream mechanics
+- MLO 1.3: Evaluate revenue optimization strategies and trade-offs
 
 **Uplimit Implementation:**
 ```html
@@ -450,6 +498,9 @@ In this simulator, you'll set ticket prices for Toronto Raptors games based on o
 ```markdown
 # The Premium Seating Strategy
 
+**Applied question:** You have 220 unsold club seats for a low-demand game. What bundle or segmentation move maximizes margin without discounting the brand?
+
+
 The evolution of stadium economics has shifted dramatically from a **"fill the seats"** model to a **"maximize per-capita revenue"** model. Modern venues are designed with tiered experiences that extract maximum value from affluent customers.
 
 **Premium Seating Tiers:**
@@ -465,7 +516,7 @@ The evolution of stadium economics has shifted dramatically from a **"fill the s
 
 ### ⚙ Interactive Activity: Stadium Revenue Optimizer
 
-**Practice: WLO 1.1 (Understand ticketing revenue structure) & WLO 1.3 (Evaluate revenue optimization strategies)**
+**Practice: MLO 1.1 (Understand ticketing revenue structure) & MLO 1.3 (Evaluate revenue optimization strategies)**
 
 Modern stadium economics have shifted from a "fill the seats" model to a "maximize per-capita revenue" model. Premium seating (luxury suites, club seats) represents only 10-15% of capacity but generates 40-50% of ticketing revenue.
 
@@ -478,7 +529,7 @@ In this optimizer, you'll design the seating mix for an 18,000-seat arena by adj
 - Why teams prioritize luxury suite expansion in renovations
 
 **Time commitment:** 4 minutes
-**Learning outcomes practiced:** WLO 1.1 (Understanding premium seating economics), WLO 1.3 (Evaluating revenue optimization vs. accessibility)
+**Learning outcomes practiced:** MLO 1.1 (Understanding premium seating economics), MLO 1.3 (Evaluating revenue optimization vs. accessibility)
 
 ---
 
@@ -645,6 +696,9 @@ Next up: Betting—the newest and fastest-growing revenue frontier.
 ```markdown
 # Sponsorship: Brand Alignment and Activation
 
+**Applied question:** Your top sponsor wants measurable in-venue engagement lift. Which two activation metrics would you prioritize and how would you instrument them?
+
+
 Corporate sponsorship represents **15-25% of revenue** for most professional teams, with higher percentages in markets with deep-pocketed corporations.
 
 **Major Sponsorship Categories:**
@@ -662,7 +716,7 @@ The best sponsors **activate** beyond logos—creating fan experiences that buil
 
 ### ⚙ Interactive Activity: Sponsorship ROI Calculator
 
-**Practice: WLO 1.1 (Understand sponsorship mechanics) & WLO 1.3 (Evaluate activation strategies)**
+**Practice: MLO 1.1 (Understand sponsorship mechanics) & MLO 1.3 (Evaluate activation strategies)**
 
 Sponsorship generates 15-25% of team revenue, but not all sponsorships are equal. The best sponsors activate beyond logos—creating fan experiences that build positive brand associations.
 
@@ -676,7 +730,7 @@ In this calculator, you'll input deal type (naming rights, jersey patch, categor
 - Why sponsors measure success beyond visibility
 
 **Time commitment:** 4 minutes
-**Learning outcomes practiced:** WLO 1.1 (Understanding sponsorship revenue stream), WLO 1.3 (Evaluating activation strategies)
+**Learning outcomes practiced:** MLO 1.1 (Understanding sponsorship revenue stream), MLO 1.3 (Evaluating activation strategies)
 
 ---
 
@@ -723,6 +777,9 @@ In this calculator, you'll input deal type (naming rights, jersey patch, categor
 ```markdown
 # Merchandising: Brand Extension
 
+**Applied question:** A surprise player breakout spikes jersey demand. What’s your immediate two-week merchandising move to capture upside without overstock risk?
+
+
 Merchandising and licensing revenue represents **5-10% of revenue** for most teams. Professional leagues take different approaches:
 
 **Centralized Model (NFL, NHL, MLB):** League office manages all licensing. Revenue pooled and distributed equally to all teams. Protects small-market teams from imbalance.
@@ -760,6 +817,9 @@ Create 3 tiles (1x3 horizontal layout):
 ```markdown
 # Betting & Gaming: The Emerging Frontier
 
+**Applied question:** Your jurisdiction loosens in-app betting rules. What’s the lowest-risk integration that increases ARPU without harming family segments?
+
+
 Sports betting represents the **newest and fastest-growing revenue stream**, currently **2-8% of revenue** but growing **30-40% year-over-year**.
 
 **Legalization Timeline:**
@@ -779,7 +839,7 @@ Sports betting represents the **newest and fastest-growing revenue stream**, cur
 
 ### ⚙ Interactive Activity: Betting Market Simulator
 
-**Practice: WLO 1.1 (Map emerging revenue streams) & WLO 1.3 (Evaluate growth potential and risks)**
+**Practice: MLO 1.1 (Map emerging revenue streams) & MLO 1.3 (Evaluate growth potential and risks)**
 
 Sports betting is the fastest-growing revenue stream (30-40% year-over-year growth), currently representing 2-8% of league revenue. Legalization has fundamentally changed how leagues monetize fan engagement.
 
@@ -792,7 +852,7 @@ In this simulator, you'll make strategic decisions about betting partnerships, d
 - How betting integration drives increased viewership across all content
 
 **Time commitment:** 3 minutes
-**Learning outcomes practiced:** WLO 1.1 (Understanding betting revenue stream), WLO 1.3 (Evaluating growth potential and regulatory risks)
+**Learning outcomes practiced:** MLO 1.1 (Understanding betting revenue stream), MLO 1.3 (Evaluating growth potential and regulatory risks)
 
 ---
 
@@ -852,6 +912,9 @@ The sports betting market has exploded since legalization: global sports betting
 ```markdown
 # Revenue Interdependence: The Ecosystem Principle
 
+**Applied question:** If you push hard on one stream, which other stream is most at risk—and how will you measure unintended effects?
+
+
 The critical insight that distinguishes expert sports business analysts from novices: **Revenue streams don't exist in isolation—they form an ecosystem.**
 
 Consider the Edmonton Oilers signing Connor McDavid to an **8-year, $100 million contract** ($12.5M per year). Direct revenue from his impact: ticket sales increase ~$5M/year, merchandise sales spike ~$3M/year. Total direct revenue: ~$8M/year.
@@ -869,7 +932,7 @@ This explains why teams "overpay" for stars. They're investing in **ecosystem am
 
 ### ⚙ Interactive Activity: Ecosystem Cascade Simulator
 
-**Practice: WLO 1.1 (See revenue stream interconnections) & WLO 1.2 (Understand sport's unique business model) & WLO 1.3 (Evaluate strategic investments)**
+**Practice: MLO 1.1 (See revenue stream interconnections) & MLO 1.2 (Understand sport's unique business model) & MLO 1.3 (Evaluate strategic investments)**
 
 This is where everything comes together. You've explored each revenue stream individually—now it's time to see how they form an **ecosystem** rather than a portfolio.
 
@@ -882,7 +945,7 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 - How strategic decisions create ripple effects worth $30-40M+ annually
 
 **Time commitment:** 5 minutes
-**Learning outcomes practiced:** WLO 1.1 (Seeing interconnections), WLO 1.2 (Understanding sport's unique model), WLO 1.3 (Evaluating strategic investments)
+**Learning outcomes practiced:** MLO 1.1 (Seeing interconnections), MLO 1.2 (Understanding sport's unique model), MLO 1.3 (Evaluating strategic investments)
 
 ---
 
@@ -901,9 +964,9 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 - **Export:** Save ecosystem analysis as PDF
 
 **Learning Objectives:**
-- WLO 1.1: See how revenue streams interconnect (ecosystem vs. portfolio)
-- WLO 1.2: Understand sport's unique business model (why teams "overpay")
-- WLO 1.3: Evaluate strategic investment decisions across multiple streams
+- MLO 1.1: See how revenue streams interconnect (ecosystem vs. portfolio)
+- MLO 1.2: Understand sport's unique business model (why teams "overpay")
+- MLO 1.3: Evaluate strategic investment decisions across multiple streams
 
 **Uplimit Implementation:**
 ```html
@@ -969,6 +1032,31 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 
 ---
 
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 3 Supports Your Final Strategic Vision:**
+
+Module 3 taught you the core content for all five revenue streams through interactive discovery. This deep knowledge enables sophisticated revenue modeling in your Week 5 capstone.
+
+**What You Learned:**
+- Media rights (40-60%) dominate, but streaming vs. linear creates strategic trade-offs
+- Ticketing generates 20-30% but dynamic pricing can increase by 15-25%
+- Sponsorship ROI requires activation spending (2-3× rights fees)
+- Merchandising spikes during success periods (championships drive 40-60% increases)
+- Betting (2-8% currently) is growing 30-40% annually
+
+**How to Apply This to Your Final Project:**
+
+When you build your 5-year strategic vision in Week 5, Module 3's interactive widgets provide the quantitative foundation:
+
+- **Revenue Projections:** Use the ecosystem cascade model to forecast interdependent revenue growth. Don't project streams independently—show how investment in one stream amplifies others (e.g., signing star player → ticket sales + merchandise + media value).
+- **Pricing Strategy:** Reference the dynamic pricing simulator to justify your ticketing approach. Example: "Implementing dynamic pricing (as modeled in Week 1) could increase gate receipts by 15-25% without reducing sellouts."
+- **Sponsorship Value Proposition:** Use Module 3's sponsorship ROI framework to explain what sponsors get for their investment. Your vision should quantify reach, engagement, and conversion potential.
+
+**Real-World Application:** The interactive widgets you used aren't theoretical—they're based on actual league data and industry benchmarks. When you pitch your strategic vision, reference these tools to ground your projections in reality.
+
+---
+
 ## Module 3 Complete - Transition to Module 4
 
 **What You've Learned:**
@@ -987,4 +1075,3 @@ You've learned the theory and played with individual widgets. Now it's time to p
 Ready to become a sports business strategist? Let's go!
 
 ---
-

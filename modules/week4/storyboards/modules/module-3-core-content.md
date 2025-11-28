@@ -1,4 +1,5 @@
 # MODULE 3: Core Content - Athlete Brand Frameworks (BOPPPS: Presentation)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Interactive discovery of athlete revenue streams and brand building strategies through widgets
 
@@ -7,28 +8,12 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | Type directly | Sets interactive learning approach |
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
-| 3 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
-| 4 | **▬ Text** ◐ Recommended | Reflection prompt after widget 1 | Type directly | Process learning from experimentation |
-| 5 | **⚙ iFrame Widget** ⬤ Required | **Emerging Sports Investment Tool** | Embed widget | Evaluate women's sports & emerging market opportunities |
-| 6 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize investment insights |
-| 7 | **▤ Details** ○ Optional | Deep dive: Why equity beats fees | Type directly | Mathematical proof with NPV calculations |
-| 8 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Configure in Uplimit | On-demand support for struggling students |
-=======
-=======
->>>>>>> Stashed changes
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
 | 3 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Process learning from experimentation |
 | 4 | **⚙ iFrame Widget** ⬤ Required | **Emerging Sports Investment Tool** | Embed widget | Evaluate women's sports & emerging market opportunities |
 | 5 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize investment insights |
 | 6 | **▤ Details** ○ Optional | Deep dive: Why equity beats fees | Type directly | Mathematical proof with NPV calculations |
 | 7 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Configure in Uplimit | On-demand support for struggling students |
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 ---
 
@@ -40,6 +25,10 @@
 
 ```markdown
 # Learn by Doing: Interactive Athlete Brand Exploration
+
+**Connecting to Weeks 1-3:** In Week 1, you learned leagues generate revenue through five streams—now you'll see athletes have their own five streams. In Week 2, you learned media rights valuations depend on CPM and engagement metrics—athletes similarly value their brands using reach and conversion data. In Week 3, you learned sponsorship ROI calculations and the 2-3× activation rule—athletes face the same trade-offs when deciding between endorsement fees and equity investments.
+
+**Module 2 Connection:** Remember Kevin Abrams' insight about managing salary cap "like a portfolio, not a checking account"? Athletes must apply the same thinking to their career earnings—diversifying across revenue streams rather than spending linearly.
 
 You've seen the theory from practitioners. Now it's time to experiment hands-on.
 
@@ -69,61 +58,7 @@ Ready? Let's experiment.
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 2: **NEW** - Learning Outcomes Widget
-
-**Uplimit Implementation:**
-1. Select **iFrame Widget** element
-2. Copy embed code below:
-
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-3.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Module 3 Learning Outcomes"
-  aria-label="Visual map showing which learning outcomes are practiced in Module 3"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Shows which Week 4 MLOs are practiced in this module (interactive discovery through widgets)
-- Visual badge indicating Module 3: Core Content
-- Interactive: Click to see how experimentation connects to learning outcomes
-
----
-
-## Element 3: **RENUMBERED** - Athlete Brand Calculator Widget (was Element 2)
-
-### ⚙ Interactive Activity: Athlete Brand Calculator
-
-**Practice: MLO 4.1 (Five Athlete Revenue Streams) & MLO 4.2 (Owned Assets vs. Endorsements)**
-
-You've heard the theory—now it's time to build your own athlete brand portfolio. In this interactive tool, you'll allocate $50 million across five revenue streams and watch in real-time as different strategies create dramatically different 20-year wealth outcomes. Will you prioritize endorsements for immediate cash flow, or invest heavily in owned businesses that compound over decades? The choice is yours, and the results might surprise you.
-
-This isn't a passive calculation—it's an experimentation lab. Try extreme allocations (100% endorsements vs. 100% equity), compare your strategy to Serena Williams' actual portfolio, and discover why Michael Jordan earns more from Nike royalties than he made playing basketball. You'll see the mathematics of wealth-building in action.
-
-**What you'll discover:**
-
-- How equity-based wealth compounds exponentially while fee-based income grows linearly (or declines post-career)
-- Why Serena Williams' 70% equity allocation creates 160% more wealth than a 70% endorsement strategy
-- The power of diversification vs. concentration—and when each strategy makes sense
-- Real-world portfolio comparisons: Your strategy vs. Serena, LeBron, Michael Jordan, and proven wealth builders
-
-**Time commitment:** 15-20 minutes
-**Learning outcomes practiced:** MLO 4.1 (Five athlete revenue streams), MLO 4.2 (Owned assets vs. endorsements)
-
----
-=======
 ## Element 2: Athlete Brand Calculator Widget
->>>>>>> Stashed changes
-=======
-## Element 2: Athlete Brand Calculator Widget
->>>>>>> Stashed changes
 
 **Widget Purpose:** Interactive tool for building athlete revenue portfolios and comparing 20-year wealth outcomes
 
@@ -197,15 +132,7 @@ This isn't a passive calculation—it's an experimentation lab. Try extreme allo
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 4: **RENUMBERED** - Reflection Prompt After Widget 1 (was Element 3)
-=======
 ## Element 3: Reflection Prompt After Widget 1
->>>>>>> Stashed changes
-=======
-## Element 3: Reflection Prompt After Widget 1
->>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -235,35 +162,7 @@ After experimenting with the Athlete Brand Calculator, take 2 minutes to reflect
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 5: **RENUMBERED** - Emerging Sports Investment Tool Widget (was Element 4)
-
-### ⚙ Interactive Activity: Emerging Sports Investment Tool
-
-**Practice: MLO 4.3 (Women's Sports & Emerging Sports Investment Opportunities)**
-
-Should you invest $40 million in an NWSL franchise today, or wait five years for the market to stabilize? This interactive tool puts you in the investor's seat, evaluating real opportunities in women's sports and emerging markets. You'll adjust growth rates, risk premiums, and time horizons to see how small changes in assumptions create massive differences in returns.
-
-Here's the strategic question driving this widget: Why are NWSL franchises valued at $40 million when MLS franchises cost $500 million—and does this represent a market inefficiency (opportunity) or accurate risk pricing (caution)? You'll calculate IRR, compare risk-adjusted returns to established properties, and test whether the women's sports growth thesis justifies the investment. This is where first-mover advantage meets financial analysis.
-
-**What you'll discover:**
-
-- How NWSL's 18% IRR compares to S&P 500's 10% baseline—and whether the risk premium is worth it
-- Why small changes in growth rate assumptions (20% vs. 35%) create 2-3x differences in final returns
-- The mathematics of first-mover advantage: entering at $40M vs. waiting until $80M valuation
-- Real investment scenarios: NWSL conservative, WNBA moderate, pickleball speculative—which would you choose?
-
-**Time commitment:** 15-20 minutes
-**Learning outcomes practiced:** MLO 4.3 (Women's sports and emerging sports investment opportunities)
-
----
-=======
 ## Element 4: Emerging Sports Investment Tool Widget
->>>>>>> Stashed changes
-=======
-## Element 4: Emerging Sports Investment Tool Widget
->>>>>>> Stashed changes
 
 **Widget Purpose:** Interactive tool for evaluating women's sports and emerging market investment opportunities
 
@@ -346,15 +245,7 @@ Here's the strategic question driving this widget: Why are NWSL franchises value
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 6: **RENUMBERED** - Reflection Prompt After Widget 2 (was Element 5)
-=======
 ## Element 5: Reflection Prompt After Widget 2
->>>>>>> Stashed changes
-=======
-## Element 5: Reflection Prompt After Widget 2
->>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -387,15 +278,7 @@ After experimenting with the Emerging Sports Investment Tool, reflect:
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 7: **RENUMBERED** - Details Accordion - Deep Dive: Why Equity Beats Fees (was Element 6)
-=======
 ## Element 6: Details Accordion - Deep Dive: Why Equity Beats Fees
->>>>>>> Stashed changes
-=======
-## Element 6: Details Accordion - Deep Dive: Why Equity Beats Fees
->>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -507,15 +390,7 @@ The math doesn't lie: Given sufficient time, equity always beats fees.
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 8: **RENUMBERED** - AI Chat Widget Configuration (was Element 7)
-=======
 ## Element 7: AI Chat Widget Configuration
->>>>>>> Stashed changes
-=======
-## Element 7: AI Chat Widget Configuration
->>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element
@@ -542,35 +417,6 @@ Hi! I can help you understand insights from the Athlete Brand Calculator and Eme
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 3 Supports Your Final Strategic Vision:**
-
-Module 3 taught athlete brand economics and revenue stream allocation. This expertise applies if your Week 5 capstone involves athlete partnerships or emerging sports properties.
-
-**What You Learned:**
-- Five athlete revenue streams: endorsements (fee-based income), owned businesses (equity wealth), investments (portfolio appreciation), media/content production (IP value), licensing (passive income)
-- Wealth formula: equity compounds over decades, fees don't. Michael Jordan earns more from Nike royalties ($130M/year) than entire playing career ($93M total)
-- Allocation strategy: elite athletes allocate 30% to endorsements (immediate cash flow), 70% to equity investments (long-term wealth)
-
-**How to Apply This to Your Final Project:**
-
-When you craft your 5-year strategic vision in Week 5, Module 3's athlete economics inform partnership and investment strategy:
-
-- **Athlete Deal Structure:** If your property signs athletes, reference Module 3's allocation model. Example: "Rather than paying $5M/year endorsement fees, we offer equity stakes (10% merchandise revenue share) aligning long-term incentives. Week 4 taught us equity creates wealth, fees don't."
-- **Revenue Mix Optimization:** Apply athlete portfolio thinking to your property's revenue mix. Prioritize revenue streams that build equity value (owned media platforms, IP licensing) over transaction-based income (one-time appearance fees).
-- **Investment vs. Expense Mindset:** Module 3 taught that Jordan's Nike deal was an investment (percentage of sales), not an expense (flat fee). Apply this thinking to your property's strategic decisions.
-
-**Real-World Application:** The athlete brand calculator you used models real wealth-building strategies. Your Week 5 capstone should demonstrate this same sophisticated allocation thinking.
-
----
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ## Module 3 Complete - Transition to Module 4
 
 **What You've Learned:**

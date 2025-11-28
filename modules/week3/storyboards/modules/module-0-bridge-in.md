@@ -1,4 +1,5 @@
 # MODULE 0: Bridge In - The $500 Million Paradox (BOPPPS: Bridge + Pre-Assessment)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Hook students with sponsorship ROI challenge, connect to Weeks 1-2 ecosystem thinking, enable diagnostic self-assessment
 
@@ -130,7 +131,7 @@ Ready? Let's see what you know about sponsorship economics."
 **Widget Type:** AI Roleplay (Uplimit built-in element)
 **Purpose:** Diagnostic conversation revealing knowledge gaps about sponsorship ROI calculation (formative, not graded)
 **Estimated Time:** 5-7 minutes
-**Learning Outcome Supported:** Prepares for MLO 3.3 (calculate sponsorship ROI) and MLO 3.4 (design activations)
+**Learning Outcome Supported:** Prepares for WLO 3.3 (calculate sponsorship ROI) and WLO 3.4 (design activations)
 
 ### UPLIMIT CONFIGURATION
 
@@ -278,7 +279,7 @@ where to focus your learning energy this week.
 **Type:** iFrame Widget
 **Purpose:** Combined challenge preview + quiz assessing baseline sponsorship knowledge
 **Estimated Time:** 5-7 minutes
-**Learning Outcome:** Diagnostic assessment for MLOs 3.1-3.4
+**Learning Outcome:** Diagnostic assessment for WLOs 3.1-3.4
 
 ### Widget Structure
 
@@ -427,32 +428,6 @@ Remember: This quiz isn't graded, it's a diagnostic tool to help you learn effic
 
 **Word count:** 93 words ✓
 
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 0 Supports Your Final Strategic Vision:**
-
-Module 0 introduced the challenge of proving sponsorship ROI—a problem every sports property and brand partner faces (Nike's $500M question). This challenge is central to your Week 5 capstone since sponsorship represents 15-25% of most sports properties' revenue.
-
-**What You Discovered:**
-- Sponsorship ROI is inherently difficult to prove—attribution gaps between logo exposure and purchase decisions
-- Billion-dollar budgets require justification, even when perfect attribution is impossible
-- Sports betting sponsorships offer unique advantage: closed-loop attribution (fan sees ad → places bet → sponsor tracks conversion immediately)
-
-**How to Apply This to Your Final Project:**
-
-When you create your 5-year strategic vision in Week 5, Module 0's ROI challenge shapes your sponsorship section:
-
-- **Sponsorship Value Proposition:** Your capstone must explain to potential sponsors WHY your property is worth investing in. Use Week 3 frameworks to quantify value: "Our property delivers 50M annual impressions, 5% engagement rate, targeting 18-49 demographics. Using Week 3 CPM benchmarks, we offer $X value for $Y investment."
-
-- **Activation Infrastructure:** Nike's challenge teaches that logo placement alone doesn't prove ROI. Your vision should include activation capabilities: "We offer turnkey activation across 5 channels (broadcast integrations, digital content, experiential, retail, measurement) enabling sponsors to track reach → engagement → conversion."
-
-- **Betting Integration:** If your property operates in betting-legal markets (38 US states, Canada, UK, Australia), explain betting partnership opportunity. Example: "Betting sponsors pay 20-30% premiums vs. traditional categories due to closed-loop attribution. Our property can offer 'Official Betting Partner' status with in-game integrations and exclusive promotions."
-
-**Real-World Application:** Your Week 5 capstone must answer: "Why should brands invest in OUR property vs. competitors?" Module 0 taught you that answering requires frameworks that quantify value even when data is messy—that's exactly what Week 3 teaches.
-
----
 
 ## Module Summary
 
@@ -487,8 +462,8 @@ Ready to turn those knowledge gaps into financial modeling capabilities? Let's d
 - Reading/transitions: 2-3 min
 
 **Alignment:**
-- Prepares students for MLO 3.3 (calculate sponsorship ROI)
-- Prepares students for MLO 3.4 (design activations with ROI projections)
+- Prepares students for WLO 3.3 (calculate sponsorship ROI)
+- Prepares students for WLO 3.4 (design activations with ROI projections)
 - Creates urgency and motivation for Week 3 learning
 - Reveals knowledge gaps so students know where to focus
 

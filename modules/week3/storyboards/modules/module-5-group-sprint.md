@@ -1,16 +1,16 @@
 # MODULE 5: Group Sprint - Activation Plan
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
-**Purpose:** Collaborative design of sponsorship activation with ROI projections (measures MLO 3.4)
+**Purpose:** Collaborative design of sponsorship activation with ROI projections (measures WLO 3.4)
 
 **Uplimit Structure:** Fifth module in Unit 3
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 4 | Type directly | Launches group sprint assignment |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **Infobox (Assessment)** ⬤ Required | Assignment brief and rubric preview | Type directly | Purple variant, 40 points |
-| 2A | **Infobox (Group Work)** ◐ Recommended | Group dynamics and conflict resolution | Type directly | Yellow variant, manages expectations |
-| 3 | **Details** ⬤ Required | Full assignment instructions | Type directly | Accordion - detailed requirements |
+| 2 | **Infobox (Assessment)** ⬤ Required | Assignment brief and rubric preview | Type directly | Purple variant, 40 points |
+| 3 | **Infobox (Group Work)** ◐ Recommended | Group dynamics and conflict resolution | Type directly | Yellow variant, manages expectations |
+| 4 | **Details** ⬤ Required | Full assignment instructions | Type directly | Accordion - detailed requirements |
 | 5 | **Interactive Widget** ◐ Recommended | Activation Plan Template Builder | Embed iframe | Auto-generates plan structure |
 | 6 | **Video** ◐ Recommended | Group Sprint Tips (2 min) | Upload MP4 | Best practices for collaboration |
 | 7 | **AI Chat Widget** ◐ Recommended | Activation Plan Coach | Configure in Uplimit | Socratic guidance (not answers) |
@@ -368,8 +368,8 @@ For each channel, specify:
   - 7 pts: Projections use course frameworks (CPM or engagement multiplier) but missing 2+ key assumptions (e.g., no churn rate, no CAC, no conversion funnel)
   - 8 pts: Reasonable projections with most assumptions stated (CPM, engagement rate, conversion rate), but attribution methodology unclear or overly optimistic (>300% ROI without conservative disclaimer)
 - Fully meets (9-10 pts):
-  - 9 pts: Data-driven projections using 3+ course frameworks (CPM from Module 2, engagement multiplier 35-50% from Module 3, conversion funnel from widget), attribution methodology explained (first-party data access, control group comparison), assumptions stated
-  - 10 pts: Above PLUS conservative assumptions acknowledged (e.g., "Using 35% engagement multiplier, low end of 35-50% range") AND cites widget outputs or module data as validation
+  - 9 pts: Data-driven projections using 3+ course frameworks (CPM from Module 2, engagement multiplier 35-50% from Module 3, CAC/LTV from Module 4 FanDuel case, conversion funnel from widget), attribution methodology explained (first-party data access, control group comparison), assumptions stated
+  - 10 pts: Above PLUS conservative assumptions acknowledged (e.g., "Using 35% engagement multiplier, low end of 35-50% range") AND cites widget outputs or module data as validation (e.g., "FanDuel's $400 CAC benchmark suggests our $350 assumption is realistic")
 
 **Criterion 4: Presentation Quality (5 points)**
 - Does not meet (0-3 pts): Poor formatting, unclear writing, no data visualization
@@ -492,7 +492,7 @@ Use the generated template as your GROUP STARTING POINT. Customize strategy, adj
 
 ### ⚙ Interactive Activity: Activation Plan Template Builder
 
-**Practice: MLO 3.4 (Design sponsorship activations that deliver measurable value)**
+**Practice: WLO 3.4 (Design sponsorship activations that deliver measurable value)**
 
 You're ready to design your Week 3 group sprint deliverable: a comprehensive sponsorship activation plan for a brand-betting operator partnership. This template builder scaffolds your planning process by guiding you through eight strategic questions while providing industry context and examples at every step.
 
@@ -506,7 +506,7 @@ You'll select your brand (Nike, Coca-Cola, Verizon, American Express, Bud Light,
 - The strategic questions that distinguish excellent activation plans from generic templates
 
 **Time commitment:** 15-20 minutes (initial template), 45-60 minutes (complete activation plan with group)
-**Learning outcomes practiced:** MLO 3.4 (Design sponsorship activations that deliver measurable value)
+**Learning outcomes practiced:** WLO 3.4 (Design sponsorship activations that deliver measurable value)
 
 ---
 
@@ -523,7 +523,7 @@ You'll select your brand (Nike, Coca-Cola, Verizon, American Express, Bud Light,
    - **ROI framework:** Shows calculation steps with "?" placeholders (you calculate based on YOUR tactics)
 3. Widget outputs: Plain text summary of answers (Copy to Clipboard or Download Text), NOT pre-filled templates
 
-**Learning Objective:** MLO 3.4 (Design activations) - Scaffolds plan creation
+**Learning Objective:** WLO 3.4 (Design activations) - Scaffolds plan creation
 
 **Inputs:**
 - Brand: Dropdown (Nike/Coca-Cola/Verizon/Amex/Bud Light/Custom)
@@ -849,54 +849,4 @@ Submit your activation plan, participate in peer review, reflect on Week 3 learn
 
 Ready to finalize and submit your work? Let's wrap up Week 3!
 
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 5 Supports Your Week 5 Marketing Plan:**
-
-**Module 5's Group Sprint IS YOUR FINAL PROJECT PRACTICE RUN.** The 1-page activation plan you just created is essentially a mini-version of your final project's **Slides 4-6**.
-
-**Direct Parallels Between Week 3 Assignment and Final Project:**
-
-| Week 3 Group Sprint | Final Project (Week 5) |
-|---------------------|------------------------|
-| Choose brand + operator partnership | Choose sports property + define sponsorship strategy |
-| Design activation tactics (5 channels) | Slide 5: Activation Plan (tactics, partnerships, integrations) |
-| Calculate sponsor ROI | Slide 6: Financial Snapshot (revenue potential, sponsor ROI, risks) |
-| Build activation budget ($10-15M) | Slide 4: Revenue Model (how property makes money from sponsors) |
-| Justify brand investment with data | Convince investors your property delivers sponsor value |
-
-**What You Just Practiced:**
-- **Strategic Clarity:** Defining target audience, setting measurable objectives, justifying strategic fit → Your final project needs same rigor
-- **Activation Design:** Creating specific, executable tactics across channels → Slide 5 requires this level of detail
-- **ROI Justification:** Using CPM, engagement multipliers, conversion funnels to prove ROI → Slide 6's financial projections use identical frameworks
-- **Professional Presentation:** 2-page executive summary format → Final project deck (10-12 slides) requires same polish
-
-**How to Apply This Work to Your Final Project:**
-
-**Option 1: Use Your Group Sprint as a Template**
-- Copy your activation plan's structure (strategy → tactics → budget → ROI) into Slides 4-6 of your final project
-- Replace the brand's perspective with the property's perspective: Instead of "Nike sponsors our property," write "Our property offers Nike these sponsorship benefits"
-- Keep the ROI calculation methodology—just flip who benefits (property earns $5M rights fee from Nike vs. Nike earns 36% ROI from property)
-
-**Option 2: Adapt Your Activation Tactics for Your Property**
-- If your group designed a FanDuel + Nike activation, your final project property could offer similar tactics to sponsors: "We offer title sponsors broadcast integration, in-app placement, retail activations—the same channels that delivered 36% ROI for Nike in our Week 3 analysis"
-
-**Real-World Application:**
-Sports properties create "sponsorship decks" that look EXACTLY like your Week 3 activation plan—they pitch brands with specific activation ideas, budget allocations, and ROI projections. Module 5 taught you how to build this deck. Your final project applies it to YOUR property.
-
-**Action Item:**
-1. **Save your Week 3 activation plan.** Don't delete it after submission—it's your final project template.
-2. **Export all widget data** (CPM calculations, ROI models, budget allocations) to reuse in Week 5.
-3. **Note what worked** in your group sprint (peer feedback, AI Coach insights) and apply same process to final project.
-
-**Final Project Timeline Reminder:**
-- Week 3: Learned sponsorship frameworks + practiced with activation plan ✅
-- Week 4: Athletes & Brands (adds athlete endorsement dimension to sponsorships)
-- Week 5: **Final project presentations (40% of grade)** - Everything builds to this
-
-You just completed the hardest part—designing a sponsorship activation from scratch. Your final project uses the SAME frameworks, just scaled up to a full marketing plan.
-
----
 

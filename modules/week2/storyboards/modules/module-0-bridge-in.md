@@ -1,4 +1,5 @@
 # MODULE 0: Bridge In - The $5.2 Billion Question (BOPPPS: Bridge + Pre-Assessment)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Hook students with media rights valuation paradox, connect to Week 1 ecosystem thinking, enable diagnostic self-assessment
 
@@ -122,7 +123,7 @@ Ready? Let's find out what you know—and what you don't—about valuing media r
 **Widget Type:** AI Roleplay (Uplimit built-in element)
 **Purpose:** Diagnostic conversation revealing knowledge gaps about media rights valuation (formative, not graded)
 **Estimated Time:** 5-7 minutes
-**Learning Outcome Supported:** Prepares for MLO 2.1 (media rights valuation) and MLO 2.4 (evaluating Rogers deal)
+**Learning Outcome Supported:** Prepares for WLO 2.1 (media rights valuation) and WLO 2.4 (evaluating Rogers deal)
 
 ### UPLIMIT CONFIGURATION
 
@@ -267,7 +268,7 @@ where to focus your learning energy this week.
 **Type:** iFrame Widget
 **Purpose:** Combined challenge preview + quiz assessing baseline media rights knowledge
 **Estimated Time:** 5-7 minutes
-**Learning Outcome:** Diagnostic assessment for MLOs 2.1-2.4
+**Learning Outcome:** Diagnostic assessment for WLOs 2.1-2.4
 
 ### Widget Structure
 
@@ -426,29 +427,6 @@ Remember: This quiz isn't graded, it's a diagnostic tool to help you learn effic
 
 ---
 
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 0 Supports Your Final Strategic Vision:**
-
-Module 0 introduced the challenge of valuing media rights—a problem even expert executives struggle with (Rogers' $1.5B loss proves it). This challenge is central to your Week 5 capstone since media rights represent 40-60% of most sports properties' revenue.
-
-**What You Discovered:**
-- Media rights valuation is complex—even sophisticated buyers like Rogers get it catastrophically wrong
-- Assumptions matter more than formulas (Rogers' math was fine; their assumptions about cord-cutting and streaming economics failed)
-- Billion-dollar mistakes happen when you don't stress-test scenarios (Rogers had no flexibility for disruption like COVID)
-
-**How to Apply This to Your Final Project:**
-
-When you create your 5-year strategic vision in Week 5, Module 0's cautionary tale shapes your media analysis:
-
-- **Conservative Projections:** Rogers was overoptimistic. Your capstone should include downside scenarios: "If linear viewership declines 40% (vs. projected 20%), our media revenue drops from $X to $Y. Mitigation: prioritize guaranteed fees over revenue share in Years 1-3."
-- **Flexibility Clauses:** Rogers couldn't adapt when markets shifted. Your vision should specify decision points: "If streaming subscribers <500K by Year 2, pivot from DTC to licensing model."
-- **Stress Testing:** Don't just show best-case financials. Show what happens if your key assumptions (viewership growth, cord-cutting pace, platform economics) are wrong.
-
-**Real-World Application:** The Rogers paradox—smart people with good data still losing billions—teaches humility. Your Week 5 capstone must demonstrate you've learned from their mistakes: test assumptions, plan for disruption, preserve flexibility.
-
----
-
 ## Module Summary
 
 **What You've Accomplished:**
@@ -482,8 +460,8 @@ Ready to turn those knowledge gaps into strategic capabilities? Let's define you
 - Reading/transitions: 2-3 min
 
 **Alignment:**
-- Prepares students for MLO 2.1 (media rights valuation)
-- Prepares students for MLO 2.4 (evaluating Rogers deal)
+- Prepares students for WLO 2.1 (media rights valuation)
+- Prepares students for WLO 2.4 (evaluating Rogers deal)
 - Creates urgency and motivation for Week 2 learning
 - Reveals knowledge gaps so students know where to focus
 

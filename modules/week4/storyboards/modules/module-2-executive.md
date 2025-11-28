@@ -1,36 +1,18 @@
 # MODULE 2: Executive Perspectives (BOPPPS: Participatory - Expert Input)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
-**Purpose:** Deliver expert practitioner perspectives on athlete branding, women's sports, and emerging markets
+**Purpose:** Deliver expert practitioner perspectives on NFL operations, athlete brands, and emerging sports markets
 
 **Uplimit Structure:** Third module in Unit 4 (Week 4)
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 1 | Type directly | Sets context, connects narrative |
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
-| 3 | **ⓘ Infobox (Callout)** ⬤ Required | Context about videos + viewing instructions | Type directly | Sets viewing expectations |
-| 4 | **▶ Video 1** ⬤ Required | Athlete Revenue Streams Overview (2 min) | Upload MP4 + VTT | Introduction to 5 revenue streams |
-| 5 | **▶ Video 2** ⬤ Required | Executive Interview: Sports Agent (10-12 min) | Upload MP4 + VTT | Athlete representation strategy |
-| 6 | **▶ Video 3** ⬤ Required | Executive Interview: Don Rea, PGA Tour (10-12 min) | Upload MP4 + VTT | Golf's global expansion & emerging markets |
-| 7 | **▶ Video 4** ◐ Recommended | Executive Interview: Women's Sports Expert (8-10 min) | Upload MP4 + VTT | Investment thesis for women's sports |
-| 8 | **▤ Details** ○ Optional | Video transcripts | Type directly | Accordion for text versions |
-| 9 | **◈ AI Chat Widget** ○ Optional | "Ask questions about athlete brands" | Configure in Uplimit | Named: "Athlete Brand Strategy Q&A" |
-=======
-=======
->>>>>>> Stashed changes
 | 2 | **ⓘ Infobox (Callout)** ⬤ Required | Context about videos + viewing instructions | Type directly | Sets viewing expectations |
-| 3 | **▶ Video 1** ⬤ Required | Athlete Revenue Streams Overview (2 min) | Upload MP4 + VTT | Introduction to 5 revenue streams |
-| 4 | **▶ Video 2** ⬤ Required | Executive Interview: Sports Agent (10-12 min) | Upload MP4 + VTT | Athlete representation strategy |
-| 5 | **▶ Video 3** ⬤ Required | Executive Interview: Don Rea, PGA Tour (10-12 min) | Upload MP4 + VTT | Golf's global expansion & emerging markets |
-| 6 | **▶ Video 4** ◐ Recommended | Executive Interview: Women's Sports Expert (8-10 min) | Upload MP4 + VTT | Investment thesis for women's sports |
-| 7 | **▤ Details** ○ Optional | Video transcripts | Type directly | Accordion for text versions |
-| 8 | **◈ AI Chat Widget** ○ Optional | "Ask questions about athlete brands" | Configure in Uplimit | Named: "Athlete Brand Strategy Q&A" |
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+| 3 | **▶ Video 1** ⬤ Required | Kevin Abrams (NY Giants) Interview (~32 min) | Upload MP4 + transcript | NFL operations, AI, NIL, athlete brands |
+| 4 | **▶ Video 2** ⬤ Required | Matt Rubinoff (Fairgrounds) Interview (~38 min) | Upload MP4 + transcript | Emerging sports, brand building, scaling |
+| 5 | **▤ Details** ○ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
+| 6 | **◈ AI Chat Widget** ○ Optional | "Ask questions about professional sports operations and emerging sports" | Configure in Uplimit | Named: "NFL Operations & Emerging Sports Q&A" |
 
 ---
 
@@ -43,52 +25,17 @@
 ```markdown
 You now understand the four learning outcomes that will transform how you analyze athlete brands and emerging sports opportunities. You know that elite athletes must balance five revenue streams, prioritize equity over fees, and build post-career assets during their playing years.
 
-Before exploring the frameworks in depth, you need context from practitioners who've actually built athlete brands, negotiated endorsement deals, and invested in women's sports and emerging markets. In this module, you'll hear from:
+Before exploring the frameworks in depth, you need context from practitioners who've actually operated in professional sports, managed team operations, and built emerging sports businesses. In this module, you'll hear from:
 
-- **A sports agent** who represents elite athletes and structures multi-million dollar endorsement deals
-- **Don Rea**, Chief Commercial Officer of the PGA Tour, discussing golf's global expansion into emerging markets
-- **Women's sports investment experts** who are capitalizing on the fastest-growing segment of sports business
+- **Kevin Abrams**, SVP Football Operations & Strategy, New York Giants - sharing insights on team building, data analytics in player evaluation, NIL opportunities, and how player brands intersect with team business operations
+- **Matt Rubinoff**, Co-Founder, Fairgrounds - discussing the explosive growth of emerging sports (pickleball/paddle), community-based brand building, scaling from concept to 11 locations, and the opportunity in underserved sports markets
 
 Their insights will ground the theory you're about to explore in Module 3 with real-world trade-offs, strategic decisions, and lessons learned from the field.
 ```
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 2: **NEW** - Learning Outcomes Widget
-
-**Uplimit Implementation:**
-1. Select **iFrame Widget** element
-2. Copy embed code below:
-
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-2.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Module 2 Learning Outcomes"
-  aria-label="Visual map showing which learning outcomes are practiced in Module 2"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Shows which Week 4 MLOs are practiced in this module (executive perspectives)
-- Visual badge indicating Module 2: Executive Perspectives
-- Interactive: Click to see how practitioner insights connect to frameworks
-
----
-
-## Element 3: **RENUMBERED** - Infobox Content (was Element 2)
-=======
 ## Element 2: Infobox Content
->>>>>>> Stashed changes
-=======
-## Element 2: Infobox Content
->>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -96,392 +43,305 @@ Their insights will ground the theory you're about to explore in Module 3 with r
 3. Copy markdown below:
 
 ```markdown
-Title: ◉ Executive Insights: Athlete Brands & Emerging Sports
+Title: ◉ Executive Insights: NFL Operations & Emerging Sports
 
-This module features four videos: one short concept video (2 minutes) introducing athlete revenue streams, followed by three executive interviews (10-12 minutes each) with practitioners sharing insights from athlete representation, emerging sports markets, and women's sports investment. Watch for how athletes balance endorsement income versus equity building, real examples of post-career transition strategies, and why women's sports offer better ROI than established properties. Videos support MLO 4.1 (revenue streams), MLO 4.2 (owned vs endorsed assets), and MLO 4.3 (emerging opportunities). Total viewing time: 32-38 minutes.
+This module features two full executive interviews with practitioners from professional sports operations and emerging sports businesses:
+
+**Kevin Abrams (NY Giants, ~32 min)** - SVP Football Operations & Strategy shares how the Giants use AI for talent evaluation, manage the salary cap as a portfolio (not a checking account), balance coaching urgency vs. front office long-term thinking, and navigate the NIL era where players arrive as established brands.
+
+**Matt Rubinoff (Fairgrounds, ~38 min)** - Co-founder discusses building a national pickleball/paddle brand from zero to 75,000 members across 11 locations, the "white space" between public and private clubs, scaling through vacant retail spaces, intentional brand/marketing focus (vs. traditional club operators), and why emerging sports offer first-mover advantages.
+
+**Viewing Guide:**
+- Kevin: Watch for AI/data transformation, salary cap strategy, NIL athlete brand intersection, player investment opportunities
+- Matt: Watch for proof-of-concept methodology, brand differentiation strategy, geographic expansion logic, demographic targeting
+
+Videos support WLO 4.1 (revenue streams), WLO 4.2 (owned vs endorsed assets), WLO 4.3 (emerging opportunities), and WLO 4.4 (brand building).
+
+Total viewing time: ~70 minutes
 ```
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 4: **RENUMBERED** - Video 1 - Athlete Revenue Streams Overview (was Element 3)
-=======
-## Element 3: Video 1 - Athlete Revenue Streams Overview
->>>>>>> Stashed changes
-=======
-## Element 3: Video 1 - Athlete Revenue Streams Overview
->>>>>>> Stashed changes
+## Element 3: Video 1 - Kevin Abrams (NY Giants) Interview
 
-**File:** `week4-video1-athlete-revenue-streams.mp4`
-**Duration:** 2 minutes
-**VTT Transcript:** `week4-video1-athlete-revenue-streams.vtt`
-**Video Title:** "Five Athlete Revenue Streams"
-**Video Caption:** "2-minute overview of endorsements, owned businesses, investments, media/content, and licensing"
+**File:** `Interviews/Kevin Abrams, SVP Football Operators and Strategy New York Giants.mp4`
+**Duration:** ~32 minutes
+**Transcript:** `Interviews/Kevin Abrams, transcript.txt`
+**Video Title:** "Kevin Abrams: NFL Operations, AI in Scouting, and Athlete Brand Evolution"
+**Video Caption:** "NY Giants SVP shares insights on team building, data transformation, NIL era, and player investment opportunities"
 
-### FULL SCRIPT:
+### Interview Content - Key Topics Covered:
 
-```
-[OPENING - 0:00-0:15]
-[ON-SCREEN: Five revenue stream icons appearing]
+**Career Journey (00:00-04:20)** - Path from Canadian sports-obsessed kid to NY Giants leadership, 6-7 internships before first full-time role, importance of geographic/financial flexibility, networking, and seizing opportunities
 
-NARRATOR:
-Elite athletes today have access to five distinct revenue streams. Understanding these
-streams—and which ones create long-term wealth—is essential for building generational value.
+**Day-to-Day Role (04:42-07:01)** - 7-day in-season cycles, week-to-week roster management, long-term off-season planning, project management ensuring tools improve year-over-year
 
-Let's break them down.
+**AI & Data Transformation (07:31-09:40)** - Enterprise ChatGPT rollout, quality of prompts dictates output, HR applications for talent pipeline/recruitment, learning from Fortune 500 companies, rapid evolution (weekly improvements)
 
----
+**Salary Cap Management (10:36-13:41)** - Evolution from "checking account" to "portfolio" approach, consensus building across different timelines (coaches vs. GMs), opportunity cost of cap dollars, investment committee framework
 
-[SECTION: THE FIVE STREAMS - 0:15-1:45]
-[ANIMATION: Each stream appears with example]
+**Data Evolution in NFL (14:27-17:53)** - From basic combine metrics (1999) to Pro Football Focus, tracking data, computer vision, next-gen stats; early adopters vs. slow coaching adoption; data now integrated into every department (equipment room uses it for collectibles tracking)
 
-NARRATOR:
-Stream #1: Endorsements & Sponsorships (Fee-Based Income)
-Nike pays LeBron James $30M/year to endorse their products. This is traditional endorsement
-income—substantial, but it's a fee. When the contract ends, the income stops.
+**Ownership & Business Integration (18:31-22:54)** - $10B "mom-and-pop shop," daily owner access, quick decision-making, football-business collaboration (content, sponsorships, player marketing); heavyweight sponsors (Moody's, MetLife) as advisory board for facility planning
 
-Stream #2: Owned Businesses (Equity-Based Wealth)
-Serena Williams launches S by Serena, her own clothing line. She owns 100% equity. If the
-business grows to $100M valuation, she captures 100% of that value. This is wealth building,
-not just income.
+**NIL & Player Brands (22:54-26:54)** - Players arrive as brands from college NIL, Giants help connect players to corporate partners, reducing off-field distractions while increasing earning potential, win-win-win for players/sponsors/team
 
-Stream #3: Investment Portfolios (Compounding Returns)
-Serena Ventures: $111M fund investing in startups founded by women and people of color.
-Investments compound over time. LeBron's early investment in Blaze Pizza turned $1M into
-$40M+.
+**Career Advice (23:38-26:07)** - Know your geographic/financial flexibility, say yes to everything early, do research before meetings (don't say "I just want to work in sports"), be specific about goals while remaining open
 
-Stream #4: Media & Content Production (IP Ownership)
-LeBron's SpringHill Entertainment produces films and TV shows. Valued at $750M. The IP
-he creates generates revenue indefinitely—unlike playing basketball, which ends at retirement.
+**10-Year Outlook (26:19-28:42)** - Possible continued role at Giants, intrigued by multi-club ownership models, private equity's sports role, finding competitive advantages through progressive thinking
 
-Stream #5: Licensing & Intellectual Property (Passive Income)
-Michael Jordan's Nike royalty deal: He earns $130M/year from Air Jordan sales—more than his
-entire playing career earnings ($93M total). This is the power of IP licensing.
+**NFL Future (28:42-31:16)** - Safer game (progress needed), 18-game season likely, tech-enabled officiating (tracking eliminates subjective calls), potential competition from international leagues/sports, international expansion critical
 
----
+**Viewing Guide for Students:**
+- AI Implementation: How Giants balance innovation with quality control (enterprise ChatGPT, prompt engineering)
+- Portfolio Thinking: Salary cap as fund management, not expense tracking
+- NIL Intersection: Athletes as brands BEFORE arriving, team's role in monetization support
+- Data Ubiquity: From threat (Moneyball anxiety) to necessity across all functions
+- Consensus Building: Balancing coach urgency (7-day cycles) with GM long-term vision
 
-[CONCLUSION - 1:45-2:00]
-[ANIMATION: Five streams with distinction: Income vs. Wealth]
-
-NARRATOR:
-Key insight: Streams 1-2 provide income. Streams 2-5 build wealth. The highest-earning retired
-athletes prioritize equity and ownership over fee-based endorsements.
-
-Successful athletes build wealth engines, not just income streams.
-
-[END SCREEN]
+**Embed Code:**
+```html
+<iframe
+  src="[Uplimit video URL - Interviews/Kevin Abrams.mp4]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Kevin Abrams - NY Giants SVP on NFL Operations and AI"
+  aria-label="Video interview with Kevin Abrams, NY Giants SVP Football Operations, discussing team building, AI in scouting, salary cap management, NIL athlete brands, and NFL future"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 5: **RENUMBERED** - Video 2 - Sports Agent Interview (was Element 4)
-=======
-## Element 4: Video 2 - Sports Agent Interview
->>>>>>> Stashed changes
-=======
-## Element 4: Video 2 - Sports Agent Interview
->>>>>>> Stashed changes
+## Element 4: Video 2 - Matt Rubinoff (Fairgrounds) Interview
 
-**File:** `week4-video2-sports-agent-interview.mp4`
-**Duration:** 10-12 minutes
-**VTT Transcript:** `week4-video2-sports-agent-interview.vtt`
-**Video Title:** "Sports Agent Perspective: Representing Elite Athletes"
-**Video Caption:** "Sports agent shares insights on athlete brand building and endorsement strategy"
+**File:** `Interviews/Matt R, Fairgrounds.mp4`
+**Duration:** ~38 minutes
+**Transcript:** `Interviews/Matt R, Transcript.txt`
+**Video Title:** "Matt Rubinoff: Building a National Pickleball Brand from Zero to 75K Members"
+**Video Caption:** "Fairgrounds co-founder on emerging sports growth, brand differentiation, and scaling across 11 locations"
 
-### Interview Structure:
+### Interview Content - Key Topics Covered:
 
-**Opening (1 min):** Agent introduction, role, experience representing elite athletes
+**10-Year-Old Matt (00:00-01:06)** - Curious troublemaker, athlete, sports-obsessed, not much has changed
 
-**Topic 1 (3-4 min): Endorsement vs. Owned Business Strategy**
-- Real-world deal negotiations: When do you advise clients to take endorsement fees vs. invest in owned businesses?
-- Example decisions: $10M Nike endorsement or $2M to launch own brand?
-- Risk profiles and capital requirements
-- Why younger athletes need income (cash flow) while peak-career athletes should build equity
+**What is Fairgrounds (01:27-03:29)** - Public racquet club (pickleball/paddle), solving "white space" between unusable public facilities and exclusive private clubs with initiation fees/dress codes, focus on accessibility and community
 
-**Topic 2 (3-4 min): Post-Career Transition Planning**
-- How agent structures deals to support post-retirement wealth
-- Building assets during playing career that sustain value after retirement
-- Example: Why Magic Johnson's business empire generated more wealth than his playing career
-- Common mistakes: Athletes who chase endorsement income instead of building equity
+**Brand & Lifestyle Vision (03:57-07:26)** - Co-founder Drummond Mun roe (cannabis brand Suprette background), recognized wide demographic playing pickleball (16-year-olds with 75-year-olds), accessibility like ping pong but high skill ceiling, 75K members across 5 locations (6 more opening in 3 months)
 
-**Topic 3 (2-3 min): Women Athletes' Unique Opportunities**
-- How women athletes' brand strategies differ from men's
-- First-mover advantages in undervalued markets
-- Example: Why Serena Williams' investments in women's sports create compounding returns
-- Pay equity issues and how smart athletes navigate them
+**Proof of Concept to Scale (08:06-12:38)** - Built 5-court Best Buy site at Yonge/Eglinton, 7,000 members in 3 months with zero marketing (utilization through the roof), validated demand, shifted from temporary outdoor to permanent indoor locations for year-round operation and term certainty
 
-**Closing (1 min):** Advice for students analyzing athlete brand strategies
+**Competitive Differentiation (13:29-17:20)** - Brand/community/aesthetic vs. franchise operators, colorful fun environments vs. sterile courts, marketing-first team (not racquet sports operators), Swedish paddle brand acquisition (clean design vs. "energy drink for 14-year-old boy")
 
----
+**Intentional Scaling Strategy (17:20-20:18)** - First-mover advantage critical (many clubs opened last year), data-driven market analysis (demographics, comparables like rec rooms), GTA + Kingston/Ottawa + Alberta/BC expansion, regional managers to support quality control across geographies
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 6: **RENUMBERED** - Video 3 - Don Rea, PGA Tour Interview (was Element 5)
-=======
-## Element 5: Video 3 - Don Rea, PGA Tour Interview
->>>>>>> Stashed changes
-=======
-## Element 5: Video 3 - Don Rea, PGA Tour Interview
->>>>>>> Stashed changes
+**Pickleball vs. Paddle (20:29-23:01)** - Pickleball = NASCAR (North American phenomenon), Paddle = F1 (international sport), paddle more physical but still accessible, switching from tennis to paddle (personally addicted), both invented in 60s/70s but different growth trajectories
 
-**File:** `week4-video3-don-rea-pga-interview.mp4`
-**Duration:** 10-12 minutes
-**VTT Transcript:** `week4-video3-don-rea-pga-interview.vtt`
-**Video Title:** "Don Rea, PGA Tour: Golf's Global Expansion"
-**Video Caption:** "PGA Tour CCO discusses emerging markets and international growth strategy"
+**Business Model & Revenue (28:38-33:02)** - Court utilization as key metric, public model (not capped membership), learning customer spend patterns/frequency, difficult booking platforms (on 3rd vendor), events/sponsorships/programming (singles nights with Tinder partnership), brand protection critical for partnerships
 
-### Interview Structure:
+**5-Year Vision (33:39-36:01)** - Scale across Canada (no immediate US plans - many failed cross-border), independent operators struggling (acquisition targets), brand allows expansion beyond racquet sports (basketball, golf simulators, but focus prevents confusion for now)
 
-**Opening (1 min):** Don Rea introduction, role as Chief Commercial Officer of PGA Tour
+**10-Year Personal Outlook (36:31-37:11)** - Hopes to be on court playing at 80 (like his mom), strategic high-level work vs. operational, more court time as reward
 
-**Topic 1 (3-4 min): Emerging Sports Markets Strategy**
-- PGA Tour's international expansion: Asia, Middle East, Latin America
-- Why golf is investing in emerging markets vs. saturated North American market
-- How to evaluate which markets offer best ROI
-- Infrastructure requirements and timelines for market development
+**Career Advice for Emerging Sports (23:51-28:05)** - Assess if trend is flash-in-pan vs. has legs, pickleball's wide demographic + high ceiling = staying power, proof of concept critical (get feedback), understand accessibility/year-round viability/market size, business model must make money (events? product? community?), protect what makes it unique for eventual sale/scale
 
-**Topic 2 (3-4 min): Athlete Brands in Emerging Sports**
-- How athletes leverage emerging markets to build global brands
-- Example: Phil Mickelson, Brooks Koepka navigating LIV Golf controversy
-- When athletes should prioritize established leagues vs. emerging opportunities
-- Risk vs. reward calculus
+**Viewing Guide for Students:**
+- Proof of Concept Methodology: 5 courts, 3 months, 7K members, zero marketing = validated demand
+- Brand as Differentiator: Marketing team first, not club operators (opposite of competition)
+- White Space Identification: Between unusable public and inaccessible private - underserved market
+- Geographic Expansion: Data-driven (demographics, comparables), regional managers for quality
+- Revenue Model: Open membership (not capped), court utilization, programming, partnerships
+- Emerging Sport Assessment: Wide demographic + accessibility + high ceiling = legs vs. flash-in-pan
 
-**Topic 3 (2-3 min): Women's Golf and LPGA Growth**
-- Why women's golf is fastest-growing segment
-- Investment opportunities in women's professional golf
-- How PGA Tour collaborates with LPGA
-- Sponsorship trends favoring women's sports
-
-**Closing (1 min):** Advice for students evaluating emerging sports investments
+**Embed Code:**
+```html
+<iframe
+  src="[Uplimit video URL - Interviews/Matt R, Fairgrounds.mp4]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Matt Rubinoff - Fairgrounds Co-Founder on Emerging Sports"
+  aria-label="Video interview with Matt Rubinoff, Fairgrounds co-founder, discussing pickleball/paddle brand building, scaling from concept to 75K members, competitive differentiation, and emerging sports opportunities"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 7: **RENUMBERED** - Video 4 - Women's Sports Investment Expert (was Element 6)
-=======
-## Element 6: Video 4 - Women's Sports Investment Expert
->>>>>>> Stashed changes
-=======
-## Element 6: Video 4 - Women's Sports Investment Expert
->>>>>>> Stashed changes
-
-**File:** `week4-video4-womens-sports-expert.mp4`
-**Duration:** 8-10 minutes
-**VTT Transcript:** `week4-video4-womens-sports-expert.vtt`
-**Video Title:** "Investing in Women's Sports: The Growth Opportunity"
-**Video Caption:** "Expert perspective on why women's sports represent highest-growth investment in sports business"
-
-### Interview Structure:
-
-**Opening (1 min):** Expert introduction, investment experience in women's sports
-
-**Topic 1 (3-4 min): The Women's Sports Investment Thesis**
-- Growth rates: NWSL attendance +48% (2022-2023), WNBA viewership +21%
-- Valuation gaps: NWSL franchises $40M vs. MLS $500M—why the 12x difference?
-- First-mover advantages: Early investors capturing 10-15x returns
-- Comparable exits: Recent franchise sales demonstrating valuation growth
-
-**Topic 2 (2-3 min): Risk Factors and Challenges**
-- Revenue challenges: Why women's sports still generate 1/10th of men's
-- Profitability timelines: When will leagues become profitable?
-- Media rights negotiations: Current deals vs. future potential
-- Regulatory and governance issues
-
-**Topic 3 (2 min): Athlete Investment Opportunities**
-- Why athletes are investing in women's sports (Serena Williams, Megan Rapinoe, Sue Bird)
-- Strategic vs. financial motivations
-- How athlete investments create network effects and legitimacy
-- Future outlook: Will women's sports close the valuation gap?
-
-**Closing (1 min):** Advice for students evaluating women's sports opportunities
-
----
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 8: **RENUMBERED** - Details Accordion - Video Transcripts (was Element 7)
-=======
-## Element 7: Details Accordion - Video Transcripts
->>>>>>> Stashed changes
-=======
-## Element 7: Details Accordion - Video Transcripts
->>>>>>> Stashed changes
+## Element 5: Details Accordion - Video Transcripts & Executive Bios
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
 2. Copy markdown below:
 
 ```markdown
-Title: Video Transcripts (Text Versions)
+Title: Video Transcripts & Executive Bios (Text Versions)
 
-[Expand for text versions of video content]
+[Expand for text versions of video content and executive backgrounds]
 
-**Video 1: Five Athlete Revenue Streams**
-[Full transcript of Video 1 - see FULL SCRIPT above]
+## Kevin Abrams - SVP Football Operations & Strategy, New York Giants
 
-**Video 2: Sports Agent Interview**
-[Full transcript of sports agent interview to be added after recording]
+**Full Transcript:** See `Interviews/Kevin Abrams, transcript.txt`
 
-**Video 3: Don Rea, PGA Tour Interview**
-[Full transcript of Don Rea interview to be added after recording]
+**Bio:**
+Kevin Abrams serves as SVP of Football Operations and Strategy for the New York Giants, a $10 billion organization and one of the NFL's most storied franchises. He oversees team building, salary cap management, data analytics implementation, and cross-functional strategy connecting football operations with business operations.
 
-**Video 4: Women's Sports Investment Expert**
-[Full transcript of women's sports expert interview to be added after recording]
+His career path exemplifies persistence: 6-7 internships across sports organizations before landing his first full-time role with the Giants in 1999. Over 25+ years, he's evolved from entry-level to senior leadership, managing the salary cap through multiple eras (from "checking account" thinking to sophisticated portfolio management), pioneering data analytics adoption (from resistance to integration across all departments), and navigating transformational changes like enterprise AI implementation and the NIL era where college athletes arrive as established brands.
 
-These transcripts are provided for accessibility and for students who prefer
-reading to watching videos.
+**Career Highlights:**
+- 25+ years with NY Giants organization ($10B valuation, most valuable NFL franchise)
+- Led enterprise AI rollout (ChatGPT for talent evaluation, HR, operations)
+- Transformed salary cap management from expense tracking to investment portfolio framework
+- Built data/analytics function from scratch to full organizational integration
+- Navigates NIL era: connecting player brands with Giants' corporate partners (Moody's, MetLife, etc.)
+- Serves on NFL committees including officiating technology advancement
+
+**Industry Expertise:**
+- AI/ML in talent evaluation and player development
+- Salary cap optimization and consensus building across stakeholders
+- Data-driven decision making (Pro Football Focus, tracking data, computer vision)
+- NIL athlete brand management and corporate partnership integration
+- Team building across compressed timelines (7-day in-season cycles vs. long-term planning)
+
+---
+
+## Matt Rubinoff - Co-Founder, Fairgrounds
+
+**Full Transcript:** See `Interviews/Matt R, Transcript.txt`
+
+**Bio:**
+Matt Rubinoff is co-founder of Fairgrounds, a public racquet club brand that has grown from concept to 75,000 members across 11 locations in just 3 years. Fairgrounds focuses on emerging racquet sports (pickleball and paddle), targeting the "white space" between unusable public facilities and exclusive private clubs with prohibitive membership costs.
+
+Prior to Fairgrounds, Matt founded Stackt Market (stylized as "Stacked"), an innovative shipping container-based retail and community space in Toronto that activated temporary land through experiential retail, food, and events. This experience taught him temporary land activation strategies that informed Fairgrounds' initial model, though the company has since evolved to permanent indoor locations with long-term leases.
+
+**Career Highlights:**
+- Built Fairgrounds from 0 to 75,000 members in 3 years
+- Scaled from 1 proof-of-concept location (5 courts, 7K members in 3 months, zero marketing) to 11 locations across Canada
+- 6 additional locations opening in next 3 months (GTA, Kingston, Ottawa, Alberta, BC)
+- Acquired Swedish paddle racket brand for product/design integration
+- Partnership with Tinder for singles night programming (creative brand activations)
+- Pioneered "marketing-first" approach vs. traditional club operators
+
+**Industry Expertise:**
+- Emerging sports market assessment (flash-in-pan vs. sustainable growth)
+- Proof-of-concept methodology and rapid validation
+- Brand building and community development
+- Geographic expansion strategy (data-driven market selection)
+- Revenue model optimization (court utilization, programming, partnerships)
+- Competitive differentiation through brand/aesthetic/experience
+
+**Fairgrounds Portfolio:**
+- 11 current locations (5 operating, 6 opening in 3 months)
+- 75,000+ members
+- Pickleball and paddle (padel) courts
+- National expansion: Ontario (GTA, Kingston, Ottawa), Alberta, British Columbia
+- Future considerations: Basketball courts, golf simulators, other racquet sports
+
+These transcripts are provided for accessibility and for students who prefer reading to watching videos.
 ```
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 9: **RENUMBERED** - AI Chat Widget Configuration (was Element 8)
-=======
-## Element 8: AI Chat Widget Configuration
->>>>>>> Stashed changes
-=======
-## Element 8: AI Chat Widget Configuration
->>>>>>> Stashed changes
+## Element 6: AI Chat Widget Configuration
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element
 2. Configure with details below:
 
-**Widget Name:** "Athlete Brand Strategy Q&A"
+**Widget Name:** "NFL Operations & Emerging Sports Q&A"
 
 **System Prompt:**
 ```
-You are a knowledgeable assistant helping MBA students understand athlete brand building, women's sports investment, and emerging sports opportunities. Answer questions about the video content covering:
+You are a knowledgeable assistant helping MBA students understand professional sports operations and emerging sports business based on Kevin Abrams' and Matt Rubinoff's interviews.
 
-- Five athlete revenue streams (endorsements, owned businesses, investments, media/content, licensing)
-- Owned assets vs. endorsement strategy
-- Post-career transition planning
-- Women's sports investment thesis (growth rates, valuation gaps, first-mover advantages)
-- Emerging sports markets (international expansion, new leagues)
+Kevin Abrams (NY Giants SVP) covered: (1) AI/data transformation in NFL scouting and operations, (2) salary cap management evolution from "checking account" to "portfolio" thinking, (3) NIL era where athletes arrive as brands from college, (4) consensus building between coaches (short-term) and GMs (long-term), (5) business-football integration (player marketing with corporate sponsors), (6) NFL future (18-game season, tech officiating, international expansion).
 
-Provide clear, business-focused explanations with real examples (Serena Williams, LeBron James, Michael Jordan) when possible. Help students understand strategic trade-offs and financial implications.
+Matt Rubinoff (Fairgrounds co-founder) covered: (1) Proof of concept methodology (5 courts → 7K members in 3 months, zero marketing), (2) Brand differentiation strategy (marketing-first team vs. club operators), (3) White space identification (between unusable public and exclusive private), (4) Geographic expansion logic (data-driven market selection, regional managers), (5) Revenue model (court utilization, programming, partnerships), (6) Emerging sport assessment (wide demographic + accessibility + high ceiling = legs vs. flash-in-pan).
+
+Provide clear, business-focused explanations with specific examples from the interviews when possible. Help students understand strategic frameworks, operational trade-offs, and lessons learned from practitioners.
 ```
 
 **Welcome Message:**
 ```
-Hi! I can help explain concepts from the athlete brand and emerging sports videos. What questions do you have about how elite athletes build wealth, women's sports investment opportunities, or emerging markets strategy?
+Hi! I can help explain concepts from Kevin Abrams' (NY Giants) and Matt Rubinoff's (Fairgrounds) interviews. Kevin discussed NFL operations, AI, NIL athlete brands, and salary cap strategy. Matt discussed emerging sports growth, brand building, and scaling pickleball/paddle. What questions do you have?
 ```
 
 **Show System Prompt to User:** No
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 2 Supports Your Final Strategic Vision:**
-
-Module 2 delivered practitioner insights from sports agents, PGA executives, and women's sports experts. This real-world perspective grounds your Week 5 athlete partnership strategy in operational reality.
-
-**What You Learned:**
-- Sports agents structure deals to maximize athlete equity, not just endorsement fees
-- Global expansion (PGA's model) requires understanding local markets, cultural dynamics, and infrastructure gaps
-- Women's sports experts see 300% faster growth than men's sports despite 1/10th the valuation—massive arbitrage opportunity
-- Athlete brand building requires 10-year thinking, not quarterly thinking
-
-**How to Apply This to Your Final Project:**
-
-When you design your 5-year strategic vision in Week 5, reference Module 2's executive frameworks:
-
-- **Athlete Partnership Strategy:** If your property involves athlete deals, cite the sports agent framework. Example: "Following Week 4's agent model, we offer athletes equity stakes (5-10% of merchandise revenue) vs. flat endorsement fees, aligning long-term incentives."
-- **Global Expansion:** If your property has international ambitions, apply PGA's expansion framework from Module 2. Don Rea taught you to assess market readiness, not just market size.
-- **Women's Sports Positioning:** If your property targets women's sports, reference Module 2's expert insights to justify growth projections and valuation premiums.
-
-**Real-World Application:** The executives you heard from evaluate athlete partnerships and market opportunities daily. Your Week 5 capstone will undergo similar scrutiny—Module 2 taught you how practitioners defend athlete brand strategies.
-
----
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ## Module 2 Complete - Transition to Module 3
 
 **What You've Learned:**
-You now have expert perspective on athlete brand building from practitioners who've negotiated deals, structured investments, and expanded into emerging markets. You understand:
+You've heard from two practitioners operating at opposite ends of the sports industry: Kevin Abrams managing the NY Giants' $10B operation in the world's most established sports league, and Matt Rubinoff building Fairgrounds from zero to 75K members in emerging sports. You understand:
 
-- The five athlete revenue streams and which create wealth vs. income
-- When athletes should prioritize endorsements vs. owned businesses
-- Why women's sports and emerging markets offer higher ROI than established properties
-- How post-career transition planning must start during peak playing years
+- How AI and data transformed from threat to necessity in professional sports
+- Why salary cap management requires portfolio thinking and consensus building
+- How NIL changed athlete brand dynamics (players arrive as brands from college)
+- The methodology for validating emerging sports opportunities through proof of concept
+- Why brand differentiation beats operational excellence in new markets
+- How to identify "white space" opportunities between market extremes
 
 **Key Takeaways:**
-- Endorsements provide income; ownership builds wealth
-- Athletes at peak career should prioritize equity investments over fee-based deals
-- Women's sports growing 300% faster than men's, creating first-mover opportunities
-- Post-retirement brand value declines 60-80% unless sustained by owned assets
-- International markets offer growth but require patient capital and local expertise
+- **AI deployment requires quality prompts, not just technology** - Giants learned enterprise ChatGPT outputs depend on input precision
+- **Salary cap = portfolio management** - Evolution from "checking account" expense tracking to investment committee consensus building with opportunity costs
+- **NIL era = athlete brand facilitation** - Teams connect established player brands with corporate partners, reducing distractions while increasing earnings
+- **Proof of concept before scale** - Fairgrounds: 5 courts → 7K members in 3 months with $0 marketing = validated demand
+- **Marketing-first beats operational expertise** - Fairgrounds hired marketers who love sports, not club operators stuck in "archaic" models
+- **White space identification** - Emerging opportunities exist between unusable public options and exclusive private clubs
+- **Emerging sport viability** - Wide demographic + accessibility + high skill ceiling = staying power (vs. flash-in-pan)
 
 **Up Next: Module 3 - Interactive Discovery**
-Now that you've heard from practitioners, it's time to explore these concepts hands-on. In Module 3, you'll interact with widgets that let you:
+Now that you've heard from practitioners operating in established (NFL) and emerging (pickleball) sports, it's time to apply these frameworks hands-on. In Module 3, you'll use interactive widgets to:
 - Build athlete brand portfolios using the **Athlete Brand Calculator**
-- Evaluate women's sports investments using the **Emerging Sports Investment Tool**
-- Simulate post-career wealth scenarios to see the power of compounding
+- Evaluate emerging sports investments using the **Emerging Sports Investment Tool**
+- Model team-athlete partnership economics
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Ready to experiment with athlete brand strategies? Let's go!
+Ready to experiment with these frameworks? Let's go!
 
 ---
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and executive insights on athlete brands, women's sports, and emerging markets (32-38 minutes of video content)
-**Coming next:** Interactive athlete brand building with hands-on calculators and investment tools (~35 minutes)
+**You've completed:** Welcome, learning objectives, and executive insights from NFL operations and emerging sports (~70 minutes of video content)
+**Coming next:** Interactive athlete brand building and emerging sports evaluation tools (~35 minutes)
 
 **Take a moment to:**
 - Stand up and stretch for 30 seconds
 - Get water or a quick snack
 - Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
 
-**Progress:** You're 40% through Week 4 content! You've heard from real sports agents, PGA executives, and women's sports investors—now you'll apply their frameworks through hands-on experimentation.
+**Progress:** You're 40% through Week 4 content! You've heard from Kevin Abrams (Giants) on NFL operations/AI/NIL and Matt Rubinoff (Fairgrounds) on emerging sports scaling—now you'll apply their frameworks through hands-on experimentation.
 
 *This break is optional but recommended. Return when you're ready to build athlete brand portfolios and evaluate emerging sports investments.*
-=======
-Ready to experiment? Let's go!
->>>>>>> Stashed changes
-=======
-Ready to experiment? Let's go!
->>>>>>> Stashed changes
 
 ---
 
 ## MODULE 2 Complete - Summary
 
 ### Elements Created:
-1. ✅ Connecting Introduction Text
-2. ✅ Infobox - Video Overview (32-38 min total viewing)
-3. ✅ Video 1 - Athlete Revenue Streams Overview (2 min concept video with full script)
-4. ✅ Video 2 - Sports Agent Interview (10-12 min, interview structure provided)
-5. ✅ Video 3 - Don Rea PGA Tour Interview (10-12 min, interview structure provided)
-6. ✅ Video 4 - Women's Sports Investment Expert (8-10 min, interview structure provided)
-7. ✅ Details Accordion - Video Transcripts
-8. ✅ AI Chat Widget - Athlete Brand Strategy Q&A
+1. ✅ Connecting Introduction Text (Kevin Abrams + Matt Rubinoff framing)
+2. ✅ Infobox - Video Overview (~70 min total: Kevin 32 min + Matt 38 min)
+3. ✅ Video 1 - Kevin Abrams Interview (NFL operations, AI, NIL, salary cap, data transformation)
+4. ✅ Video 2 - Matt Rubinoff Interview (emerging sports, brand building, scaling pickleball/paddle)
+5. ✅ Details Accordion - Video Transcripts & Executive Bios
+6. ✅ AI Chat Widget - NFL Operations & Emerging Sports Q&A
 
 ### Executive Perspectives:
-- **Sports Agent:** Endorsement vs. owned business strategy, post-career planning
-- **Don Rea (PGA):** Emerging markets, international expansion, women's golf growth
-- **Women's Sports Expert:** Investment thesis, valuation gaps, growth rates, risk factors
+- **Kevin Abrams (Giants):** AI implementation, salary cap portfolio management, NIL athlete brands, consensus building, data transformation, NFL future
+- **Matt Rubinoff (Fairgrounds):** Proof of concept methodology, brand differentiation, white space opportunities, geographic expansion, emerging sport assessment
 
 ### Pedagogical Design:
 - Multiple means of representation: video (visual+audio), transcripts (text), AI chat (interactive)
-- Authentic practitioner perspectives ground theoretical frameworks
-- Real-world examples (Serena, LeBron, Michael Jordan) make concepts concrete
+- Authentic practitioner perspectives from established (NFL) and emerging (pickleball) sports
+- Real-world examples (Giants' $10B operations, Fairgrounds' 0→75K member growth)
 - Prepares for hands-on application in Module 3's interactive widgets
 
 ### Total Time Estimate:
-- Video 1: 2 minutes
-- Videos 2-4: 28-34 minutes
-- Reading (intro + infobox): 2 minutes
-- **Total Module 2 time: 32-38 minutes**
+- Video 1 (Kevin): 32 minutes
+- Video 2 (Matt): 38 minutes
+- Reading (intro + infobox): 3 minutes
+- **Total Module 2 time: ~73 minutes**

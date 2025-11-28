@@ -1,17 +1,18 @@
 ## MODULE 4: Interactive Activity - Revenue Empire Builder (BOPPPS: Participatory - Application)
-**Purpose:** Active learning - build a revenue strategy (supports MLO 1.1, 1.3 - Application level)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+
+**Purpose:** Active learning - build a revenue strategy (supports WLO 1.1, 1.3 - Application level)
 
 **Uplimit Structure:** Fourth module in Unit 1
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Infobox (Callout)** ⬤ Required | Brief activity introduction | Type directly | Blue variant, sets context |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
-| 3 | **Text** ⬤ Required | Detailed instructions and strategic considerations | Type directly | Full setup and guidance |
-| 4 | **iFrame** ⬤ Required | Revenue Empire Builder widget | Custom widget hosted | Interactive simulation |
-| 5 | **Text Response** ⬤ Required | Board Strategy Defense submission | Configure in Uplimit | Written defense with 30-point rubric |
-| 6 | **AI Chat Widget** ○ Optional | Board Strategy Coach (optional) | Configure in Uplimit | Named: "Board Strategy Coach" |
-| 7 | **Details** ○ Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
+| 2 | **Text** ⬤ Required | Detailed instructions and strategic considerations | Type directly | Full setup and guidance |
+| 3 | **iFrame** ⬤ Required | Revenue Empire Builder widget | Custom widget hosted | Interactive simulation |
+| 4 | **Text Response** ⬤ Required | Board Strategy Defense submission | Configure in Uplimit | Written defense with 30-point rubric |
+| 5 | **AI Chat Widget** ○ Optional | Board Strategy Coach (optional) | Configure in Uplimit | Named: "Board Strategy Coach" |
+| 6 | **Details** ○ Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
 
 ### Element 1: Infobox Content
 ```
@@ -21,40 +22,14 @@ You are the new CFO of a mid-market professional sports team. Your challenge: ma
 
 After completing the simulation, you'll write a Board Strategy Defense memo (750-1000 words) explaining your allocation decisions, strategic rationale, and risk management approach.
 
-**Practice:** MLO 1.1 (Apply revenue stream knowledge) & MLO 1.3 (Evaluate growth potential and manage risks)
+**Practice:** WLO 1.1 (Apply revenue stream knowledge) & WLO 1.3 (Evaluate growth potential and manage risks)
 
 **Time:** 30-45 minutes (simulation) + 45-60 minutes (written defense)
 ```
 
 ---
 
-## Element 2: **NEW** - Learning Outcomes Widget
-
-**Uplimit Implementation:**
-1. Select **iFrame Widget** element
-2. Copy embed code below:
-
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-4.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Module 4 Learning Outcomes"
-  aria-label="Visual map showing which learning outcomes are practiced in Module 4"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Shows which Week 1 MLOs are practiced in this module (interactive application)
-- Visual badge indicating Module 4: Interactive Activity
-- Interactive: Click to see how simulation connects to frameworks
-
----
-
-### Element 3: Text Content - Activity Instructions
+### Element 2: Text Content - Activity Instructions
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
@@ -86,6 +61,8 @@ Before you start, consider these key insights from your Module 3 learning:
 - **Sponsorship:** Relationship-dependent. Takes time to build but can be very profitable. Brand alignment matters.
 - **Merchandising:** Lower revenue but low risk. Spikes during championships and star acquisitions.
 - **Betting:** Highest growth potential (30-40% year-over-year) but carries regulatory risk.
+
+**Revenue Sharing Reality:** Remember from Module 3—most leagues share 40-60% of key revenue streams (national media, licensing). Your allocation decisions don't happen in isolation. If you invest heavily in local revenue streams (ticketing, local sponsorship), you keep more of the upside. But shared streams (national media, merchandising) benefit from league-wide success, not just your team's performance. Consider how revenue sharing affects your risk-return calculus.
 
 **Key Strategic Principle:** Diversification helps weather market changes. No single allocation strategy is "correct" - your job is to justify YOUR choices based on risk tolerance and growth goals.
 
@@ -130,7 +107,7 @@ Once you complete the Revenue Empire Builder, you'll write an executive memo (75
 
 ---
 
-### Element 5: Text Response - Board Strategy Defense
+### Element 4: Text Response - Board Strategy Defense
 
 **Assessment Type:** Written submission with rubric evaluation
 
@@ -220,7 +197,7 @@ Before submitting, check that you have:
 
 ---
 
-### Element 6: AI Chat Widget Configuration
+### Element 5: AI Chat Widget Configuration
 - **Widget Name:** "Board Strategy Coach"
 - **System Prompt:** "You are a helpful strategy coach for MBA students preparing their Board Strategy Defense memo. Help them think critically about their Revenue Empire Builder results and how to articulate their strategy. Do NOT write their memo for them. Instead, ask probing questions: What trade-offs did you consider? How do your streams create synergies? What risks emerged during the simulation? How would you defend that allocation choice? Focus on: strategic justification, risk management, ecosystem thinking, and professional communication. If students ask you to write content, redirect them to develop their own analysis with your guidance."
 - **Welcome Message:** "Ready to prepare your Board Strategy Defense? I can help you think through your allocation decisions, identify key risks, and structure your argument. What aspect of your strategy are you working on?"
@@ -228,7 +205,7 @@ Before submitting, check that you have:
 
 ---
 
-### Element 7: Details Content
+### Element 6: Details Content
 ```
 Title: ◆ Strategy Hints (Open if you're stuck)
 
@@ -262,38 +239,14 @@ media rights → more resources for players...)
 
 **Design Rationale:**
 - **iFrame widget** provides hands-on, experiential learning (UDL engagement, Application level)
-- **Infobox** clearly frames the task and connects to MLOs (QM clarity)
+- **Infobox** clearly frames the task and connects to WLOs (QM clarity)
 - **Text Response with rubric** measures strategic thinking and communication (Bloom's Application/Analysis)
 - **AI Chat** offers adaptive coaching for memo preparation without doing the work (UDL scaffolding)
 - **Details** provides hints without giving answers (progressive disclosure for struggling learners)
 - Multiple paths to success - no single "right" strategy (UDL choice)
 - Written defense mirrors real-world executive communication (authentic assessment)
-- Directly supports MLO 1.3 (evaluating growth potential and risks) through authentic practice
+- Directly supports WLO 1.3 (evaluating growth potential and risks) through authentic practice
 - 30-point rubric ensures transparent, consistent evaluation (QM Standard 3)
-
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 4 Supports Your Final Strategic Vision:**
-
-Module 4 gave you hands-on practice building integrated revenue strategies and defending them under scrutiny. This is the exact skill required for your Week 5 capstone.
-
-**What You Learned:**
-- Revenue allocation across streams requires balancing growth potential vs. risk vs. competitive positioning
-- Strategic decisions must be justified with data, not assumptions (Board Strategy Defense memo practice)
-- Market events (economic downturns, streaming disruption, betting legalization) force real-time strategic pivots
-- Integrated thinking beats stream-by-stream optimization
-
-**How to Apply This to Your Final Project:**
-
-When you craft your 5-year strategic vision in Week 5, Module 4's Board Strategy Defense becomes your template:
-
-- **Strategic Rationale:** Every major decision in your vision needs explicit justification. Module 4 taught you to anticipate skeptical questions and pre-emptively address them: "Why invest $50M in this stream? Because our modeling shows 3-year payback with 15% IRR."
-- **Risk Management:** Use Module 4's scenario modeling to stress-test your vision. What happens if media rights decline 20%? If betting is banned in your jurisdiction? Your capstone should include contingency plans.
-- **Integrated Strategy:** Don't present five separate revenue stream strategies. Module 4 taught you to show how streams reinforce each other. Your vision should demonstrate ecosystem thinking throughout.
-
-**Real-World Application:** The Revenue Empire Builder simulation forced you to make strategic trade-offs under constraints. Your Week 5 capstone will face the same challenge: limited capital, competing priorities, uncertain futures. Module 4 taught you how to navigate that complexity.
 
 ---
 
@@ -310,7 +263,9 @@ You've applied everything from Modules 2-3 by building a complete revenue strate
 - Executive communication demands clear reasoning and evidence-based arguments
 
 **Up Next: Module 5 - Real-World Case Analysis**
-You've built a theoretical strategy. Now it's time to analyze a real organization facing real constraints. In Module 5, you'll examine the Vancouver Canucks and their revenue-sharing challenges—applying your framework to actual financial data and strategic dilemmas.
+You've built a theoretical strategy in a clean simulation environment. But real sports organizations don't have that luxury. In Module 5, you'll examine the Vancouver Canucks—a franchise operating under NHL revenue sharing constraints, Canadian dollar currency risk, and competitive market pressures. You'll see how the strategic principles you just practiced (diversification, risk management, ecosystem thinking) play out when executives face actual board rooms, real financial constraints, and stakeholder pressures.
+
+The Revenue Empire Builder gave you the "what" (allocation decisions) and "how" (strategic trade-offs). The Canucks case will show you the "why it's hard" (constraints, politics, and unintended consequences).
 
 Ready to see theory meet reality? Let's dive into the case!
 

@@ -280,32 +280,32 @@ let worst_case_irr = (Math.pow(worst_case_value / entry_cost, 1/time_horizon) - 
 **Layout:** Force-directed graph (D3.js) with 4 layers
 
 **Layer 1 (Center): 4 Module Learning Outcomes**
-- MLO 4.1: Five Revenue Streams
-- MLO 4.2: Owned Assets vs Endorsements
-- MLO 4.3: Women's Sports Investment
-- MLO 4.4: Post-Career Strategy
+- WLO 4.1: Five Revenue Streams
+- WLO 4.2: Owned Assets vs Endorsements
+- WLO 4.3: Women's Sports Investment
+- WLO 4.4: Post-Career Strategy
 
 **Layer 2: 5 Revenue Stream Nodes**
-- Endorsements (connected to MLO 4.1, 4.2)
-- Owned Businesses (connected to MLO 4.1, 4.2, 4.4)
-- Investments (connected to MLO 4.1, 4.3, 4.4)
-- Media/Content (connected to MLO 4.1, 4.4)
-- Licensing (connected to MLO 4.1, 4.4)
+- Endorsements (connected to WLO 4.1, 4.2)
+- Owned Businesses (connected to WLO 4.1, 4.2, 4.4)
+- Investments (connected to WLO 4.1, 4.3, 4.4)
+- Media/Content (connected to WLO 4.1, 4.4)
+- Licensing (connected to WLO 4.1, 4.4)
 
 **Layer 3: Key Concepts**
-- Equity vs Fees (connected to MLO 4.2)
-- Compounding Returns (connected to MLO 4.2, 4.4)
-- First-Mover Advantage (connected to MLO 4.3)
-- Wealth Preservation (connected to MLO 4.4)
-- Valuation Gaps (connected to MLO 4.3)
-- Lifestyle Discipline (connected to MLO 4.4)
+- Equity vs Fees (connected to WLO 4.2)
+- Compounding Returns (connected to WLO 4.2, 4.4)
+- First-Mover Advantage (connected to WLO 4.3)
+- Wealth Preservation (connected to WLO 4.4)
+- Valuation Gaps (connected to WLO 4.3)
+- Lifestyle Discipline (connected to WLO 4.4)
 
 **Layer 4: Real Examples**
-- Serena Williams (connected to all 4 MLOs)
-- LeBron James (connected to MLO 4.1, 4.2, 4.4)
-- Michael Jordan (connected to MLO 4.2, 4.4)
-- Magic Johnson (connected to MLO 4.2, 4.4)
-- NWSL Franchises (connected to MLO 4.3)
+- Serena Williams (connected to all 4 WLOs)
+- LeBron James (connected to WLO 4.1, 4.2, 4.4)
+- Michael Jordan (connected to WLO 4.2, 4.4)
+- Magic Johnson (connected to WLO 4.2, 4.4)
+- NWSL Franchises (connected to WLO 4.3)
 
 ### **Node Data Structure:**
 
@@ -313,7 +313,7 @@ let worst_case_irr = (Math.pow(worst_case_value / entry_cost, 1/time_horizon) - 
 const nodes = [
   {
     id: "mlo-4-1",
-    label: "MLO 4.1: Five Revenue Streams",
+    label: "WLO 4.1: Five Revenue Streams",
     type: "learning_outcome",
     definition: "Athletes generate revenue through endorsements, owned businesses, investments, media/content production, and licensing. Strategic allocation across streams determines long-term wealth.",
     module: "Module 1",
@@ -366,7 +366,7 @@ const edges = [
 
 **Default View:**
 - All nodes visible, edges shown with opacity 0.3
-- MLO nodes (Layer 1) highlighted and larger
+- WLO nodes (Layer 1) highlighted and larger
 
 **Click Node:**
 - Highlight clicked node + all connected nodes
@@ -389,7 +389,7 @@ const edges = [
 - Return to default view
 
 ### **Color Scheme (Uplimit Neutral Grays):**
-- Learning Outcomes (MLOs): `#4A5568` (darkest gray)
+- Learning Outcomes (WLOs): `#4A5568` (darkest gray)
 - Revenue Streams: `#718096`
 - Concepts: `#A0AEC0`
 - Athlete Examples: `#CBD5E0` (lightest gray)

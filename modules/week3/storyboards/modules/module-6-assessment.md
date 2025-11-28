@@ -1,23 +1,23 @@
 # MODULE 6: Assessment & Reflection
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
-**Purpose:** Submit activation plan, peer review, reflect on Week 3 learning, preview Week 4 (measures all MLOs 3.1-3.4)
+**Purpose:** Submit activation plan, peer review, reflect on Week 3 learning, preview Week 4 (measures all WLOs 3.1-3.4)
 
 **Uplimit Structure:** Sixth module in Unit 3
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 5 | Type directly | Launches submission and reflection |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
-| 4 | **Text Response** ⬤ Required | Activation Plan Submission (File Upload) | Configure in Uplimit | 40 points, rubric grading |
-| 5 | **▬ Text** ◐ Recommended | PAIRR Feedback Phase Instructions | Type directly | Dual feedback methodology (5 bonus pts) |
-| 6 | **Text Response** ◐ Recommended | Peer Review Submission | Configure in Uplimit | 2 bonus points for peer feedback |
-| 7 | **Text Response** ◐ Recommended | AI Feedback Submission | Configure in Uplimit | 1 bonus point - paste ChatGPT output |
-| 8 | **Text Response** ◐ Recommended | Comparative Reflection | Configure in Uplimit | 1 bonus point - compare peer vs AI |
-| 9 | **Text Response** ◐ Recommended | Post-Revision Reflection | Configure in Uplimit | 1 bonus point - feedback integration |
-| 10 | **Text Response** ◐ Recommended | Week 3 Reflection (250 words) | Configure in Uplimit | 3 reflection questions (ungraded) |
-| 11 | **Video** ⬤ Required | Week 3 Wrap-Up & Week 4 Preview (2 min) | Upload MP4 | Consolidate learning, preview athletes |
-| 12 | **Infobox (Next Steps)** ⬤ Required | Week 4 Preview and Preparation | Type directly | Green variant, transition |
+| 2 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
+| 3 | **Text Response** ⬤ Required | Activation Plan Submission (File Upload) | Configure in Uplimit | 40 points, rubric grading |
+| 4 | **▬ Text** ◐ Recommended | PAIRR Feedback Phase Instructions | Type directly | Dual feedback methodology (5 bonus pts) |
+| 5 | **Text Response** ◐ Recommended | Peer Review Submission | Configure in Uplimit | 2 bonus points for peer feedback |
+| 6 | **Text Response** ◐ Recommended | AI Feedback Submission | Configure in Uplimit | 1 bonus point - paste ChatGPT output |
+| 7 | **Text Response** ◐ Recommended | Comparative Reflection | Configure in Uplimit | 1 bonus point - compare peer vs AI |
+| 8 | **Text Response** ◐ Recommended | Post-Revision Reflection | Configure in Uplimit | 1 bonus point - feedback integration |
+| 9 | **Text Response** ◐ Recommended | Week 3 Reflection (250 words) | Configure in Uplimit | 3 reflection questions (ungraded) |
+| 10 | **Video** ⬤ Required | Week 3 Wrap-Up & Week 4 Preview (2 min) | Upload MP4 | Consolidate learning, preview athletes |
+| 11 | **Infobox (Next Steps)** ⬤ Required | Week 4 Preview and Preparation | Type directly | Green variant, transition |
 
 ---
 
@@ -69,6 +69,15 @@ This group assignment combines activation plan design with dual feedback (peer +
 
 **Phase 5: Post-Revision Reflection (Due Day 10)**
 - Reflect on revision choices: Which feedback influenced you most? (75-100 words, 1 pt bonus)
+
+**⏱️ Total PAIRR Time Investment:** 3-4 hours spread across the week
+- Group activation plan (Module 5): 60-90 min
+- Draft polish and submission: 20-30 min
+- Peer review (giving): 25-35 min
+- AI feedback generation: 5-10 min
+- Comparative reflection: 15-20 min
+- Revision: 30-45 min
+- Post-revision reflection: 10-15 min
 
 **Total Possible: 45 points** (40 pts activation plan + 5 pts PAIRR bonus)
 ```
@@ -167,7 +176,7 @@ The group provides unrealistic projections (e.g., 500% ROI without justification
 The group provides reasonable ROI projections using some course frameworks, but may be missing key assumptions (e.g., churn rate, attribution discount), lack conservative discounting for uncertainty, or not fully explain calculation methodology.
 
 **Fully meets expectations (9-10 points):**
-The group provides realistic, data-driven ROI projections using course frameworks (CPM from Sponsorship Valuation Calculator, engagement multipliers from Module 3, conversion funnels from ROI Calculator), includes clear attribution methodology (promo codes, data partnerships, geo lift studies), acknowledges conservative assumptions and uncertainties, and shows all calculation steps transparently.
+The group provides realistic, data-driven ROI projections using course frameworks (CPM from Sponsorship Valuation Calculator, engagement multipliers from Module 3, CAC/LTV benchmarks from Module 4 FanDuel case, conversion funnels from ROI Calculator), includes clear attribution methodology (promo codes, data partnerships, geo lift studies), acknowledges conservative assumptions and uncertainties, and shows all calculation steps transparently.
 
 ---
 

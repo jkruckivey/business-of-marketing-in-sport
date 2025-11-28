@@ -1,4 +1,5 @@
 # MODULE 7: Wrap-Up & Reflection (BOPPPS: Summary)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Consolidate Week 4 learning, reflect on journey, connect to Anchor Project Milestone 3
 
@@ -12,14 +13,6 @@
 | 4 | **ⓘ Infobox (Callout)** ⬤ Required | Anchor Project Milestone 3 reminder | Type directly | Due this week, application of Week 4 |
 | 5 | **▬ Text** ◐ Recommended | Preview Week 5 | Type directly | Build anticipation for final week |
 | 6 | **◈ AI Chat Widget** ○ Optional | "Office hours" | Configure in Uplimit | Final questions before moving on |
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-| 7 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 ---
 
@@ -41,10 +34,10 @@ You started with a puzzle: How does Serena Williams build a $500M brand on $94M 
 
 ### **Module 1: The Framework**
 You learned the four capabilities that explain athlete brand building:
-- **MLO 4.1:** Five revenue streams (endorsements, owned businesses, investments, media/content, licensing)
-- **MLO 4.2:** Owned assets vs. endorsement strategy (equity building vs. fee income)
-- **MLO 4.3:** Women's sports and emerging sports investment opportunities (first-mover advantages)
-- **MLO 4.4:** Post-career transition strategy (sustaining wealth after retirement)
+- **WLO 4.1:** Five revenue streams (endorsements, owned businesses, investments, media/content, licensing)
+- **WLO 4.2:** Owned assets vs. endorsement strategy (equity building vs. fee income)
+- **WLO 4.3:** Women's sports and emerging sports investment opportunities (first-mover advantages)
+- **WLO 4.4:** Post-career transition strategy (sustaining wealth after retirement)
 
 ### **Module 2: The Practitioners**
 You heard from experts who've actually built athlete brands:
@@ -131,7 +124,7 @@ You're leaving Week 4 as a strategic advisor who can:
 <<<<<<< Updated upstream
 ### ⚙ Interactive Activity: Week 4 Concept Map
 
-**Practice: Synthesis of all Week 4 MLOs (4.1-4.4)**
+**Practice: Synthesis of all Week 4 WLOs (4.1-4.4)**
 
 You've learned four distinct frameworks this week—five revenue streams, owned assets vs. endorsements, women's sports investment thesis, and post-career wealth preservation. But how do these frameworks connect? This interactive concept map reveals the relationships you might have missed. It's a visual knowledge network showing how every concept, athlete example, and strategic principle links together.
 
@@ -139,13 +132,13 @@ Click on any node to explore its definition and connections. Start with the four
 
 **What you'll discover:**
 
-- Visual connections between all four MLOs—see how revenue streams feed into equity decisions, which inform investment choices, which enable post-career wealth
+- Visual connections between all four WLOs—see how revenue streams feed into equity decisions, which inform investment choices, which enable post-career wealth
 - Concept relationships: How "equity vs. fees" connects to "compounding returns" connects to "wealth preservation" in a logical strategic chain
 - Athlete pattern recognition: Why Serena, LeBron, and Magic all prioritized owned businesses despite different sports and eras
 - Strategic synthesis: The underlying principles that make athlete brand-building successful across all contexts
 
 **Time commitment:** 10-15 minutes
-**Learning outcomes practiced:** Synthesis and integration of all Week 4 MLOs (4.1, 4.2, 4.3, 4.4)
+**Learning outcomes practiced:** Synthesis and integration of all Week 4 WLOs (4.1, 4.2, 4.3, 4.4)
 
 ---
 
@@ -288,7 +281,7 @@ After reflecting, write down:
 ```markdown
 Title: ⏰ Reminder: Anchor Project Milestone 3 Due This Week
 
-Anchor Project Milestone 3 (Implementation Roadmap) is due end of Week 4. Your submission should include a 12-18 month execution plan, resource allocation across revenue streams, strategic partnerships, risk mitigation strategies, and financial projections. Apply Week 4 learning: Use MLO 4.1 to map revenue streams, MLO 4.2 to structure partnerships as equity joint ventures, MLO 4.3 to justify growth projections in women's sports or emerging markets, and MLO 4.4 to design long-term value sustainability. Reference your Week 4 athlete brand memo as a proven framework. Submit to Anchor Project portal by Sunday 11:59 PM.
+Anchor Project Milestone 3 (Implementation Roadmap) is due end of Week 4. Your submission should include a 12-18 month execution plan, resource allocation across revenue streams, strategic partnerships, risk mitigation strategies, and financial projections. Apply Week 4 learning: Use WLO 4.1 to map revenue streams, WLO 4.2 to structure partnerships as equity joint ventures, WLO 4.3 to justify growth projections in women's sports or emerging markets, and WLO 4.4 to design long-term value sustainability. Reference your Week 4 athlete brand memo as a proven framework. Submit to Anchor Project portal by Sunday 11:59 PM.
 ```
 
 ---
@@ -388,14 +381,14 @@ Hi! Welcome to Week 4 office hours. I'm here to answer any remaining questions a
 **Modules:** 7 modules (Bridge In → Core Content → Case Study → Assessment → Wrap-Up)
 
 **Learning Outcomes Mastered:**
-- ✅ MLO 4.1: Five athlete revenue streams (endorsements, owned businesses, investments, media/content, licensing)
-- ✅ MLO 4.2: Owned assets vs. endorsement strategy (equity building vs. fee income)
-- ✅ MLO 4.3: Women's sports and emerging sports investment opportunities
-- ✅ MLO 4.4: Post-career transition strategies for wealth preservation
+- ✅ WLO 4.1: Five athlete revenue streams (endorsements, owned businesses, investments, media/content, licensing)
+- ✅ WLO 4.2: Owned assets vs. endorsement strategy (equity building vs. fee income)
+- ✅ WLO 4.3: Women's sports and emerging sports investment opportunities
+- ✅ WLO 4.4: Post-career transition strategies for wealth preservation
 
 **Case Study:** Serena Williams: Building a Brand (HBS 517050)
 
-**Assessment:** Athlete Brand Strategy Memo (1200-1500 words demonstrating all 4 MLOs)
+**Assessment:** Athlete Brand Strategy Memo (1200-1500 words demonstrating all 4 WLOs)
 
 **Time Investment:** ~4-5 hours (videos 30 min, case 60 min, widgets 90 min, assessment 90 min)
 
@@ -455,37 +448,3 @@ Your Week 5 strategic vision integrates Week 4's athlete brand frameworks across
 ---
 
 **See you in Week 5—the final push!**
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-### Element 7: Learning Outcomes Widget
-
-**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
-
-**Uplimit Implementation:**
-
-**Widget File:** `learning-outcomes-module-7.html`
-
-**Embed Code:**
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-7.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Learning Outcomes - Module 7"
-  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Click any module outcome to see which course-level outcomes it contributes to
-- Interactive highlighting shows connections between module and course goals
-- WCAG 2.2 AA compliant with keyboard navigation and screen reader support
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes

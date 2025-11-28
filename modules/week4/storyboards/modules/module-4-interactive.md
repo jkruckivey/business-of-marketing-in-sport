@@ -1,4 +1,5 @@
 # MODULE 4: Advanced Interactive Simulations (BOPPPS: Practice)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Apply athlete brand frameworks to complex scenarios and strategic trade-offs
 
@@ -7,24 +8,10 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro from Module 3 | Type directly | Bridge from experimentation to application |
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
-| 3 | **⚙ iFrame Widget** ⬤ Required | **Post-Career Wealth Simulator** | Embed widget | Simulate retirement scenarios, see wealth preservation  |
-| 4 | **▬ Text** ◐ Recommended | Reflection prompt | Type directly | Process insights from simulation |
-| 5 | **⚙ iFrame Widget** ◐ Recommended | **Athlete Decision Tree** | Embed widget | Navigate endorsement vs. equity trade-offs |
-| 6 | **▤ Details** ○ Optional | Case study: Why 78% of NFL players go broke | Type directly | Real data on wealth preservation failure |
-=======
-=======
->>>>>>> Stashed changes
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Post-Career Wealth Simulator** | Embed widget | Simulate retirement scenarios, see wealth preservation  |
 | 3 | **▬ Text** ◐ Recommended | Reflection prompt | Type directly | Process insights from simulation |
 | 4 | **⚙ iFrame Widget** ◐ Recommended | **Athlete Decision Tree** | Embed widget | Navigate endorsement vs. equity trade-offs |
 | 5 | **▤ Details** ○ Optional | Case study: Why 78% of NFL players go broke | Type directly | Real data on wealth preservation failure |
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 ---
 
@@ -50,61 +37,7 @@ This module features advanced simulations that force difficult decisions with in
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 2: **NEW** - Learning Outcomes Widget
-
-**Uplimit Implementation:**
-1. Select **iFrame Widget** element
-2. Copy embed code below:
-
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-4.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Module 4 Learning Outcomes"
-  aria-label="Visual map showing which learning outcomes are practiced in Module 4"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Shows which Week 4 MLOs are practiced in this module (advanced simulations)
-- Visual badge indicating Module 4: Advanced Interactive Simulations
-- Interactive: Click to see how complex scenarios connect to frameworks
-
----
-
-## Element 3: **RENUMBERED** - Post-Career Wealth Simulator Widget (was Element 2)
-
-### ⚙ Interactive Activity: Post-Career Wealth Simulator
-
-**Practice: MLO 4.4 (Post-Career Transition & Wealth Preservation)**
-
-Why do 78% of NFL players go broke within three years of retirement despite earning millions during their careers? This multi-phase simulator reveals the answer—and shows you how to avoid that fate. You'll make strategic decisions across three career phases (rookie years, peak career, retirement transition) and watch how those choices compound to create wildly different wealth outcomes at age 65.
-
-This isn't just about making "good" decisions—it's about understanding the mathematics of wealth preservation. You'll see how lifestyle spending (30% vs. 80% of income) creates a $150 million difference in retirement wealth. You'll discover why Magic Johnson's $1.2 billion empire dwarfs his playing salary by 25x. And you'll test whether you can build generational wealth or end up broke despite a $100 million career.
-
-**What you'll discover:**
-
-- How rookie-year spending habits (frugal vs. lavish) impact retirement wealth 40 years later through compounding effects
-- Why taking the $10M endorsement vs. investing $3M in owned businesses creates a $200M+ wealth difference
-- The post-career cliff: how brand value declines 60-80% unless sustained by owned assets built during playing career
-- Real athlete trajectories: Magic Johnson's wealth-building path vs. Allen Iverson's bankruptcy despite similar earnings
-
-**Time commitment:** 20-25 minutes
-**Learning outcomes practiced:** MLO 4.4 (Post-career transition strategies and wealth preservation)
-
----
-=======
 ## Element 2: Post-Career Wealth Simulator Widget
->>>>>>> Stashed changes
-=======
-## Element 2: Post-Career Wealth Simulator Widget
->>>>>>> Stashed changes
 
 **Widget Purpose:** Simulate how different career decisions create dramatically different retirement wealth outcomes
 
@@ -178,15 +111,7 @@ This isn't just about making "good" decisions—it's about understanding the mat
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 4: **RENUMBERED** - Reflection Prompt (was Element 3)
-=======
 ## Element 3: Reflection Prompt
->>>>>>> Stashed changes
-=======
-## Element 3: Reflection Prompt
->>>>>>> Stashed changes
 
 ```markdown
 ### What Does Wealth Preservation Require?
@@ -209,35 +134,7 @@ After simulating career paths:
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 5: **RENUMBERED** - Athlete Decision Tree Widget (was Element 4)
-
-### ⚙ Interactive Activity: Athlete Decision Tree
-
-**Practice: MLO 4.2 (Owned Assets vs. Endorsements Strategic Trade-offs)**
-
-You're a sports agent advising an elite athlete who just received two competing offers: (A) $10 million per year to endorse Nike for three years, or (B) invest $2 million to launch their own athletic wear brand. Which do you recommend? This interactive decision tree guides you through the strategic trade-offs athletes face when choosing between guaranteed endorsement fees and risky equity investments.
-
-Unlike the calculators that show you the math, this tool walks you through the decision-making process step by step. You'll answer five strategic questions about career stage, brand strength, risk tolerance, capital availability, and time horizon—then receive a personalized recommendation with 20-year wealth projections, risk assessments, and real athlete examples who followed similar paths. It's like having a strategic conversation with a financial advisor.
-
-**What you'll discover:**
-
-- How career stage (rookie vs. peak vs. veteran) fundamentally changes the endorsement vs. equity calculation
-- Why a conservative athlete at peak earnings should still invest in equity (risk is manageable when you have capital buffer)
-- Strategic decision paths: When to take the guaranteed $10M endorsement vs. when to invest in owned businesses
-- Real recommendations: See how LeBron, Serena, and Magic Johnson navigated similar decisions—with 20-year outcome data
-
-**Time commitment:** 10-15 minutes
-**Learning outcomes practiced:** MLO 4.2 (Owned assets vs. endorsement strategy and trade-off evaluation)
-
----
-=======
 ## Element 4: Athlete Decision Tree Widget
->>>>>>> Stashed changes
-=======
-## Element 4: Athlete Decision Tree Widget
->>>>>>> Stashed changes
 
 **Widget Purpose:** Interactive decision tree navigating endorsement vs. equity trade-offs
 
@@ -272,15 +169,7 @@ Unlike the calculators that show you the math, this tool walks you through the d
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 6: **RENUMBERED** - Details - Case Study: Why Athletes Go Broke (was Element 5)
-=======
 ## Element 5: Details - Case Study: Why Athletes Go Broke
->>>>>>> Stashed changes
-=======
-## Element 5: Details - Case Study: Why Athletes Go Broke
->>>>>>> Stashed changes
 
 ```markdown
 Title: Case Study: Why 78% of NFL Players Are Broke Within 3 Years of Retirement
@@ -362,36 +251,4 @@ You've built frameworks, experimented with simulations, and analyzed why athlete
 - How Serena Ventures creates post-career value
 - Strategic decisions you would replicate—and what you'd change
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Ready to analyze a $500M brand strategy? Let's dive into Serena's case!
-
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 4 Supports Your Final Strategic Vision:**
-
-Module 4's interactive simulations gave you hands-on practice with athlete wealth-building strategies. This experience informs strategic planning for your Week 5 capstone.
-
-**What You Learned:**
-- Athlete Brand Calculator: Testing allocation scenarios (endorsements vs. owned businesses vs. investments) and seeing 20-year wealth outcomes
-- Lifestyle discipline: Athletes living on 30-40% of income vs. 80-90% see 10× wealth differences after retirement
-- Post-career value: Owned assets (businesses, investments) retain 70-90% of value post-retirement; endorsements drop to 10-20%
-- Magic Johnson case: $1.2B wealth from businesses built during career, not $18M playing salary
-
-**How to Apply This to Your Final Project:**
-
-When you craft your 5-year strategic vision in Week 5, Module 4's simulation insights inform financial planning:
-
-- **Investment Strategy:** Reference simulation learnings to justify capital allocation. Example: "Following Week 4's simulation results, we'll retain 40% of profits for reinvestment vs. distributing 100%, building enterprise value from $50M (Year 1) to $200M+ (Year 5)."
-- **Discipline Over Time:** Module 4 taught that lifestyle discipline compounds. Apply this to your property: prioritize long-term value creation over short-term revenue extraction.
-- **Post-Exit Value:** Your vision should explain what sustains value after the initial 5-year period. Module 4 showed assets that retain value vs. those that don't.
-
-**Real-World Application:** The simulations you completed mirror the financial models athlete advisors use. Your Week 5 capstone should demonstrate similar long-term thinking.
-=======
 Ready to analyze a real case? Let's dive in.
->>>>>>> Stashed changes
-=======
-Ready to analyze a real case? Let's dive in.
->>>>>>> Stashed changes

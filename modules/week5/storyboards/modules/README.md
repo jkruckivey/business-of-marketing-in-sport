@@ -11,23 +11,23 @@
 Week 5 contains 9 modules organized in this directory:
 
 0. **module-0-bridge-in.md** - Bridge In: Heritage Monetization Dilemma (diagnostic + pre-assessment)
-1. **module-1-welcome.md** - Welcome & Learning Objectives (MLOs 5.1-5.4)
+1. **module-1-welcome.md** - Welcome & Learning Objectives (WLOs 5.1-5.4)
 2. **module-2-executives.md** - Executive Leader Perspectives (HHOF/MLSE dual perspective)
 3. **module-3-core-content.md** - Core Content - Legacy vs Innovation (V3 INTERACTIVE-FIRST)
 4. **module-4-interactive.md** - Interactive Activity - Heritage Transformation Strategist
-5. **module-5a-case-study-read.md** - Hockey Hall of Fame Case Study Part 1 (Read & Context)
-6. **module-5b-case-study-analyze.md** - Hockey Hall of Fame Case Study Part 2 (Analysis & Decision)
-7. **module-6-assessment.md** - Capstone Assessment - Strategic Vision (4 format options)
-8. **module-7-wrap-up.md** - Wrap-Up, Reflection & Course Conclusion
+5. **module-5-case-study-read.md** - Hockey Hall of Fame Case Study Part 1 (Read & Context)
+6. **module-6-case-study-analyze.md** - Hockey Hall of Fame Case Study Part 2 (Analysis & Decision)
+7. **module-7-assessment.md** - Capstone Assessment - Strategic Vision (4 format options)
+8. **module-8-wrap-up.md** - Wrap-Up, Reflection & Course Conclusion
 
 ---
 
-## Module Learning Outcomes (MLOs)
+## Module Learning Outcomes (WLOs)
 
-- **MLO 5.1:** Evaluate how heritage assets and brand history create sustainable competitive advantage (Evaluation)
-- **MLO 5.2:** Evaluate the tension between tradition and innovation in sports organizational strategy (Evaluation)
-- **MLO 5.3:** Assess emerging trends (women's sports growth, technology integration, sustainability) and their business impact (Evaluation)
-- **MLO 5.4:** Develop a 5-year strategic vision that balances heritage preservation with market evolution (Synthesis/Creation)
+- **WLO 5.1:** Evaluate how heritage assets and brand history create sustainable competitive advantage (Evaluation)
+- **WLO 5.2:** Evaluate the tension between tradition and innovation in sports organizational strategy (Evaluation)
+- **WLO 5.3:** Assess emerging trends (women's sports growth, technology integration, sustainability) and their business impact (Evaluation)
+- **WLO 5.4:** Develop a 5-year strategic vision that balances heritage preservation with market evolution (Synthesis/Creation)
 
 ---
 
@@ -51,7 +51,7 @@ Week 5 contains 9 modules organized in this directory:
 ## Key Features
 
 **Capstone Week Integration:**
-- Module 6 Strategic Vision (4 format options) integrates frameworks from Weeks 1-5
+- Module 7 Strategic Vision (4 format options) integrates frameworks from Weeks 1-5
 - All modules include Final Project Connection blocks showing how content applies to capstone
 - Comprehensive synthesis: revenue ecosystems + media strategy + sponsorship ROI + athlete branding + heritage positioning
 - Students choose submission format: Written Memo, Live Presentation, Video Presentation, or Digital Campaign
@@ -68,7 +68,7 @@ Week 5 contains 9 modules organized in this directory:
 
 **Assessment Integration:**
 - All modules connect explicitly to Week 5 capstone (Strategic Vision)
-- Module 6 features AI Roleplay practice (Board of Directors pitch) before final submission
+- Module 7 features AI Roleplay practice (Board of Directors pitch) before final submission
 - 100-point rubric evaluating all five CLOs (format-agnostic)
 - Students select format that best demonstrates their strategic communication strengths
 
@@ -79,14 +79,14 @@ Week 5 contains 9 modules organized in this directory:
 | File | Size | Module Title | Key Content | Time Estimate |
 |------|------|--------------|-------------|---------------|
 | `module-0-bridge-in.md` | 32 KB | Bridge In: Heritage Monetization Dilemma | Video hook, AI Roleplay diagnostic, Pre-assessment quiz | 20-25 min |
-| `module-1-welcome.md` | 6 KB | Welcome & Learning Objectives | Week overview, MLOs 5.1-5.4, strategic focus areas | 5-7 min |
+| `module-1-welcome.md` | 6 KB | Welcome & Learning Objectives | Week overview, WLOs 5.1-5.4, strategic focus areas | 5-7 min |
 | `module-2-executives.md` | 50 KB | Executive Leader Perspectives | Jamie Dinsmore (HHOF) + Keith Pelley (MLSE) video sessions | 65-80 min |
 | `module-3-core-content.md` | 37 KB | Core Content - Legacy vs Innovation | Legacy vs Innovation Matrix, Future Trends Predictor widgets | 55-67 min |
 | `module-4-interactive.md` | 21 KB | Interactive Activity | Heritage Transformation Strategist simulation + written defense | 95-125 min |
-| `module-5a-case-study-read.md` | 28 KB | HHOF Case Study Part 1 (Read) | Case background, strategic options, Exhibit A (financial data) | 30-40 min |
-| `module-5b-case-study-analyze.md` | 49 KB | HHOF Case Study Part 2 (Analyze) | Strategic dilemma, Exhibits B-C, discussion questions, AI Roleplay | 60-70 min |
-| `module-6-assessment.md` | 62 KB | Capstone Assessment | Strategic Vision (4 format options), AI Roleplay practice, 100-point rubric | 180-240 min |
-| `module-7-wrap-up.md` | 49 KB | Wrap-Up & Course Conclusion | 5-week synthesis, reflection prompts, course celebration | 30-40 min |
+| `module-5-case-study-read.md` | 28 KB | HHOF Case Study Part 1 (Read) | Case background, strategic options, Exhibit A (financial data) | 30-40 min |
+| `module-6-case-study-analyze.md` | 49 KB | HHOF Case Study Part 2 (Analyze) | Strategic dilemma, Exhibits B-C, discussion questions, AI Roleplay | 60-70 min |
+| `module-7-assessment.md` | 62 KB | Capstone Assessment | Strategic Vision (4 format options), AI Roleplay practice, 100-point rubric | 180-240 min |
+| `module-8-wrap-up.md` | 49 KB | Wrap-Up & Course Conclusion | 5-week synthesis, reflection prompts, course celebration | 30-40 min |
 
 **Total Week 5 Time:** 10-12 hours (capstone week)
 
@@ -100,7 +100,7 @@ Week 5 contains 9 modules organized in this directory:
   - `legacy-innovation-matrix.html`
   - `future-trends-predictor.html`
   - `heritage-transformation-strategist.html`
-  - `learning-outcomes-module-0.html` through `learning-outcomes-module-7.html`
+  - `learning-outcomes-module-0.html` through `learning-outcomes-module-8.html`
 
 ---
 
@@ -131,8 +131,9 @@ Week 5 contains 9 modules organized in this directory:
 - ✅ Added Content Priority Badges section to Module 1
 - ✅ Fixed Module 3 formatting to match V3 Interactive-First structure (Week 1 standard)
 - ✅ Standardized Content Priority Badge symbols in Module 5 (⬌ → ⬤)
-- ✅ **Split Module 5 into 5A (Read) and 5B (Analyze)** to manage cognitive load (1,331 lines → 28KB + 49KB)
-- ✅ **Added 4 format options to Module 6** (Written Memo, Live Presentation, Video Presentation, Digital Campaign)
+- ✅ **Split Case Study into Module 5 (Read) and Module 6 (Analyze)** to manage cognitive load (1,331 lines → 28KB + 49KB)
+- ✅ **Added 4 format options to Module 7** (Written Memo, Live Presentation, Video Presentation, Digital Campaign)
+- ✅ **Renumbered modules** to clean 0-8 sequence (removed 5A/5B naming)
 - ✅ Created this README.md
 
 **Quality Standards:**

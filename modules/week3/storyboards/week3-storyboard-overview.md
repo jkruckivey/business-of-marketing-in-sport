@@ -13,11 +13,11 @@
 **Course Learning Outcome (CLO 3):** Design Sponsorship & Betting Strategies
 Calculate sponsorship ROI and assess sports betting's role as a growth engine in modern sports marketing
 
-**Module Learning Outcomes (MLOs):**
-- MLO 3.1: Understand sponsorship as the financial backbone of sport
-- MLO 3.2: Analyze sports betting as a new growth driver in the industry
-- MLO 3.3: Calculate how brands measure ROI in sport partnerships
-- MLO 3.4: Design sponsorship activations that deliver measurable value
+**Module Learning Outcomes (WLOs):**
+- WLO 3.1: Understand sponsorship as the financial backbone of sport
+- WLO 3.2: Analyze sports betting as a new growth driver in the industry
+- WLO 3.3: Calculate how brands measure ROI in sport partnerships
+- WLO 3.4: Design sponsorship activations that deliver measurable value
 
 **Executive Guests:**
 - Andrew Sneyd (FanDuel) - Sports betting industry perspective

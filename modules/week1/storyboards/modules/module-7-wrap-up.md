@@ -1,4 +1,6 @@
 ## MODULE 7: Wrap-Up & Preview (BOPPPS: Summary)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+
 **Purpose:** Consolidate Week 1 learning, preview Week 2
 
 **Uplimit Structure:** Final module in Unit 1
@@ -9,14 +11,13 @@
 | 2 | **Text** | Connection to Group Marketing Project | Type directly | ◐ Recommended | 3 min |
 | 3 | **Text** | Week 1 complete + Week 2 preview | Type directly | ⬤ Required | 4 min |
 | 4 | **Details** | Additional resources (optional) | Type directly | ○ Optional | 5 min |
-| 5 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
 
 
 ### Element 1: Infobox Content
 ```
 Title: ◉ Week 1 Key Takeaways
 
-You've completed your introduction to sport revenue ecosystems! The four critical insights: revenue streams are interdependent (not isolated), sport operates uniquely with on-field competition alongside economic collaboration, revenue sharing balances competitive equality against entrepreneurial constraints, and frontier opportunities exist in betting and streaming. This foundation prepares you for Week 2's deep dive into media rights and fan engagement monetization—two of the highest-value and fastest-changing revenue streams. Well done!
+You've completed your introduction to sport revenue ecosystems! The five critical insights: (1) revenue streams are interdependent (not isolated), (2) sport operates uniquely with on-field competition alongside economic collaboration, (3) revenue sharing balances competitive equality against entrepreneurial constraints, (4) centralized merchandising (like NFL Properties) creates league-wide value that individual teams couldn't achieve alone, and (5) frontier opportunities exist in betting and streaming. This foundation prepares you for Week 2's deep dive into media rights and fan engagement monetization—two of the highest-value and fastest-changing revenue streams. Well done!
 ```
 
 ### Element 2: Text Content - Group Marketing Project Connection
@@ -93,34 +94,6 @@ Title: Optional Extension Resources
 [Expand for additional reading and resources]
 
 Want to go deeper on revenue ecosystems? Check out these resources:
-
-### Element 5: Learning Outcomes Widget
-
-**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
-
-**Uplimit Implementation:**
-
-**Widget File:** `learning-outcomes-module-7.html`
-
-**Embed Code:**
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-7.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Learning Outcomes - Module 7"
-  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Click any module outcome to see which course-level outcomes it contributes to
-- Interactive highlighting shows connections between module and course goals
-- WCAG 2.2 AA compliant with keyboard navigation and screen reader support
-
 
 ## Articles & Reports
 • [Industry report 1 - Title, Link]

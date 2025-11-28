@@ -1,5 +1,7 @@
 ## MODULE 5: Rogers NHL Case Study (V3 INTERACTIVE-FIRST REDESIGN)
-**Purpose:** Analyze the Rogers/NHL $5.2B deal: structure, performance, and 2026 decision (supports ALL MLOs 2.1-2.4)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+
+**Purpose:** Analyze the Rogers/NHL $5.2B deal: structure, performance, and 2026 decision (supports ALL WLOs 2.1-2.4)
 
 ⭐ **V3 REDESIGN - INTERACTIVE-FIRST**: This module has been redesigned from passive case reading (10-12 pages, 25-30 min) to active case analysis (23-25 min total, 65% active engagement).
 
@@ -9,8 +11,7 @@
 | Order | Element | Content/Purpose | Time | Implementation Notes |
 |-------|---------|----------------|------|---------------------|
 | 1 | **Text** ⬤ Required | Connecting introduction from Module 4 | 1 min | Pattern: "You've just [previous] → Now [current]" |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **Infobox** ⬤ Required | Case overview + key questions | 1 min | Blue variant |
+| 2 | **Infobox** ⬤ Required | Case overview + key questions | 1 min | Blue variant |
 | 4 | **Text** ⬤ Required | Case background: Rogers + NHL 2013 (150 words) | 1 min | Embedded markdown below |
 | 5 | **🎮 iFrame Widget** ◐ Recommended | Widget 5: Rogers Deal Terms Explorer | 3 min | Phase 2 widget |
 | 6 | **Text** ⬤ Required | Strategic rationale: Why $5.2B? (150 words) | 1 min | Embedded markdown below |
@@ -49,33 +50,7 @@ In this module, you'll examine Rogers Communications' 2013 acquisition of exclus
 
 ---
 
-## Element 2: Learning Outcomes Widget
-
-**Uplimit Implementation:**
-1. Select **iFrame Widget** element
-2. Copy embed code below:
-
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-5.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Module 5 Learning Outcomes"
-  aria-label="Visual map showing which learning outcomes are practiced in Module 5"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Shows which Week 2 MLOs are practiced in this module
-- Visual badge indicating Module 5
-- Interactive: Click to see how content connects to frameworks
-
----
-
-## Element 3: Infobox - Case Overview
+## Element 2: Infobox - Case Overview
 
 ```
 Title: Case Study: Rogers Communications - The $5.2 Billion NHL Bet ▸
@@ -89,48 +64,16 @@ Key Questions for Analysis:
 3. How did the deal perform vs. expectations? What went right and wrong?
 4. What should Rogers do in 2026 when the deal expires?
 
-This case addresses all Week 2 MLOs:
-• MLO 2.1: Rights valuation methodology
-• MLO 2.2: Platform strategy (linear Sportsnet + streaming)
-• MLO 2.3: Fan engagement and monetization tactics
-• MLO 2.4: Evaluation of mega-deal success/failure
+This case addresses all Week 2 WLOs:
+• WLO 2.1: Rights valuation methodology
+• WLO 2.2: Platform strategy (linear Sportsnet + streaming)
+• WLO 2.3: Fan engagement and monetization tactics
+• WLO 2.4: Evaluation of mega-deal success/failure
 ```
 
 ---
 
-## Element 2: **NEW** - Learning Outcomes Widget
----
-
-## Element 2: **NEW** - Learning Outcomes Widget
-
-**Uplimit Implementation:**
-1. Select **iFrame Widget** element
-2. Copy embed code below:
-
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-5.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Module 5 Learning Outcomes"
-  aria-label="Visual map showing which learning outcomes are practiced in Module 5"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Shows which Week 2 MLOs are practiced in this module
-- Visual badge indicating Module 5
-- Interactive: Click to see how content connects to frameworks
-
----
-
-
----
-
-## Element 4: Text - Case Background (150 words)
+## Element 3: Text - Case Background (150 words)
 
 Copy the markdown below directly into Uplimit:
 
@@ -156,11 +99,11 @@ Copy the markdown below directly into Uplimit:
 
 ---
 
-## Element 5: Widget 5 - Rogers Deal Terms Explorer
+## Element 4: Widget 5 - Rogers Deal Terms Explorer
 
 ### ⚙ Interactive Activity: Rogers Deal Terms Explorer
 
-**Practice: MLO 2.4 (Evaluate the Rogers $5.2B NHL deal and its implications)**
+**Practice: WLO 2.4 (Evaluate the Rogers $5.2B NHL deal and its implications)**
 
 You've learned how media rights are valued and how platforms make money. Now analyze the most famous—and controversial—media rights deal in Canadian history: Rogers' $5.2 billion, 12-year exclusive NHL agreement. What exactly did $5.2 billion buy? Was it worth it?
 
@@ -174,7 +117,7 @@ In this interactive activity, you'll explore 5 tabs revealing what Rogers acquir
 - That the deal was 209% more expensive than the previous one—either Rogers overpaid or the NHL was vastly undervalued before
 
 **Time commitment:** 5-6 minutes
-**Learning outcomes practiced:** MLO 2.4 (Evaluate Rogers deal terms, projections, and strategic rationale)
+**Learning outcomes practiced:** WLO 2.4 (Evaluate Rogers deal terms, projections, and strategic rationale)
 
 ---
 
@@ -233,8 +176,8 @@ In this interactive activity, you'll explore 5 tabs revealing what Rogers acquir
 - **Justification:** Exclusivity premium + digital rights + inflation + NHL's growing Canadian fanbase
 
 **Learning Objectives:**
-- **MLO 2.4:** Understand comprehensive scope of rights deal (not just TV games)
-- **MLO 2.1:** Recognize valuation factors (exclusivity, platform flexibility, content volume)
+- **WLO 2.4:** Understand comprehensive scope of rights deal (not just TV games)
+- **WLO 2.1:** Recognize valuation factors (exclusivity, platform flexibility, content volume)
 - Appreciate why Rogers paid 3x more than previous deal (exclusivity + digital platforms)
 - Understand revenue projection assumptions (critical for later analysis when projections fail)
 
@@ -280,7 +223,7 @@ In this interactive activity, you'll explore 5 tabs revealing what Rogers acquir
 
 ---
 
-## Element 6: Text - Strategic Rationale (150 words)
+## Element 5: Text - Strategic Rationale (150 words)
 
 Copy the markdown below directly into Uplimit:
 
@@ -310,7 +253,7 @@ Rogers' board approved the $5.2B bid despite knowing it would lose money for 3-5
 
 ---
 
-## Element 7: Video - Executive Retrospective (2 minutes)
+## Element 6: Video - Executive Retrospective (2 minutes)
 
 **Video Specifications:**
 - **File:** `week2-rogers-retrospective.mp4`
@@ -348,7 +291,7 @@ Question: Is NHL still worth it at ANY price given streaming disruption?"
 
 ---
 
-## Element 8: Text - Performance Overview (150 words)
+## Element 7: Text - Performance Overview (150 words)
 
 Copy the markdown below directly into Uplimit:
 
@@ -376,11 +319,11 @@ Rogers' optimistic projections collided with harsh market realities.
 
 ---
 
-## Element 9: Widget 6 - Projections vs. Actuals Visualizer
+## Element 8: Widget 6 - Projections vs. Actuals Visualizer
 
 ### ⚙ Interactive Activity: Projections vs. Actuals Visualizer
 
-**Practice: MLO 2.4 (Evaluate Rogers deal performance)**
+**Practice: WLO 2.4 (Evaluate Rogers deal performance)**
 
 Rogers projected break-even by Year 5 ($500M revenue). By Year 10, they were still losing $50-150M annually. But where exactly did the projections go wrong? And by how much?
 
@@ -394,7 +337,7 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
 - Rogers NEVER crossed the break-even line in 10 years—losses totaled ~$1.5B
 
 **Time commitment:** 7-8 minutes
-**Learning outcomes practiced:** MLO 2.4 (Evaluate mega-deal performance through variance analysis)
+**Learning outcomes practiced:** WLO 2.4 (Evaluate mega-deal performance through variance analysis)
 
 ---
 
@@ -420,9 +363,9 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
    - **Key Event:** What happened that year
 
 **Learning Objectives:**
-- **MLO 2.4:** Analyze where and why Rogers' projections failed
-- **MLO 2.2:** Understand streaming adoption challenges (target 1M subs, achieved 450K)
-- **MLO 2.1:** Recognize importance of scenario planning (COVID was unforeseeable, but contract had no flexibility)
+- **WLO 2.4:** Analyze where and why Rogers' projections failed
+- **WLO 2.2:** Understand streaming adoption challenges (target 1M subs, achieved 450K)
+- **WLO 2.1:** Recognize importance of scenario planning (COVID was unforeseeable, but contract had no flexibility)
 - Develop financial analysis skills (variance analysis, trend identification)
 
 **Accessibility:**
@@ -436,7 +379,7 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
 
 ---
 
-## Element 10: Infobox (Note) - Key Insight: Why Forecasts Failed
+## Element 9: Infobox (Note) - Key Insight: Why Forecasts Failed
 
 ```
 Title: ▶ Critical Insight: The Forecasting Failure
@@ -462,7 +405,7 @@ Rogers' projections failed for three interconnected reasons:
 
 ---
 
-## Element 11: Text - Audience Trends (150 words)
+## Element 10: Text - Audience Trends (150 words)
 
 Copy the markdown below directly into Uplimit:
 
@@ -493,11 +436,11 @@ Beyond financial projections, Rogers faced declining and fragmented audiences.
 
 ---
 
-## Element 12: Widget 7 - Viewership Trends Analyzer
+## Element 11: Widget 7 - Viewership Trends Analyzer
 
 ### ⚙ Interactive Activity: Viewership Trends Analyzer
 
-**Practice: MLO 2.3 (Understand fan engagement challenges) & MLO 2.4 (Analyze market dynamics)**
+**Practice: WLO 2.3 (Understand fan engagement challenges) & WLO 2.4 (Analyze market dynamics)**
 
 Rogers lost $1.5B on the NHL deal. But what were the underlying AUDIENCE trends driving those losses? Did viewership decline? Did younger fans stop watching? Did streaming adoption stall?
 
@@ -511,7 +454,7 @@ In this interactive activity, you'll explore 3 tabs of audience data: (1) Linear
 - Regional disparities: Toronto/Montreal strong, Vancouver/Calgary declining—not all Canadian markets equal
 
 **Time commitment:** 8-9 minutes
-**Learning outcomes practiced:** MLO 2.3 (Fan engagement patterns), MLO 2.4 (Market trend analysis)
+**Learning outcomes practiced:** WLO 2.3 (Fan engagement patterns), WLO 2.4 (Market trend analysis)
 
 ---
 
@@ -526,8 +469,8 @@ In this interactive activity, you'll explore 3 tabs of audience data: (1) Linear
    - **Tab 3: Demographic Breakdown** (Age, gender, regional trends)
 
 **Learning Objectives:**
-- **MLO 2.4:** Analyze viewership trends and identify market dynamics
-- **MLO 2.3:** Understand fan engagement challenges (younger demos not engaging with full games)
+- **WLO 2.4:** Analyze viewership trends and identify market dynamics
+- **WLO 2.3:** Understand fan engagement challenges (younger demos not engaging with full games)
 - Recognize importance of demographic trends for long-term rights valuation
 - Compare target vs. actual performance (gap analysis skill)
 
@@ -542,7 +485,7 @@ In this interactive activity, you'll explore 3 tabs of audience data: (1) Linear
 
 ---
 
-## Element 13: Text - Competitive Landscape (150 words)
+## Element 12: Text - Competitive Landscape (150 words)
 
 Copy the markdown below directly into Uplimit:
 
@@ -573,7 +516,7 @@ While Rogers struggled with the NHL deal, competitors evolved with diversified s
 
 ---
 
-## Element 14: Table - Rogers vs. Competitors Comparison
+## Element 13: Table - Rogers vs. Competitors Comparison
 
 | **Company** | **Rights Portfolio** | **Annual Rights Costs** | **Streaming Strategy** | **2024 Subscribers** | **Profitability** | **Strategic Approach** |
 |------------|---------------------|------------------------|----------------------|---------------------|------------------|---------------------|
@@ -589,7 +532,7 @@ Rogers' single-property, NHL-exclusive strategy created concentration risk. TSN'
 
 ---
 
-## Element 15: Text - The 2026 Decision (150 words)
+## Element 14: Text - The 2026 Decision (150 words)
 
 Copy the markdown below directly into Uplimit:
 
@@ -623,11 +566,11 @@ Rogers' NHL contract expires after the 2025-26 season. The company must decide i
 
 ---
 
-## Element 16: Widget 8 - 2026 Decision Simulator (CAPSTONE)
+## Element 15: Widget 8 - 2026 Decision Simulator (CAPSTONE)
 
 ### ⚙ CAPSTONE Activity: 2026 Decision Simulator
 
-**Synthesis: ALL 4 MLOs (2.1, 2.2, 2.3, 2.4) — This is your Week 2 capstone**
+**Synthesis: ALL 4 WLOs (2.1, 2.2, 2.3, 2.4) — This is your Week 2 capstone**
 
 The year is 2026. Rogers' $5.2 billion NHL contract expires. After losing $1.5 billion over 12 years, Rogers CEO asks you: "Should we renew? If so, at what price and on what terms? Or should we walk away?" There's no "right" answer—only defensible strategic recommendations supported by evidence.
 
@@ -635,13 +578,13 @@ This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll 
 
 **What this capstone tests:**
 
-- **MLO 2.1:** Can you value NHL rights in 2026 given changed market conditions? (Apply frameworks from Widgets 1-2)
-- **MLO 2.2:** Can you evaluate platform strategies (exclusive vs. split vs. exit)? (Apply economics from Widget 3)
-- **MLO 2.3:** Can you assess fan engagement opportunities (betting, apps, exclusive content)? (Apply insights from Widget 4)
-- **MLO 2.4:** Can you synthesize financial, competitive, and strategic factors into ONE coherent recommendation? (Demonstrate Bloom's Synthesis/Evaluation level)
+- **WLO 2.1:** Can you value NHL rights in 2026 given changed market conditions? (Apply frameworks from Widgets 1-2)
+- **WLO 2.2:** Can you evaluate platform strategies (exclusive vs. split vs. exit)? (Apply economics from Widget 3)
+- **WLO 2.3:** Can you assess fan engagement opportunities (betting, apps, exclusive content)? (Apply insights from Widget 4)
+- **WLO 2.4:** Can you synthesize financial, competitive, and strategic factors into ONE coherent recommendation? (Demonstrate Bloom's Synthesis/Evaluation level)
 
 **Time commitment:** 15-20 minutes (most complex widget, highest pedagogical value)
-**Learning outcomes synthesized:** ALL Week 2 MLOs (2.1, 2.2, 2.3, 2.4)
+**Learning outcomes synthesized:** ALL Week 2 WLOs (2.1, 2.2, 2.3, 2.4)
 
 **Note:** This is Week 2's capstone demonstration of mastery. Your recommendation will inform your Week 2 reflection memo.
 
@@ -651,7 +594,7 @@ This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll 
 
 **Widget Status:** ⭕ Phase 3 widget - NEEDS TO BE BUILT (12-15 hours estimated)
 
-**How It Works (CAPSTONE - Tests ALL Week 2 MLOs):**
+**How It Works (CAPSTONE - Tests ALL Week 2 WLOs):**
 
 **Phase 1: Set Your Assumptions**
 - Cord-cutting rate: 3-8%/year (slider)
@@ -679,10 +622,10 @@ This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll 
 - Export full analysis (assumptions + projections + recommendation) as PDF
 
 **Learning Objectives (CAPSTONE):**
-- **MLO 2.1:** Apply rights valuation framework to new deal terms
-- **MLO 2.2:** Compare platform strategies (exclusive streaming vs. split package vs. exit)
-- **MLO 2.3:** Evaluate fan engagement opportunities (betting integration, app features)
-- **MLO 2.4:** Make comprehensive strategic recommendation weighing financial, competitive, and market factors
+- **WLO 2.1:** Apply rights valuation framework to new deal terms
+- **WLO 2.2:** Compare platform strategies (exclusive streaming vs. split package vs. exit)
+- **WLO 2.3:** Evaluate fan engagement opportunities (betting integration, app features)
+- **WLO 2.4:** Make comprehensive strategic recommendation weighing financial, competitive, and market factors
 - **Bloom's Level:** SYNTHESIS/EVALUATION (highest level - create new solution + justify with evidence)
 
 **Accessibility:**
@@ -696,7 +639,7 @@ This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll 
 
 ---
 
-## Element 17: Details - Full Case Narrative (Optional Deep Dive)
+## Element 16: Details - Full Case Narrative (Optional Deep Dive)
 
 ```
 Title: ◆ Optional: Full Rogers NHL Case Study Narrative
@@ -726,7 +669,7 @@ Title: ◆ Optional: Full Rogers NHL Case Study Narrative
 
 ---
 
-## Element 18: Discussion Prompt - Debate Rogers' 2026 Decision
+## Element 17: Discussion Prompt - Debate Rogers' 2026 Decision
 
 ## 💬 DISCUSSION PROMPT #3: Debate Rogers' 2026 Decision
 
@@ -753,7 +696,7 @@ There is NO single right answer—this is a strategic judgment call with legitim
 
 ---
 
-## Element 19: AI Case Analysis Coach
+## Element 18: AI Case Analysis Coach
 
 ### 🤖 AI CASE ANALYSIS COACH
 
@@ -813,7 +756,7 @@ Tone: Supportive but challenging. Like a good professor during office hours.
 
 ---
 
-## Element 20: Mental Break - Prepare to Write
+## Element 19: Mental Break - Prepare to Write
 
 ## 🌟 MENTAL BREAK #4: Prepare to Write (CRITICAL BREAK)
 
@@ -835,35 +778,8 @@ Tone: Supportive but challenging. Like a good professor during office hours.
 
 ---
 
-## Element 21: Final Project Connection
 
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 5 Supports Your Final Strategic Vision:**
-
-Module 5 analyzed the complete Rogers $5.2B NHL deal—from initial structure through performance failures to the 2026 strategic decision. This comprehensive case study teaches both deal structuring AND risk management for your Week 5 capstone.
-
-**What You Learned:**
-- How to structure billion-dollar media rights deals (term, exclusivity, rights scope, revenue model)
-- Strategic rationale for paying premiums and making concentrated bets
-- What went wrong: advertising collapsed, streaming underperformed, no contractual flexibility for black swan events
-- How to evaluate strategic mistakes using variance analysis and competitive benchmarking
-- Strategic decision frameworks for renewing, renegotiating, or exiting media deals
-
-**How to Apply This to Your Final Project:**
-
-When you craft your 5-year strategic vision in Week 5, Module 5's comprehensive case analysis informs your approach:
-
-- **Rights Package Definition:** Define what your property offers media partners. Example: "Our property offers exclusive domestic streaming rights + non-exclusive linear broadcast rights, following Rogers' hybrid model but learning from their overreliance on single-property concentration."
-- **Valuation Justification:** Rogers' $5.2B valuation assumed specific audience/engagement metrics. Your vision must justify media rights value using similar frameworks: audience size × engagement × demographics × exclusivity premium.
-- **Scenario Planning:** Rogers assumed linear decline would be gradual. Your vision must include downside scenarios. Example: "If cord-cutting accelerates 2× faster than baseline, our media revenue declines from $500M (Year 1) to $300M (Year 5). Mitigation: diversify into DTC and retain 30% revenue from non-media streams."
-- **Contractual Flexibility:** Rogers had no force majeure clause. Your vision should specify deal terms that protect downside: "Seek performance-based revenue share vs. guaranteed fees, with renegotiation triggers if viewership declines >20%."
-
-**Real-World Application:** Rogers lost $1.5B+ over 10 years. Your Week 5 capstone must demonstrate you've learned from their mistakes: conservative projections, downside protection, strategic flexibility, and portfolio diversification.
-
----
-
-## Element 22: Module 5 Complete - Transition to Module 6
+## Element 21: Module 5 Complete - Transition to Module 6
 
 **🎯 Module 5 Complete!** You've analyzed the entire Rogers $5.2B NHL deal from initial context through performance analysis. You now understand:
 
@@ -886,7 +802,7 @@ You can now evaluate multi-billion dollar media rights deals through comprehensi
 
 **Next: Module 6 - Mini-Case Memo Assessment (20-25 minutes)**
 
-Now you'll synthesize everything you've learned into a 2-page executive memo with your strategic recommendation for Rogers' 2026 decision. This is your Week 2 summative assessment—an opportunity to demonstrate mastery of all four learning outcomes (MLO 2.1-2.4).
+Now you'll synthesize everything you've learned into a 2-page executive memo with your strategic recommendation for Rogers' 2026 decision. This is your Week 2 summative assessment—an opportunity to demonstrate mastery of all four learning outcomes (WLO 2.1-2.4).
 
 **Take a 5-10 minute break before starting Module 6.** The assessment requires fresh mental energy for strategic writing. Review your notes from the Rogers case, grab water, and set up your writing environment. You've got this!
 
@@ -899,7 +815,7 @@ Now you'll synthesize everything you've learned into a 2-page executive memo wit
 - **Capstone widget:** Requires synthesis of ALL Week 2 concepts (rights valuation, platform economics, engagement, strategic evaluation)
 - **Multiple valid recommendations:** No single "right answer" - authentic business decision
 - **Progressive disclosure:** Optional full case in Details accordion AFTER interactive exploration
-- **Supports all MLOs:** 2.1 (valuation via Widget 5), 2.2 (platforms via Widgets 6-7), 2.3 (engagement via trends analysis), 2.4 (evaluation via Widget 8 capstone)
+- **Supports all WLOs:** 2.1 (valuation via Widget 5), 2.2 (platforms via Widgets 6-7), 2.3 (engagement via trends analysis), 2.4 (evaluation via Widget 8 capstone)
 
 ---
 

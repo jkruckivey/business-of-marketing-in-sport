@@ -55,7 +55,7 @@ modules/week2/widgets/audience-size-calculator.html
 - **Real-time Calculations:** Total reach, premium multiplier, ad revenue, estimated rights value
 - **Comparison Chart:** Bar chart comparing selected league to NFL baseline
 - **Export:** JSON export of all inputs and results
-- **Learning Objectives:** MLO 2.1 (audience as primary valuation driver)
+- **Learning Objectives:** WLO 2.1 (audience as primary valuation driver)
 
 ### Student Instructions (Optional Text Above Widget)
 ```markdown
@@ -147,7 +147,7 @@ modules/week2/widgets/platform-economics-visualizer.html
 - **Real-World Presets:** Rogers NHL, DAZN Canada, Apple TV+ MLS
 - **10-Year Projection Chart:** Revenue vs. costs with break-even analysis
 - **Strategic Insights:** Dynamic insights based on inputs
-- **Learning Objectives:** MLO 2.2 (compare platform strategies)
+- **Learning Objectives:** WLO 2.2 (compare platform strategies)
 
 ### Student Instructions
 ```markdown
@@ -200,7 +200,7 @@ modules/week2/widgets/engagement-value-chain-builder.html
 - **Real-time Calculations:** Total value, ROI, affordable rights budget
 - **Engagement Funnel Chart:** Visualize passive → engaged → super-fan progression
 - **Strategic Insights:** Trade-off analysis based on selected tactics
-- **Learning Objectives:** MLO 2.3 (engagement extends monetization)
+- **Learning Objectives:** WLO 2.3 (engagement extends monetization)
 
 ### Student Instructions
 ```markdown
@@ -250,7 +250,7 @@ modules/week2/widgets/rogers-deal-terms-explorer.html
   4. Revenue Projections: Year 1-7 forecasts (break-even target Year 5)
   5. Comparison: 209% increase vs. previous CBC/TSN deal
 - **Keyboard Navigation:** Arrow keys to switch tabs, fully accessible
-- **Learning Objectives:** MLO 2.4 (understand deal scope), MLO 2.1 (valuation factors)
+- **Learning Objectives:** WLO 2.4 (understand deal scope), WLO 2.1 (valuation factors)
 
 ### Student Instructions
 ```markdown
@@ -297,7 +297,7 @@ modules/week2/widgets/projections-vs-actuals-visualizer.html
 - **Year Detail Panel:** Shows projected, actual, variance, key events for selected year
 - **Complete Data Table:** Accessible alternative with all 10 years of data
 - **CSV Export:** Download complete financial dataset
-- **Learning Objectives:** MLO 2.4 (analyze where projections failed), financial analysis skills
+- **Learning Objectives:** WLO 2.4 (analyze where projections failed), financial analysis skills
 
 ### Student Instructions
 ```markdown
@@ -347,7 +347,7 @@ modules/week2/widgets/viewership-trends-analyzer.html
 - **Complete Data Tables:** All viewership and subscriber data with key events
 - **Insights Boxes:** Strategic implications of each trend
 - **CSV Export:** All data from 3 tabs
-- **Learning Objectives:** MLO 2.4 (market dynamics), MLO 2.3 (engagement challenges)
+- **Learning Objectives:** WLO 2.4 (market dynamics), WLO 2.3 (engagement challenges)
 
 ### Student Instructions
 ```markdown
@@ -399,7 +399,7 @@ modules/week2/widgets/2026-decision-simulator.html
 - **No Single Right Answer:** Multiple valid strategies depending on assumptions
 - **Strategic Scorecard:** 5-star ratings across financial, risk, strategic, growth, competitive dimensions
 - **JSON Export:** Complete analysis (assumptions + projections + recommendation)
-- **Learning Objectives:** Tests ALL MLOs 2.1-2.4 (synthesis/evaluation - Bloom's highest level)
+- **Learning Objectives:** Tests ALL WLOs 2.1-2.4 (synthesis/evaluation - Bloom's highest level)
 
 ### Student Instructions
 ```markdown

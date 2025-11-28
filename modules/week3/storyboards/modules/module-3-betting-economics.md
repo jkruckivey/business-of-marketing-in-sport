@@ -1,22 +1,22 @@
 # MODULE 3: Sports Betting Economics (⭐ INTERACTIVE FOCUS)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
-**Purpose:** Analyze sports betting as growth driver, understand regulatory landscape, explore fan engagement impact (measures MLOs 3.2, 3.3)
+**Purpose:** Analyze sports betting as growth driver, understand regulatory landscape, explore fan engagement impact (measures WLOs 3.2, 3.3)
 
 **Uplimit Structure:** Third module in Unit 3
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 2 | Type directly | Transitions from sponsorship to betting |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **Video** ⬤ Required | Sports Betting 101 - Regulatory Landscape (2 min) | Upload MP4 | PASPA repeal, state-by-state legalization |
+| 2 | **Video** ⬤ Required | Sports Betting 101 - Regulatory Landscape (2 min) | Upload MP4 | PASPA repeal, state-by-state legalization |
 | 3 | **Interactive Widget** ⬤ Required | Betting Market Simulator | Embed iframe | Model betting handle, operator revenue, taxes |
-| 5 | **▬ Text** ◐ Recommended | Fan Engagement Impact (150 words) | Type directly | Bettors watch 40% more, engage 3x |
-| 6 | **Interactive Widget** ⬤ Required | Engagement Multiplier Calculator | Embed iframe | Compare bettor vs. non-bettor behavior |
-| 7 | **Infobox (Insight)** ◐ Recommended | Bettors = 40% More Viewership | Type directly | Yellow variant, engagement data |
-| 8 | **▬ Text** ◐ Recommended | Why Betting Partnerships Are Valuable (150 words) | Type directly | Data access, attribution, exclusivity |
-| 9 | **Table** ◐ Recommended | Top 10 Sports Betting Sponsors (2024) | Type directly | FanDuel, DraftKings, BetMGM, Caesars rankings |
-| 10 | **Interactive Widget** ⬤ Required | Partnership Valuation Tool | Embed iframe | Calculate betting sponsor value premium |
-| 11 | **Details** ○ Optional | Advanced: International Betting Models | Type directly | Accordion - UK, Australia comparison |
+| 4 | **▬ Text** ◐ Recommended | Fan Engagement Impact (150 words) | Type directly | Bettors watch 40% more, engage 3x |
+| 5 | **Interactive Widget** ⬤ Required | Engagement Multiplier Calculator | Embed iframe | Compare bettor vs. non-bettor behavior |
+| 6 | **Infobox (Insight)** ◐ Recommended | Bettors = 40% More Viewership | Type directly | Yellow variant, engagement data |
+| 7 | **▬ Text** ◐ Recommended | Why Betting Partnerships Are Valuable (150 words) | Type directly | Data access, attribution, exclusivity |
+| 8 | **Table** ◐ Recommended | Top 10 Sports Betting Sponsors (2024) | Type directly | FanDuel, DraftKings, BetMGM, Caesars rankings |
+| 9 | **Interactive Widget** ⬤ Required | Partnership Valuation Tool | Embed iframe | Calculate betting sponsor value premium |
+| 10 | **Details** ○ Optional | Advanced: International Betting Models | Type directly | Accordion - UK, Australia comparison |
 
 ---
 
@@ -25,6 +25,8 @@
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
+**Connecting to Weeks 1-2:** Remember from Week 1 that betting represents 2-8% of sports revenue—the smallest of the five streams, but the fastest-growing. And recall Week 2's concept of "appointment viewing": bettors don't just watch more games, they watch them LIVE (betting on delayed games makes no sense). This is why betting amplifies the very thing that makes sports media valuable.
+
 You've built the sponsorship framework: calculate CPM, design activation budgets, model ROI. Now let's explore why sports betting partnerships became the fastest-growing (and often most valuable) sponsorship category.
 
 In 2018, the Supreme Court repealed PASPA (Professional and Amateur Sports Protection Act), legalizing sports betting across the US. What happened next transformed sports marketing: operators like FanDuel and DraftKings went from zero to $50B+ in annual handle by 2024, leagues signed $10-50M annual deals with betting companies, and "official betting partner" became the most competitive sponsorship category.
@@ -113,7 +115,7 @@ Export your market model. Compare state tax revenue to operator profit—this te
 
 ### ⚙ Interactive Activity: Betting Market Simulator
 
-**Practice: MLO 3.2 (Analyze sports betting as a new growth driver in the industry)**
+**Practice: WLO 3.2 (Analyze sports betting as a new growth driver in the industry)**
 
 Sports betting has transformed from an illegal underground activity to a $100+ billion regulated industry in just five years. But how do states evaluate whether to legalize betting? And how do operators like FanDuel project market opportunity? This simulator gives you the tools state legislators and betting operators use to model market economics before entering a new state.
 
@@ -127,7 +129,7 @@ You'll input key parameters—state population, participation rates, average wag
 - The trade-off between state tax rates and operator profitability, and how tax policy affects market growth
 
 **Time commitment:** 8-10 minutes
-**Learning outcomes practiced:** MLO 3.2 (Analyze sports betting as a new growth driver in the industry)
+**Learning outcomes practiced:** WLO 3.2 (Analyze sports betting as a new growth driver in the industry)
 
 ---
 
@@ -145,7 +147,7 @@ You'll input key parameters—state population, participation rates, average wag
 3. Widget displays: Market size funnel (Handle → GGR → Net Revenue), state tax revenue, operator profitability, comparison to state benchmarks
 4. 5 presets: New Jersey (mature market), New York (highest handle), Pennsylvania, Michigan, Ohio (new market)
 
-**Learning Objective:** MLO 3.2 (Analyze betting as growth driver) - Students model betting market economics
+**Learning Objective:** WLO 3.2 (Analyze betting as growth driver) - Students model betting market economics
 
 **Real-World Data Examples:**
 - **New Jersey:** 9.3M population, 12% participation, $2,400 avg wager, 7% margin = $2.4B handle, $168M GGR, $29M state tax (17.5% rate)
@@ -275,7 +277,7 @@ Export your engagement analysis. This data proves why betting partnerships deliv
 
 ### ⚙ Interactive Activity: Engagement Multiplier Calculator
 
-**Practice: MLO 3.2 (Analyze sports betting as a new growth driver in the industry)**
+**Practice: WLO 3.2 (Analyze sports betting as a new growth driver in the industry)**
 
 Here's the insight that's reshaping sports media strategy: bettors watch more games, stay tuned longer, and engage more deeply than non-bettors. But how much more? And what does that mean for media rights valuations and sponsorship pricing? This calculator quantifies the "engagement multiplier effect" that makes betting partnerships among the most valuable in sports.
 
@@ -289,7 +291,7 @@ You'll compare viewing behavior between bettors and non-bettors by inputting fan
 - How leagues and broadcasters use engagement data to justify betting-focused content and sponsorship premiums
 
 **Time commitment:** 7-9 minutes
-**Learning outcomes practiced:** MLO 3.2 (Analyze sports betting as a new growth driver in the industry)
+**Learning outcomes practiced:** WLO 3.2 (Analyze sports betting as a new growth driver in the industry)
 
 ---
 
@@ -307,7 +309,7 @@ You'll compare viewing behavior between bettors and non-bettors by inputting fan
 3. Widget displays: Viewership breakdown chart, engagement comparison (bettors vs. non-bettors), bettor revenue premium
 4. 3 presets: NFL (15% bettors, 40% multiplier), NBA (12% bettors, 50% multiplier), NHL (10% bettors, 35% multiplier)
 
-**Learning Objective:** MLO 3.2 (Analyze betting impact) - Students quantify betting's engagement effects
+**Learning Objective:** WLO 3.2 (Analyze betting impact) - Students quantify betting's engagement effects
 
 **Real-World Example:**
 - **NFL:** 200M fan base, 15% bet (30M bettors), 272 games, 17M avg viewers, 40% engagement boost
@@ -407,6 +409,8 @@ As you saw in the previous widget, bettors watch 40% more games, use apps 3x mor
 - Broadcast integrations (Verizon 5G betting odds segments during NFL games)
 - Retail activations (Coca-Cola "bet & win" promotions at 7-Eleven)
 
+**Applying the 2-3× Activation Rule (Module 2 callback):** When FanDuel pays $55M/year to the NFL in rights fees, they spend an additional $110-165M on activation (ads, promotions, hospitality). That's real marketing budget flowing through sports properties—budget that doesn't appear in the headline "rights fee" number but represents the majority of a partnership's total investment.
+
 **Next:** See which betting operators rank among top sports sponsors.
 ```
 
@@ -485,7 +489,7 @@ Export your premium analysis. If your property can command 20-30% betting sponso
 
 ### ⚙ Interactive Activity: Partnership Valuation Tool
 
-**Practice: MLO 3.3 (Calculate how brands measure ROI in sport partnerships)**
+**Practice: WLO 3.3 (Calculate how brands measure ROI in sport partnerships)**
 
 You've seen that bettors engage more than non-bettors. Now comes the financial implication: should betting operators pay a premium for sponsorships compared to traditional brands? And if so, how much? This valuation tool helps you calculate the justified price premium for betting partnerships based on quantifiable engagement advantages.
 
@@ -499,7 +503,7 @@ You'll compare traditional sponsorship CPM to betting sponsor CPM by factoring i
 - The additional value betting operators gain from attribution data access and in-app conversion tracking
 
 **Time commitment:** 8-10 minutes
-**Learning outcomes practiced:** MLO 3.3 (Calculate how brands measure ROI in sport partnerships)
+**Learning outcomes practiced:** WLO 3.3 (Calculate how brands measure ROI in sport partnerships)
 
 ---
 
@@ -516,7 +520,7 @@ You'll compare traditional sponsorship CPM to betting sponsor CPM by factoring i
 3. Widget displays: Value comparison, premium justification, ROI comparison
 4. 3 presets: NFL jersey sponsor (20% premium), NBA court ad (25% premium), NHL betting kiosk (35% premium)
 
-**Learning Objective:** MLO 3.3 (Calculate ROI) - Students quantify betting partnership premiums
+**Learning Objective:** WLO 3.3 (Calculate ROI) - Students quantify betting partnership premiums
 
 **Real-World Example:**
 - **NFL Jersey Sponsor (Traditional):** $25M rights fee, $1,200 CPM, 5B impressions = 4.17B effective impressions
@@ -631,34 +635,4 @@ Now that you understand betting economics and sponsorship value, let's apply the
 
 Ready to see theory meet reality? Let's dive into the case!
 
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 3 Supports Your Week 5 Marketing Plan:**
-
-Module 3 taught you why sports betting partnerships are the fastest-growing revenue opportunity in sports. This strengthens your final project's **Slide 4: Sponsorship/Media Strategy**.
-
-**What You Learned:**
-- **Betting drives engagement:** Bettors watch 35-50% more games (varies by sport), use apps 3x more, spend 2x on merchandise
-- **Betting sponsors pay premiums:** 20-30% more than traditional sponsors due to attribution data access and engagement multipliers
-- **Betting is now a top category:** Operators spend $800M-1B annually on sports sponsorships, competing with traditional beer sponsors
-- **Exclusivity creates value:** Leagues limit to 1-3 "official partners," driving bidding wars
-
-**How to Apply This to Your Final Project:**
-When you pitch your property's sponsorship strategy in Week 5, consider **whether betting partnerships fit your model**:
-
-**IF your property is in a betting-legal market (38 US states, Canada, UK, Australia):**
-- **Slide 4 must include:** "Official Betting Partner" as a premium sponsorship tier
-- **Expected value:** $5-20M annually (depending on league size and market)
-- **Key selling point:** "Betting partnerships deliver attribution data that traditional sponsors can't access—brands can track exactly which fans convert"
-- **Use Module 3 widgets:** Export your Betting Market Simulator and Engagement Multiplier Calculator data to justify betting partnership value in your financial appendix
-
-**IF your property is in a non-betting market (or emerging sport with younger demographic):**
-- **Alternative approach:** Pitch "future-ready" sponsorship structure that can accommodate betting when/if legal
-- **Slide 4 should note:** "While betting partnerships aren't viable today, we're building engagement infrastructure (mobile app, first-party data, fan loyalty program) that positions us for betting integration in 2-3 years"
-
-**Real-World Application:** FanDuel spends $300M+ annually on league partnerships. Your final project needs to explain why operators like FanDuel would invest in YOUR property. Module 3 taught you the answer: access to the most engaged fans.
-
----
 

@@ -1,18 +1,19 @@
 ## MODULE 2: Executive Perspectives (BOPPPS: Participatory - Expert Input)
-**Purpose:** Deliver expert practitioner perspective on revenue ecosystems through focused concept videos (supports MLO 1.1, 1.2)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+
+**Purpose:** Deliver expert practitioner perspective on revenue ecosystems through focused concept videos (supports WLO 1.1, 1.2)
 
 **Uplimit Structure:** Second module in Unit 1
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 1 | Type directly | Sets context, connects narrative |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
-| 3 | **ⓘ Infobox (Callout)** ⬛ Required | Context about videos + viewing instructions | Type directly | Blue variant, sets viewing expectations |
-| 4 | **▶ Video 1** ⬛ Required | Revenue Streams Overview (2 min) | Upload MP4 + VTT transcript | Introduction to 5 revenue streams |
-| 5 | **▶ Video 2** ▣ Recommended | Revenue Sharing Models (2 min) | Upload MP4 + VTT transcript | NHL/NFL/EPL comparison |
-| 6 | **▶ Video 3** ⬛ Required | Executive Interview (10-12 min) | Upload MP4 + VTT transcript | Bell Media/TSN leader perspective |
-| 7 | **▤ Details** ▢ Optional | Video transcripts (optional) | Type directly | Accordion for text versions |
-| 8 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about revenue concepts" | Configure in Uplimit | Named: "Revenue Ecosystem Q&A" |
+| 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about videos + viewing instructions | Type directly | Blue variant, sets viewing expectations |
+| 3 | **▶ Video 1** ⬛ Required | Revenue Streams Overview (2 min) | Upload MP4 + VTT transcript | Introduction to 5 revenue streams |
+| 4 | **▶ Video 2** ▣ Recommended | Revenue Sharing Models (2 min) | Upload MP4 + VTT transcript | NHL/NFL/EPL comparison |
+| 5 | **▶ Video 3** ⬛ Required | Executive Interview (10-12 min) | Upload MP4 + VTT transcript | Bell Media/TSN leader perspective |
+| 6 | **▤ Details** ▢ Optional | Video transcripts (optional) | Type directly | Accordion for text versions |
+| 7 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about revenue concepts" | Configure in Uplimit | Named: "Revenue Ecosystem Q&A" |
 
 ### Element 1: Connecting Introduction Text
 **Copy this markdown directly into Uplimit:**
@@ -25,33 +26,7 @@ Before diving into the details of each stream, you need context from someone who
 
 ---
 
-## Element 2: **NEW** - Learning Outcomes Widget
-
-**Uplimit Implementation:**
-1. Select **iFrame Widget** element
-2. Copy embed code below:
-
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-2.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Module 2 Learning Outcomes"
-  aria-label="Visual map showing which learning outcomes are practiced in Module 2"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Shows which Week 1 MLOs are practiced in this module (executive perspectives)
-- Visual badge indicating Module 2: Executive Perspectives
-- Interactive: Click to see how practitioner insights connect to frameworks
-
----
-
-### Element 3: Infobox Content
+### Element 2: Infobox Content
 ```
 Title: ◉ Executive Insights: Revenue Ecosystems
 
@@ -65,7 +40,7 @@ Viewing Guide:
 • Note: Real examples of revenue sharing in action and executive decision-making
 • Consider: What makes sport's business model unique vs. entertainment?
 
-Videos directly support MLO 1.1 (mapping revenue streams) and MLO 1.2
+Videos directly support WLO 1.1 (mapping revenue streams) and WLO 1.2
 (understanding sport's unique model).
 
 **Total viewing time:** 14-16 minutes
@@ -73,7 +48,7 @@ Videos directly support MLO 1.1 (mapping revenue streams) and MLO 1.2
 
 ---
 
-### Element 4: Video 1 - Revenue Streams Overview
+### Element 3: Video 1 - Revenue Streams Overview
 - **File:** `week1-video1-revenue-streams.mp4`
 - **Duration:** 2 minutes
 - **VTT Transcript:** `week1-video1-revenue-streams.vtt` (required for accessibility)
@@ -141,7 +116,7 @@ Successful organizations build revenue ecosystems, not portfolios.
 
 ---
 
-### Element 5: Video 2 - Revenue Sharing Models
+### Element 4: Video 2 - Revenue Sharing Models
 - **File:** `week1-video2-revenue-sharing.mp4`
 - **Duration:** 2 minutes
 - **VTT Transcript:** `week1-video2-revenue-sharing.vtt` (required for accessibility)
@@ -207,7 +182,7 @@ affect strategic decisions.
 
 ---
 
-### Element 6: Video 3 - Executive Interview
+### Element 5: Video 3 - Executive Interview
 - **File:** `week1-video3-executive-interview.mp4`
 - **Duration:** 10-12 minutes
 - **VTT Transcript:** `week1-video3-executive-interview.vtt` (required for accessibility)
@@ -230,7 +205,7 @@ affect strategic decisions.
 
 ---
 
-### Element 7: Details Accordion Content
+### Element 6: Details Accordion Content
 ```
 Title: Video Transcripts (Text Versions)
 
@@ -251,7 +226,7 @@ reading to watching videos.
 
 ---
 
-### Element 8: AI Chat Widget Configuration
+### Element 7: AI Chat Widget Configuration
 - **Widget Name:** "Revenue Ecosystem Q&A"
 - **System Prompt:** "You are a knowledgeable assistant helping MBA students understand revenue ecosystems in professional sport. Answer questions about the video content, revenue streams (media rights, ticketing, sponsorship, merchandising, betting), and revenue sharing models. Provide clear, business-focused explanations with real examples when possible."
 - **Welcome Message:** "Hi! I can help explain concepts from the revenue ecosystem videos. What questions do you have about how professional sport generates and distributes revenue?"
@@ -285,29 +260,6 @@ You now have expert perspective on professional sport's unique revenue model—b
 Now that you've seen the big picture, it's time to explore each revenue stream in depth. In Module 3, you'll interact with 8 hands-on widgets that let you discover revenue principles through manipulation and experimentation—not passive reading.
 
 Ready to dive in? Let's go!
-
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 2 Supports Your Final Strategic Vision:**
-
-Module 2 delivered authentic practitioner insights from executives who negotiate media deals and build revenue strategies. This real-world perspective grounds your Week 5 strategic vision in operational reality.
-
-**What You Learned:**
-- Media rights (40-60%) dominate modern sports economics—executives prioritize this revenue stream above all others
-- Revenue sharing creates governance tensions and limits strategic flexibility (Canadian teams face currency headwinds)
-- Real-world media deals involve complex trade-offs: exclusivity vs. reach, guaranteed fees vs. revenue share, linear broadcast vs. streaming
-
-**How to Apply This to Your Final Project:**
-
-When you craft your strategic vision in Week 5, reference executive decision-making frameworks from Module 2:
-
-- **Media Rights Strategy:** Cite the executive interview insights when explaining your media approach. Example: "Following TSN's model of balancing linear broadcast (reach) with streaming (data/engagement), our property will..."
-- **Strategic Constraints:** Acknowledge real-world limitations executives face. If your property is in a revenue-sharing league, explain how this constrains your options (like Canadian NHL teams dealing with currency risk).
-- **Stakeholder Management:** Executives must justify decisions to boards, owners, and partners. Your strategic vision should anticipate skeptical questions and pre-emptively address them with data.
-
-**Real-World Application:** The Bell Media/TSN executive shared how they evaluate partnership opportunities and navigate league politics. When you pitch your 5-year vision, you'll face similar scrutiny from skeptical stakeholders. Module 2 taught you how practitioners defend strategic choices.
 
 ---
 

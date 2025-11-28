@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Ecosystem Simulator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-success: #22c55e;
+            --color-error: #ef4444;
+            --color-warning: #f59e0b;
+            --color-info: #3b82f6;
+            --color-primary: #171717;
+            --color-primary-dark: #404040;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --border-radius: 8px;
+            --border-radius-sm: 4px;
+            --spacing-1: 8px;
+            --spacing-2: 16px;
+            --spacing-3: 24px;
+            --spacing-4: 32px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: white;
+            color: var(--color-neutral-900);
+            padding: 24px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--color-neutral-600);
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--color-neutral-50);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 24px;
+            border: 1px solid var(--color-neutral-200);
+        }
+
+        .team-info h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .team-info p {
+            color: var(--color-neutral-600);
+            font-size: 0.9rem;
+        }
+
+        .budget-display {
+            text-align: right;
+        }
+
+        .budget-label {
+            font-size: 0.85rem;
+            color: var(--color-neutral-600);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .budget-amount {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .section {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 20px;
+        }
+
+        .section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--color-neutral-900);
+        }
+
+        .revenue-streams {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .stream-card {
+            background: var(--color-neutral-50);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .stream-card.pulse {
+            animation: pulseEffect 0.6s ease;
+            border-color: var(--color-success);
+        }
+
+        @keyframes pulseEffect {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.03); box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3); }
+        }
+
+        .stream-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .stream-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--color-neutral-900);
+        }
+
+        .stream-value {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--color-neutral-900);
+        }
+
+        .stream-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--color-neutral-200);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 4px;
+        }
+
+        .stream-fill {
+            height: 100%;
+            background: var(--color-neutral-900);
+            transition: width 0.5s ease;
+        }
+
+        .stream-percentage {
+            font-size: 0.85rem;
+            color: var(--color-neutral-600);
+        }
+
+        .total-revenue {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 2px solid var(--color-neutral-300);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .total-label {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .total-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .investment-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .investment-card {
+            background: white;
+            border: 2px solid var(--color-neutral-300);
+            border-radius: var(--border-radius);
+            padding: 16px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .investment-card:hover:not(.disabled) {
+            border-color: var(--color-neutral-900);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .investment-card:focus {
+            outline: 2px solid #3182ce;
+            outline-offset: 2px;
+        }
+
+        .investment-card.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background: var(--color-neutral-100);
+        }
+
+        .investment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .investment-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--color-neutral-900);
+        }
+
+        .investment-cost {
+            font-weight: 700;
+            color: var(--color-error);
+            font-size: 0.95rem;
+        }
+
+        .investment-description {
+            font-size: 0.85rem;
+            color: var(--color-neutral-600);
+            line-height: 1.5;
+        }
+
+        .cascade-log {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .cascade-log h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--color-neutral-900);
+        }
+
+        .cascade-entries {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .cascade-entry {
+            background: white;
+            border-left: 4px solid var(--color-success);
+            padding: 12px;
+            border-radius: var(--border-radius-sm);
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .cascade-entry.direct {
+            border-left-color: var(--color-neutral-900);
+        }
+
+        .entry-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+            color: var(--color-neutral-900);
+        }
+
+        .entry-description {
+            font-size: 0.85rem;
+            color: var(--color-neutral-600);
+            line-height: 1.5;
+        }
+
+        .insight-box {
+            background: linear-gradient(135deg, var(--color-neutral-900) 0%, var(--color-neutral-700) 100%);
+            color: white;
+            padding: 24px;
+            border-radius: var(--border-radius);
+            margin-bottom: 24px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .insight-box h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .insight-box p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 24px;
+            background: var(--color-neutral-900);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-family: var(--font-family-primary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--color-neutral-700);
+        }
+
+        .btn:focus {
+            outline: 2px solid #3182ce;
+            outline-offset: 2px;
+        }
+
+        .btn:disabled {
+            background: var(--color-neutral-400);
+            cursor: not-allowed;
+        }
+
+        .reset-container {
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 16px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .header-bar {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+
+            .budget-display {
+                text-align: center;
+            }
+
+            .budget-amount {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Revenue Ecosystem Simulator</h1>
+        <p class="subtitle">Discover how strategic investments create cascade effects across all revenue streams</p>
+
+        <div class="header-bar">
+            <div class="team-info">
+                <h2>Riverdale Rangers</h2>
+                <p>MLS Expansion Team</p>
+            </div>
+            <div class="budget-display">
+                <div class="budget-label">Available Budget</div>
+                <div class="budget-amount" id="budget-amount">$50M</div>
+            </div>
+        </div>
+
+        <div class="main-layout">
+            <div class="section">
+                <h3>Revenue Streams</h3>
+                <div class="revenue-streams">
+                    <div class="stream-card" data-stream="media">
+                        <div class="stream-header">
+                            <span class="stream-name">Media Rights</span>
+                            <span class="stream-value" data-value="media">$38M</span>
+                        </div>
+                        <div class="stream-bar">
+                            <div class="stream-fill" data-fill="media" style="width: 44.7%"></div>
+                        </div>
+                        <div class="stream-percentage" data-percent="media">44.7%</div>
+                    </div>
+
+                    <div class="stream-card" data-stream="ticketing">
+                        <div class="stream-header">
+                            <span class="stream-name">Ticketing & Live Events</span>
+                            <span class="stream-value" data-value="ticketing">$21M</span>
+                        </div>
+                        <div class="stream-bar">
+                            <div class="stream-fill" data-fill="ticketing" style="width: 24.7%"></div>
+                        </div>
+                        <div class="stream-percentage" data-percent="ticketing">24.7%</div>
+                    </div>
+
+                    <div class="stream-card" data-stream="sponsorship">
+                        <div class="stream-header">
+                            <span class="stream-name">Sponsorship & Partnerships</span>
+                            <span class="stream-value" data-value="sponsorship">$17M</span>
+                        </div>
+                        <div class="stream-bar">
+                            <div class="stream-fill" data-fill="sponsorship" style="width: 20%"></div>
+                        </div>
+                        <div class="stream-percentage" data-percent="sponsorship">20%</div>
+                    </div>
+
+                    <div class="stream-card" data-stream="merch">
+                        <div class="stream-header">
+                            <span class="stream-name">Merchandising & Licensing</span>
+                            <span class="stream-value" data-value="merch">$6M</span>
+                        </div>
+                        <div class="stream-bar">
+                            <div class="stream-fill" data-fill="merch" style="width: 7.1%"></div>
+                        </div>
+                        <div class="stream-percentage" data-percent="merch">7.1%</div>
+                    </div>
+
+                    <div class="stream-card" data-stream="betting">
+                        <div class="stream-header">
+                            <span class="stream-name">Betting & Gaming</span>
+                            <span class="stream-value" data-value="betting">$3M</span>
+                        </div>
+                        <div class="stream-bar">
+                            <div class="stream-fill" data-fill="betting" style="width: 3.5%"></div>
+                        </div>
+                        <div class="stream-percentage" data-percent="betting">3.5%</div>
+                    </div>
+                </div>
+
+                <div class="total-revenue">
+                    <span class="total-label">Total Revenue</span>
+                    <span class="total-value" id="total-revenue">$85M</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Investment Options</h3>
+                <div class="investment-options">
+                    <div class="investment-card"
+                         data-investment="media"
+                         tabindex="0"
+                         role="button"
+                         aria-label="Secure Premium Media Deal - Cost 20 million dollars"
+                         onclick="makeInvestment('media')"
+                         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();makeInvestment('media');}">
+                        <div class="investment-header">
+                            <span class="investment-title">Secure Premium Media Deal</span>
+                            <span class="investment-cost">-$20M</span>
+                        </div>
+                        <p class="investment-description">
+                            Negotiate exclusive broadcast rights with major network. Creates exposure that attracts sponsors and grows all audiences.
+                        </p>
+                    </div>
+
+                    <div class="investment-card"
+                         data-investment="stadium"
+                         tabindex="0"
+                         role="button"
+                         aria-label="Build New Stadium - Cost 30 million dollars"
+                         onclick="makeInvestment('stadium')"
+                         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();makeInvestment('stadium');}">
+                        <div class="investment-header">
+                            <span class="investment-title">Build New Stadium</span>
+                            <span class="investment-cost">-$30M</span>
+                        </div>
+                        <p class="investment-description">
+                            Construct modern venue with premium seating and retail spaces. Enhances fan experience and creates partnership opportunities.
+                        </p>
+                    </div>
+
+                    <div class="investment-card"
+                         data-investment="player"
+                         tabindex="0"
+                         role="button"
+                         aria-label="Sign Star Player - Cost 15 million dollars"
+                         onclick="makeInvestment('player')"
+                         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();makeInvestment('player');}">
+                        <div class="investment-header">
+                            <span class="investment-title">Sign Star Player</span>
+                            <span class="investment-cost">-$15M</span>
+                        </div>
+                        <p class="investment-description">
+                            Acquire marquee talent that drives merchandise sales, ticket demand, and media interest across all channels.
+                        </p>
+                    </div>
+
+                    <div class="investment-card"
+                         data-investment="betting"
+                         tabindex="0"
+                         role="button"
+                         aria-label="Launch Betting Partnership - Cost 10 million dollars"
+                         onclick="makeInvestment('betting')"
+                         onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();makeInvestment('betting');}">
+                        <div class="investment-header">
+                            <span class="investment-title">Launch Betting Partnership</span>
+                            <span class="investment-cost">-$10M</span>
+                        </div>
+                        <p class="investment-description">
+                            Partner with sports betting operator for in-stadium lounges, app integration, and data-driven promotions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cascade-log" id="cascade-log" style="display: none;">
+            <h3>Cascade Effects Log</h3>
+            <div class="cascade-entries" id="cascade-entries" role="log" aria-live="polite"></div>
+        </div>
+
+        <div class="insight-box" id="insight-box" style="display: none;">
+            <h3>Ecosystem Insight</h3>
+            <p>
+                Notice how investments in one revenue stream create ripple effects across others. Successful sports organizations don't optimize individual revenue sources in isolation - they build interconnected ecosystems where strategic investments amplify returns across multiple channels simultaneously.
+            </p>
+        </div>
+
+        <div class="reset-container">
+            <button class="btn" onclick="resetSimulator()" aria-label="Reset simulator to starting state">
+                Reset Simulator
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // State management
+        let state = {
+            budget: 50,
+            investmentCount: 0,
+            revenue: {
+                media: 38,
+                ticketing: 21,
+                sponsorship: 17,
+                merch: 6,
+                betting: 3
+            },
+            usedInvestments: []
+        };
+
+        // Investment definitions with cascade effects
+        const investments = {
+            media: {
+                cost: 20,
+                name: 'Premium Media Deal',
+                direct: { stream: 'media', amount: 15, reason: 'Exclusive broadcast rights generate guaranteed revenue' },
+                cascades: [
+                    { stream: 'sponsorship', amount: 5, reason: 'Increased exposure attracts premium sponsors' },
+                    { stream: 'merch', amount: 3, reason: 'Wider audience drives merchandise demand' },
+                    { stream: 'betting', amount: 2, reason: 'More broadcasts increase betting engagement' }
+                ]
+            },
+            stadium: {
+                cost: 30,
+                name: 'New Stadium',
+                direct: { stream: 'ticketing', amount: 12, reason: 'Premium seating and modern amenities command higher prices' },
+                cascades: [
+                    { stream: 'sponsorship', amount: 6, reason: 'Premium venue creates valuable partnership opportunities' },
+                    { stream: 'merch', amount: 2, reason: 'Dedicated retail spaces increase merchandise sales' },
+                    { stream: 'betting', amount: 3, reason: 'In-stadium betting lounges generate new revenue' }
+                ]
+            },
+            player: {
+                cost: 15,
+                name: 'Star Player',
+                direct: { stream: 'merch', amount: 8, reason: 'Marquee player drives jersey and merchandise sales' },
+                cascades: [
+                    { stream: 'media', amount: 4, reason: 'Star power increases media rights value and viewership' },
+                    { stream: 'ticketing', amount: 5, reason: 'Fans pay premium to see star player perform' },
+                    { stream: 'sponsorship', amount: 3, reason: 'Athlete endorsements enhance brand partnerships' }
+                ]
+            },
+            betting: {
+                cost: 10,
+                name: 'Betting Partnership',
+                direct: { stream: 'betting', amount: 6, reason: 'Operator fees and in-app revenue sharing' },
+                cascades: [
+                    { stream: 'media', amount: 3, reason: 'Real-time data integration adds broadcast value' },
+                    { stream: 'sponsorship', amount: 4, reason: 'Opens new sponsorship category with betting brands' },
+                    { stream: 'ticketing', amount: 2, reason: 'Betting promotions drive ticket sales' }
+                ]
+            }
+        };
+
+        const streamNames = {
+            media: 'Media Rights',
+            ticketing: 'Ticketing & Live Events',
+            sponsorship: 'Sponsorship & Partnerships',
+            merch: 'Merchandising & Licensing',
+            betting: 'Betting & Gaming'
+        };
+
+        function makeInvestment(type) {
+            const investment = investments[type];
+
+            // Check if already used
+            if (state.usedInvestments.includes(type)) {
+                announceToScreenReader('This investment has already been made');
+                return;
+            }
+
+            // Check if enough budget
+            if (state.budget < investment.cost) {
+                announceToScreenReader('Insufficient budget for this investment');
+                return;
+            }
+
+            // Deduct cost
+            state.budget -= investment.cost;
+            state.investmentCount++;
+            state.usedInvestments.push(type);
+
+            // Show cascade log if first investment
+            if (state.investmentCount === 1) {
+                document.getElementById('cascade-log').style.display = 'block';
+            }
+
+            // Add direct effect
+            addCascadeEntry(
+                `${investment.name} - Direct Impact`,
+                `+$${investment.direct.amount}M to ${streamNames[investment.direct.stream]}: ${investment.direct.reason}`,
+                true
+            );
+            state.revenue[investment.direct.stream] += investment.direct.amount;
+            animateStreamUpdate(investment.direct.stream);
+
+            // Add cascade effects with delay
+            investment.cascades.forEach((cascade, index) => {
+                setTimeout(() => {
+                    addCascadeEntry(
+                        `${investment.name} - Cascade Effect`,
+                        `+$${cascade.amount}M to ${streamNames[cascade.stream]}: ${cascade.reason}`,
+                        false
+                    );
+                    state.revenue[cascade.stream] += cascade.amount;
+                    animateStreamUpdate(cascade.stream);
+                }, (index + 1) * 600);
+            });
+
+            // Show insight after 2+ investments
+            if (state.investmentCount >= 2) {
+                setTimeout(() => {
+                    document.getElementById('insight-box').style.display = 'block';
+                }, investment.cascades.length * 600 + 300);
+            }
+
+            // Update UI
+            updateBudget();
+            updateInvestmentCards();
+            announceToScreenReader(`Investment made: ${investment.name}. Budget remaining: ${state.budget} million dollars`);
+        }
+
+        function animateStreamUpdate(stream) {
+            const card = document.querySelector(`[data-stream="${stream}"]`);
+            card.classList.add('pulse');
+            setTimeout(() => card.classList.remove('pulse'), 600);
+
+            updateStreamDisplay(stream);
+        }
+
+        function updateStreamDisplay(stream) {
+            const value = state.revenue[stream];
+            const total = getTotalRevenue();
+            const percentage = ((value / total) * 100).toFixed(1);
+
+            document.querySelector(`[data-value="${stream}"]`).textContent = `$${value}M`;
+            document.querySelector(`[data-fill="${stream}"]`).style.width = `${percentage}%`;
+            document.querySelector(`[data-percent="${stream}"]`).textContent = `${percentage}%`;
+
+            updateTotalRevenue();
+        }
+
+        function getTotalRevenue() {
+            return Object.values(state.revenue).reduce((sum, val) => sum + val, 0);
+        }
+
+        function updateTotalRevenue() {
+            const total = getTotalRevenue();
+            document.getElementById('total-revenue').textContent = `$${total}M`;
+        }
+
+        function updateBudget() {
+            document.getElementById('budget-amount').textContent = `$${state.budget}M`;
+        }
+
+        function updateInvestmentCards() {
+            Object.keys(investments).forEach(type => {
+                const card = document.querySelector(`[data-investment="${type}"]`);
+                const investment = investments[type];
+
+                if (state.usedInvestments.includes(type) || state.budget < investment.cost) {
+                    card.classList.add('disabled');
+                    card.setAttribute('aria-disabled', 'true');
+                    card.style.cursor = 'not-allowed';
+                    card.onclick = null;
+                    card.onkeydown = null;
+                }
+            });
+        }
+
+        function addCascadeEntry(title, description, isDirect) {
+            const container = document.getElementById('cascade-entries');
+            const entry = document.createElement('div');
+            entry.className = `cascade-entry ${isDirect ? 'direct' : ''}`;
+            entry.innerHTML = `
+                <div class="entry-title">${title}</div>
+                <div class="entry-description">${description}</div>
+            `;
+            container.insertBefore(entry, container.firstChild);
+        }
+
+        function resetSimulator() {
+            state = {
+                budget: 50,
+                investmentCount: 0,
+                revenue: {
+                    media: 38,
+                    ticketing: 21,
+                    sponsorship: 17,
+                    merch: 6,
+                    betting: 3
+                },
+                usedInvestments: []
+            };
+
+            // Reset UI
+            updateBudget();
+            updateTotalRevenue();
+            Object.keys(state.revenue).forEach(stream => updateStreamDisplay(stream));
+
+            // Reset investment cards
+            document.querySelectorAll('.investment-card').forEach(card => {
+                card.classList.remove('disabled');
+                card.removeAttribute('aria-disabled');
+                card.style.cursor = 'pointer';
+                const type = card.dataset.investment;
+                card.onclick = () => makeInvestment(type);
+                card.onkeydown = (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        makeInvestment(type);
+                    }
+                };
+            });
+
+            // Hide cascade log and insight
+            document.getElementById('cascade-log').style.display = 'none';
+            document.getElementById('cascade-entries').innerHTML = '';
+            document.getElementById('insight-box').style.display = 'none';
+
+            announceToScreenReader('Simulator reset to starting state');
+        }
+
+        function announceToScreenReader(message) {
+            const announcement = document.createElement('div');
+            announcement.setAttribute('role', 'status');
+            announcement.setAttribute('aria-live', 'polite');
+            announcement.className = 'sr-only';
+            announcement.textContent = message;
+            document.body.appendChild(announcement);
+            setTimeout(() => announcement.remove(), 1000);
+        }
+    </script>
+</body>
+</html>

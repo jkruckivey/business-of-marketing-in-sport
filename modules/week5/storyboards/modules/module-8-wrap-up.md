@@ -1,4 +1,5 @@
-# MODULE 7: Wrap-Up & Course Synthesis (BOPPPS: Summary + Closure)
+# MODULE 8: Wrap-Up & Course Synthesis (BOPPPS: Summary + Closure)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Consolidate Week 5 learning AND synthesize entire 5-week course, celebrate achievements, and prepare students for applied work beyond the classroom
 
@@ -7,14 +8,13 @@
 | Order | Element | Content/Purpose | Source | Priority | Time |
 |-------|---------|----------------|--------|----------|------|
 | 1 | **Infobox (Callout)** | Week 5 key takeaways | Type directly | ⬤ Required | 1 min |
-| 2 | **Text** | Your Week 5 Journey (Module 0-6 retrospective) | Type directly | ⬤ Required | 4 min |
+| 2 | **Text** | Your Week 5 Journey (Module 0-7 retrospective) | Type directly | ⬤ Required | 4 min |
 | 3 | **⚙ iFrame Widget** | **Week 5 Concept Map** | Embed widget | ⬀ Recommended | 5 min |
 | 4 | **Text** | 5-Week Course Integration (CLO 1-5 threading recap) | Type directly | ⬀ Recommended | 5 min |
 | 5 | **Text** | Industry Outlook: The Future of Sports Business | Type directly | ⬀ Recommended | 4 min |
 | 6 | **Details** | Continued Learning Resources (optional) | Type directly | ○ Optional | 5 min |
 | 7 | **Text** | Final Reflection: Your Role in Sports Business | Type directly | ⬀ Recommended | 3 min |
 | 8 | **Infobox (Callout)** | Course Completion & Next Steps | Type directly | ⬀ Recommended | 2 min |
-| 9 | **⚙ iFrame Widget** | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-7.html` | ⬀ Recommended | 3 min |
 
 ---
 
@@ -79,9 +79,10 @@ You've traveled from Connor McDavid's $100M paradox through five weeks of transf
 - **Module 2:** Heard from Jamie Dinsmore (HHOF President) and Keith Pelley (MLSE) on heritage-growth tensions
 - **Module 3:** Mastered 3 interactive frameworks (Legacy vs Innovation Matrix, Heritage Property Analyzer, Future Trends Simulator)
 - **Module 4:** Solved the HHOF Transformation Simulation (real trade-off analysis)
-- **Module 5:** Analyzed the Hockey Hall of Fame case (4,000-word custom case showing real-world complexity)
-- **Module 6:** Synthesized Week 5 into your Strategic Vision Memo (capstone assignment integrating all 5 weeks)
-- **Module 7:** Consolidated learning and previewed your professional journey beyond the course
+- **Module 5:** Read the Hockey Hall of Fame case (Part 1: context and scenarios)
+- **Module 6:** Analyzed the HHOF case (Part 2: strategic dilemma, constraints, decision)
+- **Module 7:** Synthesized Week 5 into your Strategic Vision Memo (capstone assignment integrating all 5 weeks)
+- **Module 8:** Consolidated learning and previewed your professional journey beyond the course
 
 ---
 
@@ -652,7 +653,7 @@ Use it well.
 
 ---
 
-## Module 7 Complete - Course Synthesis Summary
+## Module 8 Complete - Course Synthesis Summary
 
 ### Elements Created:
 1. ✅ Infobox - Callout variant (Week 5 key takeaways, 145 words)
@@ -689,18 +690,19 @@ Use it well.
 - Details 5 (Resources - optional): 5-8 minutes
 - Text 6 (Final Reflection): 5 minutes
 - Infobox 7 (Completion): 1 minute
-- **Total Module 7 time: 27-30 minutes (32-35 minutes if all Resources explored)**
+- **Total Module 8 time: 27-30 minutes (32-35 minutes if all Resources explored)**
 
 ### Week 5 Complete:
-This Module 7 completes the entire Week 5 storyboard:
+This Module 8 completes the entire Week 5 storyboard:
 - Module 0: Bridge In (27-33 min)
 - Module 1: Welcome & Learning Objectives (4-5 min)
 - Module 2: Executive Sessions (video playback)
 - Module 3: Core Content + 3 Widgets (42 min)
 - Module 4: Interactive Simulation (40-60 min)
-- Module 5: Case Study (30-40 min)
-- Module 6: Assessment (Strategic Vision Memo, 120-180 min)
-- Module 7: Wrap-Up & Synthesis (27-35 min)
+- Module 5: Case Study Read (30-40 min)
+- Module 6: Case Study Analyze (60-70 min)
+- Module 7: Assessment (Strategic Vision Memo, 120-180 min)
+- Module 8: Wrap-Up & Synthesis (27-35 min)
 
 **Total Week 5: 6.5-7.5 hours** (as specified in storyboard overview)
 
@@ -709,10 +711,10 @@ This Module 7 completes the entire Week 5 storyboard:
 ## Design Rationale
 
 ### **Element 1: Infobox Callout**
-Mirrors Week 1 Module 7 format; provides consolidated takeaway before longer text. Positioning at top creates immediate closure feeling ("you've completed X").
+Mirrors Week 1 Module 8 format; provides consolidated takeaway before longer text. Positioning at top creates immediate closure feeling ("you've completed X").
 
 ### **Element 2: Your Week 5 Journey**
-Retrospective of all 7 modules in Week 5, showing progression from "Heritage Dilemma" (Module 0) to "Strategic Vision" (Module 6). Creates narrative arc showing what students ACCOMPLISHED, not just what they LEARNED.
+Retrospective of all 8 modules in Week 5, showing progression from "Heritage Dilemma" (Module 0) to "Strategic Vision" (Module 7). Creates narrative arc showing what students ACCOMPLISHED, not just what they LEARNED.
 
 ### **Element 3: 5-Week Integration**
 Addresses critical learning gap: Students often complete 5-week courses without understanding how Week 1 connects to Week 5. This element explicitly maps CLO 1-5 connections, showing how each week builds on previous ones. Directly supports Week 5 assessment (which requires integration of all 5 CLOs).
@@ -731,7 +733,7 @@ Final infobox mirrors opening structure (consistency aids retention). Message: Y
 
 ---
 
-**Ready for implementation!** Module 7 completes the Week 5 storyboard and provides capstone closure for the entire 5-week course.
+**Ready for implementation!** Module 8 completes the Week 5 storyboard and provides capstone closure for the entire 5-week course.
 
 **All Week 5 modules are now complete:**
 - Module 0: Bridge In ✅
@@ -739,9 +741,10 @@ Final infobox mirrors opening structure (consistency aids retention). Message: Y
 - Module 2: Executive Sessions ✅
 - Module 3: Core Content ✅
 - Module 4: Interactive Activity ✅
-- Module 5: Case Study ✅
-- Module 6: Assessment ✅
-- **Module 7: Wrap-Up & Synthesis ✅ (THIS FILE)**
+- Module 5: Case Study Read ✅
+- Module 6: Case Study Analyze ✅
+- Module 7: Assessment ✅
+- **Module 8: Wrap-Up & Synthesis ✅ (THIS FILE)**
 
 **Next Steps:** Build remaining interactive widgets for Week 5 and implement Week 3-4 storyboards using this same framework.
 
@@ -795,7 +798,7 @@ The Strategic Vision Memo you created mirrors the documents sports property exec
 
 **Reflecting on Your Strategic Vision Journey:**
 
-Module 7 completes your 5-week journey from foundational concepts to capstone strategic vision. The Strategic Vision Memo you created in Module 6 represents the culmination of everything you've learned.
+Module 8 completes your 5-week journey from foundational concepts to capstone strategic vision. The Strategic Vision Memo you created in Module 7 represents the culmination of everything you've learned.
 
 **How Your Final Project Integrated All Five Weeks:**
 

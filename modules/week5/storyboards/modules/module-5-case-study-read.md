@@ -1,4 +1,5 @@
-## MODULE 5A: Case Study - Hockey Hall of Fame (Part 1: Read & Context) (BOPPPS: Participatory - Case Reading)
+## MODULE 5: Case Study - Hockey Hall of Fame (Part 1: Read & Context) (BOPPPS: Participatory - Case Reading)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Introduce HHOF case context, strategic situation, and three transformation scenarios before analysis
 
@@ -23,21 +24,24 @@
 
 ## Element 1: Connecting Introduction Text
 
+**Title:** From Simulation to Real Case Analysis
+
 **Copy this markdown directly into Uplimit:**
 
+## From Simulation to Real Case Analysis
 
 You've just spent 45 minutes in a simulation, making strategic trade-offs between tradition preservation and revenue growth. You weighted competing priorities, tested different scenarios, and felt the tension: Every dollar in VR investment is a dollar not spent on curatorial excellence. Every international pop-up diminishes the authenticity of the flagship museum experience.
 
 Now let's apply that strategic thinking to a real institution that's facing these exact decisions RIGHT NOW. The Hockey Hall of Fame is not a hypothetical case. It's a 40-year-old institution managing the heritage of an entire sport, facing genuine pressure to evolve or fade into irrelevance.
 
-**Module 5A Focus: Reading & Context**
+**Module 5 Focus: Reading & Context**
 
 In this module, you'll read the Hockey Hall of Fame case and understand the strategic situation:
 - Part 1: The Heritage Challenge (background, business model, attendance crisis)
 - Part 2: Three Strategic Options (Preserve, Transform, Hybrid scenarios)
 - Exhibit A: Financial and visitor data (2019-2024 trends)
 
-**Your Task:** Read the case carefully and review the exhibits. Don't analyze yet—just absorb the situation, understand the stakeholder landscape, and familiarize yourself with the three strategic options. In Module 5B, you'll analyze the case using frameworks from Modules 3-4 and defend a recommendation.
+**Your Task:** Read the case carefully and review the exhibits. Don't analyze yet—just absorb the situation, understand the stakeholder landscape, and familiarize yourself with the three strategic options. In Module 6, you'll analyze the case using frameworks from Modules 3-4 and defend a recommendation.
 
 
 ---
@@ -62,7 +66,7 @@ This case presents the Hockey Hall of Fame's strategic transformation challenge.
 
 3. **Financial Reality (Exhibit A):** Review 5-year revenue trends, operating costs, and balance sheet health
 
-**Don't analyze yet.** Module 5B will guide you through systematic analysis using MLOs 5.1-5.4. For now, just read and absorb the case facts.
+**Don't analyze yet.** Module 6 will guide you through systematic analysis using MLOs 5.1-5.4. For now, just read and absorb the case facts.
 
 **Reading Time:** 25-30 minutes (case) + 5-10 minutes (exhibits)
 
@@ -105,6 +109,29 @@ HHOF's operating model is straightforward:
 | **Total Annual Revenue** | **$18.1M** | **100%** | **-0.8% annually** |
 
 **Operating Margins:** ~$2.1M net income (11.6% margin), which funds maintenance, staff, and modest capital improvements.
+
+#### Inductee Brand Asset Opportunity (Week 4 Application)
+
+**Connecting to Week 4:** Recall from Week 4 (Serena Williams case) that athletes build brand portfolios through equity partnerships, not just endorsements. Hall of Fame inductees represent **untapped brand assets** for HHOF—similar to how Serena Ventures leveraged her brand beyond tennis.
+
+**Current State:** HHOF leverages inductees minimally—induction ceremony appearances, occasional exhibit features, autograph sessions. No systematic brand partnership strategy.
+
+**Opportunity:** Partner with 10-15 living legends (Gretzky, Lemieux, Crosby, etc.) for:
+
+| Opportunity | Revenue Model | Projected Revenue |
+|-------------|---------------|-------------------|
+| **Digital Content Series** ("Legends Masterclass") | Premium membership ($12/month) or licensing | $2-4M annually (20K+ subscribers) |
+| **Merchandise Licensing** (co-branded signature series) | Royalty share (HHOF 60%, athlete 40%) | $1-2M annually |
+| **Experience Packages** ("Meet Your Hero" premium events) | $500-2,000 per fan for private Q&A, dinner, photos | $800K annually (500 fans × $1,600 avg) |
+
+**Week 4 Framework Application:**
+- **Equity vs Fees:** Offer inductees equity in digital content revenue (not just flat appearance fees) to align incentives long-term
+- **Brand Alignment:** Select inductees whose personal brands align with HHOF's heritage mission (avoid controversial figures)
+- **Portfolio Thinking:** Different inductees appeal to different demographics (Gretzky for Boomers, Crosby for Millennials, women's hockey legends for emerging audiences)
+
+**Strategic Implication:** Inductee brand partnerships could generate $4-7M annual revenue while STRENGTHENING heritage authenticity (not undermining it). This is Week 4 athlete branding applied to heritage context—a missed opportunity in current HHOF strategy.
+
+---
 
 **Staffing:** 78 full-time employees (including curators, educators, operations), $8.2M annual payroll
 
@@ -370,7 +397,11 @@ HHOF's executive team, led by CEO Jamie Dinsmore, has developed three distinct s
 
 ## Element 4: Comparative Table - HHOF vs. Heritage Property Benchmarks
 
+**Title:** Heritage Property Industry Benchmarks
+
 **Copy this table directly into Uplimit:**
+
+### Heritage Property Industry Benchmarks
 
 | Metric | HHOF (Current) | Pro Football Hall of Fame | Naismith Basketball HoF | FIFA Museum | Olympics Museum |
 |---|---|---|---|---|---|
@@ -480,7 +511,7 @@ HHOF has strong cash position but limited ability to fund major capital investme
 
 ---
 
-## Module 5A Complete - Transition to Module 5B
+## Module 5 Complete - Transition to Module 6
 
 **What You've Accomplished:**
 
@@ -495,9 +526,9 @@ You've now read the Hockey Hall of Fame case and understand the strategic situat
 
 HHOF faces the classic heritage property dilemma: Preserve authenticity and risk irrelevance, OR pursue aggressive growth and risk losing credibility. The Hybrid scenario attempts to balance both—but requires strategic discipline to execute.
 
-**Up Next: Module 5B - Case Analysis & Decision**
+**Up Next: Module 6 - Case Analysis & Decision**
 
-Now that you understand the case facts, Module 5B will guide you through systematic analysis:
+Now that you understand the case facts, Module 6 will guide you through systematic analysis:
 - Part 3: The Strategic Dilemma (explicit trade-off comparison)
 - Part 4: Real-World Constraints & Complexity (stakeholders, financing, talent gaps)
 - Part 5: Implications for the Future (10-15 year scenarios)
@@ -506,35 +537,9 @@ Now that you understand the case facts, Module 5B will guide you through systema
 - Guided discussion questions connecting to MLOs 5.1-5.4
 - AI Roleplay: Defend your recommendation to HHOF Board of Governors
 
-Ready to analyze the case and make a recommendation? Let's proceed to Module 5B!
+Ready to analyze the case and make a recommendation? Let's proceed to Module 6!
 
----
 
-## 🎯 FINAL PROJECT CONNECTION
+**Module 5 Status:** ✅ COMPLETE - Ready for Uplimit Build
 
-**How Module 5A Supports Your Final Strategic Vision:**
-
-Module 5A presented the first half of the Hockey Hall of Fame case—establishing strategic context and three transformation pathways. This case reading models the analytical preparation your Strategic Vision Memo requires.
-
-**What You Learned:**
-- Heritage properties face tangible market pressures: HHOF's 22% attendance decline despite economic recovery shows structural challenges, not temporary setbacks
-- Financial constraints shape strategic options: HHOF's $5.2M reserves limit self-funded investment to ~$7M; Transform scenario's $15M requirement necessitates external financing
-- Three distinct strategic archetypes exist: Conservative (preserve heritage, accept limited growth), Aggressive (maximize growth, accept authenticity risk), Balanced (pursue both with trade-offs)
-- Comparative analysis reveals gaps: HHOF's 1% digital revenue vs. competitors' 8-22% shows underperformance in key growth area
-
-**How to Apply This to Your Final Project:**
-
-When you build your Strategic Vision Memo in Module 6, Module 5A's case structure provides your analytical template:
-
-- **Situation Analysis Section:** Follow HHOF case format. Present current state (revenue mix, trends, competitive position), identify market pressures (demographic shifts, technology disruption, competitive threats), and establish strategic imperative (what forces demand change).
-- **Strategic Options Framework:** Don't just present ONE vision—show 2-3 alternative pathways (like HHOF's Preserve/Transform/Hybrid). Explain trade-offs between options and defend why you're recommending one path over the others.
-- **Financial Realism:** HHOF case shows exact capital requirements, operating cost increases, and revenue projections for each scenario. Your Strategic Vision should demonstrate similar financial rigor—show WHERE the money comes from and WHERE it goes.
-- **Comparative Benchmarking:** HHOF case includes competitive comparison table. Your memo should show how YOUR property's metrics (revenue mix, digital adoption, international reach) compare to similar properties in your category.
-
-**Real-World Application:** The HHOF case reading taught you that strategic context matters more than bold vision. Before making recommendations, you must understand current state, market forces, financial constraints, and competitive positioning. Module 5A showed you HOW to establish that foundation—Module 5B will show you how to analyze it.
-
----
-
-**Module 5A Status:** ✅ COMPLETE - Ready for Uplimit Build
-
-**Next Step:** Proceed to Module 5B (Case Analysis & Decision)
+**Next Step:** Proceed to Module 6 (Case Analysis & Decision)

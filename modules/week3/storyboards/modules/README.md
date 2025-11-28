@@ -3,7 +3,9 @@
 **Course:** Business of Sports Marketing
 **Week Focus:** Sponsorship & Betting - The Growth Engines
 **Case Study:** FanDuel: Betting on Sports (HBS 520038)
-**Executive Guests:** Andrew Sneyd (FanDuel), Brand Sponsor Leader
+**Executive Guests:** Andrew (FanDuel CMO), Brand Sponsor Leader
+
+> ⚠️ **ACTION REQUIRED:** The Andrew (FanDuel CMO) interview video exists but needs a transcript before Module 1 content can be finalized. Create: `Interviews/Andrew, FanDuel CMO, Transcript.txt`
 
 ---
 
@@ -45,10 +47,10 @@
 
 ## Week 3 Learning Outcomes
 
-**MLO 3.1:** Understand sponsorship as the financial backbone of sport
-**MLO 3.2:** Analyze sports betting as a new growth driver
-**MLO 3.3:** Calculate how brands measure ROI in sport partnerships
-**MLO 3.4:** Design sponsorship activations that deliver measurable value
+**WLO 3.1:** Understand sponsorship as the financial backbone of sport
+**WLO 3.2:** Analyze sports betting as a new growth driver
+**WLO 3.3:** Calculate how brands measure ROI in sport partnerships
+**WLO 3.4:** Design sponsorship activations that deliver measurable value
 
 ---
 

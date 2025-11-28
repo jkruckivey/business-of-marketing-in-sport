@@ -1,4 +1,4 @@
-# Week 5 Module 6 - Complete PAIRR Elements for Capstone Assessment
+# Week 5 Module 7 - Complete PAIRR Elements for Capstone Assessment
 
 ## Element 3: **NEW** - PAIRR Assessment Overview
 

@@ -1,20 +1,28 @@
 # MODULE 1: Welcome & Learning Objectives
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Time:** 14-17 minutes
 
-**Purpose:** Connect Week 2 to Week 3, establish learning outcomes, activate prior knowledge (measures MLO 3.1 readiness)
+**Purpose:** Connect Week 2 to Week 3, establish learning outcomes, activate prior knowledge (measures WLO 3.1 readiness)
 
 **Uplimit Structure:** First module in Unit 3
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Week 2→3 transition narrative | Type directly | Connects media rights to sponsorship/betting |
-| 2 | **Infobox (Learning Objectives)** ⬤ Required | 4 MLOs with Bloom's levels | Type directly | Purple variant, clear outcomes |
+| 2 | **Infobox (Learning Objectives)** ⬤ Required | 4 WLOs with Bloom's levels | Type directly | Purple variant, clear outcomes |
 | 3 | **Video** ⬤ Required | Executive intro - Andrew Sneyd (FanDuel) | Upload MP4 | 2-minute industry context |
 | 4 | **Video** ⬤ Required | Executive intro - Brand Sponsor Leader | Upload MP4 | 2-minute corporate perspective |
 | 5 | **AI Chat Widget** ⬤ Required | Diagnostic pre-assessment (3 questions) | Configure in Uplimit | Conversational baseline assessment |
-| 6 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-1.html` | Shows how module outcomes connect to course goals |
+| 6 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-week.html` | Shows how week outcomes connect to course goals |
 
+---
+
+### 💼 Project Preview: Week 3 → Final Strategic Vision
+
+This week's sponsorship and betting expertise is critical for your **Week 5 capstone**. Your Strategic Vision Memo must include partnership strategies with quantified ROI projections—not vague claims about "brand alignment."
+
+By mastering sponsorship valuation frameworks and understanding betting's transformation of sports economics, you'll be equipped to design realistic partnership portfolios and activation strategies that demonstrate measurable business value for your chosen property.
 
 ---
 
@@ -39,16 +47,16 @@ Title: ◉ Week 3 Learning Objectives
 
 By the end of this week, you will:
 
-**MLO 3.1: Understand sponsorship as the financial backbone of sport** (Bloom's: Understand)
-Explain why sponsorship revenue exceeds ticketing in most leagues and how brands evaluate partnership opportunities.
+**WLO 3.1: Explain sponsorship as the financial backbone of sport** (Bloom's: Understand)
+Describe why sponsorship revenue exceeds ticketing in most leagues and how brands evaluate partnership opportunities.
 
-**MLO 3.2: Analyze sports betting as a new growth driver** (Bloom's: Analyze)
+**WLO 3.2: Analyze sports betting as a new growth driver** (Bloom's: Analyze)
 Evaluate betting's impact on fan engagement, media consumption, and league revenue across regulatory environments.
 
-**MLO 3.3: Calculate how brands measure ROI in sport partnerships** (Bloom's: Apply)
+**WLO 3.3: Calculate how brands measure ROI in sport partnerships** (Bloom's: Apply)
 Use industry frameworks to quantify sponsorship value through reach, engagement, and conversion metrics.
 
-**MLO 3.4: Design sponsorship activations that deliver measurable value** (Bloom's: Create)
+**WLO 3.4: Design sponsorship activations that deliver measurable value** (Bloom's: Create)
 Build a 1-page activation plan with ROI projections using real brand and property examples.
 
 **Assessment:** Group sprint - 1-page sponsorship activation plan with ROI projections (40 points)
@@ -56,48 +64,65 @@ Build a 1-page activation plan with ROI projections using real brand and propert
 
 ---
 
-## Element 3: Executive Video 1 - Andrew Sneyd (FanDuel)
+## Element 3: Executive Video 1 - Andrew (FanDuel CMO)
+
+> ⚠️ **PLACEHOLDER CONTENT - TRANSCRIPT REQUIRED**
+>
+> The interview video exists (`Interviews/Andrew, FanDuel CMO.mp4`) but no transcript has been created yet. The content descriptions below are **estimated/placeholder** based on expected topics from a FanDuel CMO. Once the transcript is available, update this section with:
+> - Actual topics discussed and timestamps
+> - Verified key points and insights
+> - Accurate viewing guide aligned to real content
+>
+> **Action Required:** Create `Interviews/Andrew, FanDuel CMO, Transcript.txt`
 
 **Video Specifications:**
-- **Length:** 2 minutes
-- **Speaker:** Andrew Sneyd, FanDuel executive
-- **Topic:** "How Sports Betting Became Sport's Fastest-Growing Revenue Stream"
-- **Key Points:** Regulatory changes (PASPA repeal 2018), fan engagement impact, partnership economics, future growth projections
-- **Accessibility:** Captions required, transcript provided
+- **File:** `Interviews/Andrew, FanDuel CMO.mp4`
+- **Duration:** ~35-40 minutes (estimated - full interview)
+- **Speaker:** Andrew, Chief Marketing Officer, FanDuel
+- **Topic:** TBD - update once transcript reviewed
+- **Key Points:** TBD - update once transcript reviewed
+- **Accessibility:** ❌ Captions required (transcript needed first)
 
-**Video Status:** 📝 Script complete, awaiting production and executive scheduling
+**Video Status:** ⚠️ Interview recorded, **AWAITING TRANSCRIPT** before storyboard can be finalized
+
+**Note (PLACEHOLDER):** The content below is estimated based on what a FanDuel CMO interview would likely cover. Verify against actual transcript when available:
+- How FanDuel calculates partnership ROI vs. paid marketing CAC
+- The evolution from daily fantasy sports (DFS) to sports betting
+- State-by-state regulatory challenges and market entry strategies
+- Why betting operators became top 10 sports sponsors
+- Integration strategies (broadcast, mobile apps, in-stadium experiences)
+- Fan engagement metrics (watch time increase, app engagement, betting frequency)
 
 **Embed Code:**
 ```html
 <iframe
-  src="[Uplimit video URL]"
+  src="[Uplimit video URL - Interviews/Andrew, FanDuel CMO.mp4]"
   width="100%"
   height="700"
   style="border: none; border-radius: 8px;"
-  title="Andrew Sneyd - FanDuel Betting Industry Overview"
-  aria-label="Video interview with Andrew Sneyd from FanDuel discussing sports betting industry transformation and growth statistics"
+  title="Andrew - FanDuel CMO Interview on Sports Betting and Marketing Strategy"
+  aria-label="Video interview with Andrew, FanDuel Chief Marketing Officer, discussing sports betting industry transformation, partnership economics, customer acquisition strategy, and competitive dynamics"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
-**Video Script (2 minutes):**
-```
-[0:00-0:15] Introduction
-"I'm Andrew Sneyd from FanDuel. In 2018, the Supreme Court repealed PASPA, legalizing sports betting across the US. What happened next transformed the industry."
+**Interview Overview (PLACEHOLDER - UPDATE WHEN TRANSCRIPT AVAILABLE):**
 
-[0:15-0:45] Growth Statistics
-"FanDuel went from zero to over $50 billion in annual handle by 2024. Sports betting partnerships now represent 10-15% of total league sponsorship revenue—and it's the fastest-growing category. Teams that couldn't monetize betting in 2017 now have $10-50 million annual deals with operators like us."
+> ⚠️ The topics below are **estimated**. Update with actual content once transcript is created.
 
-[0:45-1:15] Fan Engagement Impact
-"But betting isn't just about operator revenue. It drives fan behavior: bettors watch 35-50% more games (varies by sport), engage with team apps 3x more frequently, and spend 2x on merchandise. That's why media rights holders pay premiums for betting-legal markets—more engaged viewers mean higher ad rates."
+This full-length interview with FanDuel's CMO likely covers:
 
-[1:15-1:45] Sponsorship Intersection
-"Our partnerships aren't traditional logo placements. We integrate into broadcasts (betting odds segments), mobile apps (same-game parlays), and in-stadium experiences (betting kiosks). Brands want the engagement we deliver, which is why FanDuel, DraftKings, and BetMGM now rank among the top 10 sports sponsors."
+1. **FanDuel's Market Position & Growth** - TBD from transcript
+2. **Partnership Economics** - TBD from transcript
+3. **Fan Engagement Impact** - TBD from transcript
+4. **Marketing Strategy** - TBD from transcript
+5. **Regulatory Landscape** - TBD from transcript
+6. **Integration Tactics** - TBD from transcript
+7. **Future Outlook** - TBD from transcript
 
-[1:45-2:00] Conclusion
-"This week, you'll analyze FanDuel's case and design a sponsorship activation. Think about how betting changes the value equation for brands, properties, and fans."
-```
+**Viewing Guide for Students (PLACEHOLDER):**
+Watch this interview BEFORE Module 2 (Sponsorship Framework). Update viewing guide once transcript confirms actual topics covered.
 
 ---
 
@@ -256,29 +281,29 @@ Ready? Let's chat!
 
 ### Element 6: Learning Outcomes Widget
 
-**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
+**Widget Purpose:** Interactive visualization showing how Week 3's learning outcomes connect to course-level goals
 
 **Uplimit Implementation:**
 
-**Widget File:** `learning-outcomes-module-1.html`
+**Widget File:** `learning-outcomes-week.html`
 
 **Embed Code:**
 ```html
 <iframe
-  src="../../widgets/learning-outcomes-module-1.html"
+  src="../../widgets/learning-outcomes-week.html"
   width="100%"
   height="600"
   style="border: none; border-radius: 8px;"
-  title="Learning Outcomes - Module 1"
-  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
+  title="Week 3 Learning Outcomes"
+  aria-label="Interactive widget showing Week 3 learning outcomes and their connection to course goals"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
 **Widget Features:**
-- Click any module outcome to see which course-level outcomes it contributes to
-- Interactive highlighting shows connections between module and course goals
+- Click any week outcome (WLO 3.1-3.4) to see which course-level outcomes it contributes to
+- Interactive highlighting shows connections between week and course goals
 - WCAG 2.2 AA compliant with keyboard navigation and screen reader support
 
 ## Module 1 Complete - Transition to Module 2
@@ -299,28 +324,6 @@ Now that you understand why sponsorship matters, let's build the framework: how 
 
 Ready to calculate ROI like a brand strategist? Let's build the framework!
 
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 1 Supports Your Week 5 Marketing Plan:**
-
-Module 1 established why sponsorship and betting matter in sports business. This directly supports your final project's **Slide 4: Sponsorship/Media Strategy** section.
-
-**What You Learned:**
-- Sponsorship is the financial backbone of sport (often exceeds ticketing revenue)
-- Sports betting is the fastest-growing revenue stream (40% more viewership from bettors)
-- Brands measure ROI through reach, engagement, and conversion—not just logo visibility
-
-**How to Apply This to Your Final Project:**
-When you create your marketing plan in Week 5, you'll need to explain **how your sports property/team/event will make money**. Module 1 taught you that sponsorship and betting partnerships should be central to your revenue strategy. In your Slide 4, you'll reference:
-- **Sponsorship tiers** (title sponsor, official partners, category sponsors)
-- **Betting partnerships** (if legal in your market, this is a high-growth opportunity)
-- **Why brands will pay** (your property delivers reach, engagement, and measurable outcomes)
-
-**Action Item:** As you work on your final project, bookmark Module 1's executive videos (Andrew Sneyd and Brand Sponsor Leader). Their frameworks will help you justify why sponsors should invest in YOUR property.
-
----
 
 # WIDGET DEVELOPMENT PRIORITY PLAN
 
@@ -335,25 +338,25 @@ When you create your marketing plan in Week 5, you'll need to explain **how your
 These 4 widgets are **essential** for core learning outcomes. Without these, students cannot complete the graded activation plan assignment.
 
 ### Widget 1: Sponsorship Valuation Calculator (Module 2, Element 3)
-- **Learning Objective:** MLO 3.3 (Calculate ROI)
+- **Learning Objective:** WLO 3.3 (Calculate ROI)
 - **Why Essential:** Teaches CPM calculations required for activation plan ROI projections
 - **Development Time:** 6-8 hours
 - **Fallback if incomplete:** Provide Excel template with CPM formulas (manual calculation)
 
 ### Widget 2: Activation Budget Builder (Module 2, Element 5)
-- **Learning Objective:** MLO 3.4 (Design activations)
+- **Learning Objective:** WLO 3.4 (Design activations)
 - **Why Essential:** Students practice budget allocation before creating their activation plan
 - **Development Time:** 8-10 hours
 - **Fallback if incomplete:** Provide Google Sheets template with validation formulas
 
 ### Widget 3: ROI Calculator (Module 2, Element 8)
-- **Learning Objective:** MLO 3.3 (Calculate ROI)
+- **Learning Objective:** WLO 3.3 (Calculate ROI)
 - **Why Essential:** Models the reach-engagement-conversion funnel required for assignment
 - **Development Time:** 10-12 hours
 - **Fallback if incomplete:** Provide worked examples + discussion questions instead of interactive tool
 
 ### Widget 4: Activation Plan Template Builder (Module 5, Element 3)
-- **Learning Objective:** MLO 3.4 (Design activations)
+- **Learning Objective:** WLO 3.4 (Design activations)
 - **Why Essential:** Scaffolds the graded 40-point assignment structure
 - **Development Time:** 6-8 hours
 - **Fallback if incomplete:** Provide static PDF template with instructions
@@ -367,19 +370,19 @@ These 4 widgets are **essential** for core learning outcomes. Without these, stu
 These 3 widgets significantly enhance understanding but aren't strictly required for assignment completion.
 
 ### Widget 5: Betting Market Simulator (Module 3, Element 3)
-- **Learning Objective:** MLO 3.2 (Analyze betting economics)
+- **Learning Objective:** WLO 3.2 (Analyze betting economics)
 - **Why High-Value:** Makes betting market dynamics concrete through scenario modeling
 - **Development Time:** 8-10 hours
 - **Fallback if incomplete:** Replace with video case study examples
 
 ### Widget 6: Engagement Multiplier Calculator (Module 3, Element 5)
-- **Learning Objective:** MLO 3.2 (Analyze betting impact)
+- **Learning Objective:** WLO 3.2 (Analyze betting impact)
 - **Why High-Value:** Quantifies "bettors watch 40% more" insight central to week's thesis
 - **Development Time:** 6-8 hours
 - **Fallback if incomplete:** Provide static infographic with benchmark data
 
 ### Widget 7: FanDuel Competitive Analysis Tool (Module 4, Element 4)
-- **Learning Objective:** MLO 3.2 (Analyze case study)
+- **Learning Objective:** WLO 3.2 (Analyze case study)
 - **Why High-Value:** Structures case analysis with interactive comparison framework
 - **Development Time:** 10-12 hours
 - **Fallback if incomplete:** Provide comparison table template (static Google Sheet)
@@ -393,19 +396,19 @@ These 3 widgets significantly enhance understanding but aren't strictly required
 These 3 widgets reinforce learning but can be omitted without affecting core outcomes.
 
 ### Widget 8: Partnership Valuation Tool (Module 3, Element 8)
-- **Learning Objective:** MLO 3.1 (Sponsorship fundamentals)
+- **Learning Objective:** WLO 3.1 (Sponsorship fundamentals)
 - **Why Nice-to-Have:** Reinforces Module 2 concepts in betting context
 - **Development Time:** 6-8 hours
 - **Fallback if incomplete:** Omit entirely (Module 2 widgets cover this skill)
 
 ### Widget 9: Customer Acquisition Economics Calculator (Module 4, Element 7)
-- **Learning Objective:** MLO 3.2 (Advanced case analysis)
+- **Learning Objective:** WLO 3.2 (Advanced case analysis)
 - **Why Nice-to-Have:** Advanced case analysis for high-performing students
 - **Development Time:** 8-10 hours
 - **Fallback if incomplete:** Provide optional reading on CAC/LTV instead
 
 ### Widget 10: Activation Campaign Simulator (Module 5, Element 4)
-- **Learning Objective:** MLO 3.4 (Test activation scenarios)
+- **Learning Objective:** WLO 3.4 (Test activation scenarios)
 - **Why Nice-to-Have:** Allows "what-if" testing before finalizing activation plan
 - **Development Time:** 6-8 hours
 - **Fallback if incomplete:** Students use Widget 2 (Activation Budget Builder) instead

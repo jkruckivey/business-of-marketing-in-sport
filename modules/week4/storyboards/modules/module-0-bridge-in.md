@@ -1,4 +1,5 @@
 # MODULE 0: Bridge In - The Athlete Brand Problem (BOPPPS: Bridge + Pre-Assessment)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Hook students with athlete branding business problem, reframe outcomes as challenges, enable self-assessment
 
@@ -13,22 +14,9 @@
 | 1 | **▶ Video** ⬤ Required | Athlete brand problem scenario (3 min) | Upload `week4-bridge-scenario.mp4` + VTT | Real executive facing athlete brand dilemma |
 | 2 | **◈ AI Roleplay** ◐ Recommended | The Brand Value Question diagnostic | Configure in Uplimit | Reveal knowledge gaps before learning begins |
 | 3 | **ⓘ Infobox** ⬤ Required | The athlete brand problem statement | Type directly | Use **Callout** variant, urgent business challenge |
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-| 4 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Athlete Brand Challenge + Quiz** | Embed `athlete-brand-pre-assessment.html` | Combined challenge text and quiz in single widget |
-| 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
-| 6 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-0.html` | Shows how module outcomes connect to course goals |
-
-=======
-| 4 | **▬ Text** ⬤ Required | Can you solve these problems? (Outcomes as questions) | Type directly | Reframes MLOs as student challenges |
+| 4 | **▬ Text** ⬤ Required | Can you solve these problems? (Outcomes as questions) | Type directly | Reframes WLOs as student challenges |
 | 5 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Athlete Brand Knowledge Quiz** | Embed `athlete-brand-quiz.html` | Self-diagnostic before learning begins |
 | 6 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
->>>>>>> Stashed changes
-=======
-| 4 | **▬ Text** ⬤ Required | Can you solve these problems? (Outcomes as questions) | Type directly | Reframes MLOs as student challenges |
-| 5 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Athlete Brand Knowledge Quiz** | Embed `athlete-brand-quiz.html` | Self-diagnostic before learning begins |
-| 6 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
->>>>>>> Stashed changes
 
 ---
 
@@ -385,7 +373,7 @@ Elite athletes face a strategic paradox: their playing career (8-12 years) occur
 <<<<<<< Updated upstream
 ## Element 4: Athlete Brand Pre-Assessment (Combined Widget)
 
-**Widget Purpose:** Combined challenge text + 10-question self-diagnostic quiz covering all 4 learning outcomes (MLO 4.1, 4.2, 4.3, 4.4)
+**Widget Purpose:** Combined challenge text + 10-question self-diagnostic quiz covering all 4 learning outcomes (WLO 4.1, 4.2, 4.3, 4.4)
 
 **Three-Screen Structure:**
 1. **Challenge Preview:** Four athlete brand problem scenarios students will learn to solve this week
@@ -418,10 +406,10 @@ Elite athletes face a strategic paradox: their playing career (8-12 years) occur
 - Uplimit branding (Geist font, neutral grays)
 
 **Quiz Content:** Full 10-question quiz content embedded in HTML file, testing:
-- MLO 4.1: Five athlete revenue streams (endorsements, owned businesses, investments, media/content, licensing)
-- MLO 4.2: Owned assets vs. endorsement strategy (equity building vs. fee income)
-- MLO 4.3: Women's sports investment thesis (growth rates, valuation gaps, first-mover advantages)
-- MLO 4.4: Post-career transition strategy (asset longevity, brand value decline, case studies)
+- WLO 4.1: Five athlete revenue streams (endorsements, owned businesses, investments, media/content, licensing)
+- WLO 4.2: Owned assets vs. endorsement strategy (equity building vs. fee income)
+- WLO 4.3: Women's sports investment thesis (growth rates, valuation gaps, first-mover advantages)
+- WLO 4.4: Post-career transition strategy (asset longevity, brand value decline, case studies)
 
 ---
 
@@ -508,7 +496,7 @@ Let's see what you've got! ↓
 
 ## Element 5: Athlete Brand Knowledge Pre-Assessment Quiz
 
-**Widget Purpose:** 10-question self-diagnostic quiz covering all 4 learning outcomes (MLO 4.1, 4.2, 4.3, 4.4)
+**Widget Purpose:** 10-question self-diagnostic quiz covering all 4 learning outcomes (WLO 4.1, 4.2, 4.3, 4.4)
 
 **Implementation:** Use iframe widget (HTML file to be created) or Uplimit quiz builder
 
@@ -519,10 +507,10 @@ Let's see what you've got! ↓
 - Personalized learning path based on results
 
 [Note: Full quiz content with 10 questions would be developed following the same pattern as Week 1's quiz, testing knowledge of:
-- MLO 4.1: Five athlete revenue streams (endorsements, owned businesses, investments, media/content, licensing)
-- MLO 4.2: Owned assets vs. endorsement strategy (equity building vs. fee income)
-- MLO 4.3: Women's sports investment thesis (growth rates, valuation gaps, first-mover advantages)
-- MLO 4.4: Post-career transition strategy (asset longevity, brand value decline, case studies)]
+- WLO 4.1: Five athlete revenue streams (endorsements, owned businesses, investments, media/content, licensing)
+- WLO 4.2: Owned assets vs. endorsement strategy (equity building vs. fee income)
+- WLO 4.3: Women's sports investment thesis (growth rates, valuation gaps, first-mover advantages)
+- WLO 4.4: Post-career transition strategy (asset longevity, brand value decline, case studies)]
 
 ---
 
@@ -547,66 +535,7 @@ Your quiz results create a personalized learning path for this week. Lower score
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 0 Supports Your Final Strategic Vision:**
-
-Module 0 introduced athlete branding as a distinct business model requiring different strategic thinking than team/league analysis. This perspective is critical if your Week 5 capstone involves athlete partnerships or emerging sports.
-
-**What You Discovered:**
-- Athletes are businesses—Serena's $500M brand value comes from owned assets (Serena Ventures, S by Serena), not just endorsements
-- Five revenue streams for athletes: endorsements, owned businesses, investments, media/content, licensing
-- Equity-based wealth (ownership stakes) beats fee-based income (endorsement contracts) for long-term value creation
-
-**How to Apply This to Your Final Project:**
-
-When you create your 5-year strategic vision in Week 5, Module 0's athlete brand thinking applies if:
-
-- **Your property involves athlete partnerships:** Explain how you'll structure deals. Will you pay endorsement fees (expensive, temporary) or offer equity partnerships (aligns incentives, builds long-term relationships)?
-- **Your property is athlete-led:** If analyzing an athlete-owned brand/business, use Week 4's frameworks to structure your revenue model and growth strategy.
-- **Your property targets women's sports or emerging sports:** Week 4's investment thesis (undervalued assets with high growth potential) directly informs your financial projections.
-
-**Real-World Application:** The Serena Williams valuation paradox you analyzed mirrors the strategic questions facing YOUR property: How do you build assets that create long-term value, not just short-term revenue?
-
----
-
-
-### Element 6: Learning Outcomes Widget
-
-**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
-
-**Uplimit Implementation:**
-
-**Widget File:** `learning-outcomes-module-0.html`
-
-**Embed Code:**
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-0.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Learning Outcomes - Module 0"
-  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Click any module outcome to see which course-level outcomes it contributes to
-- Interactive highlighting shows connections between module and course goals
-- WCAG 2.2 AA compliant with keyboard navigation and screen reader support
-
-## Module Summary
-=======
 ## Module 0 Complete - Transition to Module 1
->>>>>>> Stashed changes
-=======
-## Module 0 Complete - Transition to Module 1
->>>>>>> Stashed changes
 
 **What You've Accomplished:**
 You've been hooked by a real athlete branding problem—the Serena Williams $500M valuation paradox—and you've taken your first steps toward solving it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your knowledge gaps are. That's strategic clarity.

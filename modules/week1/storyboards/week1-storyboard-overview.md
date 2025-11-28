@@ -46,7 +46,7 @@ This storyboard has been split into individual module files for easier navigatio
    - Canucks revenue strategy and league dynamics
 
 7. **[MODULE 6: Assessment - Reflection Memo](modules/module-6-assessment.md)** (25 KB)
-   - Executive memo assignment (MLO 1.1-1.4)
+   - Executive memo assignment (WLO 1.1-1.4)
    - QM-aligned rubric with detailed criteria
 
 8. **[MODULE 7: Wrap-Up & Preview](modules/module-7-wrap-up.md)** (5 KB)
@@ -59,10 +59,10 @@ This storyboard has been split into individual module files for easier navigatio
 
 By the end of this week, students will be able to:
 
-- **MLO 1.1**: Map the major revenue streams in professional sport (media rights, ticketing, sponsorship, merchandising, betting)
-- **MLO 1.2**: Understand sport's unique business model characteristics (revenue sharing, competitive balance, uncertainty of outcome)
-- **MLO 1.3**: Evaluate growth potential and risk across different revenue sources
-- **MLO 1.4**: Analyze revenue sharing models and their strategic implications
+- **WLO 1.1**: Map the major revenue streams in professional sport (media rights, ticketing, sponsorship, merchandising, betting)
+- **WLO 1.2**: Understand sport's unique business model characteristics (revenue sharing, competitive balance, uncertainty of outcome)
+- **WLO 1.3**: Evaluate growth potential and risk across different revenue sources
+- **WLO 1.4**: Analyze revenue sharing models and their strategic implications
 
 ---
 

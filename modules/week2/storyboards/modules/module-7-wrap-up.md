@@ -1,4 +1,6 @@
 ## MODULE 7: Wrap-Up, Preview & Anchor Project Milestone
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+
 **Purpose:** Consolidate Week 2 learning, preview Week 3, launch Anchor Project Team Formation
 
 **Uplimit Structure:** Final module in Unit 2
@@ -12,7 +14,7 @@
 | 5 | **iFrame** ⬤ Required | Team Charter Builder | Custom widget hosted | Team formation tool |
 | 6 | **Text** ◐ Recommended | Preview of Week 3 content | Type directly | Build anticipation |
 | 7 | **Details** ○ Optional | Anchor Project FAQs (optional) | Type directly | Optional guidance |
-| 8 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
+| 8 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
 | 9 | **Text** ⬤ Required | Final Project Connection | Type directly | How Week 2 supports capstone |
 | 10 | **Text** ⬤ Required | Module 7 Complete - Transition to Week 3 | Type directly | Recap and preview |
 
@@ -50,8 +52,10 @@ you should take away:
 
 ✓ Sports remain "appointment viewing" in an on-demand world—this drives premium valuations
 ✓ Streaming economics differ fundamentally from linear TV (LTV vs. immediate ROI)
-✓ Fan engagement monetization extends beyond passive viewing (data, sponsorship, retention)
+✓ Fan engagement monetization moves viewers through the value chain (passive → engaged → super-fan)
+✓ Dynamic pricing (Al Dak's "checking account to portfolio management") applies across media inventory
 ✓ Mega-deals like Rogers/NHL require scenario planning and flexibility—disruption happens
+✓ The PAIRR methodology (peer + AI feedback) develops strategic thinking AND AI literacy skills
 
 This foundation prepares you for Week 3, where we'll explore the fastest-growing revenue
 streams: sponsorship activation and sports betting integration.
@@ -663,16 +667,16 @@ Get ready for another intensive week—and **congratulations on completing Week 
 
 ## Learning Outcome Alignment Map
 
-Verify that every element serves the MLOs:
+Verify that every element serves the WLOs:
 
-| **MLO** | **Bloom's Level** | **Supporting Elements** | **Assessment** |
+| **WLO** | **Bloom's Level** | **Supporting Elements** | **Assessment** |
 |---------|------------------|------------------------|---------------|
-| **MLO 2.1:** Explore media rights valuation | Knowledge/<br>Comprehension | • Text (valuation framework)<br>• Vertical List (5 drivers)<br>• Video (executive session Part 1)<br>• Case (Rogers valuation assumptions) | Mini-Case Memo (evaluate Rogers' valuation methodology)<br><br>Simulation (make rights acquisition decisions) |
-| **MLO 2.2:** Compare linear vs. streaming | Analysis | • Text (platform economics)<br>• Table (linear vs. DTC comparison)<br>• Video (executive session Part 1)<br>• iFrame (Streaming Wars simulation)<br>• Case (Rogers' platform strategy) | Mini-Case Memo (platform strategy recommendation)<br><br>Simulation (achieve streaming profitability) |
-| **MLO 2.3:** Understand fan engagement monetization | Comprehension | • Text (fan engagement section)<br>• Image (value chain diagram)<br>• Video (executive session Part 2)<br>• Case (Rogers' engagement tactics) | Mini-Case Memo (engagement strategy analysis)<br><br>Simulation (engagement investment decisions) |
-| **MLO 2.4:** Evaluate Rogers NHL deal | Evaluation | • Text (full case narrative)<br>• Table (deal summary)<br>• Details (3 exhibits with financial/viewership data)<br>• Video (10-year retrospective)<br>• Video (executive session Part 3) | Mini-Case Memo (overall deal evaluation + recommendations) |
+| **WLO 2.1:** Explore media rights valuation | Knowledge/<br>Comprehension | • Text (valuation framework)<br>• Vertical List (5 drivers)<br>• Video (executive session Part 1)<br>• Case (Rogers valuation assumptions) | Mini-Case Memo (evaluate Rogers' valuation methodology)<br><br>Simulation (make rights acquisition decisions) |
+| **WLO 2.2:** Compare linear vs. streaming | Analysis | • Text (platform economics)<br>• Table (linear vs. DTC comparison)<br>• Video (executive session Part 1)<br>• iFrame (Streaming Wars simulation)<br>• Case (Rogers' platform strategy) | Mini-Case Memo (platform strategy recommendation)<br><br>Simulation (achieve streaming profitability) |
+| **WLO 2.3:** Understand fan engagement monetization | Comprehension | • Text (fan engagement section)<br>• Image (value chain diagram)<br>• Video (executive session Part 2)<br>• Case (Rogers' engagement tactics) | Mini-Case Memo (engagement strategy analysis)<br><br>Simulation (engagement investment decisions) |
+| **WLO 2.4:** Evaluate Rogers NHL deal | Evaluation | • Text (full case narrative)<br>• Table (deal summary)<br>• Details (3 exhibits with financial/viewership data)<br>• Video (10-year retrospective)<br>• Video (executive session Part 3) | Mini-Case Memo (overall deal evaluation + recommendations) |
 
-**Alignment Check:** ✅ All MLOs supported by multiple elements and measured comprehensively by assessment
+**Alignment Check:** ✅ All WLOs supported by multiple elements and measured comprehensively by assessment
 
 ---
 

@@ -1,22 +1,22 @@
 # MODULE 4: FanDuel Case Study
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
-**Purpose:** Apply frameworks to real-world case, analyze FanDuel's market strategy and partnerships (measures MLOs 3.2, 3.3, 3.4)
+**Purpose:** Apply frameworks to real-world case, analyze FanDuel's market strategy and partnerships (measures WLOs 3.2, 3.3, 3.4)
 
 **Uplimit Structure:** Fourth module in Unit 3
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 3 | Type directly | Transitions to case application |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **▬ Text** ⬤ Required | 🔗 Case Study Access Link | Type directly | Link to HBS course pack or uploaded PDF |
+| 2 | **▬ Text** ⬤ Required | 🔗 Case Study Access Link | Type directly | Link to HBS course pack or uploaded PDF |
 | 3 | **▬ Text** ⬤ Required | Case Reading Guide (200 words) | Type directly | What to focus on while reading |
-| 5 | **Interactive Widget** ⬤ Required | FanDuel Competitive Analysis Tool | Embed iframe | Compare FanDuel vs. DraftKings vs. BetMGM |
-| 6 | **▬ Text** ◐ Recommended | Partnership Strategy Analysis (150 words) | Type directly | NFL, NBA, PGA deals breakdown |
-| 7 | **Table** ◐ Recommended | FanDuel Partnership Portfolio (2024) | Type directly | League deals, values, exclusivity |
-| 8 | **Interactive Widget** ⬤ Required | Customer Acquisition Economics Calculator | Embed iframe | Model CAC, LTV, payback period |
-| 9 | **Infobox (Insight)** ◐ Recommended | FanDuel: $400 CAC, 4-Year Payback | Type directly | Purple variant, key metric |
-| 10 | **Video** ◐ Recommended | Case Debrief - Andrew Sneyd Discussion (2 min) | Upload MP4 | Executive insights on case decisions |
-| 11 | **Text Response** ◐ Recommended | Case Analysis Questions | Configure in Uplimit | 3 short-answer questions (AI feedback) |
+| 4 | **Interactive Widget** ⬤ Required | FanDuel Competitive Analysis Tool | Embed iframe | Compare FanDuel vs. DraftKings vs. BetMGM |
+| 5 | **▬ Text** ◐ Recommended | Partnership Strategy Analysis (150 words) | Type directly | NFL, NBA, PGA deals breakdown |
+| 6 | **Table** ◐ Recommended | FanDuel Partnership Portfolio (2024) | Type directly | League deals, values, exclusivity |
+| 7 | **Interactive Widget** ⬤ Required | Customer Acquisition Economics Calculator | Embed iframe | Model CAC, LTV, payback period |
+| 8 | **Infobox (Insight)** ◐ Recommended | FanDuel: $400 CAC, 4-Year Payback | Type directly | Purple variant, key metric |
+| 9 | **Video** ◐ Recommended | Case Debrief - Andrew Sneyd Discussion (2 min) | Upload MP4 | Executive insights on case decisions |
+| 10 | **Text Response** ◐ Recommended | Case Analysis Questions | Configure in Uplimit | 3 short-answer questions (AI feedback) |
 
 ---
 
@@ -166,7 +166,7 @@ Export your competitive analysis. Use it to answer case questions: "How sustaina
 
 ### ⚙ Interactive Activity: FanDuel Competitive Analysis Tool
 
-**Practice: MLO 3.2 (Analyze sports betting as a new growth driver in the industry)**
+**Practice: WLO 3.2 (Analyze sports betting as a new growth driver in the industry)**
 
 FanDuel dominates the US sports betting market with 45% share, but how did they achieve this leadership position? And what competitive advantages sustain it against rivals like DraftKings and BetMGM? This competitive analysis tool lets you compare operators across eight strategic dimensions to understand what separates market leaders from challengers.
 
@@ -180,7 +180,7 @@ You'll select two operators to compare and visualize their competitive positioni
 - How state regulatory approval and product breadth (200+ bet types) create barriers to entry for new competitors
 
 **Time commitment:** 9-11 minutes
-**Learning outcomes practiced:** MLO 3.2 (Analyze sports betting as a new growth driver in the industry)
+**Learning outcomes practiced:** WLO 3.2 (Analyze sports betting as a new growth driver in the industry)
 
 ---
 
@@ -202,7 +202,7 @@ You'll select two operators to compare and visualize their competitive positioni
 3. Widget shows: Radar chart, scorecard, competitive advantage summary
 4. Data sourced from case study exhibits and 2024 industry reports
 
-**Learning Objective:** MLO 3.2 (Analyze betting as growth driver) - Students compare competitive strategies
+**Learning Objective:** WLO 3.2 (Analyze betting as growth driver) - Students compare competitive strategies
 
 **Real-World Data (2024):**
 - **FanDuel:** 45% share, 4.7 app rating, $420 promo spend, 5 major partnerships (NFL/NBA/NHL/PGA/NASCAR), 32 states, 200+ bet types, 5/5 live betting, 5/5 brand recognition
@@ -355,7 +355,7 @@ Export your customer economics model. Test the sensitivity scenarios (CAC +10%, 
 
 ### ⚙ Interactive Activity: Customer Acquisition Economics Calculator
 
-**Practice: MLO 3.3 (Calculate how brands measure ROI in sport partnerships)**
+**Practice: WLO 3.3 (Calculate how brands measure ROI in sport partnerships)**
 
 Every betting operator faces the same critical question: "How much should we spend to acquire a customer?" Spend too little and you lose market share to rivals. Spend too much and you'll never achieve profitability. This calculator models the complete customer economics that FanDuel and competitors use to guide acquisition spending and evaluate partnerships.
 
@@ -369,7 +369,7 @@ You'll input customer acquisition cost (CAC), average annual wager, operator mar
 - The impact of Year 1 churn (40%) on long-term profitability and why retention programs are essential investments
 
 **Time commitment:** 10-12 minutes
-**Learning outcomes practiced:** MLO 3.3 (Calculate how brands measure ROI in sport partnerships)
+**Learning outcomes practiced:** WLO 3.3 (Calculate how brands measure ROI in sport partnerships)
 
 ---
 
@@ -387,7 +387,7 @@ You'll input customer acquisition cost (CAC), average annual wager, operator mar
 3. Widget displays: Profitability timeline chart (cumulative profit over 10 years), breakeven point, sensitivity analysis
 4. 4 presets: FanDuel base case ($400 CAC, $2,400 wager, 7% margin), FanDuel partnership ($152 CAC), DraftKings ($390 CAC), BetMGM ($350 CAC)
 
-**Learning Objective:** MLO 3.3 (Calculate ROI) - Students model customer-level economics
+**Learning Objective:** WLO 3.3 (Calculate ROI) - Students model customer-level economics
 
 **Real-World Data (from case):**
 - **FanDuel Base:** $400 CAC, $2,400 avg wager, 7% margin, 10-year tenure, 40% Year 1 churn
@@ -628,36 +628,4 @@ Now it's time to synthesize everything you've learned. You'll work in groups (3-
 
 Ready to design? Let's sprint.
 
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 4 Supports Your Week 5 Marketing Plan:**
-
-Module 4 showed you how to apply sponsorship and betting frameworks to a real company (FanDuel). This is **practice for analyzing YOUR property's partnerships** in the final project.
-
-**What You Learned:**
-- **Competitive Analysis:** How FanDuel differentiated from DraftKings (45% vs. 25% market share) through superior partnerships, app UX, and state-by-state execution
-- **Partnership ROI Justification:** FanDuel claimed $152 partnership CAC vs. $400 paid marketing CAC—a 62% cost savings that justified $1.1B in league deals
-- **Customer Economics Modeling:** CAC $400, LTV $1,008, 2.4-year payback, $608 profit per customer (sensitive to churn and CAC inflation)
-- **Strategic Trade-Offs:** Exclusive deals (PGA, NASCAR) vs. shared deals (NFL, NBA)—exclusivity costs less but reaches fewer fans
-
-**How to Apply This to Your Final Project:**
-Your marketing plan must convince investors/executives that your property can attract valuable sponsorships. Use Module 4's case analysis approach:
-
-**Slide 4: Sponsorship/Media Strategy - Apply FanDuel's Partnership Logic**
-- **Which brands should sponsor YOUR property?** Just as FanDuel targeted operators with high CAC problems (betting partners), identify brands that struggle with attribution and would pay premiums for your first-party data
-- **Exclusivity vs. shared deals?** FanDuel learned exclusive deals (PGA $85 CAC) outperform shared deals (NFL $110 CAC). Should your property offer category exclusivity?
-- **Partnership tiers:** FanDuel had 5-tier structure (NFL/NBA/NHL/PGA/NASCAR). Your property needs similar: Title Sponsor (exclusive, $10-20M), Official Partners (3-5 brands, $3-5M each), Category Sponsors (10-15 brands, $500K-1M each)
-
-**Slide 6: Financial Snapshot - Use FanDuel's Customer Economics Model**
-- **Sponsor ROI calculations:** Show brands their expected return using Module 4's Customer Economics Calculator framework
-- **Example:** "If Nike sponsors our property for $5M, they'll reach 50M impressions ($100 CPM, premium vs. TV ads $7,000 CPM). With 0.02% engagement rate and 1.5% conversion rate, Nike acquires 15,000 new customers at $333 CAC (vs. their paid marketing $500 CAC). Over 3-year LTV, Nike earns $1.8M profit on $5M investment = 36% ROI."
-- **Conservative assumptions:** Follow FanDuel case best practice—apply 30% attribution discount to account for customers who would have converted anyway
-
-**Real-World Application:** The FanDuel case taught you that sponsors don't just buy logo placement—they buy **measurable outcomes** (customer acquisition, attribution data, engagement multipliers). Your final project needs to PROVE your property delivers these outcomes, not just claim it.
-
-**Action Item:** Export your work from Module 4 widgets (Competitive Analysis, Customer Economics Calculator). These models become templates for your final project's financial appendix.
-
----
 

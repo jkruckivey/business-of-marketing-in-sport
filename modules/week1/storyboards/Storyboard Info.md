@@ -30,12 +30,12 @@
 **Assessment:** Contributes to Group Marketing Project (60%) + Case Engagement (40%)
 **⏱️ Estimated Time:** 6-8 hours total (90-min video + readings + simulation + case + memo)
 
-### Week 1 Module Learning Outcomes (MLOs)
+### Week 1 Module Learning Outcomes (WLOs)
 
-- **MLO 1.1:** Map the major revenue streams in professional sport (Knowledge)
-- **MLO 1.2:** Understand sport's unique business model characteristics (Comprehension)
-- **MLO 1.3:** Debate the vulnerabilities and growth potential of each revenue stream (Analysis)
-- **MLO 1.4:** Analyze different revenue sharing models across leagues (Analysis)
+- **WLO 1.1:** Map the major revenue streams in professional sport (Knowledge)
+- **WLO 1.2:** Understand sport's unique business model characteristics (Comprehension)
+- **WLO 1.3:** Debate the vulnerabilities and growth potential of each revenue stream (Analysis)
+- **WLO 1.4:** Analyze different revenue sharing models across leagues (Analysis)
 
 ---
 
@@ -421,16 +421,16 @@ All widgets use consistent structure:
 
 ## Learning Outcome Alignment Map
 
-Verify that every element serves the MLOs:
+Verify that every element serves the WLOs:
 
-| **MLO**                                                | **Bloom's Level** | **Supporting Elements**                                      | **Assessment**                                               |
+| **WLO**                                                | **Bloom's Level** | **Supporting Elements**                                      | **Assessment**                                               |
 | ------------------------------------------------------ | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **MLO 1.1:** Map major revenue streams                 | Knowledge         | • Module 1: Tiles (4 revenue categories)<br>• Module 3: Text intro, Vertical List (5 streams), Video overview<br>• Module 3: Revenue Mix Slider widget<br>• Module 2: Executive session | Text Response (must reference 3+ streams)                    |
-| **MLO 1.2:** Understand sport's unique business model  | Comprehension     | • Module 1: Text intro<br>• Module 2: Executive session video<br>• Module 3: All text sections explaining each stream<br>• Module 3: Infoboxes (Appointment Viewing, Premium Seat Economics)<br>• Module 3: Table (Streaming vs Traditional) | Text Response (explain unique characteristics)               |
-| **MLO 1.3:** Debate vulnerabilities & growth potential | Analysis          | • Module 3: Vertical List (risks listed for each stream)<br>• Module 3: Dynamic Pricing Simulator widget<br>• Module 3: Stadium Revenue Optimizer widget<br>• Module 3: Sponsorship ROI Calculator widget<br>• Module 4: Revenue Empire Builder activity<br>• Module 4: Reflection prompt | Text Response (identify investment factors based on analysis) |
-| **MLO 1.4:** Analyze revenue sharing models            | Analysis          | • Module 5: Canucks case narrative<br>• Module 5: Table (NHL revenue sharing model)<br>• Module 5: Details (case exhibits A, B, C)<br>• Module 5: Image (revenue flow diagram) | Text Response (apply to investment decision)                 |
+| **WLO 1.1:** Map major revenue streams                 | Knowledge         | • Module 1: Tiles (4 revenue categories)<br>• Module 3: Text intro, Vertical List (5 streams), Video overview<br>• Module 3: Revenue Mix Slider widget<br>• Module 2: Executive session | Text Response (must reference 3+ streams)                    |
+| **WLO 1.2:** Understand sport's unique business model  | Comprehension     | • Module 1: Text intro<br>• Module 2: Executive session video<br>• Module 3: All text sections explaining each stream<br>• Module 3: Infoboxes (Appointment Viewing, Premium Seat Economics)<br>• Module 3: Table (Streaming vs Traditional) | Text Response (explain unique characteristics)               |
+| **WLO 1.3:** Debate vulnerabilities & growth potential | Analysis          | • Module 3: Vertical List (risks listed for each stream)<br>• Module 3: Dynamic Pricing Simulator widget<br>• Module 3: Stadium Revenue Optimizer widget<br>• Module 3: Sponsorship ROI Calculator widget<br>• Module 4: Revenue Empire Builder activity<br>• Module 4: Reflection prompt | Text Response (identify investment factors based on analysis) |
+| **WLO 1.4:** Analyze revenue sharing models            | Analysis          | • Module 5: Canucks case narrative<br>• Module 5: Table (NHL revenue sharing model)<br>• Module 5: Details (case exhibits A, B, C)<br>• Module 5: Image (revenue flow diagram) | Text Response (apply to investment decision)                 |
 
-**Alignment Check:** ✅ All MLOs supported by multiple elements and measured by comprehensive assessment
+**Alignment Check:** ✅ All WLOs supported by multiple elements and measured by comprehensive assessment
 
 ---
 
@@ -500,7 +500,7 @@ This Week 1 storyboard represents a **V3 Interactive-First approach** that prior
 
 **Assessment Alignment:**
 
-- All 4 MLOs measured through comprehensive reflection memo
+- All 4 WLOs measured through comprehensive reflection memo
 - Rubric transparent and research-backed
 - AI grading enables timely, consistent feedback
 - Authentic task (executive memo to investors)

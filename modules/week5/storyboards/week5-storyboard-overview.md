@@ -68,10 +68,10 @@ This storyboard has been split into individual module files for easier navigatio
 
 By the end of this week, students will be able to:
 
-- **MLO 5.1**: Evaluate heritage properties as revenue assets (analyzing business models for museums, halls of fame, Olympic legacies)
-- **MLO 5.2**: Design strategies balancing tradition preservation with innovation (applying frameworks to resolve tension between authenticity and growth)
-- **MLO 5.3**: Assess future trends in sports business (forecasting impacts of AI, VR/AR, new demographics, emerging markets)
-- **MLO 5.4**: Create 5-year strategic vision integrating Week 1-5 frameworks (synthesizing revenue streams, media, sponsorship, athlete branding, and heritage into cohesive strategic plan)
+- **WLO 5.1**: Evaluate heritage properties as revenue assets (analyzing business models for museums, halls of fame, Olympic legacies)
+- **WLO 5.2**: Design strategies balancing tradition preservation with innovation (applying frameworks to resolve tension between authenticity and growth)
+- **WLO 5.3**: Assess future trends in sports business (forecasting impacts of AI, VR/AR, new demographics, emerging markets)
+- **WLO 5.4**: Create 5-year strategic vision integrating Week 1-5 frameworks (synthesizing revenue streams, media, sponsorship, athlete branding, and heritage into cohesive strategic plan)
 
 ---
 
@@ -248,7 +248,7 @@ Students recommend 1 of 3 paths:
 - ☐ Accessibility audit (WCAG 2.2 AA compliance)
 - ☐ Widget testing (keyboard navigation, screen readers)
 - ☐ Student journey simulation (3 personas through full week)
-- ☐ Rubric validation (ensure criteria measure MLOs)
+- ☐ Rubric validation (ensure criteria measure WLOs)
 - ☐ Pilot with beta group (if possible)
 
 ---

@@ -1,4 +1,5 @@
 # MODULE 1: Welcome & Learning Outcomes (BOPPPS: Objectives)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Set clear, measurable learning outcomes for Week 4 (athlete brands & emerging sports)
 
@@ -8,9 +9,17 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Welcome to Week 4 | Type directly | Connects from Weeks 1-3, sets Week 4 focus |
 | 2 | **ⓘ Infobox (Callout)** ⬤ Required | Week 4 overview + time commitment | Type directly | Sets expectations for workload |
-| 3 | **▬ Text** ⬤ Required | Four learning outcomes (MLO 4.1-4.4) | Type directly | Specific, measurable, with success criteria |
-| 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Visualizer** | Embed widget | Interactive visualization of Week 4 journey |
+| 3 | **▬ Text** ⬤ Required | Four learning outcomes (WLO 4.1-4.4) | Type directly | Specific, measurable, with success criteria |
+| 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-week.html` | Shows how week outcomes connect to course goals |
 | 5 | **▬ Text** ⬤ Required | How outcomes connect to Anchor Project Milestone 3 | Type directly | Shows progression toward capstone |
+
+---
+
+### 💼 Project Preview: Week 4 → Final Strategic Vision
+
+This week's athlete branding and emerging sports expertise directly supports your **Week 5 capstone**. If your Strategic Vision Memo involves athlete partnerships, women's sports properties, or emerging markets, you'll apply the frameworks learned this week to justify investment decisions and partnership strategies.
+
+By understanding how elite athletes build generational wealth (not just income) and where the highest-growth opportunities exist in sports, you'll be equipped to identify undervalued properties and recommend strategic positions that capture emerging market value.
 
 ---
 
@@ -23,7 +32,12 @@
 ```markdown
 # Welcome to Week 4: Athletes, Brands & Emerging Sports
 
-Over the past three weeks, you've mastered the fundamentals of sports business revenue ecosystems (Week 1), analyzed how media rights and content drive fan engagement (Week 2), and explored the explosive growth of sponsorship and betting markets (Week 3). You understand how leagues, teams, and properties generate revenue.
+**Connecting to Weeks 1-3:** Over the past three weeks, you've built a comprehensive framework for sports business:
+- **Week 1:** Five revenue streams (media 40-60%, ticketing 20-30%, sponsorship 15-25%, merchandise 5-10%, betting 2-8%) and ecosystem thinking
+- **Week 2:** Media rights valuation using CPM, dynamic pricing, and the fan engagement value chain (passive → engaged → super-fan)
+- **Week 3:** Sponsorship ROI calculation, the 2-3× activation rule, and CAC/LTV benchmarks from FanDuel ($400 CAC, 8:1 LTV ratio)
+
+This week, you'll apply these same frameworks to **individual athletes as businesses**. Athletes have their own five revenue streams—and just like leagues, they must decide which streams to prioritize for long-term wealth creation.
 
 This week, we shift focus to the **individual athlete** as a business. You'll discover how elite athletes like Serena Williams build $500 million brands that extend decades beyond their playing careers. You'll analyze the fastest-growing investment opportunity in sports: **women's sports** and **emerging sports properties**. And you'll learn why some athletes build generational wealth while others—despite earning tens of millions in salaries and endorsements—struggle financially after retirement.
 
@@ -62,7 +76,7 @@ Professional sports presents unique strategic challenges at the individual athle
 
 ---
 
-## **MLO 4.1: Analyze the Five Athlete Revenue Streams**
+## **WLO 4.1: Analyze the Five Athlete Revenue Streams**
 
 ### What You'll Master:
 You'll be able to identify and analyze the five major revenue streams elite athletes use to build wealth: (1) endorsements and sponsorships, (2) owned businesses and ventures, (3) investment portfolios, (4) media and content production, and (5) licensing and intellectual property. More importantly, you'll understand which streams create **equity-based wealth** (owned assets that appreciate) versus **fee-based income** (one-time payments).
@@ -80,7 +94,7 @@ Most athletes chase endorsement deals because they offer immediate cash. But end
 
 ---
 
-## **MLO 4.2: Evaluate Owned Asset Strategy vs. Endorsement Strategy**
+## **WLO 4.2: Evaluate Owned Asset Strategy vs. Endorsement Strategy**
 
 ### What You'll Master:
 You'll be able to evaluate strategic trade-offs between taking endorsement fees versus investing in owned businesses. You'll understand when an athlete should endorse Nike for $10M versus invest $2M to launch their own athletic wear brand. You'll analyze why athletes like Serena Williams, LeBron James, and Roger Federer increasingly prioritize ownership over endorsements—and why that strategy requires different risk profiles, capital requirements, and timelines.
@@ -98,7 +112,7 @@ The highest-earning retired athletes all share one strategy: they built owned as
 
 ---
 
-## **MLO 4.3: Assess Women's Sports and Emerging Sports Investment Opportunities**
+## **WLO 4.3: Assess Women's Sports and Emerging Sports Investment Opportunities**
 
 ### What You'll Master:
 You'll be able to assess why women's sports and emerging sports properties represent the highest-growth investment opportunities in sports business today. You'll understand the investment thesis: women's sports are growing 300% faster than men's despite being valued at 1/10th the price, creating massive arbitrage opportunities for early investors. You'll analyze case studies (NWSL expansion, WNBA growth, women's soccer, women's tennis, pickleball, esports) to understand what drives returns.
@@ -116,7 +130,7 @@ The biggest investment returns come from buying undervalued assets before the ma
 
 ---
 
-## **MLO 4.4: Design Post-Career Transition Strategies for Athletes**
+## **WLO 4.4: Design Post-Career Transition Strategies for Athletes**
 
 ### What You'll Master:
 You'll be able to design comprehensive post-career transition strategies that maximize athlete brand value after retirement. You'll understand that athlete brand value typically declines 60-80% within 5 years of retirement—unless they've built assets that sustain value independent of playing career. You'll analyze Serena Williams' post-career strategy (Serena Ventures $111M investment fund, S by Serena clothing line, board positions) to understand how elite athletes transition from playing to business.
@@ -138,10 +152,10 @@ You'll be able to design comprehensive post-career transition strategies that ma
 
 These four outcomes build on each other:
 
-1. **First, you learn the five revenue streams** (MLO 4.1) so you know all the options available to athletes
-2. **Then, you learn to evaluate owned assets vs. endorsements** (MLO 4.2) so you understand which streams create long-term wealth
-3. **Next, you learn to assess women's sports and emerging sports opportunities** (MLO 4.3) so you can identify high-growth investment areas
-4. **Finally, you design post-career transition strategies** (MLO 4.4) that synthesize everything—building assets during playing career that sustain wealth for decades
+1. **First, you learn the five revenue streams** (WLO 4.1) so you know all the options available to athletes
+2. **Then, you learn to evaluate owned assets vs. endorsements** (WLO 4.2) so you understand which streams create long-term wealth
+3. **Next, you learn to assess women's sports and emerging sports opportunities** (WLO 4.3) so you can identify high-growth investment areas
+4. **Finally, you design post-career transition strategies** (WLO 4.4) that synthesize everything—building assets during playing career that sustain wealth for decades
 
 By Friday, you'll apply all four capabilities to analyze Serena Williams' brand strategy and recommend how athletes should build generational wealth in today's market.
 
@@ -153,9 +167,9 @@ By Friday, you'll apply all four capabilities to analyze Serena Williams' brand 
 
 This week's learning directly informs your Anchor Project's implementation strategy:
 
-- **If analyzing athlete brands:** Apply MLO 4.1 to map their revenue streams, MLO 4.2 to evaluate owned vs. endorsed assets
-- **If analyzing emerging sports:** Apply MLO 4.3's women's sports investment thesis to justify growth projections
-- **If analyzing post-career transitions:** Apply MLO 4.4's wealth preservation strategies to design athlete business portfolios
+- **If analyzing athlete brands:** Apply WLO 4.1 to map their revenue streams, WLO 4.2 to evaluate owned vs. endorsed assets
+- **If analyzing emerging sports:** Apply WLO 4.3's women's sports investment thesis to justify growth projections
+- **If analyzing post-career transitions:** Apply WLO 4.4's wealth preservation strategies to design athlete business portfolios
 
 Your Week 4 case analysis (Serena Williams) becomes a proven framework you can apply to your Anchor Project's strategic recommendations.
 
@@ -168,37 +182,27 @@ Ready to master these capabilities? Let's begin.
 
 **Widget Purpose:** Interactive visualization showing Week 4's learning journey and how outcomes connect
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 **Uplimit Implementation:**
 1. Select **iFrame Widget** element
 2. Copy embed code below:
 
 ```html
 <iframe
-  src="../../widgets/learning-outcomes-module-1.html"
+  src="../../widgets/learning-outcomes-week.html"
   width="100%"
   height="600"
   style="border: none; border-radius: 8px;"
-  title="Module 1 Learning Outcomes"
-  aria-label="Visual map showing which learning outcomes are practiced in Module 1"
+  title="Week 4 Learning Outcomes"
+  aria-label="Interactive widget showing Week 4 learning outcomes and their connection to course goals"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
 **Widget Features:**
-- Visual roadmap from MLO 4.1 → 4.2 → 4.3 → 4.4 with Serena Williams case as capstone
-- Interactive: Click outcomes to see details
-- Shows learning progression through Week 4
-=======
-**Implementation:**
-Embed iframe widget showing visual roadmap from MLO 4.1 → 4.2 → 4.3 → 4.4 with Serena Williams case as capstone
->>>>>>> Stashed changes
-=======
-**Implementation:**
-Embed iframe widget showing visual roadmap from MLO 4.1 → 4.2 → 4.3 → 4.4 with Serena Williams case as capstone
->>>>>>> Stashed changes
+- Click any week outcome (WLO 4.1-4.4) to see which course-level outcomes it contributes to
+- Interactive highlighting shows connections between week and course goals
+- WCAG 2.2 AA compliant with keyboard navigation and screen reader support
 
 ---
 
@@ -222,24 +226,24 @@ This week, you'll complete **Milestone 3** of your Anchor Project: the **Impleme
 
 **Week 4's learning directly supports Milestone 3:**
 
-**MLO 4.1 (Five Revenue Streams):**
+**WLO 4.1 (Five Revenue Streams):**
 - Apply to your Implementation Roadmap's revenue model
 - Map which revenue streams your opportunity will prioritize
 - Distinguish fee-based income vs. equity-based wealth creation
-- Example: If your Anchor Project involves athlete partnerships, MLO 4.1 helps you structure endorsement deals vs. equity partnerships
+- Example: If your Anchor Project involves athlete partnerships, WLO 4.1 helps you structure endorsement deals vs. equity partnerships
 
-**MLO 4.2 (Owned Assets vs. Endorsements):**
+**WLO 4.2 (Owned Assets vs. Endorsements):**
 - Apply to your strategic partnership decisions
 - Evaluate whether your opportunity should pursue licensing deals (fee-based) or joint ventures (equity-based)
 - Example: Should your sports tech startup license IP to teams, or build owned products and retain equity?
 
-**MLO 4.3 (Women's Sports & Emerging Sports):**
+**WLO 4.3 (Women's Sports & Emerging Sports):**
 - Apply to your growth opportunity analysis
-- If your project involves women's sports or emerging sports, use MLO 4.3's investment thesis framework to justify projections
+- If your project involves women's sports or emerging sports, use WLO 4.3's investment thesis framework to justify projections
 - Cite growth rates, valuation trends, and comparable deals to support your financial forecasts
 - Example: If launching a women's sports media property, cite NWSL's 48% attendance growth and $240M valuation to justify revenue projections
 
-**MLO 4.4 (Post-Career Transition):**
+**WLO 4.4 (Post-Career Transition):**
 - Apply to your long-term value creation strategy
 - Design how your opportunity creates sustained value beyond initial launch
 - Example: If building an athlete brand platform, design post-career services that retain value after athletes retire
@@ -257,43 +261,13 @@ When you submit Milestone 3 at the end of Week 4, you'll reference this week's f
 
 > "Following Serena Williams' owned asset strategy (Week 4 Case), we recommend structuring partnerships as equity joint ventures rather than licensing agreements. This approach builds long-term enterprise value..."
 
-> "Our women's sports investment thesis draws on Week 4's MLO 4.3 framework: NWSL franchises grew from $3M (2015) to $40M+ (2023), demonstrating 13x returns for first movers..."
+> "Our women's sports investment thesis draws on Week 4's WLO 4.3 framework: NWSL franchises grew from $3M (2015) to $40M+ (2023), demonstrating 13x returns for first movers..."
 
 Week 4 isn't just theory—it's the strategic toolkit you'll apply to your Anchor Project's implementation plan this week.
 ```
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 1 Supports Your Final Strategic Vision:**
-
-Module 1 established the four learning outcomes that define athlete brand strategy. This framework is essential if your Week 5 capstone involves athlete partnerships, women's sports investment, or emerging sports properties.
-
-**What You Learned:**
-- Five athlete revenue streams and which create equity-based wealth vs. fee-based income
-- Owned assets (businesses, investments) compound over decades; endorsements stop when relevance fades
-- Women's sports and emerging sports represent high-growth investment opportunities (NWSL franchises: $3M in 2015 → $40M+ in 2023)
-- Post-career transition strategies separate temporary prosperity from generational wealth
-
-**How to Apply This to Your Final Project:**
-
-When you craft your 5-year strategic vision in Week 5, Module 1's athlete frameworks inform several strategic dimensions:
-
-- **Partnership Structure:** If your property signs athletes, explain the economic model. Will you pay appearance fees, offer revenue share, or provide equity stakes? Module 1 taught you which structures build long-term value.
-- **Women's Sports Investment Thesis:** If analyzing women's sports or emerging properties, reference Module 1's growth data. Example: "NWSL valuations grew 13× in 8 years (Week 4 data), projecting similar trajectory for our property."
-- **Asset vs. Income Focus:** Your vision should prioritize equity-building activities over fee-generating transactions. Module 1 taught this distinction.
-
-**Real-World Application:** Your strategic vision must answer: How does this property create sustainable value? Module 1 taught you that equity compounds, income doesn't—apply this principle throughout your capstone.
-
----
-
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ## Module 1 Complete - Transition to Module 2
 
 **What You've Accomplished:**
@@ -322,14 +296,14 @@ Ready to hear from the experts? Let's go.
 ### Elements Created:
 1. ✅ Welcome Text (connects from Weeks 1-3, sets Week 4 focus)
 2. ✅ Infobox - Week Overview (case, executives, time commitment)
-3. ✅ Learning Outcomes Text (MLO 4.1-4.4 with success criteria)
+3. ✅ Learning Outcomes Text (WLO 4.1-4.4 with success criteria)
 4. ✅ Learning Outcomes Visualizer Widget (interactive roadmap - framework provided)
 5. ✅ Text - Anchor Project Connection (Milestone 3 integration, visible by default)
 
 ### Pedagogical Design:
-- **Clarity:** Each MLO has specific success criteria ("You can do this when you can...")
-- **Relevance:** "Why This Matters" section for each MLO connects to real athlete outcomes
-- **Connection:** Shows how MLOs build on each other and connect to Anchor Project
+- **Clarity:** Each WLO has specific success criteria ("You can do this when you can...")
+- **Relevance:** "Why This Matters" section for each WLO connects to real athlete outcomes
+- **Connection:** Shows how WLOs build on each other and connect to Anchor Project
 - **Motivation:** Uses Serena Williams as concrete example throughout
 
 ### Total Time Estimate:

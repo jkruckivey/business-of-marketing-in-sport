@@ -1,6 +1,4 @@
 ## MODULE 1: Welcome & Learning Outcomes (BOPPPS: Outcomes)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
-
 **Purpose:** Orient students to Week 1, establish learning expectations
 **Estimated Time:** 5-7 minutes
 
@@ -13,20 +11,10 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **ⓘ Infobox (Callout)** ⬤ Required | Display all 4 WLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
+| 1 | **ⓘ Infobox (Callout)** ⬤ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
 | 2 | **▬ Text** ⬤ Required | Week 1 introduction (3 paragraphs) | Embedded below | Sets context for revenue ecosystem topic |
 | 3 | **◫ Tiles** ◐ Recommended | 4 revenue stream categories (preview) | Type directly in Uplimit | Blue variant, one tile per stream |
-| 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-week.html` | Shows how week outcomes connect to course goals |
-
----
-
-### 💼 Project Preview: Week 1 → Final Strategic Vision
-
-This week's learning directly prepares you for your **Week 5 capstone**: a 5-year Strategic Vision Memo for a sports property. You'll build the foundational revenue analysis skills needed to answer the central question: *"How will this property make money?"*
-
-By mastering the 5-stream revenue framework, revenue sharing models, and ecosystem dynamics this week, you'll be ready to construct sophisticated financial projections and strategic recommendations for your chosen property.
-
----
+| 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-1.html` | Shows how module outcomes connect to course goals |
 
 ### Element 1: Infobox Content
 ```
@@ -34,16 +22,16 @@ Title: ◉ Week 1 Learning Outcomes
 
 By the end of this week, you will:
 
-**WLO 1.1: Map the major revenue streams in professional sport** (Bloom's: Understand)
+**MLO 1.1: Map the major revenue streams in professional sport** (Bloom's: Understand)
 Identify and explain the five major revenue streams (media rights, ticketing, sponsorship, merchandising, betting) and their relative contribution to league and team finances.
 
-**WLO 1.2: Explain sport's unique business model characteristics** (Bloom's: Understand)
+**MLO 1.2: Recognize sport's unique business model characteristics** (Bloom's: Remember)
 Describe how professional sport differs from traditional business models through competitive balance requirements, revenue interdependence, and collaborative competition.
 
-**WLO 1.3: Evaluate the vulnerabilities and growth potential of each revenue stream** (Bloom's: Evaluate)
+**MLO 1.3: Evaluate the vulnerabilities and growth potential of each revenue stream** (Bloom's: Evaluate)
 Assess risks and opportunities across revenue streams using market data, trends, and strategic frameworks to identify which streams offer sustainable growth.
 
-**WLO 1.4: Analyze different revenue sharing models across leagues** (Bloom's: Analyze)
+**MLO 1.4: Analyze different revenue sharing models across leagues** (Bloom's: Analyze)
 Compare revenue sharing approaches (NFL vs. NBA vs. European soccer) and determine how these models affect competitive balance and financial sustainability.
 
 **This week focuses on CLO 1: Analyzing Revenue Ecosystems**
@@ -89,29 +77,29 @@ Create 5 tiles:
 
 ### Element 4: Learning Outcomes Widget
 
-**Widget Purpose:** Interactive visualization showing how Week 1's learning outcomes connect to course-level goals
+**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
 
 **Uplimit Implementation:**
 
-**Widget File:** `learning-outcomes-week.html`
+**Widget File:** `learning-outcomes-module-1.html`
 
 **Embed Code:**
 ```html
 <iframe
-  src="../../widgets/learning-outcomes-week.html"
+  src="../../widgets/learning-outcomes-module-1.html"
   width="100%"
   height="600"
   style="border: none; border-radius: 8px;"
-  title="Week 1 Learning Outcomes"
-  aria-label="Interactive widget showing Week 1 learning outcomes and their connection to course goals"
+  title="Learning Outcomes - Module 1"
+  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
 **Widget Features:**
-- Click any week outcome (WLO 1.1-1.4) to see which course-level outcome it contributes to (CLO 1)
-- Interactive highlighting shows connections between week and course goals
+- Click any module outcome (MLO 1.1-1.4) to see which course-level outcome it contributes to (CLO 1)
+- Interactive highlighting shows connections between module and course goals
 - WCAG 2.2 AA compliant with keyboard navigation and screen reader support
 
 **Design Rationale:**
@@ -140,4 +128,44 @@ Before diving into the technical details of each revenue stream, you'll hear fro
 Ready to learn from someone who's done it? Let's hear the executive perspective.
 
 ---
+
+## 🎯 FINAL PROJECT CONNECTION
+
+**How Module 1 Supports Your Final Strategic Vision:**
+
+Module 1 established the four learning outcomes that define sports business strategy. This clarity of purpose directly supports your Week 5 capstone deliverable.
+
+**What You Learned:**
+- The five major revenue streams and their relative importance (media 40-60%, ticketing 20-30%, sponsorship 15-25%, merchandising 5-10%, betting 2-8%)
+- Sport's unique collaborative competition model (teams compete on field, collaborate financially)
+- Revenue sharing models vary by league (NFL 60%, NHL 50%, EPL tiered)
+
+**How to Apply This to Your Final Project:**
+
+When you create your 5-year strategic vision in Week 5, Module 1's frameworks provide your analytical foundation:
+
+- **Revenue Model Section:** Use the 5-stream framework to structure your property's revenue analysis. Show percentage contribution from each stream and justify why your mix differs from league averages.
+- **Competitive Context:** Explain how revenue sharing in your league/sport affects your property's strategic options. If you're in a high-sharing league (like NFL), justify why shared revenue limits your flexibility. If you're in a low-sharing environment (like soccer), explain your entrepreneurial advantages.
+- **Growth Opportunities:** Reference MLO 1.3 to identify which revenue streams offer sustainable growth for YOUR property. Betting growing 30-40%? Media rights stagnating? Use this week's data to justify strategic priorities.
+
+**Real-World Application:** Your strategic vision must answer: "How will this property make money over 5 years?" Module 1 taught you the universal framework every sports property uses to answer that question.
+
+---
+
+---
+
+### New Element: **Self-Reflection — Your Volatility Pick** ⬤ Required
+- **Type:** Choice + short text (store responses)
+- **Estimated Time:** 2 minutes
+- **Prompt (Choice):** *Which revenue stream do you expect to be most volatile over the next 12 months?*
+  - **Choices:** Media Rights ▪ Ticketing ▪ Sponsorship ▪ Merchandising ▪ Betting & Gaming
+  - **Store as variable:** `m1_stream_choice`
+- **Prompt (Short Text):** *Why do you think this stream is most volatile?* (30–80 words)
+  - **Store as variable:** `m1_volatility_reason`
+- **Implementation Notes (Uplimit):**
+  - Use a Form block with one **Select** and one **Short Answer** field.
+  - Turn **“Make responses available to later modules”** ON.
+  - Set **fields required** to ON.
+  - Accessibility: Both fields have programmatic labels; ensure keyboard focus order and visible focus ring.
+- **Instructor Note:** This is picked up in Module 3’s opening screen to personalize the simulator.
 

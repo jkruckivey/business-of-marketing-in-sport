@@ -1,4 +1,5 @@
 # MODULE 5: Case Study - Serena Williams: Building a Brand (BOPPPS: Practice)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Apply Week 4 frameworks to analyze Serena Williams' actual brand strategy
 
@@ -7,28 +8,12 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro to case | Type directly | Bridge from simulations to real analysis |
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced in this module |
-| 3 | **ⓘ Infobox (Callout)** ⬤ Required | Case access + reading instructions | Type directly | How to access HBS case, time estimate |
-| 4 | **📄 File Attachment** ⬤ Required | Serena Williams: Building a Brand (HBS 517050) | Attach PDF | HBS case study |
-| 5 | **▬ Text** ⬤ Required | Analysis framework: 4 questions to guide reading | Type directly | Structured case analysis approach |
-| 6 | **⚙ iFrame Widget** ◐ Recommended | **Serena's Brand Portfolio Analyzer** | Embed widget | Interactive analysis of her actual strategy |
-| 7 | **▤ Details** ○ Optional | Serena Ventures portfolio analysis | Type directly | Deep dive on her $111M investment fund |
-| 8 | **◈ AI Chat Widget** ○ Optional | "Case discussion partner" | Configure in Uplimit | On-demand case analysis support |
-=======
-=======
->>>>>>> Stashed changes
 | 2 | **ⓘ Infobox (Callout)** ⬤ Required | Case access + reading instructions | Type directly | How to access HBS case, time estimate |
 | 3 | **📄 File Attachment** ⬤ Required | Serena Williams: Building a Brand (HBS 517050) | Attach PDF | HBS case study |
 | 4 | **▬ Text** ⬤ Required | Analysis framework: 4 questions to guide reading | Type directly | Structured case analysis approach |
 | 5 | **⚙ iFrame Widget** ◐ Recommended | **Serena's Brand Portfolio Analyzer** | Embed widget | Interactive analysis of her actual strategy |
 | 6 | **▤ Details** ○ Optional | Serena Ventures portfolio analysis | Type directly | Deep dive on her $111M investment fund |
 | 7 | **◈ AI Chat Widget** ○ Optional | "Case discussion partner" | Configure in Uplimit | On-demand case analysis support |
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 ---
 
@@ -68,41 +53,7 @@ Let's dive into the case.
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 2: **NEW** - Learning Outcomes Widget
-
-**Uplimit Implementation:**
-1. Select **iFrame Widget** element
-2. Copy embed code below:
-
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-5.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Module 5 Learning Outcomes"
-  aria-label="Visual map showing which learning outcomes are practiced in Module 5"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Shows which Week 4 MLOs are practiced in this module (case study analysis)
-- Visual badge indicating Module 5: Case Study
-- Interactive: Click to see how Serena Williams case connects to all frameworks
-
----
-
-## Element 3: **RENUMBERED** - Infobox - Case Access Instructions (was Element 2)
-=======
 ## Element 2: Infobox - Case Access Instructions
->>>>>>> Stashed changes
-=======
-## Element 2: Infobox - Case Access Instructions
->>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -117,15 +68,7 @@ The Serena Williams: Building a Brand case (HBS 517050, 22 pages) is attached be
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 4: **RENUMBERED** - File Attachment - HBS Case (was Element 3)
-=======
 ## Element 3: File Attachment - HBS Case
->>>>>>> Stashed changes
-=======
-## Element 3: File Attachment - HBS Case
->>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **File Attachment** element
@@ -135,15 +78,7 @@ The Serena Williams: Building a Brand case (HBS 517050, 22 pages) is attached be
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 5: **RENUMBERED** - Analysis Framework - 4 Guiding Questions (was Element 4)
-=======
 ## Element 4: Analysis Framework - 4 Guiding Questions
->>>>>>> Stashed changes
-=======
-## Element 4: Analysis Framework - 4 Guiding Questions
->>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -156,7 +91,7 @@ As you read the Serena Williams case, analyze her strategy through these 4 lense
 
 ---
 
-## **Question 1: Revenue Stream Allocation (MLO 4.1)**
+## **Question 1: Revenue Stream Allocation (WLO 4.1)**
 
 **Analyze:** How did Serena allocate her time, brand equity, and capital across the five revenue streams?
 
@@ -173,7 +108,7 @@ As you read the Serena Williams case, analyze her strategy through these 4 lense
 
 ---
 
-## **Question 2: Owned Assets vs. Endorsement Strategy (MLO 4.2)**
+## **Question 2: Owned Assets vs. Endorsement Strategy (WLO 4.2)**
 
 **Analyze:** When did Serena choose to build owned businesses instead of taking endorsement fees—and why?
 
@@ -193,7 +128,7 @@ Serena launched S by Serena clothing line in 2018. She could have instead:
 
 ---
 
-## **Question 3: Women's Sports Investment Thesis (MLO 4.3)**
+## **Question 3: Women's Sports Investment Thesis (WLO 4.3)**
 
 **Analyze:** Why did Serena focus Serena Ventures on companies founded by women and people of color—and does this create superior returns?
 
@@ -218,7 +153,7 @@ Serena Ventures invested in NWSL teams. Apply the Emerging Sports Investment Too
 
 ---
 
-## **Question 4: Post-Career Transition Strategy (MLO 4.4)**
+## **Question 4: Post-Career Transition Strategy (WLO 4.4)**
 
 **Analyze:** How did Serena build assets DURING her playing career that will sustain value AFTER retirement?
 
@@ -258,35 +193,7 @@ This synthesis will form the foundation of your Week 4 assessment.
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 6: **RENUMBERED** - Serena's Brand Portfolio Analyzer Widget (was Element 5)
-
-### ⚙ Interactive Activity: Serena's Brand Portfolio Analyzer
-
-**Practice: MLO 4.1 (Five Revenue Streams) & MLO 4.2 (Owned Assets vs. Endorsements)**
-
-Now that you've read the Serena Williams case study, it's time to put numbers to her strategy. This widget pre-loads Serena's estimated actual portfolio allocation—30% endorsements, 40% owned businesses, 20% investments, 6% media/content, 4% licensing—and shows you the 20-year wealth trajectory this strategy creates. But here's where it gets interesting: you can unlock the sliders and test alternatives.
-
-What if Serena had taken Nike's larger endorsement deal instead of launching S by Serena? What if she'd allocated 80% to equity instead of 70%? What if she'd followed Michael Jordan's licensing-heavy strategy? You'll compare her actual decisions to hypothetical alternatives and see exactly why she made the choices she did. This is case analysis through experimentation—discovering strategic insights by manipulating the variables.
-
-**What you'll discover:**
-
-- Why Serena's 70% equity allocation creates $287M in 20-year wealth vs. $127M with 100% endorsements (126% more wealth)
-- How Serena Ventures' portfolio breakdown (60+ companies, 25-35% IRR) outperforms VC benchmarks and S&P 500
-- Strategic timeline insights: When she launched owned businesses (2014, 2018) during peak brand value years, not after retirement
-- Alternative scenario testing: What if she'd been more conservative? More aggressive? Followed LeBron's or MJ's playbook?
-
-**Time commitment:** 15-20 minutes
-**Learning outcomes practiced:** MLO 4.1 (Five revenue streams analysis), MLO 4.2 (Owned assets vs. endorsements evaluation)
-
----
-=======
 ## Element 5: Serena's Brand Portfolio Analyzer Widget
->>>>>>> Stashed changes
-=======
-## Element 5: Serena's Brand Portfolio Analyzer Widget
->>>>>>> Stashed changes
 
 **Widget Purpose:** Interactive tool to map Serena's actual strategy and compare to alternatives
 
@@ -329,15 +236,7 @@ What if Serena had taken Nike's larger endorsement deal instead of launching S b
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 7: **RENUMBERED** - Details - Serena Ventures Deep Dive (was Element 6)
-=======
 ## Element 6: Details - Serena Ventures Deep Dive
->>>>>>> Stashed changes
-=======
-## Element 6: Details - Serena Ventures Deep Dive
->>>>>>> Stashed changes
 
 ```markdown
 Title: Deep Dive: Serena Ventures Portfolio Analysis
@@ -384,15 +283,7 @@ Serena proved that investing in underrepresented founders is NOT a trade-off bet
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-## Element 8: **RENUMBERED** - AI Chat Widget - Case Discussion Partner (was Element 7)
-=======
 ## Element 7: AI Chat Widget - Case Discussion Partner
->>>>>>> Stashed changes
-=======
-## Element 7: AI Chat Widget - Case Discussion Partner
->>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element
@@ -439,36 +330,4 @@ You've analyzed Serena's strategy. Now you'll apply these frameworks to a strate
 
 **Assessment Prompt:** "An elite 25-year-old athlete has hired you as brand strategist. They have 10-year peak career ahead and want to build generational wealth. Using frameworks from Week 4 and lessons from Serena's case, design their 10-year brand strategy."
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Ready to become a brand strategist? Let's build your strategy!
-
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 5 Supports Your Final Strategic Vision:**
-
-Module 5's Serena Williams case analysis provides a proven template for building sustainable value. This strategic approach applies directly to your Week 5 capstone.
-
-**What You Learned:**
-- Serena allocated 70% of capital to owned assets (S by Serena, Serena Ventures) vs. 30% to endorsements
-- Her $111M VC fund focused on undervalued markets (women founders, underrepresented entrepreneurs) capturing first-mover returns
-- Women's sports investments (NWSL, Angel City FC) delivered 10-15× returns as category grew from niche to mainstream
-- Strategic timing: Built assets during peak brand years (2014-2018) that generate value post-retirement (2023+)
-
-**How to Apply This to Your Final Project:**
-
-When you craft your 5-year strategic vision in Week 5, use Serena's case as your strategic template:
-
-- **Portfolio Allocation:** Reference Serena's 70/30 split to justify your property's capital allocation. Example: "Following Serena Williams' model (Week 4 case), we allocate 70% of profits to equity-building initiatives (owned media platform, IP development) vs. 30% to operational expenses."
-- **First-Mover Advantage:** Serena identified undervalued markets early. Your vision should identify similar opportunities in your space and justify why early entry creates competitive moats.
-- **Post-Period Value:** Serena built assets that sustain value post-retirement. Your 5-year vision should explain what assets remain valuable in Years 6-10.
-
-**Real-World Application:** Serena's case demonstrates wealth creation vs. income generation. Your Week 5 capstone must show you understand this distinction—Module 5 taught you the blueprint.
-=======
 Ready to demonstrate mastery? Let's go.
->>>>>>> Stashed changes
-=======
-Ready to demonstrate mastery? Let's go.
->>>>>>> Stashed changes

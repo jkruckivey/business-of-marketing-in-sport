@@ -10,7 +10,7 @@
 This document translates **Week 2** of the "Business of Sports Marketing" course into a complete Uplimit storyboard.
 
 **Process:**
-1. Start with learning outcomes (CLO 2 → MLOs 2.1-2.4)
+1. Start with learning outcomes (CLO 2 → WLOs 2.1-2.4)
 2. Map to Uplimit structure (Unit 2 → Modules)
 3. Select appropriate elements (using Decision Rules)
 4. Document build specifications
@@ -44,11 +44,11 @@ This document translates **Week 2** of the "Business of Sports Marketing" course
 
 **CLO Focus:** CLO 2 (Evaluate Media & Fan Monetization)
 
-**Module Learning Outcomes (MLOs):**
-- **MLO 2.1:** Explore how media rights deals are valued and monetized (Knowledge/Comprehension)
-- **MLO 2.2:** Compare linear broadcasting economics to streaming/direct-to-consumer models (Analysis)
-- **MLO 2.3:** Understand how fan engagement extends monetization through ads, subscriptions, and sponsorships (Comprehension)
-- **MLO 2.4:** Evaluate the Rogers $5.2B NHL deal and its industry implications (Evaluation)
+**Module Learning Outcomes (WLOs):**
+- **WLO 2.1:** Explore how media rights deals are valued and monetized (Knowledge/Comprehension)
+- **WLO 2.2:** Compare linear broadcasting economics to streaming/direct-to-consumer models (Analysis)
+- **WLO 2.3:** Understand how fan engagement extends monetization through ads, subscriptions, and sponsorships (Comprehension)
+- **WLO 2.4:** Evaluate the Rogers $5.2B NHL deal and its industry implications (Evaluation)
 
 ---
 
@@ -59,7 +59,7 @@ This document translates **Week 2** of the "Business of Sports Marketing" course
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: ◉ |
+| 1 | **Infobox (Callout)** ⬤ Required | Display all 4 WLOs + week overview | Type directly in Uplimit | Blue variant, icon: ◉ |
 | 2 | **Text** ⬤ Required | Week 2 introduction + connection to Week 1 (3 paragraphs) | Import from `week2-intro.docx` | Bridges revenue ecosystem → media focus |
 | 3 | **Tiles** ◐ Recommended | 3 media strategy topics (preview) | Type directly in Uplimit | Blue variant, one tile per topic |
 
@@ -76,16 +76,16 @@ Title: Week 2 Learning Objectives ◉
 
 By the end of this week, you will:
 
-**MLO 2.1: Explore how media rights deals are valued and monetized** (Bloom's: Understand)
+**WLO 2.1: Explore how media rights deals are valued and monetized** (Bloom's: Understand)
 Explain the frameworks broadcasters and streaming platforms use to price sports content, including audience reach, exclusivity value, and subscription/advertising revenue potential.
 
-**MLO 2.2: Compare linear broadcasting to streaming/DTC models** (Bloom's: Analyze)
+**WLO 2.2: Compare linear broadcasting to streaming/DTC models** (Bloom's: Analyze)
 Contrast traditional broadcasting economics (advertising-driven, mass audience) with direct-to-consumer streaming models (subscription-driven, targeted engagement) and assess trade-offs for leagues and media companies.
 
-**MLO 2.3: Understand fan engagement monetization strategies** (Bloom's: Understand)
+**WLO 2.3: Understand fan engagement monetization strategies** (Bloom's: Understand)
 Describe how platforms extend value beyond passive viewing through interactive features, betting integration, social engagement, and multi-platform distribution to maximize advertising, subscription, and sponsorship revenue.
 
-**MLO 2.4: Evaluate the Rogers $5.2B NHL deal and its implications** (Bloom's: Evaluate)
+**WLO 2.4: Evaluate the Rogers $5.2B NHL deal and its implications** (Bloom's: Evaluate)
 Analyze Rogers Communications' 12-year NHL rights acquisition, assess its strategic outcomes, and determine lessons for future media rights negotiations in the streaming era.
 
 **This week focuses on CLO 2: Evaluating Media & Fan Monetization**
@@ -175,7 +175,7 @@ Ready to learn from someone who's done it? Let's hear the executive perspective.
 ---
 
 ## MODULE 2: Executive Leader Perspective
-**Purpose:** Deliver practitioner insights on media strategy from TSN/DAZN executive (supports MLO 2.1, 2.2, 2.3)
+**Purpose:** Deliver practitioner insights on media strategy from TSN/DAZN executive (supports WLO 2.1, 2.2, 2.3)
 
 **Uplimit Structure:** Second module in Unit 2
 
@@ -204,7 +204,7 @@ Viewing Guide:
 This 2-minute video provides executive insights on media rights strategy and
 platform economics in the evolving sports media landscape.
 
-Supports MLO 2.1, 2.2, 2.3, and 2.4.
+Supports WLO 2.1, 2.2, 2.3, and 2.4.
 ```
 
 ### Video Specifications:
@@ -311,7 +311,7 @@ Ready to dive in? Let's explore media economics interactively!
 ---
 
 ## MODULE 3: Media Rights Framework (V3 INTERACTIVE-FIRST REDESIGN)
-**Purpose:** Provide foundational knowledge about media economics and rights valuation through interactive exploration (supports MLO 2.1, 2.2, 2.3)
+**Purpose:** Provide foundational knowledge about media economics and rights valuation through interactive exploration (supports WLO 2.1, 2.2, 2.3)
 
 ⭐ **V3 REDESIGN - INTERACTIVE-FIRST**: This module has been redesigned from passive reading (6-7 pages, 15-18 min) to active learning (12 micro-elements with 4 widgets, 12-15 min total, 60% active engagement).
 
@@ -406,7 +406,7 @@ Create 5 numbered items:
 
 ### ⚙ Interactive Activity: Audience Size Calculator
 
-**Practice: MLO 2.1 (Explore media rights valuation)**
+**Practice: WLO 2.1 (Explore media rights valuation)**
 
 You've learned that media rights represent 40-60% of league revenue—but what actually determines how much a league can charge for its rights? The answer starts with audience size and demographics.
 
@@ -420,7 +420,7 @@ In this interactive activity, you'll calculate the estimated media rights value 
 - That rights valuation is formula-driven, not arbitrary—you can calculate it yourself
 
 **Time commitment:** 4-5 minutes
-**Learning outcomes practiced:** MLO 2.1 (Explore media rights valuation frameworks)
+**Learning outcomes practiced:** WLO 2.1 (Explore media rights valuation frameworks)
 
 ---
 
@@ -449,7 +449,7 @@ In this interactive activity, you'll calculate the estimated media rights value 
 - **MLS:** 300K avg viewers, 408 games → **$250M/year**
 
 **Learning Objectives:**
-- MLO 2.1: Understand audience size as primary valuation driver
+- WLO 2.1: Understand audience size as primary valuation driver
 - Recognize "total eyeballs" matters more than per-game ratings
 - Calculate simple rights valuations using audience metrics
 
@@ -534,7 +534,7 @@ When Amazon entered NFL rights bidding (2021), traditional networks had to raise
 
 ### ⚙ Interactive Activity: Exclusivity Bidding Simulator
 
-**Practice: MLO 2.1 (Explore media rights valuation and deal structures)**
+**Practice: WLO 2.1 (Explore media rights valuation and deal structures)**
 
 You've calculated what drives rights valuation—now experience the strategic decision leagues face when multiple bidders compete for exclusive rights.
 
@@ -548,7 +548,7 @@ In this simulation, you're the NHL commissioner in 2025 facing three bidders for
 - Why leagues sometimes choose lower bids for strategic reasons (accessibility, partner reliability)
 
 **Time commitment:** 5-6 minutes
-**Learning outcomes practiced:** MLO 2.1 (Explore media rights valuation and competitive dynamics)
+**Learning outcomes practiced:** WLO 2.1 (Explore media rights valuation and competitive dynamics)
 
 ---
 
@@ -570,7 +570,7 @@ In this simulation, you're the NHL commissioner in 2025 facing three bidders for
    - **Split Package ($1.15B/year):** Pros: 64% higher revenue, better accessibility. Cons: Complex coordination, potential conflicts
 
 **Learning Objectives:**
-- MLO 2.1: Understand exclusivity premium
+- WLO 2.1: Understand exclusivity premium
 - Experience competitive bidding dynamics
 - Recognize trade-offs: Highest bidder vs. accessibility vs. total revenue
 
@@ -685,7 +685,7 @@ Traditional linear broadcasting and direct-to-consumer streaming have **fundamen
 
 ### ⚙ Interactive Activity: Platform Economics Visualizer
 
-**Practice: MLO 2.2 (Compare linear broadcasting to streaming/DTC models)**
+**Practice: WLO 2.2 (Compare linear broadcasting to streaming/DTC models)**
 
 You've learned that linear TV and streaming platforms operate on fundamentally different economics. But what does that actually mean for profitability? Why do streaming platforms lose money for years while traditional broadcasters either profit immediately or never break even?
 
@@ -699,7 +699,7 @@ In this interactive activity, you'll toggle between Linear TV and Streaming/DTC 
 - The mathematics behind Rogers' $1.5B loss on the NHL deal (subscriber decline killed them)
 
 **Time commitment:** 6-7 minutes
-**Learning outcomes practiced:** MLO 2.2 (Compare linear vs. streaming economics and profitability models)
+**Learning outcomes practiced:** WLO 2.2 (Compare linear vs. streaming economics and profitability models)
 
 ---
 
@@ -724,7 +724,7 @@ In this interactive activity, you'll toggle between Linear TV and Streaming/DTC 
 - **Apple TV+ MLS (Streaming):** $250M rights, 0 → 2M subs, profitable Year 5 IF targets met
 
 **Learning Objectives:**
-- MLO 2.2: Compare linear vs. streaming profitability through manipulation
+- WLO 2.2: Compare linear vs. streaming profitability through manipulation
 - Understand why streaming "loses money for years"
 - Recognize cord-cutting impact on linear TV
 - Appreciate why tech giants can "overpay" (LTV thinking)
@@ -811,7 +811,7 @@ Platforms that drive engagement (interactive features, fantasy integration, bett
 
 ### ⚙ Interactive Activity: Engagement Value Chain Builder
 
-**Practice: MLO 2.3 (Understand fan engagement monetization strategies)**
+**Practice: WLO 2.3 (Understand fan engagement monetization strategies)**
 
 You've explored how platforms make money from media rights. But passive viewing generates only $5-15 per fan per year. The real value comes from ENGAGEMENT—converting passive viewers into active participants who bet, play fantasy, subscribe to exclusive content, and interact with team apps.
 
@@ -825,7 +825,7 @@ In this interactive activity, you'll construct an engagement strategy by selecti
 - The mathematics of converting 10% of your audience to "super-fans" worth $300-500 each
 
 **Time commitment:** 5-6 minutes
-**Learning outcomes practiced:** MLO 2.3 (Understand fan engagement monetization beyond passive viewing)
+**Learning outcomes practiced:** WLO 2.3 (Understand fan engagement monetization beyond passive viewing)
 
 ---
 
@@ -854,7 +854,7 @@ In this interactive activity, you'll construct an engagement strategy by selecti
 - **Premier League + Social:** International fan value $5 → $18/year
 
 **Learning Objectives:**
-- MLO 2.3: Understand how engagement extends monetization beyond passive viewing
+- WLO 2.3: Understand how engagement extends monetization beyond passive viewing
 - Evaluate trade-offs: High-cost/high-value vs. low-cost/broad-reach
 - Understand why platforms with engagement capabilities pay more for rights
 
@@ -929,7 +929,7 @@ This is not graded—it confirms you're ready for the interactive simulation. Yo
 - **Discovery learning:** Students find patterns and trade-offs themselves (more memorable than being told)
 - **Progressive complexity:** Simple calculator (Widget 1) → Complex simulation (Widget 3)
 - **Real-world data:** NFL $110B, NHL $5.2B, MLS $250M examples ground learning in authenticity
-- **Supports all MLOs:** 2.1 (valuation via Widgets 1-2), 2.2 (platforms via Widget 3), 2.3 (engagement via Widget 4)
+- **Supports all WLOs:** 2.1 (valuation via Widgets 1-2), 2.2 (platforms via Widget 3), 2.3 (engagement via Widget 4)
 
 ---
 
@@ -1017,7 +1017,7 @@ Ready to build your streaming empire? Let's compete!
 ---
 
 ## MODULE 4: Interactive Activity - Streaming Wars Strategy
-**Purpose:** Active learning - simulate platform strategy decisions (supports MLO 2.2 - Application/Analysis level)
+**Purpose:** Active learning - simulate platform strategy decisions (supports WLO 2.2 - Application/Analysis level)
 
 **Uplimit Structure:** Fourth module in Unit 2
 
@@ -1025,7 +1025,7 @@ Ready to build your streaming empire? Let's compete!
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Infobox (Callout)** ⬤ Required | Activity instructions and learning objectives | Type directly | Blue variant, clear task |
 | 2 | **iFrame** ◐ Recommended | Streaming Wars Strategy widget | Custom widget hosted | Interactive simulation |
-| 3 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to MLOs |
+| 3 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to WLOs |
 | 4 | **AI Chat Widget** ◐ Recommended | Your Strategy Coach for simulation decisions | Configure in Uplimit | Named: "Platform Strategy Assistant" |
 | 5 | **Details** ○ Optional | Hints and strategic considerations (optional) | Type directly | Accordion for struggling students |
 
@@ -1040,9 +1040,9 @@ build a profitable sports streaming service by acquiring rights, setting pricing
 and managing subscriber growth vs. content costs.
 
 Learning Objectives:
-• Apply MLO 2.2: Compare linear and streaming economics through simulation
-• Apply MLO 2.1: Make rights valuation decisions with budget constraints
-• Apply MLO 2.3: Balance content investment with fan engagement tactics
+• Apply WLO 2.2: Compare linear and streaming economics through simulation
+• Apply WLO 2.1: Make rights valuation decisions with budget constraints
+• Apply WLO 2.3: Balance content investment with fan engagement tactics
 
 Instructions:
 1. Choose sports properties to bid on (hockey, basketball, soccer, emerging sports)
@@ -1076,9 +1076,9 @@ Part of Week 2 Executive Session (40 min block)
 - **Learning:** Balance content investment vs. subscriber growth, understand 3-5 year payback timelines, experience streaming economics
 
 **Learning Objectives:**
-- MLO 2.2: Compare linear broadcasting economics to streaming/DTC profitability timelines
-- MLO 2.1: Make rights valuation decisions with budget constraints
-- MLO 2.3: Balance engagement tactics with content costs
+- WLO 2.2: Compare linear broadcasting economics to streaming/DTC profitability timelines
+- WLO 2.1: Make rights valuation decisions with budget constraints
+- WLO 2.3: Balance engagement tactics with content costs
 
 **Uplimit Implementation:**
 ```html
@@ -1164,12 +1164,12 @@ What is your differentiation? Why do subscribers choose YOU over competitors?
 
 **Design Rationale:**
 - **iFrame widget** provides experiential learning of complex economics (UDL engagement, Application level)
-- **Infobox** clearly frames task and connects to MLOs (QM clarity)
+- **Infobox** clearly frames task and connects to WLOs (QM clarity)
 - **Reflection prompt** encourages metacognition and case study preparation (transfer)
 - **AI Chat** offers adaptive support for struggling students (UDL scaffolding)
 - **Details** provides strategic frameworks without prescribing answers (progressive disclosure)
 - Multiple paths to profitability - no single "right" strategy (UDL choice)
-- Directly prepares students to evaluate Rogers deal critically (MLO 2.4)
+- Directly prepares students to evaluate Rogers deal critically (WLO 2.4)
 
 ---
 
@@ -1238,7 +1238,7 @@ When you craft your 5-year media strategy in Week 5, Module 4's simulation provi
 ---
 
 ## MODULE 5A: Rogers NHL Case Study - Deal Context (V3 INTERACTIVE-FIRST REDESIGN)
-**Purpose:** Understand the Rogers/NHL deal structure, terms, and strategic rationale (supports MLO 2.1, 2.4)
+**Purpose:** Understand the Rogers/NHL deal structure, terms, and strategic rationale (supports WLO 2.1, 2.4)
 
 ⭐ **V3 REDESIGN - INTERACTIVE-FIRST**: This module has been redesigned from passive case reading (10-12 pages, 25-30 min) to active case analysis split into TWO microlearning modules (5A + 5B, 23-25 min total, 65% active engagement).
 
@@ -1277,11 +1277,11 @@ Key Questions for Analysis:
 3. How did the deal perform vs. expectations? What went right and wrong?
 4. What should Rogers do in 2026 when the deal expires?
 
-This case addresses all Week 2 MLOs:
-• MLO 2.1: Rights valuation methodology
-• MLO 2.2: Platform strategy (linear Sportsnet + streaming)
-• MLO 2.3: Fan engagement and monetization tactics
-• MLO 2.4: Evaluation of mega-deal success/failure
+This case addresses all Week 2 WLOs:
+• WLO 2.1: Rights valuation methodology
+• WLO 2.2: Platform strategy (linear Sportsnet + streaming)
+• WLO 2.3: Fan engagement and monetization tactics
+• WLO 2.4: Evaluation of mega-deal success/failure
 ```
 
 ---
@@ -1316,7 +1316,7 @@ Copy the markdown below directly into Uplimit:
 
 ### ⚙ Interactive Activity: Rogers Deal Terms Explorer
 
-**Practice: MLO 2.4 (Evaluate the Rogers $5.2B NHL deal and its implications)**
+**Practice: WLO 2.4 (Evaluate the Rogers $5.2B NHL deal and its implications)**
 
 You've learned how media rights are valued and how platforms make money. Now analyze the most famous—and controversial—media rights deal in Canadian history: Rogers' $5.2 billion, 12-year exclusive NHL agreement. What exactly did $5.2 billion buy? Was it worth it?
 
@@ -1330,7 +1330,7 @@ In this interactive activity, you'll explore 5 tabs revealing what Rogers acquir
 - That the deal was 209% more expensive than the previous one—either Rogers overpaid or the NHL was vastly undervalued before
 
 **Time commitment:** 5-6 minutes
-**Learning outcomes practiced:** MLO 2.4 (Evaluate Rogers deal terms, projections, and strategic rationale)
+**Learning outcomes practiced:** WLO 2.4 (Evaluate Rogers deal terms, projections, and strategic rationale)
 
 ---
 
@@ -1389,8 +1389,8 @@ In this interactive activity, you'll explore 5 tabs revealing what Rogers acquir
 - **Justification:** Exclusivity premium + digital rights + inflation + NHL's growing Canadian fanbase
 
 **Learning Objectives:**
-- **MLO 2.4:** Understand comprehensive scope of rights deal (not just TV games)
-- **MLO 2.1:** Recognize valuation factors (exclusivity, platform flexibility, content volume)
+- **WLO 2.4:** Understand comprehensive scope of rights deal (not just TV games)
+- **WLO 2.1:** Recognize valuation factors (exclusivity, platform flexibility, content volume)
 - Appreciate why Rogers paid 3x more than previous deal (exclusivity + digital platforms)
 - Understand revenue projection assumptions (critical for later analysis when projections fail)
 
@@ -1536,7 +1536,7 @@ Rogers' optimistic projections collided with harsh market realities.
 
 ### ⚙ Interactive Activity: Projections vs. Actuals Visualizer
 
-**Practice: MLO 2.4 (Evaluate Rogers deal performance)**
+**Practice: WLO 2.4 (Evaluate Rogers deal performance)**
 
 Rogers projected break-even by Year 5 ($500M revenue). By Year 10, they were still losing $50-150M annually. But where exactly did the projections go wrong? And by how much?
 
@@ -1550,7 +1550,7 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
 - Rogers NEVER crossed the break-even line in 10 years—losses totaled ~$1.5B
 
 **Time commitment:** 7-8 minutes
-**Learning outcomes practiced:** MLO 2.4 (Evaluate mega-deal performance through variance analysis)
+**Learning outcomes practiced:** WLO 2.4 (Evaluate mega-deal performance through variance analysis)
 
 ---
 
@@ -1576,9 +1576,9 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
    - **Key Event:** What happened that year
 
 **Learning Objectives:**
-- **MLO 2.4:** Analyze where and why Rogers' projections failed
-- **MLO 2.2:** Understand streaming adoption challenges (target 1M subs, achieved 450K)
-- **MLO 2.1:** Recognize importance of scenario planning (COVID was unforeseeable, but contract had no flexibility)
+- **WLO 2.4:** Analyze where and why Rogers' projections failed
+- **WLO 2.2:** Understand streaming adoption challenges (target 1M subs, achieved 450K)
+- **WLO 2.1:** Recognize importance of scenario planning (COVID was unforeseeable, but contract had no flexibility)
 - Develop financial analysis skills (variance analysis, trend identification)
 
 **Accessibility:**
@@ -1631,7 +1631,7 @@ When you design your 5-year media strategy in Week 5, Module 5A's deal structure
 ---
 
 ## MODULE 5B: Rogers NHL Case Study - Performance Analysis (V3 INTERACTIVE-FIRST REDESIGN)
-**Purpose:** Analyze Rogers' performance failures, competitive landscape, and 2026 strategic decision (supports MLO 2.3, 2.4)
+**Purpose:** Analyze Rogers' performance failures, competitive landscape, and 2026 strategic decision (supports WLO 2.3, 2.4)
 
 **Uplimit Structure:** Sixth module in Unit 2 (Part B of 2-part case study)
 **Time:** ~13 minutes | Focus: Performance gaps, viewership trends, competitive analysis, strategic recommendation
@@ -1721,7 +1721,7 @@ Beyond financial projections, Rogers faced declining and fragmented audiences.
 
 ### ⚙ Interactive Activity: Viewership Trends Analyzer
 
-**Practice: MLO 2.3 (Understand fan engagement challenges) & MLO 2.4 (Analyze market dynamics)**
+**Practice: WLO 2.3 (Understand fan engagement challenges) & WLO 2.4 (Analyze market dynamics)**
 
 Rogers lost $1.5B on the NHL deal. But what were the underlying AUDIENCE trends driving those losses? Did viewership decline? Did younger fans stop watching? Did streaming adoption stall?
 
@@ -1735,7 +1735,7 @@ In this interactive activity, you'll explore 3 tabs of audience data: (1) Linear
 - Regional disparities: Toronto/Montreal strong, Vancouver/Calgary declining—not all Canadian markets equal
 
 **Time commitment:** 8-9 minutes
-**Learning outcomes practiced:** MLO 2.3 (Fan engagement patterns), MLO 2.4 (Market trend analysis)
+**Learning outcomes practiced:** WLO 2.3 (Fan engagement patterns), WLO 2.4 (Market trend analysis)
 
 ---
 
@@ -1750,8 +1750,8 @@ In this interactive activity, you'll explore 3 tabs of audience data: (1) Linear
    - **Tab 3: Demographic Breakdown** (Age, gender, regional trends)
 
 **Learning Objectives:**
-- **MLO 2.4:** Analyze viewership trends and identify market dynamics
-- **MLO 2.3:** Understand fan engagement challenges (younger demos not engaging with full games)
+- **WLO 2.4:** Analyze viewership trends and identify market dynamics
+- **WLO 2.3:** Understand fan engagement challenges (younger demos not engaging with full games)
 - Recognize importance of demographic trends for long-term rights valuation
 - Compare target vs. actual performance (gap analysis skill)
 
@@ -1851,7 +1851,7 @@ Rogers' NHL contract expires after the 2025-26 season. The company must decide i
 
 ### ⚙ CAPSTONE Activity: 2026 Decision Simulator
 
-**Synthesis: ALL 4 MLOs (2.1, 2.2, 2.3, 2.4) — This is your Week 2 capstone**
+**Synthesis: ALL 4 WLOs (2.1, 2.2, 2.3, 2.4) — This is your Week 2 capstone**
 
 The year is 2026. Rogers' $5.2 billion NHL contract expires. After losing $1.5 billion over 12 years, Rogers CEO asks you: "Should we renew? If so, at what price and on what terms? Or should we walk away?" There's no "right" answer—only defensible strategic recommendations supported by evidence.
 
@@ -1859,13 +1859,13 @@ This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll 
 
 **What this capstone tests:**
 
-- **MLO 2.1:** Can you value NHL rights in 2026 given changed market conditions? (Apply frameworks from Widgets 1-2)
-- **MLO 2.2:** Can you evaluate platform strategies (exclusive vs. split vs. exit)? (Apply economics from Widget 3)
-- **MLO 2.3:** Can you assess fan engagement opportunities (betting, apps, exclusive content)? (Apply insights from Widget 4)
-- **MLO 2.4:** Can you synthesize financial, competitive, and strategic factors into ONE coherent recommendation? (Demonstrate Bloom's Synthesis/Evaluation level)
+- **WLO 2.1:** Can you value NHL rights in 2026 given changed market conditions? (Apply frameworks from Widgets 1-2)
+- **WLO 2.2:** Can you evaluate platform strategies (exclusive vs. split vs. exit)? (Apply economics from Widget 3)
+- **WLO 2.3:** Can you assess fan engagement opportunities (betting, apps, exclusive content)? (Apply insights from Widget 4)
+- **WLO 2.4:** Can you synthesize financial, competitive, and strategic factors into ONE coherent recommendation? (Demonstrate Bloom's Synthesis/Evaluation level)
 
 **Time commitment:** 15-20 minutes (most complex widget, highest pedagogical value)
-**Learning outcomes synthesized:** ALL Week 2 MLOs (2.1, 2.2, 2.3, 2.4)
+**Learning outcomes synthesized:** ALL Week 2 WLOs (2.1, 2.2, 2.3, 2.4)
 
 **Note:** This is Week 2's capstone demonstration of mastery. Your recommendation will inform your Week 2 reflection memo.
 
@@ -1875,7 +1875,7 @@ This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll 
 
 **Widget Status:** ⭕ Phase 3 widget - NEEDS TO BE BUILT (12-15 hours estimated)
 
-**How It Works (CAPSTONE - Tests ALL Week 2 MLOs):**
+**How It Works (CAPSTONE - Tests ALL Week 2 WLOs):**
 
 **Phase 1: Set Your Assumptions**
 - Cord-cutting rate: 3-8%/year (slider)
@@ -1903,10 +1903,10 @@ This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll 
 - Export full analysis (assumptions + projections + recommendation) as PDF
 
 **Learning Objectives (CAPSTONE):**
-- **MLO 2.1:** Apply rights valuation framework to new deal terms
-- **MLO 2.2:** Compare platform strategies (exclusive streaming vs. split package vs. exit)
-- **MLO 2.3:** Evaluate fan engagement opportunities (betting integration, app features)
-- **MLO 2.4:** Make comprehensive strategic recommendation weighing financial, competitive, and market factors
+- **WLO 2.1:** Apply rights valuation framework to new deal terms
+- **WLO 2.2:** Compare platform strategies (exclusive streaming vs. split package vs. exit)
+- **WLO 2.3:** Evaluate fan engagement opportunities (betting integration, app features)
+- **WLO 2.4:** Make comprehensive strategic recommendation weighing financial, competitive, and market factors
 - **Bloom's Level:** SYNTHESIS/EVALUATION (highest level - create new solution + justify with evidence)
 
 **Accessibility:**
@@ -1998,7 +1998,7 @@ There is NO single right answer—this is a strategic judgment call with legitim
 - **Capstone widget:** Requires synthesis of ALL Week 2 concepts (rights valuation, platform economics, engagement, strategic evaluation)
 - **Multiple valid recommendations:** No single "right answer" - authentic business decision
 - **Progressive disclosure:** Optional full case in Details accordion AFTER interactive exploration
-- **Supports all MLOs:** 2.1 (valuation via Widget 5), 2.2 (platforms via Widget 6-7), 2.3 (engagement via trends analysis), 2.4 (evaluation via Widget 8 capstone)
+- **Supports all WLOs:** 2.1 (valuation via Widget 5), 2.2 (platforms via Widget 6-7), 2.3 (engagement via trends analysis), 2.4 (evaluation via Widget 8 capstone)
 
 ---
 
@@ -2104,7 +2104,7 @@ When you craft your 5-year strategic vision in Week 5, Module 5B's failure analy
 ---
 
 ## MODULE 6: Assessment - Mini-Case Memo
-**Purpose:** Assess student understanding of Week 2 content (measures MLO 2.1, 2.2, 2.3, 2.4)
+**Purpose:** Assess student understanding of Week 2 content (measures WLO 2.1, 2.2, 2.3, 2.4)
 
 ⭐ **SCAFFOLDED ASSESSMENT**: This module breaks memo writing into 3 micro-steps with AI feedback BEFORE final submission. Reduces writing anxiety and improves quality through iterative improvement.
 
@@ -2163,7 +2163,7 @@ You are a consultant hired by Rogers Communications in 2024 to assess the NHL de
 • Due: [Date] by 11:59 PM
 
 **Total Points:** 55 points (15 micro-steps + 40 final memo)
-**MLOs Assessed:** 2.1, 2.2, 2.3, 2.4
+**WLOs Assessed:** 2.1, 2.2, 2.3, 2.4
 ```
 
 ---
@@ -2203,9 +2203,9 @@ MICRO-STEP 2: Evaluate the Deal
 Write 1 paragraph (100-150 words) evaluating whether Rogers' $5.2B investment was justified.
 
 Apply Week 2 frameworks:
-• Media rights valuation framework (MLO 2.1): Did Rogers properly value audience size, exclusivity, platform flexibility?
-• Platform economics (MLO 2.2): Did the linear TV + streaming strategy make sense?
-• Fan engagement (MLO 2.3): Did Rogers effectively monetize beyond rights fees?
+• Media rights valuation framework (WLO 2.1): Did Rogers properly value audience size, exclusivity, platform flexibility?
+• Platform economics (WLO 2.2): Did the linear TV + streaming strategy make sense?
+• Fan engagement (WLO 2.3): Did Rogers effectively monetize beyond rights fees?
 
 Was the deal justified given Rogers' strategic goals (defend cable, build Sportsnet brand, enter streaming)?
 ```
@@ -2473,7 +2473,7 @@ but may lack depth or miss less obvious strategic errors."
 - **AI Chat Coach** serves as your thinking partner during case analysis—use it to test your arguments, clarify framework application, or structure your reasoning (UDL scaffolding + active learning)
 - Authentic consulting task (executive memo format) mirrors real-world practice
 - Word limit ensures concision and prioritization (executive communication skill)
-- Measures all 4 MLOs comprehensively in integrated assessment
+- Measures all 4 WLOs comprehensively in integrated assessment
 
 ---
 
@@ -2891,16 +2891,16 @@ are great for crowdsourcing ideas from other teams.
 
 ## Learning Outcome Alignment Map
 
-Verify that every element serves the MLOs:
+Verify that every element serves the WLOs:
 
-| **MLO** | **Bloom's Level** | **Supporting Elements** | **Assessment** |
+| **WLO** | **Bloom's Level** | **Supporting Elements** | **Assessment** |
 |---------|------------------|------------------------|---------------|
-| **MLO 2.1:** Explore media rights valuation | Knowledge/<br>Comprehension | • Text (valuation framework)<br>• Vertical List (5 drivers)<br>• Video (executive session Part 1)<br>• Case (Rogers valuation assumptions) | Mini-Case Memo (evaluate Rogers' valuation methodology)<br><br>Simulation (make rights acquisition decisions) |
-| **MLO 2.2:** Compare linear vs. streaming | Analysis | • Text (platform economics)<br>• Table (linear vs. DTC comparison)<br>• Video (executive session Part 1)<br>• iFrame (Streaming Wars simulation)<br>• Case (Rogers' platform strategy) | Mini-Case Memo (platform strategy recommendation)<br><br>Simulation (achieve streaming profitability) |
-| **MLO 2.3:** Understand fan engagement monetization | Comprehension | • Text (fan engagement section)<br>• Image (value chain diagram)<br>• Video (executive session Part 2)<br>• Case (Rogers' engagement tactics) | Mini-Case Memo (engagement strategy analysis)<br><br>Simulation (engagement investment decisions) |
-| **MLO 2.4:** Evaluate Rogers NHL deal | Evaluation | • Text (full case narrative)<br>• Table (deal summary)<br>• Details (3 exhibits with financial/viewership data)<br>• Video (10-year retrospective)<br>• Video (executive session Part 3) | Mini-Case Memo (overall deal evaluation + recommendations) |
+| **WLO 2.1:** Explore media rights valuation | Knowledge/<br>Comprehension | • Text (valuation framework)<br>• Vertical List (5 drivers)<br>• Video (executive session Part 1)<br>• Case (Rogers valuation assumptions) | Mini-Case Memo (evaluate Rogers' valuation methodology)<br><br>Simulation (make rights acquisition decisions) |
+| **WLO 2.2:** Compare linear vs. streaming | Analysis | • Text (platform economics)<br>• Table (linear vs. DTC comparison)<br>• Video (executive session Part 1)<br>• iFrame (Streaming Wars simulation)<br>• Case (Rogers' platform strategy) | Mini-Case Memo (platform strategy recommendation)<br><br>Simulation (achieve streaming profitability) |
+| **WLO 2.3:** Understand fan engagement monetization | Comprehension | • Text (fan engagement section)<br>• Image (value chain diagram)<br>• Video (executive session Part 2)<br>• Case (Rogers' engagement tactics) | Mini-Case Memo (engagement strategy analysis)<br><br>Simulation (engagement investment decisions) |
+| **WLO 2.4:** Evaluate Rogers NHL deal | Evaluation | • Text (full case narrative)<br>• Table (deal summary)<br>• Details (3 exhibits with financial/viewership data)<br>• Video (10-year retrospective)<br>• Video (executive session Part 3) | Mini-Case Memo (overall deal evaluation + recommendations) |
 
-**Alignment Check:** ✅ All MLOs supported by multiple elements and measured comprehensively by assessment
+**Alignment Check:** ✅ All WLOs supported by multiple elements and measured comprehensively by assessment
 
 ---
 

@@ -1,4 +1,6 @@
 ## MODULE 1: Welcome & Learning Objectives (BOPPPS: Outcomes)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+
 **Purpose:** Orient students to Week 5, establish learning expectations for the capstone week
 **Estimated Time:** 5-7 minutes
 
@@ -11,20 +13,32 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **ⓘ Infobox (Callout)** ⬤ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
+| 1 | **ⓘ Infobox (Callout)** ⬤ Required | Display all 4 WLOs + week overview | Type directly in Uplimit | Blue variant, icon: target ◉ |
 | 2 | **▬ Text** ⬤ Required | Week 5 introduction (3 paragraphs) | Embedded below | Sets context for legacy, culture & future |
 | 3 | **◫ Tiles** ◐ Recommended | 4 strategic focus areas | Type directly in Uplimit | Blue variant, one tile per focus area |
-| 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-1.html` | Shows how module outcomes connect to course goals |
+| 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-week.html` | Shows how week outcomes connect to course goals |
+
+---
+
+### 💼 Project Preview: Week 5 = Your Final Strategic Vision
+
+This is it. Week 5 is where you synthesize everything you've learned into your **capstone deliverable**: a 5-year Strategic Vision Memo for a sports property of your choice.
+
+You've built the foundations: revenue ecosystem analysis (Week 1), media rights expertise (Week 2), sponsorship and betting strategies (Week 3), and athlete/emerging sports insights (Week 4). Now you'll integrate these frameworks to answer the ultimate question: *"Where should this property be in five years, and how will it get there?"*
+
+Your Strategic Vision Memo isn't an academic exercise—it's the kind of document real sports executives present to boards, investors, and ownership groups.
+
+---
 
 ### Element 1: Infobox Content
 
 Title: ◉ Week 5 Learning Objectives
 
 By the end of this week, you will be able to:
-• MLO 5.1: Evaluate how heritage assets and brand history create sustainable competitive advantage
-• MLO 5.2: Evaluate the tension between tradition and innovation in sports organizational strategy
-• MLO 5.3: Assess emerging trends (women's sports growth, technology integration, sustainability) and their business impact
-• MLO 5.4: Develop a 5-year strategic vision that balances heritage preservation with market evolution
+• WLO 5.1: Evaluate how heritage assets and brand history create sustainable competitive advantage
+• WLO 5.2: Evaluate the tension between tradition and innovation in sports organizational strategy
+• WLO 5.3: Assess emerging trends (women's sports growth, technology integration, sustainability) and their business impact
+• WLO 5.4: Develop a 5-year strategic vision that balances heritage preservation with market evolution
 
 This week focuses on CLO 5: Integrating Legacy and Future Growth
 
@@ -32,6 +46,14 @@ This week focuses on CLO 5: Integrating Legacy and Future Growth
 ### Element 2: Text Content
 
 The Final Frontier: Where Legacy Meets the Future
+
+**Connecting to Weeks 1-4:** Over the past four weeks, you've built a comprehensive framework for sports business:
+- **Week 1:** Five revenue streams (media 40-60%, ticketing 20-30%, sponsorship 15-25%, merchandise 5-10%, betting 2-8%) and ecosystem thinking—understanding how these streams interconnect
+- **Week 2:** Media rights valuation using CPM, dynamic pricing, and the fan engagement value chain (passive → engaged → super-fan)
+- **Week 3:** Sponsorship ROI calculation, the 2-3× activation rule, and CAC/LTV benchmarks from FanDuel ($400 CAC, 8:1 LTV ratio)
+- **Week 4:** Athlete brand portfolios, equity vs. fees decision-making, and women's sports investment thesis
+
+This week, you'll apply ALL of these frameworks to **heritage properties**—organizations where the past has economic value and authenticity is the primary asset.
 
 Throughout this course, you've explored the business mechanisms that power professional sport—
 from revenue streams to media rights, sponsorships to athlete brands. This week, we bring
@@ -99,29 +121,3 @@ for sustainable growth. Their insights will frame everything you learn this week
 
 Ready to hear from leaders who balance tradition with transformation? Let's go!
 
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 1 Supports Your Final Strategic Vision:**
-
-Module 1 established the four learning outcomes that define Week 5's capstone challenge. This clarity of purpose directly supports your Strategic Vision Memo—the culminating deliverable that integrates all five weeks of learning.
-
-**What You Learned:**
-- Heritage properties face unique strategic tension: tradition creates competitive advantage but can also constrain innovation
-- The four dimensions of heritage strategy: heritage assets, tradition vs. innovation balance, emerging trends, and strategic vision development
-- Successful sports properties don't choose between legacy OR growth—they orchestrate both
-- Week 5 synthesizes all previous weeks: revenue streams (Week 1), media strategy (Week 2), sponsorship ROI (Week 3), and athlete branding (Week 4) all apply within heritage context
-
-**How to Apply This to Your Final Project:**
-
-When you craft your Strategic Vision Memo in Module 6, Module 1's frameworks provide your strategic foundation:
-
-- **Heritage as Asset Section:** Reference MLO 5.1 to explain how your property's history creates competitive advantage. Cite specific heritage elements (championships, legendary players, iconic venue, cultural significance) and quantify their economic value through fan loyalty metrics.
-- **Innovation Tension Section:** Acknowledge the strategic tension from MLO 5.2. Your vision must explicitly address: "How will we innovate without abandoning what makes us authentic?" Show you understand this isn't a compromise—it's strategic integration.
-- **Future Trends Analysis:** Apply MLO 5.3 by forecasting which emerging trends (women's sports, AI/VR, sustainability, new demographics) create opportunities vs. threats for YOUR specific property. Don't just list trends—evaluate their strategic impact.
-- **5-Year Roadmap:** MLO 5.4 requires you to synthesize everything into an actionable plan. Your roadmap should integrate Weeks 1-5: revenue growth + media strategy + sponsorship activation + brand development + heritage preservation.
-
-**Real-World Application:** Your Strategic Vision Memo answers the same question every sports executive faces: "How do we honor the past while building the future?" Module 1 taught you that the most valuable answer acknowledges both forces and shows how they reinforce each other strategically.
-
----

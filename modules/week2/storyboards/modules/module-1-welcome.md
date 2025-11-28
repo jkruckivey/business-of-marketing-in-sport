@@ -1,15 +1,26 @@
 ## MODULE 1: Welcome & Learning Objectives
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+
 **Purpose:** Orient students to Week 2, establish learning expectations, connect to Week 1 revenue foundations
 
 **Uplimit Structure:** First module in Unit 2
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **Infobox (Callout)** ⬤ Required | Display all 4 MLOs + week overview | Type directly in Uplimit | Blue variant, icon: ◉ |
+| 1 | **Infobox (Callout)** ⬤ Required | Display all 4 WLOs + week overview | Type directly in Uplimit | Blue variant, icon: ◉ |
 | 2 | **Text** ⬤ Required | Week 2 introduction + connection to Week 1 (3 paragraphs) | Import from `week2-intro.docx` | Bridges revenue ecosystem → media focus |
 | 3 | **Tiles** ◐ Recommended | 3 media strategy topics (preview) | Type directly in Uplimit | Blue variant, one tile per topic |
-| 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-1.html` | Shows how module outcomes connect to course goals |
+| 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-week.html` | Shows how week outcomes connect to course goals |
 
+---
+
+### 💼 Project Preview: Week 2 → Final Strategic Vision
+
+This week's media rights expertise is essential for your **Week 5 capstone**. Your Strategic Vision Memo must include a media strategy that justifies platform choices (linear vs. streaming), projects content value, and explains how your property will monetize fan engagement.
+
+By understanding how mega-deals like Rogers' $5.2B NHL rights are valued and why they succeed or struggle, you'll be equipped to recommend realistic media partnerships and revenue projections for your chosen sports property.
+
+---
 
 **Detailed Content Specifications:**
 
@@ -24,16 +35,16 @@ Title: Week 2 Learning Objectives ◉
 
 By the end of this week, you will:
 
-**MLO 2.1: Explore how media rights deals are valued and monetized** (Bloom's: Understand)
-Explain the frameworks broadcasters and streaming platforms use to price sports content, including audience reach, exclusivity value, and subscription/advertising revenue potential.
+**WLO 2.1: Explain how media rights deals are valued and monetized** (Bloom's: Understand)
+Describe the frameworks broadcasters and streaming platforms use to price sports content, including audience reach, exclusivity value, and subscription/advertising revenue potential.
 
-**MLO 2.2: Compare linear broadcasting to streaming/DTC models** (Bloom's: Analyze)
+**WLO 2.2: Compare linear broadcasting to streaming/DTC models** (Bloom's: Analyze)
 Contrast traditional broadcasting economics (advertising-driven, mass audience) with direct-to-consumer streaming models (subscription-driven, targeted engagement) and assess trade-offs for leagues and media companies.
 
-**MLO 2.3: Understand fan engagement monetization strategies** (Bloom's: Understand)
-Describe how platforms extend value beyond passive viewing through interactive features, betting integration, social engagement, and multi-platform distribution to maximize advertising, subscription, and sponsorship revenue.
+**WLO 2.3: Describe fan engagement monetization strategies** (Bloom's: Understand)
+Identify how platforms extend value beyond passive viewing through interactive features, betting integration, social engagement, and multi-platform distribution to maximize advertising, subscription, and sponsorship revenue.
 
-**MLO 2.4: Evaluate the Rogers $5.2B NHL deal and its implications** (Bloom's: Evaluate)
+**WLO 2.4: Evaluate the Rogers $5.2B NHL deal and its implications** (Bloom's: Evaluate)
 Analyze Rogers Communications' 12-year NHL rights acquisition, assess its strategic outcomes, and determine lessons for future media rights negotiations in the streaming era.
 
 **This week focuses on CLO 2: Evaluating Media & Fan Monetization**
@@ -75,29 +86,29 @@ Create 3 tiles (1x3 or 2x2 grid with one empty):
 
 ### Element 4: Learning Outcomes Widget
 
-**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
+**Widget Purpose:** Interactive visualization showing how Week 2's learning outcomes connect to course-level goals
 
 **Uplimit Implementation:**
 
-**Widget File:** `learning-outcomes-module-1.html`
+**Widget File:** `learning-outcomes-week.html`
 
 **Embed Code:**
 ```html
 <iframe
-  src="../../widgets/learning-outcomes-module-1.html"
+  src="../../widgets/learning-outcomes-week.html"
   width="100%"
   height="600"
   style="border: none; border-radius: 8px;"
-  title="Learning Outcomes - Module 1"
-  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
+  title="Week 2 Learning Outcomes"
+  aria-label="Interactive widget showing Week 2 learning outcomes and their connection to course goals"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
 **Widget Features:**
-- Click any module outcome to see which course-level outcomes it contributes to
-- Interactive highlighting shows connections between module and course goals
+- Click any week outcome (WLO 2.1-2.4) to see which course-level outcomes it contributes to
+- Interactive highlighting shows connections between week and course goals
 - WCAG 2.2 AA compliant with keyboard navigation and screen reader support
 
 **Design Rationale:**
@@ -105,29 +116,6 @@ Create 3 tiles (1x3 or 2x2 grid with one empty):
 - **Text** bridges Week 1 concepts and sets Week 2 context (scaffolding, UDL representation)
 - **Tiles** preview three core themes for visual organization (UDL engagement)
 - Connection to Week 1 revenue streams creates continuity
-
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 1 Supports Your Final Strategic Vision:**
-
-Module 1 established that media rights (40-60% of revenue) are the foundation of modern sports economics. This focus prepares you to analyze media strategy in your Week 5 capstone.
-
-**What You Learned:**
-- Media rights are the largest and most strategically complex revenue stream
-- Sports content is the last "appointment viewing" commanding premium valuations
-- Week 2 dives deep into rights valuation, linear vs. streaming trade-offs, and fan monetization
-
-**How to Apply This to Your Final Project:**
-
-When you craft your 5-year strategic vision in Week 5, Module 1's media focus shapes your revenue projections:
-
-- **Media Rights Strategy Section:** Your capstone must explain how your property will monetize content. Will you pursue traditional linear deals (guaranteed revenue, broad reach) or DTC streaming (potential upside, direct fan relationships)? Module 1 introduced these trade-offs.
-- **Revenue Weighting:** If media rights represent 40-60% of sports revenue, your property's media strategy demands the most sophisticated analysis in your vision. Module 1 signals where to invest analytical depth.
-- **Market Context:** Use Week 2's frameworks to justify your media approach. Example: "Given declining linear viewership but sports' premium positioning as live content, our property will pursue a hybrid model—linear for reach, streaming for engagement."
-
-**Real-World Application:** The Rogers/NHL $5.2B deal you'll analyze this week mirrors the decisions facing YOUR chosen property. Week 2 teaches you how executives evaluate billion-dollar media strategies.
 
 ---
 

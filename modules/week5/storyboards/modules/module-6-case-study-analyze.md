@@ -1,20 +1,20 @@
-## MODULE 5B: Case Study - Hockey Hall of Fame (Part 2: Analysis & Decision) (BOPPPS: Participatory - Case Analysis)
+## MODULE 6: Case Study - Hockey Hall of Fame (Part 2: Analysis & Decision) (BOPPPS: Participatory - Case Analysis)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Analyze HHOF strategic options, evaluate trade-offs, and defend strategic recommendation
 
-**Uplimit Structure:** Sixth module in Unit 5 (Week 5)
+**Uplimit Structure:** Sixth module in Unit 5 (Week 5) - Case Analysis
 
 **Time Estimate:** 60-70 minutes (case analysis + exhibits + discussion + AI roleplay)
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 5A | Type directly | Transitions from reading to analysis |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 5 | Type directly | Transitions from reading to analysis |
 | 2 | **▬ Text** ⬤ Required | Case Parts 3-5 (Strategic Dilemma, Constraints, Implications) | Embedded below | Completes case narrative with analysis sections |
 | 3 | **⟱ Details** ⬤ Required | Exhibit B: Digital Transformation Options - Financial Projections | Type or upload PDF | Accordion - detailed financial modeling for 3 scenarios |
 | 4 | **⟱ Details** ◐ Recommended | Exhibit C: Stakeholder Perspectives (Board, Staff, Donors, Fans) | Type directly | Accordion - qualitative input from HHOF ecosystem |
-| 5 | **▬ Text** ◐ Recommended | Case Discussion Questions (Guide for Analysis) | Type directly | Structured prompts connecting to MLOs 5.1-5.4 |
+| 5 | **▬ Text** ◐ Recommended | Case Discussion Questions (Guide for Analysis) | Type directly | Structured prompts connecting to WLOs 5.1-5.4 |
 | 6 | **◈ AI Chat Widget (Roleplay)** ◐ Recommended | HHOF Board of Governors Meeting | Configure in Uplimit | Defend strategic recommendation to board |
-| 7 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-5.html` | Shows how module outcomes connect to course goals |
 
 **Content Priority Badges:**
 - ⬤ **Required** - Core content essential for learning outcomes and assessments
@@ -25,17 +25,20 @@
 
 ## Element 1: Connecting Introduction Text
 
+**Title:** From Reading to Strategic Analysis
+
 **Copy this markdown directly into Uplimit:**
 
+## From Reading to Strategic Analysis
 
-You've read the Hockey Hall of Fame case (Module 5A) and understand the strategic situation. You know HHOF's heritage strengths, attendance challenges, and three transformation scenarios:
+You've read the Hockey Hall of Fame case (Module 5) and understand the strategic situation. You know HHOF's heritage strengths, attendance challenges, and three transformation scenarios:
 - **PRESERVE:** +17% growth, low risk, misses board target
 - **TRANSFORM:** +135% growth, high risk, achieves $42.6M revenue but threatens authenticity
 - **HYBRID:** +94% growth, moderate risk, hits $35M target with heritage preservation
 
 Now it's time to analyze. Which scenario should HHOF choose? What are the real trade-offs? How do stakeholders respond? What constraints limit execution?
 
-**Module 5B Focus: Analysis & Decision**
+**Module 6 Focus: Analysis & Decision**
 
 In this module, you'll complete your case analysis:
 - **Part 3:** The Strategic Dilemma (explicit trade-off comparison across scenarios)
@@ -43,7 +46,7 @@ In this module, you'll complete your case analysis:
 - **Part 5:** Implications for the Future (10-15 year scenarios for each path)
 - **Exhibit B:** Detailed financial projections (NPV, break-even, risk scenarios)
 - **Exhibit C:** Stakeholder perspectives (curators, donors, board, fans)
-- **Discussion Questions:** Guided analysis using MLOs 5.1-5.4
+- **Discussion Questions:** Guided analysis using WLOs 5.1-5.4
 - **AI Roleplay:** Defend your recommendation to HHOF Board of Governors
 
 **Your Task:** Analyze the case systematically, evaluate all three scenarios, and defend a strategic recommendation. Use frameworks from Modules 3-4 (Legacy vs Innovation Matrix, stakeholder analysis) to structure your thinking.
@@ -497,9 +500,9 @@ Transform's international revenue projections ($8.2M annually from 3 simultaneou
 
 ## Element 8: Case Discussion Questions
 
-### Questions for Analysis (Aligned to MLOs 5.1-5.4)
+### Questions for Analysis (Aligned to WLOs 5.1-5.4)
 
-**MLO 5.1: Evaluate heritage properties as revenue assets**
+**WLO 5.1: Evaluate heritage properties as revenue assets**
 
 1. What financial data reveals HHOF's fundamental challenge? Which revenue streams are growth drivers, and which are declining? How does HHOF's revenue model differ from for-profit entertainment venues?
 
@@ -509,7 +512,7 @@ Transform's international revenue projections ($8.2M annually from 3 simultaneou
 
 ---
 
-**MLO 5.2: Design strategies balancing tradition preservation with innovation**
+**WLO 5.2: Design strategies balancing tradition preservation with innovation**
 
 4. What stakeholder interests create tension in the Transform scenario? Identify at least three groups who would be dissatisfied with aggressive digital transformation. What would you lose if they withdrew support?
 
@@ -519,7 +522,7 @@ Transform's international revenue projections ($8.2M annually from 3 simultaneou
 
 ---
 
-**MLO 5.3: Assess future trends impacting heritage sports properties**
+**WLO 5.3: Assess future trends impacting heritage sports properties**
 
 7. What long-term trends (5-10 year view) favor each scenario? Consider: younger audience preferences, digital entertainment evolution, international tourism recovery, sports media consolidation.
 
@@ -529,7 +532,7 @@ Transform's international revenue projections ($8.2M annually from 3 simultaneou
 
 ---
 
-**MLO 5.4: Create 5-year strategic vision integrating Week 1-5 frameworks**
+**WLO 5.4: Create 5-year strategic vision integrating Week 1-5 frameworks**
 
 10. **Integration Question:** Using frameworks from all 5 weeks, build a 5-year strategic recommendation for HHOF:
     - **Week 1:** How do HHOF's revenue streams (admissions, events, retail, sponsorship) shift in your chosen scenario?
@@ -563,7 +566,7 @@ Choose: **"Add objective myself"**
 Copy this into the **Objective** field:
 
 
-Students will present a strategic recommendation for Hockey Hall of Fame's 5-year vision by analyzing heritage property revenue models, evaluating stakeholder perspectives, and defending their chosen strategy (Preserve/Transform/Hybrid) with reference to case data and competitive benchmarks. (MLOs 5.1-5.4 - Evaluation & Synthesis level)
+Students will present a strategic recommendation for Hockey Hall of Fame's 5-year vision by analyzing heritage property revenue models, evaluating stakeholder perspectives, and defending their chosen strategy (Preserve/Transform/Hybrid) with reference to case data and competitive benchmarks. (WLOs 5.1-5.4 - Evaluation & Synthesis level)
 
 
 **Step 3: Create Scenario**
@@ -822,9 +825,9 @@ You've examined a real heritage sports institution facing the classic strategic 
 - Financial realism matters: Transform's aggressive growth requires $10M external financing with significant debt service burden
 - The Hybrid model isn't compromise for weakness—it's strategic discipline about which innovations enhance vs. compromise heritage mission
 
-**Up Next: Module 6 - Your Assessment**
+**Up Next: Module 7 - Your Assessment**
 
-You've learned the frameworks (Module 3), applied them strategically (Module 4), and analyzed real cases (Module 5). Now it's time for your final assessment: a 5-year strategic vision memo that integrates everything you've learned across all 5 weeks. In Module 6, you'll choose your own sports property and create a comprehensive strategic plan—synthesizing revenue streams, media strategy, sponsorship models, athlete branding, and heritage/innovation considerations.
+You've learned the frameworks (Module 3), applied them strategically (Module 4), and analyzed real cases (Modules 5-6). Now it's time for your final assessment: a 5-year strategic vision memo that integrates everything you've learned across all 5 weeks. In Module 7, you'll choose your own sports property and create a comprehensive strategic plan—synthesizing revenue streams, media strategy, sponsorship models, athlete branding, and heritage/innovation considerations.
 
 Ready to synthesize 5 weeks into one strategic vision? Let's create your masterpiece!
 
@@ -840,7 +843,7 @@ Ready to synthesize 5 weeks into one strategic vision? Let's create your masterp
 
 **Infobox:**
 - ✅ Sufficient color contrast (Uplimit blue callout)
-- ✅ Semantic structure (context, questions, alignment to MLOs)
+- ✅ Semantic structure (context, questions, alignment to WLOs)
 
 **Case Study Text (Element 3):**
 - ✅ Proper heading hierarchy (H2 → H3, no skipped levels)
@@ -861,7 +864,7 @@ Ready to synthesize 5 weeks into one strategic vision? Let's create your masterp
 
 **Discussion Questions:**
 - ✅ Clear, specific language
-- ✅ Organized by MLO level (5.1 → 5.4)
+- ✅ Organized by WLO level (5.1 → 5.4)
 - ✅ Progressive complexity (comprehension → evaluation)
 
 **AI Chat Widget (Roleplay):**
@@ -896,43 +899,16 @@ Ready to synthesize 5 weeks into one strategic vision? Let's create your masterp
 **Total Content Generated:** ~18,000 words (case + exhibits + instructions)
 
 **Quality Validation:**
-- ✅ Aligns to MLOs 5.1-5.4 (evaluation & synthesis level)
+- ✅ Aligns to WLOs 5.1-5.4 (evaluation & synthesis level)
 - ✅ Authentic case complexity (real strategic dilemmas, no perfect solutions)
 - ✅ WCAG 2.2 AA compliant structure
 - ✅ Integrated with Week 5 frameworks (Legacy vs Innovation Matrix, Heritage Property Analyzer, Future Trends Simulator)
 - ✅ Stakeholder-grounded (real perspectives from curators, donors, board, staff)
 - ✅ Financially rigorous (exhibits include capital requirements, margin analysis, debt impact)
 
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 5 Supports Your Final Strategic Vision:**
-
-Module 5 presented a comprehensive real-world case study of the Hockey Hall of Fame facing authentic heritage transformation challenges. This case analysis directly models the strategic thinking process your Strategic Vision Memo requires.
-
-**What You Learned:**
-- Heritage properties face tangible financial pressure: HHOF's flat $18M revenue over 5 years, declining attendance (down 8%), and increasing competition from digital alternatives create urgency for strategic change
-- Three distinct transformation pathways exist: Conservative Digital Integration (modest growth, low risk), Moderate Transformation (balanced approach), and Aggressive Innovation (high growth, authenticity risk)
-- Financial analysis reveals trade-offs: Aggressive digital strategy projects $28M revenue by Year 5 but requires $12M upfront investment and risks alienating 30% of traditional visitors
-- Stakeholder perspectives constrain strategy: Curators prioritize preservation, donors demand fiscal responsibility, board members want growth, fans expect authenticity—no strategy satisfies everyone
-- Real heritage properties use specific decision frameworks: NPV analysis, brand equity impact assessment, stakeholder acceptance scoring, and cultural risk mitigation planning
-
-**How to Apply This to Your Final Project:**
-
-When you build your Strategic Vision Memo in Module 6, Module 5's case methodology provides your analytical structure:
-
-- **Financial Projections Section:** Follow HHOF case format. Don't just claim "revenue will grow 20%"—show 5-year revenue projections by stream (admissions, events, sponsorship, digital, retail), explain growth assumptions, and calculate capital requirements. Reference Module 5's Exhibit B financial modeling approach.
-- **Strategic Options Analysis:** Present 2-3 distinct strategic pathways (like HHOF's Conservative/Moderate/Aggressive scenarios) showing different risk/return profiles. Explain why you're recommending ONE path over the others—don't avoid the choice.
-- **Stakeholder Impact Assessment:** Map how YOUR strategy affects different stakeholder groups. Example: "Traditional season ticket holders (15% of revenue) may resist dynamic pricing, but casual fans (45% of revenue) will benefit from increased accessibility." Quantify stakeholder trade-offs like HHOF case did.
-- **Implementation Roadmap:** HHOF case included 3-year phased rollout with milestones. Your Strategic Vision should show Year 1-5 roadmap with specific initiatives, capital deployment timeline, and success metrics at each phase.
-
-**Real-World Application:** The HHOF case wasn't hypothetical—these are real strategic choices facing actual heritage institutions. Your Strategic Vision Memo must demonstrate the same analytical rigor: data-driven projections, explicit trade-offs, stakeholder-aware recommendations, and implementation feasibility. Module 5 taught you that great strategy isn't about bold vision—it's about defensible logic backed by evidence.
-
----
 
 **Module 5 Status:** ✅ COMPLETE - Ready for Uplimit Build
 
 **Last Updated:** October 30, 2025
 **Version:** 1.0 (Comprehensive Case Study Build)
-**Next Step:** Build in Uplimit platform, then proceed to Module 6 (Assessment - Strategic Vision Memo)
+**Next Step:** Build in Uplimit platform, then proceed to Module 7 (Assessment - Strategic Vision Memo)

@@ -1,33 +1,37 @@
-## MODULE 6: Assessment - Strategic Vision Memo (BOPPPS: Post-Assessment)
-**Purpose:** Capstone assessment integrating all 5 weeks of learning (measures MLO 5.1-5.4 plus CLOs 1-5)
+## MODULE 7: Assessment - Strategic Vision Memo (BOPPPS: Post-Assessment)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
-**Uplimit Structure:** Sixth module in Unit 5
+**Purpose:** Capstone assessment integrating all 5 weeks of learning (measures WLO 5.1-5.4 plus CLOs 1-5)
+
+**Uplimit Structure:** Seventh module in Unit 5
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro + PAIRR overview | Type directly | Sets context for capstone + 105 pts total |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
-| 4 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, capstone focus |
-| 5 | **AI Roleplay** ◐ Recommended | Practice pitch to Board of Directors | Configure in Uplimit | Formative practice before writing |
-| 6 | **Text** ⬤ Required | Submission checklist and requirements | Type directly | Clear expectations for deliverable |
-| 7 | **Text Response** ⬤ Required | DRAFT Strategic Vision Memo submission | Configure in Uplimit | Submission only, no grading yet |
-| 8 | **Text** ◐ Recommended | **Phase 2A: Peer Feedback Instructions** | Type directly | How to provide effective peer feedback |
-| 9 | **Text** ◐ Recommended | **Phase 2B: AI Feedback Instructions** | Type directly | ChatGPT prompt template |
-| 10 | **Text Response** ◐ Recommended | **Peer Feedback Submission** | Configure in Uplimit | 2 pts bonus, due Day 7 |
-| 11 | **Text Response** ◐ Recommended | **AI Feedback Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
-| 12 | **Text** ◐ Recommended | **Phase 3: Comparative Reflection** | Type directly | Instructions for comparing feedback |
-| 13 | **Text Response** ◐ Recommended | **Comparative Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
-| 14 | **Text Response** ⬤ Required | **FINAL REVISED Strategic Vision Memo** | Configure in Uplimit | Rubric grading, 100 pts, due Day 10 |
-| 15 | **Text** ◐ Recommended | **Phase 5: Post-Revision Reflection** | Type directly | Instructions for reflection |
-| 16 | **Text Response** ◐ Recommended | **Post-Revision Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 10 |
-| 17 | **Details** ○ Optional | Rubric details and scoring examples | Type directly | Accordion - transparent criteria |
-| 18 | **AI Chat Widget** ○ Optional | Strategic planning assistant | Configure in Uplimit | Named: "Strategy Planning Assistant" |
-| 19 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - MLO-CLO mapping | Embed widget | Shows course-level outcome connections |
+| 2 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
+| 3 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, capstone focus |
+| 4 | **AI Roleplay** ◐ Recommended | Practice pitch to Board of Directors | Configure in Uplimit | Formative practice before writing |
+| 5 | **Text** ⬤ Required | Submission checklist and requirements | Type directly | Clear expectations for deliverable |
+| 6 | **Text Response** ⬤ Required | DRAFT Strategic Vision Memo submission | Configure in Uplimit | Submission only, no grading yet |
+| 7 | **Text** ◐ Recommended | **Phase 2A: Peer Feedback Instructions** | Type directly | How to provide effective peer feedback |
+| 8 | **Text** ◐ Recommended | **Phase 2B: AI Feedback Instructions** | Type directly | ChatGPT prompt template |
+| 9 | **Text Response** ◐ Recommended | **Peer Feedback Submission** | Configure in Uplimit | 2 pts bonus, due Day 7 |
+| 10 | **Text Response** ◐ Recommended | **AI Feedback Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
+| 11 | **Text** ◐ Recommended | **Phase 3: Comparative Reflection** | Type directly | Instructions for comparing feedback |
+| 12 | **Text Response** ◐ Recommended | **Comparative Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
+| 13 | **Text Response** ⬤ Required | **FINAL REVISED Strategic Vision Memo** | Configure in Uplimit | Rubric grading, 100 pts, due Day 10 |
+| 14 | **Text** ◐ Recommended | **Phase 5: Post-Revision Reflection** | Type directly | Instructions for reflection |
+| 15 | **Text Response** ◐ Recommended | **Post-Revision Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 10 |
+| 16 | **Details** ○ Optional | Rubric details and scoring examples | Type directly | Accordion - transparent criteria |
+| 17 | **AI Chat Widget** ○ Optional | Strategic planning assistant | Configure in Uplimit | Named: "Strategy Planning Assistant" |
 
 ### Element 1: Connecting Introduction Text
+
+**Title:** Your 5-Week Strategic Journey
+
 **Copy this markdown directly into Uplimit:**
 
+## Your 5-Week Strategic Journey
 
 You've completed an intensive 5-week journey through the business of sports marketing. You started by mapping revenue ecosystems in Week 1, explored media rights valuation and fan engagement in Week 2, analyzed sponsorship ROI and betting markets in Week 3, examined athlete branding and emerging sports in Week 4, and now in Week 5 you've tackled the unique challenge of heritage properties balancing tradition with innovation.
 
@@ -39,36 +43,7 @@ Now it's time to demonstrate the full scope of what you've learned. In this caps
 
 ---
 
-## Element 2: **NEW** - Learning Outcomes Widget
----
-
-## Element 2: **NEW** - Learning Outcomes Widget
-
-**Uplimit Implementation:**
-1. Select **iFrame Widget** element
-2. Copy embed code below:
-
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-6.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Module 6 Learning Outcomes"
-  aria-label="Visual map showing which learning outcomes are practiced in Module 6"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Shows which Week 2 MLOs are practiced in this module
-- Visual badge indicating Module 6
-- Interactive: Click to see how content connects to frameworks
-
----
-
-## Element 3: **NEW** - PAIRR Assessment Overview
+## Element 2: PAIRR Assessment Overview
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -98,6 +73,25 @@ This capstone assessment combines comprehensive strategic analysis with dual fee
 - Reflect on revision choices: Which feedback influenced you most? (200-300 words, 1 pt bonus)
 
 **Total Possible: 105 points** (100 pts final memo + 5 pts PAIRR bonus)
+
+**⏱️ Time Investment Breakdown:**
+- AI Roleplay practice: 20-30 min
+- Research and planning: 60-90 min
+- Writing draft (all 5 sections): 90-120 min
+- Peer review (giving feedback): 30-45 min
+- AI feedback generation: 10-15 min
+- Comparative reflection: 20-30 min
+- Revision: 45-60 min
+- Post-revision reflection: 15-20 min
+- **Total: 5-7 hours spread across 10 days**
+
+**Integrating Weeks 1-4:** For full-credit responses (12-15 pts per CLO), you MUST explicitly apply frameworks from each prior week:
+- Week 1: Revenue ecosystem analysis with specific percentages and interdependencies
+- Week 2: Media rights valuation (CPM, streaming economics) and fan engagement strategy
+- Week 3: Sponsorship ROI framework (2-3× activation rule) and/or betting partnerships
+- Week 4: Athlete brand partnerships (equity vs fees) OR emerging sports opportunity
+
+Generic strategies that don't reference course frameworks will score in the "Partially meets" range (9-11 pts per CLO).
 ```
 
 ---
@@ -106,7 +100,7 @@ This capstone assessment combines comprehensive strategic analysis with dual fee
 
 Title: ▪ Capstone Assessment: 5-Year Strategic Vision
 
-You'll create a comprehensive 5-year strategic vision for a sports property of your choice (team, league, venue, heritage institution, or event). Your strategic vision must integrate frameworks from all 5 weeks of the course and demonstrate sophisticated analysis of trade-offs, opportunities, and risks. This capstone assessment measures MLOs 5.1-5.4 and CLOs 1-5, and is worth 100 points.
+You'll create a comprehensive 5-year strategic vision for a sports property of your choice (team, league, venue, heritage institution, or event). Your strategic vision must integrate frameworks from all 5 weeks of the course and demonstrate sophisticated analysis of trade-offs, opportunities, and risks. This capstone assessment measures WLOs 5.1-5.4 and CLOs 1-5, and is worth 100 points.
 
 **Format Options (Choose ONE):**
 1. **Written Memo** (1,500-2,000 words) - Executive strategy document
@@ -136,7 +130,7 @@ All formats must cover the same content requirements and will be evaluated using
 **Name:** Board of Directors Strategy Pitch: 5-Year Vision Presentation
 
 **Learning Objective:**
-Students will practice articulating comprehensive strategic vision integrating 5 weeks of course frameworks, defending trade-off decisions, and responding to executive-level challenges. This supports MLOs 5.1-5.4 and CLOs 1-5 (Evaluate/Create level) while developing board-level communication skills.
+Students will practice articulating comprehensive strategic vision integrating 5 weeks of course frameworks, defending trade-off decisions, and responding to executive-level challenges. This supports WLOs 5.1-5.4 and CLOs 1-5 (Evaluate/Create level) while developing board-level communication skills.
 
 **Scenario Setup:**
 Formative practice conversation (not graded)
@@ -1165,7 +1159,7 @@ What aspect of your strategic vision would you like to discuss?
 - Course content citations prevent pure AI generation
 
 **9. Quality Matters (QM) Alignment:**
-- **Standard 3.1:** Learning outcomes clearly stated (CLOs 1-5, MLOs 5.1-5.4)
+- **Standard 3.1:** Learning outcomes clearly stated (CLOs 1-5, WLOs 5.1-5.4)
 - **Standard 3.2:** Assessment measures stated outcomes (rubric maps to CLOs)
 - **Standard 3.3:** Rubric provided to students before assessment
 - **Standard 3.4:** Grading policy clear (100 points, conversion scale provided)
@@ -1173,7 +1167,7 @@ What aspect of your strategic vision would you like to discuss?
 
 ---
 
-## Module 6 Complete - Transition to Module 7
+## Module 7 Complete - Transition to Module 8
 
 **What You've Accomplished:**
 You've completed the capstone assessment for this entire course—a comprehensive 5-year strategic vision memo demonstrating mastery of all five Course Learning Outcomes. You've synthesized frameworks from revenue ecosystems (Week 1), media rights (Week 2), sponsorship optimization (Week 3), athlete branding (Week 4), and legacy management (Week 5) into a coherent strategic narrative. This 100-point assessment measures your ability to think strategically, integrate complex business concepts, and communicate executive-level recommendations.
@@ -1185,8 +1179,8 @@ You've completed the capstone assessment for this entire course—a comprehensiv
 - You've developed board-level strategic communication skills
 - You're prepared to lead strategic planning in real sports business contexts
 
-**Up Next: Module 7 - Course Wrap-Up & Celebration**
-You've reached the final module of this 5-week journey. In Module 7, you'll reflect on your complete learning journey from Week 1 to Week 5, see how far you've progressed, and celebrate your achievement in completing this intensive MBA course on the business of sports marketing.
+**Up Next: Module 8 - Course Wrap-Up & Celebration**
+You've reached the final module of this 5-week journey. In Module 8, you'll reflect on your complete learning journey from Week 1 to Week 5, see how far you've progressed, and celebrate your achievement in completing this intensive MBA course on the business of sports marketing.
 
 Ready to celebrate your sports business mastery? Let's finish strong!
 
@@ -1219,7 +1213,7 @@ Ready to celebrate your sports business mastery? Let's finish strong!
 ### Timeline Recommendations:
 
 **Recommended Schedule (10-day assessment period):**
-- **Day 1:** Module 6 opens, students review assignment and rubric
+- **Day 1:** Module 7 opens, students review assignment and rubric
 - **Days 1-3:** Students use AI Roleplay to practice pitch, refine strategy
 - **Days 4-7:** Students write first draft, use AI Chat Widget for strategic thinking support
 - **Days 8-9:** Students revise and polish memo
@@ -1295,42 +1289,8 @@ A: Minimum 5 citations from course content (cases, executive sessions, readings)
 - [ ] Late policy clearly stated
 - [ ] Academic integrity policy reminder posted
 
----
 
-## 🎯 FINAL PROJECT CONNECTION
-
-**Module 6 IS Your Final Strategic Vision:**
-
-Module 6 is the capstone assessment where you integrate all five weeks of learning into a comprehensive 5-year Strategic Vision Memo. This isn't another step toward the final project—this IS the final project.
-
-**What This Assessment Measures:**
-
-Your Strategic Vision Memo demonstrates mastery of all five Course Learning Outcomes (CLOs):
-- **CLO 1 (Week 1):** Analyze revenue ecosystems—your memo must show sophisticated understanding of the five revenue streams and their interdependencies
-- **CLO 2 (Week 2):** Evaluate media & fan monetization strategies—your memo must address media rights valuation and fan engagement economics
-- **CLO 3 (Week 3):** Design sponsorship & betting strategies—your memo must include ROI-justified sponsorship activation and position on betting partnerships
-- **CLO 4 (Week 4):** Build athlete & emerging sport brands—your memo must address talent/brand strategy and opportunities in emerging markets
-- **CLO 5 (Week 5):** Balance legacy & innovation—your memo must navigate heritage preservation while forecasting future trends
-
-**What Makes This Assessment Comprehensive:**
-
-The Strategic Vision Memo requires you to:
-1. **Select a sports property** (team, league, venue, heritage institution, major event) and define its strategic context
-2. **Conduct situation analysis** using frameworks from Weeks 1-5 (revenue mix, media strategy, sponsorship portfolio, brand positioning, heritage assessment)
-3. **Identify strategic priorities** based on property-specific opportunities and constraints
-4. **Develop 5-year roadmap** with phased implementation, capital allocation, and success metrics
-5. **Defend strategic choices** with evidence-based reasoning and explicit acknowledgment of trade-offs
-6. **Communicate at executive level** using data-driven analysis and board-ready recommendations
-
-**Why This Format:**
-
-Real sports business executives create strategic vision memos for Boards of Directors, investors, league commissioners, and ownership groups to secure approval for multi-million dollar strategic initiatives. This assessment mirrors that professional deliverable—teaching you not just what to think, but how to communicate strategic thinking to decision-makers who control resources.
-
-**Your Memo Demonstrates:** Analytical rigor, strategic thinking, financial literacy, stakeholder awareness, and executive communication—the five capabilities that define sports business leadership.
-
----
-
-**Module 6 Storyboard Complete**
+**Module 7 Storyboard Complete**
 **Status:** Ready for Uplimit implementation
 **Last Updated:** October 30, 2025
 **Word Count:** ~8,500 words (comprehensive build specification)

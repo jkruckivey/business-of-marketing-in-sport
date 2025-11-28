@@ -1,4 +1,5 @@
 # MODULE 3: Core Content - Legacy vs Innovation (BOPPPS: Presentation) • **V3 INTERACTIVE-FIRST REDESIGN**
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Interactive discovery of heritage monetization strategies and future trends through experimentation
 
@@ -21,14 +22,12 @@
 | Order | Element | Content/Purpose | Time | Source | Implementation Notes |
 |-------|---------|----------------|------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | 2 min | Type directly | Sets interactive learning approach for heritage properties |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **⚙ iFrame Widget** ⬤ Required | **Legacy vs Innovation Matrix** | 8-10 min | Embed widget | Map strategic decisions balancing tradition & growth |
+| 2 | **⚙ iFrame Widget** ⬤ Required | **Legacy vs Innovation Matrix** | 8-10 min | Embed widget | Map strategic decisions balancing tradition & growth |
 | 3 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Process learning from strategic mapping |
-| 5 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
-| 6 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
-| 7 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
-| 8 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Variable | Configure in Uplimit | On-demand support for strategic planning |
-| 9 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | 2 min | Embed `learning-outcomes-module-3.html` | Shows how module outcomes connect to course goals |
+| 4 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
+| 5 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
+| 6 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
+| 7 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Variable | Configure in Uplimit | On-demand support for strategic planning |
 
 ---
 
@@ -78,7 +77,7 @@ Ready? Let's experiment.
 
 ### ⚙ Interactive Activity: Legacy vs Innovation Matrix
 
-**Practice: MLO 5.1 (Evaluate heritage assets) & MLO 5.2 (Balance tradition vs. innovation)**
+**Practice: WLO 5.1 (Evaluate heritage assets) & WLO 5.2 (Balance tradition vs. innovation)**
 
 You've learned the theoretical tension between preserving heritage and driving revenue growth. Now it's time to make strategic decisions under that tension.
 
@@ -92,7 +91,7 @@ In this interactive activity, you'll drag 15 strategic initiatives onto a 2×2 m
 - That multiple "right answers" exist depending on institutional mission and stakeholder values
 
 **Time commitment:** 8-10 minutes
-**Learning outcomes practiced:** MLO 5.1 (Evaluate heritage assets as competitive advantage), MLO 5.2 (Balance tradition vs. innovation strategically)
+**Learning outcomes practiced:** WLO 5.1 (Evaluate heritage assets as competitive advantage), WLO 5.2 (Balance tradition vs. innovation strategically)
 
 ---
 
@@ -234,7 +233,7 @@ The Hockey Hall of Fame faces this exact dilemma. Jamie Dinsmore (President & CE
 
 ### ⚙ Interactive Activity: Future Trends Predictor
 
-**Practice: MLO 5.3 (Assess emerging trends) & MLO 5.4 (Develop 5-year strategic vision)**
+**Practice: WLO 5.3 (Assess emerging trends) & WLO 5.4 (Develop 5-year strategic vision)**
 
 You've analyzed how heritage properties balance tradition and innovation. But what trends will shape the FUTURE of sports business over the next 5 years? Which should your organization prioritize?
 
@@ -248,7 +247,7 @@ In this interactive activity, you'll choose 3 emerging trends from 12 options (A
 - What time horizon matters: some trends pay off in 1-3 years, others take 5-10 years
 
 **Time commitment:** 10-12 minutes
-**Learning outcomes practiced:** MLO 5.3 (Assess emerging trends and business impact), MLO 5.4 (Develop strategic vision balancing heritage with market evolution)
+**Learning outcomes practiced:** WLO 5.3 (Assess emerging trends and business impact), WLO 5.4 (Develop strategic vision balancing heritage with market evolution)
 
 ---
 
@@ -368,7 +367,7 @@ Based on trend choices, widget plots your organization on 2x2 matrix:
 
 
 **Widget Learning Objectives:**
-1. **Forecast future trends** using data-driven scenario analysis (MLO 5.3)
+1. **Forecast future trends** using data-driven scenario analysis (WLO 5.3)
 2. **Allocate investments** across competing priorities with limited budget (strategic trade-offs)
 3. **Assess risk-adjusted returns** comparing optimistic vs. pessimistic outcomes
 4. **Synthesize Weeks 1-5 knowledge** by seeing how trends impact all revenue streams
@@ -385,7 +384,7 @@ Based on trend choices, widget plots your organization on 2x2 matrix:
 
 ### Future Vision Insights: What Did the Forecast Reveal?
 
-**MLO 5.3 Practice:** This reflection helps you assess emerging trends (AI, VR/AR, new demographics, emerging markets) and their business impact—a critical skill for Week 5's capstone assessment.
+**WLO 5.3 Practice:** This reflection helps you assess emerging trends (AI, VR/AR, new demographics, emerging markets) and their business impact—a critical skill for Week 5's capstone assessment.
 
 After experimenting with the Future Trends Predictor, take 10 minutes to reflect on your strategic bets:
 
@@ -409,7 +408,7 @@ After experimenting with the Future Trends Predictor, take 10 minutes to reflect
 - How will you justify your $50M investment allocation to skeptical stakeholders?
 - What metrics will you use to measure success over 5 years?
 
-**✅ Required Action (MLO 5.3):** Write your 2-sentence investment thesis explaining which trends you prioritized and why. This will directly inform your Strategic Vision Memo in Module 6.
+**✅ Required Action (WLO 5.3):** Write your 2-sentence investment thesis explaining which trends you prioritized and why. This will directly inform your Strategic Vision Memo in Module 7.
 
 Example: "I'm allocating 40% to women's sports growth because it's the highest-certainty opportunity with 20%+ CAGR potential. The remaining 60% goes to AI and direct fan relationships to future-proof against disruption."
 
@@ -703,32 +702,5 @@ Ready to transform a heritage icon? Let's apply your frameworks!
 **Copy-Paste Ready:** All text blocks and iframe codes provided
 **Widget Build Status:** Specifications complete, HTML files to be created in `/modules/week5/widgets/` directory
 
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 3 Supports Your Final Strategic Vision:**
-
-Module 3 taught you the core frameworks for heritage property strategy through interactive discovery. These tools enable sophisticated strategic planning in your Week 5 capstone deliverable.
-
-**What You Learned:**
-- The Legacy vs Innovation Matrix reveals the four strategic quadrants: Stagnation (low preservation, low growth), Museum Trap (high preservation, low growth), Disneyfication (low preservation, high growth), and Sweet Spot (high preservation, high growth)
-- You can't maximize both heritage preservation AND revenue growth simultaneously—strategic balance requires explicit trade-offs
-- Different heritage properties position differently: Hockey Hall of Fame (60/40 preservation/innovation), FIFA Museum (35/65), Olympics Legacy (50/50)
-- Future Trends Predictor shows which emerging forces (AI, VR/AR, women's sports, sustainability, new demographics) create highest ROI across the five revenue streams from Week 1
-- Risk-adjusted scenario planning is essential: Optimistic, Realistic, and Pessimistic forecasts reveal strategic vulnerability
-
-**How to Apply This to Your Final Project:**
-
-When you build your Strategic Vision Memo in Module 6, Module 3's interactive tools provide your strategic methodology:
-
-- **Heritage Strategy Portfolio:** Use the Legacy vs Innovation Matrix to map YOUR property's current position and desired future state. Explicitly identify which quadrant you occupy now and which quadrant your 5-year vision targets. Explain WHY this movement is strategically sound for your specific institutional context.
-- **Initiative Allocation:** Reference the 15 strategic initiatives from the Matrix (VR tours, physical archives, betting partnerships, strict curation, NFT collections, etc.) to justify your innovation choices. Don't just list initiatives—explain where they fall on the preservation vs. growth spectrum and how they create portfolio balance.
-- **Future Trends Prioritization:** Apply the Future Trends Predictor methodology to forecast which trends offer highest strategic value for YOUR property. Show your $50M investment allocation and defend why certain trends (e.g., AI personalization) get priority over others (e.g., metaverse experiences).
-- **Risk Mitigation:** Use Module 3's risk-adjusted scenarios to address "what if" questions skeptical board members will ask. Example: "If women's sports growth is 20% lower than projected, how does that affect our 5-year revenue targets?"
-
-**Real-World Application:** Your Strategic Vision Memo must demonstrate HOW you'll balance heritage with growth—not just claim you will. Module 3's Matrix and Predictor tools give you the methodology to show your strategic thinking process, making your vision credible and actionable.
-
----
 
 **Next Steps:** Build Module 4 (Interactive Activity - HHOF Transformation Simulation)

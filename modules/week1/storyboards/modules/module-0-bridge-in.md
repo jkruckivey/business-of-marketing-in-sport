@@ -1,4 +1,5 @@
 # MODULE 0: Bridge In - The Revenue Problem (BOPPPS: Bridge + Pre-Assessment)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Hook students with a compelling business problem, reframe outcomes as challenges, enable self-assessment
 
@@ -15,7 +16,6 @@
 | 3 | **ⓘ Infobox** ⬤ Required | The revenue problem statement | Type directly | Use **Callout** variant, urgent business challenge |
 | 4 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Revenue Strategy Challenge + Quiz** | Embed `revenue-strategy-pre-assessment.html` | Combined challenge text and quiz in single widget |
 | 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
-| 6 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive MLO-CLO mapping | Embed `learning-outcomes-module-0.html` | Shows how module outcomes connect to course goals |
 
 
 ---
@@ -376,7 +376,7 @@ Professional sports teams operate with a business model that defies conventional
 
 ## Element 4: Revenue Strategy Pre-Assessment (Combined Widget)
 
-**Widget Purpose:** Combined challenge text + 10-question self-diagnostic quiz covering all 4 learning outcomes (MLO 1.1, 1.2, 1.3, 1.4)
+**Widget Purpose:** Combined challenge text + 10-question self-diagnostic quiz covering all 4 learning outcomes (WLO 1.1, 1.2, 1.3, 1.4)
 
 **Three-Screen Structure:**
 1. **Challenge Preview:** Four revenue problem scenarios students will learn to solve this week
@@ -416,7 +416,7 @@ The widget includes these questions (full content embedded in HTML file):
 
 ---
 
-**QUESTION 1** (MLO 1.1 - Revenue Streams Knowledge)
+**QUESTION 1** (WLO 1.1 - Revenue Streams Knowledge)
 
 **Question:** Which revenue stream accounts for the largest percentage of total revenue for most major professional leagues?
 
@@ -438,7 +438,7 @@ Not quite. While [selected answer] is important, media rights actually account f
 
 ---
 
-**QUESTION 2** (MLO 1.1 - Revenue Streams Knowledge)
+**QUESTION 2** (WLO 1.1 - Revenue Streams Knowledge)
 
 **Question:** Rank these revenue streams by annual growth rate over the past 5 years (fastest to slowest):
 
@@ -463,7 +463,7 @@ Correct ranking! Betting/gaming is the fastest-growing stream due to legalizatio
 
 ---
 
-**QUESTION 3** (MLO 1.2 - Sport's Unique Business Model)
+**QUESTION 3** (WLO 1.2 - Sport's Unique Business Model)
 
 **Question:** In 2-3 sentences, explain why professional sports teams share revenue with competitors.
 
@@ -485,7 +485,7 @@ You're on the right track, but dig deeper. Think about why competitive balance m
 
 ---
 
-**QUESTION 4** (MLO 1.2 - Sport's Unique Business Model)
+**QUESTION 4** (WLO 1.2 - Sport's Unique Business Model)
 
 **Question:** True or False: Betting legalization creates only one new revenue stream for leagues (betting partnerships).
 
@@ -511,7 +511,7 @@ Not quite! Betting legalization does more than create partnerships. It increases
 
 ---
 
-**QUESTION 5** (MLO 1.3 - Growth Potential vs. Risk)
+**QUESTION 5** (WLO 1.3 - Growth Potential vs. Risk)
 
 **Question:** The Edmonton Oilers sign Connor McDavid for $12.5M/year. Direct revenue increase: Tickets +$5M, Jerseys +$3M = $8M total. Is this a good investment? Why or why not?
 
@@ -533,7 +533,7 @@ Think bigger! Direct revenue (tickets $5M + jerseys $3M = $8M) misses the ecosys
 
 ---
 
-**QUESTION 6** (MLO 1.3 - Growth Potential vs. Risk)
+**QUESTION 6** (WLO 1.3 - Growth Potential vs. Risk)
 
 **Question:** You have $50M to invest in ONE revenue stream with highest 5-year growth potential. Rank these options by expected return:
 
@@ -558,7 +558,7 @@ Think about growth rates and constraints. Stadiums are capacity-limited (can't g
 
 ---
 
-**QUESTION 7** (MLO 1.4 - Revenue Sharing Models)
+**QUESTION 7** (WLO 1.4 - Revenue Sharing Models)
 
 **Question:** Can you explain one advantage AND one disadvantage of revenue sharing for a mid-market team like the Vancouver Canucks?
 
@@ -582,7 +582,7 @@ You're on the right track, but be more specific. Think about which revenue strea
 
 ---
 
-**QUESTION 8** (MLO 1.1 - Revenue Streams Knowledge)
+**QUESTION 8** (WLO 1.1 - Revenue Streams Knowledge)
 
 **Question:** Match each revenue stream to its primary growth constraint:
 
@@ -623,7 +623,7 @@ Strategic insight: Diversify across streams with different constraint types to b
 
 ---
 
-**REFERENCE ONLY - QUESTION 9** (MLO 1.3 - Growth Potential vs. Risk)
+**REFERENCE ONLY - QUESTION 9** (WLO 1.3 - Growth Potential vs. Risk)
 
 **Question:** A team invests $300M in a new stadium. Which revenue streams will this investment directly impact? (Select all that apply)
 
@@ -649,7 +649,7 @@ Not quite! Think about what happens inside the stadium on game day. New stadiums
 
 ---
 
-**QUESTION 10** (MLO 1.4 - Revenue Sharing Models)
+**QUESTION 10** (WLO 1.4 - Revenue Sharing Models)
 
 **Question:** The NHL shares 50% of national media revenue equally among all 32 teams. The Toronto Maple Leafs generate $200M in local revenue, while the Arizona Coyotes generate $60M locally. Under this system, which statement is TRUE?
 
@@ -688,34 +688,6 @@ Your quiz results create a personalized learning path for this week. Lower score
 
 ---
 
-
-### Element 6: Learning Outcomes Widget
-
-**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
-
-**Uplimit Implementation:**
-
-**Widget File:** `learning-outcomes-module-0.html`
-
-**Embed Code:**
-```html
-<iframe
-  src="../../widgets/learning-outcomes-module-0.html"
-  width="100%"
-  height="600"
-  style="border: none; border-radius: 8px;"
-  title="Learning Outcomes - Module 0"
-  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Click any module outcome to see which course-level outcomes it contributes to
-- Interactive highlighting shows connections between module and course goals
-- WCAG 2.2 AA compliant with keyboard navigation and screen reader support
-
 ## Module Summary
 
 **What You've Accomplished:**
@@ -728,29 +700,6 @@ The fact that you struggled with the diagnostic exercise is actually the point. 
 Now that you've seen the problem and identified your knowledge gaps, Module 1 will show you exactly what you're going to learn this week. You'll see the four key challenges you'll be able to solve by Friday—challenges that will transform you from someone who sees the McDavid contract as a loss into someone who can confidently defend it to a skeptical board with data they can't argue with.
 
 Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
-
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 0 Supports Your Final Strategic Vision:**
-
-Module 0 introduced you to the fundamental challenge of sports business strategy: revenue streams are interdependent ecosystems, not independent channels. This systems thinking is the foundation for your Week 5 capstone deliverable.
-
-**What You Discovered:**
-- Professional sports revenue works differently than traditional business models
-- Investments in one stream (Connor McDavid's $100M contract) create ripple effects across the entire ecosystem ($132M total value)
-- What looks like a loss on one line item can be a strategic gain when ecosystem effects are considered
-
-**How to Apply This to Your Final Project:**
-
-When you create your 5-year strategic vision in Week 5, you'll need to demonstrate this ecosystem thinking throughout your analysis. Module 0 taught you to never evaluate a single decision (hiring an athlete, signing a media deal, pricing tickets) in isolation—always trace the cascade effects:
-
-- **Revenue Model Section:** Explain how your property's revenue streams reinforce each other (ticket sales → fan data → sponsorship value → media rights premiums)
-- **Investment Decisions:** Justify seemingly expensive investments by quantifying ecosystem effects across all 5 revenue streams
-- **Risk Analysis:** Identify how problems in one revenue stream cascade through the ecosystem (e.g., declining attendance → reduced sponsorship appeal → lower media rights value)
-
-**Real-World Application:** The McDavid paradox you analyzed today is the same challenge you'll face in Week 5: How do you convince stakeholders that strategic investments create value beyond their immediate cost? Module 0 taught you the answer: map the ecosystem effects.
 
 ---
 

@@ -1,22 +1,22 @@
 # MODULE 2: Sponsorship Framework (⭐ INTERACTIVE FOCUS)
+**Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
-**Purpose:** Understand sponsorship ROI fundamentals, build activation framework (measures MLOs 3.1, 3.3)
+**Purpose:** Understand sponsorship ROI fundamentals, build activation framework (measures WLOs 3.1, 3.3)
 
 **Uplimit Structure:** Second module in Unit 3
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 1 | Type directly | Sets context for sponsorship economics |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Learning Outcomes Widget** | Embed widget | Shows which MLOs practiced |
-| 3 | **Video** ⬤ Required | Sponsorship 101 - Why Brands Pay (2 min) | Upload MP4 | Explains sponsorship value proposition |
+| 2 | **Video** ⬤ Required | Sponsorship 101 - Why Brands Pay (2 min) | Upload MP4 | Explains sponsorship value proposition |
 | 3 | **Interactive Widget** ⬤ Required | Sponsorship Valuation Calculator | Embed iframe | Calculate CPM, reach, and exposure value |
-| 5 | **▬ Text** ◐ Recommended | Activation vs. Rights Fees (150 words) | Type directly | Explains 1:2-3 activation multiplier |
-| 6 | **Interactive Widget** ⬤ Required | Activation Budget Builder | Embed iframe | Design activation mix across channels |
-| 7 | **Infobox (Insight)** ◐ Recommended | Industry Standard: $2-3 Activation per $1 Rights | Type directly | Yellow variant, memorable rule |
-| 8 | **▬ Text** ◐ Recommended | ROI Measurement Framework (150 words) | Type directly | Reach → Engagement → Conversion funnel |
-| 9 | **Interactive Widget** ⬤ Required | ROI Calculator | Embed iframe | Model sponsorship ROI with real metrics |
-| 10 | **Table** ◐ Recommended | Sponsorship Category Benchmarks | Type directly | CPM ranges by sport/category |
-| 11 | **Details** ○ Optional | Advanced: Attribution Modeling | Type directly | Accordion - optional depth on conversion tracking |
+| 4 | **▬ Text** ◐ Recommended | Activation vs. Rights Fees (150 words) | Type directly | Explains 1:2-3 activation multiplier |
+| 5 | **Interactive Widget** ⬤ Required | Activation Budget Builder | Embed iframe | Design activation mix across channels |
+| 6 | **Infobox (Insight)** ◐ Recommended | Industry Standard: $2-3 Activation per $1 Rights | Type directly | Yellow variant, memorable rule |
+| 7 | **▬ Text** ◐ Recommended | ROI Measurement Framework (150 words) | Type directly | Reach → Engagement → Conversion funnel |
+| 8 | **Interactive Widget** ⬤ Required | ROI Calculator | Embed iframe | Model sponsorship ROI with real metrics |
+| 9 | **Table** ◐ Recommended | Sponsorship Category Benchmarks | Type directly | CPM ranges by sport/category |
+| 10 | **Details** ○ Optional | Advanced: Attribution Modeling | Type directly | Accordion - optional depth on conversion tracking |
 
 ---
 
@@ -25,7 +25,9 @@
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-You've heard from Andrew Sneyd (FanDuel) and a corporate sponsor about why sponsorship and betting are growth engines. Now let's build the framework: how do brands decide which partnerships to pursue, and how do they calculate return on investment?
+**Connecting to Weeks 1-2:** In Week 1, you learned sponsorship represents 15-25% of professional sport revenue—the third-largest stream after media rights (40-60%) and ticketing (20-30%). In Week 2, you saw how media rights deals are valued using reach and engagement metrics. This week, we apply similar frameworks to sponsorship: how do brands decide which partnerships to pursue, and how do they calculate return on investment?
+
+You've heard from Andrew (FanDuel CMO) and a corporate sponsor about why sponsorship and betting are growth engines. Now let's build the framework.
 
 Sponsorship isn't charity—it's a data-driven marketing investment. Brands pay teams, leagues, and athletes because sports deliver three things traditional advertising can't: captive audiences (fans watch 3+ hours of live sports), emotional connection (team loyalty = brand affinity), and measurable engagement (app downloads, retail activations, social buzz).
 
@@ -109,7 +111,7 @@ Export your calculation and move to the next widget (Activation Budget Builder).
 
 ### ⚙ Interactive Activity: Sponsorship Valuation Calculator
 
-**Practice: MLO 3.3 (Calculate how brands measure ROI)**
+**Practice: WLO 3.3 (Calculate how brands measure ROI)**
 
 You're now ready to use the industry-standard method that brands use to evaluate sponsorship deals. In this hands-on calculator, you'll step into the role of a brand's CMO evaluating a potential sports sponsorship. Your challenge: determine whether you're paying a fair price per impression compared to traditional advertising channels.
 
@@ -123,7 +125,7 @@ This calculator empowers you to input real deal parameters—rights fees, broadc
 - How to grade deal value using real-world benchmarks from NFL, EPL, NBA, and MLS partnerships
 
 **Time commitment:** 8-10 minutes
-**Learning outcomes practiced:** MLO 3.3 (Calculate how brands measure ROI in sport partnerships)
+**Learning outcomes practiced:** WLO 3.3 (Calculate how brands measure ROI in sport partnerships)
 
 ---
 
@@ -140,7 +142,7 @@ This calculator empowers you to input real deal parameters—rights fees, broadc
 3. Widget displays: Total impressions, CPM, benchmark chart, value grade (Excellent/Good/Fair/Poor)
 4. 5 presets: NFL jersey sponsor ($25M), EPL shirt sponsor (£50M), MLS jersey (£5M), NBA court ad ($3M), MLB dugout suite ($1M)
 
-**Learning Objective:** MLO 3.3 (Calculate how brands measure ROI) - Students practice industry-standard CPM calculations
+**Learning Objective:** WLO 3.3 (Calculate how brands measure ROI) - Students practice industry-standard CPM calculations
 
 **Real-World Data Examples:**
 - **Scotiabank (Toronto Raptors):** $20M/year rights fee, 1.5M avg viewers × 82 games, 19,800 attendance × 41 home games = ~123M impressions, CPM = $163
@@ -256,7 +258,7 @@ Export your activation budget. You'll use it in Module 5's group sprint to desig
 
 ### ⚙ Interactive Activity: Activation Budget Builder
 
-**Practice: MLO 3.4 (Design sponsorship activations that deliver measurable value)**
+**Practice: WLO 3.4 (Design sponsorship activations that deliver measurable value)**
 
 Now that you've calculated your sponsorship's CPM value, it's time to design the activation strategy that will extract maximum ROI from your partnership. Remember the 1:2-3 rule: for every dollar spent on rights fees, brands invest $2-3 on activation to amplify the partnership. This widget puts you in the driver's seat as a Sponsorship Activation Manager allocating a multi-million dollar budget across strategic channels.
 
@@ -270,7 +272,7 @@ You'll apply the activation multiplier to calculate your total investment, then 
 - How to evaluate "strategic fit" by comparing your allocation to category norms and identifying intentional deviations
 
 **Time commitment:** 10-12 minutes
-**Learning outcomes practiced:** MLO 3.4 (Design sponsorship activations that deliver measurable value)
+**Learning outcomes practiced:** WLO 3.4 (Design sponsorship activations that deliver measurable value)
 
 ---
 
@@ -291,7 +293,7 @@ You'll apply the activation multiplier to calculate your total investment, then 
 4. Widget shows: Budget allocation pie chart, channel spend ($M), industry benchmark comparison, strategic fit score
 5. 3 presets: Coca-Cola World Cup (mass market, heavy advertising/retail), American Express PGA (premium, heavy hospitality), Red Bull F1 (digital-first, heavy content/events)
 
-**Learning Objective:** MLO 3.4 (Design activations) - Students practice building balanced activation budgets
+**Learning Objective:** WLO 3.4 (Design activations) - Students practice building balanced activation budgets
 
 **Real-World Data Examples:**
 - **Coca-Cola FIFA World Cup:** $300M rights, $900M activation (70% advertising/retail, 15% events, 10% digital, 5% hospitality)
@@ -437,7 +439,7 @@ Export your ROI model. Compare it to your activation budget—if ROI < 15%, real
 
 ### ⚙ Interactive Activity: ROI Calculator
 
-**Practice: MLO 3.3 (Calculate how brands measure ROI in sport partnerships)**
+**Practice: WLO 3.3 (Calculate how brands measure ROI in sport partnerships)**
 
 You've valued the sponsorship using CPM and designed your activation budget allocation. Now comes the critical question every CMO must answer: "What revenue will this partnership generate?" This ROI Calculator takes you through the complete attribution funnel that brands use to justify sponsorship investments to their boards and shareholders.
 
@@ -451,7 +453,7 @@ You'll model the full customer journey from initial reach (total impressions) th
 - The relationship between payback period and partnership value, and how to present ROI projections to executives
 
 **Time commitment:** 10-12 minutes
-**Learning outcomes practiced:** MLO 3.3 (Calculate how brands measure ROI in sport partnerships)
+**Learning outcomes practiced:** WLO 3.3 (Calculate how brands measure ROI in sport partnerships)
 
 ---
 
@@ -470,7 +472,7 @@ You'll model the full customer journey from initial reach (total impressions) th
 3. Widget displays: Funnel visualization (Reach → Engagement → Conversion), revenue breakdown, ROI percentage, payback period, breakeven point
 4. 5 presets with real data: Nike NFL ($400M investment, 5B impressions, 0.02% engagement, 1.5% conversion, $120 avg purchase = 37% ROI), Red Bull F1 (180% ROI), Gatorade NBA (52% ROI)
 
-**Learning Objective:** MLO 3.3 (Calculate ROI) - Students practice full ROI modeling with realistic assumptions
+**Learning Objective:** WLO 3.3 (Calculate ROI) - Students practice full ROI modeling with realistic assumptions
 
 **Real-World Data Examples:**
 - **Nike NFL Partnership:** $400M total investment, 5B impressions (broadcast + digital), 0.02% engagement rate (1M engaged), 1.5% conversion rate (15,000 customers), $120 avg purchase = $1.8M revenue, ROI = -$398.2M... wait, that's wrong. Let me recalculate.
@@ -602,32 +604,6 @@ Now that you understand sponsorship fundamentals, let's explore why sports betti
 
 Ready to discover why betting changed everything? Let's dive in!
 
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Module 2 Supports Your Week 5 Marketing Plan:**
-
-Module 2 taught you how to calculate sponsorship value using industry-standard frameworks. This is **THE KEY SKILL** for your final project's **Slide 6: Financial Snapshot (sponsor ROI)**.
-
-**What You Learned:**
-- **CPM Calculation:** Rights fee / total impressions × 1,000 (premium sports achieve $500-1,500 CPM)
-- **The 2-3× Activation Rule:** For every $1 in rights fees, brands spend $2-3 on activation
-- **ROI Funnel:** Reach (impressions) → Engagement (interactions) → Conversion (sales)
-- **Attribution Challenges:** How brands prove sponsorship drives sales (promo codes, geo lift studies, media mix modeling)
-
-**How to Apply This to Your Final Project:**
-In Week 5, you'll need to convince investors/executives that YOUR property can deliver sponsor ROI. Slide 6 must include:
-1. **Expected Sponsor Investment:** If you're pitching a $5M title sponsor, show them what they get (broadcast reach, stadium signage, digital integration)
-2. **CPM Calculation:** Prove your property delivers competitive CPM vs. alternatives (TV ads, digital ads, other sports)
-3. **Activation Budget:** Show brands need to budget $10-15M activation (2-3× the $5M rights fee)
-4. **ROI Projection:** Using Module 2's ROI Calculator framework, estimate sponsor revenue lift (conservative assumptions: 0.02% engagement, 1.5% conversion)
-
-**Action Item:** Export your work from the 3 Module 2 widgets (Sponsorship Valuation Calculator, Activation Budget Builder, ROI Calculator). Save these JSON files—you'll use this data in your final project's financial appendix.
-
-**Real-World Application:** The FanDuel case (Module 4) shows these frameworks in action. FanDuel calculated $152 partnership CAC vs. $400 paid marketing CAC to justify $1.1B in league partnerships. Your final project needs the same rigor.
-
----
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 

@@ -1,4 +1,4 @@
-## MODULE 1: Welcome & Learning Outcomes (BOPPPS: Outcomes)
+# Your Week 1 Journey
 **Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Orient students to Week 1, establish learning expectations
@@ -122,7 +122,7 @@ Create 5 tiles:
 
 ---
 
-## Module 1 Complete - Transition to Module 2
+## Your Week 1 Journey Complete - Transition to Inside the Sports Business
 
 **What You've Accomplished:**
 You now know exactly where you're headed this week. You've seen the four learning objectives that will transform how you understand sports business, and you've been introduced to the five major revenue streams that power professional sport. You understand that this week focuses on analyzing revenue ecosystems—seeing sport as a unique business model where financial collaboration between competitors creates value.
@@ -134,7 +134,7 @@ You now know exactly where you're headed this week. You've seen the four learnin
 - Revenue sharing models vary dramatically: NFL shares 60% equally; European soccer operates entrepreneurially
 - Strategic decisions trigger **cascading effects** across the entire revenue ecosystem
 
-**Up Next: Module 2 - Executive Perspective**
+**Up Next: Inside the Sports Business**
 Before diving into the technical details of each revenue stream, you'll hear from a senior sports business executive who has actually negotiated media deals, managed sponsorship portfolios, and built revenue strategies. They'll share the real-world challenges and strategic decisions that bring these concepts to life.
 
 Ready to learn from someone who's done it? Let's hear the executive perspective.

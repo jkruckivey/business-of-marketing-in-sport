@@ -4,16 +4,16 @@ This directory contains individual module files split from the main Week 1 story
 
 ## Module Files
 
-| File | Size | Module Title | Key Content |
-|------|------|--------------|-------------|
-| `module-0-bridge-in.md` | 24 KB | Bridge In - The Revenue Problem | Video script, AI Roleplay, Pre-assessment |
-| `module-1-welcome.md` | 3.3 KB | Welcome & Learning Objectives | Week overview, MLOs |
-| `module-2-executive.md` | 3.6 KB | Executive Leader Perspective | SME video session |
-| `module-3-core-content.md` | 43 KB | Core Content - Revenue Streams | 8 interactive widgets, V3 redesign |
-| `module-4-interactive.md` | 11 KB | Interactive Activity | Revenue Empire Builder simulation |
-| `module-5-case-study.md` | 12 KB | Case Study | NHL Vancouver Canucks analysis |
-| `module-6-assessment.md` | 25 KB | Assessment | Reflection memo + rubric |
-| `module-7-wrap-up.md` | 5 KB | Wrap-Up & Preview | Week synthesis, discussion |
+| File | Size | Title | Key Content |
+|------|------|-------|-------------|
+| `module-0-bridge-in.md` | 24 KB | Quick Start: The $100M Question | Video script, AI Roleplay, Pre-assessment |
+| `module-1-welcome.md` | 3.3 KB | Your Week 1 Journey | Week overview, MLOs |
+| `module-2-executive.md` | 3.6 KB | Inside the Sports Business | SME video session |
+| `module-3-core-content.md` | 43 KB | Five Revenue Streams That Power Sports | 8 interactive widgets, V3 redesign |
+| `module-4-interactive.md` | 11 KB | Build Your Revenue Empire | Revenue Empire Builder simulation |
+| `module-5-case-study.md` | 12 KB | The Canucks Challenge | NHL Vancouver Canucks analysis |
+| `module-6-assessment.md` | 25 KB | Your Executive Memo | Reflection memo + rubric |
+| `module-7-wrap-up.md` | 5 KB | Looking Ahead to Week 2 | Week synthesis, discussion |
 
 ## Navigation
 
@@ -23,7 +23,7 @@ This directory contains individual module files split from the main Week 1 story
 
 1. Edit individual module files as needed
 2. Each file is self-contained (no cross-references between modules)
-3. Use Uplimit element conventions from Module 0 LEGEND
+3. Use Uplimit element conventions from Quick Start LEGEND
 4. Maintain WCAG 2.2 AA accessibility standards
 
 ## File History

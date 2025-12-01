@@ -52,7 +52,7 @@ This document translates **Week 2** of the "Business of Sports Marketing" course
 
 ---
 
-## MODULE 1: Welcome & Learning Objectives
+## Your Week 2 Journey
 **Purpose:** Orient students to Week 2, establish learning expectations, connect to Week 1 revenue foundations
 
 **Uplimit Structure:** First module in Unit 2
@@ -134,9 +134,9 @@ Create 3 tiles (1x3 or 2x2 grid with one empty):
 
 ## 🎯 FINAL PROJECT CONNECTION
 
-**How Module 1 Supports Your Final Strategic Vision:**
+**How This Supports Your Final Strategic Vision:**
 
-Module 1 established that media rights (40-60% of revenue) are the foundation of modern sports economics. This focus prepares you to analyze media strategy in your Week 5 capstone.
+Your Week 2 Journey established that media rights (40-60% of revenue) are the foundation of modern sports economics. This focus prepares you to analyze media strategy in your Week 5 capstone.
 
 **What You Learned:**
 - Media rights are the largest and most strategically complex revenue stream
@@ -145,17 +145,17 @@ Module 1 established that media rights (40-60% of revenue) are the foundation of
 
 **How to Apply This to Your Final Project:**
 
-When you craft your 5-year strategic vision in Week 5, Module 1's media focus shapes your revenue projections:
+When you craft your 5-year strategic vision in Week 5, Your Week 2 Journey's media focus shapes your revenue projections:
 
-- **Media Rights Strategy Section:** Your capstone must explain how your property will monetize content. Will you pursue traditional linear deals (guaranteed revenue, broad reach) or DTC streaming (potential upside, direct fan relationships)? Module 1 introduced these trade-offs.
-- **Revenue Weighting:** If media rights represent 40-60% of sports revenue, your property's media strategy demands the most sophisticated analysis in your vision. Module 1 signals where to invest analytical depth.
+- **Media Rights Strategy Section:** Your capstone must explain how your property will monetize content. Will you pursue traditional linear deals (guaranteed revenue, broad reach) or DTC streaming (potential upside, direct fan relationships)? This introduction laid out these trade-offs.
+- **Revenue Weighting:** If media rights represent 40-60% of sports revenue, your property's media strategy demands the most sophisticated analysis in your vision. Week 2 signals where to invest analytical depth.
 - **Market Context:** Use Week 2's frameworks to justify your media approach. Example: "Given declining linear viewership but sports' premium positioning as live content, our property will pursue a hybrid model—linear for reach, streaming for engagement."
 
 **Real-World Application:** The Rogers/NHL $5.2B deal you'll analyze this week mirrors the decisions facing YOUR chosen property. Week 2 teaches you how executives evaluate billion-dollar media strategies.
 
 ---
 
-## Module 1 Complete - Transition to Module 2
+## Your Week 2 Journey Complete - Transition to Inside Media Rights
 
 **What You've Accomplished:**
 You now understand Week 2's focus: evaluating media and fan monetization strategies. You've seen the four learning objectives that will transform how you analyze billion-dollar media rights deals, and you've been introduced to the three strategic dimensions—rights valuation, linear vs. streaming economics, and fan engagement monetization. You understand that this week builds directly on Week 1's revenue ecosystem foundation, diving deep into the largest revenue stream in professional sports.
@@ -167,14 +167,14 @@ You now understand Week 2's focus: evaluating media and fan monetization strateg
 - The **Rogers/NHL $5.2B deal** serves as the case study for evaluating mega-deals
 - This week's learning **directly supports Anchor Project Milestone 1** (team formation and property selection)
 
-**Up Next: Module 2 - Executive Perspective**
+**Up Next: Inside Media Rights**
 Before diving into valuation frameworks and strategic models, you'll hear from a senior media executive who has negotiated major sports rights deals. They'll share the real-world challenges, trade-offs, and strategic decisions that bring media economics theory to life.
 
 Ready to learn from someone who's done it? Let's hear the executive perspective.
 
 ---
 
-## MODULE 2: Executive Leader Perspective
+## Inside Media Rights
 **Purpose:** Deliver practitioner insights on media strategy from TSN/DAZN executive (supports WLO 2.1, 2.2, 2.3)
 
 **Uplimit Structure:** Second module in Unit 2
@@ -254,9 +254,9 @@ Current Portfolio:
 
 ## 🎯 FINAL PROJECT CONNECTION
 
-**How Module 2 Supports Your Final Strategic Vision:**
+**How This Supports Your Final Strategic Vision:**
 
-Module 2 delivered practitioner insights from executives who negotiate billion-dollar media deals. This real-world perspective grounds your Week 5 media strategy in operational reality.
+Inside Media Rights delivered practitioner insights from executives who negotiate billion-dollar media deals. This real-world perspective grounds your Week 5 media strategy in operational reality.
 
 **What You Learned:**
 - Media deals involve complex trade-offs: reach vs. exclusivity, guaranteed fees vs. revenue share, linear vs. streaming
@@ -265,17 +265,17 @@ Module 2 delivered practitioner insights from executives who negotiate billion-d
 
 **How to Apply This to Your Final Project:**
 
-When you design your 5-year media strategy in Week 5, reference Module 2's executive frameworks:
+When you design your 5-year media strategy in Week 5, reference the executive frameworks from Inside Media Rights:
 
 - **Platform Selection Rationale:** Justify your media partner choice using executive decision criteria. Example: "Following TSN's model of prioritizing guaranteed fees over revenue share (Week 2 executive interview), our property will pursue traditional broadcast deals to minimize downside risk during our growth phase."
 - **Stakeholder Management:** Your vision must satisfy multiple stakeholders. Executives taught you that boards want revenue stability, fans want accessibility, and partners want exclusivity. Show how your media strategy balances these tensions.
-- **Realistic Constraints:** Acknowledge market realities. If you're a small-market property, you won't command Rogers' $5.2B valuations. Module 2's executive insights help you set realistic expectations.
+- **Realistic Constraints:** Acknowledge market realities. If you're a small-market property, you won't command Rogers' $5.2B valuations. The executive insights from Inside Media Rights help you set realistic expectations.
 
-**Real-World Application:** The executive you heard from evaluates media opportunities daily. Your Week 5 capstone will undergo similar scrutiny from skeptical stakeholders. Module 2 taught you how practitioners defend media strategies.
+**Real-World Application:** The executive you heard from evaluates media opportunities daily. Your Week 5 capstone will undergo similar scrutiny from skeptical stakeholders. Inside Media Rights taught you how practitioners defend media strategies.
 
 ---
 
-## Module 2 Complete - Transition to Module 3
+## Inside Media Rights Complete - Transition to The Billion-Dollar Core Product
 
 **What You've Accomplished:**
 You've heard directly from a senior media executive who has negotiated billion-dollar sports rights deals. You now understand how practitioners value sports content, assess platform trade-offs between linear broadcasting and streaming, and navigate the strategic decisions that shape media partnerships. You've gained authentic insights into the challenges facing both rights holders (leagues/teams) and rights buyers (broadcasters/streamers).
@@ -285,10 +285,10 @@ You've heard directly from a senior media executive who has negotiated billion-d
 - **Linear vs. streaming economics** differ fundamentally: advertising-driven mass audience vs. subscription-driven targeted engagement
 - **Sports content commands premium valuations** because it's the last "appointment viewing" that can't be delayed
 - Executive perspective reveals that **theoretical frameworks meet messy reality**—regulatory constraints, competitive dynamics, and stakeholder pressures shape every deal
-- The insights you've gained will directly inform your analysis of the **Rogers/NHL $5.2B deal** coming in Module 4
+- The insights you've gained will directly inform your analysis of the **Rogers/NHL $5.2B deal** coming in The Rogers Gamble
 
-**Up Next: Module 3 - Interactive Media Rights Framework**
-You've heard the executive perspective. Now it's time to build your own understanding through hands-on exploration. Module 3 uses interactive widgets to help you discover media valuation principles through experimentation—not passive reading. Get ready for active learning!
+**Up Next: The Billion-Dollar Core Product**
+You've heard the executive perspective. Now it's time to build your own understanding through hands-on exploration. The Billion-Dollar Core Product uses interactive widgets to help you discover media valuation principles through experimentation—not passive reading. Get ready for active learning!
 
 Ready to dive in? Let's explore media economics interactively!
 
@@ -310,7 +310,7 @@ Ready to dive in? Let's explore media economics interactively!
 
 ---
 
-## MODULE 3: Media Rights Framework (V3 INTERACTIVE-FIRST REDESIGN)
+## The Billion-Dollar Core Product
 **Purpose:** Provide foundational knowledge about media economics and rights valuation through interactive exploration (supports WLO 2.1, 2.2, 2.3)
 
 ⭐ **V3 REDESIGN - INTERACTIVE-FIRST**: This module has been redesigned from passive reading (6-7 pages, 15-18 min) to active learning (12 micro-elements with 4 widgets, 12-15 min total, 60% active engagement).
@@ -914,11 +914,11 @@ This is not graded—it confirms you're ready for the interactive simulation. Yo
 - ✅ Screen reader support with ARIA labels
 - ✅ High contrast mode compatible
 - ✅ Immediate feedback with case examples
-- ✅ Completion badge for Module 3
+- ✅ Completion badge for The Billion-Dollar Core Product
 
 **Implementation Notes:** HTML quiz with 3 multiple-choice questions covering platform economics and engagement monetization, JavaScript validation with Rogers/DAZN case analysis, score tracking with personalized guidance, completion message indicating readiness for Streaming Wars simulation.
 
-**🎯 Module 3 Complete!** After completing this quiz, you've mastered media rights valuation, exclusivity dynamics, platform economics, and fan engagement. Next: Apply these frameworks in the Streaming Wars simulation.
+**🎯 The Billion-Dollar Core Product Complete!** After completing this quiz, you've mastered media rights valuation, exclusivity dynamics, platform economics, and fan engagement. Next: Apply these frameworks in the Streaming Wars Simulation.
 
 ---
 
@@ -943,7 +943,7 @@ Post your #1 takeaway from the media rights framework. What surprised you most a
 **Requirements:**
 - **Your Post:** 20 words minimum
 - **Peer Engagement:** Reply to at least 2 peers' posts with thoughtful responses
-- **Deadline:** Before moving to Module 4 simulation
+- **Deadline:** Before moving to Streaming Wars Simulation
 
 **Example Starter:**
 "The biggest surprise for me was [insight]. This challenges my assumption that [previous belief]. I'm curious how [question for peers]..."
@@ -959,9 +959,9 @@ Sharing insights helps you process what you've learned through the widgets and p
 
 ## 🎯 FINAL PROJECT CONNECTION
 
-**How Module 3 Supports Your Final Strategic Vision:**
+**How This Supports Your Final Strategic Vision:**
 
-Module 3 taught media rights valuation and platform economics through interactive widgets. This quantitative foundation enables sophisticated media strategy in your Week 5 capstone.
+The Billion-Dollar Core Product taught media rights valuation and platform economics through interactive widgets. This quantitative foundation enables sophisticated media strategy in your Week 5 capstone.
 
 **What You Learned:**
 - Media rights valuation frameworks (audience size × demographics × exclusivity × platform reach)
@@ -971,17 +971,17 @@ Module 3 taught media rights valuation and platform economics through interactiv
 
 **How to Apply This to Your Final Project:**
 
-When you build your 5-year strategic vision in Week 5, Module 3's widgets provide your media analysis toolkit:
+When you build your 5-year strategic vision in Week 5, The Billion-Dollar Core Product's widgets provide your media analysis toolkit:
 
-- **Rights Valuation:** Use Module 3's valuation calculator to estimate your property's media rights value. Example: "Our property reaches 2M viewers (demographics: 18-49, high income), projected 3-year deal value: $150-200M using Week 2's valuation framework."
+- **Rights Valuation:** Use the valuation calculator to estimate your property's media rights value. Example: "Our property reaches 2M viewers (demographics: 18-49, high income), projected 3-year deal value: $150-200M using Week 2's valuation framework."
 - **Platform Strategy:** Reference the platform comparison widget to justify linear vs. streaming vs. hybrid approach. Show trade-offs quantitatively: guaranteed revenue vs. potential upside, reach vs. engagement, risk vs. reward.
-- **Fan Monetization Model:** Module 3 taught that media value extends beyond broadcast fees. Your vision should quantify multi-platform monetization: subscription revenue + advertising + betting partnerships + interactive features.
+- **Fan Monetization Model:** The Billion-Dollar Core Product taught that media value extends beyond broadcast fees. Your vision should quantify multi-platform monetization: subscription revenue + advertising + betting partnerships + interactive features.
 
 **Real-World Application:** The interactive widgets you used mirror the financial models media executives build to evaluate deals. When you pitch your media strategy, reference these tools to ground projections in industry standards.
 
 ---
 
-## Module 3 Complete - Transition to Module 4
+## The Billion-Dollar Core Product Complete - Transition to Streaming Wars
 
 **What You've Accomplished:**
 You've explored media rights economics through hands-on discovery using 4 interactive widgets. You understand how leagues calculate media rights value, how streaming platform economics differ from traditional broadcasting, how rights holders compare linear vs. DTC strategies, and why fan engagement drives monetization across multiple channels. You've actively manipulated variables, experimented with scenarios, and discovered principles through exploration—not passive reading.
@@ -993,8 +993,8 @@ You've explored media rights economics through hands-on discovery using 4 intera
 - **Fan engagement extends monetization** beyond passive viewing through betting integration, interactive features, and multi-platform distribution
 - The 4 widgets you used revealed that **no single "right" strategy exists**—success depends on league maturity, market position, and risk tolerance
 
-**Up Next: Module 4 - Streaming Wars Simulation**
-You've learned the frameworks. Now it's time to apply them strategically. In Module 4, you'll simulate platform strategy decisions as a streaming executive building a sports content empire. You'll make real-time trade-offs, respond to competitive moves, and see how your choices affect revenue, subscriber growth, and market position.
+**Up Next: Streaming Wars Simulation**
+You've learned the frameworks. Now it's time to apply them strategically. In Streaming Wars Simulation, you'll simulate platform strategy decisions as a streaming executive building a sports content empire. You'll make real-time trade-offs, respond to competitive moves, and see how your choices affect revenue, subscriber growth, and market position.
 
 Ready to build your streaming empire? Let's compete!
 
@@ -1016,7 +1016,7 @@ Ready to build your streaming empire? Let's compete!
 
 ---
 
-## MODULE 4: Interactive Activity - Streaming Wars Strategy
+## Streaming Wars Simulation
 **Purpose:** Active learning - simulate platform strategy decisions (supports WLO 2.2 - Application/Analysis level)
 
 **Uplimit Structure:** Fourth module in Unit 2
@@ -1112,7 +1112,7 @@ Strategic Reflection Questions:
 • How did you balance content costs vs. subscriber acquisition?
 • What surprised you about the economics of streaming vs. expectations?
 
-This simulation prepares you to analyze the Rogers/NHL deal in Module 5. Rogers
+This simulation prepares you to analyze the Rogers/NHL deal in The Rogers Gamble. Rogers
 essentially made these same strategic decisions—but with $5.2 billion at stake.
 Consider: Would you have made the Rogers deal using the insights from this simulation?
 ```
@@ -1184,7 +1184,7 @@ Share your Streaming Wars simulation results and strategy. Did you achieve profi
 - **Screenshot:** Upload an image of your final simulation dashboard (profitability timeline, subscriber count, etc.)
 - **Reflection:** 50 words minimum explaining your strategy and what you learned
 - **Peer Engagement:** React to at least 2 peers' strategies with questions or observations
-- **Deadline:** Before starting Module 5 case study
+- **Deadline:** Before starting The Rogers Gamble case study
 
 **Example Post:**
 "[Screenshot attached] I achieved profitability in Year 4 by [strategy]. My biggest lesson was [insight]. Seeing others' approaches, I'm curious: Did anyone succeed with [alternative strategy]?"
@@ -1216,9 +1216,9 @@ Comparing strategies reveals multiple paths to success and failure. You'll see h
 
 ## 🎯 FINAL PROJECT CONNECTION
 
-**How Module 4 Supports Your Final Strategic Vision:**
+**How This Supports Your Final Strategic Vision:**
 
-Module 4's Streaming Wars simulation gave you hands-on experience building a direct-to-consumer media strategy. This is critical for your Week 5 capstone if your property pursues DTC.
+Streaming Wars Simulation gave you hands-on experience building a direct-to-consumer media strategy. This is critical for your Week 5 capstone if your property pursues DTC.
 
 **What You Learned:**
 - Streaming economics require balancing content acquisition costs, customer acquisition, pricing, and churn
@@ -1227,17 +1227,17 @@ Module 4's Streaming Wars simulation gave you hands-on experience building a dir
 
 **How to Apply This to Your Final Project:**
 
-When you craft your 5-year media strategy in Week 5, Module 4's simulation provides your DTC analysis framework:
+When you craft your 5-year media strategy in Week 5, Streaming Wars Simulation provides your DTC analysis framework:
 
-- **Build vs. License Decision:** If your property considers launching its own streaming service, use Module 4's economics to model profitability timelines. Example: "Following Streaming Wars simulation learnings, our DTC platform requires $50M initial investment with break-even projected in Year 4."
-- **Content Strategy:** Module 4 taught portfolio balance—anchor properties (broad appeal, high cost) + niche content (retention, lower cost). Apply this to your property's content mix.
-- **Customer Economics:** Reference Module 4's LTV calculations to justify pricing. Show subscriber lifetime value exceeds acquisition cost.
+- **Build vs. License Decision:** If your property considers launching its own streaming service, use the simulation economics to model profitability timelines. Example: "Following Streaming Wars Simulation learnings, our DTC platform requires $50M initial investment with break-even projected in Year 4."
+- **Content Strategy:** The simulation taught portfolio balance—anchor properties (broad appeal, high cost) + niche content (retention, lower cost). Apply this to your property's content mix.
+- **Customer Economics:** Reference the LTV calculations from the simulation to justify pricing. Show subscriber lifetime value exceeds acquisition cost.
 
-**Real-World Application:** Major leagues (NBA, NFL, NHL) are evaluating DTC strategies. Module 4's simulation mirrors the financial models they build to decide whether to launch proprietary streaming services.
+**Real-World Application:** Major leagues (NBA, NFL, NHL) are evaluating DTC strategies. Streaming Wars Simulation mirrors the financial models they build to decide whether to launch proprietary streaming services.
 
 ---
 
-## MODULE 5A: Rogers NHL Case Study - Deal Context (V3 INTERACTIVE-FIRST REDESIGN)
+## The Rogers Gamble: Part 1 - Deal Context
 **Purpose:** Understand the Rogers/NHL deal structure, terms, and strategic rationale (supports WLO 2.1, 2.4)
 
 ⭐ **V3 REDESIGN - INTERACTIVE-FIRST**: This module has been redesigned from passive case reading (10-12 pages, 25-30 min) to active case analysis split into TWO microlearning modules (5A + 5B, 23-25 min total, 65% active engagement).
@@ -1255,7 +1255,7 @@ When you craft your 5-year media strategy in Week 5, Module 4's simulation provi
 | 6 | **Text** ⬤ Required | Performance overview (150 words) | 1 min | Embedded markdown below |
 | 7 | **🎮 iFrame Widget** ◐ Recommended | Widget 6: Projections vs. Actuals Visualizer | 4 min | Phase 2 widget (NEEDS TO BE BUILT) |
 
-**Module 5A Metrics:**
+**The Rogers Gamble: Part 1 Metrics:**
 - **Total Time:** ~10 minutes
 - **Reading Time:** 4 minutes (3 text blocks × 1 min + 1 min financial tutorial)
 - **Interactive Time:** 7 minutes (2 widgets + 1 video)
@@ -1592,16 +1592,16 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
 
 ---
 
-## 🏆 MODULE 5A COMPLETE: Deal Context Mastered
+## 🏆 THE ROGERS GAMBLE: PART 1 COMPLETE - Deal Context Mastered
 
-**You've completed Module 5A!** You now understand:
+**You've completed The Rogers Gamble: Part 1!** You now understand:
 ✅ Rogers' $5.2B NHL deal structure and comprehensive terms
 ✅ Strategic rationale: Why Rogers paid 3x the previous deal
 ✅ Financial performance: Rogers never achieved profitability
 
 **🎖️ Achievement Unlocked:** "Deal Context Mastered"
 
-**Coming Next in Module 5B:** Performance analysis, competitive dynamics, and the critical 2026 decision. You'll use your understanding of the deal context to evaluate Rogers' mistakes and recommend next steps.
+**Coming Next in The Rogers Gamble: Part 2:** Performance analysis, competitive dynamics, and the critical 2026 decision. You'll use your understanding of the deal context to evaluate Rogers' mistakes and recommend next steps.
 
 **Optional Break:** This is a good moment to pause (5B is another 13 minutes). Return when you're ready to analyze what went wrong and what Rogers should do in 2026.
 
@@ -1609,9 +1609,9 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
 
 ## 🎯 FINAL PROJECT CONNECTION
 
-**How Module 5A Supports Your Final Strategic Vision:**
+**How This Supports Your Final Strategic Vision:**
 
-Module 5A analyzed the Rogers/NHL deal structure and rationale. This template applies directly to evaluating media deals for YOUR property in Week 5.
+The Rogers Gamble: Part 1 analyzed the Rogers/NHL deal structure and rationale. This template applies directly to evaluating media deals for YOUR property in Week 5.
 
 **What You Learned:**
 - How to structure billion-dollar media rights deals (term, exclusivity, rights scope, revenue model)
@@ -1620,17 +1620,17 @@ Module 5A analyzed the Rogers/NHL deal structure and rationale. This template ap
 
 **How to Apply This to Your Final Project:**
 
-When you design your 5-year media strategy in Week 5, Module 5A's deal structure framework guides your approach:
+When you design your 5-year media strategy in Week 5, The Rogers Gamble: Part 1's deal structure framework guides your approach:
 
 - **Rights Package Definition:** Define what your property offers media partners. Example: "Our property offers exclusive domestic streaming rights + non-exclusive linear broadcast rights, following Rogers' hybrid model but learning from their overreliance on exclusivity."
 - **Valuation Justification:** Rogers' $5.2B valuation assumed specific audience/engagement metrics. Your vision must justify media rights value using similar frameworks: audience size × engagement × demographics × exclusivity premium.
-- **Risk Assessment:** Module 5A showed Rogers' optimistic assumptions. Your vision should stress-test assumptions: "What if streaming subscribers grow 50% slower than projected? What if cord-cutting accelerates?"
+- **Risk Assessment:** The Rogers Gamble: Part 1 showed Rogers' optimistic assumptions. Your vision should stress-test assumptions: "What if streaming subscribers grow 50% slower than projected? What if cord-cutting accelerates?"
 
 **Real-World Application:** The Rogers case is a cautionary tale. Your Week 5 capstone must avoid Rogers' mistakes: overoptimistic projections, insufficient flexibility, underestimating disruption.
 
 ---
 
-## MODULE 5B: Rogers NHL Case Study - Performance Analysis (V3 INTERACTIVE-FIRST REDESIGN)
+## The Rogers Gamble: Part 2 - Performance Analysis
 **Purpose:** Analyze Rogers' performance failures, competitive landscape, and 2026 strategic decision (supports WLO 2.3, 2.4)
 
 **Uplimit Structure:** Sixth module in Unit 2 (Part B of 2-part case study)
@@ -1647,7 +1647,7 @@ When you design your 5-year media strategy in Week 5, Module 5A's deal structure
 | 14 | **🎮 iFrame Widget** ⬤ Required | Widget 8: 2026 Decision Simulator (CAPSTONE) | 5 min | Phase 3 widget (NEEDS TO BE BUILT) |
 | 15 | **Details** ○ Optional | Full case narrative (optional) | Optional | Accordion for deep dive |
 
-**Module 5B Metrics:**
+**The Rogers Gamble: Part 2 Metrics:**
 - **Total Time:** ~13 minutes
 - **Reading Time:** 4 minutes (3 text blocks × 1 min + 1 min table)
 - **Interactive Time:** 8 minutes (2 widgets)
@@ -1950,9 +1950,9 @@ Title: ◆ Optional: Full Rogers NHL Case Study Narrative
 
 ---
 
-## 🏆 MODULE 5B COMPLETE: Performance Analysis Mastered
+## 🏆 THE ROGERS GAMBLE: PART 2 COMPLETE - Performance Analysis Mastered
 
-**You've completed Module 5B!** You now understand:
+**You've completed The Rogers Gamble: Part 2!** You now understand:
 ✅ Why Rogers' financial projections failed (cord-cutting, streaming shortfall, COVID)
 ✅ Viewership and audience trends that undermined the deal
 ✅ How competitors (TSN, DAZN) succeeded with diversification strategies
@@ -1960,7 +1960,7 @@ Title: ◆ Optional: Full Rogers NHL Case Study Narrative
 
 **🎖️ Achievement Unlocked:** "Performance Analysis Mastered"
 
-**Full Case Analysis Complete:** You've now analyzed the entire Rogers $5.2B NHL deal from initial context through performance analysis. You're ready to write your Mini-Case Memo (Module 6) with evidence-based recommendations.
+**Full Case Analysis Complete:** You've now analyzed the entire Rogers $5.2B NHL deal from initial context through performance analysis. You're ready to write Your Media Strategy Memo with evidence-based recommendations.
 
 **Progress:** You're 75% through Week 2 content! The assessment module is next.
 
@@ -1977,13 +1977,13 @@ Debate Rogers' 2026 decision when the NHL deal expires. Should Rogers renew excl
 - **Your Position:** 100 words minimum arguing for ONE option (renew/split/walk)
 - **Evidence-Based:** Reference specific data from Widgets 6-8, financial performance, competitive landscape
 - **Peer Challenge:** Reply to at least 1 peer who chose a DIFFERENT option—respectfully challenge their reasoning
-- **Deadline:** Before starting Module 6 (Mini-Case Memo)
+- **Deadline:** Before starting Your Media Strategy Memo
 
 **Example Post:**
 "I recommend Rogers [OPTION] because [3 evidence-based reasons]. While some might argue [counterargument], the data shows [rebuttal]. Looking at Widget 8's projections, [specific insight]..."
 
 **Why This Matters:**
-There is NO single right answer—this is a strategic judgment call with legitimate arguments on all sides. Engaging with peers who chose differently will strengthen your own analysis and prepare you to write a more nuanced, defensible memo in Module 6.
+There is NO single right answer—this is a strategic judgment call with legitimate arguments on all sides. Engaging with peers who chose differently will strengthen your own analysis and prepare you to write a more nuanced, defensible memo in Your Media Strategy Memo.
 
 **Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
 - 3 points: 100-word position with evidence
@@ -2004,7 +2004,7 @@ There is NO single right answer—this is a strategic judgment call with legitim
 
 ### 🤖 AI CASE ANALYSIS COACH
 
-**AI Chat Widget Configuration** - Available throughout Module 5 to guide your case analysis thinking
+**AI Chat Widget Configuration** - Available throughout The Rogers Gamble to guide your case analysis thinking
 
 **Widget Name:** "Rogers Case Analysis Coach"
 
@@ -2016,7 +2016,7 @@ You are a case analysis coach for MBA students working on the Rogers NHL rights 
 
 When students ask for help:
 1. Ask clarifying questions: "What data have you looked at? What patterns do you notice?"
-2. Point them to relevant frameworks: "Have you applied the rights valuation framework from Module 3? How do the 5 factors play out here?"
+2. Point them to relevant frameworks: "Have you applied the rights valuation framework from The Billion-Dollar Core Product? How do the 5 factors play out here?"
 3. Challenge assumptions: "You said Rogers made a mistake. What evidence supports that? Could there be another interpretation?"
 4. Help structure thinking: "Let's break this down. What were Rogers' goals? What actually happened? Where's the gap?"
 5. Encourage synthesis: "You've identified three mistakes. How do they connect? Is there a pattern?"
@@ -2030,7 +2030,7 @@ DO NOT:
 DO:
 - Ask "why" and "how" questions
 - Reference specific data points from widgets: "Look at the Widget 6 variance data. What do you notice about Year 5?"
-- Connect to Week 2 frameworks: "How does this relate to platform economics we learned in Module 3?"
+- Connect to Week 2 frameworks: "How does this relate to platform economics we learned in The Billion-Dollar Core Product?"
 - Help students develop confidence in their reasoning: "That's a solid insight. What evidence would make it even stronger?"
 
 Tone: Supportive but challenging. Like a good professor during office hours.
@@ -2042,9 +2042,9 @@ Tone: Supportive but challenging. Like a good professor during office hours.
 **Show System Prompt to User:** No
 
 **Uplimit Implementation Notes:**
-- Place widget at end of Module 5 (after Element 15)
+- Place widget at end of The Rogers Gamble (after Element 15)
 - Make available as optional support tool
-- Students can access anytime during Module 5 work
+- Students can access anytime during The Rogers Gamble work
 - Widget persists conversation (students can come back)
 
 **Sample Interactions:**
@@ -2082,9 +2082,9 @@ Tone: Supportive but challenging. Like a good professor during office hours.
 
 ## 🎯 FINAL PROJECT CONNECTION
 
-**How Module 5B Supports Your Final Strategic Vision:**
+**How This Supports Your Final Strategic Vision:**
 
-Module 5B analyzed Rogers' performance failures and 2026 decision. This post-mortem analysis teaches risk management for your Week 5 capstone.
+The Rogers Gamble: Part 2 analyzed Rogers' performance failures and 2026 decision. This post-mortem analysis teaches risk management for your Week 5 capstone.
 
 **What You Learned:**
 - What went wrong: advertising collapsed, streaming underperformed, no contractual flexibility for black swan events (COVID)
@@ -2093,17 +2093,17 @@ Module 5B analyzed Rogers' performance failures and 2026 decision. This post-mor
 
 **How to Apply This to Your Final Project:**
 
-When you craft your 5-year strategic vision in Week 5, Module 5B's failure analysis informs your risk management:
+When you craft your 5-year strategic vision in Week 5, The Rogers Gamble: Part 2's failure analysis informs your risk management:
 
 - **Scenario Planning:** Rogers assumed linear decline would be gradual. Your vision must include downside scenarios. Example: "If cord-cutting accelerates 2× faster than baseline, our media revenue declines from $500M (Year 1) to $300M (Year 5). Mitigation: diversify into DTC and retain 30% revenue from non-media streams."
 - **Contractual Flexibility:** Rogers had no force majeure clause. Your vision should specify deal terms that protect downside: "Seek performance-based revenue share vs. guaranteed fees, with renegotiation triggers if viewership declines >20%."
-- **Post-Investment Review:** Module 5B taught how to evaluate deals ex-post. Your vision should include monitoring KPIs and decision points: "If streaming subs <500K by Year 2, pivot from DTC to licensing model."
+- **Post-Investment Review:** The Rogers Gamble: Part 2 taught how to evaluate deals ex-post. Your vision should include monitoring KPIs and decision points: "If streaming subs <500K by Year 2, pivot from DTC to licensing model."
 
 **Real-World Application:** Rogers lost $1.5B+ over 10 years. Your Week 5 capstone must demonstrate you've learned from their mistakes: conservative projections, downside protection, strategic flexibility.
 
 ---
 
-## MODULE 6: Assessment - Mini-Case Memo
+## Your Media Strategy Memo
 **Purpose:** Assess student understanding of Week 2 content (measures WLO 2.1, 2.2, 2.3, 2.4)
 
 ⭐ **SCAFFOLDED ASSESSMENT**: This module breaks memo writing into 3 micro-steps with AI feedback BEFORE final submission. Reduces writing anxiety and improves quality through iterative improvement.
@@ -2374,7 +2374,7 @@ There are opportunities to strengthen your case analysis.
 To improve:
 • Re-watch Part 3 of the executive session (Rogers deal discussion with industry perspective)
 • Review the financial exhibits more closely - what do the numbers tell you about mistakes?
-• Revisit the media rights valuation framework (Module 3) and apply it systematically
+• Revisit the media rights valuation framework (The Billion-Dollar Core Product) and apply it systematically
 • Use the Case Analysis Assistant (AI chat) to work through your logic
 
 Consider office hours for one-on-one case discussion.
@@ -2479,9 +2479,9 @@ but may lack depth or miss less obvious strategic errors."
 
 ## 🎯 FINAL PROJECT CONNECTION
 
-**How Module 6 Supports Your Final Strategic Vision:**
+**How This Supports Your Final Strategic Vision:**
 
-Module 6's Mini-Case Memo is practice for your Week 5 capstone assessment. You've now written an executive-level strategic analysis synthesizing Week 2 frameworks.
+Your Media Strategy Memo is practice for your Week 5 capstone assessment. You've now written an executive-level strategic analysis synthesizing Week 2 frameworks.
 
 **What You Learned:**
 - How to evaluate billion-dollar deals using multiple frameworks (rights valuation, platform economics, engagement, strategic fit)
@@ -2491,18 +2491,18 @@ Module 6's Mini-Case Memo is practice for your Week 5 capstone assessment. You'v
 
 **How to Apply This to Your Final Project:**
 
-When you write your 5-year strategic vision in Week 5, Module 6's memo structure becomes your template:
+When you write your 5-year strategic vision in Week 5, Your Media Strategy Memo's structure becomes your template:
 
 - **Analytical Rigor:** Your capstone requires the same evidence-based analysis you practiced here. Every claim needs data/framework support: "Rogers' mistake was X (evidence: Exhibit A shows Y variance). Our property avoids this by Z strategy."
-- **Trade-Off Clarity:** Module 6 forced you to weigh renew vs. renegotiate vs. exit. Week 5 will require similar decision frameworks: build vs. license, DTC vs. linear, exclusive vs. non-exclusive.
+- **Trade-Off Clarity:** Your Media Strategy Memo forced you to weigh renew vs. renegotiate vs. exit. Week 5 will require similar decision frameworks: build vs. license, DTC vs. linear, exclusive vs. non-exclusive.
 - **Executive Communication:** The memo format you practiced—situation analysis → evaluation → recommendation → rationale—is exactly what your Week 5 capstone requires. Scale it from 750 words to 2,000 words.
-- **Peer + AI Review:** You used AI feedback and peer review in Module 6. Apply the same iterative improvement process to your Week 5 capstone.
+- **Peer + AI Review:** You used AI feedback and peer review in Your Media Strategy Memo. Apply the same iterative improvement process to your Week 5 capstone.
 
 **Real-World Application:** The Mini-Case Memo you wrote mirrors the strategy documents executives submit to boards for multi-million dollar decisions. Your Week 5 capstone scales this skill to a comprehensive 5-year vision.
 
 ---
 
-## MODULE 7: Wrap-Up, Preview & Anchor Project Milestone
+## Looking Ahead to Week 3
 **Purpose:** Consolidate Week 2 learning, preview Week 3, launch Anchor Project Team Formation
 
 **Uplimit Structure:** Final module in Unit 2
@@ -2779,23 +2779,23 @@ are great for crowdsourcing ideas from other teams.
 - ☐ `team-charter.html` (Anchor Project tool - may already exist)
 
 ### Images:
-- ☐ `fan-engagement-value-chain.png` (diagram for Module 3)
+- ☐ `fan-engagement-value-chain.png` (diagram for The Billion-Dollar Core Product)
   - Alt text written ✓
   - Optimized for web ✓
 
 ### Content to Type Directly in Uplimit:
 - ☐ All Infobox content (7 total across all modules)
-- ☐ Tiles content (3 tiles in Module 1)
-- ☐ Vertical List content (5 items in Module 3)
+- ☐ Tiles content (3 tiles in Your Week 2 Journey)
+- ☐ Vertical List content (5 items in The Billion-Dollar Core Product)
 - ☐ Tables (2 total: Linear vs. Streaming comparison, Rogers deal summary)
 - ☐ All Details accordion content (multiple across modules)
-- ☐ Text Response rubric (Module 6)
-- ☐ Anchor Project instructions (Module 7)
+- ☐ Text Response rubric (Your Media Strategy Memo)
+- ☐ Anchor Project instructions (Looking Ahead to Week 3)
 
 ### AI Chat Widgets to Configure (Core Learning Coaches):
-- ☐ "Media Strategy Q&A" (Module 2) - Your Learning Coach
-- ☐ "Platform Strategy Assistant" (Module 4) - Your Strategy Coach
-- ☐ "Rogers Case Analysis Coach" (Module 6) - Your Case Analysis Coach
+- ☐ "Media Strategy Q&A" (Inside Media Rights) - Your Learning Coach
+- ☐ "Platform Strategy Assistant" (Streaming Wars Simulation) - Your Strategy Coach
+- ☐ "Rogers Case Analysis Coach" (Your Media Strategy Memo) - Your Case Analysis Coach
 
 ---
 
@@ -2814,21 +2814,21 @@ are great for crowdsourcing ideas from other teams.
 - ☐ Type all direct text content (Anchor Project instructions, preview, etc.)
 
 ### Week 3: Visual & Interactive
-- ☐ Create Tiles (3 in Module 1)
-- ☐ Create Vertical List (5 items in Module 3)
+- ☐ Create Tiles (3 in Your Week 2 Journey)
+- ☐ Create Vertical List (5 items in The Billion-Dollar Core Product)
 - ☐ Create Tables (2 total)
-- ☐ Upload videos + transcripts (Module 2: 2min session, Module 5: 2min retrospective)
+- ☐ Upload videos + transcripts (Inside Media Rights: 2min session, The Rogers Gamble: 2min retrospective)
 - ☐ Upload image (fan engagement value chain)
 
 ### Week 4: Interactive Elements
-- ☐ Embed Streaming Wars Strategy widget (iFrame in Module 4)
-- ☐ Embed Property Selector widget (iFrame in Module 7)
-- ☐ Embed Team Charter Builder widget (iFrame in Module 7)
+- ☐ Embed Streaming Wars Strategy widget (iFrame in Streaming Wars Simulation)
+- ☐ Embed Property Selector widget (iFrame in Looking Ahead to Week 3)
+- ☐ Embed Team Charter Builder widget (iFrame in Looking Ahead to Week 3)
 - ☐ Create all Details accordions
 - ☐ Configure 3 AI Chat Widgets
 
 ### Week 5: Assessment & Anchor Project
-- ☐ Create Text Response question (Module 6)
+- ☐ Create Text Response question (Your Media Strategy Memo)
 - ☐ Build complete rubric with criteria and point values
 - ☐ Write all feedback templates
 - ☐ Enable AI grading and test
@@ -2847,7 +2847,7 @@ are great for crowdsourcing ideas from other teams.
 ## UDL & Accessibility Verification
 
 ### Multiple Means of Representation ✓
-- ☐ Video content has VTT transcripts (Module 2: 2min + Module 5: 2min)
+- ☐ Video content has VTT transcripts (Inside Media Rights: 2min + The Rogers Gamble: 2min)
 - ☐ Core concepts presented in multiple formats:
   - Text (readings, case study)
   - Video (executive session, retrospective)

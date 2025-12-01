@@ -17,23 +17,23 @@ This storyboard has been split into individual module files for easier navigatio
 
 ### 📋 Module Files
 
-1. **[MODULE 0: Bridge In - The Heritage Monetization Dilemma](modules/module-0-bridge-in.md)** (~26 KB)
+1. **[Quick Start: The Heritage Dilemma](modules/module-0-bridge-in.md)** (~26 KB)
    - Bridge video with Hockey Hall of Fame transformation challenge
    - AI Roleplay diagnostic exercise (tradition vs. innovation tensions)
    - Pre-assessment quiz with personalized learning paths
    - **Time**: 24-28 minutes
 
-2. **[MODULE 1: Welcome & Learning Objectives](modules/module-1-welcome.md)** (~4 KB)
+2. **[Your Week 5 Journey](modules/module-1-welcome.md)** (~4 KB)
    - Week overview and learning outcomes
    - Course synthesis and Week 5 focus
    - Connection to CLO 5
 
-3. **[MODULE 2: Executive Leader Perspectives](modules/module-2-executive.md)** (~4 KB)
+3. **[Voices from Heritage Properties](modules/module-2-executive.md)** (~4 KB)
    - Recorded session with Jamie Dinsmore (HHOF President & CEO)
    - Recorded session with Keith Pelley (MLSE President & CEO)
    - Real-world context on heritage vs. growth tension
 
-4. **[MODULE 3: Core Content - Heritage Monetization & Future Trends](modules/module-3-core-content.md)** (~48 KB)
+4. **[Tradition Meets Innovation](modules/module-3-core-content.md)** (~48 KB)
    - **V3 INTERACTIVE-FIRST REDESIGN** (75% active engagement target)
    - 3 major interactive widgets demonstrating Week 5 concepts:
      - **Legacy vs Innovation Matrix** - Balance preservation with growth
@@ -42,22 +42,22 @@ This storyboard has been split into individual module files for easier navigatio
    - Text reduced to essential concepts only
    - **Time**: ~42 minutes
 
-5. **[MODULE 4: Interactive Activity - Hockey Hall of Fame Transformation](modules/module-4-interactive.md)** (~13 KB)
+5. **[Transform the Hall of Fame](modules/module-4-interactive.md)** (~13 KB)
    - Strategic simulation: Transform HHOF for next 10 years
    - Trade-offs between tradition, revenue, and fan experience
    - Apply Week 5 frameworks to real case
 
-6. **[MODULE 5: Case Study - Hockey Hall of Fame: Managing Tradition and Growth](modules/module-5-case-study.md)** (~14 KB)
+6. **[The HHOF Challenge](modules/module-5-case-study.md)** (~14 KB)
    - Custom case analysis (4,000-word case)
    - HHOF's revenue challenge and digital transformation
    - Application of legacy vs innovation concepts
 
-7. **[MODULE 6: Assessment - Strategic Vision Memo](modules/module-6-assessment.md)** (~28 KB)
+7. **[Your Strategic Vision](modules/module-6-assessment.md)** (~28 KB)
    - Final 5-year strategic vision memo (integrates Weeks 1-5)
    - QM-aligned rubric with detailed criteria
    - Assesses ALL 5 CLOs across entire course
 
-8. **[MODULE 7: Wrap-Up & Course Synthesis](modules/module-7-wrap-up.md)** (~6 KB)
+8. **[Course Celebration & Next Steps](modules/module-7-wrap-up.md)** (~6 KB)
    - Week 5 synthesis and course retrospective
    - Journey from Week 1 revenue streams → Week 5 strategic vision
    - Celebration of learning and future applications
@@ -86,7 +86,7 @@ By the end of this week, students will be able to:
 
 ## Week 5 Widget Specifications
 
-### Widget 1: Legacy vs Innovation Matrix (Module 3)
+### Widget 1: Legacy vs Innovation Matrix (Tradition Meets Innovation)
 
 **Purpose**: Interactive tool for mapping strategic decisions on two axes: Tradition Preservation (low/high) and Revenue Growth (low/high), creating 4 strategic quadrants.
 
@@ -100,7 +100,7 @@ By the end of this week, students will be able to:
 
 ---
 
-### Widget 2: Heritage Property Analyzer (Module 3)
+### Widget 2: Heritage Property Analyzer (Tradition Meets Innovation)
 
 **Purpose**: Financial model for heritage sports properties (museums, halls of fame, legacy events), showing revenue breakdown and growth scenarios.
 
@@ -115,7 +115,7 @@ By the end of this week, students will be able to:
 
 ---
 
-### Widget 3: Future Trends Simulator (Module 3)
+### Widget 3: Future Trends Simulator (Tradition Meets Innovation)
 
 **Purpose**: Forecast tool showing how emerging trends (AI, VR/AR, demographics, new sports) will impact sports business over 5-10 years.
 
@@ -134,7 +134,7 @@ By the end of this week, students will be able to:
 
 **Design Principles Applied**:
 - ✅ **No text block over 150 words** (synthesis week doesn't mean walls of text)
-- ✅ **Interactive widget every 2-3 elements** (3 major widgets in Module 3)
+- ✅ **Interactive widget every 2-3 elements** (3 major widgets in Tradition Meets Innovation)
 - ✅ **Capstone integration**: Widgets designed to support final strategic vision memo
 - ✅ **Student agency**: All widgets allow experimentation and "what if" scenarios
 - ✅ **Progressive complexity**: Builds on Weeks 1-4 frameworks, applies to new context
@@ -215,7 +215,7 @@ Students recommend 1 of 3 paths:
 
 - Each module file is self-contained and can be edited independently
 - Maintain consistent Uplimit element naming conventions
-- Use the LEGEND in Module 0 for storyboard notation reference
+- Use the LEGEND in Quick Start: The Heritage Dilemma for storyboard notation reference
 - All widgets are in `/modules/week5/widgets/` directory (to be built)
 - Keep accessibility standards (WCAG 2.2 AA) in all content
 
@@ -235,14 +235,14 @@ Students recommend 1 of 3 paths:
 
 ### Phase 2: Uplimit Build (Sequential)
 - ☐ Create Unit 5 in Uplimit (September 22-29 dates)
-- ☐ Build Module 0 (Bridge In) with AI Roleplay diagnostic
-- ☐ Build Module 1 (Welcome & Learning Objectives)
-- ☐ Build Module 2 (Executive Sessions)
-- ☐ Build Module 3 (Core Content) with 3 widgets embedded
-- ☐ Build Module 4 (Interactive Activity)
-- ☐ Build Module 5 (Case Study) with HHOF case attachment
-- ☐ Build Module 6 (Assessment) with strategic vision memo submission
-- ☐ Build Module 7 (Wrap-Up & Course Synthesis)
+- ☐ Build Quick Start: The Heritage Dilemma with AI Roleplay diagnostic
+- ☐ Build Your Week 5 Journey
+- ☐ Build Voices from Heritage Properties
+- ☐ Build Tradition Meets Innovation with 3 widgets embedded
+- ☐ Build Transform the Hall of Fame
+- ☐ Build The HHOF Challenge with HHOF case attachment
+- ☐ Build Your Strategic Vision with strategic vision memo submission
+- ☐ Build Course Celebration & Next Steps
 
 ### Phase 3: Quality Assurance
 - ☐ Accessibility audit (WCAG 2.2 AA compliance)
@@ -263,13 +263,13 @@ Students recommend 1 of 3 paths:
 
 Each module has its own detailed build specification with complete content:
 
-1. [Module 0: Bridge In](modules/module-0-bridge-in.md)
-2. [Module 1: Welcome](modules/module-1-welcome.md)
-3. [Module 2: Executive Sessions](modules/module-2-executive.md)
-4. [Module 3: Core Content](modules/module-3-core-content.md)
-5. [Module 4: Interactive Activity](modules/module-4-interactive.md)
-6. [Module 5: Case Study](modules/module-5-case-study.md)
-7. [Module 6: Assessment](modules/module-6-assessment.md)
-8. [Module 7: Wrap-Up](modules/module-7-wrap-up.md)
+1. [Quick Start: The Heritage Dilemma](modules/module-0-bridge-in.md)
+2. [Your Week 5 Journey](modules/module-1-welcome.md)
+3. [Voices from Heritage Properties](modules/module-2-executive.md)
+4. [Tradition Meets Innovation](modules/module-3-core-content.md)
+5. [Transform the Hall of Fame](modules/module-4-interactive.md)
+6. [The HHOF Challenge](modules/module-5-case-study.md)
+7. [Your Strategic Vision](modules/module-6-assessment.md)
+8. [Course Celebration & Next Steps](modules/module-7-wrap-up.md)
 
 **Total Storyboard Lines**: ~1,800 lines (distributed across 8 module files for navigability)

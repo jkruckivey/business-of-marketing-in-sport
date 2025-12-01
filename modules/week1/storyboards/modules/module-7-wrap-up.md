@@ -1,4 +1,4 @@
-## MODULE 7: Wrap-Up & Preview (BOPPPS: Summary)
+# Looking Ahead to Week 2
 **Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Consolidate Week 1 learning, preview Week 2
@@ -53,14 +53,14 @@ the Project Guide (available on course homepage).
 You've traveled from the Connor McDavid paradox to mastering revenue ecosystem analysis. You explored five revenue streams through interactive discovery, built your own strategic portfolio, analyzed the Vancouver Canucks' real challenges, and demonstrated your learning through a comprehensive reflection memo.
 
 **Your Week 1 Journey:**
-- Module 0: Hooked by the $100M question
-- Module 1: Established learning outcomes
-- Module 2: Heard expert perspective
-- Module 3: Discovered revenue streams through 8 interactive widgets
-- Module 4: Built your own revenue empire strategy
-- Module 5: Analyzed the Canucks case
-- Module 6: Synthesized learning in reflection memo
-- Module 7: Consolidated takeaways and previewed Week 2
+- Quick Start: Hooked by the $100M question
+- Your Week 1 Journey: Established learning outcomes
+- Inside the Sports Business: Heard expert perspective
+- Five Revenue Streams: Discovered revenue concepts through 8 interactive widgets
+- Build Your Revenue Empire: Built your own revenue strategy
+- The Canucks Challenge: Analyzed the real case
+- Your Executive Memo: Synthesized learning in reflection memo
+- Looking Ahead: Consolidated takeaways and previewed Week 2
 
 ---
 

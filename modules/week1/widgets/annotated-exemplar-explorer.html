@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annotated Exemplar Explorer - Executive Memo Writing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-error: #ef4444;
+            --color-success: #c0d1cd;
+            --color-warning: #f0ede0;
+            --color-info: #bfe5e7;
+            --color-accent: #3182ce;
+            --color-accent-light: #ebf4ff;
+            --color-highlight: #fef3c7;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --border-radius: 8px;
+            --border-radius-sm: 4px;
+        }
+
+        *:focus {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        *:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        *:focus-visible {
+            outline: 2px solid var(--color-accent);
+            outline-offset: 2px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: white;
+            color: var(--color-neutral-800);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--color-neutral-50);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            border: 1px solid var(--color-neutral-200);
+        }
+
+        h1 {
+            color: var(--color-neutral-900);
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--color-neutral-500);
+            margin-bottom: 24px;
+            font-size: 0.95rem;
+        }
+
+        /* Tab Navigation */
+        .tab-nav {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--color-neutral-200);
+            padding-bottom: 0;
+        }
+
+        .tab-btn {
+            padding: 12px 20px;
+            background: none;
+            border: none;
+            font-family: var(--font-family-primary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-neutral-500);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn:hover {
+            color: var(--color-neutral-700);
+            background: var(--color-neutral-100);
+        }
+
+        .tab-btn.active {
+            color: var(--color-accent);
+            border-bottom-color: var(--color-accent);
+        }
+
+        .tab-btn:focus-visible {
+            outline-offset: -2px;
+        }
+
+        /* Main Content Area */
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 24px;
+            min-height: 500px;
+        }
+
+        @media (max-width: 900px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .annotation-panel {
+                order: -1;
+            }
+        }
+
+        /* Tab Panels */
+        .tab-panel {
+            display: none;
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 24px;
+            border: 1px solid var(--color-neutral-200);
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        /* Memo Styling */
+        .memo {
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .memo-header {
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        .memo-header p {
+            margin: 4px 0;
+        }
+
+        .memo-header strong {
+            display: inline-block;
+            width: 60px;
+            color: var(--color-neutral-600);
+        }
+
+        .memo-body p {
+            margin-bottom: 16px;
+        }
+
+        .memo-body h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin: 20px 0 12px 0;
+            color: var(--color-neutral-800);
+        }
+
+        .memo-body ol, .memo-body ul {
+            margin: 12px 0 16px 24px;
+        }
+
+        .memo-body li {
+            margin-bottom: 8px;
+        }
+
+        .word-count {
+            text-align: right;
+            font-style: italic;
+            color: var(--color-neutral-500);
+            font-size: 0.85rem;
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--color-neutral-200);
+        }
+
+        /* Hotspot Styling */
+        .hotspot {
+            background: var(--color-highlight);
+            padding: 2px 4px;
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.2s ease;
+            border-bottom: 2px dashed var(--color-warning);
+        }
+
+        .hotspot:hover {
+            background: #fde68a;
+        }
+
+        .hotspot.viewed {
+            background: var(--color-success);
+            border-bottom-color: #86b3a8;
+        }
+
+        .hotspot.active {
+            background: var(--color-accent-light);
+            border-bottom-color: var(--color-accent);
+            box-shadow: 0 0 0 2px var(--color-accent);
+        }
+
+        .hotspot-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: var(--color-neutral-700);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+
+        .hotspot.viewed .hotspot-number {
+            background: #4a7c6f;
+        }
+
+        .hotspot.active .hotspot-number {
+            background: var(--color-accent);
+        }
+
+        /* Annotation Panel */
+        .annotation-panel {
+            background: white;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--color-neutral-200);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .annotation-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--color-neutral-200);
+            background: var(--color-neutral-50);
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+        }
+
+        .annotation-header h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-neutral-800);
+            margin-bottom: 4px;
+        }
+
+        .annotation-header p {
+            font-size: 0.85rem;
+            color: var(--color-neutral-500);
+        }
+
+        .annotation-content {
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .annotation-placeholder {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--color-neutral-400);
+        }
+
+        .annotation-placeholder svg {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 12px;
+            opacity: 0.5;
+        }
+
+        .annotation-active {
+            display: none;
+        }
+
+        .annotation-active.show {
+            display: block;
+        }
+
+        .annotation-active h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .annotation-active h3 span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: var(--color-accent);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.8rem;
+        }
+
+        .annotation-active p {
+            font-size: 0.9rem;
+            color: var(--color-neutral-700);
+            margin-bottom: 12px;
+        }
+
+        .annotation-active .tip {
+            background: var(--color-info);
+            padding: 12px 16px;
+            border-radius: var(--border-radius-sm);
+            font-size: 0.85rem;
+            margin-top: 16px;
+        }
+
+        .annotation-active .tip strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--color-neutral-800);
+        }
+
+        /* Progress Footer */
+        .progress-footer {
+            padding: 16px 20px;
+            border-top: 1px solid var(--color-neutral-200);
+            background: var(--color-neutral-50);
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+        }
+
+        .progress-bar-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 8px;
+            background: var(--color-neutral-200);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--color-success);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            font-size: 0.8rem;
+            color: var(--color-neutral-500);
+            white-space: nowrap;
+        }
+
+        .view-all-btn {
+            display: block;
+            width: 100%;
+            margin-top: 12px;
+            padding: 10px;
+            background: none;
+            border: 1px solid var(--color-neutral-300);
+            border-radius: var(--border-radius-sm);
+            font-family: var(--font-family-primary);
+            font-size: 0.85rem;
+            color: var(--color-neutral-600);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .view-all-btn:hover {
+            background: var(--color-neutral-100);
+            border-color: var(--color-neutral-400);
+        }
+
+        /* Side-by-Side Changes View */
+        .changes-view {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 700px) {
+            .changes-view {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .changes-column {
+            background: var(--color-neutral-50);
+            border-radius: var(--border-radius-sm);
+            padding: 16px;
+        }
+
+        .changes-column h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid;
+        }
+
+        .changes-column.developing h3 {
+            color: var(--color-error);
+            border-bottom-color: var(--color-error);
+        }
+
+        .changes-column.exemplary h3 {
+            color: #16a34a;
+            border-bottom-color: #16a34a;
+        }
+
+        .changes-column .memo {
+            font-size: 0.8rem;
+        }
+
+        .strikethrough {
+            text-decoration: line-through;
+            color: var(--color-error);
+            background: #fef2f2;
+            padding: 1px 3px;
+            border-radius: 2px;
+        }
+
+        .addition {
+            color: #16a34a;
+            background: #f0fdf4;
+            padding: 1px 3px;
+            border-radius: 2px;
+        }
+
+        /* Screen Reader Only */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Live Region for Announcements */
+        #live-region {
+            position: absolute;
+            left: -10000px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        /* All Annotations Modal */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+        .modal {
+            background: white;
+            border-radius: var(--border-radius);
+            max-width: 700px;
+            width: 100%;
+            max-height: 80vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .modal-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--color-neutral-200);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--color-neutral-500);
+            padding: 4px 8px;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: var(--color-neutral-800);
+        }
+
+        .modal-body {
+            padding: 24px;
+            overflow-y: auto;
+        }
+
+        .modal-annotation {
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        .modal-annotation:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .modal-annotation h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-neutral-800);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .modal-annotation h3 span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--color-accent);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.85rem;
+        }
+
+        .modal-annotation p {
+            color: var(--color-neutral-600);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Annotated Exemplar Explorer</h1>
+        <p class="subtitle">Compare a developing draft to an exemplary memo. Click highlighted sections to learn what makes the difference.</p>
+
+        <!-- Tab Navigation -->
+        <div class="tab-nav" role="tablist" aria-label="Memo comparison views">
+            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-developing" id="tab-developing">
+                Developing Draft
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-exemplary" id="tab-exemplary">
+                Exemplary Draft
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-changes" id="tab-changes">
+                Side-by-Side
+            </button>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Main Content Panels -->
+            <div class="panels-container">
+                <!-- Developing Draft Panel -->
+                <div class="tab-panel active" role="tabpanel" id="panel-developing" aria-labelledby="tab-developing">
+                    <div class="memo">
+                        <div class="memo-header">
+                            <p><strong>TO:</strong> <span class="hotspot" data-annotation="1" tabindex="0" role="button" aria-describedby="annotation-1">Investment Committee<span class="hotspot-number">1</span></span></p>
+                            <p><strong>FROM:</strong> Sports Consultant</p>
+                            <p><strong>RE:</strong> Sports Investment</p>
+                        </div>
+                        <div class="memo-body">
+                            <p>Professional sports teams are <span class="hotspot" data-annotation="2" tabindex="0" role="button" aria-describedby="annotation-2">different from other businesses<span class="hotspot-number">2</span></span>. They make money from several sources including media, tickets, sponsorship, merchandise, and betting.</p>
+
+                            <p><span class="hotspot" data-annotation="3" tabindex="0" role="button" aria-describedby="annotation-3">The revenue streams are connected to each other. For example, media rights are important for teams. Revenue sharing also matters because it helps teams stay competitive.<span class="hotspot-number">3</span></span></p>
+
+                            <p><span class="hotspot" data-annotation="4" tabindex="0" role="button" aria-describedby="annotation-4">If you invest, you should think about a few things.<span class="hotspot-number">4</span></span> <span class="hotspot" data-annotation="5" tabindex="0" role="button" aria-describedby="annotation-5">First, look at how the league shares revenue. Second, consider the growth potential. Third, think about the risks involved.<span class="hotspot-number">5</span></span></p>
+
+                            <p><span class="hotspot" data-annotation="6" tabindex="0" role="button" aria-describedby="annotation-6">Overall, sports teams can be good investments but there are also risks to consider.<span class="hotspot-number">6</span></span> <span class="hotspot" data-annotation="7" tabindex="0" role="button" aria-describedby="annotation-7">You should do more research before deciding.<span class="hotspot-number">7</span></span></p>
+                        </div>
+                        <p class="word-count"><span class="hotspot" data-annotation="8" tabindex="0" role="button" aria-describedby="annotation-8">[No word count shown]<span class="hotspot-number">8</span></span></p>
+                    </div>
+                </div>
+
+                <!-- Exemplary Draft Panel -->
+                <div class="tab-panel" role="tabpanel" id="panel-exemplary" aria-labelledby="tab-exemplary">
+                    <div class="memo">
+                        <div class="memo-header">
+                            <p><strong>TO:</strong> Brookfield Capital Investment Committee</p>
+                            <p><strong>FROM:</strong> [Name], Sports Business Consultant</p>
+                            <p><strong>DATE:</strong> [Current Date]</p>
+                            <p><strong>RE:</strong> Professional Sports Team Investment Analysis: Revenue Model Assessment</p>
+                        </div>
+                        <div class="memo-body">
+                            <p>Professional sports teams operate under a fundamentally different economic model than traditional businesses. Before committing $500M-$1B, you must understand three characteristics that create both opportunity and risk.</p>
+
+                            <h3>1. Revenue Ecosystem Interdependence</h3>
+                            <p>Unlike traditional businesses, sports revenue streams are deeply interconnected. Media rights (55% of NHL revenue) depend on competitive balance maintained through revenue sharing. The Vancouver Canucks case demonstrates this: despite market challenges, the team receives $XX million annually in shared national media revenue&mdash;a floor that protects downside risk regardless of on-ice performance.</p>
+
+                            <h3>2. Shared Economics Create Unusual Incentives</h3>
+                            <p>Sports teams must collaborate with competitors to maximize value. Strong league governance (salary caps, draft systems, revenue pools) correlates with franchise stability. Leagues with robust sharing&mdash;NFL distributes 63% of revenue equally&mdash;show lower variance in team valuations.</p>
+
+                            <h3>Investment Decision Factors</h3>
+                            <p>Two factors should guide your due diligence:</p>
+                            <ol>
+                                <li><strong>Revenue sharing structure:</strong> Prioritize leagues/teams where sharing protects downside. Calculate the "floor" revenue a team receives regardless of performance.</li>
+                                <li><strong>Emerging stream exposure:</strong> Evaluate the team's position in betting partnerships and digital content rights. These streams (projected 15-20% of revenue by 2030) sit outside traditional sharing pools, creating upside for first-movers.</li>
+                            </ol>
+
+                            <p><strong>Recommendation:</strong> Sports teams are not traditional businesses, but with proper due diligence on league revenue structures and emerging stream potential, they offer attractive risk-adjusted returns for patient capital. I recommend proceeding to Phase 2 due diligence on the shortlisted properties.</p>
+                        </div>
+                        <p class="word-count">[498 words]</p>
+                    </div>
+                </div>
+
+                <!-- Side-by-Side Changes Panel -->
+                <div class="tab-panel" role="tabpanel" id="panel-changes" aria-labelledby="tab-changes">
+                    <div class="changes-view">
+                        <div class="changes-column developing">
+                            <h3>Developing Draft</h3>
+                            <div class="memo">
+                                <p><span class="strikethrough">TO: Investment Committee</span></p>
+                                <p><span class="strikethrough">FROM: Sports Consultant</span></p>
+                                <p><span class="strikethrough">RE: Sports Investment</span></p>
+                                <br>
+                                <p><span class="strikethrough">Professional sports teams are different from other businesses.</span></p>
+                                <p><span class="strikethrough">The revenue streams are connected to each other. For example, media rights are important for teams.</span></p>
+                                <p><span class="strikethrough">If you invest, you should think about a few things. First, look at how the league shares revenue.</span></p>
+                                <p><span class="strikethrough">Overall, sports teams can be good investments but there are also risks to consider. You should do more research before deciding.</span></p>
+                            </div>
+                        </div>
+                        <div class="changes-column exemplary">
+                            <h3>Exemplary Draft</h3>
+                            <div class="memo">
+                                <p><span class="addition">TO: Brookfield Capital Investment Committee</span></p>
+                                <p><span class="addition">FROM: [Name], Sports Business Consultant</span></p>
+                                <p><span class="addition">DATE: [Current Date]</span></p>
+                                <p><span class="addition">RE: Professional Sports Team Investment Analysis</span></p>
+                                <br>
+                                <p><span class="addition">Professional sports teams operate under a fundamentally different economic model...</span></p>
+                                <p><span class="addition">Media rights (55% of NHL revenue) depend on competitive balance... The Vancouver Canucks case demonstrates...</span></p>
+                                <p><span class="addition">Two factors should guide your due diligence: 1) Revenue sharing structure... 2) Emerging stream exposure...</span></p>
+                                <p><span class="addition">Recommendation: I recommend proceeding to Phase 2 due diligence on the shortlisted properties.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Annotation Panel -->
+            <aside class="annotation-panel" aria-label="Annotations">
+                <div class="annotation-header">
+                    <h2>Instructor Feedback</h2>
+                    <p>Click highlighted text to see annotations</p>
+                </div>
+
+                <div class="annotation-content">
+                    <!-- Placeholder when no annotation selected -->
+                    <div class="annotation-placeholder" id="annotation-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                        </svg>
+                        <p>Click any highlighted section in the draft to see feedback on how to improve it.</p>
+                    </div>
+
+                    <!-- Annotation 1 -->
+                    <div class="annotation-active" id="annotation-1" aria-live="polite">
+                        <h3><span>1</span> Vague Header</h3>
+                        <p><strong>What's missing:</strong> Professional memos include full recipient/sender titles, specific date, and a descriptive subject line.</p>
+                        <p>The exemplary version tells the reader exactly what this memo covers before they even start reading.</p>
+                        <div class="tip">
+                            <strong>Quick Fix:</strong>
+                            Add the date, expand titles (e.g., "Sports Business Consultant"), and make RE: specific (e.g., "Revenue Model Assessment").
+                        </div>
+                    </div>
+
+                    <!-- Annotation 2 -->
+                    <div class="annotation-active" id="annotation-2">
+                        <h3><span>2</span> Too Vague</h3>
+                        <p><strong>Show, don't just tell:</strong> "Different" is vague. HOW are they different?</p>
+                        <p>The exemplary version specifies the differences (interdependent revenue, shared economics) and promises three specific insights&mdash;setting up clear expectations.</p>
+                        <div class="tip">
+                            <strong>Quick Fix:</strong>
+                            Replace "different" with specific characteristics: "operate under a fundamentally different economic model" + explain what that means.
+                        </div>
+                    </div>
+
+                    <!-- Annotation 3 -->
+                    <div class="annotation-active" id="annotation-3">
+                        <h3><span>3</span> Claims Without Evidence</h3>
+                        <p><strong>Evidence matters:</strong> Every claim needs support. This paragraph makes assertions but provides no data.</p>
+                        <p>The exemplary version cites "55% of NHL revenue" and references the Canucks case. Your reader is a data-driven PE investor&mdash;give them numbers.</p>
+                        <div class="tip">
+                            <strong>Quick Fix:</strong>
+                            Add specific percentages and case references: "Media rights comprise 55% of NHL revenue. The Canucks case demonstrates..."
+                        </div>
+                    </div>
+
+                    <!-- Annotation 4 -->
+                    <div class="annotation-active" id="annotation-4">
+                        <h3><span>4</span> Weak Transition</h3>
+                        <p><strong>Signpost your structure:</strong> "A few things" forces the reader to count. How many things? Three? Five?</p>
+                        <p>The exemplary version uses a clear header ("Investment Decision Factors") and numbers each factor explicitly.</p>
+                        <div class="tip">
+                            <strong>Quick Fix:</strong>
+                            Use a header and be specific: "Two factors should guide your investment decision:" then number them clearly.
+                        </div>
+                    </div>
+
+                    <!-- Annotation 5 -->
+                    <div class="annotation-active" id="annotation-5">
+                        <h3><span>5</span> Generic Advice</h3>
+                        <p><strong>Be specific and actionable:</strong> "Look at revenue sharing" is advice anyone could give without studying sports business.</p>
+                        <p>The exemplary version tells them exactly WHAT to look for: "Calculate the 'floor' revenue a team receives regardless of performance."</p>
+                        <div class="tip">
+                            <strong>Quick Fix:</strong>
+                            For each factor, add the "so what"&mdash;what specifically should they analyze, and what would a good answer look like?
+                        </div>
+                    </div>
+
+                    <!-- Annotation 6 -->
+                    <div class="annotation-active" id="annotation-6">
+                        <h3><span>6</span> Wishy-Washy Conclusion</h3>
+                        <p><strong>Take a position:</strong> Executives hire consultants to make recommendations, not to hedge. "Can be good but also risks" says nothing.</p>
+                        <p>The exemplary version gives a clear verdict: "I recommend proceeding to Phase 2 due diligence."</p>
+                        <div class="tip">
+                            <strong>Quick Fix:</strong>
+                            End with a clear recommendation: "I recommend [specific action] because [reason]."
+                        </div>
+                    </div>
+
+                    <!-- Annotation 7 -->
+                    <div class="annotation-active" id="annotation-7">
+                        <h3><span>7</span> Deflection</h3>
+                        <p><strong>Own your expertise:</strong> "Do more research" sounds like you're not confident in your analysis. They hired YOU to do the research!</p>
+                        <p>If you need more information, specify exactly what data you need and why. Otherwise, make the call.</p>
+                        <div class="tip">
+                            <strong>Quick Fix:</strong>
+                            Replace with specific next steps: "I recommend proceeding to Phase 2 due diligence on the shortlisted properties."
+                        </div>
+                    </div>
+
+                    <!-- Annotation 8 -->
+                    <div class="annotation-active" id="annotation-8">
+                        <h3><span>8</span> Missing Polish</h3>
+                        <p><strong>Professional formatting matters:</strong> Word count shows you respect the limit. Clean formatting (headers, bold, bullets) makes the memo scannable.</p>
+                        <p>Executives skim before they read&mdash;make your structure visible.</p>
+                        <div class="tip">
+                            <strong>Quick Fix:</strong>
+                            Add word count at the end (e.g., "[498 words]"), use headers to break up sections, and bold key terms.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-footer">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" id="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="progress-text" id="progress-text">0/8 viewed</span>
+                    </div>
+                    <button class="view-all-btn" id="view-all-btn" aria-haspopup="dialog">
+                        View All Annotations
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- All Annotations Modal -->
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modal-title">All Annotations</h2>
+                <button class="modal-close" id="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-annotation">
+                    <h3><span>1</span> Vague Header</h3>
+                    <p>Professional memos include full recipient/sender titles, specific date, and descriptive subject line. The exemplary version tells the reader exactly what this memo covers before they read it.</p>
+                </div>
+                <div class="modal-annotation">
+                    <h3><span>2</span> Too Vague</h3>
+                    <p>"Different" is vague. The exemplary version specifies HOW they're different (interdependent revenue, shared economics) with a hook that promises three specific insights.</p>
+                </div>
+                <div class="modal-annotation">
+                    <h3><span>3</span> Claims Without Evidence</h3>
+                    <p>Every claim needs support. Notice how the exemplary version cites "55% of NHL revenue" and references the Canucks case. Your reader is a data-driven PE investor&mdash;give them numbers.</p>
+                </div>
+                <div class="modal-annotation">
+                    <h3><span>4</span> Weak Transition</h3>
+                    <p>"A few things" forces the reader to count. The exemplary version uses a clear header ("Investment Decision Factors") and numbers each factor explicitly.</p>
+                </div>
+                <div class="modal-annotation">
+                    <h3><span>5</span> Generic Advice</h3>
+                    <p>"Look at revenue sharing" is advice anyone could give. The exemplary version tells them exactly WHAT to look for: "Calculate the 'floor' revenue a team receives regardless of performance."</p>
+                </div>
+                <div class="modal-annotation">
+                    <h3><span>6</span> Wishy-Washy Conclusion</h3>
+                    <p>Executives hire consultants to make recommendations, not hedge. The exemplary version gives a clear verdict: "I recommend proceeding to Phase 2 due diligence."</p>
+                </div>
+                <div class="modal-annotation">
+                    <h3><span>7</span> Deflection</h3>
+                    <p>"Do more research" sounds like you're not confident. If you need more information, specify exactly what data you need. Otherwise, make the call.</p>
+                </div>
+                <div class="modal-annotation">
+                    <h3><span>8</span> Missing Polish</h3>
+                    <p>Word count shows you respect the limit. Clean formatting (headers, bold, bullets) makes the memo scannable&mdash;executives skim before they read.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Live Region for Screen Reader Announcements -->
+    <div id="live-region" aria-live="polite" aria-atomic="true"></div>
+
+    <script>
+        // State
+        const state = {
+            viewedAnnotations: new Set(),
+            activeAnnotation: null,
+            totalAnnotations: 8
+        };
+
+        // DOM Elements
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+        const hotspots = document.querySelectorAll('.hotspot');
+        const annotationContents = document.querySelectorAll('.annotation-active');
+        const placeholder = document.getElementById('annotation-placeholder');
+        const progressFill = document.getElementById('progress-fill');
+        const progressText = document.getElementById('progress-text');
+        const viewAllBtn = document.getElementById('view-all-btn');
+        const modalOverlay = document.getElementById('modal-overlay');
+        const modalClose = document.getElementById('modal-close');
+        const liveRegion = document.getElementById('live-region');
+
+        // Tab Navigation
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update ARIA states
+                tabBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-selected', 'false');
+                });
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+
+                // Show corresponding panel
+                const panelId = btn.getAttribute('aria-controls');
+                tabPanels.forEach(panel => {
+                    panel.classList.remove('active');
+                });
+                document.getElementById(panelId).classList.add('active');
+
+                // Announce to screen readers
+                announce(`${btn.textContent.trim()} tab selected`);
+            });
+
+            // Keyboard navigation for tabs
+            btn.addEventListener('keydown', (e) => {
+                const tabs = Array.from(tabBtns);
+                const currentIndex = tabs.indexOf(btn);
+                let newIndex;
+
+                if (e.key === 'ArrowRight') {
+                    newIndex = (currentIndex + 1) % tabs.length;
+                    tabs[newIndex].focus();
+                    e.preventDefault();
+                } else if (e.key === 'ArrowLeft') {
+                    newIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+                    tabs[newIndex].focus();
+                    e.preventDefault();
+                }
+            });
+        });
+
+        // Hotspot Interactions
+        hotspots.forEach(hotspot => {
+            const handler = () => {
+                const annotationId = hotspot.dataset.annotation;
+                showAnnotation(annotationId);
+                markAsViewed(hotspot, annotationId);
+            };
+
+            hotspot.addEventListener('click', handler);
+            hotspot.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    handler();
+                }
+            });
+        });
+
+        function showAnnotation(id) {
+            // Remove active state from all hotspots
+            hotspots.forEach(h => h.classList.remove('active'));
+
+            // Add active state to clicked hotspot
+            const activeHotspot = document.querySelector(`[data-annotation="${id}"]`);
+            if (activeHotspot) {
+                activeHotspot.classList.add('active');
+            }
+
+            // Hide placeholder and all annotations
+            placeholder.style.display = 'none';
+            annotationContents.forEach(content => {
+                content.classList.remove('show');
+            });
+
+            // Show selected annotation
+            const annotation = document.getElementById(`annotation-${id}`);
+            if (annotation) {
+                annotation.classList.add('show');
+                state.activeAnnotation = id;
+
+                // Announce to screen readers
+                const title = annotation.querySelector('h3').textContent;
+                announce(`Showing annotation ${id}: ${title}`);
+            }
+        }
+
+        function markAsViewed(hotspot, id) {
+            if (!state.viewedAnnotations.has(id)) {
+                state.viewedAnnotations.add(id);
+                hotspot.classList.add('viewed');
+                updateProgress();
+            }
+        }
+
+        function updateProgress() {
+            const viewed = state.viewedAnnotations.size;
+            const total = state.totalAnnotations;
+            const percentage = (viewed / total) * 100;
+
+            progressFill.style.width = `${percentage}%`;
+            progressText.textContent = `${viewed}/${total} viewed`;
+
+            if (viewed === total) {
+                announce('Congratulations! You have viewed all annotations.');
+            }
+        }
+
+        // View All Modal
+        viewAllBtn.addEventListener('click', () => {
+            modalOverlay.classList.add('show');
+            modalClose.focus();
+            document.body.style.overflow = 'hidden';
+
+            // Mark all as viewed when opening modal
+            hotspots.forEach(hotspot => {
+                const id = hotspot.dataset.annotation;
+                state.viewedAnnotations.add(id);
+                hotspot.classList.add('viewed');
+            });
+            updateProgress();
+        });
+
+        modalClose.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) {
+                closeModal();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modalOverlay.classList.contains('show')) {
+                closeModal();
+            }
+        });
+
+        function closeModal() {
+            modalOverlay.classList.remove('show');
+            document.body.style.overflow = '';
+            viewAllBtn.focus();
+        }
+
+        // Screen Reader Announcements
+        function announce(message) {
+            liveRegion.textContent = message;
+            setTimeout(() => {
+                liveRegion.textContent = '';
+            }, 1000);
+        }
+
+        // Keyboard Navigation Between Hotspots
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Tab' && !e.shiftKey) {
+                // Allow natural tab flow
+                return;
+            }
+        });
+    </script>
+</body>
+</html>

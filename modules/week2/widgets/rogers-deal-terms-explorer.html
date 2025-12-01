@@ -10,15 +10,27 @@
     <style>
         /* CSS Design System */
         :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-error: #ef4444;
+            --color-success: #c0d1cd;
+            --color-warning: #f0ede0;
+            --color-info: #bfe5e7;
             --color-primary: #171717;
             --color-primary-dark: #404040;
             --color-dark: #2c2c2c;
-            --color-success: #4a7c59;
             --color-danger: #dc2626;
-            --color-warning: #d97706;
             --color-warning-light: #fef3c7;
             --color-warning-lighter: #fde68a;
-            --color-info: #2563eb;
+            --color-info-bright: #2563eb;
             --color-info-dark: #1d4ed8;
             --color-info-light: #e0f2fe;
             --color-info-lighter: #bae6fd;
@@ -27,9 +39,14 @@
             --color-gray: #6b7280;
             --color-gray-border: #e0e0e0;
             --color-gray-hover: #e5e7eb;
-            --color-neutral-800: #2c2c2c;
-            --border-radius: 12px;
+            --border-radius: 8px;
+            --border-radius-sm: 4px;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        *:focus {
+            outline: 2px solid #3182ce;
+            outline-offset: 2px;
         }
 
         * {
@@ -40,7 +57,7 @@
 
         body {
             font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: linear-gradient(135deg, var(--color-light-gray) 0%, var(--color-gray-hover) 100%);
+            background: white;
             color: var(--color-dark);
             padding: 24px;
             line-height: 1.6;

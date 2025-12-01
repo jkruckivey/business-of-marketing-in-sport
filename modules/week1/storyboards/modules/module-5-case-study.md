@@ -1,4 +1,4 @@
-## MODULE 5: Case Study - NHL Vancouver Canucks (BOPPPS: Participatory - Case Analysis)
+# The Canucks Challenge
 **Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Analyze real revenue-sharing decisions (supports WLO 1.4 - Analysis level)
@@ -7,7 +7,7 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 4 | Type directly | Sets context, connects narrative |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from Build Your Revenue Empire | Type directly | Sets context, connects narrative |
 | 2 | **Infobox (Callout)** ⬤ Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
 | 3 | **Text** ⬤ Required | Full case study narrative | **🔗 ATTACH CASE HERE:** Upload Canucks case PDF or type markdown | Main case text (8-10 pages) |
 | 4 | **Table** ⬤ Required | NHL revenue sharing model data | Type directly | Financial data for analysis |
@@ -533,10 +533,10 @@ You've analyzed a real professional sports organization facing complex revenue-s
 - Revenue sharing limits strategic autonomy while maintaining competitive balance
 - Real organizations face constraints theoretical models don't capture (currency, market size, ownership priorities)
 - Stakeholder analysis reveals competing interests (Toronto vs. Arizona vs. Vancouver)
-- **Appointment viewing matters:** The Canucks' media value depends on fans watching live—this is why sports remain premium content even as other entertainment shifts to on-demand (recall Module 3's "appointment viewing" concept)
+- **Appointment viewing matters:** The Canucks' media value depends on fans watching live—this is why sports remain premium content even as other entertainment shifts to on-demand (recall the "appointment viewing" concept from Five Revenue Streams)
 
-**Up Next: Module 6 - Your Assessment**
-You've learned the framework (Modules 2-3), applied it strategically (Module 4), and analyzed a real case (Module 5). Now it's time to demonstrate mastery. In Module 6, you'll write a comprehensive Reflection Memo synthesizing all Week 1 learning and applying it to a strategic investment decision.
+**Up Next: Your Executive Memo**
+You've learned the framework, applied it strategically in Build Your Revenue Empire, and analyzed a real case in The Canucks Challenge. Now it's time to demonstrate mastery. In Your Executive Memo, you'll write a comprehensive Reflection Memo synthesizing all Week 1 learning and applying it to a strategic investment decision.
 
 Ready to show what you've learned? Let's wrap up Week 1!
 

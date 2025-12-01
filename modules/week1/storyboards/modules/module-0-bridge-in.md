@@ -1,4 +1,4 @@
-# MODULE 0: Bridge In - The Revenue Problem (BOPPPS: Bridge + Pre-Assessment)
+# Quick Start: The $100M Question
 **Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Hook students with a compelling business problem, reframe outcomes as challenges, enable self-assessment

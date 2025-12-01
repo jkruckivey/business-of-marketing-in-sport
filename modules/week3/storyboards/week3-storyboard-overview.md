@@ -33,32 +33,32 @@ Calculate sponsorship ROI and assess sports betting's role as a growth engine in
 
 ## Module Structure (6 Modules, ~15 minutes each)
 
-### Module 1: Welcome & Learning Objectives (BOPPPS: Bridge-in + Objectives)
+### Your Week 3 Journey
 **Time:** 14-17 minutes
 **Purpose:** Connect Week 2 to Week 3, establish learning outcomes, activate prior knowledge
 **Uplimit Structure:** First module in Unit 3
 
-### Module 2: Sponsorship Framework (BOPPPS: Pre-assessment + Participatory)
+### The Sponsorship Playbook
 **Time:** 12-14 minutes
 **Purpose:** Understand sponsorship ROI fundamentals, build activation framework
 **Uplimit Structure:** Second module in Unit 3
 
-### Module 3: Sports Betting Economics (BOPPPS: Participatory)
+### Betting on Growth
 **Time:** 12-14 minutes
 **Purpose:** Analyze betting as growth driver, understand regulatory landscape, fan engagement impact
 **Uplimit Structure:** Third module in Unit 3
 
-### Module 4: FanDuel Case Study (BOPPPS: Participatory)
+### FanDuel's Big Bet
 **Time:** 18-20 minutes
 **Purpose:** Apply frameworks to real-world case, analyze FanDuel's market strategy and partnerships
 **Uplimit Structure:** Fourth module in Unit 3
 
-### Module 5: Group Sprint - Activation Plan (BOPPPS: Participatory)
+### Sprint: Design Your Activation
 **Time:** 45-60 minutes
 **Purpose:** Collaborative design of sponsorship activation with ROI projections
 **Uplimit Structure:** Fifth module in Unit 3
 
-### Module 6: Assessment & Reflection (BOPPPS: Post-assessment + Summary)
+### Your Sponsorship Pitch
 **Time:** 30-40 minutes
 **Purpose:** Submit activation plan, peer review, reflect on Week 3 learning, preview Week 4
 **Uplimit Structure:** Sixth module in Unit 3

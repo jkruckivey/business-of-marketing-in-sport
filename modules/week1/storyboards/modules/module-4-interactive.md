@@ -1,4 +1,4 @@
-## MODULE 4: Interactive Activity - Revenue Empire Builder (BOPPPS: Participatory - Application)
+# Build Your Revenue Empire
 **Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Active learning - build a revenue strategy (supports WLO 1.1, 1.3 - Application level)
@@ -35,7 +35,7 @@ After completing the simulation, you'll write a Board Strategy Defense memo (750
 ```markdown
 # Interactive Activity: Revenue Empire Builder
 
-You've explored each revenue stream through interactive simulations in Module 3. Now it's time to put it all together and build a complete revenue strategy.
+You've explored each revenue stream through interactive simulations in Five Revenue Streams. Now it's time to put it all together and build a complete revenue strategy.
 
 ## Your Challenge
 
@@ -54,7 +54,7 @@ As the newly appointed CFO, you'll:
 
 ## Strategic Considerations
 
-Before you start, consider these key insights from your Module 3 learning:
+Before you start, consider these key insights from Five Revenue Streams:
 
 - **Media Rights:** High revenue but requires long-term contracts (9-12 years). Once you commit, you're locked in.
 - **Ticketing:** Capacity-limited with a ceiling on growth. Stable but can't scale infinitely.
@@ -62,7 +62,7 @@ Before you start, consider these key insights from your Module 3 learning:
 - **Merchandising:** Lower revenue but low risk. Spikes during championships and star acquisitions.
 - **Betting:** Highest growth potential (30-40% year-over-year) but carries regulatory risk.
 
-**Revenue Sharing Reality:** Remember from Module 3—most leagues share 40-60% of key revenue streams (national media, licensing). Your allocation decisions don't happen in isolation. If you invest heavily in local revenue streams (ticketing, local sponsorship), you keep more of the upside. But shared streams (national media, merchandising) benefit from league-wide success, not just your team's performance. Consider how revenue sharing affects your risk-return calculus.
+**Revenue Sharing Reality:** Remember from Five Revenue Streams—most leagues share 40-60% of key revenue streams (national media, licensing). Your allocation decisions don't happen in isolation. If you invest heavily in local revenue streams (ticketing, local sponsorship), you keep more of the upside. But shared streams (national media, merchandising) benefit from league-wide success, not just your team's performance. Consider how revenue sharing affects your risk-return calculus.
 
 **Key Strategic Principle:** Diversification helps weather market changes. No single allocation strategy is "correct" - your job is to justify YOUR choices based on risk tolerance and growth goals.
 

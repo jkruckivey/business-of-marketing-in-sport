@@ -19,10 +19,12 @@
             --color-neutral-700: #404040;
             --color-neutral-800: #262626;
             --color-neutral-900: #171717;
-            --color-success: #22c55e;
             --color-error: #ef4444;
-            --color-warning: #f59e0b;
-            --color-info: #3b82f6;
+            --color-success: #c0d1cd;
+            --color-warning: #f0ede0;
+            --color-info: #bfe5e7;
+            --border-radius: 8px;
+            --border-radius-sm: 4px;
         }
 
         * {
@@ -31,9 +33,14 @@
             box-sizing: border-box;
         }
 
+        *:focus {
+            outline: 2px solid #3182ce;
+            outline-offset: 2px;
+        }
+
         body {
             font-family: 'Geist', -apple-system, sans-serif;
-            background: var(--color-neutral-50);
+            background: white;
             color: var(--color-neutral-900);
             line-height: 1.6;
             padding: 20px;

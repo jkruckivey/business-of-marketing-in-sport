@@ -17,39 +17,39 @@ This storyboard has been split into individual module files for easier navigatio
 
 ### 📋 Module Files
 
-1. **[MODULE 0: Bridge In - The Revenue Problem](modules/module-0-bridge-in.md)** (24 KB)
+1. **[Quick Start: The $100M Question](modules/module-0-bridge-in.md)** (24 KB)
    - Bridge video with Connor McDavid $100M hook
    - AI Roleplay diagnostic exercise
    - Pre-assessment quiz with personalized learning paths
    - **Time**: 22-27 minutes
 
-2. **[MODULE 1: Welcome & Learning Objectives](modules/module-1-welcome.md)** (3.3 KB)
+2. **[Your Week 1 Journey](modules/module-1-welcome.md)** (3.3 KB)
    - Week overview and learning outcomes
    - Course navigation and expectations
 
-3. **[MODULE 2: Executive Leader Perspective](modules/module-2-executive.md)** (3.6 KB)
+3. **[Inside the Sports Business](modules/module-2-executive.md)** (3.6 KB)
    - Recorded session with sports business executive
    - Real-world context and industry insights
 
-4. **[MODULE 3: Core Content - Revenue Streams](modules/module-3-core-content.md)** (43 KB)
+4. **[Five Revenue Streams That Power Sports](modules/module-3-core-content.md)** (43 KB)
    - **V3 INTERACTIVE-FIRST REDESIGN** (75% active engagement)
    - 8 interactive widgets demonstrating revenue concepts
    - Text reduced from 3,500 → 1,000 words
    - **Time**: ~35 minutes
 
-5. **[MODULE 4: Interactive Activity - Revenue Empire Builder](modules/module-4-interactive.md)** (11 KB)
+5. **[Build Your Revenue Empire](modules/module-4-interactive.md)** (11 KB)
    - Simulation: Build $500M revenue portfolio
    - Strategic decision-making with trade-offs
 
-6. **[MODULE 5: Case Study - NHL Vancouver Canucks](modules/module-5-case-study.md)** (12 KB)
+6. **[The Canucks Challenge](modules/module-5-case-study.md)** (12 KB)
    - Real case analysis applying Week 1 frameworks
    - Canucks revenue strategy and league dynamics
 
-7. **[MODULE 6: Assessment - Reflection Memo](modules/module-6-assessment.md)** (25 KB)
+7. **[Your Executive Memo](modules/module-6-assessment.md)** (25 KB)
    - Executive memo assignment (WLO 1.1-1.4)
    - QM-aligned rubric with detailed criteria
 
-8. **[MODULE 7: Wrap-Up & Preview](modules/module-7-wrap-up.md)** (5 KB)
+8. **[Looking Ahead to Week 2](modules/module-7-wrap-up.md)** (5 KB)
    - Week 1 synthesis and Week 2 preview
    - Discussion forum and peer review
 
@@ -79,7 +79,7 @@ By the end of this week, students will be able to:
 
 - Each module file is self-contained and can be edited independently
 - Maintain consistent Uplimit element naming conventions
-- Use the LEGEND in Module 0 for storyboard notation reference
+- Use the LEGEND in Quick Start: The $100M Question for storyboard notation reference
 - All widgets are in `/modules/week1/module-X/widgets/` directories
 - Keep accessibility standards (WCAG 2.2 AA) in all content
 

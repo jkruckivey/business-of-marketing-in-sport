@@ -1,4 +1,4 @@
-## MODULE 3: Core Content - Revenue Streams (BOPPPS: Participatory - Interactive Discovery) • **V3 INTERACTIVE-FIRST REDESIGN**
+# Five Revenue Streams That Power Sports
 **Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports WLO 1.1, 1.2, 1.3)

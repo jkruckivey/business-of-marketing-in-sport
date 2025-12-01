@@ -1,4 +1,4 @@
-## MODULE 6: Assessment - Reflection Memo (BOPPPS: Post-Assessment)
+# Your Executive Memo
 **Version:** 1.3.0 | **Last Updated:** 2025-01-27
 
 **Purpose:** Assess student understanding of Week 1 content (measures WLO 1.1, 1.2, 1.3, 1.4)
@@ -7,8 +7,13 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 5 | Type directly | Sets context, connects narrative |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from The Canucks Challenge | Type directly | Sets context, connects narrative |
 | 2 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
+| 2A | **▬ Text** ◐ Recommended | UDL Learning Supports Introduction | Type directly | Explains 4 support options |
+| 2B | **Video** ◐ Recommended | Guided Demo: Writing Your Memo (6 min) | Upload MP4 | SME think-aloud walkthrough |
+| 2C | **Widget (HTML)** ◐ Recommended | Annotated Exemplar Explorer | Embed HTML | Interactive developing→exemplary comparison |
+| 2D | **Details** ◐ Recommended | Micro-Tutorial Library | Type directly | Accordion with 5 skill videos |
+| 2E | **Audio** ◐ Recommended | Audio Instructions (4 min) | Upload MP3 | Voice-narrated assignment overview |
 | 3 | **AI Roleplay** ◐ Recommended | Practice pitch to private equity | Configure in Uplimit | Rehearse your investment recommendation before writing memo |
 | 4 | **Text** ⬤ Required | PAIRR Feedback Instructions | Type directly | Peer and AI Review + Reflection workflow |
 | 5 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
@@ -19,7 +24,7 @@
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-You've explored revenue streams through interactive discovery in Module 3, built a five-year strategy in Module 4, and analyzed the Vancouver Canucks' real-world challenges in Module 5. You've seen how revenue ecosystems work in theory and in practice.
+You've explored revenue streams through interactive discovery in Five Revenue Streams, built a five-year strategy in Build Your Revenue Empire, and analyzed the Vancouver Canucks' real-world challenges in The Canucks Challenge. You've seen how revenue ecosystems work in theory and in practice.
 
 Now it's time to demonstrate what you've learned. In this final assessment, you'll step into the role of a strategic advisor to a private equity firm considering a major investment in professional sports. They need to understand whether sports teams operate like other businesses—and if not, what makes them different. Your task: write a clear, evidence-based executive memo that synthesizes everything you've learned this week into actionable investment guidance.
 ```
@@ -30,6 +35,489 @@ Now it's time to demonstrate what you've learned. In this final assessment, you'
 Title: ▪ Assessment: Revenue Ecosystem Reflection Memo
 
 You'll write a 1-page executive memo advising a private equity firm considering investing in a professional sports team. Your memo should explain the unique characteristics of sport's revenue model and identify 2-3 factors that would influence their investment decision. This assessment measures WLOs 1.1-1.4 and is worth 30 points. Use the rubric below to guide your work.
+```
+
+---
+
+## UDL LEARNING SUPPORTS (Elements 2A-2E)
+
+**Design Rationale:** These four learning supports provide multiple means of representation (UDL Principle 1) and multiple means of engagement (UDL Principle 3). Students self-select the supports they need based on their learning preferences and prior experience with executive memo writing. All supports are optional but recommended.
+
+---
+
+### Element 2A: UDL Learning Supports Introduction
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+## Choose Your Learning Path
+
+Before you start writing, we've created four optional resources to help you succeed. You don't need to use all of them—pick what works best for how YOU learn.
+
+| If you learn best by... | Try this resource | Time |
+|------------------------|-------------------|------|
+| **Watching someone model the process** | Guided Demo Video | 6 min |
+| **Seeing examples with explanations** | Annotated Exemplar Explorer | 5-10 min |
+| **Building specific skills you're missing** | Micro-Tutorial Library | 1-2 min each |
+| **Listening while doing other things** | Audio Instructions | 4 min |
+
+**Already confident writing executive memos?** Skip ahead to the AI Roleplay practice (Element 3) or go straight to writing.
+
+**New to business writing?** We recommend the Guided Demo Video first, then the Annotated Exemplar Explorer.
+```
+
+---
+
+### Element 2B: Guided Demo Video - Writing Your Memo
+
+**Video Specifications:**
+- **Length:** 6 minutes
+- **Format:** Screen recording with SME voiceover (picture-in-picture optional)
+- **Accessibility:** Captions required, transcript provided, audio descriptions for visual elements
+
+**Video Status:** 📝 Script complete, awaiting production
+
+**Production Notes:**
+- Record screen showing Word/Google Docs with memo being written
+- SME speaks in first person, thinking aloud
+- Show the *process*, not just the final product
+- Include mistakes and corrections (models revision as normal)
+
+---
+
+**VIDEO SCRIPT: "Writing Your Executive Memo - A Guided Walkthrough" (6 min)**
+
+```
+[0:00-0:30] INTRODUCTION
+
+[Screen: Title slide "Writing Your Executive Memo: A Guided Walkthrough"]
+
+NARRATOR: "Hi, I'm [Instructor Name]. In the next six minutes, I'm going to walk you through exactly how I would approach this executive memo assignment. I'll show you my thinking process—including the parts where I get stuck and have to revise. Let's write this together."
+
+[Screen: Opens blank Word document]
+
+---
+
+[0:30-1:30] STEP 1: UNDERSTANDING THE PROMPT
+
+[Screen: Assignment prompt visible on screen]
+
+NARRATOR: "First, I always read the prompt twice. Let me highlight the key requirements..."
+
+[Highlights on screen as narrator speaks]
+
+"One-page memo... advising a private equity firm... unique characteristics of sport's revenue model... 2-3 investment decision factors. Okay, so I need to do TWO things: explain what makes sports different, AND give them actionable guidance."
+
+[Opens rubric in split screen]
+
+"Let me check the rubric... Revenue Stream Analysis is worth 10 points, Investment Factors is 10 points... So these are equally weighted. I shouldn't spend 80% of my memo on one and ignore the other."
+
+[Types quick outline]
+
+"I'm going to sketch a quick outline before I write:
+- Opening: Set up the context (1-2 sentences)
+- Section 1: How sports revenue is unique (150-200 words)
+- Section 2: 2-3 factors for investment decision (150-200 words)
+- Closing: Bottom-line recommendation (1-2 sentences)"
+
+---
+
+[1:30-3:00] STEP 2: WRITING THE ANALYSIS
+
+[Screen: Starts typing memo format]
+
+NARRATOR: "I'll start with the memo header—this is standard business format."
+
+[Types: To: Brookfield Capital Investment Committee / From: [Name], Sports Business Consultant / Date: [Today] / Re: Sports Team Investment Analysis]
+
+"Now the opening. I want to get straight to the point—executives don't want fluff."
+
+[Types, speaking aloud]: "Professional sports teams operate under a fundamentally different economic model than traditional businesses. Before investing $500M-$1B, you need to understand three characteristics that make sports unique—and why they matter for your returns."
+
+"See how I'm setting up expectations? They know I'm going to cover three things. Now let me deliver on that promise."
+
+[Types Section 1, thinking aloud]
+
+"First characteristic... I'll talk about revenue ecosystem interdependence. Let me pull data from the course..."
+
+[Types]: "First, revenue streams are deeply interconnected. Media rights (55% of NHL revenue) depend on competitive balance, which requires revenue sharing among teams. This means individual team profitability is partially determined by league-wide policies, not just team management decisions."
+
+"Good—I've made a claim AND supported it with a specific percentage from the course content. Let me add the Canucks example..."
+
+[Continues typing, showing the process of drafting, pausing, checking notes]
+
+---
+
+[3:00-4:30] STEP 3: INVESTMENT FACTORS
+
+NARRATOR: "Now for the investment factors section. The rubric says 'specific, defensible factors backed by evidence.' Let me think about what Sarah Chen—our PE investor—would actually care about..."
+
+[Types, thinking aloud]
+
+"If I were investing $500M, I'd want to know about downside protection AND upside potential. Let me frame it that way."
+
+[Types]: "Two factors should guide your investment decision:
+
+1. Revenue sharing structure: Leagues with robust sharing (NFL) protect downside risk. The Canucks case shows that even struggling teams receive $XX million in shared national media revenue, creating a floor on losses.
+
+2. Emerging revenue exposure: Teams with rights to betting partnerships and digital content can capture high-growth revenue streams outside traditional sharing pools. These streams could represent 15-20% of revenue by 2030."
+
+"Notice I'm being specific—not just 'look at revenue sharing' but explaining WHY it matters for an investor. And I'm citing the case."
+
+---
+
+[4:30-5:30] STEP 4: REVISION AND POLISH
+
+[Screen: Shows full draft, ~400 words]
+
+NARRATOR: "Okay, I have a draft. But I'm at 420 words and the limit is 500. Let me check if everything earns its place..."
+
+[Scrolls through, highlighting sections]
+
+"This sentence is redundant... delete. This phrase is wordy—'in order to' can just be 'to'... And here I said 'unique' twice in the same paragraph."
+
+[Makes edits on screen]
+
+"Now let me check against the rubric one more time. Revenue streams analyzed? Yes, I covered media rights and mentioned interdependencies. Investment factors? Yes, two specific factors with evidence. Business communication? Memo format, clear writing... looks good."
+
+"One more thing—do I have a clear bottom-line recommendation?"
+
+[Scrolls to end, adds closing]
+
+"I'll add: 'Bottom line: Sports teams are not traditional businesses, but with proper due diligence on league revenue structures and emerging stream potential, they can deliver attractive risk-adjusted returns.'"
+
+---
+
+[5:30-6:00] CLOSING
+
+NARRATOR: "That's it. Total time from blank page to finished draft: about 45 minutes for me, and that's with experience. Give yourself 60-90 minutes for your first draft, then use the PAIRR process to get feedback and revise."
+
+"Key takeaways:
+1. Read the prompt and rubric BEFORE writing
+2. Make an outline to organize your thinking
+3. Support every claim with specific evidence
+4. Revise for concision—every word should earn its place
+5. Check your draft against the rubric before submitting"
+
+"Good luck with your memo. You've got this."
+
+[End screen: "Ready to write? Try the AI Roleplay to practice your pitch first, or dive into your draft."]
+```
+
+---
+
+### Element 2C: Annotated Exemplar Explorer Widget
+
+**Widget Purpose:** Interactive side-by-side comparison showing a developing draft transformed into an exemplary draft, with clickable annotations explaining what makes each revision effective.
+
+**Widget Status:** 📝 Specification complete, awaiting development
+
+**Widget Specifications:**
+- **Type:** HTML/JavaScript interactive widget
+- **Accessibility:** WCAG 2.2 AA compliant, keyboard navigable, screen reader compatible
+- **Export:** None (viewing only)
+
+---
+
+**WIDGET DESIGN SPECIFICATION**
+
+**Layout:**
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  ANNOTATED EXEMPLAR EXPLORER                                    │
+│  ─────────────────────────────────────────────────────────────  │
+│  [Tab: Developing Draft] [Tab: Exemplary Draft] [Tab: Changes]  │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│  ┌─────────────────────────────────────┐  ┌──────────────────┐  │
+│  │                                     │  │ ANNOTATIONS      │  │
+│  │  [Memo content with highlighted     │  │                  │  │
+│  │   hotspots - clickable sections]    │  │ Click any        │  │
+│  │                                     │  │ highlighted      │  │
+│  │  "Professional sports teams         │  │ section to see   │  │
+│  │   [operate differently]¹ than       │  │ instructor       │  │
+│  │   traditional businesses..."        │  │ feedback.        │  │
+│  │                                     │  │                  │  │
+│  │  ¹ ← Click numbered hotspots        │  │ ──────────────── │  │
+│  │                                     │  │ [Annotation      │  │
+│  │                                     │  │  content appears │  │
+│  │                                     │  │  here when       │  │
+│  │                                     │  │  hotspot clicked]│  │
+│  └─────────────────────────────────────┘  └──────────────────┘  │
+│                                                                 │
+│  Progress: 0/8 annotations viewed                               │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Content - Developing Draft (with 8 annotation hotspots):**
+
+```markdown
+**TO:** Investment Committee
+**FROM:** Sports Consultant
+**RE:** Sports Investment
+
+[HOTSPOT 1: "Vague header - missing date, full titles"]
+
+Professional sports teams are different from other businesses. [HOTSPOT 2: "Too vague - HOW are they different?"] They make money from several sources including media, tickets, sponsorship, merchandise, and betting.
+
+The revenue streams are connected to each other. [HOTSPOT 3: "Claims without evidence - no data"] For example, media rights are important for teams. Revenue sharing also matters because it helps teams stay competitive.
+
+If you invest, you should think about a few things. [HOTSPOT 4: "Weak transition - 'a few things' is vague"] First, look at how the league shares revenue. [HOTSPOT 5: "Generic advice - not specific to THIS investment"] Second, consider the growth potential. Third, think about the risks involved.
+
+Overall, sports teams can be good investments but there are also risks to consider. [HOTSPOT 6: "Wishy-washy conclusion - no clear recommendation"] You should do more research before deciding. [HOTSPOT 7: "Passes the buck - they hired YOU for a recommendation"]
+
+[HOTSPOT 8: "Missing word count indicator, no memo formatting polish"]
+```
+
+**Content - Exemplary Draft:**
+
+```markdown
+**TO:** Brookfield Capital Investment Committee
+**FROM:** [Name], Sports Business Consultant
+**DATE:** [Current Date]
+**RE:** Professional Sports Team Investment Analysis: Revenue Model Assessment
+
+Professional sports teams operate under a fundamentally different economic model than traditional businesses. Before committing $500M-$1B, you must understand three characteristics that create both opportunity and risk.
+
+**1. Revenue Ecosystem Interdependence**
+Unlike traditional businesses, sports revenue streams are deeply interconnected. Media rights (55% of NHL revenue) depend on competitive balance maintained through revenue sharing. The Vancouver Canucks case demonstrates this: despite market challenges, the team receives $XX million annually in shared national media revenue—a floor that protects downside risk regardless of on-ice performance.
+
+**2. Shared Economics Create Unusual Incentives**
+Sports teams must collaborate with competitors to maximize value. Strong league governance (salary caps, draft systems, revenue pools) correlates with franchise stability. Leagues with robust sharing—NFL distributes 63% of revenue equally—show lower variance in team valuations.
+
+**Investment Decision Factors**
+
+Two factors should guide your due diligence:
+
+1. **Revenue sharing structure:** Prioritize leagues/teams where sharing protects downside. Calculate the "floor" revenue a team receives regardless of performance.
+
+2. **Emerging stream exposure:** Evaluate the team's position in betting partnerships and digital content rights. These streams (projected 15-20% of revenue by 2030) sit outside traditional sharing pools, creating upside for first-movers.
+
+**Recommendation:** Sports teams are not traditional businesses, but with proper due diligence on league revenue structures and emerging stream potential, they offer attractive risk-adjusted returns for patient capital. I recommend proceeding to Phase 2 due diligence on the shortlisted properties.
+
+*[498 words]*
+```
+
+**Annotation Content (8 annotations):**
+
+| # | Section | Annotation Text |
+|---|---------|-----------------|
+| 1 | Header | **What's missing:** Professional memos include full recipient/sender titles, specific date, and descriptive subject line. The exemplary version tells the reader exactly what this memo covers before they read it. |
+| 2 | Opening claim | **Show, don't just tell:** "Different" is vague. The exemplary version specifies HOW they're different (interdependent revenue, shared economics) with a hook that promises three specific insights. |
+| 3 | Unsupported claims | **Evidence matters:** Every claim needs support. Notice how the exemplary version cites "55% of NHL revenue" and references the Canucks case. Your reader is a data-driven PE investor—give them numbers. |
+| 4 | Weak transition | **Signpost your structure:** "A few things" forces the reader to count. The exemplary version uses a clear header ("Investment Decision Factors") and numbers each factor explicitly. |
+| 5 | Generic advice | **Be specific and actionable:** "Look at revenue sharing" is advice anyone could give. The exemplary version tells them exactly WHAT to look for: "Calculate the 'floor' revenue a team receives regardless of performance." |
+| 6 | Weak conclusion | **Take a position:** Executives hire consultants to make recommendations, not hedge. The exemplary version gives a clear verdict: "I recommend proceeding to Phase 2 due diligence." |
+| 7 | Deflection | **Own your expertise:** "Do more research" sounds like you're not confident in your analysis. If you need more information, specify exactly what data you need and why. Otherwise, make the call. |
+| 8 | Missing polish | **Professional formatting matters:** Word count shows you respect the limit. Clean formatting (headers, bold, bullets) makes the memo scannable—executives skim before they read. |
+
+**Widget Functionality:**
+- Tabs switch between Developing/Exemplary/Changes views
+- "Changes" view shows side-by-side with strikethrough/additions
+- Clicking hotspots displays annotation in sidebar
+- Progress tracker shows annotations viewed (gamification)
+- "View All Annotations" button for linear reading preference
+- Keyboard navigation: Tab to move between hotspots, Enter to select
+
+---
+
+### Element 2D: Micro-Tutorial Library
+
+**Purpose:** Short, focused skill-building videos that students can access based on their individual needs. Linked from a collapsible accordion element.
+
+**Uplimit Implementation:**
+1. Select **Details** element
+2. Copy content below (each tutorial title expands to show video embed + transcript link)
+
+```markdown
+Title: 📚 Micro-Tutorial Library: Build Specific Skills (1-2 min each)
+
+Don't need all the tutorials? Expand only the ones relevant to YOUR learning gaps.
+
+---
+
+**Tutorial 1: How to Write an Executive Summary (2 min)**
+
+[VIDEO EMBED: micro-tutorial-1-executive-summary.mp4]
+
+**Key Points:**
+- Lead with the bottom line (recommendation first, evidence second)
+- One paragraph, 50-75 words maximum
+- Answer: What should they do? Why? What's the evidence?
+
+**Transcript:** [Link to transcript]
+
+---
+
+**Tutorial 2: How to Use Memo Format (1 min)**
+
+[VIDEO EMBED: micro-tutorial-2-memo-format.mp4]
+
+**Key Points:**
+- TO: Full name and title of recipient
+- FROM: Your name and role
+- DATE: Current date
+- RE: Specific, descriptive subject line
+- Body: Single-spaced, blank line between paragraphs
+
+**Template Download:** [Link to memo template.docx]
+
+**Transcript:** [Link to transcript]
+
+---
+
+**Tutorial 3: How to Cite Evidence from Course Content (2 min)**
+
+[VIDEO EMBED: micro-tutorial-3-citing-evidence.mp4]
+
+**Key Points:**
+- Reference specific data: "Media rights comprise 55% of NHL revenue"
+- Name your sources: "The Canucks case demonstrates..."
+- Use widget outputs: "Using the Revenue Mix Slider, I calculated..."
+- Avoid vague claims: NOT "Revenue sharing is important" → "Revenue sharing protects downside risk by guaranteeing $XX million annually regardless of team performance"
+
+**Transcript:** [Link to transcript]
+
+---
+
+**Tutorial 4: How to Structure a Recommendation (2 min)**
+
+[VIDEO EMBED: micro-tutorial-4-recommendations.mp4]
+
+**Key Points:**
+- State your recommendation clearly (no hedging)
+- Provide 2-3 supporting reasons
+- Acknowledge trade-offs or risks
+- End with specific next steps
+
+**Formula:** "I recommend [ACTION] because [REASON 1] and [REASON 2]. The primary risk is [RISK], which can be mitigated by [MITIGATION]. Next steps: [SPECIFIC ACTIONS]."
+
+**Transcript:** [Link to transcript]
+
+---
+
+**Tutorial 5: How to Edit for Concision (1 min)**
+
+[VIDEO EMBED: micro-tutorial-5-concision.mp4]
+
+**Key Points:**
+- Cut filler phrases: "In order to" → "To" | "Due to the fact that" → "Because"
+- Delete redundancies: "Unique and different" → "Unique"
+- One idea per sentence
+- Read aloud—if you run out of breath, the sentence is too long
+
+**Before/After Examples:**
+- ❌ "It is important to note that sports teams are fundamentally different in terms of how they generate revenue"
+- ✅ "Sports teams generate revenue differently than traditional businesses"
+
+**Transcript:** [Link to transcript]
+```
+
+**Video Production Notes:**
+
+| Tutorial | Length | Format | Key Visual |
+|----------|--------|--------|------------|
+| 1. Executive Summary | 2 min | Talking head + screen | Before/after example on screen |
+| 2. Memo Format | 1 min | Screen recording | Template with callouts |
+| 3. Citing Evidence | 2 min | Screen + voice | Widget screenshot → memo sentence |
+| 4. Recommendations | 2 min | Talking head + screen | Formula template on screen |
+| 5. Editing for Concision | 1 min | Screen recording | Live editing with strikethroughs |
+
+---
+
+### Element 2E: Audio Instructions
+
+**Purpose:** Voice-narrated version of assignment instructions for auditory learners and accessibility. Students can listen while commuting, exercising, or as reinforcement after reading.
+
+**Audio Specifications:**
+- **Length:** 4 minutes
+- **Format:** MP3 (128kbps minimum for voice clarity)
+- **Accessibility:** Transcript provided (same as script below)
+
+**Uplimit Implementation:**
+1. Select **Audio** element (or embed in Text element with HTML5 audio player)
+2. Upload MP3 file
+3. Add transcript below audio player
+
+**Audio Status:** 📝 Script complete, awaiting recording
+
+---
+
+**AUDIO SCRIPT: "Your Executive Memo Assignment - Audio Overview" (4 min)**
+
+```
+[0:00-0:30] INTRODUCTION
+
+Welcome to the audio overview of your Week 1 Executive Memo assignment. This recording covers everything you need to know to succeed. Feel free to listen while you review the written instructions, or use this as a refresher before you start writing.
+
+---
+
+[0:30-1:15] THE ASSIGNMENT
+
+Your task is to write a one-page executive memo—that's 500 words maximum—advising a private equity firm that's considering investing in a professional sports team.
+
+Your memo needs to do two things. First, explain what makes sports teams different from traditional businesses. Think about what you learned about revenue ecosystems, competitive balance, and revenue sharing. Second, identify two to three factors that should influence their investment decision. These should be specific and evidence-based, not generic advice.
+
+This assignment measures all four of this week's learning outcomes and is worth 30 points.
+
+---
+
+[1:15-2:00] HOW YOU'LL BE EVALUATED
+
+The rubric has four criteria.
+
+Revenue Stream Analysis is worth 10 points. You need to accurately describe at least three revenue streams and show how they're interconnected—not just list them separately.
+
+Investment Factors is also worth 10 points. Identify two to three specific factors backed by evidence from the course content. Generic advice like "consider the risks" won't earn full credit.
+
+Application of Concepts is worth 5 points. Reference the executive session, readings, and especially the Canucks case study.
+
+Business Communication is worth 5 points. Use proper memo format, write clearly and concisely, and stay within the 500-word limit.
+
+---
+
+[2:00-2:45] RESOURCES TO HELP YOU
+
+Before you start writing, you have several optional resources available.
+
+The Guided Demo Video shows an instructor writing a memo from scratch, thinking aloud through the process. It's about six minutes and shows you what good looks like.
+
+The Annotated Exemplar Explorer is an interactive tool that compares a developing draft to an exemplary draft. Click on highlighted sections to see what makes the difference.
+
+The Micro-Tutorial Library has five short videos—one to two minutes each—on specific skills like writing executive summaries, citing evidence, and editing for concision. Pick the ones you need.
+
+And of course, you're listening to the audio instructions right now.
+
+---
+
+[2:45-3:30] THE PROCESS
+
+Here's the recommended workflow. First, use the AI Roleplay to practice your pitch. You'll have a conversation with Sarah Chen, a fictional PE investor, and get feedback on your arguments before you write.
+
+Then write your first draft. Give yourself 60 to 90 minutes.
+
+Next, use the PAIRR process. Get feedback from both a peer and an AI writing tool, compare the feedback, and revise.
+
+Finally, submit your polished memo through the submission box.
+
+The PAIRR feedback is optional but earns up to 5 bonus points—and research shows students who use it write stronger memos.
+
+---
+
+[3:30-4:00] CLOSING
+
+That's everything you need to know. To summarize: one-page memo, 500 words max, explain what makes sports different, give two to three investment factors, use evidence from the course, and write in professional memo format.
+
+You have all the tools. Now go write something great. Good luck!
+
+[End]
+```
+
+**Transcript Note:**
+Add this text below the audio player:
+```
+📄 **Transcript:** [Expand to read full transcript]
+[Insert full script text in collapsible element]
 ```
 
 ---
@@ -621,10 +1109,10 @@ or deep supporting evidence."
 
 ---
 
-## Module 6 Complete - Transition to Module 7
+## Your Executive Memo Complete - Transition to Looking Ahead
 
 **What You've Accomplished:**
-You've completed Week 1's summative assessment—a comprehensive reflection memo demonstrating your mastery of all four learning outcomes. You've synthesized knowledge from modules 2-5, applied the revenue ecosystem framework to a strategic investment scenario, and communicated your analysis with executive-level clarity. This 30-point assessment measures your ability to analyze revenue ecosystems holistically.
+You've completed Week 1's summative assessment—a comprehensive reflection memo demonstrating your mastery of all four learning outcomes. You've synthesized knowledge from across the week, applied the revenue ecosystem framework to a strategic investment scenario, and communicated your analysis with executive-level clarity. This 30-point assessment measures your ability to analyze revenue ecosystems holistically.
 
 **Key Takeaways:**
 - You can map all five major revenue streams and their relative importance
@@ -633,8 +1121,8 @@ You've completed Week 1's summative assessment—a comprehensive reflection memo
 - You can analyze revenue-sharing models and their strategic implications
 - You've practiced the PAIRR methodology (Peer and AI Review + Reflection)
 
-**Up Next: Module 7 - Wrap-Up and Week 2 Preview**
-Week 1 is nearly complete. In Module 7, you'll consolidate your learning with key takeaways, see how this week connects to your course project, and get a preview of Week 2's focus on media rights and fan monetization strategies.
+**Up Next: Looking Ahead to Week 2**
+Week 1 is nearly complete. In the final section, you'll consolidate your learning with key takeaways, see how this week connects to your course project, and get a preview of Week 2's focus on media rights and fan monetization strategies.
 
 One more module to go—let's bring Week 1 home!
 

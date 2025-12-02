@@ -1,7 +1,11 @@
 # Five Revenue Streams That Power Sports
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-01
 
 **Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports WLO 1.1, 1.2, 1.3)
+
+### Version 1.4.0 Changes
+- **NEW:** Added stock photo suggestions throughout text-heavy sections to enhance visual engagement
+- **NEW:** Picture elements added after Element 1 (intro), Element 5 (media rights), Element 12 (ticketing), Element 15 (premium seating), Element 20 (sponsorship), Element 23 (merchandising), Element 25 (betting), and Element 28 (ecosystem)
 
 **Uplimit Structure:** Third module in Unit 1
 
@@ -44,6 +48,17 @@ Professional sports organizations generate revenue through five major streams, e
 
 As you work through this module, pay attention to how these streams interconnect. An investment in one area often creates ripple effects across the entire ecosystem—a principle that separates strategic sports business leaders from purely financial operators.
 ```
+
+#### Element 1A: Picture - Revenue Ecosystem Visual (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 1 introduction text
+- **Suggested Image:** Aerial view of a packed professional sports stadium during a night game, showing the full venue with lit field/court, crowd, and surrounding city lights
+- **Alt Text:** "Aerial view of a packed professional sports stadium at night, with illuminated playing field, 50,000+ fans in attendance, and city skyline in background—representing the multi-billion dollar sports entertainment industry"
+- **Search Terms:** `professional sports stadium aerial night`, `packed arena crowd lights`, `sports venue night game aerial`
+- **Purpose:** Sets the scale and excitement of the sports business industry before diving into revenue details
+- **Size:** Full width, max 800px
+
+---
 
 #### Element 2: Video - Five Revenue Streams Overview
 - **File:** `week1-video1-revenue-streams.mp4`
@@ -212,6 +227,17 @@ These deals are massive: the NFL's current media rights contracts total **$110 b
 For leagues, broadcast deals provide **predictable, long-term revenue** (often 9-12 year contracts), allowing teams to make long-term financial commitments like player contracts and facility investments.
 ```
 
+#### Element 5A: Picture - Broadcast Control Room (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 5 media rights text
+- **Suggested Image:** Television broadcast control room during live sports production, showing multiple monitors with game footage, mixing board, and production crew
+- **Alt Text:** "Television broadcast control room during live sports production, with multiple HD monitors displaying game action, mixing console, and production crew managing the live feed—illustrating the multi-billion dollar media rights infrastructure"
+- **Search Terms:** `sports broadcast control room`, `TV production studio sports`, `live sports media production`
+- **Purpose:** Visualizes the media infrastructure that commands 40-60% of sports revenue
+- **Size:** Full width, max 800px
+
+---
+
 #### Element 6: iFrame Widget - Media Rights Calculator
 
 ### ⚙ Interactive Activity: Media Rights Calculator
@@ -247,7 +273,7 @@ In this interactive calculator, you'll input key factors—league size, audience
 **Uplimit Implementation:**
 ```html
 <iframe
-  src="https://jkruckivey.github.io/business-of-marketing-in-sport/module-2/widgets/media-rights-calculator.html"
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/media-rights-calculator.html"
   width="100%"
   height="700"
   style="border: none; border-radius: 8px;"
@@ -375,6 +401,17 @@ Teams now adjust ticket prices based on demand factors: opponent quality (Lakers
 Over a full season, dynamic pricing can **increase ticketing revenue by 15-25%** compared to static pricing.
 ```
 
+#### Element 12A: Picture - Arena Crowd Experience (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 12 ticketing text
+- **Suggested Image:** Enthusiastic fans in stadium seats cheering during a game, showing diverse crowd engagement and the live event atmosphere
+- **Alt Text:** "Enthusiastic fans cheering in stadium seats during a professional sports game, showing diverse crowd of all ages engaged in the live event experience—representing the 20-30% of revenue from ticketing and live attendance"
+- **Search Terms:** `sports fans cheering stadium`, `crowd excitement arena`, `diverse fans sports event`
+- **Purpose:** Captures the emotional value of live attendance that drives ticketing revenue
+- **Size:** Full width, max 800px
+
+---
+
 #### Element 13: iFrame Widget - Dynamic Pricing Simulator
 
 ### ⚙ Interactive Activity: Dynamic Pricing Simulator
@@ -460,6 +497,17 @@ The evolution of stadium economics has shifted dramatically from a **"fill the s
 
 **The Critical Economic Insight:** Premium seating generates 40-50% of ticketing revenue despite representing only 10-15% of capacity. This explains why virtually every stadium renovation prioritizes premium inventory expansion.
 ```
+
+#### Element 15A: Picture - Luxury Suite Experience (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 15 premium seating text
+- **Suggested Image:** Luxury suite interior at a sports arena, showing comfortable seating, catering setup, and view of the playing field through glass window
+- **Alt Text:** "Interior of a luxury suite at a professional sports arena, featuring comfortable leather seating, catering service, multiple TV screens, and panoramic view of the playing field—representing premium seating that generates 40-50% of ticketing revenue from just 10-15% of capacity"
+- **Search Terms:** `luxury suite sports arena`, `VIP box stadium`, `premium seating sports venue`
+- **Purpose:** Illustrates the premium experience that commands $100,000-500,000 per season
+- **Size:** Full width, max 800px
+
+---
 
 #### Element 16: iFrame Widget - Stadium Revenue Optimizer
 
@@ -658,6 +706,17 @@ Corporate sponsorship represents **15-25% of revenue** for most professional tea
 The best sponsors **activate** beyond logos—creating fan experiences that build positive associations. Scotiabank's "Scene+ Night" at Leafs games integrates loyalty programs with exclusive ticket offers and in-arena experiences. Delta's Lakers partnership includes exclusive lounges, travel content series, and behind-the-scenes player content.
 ```
 
+#### Element 20A: Picture - Stadium Branding and Sponsorship (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 20 sponsorship text
+- **Suggested Image:** Exterior of a major sports arena with prominent naming rights signage visible, showing corporate branding integrated into the venue architecture
+- **Alt Text:** "Exterior of a major professional sports arena with prominent corporate naming rights signage illuminated at dusk, surrounded by arriving fans—representing the $15-50 million annual naming rights deals that anchor corporate sponsorship partnerships"
+- **Search Terms:** `sports arena naming rights`, `stadium corporate sponsorship`, `arena exterior signage night`
+- **Purpose:** Shows the scale of corporate investment in sports sponsorship (15-25% of revenue)
+- **Size:** Full width, max 800px
+
+---
+
 #### Element 21: iFrame Widget - Sponsorship ROI Calculator
 
 ### ⚙ Interactive Activity: Sponsorship ROI Calculator
@@ -732,6 +791,17 @@ Merchandising and licensing revenue represents **5-10% of revenue** for most tea
 **Key Revenue Drivers:** Championship runs (sales increase 200-400% during playoffs), star acquisitions (LeBron's Lakers trade = $1M+ in jersey sales within hours), and new designs (NBA "City Edition" jerseys generate $100M+ annually).
 ```
 
+#### Element 23A: Picture - Team Merchandise Store (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 23 merchandising text
+- **Suggested Image:** Interior of a professional sports team merchandise store with jerseys displayed on walls, customers browsing, and branded apparel visible
+- **Alt Text:** "Interior of a professional sports team merchandise store with authentic jerseys displayed on walls, customers browsing branded apparel, and championship merchandise featured prominently—representing the 5-10% of revenue from merchandising and licensing that spikes 200-400% during championship runs"
+- **Search Terms:** `sports team store interior`, `jersey store merchandise`, `sports apparel retail`
+- **Purpose:** Visualizes the retail experience and merchandise that drives fan spending
+- **Size:** Full width, max 800px
+
+---
+
 #### Element 24: Tiles - 3 Merchandising Spikes
 Create 3 tiles (1x3 horizontal layout):
 
@@ -774,6 +844,17 @@ Sports betting represents the **newest and fastest-growing revenue stream**, cur
 
 **Strategic Value:** Fans with bets watch **30-40% more sports content**, games between weak teams gain interest, in-game betting keeps fans engaged throughout.
 ```
+
+#### Element 25A: Picture - Sports Betting Environment (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 25 betting text
+- **Suggested Image:** Modern sportsbook lounge with large screens showing live games, digital betting boards displaying odds, and patrons watching games
+- **Alt Text:** "Modern sportsbook lounge with multiple large HD screens displaying live professional sports, digital betting boards showing real-time odds, and patrons engaged in watching games—representing the fastest-growing revenue stream at 30-40% annual growth"
+- **Search Terms:** `sportsbook lounge screens`, `sports betting venue`, `modern sportsbook interior`
+- **Purpose:** Shows the physical betting environment driving the 30-40% annual growth in betting revenue
+- **Size:** Full width, max 800px
+
+---
 
 #### Element 26: iFrame Widget - Betting Market Simulator
 
@@ -864,6 +945,17 @@ But this analysis misses the **ecosystem amplification**: media rights value inc
 
 This explains why teams "overpay" for stars. They're investing in **ecosystem amplification** across media, sponsorship, merchandise, and brand value.
 ```
+
+#### Element 28A: Picture - Star Player Impact (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 28 ecosystem principle text
+- **Suggested Image:** Professional hockey or basketball player in action during a game, with crowd visible in background, capturing the star power and athletic excellence that drives ecosystem value
+- **Alt Text:** "Elite professional athlete in action during a game, demonstrating the star power that generates ecosystem value far beyond direct revenue—a single marquee player can amplify media rights, sponsorship deals, merchandise sales, and betting engagement by $30-40 million annually"
+- **Search Terms:** `professional athlete game action`, `star player sports`, `elite hockey basketball player`
+- **Purpose:** Personalizes the ecosystem concept by showing the human element that creates $30-40M+ in annual value
+- **Size:** Full width, max 800px
+
+---
 
 #### Element 29: iFrame Widget - Ecosystem Cascade Simulator
 

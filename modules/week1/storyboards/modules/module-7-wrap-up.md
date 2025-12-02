@@ -1,7 +1,10 @@
 # Looking Ahead to Week 2
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-01
 
 **Purpose:** Consolidate Week 1 learning, preview Week 2
+
+### Version 1.4.0 Changes
+- **NEW:** Added stock photo suggestion after Element 3 Week 2 preview text to build anticipation for media rights content
 
 **Uplimit Structure:** Final module in Unit 1
 
@@ -86,6 +89,17 @@ Week 2 marks the beginning of your course-long Anchor Project (60% of final grad
 
 Get ready for another intensive week of learning! See you in Week 2.
 ```
+
+### Element 3A: Picture - Media Rights Preview (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 3 Week 2 preview text
+- **Suggested Image:** Multiple television screens or streaming devices showing different live sports broadcasts simultaneously, or a person watching sports on multiple screens
+- **Alt Text:** "Multiple screens displaying different live sports broadcasts simultaneously, representing the media rights landscape where streaming services compete with traditional broadcasters for the $110+ billion sports content market"
+- **Search Terms:** `sports streaming multiple screens`, `live sports broadcast`, `watching sports multiple devices`
+- **Purpose:** Builds anticipation for Week 2's deep dive into media rights by visualizing the streaming vs. traditional broadcast competition
+- **Size:** Full width, max 800px
+
+---
 
 ### Element 4: Details Content
 ```

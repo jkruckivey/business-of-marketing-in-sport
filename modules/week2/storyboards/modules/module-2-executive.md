@@ -1,7 +1,10 @@
 ## MODULE 2: Executive Leader Perspective
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-01
 
 **Purpose:** Deliver practitioner insights on media strategy from TSN/DAZN executive (supports WLO 2.1, 2.2, 2.3)
+
+### Version 1.4.0 Changes
+- **NEW:** Added stock photo suggestion after Infobox Content to establish executive/corporate media setting
 
 **Uplimit Structure:** Second module in Unit 2
 
@@ -41,6 +44,17 @@ integrated sports empire strategy.
 
 Supports WLO 2.1, 2.2, 2.3, and 2.4.
 ```
+
+### Infobox A: Picture - Sports Media Executive Setting (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Infobox Content (executive session introduction)
+- **Suggested Image:** Modern corporate media headquarters lobby or executive office with sports imagery, multiple screens showing sports content, conveying a major media company environment
+- **Alt Text:** "Modern sports media company headquarters with multiple screens displaying live sports content and corporate environment—representing the executive setting where billion-dollar media rights strategies are developed at companies like Rogers, TSN, and Sportsnet"
+- **Search Terms:** `sports media company headquarters`, `broadcast network corporate office`, `media executive office screens`
+- **Purpose:** Sets the professional tone for executive insights and contextualizes the high-level strategy discussion
+- **Size:** Full width, max 800px
+
+---
 
 ### Video Specifications:
 - **File:** `Interviews/Al Dak SVP, Revenue, Rogers Sports and Media.mp4`

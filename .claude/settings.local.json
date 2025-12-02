@@ -50,7 +50,8 @@
       "Bash(while read file)",
       "mcp__playwright__browser_take_screenshot",
       "mcp__playwright__browser_wait_for",
-      "Bash(python -m http.server:*)"
+      "Bash(python -m http.server:*)",
+      "Bash(git mv:*)"
     ],
     "deny": [],
     "ask": [],

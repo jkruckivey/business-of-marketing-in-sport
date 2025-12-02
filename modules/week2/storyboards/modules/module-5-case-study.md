@@ -1,7 +1,10 @@
 ## MODULE 5: Rogers NHL Case Study (V3 INTERACTIVE-FIRST REDESIGN)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-01
 
 **Purpose:** Analyze the Rogers/NHL $5.2B deal: structure, performance, and 2026 decision (supports ALL WLOs 2.1-2.4)
+
+### Version 1.4.0 Changes
+- **NEW:** Added stock photo suggestions after Element 3 (company background), Element 10 (audience trends), and Element 12 (competitive landscape)
 
 ⭐ **V3 REDESIGN - INTERACTIVE-FIRST**: This module has been redesigned from passive case reading (10-12 pages, 25-30 min) to active case analysis (23-25 min total, 65% active engagement).
 
@@ -96,6 +99,15 @@ Copy the markdown below directly into Uplimit:
 
 **Next: Explore the deal terms and what Rogers got for $5.2 billion.**
 ```
+
+### Element 3A: Picture - Rogers/NHL Deal Context (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 3 company background text
+- **Suggested Image:** Hockey arena exterior or Rogers Centre/Scotiabank Arena in Toronto (or similar major Canadian arena), showing the scale of NHL facilities and the Canadian hockey market context
+- **Alt Text:** "Major Canadian NHL arena exterior representing the hockey infrastructure and passionate Canadian market that made NHL rights worth $5.2 billion to Rogers Communications—the largest sports media deal in Canadian history"
+- **Search Terms:** `NHL arena exterior Canada`, `hockey stadium Toronto`, `Scotiabank Arena exterior`
+- **Purpose:** Establishes the Canadian hockey market context and physical infrastructure that Rogers was betting on
+- **Size:** Full width, max 800px
 
 ---
 
@@ -434,6 +446,15 @@ Beyond financial projections, Rogers faced declining and fragmented audiences.
 **Next: Explore viewership data interactively.**
 ```
 
+### Element 10A: Picture - Hockey Night in Canada Audience (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 10 audience trends text
+- **Suggested Image:** Canadian hockey fans watching a game in a bar, living room, or arena—showing the passionate but aging audience demographic that Rogers' deal depended on
+- **Alt Text:** "Canadian hockey fans watching a game together, representing the passionate but aging Hockey Night in Canada audience that declined 28% over 10 years—with viewers aged 18-34 declining 50% while 55+ held steady"
+- **Search Terms:** `hockey fans watching game Canada`, `sports bar hockey`, `family watching hockey`
+- **Purpose:** Personalizes the audience trends data by showing the viewers whose behavior determined Rogers' success or failure
+- **Size:** Full width, max 800px
+
 ---
 
 ## Element 11: Widget 7 - Viewership Trends Analyzer
@@ -513,6 +534,15 @@ While Rogers struggled with the NHL deal, competitors evolved with diversified s
 
 **Next: Compare Rogers' strategy to competitors.**
 ```
+
+### Element 12A: Picture - Streaming Competition (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 12 competitive landscape text
+- **Suggested Image:** Multiple streaming service logos on a smart TV or device screen, or a person scrolling through various streaming app options—showing the competitive fragmentation Rogers faces
+- **Alt Text:** "Smart TV or device displaying multiple streaming service options, representing the competitive landscape where Rogers' single-property NHL strategy competes against diversified multi-sport platforms like DAZN and tech giants like Apple TV+ and Amazon with deep pockets"
+- **Search Terms:** `streaming services TV screen`, `multiple streaming apps`, `streaming competition`
+- **Purpose:** Visualizes the competitive fragmentation that undermined Rogers' single-property exclusivity strategy
+- **Size:** Full width, max 800px
 
 ---
 

@@ -21,6 +21,10 @@
             --color-success: #c0d1cd;
             --color-warning: #f0ede0;
             --color-info: #bfe5e7;
+            --color-purple: #d5cae0;
+            --color-green: #c0d1cd;
+            --color-turquoise: #bfe5e7;
+            --color-sand: #f0ede0;
             --border-radius: 8px;
             --border-radius-sm: 4px;
         }
@@ -34,7 +38,7 @@
         .header p { color: #6b7280; font-size: 0.95rem; }
         .outcomes-section { margin-bottom: 2rem; }
         .outcomes-section h3 { color: #1f2937; font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; }
-        .outcome-card { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; transition: all 0.2s ease; cursor: pointer; }
+        .outcome-card { background: var(--color-purple); border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; transition: all 0.2s ease; cursor: pointer; }
         .outcome-card:hover { border-color: #2d3748; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
         .outcome-card:focus { outline: 2px solid #3182ce; outline-offset: 2px; }
         .outcome-card.active { border-color: #2d3748; border-width: 2px; background: #fafafa; }
@@ -43,7 +47,7 @@
         .outcome-text { color: #374151; font-size: 0.95rem; flex-grow: 1; }
         .clo-connection { color: #6b7280; font-size: 0.8rem; margin-top: 0.5rem; padding-left: calc(0.75rem + 60px); display: none; }
         .outcome-card.active .clo-connection { display: block; }
-        .clo-section { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; }
+        .clo-section { background: var(--color-green); border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; }
         .clo-section h3 { color: #1f2937; font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
         .clo-item { background: white; border: 1px solid #e5e7eb; border-radius: 6px; padding: 1rem; margin-bottom: 0.75rem; opacity: 0.5; transition: all 0.3s ease; }
         .clo-item.highlighted { opacity: 1; border-color: #2d3748; border-width: 2px; }
@@ -51,7 +55,7 @@
         .clo-code { background: #6b7280; color: white; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; white-space: nowrap; }
         .clo-item.highlighted .clo-code { background: #2d3748; }
         .clo-text { color: #374151; font-size: 0.9rem; }
-        .help-text { background: #f0f9ff; border-left: 3px solid #2d3748; padding: 0.75rem 1rem; margin-top: 1.5rem; border-radius: 4px; }
+        .help-text { background: var(--color-turquoise); border-left: 3px solid #2d3748; padding: 0.75rem 1rem; margin-top: 1.5rem; border-radius: 4px; }
         .help-text p { color: #1f2937; font-size: 0.85rem; }
         @media (max-width: 640px) {
             body { padding: 1rem; }

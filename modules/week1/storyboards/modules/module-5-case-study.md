@@ -1,7 +1,10 @@
 # The Canucks Challenge
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-01
 
 **Purpose:** Analyze real revenue-sharing decisions (supports WLO 1.4 - Analysis level)
+
+### Version 1.4.0 Changes
+- **NEW:** Added stock photo suggestion after Element 1 connecting introduction text to establish Vancouver market context
 
 **Uplimit Structure:** Fifth module in Unit 1
 
@@ -32,6 +35,17 @@ You've now built your own theoretical revenue strategy through the Revenue Empir
 
 Now it's time to see how theory meets reality. The Vancouver Canucks face actual constraints that your simulation didn't include: NHL revenue sharing formulas, Canadian dollar currency challenges, a competitive Western Conference, and market-size limitations. In this module, you'll analyze real financial data, real strategic dilemmas, and real stakeholder tensions. This is where sports business gets messy—and interesting.
 ```
+
+### Element 1A: Picture - Vancouver Market Context (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 1 connecting introduction text
+- **Suggested Image:** Vancouver cityscape with mountains and harbor, ideally with a sports arena visible, or Rogers Arena exterior during an event
+- **Alt Text:** "Vancouver cityscape with mountains in the background and downtown waterfront, representing the unique Canadian market where the Canucks operate—facing currency challenges, revenue sharing constraints, and competitive Western Conference pressures"
+- **Search Terms:** `Vancouver skyline sports`, `Rogers Arena Vancouver`, `Vancouver downtown harbor mountains`
+- **Purpose:** Establishes the Vancouver market context and Canadian geography that creates unique revenue challenges
+- **Size:** Full width, max 800px
+
+---
 
 ### Element 2: Infobox Content
 

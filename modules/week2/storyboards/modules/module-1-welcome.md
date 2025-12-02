@@ -1,7 +1,10 @@
 ## MODULE 1: Welcome & Learning Objectives
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-01
 
 **Purpose:** Orient students to Week 2, establish learning expectations, connect to Week 1 revenue foundations
+
+### Version 1.4.0 Changes
+- **NEW:** Added stock photo suggestion after Text Content (media rights introduction) to visualize the billion-dollar industry
 
 **Uplimit Structure:** First module in Unit 2
 
@@ -70,6 +73,17 @@ What did Rogers get wrong—and what did they get right? By week's end, you'll u
 media economics well enough to evaluate mega-deals yourself and recommend platform
 strategies for sports properties.
 ```
+
+### Text Content A: Picture - Media Rights Deal Scale (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Text Content (media rights introduction)
+- **Suggested Image:** Large-scale media production truck or mobile broadcast unit outside a major sports venue, with satellite dishes and production equipment visible, showing the scale of sports media operations
+- **Alt Text:** "Large sports media production trucks and satellite equipment outside a major sports venue, representing the massive infrastructure behind the $110 billion NFL media deals and other billion-dollar sports broadcasting agreements"
+- **Search Terms:** `sports broadcast truck stadium`, `mobile production unit sports`, `TV broadcast equipment venue`
+- **Purpose:** Establishes the scale and professionalism of the sports media industry that students will be analyzing
+- **Size:** Full width, max 800px
+
+---
 
 ### Tiles Content:
 Create 3 tiles (1x3 or 2x2 grid with one empty):

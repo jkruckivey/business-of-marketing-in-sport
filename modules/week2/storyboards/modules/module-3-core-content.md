@@ -1,7 +1,10 @@
 ## MODULE 3: Media Rights Framework (V3 INTERACTIVE-FIRST REDESIGN)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-01
 
 **Purpose:** Provide foundational knowledge about media economics and rights valuation through interactive exploration (supports WLO 2.1, 2.2, 2.3)
+
+### Version 1.4.0 Changes
+- **NEW:** Added stock photo suggestions after Element 1 (media rights intro), Element 6 (exclusivity text), Element 9 (linear vs streaming), and Element 11 (fan engagement)
 
 ⭐ **V3 REDESIGN - INTERACTIVE-FIRST**: This module has been redesigned from passive reading (6-7 pages, 15-18 min) to active learning (12 micro-elements with 4 widgets, 12-15 min total, 60% active engagement).
 
@@ -50,6 +53,15 @@ These deals are massive: The NFL's current media rights contracts total **$110 b
 
 This module explores HOW broadcasters value these rights deals.
 ```
+
+### Element 1A: Picture - Sports Broadcasting Infrastructure (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 1 media rights foundation text
+- **Suggested Image:** Professional broadcast camera crew on the sidelines of a major sporting event, showing high-end video equipment, monitors, and production personnel capturing live game action
+- **Alt Text:** "Professional broadcast camera crew on the sidelines of a major sports event, with high-end video equipment, monitors, and production personnel—representing the multi-billion dollar sports media infrastructure that generates 40-60% of league revenue"
+- **Search Terms:** `sports broadcast camera crew sideline`, `professional sports media production`, `live sports broadcast equipment`
+- **Purpose:** Visualizes the massive media infrastructure that supports the $110B+ sports broadcasting industry
+- **Size:** Full width, max 800px
 
 ---
 
@@ -199,6 +211,15 @@ When Amazon entered NFL rights bidding (2021), traditional networks had to raise
 **Next: Experience exclusivity bidding through simulation.**
 ```
 
+### Element 6A: Picture - Competitive Bidding Environment (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 6 exclusivity and competition text
+- **Suggested Image:** Business executives in a corporate boardroom or negotiation setting, with streaming service logos or sports broadcast materials visible, conveying high-stakes media deal negotiations
+- **Alt Text:** "Business executives in a high-stakes negotiation meeting, representing the competitive bidding wars between traditional broadcasters, streaming platforms, and tech giants that drive sports media rights prices up by 75% or more"
+- **Search Terms:** `business negotiation meeting`, `corporate boardroom deal`, `media executives negotiating`
+- **Purpose:** Conveys the competitive tension between bidders (ESPN, Amazon, Apple, etc.) that drives up rights prices
+- **Size:** Full width, max 800px
+
 ---
 
 ---
@@ -317,6 +338,15 @@ Traditional linear broadcasting and direct-to-consumer streaming have **fundamen
 
 **Next: Compare models side-by-side and explore trade-offs.**
 ```
+
+### Element 9A: Picture - Streaming vs Traditional Viewing (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 9 linear vs streaming intro text
+- **Suggested Image:** Split image or side-by-side showing traditional TV viewing (cable box, living room TV) versus modern streaming (laptop, tablet, phone with sports content), representing the platform shift
+- **Alt Text:** "Comparison of traditional TV viewing with cable box and large screen versus streaming sports on laptop and mobile devices—illustrating the platform economics shift from advertising-driven linear TV to subscription-driven direct-to-consumer streaming"
+- **Search Terms:** `streaming vs cable television`, `watching sports mobile tablet`, `cord cutting streaming`
+- **Purpose:** Visualizes the platform shift that is reshaping sports media economics
+- **Size:** Full width, max 800px
 
 ---
 
@@ -458,6 +488,15 @@ Platforms that drive engagement (interactive features, fantasy integration, bett
 
 **Next: Build your own engagement value chain.**
 ```
+
+### Element 11A: Picture - Engaged Fan Experience (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 11 fan engagement monetization text
+- **Suggested Image:** Sports fans watching a game while actively using mobile devices—checking fantasy scores, placing bets on sports betting apps, engaging with second-screen content, or using team apps
+- **Alt Text:** "Sports fans watching a game while actively using smartphones and tablets—checking fantasy scores, placing bets, and engaging with second-screen content—representing the fan engagement value chain where super-fans generate $300-500+ per year compared to $5-15 for passive viewers"
+- **Search Terms:** `sports fans mobile phones stadium`, `second screen sports watching`, `fantasy sports betting app`
+- **Purpose:** Shows the engaged/super-fan behavior that generates 20-40x more value than passive viewing
+- **Size:** Full width, max 800px
 
 ---
 

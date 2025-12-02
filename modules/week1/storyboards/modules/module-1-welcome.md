@@ -1,8 +1,11 @@
 # Your Week 1 Journey
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-01
 
 **Purpose:** Orient students to Week 1, establish learning expectations
 **Estimated Time:** 5-7 minutes
+
+### Version 1.4.0 Changes
+- **NEW:** Added stock photo suggestion after Element 2 introduction text to enhance visual engagement
 
 **Uplimit Structure:** First module in Unit 1
 
@@ -68,6 +71,17 @@ European soccer operates on a more entrepreneurial model. You'll understand why
 the NBA invested billions in creating its own streaming infrastructure, and why
 betting legalization fundamentally changes sport's economic equation.
 ```
+
+### Element 2A: Picture - Professional Sports Ecosystem (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 2 introduction text
+- **Suggested Image:** Wide shot of a professional sports stadium during pre-game or intermission, showing the interconnected elements: broadcast cameras, sponsor signage, fans with merchandise, and premium seating areas
+- **Alt Text:** "Wide view of a professional sports arena during an event, showing broadcast cameras, corporate sponsor signage along the boards and throughout the venue, fans wearing team merchandise, and visible luxury suites—representing the interconnected revenue ecosystem of media, sponsorship, ticketing, and merchandising"
+- **Search Terms:** `sports arena broadcast cameras`, `stadium sponsorship signage`, `sports venue wide shot`
+- **Purpose:** Provides visual context for the 5 revenue streams introduced in the text, showing them in action at a real venue
+- **Size:** Full width, max 800px
+
+---
 
 ### Element 3: Tiles Content
 Create 5 tiles:

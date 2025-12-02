@@ -1,7 +1,10 @@
 ## MODULE 7: Wrap-Up, Preview & Anchor Project Milestone
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-01
 
 **Purpose:** Consolidate Week 2 learning, preview Week 3, launch Anchor Project Team Formation
+
+### Version 1.4.0 Changes
+- **NEW:** Added stock photo suggestions after Element 3 (Anchor Project team formation) and Element 6 (Week 3 preview)
 
 **Uplimit Structure:** Final module in Unit 2
 
@@ -128,6 +131,15 @@ on team composition, property selection defensibility, and articulated challenge
 
 **Use the tools below to get started!**
 ```
+
+### Element 3A: Picture - MBA Team Collaboration (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 3 Anchor Project instructions
+- **Suggested Image:** Diverse group of MBA students or young professionals collaborating around a table with laptops, whiteboards, and presentation materials—showing team project work
+- **Alt Text:** "Diverse team of MBA students collaborating on a group project, with laptops, notes, and presentation materials—representing the Anchor Project team formation where 5-6 students will develop a comprehensive marketing plan for their chosen sport property"
+- **Search Terms:** `MBA students team project`, `business school group work`, `diverse team collaboration`
+- **Purpose:** Visualizes the team collaboration that will define the Anchor Project experience
+- **Size:** Full width, max 800px
 
 ---
 
@@ -356,6 +368,15 @@ to develop your property's revenue strategy.
 
 Get ready for another intensive week! See you in Week 3.
 ```
+
+### Element 6A: Picture - Sponsorship and Betting Preview (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 6 Week 3 preview text
+- **Suggested Image:** Stadium with visible corporate sponsor signage and branding, or a sportsbook/betting environment, showing the intersection of sports and commercial partnerships
+- **Alt Text:** "Sports stadium with prominent corporate sponsor signage and branding visible throughout the venue—representing Week 3's focus on sponsorship activation and sports betting integration, the fastest-growing revenue streams in professional sport"
+- **Search Terms:** `stadium sponsor signage`, `sports sponsorship advertising`, `sports betting venue`
+- **Purpose:** Builds anticipation for Week 3's focus on sponsorship ROI and betting partnerships
+- **Size:** Full width, max 800px
 
 ---
 

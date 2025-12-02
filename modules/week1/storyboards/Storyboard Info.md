@@ -158,7 +158,7 @@ Throughout this storyboard, elements are marked with priority:
 - **Status:** Built and tested
 - **Build Time:** 4 hours
 - **Accessibility:** WCAG 2.2 AA compliant
-- **Location:** `module-2/widgets/media-rights-calculator.html`
+- **Location:** `modules/week1/widgets/media-rights-calculator.html`
 
 #### 5. Stadium Revenue Optimizer ✅ COMPLETE
 

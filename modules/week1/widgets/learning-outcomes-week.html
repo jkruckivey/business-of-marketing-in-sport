@@ -21,6 +21,10 @@
             --color-success: #c0d1cd;
             --color-warning: #f0ede0;
             --color-info: #bfe5e7;
+            --color-purple: #d5cae0;
+            --color-green: #c0d1cd;
+            --color-turquoise: #bfe5e7;
+            --color-sand: #f0ede0;
             --border-radius: 8px;
             --border-radius-sm: 4px;
         }
@@ -34,7 +38,7 @@
         .header p { color: var(--color-neutral-500); font-size: 0.95rem; }
         .outcomes-section { margin-bottom: 2rem; }
         .outcomes-section h3 { color: var(--color-neutral-900); font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; }
-        .outcome-card { background: var(--color-neutral-50); border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1rem; transition: all 0.2s ease; cursor: pointer; }
+        .outcome-card { background: var(--color-purple); border: 1px solid var(--color-neutral-300); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1rem; transition: all 0.2s ease; cursor: pointer; }
         .outcome-card:hover { border-color: var(--color-neutral-800); box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
         .outcome-card.active { border-color: var(--color-neutral-800); border-width: 2px; background: var(--color-neutral-50); }
         .outcome-header { display: flex; align-items: flex-start; gap: 0.75rem; }
@@ -42,7 +46,7 @@
         .outcome-text { color: var(--color-neutral-700); font-size: 0.95rem; flex-grow: 1; }
         .clo-connection { color: var(--color-neutral-500); font-size: 0.8rem; margin-top: 0.5rem; padding-left: calc(0.75rem + 60px); display: none; }
         .outcome-card.active .clo-connection { display: block; }
-        .clo-section { background: var(--color-neutral-50); border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; }
+        .clo-section { background: var(--color-green); border: 1px solid var(--color-neutral-300); border-radius: var(--border-radius); padding: 1.25rem; }
         .clo-section h3 { color: var(--color-neutral-900); font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
         .clo-item { background: white; border: 1px solid var(--color-neutral-200); border-radius: 6px; padding: 1rem; margin-bottom: 0.75rem; opacity: 0.5; transition: all 0.3s ease; }
         .clo-item.highlighted { opacity: 1; border-color: var(--color-neutral-800); border-width: 2px; }

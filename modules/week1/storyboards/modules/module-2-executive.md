@@ -1,7 +1,10 @@
 # Inside the Sports Business
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-01
 
 **Purpose:** Deliver expert practitioner perspective on revenue ecosystems through focused concept videos (supports WLO 1.1, 1.2)
+
+### Version 1.4.0 Changes
+- **NEW:** Added stock photo suggestion after Element 1 connecting introduction text to set executive context
 
 **Uplimit Structure:** Second module in Unit 1
 
@@ -23,6 +26,15 @@ You now understand where you're headed this week—the four learning objectives 
 
 Before diving into the details of each stream, you need context from someone who's actually done this work. In this module, you'll hear from a senior sports business executive who has negotiated multi-million dollar media deals, built sponsorship portfolios, and navigated the complex economics of Canadian sports markets. Their insights will ground the theory you're about to explore in Module 3 with real-world experience, strategic trade-offs, and lessons learned from the field.
 ```
+
+### Element 1A: Picture - Executive Leadership (NEW v1.4.0)
+- **Type:** Stock Photo
+- **Placement:** After Element 1 connecting introduction text
+- **Suggested Image:** Professional executive in business attire in a modern sports venue setting (stadium box, broadcast booth, or sports business office), projecting authority and expertise
+- **Alt Text:** "Professional sports business executive in business attire standing in a modern sports venue setting, representing the senior leaders who negotiate multi-million dollar media deals and manage complex sports business operations"
+- **Search Terms:** `sports business executive`, `professional stadium office`, `sports industry leader`
+- **Purpose:** Sets the tone for executive-level content and establishes credibility for the practitioner perspective
+- **Size:** Medium width, max 600px (can be positioned alongside text)
 
 ---
 

@@ -289,7 +289,7 @@ In this interactive calculator, you'll input key factors—league size, audience
 **Uplimit Implementation:**
 ```html
 <iframe
-  src="https://jkruckivey.github.io/business-of-marketing-in-sport/module-2/widgets/media-rights-calculator.html"
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/media-rights-calculator.html"
   width="100%"
   height="700"
   style="border: none; border-radius: 8px;"

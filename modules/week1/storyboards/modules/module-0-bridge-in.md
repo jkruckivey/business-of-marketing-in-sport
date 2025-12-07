@@ -696,8 +696,8 @@ You've been hooked by a real business problem—the Connor McDavid $100M paradox
 **Key Insight:**
 The fact that you struggled with the diagnostic exercise is actually the point. Professional sports revenue works differently than almost any other business. The traditional MBA frameworks don't fully apply here. Revenue streams are interdependent, not independent. Investments create ripple effects across the entire ecosystem. And what looks like a $4.5M loss on a spreadsheet might actually be a $32M gain when you understand the full picture.
 
-**Up Next: Module 1 - Learning Outcomes**
-Now that you've seen the problem and identified your knowledge gaps, Module 1 will show you exactly what you're going to learn this week. You'll see the four key challenges you'll be able to solve by Friday—challenges that will transform you from someone who sees the McDavid contract as a loss into someone who can confidently defend it to a skeptical board with data they can't argue with.
+**Up Next: Your Week 1 Journey**
+Now that you've seen the problem and identified your knowledge gaps, the next module will show you exactly what you're going to learn this week. You'll see the four key challenges you'll be able to solve by Friday—challenges that will transform you from someone who sees the McDavid contract as a loss into someone who can confidently defend it to a skeptical board with data they can't argue with.
 
 Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
 

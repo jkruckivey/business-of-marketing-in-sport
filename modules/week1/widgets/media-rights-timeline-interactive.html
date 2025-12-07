@@ -112,9 +112,14 @@
         }
 
         .filter-btn.active {
-            background: var(--color-text-primary);
+            background: var(--color-neutral-800);
             color: white;
-            border-color: var(--color-text-primary);
+            border-color: var(--color-neutral-800);
+        }
+
+        .filter-btn:hover:not(.active) {
+            background: var(--color-sand);
+            border-color: var(--color-neutral-400);
         }
 
 
@@ -278,9 +283,10 @@
             gap: 2rem;
             margin-top: 2rem;
             padding: 1rem;
-            background: var(--color-turquoise);
+            background: var(--color-neutral-50);
             border-radius: 6px;
             justify-content: center;
+            border: 1px solid var(--color-neutral-200);
         }
 
         .legend-item {
@@ -370,9 +376,15 @@
         .stat-item {
             text-align: center;
             padding: 1rem;
-            background: var(--color-sand);
+            background: var(--color-neutral-50);
             border-radius: 6px;
+            border: 1px solid var(--color-neutral-200);
         }
+
+        .stat-item:nth-child(1) { border-left: 4px solid var(--color-neutral-600); }
+        .stat-item:nth-child(2) { border-left: 4px solid var(--color-neutral-500); }
+        .stat-item:nth-child(3) { border-left: 4px solid var(--color-green); }
+        .stat-item:nth-child(4) { border-left: 4px solid var(--color-neutral-400); }
 
         .stat-value {
             font-size: 1.8rem;
@@ -404,6 +416,89 @@
             }
         }
 
+        /* Mobile Cards - hidden on desktop */
+        .mobile-cards {
+            display: none;
+        }
+
+        .mobile-card {
+            background: white;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--color-dark-gray);
+        }
+
+        .mobile-card.streaming {
+            border-left-color: var(--color-green);
+        }
+
+        .mobile-card.hidden {
+            display: none;
+        }
+
+        .mobile-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .mobile-card-league {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--color-text-primary);
+        }
+
+        .mobile-card-badge {
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .mobile-card-badge.traditional {
+            background: var(--color-dark-gray);
+            color: white;
+        }
+
+        .mobile-card-badge.streaming {
+            background: var(--color-green);
+            color: white;
+        }
+
+        .mobile-card-broadcaster {
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .mobile-card-details {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+        }
+
+        .mobile-card-detail {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-card-detail-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--color-text-secondary);
+        }
+
+        .mobile-card-detail-value {
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
@@ -413,25 +508,61 @@
                 font-size: 1.5rem;
             }
 
-            .year-labels {
+            /* Hide timeline, show cards */
+            .timeline-container {
                 display: none;
             }
 
-            .value-label {
-                position: static;
-                transform: none;
-                margin-top: 0.5rem;
+            .mobile-cards {
                 display: block;
             }
 
-            .timeline-row {
-                flex-direction: column;
-                align-items: flex-start;
+            .year-slider {
+                padding: 0;
+                margin: 1.5rem 0;
             }
 
-            .deals-track {
-                margin-left: 0;
+            /* Stack filter buttons */
+            .controls {
+                flex-direction: column;
+            }
+
+            .filter-group {
+                flex-wrap: wrap;
+            }
+
+            .filter-btn {
+                flex: 1 1 auto;
+                min-width: 80px;
+                text-align: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stat-value {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .filter-group {
                 width: 100%;
+            }
+
+            .filter-group > span {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            .mobile-card-details {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .mobile-card-detail {
+                min-width: 45%;
             }
         }
     </style>
@@ -440,6 +571,13 @@
     <div class="container">
         <h1>Major Media Rights Deals, 2020–2035</h1>
         <p class="subtitle">Interactive timeline showing the evolution from traditional broadcasters to streaming platforms</p>
+
+        <div class="instructions" style="background: var(--color-neutral-50); padding: 1rem 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; border-left: 4px solid var(--color-neutral-400);">
+            <p style="margin: 0; color: var(--color-neutral-700); font-size: 0.9rem;">
+                <strong>How to use:</strong> Hover over any deal bar to see details. Use the filters to focus on specific leagues or platform types.
+                Drag the year slider to highlight which deals are active in any given year. Notice how streaming deals (green) increasingly overlap with traditional broadcasts (gray) as leagues diversify their media partnerships.
+            </p>
+        </div>
 
         <div class="controls">
             <div class="filter-group">
@@ -459,6 +597,7 @@
                 <button class="filter-btn" onclick="filterType('traditional')" data-type="traditional">Traditional Only</button>
                 <button class="filter-btn" onclick="filterType('streaming')" data-type="streaming">Streaming Only</button>
             </div>
+            <button class="reset-btn" onclick="resetAll()" style="padding: 0.5rem 1rem; background: var(--color-neutral-800); color: white; border: none; border-radius: 4px; font-weight: 600; cursor: pointer; font-family: inherit;">Reset All</button>
         </div>
 
         <div class="year-slider">
@@ -473,8 +612,8 @@
         <div class="timeline-container">
             <div class="year-labels">
                 <span>2020</span>
-                <span>2021</span>
-                <span>2024</span>
+                <span>2025</span>
+                <span>2030</span>
                 <span>2035</span>
             </div>
 
@@ -508,24 +647,24 @@
                         <div class="deal-bar traditional top"
                              data-start="2020" data-end="2021"
                              data-broadcaster="ESPN, Turner"
-                             data-value="6.5"
+                             data-value="0.4"
                              data-type="traditional"
-                             style="left: 0%; width: 6.25%;"
+                             style="left: 0%; width: 12.5%;"
                              tabindex="0"
                              role="button"
-                             aria-label="NHL deal with ESPN and Turner, 2020-2021, $6.5 billion">
+                             aria-label="NHL deal with ESPN and Turner, 2020-2021, $0.4 billion per year">
                             ESPN, Turner
                         </div>
                         <div class="deal-bar streaming bottom"
-                             data-start="2024" data-end="2035"
-                             data-broadcaster="ESPN+"
-                             data-value="6.5"
+                             data-start="2021" data-end="2035"
+                             data-broadcaster="ESPN, Turner, ESPN+"
+                             data-value="5.2"
                              data-type="streaming"
-                             style="left: 25%; width: 68.75%;"
+                             style="left: 6.25%; width: 93.75%;"
                              tabindex="0"
                              role="button"
-                             aria-label="NHL deal with ESPN+, 2024-2035, $6.5 billion">
-                            ESPN+
+                             aria-label="NHL deal with ESPN, Turner, ESPN+, 2021-2035, $5.2 billion">
+                            ESPN, Turner, ESPN+
                         </div>
                     </div>
                     <div class="value-label">$6.5B</div>
@@ -558,25 +697,25 @@
                             <div class="year-line"></div>
                         </div>
                         <div class="deal-bar traditional top"
-                             data-start="2020" data-end="2024"
+                             data-start="2020" data-end="2025"
                              data-broadcaster="ESPN, Turner"
-                             data-value="4.0"
+                             data-value="2.7"
                              data-type="traditional"
-                             style="left: 0%; width: 25%;"
+                             style="left: 0%; width: 37.5%;"
                              tabindex="0"
                              role="button"
-                             aria-label="NBA deal with ESPN and Turner, 2020-2024, $4.0 billion">
+                             aria-label="NBA deal with ESPN and Turner, 2020-2025, $2.7 billion per year">
                             ESPN, Turner
                         </div>
                         <div class="deal-bar streaming bottom"
-                             data-start="2024" data-end="2035"
-                             data-broadcaster="Amazon, NBC, ESPN, Warner Bros. Discovery"
-                             data-value="4.0"
+                             data-start="2025" data-end="2035"
+                             data-broadcaster="Amazon, NBC, ESPN, WBD"
+                             data-value="7.6"
                              data-type="streaming"
-                             style="left: 25%; width: 68.75%;"
+                             style="left: 31.25%; width: 68.75%;"
                              tabindex="0"
                              role="button"
-                             aria-label="NBA deal with Amazon, NBC, ESPN, Warner Bros. Discovery, 2024-2035, $4.0 billion">
+                             aria-label="NBA deal with Amazon, NBC, ESPN, Warner Bros. Discovery, 2025-2035, $7.6 billion per year">
                             Amazon, NBC, ESPN, WBD
                         </div>
                     </div>
@@ -610,26 +749,26 @@
                             <div class="year-line"></div>
                         </div>
                         <div class="deal-bar traditional top"
-                             data-start="2020" data-end="2033"
-                             data-broadcaster="CBS, Fox, NBC, ESPN, Amazon"
-                             data-value="3.0"
+                             data-start="2023" data-end="2033"
+                             data-broadcaster="CBS, Fox, NBC, ESPN"
+                             data-value="110"
                              data-type="traditional"
-                             style="left: 0%; width: 81.25%;"
+                             style="left: 18.75%; width: 68.75%;"
                              tabindex="0"
                              role="button"
-                             aria-label="NFL deal with CBS, Fox, NBC, ESPN, Amazon, 2020-2033, $3.0 billion">
-                            CBS, Fox, NBC, ESPN, Amazon
+                             aria-label="NFL deal with CBS, Fox, NBC, ESPN, 2023-2033, $110 billion total">
+                            CBS, Fox, NBC, ESPN
                         </div>
                         <div class="deal-bar streaming bottom"
                              data-start="2022" data-end="2033"
                              data-broadcaster="Amazon Prime Video"
-                             data-value="3.0"
+                             data-value="1.0"
                              data-type="streaming"
-                             style="left: 12.5%; width: 68.75%;"
+                             style="left: 12.5%; width: 75%;"
                              tabindex="0"
                              role="button"
-                             aria-label="NFL deal with Amazon Prime Video, 2022-2033, $3.0 billion">
-                            Amazon Prime Video
+                             aria-label="NFL Thursday Night Football deal with Amazon Prime Video, 2022-2033, $1.0 billion per year">
+                            Amazon Prime (TNF)
                         </div>
                     </div>
                     <div class="value-label">$3.0B</div>
@@ -662,82 +801,31 @@
                             <div class="year-line"></div>
                         </div>
                         <div class="deal-bar traditional top"
-                             data-start="2020" data-end="2028"
+                             data-start="2022" data-end="2028"
                              data-broadcaster="Fox, ESPN, Turner"
-                             data-value="2.0"
+                             data-value="3.8"
                              data-type="traditional"
-                             style="left: 0%; width: 50%;"
+                             style="left: 12.5%; width: 43.75%;"
                              tabindex="0"
                              role="button"
-                             aria-label="MLB deal with Fox, ESPN, Turner, 2020-2028, $2.0 billion">
+                             aria-label="MLB deal with Fox, ESPN, Turner, 2022-2028, $3.8 billion">
                             Fox, ESPN, Turner
                         </div>
                         <div class="deal-bar streaming bottom"
-                             data-start="2024" data-end="2032"
-                             data-broadcaster="Apple, Peacock"
-                             data-value="2.0"
+                             data-start="2022" data-end="2029"
+                             data-broadcaster="Apple TV+"
+                             data-value="0.085"
                              data-type="streaming"
-                             style="left: 25%; width: 50%;"
+                             style="left: 12.5%; width: 50%;"
                              tabindex="0"
                              role="button"
-                             aria-label="MLB deal with Apple and Peacock, 2024-2032, $2.0 billion">
-                            Apple, Peacock
+                             aria-label="MLB Friday Night Baseball deal with Apple TV+, 2022-2029, $85 million per year">
+                            Apple TV+ (Friday)
                         </div>
                     </div>
                     <div class="value-label">$2.0B</div>
                 </div>
 
-                <!-- MLB Row 2 (Additional deal) -->
-                <div class="timeline-row" data-league="MLB">
-                    <div class="league-icon">
-                        <svg viewBox="0 0 100 100" width="60" height="60">
-                            <text x="50" y="55" font-size="16" font-weight="700" text-anchor="middle" fill="var(--color-text-primary)">MLB</text>
-                        </svg>
-                    </div>
-                    <div class="deals-track">
-                        <div class="year-grid">
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                            <div class="year-line"></div>
-                        </div>
-                        <div class="deal-bar traditional top"
-                             data-start="2020" data-end="2028"
-                             data-broadcaster="Fox, ESPN, Turner"
-                             data-value="1.5"
-                             data-type="traditional"
-                             style="left: 0%; width: 50%;"
-                             tabindex="0"
-                             role="button"
-                             aria-label="MLB deal with Fox, ESPN, Turner, 2020-2028, $1.5 billion">
-                            Fox, ESPN, Turner
-                        </div>
-                        <div class="deal-bar streaming bottom"
-                             data-start="2024" data-end="2032"
-                             data-broadcaster="Apple, Peacock"
-                             data-value="1.5"
-                             data-type="streaming"
-                             style="left: 25%; width: 50%;"
-                             tabindex="0"
-                             role="button"
-                             aria-label="MLB deal with Apple and Peacock, 2024-2032, $1.5 billion">
-                            Apple, Peacock
-                        </div>
-                    </div>
-                    <div class="value-label">$1.5B</div>
-                </div>
             </div>
 
             <div class="legend">
@@ -750,6 +838,11 @@
                     <span>Streaming Platforms</span>
                 </div>
             </div>
+        </div>
+
+        <!-- Mobile Card View -->
+        <div class="mobile-cards" id="mobile-cards">
+            <!-- Cards generated by JavaScript -->
         </div>
 
         <div class="stats-panel">
@@ -914,10 +1007,56 @@
 
         function highlightActiveDeals(year) {
             deals.forEach(deal => {
+                // Only highlight if deal passes current filters
+                const leagueMatch = activeLeague === 'all' || deal.league === activeLeague;
+                const typeMatch = activeType === 'all' || deal.type === activeType;
+
+                if (!leagueMatch) {
+                    return; // Row is hidden, skip
+                }
+
                 const isActive = year >= deal.start && year <= deal.end;
-                deal.element.style.opacity = isActive ? '1' : '0.3';
-                deal.element.style.transform = isActive ? 'scaleY(1.1)' : 'scaleY(1)';
+
+                if (typeMatch) {
+                    deal.element.style.opacity = isActive ? '1' : '0.3';
+                    deal.element.style.transform = isActive ? 'scaleY(1.1)' : 'scaleY(1)';
+                } else {
+                    deal.element.style.opacity = '0.15';
+                    deal.element.style.transform = 'scaleY(1)';
+                }
             });
+        }
+
+        function resetAll() {
+            // Reset filters
+            activeLeague = 'all';
+            activeType = 'all';
+
+            // Reset button states
+            document.querySelectorAll('[data-league]').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.league === 'all');
+            });
+            document.querySelectorAll('[data-type]').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.type === 'all');
+            });
+
+            // Reset year slider
+            yearSlider.value = 2025;
+            yearDisplay.textContent = 2025;
+
+            // Reset all deal bars
+            deals.forEach(deal => {
+                deal.element.style.opacity = '1';
+                deal.element.style.transform = 'scaleY(1)';
+                deal.element.style.pointerEvents = 'auto';
+            });
+
+            // Show all rows
+            document.querySelectorAll('.timeline-row').forEach(row => {
+                row.style.display = 'flex';
+            });
+
+            updateStats();
         }
 
         // Update statistics
@@ -938,7 +1077,87 @@
             document.getElementById('avg-duration').textContent = Math.round(avgDuration) + ' yrs';
         }
 
+        // Generate mobile cards
+        function generateMobileCards() {
+            const container = document.getElementById('mobile-cards');
+            container.innerHTML = deals.map((deal, index) => {
+                const years = deal.end - deal.start + 1;
+                const valueDisplay = deal.value >= 1 ? `$${deal.value}B` : `$${(deal.value * 1000).toFixed(0)}M`;
+
+                return `
+                    <div class="mobile-card ${deal.type}"
+                         data-index="${index}"
+                         data-league="${deal.league}"
+                         data-type="${deal.type}"
+                         data-start="${deal.start}"
+                         data-end="${deal.end}">
+                        <div class="mobile-card-header">
+                            <span class="mobile-card-league">${deal.league}</span>
+                            <span class="mobile-card-badge ${deal.type}">${deal.type}</span>
+                        </div>
+                        <div class="mobile-card-broadcaster">${deal.broadcaster}</div>
+                        <div class="mobile-card-details">
+                            <div class="mobile-card-detail">
+                                <span class="mobile-card-detail-label">Period</span>
+                                <span class="mobile-card-detail-value">${deal.start}–${deal.end}</span>
+                            </div>
+                            <div class="mobile-card-detail">
+                                <span class="mobile-card-detail-label">Duration</span>
+                                <span class="mobile-card-detail-value">${years} years</span>
+                            </div>
+                            <div class="mobile-card-detail">
+                                <span class="mobile-card-detail-label">Value</span>
+                                <span class="mobile-card-detail-value">${valueDisplay}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Filter mobile cards
+        function filterMobileCards() {
+            const year = parseInt(yearSlider.value);
+            const cards = document.querySelectorAll('.mobile-card');
+
+            cards.forEach(card => {
+                const league = card.dataset.league;
+                const type = card.dataset.type;
+                const start = parseInt(card.dataset.start);
+                const end = parseInt(card.dataset.end);
+
+                const leagueMatch = activeLeague === 'all' || league === activeLeague;
+                const typeMatch = activeType === 'all' || type === activeType;
+                const yearMatch = year >= start && year <= end;
+
+                if (leagueMatch && typeMatch) {
+                    card.classList.remove('hidden');
+                    card.style.opacity = yearMatch ? '1' : '0.5';
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Update applyFilters to also filter mobile cards
+        const originalApplyFilters = applyFilters;
+        applyFilters = function() {
+            originalApplyFilters();
+            filterMobileCards();
+        };
+
+        // Update year slider to also filter mobile cards
+        yearSlider.addEventListener('input', filterMobileCards);
+
+        // Update resetAll to also reset mobile cards
+        const originalResetAll = resetAll;
+        resetAll = function() {
+            originalResetAll();
+            filterMobileCards();
+        };
+
         // Initialize
+        generateMobileCards();
         updateStats();
     </script>
 </body>

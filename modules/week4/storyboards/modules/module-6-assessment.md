@@ -1,7 +1,12 @@
-# MODULE 6: Assessment - Athlete Brand Strategy Memo (BOPPPS: Performance)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+# MODULE 6: Assessment - Athlete Brand Strategy Memo + Project Milestone 4
+**Version:** 1.4.0 | **Last Updated:** 2025-12-05
 
-**Purpose:** Demonstrate mastery of Week 4 learning outcomes through strategic analysis memo
+**Purpose:** Demonstrate mastery of Week 4 learning outcomes through strategic analysis memo AND submit CFL Expansion Project Milestone 4
+
+### Version 1.4.0 Changes
+- **NEW:** Added CFL Expansion Project Milestone 4 submission (team-based)
+- Individual athlete brand memo remains as primary assessment
+- Milestone 4 adds team-based brand building & launch strategy component
 
 **Uplimit Structure:** Seventh module in Unit 4 (Week 4)
 
@@ -354,6 +359,89 @@ This assessment tests all 4 Week 4 learning outcomes:
 
 **Up Next: Module 7 - Wrap-Up & Reflection**
 
-After submitting your assessment, you'll reflect on Week 4's journey, connect insights to your Anchor Project's Milestone 3, and preview Week 5.
+After submitting your assessment, you'll reflect on Week 4's journey, connect insights to your CFL Expansion Project, and preview Week 5.
 
 Good luck on your assessment! You've got the frameworks—now show us the strategy.
+
+---
+
+## Element 8: CFL Project Milestone 4 Instructions
+
+### ⓘ Infobox Content
+
+```markdown
+Title: 🏈 CFL Expansion Project - Milestone 4: Brand Building & Launch Strategy
+
+**Team Deliverable:** Brand Launch Plan (4-5 pages)
+**Weight:** 20% of total project grade (20 points)
+**Due:** End of Week 4
+
+Your team will submit ONE document that includes:
+
+**1. Brand Identity**
+- Team name, colors, logo concept (describe, don't design)
+- Brand positioning (how does this team differ from existing CFL teams?)
+- Brand pillars (3-4 core values)
+- Connection to city/region identity
+
+**2. Launch Campaign**
+- Pre-launch buzz building (12-18 months before first game)
+- Name/brand reveal strategy
+- Season ticket campaign
+- Community engagement events
+
+**3. Player & Talent Strategy**
+- Expansion draft strategy
+- Marquee player acquisition for brand building
+- Local talent pipeline (CIS/U Sports connections)
+- Player-as-brand opportunities (NIL, ambassador roles)
+
+**4. Community Integration**
+- Youth football programs
+- School partnerships
+- Charitable foundation
+- Local business engagement
+
+**Apply Matt Rubinoff's Insights:**
+- Proof of concept thinking—How do you validate demand before full launch?
+- "Marketing-first" approach—Building brand before building team
+- White space identification—What's missing in this market?
+
+📋 **Full Project Details:** [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
+```
+
+---
+
+## Element 9: Milestone 4 File Upload
+
+**Uplimit Configuration:**
+- **Element Type:** File Upload
+- **Allowed Formats:** PDF, DOCX, Google Docs link
+- **Team Submission:** One submission per team
+
+**Submission Instructions:**
+```markdown
+## Milestone 4 Submission
+
+Upload your team's Brand Launch Plan here.
+
+**Requirements:**
+- 4-5 pages (excluding title page and references)
+- Professional formatting
+- All team member names on title page
+- One submission per team
+
+**Filename Format:** `TeamName_M4_BrandLaunch.pdf`
+
+**Rubric Preview:**
+| Criterion | Points |
+|-----------|--------|
+| Brand Identity & Positioning | 5 |
+| Launch Campaign Strategy | 5 |
+| Player & Talent Strategy | 5 |
+| Community Integration | 3 |
+| Professional Presentation | 2 |
+| **Total** | **20** |
+```
+
+---

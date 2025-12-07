@@ -15,11 +15,28 @@
 
 ---
 
-### 💼 Project Preview: Week 4 → Final Strategic Vision
+### 💼 CFL Expansion Project: Milestone 4 - Brand Building & Launch Strategy
 
-This week's athlete branding and emerging sports expertise directly supports your **Week 5 capstone**. If your Strategic Vision Memo involves athlete partnerships, women's sports properties, or emerging markets, you'll apply the frameworks learned this week to justify investment decisions and partnership strategies.
+This week you'll develop **Milestone 4** of your CFL Expansion Project: a comprehensive brand building and launch strategy for your proposed franchise.
 
-By understanding how elite athletes build generational wealth (not just income) and where the highest-growth opportunities exist in sports, you'll be equipped to identify undervalued properties and recommend strategic positions that capture emerging market value.
+**Your Challenge:** How will you build a franchise brand from scratch? What's your 18-month launch campaign?
+
+| Week | Milestone | Status |
+|------|-----------|--------|
+| Week 1 | Market Selection & Revenue | ✅ Complete |
+| Week 2 | Media & Content Strategy | ✅ Complete |
+| Week 3 | Sponsorship & Betting Strategy | ✅ Complete |
+| **Week 4** | **Brand Building & Launch** | **This Week** |
+| Week 5 | Final Proposal | Next |
+
+**This Week's Deliverable:** Brand Launch Plan (4-5 pages)
+- Brand identity (name, colors, positioning, pillars)
+- Launch campaign (pre-launch buzz, name reveal, season ticket drive)
+- Player & talent strategy (expansion draft, marquee signings, local talent)
+- Community integration (youth programs, school partnerships, foundation)
+- Apply Matt Rubinoff's insights from the Fairgrounds executive session
+
+📋 **Full Project Details:** See [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
 
 ---
 

@@ -72,18 +72,18 @@ You've traveled from the Connor McDavid paradox to mastering revenue ecosystem a
 Next week, we go deep on the largest and most dynamic revenue stream: media rights.
 
 **You'll explore:**
-• How media rights are valued and negotiated
-• The shift from traditional broadcasting to streaming
-• Fan engagement strategies and monetization
-• Major deals analysis (Rogers/NHL $5.2 billion)
+- How media rights are valued and negotiated
+- The shift from traditional broadcasting to streaming
+- Fan engagement strategies and monetization
+- Major deals analysis (Rogers/NHL $5.2 billion)
 
-**Executive Leader:** [Name, Title]
+**Executive Leader:** Stewart Johnston, President of Media, Bell Media/TSN
 **Core Case:** Rogers Communications and the NHL Rights Deal
 
-**PLUS: Anchor Project Launch!** ◉
-Week 2 marks the beginning of your course-long Anchor Project (60% of final grade). You'll form teams of 5-6 students and select a sport property to analyze over the remaining weeks. Start thinking about potential teammates and organizations that interest you!
+**CFL Expansion Project - Milestone 2**
+In Week 2, you'll develop your franchise's media strategy. How will your new CFL team maximize media value and build fans before the first game? Your Market Analysis Brief from this week provides the foundation.
 
-**Estimated Time Commitment:** Week 2 = 7-9 hours total (includes 2-3 hours for team formation and property selection)
+**Estimated Time Commitment:** Week 2 = 6-8 hours total
 
 **You're Now Ready For:** Everything you learned in Week 1 becomes the foundation for Week 2's specialized focus on media rights and fan monetization—the two largest and most strategically complex revenue streams.
 

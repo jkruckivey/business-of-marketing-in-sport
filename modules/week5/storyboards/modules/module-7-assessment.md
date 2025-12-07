@@ -1,7 +1,13 @@
-## MODULE 7: Assessment - Strategic Vision Memo (BOPPPS: Post-Assessment)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+## MODULE 7: Assessment - CFL Expansion Final Proposal (BOPPPS: Post-Assessment)
+**Version:** 1.4.0 | **Last Updated:** 2025-12-05
 
-**Purpose:** Capstone assessment integrating all 5 weeks of learning (measures WLO 5.1-5.4 plus CLOs 1-5)
+**Purpose:** Capstone assessment integrating all 5 weeks of learning (measures WLO 5.1-5.4 plus CLOs 1-5) via CFL Expansion Project Milestone 5
+
+### Version 1.4.0 Changes
+- **NEW:** CFL Expansion Project Milestone 5 replaces generic Strategic Vision Memo
+- Teams synthesize Milestones 1-4 into comprehensive expansion proposal
+- Presentation component added (15-20 slides + executive summary)
+- Peer evaluation included in assessment
 
 **Uplimit Structure:** Seventh module in Unit 5
 
@@ -27,17 +33,100 @@
 
 ### Element 1: Connecting Introduction Text
 
-**Title:** Your 5-Week Strategic Journey
+**Title:** Your CFL Expansion Journey - The Final Proposal
 
 **Copy this markdown directly into Uplimit:**
 
-## Your 5-Week Strategic Journey
+## Your CFL Expansion Journey - The Final Proposal
 
-You've completed an intensive 5-week journey through the business of sports marketing. You started by mapping revenue ecosystems in Week 1, explored media rights valuation and fan engagement in Week 2, analyzed sponsorship ROI and betting markets in Week 3, examined athlete branding and emerging sports in Week 4, and now in Week 5 you've tackled the unique challenge of heritage properties balancing tradition with innovation.
+You've completed an intensive 5-week journey building a comprehensive CFL expansion proposal. You started by selecting your expansion city and projecting revenue streams (Week 1), developed a media and content strategy (Week 2), created a sponsorship and betting partnership plan (Week 3), and designed a brand launch strategy (Week 4).
 
-You've analyzed the Hockey Hall of Fame's strategic dilemma, experimented with the Legacy vs Innovation Matrix, modeled heritage property revenue scenarios, and forecasted future trends in sports business. You've learned from executives like Jamie Dinsmore (HHOF) and Keith Pelley (MLSE) who navigate these tensions daily.
+Now it's time to bring it all together. In this final milestone, your team will synthesize Milestones 1-4 into a **board-ready expansion proposal** for the CFL Board of Governors. You'll add financial projections, risk analysis, and a compelling 5-year vision that demonstrates why your city deserves a CFL franchise.
 
-Now it's time to demonstrate the full scope of what you've learned. In this capstone assessment, you'll step into the role of Chief Strategy Officer for a sports property of your choice—a professional team, league, venue, heritage institution, or major event. Your Board of Directors needs a comprehensive 5-year strategic vision that integrates everything from revenue streams to future trends, from media strategy to legacy management. Your task: create an executive strategy memo that synthesizes all five weeks into a cohesive, actionable roadmap for the future.
+This is the culmination of everything you've learned—revenue ecosystems, media rights, sponsorship optimization, brand building, and strategic vision. Your proposal should demonstrate that you understand not just HOW to launch a franchise, but WHY this expansion makes strategic sense for the CFL.
+
+**Your Challenge:** Present your expansion proposal as if the CFL Commissioner is in the room (and he might be—once we get that interview!).
+
+---
+
+## 🏈 CFL Expansion Project - Milestone 5: Final Expansion Proposal
+
+### ⓘ Infobox Content
+
+```markdown
+Title: 🏈 CFL Expansion Project - Milestone 5: Final Expansion Proposal
+
+**Team Deliverable:** Executive Presentation (15-20 slides) + Executive Summary (2 pages)
+**Weight:** 25% of total project grade (25 points)
+**Due:** End of Week 5
+
+**Presentation Deck Structure (15-20 slides):**
+- Slide 1-2: The Opportunity (market case from M1)
+- Slide 3-4: Revenue Model (5-year projections from M1)
+- Slide 5-6: Media Strategy (content, engagement, platform from M2)
+- Slide 7-8: Sponsorship & Betting (partnership pipeline from M3)
+- Slide 9-10: Brand & Launch (identity, campaign from M4)
+- Slide 11-12: Operations (stadium, front office, player acquisition)
+- Slide 13-14: Financial Summary (investment required, break-even, ROI)
+- Slide 15-16: Risk Analysis (what could go wrong, mitigation)
+- Slide 17-18: 5-Year Vision (where is this franchise in 2030?)
+- Slide 19-20: The Ask (what do you need from the CFL Board?)
+
+**Executive Summary (2 pages):**
+- The opportunity in one paragraph
+- Key financial projections (5-year P&L summary)
+- Strategic rationale
+- Risk assessment and mitigation
+
+**Presentation Component:**
+- 10-15 minute team presentation to class
+- 5 minute Q&A from peers and instructor
+- Peer evaluation using provided rubric
+
+📋 **Full Project Details:** [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
+```
+
+---
+
+## Milestone 5 File Upload
+
+**Uplimit Configuration:**
+- **Element Type:** File Upload (2 files required)
+- **File 1:** Presentation deck (PDF or PPTX)
+- **File 2:** Executive summary (PDF)
+- **Team Submission:** One submission per team
+
+**Submission Instructions:**
+```markdown
+## Milestone 5 Submission
+
+Upload your team's Final Expansion Proposal:
+1. **Presentation Deck** (15-20 slides as PDF or PPTX)
+2. **Executive Summary** (2 pages as PDF)
+
+**Filename Format:**
+- `TeamName_M5_Presentation.pdf`
+- `TeamName_M5_ExecutiveSummary.pdf`
+
+**Rubric Preview:**
+| Criterion | Points |
+|-----------|--------|
+| Strategic Coherence (M1-M4 integration) | 5 |
+| Financial Viability & Projections | 5 |
+| Risk Analysis & Mitigation | 4 |
+| 5-Year Vision & CFL Fit | 4 |
+| Presentation Quality & Delivery | 4 |
+| Peer Evaluation Score | 3 |
+| **Total** | **25** |
+```
+
+---
+
+## Original Strategic Vision Assessment (Individual Backup)
+
+**Note:** The CFL Expansion Project is the primary capstone assessment. The original Strategic Vision Memo format below is retained for students who may need an individual alternative or for future course iterations.
+
+---
 
 **Optional PAIRR Bonus (5 points):** This capstone assessment includes an optional Peer and AI Review + Reflection (PAIRR) process. Submit your draft by Day 5, receive peer and AI feedback by Day 7, and earn up to 5 bonus points for thoughtful engagement with the feedback process (2 pts peer review + 1 pt AI feedback + 1 pt comparative reflection + 1 pt post-revision reflection). Total possible: 105 points.
 

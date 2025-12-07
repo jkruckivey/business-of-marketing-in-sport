@@ -1,5 +1,5 @@
 # MODULE 3: Core Content - Athlete Brand Frameworks (BOPPPS: Presentation)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-05
 
 **Purpose:** Interactive discovery of athlete revenue streams and brand building strategies through widgets
 
@@ -8,12 +8,15 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | Type directly | Sets interactive learning approach |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
-| 3 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Process learning from experimentation |
-| 4 | **⚙ iFrame Widget** ⬤ Required | **Emerging Sports Investment Tool** | Embed widget | Evaluate women's sports & emerging market opportunities |
-| 5 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize investment insights |
-| 6 | **▤ Details** ○ Optional | Deep dive: Why equity beats fees | Type directly | Mathematical proof with NPV calculations |
-| 7 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Configure in Uplimit | On-demand support for struggling students |
+| 2 | **▶ Video** ⬤ Required | "The Five Revenue Streams of Athlete Wealth" (2 min) | Upload MP4 | Introduces athlete diversification before calculator widget |
+| 3 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
+| 4 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Process learning from experimentation |
+| 5 | **▶ Video** ⬤ Required | "The Emerging Sports Opportunity" (2 min) | Upload MP4 | Explains valuation gaps before investment tool |
+| 6 | **⚙ iFrame Widget** ⬤ Required | **Emerging Sports Investment Tool** | Embed widget | Evaluate women's sports & emerging market opportunities |
+| 7 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize investment insights |
+| 8 | **▶ Video** ◐ Recommended | "NIL and the New Athlete Economy" (2 min) | Upload MP4 | Explains NIL rules and marketing implications |
+| 9 | **▤ Details** ○ Optional | Deep dive: Why equity beats fees | Type directly | Mathematical proof with NPV calculations |
+| 10 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Configure in Uplimit | On-demand support for struggling students |
 
 ---
 
@@ -58,7 +61,44 @@ Ready? Let's experiment.
 
 ---
 
-## Element 2: Athlete Brand Calculator Widget
+## Element 2: Instructional Video - Five Revenue Streams of Athlete Wealth
+
+**Video Specifications:**
+- **Length:** 2 minutes
+- **Topic:** "The Five Revenue Streams of Athlete Wealth"
+- **Key Points:** LeBron's $1.2B net worth breakdown, five streams (salary, endorsements, owned businesses, media/content, investments), equity vs. fees
+- **Accessibility:** Captions required, transcript provided
+
+**Video Status:** 📝 Script complete, awaiting production
+
+**Video Script Reference:** See `modules/week4/video-scripts/week4-instructional-videos-2min.md` - Video 1
+
+**Video Script Summary (2 minutes):**
+```
+[0:00-0:15] Hook
+"LeBron James earned $480 million playing basketball. But he's worth $1.2 billion. Where did the other $720 million come from?"
+
+[0:15-0:45] The Five Revenue Streams
+Athletes have five revenue streams: (1) Salary/bonuses, (2) Endorsements, (3) Owned businesses (equity), (4) Media/content, (5) Investments.
+
+[0:45-1:15] Why Diversification Matters
+"Playing careers are short. Brands can last forever." Average NFL career: 3.3 years. Michael Jordan earned $93M playing, but Jordan Brand generates $5B annually.
+
+[1:15-1:45] Equity vs. Fees
+"Equity compounds. Fees don't." $1M endorsement = $1M. $1M equity at 20% growth = $38M in 20 years.
+
+[1:45-2:00] Transition
+"Next, you'll use the Athlete Brand Calculator to build your own portfolio."
+```
+
+**Uplimit Implementation:**
+1. Upload `week4-video1-athlete-revenue-streams.mp4`
+2. Add VTT caption file
+3. Place before Athlete Brand Calculator widget
+
+---
+
+## Element 3: Athlete Brand Calculator Widget
 
 **Widget Purpose:** Interactive tool for building athlete revenue portfolios and comparing 20-year wealth outcomes
 
@@ -102,8 +142,6 @@ Ready? Let's experiment.
 
 **Uplimit Embed Code:**
 ```html
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/athlete-brand-calculator.html"
   width="100%"
@@ -113,20 +151,6 @@ Ready? Let's experiment.
   aria-label="Interactive calculator where you build athlete brand revenue portfolios by allocating fifty million dollars across five streams including endorsements, owned businesses, and investments to see twenty-year wealth outcomes"
   allowfullscreen
   loading="lazy">
-=======
-=======
->>>>>>> Stashed changes
-<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/athlete-brand-calculator.html"
-        width="900"
-        height="800"
-        title="Athlete Brand Calculator - Build revenue portfolios and compare 20-year wealth outcomes"
-        frameborder="0"
-        allowfullscreen
-        aria-label="Interactive calculator for building athlete brand revenue portfolios across five streams with 20-year projections">
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 </iframe>
 ```
 
@@ -162,7 +186,44 @@ After experimenting with the Athlete Brand Calculator, take 2 minutes to reflect
 
 ---
 
-## Element 4: Emerging Sports Investment Tool Widget
+## Element 5: Instructional Video - The Emerging Sports Opportunity
+
+**Video Specifications:**
+- **Length:** 2 minutes
+- **Topic:** "The Emerging Sports Opportunity"
+- **Key Points:** NWSL vs. MLS valuation gap, women's sports growth metrics, investment thesis for emerging markets
+- **Accessibility:** Captions required, transcript provided
+
+**Video Status:** 📝 Script complete, awaiting production
+
+**Video Script Reference:** See `modules/week4/video-scripts/week4-instructional-videos-2min.md` - Video 2
+
+**Video Script Summary (2 minutes):**
+```
+[0:00-0:15] Hook
+"An MLS team sells for $700 million. An NWSL team sells for $53 million. Same number of fans, same stadium capacity, same 90-minute games. That's not a market inefficiency. That's an opportunity."
+
+[0:15-0:45] The Valuation Gap
+Emerging sports are massively undervalued: WNBA ($100-150M) vs. NBA ($3-4B), NWSL ($50-100M) vs. MLS ($500-800M). These valuations reflect history, not potential.
+
+[0:45-1:15] Why Now?
+Three forces closing the gap: (1) Media investment (WNBA $200M/year deal), (2) Sponsorship surge (Nike, Google, Ally Bank), (3) Attendance records (WNBA All-Star 3.4M viewers).
+
+[1:15-1:45] The Investment Thesis
+If NWSL team bought at $75M reaches 25% of MLS valuations in 10 years = $100M+ return. Matt Rubinoff (Fairgrounds): "75,000 members with zero marketing spend."
+
+[1:45-2:00] Transition
+"Next, you'll use the Emerging Sports Investment Tool to evaluate opportunities across women's sports and emerging markets."
+```
+
+**Uplimit Implementation:**
+1. Upload `week4-video2-emerging-sports.mp4`
+2. Add VTT caption file
+3. Place before Emerging Sports Investment Tool widget
+
+---
+
+## Element 6: Emerging Sports Investment Tool Widget
 
 **Widget Purpose:** Interactive tool for evaluating women's sports and emerging market investment opportunities
 
@@ -215,8 +276,6 @@ After experimenting with the Athlete Brand Calculator, take 2 minutes to reflect
 
 **Uplimit Embed Code:**
 ```html
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/emerging-sports-investment-tool.html"
   width="100%"
@@ -226,20 +285,6 @@ After experimenting with the Athlete Brand Calculator, take 2 minutes to reflect
   aria-label="Interactive investment calculator for evaluating women's sports and emerging market opportunities where you adjust growth rates, risk premiums, and time horizons to calculate expected internal rate of return"
   allowfullscreen
   loading="lazy">
-=======
-=======
->>>>>>> Stashed changes
-<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/emerging-sports-investment-tool.html"
-        width="900"
-        height="800"
-        title="Emerging Sports Investment Tool - Evaluate women's sports and emerging market opportunities"
-        frameborder="0"
-        allowfullscreen
-        aria-label="Interactive investment calculator for women's sports and emerging sports properties with IRR and risk analysis">
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 </iframe>
 ```
 
@@ -278,7 +323,44 @@ After experimenting with the Emerging Sports Investment Tool, reflect:
 
 ---
 
-## Element 6: Details Accordion - Deep Dive: Why Equity Beats Fees
+## Element 8: Instructional Video - NIL and the New Athlete Economy
+
+**Video Specifications:**
+- **Length:** 2 minutes
+- **Topic:** "NIL and the New Athlete Economy"
+- **Key Points:** NIL rules post-2021, $1.17B market size, college athlete branding, marketing implications
+- **Accessibility:** Captions required, transcript provided
+
+**Video Status:** 📝 Script complete, awaiting production
+
+**Video Script Reference:** See `modules/week4/video-scripts/week4-instructional-videos-2min.md` - Video 3
+
+**Video Script Summary (2 minutes):**
+```
+[0:00-0:15] Hook
+"In 2021, college athletes couldn't legally earn a dollar from their name. In 2024, they earned $1.17 billion through NIL deals. The athlete economy changed overnight."
+
+[0:15-0:45] What Is NIL?
+NIL = Name, Image, Likeness. Pre-2021 NCAA rules prohibited monetization. Now college athletes can sign endorsements, create content, sell merchandise.
+
+[0:45-1:15] The NIL Economy
+$1.17B total deals in 2024. Top athletes earn $1-5M/year. Women athletes over-index: 2× NIL per follower vs. male counterparts (higher engagement rates).
+
+[1:15-1:45] Marketing Implications
+Opportunity: Access athletes earlier, lower costs, authentic connections. Risk: Unregulated, no standard contracts. Kevin Abrams: "Players are coming out of college now where they are brands."
+
+[1:45-2:00] Transition
+"NIL is reshaping how athletes build brands from day one. In the next module, you'll apply these concepts to the Serena Williams case study."
+```
+
+**Uplimit Implementation:**
+1. Upload `week4-video3-nil-economy.mp4`
+2. Add VTT caption file
+3. Place after reflection prompt, before deep dive accordion
+
+---
+
+## Element 9: Details Accordion - Deep Dive: Why Equity Beats Fees
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -435,26 +517,23 @@ Through hands-on experimentation, you've discovered:
 **Up Next: Module 4 - Advanced Interactive Simulations**
 You've built foundational understanding through experimentation. Now you'll apply these frameworks to complex multi-variable scenarios and strategic trade-offs.
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 Ready to tackle complex wealth-building scenarios? Let's apply your frameworks!
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 ---
 
 ## MODULE 3 Complete - Summary
 
 ### Elements Created:
 1. ✅ Module Introduction (interactive learning approach)
-2. ✅ Athlete Brand Calculator Widget (full specifications, embed code)
-3. ✅ Reflection Prompt 1 (process widget 1 insights)
-4. ✅ Emerging Sports Investment Tool Widget (full specifications, embed code)
-5. ✅ Reflection Prompt 2 (process widget 2 insights)
-6. ✅ Details Accordion - Deep Dive on Equity vs. Fees (mathematical proof with NPV calculations)
-7. ✅ AI Chat Widget - Test Your Understanding
+2. ✅ Video 1: "The Five Revenue Streams of Athlete Wealth" (2 min)
+3. ✅ Athlete Brand Calculator Widget (full specifications, embed code)
+4. ✅ Reflection Prompt 1 (process widget 1 insights)
+5. ✅ Video 2: "The Emerging Sports Opportunity" (2 min)
+6. ✅ Emerging Sports Investment Tool Widget (full specifications, embed code)
+7. ✅ Reflection Prompt 2 (process widget 2 insights)
+8. ✅ Video 3: "NIL and the New Athlete Economy" (2 min)
+9. ✅ Details Accordion - Deep Dive on Equity vs. Fees (mathematical proof with NPV calculations)
+10. ✅ AI Chat Widget - Test Your Understanding
 
 ### Widget Specifications Provided:
 - **Athlete Brand Calculator:** Portfolio allocation across 5 streams, 20-year projections, comparison to real athletes

@@ -45,7 +45,7 @@
 
 ## Element 1: Connecting Introduction
 
-You've just simulated building a sports streaming platform from scratch (Module 4), experiencing firsthand the tension between content costs, subscriber growth, and profitability timelines. Now you'll analyze a **real-world $5.2 billion bet** where those same decisions played out with far higher stakes.
+You've just simulated building a sports streaming platform from scratch in Streaming Wars Strategy, experiencing firsthand the tension between content costs, subscriber growth, and profitability timelines. Now you'll analyze a **real-world $5.2 billion bet** where those same decisions played out with far higher stakes.
 
 In this module, you'll examine Rogers Communications' 2013 acquisition of exclusive NHL rights—the largest sports media deal in Canadian history. You'll explore what Rogers bought for $5.2B, why they believed it would work, what actually happened over 10 years, and what Rogers should do when the contract expires in 2026. This comprehensive case study will test your ability to evaluate mega-deals using all Week 2 frameworks.
 
@@ -712,13 +712,13 @@ Debate Rogers' 2026 decision when the NHL deal expires. Should Rogers renew excl
 - **Your Position:** 100 words minimum arguing for ONE option (renew/split/walk)
 - **Evidence-Based:** Reference specific data from Widgets 6-8, financial performance, competitive landscape
 - **Peer Challenge:** Reply to at least 1 peer who chose a DIFFERENT option—respectfully challenge their reasoning
-- **Deadline:** Before starting Module 6 (Mini-Case Memo)
+- **Deadline:** Before starting Your Mini-Case Memo assessment
 
 **Example Post:**
 "I recommend Rogers [OPTION] because [3 evidence-based reasons]. While some might argue [counterargument], the data shows [rebuttal]. Looking at Widget 8's projections, [specific insight]..."
 
 **Why This Matters:**
-There is NO single right answer—this is a strategic judgment call with legitimate arguments on all sides. Engaging with peers who chose differently will strengthen your own analysis and prepare you to write a more nuanced, defensible memo in Module 6.
+There is NO single right answer—this is a strategic judgment call with legitimate arguments on all sides. Engaging with peers who chose differently will strengthen your own analysis and prepare you to write a more nuanced, defensible memo in Your Mini-Case Memo.
 
 **Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
 - 3 points: 100-word position with evidence
@@ -742,7 +742,7 @@ You are a case analysis coach for MBA students working on the Rogers NHL rights 
 
 When students ask for help:
 1. Ask clarifying questions: "What data have you looked at? What patterns do you notice?"
-2. Point them to relevant frameworks: "Have you applied the rights valuation framework from Module 3? How do the 5 factors play out here?"
+2. Point them to relevant frameworks: "Have you applied the rights valuation framework from Media Rights Frameworks? How do the 5 factors play out here?"
 3. Challenge assumptions: "You said Rogers made a mistake. What evidence supports that? Could there be another interpretation?"
 4. Help structure thinking: "Let's break this down. What were Rogers' goals? What actually happened? Where's the gap?"
 5. Encourage synthesis: "You've identified three mistakes. How do they connect? Is there a pattern?"
@@ -756,7 +756,7 @@ DO NOT:
 DO:
 - Ask "why" and "how" questions
 - Reference specific data points from widgets: "Look at the Widget 6 variance data. What do you notice about Year 5?"
-- Connect to Week 2 frameworks: "How does this relate to platform economics we learned in Module 3?"
+- Connect to Week 2 frameworks: "How does this relate to platform economics we learned in Media Rights Frameworks?"
 - Help students develop confidence in their reasoning: "That's a solid insight. What evidence would make it even stronger?"
 
 Tone: Supportive but challenging. Like a good professor during office hours.
@@ -809,18 +809,16 @@ Tone: Supportive but challenging. Like a good professor during office hours.
 ---
 
 
-## Element 21: Module 5 Complete - Transition to Module 6
+## The Rogers Challenge Complete - Transition to Your Mini-Case Memo
 
-**🎯 Module 5 Complete!** You've analyzed the entire Rogers $5.2B NHL deal from initial context through performance analysis. You now understand:
+**Case Study Complete!** You've analyzed the entire Rogers $5.2B NHL deal from initial context through performance analysis. You now understand:
 
-✅ Rogers' deal structure and comprehensive terms ($5.2B over 12 years, full exclusivity)
-✅ Strategic rationale: Why Rogers paid 3x the previous deal (defensive + offensive strategy)
-✅ Financial performance: Rogers never achieved profitability (cumulative losses $1.5B+)
-✅ Why projections failed: Cord-cutting accelerated, streaming underperformed, COVID had no flexibility clause
-✅ Competitive dynamics: TSN and DAZN succeeded with diversification strategies Rogers avoided
-✅ The critical 2026 decision: Renew, renegotiate, or walk away
-
-**🎖️ Achievement Unlocked:** "Case Analysis Mastered"
+- Rogers' deal structure and comprehensive terms ($5.2B over 12 years, full exclusivity)
+- Strategic rationale: Why Rogers paid 3x the previous deal (defensive + offensive strategy)
+- Financial performance: Rogers never achieved profitability (cumulative losses $1.5B+)
+- Why projections failed: Cord-cutting accelerated, streaming underperformed, COVID had no flexibility clause
+- Competitive dynamics: TSN and DAZN succeeded with diversification strategies Rogers avoided
+- The critical 2026 decision: Renew, renegotiate, or walk away
 
 **Strategic Competency Achieved:**
 You can now evaluate multi-billion dollar media rights deals through comprehensive analysis frameworks. You understand how to:
@@ -830,11 +828,11 @@ You can now evaluate multi-billion dollar media rights deals through comprehensi
 - Compare competitive strategies
 - Make evidence-based strategic recommendations
 
-**Next: Module 6 - Mini-Case Memo Assessment (20-25 minutes)**
+**Up Next: Your Mini-Case Memo (20-25 minutes)**
 
 Now you'll synthesize everything you've learned into a 2-page executive memo with your strategic recommendation for Rogers' 2026 decision. This is your Week 2 summative assessment—an opportunity to demonstrate mastery of all four learning outcomes (WLO 2.1-2.4).
 
-**Take a 5-10 minute break before starting Module 6.** The assessment requires fresh mental energy for strategic writing. Review your notes from the Rogers case, grab water, and set up your writing environment. You've got this!
+**Take a 5-10 minute break before starting the assessment.** The assessment requires fresh mental energy for strategic writing. Review your notes from the Rogers case, grab water, and set up your writing environment. You've got this!
 
 ---
 

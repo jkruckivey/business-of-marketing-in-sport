@@ -250,10 +250,10 @@ media rights → more resources for players...)
 
 ---
 
-## Module 4 Complete - Transition to Module 5
+## Build Your Revenue Empire Complete - Transition to The Canucks Challenge
 
 **What You've Learned:**
-You've applied everything from Modules 2-3 by building a complete revenue strategy. Through the Revenue Empire Builder simulation, you made real-time allocation decisions across all five revenue streams, responded to market events, and balanced growth against risk. Your Board Strategy Defense memo demonstrates your ability to justify strategic choices with data and sophisticated thinking.
+You've applied everything from Inside the Sports Business and Five Revenue Streams by building a complete revenue strategy. Through the Revenue Empire Builder simulation, you made real-time allocation decisions across all five revenue streams, responded to market events, and balanced growth against risk. Your Board Strategy Defense memo demonstrates your ability to justify strategic choices with data and sophisticated thinking.
 
 **Key Takeaways:**
 - Strategic allocation requires balancing growth potential against risk exposure
@@ -262,8 +262,8 @@ You've applied everything from Modules 2-3 by building a complete revenue strate
 - Market events require adaptive thinking and strategic pivots
 - Executive communication demands clear reasoning and evidence-based arguments
 
-**Up Next: Module 5 - Real-World Case Analysis**
-You've built a theoretical strategy in a clean simulation environment. But real sports organizations don't have that luxury. In Module 5, you'll examine the Vancouver Canucks—a franchise operating under NHL revenue sharing constraints, Canadian dollar currency risk, and competitive market pressures. You'll see how the strategic principles you just practiced (diversification, risk management, ecosystem thinking) play out when executives face actual board rooms, real financial constraints, and stakeholder pressures.
+**Up Next: The Canucks Challenge**
+You've built a theoretical strategy in a clean simulation environment. But real sports organizations don't have that luxury. In the next module, you'll examine the Vancouver Canucks—a franchise operating under NHL revenue sharing constraints, Canadian dollar currency risk, and competitive market pressures. You'll see how the strategic principles you just practiced (diversification, risk management, ecosystem thinking) play out when executives face actual board rooms, real financial constraints, and stakeholder pressures.
 
 The Revenue Empire Builder gave you the "what" (allocation decisions) and "how" (strategic trade-offs). The Canucks case will show you the "why it's hard" (constraints, politics, and unintended consequences).
 

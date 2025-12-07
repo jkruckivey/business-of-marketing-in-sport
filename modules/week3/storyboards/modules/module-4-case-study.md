@@ -461,34 +461,69 @@ Title: ▪ Key Metric: FanDuel Customer Economics
 
 ---
 
-## Element 9: **RENUMBERED** - Video - Case Debrief with Andrew Sneyd (was Element 8)
+## Element 9: **RENUMBERED** - Video - Andrew Sneyd (FanDuel CMO) Executive Interview (was Element 8)
 
 **Video Specifications:**
-- **Length:** 2 minutes
-- **Speaker:** Andrew Sneyd (FanDuel executive)
-- **Topic:** "Reflections on FanDuel's Partnership Strategy (Case Debrief)"
-- **Key Points:** Why they bid high on NFL, partnership ROI justification, competitive response, sustainability
-- **Accessibility:** Captions required, transcript provided
+- **File:** `Interviews/Andrew, FanDuel CMO_Captions_English (United States).txt` (transcript available)
+- **Duration:** ~45 minutes (full interview)
+- **Speaker:** Andrew Sneyd, Chief Marketing Officer, FanDuel
+- **Topic:** "Sports Betting Marketing: Building FanDuel from Zero to Market Leadership"
+- **Accessibility:** Full transcript available, VTT captions to be generated
 
-**Video Status:** 📝 Script complete, awaiting production and executive scheduling
+**Video Status:** ✅ Interview recorded and transcript available
 
-**Video Script (2 minutes):**
-```
-[0:00-0:15] Introduction
-"The case asks: Did FanDuel overpay for NFL and NBA partnerships? I'll give you the inside perspective on why we bid what we did—and whether it paid off."
+**Interview Content - Key Topics Covered:**
 
-[0:15-0:45] Partnership Rationale
-"In 2018, we faced a trust problem. Sports betting was newly legal, and consumers didn't know which operators were legitimate. Being 'Official Partner of the NFL' wasn't just marketing—it was a trust signal. NFL fans saw FanDuel odds during Sunday Night Football and thought, 'If the NFL trusts them, I can too.' That customer is higher quality: lower churn, higher LTV, cheaper to retain."
+**Sports Betting Industry Explosion (Post-PASPA 2018)**
+- PASPA repeal unlocked state-by-state legalization
+- Zero legal betting → $50B+ industry in 5 years
+- State-by-state regulatory complexity
 
-[0:45-1:15] ROI Justification
-"The case shows we paid $275M over 5 years for NFL. Critics said we overpaid. But look at attribution: we tracked 2.5 million new customers who signed up through NFL-branded campaigns, NFL app integrations, and NBC broadcast promos. That's $110 CAC—73% cheaper than our paid marketing CAC of $400. Even with conservative assumptions, we made $1.2 billion profit on that $275M investment."
+**Fan Engagement & The Lean-Forward Experience**
+- Bettors are "lean-forward" viewers (active engagement vs. passive watching)
+- Small bets ($5-10) transform viewing experience dramatically
+- NFL viewership correlation with betting engagement
+- Betting creates rooting interest in any game
 
-[1:15-1:45] Competitive Dynamics
-"DraftKings bid $900M vs. our $1B+ total. Why did we win? We offered better integration: FanDuel odds shown during games (not just halftime), data rights (we power NFL's official betting stats), and exclusive content partnerships (Pat McAfee, NFL Network). We paid more because we extracted more value."
+**Brand Building: Trust, Easy, Fun**
+- FanDuel's three brand pillars: Trustworthy, Easy to use, Fun experience
+- Building trust in newly-legal category was critical
+- Brand safety concerns with sports betting partnerships
+- How sponsors transfer trust to betting operators
 
-[1:45-2:00] Sustainability
-"Are partnerships sustainable? Costs are rising—ESPN Bet paid $2B for 10 years, driving up future renewals. But the alternative (paid marketing) is even more expensive. As long as partnership CAC < paid CAC, we'll keep bidding. The real question is: can new entrants (Fanatics, ESPN) afford to compete?"
-```
+**The Kick of Destiny Campaign (Super Bowl)**
+- Rob Gronkowski $10M live field goal bet during Super Bowl
+- Real-time stakes, authentic tension
+- Most talked-about campaign in FanDuel history
+- Risk tolerance in marketing decisions
+
+**KPI Measurement & Attribution**
+- Data-driven marketing with closed-loop attribution
+- Tracking which campaigns drive sign-ups and bets
+- Comparing performance marketing vs. brand marketing
+- NFL viewership data showing betting impact
+
+**Sponsorship Value & Trust Transfer**
+- Leagues/teams lending credibility to betting operators
+- "Official partner" designation = trust signal
+- Why sponsors pay premiums for betting category
+
+**Canada vs. US Market Differences**
+- Ontario regulatory landscape
+- Single-event betting legalization
+- Market maturity differences
+
+**Future of Sports Media & Betting**
+- Personalized viewing experiences with dynamic ads
+- Second-screen betting integration
+- Prediction: betting transforms how we watch sports
+
+**Viewing Guide for Students:**
+- Brand Building: How FanDuel established trust in a newly-legal category
+- Campaign Risk: What made "Kick of Destiny" successful (authenticity, stakes, timing)
+- Attribution: How betting operators measure marketing ROI with precision
+- Fan Engagement: Why bettors watch 40% more games (connects to Module 3 data)
+- Case Connection: Andrew's insights explain WHY FanDuel invested so heavily in partnerships
 
 ---
 
@@ -507,7 +542,16 @@ Title: ▪ Key Metric: FanDuel Customer Economics
 **Copy this into Uplimit AI Chat Widget settings:**
 
 ```
-You are a case study teaching assistant helping MBA students analyze the FanDuel sports betting case. Your role is to guide students through critical thinking using SOCRATIC QUESTIONING, not to provide answers.
+You are a case study teaching assistant helping MBA students analyze the FanDuel sports betting case, supplemented by Andrew Sneyd's executive interview (FanDuel CMO). Your role is to guide students through critical thinking using SOCRATIC QUESTIONING, not to provide answers.
+
+ANDREW SNEYD INTERVIEW CONTEXT (use to enrich discussions):
+- FanDuel CMO who built brand from zero in newly-legal market
+- Brand pillars: Trust, Easy, Fun (building trust was critical post-PASPA)
+- "Kick of Destiny" campaign: $10M live bet during Super Bowl with Rob Gronkowski (risk-taking, authenticity)
+- Bettors are "lean-forward" viewers (actively engaged, watch 40% more games)
+- KPI measurement with closed-loop attribution (can track exactly which campaigns convert)
+- Sponsorships transfer trust from leagues to betting operators
+- Canada vs. US market differences (Ontario legalization)
 
 IMPORTANT RULES:
 1. NEVER write analysis for students or give direct answers

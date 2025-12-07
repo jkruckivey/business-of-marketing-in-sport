@@ -1,22 +1,46 @@
 # MODULE 2: Executive Leader Perspectives (BOPPPS: Participatory - Expert Input)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.5.0 | **Last Updated:** 2025-12-05
 
-**Purpose:** Deliver expert practitioner perspectives on heritage property strategy through focused executive sessions (supports WLO 5.1, 5.2)
+**Purpose:** Deliver expert practitioner perspectives on heritage property strategy, future trends, and balancing tradition with innovation (supports WLO 5.1, 5.2, 5.3)
+
+### Version 1.5.0 Changes
+- **NEW:** Added Golf Canada interview (Niki DaSilva & Tim McLaughlin) - AVAILABLE NOW
+- Golf Canada interview fits Week 5 theme: heritage sport, tradition vs. innovation, future trends (AI coaching, simulator golf)
+- Jamie Dinsmore and Keith Pelley remain as scripted placeholders pending recording
 
 **Uplimit Structure:** Second module in Unit 5
 
-**Context:** Two recorded executive sessions—one from a heritage institution perspective (HHOF) and one from a modern franchise perspective (MLSE)—creating a counterpoint dialogue on legacy vs. innovation tension
+**Context:** Executive perspectives on heritage, tradition, and future trends—Golf Canada provides real-world insights on transforming a heritage sport while maintaining its traditions
+
+---
+
+## ⚠️ EXECUTIVE INTERVIEW STATUS
+
+**✅ AVAILABLE NOW:** Niki DaSilva & Tim McLaughlin (Golf Canada) - ~45 min interview recorded
+**⏳ PENDING:** Jamie Dinsmore (HHOF) - Scripted content below, recording TBD
+**⏳ PENDING:** Keith Pelley (MLSE) - Scripted content below, recording TBD
+
+**Golf Canada as Primary Content:** The Golf Canada interview (Niki DaSilva, CPO + Tim McLaughlin, CMO) provides excellent coverage of Week 5 themes:
+- Heritage sport transformation (400K members, 3 major championships)
+- Women's golf growth ("She Plays Golf" program, Brooke Henderson partnership)
+- Digital transformation (535K app users)
+- Future trends: AI coaching, simulator golf as emerging category
+- Balancing tradition with innovation
+
+Students should watch the Golf Canada interview as the primary executive content for Week 5. The Jamie Dinsmore and Keith Pelley scripts below provide additional pedagogical framing and may be recorded in the future.
+
+---
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 0 | Type directly | Sets context, introduces both executives |
-| 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about executive sessions + viewing instructions | Type directly | Blue variant, explains both perspectives |
-| 3 | **▶ Video 1** ⬛ Required | Jamie Dinsmore (HHOF CEO) - Heritage Institution Perspective (12-15 min) | Upload MP4 + VTT transcript | Focus: Preserving authenticity while growing revenue |
-| 4 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Jamie's session | Type directly | 3-5 prompts guiding synthesis |
-| 5 | **▶ Video 2** ⬛ Required | Keith Pelley (MLSE CEO) - Modern Franchise Perspective (12-15 min) | Upload MP4 + VTT transcript | Focus: Balancing tradition with aggressive growth |
-| 6 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Keith's session | Type directly | 3-5 prompts guiding synthesis |
-| 7 | **◈ Comparison Prompt** ▢ Optional | Dialogue synthesis: Where do these perspectives align/conflict? | Type directly | Synthesizes heritage vs. growth tension |
-| 8 | **▤ Details** ▢ Optional | Video transcripts (optional) | Type directly | Accordion for text versions |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 0 | Type directly | Sets context, introduces executives |
+| 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about executive sessions + viewing instructions | Type directly | Blue variant, explains perspectives |
+| 3 | **▶ Video 1** ⬛ Required ✅ | **Golf Canada (Niki DaSilva & Tim McLaughlin) (~45 min)** | Upload MP4 + transcript | **AVAILABLE NOW** - Heritage sport, future trends |
+| 4 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Golf Canada session | Type directly | 3-5 prompts on tradition vs. innovation |
+| 5 | **▶ Video 2** ▢ Optional ⏳ | Jamie Dinsmore (HHOF CEO) - Heritage Institution (12-15 min) | Upload MP4 + VTT | **PENDING** - Scripted content below |
+| 6 | **▶ Video 3** ▢ Optional ⏳ | Keith Pelley (MLSE CEO) - Modern Franchise (12-15 min) | Upload MP4 + VTT | **PENDING** - Scripted content below |
+| 7 | **▤ Details** ▢ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
+| 8 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about heritage sports and future trends" | Configure in Uplimit | Named: "Heritage & Future Trends Q&A" |
 
 ---
 
@@ -30,23 +54,23 @@
 
 You've been introduced to the heritage monetization dilemma—the challenge every heritage sports property faces: How do you honor the past while competing in a growth-obsessed present?
 
-**Connecting to Weeks 1-4:** As you listen to Jamie and Keith, notice how they apply frameworks you've already learned:
-- **Week 1:** Both executives think in terms of revenue ecosystems—how different streams (media, ticketing, sponsorship, merchandise) interconnect
-- **Week 2:** Keith explicitly discusses media rights strategy (CPM rates, streaming vs. broadcast, fan engagement data)
-- **Week 3:** Jamie addresses sponsorship constraints—when partnerships threaten authenticity, ROI isn't the only consideration
-- **Week 4:** Both could leverage athlete/inductee brands as strategic assets (an opportunity you'll analyze in the HHOF case)
+**Connecting to Weeks 1-4:** As you listen to this week's executives, notice how they apply frameworks you've already learned:
+- **Week 1 (Kevin Abrams):** Revenue ecosystems—how different streams interconnect in a $10B organization
+- **Week 2 (Al Dak):** Media rights strategy, streaming vs. broadcast, fan engagement data
+- **Week 3 (Andrew Sneyd):** Brand building, innovation, measuring what matters
+- **Week 4 (Matt Rubinoff):** Emerging sports, proof-of-concept, balancing growth with brand identity
 
-Now it's time to hear from two executives who live this tension every day. In this module, you'll encounter a unique learning experience: a counterpoint dialogue between two perspectives on what makes heritage properties valuable and how to grow them without losing their soul.
+Now it's time to hear from executives navigating the tradition vs. innovation tension in real time. In this module, you'll hear from **Niki DaSilva (Chief People Officer) and Tim McLaughlin (Chief Marketing Officer) at Golf Canada**—leaders transforming a heritage sport while maintaining its traditions.
 
-First, you'll hear from **Jamie Dinsmore, President & CEO of the Hockey Hall of Fame**—the guardian institution charged with preserving hockey's history and celebrating its greatest players. Then, you'll hear from **Keith Pelley, President and CEO of Maple Leaf Sports & Entertainment (MLSE)**—a modern sports franchise operator who owns both the Maple Leafs and Raptors and understands the business of growth and fan engagement.
+Golf Canada faces the exact tension this week explores:
+- **400,000 members** with deep traditions and expectations
+- **535,000 app users** demanding digital engagement
+- **Brooke Henderson** as a modern athlete brand ambassador
+- **Future trends** like AI coaching and simulator golf that could transform the sport
 
-Both leaders face heritage property challenges, but from opposite directions:
-- **Jamie** manages an institution where preservation IS the business (the past has economic value)
-- **Keith** manages franchises where the future drives value (current performance and innovation create revenue)
+Their insights will reveal how a national sports organization balances heritage preservation with aggressive innovation—and why women's golf represents both a strategic growth opportunity AND a return to the sport's inclusive roots.
 
-Their insights will reveal the real trade-offs, the constraints that frameworks can't capture, and the human dimensions of heritage strategy that come from two decades of executive decision-making.
-
-Listen carefully for where they agree (both prioritize authenticity) and where they diverge (on how much innovation is too much).
+Listen carefully for: How do you transform a heritage sport without alienating traditional members? When does innovation SERVE tradition vs. replace it?
 
 
 ---
@@ -54,38 +78,157 @@ Listen carefully for where they agree (both prioritize authenticity) and where t
 ## Element 2: Infobox Content
 
 
-Title: ◉ Executive Insights: Heritage Property Strategy - Two Perspectives
+Title: ◉ Executive Insights: Heritage Sports & Future Trends
 
-This module features two recorded executive sessions that bring real-world perspective to the heritage vs. innovation tension. You'll hear from leaders who have made multi-million dollar decisions on exactly the trade-offs you're studying this week.
+This module features an executive interview with Golf Canada's leadership team, providing real-world perspective on transforming a heritage sport while honoring its traditions.
 
-**Session 1: Jamie Dinsmore (Hockey Hall of Fame CEO)**
-- Role: Steward of hockey's history and institutional credibility
-- Challenge: How to grow revenue (declining attendance, flat donations) without "Disneyfication"
-- Perspective: Heritage preservation creates economic value; once lost, it can't be recovered
-- Focus: Boundary-setting and stakeholder relationships
+**Primary Session: Niki DaSilva & Tim McLaughlin (Golf Canada, ~45 min)**
 
-**Session 2: Keith Pelley (MLSE President & CEO)**
-- Role: Operator of modern sports franchises rooted in storied history
-- Challenge: How to honor Maple Leafs/Raptors legacy while competing in a digital, global market
-- Perspective: Heritage creates emotional connection that drives ALL revenue streams
-- Focus: Integration of tradition with aggressive innovation
+**Niki DaSilva, Chief People Officer (Ivey HBA '03)**
+- Background: MLSE, Deloitte consulting, now leading Golf Canada transformation
+- Perspective: Organization transformation, women's golf growth, balancing tradition with innovation
+
+**Tim McLaughlin, Chief Marketing Officer**
+- Background: 25 years at Adidas (Olympics, World Cup 2010), global brand building expertise
+- Perspective: Modern marketing approaches applied to heritage sports organization
+
+**Key Topics Covered:**
+- Golf Canada business model (400K members, 3 major championships, $18 avg revenue)
+- Brooke Henderson partnership (5th most LPGA wins in North America, authentic brand ambassador)
+- Women's golf growth strategy ("She Plays Golf" program, 33% of golfers are women)
+- Digital transformation (535K app users, from transactional to relationship-based engagement)
+- Future of golf (AI coaching, simulator golf as emerging category)
 
 **What to Watch For:**
-- Both executives emphasize AUTHENTICITY as a business asset, not just a cultural value
-- Differences in risk tolerance: Heritage institutions are more conservative; franchises are more aggressive
-- Common language around "stewardship" and "knowing your limits"
-- Real examples of decisions they've made on sponsorships, digital experiences, international expansion
+- How Golf Canada balances tradition (heritage sport) with innovation (digital engagement)
+- Athlete ambassador partnerships that go beyond traditional sponsorship
+- Women's sports as strategic growth opportunity (underrepresented market)
+- Technology as accessibility tool vs. replacement for tradition
 
-**Total Viewing Time:** 24-30 minutes (two 12-15 minute sessions)
-**Discussion Time:** 15-20 minutes (reflection and comparison)
-**Total Module 2 Time:** 40-50 minutes
+**Total Viewing Time:** ~45 minutes
+**Reflection Time:** 15-20 minutes
+**Total Module 2 Time:** ~60-65 minutes
 
 
 ---
 
-## Element 3: **RENUMBERED** - Video 1 - Jamie Dinsmore (Hockey Hall of Fame CEO) (was Element 2)
+## Element 3: Video 1 - Golf Canada (Niki DaSilva & Tim McLaughlin) Interview ✅ AVAILABLE
 
-- **File:** `week5-video1-jamie-dinsmore-hhof.mp4`
+**File:** `Interviews/Niki DaSilva Chief People Officer and Tim McLaughlin, Chief Marketing Officer.mp4`
+**Duration:** ~45 minutes
+**Transcript:** `Interviews/Niki DaSilva Chief People Officer and Tim McLaughlin, Chief Marketing Officer_Captions_English (United States).txt`
+**Video Title:** "Golf Canada: Transforming a Heritage Sport While Honoring Tradition"
+**Video Caption:** "Golf Canada CPO (Ivey HBA '03) and CMO discuss athlete brand partnerships, women's golf growth, digital transformation, and the future of golf"
+
+### Interview Content - Key Topics Covered:
+
+**Career Journeys (00:00-06:00)** - Niki: 10-year-old athlete who wanted to run a sports team, Ivey HBA 2003, Maple Leaf Sports & Entertainment, Deloitte consulting, now CPO at Golf Canada. Tim: 25 years at Adidas (Olympics, World Cup 2010 in South Africa), brand building expertise, now CMO at Golf Canada transforming the organization's marketing approach
+
+**Golf Canada Overview (06:00-12:00)** - 400,000 members across Canada, average revenue of $18 per member, three major championships: Canadian Women's Open, Canadian Men's Open, Canadian Senior Open. National Sports Organization (NSO) structure with provincial federations, professional tour events, and grassroots development
+
+**Brooke Henderson Partnership (12:00-22:00)** - Canada's most decorated golfer (5th most LPGA wins all-time in North America, 13 total wins, 2016 Women's PGA Championship winner). Authentic ambassador who started playing at 3 years old, homeschooled to pursue golf, family-managed career. Partnership structure: beyond traditional sponsorship to true brand alignment. RBC as title sponsor of Canadian Open, Brooke as RBC ambassador creating synergy
+
+**Women's Golf Growth (22:00-30:00)** - "She Plays Golf" program driving participation. 33% of Canadian golfers are women (underrepresented in industry coverage). LPGA Canadian Open growing in prestige and attendance. Strategic focus on women's golf as growth driver vs. declining traditional male demographics. Gender equity in programming and prize money conversations
+
+**Digital Transformation (30:00-38:00)** - Golf Canada Score Centre app with 535,000 active users. Golf Genius platform for tournament management. Digital engagement strategy: from transactional (booking tee times) to relationship-building (handicap tracking, course reviews, social features). Data-driven understanding of golfer behavior and preferences
+
+**Future of Golf (38:00-45:00)** - AI coaching on the driving range (swing analysis, real-time feedback). Simulator golf as growth opportunity (year-round engagement in Canadian climate, lower barrier to entry, social experience). Balancing tradition with innovation. Technology as accessibility tool vs. replacement for outdoor experience
+
+### Viewing Guide for Students:
+- **Heritage Sport Transformation:** How Golf Canada balances 150+ years of tradition with modern digital demands
+- **Athlete Ambassador Partnerships:** How Brooke Henderson relationship goes beyond traditional sponsorship
+- **Women's Sports Strategy:** "She Plays Golf" as growth driver, 33% market share opportunity
+- **Digital Engagement:** 535K users, from transactional to relationship-based engagement
+- **Future Trends:** AI coaching, simulator golf as emerging category
+- **NSO Business Model:** Federation structure, membership revenue, championship hosting
+
+### Connection to Week 5 Themes:
+- **Legacy vs. Innovation:** Golf is a heritage sport facing pressure to modernize
+- **Future Trends:** AI coaching and simulator golf represent emerging opportunities
+- **Authenticity:** Brooke Henderson partnership demonstrates authentic brand alignment
+- **Growth Strategy:** Women's golf as strategic opportunity without abandoning tradition
+
+**Embed Code:**
+```html
+<iframe
+  src="[Uplimit video URL - Interviews/Golf Canada.mp4]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Niki DaSilva & Tim McLaughlin - Golf Canada on Heritage Sport Transformation"
+  aria-label="Video interview with Golf Canada executives discussing heritage sport transformation, women's golf growth, Brooke Henderson partnership, digital engagement strategy, and future of golf including AI coaching"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+---
+
+## Element 4: Discussion Prompt - Golf Canada Session
+
+**Uplimit Implementation:**
+1. Select **Discussion Prompt** element in module builder
+2. Copy the markdown below into the element field
+
+```markdown
+## Reflection: Transforming a Heritage Sport
+
+**Watch the Golf Canada session above, then reflect on these questions. Post your thoughts and respond to at least one classmate.**
+
+### Prompt 1: Heritage vs. Innovation in Golf
+Golf is one of the oldest organized sports, with deep traditions around etiquette, course design, and club culture. Yet Golf Canada has embraced digital transformation (535K app users) and future trends like AI coaching.
+
+Analyze:
+- How does Golf Canada balance tradition with innovation?
+- What makes their approach different from "Disneyfication"?
+- Would the same digital strategy work for a more traditional golf organization (e.g., Augusta National)?
+
+**Suggested length:** 150-200 words
+
+---
+
+### Prompt 2: Women's Sports as Strategic Growth
+Golf Canada has made women's golf a strategic priority through "She Plays Golf" and the Brooke Henderson partnership. 33% of Canadian golfers are women, yet they're underrepresented in marketing and coverage.
+
+Apply to Week 5 themes:
+- How is women's golf both an innovation AND a return to golf's inclusive roots?
+- Compare this to how heritage institutions preserve tradition—is growing women's golf preservation or transformation?
+- What risks does Golf Canada face if this strategy fails?
+
+**Suggested length:** 150-200 words
+
+---
+
+### Prompt 3: Athlete Ambassador vs. Traditional Sponsorship
+Tim McLaughlin describes the Brooke Henderson partnership as going "beyond traditional sponsorship to true brand alignment."
+
+Compare to Week 4 concepts:
+- What's the difference between Brooke Henderson as sponsor vs. brand ambassador?
+- How does this fit Matt Rubinoff's "marketing-first" approach from Week 4?
+- Would this partnership model work for a heritage institution like the Hockey Hall of Fame?
+
+**Suggested length:** 150-200 words
+
+---
+
+### Prompt 4: Future Trends - AI and Simulator Golf
+Golf Canada sees AI coaching and simulator golf as future growth opportunities. Tim mentions these could make golf more accessible (year-round in Canada, lower barrier to entry).
+
+Critical analysis:
+- Do AI coaching and simulator golf SERVE golf's tradition or REPLACE it?
+- How would Jamie Dinsmore (HHOF) evaluate these innovations using his authenticity framework?
+- What's the risk that simulator golf becomes "Disneyfication" of the sport?
+
+**Suggested length:** 100-150 words
+```
+
+---
+
+## Element 5: Video 2 - Jamie Dinsmore (Hockey Hall of Fame CEO) ⏳ PENDING
+
+**⚠️ STATUS: SCRIPTED CONTENT - Interview recording pending**
+
+- **File:** `week5-video1-jamie-dinsmore-hhof.mp4` (TBD)
 - **Duration:** 12-15 minutes
 - **VTT Transcript:** `week5-video1-jamie-dinsmore.vtt` (required for accessibility)
 - **Poster Image:** `week5-video1-jamie-dinsmore-poster.jpg` (thumbnail of Jamie in HHOF setting)
@@ -454,7 +597,9 @@ What do you notice about the APPROVED innovations that the REJECTED innovations 
 
 ## Element 5: **RENUMBERED** - Video 2 - Keith Pelley (MLSE CEO) (was Element 4)
 
-- **File:** `week5-video2-keith-pelley-mlse.mp4`
+**⚠️ STATUS: SCRIPTED CONTENT - Interview recording pending**
+
+- **File:** `week5-video2-keith-pelley-mlse.mp4` (TBD)
 - **Duration:** 12-15 minutes
 - **VTT Transcript:** `week5-video2-keith-pelley.vtt` (required for accessibility)
 - **Poster Image:** `week5-video2-keith-pelley-poster.jpg` (thumbnail of Keith in MLSE setting)
@@ -998,48 +1143,42 @@ Ready to build your heritage strategy toolkit? Let's go!
 ## MODULE 2 COMPLETE - SUMMARY
 
 ### Elements Created:
-1. ✅ Connecting Introduction Text (sets context, introduces both executives)
-2. ✅ Infobox - Callout variant (viewing instructions, emphasis on two perspectives)
-3. ✅ Video 1 - Jamie Dinsmore (12-15 min, full script with 5 sections + 4 visual asset requirements)
-4. ✅ Discussion Prompt - Jamie's session (4 guided reflection questions)
-5. ✅ Video 2 - Keith Pelley (12-15 min, full script with 5 sections + 4 visual asset requirements)
-6. ✅ Discussion Prompt - Keith's session (4 guided reflection questions)
-7. ✅ Comparison Prompt - Dialogue synthesis (where executives agree/disagree)
-8. ✅ Details Accordion - Video transcripts (accessibility and reference)
+1. ✅ Connecting Introduction Text (sets context, introduces Golf Canada executives)
+2. ✅ Infobox - Callout variant (viewing instructions, Golf Canada focus)
+3. ✅ **Video 1 - Golf Canada (Niki DaSilva & Tim McLaughlin) - ~45 min - AVAILABLE NOW**
+4. ✅ Discussion Prompt - Golf Canada session (4 guided reflection questions)
+5. ⏳ Video 2 - Jamie Dinsmore (scripted, 12-15 min) - PENDING recording
+6. ⏳ Video 3 - Keith Pelley (scripted, 12-15 min) - PENDING recording
+7. ✅ Details Accordion - Video transcripts & executive bios
+8. ✅ AI Chat Widget - Heritage & Future Trends Q&A
 
-### Uplimit Compatibility:
-- ✅ Element sequencing matches Uplimit's structural conventions
-- ✅ Copy-paste ready markdown for all text elements
-- ✅ Video specifications include file names, duration, VTT requirements, and accessibility descriptions
-- ✅ Discussion prompts include word count guidance and suggested forum structure
-- ✅ Infobox uses simple paragraph format with Callout variant
-- ✅ Priority badges clearly marked as storyboard notation only
+### Course Executive Distribution:
+- **Week 1:** Kevin Abrams (NY Giants) - sports business operations
+- **Week 2:** Al Dak (Rogers) - media rights and content
+- **Week 3:** Andrew Sneyd (FanDuel) - betting marketing
+- **Week 4:** Matt Rubinoff (Fairgrounds) - emerging sports
+- **Week 5:** Golf Canada (Niki DaSilva & Tim McLaughlin) - heritage sport transformation ← YOU ARE HERE
 
-### Pedagogical Goals Preserved:
-- ✅ **Counterpoint dialogue**: Two legitimate perspectives on same problem
-- ✅ **Expert perspective**: Real executives with 15+ years experience making heritage decisions
-- ✅ **Stakeholder relationships**: Jamie's focus on curatorial staff/donors vs. Keith's focus on performance metrics
-- ✅ **Strategic integration**: Both executives validate purpose-driven innovation principle
-- ✅ **Motivation for Module 3**: Students see real trade-offs and need systematic frameworks to navigate them
+### Pedagogical Goals:
+- ✅ **Heritage sport transformation**: Golf Canada shows how to modernize while honoring tradition
+- ✅ **Future trends**: AI coaching, simulator golf, digital engagement as emerging opportunities
+- ✅ **Women's sports growth**: Strategic opportunity AND return to inclusive roots
+- ✅ **Athlete ambassador model**: Brooke Henderson partnership beyond traditional sponsorship
+- ✅ **Motivation for Module 3**: Students see real trade-offs in heritage property strategy
 
-### Total Time Estimate:
-- Jamie's video: 12-15 minutes
-- Jamie's discussion: 10-15 minutes
-- Keith's video: 12-15 minutes
-- Keith's discussion: 10-15 minutes
-- Comparison synthesis: 15-20 minutes
-- **Total Module 2 time: 65-80 minutes**
+### Total Time Estimate (Primary Content):
+- Golf Canada video: ~45 minutes
+- Golf Canada discussion: 15-20 minutes
+- **Total Module 2 time: ~60-65 minutes**
 
-### Critical Production Notes:
-- **Jamie Dinsmore video**: Record in Hockey Hall of Fame setting (Great Hall background) for authenticity
-- **Keith Pelley video**: Record in Scotiabank Arena or MLSE offices for context
-- **VTT files**: Required for accessibility—full captions with speaker identification and sound descriptions
-- **Visual assets**: All specified with alt text requirements for WCAG 2.2 AA compliance
-- **Discussion forums**: Configure in Uplimit to allow peer responses and faculty moderation
+### Production Status:
+- ✅ **Golf Canada**: Interview recorded, transcript available, ready for Uplimit upload
+- ⏳ **Jamie Dinsmore (HHOF)**: Scripted content ready, awaiting interview recording
+- ⏳ **Keith Pelley (MLSE)**: Scripted content ready, awaiting interview recording
 
 ---
 
-**Ready for implementation!** This Module 2 can be copy-pasted directly into Uplimit using the platform's video, discussion, and details elements.
+**Ready for implementation!** Golf Canada interview provides complete Week 5 executive content. Jamie Dinsmore and Keith Pelley scripts can be recorded later to provide additional perspectives.
 
 
 **Next File:** [MODULE 3: Core Content - Heritage Monetization & Future Trends](module-3-core-content.md)

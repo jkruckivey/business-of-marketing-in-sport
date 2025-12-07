@@ -54,7 +54,7 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
-            background: var(--color-sand);
+            background: white;
             border-radius: var(--border-radius);
             padding: 30px;
             border: 1px solid var(--color-neutral-200);
@@ -410,7 +410,10 @@
 
         // Add event listeners to all sliders
         Object.keys(sliders).forEach(key => {
-            sliders[key].addEventListener('input', () => updateDisplay());
+            sliders[key].addEventListener('input', (e) => {
+                enforceMaxTotal(key);
+                updateDisplay();
+            });
         });
 
         function getValues() {
@@ -421,6 +424,20 @@
                 merchandising: parseInt(sliders.merchandising.value),
                 betting: parseInt(sliders.betting.value)
             };
+        }
+
+        function enforceMaxTotal(changedKey) {
+            // Calculate total of all OTHER sliders (not the one being changed)
+            const otherKeys = Object.keys(sliders).filter(k => k !== changedKey);
+            const otherTotal = otherKeys.reduce((sum, key) => sum + parseInt(sliders[key].value), 0);
+
+            // Cap the current slider so total doesn't exceed 100
+            const maxAllowed = 100 - otherTotal;
+            const currentValue = parseInt(sliders[changedKey].value);
+
+            if (currentValue > maxAllowed) {
+                sliders[changedKey].value = Math.max(0, maxAllowed);
+            }
         }
 
         function updateDisplay() {

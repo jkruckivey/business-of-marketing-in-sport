@@ -1,10 +1,15 @@
 # Week 3: Sponsorship & Betting - The Growth Engines
 ## Uplimit Course Storyboard - Business of Sports Marketing
 
-**Version:** 1.0
-**Last Updated:** October 15, 2025
+**Version:** 1.1
+**Last Updated:** 2025-12-05
 **Target Platform:** Uplimit
-**Total Time:** 4-5 hours (across 6 modules)
+**Total Time:** 5-6 hours (across 7 modules)
+
+### Version 1.1 Changes
+- **NEW:** Added Module 1.5 - Executive Insights with Andrew Sneyd (FanDuel CMO)
+- Added video script references to sponsorship and betting modules
+- Updated executive guest information
 
 ---
 
@@ -19,9 +24,8 @@ Calculate sponsorship ROI and assess sports betting's role as a growth engine in
 - WLO 3.3: Calculate how brands measure ROI in sport partnerships
 - WLO 3.4: Design sponsorship activations that deliver measurable value
 
-**Executive Guests:**
-- Andrew Sneyd (FanDuel) - Sports betting industry perspective
-- Brand Sponsor Leader - Corporate sponsorship strategy
+**Executive Guest:**
+- **Andrew Sneyd (FanDuel CMO)** - Sports betting marketing, brand building, customer acquisition (~45 min interview)
 
 **Case Study:** FanDuel: Betting on Sports (HBS 520038)
 
@@ -31,37 +35,59 @@ Calculate sponsorship ROI and assess sports betting's role as a growth engine in
 
 ---
 
-## Module Structure (6 Modules, ~15 minutes each)
+## Module Structure (7 Modules)
 
-### Your Week 3 Journey
+### Module 0: Your Week 3 Journey
 **Time:** 14-17 minutes
 **Purpose:** Connect Week 2 to Week 3, establish learning outcomes, activate prior knowledge
 **Uplimit Structure:** First module in Unit 3
 
-### The Sponsorship Playbook
-**Time:** 12-14 minutes
-**Purpose:** Understand sponsorship ROI fundamentals, build activation framework
-**Uplimit Structure:** Second module in Unit 3
+### Module 1.5: Executive Insights - Andrew Sneyd (NEW)
+**Time:** ~50 minutes
+**Purpose:** Practitioner perspective on betting marketing, brand building at FanDuel
+**Executive:** Andrew Sneyd, CMO, FanDuel
+**Uplimit Structure:** After Welcome, before Sponsorship Playbook
 
-### Betting on Growth
-**Time:** 12-14 minutes
-**Purpose:** Analyze betting as growth driver, understand regulatory landscape, fan engagement impact
+### Module 2: The Sponsorship Playbook
+**Time:** 25-30 minutes (includes 2 videos + 3 widgets)
+**Purpose:** Understand sponsorship ROI fundamentals, build activation framework
+**Videos:** "Why Brands Pay: The Sponsorship Value Proposition" (2 min)
 **Uplimit Structure:** Third module in Unit 3
 
-### FanDuel's Big Bet
-**Time:** 18-20 minutes
-**Purpose:** Apply frameworks to real-world case, analyze FanDuel's market strategy and partnerships
+### Module 3: Betting on Growth
+**Time:** 20-25 minutes (includes video + 3 widgets)
+**Purpose:** Analyze betting as growth driver, understand regulatory landscape, fan engagement impact
+**Videos:** "Sports Betting Regulatory Landscape" (2 min)
 **Uplimit Structure:** Fourth module in Unit 3
 
-### Sprint: Design Your Activation
-**Time:** 45-60 minutes
-**Purpose:** Collaborative design of sponsorship activation with ROI projections
+### Module 4: FanDuel's Big Bet
+**Time:** 18-20 minutes
+**Purpose:** Apply frameworks to real-world case, analyze FanDuel's market strategy and partnerships
 **Uplimit Structure:** Fifth module in Unit 3
 
-### Your Sponsorship Pitch
+### Module 5: Sprint: Design Your Activation
+**Time:** 45-60 minutes
+**Purpose:** Collaborative design of sponsorship activation with ROI projections
+**Uplimit Structure:** Sixth module in Unit 3
+
+### Module 6: Your Sponsorship Pitch
 **Time:** 30-40 minutes
 **Purpose:** Submit activation plan, peer review, reflect on Week 3 learning, preview Week 4
-**Uplimit Structure:** Sixth module in Unit 3
+**Uplimit Structure:** Seventh module in Unit 3
+
+---
+
+## Video Script References
+
+**Instructional Videos (2-min versions):**
+- File: `modules/week3/video-scripts/week3-instructional-videos-2min.md`
+- Video 1: "Why Brands Pay: The Sponsorship Value Proposition" (2 min) - Module 2
+- Video 2: "Sports Betting Regulatory Landscape" (2 min) - Module 3
+
+**Executive Interview:**
+- Andrew Sneyd (FanDuel CMO) - ~45 min - Module 1.5
+- File: `Interviews/Andrew, FanDuel CMO.mp4`
+- Transcript: `Interviews/Andrew, FanDuel CMO_Captions_English (United States).txt`
 
 ---
 

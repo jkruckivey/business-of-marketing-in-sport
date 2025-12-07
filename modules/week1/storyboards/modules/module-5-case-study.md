@@ -536,7 +536,7 @@ Students with anxiety about AI roleplay can submit a written position memo inste
 
 ---
 
-## Module 5 Complete - Transition to Module 6
+## The Canucks Challenge Complete - Transition to Your Executive Memo
 
 **What You've Learned:**
 You've analyzed a real professional sports organization facing complex revenue-sharing challenges. The Vancouver Canucks case revealed how NHL's revenue-sharing formula impacts team strategy, how Canadian teams face unique currency headwinds, and how mid-market franchises navigate tensions between large-market contributors and small-market recipients. You've seen theory applied to actual financial constraints and governance dynamics.
@@ -550,7 +550,7 @@ You've analyzed a real professional sports organization facing complex revenue-s
 - **Appointment viewing matters:** The Canucks' media value depends on fans watching live—this is why sports remain premium content even as other entertainment shifts to on-demand (recall the "appointment viewing" concept from Five Revenue Streams)
 
 **Up Next: Your Executive Memo**
-You've learned the framework, applied it strategically in Build Your Revenue Empire, and analyzed a real case in The Canucks Challenge. Now it's time to demonstrate mastery. In Your Executive Memo, you'll write a comprehensive Reflection Memo synthesizing all Week 1 learning and applying it to a strategic investment decision.
+You've learned the framework, applied it strategically in Build Your Revenue Empire, and analyzed a real case in The Canucks Challenge. Now it's time to demonstrate mastery. In the next module, you'll write a comprehensive Reflection Memo synthesizing all Week 1 learning and applying it to a strategic investment decision.
 
 Ready to show what you've learned? Let's wrap up Week 1!
 

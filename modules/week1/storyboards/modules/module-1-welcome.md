@@ -23,11 +23,41 @@
 
 ---
 
-### 💼 Project Preview: Week 1 → Final Strategic Vision
+### Element 5: CFL Project Tie-In Widget
 
-This week's learning directly prepares you for your **Week 5 capstone**: a 5-year Strategic Vision Memo for a sports property. You'll build the foundational revenue analysis skills needed to answer the central question: *"How will this property make money?"*
+**Widget Purpose:** Interactive overview of the CFL League Expansion Project showing all 5 milestones with current week highlighted
 
-By mastering the 5-stream revenue framework, revenue sharing models, and ecosystem dynamics this week, you'll be ready to construct sophisticated financial projections and strategic recommendations for your chosen property.
+**Uplimit Implementation:**
+
+**Widget File:** `cfl-project-tie-in.html`
+
+**Embed Code:**
+```html
+<iframe
+  src="../../widgets/cfl-project-tie-in.html"
+  width="100%"
+  height="520"
+  style="border: none; border-radius: 8px;"
+  title="CFL League Expansion Project Overview"
+  aria-label="Interactive widget showing course project milestones across 5 weeks with Week 1 highlighted"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Displays all 5 project milestones with deliverables
+- Current week (Week 1) highlighted with accent color
+- "This Week" section explains what students will work on
+- Responsive design for mobile viewing
+- WCAG 2.2 AA compliant with keyboard navigation
+
+**Design Notes:**
+- Uses toned-down neutral color palette matching other course widgets
+- Sage green accent (`#6b9085`) for project elements
+- Replaces markdown table that renders poorly in Uplimit
+
+📋 **Full Project Details:** See [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
 
 ---
 

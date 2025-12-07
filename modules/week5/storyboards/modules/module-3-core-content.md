@@ -1,5 +1,5 @@
 # MODULE 3: Core Content - Legacy vs Innovation (BOPPPS: Presentation) • **V3 INTERACTIVE-FIRST REDESIGN**
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2025-12-05
 
 **Purpose:** Interactive discovery of heritage monetization strategies and future trends through experimentation
 
@@ -9,10 +9,10 @@
 
 **Content Summary:**
 - **Total text:** ~800 words broken into 3 micro-readings (200-300 words each, ~1-2 minutes each)
-- **Total video:** 0 minutes (no video in this module, content delivered through interactive widgets)
+- **Total video:** 6 minutes (3 × 2-min instructional videos)
 - **Interactive widgets:** 2 major widgets, ~33 minutes total hands-on engagement
 - **Visual elements:** 2 infoboxes, 2 text blocks, 1 details accordion, 1 AI chat widget (optional)
-- **Total time:** 55-67 minutes (approximately **75% ACTIVE engagement** through widgets)
+- **Total time:** 61-73 minutes (approximately **70% ACTIVE engagement** through widgets)
 
 **Content Priority Badges:**
 - ⬤ **Required** - Core content essential for learning outcomes and assessments
@@ -22,12 +22,15 @@
 | Order | Element | Content/Purpose | Time | Source | Implementation Notes |
 |-------|---------|----------------|------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | 2 min | Type directly | Sets interactive learning approach for heritage properties |
-| 2 | **⚙ iFrame Widget** ⬤ Required | **Legacy vs Innovation Matrix** | 8-10 min | Embed widget | Map strategic decisions balancing tradition & growth |
-| 3 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Process learning from strategic mapping |
-| 4 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
-| 5 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
-| 6 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
-| 7 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Variable | Configure in Uplimit | On-demand support for strategic planning |
+| 2 | **▶ Video** ⬤ Required | "Heritage Properties as Business Assets" (2 min) | 2 min | Upload MP4 | Introduces heritage property economics before matrix widget |
+| 3 | **⚙ iFrame Widget** ⬤ Required | **Legacy vs Innovation Matrix** | 8-10 min | Embed widget | Map strategic decisions balancing tradition & growth |
+| 4 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Process learning from strategic mapping |
+| 5 | **▶ Video** ⬤ Required | "The Legacy vs Innovation Trade-Off" (2 min) | 2 min | Upload MP4 | Explains 4 strategic quadrants before trends predictor |
+| 6 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
+| 7 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
+| 8 | **▶ Video** ◐ Recommended | "Future Trends in Sports Business" (2 min) | 2 min | Upload MP4 | Introduces 6 megatrends before deep dive |
+| 9 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
+| 10 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Variable | Configure in Uplimit | On-demand support for strategic planning |
 
 ---
 
@@ -73,7 +76,44 @@ Ready? Let's experiment.
 
 ---
 
-## Element 2: Legacy vs Innovation Matrix Widget
+## Element 2: Instructional Video - Heritage Properties as Business Assets
+
+**Video Specifications:**
+- **Length:** 2 minutes
+- **Topic:** "Heritage Properties as Business Assets"
+- **Key Points:** Heritage property challenge (HHOF -8% attendance), five revenue sources, the innovation imperative
+- **Accessibility:** Captions required, transcript provided
+
+**Video Status:** 📝 Script complete, awaiting production
+
+**Video Script Reference:** See `modules/week5/video-scripts/week5-instructional-videos-2min.md` - Video 1
+
+**Video Script Summary (2 minutes):**
+```
+[0:00-0:15] Hook
+"The Hockey Hall of Fame houses 100 years of hockey history. But here's the challenge: visitors are declining 8% per year, and the building can't move."
+
+[0:15-0:45] The Heritage Property Challenge
+Heritage properties include halls of fame, historic venues (Fenway, Wimbledon), legacy events (The Masters, Olympics), and museums. Unique constraint: You can't just maximize revenue—aggressive commercialization destroys authenticity.
+
+[0:45-1:15] The Revenue Model
+Five revenue sources: (1) Admissions 40-50%, (2) Events 20-30%, (3) Retail 10-15%, (4) Sponsorships 10-15%, (5) Digital/Media 5-10%. Challenge: Admissions are declining as younger generations visit museums less.
+
+[1:15-1:45] The Innovation Imperative
+Two paths: Preserve (accept declining attendance) or Transform (embrace digital, risk alienating traditionalists). HHOF is testing virtual tours, esports integrations, and international pop-ups.
+
+[1:45-2:00] Transition
+"Next, you'll use the Legacy vs Innovation Matrix to map strategic decisions across two axes: tradition preservation and revenue growth."
+```
+
+**Uplimit Implementation:**
+1. Upload `week5-video1-heritage-properties.mp4`
+2. Add VTT caption file
+3. Place before Legacy vs Innovation Matrix widget
+
+---
+
+## Element 3: Legacy vs Innovation Matrix Widget
 
 ### ⚙ Interactive Activity: Legacy vs Innovation Matrix
 
@@ -229,7 +269,44 @@ The Hockey Hall of Fame faces this exact dilemma. Jamie Dinsmore (President & CE
 
 ---
 
-## Element 4: **RENUMBERED** - Future Trends Predictor Widget (was Element 3)
+## Element 5: Instructional Video - The Legacy vs Innovation Trade-Off
+
+**Video Specifications:**
+- **Length:** 2 minutes
+- **Topic:** "The Legacy vs Innovation Trade-Off"
+- **Key Points:** Four strategic quadrants (Purist, Innovator, Stagnant, Balanced), real examples (The Masters, Olympics, NFL)
+- **Accessibility:** Captions required, transcript provided
+
+**Video Status:** 📝 Script complete, awaiting production
+
+**Video Script Reference:** See `modules/week5/video-scripts/week5-instructional-videos-2min.md` - Video 2
+
+**Video Script Summary (2 minutes):**
+```
+[0:00-0:15] Hook
+"The Masters bans cell phones, limits commercials, and changes nothing. The Olympics add breakdancing, esports, and 3×3 basketball. Both are heritage properties. Both are successful. They just made different strategic choices."
+
+[0:15-0:45] The Four Quadrants
+Every strategy falls into one quadrant: (1) Purist (high tradition, low growth) - Augusta National, (2) Innovator (low tradition, high growth) - UFC, F1, (3) Stagnant (low both) - danger zone, (4) Balanced (high both) - NFL, Premier League.
+
+[0:45-1:15] Finding the Balance
+Three questions: (1) What's our irreplaceable core? (2) What's negotiable? (3) What would destroy our credibility? For HHOF: Stanley Cup ceremony = untouchable, digital experiences = negotiable.
+
+[1:15-1:45] Real Examples
+The Masters: Core = azaleas, green jackets, limited commercials. Innovation = app, streaming, international qualifying. Result: $200M+ revenue, brand intact. Olympics: Core = ceremony, unity. Innovation = new sports, social media. Result: Record engagement, ongoing debates.
+
+[1:45-2:00] Transition
+"Next, you'll use the Heritage Property Analyzer to model different transformation scenarios and see the 10-year revenue impact."
+```
+
+**Uplimit Implementation:**
+1. Upload `week5-video2-legacy-innovation.mp4`
+2. Add VTT caption file
+3. Place before Future Trends Predictor widget
+
+---
+
+## Element 6: Future Trends Predictor Widget
 
 ### ⚙ Interactive Activity: Future Trends Predictor
 
@@ -425,7 +502,44 @@ This Future Trends widget helps you see how emerging trends will reshape the ent
 
 ---
 
-## Element 6: **RENUMBERED** - Details Accordion - Deep Dive: Heritage Property Economics (was Element 5)
+## Element 8: Instructional Video - Future Trends in Sports Business
+
+**Video Specifications:**
+- **Length:** 2 minutes
+- **Topic:** "Future Trends in Sports Business"
+- **Key Points:** Six megatrends (AI, VR/AR, DTC, demographics, betting, sustainability), implications for sports marketing
+- **Accessibility:** Captions required, transcript provided
+
+**Video Status:** 📝 Script complete, awaiting production
+
+**Video Script Reference:** See `modules/week5/video-scripts/week5-instructional-videos-2min.md` - Video 3
+
+**Video Script Summary (2 minutes):**
+```
+[0:00-0:15] Hook
+"In 1995, you watched sports on TV or in person. By 2035, you might watch from inside a virtual stadium, bet on every play, and interact with AI commentators."
+
+[0:15-0:45] The Six Megatrends (Part 1)
+(1) AI/ML: Personalized highlights, AI coaching, automated content. NY Giants already use enterprise AI. (2) VR/AR: Virtual attendance, augmented broadcasts. Apple Vision Pro building infrastructure. (3) DTC: Leagues bypassing networks, athletes selling directly to fans.
+
+[0:45-1:15] More Megatrends (Part 2)
+(4) Demographics: Gen Z watches highlights not full games, women's sports reaching parity. (5) Betting Integration: Real-time betting in broadcasts, data as revenue stream. (6) Sustainability: Carbon-neutral stadiums, green merchandising—no longer optional.
+
+[1:15-1:45] What This Means
+Media rights valued on engagement, not just eyeballs. Sponsorship requires data integration. Fan experience blends physical and digital. Tim McLaughlin (Golf Canada): "AI will be a proactive partner in coaching."
+
+[1:45-2:00] Transition
+"Next, you'll use the Future Trends Simulator to forecast how these trends will impact sports business over 5-10 years. Choose three trends to prioritize and see projected outcomes."
+```
+
+**Uplimit Implementation:**
+1. Upload `week5-video3-future-trends.mp4`
+2. Add VTT caption file
+3. Place after reflection prompt, before deep dive accordion
+
+---
+
+## Element 9: Details Accordion - Deep Dive: Heritage Property Economics
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -671,12 +785,15 @@ Ready to transform a heritage icon? Let's apply your frameworks!
 
 ### Elements Created:
 1. ✅ Module Introduction (interactive learning approach for heritage properties)
-2. ✅ Legacy vs Innovation Matrix Widget (2x2 plotting tool with 15 strategic initiatives)
-3. ✅ Reflection Prompt 1 (process strategic trade-off insights)
-4. ✅ Future Trends Predictor Widget (5-year forecast with investment allocation)
-5. ✅ Reflection Prompt 2 (synthesize future vision and Week 1-5 integration)
-6. ✅ Details Accordion - Deep Dive on Heritage Property Economics (financial analysis and hybrid model)
-7. ✅ AI Chat Widget - Test Your Understanding
+2. ✅ Video 1: "Heritage Properties as Business Assets" (2 min)
+3. ✅ Legacy vs Innovation Matrix Widget (2x2 plotting tool with 15 strategic initiatives)
+4. ✅ Reflection Prompt 1 (process strategic trade-off insights)
+5. ✅ Video 2: "The Legacy vs Innovation Trade-Off" (2 min)
+6. ✅ Future Trends Predictor Widget (5-year forecast with investment allocation)
+7. ✅ Reflection Prompt 2 (synthesize future vision and Week 1-5 integration)
+8. ✅ Video 3: "Future Trends in Sports Business" (2 min)
+9. ✅ Details Accordion - Deep Dive on Heritage Property Economics (financial analysis and hybrid model)
+10. ✅ AI Chat Widget - Test Your Understanding
 
 ### Widget Specifications Provided:
 - **Legacy vs Innovation Matrix:** 2x2 grid, 15 draggable initiatives, 4 strategic quadrants, portfolio balance scoring, comparison to real properties (HHOF, Olympics, FIFA)
@@ -691,10 +808,11 @@ Ready to transform a heritage icon? Let's apply your frameworks!
 
 ### Total Time Estimate:
 - Reading (intro + reflection prompts): 10 minutes
+- Videos (3 × 2-min instructional): 6 minutes
 - Widget 1 (Legacy vs Innovation Matrix): 20 minutes
 - Widget 2 (Future Trends Predictor): 25 minutes
 - Optional deep dive reading: 12 minutes
-- **Total Module 3 time: 55-67 minutes**
+- **Total Module 3 time: 61-73 minutes**
 
 ---
 

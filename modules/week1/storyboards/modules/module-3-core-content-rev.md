@@ -33,15 +33,15 @@
 
 
 
-> **Personalized pickup from Module 1**
+> **Personalized pickup from Your Week 1 Journey**
 >
-> You identified **{{m1_stream_choice}}** as the most volatile revenue stream and noted: “{{m1_volatility_reason}}.”
-> In this module, you’ll put that instinct to the test. If you didn’t make a selection earlier, choose one now and keep it in mind as you use the simulators.
+> You identified **{{m1_stream_choice}}** as the most volatile revenue stream and noted: "{{m1_volatility_reason}}."
+> In this module, you'll put that instinct to the test. If you didn't make a selection earlier, choose one now and keep it in mind as you use the simulators.
 
-**Design note:** To avoid redundancy, we **won’t re-define** each stream here. For concise definitions, see **Module 1**. Below, each section starts with an **applied question** and a tool to explore trade-offs.
+**Design note:** To avoid redundancy, we **won't re-define** each stream here. For concise definitions, see **Your Week 1 Journey**. Below, each section starts with an **applied question** and a tool to explore trade-offs.
 
 
-In Module 1, you saw a preview of professional sport's five major revenue streams. Now it's time to explore each one in depth—how they work, what drives their value, and most importantly, how they interconnect.
+In Your Week 1 Journey, you saw a preview of professional sport's five major revenue streams. Now it's time to explore each one in depth—how they work, what drives their value, and most importantly, how they interconnect.
 
 Professional sports organizations generate revenue through five major streams, each with distinct characteristics, risks, and growth trajectories. Unlike traditional businesses where revenue sources operate independently, sport revenue streams are deeply interconnected—creating what industry experts call a **"revenue ecosystem"** rather than a portfolio.
 
@@ -1034,9 +1034,9 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 
 ## 🎯 FINAL PROJECT CONNECTION
 
-**How Module 3 Supports Your Final Strategic Vision:**
+**How This Module Supports Your Final Strategic Vision:**
 
-Module 3 taught you the core content for all five revenue streams through interactive discovery. This deep knowledge enables sophisticated revenue modeling in your Week 5 capstone.
+This module taught you the core content for all five revenue streams through interactive discovery. This deep knowledge enables sophisticated revenue modeling in your Week 5 capstone.
 
 **What You Learned:**
 - Media rights (40-60%) dominate, but streaming vs. linear creates strategic trade-offs
@@ -1047,17 +1047,17 @@ Module 3 taught you the core content for all five revenue streams through intera
 
 **How to Apply This to Your Final Project:**
 
-When you build your 5-year strategic vision in Week 5, Module 3's interactive widgets provide the quantitative foundation:
+When you build your 5-year strategic vision in Week 5, the interactive widgets from this module provide the quantitative foundation:
 
 - **Revenue Projections:** Use the ecosystem cascade model to forecast interdependent revenue growth. Don't project streams independently—show how investment in one stream amplifies others (e.g., signing star player → ticket sales + merchandise + media value).
 - **Pricing Strategy:** Reference the dynamic pricing simulator to justify your ticketing approach. Example: "Implementing dynamic pricing (as modeled in Week 1) could increase gate receipts by 15-25% without reducing sellouts."
-- **Sponsorship Value Proposition:** Use Module 3's sponsorship ROI framework to explain what sponsors get for their investment. Your vision should quantify reach, engagement, and conversion potential.
+- **Sponsorship Value Proposition:** Use the sponsorship ROI framework to explain what sponsors get for their investment. Your vision should quantify reach, engagement, and conversion potential.
 
 **Real-World Application:** The interactive widgets you used aren't theoretical—they're based on actual league data and industry benchmarks. When you pitch your strategic vision, reference these tools to ground your projections in reality.
 
 ---
 
-## Module 3 Complete - Transition to Module 4
+## Five Revenue Streams Complete - Transition to Build Your Revenue Empire
 
 **What You've Learned:**
 You've now explored all five revenue streams through hands-on discovery. You understand that media rights (40-60%) dominate modern sports economics, ticketing and premium seating create tiered fan experiences, sponsorship activation drives brand value beyond logos, merchandising spikes during key moments, and betting is the fastest-growing frontier. Most importantly, you've seen how these streams form an **ecosystem**—investments in one area cascade through all others.
@@ -1069,8 +1069,8 @@ You've now explored all five revenue streams through hands-on discovery. You und
 - Streaming economics differ fundamentally from traditional broadcast models
 - Betting legalization creates multiple monetization opportunities
 
-**Up Next: Module 4 - Build Your Revenue Empire**
-You've learned the theory and played with individual widgets. Now it's time to put it all together in a strategic simulation. In Module 4, you'll build a complete revenue strategy for a professional sports team, making trade-offs across all five streams while managing risk and maximizing growth.
+**Up Next: Build Your Revenue Empire**
+You've learned the theory and played with individual widgets. Now it's time to put it all together in a strategic simulation. In the next module, you'll build a complete revenue strategy for a professional sports team, making trade-offs across all five streams while managing risk and maximizing growth.
 
 Ready to become a sports business strategist? Let's go!
 

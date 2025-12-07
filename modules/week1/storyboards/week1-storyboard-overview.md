@@ -85,5 +85,42 @@ By the end of this week, students will be able to:
 
 ---
 
-**Last Updated**: October 14, 2025
-**Version**: 3.0 (Interactive-first redesign)
+## Video Script References
+
+**Instructional Videos (2-min versions):**
+- File: `modules/week1/video-scripts/week1-instructional-videos-2min.md`
+- Video 1: "Five Revenue Streams in Professional Sports" (2 min) - Module 2/3
+- Video 2: "Sponsorship & Merchandising Overview" (2 min) - Module 3
+- Video 3: "Revenue Sharing Models" (2 min) - Module 5
+- Video 4: "The Rogers NHL Deal Overview" (2 min) - Module 7 (Week 2 preview)
+
+**Full Instructional Videos:**
+- File: `modules/week1/video-scripts/week1-instructional-videos.md`
+- "Understanding Revenue Streams in Professional Sports" (10 min)
+- "Revenue Sharing - Why Sports Leagues Are Different" (8 min)
+- "The Rogers NHL Deal - A $5.2 Billion Case Study" (10 min)
+
+**Executive Interview:**
+- Kevin Abrams (SVP Football Operations & Strategy, NY Giants) - ~32 min - Module 2
+- File: `Interviews/Kevin Abrams Interview.mp4`
+- Transcript: Available
+
+**Key Marketing Highlights from Kevin Abrams Interview:**
+
+> "We're a **$10 billion mom and pop shop**"
+
+> "We used to treat the salary cap like a **checking account**, now we understand it's a **portfolio**"
+
+> "The **quality of the prompt dictates the quality of the output**" — on AI implementation
+
+> "Players are coming out of college now where **they are brands**" — on the NIL era
+
+**Key Stats:**
+- 25+ years with NY Giants organization
+- $10B franchise valuation (most valuable in NFL)
+- Enterprise AI deployed across talent evaluation, HR, and operations
+
+---
+
+**Last Updated**: 2025-12-05
+**Version**: 3.1 (Added video script references, executive highlights)

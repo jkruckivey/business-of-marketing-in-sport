@@ -51,7 +51,17 @@
       "mcp__playwright__browser_take_screenshot",
       "mcp__playwright__browser_wait_for",
       "Bash(python -m http.server:*)",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(git checkout:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nMerge remote changes, accepting remote version updates\n\nResolved conflicts by accepting remote branch version updates:\n- M1: v1.5 (removed mid-module KCs)\n- M2: v1.4 (terminology updates)\n- M5: v1.6 (removed mid-module KCs)\n- M6: v1.4 (Goal Seek additions)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(dir /b \"C:\\Users\\james\\OneDrive\\Documents2\\GitHub\\business-of-marketing-in-sport\\modules\\week3\" \"C:\\Users\\james\\OneDrive\\Documents2\\GitHub\\business-of-marketing-in-sport\\modules\\week4\" \"C:\\Users\\james\\OneDrive\\Documents2\\GitHub\\business-of-marketing-in-sport\\modules\\week5\")",
+      "Bash(pandoc:*)",
+      "Bash(where:*)",
+      "Bash(pip show:*)",
+      "Bash(python convert-to-docx.py:*)",
+      "Bash(start \"\" \"C:\\Users\\james\\OneDrive\\Documents2\\GitHub\\business-of-marketing-in-sport\\modules\\week4\\widgets\\brand-package-creator.html\")",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd CFL Brand Package Creator widget\n\nInteractive widget for designing expansion team branding:\n- Team name, tagline, colors, mascot, logo concept\n- Live jersey mockups and color swatches\n- Brand metrics (uniqueness, local relevance, merch potential)\n- Strategic insights based on city heritage\n- Export brand package as text file\n- 4 preset templates (Halifax, Quebec, Saskatoon, London)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": [],

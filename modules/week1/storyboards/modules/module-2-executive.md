@@ -1,10 +1,15 @@
 # Inside the Sports Business
-**Version:** 1.4.0 | **Last Updated:** 2025-12-01
+**Version:** 1.5.0 | **Last Updated:** 2025-12-05
 
-**Purpose:** Deliver expert practitioner perspective on revenue ecosystems through focused concept videos (supports WLO 1.1, 1.2)
+**Purpose:** Deliver expert practitioner perspective on revenue ecosystems through focused concept videos and executive interview (supports WLO 1.1, 1.2)
+
+### Version 1.5.0 Changes
+- **NEW:** Added Kevin Abrams (NY Giants SVP) executive interview as Element 5
+- Updated AI Chat widget with Kevin Abrams interview context
+- Updated time estimates to reflect ~36 minutes total viewing
 
 ### Version 1.4.0 Changes
-- **NEW:** Added stock photo suggestion after Element 1 connecting introduction text to set executive context
+- Added stock photo suggestion after Element 1 connecting introduction text to set executive context
 
 **Uplimit Structure:** Second module in Unit 1
 
@@ -14,8 +19,8 @@
 | 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about videos + viewing instructions | Type directly | Blue variant, sets viewing expectations |
 | 3 | **▶ Video 1** ⬛ Required | Revenue Streams Overview (2 min) | Upload MP4 + VTT transcript | Introduction to 5 revenue streams |
 | 4 | **▶ Video 2** ▣ Recommended | Revenue Sharing Models (2 min) | Upload MP4 + VTT transcript | NHL/NFL/EPL comparison |
-| 5 | **▶ Video 3** ⬛ Required | Executive Interview (10-12 min) | Upload MP4 + VTT transcript | Bell Media/TSN leader perspective |
-| 6 | **▤ Details** ▢ Optional | Video transcripts (optional) | Type directly | Accordion for text versions |
+| 5 | **▶ Video 3** ⬛ Required | Kevin Abrams Interview (~32 min) | Upload MP4 + transcript | NY Giants SVP on team operations, salary cap, revenue |
+| 6 | **▤ Details** ▢ Optional | Video transcripts & executive bio | Type directly | Accordion for text versions |
 | 7 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about revenue concepts" | Configure in Uplimit | Named: "Revenue Ecosystem Q&A" |
 
 ### Element 1: Connecting Introduction Text
@@ -24,7 +29,7 @@
 ```markdown
 You now understand where you're headed this week—the four learning objectives that will transform how you analyze sports business. You've been introduced to the five major revenue streams and seen why they operate as an interconnected ecosystem rather than independent channels.
 
-Before diving into the details of each stream, you need context from someone who's actually done this work. In this module, you'll hear from a senior sports business executive who has negotiated multi-million dollar media deals, built sponsorship portfolios, and navigated the complex economics of Canadian sports markets. Their insights will ground the theory you're about to explore in Module 3 with real-world experience, strategic trade-offs, and lessons learned from the field.
+Before diving into the details of each stream, you need context from someone who's actually done this work. In this module, you'll learn about the five major revenue streams through focused concept videos. These insights will ground the theory you're about to explore in Five Revenue Streams with real-world examples, strategic trade-offs, and industry context.
 ```
 
 ### Element 1A: Picture - Executive Leadership (NEW v1.4.0)
@@ -40,22 +45,24 @@ Before diving into the details of each stream, you need context from someone who
 
 ### Element 2: Infobox Content
 ```
-Title: ◉ Executive Insights: Revenue Ecosystems
+Title: ◉ Understanding Revenue Ecosystems
 
-This module features three videos: two short concept videos (2 minutes each) introducing
-professional sport's unique revenue model, followed by an executive interview (10-12 minutes)
-with a senior leader from Bell Media/TSN sharing real-world insights from media rights
-negotiations and revenue strategy.
+This module features two short concept videos (2 minutes each) introducing professional sport's unique revenue model, plus a full executive interview with Kevin Abrams, SVP Football Operations & Strategy at the New York Giants.
 
-Viewing Guide:
-• Watch for: How revenue streams interconnect and influence each other
-• Note: Real examples of revenue sharing in action and executive decision-making
-• Consider: What makes sport's business model unique vs. entertainment?
+**Concept Videos (4 min total):**
+• Video 1: Five major revenue streams and their relative importance
+• Video 2: Revenue sharing models (NFL, NHL, EPL comparison)
 
-Videos directly support WLO 1.1 (mapping revenue streams) and WLO 1.2
-(understanding sport's unique model).
+**Executive Interview (~32 min):**
+Kevin Abrams shares how the NY Giants—a $10 billion organization—manage salary cap as a portfolio (not a checking account), use AI for talent evaluation, and integrate business operations with football operations.
 
-**Total viewing time:** 14-16 minutes
+**Viewing Guide:**
+• Concept videos: How revenue streams interconnect and influence each other
+• Kevin Abrams: Watch for salary cap portfolio thinking, AI implementation, business-football integration
+
+Videos directly support WLO 1.1 (mapping revenue streams) and WLO 1.2 (understanding sport's unique model).
+
+**Total viewing time:** ~36 minutes
 ```
 
 ---
@@ -141,7 +148,7 @@ Successful organizations build revenue ecosystems, not portfolios.
 - NFL model (60% of all revenue shared)
 - EPL model (more entrepreneurial, less sharing)
 - Why revenue sharing maintains competitive balance
-- Prepares for Module 5 Canucks case
+- Prepares for The Canucks Challenge case study
 
 **FULL SCRIPT:**
 
@@ -194,34 +201,64 @@ affect strategic decisions.
 
 ---
 
-### Element 5: Video 3 - Executive Interview
-- **File:** `week1-video3-executive-interview.mp4`
-- **Duration:** 10-12 minutes
-- **VTT Transcript:** `week1-video3-executive-interview.vtt` (required for accessibility)
-- **Poster Image:** `week1-video3-poster.jpg` (thumbnail)
-- **Video Title:** "Executive Perspective: Media Rights and Revenue Strategy"
-- **Video Caption:** "Bell Media/TSN senior leader shares insights on media rights negotiations and revenue ecosystems"
+### Element 5: Video 3 - Kevin Abrams (NY Giants) Interview
 
-**Interview Structure:**
-- Opening (1 min): Executive introduction, role, and experience in sports media
-- Topic 1 (3-4 min): Media Rights - Real-world deal negotiations, what buyers look for, how rights are valued
-- Topic 2 (3-4 min): Revenue Sharing - How Canadian market differs from U.S., currency challenges facing Canadian teams
-- Topic 3 (2-3 min): Future Trends - Streaming vs. traditional broadcast, betting integration, what's changing in sports media
-- Closing (1 min): Advice for students analyzing sports business strategy
+**File:** `Interviews/Kevin Abrams, SVP Football Operations and Strategy New York Giants.mp4`
+**Duration:** ~32 minutes
+**Transcript:** `Interviews/Kevin Abrams, SVP Football Operatos and Strategy New York Giants_Captions_English (United States).txt`
+**Video Title:** "Kevin Abrams: Inside a $10 Billion Sports Business"
+**Video Caption:** "NY Giants SVP shares insights on salary cap management, AI implementation, and how football and business operations integrate"
 
-**Content Focus:**
-- Authentic practitioner perspective from someone who has negotiated major media deals
-- Real-world decision-making: trade-offs, challenges, strategic considerations
-- Canadian market context: currency issues, smaller market size, regulatory differences
-- Prepares students for Rogers case (Week 2) and Canucks case (Module 5)
+#### Interview Content - Key Topics Covered:
+
+**Career Journey (00:00-04:20)** - Path from Canadian sports-obsessed kid to NY Giants leadership, 6-7 internships before first full-time role, importance of geographic/financial flexibility, networking, and seizing opportunities
+
+**Day-to-Day Role (04:42-07:01)** - 7-day in-season cycles, week-to-week roster management, long-term off-season planning, project management ensuring tools improve year-over-year
+
+**AI & Data Transformation (07:31-09:40)** - Enterprise ChatGPT rollout, quality of prompts dictates output, HR applications for talent pipeline/recruitment, learning from Fortune 500 companies, rapid evolution (weekly improvements)
+
+**Salary Cap Management (10:36-13:41)** - Evolution from "checking account" to "portfolio" approach, consensus building across different timelines (coaches vs. GMs), opportunity cost of cap dollars, investment committee framework
+
+**Data Evolution in NFL (14:27-17:53)** - From basic combine metrics (1999) to Pro Football Focus, tracking data, computer vision, next-gen stats; early adopters vs. slow coaching adoption; data now integrated into every department (equipment room uses it for collectibles tracking)
+
+**Ownership & Business Integration (18:31-22:54)** - $10B "mom-and-pop shop," daily owner access, quick decision-making, football-business collaboration (content, sponsorships, player marketing); heavyweight sponsors (Moody's, MetLife) as advisory board for facility planning
+
+**NIL & Player Brands (22:54-26:54)** - Players arrive as brands from college NIL, Giants help connect players to corporate partners, reducing off-field distractions while increasing earning potential, win-win-win for players/sponsors/team
+
+**Career Advice (23:38-26:07)** - Know your geographic/financial flexibility, say yes to everything early, do research before meetings (don't say "I just want to work in sports"), be specific about goals while remaining open
+
+**10-Year Outlook (26:19-28:42)** - Possible continued role at Giants, intrigued by multi-club ownership models, private equity's sports role, finding competitive advantages through progressive thinking
+
+**NFL Future (28:42-31:16)** - Safer game (progress needed), 18-game season likely, tech-enabled officiating (tracking eliminates subjective calls), potential competition from international leagues/sports, international expansion critical
+
+#### Viewing Guide for Students:
+- **Salary Cap = Portfolio Management**: How the Giants evolved from "checking account" expense tracking to investment committee consensus building
+- **AI Implementation**: Enterprise ChatGPT deployment, prompt engineering importance, weekly evolution
+- **Business-Football Integration**: How sponsors (Moody's, MetLife) advise on facility planning, player marketing partnerships
+- **Revenue in Action**: See how the concepts from Videos 1-2 play out in a $10B organization
+- **Career Path**: 6-7 internships before first job—persistence and flexibility matter
+
+**Embed Code:**
+```html
+<iframe
+  src="[Uplimit video URL - Interviews/Kevin Abrams.mp4]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Kevin Abrams - NY Giants SVP on Sports Business Operations"
+  aria-label="Video interview with Kevin Abrams, NY Giants SVP Football Operations, discussing salary cap management, AI implementation, business-football integration, and career advice"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
 
 ---
 
 ### Element 6: Details Accordion Content
 ```
-Title: Video Transcripts (Text Versions)
+Title: Video Transcripts & Executive Bio (Text Versions)
 
-[Expand for text versions of video content]
+[Expand for text versions of video content and executive background]
 
 **Video 1: Five Revenue Streams in Professional Sports**
 [Full transcript of Video 1 - see FULL SCRIPT above]
@@ -229,47 +266,69 @@ Title: Video Transcripts (Text Versions)
 **Video 2: Revenue Sharing Models Across Leagues**
 [Full transcript of Video 2 - see FULL SCRIPT above]
 
-**Video 3: Executive Interview - Media Rights and Revenue Strategy**
-[Full transcript of executive interview to be added after recording]
+---
 
-These transcripts are provided for accessibility and for students who prefer
-reading to watching videos.
+**Video 3: Kevin Abrams Executive Interview**
+
+**Full Transcript:** See `Interviews/Kevin Abrams, SVP Football Operatos and Strategy New York Giants_Captions_English (United States).txt`
+
+**Executive Bio:**
+Kevin Abrams serves as SVP of Football Operations and Strategy for the New York Giants, a $10 billion organization and one of the NFL's most storied franchises. He oversees team building, salary cap management, data analytics implementation, and cross-functional strategy connecting football operations with business operations.
+
+His career path exemplifies persistence: 6-7 internships across sports organizations before landing his first full-time role with the Giants in 1999. Over 25+ years, he's evolved from entry-level to senior leadership, managing the salary cap through multiple eras (from "checking account" thinking to sophisticated portfolio management), pioneering data analytics adoption (from resistance to integration across all departments), and navigating transformational changes like enterprise AI implementation and the NIL era.
+
+**Career Highlights:**
+- 25+ years with NY Giants organization ($10B valuation)
+- Led enterprise AI rollout (ChatGPT for talent evaluation, HR, operations)
+- Transformed salary cap management from expense tracking to investment portfolio framework
+- Built data/analytics function from scratch to full organizational integration
+- Navigates NIL era: connecting player brands with corporate partners (Moody's, MetLife)
+
+**Industry Expertise:**
+- Salary cap optimization and consensus building across stakeholders
+- AI/ML in talent evaluation and player development
+- Data-driven decision making (Pro Football Focus, tracking data, computer vision)
+- Business-football integration (sponsorships, player marketing, facility planning)
+
+These transcripts are provided for accessibility and for students who prefer reading to watching videos.
 ```
 
 ---
 
 ### Element 7: AI Chat Widget Configuration
 - **Widget Name:** "Revenue Ecosystem Q&A"
-- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand revenue ecosystems in professional sport. Answer questions about the video content, revenue streams (media rights, ticketing, sponsorship, merchandising, betting), and revenue sharing models. Provide clear, business-focused explanations with real examples when possible."
-- **Welcome Message:** "Hi! I can help explain concepts from the revenue ecosystem videos. What questions do you have about how professional sport generates and distributes revenue?"
+- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand revenue ecosystems in professional sport based on the concept videos and Kevin Abrams' executive interview. Answer questions about the five revenue streams (media rights 40-60%, ticketing 20-30%, sponsorship 15-25%, merchandising 5-10%, betting 2-8%), revenue sharing models (NFL 60%, NHL 50%, EPL tiered), and Kevin Abrams' insights on the NY Giants' $10B operations. Kevin covered: salary cap as portfolio management (not checking account), AI/ChatGPT implementation, business-football integration, NIL athlete brands, and career advice (6-7 internships before first job). Provide clear, business-focused explanations with specific examples when possible."
+- **Welcome Message:** "Hi! I can help explain concepts from the revenue ecosystem videos and Kevin Abrams' interview. What questions do you have about revenue streams, revenue sharing, or how the NY Giants manage their $10 billion operation?"
 - **Show System Prompt to User:** No
 
 **Design Rationale:**
 - **Two 2-minute concept videos** provide foundational knowledge in digestible chunks (prevents cognitive overload)
-- **10-12 minute executive interview** delivers authentic practitioner perspective from Bell Media/TSN leader
-- **VTT transcripts** ensure accessakjdskjsibility and allow text-based review
+- **Kevin Abrams interview (~32 min)** delivers authentic practitioner perspective on how revenue concepts play out in a $10B organization
+- **VTT transcripts** ensure accessibility and allow text-based review
 - **▤ Details** provides text versions for students who prefer reading (UDL choice)
 - **AI Chat** offers on-demand support for confused students (UDL scaffolding)
 - Multiple means of representation: video (visual+audio), transcript (text), chat (interactive)
-- Executive perspective integrated in async format (recorded interview, not live 90-min session)
-- Total viewing time: 14-16 minutes (focused, manageable engagement)
+- Executive perspectives continue throughout course (Week 2: Al Dak/Rogers, Week 3: Andrew Sneyd/FanDuel, Week 4: Matt Rubinoff/Fairgrounds, Week 5: Golf Canada)
+- Total viewing time: ~36 minutes (4 min concept + 32 min executive)
 
 ---
 
-## Module 2 Complete - Transition to Module 3
+## Inside the Sports Business Complete - Transition to Five Revenue Streams
 
 **What You've Learned:**
-You now have expert perspective on professional sport's unique revenue model—both conceptual frameworks and authentic insights from a senior media executive. You understand how the five major revenue streams interconnect, why leagues implement revenue sharing, and the real-world challenges of negotiating and managing media rights deals.
+You now have a solid foundation in professional sport's unique revenue model—both conceptual frameworks and real-world application from Kevin Abrams at the NY Giants. You understand how the five major revenue streams interconnect, why leagues implement revenue sharing, and how a $10 billion organization actually manages these dynamics.
 
 **Key Takeaways:**
 - Revenue streams form an ecosystem, not just a portfolio
 - Media rights (40-60%) dominate modern sports economics
 - Revenue sharing models vary dramatically (NFL 60%, NHL 50%, EPL tiered)
 - Currency challenges complicate Canadian teams' economics
-- Real-world media deals involve complex trade-offs between exclusivity, reach, and profitability
+- **Salary cap = portfolio management** - Kevin Abrams showed how the Giants evolved from "checking account" thinking to investment committee consensus building
+- **AI is transforming operations** - Enterprise ChatGPT deployed across talent evaluation, HR, and operations
+- **Business-football integration** - Sponsors like Moody's and MetLife advise on facility planning; player marketing creates win-win-win partnerships
 
-**Up Next: Module 3 - Interactive Discovery**
-Now that you've seen the big picture, it's time to explore each revenue stream in depth. In Module 3, you'll interact with 8 hands-on widgets that let you discover revenue principles through manipulation and experimentation—not passive reading.
+**Up Next: Five Revenue Streams That Power Sports**
+Now that you've seen the big picture—and heard how it plays out in a $10B organization—it's time to explore each revenue stream in depth. In the next module, you'll interact with 8 hands-on widgets that let you discover revenue principles through manipulation and experimentation—not passive reading.
 
 Ready to dive in? Let's go!
 
@@ -277,7 +336,7 @@ Ready to dive in? Let's go!
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and executive insights on revenue ecosystems
+**You've completed:** Welcome, learning objectives, concept videos, and Kevin Abrams executive interview (~36 minutes of video content)
 **Coming next:** Interactive revenue streams exploration (8 hands-on widgets, ~35 minutes)
 
 **Take a moment to:**
@@ -285,7 +344,7 @@ Ready to dive in? Let's go!
 - Get water or a quick snack
 - Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
 
-**Progress:** You're 30% through Week 1 content! Next up is the most interactive module—you'll manipulate revenue models, test pricing strategies, and explore ecosystem dynamics through hands-on widgets.
+**Progress:** You're 30% through Week 1 content! You've learned the theory AND heard from Kevin Abrams on how the NY Giants actually manage their $10B operation. Next up is the most interactive module—you'll manipulate revenue models, test pricing strategies, and explore ecosystem dynamics through hands-on widgets.
 
 *This break is optional but recommended. Return when you're ready to dive into interactive discovery.*
 

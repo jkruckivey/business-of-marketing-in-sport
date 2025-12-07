@@ -17,11 +17,27 @@
 
 ---
 
-### 💼 Project Preview: Week 2 → Final Strategic Vision
+### 💼 CFL Expansion Project: Milestone 2 - Media & Content Strategy
 
-This week's media rights expertise is essential for your **Week 5 capstone**. Your Strategic Vision Memo must include a media strategy that justifies platform choices (linear vs. streaming), projects content value, and explains how your property will monetize fan engagement.
+This week you'll develop **Milestone 2** of your CFL Expansion Project: a comprehensive media and content strategy for your proposed franchise.
 
-By understanding how mega-deals like Rogers' $5.2B NHL rights are valued and why they succeed or struggle, you'll be equipped to recommend realistic media partnerships and revenue projections for your chosen sports property.
+**Your Challenge:** How will your new CFL franchise maximize media value? What's your content strategy for building fans before the first game?
+
+| Week | Milestone | Status |
+|------|-----------|--------|
+| Week 1 | Market Selection & Revenue | ✅ Complete |
+| **Week 2** | **Media & Content Strategy** | **This Week** |
+| Week 3 | Sponsorship & Betting | Next |
+| Week 4 | Brand Building & Launch | Upcoming |
+| Week 5 | Final Proposal | Upcoming |
+
+**This Week's Deliverable:** Media Strategy Memo (3-4 pages)
+- CFL media rights context and revenue sharing implications
+- Local media strategy (broadcast, digital, streaming)
+- Content & fan engagement plan for a new market
+- Apply Al Dak's insights from the Rogers executive session
+
+📋 **Full Project Details:** See [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
 
 ---
 
@@ -133,7 +149,7 @@ Create 3 tiles (1x3 or 2x2 grid with one empty):
 
 ---
 
-## Module 1 Complete - Transition to Module 2
+## Your Week 2 Journey Complete - Transition to Inside the Media Business
 
 **What You've Accomplished:**
 You now understand Week 2's focus: evaluating media and fan monetization strategies. You've seen the four learning objectives that will transform how you analyze billion-dollar media rights deals, and you've been introduced to the three strategic dimensions—rights valuation, linear vs. streaming economics, and fan engagement monetization. You understand that this week builds directly on Week 1's revenue ecosystem foundation, diving deep into the largest revenue stream in professional sports.
@@ -143,9 +159,9 @@ You now understand Week 2's focus: evaluating media and fan monetization strateg
 - Sports content is the **last "appointment viewing"** in the streaming era, commanding premium valuations
 - Week 2 explores **three strategic dimensions**: rights valuation frameworks, linear vs. DTC economics, and fan engagement monetization
 - The **Rogers/NHL $5.2B deal** serves as the case study for evaluating mega-deals
-- This week's learning **directly supports Anchor Project Milestone 1** (team formation and property selection)
+- This week's learning **directly supports CFL Expansion Project Milestone 2** (Media & Content Strategy)
 
-**Up Next: Module 2 - Executive Perspective**
+**Up Next: Inside the Media Business**
 Before diving into valuation frameworks and strategic models, you'll hear from a senior media executive who has negotiated major sports rights deals. They'll share the real-world challenges, trade-offs, and strategic decisions that bring media economics theory to life.
 
 Ready to learn from someone who's done it? Let's hear the executive perspective.

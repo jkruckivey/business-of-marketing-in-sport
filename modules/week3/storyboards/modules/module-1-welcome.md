@@ -18,11 +18,28 @@
 
 ---
 
-### 💼 Project Preview: Week 3 → Final Strategic Vision
+### 💼 CFL Expansion Project: Milestone 3 - Sponsorship & Betting Strategy
 
-This week's sponsorship and betting expertise is critical for your **Week 5 capstone**. Your Strategic Vision Memo must include partnership strategies with quantified ROI projections—not vague claims about "brand alignment."
+This week you'll develop **Milestone 3** of your CFL Expansion Project: a comprehensive sponsorship and betting strategy for your proposed franchise.
 
-By mastering sponsorship valuation frameworks and understanding betting's transformation of sports economics, you'll be equipped to design realistic partnership portfolios and activation strategies that demonstrate measurable business value for your chosen property.
+**Your Challenge:** How will your new CFL team attract sponsors? What betting partnerships can you secure?
+
+| Week | Milestone | Status |
+|------|-----------|--------|
+| Week 1 | Market Selection & Revenue | ✅ Complete |
+| Week 2 | Media & Content Strategy | ✅ Complete |
+| **Week 3** | **Sponsorship & Betting Strategy** | **This Week** |
+| Week 4 | Brand Building & Launch | Next |
+| Week 5 | Final Proposal | Upcoming |
+
+**This Week's Deliverable:** Sponsorship Acquisition Plan (3-4 pages)
+- Sponsorship inventory (naming rights, jersey, category partners)
+- Tiered sponsorship structure with pricing
+- Activation strategy for sponsors
+- Sports betting integration (provincial regulations, partnerships)
+- Apply Andrew Sneyd's insights from the FanDuel executive session
+
+📋 **Full Project Details:** See [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
 
 ---
 

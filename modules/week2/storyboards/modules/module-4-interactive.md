@@ -24,9 +24,9 @@
 
 ## Element 1: Connecting Introduction
 
-You've just explored media rights valuation, exclusivity dynamics, and platform economics through frameworks and knowledge checks (Module 3). Now you'll **apply these concepts** in a strategic simulation where you build a sports streaming platform from scratch.
+You've just explored media rights valuation, exclusivity dynamics, and platform economics through frameworks and knowledge checks in Media Rights Frameworks. Now you'll **apply these concepts** in a strategic simulation where you build a sports streaming platform from scratch.
 
-In this module, you'll step into the role of VP of Content Strategy for a Canadian streaming platform, making the same high-stakes decisions that Rogers, DAZN, and TSN faced when building their streaming services. This hands-on experience prepares you to critically analyze the Rogers $5.2B NHL deal in Module 5.
+In this module, you'll step into the role of VP of Content Strategy for a Canadian streaming platform, making the same high-stakes decisions that Rogers, DAZN, and TSN faced when building their streaming services. This hands-on experience prepares you to critically analyze the Rogers $5.2B NHL deal in The Rogers Challenge.
 
 **Estimated Time:** 30-45 minutes (can be completed in multiple sessions)
 
@@ -49,7 +49,7 @@ You are the VP of Content Strategy for a new Canadian streaming platform with on
 
 **Practice: WLO 2.2 (Compare linear broadcasting to streaming economics) + WLO 2.1 (Explore media rights valuation) + WLO 2.3 (Assess fan engagement monetization)**
 
-You've learned the frameworks for valuing media rights and comparing linear vs. streaming economics (Module 3). Now you'll **experience these trade-offs** firsthand by building and managing a Canadian sports streaming platform from scratch.
+You've learned the frameworks for valuing media rights and comparing linear vs. streaming economics in Media Rights Frameworks. Now you'll **experience these trade-offs** firsthand by building and managing a Canadian sports streaming platform from scratch.
 
 As VP of Content Strategy, you'll make the same high-stakes decisions that Rogers, DAZN, and TSN executives face: Which leagues should you bid on? Hockey is expensive but popular ($40M/year). Soccer has growth potential but lower current demand ($15M/year). Emerging sports are cheap but risky ($5M/year). Price too high ($29.99/month) and subscribers won't sign up. Price too low ($9.99/month) and you'll never cover content costs. Invest heavily in content to attract subscribers or grow slowly and miss the market window? Streaming platforms typically lose money for 3-5 years—can you achieve profitability?
 
@@ -59,10 +59,10 @@ As VP of Content Strategy, you'll make the same high-stakes decisions that Roger
 - How subscriber churn forces constant growth to maintain revenue (10% monthly cancellation is industry average)
 - The 3-5 year break-even timeline for streaming (very different from linear TV's immediate ROI)
 - Strategic trade-offs between exclusive rights (2-3× cost) versus non-exclusive broader portfolios
-- How dynamic pricing (recall Al Dak's "checking account to portfolio management" insight from Module 2) applies to streaming subscriptions
+- How dynamic pricing (recall Al Dak's "checking account to portfolio management" insight from Inside the Media Business) applies to streaming subscriptions
 
-**Connecting to Module 3's Fan Engagement Framework:**
-Remember the fan engagement value chain from Module 3 (passive viewer → engaged fan → super-fan)? In this simulation, you'll invest in engagement tactics that move subscribers up that chain—betting integration, fantasy features, social communities—to reduce churn and increase lifetime value.
+**Connecting to the Fan Engagement Framework:**
+Remember the fan engagement value chain from Media Rights Frameworks (passive viewer → engaged fan → super-fan)? In this simulation, you'll invest in engagement tactics that move subscribers up that chain—betting integration, fantasy features, social communities—to reduce churn and increase lifetime value.
 
 **Time commitment:** 30-45 minutes (can be completed in multiple sessions)
 **Learning outcomes practiced:** WLO 2.2 (Compare linear vs. streaming economics), WLO 2.1 (Media rights valuation with budget constraints), WLO 2.3 (Balance content investment with fan engagement)
@@ -98,7 +98,7 @@ Remember the fan engagement value chain from Module 3 (passive viewer → engage
 - DAZN Canada ($24.99/month, multi-sport)
 - TSN Direct ($19.99/month, TSN content)
 
-**Learning:** Balance content investment vs. subscriber growth, understand 3-5 year payback timelines, experience streaming economics firsthand. Prepares students to analyze Rogers' $5.2B NHL deal in Module 5.
+**Learning:** Balance content investment vs. subscriber growth, understand 3-5 year payback timelines, experience streaming economics firsthand. Prepares students to analyze Rogers' $5.2B NHL deal in The Rogers Challenge.
 
 **Uplimit Implementation:**
 
@@ -137,7 +137,7 @@ Strategic Reflection Questions:
 • How did you balance content costs vs. subscriber acquisition?
 • What surprised you about the economics of streaming vs. expectations?
 
-This simulation prepares you to analyze the Rogers/NHL deal in Module 5. Rogers
+This simulation prepares you to analyze the Rogers/NHL deal in The Rogers Challenge. Rogers
 essentially made these same strategic decisions—but with $5.2 billion at stake.
 Consider: Would you have made the Rogers deal using the insights from this simulation?
 ```
@@ -219,7 +219,7 @@ Share your Streaming Wars simulation results and strategy. Did you achieve profi
 - **Screenshot:** Upload an image of your final simulation dashboard (profitability timeline, subscriber count, etc.)
 - **Reflection:** 50 words minimum explaining your strategy and what you learned
 - **Peer Engagement:** React to at least 2 peers' strategies with questions or observations
-- **Deadline:** Before starting Module 5 case study
+- **Deadline:** Before starting The Rogers Challenge case study
 
 **Example Post:**
 "[Screenshot attached] I achieved profitability in Year 4 by [strategy]. My biggest lesson was [insight]. Seeing others' approaches, I'm curious: Did anyone succeed with [alternative strategy]?"
@@ -252,9 +252,9 @@ Comparing strategies reveals multiple paths to success and failure. You'll see h
 ---
 
 
-## Element 10: Module 4 Complete - Transition to Module 5
+## Streaming Wars Simulation Complete - Transition to The Rogers Challenge
 
-**🎯 Module 4 Complete!** You've simulated the strategic decisions that media companies face when building streaming platforms. You experienced firsthand the tension between content costs, pricing, and subscriber growth—the same calculus that shaped Rogers' $5.2 billion NHL deal.
+**Simulation Complete!** You've simulated the strategic decisions that media companies face when building streaming platforms. You experienced firsthand the tension between content costs, pricing, and subscriber growth—the same calculus that shaped Rogers' $5.2 billion NHL deal.
 
 **Key Insights from Your Simulation:**
 - Streaming profitability requires 3-5 year horizons (not immediate ROI like linear TV)
@@ -264,9 +264,9 @@ Comparing strategies reveals multiple paths to success and failure. You'll see h
 **Strategic Competency Achieved:**
 You can now evaluate real-world media rights deals through the lens of platform economics. When you read about Netflix paying $500M for WWE rights or Apple TV+ securing MLS for $250M/year, you understand the LTV calculations, subscriber acquisition costs, and profitability timelines driving those decisions.
 
-**Next: Module 5 - Rogers NHL Case Study (23-25 minutes)**
+**Up Next: The Rogers Challenge (23-25 minutes)**
 
-Now you'll analyze Rogers Communications' actual $5.2B, 12-year NHL deal—the largest media rights agreement in Canadian history. Armed with Module 4's simulation experience, you'll critically evaluate their decisions using 4 interactive data widgets:
+Now you'll analyze Rogers Communications' actual $5.2B, 12-year NHL deal—the largest media rights agreement in Canadian history. Armed with the simulation experience, you'll critically evaluate their decisions using 4 interactive data widgets:
 
 - Was Rogers' exclusive NHL bet brilliant long-term thinking or strategic overreach?
 - How did changing consumer behavior (cord-cutting) impact their projections?

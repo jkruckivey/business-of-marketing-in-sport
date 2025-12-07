@@ -1,7 +1,12 @@
-# MODULE 6: Assessment & Reflection
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+# MODULE 6: Assessment & Reflection + Project Milestone 3
+**Version:** 1.4.0 | **Last Updated:** 2025-12-05
 
-**Purpose:** Submit activation plan, peer review, reflect on Week 3 learning, preview Week 4 (measures all WLOs 3.1-3.4)
+**Purpose:** Submit activation plan, peer review, reflect on Week 3 learning, preview Week 4 (measures all WLOs 3.1-3.4) AND submit CFL Expansion Project Milestone 3
+
+### Version 1.4.0 Changes
+- **NEW:** Added CFL Expansion Project Milestone 3 submission (team-based)
+- Individual activation plan remains as primary assessment
+- Milestone 3 adds team-based sponsorship & betting strategy component
 
 **Uplimit Structure:** Sixth module in Unit 3
 
@@ -888,7 +893,87 @@ Your Week 5 marketing plan can include athlete endorsements as part of your spon
 
 ---
 
-**STORYBOARD STATUS:** Week 3 complete - All 6 modules fully specified with Final Project Threading
+---
+
+## Element 13: CFL Project Milestone 3 Instructions
+
+### ⓘ Infobox Content
+
+```markdown
+Title: 🏈 CFL Expansion Project - Milestone 3: Sponsorship & Betting Strategy
+
+**Team Deliverable:** Sponsorship Acquisition Plan (3-4 pages)
+**Weight:** 20% of total project grade (20 points)
+**Due:** End of Week 3
+
+Your team will submit ONE document that includes:
+
+**1. Sponsorship Inventory**
+- Naming rights (stadium, practice facility)
+- Jersey sponsors (front, sleeve, helmet)
+- Category partnerships (automotive, banking, telecom, beer)
+- Community partnerships (local businesses)
+
+**2. Tiered Sponsorship Structure**
+- Founding Partner tier (multi-year, $X million)
+- Premier Partner tier
+- Official Partner tier
+- Community Partner tier
+- Pricing and ROI projections for each tier
+
+**3. Activation Strategy**
+- How will sponsors activate beyond logo placement?
+- Fan experience integrations
+- Digital/social activations
+- Community program sponsorships
+
+**4. Sports Betting Integration**
+- Provincial betting regulations in your market
+- Betting operator partnership opportunities
+- In-stadium betting experience
+- Data licensing revenue
+- Responsible gambling considerations
+
+📋 **Full Project Details:** [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
+```
+
+---
+
+## Element 14: Milestone 3 File Upload
+
+**Uplimit Configuration:**
+- **Element Type:** File Upload
+- **Allowed Formats:** PDF, DOCX, Google Docs link
+- **Team Submission:** One submission per team
+
+**Submission Instructions:**
+```markdown
+## Milestone 3 Submission
+
+Upload your team's Sponsorship Acquisition Plan here.
+
+**Requirements:**
+- 3-4 pages (excluding title page and references)
+- Professional formatting
+- All team member names on title page
+- One submission per team
+
+**Filename Format:** `TeamName_M3_SponsorshipPlan.pdf`
+
+**Rubric Preview:**
+| Criterion | Points |
+|-----------|--------|
+| Sponsorship Inventory & Tiering | 5 |
+| Activation Strategy | 5 |
+| Betting Integration | 5 |
+| ROI Projections | 3 |
+| Professional Presentation | 2 |
+| **Total** | **20** |
+```
+
+---
+
+**STORYBOARD STATUS:** Week 3 complete - All 6 modules fully specified with CFL Project Threading
 **TOTAL LENGTH:** 2,150+ lines (comprehensive, production-ready)
 **INTERACTIVE WIDGETS:** 10 widgets specified (estimated 80-100 hours total development)
 **VIDEOS:** 7 videos (2 minutes each, 14 minutes total)

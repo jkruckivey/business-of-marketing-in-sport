@@ -435,8 +435,8 @@ You've been hooked by a real media rights disaster—the Rogers/NHL $5.2B deal t
 **Key Insight:**
 The fact that you struggled with valuation questions in the diagnostic is expected. Media rights economics is MORE COMPLEX than most revenue streams because you're predicting consumer behavior 10-15 years into the future (cord-cutting, streaming adoption, platform economics). Even experts with decades of data get it wrong. Week 2 teaches you the frameworks that improve your odds—but Module 0 taught you humility: always stress-test your assumptions and plan for scenarios where you're wrong.
 
-**Up Next: Module 1 - Learning Outcomes**
-Now that you've seen the problem and identified your knowledge gaps, Module 1 will show you exactly what you're going to learn this week—and how Week 2's frameworks synthesize with Week 1's revenue ecosystem thinking. You'll see the four key challenges you'll be able to solve by Friday, transforming you from someone who sees the Rogers deal as a mysterious failure into someone who can confidently evaluate billion-dollar media rights strategies.
+**Up Next: Your Week 2 Journey**
+Now that you've seen the problem and identified your knowledge gaps, the next module will show you exactly what you're going to learn this week—and how Week 2's frameworks synthesize with Week 1's revenue ecosystem thinking. You'll see the four key challenges you'll be able to solve by Friday, transforming you from someone who sees the Rogers deal as a mysterious failure into someone who can confidently evaluate billion-dollar media rights strategies.
 
 Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
 

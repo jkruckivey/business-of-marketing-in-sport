@@ -1,7 +1,12 @@
-# Your Executive Memo
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+# Your Executive Memo + Project Milestone 1
+**Version:** 1.4.0 | **Last Updated:** 2025-12-05
 
-**Purpose:** Assess student understanding of Week 1 content (measures WLO 1.1, 1.2, 1.3, 1.4)
+**Purpose:** Assess student understanding of Week 1 content (measures WLO 1.1, 1.2, 1.3, 1.4) AND submit CFL Expansion Project Milestone 1
+
+### Version 1.4.0 Changes
+- **NEW:** Added CFL Expansion Project Milestone 1 submission (team-based)
+- Individual executive memo remains as primary assessment
+- Milestone 1 adds team-based market analysis component
 
 **Uplimit Structure:** Sixth module in Unit 1
 
@@ -19,6 +24,8 @@
 | 5 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
 | 6 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
 | 7 | **AI Chat Widget** ○ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
+| 8 | **ⓘ Infobox** ⬤ Required | CFL Project Milestone 1 Instructions | Type directly | Team project component |
+| 9 | **File Upload** ⬤ Required | Milestone 1: Market Analysis Brief | Configure in Uplimit | Team submission (one per team) |
 
 ### Element 1: Connecting Introduction Text
 **Copy this markdown directly into Uplimit:**
@@ -950,7 +957,7 @@ Before submitting, check that you have:
 **Uplimit Configuration:**
 - ✅ Enable automated AI grading
 - ✅ Include evaluation levels
-- ✅ Apply points (30 points total)
+- ✅ Apply points (40 points total)
 
 ---
 
@@ -961,13 +968,13 @@ Before submitting, check that you have:
 **Description:**
 Accurately describes and analyzes at least 3 revenue streams with understanding of interdependencies.
 
-**Does not meet expectations:**
+**Does not meet expectations (0 pts):**
 The learner analyzes fewer than 3 streams, provides minimal analysis, or treats streams as independent silos without showing interdependencies.
 
-**Partially meets expectations:**
+**Partially meets expectations (5 pts):**
 The learner analyzes 3 streams but may lack depth or miss some key interdependencies and unique characteristics.
 
-**Fully meets expectations:**
+**Fully meets expectations (10 pts):**
 The learner accurately describes and analyzes 3+ revenue streams, demonstrating clear understanding of interdependencies and unique characteristics of sport's revenue model.
 
 ---
@@ -979,54 +986,54 @@ The learner accurately describes and analyzes 3+ revenue streams, demonstrating 
 **Description:**
 Identifies 2-3 specific, well-justified investment decision factors supported by evidence.
 
-**Does not meet expectations:**
+**Does not meet expectations (0 pts):**
 The learner provides generic or vague factors without supporting evidence from course content, or identifies fewer than 2 factors.
 
-**Partially meets expectations:**
+**Partially meets expectations (5 pts):**
 The learner identifies 2-3 reasonable factors with some justification but may lack specificity or full support from course evidence.
 
-**Fully meets expectations:**
+**Fully meets expectations (10 pts):**
 The learner identifies 2-3 specific, defensible factors that would influence investment decision, clearly supported with evidence from course content.
 
 ---
 
 **CRITERION 3: Application of Concepts**
 
-**Points:** 5
+**Points:** 10
 
 **Description:**
 Effectively applies concepts from executive session, readings, and case study.
 
-**Does not meet expectations:**
+**Does not meet expectations (0 pts):**
 The learner makes minimal or no reference to course content, relying primarily on general business knowledge.
 
-**Partially meets expectations:**
+**Partially meets expectations (5 pts):**
 The learner applies some course concepts but may miss opportunities to make deeper connections or reference specific case data.
 
-**Fully meets expectations:**
+**Fully meets expectations (10 pts):**
 The learner effectively applies concepts from executive session, readings, and Canucks case, making relevant and specific connections.
 
 ---
 
 **CRITERION 4: Business Communication**
 
-**Points:** 5
+**Points:** 10
 
 **Description:**
 Professional memo format with clear, concise writing appropriate for executive audience.
 
-**Does not meet expectations:**
+**Does not meet expectations (0 pts):**
 The learner does not use memo format, exceeds word limit significantly, or uses unclear/unprofessional communication style.
 
-**Partially meets expectations:**
+**Partially meets expectations (5 pts):**
 The learner uses memo format but may have minor formatting issues, slightly exceed word limit, or have some clarity issues.
 
-**Fully meets expectations:**
+**Fully meets expectations (10 pts):**
 The learner uses professional memo format, writes clearly and concisely with appropriate tone for executive audience, and stays within 500-word limit.
 
 ---
 
-**Total Points:** 30
+**Total Points:** 40
 
 ---
 
@@ -1038,51 +1045,108 @@ Title: Rubric Details & Example Excerpts
 
 ## Revenue Stream Analysis (10 points)
 
-**Excellent (9-10 pts):**
-"Demonstrates sophisticated understanding of at least 3 revenue streams, explaining
-not just what they are but how they interconnect. For example, shows how media
-rights value depends on competitive talent, which requires revenue sharing to
-maintain balance."
+Accurately describes and analyzes at least 3 revenue streams with understanding of interdependencies.
 
-**Example Excerpt:**
+**Does not meet expectations (0 pts):**
+The learner analyzes fewer than 3 streams, provides minimal analysis, or treats streams as independent silos without showing interdependencies.
+
+**Partially meets expectations (5 pts):**
+The learner analyzes 3 streams but may lack depth or miss some key interdependencies and unique characteristics.
+
+**Fully meets expectations (10 pts):**
+The learner accurately describes and analyzes 3+ revenue streams, demonstrating clear understanding of interdependencies and unique characteristics of sport's revenue model.
+
+**Example Excerpt (Fully Meets):**
 "Media rights generate 55% of NHL revenue, but this value depends entirely on
 competitive balance maintained through revenue sharing. Without sharing, wealthy
 teams would monopolize talent, creating predictable outcomes that decrease media
 value for all. The Canucks benefit from shared national media revenue ($XX million)
 but must compete for scarce local sponsorship dollars..."
 
-**Proficient (7-8 pts):**
-"Accurately describes 3+ revenue streams with some analysis of characteristics.
-May miss some interdependencies or deeper implications."
-
-**Developing (5-6 pts):**
-"Lists revenue streams but provides limited analysis. May treat streams as
-independent rather than interconnected."
-
-**Needs Improvement (0-4 pts):**
-"Describes fewer than 3 streams, or descriptions are inaccurate or incomplete."
-
 ---
 
 ## Investment Factors (10 points)
 
-**Excellent (9-10 pts):**
-"Identifies 2-3 specific, defensible investment factors supported by evidence.
-Factors show strategic thinking and business acumen."
+Identifies 2-3 specific, well-justified investment decision factors supported by evidence.
 
-**Example Excerpt:**
+**Does not meet expectations (0 pts):**
+The learner provides generic or vague factors without supporting evidence from course content, or identifies fewer than 2 factors.
+
+**Partially meets expectations (5 pts):**
+The learner identifies 2-3 reasonable factors with some justification but may lack specificity or full support from course evidence.
+
+**Fully meets expectations (10 pts):**
+The learner identifies 2-3 specific, defensible factors that would influence investment decision, clearly supported with evidence from course content.
+
+**Example Excerpt (Fully Meets):**
 "Two factors would drive my investment decision: (1) Revenue sharing stability—
 leagues with proven revenue sharing models (like the NFL) protect downside risk,
 and (2) Emerging stream potential—teams with rights to betting partnerships and
 digital content can capture high-growth revenue outside traditional sharing pools."
 
-**Proficient (7-8 pts):**
-"Identifies 2-3 reasonable factors with some justification. May lack specificity
-or deep supporting evidence."
+---
+
+## Application of Concepts (10 points)
+
+Effectively applies concepts from executive session, readings, and case study.
+
+**Does not meet expectations (0 pts):**
+The learner makes minimal or no reference to course content, relying primarily on general business knowledge.
+
+**Partially meets expectations (5 pts):**
+The learner applies some course concepts but may miss opportunities to make deeper connections or reference specific case data.
+
+**Fully meets expectations (10 pts):**
+The learner effectively applies concepts from executive session, readings, and Canucks case, making relevant and specific connections.
+
+**Example Excerpt (Fully Meets):**
+"As Kevin Abrams noted in the executive session, 'We're a $10 billion mom and pop
+shop'—this captures sport's unique tension between massive valuations and
+relationship-driven operations. The Canucks case reinforces this: despite a
+$1.15B franchise valuation, revenue depends heavily on local market dynamics
+and league-wide revenue sharing policies."
 
 ---
 
-[Continue with remaining rubric criteria...]
+## Business Communication (10 points)
+
+Professional memo format with clear, concise writing appropriate for executive audience.
+
+**Does not meet expectations (0 pts):**
+The learner does not use memo format, exceeds word limit significantly, or uses unclear/unprofessional communication style.
+
+**Partially meets expectations (5 pts):**
+The learner uses memo format but may have minor formatting issues, slightly exceed word limit, or have some clarity issues.
+
+**Fully meets expectations (10 pts):**
+The learner uses professional memo format, writes clearly and concisely with appropriate tone for executive audience, and stays within 500-word limit.
+
+**Example Format (Fully Meets):**
+TO: Brookfield Capital Investment Committee
+FROM: [Name], Sports Business Consultant
+DATE: [Current Date]
+RE: Professional Sports Team Investment Analysis
+
+[Body uses headers, bullet points, and bold text strategically for scannability]
+
+---
+
+## Total Points: 40
+
+| Criterion | Points | Weight |
+|-----------|--------|--------|
+| Revenue Stream Analysis | 10 | 25% |
+| Investment Factors | 10 | 25% |
+| Application of Concepts | 10 | 25% |
+| Business Communication | 10 | 25% |
+| **Total** | **40** | **100%** |
+
+**PAIRR Bonus Points (Optional):**
+- Peer review completed: +2 pts
+- AI feedback obtained: +1 pt
+- Comparative reflection: +1 pt
+- Post-revision reflection: +1 pt
+- **Maximum Total: 45 pts**
 ```
 
 ---
@@ -1109,10 +1173,84 @@ or deep supporting evidence."
 
 ---
 
+## Element 8: CFL Project Milestone 1 Instructions
+
+### ⓘ Infobox Content
+
+```markdown
+Title: 🏈 CFL Expansion Project - Milestone 1: Market Selection & Revenue Projections
+
+**Team Deliverable:** Market Analysis Brief (2-3 pages)
+**Weight:** 15% of total project grade (15 points)
+**Due:** End of Week 1
+
+Your team will submit ONE document that includes:
+
+**1. City Selection & Justification**
+- Which city are you proposing for CFL expansion?
+- Population, demographics, existing sports landscape
+- Corporate base for sponsorship potential
+- Stadium/venue options
+- Historical CFL presence or football culture
+
+**2. 5-Year Revenue Projections**
+Using this week's revenue stream framework, project Year 1-5 revenue:
+- Media rights allocation (CFL revenue sharing model)
+- Ticketing (capacity, pricing, attendance projections)
+- Sponsorship (local market potential)
+- Merchandising (new market dynamics)
+- Betting partnerships (provincial regulations)
+
+**3. Competitive Analysis**
+- What other sports/entertainment competes for the same dollars?
+- How does CFL positioning differ from NHL, NBA, MLS in this market?
+
+**Suggested Cities:** Halifax, Quebec City, Saskatoon, London ON, Moncton, or propose your own!
+
+📋 **Full Project Details:** [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
+```
+
+---
+
+## Element 9: Milestone 1 File Upload
+
+**Uplift Configuration:**
+- **Element Type:** File Upload
+- **Allowed Formats:** PDF, DOCX, Google Docs link
+- **Team Submission:** One submission per team (designate one team member to upload)
+
+**Submission Instructions:**
+```markdown
+## Milestone 1 Submission
+
+Upload your team's Market Analysis Brief here.
+
+**Requirements:**
+- 2-3 pages (excluding title page and references)
+- Professional formatting (headers, page numbers)
+- All team member names on title page
+- One submission per team
+
+**Filename Format:** `TeamName_M1_MarketAnalysis.pdf`
+
+**Rubric Preview:**
+| Criterion | Points |
+|-----------|--------|
+| City Selection Justification | 5 |
+| Revenue Projections (5 streams) | 5 |
+| Competitive Analysis | 3 |
+| Professional Presentation | 2 |
+| **Total** | **15** |
+```
+
+---
+
 ## Your Executive Memo Complete - Transition to Looking Ahead
 
 **What You've Accomplished:**
-You've completed Week 1's summative assessment—a comprehensive reflection memo demonstrating your mastery of all four learning outcomes. You've synthesized knowledge from across the week, applied the revenue ecosystem framework to a strategic investment scenario, and communicated your analysis with executive-level clarity. This 30-point assessment measures your ability to analyze revenue ecosystems holistically.
+You've completed Week 1's assessments:
+1. **Individual:** Executive reflection memo demonstrating your mastery of all four learning outcomes (30 points)
+2. **Team:** CFL Expansion Milestone 1—Market Analysis Brief for your proposed expansion city (15 points)
 
 **Key Takeaways:**
 - You can map all five major revenue streams and their relative importance
@@ -1120,9 +1258,10 @@ You've completed Week 1's summative assessment—a comprehensive reflection memo
 - You can evaluate growth potential and vulnerabilities across revenue sources
 - You can analyze revenue-sharing models and their strategic implications
 - You've practiced the PAIRR methodology (Peer and AI Review + Reflection)
+- Your team has selected an expansion city and projected 5-year revenue
 
 **Up Next: Looking Ahead to Week 2**
-Week 1 is nearly complete. In the final section, you'll consolidate your learning with key takeaways, see how this week connects to your course project, and get a preview of Week 2's focus on media rights and fan monetization strategies.
+Week 1 is nearly complete. In Week 2, you'll develop your **Media & Content Strategy** for your CFL expansion franchise. How will your new team maximize media value in the Canadian sports landscape?
 
 One more module to go—let's bring Week 1 home!
 

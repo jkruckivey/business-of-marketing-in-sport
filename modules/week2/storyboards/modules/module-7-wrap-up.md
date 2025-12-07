@@ -25,9 +25,9 @@
 
 ## Element 1: Connecting Introduction
 
-You've just completed the Rogers NHL Mini-Case Memo (Module 6), analyzing a billion-dollar media rights deal and practicing strategic recommendations. You used peer and AI feedback through the PAIRR methodology to refine your analysis—a process that mirrors real executive decision-making.
+You've just completed the Rogers NHL Mini-Case Memo, analyzing a billion-dollar media rights deal and practicing strategic recommendations. You used peer and AI feedback through the PAIRR methodology to refine your analysis—a process that mirrors real executive decision-making.
 
-Now it's time to wrap up Week 2 and apply your media strategy expertise to your Anchor Project. Module 7 consolidates your learning across all six modules, launches your team formation process, and previews Week 3's focus on sponsorship and betting. You'll also reflect on your Week 2 journey and select the sport property that will be the focus of your final capstone project.
+Now it's time to wrap up Week 2 and apply your media strategy expertise to your CFL Expansion Project. This module consolidates your learning across the entire week, launches your team formation process, and previews Week 3's focus on sponsorship and betting. You'll also reflect on your Week 2 journey and select the sport property that will be the focus of your final capstone project.
 
 ---
 
@@ -37,14 +37,14 @@ Now it's time to wrap up Week 2 and apply your media strategy expertise to your 
 
 Let's look back at what you've accomplished across all seven modules:
 
-- **Module 0 (Bridge):** Explored the Rogers NHL mega-deal announcement and set context
-- **Module 1 (Welcome):** Established 4 learning outcomes focused on media rights and fan monetization
-- **Module 2 (Executive):** Heard from a TSN/DAZN leader on rights valuation trade-offs and platform economics
-- **Module 3 (Framework):** Explored media valuation frameworks and platform economics through readings
-- **Module 4 (Interactive):** Simulated streaming wars and made strategic media strategy decisions
-- **Module 5 (Case Study):** Deep-dived into the Rogers $5.2B NHL deal with case analysis and retrospective
-- **Module 6 (Assessment):** Wrote a strategic mini-case memo with PAIRR feedback (peer + AI)
-- **Module 7 (Wrap-Up):** Now! Team formation, property selection, Week 3 preview
+- **The $5.2 Billion Question (Bridge):** Explored the Rogers NHL mega-deal announcement and set context
+- **Your Week 2 Journey:** Established 4 learning outcomes focused on media rights and fan monetization
+- **Inside the Media Business:** Heard from a TSN/DAZN leader on rights valuation trade-offs and platform economics
+- **Media Rights Frameworks:** Explored media valuation frameworks and platform economics through readings
+- **Streaming Wars Simulation:** Simulated streaming wars and made strategic media strategy decisions
+- **The Rogers Challenge:** Deep-dived into the Rogers $5.2B NHL deal with case analysis and retrospective
+- **Your Mini-Case Memo:** Wrote a strategic mini-case memo with PAIRR feedback (peer + AI)
+- **Looking Ahead (Now!):** Team formation, property selection, Week 3 preview
 
 ### Infobox Content:
 ```
@@ -495,11 +495,11 @@ Your Week 5 strategic vision must integrate Week 2's media frameworks comprehens
 
 ---
 
-## Element 10: Module 7 Complete - Transition to Week 3
+## Week 2 Complete - Looking Ahead to Week 3
 
 **What You've Accomplished:**
 
-You've completed Week 2! You've formed your Anchor Project team, selected your sport property, and synthesized Week 2's media strategy frameworks. You now understand how to value media rights, compare platform economics, and evaluate billion-dollar deals like Rogers/NHL.
+You've completed Week 2! You've formed your CFL Expansion Project team, selected your sport property, and synthesized Week 2's media strategy frameworks. You now understand how to value media rights, compare platform economics, and evaluate billion-dollar deals like Rogers/NHL.
 
 **Key Takeaways:**
 - Your team is formed with clear roles and communication norms (Team Charter)
@@ -508,9 +508,9 @@ You've completed Week 2! You've formed your Anchor Project team, selected your s
 - You've practiced PAIRR methodology (peer + AI feedback) that develops both strategic thinking and AI literacy
 - You understand the last "appointment viewing" phenomenon that makes sports content premium
 
-**Module 7 Reflection:**
-- You've reflected on your Week 2 learning journey across 7 modules
-- You've identified which concepts need reinforcement for your Anchor Project
+**Week 2 Reflection:**
+- You've reflected on your Week 2 learning journey across all modules
+- You've identified which concepts need reinforcement for your CFL Expansion Project
 - You've connected media strategy to professional growth and career application
 
 **Up Next: Week 3 - Sponsorship & Betting (The Growth Engines)**
@@ -524,7 +524,7 @@ Next week shifts to the fastest-growing revenue streams: corporate sponsorship a
 **Executive Leaders:** Andrew Sneyd (FanDuel) + Brand Sponsor Executive
 **Core Case:** FanDuel - Betting on Sports (HBS 520038)
 
-**Anchor Project Continues:** Week 3 Milestone is **Revenue Model & Sponsorship Strategy**. You'll use the Revenue Model Canvas Builder and Sponsorship ROI Calculator to develop your property's revenue strategy.
+**CFL Expansion Project Continues:** Week 3 Milestone is **Sponsorship & Betting**. You'll use the Revenue Model Canvas Builder and Sponsorship ROI Calculator to develop your franchise's sponsorship strategy.
 
 Get ready for another intensive week—and **congratulations on completing Week 2!** See you in Week 3.
 

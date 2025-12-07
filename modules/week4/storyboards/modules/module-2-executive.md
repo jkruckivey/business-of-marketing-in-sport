@@ -1,18 +1,22 @@
 # MODULE 2: Executive Perspectives (BOPPPS: Participatory - Expert Input)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.5.0 | **Last Updated:** 2025-12-05
 
-**Purpose:** Deliver expert practitioner perspectives on NFL operations, athlete brands, and emerging sports markets
+**Purpose:** Deliver expert practitioner perspective on emerging sports markets and athlete brand building
+
+### Version 1.5.0 Changes
+- **REDISTRIBUTED:** Kevin Abrams moved to Week 1 (fits "Where the Money Flows" theme)
+- **REDISTRIBUTED:** Golf Canada moved to Week 5 (fits "Legacy, Culture & Future" theme)
+- Week 4 now focuses exclusively on Matt Rubinoff / Fairgrounds (emerging sports)
 
 **Uplimit Structure:** Third module in Unit 4 (Week 4)
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 1 | Type directly | Sets context, connects narrative |
-| 2 | **ⓘ Infobox (Callout)** ⬤ Required | Context about videos + viewing instructions | Type directly | Sets viewing expectations |
-| 3 | **▶ Video 1** ⬤ Required | Kevin Abrams (NY Giants) Interview (~32 min) | Upload MP4 + transcript | NFL operations, AI, NIL, athlete brands |
-| 4 | **▶ Video 2** ⬤ Required | Matt Rubinoff (Fairgrounds) Interview (~38 min) | Upload MP4 + transcript | Emerging sports, brand building, scaling |
-| 5 | **▤ Details** ○ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
-| 6 | **◈ AI Chat Widget** ○ Optional | "Ask questions about professional sports operations and emerging sports" | Configure in Uplimit | Named: "NFL Operations & Emerging Sports Q&A" |
+| 2 | **ⓘ Infobox (Callout)** ⬤ Required | Context about video + viewing instructions | Type directly | Sets viewing expectations |
+| 3 | **▶ Video** ⬤ Required | Matt Rubinoff (Fairgrounds) Interview (~38 min) | Upload MP4 + transcript | Emerging sports, brand building, scaling |
+| 4 | **▤ Details** ○ Optional | Video transcript & executive bio | Type directly | Accordion for text version |
+| 5 | **◈ AI Chat Widget** ○ Optional | "Ask questions about emerging sports business" | Configure in Uplimit | Named: "Emerging Sports Q&A" |
 
 ---
 
@@ -25,12 +29,13 @@
 ```markdown
 You now understand the four learning outcomes that will transform how you analyze athlete brands and emerging sports opportunities. You know that elite athletes must balance five revenue streams, prioritize equity over fees, and build post-career assets during their playing years.
 
-Before exploring the frameworks in depth, you need context from practitioners who've actually operated in professional sports, managed team operations, and built emerging sports businesses. In this module, you'll hear from:
+Before exploring the frameworks in depth, you need context from a practitioner who's actually built an emerging sports business from scratch. In this module, you'll hear from:
 
-- **Kevin Abrams**, SVP Football Operations & Strategy, New York Giants - sharing insights on team building, data analytics in player evaluation, NIL opportunities, and how player brands intersect with team business operations
-- **Matt Rubinoff**, Co-Founder, Fairgrounds - discussing the explosive growth of emerging sports (pickleball/paddle), community-based brand building, scaling from concept to 11 locations, and the opportunity in underserved sports markets
+- **Matt Rubinoff**, Co-Founder, Fairgrounds - discussing the explosive growth of emerging sports (pickleball/paddle), community-based brand building, scaling from concept to 75,000 members across 11 locations, and the opportunity in underserved sports markets
 
-Their insights will ground the theory you're about to explore in Module 3 with real-world trade-offs, strategic decisions, and lessons learned from the field.
+His insights will ground the theory you're about to explore in Module 3 with real-world trade-offs, strategic decisions, and lessons learned from building a national sports brand.
+
+*Note: You heard from Kevin Abrams (NY Giants) in Week 1 on sports business operations, and you'll hear from Golf Canada's leadership in Week 5 on future trends and legacy sports.*
 ```
 
 ---
@@ -43,79 +48,26 @@ Their insights will ground the theory you're about to explore in Module 3 with r
 3. Copy markdown below:
 
 ```markdown
-Title: ◉ Executive Insights: NFL Operations & Emerging Sports
+Title: ◉ Executive Insights: Building an Emerging Sports Brand
 
-This module features two full executive interviews with practitioners from professional sports operations and emerging sports businesses:
-
-**Kevin Abrams (NY Giants, ~32 min)** - SVP Football Operations & Strategy shares how the Giants use AI for talent evaluation, manage the salary cap as a portfolio (not a checking account), balance coaching urgency vs. front office long-term thinking, and navigate the NIL era where players arrive as established brands.
+This module features a full executive interview with Matt Rubinoff, co-founder of Fairgrounds, who built a national pickleball/paddle brand from zero to 75,000 members in just 3 years.
 
 **Matt Rubinoff (Fairgrounds, ~38 min)** - Co-founder discusses building a national pickleball/paddle brand from zero to 75,000 members across 11 locations, the "white space" between public and private clubs, scaling through vacant retail spaces, intentional brand/marketing focus (vs. traditional club operators), and why emerging sports offer first-mover advantages.
 
 **Viewing Guide:**
-- Kevin: Watch for AI/data transformation, salary cap strategy, NIL athlete brand intersection, player investment opportunities
-- Matt: Watch for proof-of-concept methodology, brand differentiation strategy, geographic expansion logic, demographic targeting
+- Watch for proof-of-concept methodology (5 courts → 7K members in 3 months, zero marketing)
+- Note the brand differentiation strategy (marketing-first team vs. club operators)
+- Consider the geographic expansion logic (data-driven market selection)
+- Observe the emerging sport assessment framework (wide demographic + accessibility + high ceiling)
 
-Videos support WLO 4.1 (revenue streams), WLO 4.2 (owned vs endorsed assets), WLO 4.3 (emerging opportunities), and WLO 4.4 (brand building).
+This interview directly supports WLO 4.3 (emerging opportunities) and WLO 4.4 (brand building).
 
-Total viewing time: ~70 minutes
+**Total viewing time:** ~38 minutes
 ```
 
 ---
 
-## Element 3: Video 1 - Kevin Abrams (NY Giants) Interview
-
-**File:** `Interviews/Kevin Abrams, SVP Football Operators and Strategy New York Giants.mp4`
-**Duration:** ~32 minutes
-**Transcript:** `Interviews/Kevin Abrams, transcript.txt`
-**Video Title:** "Kevin Abrams: NFL Operations, AI in Scouting, and Athlete Brand Evolution"
-**Video Caption:** "NY Giants SVP shares insights on team building, data transformation, NIL era, and player investment opportunities"
-
-### Interview Content - Key Topics Covered:
-
-**Career Journey (00:00-04:20)** - Path from Canadian sports-obsessed kid to NY Giants leadership, 6-7 internships before first full-time role, importance of geographic/financial flexibility, networking, and seizing opportunities
-
-**Day-to-Day Role (04:42-07:01)** - 7-day in-season cycles, week-to-week roster management, long-term off-season planning, project management ensuring tools improve year-over-year
-
-**AI & Data Transformation (07:31-09:40)** - Enterprise ChatGPT rollout, quality of prompts dictates output, HR applications for talent pipeline/recruitment, learning from Fortune 500 companies, rapid evolution (weekly improvements)
-
-**Salary Cap Management (10:36-13:41)** - Evolution from "checking account" to "portfolio" approach, consensus building across different timelines (coaches vs. GMs), opportunity cost of cap dollars, investment committee framework
-
-**Data Evolution in NFL (14:27-17:53)** - From basic combine metrics (1999) to Pro Football Focus, tracking data, computer vision, next-gen stats; early adopters vs. slow coaching adoption; data now integrated into every department (equipment room uses it for collectibles tracking)
-
-**Ownership & Business Integration (18:31-22:54)** - $10B "mom-and-pop shop," daily owner access, quick decision-making, football-business collaboration (content, sponsorships, player marketing); heavyweight sponsors (Moody's, MetLife) as advisory board for facility planning
-
-**NIL & Player Brands (22:54-26:54)** - Players arrive as brands from college NIL, Giants help connect players to corporate partners, reducing off-field distractions while increasing earning potential, win-win-win for players/sponsors/team
-
-**Career Advice (23:38-26:07)** - Know your geographic/financial flexibility, say yes to everything early, do research before meetings (don't say "I just want to work in sports"), be specific about goals while remaining open
-
-**10-Year Outlook (26:19-28:42)** - Possible continued role at Giants, intrigued by multi-club ownership models, private equity's sports role, finding competitive advantages through progressive thinking
-
-**NFL Future (28:42-31:16)** - Safer game (progress needed), 18-game season likely, tech-enabled officiating (tracking eliminates subjective calls), potential competition from international leagues/sports, international expansion critical
-
-**Viewing Guide for Students:**
-- AI Implementation: How Giants balance innovation with quality control (enterprise ChatGPT, prompt engineering)
-- Portfolio Thinking: Salary cap as fund management, not expense tracking
-- NIL Intersection: Athletes as brands BEFORE arriving, team's role in monetization support
-- Data Ubiquity: From threat (Moneyball anxiety) to necessity across all functions
-- Consensus Building: Balancing coach urgency (7-day cycles) with GM long-term vision
-
-**Embed Code:**
-```html
-<iframe
-  src="[Uplimit video URL - Interviews/Kevin Abrams.mp4]"
-  width="100%"
-  height="700"
-  style="border: none; border-radius: 8px;"
-  title="Kevin Abrams - NY Giants SVP on NFL Operations and AI"
-  aria-label="Video interview with Kevin Abrams, NY Giants SVP Football Operations, discussing team building, AI in scouting, salary cap management, NIL athlete brands, and NFL future"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
----
-
-## Element 4: Video 2 - Matt Rubinoff (Fairgrounds) Interview
+## Element 3: Video - Matt Rubinoff (Fairgrounds) Interview
 
 **File:** `Interviews/Matt R, Fairgrounds.mp4`
 **Duration:** ~38 minutes
@@ -171,42 +123,16 @@ Total viewing time: ~70 minutes
 
 ---
 
-## Element 5: Details Accordion - Video Transcripts & Executive Bios
+## Element 4: Details Accordion - Video Transcript & Executive Bio
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
 2. Copy markdown below:
 
 ```markdown
-Title: Video Transcripts & Executive Bios (Text Versions)
+Title: Video Transcript & Executive Bio (Text Version)
 
-[Expand for text versions of video content and executive backgrounds]
-
-## Kevin Abrams - SVP Football Operations & Strategy, New York Giants
-
-**Full Transcript:** See `Interviews/Kevin Abrams, transcript.txt`
-
-**Bio:**
-Kevin Abrams serves as SVP of Football Operations and Strategy for the New York Giants, a $10 billion organization and one of the NFL's most storied franchises. He oversees team building, salary cap management, data analytics implementation, and cross-functional strategy connecting football operations with business operations.
-
-His career path exemplifies persistence: 6-7 internships across sports organizations before landing his first full-time role with the Giants in 1999. Over 25+ years, he's evolved from entry-level to senior leadership, managing the salary cap through multiple eras (from "checking account" thinking to sophisticated portfolio management), pioneering data analytics adoption (from resistance to integration across all departments), and navigating transformational changes like enterprise AI implementation and the NIL era where college athletes arrive as established brands.
-
-**Career Highlights:**
-- 25+ years with NY Giants organization ($10B valuation, most valuable NFL franchise)
-- Led enterprise AI rollout (ChatGPT for talent evaluation, HR, operations)
-- Transformed salary cap management from expense tracking to investment portfolio framework
-- Built data/analytics function from scratch to full organizational integration
-- Navigates NIL era: connecting player brands with Giants' corporate partners (Moody's, MetLife, etc.)
-- Serves on NFL committees including officiating technology advancement
-
-**Industry Expertise:**
-- AI/ML in talent evaluation and player development
-- Salary cap optimization and consensus building across stakeholders
-- Data-driven decision making (Pro Football Focus, tracking data, computer vision)
-- NIL athlete brand management and corporate partnership integration
-- Team building across compressed timelines (7-day in-season cycles vs. long-term planning)
-
----
+[Expand for text version of video content and executive background]
 
 ## Matt Rubinoff - Co-Founder, Fairgrounds
 
@@ -240,33 +166,31 @@ Prior to Fairgrounds, Matt founded Stackt Market (stylized as "Stacked"), an inn
 - National expansion: Ontario (GTA, Kingston, Ottawa), Alberta, British Columbia
 - Future considerations: Basketball courts, golf simulators, other racquet sports
 
-These transcripts are provided for accessibility and for students who prefer reading to watching videos.
+This transcript is provided for accessibility and for students who prefer reading to watching videos.
 ```
 
 ---
 
-## Element 6: AI Chat Widget Configuration
+## Element 5: AI Chat Widget Configuration
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element
 2. Configure with details below:
 
-**Widget Name:** "NFL Operations & Emerging Sports Q&A"
+**Widget Name:** "Emerging Sports Q&A"
 
 **System Prompt:**
 ```
-You are a knowledgeable assistant helping MBA students understand professional sports operations and emerging sports business based on Kevin Abrams' and Matt Rubinoff's interviews.
+You are a knowledgeable assistant helping MBA students understand emerging sports business based on Matt Rubinoff's interview about building Fairgrounds.
 
-Kevin Abrams (NY Giants SVP) covered: (1) AI/data transformation in NFL scouting and operations, (2) salary cap management evolution from "checking account" to "portfolio" thinking, (3) NIL era where athletes arrive as brands from college, (4) consensus building between coaches (short-term) and GMs (long-term), (5) business-football integration (player marketing with corporate sponsors), (6) NFL future (18-game season, tech officiating, international expansion).
+Matt Rubinoff (Fairgrounds co-founder) covered: (1) Proof of concept methodology (5 courts → 7K members in 3 months, zero marketing), (2) Brand differentiation strategy (marketing-first team vs. club operators), (3) White space identification (between unusable public and exclusive private), (4) Geographic expansion logic (data-driven market selection, regional managers), (5) Revenue model (court utilization, programming, partnerships), (6) Emerging sport assessment (wide demographic + accessibility + high ceiling = legs vs. flash-in-pan), (7) Pickleball vs. paddle (NASCAR vs. F1 analogy), (8) Partnership strategies (Tinder singles nights, Swedish paddle brand acquisition).
 
-Matt Rubinoff (Fairgrounds co-founder) covered: (1) Proof of concept methodology (5 courts → 7K members in 3 months, zero marketing), (2) Brand differentiation strategy (marketing-first team vs. club operators), (3) White space identification (between unusable public and exclusive private), (4) Geographic expansion logic (data-driven market selection, regional managers), (5) Revenue model (court utilization, programming, partnerships), (6) Emerging sport assessment (wide demographic + accessibility + high ceiling = legs vs. flash-in-pan).
-
-Provide clear, business-focused explanations with specific examples from the interviews when possible. Help students understand strategic frameworks, operational trade-offs, and lessons learned from practitioners.
+Provide clear, business-focused explanations with specific examples from the interview when possible. Help students understand strategic frameworks for evaluating and building emerging sports businesses.
 ```
 
 **Welcome Message:**
 ```
-Hi! I can help explain concepts from Kevin Abrams' (NY Giants) and Matt Rubinoff's (Fairgrounds) interviews. Kevin discussed NFL operations, AI, NIL athlete brands, and salary cap strategy. Matt discussed emerging sports growth, brand building, and scaling pickleball/paddle. What questions do you have?
+Hi! I can help explain concepts from Matt Rubinoff's interview about building Fairgrounds from zero to 75,000 members. Ask me about emerging sports assessment, proof-of-concept methodology, brand building, or scaling strategies. What questions do you have?
 ```
 
 **Show System Prompt to User:** No
@@ -276,26 +200,23 @@ Hi! I can help explain concepts from Kevin Abrams' (NY Giants) and Matt Rubinoff
 ## Module 2 Complete - Transition to Module 3
 
 **What You've Learned:**
-You've heard from two practitioners operating at opposite ends of the sports industry: Kevin Abrams managing the NY Giants' $10B operation in the world's most established sports league, and Matt Rubinoff building Fairgrounds from zero to 75K members in emerging sports. You understand:
-
-- How AI and data transformed from threat to necessity in professional sports
-- Why salary cap management requires portfolio thinking and consensus building
-- How NIL changed athlete brand dynamics (players arrive as brands from college)
-- The methodology for validating emerging sports opportunities through proof of concept
-- Why brand differentiation beats operational excellence in new markets
-- How to identify "white space" opportunities between market extremes
+You've heard from Matt Rubinoff, who built Fairgrounds from zero to 75,000 members in just 3 years. His practical experience in emerging sports demonstrates how to identify market opportunities, validate demand through proof of concept, and scale through brand differentiation rather than operational expertise.
 
 **Key Takeaways:**
-- **AI deployment requires quality prompts, not just technology** - Giants learned enterprise ChatGPT outputs depend on input precision
-- **Salary cap = portfolio management** - Evolution from "checking account" expense tracking to investment committee consensus building with opportunity costs
-- **NIL era = athlete brand facilitation** - Teams connect established player brands with corporate partners, reducing distractions while increasing earnings
 - **Proof of concept before scale** - Fairgrounds: 5 courts → 7K members in 3 months with $0 marketing = validated demand
 - **Marketing-first beats operational expertise** - Fairgrounds hired marketers who love sports, not club operators stuck in "archaic" models
 - **White space identification** - Emerging opportunities exist between unusable public options and exclusive private clubs
 - **Emerging sport viability** - Wide demographic + accessibility + high skill ceiling = staying power (vs. flash-in-pan)
+- **Data-driven expansion** - Geographic growth based on demographics and comparables, not gut instinct
+- **Brand protection matters** - Partnerships (Tinder, Swedish paddle brand) must align with brand identity
+
+**Building on Earlier Content:**
+- **Week 1 (Kevin Abrams):** You learned how established sports teams operate as $10B businesses
+- **Week 2 (Al Dak):** You explored media rights and content strategy in the Canadian market
+- **Week 3 (Andrew Sneyd):** You saw how betting marketing builds brands through innovation
 
 **Up Next: Module 3 - Interactive Discovery**
-Now that you've heard from practitioners operating in established (NFL) and emerging (pickleball) sports, it's time to apply these frameworks hands-on. In Module 3, you'll use interactive widgets to:
+Now that you've heard how to build an emerging sports business from scratch, it's time to apply these frameworks hands-on. In Module 3, you'll use interactive widgets to:
 - Build athlete brand portfolios using the **Athlete Brand Calculator**
 - Evaluate emerging sports investments using the **Emerging Sports Investment Tool**
 - Model team-athlete partnership economics
@@ -306,7 +227,7 @@ Ready to experiment with these frameworks? Let's go!
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and executive insights from NFL operations and emerging sports (~70 minutes of video content)
+**You've completed:** Welcome, learning objectives, and Matt Rubinoff's executive interview on emerging sports (~38 minutes of video content)
 **Coming next:** Interactive athlete brand building and emerging sports evaluation tools (~35 minutes)
 
 **Take a moment to:**
@@ -314,7 +235,7 @@ Ready to experiment with these frameworks? Let's go!
 - Get water or a quick snack
 - Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
 
-**Progress:** You're 40% through Week 4 content! You've heard from Kevin Abrams (Giants) on NFL operations/AI/NIL and Matt Rubinoff (Fairgrounds) on emerging sports scaling—now you'll apply their frameworks through hands-on experimentation.
+**Progress:** You're 40% through Week 4 content! You've heard how Matt Rubinoff built Fairgrounds from zero to 75K members—now you'll apply his frameworks through hands-on experimentation with interactive widgets.
 
 *This break is optional but recommended. Return when you're ready to build athlete brand portfolios and evaluate emerging sports investments.*
 
@@ -323,25 +244,29 @@ Ready to experiment with these frameworks? Let's go!
 ## MODULE 2 Complete - Summary
 
 ### Elements Created:
-1. ✅ Connecting Introduction Text (Kevin Abrams + Matt Rubinoff framing)
-2. ✅ Infobox - Video Overview (~70 min total: Kevin 32 min + Matt 38 min)
-3. ✅ Video 1 - Kevin Abrams Interview (NFL operations, AI, NIL, salary cap, data transformation)
-4. ✅ Video 2 - Matt Rubinoff Interview (emerging sports, brand building, scaling pickleball/paddle)
-5. ✅ Details Accordion - Video Transcripts & Executive Bios
-6. ✅ AI Chat Widget - NFL Operations & Emerging Sports Q&A
+1. ✅ Connecting Introduction Text (Matt Rubinoff framing)
+2. ✅ Infobox - Video Overview (~38 min)
+3. ✅ Video - Matt Rubinoff Interview (emerging sports, brand building, scaling pickleball/paddle)
+4. ✅ Details Accordion - Video Transcript & Executive Bio
+5. ✅ AI Chat Widget - Emerging Sports Q&A
 
-### Executive Perspectives:
-- **Kevin Abrams (Giants):** AI implementation, salary cap portfolio management, NIL athlete brands, consensus building, data transformation, NFL future
-- **Matt Rubinoff (Fairgrounds):** Proof of concept methodology, brand differentiation, white space opportunities, geographic expansion, emerging sport assessment
+### Executive Perspective:
+- **Matt Rubinoff (Fairgrounds):** Proof of concept methodology, brand differentiation, white space opportunities, geographic expansion, emerging sport assessment, pickleball vs paddle comparison, partnership strategies
 
 ### Pedagogical Design:
-- Multiple means of representation: video (visual+audio), transcripts (text), AI chat (interactive)
-- Authentic practitioner perspectives from established (NFL) and emerging (pickleball) sports
-- Real-world examples (Giants' $10B operations, Fairgrounds' 0→75K member growth)
+- Multiple means of representation: video (visual+audio), transcript (text), AI chat (interactive)
+- Authentic practitioner perspective from emerging sports entrepreneur
+- Real-world example: Fairgrounds' 0→75K member growth in 3 years
 - Prepares for hands-on application in Module 3's interactive widgets
 
+### Course Executive Distribution:
+- **Week 1:** Kevin Abrams (NY Giants) - sports business operations
+- **Week 2:** Al Dak (Rogers) - media rights and content
+- **Week 3:** Andrew Sneyd (FanDuel) - betting marketing
+- **Week 4:** Matt Rubinoff (Fairgrounds) - emerging sports ← YOU ARE HERE
+- **Week 5:** Golf Canada (Niki DaSilva & Tim McLaughlin) - future trends
+
 ### Total Time Estimate:
-- Video 1 (Kevin): 32 minutes
-- Video 2 (Matt): 38 minutes
-- Reading (intro + infobox): 3 minutes
-- **Total Module 2 time: ~73 minutes**
+- Video (Matt): 38 minutes
+- Reading (intro + infobox): 2 minutes
+- **Total Module 2 time: ~40 minutes**

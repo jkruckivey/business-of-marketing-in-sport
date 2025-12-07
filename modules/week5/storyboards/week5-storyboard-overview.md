@@ -253,9 +253,47 @@ Students recommend 1 of 3 paths:
 
 ---
 
-**Last Updated**: October 30, 2025
-**Version**: 1.0 (Initial comprehensive build specification)
+**Last Updated**: 2025-12-05
+**Version**: 1.1
 **Status**: Ready for implementation
+
+### Version 1.1 Changes
+- Added video script references section
+- Updated executive guest information (Golf Canada confirmed)
+- Added marketing highlights from interview
+
+---
+
+## Video Script References
+
+**Instructional Videos (2-min versions):**
+- File: `modules/week5/video-scripts/week5-instructional-videos-2min.md`
+- Video 1: "Heritage Properties as Business Assets" (2 min) - Module 3
+- Video 2: "The Legacy vs Innovation Trade-Off" (2 min) - Module 3
+- Video 3: "Future Trends in Sports Business" (2 min) - Module 3
+
+**Executive Interview:**
+- Niki DaSilva (CPO) & Tim McLaughlin (CMO), Golf Canada - ~45 min - Module 2
+- File: `Interviews/Golf Canada Interview.mp4`
+- Transcript: Available
+
+**Key Marketing Highlights from Golf Canada Interview:**
+
+> "Golf is potentially in the **best position it has been in its history**"
+
+> "We call it the **sport of invitation**" — on growing participation
+
+> "Golf is now a **12-month-a-year sport** in Canada" — on simulator golf
+
+> "AI will be a **proactive partner in coaching**"
+
+> "**Don't wait to be asked** — invite yourself to the table, demonstrate your value" — Niki DaSilva
+
+**Key Stats:**
+- **400,000 members** / **535,000 app users** (most-used golf app in Canada)
+- **6 million people** playing golf in Canada (#1 participation sport)
+- **Over 50% increase** in score posting since 2019
+- **Brooke Henderson**: 14 professional wins, 2 majors
 
 ---
 

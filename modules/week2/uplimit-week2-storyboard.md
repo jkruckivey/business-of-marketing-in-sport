@@ -175,7 +175,7 @@ Ready to learn from someone who's done it? Let's hear the executive perspective.
 ---
 
 ## Inside Media Rights
-**Purpose:** Deliver practitioner insights on media strategy from TSN/DAZN executive (supports WLO 2.1, 2.2, 2.3)
+**Purpose:** Deliver practitioner insights on media strategy from Al Dak, former SVP Revenue at Rogers Sports & Media (supports WLO 2.1, 2.2, 2.3)
 
 **Uplimit Structure:** Second module in Unit 2
 
@@ -190,57 +190,75 @@ Ready to learn from someone who's done it? Let's hear the executive perspective.
 
 ### Infobox Content:
 ```
-Title: Executive Session with [Name], [Title - TSN/DAZN Canada]
+Title: Executive Session with Al Dak, Former SVP Revenue - Rogers Sports & Media
 
-[Name] leads [media rights strategy/content acquisition] at [TSN/DAZN], with 15+ years
-negotiating sports rights deals including [specific properties]. They've overseen
-[dollar amount] in rights acquisitions and platform strategy decisions.
+Al Dak led revenue operations at Rogers Sports & Media, overseeing the sales strategy
+for hockey (including the $5.2B NHL rights deal), Blue Jays baseball, and the broader
+Sportsnet portfolio. With 25+ years in Canadian sports media, he's negotiated with
+major advertisers, managed dynamic pricing strategies, and navigated the transition
+from linear TV to streaming.
 
 Viewing Guide:
-• Watch for: How broadcasters assess risk vs. reward in mega-deals
-• Note: Differences between linear TV and streaming economics
-• Consider: Why sports content remains "must-have" despite high costs
+• Watch for: How Rogers monetized the NHL rights deal (pricing strategy, advertiser relationships)
+• Note: The evolution from "checking account" to dynamic, game-by-game pricing
+• Consider: Why Canadian market dynamics (currency, cable penetration) differ from the U.S.
 
-This 2-minute video provides executive insights on media rights strategy and
-platform economics in the evolving sports media landscape.
+This ~45-minute interview provides deep executive insights on media rights monetization,
+advertiser strategy, and the future of sports media in Canada.
 
 Supports WLO 2.1, 2.2, 2.3, and 2.4.
 ```
 
 ### Video Specifications:
-- **File:** `week2-executive-session.mp4`
-- **Duration:** 2 minutes
-- **VTT Transcript:** `week2-executive-transcript.vtt` (required for accessibility)
+- **File:** `Interviews/Al Dak, Transcript.txt` (transcript available)
+- **Duration:** ~45 minutes
+- **VTT Transcript:** Generate from `Interviews/Al Dak, Transcript.txt`
 - **Poster Image:** `week2-executive-poster.jpg` (thumbnail)
-- **Video Title:** "Executive Session: Media Rights & Fan Monetization Strategy"
-- **Video Caption:** "TSN/DAZN executive on valuing sports content and platform economics"
+- **Video Title:** "Executive Session: Al Dak on Rogers Sports Media, NHL Rights & Canadian Market Dynamics"
+- **Video Caption:** "Former Rogers Sports & Media SVP shares insights on the $5.2B NHL deal, dynamic pricing, and sports media strategy"
 
-**Video Content:**
-- Concise executive insights on media rights valuation, platform economics, and the evolving sports media landscape
+**Video Content - Key Topics Covered:**
+- Career journey from media planning to Rogers Sports & Media SVP Revenue
+- Day-to-day of managing hockey season revenue (strategy, long-term deals, key accounts)
+- Dynamic pricing evolution (from fixed to airline-style game-by-game pricing)
+- Canadian market unique challenges (playoff revenue 10x with Canadian teams, currency issues)
+- Rogers $5.2B NHL strategy: protecting cable ecosystem, leveraging for advertiser commitments, team ownership vision
+- Data and analytics driving fan engagement and brand health studies
+- Streaming vs. linear TV future (cable won't hit zero, bundle evolution coming)
+- Career advice: don't be afraid to ask, creativity, team mindset, non-linear paths
 
 ### Details Accordion Content:
 ```
-Title: About the Executive
+Title: About Al Dak
 
-[Executive Bio - 2-3 paragraphs about background, current role, expertise]
+Al Dak served as SVP Revenue at Rogers Sports & Media, leading revenue operations for
+Canada's largest sports media portfolio including Sportsnet, the Toronto Blue Jays,
+and the historic $5.2B NHL rights deal.
 
-Career Highlights:
-• Negotiated [specific deal] - [dollar amount] over [years]
-• Led [platform/division] launch in [year]
-• [Other notable achievement]
+Career Journey:
+• Started in media planning (Pepsi, Chrysler, BC Hydro at CanWest Global)
+• Moved to sales at CanWest Global under David Mintz
+• Headed sales organization at CBC (Hockey Night in Canada, Sochi Olympics, World Cup)
+• Joined Rogers Sports & Media after NHL rights acquisition (2014)
+• 25+ years in Canadian sports media
 
-Industry Recognition:
-• [Award/recognition 1]
-• [Speaking engagement/publication]
+Key Expertise:
+• Media rights monetization and advertiser strategy
+• Dynamic pricing evolution (from fixed to game-by-game pricing)
+• Canadian market dynamics (currency challenges, cable penetration vs. U.S.)
+• Rogers' NHL strategy: cable protection, advertiser leverage, MLSE ownership vision
+• Data-driven fan engagement and brand health research
 
-Current Portfolio:
-[List of properties/leagues this executive's organization holds rights to]
+Notable Context:
+• Was on CBC side when Rogers acquired NHL rights; recruited by Keith Pelley
+• Witnessed Sportsnet transform from #3 regional network (~$97M revenue) to #1 Canadian sports brand (6x revenue growth)
+• Deep expertise in Canadian playoff economics (10x revenue with Canadian teams in playoffs)
 ```
 
 ### AI Chat Widget Configuration:
 - **Widget Name:** "Media Strategy Q&A"
-- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand media rights economics and sports content strategy. Answer questions about the executive session content, including rights valuation, linear vs. streaming models, fan engagement monetization, and the Rogers/NHL deal. Provide clear, business-focused explanations with real-world examples. Reference concepts from the session when relevant."
-- **Welcome Message:** "Hi! I can help clarify concepts from the executive session on media strategy. What questions do you have about rights valuation, platform economics, or the Rogers deal?"
+- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand media rights economics and sports content strategy based on Al Dak's interview. Al Dak was SVP Revenue at Rogers Sports & Media, managing the $5.2B NHL deal monetization. Key topics: (1) Rogers' multi-layered NHL strategy (cable protection, advertiser leverage, MLSE ownership), (2) Dynamic pricing evolution (fixed → airline-style game-by-game), (3) Canadian market uniqueness (70%+ cable penetration, 10x playoff revenue with Canadian teams, currency challenges), (4) Data-driven fan engagement (brand health studies for 90% of sponsors), (5) Streaming vs. linear future (cable as an app, bundle evolution). Provide clear, business-focused explanations with real-world examples from the interview."
+- **Welcome Message:** "Hi! I can help clarify concepts from Al Dak's interview on media strategy at Rogers Sports & Media. What questions do you have about the NHL rights deal, dynamic pricing, Canadian market dynamics, or data-driven fan engagement?"
 - **Show System Prompt to User:** No
 
 **Design Rationale:**
@@ -267,7 +285,7 @@ Inside Media Rights delivered practitioner insights from executives who negotiat
 
 When you design your 5-year media strategy in Week 5, reference the executive frameworks from Inside Media Rights:
 
-- **Platform Selection Rationale:** Justify your media partner choice using executive decision criteria. Example: "Following TSN's model of prioritizing guaranteed fees over revenue share (Week 2 executive interview), our property will pursue traditional broadcast deals to minimize downside risk during our growth phase."
+- **Platform Selection Rationale:** Justify your media partner choice using executive decision criteria. Example: "Following Rogers' strategy of leveraging anchor sports content to extract larger media commitments across the portfolio (Week 2 executive interview with Al Dak), our property will pursue bundled deals that maximize total advertiser value."
 - **Stakeholder Management:** Your vision must satisfy multiple stakeholders. Executives taught you that boards want revenue stability, fans want accessibility, and partners want exclusivity. Show how your media strategy balances these tensions.
 - **Realistic Constraints:** Acknowledge market realities. If you're a small-market property, you won't command Rogers' $5.2B valuations. The executive insights from Inside Media Rights help you set realistic expectations.
 
@@ -278,13 +296,13 @@ When you design your 5-year media strategy in Week 5, reference the executive fr
 ## Inside Media Rights Complete - Transition to The Billion-Dollar Core Product
 
 **What You've Accomplished:**
-You've heard directly from a senior media executive who has negotiated billion-dollar sports rights deals. You now understand how practitioners value sports content, assess platform trade-offs between linear broadcasting and streaming, and navigate the strategic decisions that shape media partnerships. You've gained authentic insights into the challenges facing both rights holders (leagues/teams) and rights buyers (broadcasters/streamers).
+You've heard directly from Al Dak, former SVP Revenue at Rogers Sports & Media, who managed the monetization strategy for the $5.2B NHL rights deal. You now understand how Rogers transformed Sportsnet from #3 regional network to Canada's #1 sports brand, how dynamic pricing evolved from fixed rates to airline-style game-by-game optimization, and why Canadian market dynamics (currency, cable penetration, playoff economics) create unique challenges and opportunities.
 
 **Key Takeaways:**
-- **Real-world media deals** involve complex trade-offs between reach, exclusivity, and profitability
-- **Linear vs. streaming economics** differ fundamentally: advertising-driven mass audience vs. subscription-driven targeted engagement
-- **Sports content commands premium valuations** because it's the last "appointment viewing" that can't be delayed
-- Executive perspective reveals that **theoretical frameworks meet messy reality**—regulatory constraints, competitive dynamics, and stakeholder pressures shape every deal
+- **Rogers' NHL strategy was multi-layered:** protect cable ecosystem, leverage hockey/Jays to extract larger advertiser commitments, build toward team ownership (MLSE)
+- **Canadian market is unique:** 70%+ cable penetration (vs. <50% U.S.), playoff economics vary 10x based on Canadian team participation, currency challenges for revenue
+- **Dynamic pricing evolved dramatically:** from fixed seasonal rates to airline-style game-by-game optimization based on supply/demand
+- **Data drives modern sports media:** brand health studies for 90% of sponsors, targeted creative delivery, real-time engagement tracking
 - The insights you've gained will directly inform your analysis of the **Rogers/NHL $5.2B deal** coming in The Rogers Gamble
 
 **Up Next: The Billion-Dollar Core Product**
@@ -2932,6 +2950,45 @@ Your Week 5 strategic vision must integrate Week 2's media frameworks comprehens
 - Week 5 = Synthesis into 5-year vision
 
 **Real-World Application:** Media strategy is the foundation of modern sports economics. Your Week 5 capstone must demonstrate mastery of this domain—Week 2 provided the technical toolkit.
+
+---
+
+## Video Script References
+
+**Instructional Videos (2-min versions):**
+- File: `modules/week2/video-scripts/week2-instructional-videos-2min.md`
+- Video 1: "How to Value Sports Media Rights" (2 min) - Module 3
+- Video 2: "Linear TV vs. Streaming Economics" (2 min) - Module 3
+
+**Full Instructional Videos:**
+- File: `modules/week2/video-scripts/week2-instructional-videos.md`
+- "How to Value Sports Media Rights" (12 min)
+- "Linear TV vs. Streaming - Two Business Models" (8 min)
+
+**Rogers Retrospective:**
+- File: `modules/week2/video-scripts/week2-rogers-retrospective-script.md`
+- "Rogers NHL Deal: 10 Years Later" (14 min) - Module 5
+
+**Executive Interview:**
+- Al Dak (SVP Revenue, Rogers Sports Media) - ~45 min - Module 2
+- File: `Interviews/Al Dak SVP, Revenue, Rogers Sports and Media.mp4`
+- Transcript: `Interviews/Al Dak, Transcript.txt`
+
+**Key Marketing Highlights from Al Dak Interview:**
+
+> "Sports **swims upstream** against fragmentation"
+
+> "There isn't a **bigger owner of sports rights and teams in North America** now than Rogers"
+
+> "We manage inventory **like airlines do today**" — on dynamic pricing
+
+> "Sports is the **true last mass medium**"
+
+**Key Stats:**
+- **$5.2 billion** NHL rights acquisition
+- Sportsnet revenue grew **6x** (from high $90M to $600M+)
+- Cable penetration still **low 70%** in Canada (vs. below 50% in US)
+- Brand health studies for **90% of sponsors** annually
 
 ---
 

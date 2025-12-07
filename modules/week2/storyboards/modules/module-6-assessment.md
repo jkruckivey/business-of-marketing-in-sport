@@ -1,7 +1,12 @@
-## MODULE 6: Assessment - Mini-Case Memo
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+## MODULE 6: Assessment - Mini-Case Memo + Project Milestone 2
+**Version:** 1.4.0 | **Last Updated:** 2025-12-05
 
-**Purpose:** Assess student understanding of Week 2 content (measures WLO 2.1, 2.2, 2.3, 2.4)
+**Purpose:** Assess student understanding of Week 2 content (measures WLO 2.1, 2.2, 2.3, 2.4) AND submit CFL Expansion Project Milestone 2
+
+### Version 1.4.0 Changes
+- **NEW:** Added CFL Expansion Project Milestone 2 submission (team-based)
+- Individual Rogers memo remains as primary assessment
+- Milestone 2 adds team-based media strategy component
 
 ⭐ **SCAFFOLDED ASSESSMENT**: This module breaks memo writing into 3 micro-steps with AI feedback BEFORE final submission. Reduces writing anxiety and improves quality through iterative improvement.
 
@@ -828,14 +833,92 @@ You've completed Week 2's summative assessment! You've written an executive-leve
 **Assessment Context:**
 This Mini-Case Memo contributes to your Week 2 grade and prepares you for the Week 5 capstone. The memo structure, analytical rigor, and PAIRR process you practiced here will scale to your final strategic vision project.
 
-**Up Next: Module 7 - Wrap-Up & Anchor Project Launch**
+---
 
-Now that you've demonstrated mastery of Week 2 content, it's time to wrap up the week, reflect on your learning journey, and launch your Anchor Project. In Module 7, you'll:
-- Form your team (5-6 students) and establish working agreements
-- Select your sport property for the semester-long marketing plan
-- Preview Week 3's focus on sponsorship and betting
+## Element 22: CFL Project Milestone 2 Instructions
 
-Get ready to apply everything you've learned to a real sport property! See you in Module 7.
+### ⓘ Infobox Content
+
+```markdown
+Title: 🏈 CFL Expansion Project - Milestone 2: Media & Content Strategy
+
+**Team Deliverable:** Media Strategy Memo (3-4 pages)
+**Weight:** 20% of total project grade (20 points)
+**Due:** End of Week 2
+
+Your team will submit ONE document that includes:
+
+**1. CFL Media Rights Context**
+- How does the current CFL-TSN deal work?
+- How does expansion affect league-wide media rights?
+- What's the revenue sharing model for a new franchise?
+
+**2. Local Media Strategy**
+- Local broadcast partnerships (radio, regional TV)
+- Regional sports network opportunities
+- Digital/streaming presence and platform strategy
+
+**3. Content & Fan Engagement Plan**
+- Social media strategy for building fans in a new market
+- Content creation (behind-the-scenes, player features, community stories)
+- Community building BEFORE the first game
+
+**4. Apply Al Dak's Insights**
+- How would Rogers/TSN view this expansion market?
+- What's the "1:2-3 activation multiplier" opportunity?
+- Data and analytics strategy for proving fan engagement
+
+📋 **Full Project Details:** [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
+```
+
+---
+
+## Element 23: Milestone 2 File Upload
+
+**Uplimit Configuration:**
+- **Element Type:** File Upload
+- **Allowed Formats:** PDF, DOCX, Google Docs link
+- **Team Submission:** One submission per team
+
+**Submission Instructions:**
+```markdown
+## Milestone 2 Submission
+
+Upload your team's Media Strategy Memo here.
+
+**Requirements:**
+- 3-4 pages (excluding title page and references)
+- Professional formatting
+- All team member names on title page
+- One submission per team
+
+**Filename Format:** `TeamName_M2_MediaStrategy.pdf`
+
+**Rubric Preview:**
+| Criterion | Points |
+|-----------|--------|
+| CFL Media Rights Analysis | 5 |
+| Local Media Strategy | 5 |
+| Content & Engagement Plan | 5 |
+| Application of Executive Insights | 3 |
+| Professional Presentation | 2 |
+| **Total** | **20** |
+```
+
+---
+
+## Module 6 Complete - Transition to Module 7
+
+**What You've Accomplished:**
+You've completed Week 2's assessments:
+1. **Individual:** Rogers Mini-Case Memo demonstrating media rights analysis mastery (55 points + 5 PAIRR bonus)
+2. **Team:** CFL Expansion Milestone 2—Media & Content Strategy for your proposed franchise (20 points)
+
+**Up Next: Module 7 - Wrap-Up & Week 3 Preview**
+
+Now that you've demonstrated mastery of Week 2 content, it's time to wrap up the week and preview Week 3. In Week 3, you'll develop your **Sponsorship & Betting Strategy** for your CFL expansion franchise.
+
+See you in Module 7!
 
 ---
 

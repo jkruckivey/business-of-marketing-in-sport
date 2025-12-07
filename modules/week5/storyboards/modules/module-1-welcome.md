@@ -20,13 +20,26 @@
 
 ---
 
-### 💼 Project Preview: Week 5 = Your Final Strategic Vision
+### 💼 CFL Expansion Project: Milestone 5 - Final Expansion Proposal
 
-This is it. Week 5 is where you synthesize everything you've learned into your **capstone deliverable**: a 5-year Strategic Vision Memo for a sports property of your choice.
+This is it. Week 5 is where you synthesize all 4 previous milestones into your **final deliverable**: a comprehensive expansion proposal for the CFL Board of Governors.
 
-You've built the foundations: revenue ecosystem analysis (Week 1), media rights expertise (Week 2), sponsorship and betting strategies (Week 3), and athlete/emerging sports insights (Week 4). Now you'll integrate these frameworks to answer the ultimate question: *"Where should this property be in five years, and how will it get there?"*
+| Week | Milestone | Status |
+|------|-----------|--------|
+| Week 1 | Market Selection & Revenue | ✅ Complete |
+| Week 2 | Media & Content Strategy | ✅ Complete |
+| Week 3 | Sponsorship & Betting Strategy | ✅ Complete |
+| Week 4 | Brand Building & Launch | ✅ Complete |
+| **Week 5** | **Final Expansion Proposal** | **This Week** |
 
-Your Strategic Vision Memo isn't an academic exercise—it's the kind of document real sports executives present to boards, investors, and ownership groups.
+**Final Deliverable:** Executive Presentation (15-20 slides) + Executive Summary (2 pages)
+- Synthesize Milestones 1-4 into cohesive proposal
+- Add financial summary (5-year P&L, investment required, break-even)
+- Risk analysis and mitigation strategies
+- 5-year vision for the franchise
+- Present to class for peer evaluation
+
+📋 **Full Project Details:** See [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
 
 ---
 

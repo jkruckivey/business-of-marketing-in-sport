@@ -110,7 +110,7 @@ Create 5 tiles:
 
 ---
 
-## Module 1 Complete - Transition to Module 2
+## Your Week 1 Journey Complete - Transition to Inside the Sports Business
 
 **What You've Accomplished:**
 You now know exactly where you're headed this week. You've seen the four learning objectives that will transform how you understand sports business, and you've been introduced to the five major revenue streams that power professional sport. You understand that this week focuses on analyzing revenue ecosystems—seeing sport as a unique business model where financial collaboration between competitors creates value.
@@ -122,7 +122,7 @@ You now know exactly where you're headed this week. You've seen the four learnin
 - Revenue sharing models vary dramatically: NFL shares 60% equally; European soccer operates entrepreneurially
 - Strategic decisions trigger **cascading effects** across the entire revenue ecosystem
 
-**Up Next: Module 2 - Executive Perspective**
+**Up Next: Inside the Sports Business**
 Before diving into the technical details of each revenue stream, you'll hear from a senior sports business executive who has actually negotiated media deals, managed sponsorship portfolios, and built revenue strategies. They'll share the real-world challenges and strategic decisions that bring these concepts to life.
 
 Ready to learn from someone who's done it? Let's hear the executive perspective.
@@ -131,9 +131,9 @@ Ready to learn from someone who's done it? Let's hear the executive perspective.
 
 ## 🎯 FINAL PROJECT CONNECTION
 
-**How Module 1 Supports Your Final Strategic Vision:**
+**How This Module Supports Your Final Strategic Vision:**
 
-Module 1 established the four learning outcomes that define sports business strategy. This clarity of purpose directly supports your Week 5 capstone deliverable.
+This module established the four learning outcomes that define sports business strategy. This clarity of purpose directly supports your Week 5 capstone deliverable.
 
 **What You Learned:**
 - The five major revenue streams and their relative importance (media 40-60%, ticketing 20-30%, sponsorship 15-25%, merchandising 5-10%, betting 2-8%)
@@ -142,13 +142,13 @@ Module 1 established the four learning outcomes that define sports business stra
 
 **How to Apply This to Your Final Project:**
 
-When you create your 5-year strategic vision in Week 5, Module 1's frameworks provide your analytical foundation:
+When you create your 5-year strategic vision in Week 5, the frameworks from this module provide your analytical foundation:
 
 - **Revenue Model Section:** Use the 5-stream framework to structure your property's revenue analysis. Show percentage contribution from each stream and justify why your mix differs from league averages.
 - **Competitive Context:** Explain how revenue sharing in your league/sport affects your property's strategic options. If you're in a high-sharing league (like NFL), justify why shared revenue limits your flexibility. If you're in a low-sharing environment (like soccer), explain your entrepreneurial advantages.
-- **Growth Opportunities:** Reference MLO 1.3 to identify which revenue streams offer sustainable growth for YOUR property. Betting growing 30-40%? Media rights stagnating? Use this week's data to justify strategic priorities.
+- **Growth Opportunities:** Reference WLO 1.3 to identify which revenue streams offer sustainable growth for YOUR property. Betting growing 30-40%? Media rights stagnating? Use this week's data to justify strategic priorities.
 
-**Real-World Application:** Your strategic vision must answer: "How will this property make money over 5 years?" Module 1 taught you the universal framework every sports property uses to answer that question.
+**Real-World Application:** Your strategic vision must answer: "How will this property make money over 5 years?" This module taught you the universal framework every sports property uses to answer that question.
 
 ---
 
@@ -167,5 +167,5 @@ When you create your 5-year strategic vision in Week 5, Module 1's frameworks pr
   - Turn **“Make responses available to later modules”** ON.
   - Set **fields required** to ON.
   - Accessibility: Both fields have programmatic labels; ensure keyboard focus order and visible focus ring.
-- **Instructor Note:** This is picked up in Module 3’s opening screen to personalize the simulator.
+- **Instructor Note:** This is picked up in Five Revenue Streams opening screen to personalize the simulator.
 

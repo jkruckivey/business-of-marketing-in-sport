@@ -1,7 +1,7 @@
 # CFL League Expansion Project
 ## Team-Based Capstone Project - Business of Sports Marketing
 
-**Version:** 1.0.0 | **Last Updated:** 2025-12-05
+**Version:** 1.1.0 | **Last Updated:** 2025-12-07
 **Status:** Ready for implementation
 
 ---
@@ -10,7 +10,9 @@
 
 ### The Challenge
 
-The Canadian Football League is considering expansion. As a consulting team, you will develop a comprehensive expansion proposal for a new CFL franchise in a city of your choice. Your proposal must address all aspects of launching a successful professional sports franchise, integrating frameworks from all 5 weeks of the course.
+The Canadian Football League is considering expansion. As CFL Commissioner Stewart Johnston said in his Week 1 executive interview: **"If we haven't got a 10th team in Canada by ten years from now, I'll be disappointed."** As a consulting team, you will develop a comprehensive expansion proposal for a new CFL franchise in a city of your choice—directly addressing the commissioner's vision.
+
+Your proposal must address all aspects of launching a successful professional sports franchise, integrating frameworks from all 5 weeks of the course.
 
 ### Why This Project?
 
@@ -22,6 +24,17 @@ League expansion is one of the most complex strategic decisions in professional 
 - Balancing CFL heritage with innovation and growth (Week 5)
 
 This project synthesizes everything you learn across the course into a single, cohesive strategic recommendation.
+
+### Directly From the Commissioner
+
+**Stewart Johnston's Three Strategic Priorities** (from Week 1 interview):
+1. **Relentless focus on entertainment** - "We need to create more touchdowns, more highlight reel plays, more viral moments"
+2. **Getting footballs into kids' hands** - Flag football, physical education partnerships, grassroots development
+3. **Create nine profitable teams** - "We're not there yet"
+
+Your expansion proposal must demonstrate how a 10th team advances these priorities—not just adds another franchise.
+
+**Commissioner's Key Insight:** "Football is having a moment." Your proposal should capitalize on this timing.
 
 ### Team Structure
 
@@ -68,6 +81,18 @@ This project synthesizes everything you learn across the course into a single, c
 - Moncton (Maritime hub)
 - US markets (if pursuing international expansion angle)
 
+**Apply Stewart Johnston's Revenue Insights (Week 1 Interview):**
+Stewart identified the **two biggest league-level revenue drivers**: media rights and commercial partnerships (sponsorships). Consider:
+- How does adding a 10th team increase the CFL's media rights value for TSN?
+- What new corporate partnership opportunities does your market unlock?
+- How does your market contribute to "creating nine profitable teams" (Stewart's priority #3)?
+- Does your market have the corporate base to drive sponsorship revenue?
+
+**Stewart's Key Data Points:**
+- Gray Cup 2024: 12% ratings increase
+- Winnipeg model: Sold out every game, profitable franchise
+- Only 9 home games per team (scarcity creates event atmosphere)
+
 **Rubric Alignment:** WLO 1.1, 1.2, 1.3, 1.4
 
 ---
@@ -103,6 +128,16 @@ This project synthesizes everything you learn across the course into a single, c
 - How would Rogers/TSN view this expansion market?
 - What's the "1:2-3 activation multiplier" opportunity?
 - Data and analytics strategy for proving fan engagement
+
+**Apply Stewart Johnston's Media Insights (Week 1 Interview):**
+Stewart brings 27 years of Bell Media/TSN experience—he's been on both sides of the media rights negotiation:
+- **"CFL All Access"**: CFL launched a "Drive to Survive" style 3-part series from Gray Cup—how does your franchise create this type of content?
+- **Digital transformation**: CFL is investing in new website, mobile app, and season-long fantasy game. How does your market integrate with these platforms?
+- **"Make content so valuable it drives subscription and advertising dollars"**—Stewart's media strategy insight
+- **Youth engagement**: Content on platforms where younger demographics consume media (YouTube, social-first)
+
+**Stewart's Unique Perspective:**
+As former Bell Media executive, Stewart understands what makes content valuable to broadcasters. Your media strategy should address how your franchise makes the CFL more valuable to TSN.
 
 **Rubric Alignment:** WLO 2.1, 2.2, 2.3, 2.4
 
@@ -187,6 +222,16 @@ This project synthesizes everything you learn across the course into a single, c
 - White space identification - What's missing in this market?
 - Community as differentiator
 
+**Apply Stewart Johnston's Brand Insights (Week 1 Interview):**
+Stewart discussed balancing heritage with innovation for the CFL's 110+ year legacy:
+- **"Relentless focus on entertainment"** - How does your team brand contribute to CFL's entertainment value?
+- **"Unwavering commitment to Canadian football"** - 3 downs, 12 players, wide field—your brand must embrace CFL's unique identity
+- **Youth strategy**: Flag football, school programs—how does your franchise advance "footballs in kids' hands"?
+- **Digital engagement**: App, fantasy game, social content—your brand must be digitally native
+
+**Use the Brand Package Creator Widget:**
+The Week 4 Brand Package Creator widget lets you design your expansion team's complete brand identity—team name, colors, mascot, logo concept, and jersey mockups. Export your brand package to include in your Milestone 4 deliverable.
+
 **Rubric Alignment:** WLO 4.1, 4.2, 4.3, 4.4
 
 ---
@@ -231,7 +276,19 @@ This project synthesizes everything you learn across the course into a single, c
 **Apply Week 5 Insights:**
 - Legacy vs. Innovation Matrix - Where does your franchise sit?
 - Golf Canada's transformation model - How do you grow while honoring tradition?
+- Jamie Dinsmore's heritage preservation principle: "Don't lose core and then look to grow"
 - Future trends - How is your franchise positioned for AI, streaming, betting evolution?
+
+**Address Commissioner Stewart Johnston Directly:**
+Your final presentation is pitched to the CFL Board of Governors—chaired by Commissioner Stewart Johnston. Your proposal must address his stated priorities:
+
+1. **Does this expansion advance "relentless focus on entertainment"?** - More touchdowns, viral moments, highlight plays
+2. **Does this expansion advance "footballs in kids' hands"?** - Youth programs, flag football, school partnerships
+3. **Does this expansion help "create nine profitable teams"?** - Revenue sharing implications, not diluting existing teams
+4. **Is this the right market for "football having a moment"?** - Timing, community readiness, competitive landscape
+
+**Commissioner's 10-Year Vision:**
+Stewart said: "If we haven't got a 10th team in Canada by ten years from now, I'll be disappointed." Your proposal should present a compelling case for WHY your market, WHY now, and WHY your franchise advances the CFL's strategic vision.
 
 **Rubric Alignment:** All CLOs (1-5)
 

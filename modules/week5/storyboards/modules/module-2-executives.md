@@ -1,12 +1,17 @@
 # MODULE 2: Executive Leader Perspectives (BOPPPS: Participatory - Expert Input)
-**Version:** 1.5.0 | **Last Updated:** 2025-12-05
+**Version:** 1.6.0 | **Last Updated:** 2025-12-07
 
 **Purpose:** Deliver expert practitioner perspectives on heritage property strategy, future trends, and balancing tradition with innovation (supports WLO 5.1, 5.2, 5.3)
 
+### Version 1.6.0 Changes
+- **NEW:** Added Jamie Dinsmore (Hockey Hall of Fame CEO) interview - AVAILABLE NOW (~18 min)
+- Two heritage property perspectives now available: Golf Canada (sport transformation) + Hockey Hall of Fame (institution management)
+- Updated element table to reflect Jamie Dinsmore as available content
+- Keith Pelley remains as scripted placeholder pending recording
+
 ### Version 1.5.0 Changes
-- **NEW:** Added Golf Canada interview (Niki DaSilva & Tim McLaughlin) - AVAILABLE NOW
+- Added Golf Canada interview (Niki DaSilva & Tim McLaughlin) - AVAILABLE NOW
 - Golf Canada interview fits Week 5 theme: heritage sport, tradition vs. innovation, future trends (AI coaching, simulator golf)
-- Jamie Dinsmore and Keith Pelley remain as scripted placeholders pending recording
 
 **Uplimit Structure:** Second module in Unit 5
 
@@ -17,17 +22,27 @@
 ## ⚠️ EXECUTIVE INTERVIEW STATUS
 
 **✅ AVAILABLE NOW:** Niki DaSilva & Tim McLaughlin (Golf Canada) - ~45 min interview recorded
-**⏳ PENDING:** Jamie Dinsmore (HHOF) - Scripted content below, recording TBD
+**✅ AVAILABLE NOW:** Jamie Dinsmore (Hockey Hall of Fame CEO) - ~18 min interview recorded
 **⏳ PENDING:** Keith Pelley (MLSE) - Scripted content below, recording TBD
 
-**Golf Canada as Primary Content:** The Golf Canada interview (Niki DaSilva, CPO + Tim McLaughlin, CMO) provides excellent coverage of Week 5 themes:
+**Two Heritage Property Perspectives:**
+
+**Golf Canada (Sport Transformation):** The Golf Canada interview (Niki DaSilva, CPO + Tim McLaughlin, CMO) provides coverage of heritage SPORT transformation:
 - Heritage sport transformation (400K members, 3 major championships)
 - Women's golf growth ("She Plays Golf" program, Brooke Henderson partnership)
 - Digital transformation (535K app users)
 - Future trends: AI coaching, simulator golf as emerging category
 - Balancing tradition with innovation
 
-Students should watch the Golf Canada interview as the primary executive content for Week 5. The Jamie Dinsmore and Keith Pelley scripts below provide additional pedagogical framing and may be recorded in the future.
+**Hockey Hall of Fame (Institution Management):** The Jamie Dinsmore interview provides coverage of heritage INSTITUTION management:
+- Four lines of business: Attraction ($8.5M), Events ($5M), Retail, Outreach
+- Staff passion and tenure (42% at 25+ years)
+- The Stanley Cup as "people's trophy" (touchable, travels with winners)
+- Growth strategy: physical expansion, international exhibits, women's hockey, technology
+- AR/VR vision: "On the precipice of something really cool"
+- Heritage preservation: "Don't lose core, then look to grow"
+
+Students should watch BOTH available interviews for complementary perspectives: Golf Canada (sport transformation) and HHOF (institution management). Keith Pelley script provides additional pedagogical framing for franchise vs. heritage institution contrast.
 
 ---
 
@@ -37,10 +52,11 @@ Students should watch the Golf Canada interview as the primary executive content
 | 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about executive sessions + viewing instructions | Type directly | Blue variant, explains perspectives |
 | 3 | **▶ Video 1** ⬛ Required ✅ | **Golf Canada (Niki DaSilva & Tim McLaughlin) (~45 min)** | Upload MP4 + transcript | **AVAILABLE NOW** - Heritage sport, future trends |
 | 4 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Golf Canada session | Type directly | 3-5 prompts on tradition vs. innovation |
-| 5 | **▶ Video 2** ▢ Optional ⏳ | Jamie Dinsmore (HHOF CEO) - Heritage Institution (12-15 min) | Upload MP4 + VTT | **PENDING** - Scripted content below |
-| 6 | **▶ Video 3** ▢ Optional ⏳ | Keith Pelley (MLSE CEO) - Modern Franchise (12-15 min) | Upload MP4 + VTT | **PENDING** - Scripted content below |
-| 7 | **▤ Details** ▢ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
-| 8 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about heritage sports and future trends" | Configure in Uplimit | Named: "Heritage & Future Trends Q&A" |
+| 5 | **▶ Video 2** ⬛ Required ✅ | **Jamie Dinsmore (HHOF CEO) (~18 min)** | Upload MP4 + transcript | **AVAILABLE NOW** - Heritage institution management |
+| 6 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Jamie Dinsmore session | Type directly | Heritage institution business model prompts |
+| 7 | **▶ Video 3** ▢ Optional ⏳ | Keith Pelley (MLSE CEO) - Modern Franchise (12-15 min) | Upload MP4 + VTT | **PENDING** - Scripted content below |
+| 8 | **▤ Details** ▢ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
+| 9 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about heritage sports and future trends" | Configure in Uplimit | Named: "Heritage & Future Trends Q&A" |
 
 ---
 
@@ -60,29 +76,36 @@ You've been introduced to the heritage monetization dilemma—the challenge ever
 - **Week 3 (Andrew Sneyd):** Brand building, innovation, measuring what matters
 - **Week 4 (Matt Rubinoff):** Emerging sports, proof-of-concept, balancing growth with brand identity
 
-Now it's time to hear from executives navigating the tradition vs. innovation tension in real time. In this module, you'll hear from **Niki DaSilva (Chief People Officer) and Tim McLaughlin (Chief Marketing Officer) at Golf Canada**—leaders transforming a heritage sport while maintaining its traditions.
+Now it's time to hear from executives navigating the tradition vs. innovation tension in real time. In this module, you'll hear two complementary perspectives:
 
-Golf Canada faces the exact tension this week explores:
+**Golf Canada - Niki DaSilva (CPO) & Tim McLaughlin (CMO):** Heritage SPORT transformation
 - **400,000 members** with deep traditions and expectations
 - **535,000 app users** demanding digital engagement
 - **Brooke Henderson** as a modern athlete brand ambassador
-- **Future trends** like AI coaching and simulator golf that could transform the sport
+- **Future trends** like AI coaching and simulator golf
 
-Their insights will reveal how a national sports organization balances heritage preservation with aggressive innovation—and why women's golf represents both a strategic growth opportunity AND a return to the sport's inclusive roots.
+**Hockey Hall of Fame - Jamie Dinsmore (President & CEO):** Heritage INSTITUTION management
+- **Four revenue lines** (Attraction, Events, Retail, Outreach)—different from franchise business models
+- **42% staff at 25+ years**—institutional knowledge as competitive advantage
+- **The Stanley Cup as "people's trophy"**—touchable, travels, creates generational stories
+- **AR/VR vision**: "On the precipice of something really cool"
 
-Listen carefully for: How do you transform a heritage sport without alienating traditional members? When does innovation SERVE tradition vs. replace it?
+Together, these interviews reveal how heritage organizations balance preservation with growth—whether transforming a sport or managing an iconic institution.
+
+Listen carefully for: How do you transform heritage without alienating traditional stakeholders? When does innovation SERVE tradition vs. replace it? How do different organizational structures (sport federation vs. heritage institution) face different constraints?
 
 
 ---
 
 ## Element 2: Infobox Content
 
-
+```
 Title: ◉ Executive Insights: Heritage Sports & Future Trends
 
-This module features an executive interview with Golf Canada's leadership team, providing real-world perspective on transforming a heritage sport while honoring its traditions.
+This module features two executive interviews exploring how heritage sports organizations balance tradition with innovation. You'll hear from:
 
-**Primary Session: Niki DaSilva & Tim McLaughlin (Golf Canada, ~45 min)**
+**Session 1: Golf Canada (~45 min) - Niki DaSilva & Tim McLaughlin**
+Heritage SPORT transformation—how a 400-year-old sport modernizes while preserving traditions
 
 **Niki DaSilva, Chief People Officer (Ivey HBA '03)**
 - Background: MLSE, Deloitte consulting, now leading Golf Canada transformation
@@ -92,22 +115,30 @@ This module features an executive interview with Golf Canada's leadership team, 
 - Background: 25 years at Adidas (Olympics, World Cup 2010), global brand building expertise
 - Perspective: Modern marketing approaches applied to heritage sports organization
 
-**Key Topics Covered:**
-- Golf Canada business model (400K members, 3 major championships, $18 avg revenue)
-- Brooke Henderson partnership (5th most LPGA wins in North America, authentic brand ambassador)
-- Women's golf growth strategy ("She Plays Golf" program, 33% of golfers are women)
-- Digital transformation (535K app users, from transactional to relationship-based engagement)
-- Future of golf (AI coaching, simulator golf as emerging category)
+**Key Topics:** Golf Canada business model (400K members, 3 major championships), Brooke Henderson partnership, women's golf growth ("She Plays Golf" program), digital transformation (535K app users), future trends (AI coaching, simulator golf)
 
-**What to Watch For:**
-- How Golf Canada balances tradition (heritage sport) with innovation (digital engagement)
-- Athlete ambassador partnerships that go beyond traditional sponsorship
-- Women's sports as strategic growth opportunity (underrepresented market)
-- Technology as accessibility tool vs. replacement for tradition
+---
 
-**Total Viewing Time:** ~45 minutes
-**Reflection Time:** 15-20 minutes
-**Total Module 2 Time:** ~60-65 minutes
+**Session 2: Hockey Hall of Fame (~18 min) - Jamie Dinsmore**
+Heritage INSTITUTION management—how an iconic institution generates revenue while preserving authenticity
+
+**Jamie Dinsmore, President & CEO**
+- Background: Business career, lifetime hockey passion, took role July 2024 (first turnover in 27 years)
+- Perspective: Heritage institution economics, staff culture as asset, technology vision
+
+**Key Topics:** Four revenue lines (Attraction $8.5M, Events $5M, Retail, Outreach), staff tenure (42% at 25+ years), Stanley Cup as "people's trophy," AR/VR vision, heritage preservation principle ("Don't lose core and then look to grow")
+
+---
+
+**Viewing Guide:**
+• **Golf Canada:** Heritage SPORT transformation—membership, digital engagement, women's growth
+• **Jamie Dinsmore:** Heritage INSTITUTION management—four revenue lines, preservation principles
+• **Compare:** Both balance tradition with innovation—but face different constraints. What's similar? What's different?
+
+**Total Viewing Time:** ~63 minutes (45 min Golf Canada + 18 min Jamie Dinsmore)
+**Reflection Time:** 20-25 minutes
+**Total Module 2 Time:** ~85-90 minutes
+```
 
 
 ---
@@ -224,378 +255,144 @@ Critical analysis:
 
 ---
 
-## Element 5: Video 2 - Jamie Dinsmore (Hockey Hall of Fame CEO) ⏳ PENDING
+## Element 5: Video 2 - Jamie Dinsmore (Hockey Hall of Fame CEO) ✅ AVAILABLE
 
-**⚠️ STATUS: SCRIPTED CONTENT - Interview recording pending**
+**File:** `Interviews/Jamie Dinsmore_Captions_English (United States).txt` (with corresponding video)
+**Duration:** ~18 minutes
+**Transcript:** Available in Interviews folder
+**Video Title:** "Jamie Dinsmore: Leading the Hockey Hall of Fame"
+**Video Caption:** "Hockey Hall of Fame President & CEO shares insights on heritage institution management, four lines of business, and AR/VR vision for the future"
 
-- **File:** `week5-video1-jamie-dinsmore-hhof.mp4` (TBD)
-- **Duration:** 12-15 minutes
-- **VTT Transcript:** `week5-video1-jamie-dinsmore.vtt` (required for accessibility)
-- **Poster Image:** `week5-video1-jamie-dinsmore-poster.jpg` (thumbnail of Jamie in HHOF setting)
-- **Video Title:** "Heritage as Economic Value: The Hockey Hall of Fame Perspective"
-- **Video Caption:** "Jamie Dinsmore, President & CEO of the Hockey Hall of Fame, discusses balancing preservation with growth, stakeholder relationships, and the risks of over-commercialization"
+#### Interview Content - Key Topics Covered:
 
-**Interview Structure:**
+**Career Journey & Background (00:00-04:00)** - Competitive nature from age 10, played every sport imaginable. Business career background before taking on HHOF role. "There's only one Hockey Hall of Fame"—role comes up once every few decades (previous CEO Jeff Denham served 27 years). Started July 1st, 2024.
 
-- **Opening (2 min):** Jamie's background, role at HHOF, 15+ years in heritage sports properties
-- **Section 1 (3-4 min):** The authenticity asset - Why heritage institutions are different from professional teams; how credibility creates economic value
-- **Section 2 (3-4 min):** The Disneyfication trap - Real examples of heritage properties that over-commercialized and lost credibility; lessons learned
-- **Section 3 (2-3 min):** Stakeholder relationships - Why donors, curatorial staff, and partner leagues (NHL, Hockey Canada) have veto power over strategy
-- **Section 4 (2-3 min):** Growth without compromise - What innovations Jamie has approved vs. rejected; decision framework
-- **Closing (1 min):** Advice for students analyzing heritage property strategy
+**Mission & Business Model (04:00-08:00)** - Mission: "Honoring the legends, igniting fandom, expanding the game globally." Registered charity/not-for-profit status. Four lines of business:
+- **Attraction (museum)**: ~$8.5M revenue
+- **Events**: Corporate and personal events using the Hall after hours, ~$5M revenue
+- **Retail**: Spirit of Hockey store, NHL merchandise, pucks, apparel
+- **Outreach**: Cup movements, educational programs, bringing the Hall to communities
 
-**FULL SCRIPT:**
+**Staff Passion & Culture (05:00-07:00)** - "People have been at the hall for a very long time." More staff at 20+ years than under 20 years. **42% have been here 25 years or more.** Deep passion for hockey and the institution.
 
+**The Stanley Cup (13:00-15:00)** - "There's no trophy in all of sports that comes anywhere close to the Stanley Cup... it's the people's trophy. It's not just sitting in a museum behind glass." Visitors can touch it. Every winning player gets a trophy day. Stories connect generations.
 
-[OPENING - 0:00-2:00]
-[ON-SCREEN: Jamie Dinsmore in Hockey Hall of Fame setting, Great Hall visible in background]
+**Growth Strategy (11:00-14:00)** - Physical expansion at Toronto location. International exhibits (Edmonton Oilers mini Hall of Fame at Rogers Place as model—could expand to 31+ NHL franchises). What can we do in Europe, Asia, south of the border? Women's hockey transformation. Diversity and inclusion stories.
 
-JAMIE:
-"Hi, I'm Jamie Dinsmore, President and CEO of the Hockey Hall of Fame. I've spent
-the last 15+ years working in heritage sports properties—before HHOF, I worked with
-the Baseball Hall of Fame and Olympic legacy properties.
+**Technology Vision (22:00-26:00)** - "Low tech can be just as exciting as high tech"—storytelling is key. But AR/VR is exciting: "I think we're on the precipice of something really cool." Imagine experiencing Connor McDavid's speed virtually, or being the defenseman facing Marie-Philip Poulin's wrist shot. "Until you're in the game, at least virtually, you don't truly understand the speed and skill."
 
-So I've made a lot of decisions about where to draw the line between growth and
-authenticity. I've approved some innovations that succeeded brilliantly. I've rejected
-others that would have generated millions but cost us something more valuable: credibility.
+**Heritage Preservation Approach (27:00-29:00)** - Three principles:
+1. Don't tarnish the brand
+2. Operate professionally with everyone (internal, external, guests)
+3. Be fiscally responsible
 
-Today, I want to share the real trade-offs and constraints that don't fit neatly into
-a PowerPoint framework."
+"Don't lose core and then look to grow... We're not throwing the baby out with the bathwater."
 
-[TRANSITION: Visual montage of HHOF exhibits, Great Hall, artifacts]
+**Revenue & Growth Opportunities (14:00-16:00)** - Partnerships and sponsorships are key growth area. Elite stats: Less than 0.015% of sports players become professional. Less than 800 NHL skaters at any time. Only ~2% of eligible men make the Hall of Fame. "It's the elite of the elite."
 
----
+**10-Year Vision (30:00-33:00)** - "I don't plan on doing anything but what I'm doing... you'll have to take me out in a time box." Primary innovation goal: AR/VR experiences that give people a different lens on the game—the "great equalizer" concept.
 
-[SECTION 1: AUTHENTICITY AS ECONOMIC VALUE - 2:00-6:00]
-[ON-SCREEN: Jamie walking through HHOF exhibits, discussing displays]
+#### Viewing Guide for Students:
+- **Heritage Institution Business Model**: Four distinct revenue lines (attraction, events, retail, outreach) in a not-for-profit structure
+- **Staff Culture as Asset**: 42% at 25+ years tenure—what does this mean for institutional knowledge and heritage preservation?
+- **The Stanley Cup Strategy**: "People's trophy" approach—touchable, travels, creates generational stories
+- **Technology as Enhancement**: AR/VR to help people "truly understand the speed and skill"—serving the mission, not replacing it
+- **Heritage Preservation Principle**: "Don't lose core and then look to grow"
 
-JAMIE:
-"Here's the fundamental difference between heritage institutions and professional teams:
-For us, the PAST has economic value. It's not just nostalgia—it's literally what people
-pay to experience.
+#### Connection to Week 5 Themes:
+- **WLO 5.1 (Heritage Properties as Revenue Assets)**: Four lines of business, $8.5M attraction + $5M events revenue
+- **WLO 5.2 (Balancing Tradition with Innovation)**: "Don't lose core, then look to grow" + AR/VR vision
+- **WLO 5.3 (Future Trends)**: AR/VR, international expansion, women's hockey growth
+- **Complements Golf Canada**: Golf Canada = heritage SPORT transformation; HHOF = heritage INSTITUTION management
 
-A professional team's value comes from current performance. The Toronto Maple Leafs are
-valuable because they might win the Stanley Cup in the future. Their 1967 championship is
-nice history, but it doesn't drive current revenue.
+**Key Quotes:**
+> "There's only one Hockey Hall of Fame... it only comes up once every few decades."
 
-For the Hockey Hall of Fame, the opposite is true. Wayne Gretzky's 894th goal? That's
-pure history, and it's why someone buys a ticket to visit us. The authenticity of that
-artifact—knowing it's REAL, knowing we're the authoritative institution on hockey's
-history—that authenticity is our entire value proposition.
+> "42% have been here 25 years or more."
 
-[VISUAL: Close-up of Gretzky's stick in display case]
+> "There's no trophy in all of sports that comes anywhere close to the Stanley Cup... it's the people's trophy."
 
-So when someone proposes 'Let's build a VR experience where people play HOCKEY AS GRETZKY,'
-I hear two very different things than my colleagues at the Maple Leafs do:
+> "I think we're on the precipice of something really cool" (on AR/VR)
 
-A Maple Leafs executive hears: 'A new revenue stream that engages younger audiences,
-drives engagement, and creates a unique experience.' That's true!
+> "Don't lose core and then look to grow."
 
-I hear: 'We're monetizing Gretzky's legacy by turning him into a theme park attraction.'
-And that costs something that can't be recovered. Once our donors and partners believe we
-prioritize revenue over reverence, we've lost credibility. And credibility IS our business.
-
-[Pause]
-
-This is the heritage institution constraint: Some revenue opportunities must be rejected
-because accepting them would compromise the authenticity that makes us valuable.
-
-Revenue optimization is necessary—we're a business, and we face real financial pressures.
-But it's not sufficient. We have an additional filter: Does this preserve our credibility
-as the authoritative guardian of hockey's history?
-
-If the answer is 'Not sure,' we don't do it."
+**Embed Code:**
+```html
+<iframe
+  src="[Uplimit video URL - Interviews/Jamie Dinsmore.mp4]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Jamie Dinsmore - Hockey Hall of Fame CEO on Heritage Institution Management"
+  aria-label="Video interview with Jamie Dinsmore, Hockey Hall of Fame President & CEO, discussing heritage institution business model, four revenue lines, staff culture, Stanley Cup strategy, AR/VR vision, and heritage preservation principles"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
 
 ---
 
-[SECTION 2: THE DISNEYFICATION TRAP - 6:00-9:30]
-[VISUAL: Split screen showing museums with high commercialization vs. authentic heritage properties]
+## Element 6: Discussion Prompt - Jamie Dinsmore Session
 
-JAMIE:
-"Let me give you concrete examples of where other heritage institutions made different
-choices—and the consequences.
-
-[VISUAL: Images of over-commercialized museums, theme parks]
-
-The **Smithsonian Institution** has resisted aggressive commercialization because the
-Smithsonian's mission is research and preservation. They found that when museums prioritize
-merchandise and entertainment over scholarship, donors start asking: 'Why should I give to
-a museum when I can fund research at a university directly?' They lost $40M in annual
-donations because perception shifted from 'serious institution' to 'gift shop with exhibits.'
-
-By contrast, the **Baseball Hall of Fame** (in Cooperstown) has found incredible success
-with digital innovation that EXTENDS their mission rather than replaces it. They built a
-digital archive of every game ever played. Researchers use it. Fans use it. They launched
-a digital membership (500K members paying $25/year = $12.5M revenue) that provides access
-to archival footage, online tours, and expert commentary. Their curatorial staff actually
-LOVES this innovation because it advances their preservation mission.
-
-The difference? Baseball's innovation SERVES scholarship and preservation. It doesn't
-replace those missions with entertainment.
-
-[VISUAL: Before/after visitor satisfaction data for both institutions]
-
-Here's the business impact: The Smithsonian experienced a revenue crisis. The Baseball
-Hall of Fame grew revenue 35% in 5 years WITHOUT alienating core stakeholders. Same
-industry, same heritage constraint, opposite strategic choices.
-
-This is Disneyfication: When entertainment value REPLACES educational and preservation
-value as the core proposition. It generates short-term revenue and long-term credibility
-loss."
-
----
-
-[SECTION 3: STAKEHOLDER RELATIONSHIPS - 9:30-12:00]
-[ON-SCREEN: Jamie in HHOF boardroom or meeting space]
-
-JAMIE:
-"Most business frameworks treat stakeholders as a list: customers, employees, investors.
-Heritage institutions have stakeholders with actual VETO POWER over strategy, and that
-changes everything.
-
-Let me explain three stakeholder groups that control our destiny:
-
-**Group 1: Curatorial Staff & Historians**
-
-Our curatorial staff includes PhDs in sports history. If I propose an innovation, they
-review it with one question: 'Does this serve or exploit hockey's legacy?'
-
-If they conclude 'exploit,' they will:
-- Resign in protest (very publicly, very loudly)
-- Undermine the initiative from inside
-- Advise donors and partners that HHOF is compromising its mission
-
-This isn't leverage—this is legitimate authority. They're the experts on hockey history.
-If they lose confidence in our strategy, we've lost what makes us credible.
-
-I can't override my curatorial staff on heritage decisions the way a CEO can override
-marketing on ad spend. Their opposition IS our opposition because they represent the
-institutional mission.
-
-**Group 2: Donors**
-
-Heritage institutions like HHOF rely on donations from:
-- Alumni and former players ($4M-$6M annually)
-- Corporate partners aligned with hockey ($2M-$4M annually)
-- Sports foundations ($1M-$2M annually)
-
-These donors give BECAUSE they believe in our mission. They're not profit-maximizers—if
-they wanted ROI, they'd invest in stocks, not heritage institutions.
-
-If we shift too far toward commercialization, they'll redirect donations to universities,
-youth hockey programs, or other mission-aligned targets. That's not a threat; that's a
-rational response.
-
-And here's the critical part: Once we lose major donors, we're locked into a path of
-declining options. We can't invest in innovation without donor capital. We can't weather
-revenue downturns. We become dependent on pure revenue optimization, which forces MORE
-commercialization, which drives away MORE donors. It's a death spiral.
-
-**Group 3: Partner Leagues (NHL, Hockey Canada)**
-
-The NHL and Hockey Canada provide content, permission to display artifacts, and partnership
-opportunities. They also have reputations to protect.
-
-If HHOF became known for Disneyfication, the NHL might hesitate to authorize exclusive
-exhibitions. Hockey Canada might limit partnerships. These relationships don't show up on
-a balance sheet, but they unlock $5M-$10M in annual value.
-
-So our strategy isn't just constrained by our own mission—it's constrained by partners
-who can withdraw cooperation if they lose confidence in our judgment.
-
-[Pause]
-
-This is why heritage institution strategy is different. You can't just optimize revenue.
-You have to cultivate relationships with stakeholders who have real authority over your
-success."
-
----
-
-[SECTION 4: GROWTH WITHOUT COMPROMISE - 12:00-14:30]
-[VISUAL: Examples of approved HHOF innovations]
-
-JAMIE:
-"This doesn't mean heritage institutions can't grow. We absolutely can and should.
-
-Let me walk you through decisions I've APPROVED—and why they passed the authenticity test.
-
-**Approved Innovation #1: Digital Archive**
-
-We created a publicly accessible digital archive of hockey's greatest moments, indexed
-by player, era, and achievement. Anyone can access 50,000+ hours of video for free.
-
-Revenue model: Free archive (mission value) + Premium access tier ($15/month, access
-to raw footage, research tools, expert commentary). 1,000 active premium members = $180K
-annually.
-
-This passed the test because:
-- Curatorial staff LOVES it (advances historical preservation mission)
-- Donors support it (reflects our mission)
-- Generates modest revenue without compromising authenticity
-- Opens new revenue stream (data licensing to sports analytics companies)
-
-**Approved Innovation #2: International Pop-Up Exhibits**
-
-We created traveling exhibits of Hall of Famers' artifacts that toured Asia, Europe, and
-Latin America. 'The Art of Hockey: Greatness Across Generations' traveled to Shanghai,
-Toronto, and Mexico City.
-
-Revenue: Venue rentals ($2M), merchandise (localized for each market, $1.5M), sponsorships
-aligned with hockey values ($2M) = $5.5M per touring cycle (24 months).
-
-This passed the test because:
-- We control the ENTIRE experience (not licensing our content to theme parks)
-- Local partners are vetted for brand alignment
-- Strengthens our position as authoritative hockey institution globally
-- Generates substantial revenue through partnership, not theme-parkification
-
-**Rejected Innovation #1: Anime-Style VR Game**
-
-A gaming company proposed 'Hockey Legends: Anime Edition'—stylized VR game where players
-control anime-style characters inspired by Hall of Famers. They projected $8M annual
-revenue.
-
-We rejected it because:
-- Transforms athletes into cartoon characters (disrespectful to their legacy)
-- Gameplay mechanics had no connection to actual hockey history
-- Revenue depended on REPLACING respect for players with entertainment value
-- Even though the company offered $8M, the curatorial staff and donors would have opposed it
-
-**Rejected Innovation #2: Sports Betting Partnership**
-
-Betting companies approached us about in-venue betting lounges, sports betting APIs, and
-data licensing (we have 150 years of hockey statistics). Projected revenue: $6M-$8M annually.
-
-We rejected because:
-- Shifts our mission from celebration to commodification of hockey
-- Risk of scandal (if HHOF becomes known for betting partnerships, we damage credibility)
-- Players and their families would view it as exploitative
-- Long-term credibility cost exceeds short-term revenue gain
-
-[Pause]
-
-Here's the decision framework I use:
-
-1. **Does this SERVE our core mission** (preserve, celebrate, educate hockey history)?
-2. **Would curatorial staff and donors support this?** (Do they see us as stewards or profiteers?)
-3. **Is this innovation that EXTENDS our reach** (new audiences, new markets) or **REPLACES our core offering** (entertainment instead of preservation)?
-4. **What's the reputational risk if we're wrong?** (Can we recover if this becomes a scandal?)
-
-If questions 1-3 are 'yes' and question 4 shows acceptable risk, we move forward.
-Otherwise, we pass—no matter how attractive the revenue projection.
-
-This is disciplined constraint, not paralysis."
-
----
-
-[CLOSING - 14:30-15:00]
-[ON-SCREEN: Jamie back in Great Hall]
-
-JAMIE:
-"Here's my advice as you think through heritage property strategy:
-
-Frameworks from Weeks 1-4 are essential. Revenue streams, media strategy, sponsorship
-ROI—all critical. But heritage properties need an ADDITIONAL framework: the authenticity
-filter.
-
-Revenue optimization is table stakes. The competitive advantage comes from understanding
-WHO HAS POWER OVER YOUR STRATEGY (curatorial staff, donors, partners) and structuring
-decisions around maintaining their confidence.
-
-The most successful heritage properties aren't the ones that generate the most revenue—
-they're the ones that generate sustainable revenue while strengthening their credibility
-as stewards of history.
-
-That's the challenge. That's why this work is sophisticated."
-
-[END: 15:00]
-
-
-**Visual Assets Needed:**
-- B-roll: HHOF Great Hall and exhibits (real imagery)
-  - **Alt text:** "Hockey Hall of Fame interior showing exhibits of hockey artifacts and memorabilia"
-- B-roll: Gretzky's stick, other authentic artifacts
-  - **Alt text:** "Display cases featuring authentic hockey memorabilia and historical artifacts"
-- Comparison visuals: Over-commercialized museums vs. authentic heritage properties
-  - **Alt text:** "Comparison images showing museum gift shops and commercial exhibits versus traditional curatorial displays"
-- Baseball Hall of Fame digital archive example
-  - **Alt text:** "Screenshot of Baseball Hall of Fame digital archive interface with searchable game videos"
-- HHOF boardroom or meeting space (for Section 3)
-  - **Alt text:** "Hockey Hall of Fame boardroom or administrative space"
-- Examples of approved innovations (digital archive, pop-up exhibits)
-  - **Alt text:** "Images showing Hockey Hall of Fame digital platform interface and international pop-up exhibit setup"
-
-**Uplimit Implementation:**
-1. In Uplimit module builder, select **Video** element
-2. Upload `week5-video1-jamie-dinsmore-hhof.mp4`
-3. Upload VTT caption file `week5-video1-jamie-dinsmore.vtt`
-4. Title: "Heritage as Economic Value: The Hockey Hall of Fame Perspective"
-5. Enable transcript download
-
----
-
-## Element 4: **RENUMBERED** - Discussion Prompt - Jamie Dinsmore Session (was Element 3)
-
-**Uplimit Implementation:**
+**Uplift Implementation:**
 1. Select **Discussion Prompt** element in module builder
 2. Copy the markdown below into the element field
 
+```markdown
+## Reflection: Heritage Institution Management
 
-## Reflection: The Authenticity Asset
+**Watch Jamie Dinsmore's session above, then reflect on these questions. Post your thoughts and respond to at least one classmate.**
 
-**Watch Jamie Dinsmore's session above, then reflect on these questions. This is a forum discussion—post your thoughts and respond to at least one classmate.**
-
-### Prompt 1: The Heritage Institution Constraint
-Jamie argues that heritage institutions face a constraint that professional sports teams don't: "Once we lose credibility, we've lost what makes us valuable."
-
-Explain in your own words:
-- Why is authenticity MORE valuable for the Hockey Hall of Fame than for the Maple Leafs?
-- What would happen if the Hockey Hall of Fame lost credibility as a "guardian of hockey history"?
-- Can you think of an example of a heritage institution (museum, hall of fame, historic site) that lost credibility through over-commercialization? What was the consequence?
-
-**Suggested length:** 150-200 words
-
----
-
-### Prompt 2: Stakeholder Veto Power
-Jamie identified three stakeholder groups with actual VETO POWER over HHOF strategy: curatorial staff, donors, and partner leagues. This is unusual in business—most companies can override employee concerns if they're profitable.
+### Prompt 1: Four Lines of Business
+Jamie describes the Hockey Hall of Fame's four revenue streams: Attraction ($8.5M), Events ($5M), Retail, and Outreach. This is very different from a professional sports franchise.
 
 Analyze:
-- Why do these stakeholders have veto power at heritage institutions?
-- Would Keith Pelley (MLSE CEO) face the same stakeholder constraints? Why or why not?
-- If you were a heritage property CEO, which stakeholder group would you prioritize and why?
+- How does this business model compare to the revenue streams you learned in Week 1?
+- Why might heritage institutions have more diverse revenue sources than franchises?
+- Which line of business do you think has the most growth potential? Why?
 
 **Suggested length:** 150-200 words
 
 ---
 
-### Prompt 3: The Decision Framework
-Jamie uses a four-question framework to evaluate innovations:
-1. Does this SERVE our core mission?
-2. Would curatorial staff and donors support this?
-3. Is this innovation that EXTENDS our reach or REPLACES our core offering?
-4. What's the reputational risk?
+### Prompt 2: Staff Tenure as Competitive Advantage
+Jamie reveals that 42% of staff have been at the Hall for 25+ years. This is remarkable institutional knowledge.
 
-Apply this framework to ONE of the rejected innovations Jamie mentioned (betting partnerships or anime VR game).
-
-Would you have rejected it too, or would you have approved it? Why?
+Consider:
+- How does long staff tenure affect heritage preservation?
+- What are the risks of such high tenure (potential blind spots, resistance to change)?
+- How would you balance institutional knowledge with fresh perspectives?
 
 **Suggested length:** 150-200 words
 
 ---
 
-### Prompt 4: Revenue vs. Authenticity Trade-Off
-Jamie approved digital archives and international pop-ups, but rejected betting and anime VR.
+### Prompt 3: The Stanley Cup as "People's Trophy"
+Jamie calls the Stanley Cup "the people's trophy"—it's touchable, travels with winners, and creates generational stories. This is a deliberate heritage strategy.
 
-What do you notice about the APPROVED innovations that the REJECTED innovations lacked?
-(Hint: Think about whether the innovations SERVE heritage mission vs. REPLACE it)
+Apply to Week 5 themes:
+- How does this approach differ from keeping artifacts "behind glass"?
+- What are the business implications of making heritage accessible vs. exclusive?
+- Can you think of other heritage properties that use a similar "people's" approach?
+
+**Suggested length:** 150-200 words
+
+---
+
+### Prompt 4: AR/VR Vision - Enhancement vs. Replacement
+Jamie is excited about AR/VR but emphasizes "low tech can be just as exciting as high tech"—storytelling is key. His vision: help people "truly understand the speed and skill" through virtual experiences.
+
+Critical analysis:
+- Does Jamie's AR/VR vision SERVE the Hall's heritage mission or REPLACE it?
+- Compare this to the Golf Canada executives' technology approach—similarities and differences?
+- What would make AR/VR at the Hall "Disneyfication" vs. "enhancement"?
 
 **Suggested length:** 100-150 words
-
+```
 
 ---
 
-## Element 5: **RENUMBERED** - Video 2 - Keith Pelley (MLSE CEO) (was Element 4)
+## Element 7: Video 3 - Keith Pelley (MLSE CEO) ⏳ PENDING
 
 **⚠️ STATUS: SCRIPTED CONTENT - Interview recording pending**
 

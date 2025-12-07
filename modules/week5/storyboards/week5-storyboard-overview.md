@@ -28,10 +28,12 @@ This storyboard has been split into individual module files for easier navigatio
    - Course synthesis and Week 5 focus
    - Connection to CLO 5
 
-3. **[Voices from Heritage Properties](modules/module-2-executive.md)** (~4 KB)
-   - Recorded session with Jamie Dinsmore (HHOF President & CEO)
-   - Recorded session with Keith Pelley (MLSE President & CEO)
+3. **[Voices from Heritage Properties](modules/module-2-executives.md)** (~25 KB)
+   - **✅ Available:** Golf Canada (Niki DaSilva & Tim McLaughlin) - Heritage SPORT transformation (~45 min)
+   - **✅ Available:** Jamie Dinsmore (Hockey Hall of Fame CEO) - Heritage INSTITUTION management (~18 min)
+   - ⏳ Pending: Keith Pelley (MLSE CEO) - Modern franchise perspective
    - Real-world context on heritage vs. growth tension
+   - **Time**: ~85-90 minutes (63 min viewing + reflection)
 
 4. **[Tradition Meets Innovation](modules/module-3-core-content.md)** (~48 KB)
    - **V3 INTERACTIVE-FIRST REDESIGN** (75% active engagement target)

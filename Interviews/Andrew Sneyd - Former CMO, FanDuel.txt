@@ -1,0 +1,1649 @@
+1
+00:00:01,760 --> 00:00:05,850
+[Auto-generated transcript. Edits may have been applied for clarity.]
+There we go. All right.
+
+2
+00:00:05,860 --> 00:00:07,690
+Recording is song. That's good.
+
+3
+00:00:08,140 --> 00:00:14,920
+I'll watch the clock because you and I both have a Jays game to attend, and I don't think we'll need more than half an hour anyways.
+
+4
+00:00:14,920 --> 00:00:18,190
+And I loved your thought of, uh, you know, it's you.
+
+5
+00:00:18,550 --> 00:00:20,200
+We'll keep it casual and fun.
+
+6
+00:00:20,230 --> 00:00:25,340
+Yes, I have a little bit of a script just to get going, but if it takes a little bit of its life on its own, let's have fun with it.
+
+7
+00:00:25,360 --> 00:00:28,479
+Like, you know, you you know more about this topic than than I ever will.
+
+8
+00:00:28,480 --> 00:00:35,470
+Probably. So, um, and one quick thing before I know it's recording, but doesn't matter, but because I noticed on your I.V.,
+
+9
+00:00:35,590 --> 00:00:42,219
+like I usually refer to you as, like you were CMO at FanDuel on your LinkedIn, it was like EVP marketing.
+
+10
+00:00:42,220 --> 00:00:45,400
+I mean, does it care? Do you matter like, it doesn't matter who?
+
+11
+00:00:45,410 --> 00:00:49,540
+CMO, CMO. That's what I thought. Okay, perfect. All right. Okay.
+
+12
+00:00:50,840 --> 00:00:54,560
+All right, everyone, this is, uh, podcast series one.
+
+13
+00:00:54,740 --> 00:01:01,790
+And, uh, it gives me great pleasure today that I am with Andrew Sneed, who I have had the pleasure of knowing for quite some time.
+
+14
+00:01:02,150 --> 00:01:09,740
+He's had an incredible career. Uh, he's done a lot in marketing, but in particular, he is definitely in my network the most.
+
+15
+00:01:10,040 --> 00:01:15,290
+Uh, subject matter expert, if you will, on the exploding field of sports gaming.
+
+16
+00:01:15,290 --> 00:01:19,910
+Sports betting, um, you know, CMO for FanDuel for many, many years.
+
+17
+00:01:20,240 --> 00:01:24,170
+Um, and, uh, Andrew, thanks for, uh, for joining.
+
+18
+00:01:24,830 --> 00:01:28,040
+It's great to be here. Looking forward to it. So awesome.
+
+19
+00:01:28,040 --> 00:01:35,240
+So before we jump in and get into some of the content, I always like to sort of get a flavor for you as a person.
+
+20
+00:01:35,570 --> 00:01:43,040
+So just for like 30s to a minute, what was ten year old Andrew's Nate like a ten year old actor?
+
+21
+00:01:43,340 --> 00:01:46,459
+Yeah. Uh, I grew up in small town Ontario.
+
+22
+00:01:46,460 --> 00:01:53,510
+Collingwood was a small town when I grew up in it. Um, uh, I loved playing sports.
+
+23
+00:01:53,640 --> 00:02:01,610
+I was in the choir. Uh, I was programed piano lessons, all kinds of stuff to keep me out of trouble.
+
+24
+00:02:01,610 --> 00:02:06,080
+So active, boisterous kid that would often get a, uh.
+
+25
+00:02:06,320 --> 00:02:14,570
+Andrew tends to be chatty on my report card. Uh, my parents did a nice job of keeping me on the straight and narrow by making sure that, uh,
+
+26
+00:02:15,260 --> 00:02:21,020
+all of the after school time was filled with lots of different sports and other activities.
+
+27
+00:02:21,830 --> 00:02:24,260
+So no surprise, you definitely had a sports theme.
+
+28
+00:02:24,260 --> 00:02:31,400
+That's what I remembered, uh, from our chats even to last night, and were chatting about what's going on in the world of of sports.
+
+29
+00:02:31,790 --> 00:02:41,119
+So, you know, listen, sports gaming, sports betting has completely exploded, um, exploded as an industry exploded as a business.
+
+30
+00:02:41,120 --> 00:02:47,810
+And, you know, as you've always educated me to, has, you know, done a lot for that fan engagement and fan experience.
+
+31
+00:02:48,230 --> 00:02:55,910
+And so, you know, I think what um, I want to get into is you were really part of that transformation.
+
+32
+00:02:56,090 --> 00:02:59,780
+Like, you know, you joined FanDuel at a, I mean, a formative period.
+
+33
+00:02:59,780 --> 00:03:01,280
+You'll you'll tell everyone about that.
+
+34
+00:03:01,640 --> 00:03:11,090
+Um, but you know, what were some of those big turning points as you got started where you sort of probably reflected even as a marketer,
+
+35
+00:03:11,090 --> 00:03:16,190
+as a business person and said, okay, this is probably something that is going to explode.
+
+36
+00:03:16,190 --> 00:03:19,940
+So just tell us a little bit about, you know, how it got started, what it was like in the early stages.
+
+37
+00:03:20,600 --> 00:03:25,130
+Yeah. So I, I didn't start right at the beginning, but because I started five years ago,
+
+38
+00:03:25,520 --> 00:03:30,080
+certainly a little bit of a pinch me moment to realize what kind of a cultural,
+
+39
+00:03:30,410 --> 00:03:33,770
+you know, touchstone moment was happening in the world of sports betting.
+
+40
+00:03:33,770 --> 00:03:41,930
+So, uh, pass was repealed, uh, 2018 things take off in new Jersey.
+
+41
+00:03:42,320 --> 00:03:45,469
+I joined uh, right at the end of 2020 at FanDuel.
+
+42
+00:03:45,470 --> 00:03:48,500
+And so there are already a few different states that had sports betting.
+
+43
+00:03:49,550 --> 00:03:52,220
+Um, and we were right smack in the middle of Covid.
+
+44
+00:03:52,910 --> 00:04:01,400
+So, you know, folks often ask, did this business explode based on dynamic leadership or, you know, right place, right time?
+
+45
+00:04:02,240 --> 00:04:11,240
+It was definitely both of those things. We were very fortunate that we, uh, were part of flutter, which was the global leader in sports betting.
+
+46
+00:04:11,240 --> 00:04:17,450
+So we had a lot of people that knew what they were doing, a lot of folks with Irish accents that knew risk and trading well within our halls.
+
+47
+00:04:18,200 --> 00:04:30,079
+But we also had, uh, incredible, fortuitous moment that there are tons of people stuck at home looking for entertainment and the ability to be able
+
+48
+00:04:30,080 --> 00:04:37,340
+to watch carefully created basketball games and football matches with the care that was needed for the times.
+
+49
+00:04:38,150 --> 00:04:42,680
+You know, the way to connect with it suddenly became an extra level of engagement,
+
+50
+00:04:42,680 --> 00:04:48,110
+because you could not just sit back on the couch and wait to see the outcome of win or loss.
+
+51
+00:04:48,110 --> 00:04:57,530
+But now, by placing a sports bet a little five bucks, is that person going to score a touchdown or get more than six rebounds or whatever it might be?
+
+52
+00:04:58,190 --> 00:05:01,610
+We had a way that people could engage in the television.
+
+53
+00:05:02,240 --> 00:05:08,420
+So you were a lean forward in your experience and then tons of group chats with friends.
+
+54
+00:05:08,720 --> 00:05:13,220
+Hey, check out what I just won 20 bucks on tonight in this game.
+
+55
+00:05:13,580 --> 00:05:19,670
+And everyone sort of feeling the rise around them and the sociability that came with, you know,
+
+56
+00:05:19,670 --> 00:05:24,050
+a way to connect with others and have some entertainment in a pretty difficult time.
+
+57
+00:05:24,710 --> 00:05:32,630
+So definitely the customer was ready for something to be different and connected in a pretty, uh, isolating period of time.
+
+58
+00:05:33,200 --> 00:05:40,549
+But also states needed that revenue, like there were more and more states coming on board as they saw, you know,
+
+59
+00:05:40,550 --> 00:05:49,070
+the social acceptance of this with their voters and definitely the need to be able to tax something new to make up for some of the revenue shortfalls.
+
+60
+00:05:50,110 --> 00:05:54,190
+Fascinating. So, you know, love it that you were kind of there in a pivotal moment.
+
+61
+00:05:54,220 --> 00:05:59,380
+Um, dynamics in the marketplace, the sociability for sports betting, for sure.
+
+62
+00:05:59,890 --> 00:06:09,790
+Um, what do you think from your experience was, I guess, some of the mindset shift that allowed sports betting to become,
+
+63
+00:06:09,790 --> 00:06:14,079
+as you said, a little more mainstream, a little more part of the social conversation.
+
+64
+00:06:14,080 --> 00:06:17,560
+Like, do you think it was partly the technology?
+
+65
+00:06:17,890 --> 00:06:22,959
+Do you think it was fan behavior? Do you think it was just right place, right time?
+
+66
+00:06:22,960 --> 00:06:26,380
+Like what were some of the drivers you think that really pushed it into more mainstream?
+
+67
+00:06:26,890 --> 00:06:30,160
+I think you have to look at it as it didn't just happen overnight.
+
+68
+00:06:30,190 --> 00:06:33,430
+I think it starts with there's been sports betting forever.
+
+69
+00:06:34,000 --> 00:06:41,860
+It was just done. Pencil depend on paper and hey shady back room at a bar.
+
+70
+00:06:41,860 --> 00:06:49,360
+This stuff was happening out of the I probably goes back to like Roman times of are you betting on this gladiator or that one?
+
+71
+00:06:50,050 --> 00:06:51,280
+So it's always been there.
+
+72
+00:06:51,760 --> 00:07:03,249
+It was more as um, you know, you had the rise of, uh, people having their, uh, fantasy football teams and then ability to have.
+
+73
+00:07:03,250 --> 00:07:07,090
+Well, you don't have to once I have a crummy team, this whole season's lost.
+
+74
+00:07:07,090 --> 00:07:14,650
+I got to wait till next September before I can be excited again. So daily fantasy sports, which FanDuel was a leader in, became big.
+
+75
+00:07:15,260 --> 00:07:21,310
+That allowed you to be able to create a new fantasy team every single night competing against peers.
+
+76
+00:07:21,970 --> 00:07:31,390
+And that's where FanDuel started. Uh, and so when the laws were repealed that allowed for states to be able to legalize sports betting,
+
+77
+00:07:31,390 --> 00:07:36,100
+monitor it, tax it, bring it out into the open to make sure that it's done properly.
+
+78
+00:07:36,910 --> 00:07:41,020
+We were certainly in a great position because we had a whole bunch of customers
+
+79
+00:07:41,020 --> 00:07:45,280
+that were following fantasy sports play and could now bet against the house.
+
+80
+00:07:45,280 --> 00:07:53,890
+And, you know, with the technology that made it super easy to have it on your phone as an easy way to be able to get, um,
+
+81
+00:07:54,160 --> 00:08:03,459
+quickly and relatively easy understanding of, you know, a lot to pick this person and slide it over for this many points.
+
+82
+00:08:03,460 --> 00:08:10,660
+Like it just became a pretty easy interface again in a period of time where people were pretty starved for what entertainment did they had.
+
+83
+00:08:11,590 --> 00:08:19,630
+Makes sense. So you've talked a lot about how people watch engage, you know, chatting with their buddies.
+
+84
+00:08:19,990 --> 00:08:23,350
+Um, certainly I saw some of that is, you know, I'm a big sports fan too.
+
+85
+00:08:23,350 --> 00:08:35,080
+But when you think about the fan and that experience, um, how do you think betting changed the way people actually watch and engage with sports?
+
+86
+00:08:35,500 --> 00:08:41,230
+Yeah. Or you know what this is, first of all, just overall it creates more engagement.
+
+87
+00:08:41,500 --> 00:08:49,960
+So one of the things that I find really interesting is to look at the, uh, television ratings of NFL football in the US,
+
+88
+00:08:50,380 --> 00:08:55,630
+and they were in decline right, until sports betting legalized and started going back up again.
+
+89
+00:08:55,630 --> 00:09:01,300
+And now it's huge. And I do believe that that's not, uh, coincidence.
+
+90
+00:09:02,020 --> 00:09:06,940
+There's just more people more interested in more than just their own team.
+
+91
+00:09:07,210 --> 00:09:10,420
+So it expands your engagement. It expands.
+
+92
+00:09:10,960 --> 00:09:15,850
+Hey, I really like that player. I have conviction that they're going to play really well this game.
+
+93
+00:09:16,090 --> 00:09:18,520
+You open up another viewing moment.
+
+94
+00:09:19,240 --> 00:09:27,250
+Uh, in addition, obviously, you know, there are a lot of games that are done after the third quarter or, you know, the second period.
+
+95
+00:09:28,060 --> 00:09:34,930
+That's not the case anymore. If you're following along to whether or not your player is going to hit their prop bet.
+
+96
+00:09:35,050 --> 00:09:39,430
+So, you know, now you've got people watching through to the end of the game.
+
+97
+00:09:39,430 --> 00:09:42,489
+And that's been a big part of, you know,
+
+98
+00:09:42,490 --> 00:09:50,230
+the engagement levels that have happened with the business and also why leagues like the NFL and NBA are interested in,
+
+99
+00:09:51,040 --> 00:10:00,760
+uh, warmly welcoming sports, betting the right way into the business and helping us to be able to create something that's better for their fan bases.
+
+100
+00:10:01,420 --> 00:10:05,860
+Yeah, I mean, it just when I hear you and I know I've heard you talk to me about that story,
+
+101
+00:10:05,860 --> 00:10:10,419
+and I was at, uh, you know, sports, I think it was Sports Business Journal seminar.
+
+102
+00:10:10,420 --> 00:10:14,829
+And Roger Goodell was on a panel, and he literally was saying the exact same thing,
+
+103
+00:10:14,830 --> 00:10:22,750
+that how he was talking positively about people staying on longer in the broadcast, because now there's a reason to do that.
+
+104
+00:10:22,750 --> 00:10:26,860
+It's not like, oh, God, it's 28. Nothing. And my team's down and I don't care anymore.
+
+105
+00:10:26,860 --> 00:10:31,210
+Yes, you may have been into fantasy, but definitely he acknowledged that and then showed the same charts.
+
+106
+00:10:31,510 --> 00:10:38,049
+Yeah, we actually built ready to plug and play tools for the broadcaster.
+
+107
+00:10:38,050 --> 00:10:45,879
+So we had a partnership with TNT, and we had the ability for them to use an API to have the live betting over and
+
+108
+00:10:45,880 --> 00:10:49,870
+under of the total points of the game and any other things that they can bring to.
+
+109
+00:10:49,950 --> 00:10:54,990
+A broadcast where who is going to win or lose was now out of reach.
+
+110
+00:10:55,020 --> 00:10:59,520
+But there was something else that they could show in the fourth quarter for you to be interested in.
+
+111
+00:11:00,060 --> 00:11:05,190
+Uh, and you, they also have the ability to say, wow, really feels like the game shifted.
+
+112
+00:11:05,930 --> 00:11:08,969
+Uh, in that ten point run. And it's like, well, yeah.
+
+113
+00:11:08,970 --> 00:11:13,799
+Now they were, uh, the dog, uh, x uh, to one.
+
+114
+00:11:13,800 --> 00:11:16,100
+And now look at how much of a favorite they are.
+
+115
+00:11:16,110 --> 00:11:24,950
+Thank you for FanDuel to provide that insight so that people can actually have an objective look at what happened with that run.
+
+116
+00:11:24,960 --> 00:11:32,460
+So there were lots of things that we were able to do to be part of a better viewership experience, one that I call more of a lean and experience,
+
+117
+00:11:32,460 --> 00:11:38,760
+the same way that young people are more engaged playing video games than you are sitting back and watching a movie.
+
+118
+00:11:39,150 --> 00:11:45,450
+This allows for an active engagement of sports that happens with sports fans.
+
+119
+00:11:46,080 --> 00:11:50,940
+Makes complete sense. So I want to pivot just for a second.
+
+120
+00:11:50,970 --> 00:11:54,390
+Um, because it's a topic I know you and I both like to talk about.
+
+121
+00:11:54,390 --> 00:11:59,040
+And also, maybe I'm a little biased. Um, marketing.
+
+122
+00:11:59,130 --> 00:12:10,230
+This is the business of sports marketing. And, you know, one might think, okay, well, there's, you know, 5 or 6 different sports betting platforms.
+
+123
+00:12:10,230 --> 00:12:16,860
+Are they really that different? Like, who cares? And maybe someone enticed me and gave me $50 of free bets and I started to go through.
+
+124
+00:12:17,580 --> 00:12:23,219
+But there is a branding element here. And I think probably you're going to tell me about FanDuel, what you've done.
+
+125
+00:12:23,220 --> 00:12:32,910
+But I want to get specific because I think FanDuel has done a really good job at becoming that culturally cool brand.
+
+126
+00:12:32,910 --> 00:12:36,210
+Like there's a brand here. It's not just this boring good platform.
+
+127
+00:12:36,480 --> 00:12:43,500
+And you know, when I mentioned things like The Kick of Destiny and for those who don't know what that is and I'm sure can elaborate a little bit,
+
+128
+00:12:43,920 --> 00:12:50,850
+um, you know, how did you come up with a certain philosophy, if you will,
+
+129
+00:12:50,850 --> 00:12:55,680
+for what the brand was going to mean and why marketing was going to be really important in this category?
+
+130
+00:12:57,390 --> 00:13:02,220
+Uh, well, first things, we put a lot of effort into trying to make sure that FanDuel could,
+
+131
+00:13:03,000 --> 00:13:06,809
+uh, separate from the run of the mill sports betting brands.
+
+132
+00:13:06,810 --> 00:13:09,090
+And for quite a while, it was pretty transactional.
+
+133
+00:13:09,630 --> 00:13:17,400
+And, you know, certainly those welcome bonuses and sign ups are still a big part of what you need to do to acquire customers.
+
+134
+00:13:18,060 --> 00:13:25,980
+But we spent a lot of time trying to appreciate what customers, potential customers that say they're open to sports betting.
+
+135
+00:13:26,760 --> 00:13:34,800
+We really needed to understand what would turn them from being curious and sideline spectators, as what we call them, to getting into the game.
+
+136
+00:13:35,520 --> 00:13:40,100
+And it was three things. It was trust.
+
+137
+00:13:40,140 --> 00:13:42,360
+This whole category is new.
+
+138
+00:13:42,360 --> 00:13:50,730
+I want to make sure that this is proper brand, and I'm not accidentally betting with some offshore thing that's not even going to pay out if I win.
+
+139
+00:13:50,940 --> 00:13:56,460
+So that was an important thing to realize. Like new category trust is really important.
+
+140
+00:13:57,830 --> 00:14:02,180
+Uh, second was easy. Like, this is also confusing.
+
+141
+00:14:02,180 --> 00:14:05,419
+Like there's so many. What's a parlay?
+
+142
+00:14:05,420 --> 00:14:08,749
+And what do you mean? Moneyline versus taking points?
+
+143
+00:14:08,750 --> 00:14:14,150
+I'm not sure I understand. So we had to do a lot of work to try to be welcoming and simple.
+
+144
+00:14:14,900 --> 00:14:22,309
+And then third, and only after we had the trust with those two was fun and exciting with an optimistic mindset,
+
+145
+00:14:22,310 --> 00:14:28,340
+because every time you place a bet, it's like, wow, this could happen. Like, that's right, 20 lags and all these things need to happen.
+
+146
+00:14:28,340 --> 00:14:35,390
+But why not? Something needs to happen. Yeah, and that optimistic, fun attitude was an important part of what we were building.
+
+147
+00:14:35,960 --> 00:14:44,810
+Okay. So so the example you shared of The Kick of Destiny might be the perfect one to be able to show how we had to bring that to life.
+
+148
+00:14:44,810 --> 00:14:49,730
+So I want you to describe it because I'm, you know, sometimes I've learned like I'm keenly aware.
+
+149
+00:14:49,730 --> 00:14:52,160
+And again, you'll tell me how the awareness numbers were off the charts.
+
+150
+00:14:52,160 --> 00:14:56,750
+But let's say just take the minute for someone who, let's say is not in this category,
+
+151
+00:14:56,750 --> 00:15:01,130
+wasn't aware, like what this campaign was, I'm more interested in the strategy,
+
+152
+00:15:01,340 --> 00:15:08,299
+what you were trying to do here, and then even some of the stories of actually how something like that really comes to be,
+
+153
+00:15:08,300 --> 00:15:11,450
+because I know you personally were involved. Yeah.
+
+154
+00:15:11,570 --> 00:15:18,920
+Uh, so basically we had, uh, we've got an opportunity to have an ad in the Super Bowl.
+
+155
+00:15:19,400 --> 00:15:26,780
+You know, the NFL has decided that it's if you're, uh, an official partner, then you can buy a spot in the Super Bowl.
+
+156
+00:15:26,810 --> 00:15:32,730
+We should do this. And now I've got the angel and the devil on my shoulder because.
+
+157
+00:15:33,950 --> 00:15:39,200
+Our CFO is rightly saying, hey, if we put an ad in the second quarter of the Super Bowl,
+
+158
+00:15:39,890 --> 00:15:43,580
+it's the worst time in the year to have an ad that's going to pay back.
+
+159
+00:15:43,610 --> 00:15:51,350
+We've just literally an hour ago had our biggest demand generation moment where we could acquire all these customers,
+
+160
+00:15:51,740 --> 00:15:54,800
+and we're going to put the ad after that. That doesn't make any sense.
+
+161
+00:15:55,160 --> 00:16:00,470
+And then the marketing side of me is going, oh, but hold on, we need to drive awareness.
+
+162
+00:16:00,890 --> 00:16:08,780
+There's no moment in the US where people are shushing each other to hear what this ad is all about, and not just a couple of people.
+
+163
+00:16:08,780 --> 00:16:12,380
+More than 100 million televisions are turned into this thing.
+
+164
+00:16:12,980 --> 00:16:19,130
+And so how do we make this thing? So that's the duality of the challenge of we're not very well known.
+
+165
+00:16:19,940 --> 00:16:23,690
+This category is new. It's very quick.
+
+166
+00:16:24,200 --> 00:16:27,820
+You know, you got a 32nd AD and of surrounded by celebrities all around us.
+
+167
+00:16:27,830 --> 00:16:32,750
+And here goes the Coca-Cola and the Budweiser and the Eminem's and the Pringles and all the other things that are around here.
+
+168
+00:16:34,010 --> 00:16:37,410
+And so. Big stage. Wait a minute.
+
+169
+00:16:37,430 --> 00:16:45,530
+It's right after. Everyone should care. But of course, everything has been moving for NFL Super Bowl campaigns that you release them early.
+
+170
+00:16:46,160 --> 00:16:49,970
+And having come from Budweiser, I knew how that engine worked.
+
+171
+00:16:50,600 --> 00:16:56,180
+And what we did was build. We're going to need something that breaks the space time continuum.
+
+172
+00:16:56,720 --> 00:17:00,650
+We're going to need to generate demand before our ad ever runs.
+
+173
+00:17:01,100 --> 00:17:11,070
+And so the idea was put to the team. What are we going to do? Well, what if we create the world's simplest bet and we let that be in the run up?
+
+174
+00:17:11,090 --> 00:17:16,549
+Anyone that bats on FanDuel is eligible for a moment.
+
+175
+00:17:16,550 --> 00:17:19,680
+That is the world's simplest bat. What should it be?
+
+176
+00:17:20,180 --> 00:17:23,540
+The coin. Let's do. Heads or tails or before. That was one of the ideas we had.
+
+177
+00:17:23,550 --> 00:17:28,040
+Well, turns out some states you can actually bet on that and some you can.
+
+178
+00:17:28,050 --> 00:17:31,170
+So legally, we weren't allowed by. Back to the drawing board.
+
+179
+00:17:31,530 --> 00:17:39,840
+What if we tried a fish out of water? Can some random person kick a field goal and we do it as a live television ad?
+
+180
+00:17:40,230 --> 00:17:44,970
+It's like, okay, that's a pretty cool idea. And the agency demanded that it was Pete Davidson.
+
+181
+00:17:45,390 --> 00:17:52,440
+I'm like, I'm not sure why it needs to be him. We actually just signed Rob Gronkowski to being one of our spokespeople.
+
+182
+00:17:52,890 --> 00:17:59,250
+Let's see if he can do it, because he's had the pressure of the moment on Super Bowl Sunday and lived up to it before.
+
+183
+00:17:59,580 --> 00:18:03,810
+But catch the ball. This is the first time anyone's going to try to have him kick a ball.
+
+184
+00:18:03,960 --> 00:18:10,230
+Actually, he kicked one field goal in high school as he's very talented when we went through this whole campaign.
+
+185
+00:18:10,680 --> 00:18:19,169
+So the whole thing was set up that we were going to run a massive campaign that every single person that signed up for
+
+186
+00:18:19,170 --> 00:18:27,660
+FanDuel in the lead up to Super Bowl would also be eligible for splitting $10 million if Rob Gronkowski kicked a field goal.
+
+187
+00:18:28,980 --> 00:18:33,980
+And then actually, as a fun aside, legally wasn't allowed to be if he made or missed.
+
+188
+00:18:33,990 --> 00:18:41,850
+So we had to say kicked a field goal and then whispered to all of the state regulators that we wrote the rules that he would be kicking a ball.
+
+189
+00:18:41,850 --> 00:18:47,249
+And of course that would happen and everyone would win. So that is what ended up turning out.
+
+190
+00:18:47,250 --> 00:18:52,799
+But it was a lot of fun and ceremony that went with the silly preambles of him
+
+191
+00:18:52,800 --> 00:18:57,360
+deciding he would take this on and be trained and all the stuff that went with it.
+
+192
+00:18:57,570 --> 00:19:03,030
+So really worked well. We grew brand awareness from 40% to 50.
+
+193
+00:19:03,450 --> 00:19:07,020
+We, uh, won all kinds of awards.
+
+194
+00:19:07,050 --> 00:19:13,140
+This is, uh, yeah, business award that goes with creating a great brand campaign.
+
+195
+00:19:13,200 --> 00:19:18,690
+Um, you know, just an incredible, fun time for the team to rally behind.
+
+196
+00:19:19,080 --> 00:19:24,959
+Again, the principles of the brand. Let's be welcoming. Let's find the easiest way for everyone to get in for off in a kick field or not.
+
+197
+00:19:24,960 --> 00:19:33,480
+Come on and say yes. No. Easiest bet possible. Um, how are we going to do with, uh, making it easy?
+
+198
+00:19:33,940 --> 00:19:38,849
+Uh, everybody, that Betsy's in this thing, you don't have to press a button and then fun.
+
+199
+00:19:38,850 --> 00:19:42,030
+Just make it incredibly likable. He's a wonderful personality.
+
+200
+00:19:42,030 --> 00:19:45,420
+That made it so much fun. And of course, he missed.
+
+201
+00:19:45,990 --> 00:19:50,639
+But the risk was in no one paying attention, and we certainly had everyone's attention.
+
+202
+00:19:50,640 --> 00:19:55,140
+So that worked well. Yeah, I mean, I remember watching it eagerly anticipating it.
+
+203
+00:19:55,140 --> 00:20:03,200
+I think I remember even like sending you a note afterwards, just saying, like, I'm amazed at this as a pure awareness grab.
+
+204
+00:20:03,210 --> 00:20:09,840
+It worked incredibly well. But let's talk for a second about, uh, awareness grab and 13 million people signed up.
+
+205
+00:20:09,840 --> 00:20:13,080
+So okay, both of those things happened at the same time.
+
+206
+00:20:13,290 --> 00:20:18,660
+And that's good because that's the CFO moment that we acquire for all the customers that we wanted.
+
+207
+00:20:18,840 --> 00:20:22,499
+Yes, $10 million was amount of money that we'd be giving away that day.
+
+208
+00:20:22,500 --> 00:20:31,409
+Anyway, in our generosity package. It just met way more when it was built into this big promotion that was well received.
+
+209
+00:20:31,410 --> 00:20:37,810
+And, you know, it was able to pull in a lot of customers. So it's a good segue because you've talked about some of them.
+
+210
+00:20:38,080 --> 00:20:44,320
+But, um, I know that a lot of people may, from the outside, look and say, whoa, hold on.
+
+211
+00:20:44,440 --> 00:20:48,310
+It's FanDuel. They're the number one. This is a big category.
+
+212
+00:20:48,340 --> 00:20:53,650
+Sports betting has large budget pools. They can go and create an ad like this and dominate the Super Bowl.
+
+213
+00:20:53,980 --> 00:21:04,240
+But when you're looking at it from your lens. And the KPIs that I know you care a lot about and have always told me how on the inside,
+
+214
+00:21:04,240 --> 00:21:08,530
+people don't realize how measured we are with every bit of our marketing spend.
+
+215
+00:21:08,620 --> 00:21:14,259
+Why don't you tell people about that side, about KPIs, even how it related to this ad,
+
+216
+00:21:14,260 --> 00:21:18,420
+but even how you managed that business and portfolio and what you missed.
+
+217
+00:21:19,000 --> 00:21:26,880
+It's interesting because you would think we're in the bad at all risk business as a sports betting company, but it's quite the opposite.
+
+218
+00:21:26,890 --> 00:21:29,920
+When you have all the data directly,
+
+219
+00:21:30,820 --> 00:21:37,450
+you're really able to be quite measured in what you're doing and having a great feedback loop, trying stuff out, scaling it.
+
+220
+00:21:38,140 --> 00:21:42,700
+Um, so because we have a direct customer relationship, everyone has to sign up.
+
+221
+00:21:42,710 --> 00:21:47,250
+There's quite a rigorous process for making sure that you're of age.
+
+222
+00:21:47,260 --> 00:21:50,530
+We need your banking information so we really know our customers.
+
+223
+00:21:51,460 --> 00:21:57,790
+Uh, and with that, as we spend dollars, we can spend them broadly on things like television,
+
+224
+00:21:57,790 --> 00:22:02,590
+which you can still really measure what kind of lift you get each time you put a spot into the world.
+
+225
+00:22:03,640 --> 00:22:07,750
+And we can measure them directly with each email we send out.
+
+226
+00:22:08,080 --> 00:22:15,130
+So, for example, last year, uh, FanDuel sent out 1 billion emails, uh, in the US.
+
+227
+00:22:15,520 --> 00:22:18,880
+And I just pause for a second that 1 billion, billion emails.
+
+228
+00:22:19,330 --> 00:22:25,330
+That's incredible. Yeah, yeah. Each time an email send was going out, if it was, uh,
+
+229
+00:22:25,330 --> 00:22:31,300
+to a specific cluster of more than a million customers, there would be a thousand emails that would go out.
+
+230
+00:22:32,230 --> 00:22:35,440
+Those ones would be cut maybe five different ways, different ways.
+
+231
+00:22:35,440 --> 00:22:42,070
+The images would show up in the headlines. The one that performed best scaled and went to the rest of five minutes after.
+
+232
+00:22:42,970 --> 00:22:49,690
+And you could imagine that there's all kinds of ways that you can cluster customers, those that bet a little versus those that bet a lot.
+
+233
+00:22:50,050 --> 00:22:59,230
+Those that like betting on specific sports or teams versus others, you know, hey, let's try to get someone who really loved NFL betting.
+
+234
+00:22:59,230 --> 00:23:05,639
+But now the NFL season is over. Let's figure out the interesting ways to move them over into interest for basketball,
+
+235
+00:23:05,640 --> 00:23:09,200
+and to try lots of different ways of setting them up and looking them over,
+
+236
+00:23:09,220 --> 00:23:13,660
+including, hey, here's a $10 bonus that to come over and play on this other sport.
+
+237
+00:23:14,650 --> 00:23:25,390
+All of that was done with incredible discipline of what is the measured impact of what we're spending and what we're getting against a,
+
+238
+00:23:25,930 --> 00:23:32,770
+um, you know, in the moment, and also what's likely to happen with this person's value over the next year and over the next three years.
+
+239
+00:23:33,490 --> 00:23:41,710
+So we spent $1 billion on television and other forms of media, lots of digital media and others.
+
+240
+00:23:42,250 --> 00:23:50,380
+All of that was paying back within 18 months. And we were really regimented about there's bonuses for more.
+
+241
+00:23:50,560 --> 00:23:55,420
+You know, if you see an ad, you're more likely to actually bat more if you're an existing customer.
+
+242
+00:23:55,420 --> 00:24:02,950
+But this was just customers we were acquiring. So all of the media budget, because the category was growing so quickly,
+
+243
+00:24:03,190 --> 00:24:06,610
+was spent against the value of customers that would come in and place their
+
+244
+00:24:06,610 --> 00:24:10,720
+first bet and then what they were likely to do over the their betting horizon.
+
+245
+00:24:11,440 --> 00:24:17,169
+So really, really regimented approach to using the dollars.
+
+246
+00:24:17,170 --> 00:24:21,000
+Well and you would think sport betting company let's make it rain.
+
+247
+00:24:21,010 --> 00:24:24,610
+It was quite the opposite with the data we had and how things could work.
+
+248
+00:24:25,530 --> 00:24:32,250
+Fascinating. Um, and so, you know, you've talked about some of these KPIs.
+
+249
+00:24:32,280 --> 00:24:33,990
+Um, you've talked about measurement.
+
+250
+00:24:34,440 --> 00:24:41,700
+Um, but I think there's also an important angle here, which is the bridge to kind of sponsorships and partnerships,
+
+251
+00:24:42,300 --> 00:24:45,600
+which I know are really important, obviously in this category.
+
+252
+00:24:46,020 --> 00:24:56,010
+Um, but, you know, I guess when you think about the deals that you have, you mentioned NFL, you mentioned NBA or any other major sports partners.
+
+253
+00:24:56,490 --> 00:25:03,420
+Um, you know, what's the lens that you would use when you were looking at some of those properties?
+
+254
+00:25:03,420 --> 00:25:12,030
+And obviously you have to write a sizable check to measure the value and the return that FanDuel is going to get from those associations.
+
+255
+00:25:13,270 --> 00:25:15,140
+Yeah, those ones are more difficult.
+
+256
+00:25:15,160 --> 00:25:25,090
+So when you're when you're able to measure direct response, that comes back from medium moments or incremental benefit from an affiliate sponsorship.
+
+257
+00:25:26,230 --> 00:25:29,890
+Easier to measure. Sponsorship stuff is a little more challenging.
+
+258
+00:25:30,250 --> 00:25:35,110
+Uh, one of the most interesting things that we did is a little bit of an aside,
+
+259
+00:25:35,110 --> 00:25:42,670
+but when we did a deep dive into, you know, hey, a lot of things need to happen with trust.
+
+260
+00:25:42,700 --> 00:25:47,980
+Trust is so important in this category. We did a lot to make the brand look polished and professional.
+
+261
+00:25:48,370 --> 00:25:53,620
+Make sure that we always showed up the same way every time. We wanted to make sure that we were a brand leader.
+
+262
+00:25:53,620 --> 00:25:56,770
+Look. Uh, and that was working well for us.
+
+263
+00:25:57,460 --> 00:26:02,020
+And it helped to make sure that people had some trust. And then we weren't some fly by night operation.
+
+264
+00:26:02,890 --> 00:26:08,920
+But the one thing when we did a big survey into like what's actually driving
+
+265
+00:26:08,920 --> 00:26:14,590
+trust and it was what people said drove trust was on one side of the page.
+
+266
+00:26:14,950 --> 00:26:26,260
+But what was derived? So if you rated these trust items high and you rated these brands high for how they were doing against those items,
+
+267
+00:26:26,650 --> 00:26:33,660
+one of the things that rose right to the top was is a sponsor of the leagues and teams that I love, which was quite surprising.
+
+268
+00:26:33,670 --> 00:26:38,210
+So it became like a really big point that. Oh.
+
+269
+00:26:38,940 --> 00:26:43,769
+Instead of us telling everyone that we should be trusted or behaving like a
+
+270
+00:26:43,770 --> 00:26:48,220
+leader that can be trusted in saying little things like that are very important.
+
+271
+00:26:48,240 --> 00:26:55,530
+Hey, when you win, we're going to pay you back with. You're going to instantly get the money that, uh, you just won in your account.
+
+272
+00:26:55,530 --> 00:27:05,060
+And all these things that are clear. Trust drivers. Above it all was, you know, the sponsor in the NFL or the sponsor of the New York Knicks.
+
+273
+00:27:05,900 --> 00:27:09,920
+And it was interesting that that is a credibility that comes from, hey,
+
+274
+00:27:09,920 --> 00:27:16,940
+the leagues and teams aren't going to go and be partners of shoddy fly by night operations.
+
+275
+00:27:17,570 --> 00:27:26,180
+It's an implied trust that comes from them, uh, which, you know, opened our eyes to, okay, this is more than just, you know,
+
+276
+00:27:26,180 --> 00:27:35,120
+signage that we can put in a stadium or the ability to put a logo next to the ad that we're running that's inside the NFL.
+
+277
+00:27:35,930 --> 00:27:41,480
+Uh, it was a helpful communicator that we especially as the category was just growing.
+
+278
+00:27:42,140 --> 00:27:45,830
+Uh, this is one that I should probably look to first, so that was helpful.
+
+279
+00:27:46,700 --> 00:27:57,500
+Second thing is, you know, one of the key ways that we were, uh, deciding to sponsor, uh, teams or people was based on new states that were opening.
+
+280
+00:27:57,950 --> 00:28:05,900
+So, as you can imagine, every time a new state opened, suddenly it was like the doors opening on all this demand that is brand new.
+
+281
+00:28:06,530 --> 00:28:12,970
+And those I called them store launches. Like we had a whole bunch of store launches that were happening all over the country.
+
+282
+00:28:12,980 --> 00:28:16,340
+So Ohio opens massive state.
+
+283
+00:28:16,490 --> 00:28:19,530
+It opened right at the start of 2022.
+
+284
+00:28:19,550 --> 00:28:26,990
+I think we got 10% of all adults to sign up for FanDuel inside the state of Ohio in 30 days.
+
+285
+00:28:27,260 --> 00:28:35,059
+Crazy, huh? And when you break down what we do every time we launch the state, we do a recap of what worked and what didn't.
+
+286
+00:28:35,060 --> 00:28:41,600
+And what else can we do that can make it better. And there were all kinds of factors of how much money we spent, what did the competitors spend.
+
+287
+00:28:41,600 --> 00:28:48,110
+And but one of the key things was being a partner with the local teams that mattered.
+
+288
+00:28:48,950 --> 00:28:54,679
+So, you know, when you when you go into Missouri and that's going to happen here in the fall,
+
+289
+00:28:54,680 --> 00:29:01,250
+there's a reason that everyone will be showing that they're partner of the Kansas City Chiefs and a partner of the Saint Louis Cardinals,
+
+290
+00:29:01,790 --> 00:29:11,269
+and working with those teams to engage their fan base is to get messaging out that now sports betting is legal here in our state.
+
+291
+00:29:11,270 --> 00:29:14,900
+And here's a sign up offer. Those things became a really big part of what we did.
+
+292
+00:29:15,530 --> 00:29:21,120
+So I guess bowling a back to your question, lots of intangibles for our category.
+
+293
+00:29:21,120 --> 00:29:29,270
+It was a lot of trust passing that came from being an official partner of leagues and teams that people loved and trusted,
+
+294
+00:29:29,870 --> 00:29:33,560
+and then directly having access to,
+
+295
+00:29:34,190 --> 00:29:42,320
+um, you know, player lists and being able to work with team partners to be able to help with the customer acquisition game.
+
+296
+00:29:42,330 --> 00:29:45,470
+So we had those two things were pretty important. Excellent.
+
+297
+00:29:45,980 --> 00:29:55,820
+So I'm going to kind of zoom have ask you to zoom out maybe a little bit in that, you know you're in New York FanDuel US slash global office etc.
+
+298
+00:29:56,510 --> 00:29:58,760
+And then FanDuel was born in Canada.
+
+299
+00:29:59,480 --> 00:30:06,770
+And you've already educated me on you know, hey it's all about which markets open up and where is it legal for sports betting.
+
+300
+00:30:07,340 --> 00:30:13,520
+So how would you. Because there's probably going to be a lot of people in this course that, you know, are going to have a candle lens to this.
+
+301
+00:30:14,000 --> 00:30:18,920
+So what do you think are some of the learnings that, let's say,
+
+302
+00:30:18,920 --> 00:30:24,049
+if you were implanted into the Canadian marketplace now and you're looking at it that Canada
+
+303
+00:30:24,050 --> 00:30:28,760
+can learn from the US and maybe contrast because you've been a marketer in both markets.
+
+304
+00:30:29,120 --> 00:30:35,510
+What do you think are some of the nuances in sports betting that are really important in the Canadian landscape versus the US?
+
+305
+00:30:37,560 --> 00:30:42,850
+Yeah. You know, obviously sports betting is now legal in Ontario, and I was a big part.
+
+306
+00:30:42,870 --> 00:30:47,070
+It was helpful that I was from Ontario when we were going through what our launch plans could be.
+
+307
+00:30:47,080 --> 00:30:50,730
+We have a great marketing team in Ontario. Um.
+
+308
+00:30:51,920 --> 00:30:59,010
+The, uh, the opportunity to take advantage of natural sports fandom.
+
+309
+00:30:59,030 --> 00:31:04,700
+You see it now, like, everyone is so excited about the Toronto Blue Jays.
+
+310
+00:31:04,790 --> 00:31:06,020
+Uh, coast to coast.
+
+311
+00:31:06,050 --> 00:31:16,640
+So fun to watch Winnipeg Jets whistles at, uh, uh, in a hockey game or suddenly interrupted by a Alexandra Kirk home run and cried.
+
+312
+00:31:17,300 --> 00:31:26,750
+Yeah, the the the passion that exists is so similar and taking advantage of, you know, how to build those moments into the game.
+
+313
+00:31:26,990 --> 00:31:34,130
+One of the challenges. The NHL is not as easy to build sports betting with as the NFL and the NBA.
+
+314
+00:31:34,970 --> 00:31:41,660
+So why is that? There's just not as many, uh, proposition bets on players.
+
+315
+00:31:41,860 --> 00:31:47,330
+Um, so 80% of sports bets happen with player props, not which team is going to win.
+
+316
+00:31:48,080 --> 00:31:54,649
+And so when you have quarterbacks throwing yards, how many receptions will there be touchdowns.
+
+317
+00:31:54,650 --> 00:32:03,020
+How many strikeouts. Total bases home runs uh into basketball rebounds, points assists three pointers.
+
+318
+00:32:03,020 --> 00:32:11,480
+Like there's so many stats. And the world of the NHL has less goal scoring and less things that you can bet on.
+
+319
+00:32:12,050 --> 00:32:14,120
+There's still opportunity to improve that.
+
+320
+00:32:14,120 --> 00:32:19,280
+And I know the team has been working with the NHL on whether things can be official stats that are interesting.
+
+321
+00:32:19,850 --> 00:32:24,139
+How do you create live betting moments that are based on power plays?
+
+322
+00:32:24,140 --> 00:32:33,580
+Like there will be more that can happen there. Um, but the NHL has been a bit behind figuring out how there's more sports betting markets that exist,
+
+323
+00:32:33,590 --> 00:32:38,420
+so they haven't let the category help the sport engagement in the same way.
+
+324
+00:32:38,840 --> 00:32:47,610
+And I'm sure that's coming. Yeah. Well, they also didn't do as great a job of, uh, setting up guardrails for advertising.
+
+325
+00:32:47,630 --> 00:32:54,680
+So one of the things that I was most disappointed in, and one of the reasons why I got a lot of angry phone calls from friends and family,
+
+326
+00:32:55,430 --> 00:33:03,770
+I think there were 42 sports betting odds in the first, uh, NHL playoff game when sports betting was legal in Canada.
+
+327
+00:33:04,610 --> 00:33:10,579
+That's ridiculous and look so bad on the category versus the NFL.
+
+328
+00:33:10,580 --> 00:33:15,650
+Set a rule that there can only be one sports betting ad in every quarter in the NFL.
+
+329
+00:33:15,890 --> 00:33:19,460
+So the category had acceptance and showed up.
+
+330
+00:33:19,700 --> 00:33:25,520
+It didn't have the same level of, um, advertising.
+
+331
+00:33:25,850 --> 00:33:30,880
+Uh, that was there for, you know, cars or insurance companies.
+
+332
+00:33:30,890 --> 00:33:35,330
+It didn't overdo its welcome versus in Canada.
+
+333
+00:33:35,900 --> 00:33:44,360
+It was difficult right out of the gate. Uh, and so I think that's something that can also approve with, uh, with how it can come to life.
+
+334
+00:33:44,840 --> 00:33:51,499
+And then I just think in general, you've got a lot of local team love to, you know, when Alberta opens,
+
+335
+00:33:51,500 --> 00:34:02,330
+people will be very excited to be part of the flames and, um, any other local sport like it, you'll see the opportunity for local activation.
+
+336
+00:34:02,570 --> 00:34:09,740
+Definitely a lot of how to bring it to life and, um, more chain bars that exist across Canada, right?
+
+337
+00:34:09,980 --> 00:34:14,390
+To make an interesting way to be able to invite customers in.
+
+338
+00:34:15,020 --> 00:34:22,849
+Uh, I think it's going to be an exciting time. And clearly, you know, sports betting is already happening in every single province.
+
+339
+00:34:22,850 --> 00:34:30,440
+And so the challenge is how to make sure you can bring it out of the shadows and properly regulated,
+
+340
+00:34:30,530 --> 00:34:35,600
+uh, in the foreground in a way that, you know, the voters can be pleased with.
+
+341
+00:34:36,790 --> 00:34:44,440
+So that's a good segue. Maybe answer a little bit of it, but, um, what do you think this is all going to look like from sports betting?
+
+342
+00:34:45,100 --> 00:34:54,999
+Sports betting and fan engagement. Um, oh, if you will, for the next, in the next five years, do you think we're going to see more immersive,
+
+343
+00:34:55,000 --> 00:35:00,180
+more products, more personalized, like the market continuing to grow and develop?
+
+344
+00:35:00,190 --> 00:35:04,360
+Like where do you see it headed? Yeah, I'm surprised we haven't had some of it yet.
+
+345
+00:35:04,360 --> 00:35:10,590
+So folks are working on it. Mhm. Uh, there's already interesting things happening behind the scenes.
+
+346
+00:35:10,600 --> 00:35:13,810
+So there's dynamic ads being served today.
+
+347
+00:35:14,050 --> 00:35:17,230
+So as you're watching Amazon Thursday Night Football.
+
+348
+00:35:18,730 --> 00:35:29,559
+Uh. Basically, when the ad is served to your account, it's known whether or not you are a existing customer of FanDuel, uh, or not.
+
+349
+00:35:29,560 --> 00:35:34,180
+And you'll get served two different ads, which is pretty cool. So you're an existing customer.
+
+350
+00:35:34,180 --> 00:35:36,520
+Hey, right now here's a bonus bet that you can get.
+
+351
+00:35:36,910 --> 00:35:47,500
+Does it say Matthew, uh, or hey, right now, if you sign up $200 in the bonus, that's like it's already divergent in one dimension.
+
+352
+00:35:48,250 --> 00:35:52,210
+What's going to happen is that the, uh,
+
+353
+00:35:52,840 --> 00:35:59,979
+there will be a massive opportunity for personalization and let the big screen you're watching be the center of
+
+354
+00:35:59,980 --> 00:36:06,280
+the entertainment that's connecting your sports bets on your mobile phone to where you want your eyeballs to be.
+
+355
+00:36:06,610 --> 00:36:11,980
+Because right now, everyone's doing the how am I doing on my did I get that leg?
+
+356
+00:36:12,310 --> 00:36:19,450
+Oh, he needs two more rebounds. Not ideal, but the connected experience that exists with smart TVs.
+
+357
+00:36:19,450 --> 00:36:27,999
+Roku's working on this now. Others are working on it as well. You should be able to press the what's I like to call the SAP button.
+
+358
+00:36:28,000 --> 00:36:31,390
+That would pull up Spanish instead. The SGP button.
+
+359
+00:36:31,480 --> 00:36:38,440
+Your same game parlays roll across the bottom of the screen and shows you the progress on the score that you care about,
+
+360
+00:36:38,740 --> 00:36:49,000
+in addition to what's the score of the game. So there'll be a personalization experience on the main screen that connects your bets that you've made,
+
+361
+00:36:49,100 --> 00:36:57,370
+uh, how things are progressing as you're watching the game. And they can also do a hey, red alert, that basketball game that you're excited about.
+
+362
+00:36:57,370 --> 00:37:01,390
+Your prop bet is one rebound away. Would you like to switch?
+
+363
+00:37:01,420 --> 00:37:07,810
+Sure would. Like there's way more that can happen with technology that already exists today,
+
+364
+00:37:08,170 --> 00:37:13,150
+linking the accounts and having a way better personalized experience for your sports night?
+
+365
+00:37:13,600 --> 00:37:20,500
+Yeah, I can kind of envision that. And, uh, I think, you know, it's a pretty, pretty interesting time, I'm sure, for that.
+
+366
+00:37:20,920 --> 00:37:30,550
+So, um, just as we sort of start to wrap things up, you know, from, uh, the Andrew Nate kind of, uh, you know, book of knowledge here.
+
+367
+00:37:30,700 --> 00:37:34,180
+Uh, there are a lot of people sitting in watching saying, boy,
+
+368
+00:37:34,210 --> 00:37:39,730
+maybe I'm currently in a role and working at a bank or I'm, you know, just graduated or doing something.
+
+369
+00:37:39,730 --> 00:37:43,330
+And, you know, I'm interested in sports marketing,
+
+370
+00:37:43,810 --> 00:37:49,690
+and I might want to sort of get into maybe on some sports betting side, maybe it's with a league or a team.
+
+371
+00:37:50,080 --> 00:37:53,799
+Um, you know, what advice would you give them?
+
+372
+00:37:53,800 --> 00:38:01,780
+Or maybe they're in the industry for how you think someone could navigate a career, but more so, like,
+
+373
+00:38:02,200 --> 00:38:09,490
+how would you recommend they apply their skills to try to build great brands in this really competitive landscape?
+
+374
+00:38:11,370 --> 00:38:13,920
+Uh, I think it's such an exciting time.
+
+375
+00:38:14,070 --> 00:38:25,860
+Like the ability for any young person's curiosity to, uh, just help drive to interest in how they can make a difference for the business.
+
+376
+00:38:26,850 --> 00:38:36,060
+Is incredible. Like, we now have all of the data of performance feedback that exists and then incredible ways that we can.
+
+377
+00:38:36,870 --> 00:38:38,949
+You know, as a young person like, hey, wait a minute.
+
+378
+00:38:38,950 --> 00:38:45,059
+If we thought about this would happen in meetings, hey, have we thought about the fact that if someone loses,
+
+379
+00:38:45,060 --> 00:38:49,350
+like 3 or 4 bets in a row, they're probably going to churn out, can we do something about that?
+
+380
+00:38:49,440 --> 00:38:54,000
+It's like, well, we're not going to just say, never mind, you're that one.
+
+381
+00:38:54,240 --> 00:39:01,290
+But wait a minute. We could do, you know, we interrupt with like, hey, we know you're on a rough experience.
+
+382
+00:39:01,290 --> 00:39:05,640
+Here's a bonus bet and try it on something else. Like that's not a bad idea.
+
+383
+00:39:05,650 --> 00:39:10,770
+So I encourage people to be as human, curious as possible,
+
+384
+00:39:10,770 --> 00:39:18,329
+because I think one of the challenges that we have is that when you get into a business, um, especially as a young person,
+
+385
+00:39:18,330 --> 00:39:25,380
+and there's all this jargon floating around and lots of bureaucratic discipline for how things are supposed to run,
+
+386
+00:39:26,130 --> 00:39:30,660
+that little earworm in the back of your head that's like, well, wait a minute.
+
+387
+00:39:31,260 --> 00:39:35,040
+If I think about how people are using our product, does this matter?
+
+388
+00:39:36,450 --> 00:39:43,980
+Get it on the table. Those types of things make such a difference, and it's only when you're fresh eyed,
+
+389
+00:39:44,460 --> 00:39:49,320
+seeing things for the first time that those things are even possible to be seen.
+
+390
+00:39:49,560 --> 00:39:55,709
+Everyone else is stuck looking at trees, and you get a chance to see the forest in those early fresh air days.
+
+391
+00:39:55,710 --> 00:40:02,400
+So be vocal, you know? And definitely sports marketing or whatever kind of marketing.
+
+392
+00:40:03,210 --> 00:40:09,360
+The data is there. What has been marketing is equal parts science and discipline.
+
+393
+00:40:10,480 --> 00:40:14,530
+The science is now so good with the data that exists.
+
+394
+00:40:15,130 --> 00:40:19,190
+Embrace it and never forget that the art is still 33%.
+
+395
+00:40:19,210 --> 00:40:26,280
+You can only measure what's happened in the past. Being curious and having something interesting and roll forward for the future can't be measured,
+
+396
+00:40:26,290 --> 00:40:30,790
+so you still have to be able to figure out God and what can make a difference for the world.
+
+397
+00:40:31,480 --> 00:40:38,290
+I couldn't agree more. Excellent. Excellent points. So my last question for you before I let you go and watch some sports tonight.
+
+398
+00:40:38,620 --> 00:40:43,839
+Um, ten years from now, what are you going to be doing if you had a crystal ball,
+
+399
+00:40:43,840 --> 00:40:48,309
+if like your, you know, you've had a great career, you've done a lot of cool things.
+
+400
+00:40:48,310 --> 00:40:52,070
+Where do you see yourself ten years from now? Ten years from now?
+
+401
+00:40:52,090 --> 00:40:57,010
+I think, uh, playing a little tennis. Maybe I'll need to be paddle at that point.
+
+402
+00:40:57,010 --> 00:41:04,930
+Some skiing. Sitting back in a muskoka chair, uh, somewhere back in central Ontario would be fantastic.
+
+403
+00:41:05,260 --> 00:41:14,710
+And yes. And probably not able to unplug from curiosity of marketing problems and dabbling here and there along the line.
+
+404
+00:41:15,550 --> 00:41:17,210
+There you go. No surprise to me.
+
+405
+00:41:17,230 --> 00:41:25,719
+Well, uh, Andrew, as always, uh, thank you so much, uh, for shedding light in sort of this broader topic, the business of sports marketing,
+
+406
+00:41:25,720 --> 00:41:31,990
+but specifically around sports betting and, uh, you know, congrats on all the successes that you've had.
+
+407
+00:41:32,290 --> 00:41:37,029
+And certainly you've made a huge imprint on FanDuel rise globally.
+
+408
+00:41:37,030 --> 00:41:39,519
+And, uh, I'll never forget that kick of Destiny is, I think,
+
+409
+00:41:39,520 --> 00:41:45,040
+one of my all time favorite campaigns that you just showed us how measured it was and how successful it was.
+
+410
+00:41:45,040 --> 00:41:48,610
+So thanks for sharing this. And, uh, we'll we'll chat again soon.
+
+411
+00:41:49,090 --> 00:41:53,230
+Thank you. Thanks, man. Okay, let me just pause here.
+
+412
+00:41:54,160 --> 00:41:55,390
+All right. I'm going to.
+

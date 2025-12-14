@@ -51,7 +51,15 @@
       "mcp__playwright__browser_take_screenshot",
       "mcp__playwright__browser_wait_for",
       "Bash(python -m http.server:*)",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(/usr/local/bin/npx claude-code-templates@latest --hook=automation/simple-notifications --yes)",
+      "Bash(/opt/homebrew/bin/npx claude-code-templates@latest --hook=automation/simple-notifications --yes)",
+      "Bash(brew install:*)",
+      "Bash(/opt/homebrew/bin/brew install:*)",
+      "Bash(/usr/local/bin/brew install node)",
+      "Bash(cat:*)",
+      "Bash(node create-docx.js:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": [],
@@ -59,6 +67,23 @@
       "C:\\Users\\jkruck\\Ivey Business School\\EdTech Lab - Documents\\Github\\claude-code-workshop",
       "C:\\Users\\jkruck\\Ivey Business School\\EdTech Lab - Documents\\Github\\educational-prompts-hub",
       "C:\\Users\\jkruck\\Ivey Business School\\EdTech Lab - Documents\\Github\\Excel"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "executeautomation-playwright-server"
+  ],
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if command -v osascript >/dev/null 2>&1; then osascript -e 'display notification \"Tool: $CLAUDE_TOOL_NAME completed\" with title \"Claude Code\"'; elif command -v notify-send >/dev/null 2>&1; then notify-send 'Claude Code' \"Tool: $CLAUDE_TOOL_NAME completed\"; fi"
+          }
+        ]
+      }
     ]
   },
   "statusLine": {

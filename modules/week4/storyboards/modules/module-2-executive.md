@@ -11,8 +11,9 @@
 | 2 | **ⓘ Infobox (Callout)** ⬤ Required | Context about videos + viewing instructions | Type directly | Sets viewing expectations |
 | 3 | **▶ Video 1** ⬤ Required | Kevin Abrams (NY Giants) Interview (~32 min) | Upload MP4 + transcript | NFL operations, AI, NIL, athlete brands |
 | 4 | **▶ Video 2** ⬤ Required | Matt Rubinoff (Fairgrounds) Interview (~38 min) | Upload MP4 + transcript | Emerging sports, brand building, scaling |
-| 5 | **▤ Details** ○ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
-| 6 | **◈ AI Chat Widget** ○ Optional | "Ask questions about professional sports operations and emerging sports" | Configure in Uplimit | Named: "NFL Operations & Emerging Sports Q&A" |
+| 5 | **▶ Video 3** ⬤ Required | Niki DaSilva & Tim McLaughlin (Golf Canada) Interview (~45 min) | Upload MP4 + transcript | Women's sports growth, athlete endorsements, national sports org |
+| 6 | **▤ Details** ○ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
+| 7 | **◈ AI Chat Widget** ○ Optional | "Ask questions about professional sports operations and emerging sports" | Configure in Uplimit | Named: "NFL Operations & Emerging Sports Q&A" |
 
 ---
 
@@ -29,6 +30,7 @@ Before exploring the frameworks in depth, you need context from practitioners wh
 
 - **Kevin Abrams**, SVP Football Operations & Strategy, New York Giants - sharing insights on team building, data analytics in player evaluation, NIL opportunities, and how player brands intersect with team business operations
 - **Matt Rubinoff**, Co-Founder, Fairgrounds - discussing the explosive growth of emerging sports (pickleball/paddle), community-based brand building, scaling from concept to 11 locations, and the opportunity in underserved sports markets
+- **Niki DaSilva & Tim McLaughlin**, CPO & CMO, Golf Canada - discussing women's sports growth, athlete brand building (including Brooke Henderson), national sports organization marketing, and how governing bodies create commercial value through events like the RBC Canadian Open
 
 Their insights will ground the theory you're about to explore in Module 3 with real-world trade-offs, strategic decisions, and lessons learned from the field.
 ```
@@ -43,21 +45,24 @@ Their insights will ground the theory you're about to explore in Module 3 with r
 3. Copy markdown below:
 
 ```markdown
-Title: ◉ Executive Insights: NFL Operations & Emerging Sports
+Title: ◉ Executive Insights: Professional Sports, Emerging Sports & National Sports Organizations
 
-This module features two full executive interviews with practitioners from professional sports operations and emerging sports businesses:
+This module features three executive interviews with practitioners spanning professional sports operations, emerging sports businesses, and national sports organizations:
 
 **Kevin Abrams (NY Giants, ~32 min)** - SVP Football Operations & Strategy shares how the Giants use AI for talent evaluation, manage the salary cap as a portfolio (not a checking account), balance coaching urgency vs. front office long-term thinking, and navigate the NIL era where players arrive as established brands.
 
 **Matt Rubinoff (Fairgrounds, ~38 min)** - Co-founder discusses building a national pickleball/paddle brand from zero to 75,000 members across 11 locations, the "white space" between public and private clubs, scaling through vacant retail spaces, intentional brand/marketing focus (vs. traditional club operators), and why emerging sports offer first-mover advantages.
 
+**Niki DaSilva & Tim McLaughlin (Golf Canada, ~45 min)** - Chief People Officer and Chief Marketing Officer discuss governing body marketing, athlete brand building (Brooke Henderson's rise), women's sports growth initiatives (She Plays Golf program), event monetization (RBC Canadian Open, CPKC Women's Open), and how national sports organizations create commercial value while fulfilling developmental mandates.
+
 **Viewing Guide:**
 - Kevin: Watch for AI/data transformation, salary cap strategy, NIL athlete brand intersection, player investment opportunities
 - Matt: Watch for proof-of-concept methodology, brand differentiation strategy, geographic expansion logic, demographic targeting
+- Niki & Tim: Watch for women's sports growth drivers, athlete-as-brand building, national sports organization revenue models, governing body vs. league dynamics
 
 Videos support WLO 4.1 (revenue streams), WLO 4.2 (owned vs endorsed assets), WLO 4.3 (emerging opportunities), and WLO 4.4 (brand building).
 
-Total viewing time: ~70 minutes
+Total viewing time: ~115 minutes
 ```
 
 ---
@@ -171,7 +176,54 @@ Total viewing time: ~70 minutes
 
 ---
 
-## Element 5: Details Accordion - Video Transcripts & Executive Bios
+## Element 5: Video 3 - Niki DaSilva & Tim McLaughlin (Golf Canada) Interview
+
+**File:** `Interviews/Niki DaSilva & Tim McLaughlin - CPO & CMO, Golf Canada.mp4`
+**Duration:** ~45 minutes
+**Transcript:** `Interviews/Niki DaSilva & Tim McLaughlin - CPO & CMO, Golf Canada.txt`
+**Video Title:** "Golf Canada: National Sports Organization Marketing, Women's Sports Growth & Athlete Brand Building"
+**Video Caption:** "Golf Canada's CPO and CMO discuss governing body revenue, Brooke Henderson's brand impact, She Plays Golf initiative, and event monetization"
+
+### Interview Content - Key Topics Covered:
+
+**Golf Canada Structure (00:00-05:00)** - 126-year-old national sports organization, ~400,000 members, ~5,000 volunteers, ~140 staff across Canada, dual organizations (Golf Canada + Golf Canada Foundation)
+
+**Revenue Model (05:00-10:00)** - Diversified revenue beyond government funding: membership fees (handicap index, insurance), commercial partnerships, hospitality sales (RBC Canadian Open, CPKC Women's Open), mobile app monetization to "largest and most engaged golf audience in Canada"
+
+**Athlete Development Pipeline (10:00-15:00)** - National amateur/development team system, supporting transition from amateur to PGA/LPGA tour, no direct commercial relationships with touring pros but active brand building support, 2025 innovation: caddie sponsorships (Golf Canada branding on tour caddie polos)
+
+**Brooke Henderson as Marketing Anchor (15:00-22:00)** - Winningest Canadian golfer, dual CPKC Women's Open champion, inspiration for youth golf growth, using athlete success to amplify sponsor value, "golfer as anchor" strategy for commercial partnerships
+
+**Women's Sports Growth (22:00-30:00)** - She Plays Golf initiative targeting participation growth, CPKC Women's Open positioning, judgment-free/accessible programming, opportunity for sponsors to connect with underserved audience, women's golf as growth market
+
+**National Sports Organization Challenges (30:00-38:00)** - Balancing developmental mandate with commercial operations, volunteer management at scale (5,000+), governance of 126-year legacy institution, Ivey connection (Niki as HBA '03 alum, former MBA admissions director)
+
+**Event Monetization Strategy (38:00-45:00)** - RBC Canadian Open and CPKC Women's Open as primary commercial platforms, corporate hospitality, brand activation spaces, connecting sponsors to golf's unique demographic (high-income, engaged audience)
+
+**Viewing Guide for Students:**
+- Governing Body Revenue: How national sports organizations monetize beyond government funding
+- Athlete Brand Building: Supporting athlete brands WITHOUT direct commercial contracts
+- Women's Sports Growth: Program design (She Plays Golf) targeting underserved demographics
+- Event Platform Strategy: Using flagship events as commercial activation platforms
+- Legacy Institution Management: Balancing 126-year heritage with modern growth imperatives
+
+**Embed Code:**
+```html
+<iframe
+  src="[Uplimit video URL - Interviews/Niki DaSilva Tim McLaughlin Golf Canada.mp4]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Niki DaSilva & Tim McLaughlin - Golf Canada CPO & CMO on National Sports Marketing"
+  aria-label="Video interview with Niki DaSilva (CPO) and Tim McLaughlin (CMO) from Golf Canada discussing governing body marketing, women's sports growth, Brooke Henderson brand building, and event monetization"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+---
+
+## Element 6: Details Accordion - Video Transcripts & Executive Bios
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -240,33 +292,89 @@ Prior to Fairgrounds, Matt founded Stackt Market (stylized as "Stacked"), an inn
 - National expansion: Ontario (GTA, Kingston, Ottawa), Alberta, British Columbia
 - Future considerations: Basketball courts, golf simulators, other racquet sports
 
+---
+
+## Niki DaSilva - Chief People Officer, Golf Canada
+
+**Full Transcript:** See `Interviews/Niki DaSilva & Tim McLaughlin - CPO & CMO, Golf Canada.txt`
+
+**Bio:**
+Niki DaSilva serves as Chief People Officer at Golf Canada, overseeing people and culture functions for a 126-year-old national sports organization with ~140 staff across Canada. She manages Golf Canada's extensive volunteer network (~5,000 volunteers annually) and works closely with the board of directors on governance. Prior to Golf Canada, Niki spent eight years at Ivey Business School, including as Director of Admissions for the MBA program. She is an HBA '03 alumna.
+
+**Career Highlights:**
+- Chief People Officer at Golf Canada (126-year-old national sports governing body)
+- Former Director of MBA Admissions, Ivey Business School
+- HBA '03 alumna, former Busn 2257 instructor
+- Manages ~5,000 volunteers annually across Golf Canada events
+- Oversees 140+ staff across Canada
+
+**Industry Expertise:**
+- National sports organization governance
+- Volunteer management at scale
+- People and culture strategy in sports organizations
+- Legacy institution modernization
+
+---
+
+## Tim McLaughlin - Chief Marketing Officer, Golf Canada
+
+**Full Transcript:** See `Interviews/Niki DaSilva & Tim McLaughlin - CPO & CMO, Golf Canada.txt`
+
+**Bio:**
+Tim McLaughlin serves as Chief Marketing Officer at Golf Canada, leading brand, digital, and communications functions. He oversees marketing for Canada's national golf governing body, including the RBC Canadian Open and CPKC Women's Open—two of Canada's premier sporting events. Tim manages Golf Canada's commercial partnerships and works to connect brands with what he describes as "the largest and most engaged golf audience in Canada" (~400,000 members).
+
+**Career Highlights:**
+- Chief Marketing Officer at Golf Canada
+- Leads marketing for RBC Canadian Open and CPKC Women's Open
+- Oversees brand, digital, and communications for ~400,000 member organization
+- 2025 innovation: Caddie sponsorship program (Golf Canada branding on PGA/LPGA tour caddies)
+- Driving commercial partnership growth (+significant growth over 5-6 years)
+
+**Industry Expertise:**
+- National sports organization marketing
+- Event monetization and hospitality sales
+- Athlete brand building (without direct commercial contracts)
+- Women's sports growth strategy (She Plays Golf initiative)
+- Membership-based revenue models
+- Governing body vs. league marketing dynamics
+
+**Golf Canada Key Facts:**
+- 126-year-old national sports organization
+- ~400,000 members nationally
+- ~5,000 volunteers annually
+- Flagship events: RBC Canadian Open, CPKC Women's Open
+- Key athletes: Brooke Henderson (winningest Canadian golfer)
+- Initiatives: She Plays Golf (women's participation), Team Canada development program
+
 These transcripts are provided for accessibility and for students who prefer reading to watching videos.
 ```
 
 ---
 
-## Element 6: AI Chat Widget Configuration
+## Element 7: AI Chat Widget Configuration
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element
 2. Configure with details below:
 
-**Widget Name:** "NFL Operations & Emerging Sports Q&A"
+**Widget Name:** "Sports Business Executive Q&A"
 
 **System Prompt:**
 ```
-You are a knowledgeable assistant helping MBA students understand professional sports operations and emerging sports business based on Kevin Abrams' and Matt Rubinoff's interviews.
+You are a knowledgeable assistant helping MBA students understand professional sports operations, emerging sports business, and national sports organization marketing based on interviews with Kevin Abrams, Matt Rubinoff, and Niki DaSilva & Tim McLaughlin.
 
 Kevin Abrams (NY Giants SVP) covered: (1) AI/data transformation in NFL scouting and operations, (2) salary cap management evolution from "checking account" to "portfolio" thinking, (3) NIL era where athletes arrive as brands from college, (4) consensus building between coaches (short-term) and GMs (long-term), (5) business-football integration (player marketing with corporate sponsors), (6) NFL future (18-game season, tech officiating, international expansion).
 
 Matt Rubinoff (Fairgrounds co-founder) covered: (1) Proof of concept methodology (5 courts → 7K members in 3 months, zero marketing), (2) Brand differentiation strategy (marketing-first team vs. club operators), (3) White space identification (between unusable public and exclusive private), (4) Geographic expansion logic (data-driven market selection, regional managers), (5) Revenue model (court utilization, programming, partnerships), (6) Emerging sport assessment (wide demographic + accessibility + high ceiling = legs vs. flash-in-pan).
+
+Niki DaSilva & Tim McLaughlin (Golf Canada CPO & CMO) covered: (1) National sports organization revenue (membership, partnerships, hospitality vs. government funding), (2) Athlete brand building without direct contracts (supporting Brooke Henderson's brand through platform amplification), (3) Women's sports growth (She Plays Golf initiative, CPKC Women's Open), (4) Event monetization (RBC Canadian Open hospitality, brand activations), (5) Governing body vs. league dynamics, (6) Legacy institution management (126-year organization, 5,000+ volunteers).
 
 Provide clear, business-focused explanations with specific examples from the interviews when possible. Help students understand strategic frameworks, operational trade-offs, and lessons learned from practitioners.
 ```
 
 **Welcome Message:**
 ```
-Hi! I can help explain concepts from Kevin Abrams' (NY Giants) and Matt Rubinoff's (Fairgrounds) interviews. Kevin discussed NFL operations, AI, NIL athlete brands, and salary cap strategy. Matt discussed emerging sports growth, brand building, and scaling pickleball/paddle. What questions do you have?
+Hi! I can help explain concepts from the three executive interviews. Kevin Abrams (NY Giants) discussed NFL operations, AI, NIL athlete brands, and salary cap strategy. Matt Rubinoff (Fairgrounds) discussed emerging sports growth, brand building, and scaling pickleball/paddle. Niki DaSilva & Tim McLaughlin (Golf Canada) discussed governing body marketing, women's sports growth, and athlete brand building. What questions do you have?
 ```
 
 **Show System Prompt to User:** No
@@ -276,7 +384,7 @@ Hi! I can help explain concepts from Kevin Abrams' (NY Giants) and Matt Rubinoff
 ## Module 2 Complete - Transition to Module 3
 
 **What You've Learned:**
-You've heard from two practitioners operating at opposite ends of the sports industry: Kevin Abrams managing the NY Giants' $10B operation in the world's most established sports league, and Matt Rubinoff building Fairgrounds from zero to 75K members in emerging sports. You understand:
+You've heard from three practitioners spanning the sports industry spectrum: Kevin Abrams managing the NY Giants' $10B operation in the world's most established sports league, Matt Rubinoff building Fairgrounds from zero to 75K members in emerging sports, and Niki DaSilva & Tim McLaughlin growing Golf Canada's commercial operations while stewarding a 126-year institution. You understand:
 
 - How AI and data transformed from threat to necessity in professional sports
 - Why salary cap management requires portfolio thinking and consensus building
@@ -284,6 +392,8 @@ You've heard from two practitioners operating at opposite ends of the sports ind
 - The methodology for validating emerging sports opportunities through proof of concept
 - Why brand differentiation beats operational excellence in new markets
 - How to identify "white space" opportunities between market extremes
+- How national sports organizations build athlete brands WITHOUT direct commercial contracts
+- Why women's sports represent significant growth opportunity for properties and sponsors
 
 **Key Takeaways:**
 - **AI deployment requires quality prompts, not just technology** - Giants learned enterprise ChatGPT outputs depend on input precision
@@ -293,9 +403,12 @@ You've heard from two practitioners operating at opposite ends of the sports ind
 - **Marketing-first beats operational expertise** - Fairgrounds hired marketers who love sports, not club operators stuck in "archaic" models
 - **White space identification** - Emerging opportunities exist between unusable public options and exclusive private clubs
 - **Emerging sport viability** - Wide demographic + accessibility + high skill ceiling = staying power (vs. flash-in-pan)
+- **Governing body revenue diversification** - Golf Canada generates most revenue from membership and commercial partnerships, not government funding
+- **Platform amplification** - National organizations can build athlete brands (Brooke Henderson) by providing platform, even without direct contracts
+- **Women's sports growth** - She Plays Golf initiative shows how targeted programming drives participation and sponsor interest
 
 **Up Next: Module 3 - Interactive Discovery**
-Now that you've heard from practitioners operating in established (NFL) and emerging (pickleball) sports, it's time to apply these frameworks hands-on. In Module 3, you'll use interactive widgets to:
+Now that you've heard from practitioners operating in established sports (NFL), emerging sports (pickleball), and national sports organizations (Golf Canada), it's time to apply these frameworks hands-on. In Module 3, you'll use interactive widgets to:
 - Build athlete brand portfolios using the **Athlete Brand Calculator**
 - Evaluate emerging sports investments using the **Emerging Sports Investment Tool**
 - Model team-athlete partnership economics
@@ -306,7 +419,7 @@ Ready to experiment with these frameworks? Let's go!
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and executive insights from NFL operations and emerging sports (~70 minutes of video content)
+**You've completed:** Welcome, learning objectives, and executive insights from NFL operations, emerging sports, and national sports organization marketing (~115 minutes of video content)
 **Coming next:** Interactive athlete brand building and emerging sports evaluation tools (~35 minutes)
 
 **Take a moment to:**
@@ -314,7 +427,7 @@ Ready to experiment with these frameworks? Let's go!
 - Get water or a quick snack
 - Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
 
-**Progress:** You're 40% through Week 4 content! You've heard from Kevin Abrams (Giants) on NFL operations/AI/NIL and Matt Rubinoff (Fairgrounds) on emerging sports scaling—now you'll apply their frameworks through hands-on experimentation.
+**Progress:** You're 40% through Week 4 content! You've heard from Kevin Abrams (Giants) on NFL operations/AI/NIL, Matt Rubinoff (Fairgrounds) on emerging sports scaling, and Niki DaSilva & Tim McLaughlin (Golf Canada) on women's sports growth and governing body marketing—now you'll apply their frameworks through hands-on experimentation.
 
 *This break is optional but recommended. Return when you're ready to build athlete brand portfolios and evaluate emerging sports investments.*
 
@@ -323,25 +436,29 @@ Ready to experiment with these frameworks? Let's go!
 ## MODULE 2 Complete - Summary
 
 ### Elements Created:
-1. ✅ Connecting Introduction Text (Kevin Abrams + Matt Rubinoff framing)
-2. ✅ Infobox - Video Overview (~70 min total: Kevin 32 min + Matt 38 min)
+1. ✅ Connecting Introduction Text (Kevin Abrams + Matt Rubinoff + Golf Canada framing)
+2. ✅ Infobox - Video Overview (~115 min total: Kevin 32 min + Matt 38 min + Golf Canada 45 min)
 3. ✅ Video 1 - Kevin Abrams Interview (NFL operations, AI, NIL, salary cap, data transformation)
 4. ✅ Video 2 - Matt Rubinoff Interview (emerging sports, brand building, scaling pickleball/paddle)
-5. ✅ Details Accordion - Video Transcripts & Executive Bios
-6. ✅ AI Chat Widget - NFL Operations & Emerging Sports Q&A
+5. ✅ Video 3 - Niki DaSilva & Tim McLaughlin Interview (Golf Canada marketing, women's sports, athlete brand building)
+6. ✅ Details Accordion - Video Transcripts & Executive Bios
+7. ✅ AI Chat Widget - Sports Business Executive Q&A
 
 ### Executive Perspectives:
 - **Kevin Abrams (Giants):** AI implementation, salary cap portfolio management, NIL athlete brands, consensus building, data transformation, NFL future
 - **Matt Rubinoff (Fairgrounds):** Proof of concept methodology, brand differentiation, white space opportunities, geographic expansion, emerging sport assessment
+- **Niki DaSilva & Tim McLaughlin (Golf Canada):** Women's sports growth, national sports org revenue, athlete brand building without contracts, event monetization, governing body vs. league dynamics
 
 ### Pedagogical Design:
 - Multiple means of representation: video (visual+audio), transcripts (text), AI chat (interactive)
-- Authentic practitioner perspectives from established (NFL) and emerging (pickleball) sports
-- Real-world examples (Giants' $10B operations, Fairgrounds' 0→75K member growth)
+- Authentic practitioner perspectives from established sports (NFL), emerging sports (pickleball), and national sports organizations (Golf Canada)
+- Real-world examples (Giants' $10B operations, Fairgrounds' 0→75K member growth, Golf Canada's 400K member organization)
+- Women's sports growth perspective through She Plays Golf initiative and Brooke Henderson brand building
 - Prepares for hands-on application in Module 3's interactive widgets
 
 ### Total Time Estimate:
 - Video 1 (Kevin): 32 minutes
 - Video 2 (Matt): 38 minutes
-- Reading (intro + infobox): 3 minutes
-- **Total Module 2 time: ~73 minutes**
+- Video 3 (Niki & Tim): 45 minutes
+- Reading (intro + infobox): 5 minutes
+- **Total Module 2 time: ~120 minutes**

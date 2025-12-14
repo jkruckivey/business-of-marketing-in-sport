@@ -5,18 +5,20 @@
 
 **Uplimit Structure:** Second module in Unit 5
 
-**Context:** Two recorded executive sessions—one from a heritage institution perspective (HHOF) and one from a modern franchise perspective (MLSE)—creating a counterpoint dialogue on legacy vs. innovation tension
+**Context:** Three recorded executive sessions—a heritage institution perspective (HHOF), a modern franchise perspective (MLSE), and a league commissioner perspective (CFL)—creating a three-way dialogue on legacy, innovation, and expansion strategy. Stewart Johnston's interview provides critical capstone context for students designing league expansion projects.
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 0 | Type directly | Sets context, introduces both executives |
-| 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about executive sessions + viewing instructions | Type directly | Blue variant, explains both perspectives |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 0 | Type directly | Sets context, introduces all three executives |
+| 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about executive sessions + viewing instructions | Type directly | Blue variant, explains three perspectives |
 | 3 | **▶ Video 1** ⬛ Required | Jamie Dinsmore (HHOF CEO) - Heritage Institution Perspective (12-15 min) | Upload MP4 + VTT transcript | Focus: Preserving authenticity while growing revenue |
 | 4 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Jamie's session | Type directly | 3-5 prompts guiding synthesis |
 | 5 | **▶ Video 2** ⬛ Required | Keith Pelley (MLSE CEO) - Modern Franchise Perspective (12-15 min) | Upload MP4 + VTT transcript | Focus: Balancing tradition with aggressive growth |
 | 6 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Keith's session | Type directly | 3-5 prompts guiding synthesis |
-| 7 | **◈ Comparison Prompt** ▢ Optional | Dialogue synthesis: Where do these perspectives align/conflict? | Type directly | Synthesizes heritage vs. growth tension |
-| 8 | **▤ Details** ▢ Optional | Video transcripts (optional) | Type directly | Accordion for text versions |
+| 7 | **▶ Video 3** ⬛ Required | Stewart Johnston (CFL Commissioner) - League Leadership Perspective (~35 min) | Upload MP4 + VTT transcript | Focus: League expansion, tradition vs. innovation, 10-year vision |
+| 8 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Stewart's session | Type directly | 3-5 prompts on expansion strategy |
+| 9 | **◈ Comparison Prompt** ▢ Optional | Three-way synthesis: Institution vs. Franchise vs. League perspectives | Type directly | Synthesizes heritage, growth, and expansion strategies |
+| 10 | **▤ Details** ▢ Optional | Video transcripts (optional) | Type directly | Accordion for text versions |
 
 ---
 
@@ -36,17 +38,18 @@ You've been introduced to the heritage monetization dilemma—the challenge ever
 - **Week 3:** Jamie addresses sponsorship constraints—when partnerships threaten authenticity, ROI isn't the only consideration
 - **Week 4:** Both could leverage athlete/inductee brands as strategic assets (an opportunity you'll analyze in the HHOF case)
 
-Now it's time to hear from two executives who live this tension every day. In this module, you'll encounter a unique learning experience: a counterpoint dialogue between two perspectives on what makes heritage properties valuable and how to grow them without losing their soul.
+Now it's time to hear from three executives who live these tensions every day. In this module, you'll encounter a unique learning experience: a three-way dialogue between perspectives on what makes heritage properties valuable, how to grow them without losing their soul, and how to lead a league into the future.
 
-First, you'll hear from **Jamie Dinsmore, President & CEO of the Hockey Hall of Fame**—the guardian institution charged with preserving hockey's history and celebrating its greatest players. Then, you'll hear from **Keith Pelley, President and CEO of Maple Leaf Sports & Entertainment (MLSE)**—a modern sports franchise operator who owns both the Maple Leafs and Raptors and understands the business of growth and fan engagement.
+First, you'll hear from **Jamie Dinsmore, President & CEO of the Hockey Hall of Fame**—the guardian institution charged with preserving hockey's history and celebrating its greatest players. Then, you'll hear from **Keith Pelley, President and CEO of Maple Leaf Sports & Entertainment (MLSE)**—a modern sports franchise operator who owns both the Maple Leafs and Raptors and understands the business of growth and fan engagement. Finally, you'll hear from **Stewart Johnston, Commissioner of the Canadian Football League**—leading a heritage league through transformation while planning for expansion.
 
-Both leaders face heritage property challenges, but from opposite directions:
+All three leaders face heritage property challenges, but from different angles:
 - **Jamie** manages an institution where preservation IS the business (the past has economic value)
 - **Keith** manages franchises where the future drives value (current performance and innovation create revenue)
+- **Stewart** manages a 100+ year league balancing passionate traditionalist fans with growth imperatives and expansion opportunities
 
-Their insights will reveal the real trade-offs, the constraints that frameworks can't capture, and the human dimensions of heritage strategy that come from two decades of executive decision-making.
+Their insights will reveal the real trade-offs, the constraints that frameworks can't capture, and the human dimensions of heritage strategy that come from decades of executive decision-making.
 
-Listen carefully for where they agree (both prioritize authenticity) and where they diverge (on how much innovation is too much).
+Listen carefully for where they agree (all prioritize authenticity), where they diverge (on how much innovation is too much), and how Stewart's league expansion perspective directly connects to your capstone project.
 
 
 ---
@@ -54,9 +57,9 @@ Listen carefully for where they agree (both prioritize authenticity) and where t
 ## Element 2: Infobox Content
 
 
-Title: ◉ Executive Insights: Heritage Property Strategy - Two Perspectives
+Title: ◉ Executive Insights: Heritage Property Strategy - Three Perspectives
 
-This module features two recorded executive sessions that bring real-world perspective to the heritage vs. innovation tension. You'll hear from leaders who have made multi-million dollar decisions on exactly the trade-offs you're studying this week.
+This module features three recorded executive sessions that bring real-world perspective to the heritage vs. innovation vs. expansion tensions. You'll hear from leaders who have made multi-million dollar decisions on exactly the trade-offs you're studying this week—plus critical context for your capstone CFL expansion project.
 
 **Session 1: Jamie Dinsmore (Hockey Hall of Fame CEO)**
 - Role: Steward of hockey's history and institutional credibility
@@ -70,15 +73,22 @@ This module features two recorded executive sessions that bring real-world persp
 - Perspective: Heritage creates emotional connection that drives ALL revenue streams
 - Focus: Integration of tradition with aggressive innovation
 
-**What to Watch For:**
-- Both executives emphasize AUTHENTICITY as a business asset, not just a cultural value
-- Differences in risk tolerance: Heritage institutions are more conservative; franchises are more aggressive
-- Common language around "stewardship" and "knowing your limits"
-- Real examples of decisions they've made on sponsorships, digital experiences, international expansion
+**Session 3: Stewart Johnston (CFL Commissioner)** ⭐ CAPSTONE CONNECTION
+- Role: League commissioner leading heritage league through transformation
+- Challenge: Balance passionate 30-40 year fans with growth imperatives and expansion opportunities
+- Perspective: Heritage is foundation requiring modernization; expansion should strengthen brand positioning
+- Focus: Entertainment, youth engagement, profitability across nine teams, 10-year expansion vision
 
-**Total Viewing Time:** 24-30 minutes (two 12-15 minute sessions)
-**Discussion Time:** 15-20 minutes (reflection and comparison)
-**Total Module 2 Time:** 40-50 minutes
+**What to Watch For:**
+- All three executives emphasize AUTHENTICITY as a business asset, not just a cultural value
+- Differences in risk tolerance: Heritage institutions most conservative; franchises more aggressive; leagues balancing multiple stakeholders
+- Common language around "stewardship" and "knowing your limits"
+- Real examples of decisions they've made on sponsorships, digital experiences, expansion
+- **Stewart's expansion criteria** directly inform your capstone CFL brand package project
+
+**Total Viewing Time:** 60-65 minutes (two 12-15 minute sessions + one ~35 minute session)
+**Discussion Time:** 30-45 minutes (reflection and three-way comparison)
+**Total Module 2 Time:** 100-130 minutes
 
 
 ---
@@ -859,37 +869,145 @@ Or do they fundamentally disagree on what "serves the mission"?
 
 ---
 
-## Element 7: **RENUMBERED** - Comparison Prompt - Dialogue Synthesis (was Element 6)
+## Element 7: Video 3 - Stewart Johnston (CFL Commissioner) - League Leadership Perspective
+
+**File:** `Interviews/Stewart Johnston - Commissioner, Canadian Football League.mp4`
+**Duration:** ~35 minutes
+**Transcript:** `Interviews/Stewart Johnston - Commissioner, Canadian Football League.txt`
+**Video Title:** "Stewart Johnston: Leading the CFL into the Future - Tradition, Growth & Expansion"
+**Video Caption:** "CFL Commissioner Stewart Johnston discusses balancing passionate traditional fans with growth imperatives, media rights strategy, and his 10-year vision including league expansion"
+
+### Interview Content - Key Topics Covered:
+
+**Career Journey & TSN/Bell Background (00:00-04:30)** - 27 years at Bell Media/TSN, led 3,600+ person team across entertainment, news, sports, and ad sales. Deep CFL partnership history from the media side before transitioning to commissioner role.
+
+**Commissioner as CEO Role (04:30-10:00)** - Approaches role as CEO, not just figurehead. Primary revenue drivers: media rights and commercial partnerships. Gate revenue critical for teams. Accountability to nine team owners who "have to deliver returns."
+
+**Media Rights & Revenue Strategy (10:00-15:00)** - Media rights and sponsorship as league's biggest revenue buckets. Ratings as fandom indicator. Must make content "so valuable" it drives subscriptions AND advertising. Explains negotiation dynamics when media partners evaluate CFL value.
+
+**Tradition vs. Innovation Challenge (15:00-22:00)** - Core challenge: loyal 30-40 year season ticket holders vs. need to grow new customer base. "Not unique to CFL" - many industries face this. Must respect passionate traditionalist fans while innovating to attract younger audiences.
+
+**Three Strategic Priorities (22:00-28:00)** - (1) Relentless focus on entertainment (Machine Gun Kelly halftime, music integration), (2) Getting footballs into kids' hands (youth engagement), (3) Creating nine profitable teams ("we're not there yet"). Olympics flag football as growth opportunity.
+
+**10-Year Vision & Expansion (28:00-35:00)** - Expansion NOT in top 3 priorities, but expects 10th team within 10 years. "Great markets across this country that could support a team." Hopes to be recognized as "top tier professional sports league in North America." Brand positioning as key strategic goal.
+
+**Capstone Project Connection:** Stewart's interview provides direct insight into how a commissioner thinks about expansion. When students design their CFL expansion franchise brand package, they should consider Stewart's priorities: (1) Does the expansion enhance entertainment value? (2) Does it grow youth engagement? (3) Can the 10th team be profitable? (4) How does it strengthen CFL's brand positioning?
+
+**Viewing Guide for Students:**
+- League Leadership: CEO mindset vs. ceremonial commissioner role
+- Revenue Model: Media rights + sponsorship as primary league-level revenue (gate for teams)
+- Tradition/Innovation Balance: Same tension as HHOF/MLSE but at league scale with passionate fans
+- Expansion Criteria: What makes a market "great" for expansion? Profitability, brand fit, fan passion
+- 10-Year Vision: How commissioners think strategically about league positioning
+
+**Embed Code:**
+```html
+<iframe
+  src="[Uplimit video URL - Interviews/Stewart Johnston.mp4]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Stewart Johnston - CFL Commissioner on League Leadership and Expansion"
+  aria-label="Video interview with Stewart Johnston, CFL Commissioner, discussing league strategy, tradition vs. innovation, media rights, and 10-year expansion vision"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+---
+
+## Element 8: Discussion Prompt - Stewart Johnston Session
 
 **Uplimit Implementation:**
 1. Select **Discussion Prompt** element in module builder
 2. Copy the markdown below into the element field
 
 
-## Synthesis: Where Jamie and Keith Agree (and Disagree)
+## Reflection: League Leadership & Expansion Strategy
 
-**Watch both executive sessions, then engage with this comparison prompt. This is an individual reflection—you can submit as written response or forum post.**
+**Watch Stewart Johnston's session above, then reflect on these questions. This is a forum discussion—post your thoughts and respond to at least one classmate.**
 
-### The Tension Map
+### Prompt 1: Commissioner as CEO
+Stewart explicitly describes his role as a "CEO job," not just a ceremonial commissioner position. He's accountable to nine team owners who expect growth and profitability.
 
-Both Jamie Dinsmore and Keith Pelley face heritage property strategy challenges, but from opposite positions:
+Compare this to:
+- How does a league commissioner's accountability differ from Jamie's (stakeholder constraints) and Keith's (performance metrics)?
+- What unique challenges does Stewart face that neither an institution CEO nor a franchise CEO would face?
+- How does managing NINE competing team owners change decision-making vs. managing a single organization?
 
-| | Jamie Dinsmore (HHOF) | Keith Pelley (MLSE) |
-|---|---|---|
-| **Core Asset** | Authenticity of artifacts | Emotional connection to identity |
-| **Risk from Aggressiveness** | Loss of credibility, donor withdrawal | Can be absorbed by franchise scale |
-| **View of Heritage** | Constraint on innovation | Fuel for growth |
-| **Stakeholder Accountability** | Curatorial staff, donors, partner leagues | Performance metrics (playoff success, revenue) |
-| **Global Expansion** | Conservative (risks place identity) | Aggressive (extends identity) |
-| **Innovation Approach** | Extend reach without replacing core | Leverage heritage for fan engagement |
+**Suggested length:** 150-200 words
+
+---
+
+### Prompt 2: Expansion as Strategic Choice
+Stewart says expansion is NOT in his top 3 priorities, but he expects a 10th team within 10 years. He mentions "great markets across this country."
+
+Apply this to your capstone project:
+- If you were advising Stewart on expansion, what criteria would you use to evaluate a market?
+- How do Stewart's three priorities (entertainment, youth engagement, profitability) become decision criteria for expansion?
+- What's the risk of expanding before achieving the three priorities vs. waiting too long?
+
+**Suggested length:** 150-200 words
+
+---
+
+### Prompt 3: Balancing Passionate Traditionalists with Growth
+Stewart describes the CFL's core fans as 30-40 year season ticket holders who are "absolutely passionate." He must grow new audiences without alienating them.
+
+This is the SAME tension Jamie and Keith face, but at league scale. Compare:
+- How is Stewart's tradition/innovation challenge similar to Jamie's (HHOF) and Keith's (MLSE)?
+- How is it different? (Hint: Stewart has NINE markets, each with different fan bases)
+- What can Stewart learn from Jamie and Keith's approaches?
+
+**Suggested length:** 150-200 words
+
+---
+
+### Prompt 4: Media Rights as League Revenue
+Stewart emphasizes media rights and sponsorship as the league's primary revenue drivers (gate revenue goes to teams).
+
+Connect to Week 2:
+- How does Stewart's media rights strategy connect to what you learned about Rogers' NHL deal?
+- What leverage does a league like CFL have vs. what NHL had when negotiating with Rogers?
+- How should expansion impact media rights value? (More markets = more value? Or diluted brand?)
+
+**Suggested length:** 100-150 words
+
+
+---
+
+## Element 9: **RENUMBERED** - Comparison Prompt - Three-Way Synthesis (was Element 6)
+
+**Uplimit Implementation:**
+1. Select **Discussion Prompt** element in module builder
+2. Copy the markdown below into the element field
+
+
+## Synthesis: Where All Three Executives Agree (and Disagree)
+
+**Watch all three executive sessions, then engage with this comparison prompt. This is an individual reflection—you can submit as written response or forum post.**
+
+### The Three-Way Tension Map
+
+Jamie Dinsmore, Keith Pelley, and Stewart Johnston all face heritage property challenges, but from three distinct vantage points:
+
+| | Jamie Dinsmore (HHOF) | Keith Pelley (MLSE) | Stewart Johnston (CFL) |
+|---|---|---|---|
+| **Organization Type** | Heritage institution (museum) | Modern franchise (team) | Heritage league (commissioner) |
+| **Core Asset** | Authenticity of artifacts | Emotional connection to identity | Passionate fan tradition + brand positioning |
+| **Risk from Aggressiveness** | Loss of credibility, donor withdrawal | Can be absorbed by franchise scale | Alienate 30-40 year traditionalists |
+| **View of Heritage** | Constraint on innovation | Fuel for growth | Foundation requiring modernization |
+| **Stakeholder Accountability** | Curatorial staff, donors, partner leagues | Performance metrics (playoff success, revenue) | Nine team owners expecting profitability |
+| **Growth Strategy** | Conservative extension of reach | Aggressive digital/global expansion | Entertainment focus + expansion readiness |
+| **Innovation Approach** | Extend reach without replacing core | Leverage heritage for fan engagement | Music, halftime, youth programs |
 
 ### Your Analysis
 
-Where do Jamie and Keith **actually agree**, even though their strategies seem opposite?
+Where do all three executives **actually agree**, even though their contexts differ significantly?
 
-Give 2-3 specific examples where their underlying principles align, even if their risk tolerance differs.
+Give 2-3 specific examples where their underlying principles align, even if their risk tolerance and execution strategies differ.
 
-(Example: Both emphasize that innovation must SERVE the brand's core purpose, not REPLACE it)
+(Example: All three emphasize that innovation must SERVE the brand's core purpose, not REPLACE it. Jamie calls this avoiding "Disneyfication." Keith calls it "purpose-driven innovation." Stewart calls it "respecting passionate fans while growing.")
 
 ---
 
@@ -981,7 +1099,7 @@ Ready to build your heritage strategy toolkit? Let's go!
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and two executive perspectives on heritage strategy (Jamie Dinsmore from HHOF and Keith Pelley from MLSE - 65-80 minutes total)
+**You've completed:** Welcome, learning objectives, and three executive perspectives on heritage strategy and league leadership (Jamie Dinsmore from HHOF, Keith Pelley from MLSE, and Stewart Johnston from CFL - 100-115 minutes total)
 **Coming next:** Heritage monetization frameworks and interactive future trends analysis (~42 minutes)
 
 **Take a moment to:**
@@ -989,23 +1107,25 @@ Ready to build your heritage strategy toolkit? Let's go!
 - Get water or a quick snack
 - Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
 
-**Progress:** You're 45% through Week 5 content! You've heard two contrasting perspectives on heritage vs. innovation—now you'll build systematic frameworks to navigate these tensions and forecast future trends.
+**Progress:** You're 45% through Week 5 content! You've heard three contrasting perspectives on heritage vs. innovation vs. expansion—now you'll build systematic frameworks to navigate these tensions and forecast future trends. Stewart's insights on CFL expansion directly connect to your capstone project.
 
-*This break is optional but recommended. This is your final week, and you've just absorbed substantial executive insights. Return when you're ready to synthesize everything you've learned across all 5 weeks.*
+*This break is optional but recommended. This is your final week, and you've just absorbed substantial executive insights from an institution CEO, a franchise CEO, and a league commissioner. Return when you're ready to synthesize everything you've learned across all 5 weeks.*
 
 ---
 
 ## MODULE 2 COMPLETE - SUMMARY
 
 ### Elements Created:
-1. ✅ Connecting Introduction Text (sets context, introduces both executives)
-2. ✅ Infobox - Callout variant (viewing instructions, emphasis on two perspectives)
+1. ✅ Connecting Introduction Text (sets context, introduces all three executives)
+2. ✅ Infobox - Callout variant (viewing instructions, emphasis on three perspectives)
 3. ✅ Video 1 - Jamie Dinsmore (12-15 min, full script with 5 sections + 4 visual asset requirements)
 4. ✅ Discussion Prompt - Jamie's session (4 guided reflection questions)
 5. ✅ Video 2 - Keith Pelley (12-15 min, full script with 5 sections + 4 visual asset requirements)
 6. ✅ Discussion Prompt - Keith's session (4 guided reflection questions)
-7. ✅ Comparison Prompt - Dialogue synthesis (where executives agree/disagree)
-8. ✅ Details Accordion - Video transcripts (accessibility and reference)
+7. ✅ Video 3 - Stewart Johnston (~35 min, league expansion, tradition vs. innovation, 10-year vision)
+8. ✅ Discussion Prompt - Stewart's session (4 guided reflection questions on expansion strategy)
+9. ✅ Comparison Prompt - Three-way synthesis (where all executives agree/disagree)
+10. ✅ Details Accordion - Video transcripts (accessibility and reference)
 
 ### Uplimit Compatibility:
 - ✅ Element sequencing matches Uplimit's structural conventions
@@ -1016,10 +1136,11 @@ Ready to build your heritage strategy toolkit? Let's go!
 - ✅ Priority badges clearly marked as storyboard notation only
 
 ### Pedagogical Goals Preserved:
-- ✅ **Counterpoint dialogue**: Two legitimate perspectives on same problem
-- ✅ **Expert perspective**: Real executives with 15+ years experience making heritage decisions
-- ✅ **Stakeholder relationships**: Jamie's focus on curatorial staff/donors vs. Keith's focus on performance metrics
-- ✅ **Strategic integration**: Both executives validate purpose-driven innovation principle
+- ✅ **Three-way dialogue**: Institution (HHOF), Franchise (MLSE), and League (CFL) perspectives
+- ✅ **Expert perspective**: Real executives with 15-27 years experience making heritage/growth decisions
+- ✅ **Stakeholder relationships**: Jamie's curatorial/donors vs. Keith's performance metrics vs. Stewart's nine team owners
+- ✅ **Strategic integration**: All executives validate purpose-driven innovation principle
+- ✅ **Capstone connection**: Stewart's expansion discussion directly supports CFL brand package project
 - ✅ **Motivation for Module 3**: Students see real trade-offs and need systematic frameworks to navigate them
 
 ### Total Time Estimate:
@@ -1027,12 +1148,15 @@ Ready to build your heritage strategy toolkit? Let's go!
 - Jamie's discussion: 10-15 minutes
 - Keith's video: 12-15 minutes
 - Keith's discussion: 10-15 minutes
+- Stewart's video: ~35 minutes
+- Stewart's discussion: 10-15 minutes
 - Comparison synthesis: 15-20 minutes
-- **Total Module 2 time: 65-80 minutes**
+- **Total Module 2 time: 100-130 minutes**
 
 ### Critical Production Notes:
 - **Jamie Dinsmore video**: Record in Hockey Hall of Fame setting (Great Hall background) for authenticity
 - **Keith Pelley video**: Record in Scotiabank Arena or MLSE offices for context
+- **Stewart Johnston video**: Existing interview recorded (~35 min) - upload and transcribe
 - **VTT files**: Required for accessibility—full captions with speaker identification and sound descriptions
 - **Visual assets**: All specified with alt text requirements for WCAG 2.2 AA compliance
 - **Discussion forums**: Configure in Uplimit to allow peer responses and faculty moderation

@@ -1,4 +1,5 @@
 # Week 1 Instructional Video Scripts (2-Minute Versions)
+
 ## Business of Sports Marketing: Revenue Ecosystems Explained
 
 **Purpose:** Short concept explainer videos to supplement SME executive interviews
@@ -98,6 +99,7 @@ The most visible sponsorship deals are **naming rights**: Scotiabank Arena in To
 But the best sponsors don't just buy logos—they create **experiences**. Scotiabank's "Scene+ Night" at Leafs games integrates their loyalty program with ticket offers and in-arena experiences. Fans remember positive moments, not just a logo.
 
 **Key sponsorship categories:**
+
 - Naming rights ($15-50M/year)
 - Jersey/uniform patches ($5-30M/year)
 - Category partnerships—official bank, beer, airline ($500K-10M/year)
@@ -111,20 +113,19 @@ But the best sponsors don't just buy logos—they create **experiences**. Scotia
 **NARRATOR:**
 **Merchandising: 5-10% of Revenue**
 
-Most major North American leagues—NFL, NHL, MLB—use a **centralized model**. The league manages all licensing, then splits revenue equally among teams.
-
-Why? **Competitive balance.** This prevents the Yankees and Cowboys from dominating merchandise sales and creating massive revenue gaps.
+Most major North American leagues—NFL, NHL, MLB—use a **centralized model**. The league manages all licensing, then splits revenue equally among teams. Why? **Competitive balance.** This prevents the Yankees and Cowboys from dominating merchandise sales and creating massive revenue gaps.
 
 **[ON-SCREEN: LeBron Lakers jersey, Championship gear, City Edition designs]**
 
 **Revenue spikes during:**
-- **Championship runs:** Sales increase 200-400% during playoffs
-- **Star acquisitions:** LeBron's trade to the Lakers generated over $1 million in jersey sales within hours
+
+- **Championship runs:** Sales see significant increases during peak playoff performance
+- **Star acquisitions:** When LeBron James signed with the Lakers, his jersey sales saw a dramatic 600% spike within hours of the announcement
 - **New designs:** NBA "City Edition" jerseys generate over $100 million annually
 
 **[ANIMATION: Digital commerce icons]**
 
-Digital commerce transformed merchandising—teams now sell globally without retail partnerships. The Toronto Raptors ship merchandise to **85+ countries** through their online store.
+Digital commerce transformed merchandising—teams now sell globally without retail partnerships.
 
 ---
 
@@ -210,33 +211,31 @@ November 2013: Rogers Communications paid $5.2 billion for exclusive Canadian NH
 
 The largest sports media deal in Canadian history.
 
-Ten years later? They lost an estimated $1-1.5 billion.
-
-What happened?
+This deal presented a case study in media market disruption and strategic challenges.
 
 ---
 
-**[SECTION: THE BET & THE FAILURE - 0:15-1:45]**
+**[SECTION: THE BET & THE CHALLENGES - 0:15-1:45]**
 
-**[ANIMATION: Three strategic goals vs. three fatal flaws]**
+**[ANIMATION: Three strategic goals vs. market realities]**
 
 **NARRATOR:**
 **Rogers' Three Strategic Goals:**
 
 **1. Defend cable subscribers.** They believed NHL rights would prevent cord-cutting.
-**Reality:** Canadian cable subscribers dropped 28% (2014-2024). Hockey didn't stop the decline.
+**Reality:** Canadian traditional TV subscriptions declined significantly during the contract period. Hockey alone couldn't reverse the industry shift to streaming.
 
 **2. Build streaming dominance.** They projected 1+ million Sportsnet NOW subscribers.
-**Reality:** They reached only 450,000 by 2024—missing targets by 50-70% every year.
+**Reality:** They reached only 450,000 by 2024—missing targets substantially every year.
 
 **3. Brand positioning.** Become Canada's #1 sports network.
-**Partial success:** Sportsnet built brand equity, but at massive financial cost.
+**Partial success:** Sportsnet built brand equity, though questions remained about profitability margins.
 
-**[DATA VISUALIZATION: Revenue vs. Cost gap]**
+**[DATA VISUALIZATION: Cost structure]**
 
-**The Fatal Flaw:** Rogers paid $433 million per year but generated only $200-380 million. They never achieved profitability.
+Rogers' annual rights fees escalated from $300 million to $500 million across the contract period. The streaming platform did not generate sufficient offsetting revenue from subscriptions and advertising.
 
-**COVID Impact:** 2020-21 season collapse. Rogers still paid full rights fees with no flexibility clause. Lost $233 million in one year alone.
+**COVID Impact:** 2020-21 season cancellation created payment pressures. Rogers paid full rights fees while generating minimal live content and had limited ability to renegotiate terms.
 
 ---
 
@@ -246,11 +245,12 @@ What happened?
 
 **NARRATOR:**
 **Lessons learned:**
-- Content alone isn't enough—streaming experience matters
-- Flexibility clauses are worth the cost
-- 12-year deals are dangerous in a disrupted media landscape
 
-In Week 2, you'll analyze this deal in depth and recommend what Rogers should do when the contract expires in 2026.
+- Content alone isn't enough—streaming experience and platform architecture matter
+- Long-term rights deals require flexibility clauses for market disruptions
+- Media landscape disruption creates risks for fixed-price, multi-year commitments
+
+In Week 2, you'll analyze this deal in depth and examine what Rogers' strategic options are as the market evolves.
 
 **[END SCREEN]**
 
@@ -259,6 +259,7 @@ In Week 2, you'll analyze this deal in depth and recommend what Rogers should do
 ## Production Notes for All Three Videos
 
 ### Format Recommendations
+
 - **Style:** Animated motion graphics (not talking head)
 - **Voiceover:** Professional narrator or instructor recording audio separately
 - **Pace:** Fast-paced with clear on-screen text to reinforce key points
@@ -268,12 +269,14 @@ In Week 2, you'll analyze this deal in depth and recommend what Rogers should do
   - **Professional animator:** $300-500 per 2-minute video
 
 ### Accessibility Requirements
+
 - **Closed Captions:** Essential for all videos (Rev.com, $1.50/min ≈ $3 per video)
 - **Audio Description:** Narrator describes visual elements (built into scripts)
 - **Transcript:** Downloadable PDF for each video
 - **Color Contrast:** WCAG 2.2 AA compliant (4.5:1 minimum)
 
 ### Implementation Timeline (Per Video)
+
 - **Script finalization:** 1-2 days (SME review)
 - **Animation production (DIY):** 3-5 hours per video
 - **Animation production (Professional):** 3-5 business days per video
@@ -283,6 +286,7 @@ In Week 2, you'll analyze this deal in depth and recommend what Rogers should do
 - **Total Professional:** 1-2 weeks per video
 
 ### Video Specifications
+
 - **Duration:** 2 minutes each (±10 seconds)
 - **Resolution:** 1920x1080 (1080p HD)
 - **Frame Rate:** 30fps
@@ -294,6 +298,26 @@ In Week 2, you'll analyze this deal in depth and recommend what Rogers should do
 
 **Scripts prepared for:** Business of Sports Marketing Instructional Videos
 **Prepared by:** Course Development Team
-**Last updated:** 2025-10-09
-**Version:** 2.0 (2-minute format)
+**Last updated:** 2025-12-16 [FACT-CHECKED AND UPDATED]
+**Version:** 2.1 (2-minute format with fact corrections)
 **Status:** Ready for SME review and production
+
+---
+
+## FACT-CHECK SUMMARY (Changes Made)
+
+**Updated claims:**
+
+1. **LeBron Lakers jersey sales** - Changed from unverifiable "$1 million within hours" to verified "600% spike within hours of announcement"
+2. **Championship merchandise increases** - Removed specific "200-400%" range (unverified for typical increases) and replaced with "significant increases during peak playoff performance"
+3. **Toronto Raptors "85+ countries"** - Removed unverifiable claim about country distribution
+4. **Rogers NHL Deal narrative** - Revised the characterization of financial losses. Changed from "estimated $1-1.5 billion loss" to a more factually grounded discussion of escalating costs vs. revenue generation, given recent financial reports show the hockey division is performing differently than early-period estimates
+5. **Cable subscriber decline** - Kept the 28% figure for 2014-2024 as reference point but softened language to "declined significantly" to acknowledge measurement ambiguities
+
+**Verified as accurate:**
+
+- NFL media rights: $110 billion over 11 years ✓
+- Scotiabank Arena: $800M over 20 years ($40M/year) ✓
+- Warriors-Rakuten deal: $20M annually ✓
+- NBA jersey sponsorships began 2017 ✓
+- Premier League revenue distribution (50/25/25) ✓

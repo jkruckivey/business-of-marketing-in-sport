@@ -239,12 +239,6 @@ In Week 2, you'll analyze this deal in depth and examine what Rogers' strategic 
 - Professional voiceover narrator
 - Fast-paced with clear on-screen text
 
-### Visual Assets Needed
-- Video 1: Five revenue stream icons, percentage breakdowns
-- Video 2: Brand logos, jersey patches, stadium naming rights examples
-- Video 3: League shields (NFL, NHL, Premier League), revenue distribution charts
-- Video 4: Rogers/Sportsnet branding, subscriber projections vs. actuals chart
-
 ### Accessibility Requirements
 - VTT caption files required for each video
 - Transcripts available for download
@@ -259,6 +253,123 @@ In Week 2, you'll analyze this deal in depth and examine what Rogers' strategic 
 
 ---
 
+## Slide-by-Slide Visual Guide
+
+*Each video uses 2-3 slides with elements animating in as narration progresses.*
+
+### VIDEO #1: Five Revenue Streams (W1-M3, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:15 | **The Five Revenue Streams** | Background: Stadium montage. **5 ICONS appear and remain:** 0:05: TV icon (media) → 0:07: Ticket icon → 0:09: Handshake icon (sponsorship) → 0:11: Jersey icon (merch) → 0:13: Dice icon (betting). All 5 icons stay visible. |
+| 2 | 0:15-1:30 | **Revenue Breakdown** | Same 5 icons from Slide 1 remain. **Percentage bars animate beside each icon:** 0:20: Media Rights bar grows to "40-60%" → 0:35: Ticketing bar grows to "20-30%" → 0:50: Sponsorship bar grows to "15-25%" → 1:05: Merchandising bar grows to "5-10%" → 1:15: Betting bar grows to "2-8%" + pulses with "Fastest Growing" label. All bars remain visible. |
+| 3 | 1:30-2:00 | **Key Insight: Build Ecosystems** | Transition: 5 icons reposition from row to circle formation (bars fade out). 1:35: Animated lines connect all 5 icons to new central hub icon. 1:45: Text appears below: "Revenue ecosystems, not portfolios". All elements remain to end. |
+
+### VIDEO #2: Sponsorship & Merchandising (W1-M3, V2)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:45 | **Sponsorship Revenue** | Background: Arena exterior. **Tiered pyramid builds from top down:** 0:05: Top tier appears — Arena icon + "Naming Rights: $800M / 20 years" → 0:15: Middle tier appears — Jersey icon + "Jersey Patches: $20-30M/year" → 0:30: Base tier appears — Partner icons + "Category Partners: $5-15M/year" (all 3 tiers remain visible) |
+| 2 | 0:45-1:30 | **Activation > Logos** | New slide (pyramid fades out). 0:50: Text "Scene+ Night" appears as example. 1:00: Text "Activations drive engagement, not just logos" appears below. 1:15: Jersey icon + "Merchandising: 5-10% of Revenue" appears. All text remains visible. |
+| 3 | 1:30-2:00 | **Key Insight: Brand = Value** | New slide. **Split screen comparison:** Left side: Packed store image + "Strong Brand". Right side: Empty shelves image + "Weak Brand". Both sides remain visible to end. |
+
+### VIDEO #3: Revenue Sharing Models (W1-M5, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:15 | **Why Leagues Share Revenue** | 0:05: Text "Competitors need each other to thrive" appears. 0:10: **3 league shield ICONS appear in row:** NFL shield → NHL shield → Premier League crest. All remain visible. |
+| 2 | 0:15-1:30 | **Three Models Compared** | **Simple 3-column comparison table:** 0:20: NFL column — "60% shared" → 0:45: NHL column — "50% shared" + "CAD/USD challenge" → 1:05: Premier League column — "50/25/25 split". 1:20: Text "Green Bay (pop. 105K) ≈ NYC Giants revenue" appears below. All remain visible. |
+| 3 | 1:30-2:00 | **Impact on Strategy** | New slide (columns fade out). 1:35: Text "More sharing = fewer strategic options" appears. 1:50: Text "Next: Canucks Case Study" appears. |
+
+### VIDEO #4: Rogers NHL Deal (W1-M7, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:30 | **$5.2 Billion / 12 Years** | **B-roll: Hockey broadcast or Rogers/Sportsnet branding.** Text overlays build: 0:05: "$5.2 Billion / 12 Years" → 0:15: "Canada's Largest Sports Media Deal". All text remains visible. |
+| 2 | 0:30-1:30 | **Three Strategic Goals** | New slide. **3 goals build vertically with status indicators:** 0:35: Cable icon + "1. Defend Cable" + ❌ "Declined" → 0:50: Streaming icon + "2. Streaming Dominance" + ❌ "450K vs. 1M target" → 1:05: Brand icon + "3. Brand Leadership" + ✓ "Partial success". All 3 remain visible. 1:20: Cost escalation bar appears below: "$300M → $500M". |
+| 3 | 1:30-2:00 | **Key Lessons** | **B-roll: Streaming/cord-cutting imagery.** Text overlays build: 1:35: "Content alone isn't enough" → 1:42: "Long-term deals need flexibility" → 1:50: "Market disruption creates risk". All text remains visible. |
+
+---
+
+## Visual Asset Specifications
+
+### Icons & Graphics
+
+**Five Revenue Streams Icons**
+- Style: Flat/minimal, consistent 2px line weight
+- Colors: Course brand palette (primary + 5 accent colors)
+- Size: 120x120px base, scalable SVG
+- Icons needed:
+  1. **Media Rights**: Television/broadcast screen with signal waves
+  2. **Ticketing**: Ticket stub with barcode
+  3. **Sponsorship**: Handshake or partnership symbol
+  4. **Merchandising**: Jersey or shopping bag
+  5. **Betting**: Dice or mobile phone with odds display
+- Formats: SVG (for animation), PNG (for static use)
+
+**Revenue Ecosystem Hub Animation**
+- Central hub with five spokes connecting to revenue stream icons
+- Animated: Lines pulse/glow to show interconnection
+- Style: Network diagram aesthetic
+- Duration: 5-second loop
+
+**League Shields**
+- NFL, NHL, Premier League logos needed
+- Use official logos or stylized representations
+- Ensure licensing compliance
+
+### Data Visualizations
+
+**Percentage Breakdown Bars**
+- Horizontal stacked bar showing revenue mix
+- Animated build: Each segment grows sequentially
+- Labels: Stream name + percentage
+- Example: Media 45% | Ticketing 25% | Sponsorship 15% | Merch 10% | Betting 5%
+
+**Revenue Sharing Comparison Chart**
+- Three-column comparison (NFL / NHL / Premier League)
+- Show percentage shared vs. retained
+- Animated: Bars grow from zero
+
+**Subscriber Decline Chart (Rogers)**
+- Line graph: 2014-2024 timeline
+- Shows projected vs. actual subscribers
+- Red highlight on gap between projection and reality
+
+**Cost Escalation Bar Chart**
+- Animated bars showing $300M → $500M growth
+- Year labels on x-axis
+- Dollar amounts on y-axis
+
+### B-Roll Shot List
+
+**Stadium/Arena Footage**
+- Exterior establishing shots (day and night)
+- Packed crowd reactions
+- Luxury suite interiors
+- Concession stands and merchandise stores
+- LED signage and sponsor boards
+
+**Broadcast Production**
+- Camera operators on sidelines
+- Broadcast booth with commentators
+- TV production truck exterior
+- Control room with multiple screens
+
+**Business/Corporate**
+- Boardroom meeting scenes
+- Executive reviewing documents
+- Press conference setup
+- Contract signing moments
+
+**Canadian-Specific (for Rogers content)**
+- Rogers Arena exterior
+- Vancouver skyline
+- Sportsnet studio/branding
+- Canadian currency imagery
+
+---
+
 **Scripts prepared for:** Business of Sports Marketing
-**Last updated:** 2025-12-16
+**Last updated:** 2025-12-17
 **Status:** Ready for production

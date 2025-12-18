@@ -289,13 +289,6 @@ The AI Case Coach will help you map Serena's decisions to the five revenue strea
 - Teleprompter recommended
 - Good lighting and audio
 
-### Visual Assets Needed
-- Video 1: "$500 Million Question" title card
-- Video 2: Five revenue streams icons
-- Video 3: Women's sports growth statistics, investment examples
-- Video 4: Four-factor framework graphic, sport comparison chart
-- Video 5: Three pivots timeline, Serena Ventures portfolio
-
 ### Accessibility Requirements
 - VTT caption files required for each video
 - Transcripts available for download
@@ -310,7 +303,171 @@ The AI Case Coach will help you map Serena's decisions to the five revenue strea
 
 ---
 
+## Slide-by-Slide Visual Guide
+
+*Each video uses 2-3 slides with elements animating in as narration progresses.*
+
+### VIDEO #12: Bridge-In Hook (W4-M0, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:45 | **The $500 Million Question** | **B-roll: Serena Williams highlights or endorsement footage.** Text overlays build: 0:05: "Brand Value ≠ Prize Money" → 0:15: "$95M prize money (27 years)" → 0:30: "Total brand equity: 5x+". All text remains visible. |
+| 2 | 0:45-1:35 | **Strategic Brand Architecture** | **B-roll: Athlete business/entrepreneurship footage.** Text overlays build: 0:50: "Performance ≠ Brand Value" → 1:10: "The difference: strategic brand architecture" → 1:25: "Own, Don't Rent". All text remains visible. |
+| 3 | 1:35-2:00 | **This Week** | **B-roll: Mix of athlete competition and business.** Text overlays build: 1:40: "Five athlete revenue streams" → 1:50: "Which build long-term wealth?" → 1:55: "Next: Diagnostic Exercise". All text remains visible. |
+
+### VIDEO #13: Athlete Revenue Streams (W4-M1, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:55 | **The Five Revenue Streams** | **B-roll: Athletes competing, signing autographs, at events.** Text overlays build: 0:05: "1. Prize Money/Salary" → 0:15: "2. Endorsements" → 0:25: "3. Appearances ($100K-500K)" → 0:40: "Streams 1-3: Trading Time for Money". All text remains visible. |
+| 2 | 0:55-1:45 | **Assets That Compound** | **Two-line comparison diagram:** 1:00: Flat/linear line draws labeled "Streams 1-3: Trading time for money". 1:15: Curved/exponential line draws above labeled "Streams 4-5: Assets that compound". 1:30: Text "Serena Ventures: 85+ companies" appears below. All remain visible. |
+| 3 | 1:45-2:00 | **Model Your Streams** | **B-roll: Financial planning or calculator imagery.** Text overlay: 1:50: "Next: Athlete Brand Calculator". Remains to end. |
+
+### VIDEO #14: Women's Sports (W4-M2, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:45 | **The Women's Sports Opportunity** | **Bar chart builds:** 0:05: NWSL bar grows with label "4x growth → $60M". 0:20: WNBA bar grows beside it with label "2x growth → $55M". 0:35: Text "Audience growing, sponsorship lagging = opportunity" appears below. All remain visible. |
+| 2 | 0:45-1:25 | **The Gap = The Opportunity** | **B-roll: Women's sports highlights, packed stadiums.** Text overlays build: 0:50: "Why now?" → 0:55: "1. Media coverage caught up" → 1:05: "2. Fans more loyal, more likely to buy" → 1:15: "3. Star athletes drive engagement". All text remains visible. |
+| 3 | 1:25-2:00 | **Invest Now or Pay Later** | **B-roll: Investment/business meeting footage.** Text overlays build: 1:30: "Smart money moving fast" → 1:45: "Sponsor now or pay more later?" → 1:55: "Next: Executive Interviews". All text remains visible. |
+
+### VIDEO #15: Emerging Sports (W4-M3, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:25 | **Evaluating Emerging Sports** | **B-roll: Pickleball, padel, or esports footage.** Text overlays build: 0:05: "Pickleball, Padel, Esports..." → 0:15: "How do you evaluate emerging sports?" All text remains visible. |
+| 2 | 0:25-1:25 | **The Four-Factor Framework** | **Simple 2x2 grid diagram.** Text in each quadrant builds: 0:30: "1. Demographic Breadth" → 0:45: "2. Accessibility" → 1:00: "3. Media Viability" → 1:15: "4. Monetization Infrastructure". All 4 quadrants remain visible. |
+| 3 | 1:25-2:00 | **Apply to Any Sport** | **B-roll: Emerging sports action.** Text overlays build: 1:30: "Each sport has different strengths" → 1:45: "Your timeline & risk tolerance matter" → 1:55: "Next: Emerging Sports Widget". All text remains visible. |
+
+### VIDEO #16: Serena Case (W4-M4, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:25 | **Serena Williams Case Study** | **B-roll: Serena on court transitioning to business settings.** Text overlays build: 0:05: "Athlete → Business Empire" → 0:15: "How did she do it?" All text remains visible. |
+| 2 | 0:25-1:25 | **Three Strategic Pivots** | **B-roll: Business/entrepreneurship footage.** Text overlays build: 0:30: "1. Endorser → Investor" → 0:50: "2. Athlete → Founder (85+ companies)" → 1:10: "3. Individual → Platform". All text remains visible. |
+| 3 | 1:25-2:00 | **Is This Replicable?** | **B-roll: Athletes in business settings.** Text overlays build: 1:30: "Key: Built infrastructure while still playing" → 1:45: "Can others follow this playbook?" → 1:55: "Next: Case Study Analysis". All text remains visible. |
+
+---
+
+## Visual Asset Specifications
+
+### Icons & Graphics
+
+**Five Athlete Revenue Streams Icons**
+- Style: Flat/minimal, matching course icon style
+- Size: 100x100px base, scalable SVG
+- Icons needed:
+  1. **Prize Money/Salary**: Trophy or paycheck
+  2. **Endorsements**: Handshake with brand logo
+  3. **Appearances**: Microphone or stage
+  4. **Equity Deals**: Stock chart trending up
+  5. **Owned Businesses**: Building or storefront
+- Formats: SVG (for animation), PNG (for static use)
+
+**Four-Factor Framework Grid**
+- 2x2 quadrant layout
+- Quadrants:
+  1. Demographic Breadth (people icons, age range)
+  2. Accessibility (open door, low barrier)
+  3. Media Viability (camera/broadcast)
+  4. Monetization Infrastructure (dollar/league structure)
+- Style: Clean grid with distinct colors per quadrant
+- Animated: Quadrants appear sequentially
+
+**Brand Architecture Blueprint**
+- Blueprint/schematic style illustration
+- Shows athlete at center with brand elements branching out
+- Categories: Endorsements, Equity, Owned businesses
+- Style: Technical drawing aesthetic
+
+**Trading Time vs. Building Assets Comparison**
+- Two-panel graphic
+- Left: Clock icon, linear income line (Streams 1-3)
+- Right: Compound curve, growing assets (Streams 4-5)
+- Animated: Lines draw to show difference
+
+### Data Visualizations
+
+**Athlete Brand Value Breakdown**
+- Stacked bar or pie showing:
+  - Prize money component
+  - Endorsement component
+  - Business equity component
+- Example: Serena Williams breakdown
+- Animated: Segments grow sequentially
+
+**Women's Sports Sponsorship Growth Chart**
+- Line or bar chart showing growth
+- NWSL: Growth to ~$60M (2024)
+- WNBA: Growth to ~$55M (2024)
+- Animated: Bars/lines grow with dollar labels
+
+**Audience vs. Sponsorship Gap Visualization**
+- Two bars side by side
+- Large bar: "Audience Growth"
+- Small bar: "Sponsorship Dollars"
+- Gap highlighted with "Opportunity" label
+
+**Emerging Sports Comparison Matrix**
+- Table/matrix format
+- Sports on Y-axis (pickleball, padel, esports)
+- Four factors on X-axis
+- Color-coded scores (green/yellow/red)
+- Animated: Scores fill in
+
+**Three Strategic Pivots Timeline**
+- Horizontal timeline showing Serena's career
+- Milestones marked:
+  1. "Endorser → Investor" pivot
+  2. "Athlete → Founder" pivot (Serena Ventures)
+  3. "Individual → Platform" pivot (S by Serena)
+- Career achievements overlaid
+
+**Portfolio Growth Visualization**
+- Grid of company logos (85+ companies)
+- Animated: Logos appear in grid formation
+- Style: Clean, organized portfolio view
+
+### B-Roll Shot List
+
+**Athlete Business**
+- Athletes signing endorsement deals
+- Brand photoshoots and commercial filming
+- Business meetings and pitch sessions
+- Startup office environments
+- Product launches
+
+**Serena Williams Specific**
+- Tennis career highlights (trophy lifts, celebrations)
+- Serena Ventures branding/office (if available)
+- S by Serena products and store
+- Business conference appearances
+- Transition moments (court to boardroom)
+
+**Women's Sports**
+- NWSL game footage and crowds
+- WNBA highlights (Caitlin Clark, etc.)
+- Women's World Cup celebrations
+- Women's college basketball (March Madness)
+- Female athletes in endorsement roles
+
+**Emerging Sports**
+- Pickleball courts and players (multi-generational)
+- Padel matches and facilities
+- Esports arenas and competitions
+- New league announcements
+- Grassroots sports growth
+
+**Investment/Business**
+- Venture capital meetings
+- Startup founders presenting
+- Investment round announcements
+- Portfolio company logos
+- Business success celebrations
+
+---
+
 **Scripts prepared for:** Business of Sports Marketing
-**Last updated:** 2025-12-16
+**Last updated:** 2025-12-17
 **Version:** 2.1 (fact-checked, videos reduced from 6 to 5)
 **Status:** Ready for production

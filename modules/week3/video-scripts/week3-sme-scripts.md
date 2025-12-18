@@ -277,12 +277,6 @@ As you read the FanDuel case, focus on customer economics: acquisition costs, li
 - Teleprompter recommended
 - Good lighting and audio
 
-### Visual Assets Needed
-- Video 1: "$500 Million Question" title card
-- Video 3: FIFA/Coca-Cola logos, CPM comparison chart
-- Video 4: Betting statistics infographic, attribution loop diagram
-- Video 5: Betting market growth timeline
-
 ### Accessibility Requirements
 - VTT caption files required for each video
 - Transcripts available for download
@@ -297,7 +291,156 @@ As you read the FanDuel case, focus on customer economics: acquisition costs, li
 
 ---
 
+## Slide-by-Slide Visual Guide
+
+*Each video uses 2-3 slides with elements animating in as narration progresses.*
+
+### VIDEO #7: Bridge-In Hook (W3-M0, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:55 | **The $500 Million Question** | **B-roll: Football stadium with sponsor signage visible.** Text overlays build: 0:05: "Billions spent on sponsorship" → 0:30: "CFO asks: What are we getting?" → 0:50: "But how many shoes did that sell?" All text remains visible. |
+| 2 | 0:55-1:40 | **The ROI Problem** | **B-roll: Sports betting app or sportsbook footage.** Text overlays build: 1:00: "2018: Everything Changed" → 1:20: "Exposure → Download → Bet → Customer". All text remains visible. |
+| 3 | 1:40-2:00 | **This Week: Both Sides** | New slide. **Split screen:** 1:45: LEFT — Brand/building icon + "Brand Perspective". RIGHT — Betting/dice icon + "Operator Perspective". Both sides remain visible to end. |
+
+### VIDEO #8: Executive Perspective (W3-M1, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:35 | **The Iceberg Effect** | **Iceberg graphic builds:** 0:05: Iceberg shape appears → 0:15: Small tip labeled "Rights Fee" → 0:25: Water line reveals large underwater portion labeled "Activation Costs (2-3x)". 0:30: Text "$1 Rights = $2-3 Activation" appears below. All remain visible. |
+| 2 | 0:35-1:25 | **Three Layers of Value** | **B-roll: Brand activation at sporting event.** Text overlays build: 0:40: "1. Reach (impressions)" → 0:55: "2. Engagement (interaction)" → 1:10: "3. Conversion (sales)" → 1:20: "Betting = Clear Attribution". All text remains visible. |
+| 3 | 1:25-2:00 | **Think Like a CFO** | **B-roll: Executive/boardroom footage.** Text overlays build: 1:30: "Reach? ✓" → 1:38: "Engagement? ✓" → 1:45: "Conversion? ?" → 1:50: "20-30% premium for attribution data". All text remains visible. |
+
+### VIDEO #9: Sponsorship 101 (W3-M2, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:45 | **Sponsorship Economics** | **Stacked bar diagram builds:** 0:10: Text "World Cup: 3.5 billion viewers" appears above. 0:20: Bottom bar grows — "$300M rights fee". 0:30: Top bar stacks on — "$600-900M activation". 0:40: Label "Total: $900M-1.2B" appears. All remain visible. |
+| 2 | 0:45-1:35 | **What Sponsors Get** | **B-roll: Sponsor signage and fan experiences.** Text overlays build: 0:50: "1. Reach (logo exposure)" → 1:05: "2. Engagement (experiences)" → 1:20: "3. Exclusivity (30-50% of value)" → 1:30: "CPM: $5,000-10,000 for premium sports". All text remains visible. |
+| 3 | 1:35-2:00 | **Frequency > One-Time Ads** | **B-roll: Repeated sponsor exposure during game.** Text overlays: 1:40: "20-30 exposures per season" → 1:50: "Next: Calculate Your ROI". All text remains visible. |
+
+### VIDEO #10: Betting 101 (W3-M3, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:45 | **Why Bettors Matter** | **B-roll: Fans watching game with phones out (betting).** Text overlays build: 0:05: "40% more live sports viewing" → 0:15: "3x digital engagement" → 0:25: "2x merchandise spending". All text remains visible. |
+| 2 | 0:45-1:35 | **The Attribution Advantage** | **Simple diagram:** Split screen showing unclear path (left: "Ad → ??? → Sale") vs. clear funnel (right: "Exposure → Download → Bet → Customer"). 1:25: Text "20-30% premium for attribution" appears below. All remain visible. |
+| 3 | 1:35-2:00 | **Customer Lifetime Value** | **B-roll: Sports betting app interface.** Text overlays build: 1:40: "$500-1,500 per customer" → 1:50: "100K customers = $50-150M value". All text remains visible. |
+
+### VIDEO #11: FanDuel Case (W3-M4, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:35 | **May 2018: Legalization** | **B-roll: News footage or sportsbook opening.** Text overlays build: 0:05: "May 2018: Supreme Court Decision" → 0:20: "State-by-state legalization begins". All text remains visible. |
+| 2 | 0:35-1:25 | **Aggressive Expansion** | **Funnel diagram builds:** 0:40: Text "FanDuel & DraftKings chose aggressive growth" appears above. 0:50: Top of funnel — "Visibility". 1:00: Middle of funnel — "Adoption". 1:10: Bottom of funnel — "Customer". 1:20: Text "Every dollar → customer acquisition" appears below. All remain visible. |
+| 3 | 1:25-2:00 | **The Dilemma: Path to Profit?** | **B-roll: Business/financial footage.** Text overlays build: 1:30: "Customer Acquisition Cost vs. Lifetime Value" → 1:45: "Your Analysis: Can unit economics work?" All text remains visible. |
+
+---
+
+## Visual Asset Specifications
+
+### Icons & Graphics
+
+**Sponsorship Value Icons**
+- Style: Flat/minimal, matching course icon style
+- Size: 100x100px base, scalable SVG
+- Icons needed:
+  1. **Reach**: Eye with broadcast waves
+  2. **Engagement**: Heart/interaction symbol
+  3. **Conversion**: Shopping cart with checkmark
+  4. **Exclusivity**: Shield with lock
+- Formats: SVG (for animation), PNG (for static use)
+
+**Iceberg Visualization (Rights vs. Activation)**
+- Small tip above water: "Rights Fee"
+- Large mass below water: "Activation Costs (2-3x)"
+- Style: Clean illustration, blue water gradient
+- Animated: Water level reveals hidden costs
+
+**Attribution Funnel**
+- Four-stage funnel diagram:
+  1. Exposure (top, widest)
+  2. Download
+  3. Bet/Convert
+  4. Lifetime Value (bottom, narrowest)
+- Animated: Flow moves through stages
+- Style: Gradient colors showing progression
+
+**ROI Comparison Graphic**
+- Split design: "Fuzzy ROI" (blurred metrics) vs. "Clear ROI" (sharp betting metrics)
+- Visual metaphor: Foggy vs. clear glass
+- Animated: Blur clears to reveal betting attribution
+
+### Data Visualizations
+
+**CPM Comparison Chart**
+- Horizontal bar chart
+- Premium sports: $5,000-10,000 CPM
+- Standard advertising: $2,000-5,000 CPM
+- Sponsorship equivalent: Lower CPM due to frequency
+- Animated: Bars grow with dollar labels
+
+**Betting Statistics Infographic**
+- Three key stats with icons:
+  1. "40% more live sports" (TV icon)
+  2. "3x digital engagement" (phone icon)
+  3. "2x merchandise spending" (jersey icon)
+- Animated: Stats count up from zero
+
+**Customer Lifetime Value Calculation**
+- Formula visualization: CAC vs. LTV
+- Example: $500-1,500 LTV per customer
+- 100K customers = $50-150M value
+- Animated: Numbers multiply
+
+**US Sports Betting Legalization Map**
+- US map with states
+- Animated: States turn green sequentially (May 2018 onwards)
+- Timeline indicator showing progression
+
+**Cash Burn Visualization**
+- Runway graphic showing investment period
+- Red zone (heavy losses) → Yellow (break-even) → Green (profit)
+- Year markers: 1-5
+
+### B-Roll Shot List
+
+**Sponsorship Visuals**
+- Stadium naming rights signage (Scotiabank Arena, etc.)
+- Jersey patches and uniform sponsors
+- LED board advertising during games
+- Sponsor hospitality suites
+- Retail displays with sponsor branding
+- Fan activation events
+
+**Betting/Gaming**
+- Sports betting app interfaces (FanDuel, DraftKings style)
+- Sportsbook physical locations
+- Fans checking phones during games
+- In-broadcast betting odds displays
+- Account creation screens
+- Winning bet celebration
+
+**ROI/Business**
+- CMO/executive in boardroom
+- Spreadsheets and dashboards on screens
+- Marketing team reviewing metrics
+- Presentation slides with ROI charts
+
+**World Cup/FIFA**
+- Global viewing parties
+- Coca-Cola branding at matches
+- International fan celebrations
+- Stadium wide shots with sponsor boards
+
+**Supreme Court/Legal**
+- Supreme Court building exterior
+- News headlines about 2018 decision
+- State capitol buildings
+
+---
+
 **Scripts prepared for:** Business of Sports Marketing
-**Last updated:** 2025-12-16
+**Last updated:** 2025-12-17
 **Version:** 2.1 (fact-checked, videos reduced from 7 to 5)
 **Status:** Ready for production

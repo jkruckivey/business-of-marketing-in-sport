@@ -300,13 +300,6 @@ Good luck with your capstone. You have everything you need. Now show us what you
 - Teleprompter recommended
 - Good lighting and audio
 
-### Visual Assets Needed
-- Video 1: "Heritage Dilemma" title card, revenue potential graphic
-- Video 2: Heritage Balance Grid animation, three tests checklist
-- Video 3: Five trends icons, 2030 timeline graphic
-- Video 4: Heritage institution photos, tension diagram
-- Video 5: Five-week summary cards, capstone requirements
-
 ### Accessibility Requirements
 - VTT caption files required for each video
 - Transcripts available for download
@@ -321,7 +314,178 @@ Good luck with your capstone. You have everything you need. Now show us what you
 
 ---
 
+## Slide-by-Slide Visual Guide
+
+*Each video uses 2-3 slides with elements animating in as narration progresses.*
+
+### VIDEO #17: Bridge-In Hook (W5-M0, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:45 | **The Heritage Dilemma** | **B-roll: Historic sports venue or museum.** Text overlays build: 0:05: "Option A: Preserve tradition" → 0:20: "Option B: Innovate aggressively" → 0:35: "You're CEO. Flat revenue. Board proposes transformation." All text remains visible. |
+| 2 | 0:45-1:45 | **The Catch** | **B-roll: Museum/heritage institution interior.** Text overlays build: 0:50: "Staff revolt. Donors threaten to leave." → 1:10: "If you lose credibility, you lose everything." → 1:35: "Can we grow WITHOUT losing what makes us valuable?" All text remains visible. |
+| 3 | 1:45-2:00 | **The Real Question** | **B-roll: Heritage property exterior.** Text overlay: 1:50: "Next: Diagnostic Exercise". Remains to end. |
+
+### VIDEO #18: Heritage Framework (W5-M2, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:15 | **Authenticity = Your Asset** | **B-roll: Authentic heritage moments.** Text overlays build: 0:05: "Your authenticity IS your asset" → 0:10: "Monetize too aggressively → destroy the value". All text remains visible. |
+| 2 | 0:15-1:25 | **The Heritage Balance Grid** | **Simple 2x2 grid diagram.** Axes: "Revenue Impact" (X) vs. "Authenticity Risk" (Y). Quadrants build: 0:30: "Sweet Spot" (high revenue, low risk) → 0:45: "Danger Zone" (high revenue, high risk) → 1:00: "Safe but Limited" (low revenue, low risk) → 1:10: "Avoid" (low revenue, high risk). All quadrants remain visible. |
+| 3 | 1:25-2:00 | **Three Tests** | **B-roll: Decision-making/boardroom.** Text overlays build: 1:30: "1. Does it serve your mission?" → 1:40: "2. Would stakeholders accept?" → 1:50: "3. Is it reversible?" All text remains visible. |
+
+### VIDEO #19: Future Trends (W5-M3, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:15 | **Sports Business 2030** | **B-roll: Future-looking sports/tech imagery.** Text overlay: 0:05: "Five trends reshaping sports business". Remains visible. |
+| 2 | 0:15-1:45 | **5 Trends Reshaping the Industry** | **B-roll: Mix of D2C, betting, women's sports, AI, heritage footage.** Text overlays build: 0:20: "1. Direct-to-consumer everything" → 0:40: "2. Betting integration deepens" → 1:00: "3. Women's sports reach parity" → 1:15: "4. AI transforms operations" → 1:30: "5. Heritage becomes competitive advantage". All text remains visible. |
+| 3 | 1:45-2:00 | **Apply the Trends** | **B-roll: Sports business future.** Text overlay: 1:50: "Next: Future Trends Widget". Remains to end. |
+
+### VIDEO #20: HHOF Case (W5-M4, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:35 | **Universal Heritage Challenge** | **B-roll: Hockey Hall of Fame or similar heritage venue.** Text overlays build: 0:05: "This isn't just about hockey" → 0:15: "Every heritage property faces this dilemma" → 0:25: "Board wants growth. Staff wants preservation." All text remains visible. |
+| 2 | 0:35-1:35 | **Both Sides Are Right** | **B-roll: VR experiences, museum exhibits.** Text overlays build: 0:40: "The opportunities ARE real" → 1:00: "The risks ARE real" → 1:15: "Trap 1: Growth always wins. Trap 2: Tradition always wins." All text remains visible. |
+| 3 | 1:35-2:00 | **The Answer: Boundaries** | **B-roll: Heritage institution.** Text overlays build: 1:40: "The answer: boundary-setting" → 1:50: "Where is the line for THIS organization?" → 1:55: "Next: Case Study Analysis". All text remains visible. |
+
+### VIDEO #21: Course Synthesis (W5-M6, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:15 | **Congratulations!** | **B-roll: Celebration/achievement imagery.** Text overlays build: 0:05: "Congratulations!" → 0:10: "You now have frameworks professionals use." All text remains visible. |
+| 2 | 0:15-1:15 | **Your Five-Week Journey** | **B-roll: Course highlights montage.** Text overlays build: 0:20: "Week 1: Revenue Ecosystems" → 0:35: "Week 2: Media Rights" → 0:45: "Week 3: Sponsorship & Betting" → 0:55: "Week 4: Athletes & Emerging Sports" → 1:05: "Week 5: Heritage & Future". All text remains visible. |
+| 3 | 1:15-2:00 | **Capstone: Your Strategy** | **B-roll: Strategic planning/success imagery.** Text overlays build: 1:20: "Build sustainable revenue" → 1:30: "Position competitively" → 1:40: "Ensure financial viability" → 1:50: "Good luck!" All text remains visible. |
+
+---
+
+## Visual Asset Specifications
+
+### Icons & Graphics
+
+**Five Future Trends Icons**
+- Style: Flat/minimal, matching course icon style
+- Size: 100x100px base, scalable SVG
+- Icons needed:
+  1. **D2C**: Direct connection (brand to fan, no middleman)
+  2. **Betting Integration**: Embedded odds/wagering symbol
+  3. **Women's Sports Parity**: Equal sign or balance scale
+  4. **AI Transformation**: Brain/circuit hybrid
+  5. **Heritage Advantage**: Shield with history/legacy symbol
+- Formats: SVG (for animation), PNG (for static use)
+
+**Heritage Balance Grid**
+- 2x2 quadrant matrix
+- X-axis: Revenue Impact (Low → High)
+- Y-axis: Authenticity Risk (Low → High)
+- Quadrants labeled:
+  - Top-left: "Sweet Spot" (high revenue, low risk) - GREEN
+  - Top-right: "Danger Zone" (high revenue, high risk) - RED
+  - Bottom-left: "Safe but Limited" (low revenue, low risk) - YELLOW
+  - Bottom-right: "Avoid" (low revenue, high risk) - GRAY
+- Animated: Grid draws, then examples populate quadrants
+
+**Balance Scale Graphic**
+- Traditional balance scale
+- Left side: "Revenue Growth" (dollar signs)
+- Right side: "Authenticity" (heritage/tradition symbol)
+- Animated: Scale tips back and forth before balancing
+
+**Three Tests Checklist**
+- Checklist format with icons:
+  1. ☐ Does it serve your mission or replace it?
+  2. ☐ Would loyal stakeholders accept it?
+  3. ☐ Is it reversible?
+- Animated: Checkmarks appear as discussed
+
+**Week Summary Cards**
+- Five cards (one per week)
+- Each card shows:
+  - Week number
+  - Title
+  - Key framework icon
+  - 2-3 word summary
+- Style: Consistent card design, distinct colors
+- Animated: Cards flip/appear in sequence
+
+### Data Visualizations
+
+**Revenue Growth Potential Chart**
+- Bar chart showing current vs. projected revenue
+- Current: Flat line over years
+- Projected: Significant growth with initiatives
+- Animated: Growth bar extends
+
+**Donation Decline Warning**
+- Line graph showing donation trajectory
+- Scenario A: Maintain donations (flat)
+- Scenario B: Aggressive commercialization (decline)
+- Risk annotation highlighted
+
+**2030 Timeline Graphic**
+- Horizontal timeline from present to 2030
+- Five trend milestones marked
+- Animated: Timeline builds left to right
+
+**Capstone Integration Diagram**
+- Central hub: "Capstone Project"
+- Five spokes connecting to each week's framework
+- Shows how all weeks integrate
+- Animated: Spokes connect sequentially
+
+**Heritage Value Premium Visualization**
+- Comparison showing heritage vs. new franchise
+- Metrics: Fan loyalty, pricing power, sponsor interest
+- Heritage properties show premium
+
+### B-Roll Shot List
+
+**Heritage/Museum**
+- Hockey Hall of Fame exterior and interior
+- Sports museum artifacts and displays
+- Trophy cases and memorabilia
+- Historic venue architecture
+- Archival footage and photos
+- Curator handling artifacts
+
+**Tradition vs. Innovation**
+- Traditional museum experience (quiet, reverent)
+- Modern interactive exhibits (VR, touchscreens)
+- Pop-up experiences in non-traditional locations
+- Digital archive access on devices
+- Contrasting visitor experiences
+
+**Stakeholder Perspectives**
+- Board meeting discussions
+- Donor recognition walls
+- Curatorial staff at work
+- Long-time members/visitors
+- Protest or concern imagery (tasteful)
+
+**Future Technology**
+- VR headset experiences
+- AI-powered tour guides
+- Interactive digital displays
+- Mobile app experiences
+- Augmented reality overlays
+
+**Course Celebration/Synthesis**
+- Graduation/achievement imagery
+- Students/professionals in success moments
+- Framework toolkit visualization
+- Strategic planning sessions
+- Business success outcomes
+
+**Historic Sports Venues**
+- Iconic stadiums (Fenway, Wrigley, etc.)
+- Legacy franchise facilities
+- Historic moments at venues
+- Architectural heritage details
+
+---
+
 **Scripts prepared for:** Business of Sports Marketing
-**Last updated:** 2025-12-16
+**Last updated:** 2025-12-17
 **Version:** 2.1 (fact-checked)
 **Status:** Ready for production

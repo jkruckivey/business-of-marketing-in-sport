@@ -155,10 +155,6 @@ In your simulation, you'll choose: Linear, streaming, or hybrid?
 - Professional voiceover narrator
 - Fast-paced with clear on-screen text
 
-### Visual Assets Needed
-- Video 1: Five-factor framework icons, billion-dollar deal examples, viewership trend charts
-- Video 2: Split-screen comparison graphics, revenue/cost pie charts, profitability timeline
-
 ### Accessibility Requirements
 - VTT caption files required for each video
 - Transcripts available for download
@@ -173,7 +169,120 @@ In your simulation, you'll choose: Linear, streaming, or hybrid?
 
 ---
 
+## Slide-by-Slide Visual Guide
+
+*Each video uses 2-3 slides with elements animating in as narration progresses.*
+
+### VIDEO #5: Media Rights Valuation (W2-M3, V1)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:15 | **How Much Are Sports Rights Worth?** | **2 deal examples build:** 0:03: Amazon logo icon + "Amazon NFL: $1B/year" → 0:10: Rogers logo icon + "Rogers NHL: $5.2B/12 years". Both remain visible. |
+| 2 | 0:15-1:40 | **The Five-Factor Framework** | New slide. **5 factor ICONS build vertically and remain:** 0:20: People icon + "1. Audience Size & Demographics" → 0:35: Lock icon + "2. Exclusivity & Competition" → 0:50: Calendar icon + "3. Content Volume & Scheduling" → 1:05: Handshake icon + "4. Sponsorship Integration" → 1:20: Device icon + "5. Platform Strategy Fit". All 5 remain visible. 1:30: Warning icon pulses at bottom with "Model trends, not current numbers". |
+| 3 | 1:40-2:00 | **Apply the Framework** | Same 5 icons reposition into connected diagram (lines link all 5). 1:50: Text "Next: Streaming Wars Simulation" appears below. |
+
+### VIDEO #6: Linear vs Streaming (W2-M3, V2)
+
+| Slide | Duration | Title | Elements (animate in sequence) |
+|-------|----------|-------|-------------------------------|
+| 1 | 0:00-0:45 | **Two Business Models** | **Split screen layout:** 0:05: LEFT side — TV icon + "Linear TV" + pie chart animates (70% ads, 30% carriage). 0:20: RIGHT side — Streaming icon + "Streaming" + pie chart animates (85% subscriptions, 15% ads). 0:35: Text "Linear = Audience / Streaming = Subscribers" appears at bottom. All elements remain visible. |
+| 2 | 0:45-1:10 | **Economics Compared** | New slide. **Split layout:** LEFT side — TV icon + "Linear TV" + cost bars (65% Rights, 25% Production, 10% Distribution). RIGHT side — Streaming icon + "Streaming" + cost bars (45% Rights, 30% Tech, 25% Acquisition). 1:00: **Timeline graphic spans both sides:** "Day 1 profit" marker on Linear, "Year 5 profit" marker on Streaming. All elements remain visible. |
+| 3 | 1:10-1:35 | **Key Risks** | New slide. **Split layout with risk comparisons:** LEFT side — TV icon + "Linear TV". RIGHT side — Streaming icon + "Streaming". **Risks build under each side:** 1:15: Scissors icon + "Cord-cutting" under Linear, Churn icon + "High churn" under Streaming. 1:25: Decline graph icon + "Audience fragmentation" under Linear, Dollar icon + "Price sensitivity" under Streaming. All elements remain visible. |
+| 4 | 1:35-2:00 | **Your Choice** | New slide. **3 diverging paths:** 1:40: TV icon + "Linear" path (left) / Hybrid icon + "Hybrid" path (center) / Streaming icon + "Streaming" path (right). 1:50: Text "Rogers' challenge: cord-cutting cannibalized faster than streaming grew" appears below. All remain to end. |
+
+---
+
+## Visual Asset Specifications
+
+### Icons & Graphics
+
+**Five-Factor Framework Icons**
+- Style: Flat/minimal, matching Week 1 icon style
+- Size: 100x100px base, scalable SVG
+- Icons needed:
+  1. **Audience**: Group of people silhouettes with demographic indicators
+  2. **Exclusivity**: Lock or "exclusive" badge
+  3. **Content Volume**: Calendar with game slots
+  4. **Sponsorship**: Dollar sign with brand partnership symbol
+  5. **Platform Strategy**: Device ecosystem (TV, phone, tablet, laptop)
+- Formats: SVG (for animation), PNG (for static use)
+
+**Linear vs. Streaming Split Screen Template**
+- Two-panel layout (50/50 split)
+- Left panel: Traditional TV aesthetic (warm tones, vintage feel)
+- Right panel: Streaming aesthetic (cool tones, modern/digital)
+- Consistent throughout Video #6
+
+**Three Paths Diverging Graphic**
+- Road/path metaphor splitting into three directions
+- Labels: "Linear" / "Streaming" / "Hybrid"
+- Style: Isometric or flat illustration
+
+### Data Visualizations
+
+**Deal Value Comparison Bars**
+- Vertical bar chart comparing major deals
+- Examples: Amazon NFL ($1B/yr), Rogers NHL ($433M/yr)
+- Animated: Bars grow from zero with dollar amounts
+
+**Viewership Trend Line Graph**
+- X-axis: Years (2015-2024)
+- Y-axis: Millions of viewers
+- Show decline trajectory with 12% drop highlighted
+- Animated: Line draws left to right
+
+**Revenue Model Pie Charts**
+- Two side-by-side pies (Linear vs. Streaming)
+- Linear: 70% Advertising, 30% Carriage
+- Streaming: 85% Subscriptions, 15% Ads
+- Animated: Slices grow from center
+
+**Cost Structure Stacked Bars**
+- Side-by-side comparison (Linear vs. Streaming)
+- Linear: Rights 65%, Production 25%, Distribution 10%
+- Streaming: Rights 45%, Technology 30%, Customer Acquisition 25%
+
+**Profitability Timeline**
+- Horizontal timeline (Year 1-5)
+- Linear: Green "profitable" marker at Day 1
+- Streaming: Red zone Years 1-3, yellow Year 4, green Year 5+
+- Animated: Timeline builds left to right
+
+**Cord-Cutting Decline Chart**
+- Line graph showing Canadian pay TV subscribers
+- 2014: ~11.2M → 2024: ~9.7M
+- Highlight: "~13% decline" annotation
+
+### B-Roll Shot List
+
+**Traditional Broadcasting**
+- Vintage TV sets displaying sports
+- Cable boxes and remote controls
+- TV commercials playing during sports
+- Cable installation truck
+- Living room viewing (family on couch)
+
+**Streaming/Digital**
+- Multiple devices showing same content
+- App interfaces (Netflix, Prime, sports apps)
+- Mobile viewing on subway/commute
+- Streaming quality buffering
+- Account creation/subscription screens
+
+**Technology Infrastructure**
+- Server room/data center
+- App development screens
+- Network operations center
+- Cloud computing visuals
+
+**Transition/Comparison**
+- Old TV morphing to tablet (stock animation)
+- Remote control vs. touchscreen
+- Antenna vs. WiFi symbol
+
+---
+
 **Scripts prepared for:** Business of Sports Marketing
-**Last updated:** 2025-12-16
+**Last updated:** 2025-12-17
 **Version:** 2.1 (fact-checked)
 **Status:** Ready for production

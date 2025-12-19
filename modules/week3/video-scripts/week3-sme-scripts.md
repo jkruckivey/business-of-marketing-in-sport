@@ -297,43 +297,43 @@ As you read the FanDuel case, focus on customer economics: acquisition costs, li
 
 ### VIDEO #7: Bridge-In Hook (W3-M0, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:55 | **The $500 Million Question** | **B-roll: Football stadium with sponsor signage visible.** Text overlays build: 0:05: "Billions spent on sponsorship" → 0:30: "CFO asks: What are we getting?" → 0:50: "But how many shoes did that sell?" All text remains visible. |
-| 2 | 0:55-1:40 | **The ROI Problem** | **B-roll: Sports betting app or sportsbook footage.** Text overlays build: 1:00: "2018: Everything Changed" → 1:20: "Exposure → Download → Bet → Customer". All text remains visible. |
-| 3 | 1:40-2:00 | **This Week: Both Sides** | New slide. **Split screen:** 1:45: LEFT — Brand/building icon + "Brand Perspective". RIGHT — Betting/dice icon + "Operator Perspective". Both sides remain visible to end. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **The $500 Million Question** | **B-roll: Football stadium with sponsor signage visible.** Text overlays build: On "hundreds of millions of dollars": "Billions spent on sponsorship" → On "What are we getting": "CFO asks: What are we getting?" → On "How many shoes did that sell": "But how many shoes did that sell?" All text remains visible. |
+| 2 | **The ROI Problem** | **B-roll: Sports betting app or sportsbook footage.** Text overlays build: On "something changed in 2018": "2018: Everything Changed" → On "attribution loop": "Exposure → Download → Bet → Customer". All text remains visible. |
+| 3 | **This Week: Both Sides** | New slide. **Split screen:** On "think like both sides": LEFT — Brand/building icon + "Brand Perspective". RIGHT — Betting/dice icon + "Operator Perspective". Both sides remain visible to end. |
 
 ### VIDEO #8: Executive Perspective (W3-M1, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:35 | **The Iceberg Effect** | **Iceberg graphic builds:** 0:05: Iceberg shape appears → 0:15: Small tip labeled "Rights Fee" → 0:25: Water line reveals large underwater portion labeled "Activation Costs (2-3x)". 0:30: Text "$1 Rights = $2-3 Activation" appears below. All remain visible. |
-| 2 | 0:35-1:25 | **Three Layers of Value** | **B-roll: Brand activation at sporting event.** Text overlays build: 0:40: "1. Reach (impressions)" → 0:55: "2. Engagement (interaction)" → 1:10: "3. Conversion (sales)" → 1:20: "Betting = Clear Attribution". All text remains visible. |
-| 3 | 1:25-2:00 | **Think Like a CFO** | **B-roll: Executive/boardroom footage.** Text overlays build: 1:30: "Reach? ✓" → 1:38: "Engagement? ✓" → 1:45: "Conversion? ?" → 1:50: "20-30% premium for attribution data". All text remains visible. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **The Iceberg Effect** | **Iceberg graphic builds:** On "rights fee is the investment": Iceberg shape appears → Small tip labeled "Rights Fee" → On "$2-3 on activation": Water line reveals large underwater portion labeled "Activation Costs (2-3x)". On "$10-15 million amplifying": Text "$1 Rights = $2-3 Activation" appears below. All remain visible. |
+| 2 | **Three Layers of Value** | **B-roll: Brand activation at sporting event.** Text overlays build: On "Reach—how many people": "1. Reach (impressions)" → On "Engagement—did they interact": "2. Engagement (interaction)" → On "Conversion—did they buy": "3. Conversion (sales)" → On "betting partnerships excel": "Betting = Clear Attribution". All text remains visible. |
+| 3 | **Think Like a CFO** | **B-roll: Executive/boardroom footage.** Text overlays build: On "What's the reach": "Reach? ✓" → On "What's the engagement": "Engagement? ✓" → On "How do we measure conversion": "Conversion? ?" → On "20-30% premiums": "20-30% premium for attribution data". All text remains visible. |
 
 ### VIDEO #9: Sponsorship 101 (W3-M2, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:45 | **Sponsorship Economics** | **Stacked bar diagram builds:** 0:10: Text "World Cup: 3.5 billion viewers" appears above. 0:20: Bottom bar grows — "$300M rights fee". 0:30: Top bar stacks on — "$600-900M activation". 0:40: Label "Total: $900M-1.2B" appears. All remain visible. |
-| 2 | 0:45-1:35 | **What Sponsors Get** | **B-roll: Sponsor signage and fan experiences.** Text overlays build: 0:50: "1. Reach (logo exposure)" → 1:05: "2. Engagement (experiences)" → 1:20: "3. Exclusivity (30-50% of value)" → 1:30: "CPM: $5,000-10,000 for premium sports". All text remains visible. |
-| 3 | 1:35-2:00 | **Frequency > One-Time Ads** | **B-roll: Repeated sponsor exposure during game.** Text overlays: 1:40: "20-30 exposures per season" → 1:50: "Next: Calculate Your ROI". All text remains visible. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **Sponsorship Economics** | **Two-bar diagram builds:** On "3.5 billion people watch": Text "World Cup: 3.5 billion viewers" appears above. On "$300M per year in rights": First bar grows — "$300M rights fee". On "$600-900M in activation": Second bar grows beside it — "$600-900M activation". On "entry ticket": Label "Total: $900M-1.2B" appears. All remain visible. |
+| 2 | **What Sponsors Get** | **B-roll: Sponsor signage and fan experiences.** Text overlays build: On "First, Reach": "1. Reach (logo exposure)" → On "Second, Engagement": "2. Engagement (experiences)" → On "Third, Category exclusivity": "3. Exclusivity (30-50% of value)" → On "$5,000-10,000 CPM": "CPM: $5,000-10,000 for premium sports". All text remains visible. |
+| 3 | **Frequency > One-Time Ads** | **B-roll: Repeated sponsor exposure during game.** Text overlays: On "20-30 times per season": "20-30 exposures per season" → On "Sponsorship Valuation Calculator": "Next: Calculate Your ROI". All text remains visible. |
 
 ### VIDEO #10: Betting 101 (W3-M3, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:45 | **Why Bettors Matter** | **B-roll: Fans watching game with phones out (betting).** Text overlays build: 0:05: "40% more live sports viewing" → 0:15: "3x digital engagement" → 0:25: "2x merchandise spending". All text remains visible. |
-| 2 | 0:45-1:35 | **The Attribution Advantage** | **Simple diagram:** Split screen showing unclear path (left: "Ad → ??? → Sale") vs. clear funnel (right: "Exposure → Download → Bet → Customer"). 1:25: Text "20-30% premium for attribution" appears below. All remain visible. |
-| 3 | 1:35-2:00 | **Customer Lifetime Value** | **B-roll: Sports betting app interface.** Text overlays build: 1:40: "$500-1,500 per customer" → 1:50: "100K customers = $50-150M value". All text remains visible. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **Why Bettors Matter** | **B-roll: Fans watching game with phones out (betting).** Text overlays build: On "40% more live sports": "40% more live sports viewing" → On "3x more on digital platforms": "3x digital engagement" → On "2x more on merchandise": "2x merchandise spending". All text remains visible. |
+| 2 | **The Attribution Advantage** | **Simple diagram:** On "How do you connect": Split screen showing unclear path (left: "Ad → ??? → Sale") vs. clear funnel (right: "Exposure → Download → Bet → Customer"). On "20-30% premiums": Text "20-30% premium for attribution" appears below. All remain visible. |
+| 3 | **Customer Lifetime Value** | **B-roll: Sports betting app interface.** Text overlays build: On "$500-1,500 in lifetime revenue": "$500-1,500 per customer" → On "100,000 new customers": "100K customers = $50-150M value". All text remains visible. |
 
 ### VIDEO #11: FanDuel Case (W3-M4, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:35 | **May 2018: Legalization** | **B-roll: News footage or sportsbook opening.** Text overlays build: 0:05: "May 2018: Supreme Court Decision" → 0:20: "State-by-state legalization begins". All text remains visible. |
-| 2 | 0:35-1:25 | **Aggressive Expansion** | **Funnel diagram builds:** 0:40: Text "FanDuel & DraftKings chose aggressive growth" appears above. 0:50: Top of funnel — "Visibility". 1:00: Middle of funnel — "Adoption". 1:10: Bottom of funnel — "Customer". 1:20: Text "Every dollar → customer acquisition" appears below. All remain visible. |
-| 3 | 1:25-2:00 | **The Dilemma: Path to Profit?** | **B-roll: Business/financial footage.** Text overlays build: 1:30: "Customer Acquisition Cost vs. Lifetime Value" → 1:45: "Your Analysis: Can unit economics work?" All text remains visible. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **May 2018: Legalization** | **B-roll: News footage or sportsbook opening.** Text overlays build: On "2018 Supreme Court decision": "May 2018: Supreme Court Decision" → On "State-by-state": "State-by-state legalization begins". All text remains visible. |
+| 2 | **Aggressive Expansion** | **Funnel diagram builds:** On "aggressive expansion": Text "Major betting operators chose aggressive growth" appears above. On "visibility": Top of funnel — "Visibility". On "adoption": Middle of funnel — "Adoption". On "customer": Bottom of funnel — "Customer". On "customer acquisition": Text "Every dollar → customer acquisition" appears below. All remain visible. |
+| 3 | **The Dilemma: Path to Profit?** | **B-roll: Business/financial footage.** Text overlays build: On "path to profitability": "Customer Acquisition Cost vs. Lifetime Value" → On "unit economics": "Your Analysis: Can unit economics work?" All text remains visible. |
 
 ---
 
@@ -406,7 +406,7 @@ As you read the FanDuel case, focus on customer economics: acquisition costs, li
 ### B-Roll Shot List
 
 **Sponsorship Visuals**
-- Stadium naming rights signage (Scotiabank Arena, etc.)
+- Stadium naming rights signage (generic arena names)
 - Jersey patches and uniform sponsors
 - LED board advertising during games
 - Sponsor hospitality suites
@@ -414,7 +414,7 @@ As you read the FanDuel case, focus on customer economics: acquisition costs, li
 - Fan activation events
 
 **Betting/Gaming**
-- Sports betting app interfaces (FanDuel, DraftKings style)
+- Generic sports betting app interfaces
 - Sportsbook physical locations
 - Fans checking phones during games
 - In-broadcast betting odds displays
@@ -427,9 +427,9 @@ As you read the FanDuel case, focus on customer economics: acquisition costs, li
 - Marketing team reviewing metrics
 - Presentation slides with ROI charts
 
-**World Cup/FIFA**
+**Global Tournament**
 - Global viewing parties
-- Coca-Cola branding at matches
+- Generic sponsor branding at matches
 - International fan celebrations
 - Stadium wide shots with sponsor boards
 

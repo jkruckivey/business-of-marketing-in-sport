@@ -1,0 +1,24 @@
+{
+  "name": "business-of-marketing-in-sport",
+  "version": "1.0.0",
+  "description": "Welcome to the development repository for \"The Business of Sports Marketing,\" a first-of-its-kind course at Ivey Business School. This project creates a comprehensive, accessible, and inclusive online course that follows Universal Design for Learning (UDL) principles and Quality Matters (QM) standards.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkruckivey/business-of-marketing-in-sport.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jkruckivey/business-of-marketing-in-sport/issues"
+  },
+  "homepage": "https://github.com/jkruckivey/business-of-marketing-in-sport#readme",
+  "dependencies": {
+    "docx": "^9.5.1"
+  }
+}

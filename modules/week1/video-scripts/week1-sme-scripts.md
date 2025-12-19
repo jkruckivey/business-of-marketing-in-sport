@@ -1,9 +1,107 @@
 # Week 1: Revenue Ecosystems - SME Video Scripts
 ## Business of Sports Marketing
 
-**Purpose:** Narrated instructional videos covering revenue ecosystem fundamentals
-**Format:** 2-minute videos with animated graphics
-**Total Duration:** 4 videos, ~8 minutes combined
+**Purpose:** SME bridge-in video + narrated instructional videos covering revenue ecosystem fundamentals
+**Format:** Direct-to-camera intro + 2-minute animated videos
+**Total Duration:** 5 videos, ~10.5 minutes combined
+
+---
+
+## VIDEO #0 IO - Cohort - BOSM – W1-M0, V1 (The $100 Million Question)
+
+**Purpose:** Hook students with Connor McDavid revenue paradox, introduce SME
+**Placement:** Module 0 (Bridge-In) - First video in Week 1
+**Duration:** 2:30
+**Visual Style:** SME direct-to-camera with supporting slides
+
+### SCRIPT
+
+**[OPENING - 0:00-0:20] INTRODUCTION & CREDIBILITY**
+
+**SME:**
+"Hi, I'm [NAME], and I've spent [X] years working in professional sport—most recently as [ROLE] at [ORGANIZATION]. I've been on both sides of the table for deals worth hundreds of millions of dollars.
+
+And I want to start this course with a problem that's kept me up at night."
+
+**[ON-SCREEN TEXT: "The $100 Million Question"]**
+
+---
+
+**[SECTION: THE PARADOX SETUP - 0:20-1:10]**
+
+**SME:**
+"Imagine you're the GM of an NHL team. You just signed Connor McDavid—the best player in hockey—to a $100 million, 8-year contract.
+
+**[VISUAL CUE: Show slide with contract breakdown]**
+
+That's $12.5 million per year. Your CFO tracks the immediate impacts:
+- Ticket sales jump $5 million
+- Jersey sales spike $3 million
+- That's $8 million in new revenue
+
+**[Pause, lean forward]**
+
+Your board looks at these numbers and asks the obvious question: 'Why did we just LOSE $4.5 million per year on this deal?'"
+
+**[ON-SCREEN TEXT: "$12.5M cost - $8M revenue = -$4.5M loss?"]**
+
+---
+
+**[SECTION: REFRAMING THE PROBLEM - 1:10-1:50]**
+
+**SME:**
+"Here's what I learned the hard way: If you're asking that question, you're measuring the WRONG things.
+
+Because Connor McDavid isn't worth $8 million to your organization. He's worth $30 to $40 million per year.
+
+**[ON-SCREEN TEXT: "Actual Value: $30-40M/year"]**
+
+The problem isn't the numbers. The problem is understanding how sport revenue works DIFFERENTLY than almost any other business.
+
+There's a revenue ecosystem at play here—interdependencies that your CFO's spreadsheet will never capture. Media deals that hinge on star power. Sponsorships that activate around marquee players. Betting handles that spike when the best player in the world takes the ice."
+
+---
+
+**[CLOSING - 1:50-2:30] LEARNING CHALLENGE & CALL-TO-ACTION**
+
+**SME:**
+"This week, you're going to learn how to see that ecosystem. You'll map five major revenue streams in professional sport. You'll understand why they're interdependent. And by the end, you'll be able to defend that $100 million contract to a skeptical board—with numbers they can't argue with.
+
+**[Pause]**
+
+But first, I want to know: Do you ALREADY have the knowledge to solve this problem? Can you explain where that missing $22-32 million comes from?
+
+Right now, before you learn anything this week, test yourself. Take the diagnostic exercise that follows this video. Be honest. Reveal your knowledge gaps NOW—so we can fill them together.
+
+**[ON-SCREEN TEXT: "Next: Diagnostic Exercise + Pre-Assessment"]**
+
+Let's find out what you already know... and what you're about to discover."
+
+**[END: 2:30]**
+
+---
+
+### Slide-by-Slide Visual Guide
+
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **Meet the SME** | **Direct-to-camera.** On "Hi, I'm": Lower third — Name + Title. On "kept me up at night": Text "The $100 Million Question" appears. All remain visible. |
+| 2 | **The Paradox** | **Direct-to-camera with slide inserts.** On "$100 million, 8-year contract": Contract slide appears ($100M / 8 years = $12.5M/year). On "Ticket sales jump": Revenue math appears ($5M + $3M = $8M). On "LOSE $4.5 million": Loss equation appears ($12.5M - $8M = -$4.5M?). All remain visible. |
+| 3 | **The Ecosystem** | **Direct-to-camera.** On "$30 to $40 million per year": Text "Actual Value: $30-40M/year" appears. On "revenue ecosystem at play": Revenue ecosystem visual (5 streams connected). All remain visible. |
+| 4 | **Your Challenge** | **Direct-to-camera.** On "diagnostic exercise that follows": Text "Next: Diagnostic Exercise + Pre-Assessment" appears. Remains to end. |
+
+---
+
+### Visual Assets Needed
+
+- **Slide 1:** Connor McDavid contract breakdown ($100M / 8 years = $12.5M/year)
+  - Alt text: "Table showing Connor McDavid contract breakdown: $100 million over 8 years equals $12.5 million per year"
+- **Slide 2:** Immediate revenue calculation ($5M tickets + $3M merch = $8M)
+  - Alt text: "Revenue calculation showing ticket sales increase of $5 million plus merchandise sales of $3 million equals $8 million total direct revenue"
+- **Slide 3:** The paradox equation ($12.5M cost - $8M revenue = -$4.5M loss?)
+  - Alt text: "Equation showing apparent loss: $12.5 million cost minus $8 million revenue equals negative $4.5 million per year"
+- **Slide 4:** Actual value reveal ($30-40M/year ecosystem value)
+  - Alt text: "Text reveal showing actual ecosystem value of $30 to $40 million per year"
 
 ---
 
@@ -259,35 +357,35 @@ In Week 2, you'll analyze this deal in depth and examine what Rogers' strategic 
 
 ### VIDEO #1: Five Revenue Streams (W1-M3, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:15 | **The Five Revenue Streams** | Background: Stadium montage. **5 ICONS appear and remain:** 0:05: TV icon (media) → 0:07: Ticket icon → 0:09: Handshake icon (sponsorship) → 0:11: Jersey icon (merch) → 0:13: Dice icon (betting). All 5 icons stay visible. |
-| 2 | 0:15-1:30 | **Revenue Breakdown** | Same 5 icons from Slide 1 remain. **Percentage bars animate beside each icon:** 0:20: Media Rights bar grows to "40-60%" → 0:35: Ticketing bar grows to "20-30%" → 0:50: Sponsorship bar grows to "15-25%" → 1:05: Merchandising bar grows to "5-10%" → 1:15: Betting bar grows to "2-8%" + pulses with "Fastest Growing" label. All bars remain visible. |
-| 3 | 1:30-2:00 | **Key Insight: Build Ecosystems** | Transition: 5 icons reposition from row to circle formation (bars fade out). 1:35: Animated lines connect all 5 icons to new central hub icon. 1:45: Text appears below: "Revenue ecosystems, not portfolios". All elements remain to end. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **The Five Revenue Streams** | Background: Stadium montage. **5 ICONS appear and remain:** On "five major sources": TV icon (media) → On "Let's break them down": Ticket icon → Handshake icon (sponsorship) → Jersey icon (merch) → Dice icon (betting). All 5 icons stay visible. |
+| 2 | **Revenue Breakdown** | Same 5 icons from Slide 1 remain. **Percentage bars animate beside each icon:** On "Media Rights—40-60%": Media Rights bar grows to "40-60%" → On "Ticketing and Live Events—20-30%": Ticketing bar grows to "20-30%" → On "Sponsorship and Partnerships—15-25%": Sponsorship bar grows to "15-25%" → On "Merchandising and Licensing—5-10%": Merchandising bar grows to "5-10%" → On "Betting and Gaming—2-8%": Betting bar grows to "2-8%" + pulses with "Fastest Growing" label. All bars remain visible. |
+| 3 | **Key Insight: Build Ecosystems** | Transition: 5 icons reposition from row to circle formation (bars fade out). On "interconnected": Animated lines connect all 5 icons to new central hub icon. On "revenue ecosystems, not portfolios": Text appears below. All elements remain to end. |
 
 ### VIDEO #2: Sponsorship & Merchandising (W1-M3, V2)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:45 | **Sponsorship Revenue** | Background: Arena exterior. **Tiered pyramid builds from top down:** 0:05: Top tier appears — Arena icon + "Naming Rights: $800M / 20 years" → 0:15: Middle tier appears — Jersey icon + "Jersey Patches: $20-30M/year" → 0:30: Base tier appears — Partner icons + "Category Partners: $5-15M/year" (all 3 tiers remain visible) |
-| 2 | 0:45-1:30 | **Activation > Logos** | New slide (pyramid fades out). 0:50: Text "Scene+ Night" appears as example. 1:00: Text "Activations drive engagement, not just logos" appears below. 1:15: Jersey icon + "Merchandising: 5-10% of Revenue" appears. All text remains visible. |
-| 3 | 1:30-2:00 | **Key Insight: Brand = Value** | New slide. **Split screen comparison:** Left side: Packed store image + "Strong Brand". Right side: Empty shelves image + "Weak Brand". Both sides remain visible to end. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **Sponsorship Revenue** | Background: Arena exterior. **Tiered pyramid builds from top down:** On "naming rights": Top tier appears — Arena icon + "Naming Rights: $800M / 20 years" → On "Jersey sponsorship": Middle tier appears — Jersey icon + "Jersey Patches: $20-30M/year" → On "Key sponsorship categories": Base tier appears — Partner icons + "Category Partners: $5-15M/year" (all 3 tiers remain visible) |
+| 2 | **Activation > Logos** | New slide (pyramid fades out). On "Scene+ Night": Text "Scene+ Night" appears as example. On "Fans remember positive moments": Text "Activations drive engagement, not just logos" appears below. On "Merchandising: 5-10%": Jersey icon + "Merchandising: 5-10% of Revenue" appears. All text remains visible. |
+| 3 | **Key Insight: Brand = Value** | New slide. **Split screen comparison:** On "brand-driven revenue streams": Left side — Packed store image + "Strong Brand". Right side — Empty shelves image + "Weak Brand". Both sides remain visible to end. |
 
 ### VIDEO #3: Revenue Sharing Models (W1-M5, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:15 | **Why Leagues Share Revenue** | 0:05: Text "Competitors need each other to thrive" appears. 0:10: **3 league shield ICONS appear in row:** NFL shield → NHL shield → Premier League crest. All remain visible. |
-| 2 | 0:15-1:30 | **Three Models Compared** | **Simple 3-column comparison table:** 0:20: NFL column — "60% shared" → 0:45: NHL column — "50% shared" + "CAD/USD challenge" → 1:05: Premier League column — "50/25/25 split". 1:20: Text "Green Bay (pop. 105K) ≈ NYC Giants revenue" appears below. All remain visible. |
-| 3 | 1:30-2:00 | **Impact on Strategy** | New slide (columns fade out). 1:35: Text "More sharing = fewer strategic options" appears. 1:50: Text "Next: Canucks Case Study" appears. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **Why Leagues Share Revenue** | On "NEED their competitors to thrive": Text "Competitors need each other to thrive" appears. On "revenue sharing": **3 generic league shield ICONS appear in row:** League A shield → League B shield → League C crest. All remain visible. |
+| 2 | **Three Models Compared** | **Simple 3-column comparison table:** On "Model 1: NFL": NFL column — "60% shared" → On "Model 2: NHL": NHL column — "50% shared" + "CAD/USD challenge" → On "Model 3: Premier League": Premier League column — "50/25/25 split". On "Green Bay Packers": Text "Green Bay (pop. 105K) ≈ NYC Giants revenue" appears below. All remain visible. |
+| 3 | **Impact on Strategy** | New slide (columns fade out). On "limits strategic options": Text "More sharing = fewer strategic options" appears. On "Vancouver Canucks case": Text "Next: Canucks Case Study" appears. |
 
 ### VIDEO #4: Rogers NHL Deal (W1-M7, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:30 | **$5.2 Billion / 12 Years** | **B-roll: Hockey broadcast or Rogers/Sportsnet branding.** Text overlays build: 0:05: "$5.2 Billion / 12 Years" → 0:15: "Canada's Largest Sports Media Deal". All text remains visible. |
-| 2 | 0:30-1:30 | **Three Strategic Goals** | New slide. **3 goals build vertically with status indicators:** 0:35: Cable icon + "1. Defend Cable" + ❌ "Declined" → 0:50: Streaming icon + "2. Streaming Dominance" + ❌ "450K vs. 1M target" → 1:05: Brand icon + "3. Brand Leadership" + ✓ "Partial success". All 3 remain visible. 1:20: Cost escalation bar appears below: "$300M → $500M". |
-| 3 | 1:30-2:00 | **Key Lessons** | **B-roll: Streaming/cord-cutting imagery.** Text overlays build: 1:35: "Content alone isn't enough" → 1:42: "Long-term deals need flexibility" → 1:50: "Market disruption creates risk". All text remains visible. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **$5.2 Billion / 12 Years** | **B-roll: Hockey broadcast or sports network studio.** Text overlays build: On "$5.2 billion": "$5.2 Billion / 12 Years" → On "largest sports media deal": "Canada's Largest Sports Media Deal". All text remains visible. |
+| 2 | **Three Strategic Goals** | New slide. **3 goals build vertically with status indicators:** On "Goal 1: Defend cable": Cable icon + "1. Defend Cable" + ❌ "Declined" → On "Goal 2: Build streaming": Streaming icon + "2. Streaming Dominance" + ❌ "450K vs. 1M target" → On "Goal 3: Brand positioning": Brand icon + "3. Brand Leadership" + ✓ "Partial success". All 3 remain visible. On "$300 million to $500 million": Cost escalation bar appears below: "$300M → $500M". |
+| 3 | **Key Lessons** | **B-roll: Streaming/cord-cutting imagery.** Text overlays build: On "Content alone isn't enough": "Content alone isn't enough" → On "flexibility clauses": "Long-term deals need flexibility" → On "creates risks": "Market disruption creates risk". All text remains visible. |
 
 ---
 
@@ -314,9 +412,9 @@ In Week 2, you'll analyze this deal in depth and examine what Rogers' strategic 
 - Duration: 5-second loop
 
 **League Shields**
-- NFL, NHL, Premier League logos needed
-- Use official logos or stylized representations
-- Ensure licensing compliance
+- 3 generic league shield designs needed (League A, B, C)
+- Create original stylized shield/crest designs
+- Style: Clean, professional sports league aesthetic
 
 ### Data Visualizations
 
@@ -362,10 +460,10 @@ In Week 2, you'll analyze this deal in depth and examine what Rogers' strategic 
 - Press conference setup
 - Contract signing moments
 
-**Canadian-Specific (for Rogers content)**
-- Rogers Arena exterior
+**Canadian-Specific**
+- Hockey arena exterior (generic)
 - Vancouver skyline
-- Sportsnet studio/branding
+- Sports network studio (generic)
 - Canadian currency imagery
 
 ---

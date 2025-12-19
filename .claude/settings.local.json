@@ -59,7 +59,11 @@
       "Bash(/usr/local/bin/brew install node)",
       "Bash(cat:*)",
       "Bash(node create-docx.js:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(unzip:*)",
+      "Bash(npm init:*)",
+      "Bash(node create-media-notes.js)",
+      "Bash(open:*)"
     ],
     "deny": [],
     "ask": [],

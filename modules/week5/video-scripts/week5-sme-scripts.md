@@ -320,43 +320,43 @@ Good luck with your capstone. You have everything you need. Now show us what you
 
 ### VIDEO #17: Bridge-In Hook (W5-M0, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:45 | **The Heritage Dilemma** | **B-roll: Historic sports venue or museum.** Text overlays build: 0:05: "Option A: Preserve tradition" → 0:20: "Option B: Innovate aggressively" → 0:35: "You're CEO. Flat revenue. Board proposes transformation." All text remains visible. |
-| 2 | 0:45-1:45 | **The Catch** | **B-roll: Museum/heritage institution interior.** Text overlays build: 0:50: "Staff revolt. Donors threaten to leave." → 1:10: "If you lose credibility, you lose everything." → 1:35: "Can we grow WITHOUT losing what makes us valuable?" All text remains visible. |
-| 3 | 1:45-2:00 | **The Real Question** | **B-roll: Heritage property exterior.** Text overlay: 1:50: "Next: Diagnostic Exercise". Remains to end. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **The Heritage Dilemma** | **B-roll: Historic sports venue or museum.** Text overlays build: On "Preserve tradition": "Option A: Preserve tradition" → On "innovate aggressively": "Option B: Innovate aggressively" → On "You're CEO": "You're CEO. Flat revenue. Board proposes transformation." All text remains visible. |
+| 2 | **The Catch** | **B-roll: Museum/heritage institution interior.** Text overlays build: On "curatorial staff resigns": "Staff revolt. Donors threaten to leave." → On "lose credibility": "If you lose credibility, you lose everything." → On "Can we grow WITHOUT": "Can we grow WITHOUT losing what makes us valuable?" All text remains visible. |
+| 3 | **The Real Question** | **B-roll: Heritage property exterior.** Text overlay: On "Take the diagnostic": "Next: Diagnostic Exercise". Remains to end. |
 
 ### VIDEO #18: Heritage Framework (W5-M2, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:15 | **Authenticity = Your Asset** | **B-roll: Authentic heritage moments.** Text overlays build: 0:05: "Your authenticity IS your asset" → 0:10: "Monetize too aggressively → destroy the value". All text remains visible. |
-| 2 | 0:15-1:25 | **The Heritage Balance Grid** | **Simple 2x2 grid diagram.** Axes: "Revenue Impact" (X) vs. "Authenticity Risk" (Y). Quadrants build: 0:30: "Sweet Spot" (high revenue, low risk) → 0:45: "Danger Zone" (high revenue, high risk) → 1:00: "Safe but Limited" (low revenue, low risk) → 1:10: "Avoid" (low revenue, high risk). All quadrants remain visible. |
-| 3 | 1:25-2:00 | **Three Tests** | **B-roll: Decision-making/boardroom.** Text overlays build: 1:30: "1. Does it serve your mission?" → 1:40: "2. Would stakeholders accept?" → 1:50: "3. Is it reversible?" All text remains visible. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **Authenticity = Your Asset** | **B-roll: Authentic heritage moments.** Text overlays build: On "authenticity IS your asset": "Your authenticity IS your asset" → On "Monetize too aggressively": "Monetize too aggressively → destroy the value". All text remains visible. |
+| 2 | **The Heritage Balance Grid** | **Simple 2x2 grid diagram.** Axes: "Revenue Impact" (X) vs. "Authenticity Risk" (Y). Quadrants build: On "High revenue, low risk": "Sweet Spot" (high revenue, low risk) → On "high revenue, high risk": "Danger Zone" (high revenue, high risk) → On "Digital archive access": "Safe but Limited" (low revenue, low risk) → On "extreme caution": "Avoid" (low revenue, high risk). All quadrants remain visible. |
+| 3 | **Three Tests** | **B-roll: Decision-making/boardroom.** Text overlays build: On "serve your mission or replace it": "1. Does it serve your mission?" → On "loyal stakeholders accept it": "2. Would stakeholders accept?" → On "Is it reversible": "3. Is it reversible?" All text remains visible. |
 
 ### VIDEO #19: Future Trends (W5-M3, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:15 | **Sports Business 2030** | **B-roll: Future-looking sports/tech imagery.** Text overlay: 0:05: "Five trends reshaping sports business". Remains visible. |
-| 2 | 0:15-1:45 | **5 Trends Reshaping the Industry** | **B-roll: Mix of D2C, betting, women's sports, AI, heritage footage.** Text overlays build: 0:20: "1. Direct-to-consumer everything" → 0:40: "2. Betting integration deepens" → 1:00: "3. Women's sports reach parity" → 1:15: "4. AI transforms operations" → 1:30: "5. Heritage becomes competitive advantage". All text remains visible. |
-| 3 | 1:45-2:00 | **Apply the Trends** | **B-roll: Sports business future.** Text overlay: 1:50: "Next: Future Trends Widget". Remains to end. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **Sports Business 2030** | **B-roll: Future-looking sports/tech imagery.** Text overlay: On "Five trends": "Five trends reshaping sports business". Remains visible. |
+| 2 | **5 Trends Reshaping the Industry** | **B-roll: Mix of D2C, betting, women's sports, AI, heritage footage.** Text overlays build: On "Trend one: Direct-to-consumer": "1. Direct-to-consumer everything" → On "Trend two: Sports betting integration": "2. Betting integration deepens" → On "Trend three: Women's sports": "3. Women's sports reach parity" → On "Trend four: AI transforms": "4. AI transforms operations" → On "Trend five: Heritage becomes": "5. Heritage becomes competitive advantage". All text remains visible. |
+| 3 | **Apply the Trends** | **B-roll: Sports business future.** Text overlay: On "Future Trends Widget": "Next: Future Trends Widget". Remains to end. |
 
 ### VIDEO #20: HHOF Case (W5-M4, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:35 | **Universal Heritage Challenge** | **B-roll: Hockey Hall of Fame or similar heritage venue.** Text overlays build: 0:05: "This isn't just about hockey" → 0:15: "Every heritage property faces this dilemma" → 0:25: "Board wants growth. Staff wants preservation." All text remains visible. |
-| 2 | 0:35-1:35 | **Both Sides Are Right** | **B-roll: VR experiences, museum exhibits.** Text overlays build: 0:40: "The opportunities ARE real" → 1:00: "The risks ARE real" → 1:15: "Trap 1: Growth always wins. Trap 2: Tradition always wins." All text remains visible. |
-| 3 | 1:35-2:00 | **The Answer: Boundaries** | **B-roll: Heritage institution.** Text overlays build: 1:40: "The answer: boundary-setting" → 1:50: "Where is the line for THIS organization?" → 1:55: "Next: Case Study Analysis". All text remains visible. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **Universal Heritage Challenge** | **B-roll: Sports heritage museum or hall of fame venue.** Text overlays build: On "isn't about hockey specifically": "This isn't just about hockey" → On "every heritage property": "Every heritage property faces this dilemma" → On "board wants": "Board wants growth. Staff wants preservation." All text remains visible. |
+| 2 | **Both Sides Are Right** | **B-roll: VR experiences, museum exhibits.** Text overlays build: On "growth opportunities ARE real": "The opportunities ARE real" → On "risks are also real": "The risks ARE real" → On "two traps": "Trap 1: Growth always wins. Trap 2: Tradition always wins." All text remains visible. |
+| 3 | **The Answer: Boundaries** | **B-roll: Heritage institution.** Text overlays build: On "boundary-setting": "The answer: boundary-setting" → On "line is different for every organization": "Where is the line for THIS organization?" → On "executive interviews": "Next: Case Study Analysis". All text remains visible. |
 
 ### VIDEO #21: Course Synthesis (W5-M6, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:15 | **Congratulations!** | **B-roll: Celebration/achievement imagery.** Text overlays build: 0:05: "Congratulations!" → 0:10: "You now have frameworks professionals use." All text remains visible. |
-| 2 | 0:15-1:15 | **Your Five-Week Journey** | **B-roll: Course highlights montage.** Text overlays build: 0:20: "Week 1: Revenue Ecosystems" → 0:35: "Week 2: Media Rights" → 0:45: "Week 3: Sponsorship & Betting" → 0:55: "Week 4: Athletes & Emerging Sports" → 1:05: "Week 5: Heritage & Future". All text remains visible. |
-| 3 | 1:15-2:00 | **Capstone: Your Strategy** | **B-roll: Strategic planning/success imagery.** Text overlays build: 1:20: "Build sustainable revenue" → 1:30: "Position competitively" → 1:40: "Ensure financial viability" → 1:50: "Good luck!" All text remains visible. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **Congratulations!** | **B-roll: Celebration/achievement imagery.** Text overlays build: On "Congratulations": "Congratulations!" → On "frameworks that working professionals use": "You now have frameworks professionals use." All text remains visible. |
+| 2 | **Your Five-Week Journey** | **B-roll: Course highlights montage.** Text overlays build: On "Week 1 taught you revenue ecosystems": "Week 1: Revenue Ecosystems" → On "Week 2 showed you media rights": "Week 2: Media Rights" → On "Week 3 covered sponsorship": "Week 3: Sponsorship & Betting" → On "Week 4 explored athlete brands": "Week 4: Athletes & Emerging Sports" → On "Week 5 added": "Week 5: Heritage & Future". All text remains visible. |
+| 3 | **Capstone: Your Strategy** | **B-roll: Strategic planning/success imagery.** Text overlays build: On "sustainable revenue": "Build sustainable revenue" → On "competitively": "Position competitively" → On "financially viable": "Ensure financial viability" → On "Good luck": "Good luck!" All text remains visible. |
 
 ---
 
@@ -442,7 +442,7 @@ Good luck with your capstone. You have everything you need. Now show us what you
 ### B-Roll Shot List
 
 **Heritage/Museum**
-- Hockey Hall of Fame exterior and interior
+- Sports hall of fame or museum exterior and interior (generic)
 - Sports museum artifacts and displays
 - Trophy cases and memorabilia
 - Historic venue architecture
@@ -478,7 +478,7 @@ Good luck with your capstone. You have everything you need. Now show us what you
 - Business success outcomes
 
 **Historic Sports Venues**
-- Iconic stadiums (Fenway, Wrigley, etc.)
+- Iconic historic stadium exteriors
 - Legacy franchise facilities
 - Historic moments at venues
 - Architectural heritage details

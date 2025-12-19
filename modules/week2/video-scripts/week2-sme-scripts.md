@@ -175,20 +175,20 @@ In your simulation, you'll choose: Linear, streaming, or hybrid?
 
 ### VIDEO #5: Media Rights Valuation (W2-M3, V1)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:15 | **How Much Are Sports Rights Worth?** | **2 deal examples build:** 0:03: Amazon logo icon + "Amazon NFL: $1B/year" → 0:10: Rogers logo icon + "Rogers NHL: $5.2B/12 years". Both remain visible. |
-| 2 | 0:15-1:40 | **The Five-Factor Framework** | New slide. **5 factor ICONS build vertically and remain:** 0:20: People icon + "1. Audience Size & Demographics" → 0:35: Lock icon + "2. Exclusivity & Competition" → 0:50: Calendar icon + "3. Content Volume & Scheduling" → 1:05: Handshake icon + "4. Sponsorship Integration" → 1:20: Device icon + "5. Platform Strategy Fit". All 5 remain visible. 1:30: Warning icon pulses at bottom with "Model trends, not current numbers". |
-| 3 | 1:40-2:00 | **Apply the Framework** | Same 5 icons reposition into connected diagram (lines link all 5). 1:50: Text "Next: Streaming Wars Simulation" appears below. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **How Much Are Sports Rights Worth?** | **2 deal examples build:** On "Amazon paid $1 billion": Streaming platform icon + "Streamer A: $1B/year" → On "Rogers paid $5.2 billion": Broadcaster icon + "Broadcaster B: $5.2B/12 years". Both remain visible. |
+| 2 | **The Five-Factor Framework** | New slide. **5 factor ICONS build vertically and remain:** On "Factor 1: Audience Size": People icon + "1. Audience Size & Demographics" → On "Factor 2: Exclusivity": Lock icon + "2. Exclusivity & Competition" → On "Factor 3: Content Volume": Calendar icon + "3. Content Volume & Scheduling" → On "Factor 4: Brand Alignment": Handshake icon + "4. Sponsorship Integration" → On "Factor 5: Platform Strategy": Device icon + "5. Platform Strategy Fit". All 5 remain visible. On "Rogers assumed stable NHL ratings": Warning icon pulses at bottom with "Model trends, not current numbers". |
+| 3 | **Apply the Framework** | Same 5 icons reposition into connected diagram (lines link all 5). On "Streaming Wars simulation": Text "Next: Streaming Wars Simulation" appears below. |
 
 ### VIDEO #6: Linear vs Streaming (W2-M3, V2)
 
-| Slide | Duration | Title | Elements (animate in sequence) |
-|-------|----------|-------|-------------------------------|
-| 1 | 0:00-0:45 | **Two Business Models** | **Split screen layout:** 0:05: LEFT side — TV icon + "Linear TV" + pie chart animates (70% ads, 30% carriage). 0:20: RIGHT side — Streaming icon + "Streaming" + pie chart animates (85% subscriptions, 15% ads). 0:35: Text "Linear = Audience / Streaming = Subscribers" appears at bottom. All elements remain visible. |
-| 2 | 0:45-1:10 | **Economics Compared** | New slide. **Split layout:** LEFT side — TV icon + "Linear TV" + cost bars (65% Rights, 25% Production, 10% Distribution). RIGHT side — Streaming icon + "Streaming" + cost bars (45% Rights, 30% Tech, 25% Acquisition). 1:00: **Timeline graphic spans both sides:** "Day 1 profit" marker on Linear, "Year 5 profit" marker on Streaming. All elements remain visible. |
-| 3 | 1:10-1:35 | **Key Risks** | New slide. **Split layout with risk comparisons:** LEFT side — TV icon + "Linear TV". RIGHT side — Streaming icon + "Streaming". **Risks build under each side:** 1:15: Scissors icon + "Cord-cutting" under Linear, Churn icon + "High churn" under Streaming. 1:25: Decline graph icon + "Audience fragmentation" under Linear, Dollar icon + "Price sensitivity" under Streaming. All elements remain visible. |
-| 4 | 1:35-2:00 | **Your Choice** | New slide. **3 diverging paths:** 1:40: TV icon + "Linear" path (left) / Hybrid icon + "Hybrid" path (center) / Streaming icon + "Streaming" path (right). 1:50: Text "Rogers' challenge: cord-cutting cannibalized faster than streaming grew" appears below. All remain to end. |
+| Slide | Title | Elements (animate on script cue) |
+|-------|-------|-------------------------------|
+| 1 | **Two Business Models** | **Split screen layout:** On "Linear TV: Advertising": LEFT side — TV icon + "Linear TV" + pie chart animates (70% ads, 30% carriage). On "Streaming: Subscriptions": RIGHT side — Streaming icon + "Streaming" + pie chart animates (85% subscriptions, 15% ads). On "Linear monetizes audience": Text "Linear = Audience / Streaming = Subscribers" appears at bottom. All elements remain visible. |
+| 2 | **Economics Compared** | New slide. **Split layout:** On "Linear TV: Rights fees at 60-70%": LEFT side — TV icon + "Linear TV" + cost bars (65% Rights, 25% Production, 10% Distribution). On "Streaming: Rights fees at 40-50%": RIGHT side — Streaming icon + "Streaming" + cost bars (45% Rights, 30% Tech, 25% Acquisition). On "Immediate if priced right" / "3-5 years": **Timeline graphic spans both sides:** "Day 1 profit" marker on Linear, "Year 5 profit" marker on Streaming. All elements remain visible. |
+| 3 | **Key Risks** | New slide. **Split layout with risk comparisons:** LEFT side — TV icon + "Linear TV". RIGHT side — Streaming icon + "Streaming". **Risks build under each side:** On "Cord-cutting": Scissors icon + "Cord-cutting" under Linear, Churn icon + "High churn" under Streaming. On "audience fragmentation": Decline graph icon + "Audience fragmentation" under Linear, Dollar icon + "Price sensitivity" under Streaming. All elements remain visible. |
+| 4 | **Your Choice** | New slide. **3 diverging paths:** On "Hybrid": TV icon + "Linear" path (left) / Hybrid icon + "Hybrid" path (center) / Streaming icon + "Streaming" path (right). On "what happened to Rogers": Text "Rogers' challenge: cord-cutting cannibalized faster than streaming grew" appears below. All remain to end. |
 
 ---
 
@@ -222,7 +222,7 @@ In your simulation, you'll choose: Linear, streaming, or hybrid?
 
 **Deal Value Comparison Bars**
 - Vertical bar chart comparing major deals
-- Examples: Amazon NFL ($1B/yr), Rogers NHL ($433M/yr)
+- Examples: Streamer A ($1B/yr), Broadcaster B ($433M/yr)
 - Animated: Bars grow from zero with dollar amounts
 
 **Viewership Trend Line Graph**
@@ -264,7 +264,7 @@ In your simulation, you'll choose: Linear, streaming, or hybrid?
 
 **Streaming/Digital**
 - Multiple devices showing same content
-- App interfaces (Netflix, Prime, sports apps)
+- Generic streaming app interfaces
 - Mobile viewing on subway/commute
 - Streaming quality buffering
 - Account creation/subscription screens

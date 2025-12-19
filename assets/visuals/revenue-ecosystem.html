@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Ecosystem - 5 Streams Connected</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #e8e8e8;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .ecosystem-container {
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+
+        /* Center hub */
+        .center-hub {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.85rem;
+            box-shadow: 0 0 40px rgba(102, 126, 234, 0.5);
+            z-index: 10;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .center-hub:hover {
+            transform: translate(-50%, -50%) scale(1.05);
+            box-shadow: 0 0 60px rgba(102, 126, 234, 0.7);
+        }
+
+        /* Revenue stream nodes */
+        .stream-node {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: 500;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            z-index: 5;
+        }
+
+        .stream-node:hover {
+            transform: scale(1.1);
+        }
+
+        .stream-node .icon {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        /* Position nodes in a circle */
+        .stream-media {
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            box-shadow: 0 0 25px rgba(240, 147, 251, 0.4);
+        }
+        .stream-media:hover { box-shadow: 0 0 40px rgba(240, 147, 251, 0.6); }
+
+        .stream-ticketing {
+            top: 120px;
+            right: 25px;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            box-shadow: 0 0 25px rgba(79, 172, 254, 0.4);
+        }
+        .stream-ticketing:hover { box-shadow: 0 0 40px rgba(79, 172, 254, 0.6); }
+
+        .stream-betting {
+            bottom: 80px;
+            right: 55px;
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            box-shadow: 0 0 25px rgba(67, 233, 123, 0.4);
+        }
+        .stream-betting:hover { box-shadow: 0 0 40px rgba(67, 233, 123, 0.6); }
+
+        .stream-merch {
+            bottom: 80px;
+            left: 55px;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            box-shadow: 0 0 25px rgba(250, 112, 154, 0.4);
+        }
+        .stream-merch:hover { box-shadow: 0 0 40px rgba(250, 112, 154, 0.6); }
+
+        .stream-sponsorship {
+            top: 120px;
+            left: 25px;
+            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+            box-shadow: 0 0 25px rgba(161, 140, 209, 0.4);
+        }
+        .stream-sponsorship:hover { box-shadow: 0 0 40px rgba(161, 140, 209, 0.6); }
+
+        /* Connection lines (SVG) */
+        .connections {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .connection-line {
+            stroke: rgba(255, 255, 255, 0.15);
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .connection-line.hub-line {
+            stroke: rgba(255, 255, 255, 0.25);
+            stroke-width: 3;
+            stroke-dasharray: 5, 5;
+            animation: dash 20s linear infinite;
+        }
+
+        .connection-line.stream-line {
+            stroke: rgba(255, 255, 255, 0.1);
+            stroke-width: 1;
+        }
+
+        @keyframes dash {
+            to { stroke-dashoffset: -100; }
+        }
+
+        /* Info panel */
+        .info-panel {
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 20px 30px;
+            max-width: 500px;
+            text-align: center;
+            min-height: 100px;
+        }
+
+        .info-panel h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .info-panel p {
+            font-size: 0.9rem;
+            color: #aaa;
+            line-height: 1.5;
+        }
+
+        .info-panel .percentage {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Pulse animation for active state */
+        .stream-node.active {
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+        }
+
+        /* Legend */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sports Revenue Ecosystem</h1>
+    <p class="subtitle">Click any stream to explore connections</p>
+
+    <div class="ecosystem-container">
+        <!-- SVG Connections -->
+        <svg class="connections" viewBox="0 0 500 500">
+            <!-- Hub to nodes -->
+            <line class="connection-line hub-line" x1="250" y1="250" x2="250" y2="70" />
+            <line class="connection-line hub-line" x1="250" y1="250" x2="425" y2="170" />
+            <line class="connection-line hub-line" x1="250" y1="250" x2="395" y2="370" />
+            <line class="connection-line hub-line" x1="250" y1="250" x2="105" y2="370" />
+            <line class="connection-line hub-line" x1="250" y1="250" x2="75" y2="170" />
+
+            <!-- Node to node (outer ring) -->
+            <path class="connection-line stream-line" d="M 250 70 Q 370 50 425 170" />
+            <path class="connection-line stream-line" d="M 425 170 Q 450 290 395 370" />
+            <path class="connection-line stream-line" d="M 395 370 Q 250 450 105 370" />
+            <path class="connection-line stream-line" d="M 105 370 Q 30 290 75 170" />
+            <path class="connection-line stream-line" d="M 75 170 Q 130 50 250 70" />
+
+            <!-- Cross connections -->
+            <line class="connection-line stream-line" x1="250" y1="70" x2="395" y2="370" />
+            <line class="connection-line stream-line" x1="250" y1="70" x2="105" y2="370" />
+            <line class="connection-line stream-line" x1="425" y1="170" x2="105" y2="370" />
+            <line class="connection-line stream-line" x1="75" y1="170" x2="395" y2="370" />
+        </svg>
+
+        <!-- Center Hub -->
+        <div class="center-hub" data-stream="hub">
+            <span>SPORTS<br>ORGANIZATION</span>
+        </div>
+
+        <!-- Revenue Stream Nodes -->
+        <div class="stream-node stream-media" data-stream="media">
+            <span class="icon">📺</span>
+            <span>Media<br>Rights</span>
+        </div>
+
+        <div class="stream-node stream-ticketing" data-stream="ticketing">
+            <span class="icon">🎟️</span>
+            <span>Ticketing</span>
+        </div>
+
+        <div class="stream-node stream-betting" data-stream="betting">
+            <span class="icon">📊</span>
+            <span>Betting &<br>Gaming</span>
+        </div>
+
+        <div class="stream-node stream-merch" data-stream="merch">
+            <span class="icon">👕</span>
+            <span>Merchandise</span>
+        </div>
+
+        <div class="stream-node stream-sponsorship" data-stream="sponsorship">
+            <span class="icon">🤝</span>
+            <span>Sponsorship</span>
+        </div>
+    </div>
+
+    <div class="info-panel">
+        <h3 id="info-title">The Revenue Ecosystem</h3>
+        <p id="info-text">Sports organizations generate revenue through five interconnected streams. Each stream reinforces the others—media exposure drives sponsorship value, which funds better venues, which improves the fan experience, which drives merchandise sales and betting engagement.</p>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-dot" style="background: linear-gradient(135deg, #f093fb, #f5576c);"></div>
+            <span>Media Rights</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot" style="background: linear-gradient(135deg, #4facfe, #00f2fe);"></div>
+            <span>Ticketing</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot" style="background: linear-gradient(135deg, #43e97b, #38f9d7);"></div>
+            <span>Betting</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot" style="background: linear-gradient(135deg, #fa709a, #fee140);"></div>
+            <span>Merchandise</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-dot" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);"></div>
+            <span>Sponsorship</span>
+        </div>
+    </div>
+
+    <script>
+        const streamData = {
+            hub: {
+                title: "The Revenue Ecosystem",
+                text: "Sports organizations generate revenue through five interconnected streams. Each stream reinforces the others—media exposure drives sponsorship value, which funds better venues, which improves the fan experience, which drives merchandise sales and betting engagement."
+            },
+            media: {
+                title: "Media Rights",
+                text: "The largest revenue driver for major leagues. Broadcasting and streaming rights can represent 40-60% of total revenue. Media exposure amplifies all other streams by expanding audience reach and fan engagement globally."
+            },
+            ticketing: {
+                title: "Ticketing & Live Events",
+                text: "The original revenue stream. Beyond gate receipts, includes premium seating, hospitality packages, and dynamic pricing. Live attendance creates emotional connections that drive merchandise purchases and long-term fan loyalty."
+            },
+            betting: {
+                title: "Betting & Gaming",
+                text: "The fastest-growing revenue stream. Sports betting partnerships, fantasy sports, and gaming integrations create new engagement touchpoints. Betting data and odds visibility are becoming integrated into broadcasts."
+            },
+            merch: {
+                title: "Merchandise & Licensing",
+                text: "Extends brand beyond game day. Jersey sales, licensed products, and team stores generate revenue while turning fans into walking advertisements. Player popularity directly impacts merchandise sales potential."
+            },
+            sponsorship: {
+                title: "Sponsorship & Partnerships",
+                text: "Brands pay for association with teams and leagues. Value is driven by media exposure, fan engagement metrics, and audience demographics. Naming rights, jersey patches, and activations create layered revenue opportunities."
+            }
+        };
+
+        document.querySelectorAll('[data-stream]').forEach(element => {
+            element.addEventListener('click', () => {
+                const stream = element.dataset.stream;
+                const data = streamData[stream];
+
+                document.getElementById('info-title').textContent = data.title;
+                document.getElementById('info-text').textContent = data.text;
+
+                // Remove active class from all
+                document.querySelectorAll('.stream-node').forEach(n => n.classList.remove('active'));
+
+                // Add active class to clicked (if not hub)
+                if (stream !== 'hub') {
+                    element.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

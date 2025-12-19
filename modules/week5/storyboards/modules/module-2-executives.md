@@ -1,62 +1,29 @@
 # MODULE 2: Executive Leader Perspectives (BOPPPS: Participatory - Expert Input)
-**Version:** 1.6.0 | **Last Updated:** 2025-12-07
+**Version:** 1.7.0 | **Last Updated:** 2025-12-19
 
 **Purpose:** Deliver expert practitioner perspectives on heritage property strategy, future trends, and balancing tradition with innovation (supports WLO 5.1, 5.2, 5.3)
 
-### Version 1.6.0 Changes
-- **NEW:** Added Jamie Dinsmore (Hockey Hall of Fame CEO) interview - AVAILABLE NOW (~18 min)
-- Two heritage property perspectives now available: Golf Canada (sport transformation) + Hockey Hall of Fame (institution management)
-- Updated element table to reflect Jamie Dinsmore as available content
-- Keith Pelley remains as scripted placeholder pending recording
-
-### Version 1.5.0 Changes
-- Added Golf Canada interview (Niki DaSilva & Tim McLaughlin) - AVAILABLE NOW
-- Golf Canada interview fits Week 5 theme: heritage sport, tradition vs. innovation, future trends (AI coaching, simulator golf)
+### Version 1.7.0 Changes
+- **RESOLVED:** Week 5 now features Jamie Dinsmore (HHOF) + Keith Pelley (MLSE) + Stewart Johnston (CFL)
+- **REDISTRIBUTED:** Golf Canada moved to Week 4 (pairs with Matt Rubinoff for athlete brands/NSO context)
+- Stewart Johnston interview serves as CAPSTONE connecting to CFL expansion project
 
 **Uplimit Structure:** Second module in Unit 5
 
-**Context:** Executive perspectives on heritage, tradition, and future trends—Golf Canada provides real-world insights on transforming a heritage sport while maintaining its traditions
-
----
-
-## ⚠️ EXECUTIVE INTERVIEW STATUS
-
-**✅ AVAILABLE NOW:** Niki DaSilva & Tim McLaughlin (Golf Canada) - ~45 min interview recorded
-**✅ AVAILABLE NOW:** Jamie Dinsmore (Hockey Hall of Fame CEO) - ~18 min interview recorded
-**⏳ PENDING:** Keith Pelley (MLSE) - Scripted content below, recording TBD
-
-**Two Heritage Property Perspectives:**
-
-**Golf Canada (Sport Transformation):** The Golf Canada interview (Niki DaSilva, CPO + Tim McLaughlin, CMO) provides coverage of heritage SPORT transformation:
-- Heritage sport transformation (400K members, 3 major championships)
-- Women's golf growth ("She Plays Golf" program, Brooke Henderson partnership)
-- Digital transformation (535K app users)
-- Future trends: AI coaching, simulator golf as emerging category
-- Balancing tradition with innovation
-
-**Hockey Hall of Fame (Institution Management):** The Jamie Dinsmore interview provides coverage of heritage INSTITUTION management:
-- Four lines of business: Attraction ($8.5M), Events ($5M), Retail, Outreach
-- Staff passion and tenure (42% at 25+ years)
-- The Stanley Cup as "people's trophy" (touchable, travels with winners)
-- Growth strategy: physical expansion, international exhibits, women's hockey, technology
-- AR/VR vision: "On the precipice of something really cool"
-- Heritage preservation: "Don't lose core, then look to grow"
-
-Students should watch BOTH available interviews for complementary perspectives: Golf Canada (sport transformation) and HHOF (institution management). Keith Pelley script provides additional pedagogical framing for franchise vs. heritage institution contrast.
-
----
+**Context:** Three executive perspectives—a heritage institution (HHOF), a modern franchise (MLSE), and a league commissioner (CFL)—creating a three-way dialogue on legacy, innovation, and expansion strategy. Stewart Johnston's interview provides critical capstone context for students designing CFL expansion projects.
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 0 | Type directly | Sets context, introduces executives |
-| 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about executive sessions + viewing instructions | Type directly | Blue variant, explains perspectives |
-| 3 | **▶ Video 1** ⬛ Required ✅ | **Golf Canada (Niki DaSilva & Tim McLaughlin) (~45 min)** | Upload MP4 + transcript | **AVAILABLE NOW** - Heritage sport, future trends |
-| 4 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Golf Canada session | Type directly | 3-5 prompts on tradition vs. innovation |
-| 5 | **▶ Video 2** ⬛ Required ✅ | **Jamie Dinsmore (HHOF CEO) (~18 min)** | Upload MP4 + transcript | **AVAILABLE NOW** - Heritage institution management |
-| 6 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Jamie Dinsmore session | Type directly | Heritage institution business model prompts |
-| 7 | **▶ Video 3** ▢ Optional ⏳ | Keith Pelley (MLSE CEO) - Modern Franchise (12-15 min) | Upload MP4 + VTT | **PENDING** - Scripted content below |
-| 8 | **▤ Details** ▢ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
-| 9 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about heritage sports and future trends" | Configure in Uplimit | Named: "Heritage & Future Trends Q&A" |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 0 | Type directly | Sets context, introduces all three executives |
+| 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about executive sessions + viewing instructions | Type directly | Blue variant, explains three perspectives |
+| 3 | **▶ Video 1** ⬛ Required ✅ | Jamie Dinsmore (HHOF CEO) (~18 min) | Upload MP4 + transcript | **AVAILABLE** - Heritage institution management |
+| 4 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Jamie's session | Type directly | Heritage institution business model prompts |
+| 5 | **▶ Video 2** ⬛ Required ⏳ | Keith Pelley (MLSE CEO) (12-15 min) | Upload MP4 + VTT | **SCRIPTED** - Modern franchise perspective |
+| 6 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Keith's session | Type directly | 3-5 prompts guiding synthesis |
+| 7 | **▶ Video 3** ⬛ Required ✅ | Stewart Johnston (CFL Commissioner) (~35 min) | Upload MP4 + transcript | **CAPSTONE** - League expansion, tradition vs. innovation |
+| 8 | **◈ Discussion Prompt** ▣ Recommended | Guided reflection after Stewart's session | Type directly | 3-5 prompts on expansion strategy |
+| 9 | **◈ Comparison Prompt** ▢ Optional | Three-way synthesis: Institution vs. Franchise vs. League | Type directly | Synthesizes heritage, growth, and expansion |
+| 10 | **▤ Details** ▢ Optional | Video transcripts (optional) | Type directly | Accordion for text versions |
 
 ---
 
@@ -74,25 +41,20 @@ You've been introduced to the heritage monetization dilemma—the challenge ever
 - **Week 1 (Kevin Abrams):** Revenue ecosystems—how different streams interconnect in a $10B organization
 - **Week 2 (Al Dak):** Media rights strategy, streaming vs. broadcast, fan engagement data
 - **Week 3 (Andrew Sneyd):** Brand building, innovation, measuring what matters
-- **Week 4 (Matt Rubinoff):** Emerging sports, proof-of-concept, balancing growth with brand identity
+- **Week 4 (Matt Rubinoff + Golf Canada):** Emerging sports, proof-of-concept, balancing growth with brand identity, NSO marketing
 
-Now it's time to hear from executives navigating the tradition vs. innovation tension in real time. In this module, you'll hear two complementary perspectives:
+Now it's time to hear from three executives who live these tensions every day. In this module, you'll encounter a unique learning experience: a three-way dialogue between perspectives on what makes heritage properties valuable, how to grow them without losing their soul, and how to lead a league into the future.
 
-**Golf Canada - Niki DaSilva (CPO) & Tim McLaughlin (CMO):** Heritage SPORT transformation
-- **400,000 members** with deep traditions and expectations
-- **535,000 app users** demanding digital engagement
-- **Brooke Henderson** as a modern athlete brand ambassador
-- **Future trends** like AI coaching and simulator golf
+First, you'll hear from **Jamie Dinsmore, President & CEO of the Hockey Hall of Fame**—the guardian institution charged with preserving hockey's history and celebrating its greatest players. Then, you'll hear from **Keith Pelley, President and CEO of Maple Leaf Sports & Entertainment (MLSE)**—a modern sports franchise operator who owns both the Maple Leafs and Raptors and understands the business of growth and fan engagement. Finally, you'll hear from **Stewart Johnston, Commissioner of the Canadian Football League**—leading a heritage league through transformation while planning for expansion.
 
-**Hockey Hall of Fame - Jamie Dinsmore (President & CEO):** Heritage INSTITUTION management
-- **Four revenue lines** (Attraction, Events, Retail, Outreach)—different from franchise business models
-- **42% staff at 25+ years**—institutional knowledge as competitive advantage
-- **The Stanley Cup as "people's trophy"**—touchable, travels, creates generational stories
-- **AR/VR vision**: "On the precipice of something really cool"
+All three leaders face heritage property challenges, but from different angles:
+- **Jamie** manages an institution where preservation IS the business (the past has economic value)
+- **Keith** manages franchises where the future drives value (current performance and innovation create revenue)
+- **Stewart** manages a 100+ year league balancing passionate traditionalist fans with growth imperatives and expansion opportunities
 
-Together, these interviews reveal how heritage organizations balance preservation with growth—whether transforming a sport or managing an iconic institution.
+Their insights will reveal the real trade-offs, the constraints that frameworks can't capture, and the human dimensions of heritage strategy that come from decades of executive decision-making.
 
-Listen carefully for: How do you transform heritage without alienating traditional stakeholders? When does innovation SERVE tradition vs. replace it? How do different organizational structures (sport federation vs. heritage institution) face different constraints?
+**Capstone Connection:** Listen carefully for where they agree (all prioritize authenticity), where they diverge (on how much innovation is too much), and how Stewart's league expansion perspective directly connects to your CFL expansion project.
 
 
 ---
@@ -100,170 +62,51 @@ Listen carefully for: How do you transform heritage without alienating tradition
 ## Element 2: Infobox Content
 
 ```
-Title: ◉ Executive Insights: Heritage Sports & Future Trends
+Title: ◉ Executive Insights: Heritage Property Strategy - Three Perspectives
 
-This module features two executive interviews exploring how heritage sports organizations balance tradition with innovation. You'll hear from:
+This module features three executive sessions that bring real-world perspective to the heritage vs. innovation vs. expansion tensions. You'll hear from leaders who have made multi-million dollar decisions on exactly the trade-offs you're studying this week—plus critical context for your capstone CFL expansion project.
 
-**Session 1: Golf Canada (~45 min) - Niki DaSilva & Tim McLaughlin**
-Heritage SPORT transformation—how a 400-year-old sport modernizes while preserving traditions
+**Session 1: Jamie Dinsmore (HHOF CEO) (~18 min)** ✅ AVAILABLE
+- Role: President & CEO, Hockey Hall of Fame (started July 2024)
+- Challenge: Growing a heritage institution without losing authenticity
+- Perspective: Four revenue lines, staff tenure as asset, Stanley Cup as "people's trophy"
+- Focus: "Don't lose core, then look to grow"
 
-**Niki DaSilva, Chief People Officer (Ivey HBA '03)**
-- Background: MLSE, Deloitte consulting, now leading Golf Canada transformation
-- Perspective: Organization transformation, women's golf growth, balancing tradition with innovation
+**Session 2: Keith Pelley (MLSE CEO) (12-15 min)** ⏳ SCRIPTED
+- Role: President & CEO, Maple Leaf Sports & Entertainment
+- Challenge: Balancing 150 years of Maple Leafs tradition with aggressive digital growth
+- Perspective: Heritage as FUEL for growth, not constraint
+- Focus: Innovation strengthens heritage connection, not weakens it
 
-**Tim McLaughlin, Chief Marketing Officer**
-- Background: 25 years at Adidas (Olympics, World Cup 2010), global brand building expertise
-- Perspective: Modern marketing approaches applied to heritage sports organization
+**Session 3: Stewart Johnston (CFL Commissioner) (~35 min)** ✅ AVAILABLE ⭐ CAPSTONE
+- Role: League commissioner leading heritage league through transformation
+- Challenge: Balance passionate 30-40 year fans with growth imperatives and expansion opportunities
+- Perspective: Heritage is foundation requiring modernization; expansion should strengthen brand positioning
+- Focus: Entertainment, youth engagement, profitability across nine teams, 10-year expansion vision
 
-**Key Topics:** Golf Canada business model (400K members, 3 major championships), Brooke Henderson partnership, women's golf growth ("She Plays Golf" program), digital transformation (535K app users), future trends (AI coaching, simulator golf)
+**What to Watch For:**
+- All three executives emphasize AUTHENTICITY as a business asset, not just a cultural value
+- Differences in risk tolerance: Heritage institutions most conservative; franchises more aggressive; leagues balancing multiple stakeholders
+- Common language around "stewardship" and "knowing your limits"
+- Real examples of decisions they've made on sponsorships, digital experiences, expansion
+- **Stewart's expansion criteria** directly inform your capstone CFL brand package project
 
----
-
-**Session 2: Hockey Hall of Fame (~18 min) - Jamie Dinsmore**
-Heritage INSTITUTION management—how an iconic institution generates revenue while preserving authenticity
-
-**Jamie Dinsmore, President & CEO**
-- Background: Business career, lifetime hockey passion, took role July 2024 (first turnover in 27 years)
-- Perspective: Heritage institution economics, staff culture as asset, technology vision
-
-**Key Topics:** Four revenue lines (Attraction $8.5M, Events $5M, Retail, Outreach), staff tenure (42% at 25+ years), Stanley Cup as "people's trophy," AR/VR vision, heritage preservation principle ("Don't lose core and then look to grow")
-
----
-
-**Viewing Guide:**
-• **Golf Canada:** Heritage SPORT transformation—membership, digital engagement, women's growth
-• **Jamie Dinsmore:** Heritage INSTITUTION management—four revenue lines, preservation principles
-• **Compare:** Both balance tradition with innovation—but face different constraints. What's similar? What's different?
-
-**Total Viewing Time:** ~63 minutes (45 min Golf Canada + 18 min Jamie Dinsmore)
-**Reflection Time:** 20-25 minutes
-**Total Module 2 Time:** ~85-90 minutes
-```
-
-
----
-
-## Element 3: Video 1 - Golf Canada (Niki DaSilva & Tim McLaughlin) Interview ✅ AVAILABLE
-
-**File:** `Interviews/Niki DaSilva Chief People Officer and Tim McLaughlin, Chief Marketing Officer.mp4`
-**Duration:** ~45 minutes
-**Transcript:** `Interviews/Niki DaSilva Chief People Officer and Tim McLaughlin, Chief Marketing Officer_Captions_English (United States).txt`
-**Video Title:** "Golf Canada: Transforming a Heritage Sport While Honoring Tradition"
-**Video Caption:** "Golf Canada CPO (Ivey HBA '03) and CMO discuss athlete brand partnerships, women's golf growth, digital transformation, and the future of golf"
-
-### Interview Content - Key Topics Covered:
-
-**Career Journeys (00:00-06:00)** - Niki: 10-year-old athlete who wanted to run a sports team, Ivey HBA 2003, Maple Leaf Sports & Entertainment, Deloitte consulting, now CPO at Golf Canada. Tim: 25 years at Adidas (Olympics, World Cup 2010 in South Africa), brand building expertise, now CMO at Golf Canada transforming the organization's marketing approach
-
-**Golf Canada Overview (06:00-12:00)** - 400,000 members across Canada, average revenue of $18 per member, three major championships: Canadian Women's Open, Canadian Men's Open, Canadian Senior Open. National Sports Organization (NSO) structure with provincial federations, professional tour events, and grassroots development
-
-**Brooke Henderson Partnership (12:00-22:00)** - Canada's most decorated golfer (5th most LPGA wins all-time in North America, 13 total wins, 2016 Women's PGA Championship winner). Authentic ambassador who started playing at 3 years old, homeschooled to pursue golf, family-managed career. Partnership structure: beyond traditional sponsorship to true brand alignment. RBC as title sponsor of Canadian Open, Brooke as RBC ambassador creating synergy
-
-**Women's Golf Growth (22:00-30:00)** - "She Plays Golf" program driving participation. 33% of Canadian golfers are women (underrepresented in industry coverage). LPGA Canadian Open growing in prestige and attendance. Strategic focus on women's golf as growth driver vs. declining traditional male demographics. Gender equity in programming and prize money conversations
-
-**Digital Transformation (30:00-38:00)** - Golf Canada Score Centre app with 535,000 active users. Golf Genius platform for tournament management. Digital engagement strategy: from transactional (booking tee times) to relationship-building (handicap tracking, course reviews, social features). Data-driven understanding of golfer behavior and preferences
-
-**Future of Golf (38:00-45:00)** - AI coaching on the driving range (swing analysis, real-time feedback). Simulator golf as growth opportunity (year-round engagement in Canadian climate, lower barrier to entry, social experience). Balancing tradition with innovation. Technology as accessibility tool vs. replacement for outdoor experience
-
-### Viewing Guide for Students:
-- **Heritage Sport Transformation:** How Golf Canada balances 150+ years of tradition with modern digital demands
-- **Athlete Ambassador Partnerships:** How Brooke Henderson relationship goes beyond traditional sponsorship
-- **Women's Sports Strategy:** "She Plays Golf" as growth driver, 33% market share opportunity
-- **Digital Engagement:** 535K users, from transactional to relationship-based engagement
-- **Future Trends:** AI coaching, simulator golf as emerging category
-- **NSO Business Model:** Federation structure, membership revenue, championship hosting
-
-### Connection to Week 5 Themes:
-- **Legacy vs. Innovation:** Golf is a heritage sport facing pressure to modernize
-- **Future Trends:** AI coaching and simulator golf represent emerging opportunities
-- **Authenticity:** Brooke Henderson partnership demonstrates authentic brand alignment
-- **Growth Strategy:** Women's golf as strategic opportunity without abandoning tradition
-
-**Embed Code:**
-```html
-<iframe
-  src="[Uplimit video URL - Interviews/Golf Canada.mp4]"
-  width="100%"
-  height="700"
-  style="border: none; border-radius: 8px;"
-  title="Niki DaSilva & Tim McLaughlin - Golf Canada on Heritage Sport Transformation"
-  aria-label="Video interview with Golf Canada executives discussing heritage sport transformation, women's golf growth, Brooke Henderson partnership, digital engagement strategy, and future of golf including AI coaching"
-  allowfullscreen
-  loading="lazy">
-</iframe>
+**Total Viewing Time:** ~65-70 minutes (Jamie 18 min + Keith 12-15 min + Stewart 35 min)
+**Discussion Time:** 30-45 minutes (reflection and three-way comparison)
+**Total Module 2 Time:** 100-130 minutes
 ```
 
 ---
 
-## Element 4: Discussion Prompt - Golf Canada Session
+## Element 3: Video 1 - Jamie Dinsmore (Hockey Hall of Fame CEO) ✅ AVAILABLE
 
-**Uplimit Implementation:**
-1. Select **Discussion Prompt** element in module builder
-2. Copy the markdown below into the element field
-
-```markdown
-## Reflection: Transforming a Heritage Sport
-
-**Watch the Golf Canada session above, then reflect on these questions. Post your thoughts and respond to at least one classmate.**
-
-### Prompt 1: Heritage vs. Innovation in Golf
-Golf is one of the oldest organized sports, with deep traditions around etiquette, course design, and club culture. Yet Golf Canada has embraced digital transformation (535K app users) and future trends like AI coaching.
-
-Analyze:
-- How does Golf Canada balance tradition with innovation?
-- What makes their approach different from "Disneyfication"?
-- Would the same digital strategy work for a more traditional golf organization (e.g., Augusta National)?
-
-**Suggested length:** 150-200 words
-
----
-
-### Prompt 2: Women's Sports as Strategic Growth
-Golf Canada has made women's golf a strategic priority through "She Plays Golf" and the Brooke Henderson partnership. 33% of Canadian golfers are women, yet they're underrepresented in marketing and coverage.
-
-Apply to Week 5 themes:
-- How is women's golf both an innovation AND a return to golf's inclusive roots?
-- Compare this to how heritage institutions preserve tradition—is growing women's golf preservation or transformation?
-- What risks does Golf Canada face if this strategy fails?
-
-**Suggested length:** 150-200 words
-
----
-
-### Prompt 3: Athlete Ambassador vs. Traditional Sponsorship
-Tim McLaughlin describes the Brooke Henderson partnership as going "beyond traditional sponsorship to true brand alignment."
-
-Compare to Week 4 concepts:
-- What's the difference between Brooke Henderson as sponsor vs. brand ambassador?
-- How does this fit Matt Rubinoff's "marketing-first" approach from Week 4?
-- Would this partnership model work for a heritage institution like the Hockey Hall of Fame?
-
-**Suggested length:** 150-200 words
-
----
-
-### Prompt 4: Future Trends - AI and Simulator Golf
-Golf Canada sees AI coaching and simulator golf as future growth opportunities. Tim mentions these could make golf more accessible (year-round in Canada, lower barrier to entry).
-
-Critical analysis:
-- Do AI coaching and simulator golf SERVE golf's tradition or REPLACE it?
-- How would Jamie Dinsmore (HHOF) evaluate these innovations using his authenticity framework?
-- What's the risk that simulator golf becomes "Disneyfication" of the sport?
-
-**Suggested length:** 100-150 words
-```
-
----
-
-## Element 5: Video 2 - Jamie Dinsmore (Hockey Hall of Fame CEO) ✅ AVAILABLE
-
-**File:** `Interviews/Jamie Dinsmore_Captions_English (United States).txt` (with corresponding video)
+**File:** `Interviews/Jamie Dinsmore - President & CEO, Hockey Hall of Fame.mp4`
 **Duration:** ~18 minutes
-**Transcript:** Available in Interviews folder
+**Transcript:** `Interviews/Jamie Dinsmore - President & CEO, Hockey Hall of Fame.txt`
 **Video Title:** "Jamie Dinsmore: Leading the Hockey Hall of Fame"
 **Video Caption:** "Hockey Hall of Fame President & CEO shares insights on heritage institution management, four lines of business, and AR/VR vision for the future"
 
-#### Interview Content - Key Topics Covered:
+### Interview Content - Key Topics Covered:
 
 **Career Journey & Background (00:00-04:00)** - Competitive nature from age 10, played every sport imaginable. Business career background before taking on HHOF role. "There's only one Hockey Hall of Fame"—role comes up once every few decades (previous CEO Jeff Denham served 27 years). Started July 1st, 2024.
 
@@ -292,18 +135,17 @@ Critical analysis:
 
 **10-Year Vision (30:00-33:00)** - "I don't plan on doing anything but what I'm doing... you'll have to take me out in a time box." Primary innovation goal: AR/VR experiences that give people a different lens on the game—the "great equalizer" concept.
 
-#### Viewing Guide for Students:
+### Viewing Guide for Students:
 - **Heritage Institution Business Model**: Four distinct revenue lines (attraction, events, retail, outreach) in a not-for-profit structure
 - **Staff Culture as Asset**: 42% at 25+ years tenure—what does this mean for institutional knowledge and heritage preservation?
 - **The Stanley Cup Strategy**: "People's trophy" approach—touchable, travels, creates generational stories
 - **Technology as Enhancement**: AR/VR to help people "truly understand the speed and skill"—serving the mission, not replacing it
 - **Heritage Preservation Principle**: "Don't lose core and then look to grow"
 
-#### Connection to Week 5 Themes:
+### Connection to Week 5 Themes:
 - **WLO 5.1 (Heritage Properties as Revenue Assets)**: Four lines of business, $8.5M attraction + $5M events revenue
 - **WLO 5.2 (Balancing Tradition with Innovation)**: "Don't lose core, then look to grow" + AR/VR vision
 - **WLO 5.3 (Future Trends)**: AR/VR, international expansion, women's hockey growth
-- **Complements Golf Canada**: Golf Canada = heritage SPORT transformation; HHOF = heritage INSTITUTION management
 
 **Key Quotes:**
 > "There's only one Hockey Hall of Fame... it only comes up once every few decades."
@@ -332,9 +174,9 @@ Critical analysis:
 
 ---
 
-## Element 6: Discussion Prompt - Jamie Dinsmore Session
+## Element 4: Discussion Prompt - Jamie Dinsmore Session
 
-**Uplift Implementation:**
+**Uplimit Implementation:**
 1. Select **Discussion Prompt** element in module builder
 2. Copy the markdown below into the element field
 
@@ -384,7 +226,7 @@ Jamie is excited about AR/VR but emphasizes "low tech can be just as exciting as
 
 Critical analysis:
 - Does Jamie's AR/VR vision SERVE the Hall's heritage mission or REPLACE it?
-- Compare this to the Golf Canada executives' technology approach—similarities and differences?
+- How does this compare to Keith's technology approach (next video)?
 - What would make AR/VR at the Hall "Disneyfication" vs. "enhancement"?
 
 **Suggested length:** 100-150 words
@@ -392,7 +234,7 @@ Critical analysis:
 
 ---
 
-## Element 7: Video 3 - Keith Pelley (MLSE CEO) ⏳ PENDING
+## Element 5: Video 2 - Keith Pelley (MLSE CEO) ⏳ SCRIPTED
 
 **⚠️ STATUS: SCRIPTED CONTENT - Interview recording pending**
 
@@ -740,7 +582,7 @@ Just with different risk tolerance and growth expectations."
 
 ---
 
-## Element 6: **RENUMBERED** - Discussion Prompt - Keith Pelley Session (was Element 5)
+## Element 6: Discussion Prompt - Keith Pelley Session
 
 **Uplimit Implementation:**
 1. Select **Discussion Prompt** element in module builder
@@ -801,37 +643,150 @@ Or do they fundamentally disagree on what "serves the mission"?
 
 ---
 
-## Element 7: **RENUMBERED** - Comparison Prompt - Dialogue Synthesis (was Element 6)
+## Element 7: Video 3 - Stewart Johnston (CFL Commissioner) ✅ AVAILABLE ⭐ CAPSTONE
+
+**File:** `Interviews/Stewart Johnston - Commissioner, Canadian Football League.mp4`
+**Duration:** ~35 minutes
+**Transcript:** `Interviews/Stewart Johnston - Commissioner, Canadian Football League.txt`
+**Video Title:** "Stewart Johnston: Leading the CFL into the Future - Tradition, Growth & Expansion"
+**Video Caption:** "CFL Commissioner Stewart Johnston discusses balancing passionate traditional fans with growth imperatives, media rights strategy, and his 10-year vision including league expansion"
+
+### Interview Content - Key Topics Covered:
+
+**Career Journey & TSN/Bell Background (00:00-04:30)** - 27 years at Bell Media/TSN, led 3,600+ person team across entertainment, news, sports, and ad sales. Deep CFL partnership history from the media side before transitioning to commissioner role.
+
+**Commissioner as CEO Role (04:30-10:00)** - Approaches role as CEO, not just figurehead. Primary revenue drivers: media rights and commercial partnerships. Gate revenue critical for teams. Accountability to nine team owners who "have to deliver returns."
+
+**Media Rights & Revenue Strategy (10:00-15:00)** - Media rights and sponsorship as league's biggest revenue buckets. Ratings as fandom indicator. Must make content "so valuable" it drives subscriptions AND advertising. Explains negotiation dynamics when media partners evaluate CFL value.
+
+**Tradition vs. Innovation Challenge (15:00-22:00)** - Core challenge: loyal 30-40 year season ticket holders vs. need to grow new customer base. "Not unique to CFL" - many industries face this. Must respect passionate traditionalist fans while innovating to attract younger audiences.
+
+**Three Strategic Priorities (22:00-28:00)** - (1) Relentless focus on entertainment (Machine Gun Kelly halftime, music integration), (2) Getting footballs into kids' hands (youth engagement), (3) Creating nine profitable teams ("we're not there yet"). Olympics flag football as growth opportunity.
+
+**10-Year Vision & Expansion (28:00-35:00)** - Expansion NOT in top 3 priorities, but expects 10th team within 10 years. "Great markets across this country that could support a team." Hopes to be recognized as "top tier professional sports league in North America." Brand positioning as key strategic goal.
+
+### Capstone Project Connection:
+Stewart's interview provides direct insight into how a commissioner thinks about expansion. When students design their CFL expansion franchise brand package, they should consider Stewart's priorities:
+1. Does the expansion enhance entertainment value?
+2. Does it grow youth engagement?
+3. Can the 10th team be profitable?
+4. How does it strengthen CFL's brand positioning?
+
+### Viewing Guide for Students:
+- **League Leadership:** CEO mindset vs. ceremonial commissioner role
+- **Revenue Model:** Media rights + sponsorship as primary league-level revenue (gate for teams)
+- **Tradition/Innovation Balance:** Same tension as HHOF/MLSE but at league scale with passionate fans
+- **Expansion Criteria:** What makes a market "great" for expansion? Profitability, brand fit, fan passion
+- **10-Year Vision:** How commissioners think strategically about league positioning
+
+**Embed Code:**
+```html
+<iframe
+  src="[Uplimit video URL - Interviews/Stewart Johnston.mp4]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Stewart Johnston - CFL Commissioner on League Leadership and Expansion"
+  aria-label="Video interview with Stewart Johnston, CFL Commissioner, discussing league strategy, tradition vs. innovation, media rights, and 10-year expansion vision"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+---
+
+## Element 8: Discussion Prompt - Stewart Johnston Session
 
 **Uplimit Implementation:**
 1. Select **Discussion Prompt** element in module builder
 2. Copy the markdown below into the element field
 
 
-## Synthesis: Where Jamie and Keith Agree (and Disagree)
+## Reflection: League Leadership & Expansion Strategy
 
-**Watch both executive sessions, then engage with this comparison prompt. This is an individual reflection—you can submit as written response or forum post.**
+**Watch Stewart Johnston's session above, then reflect on these questions. This is a forum discussion—post your thoughts and respond to at least one classmate.**
 
-### The Tension Map
+### Prompt 1: Commissioner as CEO
+Stewart explicitly describes his role as a "CEO job," not just a ceremonial commissioner position. He's accountable to nine team owners who expect growth and profitability.
 
-Both Jamie Dinsmore and Keith Pelley face heritage property strategy challenges, but from opposite positions:
+Compare this to:
+- How does a league commissioner's accountability differ from Jamie's (stakeholder constraints) and Keith's (performance metrics)?
+- What unique challenges does Stewart face that neither an institution CEO nor a franchise CEO would face?
+- How does managing NINE competing team owners change decision-making vs. managing a single organization?
 
-| | Jamie Dinsmore (HHOF) | Keith Pelley (MLSE) |
-|---|---|---|
-| **Core Asset** | Authenticity of artifacts | Emotional connection to identity |
-| **Risk from Aggressiveness** | Loss of credibility, donor withdrawal | Can be absorbed by franchise scale |
-| **View of Heritage** | Constraint on innovation | Fuel for growth |
-| **Stakeholder Accountability** | Curatorial staff, donors, partner leagues | Performance metrics (playoff success, revenue) |
-| **Global Expansion** | Conservative (risks place identity) | Aggressive (extends identity) |
-| **Innovation Approach** | Extend reach without replacing core | Leverage heritage for fan engagement |
+**Suggested length:** 150-200 words
+
+---
+
+### Prompt 2: Expansion as Strategic Choice
+Stewart says expansion is NOT in his top 3 priorities, but he expects a 10th team within 10 years. He mentions "great markets across this country."
+
+Apply this to your capstone project:
+- If you were advising Stewart on expansion, what criteria would you use to evaluate a market?
+- How do Stewart's three priorities (entertainment, youth engagement, profitability) become decision criteria for expansion?
+- What's the risk of expanding before achieving the three priorities vs. waiting too long?
+
+**Suggested length:** 150-200 words
+
+---
+
+### Prompt 3: Balancing Passionate Traditionalists with Growth
+Stewart describes the CFL's core fans as 30-40 year season ticket holders who are "absolutely passionate." He must grow new audiences without alienating them.
+
+This is the SAME tension Jamie and Keith face, but at league scale. Compare:
+- How is Stewart's tradition/innovation challenge similar to Jamie's (HHOF) and Keith's (MLSE)?
+- How is it different? (Hint: Stewart has NINE markets, each with different fan bases)
+- What can Stewart learn from Jamie and Keith's approaches?
+
+**Suggested length:** 150-200 words
+
+---
+
+### Prompt 4: Media Rights as League Revenue
+Stewart emphasizes media rights and sponsorship as the league's primary revenue drivers (gate revenue goes to teams).
+
+Connect to Week 2:
+- How does Stewart's media rights strategy connect to what you learned about Rogers' NHL deal?
+- What leverage does a league like CFL have vs. what NHL had when negotiating with Rogers?
+- How should expansion impact media rights value? (More markets = more value? Or diluted brand?)
+
+**Suggested length:** 100-150 words
+
+
+---
+
+## Element 9: Comparison Prompt - Three-Way Synthesis
+
+**Uplimit Implementation:**
+1. Select **Discussion Prompt** element in module builder
+2. Copy the markdown below into the element field
+
+
+## Synthesis: Where All Three Executives Agree (and Disagree)
+
+**Watch all three executive sessions, then engage with this comparison prompt. This is an individual reflection—you can submit as written response or forum post.**
+
+### The Three-Way Tension Map
+
+Jamie Dinsmore, Keith Pelley, and Stewart Johnston all face heritage property challenges, but from three distinct vantage points:
+
+| | Jamie Dinsmore (HHOF) | Keith Pelley (MLSE) | Stewart Johnston (CFL) |
+|---|---|---|---|
+| **Organization Type** | Heritage institution (museum) | Modern franchise (team) | Heritage league (commissioner) |
+| **Core Asset** | Authenticity of artifacts | Emotional connection to identity | Passionate fan tradition + brand positioning |
+| **Risk from Aggressiveness** | Loss of credibility, donor withdrawal | Can be absorbed by franchise scale | Alienate 30-40 year traditionalists |
+| **View of Heritage** | Constraint on innovation | Fuel for growth | Foundation requiring modernization |
+| **Stakeholder Accountability** | Curatorial staff, donors, partner leagues | Performance metrics (playoff success, revenue) | Nine team owners expecting profitability |
+| **Growth Strategy** | Conservative extension of reach | Aggressive digital/global expansion | Entertainment focus + expansion readiness |
+| **Innovation Approach** | Extend reach without replacing core | Leverage heritage for fan engagement | Music, halftime, youth programs |
 
 ### Your Analysis
 
-Where do Jamie and Keith **actually agree**, even though their strategies seem opposite?
+Where do all three executives **actually agree**, even though their contexts differ significantly?
 
-Give 2-3 specific examples where their underlying principles align, even if their risk tolerance differs.
+Give 2-3 specific examples where their underlying principles align, even if their risk tolerance and execution strategies differ.
 
-(Example: Both emphasize that innovation must SERVE the brand's core purpose, not REPLACE it)
+(Example: All three emphasize that innovation must SERVE the brand's core purpose, not REPLACE it. Jamie calls this avoiding "Disneyfication." Keith calls it "purpose-driven innovation." Stewart calls it "respecting passionate fans while growing.")
 
 ---
 
@@ -851,7 +806,7 @@ Explain your reasoning. What factors would influence your choice?
 
 ---
 
-## Element 8: **RENUMBERED** - Details Accordion - Video Transcripts (was Element 7)
+## Element 10: Details Accordion - Video Transcripts
 
 **Uplimit Implementation:**
 1. Select **Details** element in module builder
@@ -864,13 +819,19 @@ Title: Video Transcripts (Text Versions for Accessibility)
 
 ### Video 1: Jamie Dinsmore - "Heritage as Economic Value"
 
-[Full transcript of Jamie's session - see Element 3 FULL SCRIPT above]
+[Full transcript available in: Interviews/Jamie Dinsmore - President & CEO, Hockey Hall of Fame.txt]
 
 ---
 
 ### Video 2: Keith Pelley - "Heritage Meets Innovation"
 
 [Full transcript of Keith's session - see Element 5 FULL SCRIPT above]
+
+---
+
+### Video 3: Stewart Johnston - "League Leadership & Expansion"
+
+[Full transcript available in: Interviews/Stewart Johnston - Commissioner, Canadian Football League.txt]
 
 ---
 
@@ -882,7 +843,7 @@ These video transcripts are provided for:
 - **Learning preference**: Students who prefer reading to watching
 - **Review**: Quick way to revisit key concepts without rewatching full videos
 
-Both executives cover similar frameworks (heritage value, stakeholder relationships, innovation strategy) but from fundamentally different perspectives. Reading both transcripts side-by-side can help you see where their philosophies align and diverge.
+All three executives cover similar frameworks (heritage value, stakeholder relationships, innovation strategy) but from fundamentally different perspectives. Reading transcripts side-by-side can help you see where their philosophies align and diverge.
 
 
 ---
@@ -891,31 +852,36 @@ Both executives cover similar frameworks (heritage value, stakeholder relationsh
 
 **What You've Learned:**
 
-You've now heard from two executives who navigate heritage property strategy from opposite perspectives:
+You've now heard from three executives who navigate heritage property strategy from different perspectives:
 
 - **Jamie Dinsmore** protects an institution where the PAST has economic value. He must carefully preserve authenticity while achieving financial sustainability. His stakeholders (curatorial staff, donors, partner leagues) have veto power over strategy, forcing a conservative but defensible approach.
 
 - **Keith Pelley** operates franchises where CURRENT PERFORMANCE and EMOTIONAL CONNECTION drive value. He can innovate aggressively because his heritage is identity-based, not artifact-based. His stakeholder accountability is performance-driven, allowing higher risk tolerance.
 
+- **Stewart Johnston** leads a league where PASSIONATE TRADITIONALISTS must be respected while growing new audiences. He balances nine competing team owners, media partnerships, and a 100+ year heritage with expansion ambitions.
+
 **Key Insights from This Module:**
 
-1. **Heritage institutions and franchises face different strategic constraints**, even though both are heritage properties
+1. **Heritage institutions, franchises, and leagues face different strategic constraints**, even though all are heritage properties
 2. **Authenticity is a business asset**, not just a cultural value—it drives revenue and stakeholder relationships
 3. **Stakeholders determine your strategic freedom**—different accountability structures lead to different growth models
 4. **Purpose-driven innovation is the unifying principle**—whether conservative or aggressive, the best strategies SERVE the organization's core mission
-5. **Global expansion and digital innovation work when they EXTEND heritage**, not REPLACE it
+5. **Expansion requires strategic readiness**—Stewart's three priorities (entertainment, youth, profitability) must be achieved before expansion
 
 **The Emerging Framework:**
 
-Both executives validate the decision principle:
+All three executives validate the decision principle:
 - ✅ If innovation SERVES authenticity and extends the organization's core mission → Approved
 - ❌ If innovation REPLACES authenticity with pure entertainment ("Disneyfication") → Rejected
 
 The difference is in HOW MUCH RISK you can take, given your stakeholder constraints and growth expectations.
 
+**Capstone Connection:**
+Stewart's expansion perspective directly informs your CFL brand package project. His three priorities become your evaluation criteria: Does your expansion proposal enhance entertainment value? Grow youth engagement? Create a profitable 10th team? Strengthen CFL brand positioning?
+
 **Up Next: Module 3 - Core Content & Interactive Frameworks**
 
-Now that you've heard real-world perspective from two experienced executives, Module 3 will teach you the systematic frameworks for making these trade-off decisions yourself. You'll learn the **Legacy vs. Innovation Matrix** to map strategic initiatives, the **Heritage Property Analyzer** to model revenue scenarios, and the **Future Trends Simulator** to forecast how emerging trends will impact heritage properties.
+Now that you've heard real-world perspective from three experienced executives, Module 3 will teach you the systematic frameworks for making these trade-off decisions yourself. You'll learn the **Legacy vs. Innovation Matrix** to map strategic initiatives, the **Heritage Property Analyzer** to model revenue scenarios, and the **Future Trends Simulator** to forecast how emerging trends will impact heritage properties.
 
 Ready to build your heritage strategy toolkit? Let's go!
 
@@ -923,7 +889,7 @@ Ready to build your heritage strategy toolkit? Let's go!
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and two executive perspectives on heritage strategy (Jamie Dinsmore from HHOF and Keith Pelley from MLSE - 65-80 minutes total)
+**You've completed:** Welcome, learning objectives, and three executive perspectives on heritage strategy and league leadership (Jamie Dinsmore from HHOF, Keith Pelley from MLSE, and Stewart Johnston from CFL - ~65-70 minutes of video)
 **Coming next:** Heritage monetization frameworks and interactive future trends analysis (~42 minutes)
 
 **Take a moment to:**
@@ -931,51 +897,56 @@ Ready to build your heritage strategy toolkit? Let's go!
 - Get water or a quick snack
 - Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
 
-**Progress:** You're 45% through Week 5 content! You've heard two contrasting perspectives on heritage vs. innovation—now you'll build systematic frameworks to navigate these tensions and forecast future trends.
+**Progress:** You're 45% through Week 5 content! You've heard three contrasting perspectives on heritage vs. innovation vs. expansion—now you'll build systematic frameworks to navigate these tensions and forecast future trends. Stewart's insights on CFL expansion directly connect to your capstone project.
 
-*This break is optional but recommended. This is your final week, and you've just absorbed substantial executive insights. Return when you're ready to synthesize everything you've learned across all 5 weeks.*
+*This break is optional but recommended. This is your final week, and you've just absorbed substantial executive insights from an institution CEO, a franchise CEO, and a league commissioner. Return when you're ready to synthesize everything you've learned across all 5 weeks.*
 
 ---
 
 ## MODULE 2 COMPLETE - SUMMARY
 
 ### Elements Created:
-1. ✅ Connecting Introduction Text (sets context, introduces Golf Canada executives)
-2. ✅ Infobox - Callout variant (viewing instructions, Golf Canada focus)
-3. ✅ **Video 1 - Golf Canada (Niki DaSilva & Tim McLaughlin) - ~45 min - AVAILABLE NOW**
-4. ✅ Discussion Prompt - Golf Canada session (4 guided reflection questions)
-5. ⏳ Video 2 - Jamie Dinsmore (scripted, 12-15 min) - PENDING recording
-6. ⏳ Video 3 - Keith Pelley (scripted, 12-15 min) - PENDING recording
-7. ✅ Details Accordion - Video transcripts & executive bios
-8. ✅ AI Chat Widget - Heritage & Future Trends Q&A
+1. ✅ Connecting Introduction Text (sets context, introduces all three executives)
+2. ✅ Infobox - Callout variant (viewing instructions, emphasis on three perspectives)
+3. ✅ Video 1 - Jamie Dinsmore (~18 min) - AVAILABLE
+4. ✅ Discussion Prompt - Jamie's session (4 guided reflection questions)
+5. ⏳ Video 2 - Keith Pelley (12-15 min, full script) - SCRIPTED, pending recording
+6. ✅ Discussion Prompt - Keith's session (4 guided reflection questions)
+7. ✅ Video 3 - Stewart Johnston (~35 min) - AVAILABLE ⭐ CAPSTONE
+8. ✅ Discussion Prompt - Stewart's session (4 guided reflection questions on expansion)
+9. ✅ Comparison Prompt - Three-way synthesis (where all executives agree/disagree)
+10. ✅ Details Accordion - Video transcripts (accessibility and reference)
 
 ### Course Executive Distribution:
 - **Week 1:** Kevin Abrams (NY Giants) - sports business operations
 - **Week 2:** Al Dak (Rogers) - media rights and content
 - **Week 3:** Andrew Sneyd (FanDuel) - betting marketing
-- **Week 4:** Matt Rubinoff (Fairgrounds) - emerging sports
-- **Week 5:** Golf Canada (Niki DaSilva & Tim McLaughlin) - heritage sport transformation ← YOU ARE HERE
+- **Week 4:** Matt Rubinoff (Fairgrounds) + Golf Canada - emerging sports, athlete brands
+- **Week 5:** Jamie Dinsmore (HHOF) + Keith Pelley (MLSE) + Stewart Johnston (CFL) ← CAPSTONE
 
 ### Pedagogical Goals:
-- ✅ **Heritage sport transformation**: Golf Canada shows how to modernize while honoring tradition
-- ✅ **Future trends**: AI coaching, simulator golf, digital engagement as emerging opportunities
-- ✅ **Women's sports growth**: Strategic opportunity AND return to inclusive roots
-- ✅ **Athlete ambassador model**: Brooke Henderson partnership beyond traditional sponsorship
-- ✅ **Motivation for Module 3**: Students see real trade-offs in heritage property strategy
+- ✅ **Three-way dialogue**: Institution (HHOF), Franchise (MLSE), and League (CFL) perspectives
+- ✅ **Expert perspective**: Real executives making heritage/growth decisions
+- ✅ **Stakeholder relationships**: Jamie's curatorial/donors vs. Keith's performance metrics vs. Stewart's nine team owners
+- ✅ **Strategic integration**: All executives validate purpose-driven innovation principle
+- ✅ **Capstone connection**: Stewart's expansion discussion directly supports CFL brand package project
+- ✅ **Motivation for Module 3**: Students see real trade-offs and need systematic frameworks to navigate them
 
-### Total Time Estimate (Primary Content):
-- Golf Canada video: ~45 minutes
-- Golf Canada discussion: 15-20 minutes
-- **Total Module 2 time: ~60-65 minutes**
+### Total Time Estimate:
+- Jamie's video: ~18 minutes
+- Jamie's discussion: 10-15 minutes
+- Keith's video: 12-15 minutes
+- Keith's discussion: 10-15 minutes
+- Stewart's video: ~35 minutes
+- Stewart's discussion: 10-15 minutes
+- Comparison synthesis: 15-20 minutes
+- **Total Module 2 time: 100-130 minutes**
 
 ### Production Status:
-- ✅ **Golf Canada**: Interview recorded, transcript available, ready for Uplimit upload
-- ⏳ **Jamie Dinsmore (HHOF)**: Scripted content ready, awaiting interview recording
-- ⏳ **Keith Pelley (MLSE)**: Scripted content ready, awaiting interview recording
+- ✅ **Jamie Dinsmore**: Interview recorded, transcript available
+- ⏳ **Keith Pelley**: Full script ready, awaiting recording
+- ✅ **Stewart Johnston**: Interview recorded, transcript available
 
 ---
-
-**Ready for implementation!** Golf Canada interview provides complete Week 5 executive content. Jamie Dinsmore and Keith Pelley scripts can be recorded later to provide additional perspectives.
-
 
 **Next File:** [MODULE 3: Core Content - Heritage Monetization & Future Trends](module-3-core-content.md)

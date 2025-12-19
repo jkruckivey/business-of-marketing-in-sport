@@ -53,15 +53,20 @@
       "Bash(python -m http.server:*)",
       "Bash(git mv:*)",
       "Bash(git checkout:*)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nMerge remote changes, accepting remote version updates\n\nResolved conflicts by accepting remote branch version updates:\n- M1: v1.5 (removed mid-module KCs)\n- M2: v1.4 (terminology updates)\n- M5: v1.6 (removed mid-module KCs)\n- M6: v1.4 (Goal Seek additions)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(dir /b \"C:\\Users\\james\\OneDrive\\Documents2\\GitHub\\business-of-marketing-in-sport\\modules\\week3\" \"C:\\Users\\james\\OneDrive\\Documents2\\GitHub\\business-of-marketing-in-sport\\modules\\week4\" \"C:\\Users\\james\\OneDrive\\Documents2\\GitHub\\business-of-marketing-in-sport\\modules\\week5\")",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
       "Bash(pandoc:*)",
       "Bash(where:*)",
       "Bash(pip show:*)",
       "Bash(python convert-to-docx.py:*)",
-      "Bash(start \"\" \"C:\\Users\\james\\OneDrive\\Documents2\\GitHub\\business-of-marketing-in-sport\\modules\\week4\\widgets\\brand-package-creator.html\")",
-      "Bash(git commit -m \"$(cat <<''EOF''\nAdd CFL Brand Package Creator widget\n\nInteractive widget for designing expansion team branding:\n- Team name, tagline, colors, mascot, logo concept\n- Live jersey mockups and color swatches\n- Brand metrics (uniqueness, local relevance, merch potential)\n- Strategic insights based on city heritage\n- Export brand package as text file\n- 4 preset templates (Halifax, Quebec, Saskatoon, London)\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git push:*)"
+      "Bash(start:*)",
+      "Bash(cat:*)",
+      "Bash(node create-docx.js:*)",
+      "Bash(brew install:*)",
+      "Bash(/opt/homebrew/bin/brew install:*)",
+      "Bash(/usr/local/bin/brew install node)",
+      "Bash(/usr/local/bin/npx claude-code-templates@latest --hook=automation/simple-notifications --yes)",
+      "Bash(/opt/homebrew/bin/npx claude-code-templates@latest --hook=automation/simple-notifications --yes)"
     ],
     "deny": [],
     "ask": [],
@@ -69,6 +74,23 @@
       "C:\\Users\\jkruck\\Ivey Business School\\EdTech Lab - Documents\\Github\\claude-code-workshop",
       "C:\\Users\\jkruck\\Ivey Business School\\EdTech Lab - Documents\\Github\\educational-prompts-hub",
       "C:\\Users\\jkruck\\Ivey Business School\\EdTech Lab - Documents\\Github\\Excel"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "executeautomation-playwright-server"
+  ],
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if command -v osascript >/dev/null 2>&1; then osascript -e 'display notification \"Tool: $CLAUDE_TOOL_NAME completed\" with title \"Claude Code\"'; elif command -v notify-send >/dev/null 2>&1; then notify-send 'Claude Code' \"Tool: $CLAUDE_TOOL_NAME completed\"; fi"
+          }
+        ]
+      }
     ]
   },
   "statusLine": {

@@ -7,3 +7,16 @@ Course Materials/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Claude Code settings
+.claude/
+
+# Interviews folder - development artifacts
+Interviews/create-docx.js
+Interviews/package.json
+Interviews/MARKETING-CLIPS.md
+Interviews/MARKETING-CLIPS.txt

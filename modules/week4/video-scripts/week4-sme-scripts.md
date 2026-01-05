@@ -319,9 +319,9 @@ The AI Case Coach will help you map Serena's decisions to the five revenue strea
 
 | Slide | Title | Elements (animate on script cue) |
 |-------|-------|-------------------------------|
-| 1 | **The Five Revenue Streams** | **B-roll: Athletes competing, signing autographs, at events.** Text overlays build: On "Stream one: Prize money": "1. Prize Money/Salary" → On "Stream two: Endorsements": "2. Endorsements" → On "Stream three: Appearances": "3. Appearances ($100K-500K)" → On "Trading Time for Money": "Streams 1-3: Trading Time for Money". All text remains visible. |
-| 2 | **Assets That Compound** | **Two-line comparison diagram:** On "Stream four: Equity deals": Flat/linear line draws labeled "Streams 1-3: Trading time for money". On "Stream five: Owned businesses": Curved/exponential line draws above labeled "Streams 4-5: Assets that compound". On "85+ companies": Text "Athlete Venture Fund: 85+ companies" appears below. All remain visible. |
-| 3 | **Model Your Streams** | **B-roll: Financial planning or calculator imagery.** Text overlay: On "Athlete Brand Calculator": "Next: Athlete Brand Calculator". Remains to end. |
+| 1 | **Streams 1-2: Trading Time** | Text overlays build: On "Stream one: Prize money": "1. Prize Money/Salary" → On "Stream two: Endorsements": "2. Endorsements" → On "you don't own anything": "Streams 1-2: Trading Time for Money". All text remains visible. |
+| 2 | **Streams 3-5** | Text overlays build: On "Stream three: Appearances": "3. Appearances ($100K-500K)" → On "Stream four: Equity deals": "4. Equity Deals" → On "Stream five: Owned businesses": "5. Owned Businesses" → On "whether she plays tennis or not": "Streams 4-5: Building Assets That Compound". All text remains visible. |
+| 3 | **The Pattern: Trading vs. Compounding** | **Two-line comparison chart:** On "Streams one through three trade time for money": Flat/linear line draws labeled "Streams 1-3: Trading time for money". On "Streams four and five build assets that compound": Curved/exponential line draws above labeled "Streams 4-5: Assets that compound". On "Athlete Brand Calculator": "Next: Athlete Brand Calculator" appears below. All remain visible. |
 
 ### VIDEO #14: Women's Sports (W4-M2, V1)
 
@@ -345,7 +345,7 @@ The AI Case Coach will help you map Serena's decisions to the five revenue strea
 |-------|-------|-------------------------------|
 | 1 | **Serena Williams Case Study** | **B-roll: Serena on court transitioning to business settings.** Text overlays build: On "business empires": "Athlete → Business Empire" → On "strategic decisions": "How did she do it?" All text remains visible. |
 | 2 | **Three Strategic Pivots** | **B-roll: Business/entrepreneurship footage.** Text overlays build: On "from endorser to investor": "1. Endorser → Investor" → On "from athlete to founder": "2. Athlete → Founder (85+ companies)" → On "from individual to platform": "3. Individual → Platform". All text remains visible. |
-| 3 | **Is This Replicable?** | **B-roll: Athletes in business settings.** Text overlays build: On "built business infrastructure while still playing": "Key: Built infrastructure while still playing" → On "Can other athletes follow": "Can others follow this playbook?" → On "Case Study Analysis": "Next: Case Study Analysis". All text remains visible. |
+| 3 | **Is This Replicable?** | Text overlays build: On "playbook is replicable": "Can others follow this playbook?" → On "built business infrastructure while still playing": "Key: Built infrastructure while still playing". All text remains visible. |
 
 ---
 

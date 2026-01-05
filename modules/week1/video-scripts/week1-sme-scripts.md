@@ -162,67 +162,83 @@ Successful organizations build revenue ecosystems, not portfolios.
 
 ### SCRIPT
 
-**[OPENING - 0:00-0:15]**
+---
 
-**[ON-SCREEN: Brand logos (Scotiabank, Nike, FanDuel) surrounding sports team logos]**
+**[SLIDE 1: SPONSORSHIP REVENUE - 0:00-0:45]**
+
+**[ON-SCREEN: Arena exterior background. Tiered pyramid builds from top down.]**
 
 **NARRATOR:**
 While media rights and ticketing depend on the game itself, two revenue streams are driven by brand value: sponsorship and merchandising.
 
 Let's see how teams monetize their brands through corporate partnerships and consumer products.
 
----
-
-**[SECTION: SPONSORSHIP - 0:15-1:00]**
-
-**[ANIMATION: Stadium with naming rights, jersey patches, in-venue signage]**
-
-**NARRATOR:**
 Sponsorship: 15-25% of Revenue.
 
 The most visible sponsorship deals are naming rights: Scotiabank Arena in Toronto—$800 million over 20 years. That's $40 million per year just for the name.
 
-**[ON-SCREEN: Jersey patch examples from NBA]**
+**[On "naming rights": Top tier appears — Arena icon + "Naming Rights: $800M / 20 years = $40M/yr"]**
 
 Jersey sponsorship arrived in North America in 2017. The NBA allows a 2.5-inch patch on uniforms. Top deals reach $20-30 million per year—Golden State Warriors and Rakuten, $20 million annually.
 
-**[ANIMATION: Sponsor activation examples]**
-
-But the best sponsors don't just buy logos—they create experiences. Scotiabank's "Scene+ Night" at Leafs games integrates their loyalty program with ticket offers and in-arena experiences. Fans remember positive moments, not just a logo.
-
-Key sponsorship categories: Naming rights at $15-50 million per year. Jersey and uniform patches at $5-30 million per year. Category partnerships—official bank, beer, airline—at $500K-10 million per year.
+**[On "Jersey sponsorship": Middle tier appears — Jersey icon + "Jersey Patches: $20-30M/year"]**
+**[On "Golden State Warriors and Rakuten": Base tier appears — Partner icons + "Category Partners: $5-20M/year"]**
 
 ---
 
-**[SECTION: MERCHANDISING - 1:00-1:45]**
+**[SLIDE 2: ACTIVATION > LOGOS - 0:45-1:00]**
 
-**[ANIMATION: Jerseys, hats, merchandise flooding screen]**
+**[ON-SCREEN: New slide. Pyramid fades out.]**
+
+**NARRATOR:**
+But the best sponsors don't just buy logos—they create experiences. Scotiabank's "Scene+ Night" at Leafs games integrates their loyalty program with ticket offers and in-arena experiences. Fans remember positive moments, not just a logo.
+
+**[On "Scene+ Night": Text "Scene+ Night" appears with loyalty program icon]**
+**[On "Fans remember positive moments": Text "Activations drive engagement, not just logos" appears]**
+
+Key sponsorship categories: Naming rights at $15-50 million per year. Jersey and uniform patches at $5-30 million per year. Category partnerships—official bank, beer, airline—at $500K-10 million per year.
+
+**[On "Key sponsorship categories": Summary list builds — "Naming Rights: $15-50M/yr" → "Jersey Patches: $5-30M/yr" → "Category Partners: $500K-10M/yr"]**
+
+---
+
+**[SLIDE 3: MERCHANDISING REVENUE - 1:00-1:45]**
+
+**[ON-SCREEN: New slide.]**
 
 **NARRATOR:**
 Merchandising: 5-10% of Revenue.
 
+**[On "Merchandising: 5-10%": Jersey icon + "Merchandising: 5-10% of Revenue" appears]**
+
 Most major North American leagues—NFL, NHL, MLB—use a centralized model. The league manages all licensing, then splits revenue equally among teams. Why? Competitive balance. This prevents the Yankees and Cowboys from dominating merchandise sales and creating massive revenue gaps.
 
-**[ON-SCREEN: LeBron Lakers jersey, Championship gear, City Edition designs]**
+**[On "centralized model": Text "Centralized Model: League manages licensing, splits equally" appears]**
 
 Revenue spikes during championship runs—sales see significant increases during peak playoff performance. Star acquisitions drive dramatic spikes—when LeBron James signed with the Lakers, his jersey sales saw a 600% spike within hours of the announcement. New designs generate consistent revenue—NBA "City Edition" jerseys generate over $100 million annually.
 
-**[ANIMATION: Digital commerce icons]**
+**[On "LeBron James signed": Text "Star Acquisitions: LeBron Lakers jersey +600%" appears]**
+**[On "City Edition": Text "New Designs: City Edition = $100M+ annually" appears]**
 
 Digital commerce transformed merchandising—teams now sell globally without retail partnerships.
 
+**[On "Digital commerce": Shopping cart icon + "Global sales without retail partners" appears]**
+
 ---
 
-**[CLOSING - 1:45-2:00]**
+**[SLIDE 4: KEY INSIGHT - 1:45-2:00]**
 
-**[ON-SCREEN: Sponsorship + Merchandising = Brand-Driven Revenue]**
+**[ON-SCREEN: New slide.]**
 
 **NARRATOR:**
 Key insight: These are brand-driven revenue streams. The stronger your brand, the more valuable your sponsorship inventory and the more merchandise you sell.
 
+**[On "brand-driven revenue streams": Text "Sponsorship + Merchandising = Brand-Driven Revenue" appears]**
+**[On "stronger your brand": Text "Stronger brand = more valuable inventory + more sales" appears]**
+
 Next up: Betting—the newest and fastest-growing revenue frontier.
 
-**[ON-SCREEN: "Next: Betting & Gaming"]**
+**[On "Next up: Betting": Text "Next: Betting & Gaming" appears]**
 
 ---
 
@@ -367,9 +383,10 @@ In Week 2, you'll analyze this deal in depth and examine what Rogers' strategic 
 
 | Slide | Title | Elements (animate on script cue) |
 |-------|-------|-------------------------------|
-| 1 | **Sponsorship Revenue** | Background: Arena exterior. **Tiered pyramid builds from top down:** On "naming rights": Top tier appears — Arena icon + "Naming Rights: $800M / 20 years" → On "Jersey sponsorship": Middle tier appears — Jersey icon + "Jersey Patches: $20-30M/year" → On "Key sponsorship categories": Base tier appears — Partner icons + "Category Partners: $5-15M/year" (all 3 tiers remain visible) |
-| 2 | **Activation > Logos** | New slide (pyramid fades out). On "Scene+ Night": Text "Scene+ Night" appears as example. On "Fans remember positive moments": Text "Activations drive engagement, not just logos" appears below. On "Merchandising: 5-10%": Jersey icon + "Merchandising: 5-10% of Revenue" appears. All text remains visible. |
-| 3 | **Key Insight: Brand = Value** | New slide. **Split screen comparison:** On "brand-driven revenue streams": Left side — Packed store image + "Strong Brand". Right side — Empty shelves image + "Weak Brand". Both sides remain visible to end. |
+| 1 | **Sponsorship Revenue** | Background: Arena exterior. **Tiered pyramid builds from top down:** On "naming rights": Top tier appears — Arena icon + "Naming Rights: $800M / 20 years = $40M/yr" → On "Jersey sponsorship": Middle tier appears — Jersey icon + "Jersey Patches: $20-30M/year" → On "Golden State Warriors and Rakuten": Base tier appears — Partner icons + "Category Partners: $5-20M/year". All 3 tiers remain visible. |
+| 2 | **Activation > Logos** | New slide (pyramid fades out). On "Scene+ Night": Text "Scene+ Night" appears with loyalty program icon. On "Fans remember positive moments": Text "Activations drive engagement, not just logos" appears below. On "Key sponsorship categories": Summary list builds — "Naming Rights: $15-50M/yr" → "Jersey Patches: $5-30M/yr" → "Category Partners: $500K-10M/yr". All text remains visible. |
+| 3 | **Merchandising Revenue** | New slide. On "Merchandising: 5-10%": Jersey icon + "Merchandising: 5-10% of Revenue" appears. On "centralized model": Text "Centralized Model: League manages licensing, splits equally" appears. On "LeBron James signed": Text "Star Acquisitions: LeBron Lakers jersey +600%" appears. On "City Edition": Text "New Designs: City Edition = $100M+ annually" appears. On "Digital commerce": Shopping cart icon + "Global sales without retail partners". All text remains visible. |
+| 4 | **Key Insight: Brand = Value** | New slide. On "brand-driven revenue streams": Text "Sponsorship + Merchandising = Brand-Driven Revenue" appears. On "stronger your brand": Text "Stronger brand = more valuable inventory + more sales" appears. On "Next up: Betting": Text "Next: Betting & Gaming" appears. All remains visible to end. |
 
 ### VIDEO #3: Revenue Sharing Models (W1-M5, V1)
 

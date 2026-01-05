@@ -65,44 +65,68 @@ This week, you'll learn to think like both sides: the brand trying to prove ROI,
 
 ### SCRIPT
 
-**[OPENING - 0:00-0:15]**
+---
+
+**[SLIDE 1: THE ICEBERG EFFECT - 0:00-0:45]**
+
+**[ON-SCREEN: Iceberg graphic builds]**
 
 **SME:**
 How do brands decide where to invest in sports sponsorships—and how do they measure success?
 
----
-
-**[SECTION: ACTIVATION RULE - 0:15-0:45]**
-
-**SME:**
 A common mistake: thinking the rights fee is the investment. Wrong. For every $1 in rights fees, brands spend $2-3 on activation. If we pay $5 million to sponsor a team, we'll spend $10-15 million amplifying it through ads, hospitality, content, and retail.
+
+**[On "rights fee is the investment": Iceberg shape appears with small tip labeled "Rights Fee"]**
+**[On "$2-3 on activation": Water line reveals large underwater portion labeled "Activation Costs (2-3x)"]**
+**[On "$10-15 million amplifying": Text "$1 Rights = $2-3 Activation" appears below]**
 
 The real question isn't "Can we afford the rights?"—it's "Can we activate at scale?"
 
 ---
 
-**[SECTION: MEASUREMENT - 0:45-1:15]**
+**[SLIDE 2: THREE LAYERS OF VALUE - 0:45-1:15]**
+
+**[ON-SCREEN: New slide]**
 
 **SME:**
 We measure three layers: Reach—how many people saw our brand? Engagement—did they interact? And Conversion—did they buy?
 
+**[On "Reach—how many people": Text "1. Reach (impressions)" appears]**
+**[On "Engagement—did they interact": Text "2. Engagement (interaction)" appears]**
+**[On "Conversion—did they buy": Text "3. Conversion (sales)" appears]**
+
 Reach is easy—broadcast impressions, social media views. Engagement requires data partnerships—app downloads, website visits. Conversion is hardest—tying sales to sponsorship exposure. That's where betting partnerships excel.
+
+**[On "betting partnerships excel": Text "Betting = Clear Attribution" appears]**
 
 ---
 
-**[SECTION: BETTING ADVANTAGE - 1:15-1:45]**
+**[SLIDE 3: BETTING ATTRIBUTION ADVANTAGE - 1:15-1:45]**
+
+**[ON-SCREEN: New slide]**
 
 **SME:**
 When we partner with FanDuel or DraftKings, we access first-party data: who bet, what they bet on, when they converted. That attribution loop is impossible with traditional jersey sponsors.
 
+**[On "FanDuel or DraftKings": Text "First-Party Data: Who bet, what, when" appears]**
+**[On "attribution loop": Text "Full Attribution Loop" appears]**
+
 Sports betting operators offer co-marketing deals where we share customer acquisition costs and conversion data. It's why betting-integrated sponsorships command 20-30% premiums.
+
+**[On "20-30% premiums": Text "20-30% Premium for Attribution Data" appears]**
 
 ---
 
-**[CLOSING - 1:45-2:00]**
+**[SLIDE 4: THINK LIKE A CFO - 1:45-2:00]**
+
+**[ON-SCREEN: New slide]**
 
 **SME:**
 Your activation plan this week needs to answer: What's the reach? What's the engagement mechanism? How do we measure conversion? Think like a CFO, not just a marketer.
+
+**[On "What's the reach": Text "Reach? ✓" appears]**
+**[On "What's the engagement": Text "Engagement? ✓" appears]**
+**[On "How do we measure conversion": Text "Conversion? ?" appears]**
 
 ---
 
@@ -307,9 +331,10 @@ As you read the FanDuel case, focus on customer economics: acquisition costs, li
 
 | Slide | Title | Elements (animate on script cue) |
 |-------|-------|-------------------------------|
-| 1 | **The Iceberg Effect** | **Iceberg graphic builds:** On "rights fee is the investment": Iceberg shape appears → Small tip labeled "Rights Fee" → On "$2-3 on activation": Water line reveals large underwater portion labeled "Activation Costs (2-3x)". On "$10-15 million amplifying": Text "$1 Rights = $2-3 Activation" appears below. All remain visible. |
+| 1 | **The Iceberg Effect** | **Iceberg graphic builds:** On "rights fee is the investment": Iceberg shape appears with small tip labeled "Rights Fee" → On "$2-3 on activation": Water line reveals large underwater portion labeled "Activation Costs (2-3x)" → On "$10-15 million amplifying": Text "$1 Rights = $2-3 Activation" appears below. All remain visible. |
 | 2 | **Three Layers of Value** | **B-roll: Brand activation at sporting event.** Text overlays build: On "Reach—how many people": "1. Reach (impressions)" → On "Engagement—did they interact": "2. Engagement (interaction)" → On "Conversion—did they buy": "3. Conversion (sales)" → On "betting partnerships excel": "Betting = Clear Attribution". All text remains visible. |
-| 3 | **Think Like a CFO** | **B-roll: Executive/boardroom footage.** Text overlays build: On "What's the reach": "Reach? ✓" → On "What's the engagement": "Engagement? ✓" → On "How do we measure conversion": "Conversion? ?" → On "20-30% premiums": "20-30% premium for attribution data". All text remains visible. |
+| 3 | **Betting Attribution Advantage** | New slide. Text overlays build: On "FanDuel or DraftKings": "First-Party Data: Who bet, what, when" → On "attribution loop": "Full Attribution Loop" → On "20-30% premiums": "20-30% Premium for Attribution Data". All text remains visible. |
+| 4 | **Think Like a CFO** | **B-roll: Executive/boardroom footage.** Text overlays build: On "What's the reach": "Reach? ✓" → On "What's the engagement": "Engagement? ✓" → On "How do we measure conversion": "Conversion? ?". All text remains visible to end. |
 
 ### VIDEO #9: Sponsorship 101 (W3-M2, V1)
 
@@ -332,7 +357,7 @@ As you read the FanDuel case, focus on customer economics: acquisition costs, li
 | Slide | Title | Elements (animate on script cue) |
 |-------|-------|-------------------------------|
 | 1 | **May 2018: Legalization** | **B-roll: News footage or sportsbook opening.** Text overlays build: On "2018 Supreme Court decision": "May 2018: Supreme Court Decision" → On "State-by-state": "State-by-state legalization begins". All text remains visible. |
-| 2 | **Aggressive Expansion** | **Funnel diagram builds:** On "aggressive expansion": Text "Major betting operators chose aggressive growth" appears above. On "visibility": Top of funnel — "Visibility". On "adoption": Middle of funnel — "Adoption". On "customer": Bottom of funnel — "Customer". On "customer acquisition": Text "Every dollar → customer acquisition" appears below. All remain visible. |
+| 2 | **Pure Acquisition Strategy** | Text overlays build: On "customer acquisition": "FanDuel's Goal: Customer Acquisition" appears. On "NFL partnership": "NFL Partnerships" appears. On "stadium sponsorship": "Stadium Sponsorships" appears. On "broadcast integration": "Broadcast Integrations" appears. On "cost-per-install": "Measure: Cost-per-Install + Conversion". All remain visible. |
 | 3 | **The Dilemma: Path to Profit?** | **B-roll: Business/financial footage.** Text overlays build: On "path to profitability": "Customer Acquisition Cost vs. Lifetime Value" → On "unit economics": "Your Analysis: Can unit economics work?" All text remains visible. |
 
 ---

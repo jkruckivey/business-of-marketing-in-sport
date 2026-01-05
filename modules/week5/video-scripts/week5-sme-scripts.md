@@ -331,32 +331,32 @@ Good luck with your capstone. You have everything you need. Now show us what you
 | Slide | Title | Elements (animate on script cue) |
 |-------|-------|-------------------------------|
 | 1 | **Authenticity = Your Asset** | **B-roll: Authentic heritage moments.** Text overlays build: On "authenticity IS your asset": "Your authenticity IS your asset" → On "Monetize too aggressively": "Monetize too aggressively → destroy the value". All text remains visible. |
-| 2 | **The Heritage Balance Grid** | **Simple 2x2 grid diagram.** Axes: "Revenue Impact" (X) vs. "Authenticity Risk" (Y). Quadrants build: On "High revenue, low risk": "Sweet Spot" (high revenue, low risk) → On "high revenue, high risk": "Danger Zone" (high revenue, high risk) → On "Digital archive access": "Safe but Limited" (low revenue, low risk) → On "extreme caution": "Avoid" (low revenue, high risk). All quadrants remain visible. |
+| 2 | **The Heritage Balance Grid** | **Simple 2x2 grid diagram.** Grid structure with axes appears: On "Revenue Impact": X-axis label appears → On "Authenticity Risk": Y-axis label appears. All 4 quadrant labels visible (Sweet Spot, Danger Zone, Safe but Limited, Avoid). Quadrants highlight as mentioned: On "High revenue, low risk": Sweet Spot quadrant highlights → On "extreme caution": Avoid quadrant (low revenue, high risk) highlights → On "high revenue, high risk": Danger Zone quadrant highlights. Note: "Safe but Limited" quadrant is visible but not explicitly cued in script. |
 | 3 | **Three Tests** | **B-roll: Decision-making/boardroom.** Text overlays build: On "serve your mission or replace it": "1. Does it serve your mission?" → On "loyal stakeholders accept it": "2. Would stakeholders accept?" → On "Is it reversible": "3. Is it reversible?" All text remains visible. |
 
 ### VIDEO #19: Future Trends (W5-M3, V1)
 
 | Slide | Title | Elements (animate on script cue) |
 |-------|-------|-------------------------------|
-| 1 | **Sports Business 2030** | **B-roll: Future-looking sports/tech imagery.** Text overlay: On "Five trends": "Five trends reshaping sports business". Remains visible. |
-| 2 | **5 Trends Reshaping the Industry** | **B-roll: Mix of D2C, betting, women's sports, AI, heritage footage.** Text overlays build: On "Trend one: Direct-to-consumer": "1. Direct-to-consumer everything" → On "Trend two: Sports betting integration": "2. Betting integration deepens" → On "Trend three: Women's sports": "3. Women's sports reach parity" → On "Trend four: AI transforms": "4. AI transforms operations" → On "Trend five: Heritage becomes": "5. Heritage becomes competitive advantage". All text remains visible. |
-| 3 | **Apply the Trends** | **B-roll: Sports business future.** Text overlay: On "Future Trends Widget": "Next: Future Trends Widget". Remains to end. |
+| 1 | **Sports Business 2030** | **2030/future icon (calendar or crystal ball).** Text overlay: On "Five trends": "Five trends reshaping sports business". Remains visible. |
+| 2 | **5 Trends Reshaping the Industry** | **5 trend icons build in sequence.** On "Trend one: Direct-to-consumer": Icon 1 (brand→fan connection) + "1. Direct-to-consumer everything" → On "Trend two: Sports betting integration": Icon 2 (odds/wagering) + "2. Betting integration deepens" → On "Trend three: Women's sports": Icon 3 (equality/parity) + "3. Women's sports reach parity" → On "Trend four: AI transforms": Icon 4 (brain/circuit) + "4. AI transforms operations" → On "Trend five: Heritage becomes": Icon 5 (shield/legacy) + "5. Heritage becomes competitive advantage". All icons and text remain visible. |
+| 3 | **Apply the Trends** | **Arrow/forward icon.** Text overlay: On "10-year horizons": "Next: Future Trends Widget". Remains to end. |
 
 ### VIDEO #20: HHOF Case (W5-M4, V1)
 
 | Slide | Title | Elements (animate on script cue) |
 |-------|-------|-------------------------------|
-| 1 | **Universal Heritage Challenge** | **B-roll: Sports heritage museum or hall of fame venue.** Text overlays build: On "isn't about hockey specifically": "This isn't just about hockey" → On "every heritage property": "Every heritage property faces this dilemma" → On "board wants": "Board wants growth. Staff wants preservation." All text remains visible. |
-| 2 | **Both Sides Are Right** | **B-roll: VR experiences, museum exhibits.** Text overlays build: On "growth opportunities ARE real": "The opportunities ARE real" → On "risks are also real": "The risks ARE real" → On "two traps": "Trap 1: Growth always wins. Trap 2: Tradition always wins." All text remains visible. |
-| 3 | **The Answer: Boundaries** | **B-roll: Heritage institution.** Text overlays build: On "boundary-setting": "The answer: boundary-setting" → On "line is different for every organization": "Where is the line for THIS organization?" → On "executive interviews": "Next: Case Study Analysis". All text remains visible. |
+| 1 | **Universal Heritage Challenge** | **Balance icon (scale or two opposing arrows).** Text overlays build: On "isn't about hockey specifically": "This isn't just about hockey" → On "every heritage property": "Every heritage property faces this dilemma" → On "board wants": Split text appears: "Board: Growth" ← → "Staff: Preservation". All text remains visible. |
+| 2 | **Both Sides Are Right** | **Split comparison layout.** On "growth opportunities ARE real": Left side: ✓ icon + "The opportunities ARE real" → On "risks are also real": Right side: ⚠ icon + "The risks ARE real" → On "Trap one": Trap icon + "Trap 1: Growth always wins" appears below → On "Trap two": Trap icon + "Trap 2: Tradition always wins" appears beside it. All remain visible. |
+| 3 | **The Answer: Boundaries** | **Split layout with vertical boundary line.** Left side: "ACCEPTABLE INNOVATION" with examples (✓ Digital archives, ✓ Membership tiers, ✓ Expanded merch). Right side: "MISSION COMPROMISE" with examples (✗ Theme park approach, ✗ Abandon core mission, ✗ Alienate stakeholders). On "boundary-setting": Layout appears with "The answer: boundary-setting" → On "line is different for every organization": "Where is the line for THIS organization?" appears, boundary line animates slightly → On "executive interviews": "Next: Case Study Analysis" appears. All remain visible. |
 
 ### VIDEO #21: Course Synthesis (W5-M6, V1)
 
 | Slide | Title | Elements (animate on script cue) |
 |-------|-------|-------------------------------|
-| 1 | **Congratulations!** | **B-roll: Celebration/achievement imagery.** Text overlays build: On "Congratulations": "Congratulations!" → On "frameworks that working professionals use": "You now have frameworks professionals use." All text remains visible. |
-| 2 | **Your Five-Week Journey** | **B-roll: Course highlights montage.** Text overlays build: On "Week 1 taught you revenue ecosystems": "Week 1: Revenue Ecosystems" → On "Week 2 showed you media rights": "Week 2: Media Rights" → On "Week 3 covered sponsorship": "Week 3: Sponsorship & Betting" → On "Week 4 explored athlete brands": "Week 4: Athletes & Emerging Sports" → On "Week 5 added": "Week 5: Heritage & Future". All text remains visible. |
-| 3 | **Capstone: Your Strategy** | **B-roll: Strategic planning/success imagery.** Text overlays build: On "sustainable revenue": "Build sustainable revenue" → On "competitively": "Position competitively" → On "financially viable": "Ensure financial viability" → On "Good luck": "Good luck!" All text remains visible. |
+| 1 | **Congratulations!** | **Trophy or graduation cap icon.** Text overlays build: On "Congratulations": "Congratulations!" → On "frameworks that working professionals use": "You now have frameworks professionals use." All text remains visible. |
+| 2 | **Your Five-Week Journey** | **5 week cards/icons build in sequence.** On "Week 1 taught you revenue ecosystems": Card 1 icon + "Week 1: Revenue Ecosystems" → On "Week 2 showed you media rights": Card 2 icon + "Week 2: Media Rights" → On "Week 3 covered sponsorship": Card 3 icon + "Week 3: Sponsorship & Betting" → On "Week 4 explored athlete brands": Card 4 icon + "Week 4: Athletes & Emerging Sports" → On "Week 5 added": Card 5 icon + "Week 5: Heritage & Future". All cards remain visible. |
+| 3 | **Capstone: Your Strategy** | **3 checklist icons build.** On "sustainable revenue": ✓ icon + "Build sustainable revenue" → On "competitively": ✓ icon + "Position competitively" → On "financially viable": ✓ icon + "Ensure financial viability" → On "Good luck": "Good luck!" appears below. All remain visible. |
 
 ---
 

@@ -1,10 +1,14 @@
 # Looking Ahead to Week 2
-**Version:** 1.4.0 | **Last Updated:** 2025-12-01
+**Version:** 1.5.0 | **Last Updated:** 2026-01-07
 
 **Purpose:** Consolidate Week 1 learning, preview Week 2
 
+### Version 1.5.0 Changes
+- **NEW:** Populated Element 4 with actual further readings (PwC, Deloitte, McKinsey, Kearney reports)
+- **NEW:** Created shared data-framing-guidelines.md for consistent estimate language
+
 ### Version 1.4.0 Changes
-- **NEW:** Added stock photo suggestion after Element 3 Week 2 preview text to build anticipation for media rights content
+- Added stock photo suggestion after Element 3 Week 2 preview text to build anticipation for media rights content
 
 **Uplimit Structure:** Final module in Unit 1
 
@@ -109,23 +113,44 @@ Title: Optional Extension Resources
 
 Want to go deeper on revenue ecosystems? Check out these resources:
 
-## Articles & Reports
-• [Industry report 1 - Title, Link]
-• [Industry report 2 - Title, Link]
-• [Academic article on revenue sharing - Citation, Link]
+## Revenue Ecosystems & Industry Outlook
 
-## Podcasts & Videos
-• [Podcast episode on sport economics - Link]
-• [Conference presentation on emerging revenue streams - Link]
+• **PwC – Sports Industry Outlook 2025 (North America)**
+  Clear breakdown of gate, media, sponsorship, and licensing; reinforces the 5-stream model.
+  https://www.pwc.com/us/en/industries/tmt/library/sports-outlook-north-america.html
+
+• **PwC – The Evolution of Sponsorships: Data Innovation Helps Drive Value**
+  Great on sponsorship CPMs, data, and how betting/tech brands change sponsorship economics.
+  https://www.pwc.com/us/en/industries/tmt/library/sports-sponsorships-playbook.html
+
+• **Kearney – Value of the Global Sports Market Forecast to Exceed $600 Billion**
+  Macro view of growth by segment; useful context for revenue ecosystems framing.
+  https://www.kearney.com/about/kearney-in-the-media/press/article/value-of-global-sports-market-forecast-to-exceed-600-billion-by-2030-finds-new-kearney-report
+
+## Media Rights, Streaming & Fan Engagement
+
+• **Deloitte – 2025 Sports Industry Outlook**
+  Focus on new media-rights structures, SVOD-only deals, and integrated in-game betting.
+  https://www.deloitte.com/us/en/insights/industry/technology/technology-media-telecom-outlooks/sports-industry-outlook.html
+
+• **Deloitte – Immersive Sports Fandom**
+  Explores multi-screen, AR/VR, micro-betting and what "immersive" fan journeys look like.
+  https://www.deloitte.com/us/en/insights/industry/sports/immersive-sports-fandom.html
+
+• **McKinsey – Tackling the Sports Media Divide**
+  Short piece on media revenue per viewing hour and the undervaluation of women's sports in media deals.
+  https://www.mckinsey.com/featured-insights/week-in-charts/tackling-the-sports-media-divide
 
 ## Books
+
 • *The Sports Strategist* by Irving Rein, Ben Shields, Adam Grossman
 • *Money Games* by David Carter
 • *The Business of Sports* by Scott Rosner, Kenneth Shropshire
 
 ## Industry Resources
-• Sports Business Journal (subscription)
-• SportsPro Media (free articles)
+
+• Sports Business Journal (subscription) – https://www.sportsbusinessjournal.com
+• SportsPro Media (free articles) – https://www.sportspromedia.com
 • Deloitte Sports Business Group reports (annual)
 
 These are optional—not required for any assessment. But if you're passionate about

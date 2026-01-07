@@ -1059,24 +1059,4 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 **Active Engagement:** 25 minutes (75%)
 **Passive Reading:** 8 minutes (25%)
 
----
-
-## Five Revenue Streams Complete - Transition to Build Your Revenue Empire
-
-**What You've Learned:**
-You've now explored all five revenue streams through hands-on discovery. You understand that media rights (40-60%) dominate modern sports economics, ticketing and premium seating create tiered fan experiences, sponsorship activation drives brand value beyond logos, merchandising spikes during key moments, and betting is the fastest-growing frontier. Most importantly, you've seen how these streams form an **ecosystem**—investments in one area cascade through all others.
-
-**Key Takeaways:**
-- Revenue streams are interdependent, not independent
-- Connor McDavid's $12.5M salary generates $30-40M in ecosystem value
-- Premium seating (10-15% of capacity) generates 40-50% of ticketing revenue
-- Streaming economics differ fundamentally from traditional broadcast models
-- Betting legalization creates multiple monetization opportunities
-
-**Up Next: Build Your Revenue Empire**
-You've learned the theory and played with individual widgets. Now it's time to put it all together in a strategic simulation. In the next module, you'll build a complete revenue strategy for a professional sports team, making trade-offs across all five streams while managing risk and maximizing growth.
-
-Ready to become a sports business strategist? Let's go!
-
----
 

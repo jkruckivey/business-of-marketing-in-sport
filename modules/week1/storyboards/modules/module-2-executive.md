@@ -413,36 +413,6 @@ These transcripts are provided for accessibility and for students who prefer rea
 
 ---
 
-## Inside the Sports Business Complete - Transition to Five Revenue Streams
-
-**What You've Learned:**
-You now have a solid foundation in professional sport's unique revenue model—both conceptual frameworks and real-world applications from two executive perspectives. Kevin Abrams (NY Giants SVP) showed you franchise-level operations in a $10 billion organization, while Stewart Johnston (CFL Commissioner) revealed league-level strategy for a 110+ year heritage brand.
-
-**Key Takeaways:**
-- Revenue streams form an ecosystem, not just a portfolio
-- Media rights (40-60%) dominate modern sports economics
-- Revenue sharing models vary dramatically (NFL 60%, NHL 50%, EPL tiered)
-- Currency challenges complicate Canadian teams' economics
-
-**From Kevin Abrams (Franchise Perspective):**
-- **Salary cap = portfolio management** - The Giants evolved from "checking account" thinking to investment committee consensus building
-- **AI is transforming operations** - Enterprise ChatGPT deployed across talent evaluation, HR, and operations
-- **Business-football integration** - Sponsors like Moody's and MetLife advise on facility planning; player marketing creates win-win-win partnerships
-
-**From Stewart Johnston (League Perspective):**
-- **Two biggest league revenue drivers** - Media rights and commercial partnerships (sponsorships)
-- **Data-driven innovation** - 3 months of analysis to project 60 additional touchdowns from rule changes
-- **Heritage vs. growth balance** - "Relentless focus on entertainment" while protecting 110+ year legacy
-- **Three strategic priorities** - Entertainment focus, footballs in kids' hands, nine profitable teams
-- **Expansion vision** - 10th team within 10 years; multiple Canadian markets could support expansion
-
-**Up Next: Five Revenue Streams That Power Sports**
-Now that you've seen the big picture—and heard how it plays out in both a $10B NFL franchise and a heritage Canadian football league—it's time to explore each revenue stream in depth. In the next module, you'll interact with 8 hands-on widgets that let you discover revenue principles through manipulation and experimentation—not passive reading.
-
-Ready to dive in? Let's go!
-
----
-
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
 **You've completed:** Welcome, learning objectives, concept videos, and two executive interviews (~54 minutes of video content)

@@ -164,24 +164,4 @@ Create 5 tiles:
 - **◫ Tiles** create visual preview and chunking (UDL engagement, scannable overview)
 - Students immediately understand week's scope and expectations
 
----
-
-## Your Week 1 Journey Complete - Transition to Inside the Sports Business
-
-**What You've Accomplished:**
-You now know exactly where you're headed this week. You've seen the four learning objectives that will transform how you understand sports business, and you've been introduced to the five major revenue streams that power professional sport. You understand that this week focuses on analyzing revenue ecosystems—seeing sport as a unique business model where financial collaboration between competitors creates value.
-
-**Key Takeaways:**
-- Sport operates as an **interconnected revenue ecosystem**, not isolated revenue streams
-- **Five major revenue streams** power professional sport: media rights (40-60%), ticketing (20-30%), sponsorship (15-25%), merchandising (5-10%), and betting (2-8%, growing 30-40%)
-- Teams must **collaborate financially** to maintain competitive balance despite competing on the field
-- Revenue sharing models vary dramatically: NFL shares 60% equally; European soccer operates entrepreneurially
-- Strategic decisions trigger **cascading effects** across the entire revenue ecosystem
-
-**Up Next: Inside the Sports Business**
-Before diving into the technical details of each revenue stream, you'll hear from a senior sports business executive who has actually negotiated media deals, managed sponsorship portfolios, and built revenue strategies. They'll share the real-world challenges and strategic decisions that bring these concepts to life.
-
-Ready to learn from someone who's done it? Let's hear the executive perspective.
-
----
 

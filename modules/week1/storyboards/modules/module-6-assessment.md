@@ -1349,27 +1349,4 @@ Upload your team's Market Analysis Brief here.
 | **Total** | **15** |
 ```
 
----
-
-## Your Executive Memo Complete - Transition to Looking Ahead
-
-**What You've Accomplished:**
-You've completed Week 1's assessments:
-1. **Individual:** Executive reflection memo demonstrating your mastery of all four learning outcomes (30 points)
-2. **Team:** CFL Expansion Milestone 1—Market Analysis Brief for your proposed expansion city (15 points)
-
-**Key Takeaways:**
-- You can map all five major revenue streams and their relative importance
-- You understand sport's unique business model (why competitors collaborate financially)
-- You can evaluate growth potential and vulnerabilities across revenue sources
-- You can analyze revenue-sharing models and their strategic implications
-- You've practiced the PAIRR methodology (Peer and AI Review + Reflection)
-- Your team has selected an expansion city and projected 5-year revenue
-
-**Up Next: Looking Ahead to Week 2**
-Week 1 is nearly complete. In Week 2, you'll develop your **Media & Content Strategy** for your CFL expansion franchise. How will your new team maximize media value in the Canadian sports landscape?
-
-One more module to go—let's bring Week 1 home!
-
----
 

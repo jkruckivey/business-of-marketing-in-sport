@@ -129,26 +129,6 @@ Current Portfolio (Rogers Sports & Media):
 
 ---
 
-## Module 2 Complete - Transition to Module 3
-
-**What You've Accomplished:**
-You've heard directly from a senior media executive who has negotiated billion-dollar sports rights deals. You now understand how practitioners value sports content, assess platform trade-offs between linear broadcasting and streaming, and navigate the strategic decisions that shape media partnerships. You've gained authentic insights into the challenges facing both rights holders (leagues/teams) and rights buyers (broadcasters/streamers).
-
-**Key Takeaways:**
-- **Rogers' $5.2B NHL deal** wasn't just about content - it was a chess move protecting cable distribution, leveraging advertising negotiations, and positioning for team ownership (now 75% of MLSE = largest sports owner in North America)
-- **Revenue management evolved from "checking account to portfolio"** - Al's team now prices inventory game-by-game like airlines, managing three channels simultaneously (long-term deals, dynamic pricing, real-time playoff inventory)
-- **Data transformed from threat to necessity** - 10 years ago: 1 brand health study for top partner. Today: 90% of sponsors get annual tracking, real-time engagement metrics, creative feedback loops. Without attribution data, sponsorships don't renew.
-- **Fan engagement definition shifted** - No longer just buying audience reach. Brands want closed-loop attribution: reach → engagement (interaction) → conversion (purchase) tracked through promo codes, app downloads, geofencing retail visits
-- **Linear's future: bundled streaming apps** - Cable penetration 70% in Canada (vs. <50% US) because Rogers made sports the anchor. Future = streaming services bundled like cable packages, not standalone subscriptions
-- **Vertical integration = compounding advantages** - Owning NHL rights + Blue Jays team + MLSE stake + Sportsnet platform + Rogers Centre venue = control pricing, cross-promote, capture full value chain (not just licensing fees)
-
-**Up Next: Module 3 - Interactive Media Rights Framework**
-You've heard the executive perspective. Now it's time to build your own understanding through hands-on exploration. Module 3 uses interactive widgets to help you discover media valuation principles through experimentation—not passive reading. Get ready for active learning!
-
-Ready to dive in? Let's explore media economics interactively!
-
----
-
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
 **You've completed:** Welcome, learning objectives, and executive insights

@@ -73,8 +73,8 @@ Analyze Rogers Communications' 12-year NHL rights acquisition, assess its strate
 ```
 Media Rights: The Billion-Dollar Core Product
 
-In Week 1, you learned that media rights represent 40-60% of total revenue for major
-professional leagues. This week, we examine WHY sports content commands such premium
+In Week 1, you learned that media rights typically represent 40–60% of total revenue for major
+professional leagues, varying by sport. This week, we examine WHY sports content commands such premium
 valuations and HOW rights deals are structured, negotiated, and monetized.
 
 Sports remain the last "appointment viewing" in an era of on-demand entertainment.
@@ -94,7 +94,7 @@ strategies for sports properties.
 - **Type:** Stock Photo
 - **Placement:** After Text Content (media rights introduction)
 - **Suggested Image:** Large-scale media production truck or mobile broadcast unit outside a major sports venue, with satellite dishes and production equipment visible, showing the scale of sports media operations
-- **Alt Text:** "Large sports media production trucks and satellite equipment outside a major sports venue, representing the massive infrastructure behind the $110 billion NFL media deals and other billion-dollar sports broadcasting agreements"
+- **Alt Text:** "Large sports media production trucks and satellite equipment outside a major sports venue, representing the massive infrastructure behind the well over $100 billion NFL media deals and other billion-dollar sports broadcasting agreements"
 - **Search Terms:** `sports broadcast truck stadium`, `mobile production unit sports`, `TV broadcast equipment venue`
 - **Purpose:** Establishes the scale and professionalism of the sports media industry that students will be analyzing
 - **Size:** Full width, max 800px
@@ -141,30 +141,29 @@ Create 3 tiles (1x3 or 2x2 grid with one empty):
 - Interactive highlighting shows connections between week and course goals
 - WCAG 2.2 AA compliant with keyboard navigation and screen reader support
 
+### Element 4A: Details - Widget Instructions (Expandable)
+
+**Details Element Title:** `Need help? How to use this widget`
+
+```
+This widget shows how Week 2's learning outcomes connect to the overall course goals.
+
+**How to use:**
+- Click any Week Learning Outcome (WLO 2.1-2.4) to see which Course Learning Outcome (CLO) it supports
+- Connections highlight to show the relationship
+- Hover for detailed descriptions of each outcome
+
+**Why it matters:**
+- Week 2 primarily supports CLO 2 (Evaluate Media & Fan Monetization)
+- But media strategy connects to ALL other weeks (revenue ecosystems, sponsorship, athlete brands, future trends)
+- Understanding these connections helps you see the bigger picture
+```
+
 **Design Rationale:**
 - **Infobox (Callout)** makes learning objectives immediately visible (QM Standard 2)
 - **Text** bridges Week 1 concepts and sets Week 2 context (scaffolding, UDL representation)
 - **Tiles** preview three core themes for visual organization (UDL engagement)
 - Connection to Week 1 revenue streams creates continuity
-
----
-
-## Your Week 2 Journey Complete - Transition to Inside the Media Business
-
-**What You've Accomplished:**
-You now understand Week 2's focus: evaluating media and fan monetization strategies. You've seen the four learning objectives that will transform how you analyze billion-dollar media rights deals, and you've been introduced to the three strategic dimensions—rights valuation, linear vs. streaming economics, and fan engagement monetization. You understand that this week builds directly on Week 1's revenue ecosystem foundation, diving deep into the largest revenue stream in professional sports.
-
-**Key Takeaways:**
-- **Media rights represent 40-60% of league revenue**—the foundation of modern sports economics
-- Sports content is the **last "appointment viewing"** in the streaming era, commanding premium valuations
-- Week 2 explores **three strategic dimensions**: rights valuation frameworks, linear vs. DTC economics, and fan engagement monetization
-- The **Rogers/NHL $5.2B deal** serves as the case study for evaluating mega-deals
-- This week's learning **directly supports CFL Expansion Project Milestone 2** (Media & Content Strategy)
-
-**Up Next: Inside the Media Business**
-Before diving into valuation frameworks and strategic models, you'll hear from a senior media executive who has negotiated major sports rights deals. They'll share the real-world challenges, trade-offs, and strategic decisions that bring media economics theory to life.
-
-Ready to learn from someone who's done it? Let's hear the executive perspective.
 
 ---
 

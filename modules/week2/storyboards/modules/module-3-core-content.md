@@ -40,16 +40,16 @@ Copy the markdown below directly into Uplimit:
 ```markdown
 # Media Rights: The Billion-Dollar Foundation
 
-Recall from Week 1: Professional sport generates revenue through five major streams—media rights (40-60%), ticketing (20-30%), sponsorship (15-25%), merchandising (5-10%), and betting (2-8%). This week, we dive deep into the **largest stream**: media rights.
+Recall from Week 1: Professional sport generates revenue through five major streams—media rights (typically 40–60%), ticketing (20-30%), sponsorship (15-25%), merchandising (5-10%), and betting (2-8%, but growing). This week, we dive deep into the **largest stream**: media rights.
 
-Media rights—fees paid by broadcasters and streaming platforms to air games—represent the **largest revenue stream** for most professional leagues, typically accounting for **40-60% of total revenue**.
+Media rights—fees paid by broadcasters and streaming platforms to air games—typically account for the **largest share of revenue** in most professional leagues, often in the **40–60% range** depending on the sport and year.
 
-These deals are massive: The NFL's current media rights contracts total **$110 billion over 11 years** ($10B/year). The English Premier League generates over **$5 billion per year** from domestic and international broadcast rights.
+These deals are massive: The NFL's current media rights contracts total over **$100 billion over 11 years** (approximately $10B/year). The English Premier League generates over **$5 billion per year** from domestic and international broadcast rights.
 
 **Why sports command premium value:**
 - Live games create **"appointment viewing"** (can't watch later without spoilers)
 - Sports deliver **simultaneous audiences** (rare in 2024 on-demand world)
-- Premium advertising rates: Sports CPM **$50-70** vs. scripted TV **$15-25**
+- Premium advertising rates: Sports advertising typically commands higher CPMs, often in the **$50–70 range** versus **$15–25** for general entertainment
 
 This module explores HOW broadcasters value these rights deals.
 ```
@@ -116,7 +116,7 @@ Create 5 numbered items:
 
 **Practice: WLO 2.1 (Explore media rights valuation)**
 
-You've learned that media rights represent 40-60% of league revenue—but what actually determines how much a league can charge for its rights? The answer starts with audience size and demographics.
+You've learned that media rights often represent 40–60% of league revenue, varying by league—but what actually determines how much a league can charge for its rights? The answer starts with audience size and demographics.
 
 In this interactive activity, you'll calculate the estimated media rights value for different leagues (NFL, NHL, NBA, MLS, Premier League, or create your own custom league) by manipulating audience size, game count, demographic premiums, and advertising rates. Watch how changing just one variable—like increasing coveted demo percentage from 30% to 50%—can add hundreds of millions to annual rights value.
 
@@ -180,6 +180,35 @@ function calculateRightsValue(avgViewers, numGames, covetedDemoPercent, cpm) {
 - ✅ Focus indicators (3px solid outline)
 
 **Implementation Notes:** HTML form with 5 inputs, JavaScript calculations, Chart.js bar chart, JSON export button. Ivey design system (#c5b783 accent color).
+
+### Element 5A: Details - Widget Instructions (Expandable)
+
+**Details Element Title:** `Need help? How to use this calculator`
+
+```
+This calculator helps you understand how audience size and demographics drive media rights valuations.
+
+**Step-by-step:**
+
+1. **Select a league** from the dropdown (NFL, NHL, NBA, MLS, Premier League) or choose "Custom" to enter your own values
+
+2. **Review the pre-filled data** — these are real industry figures for average viewership, game count, and demographic breakdown
+
+3. **Adjust the sliders** to see how changes affect valuation:
+   - **Average viewership:** More viewers = higher ad revenue potential
+   - **Games per season:** More games = more ad inventory to sell
+   - **Coveted demo %:** Higher percentage of 18-49 viewers with $75K+ income = premium ad rates
+   - **CPM rate:** Cost per thousand viewers — sports typically command $50-70
+
+4. **Watch the calculation update** in real-time showing total audience reach, demographic premium, and estimated annual rights value
+
+**What to notice:**
+- Small changes in coveted demo % have outsized impact on valuation
+- The NFL's combination of huge audiences + high demo % explains their $10B/year deals
+- MLS has similar game counts to NHL but far lower valuations — why?
+
+**If you're stuck:** Try comparing NFL vs. MLS with identical settings except viewership. What's the multiplier effect?
+```
 
 ---
 
@@ -292,7 +321,39 @@ function calculatePackageValue(exclusiveOption, splitOptions) {
 
 **Implementation Notes:** Card-based interface with reveal animation, comparison logic, strategic insights panel. Preset scenarios for NHL, NFL, Premier League.
 
----
+### Element 7A: Details - Widget Instructions (Expandable)
+
+**Details Element Title:** `Need help? How to use this simulator`
+
+```
+This simulator shows why exclusive rights cost 2-3x more than shared rights — and when that premium is worth paying.
+
+**Step-by-step:**
+
+1. **Set up the auction:**
+   - Choose a property (NHL Canadian rights, NFL Sunday package, etc.)
+   - Select number of bidders (2-5 competing networks/streamers)
+   - Set your budget ceiling
+
+2. **Choose your bid strategy:**
+   - **Aggressive:** Bid high early to scare off competitors
+   - **Patient:** Wait for others to drop out, then bid
+   - **Value-based:** Set a max price based on your ROI model and don't exceed it
+
+3. **Watch the auction unfold** — other bidders respond based on their strategies and budgets
+
+4. **See the outcome:**
+   - Did you win? At what price?
+   - What's your projected ROI based on the price you paid?
+   - How did exclusivity vs. shared rights affect the final price?
+
+**What to notice:**
+- Adding just one more bidder can increase final price by 30-50%
+- Tech giants (Apple, Amazon) often bid above "rational" ROI because they value subscriber acquisition
+- Exclusive rights create winner-take-all dynamics — second place gets nothing
+
+**If you're stuck:** Run the same auction twice — once with 2 bidders, once with 4. Compare final prices.
+```
 
 ---
 
@@ -377,7 +438,7 @@ In this interactive activity, you'll toggle between Linear TV and Streaming/DTC 
 
 **What you'll discover:**
 
-- Why streaming platforms lose money for 3-5 years by design (customer lifetime value thinking)
+- Why streaming platforms typically lose money for the first 3–5 years as they invest in rights and customer acquisition (customer lifetime value thinking)
 - How cord-cutting destroys linear TV profitability even if rights deals seem "fair" at signing
 - Why tech giants like Apple can "overpay" for rights—they're buying subscribers, not immediate profit
 - The mathematics behind Rogers' $1.5B loss on the NHL deal (subscriber decline killed them)
@@ -453,6 +514,41 @@ function calculateStreaming(rightsCost, subPrice, startingSubs, monthlyGrowth, c
 - ✅ Focus indicators on toggle and presets
 
 **Implementation Notes:** Dual-model toggle, Chart.js line chart with dual axes, preset scenario buttons, metrics panel with strategic insights, PDF export functionality.
+
+### Element 10A: Details - Widget Instructions (Expandable)
+
+**Details Element Title:** `Need help? How to use this visualizer`
+
+```
+This visualizer shows why streaming platforms lose money for years while linear TV either profits immediately or fails fast.
+
+**Step-by-step:**
+
+1. **Choose your platform type:**
+   - **Linear TV:** Traditional cable/broadcast model
+   - **Streaming/DTC:** Direct-to-consumer subscription model
+
+2. **Set your inputs:**
+   - **Linear TV:** Rights cost, ad CPM, carriage fees, starting subscribers, annual decline rate
+   - **Streaming:** Rights cost, subscription price, starting subs, monthly growth %, churn rate, customer acquisition cost
+
+3. **View the 10-year projection chart:**
+   - Blue line = annual revenue
+   - Red line = annual costs
+   - Green line = break-even threshold
+   - Shaded area = profit or loss
+
+4. **Experiment with scenarios:**
+   - Try recreating Rogers' NHL deal (linear, high rights cost, declining subscribers)
+   - Try DAZN's model (streaming, lower rights cost, high growth + high churn)
+
+**What to notice:**
+- Linear TV is profitable Day 1 IF the math works — but cord-cutting can flip it to losses quickly
+- Streaming requires 3-5 years to reach profitability even with good execution
+- Churn is the streaming killer — 30% annual churn means you're constantly re-acquiring customers
+
+**If you're stuck:** Set both models to identical rights costs ($200M). Which breaks even faster? Why?
+```
 
 ---
 
@@ -585,6 +681,35 @@ function calculateEngagementValue(baseFans, baseFanValue, selectedTactics) {
 
 **Implementation Notes:** Checkbox form with 6 tactics, real-time calculations, stacked bar chart (engagement funnel), strategic insights panel, JSON export.
 
+### Element 12A: Details - Widget Instructions (Expandable)
+
+**Details Element Title:** `Need help? How to use this builder`
+
+```
+This builder shows how fan engagement creates revenue beyond just watching games.
+
+**Step-by-step:**
+
+1. **Start with a touchpoint:** Select an initial fan interaction (live game viewing, highlight clip, social post, etc.)
+
+2. **Build the engagement chain:** Add downstream touchpoints that flow from the first:
+   - Viewing → App download → Fantasy play → Betting → Merchandise purchase
+   - Each step has a conversion rate and revenue value
+
+3. **See total fan value:** The widget calculates lifetime value based on your engagement chain
+
+4. **Compare chains:** Try different starting points and see which generates more total value:
+   - Does a social media fan become as valuable as a TV viewer?
+   - How much does adding betting integration increase fan LTV?
+
+**What to notice:**
+- Passive viewers have low LTV — engagement multiplies value
+- Betting integration can 3-5x fan value (but not all fans convert)
+- The most valuable chains have 4-5 touchpoints, not just 1-2
+
+**If you're stuck:** Build two chains — one for a casual fan (watches some games) and one for a superfan (watches everything, plays fantasy, bets, buys merch). Compare the LTV difference.
+```
+
 ---
 
 **Design Rationale:**
@@ -619,25 +744,6 @@ Sharing insights helps you process what you've learned through the widgets and p
 **Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
 - 3 points: Thoughtful original post (20+ words)
 - 2 points: Two quality peer replies
-
----
-
-## Module 3 Complete - Transition to Module 4
-
-**What You've Accomplished:**
-You've explored media rights economics through hands-on discovery using 4 interactive widgets. You understand how leagues calculate media rights value, how streaming platform economics differ from traditional broadcasting, how rights holders compare linear vs. DTC strategies, and why fan engagement drives monetization across multiple channels. You've actively manipulated variables, experimented with scenarios, and discovered principles through exploration—not passive reading.
-
-**Key Takeaways:**
-- **Media rights valuation** depends on audience size, demographics, exclusivity, and platform reach—not just viewership numbers
-- **Streaming economics** fundamentally differ from linear broadcasting: subscription-driven, targeted engagement vs. advertising-driven, mass reach
-- **Rights holders face strategic trade-offs**: guaranteed fees from traditional broadcasters vs. potential upside from DTC platforms
-- **Fan engagement extends monetization** beyond passive viewing through betting integration, interactive features, and multi-platform distribution
-- The 4 widgets you used revealed that **no single "right" strategy exists**—success depends on league maturity, market position, and risk tolerance
-
-**Up Next: Module 4 - Streaming Wars Simulation**
-You've learned the frameworks. Now it's time to apply them strategically. In Module 4, you'll simulate platform strategy decisions as a streaming executive building a sports content empire. You'll make real-time trade-offs, respond to competitive moves, and see how your choices affect revenue, subscriber growth, and market position.
-
-Ready to build your streaming empire? Let's compete!
 
 ---
 

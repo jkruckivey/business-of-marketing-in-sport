@@ -1,14 +1,17 @@
-# The Canucks Challenge
-**Version:** 1.5.0 | **Last Updated:** 2026-01-07
+# The Predators Problem
+**Version:** 2.0.0 | **Last Updated:** 2026-01-07
 
-**Purpose:** Analyze real revenue-sharing decisions (supports WLO 1.4 - Analysis level)
+**Purpose:** Analyze real market feasibility and marketing strategy decisions (supports WLO 1.3, 1.4 - Analysis level)
 
-### Version 1.5.0 Changes
-- **ENHANCED:** Redesigned AI Roleplay (Gary Bettman) with collaborative character, hidden reference data, tolerance bands, and natural conversation flow
-- **NEW:** Added detailed NHL revenue sharing reference data for AI to guide questions without revealing answers
+### Version 2.0.0 Changes
+- **REPLACED:** Vancouver Canucks case with Nashville Predators case (9B09A006)
+- **NEW:** Focus shifts from revenue sharing to market feasibility and marketing strategy
+- **UPDATED:** AI Roleplay scenario now presents to potential ownership group
+- **UPDATED:** All exhibits updated to match Nashville Predators case content
 
-### Version 1.4.0 Changes
-- Added stock photo suggestion after Element 1 connecting introduction text to establish Vancouver market context
+### Previous Versions
+- v1.5.0: Enhanced AI Roleplay with collaborative character design (original Canucks version)
+- v1.4.0: Added stock photo suggestion for market context
 
 **Uplimit Structure:** Fifth module in Unit 1
 
@@ -16,13 +19,13 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Build Your Revenue Empire | Type directly | Sets context, connects narrative |
 | 2 | **Infobox (Callout)** ⬤ Required | Case overview and analysis questions | Type directly | Blue variant, frame the case |
-| 3 | **Text** ⬤ Required | Full case study narrative | **🔗 ATTACH CASE HERE:** Upload Canucks case PDF or type markdown | Main case text (8-10 pages) |
-| 4 | **Table** ⬤ Required | NHL revenue sharing model data | Type directly | Financial data for analysis |
-| 5 | **Details** ⬤ Required | Exhibit A: Canucks financial statements | **🔗 ATTACH EXHIBIT A:** Upload PDF with financial statements | Accordion - supporting data |
-| 6 | **Details** ⬤ Required | Exhibit B: NHL league-wide revenue data | **🔗 ATTACH EXHIBIT B:** Upload PDF with league data | Accordion - comparative data |
-| 7 | **Details** ⬤ Required | Exhibit C: Canadian market characteristics | **🔗 ATTACH EXHIBIT C:** Type or upload market context | Accordion - market context |
-| 8 | **Image** ○ Optional | Org chart or revenue flow diagram | Upload PNG + alt text | Visual aid if helpful |
-| 9 | **AI Chat Widget (Roleplay)** ◐ Recommended | NHL Board of Governors meeting | Configure in Uplimit | Defend Canucks position on revenue sharing |
+| 3 | **Text** ⬤ Required | Full case study narrative | **🔗 CASE:** Ivey 9B09A006 - Nashville Predators | Students purchase via Ivey Publishing |
+| 4 | **Table** ⬤ Required | Candidate cities comparison data | Type directly | Financial data for analysis |
+| 5 | **Details** ⬤ Required | Exhibit A: Nashville Predators income statement | Type directly from case Exhibit 14 | Accordion - financial baseline |
+| 6 | **Details** ⬤ Required | Exhibit B: Marketing effectiveness data | Type directly from case Exhibits 18-18.4 | Accordion - promotional analysis |
+| 7 | **Details** ⬤ Required | Exhibit C: City demographic comparison | Type directly from case Exhibits 15-16 | Accordion - market context |
+| 8 | **Image** ○ Optional | Revenue flow diagram or city comparison map | Upload PNG + alt text | Visual aid if helpful |
+| 9 | **AI Chat Widget (Roleplay)** ◐ Recommended | Pitch to potential ownership group | Configure in Uplimit | Present market recommendation |
 
 **Content Priority Badges:**
 - ⬤ **Required** - Core content essential for learning outcomes and assessments
@@ -37,16 +40,16 @@
 ```markdown
 You've now built your own theoretical revenue strategy through the Revenue Empire Builder simulation, making allocation decisions across all five streams while managing growth and risk. You've written a Board Strategy Defense memo justifying your choices.
 
-Now it's time to see how theory meets reality. The Vancouver Canucks face actual constraints that your simulation didn't include: NHL revenue sharing formulas, Canadian dollar currency challenges, a competitive Western Conference, and market-size limitations. In this module, you'll analyze real financial data, real strategic dilemmas, and real stakeholder tensions. This is where sports business gets messy—and interesting.
+Now it's time to see how theory meets reality. The Nashville Predators face actual constraints that your simulation didn't include: market size limitations, competition from other sports, arena economics, and the challenge of building a hockey fanbase in the American South. In this module, you'll analyze real financial data, real strategic dilemmas, and real stakeholder tensions. This is where sports business gets messy—and interesting.
 ```
 
-### Element 1A: Picture - Vancouver Market Context (NEW v1.4.0)
+### Element 1A: Picture - Nashville Market Context
 - **Type:** Stock Photo
 - **Placement:** After Element 1 connecting introduction text
-- **Suggested Image:** Vancouver cityscape with mountains and harbor, ideally with a sports arena visible, or Rogers Arena exterior during an event
-- **Alt Text:** "Vancouver cityscape with mountains in the background and downtown waterfront, representing the unique Canadian market where the Canucks operate—facing currency challenges, revenue sharing constraints, and competitive Western Conference pressures"
-- **Search Terms:** `Vancouver skyline sports`, `Rogers Arena Vancouver`, `Vancouver downtown harbor mountains`
-- **Purpose:** Establishes the Vancouver market context and Canadian geography that creates unique revenue challenges
+- **Suggested Image:** Nashville skyline with Bridgestone Arena (formerly Sommet Center), or downtown Nashville with sports/entertainment district
+- **Alt Text:** "Nashville skyline featuring Bridgestone Arena, home of the Nashville Predators—a non-traditional hockey market in the American South facing unique challenges in building a fanbase and achieving profitability"
+- **Search Terms:** `Nashville skyline arena`, `Bridgestone Arena Nashville`, `Nashville downtown entertainment district`
+- **Purpose:** Establishes the Nashville market context and Southern U.S. geography that creates unique revenue challenges
 - **Size:** Full width, max 800px
 
 ---
@@ -54,308 +57,299 @@ Now it's time to see how theory meets reality. The Vancouver Canucks face actual
 ### Element 2: Infobox Content
 
 ```
-Title: ▸ Case Study: Vancouver Canucks - Competing on Revenue Sharing
+Title: ▸ Case Study: Nashville Predators - Marketing Strategy for an NHL Franchise
 
 Context:
-The Vancouver Canucks operate in a unique market: large Canadian city, strong fan
-base, but challenging economics due to NHL's revenue sharing formula and currency
-exchange rates.
+It's summer 2008. The Nashville Predators management team must consider the future
+of the franchise. After ownership instability and potential relocation threats from
+Canadian billionaire Jim Balsillie, management needs to prepare a comprehensive
+strategy—whether staying in Nashville or recommending one of five candidate cities.
 
 Key Questions for Analysis:
-1. How does the NHL's revenue sharing model impact the Canucks' strategy?
-2. What revenue streams can the Canucks control vs. those determined by the league?
-3. Should the Canucks advocate for changes to revenue sharing? What would they propose?
-4. How do Canadian teams' economics differ from U.S. teams?
+1. What criteria should drive the location decision? (Market size, corporate support, hockey culture, arena economics)
+2. How do revenue projections differ across the six options? (Nashville, Hamilton, Winnipeg, Kansas City, Las Vegas, Houston)
+3. Which marketing strategies are most effective for each market type?
+4. How should the team balance financial returns with on-ice success?
 
-This case directly addresses WLO 1.4: Analyze different revenue sharing models.
+Case: Ivey Publishing 9B09A006 - Nashville Predators: Marketing Strategy for an NHL Franchise
 
-Preparation: Read the full case and all exhibits before the executive case discussion.
+This case directly addresses WLO 1.3 (evaluate growth potential) and WLO 1.4 (analyze revenue models).
+
+Preparation: Read the full case and all exhibits before the ownership pitch roleplay.
 ```
 
 ---
 
-### Element 3: Text Content - Case Study Template
+### Element 3: Case Study Access
 **Document Structure:**
+
 ```
-# NHL Vancouver Canucks: Competing on Revenue Sharing
+CASE ACCESS INSTRUCTIONS:
 
-## Case Background
-[2-3 pages: Team history, market context, recent performance]
+📚 Required Reading: Nashville Predators: Marketing Strategy for an NHL Franchise
+Publisher: Ivey Publishing (Richard Ivey School of Business)
+Case Number: 9B09A006
+Length: 30 pages including exhibits
 
-## NHL Revenue Sharing Mechanism
-[2-3 pages: How the NHL's model works, who pays in, who receives]
+HOW TO ACCESS:
+1. Visit Ivey Publishing: https://www.iveypublishing.ca/
+2. Search for case number: 9B09A006
+3. Purchase student copy (~$4-8 depending on format)
+4. Download PDF for offline reading
 
-## The Canucks' Dilemma
-[2-3 pages: Specific challenges - Canadian dollar, market size, competitive balance]
+⚠️ IMPORTANT: This case contains extensive exhibits (20 pages of data) that are
+essential for the ownership pitch roleplay. Budget 60-90 minutes for careful reading.
 
-## Strategic Options
-[1-2 pages: Potential approaches the Canucks could take]
+CASE OVERVIEW:
+The Nashville Predators entered the NHL in 1998 as part of the league's expansion
+into non-traditional hockey markets. Despite strong on-ice performance (playoff
+appearances every year since 2003), the team struggled financially—ranking 27th
+in attendance (14,910/game) and 24th in gate revenue despite competitive success.
 
-## Questions for Discussion
-[1 page: Structured questions for analysis]
+After multiple ownership changes and a failed sale to Jim Balsillie (who planned
+to move the team to Hamilton, Ontario), management must prepare strategic options
+for any potential new owner.
 
-Total: 8-10 pages
+YOUR TASK:
+Analyze whether the Predators should stay in Nashville or relocate to one of five
+candidate cities. Your recommendation must include:
+- Location decision with supporting rationale
+- Revenue projections for your recommended city
+- Marketing strategy tailored to that market
+- Implementation considerations
 ```
-
-**Import Settings:**
-- Preserve all heading hierarchy
-- Include any charts/graphs from original (or extract as separate images)
-- Maintain case formatting (may include indented quotes, bullet lists)
 
 ---
 
-### Element 4: Table Content - NHL Revenue Sharing Model
+### Element 4: Table Content - Candidate Cities Comparison
 
-| **Revenue Type** | **% Shared** | **Distribution Method** | **Canucks Impact** |
-|-----------------|-------------|----------------------|------------------|
-| National Media | 50% | Equal distribution | ✅ Benefits (small market) |
-| Local Media | 0% | Team keeps 100% | ▲ Limited (smaller market) |
-| Licensing/Merch | 50% | Equal distribution | ✅ Benefits |
-| Gate Receipts | ~7% | Visiting team share | Neutral |
-| Sponsorship | 0% | Team keeps 100% | ▲ Competitive pressure |
+| **City** | **Population** | **Arena Capacity** | **Lease Cost** | **Corporate Base** | **Hockey Culture** |
+|----------|---------------|-------------------|---------------|-------------------|-------------------|
+| Nashville | 1.5M | 17,133 | $1.5M/yr (subsidized) | Limited | Developing |
+| Hamilton | 692K (+7M within 1hr) | 17,500 → 21,000 | $7.5M/yr → new arena | Strong (Toronto spillover) | Passionate |
+| Winnipeg | 641K | 15,015 | $8M/yr | Moderate | Historic (former Jets) |
+| Kansas City | 1.95M | 18,500 | Free (5 yrs) → $8.5M | Strong (Fortune 500s) | Minimal |
+| Las Vegas | 1.7M | 14,000 → 19,300 | -$5M (paid by casino) | Gaming industry | None |
+| Houston | 5.6M | 17,800 | $3.5M/yr | Excellent (energy sector) | AHL only |
 
-**Table Caption:** "NHL Revenue Sharing Formula - Impact on Vancouver Canucks (Simplified). Source: NHL CBA 2020-2026"
+**Table Caption:** "Candidate Cities for Nashville Predators Relocation - Key Market Characteristics (Source: Case Exhibits 15-16)"
 
 ---
 
 ### Element 5: Details - Exhibit A Content
 ```
-Title: Exhibit A: Vancouver Canucks Financial Statements (Summary)
+Title: Exhibit A: Nashville Predators Estimated Income Statement (2007/08)
 
 [Expand for financial data]
 
-## Revenue Summary (Last 3 Seasons)
-[Table with revenue breakdown by stream, year-over-year]
+## Revenue Summary
+| Revenue Source | Amount |
+|---------------|--------|
+| Tickets | $33,500,000 |
+| Broadcast Revenue | $4,000,000 |
+| Concessions (60% of total) | $4,000,000 |
+| Arena Revenue | $7,000,000 |
+| Corporate Sponsorship | $5,000,000 |
+| Other (merchandise, misc.) | $4,500,000 |
+| **TOTAL REVENUE** | **$58,000,000** |
 
-## Key Financial Metrics
-• Total Revenue: $XXX million
-• Operating Income: $XX million
-• Revenue Sharing Received/(Paid): $X million
-• Currency Impact: ($X million) - Canadian dollar exchange
+## Expenses Summary
+| Expense Category | Amount |
+|-----------------|--------|
+| Player Salary | $48,300,000 |
+| Arena Lease | $1,500,000 |
+| Broadcast Cost | $1,000,000 |
+| Customer Service | $0 |
+| Other (travel, operations, overhead) | $12,500,000 |
+| **TOTAL EXPENSES** | **$63,300,000** |
 
-## Notes:
-[2-3 explanatory notes about the numbers]
+## Bottom Line
+**EBITDA: -$5,300,000**
+
+## Key Observations:
+- Ticket revenue accounts for 58% of total revenue (above NHL average of 60%)
+- Corporate ticket purchases: only 30% (vs. NHL average of 60%)
+- No customer service department (typical NHL cost: ~$500K/year)
+- Luxury suites: only 50% sold (35 of 70)
+- Average ticket price: $45.75 (below NHL average of $48.72)
+
+Source: Case Exhibit 14 (Case writer's estimate)
 ```
 
 ---
 
 ### Element 6: Details - Exhibit B Content
 ```
-Title: Exhibit B: NHL League-Wide Revenue Data
+Title: Exhibit B: Marketing Effectiveness by City (Case Exhibits 18-18.4)
 
-[Expand for comparative data]
+[Expand for promotional analysis]
 
-## League Revenue Distribution
-[Table showing highest to lowest revenue teams]
+## TV/Radio Advertising
+Cost to reach maximum ticket sales (15,000+ per game):
+- Nashville: $3,000,000 → 15,000 tickets (cost/ticket: $750)
+- Hamilton: $1,500,000 → 21,000 tickets (cost/ticket: $375)
+- Winnipeg: $1,500,000 → 15,000 tickets (cost/ticket: $1,333)
+- Kansas City: $3,500,000 → 15,000 tickets (cost/ticket: $778)
+- Houston: $2,500,000 → 16,500 tickets (cost/ticket: $545)
+- Las Vegas: $2,500,000 → 12,000 tickets (cost/ticket: $625)
 
-## Revenue Sharing Flows
-• Total Pool: $XXX million
-• Number of Recipient Teams: X
-• Number of Contributor Teams: X
-• Average Received: $X million
-• Average Paid: $X million
+## Player Appearances
+Most effective markets:
+- Las Vegas: $400K spend → +5,000 tickets (cost/ticket: $80)
+- Kansas City: $500K spend → +6,000 tickets (cost/ticket: $83)
+- Nashville: $400K spend → +4,000 tickets (cost/ticket: $100)
 
-## Canadian Teams Comparison
-[Table comparing all 7 Canadian NHL teams]
+## Corporate Mail-outs
+Most effective markets:
+- Houston: $300K spend → +6,000 tickets (cost/ticket: $67)
+- Las Vegas: $400K spend → +7,000 tickets (cost/ticket: $71)
+- Hamilton: $300K spend → +2,500 tickets (cost/ticket: $120)
+
+## Key Insight:
+Marketing efficiency varies dramatically by market. Traditional hockey markets
+(Hamilton, Winnipeg) require less promotional spend to fill seats. Non-traditional
+markets require more creative, higher-cost strategies—but may have higher ceilings.
+
+Source: Case Exhibits 18, 18.1, 18.2, 18.3, 18.4
 ```
 
 ---
 
 ### Element 7: Details - Exhibit C Content
 ```
-Title: Exhibit C: Canadian Market Characteristics
+Title: Exhibit C: City Demographics and Market Context
 
-[Expand for market context]
+[Expand for market comparison]
 
-## Vancouver Market Profile
-• Population (Metro): X million
-• Corporate Headquarters: X (Top 500 companies)
-• Median Household Income: $XX,XXX
-• Sports Competition: MLS (Whitecaps), CFL (BC Lions)
+## Demographic Comparison
+| Metric | Nashville | Hamilton | Winnipeg | Kansas City | Las Vegas | Houston |
+|--------|-----------|----------|----------|-------------|-----------|---------|
+| Median Family Income | $49,804 | C$66,810 | C$62,955 | $46,012 | $58,465 | $40,443 |
+| Population Growth | 0.53% | 4.3% | 2.2% | 1.3% | 11.5% | 10% |
+| Bachelor Degree % | 15.9% | 18.7% | 23.7% | 12.8% | 10.8% | 12.4% |
+| Male:Female Ratio | 93.8:100 | 98:100 | 93.4:100 | 93.3:100 | 103.3:100 | 97.8:100 |
 
-## Canadian Dollar Impact
-[Chart or explanation of USD/CAD exchange rate impact on revenue]
+## Estimated Corporate Sponsorship (2008/09)
+- Hamilton: $10,000,000
+- Houston: $9,000,000
+- Las Vegas: $8,500,000
+- Winnipeg: $7,500,000
+- Kansas City: $5,000,000
+- Nashville (current): $5,000,000
 
-## Broadcasting Landscape
-[Information about Canadian broadcast rights, Rogers Sportsnet deal]
+## Broadcast Revenue Potential
+- Hamilton: $7,500,000 (Canadian market premium)
+- Houston: $5,000,000
+- Winnipeg: $5,000,000 (Canadian market premium)
+- Kansas City: $2,500,000
+- Las Vegas: $1,000,000
+- Nashville (current): $500,000 local + $4M national share
+
+## Competition for Entertainment Dollar
+- Nashville: NFL (Titans), Minor League Baseball
+- Hamilton: NHL (Toronto, Buffalo territorial conflict), CFL, AHL
+- Winnipeg: CFL (Blue Bombers), AHL
+- Kansas City: NFL (Chiefs), MLB (Royals), MLS
+- Las Vegas: ECHL hockey, Boxing/UFC, NASCAR
+- Houston: NFL (Texans), MLB (Astros), NBA (Rockets), MLS, AHL
+
+Source: Case Exhibits 15, 16, 19
 ```
 
 ---
 
 ### Element 8: Image Specification (if used)
-- **File:** `nhl-revenue-flow-diagram.png`
-- **Alt Text:** "Diagram showing NHL revenue sharing flow: National media and licensing revenue flows to central league office, 50% redistributed equally to all 32 teams. Local revenue (tickets, sponsorship, local media) stays with individual teams. Arrows indicate direction of money flow."
-- **Caption:** "NHL Revenue Sharing Model - Centralized vs. Local Revenue Streams"
+- **File:** `nhl-relocation-cities-map.png`
+- **Alt Text:** "Map showing NHL teams across the United States and Canada, with the six candidate cities marked: Nashville (current location), Hamilton (Ontario), Winnipeg (Manitoba), Kansas City (Missouri), Las Vegas (Nevada), and Houston (Texas). The map illustrates the geographic spread of potential relocation options."
+- **Caption:** "NHL Franchise Locations and Potential Relocation Cities for Nashville Predators (Source: Case Exhibit 1)"
 - **Size:** Optimized for web, max 800px width
 
-### Element 9: AI Roleplay - NHL Board of Governors Meeting
+### Element 9: AI Roleplay - Ownership Pitch
 
-**🎮 Widget Purpose:** Authentic roleplay where students defend Vancouver Canucks' position on revenue sharing reform, demonstrating understanding of revenue sharing mechanics and stakeholder analysis.
+**🎮 Widget Purpose:** Authentic roleplay where students present their market feasibility analysis and recommendation to a potential ownership group, demonstrating understanding of revenue projections, marketing strategy, and market analysis.
 
 **Widget Status:** ⭕ Needs configuration in Uplimit platform
 
-**Element Type:** AI Roleplay
+**Element Type:** AI Roleplay (4-tab configuration)
 
 ---
 
 ## UPLIMIT CONFIGURATION
 
-**Step 1: Select "AI Roleplay Scenario" element in Uplimit builder**
+### Tab 1: Learning Objective
 
-**Step 2: Set Learning Objective**
+**Name:** Predators Ownership Pitch: Market Feasibility Analysis
 
-Choose: **"Add objective myself"** (to test specific skills and ensure learning goals are achieved)
+**Learning Objective:**
+Students will analyze market feasibility for an NHL franchise by evaluating six potential cities, developing revenue projections, and presenting a strategic recommendation that balances financial returns with market development potential. This supports WLO 1.3 (evaluate growth potential) and WLO 1.4 (analyze revenue models) at the Analysis level.
 
-Copy this into the **Objective** field:
-
-```
-Students will analyze the NHL's revenue sharing model and defend the Vancouver Canucks' position by applying case data, acknowledging stakeholder tensions, and proposing concrete reforms that balance team interests with league-wide competitive balance. (WLO 1.4 - Analysis level)
-```
-
-**Scenario Setup:** Debate/Negotiation
+**Scenario Setup:** Consulting Presentation
 
 ---
 
-**Step 3: Create Scenario**
+### Tab 2: Scenario
 
-Choose: **"Create your own scenario"**
+**Context:**
+It's summer 2008. The Nashville Predators are seeking new ownership after the previous owner filed for bankruptcy. A potential ownership group—led by Margaret Chen, a successful private equity investor with experience in entertainment and hospitality—is conducting due diligence.
 
-Copy this into the **Scenario Context** field:
+You are a sports business consultant who has been hired to analyze the franchise's strategic options. Ms. Chen has asked you to present your findings: Should the new ownership keep the team in Nashville, or pursue relocation to one of five candidate cities (Hamilton, Winnipeg, Kansas City, Las Vegas, or Houston)?
 
-```
-The NHL is conducting a Board of Governors meeting where revenue sharing reform is on the agenda. The league's current revenue sharing model is under review, and Commissioner Gary Bettman is hearing from team representatives across 32 franchises.
+This is a collaborative conversation—Ms. Chen genuinely wants to understand your analysis and reasoning. She's smart but new to sports business, so she'll ask clarifying questions about your methodology.
 
-You are Jim Rutherford, President of Hockey Operations for the Vancouver Canucks. You've been preparing your analysis of how revenue sharing impacts the Canucks and have developed some ideas for reform. Commissioner Bettman has asked you to present your perspective.
+**Role of AI (Margaret Chen):** Margaret Chen is a successful private equity investor with experience in entertainment and hospitality investments. She's smart, analytical, and asks probing questions. She's new to sports business and genuinely wants to understand how NHL economics work before committing $200-300 million.
 
-This is a collaborative conversation - the Commissioner genuinely wants to understand the Canucks' position and is curious about your analysis. He hasn't done the detailed calculations himself; that's why he's asking you.
-```
-
-Copy this into the **AI Role** field:
-
-```
-CHARACTER: Gary Bettman, NHL Commissioner
-- Warm but direct, genuinely curious about the analysis
-- Appreciates the work Jim has put into understanding the numbers
-- You assigned this presentation - you have NOT done the detailed calculations yourself
-- You're interested in hearing a well-reasoned perspective from a mid-market Canadian team
-
-YOUR ROLE: You're a collaborative commissioner who wants to understand the Canucks' position so you can consider it fairly alongside other teams' perspectives. You haven't crunched the numbers yourself - that's why you asked Jim to present. Ask questions out of genuine curiosity, not to test or trip him up.
-
----
-CASE CONTEXT:
-The Vancouver Canucks operate in a unique position: large Canadian city with passionate fans, but facing economic challenges due to NHL revenue sharing formulas and USD/CAD currency exchange rates.
-
-THE CURRENT SYSTEM:
-- National media revenue: 50% shared equally among all 32 teams
-- Licensing/merchandising: 50% shared equally
-- Local media, sponsorship, tickets: Teams keep 100%
-- Gate receipts: ~7% visiting team share
-
-THE CANUCKS' SITUATION:
-- Mid-market Canadian team (not Toronto/Montreal, not small-market)
-- Benefits from national media sharing (smaller market = net receiver)
-- Hurt by currency exchange (earn CAD, compete for talent in USD)
-- Limited local corporate base compared to U.S. major markets
-- Competitive Western Conference increases pressure to spend
-
-STAKEHOLDER TENSIONS:
-- Toronto/Montreal: "We subsidize weaker franchises"
-- Arizona/Winnipeg/Carolina: "Sharing keeps us competitive"
-- Canadian teams: "Currency headwinds create unique disadvantage"
-- The Canucks are caught in the middle of all three perspectives
-
----
-CONVERSATION FLOW:
-
-1. OPENER: "Jim, thanks for putting this together. I know you've been digging into the numbers. Walk me through the Canucks' revenue picture - how does our current sharing model impact you specifically?"
-   - Let them present their understanding
-   - Follow up: "Interesting - help me understand how you got to that analysis?"
-
-2. PROBE STAKEHOLDER DYNAMICS: "So Toronto tells me they're subsidizing weaker franchises. Arizona says sharing is the only thing keeping them competitive. Where do the Canucks fit in all this?"
-   - Let them navigate the tension
-   - If they're one-sided: "I hear you, but how would you respond to Toronto's argument?"
-   - If they acknowledge complexity: "That's a helpful way to think about it. Tell me more..."
-
-3. CANADIAN DOLLAR ISSUE: "Here's something I keep thinking about - seven Canadian teams all face currency headwinds. Should we account for that in the formula somehow?"
-   - Let them make the case (or not)
-   - Probe: "How would we do that without alienating the U.S. teams?"
-   - If they propose something: "Walk me through how that would work mechanically..."
-
-4. CONCRETE PROPOSALS: "If you could change one thing about how we share revenue, what would it be? And help me understand why it's good for the league, not just for Vancouver."
-   - Listen for specificity vs. vagueness
-   - If vague: "Can you be more specific? What exactly would you propose?"
-   - If specific: "That's interesting. What would Toronto say about that?"
-
-5. CLOSING: "Alright Jim, you've done the analysis. Bottom line - is the current system working for the Canucks? And what's your recommendation?"
-   - Accept ANY well-reasoned recommendation
-   - Ask: "What would make you change your mind about that?"
-
----
-RESPONSE STYLE:
-- Be warm and conversational - you're colleagues working through this together
-- Use phrases like: "That's interesting...", "Help me understand...", "I'm curious about..."
-- Acknowledge their work: "Good point", "That's a helpful way to frame it"
-- If they seem stuck: "Take your time - what's your gut telling you?"
-- Be encouraging but still probe deeper
-
-ENDING THE CONVERSATION:
-- Let the conversation continue as long as the student is engaged
-- When they've made a clear recommendation and defended it, wrap up warmly
-- Closing: "This is really helpful, Jim. I appreciate you being so thorough with the analysis. I'll make sure the Board hears your perspective. Good work."
-```
-
-Copy this into the **Student Role** field:
-
-```
-You are Jim Rutherford, President of Hockey Operations for the Vancouver Canucks, presenting to the NHL Board of Governors on revenue sharing reform. Use case data to support your position and acknowledge competing stakeholder interests.
-```
-
-**Note:** Keep this field minimal since it displays to students without formatting. The detailed instructions will appear in the "Student Instructions" section (Step 6) with proper markdown formatting.
+**Role of Student:** You are a sports business consultant presenting your market feasibility analysis for the Nashville Predators to a potential ownership group. Use case data to support your recommendation for which city the franchise should call home.
 
 ---
 
-**Step 4: Hidden Context (AI-only information)**
+### Tab 3: Hidden Context
 
-Copy this into the **Hidden Context** field:
+**Hidden Context (AI knows, student doesn't see):**
 
 ```
 CHARACTER CONTEXT:
-You are Gary Bettman conducting a Board of Governors presentation. The student has read the Vancouver Canucks case (Exhibits A, B, C) and must now present their analysis of revenue sharing reform.
+You are Margaret Chen, a PE investor considering purchasing the Nashville Predators. The student has read the full Ivey case (9B09A006) with 30 pages of exhibits and must now present their strategic recommendation.
 
 YOUR RELATIONSHIP TO THE STUDENT:
-- You're the Commissioner, but this is collaborative - you genuinely want to understand their perspective
-- You haven't done the calculations yourself - that's why you asked them to
+- You're the potential buyer, but this is collaborative—you genuinely want to understand their analysis
+- You haven't done the calculations yourself—that's why you hired them
 - You're curious, not testing or trying to trip them up
-- You want to be able to represent their view fairly to the full Board
+- You need confidence in their recommendation before writing a $200-300M check
 
 ---
 REFERENCE DATA (Use to guide your questions - NEVER reveal these numbers):
 
-NHL REVENUE SHARING MODEL:
-- National media: 50% shared equally (~$50-60M per team annually)
-- Licensing/merch: 50% shared equally
-- Local revenue (media, tickets, sponsorship): 0% shared - teams keep 100%
-- Gate receipts: ~7% visiting team share
+CURRENT NASHVILLE SITUATION:
+- Total revenue: ~$58M
+- Total expenses: ~$63.3M
+- EBITDA: -$5.3M
+- Attendance: 14,910/game (87% of 17,133 capacity)
+- Corporate tickets: 30% (vs. 60% NHL average)
+- Luxury suites sold: 50% (35 of 70)
 
-CANUCKS APPROXIMATE POSITION:
-- Total revenue: ~$180-200M annually
-- Revenue sharing received: ~$15-25M (net receiver, not contributor)
-- Currency impact: ~$10-15M annual headwind (earning CAD, paying USD for talent)
-- Local sponsorship: ~$40-50M (below U.S. major markets)
-- Franchise value: ~$1.1-1.3B (mid-pack in NHL)
+PROJECTED EBITDA BY CITY (Teaching Note estimates):
+- Nashville (improved): ~$6.7M positive with better marketing
+- Hamilton: ~$30M (strongest, but $100M territorial fee + $200M new arena)
+- Houston: ~$30M (large market, excellent corporate base)
+- Kansas City: ~$10M (free rent helps, but weak hockey culture)
+- Las Vegas: ~$9M (gaming revenue, but untested market)
+- Winnipeg: ~$2.5M (passionate fans, but smallest market)
 
-LEAGUE-WIDE CONTEXT:
-- Total NHL revenue: ~$5.5-6B annually
-- Revenue sharing pool: ~$200-250M total
-- Net contributors: ~10-12 teams (Toronto, Montreal, NY Rangers, etc.)
-- Net recipients: ~20 teams (including all Canadian teams except Toronto/Montreal)
+TICKET REVENUE POTENTIAL (per season):
+- Hamilton: ~$68M (21,000 capacity, 94% fill, premium pricing)
+- Houston: ~$78M (17,800 capacity, 94% fill, corporate support)
+- Kansas City: ~$66M (18,500 capacity, 94% fill)
+- Las Vegas: ~$55M (19,300 capacity new arena, 94% fill)
+- Winnipeg: ~$51M (15,015 capacity, 94% fill)
+- Nashville (current): ~$42M
 
-CANADIAN TEAMS COMPARISON:
-- Toronto Maple Leafs: Net contributor (~$30-40M paid in)
-- Montreal Canadiens: Net contributor (~$15-20M paid in)
-- Vancouver Canucks: Net receiver (~$15-25M received)
-- Winnipeg Jets: Net receiver (~$20-30M received)
-- Currency impact affects ALL Canadian teams equally
+MARKETING COST EFFICIENCY:
+- Hamilton: $375/incremental ticket (most efficient)
+- Houston: $545/incremental ticket
+- Las Vegas: $625/incremental ticket
+- Nashville: $750/incremental ticket
+- Kansas City: $778/incremental ticket
+- Winnipeg: $1,333/incremental ticket (least efficient—already saturated)
 
 ---
 CRITICAL INSTRUCTION - DO NOT REVEAL THESE NUMBERS:
@@ -366,43 +360,39 @@ You have this data to help you ask smart follow-up questions, but you must NEVER
 - Provide the "answer" if they seem stuck
 
 HOW TO USE THE REFERENCE DATA:
-You've seen the case materials, so you have a general sense of the numbers - but you haven't done the calculations yourself. Use this knowledge to ask good follow-up questions.
+You've reviewed the case materials, so you have a general sense of the numbers—but you haven't built the financial model yourself. Use this knowledge to ask good follow-up questions.
 
 If their number is CLOSE (within ~10%):
-- Accept it naturally and ask: "And what does that mean for the Canucks' position?"
-- Or: "Interesting - how does that compare to what Toronto sees?"
+- Accept it naturally and ask: "And what does that mean for profitability?"
+- Or: "Interesting—how does that compare to the other options?"
 
 If their number seems OFF (more than ~20% different):
 - Don't say it's wrong, but show curiosity: "Help me understand how you got to that figure"
-- Or: "Walk me through that calculation - I want to make sure I understand"
-- Or: "That's a bit different than what I was expecting from the case - can you double-check that?"
+- Or: "Walk me through that calculation—I want to make sure I can defend it to my partners"
 
 If their number is WAY OFF (wrong order of magnitude):
-- Gently probe: "Hmm, that doesn't quite match my mental math from the exhibits. Can we walk through it together?"
-- Or: "Before I take this to the full Board, let's make sure we've got the right figures. Where did that number come from?"
+- Gently probe: "Hmm, that doesn't quite match what I saw in the exhibits. Can we walk through it?"
+- Or: "Before I take this to my partners, let's double-check those numbers. Where did that come from?"
 
 ---
 WHAT STRONG PERFORMANCE LOOKS LIKE:
-- ✅ Uses case data: "Exhibit B shows the Canucks received approximately $X million..."
-- ✅ Acknowledges trade-offs: "We benefit from national media sharing, but local revenue disparities hurt us..."
-- ✅ Stakeholder awareness: "I recognize Toronto's perspective, but here's why our proposal benefits competitive balance..."
-- ✅ Concrete proposals: "Add a currency adjustment factor of 5-7% for Canadian teams based on 5-year average exchange rates"
-- ✅ Strategic framing: Links Canucks' interests to league-wide benefits
+- ✅ Clear recommendation: States a specific city with confidence
+- ✅ Uses case data: "Exhibit 14 shows Nashville is losing $5.3M annually..."
+- ✅ Revenue projections: Provides specific numbers for ticket revenue, sponsorship, broadcast
+- ✅ Marketing strategy: References Exhibit 18 data on promotional effectiveness
+- ✅ Risk awareness: Acknowledges downsides of their recommendation
+- ✅ Trade-off analysis: Explains why they rejected other options
 
 WHAT NEEDS PROBING:
-- ❌ Vague claims without data: Respond with "Can you be more specific?"
-- ❌ One-sided arguments ignoring other teams: Respond with "How would Toronto respond to that?"
-- ❌ No concrete proposals: Respond with "What would you actually change?"
-- ❌ Self-serving framing: Respond with "Why is that good for the league, not just Vancouver?"
+- ❌ Vague recommendations: Respond with "Can you be more specific? Which city exactly?"
+- ❌ No numbers: Respond with "What's the revenue projection? I need actual figures."
+- ❌ Ignoring risks: Respond with "What could go wrong with this plan?"
+- ❌ One-dimensional analysis: Respond with "Why not [alternative city]? Walk me through that trade-off."
 ```
 
 ---
 
-**Step 5: Configure Feedback Rubric**
-
-Uplimit will auto-generate a rubric based on your scenario. Click **"Auto-regenerate"** if needed, then customize:
-
-**Add/Edit these criteria:**
+### Tab 4: Criteria
 
 **Uplimit Configuration:**
 - ✅ Enable automated AI grading
@@ -411,144 +401,129 @@ Uplimit will auto-generate a rubric based on your scenario. Click **"Auto-regene
 
 ---
 
-**CRITERION 1: Revenue Sharing Mechanics**
+**CRITERION 1: Market Analysis & Recommendation**
 
 **Points:** 10
 
 **Description:**
-Accurately explains how NHL revenue sharing works and applies case data to discuss the Canucks' position.
+Provides a clear city recommendation supported by systematic analysis of market characteristics, competition, and growth potential.
 
 **Does not meet expectations:**
-The learner's explanation of revenue sharing mechanics is minimal or incorrect, with no clear understanding of which streams are shared or the Canucks' net position.
+The learner provides no clear recommendation or recommends a city without meaningful analysis of market factors.
 
 **Partially meets expectations:**
-The learner demonstrates basic understanding of revenue sharing but may confuse which streams are shared or provide limited analysis of the Canucks' specific situation.
+The learner states a recommendation but provides limited market analysis, missing key factors like corporate base, arena economics, or competitive landscape.
 
 **Fully meets expectations:**
-The learner accurately explains NHL revenue sharing mechanics, clearly identifies shared streams (50% national media, licensing) versus local streams (tickets, sponsorship, local broadcast), and uses case data from Exhibits A and B to articulate the Canucks' net position.
+The learner provides a clear, confident recommendation supported by systematic analysis of population, corporate base, arena economics, hockey culture, and competitive factors. Explains why other options were rejected.
 
 ---
 
-**CRITERION 2: Use of Case Data**
+**CRITERION 2: Revenue Projections**
 
 **Points:** 10
 
 **Description:**
-References specific exhibits with concrete data points to support arguments.
+Develops specific revenue projections using case data for ticket sales, sponsorship, broadcast, and concessions.
 
 **Does not meet expectations:**
-The learner provides minimal or no reference to case data, relying on opinions or generalizations not supported by exhibits.
+The learner provides no revenue projections or only vague estimates without case data support.
 
 **Partially meets expectations:**
-The learner mentions case exhibits but with limited specificity or data citations, showing weak connections between available data and arguments.
+The learner provides some revenue projections but may be missing key streams or not clearly connecting numbers to case exhibits.
 
 **Fully meets expectations:**
-The learner references specific exhibits by name (A, B, C) with concrete data points, cites dollar figures and percentages, and uses data strategically to support arguments.
+The learner provides specific revenue projections across multiple streams (tickets, sponsorship, broadcast, concessions), references case exhibits by number, and shows how projections were calculated.
 
 ---
 
-**CRITERION 3: Stakeholder Awareness**
+**CRITERION 3: Marketing Strategy**
 
 **Points:** 5
 
 **Description:**
-Acknowledges conflicting interests among different teams and demonstrates empathy for multiple perspectives.
+Proposes a marketing approach tailored to the recommended city, referencing promotional effectiveness data.
 
 **Does not meet expectations:**
-The learner shows no stakeholder analysis, presenting a one-dimensional perspective focused exclusively on the Canucks without acknowledging league-wide dynamics.
+The learner provides no marketing strategy or proposes generic approaches without market-specific tailoring.
 
 **Partially meets expectations:**
-The learner recognizes some stakeholder differences but may oversimplify conflicts or focus primarily on the Canucks' perspective.
+The learner proposes marketing approaches but with limited connection to case data on promotional effectiveness.
 
 **Fully meets expectations:**
-The learner acknowledges multiple stakeholder perspectives explicitly (small-market needs, large-market frustrations, Canadian currency challenges) and shows empathy while defending the Canucks' position.
+The learner proposes specific marketing strategies (TV/radio, player appearances, corporate outreach, online) with cost-per-ticket efficiency analysis from case Exhibits 18-18.4. Strategy is tailored to recommended city's characteristics.
 
 ---
 
-**CRITERION 4: Concrete Proposals**
+**CRITERION 4: Risk Assessment**
 
 **Points:** 5
 
 **Description:**
-Offers specific, actionable recommendations that balance team interests with league-wide benefits.
+Identifies key risks of the recommendation and proposes mitigation strategies.
 
 **Does not meet expectations:**
-The learner provides no concrete proposals, or proposals are unrealistic and indefensible.
+The learner ignores risks entirely or provides only superficial risk acknowledgment.
 
 **Partially meets expectations:**
-The learner provides recommendations with some specificity but they may be primarily self-serving or lack strategic framing as league-wide benefits.
+The learner identifies some risks but without depth or mitigation strategies.
 
 **Fully meets expectations:**
-The learner offers specific, actionable recommendations (e.g., "Add 5-7% currency adjustment for Canadian teams") with clear rationale that frames Canucks' interests as aligned with league-wide competitive balance.
+The learner identifies 2-3 specific risks (market development, competition, arena economics, territorial fees) with thoughtful mitigation strategies. Shows awareness of what could go wrong.
 
 ---
 
-**Step 6: Student Instructions**
+### Student Instructions
 
-Copy this into the **Instructions for Students** field:
+Copy this into the **Instructions for Students** field in the Uplimit builder:
 
 ```markdown
 ### Your Role
-You are **Jim Rutherford, President of Hockey Operations** for the Vancouver Canucks. You're presenting to the NHL Board of Governors on revenue sharing reform.
+You are a **sports business consultant** presenting your market feasibility analysis to Margaret Chen, a private equity investor considering purchasing the Nashville Predators.
 
 ### The Scenario
-Commissioner Gary Bettman is moderating a Board meeting where revenue sharing reform is on the agenda. The league is divided:
-- **Small-market teams** (Arizona, Winnipeg, Carolina) want increased sharing
-- **Large-market teams** (Toronto, Montreal, NY Rangers) want reduced sharing
-- **Canadian teams** face unique currency challenges (USD/CAD exchange rates)
+Ms. Chen is conducting due diligence on a potential $200-300 million investment. She's asked you to analyze whether the franchise should:
+- **Stay in Nashville** and implement a turnaround strategy
+- **Relocate to Hamilton** (strong hockey culture, but territorial fees)
+- **Relocate to Winnipeg** (historic hockey city, passionate fans)
+- **Relocate to Kansas City** (large market, new arena with free rent)
+- **Relocate to Las Vegas** (entertainment capital, gaming money)
+- **Relocate to Houston** (largest market, excellent corporate base)
 
-You must defend the Canucks' position using case data from Exhibits A, B, and C.
+You must present a clear recommendation with supporting analysis.
 
 ### What to Have Ready
-- **Case knowledge:** Exhibits A (Canucks financials), B (league-wide data), C (Canadian market context)
-- **Strategic thinking:** How to frame Canucks' interests as league-wide benefits
-- **Stakeholder awareness:** Acknowledge Toronto's and Arizona's perspectives
-- **Concrete proposals:** Specific, actionable reforms (not vague requests)
+- **Case knowledge:** All 20 exhibits, especially Exhibits 14-19
+- **Revenue projections:** Ticket revenue, sponsorship, broadcast, concessions for your recommended city
+- **Marketing strategy:** Which promotional approaches work best (Exhibits 18-18.4)
+- **Risk assessment:** What could go wrong and how to mitigate
 
 ### Your Goal
-Present a data-driven argument that:
-1. Explains how revenue sharing impacts the Canucks specifically
-2. Acknowledges competing stakeholder interests
-3. Proposes concrete reforms that balance team interests with league-wide competitive balance
-4. Uses case exhibits to support your position
+Present a data-driven recommendation that:
+1. States a clear city recommendation with confidence
+2. Provides specific revenue projections with case data support
+3. Proposes a tailored marketing strategy with cost-efficiency analysis
+4. Acknowledges risks and proposes mitigation strategies
+5. Explains why you rejected alternative options
 
 ### Conversation Structure
-- Commissioner Bettman will ask **5 questions** testing your understanding
-- Answer each question thoughtfully, using case data to support your arguments
-- Focus on strategic framing: How do your proposals benefit the entire league?
+- Ms. Chen will ask **5-6 questions** exploring your analysis
+- Answer each question with specific numbers from the case
+- Be prepared to defend your recommendation against alternatives
 
 ### What Happens Next
-After this roleplay, you'll receive rubric-aligned feedback on four criteria: Revenue Sharing Mechanics (10 pts), Use of Case Data (10 pts), Stakeholder Awareness (5 pts), and Concrete Proposals (5 pts).
+After this roleplay, you'll receive rubric-aligned feedback on four criteria: Market Analysis (10 pts), Revenue Projections (10 pts), Marketing Strategy (5 pts), and Risk Assessment (5 pts).
 ```
 
 ---
 
-**Step 7: Title and Save**
+### Save Configuration
 
-**Title:** "NHL Board of Governors: Revenue Sharing Debate"
+**Title:** Predators Ownership Pitch: Market Feasibility Analysis
+
+**Exercise Title (Optional):** Ownership Pitch: Nashville Predators Market Analysis
 
 Click **"Save"** to create the AI Roleplay Scenario.
-
----
-
-**Step 8: Post-Creation Configuration**
-
-After saving, Uplimit will show additional configuration fields:
-
-**Exercise Title (Optional):**
-```
-NHL Board of Governors Meeting
-```
-
-**Exercise Instructions (Optional):**
-```
-Add any (optional) instructions for your exercise here...
-```
-Leave this blank - the "Ready to begin your roleplay?" section below will contain all student instructions.
-
-**"Ready to begin your roleplay?" Section:**
-
-This is the student-facing scenario text that appears when they launch the roleplay. Copy the markdown from Step 6 (Student Instructions) into this section - it will display in the roleplay interface.
 
 ---
 
@@ -561,28 +536,27 @@ This is the student-facing scenario text that appears when they launch the rolep
 - ✅ Conversation history saved (students can review entire exchange)
 
 **Alternative Assessment Option:**
-Students with anxiety about AI roleplay can submit a written position memo instead (750-1000 words defending Canucks' position using same rubric criteria). Email instructor within 48 hours of module release to request alternative format.
+Students with anxiety about AI roleplay can submit a written consulting memo instead (1000-1500 words presenting market recommendation using same rubric criteria). Email instructor within 48 hours of module release to request alternative format.
 
 **Content Status:**
 - ✅ Connecting intro text written (Element 1)
 - ✅ Infobox content written (Element 2)
-- 🔗 **ATTACH CASE:** Element 3 - Vancouver Canucks case study (8-10 pages PDF or markdown)
+- 🔗 **CASE ACCESS:** Element 3 - Students purchase Ivey 9B09A006 (~$4-8)
 - ✅ Table data ready to type (Element 4)
-- 🔗 **ATTACH EXHIBIT A:** Element 5 - Canucks financial statements (PDF format)
-- 🔗 **ATTACH EXHIBIT B:** Element 6 - NHL league-wide revenue data (PDF format)
-- 🔗 **ATTACH EXHIBIT C:** Element 7 - Canadian market characteristics (type directly or PDF)
+- ✅ Exhibit A content ready (Element 5 - from case Exhibit 14)
+- ✅ Exhibit B content ready (Element 6 - from case Exhibits 18-18.4)
+- ✅ Exhibit C content ready (Element 7 - from case Exhibits 15-16)
 - ✅ Image spec complete (Element 8 - optional)
 - ⭕ AI Roleplay needs configuration testing (Element 9)
 
 **Design Rationale:**
 - **Infobox** frames the case and provides guiding questions (QM clear objectives)
-- **Text** delivers the full case narrative (comprehensive context)
-- **Table** presents key data for analysis (structured information)
-- **Multiple Details** layer supporting information without overwhelming (UDL progressive disclosure)
-- **Image** provides visual representation if helpful (UDL representation)
-- **AI Chat Widget (Roleplay)** provides authentic practice with stakeholder analysis and executive communication (UDL engagement, Application level)
-- Supports WLO 1.4 (analyze revenue sharing models) through authentic, complex case
-- Prepares students for executive case discussion and reflection memo (assessed later)
+- **Case access** via Ivey Publishing ensures proper licensing (students purchase)
+- **Table** presents key comparison data for analysis (structured information)
+- **Multiple Details** layer supporting financial and marketing data (UDL progressive disclosure)
+- **AI Chat Widget (Roleplay)** provides authentic practice with consulting presentation skills (UDL engagement, Analysis level)
+- Supports WLO 1.3 (evaluate growth potential) and WLO 1.4 (analyze revenue models) through comprehensive case
+- Prepares students for CFL Expansion capstone project (similar market feasibility analysis)
 
 ---
 
@@ -590,43 +564,40 @@ Students with anxiety about AI roleplay can submit a written position memo inste
 
 ### Element-Level Accessibility:
 
-**Infobox (Element 1):**
+**Infobox (Element 2):**
 - ✅ Plain text, no complex formatting
 - ✅ Sufficient color contrast (Uplimit Callout blue variant tested)
 
-**Text (Element 2):**
-- ✅ Proper heading hierarchy maintained in case study
-- ✅ Text scalable (not embedded in images)
-- ✅ All data tables in case include header rows
+**Text (Element 3):**
+- ✅ Clear instructions for case access
+- ✅ External link to Ivey Publishing included
 
-**Table (Element 3):**
+**Table (Element 4):**
 - ✅ Table headers properly marked (`<th>` elements)
 - ✅ Caption provided for screen reader context
-- ✅ Symbols (✅ ▲) supplemented with text ("Benefits", "Limited")
+- ✅ Data presented in accessible format
 
-**Details Accordions (Elements 4-6):**
+**Details Accordions (Elements 5-7):**
 - ✅ Keyboard accessible (Enter/Space to expand/collapse)
 - ✅ ARIA expanded state announced to screen readers
-- ✅ Titles descriptive ("Exhibit A: Vancouver Canucks Financial Statements")
+- ✅ Titles descriptive ("Exhibit A: Nashville Predators Income Statement")
 
-**Image (Element 7):**
-- ✅ Descriptive alt text provided (describes diagram flow completely)
+**Image (Element 8):**
+- ✅ Descriptive alt text provided (describes map content completely)
 - ✅ Caption supplements alt text for sighted users
-- ✅ Diagram simple enough for text description (no complex data visualization)
 
-**AI Chat Widget (Element 8):**
+**AI Chat Widget (Element 9):**
 - ✅ Text-based interface (keyboard accessible)
 - ✅ Screen reader compatible (standard Uplimit widget)
 - ✅ No timed responses (students control pacing)
 - ✅ Conversation history saved (students can review)
-- ✅ **Alternative assessment option:** Students with roleplay anxiety can submit written position memo instead (email instructor within 48 hours of module release)
+- ✅ **Alternative assessment option:** Students with roleplay anxiety can submit written consulting memo instead
 
 ### Document-Level Accessibility:
 
 - ✅ Heading hierarchy logical (H2 → H3, no skipped levels)
 - ✅ No auto-playing media
 - ✅ All interactive elements keyboard accessible
-- ✅ Color not sole means of conveying information (symbols + text labels)
-- ✅ Sufficient color contrast throughout (tested with WCAG tool)
-
+- ✅ Color not sole means of conveying information
+- ✅ Sufficient color contrast throughout
 

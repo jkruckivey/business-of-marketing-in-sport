@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Your Executive Memo - Guided Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-success: #c0d1cd;
+            --color-info: #bfe5e7;
+            --color-sand: #f0ede0;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --border-radius: 8px;
+            --border-radius-sm: 4px;
+        }
+
+        *:focus {
+            outline: 2px solid var(--color-neutral-700);
+            outline-offset: 2px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-800);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--color-neutral-900) 0%, var(--color-neutral-700) 100%);
+            color: white;
+            padding: 24px 32px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 0.9rem;
+            color: var(--color-neutral-300);
+        }
+
+        .demo-content {
+            padding: 32px;
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: var(--color-neutral-200);
+            border-radius: 2px;
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--color-neutral-900);
+            transition: width 0.3s ease;
+        }
+
+        .step-counter {
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--color-neutral-500);
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: var(--color-neutral-100);
+            border-radius: var(--border-radius);
+            margin-bottom: 24px;
+        }
+
+        .audio-controls button {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border: 1px solid var(--color-neutral-300);
+            background: white;
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.875rem;
+            color: var(--color-neutral-700);
+            transition: all 0.2s ease;
+        }
+
+        .audio-controls button:hover:not(:disabled) {
+            background: var(--color-neutral-50);
+            border-color: var(--color-neutral-400);
+        }
+
+        .audio-controls button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .audio-controls button.active {
+            background: var(--color-neutral-900);
+            color: white;
+            border-color: var(--color-neutral-900);
+        }
+
+        .audio-status {
+            margin-left: auto;
+            font-size: 0.8rem;
+            color: var(--color-neutral-500);
+        }
+
+        .demo-step {
+            display: none;
+        }
+
+        .demo-step.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 16px;
+        }
+
+        .step-description {
+            font-size: 0.95rem;
+            color: var(--color-neutral-600);
+            margin-bottom: 24px;
+        }
+
+        /* Memo mockup styles */
+        .memo-mockup {
+            border: 2px solid var(--color-neutral-300);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            margin-bottom: 24px;
+            background: white;
+        }
+
+        .memo-toolbar {
+            background: var(--color-neutral-100);
+            padding: 8px 16px;
+            border-bottom: 1px solid var(--color-neutral-300);
+            font-size: 0.75rem;
+            color: var(--color-neutral-500);
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .memo-content {
+            padding: 24px;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            min-height: 300px;
+        }
+
+        .memo-header-line {
+            margin-bottom: 4px;
+        }
+
+        .memo-header-line strong {
+            color: var(--color-neutral-900);
+        }
+
+        .memo-body {
+            margin-top: 20px;
+        }
+
+        .memo-body h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin: 16px 0 8px 0;
+            color: var(--color-neutral-900);
+        }
+
+        .memo-body p {
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            background: var(--color-sand);
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+
+        .highlight-new {
+            background: var(--color-success);
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+
+        .typing-cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1em;
+            background: var(--color-neutral-900);
+            animation: blink 1s infinite;
+            vertical-align: text-bottom;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* Callout boxes */
+        .callout {
+            padding: 16px 20px;
+            border-radius: var(--border-radius);
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .callout-tip {
+            background: var(--color-info);
+            border-left: 4px solid var(--color-neutral-700);
+        }
+
+        .callout-key {
+            background: var(--color-sand);
+            border-left: 4px solid var(--color-neutral-600);
+        }
+
+        .callout strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* Navigation */
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--color-neutral-200);
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary {
+            background: white;
+            border: 1px solid var(--color-neutral-300);
+            color: var(--color-neutral-700);
+        }
+
+        .btn-secondary:hover:not(:disabled) {
+            background: var(--color-neutral-50);
+            border-color: var(--color-neutral-400);
+        }
+
+        .btn-primary {
+            background: var(--color-neutral-900);
+            border: 1px solid var(--color-neutral-900);
+            color: white;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background: var(--color-neutral-800);
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Completion screen */
+        .completion-card {
+            text-align: center;
+            padding: 40px;
+            background: var(--color-neutral-50);
+            border-radius: var(--border-radius);
+        }
+
+        .completion-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            color: var(--color-neutral-900);
+        }
+
+        .completion-card p {
+            color: var(--color-neutral-600);
+            margin-bottom: 24px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .key-takeaways {
+            text-align: left;
+            max-width: 500px;
+            margin: 24px auto;
+            background: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--color-neutral-200);
+        }
+
+        .key-takeaways h3 {
+            font-size: 1rem;
+            margin-bottom: 12px;
+            color: var(--color-neutral-900);
+        }
+
+        .key-takeaways ol {
+            padding-left: 20px;
+            color: var(--color-neutral-700);
+        }
+
+        .key-takeaways li {
+            margin-bottom: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+            }
+
+            .header, .demo-content {
+                padding: 20px;
+            }
+
+            .audio-controls {
+                flex-wrap: wrap;
+            }
+
+            .audio-status {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Writing Your Executive Memo</h1>
+            <p>A Guided Walkthrough with Matt Diamond</p>
+        </header>
+
+        <main class="demo-content">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill" style="width: 14.3%"></div>
+            </div>
+
+            <div class="step-counter" id="stepCounter" aria-live="polite">Step 1 of 7</div>
+
+            <div class="audio-controls" id="audioControls">
+                <button id="playPauseBtn" onclick="togglePlayPause()" aria-label="Play or pause voiceover">
+                    <span id="playPauseIcon">&#9658;</span>
+                    <span id="playPauseText">Play</span>
+                </button>
+                <button id="replayBtn" onclick="replayAudio()" aria-label="Replay current step voiceover">
+                    <span>&#8635;</span>
+                    <span>Replay</span>
+                </button>
+                <button id="muteBtn" onclick="toggleMute()" aria-label="Mute or unmute voiceover">
+                    <span id="muteIcon">&#128266;</span>
+                    <span id="muteText">Mute</span>
+                </button>
+                <span class="audio-status" id="audioStatus" aria-live="polite">Voiceover ready</span>
+            </div>
+
+            <!-- Step 1: Introduction -->
+            <div class="demo-step active" data-step="1">
+                <h2 class="step-title">Introduction</h2>
+                <p class="step-description">
+                    Welcome to this guided walkthrough. I'll show you my thinking process for writing an executive memo—including the parts where I get stuck and revise.
+                </p>
+
+                <div class="memo-mockup">
+                    <div class="memo-toolbar">
+                        <span>Document - Untitled</span>
+                        <span>Word Count: 0</span>
+                    </div>
+                    <div class="memo-content" style="display: flex; align-items: center; justify-content: center; color: var(--color-neutral-400);">
+                        <p>Blank document ready...<span class="typing-cursor"></span></p>
+                    </div>
+                </div>
+
+                <div class="callout callout-tip">
+                    <strong>What You'll Learn</strong>
+                    This isn't about writing a perfect draft on the first try. It's about having a system that gets you from blank page to polished memo.
+                </div>
+            </div>
+
+            <!-- Step 2: Understanding the Prompt -->
+            <div class="demo-step" data-step="2">
+                <h2 class="step-title">Understanding the Prompt</h2>
+                <p class="step-description">
+                    First, I always read the prompt twice and identify the key requirements. Then I check the rubric to understand how I'll be evaluated.
+                </p>
+
+                <div class="callout callout-key">
+                    <strong>Key Requirements Identified</strong>
+                    <ul style="margin-top: 8px; padding-left: 20px;">
+                        <li><span class="highlight">One-page memo</span> advising a private equity firm</li>
+                        <li>Explain <span class="highlight">unique characteristics</span> of sport's revenue model</li>
+                        <li>Provide <span class="highlight">2-3 investment decision factors</span></li>
+                    </ul>
+                </div>
+
+                <div class="memo-mockup">
+                    <div class="memo-toolbar">
+                        <span>My Outline</span>
+                        <span>Planning Stage</span>
+                    </div>
+                    <div class="memo-content">
+                        <p><strong>Quick Outline:</strong></p>
+                        <ul style="margin-top: 8px; padding-left: 20px; color: var(--color-neutral-600);">
+                            <li>Opening: Set up context (1-2 sentences)</li>
+                            <li>Section 1: How sports revenue is unique (150-200 words)</li>
+                            <li>Section 2: 2-3 investment decision factors (150-200 words)</li>
+                            <li>Closing: Bottom-line recommendation (1-2 sentences)</li>
+                        </ul>
+                        <p style="margin-top: 16px; font-style: italic; color: var(--color-neutral-500);">This takes 5 minutes and saves 30 minutes of rewriting.</p>
+                    </div>
+                </div>
+
+                <div class="callout callout-tip">
+                    <strong>Rubric Check</strong>
+                    Revenue Stream Analysis (10 pts) and Investment Factors (10 pts) are equally weighted. Don't spend 80% of your memo on one.
+                </div>
+            </div>
+
+            <!-- Step 3: Writing the Header -->
+            <div class="demo-step" data-step="3">
+                <h2 class="step-title">Writing the Header</h2>
+                <p class="step-description">
+                    The memo header is standard business format. Details matter—they signal professionalism before anyone reads your analysis.
+                </p>
+
+                <div class="memo-mockup">
+                    <div class="memo-toolbar">
+                        <span>Executive Memo</span>
+                        <span>Word Count: 24</span>
+                    </div>
+                    <div class="memo-content">
+                        <div class="memo-header-line"><strong>TO:</strong> <span class="highlight-new">Brookfield Capital Investment Committee</span></div>
+                        <div class="memo-header-line"><strong>FROM:</strong> <span class="highlight-new">[Your Name], Sports Business Consultant</span></div>
+                        <div class="memo-header-line"><strong>DATE:</strong> <span class="highlight-new">[Current Date]</span></div>
+                        <div class="memo-header-line"><strong>RE:</strong> <span class="highlight-new">Professional Sports Team Investment Analysis</span></div>
+                    </div>
+                </div>
+
+                <div class="callout callout-key">
+                    <strong>Header Best Practices</strong>
+                    <ul style="margin-top: 8px; padding-left: 20px;">
+                        <li>Use full recipient name, not just "Investment Committee"</li>
+                        <li>Include your title—it establishes credibility</li>
+                        <li>Make the subject line specific and descriptive</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Step 4: Writing the Analysis -->
+            <div class="demo-step" data-step="4">
+                <h2 class="step-title">Writing the Analysis</h2>
+                <p class="step-description">
+                    The opening hooks the reader, then I deliver on my promise with specific claims supported by evidence and case references.
+                </p>
+
+                <div class="memo-mockup">
+                    <div class="memo-toolbar">
+                        <span>Executive Memo</span>
+                        <span>Word Count: 156</span>
+                    </div>
+                    <div class="memo-content">
+                        <div class="memo-header-line"><strong>TO:</strong> Brookfield Capital Investment Committee</div>
+                        <div class="memo-header-line"><strong>FROM:</strong> [Your Name], Sports Business Consultant</div>
+                        <div class="memo-header-line"><strong>DATE:</strong> [Current Date]</div>
+                        <div class="memo-header-line"><strong>RE:</strong> Professional Sports Team Investment Analysis</div>
+
+                        <div class="memo-body">
+                            <p><span class="highlight-new">Professional sports teams operate under a fundamentally different economic model than traditional businesses. Before committing $500M-$1B, you must understand three characteristics that create both opportunity and risk.</span></p>
+
+                            <h3>1. Revenue Ecosystem Interdependence</h3>
+                            <p><span class="highlight-new">Media rights (<span class="highlight">55% of NHL revenue</span>) depend on competitive balance maintained through revenue sharing. The <span class="highlight">Nashville Predators case</span> demonstrates this: despite market challenges, the team must evaluate how different markets affect their revenue mix.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="callout callout-tip">
+                    <strong>The Pattern: Claim + Evidence + Application</strong>
+                    Every assertion needs support. Notice how I cite specific percentages from course content and reference the case study.
+                </div>
+            </div>
+
+            <!-- Step 5: Investment Factors -->
+            <div class="demo-step" data-step="5">
+                <h2 class="step-title">Investment Factors</h2>
+                <p class="step-description">
+                    For the investment factors, I think like Sarah Chen—what would a PE investor actually care about? Downside protection and upside potential.
+                </p>
+
+                <div class="memo-mockup">
+                    <div class="memo-toolbar">
+                        <span>Executive Memo</span>
+                        <span>Word Count: 312</span>
+                    </div>
+                    <div class="memo-content">
+                        <h3 style="margin-top: 0;">Investment Decision Factors</h3>
+                        <p>Two factors should guide your due diligence:</p>
+
+                        <p><strong>1. Revenue sharing structure:</strong> <span class="highlight-new">Prioritize leagues/teams where sharing protects downside. <span class="highlight">Calculate the "floor" revenue</span> a team receives regardless of performance.</span></p>
+
+                        <p><strong>2. Emerging stream exposure:</strong> <span class="highlight-new">Evaluate the team's position in betting partnerships and digital content rights. These streams (<span class="highlight">projected 15-20% of revenue by 2030</span>) sit outside traditional sharing pools, creating upside for first-movers.</span></p>
+                    </div>
+                </div>
+
+                <div class="callout callout-key">
+                    <strong>Be Specific and Actionable</strong>
+                    Not just "look at revenue sharing"—tell them exactly WHAT to calculate. Not "consider growth potential"—cite specific projections.
+                </div>
+            </div>
+
+            <!-- Step 6: Revision and Polish -->
+            <div class="demo-step" data-step="6">
+                <h2 class="step-title">Revision and Polish</h2>
+                <p class="step-description">
+                    I have a draft. Now I check if everything earns its place, cut redundancy, and add a clear recommendation.
+                </p>
+
+                <div class="memo-mockup">
+                    <div class="memo-toolbar">
+                        <span>Executive Memo - Final</span>
+                        <span>Word Count: 498</span>
+                    </div>
+                    <div class="memo-content">
+                        <p style="margin-bottom: 16px;"><em>Revision checklist applied...</em></p>
+
+                        <p><strong>Added Recommendation:</strong></p>
+                        <p style="background: var(--color-success); padding: 12px; border-radius: 4px;">
+                            <strong>Recommendation:</strong> Sports teams are not traditional businesses, but with proper due diligence on league revenue structures and emerging stream potential, they offer attractive risk-adjusted returns. <span class="highlight">I recommend proceeding to Phase 2 due diligence</span> on the shortlisted properties.
+                        </p>
+
+                        <p style="margin-top: 16px; font-style: italic; color: var(--color-neutral-500);">[498 words]</p>
+                    </div>
+                </div>
+
+                <div class="callout callout-tip">
+                    <strong>Take a Position</strong>
+                    Executives hire consultants to make recommendations, not hedge. "I recommend proceeding to Phase 2" is a clear verdict.
+                </div>
+            </div>
+
+            <!-- Step 7: Summary -->
+            <div class="demo-step" data-step="7">
+                <h2 class="step-title">Summary</h2>
+                <p class="step-description">
+                    That's it—from blank page to polished memo. Here are your key takeaways.
+                </p>
+
+                <div class="completion-card">
+                    <h2>Demo Complete!</h2>
+                    <p>You've seen the complete process from blank document to finished executive memo.</p>
+
+                    <div class="key-takeaways">
+                        <h3>Key Takeaways</h3>
+                        <ol>
+                            <li><strong>Read the prompt and rubric</strong> before writing</li>
+                            <li><strong>Make an outline</strong> to organize your thinking</li>
+                            <li><strong>Support every claim</strong> with specific evidence</li>
+                            <li><strong>Revise for concision</strong>—every word earns its place</li>
+                            <li><strong>Check against the rubric</strong> before submitting</li>
+                        </ol>
+                    </div>
+
+                    <p style="margin-top: 24px;">Give yourself 60-90 minutes for your first draft. You've got this!</p>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navigation">
+                <button class="btn btn-secondary" id="prevBtn" onclick="previousStep()" disabled aria-label="Go to previous step">
+                    <span>&larr;</span> Previous
+                </button>
+                <button class="btn btn-primary" id="nextBtn" onclick="nextStep()" aria-label="Go to next step">
+                    Next <span>&rarr;</span>
+                </button>
+            </nav>
+        </main>
+    </div>
+
+    <script>
+        // State
+        let currentStep = 1;
+        const totalSteps = 7;
+        let isMuted = false;
+        let currentAudio = null;
+
+        // Audio files for each step
+        const stepAudio = {
+            1: 'audio/guided-memo-step1-introduction.mp3',
+            2: 'audio/guided-memo-step2-prompt.mp3',
+            3: 'audio/guided-memo-step3-header.mp3',
+            4: 'audio/guided-memo-step4-analysis.mp3',
+            5: 'audio/guided-memo-step5-factors.mp3',
+            6: 'audio/guided-memo-step6-revision.mp3',
+            7: 'audio/guided-memo-step7-summary.mp3'
+        };
+
+        // Initialize audio objects
+        const audioObjects = {};
+        Object.keys(stepAudio).forEach(step => {
+            audioObjects[step] = new Audio(stepAudio[step]);
+            audioObjects[step].addEventListener('ended', () => {
+                updateAudioStatus('Voiceover complete');
+                updatePlayPauseButton(false);
+            });
+            audioObjects[step].addEventListener('error', () => {
+                console.warn(`Audio file not found: ${stepAudio[step]}`);
+                updateAudioStatus('Voiceover not available');
+            });
+        });
+
+        function playStepAudio(step) {
+            if (isMuted) return;
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+            currentAudio = audioObjects[step];
+            if (currentAudio) {
+                currentAudio.play().then(() => {
+                    updateAudioStatus('Playing voiceover...');
+                    updatePlayPauseButton(true);
+                }).catch(err => {
+                    console.warn('Audio playback failed:', err);
+                    updateAudioStatus('Voiceover not available');
+                });
+            }
+        }
+
+        function togglePlayPause() {
+            if (!currentAudio) {
+                playStepAudio(currentStep);
+                return;
+            }
+            if (currentAudio.paused) {
+                currentAudio.play();
+                updatePlayPauseButton(true);
+                updateAudioStatus('Playing voiceover...');
+            } else {
+                currentAudio.pause();
+                updatePlayPauseButton(false);
+                updateAudioStatus('Voiceover paused');
+            }
+        }
+
+        function replayAudio() {
+            if (currentAudio) {
+                currentAudio.currentTime = 0;
+                currentAudio.play();
+                updatePlayPauseButton(true);
+                updateAudioStatus('Replaying voiceover...');
+            } else {
+                playStepAudio(currentStep);
+            }
+        }
+
+        function toggleMute() {
+            isMuted = !isMuted;
+            const muteIcon = document.getElementById('muteIcon');
+            const muteText = document.getElementById('muteText');
+            if (isMuted) {
+                muteIcon.innerHTML = '&#128263;';
+                muteText.textContent = 'Unmute';
+                if (currentAudio) {
+                    currentAudio.pause();
+                    updatePlayPauseButton(false);
+                }
+                updateAudioStatus('Voiceover muted');
+            } else {
+                muteIcon.innerHTML = '&#128266;';
+                muteText.textContent = 'Mute';
+                updateAudioStatus('Voiceover ready');
+            }
+        }
+
+        function updatePlayPauseButton(isPlaying) {
+            const icon = document.getElementById('playPauseIcon');
+            const text = document.getElementById('playPauseText');
+            if (isPlaying) {
+                icon.innerHTML = '&#10074;&#10074;';
+                text.textContent = 'Pause';
+            } else {
+                icon.innerHTML = '&#9658;';
+                text.textContent = 'Play';
+            }
+        }
+
+        function updateAudioStatus(message) {
+            document.getElementById('audioStatus').textContent = message;
+        }
+
+        function showStep(step) {
+            // Hide all steps
+            document.querySelectorAll('.demo-step').forEach(s => s.classList.remove('active'));
+
+            // Show current step
+            const stepEl = document.querySelector(`.demo-step[data-step="${step}"]`);
+            if (stepEl) {
+                stepEl.classList.add('active');
+            }
+
+            // Update progress
+            const progress = (step / totalSteps) * 100;
+            document.getElementById('progressFill').style.width = `${progress}%`;
+            document.getElementById('stepCounter').textContent = `Step ${step} of ${totalSteps}`;
+
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = step === 1;
+
+            if (step === totalSteps) {
+                document.getElementById('nextBtn').innerHTML = 'Finish <span>&check;</span>';
+                document.getElementById('nextBtn').disabled = false;
+            } else {
+                document.getElementById('nextBtn').innerHTML = 'Next <span>&rarr;</span>';
+                document.getElementById('nextBtn').disabled = false;
+            }
+
+            // Stop current audio and prepare new
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+            }
+            updatePlayPauseButton(false);
+            updateAudioStatus('Voiceover ready');
+
+            // Auto-play audio for new step (if not muted)
+            if (!isMuted && stepAudio[step]) {
+                setTimeout(() => playStepAudio(step), 500);
+            }
+        }
+
+        function nextStep() {
+            if (currentStep < totalSteps) {
+                currentStep++;
+                showStep(currentStep);
+            } else {
+                // Demo complete - could trigger completion tracking here
+                updateAudioStatus('Demo complete!');
+            }
+        }
+
+        function previousStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' && currentStep < totalSteps) {
+                nextStep();
+            } else if (e.key === 'ArrowLeft' && currentStep > 1) {
+                previousStep();
+            } else if (e.key === ' ') {
+                e.preventDefault();
+                togglePlayPause();
+            }
+        });
+
+        // Initialize
+        showStep(1);
+    </script>
+</body>
+</html>

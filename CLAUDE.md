@@ -43,9 +43,9 @@ business-of-sports-marketing/
 ## Course Structure (5-Week MBA Course)
 
 ### Week 1: The Business of Sport - Where the Money Flows
-- **Case**: NHL Vancouver Canucks (W14149)
-- **Executive**: Bell Media / TSN senior leader
-- **Focus**: 5 revenue streams (media, ticketing, sponsorship, merch, betting)
+- **Case**: Nashville Predators: Marketing Strategy for an NHL Franchise (Ivey 9B09A006)
+- **Executive**: Kevin Abrams (NY Giants) + Stewart Johnston (CFL Commissioner)
+- **Focus**: 5 revenue streams (media, ticketing, sponsorship, merch, betting), market feasibility
 - **Widgets**: Revenue Mix Slider, Dynamic Pricing Simulator, Ecosystem Cascade
 
 ### Week 2: Media, Content & Fan Engagement

@@ -57,7 +57,7 @@ the Project Guide (available on course homepage).
 ```markdown
 ## Congratulations! Week 1 is Complete.
 
-You've traveled from the Connor McDavid paradox to mastering revenue ecosystem analysis. You explored five revenue streams through interactive discovery, built your own strategic portfolio, analyzed the Vancouver Canucks' real challenges, and demonstrated your learning through a comprehensive reflection memo.
+You've traveled from the Connor McDavid paradox to mastering revenue ecosystem analysis. You explored five revenue streams through interactive discovery, built your own strategic portfolio, analyzed the Nashville Predators' real challenges, and demonstrated your learning through a comprehensive reflection memo.
 
 **Your Week 1 Journey:**
 - Quick Start: Hooked by the $100M question
@@ -65,7 +65,7 @@ You've traveled from the Connor McDavid paradox to mastering revenue ecosystem a
 - Inside the Sports Business: Heard expert perspective
 - Five Revenue Streams: Discovered revenue concepts through 8 interactive widgets
 - Build Your Revenue Empire: Built your own revenue strategy
-- The Canucks Challenge: Analyzed the real case
+- The Predators Problem: Analyzed the real case
 - Your Executive Memo: Synthesized learning in reflection memo
 - Looking Ahead: Consolidated takeaways and previewed Week 2
 

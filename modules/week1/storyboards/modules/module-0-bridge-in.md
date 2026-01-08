@@ -560,25 +560,25 @@ Think about growth rates and constraints. Stadiums are capacity-limited (can't g
 
 **QUESTION 7** (WLO 1.4 - Revenue Sharing Models)
 
-**Question:** Can you explain one advantage AND one disadvantage of revenue sharing for a mid-market team like the Vancouver Canucks?
+**Question:** Can you explain one advantage AND one disadvantage of revenue sharing for a mid-market team like the Nashville Predators?
 
 **Type:** Short Answer (text box, 100-150 words)
 
 **Sample Strong Answer:**
-"Advantage: The Canucks benefit from equal sharing of national media rights (50% of NHL national TV deals). Even though Vancouver is a smaller market than Toronto or New York, they receive the same share of lucrative U.S. broadcast contracts, which provides financial stability.
+"Advantage: The Predators benefit from equal sharing of national media rights (50% of NHL national TV deals). Even though Nashville is a smaller market than Toronto or New York, they receive the same share of lucrative broadcast contracts, which provides financial stability.
 
-Disadvantage: Revenue sharing limits the Canucks' ability to capitalize on their local strengths. Vancouver has strong corporate support and passionate fans willing to pay premium prices, but the team must contribute some local revenue to the league pool. This constrains their competitive advantage—entrepreneurial success is taxed to support smaller markets, reducing the Canucks' financial upside."
+Disadvantage: Revenue sharing limits the Predators' ability to capitalize on their local strengths. Nashville has strong corporate support from the music/entertainment industry and passionate fans, but the team must contribute some local revenue to the league pool. This constrains their competitive advantage—entrepreneurial success is taxed to support smaller markets, reducing the Predators' financial upside."
 
 **Grading Rubric:**
-- ✅ **Strong (8-10 pts):** Identifies specific advantage (national media sharing) AND specific disadvantage (limits local revenue potential), uses Canucks-specific context
-- ◐ **Adequate (5-7 pts):** Identifies generic advantage/disadvantage but may lack Canucks-specific application
+- ✅ **Strong (8-10 pts):** Identifies specific advantage (national media sharing) AND specific disadvantage (limits local revenue potential), uses Predators-specific context
+- ◐ **Adequate (5-7 pts):** Identifies generic advantage/disadvantage but may lack Predators-specific application
 - ○ **Weak (0-4 pts):** Only provides one side (advantage OR disadvantage) or gives vague answers
 
 **Feedback for Strong Answer:**
-Excellent analysis! You've identified the core tension: revenue sharing provides stability (national media benefits) but constrains entrepreneurial upside (local revenue taxation). Mid-market teams like Vancouver face this trade-off constantly—they're not big enough to dominate without sharing, but not small enough to be pure recipients. This complexity makes revenue sharing strategy fascinating.
+Excellent analysis! You've identified the core tension: revenue sharing provides stability (national media benefits) but constrains entrepreneurial upside (local revenue taxation). Mid-market teams like Nashville face this trade-off constantly—they're not big enough to dominate without sharing, but not small enough to be pure recipients. This complexity makes revenue sharing strategy fascinating.
 
 **Feedback for Weak Answer:**
-You're on the right track, but be more specific. Think about which revenue streams are shared (national media, licensing) versus local (tickets, sponsorship). How does this affect a mid-market team like Vancouver specifically? What do they gain from sharing? What do they lose?
+You're on the right track, but be more specific. Think about which revenue streams are shared (national media, licensing) versus local (tickets, sponsorship). How does this affect a mid-market team like Nashville specifically? What do they gain from sharing? What do they lose?
 
 ---
 
@@ -681,7 +681,7 @@ Think about the math: Toronto's $200M local revenue far exceeds Arizona's $60M, 
 ```markdown
 Title: What Your Pre-Assessment Results Mean
 
-Your quiz results create a personalized learning path for this week. Lower scores (0-6/10) suggest spending extra time with Module 3's core content and all interactive widgets—you're starting fresh, which is perfect for building strong fundamentals. Higher scores (7-10/10) indicate solid baseline knowledge, so challenge yourself with the Canucks case analysis and Revenue Empire Builder strategic simulation. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's solve those revenue problems.
+Your quiz results create a personalized learning path for this week. Lower scores (0-6/10) suggest spending extra time with Module 3's core content and all interactive widgets—you're starting fresh, which is perfect for building strong fundamentals. Higher scores (7-10/10) indicate solid baseline knowledge, so challenge yourself with the Predators case analysis and Revenue Empire Builder strategic simulation. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's solve those revenue problems.
 ```
 
 **Note:** If "Insight" variant isn't available, use the variant typically used for reflective content or guidance boxes in your Uplimit instance.

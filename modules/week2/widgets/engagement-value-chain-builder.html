@@ -180,22 +180,25 @@
         }
 
         .tactic-checkbox {
+            display: block;
             background: var(--color-white);
             padding: 16px;
             border-radius: 8px;
             margin-bottom: 12px;
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
+            border: 2px solid var(--color-neutral-200);
+            transition: all 0.2s ease;
             cursor: pointer;
         }
 
         .tactic-checkbox:hover {
-            border-color: var(--color-primary);
+            border-color: var(--color-neutral-400);
+            background: var(--color-neutral-50);
         }
 
         .tactic-checkbox.selected {
-            border-color: var(--color-success);
+            border-color: var(--color-primary);
             background: var(--color-neutral-100);
+            box-shadow: 0 0 0 1px var(--color-primary);
         }
 
         .tactic-header {
@@ -218,11 +221,11 @@
         }
 
         .tactic-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
+            display: flex;
+            gap: 24px;
             font-size: 0.85rem;
-            padding-left: 32px;
+            margin-left: 32px;
+            margin-top: 4px;
         }
 
         .stat-item {
@@ -234,11 +237,13 @@
             color: var(--color-gray);
             font-size: 0.75rem;
             text-transform: uppercase;
+            margin-bottom: 2px;
         }
 
         .stat-value {
             font-weight: 600;
             color: var(--color-dark);
+            font-size: 1rem;
         }
 
         /* Right Panel: Results */
@@ -271,13 +276,15 @@
         }
 
         .result-value {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: var(--color-dark);
+            word-break: break-word;
+            overflow-wrap: break-word;
         }
 
         .result-value.highlight {
-            font-size: 2.2rem;
+            font-size: 1.9rem;
             color: var(--color-primary-dark);
         }
 
@@ -395,11 +402,48 @@
             }
 
             .container {
-                padding: 20px;
+                padding: 16px;
             }
 
             .tactic-stats {
-                grid-template-columns: 1fr;
+                gap: 16px;
+                margin-left: 28px;
+            }
+
+            .tactic-name {
+                font-size: 1rem;
+            }
+
+            .result-value {
+                font-size: 1.4rem;
+            }
+
+            .result-value.highlight {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tactic-stats {
+                gap: 12px;
+                margin-left: 24px;
+                flex-wrap: wrap;
+            }
+
+            .stat-label {
+                font-size: 0.7rem;
+            }
+
+            .stat-value {
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding: 12px;
+            }
+
+            .section-inner {
+                padding: 1rem;
             }
         }
 

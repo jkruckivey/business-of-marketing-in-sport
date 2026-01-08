@@ -119,7 +119,7 @@ Then streaming arrived.
 
 **Streaming:** Rights fees (40-50%) + Technology (25-35%) + Customer Acquisition (20-30%)
 - Must build platform ($50-100M initial investment)
-- Customer acquisition cost: $50-200 per subscriber
+- Customer acquisition often represents 20–30% of early costs, with typical costs of $50–200 per subscriber
 - Front-loaded costs—heavy Year 1-3 investment
 
 ---
@@ -130,7 +130,7 @@ Then streaming arrived.
 - If ad revenue + carriage fees > rights + production, you're profitable Day 1
 - **BUT:** Assumes stable viewership (cord-cutting risk)
 
-**Streaming:** 3-5 years (customer lifetime value model)
+**Streaming:** Streaming platforms typically lose money for the first 3–5 years as they invest in rights and customer acquisition before reaching scale
 - Year 1-2: Heavy losses (building platform, acquiring customers)
 - Year 3-4: Approaching break-even
 - Year 5+: Profitability
@@ -144,7 +144,7 @@ Then streaming arrived.
 - Canadian market: 11.2M subscribers (2014) → 8.1M (2024), -28% decline
 
 **Streaming:** High churn, price sensitivity, competition from tech giants, technology costs
-- Sports-only services: 25-40% annual churn (highly seasonal)
+- Sports-only services often experience high seasonal churn, frequently in the 25–40% annual range
 - Binary outcome: Win big or fail
 
 ---

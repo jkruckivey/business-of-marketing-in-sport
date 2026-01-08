@@ -424,7 +424,7 @@ Reality: Most Canadian streaming services plateau at 300-500K subscribers. You'r
 Students model subscriber growth but forget subscribers leave.
 
 Typical streaming churn rates:
-- Sports-only services: **25-40% annual churn** (highly seasonal)
+- Sports-only services often experience high seasonal churn, frequently in the **25–40% annual range**
 - Diversified entertainment services: **15-25% annual churn**
 
 That means: If you acquire 50K subscribers/month, but 35K churn/month, your net growth is only 15K. It takes **5+ years to hit 1M subscribers**.

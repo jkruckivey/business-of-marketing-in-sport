@@ -17,7 +17,7 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro from The Canucks Challenge | Type directly | Sets context, connects narrative |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from The Predators Problem | Type directly | Sets context, connects narrative |
 | 2 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, assessment focus |
 | 2A | **▬ Text** ◐ Recommended | UDL Learning Supports Introduction | Type directly | Explains 4 support options |
 | 2B | **Video** ◐ Recommended | Guided Demo: Writing Your Memo (6 min) | Upload MP4 | SME think-aloud walkthrough |
@@ -36,7 +36,7 @@
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-You've explored revenue streams through interactive discovery in Five Revenue Streams, built a five-year strategy in Build Your Revenue Empire, and analyzed the Vancouver Canucks' real-world challenges in The Canucks Challenge. You've seen how revenue ecosystems work in theory and in practice.
+You've explored revenue streams through interactive discovery in Five Revenue Streams, built a five-year strategy in Build Your Revenue Empire, and analyzed the Nashville Predators' real-world challenges in The Predators Problem. You've seen how revenue ecosystems work in theory and in practice.
 
 Now it's time to demonstrate what you've learned. In this final assessment, you'll step into the role of a strategic advisor to a private equity firm considering a major investment in professional sports. They need to understand whether sports teams operate like other businesses—and if not, what makes them different. Your task: write a clear, evidence-based executive memo that synthesizes everything you've learned this week into actionable investment guidance.
 ```
@@ -64,40 +64,59 @@ You'll write a 1-page executive memo advising a private equity firm considering 
 ```markdown
 ## Choose Your Learning Path
 
-Before you start writing, we've created four optional resources to help you succeed. You don't need to use all of them—pick what works best for how YOU learn.
+Before you start writing, we've created two optional resources to help you succeed. Pick what works best for how YOU learn.
 
 | If you learn best by... | Try this resource | Time |
 |------------------------|-------------------|------|
-| **Watching someone model the process** | Guided Demo Video | 6 min |
+| **Following a step-by-step walkthrough** | Interactive Guided Demo | 6-7 min |
 | **Seeing examples with explanations** | Annotated Exemplar Explorer | 5-10 min |
-| **Building specific skills you're missing** | Micro-Tutorial Library | 1-2 min each |
-| **Listening while doing other things** | Audio Instructions | 4 min |
+
+The **Interactive Guided Demo** includes voiceover narration—you can play/pause, replay steps, or mute and read at your own pace.
 
 **Already confident writing executive memos?** Skip ahead to the AI Roleplay practice (Element 3) or go straight to writing.
 
-**New to business writing?** We recommend the Guided Demo Video first, then the Annotated Exemplar Explorer.
+**New to business writing?** We recommend the Interactive Guided Demo first, then the Annotated Exemplar Explorer.
 ```
 
 ---
 
-### Element 2B: Guided Demo Video - Writing Your Memo
+### Element 2B: Interactive Guided Demo - Writing Your Memo
 
-**Video Specifications:**
-- **Length:** 6 minutes
-- **Format:** Screen recording with SME voiceover (picture-in-picture optional)
-- **Accessibility:** Captions required, transcript provided, audio descriptions for visual elements
+**Widget:** `guided-memo-demo.html`
+**Hosted URL:** `https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/guided-memo-demo.html`
 
-**Video Status:** 📝 Script complete, awaiting production
+**Widget Specifications:**
+- **Type:** SCORM package with HTML + MP3 voiceover files
+- **Length:** 7 steps, ~6-7 minutes total
+- **SME Voice:** Matt Diamond (AI-generated from voice clone)
+- **Accessibility:** WCAG 2.2 AA, keyboard navigable, mute option for text-only
 
-**Production Notes:**
-- Record screen showing Word/Google Docs with memo being written
-- SME speaks in first person, thinking aloud
-- Show the *process*, not just the final product
-- Include mistakes and corrections (models revision as normal)
+**Widget Status:** ✅ Widget complete, ⏳ Audio files pending generation
+
+**Widget Features:**
+- Step-by-step navigation (Next/Previous)
+- Audio controls (Play/Pause, Replay, Mute)
+- Progress bar showing step X of 7
+- Visual memo mockup showing progressive writing
+- Keyboard navigation (arrow keys, spacebar for play/pause)
+- Auto-plays voiceover on step change (if unmuted)
+
+**Audio Files Needed:**
+| File | Duration |
+|------|----------|
+| `guided-memo-step1-introduction.mp3` | ~45 sec |
+| `guided-memo-step2-prompt.mp3` | ~60 sec |
+| `guided-memo-step3-header.mp3` | ~45 sec |
+| `guided-memo-step4-analysis.mp3` | ~75 sec |
+| `guided-memo-step5-factors.mp3` | ~60 sec |
+| `guided-memo-step6-revision.mp3` | ~60 sec |
+| `guided-memo-step7-summary.mp3` | ~45 sec |
+
+**Voiceover Scripts:** See `widgets/audio/GUIDED-MEMO-DEMO-VOICEOVER-SCRIPTS.md`
 
 ---
 
-**VIDEO SCRIPT: "Writing Your Executive Memo - A Guided Walkthrough" (6 min)**
+**VOICEOVER CONTENT SUMMARY (Matt Diamond):**
 
 ```
 [0:00-0:30] INTRODUCTION
@@ -154,7 +173,7 @@ NARRATOR: "I'll start with the memo header—this is standard business format."
 
 [Types]: "First, revenue streams are deeply interconnected. Media rights (55% of NHL revenue) depend on competitive balance, which requires revenue sharing among teams. This means individual team profitability is partially determined by league-wide policies, not just team management decisions."
 
-"Good—I've made a claim AND supported it with a specific percentage from the course content. Let me add the Canucks example..."
+"Good—I've made a claim AND supported it with a specific percentage from the course content. Let me add the Predators example..."
 
 [Continues typing, showing the process of drafting, pausing, checking notes]
 
@@ -170,7 +189,7 @@ NARRATOR: "Now for the investment factors section. The rubric says 'specific, de
 
 [Types]: "Two factors should guide your investment decision:
 
-1. Revenue sharing structure: Leagues with robust sharing (NFL) protect downside risk. The Canucks case shows that even struggling teams receive $XX million in shared national media revenue, creating a floor on losses.
+1. Revenue sharing structure: Leagues with robust sharing (NFL) protect downside risk. The Predators case shows how market selection affects all revenue streams—some cities project $30M EBITDA while others project losses.
 
 2. Emerging revenue exposure: Teams with rights to betting partnerships and digital content can capture high-growth revenue streams outside traditional sharing pools. These streams could represent 15-20% of revenue by 2030."
 
@@ -292,7 +311,7 @@ Overall, sports teams can be good investments but there are also risks to consid
 Professional sports teams operate under a fundamentally different economic model than traditional businesses. Before committing $500M-$1B, you must understand three characteristics that create both opportunity and risk.
 
 **1. Revenue Ecosystem Interdependence**
-Unlike traditional businesses, sports revenue streams are deeply interconnected. Media rights (55% of NHL revenue) depend on competitive balance maintained through revenue sharing. The Vancouver Canucks case demonstrates this: despite market challenges, the team receives $XX million annually in shared national media revenue—a floor that protects downside risk regardless of on-ice performance.
+Unlike traditional businesses, sports revenue streams are deeply interconnected. Media rights (55% of NHL revenue) depend on competitive balance maintained through revenue sharing. The Nashville Predators case demonstrates this: despite market challenges, the team must evaluate how different markets would affect their revenue mix—media rights, ticketing, sponsorship, and merchandise all vary dramatically by city.
 
 **2. Shared Economics Create Unusual Incentives**
 Sports teams must collaborate with competitors to maximize value. Strong league governance (salary caps, draft systems, revenue pools) correlates with franchise stability. Leagues with robust sharing—NFL distributes 63% of revenue equally—show lower variance in team valuations.
@@ -316,7 +335,7 @@ Two factors should guide your due diligence:
 |---|---------|-----------------|
 | 1 | Header | **What's missing:** Professional memos include full recipient/sender titles, specific date, and descriptive subject line. The exemplary version tells the reader exactly what this memo covers before they read it. |
 | 2 | Opening claim | **Show, don't just tell:** "Different" is vague. The exemplary version specifies HOW they're different (interdependent revenue, shared economics) with a hook that promises three specific insights. |
-| 3 | Unsupported claims | **Evidence matters:** Every claim needs support. Notice how the exemplary version cites "55% of NHL revenue" and references the Canucks case. Your reader is a data-driven PE investor—give them numbers. |
+| 3 | Unsupported claims | **Evidence matters:** Every claim needs support. Notice how the exemplary version cites "55% of NHL revenue" and references the Predators case. Your reader is a data-driven PE investor—give them numbers. |
 | 4 | Weak transition | **Signpost your structure:** "A few things" forces the reader to count. The exemplary version uses a clear header ("Investment Decision Factors") and numbers each factor explicitly. |
 | 5 | Generic advice | **Be specific and actionable:** "Look at revenue sharing" is advice anyone could give. The exemplary version tells them exactly WHAT to look for: "Calculate the 'floor' revenue a team receives regardless of performance." |
 | 6 | Weak conclusion | **Take a position:** Executives hire consultants to make recommendations, not hedge. The exemplary version gives a clear verdict: "I recommend proceeding to Phase 2 due diligence." |
@@ -333,111 +352,22 @@ Two factors should guide your due diligence:
 
 ---
 
-### Element 2D: Micro-Tutorial Library
+### Element 2D: ~~Micro-Tutorial Library~~ (REMOVED)
 
-**Purpose:** Short, focused skill-building videos that students can access based on their individual needs. Linked from a collapsible accordion element.
+**Status:** Consolidated into Element 2B (Interactive Guided Demo)
 
-**Uplimit Implementation:**
-1. Select **Details** element
-2. Copy content below (each tutorial title expands to show video embed + transcript link)
+The Interactive Guided Demo now covers all micro-tutorial content:
+- Step 2: Understanding prompts and rubrics
+- Step 3: Memo format
+- Step 4: Citing evidence from course content
+- Step 5: Structuring recommendations
+- Step 6: Editing for concision
 
-```markdown
-Title: 📚 Micro-Tutorial Library: Build Specific Skills (1-2 min each)
-
-Don't need all the tutorials? Expand only the ones relevant to YOUR learning gaps.
-
----
-
-**Tutorial 1: How to Write an Executive Summary (2 min)**
-
-[VIDEO EMBED: micro-tutorial-1-executive-summary.mp4]
-
-**Key Points:**
-- Lead with the bottom line (recommendation first, evidence second)
-- One paragraph, 50-75 words maximum
-- Answer: What should they do? Why? What's the evidence?
-
-**Transcript:** [Link to transcript]
+Students can replay individual steps as needed, making separate micro-tutorials redundant.
 
 ---
 
-**Tutorial 2: How to Use Memo Format (1 min)**
-
-[VIDEO EMBED: micro-tutorial-2-memo-format.mp4]
-
-**Key Points:**
-- TO: Full name and title of recipient
-- FROM: Your name and role
-- DATE: Current date
-- RE: Specific, descriptive subject line
-- Body: Single-spaced, blank line between paragraphs
-
-**Template Download:** [Link to memo template.docx]
-
-**Transcript:** [Link to transcript]
-
----
-
-**Tutorial 3: How to Cite Evidence from Course Content (2 min)**
-
-[VIDEO EMBED: micro-tutorial-3-citing-evidence.mp4]
-
-**Key Points:**
-- Reference specific data: "Media rights comprise 55% of NHL revenue"
-- Name your sources: "The Canucks case demonstrates..."
-- Use widget outputs: "Using the Revenue Mix Slider, I calculated..."
-- Avoid vague claims: NOT "Revenue sharing is important" → "Revenue sharing protects downside risk by guaranteeing $XX million annually regardless of team performance"
-
-**Transcript:** [Link to transcript]
-
----
-
-**Tutorial 4: How to Structure a Recommendation (2 min)**
-
-[VIDEO EMBED: micro-tutorial-4-recommendations.mp4]
-
-**Key Points:**
-- State your recommendation clearly (no hedging)
-- Provide 2-3 supporting reasons
-- Acknowledge trade-offs or risks
-- End with specific next steps
-
-**Formula:** "I recommend [ACTION] because [REASON 1] and [REASON 2]. The primary risk is [RISK], which can be mitigated by [MITIGATION]. Next steps: [SPECIFIC ACTIONS]."
-
-**Transcript:** [Link to transcript]
-
----
-
-**Tutorial 5: How to Edit for Concision (1 min)**
-
-[VIDEO EMBED: micro-tutorial-5-concision.mp4]
-
-**Key Points:**
-- Cut filler phrases: "In order to" → "To" | "Due to the fact that" → "Because"
-- Delete redundancies: "Unique and different" → "Unique"
-- One idea per sentence
-- Read aloud—if you run out of breath, the sentence is too long
-
-**Before/After Examples:**
-- ❌ "It is important to note that sports teams are fundamentally different in terms of how they generate revenue"
-- ✅ "Sports teams generate revenue differently than traditional businesses"
-
-**Transcript:** [Link to transcript]
-```
-
-**Video Production Notes:**
-
-| Tutorial | Length | Format | Key Visual |
-|----------|--------|--------|------------|
-| 1. Executive Summary | 2 min | Talking head + screen | Before/after example on screen |
-| 2. Memo Format | 1 min | Screen recording | Template with callouts |
-| 3. Citing Evidence | 2 min | Screen + voice | Widget screenshot → memo sentence |
-| 4. Recommendations | 2 min | Talking head + screen | Formula template on screen |
-| 5. Editing for Concision | 1 min | Screen recording | Live editing with strikethroughs |
-
----
-
-### Element 2E: Audio Instructions
+### Element 2E: Audio Instructions (OPTIONAL)
 
 **Purpose:** Voice-narrated version of assignment instructions for auditory learners and accessibility. Students can listen while commuting, exercising, or as reinforcement after reading.
 
@@ -482,7 +412,7 @@ Revenue Stream Analysis is worth 10 points. You need to accurately describe at l
 
 Investment Factors is also worth 10 points. Identify two to three specific factors backed by evidence from the course content. Generic advice like "consider the risks" won't earn full credit.
 
-Application of Concepts is worth 5 points. Reference the executive session, readings, and especially the Canucks case study.
+Application of Concepts is worth 5 points. Reference the executive session, readings, and especially the Predators case study.
 
 Business Communication is worth 5 points. Use proper memo format, write clearly and concisely, and stay within the 500-word limit.
 
@@ -858,7 +788,7 @@ You've been paired with a classmate (check announcement for your partner). Compl
 **Review Focus:**
 1. **Revenue Stream Analysis** (10 pts): Are 3+ streams analyzed? Do they show interdependencies?
 2. **Investment Factors** (10 pts): Are 2-3 factors specific and well-justified?
-3. **Application of Concepts** (5 pts): Do they reference executive session, readings, Canucks case?
+3. **Application of Concepts** (5 pts): Do they reference executive session, readings, Predators case?
 4. **Business Communication** (5 pts): Professional format? Clear? Within word limit?
 
 **Time Estimate:** 20-30 minutes
@@ -1117,7 +1047,7 @@ The learner makes minimal or no reference to course content, relying primarily o
 The learner applies some course concepts but may miss opportunities to make deeper connections or reference specific case data.
 
 **Fully meets expectations (10 pts):**
-The learner effectively applies concepts from executive session, readings, and Canucks case, making relevant and specific connections.
+The learner effectively applies concepts from executive session, readings, and Predators case, making relevant and specific connections.
 
 ---
 
@@ -1166,7 +1096,7 @@ The learner accurately describes and analyzes 3+ revenue streams, demonstrating 
 "Media rights generate 55% of NHL revenue, but this value depends entirely on
 competitive balance maintained through revenue sharing. Without sharing, wealthy
 teams would monopolize talent, creating predictable outcomes that decrease media
-value for all. The Canucks benefit from shared national media revenue ($XX million)
+value for all. The Predators case shows how market selection dramatically affects
 but must compete for scarce local sponsorship dollars..."
 
 ---
@@ -1203,14 +1133,14 @@ The learner makes minimal or no reference to course content, relying primarily o
 The learner applies some course concepts but may miss opportunities to make deeper connections or reference specific case data.
 
 **Fully meets expectations (10 pts):**
-The learner effectively applies concepts from executive session, readings, and Canucks case, making relevant and specific connections.
+The learner effectively applies concepts from executive session, readings, and Predators case, making relevant and specific connections.
 
 **Example Excerpt (Fully Meets):**
 "As Kevin Abrams noted in the executive session, 'We're a $10 billion mom and pop
 shop'—this captures sport's unique tension between massive valuations and
-relationship-driven operations. The Canucks case reinforces this: despite a
-$1.15B franchise valuation, revenue depends heavily on local market dynamics
-and league-wide revenue sharing policies."
+relationship-driven operations. The Predators case reinforces this: market feasibility
+depends heavily on local demographics, corporate base, marketing effectiveness,
+and the revenue ecosystem unique to each potential city."
 
 ---
 

@@ -60,9 +60,9 @@ Their projections showed break-even by Year 5 and profitability by Year 7.
 
 [Pause, lean forward]
 
-Ten years later? They never achieved profitability. Not once.
+Ten years later? The deal significantly underperformed expectations.
 
-Cumulative losses: over $1.5 billion.
+Analyst estimates suggest cumulative losses exceeded $1.5 billion, especially in the deal's early years.
 
 [ON-SCREEN TEXT: "10 years later: -$1.5B total losses"]
 
@@ -240,7 +240,7 @@ In 2013, Rogers Communications paid $5.2 billion for exclusive Canadian NHL righ
 nearly 3× more per year than the previous deal. Their projections showed profitability
 by Year 7.
 
-Ten years later: They never achieved profitability. Cumulative losses exceeded $1.5 billion.
+Ten years later: The deal underperformed initial profitability expectations, likely producing significant losses in its early years. Analyst estimates suggest cumulative losses exceeded $1.5 billion.
 
 **The Strategic Challenge:**
 
@@ -410,6 +410,33 @@ d) Sell the rights to a competitor
 
 ---
 
+### Element 4A: Details - Widget Instructions (Expandable)
+
+**Details Element Title:** `Need help? About this pre-assessment`
+
+```
+This diagnostic quiz reveals your current understanding of media rights — there's no grade, just insights.
+
+**What to expect:**
+- 14 questions covering media valuation, platform economics, and deal structure
+- Mix of multiple choice and scenario-based questions
+- Takes 5-7 minutes
+
+**How to approach it:**
+- Answer based on what you know NOW, before the week's content
+- Don't guess randomly — "I don't know" is valuable data
+- Your score helps personalize your learning path
+
+**After completing:**
+- Score 0-6: Focus extra time on Module 3's frameworks
+- Score 7-9: You have solid foundations, challenge yourself with case analysis
+- Score 10-14: Strong intuitions — focus on nuance and edge cases
+
+**Remember:** This isn't graded. Lower scores just mean you'll learn more this week!
+```
+
+---
+
 ## Element 5: Infobox - What Your Results Mean
 
 **Type:** Infobox (Insight variant)
@@ -430,7 +457,7 @@ Remember: This quiz isn't graded, it's a diagnostic tool to help you learn effic
 ## Module Summary
 
 **What You've Accomplished:**
-You've been hooked by a real media rights disaster—the Rogers/NHL $5.2B deal that never achieved profitability—and you've taken your first steps toward understanding it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your media strategy knowledge stands. That clarity isn't a weakness—it's your competitive advantage for this week.
+You've been hooked by a real media rights case study—the Rogers/NHL $5.2B deal that significantly underperformed expectations—and you've taken your first steps toward understanding it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your media strategy knowledge stands. That clarity isn't a weakness—it's your competitive advantage for this week.
 
 **Key Insight:**
 The fact that you struggled with valuation questions in the diagnostic is expected. Media rights economics is MORE COMPLEX than most revenue streams because you're predicting consumer behavior 10-15 years into the future (cord-cutting, streaming adoption, platform economics). Even experts with decades of data get it wrong. Week 2 teaches you the frameworks that improve your odds—but Module 0 taught you humility: always stress-test your assumptions and plan for scenarios where you're wrong.

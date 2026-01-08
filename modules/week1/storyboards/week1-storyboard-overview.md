@@ -41,9 +41,9 @@ This storyboard has been split into individual module files for easier navigatio
    - Simulation: Build $500M revenue portfolio
    - Strategic decision-making with trade-offs
 
-6. **[The Canucks Challenge](modules/module-5-case-study.md)** (12 KB)
+6. **[The Predators Problem](modules/module-5-case-study.md)** (12 KB)
    - Real case analysis applying Week 1 frameworks
-   - Canucks revenue strategy and league dynamics
+   - Nashville Predators market feasibility and marketing strategy
 
 7. **[Your Executive Memo](modules/module-6-assessment.md)** (25 KB)
    - Executive memo assignment (WLO 1.1-1.4)

@@ -907,18 +907,5 @@ Upload your team's Media Strategy Memo here.
 
 ---
 
-## Module 6 Complete - Transition to Module 7
-
-**What You've Accomplished:**
-You've completed Week 2's assessments:
-1. **Individual:** Rogers Mini-Case Memo demonstrating media rights analysis mastery (55 points + 5 PAIRR bonus)
-2. **Team:** CFL Expansion Milestone 2—Media & Content Strategy for your proposed franchise (20 points)
-
-**Up Next: Module 7 - Wrap-Up & Week 3 Preview**
-
-Now that you've demonstrated mastery of Week 2 content, it's time to wrap up the week and preview Week 3. In Week 3, you'll develop your **Sponsorship & Betting Strategy** for your CFL expansion franchise.
-
-See you in Module 7!
-
 ---
 

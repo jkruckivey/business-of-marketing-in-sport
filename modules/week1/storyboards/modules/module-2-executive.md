@@ -158,7 +158,7 @@ Successful organizations build revenue ecosystems, not portfolios.
 - NFL model (60% of all revenue shared)
 - EPL model (more entrepreneurial, less sharing)
 - Why revenue sharing maintains competitive balance
-- Prepares for The Canucks Challenge case study
+- Prepares for The Predators Problem case study
 
 **FULL SCRIPT:**
 
@@ -203,8 +203,8 @@ NARRATOR:
 Why this matters: Revenue sharing limits strategic options, creates governance tensions,
 and affects team valuations.
 
-In the Vancouver Canucks case, you'll see how revenue sharing—and currency headwinds—
-affect strategic decisions.
+In the Nashville Predators case, you'll see how market feasibility and marketing strategy
+affect decisions about franchise success and potential relocation.
 
 [END SCREEN]
 ```

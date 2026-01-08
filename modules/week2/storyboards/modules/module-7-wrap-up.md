@@ -468,7 +468,7 @@ are great for crowdsourcing ideas from other teams.
 
 **How Week 2 Supports Your Final Strategic Vision:**
 
-Week 2 taught you how to evaluate and design media rights strategies—the largest revenue stream (40-60%) for most sports properties. This expertise is central to your Week 5 capstone.
+Week 2 taught you how to evaluate and design media rights strategies—typically the largest revenue stream (often 40–60%, varying by league) for most sports properties. This expertise is central to your Week 5 capstone.
 
 **What You Mastered:**
 - Media rights valuation frameworks (audience × demographics × exclusivity × platform reach)
@@ -486,7 +486,7 @@ Your Week 5 strategic vision must integrate Week 2's media frameworks comprehens
 
 **Integration Across All Weeks:**
 - Week 1 = Revenue ecosystem foundation
-- **Week 2 = Media rights specialization (40-60% of revenue)**
+- **Week 2 = Media rights specialization (typically 40–60% of revenue)**
 - Week 3 = Sponsorship/betting specialization
 - Week 4 = Athlete brand specialization
 - Week 5 = Synthesis into 5-year vision

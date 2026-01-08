@@ -112,7 +112,7 @@ Cost Structures.
 
 Linear TV: Rights fees at 60-70% plus production at 20-30% plus low distribution costs. Infrastructure already exists—cable networks.
 
-Streaming: Rights fees at 40-50% plus technology at 25-35% plus customer acquisition at 20-30%. Must build platform from scratch—$50-100M initial investment. Customer acquisition cost: $50-200 per subscriber. Front-loaded costs—heavy Year 1-3 investment.
+Streaming: Rights fees at 40-50% plus technology at 25-35% plus customer acquisition often at 20-30% of early costs. Must build platform from scratch—$50-100M initial investment. Customer acquisition typically costs $50-200 per subscriber. Front-loaded costs—heavy Year 1-3 investment.
 
 ---
 
@@ -123,7 +123,7 @@ Profitability Timelines.
 
 Linear TV: Immediate if priced right. If ad revenue plus carriage fees exceeds rights plus production, you're profitable Day 1. But assumes stable viewership—cord-cutting risk.
 
-Streaming: 3-5 years using customer lifetime value model. Year 1-2: Heavy losses building platform, acquiring customers. Year 3-4: Approaching break-even. Year 5+: Profitability. Requires customer lifetime value exceeding customer acquisition cost.
+Streaming: Streaming platforms typically lose money for the first 3-5 years as they invest in rights and customer acquisition before reaching scale. Year 1-2: Heavy losses building platform, acquiring customers. Year 3-4: Approaching break-even. Year 5+: Profitability. Requires customer lifetime value exceeding customer acquisition cost.
 
 Key Risks.
 

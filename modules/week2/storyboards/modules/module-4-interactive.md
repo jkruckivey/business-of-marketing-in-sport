@@ -261,17 +261,4 @@ Comparing strategies reveals multiple paths to success and failure. You'll see h
 - Content portfolio balance matters (anchor properties + niche content for retention)
 - Pricing psychology affects both acquisition and churn
 
-**Strategic Competency Achieved:**
-You can now evaluate real-world media rights deals through the lens of platform economics. When you read about Netflix paying $500M for WWE rights or Apple TV+ securing MLS for $250M/year, you understand the LTV calculations, subscriber acquisition costs, and profitability timelines driving those decisions.
-
-**Up Next: The Rogers Challenge (23-25 minutes)**
-
-Now you'll analyze Rogers Communications' actual $5.2B, 12-year NHL deal—the largest media rights agreement in Canadian history. Armed with the simulation experience, you'll critically evaluate their decisions using 4 interactive data widgets:
-
-- Was Rogers' exclusive NHL bet brilliant long-term thinking or strategic overreach?
-- How did changing consumer behavior (cord-cutting) impact their projections?
-- What would YOU have done differently with $5.2B at stake?
-
-The case has real financial data, competitive analysis tools, and viewership trend visualizers. This is where theory meets reality.
-
 ---

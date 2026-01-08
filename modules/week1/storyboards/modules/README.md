@@ -11,7 +11,7 @@ This directory contains individual module files split from the main Week 1 story
 | `module-2-executive.md` | 3.6 KB | Inside the Sports Business | SME video session |
 | `module-3-core-content.md` | 43 KB | Five Revenue Streams That Power Sports | 8 interactive widgets, V3 redesign |
 | `module-4-interactive.md` | 11 KB | Build Your Revenue Empire | Revenue Empire Builder simulation |
-| `module-5-case-study.md` | 12 KB | The Canucks Challenge | NHL Vancouver Canucks analysis |
+| `module-5-case-study.md` | 12 KB | The Predators Problem | NHL Nashville Predators case (9B09A006) |
 | `module-6-assessment.md` | 25 KB | Your Executive Memo | Reflection memo + rubric |
 | `module-7-wrap-up.md` | 5 KB | Looking Ahead to Week 2 | Week synthesis, discussion |
 

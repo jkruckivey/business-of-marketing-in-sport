@@ -68,7 +68,10 @@
       "Bash(/usr/local/bin/npx claude-code-templates@latest --hook=automation/simple-notifications --yes)",
       "Bash(/opt/homebrew/bin/npx claude-code-templates@latest --hook=automation/simple-notifications --yes)",
       "Bash(git stash show:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(git rm:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(open:*)"
     ],
     "deny": [],
     "ask": [],

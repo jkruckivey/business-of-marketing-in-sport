@@ -41,7 +41,7 @@ Week 2 contains 8 modules organized in this directory:
 
 ### Week 2 Assessment
 - **Weekly Engagement:** Mini-Case Memo (40% weekly grade)
-- **Anchor Project:** Milestone 1 - Team Formation & Property Selection (60% final project)
+- **Anchor Project:** Milestone 1 - Property Selection (60% final project)
 - **⏱️ Estimated Time:** 7-9 hours total
 
 ---

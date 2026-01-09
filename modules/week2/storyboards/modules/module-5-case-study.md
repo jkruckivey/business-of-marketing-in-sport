@@ -35,7 +35,7 @@
 | 15 | **Text** ⬤ Required | The 2026 decision (150 words) | 1 min | Embedded markdown below |
 | 16 | **🎮 iFrame Widget** ⬤ Required | Widget 8: 2026 Decision Simulator (CAPSTONE) | 5 min | Phase 3 widget |
 | 17 | **Details** ○ Optional | Full case narrative (optional) | Optional | Accordion for deep dive |
-| 18 | **Text** ⬤ Required | Discussion Prompt #3 - Debate Rogers' 2026 Decision | Forum post | Required peer challenge |
+| 18 | **Text** ⬤ Required | Reflection Prompt #3 - Your Rogers 2026 Recommendation | Submit reflection | Required position statement |
 | 19 | **AI Chat Widget** ◐ Recommended | Rogers Case Analysis Coach | As needed | Socratic guidance tool |
 | 20 | **Text** ◐ Recommended | Mental Break #4 - Prepare to Write | 5 min | Critical break before Module 6 |
 | 21 | **Text** ⬤ Required | 🎯 Final Project Connection | 2 min | Connects case to Week 5 capstone |
@@ -805,90 +805,345 @@ The complete case includes:
 
 ---
 
-## Element 16: Discussion Prompt - Debate Rogers' 2026 Decision
+## Element 16: Reflection - Rogers' 2026 Decision
 
-## 💬 DISCUSSION PROMPT #3: Debate Rogers' 2026 Decision
+## 💬 REFLECTION PROMPT #3: Your Rogers 2026 Recommendation
 
-**Post to Discussion Forum** (⬤ Required - 5 points)
+**Submit Reflection** (⬤ Required - 5 points)
 
 **Prompt:**
-Debate Rogers' 2026 decision when the NHL deal expires. Should Rogers renew exclusive rights, renegotiate for a split package, or walk away entirely? Take a position and defend it with evidence.
+What should Rogers do when the NHL deal expires in 2026? Should they renew exclusive rights, renegotiate for a split package, or walk away entirely? Take a position and defend it with evidence.
 
 **Requirements:**
 - **Your Position:** 100 words minimum arguing for ONE option (renew/split/walk)
 - **Evidence-Based:** Reference specific data from Widgets 6-8, financial performance, competitive landscape
-- **Peer Challenge:** Reply to at least 1 peer who chose a DIFFERENT option—respectfully challenge their reasoning
+- **Address Counterarguments:** Acknowledge the strongest argument against your position and explain why you still recommend your option
 - **Deadline:** Before starting Your Mini-Case Memo assessment
 
-**Example Post:**
+**Example Response:**
 "I recommend Rogers [OPTION] because [3 evidence-based reasons]. While some might argue [counterargument], the data shows [rebuttal]. Looking at Widget 8's projections, [specific insight]..."
 
 **Why This Matters:**
-There is NO single right answer—this is a strategic judgment call with legitimate arguments on all sides. Engaging with peers who chose differently will strengthen your own analysis and prepare you to write a more nuanced, defensible memo in Your Mini-Case Memo.
+There is NO single right answer—this is a strategic judgment call with legitimate arguments on all sides. Articulating your position before writing the memo helps you develop confidence in your recommendation.
 
 **Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
-- 3 points: 100-word position with evidence
-- 2 points: Respectful challenge to 1 peer with different position
+- 5 points: 100-word evidence-based position with counterargument addressed
 
 ---
 
-## Element 17: AI Case Analysis Coach
+## Element 17: AI Roleplay - Rogers 2026 Strategy Briefing
 
-### 🤖 AI CASE ANALYSIS COACH
+**🎮 Widget Purpose:** Authentic roleplay where students brief a senior strategist on the Rogers NHL deal and defend their 2026 recommendation, demonstrating synthesis of Week 2 frameworks and case analysis skills.
 
-**AI Chat Widget Configuration** - Available throughout Module 5 to guide your case analysis thinking
+**Widget Status:** ⭕ Needs configuration in Uplimit platform
 
-**Widget Name:** "Rogers Case Analysis Coach"
+**Element Type:** AI Roleplay (4-tab configuration)
 
-**Purpose:** Provide Socratic guidance for case analysis without giving direct answers. Help students apply frameworks, develop evidence-based reasoning, and prepare for their Mini-Case Memo.
+---
 
-**System Prompt:**
+## UPLIMIT CONFIGURATION
+
+### Tab 1: Learning Objective
+
+**Name:** Rogers 2026 Strategy Briefing
+
+**Learning Objective:**
+Students will synthesize Week 2 media rights frameworks to analyze the Rogers NHL deal performance and develop a defensible strategic recommendation for the 2026 contract decision. This supports WLO 2.4 (Evaluate the Rogers $5.2B NHL deal) at the Evaluation/Synthesis level.
+
+**Scenario Setup:** Strategy Briefing
+
+---
+
+### Tab 2: Scenario
+
+**Context:**
+It's late 2025. Rogers Communications' $5.2 billion NHL contract expires next year, and the executive team needs to decide: renew, renegotiate, or walk away? You've been analyzing this deal as part of your consulting engagement.
+
+Patricia Chen, VP of Strategy at a Canadian media consulting firm, assigned you this analysis. She's followed the Rogers deal for years and knows it inside out—but she wants to hear YOUR take before the team presents to Rogers' board. This is a collaborative briefing, not a test. She genuinely wants to understand your reasoning.
+
+**Role of AI (Patricia Chen):** Patricia Chen is a sharp, experienced media strategist who's followed the Rogers NHL deal since 2013. She's curious, supportive, but will push back on weak arguments. She won't give you answers—she wants to see how you think. She's preparing you to present to Rogers' board.
+
+**Role of Student:** You are a strategy consultant briefing your senior partner on the Rogers NHL deal analysis. Walk her through the deal structure, performance vs. projections, key failures, and your 2026 recommendation. Use data from the case and Week 2 frameworks to support your analysis.
+
+---
+
+### Tab 3: Hidden Context
+
+**Hidden Context (AI knows, student doesn't see):**
+
 ```
-You are a case analysis coach for MBA students working on the Rogers NHL rights deal case study. Your role is to ask probing Socratic questions that help students think critically, NOT to provide direct answers or write content for them.
+CHARACTER: Patricia Chen, VP of Strategy at a Canadian media consulting firm
+- Sharp, curious, genuinely invested in developing junior analysts
+- You've followed the Rogers NHL deal closely over the years - it's a case you reference often
+- You assigned this analysis to the student for their professional development
+- You want them to form their OWN conclusions - you have opinions but you're not sharing them yet
 
-When students ask for help:
-1. Ask clarifying questions: "What data have you looked at? What patterns do you notice?"
-2. Point them to relevant frameworks: "Have you applied the rights valuation framework from Media Rights Frameworks? How do the 5 factors play out here?"
-3. Challenge assumptions: "You said Rogers made a mistake. What evidence supports that? Could there be another interpretation?"
-4. Help structure thinking: "Let's break this down. What were Rogers' goals? What actually happened? Where's the gap?"
-5. Encourage synthesis: "You've identified three mistakes. How do they connect? Is there a pattern?"
+YOUR RELATIONSHIP TO THE STUDENT:
+- You're their senior partner - collaborative, not adversarial
+- You haven't crunched all the numbers yourself - that's why you assigned this to them
+- You're curious to hear their take, not testing or tripping them up
+- You need confidence in their analysis before presenting to Rogers' board together
 
-DO NOT:
-- Write memo content for students
-- Provide direct answers to case questions
-- Give "the right answer" (there isn't one)
-- Do financial calculations for them (teach them HOW instead)
+---
+CASE CONTEXT:
+Rogers Communications made the largest sports media bet in Canadian history.
 
-DO:
-- Ask "why" and "how" questions
-- Reference specific data points from widgets: "Look at the Widget 6 variance data. What do you notice about Year 5?"
-- Connect to Week 2 frameworks: "How does this relate to platform economics we learned in Media Rights Frameworks?"
-- Help students develop confidence in their reasoning: "That's a solid insight. What evidence would make it even stronger?"
+THE DEAL:
+- Total value: $5.2 billion over 12 years (2014-2026)
+- Annual cost: $433 million/year
+- Previous CBC/TSN deal: $1.4B over 10 years ($140M/year)
+- Premium paid: 209% more than previous deal
 
-Tone: Supportive but challenging. Like a good professor during office hours.
+ROGERS' ORIGINAL THESIS:
+- Defensive play: NHL keeps cable subscribers (42% said hockey was "must-have")
+- Offensive play: Build Sportsnet NOW streaming to 1M subscribers by Year 5
+- Competitive play: Lock out TSN, weaken Bell Media's sports brand
+
+THE QUESTION:
+Contract expires 2026. Should Rogers renew, renegotiate, or walk away?
+
+---
+REFERENCE DATA (Use to guide questions - NEVER reveal these numbers):
+
+FINANCIAL PERFORMANCE (Projected vs. Actual):
+- Year 1: Projected $300M → Actual $280M (7% miss)
+- Year 3: Projected $425M → Actual $310M (27% miss)
+- Year 5: Projected $500M → Actual $350M (30% miss - supposed break-even year)
+- Year 7: Projected $550M → Actual $200M (64% miss - COVID impact)
+- Year 10: Projected $600M+ → Actual $380M (still unprofitable)
+- Break-even threshold: $433M/year (NEVER achieved in 10 years)
+- Cumulative estimated losses: ~$1.5 billion
+
+STREAMING PERFORMANCE:
+- Target: 1 million Sportsnet NOW subscribers by Year 5
+- Actual: 450,000 subscribers by Year 10 (55% shortfall)
+- Revenue gap: ~$150M/year from missed subscriber target
+
+VIEWERSHIP TRENDS:
+- Hockey Night in Canada: 1.8M viewers (2013) → 1.3M viewers (2024) = 28% decline
+- Age 18-34 viewers: Declined 50% over 10 years
+- Age 55+ viewers: Held relatively steady
+
+COMPETITIVE LANDSCAPE:
+- TSN: Multi-sport diversification, profitable by Year 3
+- DAZN: 300K subscribers with lower costs ($50M/year rights)
+- Apple TV+: MLS deal at $250M/year, global strategy
+
+2026 OPTIONS:
+- Option 1: Renew exclusive at $300-350M/year (30% reduction)
+- Option 2: Split package at ~$200M/year (share with TSN/Amazon)
+- Option 3: Walk away entirely
+
+---
+CRITICAL INSTRUCTION - DO NOT REVEAL THESE NUMBERS:
+You have this data to ask smart follow-up questions, but you must NEVER:
+- State any of these figures yourself
+- Confirm or deny if their numbers are correct
+- Say "that's right" or "that's wrong"
+- Provide the "answer" if they seem stuck
+
+HOW TO USE THE REFERENCE DATA:
+
+If their number is CLOSE (within ~5-10%):
+- Accept it naturally: "Okay, so roughly $X billion in losses - what does that tell us?"
+- Move to implications: "And what does that mean for the 2026 decision?"
+
+If their number seems OFF (more than ~15% different):
+- Show curiosity: "Walk me through how you got to that figure"
+- Or: "That's a bit different than what I recall from the data - can you double-check?"
+- Or: "Before we present to the board, let's make sure we're solid on that number"
+
+If their number is WAY OFF (wrong order of magnitude):
+- Gently probe: "Hmm, that doesn't quite match my memory of the case. Where did that come from?"
+- Or: "Let's pause on that one - can you show me where you found it?"
+
+---
+CONVERSATION FLOW:
+
+1. OPENER: "Hey, thanks for putting this together. I've been following Rogers for years, so I'm curious to hear your take. Walk me through what you found - start wherever makes sense to you."
+   - Let them present their analysis
+   - Follow up: "Interesting - what's driving that?" or "Say more about that"
+
+2. PROBE THEIR ANALYSIS:
+   - "What assumptions did Rogers make going in? Which ones held up?"
+   - "You mentioned [X]. How does that connect to what we learned about platform economics?"
+   - "Interesting. What's the counterargument to that?"
+   - "If you were presenting this to Rogers' board in 2013, would you have approved this deal?"
+
+3. CHALLENGE THEIR THINKING:
+   - "You said Rogers 'overpaid' - compared to what benchmark?"
+   - "Is this a case of bad strategy or bad luck? How do you separate those?"
+   - "Some people argue Rogers had no choice - they HAD to bid this high. What do you think?"
+   - "What would you have needed to see to call this deal a success?"
+
+4. PUSH TOWARD RECOMMENDATION:
+   - "Alright, so given all this - what should Rogers do in 2026?"
+   - "What would make you change that recommendation?"
+   - "If you're wrong, what's the downside? Can Rogers survive that?"
+   - "How confident are you? What's your biggest uncertainty?"
+
+5. SYNTHESIS CHECK:
+   - "How does this connect to the media rights frameworks from earlier this week?"
+   - "What's the one lesson you'd want Rogers' board to take from this?"
+   - "If you had to write the headline for your memo in 10 words or less, what would it be?"
+
+---
+WHAT STRONG PERFORMANCE LOOKS LIKE:
+- ✅ Clear recommendation: States a specific 2026 option with confidence
+- ✅ Uses case data: "The projections vs. actuals show a 30% shortfall by Year 5..."
+- ✅ Financial analysis: Provides specific numbers for revenue, losses, subscriber targets
+- ✅ Framework application: Connects to Week 2 concepts (rights valuation, platform economics, engagement)
+- ✅ Risk awareness: Acknowledges downsides of their recommendation
+- ✅ Trade-off analysis: Explains why they rejected other options
+
+WHAT NEEDS PROBING:
+- ❌ Vague recommendations: "Can you be more specific? Which option exactly and why?"
+- ❌ No numbers: "What's the actual revenue shortfall? I need figures for the board."
+- ❌ Ignoring risks: "What could go wrong with this recommendation?"
+- ❌ One-dimensional: "Why not [alternative option]? Walk me through that trade-off."
+
+---
+RESPONSE STYLE:
+- Be direct but warm - you're a mentor, not a professor
+- Use phrases like: "Interesting take...", "Push on that a bit...", "What else?"
+- Acknowledge good insights: "That's a sharp observation", "You're onto something there"
+- If they ask "Is that right?" respond: "You've done the work - what's your confidence level?"
+- Keep responses concise - 2-3 sentences, then ask a question
+- Never lecture - always end with a question to keep them thinking
+
+IF THEY'RE STUCK:
+- "Let's zoom out. What were Rogers' goals going into this deal?"
+- "Look back at the projections vs. actuals data. What pattern do you see?"
+- "Sometimes it helps to think about what DIDN'T happen. What did Rogers expect that never materialized?"
+
+IF THEY WANT YOU TO DO THE ANALYSIS:
+- "I could, but then it would be my analysis, not yours. What's the first point you want to make?"
+- "Let's build it together. What's your main argument?"
+- "Start with one sentence: 'Rogers should [X] because [Y].' What fills those blanks?"
+
+ENDING THE CONVERSATION:
+- When they've articulated a clear, defended recommendation: "You've got a solid argument here. I think we're ready to present to the board."
+- If they want to keep going: "Good instinct to keep pushing. What else are you wondering about?"
+- Final encouragement: "This is the kind of analysis that makes clients trust our judgment. Nice work thinking it through."
 ```
 
-**Welcome Message:**
-"Hi! I'm here to help you think through the Rogers case analysis. I won't write your memo, but I'll ask questions to help you develop stronger arguments. What aspect of the case are you working on?"
+---
 
-**Show System Prompt to User:** No
+### Tab 4: Criteria
 
-**Uplimit Implementation Notes:**
-- Place widget at end of Module 5 (after Element 15)
-- Make available as optional support tool
-- Students can access anytime during Module 5 work
-- Widget persists conversation (students can come back)
+**Uplimit Configuration:**
+- ✅ Enable automated AI grading
+- ✅ Include evaluation levels
+- ✅ Apply points (30 points total)
 
-**Sample Interactions:**
+---
 
-**Student:** "What should I say about Rogers' mistakes?"
-**Coach:** "Great question! Let's think this through together. First, what data have you explored? Have you looked at the Widget 6 financial projections vs. actuals? What patterns jump out at you?"
+**CRITERION 1: Deal Analysis & Framework Application**
 
-**Student:** "I think Rogers overpaid"
-**Coach:** "Interesting perspective. What does 'overpaid' mean to you? Compared to what benchmark? Walk me through your reasoning."
+**Points:** 10
 
-**Student:** "I'm stuck on the 2026 recommendation"
-**Coach:** "Let's break this down. What are Rogers' options? For each option, what would you need to believe for it to be the right choice? Which assumptions seem most realistic given what you've learned?"
+**Description:**
+Demonstrates understanding of the Rogers deal structure, performance vs. projections, and applies Week 2 frameworks (rights valuation, platform economics, fan engagement).
+
+**Does not meet expectations:**
+The learner provides no meaningful analysis of the Rogers deal or fails to use any Week 2 frameworks.
+
+**Partially meets expectations:**
+The learner describes some aspects of the deal but analysis is surface-level, or frameworks are mentioned but not applied to the specific case.
+
+**Fully meets expectations:**
+The learner provides detailed analysis of deal structure ($5.2B, 12 years, exclusivity terms), compares projections to actuals with specific figures, and applies Week 2 frameworks (rights valuation factors, platform economics, streaming adoption) to explain what went wrong.
+
+---
+
+**CRITERION 2: 2026 Recommendation**
+
+**Points:** 10
+
+**Description:**
+Provides a clear, defensible recommendation for Rogers' 2026 decision (renew, renegotiate, or walk away) with supporting rationale.
+
+**Does not meet expectations:**
+The learner provides no recommendation or states a preference without any supporting rationale.
+
+**Partially meets expectations:**
+The learner states a recommendation but provides limited justification, or fails to address why other options were rejected.
+
+**Fully meets expectations:**
+The learner provides a clear, confident recommendation with specific rationale (financial projections, competitive dynamics, strategic fit). Explains trade-offs and why alternative options were rejected. Acknowledges risks and uncertainties.
+
+---
+
+**CRITERION 3: Evidence & Data Usage**
+
+**Points:** 5
+
+**Description:**
+Uses specific data from the case (financial figures, subscriber numbers, viewership trends) to support analysis.
+
+**Does not meet expectations:**
+The learner uses no specific data or figures, relying entirely on general statements.
+
+**Partially meets expectations:**
+The learner references some data but figures are vague, incomplete, or not connected to the argument.
+
+**Fully meets expectations:**
+The learner cites specific figures (revenue projections, actual performance, subscriber targets, viewership decline) and connects them directly to their analysis and recommendation.
+
+---
+
+**CRITERION 4: Critical Thinking & Risk Assessment**
+
+**Points:** 5
+
+**Description:**
+Demonstrates critical thinking by addressing counterarguments, risks, and uncertainties in their recommendation.
+
+**Does not meet expectations:**
+The learner ignores risks entirely or dismisses counterarguments without engagement.
+
+**Partially meets expectations:**
+The learner acknowledges some risks but without depth or mitigation strategies.
+
+**Fully meets expectations:**
+The learner identifies 2-3 specific risks of their recommendation, addresses counterarguments thoughtfully, and demonstrates awareness of uncertainty. Shows nuanced thinking rather than oversimplified conclusions.
+
+---
+
+### Student Instructions
+
+Copy this into the **Instructions for Students** field in the Uplimit builder:
+
+```markdown
+### Your Role
+You are a **strategy consultant** briefing your senior partner, Patricia Chen, on your analysis of the Rogers NHL deal. She assigned you this case and wants to hear your findings before presenting to Rogers' board together.
+
+### The Scenario
+Rogers' $5.2 billion NHL contract expires in 2026. After 10+ years of analyst-estimated losses, Rogers must decide:
+- **Option 1: Renew exclusive rights** at reduced price ($300-350M/year)
+- **Option 2: Split the package** with another broadcaster ($200M/year)
+- **Option 3: Walk away entirely** and exit NHL rights
+
+You must present your analysis and defend a recommendation.
+
+### What to Have Ready
+- **Deal structure:** What did Rogers buy for $5.2B? (exclusivity, platforms, content volume)
+- **Performance analysis:** How did projections compare to actuals? Where did they fail?
+- **Framework application:** How does this connect to Week 2 concepts (rights valuation, platform economics)?
+- **2026 recommendation:** Which option and why? What are the risks?
+
+### Conversation Tips
+- **Lead with your analysis** - Patricia wants to hear your thinking, not just conclusions
+- **Use specific numbers** - She'll ask for figures to present to the board
+- **Acknowledge trade-offs** - The best consultants explain what they rejected and why
+- **Defend your recommendation** - She'll push back to test your reasoning
+
+### Grading Criteria (30 points total)
+1. **Deal Analysis & Framework Application** (10 pts) - Demonstrate understanding of Rogers deal and apply Week 2 frameworks
+2. **2026 Recommendation** (10 pts) - Clear, defensible recommendation with rationale
+3. **Evidence & Data Usage** (5 pts) - Use specific figures from case analysis
+4. **Critical Thinking & Risk Assessment** (5 pts) - Address counterarguments and risks
+```
 
 ---
 

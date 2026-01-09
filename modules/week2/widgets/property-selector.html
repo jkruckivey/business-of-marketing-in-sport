@@ -690,6 +690,10 @@
             // Show and expand selection section
             const selectionSection = document.getElementById('selection-section');
             selectionSection.style.display = 'block';
+
+            // Show the inner selection panel
+            document.getElementById('selection-panel').classList.add('visible');
+
             const selectionContent = document.getElementById('selection-content');
             if (!selectionContent.classList.contains('expanded')) {
                 toggleSection('selection');

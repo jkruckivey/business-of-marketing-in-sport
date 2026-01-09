@@ -723,27 +723,25 @@ This builder shows how fan engagement creates revenue beyond just watching games
 
 ---
 
-## 💬 DISCUSSION PROMPT #1: Media Rights Framework Takeaway
+## 💬 REFLECTION PROMPT #1: Media Rights Framework Takeaway
 
-**Post to Discussion Forum** (⬤ Required - 5 points)
+**Submit Reflection** (⬤ Required - 5 points)
 
 **Prompt:**
-Post your #1 takeaway from the media rights framework. What surprised you most about how sports content is valued and monetized?
+What's your #1 takeaway from the media rights framework? What surprised you most about how sports content is valued and monetized?
 
 **Requirements:**
-- **Your Post:** 20 words minimum
-- **Peer Engagement:** Reply to at least 2 peers' posts with thoughtful responses
+- **Your Response:** 50 words minimum
 - **Deadline:** Before moving to Module 4 simulation
 
 **Example Starter:**
-"The biggest surprise for me was [insight]. This challenges my assumption that [previous belief]. I'm curious how [question for peers]..."
+"The biggest surprise for me was [insight]. This challenges my assumption that [previous belief]. Going forward, I'll think differently about [application]..."
 
 **Why This Matters:**
-Sharing insights helps you process what you've learned through the widgets and prepares you to apply frameworks in the simulation. Learning from peers' perspectives strengthens understanding.
+Articulating your key insight helps you process what you've learned through the widgets and prepares you to apply frameworks in the simulation.
 
 **Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
-- 3 points: Thoughtful original post (20+ words)
-- 2 points: Two quality peer replies
+- 5 points: Thoughtful reflection (50+ words) with specific insight
 
 ---
 

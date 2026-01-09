@@ -83,7 +83,11 @@
   },
   "enableAllProjectMcpServers": true,
   "enabledMcpjsonServers": [
-    "executeautomation-playwright-server"
+    "github",
+    "executeautomation-playwright-server",
+    "memory",
+    "fetch",
+    "chrome-devtools"
   ],
   "hooks": {
     "PostToolUse": [

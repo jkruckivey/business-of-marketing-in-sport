@@ -3,10 +3,10 @@
 
 **Purpose:** Assess student understanding of Week 2 content (measures WLO 2.1, 2.2, 2.3, 2.4) AND submit CFL Expansion Project Milestone 2
 
-### Version 1.4.0 Changes
-- **NEW:** Added CFL Expansion Project Milestone 2 submission (team-based)
+### Version 1.5.0 Changes
+- **UPDATED:** CFL Expansion Project Milestone 2 now individual submission
 - Individual Rogers memo remains as primary assessment
-- Milestone 2 adds team-based media strategy component
+- Removed peer feedback/PAIRR methodology - now scaffolded with AI feedback only
 
 ⭐ **SCAFFOLDED ASSESSMENT**: This module breaks memo writing into 3 micro-steps with AI feedback BEFORE final submission. Reduces writing anxiety and improves quality through iterative improvement.
 
@@ -15,26 +15,18 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Text** ⬤ Required | Connecting introduction from Module 5 | Type directly | Narrative bridge to assessment |
-| 2 | **Infobox (Insight)** ⬤ Required | Assessment overview + scaffolded approach + PAIRR | Type directly | Purple variant, 60 pts total |
-| 3 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
-| 5 | **Text Response** ⬤ Required | MICRO-STEP 1: Key Mistakes (3 bullets) | Configure in Uplimit | AI feedback enabled, 5 pts |
-| 6 | **Text Response** ⬤ Required | MICRO-STEP 2: Deal Evaluation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
-| 7 | **Text Response** ⬤ Required | MICRO-STEP 3: 2026 Recommendation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
-| 8 | **Infobox (Callout)** ⬤ Required | Transition to full memo synthesis | Type directly | Blue variant, encouragement |
-| 9 | **Text Response** ⬤ Required | DRAFT MEMO: 2-page synthesis for feedback (1000 words max) | Configure in Uplimit | Submission only, no grading yet |
-| 10 | **Text** ◐ Recommended | **Phase 2A: Peer Feedback Instructions** | Type directly | How to provide effective peer feedback |
-| 11 | **Text** ◐ Recommended | **Phase 2B: AI Feedback Instructions** | Type directly | ChatGPT prompt template |
-| 12 | **Text Response** ◐ Recommended | **Peer Feedback Submission** | Configure in Uplimit | 2 pts bonus, due Day 5 |
-| 13 | **Text Response** ◐ Recommended | **AI Feedback Submission** | Configure in Uplimit | 1 pt bonus, due Day 5 |
-| 14 | **Text** ◐ Recommended | **Phase 3: Comparative Reflection** | Type directly | Instructions for comparing feedback |
-| 15 | **Text Response** ◐ Recommended | **Comparative Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 5 |
-| 16 | **Text Response** ⬤ Required | **FINAL REVISED MEMO** | Configure in Uplimit | Rubric grading, 40 pts, due Day 7 |
-| 17 | **Text** ◐ Recommended | **Phase 5: Post-Revision Reflection** | Type directly | Instructions for reflection |
-| 18 | **Text Response** ◐ Recommended | **Post-Revision Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
-| 19 | **Details** ○ Optional | Rubric details and examples | Type directly | Accordion - transparent criteria |
-| 20 | **AI Chat Widget** ◐ Recommended | Rogers Case Analysis Coach | Configure in Uplimit | Guides thinking, not answers |
-| 21 | **Text** ⬤ Required | Final Project Connection | Type directly | How Module 6 supports capstone |
-| 22 | **Text** ⬤ Required | Module 6 Complete - Transition to Module 7 | Type directly | Recap and preview |
+| 2 | **Infobox (Insight)** ⬤ Required | Assessment overview + scaffolded approach | Type directly | Purple variant, 56 pts total |
+| 3 | **Text Response** ⬤ Required | MICRO-STEP 1: Key Mistakes (3 bullets) | Configure in Uplimit | AI feedback enabled, 5 pts |
+| 4 | **Text Response** ⬤ Required | MICRO-STEP 2: Deal Evaluation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
+| 5 | **Text Response** ⬤ Required | MICRO-STEP 3: 2026 Recommendation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
+| 6 | **Infobox (Callout)** ⬤ Required | Transition to full memo synthesis | Type directly | Blue variant, encouragement |
+| 7 | **Text** ◐ Recommended | **AI Feedback Instructions** | Type directly | ChatGPT prompt template |
+| 8 | **Text Response** ◐ Recommended | **AI Feedback Submission** | Configure in Uplimit | 1 pt bonus |
+| 9 | **Text Response** ⬤ Required | **FINAL MEMO** | Configure in Uplimit | Rubric grading, 40 pts |
+| 10 | **Details** ○ Optional | Rubric details and examples | Type directly | Accordion - transparent criteria |
+| 11 | **AI Chat Widget** ◐ Recommended | Rogers Case Analysis Coach | Configure in Uplimit | Guides thinking, not answers |
+| 12 | **Text** ⬤ Required | Final Project Connection | Type directly | How Module 6 supports capstone |
+| 13 | **Text** ⬤ Required | Module 6 Complete - Transition to Module 7 | Type directly | Recap and preview |
 
 **Scaffolding Rationale:**
 - **Reduces writing anxiety**: Students build confidence through small wins before tackling full memo
@@ -48,7 +40,7 @@
 
 You've just analyzed the Rogers/NHL mega-deal through multiple lenses (Module 5)—watching the 10-year retrospective, exploring financial exhibits, and using interactive widgets to project scenarios. You understand the deal's context, structure, and outcomes.
 
-Now it's time to demonstrate your mastery. Module 6 is your Week 2 summative assessment: a strategic mini-case memo evaluating the Rogers deal and recommending next steps. This assessment uses a scaffolded approach with PAIRR methodology (peer + AI feedback) to develop both your strategic thinking and AI literacy skills.
+Now it's time to demonstrate your mastery. Module 6 is your Week 2 summative assessment: a strategic mini-case memo evaluating the Rogers deal and recommending next steps. This assessment uses a scaffolded approach with AI feedback to develop your strategic thinking.
 
 ---
 
@@ -87,61 +79,23 @@ You are a consultant hired by Rogers Communications in 2024 to assess the NHL de
 • Reference specific data from case widgets (Widgets 6, 7, 8)
 • Due: [Date] by 11:59 PM
 
-**Total Points:** 60 points (15 micro-steps + 40 final memo + 5 PAIRR bonus)
+**Total Points:** 56 points (15 micro-steps + 40 final memo + 1 AI feedback bonus)
 
-**Optional PAIRR Bonus (5 points):**
-- Peer feedback (2 pts) + AI feedback (1 pt) + Comparative reflection (1 pt) + Post-revision reflection (1 pt)
-- Due: Phases 2-3 by Day 5, Phase 5 by Day 7
+**Optional AI Feedback Bonus (1 point):**
+- Generate AI feedback on your draft using ChatGPT prompt provided
+- Submit the AI feedback as evidence of engagement
 
-**⏱️ Total PAIRR Time Investment:** 2-3 hours spread across the week
+**⏱️ Total Time Investment:** 2-3 hours
 - Micro-steps (1-3): 30-45 min
-- Draft memo: 60-90 min
-- Peer review (giving): 20-30 min
-- AI feedback: 5-10 min
-- Comparative reflection: 15-20 min
-- Revision: 30-45 min
-- Post-revision reflection: 10-15 min
+- Final memo: 60-90 min
+- AI feedback (optional): 5-10 min
 
 **WLOs Assessed:** 2.1, 2.2, 2.3, 2.4
 ```
 
 ---
 
-## Element 3: PAIRR Assessment Overview (Infobox - Callout)
-
-**Uplimit Implementation:**
-1. Select **Infobox** element
-2. Choose variant: **Callout**
-3. Copy markdown below:
-
-```markdown
-Title: ◉ PAIRR Assessment: Scaffolded + Dual Feedback Approach
-
-This assessment combines scaffolded micro-steps with dual feedback (peer + AI) to develop both strategic thinking and AI literacy.
-
-**Phase 1: Build Your Foundation (Due Day 3)**
-- Complete 3 micro-steps with AI guidance (15 pts participation)
-- Draft your full memo based on micro-step insights (80% version for feedback)
-
-**Phase 2: Dual Feedback (Due Day 5)**
-- Peer review: Review assigned classmate's draft using rubric (2 pts bonus)
-- AI review: Generate ChatGPT feedback on your own draft (1 pt bonus)
-
-**Phase 3: Comparative Reflection (Due Day 5)**
-- Compare peer vs. AI feedback: Which was more useful? (300-400 words, 1 pt bonus)
-
-**Phase 4: Revision (Due Day 7)**
-- Revise memo incorporating feedback. Submit final version for grading (40-point rubric).
-
-**Phase 5: Post-Revision Reflection (Due Day 7)**
-- Reflect on revision choices: Which feedback influenced you most? (200-300 words, 1 pt bonus)
-
-**Total Possible: 60 points** (15 pts micro-steps + 40 pts final memo + 5 pts PAIRR bonus)
-```
-
----
-
-## Element 4: Micro-Step 1 - Key Mistakes (Text Response)
+## Element 3: Micro-Step 1 - Key Mistakes (Text Response)
 
 **Question Text:**
 ```
@@ -167,7 +121,7 @@ Example:
 
 ---
 
-## Element 5: Micro-Step 2 - Deal Evaluation (Text Response)
+## Element 4: Micro-Step 2 - Deal Evaluation (Text Response)
 
 **Question Text:**
 ```
@@ -191,7 +145,7 @@ Was the deal justified given Rogers' strategic goals (defend cable, build Sports
 
 ---
 
-## Element 6: Micro-Step 3 - 2026 Recommendation (Text Response)
+## Element 5: Micro-Step 3 - 2026 Recommendation (Text Response)
 
 **Question Text:**
 ```
@@ -219,7 +173,7 @@ Your recommendation should:
 
 ---
 
-## Element 7: Transition Infobox (Callout)
+## Element 6: Transition Infobox (Callout)
 
 ```
 Title: ✅ Micro-Steps Complete! Ready to Write Your Full Memo
@@ -249,104 +203,16 @@ Now, use your 3 micro-steps as building blocks to write a polished 2-page execut
 
 ---
 
-## Element 8: Draft Memo Submission (Text Response)
-
-**Question Text:**
-```
-Submit your DRAFT 2-page Rogers NHL Deal Mini-Case Memo here.
-
-This is your Phase 1 draft (80% version) for peer and AI feedback. It will NOT be graded yet.
-
-You may either:
-• Type directly in the text box below, OR
-• Upload a PDF file
-
-Reminder: Max 1000 words, executive memo format
-
-**Note:** After submitting, you'll receive peer feedback from a classmate and generate AI feedback using ChatGPT. Then you'll revise and submit your final version for grading (Element 15).
-```
-
-**Evaluation Method:** Submission only (no points, no grading)
-
-**Due Date:** Day 3
-
----
-
-## Element 9: Phase 2A - Peer Feedback Instructions
+## Element 7: AI Feedback Instructions (Optional)
 
 **Uplimit Implementation:**
 1. Select **Text** element
 2. Copy markdown below:
 
 ```markdown
-# Phase 2A: Peer Feedback Instructions (2 Points Bonus)
+# AI Feedback Instructions (1 Point Bonus)
 
-After completing your draft memo, you'll review a classmate's draft.
-
-## How to Provide Effective Peer Feedback:
-
-### Step 1: Read the Draft (10 minutes)
-- Read your classmate's complete draft memo
-- Note strengths and areas for improvement
-- Refer to the 40-point rubric (Element 18) for grading criteria
-
-### Step 2: Evaluate Using Rubric (15 minutes)
-
-**Deal Evaluation (12 points)**
-- Does the memo apply Week 2 frameworks (rights valuation, platform economics, fan engagement)?
-- Is the analysis supported by specific evidence from case data?
-- Does it demonstrate nuanced understanding of Rogers' strategic rationale vs. financial outcomes?
-- **Feedback:** What's strong? What needs more framework application or data support?
-
-**Mistake Identification (10 points)**
-- Are 2-3 specific mistakes identified with supporting evidence from exhibits?
-- Does the analysis go beyond obvious errors to reveal strategic misjudgments?
-- **Feedback:** What's strong? What needs more specificity or evidence?
-
-**Strategic Recommendations (10 points)**
-- Is the 2026 recommendation specific and actionable?
-- Are recommendations defensible with evidence and market analysis?
-- Are trade-offs and risks acknowledged?
-- **Feedback:** What's strong? What's missing from the strategy?
-
-**Application of Concepts (5 points)**
-- Does the memo apply concepts from readings, executive session, and simulation?
-- Are relevant connections made demonstrating integrated learning?
-- **Feedback:** What's strong? Where could connections be strengthened?
-
-**Business Communication (3 points)**
-- Professional memo format? Clear writing? Within 1000 words?
-- **Feedback:** What's strong? Any clarity issues?
-
-### Step 3: Write Constructive Feedback (10 minutes)
-
-Provide 400-600 word feedback addressing:
-1. **What's Working Well:** 2-3 specific strengths
-2. **What Needs Improvement:** 3-4 specific weaknesses with suggestions
-3. **Priority Revision:** If limited time, what's the ONE most important fix?
-
-**Example Feedback:**
-"Strong application of platform economics framework in your deal evaluation! You clearly explained why Rogers' linear + streaming strategy struggled. For improvement: Your mistake identification could be more specific. Instead of 'Rogers overestimated streaming,' reference the exact subscriber gap from Widget 6 (projected 1M vs. actual 450K = 55% shortfall). This quantification strengthens your argument significantly."
-
-### Step 4: Submit Peer Feedback
-
-Submit via peer feedback submission box (Element 11) by Day 5.
-
-**Grading:** 2 points bonus for completing thorough peer review.
-```
-
----
-
-## Element 10: Phase 2B - AI Feedback Instructions
-
-**Uplimit Implementation:**
-1. Select **Text** element
-2. Copy markdown below:
-
-```markdown
-# Phase 2B: AI Feedback Instructions (1 Point Bonus)
-
-After completing your draft, generate AI feedback using ChatGPT.
+Before submitting your final memo, you can generate AI feedback using ChatGPT to strengthen your analysis.
 
 ## How to Generate AI Feedback:
 
@@ -405,29 +271,7 @@ Submit the ChatGPT response via Element 12 by Day 5.
 
 ---
 
-## Element 11: Peer Feedback Submission Box (Text Response)
-
-**Uplimit Implementation:**
-1. Select **Text Response** element
-2. Configure as follows:
-
-**Question Text:**
-```
-Submit your peer feedback here (400-600 words).
-
-Reminder: Your feedback should address:
-✓ What's working well (2-3 strengths)
-✓ What needs improvement (3-4 weaknesses with suggestions)
-✓ Priority revision (ONE most important fix)
-```
-
-**Evaluation Method:** Participation credit (2 points)
-
-**Due Date:** Day 5
-
----
-
-## Element 12: AI Feedback Submission Box (Text Response)
+## Element 8: AI Feedback Submission Box (Text Response)
 
 **Uplimit Implementation:**
 1. Select **Text Response** element
@@ -446,69 +290,11 @@ You're graded on submitting AI-generated feedback (not on the quality of that fe
 
 ---
 
-## Element 13: Phase 3 - Comparative Reflection Instructions
-
-**Uplimit Implementation:**
-1. Select **Text** element
-2. Copy markdown below:
-
-```markdown
-# Phase 3: Comparative Reflection (1 Point Bonus)
-
-Now that you've received both peer feedback and AI feedback, compare them.
-
-## Reflection Prompt:
-
-Write 300-400 words comparing the peer feedback you received vs. the AI feedback you generated. Address:
-
-### 1. Quality Comparison (150-200 words)
-- Which feedback was more specific? More actionable?
-- Did peer feedback catch anything AI missed (or vice versa)?
-- Which feedback better understood the context of the Rogers case?
-- Were there contradictions between peer and AI feedback? If so, which did you trust more and why?
-
-### 2. Usefulness for Revision (100-150 words)
-- Which feedback will most influence your revision? Why?
-- Did one source identify a "priority fix" you hadn't considered?
-- Were there suggestions you plan to ignore? Why?
-
-### 3. AI Literacy Insight (50 words)
-- What did this exercise teach you about AI's strengths and limitations for strategic analysis?
-
-**Example Excerpt:**
-"My peer reviewer provided more context-specific feedback, noting that my 2026 recommendation didn't address TSN's competitive response (something only someone familiar with Canadian sports media would catch). However, the AI feedback was more systematic in checking rubric alignment—it caught that I completely missed discussing fan engagement monetization in my deal evaluation. The contradiction was interesting: my peer said my mistake identification was 'strong,' while AI said it 'lacked specificity and exhibit references.' Reviewing my draft again, AI was right—I made general claims without citing Widget 6 data. For revision, I'll prioritize AI's specificity suggestion (add exhibit numbers) and peer's strategic insight (address competitive dynamics)..."
-
-**Grading:** 1 point bonus for thoughtful comparative reflection (300-400 words).
-
-Submit via Element 14 by Day 5.
-```
-
----
-
-## Element 14: Comparative Reflection Submission Box (Text Response)
-
-**Uplimit Implementation:**
-1. Select **Text Response** element
-2. Configure as follows:
+## Element 9: Final Memo Submission (Text Response)
 
 **Question Text:**
 ```
-Submit your comparative reflection here (300-400 words).
-
-Compare the peer feedback you received vs. the AI feedback you generated. Which was more useful? Why?
-```
-
-**Evaluation Method:** Participation credit (1 point)
-
-**Due Date:** Day 5
-
----
-
-## Element 15: Final Revised Memo Submission (Text Response)
-
-**Question Text:**
-```
-Submit your FINAL REVISED 2-page Rogers NHL Deal Mini-Case Memo here (after incorporating peer and AI feedback).
+Submit your FINAL 2-page Rogers NHL Deal Mini-Case Memo here.
 
 You may either:
 • Type directly in the text box below, OR
@@ -560,9 +346,8 @@ Thank you for submitting your Rogers NHL Deal Mini-Case Memo. Your analysis will
 evaluated against the rubric criteria. You should receive feedback within [X days].
 
 In the meantime:
-• Begin work on your Anchor Project: Team Formation & Property Selection (due end of week)
+• Begin work on your Anchor Project (due end of week)
 • Review Week 2 concepts - they'll be foundational for Week 3 (Sponsorship & Betting)
-• Engage in discussion forums with peers about case takeaways
 ```
 
 **Feedback for Excellent Work (36-40 points):**
@@ -628,61 +413,7 @@ Case analysis is a core MBA skill. Let's work together to build your proficiency
 
 ---
 
-## Element 16: Phase 5 - Post-Revision Reflection Instructions
-
-**Uplimit Implementation:**
-1. Select **Text** element
-2. Copy markdown below:
-
-```markdown
-# Phase 5: Post-Revision Reflection (1 Point Bonus)
-
-After submitting your final revised memo, reflect on your revision process.
-
-## Reflection Prompt:
-
-Write 200-300 words reflecting on which feedback most influenced your final revision. Address:
-
-### 1. Revision Choices (150-200 words)
-- Which specific feedback did you incorporate? (Reference peer or AI by name/type)
-- What changes did you make to your memo based on feedback?
-- Was there feedback you chose NOT to incorporate? Why?
-- Did you make any revisions that weren't suggested by either peer or AI?
-
-### 2. Learning About Feedback (50-100 words)
-- What did this process teach you about using feedback effectively?
-- Will you approach peer review or AI tools differently in future assignments?
-
-**Example Excerpt:**
-"I incorporated 4 major revisions: (1) Added specific exhibit references to all mistake claims [AI feedback], (2) Expanded platform economics analysis to compare Rogers' strategy vs. DAZN multi-sport approach [peer feedback], (3) Addressed TSN competitive response in my 2026 recommendation [peer feedback], (4) Cut 200 words of fluff to stay under word limit [AI feedback]. I chose NOT to incorporate peer's suggestion to recommend 'walk away entirely' for 2026—while I appreciated the boldness, the case evidence doesn't support abandoning NHL rights given Sportsnet's brand identity. I also made one revision neither source suggested: I added a risk mitigation table for my split-package recommendation, inspired by the Streaming Wars simulation format. This process taught me that AI is better at systematic rubric checking while peers catch strategic nuances. Going forward, I'll use AI first for completeness checks, then peer review for strategic soundness..."
-
-**Grading:** 1 point bonus for thoughtful post-revision reflection (200-300 words).
-
-Submit via Element 17 by Day 7.
-```
-
----
-
-## Element 17: Post-Revision Reflection Submission Box (Text Response)
-
-**Uplimit Implementation:**
-1. Select **Text Response** element
-2. Configure as follows:
-
-**Question Text:**
-```
-Submit your post-revision reflection here (200-300 words).
-
-Reflect on which feedback most influenced your final revision. What did this process teach you about using feedback effectively?
-```
-
-**Evaluation Method:** Participation credit (1 point)
-
-**Due Date:** Day 7
-
----
-
-## Element 18: Details - Rubric Examples (Optional)
+## Element 10: Details - Rubric Examples (Optional)
 ```
 Title: Rubric Details & Example Excerpts
 
@@ -746,7 +477,7 @@ but may lack depth or miss less obvious strategic errors."
 
 ---
 
-## Element 19: AI Chat Widget - Rogers Case Analysis Coach
+## Element 11: AI Chat Widget - Rogers Case Analysis Coach
 
 ### Student-Facing Text Content:
 **Copy this markdown directly into Uplimit BEFORE the widget:**
@@ -811,42 +542,35 @@ The coach will respond with **probing questions** to help you think deeper:
 
 ---
 
-## Element 21: Module 6 Complete - Transition to Module 7
+## Element 12: Module 6 Complete - Transition to Module 7
 
 **What You've Accomplished:**
 
-You've completed Week 2's summative assessment! You've written an executive-level strategic memo evaluating the Rogers/NHL mega-deal, incorporating insights from Week 2's frameworks, executive interviews, and case analysis. You've experienced the PAIRR methodology—using both peer and AI feedback to improve your strategic thinking and develop AI literacy.
+You've completed Week 2's summative assessment! You've written an executive-level strategic memo evaluating the Rogers/NHL mega-deal, incorporating insights from Week 2's frameworks, executive interviews, and case analysis.
 
 **Key Takeaways:**
 - You can evaluate billion-dollar media deals using multiple analytical frameworks
 - You can identify strategic mistakes with evidence-based reasoning (not just opinions)
 - You can recommend next steps with explicit trade-off analysis and risk assessment
 - You can write concisely for executive audiences under word limits
-- You've learned how to leverage both peer and AI feedback effectively
-
-**PAIRR Process Mastery:**
-- You compared peer vs. AI feedback quality and usefulness
-- You discovered AI's strengths (systematic rubric checking, completeness) and limitations (lacks context, misses strategic nuances)
-- You practiced iterative revision—a critical skill for professional strategy work
-- You reflected on which feedback influenced your final revision decisions
 
 **Assessment Context:**
-This Mini-Case Memo contributes to your Week 2 grade and prepares you for the Week 5 capstone. The memo structure, analytical rigor, and PAIRR process you practiced here will scale to your final strategic vision project.
+This Mini-Case Memo contributes to your Week 2 grade and prepares you for the Week 5 capstone. The memo structure and analytical rigor you practiced here will scale to your final strategic vision project.
 
 ---
 
-## Element 22: CFL Project Milestone 2 Instructions
+## Element 13: CFL Project Milestone 2 Instructions
 
 ### ⓘ Infobox Content
 
 ```markdown
 Title: 🏈 CFL Expansion Project - Milestone 2: Media & Content Strategy
 
-**Team Deliverable:** Media Strategy Memo (3-4 pages)
+**Individual Deliverable:** Media Strategy Memo (2-3 pages)
 **Weight:** 20% of total project grade (20 points)
 **Due:** End of Week 2
 
-Your team will submit ONE document that includes:
+Your submission should include:
 
 **1. CFL Media Rights Context**
 - How does the current CFL-TSN deal work?
@@ -873,26 +597,24 @@ Your team will submit ONE document that includes:
 
 ---
 
-## Element 23: Milestone 2 File Upload
+## Element 14: Milestone 2 File Upload
 
 **Uplimit Configuration:**
 - **Element Type:** File Upload
 - **Allowed Formats:** PDF, DOCX, Google Docs link
-- **Team Submission:** One submission per team
 
 **Submission Instructions:**
 ```markdown
 ## Milestone 2 Submission
 
-Upload your team's Media Strategy Memo here.
+Upload your Media Strategy Memo here.
 
 **Requirements:**
-- 3-4 pages (excluding title page and references)
+- 2-3 pages (excluding title page and references)
 - Professional formatting
-- All team member names on title page
-- One submission per team
+- Your name on title page
 
-**Filename Format:** `TeamName_M2_MediaStrategy.pdf`
+**Filename Format:** `LastName_M2_MediaStrategy.pdf`
 
 **Rubric Preview:**
 | Criterion | Points |

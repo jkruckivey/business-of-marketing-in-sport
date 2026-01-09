@@ -1,10 +1,11 @@
 ## MODULE 7: Wrap-Up, Preview & Anchor Project Milestone
-**Version:** 1.4.0 | **Last Updated:** 2025-12-01
+**Version:** 1.5.0 | **Last Updated:** 2025-01-08
 
-**Purpose:** Consolidate Week 2 learning, preview Week 3, launch Anchor Project Team Formation
+**Purpose:** Consolidate Week 2 learning, preview Week 3, launch Anchor Project Property Selection
 
-### Version 1.4.0 Changes
-- **NEW:** Added stock photo suggestions after Element 3 (Anchor Project team formation) and Element 6 (Week 3 preview)
+### Version 1.5.0 Changes
+- **UPDATED:** Anchor Project now individual (removed team formation, team charter)
+- Removed all peer/group collaboration requirements
 
 **Uplimit Structure:** Final module in Unit 2
 
@@ -12,22 +13,21 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Text** ⬤ Required | Connecting introduction from Module 6 | Type directly | Narrative bridge to wrap-up |
 | 2 | **Infobox (Callout)** ⬤ Required | Week 2 key takeaways + journey recap + reflection | Type directly | Blue variant, comprehensive summary |
-| 3 | **Text** ⬤ Required | Anchor Project Milestone 1: Team Formation | Type directly | Launch group project |
-| 4 | **iFrame** ⬤ Required | Property Selection Tool | Custom widget hosted | Interactive team activity |
-| 5 | **iFrame** ⬤ Required | Team Charter Builder | Custom widget hosted | Team formation tool |
-| 6 | **Text** ◐ Recommended | Preview of Week 3 content | Type directly | Build anticipation |
-| 7 | **Details** ○ Optional | Anchor Project FAQs (optional) | Type directly | Optional guidance |
-| 8 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
-| 9 | **Text** ⬤ Required | Final Project Connection | Type directly | How Week 2 supports capstone |
-| 10 | **Text** ⬤ Required | Module 7 Complete - Transition to Week 3 | Type directly | Recap and preview |
+| 3 | **Text** ⬤ Required | Anchor Project Milestone 1: City Selection | Type directly | Launch CFL Expansion Project |
+| 4 | **iFrame** ⬤ Required | CFL City Selector | Custom widget hosted | Interactive city selection with map |
+| 5 | **Text** ◐ Recommended | Preview of Week 3 content | Type directly | Build anticipation |
+| 6 | **Details** ○ Optional | Anchor Project FAQs (optional) | Type directly | Optional guidance |
+| 7 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
+| 8 | **Text** ⬤ Required | Final Project Connection | Type directly | How Week 2 supports capstone |
+| 9 | **Text** ⬤ Required | Module 7 Complete - Transition to Week 3 | Type directly | Recap and preview |
 
 ---
 
 ## Element 1: Connecting Introduction
 
-You've just completed the Rogers NHL Mini-Case Memo, analyzing a billion-dollar media rights deal and practicing strategic recommendations. You used peer and AI feedback through the PAIRR methodology to refine your analysis—a process that mirrors real executive decision-making.
+You've just completed the Rogers NHL Mini-Case Memo, analyzing a billion-dollar media rights deal and practicing strategic recommendations. You used a scaffolded approach with AI feedback to refine your analysis—a process that mirrors real executive decision-making.
 
-Now it's time to wrap up Week 2 and apply your media strategy expertise to your CFL Expansion Project. This module consolidates your learning across the entire week, launches your team formation process, and previews Week 3's focus on sponsorship and betting. You'll also reflect on your Week 2 journey and select the sport property that will be the focus of your final capstone project.
+Now it's time to wrap up Week 2 and apply your media strategy expertise to your CFL Expansion Project. This module consolidates your learning across the entire week and previews Week 3's focus on sponsorship and betting. You'll also reflect on your Week 2 journey and select the sport property that will be the focus of your final capstone project.
 
 ---
 
@@ -43,8 +43,8 @@ Let's look back at what you've accomplished across all seven modules:
 - **Media Rights Frameworks:** Explored media valuation frameworks and platform economics through readings
 - **Streaming Wars Simulation:** Simulated streaming wars and made strategic media strategy decisions
 - **The Rogers Challenge:** Deep-dived into the Rogers $5.2B NHL deal with case analysis and retrospective
-- **Your Mini-Case Memo:** Wrote a strategic mini-case memo with PAIRR feedback (peer + AI)
-- **Looking Ahead (Now!):** Team formation, property selection, Week 3 preview
+- **Your Mini-Case Memo:** Wrote a strategic mini-case memo with scaffolded micro-steps and AI feedback
+- **Looking Ahead (Now!):** Property selection, Week 3 preview
 
 ### Infobox Content:
 ```
@@ -58,12 +58,12 @@ you should take away:
 ✓ Fan engagement monetization moves viewers through the value chain (passive → engaged → super-fan)
 ✓ Dynamic pricing (Al Dak's "checking account to portfolio management") applies across media inventory
 ✓ Mega-deals like Rogers/NHL require scenario planning and flexibility—disruption happens
-✓ The PAIRR methodology (peer + AI feedback) develops strategic thinking AND AI literacy skills
+✓ The scaffolded assessment approach with AI feedback develops strategic thinking AND AI literacy skills
 
 This foundation prepares you for Week 3, where we'll explore the fastest-growing revenue
 streams: sponsorship activation and sports betting integration.
 
-Plus: This week you'll form your Anchor Project team and select your sport property!
+Plus: This week you'll select your sport property for the Anchor Project!
 
 Well done! 👏
 ```
@@ -82,269 +82,148 @@ Take 5-10 minutes to reflect on your Week 2 learning:
 
 ---
 
-## Element 3: Anchor Project Milestone 1 - Team Formation & Property Selection
+## Element 3: Anchor Project Milestone 1 - City Selection
 
 ### Text Content - Anchor Project Milestone 1:
 ```
-## ◉ Anchor Project: Team Formation & Property Selection
+## ◉ CFL Expansion Project: City Selection
 
-Welcome to the **Anchor Project** - your 60% final assessment for this course!
+Welcome to the **CFL Expansion Project** - your Anchor Project for this course!
 
-Over the next 4 weeks, your team will develop a comprehensive marketing plan for a
-sport organization. This week (Week 2), you'll form your team and choose your property.
+Over the next 4 weeks, you'll develop a comprehensive expansion proposal for a new CFL franchise. This week, you'll choose your expansion city.
 
 **What You'll Accomplish This Week:**
 
-### Step 1: Form Your Team (5-6 students)
-Use the **Team Charter Builder** tool below to:
-• Introduce yourselves (background, interests, strengths)
-• Define roles (Project Manager, Research Lead, Financial Analyst, Creative Lead, etc.)
-• Establish communication norms (meeting frequency, response times, tools)
-• Create conflict resolution process
+### Select Your Expansion City
+Use the **CFL City Selector** below to explore 6 potential Canadian markets:
 
-### Step 2: Select Your Sport Property
-Use the **Property Selection Tool** below to explore 19 curated options:
+**High Viability:** Halifax (Atlantic market), Quebec City (French-Canadian hub)
+**Medium Viability:** London ON (Ontario corridor), Victoria (BC island market)
+**Emerging Markets:** Saskatoon (football-passionate), Moncton (Maritime hub)
 
-**Legacy Properties:** Established teams/leagues (e.g., Toronto FC, Vancouver Whitecaps, Rugby Canada)
-**Emerging Sports:** High-growth opportunities (e.g., Canadian Premier League, National Lacrosse League)
-**Major Events:** One-time or recurring events (e.g., 2026 FIFA World Cup - Toronto/Vancouver)
+Each city profile includes:
+• Population and metro area demographics
+• Stadium/venue situation and requirements
+• Competitive sports landscape
+• Corporate sponsorship base potential
+• Football culture and CFL history
 
-Your team should choose a property that:
-• Is interesting and marketable
-• Presents clear business challenges (revenue growth, fan engagement, market expansion)
-• Has accessible public information (financial data, attendance, media presence)
-
-### Step 3: Write Your 1-Page Project Proposal
+### Write Your City Selection Rationale
 **Due: End of Week 2**
 
 Include:
-• Team roster with roles
-• Chosen sport property
-• 250-word rationale: Why is this property interesting? What marketing challenges does it face?
+• Chosen expansion city
+• 200-300 word rationale: Why does this market represent the best CFL expansion opportunity? What challenges will you address?
 
-**Deliverable:** Upload PDF to [submission portal]
+**Deliverable:** Export from widget + upload to submission portal
 
-**Grading:** This milestone is worth 10 points (of 60 total project points). Evaluated
-on team composition, property selection defensibility, and articulated challenges.
+**Grading:** This milestone is worth 10 points (of 60 total project points). Evaluated on market analysis quality and strategic rationale.
 
 ---
 
-**Use the tools below to get started!**
+**Use the City Selector below to explore your options!**
 ```
 
-### Element 3A: Picture - MBA Team Collaboration (NEW v1.4.0)
-- **Type:** Stock Photo
-- **Placement:** After Element 3 Anchor Project instructions
-- **Suggested Image:** Diverse group of MBA students or young professionals collaborating around a table with laptops, whiteboards, and presentation materials—showing team project work
-- **Alt Text:** "Diverse team of MBA students collaborating on a group project, with laptops, notes, and presentation materials—representing the Anchor Project team formation where 5-6 students will develop a comprehensive marketing plan for their chosen sport property"
-- **Search Terms:** `MBA students team project`, `business school group work`, `diverse team collaboration`
-- **Purpose:** Visualizes the team collaboration that will define the Anchor Project experience
-- **Size:** Full width, max 800px
-
 ---
 
-## Element 4: Property Selection Tool (Interactive Widget)
+## Element 4: CFL City Selector (Interactive Widget)
 
 ### Student-Facing Text Content:
 **Copy this markdown directly into Uplimit BEFORE the widget:**
 
 ```markdown
-# Step 2: Choose Your Sport Property
+# Choose Your CFL Expansion City
 
-Your team is formed—now it's time to select the sport property you'll analyze for the Anchor Project. This decision shapes your entire semester, so choose wisely!
+Now it's time to select the Canadian market for your CFL expansion franchise. This decision shapes your entire project—you'll develop media strategy, sponsorship plans, and brand identity for this city over the next four weeks.
 
 ## Why This Matters
 
-The property you select determines:
-- **Complexity of analysis**: Established teams have abundant data; emerging properties require more inference
-- **Marketing challenges**: Some properties face sponsorship saturation, others struggle with awareness
-- **Team interest**: You'll spend 20+ hours on this property—choose something you're passionate about
+The city you select determines:
+- **Market dynamics**: Population, demographics, and economic base vary significantly
+- **Competitive landscape**: Some cities have no pro sports competition; others face crowded markets
+- **Stadium requirements**: Some have existing facilities; others need new builds
+- **Your strategic challenges**: Each market presents unique obstacles to overcome
 
-## Using the Property Selection Tool
+## Using the CFL City Selector
 
-The interactive tool below helps you explore **19 curated Canadian sport properties** across three categories:
+The interactive tool below helps you explore **6 potential Canadian expansion markets**:
 
-**Legacy Properties** - Established teams with long histories (e.g., Toronto FC, Vancouver Whitecaps)
-- ✅ **Advantages**: Rich data, multiple revenue streams, clear market position
-- ⚠️ **Challenges**: Mature markets, limited growth headroom, heavy competition
+**High Viability Markets:**
+- **Halifax** - Atlantic Canada's largest city, no major pro sports, strong university football culture
+- **Quebec City** - Passionate French-Canadian market, proven sports support, provincial capital
 
-**Emerging Sports** - High-growth opportunities (e.g., Canadian Premier League, National Lacrosse League)
-- ✅ **Advantages**: Untapped markets, innovation opportunities, entrepreneurial spirit
-- ⚠️ **Challenges**: Limited financial data, uncertain trajectories, smaller budgets
+**Medium Viability Markets:**
+- **London ON** - Strong corporate base, Western Mustangs tradition, Ontario market growth
+- **Victoria** - Affluent demographics, mild climate, tech sector growth
 
-**Major Events** - One-time or recurring spectacles (e.g., 2026 FIFA World Cup - Toronto/Vancouver)
-- ✅ **Advantages**: Massive scale, global visibility, legacy planning challenges
-- ⚠️ **Challenges**: Time-limited, different dynamics than year-round properties
+**Emerging Markets:**
+- **Saskatoon** - Football-obsessed province, second Saskatchewan team potential
+- **Moncton** - Proven Touchdown Atlantic success, bilingual Maritime hub
 
 ## How It Works
 
-1. **Filter by Category, Market Size, Revenue Tier** - Narrow your options based on team interests
-2. **Explore Property Cards** - Each card shows: Name, league, market, revenue estimate, key marketing challenges
-3. **Compare Properties** - Select up to 3 properties for side-by-side comparison
-4. **Export Shortlist** - Download your top 3-5 options as PDF for team discussion
+1. **Explore the Map** - Click any orange marker to learn about that city
+2. **Review City Profiles** - Each card shows population, stadium status, competition, corporate base
+3. **Compare Markets** - Toggle to table view for side-by-side comparison
+4. **Select & Write Rationale** - Choose your city and explain your strategic reasoning
+5. **Export Proposal** - Download your selection for Milestone 1 submission
 
 ## Strategic Considerations
 
-Before choosing, discuss as a team:
-- **Data availability**: Can you find financial reports, attendance data, sponsorship lists?
-- **Scope appropriateness**: Is it manageable in 4 weeks but substantial enough for an MBA-level analysis?
-- **Marketing challenges**: Does it present interesting problems (not just "spend more on social media")?
-- **Team expertise**: Does anyone have knowledge of this sport/league that could add depth?
+Before choosing, consider:
+- **Stadium situation**: Does the city have an existing facility or will you need to propose a new build?
+- **Competition**: How will you position CFL football against existing sports options?
+- **Corporate base**: Is there sufficient sponsorship potential to support a franchise?
+- **Fan development**: What's the football culture like? Will you build on existing passion or create new fans?
 
-**Time:** 15-20 minutes to explore, discuss, and select your property
+**Time:** 15-20 minutes to explore cities and write your rationale
 ```
 
 ---
 
 ### iFrame Specifications (For LMS Builder):
 
-**Widget Purpose:** Help teams explore and select a sport property for their Anchor Project marketing plan.
+**Widget Purpose:** Help students explore and select a Canadian city for their CFL Expansion Project.
 
-**Widget Status:** ✅ Anchor Project tool - BUILT AND READY
+**Widget Status:** ✅ CFL City Selector - BUILT AND READY
 
 **How It Works:**
 - **Inputs:**
-  - Category filter: Legacy (established teams), Emerging (growth sports), Events (one-time/recurring)
-  - Market size filter: Large (Toronto/Vancouver), Medium (Calgary/Ottawa), Small (regional)
-  - Revenue tier filter: $50M+, $10-50M, Under $10M
+  - Interactive Canada map with clickable city markers
+  - Card view or comparison table toggle
+  - Rationale text input with word count
 - **Outputs:**
-  - 19 curated property cards with: Name, league, market, revenue tier, key marketing challenges
-  - Comparison view (select up to 3 properties side-by-side)
-  - Export shortlist as PDF for team discussion
-- **Examples:** Toronto FC (MLS, large market, sponsorship saturation challenge), Canadian Premier League (emerging, small markets, awareness challenge), 2026 FIFA World Cup Toronto/Vancouver (event, massive scale, legacy planning challenge)
-- **Learning:** Understand diverse sport properties, identify marketing challenges, select appropriate scope for semester project
+  - 6 city profiles with: population, stadium status, competition level, corporate base, football culture
+  - Viability ratings (High/Medium/Emerging)
+  - Strengths and challenges for each market
+  - Exportable city proposal with rationale
+- **Examples:** Halifax (Atlantic monopoly, stadium needed), Quebec City (passionate fanbase, outdoor stadium required), Saskatoon (football-obsessed province, Roughriders competition)
+- **Learning:** Analyze market factors, evaluate expansion viability, develop strategic rationale
 
 **Uplimit Implementation:**
 ```html
 <iframe
-  src="https://jkruckivey.github.io/business-of-sports-marketing/modules/module-2/widgets/property-selector.html"
+  src="https://jkruckivey.github.io/business-of-sports-marketing/modules/week2/widgets/cfl-city-selector.html"
   width="100%"
-  height="700"
+  height="800"
   style="border: none; border-radius: 8px;"
-  title="Property Selection Tool - Choose your Anchor Project property"
-  aria-label="Interactive selection tool for choosing your sports business property focus for the Anchor Project"
+  title="CFL City Selector - Choose your expansion market"
+  aria-label="Interactive tool for selecting a Canadian city for your CFL expansion franchise project"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
 **Accessibility:**
-- ✅ Keyboard navigation for filtering and card selection
-- ✅ ARIA labels on all filter controls
-- ✅ Screen reader compatible property descriptions
-- ✅ High contrast card design
-- ✅ Focus indicators on clickable cards
+- ✅ Keyboard navigation for map markers and city cards
+- ✅ ARIA labels on all interactive elements
+- ✅ Screen reader compatible city descriptions
+- ✅ High contrast design with clear focus indicators
+- ✅ Progress steps with visual and text cues
 
 ---
 
-## Element 5: Team Charter Builder (Interactive Widget)
-
-### Student-Facing Text Content:
-**Copy this markdown directly into Uplimit BEFORE the widget:**
-
-```markdown
-# Step 1: Build Your Team Charter
-
-Before diving into the Anchor Project, your team needs a foundation: clear roles, communication norms, and conflict resolution processes. Research shows teams with explicit agreements outperform those without by 40%.
-
-## Why Team Charters Matter
-
-Group projects fail for predictable reasons:
-- ❌ **Unclear roles**: "I thought YOU were doing that..."
-- ❌ **Unequal workload**: 2 people do 80% of the work
-- ❌ **Communication breakdowns**: Missed deadlines because someone didn't check Slack
-- ❌ **Unresolved conflicts**: Tension festers until it's too late to fix
-
-A Team Charter prevents these issues by establishing agreements **before** problems arise.
-
-## What You'll Create
-
-The Team Charter Builder guides you through **4 essential sections**:
-
-### Section 1: Team Roster
-- Names, roles, strengths, contact information
-- **Roles to assign**: Project Manager (coordinates timelines), Research Lead (gathers data), Financial Analyst (numbers/projections), Creative Lead (presentation design), Editor (polishes deliverables)
-- **Tip**: Match roles to individual strengths, not just "who volunteers first"
-
-### Section 2: Communication Norms
-- Meeting frequency (weekly? bi-weekly? synchronous or async?)
-- Communication tools (Slack, Teams, email, text?)
-- Response time expectations (24 hours? 48 hours?)
-- **Tip**: Over-communicate availability—share schedules, exam periods, work commitments upfront
-
-### Section 3: Working Guidelines
-- Decision-making process (consensus? majority vote? PM has tiebreaker?)
-- Work distribution approach (divide-and-conquer? collaborative drafting?)
-- Accountability mechanisms (how do we handle missed deadlines?)
-- **Tip**: Agree on "minimum viable participation" (e.g., everyone attends 80% of meetings, completes assigned tasks on time)
-
-### Section 4: Conflict Resolution
-- Escalation steps (direct conversation → full team meeting → instructor mediation)
-- Ground rules for disagreements (assume good intent, focus on ideas not people, no ghosting)
-- **Tip**: Name conflicts early and small before they become big and personal
-
-## How It Works
-
-1. **Complete Each Section** - The widget provides prompts and examples for each charter component
-2. **Discuss as Team** - Use the widget to facilitate conversation (project on screen during first team meeting)
-3. **Export as PDF** - Save your completed charter and share with all team members
-4. **Email Reminders** - Optionally send charter to everyone's inbox for future reference
-
-## After Completing Your Charter
-
-- **Submit your charter** as part of your Week 2 Anchor Project deliverable
-- **Refer back to it** throughout the project when questions arise ("What did we agree about deadlines?")
-- **Update if needed** - Charters aren't rigid; adjust if team dynamics change
-
-**Ready to build your team's foundation?** Use the Team Charter Builder below to establish your working agreements. Spend 20-25 minutes on this—it's an investment that will save hours of conflict later.
-```
-
----
-
-### iFrame Specifications (For LMS Builder):
-
-**Widget Purpose:** Guide teams through creating a comprehensive team charter to establish norms, roles, and conflict resolution processes.
-
-**Widget Status:** ✅ Anchor Project tool - BUILT AND READY
-
-**How It Works:**
-- **Inputs (4 sections):**
-  - **Section 1: Team Roster** - Names, backgrounds, strengths, assigned roles (PM, Research Lead, Financial Analyst, Creative Lead, Editor)
-  - **Section 2: Communication Norms** - Meeting frequency (weekly? bi-weekly?), tools (Slack, Teams, email), response time expectations (24hr? 48hr?)
-  - **Section 3: Working Guidelines** - Decision-making process (consensus? majority vote?), work distribution approach (divide-and-conquer? collaborative?), accountability mechanisms
-  - **Section 4: Conflict Resolution** - Escalation steps (direct conversation → team meeting → instructor), mediation approach, ground rules for disagreements
-- **Outputs:**
-  - Complete team charter document with all 4 sections
-  - Export as PDF (saves filled charter for team reference throughout project)
-  - Email reminder option (sends charter to all team members)
-- **Examples:** Sample charters from previous cohorts (anonymized), best practice templates
-- **Learning:** Establish clear expectations early, prevent common group work issues, practice professional team formation
-
-**Uplimit Implementation:**
-```html
-<iframe
-  src="https://jkruckivey.github.io/business-of-sports-marketing/modules/module-2/widgets/team-charter.html"
-  width="100%"
-  height="700"
-  style="border: none; border-radius: 8px;"
-  title="Team Charter Builder - Create your team agreements"
-  aria-label="Interactive team charter builder where you establish working agreements and roles for collaborative projects"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Accessibility:**
-- ✅ Keyboard navigation through all form fields
-- ✅ ARIA labels on all input fields
-- ✅ Screen reader compatible section navigation
-- ✅ High contrast form design
-- ✅ Clear focus indicators on active fields
-- ✅ Error messages announced to screen readers
-
----
-
-## Element 6: Week 3 Preview - Sponsorship & Betting
+## Element 5: Week 3 Preview - Sponsorship & Betting
 
 ### Text Content - Week 3 Preview:
 ```
@@ -369,7 +248,7 @@ to develop your property's revenue strategy.
 Get ready for another intensive week! See you in Week 3.
 ```
 
-### Element 6A: Picture - Sponsorship and Betting Preview (NEW v1.4.0)
+### Element 5A: Picture - Sponsorship and Betting Preview
 - **Type:** Stock Photo
 - **Placement:** After Element 6 Week 3 preview text
 - **Suggested Image:** Stadium with visible corporate sponsor signage and branding, or a sportsbook/betting environment, showing the intersection of sports and commercial partnerships
@@ -380,51 +259,43 @@ Get ready for another intensive week! See you in Week 3.
 
 ---
 
-## Element 7: Anchor Project FAQs (Optional Guidance)
+## Element 6: CFL Expansion Project FAQs (Optional Guidance)
 
 ### Details Content - Anchor Project FAQs:
 ```
-Title: ◆ Anchor Project FAQs
+Title: ◆ CFL Expansion Project FAQs
 
 [Expand for answers to common questions]
 
-**Q: How many team members should we have?**
-A: 5-6 students is ideal. Fewer than 5 makes workload challenging; more than 6 creates
-coordination overhead.
+**Q: Can I choose a city not on the list?**
+A: Yes, with instructor approval. Your city must: (1) Be a Canadian market not currently
+served by the CFL, (2) Have a metro population of at least 150,000, (3) Present realistic
+expansion potential. Submit your alternative city proposal for approval before proceeding.
 
-**Q: Can we choose a property not on the list?**
-A: Yes, with instructor approval. Your property must: (1) Have sufficient public data
-available, (2) Present clear marketing challenges, (3) Be a professional or semi-pro
-organization (not amateur/recreational). Submit your proposal for approval.
+**Q: What if multiple students choose the same city?**
+A: That's encouraged! Different students will develop different strategies for the same
+market. This mirrors real consulting—you might compete for the same expansion bid.
+Comparing different approaches in Week 5 discussions will be valuable learning.
 
-**Q: What if our chosen property is also chosen by another team?**
-A: That's fine! Different teams will develop different strategies for the same property.
-This mirrors real consulting competitions.
+**Q: How much time should I invest in the CFL Expansion Project each week?**
+A: Week 2: 1-2 hours (city selection and rationale)
+   Week 3: 2-3 hours (media strategy and sponsorship plan)
+   Week 4: 3-4 hours (brand identity and marketing strategy)
+   Week 5: 4-6 hours (final expansion proposal)
 
-**Q: How much time should we invest in the Anchor Project each week?**
-A: Week 2: 2-3 hours (team formation, property selection)
-   Week 3: 2-3 hours (revenue model development)
-   Week 4: 3-4 hours (brand strategy, competitive analysis)
-   Week 5: 4-6 hours (final presentation preparation)
-
-**Q: What if a team member isn't contributing?**
-A: Your Team Charter should include accountability mechanisms. If issues persist, use
-your conflict resolution process. As a last resort, contact the instructor. Peer
-evaluations in Week 5 will account for individual contributions.
-
-**Q: Can we interview executives at our chosen property?**
-A: Absolutely! Original research strengthens your project. If you conduct interviews,
-include key insights and quotes in your final presentation.
+**Q: Where can I find data about my chosen city?**
+A: Start with Statistics Canada for demographics, municipal economic development
+sites for corporate presence, and local sports news for competitive landscape.
+The widget includes key data points, but deeper research strengthens your proposal.
 
 **Q: What resources are available beyond the tools?**
-A: Each week provides readings, frameworks, and templates. Use office hours for team
-check-ins. The AI chat assistants can help with specific questions. Discussion forums
-are great for crowdsourcing ideas from other teams.
+A: Each week provides frameworks and templates specific to CFL expansion. Use office
+hours for check-ins. The AI chat assistants can help with market analysis questions.
 ```
 
 ---
 
-## Element 8: Learning Outcomes Widget
+## Element 7: Learning Outcomes Widget
 
 **Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
 
@@ -454,15 +325,15 @@ are great for crowdsourcing ideas from other teams.
 **Design Rationale:**
 - **Infobox** reinforces key Week 2 concepts and launches Anchor Project (closure + transition)
 - **Text** provides clear Anchor Project instructions and timeline (QM clarity, scaffolding)
-- **iFrames (2)** offer interactive tools for team formation and property selection (UDL engagement, authentic tasks)
+- **iFrames (1)** offer interactive tool for property selection (UDL engagement, authentic tasks)
 - **Week 3 preview** builds anticipation and helps students prepare (continuity)
 - **Details (FAQs)** answers common questions without overwhelming main flow (UDL progressive disclosure)
-- Anchor Project integrates course content into applied, collaborative work (authentic assessment, teamwork)
-- Tools reduce coordination friction and provide structure (scaffolding for group work)
+- Anchor Project integrates course content into applied work (authentic assessment)
+- Tools reduce friction and provide structure (scaffolding)
 
 ---
 
-## Element 9: Final Project Connection
+## Element 8: Final Project Connection
 
 ## 🎯 FINAL PROJECT CONNECTION
 
@@ -499,13 +370,12 @@ Your Week 5 strategic vision must integrate Week 2's media frameworks comprehens
 
 **What You've Accomplished:**
 
-You've completed Week 2! You've formed your CFL Expansion Project team, selected your sport property, and synthesized Week 2's media strategy frameworks. You now understand how to value media rights, compare platform economics, and evaluate billion-dollar deals like Rogers/NHL.
+You've completed Week 2! You've selected your sport property for the CFL Expansion Project and synthesized Week 2's media strategy frameworks. You now understand how to value media rights, compare platform economics, and evaluate billion-dollar deals like Rogers/NHL.
 
 **Key Takeaways:**
-- Your team is formed with clear roles and communication norms (Team Charter)
 - Your property is selected with defensible rationale for marketing challenges
 - Week 2's media frameworks (40-60% of revenue) are now tools in your strategic toolkit
-- You've practiced PAIRR methodology (peer + AI feedback) that develops both strategic thinking and AI literacy
+- You've practiced scaffolded assessment with AI feedback that develops both strategic thinking and AI literacy
 - You understand the last "appointment viewing" phenomenon that makes sports content premium
 
 **Week 2 Reflection:**
@@ -572,8 +442,12 @@ Get ready for another intensive week—and **congratulations on completing Week 
   - Test on multiple browsers ✓
   - Verify accessibility (keyboard, screen reader) ✓
   - Host at URL: `https://jkruckivey.github.io/business-of-sports-marketing/widgets/streaming-wars-strategy.html`
-- ☐ `property-selector.html` (Anchor Project tool - may already exist)
-- ☐ `team-charter.html` (Anchor Project tool - may already exist)
+- ✅ `cfl-city-selector.html` (CFL Expansion Project city selection tool)
+  - Interactive Canada map with expansion city markers
+  - 6 city profiles with detailed market data
+  - Comparison table view
+  - Rationale builder with export
+  - Host at URL: `https://jkruckivey.github.io/business-of-sports-marketing/modules/week2/widgets/cfl-city-selector.html`
 
 ### Images:
 - ☐ `fan-engagement-value-chain.png` (diagram for Module 3)
@@ -619,8 +493,7 @@ Get ready for another intensive week—and **congratulations on completing Week 
 
 ### Week 4: Interactive Elements
 - ☐ Embed Streaming Wars Strategy widget (iFrame in Module 4)
-- ☐ Embed Property Selector widget (iFrame in Module 7)
-- ☐ Embed Team Charter Builder widget (iFrame in Module 7)
+- ☐ Embed CFL City Selector widget (iFrame in Module 7)
 - ☐ Create all Details accordions
 - ☐ Configure 3 AI Chat Widgets
 
@@ -635,7 +508,7 @@ Get ready for another intensive week—and **congratulations on completing Week 
 - ☐ Walk through entire Week 2 as student
 - ☐ Test all links, videos, widgets
 - ☐ Verify accessibility (keyboard navigation, screen readers)
-- ☐ Test Anchor Project tools (Property Selector, Team Charter)
+- ☐ Test CFL City Selector widget (map, cards, comparison, export)
 - ☐ Peer review
 - ☐ Pilot with small group (if possible)
 
@@ -658,22 +531,22 @@ Get ready for another intensive week—and **congratulations on completing Week 
 - ☐ Students have choices:
   - Optional Details accordions (progressive disclosure)
   - Optional AI Chat support
-  - Anchor Project property selection (19 options)
+  - CFL Expansion city selection (6 markets with different viability levels)
   - Multiple paths to profitability in simulation
 - ☐ Real-world relevance clear (executive practitioner, $5.2B case, consulting memo)
 - ☐ Learning objectives visible at module start
 - ☐ Variety in activity types (read, watch, simulate, analyze, write, collaborate)
-- ☐ Anchor Project offers choice and team-based learning
+- ☐ Anchor Project offers choice and applied learning
 
 ### Multiple Means of Action/Expression ✓
 - ☐ Assessment allows different demonstration modes:
   - Written memo (analytical, Text Response)
   - Simulation performance (strategic decision-making)
-  - Team charter and proposal (collaborative)
+  - Property proposal (individual research)
 - ☐ Scaffolding available (AI Chat, Details with frameworks, widget hints)
 - ☐ Self-paced interactive activities (simulation, Anchor Project tools)
 - ☐ Rubric transparent (students know expectations)
-- ☐ Group work option (Anchor Project)
+- ☐ Applied project option (Anchor Project)
 
 ### WCAG 2.1 AA Compliance ✓
 - ☐ Color contrast sufficient (test all Infobox variants)
@@ -715,7 +588,7 @@ Verify that every element serves the WLOs:
 - **Vertical List:** 1 (5 items)
 - **Tables:** 2
 - **Details:** ~12 accordions
-- **iFrames:** 3 (Streaming Wars simulation, Property Selector, Team Charter)
+- **iFrames:** 2 (Streaming Wars simulation, CFL City Selector)
 - **AI Chat Widgets:** 3
 - **Text Response:** 1 (with rubric)
 - **Images:** 1
@@ -729,7 +602,7 @@ Verify that every element serves the WLOs:
 - Refresh executive session every 2-3 years
 - Update simulation if platform economics shift significantly
 - Review rubric based on student memo performance
-- Update Anchor Project property list annually (add/remove organizations)
+- Review CFL expansion city data annually (population, stadium status updates)
 
 ---
 

@@ -8,10 +8,10 @@
 - **NEW:** Added detailed sports revenue reference data for AI to guide questions without revealing answers
 - **NEW:** Added PE-specific context (IRR expectations, traditional metrics) for more authentic conversation
 
-### Version 1.4.0 Changes
-- Added CFL Expansion Project Milestone 1 submission (team-based)
+### Version 1.6.0 Changes
+- **REMOVED:** PAIRR methodology - now uses AI feedback only
+- **UPDATED:** CFL Expansion Project Milestone 1 now individual submission
 - Individual executive memo remains as primary assessment
-- Milestone 1 adds team-based market analysis component
 
 **Uplimit Structure:** Sixth module in Unit 1
 
@@ -25,12 +25,11 @@
 | 2D | **Details** ◐ Recommended | Micro-Tutorial Library | Type directly | Accordion with 5 skill videos |
 | 2E | **Audio** ◐ Recommended | Audio Instructions (4 min) | Upload MP3 | Voice-narrated assignment overview |
 | 3 | **AI Roleplay** ◐ Recommended | Practice pitch to private equity | Configure in Uplimit | Rehearse your investment recommendation before writing memo |
-| 4 | **Text** ⬤ Required | PAIRR Feedback Instructions | Type directly | Peer and AI Review + Reflection workflow |
-| 5 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
-| 6 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
-| 7 | **AI Chat Widget** ○ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
-| 8 | **ⓘ Infobox** ⬤ Required | CFL Project Milestone 1 Instructions | Type directly | Team project component |
-| 9 | **File Upload** ⬤ Required | Milestone 1: Market Analysis Brief | Configure in Uplimit | Team submission (one per team) |
+| 4 | **Text Response** ⬤ Required | 1-page reflection memo submission | Configure in Uplimit | Rubric evaluation mode |
+| 5 | **Details** ○ Optional | Rubric details and examples (optional) | Type directly | Accordion - transparent criteria |
+| 6 | **AI Chat Widget** ○ Optional | Writing support (optional) | Configure in Uplimit | Named: "Writing Assistant" |
+| 7 | **ⓘ Infobox** ⬤ Required | CFL Project Milestone 1 Instructions | Type directly | Individual project component |
+| 8 | **File Upload** ⬤ Required | Milestone 1: Market Analysis Brief | Configure in Uplimit | Individual submission |
 
 ### Element 1: Connecting Introduction Text
 **Copy this markdown directly into Uplimit:**
@@ -221,7 +220,7 @@ NARRATOR: "Okay, I have a draft. But I'm at 420 words and the limit is 500. Let 
 
 [5:30-6:00] CLOSING
 
-NARRATOR: "That's it. Total time from blank page to finished draft: about 45 minutes for me, and that's with experience. Give yourself 60-90 minutes for your first draft, then use the PAIRR process to get feedback and revise."
+NARRATOR: "That's it. Total time from blank page to finished draft: about 45 minutes for me, and that's with experience. Give yourself 60-90 minutes for your first draft, then use the AI Writing Assistant to get feedback and revise."
 
 "Key takeaways:
 1. Read the prompt and rubric BEFORE writing
@@ -438,11 +437,11 @@ Here's the recommended workflow. First, use the AI Roleplay to practice your pit
 
 Then write your first draft. Give yourself 60 to 90 minutes.
 
-Next, use the PAIRR process. Get feedback from both a peer and an AI writing tool, compare the feedback, and revise.
+Then use the AI Writing Assistant to get feedback on your draft and make improvements.
 
 Finally, submit your polished memo through the submission box.
 
-The PAIRR feedback is optional but earns up to 5 bonus points—and research shows students who use it write stronger memos.
+The optional AI feedback bonus (1 point) rewards students who use the AI Writing Assistant to strengthen their analysis.
 
 ---
 
@@ -736,229 +735,7 @@ This roleplay is explicitly formative (not graded) to reduce anxiety and encoura
 
 ---
 
-### Element 4: PAIRR Feedback Instructions
-
-**Purpose:** Integrate Peer and AI Review + Reflection (PAIRR) methodology to develop critical evaluation skills, AI literacy, and improve writing quality through dual feedback sources.
-
-**Pedagogical Foundation:** Based on Frontiers in Communication research (2025) - PAIRR model promotes educational equity, AI literacy, and student writerly agency.
-
-**Implementation:** Copy the markdown below into Uplimit as a "Text" element between Element 2 (AI Roleplay) and Element 3 (Text Response).
-
----
-
-**Copy this markdown into Uplimit:**
-
-```markdown
-# PAIRR Feedback Phase: Peer and AI Review + Reflection
-
-**⏱️ Total PAIRR Time Investment:** 2-3 hours spread across the week
-- Draft preparation: 45-60 min
-- Peer review (giving): 20-30 min
-- AI feedback: 5-10 min
-- Comparative reflection: 15-20 min
-- Revision: 30-45 min
-- Post-revision reflection: 10-15 min
-
-Before submitting your final memo, you'll receive feedback from TWO sources: a classmate and an AI writing assistant. Your task is to **critically evaluate both sources** and decide which feedback to apply.
-
----
-
-## Step 1: Submit Your Draft (Due: [Date] by 11:59 PM)
-
-Upload your 80% complete draft to the shared Google Drive folder:
-- **Format:** Google Doc (enable "Commenting" permissions)
-- **Filename:** `YourLastName_ReflectionMemo_Draft.docx`
-- **Completeness:** Must have all major sections (not rough notes)
-
-**Draft Requirements:**
-- Revenue stream analysis (at least 3 streams)
-- Investment factors (2-3 specific recommendations)
-- Evidence from course content
-- Memo format (To/From/Date/Re)
-- 400-500 words (can expand to 500 in revision)
-
----
-
-## Step 2A: Peer Review (Due: [Date] by 11:59 PM)
-
-You've been paired with a classmate (check announcement for your partner). Complete the structured peer review form for your partner's draft.
-
-**Access Peer Review Form:** [Link to Google Form or PDF]
-
-**Review Focus:**
-1. **Revenue Stream Analysis** (10 pts): Are 3+ streams analyzed? Do they show interdependencies?
-2. **Investment Factors** (10 pts): Are 2-3 factors specific and well-justified?
-3. **Application of Concepts** (5 pts): Do they reference executive session, readings, Predators case?
-4. **Business Communication** (5 pts): Professional format? Clear? Within word limit?
-
-**Time Estimate:** 20-30 minutes
-
-**Reminder:** Be constructive and specific. Your goal is to help your peer improve their work.
-
----
-
-## Step 2B: AI Feedback (Due: [Date] by 11:59 PM)
-
-Use an AI writing assistant (ChatGPT, Claude, or Gemini) to get feedback on the same draft you submitted for peer review.
-
-### AI Feedback Prompt Template
-
-**Copy this prompt into your AI tool (ChatGPT, Claude, etc.):**
-
-```
-You are a business writing coach evaluating a 1-page executive memo for an MBA course assignment. The assignment asks students to advise a private equity firm considering investing in a professional sports team, explaining the unique characteristics of sport's revenue model.
-
-RUBRIC CRITERIA (30 points total):
-1. Revenue Stream Analysis (10 pts): Accurately describes and analyzes at least 3 revenue streams. Demonstrates understanding of interdependencies and unique characteristics.
-2. Investment Factors (10 pts): Identifies 2-3 specific, well-justified factors that would influence investment decision. Factors are supported with evidence from course content.
-3. Application of Concepts (5 pts): Effectively applies concepts from executive session, readings, and case study. Makes relevant connections.
-4. Business Communication (5 pts): Professional memo format. Clear, concise writing. Appropriate tone for executive audience. Within 500-word limit.
-
-Please evaluate my draft memo against these criteria. For each criterion:
-- Identify what I did well (strengths)
-- Identify what could be improved (specific, actionable suggestions)
-- Estimate a score (Exceeds/Meets/Developing/Needs Improvement)
-
-Here is my draft:
-
-[PASTE YOUR DRAFT HERE]
-```
-
-**Important Instructions:**
-1. Use the EXACT prompt above (ensures consistent feedback)
-2. Copy the AI's response into a document for later comparison
-3. Take screenshots showing the AI conversation (for your reflection)
-
-**Time Estimate:** 5-10 minutes
-
----
-
-## Step 3: Comparative Reflection (Due: [Date] by 11:59 PM)
-
-Now that you have feedback from BOTH sources, critically compare them.
-
-**Answer these questions in 150-200 words:**
-
-### Question 1: Feedback Quality Comparison
-- What did your peer reviewer notice that the AI missed?
-- What did the AI notice that your peer missed?
-- Were there areas where they disagreed? Which feedback seemed more accurate?
-
-### Question 2: Strengths and Limitations
-**Peer Feedback:**
-- Strength: [What was most valuable about peer feedback?]
-- Limitation: [What was missing or unclear?]
-
-**AI Feedback:**
-- Strength: [What was most valuable about AI feedback?]
-- Limitation: [What was inaccurate or generic?]
-
-### Question 3: Application Strategy
-- Which feedback will you prioritize in your revision? Why?
-- What criteria are you using to decide which suggestions to implement?
-- How does this exercise change how you'll use AI in future writing tasks?
-
-**Submit your reflection here:** [Link to submission box]
-
----
-
-## Step 4: Revise Your Memo (Days 7-8)
-
-Apply the insights from BOTH feedback sources:
-
-**Revision Checklist:**
-- [ ] Addressed peer feedback on revenue stream analysis
-- [ ] Addressed AI feedback on business communication
-- [ ] Evaluated competing suggestions and chose best approach
-- [ ] Maintained executive memo format and tone
-- [ ] Stayed within 500-word limit
-- [ ] Cited course content appropriately
-
-**Tip:** You are NOT required to implement ALL suggestions. Use your judgment to prioritize changes that most improve your argument.
-
----
-
-## Step 5: Post-Revision Reflection (Submit with final memo)
-
-After revising your memo, complete this brief reflection (100 words):
-
-**Prompt:**
-"Which feedback source (peer or AI) had the most influence on your revisions? Give 1-2 specific examples of changes you made based on each source. Did the comparative reflection process help you make better revision decisions than you would have with a single feedback source?"
-
-**Format:** Include this reflection as an addendum to your final memo submission (does not count toward 500-word limit).
-
----
-
-## Grading
-
-**Final Memo:** 30 points (evaluated using original rubric criteria)
-
-**PAIRR Participation Bonus:** Up to 5 bonus points
-- Completed peer review form: 2 points
-- Obtained AI feedback (verified by screenshot): 1 point
-- Completed comparative reflection: 1 point
-- Completed post-revision reflection: 1 point
-
-**Total Possible:** 35 points (30 base + 5 bonus)
-
----
-
-## Why PAIRR?
-
-**Prepares you for AI-integrated workplaces:**
-Sports marketing professionals increasingly use AI tools for content creation, fan engagement analysis, and campaign optimization. This exercise teaches you to:
-- Leverage AI for writing improvement (not replacement)
-- Critically evaluate AI output (it's not always right!)
-- Combine human insight with AI efficiency
-- Maintain your voice and strategic thinking
-
-**Benefits you'll experience:**
-1. **Multiple perspectives:** Peer sees reader experience; AI sees technical patterns
-2. **Critical thinking:** You decide what feedback is valid (not blindly accepting)
-3. **Better writing:** Two sources catch more issues than one
-4. **Workplace readiness:** Practice balancing AI assistance with human judgment
-
-**Research shows:** Students who use PAIRR write stronger final drafts than those who receive only peer feedback OR only AI feedback. The comparative reflection is the key—it develops your evaluation skills.
-```
-
----
-
-**Instructor Implementation Notes for Element 4:**
-
-**Setup Requirements:**
-1. Create shared Google Drive folder for draft submissions (or use Uplimit draft sharing feature)
-2. Randomly pair students for peer review (avoid self-selection bias)
-3. Provide peer review form link (use existing Week 1 protocol from `discussion-prompts-and-peer-review-protocols.md`)
-4. Create comparative reflection submission box (Google Form or Uplimit text response)
-
-**Timeline Announcement Template:**
-```
-PAIRR Timeline for Reflection Memo:
-- Day 1-3 (Mon-Wed): Draft development (80% complete)
-- Day 4 (Thu): Submit draft to Google Drive by 11:59 PM
-- Day 5 (Fri): Peer review pairings announced
-- Days 4-5 (Thu-Fri): Complete peer review + AI feedback
-- Day 6 (Sat): Submit comparative reflection by 11:59 PM
-- Days 7-8 (Sun-Mon): Revise based on feedback
-- Day 9 (Tue): Complete post-revision reflection
-- Day 10 (Wed): Final memo submission by 11:59 PM
-
-Bonus Points: Up to 5 points for full PAIRR participation!
-```
-
-**Grading Efficiency:**
-- Peer reviews: Spot-check 20% for quality (5 min each)
-- Comparative reflections: Quick scan for engagement (2 min each)
-- Post-revision reflections: Read with final memo (1 min each)
-- **Total added time:** ~2-3 hours for 30-student cohort
-
-**Support Materials:**
-- Detailed implementation guide: `modules/week1/storyboards/PAIRR-Workflow-Module6.md`
-- Existing peer review protocol: `modules/shared-resources/discussion-prompts-and-peer-review-protocols.md`
-
----
-
-### Element 5: Text Response Question Configuration
+### Element 4: Text Response Question Configuration
 
 **Element Type:** Text Response (File upload enabled)
 
@@ -1073,7 +850,7 @@ The learner uses professional memo format, writes clearly and concisely with app
 
 ---
 
-### Element 6: Details - Rubric Examples Content
+### Element 5: Details - Rubric Examples Content
 ```
 Title: Rubric Details & Example Excerpts
 
@@ -1177,17 +954,14 @@ RE: Professional Sports Team Investment Analysis
 | Business Communication | 10 | 25% |
 | **Total** | **40** | **100%** |
 
-**PAIRR Bonus Points (Optional):**
-- Peer review completed: +2 pts
-- AI feedback obtained: +1 pt
-- Comparative reflection: +1 pt
-- Post-revision reflection: +1 pt
-- **Maximum Total: 45 pts**
+**AI Feedback Bonus (Optional):**
+- AI Writing Assistant used: +1 pt
+- **Maximum Total: 41 pts**
 ```
 
 ---
 
-### Element 7: AI Chat Widget Configuration
+### Element 6: AI Chat Widget Configuration
 - **Widget Name:** "Writing Assistant"
 - **System Prompt:** "You are a helpful writing coach for MBA students. Provide feedback and suggestions on business memo writing, structure, and analysis. Do NOT write content for students. Instead, ask questions to help them clarify their thinking. Focus on: clear executive communication, logical argumentation, evidence-based reasoning, and concise writing. If students ask you to write their memo, redirect them to develop their own analysis with your guidance."
 - **Welcome Message:** "Need help with your reflection memo? I can help you organize your thoughts, strengthen your arguments, or improve your business writing. What would you like to work on?"
@@ -1196,7 +970,6 @@ RE: Professional Sports Team Investment Analysis
 **Design Rationale:**
 - **Infobox** provides crystal-clear instructions and expectations (QM Standard 3)
 - **AI Roleplay** offers formative practice before summative assessment (UDL scaffolding, feedback for learning)
-- **PAIRR Methodology** integrates peer and AI feedback to develop critical evaluation skills and AI literacy
 - **Text Response with rubric** aligns assessment to Bloom's level (Analysis) and stated WLOs
 - **Rubric** ensures transparent, consistent evaluation (QM Standard 3, UDL clarity)
 - **AI grading** enables timely feedback at scale while maintaining rigor
@@ -1205,22 +978,22 @@ RE: Professional Sports Team Investment Analysis
 - Authentic task (executive memo to investors) connects to real-world practice
 - Word limit ensures concision (professional communication skill)
 - Measures all 4 WLOs (comprehensive assessment of Week 1 learning)
-- **Practice-before-performance model**: AI Roleplay (Element 2) lets students rehearse arguments and receive feedback before submitting final memo (Element 3)
+- **Practice-before-performance model**: AI Roleplay (Element 3) lets students rehearse arguments and receive feedback before submitting final memo (Element 4)
 
 ---
 
-## Element 8: CFL Project Milestone 1 Instructions
+## Element 7: CFL Project Milestone 1 Instructions
 
 ### ⓘ Infobox Content
 
 ```markdown
 Title: 🏈 CFL Expansion Project - Milestone 1: Market Selection & Revenue Projections
 
-**Team Deliverable:** Market Analysis Brief (2-3 pages)
+**Individual Deliverable:** Market Analysis Brief (2-3 pages)
 **Weight:** 15% of total project grade (15 points)
 **Due:** End of Week 1
 
-Your team will submit ONE document that includes:
+Your submission should include:
 
 **1. City Selection & Justification**
 - Which city are you proposing for CFL expansion?
@@ -1248,26 +1021,25 @@ Using this week's revenue stream framework, project Year 1-5 revenue:
 
 ---
 
-## Element 9: Milestone 1 File Upload
+## Element 8: Milestone 1 File Upload
 
-**Uplift Configuration:**
+**Uplimit Configuration:**
 - **Element Type:** File Upload
 - **Allowed Formats:** PDF, DOCX, Google Docs link
-- **Team Submission:** One submission per team (designate one team member to upload)
+- **Individual Submission:** One submission per student
 
 **Submission Instructions:**
 ```markdown
 ## Milestone 1 Submission
 
-Upload your team's Market Analysis Brief here.
+Upload your Market Analysis Brief here.
 
 **Requirements:**
 - 2-3 pages (excluding title page and references)
 - Professional formatting (headers, page numbers)
-- All team member names on title page
-- One submission per team
+- Your name on title page
 
-**Filename Format:** `TeamName_M1_MarketAnalysis.pdf`
+**Filename Format:** `LastName_M1_MarketAnalysis.pdf`
 
 **Rubric Preview:**
 | Criterion | Points |

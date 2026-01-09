@@ -208,28 +208,26 @@ What is your differentiation? Why do subscribers choose YOU over competitors?
 
 ## Element 7: Discussion Prompt - Share Your Strategy
 
-## 💬 DISCUSSION PROMPT #2: Share Your Streaming Wars Strategy
+## 💬 REFLECTION PROMPT #2: Share Your Streaming Wars Strategy
 
-**Post to Discussion Forum** (⬤ Required - 5 points)
+**Submit Reflection** (⬤ Required - 5 points)
 
 **Prompt:**
-Share your Streaming Wars simulation results and strategy. Did you achieve profitability? What key decisions led to your outcome?
+Reflect on your Streaming Wars simulation results. Did you achieve profitability? What key decisions led to your outcome?
 
 **Requirements:**
 - **Screenshot:** Upload an image of your final simulation dashboard (profitability timeline, subscriber count, etc.)
-- **Reflection:** 50 words minimum explaining your strategy and what you learned
-- **Peer Engagement:** React to at least 2 peers' strategies with questions or observations
+- **Reflection:** 75 words minimum explaining your strategy, what worked, what didn't, and what you learned
 - **Deadline:** Before starting The Rogers Challenge case study
 
-**Example Post:**
-"[Screenshot attached] I achieved profitability in Year 4 by [strategy]. My biggest lesson was [insight]. Seeing others' approaches, I'm curious: Did anyone succeed with [alternative strategy]?"
+**Example Response:**
+"[Screenshot attached] I achieved profitability in Year 4 by [strategy]. My biggest lesson was [insight]. If I could replay, I would [alternative approach] because [reasoning]."
 
 **Why This Matters:**
-Comparing strategies reveals multiple paths to success and failure. You'll see how different approaches to rights acquisition, pricing, and engagement affect profitability—directly preparing you to evaluate Rogers' actual decisions in the case study.
+Articulating your strategy reveals your understanding of how different approaches to rights acquisition, pricing, and engagement affect profitability—directly preparing you to evaluate Rogers' actual decisions in the case study.
 
 **Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
-- 3 points: Screenshot + 50-word reflection
-- 2 points: Two quality peer reactions
+- 5 points: Screenshot + thoughtful 75-word reflection with strategic insight
 
 ---
 

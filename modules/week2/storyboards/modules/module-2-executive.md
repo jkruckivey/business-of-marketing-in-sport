@@ -13,7 +13,7 @@
 | 1 | **Infobox (Callout)** ⬤ Required | Context about executive + viewing guide | Type directly | Blue variant, sets expectations |
 | 2 | **Video** ◐ Recommended | 45-minute executive interview (Al Dak) | Upload MP4 + VTT transcript | Hosted video with captions |
 | 3 | **Details** ○ Optional | Executive bio and background (optional) | Type directly | Accordion for optional depth |
-| 4 | **AI Chat Widget** ◐ Recommended | Your Learning Coach for media strategy concepts | Configure in Uplimit | Named: "Media Strategy Q&A" |
+| 4 | **AI Coach** ◐ Recommended | Your Learning Coach for media strategy concepts | Configure in Uplimit | Named: "Media Strategy Q&A" |
 
 **Detailed Content Specifications:**
 
@@ -114,8 +114,8 @@ Current Portfolio (Rogers Sports & Media):
 • Rogers Centre naming rights and operations
 ```
 
-### AI Chat Widget Configuration:
-- **Widget Name:** "Al Dak Interview: Media Strategy Q&A"
+### AI Coach Configuration:
+- **Name:** "Al Dak Interview: Media Strategy Q&A"
 - **System Prompt:** "You are a knowledgeable assistant helping MBA students understand media rights economics and sports content strategy based on Al Dak's interview. Al is SVP Revenue at Rogers Sports and Media. Answer questions about topics he covered including: (1) Rogers' $5.2B NHL deal rationale (cable protection, advertising leverage, team ownership vision), (2) dynamic pricing and inventory management (game-by-game pricing like airlines), (3) data analytics evolution (brand health studies, fan engagement tracking, attribution), (4) vertical integration strategy (rights + teams + distribution), (5) linear vs. streaming economics and future bundling models, (6) the 1:2-3 activation multiplier (how Rogers leverages NHL/Jays to extract larger agency deals). Provide clear, business-focused explanations with specific examples from Al's interview when possible. If students ask about content not covered in the interview, acknowledge the limitation and provide general industry context."
 - **Welcome Message:** "Hi! I can help clarify concepts from Al Dak's interview on media strategy. Al discussed Rogers' NHL deal, dynamic pricing, data-driven fan engagement, and the future of streaming. What questions do you have about media rights valuation, platform economics, or Rogers' strategy?"
 - **Show System Prompt to User:** No
@@ -139,7 +139,7 @@ Current Portfolio (Rogers Sports & Media):
 - Get water or a quick snack
 - Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
 
-**Progress:** You're 25% through Week 2 content! The next module uses interactive widgets to help you explore media economics—it's engaging, but give yourself permission to take breaks between widgets if needed.
+**Progress:** You're 25% through Week 2 content! The next module uses interactive tools to help you explore media economics—it's engaging, but give yourself permission to take breaks between activities if needed.
 
 *This break is optional but recommended. Return when you're ready to dive into valuation frameworks.*
 

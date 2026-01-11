@@ -13,7 +13,7 @@
 | 1 | **Infobox (Callout)** ⬤ Required | Display all 4 WLOs + week overview | Type directly in Uplimit | Blue variant, icon: ◉ |
 | 2 | **Text** ⬤ Required | Week 2 introduction + connection to Week 1 (3 paragraphs) | Import from `week2-intro.docx` | Bridges revenue ecosystem → media focus |
 | 3 | **Tiles** ◐ Recommended | 3 media strategy topics (preview) | Type directly in Uplimit | Blue variant, one tile per topic |
-| 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-week.html` | Shows how week outcomes connect to course goals |
+| 4 | **⚙ iFrame** ◐ Recommended | **Learning Outcomes Interactive** - WLO-CLO mapping | Embed `learning-outcomes-week.html` | Shows how week outcomes connect to course goals |
 
 ---
 
@@ -114,13 +114,13 @@ Create 3 tiles (1x3 or 2x2 grid with one empty):
 **Tile 3 - Description:** "Beyond passive viewing: how engagement drives advertising, subscription, and sponsorship value."
 
 
-### Element 4: Learning Outcomes Widget
+### Element 4: Learning Outcomes Interactive
 
-**Widget Purpose:** Interactive visualization showing how Week 2's learning outcomes connect to course-level goals
+**Purpose:** Interactive visualization showing how Week 2's learning outcomes connect to course-level goals
 
 **Uplimit Implementation:**
 
-**Widget File:** `learning-outcomes-week.html`
+**File:** `learning-outcomes-week.html`
 
 **Embed Code:**
 ```html
@@ -130,23 +130,23 @@ Create 3 tiles (1x3 or 2x2 grid with one empty):
   height="600"
   style="border: none; border-radius: 8px;"
   title="Week 2 Learning Outcomes"
-  aria-label="Interactive widget showing Week 2 learning outcomes and their connection to course goals"
+  aria-label="Interactive tool showing Week 2 learning outcomes and their connection to course goals"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
-**Widget Features:**
+**Features:**
 - Click any week outcome (WLO 2.1-2.4) to see which course-level outcomes it contributes to
 - Interactive highlighting shows connections between week and course goals
 - WCAG 2.2 AA compliant with keyboard navigation and screen reader support
 
-### Element 4A: Details - Widget Instructions (Expandable)
+### Element 4A: Details - Tool Instructions (Expandable)
 
-**Details Element Title:** `Need help? How to use this widget`
+**Details Element Title:** `Need help? How to use this tool`
 
 ```
-This widget shows how Week 2's learning outcomes connect to the overall course goals.
+This tool shows how Week 2's learning outcomes connect to the overall course goals.
 
 **How to use:**
 - Click any Week Learning Outcome (WLO 2.1-2.4) to see which Course Learning Outcome (CLO) it supports

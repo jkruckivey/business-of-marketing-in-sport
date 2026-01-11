@@ -6,7 +6,7 @@
 ### Version 1.4.0 Changes
 - **NEW:** Added stock photo suggestions after Element 1 (media rights intro), Element 6 (exclusivity text), Element 9 (linear vs streaming), and Element 11 (fan engagement)
 
-⭐ **V3 REDESIGN - INTERACTIVE-FIRST**: This module has been redesigned from passive reading (6-7 pages, 15-18 min) to active learning (12 micro-elements with 4 widgets, 12-15 min total, 60% active engagement).
+⭐ **V3 REDESIGN - INTERACTIVE-FIRST**: This module has been redesigned from passive reading (6-7 pages, 15-18 min) to active learning (12 micro-elements with 4 tools, 12-15 min total, 60% active engagement).
 
 **Uplimit Structure:** Third module in Unit 2
 
@@ -15,15 +15,15 @@
 | 1 | **Text** ⬤ Required | Why media rights matter (120 words) | 1 min | Embedded markdown below |
 | 2 | **Video** ◐ Recommended | Media rights valuation overview | 2 min | week2-video1-valuation-framework.mp4 |
 | 3 | **Vertical List** ⬤ Required | 5 valuation factors at a glance | 1 min | Type directly |
-| 4 | **🎮 iFrame Widget** ◐ Recommended | Widget 1: Audience Size Calculator | 4 min | Phase 3 widget (NEEDS TO BE BUILT) |
+| 4 | **🎮 iFrame** ◐ Recommended | Tool 1: Audience Size Calculator | 4 min | Phase 3 tool (NEEDS TO BE BUILT) |
 | 5 | **Text** ⬤ Required | Exclusivity & competition dynamics (150 words) | 1 min | Embedded markdown below |
-| 6 | **🎮 iFrame Widget** ◐ Recommended | Widget 2: Exclusivity Bidding Simulator | 3 min | Phase 2 widget (NEEDS TO BE BUILT) |
+| 6 | **🎮 iFrame** ◐ Recommended | Tool 2: Exclusivity Bidding Simulator | 3 min | Phase 2 tool (NEEDS TO BE BUILT) |
 | 7 | **Infobox (Note)** ⬤ Required | Key insight: Appointment viewing | 1 min | Yellow variant |
 | 8 | **Text** ⬤ Required | Linear TV vs. Streaming intro (120 words) | 1 min | Embedded markdown below |
 | 9 | **Table** ⬤ Required | Platform economics comparison | 1 min | Type directly |
-| 10 | **🎮 iFrame Widget** ◐ Recommended | Widget 3: Platform Economics Visualizer | 4 min | Phase 2 widget (NEEDS TO BE BUILT) |
+| 10 | **🎮 iFrame** ◐ Recommended | Tool 3: Platform Economics Visualizer | 4 min | Phase 2 tool (NEEDS TO BE BUILT) |
 | 11 | **Text** ⬤ Required | Fan engagement monetization (150 words) | 1 min | Embedded markdown below |
-| 12 | **🎮 iFrame Widget** ◐ Recommended | Widget 4: Engagement Value Chain Builder | 3 min | Phase 3 widget (NEEDS TO BE BUILT) |
+| 12 | **🎮 iFrame** ◐ Recommended | Tool 4: Engagement Value Chain Builder | 3 min | Phase 3 tool (NEEDS TO BE BUILT) |
 
 **V3 Metrics:**
 - **Total Time:** 12-15 minutes (down from 15-18 min in V1)
@@ -81,7 +81,7 @@ This module explores HOW broadcasters value these rights deals.
 - [0:45-1:00] Factor 3: Content Volume (NHL 1,271 games vs. NFL 272)
 - [1:00-1:15] Factor 4: Brand Alignment (premium brands pay premium rates)
 - [1:15-1:30] Factor 5: Platform Strategy (strategic value exceeds ROI)
-- [1:30-2:00] Conclusion (explore via interactive widgets)
+- [1:30-2:00] Conclusion (explore via interactive tools)
 
 ---
 
@@ -110,7 +110,7 @@ Create 5 numbered items:
 
 ---
 
-### Element 5: Widget 1 - Audience Size Calculator
+### Element 5: Tool 1 - Audience Size Calculator
 
 ### ⚙ Interactive Activity: Audience Size Calculator
 
@@ -132,9 +132,9 @@ In this interactive activity, you'll calculate the estimated media rights value 
 
 ---
 
-**🎮 Widget Purpose:** Demonstrate how audience size and demographics drive rights valuations using real league examples.
+**🎮 Tool Purpose:** Demonstrate how audience size and demographics drive rights valuations using real league examples.
 
-**Widget Status:** ⭕ Phase 3 widget - NEEDS TO BE BUILT (4-5 hours estimated)
+**Status:** ⭕ Phase 3 tool - NEEDS TO BE BUILT (4-5 hours estimated)
 
 **How It Works:**
 1. Select league: NFL, NHL, NBA, MLS, Premier League, or Custom
@@ -181,7 +181,7 @@ function calculateRightsValue(avgViewers, numGames, covetedDemoPercent, cpm) {
 
 **Implementation Notes:** HTML form with 5 inputs, JavaScript calculations, Chart.js bar chart, JSON export button. Ivey design system (#c5b783 accent color).
 
-### Element 5A: Details - Widget Instructions (Expandable)
+### Element 5A: Details - Tool Instructions (Expandable)
 
 **Details Element Title:** `Need help? How to use this calculator`
 
@@ -253,7 +253,7 @@ When Amazon entered NFL rights bidding (2021), traditional networks had to raise
 
 ---
 
-### Element 7: Widget 2 - Exclusivity Bidding Simulator
+### Element 7: Tool 2 - Exclusivity Bidding Simulator
 
 ### ⚙ Interactive Activity: Exclusivity Bidding Simulator
 
@@ -275,9 +275,9 @@ In this simulation, you're the NHL commissioner in 2025 facing three bidders for
 
 ---
 
-**🎮 Widget Purpose:** Let students experience competitive bidding dynamics and understand why exclusive rights command premium prices.
+**🎮 Tool Purpose:** Let students experience competitive bidding dynamics and understand why exclusive rights command premium prices.
 
-**Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (5-6 hours estimated)
+**Status:** ⭕ Phase 2 tool - NEEDS TO BE BUILT (5-6 hours estimated)
 
 **How It Works:**
 1. **Scenario:** You are NHL commissioner in 2025. Three bidders want Canadian national rights:
@@ -321,7 +321,7 @@ function calculatePackageValue(exclusiveOption, splitOptions) {
 
 **Implementation Notes:** Card-based interface with reveal animation, comparison logic, strategic insights panel. Preset scenarios for NHL, NFL, Premier League.
 
-### Element 7A: Details - Widget Instructions (Expandable)
+### Element 7A: Details - Tool Instructions (Expandable)
 
 **Details Element Title:** `Need help? How to use this simulator`
 
@@ -426,7 +426,7 @@ Traditional linear broadcasting and direct-to-consumer streaming have **fundamen
 
 ---
 
-### Element 11: Widget 3 - Platform Economics Visualizer
+### Element 11: Tool 3 - Platform Economics Visualizer
 
 ### ⚙ Interactive Activity: Platform Economics Visualizer
 
@@ -448,9 +448,9 @@ In this interactive activity, you'll toggle between Linear TV and Streaming/DTC 
 
 ---
 
-**🎮 Widget Purpose:** Let students manipulate platform economics variables and see how profitability timelines differ between linear TV and streaming models.
+**🎮 Tool Purpose:** Let students manipulate platform economics variables and see how profitability timelines differ between linear TV and streaming models.
 
-**Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (6-7 hours estimated)
+**Status:** ⭕ Phase 2 tool - NEEDS TO BE BUILT (6-7 hours estimated)
 
 **How It Works:**
 1. Toggle between **Linear TV** and **Streaming/DTC**
@@ -515,7 +515,7 @@ function calculateStreaming(rightsCost, subPrice, startingSubs, monthlyGrowth, c
 
 **Implementation Notes:** Dual-model toggle, Chart.js line chart with dual axes, preset scenario buttons, metrics panel with strategic insights, PDF export functionality.
 
-### Element 10A: Details - Widget Instructions (Expandable)
+### Element 10A: Details - Tool Instructions (Expandable)
 
 **Details Element Title:** `Need help? How to use this visualizer`
 
@@ -596,7 +596,7 @@ Platforms that drive engagement (interactive features, fantasy integration, bett
 
 ---
 
-### Element 12: Widget 4 - Engagement Value Chain Builder
+### Element 12: Tool 4 - Engagement Value Chain Builder
 
 ### ⚙ Interactive Activity: Engagement Value Chain Builder
 
@@ -618,9 +618,9 @@ In this interactive activity, you'll construct an engagement strategy by selecti
 
 ---
 
-**🎮 Widget Purpose:** Let students construct an engagement strategy and see how different tactics increase fan value and justify higher rights costs.
+**🎮 Tool Purpose:** Let students construct an engagement strategy and see how different tactics increase fan value and justify higher rights costs.
 
-**Widget Status:** ⭕ Phase 3 widget - NEEDS TO BE BUILT (5-6 hours estimated)
+**Status:** ⭕ Phase 3 tool - NEEDS TO BE BUILT (5-6 hours estimated)
 
 **How It Works:**
 1. Choose sport type (NHL, NBA, MLS, NFL, EPL)
@@ -681,7 +681,7 @@ function calculateEngagementValue(baseFans, baseFanValue, selectedTactics) {
 
 **Implementation Notes:** Checkbox form with 6 tactics, real-time calculations, stacked bar chart (engagement funnel), strategic insights panel, JSON export.
 
-### Element 12A: Details - Widget Instructions (Expandable)
+### Element 12A: Details - Tool Instructions (Expandable)
 
 **Details Element Title:** `Need help? How to use this builder`
 
@@ -696,7 +696,7 @@ This builder shows how fan engagement creates revenue beyond just watching games
    - Viewing → App download → Fantasy play → Betting → Merchandise purchase
    - Each step has a conversion rate and revenue value
 
-3. **See total fan value:** The widget calculates lifetime value based on your engagement chain
+3. **See total fan value:** The tool calculates lifetime value based on your engagement chain
 
 4. **Compare chains:** Try different starting points and see which generates more total value:
    - Does a social media fan become as valuable as a TV viewer?
@@ -715,11 +715,11 @@ This builder shows how fan engagement creates revenue beyond just watching games
 **Design Rationale:**
 - **V3 Philosophy:** Replace passive "reading ABOUT concepts" with active "experiencing concepts through manipulation"
 - **Micro-chunking:** No text over 150 words prevents cognitive overload
-- **Interactive widgets every 2-3 elements:** Maintains engagement and prevents passive fatigue
+- **Interactive tools every 2-3 elements:** Maintains engagement and prevents passive fatigue
 - **Discovery learning:** Students find patterns and trade-offs themselves (more memorable than being told)
-- **Progressive complexity:** Simple calculator (Widget 1) → Complex simulation (Widget 3)
+- **Progressive complexity:** Simple calculator (Tool 1) → Complex simulation (Tool 3)
 - **Real-world data:** NFL $110B, NHL $5.2B, MLS $250M examples ground learning in authenticity
-- **Supports all WLOs:** 2.1 (valuation via Widgets 1-2), 2.2 (platforms via Widget 3), 2.3 (engagement via Widget 4)
+- **Supports all WLOs:** 2.1 (valuation via Tools 1-2), 2.2 (platforms via Tool 3), 2.3 (engagement via Tool 4)
 
 ---
 
@@ -738,7 +738,7 @@ What's your #1 takeaway from the media rights framework? What surprised you most
 "The biggest surprise for me was [insight]. This challenges my assumption that [previous belief]. Going forward, I'll think differently about [application]..."
 
 **Why This Matters:**
-Articulating your key insight helps you process what you've learned through the widgets and prepares you to apply frameworks in the simulation.
+Articulating your key insight helps you process what you've learned through the tools and prepares you to apply frameworks in the simulation.
 
 **Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
 - 5 points: Thoughtful reflection (50+ words) with specific insight
@@ -747,7 +747,7 @@ Articulating your key insight helps you process what you've learned through the 
 
 ## 🌟 MENTAL BREAK #2: Reset Before Simulation
 
-**You've completed:** Media rights valuation framework with 4 interactive widgets
+**You've completed:** Media rights valuation framework with 4 interactive tools
 **Coming next:** Streaming Wars simulation (30-45 minutes)
 
 **Take a moment to:**

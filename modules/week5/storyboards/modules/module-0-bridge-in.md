@@ -499,7 +499,50 @@ Title: What Your Pre-Assessment Results Mean
 
 Your quiz results create a personalized learning path for this final week. Lower scores (0-4/14) suggest spending extra time with Module 3's Legacy vs Innovation Matrix framework and all interactive widgets—you're building heritage property strategy from scratch, which is perfect for developing strong synthesis skills. Higher scores (10-14/14) indicate solid strategic thinking, so challenge yourself with the Hockey Hall of Fame Transformation Simulation and final Strategic Vision Memo. Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently and identify where to focus your energy. Now that you know where you stand, let's solve those heritage strategy problems and create your 5-year vision.
 
+---
 
+## Element 6: Graphic Novel - "The Hall"
+
+**Purpose:** Visual narrative that introduces the week's key concepts through storytelling.
+
+**Graphic Novel:** "The Hall: A Hockey Heritage Story"
+
+**Location:** `modules/shared-resources/graphic-novels/05-the-hall-week5.md`
+
+**Implementation:** Generated using NotebookLM from the script. Upload resulting PDF or embed images in Uplimit.
+
+**Story Synopsis:**
+Follow Elena Kowalski, a Ukrainian-Canadian woman in her 50s serving as museum CEO, as she transforms the Hockey Hall of Fame by balancing tradition with innovation. The story dramatizes the strategic tension between preserving heritage and embracing change.
+
+**Learning Connection:**
+This narrative introduces the five strategic pillars for heritage properties: Immersive Experiences, Oral Archives, Virtual Access, New Narratives, and Global Community—the core concepts students will analyze this week.
+
+**Accessibility:**
+- Full text script available in `05-the-hall-week5.md`
+- Alt text for each panel included in script
+- High contrast visual style (Retro Sports Illustrated aesthetic)
+
+---
+
+## Element 7: Transition Text - From Story to Strategy
+
+**Text Content:**
+
+```markdown
+### From Story to Strategy
+
+Elena Kowalski's story illustrates how heritage properties can honor the past while building the future. The Hockey Hall of Fame's transformation shows that innovation isn't the enemy of tradition—it's the delivery mechanism.
+
+**What You'll Master:**
+- How to evaluate heritage properties as revenue assets
+- Frameworks for balancing tradition with innovation
+- Forecasting future trends and integrating them strategically
+- Creating 5-year visions that grow revenue without compromising authenticity
+
+Now let's build the frameworks you need to design heritage property strategies.
+```
+
+---
 
 ## Module Summary
 

@@ -535,6 +535,49 @@ Your quiz results create a personalized learning path for this week. Lower score
 
 ---
 
+## Element 7: Graphic Novel - "Building an Empire"
+
+**Purpose:** Visual narrative that introduces the week's key concepts through storytelling.
+
+**Graphic Novel:** "Building an Empire: An Athlete Brand Story"
+
+**Location:** `modules/shared-resources/graphic-novels/04-building-an-empire-week4.md`
+
+**Implementation:** Generated using NotebookLM from the script. Upload resulting PDF or embed images in Uplimit.
+
+**Story Synopsis:**
+Follow Maya Jordan, a Black woman in her 40s, as she builds a business empire beyond tennis. The story dramatizes how elite athletes transform athletic success into generational wealth through strategic brand architecture.
+
+**Learning Connection:**
+This narrative introduces the five brand pillars that create lasting athlete value: Sports Legacy, Fashion Empire, Beauty Brand, Media Production, and Venture Capital—the core concepts students will analyze this week.
+
+**Accessibility:**
+- Full text script available in `04-building-an-empire-week4.md`
+- Alt text for each panel included in script
+- High contrast visual style (Retro Sports Illustrated aesthetic)
+
+---
+
+## Element 8: Transition Text - From Story to Strategy
+
+**Text Content:**
+
+```markdown
+### From Story to Strategy
+
+Maya Jordan's story illustrates how elite athletes build $500 million brands by balancing five distinct revenue streams and building owned assets rather than relying solely on endorsements.
+
+**What You'll Master:**
+- The five athlete revenue streams beyond endorsements
+- Why owned businesses create generational wealth while endorsements create income
+- How women's sports represent the fastest-growing investment opportunity
+- Strategic timing for building post-career assets during playing years
+
+Now let's build the frameworks you need to design athlete brand strategies.
+```
+
+---
+
 ## Module 0 Complete - Transition to Module 1
 
 **What You've Accomplished:**

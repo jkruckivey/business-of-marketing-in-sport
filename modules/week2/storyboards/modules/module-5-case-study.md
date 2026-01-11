@@ -22,21 +22,21 @@
 | 1 | **Text** ⬤ Required | Connecting introduction from Module 4 | 1 min | Pattern: "You've just [previous] → Now [current]" |
 | 2 | **Infobox** ⬤ Required | Case overview + key questions | 1 min | Blue variant |
 | 4 | **Text** ⬤ Required | Case background: Rogers + NHL 2013 (150 words) | 1 min | Embedded markdown below |
-| 5 | **🎮 iFrame Widget** ◐ Recommended | Widget 5: Rogers Deal Terms Explorer | 3 min | Phase 2 widget |
+| 5 | **🎮 iFrame** ◐ Recommended | Tool 5: Rogers Deal Terms Explorer | 3 min | Phase 2 tool |
 | 6 | **Text** ⬤ Required | Strategic rationale: Why $5.2B? (150 words) | 1 min | Embedded markdown below |
 | 7 | **Video** ◐ Recommended | Executive retrospective (2 min) | 2 min | week2-rogers-retrospective.mp4 |
 | 8 | **Text** ⬤ Required | Performance overview (150 words) | 1 min | Embedded markdown below |
-| 9 | **🎮 iFrame Widget** ◐ Recommended | Widget 6: Projections vs. Actuals Visualizer | 4 min | Phase 2 widget |
+| 9 | **🎮 iFrame** ◐ Recommended | Tool 6: Projections vs. Actuals Visualizer | 4 min | Phase 2 tool |
 | 10 | **Infobox (Note)** ⬤ Required | Key insight: Why forecasts failed | 1 min | Yellow variant |
 | 11 | **Text** ⬤ Required | Audience trends (150 words) | 1 min | Embedded markdown below |
-| 12 | **🎮 iFrame Widget** ◐ Recommended | Widget 7: Viewership Trends Analyzer | 3 min | Phase 2 widget |
+| 12 | **🎮 iFrame** ◐ Recommended | Tool 7: Viewership Trends Analyzer | 3 min | Phase 2 tool |
 | 13 | **Text** ⬤ Required | Competitive landscape (150 words) | 1 min | Embedded markdown below |
 | 14 | **Table** ⬤ Required | Rogers vs. Competitors comparison | 1 min | Type directly |
 | 15 | **Text** ⬤ Required | The 2026 decision (150 words) | 1 min | Embedded markdown below |
-| 16 | **🎮 iFrame Widget** ⬤ Required | Widget 8: 2026 Decision Simulator (CAPSTONE) | 5 min | Phase 3 widget |
+| 16 | **🎮 iFrame** ⬤ Required | Tool 8: 2026 Decision Simulator (CAPSTONE) | 5 min | Phase 3 tool |
 | 17 | **Details** ○ Optional | Full case narrative (optional) | Optional | Accordion for deep dive |
 | 18 | **Text** ⬤ Required | Reflection Prompt #3 - Your Rogers 2026 Recommendation | Submit reflection | Required position statement |
-| 19 | **AI Chat Widget** ◐ Recommended | Rogers Case Analysis Coach | As needed | Socratic guidance tool |
+| 19 | **AI Coach** ◐ Recommended | Rogers Case Analysis Coach | As needed | Socratic guidance tool |
 | 20 | **Text** ◐ Recommended | Mental Break #4 - Prepare to Write | 5 min | Critical break before Module 6 |
 | 21 | **Text** ⬤ Required | 🎯 Final Project Connection | 2 min | Connects case to Week 5 capstone |
 | 22 | **Text** ⬤ Required | Module 5 Complete - Transition to Module 6 | 1 min | Preview assessment module |
@@ -44,7 +44,7 @@
 **Module 5 Metrics:**
 - **Total Time:** ~23 minutes
 - **Reading Time:** 8 minutes (text blocks + financial tutorial)
-- **Interactive Time:** 15 minutes (4 widgets + 1 video)
+- **Interactive Time:** 15 minutes (4 tools + 1 video)
 - **Active Engagement:** 65%
 
 ---
@@ -117,7 +117,7 @@ Copy the markdown below directly into Uplimit:
 
 ---
 
-## Element 4: Widget 5 - Rogers Deal Terms Explorer
+## Element 4: Tool 5 - Rogers Deal Terms Explorer
 
 ### ⚙ Interactive Activity: Rogers Deal Terms Explorer
 
@@ -139,9 +139,9 @@ In this interactive activity, you'll explore 5 tabs revealing what Rogers acquir
 
 ---
 
-**🎮 Widget Purpose:** Let students explore the comprehensive terms of the Rogers NHL deal interactively, understanding what $5.2B bought.
+**🎮 Tool Purpose:** Let students explore the comprehensive terms of the Rogers NHL deal interactively, understanding what $5.2B bought.
 
-**Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (5-6 hours estimated)
+**Status:** ⭕ Phase 2 tool - NEEDS TO BE BUILT (5-6 hours estimated)
 
 **How It Works:**
 1. **Deal Overview Screen:**
@@ -208,7 +208,7 @@ In this interactive activity, you'll explore 5 tabs revealing what Rogers acquir
 
 **Implementation Notes:** Tab interface + content panels + comparison overlay + export button. 5 tabs with comprehensive data.
 
-### Element 4A: Details - Widget Instructions (Expandable)
+### Element 4A: Details - Tool Instructions (Expandable)
 
 **Details Element Title:** `Need help? How to use this explorer`
 
@@ -268,7 +268,7 @@ This explorer breaks down exactly what Rogers bought for $5.2 billion — and wh
 - ⚠️ **Missing force majeure clauses** (COVID, strikes, lockouts)
 - ⚠️ **Revenue projections that assume "build it and they will come"** without customer acquisition strategy
 
-**🎯 Use This Framework:** As you explore Rogers' financial data in the next widgets, ask yourself: Where did projections go wrong? What assumptions failed? Could this have been predicted?
+**🎯 Use This Framework:** As you explore Rogers' financial data in the next tools, ask yourself: Where did projections go wrong? What assumptions failed? Could this have been predicted?
 
 ---
 
@@ -330,7 +330,7 @@ Rogers' optimistic projections collided with harsh market realities.
 
 ---
 
-## Element 7: Widget 6 - Projections vs. Actuals Visualizer
+## Element 7: Tool 6 - Projections vs. Actuals Visualizer
 
 ### ⚙ Interactive Activity: Projections vs. Actuals Visualizer
 
@@ -352,9 +352,9 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
 
 ---
 
-**🎮 Widget Purpose:** Let students interactively compare Rogers' financial projections with actual performance, identifying variance drivers.
+**🎮 Tool Purpose:** Let students interactively compare Rogers' financial projections with actual performance, identifying variance drivers.
 
-**Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (7-8 hours estimated)
+**Status:** ⭕ Phase 2 tool - NEEDS TO BE BUILT (7-8 hours estimated)
 
 **How It Works:**
 1. **10-Year Timeline (2014-2024):**
@@ -388,7 +388,7 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
 
 **Implementation Notes:** Chart.js integration + interactive scrubber + data table + variance calculations. 10-year data with key events.
 
-### Element 7A: Details - Widget Instructions (Expandable)
+### Element 7A: Details - Tool Instructions (Expandable)
 
 **Details Element Title:** `Need help? How to use this visualizer`
 
@@ -490,7 +490,7 @@ Beyond financial projections, Rogers faced declining and fragmented audiences.
 
 ---
 
-## Element 10: Widget 7 - Viewership Trends Analyzer
+## Element 10: Tool 7 - Viewership Trends Analyzer
 
 ### ⚙ Interactive Activity: Viewership Trends Analyzer
 
@@ -512,9 +512,9 @@ In this interactive activity, you'll explore 3 tabs of audience data: (1) Linear
 
 ---
 
-**🎮 Widget Purpose:** Let students explore Hockey Night in Canada viewership trends, subscriber growth, and audience demographics to understand market dynamics.
+**🎮 Tool Purpose:** Let students explore Hockey Night in Canada viewership trends, subscriber growth, and audience demographics to understand market dynamics.
 
-**Widget Status:** ⭕ Phase 2 widget - NEEDS TO BE BUILT (8-9 hours estimated)
+**Status:** ⭕ Phase 2 tool - NEEDS TO BE BUILT (8-9 hours estimated)
 
 **How It Works:**
 1. **Three Tabs to Explore:**
@@ -537,7 +537,7 @@ In this interactive activity, you'll explore 3 tabs of audience data: (1) Linear
 
 **Implementation Notes:** 3 separate charts + tab interface + data tables + annotations. Comprehensive viewership analysis.
 
-### Element 10A: Details - Widget Instructions (Expandable)
+### Element 10A: Details - Tool Instructions (Expandable)
 
 **Details Element Title:** `Need help? How to use this analyzer`
 
@@ -661,7 +661,7 @@ Rogers' NHL contract expires after the 2025-26 season. The company must decide i
 
 ---
 
-## Element 14: Widget 8 - 2026 Decision Simulator (CAPSTONE)
+## Element 14: Tool 8 - 2026 Decision Simulator (CAPSTONE)
 
 ### ⚙ CAPSTONE Activity: 2026 Decision Simulator
 
@@ -673,21 +673,21 @@ This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll 
 
 **What this capstone tests:**
 
-- **WLO 2.1:** Can you value NHL rights in 2026 given changed market conditions? (Apply frameworks from Widgets 1-2)
-- **WLO 2.2:** Can you evaluate platform strategies (exclusive vs. split vs. exit)? (Apply economics from Widget 3)
-- **WLO 2.3:** Can you assess fan engagement opportunities (betting, apps, exclusive content)? (Apply insights from Widget 4)
+- **WLO 2.1:** Can you value NHL rights in 2026 given changed market conditions? (Apply frameworks from Tools 1-2)
+- **WLO 2.2:** Can you evaluate platform strategies (exclusive vs. split vs. exit)? (Apply economics from Tool 3)
+- **WLO 2.3:** Can you assess fan engagement opportunities (betting, apps, exclusive content)? (Apply insights from Tool 4)
 - **WLO 2.4:** Can you synthesize financial, competitive, and strategic factors into ONE coherent recommendation? (Demonstrate Bloom's Synthesis/Evaluation level)
 
-**Time commitment:** 15-20 minutes (most complex widget, highest pedagogical value)
+**Time commitment:** 15-20 minutes (most complex tool, highest pedagogical value)
 **Learning outcomes synthesized:** ALL Week 2 WLOs (2.1, 2.2, 2.3, 2.4)
 
 **Note:** This is Week 2's capstone demonstration of mastery. Your recommendation will inform your Week 2 reflection memo.
 
 ---
 
-**🎮 Widget Purpose:** Let students make a strategic recommendation for Rogers' 2026 NHL rights decision, weighing financial, competitive, and strategic factors.
+**🎮 Tool Purpose:** Let students make a strategic recommendation for Rogers' 2026 NHL rights decision, weighing financial, competitive, and strategic factors.
 
-**Widget Status:** ⭕ Phase 3 widget - NEEDS TO BE BUILT (12-15 hours estimated)
+**Status:** ⭕ Phase 3 tool - NEEDS TO BE BUILT (12-15 hours estimated)
 
 **How It Works (CAPSTONE - Tests ALL Week 2 WLOs):**
 
@@ -730,9 +730,9 @@ This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll 
 - ✅ High contrast mode for charts and option cards
 - ✅ Focus indicators on phase navigation and option selection
 
-**Implementation Notes:** Multi-phase interface (5 phases) + complex calculations + comparison logic + export functionality. Most complex widget but highest pedagogical value.
+**Implementation Notes:** Multi-phase interface (5 phases) + complex calculations + comparison logic + export functionality. Most complex tool but highest pedagogical value.
 
-### Element 14A: Details - Widget Instructions (Expandable)
+### Element 14A: Details - Tool Instructions (Expandable)
 
 **Details Element Title:** `Need help? How to use this simulator`
 
@@ -816,12 +816,12 @@ What should Rogers do when the NHL deal expires in 2026? Should they renew exclu
 
 **Requirements:**
 - **Your Position:** 100 words minimum arguing for ONE option (renew/split/walk)
-- **Evidence-Based:** Reference specific data from Widgets 6-8, financial performance, competitive landscape
+- **Evidence-Based:** Reference specific data from Tools 6-8, financial performance, competitive landscape
 - **Address Counterarguments:** Acknowledge the strongest argument against your position and explain why you still recommend your option
 - **Deadline:** Before starting Your Mini-Case Memo assessment
 
 **Example Response:**
-"I recommend Rogers [OPTION] because [3 evidence-based reasons]. While some might argue [counterargument], the data shows [rebuttal]. Looking at Widget 8's projections, [specific insight]..."
+"I recommend Rogers [OPTION] because [3 evidence-based reasons]. While some might argue [counterargument], the data shows [rebuttal]. Looking at Tool 8's projections, [specific insight]..."
 
 **Why This Matters:**
 There is NO single right answer—this is a strategic judgment call with legitimate arguments on all sides. Articulating your position before writing the memo helps you develop confidence in your recommendation.
@@ -833,9 +833,9 @@ There is NO single right answer—this is a strategic judgment call with legitim
 
 ## Element 17: AI Roleplay - Rogers 2026 Strategy Briefing
 
-**🎮 Widget Purpose:** Authentic roleplay where students brief a senior strategist on the Rogers NHL deal and defend their 2026 recommendation, demonstrating synthesis of Week 2 frameworks and case analysis skills.
+**🎮 Tool Purpose:** Authentic roleplay where students brief a senior strategist on the Rogers NHL deal and defend their 2026 recommendation, demonstrating synthesis of Week 2 frameworks and case analysis skills.
 
-**Widget Status:** ⭕ Needs configuration in Uplimit platform
+**Status:** ⭕ Needs configuration in Uplimit platform
 
 **Element Type:** AI Roleplay (4-tab configuration)
 
@@ -1172,11 +1172,11 @@ You must present your analysis and defend a recommendation.
 **Design Rationale (Module 5):**
 - **V3 Philosophy:** Case analysis scaffolded progressively (context → data → analysis → decision)
 - **Micro-chunking:** No text over 150 words prevents cognitive overload
-- **Interactive widgets every 2-3 elements:** Students manipulate real financial data instead of passively reading exhibits
-- **Capstone widget:** Requires synthesis of ALL Week 2 concepts (rights valuation, platform economics, engagement, strategic evaluation)
+- **Interactive tools every 2-3 elements:** Students manipulate real financial data instead of passively reading exhibits
+- **Capstone tool:** Requires synthesis of ALL Week 2 concepts (rights valuation, platform economics, engagement, strategic evaluation)
 - **Multiple valid recommendations:** No single "right answer" - authentic business decision
 - **Progressive disclosure:** Optional full case in Details accordion AFTER interactive exploration
-- **Supports all WLOs:** 2.1 (valuation via Widget 5), 2.2 (platforms via Widgets 6-7), 2.3 (engagement via trends analysis), 2.4 (evaluation via Widget 8 capstone)
+- **Supports all WLOs:** 2.1 (valuation via Tool 5), 2.2 (platforms via Tools 6-7), 2.3 (engagement via trends analysis), 2.4 (evaluation via Tool 8 capstone)
 
 ---
 

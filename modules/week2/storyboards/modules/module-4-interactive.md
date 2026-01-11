@@ -9,9 +9,9 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Text** ⬤ Required | Connecting introduction from Module 3 | Type directly | Pattern: "You've just [previous] → Now [current]" |
 | 2 | **Infobox (Callout)** ⬤ Required | Activity instructions and learning objectives | Type directly | Blue variant, clear task |
-| 3 | **iFrame** ◐ Recommended | Streaming Wars Strategy widget | Custom widget hosted | Interactive simulation |
+| 3 | **iFrame** ◐ Recommended | Streaming Wars Strategy tool | Custom tool hosted | Interactive simulation |
 | 5 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to WLOs |
-| 6 | **AI Chat Widget** ◐ Recommended | Your Strategy Coach for simulation decisions | Configure in Uplimit | Named: "Platform Strategy Assistant" |
+| 6 | **AI Coach** ◐ Recommended | Your Strategy Coach for simulation decisions | Configure in Uplimit | Named: "Platform Strategy Assistant" |
 | 7 | **Details** ○ Optional | Hints and strategic considerations | Type directly | Accordion for struggling students |
 | 8 | **Text** ⬤ Required | Discussion Prompt #2 - Share Your Strategy | Type directly | Forum post with screenshot requirement |
 | 9 | **Text** ◐ Recommended | Mental Break #3 - Prepare for Case Analysis | Type directly | Rest before Module 5 case study |
@@ -43,7 +43,7 @@ You are the VP of Content Strategy for a new Canadian streaming platform with on
 
 ---
 
-## Element 3: Streaming Wars Strategy Widget
+## Element 3: Streaming Wars Strategy Tool
 
 ### ⚙ Interactive Activity: Streaming Wars Strategy
 
@@ -69,9 +69,9 @@ Remember the fan engagement value chain from Media Rights Frameworks (passive vi
 
 ---
 
-**🎮 Widget Purpose:** Simulate streaming platform strategy decisions to understand trade-offs between content costs, pricing, and subscriber growth through hands-on experience.
+**🎮 Tool Purpose:** Simulate streaming platform strategy decisions to understand trade-offs between content costs, pricing, and subscriber growth through hands-on experience.
 
-**Widget Status:** ✅ Phase 2 widget - BUILT AND READY
+**Status:** ✅ Phase 2 tool - BUILT AND READY
 
 **How It Works:**
 
@@ -144,10 +144,10 @@ Consider: Would you have made the Rogers deal using the insights from this simul
 
 ---
 
-## Element 5: AI Chat Widget - Platform Strategy Assistant
+## Element 5: AI Coach - Platform Strategy Assistant
 
-### AI Chat Widget Configuration:
-- **Widget Name:** "Platform Strategy Assistant"
+### AI Coach Configuration:
+- **Name:** "Platform Strategy Assistant"
 - **System Prompt:** "You are a helpful strategy advisor for MBA students learning about streaming platform economics. Provide guidance for the Streaming Wars Strategy simulation. Don't give direct answers, but ask Socratic questions to help students think through their platform strategy decisions. Focus on: content portfolio diversification, subscriber lifetime value, churn management, pricing psychology, and rights cost vs. subscriber growth trade-offs."
 - **Welcome Message:** "Working through your platform strategy? I can help you think through your rights acquisition and pricing decisions. What aspect of your strategy are you considering?"
 - **Show System Prompt:** No
@@ -196,7 +196,7 @@ What is your differentiation? Why do subscribers choose YOU over competitors?
 ```
 
 **Design Rationale:**
-- **iFrame widget** provides experiential learning of complex economics (UDL engagement, Application level)
+- **iFrame tool** provides experiential learning of complex economics (UDL engagement, Application level)
 - **Infobox** clearly frames task and connects to WLOs (QM clarity)
 - **Reflection prompt** encourages metacognition and case study preparation (transfer)
 - **AI Chat** offers adaptive support for struggling students (UDL scaffolding)
@@ -243,7 +243,7 @@ Articulating your strategy reveals your understanding of how different approache
 - Get fresh water or coffee
 - Step outside for 60 seconds if possible (fresh air resets focus)
 
-**Progress:** You're 70% through Week 2 content! The simulation showed you platform strategy in action. Now you'll analyze a real mega-deal to see where theory meets reality. This case has 4 interactive data widgets—it's fascinating but dense.
+**Progress:** You're 70% through Week 2 content! The simulation showed you platform strategy in action. Now you'll analyze a real mega-deal to see where theory meets reality. This case has 4 interactive data tools—it's fascinating but dense.
 
 *This is your most important break. The case study requires critical thinking and synthesis. Take 3-5 minutes to truly reset before diving into the Rogers deal.*
 

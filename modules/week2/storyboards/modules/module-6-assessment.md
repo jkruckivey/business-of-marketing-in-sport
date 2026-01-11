@@ -1,7 +1,22 @@
-## MODULE 6: Assessment - Mini-Case Memo + Project Milestone 2
-**Version:** 1.4.0 | **Last Updated:** 2025-12-05
+## MODULE 6: Assessment - Rogers NHL Mini-Case Memo
+**Version:** 1.8.0 | **Last Updated:** 2026-01-10
 
-**Purpose:** Assess student understanding of Week 2 content (measures WLO 2.1, 2.2, 2.3, 2.4) AND submit CFL Expansion Project Milestone 2
+**Purpose:** Assess student understanding of Week 2 content through Rogers NHL case analysis (measures WLO 2.1, 2.2, 2.3, 2.4)
+
+### Version 1.8.0 Changes
+- **MOVED:** CFL Milestone 2 moved to Module 7 (all Anchor Project work now in one module)
+- **SIMPLIFIED:** Module 6 now focused purely on Rogers assessment
+
+### Version 1.7.0 Changes
+- **UPDATED:** Micro-Steps 1-3 converted to Uplimit Text Response format
+- **ADDED:** Rubric criteria with 3 levels for each micro-step (2 criteria each)
+- **ADDED:** AI Grading Prompts for each micro-step
+- **FORMAT:** Now matches Uplimit interface (Question, Additional Instructions, Evaluation method, Rubric)
+- **TERMINOLOGY:** Replaced "widget" with "interactive tools", "exhibits", "AI Coach" throughout
+
+### Version 1.6.0 Changes
+- **UPDATED:** Removed all point references (Uplimit uses rubric levels, not points)
+- **FIXED:** Removed "study group" reference from feedback templates
 
 ### Version 1.5.0 Changes
 - **UPDATED:** CFL Expansion Project Milestone 2 now individual submission
@@ -15,16 +30,16 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Text** ⬤ Required | Connecting introduction from Module 5 | Type directly | Narrative bridge to assessment |
-| 2 | **Infobox (Insight)** ⬤ Required | Assessment overview + scaffolded approach | Type directly | Purple variant, 56 pts total |
-| 3 | **Text Response** ⬤ Required | MICRO-STEP 1: Key Mistakes (3 bullets) | Configure in Uplimit | AI feedback enabled, 5 pts |
-| 4 | **Text Response** ⬤ Required | MICRO-STEP 2: Deal Evaluation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
-| 5 | **Text Response** ⬤ Required | MICRO-STEP 3: 2026 Recommendation (1 paragraph) | Configure in Uplimit | AI feedback enabled, 5 pts |
+| 2 | **Infobox (Insight)** ⬤ Required | Assessment overview + scaffolded approach | Type directly | Purple variant |
+| 3 | **Text Response** ⬤ Required | MICRO-STEP 1: Key Mistakes (3 bullets) | Configure in Uplimit | AI feedback enabled |
+| 4 | **Text Response** ⬤ Required | MICRO-STEP 2: Deal Evaluation (1 paragraph) | Configure in Uplimit | AI feedback enabled |
+| 5 | **Text Response** ⬤ Required | MICRO-STEP 3: 2026 Recommendation (1 paragraph) | Configure in Uplimit | AI feedback enabled |
 | 6 | **Infobox (Callout)** ⬤ Required | Transition to full memo synthesis | Type directly | Blue variant, encouragement |
 | 7 | **Text** ◐ Recommended | **AI Feedback Instructions** | Type directly | ChatGPT prompt template |
-| 8 | **Text Response** ◐ Recommended | **AI Feedback Submission** | Configure in Uplimit | 1 pt bonus |
-| 9 | **Text Response** ⬤ Required | **FINAL MEMO** | Configure in Uplimit | Rubric grading, 40 pts |
+| 8 | **Text Response** ◐ Recommended | **AI Feedback Submission** | Configure in Uplimit | Optional bonus |
+| 9 | **Text Response** ⬤ Required | **FINAL MEMO** | Configure in Uplimit | Rubric grading |
 | 10 | **Details** ○ Optional | Rubric details and examples | Type directly | Accordion - transparent criteria |
-| 11 | **AI Chat Widget** ◐ Recommended | Rogers Case Analysis Coach | Configure in Uplimit | Guides thinking, not answers |
+| 11 | **AI Coach** ◐ Recommended | Rogers Case Analysis Coach | Configure in Uplimit | Guides thinking, not answers |
 | 12 | **Text** ⬤ Required | Final Project Connection | Type directly | How Module 6 supports capstone |
 | 13 | **Text** ⬤ Required | Module 6 Complete - Transition to Module 7 | Type directly | Recap and preview |
 
@@ -38,7 +53,7 @@
 
 ## Element 1: Connecting Introduction
 
-You've just analyzed the Rogers/NHL mega-deal through multiple lenses (Module 5)—watching the 10-year retrospective, exploring financial exhibits, and using interactive widgets to project scenarios. You understand the deal's context, structure, and outcomes.
+You've just analyzed the Rogers/NHL mega-deal through multiple lenses (Module 5)—watching the 10-year retrospective, exploring financial exhibits, and using interactive tools to project scenarios. You understand the deal's context, structure, and outcomes.
 
 Now it's time to demonstrate your mastery. Module 6 is your Week 2 summative assessment: a strategic mini-case memo evaluating the Rogers deal and recommending next steps. This assessment uses a scaffolded approach with AI feedback to develop your strategic thinking.
 
@@ -63,10 +78,9 @@ To help you write a stronger memo, this assessment is broken into 3 micro-steps 
 4. **Final Memo:** Synthesize all 3 micro-steps into polished 2-page executive memo
 
 **Why This Approach?**
-- Each micro-step earns 5 participation points (15 pts total)
-- AI feedback helps you strengthen arguments BEFORE final submission
+- AI feedback on each micro-step helps you strengthen arguments BEFORE final submission
 - Reduces writing anxiety by building confidence through small wins
-- Final memo is worth 40 points (graded with full rubric)
+- Final memo is graded with full rubric
 
 **Prompt:**
 You are a consultant hired by Rogers Communications in 2024 to assess the NHL deal's performance and recommend next steps.
@@ -76,12 +90,10 @@ You are a consultant hired by Rogers Communications in 2024 to assess the NHL de
 • Then write final 2-page memo (max 1000 words)
 • Executive memo format (To/From/Date/Re)
 • Apply concepts from readings, executive session, and simulation
-• Reference specific data from case widgets (Widgets 6, 7, 8)
+• Reference specific data from Module 5 interactive exhibits
 • Due: [Date] by 11:59 PM
 
-**Total Points:** 56 points (15 micro-steps + 40 final memo + 1 AI feedback bonus)
-
-**Optional AI Feedback Bonus (1 point):**
+**Optional AI Feedback Bonus:**
 - Generate AI feedback on your draft using ChatGPT prompt provided
 - Submit the AI feedback as evidence of engagement
 
@@ -97,38 +109,88 @@ You are a consultant hired by Rogers Communications in 2024 to assess the NHL de
 
 ## Element 3: Micro-Step 1 - Key Mistakes (Text Response)
 
-**Question Text:**
+**Uplift Implementation:**
+1. Select **Text Response** element
+2. Configure as follows:
+
+**Question:**
 ```
 MICRO-STEP 1: Identify Rogers' Key Mistakes
 
-List 3 specific mistakes Rogers made in the NHL deal. For each mistake, provide:
+List 3 specific mistakes Rogers made in the NHL deal.
+```
+
+**Additional Instructions (optional):**
+```
+For each mistake, provide:
 • What went wrong (1 sentence)
-• Evidence from the case data (reference specific numbers from Widgets 6, 7, or 8)
+• Evidence from the case data (reference specific numbers from the Module 5 interactive exhibits)
 
 Format: Use bullet points. Be specific and evidence-based.
 
 Example:
-• Mistake 1: [What went wrong]. Evidence: [Widget X shows Y data point].
-• Mistake 2: [What went wrong]. Evidence: [specific number from case].
-• Mistake 3: [What went wrong]. Evidence: [comparison or variance].
+• Mistake 1: [What went wrong]. Evidence: [The Revenue Tracker shows Y data point].
+• Mistake 2: [What went wrong]. Evidence: [specific number from case exhibits].
+• Mistake 3: [What went wrong]. Evidence: [comparison or variance from scenarios].
 ```
 
-**AI Feedback Configuration:**
-- ✅ Enable AI feedback
-- **Feedback Prompt:** "Review this student's 3 key mistakes. For each mistake: (1) Confirm if it's evidence-based and specific, (2) Ask if they can quantify the impact (e.g., revenue shortfall, subscriber gap), (3) Suggest one deeper question they should consider. Be encouraging but push for precision. Example: 'Good start! For Mistake #2, you identified streaming underperformance. Can you quantify the subscriber gap? Widget 6 shows the exact numbers—what percentage did Rogers miss their target by?'"
-- **Points:** 5 points (participation credit, not graded rigorously)
-- **Purpose:** Build confidence, get students comfortable analyzing data
+**Evaluation method:** ✅ Evaluate with a rubric
+
+**Enable automated AI grading:** ✅ Yes
+
+**Include evaluation levels:** ✅ Yes
+
+---
+
+**Criterion 1: Mistake Specificity**
+*Are the mistakes specific and clearly articulated?*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | Mistakes are vague, generic, or not clearly stated. |
+| Partially meets expectations | Some mistakes are specific but others lack clarity or precision. |
+| Fully meets expectations | All 3 mistakes are specific, clearly articulated, and demonstrate understanding of the case. |
+
+---
+
+**Criterion 2: Evidence Quality**
+*Is each mistake supported by specific case data?*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | No evidence cited, or evidence is vague/unconnected to mistakes. |
+| Partially meets expectations | Some evidence provided but inconsistent or lacking specific numbers from case exhibits. |
+| Fully meets expectations | Each mistake includes specific, relevant evidence from case exhibits with concrete data points. |
+
+---
+
+**AI Grading Prompt:**
+```
+Review this student's 3 key mistakes. For each mistake:
+1. Is it specific and clearly stated?
+2. Is it supported by evidence from the case data?
+3. Can they quantify the impact?
+
+Be encouraging but push for precision. If a mistake lacks evidence, ask them to reference specific numbers. Example: "Good start on Mistake #2! You identified streaming underperformance. Can you quantify the subscriber gap? The Revenue Tracker from Module 5 shows the exact numbers."
+```
 
 ---
 
 ## Element 4: Micro-Step 2 - Deal Evaluation (Text Response)
 
-**Question Text:**
+**Uplift Implementation:**
+1. Select **Text Response** element
+2. Configure as follows:
+
+**Question:**
 ```
 MICRO-STEP 2: Evaluate the Deal
 
 Write 1 paragraph (100-150 words) evaluating whether Rogers' $5.2B investment was justified.
+```
 
+**Additional Instructions (optional):**
+```
 Apply Week 2 frameworks:
 • Media rights valuation framework (WLO 2.1): Did Rogers properly value audience size, exclusivity, platform flexibility?
 • Platform economics (WLO 2.2): Did the linear TV + streaming strategy make sense?
@@ -137,22 +199,63 @@ Apply Week 2 frameworks:
 Was the deal justified given Rogers' strategic goals (defend cable, build Sportsnet brand, enter streaming)?
 ```
 
-**AI Feedback Configuration:**
-- ✅ Enable AI feedback
-- **Feedback Prompt:** "Review this student's deal evaluation paragraph. Check: (1) Did they apply at least 2 Week 2 frameworks? (2) Did they distinguish between financial ROI and strategic value? (3) Is their evaluation nuanced (acknowledging both successes and failures)? Provide specific feedback. Example: 'Strong use of the valuation framework! You mentioned exclusivity as a key factor. Now, can you add the platform economics lens? How did Rogers' linear + streaming strategy compare to what you learned in the Streaming Wars simulation? Would a multi-sport approach (like DAZN) have been smarter?'"
-- **Points:** 5 points (participation credit)
-- **Purpose:** Ensure students apply frameworks, not just opinionate
+**Evaluation method:** ✅ Evaluate with a rubric
+
+**Enable automated AI grading:** ✅ Yes
+
+**Include evaluation levels:** ✅ Yes
+
+---
+
+**Criterion 1: Framework Application**
+*Does the evaluation apply Week 2 frameworks?*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | No frameworks applied; evaluation is opinion-based without analytical structure. |
+| Partially meets expectations | Applies 1 framework but misses opportunities to use others or application is superficial. |
+| Fully meets expectations | Applies 2+ Week 2 frameworks (valuation, platform economics, engagement) with clear connections to the case. |
+
+---
+
+**Criterion 2: Nuanced Analysis**
+*Does the evaluation acknowledge both successes and failures?*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | One-sided evaluation (all positive or all negative) without nuance. |
+| Partially meets expectations | Acknowledges some complexity but doesn't fully distinguish financial ROI from strategic value. |
+| Fully meets expectations | Nuanced evaluation that distinguishes financial outcomes from strategic value and acknowledges trade-offs. |
+
+---
+
+**AI Grading Prompt:**
+```
+Review this student's deal evaluation paragraph. Check:
+1. Did they apply at least 2 Week 2 frameworks (valuation, platform economics, engagement)?
+2. Did they distinguish between financial ROI and strategic value?
+3. Is their evaluation nuanced (acknowledging both successes and failures)?
+
+Be encouraging and specific. Example: "Strong use of the valuation framework! You mentioned exclusivity. Now, can you add the platform economics lens? How did Rogers' linear + streaming strategy compare to what you learned in the Streaming Wars simulation?"
+```
 
 ---
 
 ## Element 5: Micro-Step 3 - 2026 Recommendation (Text Response)
 
-**Question Text:**
+**Uplift Implementation:**
+1. Select **Text Response** element
+2. Configure as follows:
+
+**Question:**
 ```
 MICRO-STEP 3: 2026 Strategic Recommendation
 
 Write 1 paragraph (100-150 words) recommending what Rogers should do in 2026 when the NHL deal expires.
+```
 
+**Additional Instructions (optional):**
+```
 Choose ONE option and defend it:
 • Option 1: Renew exclusive rights (at what price?)
 • Option 2: Renegotiate for split package with competitors
@@ -165,11 +268,46 @@ Your recommendation should:
 • Reference market dynamics (competitors, streaming trends, viewership data)
 ```
 
-**AI Feedback Configuration:**
-- ✅ Enable AI feedback
-- **Feedback Prompt:** "Review this student's 2026 recommendation. Check: (1) Is their recommendation clear and specific? (2) Did they provide evidence-based reasons? (3) Did they acknowledge risks/trade-offs? (4) Did they consider competitive landscape and market trends? Provide constructive feedback. Example: 'Clear recommendation! You chose Option 2 (split package). Strong reasons about cost reduction and risk management. Now, what's your Plan B if the NHL refuses to split rights? Also, you mentioned TSN as a potential partner—what makes that partnership viable given the competitive history? Widget 7's competitor data might help you strengthen this argument.'"
-- **Points:** 5 points (participation credit)
-- **Purpose:** Force students to commit to a position before final memo (builds conviction)
+**Evaluation method:** ✅ Evaluate with a rubric
+
+**Enable automated AI grading:** ✅ Yes
+
+**Include evaluation levels:** ✅ Yes
+
+---
+
+**Criterion 1: Recommendation Clarity**
+*Is the recommendation clear and defensible?*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | Recommendation is vague, unclear, or not committed to a specific option. |
+| Partially meets expectations | Recommendation is stated but reasoning is weak or lacks specificity. |
+| Fully meets expectations | Clear, specific recommendation with 2-3 evidence-based reasons that demonstrate strategic thinking. |
+
+---
+
+**Criterion 2: Risk Awareness**
+*Does the recommendation acknowledge trade-offs and market dynamics?*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | No acknowledgment of risks, trade-offs, or competitive landscape. |
+| Partially meets expectations | Mentions risks but doesn't fully explore trade-offs or market dynamics. |
+| Fully meets expectations | Thoughtfully acknowledges risks/trade-offs and references competitive landscape and market trends. |
+
+---
+
+**AI Grading Prompt:**
+```
+Review this student's 2026 recommendation. Check:
+1. Is their recommendation clear and specific (committed to one option)?
+2. Did they provide 2-3 evidence-based reasons?
+3. Did they acknowledge risks/trade-offs?
+4. Did they consider competitive landscape and market trends?
+
+Be encouraging and constructive. Example: "Clear recommendation! You chose Option 2 (split package). Strong reasons about cost reduction. Now, what's your Plan B if the NHL refuses to split rights? The competitor analysis from Module 5 might help strengthen this argument."
+```
 
 ---
 
@@ -183,8 +321,6 @@ Title: ✅ Micro-Steps Complete! Ready to Write Your Full Memo
 ✅ Evaluated the deal using Week 2 frameworks
 ✅ Developed a clear 2026 recommendation
 
-**You've earned 15 participation points so far.**
-
 **Final Step: Synthesize Into Executive Memo**
 
 Now, use your 3 micro-steps as building blocks to write a polished 2-page executive memo.
@@ -196,7 +332,7 @@ Now, use your 3 micro-steps as building blocks to write a polished 2-page execut
 • Strengthen your arguments with additional evidence
 • Proofread for clarity and concision (you have 1000 words max—use them wisely!)
 
-**This final memo is worth 40 points and will be graded with the full rubric.**
+**This final memo will be graded with the full rubric.**
 
 **Your AI Case Analysis Coach is available if you need help structuring or strengthening your arguments!**
 ```
@@ -210,7 +346,7 @@ Now, use your 3 micro-steps as building blocks to write a polished 2-page execut
 2. Copy markdown below:
 
 ```markdown
-# AI Feedback Instructions (1 Point Bonus)
+# AI Feedback Instructions (Optional Bonus)
 
 Before submitting your final memo, you can generate AI feedback using ChatGPT to strengthen your analysis.
 
@@ -225,19 +361,19 @@ You are a strategic advisor reviewing a media rights deal analysis memo for an M
 
 Review the draft below using these criteria:
 
-**Deal Evaluation (12 points):**
+**Deal Evaluation:**
 Does the memo apply Week 2 frameworks (rights valuation drivers, platform economics, fan engagement monetization)? Is analysis supported by specific case evidence? Does it show nuanced understanding of strategic rationale vs. financial outcomes?
 
-**Mistake Identification (10 points):**
+**Mistake Identification:**
 Are 2-3 specific mistakes identified with supporting evidence from exhibits? Does analysis go beyond obvious errors to reveal strategic misjudgments?
 
-**Strategic Recommendations (10 points):**
+**Strategic Recommendations:**
 Is the 2026 recommendation specific and actionable? Are recommendations defensible with evidence? Are trade-offs/risks acknowledged?
 
-**Application of Concepts (5 points):**
+**Application of Concepts:**
 Does the memo effectively apply concepts from readings, executive sessions, and simulations?
 
-**Business Communication (3 points):**
+**Business Communication:**
 Professional memo format? Clear, concise writing? Within word limit?
 
 Provide feedback in this format:
@@ -262,11 +398,9 @@ Replace `[PASTE YOUR DRAFT HERE]` with your complete draft memo.
 
 ### Step 4: Submit AI Feedback
 
-Submit the ChatGPT response via Element 12 by Day 5.
+Submit the ChatGPT response via the AI Feedback Submission box by Day 5.
 
-**Grading:** 1 point bonus for completing AI feedback generation.
-
-**Note:** You're not graded on the quality of AI feedback (that's out of your control). You're graded on successfully generating and submitting it as evidence you engaged with AI-assisted learning.
+**Note:** You're not graded on the quality of AI feedback (that's out of your control). This is an optional activity to demonstrate engagement with AI-assisted learning.
 ```
 
 ---
@@ -281,10 +415,10 @@ Submit the ChatGPT response via Element 12 by Day 5.
 ```
 Paste the complete ChatGPT feedback response here.
 
-You're graded on submitting AI-generated feedback (not on the quality of that feedback).
+This is optional—submitting demonstrates engagement with AI-assisted learning.
 ```
 
-**Evaluation Method:** Participation credit (1 point)
+**Evaluation Method:** Optional participation
 
 **Due Date:** Day 5
 
@@ -292,17 +426,15 @@ You're graded on submitting AI-generated feedback (not on the quality of that fe
 
 ## Element 9: Final Memo Submission (Text Response)
 
-**Question Text:**
+**Uplift Implementation:**
+1. Select **Text Response** element
+2. Configure as follows:
+
+**Question:**
 ```
 Submit your FINAL 2-page Rogers NHL Deal Mini-Case Memo here.
 
-You may either:
-• Type directly in the text box below, OR
-• Upload a PDF file
-
-Reminder: Max 1000 words, executive memo format
-
-**This final version will be graded using the 40-point rubric.**
+Type your memo directly in the text box below (max 1000 words, executive memo format).
 ```
 
 **Additional Instructions:**
@@ -317,28 +449,97 @@ Before submitting, check that you have:
 ✓ Stayed within 1000-word limit
 ```
 
-**Evaluation Method:** ✅ Rubric (40 points)
+**Evaluation Method:** ✅ Rubric
 
 **Due Date:** Day 7
 
-**Rubric Criteria:**
+**Enable automated AI grading:** ✅ Yes
 
-| **Criterion** | **Points** | **Description** |
-|--------------|-----------|----------------|
-| **Deal Evaluation** | 12 pts | Applies Week 2 frameworks to evaluate the $5.2B investment. Uses rights valuation drivers, platform economics, and engagement metrics. Demonstrates sophisticated understanding of trade-offs. |
-| **Mistake Identification** | 10 pts | Identifies 2-3 specific mistakes with supporting evidence from case exhibits. Analysis is insightful and goes beyond obvious observations. |
-| **Strategic Recommendations** | 10 pts | Provides actionable recommendations for 2026 decision. Recommendations are defensible, specific, and consider market dynamics, competitive landscape, and Rogers' strategic position. |
-| **Application of Concepts** | 5 pts | Effectively applies concepts from readings, executive session, and simulation. Makes relevant connections and demonstrates integrated learning. |
-| **Business Communication** | 3 pts | Professional memo format. Clear, concise writing. Appropriate tone for executive audience. Within word limit. |
+**Include evaluation levels:** ✅ Yes
 
-**Total:** 40 points
+---
 
-**AI Grading Settings:**
-- ✅ Enable automated AI grading
-- ✅ Include evaluation levels (Excellent / Proficient / Developing / Needs Improvement)
-- ✅ Apply points (40 total)
+### Rubric Criteria:
 
-**Feedback Templates:**
+---
+
+**Criterion 1: Deal Evaluation**
+*Applies Week 2 frameworks to evaluate the $5.2B investment.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response does not apply Week 2 frameworks or lacks evidence-based analysis of the deal. |
+| Partially meets expectations | The response applies some frameworks but analysis lacks depth, specificity, or nuanced understanding of trade-offs. |
+| Fully meets expectations | The response effectively applies rights valuation drivers, platform economics, and engagement metrics with sophisticated understanding of strategic vs. financial outcomes. |
+
+---
+
+**Criterion 2: Mistake Identification**
+*Identifies specific mistakes with supporting evidence from case exhibits.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response does not identify specific mistakes or lacks supporting evidence from case data. |
+| Partially meets expectations | The response identifies mistakes but they are obvious, lack specificity, or evidence is weak. |
+| Fully meets expectations | The response identifies 2-3 specific, insightful mistakes with clear supporting evidence from exhibits. Analysis goes beyond obvious observations. |
+
+---
+
+**Criterion 3: Strategic Recommendations**
+*Provides actionable recommendations for the 2026 decision.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response lacks clear recommendations or recommendations are vague and undefensible. |
+| Partially meets expectations | The response provides recommendations but they lack specificity, evidence, or acknowledgment of trade-offs. |
+| Fully meets expectations | The response provides specific, actionable recommendations that consider market dynamics, competitive landscape, and Rogers' strategic position with clear trade-off analysis. |
+
+---
+
+**Criterion 4: Application of Concepts**
+*Applies concepts from readings, executive session, and simulation.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response does not reference or apply course concepts. |
+| Partially meets expectations | The response references some concepts but connections are superficial or forced. |
+| Fully meets expectations | The response effectively integrates concepts from multiple course sources and demonstrates synthesis of learning. |
+
+---
+
+**Criterion 5: Business Communication**
+*Professional memo format with clear, concise writing.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response lacks professional format, is unclear, or significantly exceeds word limit. |
+| Partially meets expectations | The response uses memo format but writing lacks clarity or concision in places. |
+| Fully meets expectations | The response uses professional executive memo format with clear, concise writing appropriate for executive audience. Within word limit. |
+
+---
+
+### AI Grading Prompt (for Uplimit configuration):
+```
+You are evaluating a Rogers NHL Deal Mini-Case Memo for an MBA sports business course.
+
+Evaluate based on these criteria:
+
+1. DEAL EVALUATION: Does the memo apply Week 2 frameworks (rights valuation, platform economics, fan engagement)? Is analysis evidence-based?
+
+2. MISTAKE IDENTIFICATION: Are 2-3 specific mistakes identified with supporting evidence from case exhibits?
+
+3. STRATEGIC RECOMMENDATIONS: Is the 2026 recommendation specific, actionable, and defensible with evidence?
+
+4. APPLICATION OF CONCEPTS: Does the memo integrate concepts from readings, executive session, and simulation?
+
+5. BUSINESS COMMUNICATION: Professional memo format? Clear, concise writing? Within word limit?
+
+Be encouraging but specific. Highlight what they did well and suggest 1-2 areas for improvement.
+```
+
+---
+
+### Feedback Templates:
 
 **After Submission (All Students):**
 ```
@@ -350,7 +551,7 @@ In the meantime:
 • Review Week 2 concepts - they'll be foundational for Week 3 (Sponsorship & Betting)
 ```
 
-**Feedback for Excellent Work (36-40 points):**
+**Feedback for Fully Meets Expectations:**
 ```
 Excellent analysis! Your memo demonstrates sophisticated understanding of media rights
 economics and platform strategy. Your recommendations are well-reasoned and actionable.
@@ -363,9 +564,9 @@ This level of strategic thinking will serve you well in the Anchor Project and r
 weeks. Well done!
 ```
 
-**Feedback for Proficient Work (28-35 points):**
+**Feedback for Partially Meets Expectations:**
 ```
-Proficient work. Your memo shows solid understanding of the Rogers deal and applies
+Solid work. Your memo shows understanding of the Rogers deal and applies some
 Week 2 frameworks effectively.
 
 Strengths: [AI-generated specific feedback]
@@ -379,10 +580,10 @@ To strengthen your analysis:
 Review [specific content] to deepen your strategic lens.
 ```
 
-**Feedback for Developing Work (20-27 points):**
+**Feedback for Does Not Meet Expectations:**
 ```
-Your memo demonstrates developing understanding of media economics and strategic analysis.
-There are opportunities to strengthen your case analysis.
+Your submission shows you're building understanding of media strategy. There are
+opportunities to strengthen your case analysis.
 
 [AI-generated specific feedback on gaps]
 
@@ -392,23 +593,7 @@ To improve:
 • Revisit the media rights valuation framework (Module 3) and apply it systematically
 • Use the Case Analysis Assistant (AI chat) to work through your logic
 
-Consider office hours for one-on-one case discussion.
-```
-
-**Feedback for Needs Improvement Work (<20 points):**
-```
-Your submission shows you're building understanding of media strategy, but we need to
-strengthen your case analysis skills.
-
-[AI-generated specific gaps identified]
-
-Required next steps:
-• Schedule office hours to discuss media economics frameworks
-• Re-engage with the Streaming Wars simulation (use AI assistant for guidance)
-• Review the case exhibits with a study group - discuss what the data reveals
-• Revise and resubmit your memo by [date] for re-evaluation
-
-Case analysis is a core MBA skill. Let's work together to build your proficiency.
+Consider office hours for one-on-one discussion.
 ```
 
 ---
@@ -419,9 +604,9 @@ Title: Rubric Details & Example Excerpts
 
 [Expand to see evaluation criteria and examples]
 
-## Deal Evaluation (12 points)
+## Deal Evaluation
 
-**Excellent (11-12 pts):**
+**Fully Meets Expectations:**
 "Applies multiple Week 2 frameworks systematically. Evaluates deal using rights valuation
 drivers (audience, exclusivity, volume, brand, strategy fit), platform economics (linear
 vs. streaming profitability timelines), and fan engagement monetization. Demonstrates
@@ -437,23 +622,19 @@ streaming subscribers reached only 450K (Exhibit B), advertising revenue decline
 due to faster-than-expected cord-cutting, and TSN's diversification strategy proved more
 resilient than Rogers anticipated..."
 
-**Proficient (9-10 pts):**
+**Partially Meets Expectations:**
 "Applies Week 2 frameworks with some analysis. Evaluates deal using several relevant
 concepts. May miss some nuances or fail to integrate all frameworks systematically."
 
-**Developing (6-8 pts):**
-"References Week 2 concepts but application is superficial. Evaluation lacks depth or
-specificity. May focus on one framework and ignore others."
-
-**Needs Improvement (0-5 pts):**
+**Does Not Meet Expectations:**
 "Minimal or no application of Week 2 frameworks. Evaluation is purely opinion-based
 without supporting analysis."
 
 ---
 
-## Mistake Identification (10 points)
+## Mistake Identification
 
-**Excellent (9-10 pts):**
+**Fully Meets Expectations:**
 "Identifies 2-3 specific, insightful mistakes supported by exhibit data. Goes beyond
 obvious errors to reveal strategic misjudgments. Analysis is evidence-based."
 
@@ -466,7 +647,7 @@ features (contrast with DAZN's multi-sport strategy), leading to high churn; (3)
 flexibility clause for black swan events** - COVID devastated Year 7 revenue (Exhibit A:
 $200M vs. projected $550M) with no force majeure protection in the contract."
 
-**Proficient (7-8 pts):**
+**Partially Meets Expectations:**
 "Identifies 2-3 reasonable mistakes with some supporting evidence. Analysis is solid
 but may lack depth or miss less obvious strategic errors."
 
@@ -477,10 +658,10 @@ but may lack depth or miss less obvious strategic errors."
 
 ---
 
-## Element 11: AI Chat Widget - Rogers Case Analysis Coach
+## Element 11: AI Coach - Rogers Case Analysis Coach
 
 ### Student-Facing Text Content:
-**Copy this markdown directly into Uplimit BEFORE the widget:**
+**Copy this markdown directly into Uplimit BEFORE the AI Coach:**
 
 ```markdown
 ## Your AI Case Analysis Coach
@@ -522,9 +703,9 @@ The coach will respond with **probing questions** to help you think deeper:
 
 ---
 
-### AI Chat Widget Configuration (For LMS Builder):
+### AI Coach Configuration (For LMS Builder):
 
-- **Widget Name:** "Rogers Case Analysis Coach"
+- **Name:** "Rogers Case Analysis Coach"
 - **System Prompt:** "You are a helpful case analysis coach for MBA students. Provide guidance on analyzing the Rogers NHL case study. Do NOT write content for students. Instead, ask probing questions to help them think critically: What does this data point tell you? How does this connect to the frameworks from readings? What are the underlying assumptions? Focus on: case analysis methodology, framework application, evidence-based reasoning, and strategic thinking. If students ask you to write their memo, redirect them to develop their own analysis with your guidance."
 - **Welcome Message:** "Hi! I'm here to coach you through your Rogers case analysis. I won't write your memo, but I'll ask questions to help you develop stronger arguments. What aspect of the case are you working on?"
 - **Show System Prompt:** No
@@ -556,78 +737,6 @@ You've completed Week 2's summative assessment! You've written an executive-leve
 
 **Assessment Context:**
 This Mini-Case Memo contributes to your Week 2 grade and prepares you for the Week 5 capstone. The memo structure and analytical rigor you practiced here will scale to your final strategic vision project.
-
----
-
-## Element 13: CFL Project Milestone 2 Instructions
-
-### ⓘ Infobox Content
-
-```markdown
-Title: 🏈 CFL Expansion Project - Milestone 2: Media & Content Strategy
-
-**Individual Deliverable:** Media Strategy Memo (2-3 pages)
-**Weight:** 20% of total project grade (20 points)
-**Due:** End of Week 2
-
-Your submission should include:
-
-**1. CFL Media Rights Context**
-- How does the current CFL-TSN deal work?
-- How does expansion affect league-wide media rights?
-- What's the revenue sharing model for a new franchise?
-
-**2. Local Media Strategy**
-- Local broadcast partnerships (radio, regional TV)
-- Regional sports network opportunities
-- Digital/streaming presence and platform strategy
-
-**3. Content & Fan Engagement Plan**
-- Social media strategy for building fans in a new market
-- Content creation (behind-the-scenes, player features, community stories)
-- Community building BEFORE the first game
-
-**4. Apply Al Dak's Insights**
-- How would Rogers/TSN view this expansion market?
-- What's the "1:2-3 activation multiplier" opportunity?
-- Data and analytics strategy for proving fan engagement
-
-📋 **Full Project Details:** [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
-```
-
----
-
-## Element 14: Milestone 2 File Upload
-
-**Uplimit Configuration:**
-- **Element Type:** File Upload
-- **Allowed Formats:** PDF, DOCX, Google Docs link
-
-**Submission Instructions:**
-```markdown
-## Milestone 2 Submission
-
-Upload your Media Strategy Memo here.
-
-**Requirements:**
-- 2-3 pages (excluding title page and references)
-- Professional formatting
-- Your name on title page
-
-**Filename Format:** `LastName_M2_MediaStrategy.pdf`
-
-**Rubric Preview:**
-| Criterion | Points |
-|-----------|--------|
-| CFL Media Rights Analysis | 5 |
-| Local Media Strategy | 5 |
-| Content & Engagement Plan | 5 |
-| Application of Executive Insights | 3 |
-| Professional Presentation | 2 |
-| **Total** | **20** |
-```
-
----
 
 ---
 

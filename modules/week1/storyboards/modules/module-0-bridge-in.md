@@ -12,10 +12,13 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▶ Video** ⬛ Required | Business problem scenario (3 min) | Upload `week1-bridge-scenario.mp4` + VTT | Real executive facing revenue dilemma |
-| 2 | **◈ AI Roleplay** ◐ Recommended | The $100M Question diagnostic | Configure in Uplimit | Reveal knowledge gaps before learning begins |
-| 3 | **ⓘ Infobox** ⬤ Required | The revenue problem statement | Type directly | Use **Callout** variant, urgent business challenge |
-| 4 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Revenue Strategy Challenge + Quiz** | Embed `revenue-strategy-pre-assessment.html` | Combined challenge text and quiz in single widget |
-| 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
+| 2 | **📖 Graphic Novel** ⬤ Required | "Expansion Day" - CFL anchor project intro | Link to `shared-resources/graphic-novels/00-expansion-day-course-intro.md` | Introduces 5 streams + semester project |
+| 3 | **◈ AI Roleplay** ◐ Recommended | The $100M Question diagnostic | Configure in Uplimit | Reveal knowledge gaps before learning begins |
+| 4 | **ⓘ Infobox** ⬤ Required | The revenue problem statement | Type directly | Use **Callout** variant, urgent business challenge |
+| 5 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Revenue Strategy Challenge + Quiz** | Embed `revenue-strategy-pre-assessment.html` | Combined challenge text and quiz in single widget |
+| 6 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
+| 7 | **📖 Graphic Novel** ⬤ Required | "Five Streams" - Nashville Predators revenue story | Link to `shared-resources/graphic-novels/01-five-streams-week1.md` | Visual narrative of 5 revenue streams |
+| 8 | **▬ Text** ⬤ Required | Transition to Week 1 learning journey | Type directly | Connect graphic novel to upcoming modules |
 
 
 ---
@@ -139,13 +142,45 @@ Let's find out what you already know... and what you're about to discover."
 
 ---
 
-## Element 2: AI Roleplay Scenario - The $100M Question
+## Element 2: Graphic Novel - "Expansion Day"
+
+**Purpose:** Introduce the CFL expansion anchor project and the 5 revenue streams framework through visual storytelling. This bridges from the $100M Question to the bigger picture of what students will work on all semester.
+
+**Graphic Novel:** "Expansion Day: A CFL Story"
+
+**Location:** `modules/shared-resources/graphic-novels/00-expansion-day-course-intro.md`
+
+**Implementation:** Generated using NotebookLM from the script. Upload resulting PDF or embed images in Uplimit.
+
+**Transition Text (before graphic novel):**
+```markdown
+Before you try to solve the $100M question, let's zoom out. This course centers on a real challenge: the CFL is expanding to Halifax. Your semester project will be building the business case for this new franchise.
+
+The following graphic novel shows what Expansion Day looks like—and introduces the five revenue streams you'll master this course.
+```
+
+**Story Synopsis:**
+Maya Chen, a sports business analyst, witnesses the historic announcement of Halifax joining the CFL. As she observes the celebration, she maps the five revenue streams that will determine the franchise's success: Media Rights, Ticketing, Sponsorship, Merchandising, and Betting. The story connects students to the anchor project they'll work on throughout the course.
+
+**Learning Connection:**
+- Introduces the CFL expansion anchor project (Weeks 2-5 milestones)
+- Visually presents the 5 revenue streams framework
+- Creates emotional investment in the semester-long challenge
+
+**Accessibility:**
+- Full text script available in `00-expansion-day-course-intro.md`
+- Alt text for each panel included in script
+- High contrast visual style (Retro Sports Illustrated aesthetic)
+
+---
+
+## Element 3: AI Roleplay Scenario - The $100M Question
 
 **Scenario Title:** "The $100 Million Question: Can You Solve It Now?"
 
 **Purpose:** Diagnostic activity that reveals knowledge gaps and creates cognitive dissonance before content delivery. Students attempt to answer the executive's question from the video using their current understanding—most will struggle, which creates the "need to know" motivation for Week 1 content.
 
-**When to Use:** Immediately after the bridge video (Element 1) while the narrative momentum is high.
+**When to Use:** After the Expansion Day graphic novel (Element 2) while the narrative momentum is high.
 
 **Assessment Type:** Diagnostic/Formative (not graded). Students are expected to struggle. The goal is to reveal what they DON'T know yet, making them hungry for the content that follows.
 
@@ -357,7 +392,7 @@ This is the student-facing scenario text that appears when they launch the rolep
 
 ---
 
-## Element 3: Infobox - The Revenue Problem
+## Element 4: Infobox - The Revenue Problem
 
 **Uplimit Implementation:**
 1. Select **Infobox** element in module builder
@@ -374,7 +409,7 @@ Professional sports teams operate with a business model that defies conventional
 
 ---
 
-## Element 4: Revenue Strategy Pre-Assessment (Combined Widget)
+## Element 5: Revenue Strategy Pre-Assessment (Combined Widget)
 
 **Widget Purpose:** Combined challenge text + 10-question self-diagnostic quiz covering all 4 learning outcomes (WLO 1.1, 1.2, 1.3, 1.4)
 
@@ -671,7 +706,7 @@ Think about the math: Toronto's $200M local revenue far exceeds Arizona's $60M, 
 
 ---
 
-## Element 5: Infobox - Results Interpretation & Learning Path
+## Element 6: Infobox - Results Interpretation & Learning Path
 
 **Uplimit Implementation:**
 1. Select **Infobox** element in module builder
@@ -688,17 +723,56 @@ Your quiz results create a personalized learning path for this week. Lower score
 
 ---
 
-## Module Summary
+## Element 7: Graphic Novel - "Five Streams"
 
-**What You've Accomplished:**
-You've been hooked by a real business problem—the Connor McDavid $100M paradox—and you've taken your first steps toward solving it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your knowledge gaps are. That's not a weakness—it's a strategic advantage. You now know precisely what you need to learn this week.
+**Purpose:** Visual narrative that introduces the 5 revenue streams concept through storytelling before students engage with frameworks and data.
 
-**Key Insight:**
-The fact that you struggled with the diagnostic exercise is actually the point. Professional sports revenue works differently than almost any other business. The traditional MBA frameworks don't fully apply here. Revenue streams are interdependent, not independent. Investments create ripple effects across the entire ecosystem. And what looks like a $4.5M loss on a spreadsheet might actually be a $32M gain when you understand the full picture.
+**Graphic Novel:** "Five Streams: A Nashville Predators Story"
 
-**Up Next: Your Week 1 Journey**
-Now that you've seen the problem and identified your knowledge gaps, the next module will show you exactly what you're going to learn this week. You'll see the four key challenges you'll be able to solve by Friday—challenges that will transform you from someone who sees the McDavid contract as a loss into someone who can confidently defend it to a skeptical board with data they can't argue with.
+**Location:** `modules/shared-resources/graphic-novels/01-five-streams-week1.md`
 
-Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
+**Implementation:** The graphic novel is generated using NotebookLM from the script. Upload the resulting PDF or embed images in Uplimit.
+
+**Story Synopsis:**
+Jessica Torres returns to Nashville to save the Predators franchise from financial decline. She identifies five revenue streams (Tickets, Media, Sponsors, Merchandise, Premium) and builds strategies to grow each one. The story follows her journey from assessment through implementation, including setbacks during COVID-19, culminating in the franchise's transformation from bottom-third to top-third in league revenue.
+
+**Learning Connection:**
+This visual narrative introduces the same 5 revenue streams students will analyze in the pre-assessment and subsequent modules. The story format creates emotional engagement with the business concepts before diving into frameworks and data.
+
+**Accessibility:**
+- Full text script available in `01-five-streams-week1.md`
+- Alt text for each panel included in script
+- High contrast visual style (Retro Sports Illustrated aesthetic)
+
+---
+
+## Element 8: Transition Text - Ready for Your Learning Journey
+
+**Text Content:**
+
+```markdown
+### From Story to Strategy
+
+You've just witnessed Jessica Torres transform the Nashville Predators by understanding and growing five revenue streams. Now it's your turn.
+
+The diagnostic exercise revealed where your knowledge gaps are. The graphic novel showed you what mastery looks like in action. The next module will give you the roadmap—the specific learning outcomes and challenges you'll tackle this week.
+
+**What You'll Master:**
+- **Stream 1 - Tickets:** Dynamic pricing, capacity optimization, premium experiences
+- **Stream 2 - Media:** Rights valuation, streaming economics, broadcast strategy
+- **Stream 3 - Sponsors:** Activation strategies, ROI measurement, partnership structures
+- **Stream 4 - Merchandise:** Brand extensions, licensing, fan identity
+- **Stream 5 - Premium:** Suites, clubs, VIP experiences, corporate entertainment
+
+By week's end, you'll be able to defend the McDavid contract—and design revenue strategies like Jessica did.
+
+Ready to build your own five streams? Let's define your learning path.
+```
+
+**Design Rationale:**
+- Graphic novel replaces traditional summary text (more engaging, visual learning)
+- Story-based introduction creates emotional hook before analytical frameworks
+- Transition text explicitly connects narrative to upcoming learning outcomes
+- Removes passive summary in favor of forward momentum
 
 

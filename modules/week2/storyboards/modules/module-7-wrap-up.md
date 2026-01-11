@@ -1,7 +1,19 @@
-## MODULE 7: Wrap-Up, Preview & Anchor Project Milestone
-**Version:** 1.5.0 | **Last Updated:** 2025-01-08
+## MODULE 7: Wrap-Up, Preview & Anchor Project Milestones
+**Version:** 1.7.0 | **Last Updated:** 2026-01-10
 
-**Purpose:** Consolidate Week 2 learning, preview Week 3, launch Anchor Project Property Selection
+**Purpose:** Consolidate Week 2 learning, preview Week 3, complete Anchor Project Milestones 1 & 2
+
+### Version 1.7.0 Changes
+- **MOVED:** CFL Milestone 2 (Media Strategy) moved here from Module 6
+- **UPDATED:** All Anchor Project work now consolidated in one module
+- **RENAMED:** Title updated to reflect both milestones
+
+### Version 1.6.0 Changes
+- **NEW:** Added File Upload element (Element 5) for Milestone 1 submission
+- **UPDATED:** CFL City Selector redesigned with Ivey branding, map removed
+- **UPDATED:** Student instructions clarified for tool → export → upload workflow
+- **UPDATED:** Rubric added for city selection assessment
+- **TERMINOLOGY:** Replaced "widget" with "tool", "interactive", "AI Coach" throughout
 
 ### Version 1.5.0 Changes
 - **UPDATED:** Anchor Project now individual (removed team formation, team charter)
@@ -14,12 +26,15 @@
 | 1 | **Text** ⬤ Required | Connecting introduction from Module 6 | Type directly | Narrative bridge to wrap-up |
 | 2 | **Infobox (Callout)** ⬤ Required | Week 2 key takeaways + journey recap + reflection | Type directly | Blue variant, comprehensive summary |
 | 3 | **Text** ⬤ Required | Anchor Project Milestone 1: City Selection | Type directly | Launch CFL Expansion Project |
-| 4 | **iFrame** ⬤ Required | CFL City Selector | Custom widget hosted | Interactive city selection with map |
-| 5 | **Text** ◐ Recommended | Preview of Week 3 content | Type directly | Build anticipation |
-| 6 | **Details** ○ Optional | Anchor Project FAQs (optional) | Type directly | Optional guidance |
-| 7 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
-| 8 | **Text** ⬤ Required | Final Project Connection | Type directly | How Week 2 supports capstone |
-| 9 | **Text** ⬤ Required | Module 7 Complete - Transition to Week 3 | Type directly | Recap and preview |
+| 4 | **iFrame** ⬤ Required | CFL City Selector | Custom tool hosted | Interactive city selection tool |
+| 5 | **File Upload** ⬤ Required | Milestone 1: City Selection Rationale | Configure in Uplimit | Individual submission, AI grading |
+| 6 | **Infobox (Insight)** ⬤ Required | Anchor Project Milestone 2: Media Strategy | Type directly | Purple variant, links to Week 2 content |
+| 7 | **File Upload** ⬤ Required | Milestone 2: Media & Content Strategy Memo | Configure in Uplimit | Individual submission, AI grading |
+| 8 | **Text** ◐ Recommended | Preview of Week 3 content | Type directly | Build anticipation |
+| 9 | **Details** ○ Optional | Anchor Project FAQs (optional) | Type directly | Optional guidance |
+| 10 | **⚙ iFrame** ◐ Recommended | **Learning Outcomes Interactive** - WLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
+| 11 | **Text** ⬤ Required | Final Project Connection | Type directly | How Week 2 supports capstone |
+| 12 | **Text** ⬤ Required | Module 7 Complete - Transition to Week 3 | Type directly | Recap and preview |
 
 ---
 
@@ -68,18 +83,6 @@ Plus: This week you'll select your sport property for the Anchor Project!
 Well done! 👏
 ```
 
-### Week 2 Reflection
-
-Take 5-10 minutes to reflect on your Week 2 learning:
-
-**1. Strategic Insight:** What surprised you most about media rights economics? How did the Rogers/NHL case challenge your assumptions about billion-dollar deals?
-
-**2. Application Readiness:** How confident do you feel analyzing media strategies for your Anchor Project property? What concepts from Week 2 need reinforcement?
-
-**3. Professional Growth:** How will Week 2's media frameworks change how you evaluate sports business decisions in your career?
-
-**4. Connection to Week 3:** How do you expect media strategy to interact with sponsorship and betting (Week 3's focus)?
-
 ---
 
 ## Element 3: Anchor Project Milestone 1 - City Selection
@@ -115,9 +118,9 @@ Include:
 • Chosen expansion city
 • 200-300 word rationale: Why does this market represent the best CFL expansion opportunity? What challenges will you address?
 
-**Deliverable:** Export from widget + upload to submission portal
+**Deliverable:** Export your selection from the tool below, then upload to Milestone 1 Submission (Element 5)
 
-**Grading:** This milestone is worth 10 points (of 60 total project points). Evaluated on market analysis quality and strategic rationale.
+**Grading:** See rubric criteria in the submission section below.
 
 ---
 
@@ -126,10 +129,10 @@ Include:
 
 ---
 
-## Element 4: CFL City Selector (Interactive Widget)
+## Element 4: CFL City Selector (Interactive Tool)
 
 ### Student-Facing Text Content:
-**Copy this markdown directly into Uplimit BEFORE the widget:**
+**Copy this markdown directly into Uplimit BEFORE the tool:**
 
 ```markdown
 # Choose Your CFL Expansion City
@@ -162,11 +165,12 @@ The interactive tool below helps you explore **6 potential Canadian expansion ma
 
 ## How It Works
 
-1. **Explore the Map** - Click any orange marker to learn about that city
-2. **Review City Profiles** - Each card shows population, stadium status, competition, corporate base
-3. **Compare Markets** - Toggle to table view for side-by-side comparison
-4. **Select & Write Rationale** - Choose your city and explain your strategic reasoning
-5. **Export Proposal** - Download your selection for Milestone 1 submission
+1. **Review City Profiles** - Browse the city cards showing population, stadium status, competition, corporate base
+2. **Compare Markets** - Toggle to table view for side-by-side comparison of all 6 cities
+3. **Select Your City** - Click "Select This City" on your chosen market
+4. **Write Rationale** - Explain your strategic reasoning (200-300 words) using the prompts provided
+5. **Export Proposal** - Download your selection as a .txt file
+6. **Upload to Milestone 1** - Submit your exported file in the File Upload section below
 
 ## Strategic Considerations
 
@@ -183,15 +187,15 @@ Before choosing, consider:
 
 ### iFrame Specifications (For LMS Builder):
 
-**Widget Purpose:** Help students explore and select a Canadian city for their CFL Expansion Project.
+**Tool Purpose:** Help students explore and select a Canadian city for their CFL Expansion Project.
 
-**Widget Status:** ✅ CFL City Selector - BUILT AND READY
+**Status:** ✅ CFL City Selector - BUILT AND READY
 
 **How It Works:**
 - **Inputs:**
-  - Interactive Canada map with clickable city markers
+  - City cards with detailed market profiles
   - Card view or comparison table toggle
-  - Rationale text input with word count
+  - Rationale text input with word count and writing prompts
 - **Outputs:**
   - 6 city profiles with: population, stadium status, competition level, corporate base, football culture
   - Viability ratings (High/Medium/Emerging)
@@ -215,7 +219,7 @@ Before choosing, consider:
 ```
 
 **Accessibility:**
-- ✅ Keyboard navigation for map markers and city cards
+- ✅ Keyboard navigation for city cards
 - ✅ ARIA labels on all interactive elements
 - ✅ Screen reader compatible city descriptions
 - ✅ High contrast design with clear focus indicators
@@ -223,7 +227,232 @@ Before choosing, consider:
 
 ---
 
-## Element 5: Week 3 Preview - Sponsorship & Betting
+## Element 5: Milestone 1 File Upload - City Selection Rationale
+
+**Element Type:** File Response Question
+
+---
+
+### Uplimit Field Configuration:
+
+**Question:**
+```
+Upload your CFL Expansion City Selection and Rationale. Use the CFL City Selector tool above to explore all 6 markets, select your city, write your rationale, and export your proposal.
+```
+
+**Additional Instructions (optional):**
+```
+Your submission should include:
+• Your chosen expansion city clearly identified
+• A 200-300 word rationale explaining why this market represents the best CFL expansion opportunity
+• At least 2 specific factors from the city profile (population, stadium, competition, corporate base, football culture) supporting your choice
+• Brief acknowledgment of 1-2 challenges you'll need to address in later milestones
+
+How to submit:
+1. Complete your city selection in the tool above
+2. Click "Export Proposal" to download your .txt file
+3. Upload that file here
+```
+
+**Template:** No template required (students export from tool)
+
+---
+
+### Feedback Rubric Configuration:
+
+**Enable automated AI grading:** ✅ Yes
+
+**Include evaluation levels:** ✅ Yes
+
+---
+
+### Rubric Criteria:
+
+---
+
+**Criterion 1: Market Analysis**
+*Uses city profile data to support selection.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response does not reference specific data from the city profile (population, stadium, competition, corporate base, football culture). |
+| Partially meets expectations | The response references some city profile data but lacks depth or specificity in connecting data to the selection rationale. |
+| Fully meets expectations | The response effectively uses multiple data points from the city profile to build a compelling case for the chosen market. |
+
+---
+
+**Criterion 2: Strategic Rationale**
+*Explains why this market is the best CFL expansion opportunity.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response lacks clear reasoning for the city selection or does not explain why this market is preferable to alternatives. |
+| Partially meets expectations | The response provides some reasoning but the strategic logic is incomplete or doesn't fully address market positioning. |
+| Fully meets expectations | The response clearly articulates why this market offers the best expansion opportunity with logical, strategic reasoning. |
+
+---
+
+**Criterion 3: Challenge Awareness**
+*Acknowledges realistic obstacles the expansion will face.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response does not acknowledge any challenges or obstacles the expansion will face. |
+| Partially meets expectations | The response mentions challenges but they are vague, unrealistic, or not connected to the specific market chosen. |
+| Fully meets expectations | The response identifies 1-2 specific, realistic challenges (e.g., stadium financing, competition, corporate partnerships) relevant to the chosen city. |
+
+---
+
+### AI Grading Prompt (for Uplimit configuration):
+```
+You are evaluating a CFL Expansion Project city selection rationale. The student has chosen a Canadian city for a hypothetical CFL franchise expansion.
+
+Evaluate based on these criteria:
+
+1. MARKET ANALYSIS: Does the student cite specific data from the city profile (population, stadium status, competition, corporate base, football culture)?
+
+2. STRATEGIC RATIONALE: Is the reasoning clear and logical? Does it explain WHY this market is the best choice compared to alternatives?
+
+3. CHALLENGE AWARENESS: Does the student acknowledge 1-2 realistic obstacles they'll need to address in later milestones?
+
+Be encouraging but specific. Highlight what they did well and suggest one area for improvement in their next milestone submission.
+```
+
+---
+
+## Element 6: Anchor Project Milestone 2 - Media & Content Strategy
+
+### Infobox Content (Insight variant - Purple):
+
+```markdown
+Title: 🏈 CFL Expansion Project - Milestone 2: Media & Content Strategy
+
+**Individual Deliverable:** Media Strategy Memo (2-3 pages)
+**Due:** End of Week 2
+
+Now that you've selected your expansion city, apply Week 2's media strategy frameworks to your CFL franchise.
+
+Your submission should include:
+
+**1. CFL Media Rights Context**
+- How does the current CFL-TSN deal work?
+- How does expansion affect league-wide media rights?
+- What's the revenue sharing model for a new franchise?
+
+**2. Local Media Strategy**
+- Local broadcast partnerships (radio, regional TV)
+- Regional sports network opportunities
+- Digital/streaming presence and platform strategy
+
+**3. Content & Fan Engagement Plan**
+- Social media strategy for building fans in a new market
+- Content creation (behind-the-scenes, player features, community stories)
+- Community building BEFORE the first game
+
+**4. Apply Al Dak's Insights**
+- How would Rogers/TSN view this expansion market?
+- What's the "1:2-3 activation multiplier" opportunity?
+- Data and analytics strategy for proving fan engagement
+
+📋 **Full Project Details:** [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
+```
+
+---
+
+## Element 7: Milestone 2 File Upload - Media & Content Strategy
+
+**Element Type:** File Response Question
+
+---
+
+### Uplimit Field Configuration:
+
+**Question:**
+```
+Upload your CFL Expansion Project Milestone 2: Media & Content Strategy Memo.
+```
+
+**Additional Instructions (optional):**
+```
+Your submission should include:
+• CFL media rights context (how expansion affects league-wide rights)
+• Local media strategy (broadcast partnerships, RSN opportunities, streaming)
+• Content & fan engagement plan (social media, community building)
+• Application of Al Dak's executive insights
+
+Requirements:
+• 2-3 pages (excluding title page and references)
+• Professional formatting
+• Filename format: LastName_M2_MediaStrategy.pdf
+```
+
+**Template:** No template required
+
+---
+
+### Feedback Rubric Configuration:
+
+**Enable automated AI grading:** ✅ Yes
+
+**Include evaluation levels:** ✅ Yes
+
+---
+
+### Rubric Criteria:
+
+---
+
+**Criterion 1: CFL Media Rights Analysis**
+*Demonstrates understanding of how expansion affects league-wide media rights.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response does not address CFL media rights or how expansion affects the league deal. |
+| Partially meets expectations | The response addresses media rights but lacks depth on revenue sharing or league-wide implications. |
+| Fully meets expectations | The response demonstrates clear understanding of CFL-TSN deal structure, expansion impact, and revenue sharing model for new franchise. |
+
+---
+
+**Criterion 2: Local Media Strategy**
+*Develops comprehensive local broadcast and digital strategy.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response does not address local media partnerships or digital presence. |
+| Partially meets expectations | The response addresses some local media elements but strategy is incomplete or lacks specificity. |
+| Fully meets expectations | The response provides comprehensive strategy covering radio, regional TV, RSN opportunities, and streaming/digital presence. |
+
+---
+
+**Criterion 3: Content & Engagement Plan**
+*Creates actionable plan for building fan base in new market.*
+
+| Level | Description |
+|-------|-------------|
+| Does not meet expectations | The response lacks content strategy or fan engagement planning. |
+| Partially meets expectations | The response addresses content/engagement but plan is generic or not tailored to chosen market. |
+| Fully meets expectations | The response provides specific, actionable content and engagement plan tailored to chosen city, including pre-launch community building. |
+
+---
+
+### AI Grading Prompt (for Uplimit configuration):
+```
+You are evaluating a CFL Expansion Project Media Strategy Memo for an MBA sports business course.
+
+Evaluate based on these criteria:
+
+1. CFL MEDIA RIGHTS ANALYSIS: Does the memo demonstrate understanding of CFL-TSN deal and how expansion affects league-wide media rights?
+
+2. LOCAL MEDIA STRATEGY: Does the memo provide comprehensive local broadcast and digital strategy?
+
+3. CONTENT & ENGAGEMENT PLAN: Does the memo include actionable content and fan engagement plan tailored to the chosen market?
+
+Be encouraging but specific. Highlight what they did well and suggest 1-2 areas for improvement.
+```
+
+---
+
+## Element 8: Week 3 Preview - Sponsorship & Betting
 
 ### Text Content - Week 3 Preview:
 ```
@@ -248,7 +477,7 @@ to develop your property's revenue strategy.
 Get ready for another intensive week! See you in Week 3.
 ```
 
-### Element 5A: Picture - Sponsorship and Betting Preview
+### Element 6A: Picture - Sponsorship and Betting Preview
 - **Type:** Stock Photo
 - **Placement:** After Element 6 Week 3 preview text
 - **Suggested Image:** Stadium with visible corporate sponsor signage and branding, or a sportsbook/betting environment, showing the intersection of sports and commercial partnerships
@@ -259,7 +488,7 @@ Get ready for another intensive week! See you in Week 3.
 
 ---
 
-## Element 6: CFL Expansion Project FAQs (Optional Guidance)
+## Element 9: CFL Expansion Project FAQs (Optional Guidance)
 
 ### Details Content - Anchor Project FAQs:
 ```
@@ -286,7 +515,7 @@ A: Week 2: 1-2 hours (city selection and rationale)
 **Q: Where can I find data about my chosen city?**
 A: Start with Statistics Canada for demographics, municipal economic development
 sites for corporate presence, and local sports news for competitive landscape.
-The widget includes key data points, but deeper research strengthens your proposal.
+The tool includes key data points, but deeper research strengthens your proposal.
 
 **Q: What resources are available beyond the tools?**
 A: Each week provides frameworks and templates specific to CFL expansion. Use office
@@ -295,13 +524,13 @@ hours for check-ins. The AI chat assistants can help with market analysis questi
 
 ---
 
-## Element 7: Learning Outcomes Widget
+## Element 10: Learning Outcomes Interactive
 
-**Widget Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
+**Purpose:** Interactive visualization showing how this module's learning outcomes connect to course-level goals
 
 **Uplimit Implementation:**
 
-**Widget File:** `learning-outcomes-module-7.html`
+**File:** `learning-outcomes-module-7.html`
 
 **Embed Code:**
 ```html
@@ -311,13 +540,13 @@ hours for check-ins. The AI chat assistants can help with market analysis questi
   height="600"
   style="border: none; border-radius: 8px;"
   title="Learning Outcomes - Module 7"
-  aria-label="Interactive widget showing module learning outcomes and their connection to course goals"
+  aria-label="Interactive tool showing module learning outcomes and their connection to course goals"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
-**Widget Features:**
+**Features:**
 - Click any module outcome to see which course-level outcomes it contributes to
 - Interactive highlighting shows connections between module and course goals
 - WCAG 2.2 AA compliant with keyboard navigation and screen reader support
@@ -333,7 +562,7 @@ hours for check-ins. The AI chat assistants can help with market analysis questi
 
 ---
 
-## Element 8: Final Project Connection
+## Element 11: Final Project Connection
 
 ## 🎯 FINAL PROJECT CONNECTION
 
@@ -353,7 +582,7 @@ Your Week 5 strategic vision must integrate Week 2's media frameworks comprehens
 
 - **Media Rights Section (likely 30-40% of your capstone):** This is your property's largest revenue stream. Use Week 2's valuation tools, platform comparison frameworks, and deal structure templates to design a sophisticated 5-year media strategy.
 - **Integration with Other Weeks:** Media strategy connects to everything: Week 1 (ecosystem effects), Week 3 (sponsorship amplification through media), Week 4 (athlete brand exposure via media), Week 5 (heritage vs. innovation in media approach).
-- **Real Numbers:** Your vision needs quantitative projections. Use Week 2's widgets and case data to benchmark realistic media rights valuations for your property.
+- **Real Numbers:** Your vision needs quantitative projections. Use Week 2's tools and case data to benchmark realistic media rights valuations for your property.
 
 **Integration Across All Weeks:**
 - Week 1 = Revenue ecosystem foundation
@@ -366,22 +595,17 @@ Your Week 5 strategic vision must integrate Week 2's media frameworks comprehens
 
 ---
 
-## Week 2 Complete - Looking Ahead to Week 3
+## Element 12: Week 2 Complete - Looking Ahead to Week 3
 
 **What You've Accomplished:**
 
 You've completed Week 2! You've selected your sport property for the CFL Expansion Project and synthesized Week 2's media strategy frameworks. You now understand how to value media rights, compare platform economics, and evaluate billion-dollar deals like Rogers/NHL.
 
 **Key Takeaways:**
-- Your property is selected with defensible rationale for marketing challenges
+- Your expansion city is selected with defensible rationale
 - Week 2's media frameworks (40-60% of revenue) are now tools in your strategic toolkit
-- You've practiced scaffolded assessment with AI feedback that develops both strategic thinking and AI literacy
-- You understand the last "appointment viewing" phenomenon that makes sports content premium
-
-**Week 2 Reflection:**
-- You've reflected on your Week 2 learning journey across all modules
-- You've identified which concepts need reinforcement for your CFL Expansion Project
-- You've connected media strategy to professional growth and career application
+- You've practiced scaffolded assessment with AI feedback
+- You understand the "appointment viewing" phenomenon that makes sports content premium
 
 **Up Next: Week 3 - Sponsorship & Betting (The Growth Engines)**
 
@@ -435,7 +659,7 @@ Get ready for another intensive week—and **congratulations on completing Week 
 - ☐ `week2-rogers-retrospective.mp4` (2 minutes) - "10 Years Later" analysis
 - ☐ `week2-rogers-retrospective.vtt` (VTT captions file)
 
-### Custom Widgets:
+### Custom Interactive Tools:
 - ☐ `media-rights-calculator.html` (rights valuation tool) - if not already created
 - ☐ `platform-comparison.html` (linear vs. DTC comparison) - if not already created
 - ☐ `streaming-wars-strategy.html` (interactive simulation)
@@ -443,10 +667,10 @@ Get ready for another intensive week—and **congratulations on completing Week 
   - Verify accessibility (keyboard, screen reader) ✓
   - Host at URL: `https://jkruckivey.github.io/business-of-sports-marketing/widgets/streaming-wars-strategy.html`
 - ✅ `cfl-city-selector.html` (CFL Expansion Project city selection tool)
-  - Interactive Canada map with expansion city markers
-  - 6 city profiles with detailed market data
-  - Comparison table view
-  - Rationale builder with export
+  - 6 city cards with detailed market data (Ivey branding)
+  - Comparison table view for side-by-side analysis
+  - Rationale builder with writing prompts and word count
+  - Export feature generates .txt file for File Upload submission
   - Host at URL: `https://jkruckivey.github.io/business-of-sports-marketing/modules/week2/widgets/cfl-city-selector.html`
 
 ### Images:
@@ -463,7 +687,7 @@ Get ready for another intensive week—and **congratulations on completing Week 
 - ☐ Text Response rubric (Module 6)
 - ☐ Anchor Project instructions (Module 7)
 
-### AI Chat Widgets to Configure (Core Learning Coaches):
+### AI Coaches to Configure:
 - ☐ "Media Strategy Q&A" (Module 2) - Your Learning Coach
 - ☐ "Platform Strategy Assistant" (Module 4) - Your Strategy Coach
 - ☐ "Rogers Case Analysis Coach" (Module 6) - Your Case Analysis Coach
@@ -492,23 +716,23 @@ Get ready for another intensive week—and **congratulations on completing Week 
 - ☐ Upload image (fan engagement value chain)
 
 ### Week 4: Interactive Elements
-- ☐ Embed Streaming Wars Strategy widget (iFrame in Module 4)
-- ☐ Embed CFL City Selector widget (iFrame in Module 7)
+- ☐ Embed Streaming Wars Strategy tool (iFrame in Module 4)
+- ☐ Embed CFL City Selector tool (iFrame in Module 7)
 - ☐ Create all Details accordions
-- ☐ Configure 3 AI Chat Widgets
+- ☐ Configure 3 AI Coaches
 
 ### Week 5: Assessment & Anchor Project
 - ☐ Create Text Response question (Module 6)
-- ☐ Build complete rubric with criteria and point values
+- ☐ Build complete rubric with criteria and evaluation levels
 - ☐ Write all feedback templates
 - ☐ Enable AI grading and test
 - ☐ Set up Anchor Project submission portal
 
 ### Week 6: Review & Test
 - ☐ Walk through entire Week 2 as student
-- ☐ Test all links, videos, widgets
+- ☐ Test all links, videos, interactive tools
 - ☐ Verify accessibility (keyboard navigation, screen readers)
-- ☐ Test CFL City Selector widget (map, cards, comparison, export)
+- ☐ Test CFL City Selector tool (cards, comparison table, rationale builder, export)
 - ☐ Peer review
 - ☐ Pilot with small group (if possible)
 
@@ -522,7 +746,7 @@ Get ready for another intensive week—and **congratulations on completing Week 
   - Text (readings, case study)
   - Video (executive session, retrospective)
   - Visual (tables, diagram, case exhibits)
-  - Interactive (simulation widget, Anchor Project tools)
+  - Interactive (simulation tool, Anchor Project tools)
 - ☐ All images have descriptive alt text
 - ☐ Text is scalable (not embedded in images)
 - ☐ Case exhibits available in multiple formats (HTML tables + PDF downloads)
@@ -543,19 +767,19 @@ Get ready for another intensive week—and **congratulations on completing Week 
   - Written memo (analytical, Text Response)
   - Simulation performance (strategic decision-making)
   - Property proposal (individual research)
-- ☐ Scaffolding available (AI Chat, Details with frameworks, widget hints)
+- ☐ Scaffolding available (AI Coach, Details with frameworks, tool hints)
 - ☐ Self-paced interactive activities (simulation, Anchor Project tools)
 - ☐ Rubric transparent (students know expectations)
 - ☐ Applied project option (Anchor Project)
 
 ### WCAG 2.1 AA Compliance ✓
 - ☐ Color contrast sufficient (test all Infobox variants)
-- ☐ All interactive elements keyboard-accessible (widgets, accordions, chats)
+- ☐ All interactive elements keyboard-accessible (tools, accordions, chats)
 - ☐ Proper heading hierarchy maintained
-- ☐ Form labels clear (Text Response, widget inputs)
+- ☐ Form labels clear (Text Response, tool inputs)
 - ☐ No auto-playing media
 - ☐ Video captions available (VTT for both videos)
-- ☐ ARIA labels on custom widgets
+- ☐ ARIA labels on custom interactive tools
 
 ---
 
@@ -589,7 +813,7 @@ Verify that every element serves the WLOs:
 - **Tables:** 2
 - **Details:** ~12 accordions
 - **iFrames:** 2 (Streaming Wars simulation, CFL City Selector)
-- **AI Chat Widgets:** 3
+- **AI Coaches:** 3
 - **Text Response:** 1 (with rubric)
 - **Images:** 1
 

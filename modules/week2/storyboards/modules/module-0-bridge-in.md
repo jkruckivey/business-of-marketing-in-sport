@@ -14,7 +14,7 @@
 | 1 | **▶ Video** ⬛ Required | Business problem scenario (3 min) | Upload `week2-bridge-scenario.mp4` + VTT | Rogers/NHL $5.2B deal paradox |
 | 2 | **◈ AI Roleplay** ◐ Recommended | Media rights valuation diagnostic | Configure in Uplimit | Reveal knowledge gaps about deal valuation |
 | 3 | **ⓘ Infobox** ⬤ Required | The media rights problem statement | Type directly | Use **Callout** variant, strategic challenge |
-| 4 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Media Rights Challenge + Quiz** | Embed `media-rights-pre-assessment.html` | Combined challenge text and quiz in single widget |
+| 4 | **⚙ iFrame** ⬤ Required | **Pre-Assessment: Media Rights Challenge + Quiz** | Embed `media-rights-pre-assessment.html` | Combined challenge text and quiz in single tool |
 | 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
 
 ---
@@ -120,7 +120,7 @@ Ready? Let's find out what you know—and what you don't—about valuing media r
 
 ## Element 2: AI Roleplay - Media Rights Valuation Diagnostic
 
-**Widget Type:** AI Roleplay (Uplimit built-in element)
+**Type:** AI Roleplay (Uplimit built-in element)
 **Purpose:** Diagnostic conversation revealing knowledge gaps about media rights valuation (formative, not graded)
 **Estimated Time:** 5-7 minutes
 **Learning Outcome Supported:** Prepares for WLO 2.1 (media rights valuation) and WLO 2.4 (evaluating Rogers deal)
@@ -261,20 +261,20 @@ where to focus your learning energy this week.
 
 ---
 
-## Element 4: Pre-Assessment Widget (iFrame)
+## Element 4: Pre-Assessment Tool (iFrame)
 
-**Widget Name:** Media Rights Pre-Assessment
+**Name:** Media Rights Pre-Assessment
 **File:** `media-rights-pre-assessment.html`
-**Type:** iFrame Widget
+**Type:** iFrame
 **Purpose:** Combined challenge preview + quiz assessing baseline media rights knowledge
 **Estimated Time:** 5-7 minutes
 **Learning Outcome:** Diagnostic assessment for WLOs 2.1-2.4
 
-### Widget Structure
+### Tool Structure
 
 **Section 1: Challenge Preview (Non-Interactive Text)**
 
-Display this text at the top of the widget:
+Display this text at the top of the tool:
 
 ```markdown
 ## Week 2 Challenge: Evaluate the Rogers/NHL Deal
@@ -410,7 +410,7 @@ d) Sell the rights to a competitor
 
 ---
 
-### Element 4A: Details - Widget Instructions (Expandable)
+### Element 4A: Details - Tool Instructions (Expandable)
 
 **Details Element Title:** `Need help? About this pre-assessment`
 
@@ -445,12 +445,55 @@ This diagnostic quiz reveals your current understanding of media rights — ther
 ```
 Title: 💡 Understanding Your Pre-Assessment Results
 
-Your quiz results create a personalized learning path for this week. Lower scores (0-6/14) suggest spending extra time with Module 3's media rights valuation frameworks and the interactive widgets—you're building fresh foundations, which is perfect for developing strong analytical skills. Higher scores (10-14/14) indicate solid media strategy intuitions, so challenge yourself with the Rogers case analysis and Streaming Wars simulation.
+Your quiz results create a personalized learning path for this week. Lower scores (0-6/14) suggest spending extra time with Module 3's media rights valuation frameworks and the interactive tools—you're building fresh foundations, which is perfect for developing strong analytical skills. Higher scores (10-14/14) indicate solid media strategy intuitions, so challenge yourself with the Rogers case analysis and Streaming Wars simulation.
 
 Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently and identify where to focus your energy. Now that you know where you stand, let's learn the frameworks that will transform how you evaluate billion-dollar media deals.
 ```
 
 **Word count:** 88 words ✓
+
+---
+
+## Element 6: Graphic Novel - "The $5.2 Billion Bet"
+
+**Purpose:** Visual narrative that introduces the week's key concepts through storytelling.
+
+**Graphic Novel:** "The $5.2 Billion Bet: A Rogers Media Story"
+
+**Location:** `modules/shared-resources/graphic-novels/02-the-bet-week2.md`
+
+**Implementation:** Generated using NotebookLM from the script. Upload resulting PDF or embed images in Uplimit.
+
+**Story Synopsis:**
+Follow Raj Sharma, a South Asian media executive in his 50s, as Rogers Communications makes the historic $5.2 billion NHL rights acquisition. The story dramatizes the strategic thinking behind Canada's largest sports media deal and the risks of betting big on live sports content.
+
+**Learning Connection:**
+This narrative introduces the five strategic benefits Rogers hoped to achieve: Cable Retention, Ad Revenue, Streaming Growth, Wireless Bundling, and Competitive Moat—the core concepts students will analyze this week.
+
+**Accessibility:**
+- Full text script available in `02-the-bet-week2.md`
+- Alt text for each panel included in script
+- High contrast visual style (Retro Sports Illustrated aesthetic)
+
+---
+
+## Element 7: Transition Text - From Story to Strategy
+
+**Text Content:**
+
+```markdown
+### From Story to Strategy
+
+Raj Sharma's story illustrates the high-stakes world of media rights valuation. Rogers bet $5.2 billion that exclusive NHL content would transform their business—but the assumptions underlying that bet proved catastrophically wrong.
+
+**What You'll Master:**
+- How media rights are valued (audience × exclusivity × platform economics)
+- Why sports command premium valuations as the last "appointment viewing"
+- Platform trade-offs between guaranteed fees and upside potential
+- Fan engagement monetization across ads, subscriptions, and betting integration
+
+Now let's build the frameworks you need to evaluate billion-dollar media deals.
+```
 
 ---
 
@@ -475,7 +518,7 @@ Ready to turn those knowledge gaps into strategic capabilities? Let's define you
 1. ✅ Bridge Video (3 min scenario + script)
 2. ✅ AI Roleplay Scenario (diagnostic conversation with real Uplimit configuration fields)
 3. ✅ Infobox - Problem Statement (Callout variant)
-4. ✅ Pre-Assessment Widget (Challenge preview + 14-question quiz)
+4. ✅ Pre-Assessment Tool (Challenge preview + 14-question quiz)
 5. ✅ Infobox - Results Interpretation (Insight variant)
 6. ✅ Final Project Connection (links to Week 5 capstone)
 7. ✅ Module Summary (transition to Module 1)

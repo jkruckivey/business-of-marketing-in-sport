@@ -428,6 +428,50 @@ Remember: This quiz isn't graded, it's a diagnostic tool to help you learn effic
 
 **Word count:** 93 words ✓
 
+---
+
+## Element 6: Graphic Novel - "All In"
+
+**Purpose:** Visual narrative that introduces the week's key concepts through storytelling.
+
+**Graphic Novel:** "All In: A Sports Betting Story"
+
+**Location:** `modules/shared-resources/graphic-novels/03-all-in-week3.md`
+
+**Implementation:** Generated using NotebookLM from the script. Upload resulting PDF or embed images in Uplimit.
+
+**Story Synopsis:**
+Follow Denise Carter, a Black woman in her 40s serving as VP of Partnerships, through the sports betting revolution from underground to mainstream. The story dramatizes how sports organizations navigated the legalization of betting and built new revenue partnerships.
+
+**Learning Connection:**
+This narrative introduces the five sponsorship activations that define modern betting partnerships: Stadium Integration, Broadcast Partnership, Mobile Engagement, Data Licensing, and Responsible Gaming—the core concepts students will analyze this week.
+
+**Accessibility:**
+- Full text script available in `03-all-in-week3.md`
+- Alt text for each panel included in script
+- High contrast visual style (Retro Sports Illustrated aesthetic)
+
+---
+
+## Element 7: Transition Text - From Story to Strategy
+
+**Text Content:**
+
+```markdown
+### From Story to Strategy
+
+Denise Carter's story illustrates how sports betting transformed from underground activity to legitimate revenue stream. The legalization of sports betting created the fastest-growing sponsorship category in sports—with one crucial advantage: closed-loop attribution.
+
+**What You'll Master:**
+- How brands measure sponsorship ROI with imperfect attribution
+- Why sports betting offers perfect conversion tracking
+- The five activation channels that drive sponsor value
+- How to design activation plans with ROI projections that CFOs approve
+
+Now let's build the frameworks you need to calculate and justify sponsorship investments.
+```
+
+---
 
 ## Module Summary
 

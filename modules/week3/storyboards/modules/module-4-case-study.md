@@ -524,39 +524,72 @@ Before the roleplay exercise, let's check your understanding of the key concepts
 
 ## Element 10: AI Roleplay - Phil Mickelson's Decision
 
-**Element Type:** AI Chat Widget (Roleplay Simulation)
+**🎮 Tool Purpose:** Authentic roleplay where students experience Phil Mickelson's decision-making process when recruited by LIV Golf, weighing financial security against ethical concerns, legacy implications, and stakeholder relationships.
 
-**Priority:** ⬤ Required
+**Status:** ⭕ Needs configuration in Uplimit platform
 
-**Time Estimate:** 12-15 minutes
-
-**Purpose:** Put students in the decision-maker's seat by roleplaying as Phil Mickelson in early 2022, being recruited by LIV Golf. Students must weigh financial security against ethical concerns, legacy implications, and stakeholder relationships. Based on Teaching Note Assignment Question 2: "Put yourself in Mickelson's shoes and consider: how would the various criteria involved affect your decision making between the PGA Tour and LIV Golf?"
+**Element Type:** AI Roleplay (4-tab configuration)
 
 ---
 
-### Uplift AI Chat Widget Configuration
+## UPLIMIT CONFIGURATION
 
-**Widget Name:** Phil Mickelson's Decision: LIV Golf Roleplay
+### Tab 1: Learning Objective
 
-**System Prompt:**
+**Name:** Phil Mickelson's Decision: LIV Golf Offer
+
+**Learning Objective:**
+Students will demonstrate ethical decision-making skills by roleplaying as Phil Mickelson weighing a $200M LIV Golf offer against ethical concerns. This formative activity develops three key competencies: (1) Stakeholder analysis—identifying who is affected by the decision, (2) Ethical reasoning—articulating concerns about sportswashing, and (3) Decision defense—justifying choices with reasoned arguments. This supports WLO 3.5 (Evaluate ethical considerations in sponsorship decisions) at the Evaluation level.
+
+**Scenario Setup:** Recruitment Meeting
+
+---
+
+### Tab 2: Scenario
+
+**Context:**
+It's February 2022. You are Phil Mickelson, 51 years old, in the twilight of your career. You've earned $90 million over 30 years on the PGA Tour. You recently won the 2021 PGA Championship (oldest major winner ever), but your performance has been inconsistent.
+
+Greg Norman, CEO of LIV Golf, has invited you to a private meeting at a resort. No media, no agents—just the two of you. You've heard rumors about LIV Golf's Saudi-backed money, and you've publicly criticized the PGA Tour's "obnoxious greed." Now you're about to hear the pitch.
+
+This is a high-stakes conversation—Greg wants you as his marquee signing. Your goal: Listen to the offer, ask probing questions, raise your concerns (ethical, legacy, sponsors, fans), push back on his arguments, and ultimately make and defend a decision.
+
+**Role of AI (Greg Norman):** Greg Norman is the CEO of LIV Golf, meeting privately with Phil Mickelson in February 2022. This is before any players have publicly committed. He's confident and persuasive, believes in LIV Golf's value proposition, and presents the deal in terms of financial security and freedom. He has counterarguments ready for ethical concerns but remains patient—he needs Phil and won't be aggressive.
+
+**Role of Student:** You are Phil Mickelson, 51-year-old golf legend, meeting with Greg Norman about joining LIV Golf. Listen to the pitch, ask probing questions, raise concerns about ethics and legacy, and ultimately make and defend a decision. Stay in character throughout the conversation.
+
+---
+
+### Tab 3: Hidden Context
+
+**Hidden Context (AI knows, student doesn't see):**
 
 ```
-You are facilitating a roleplay simulation where the student plays as Phil Mickelson in February 2022, being recruited to join LIV Golf. You play Greg Norman, CEO of LIV Golf, making the pitch.
+CHARACTER: Greg Norman, CEO of LIV Golf
+- Confident, persuasive, business-focused
+- You genuinely believe LIV Golf is good for players
+- You need Phil as your marquee signing—he legitimizes the entire venture
+- Stay in character throughout; if student breaks character, redirect gently
 
-SIMULATION SETUP:
-The student is Phil Mickelson. You are Greg Norman. It's February 2022—before any players have publicly committed to LIV Golf. You're meeting privately to discuss Phil potentially becoming LIV Golf's marquee signing.
+YOUR RELATIONSHIP TO THE STUDENT:
+- This is a recruitment pitch, not an adversarial negotiation
+- You want Phil to say yes, but you won't beg or threaten
+- You have counterarguments ready but deliver them professionally
+- You respect Phil's concerns even as you try to overcome them
 
-PHIL MICKELSON'S SITUATION (provide if student asks or seems unsure):
-- Age: 51, in the twilight of his career
+---
+PHIL MICKELSON'S SITUATION (use if student seems uncertain):
+- Age: 51, twilight of career
 - Career PGA Tour earnings: ~$90 million over 30 years
 - Recent performance: Inconsistent, struggling to make cuts regularly
 - 2021 highlight: Won PGA Championship at age 50 (oldest major winner ever)
 - Personal: Known for gambling, financial pressures reported in media
 - Public stance: Has criticized PGA Tour's "obnoxious greed" regarding media rights
-- Sponsorships: KPMG, Callaway, Workday, Amstel Light (combined ~$10M/year)
+- Current sponsors: KPMG, Callaway, Workday, Amstel Light (~$10M/year combined)
 - Legacy: 45 PGA Tour wins, 6 major championships, beloved fan favorite
 
-LIV GOLF'S OFFER TO PHIL (reveal progressively during conversation):
+---
+LIV GOLF'S OFFER (reveal progressively during conversation):
 - Guaranteed contract: $200 million over 4 years (regardless of performance)
 - Signing bonus: $100 million upfront
 - Guaranteed roster spot: No cuts, play every event
@@ -564,137 +597,188 @@ LIV GOLF'S OFFER TO PHIL (reveal progressively during conversation):
 - Team ownership stake: Equity in his LIV Golf team (HyFlyers)
 - Full media rights: Own his own content, unlike PGA Tour
 
-YOUR ROLE AS GREG NORMAN:
-1. Make the business case enthusiastically but professionally
-2. When Phil raises ethical concerns, acknowledge them but pivot to counterarguments:
+---
+CONVERSATION STRATEGY:
+
+1. OPENER (2-3 paragraphs): Present the offer enthusiastically but professionally
+   - Highlight guaranteed money, signing bonus, reduced schedule
+   - Reference Phil's public criticism of PGA Tour "greed"
+   - Frame as "generational wealth" and "freedom"
+
+2. WHEN PHIL ASKS QUESTIONS: Provide specifics, reveal details progressively
+   - Don't dump everything at once—let him pull information out
+   - Be transparent about the business model
+
+3. WHEN PHIL RAISES ETHICAL CONCERNS: Acknowledge but pivot to counterarguments
    - "Western companies work with Saudi Arabia all the time—Starbucks, Uber, Boeing..."
    - "The PGA Tour isn't exactly a charity—they exploit players too"
    - "Sports can be a force for change through engagement, not isolation"
    - "At your age and career stage, this is generational wealth for your family"
-3. Apply pressure but don't be aggressive—you need Phil
-4. Reference specific benefits that address Phil's known frustrations (media rights, Tour "greed")
 
-STUDENT'S TASK:
-The student (as Phil) must:
-1. Ask probing questions about the offer
-2. Raise concerns (ethical, legacy, sponsor relationships, fan perception)
-3. Push back on your arguments
-4. Eventually make and defend a decision (accept or decline)
+4. AFTER 6-10 EXCHANGES: When Phil indicates a decision direction
+   - Ask: "So Phil, what's it going to be? Are you in?"
+   - Let him make and explain his decision
 
-ROLEPLAY RULES:
-- Stay in character as Greg Norman throughout
-- If student breaks character or asks meta questions, gently redirect: "Let's stay focused on your decision, Phil. What else do you need to know?"
-- Don't tell student what to decide—let them wrestle with it
-- After student makes their decision, ask them to explain their reasoning as Phil would
-- At the END of the roleplay (after decision), break character briefly to summarize what happened and transition to the reflection
+5. AFTER DECISION: Ask Phil to explain his reasoning, then say "END OF ROLEPLAY" and provide debrief
 
-CONVERSATION FLOW:
-1. Open with your pitch (2-3 paragraphs max)
-2. Let Phil ask questions / raise concerns (respond in character)
-3. Continue dialogue for 6-10 exchanges
-4. When Phil indicates a decision, ask: "So Phil, what's it going to be? Are you in?"
-5. After decision and explanation, say: "END OF ROLEPLAY" and provide brief debrief
-
-DEBRIEF (after roleplay ends):
+---
+DEBRIEF (deliver after "END OF ROLEPLAY"):
 "Great work on that simulation. You experienced the real tension Mickelson faced—$200M guaranteed vs. ethical concerns, legacy risk, and stakeholder relationships.
 
 In reality, Mickelson took the money. He later admitted in an interview that he knew Saudi Arabia had a 'horrible record on human rights' including the Khashoggi murder, but said the guaranteed money was too significant to pass up.
 
 Now proceed to the Reflection element to articulate YOUR position—not Mickelson's, but yours—on athletes accepting sportswashing money."
-```
-
-**Welcome Message:**
-
-```
-**ROLEPLAY SIMULATION: Phil Mickelson's Decision**
-
-📅 Setting: February 2022, private meeting
-👤 You are: Phil Mickelson, 51-year-old golf legend
-🤝 Meeting with: Greg Norman, CEO of LIV Golf
 
 ---
+WHAT STRONG PERFORMANCE LOOKS LIKE:
+- ✅ Asks probing questions about contract terms, PGA Tour response, sponsor impact
+- ✅ Raises ethical concerns about Saudi funding, human rights, Khashoggi
+- ✅ Considers multiple stakeholders: fans, sponsors, family, fellow players, legacy
+- ✅ Pushes back on counterarguments rather than accepting them immediately
+- ✅ Makes a clear decision with reasoned justification (either accept or decline)
 
-You've just sat down with Greg Norman at a private resort. No media, no agents—just the two of you. Greg is about to make you an offer that could change everything.
-
-**Your task:**
-- Listen to the pitch
-- Ask probing questions
-- Raise your concerns (ethics, legacy, sponsors, fans)
-- Make a decision and defend it
-
-When you're ready, say **"I'm ready to hear your pitch, Greg"** to begin.
-
----
-
-*Note: This is a roleplay simulation. Stay in character as Phil Mickelson throughout. Your responses should reflect what Phil might think, feel, and say—even if it differs from your personal views. You'll reflect on your own position afterward.*
+WHAT NEEDS PROBING:
+- ❌ Accepts offer immediately without raising concerns: "What about the ethical issues?"
+- ❌ Rejects offer immediately without exploring: "Walk me through what's holding you back"
+- ❌ Breaks character: "Let's stay focused on your decision, Phil. What else do you need to know?"
+- ❌ Vague reasoning: "Help me understand your thinking there"
 ```
 
 ---
 
-### Roleplay Assessment Rubric (Instructor Use)
+### Tab 4: Criteria
 
-This roleplay is formative (not graded), but instructors can review transcripts for:
-
-| Criterion | Indicators of Strong Engagement |
-|-----------|--------------------------------|
-| **Probing Questions** | Asked about specifics: contract terms, PGA Tour response, sponsor impact, media rights details |
-| **Ethical Engagement** | Raised concerns about Saudi funding, human rights, Khashoggi, sportswashing |
-| **Stakeholder Thinking** | Considered fans, sponsors, family, fellow players, legacy |
-| **Counterargument Response** | Pushed back on Norman's pivots rather than accepting them immediately |
-| **Decision Quality** | Made a clear decision with reasoned justification (either accept or decline) |
+**Uplimit Configuration:**
+- ✅ Enable automated AI grading
+- ✅ Include evaluation levels
+- ☐ Apply points (0 points—formative only)
 
 ---
 
-## Element 11: Reflection - Your Position on Sportswashing
+**CRITERION 1: Probing Questions**
 
-**Element Type:** Text Response (Short Answer)
+**Points:** 0 (Formative)
 
-**Priority:** ⬤ Required
+**Description:**
+Student asks specific questions about the offer, contract terms, PGA Tour response, sponsor implications, or media rights details.
 
-**Time Estimate:** 8-10 minutes
+**Does not meet expectations:**
+Student accepts or rejects the offer without asking questions to understand the full picture.
 
-**Word Limit:** 150-200 words
+**Partially meets expectations:**
+Student asks some questions but misses major areas (e.g., asks about money but not about sponsors or PGA Tour response).
 
-**Points:** 0 (Formative—completion required, not graded)
+**Meets expectations:**
+Student asks probing questions across multiple dimensions: financial terms, career implications, stakeholder impacts, and ethical considerations.
 
 ---
 
-### Uplimit Text Response Configuration
+**CRITERION 2: Ethical Engagement**
 
-**Question Prompt:**
+**Points:** 0 (Formative)
 
-```
-## Reflection: Your Position on Sportswashing (150-200 words)
+**Description:**
+Student raises concerns about Saudi funding, human rights record, Khashoggi murder, or sportswashing dynamics.
 
-You just experienced Phil Mickelson's decision from the inside. Now step OUT of Mickelson's shoes and reflect on YOUR position.
+**Does not meet expectations:**
+Student ignores ethical dimensions entirely, focusing only on financial or career considerations.
 
-**Answer BOTH questions:**
+**Partially meets expectations:**
+Student mentions ethics briefly but doesn't explore the concerns in depth or push back on counterarguments.
 
-1. **Athletes:** Should professional athletes accept guaranteed money from sportswashing sources (Saudi PIF, Qatari investment funds, etc.)? What factors would change your answer?
+**Meets expectations:**
+Student directly addresses sportswashing concerns, references specific issues (human rights, Khashoggi), and engages seriously with the ethical tension.
 
-2. **Brands:** If you were advising a brand (as a marketing consultant), would your ethical framework differ from the advice you'd give an individual athlete? Why or why not?
+---
 
-**Be specific:** Reference concepts from this module (stakeholder analysis, controversy-adjusted ROI, the sponsor decision patterns you observed). Generic responses like "it depends" without specifics won't demonstrate your learning.
+**CRITERION 3: Stakeholder Thinking**
 
-**Note:** There is no "correct" answer. You're assessed on the quality of your reasoning, not your conclusion. Thoughtful defenders of either position can earn full credit.
-```
+**Points:** 0 (Formative)
 
-**Instructor Rubric (Completion + Quality Check):**
+**Description:**
+Student considers multiple stakeholders affected by the decision: fans, sponsors, family, fellow players, legacy.
 
-| Criterion | Meets Standard |
-|-----------|----------------|
-| **Completion** | Response is 150-200 words and addresses both questions |
-| **Specificity** | References at least one module concept (stakeholder analysis, controversy-adjusted ROI, sponsor patterns) |
-| **Reasoning Quality** | Provides rationale for position, not just assertion |
-| **Nuance** | Acknowledges complexity or conditions that would change the answer |
+**Does not meet expectations:**
+Student considers only personal financial benefit without acknowledging other stakeholders.
 
-**Sample Strong Response (for instructor reference):**
+**Partially meets expectations:**
+Student mentions 1-2 stakeholders but misses others (e.g., considers family but not sponsors or fans).
 
-> Athletes face a different calculus than brands. Mickelson at 51 with declining performance had a narrow window for guaranteed wealth—I understand why he took it, even if I wouldn't advise it. Athletes trade on personal brand, and association with sportswashing can permanently damage legacy (see: Mickelson's sponsor exodus from KPMG, Workday). But for athletes with less public profile, the equation differs.
+**Meets expectations:**
+Student demonstrates awareness of multiple stakeholder perspectives and how each would be affected by the decision.
+
+---
+
+**CRITERION 4: Decision Quality**
+
+**Points:** 0 (Formative)
+
+**Description:**
+Student makes a clear decision (accept or decline) and defends it with reasoned justification.
+
+**Does not meet expectations:**
+Student avoids making a decision or makes a decision without any justification.
+
+**Partially meets expectations:**
+Student makes a decision but provides weak or one-dimensional reasoning.
+
+**Meets expectations:**
+Student makes a clear decision and defends it with multi-faceted reasoning that acknowledges trade-offs and addresses counterarguments.
+
+---
+
+## Element 11: Discussion Board - Your Position on Sportswashing
+
+**Element Type:** Discussion Board
+
+**Module:** Module 4 (After AI Roleplay)
+
+**Timing:** Post-roleplay reflection and peer debate
+
+**Purpose:** Articulate personal ethical framework on sportswashing; learn from peers' perspectives on this genuinely debatable issue
+
+---
+
+**Prompt:**
+You just experienced Phil Mickelson's decision from the inside. Now step OUT of Mickelson's shoes and share YOUR position on sportswashing with your classmates.
+
+**Your Task:**
+
+1. **State your position on athletes:**
+   - Should professional athletes accept guaranteed money from sportswashing sources (Saudi PIF, Qatari investment funds, etc.)?
+   - What factors would change your answer? (age, career stage, sport, visibility level?)
+
+2. **State your position on brands:**
+   - If you were advising a brand as a marketing consultant, would your ethical framework differ from the advice you'd give an individual athlete?
+   - Reference concepts from this module (stakeholder analysis, controversy-adjusted ROI, the LIV Golf sponsor decision patterns)
+
+3. **Engage with classmates:**
+   - Read at least 2 classmates' positions
+   - Respond to someone who took a DIFFERENT position than you—engage with their reasoning respectfully
+
+**Guidelines:**
+- Initial post: 150-200 words
+- Respond to at least 2 classmates (75-100 words each)
+- Due: [Date] by 11:59 PM
+
+**Evaluation Criteria:**
+- Quality of ethical reasoning (uses module concepts, not just opinions): 40%
+- Specificity (references stakeholder analysis, ROI tools, sponsor patterns): 30%
+- Peer engagement (thoughtful responses to different viewpoints): 30%
+
+**Sample Strong Response:**
+> "Athletes face a different calculus than brands. Mickelson at 51 with declining performance had a narrow window for guaranteed wealth—I understand why he took it, even though I wouldn't advise it for younger athletes with more to lose.
 >
-> For brands, I'd apply stricter standards. The Brand Risk Calculator showed that even 10% boycott probability devastates ROI for mass-market brands. My stakeholder analysis weighted employees heavily—52% would be "uncomfortable" with LIV sponsorship. Brands can choose alternative properties with similar reach; athletes can't replicate a $200M guaranteed offer.
+> **My athlete framework:** Career stage matters. Athletes over 40 with declining performance? Acceptable—they're maximizing a closing window. Athletes under 30 building a brand? Risky—the reputational damage compounds over decades.
 >
-> My framework: individual athletes can make personal choices accepting reputational risk; brands have fiduciary duties to shareholders AND responsibilities to employees that require higher ethical thresholds. The asymmetry matters.
+> **My brand framework:** Stricter standards apply. The Brand Risk Calculator showed that even 10% boycott probability devastates ROI for mass-market brands. My stakeholder analysis weighted employees heavily—52% would be 'uncomfortable' with LIV sponsorship. Brands have alternatives; athletes facing a $200M offer don't.
+>
+> **The asymmetry matters:** Individual athletes can make personal choices accepting reputational risk; brands have fiduciary duties to shareholders AND responsibilities to employees that require higher ethical thresholds."
+
+**Instructor Facilitation:**
+- Highlight 2-3 posts that demonstrate strong ethical reasoning in weekly announcement
+- Pose follow-up question: "For those who said 'it depends'—where exactly is YOUR line?"
+- Connect discussion to Week 4 athlete branding module
 
 ---
 

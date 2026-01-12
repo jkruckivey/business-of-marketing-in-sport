@@ -1,35 +1,27 @@
 ## MODULE 7: Assessment - CFL Expansion Final Proposal (BOPPPS: Post-Assessment)
-**Version:** 1.4.0 | **Last Updated:** 2025-12-05
+**Version:** 2.0.0 | **Last Updated:** 2026-01-12
 
 **Purpose:** Capstone assessment integrating all 5 weeks of learning (measures WLO 5.1-5.4 plus CLOs 1-5) via CFL Expansion Project Milestone 5
 
-### Version 1.4.0 Changes
-- **NEW:** CFL Expansion Project Milestone 5 replaces generic Strategic Vision Memo
-- Teams synthesize Milestones 1-4 into comprehensive expansion proposal
-- Presentation component added (15-20 slides + executive summary)
-- Peer evaluation included in assessment
+### Version 2.0.0 Changes
+- **REMOVED:** PAIRR framework (peer review not applicable to individual work)
+- **SIMPLIFIED:** Streamlined to submission + optional AI feedback + reflection
+- **UPDATED:** Individual submissions (no team/peer components)
+- **REDUCED:** Bonus points from 5 to 1 (AI feedback only)
 
 **Uplimit Structure:** Seventh module in Unit 5
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro + PAIRR overview | Type directly | Sets context for capstone + 105 pts total |
-| 2 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
-| 3 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, capstone focus |
-| 4 | **AI Roleplay** ◐ Recommended | Practice pitch to Board of Directors | Configure in Uplimit | Formative practice before writing |
-| 5 | **Text** ⬤ Required | Submission checklist and requirements | Type directly | Clear expectations for deliverable |
-| 6 | **Text Response** ⬤ Required | DRAFT Strategic Vision Memo submission | Configure in Uplimit | Submission only, no grading yet |
-| 7 | **Text** ◐ Recommended | **Phase 2A: Peer Feedback Instructions** | Type directly | How to provide effective peer feedback |
-| 8 | **Text** ◐ Recommended | **Phase 2B: AI Feedback Instructions** | Type directly | ChatGPT prompt template |
-| 9 | **Text Response** ◐ Recommended | **Peer Feedback Submission** | Configure in Uplimit | 2 pts bonus, due Day 7 |
-| 10 | **Text Response** ◐ Recommended | **AI Feedback Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
-| 11 | **Text** ◐ Recommended | **Phase 3: Comparative Reflection** | Type directly | Instructions for comparing feedback |
-| 12 | **Text Response** ◐ Recommended | **Comparative Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 7 |
-| 13 | **Text Response** ⬤ Required | **FINAL REVISED Strategic Vision Memo** | Configure in Uplimit | Rubric grading, 100 pts, due Day 10 |
-| 14 | **Text** ◐ Recommended | **Phase 5: Post-Revision Reflection** | Type directly | Instructions for reflection |
-| 15 | **Text Response** ◐ Recommended | **Post-Revision Reflection Submission** | Configure in Uplimit | 1 pt bonus, due Day 10 |
-| 16 | **Details** ○ Optional | Rubric details and scoring examples | Type directly | Accordion - transparent criteria |
-| 17 | **AI Chat Widget** ○ Optional | Strategic planning assistant | Configure in Uplimit | Named: "Strategy Planning Assistant" |
+| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Sets context for capstone |
+| 2 | **Infobox (Insight)** ⬤ Required | Assignment instructions and rubric preview | Type directly | Purple variant, capstone focus |
+| 3 | **AI Roleplay** ◐ Recommended | Practice pitch to Board of Directors | Configure in Uplimit | Formative practice before writing |
+| 4 | **Text** ⬤ Required | Submission checklist and requirements | Type directly | Clear expectations for deliverable |
+| 5 | **Text Response** ⬤ Required | Strategic Vision Memo submission | Configure in Uplimit | Rubric grading, 100 pts |
+| 6 | **Details** ○ Optional | AI Feedback Exercise | Type directly | Optional coaching, 1 bonus pt |
+| 7 | **Text Response** ○ Optional | AI Feedback Reflection | Configure in Uplimit | 1 bonus pt |
+| 8 | **Details** ○ Optional | Rubric details and scoring examples | Type directly | Accordion - transparent criteria |
+| 9 | **AI Chat Widget** ○ Optional | Strategic planning assistant | Configure in Uplimit | Named: "Strategy Planning Assistant" |
 
 ### Element 1: Connecting Introduction Text
 
@@ -41,7 +33,7 @@
 
 You've completed an intensive 5-week journey building a comprehensive CFL expansion proposal. You started by selecting your expansion city and projecting revenue streams (Week 1), developed a media and content strategy (Week 2), created a sponsorship and betting partnership plan (Week 3), and designed a brand launch strategy (Week 4).
 
-Now it's time to bring it all together. In this final milestone, your team will synthesize Milestones 1-4 into a **board-ready expansion proposal** for the CFL Board of Governors. You'll add financial projections, risk analysis, and a compelling 5-year vision that demonstrates why your city deserves a CFL franchise.
+Now it's time to bring it all together. In this final milestone, you'll synthesize Milestones 1-4 into a **board-ready expansion proposal** for the CFL Board of Governors. You'll add financial projections, risk analysis, and a compelling 5-year vision that demonstrates why your city deserves a CFL franchise.
 
 This is the culmination of everything you've learned—revenue ecosystems, media rights, sponsorship optimization, brand building, and strategic vision. Your proposal should demonstrate that you understand not just HOW to launch a franchise, but WHY this expansion makes strategic sense for the CFL.
 
@@ -56,7 +48,7 @@ This is the culmination of everything you've learned—revenue ecosystems, media
 ```markdown
 Title: 🏈 CFL Expansion Project - Milestone 5: Final Expansion Proposal
 
-**Team Deliverable:** Executive Presentation (15-20 slides) + Executive Summary (2 pages)
+**Individual Deliverable:** Executive Presentation (15-20 slides) + Executive Summary (2 pages)
 **Weight:** 25% of total project grade (25 points)
 **Due:** End of Week 5
 
@@ -78,10 +70,9 @@ Title: 🏈 CFL Expansion Project - Milestone 5: Final Expansion Proposal
 - Strategic rationale
 - Risk assessment and mitigation
 
-**Presentation Component:**
-- 10-15 minute team presentation to class
-- 5 minute Q&A from peers and instructor
-- Peer evaluation using provided rubric
+**Optional Presentation Component:**
+- Students may optionally present (8-10 minutes) during office hours or scheduled slots
+- Q&A with instructor to defend strategic choices
 
 📋 **Full Project Details:** [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
 ```
@@ -94,98 +85,42 @@ Title: 🏈 CFL Expansion Project - Milestone 5: Final Expansion Proposal
 - **Element Type:** File Upload (2 files required)
 - **File 1:** Presentation deck (PDF or PPTX)
 - **File 2:** Executive summary (PDF)
-- **Team Submission:** One submission per team
+- **Individual Submission:** One submission per student
 
 **Submission Instructions:**
 ```markdown
 ## Milestone 5 Submission
 
-Upload your team's Final Expansion Proposal:
+Upload your Final Expansion Proposal:
 1. **Presentation Deck** (15-20 slides as PDF or PPTX)
 2. **Executive Summary** (2 pages as PDF)
 
 **Filename Format:**
-- `TeamName_M5_Presentation.pdf`
-- `TeamName_M5_ExecutiveSummary.pdf`
+- `LastName_M5_Presentation.pdf`
+- `LastName_M5_ExecutiveSummary.pdf`
 
 **Rubric Preview:**
 | Criterion | Points |
 |-----------|--------|
-| Strategic Coherence (M1-M4 integration) | 5 |
-| Financial Viability & Projections | 5 |
-| Risk Analysis & Mitigation | 4 |
+| Strategic Coherence (M1-M4 integration) | 6 |
+| Financial Viability & Projections | 6 |
+| Risk Analysis & Mitigation | 5 |
 | 5-Year Vision & CFL Fit | 4 |
 | Presentation Quality & Delivery | 4 |
-| Peer Evaluation Score | 3 |
 | **Total** | **25** |
 ```
 
 ---
 
-## Original Strategic Vision Assessment (Individual Backup)
+## Strategic Vision Assessment
 
-**Note:** The CFL Expansion Project is the primary capstone assessment. The original Strategic Vision Memo format below is retained for students who may need an individual alternative or for future course iterations.
+**Note:** The Strategic Vision Memo is the primary individual capstone assessment (100 points). Students also complete CFL Expansion Milestone 5 (25 points) as part of the ongoing Anchor Project.
 
----
-
-**Optional PAIRR Bonus (5 points):** This capstone assessment includes an optional Peer and AI Review + Reflection (PAIRR) process. Submit your draft by Day 5, receive peer and AI feedback by Day 7, and earn up to 5 bonus points for thoughtful engagement with the feedback process (2 pts peer review + 1 pt AI feedback + 1 pt comparative reflection + 1 pt post-revision reflection). Total possible: 105 points.
+**Optional AI Feedback Bonus (1 point):** Get AI feedback on your draft before final submission. See Element 6 for instructions. Total possible: 101 points.
 
 ---
 
-## Element 2: PAIRR Assessment Overview
-
-**Uplimit Implementation:**
-1. Select **Infobox** element
-2. Choose variant: **Callout**
-3. Copy markdown below:
-
-```markdown
-Title: ◉ PAIRR Assessment: Capstone Strategic Vision with Dual Feedback
-
-This capstone assessment combines comprehensive strategic analysis with dual feedback (peer + AI) to develop both strategic thinking and AI literacy.
-
-**Phase 1: Build Your Strategic Vision (Due Day 5)**
-- Draft your 5-year strategic vision memo (80% version for feedback)
-- Complete all required sections (Executive Summary, Current State, Strategic Vision, 5-Year Roadmap, Risk Analysis)
-
-**Phase 2: Dual Feedback (Due Day 7)**
-- Peer review: Review assigned classmate's draft using rubric (2 pts bonus)
-- AI review: Generate ChatGPT feedback on your own draft (1 pt bonus)
-
-**Phase 3: Comparative Reflection (Due Day 7)**
-- Compare peer vs. AI feedback: Which was more useful? (300-400 words, 1 pt bonus)
-
-**Phase 4: Revision (Due Day 10)**
-- Revise strategic vision incorporating feedback. Submit final version for grading (100-point rubric).
-
-**Phase 5: Post-Revision Reflection (Due Day 10)**
-- Reflect on revision choices: Which feedback influenced you most? (200-300 words, 1 pt bonus)
-
-**Total Possible: 105 points** (100 pts final memo + 5 pts PAIRR bonus)
-
-**⏱️ Time Investment Breakdown:**
-- AI Roleplay practice: 20-30 min
-- Research and planning: 60-90 min
-- Writing draft (all 5 sections): 90-120 min
-- Peer review (giving feedback): 30-45 min
-- AI feedback generation: 10-15 min
-- Comparative reflection: 20-30 min
-- Revision: 45-60 min
-- Post-revision reflection: 15-20 min
-- **Total: 5-7 hours spread across 10 days**
-
-**Integrating Weeks 1-4:** For full-credit responses (12-15 pts per CLO), you MUST explicitly apply frameworks from each prior week:
-- Week 1: Revenue ecosystem analysis with specific percentages and interdependencies
-- Week 2: Media rights valuation (CPM, streaming economics) and fan engagement strategy
-- Week 3: Sponsorship ROI framework (2-3× activation rule) and/or betting partnerships
-- Week 4: Athlete brand partnerships (equity vs fees) OR emerging sports opportunity
-
-Generic strategies that don't reference course frameworks will score in the "Partially meets" range (9-11 pts per CLO).
-```
-
----
-
-## Element 4: **RENUMBERED** - Infobox Content (was Element 3)
+## Element 2: Infobox Content
 
 Title: ▪ Capstone Assessment: 5-Year Strategic Vision
 
@@ -1310,8 +1245,8 @@ Ready to celebrate your sports business mastery? Let's finish strong!
 - **Days 11-20:** Grading period (AI-assisted + instructor review)
 - **Day 21:** Feedback returned to students
 
-**Optional: PAIRR Integration (If Extending Timeline to 14 Days):**
-If you want to include Peer and AI Review + Reflection (PAIRR) methodology like Week 1 Module 6, extend timeline to 14 days and insert Elements 4A-4C (Draft Submission, Peer Review, AI Feedback, Comparative Reflection) between current Elements 3 and 4. See Week 1 Module 6 PAIRR implementation for detailed workflow.
+**Optional: AI Feedback Integration:**
+Students can optionally get AI feedback on their draft before final submission (1 bonus point). See Element 6 for the AI coaching prompt template.
 
 ### Grading Efficiency Strategies:
 
@@ -1387,36 +1322,117 @@ A: Minimum 5 citations from course content (cases, executive sessions, readings)
 
 ---
 
-## Element 3: **NEW** - PAIRR Assessment Overview
+## Element 6: AI Feedback Exercise (Optional)
 
-**Uplimit Implementation:**
-1. Select **Infobox** element
-2. Choose variant: **Callout**
-3. Copy markdown below:
-
-```markdown
-Title: ◉ PAIRR Assessment: Capstone Strategic Vision with Dual Feedback
-
-This capstone assessment combines comprehensive strategic analysis with dual feedback (peer + AI) to develop both strategic thinking and AI literacy.
-
-**Phase 1: Build Your Strategic Vision (Due Day 5)**
-- Draft your 5-year strategic vision memo (80% version for feedback)
-- Complete all required sections (Executive Summary, Current State, Strategic Vision, 5-Year Roadmap, Risk Analysis)
-
-**Phase 2: Dual Feedback (Due Day 7)**
-- Peer review: Review assigned classmate's draft using rubric (2 pts bonus)
-- AI review: Generate ChatGPT feedback on your own draft (1 pt bonus)
-
-**Phase 3: Comparative Reflection (Due Day 7)**
-- Compare peer vs. AI feedback: Which was more useful? (300-400 words, 1 pt bonus)
-
-**Phase 4: Revision (Due Day 10)**
-- Revise strategic vision incorporating feedback. Submit final version for grading (100-point rubric).
-
-**Phase 5: Post-Revision Reflection (Due Day 10)**
-- Reflect on revision choices: Which feedback influenced you most? (200-300 words, 1 pt bonus)
-
-**Total Possible: 105 points** (100 pts final memo + 5 pts PAIRR bonus)
 ```
+Title: Optional: Get AI Feedback Before Submitting (1 Bonus Point)
+
+[Expand for AI coaching instructions]
+
+## Why Get AI Feedback?
+
+Strategic planning professionals increasingly use AI tools for analysis and feedback. This optional exercise helps you:
+- Identify gaps in your strategic vision before final submission
+- Practice evaluating AI suggestions critically
+- Develop AI literacy for your career
+
+**Time Investment:** 15-20 minutes
+**Bonus Points:** 1 point for completing the reflection (Element 7)
+
+---
+
+## How to Get AI Feedback
+
+**Step 1: Copy this prompt into ChatGPT, Claude, or Gemini:**
+
+You are a strategic planning consultant evaluating a 5-year strategic vision memo for an MBA capstone course. The assignment asks students to create a comprehensive strategic vision for a sports property (team, league, venue, heritage institution, or event).
+
+RUBRIC CRITERIA (100 points total):
+1. CLO 1 - Revenue Ecosystem Analysis (15 pts): Week 1 framework, specific percentages, interdependencies
+2. CLO 2 - Media Rights & Fan Engagement (15 pts): Week 2 framework, streaming economics, DTC models
+3. CLO 3 - Sponsorship & Betting Strategy (15 pts): Week 3 framework, ROI optimization, activation planning
+4. CLO 4 - Athlete Branding & Emerging Sports (15 pts): Week 4 framework, equity models, growth opportunities
+5. CLO 5 - Legacy Management & Future Trends (15 pts): Week 5 framework, trade-offs, trend forecasting
+6. Strategic Integration (10 pts): Systems thinking, how strategies reinforce each other
+7. Financial Viability (10 pts): Specific projections, phased roadmap, realistic assumptions
+8. Executive Communication (5 pts): Professional memo format, concise writing, citations
+
+Please evaluate this strategic vision draft against these criteria:
+- For each CLO, identify strengths and specific improvement suggestions
+- Flag any missing course framework applications
+- Note if analysis is property-specific or too generic
+- Identify integration opportunities between weeks
+
+Here is the strategic vision memo:
+
+[PASTE YOUR DRAFT HERE]
+
+**Step 2: Review the AI's feedback**
+- Which suggestions are valid?
+- Which suggestions misunderstand the assignment or your property context?
+- What would you change based on the feedback?
+
+**Step 3: Complete the AI Feedback Reflection (Element 7)**
+- Submit a brief reflection on what you learned
+- Earns 1 bonus point
+
+---
+
+## Important Notes
+
+- AI feedback is **optional** - you can submit your memo without it
+- AI suggestions are not always correct - evaluate critically
+- The AI doesn't have access to course content, so it may miss context
+- You decide what to change - maintain strategic ownership
+```
+
+---
+
+## Element 7: AI Feedback Reflection (Optional)
+
+**Element Type:** Text Response (Short answer, 1 bonus point)
+
+**Uplimit Configuration:**
+
+### Tab 1: Instructions
+
+**Question:**
+```
+If you used AI feedback on your strategic vision memo, reflect on the experience (75-100 words).
+```
+
+**Additional Instructions:**
+```
+**AI Feedback Reflection (Optional - 1 Bonus Point)**
+
+If you used ChatGPT, Claude, or Gemini to get feedback on your draft, answer these questions:
+
+1. **What was most useful?** What did the AI catch that you might have missed?
+
+2. **What was least useful?** What suggestions did you reject, and why?
+
+3. **What did you change?** Give 1-2 specific examples of revisions you made based on AI feedback.
+
+4. **Integration insight:** Did the AI help you see connections between weeks that you hadn't considered?
+
+**Word Limit:** 75-100 words
+
+**Note:** If you didn't use AI feedback, skip this element. It's optional.
+```
+
+**Template Upload:** No template
+
+---
+
+### Tab 2: Criteria (Bonus Credit, No Rubric)
+
+**Uplimit Configuration:**
+- ⭕ DO NOT enable rubric grading (this is bonus credit)
+- ✅ Spot-check for thoughtful engagement
+- ✅ Award 1 bonus point for completing reflection
+
+**Instructor Grading Notes:**
+- 1 point: Thoughtful reflection with specific examples of AI feedback evaluated
+- 0 points: Missing or generic ("AI was helpful")
 
 ---

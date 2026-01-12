@@ -286,7 +286,7 @@ Export your engagement analysis. This data proves why betting partnerships deliv
 
 Here's the insight that's reshaping sports media strategy: bettors watch more games, stay tuned longer, and engage more deeply than non-bettors. But how much more? And what does that mean for media rights valuations and sponsorship pricing? This calculator quantifies the "engagement multiplier effect" that makes betting partnerships among the most valuable in sports.
 
-You'll compare viewing behavior between bettors and non-bettors by inputting fan base demographics, participation rates, and engagement multipliers derived from industry research. The widget calculates total viewership contributions from each group and reveals what percentage of total engagement comes from the relatively small proportion of fans who bet. You'll see why leagues like the NFL, NBA, and NHL are rushing to integrate betting content into broadcasts—and why betting sponsors are willing to pay premium rates for access to this hyper-engaged audience.
+You'll compare viewing behavior between bettors and non-bettors by inputting fan base demographics, participation rates, and engagement multipliers derived from industry research. The exercise calculates total viewership contributions from each group and reveals what percentage of total engagement comes from the relatively small proportion of fans who bet. You'll see why leagues like the NFL, NBA, and NHL are rushing to integrate betting content into broadcasts—and why betting sponsors are willing to pay premium rates for access to this hyper-engaged audience.
 
 **What you'll discover:**
 
@@ -409,7 +409,7 @@ Leagues limit betting partnerships to 1-3 "official partners" (integrity concern
 - Compare to beer sponsors: 20+ official beer partners dilute value, drive prices down
 
 **3. Engagement Premium (Most Valuable Fans)**
-As you saw in the previous widget, bettors watch 40% more games, use apps 3x more, spend 2x on merch. Brands want access to this premium segment. Betting partnerships deliver:
+As you saw in the previous exercise, bettors watch 40% more games, use apps 3x more, spend 2x on merch. Brands want access to this premium segment. Betting partnerships deliver:
 - In-app placements (Gatorade ads in FanDuel NBA betting interface)
 - Broadcast integrations (Verizon 5G betting odds segments during NFL games)
 - Retail activations (Coca-Cola "bet & win" promotions at 7-Eleven)
@@ -498,7 +498,7 @@ Export your premium analysis. If your property can command 20-30% betting sponso
 
 You've seen that bettors engage more than non-bettors. Now comes the financial implication: should betting operators pay a premium for sponsorships compared to traditional brands? And if so, how much? This valuation tool helps you calculate the justified price premium for betting partnerships based on quantifiable engagement advantages.
 
-You'll compare traditional sponsorship CPM to betting sponsor CPM by factoring in the engagement multiplier and bettor population percentage. The widget calculates effective impressions for each sponsorship type and determines what premium is justified by the enhanced engagement value betting partnerships deliver. You'll analyze real deals like NFL jersey sponsorships, NBA court advertisements, and NHL betting kiosk placements to understand why operators like FanDuel are willing to pay 20-35% premiums for exclusive betting category rights.
+You'll compare traditional sponsorship CPM to betting sponsor CPM by factoring in the engagement multiplier and bettor population percentage. The exercise calculates effective impressions for each sponsorship type and determines what premium is justified by the enhanced engagement value betting partnerships deliver. You'll analyze real deals like NFL jersey sponsorships, NBA court advertisements, and NHL betting kiosk placements to understand why operators like FanDuel are willing to pay 20-35% premiums for exclusive betting category rights.
 
 **What you'll discover:**
 
@@ -671,7 +671,7 @@ Total reading time: 20-25 minutes (required) + 15 minutes (recommended)
 **Design Rationale:**
 - Betting economics readings positioned before LIV Golf case analysis
 - Industry sources (not academic) match MBA practitioner focus
-- Direct connections to module widgets and upcoming case analysis
+- Direct connections to module exercises and upcoming case analysis
 
 ---
 
@@ -680,7 +680,7 @@ Total reading time: 20-25 minutes (required) + 15 minutes (recommended)
 **Completion Badge:** 🏆 Sports Betting Economics Mastered
 
 **What You've Accomplished:**
-You've analyzed the sports betting regulatory landscape (PASPA repeal, state-by-state legalization), modeled betting market economics (handle, GGR, tax revenue), and quantified betting's fan engagement impact (40% more viewership, 3x app usage). You've calculated why betting partnerships often command 20-30% premiums over traditional sponsors using three interactive widgets.
+You've analyzed the sports betting regulatory landscape (PASPA repeal, state-by-state legalization), modeled betting market economics (handle, GGR, tax revenue), and quantified betting's fan engagement impact (40% more viewership, 3x app usage). You've calculated why betting partnerships often command 20-30% premiums over traditional sponsors using three interactive exercises.
 
 **Key Takeaways:**
 - Sports betting is the fastest-growing revenue stream (zero to $119.8B annual handle by 2023)

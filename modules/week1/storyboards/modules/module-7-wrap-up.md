@@ -63,7 +63,7 @@ You've traveled from the Connor McDavid paradox to mastering revenue ecosystem a
 - Quick Start: Hooked by the $100M question
 - Your Week 1 Journey: Established learning outcomes
 - Inside the Sports Business: Heard expert perspective
-- Five Revenue Streams: Discovered revenue concepts through 8 interactive widgets
+- Five Revenue Streams: Discovered revenue concepts through 8 interactive exercises
 - Build Your Revenue Empire: Built your own revenue strategy
 - The Predators Problem: Analyzed the real case
 - Your Executive Memo: Synthesized learning in reflection memo

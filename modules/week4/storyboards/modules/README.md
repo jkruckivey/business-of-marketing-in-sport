@@ -69,7 +69,7 @@
 
 ## Interactive Widgets
 
-Week 4 includes 7 interactive widgets:
+Week 4 includes 7 interactive exercises:
 
 **Module 0 - Bridge-In:**
 - Athlete Brand Pre-Assessment Quiz

@@ -46,7 +46,7 @@ You heard from experts who've actually built athlete brands:
 - Women's sports investment experts sharing why NWSL offers better returns than MLS
 
 ### **Module 3: The Experimentation**
-You built athlete portfolios using interactive widgets and discovered:
+You built athlete portfolios using interactive exercises and discovered:
 - Why equity compounds while fees don't (the math behind Michael Jordan's $2.6B Nike royalties)
 - How NWSL's 18% IRR compares to S&P 500's 10% (and whether the risk is worth it)
 - Why Serena's 70% equity allocation creates 160% more wealth than 70% endorsements

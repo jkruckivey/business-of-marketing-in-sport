@@ -57,7 +57,7 @@ Week 5 contains 9 modules organized in this directory:
 - Students choose submission format: Written Memo, Live Presentation, Video Presentation, or Digital Campaign
 
 **V3 Interactive-First Redesign:**
-- Module 3 uses two major interactive widgets (Legacy vs Innovation Matrix, Future Trends Predictor)
+- Module 3 uses two major interactive exercises (Legacy vs Innovation Matrix, Future Trends Predictor)
 - Module 4 features Heritage Transformation Strategist simulation
 - Text reduced, active engagement increased to 70-75%
 
@@ -81,7 +81,7 @@ Week 5 contains 9 modules organized in this directory:
 | `module-0-bridge-in.md` | 32 KB | Bridge In: Heritage Monetization Dilemma | Video hook, AI Roleplay diagnostic, Pre-assessment quiz | 20-25 min |
 | `module-1-welcome.md` | 6 KB | Welcome & Learning Objectives | Week overview, WLOs 5.1-5.4, strategic focus areas | 5-7 min |
 | `module-2-executives.md` | 50 KB | Executive Leader Perspectives | Jamie Dinsmore (HHOF) + Keith Pelley (MLSE) video sessions | 65-80 min |
-| `module-3-core-content.md` | 37 KB | Core Content - Legacy vs Innovation | Legacy vs Innovation Matrix, Future Trends Predictor widgets | 55-67 min |
+| `module-3-core-content.md` | 37 KB | Core Content - Legacy vs Innovation | Legacy vs Innovation Matrix, Future Trends Predictor exercises | 55-67 min |
 | `module-4-interactive.md` | 21 KB | Interactive Activity | Heritage Transformation Strategist simulation + written defense | 95-125 min |
 | `module-5-case-study-read.md` | 28 KB | HHOF Case Study Part 1 (Read) | Case background, strategic options, Exhibit A (financial data) | 30-40 min |
 | `module-6-case-study-analyze.md` | 49 KB | HHOF Case Study Part 2 (Analyze) | Strategic dilemma, Exhibits B-C, discussion questions, AI Roleplay | 60-70 min |

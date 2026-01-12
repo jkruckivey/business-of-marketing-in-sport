@@ -22,8 +22,10 @@
 | 6 | **▬ Text** ◐ Recommended | Sportswashing Framework (200 words) | Type directly | Definition, examples, measurement challenges |
 | 7 | **Table** ◐ Recommended | LIV Golf Sponsor Portfolio (2024) | Type directly | Brands who signed, brands who declined |
 | 8 | **Interactive Widget** ⬤ Required | Brand Risk Calculator | Embed iframe | Model sponsorship value vs. reputation cost |
-| 9 | **Video** ◐ Recommended | Executive Perspective (2 min) | Upload MP4 | Industry view on controversial sponsorships |
-| 10 | **AI Chat Widget** ◐ Recommended | Case Analysis Coach | Configure in Uplimit | Socratic guidance for ethical analysis |
+| 9 | **Quiz** ⬤ Required | Case Comprehension Check (5 MC) | Configure in Uplimit | Tests understanding before roleplay |
+| 10 | **AI Chat Widget** ⬤ Required | AI Roleplay: Phil Mickelson's Decision | Configure in Uplimit | Student plays Mickelson weighing LIV offer |
+| 11 | **Text Response** ⬤ Required | Reflection: Your Position (150 words) | Configure in Uplimit | Personal synthesis after roleplay |
+| 12 | **AI Chat Widget** ◐ Recommended | Case Analysis Coach | Configure in Uplimit | Socratic guidance for ethical analysis |
 
 ---
 
@@ -127,7 +129,7 @@ The case presents competing perspectives on sportswashing. Consider:
 - Counter-argument: Is all sponsorship "reputation washing" in some form?
 - Your assessment: How should brands weigh ethical concerns vs. ROI?
 
-**After reading, move to the interactive widgets to model these decisions.**
+**After reading, move to the interactive exercises to model these decisions.**
 ```
 
 ---
@@ -169,7 +171,7 @@ Reading time: 10-12 minutes
 
 Every sponsorship involves trade-offs, but some properties force brands to confront explicit ethical tensions. LIV Golf is the clearest example: potentially strong ROI metrics combined with significant reputation risk. This decision tool helps you systematically evaluate controversial sponsorship opportunities by mapping stakeholder impacts and quantifying brand risk factors.
 
-You'll assess a sponsorship opportunity across five stakeholder groups (customers, employees, shareholders, media, and advocacy groups), rate potential impacts from negative to positive, and see how different weightings affect your overall decision score. The widget reveals why most major brands declined LIV Golf despite attractive economics—and why some brands with different stakeholder profiles chose to sign.
+You'll assess a sponsorship opportunity across five stakeholder groups (customers, employees, shareholders, media, and advocacy groups), rate potential impacts from negative to positive, and see how different weightings affect your overall decision score. The exercise reveals why most major brands declined LIV Golf despite attractive economics—and why some brands with different stakeholder profiles chose to sign.
 
 **What you'll discover:**
 
@@ -326,7 +328,7 @@ Title: LIV Golf Sponsor Decisions: Who Signed vs. Who Declined (2022-2024)
 
 Standard sponsorship ROI calculations assume brand reputation stays constant. But controversial properties like LIV Golf introduce "reputation risk"—the possibility that association damages brand equity, triggers boycotts, or alienates employees. This calculator adds a risk adjustment to your ROI model, helping you understand when controversy outweighs financial returns.
 
-You'll input standard sponsorship metrics (rights fee, impressions, engagement) alongside controversy factors (customer boycott probability, employee sentiment, media coverage tone). The widget calculates both "raw" ROI and "risk-adjusted" ROI, showing how reputation concerns can transform a profitable opportunity into a net negative investment.
+You'll input standard sponsorship metrics (rights fee, impressions, engagement) alongside controversy factors (customer boycott probability, employee sentiment, media coverage tone). The exercise calculates both "raw" ROI and "risk-adjusted" ROI, showing how reputation concerns can transform a profitable opportunity into a net negative investment.
 
 **What you'll discover:**
 
@@ -405,21 +407,298 @@ You'll input standard sponsorship metrics (rights fee, impressions, engagement) 
 
 ---
 
-## Element 9: Executive Video - Industry Perspective
+## Element 9: Case Comprehension Check (Multiple Choice)
 
-**Video Specifications:**
-- **Length:** 2-3 minutes
-- **Topic:** "Navigating Controversial Sponsorships: An Industry Perspective"
-- **Key Points:** How brands evaluate ethical risk, real examples of declined deals, decision frameworks
-- **Accessibility:** Captions required, transcript provided
+**Element Type:** Quiz (5 Multiple Choice Questions)
 
-**Video Status:** 📝 To be produced (consider Andrew Sneyd discussing brand safety in betting, or sponsor executive on LIV Golf)
+**Priority:** ⬤ Required
 
-**Alternative:** Use existing Andrew Sneyd (FanDuel CMO) footage discussing brand trust and safety concerns—relevant parallel to LIV Golf's legitimacy challenges.
+**Time Estimate:** 5-7 minutes
+
+**Purpose:** Verify students understand key case concepts before the AI roleplay. Tests comprehension of sportswashing, PGA Tour business model vulnerabilities, player economics, and sponsor decision logic.
 
 ---
 
-## Element 10: AI Chat Widget - LIV Golf Case Analysis Coach
+### Uplimit Quiz Configuration
+
+**Quiz Title:** LIV Golf Case Comprehension Check
+
+**Instructions Text:**
+```
+Before the roleplay exercise, let's check your understanding of the key concepts from the LIV Golf case. These 5 questions test comprehension—not opinions. You can retake if needed.
+```
+
+**Passing Score:** 80% (4 of 5 correct)
+
+---
+
+### Question 1: Sportswashing Definition
+
+**Question:** What distinguishes "sportswashing" from standard sports marketing or sponsorship?
+
+**Options:**
+- A) Sportswashing involves larger financial investments than traditional sponsorships
+- B) Sportswashing specifically aims to improve a country or entity's reputation by distracting from criticism of wrongdoing ✓
+- C) Sportswashing only applies to Middle Eastern countries investing in Western sports
+- D) Sportswashing refers to any sponsorship deal that loses money
+
+**Correct Answer:** B
+
+**Feedback (Correct):** Exactly. Sportswashing is defined as using sports investments to distract from bad acts (human rights abuses, etc.) and display the entity positively to the world. The key distinction is the reputational motive, not the investment size or geography.
+
+**Feedback (Incorrect):** Review the Sportswashing Framework section. Sportswashing specifically refers to using sports investments to distract from criticism and improve reputation—not just large investments or money-losing deals. The case cites examples including FIFA World Cup hosts and Olympic hosts facing human rights criticism.
+
+---
+
+### Question 2: PGA Tour Business Model Vulnerability
+
+**Question:** According to the case, what aspect of the PGA Tour's business model made it vulnerable to LIV Golf's challenge?
+
+**Options:**
+- A) The PGA Tour paid players too much, creating unsustainable economics
+- B) The "earn your way" model offered no guaranteed contracts, job security, or collective bargaining ✓
+- C) The PGA Tour refused to allow international players to compete
+- D) The PGA Tour's charity focus meant players received no prize money
+
+**Correct Answer:** B
+
+**Feedback (Correct):** Correct. The PGA Tour's model required players to earn their status through performance—no guaranteed contracts, no collective bargaining agreement, and players covering their own expenses. LIV Golf offered guaranteed money and roster spots regardless of performance, which was especially attractive to aging stars and players without consistent top finishes.
+
+**Feedback (Incorrect):** Re-read the case section on PGA Tour's business model. Unlike the NFL, NBA, NHL, and MLB, the PGA Tour has no players association or collective bargaining agreement. Players must "earn their way" through performance, with no guaranteed contracts or job security. This created vulnerability when LIV Golf offered guaranteed deals.
+
+---
+
+### Question 3: Player Economics - Mickelson's Decision
+
+**Question:** Why did the LIV Golf offer make economic sense for Phil Mickelson specifically, according to the case analysis?
+
+**Options:**
+- A) Mickelson had never earned significant money on the PGA Tour
+- B) Mickelson was in the prime of his career and wanted to maximize peak earnings
+- C) Mickelson was in the twilight of his career, making guaranteed money and job security more valuable than performance-based earnings ✓
+- D) Mickelson wanted to play more tournaments per year than the PGA Tour allowed
+
+**Correct Answer:** C
+
+**Feedback (Correct):** Right. The teaching note emphasizes that Mickelson's situation—twilight of career, declining performance consistency—made guaranteed money ($200M reported) more attractive than the PGA Tour's performance-based model. His $90M in career PGA earnings over decades compared unfavorably to a guaranteed LIV contract. Age and career stage significantly affect the risk calculus.
+
+**Feedback (Incorrect):** Consider Mickelson's career stage. He had earned approximately $90M over his PGA Tour career, but was past his prime performance years. The guaranteed $200M from LIV Golf represented security that performance-based PGA earnings couldn't match at his age. Career stage matters in these decisions.
+
+---
+
+### Question 4: Sponsor Decision Logic
+
+**Question:** Why did premium global brands (Rolex, BMW, Mastercard) decline LIV Golf sponsorship while some regional brands (7UP) and Saudi-aligned entities signed?
+
+**Options:**
+- A) Premium brands couldn't afford LIV Golf's sponsorship fees
+- B) Premium brands had exclusive contracts preventing any golf sponsorship
+- C) Premium brands faced higher stakeholder risk (customers, employees, ESG commitments) that outweighed the financial opportunity ✓
+- D) Premium brands only sponsor individual athletes, never tournaments
+
+**Correct Answer:** C
+
+**Feedback (Correct):** Exactly. The case shows that premium brands with global customer bases, strong ESG commitments, and employees likely to react negatively faced higher reputation risk. Regional brands like 7UP (limited US exposure, different target demo) and Saudi-aligned entities (aligned interests) had different stakeholder risk profiles. Brand positioning determines controversy tolerance.
+
+**Feedback (Incorrect):** Review the LIV Golf Sponsor Portfolio table. The pattern shows premium global brands with ESG commitments and broad customer bases declined (Rolex, BMW, FedEx, Mastercard), while regional brands with limited exposure or aligned interests signed. The difference isn't affordability—it's stakeholder risk profile.
+
+---
+
+### Question 5: Sportswashing Effectiveness
+
+**Question:** According to the case and teaching note, what evidence exists regarding whether sportswashing "works"?
+
+**Options:**
+- A) Sportswashing never works—fans always boycott events hosted by controversial countries
+- B) Sportswashing evidence is mixed: Saudi favorability increased among sports fans, but most consumers can't name LIV Golf sponsors ✓
+- C) Sportswashing works perfectly—all criticism of host countries disappears after sporting events
+- D) There is no data available on sportswashing effectiveness
+
+**Correct Answer:** B
+
+**Feedback (Correct):** Correct. The evidence is genuinely mixed. Saudi Arabia's favorability ratings increased 15% among sports fans (YouGov, 2023), suggesting some reputation benefit. However, 71% of consumers can't name any LIV Golf sponsor, limiting brand exposure risk. Fans didn't boycott the 2018 World Cup (Russia) or 2022 Olympics (China) despite controversy. The case presents this as a genuine debate, not a settled question.
+
+**Feedback (Incorrect):** The case presents nuanced evidence. Saudi favorability did increase among sports fans (+15%), and fans didn't boycott controversial events like the 2018 World Cup or 2022 Olympics. But 71% of consumers can't name LIV Golf sponsors, suggesting limited awareness. The teaching note emphasizes this is a genuine debate with evidence on multiple sides.
+
+---
+
+## Element 10: AI Roleplay - Phil Mickelson's Decision
+
+**Element Type:** AI Chat Widget (Roleplay Simulation)
+
+**Priority:** ⬤ Required
+
+**Time Estimate:** 12-15 minutes
+
+**Purpose:** Put students in the decision-maker's seat by roleplaying as Phil Mickelson in early 2022, being recruited by LIV Golf. Students must weigh financial security against ethical concerns, legacy implications, and stakeholder relationships. Based on Teaching Note Assignment Question 2: "Put yourself in Mickelson's shoes and consider: how would the various criteria involved affect your decision making between the PGA Tour and LIV Golf?"
+
+---
+
+### Uplift AI Chat Widget Configuration
+
+**Widget Name:** Phil Mickelson's Decision: LIV Golf Roleplay
+
+**System Prompt:**
+
+```
+You are facilitating a roleplay simulation where the student plays as Phil Mickelson in February 2022, being recruited to join LIV Golf. You play Greg Norman, CEO of LIV Golf, making the pitch.
+
+SIMULATION SETUP:
+The student is Phil Mickelson. You are Greg Norman. It's February 2022—before any players have publicly committed to LIV Golf. You're meeting privately to discuss Phil potentially becoming LIV Golf's marquee signing.
+
+PHIL MICKELSON'S SITUATION (provide if student asks or seems unsure):
+- Age: 51, in the twilight of his career
+- Career PGA Tour earnings: ~$90 million over 30 years
+- Recent performance: Inconsistent, struggling to make cuts regularly
+- 2021 highlight: Won PGA Championship at age 50 (oldest major winner ever)
+- Personal: Known for gambling, financial pressures reported in media
+- Public stance: Has criticized PGA Tour's "obnoxious greed" regarding media rights
+- Sponsorships: KPMG, Callaway, Workday, Amstel Light (combined ~$10M/year)
+- Legacy: 45 PGA Tour wins, 6 major championships, beloved fan favorite
+
+LIV GOLF'S OFFER TO PHIL (reveal progressively during conversation):
+- Guaranteed contract: $200 million over 4 years (regardless of performance)
+- Signing bonus: $100 million upfront
+- Guaranteed roster spot: No cuts, play every event
+- Reduced schedule: 14 events vs. PGA Tour's 25+ events
+- Team ownership stake: Equity in his LIV Golf team (HyFlyers)
+- Full media rights: Own his own content, unlike PGA Tour
+
+YOUR ROLE AS GREG NORMAN:
+1. Make the business case enthusiastically but professionally
+2. When Phil raises ethical concerns, acknowledge them but pivot to counterarguments:
+   - "Western companies work with Saudi Arabia all the time—Starbucks, Uber, Boeing..."
+   - "The PGA Tour isn't exactly a charity—they exploit players too"
+   - "Sports can be a force for change through engagement, not isolation"
+   - "At your age and career stage, this is generational wealth for your family"
+3. Apply pressure but don't be aggressive—you need Phil
+4. Reference specific benefits that address Phil's known frustrations (media rights, Tour "greed")
+
+STUDENT'S TASK:
+The student (as Phil) must:
+1. Ask probing questions about the offer
+2. Raise concerns (ethical, legacy, sponsor relationships, fan perception)
+3. Push back on your arguments
+4. Eventually make and defend a decision (accept or decline)
+
+ROLEPLAY RULES:
+- Stay in character as Greg Norman throughout
+- If student breaks character or asks meta questions, gently redirect: "Let's stay focused on your decision, Phil. What else do you need to know?"
+- Don't tell student what to decide—let them wrestle with it
+- After student makes their decision, ask them to explain their reasoning as Phil would
+- At the END of the roleplay (after decision), break character briefly to summarize what happened and transition to the reflection
+
+CONVERSATION FLOW:
+1. Open with your pitch (2-3 paragraphs max)
+2. Let Phil ask questions / raise concerns (respond in character)
+3. Continue dialogue for 6-10 exchanges
+4. When Phil indicates a decision, ask: "So Phil, what's it going to be? Are you in?"
+5. After decision and explanation, say: "END OF ROLEPLAY" and provide brief debrief
+
+DEBRIEF (after roleplay ends):
+"Great work on that simulation. You experienced the real tension Mickelson faced—$200M guaranteed vs. ethical concerns, legacy risk, and stakeholder relationships.
+
+In reality, Mickelson took the money. He later admitted in an interview that he knew Saudi Arabia had a 'horrible record on human rights' including the Khashoggi murder, but said the guaranteed money was too significant to pass up.
+
+Now proceed to the Reflection element to articulate YOUR position—not Mickelson's, but yours—on athletes accepting sportswashing money."
+```
+
+**Welcome Message:**
+
+```
+**ROLEPLAY SIMULATION: Phil Mickelson's Decision**
+
+📅 Setting: February 2022, private meeting
+👤 You are: Phil Mickelson, 51-year-old golf legend
+🤝 Meeting with: Greg Norman, CEO of LIV Golf
+
+---
+
+You've just sat down with Greg Norman at a private resort. No media, no agents—just the two of you. Greg is about to make you an offer that could change everything.
+
+**Your task:**
+- Listen to the pitch
+- Ask probing questions
+- Raise your concerns (ethics, legacy, sponsors, fans)
+- Make a decision and defend it
+
+When you're ready, say **"I'm ready to hear your pitch, Greg"** to begin.
+
+---
+
+*Note: This is a roleplay simulation. Stay in character as Phil Mickelson throughout. Your responses should reflect what Phil might think, feel, and say—even if it differs from your personal views. You'll reflect on your own position afterward.*
+```
+
+---
+
+### Roleplay Assessment Rubric (Instructor Use)
+
+This roleplay is formative (not graded), but instructors can review transcripts for:
+
+| Criterion | Indicators of Strong Engagement |
+|-----------|--------------------------------|
+| **Probing Questions** | Asked about specifics: contract terms, PGA Tour response, sponsor impact, media rights details |
+| **Ethical Engagement** | Raised concerns about Saudi funding, human rights, Khashoggi, sportswashing |
+| **Stakeholder Thinking** | Considered fans, sponsors, family, fellow players, legacy |
+| **Counterargument Response** | Pushed back on Norman's pivots rather than accepting them immediately |
+| **Decision Quality** | Made a clear decision with reasoned justification (either accept or decline) |
+
+---
+
+## Element 11: Reflection - Your Position on Sportswashing
+
+**Element Type:** Text Response (Short Answer)
+
+**Priority:** ⬤ Required
+
+**Time Estimate:** 8-10 minutes
+
+**Word Limit:** 150-200 words
+
+**Points:** 0 (Formative—completion required, not graded)
+
+---
+
+### Uplimit Text Response Configuration
+
+**Question Prompt:**
+
+```
+## Reflection: Your Position on Sportswashing (150-200 words)
+
+You just experienced Phil Mickelson's decision from the inside. Now step OUT of Mickelson's shoes and reflect on YOUR position.
+
+**Answer BOTH questions:**
+
+1. **Athletes:** Should professional athletes accept guaranteed money from sportswashing sources (Saudi PIF, Qatari investment funds, etc.)? What factors would change your answer?
+
+2. **Brands:** If you were advising a brand (as a marketing consultant), would your ethical framework differ from the advice you'd give an individual athlete? Why or why not?
+
+**Be specific:** Reference concepts from this module (stakeholder analysis, controversy-adjusted ROI, the sponsor decision patterns you observed). Generic responses like "it depends" without specifics won't demonstrate your learning.
+
+**Note:** There is no "correct" answer. You're assessed on the quality of your reasoning, not your conclusion. Thoughtful defenders of either position can earn full credit.
+```
+
+**Instructor Rubric (Completion + Quality Check):**
+
+| Criterion | Meets Standard |
+|-----------|----------------|
+| **Completion** | Response is 150-200 words and addresses both questions |
+| **Specificity** | References at least one module concept (stakeholder analysis, controversy-adjusted ROI, sponsor patterns) |
+| **Reasoning Quality** | Provides rationale for position, not just assertion |
+| **Nuance** | Acknowledges complexity or conditions that would change the answer |
+
+**Sample Strong Response (for instructor reference):**
+
+> Athletes face a different calculus than brands. Mickelson at 51 with declining performance had a narrow window for guaranteed wealth—I understand why he took it, even if I wouldn't advise it. Athletes trade on personal brand, and association with sportswashing can permanently damage legacy (see: Mickelson's sponsor exodus from KPMG, Workday). But for athletes with less public profile, the equation differs.
+>
+> For brands, I'd apply stricter standards. The Brand Risk Calculator showed that even 10% boycott probability devastates ROI for mass-market brands. My stakeholder analysis weighted employees heavily—52% would be "uncomfortable" with LIV sponsorship. Brands can choose alternative properties with similar reach; athletes can't replicate a $200M guaranteed offer.
+>
+> My framework: individual athletes can make personal choices accepting reputational risk; brands have fiduciary duties to shareholders AND responsibilities to employees that require higher ethical thresholds. The asymmetry matters.
+
+---
+
+## Element 12: AI Chat Widget - LIV Golf Case Analysis Coach
 
 **Element Type:** AI Chat Widget (Socratic coaching for case analysis)
 
@@ -447,7 +726,7 @@ IMPORTANT RULES:
 1. NEVER write analysis for students or give direct answers
 2. NEVER tell students what they "should" conclude about ethics
 3. ALWAYS ask guiding questions that prompt deeper thinking
-4. Reference the 2 interactive widgets: Ethical Decision Tool, Brand Risk Calculator
+4. Reference the 2 interactive exercises: Ethical Decision Tool, Brand Risk Calculator
 5. Present multiple perspectives fairly—this is a genuine ethical debate
 
 STUDENT QUESTIONS YOU'LL ENCOUNTER:
@@ -510,7 +789,7 @@ Or just say "I'm stuck on..." and I'll help!
 **Completion Badge:** 🏆 Ethical Sponsorship Analysis Complete
 
 **What You've Accomplished:**
-You've read the LIV Golf case and applied sponsorship ROI frameworks to an ethically complex scenario. You've mapped stakeholder impacts, calculated controversy-adjusted ROI, and developed your own framework for evaluating sponsorships when ethical concerns exist. Most importantly, you've wrestled with genuine ambiguity—there's no "right answer" to whether brands should sponsor LIV Golf.
+You've read the LIV Golf case and applied sponsorship ROI frameworks to an ethically complex scenario. You mapped stakeholder impacts using the Ethical Sponsorship Decision Tool, calculated controversy-adjusted ROI with the Brand Risk Calculator, tested your comprehension, and then experienced the decision from the inside through the Phil Mickelson roleplay. Finally, you articulated your own position on sportswashing—distinguishing between advice for athletes vs. brands. Most importantly, you've wrestled with genuine ambiguity—there's no "right answer" to whether brands should sponsor LIV Golf.
 
 **Key Takeaways:**
 - Sportswashing is real but its effectiveness is debated (Saudi favorability +15% among sports fans)

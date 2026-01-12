@@ -326,7 +326,7 @@ All widgets use consistent structure:
 
 ### Week 4: Widgets (12-15 hours)
 
-- ☐ Embed all 8 Module 3 widgets (iFrames with URLs)
+- ☐ Embed all 8 Module 3 exercises (iFrames with URLs)
 - ☐ Test all widget embeds (keyboard, screen reader, mobile)
 - ☐ Build Revenue Empire Builder widget (Module 4) if not yet built
 - ☐ Embed Revenue Empire Builder widget
@@ -366,7 +366,7 @@ All widgets use consistent structure:
   - Text (readings, micro-readings)
   - Video (executive session, instructional videos)
   - Visual (tables, tiles, lists, images)
-  - Interactive (8 widgets in Module 3)
+  - Interactive (8 exercises in Module 3)
 - ☐ All images have descriptive alt text
 - ☐ Text is scalable (not embedded in images)
 - ☐ Color is not sole means of conveying information
@@ -377,7 +377,7 @@ All widgets use consistent structure:
   - Optional Details accordions (progressive disclosure)
   - Optional AI Chat support
   - Optional extension resources
-  - Optional Phase 3 widgets (Streaming Wars, Betting Timeline)
+  - Optional Phase 3 exercises (Streaming Wars, Betting Timeline)
 - ☐ Real-world relevance clear (executive practitioner, authentic case, investment scenario)
 - ☐ Learning objectives visible at module start
 - ☐ Variety in activity types (read, watch, interact, analyze, write)
@@ -427,7 +427,7 @@ Verify that every element serves the WLOs:
 | ------------------------------------------------------ | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **WLO 1.1:** Map major revenue streams                 | Knowledge         | • Module 1: Tiles (4 revenue categories)<br>• Module 3: Text intro, Vertical List (5 streams), Video overview<br>• Module 3: Revenue Mix Slider widget<br>• Module 2: Executive session | Text Response (must reference 3+ streams)                    |
 | **WLO 1.2:** Understand sport's unique business model  | Comprehension     | • Module 1: Text intro<br>• Module 2: Executive session video<br>• Module 3: All text sections explaining each stream<br>• Module 3: Infoboxes (Appointment Viewing, Premium Seat Economics)<br>• Module 3: Table (Streaming vs Traditional) | Text Response (explain unique characteristics)               |
-| **WLO 1.3:** Debate vulnerabilities & growth potential | Analysis          | • Module 3: Vertical List (risks listed for each stream)<br>• Module 3: Dynamic Pricing Simulator widget<br>• Module 3: Stadium Revenue Optimizer widget<br>• Module 3: Sponsorship ROI Calculator widget<br>• Module 4: Revenue Empire Builder activity<br>• Module 4: Reflection prompt | Text Response (identify investment factors based on analysis) |
+| **WLO 1.3:** Debate vulnerabilities & growth potential | Analysis          | • Module 3: Vertical List (risks listed for each stream)<br>• Module 3: Dynamic Pricing Simulator widget<br>• Module 3: Stadium Revenue Optimizer widget<br>• Module 3: Sponsorship ROI Calculator exercise<br>• Module 4: Revenue Empire Builder activity<br>• Module 4: Reflection prompt | Text Response (identify investment factors based on analysis) |
 | **WLO 1.4:** Analyze revenue sharing models            | Analysis          | • Module 5: Canucks case narrative<br>• Module 5: Table (NHL revenue sharing model)<br>• Module 5: Details (case exhibits A, B, C)<br>• Module 5: Image (revenue flow diagram) | Text Response (apply to investment decision)                 |
 
 **Alignment Check:** ✅ All WLOs supported by multiple elements and measured by comprehensive assessment
@@ -450,9 +450,9 @@ Verify that every element serves the WLOs:
 - **Tables:** 2 (Streaming vs Traditional, NHL revenue sharing)
 - **Details:** 10+ accordions
 - **iFrame Widgets:** 9 total (8 in Module 3, 1 in Module 4)
-  - ✅ Phase 1 complete: 3 widgets
-  - ✅ Phase 2 complete: 3 widgets
-  - ✅ Phase 3 complete: 2 widgets
+  - ✅ Phase 1 complete: 3 exercises
+  - ✅ Phase 2 complete: 3 exercises
+  - ✅ Phase 3 complete: 2 exercises
   - ✅ Module 4: 1 widget built
 - **AI Chat Widgets:** 3
 - **Text Response:** 1 (with comprehensive rubric)

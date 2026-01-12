@@ -756,7 +756,7 @@ Final infobox mirrors opening structure (consistency aids retention). Message: Y
 - Module 7: Assessment ✅
 - **Module 8: Wrap-Up & Synthesis ✅ (THIS FILE)**
 
-**Next Steps:** Build remaining interactive widgets for Week 5 and implement Week 3-4 storyboards using this same framework.
+**Next Steps:** Build remaining interactive exercises for Week 5 and implement Week 3-4 storyboards using this same framework.
 
 ---
 

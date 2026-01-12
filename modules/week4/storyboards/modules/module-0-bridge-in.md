@@ -485,7 +485,7 @@ Let's see what you've got! ↓
 ```markdown
 Title: What Your Pre-Assessment Results Mean
 
-Your quiz results create a personalized learning path for this week. Lower scores (0-6/10) suggest spending extra time with Module 3's core content on athlete revenue streams and the Athlete Brand Calculator widget—you're building fresh foundations. Higher scores (7-10/10) indicate solid baseline knowledge, so challenge yourself with the Serena Williams case analysis and the Emerging Sports Investment Tool. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's build those athlete brand strategies.
+Your quiz results create a personalized learning path for this week. Lower scores (0-6/10) suggest spending extra time with Module 3's core content on athlete revenue streams and the Athlete Brand Calculator exercise—you're building fresh foundations. Higher scores (7-10/10) indicate solid baseline knowledge, so challenge yourself with the Serena Williams case analysis and the Emerging Sports Investment Tool. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's build those athlete brand strategies.
 ```
 
 **Word count:** 90 words ✓

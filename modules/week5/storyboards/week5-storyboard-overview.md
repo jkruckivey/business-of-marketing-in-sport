@@ -240,7 +240,7 @@ Students recommend 1 of 3 paths:
 - ☐ Build Quick Start: The Heritage Dilemma with AI Roleplay diagnostic
 - ☐ Build Your Week 5 Journey
 - ☐ Build Voices from Heritage Properties
-- ☐ Build Tradition Meets Innovation with 3 widgets embedded
+- ☐ Build Tradition Meets Innovation with 3 exercises embedded
 - ☐ Build Transform the Hall of Fame
 - ☐ Build The HHOF Challenge with HHOF case attachment
 - ☐ Build Your Strategic Vision with strategic vision memo submission

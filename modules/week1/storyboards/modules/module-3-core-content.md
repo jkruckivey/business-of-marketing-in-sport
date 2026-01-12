@@ -14,7 +14,7 @@
 **Content Summary:**
 - **Total text:** ~1,000 words broken into 9 micro-readings (100-120 words each, ~1 minute each)
 - **Total video:** 4 minutes (2 videos - one at start, one at midpoint for mental break)
-- **Interactive widgets:** 8 widgets, ~25 minutes total hands-on engagement
+- **Interactive exercises:** 8 exercises, ~25 minutes total hands-on engagement
 - **Visual elements:** 3 images, 1 table, 3 infoboxes, 1 vertical list, 1 tiles, 1 details accordion
 - **Total time:** ~35 minutes (higher than V2, but **75% ACTIVE engagement**)
 
@@ -1019,7 +1019,7 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 - ✅ Alternative text descriptions for visual animations
 - ✅ Color-coded by effect type (red = cost, yellow = direct, green = indirect)
 
-**Pedagogical Note:** This is the **synthesis widget** that ties the entire module together. Students should have completed Elements 1-28 before encountering this, so they can see how all concepts (media rights, ticketing, sponsorship, merchandising, betting) interconnect in real strategic decisions.
+**Pedagogical Note:** This is the **synthesis exercise** that ties the entire module together. Students should have completed Elements 1-28 before encountering this, so they can see how all concepts (media rights, ticketing, sponsorship, merchandising, betting) interconnect in real strategic decisions.
 
 #### Element 30: Image - Revenue Ecosystem Diagram
 - **File:** `revenue-ecosystem-diagram.png`
@@ -1040,20 +1040,20 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 **V3 Interactive-First Improvements:**
 - ✅ **Text reduced 62%**: 2,650 words → 1,000 words
 - ✅ **No text block exceeds 1 minute** (100-120 words max)
-- ✅ **Interactive widget every 2-3 elements** (8 total widgets)
+- ✅ **Interactive exercise every 2-3 elements** (8 total exercises)
 - ✅ **Active engagement increased 3x**: From 25% to 75%
 - ✅ **"Show, Don't Tell"**: Students discover concepts through manipulation
-- ✅ **Phase 1 widgets built**: Revenue Mix Slider, Dynamic Pricing Simulator, Ecosystem Cascade Simulator (fully accessible, ready to embed)
+- ✅ **Phase 1 exercises built**: Revenue Mix Slider, Dynamic Pricing Simulator, Ecosystem Cascade Simulator (fully accessible, ready to embed)
 
 **Student Experience:**
-1. Read brief intro (1 min) → Watch overview video (2 min) → Scan list (1 min) → **BUILD PORTFOLIO** (3 min widget)
-2. Read media intro (1 min) → **CALCULATE DEAL VALUE** (4 min widget) → Read insight → View timeline
-3. Read streaming text (1 min) → View table → **MAKE STRATEGIC CHOICE** (5 min widget)
-4. Read ticketing intro (1 min) → **OPTIMIZE PRICING** (5 min widget) → View diagram → Read premium strategy
-5. Read premium text (1 min) → **DESIGN STADIUM** (4 min widget) → Read insight
-6. **WATCH VIDEO BREAK** (2 min) → Read sponsorship (1 min) → **CALCULATE ROI** (4 min widget)
+1. Read brief intro (1 min) → Watch overview video (2 min) → Scan list (1 min) → **BUILD PORTFOLIO** (3 min exercise)
+2. Read media intro (1 min) → **CALCULATE DEAL VALUE** (4 min exercise) → Read insight → View timeline
+3. Read streaming text (1 min) → View table → **MAKE STRATEGIC CHOICE** (5 min exercise)
+4. Read ticketing intro (1 min) → **OPTIMIZE PRICING** (5 min exercise) → View diagram → Read premium strategy
+5. Read premium text (1 min) → **DESIGN STADIUM** (4 min exercise) → Read insight
+6. **WATCH VIDEO BREAK** (2 min) → Read sponsorship (1 min) → **CALCULATE ROI** (4 min exercise)
 7. Read merchandising (1 min) → View tiles → Read betting (1 min) → View stats
-8. Read ecosystem text (1 min) → **SIMULATE CASCADE** (5 min widget) → View diagram
+8. Read ecosystem text (1 min) → **SIMULATE CASCADE** (5 min exercise) → View diagram
 
 **Total Time:** ~35 minutes
 **Active Engagement:** 25 minutes (75%)

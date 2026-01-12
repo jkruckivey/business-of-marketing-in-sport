@@ -243,7 +243,7 @@ NARRATOR: "That's it. Total time from blank page to finished draft: about 45 min
 **Widget Status:** 📝 Specification complete, awaiting development
 
 **Widget Specifications:**
-- **Type:** HTML/JavaScript interactive widget
+- **Type:** HTML/JavaScript interactive exercise
 - **Accessibility:** WCAG 2.2 AA compliant, keyboard navigable, screen reader compatible
 - **Export:** None (viewing only)
 

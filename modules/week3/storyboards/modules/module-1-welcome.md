@@ -11,10 +11,9 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Week 2→3 transition narrative | Type directly | Connects media rights to sponsorship/betting |
 | 2 | **Infobox (Learning Objectives)** ⬤ Required | 4 WLOs with Bloom's levels | Type directly | Purple variant, clear outcomes |
-| 3 | **Video** ⬤ Required | Executive intro - Andrew Sneyd (FanDuel) | Upload MP4 | 2-minute industry context |
-| 4 | **Video** ⬤ Required | Executive intro - Brand Sponsor Leader | Upload MP4 | 2-minute corporate perspective |
-| 5 | **AI Chat Widget** ⬤ Required | Diagnostic pre-assessment (3 questions) | Configure in Uplimit | Conversational baseline assessment |
-| 6 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-week.html` | Shows how week outcomes connect to course goals |
+| 3 | **Video** ⬤ Required | Executive intro - Brand Sponsor Leader | Upload MP4 | 2-minute corporate perspective |
+| 4 | **AI Chat Widget** ⬤ Required | Diagnostic pre-assessment (3 questions) | Configure in Uplimit | Conversational baseline assessment |
+| 5 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-week.html` | Shows how week outcomes connect to course goals |
 
 ---
 
@@ -37,7 +36,7 @@ This week you'll develop **Milestone 3** of your CFL Expansion Project: a compre
 - Tiered sponsorship structure with pricing
 - Activation strategy for sponsors
 - Sports betting integration (provincial regulations, partnerships)
-- Apply Andrew Sneyd's insights from the FanDuel executive session
+- Apply insights from the FanDuel executive session (Module 1.5)
 
 📋 **Full Project Details:** See [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
 
@@ -81,69 +80,7 @@ Build a 1-page activation plan with ROI projections using real brand and propert
 
 ---
 
-## Element 3: Executive Video 1 - Andrew (FanDuel CMO)
-
-> ⚠️ **PLACEHOLDER CONTENT - TRANSCRIPT REQUIRED**
->
-> The interview video exists (`Interviews/Andrew, FanDuel CMO.mp4`) but no transcript has been created yet. The content descriptions below are **estimated/placeholder** based on expected topics from a FanDuel CMO. Once the transcript is available, update this section with:
-> - Actual topics discussed and timestamps
-> - Verified key points and insights
-> - Accurate viewing guide aligned to real content
->
-> **Action Required:** Create `Interviews/Andrew, FanDuel CMO, Transcript.txt`
-
-**Video Specifications:**
-- **File:** `Interviews/Andrew, FanDuel CMO.mp4`
-- **Duration:** ~35-40 minutes (estimated - full interview)
-- **Speaker:** Andrew, Chief Marketing Officer, FanDuel
-- **Topic:** TBD - update once transcript reviewed
-- **Key Points:** TBD - update once transcript reviewed
-- **Accessibility:** ❌ Captions required (transcript needed first)
-
-**Video Status:** ⚠️ Interview recorded, **AWAITING TRANSCRIPT** before storyboard can be finalized
-
-**Note (PLACEHOLDER):** The content below is estimated based on what a FanDuel CMO interview would likely cover. Verify against actual transcript when available:
-- How FanDuel calculates partnership ROI vs. paid marketing CAC
-- The evolution from daily fantasy sports (DFS) to sports betting
-- State-by-state regulatory challenges and market entry strategies
-- Why betting operators became top 10 sports sponsors
-- Integration strategies (broadcast, mobile apps, in-stadium experiences)
-- Fan engagement metrics (watch time increase, app engagement, betting frequency)
-
-**Embed Code:**
-```html
-<iframe
-  src="[Uplimit video URL - Interviews/Andrew, FanDuel CMO.mp4]"
-  width="100%"
-  height="700"
-  style="border: none; border-radius: 8px;"
-  title="Andrew - FanDuel CMO Interview on Sports Betting and Marketing Strategy"
-  aria-label="Video interview with Andrew, FanDuel Chief Marketing Officer, discussing sports betting industry transformation, partnership economics, customer acquisition strategy, and competitive dynamics"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Interview Overview (PLACEHOLDER - UPDATE WHEN TRANSCRIPT AVAILABLE):**
-
-> ⚠️ The topics below are **estimated**. Update with actual content once transcript is created.
-
-This full-length interview with FanDuel's CMO likely covers:
-
-1. **FanDuel's Market Position & Growth** - TBD from transcript
-2. **Partnership Economics** - TBD from transcript
-3. **Fan Engagement Impact** - TBD from transcript
-4. **Marketing Strategy** - TBD from transcript
-5. **Regulatory Landscape** - TBD from transcript
-6. **Integration Tactics** - TBD from transcript
-7. **Future Outlook** - TBD from transcript
-
-**Viewing Guide for Students (PLACEHOLDER):**
-Watch this interview BEFORE Module 2 (Sponsorship Framework). Update viewing guide once transcript confirms actual topics covered.
-
----
-
-## Element 4: Executive Video 2 - Brand Sponsor Leader
+## Element 3: Executive Video - Brand Sponsor Leader
 
 **Video Specifications:**
 - **Length:** 2 minutes
@@ -188,7 +125,7 @@ Watch this interview BEFORE Module 2 (Sponsorship Framework). Update viewing gui
 
 ---
 
-## Element 5: AI Chat Widget - Week 3 Diagnostic Pre-Assessment
+## Element 4: AI Chat Widget - Week 3 Diagnostic Pre-Assessment
 
 **Element Type:** AI Chat Widget
 
@@ -296,7 +233,7 @@ Ready? Let's chat!
 ---
 
 
-### Element 6: Learning Outcomes Widget
+### Element 5: Learning Outcomes Widget
 
 **Widget Purpose:** Interactive visualization showing how Week 3's learning outcomes connect to course-level goals
 
@@ -312,7 +249,7 @@ Ready? Let's chat!
   height="600"
   style="border: none; border-radius: 8px;"
   title="Week 3 Learning Outcomes"
-  aria-label="Interactive widget showing Week 3 learning outcomes and their connection to course goals"
+  aria-label="Interactive exercise showing Week 3 learning outcomes and their connection to course goals"
   allowfullscreen
   loading="lazy">
 </iframe>
@@ -337,14 +274,14 @@ You've connected Week 2's media rights focus to Week 3's sponsorship and betting
 - Betting partnerships offer attribution advantages (first-party data, conversion tracking)
 
 **Up Next: Module 2 - Sponsorship Framework**
-Now that you understand why sponsorship matters, let's build the framework: how do brands evaluate partnership opportunities, calculate ROI, and design activations that deliver measurable value? You'll use interactive widgets to model real sponsorship deals and practice the ROI calculations brands use daily.
+Now that you understand why sponsorship matters, let's build the framework: how do brands evaluate partnership opportunities, calculate ROI, and design activations that deliver measurable value? You'll use interactive exercises to model real sponsorship deals and practice the ROI calculations brands use daily.
 
 Ready to calculate ROI like a brand strategist? Let's build the framework!
 
 
 # WIDGET DEVELOPMENT PRIORITY PLAN
 
-**Total Widgets Specified:** 10 widgets across Modules 2-5
+**Total Widgets Specified:** 10 exercises across Modules 2-5
 **Total Development Time:** 80-100 hours
 **Launch Timeline:** Week 3 must be ready by [Date]
 
@@ -352,27 +289,27 @@ Ready to calculate ROI like a brand strategist? Let's build the framework!
 
 ## Phase 1: MUST-HAVE for Week 3 Launch (30-35 hours)
 
-These 4 widgets are **essential** for core learning outcomes. Without these, students cannot complete the graded activation plan assignment.
+These 4 exercises are **essential** for core learning outcomes. Without these, students cannot complete the graded activation plan assignment.
 
-### Widget 1: Sponsorship Valuation Calculator (Module 2, Element 3)
+### Exercise 1: Sponsorship Valuation Calculator (Module 2, Element 3)
 - **Learning Objective:** WLO 3.3 (Calculate ROI)
 - **Why Essential:** Teaches CPM calculations required for activation plan ROI projections
 - **Development Time:** 6-8 hours
 - **Fallback if incomplete:** Provide Excel template with CPM formulas (manual calculation)
 
-### Widget 2: Activation Budget Builder (Module 2, Element 5)
+### Exercise 2: Activation Budget Builder (Module 2, Element 5)
 - **Learning Objective:** WLO 3.4 (Design activations)
 - **Why Essential:** Students practice budget allocation before creating their activation plan
 - **Development Time:** 8-10 hours
 - **Fallback if incomplete:** Provide Google Sheets template with validation formulas
 
-### Widget 3: ROI Calculator (Module 2, Element 8)
+### Exercise 3: ROI Calculator (Module 2, Element 8)
 - **Learning Objective:** WLO 3.3 (Calculate ROI)
 - **Why Essential:** Models the reach-engagement-conversion funnel required for assignment
 - **Development Time:** 10-12 hours
 - **Fallback if incomplete:** Provide worked examples + discussion questions instead of interactive tool
 
-### Widget 4: Activation Plan Template Builder (Module 5, Element 3)
+### Exercise 4: Activation Plan Template Builder (Module 5, Element 3)
 - **Learning Objective:** WLO 3.4 (Design activations)
 - **Why Essential:** Scaffolds the graded 40-point assignment structure
 - **Development Time:** 6-8 hours
@@ -384,21 +321,21 @@ These 4 widgets are **essential** for core learning outcomes. Without these, stu
 
 ## Phase 2: HIGH-VALUE (25-30 hours)
 
-These 3 widgets significantly enhance understanding but aren't strictly required for assignment completion.
+These 3 exercises significantly enhance understanding but aren't strictly required for assignment completion.
 
-### Widget 5: Betting Market Simulator (Module 3, Element 3)
+### Exercise 5: Betting Market Simulator (Module 3, Element 3)
 - **Learning Objective:** WLO 3.2 (Analyze betting economics)
 - **Why High-Value:** Makes betting market dynamics concrete through scenario modeling
 - **Development Time:** 8-10 hours
 - **Fallback if incomplete:** Replace with video case study examples
 
-### Widget 6: Engagement Multiplier Calculator (Module 3, Element 5)
+### Exercise 6: Engagement Multiplier Calculator (Module 3, Element 5)
 - **Learning Objective:** WLO 3.2 (Analyze betting impact)
 - **Why High-Value:** Quantifies "bettors watch 40% more" insight central to week's thesis
 - **Development Time:** 6-8 hours
 - **Fallback if incomplete:** Provide static infographic with benchmark data
 
-### Widget 7: FanDuel Competitive Analysis Tool (Module 4, Element 4)
+### Exercise 7: FanDuel Competitive Analysis Tool (Module 4, Element 4)
 - **Learning Objective:** WLO 3.2 (Analyze case study)
 - **Why High-Value:** Structures case analysis with interactive comparison framework
 - **Development Time:** 10-12 hours
@@ -410,21 +347,21 @@ These 3 widgets significantly enhance understanding but aren't strictly required
 
 ## Phase 3: NICE-TO-HAVE (20-25 hours)
 
-These 3 widgets reinforce learning but can be omitted without affecting core outcomes.
+These 3 exercises reinforce learning but can be omitted without affecting core outcomes.
 
-### Widget 8: Partnership Valuation Tool (Module 3, Element 8)
+### Exercise 8: Partnership Valuation Tool (Module 3, Element 8)
 - **Learning Objective:** WLO 3.1 (Sponsorship fundamentals)
 - **Why Nice-to-Have:** Reinforces Module 2 concepts in betting context
 - **Development Time:** 6-8 hours
-- **Fallback if incomplete:** Omit entirely (Module 2 widgets cover this skill)
+- **Fallback if incomplete:** Omit entirely (Module 2 exercises cover this skill)
 
-### Widget 9: Customer Acquisition Economics Calculator (Module 4, Element 7)
+### Exercise 9: Customer Acquisition Economics Calculator (Module 4, Element 7)
 - **Learning Objective:** WLO 3.2 (Advanced case analysis)
 - **Why Nice-to-Have:** Advanced case analysis for high-performing students
 - **Development Time:** 8-10 hours
 - **Fallback if incomplete:** Provide optional reading on CAC/LTV instead
 
-### Widget 10: Activation Campaign Simulator (Module 5, Element 4)
+### Exercise 10: Activation Campaign Simulator (Module 5, Element 4)
 - **Learning Objective:** WLO 3.4 (Test activation scenarios)
 - **Why Nice-to-Have:** Allows "what-if" testing before finalizing activation plan
 - **Development Time:** 6-8 hours
@@ -436,14 +373,14 @@ These 3 widgets reinforce learning but can be omitted without affecting core out
 
 ## Development Timeline Recommendation
 
-**Week 1-2:** Build Phase 1 widgets (30-38 hours) - CRITICAL PATH
-**Week 3-4:** Build Phase 2 widgets (24-30 hours) - HIGH PRIORITY
-**Week 5+:** Build Phase 3 widgets IF time permits (20-26 hours) - OPTIONAL
+**Week 1-2:** Build Phase 1 exercises (30-38 hours) - CRITICAL PATH
+**Week 3-4:** Build Phase 2 exercises (24-30 hours) - HIGH PRIORITY
+**Week 5+:** Build Phase 3 exercises IF time permits (20-26 hours) - OPTIONAL
 
 **Launch Decision Point (2 weeks before Week 3):**
-- ✅ All 4 Phase 1 widgets complete → Launch with full interactive experience
-- ◐ 3/4 Phase 1 widgets complete → Launch with fallback for incomplete widget
-- ❌ <3 Phase 1 widgets complete → Delay Week 3 launch OR use all fallbacks (static templates)
+- ✅ All 4 Phase 1 exercises complete → Launch with full interactive experience
+- ◐ 3/4 Phase 1 exercises complete → Launch with fallback for incomplete widget
+- ❌ <3 Phase 1 exercises complete → Delay Week 3 launch OR use all fallbacks (static templates)
 
 ---
 
@@ -463,10 +400,10 @@ Before marking any widget "complete," verify:
 
 ## Instructor Communication
 
-**If Phase 1 widgets aren't ready 2 weeks before Week 3:**
+**If Phase 1 exercises aren't ready 2 weeks before Week 3:**
 
 Email to students:
-> "Week 3's sponsorship activation plan assignment will use a mix of interactive widgets (where ready) and Excel/Google Sheets templates (where widgets are still in development). Both approaches teach the same ROI calculation skills—widgets are more engaging, but templates are equally rigorous. We'll update you on widget availability status [Date]."
+> "Week 3's sponsorship activation plan assignment will use a mix of interactive exercises (where ready) and Excel/Google Sheets templates (where widgets are still in development). Both approaches teach the same ROI calculation skills—widgets are more engaging, but templates are equally rigorous. We'll update you on widget availability status [Date]."
 
 **This transparency maintains student trust while managing development risk.**
 

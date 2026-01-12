@@ -447,7 +447,7 @@ Professional sports teams operate with a business model that defies conventional
 
 ### QUIZ CONTENT REFERENCE (10 Questions)
 
-The widget includes these questions (full content embedded in HTML file):
+The exercise includes these questions (full content embedded in HTML file):
 
 ---
 
@@ -654,7 +654,7 @@ Correct matches! Understanding these constraints is crucial for strategy:
 
 Strategic insight: Diversify across streams with different constraint types to build resilient portfolios.
 
-**Note:** Full quiz content, feedback, and scoring logic are embedded in `revenue-strategy-pre-assessment.html` widget.
+**Note:** Full quiz content, feedback, and scoring logic are embedded in the exercise.
 
 ---
 
@@ -716,7 +716,7 @@ Think about the math: Toronto's $200M local revenue far exceeds Arizona's $60M, 
 ```markdown
 Title: What Your Pre-Assessment Results Mean
 
-Your quiz results create a personalized learning path for this week. Lower scores (0-6/10) suggest spending extra time with Module 3's core content and all interactive widgets—you're starting fresh, which is perfect for building strong fundamentals. Higher scores (7-10/10) indicate solid baseline knowledge, so challenge yourself with the Predators case analysis and Revenue Empire Builder strategic simulation. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's solve those revenue problems.
+Your quiz results create a personalized learning path for this week. Lower scores (0-6/10) suggest spending extra time with Module 3's core content and all interactive exercises—you're starting fresh, which is perfect for building strong fundamentals. Higher scores (7-10/10) indicate solid baseline knowledge, so challenge yourself with the Predators case analysis and Revenue Empire Builder strategic simulation. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's solve those revenue problems.
 ```
 
 **Note:** If "Insight" variant isn't available, use the variant typically used for reflective content or guidance boxes in your Uplimit instance.

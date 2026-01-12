@@ -185,7 +185,7 @@ Before submitting, check that you have:
 |--------------|-----------|----------------|
 | **Strategic Justification** | 10 pts | Clear allocation with strong rationale; explains trade-offs between growth/stability; demonstrates sophisticated understanding of revenue stream characteristics; ecosystem thinking evident |
 | **Risk Management** | 10 pts | Identifies 2-3 specific risks per major stream; proposes concrete mitigation strategies; shows scenario planning; references simulation events that tested strategy |
-| **Simulation Engagement** | 5 pts | Recalls specific decisions, market events, and strategic pivots; demonstrates active learning from widget; uses simulation data (final revenue, risk score) as evidence |
+| **Simulation Engagement** | 5 pts | Recalls specific decisions, market events, and strategic pivots; demonstrates active learning from exercise; uses simulation data (final revenue, risk score) as evidence |
 | **Business Communication** | 5 pts | Professional memo format; clear, confident, data-driven writing; appropriate tone for executive audience; within word limit |
 
 **Total:** 30 points

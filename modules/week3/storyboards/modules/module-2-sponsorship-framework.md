@@ -107,7 +107,7 @@ You work for a brand considering a sports sponsorship. Your CMO asks: "How much 
 
 ## After the Widget
 
-Export your calculation and move to the next widget (Activation Budget Builder). You'll use your CPM calculation to design the activation strategy.
+Export your calculation and move to the next exercise (Activation Budget Builder). You'll use your CPM calculation to design the activation strategy.
 ```
 
 ---
@@ -213,7 +213,7 @@ For every $1 spent on rights fees (what you pay the team/league), brands spend *
 
 **Why?** Rights fees buy access. Activation extracts value. A logo on a jersey reaches millions, but without activation (ads connecting the logo to Nike's products, retail promotions converting awareness into sales), the partnership delivers brand awareness but not revenue.
 
-**Your Activation Plan (Week 3 assignment):** For a $5M rights fee sponsorship, budget $10-15M in activation across channels. We'll model this in the next widget.
+**Your Activation Plan (Week 3 assignment):** For a $5M rights fee sponsorship, budget $10-15M in activation across channels. We'll model this in the next exercise.
 ```
 
 ---
@@ -265,9 +265,9 @@ Export your activation budget. You'll use it in Module 5's strategy memo to make
 
 **Practice: WLO 3.4 (Design sponsorship activations that deliver measurable value)**
 
-Now that you've calculated your sponsorship's CPM value, it's time to design the activation strategy that will extract maximum ROI from your partnership. Remember the 1:2-3 rule: for every dollar spent on rights fees, brands invest $2-3 on activation to amplify the partnership. This widget puts you in the driver's seat as a Sponsorship Activation Manager allocating a multi-million dollar budget across strategic channels.
+Now that you've calculated your sponsorship's CPM value, it's time to design the activation strategy that will extract maximum ROI from your partnership. Remember the 1:2-3 rule: for every dollar spent on rights fees, brands invest $2-3 on activation to amplify the partnership. This exercise puts you in the driver's seat as a Sponsorship Activation Manager allocating a multi-million dollar budget across strategic channels.
 
-You'll apply the activation multiplier to calculate your total investment, then strategically distribute that budget across six key channels: advertising, hospitality, retail, digital content, experiential events, and measurement. The widget provides real-world benchmarks from mass market brands (Coca-Cola), premium brands (American Express), and digital-first brands (Red Bull) so you can see how your allocation compares to industry standards. Your goal: design a balanced mix that aligns with your brand category while maximizing impact across touchpoints.
+You'll apply the activation multiplier to calculate your total investment, then strategically distribute that budget across six key channels: advertising, hospitality, retail, digital content, experiential events, and measurement. The exercise provides real-world benchmarks from mass market brands (Coca-Cola), premium brands (American Express), and digital-first brands (Red Bull) so you can see how your allocation compares to industry standards. Your goal: design a balanced mix that aligns with your brand category while maximizing impact across touchpoints.
 
 **What you'll discover:**
 
@@ -603,12 +603,12 @@ Title: 📚 Core Readings: Sponsorship & ROI
 
 ## Required Reading
 
-These readings provide the industry frameworks you'll apply in this module's widgets:
+These exercises:
 
 • **PwC – "Sports Sponsorship Playbook" (The Evolution of Sponsorships / Data Innovation)**
   Why impressions aren't enough; how teams and brands use fan-level data, cloud, and IoT to prove ROI.
   https://www.pwc.com/us/en/industries/tmt/library/sports-sponsorships-playbook.html
-  *Read before using the ROI Calculator widget*
+  *Read before using the ROI Calculator exercise*
 
 • **PwC – "Sports Industry Outlook 2025" (Sponsorship Sections)**
   Sponsorship growth forecasts, the rise of new categories (betting, fintech), and how sponsors think about return.
@@ -631,8 +631,8 @@ Go deeper on data-driven sponsorship and personalization:
 
 ## Reading Strategy
 
-**Before widgets:** Read the Sponsorship Playbook to understand why ROI measurement is complex
-**After widgets:** Read AI/Data articles to see how the frameworks you practiced connect to emerging tech
+**Before exercises:** Read the Sponsorship Playbook to understand why ROI measurement is complex
+**After exercises:** Read AI/Data articles to see how the frameworks you practiced connect to emerging tech
 
 Total reading time: 25-30 minutes (required) + 20 minutes (recommended)
 ```
@@ -650,7 +650,7 @@ Total reading time: 25-30 minutes (required) + 20 minutes (recommended)
 **Completion Badge:** 🏆 Sponsorship Framework Mastered
 
 **What You've Accomplished:**
-You've learned how brands evaluate sponsorship opportunities using CPM calculations, designed activation budgets following the 1:2-3 rule, and modeled ROI through reach-engagement-conversion funnels. You've used three interactive widgets to practice industry-standard frameworks with real brand examples.
+You've learned how brands evaluate sponsorship opportunities using CPM calculations, designed activation budgets following the 1:2-3 rule, and modeled ROI through reach-engagement-conversion funnels. You've used three interactive exercises to practice industry-standard frameworks with real brand examples.
 
 **Key Takeaways:**
 - Sponsorship valuation uses CPM: rights fee / total impressions × 1,000 (premium sports achieve $500-1,500 CPM)

@@ -210,7 +210,7 @@ Ready to master these capabilities? Let's begin.
   height="600"
   style="border: none; border-radius: 8px;"
   title="Week 4 Learning Outcomes"
-  aria-label="Interactive widget showing Week 4 learning outcomes and their connection to course goals"
+  aria-label="Interactive exercise showing Week 4 learning outcomes and their connection to course goals"
   allowfullscreen
   loading="lazy">
 </iframe>

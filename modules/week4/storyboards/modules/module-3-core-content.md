@@ -1,7 +1,7 @@
 # MODULE 3: Core Content - Athlete Brand Frameworks (BOPPPS: Presentation)
 **Version:** 1.4.0 | **Last Updated:** 2025-12-05
 
-**Purpose:** Interactive discovery of athlete revenue streams and brand building strategies through widgets
+**Purpose:** Interactive discovery of athlete revenue streams and brand building strategies through exercises
 
 **Uplimit Structure:** Fourth module in Unit 4 (Week 4)
 
@@ -35,16 +35,16 @@
 
 You've seen the theory from practitioners. Now it's time to experiment hands-on.
 
-This module features two powerful interactive tools that let you discover athlete brand principles through manipulation and experimentation—not passive reading:
+This module features two powerful interactive exercises that let you discover athlete brand principles through manipulation and experimentation—not passive reading:
 
-### **Widget 1: Athlete Brand Calculator**
+### **Exercise 1: Athlete Brand Calculator**
 Build hypothetical athlete brand portfolios by allocating $50M across five revenue streams (endorsements, owned businesses, investments, media/content, licensing). See in real-time:
 - How different allocation strategies create different 20-year wealth outcomes
 - Why equity compounds while fees don't
 - The power of diversification vs. concentration
 - Compare your strategy to Serena Williams' actual portfolio
 
-### **Widget 2: Emerging Sports Investment Tool**
+### **Exercise 2: Emerging Sports Investment Tool**
 Evaluate investment opportunities in women's sports and emerging markets. Adjust variables (growth rate, risk premium, time horizon) and see:
 - Expected returns for NWSL, WNBA, women's soccer, pickleball investments
 - How valuation gaps create arbitrage opportunities
@@ -94,7 +94,7 @@ Athletes have five revenue streams: (1) Salary/bonuses, (2) Endorsements, (3) Ow
 **Uplimit Implementation:**
 1. Upload `week4-video1-athlete-revenue-streams.mp4`
 2. Add VTT caption file
-3. Place before Athlete Brand Calculator widget
+3. Place before Athlete Brand Calculator exercise
 
 ---
 
@@ -484,7 +484,7 @@ The math doesn't lie: Given sufficient time, equity always beats fees.
 ```
 You are a knowledgeable assistant helping MBA students understand athlete brand portfolios and emerging sports investments. Answer questions about:
 
-- The Athlete Brand Calculator widget (compounding, diversification, real athlete portfolios)
+- The Athlete Brand Calculator exercise (compounding, diversification, real athlete portfolios)
 - The Emerging Sports Investment Tool (IRR calculations, risk-adjusted returns, valuation gaps)
 - Why equity beats fees over long time horizons
 - How to apply these frameworks to their Anchor Project
@@ -535,7 +535,7 @@ Prize money vs. endorsements vs. equity returns; shows the "top 5% optimize stre
 These readings provide real data behind the frameworks you're experimenting with:
 - Serena Ventures fund structure → Apply to WLO 4.1 (revenue streams)
 - Unicorn investments → Evidence for WLO 4.2 (equity vs. fees)
-- Forbes earnings data → Benchmark for Athlete Brand Calculator widget
+- Forbes earnings data → Benchmark for Athlete Brand Calculator exercise
 ```
 
 ---

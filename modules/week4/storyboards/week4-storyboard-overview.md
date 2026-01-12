@@ -49,7 +49,7 @@ Analyze how elite athletes build strategic brands and assess emerging sports inv
 **Uplimit Structure:** Third module in Unit 4
 
 ### Module 3: Core Content - Athlete Brand Frameworks
-**Time:** 30-35 minutes (includes 3 videos + 2 widgets)
+**Time:** 30-35 minutes (includes 3 videos + 2 exercises)
 **Purpose:** Interactive discovery of athlete revenue streams and brand strategies
 **Videos:**
 - "The Five Revenue Streams of Athlete Wealth" (2 min)

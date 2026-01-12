@@ -383,7 +383,7 @@ A: No. Use only Week 4 content (modules, widgets, case study). Everything you ne
 **Q: How detailed should financial projections be?**
 A: Show your work, but don't over-complicate. Use realistic assumptions (growth rates, discount rates, exit multiples) based on Week 4 frameworks. Tables are helpful but not required.
 
-**Q: Can I use the widget results in my memo?**
+**Q: Can I use the exercise results in my memo?**
 A: Yes! Reference specific outputs from Athlete Brand Calculator or Emerging Sports Investment Tool to support your recommendations.
 
 **Q: What if my projections don't reach exactly $200M at age 50?**

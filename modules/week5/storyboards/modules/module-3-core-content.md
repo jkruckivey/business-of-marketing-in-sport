@@ -10,9 +10,9 @@
 **Content Summary:**
 - **Total text:** ~800 words broken into 3 micro-readings (200-300 words each, ~1-2 minutes each)
 - **Total video:** 6 minutes (3 × 2-min instructional videos)
-- **Interactive widgets:** 2 major widgets, ~33 minutes total hands-on engagement
+- **Interactive exercises:** 2 major exercises, ~33 minutes total hands-on engagement
 - **Visual elements:** 2 infoboxes, 2 text blocks, 1 details accordion, 1 AI chat widget (optional)
-- **Total time:** 61-73 minutes (approximately **70% ACTIVE engagement** through widgets)
+- **Total time:** 61-73 minutes (approximately **70% ACTIVE engagement** through exercises)
 
 **Content Priority Badges:**
 - ⬤ **Required** - Core content essential for learning outcomes and assessments
@@ -47,16 +47,16 @@ You've explored revenue streams, media rights, sponsorships, and athlete brandin
 
 **From Executive Insights to Frameworks:** In Module 2, you heard Jamie Dinsmore (Hockey Hall of Fame) and Keith Pelley (MLSE) describe the heritage vs innovation tension from their executive perspectives. Jamie emphasized the "authenticity constraint"—how curatorial veto power and donor expectations limit growth options. Keith contrasted this with franchise freedom, where heritage becomes a growth asset rather than a constraint. Now you'll learn the FRAMEWORKS both executives use to make these decisions systematically. The Legacy vs Innovation Matrix translates their intuition into a tool YOU can apply to any heritage property.
 
-This module features two powerful interactive tools that let you discover heritage monetization principles through experimentation—not passive reading:
+This module features two powerful interactive exercises that let you discover heritage monetization principles through experimentation—not passive reading:
 
-### **Widget 1: Legacy vs Innovation Matrix**
+### **Exercise 1: Legacy vs Innovation Matrix**
 Map 15 strategic initiatives across two dimensions—Tradition Preservation (low/high) and Revenue Growth (low/high)—creating four strategic quadrants. See in real-time:
 - How different portfolio allocations create different institutional outcomes
 - Why pure preservation leads to stagnation, pure innovation loses authenticity
 - The "sweet spot" strategies that balance heritage with growth
 - Compare your strategy to real properties: Hockey Hall of Fame, Olympics Legacy, FIFA Museum
 
-### **Widget 2: Future Trends Predictor**
+### **Exercise 2: Future Trends Predictor**
 Forecast how emerging trends (AI, VR/AR, new demographics, emerging sports) will transform sports business over 5 years. Adjust variables and see:
 - Which trends offer highest ROI across all 5 revenue streams (from Week 1)
 - How $50M investments in different trends create different strategic positions
@@ -109,7 +109,7 @@ Two paths: Preserve (accept declining attendance) or Transform (embrace digital,
 **Uplimit Implementation:**
 1. Upload `week5-video1-heritage-properties.mp4`
 2. Add VTT caption file
-3. Place before Legacy vs Innovation Matrix widget
+3. Place before Legacy vs Innovation Matrix exercise
 
 ---
 
@@ -302,7 +302,7 @@ The Masters: Core = azaleas, green jackets, limited commercials. Innovation = ap
 **Uplimit Implementation:**
 1. Upload `week5-video2-legacy-innovation.mp4`
 2. Add VTT caption file
-3. Place before Future Trends Predictor widget
+3. Place before Future Trends Predictor exercise
 
 ---
 
@@ -733,8 +733,8 @@ Your Strategic Vision Memo must make this trade-off explicit and justify it base
 
 You are a knowledgeable assistant helping MBA students understand heritage sports properties and future trends in sports business. Answer questions about:
 
-- The Legacy vs Innovation Matrix widget (strategic trade-offs, quadrant positioning, portfolio balance)
-- The Future Trends Predictor widget (trend forecasting, investment allocation, scenario analysis)
+- The Legacy vs Innovation Matrix exercise (strategic trade-offs, quadrant positioning, portfolio balance)
+- The Future Trends Predictor exercise (trend forecasting, investment allocation, scenario analysis)
 - Heritage property business models (museums, halls of fame, Olympic legacies)
 - How to balance tradition preservation with revenue growth
 - How emerging trends (AI, VR/AR, women's sports, Web3, etc.) will impact the 5 revenue streams from Week 1

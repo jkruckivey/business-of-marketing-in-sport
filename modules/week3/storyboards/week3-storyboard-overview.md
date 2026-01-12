@@ -49,13 +49,13 @@ Calculate sponsorship ROI and assess sports betting's role as a growth engine in
 **Uplimit Structure:** After Welcome, before Sponsorship Playbook
 
 ### Module 2: The Sponsorship Playbook
-**Time:** 25-30 minutes (includes 2 videos + 3 widgets)
+**Time:** 25-30 minutes (includes 2 videos + 3 exercises)
 **Purpose:** Understand sponsorship ROI fundamentals, build activation framework
 **Videos:** "Why Brands Pay: The Sponsorship Value Proposition" (2 min)
 **Uplimit Structure:** Third module in Unit 3
 
 ### Module 3: Betting on Growth
-**Time:** 20-25 minutes (includes video + 3 widgets)
+**Time:** 20-25 minutes (includes video + 3 exercises)
 **Purpose:** Analyze betting as growth driver, understand regulatory landscape, fan engagement impact
 **Videos:** "Sports Betting Regulatory Landscape" (2 min)
 **Uplimit Structure:** Fourth module in Unit 3

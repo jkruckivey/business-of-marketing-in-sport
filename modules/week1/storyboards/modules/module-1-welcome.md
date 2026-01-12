@@ -39,7 +39,7 @@
   height="520"
   style="border: none; border-radius: 8px;"
   title="CFL League Expansion Project Overview"
-  aria-label="Interactive widget showing course project milestones across 5 weeks with Week 1 highlighted"
+  aria-label="Interactive exercise showing course project milestones across 5 weeks with Week 1 highlighted"
   allowfullscreen
   loading="lazy">
 </iframe>
@@ -53,7 +53,7 @@
 - WCAG 2.2 AA compliant with keyboard navigation
 
 **Design Notes:**
-- Uses toned-down neutral color palette matching other course widgets
+- Uses toned-down neutral color palette matching other course exercises
 - Sage green accent (`#6b9085`) for project elements
 - Replaces markdown table that renders poorly in Uplimit
 
@@ -147,7 +147,7 @@ Create 5 tiles:
   height="600"
   style="border: none; border-radius: 8px;"
   title="Week 1 Learning Outcomes"
-  aria-label="Interactive widget showing Week 1 learning outcomes and their connection to course goals"
+  aria-label="Interactive exercise showing Week 1 learning outcomes and their connection to course goals"
   allowfullscreen
   loading="lazy">
 </iframe>

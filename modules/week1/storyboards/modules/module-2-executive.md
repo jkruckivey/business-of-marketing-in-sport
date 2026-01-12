@@ -416,14 +416,14 @@ These transcripts are provided for accessibility and for students who prefer rea
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
 **You've completed:** Welcome, learning objectives, concept videos, and two executive interviews (~54 minutes of video content)
-**Coming next:** Interactive revenue streams exploration (8 hands-on widgets, ~35 minutes)
+**Coming next:** Interactive revenue streams exploration (8 hands-on exercises, ~35 minutes)
 
 **Take a moment to:**
 - Stand up and stretch for 30 seconds
 - Get water or a quick snack
 - Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
 
-**Progress:** You're 30% through Week 1 content! You've learned the theory AND heard from two executives—Kevin Abrams on how the NY Giants manage their $10B operation, and Stewart Johnston on how the CFL drives league-level revenue and balances heritage with innovation. Next up is the most interactive module—you'll manipulate revenue models, test pricing strategies, and explore ecosystem dynamics through hands-on widgets.
+**Progress:** You're 30% through Week 1 content! You've learned the theory AND heard from two executives—Kevin Abrams on how the NY Giants manage their $10B operation, and Stewart Johnston on how the CFL drives league-level revenue and balances heritage with innovation. Next up is the most interactive module—you'll manipulate revenue models, test pricing strategies, and explore ecosystem dynamics through hands-on exercises.
 
 *This break is optional but recommended. Return when you're ready to dive into interactive discovery.*
 

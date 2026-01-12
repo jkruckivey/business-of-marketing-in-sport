@@ -1,5 +1,10 @@
 # MODULE 7: Wrap-Up, Preview & Anchor Project Milestone 3
-**Version:** 1.0.0 | **Last Updated:** 2026-01-12
+**Version:** 1.1.0 | **Last Updated:** 2026-01-12
+
+### Version 1.1.0 Changes
+- **FIXED:** Removed "select your city" language—students already chose in Milestone 1
+- **ADDED:** Instructions to reference Milestone 1-2 work for sponsor targeting
+- **REMOVED:** PAIRR reference (removed from Module 6)
 
 **Purpose:** Consolidate Week 3 learning, complete CFL Expansion Milestone 3, preview Week 4
 
@@ -11,7 +16,7 @@
 | 2 | **⚙ iFrame** ◐ Recommended | Learning Outcomes Interactive | Embed widget | WLO-CLO mapping for Week 3 |
 | 3 | **▬ Text** ⬤ Required | Anchor Project Milestone 3 Introduction | Type directly | CFL Expansion sponsorship strategy |
 | 4 | **Infobox (Assessment)** ⬤ Required | Milestone 3 Brief | Type directly | Purple variant, 25 points |
-| 5 | **Details** ⬤ Required | Milestone 3 Full Instructions | Type directly | CFL City Selector sponsorship module |
+| 5 | **Details** ⬤ Required | Milestone 3 Full Instructions | Type directly | Build on Milestones 1-2 work |
 | 6 | **Text Response** ⬤ Required | Milestone 3 Submission | Configure in Uplimit | File upload, 25 points |
 | 7 | **▬ Text** ⬤ Required | Week 4 Preview | Type directly | Athletes, brands, emerging sports |
 | 8 | **Details** ○ Optional | Optional Extension Resources | Type directly | Additional readings accordion |
@@ -64,7 +69,7 @@ You've completed the most analytically rigorous week of this course. Let's conso
 **Embed:**
 ```html
 <iframe
-  src="modules/week3/widgets/learning-outcomes-week3.html"
+  src="modules/week3/widgets/learning-outcomes-week.html"
   width="100%"
   height="400"
   style="border: none; border-radius: 8px;"
@@ -95,13 +100,13 @@ WLO 3.5: Evaluate ethical considerations → CLO 5: Assess stakeholder impacts
 ```markdown
 ## CFL Expansion Project: Milestone 3 - Sponsorship & Partnership Strategy
 
-Your CFL expansion city needs sponsors. In Milestone 1, you analyzed market feasibility. In Milestone 2, you designed media and fan engagement strategy. Now you'll build the sponsorship portfolio.
+Your CFL expansion city needs sponsors. In Milestone 1, you analyzed market feasibility. In Milestone 2, you designed media and fan engagement strategy. Now you'll build the sponsorship portfolio for **your chosen city**.
 
 **Your Challenge:** Design a sponsorship strategy for your CFL expansion team that:
-1. Identifies 3-5 target sponsor categories (with specific brand examples)
+1. Identifies 3-5 target sponsor categories (with specific brand examples relevant to YOUR market)
 2. Calculates expected sponsorship revenue using CPM benchmarks
 3. Addresses at least one sponsorship decision with ethical complexity
-4. Connects sponsor strategy to your city's unique market characteristics
+4. Connects sponsor strategy to your city's unique market characteristics from Milestones 1-2
 
 **Why This Matters:** Sponsorship accounts for 15-25% of professional sports revenue. Your expansion team needs sponsors to survive financially—but the WRONG sponsors can damage brand equity before you've built it.
 
@@ -111,7 +116,7 @@ Your CFL expansion city needs sponsors. In Milestone 1, you analyzed market feas
 - Consider engagement multipliers if pursuing betting partnerships
 - Use the ethical decision framework if any sponsor categories raise concerns
 
-**Submission:** Use the CFL City Selector tool to generate your Milestone 3 template, complete the sponsorship strategy, and submit below.
+**Building on Your Prior Work:** Reference your Milestone 1 market analysis (demographics, income levels, sports culture) and Milestone 2 media strategy (broadcast reach, digital audience) to inform sponsor targeting and valuation.
 ```
 
 ---
@@ -149,12 +154,21 @@ Title: CFL Expansion Milestone 3: Full Instructions
 
 [Expand for detailed requirements]
 
-## Step 1: Open Your CFL City Selector Tool
+## Step 1: Review Your Prior Milestone Work
 
-Navigate to the CFL City Selector widget and select your expansion city. The tool will generate:
-- Market demographics relevant to sponsors (population, income, sports affinity)
-- Local brand landscape (major employers, regional brands, competitive sponsors)
-- Sponsorship asset inventory (stadium naming, jersey, in-stadium, digital)
+You already chose your CFL expansion city in Milestone 1. For Milestone 3, pull forward:
+
+**From Milestone 1 (Market Feasibility):**
+- Market demographics (population, income, sports affinity)
+- Local brand landscape (major employers, regional brands)
+- Competitive sports environment
+
+**From Milestone 2 (Media Strategy):**
+- Projected broadcast reach and digital audience size
+- Fan engagement channels you're prioritizing
+- Media partnership structure
+
+**Use these inputs** to identify sponsors who fit YOUR market and to calculate realistic CPM based on YOUR projected reach.
 
 ## Step 2: Build Your Sponsor Category Matrix
 
@@ -332,8 +346,8 @@ Title: ✓ Week 3 Complete! What's Next?
 
 **Before Week 4:**
 - Access the Serena Williams case (link in Week 4 Module 1)
-- Complete any outstanding PAIRR feedback for your strategy memo
 - Review your CFL Expansion Milestones 1-3 for continuity
+- Think about athletes who could serve as ambassadors for your CFL city
 
 See you in Week 4: Athletes, Brands & Emerging Sports!
 ```
@@ -350,7 +364,7 @@ See you in Week 4: Athletes, Brands & Emerging Sports!
 **Milestone 3 Grading Notes:**
 - Focus on application of Week 3 frameworks, not creativity alone
 - Ethical complexity section should show genuine engagement with trade-offs
-- CPM calculations should use realistic assumptions from course widgets
+- CPM calculations should use realistic assumptions from course exercises
 
 **Common Student Challenges:**
 - Over-optimistic sponsorship valuations (remind: CFL is tier-2 league)

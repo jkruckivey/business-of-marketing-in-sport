@@ -303,7 +303,7 @@ These interviews directly inform your CFL expansion project:
 - Both show how to balance innovation with established sports traditions
 
 **Up Next: Module 3 - Interactive Discovery**
-Now that you've heard from practitioners operating in emerging sports and national sports organizations, it's time to apply these frameworks hands-on. In Module 3, you'll use interactive widgets to:
+Now that you've heard from practitioners operating in emerging sports and national sports organizations, it's time to apply these frameworks hands-on. In Module 3, you'll use interactive exercises to:
 - Build athlete brand portfolios using the **Athlete Brand Calculator**
 - Evaluate emerging sports investments using the **Emerging Sports Investment Tool**
 - Model team-athlete partnership economics

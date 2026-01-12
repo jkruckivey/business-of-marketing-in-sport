@@ -1,29 +1,27 @@
 # MODULE 6: Assessment & Reflection
-**Version:** 2.0.0 | **Last Updated:** 2026-01-12
+**Version:** 3.0.0 | **Last Updated:** 2026-01-12
 
-**Purpose:** Submit strategy memo, PAIRR feedback, reflect on Week 3 learning, preview Week 4 (measures all WLOs 3.1-3.5)
+**Purpose:** Submit strategy memo, optional AI feedback, reflect on Week 3 learning, preview Week 4 (measures all WLOs 3.1-3.5)
 
-### Version 2.0.0 Changes
-- **UPDATED:** Changed from group strategy memo to individual strategy memo
-- **UPDATED:** All group references converted to individual work
-- **MOVED:** CFL Milestone 3 moved to Module 7 wrap-up
-- **ALIGNED:** Assessment format matches LIV Golf case study focus
+### Version 3.0.0 Changes
+- **REMOVED:** PAIRR framework (peer review not applicable to individual work)
+- **SIMPLIFIED:** Streamlined to submission + optional AI feedback + reflection
+- **REMOVED:** CFL Milestone 3 (moved to Module 7 where it belongs)
+- **UPDATED:** Rubric aligned with LIV Golf ethical sponsorship focus
+- **REDUCED:** Bonus points from 5 to 1 (AI feedback only)
 
 **Uplimit Structure:** Sixth module in Unit 3
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 5 | Type directly | Launches submission and reflection |
-| 2 | **Infobox (Callout)** ◐ Recommended | **PAIRR Assessment Overview** | Type directly | Blue variant, 5-phase timeline |
-| 3 | **Text Response** ⬤ Required | Activation Plan Submission (File Upload) | Configure in Uplimit | 40 points, rubric grading |
-| 4 | **▬ Text** ◐ Recommended | PAIRR Feedback Phase Instructions | Type directly | Dual feedback methodology (5 bonus pts) |
-| 5 | **Text Response** ◐ Recommended | Peer Review Submission | Configure in Uplimit | 2 bonus points for peer feedback |
-| 6 | **Text Response** ◐ Recommended | AI Feedback Submission | Configure in Uplimit | 1 bonus point - paste ChatGPT output |
-| 7 | **Text Response** ◐ Recommended | Comparative Reflection | Configure in Uplimit | 1 bonus point - compare peer vs AI |
-| 8 | **Text Response** ◐ Recommended | Post-Revision Reflection | Configure in Uplimit | 1 bonus point - feedback integration |
-| 9 | **Text Response** ◐ Recommended | Week 3 Reflection (250 words) | Configure in Uplimit | 3 reflection questions (ungraded) |
-| 10 | **Video** ⬤ Required | Week 3 Wrap-Up & Week 4 Preview (2 min) | Upload MP4 | Consolidate learning, preview athletes |
-| 11 | **Infobox (Next Steps)** ⬤ Required | Week 4 Preview and Preparation | Type directly | Green variant, transition |
+| 2 | **Infobox (Callout)** ⬤ Required | Submission Overview | Type directly | Blue variant, simple checklist |
+| 3 | **Text Response** ⬤ Required | Strategy Memo Submission (File Upload) | Configure in Uplift | 40 points, rubric grading |
+| 4 | **Details** ○ Optional | AI Feedback Exercise | Type directly | Accordion - how to get AI coaching |
+| 5 | **Text Response** ○ Optional | AI Feedback Reflection | Configure in Uplimit | 1 bonus point |
+| 6 | **Text Response** ○ Optional | Week 3 Reflection (250 words) | Configure in Uplimit | 3 reflection questions (ungraded) |
+| 7 | **Video** ⬤ Required | Week 3 Wrap-Up & Week 4 Preview (2 min) | Upload MP4 | Consolidate learning, preview athletes |
+| 8 | **Infobox (Next Steps)** ⬤ Required | Week 4 Preview and Preparation | Type directly | Green variant, transition |
 
 ---
 
@@ -32,22 +30,24 @@
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-You've written your sponsorship strategy memo. Now it's time to submit, get peer and AI feedback, and reflect on everything you've learned this week.
+You've written your sponsorship strategy memo advising a brand on LIV Golf. Now it's time to submit, reflect on what you've learned, and prepare for Week 4.
 
 **Module 6 Checklist:**
 1. ✅ **Submit your strategy memo** (40 points) - PDF upload below
-2. ✅ **PAIRR feedback** (optional, 5 bonus points) - Get peer + AI feedback using structured protocol
-3. ✅ **Reflect on Week 3** (optional, ungraded) - Answer 3 reflection questions to consolidate learning
+2. ✅ **Optional: Get AI feedback** (1 bonus point) - Use AI coaching to strengthen your analysis
+3. ✅ **Reflect on Week 3** (ungraded) - Consolidate your learning
 4. ✅ **Preview Week 4** - Prepare for Athletes, Brands & Emerging Sports
 
-**Estimated Time:** 30-40 minutes total
+**Estimated Time:** 20-30 minutes (submission + reflection)
+
+**Connection to CFL Project:** After submitting your LIV Golf memo, you'll move to Module 7 where you'll apply these same analytical skills to Milestone 3 of your CFL Expansion project. The memo was practice; the CFL project is application.
 
 Let's finish Week 3 strong. Submit your memo and celebrate what you've built.
 ```
 
 ---
 
-## Element 3: **NEW** - PAIRR Assessment Overview
+## Element 2: Infobox - Submission Overview
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -55,42 +55,32 @@ Let's finish Week 3 strong. Submit your memo and celebrate what you've built.
 3. Copy markdown below:
 
 ```markdown
-Title: ◉ PAIRR Assessment: Individual Strategy Memo with Dual Feedback
+Title: ◉ Strategy Memo Submission (40 Points + 1 Bonus)
 
-This individual assignment combines strategy memo writing with dual feedback (peer + AI) to develop both strategic execution skills and AI literacy.
+**Your Deliverable:** 2-page sponsorship strategy memo advising a brand (BMW, Mastercard, Budweiser, or Rolex) on whether to sponsor LIV Golf.
 
-**Phase 1: Write Your Strategy Memo (Due Day 6)**
-- Write your strategy memo using Module 5 frameworks
-- Submit 80-90% complete draft for feedback (File upload, no points yet)
+**What You're Submitting:**
+- Page 1: Executive recommendation (max 500 words) - Clear position, stakeholder analysis, trade-offs
+- Page 2: Supporting analysis - Stakeholder impact table, controversy-adjusted ROI calculations
 
-**Phase 2: Dual Feedback (Due Day 8)**
-- Peer review: Review an assigned peer's draft using rubric (2 pts bonus)
-- AI review: Generate ChatGPT feedback on your own draft (1 pt bonus)
+**Grading Rubric (40 points):**
+- Strategic Clarity (10 pts): Clear recommendation with brand-specific rationale
+- Analytical Rigor (15 pts): Proper use of Module 4 exercises (Ethical Decision Tool, Brand Risk Calculator)
+- Ethical Framework (10 pts): Thoughtful stakeholder analysis and sportswashing engagement
+- Presentation Quality (5 pts): Professional memo format, clear tables
 
-**Phase 3: Comparative Reflection (Due Day 8)**
-- Compare peer vs. AI feedback: Which was more useful? (150-250 words, 1 pt bonus)
+**Optional Bonus (1 point):**
+Get AI feedback on your draft before final submission. See Element 4 for instructions.
 
-**Phase 4: Revision (Due Day 10)**
-- Revise your memo incorporating feedback. Submit final version for grading (40-point rubric).
+**File Format:** PDF, 2 pages max
+**File Name:** `FirstNameLastName_LIVGolfMemo_BrandName.pdf`
 
-**Phase 5: Post-Revision Reflection (Due Day 10)**
-- Reflect on revision choices: Which feedback influenced you most? (75-100 words, 1 pt bonus)
-
-**⏱️ Total PAIRR Time Investment:** 3-4 hours spread across the week
-- Strategy memo (Module 5): 60-75 min
-- Draft polish and submission: 20-30 min
-- Peer review (giving): 25-35 min
-- AI feedback generation: 5-10 min
-- Comparative reflection: 15-20 min
-- Revision: 30-45 min
-- Post-revision reflection: 10-15 min
-
-**Total Possible: 45 points** (40 pts strategy memo + 5 pts PAIRR bonus)
+**Late Policy:** -5% per 24 hours (max -20%). Email instructor for accommodation.
 ```
 
 ---
 
-## Element 4: **RENUMBERED** - Text Response - Strategy Memo Submission (was Element 3)
+## Element 3: Text Response - Strategy Memo Submission
 
 **Element Type:** Text Response (File upload, rubric grading)
 
@@ -107,22 +97,24 @@ Upload your sponsorship strategy memo (PDF format, 2 pages max).
 ```
 **Submission Requirements:**
 - Format: PDF (2 pages maximum)
-- File Name: `LastName_StrategyMemo_BrandName_Property.pdf`
+- File Name: `FirstNameLastName_LIVGolfMemo_BrandName.pdf`
 - Page 1: Executive recommendation (max 500 words)
-- Page 2: Supporting analysis - CPM/ROI calculations, risk assessment
+- Page 2: Supporting analysis - Stakeholder table, ROI calculations
 
 **Individual Submission:**
 This is an individual assignment. Include your name in the header.
 
-**Late Penalty:**
-10% per day late (max 3 days, then 0 points).
-
-**Before Submitting:**
-- ✅ Clear recommendation with rationale
-- ✅ CPM/ROI calculations use course frameworks
-- ✅ Ethical framework applied (if LIV Golf scenario)
+**Before Submitting, Verify:**
+- ✅ Clear recommendation stated in first sentence
+- ✅ Brand-specific rationale (not generic analysis)
+- ✅ Stakeholder impact table with weighting rationale
+- ✅ Controversy-adjusted ROI calculation with assumptions
+- ✅ Trade-offs acknowledged (what you gain vs. risk)
 - ✅ Professional memo formatting
 - ✅ Within 2-page limit
+
+**Late Penalty:**
+-5% per 24 hours late (max -20%, then 0 points after 4 days).
 ```
 
 **Template Upload:** No template (students create their own)
@@ -141,64 +133,72 @@ This is an individual assignment. Include your name in the header.
 **CRITERION 1: Strategic Clarity (10 points)**
 
 **Description:**
-Clear target audience, measurable objectives, and compelling rationale for brand-operator pairing.
+Clear recommendation with brand-specific rationale, supported by case data and stakeholder considerations.
 
 **Does not meet expectations (0-6 points):**
-The student provides vague or overly broad target audience (e.g., "NFL fans"), unclear or unmeasurable objectives (e.g., "increase sales"), or weak rationale for brand-operator pairing with no supporting logic.
+Recommendation unclear or buried in text. Generic analysis that could apply to any brand (doesn't address BMW vs. Budweiser positioning differences). Fewer than 2 key decision factors identified. No reference to LIV Golf case data from Module 4.
 
 **Partially meets expectations (7-8 points):**
-The student defines a reasonable target audience and objectives with some specificity, but may lack demographic precision, measurability (SMART criteria), or compelling strategic logic connecting brand and operator strengths.
+- 7 pts: Clear recommendation stated, but rationale is generic or doesn't connect to specific brand positioning
+- 8 pts: Clear recommendation with brand-specific rationale, but missing connection to Module 4 case data (e.g., doesn't reference LIV Golf sponsor patterns, sportswashing statistics)
 
 **Fully meets expectations (9-10 points):**
-The student defines a specific, quantified target audience (demographics, psychographics, behavioral traits), sets SMART objectives (specific, measurable, achievable, relevant, time-bound), and provides compelling strategic rationale supported by data from course modules (e.g., bettor engagement multipliers, CPM benchmarks).
+- 9 pts: Clear recommendation in first sentence, brand-specific rationale citing positioning/ESG/audience fit, 3+ decision factors with evidence from stakeholder analysis
+- 10 pts: Above PLUS references specific Module 4 content (e.g., "BMW's premium positioning mirrors Rolex, who declined LIV Golf for 'values alignment' concerns" or "38% boycott likelihood from sportswashing research")
 
 ---
 
-**CRITERION 2: Activation Design (15 points)**
+**CRITERION 2: Analytical Rigor (15 points)**
 
 **Description:**
-Creative, integrated tactics across multiple channels with appropriate budget allocation following 2-3× activation rule.
+Proper use of Module 4 exercises (Ethical Sponsorship Decision Tool, Brand Risk Calculator) with complete stakeholder and ROI analysis.
 
 **Does not meet expectations (0-9 points):**
-The student provides generic tactics without specificity (e.g., "social media campaign" with no platform or content details), fails to allocate budget across all required channels, or violates the 2-3× activation rule (activation budget should be 2-3× rights fee).
+Missing stakeholder analysis OR missing ROI analysis. No evidence of using Module 4 exercises. Assumptions not stated. Tables incomplete or missing.
 
 **Partially meets expectations (10-12 points):**
-The student provides reasonable tactics across most channels with some specificity, follows budget allocation guidelines, but tactics may lack creativity, integration across channels, or clear connection to betting partnership advantages (e.g., data access, engagement multipliers).
+- 10 pts: Both tables present but incomplete (e.g., stakeholder weights don't sum to 100%, ROI calculation missing key inputs like boycott probability)
+- 11 pts: Complete tables with reasonable inputs, but rationale for stakeholder weights or ROI assumptions is weak or missing
+- 12 pts: Complete tables with stated rationale, uses Module 4 exercise outputs, but doesn't explicitly connect data to recommendation
 
 **Fully meets expectations (13-15 points):**
-The student provides creative, specific tactics for all channels (advertising, digital, retail, experiential, measurement) with concrete examples, demonstrates smart budget allocation with clear justifications, and leverages betting partnership advantages (first-party data, attribution, engagement multipliers). Tactics are integrated and reinforce each other.
+- 13 pts: Complete stakeholder and ROI analysis with clear rationale, explicit connection between data and recommendation ("Decision score of -47 indicates Strong Decline")
+- 14 pts: Above PLUS conservative assumptions acknowledged, breakeven analysis included ("Controversy would need to drop to 3% for positive ROI")
+- 15 pts: Above PLUS references specific case data (e.g., "38% boycott likelihood from Module 4 sportswashing framework," "52% employee discomfort statistic," "Rolex declined for values alignment")
 
 ---
 
-**CRITERION 3: ROI Justification (10 points)**
+**CRITERION 3: Ethical Framework (10 points)**
 
 **Description:**
-Realistic, data-driven ROI projections using course frameworks (CPM, engagement multipliers, conversion funnels). Clear attribution methodology.
+Thoughtful application of Module 4 sportswashing framework with stakeholder weighting rationale appropriate to chosen brand.
 
 **Does not meet expectations (0-6 points):**
-The student provides unrealistic projections (e.g., 500% ROI without justification), missing or incomplete calculations, no attribution methodology, or fails to use course frameworks (CPM, engagement rates, conversion rates from widgets).
+No stakeholder analysis. Treats decision as purely financial ("ROI is positive so sponsor"). Ignores sportswashing dimension entirely. Personal opinion ("sportswashing is bad") without business analysis.
 
 **Partially meets expectations (7-8 points):**
-The student provides reasonable ROI projections using some course frameworks, but may be missing key assumptions (e.g., churn rate, attribution discount), lack conservative discounting for uncertainty, or not fully explain calculation methodology.
+- 7 pts: Acknowledges ethical concerns but doesn't systematically analyze stakeholders. Uses generic stakeholder weights not tailored to brand.
+- 8 pts: Uses stakeholder framework with brand-appropriate weights, but weighting rationale is weak or doesn't connect to brand positioning (e.g., doesn't explain WHY BMW customers weighted at 35%)
 
 **Fully meets expectations (9-10 points):**
-The student provides realistic, data-driven ROI projections using course frameworks (CPM from Sponsorship Valuation Calculator, engagement multipliers from Module 3, CAC/LTV benchmarks from Module 4 FanDuel case, conversion funnels from ROI Calculator), includes clear attribution methodology (promo codes, data partnerships, geo lift studies), acknowledges conservative assumptions and uncertainties, and shows all calculation steps transparently.
+- 9 pts: Thoughtful stakeholder weighting with brand-specific rationale (e.g., "BMW weighted employees at 25% due to German corporate culture emphasis on workplace values" or "Budweiser weighted shareholders higher due to mass-market volume economics")
+- 10 pts: Above PLUS engages with sportswashing debate nuance (e.g., "While sportswashing evidence is mixed—Saudi favorability +15% among sports fans—BMW's customer base skews educated and likely more aware of ethical concerns")
 
 ---
 
 **CRITERION 4: Presentation Quality (5 points)**
 
 **Description:**
-Professional formatting, clear writing, effective data visualization.
+Professional executive memo format with clear writing and effective data visualization.
 
 **Does not meet expectations (0-3 points):**
-The plan has poor formatting (inconsistent fonts, unclear structure), unclear or verbose writing, missing data visualization (no tables or charts), or exceeds 2-page limit without justification.
+Poor formatting (inconsistent fonts, unclear structure). Unclear or verbose writing. Missing data tables. Exceeds 2-page limit. Recommendation buried in middle of document.
 
 **Partially meets expectations (4 points):**
-The plan has acceptable formatting and clear writing, includes basic tables for budget and ROI, but may lack polish, have minor formatting inconsistencies, or miss opportunities for effective data visualization.
+Acceptable formatting and clear writing. Basic tables for stakeholder analysis and ROI present but may lack polish. Minor formatting inconsistencies.
 
 **Fully meets expectations (5 points):**
-The plan demonstrates professional executive summary quality with polished formatting, concise and clear writing appropriate for business audience, effective data visualization (tables, charts), and stays within 2-page limit while including all required elements.
+Professional executive memo quality. Recommendation in first sentence. Polished formatting with consistent styling. Clear, concise writing appropriate for business audience. Well-formatted tables with headers and rationale columns. Stays within 2-page limit while including all required elements.
 
 ---
 
@@ -206,269 +206,87 @@ The plan demonstrates professional executive summary quality with polished forma
 
 ---
 
-## Element 5: **RENUMBERED** - Text - PAIRR Feedback Phase Instructions (was Element 3)
-
-**Copy this markdown directly into Uplimit:**
-
-```markdown
-# PAIRR Feedback Phase: Peer and AI Review + Reflection
-
-Before submitting your final strategy memo, you will receive feedback from TWO sources: a peer (peer review) and an AI writing assistant. Your task is to **critically evaluate both sources** and decide which feedback to apply.
-
-**Why PAIRR?**
-Sports marketing professionals increasingly use AI tools for campaign planning, content creation, and ROI modeling. This exercise teaches you to:
-- Leverage AI for strategic improvement (not replacement)
-- Critically evaluate AI output (it's not always right!)
-- Combine human insight with AI efficiency
-- Maintain your strategic thinking while using AI assistance
-
-**Benefits:**
-1. **Multiple perspectives:** Peers see execution feasibility; AI sees technical patterns and best practices
-2. **Critical thinking:** You decides what feedback is valid (not blindly accepting)
-3. **Better work:** Two sources catch more issues than one
-4. **Workplace readiness:** Practice balancing AI assistance with human judgment
-
----
-
-## Step 1: Submit Your Draft (Due: [Date] by 11:59 PM)
-
-Upload your 80-90% complete draft strategy memo to the shared Google Drive folder:
-- **Format:** Google Doc (enable "Commenting" permissions) OR PDF
-- **Filename:** `LastName_StrategyMemo_BrandName_OperatorName_DRAFT.pdf`
-- **Completeness:** Must have all major sections (strategy, tactics, budget, ROI projections)
-
-**Draft Requirements:**
-- Strategic clarity (target audience, objectives, brand-operator rationale)
-- Activation design (tactics across all channels with budget allocation)
-- ROI justification (CPM calculations, engagement multipliers, conversion projections)
-- Professional formatting (tables, charts for budget/ROI)
-- 1-2 pages (can refine to 2 pages max in revision)
-
----
-
-## Step 2A: Peer Review (Due: [Date + 2 days] by 11:59 PM)
-
-You've been paired with a peer (check announcement for your assigned peer). Complete the structured peer review form for their strategy memo draft.
-
-**Time Estimate:** 25-35 minutes
-
-**Review Focus (Using Week 3 Rubric):**
-1. **Strategic Clarity (10 pts):** Is target audience specific and quantified? Are objectives SMART? Is brand-operator pairing strategically sound?
-2. **Activation Design (15 pts):** Are tactics specific (not generic)? Do they leverage betting partnership advantages? Is budget allocation appropriate (2-3× rule)?
-3. **ROI Justification (10 pts):** Did they use course frameworks? Are projections realistic? Is attribution methodology clear?
-4. **Presentation Quality (5 pts):** Professional formatting? Clear tables/charts? Within 2-page limit?
-
-**What Makes Good Peer Feedback:**
-- **Specific:** "Your Nike + FanDuel TikTok challenge is creative, but you didn't specify success metrics—how many participants is 'successful'?"
-- **Constructive:** "Consider increasing Measurement budget from 3% to 8% to track attribution more rigorously"
-- **Evidence-based:** "Your CPM of $25 is strong compared to the $30-50 benchmark from Module 2 widget"
-- **Balanced:** Identify both strengths AND improvement opportunities
-
-**Submit peer review using Element 4 form below.**
-
----
-
-## Step 2B: AI Feedback (Due: [Date + 2 days] by 11:59 PM)
-
-Have Submit your use an AI writing assistant (ChatGPT, Claude, or Gemini) to get feedback on the same draft you submitted for peer review.
-
-### AI Feedback Prompt Template
-
-**Copy this prompt into your AI tool (ChatGPT, Claude, etc.):**
+## Element 4: Details - AI Feedback Exercise (Optional)
 
 ```
-You are a sports marketing strategy consultant evaluating a 1-page sponsorship strategy memo for an MBA course assignment. The assignment asks students to design an strategy memo for a brand partnering with a sports betting operator (e.g., Nike + FanDuel, Coca-Cola + DraftKings).
+Title: Optional: Get AI Feedback Before Submitting (1 Bonus Point)
+
+[Expand for AI coaching instructions]
+
+## Why Get AI Feedback?
+
+Sports marketing professionals increasingly use AI tools for strategy development. This optional exercise helps you:
+- Identify gaps in your analysis before final submission
+- Practice evaluating AI suggestions critically
+- Develop AI literacy for your career
+
+**Time Investment:** 10-15 minutes
+**Bonus Points:** 1 point for completing the reflection (Element 5)
+
+---
+
+## How to Get AI Feedback
+
+**Step 1: Copy this prompt into ChatGPT, Claude, or Gemini:**
+
+```
+You are a sports marketing consultant evaluating a 2-page sponsorship strategy memo for an MBA course. The assignment asks students to advise a brand (BMW, Mastercard, Budweiser, or Rolex) on whether to sponsor LIV Golf.
 
 RUBRIC CRITERIA (40 points total):
-1. Strategic Clarity (10 pts): Clear target audience (specific demographics/psychographics), measurable SMART objectives, compelling rationale for brand-operator pairing supported by data.
-2. Activation Design (15 pts): Creative, specific tactics across multiple channels (advertising, digital, retail, experiential, measurement). Budget allocation follows 2-3× activation rule. Tactics leverage betting partnership advantages (first-party data, engagement multipliers, attribution).
-3. ROI Justification (10 pts): Realistic, data-driven ROI projections using course frameworks (CPM calculations, engagement multipliers, conversion funnels). Clear attribution methodology. Conservative assumptions acknowledged.
-4. Presentation Quality (5 pts): Professional executive summary format. Clear, concise writing. Effective data visualization (tables, charts). Within 2-page limit.
+1. Strategic Clarity (10 pts): Clear recommendation in first sentence with brand-specific rationale. References case data (LIV Golf sponsor patterns, sportswashing statistics).
+2. Analytical Rigor (15 pts): Complete stakeholder impact table with weights summing to 100%. Controversy-adjusted ROI calculation with stated assumptions.
+3. Ethical Framework (10 pts): Thoughtful stakeholder weighting appropriate to brand positioning. Engages with sportswashing nuance.
+4. Presentation Quality (5 pts): Professional memo format, clear tables, within 2-page limit.
 
-Please evaluate this strategy memo draft against these criteria. For each criterion:
-- Identify what your peer did well (specific strengths with examples)
-- Identify what could be improved (actionable, specific suggestions)
-- Estimate a score category (Exceeds Expectations / Fully Meets / Partially Meets / Does Not Meet)
+Please evaluate this strategy memo draft against these criteria:
+- For each criterion, identify strengths and specific improvement suggestions
+- Flag any missing elements (stakeholder table, ROI calculation, weighting rationale)
+- Note if the analysis is brand-specific or too generic
 
-Pay special attention to:
-- Are tactics specific enough to be executable? (e.g., "TikTok campaign" is too vague; "TikTok dance challenge with branded filters, $50K influencer budget targeting 18-34 sports bettors" is specific)
-- Do ROI projections use realistic industry benchmarks from the course? (CPM $30-50, engagement multipliers 40% for bettors, conversion rates 2-5%)
-- Is the brand-operator pairing strategically sound? (e.g., premium brand + mass-market operator = mismatch)
+Here is the strategy memo:
 
-Here is the strategy memo draft:
-
-[PASTE YOUR GROUP'S DRAFT HERE - Include executive summary, tactics, budget table, ROI projections]
+[PASTE YOUR DRAFT HERE]
 ```
 
-**Important Instructions:**
-1. Use the EXACT prompt above (ensures consistent feedback across students)
-2. Copy the AI's response into a Google Doc for later comparison
-3. Take screenshots showing the AI conversation (for comparative reflection)
-4. Share AI feedback document with all peers
+**Step 2: Review the AI's feedback**
+- Which suggestions are valid?
+- Which suggestions misunderstand the assignment or brand context?
+- What would you change based on the feedback?
 
-**Time Estimate:** 5-10 minutes
-
----
-
-## Step 3: Comparative Reflection (Due: [Date + 3 days] by 11:59 PM)
-
-Now that you has feedback from BOTH sources (peer + AI), critically compare them.
-
-**Submit your submits this reflection below (150-250 words):**
-
-### Comparative Reflection Questions
-
-**Question 1: Feedback Quality Comparison (50-75 words)**
-- What did the peer notice that the AI missed?
-- What did the AI notice that peers missed?
-- Were there areas where they disagreed? Which feedback seemed more accurate for a sports marketing context?
-
-**Question 2: Strengths and Limitations (50-75 words)**
-
-**Peer Feedback:**
-- Strength: [What was most valuable? e.g., industry insights, execution feasibility]
-- Limitation: [What was missing or unclear? e.g., lacked technical critique]
-
-**AI Feedback:**
-- Strength: [What was most valuable? e.g., systematic analysis, best practices]
-- Limitation: [What was inaccurate or too generic? e.g., couldn't evaluate brand fit without industry context]
-
-**Question 3: Application Strategy (50-100 words)**
-- Which feedback will you prioritize in revision? Why?
-- What criteria are you using to decide which suggestions to implement?
-- How does this exercise change how you'll use AI in future marketing planning tasks?
-
-**Submit your reflection using Element 4B form below.**
+**Step 3: Complete the AI Feedback Reflection (Element 5)**
+- Submit a brief reflection on what you learned
+- Earns 1 bonus point
 
 ---
 
-## Step 4: Revise Your Activation Plan (Days 7-8)
+## Important Notes
 
-Apply insights from BOTH feedback sources:
-
-**Revision Checklist:**
-- [ ] Addressed peer feedback on activation tactics (specificity, feasibility)
-- [ ] Addressed AI feedback on ROI methodology and presentation quality
-- [ ] Evaluated competing suggestions and chose best approach
-- [ ] Maintained professional formatting and executive tone
-- [ ] Stayed within 2-page limit
-- [ ] Used course frameworks (CPM, engagement multipliers, conversion funnels)
-
-**Tip:** You are NOT required to implement ALL suggestions. Use your judgment to prioritize changes that most strengthen your strategic argument and ROI justification.
+- AI feedback is **optional** - you can submit your memo without it
+- AI suggestions are not always correct - evaluate critically
+- The AI doesn't have access to Module 4 case data, so it may miss context
+- You decide what to change - maintain strategic ownership
 
 ---
 
-## Step 5: Post-Revision Reflection (Submit with final plan)
+## Tips for Using AI Feedback Effectively
 
-After revising your strategy memo, Submit your completes this brief reflection below (75-100 words):
+**Good uses of AI feedback:**
+- Catch formatting issues or unclear writing
+- Identify missing elements (e.g., "You didn't include breakeven analysis")
+- Challenge assumptions ("Your 5% boycott probability seems low for BMW's customer base")
 
-**Prompt:**
-"Which feedback source (peer or AI) had the most influence on your revisions? Give 1-2 specific examples of changes you made based on each source. Did the comparative reflection process help you make better revision decisions than you would have with a single feedback source? How will you use AI tools differently in future marketing planning projects?"
+**Limitations of AI feedback:**
+- Can't evaluate brand fit as well as someone who knows the case
+- May suggest generic improvements that don't apply to sportswashing context
+- Doesn't know what you learned in Module 4 exercises
 
-**Format:** Include this reflection as Page 3 addendum to your final submission (does not count toward 2-page limit).
-
-**Submit this reflection using Element 4C form below.**
-
----
-
-## PAIRR Participation Bonus: Up to 5 Points
-
-- Completed peer review form: **2 points**
-- Obtained AI feedback (verified by screenshot): **1 point**
-- Completed comparative reflection: **1 point**
-- Completed post-revision reflection: **1 point**
-
-**Total Possible:** 45 points (40 base assignment + 5 bonus)
-
----
-
-## Why This Matters for Your Career
-
-**Real sports marketing scenario:**
-You're a marketing manager at Nike. Your agency presents a $20M FanDuel partnership strategy memo. You also run it through an AI strategy tool (increasingly common in 2024-2025). The agency says "spend 60% on experiential events." The AI says "spend 40% on digital attribution." How do you decide?
-
-**PAIRR teaches you to:**
-1. Leverage multiple information sources (human experts + AI tools)
-2. Critically evaluate each source's strengths and limitations
-3. Make evidence-based decisions integrating both perspectives
-4. Maintain strategic ownership (you decide, not AI)
-
-This is the future of marketing strategy work. Practice it now.
-
-**Next elements:** Peer review form (Element 6), AI feedback submission (Element 7), Comparative reflection form (Element 8), Post-revision reflection form (Element 9).
+**Career Application:**
+In sports marketing roles, you'll use AI tools for campaign planning, content creation, and ROI modeling. Learning to evaluate AI output critically—accepting valid suggestions, rejecting poor ones—is an essential professional skill.
 ```
 
 ---
 
-## Element 6: **RENUMBERED** - Text Response - Peer Review Submission (was Element 4)
-
-**Element Type:** Text Response (Short answer, bonus credit)
-
-**Uplimit Configuration:**
-
-### Tab 1: Instructions
-
-**Question:**
-```
-Complete this peer review form for the assigned peer's strategy memo.
-```
-
-**Additional Instructions:**
-```
-**Peer Review Protocol (Answer All Questions)**
-
-**Peer Reviewed:** [Peer's Name]
-
-**1. Strategic Clarity (3-4 sentences)**
-- Is the target audience specific and quantified?
-- Are objectives SMART (specific, measurable, achievable, relevant, time-bound)?
-- Is the brand-operator pairing strategically sound?
-- **Suggestions for improvement:**
-
-**2. Activation Design (4-5 sentences)**
-- Are tactics specific (not generic)?
-- Do tactics leverage betting partnership advantages (data, engagement, attribution)?
-- Is budget allocation appropriate (2-3× rule, measurement 5-10%)?
-- **Most creative tactic you saw:**
-- **Suggestions for improvement:**
-
-**3. ROI Justification (3-4 sentences)**
-- Did they use course frameworks (CPM, engagement multipliers, conversion funnels)?
-- Are projections realistic and conservative?
-- Is attribution methodology clear?
-- **Suggestions for improvement:**
-
-**4. Presentation Quality (2-3 sentences)**
-- Is the plan professionally formatted?
-- Are tables/charts clear and effective?
-- **Suggestions for improvement:**
-
-**5. Overall Assessment (2-3 sentences)**
-- What did this peer do exceptionally well?
-- What's one high-impact improvement they could make?
-- If you were their client (brand CMO), would you approve this plan? Why or why not?
-
-**Word Limit:** 300-400 words total
-```
-
-**Template Upload:** No template
-
----
-
-### Tab 2: Criteria (Bonus Credit, No Rubric)
-
-**Uplift Configuration:**
-- ⭕ DO NOT enable rubric grading (this is bonus credit)
-- ✅ Spot-check for quality (instructor manually reviews 20% of submissions)
-- ✅ Award 2 bonus points for thoughtful, specific reviews (part of 5-point PAIRR bonus)
-
-**Instructor Grading Notes:**
-- 2 points: Specific, constructive feedback with examples and suggestions
-- 0 points: Generic "good job" feedback with no specificity or suggestions
-
----
-
-## Element 7: **NEW** - Text Response - AI Feedback Submission
+## Element 5: Text Response - AI Feedback Reflection (Optional)
 
 **Element Type:** Text Response (Short answer, 1 bonus point)
 
@@ -478,27 +296,26 @@ Complete this peer review form for the assigned peer's strategy memo.
 
 **Question:**
 ```
-Paste the complete ChatGPT (or Claude/Gemini) feedback response for your strategy memo draft.
+If you used AI feedback on your strategy memo, reflect on the experience (75-100 words).
 ```
 
 **Additional Instructions:**
 ```
-**AI Feedback Submission**
+**AI Feedback Reflection (Optional - 1 Bonus Point)**
 
-After you generated AI feedback using the prompt template in Element 5 (Step 2B), paste the complete AI response here.
+If you used ChatGPT, Claude, or Gemini to get feedback on your draft, answer these questions:
 
-**What to Submit:**
-- The full AI-generated feedback (copy-paste the entire response)
-- Include all sections: strengths, improvement suggestions, score estimates
+1. **What was most useful?** What did the AI catch that you might have missed?
 
-**Grading:**
-You're graded on successfully generating and submitting AI feedback (not on the quality of that feedback, which is out of your control).
+2. **What was least useful?** What suggestions did you reject, and why?
 
-This submission verifies you engaged with AI-assisted learning tools.
+3. **What did you change?** Give 1-2 specific examples of revisions you made based on AI feedback.
 
-**Time Estimate:** 2 minutes (just copy-paste from ChatGPT/Claude/Gemini)
+4. **Career application:** How will you use AI tools differently in future marketing projects?
 
-**Submission:** Submit your submits below.
+**Word Limit:** 75-100 words
+
+**Note:** If you didn't use AI feedback, skip this element. It's optional.
 ```
 
 **Template Upload:** No template
@@ -509,145 +326,16 @@ This submission verifies you engaged with AI-assisted learning tools.
 
 **Uplimit Configuration:**
 - ⭕ DO NOT enable rubric grading (this is bonus credit)
-- ✅ Spot-check for completeness (verify AI feedback was generated, not student-written)
-- ✅ Award 1 bonus point for submitting AI-generated feedback (part of 5-point PAIRR bonus)
+- ✅ Spot-check for thoughtful engagement
+- ✅ Award 1 bonus point for completing reflection
 
 **Instructor Grading Notes:**
-- 1 point: Complete AI feedback submitted (clearly AI-generated with rubric-aligned structure)
-- 0 points: Missing submission or obviously student-written instead of AI-generated
+- 1 point: Thoughtful reflection with specific examples of AI feedback evaluated
+- 0 points: Missing or generic ("AI was helpful")
 
 ---
 
-## Element 8: **RENUMBERED** - Text Response - Comparative Reflection (was Element 5)
-
-**Element Type:** Text Response (Short answer, 1 bonus point)
-
-**Uplimit Configuration:**
-
-### Tab 1: Instructions
-
-**Question:**
-```
-Complete this comparative reflection analyzing peer feedback vs. AI feedback on your strategy memo draft (150-250 words total).
-```
-
-**Additional Instructions:**
-```
-**Comparative Reflection: Peer vs. AI Feedback**
-
-You received feedback from TWO sources: another student (peer review) and an AI writing assistant. Now critically compare the quality and usefulness of both sources.
-
-**Answer these questions (150-250 words total):**
-
-**Question 1: Feedback Quality Comparison (50-75 words)**
-- What did the peer notice that the AI missed?
-- What did the AI notice that peers missed?
-- Were there areas where they disagreed? Which feedback seemed more accurate for a sports marketing context?
-
-**Question 2: Strengths and Limitations (50-75 words)**
-
-**Peer Feedback:**
-- Strength: [What was most valuable? e.g., industry insights, execution feasibility]
-- Limitation: [What was missing or unclear? e.g., lacked technical critique]
-
-**AI Feedback:**
-- Strength: [What was most valuable? e.g., systematic analysis, best practices]
-- Limitation: [What was inaccurate or too generic? e.g., couldn't evaluate brand fit without industry context]
-
-**Question 3: Application Strategy (50-100 words)**
-- Which feedback will you prioritize in revision? Why?
-- What criteria are you using to decide which suggestions to implement?
-- How does this exercise change how you'll use AI in future marketing planning tasks?
-
-**Submission:** Submit your submits below.
-```
-
-**Template Upload:** No template
-
----
-
-### Tab 2: Criteria (Bonus Credit, No Rubric)
-
-**Uplimit Configuration:**
-- ⭕ DO NOT enable rubric grading (this is bonus credit)
-- ✅ Provide encouraging feedback on critical thinking quality
-- ✅ Award 1 bonus point for thoughtful comparative analysis (part of 5-point PAIRR bonus)
-
-**Instructor Grading Notes:**
-- 1 point: Thoughtful comparison identifying specific strengths/limitations of each feedback source with examples
-- 0 points: Superficial comparison without specific examples or critical evaluation
-
-**Feedback Prompt for AI (if auto-feedback enabled):**
-```
-This is a bonus comparative reflection exercise. Provide brief encouraging feedback that:
-1. Acknowledges insights you identified about peer vs. AI feedback differences
-2. Highlights strong critical thinking if present (e.g., "Your observation that peer feedback caught industry-specific brand fit issues while AI focused on technical presentation is exactly right")
-3. Encourages deeper analysis if answers are surface-level
-4. Maintains positive, growth-oriented tone
-
-Do NOT assign points or grades. Focus on validating critical evaluation skills.
-```
-
----
-
-## Element 9: **RENUMBERED** - Text Response - Post-Revision Reflection (was Element 6)
-
-**Element Type:** Text Response (Short answer, 1 bonus point)
-
-**Uplimit Configuration:**
-
-### Tab 1: Instructions
-
-**Question:**
-```
-After revising your strategy memo using both peer and AI feedback, reflect on which feedback source most influenced your revisions (75-100 words).
-```
-
-**Additional Instructions:**
-```
-**Post-Revision Reflection: Feedback Integration**
-
-Now that you've revised your strategy memo based on peer feedback AND AI feedback, reflect on the revision process.
-
-**Answer this question (75-100 words):**
-
-"Which feedback source (peer or AI) had the most influence on your revisions? Give 1-2 specific examples of changes you made based on each source. Did the comparative reflection process help you make better revision decisions than you would have with a single feedback source? How will you use AI tools differently in future marketing planning projects?"
-
-**Examples of strong responses:**
-- "We prioritized the peer's suggestion to make our TikTok tactic more specific ($50K influencer budget targeting 18-34 sports bettors) because peers understood our target audience better. However, we applied the AI's recommendation to restructure our ROI table for clearer presentation—the AI caught that our CPM calculations were buried in paragraph text instead of a table."
-
-**Submission:** Submit your submits below. Include this reflection as Page 3 addendum to your final strategy memo (does not count toward 2-page limit).
-```
-
-**Template Upload:** No template
-
----
-
-### Tab 2: Criteria (Bonus Credit, No Rubric)
-
-**Uplimit Configuration:**
-- ⭕ DO NOT enable rubric grading (this is bonus credit)
-- ✅ Provide encouraging feedback on metacognitive awareness
-- ✅ Award 1 bonus point for thoughtful post-revision reflection (part of 5-point PAIRR bonus)
-
-**Instructor Grading Notes:**
-- 1 point: Specific examples of changes made based on each feedback source, demonstrates thoughtful integration
-- 0 points: Vague "we used both sources" without specific examples
-
-**Feedback Prompt for AI (if auto-feedback enabled):**
-```
-This is a bonus post-revision reflection. Provide brief encouraging feedback that:
-1. Validates specific examples of feedback integration you describe
-2. Highlights strong metacognitive awareness if present (e.g., "Your realization that AI excels at presentation polish while peers catch domain-specific issues shows sophisticated understanding")
-3. Encourages application of these insights to future work
-4. Maintains positive, growth-oriented tone
-
-Do NOT assign points or grades. Focus on reinforcing learning about AI collaboration.
-```
-
----
-
-## Element 10: **RENUMBERED** - Text Response - Week 3 Reflection (was Element 7)
+## Element 6: Text Response - Week 3 Reflection (Ungraded)
 
 **Element Type:** Text Response (Short answer, ungraded)
 
@@ -657,23 +345,24 @@ Do NOT assign points or grades. Focus on reinforcing learning about AI collabora
 
 **Question:**
 ```
-Reflect on your Week 3 learning by answering these 3 questions (250 words total).
+Reflect on your Week 3 learning by answering these questions (200-250 words total).
 ```
 
 **Additional Instructions:**
 ```
-**Reflection Questions (Optional, Ungraded)**
+**Week 3 Reflection (Optional, Ungraded)**
 
-**Question 1 (75-100 words):** What surprised you most about sponsorship economics this week? Did anything challenge your assumptions about how brands value sports partnerships?
+**Question 1: Sponsorship Economics (75 words)**
+What surprised you most about sponsorship economics this week? Did anything challenge your assumptions about how brands value sports partnerships or evaluate ethical risks?
 
-**Question 2 (75-100 words):** How did sports betting integration change your understanding of sponsorship value? Before this week, did you realize bettors watch 40% more games, or that betting sponsors can track attribution better than traditional sponsors?
+**Question 2: Ethical Complexity (75 words)**
+How did the LIV Golf case study change your thinking about sponsorship decisions? Before this week, did you consider how stakeholder analysis and controversy-adjusted ROI affect brand decisions?
 
-**Question 3 (75-100 words):** If you were a brand CMO deciding between a $10M NFL jersey sponsor deal and a $12M FanDuel partnership (20% premium), which would you choose and why? Use frameworks from this week to justify your decision.
-
-**Question 4 (75-100 words) - METACOGNITIVE REFLECTION:** Which learning activity this week helped you understand sponsorship ROI most effectively—interactive widgets (CPM calculator, budget builder, ROI tool), FanDuel case study analysis, writing your strategy memo, or executive videos? Why did that modality work best for YOU? How can you apply that insight to optimize your learning in Week 4 (Athletes & Brands)?
+**Question 3: Application to CFL Project (50-75 words)**
+Looking ahead to Milestone 3 (Module 7), how will you apply this week's frameworks to your CFL expansion city? What sponsor categories will you target, and what ethical considerations might arise?
 
 **Why Reflect?**
-Reflection consolidates learning. Research shows students who reflect on course content retain 30% more information than those who don't. Question 4's metacognitive reflection (thinking about HOW you learn) helps you optimize future learning strategies. This is ungraded—purely for your benefit.
+Research shows students who reflect on course content retain 30% more information. This is ungraded—purely for your benefit and to prepare for Milestone 3.
 ```
 
 **Template Upload:** No template
@@ -685,14 +374,13 @@ Reflection consolidates learning. Research shows students who reflect on course 
 **Uplimit Configuration:**
 - ⭕ Do NOT enable grading (ungraded reflection)
 - ✅ AI provides encouraging feedback only
-- ✅ Focus on consolidating learning
 
 **Feedback Prompt for AI:**
 ```
-This is an ungraded reflection. Provide encouraging feedback that:
-1. Validates insights the student shares
-2. Connects their reflection to course frameworks (e.g., "Your point about engagement multipliers is exactly right—Module 3 showed bettors watch 40% more games")
-3. Encourages deeper thinking if answers are surface-level
+This is an ungraded reflection. Provide brief encouraging feedback that:
+1. Validates insights the student shares about sponsorship economics and ethical complexity
+2. Connects their reflection to Week 3 frameworks (stakeholder analysis, controversy-adjusted ROI, sportswashing)
+3. Encourages application to CFL Project Milestone 3
 4. Maintains positive, growth-oriented tone
 
 Do NOT assign points or grades. Focus on learning consolidation.
@@ -700,12 +388,12 @@ Do NOT assign points or grades. Focus on learning consolidation.
 
 ---
 
-## Element 11: **RENUMBERED** - Video - Week 3 Wrap-Up & Week 4 Preview (was Element 8)
+## Element 7: Video - Week 3 Wrap-Up & Week 4 Preview
 
 **Video Specifications:**
 - **Length:** 2 minutes
-- **Topic:** "Week 3 Wrap-Up: Sponsorship & Betting + Week 4 Preview: Athletes & Brands"
-- **Key Points:** Week 3 key takeaways, connection to Week 4, preparation instructions
+- **Topic:** "Week 3 Wrap-Up: Sponsorship & Ethical Complexity + Week 4 Preview: Athletes & Brands"
+- **Key Points:** Week 3 key takeaways, connection to CFL Project, Week 4 preparation
 - **Accessibility:** Captions required, transcript provided
 
 **Video Status:** 📝 Script complete, awaiting production
@@ -713,269 +401,111 @@ Do NOT assign points or grades. Focus on learning consolidation.
 **Video Script (2 minutes):**
 ```
 [0:00-0:15] Week 3 Recap
-"Congratulations on completing Week 3: Sponsorship & Betting. You've learned how brands value sports partnerships, why betting sponsors often pay 20-30% premiums, and how to design ROI-driven strategy memos. Let's review the key takeaways."
+"Congratulations on completing Week 3: Sponsorship, Betting & Ethical Complexity. You've learned how sponsors value partnerships, why betting operators pay premiums, and how to navigate ethically complex sponsorship decisions. Let's review the key takeaways."
 
-[0:15-0:45] Week 3 Key Takeaways
+[0:15-0:50] Week 3 Key Takeaways
 "Three frameworks to remember:
-1. **Sponsorship ROI:** Calculate CPM (rights fee / impressions × 1,000), allocate activation budget at 2-3× rights fee, measure through reach-engagement-conversion funnel.
-2. **Betting Economics:** Bettors are the most valuable fans—40% more viewership, 3× digital engagement, 2× merchandise spending. Betting partnerships offer attribution advantages (first-party data) that traditional sponsors can't match.
-3. **Activation Design:** Generic tactics fail. Specific, integrated campaigns across advertising, digital, retail, experiential, and measurement channels deliver measurable ROI. Always ask: What's the engagement mechanism? How do we attribute sales?"
 
-[0:45-1:15] Connection to Week 4
-"Week 4 shifts from league/team sponsorships to individual athletes and emerging sports. You'll learn:
-- How athletes build personal brands (case: Serena Williams)
-- Why women's sports sponsorship grew 300% in 5 years
-- How to evaluate emerging sports investments (Pickleball, Padel, esports)
-- Whether brands should sign athletes vs. sponsor leagues
+1. **Sponsorship ROI:** Calculate CPM (rights fee divided by impressions times 1,000), allocate activation budget at 2-3× rights fee, measure through reach-engagement-conversion funnel.
 
-**Key Question:** Serena Williams charges $12M/year for endorsements. LeBron James charges $20M. How do brands decide if that's worth it? You'll learn the athlete ROI framework."
+2. **Betting Economics:** Bettors are the most valuable fans—40% more viewership, 3× digital engagement. Betting partnerships often command 20-30% premiums because they offer first-party data and closed-loop attribution.
 
-[1:15-1:45] Week 4 Preparation
-"Before Week 4 starts:
-- **Read:** Serena Williams: Building a Brand (HBS 517050) - purchase through course pack
-- **Watch:** Interview with sports agent (posted to Uplimit)
-- **Prepare:** Think about your favorite athlete. What brands do they endorse? Why those brands? We'll analyze this in Week 4 Module 1.
+3. **Ethical Framework:** Sponsorship decisions aren't just math. The LIV Golf case taught you to analyze stakeholder impacts, calculate controversy-adjusted ROI, and make defensible recommendations when values and profits conflict."
 
-**Case prep time:** 25-30 minutes"
+[0:50-1:20] Connection to CFL Project
+"Next up in Module 7: Apply these frameworks to YOUR CFL expansion city. In Milestone 3, you'll design a sponsorship strategy—identifying target sponsors, setting pricing, and addressing any ethical considerations for your market.
+
+The LIV Golf memo was practice advising a brand. Milestone 3 flips the perspective—you ARE the sports property attracting brands. Same frameworks, different vantage point."
+
+[1:20-1:45] Week 4 Preview
+"Week 4 shifts from team/league sponsorship to individual athletes and emerging sports. You'll learn:
+- How athletes build personal brands (Serena Williams case study)
+- Why women's sports sponsorship is the fastest-growing category
+- How to evaluate emerging sports investments
+
+**Before Week 4:** Access the Serena Williams case through HBS. Think about your favorite athlete—what brands do they endorse, and why?"
 
 [1:45-2:00] Closing
-"You've completed 3 weeks: Revenue Ecosystems (Week 1), Media Rights (Week 2), Sponsorship & Betting (Week 3). Next up: the human side of sports marketing—athletes, personal brands, and emerging markets. See you in Week 4!"
+"You've completed three weeks: Revenue Ecosystems, Media Rights, and now Sponsorship & Ethics. You have the analytical toolkit. Weeks 4 and 5 show you how to apply it to athletes, emerging markets, and your final CFL project. See you in Module 7 for Milestone 3, then Week 4!"
 ```
 
 ---
 
-## Element 12: **RENUMBERED** - Infobox - Week 4 Preview (was Element 9)
+## Element 8: Infobox - Week 4 Preview
 
 ```
-Title: ▶ Next Steps: Week 4 - Athletes, Brands & Emerging Sports
+Title: ▶ What's Next: Module 7 + Week 4
 
-**Week 4 Focus:**
-Shift from institutional sponsorships (leagues, teams, betting operators) to individual athletes and emerging sports properties.
+**Immediately Next: Module 7 - Wrap-Up & Milestone 3**
+Before Week 4, complete Module 7:
+- Review Week 3 synthesis
+- Submit CFL Expansion Milestone 3 (25 points) - Apply sponsorship frameworks to YOUR city
+- Preview Week 4 topics
+
+**Week 4 Focus: Athletes, Brands & Emerging Sports**
+Shift from institutional sponsorships (leagues, teams) to individual athletes and emerging properties.
 
 **Key Questions:**
 - How do athletes build brand value? (Serena Williams case study)
 - Why are brands investing 300% more in women's sports?
-- How do you evaluate emerging sports (Pickleball, Padel, esports) as sponsorship opportunities?
+- How do you evaluate emerging sports (Pickleball, esports) as opportunities?
 - Should brands sign athletes or sponsor leagues?
 
-**Preparation (Due Before Week 4 Module 1):**
-1. **Purchase and read case:** Serena Williams: Building a Brand (HBS 517050) - $8.95 at hbsp.harvard.edu
-2. **Watch interview:** Sports agent on athlete endorsement economics (20 min video posted to Uplimit)
-3. **Reflection:** Who's your favorite athlete? What brands do they endorse? Why?
+**Week 4 Preparation:**
+1. **Access case:** Serena Williams: Building a Brand (HBS 517050)
+2. **Reflect:** Who's your favorite athlete? What brands do they endorse? Why those brands?
 
 **Week 4 Assessment:**
-Peer-reviewed memo (individual, not group): "Should Brand X sign Athlete Y?" (30 points)
+Milestone 4 will add athlete/ambassador strategy to your CFL expansion plan.
 
-**See you Week 4!**
+**Complete Module 7 first, then see you in Week 4!**
 ```
 
 ---
 
-## Module 6 Complete - Week 3 Finished!
+## Module 6 Complete - Transition to Module 7
 
-**Completion Badge:** 🏆 Week 3: Sponsorship & Betting Complete
-
-**What You've Accomplished This Week:**
-- Learned sponsorship ROI frameworks (CPM, activation budgets, reach-engagement-conversion funnels)
-- Analyzed sports betting economics (market modeling, engagement multipliers, partnership premiums)
-- Applied frameworks to FanDuel case study (competitive analysis, customer economics)
-- Designed a sponsorship strategy memo individually (40-point deliverable)
-- Peer reviewed a peer's plan (optional 5 bonus points)
+**What You've Accomplished:**
+- Submitted your LIV Golf strategy memo (40 points)
+- Optionally used AI feedback to strengthen your analysis (1 bonus point)
 - Reflected on Week 3 learning
 
-**Total Week 3 Points:**
-- Pre-assessment (Module 1): Diagnostic (0 points)
-- Case analysis questions (Module 4): Formative feedback (0 points)
-- Activation plan (Module 5-6): 40 points
-- Peer review (Module 6): 5 bonus points (optional)
-- **Total:** 40-45 points
+**Total Module 6 Points:** 40-41 points
 
-**Week 3 Complete. Prepare for Week 4.**
+**Up Next: Module 7**
+- Week 3 synthesis
+- CFL Expansion Milestone 3 (25 points)
+- Week 4 preview
 
----
-
-## 🎯 FINAL PROJECT CONNECTION - WEEK 3 COMPLETE
-
-**You Just Built the Financial Foundation for Your Final Project**
-
-Week 3 was the most technical week of the course—you learned the frameworks that sports marketers use daily to value partnerships, calculate ROI, and justify sponsorship investments. **These skills directly translate to your Week 5 final project.**
-
-**Week 3 Mastery → Final Project Application:**
-
-**Skill 1: Sponsorship Valuation (Module 2)**
-- **What you learned:** Calculate CPM, apply 2-3× activation rule, model ROI through reach-engagement-conversion funnel
-- **Final project application (Slides 4 & 6):** "Our property delivers 50M impressions at $100 CPM—10× cheaper than TV ads. Title sponsors invest $5M + $10-15M activation and earn 36% ROI through our first-party data partnerships."
-
-**Skill 2: Betting Partnership Economics (Module 3)**
-- **What you learned:** Bettors watch 40% more games, betting sponsors often pay 20-30% premiums for attribution data
-- **Final project application (Slide 4):** "If our property is in a betting-legal market, we'll offer 'Official Betting Partner' tier at $10-15M (premium pricing justified by engagement multipliers and closed-loop attribution)."
-
-**Skill 3: Case-Based Strategic Analysis (Module 4)**
-- **What you learned:** Analyze competitive positioning, evaluate partnership ROI, model customer economics
-- **Final project application (Slide 2: Business Context):** "Our property faces competition from [X, Y, Z]. FanDuel's case taught us exclusive partnerships (PGA $85 CAC) outperform shared (NFL $110 CAC). We'll offer category exclusivity in 5 tiers to maximize partner value."
-
-**Skill 4: Activation Plan Design (Module 5)**
-- **What you learned:** Design specific, executable tactics across 5 channels with ROI projections
-- **Final project application (Slide 5: Activation Plan):** "We offer sponsors turnkey activation across advertising (broadcast integration), digital (app placement), retail (point-of-sale), experiential (VIP hospitality), and measurement (attribution tracking). Our template delivered 36% ROI for Nike in Week 3 analysis."
+**Then: Week 4 - Athletes, Brands & Emerging Sports**
 
 ---
 
-## Final Project Readiness Check
+## Instructor Notes
 
-After Week 3, you should be able to answer YES to these questions:
+**Module 6 Teaching Goals:**
+- Collect summative assessment (strategy memo)
+- Provide opportunity for AI-assisted learning (optional)
+- Consolidate Week 3 learning through reflection
+- Transition to Milestone 3 and Week 4
 
-**Slide 4: Sponsorship/Media Strategy - Can you explain how your property makes money?**
-- ✅ Can you identify 3-5 sponsorship tiers with pricing ($500K-$20M)?
-- ✅ Can you justify why brands would pay those amounts (CPM calculations, engagement data)?
-- ✅ Can you explain category exclusivity strategy (which sponsors get exclusivity, why)?
-- ✅ Can you position betting partnerships (if applicable to your market)?
+**Grading Priorities:**
+- Strategy memo rubric emphasizes brand-specific analysis over generic frameworks
+- Look for evidence of Module 4 exercise outputs (Ethical Decision Tool, Brand Risk Calculator)
+- Ethical framework criterion rewards nuanced engagement with sportswashing debate
 
-**Slide 5: Activation Plan - Can you show sponsors what they'll GET for their investment?**
-- ✅ Can you design specific activation tactics (not generic "social media campaign")?
-- ✅ Can you allocate activation budget across 5 channels with rationale?
-- ✅ Can you demonstrate integration across channels (how tactics reinforce each other)?
+**Common Student Challenges:**
+- Generic analysis not tailored to chosen brand
+- Missing stakeholder weighting rationale
+- Treating decision as purely financial (ignoring ethical dimension)
+- Not referencing case data from Module 4
 
-**Slide 6: Financial Snapshot - Can you PROVE your property delivers sponsor ROI?**
-- ✅ Can you calculate CPM for your property's reach?
-- ✅ Can you model sponsor ROI using reach-engagement-conversion funnel?
-- ✅ Can you benchmark your property vs. alternatives (other sports, traditional advertising)?
-- ✅ Can you acknowledge conservative assumptions (attribution discounts, churn rates)?
-
-**If you answered YES to 10+ questions above, Week 3 prepared you well for final project financial sections.**
-
----
-
-## What You're Carrying Forward to Week 5
-
-**Data You Should Save:**
-1. **Widget Exports (JSON/CSV):** All calculations from Sponsorship Valuation Calculator, ROI Calculator, Activation Budget Builder, Customer Economics Calculator—reuse these in your final project financial appendix
-2. **Your Strategy Memo:** This document is your Slide 5 template—adapt it for your property
-3. **Peer Review Feedback:** The rubric criteria (strategic clarity, activation design, ROI justification, presentation quality) apply to final project grading too
-
-**Frameworks You Should Remember:**
-- CPM calculation: Rights fee / impressions × 1,000
-- Activation rule: 2-3× rights fee
-- ROI funnel: Reach → Engagement → Conversion
-- Betting premium: Often 20-30% more for attribution + engagement multipliers
-- Partnership economics: CAC, LTV, payback period, profitability
-
-**Skills You Should Apply:**
-- Specificity over generality (concrete examples, not vague tactics)
-- Data-driven justification (benchmarks from course widgets, not unsupported claims)
-- Conservative assumptions (acknowledge uncertainty, discount projections 30% for attribution)
-- Professional presentation (executive summary format, clear tables/charts)
+**AI Feedback Exercise Notes:**
+- Optional—don't penalize students who skip it
+- Bonus point rewards engagement, not quality of AI output
+- Goal is AI literacy, not AI-written memos
 
 ---
 
-## Week 4 Preview: Adding the Athlete Dimension
-
-Week 3 taught sponsorship economics at the institutional level (leagues, teams, betting operators). **Week 4 adds the athlete dimension:**
-
-- Should Nike sponsor the NBA (league) or sign LeBron James (athlete)?
-- How do athletes build brand value independently of their teams?
-- Why are brands investing 300% more in women's sports?
-- How do you evaluate emerging sports (Pickleball, esports) as sponsorship opportunities?
-
-**Final Project Impact:**
-Your Week 5 marketing plan can include athlete endorsements as part of your sponsorship strategy. Week 4 teaches you:
-- **Slide 5 addition:** "We'll sign 3 athletes as brand ambassadors ($500K-$2M each) to amplify sponsor activations through their social media reach (combined 10M followers)"
-- **Slide 6 addition:** Calculate athlete ROI using Week 4's framework (social reach × engagement rate × conversion attribution)
-
-**Prepare for Week 4:**
-- Read Serena Williams case (HBS 517050)
-- Watch sports agent interview video
-- Think: Who's your favorite athlete? What brands do they endorse? Why?
-
----
-
-🎉 **Congratulations on completing Week 3!** You've built the financial expertise to justify sponsorship investments—the hardest analytical skill in sports marketing. Weeks 4-5 build on this foundation.
-
-**Next:** Week 4 - Athletes, Brands & Emerging Sports
-
----
-
----
-
-## Element 13: CFL Project Milestone 3 Instructions
-
-### ⓘ Infobox Content
-
-```markdown
-Title: 🏈 CFL Expansion Project - Milestone 3: Sponsorship & Betting Strategy
-
-**Team Deliverable:** Sponsorship Acquisition Plan (3-4 pages)
-**Weight:** 20% of total project grade (20 points)
-**Due:** End of Week 3
-
-Your team will submit ONE document that includes:
-
-**1. Sponsorship Inventory**
-- Naming rights (stadium, practice facility)
-- Jersey sponsors (front, sleeve, helmet)
-- Category partnerships (automotive, banking, telecom, beer)
-- Community partnerships (local businesses)
-
-**2. Tiered Sponsorship Structure**
-- Founding Partner tier (multi-year, $X million)
-- Premier Partner tier
-- Official Partner tier
-- Community Partner tier
-- Pricing and ROI projections for each tier
-
-**3. Activation Strategy**
-- How will sponsors activate beyond logo placement?
-- Fan experience integrations
-- Digital/social activations
-- Community program sponsorships
-
-**4. Sports Betting Integration**
-- Provincial betting regulations in your market
-- Betting operator partnership opportunities
-- In-stadium betting experience
-- Data licensing revenue
-- Responsible gambling considerations
-
-📋 **Full Project Details:** [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
-```
-
----
-
-## Element 14: Milestone 3 File Upload
-
-**Uplimit Configuration:**
-- **Element Type:** File Upload
-- **Allowed Formats:** PDF, DOCX, Google Docs link
-- **Team Submission:** One submission per team
-
-**Submission Instructions:**
-```markdown
-## Milestone 3 Submission
-
-Upload your team's Sponsorship Acquisition Plan here.
-
-**Requirements:**
-- 3-4 pages (excluding title page and references)
-- Professional formatting
-- All team member names on title page
-- One submission per team
-
-**Filename Format:** `TeamName_M3_SponsorshipPlan.pdf`
-
-**Rubric Preview:**
-| Criterion | Points |
-|-----------|--------|
-| Sponsorship Inventory & Tiering | 5 |
-| Activation Strategy | 5 |
-| Betting Integration | 5 |
-| ROI Projections | 3 |
-| Professional Presentation | 2 |
-| **Total** | **20** |
-```
-
----
-
-**STORYBOARD STATUS:** Week 3 complete - All 6 modules fully specified with CFL Project Threading
-**TOTAL LENGTH:** 2,150+ lines (comprehensive, production-ready)
-**INTERACTIVE WIDGETS:** 10 widgets specified (estimated 80-100 hours total development)
-**VIDEOS:** 7 videos (2 minutes each, 14 minutes total)
-**ESTIMATED COURSE DELIVERY TIME:** 4-5 hours for students across 6 modules
+**STORYBOARD STATUS:** Module 6 complete - Streamlined for individual work
+**VERSION:** 3.0.0 (removed PAIRR, aligned with LIV Golf focus)

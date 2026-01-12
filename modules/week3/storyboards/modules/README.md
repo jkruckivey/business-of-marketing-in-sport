@@ -32,7 +32,7 @@
 **File:** [module-2-sponsorship-framework.md](module-2-sponsorship-framework.md)
 **Time:** 15-18 minutes
 **Purpose:** Understand sponsorship ROI fundamentals, build activation framework
-**Focus:** Interactive widgets for sponsorship valuation and ROI calculation
+**Focus:** Interactive exercises for sponsorship valuation and ROI calculation
 **Readings:** PwC Sponsorship Playbook, Sports Industry Outlook, AI in Sports
 
 ### Module 3: Sports Betting Economics
@@ -81,7 +81,7 @@
 
 ## Interactive Widgets
 
-Week 3 includes 11 interactive widgets:
+Week 3 includes 11 interactive exercises:
 
 **Module 2 - Sponsorship Framework:**
 - Sponsorship Valuation Calculator

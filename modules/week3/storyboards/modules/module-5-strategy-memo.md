@@ -1,13 +1,13 @@
 # MODULE 5: Sponsorship Strategy Memo
-**Version:** 2.0.0 | **Last Updated:** 2026-01-12
+**Version:** 3.0.0 | **Last Updated:** 2026-01-12
 
-### Version 2.0.0 Changes
-- **MAJOR:** Changed from Group Sprint to Individual Strategy Memo
-- **NEW:** LIV Golf scenario option added to apply ethical framework
-- **UPDATED:** Aligned with LIV Golf case study from Module 4
-- **UPDATED:** Removed group work requirements (individual submission)
+### Version 3.0.0 Changes
+- **MAJOR:** Refocused on LIV Golf as primary scenario (applies Module 4 ethical framework)
+- **CLARIFIED:** Connection to CFL Anchor Project—this memo practices skills you'll apply in Milestone 3
+- **UPDATED:** Removed group work language, confirmed individual submission
+- **STREAMLINED:** Betting operator scenarios moved to secondary options
 
-**Purpose:** Individual synthesis of sponsorship frameworks into strategic recommendation memo (measures WLOs 3.3, 3.4, 3.5)
+**Purpose:** Individual synthesis of sponsorship frameworks into strategic recommendation memo, practicing skills for CFL Anchor Project Milestone 3 (measures WLOs 3.3, 3.4, 3.5)
 
 **Uplimit Structure:** Fifth module in Unit 3
 
@@ -16,9 +16,9 @@
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 4 | Type directly | Launches individual memo assignment |
 | 2 | **Infobox (Assessment)** ⬤ Required | Assignment brief and rubric preview | Type directly | Purple variant, 40 points |
 | 3 | **Details** ⬤ Required | Full assignment instructions | Type directly | Accordion - detailed requirements |
-| 4 | **Interactive Widget** ◐ Recommended | Strategy Memo Template Builder | Embed iframe | Auto-generates memo structure |
-| 5 | **AI Chat Widget** ◐ Recommended | Strategy Memo Coach | Configure in Uplimit | Socratic guidance (not answers) |
-| 6 | **Details** ○ Optional | Example memos (3 quality levels) | Type directly | Accordion - A/B/C grade examples |
+| 3A | **▬ Text** ⬤ Required | Using Module 4 exercises | Type directly | How to apply exercise outputs to memo |
+| 4 | **AI Chat Widget** ◐ Recommended | Strategy Memo Coach | Configure in Uplimit | Socratic guidance (not answers) |
+| 5 | **Details** ○ Optional | Example memos (3 quality levels) | Type directly | Accordion - A/B/C grade examples |
 
 ---
 
@@ -27,14 +27,16 @@
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-You've built powerful frameworks (sponsorship ROI, betting economics, engagement multipliers), practiced with widgets (CPM calculators, ROI models, risk calculators), and wrestled with ethical complexity through the LIV Golf case. Now it's time to synthesize everything into a professional deliverable.
+You've built powerful frameworks (sponsorship ROI, controversy-adjusted ROI, stakeholder analysis), practiced with interactive exercises (Brand Risk Calculator, Ethical Sponsorship Decision Tool), and wrestled with ethical complexity through the LIV Golf case and Phil Mickelson roleplay. Now it's time to synthesize everything into a professional deliverable.
 
-**Your Challenge:** Write a 2-page sponsorship strategy memo advising a real brand on a specific sponsorship decision. This is your Week 3 graded deliverable (40 points).
+**Your Challenge:** Write a 2-page sponsorship strategy memo advising a brand on whether to sponsor LIV Golf. This is your Week 3 graded deliverable (40 points).
 
 **Why This Matters:** In sports marketing, executives don't want lengthy reports—they want clear, data-driven recommendations in memo format. Your memo must answer three questions:
 1. **What's the recommendation?** (Sponsor or decline? Why?)
-2. **What's the evidence?** (CPM analysis, ROI projections, risk assessment)
+2. **What's the evidence?** (ROI projections, controversy-adjusted analysis, stakeholder impact)
 3. **What are the trade-offs?** (What you gain vs. what you risk)
+
+**Connection to Your CFL Project:** This memo is practice for Milestone 3 of your CFL Expansion Anchor Project. Here, you'll advise a brand on LIV Golf; in Milestone 3 (Module 7), you'll apply these same skills to design a sponsorship strategy for YOUR CFL city. Master the frameworks now—you'll use them again.
 
 **Format:** 2-page executive memo (max 800 words) including data tables and recommendation
 
@@ -44,7 +46,7 @@ You've built powerful frameworks (sponsorship ROI, betting economics, engagement
 
 **Individual Work:** This is an individual assignment. You'll apply your personal analysis and ethical framework to make a defensible recommendation.
 
-**Time Allocation:** 60-75 minutes for Module 5 memo development + 30-40 minutes Module 6 finalization and PAIRR feedback
+**Time Allocation:** 60-75 minutes for Module 5 memo development + 30-40 minutes Module 6 finalization
 
 Let's begin. Read the full assignment brief in the next element.
 ```
@@ -56,33 +58,30 @@ Let's begin. Read the full assignment brief in the next element.
 ```
 Title: ▪ Assessment: Sponsorship Strategy Memo (40 points)
 
-**Assignment:** Write a 2-page sponsorship strategy memo advising a brand on whether to pursue a specific sponsorship opportunity.
+**Assignment:** Write a 2-page sponsorship strategy memo advising a brand on whether to sponsor LIV Golf.
 
 **Format:**
 - Page 1: Executive recommendation (max 500 words) - Recommendation, rationale, key evidence
-- Page 2: Supporting analysis - CPM/ROI calculations, risk assessment, trade-off summary
+- Page 2: Supporting analysis - ROI calculations, stakeholder analysis, risk assessment
 
-**Scenario Options (Choose One):**
+**Primary Scenarios (Choose One - LIV Golf Focus):**
+1. **BMW + LIV Golf:** Should BMW sponsor LIV Golf given premium brand positioning and ESG commitments?
+2. **Mastercard + LIV Golf:** Should Mastercard join LIV Golf despite financial services' reputation sensitivity?
+3. **Budweiser + LIV Golf:** Should AB InBev's Budweiser sponsor LIV Golf given mass-market positioning?
+4. **Rolex + LIV Golf:** Should Rolex switch from PGA Tour exclusivity to include LIV Golf?
 
-**Standard Scenarios (Sponsorship ROI Focus):**
-1. **Nike + FanDuel:** Should Nike partner with FanDuel for NBA betting integration?
-2. **Coca-Cola + DraftKings:** Should Coke expand NFL partnership to include DraftKings?
-3. **Verizon + BetMGM:** Should Verizon sponsor BetMGM to showcase 5G live betting?
+**Alternative Scenarios (If approved by instructor):**
+5. **Nike + FanDuel:** Should Nike partner with FanDuel for NBA betting integration?
+6. **Custom:** Propose your own brand + controversial property pairing (requires ethical dimension)
 
-**Ethical Complexity Scenarios (Recommended - Apply Module 4 Framework):**
-4. **BMW + LIV Golf:** Should BMW sponsor LIV Golf given premium brand positioning?
-5. **Mastercard + LIV Golf:** Should Mastercard join LIV Golf despite ESG commitments?
-6. **Budweiser + LIV Golf:** Should AB InBev's Budweiser sponsor LIV Golf?
-
-**Custom Option:**
-7. Propose your own brand + property pairing (requires ethical dimension)
+**Connection to CFL Project:** This memo practices the analytical skills you'll apply in Milestone 3. There, you'll design a sponsorship strategy for YOUR CFL city—identifying sponsors, setting pricing, and justifying ROI. Master the framework here; apply it to your project.
 
 **Deliverable:** PDF upload by end of Module 6
 
 **Grading Rubric (40 points):**
 - Strategic Clarity (10 pts): Clear recommendation with compelling rationale
-- Analytical Rigor (15 pts): Proper use of CPM, ROI, and risk frameworks from course
-- Ethical Framework (10 pts): Thoughtful stakeholder analysis and trade-off assessment
+- Analytical Rigor (15 pts): Proper use of controversy-adjusted ROI, stakeholder analysis, Brand Risk Calculator outputs
+- Ethical Framework (10 pts): Thoughtful application of Module 4 sportswashing framework
 - Presentation Quality (5 pts): Professional memo format, clear writing, data visualization
 
 **Individual Work:** This is an individual assignment.
@@ -108,9 +107,9 @@ Title: ▪ Assessment: Sponsorship Strategy Memo (40 points)
 PHASE 1: RESEARCH (15 minutes)
 Icon: 🔍 Magnifying glass
 Tasks:
-- Choose your scenario (standard or LIV Golf ethical)
-- Review relevant case data and widget outputs
-- Identify key stakeholders and decision factors
+- Choose your brand + LIV Golf scenario
+- Review Module 4 case outputs (Ethical Decision Tool, Brand Risk Calculator)
+- Identify key stakeholders for your chosen brand
 Output: Decision context mapped
 
 ↓
@@ -118,10 +117,10 @@ Output: Decision context mapped
 PHASE 2: ANALYZE (20 minutes)
 Icon: 📊 Calculator
 Tasks:
-- Calculate CPM using Sponsorship Valuation Calculator
-- Run Brand Risk Calculator (if ethical scenario)
-- Model ROI projections with assumptions
+- Run Brand Risk Calculator with your brand's inputs
 - Complete Ethical Decision Tool stakeholder analysis
+- Model controversy-adjusted ROI with assumptions
+- Document your stakeholder weightings and rationale
 Output: Quantitative analysis complete
 
 ↓
@@ -131,7 +130,7 @@ Icon: ✍️ Document
 Tasks:
 - Draft executive recommendation (Page 1)
 - State your position clearly in opening paragraph
-- Support with evidence from your analysis
+- Support with evidence from Module 4 exercises
 - Address trade-offs and alternatives considered
 Output: Draft memo complete
 
@@ -165,118 +164,113 @@ Output: Final strategy memo PDF
 
 ---
 
-## Element 3: **RENUMBERED** - Details - Full Assignment Instructions (was Element 2)
+## Element 3: Details - Full Assignment Instructions
 
 ```
 Title: Full Assignment Instructions (Expand for Detailed Requirements)
 
-[Expand to see complete activation plan requirements]
+[Expand to see complete strategy memo requirements]
 
-## Sponsorship Activation Plan Assignment (40 Points)
+## Sponsorship Strategy Memo Assignment (40 Points)
 
-### Part 1: Executive Summary (Page 1, Max 500 Words)
+### Connection to Your CFL Project
+This memo is deliberate practice. Here, you'll advise a brand on LIV Golf—applying the ethical sponsorship framework, stakeholder analysis, and controversy-adjusted ROI from Module 4. In Milestone 3 (Module 7), you'll flip perspectives: instead of advising a brand, you'll BE the sports property (your CFL team) designing a sponsorship strategy to attract brands. Same frameworks, different vantage point.
 
-**Section A: Strategic Foundation (3 paragraphs, ~150 words)**
-1. **Brand + Operator Selection:** Which brand partnered with which betting operator, and why this pairing makes strategic sense
-2. **Target Audience:** Who are you trying to reach? (Demographics, psychographics, betting behavior)
-3. **Objectives:** 2-3 SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound)
-   - Example: "Increase Nike app downloads by 250,000 among NBA bettors (18-34 demo) within 12 months through FanDuel co-marketing"
+### Part 1: Executive Recommendation (Page 1, Max 500 Words)
 
-**Section B: Activation Tactics (4 paragraphs, ~200 words)**
-Describe your activation mix across these channels:
-1. **Advertising:** How will you amplify the partnership? (TV spots during games, digital ads in FanDuel app, social media campaigns)
-2. **Digital/Social:** Content strategy, influencer partnerships, co-branded campaigns
-3. **Retail/Product:** In-store promotions, limited-edition products, QR codes linking FanDuel + brand
-4. **Experiential:** Events, hospitality, fan activations (in-stadium, virtual, hybrid)
+**Section A: Recommendation & Rationale (~150 words)**
+1. **Clear Position:** State your recommendation in the first sentence (Sponsor LIV Golf / Decline / Conditional acceptance)
+2. **Brand Context:** Why does this decision matter for this specific brand? (BMW's premium positioning, Mastercard's ESG commitments, Budweiser's mass-market exposure)
+3. **Key Factors:** What 2-3 factors drove your recommendation? (stakeholder analysis, controversy-adjusted ROI, competitor positioning)
 
-For each channel, specify:
-- **Tactic:** What you'll do
-- **Why:** How it supports objectives
-- **Example:** One concrete execution idea
+**Section B: Stakeholder Analysis (~150 words)**
+Using your Ethical Sponsorship Decision Tool outputs:
+1. **Stakeholder Impacts:** Summarize expected impact on each group (customers, employees, shareholders, media, advocacy groups)
+2. **Weighting Rationale:** Why did you weight stakeholders as you did? (e.g., "BMW's premium customers are highly sensitive to ethical concerns, weighted at 35%")
+3. **Critical Stakeholder:** Which stakeholder group most influenced your recommendation, and why?
 
-**Section C: Measurement Framework (2 paragraphs, ~150 words)**
-1. **KPIs:** What metrics will you track? (Reach impressions, engagement rate, conversion rate, sales lift, ROI %)
-2. **Attribution:** How will you prove the sponsorship drove results? (Promo codes, app tracking, geo lift studies, FanDuel data partnership)
-3. **Success Criteria:** What outcomes define success? (e.g., "Achieve 15% ROI within 12 months, 300,000 attributed new customers")
+**Section C: Trade-offs & Alternatives (~200 words)**
+1. **What You Gain:** If recommending sponsorship—financial opportunity, competitive positioning, audience reach
+2. **What You Risk:** Reputation damage, customer backlash, employee concerns, media scrutiny
+3. **Alternative Considered:** What's the counterfactual? (e.g., "Instead of LIV Golf, BMW could increase PGA Tour investment by 20% for similar reach with lower risk")
+4. **Conditions:** If conditional acceptance, what would need to change? (e.g., "Sponsor only if LIV Golf adds human rights provisions to athlete contracts")
 
 ---
 
-### Part 2: Budget Allocation & ROI Projections (Page 2, Spreadsheet Format)
+### Part 2: Supporting Analysis (Page 2, Data Tables)
 
-**Table 1: Budget Allocation**
+**Table 1: Stakeholder Impact Summary**
+(From your Ethical Sponsorship Decision Tool)
 
-| Channel | Allocation (%) | Spend ($M) | Key Tactics | Expected Reach |
-|---------|---------------|------------|-------------|----------------|
-| Advertising | 35% | $3.5M | TV spots, digital ads | 50M impressions |
-| Digital/Social | 25% | $2.5M | Influencer, social, content | 20M engaged users |
-| Retail/Product | 20% | $2.0M | In-store, limited editions | 5,000 stores, 2M customers |
-| Experiential | 15% | $1.5M | Events, hospitality, activations | 100K attendees |
-| Measurement | 5% | $0.5M | Analytics, attribution, tracking | N/A |
-| **Total** | **100%** | **$10M** | **Activation budget** | **70M+ total reach** |
-
-**Constraints:**
-- Total activation budget: $10-15M (assume rights fee = $5M, activation = 2-3× rights fee)
-- Allocate across all 5 channels (advertising, digital, retail, experiential, measurement)
-- Measurement must be 5-10% of total budget (industry best practice)
+| Stakeholder | Impact Rating (-2 to +2) | Weight (%) | Weighted Score | Key Concern/Benefit |
+|-------------|--------------------------|------------|----------------|---------------------|
+| Customers | [Your rating] | [Your %] | [Calculated] | [e.g., "38% say they'd avoid sportswashing brands"] |
+| Employees | [Your rating] | [Your %] | [Calculated] | [e.g., "52% uncomfortable with LIV sponsorship"] |
+| Shareholders | [Your rating] | [Your %] | [Calculated] | [e.g., "Lower CPM opportunity vs. reputation risk"] |
+| Media | [Your rating] | [Your %] | [Calculated] | [e.g., "Negative coverage likely for 6-12 months"] |
+| Advocacy Groups | [Your rating] | [Your %] | [Calculated] | [e.g., "Human rights groups will campaign against"] |
+| **Total** | — | **100%** | **[Decision Score]** | **[Recommend/Decline threshold]** |
 
 ---
 
-**Table 2: ROI Projections**
+**Table 2: Controversy-Adjusted ROI Analysis**
+(From your Brand Risk Calculator)
 
-| Metric | Calculation | Value |
-|--------|-------------|-------|
-| **Total Investment** | Rights fee + Activation | $15M ($5M rights + $10M activation) |
-| **Total Impressions** | Broadcast + digital + retail | 500M impressions |
-| **CPM** | Investment / Impressions × 1,000 | $30 CPM |
-| **Engagement Rate** | % of impressions who interact | 0.5% (2.5M engaged) |
-| **Conversion Rate** | % of engaged who purchase | 5% (125K customers) |
-| **Avg Purchase Value** | Revenue per converted customer | $150 |
-| **Total Revenue** | Customers × Avg purchase | $18.75M |
-| **ROI** | (Revenue - Investment) / Investment × 100 | **25% ROI** |
-| **Payback Period** | Investment / (Revenue / Years) | 2.4 years (assuming 3-year deal) |
+| Metric | Raw Value | Risk-Adjusted Value | Notes |
+|--------|-----------|---------------------|-------|
+| **Rights Fee** | $[X]M | — | LIV Golf sponsorship cost |
+| **Expected Impressions** | [X]M | — | Golf audience reach |
+| **Raw CPM** | $[X] | — | Before controversy adjustment |
+| **Engagement Rate** | [X]% | [X]% (adjusted for boycott) | Factor in customer avoidance |
+| **Boycott Probability** | — | [X]% | Your estimate based on brand positioning |
+| **Employee Productivity Impact** | — | [X]% | Morale/recruitment effects |
+| **Brand Equity at Risk** | — | $[X]M | Potential reputation damage |
+| **Raw ROI** | [X]% | — | Standard calculation |
+| **Risk-Adjusted ROI** | — | **[X]%** | After controversy discount |
+| **Breakeven Analysis** | — | [X]% | Controversy threshold for positive ROI |
 
-**Assumptions to Include:**
-- Engagement multiplier for bettors (use 40% from Module 3 widgets)
-- Conversion attribution (what % of revenue is truly from sponsorship vs. would have happened anyway?)
-- Customer lifetime value (if applicable)
+**Key Assumptions:**
+- State your boycott probability estimate and rationale
+- Explain your brand equity valuation approach
+- Note any conservative adjustments made
 
 ---
 
 ### Grading Rubric (40 Points)
 
 **Criterion 1: Strategic Clarity (10 points)**
-- Does not meet (0-6 pts): Target audience undefined or >50M people (too broad), objectives lack 2+ SMART criteria (e.g., "increase sales" without %, timeframe), brand-operator pairing has <2 supporting reasons
+- Does not meet (0-6 pts): Recommendation unclear or buried, no brand-specific context (generic analysis that could apply to any brand), fewer than 2 key factors identified
 - Partially meets (7-8 pts):
-  - 7 pts: Target audience quantified but lacks psychographic detail OR objectives missing 1 SMART criterion
-  - 8 pts: Target audience includes size + demographics + psychographics, objectives mostly SMART (missing only time-bound element), rationale includes 2 supporting reasons
+  - 7 pts: Clear recommendation stated, but rationale is generic or doesn't connect to brand positioning
+  - 8 pts: Clear recommendation with brand-specific rationale, but missing connection to case data (e.g., doesn't reference LIV Golf sponsor patterns from Module 4)
 - Fully meets (9-10 pts):
-  - 9 pts: Target audience with size (quantified in millions) + demographics + psychographics, all objectives fully SMART, rationale with 3+ supporting reasons using course data
-  - 10 pts: Above PLUS cites specific module content (e.g., "Module 3 widget showed 35-50% engagement multiplier for this demographic")
+  - 9 pts: Clear recommendation in first sentence, brand-specific rationale citing positioning/ESG/audience fit, 3+ decision factors with evidence
+  - 10 pts: Above PLUS references specific Module 4 content (e.g., "BMW's premium positioning mirrors Rolex, who declined LIV Golf for 'values alignment' concerns")
 
-**Criterion 2: Activation Design (15 points)**
-- Does not meet (0-9 pts): Generic tactics with no unique angle (e.g., "TV commercial during NFL games" with no differentiation), budget doesn't follow 2-3× rights fee rule (e.g., $5M rights but $8M activation instead of $10-15M), missing 2+ of 5 channels
+**Criterion 2: Analytical Rigor (15 points)**
+- Does not meet (0-9 pts): Missing stakeholder analysis OR missing ROI analysis, no use of Module 4 exercises, assumptions not stated
 - Partially meets (10-12 pts):
-  - 10 pts: Tactics present in 4 of 5 channels, budget follows 2-3× rule, but no unique execution vs. competitors
-  - 11 pts: Tactics in all 5 channels, budget justified, moderate creativity (unique execution of common tactic, e.g., "5G Live Betting Lane" in app)
-  - 12 pts: Above PLUS cross-channel integration (e.g., retail activation drives digital engagement)
+  - 10 pts: Both tables present but incomplete (e.g., stakeholder weights don't sum to 100%, ROI calculation missing key inputs)
+  - 11 pts: Complete tables with reasonable inputs, but rationale for weights/assumptions is weak or missing
+  - 12 pts: Complete tables with stated rationale, uses Module 4 exercise outputs, but doesn't explain how data drove recommendation
 - Fully meets (13-15 pts):
-  - 13 pts: All 5 channels with unique tactics, budget allocation justified per channel (% breakdowns match industry norms from widget), strong integration
-  - 14 pts: Above PLUS high creativity (innovative tactic with measurable differentiation, e.g., "Crypto wallet for NFT collectibles")
-  - 15 pts: Above PLUS betting partnership advantage explicitly leveraged (e.g., first-party data access, attribution methodology, engagement multiplier)
+  - 13 pts: Complete stakeholder and ROI analysis with clear rationale, explicit connection between data and recommendation
+  - 14 pts: Above PLUS conservative assumptions acknowledged, breakeven analysis included
+  - 15 pts: Above PLUS references specific case data (e.g., "38% boycott likelihood from Module 4 sportswashing framework," "52% employee discomfort statistic")
 
-**Criterion 3: ROI Justification (10 points)**
-- Does not meet (0-6 pts): Unrealistic projections (>500% ROI or <50% ROI with no justification), missing calculations (no CPM, engagement rate, or conversion rate shown), no attribution methodology mentioned
+**Criterion 3: Ethical Framework (10 points)**
+- Does not meet (0-6 pts): No stakeholder analysis, treats decision as purely financial, ignores sportswashing dimension
 - Partially meets (7-8 pts):
-  - 7 pts: Projections use course frameworks (CPM or engagement multiplier) but missing 2+ key assumptions (e.g., no churn rate, no CAC, no conversion funnel)
-  - 8 pts: Reasonable projections with most assumptions stated (CPM, engagement rate, conversion rate), but attribution methodology unclear or overly optimistic (>300% ROI without conservative disclaimer)
+  - 7 pts: Acknowledges ethical concerns but doesn't systematically analyze stakeholders
+  - 8 pts: Uses stakeholder framework but weighting rationale is weak or doesn't connect to brand positioning
 - Fully meets (9-10 pts):
-  - 9 pts: Data-driven projections using 3+ course frameworks (CPM from Module 2, engagement multiplier 35-50% from Module 3, CAC/LTV from Module 4 FanDuel case, conversion funnel from widget), attribution methodology explained (first-party data access, control group comparison), assumptions stated
-  - 10 pts: Above PLUS conservative assumptions acknowledged (e.g., "Using 35% engagement multiplier, low end of 35-50% range") AND cites widget outputs or module data as validation (e.g., "FanDuel's $400 CAC benchmark suggests our $350 assumption is realistic")
+  - 9 pts: Thoughtful stakeholder weighting with brand-specific rationale (e.g., "BMW weighted employees at 25% due to German corporate culture emphasis on workplace values")
+  - 10 pts: Above PLUS engages with sportswashing debate nuance (e.g., "While sportswashing evidence is mixed—Saudi favorability +15% among sports fans—BMW's customer base skews educated and likely more aware of ethical concerns")
 
 **Criterion 4: Presentation Quality (5 points)**
-- Does not meet (0-3 pts): Poor formatting, unclear writing, no data visualization
-- Partially meets (4 pts): Acceptable formatting and writing, basic tables
-- Fully meets (5 pts): Professional executive summary quality, clear writing, effective data visualization, polished PDF
+- Does not meet (0-3 pts): Poor formatting, unclear writing, no data tables
+- Partially meets (4 pts): Acceptable formatting and writing, basic tables present
+- Fully meets (5 pts): Professional executive memo quality, clear writing, well-formatted tables, polished PDF within 2-page limit
 
 ---
 
@@ -284,12 +278,8 @@ For each channel, specify:
 
 **Final Submission (Required - 40 points):**
 1. **Format:** Single PDF file (2 pages max)
-2. **File Name:**
-   - Groups: `GroupX_ActivationPlan_BrandName_OperatorName.pdf` (e.g., `Group3_ActivationPlan_Nike_FanDuel.pdf`)
-   - Individuals: `FirstNameLastName_ActivationPlan_BrandName_OperatorName.pdf` (e.g., `SarahChen_ActivationPlan_Nike_FanDuel.pdf`)
+2. **File Name:** `FirstNameLastName_LIVGolfMemo_BrandName.pdf` (e.g., `SarahChen_LIVGolfMemo_BMW.pdf`)
 3. **Upload:** Uplimit Module 6 submission box (due end of Module 6)
-4. **Group Members:** List all members on Page 1 header (groups only)
-5. **Declaration:** All members contributed equally (or note otherwise)
 
 **Late Submission Penalty:** -5% per 24 hours (max -20%). Accommodation requests processed within 4 hours—email instructor if you need extension.
 
@@ -298,25 +288,25 @@ For each channel, specify:
 ### Optional Checkpoint Submissions (No Points - Formative Feedback Only)
 
 **Why Use Checkpoints?**
-Get AI Coach feedback during your sprint to catch issues early. No points awarded, but can significantly improve final submission quality.
+Get AI Coach feedback while drafting to catch issues early. No points awarded, but can significantly improve final submission quality.
 
-**Checkpoint 1: Brand Selection + Target Audience (Module 5, 20 minutes into sprint)**
-- Submit to AI Coach: "We chose [Brand] + [Operator]. Target audience: [description]. Does this pairing make strategic sense?"
-- AI Coach will ask probing questions to refine your thinking
-- Example feedback: "Your target audience is 200M people—too broad. Narrow to specific psychographic segment."
+**Checkpoint 1: Brand Selection + Initial Position (15 minutes in)**
+- Submit to AI Coach: "I chose [Brand] + LIV Golf. My initial recommendation is [Sponsor/Decline] because [reason]. Does this make sense for this brand?"
+- AI Coach will ask probing questions about brand positioning and stakeholder priorities
+- Example feedback: "You say Mastercard should sponsor, but how does that align with their ESG commitments? What would employees think?"
 
-**Checkpoint 2: Budget Allocation Draft (Module 5, 40 minutes into sprint)**
-- Use Activation Plan Template Builder widget to generate budget table
-- Submit to AI Coach: "Here's our budget allocation: [screenshot]. Does this follow industry norms?"
-- AI Coach will validate against 2-3× rights fee rule and channel mix benchmarks
+**Checkpoint 2: Stakeholder Analysis Draft (30 minutes in)**
+- Share your Ethical Decision Tool outputs: stakeholder ratings and weights
+- Submit to AI Coach: "Here's my stakeholder analysis: [summary]. Is my weighting rationale sound?"
+- AI Coach will challenge assumptions and suggest alternative perspectives
 
-**Checkpoint 3: ROI Projection Draft (Module 6, 10 minutes before final submission)**
-- Calculate ROI using widgets, submit assumptions to AI Coach
-- AI Coach will flag unrealistic projections (>500% ROI without justification, missing attribution methodology)
-- Gives you time to revise before final deadline
+**Checkpoint 3: ROI Analysis Draft (45 minutes in)**
+- Share your Brand Risk Calculator outputs
+- Submit to AI Coach: "My risk-adjusted ROI is [X]%. Key assumptions: [list]. Is this realistic?"
+- AI Coach will flag unrealistic assumptions or missing factors
 
 **How to Submit Checkpoints:**
-- Use the AI Chat Widget "Activation Plan Coach" (Element 8 below)
+- Use the AI Chat Widget "Strategy Memo Coach" (Element 5 below)
 - No formal upload required—just paste your work-in-progress into chat
 - Receive instant feedback to improve final submission
 
@@ -324,416 +314,317 @@ Get AI Coach feedback during your sprint to catch issues early. No points awarde
 
 ### Resources Available
 
-- **Widgets:** Use all Module 2-4 widgets to model ROI (Sponsorship Valuation Calculator, ROI Calculator, Customer Economics Calculator, etc.)
-- **AI Coach:** Ask the Activation Plan Coach widget for guidance (it will ask Socratic questions, not give answers)
-- **Examples:** See Element 7 for 3 example activation plans (A/B/C grades)
+- **Module 4 Exercises:** Use your Ethical Sponsorship Decision Tool and Brand Risk Calculator outputs directly in your memo
+- **Case Data:** Reference the LIV Golf Sponsor Portfolio table (who signed vs. declined) and sportswashing statistics
+- **AI Coach:** Ask the Strategy Memo Coach for guidance (it will ask Socratic questions, not give answers)
+- **Examples:** See Element 6 for 3 example strategy memos (A/B/C grades)
 
 ---
 
 ### Tips for Success
 
-1. **Start with widgets:** Model your ROI before writing. Use Sponsorship ROI Calculator to set realistic targets.
-2. **Be specific:** "Social media campaign" is vague. "TikTok challenge: NBA bettors film their best dunk, tag #NikeFanDuelSlam, win signed LeBron jersey" is specific.
-3. **Show your work:** Include widget outputs as appendix (doesn't count toward 2-page limit)
-4. **Attribution matters:** FanDuel can share first-party data. Build this advantage into your measurement plan.
-5. **Conservative assumptions:** Better to under-promise and over-deliver. Acknowledge risks and uncertainties.
+1. **Lead with your recommendation:** Don't bury it. First sentence of Page 1 should state: "BMW should [sponsor/decline] LIV Golf because..."
+2. **Use your exercise outputs:** Your Ethical Decision Tool and Brand Risk Calculator results ARE your analysis. Don't recreate from scratch—export and reference.
+3. **Be brand-specific:** Generic analysis fails. "Premium brands face reputation risk" is weak. "BMW's customer base—educated, high-income, environmentally conscious—is 2.3× more likely to care about sportswashing (Morning Consult data)" is strong.
+4. **Engage the nuance:** The best memos acknowledge counterarguments. "While declining protects reputation, BMW loses first-mover advantage if LIV Golf gains legitimacy post-merger."
+5. **Show your math:** Include exercise outputs as appendix (doesn't count toward 2-page limit). Graders want to see your stakeholder weights and ROI assumptions.
+6. **Think like an executive:** Executives want clarity, not hedging. Make a decision and defend it.
 ```
 
 ---
 
-## Element 3A: Widget Introduction - Activation Plan Template Builder
+## Element 3A: Using Module 4 Exercises for Your Memo
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-# Practice: Generate Your Activation Plan Template
+# Using Your Module 4 Exercise Outputs
 
-You've learned sponsorship frameworks (CPM, activation budgets, ROI funnels), analyzed FanDuel's customer economics, and studied real partnerships. Now it's time to CREATE your own sponsorship activation plan.
+Your strategy memo builds directly on the exercises you completed in Module 4. Here's how to use each one:
 
-## Your Challenge
+## Ethical Sponsorship Decision Tool → Page 2, Table 1
 
-Your group has 45-60 minutes to design a complete sponsorship activation plan (40 points). The **Activation Plan Template Builder** gives you a head start by auto-generating strategic foundations, budget allocations, and ROI projections based on your brand/operator selection.
+You already completed stakeholder analysis for LIV Golf scenarios. For your memo:
 
-## What the Template Builder Does
+1. **Re-run the tool** with your specific brand (BMW, Mastercard, Budweiser, or Rolex)
+2. **Adjust stakeholder weights** based on brand positioning:
+   - Premium brands (BMW, Rolex): Weight customers and employees higher (reputation-sensitive)
+   - Mass-market brands (Budweiser): Weight shareholders higher (volume-driven)
+   - Financial services (Mastercard): Weight media and advocacy groups higher (regulatory scrutiny)
+3. **Export your analysis** and paste stakeholder table into Page 2 of your memo
+4. **Explain your weighting rationale** in Page 1 narrative
 
-- **Asks Strategic Questions:** Prompts you to define target audience, objectives, and partnership rationale with guidance hints (not pre-filled answers)
-- **Provides Budget Framework:** Shows industry standard allocations across 6 channels as reference, not defaults (you decide actual split)
-- **Scaffolds ROI Thinking:** Guides you through ROI calculations with questions and formulas (not pre-calculated numbers)
-- **Generates Question-Based Template:** Exports your answers as structured plan, not pre-filled content
+## Brand Risk Calculator → Page 2, Table 2
 
-## How the Builder Works
+You already modeled controversy-adjusted ROI. For your memo:
 
-1. **Select Brand:** Choose from Nike, Coca-Cola, Verizon, American Express, Bud Light, or Custom
-2. **Select Operator:** Choose from FanDuel, DraftKings, BetMGM, Caesars
-3. **Set Budget:** Slide to $10M-$15M total activation budget (assumes $5M rights fee)
-4. **Answer Questions:** Widget asks 8 strategic questions with guidance hints (rationale, audience, objectives, tactics, budget, measurement, ROI, risks)
-5. **Export Your Work:** Use "Copy to Clipboard" or "Download Text" to save your answers → paste into Google Docs for final formatting
+1. **Re-run the calculator** with brand-specific inputs:
+   - Rights fee: Estimate $5-15M based on LIV Golf sponsor patterns (Module 4 table)
+   - Boycott probability: Adjust based on brand's customer sensitivity
+   - Brand equity at risk: Higher for premium brands with more to lose
+2. **Compare Raw ROI vs. Risk-Adjusted ROI** — this is the core of your analysis
+3. **Note the breakeven** — at what controversy level does the deal become negative?
+4. **Export your analysis** and include in Page 2
 
-## What You'll Practice
+## Key Questions to Answer
 
-- Applying brand category logic (mass market vs. premium vs. digital-first allocation patterns)
-- Using the 1:2-3 activation multiplier rule ($5M rights → $12.5M activation)
-- Allocating budget across 6 channels (advertising, hospitality, retail, digital, events, measurement)
-- Modeling ROI with realistic assumptions (engagement 0.5%-2%, conversion 2%-8%)
+Using your exercise outputs, your memo should answer:
+- Does the risk-adjusted ROI justify sponsorship for THIS brand?
+- Which stakeholder group most influences the decision, and why?
+- What would need to change for the opposite recommendation to make sense?
 
-## Strategic Considerations
+## Connection to CFL Project
 
-- **Don't just accept defaults:** Template provides industry averages. Your group should adjust based on your specific brand/operator fit. Nike + FanDuel should skew digital/experiential (young demo). Amex + FanDuel should skew hospitality (VIP experiences).
-- **Measurement is non-negotiable:** Widget defaults to 5% measurement allocation. DO NOT cut this to 0%. Brands without attribution data can't prove ROI (Module 2 learning).
-- **Conservative ROI assumptions:** Widget uses 0.5%-1% engagement, 4% conversion. Real sponsorships often underperform these benchmarks. Apply 30% attribution discount (FanDuel case best practice).
-- **Justify your deviations:** If you change allocation from defaults, explain WHY in your executive summary. "We increased digital from 20% → 35% because FanDuel's audience skews 18-34 (high social media usage)."
-
-## After the Template
-
-Use the generated template as your GROUP STARTING POINT. Customize strategy, adjust budget allocation, refine ROI projections. Export final version as PDF (2 pages max) and submit by end of Module 6. This is your Week 3 graded deliverable (40 points).
+This same analytical approach—stakeholder analysis + ROI modeling—is what you'll use in Milestone 3 when designing sponsorship strategy for YOUR CFL city. The difference: there, you're the property seeking sponsors, not the brand evaluating properties. Same frameworks, different vantage point.
 ```
 
 ---
 
-## Element 4: **RENUMBERED** - Interactive Widget - Activation Plan Template Builder (was Element 3)
-
-### ⚙ Interactive Activity: Activation Plan Template Builder
-
-**Practice: WLO 3.4 (Design sponsorship activations that deliver measurable value)**
-
-You're ready to design your Week 3 group sprint deliverable: a comprehensive sponsorship activation plan for a brand-betting operator partnership. This template builder scaffolds your planning process by guiding you through eight strategic questions while providing industry context and examples at every step.
-
-You'll select your brand (Nike, Coca-Cola, Verizon, American Express, Bud Light, or custom), your betting operator partner (FanDuel, DraftKings, BetMGM, Caesars), and your total budget. Then you'll answer structured prompts about strategic rationale, target audience, budget allocation, activation tactics, measurement frameworks, and ROI projections. The widget doesn't pre-fill answers—instead, it provides guidance and industry benchmarks to help you develop original, strategic responses. Your completed plan downloads as plain text ready for submission and peer review.
-
-**What you'll discover:**
-
-- How to evaluate brand-operator partnership fit based on audience overlap, category alignment, and strategic objectives
-- A structured framework for allocating activation budget across channels with category-specific guidance
-- Industry-standard approaches to ROI calculation including reach, engagement, conversion, and revenue attribution
-- The strategic questions that distinguish excellent activation plans from generic templates
-
-**Time commitment:** 15-20 minutes (initial template), 45-60 minutes (complete activation plan with group)
-**Learning outcomes practiced:** WLO 3.4 (Design sponsorship activations that deliver measurable value)
-
----
-
-**🎮 Widget Purpose:** Auto-generate activation plan structure based on user inputs (brand, operator, budget).
-
-**Widget Status:** ✅ Built and ready (~630 lines, 98% Uplimit compliance)
-
-**How It Works:**
-1. User selects: Brand (Nike/Coca-Cola/Verizon/Amex/Bud Light/Custom), Operator (FanDuel/DraftKings/BetMGM/Caesars), Total budget ($10M-$15M)
-2. Widget presents 8 question prompts with guidance:
-   - **Strategic rationale:** "Why does this brand-operator pairing make sense?" (hint: consider audience overlap, category fit)
-   - **Target audience:** "Who is your primary target?" (hint: demographics, psychographics, behaviors)
-   - **Budget allocation table:** Shows industry standards as reference (you input YOUR allocation with justification)
-   - **ROI framework:** Shows calculation steps with "?" placeholders (you calculate based on YOUR tactics)
-3. Widget outputs: Plain text summary of answers (Copy to Clipboard or Download Text), NOT pre-filled templates
-
-**Learning Objective:** WLO 3.4 (Design activations) - Scaffolds plan creation
-
-**Inputs:**
-- Brand: Dropdown (Nike/Coca-Cola/Verizon/Amex/Bud Light/Custom)
-- Operator: Dropdown (FanDuel/DraftKings/BetMGM/Caesars)
-- Total Budget: Slider $10M-$15M (default $12.5M)
-- Brand Category: Auto-detected (Sports Performance, Mass Market, Technology, Premium, Alcohol)
-
-**Outputs:**
-- Plain text activation plan with YOUR answers to 8 strategic questions
-- Budget allocation table with YOUR channel distribution and justifications
-- ROI calculation framework with YOUR inputs (impressions, engagement %, conversion %, customer value)
-- Export options: Copy to Clipboard (paste into Google Docs) or Download Text (.txt file)
-
-**Technical Specifications:**
-- HTML/CSS/JS
-- Document generation using libraries (docx.js for Word, xlsx.js for Excel)
-- WCAG 2.2 AA accessibility
-- Download functionality
-
-**Implementation Time:** 6-8 hours
-
-**Embed Code:**
-```html
-<iframe
-  src="modules/week3/widgets/activation-plan-template-builder.html"
-  width="100%"
-  height="700"
-  style="border: none; border-radius: 8px;"
-  title="Activation Plan Template Builder - Generate starter templates"
-  aria-label="Interactive template builder generating customized sponsorship activation plans with budget allocations, timelines, and channel strategies based on your inputs"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
----
-
-## Element 5: **RENUMBERED** - Video - Group Sprint Tips (was Element 4)
-
-**Video Specifications:**
-- **Length:** 2 minutes
-- **Topic:** "How to Run an Effective Group Sprint (45-60 Minutes)"
-- **Key Points:** Time management, role division, collaboration best practices, avoiding common pitfalls
-- **Accessibility:** Captions required, transcript provided
-
-**Video Status:** 📝 Script complete, awaiting production
-
-**Video Script (2 minutes):**
-```
-[0:00-0:15] Introduction
-"You have 45-60 minutes to design a sponsorship activation plan worth 40 points. Here's how to make the most of your group sprint."
-
-[0:15-0:45] Time Allocation (45-Minute Sprint)
-"Divide your time into 4 phases:
-- Phase 1 (10 min): Brainstorm - Choose brand + operator, define target audience, set objectives
-- Phase 2 (15 min): Activation tactics - Assign each member one channel (advertising, digital, retail, experiential), design specific tactics
-- Phase 3 (15 min): Budget + ROI - Use widgets to model ROI, allocate budget across channels, calculate projections
-- Phase 4 (5 min): Synthesis - Combine sections into one Google Doc, quick proofread, save as PDF"
-
-[0:45-1:15] Role Division
-"Assign roles based on strengths:
-- **Strategist:** Writes strategic foundation (target audience, objectives, rationale)
-- **Creative:** Leads activation tactics (brainstorms specific campaigns, examples)
-- **Analyst:** Owns budget allocation and ROI projections (uses widgets, builds spreadsheet)
-- **Editor:** Synthesizes all sections, proofreads, formats final PDF
-
-All members contribute ideas, but clear ownership prevents duplicated work."
-
-[1:15-1:45] Collaboration Tips
-"Use Google Docs for real-time collaboration. Start with the Template Builder widget—it gives you a skeleton to fill in. Don't overthink—better to have a complete 'B' plan than an incomplete 'A+' plan. Use the AI Coach widget if stuck, but don't let it write for you (academic integrity). Widget outputs can go in an appendix (doesn't count toward 2-page limit)."
-
-[1:45-2:00] Common Pitfalls
-"Avoid these mistakes: (1) Unrealistic ROI projections (500% ROI is not realistic), (2) Generic tactics ('social media campaign' is too vague—be specific!), (3) Missing attribution methodology (how will you prove it worked?), (4) Ignoring the 2-3× activation rule (activation should be 2-3× rights fee). Good luck!"
-```
-
----
-
-## Element 6: **RENUMBERED** - AI Chat Widget - Activation Plan Coach (was Element 5)
+## Element 4: AI Chat Widget - Strategy Memo Coach
 
 **AI Chat Widget Configuration:**
 
-**Widget Name:** "Activation Plan Coach"
+**Widget Name:** "Strategy Memo Coach"
 
 **System Prompt:**
 ```
-You are a sports marketing consultant helping MBA students design sponsorship activation plans. Your role is to guide students through Socratic questioning, NOT to give them answers or write their plans.
+You are a sports marketing consultant helping MBA students write sponsorship strategy memos advising brands on whether to sponsor LIV Golf. Your role is to guide students through Socratic questioning, NOT to give them answers or write their memos.
+
+**Context:**
+Students are writing a 2-page memo advising a brand (BMW, Mastercard, Budweiser, or Rolex) on whether to sponsor LIV Golf. They've completed Module 4 exercises (Ethical Sponsorship Decision Tool, Brand Risk Calculator) and should use those outputs in their analysis.
 
 **Guiding Principles:**
-1. Ask questions that help students think strategically: "Why did you choose that target audience? How does it align with the brand's positioning?"
-2. Challenge assumptions: "You projected 10% conversion rate. What industry benchmark supports that? Did you use the ROI Calculator widget?"
-3. Prompt specificity: "You said 'social media campaign.' What platform? What content format? What call-to-action?"
-4. Connect to course frameworks: "Did you apply the 2-3× activation rule from Module 2? Did you use engagement multipliers from Module 3?"
-5. Encourage widget usage: "Have you used the Sponsorship Valuation Calculator to test your CPM assumptions?"
+1. Ask questions that connect to their Module 4 work: "What did your Ethical Decision Tool show for customer impact? How did you weight that stakeholder group?"
+2. Challenge brand-specific thinking: "You're advising BMW. How does BMW's premium positioning affect tolerance for controversy compared to a mass-market brand like Budweiser?"
+3. Push for specificity: "You say 'reputation risk.' Quantify it. What's your boycott probability estimate? What % of BMW customers care about sportswashing?"
+4. Connect to case data: "Did you reference the LIV Golf sponsor table? Why did Rolex decline while 7UP signed? What does that pattern tell you about your brand?"
+5. Ensure both-sides thinking: "You recommend declining. What's the strongest argument FOR sponsoring? How would you respond to a CEO who pushes back?"
 
 **What NOT to Do:**
-- Do NOT write any section of their plan (this is academic dishonesty)
-- Do NOT give specific tactic ideas unless they've exhausted their own brainstorming
-- Do NOT calculate ROI for them (direct them to widgets instead)
-- Do NOT tell them which brand or operator to choose
+- Do NOT write any section of their memo (academic dishonesty)
+- Do NOT tell them whether to recommend sponsorship or decline
+- Do NOT provide stakeholder ratings or ROI calculations—direct them to exercises
+- Do NOT validate their position without challenge—push them to engage counterarguments
 
-**Tone:** Supportive but challenging. Think executive coach, not personal assistant.
+**Tone:** Supportive but rigorous. Think executive coach who wants them to succeed but won't let them off easy.
 
 **Example Interactions:**
 
-Student: "We chose Nike and FanDuel. Is that good?"
-You: "What makes Nike and FanDuel a compelling partnership? Who's the target audience? Why would Nike bet on betting?"
+Student: "I chose BMW and I think they should decline LIV Golf."
+You: "Walk me through your reasoning. What did your stakeholder analysis show? Which group was most negative, and how did you weight them? What's the controversy-adjusted ROI?"
 
-Student: "We're targeting men 18-34."
-You: "That's broad. Within that demo, are you targeting sneakerheads? NBA fans? Casual bettors or daily fantasy veterans? How does refining this change your activation tactics?"
+Student: "My risk-adjusted ROI is -15%."
+You: "Interesting. What assumptions drove that? What's your boycott probability? Is that realistic for BMW's customer base? What would change if you assumed 5% instead of 15%?"
 
-Student: "We're doing a social media campaign."
-You: "Which platform? What's the creative concept? What action do you want users to take? How does this tie to the betting partnership specifically?"
+Student: "Employees would be upset."
+You: "The case says 52% of employees would be uncomfortable. But is that the same for German automotive employees? How does BMW's corporate culture affect your weighting?"
 
-Student: "Can you calculate our ROI?"
-You: "I can't calculate it for you, but I can help you think through the inputs. Have you used the ROI Calculator widget? What assumptions did you make for engagement rate and conversion rate? Are those realistic based on industry benchmarks from Module 3?"
+Student: "I think sponsorship is unethical."
+You: "That's a personal view, which is valid. But your memo needs to be business-focused. How do you translate 'unethical' into stakeholder impacts and ROI adjustments? What's the dollar value of ethical concerns for BMW?"
 ```
 
 **Welcome Message:**
-"I'm your activation plan coach. I'll ask questions to help you think strategically, but I won't write your plan for you. What brand and operator are you considering?"
+```
+I'm your Strategy Memo Coach. I'll ask questions to strengthen your analysis, but I won't write your memo or tell you what to recommend.
+
+**Where are you in the process?**
+- Just starting? Tell me which brand you chose and your initial instinct.
+- Working on analysis? Share your Ethical Decision Tool or Brand Risk Calculator outputs.
+- Drafting your memo? Paste a section and I'll ask probing questions.
+
+What brand are you advising on LIV Golf?
+```
 
 **Show System Prompt:** No (hidden from students)
 
 ---
 
-## Element 7: **RENUMBERED** - Details - Example Activation Plans (was Element 6)
+## Element 5: Details - Example Strategy Memos
 
 ```
-Title: Example Activation Plans (3 Models: A, B, C Grades)
+Title: Example Strategy Memos (3 Models: A, B, C Grades)
 
-[Expand to see 3 example activation plans with instructor annotations]
+[Expand to see 3 example LIV Golf strategy memos with instructor annotations]
 
-## Example Activation Plans with Grading Annotations
+## Example Strategy Memos with Grading Annotations
 
-These examples show what A-grade (37-40/40), B-grade (32-36/40), and C-grade (28-31/40) activation plans look like.
-
----
-
-### Example 1: A-Grade Plan (38/40) - Verizon + FanDuel NFL Partnership
-
-**Strategic Foundation:**
-Verizon partners with FanDuel to demonstrate 5G's impact on in-game live betting. Target audience: NFL fans aged 25-45 with 5G-enabled phones (35M US adults). Objectives: (1) Drive 500K new Verizon 5G plan sign-ups in 12 months, (2) Position Verizon as "Official 5G Network of FanDuel," (3) Achieve 20% ROI on $15M total investment.
-
-**Why This Is Strong:**
-- ✅ Specific target audience with quantifiable size (35M)
-- ✅ SMART objectives (measurable, time-bound)
-- ✅ Strategic rationale connects brand benefit (5G speed) to betting benefit (live betting requires real-time data)
+These examples show what A-grade (37-40/40), B-grade (32-36/40), and C-grade (28-31/40) LIV Golf strategy memos look like.
 
 ---
 
-**Activation Tactics:**
+### Example 1: A-Grade Memo (38/40) - BMW + LIV Golf: DECLINE
 
-**1. Advertising (35%, $3.5M):** "5G Live Betting" TV spots during NFL Sunday broadcasts showing split-screen: Fan using 4G (lagging odds) vs. 5G (instant updates). Tagline: "Don't bet on lag. Bet with Verizon 5G + FanDuel."
+**Page 1: Executive Recommendation**
 
-**2. Digital (25%, $2.5M):** Co-branded app feature in FanDuel: "5G Fast Lane" priority betting queue for Verizon customers (bets placed 2 seconds faster). Promoted through push notifications, in-app banners, and influencer partnerships (Pat McAfee, Tony Romo).
+**Recommendation:** BMW should decline LIV Golf sponsorship.
 
-**3. Retail (20%, $2M):** In-store promotions at 1,500 Verizon stores: Sign up for 5G Unlimited plan, get $200 FanDuel bonus credit. QR code at point-of-sale links to FanDuel app download with promo code "VERIZON5G."
+**Rationale:** BMW's premium positioning and ESG commitments create unacceptable stakeholder risk. While LIV Golf offers attractive CPM ($25 vs. PGA Tour's $40) and access to marquee golfers, our stakeholder analysis shows significant negative impacts across 4 of 5 stakeholder groups. BMW's customers—educated, high-income, environmentally conscious—are 2.3× more likely to care about sportswashing concerns (Morning Consult data). The controversy-adjusted ROI is -18%, making this a value-destroying investment.
 
-**4. Experiential (15%, $1.5M):** "5G Betting Lounge" at 10 NFL stadiums: VIP hospitality suite with dedicated 5G network, betting kiosks, and expert handicappers. 100 fans per game × 10 stadiums × 17 weeks = 17,000 high-value experiences.
+**Key Decision Factors:**
+1. Customer sensitivity: 38% say they'd avoid brands associated with sportswashing
+2. Employee impact: German corporate culture emphasizes values alignment; 52% workforce discomfort
+3. ESG commitments: BMW's sustainability messaging conflicts with Saudi human rights record
+4. Competitor pattern: Rolex declined for "values alignment"—BMW is closer to Rolex than to 7UP
 
-**5. Measurement (5%, $500K):** Promo code tracking (VERIZON5G), Verizon customer data partnership (track which customers bet on FanDuel), geo lift study comparing 5G markets vs. non-5G markets for sales lift.
+**Stakeholder Analysis Summary:**
+Using Ethical Decision Tool with premium brand weighting: Customers (35%) rated -2, Employees (25%) rated -1.5, Shareholders (20%) rated +0.5, Media (15%) rated -1.5, Advocacy (5%) rated -2. Weighted decision score: -47 (Strong Decline threshold: <-20).
+
+**Trade-offs:**
+- **What BMW loses:** Lower CPM opportunity, access to Phil Mickelson/Dustin Johnson, first-mover advantage if LIV gains legitimacy
+- **What BMW preserves:** Brand equity, ESG credibility, employee morale, customer trust
+- **Alternative:** Increase PGA Tour "Elevated Events" sponsorship by 25% for comparable reach with established infrastructure and no controversy
 
 **Why This Is Strong:**
-- ✅ Specific tactics for each channel (not vague)
-- ✅ Creative ideas that leverage partnership synergies (5G speed for live betting)
-- ✅ Measurement built into activation (promo codes, data partnerships)
-- ✅ Appropriate budget allocation (follows 2-3× rule, 35% on advertising is defensible for awareness campaign)
+- ✅ Clear recommendation in first sentence
+- ✅ Brand-specific rationale (not generic)
+- ✅ References case data (Rolex pattern, Morning Consult statistics)
+- ✅ Quantified stakeholder analysis with weighting rationale
+- ✅ Acknowledges trade-offs honestly
 
 ---
 
-**ROI Projections:**
+**Page 2: Supporting Analysis**
 
-| Metric | Calculation | Value |
-|--------|-------------|-------|
-| Total Investment | Rights fee + Activation | $15M ($5M rights + $10M activation) |
-| Total Impressions | TV (200M) + digital (150M) + retail (50M) | 400M impressions |
-| CPM | Investment / Impressions × 1,000 | $37.50 CPM |
-| Engaged Users | 0.5% engagement rate (retail promo redemptions) | 2M engaged |
-| Conversions | 10% conversion (retail foot traffic to sign-ups) | 200K new 5G customers |
-| Avg Customer Value | $1,200/year plan × 3-year tenure | $3,600 LTV |
-| Total Revenue | 200K × $3,600 | $720M over 3 years |
-| Year 1 ROI | ($240M Year 1 revenue - $15M) / $15M | 1,500% (3-year projection) |
-| Realistic Discounting | Assume 30% attribution (would have signed up anyway) | $168M attributed revenue, 1,020% ROI |
+**Table 1: Stakeholder Impact (BMW)**
+
+| Stakeholder | Impact | Weight | Score | Rationale |
+|-------------|--------|--------|-------|-----------|
+| Customers | -2 | 35% | -0.70 | Premium customers highly sensitive; 38% boycott risk |
+| Employees | -1.5 | 25% | -0.38 | German corporate culture; recruitment impact |
+| Shareholders | +0.5 | 20% | +0.10 | Lower CPM opportunity, but reputation risk outweighs |
+| Media | -1.5 | 15% | -0.23 | Negative coverage likely for 12+ months |
+| Advocacy | -2 | 5% | -0.10 | Human rights groups will campaign |
+| **Total** | — | 100% | **-1.31** | **Score: -47 (Strong Decline)** |
+
+**Table 2: Controversy-Adjusted ROI**
+
+| Metric | Raw | Adjusted | Notes |
+|--------|-----|----------|-------|
+| Rights Fee | $10M | — | LIV Golf premium sponsor tier |
+| Impressions | 300M | 250M | Reduced by 17% boycott avoidance |
+| CPM | $33 | $40 | Adjusted for reduced reach |
+| Raw ROI | +22% | — | Before controversy adjustment |
+| Boycott Cost | — | $8M | 5% revenue × $160M golf segment |
+| Employee Impact | — | $2M | Recruitment/retention costs |
+| Brand Equity Risk | — | $15M | 10% of BMW's $150M golf marketing equity |
+| **Risk-Adjusted ROI** | — | **-18%** | After $25M risk cost |
+| **Breakeven** | — | 3% | Controversy would need to drop to 3% for positive ROI |
 
 **Why This Is Strong:**
-- ✅ Conservative assumptions acknowledged (30% attribution discount)
-- ✅ Uses engagement rate and conversion rate from course widgets
-- ✅ Explains calculations step-by-step
-- ✅ Multi-year LTV included
+- ✅ Both tables complete with rationale
+- ✅ Brand-specific inputs (not generic)
+- ✅ Conservative assumptions stated
+- ✅ Breakeven analysis included
 
 **Grade: 38/40**
 - Strategic Clarity: 10/10
-- Activation Design: 14/15 (could add more digital specificity)
-- ROI Justification: 10/10
-- Presentation: 4/5 (good, but could use more data visualization)
+- Analytical Rigor: 14/15
+- Ethical Framework: 10/10
+- Presentation: 4/5
 
 ---
 
-### Example 2: B-Grade Plan (33/40) - Coca-Cola + DraftKings NFL Partnership
+### Example 2: B-Grade Memo (33/40) - Budweiser + LIV Golf: SPONSOR
 
-**Strategic Foundation:**
-Coca-Cola partners with DraftKings to reach NFL fans. Target audience: NFL fans who bet (estimated 20M US adults). Objectives: (1) Increase Coca-Cola sales, (2) Build brand awareness, (3) Achieve positive ROI.
+**Page 1: Executive Recommendation**
+
+**Recommendation:** Budweiser should sponsor LIV Golf.
+
+**Rationale:** Budweiser's mass-market positioning means lower reputation sensitivity than premium brands. LIV Golf offers attractive CPM and access to golf demographics that align with Budweiser's target audience. While there are ethical concerns, Budweiser's customers are less likely to boycott compared to BMW or Mastercard customers.
+
+**Stakeholder Analysis:** Customers rated neutral, employees slightly negative, shareholders positive due to ROI opportunity.
+
+**Trade-offs:**
+- Gain: Lower cost access to golf audience, differentiation from competitors
+- Risk: Some reputation damage, but manageable for mass-market brand
+
+**What's Partially Strong:**
+- ✅ Clear recommendation stated
+- ✅ Some brand-specific reasoning (mass-market vs. premium)
+- ⚠️ Stakeholder analysis mentioned but not quantified
+- ⚠️ No specific case data referenced
+
+---
+
+**Page 2: Supporting Analysis**
+
+**Stakeholder Table:** [Provided but weights don't sum to 100%, ratings not justified]
+
+**ROI Table:**
+- Rights fee: $8M
+- Raw ROI: +35%
+- Risk-adjusted ROI: +15%
+- [No calculation shown for how risk adjustment was derived]
 
 **What's Missing:**
-- ⚠️ Objectives are vague (how much sales increase? Over what timeframe?)
-- ⚠️ Target audience too broad (all NFL bettors? What about age, income, region?)
-
----
-
-**Activation Tactics:**
-
-**1. Advertising (40%, $4M):** TV commercials during NFL games showing fans drinking Coke while betting on DraftKings.
-
-**2. Digital (30%, $3M):** Social media campaign on Instagram and TikTok featuring NFL players.
-
-**3. Retail (20%, $2M):** Special Coke bottles with DraftKings promo codes printed on labels.
-
-**4. Experiential (10%, $1M):** Sponsor some tailgate parties at NFL stadiums.
-
-**What's Missing:**
-- ⚠️ Tactics are generic ("TV commercials" - what's the creative concept?)
-- ⚠️ No specificity ("some tailgate parties" - how many? Where? What happens?)
-- ⚠️ Weak integration (promo code on bottle is good, but how is it promoted?)
-- ⚠️ No measurement allocation (0% budget to tracking/attribution)
-
----
-
-**ROI Projections:**
-
-| Metric | Calculation | Value |
-|--------|-------------|-------|
-| Total Investment | Rights fee + Activation | $15M |
-| Impressions | Estimated | 500M |
-| CPM | $15M / 500M × 1,000 | $30 CPM |
-| Conversions | Assume 1% of viewers buy Coke | 5M purchases |
-| Revenue | 5M × $3 per purchase | $15M |
-| ROI | ($15M - $15M) / $15M | 0% ROI |
-
-**What's Wrong:**
-- ❌ No engagement multiplier for bettors (ignored Module 3 data)
-- ❌ Unrealistic conversion assumption (1% of 500M impressions = 5M, but no attribution logic)
-- ❌ 0% ROI makes no business sense (why would Coca-Cola do this?)
-- ❌ Doesn't use any course widgets or frameworks
+- ⚠️ Stakeholder weighting rationale absent
+- ⚠️ ROI adjustment methodology unclear
+- ⚠️ No reference to case data (why didn't existing beer brands sign?)
+- ⚠️ Alternative not considered
 
 **Grade: 33/40**
-- Strategic Clarity: 6/10 (vague objectives, broad audience)
-- Activation Design: 11/15 (reasonable tactics but lack specificity and integration)
-- ROI Justification: 6/10 (calculations present but unrealistic assumptions, no attribution)
-- Presentation: 4/5 (acceptable formatting)
+- Strategic Clarity: 8/10
+- Analytical Rigor: 10/15
+- Ethical Framework: 7/10
+- Presentation: 4/5
 
 ---
 
-### Example 3: C-Grade Plan (29/40) - Nike + BetMGM Basketball Partnership
+### Example 3: C-Grade Memo (28/40) - Mastercard + LIV Golf: DECLINE
 
-**Strategic Foundation:**
-Nike wants to sell more shoes. BetMGM wants more customers. We will partner to achieve both goals through basketball.
+**Page 1: Executive Recommendation**
+
+**Recommendation:** Mastercard should not sponsor LIV Golf because sportswashing is bad.
+
+LIV Golf is funded by Saudi Arabia which has human rights problems. Mastercard should not be associated with this. It would hurt their reputation.
 
 **What's Wrong:**
-- ❌ No target audience specified
-- ❌ No measurable objectives
-- ❌ No strategic rationale (why Nike + BetMGM specifically?)
+- ❌ Personal ethics statement, not business analysis
+- ❌ No stakeholder analysis
+- ❌ No brand-specific context (why Mastercard specifically?)
+- ❌ No quantification of "hurt reputation"
 
 ---
 
-**Activation Tactics:**
-We will do advertising, social media, and events. Nike will promote BetMGM in ads. BetMGM will promote Nike in their app. We will sponsor a basketball tournament.
+**Page 2: Supporting Analysis**
 
-**What's Wrong:**
-- ❌ No specific tactics (what ads? What events? Which tournament?)
-- ❌ No budget allocation (how much per channel?)
-- ❌ No creative concepts or examples
-- ❌ No measurement plan
+"I think the ROI would be negative because of reputation damage. Mastercard customers care about ethics."
 
----
-
-**ROI Projections:**
-We expect to make money. Nike sells a lot of shoes. BetMGM has a lot of customers. Together they will make more money.
+[No tables provided]
 
 **What's Wrong:**
 - ❌ No actual calculations
-- ❌ No metrics or KPIs
-- ❌ No data or assumptions
-- ❌ Not using course frameworks at all
+- ❌ No use of course exercises
+- ❌ Assertions without evidence
+- ❌ Doesn't meet basic format requirements
 
-**Grade: 29/40**
-- Strategic Clarity: 4/10 (no clear strategy)
-- Activation Design: 8/15 (mentions tactics but zero specificity)
-- ROI Justification: 3/10 (no actual projections)
-- Presentation: 3/5 (poor formatting, no tables or data)
+**Grade: 28/40**
+- Strategic Clarity: 5/10
+- Analytical Rigor: 5/15
+- Ethical Framework: 6/10 (acknowledges ethics but doesn't analyze)
+- Presentation: 2/5
 
 ---
 
 **Key Takeaways:**
 
-**A-Grade Plans:**
-- Specific, quantified objectives
-- Creative tactics with detailed examples
-- ROI projections using course frameworks
-- Conservative assumptions acknowledged
+**A-Grade Memos:**
+- Clear recommendation with brand-specific rationale
+- Quantified stakeholder analysis with weighting justification
+- Controversy-adjusted ROI with stated assumptions
+- References case data and acknowledges trade-offs
 
-**B-Grade Plans:**
-- Reasonable strategy but lacks specificity
-- Generic tactics without creative integration
-- ROI projections present but missing key assumptions
+**B-Grade Memos:**
+- Clear recommendation but generic rationale
+- Stakeholder analysis present but not fully justified
+- ROI calculated but methodology unclear
+- Missing case data connections
 
-**C-Grade Plans:**
-- Vague or missing objectives
-- No specific tactics or budget allocation
-- No ROI calculations or unrealistic assumptions
+**C-Grade Memos:**
+- Personal opinion instead of business analysis
+- No quantified stakeholder or ROI analysis
+- Doesn't use course frameworks or exercises
+- Missing required format elements
 ```
 
 ---
@@ -741,13 +632,16 @@ We expect to make money. Nike sells a lot of shoes. BetMGM has a lot of customer
 ## Module 5 Complete - Transition to Module 6
 
 **What You've Accomplished:**
-You've received the group sprint assignment (40 points), reviewed full instructions and rubric, explored the Activation Plan Template Builder widget, watched collaboration best practices video, and seen A/B/C grade examples. You've started designing your 1-page sponsorship activation plan in groups.
+You've received the strategy memo assignment (40 points), reviewed full instructions and rubric, learned how to use your Module 4 exercise outputs, and seen A/B/C grade examples. You should now be drafting your 2-page sponsorship strategy memo advising your chosen brand on LIV Golf.
 
 **Time Check:**
-If you've completed your activation plan draft, move to Module 6 for finalization, peer review, and submission. If you need more time, use the AI Coach widget for guidance (ask Socratic questions, not for answers).
+If you've completed your memo draft, move to Module 6 for finalization and submission. If you need more time, use the Strategy Memo Coach for guidance (Socratic questions, not answers).
+
+**Connection to CFL Project:**
+Remember: this memo practices the analytical skills you'll apply in Milestone 3. There, you'll flip perspectives—instead of advising a brand, you'll BE the sports property (your CFL team) designing sponsorship strategy to attract brands. Same frameworks, different vantage point.
 
 **Up Next: Module 6 - Assessment & Reflection**
-Submit your activation plan, participate in peer review, reflect on Week 3 learning, and preview Week 4 (Athletes, Brands & Emerging Sports). Final module of Week 3—let's finish strong.
+Submit your strategy memo, reflect on Week 3 learning, and preview Week 4 (Athletes, Brands & Emerging Sports). Final module of Week 3—let's finish strong.
 
 Ready to finalize and submit your work? Let's wrap up Week 3!
 

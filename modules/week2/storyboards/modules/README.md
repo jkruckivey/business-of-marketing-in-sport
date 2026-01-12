@@ -49,8 +49,8 @@ Week 2 contains 8 modules organized in this directory:
 ## Key Features
 
 **V3 Interactive-First Redesign:**
-- Module 3 and Module 5 use interactive widgets to replace passive reading
-- 4 interactive data visualization widgets for Rogers case analysis
+- Module 3 and Module 5 use interactive exercises to replace passive reading
+- 4 interactive data visualization exercises for Rogers case analysis
 - Streaming Wars Strategy simulation with real-time decision-making
 - Text reduced significantly, active engagement increased to 65-75%
 

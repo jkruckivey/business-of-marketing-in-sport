@@ -63,7 +63,7 @@ Let's dive into the case.
 ```markdown
 Title: 🔗 Case Study Access Instructions
 
-The Serena Williams: Building a Brand case (HBS 517050, 22 pages) is attached below. Reading time is 45-60 minutes. Download the PDF and read the entire case carefully—strategic insights are in the details, especially Exhibits 4-7 covering financial data and business ventures. Keep the four analysis questions from Element 4 in mind while reading and jot notes referencing specific pages. After reading, use the Serena's Brand Portfolio Analyzer widget to map her strategy and compare alternatives. Use the AI Chat widget if you need case discussion support.
+The Serena Williams: Building a Brand case (HBS 517050, 22 pages) is attached below. Reading time is 45-60 minutes. Download the PDF and read the entire case carefully—strategic insights are in the details, especially Exhibits 4-7 covering financial data and business ventures. Keep the four analysis questions from Element 4 in mind while reading and jot notes referencing specific pages. After reading, use the Serena's Brand Portfolio Analyzer exercise to map her strategy and compare alternatives. Use the AI Chat widget if you need case discussion support.
 ```
 
 ---
@@ -104,7 +104,7 @@ As you read the Serena Williams case, analyze her strategy through these 4 lense
 
 **Key Question:** Did Serena prioritize fee-based income (endorsements) or equity-based wealth (owned businesses, investments)? Estimate the % allocation.
 
-**Reference the frameworks:** Compare her strategy to the Athlete Brand Calculator widget you used in Module 3. Does her portfolio match "Wealth Builder" (70% equity) or something else?
+**Reference the frameworks:** Compare her strategy to the Athlete Brand Calculator exercise you used in Module 3. Does her portfolio match "Wealth Builder" (70% equity) or something else?
 
 ---
 

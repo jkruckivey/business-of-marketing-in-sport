@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Risk Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-error: #ef4444;
+            --color-success: #c0d1cd;
+            --color-warning: #f0ede0;
+            --color-info: #bfe5e7;
+            --color-purple: #d5cae0;
+            --color-green: #c0d1cd;
+            --color-turquoise: #bfe5e7;
+            --color-sand: #f0ede0;
+            --border-radius: 8px;
+            --border-radius-sm: 4px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *:focus {
+            outline: 2px solid #3182ce;
+            outline-offset: 2px;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: white;
+            color: var(--color-neutral-900);
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: var(--color-neutral-600);
+            margin-bottom: 2rem;
+        }
+
+        .presets {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        .preset-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-600);
+            margin-right: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .preset-btn {
+            padding: 0.5rem 1rem;
+            background: var(--color-purple);
+            color: var(--color-neutral-700);
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .preset-btn:hover {
+            background: var(--color-neutral-200);
+            border-color: var(--color-neutral-400);
+        }
+
+        .preset-btn:focus {
+            outline: 3px solid var(--color-neutral-900);
+            outline-offset: 2px;
+        }
+
+        .preset-btn.active {
+            background: var(--color-neutral-700);
+            color: white;
+            border-color: var(--color-neutral-700);
+        }
+
+        .section {
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            background: var(--color-sand);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            background: var(--color-neutral-50);
+            border-radius: 8px 8px 0 0;
+            transition: background 0.2s;
+        }
+
+        .section-header:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin: 0;
+        }
+
+        .toggle-icon {
+            font-size: 1.2rem;
+            color: var(--color-neutral-600);
+            transition: transform 0.2s ease;
+        }
+
+        .toggle-icon.expanded {
+            transform: rotate(180deg);
+        }
+
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .section-content.expanded {
+            max-height: 2000px;
+        }
+
+        .section-inner {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group:last-child {
+            margin-bottom: 0;
+        }
+
+        label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.5rem;
+        }
+
+        .label-description {
+            font-size: 0.75rem;
+            color: var(--color-neutral-500);
+            font-weight: 400;
+            display: block;
+            margin-top: 0.25rem;
+        }
+
+        .input-with-value {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        input[type="range"] {
+            flex: 1;
+            height: 6px;
+            background: var(--color-neutral-200);
+            border-radius: 3px;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: var(--color-neutral-700);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            background: var(--color-neutral-700);
+            border-radius: 50%;
+            cursor: pointer;
+            border: none;
+        }
+
+        .value-display {
+            min-width: 100px;
+            padding: 0.5rem 0.75rem;
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+            text-align: right;
+        }
+
+        .results {
+            background: var(--color-green);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .results h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 1.5rem;
+        }
+
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        .metric.highlight-positive {
+            border-color: var(--color-neutral-400);
+            background: var(--color-neutral-50);
+        }
+
+        .metric.highlight-negative {
+            border-color: var(--color-neutral-500);
+            background: var(--color-neutral-100);
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--color-neutral-600);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+        }
+
+        .metric-value.positive {
+            color: #16a34a;
+        }
+
+        .metric-value.negative {
+            color: #dc2626;
+        }
+
+        .metric-subtext {
+            font-size: 0.75rem;
+            color: var(--color-neutral-500);
+            margin-top: 0.25rem;
+        }
+
+        .comparison-container {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .comparison-box {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .comparison-box.raw {
+            border-color: var(--color-neutral-300);
+        }
+
+        .comparison-box.adjusted {
+            border-color: var(--color-neutral-400);
+        }
+
+        .comparison-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--color-neutral-600);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .comparison-value {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .comparison-percent {
+            font-size: 1rem;
+            color: var(--color-neutral-600);
+            margin-top: 0.25rem;
+        }
+
+        .comparison-arrow {
+            font-size: 2rem;
+            color: var(--color-neutral-400);
+        }
+
+        .chart-container {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: var(--color-turquoise);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 6px;
+        }
+
+        .breakeven-box {
+            background: var(--color-sand);
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        .breakeven-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.5rem;
+        }
+
+        .breakeven-value {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+        }
+
+        .recommendation-box {
+            background: white;
+            border: 2px solid var(--color-neutral-300);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .recommendation-label {
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--color-neutral-600);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .recommendation-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-neutral-900);
+        }
+
+        .recommendation-accept {
+            color: #16a34a;
+        }
+
+        .recommendation-decline {
+            color: #dc2626;
+        }
+
+        .recommendation-negotiate {
+            color: var(--color-neutral-700);
+        }
+
+        .insight-box {
+            background: white;
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .insight-box h3 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-neutral-800);
+            margin-bottom: 0.5rem;
+        }
+
+        .insight-box p {
+            font-size: 0.875rem;
+            color: var(--color-neutral-700);
+            line-height: 1.6;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--color-neutral-800);
+            color: white;
+            border: 1px solid var(--color-neutral-800);
+        }
+
+        .btn-primary:hover {
+            background: var(--color-neutral-700);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-neutral-700);
+            border: 1px solid var(--color-neutral-300);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-neutral-100);
+        }
+
+        .risk-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.75rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--color-neutral-200);
+        }
+
+        .risk-item {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 4px;
+            padding: 0.75rem;
+            text-align: center;
+        }
+
+        .risk-item-label {
+            font-size: 0.7rem;
+            color: var(--color-neutral-600);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        .risk-item-value {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #dc2626;
+            margin-top: 0.25rem;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .presets {
+                flex-direction: column;
+            }
+
+            .preset-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .comparison-container {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Brand Risk Calculator</h1>
+        <p class="subtitle">Calculate controversy-adjusted sponsorship ROI. See how reputation risk transforms profitable opportunities into potential losses.</p>
+
+        <div class="presets" role="group" aria-label="Preset scenarios">
+            <span class="preset-label">Load scenario:</span>
+            <button class="preset-btn" onclick="loadPreset('liv-premium')" aria-label="Load LIV Golf premium brand scenario">LIV Golf (Premium Brand)</button>
+            <button class="preset-btn" onclick="loadPreset('liv-challenger')" aria-label="Load LIV Golf challenger brand scenario">LIV Golf (Challenger Brand)</button>
+            <button class="preset-btn" onclick="loadPreset('pga-baseline')" aria-label="Load PGA Tour baseline scenario">PGA Tour (Baseline)</button>
+            <button class="preset-btn" onclick="loadPreset('custom')" aria-label="Start custom calculation">Custom</button>
+        </div>
+
+        <!-- Standard ROI Inputs -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)" role="button" aria-expanded="true" tabindex="0" onkeydown="handleKeydown(event, this)">
+                <h2>Standard ROI Metrics</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded">
+                <div class="section-inner">
+                    <div class="input-group">
+                        <label for="rightsFee">Rights Fee
+                            <span class="label-description">Annual sponsorship cost</span>
+                        </label>
+                        <div class="input-with-value">
+                            <input type="range" id="rightsFee" min="1" max="50" step="1" value="10" oninput="calculate()">
+                            <span class="value-display" id="rightsFeeDisplay">$10M</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="impressions">Expected Impressions
+                            <span class="label-description">Total media impressions per year</span>
+                        </label>
+                        <div class="input-with-value">
+                            <input type="range" id="impressions" min="10" max="500" step="10" value="200" oninput="calculate()">
+                            <span class="value-display" id="impressionsDisplay">200M</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="engagementRate">Engagement Rate
+                            <span class="label-description">% of impressions that engage (click, share, etc.)</span>
+                        </label>
+                        <div class="input-with-value">
+                            <input type="range" id="engagementRate" min="0.1" max="2" step="0.1" value="0.8" oninput="calculate()">
+                            <span class="value-display" id="engagementRateDisplay">0.8%</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="conversionRate">Conversion Rate
+                            <span class="label-description">% of engaged users who purchase</span>
+                        </label>
+                        <div class="input-with-value">
+                            <input type="range" id="conversionRate" min="1" max="10" step="0.5" value="3" oninput="calculate()">
+                            <span class="value-display" id="conversionRateDisplay">3%</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="avgPurchase">Average Purchase Value
+                            <span class="label-description">Revenue per converted customer</span>
+                        </label>
+                        <div class="input-with-value">
+                            <input type="range" id="avgPurchase" min="20" max="200" step="10" value="80" oninput="calculate()">
+                            <span class="value-display" id="avgPurchaseDisplay">$80</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controversy/Risk Factors -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)" role="button" aria-expanded="true" tabindex="0" onkeydown="handleKeydown(event, this)">
+                <h2>Controversy Risk Factors</h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div class="section-content expanded">
+                <div class="section-inner">
+                    <p style="font-size: 0.875rem; color: var(--color-neutral-600); margin-bottom: 1.5rem;">These factors adjust raw ROI based on reputation risk. LIV Golf example: 10-15% boycott probability, significant employee and media concerns.</p>
+
+                    <div class="input-group">
+                        <label for="boycottProb">Customer Boycott Probability
+                            <span class="label-description">% of customers who may boycott due to controversy</span>
+                        </label>
+                        <div class="input-with-value">
+                            <input type="range" id="boycottProb" min="0" max="30" step="1" value="0" oninput="calculate()">
+                            <span class="value-display" id="boycottProbDisplay">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="employeeImpact">Employee Sentiment Impact
+                            <span class="label-description">Productivity/retention cost as % of payroll</span>
+                        </label>
+                        <div class="input-with-value">
+                            <input type="range" id="employeeImpact" min="0" max="20" step="1" value="0" oninput="calculate()">
+                            <span class="value-display" id="employeeImpactDisplay">0%</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="mediaTone">Media Coverage Tone
+                            <span class="label-description">-2 = Very negative, +2 = Very positive</span>
+                        </label>
+                        <div class="input-with-value">
+                            <input type="range" id="mediaTone" min="-2" max="2" step="1" value="0" oninput="calculate()">
+                            <span class="value-display" id="mediaToneDisplay">Neutral</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="brandEquity">Brand Equity at Risk
+                            <span class="label-description">Total brand value that could be damaged</span>
+                        </label>
+                        <div class="input-with-value">
+                            <input type="range" id="brandEquity" min="0" max="500" step="10" value="100" oninput="calculate()">
+                            <span class="value-display" id="brandEquityDisplay">$100M</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results" role="region" aria-label="ROI calculation results">
+            <h2>ROI Analysis</h2>
+
+            <!-- Side by Side Comparison -->
+            <div class="comparison-container">
+                <div class="comparison-box raw">
+                    <div class="comparison-label">Raw ROI</div>
+                    <div class="comparison-value positive" id="rawRoiValue">$0M</div>
+                    <div class="comparison-percent" id="rawRoiPercent">0% return</div>
+                </div>
+                <div class="comparison-arrow">→</div>
+                <div class="comparison-box adjusted">
+                    <div class="comparison-label">Risk-Adjusted ROI</div>
+                    <div class="comparison-value" id="adjustedRoiValue">$0M</div>
+                    <div class="comparison-percent" id="adjustedRoiPercent">0% return</div>
+                </div>
+            </div>
+
+            <!-- Risk Cost Breakdown -->
+            <div class="metric" style="margin-bottom: 1.5rem;">
+                <div class="metric-label">Total Reputation Risk Cost</div>
+                <div class="metric-value negative" id="riskCost">$0M</div>
+                <div class="risk-breakdown" id="riskBreakdown">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- Chart -->
+            <div class="chart-container">
+                <canvas id="roiChart" aria-label="ROI comparison bar chart"></canvas>
+            </div>
+
+            <!-- Breakeven Analysis -->
+            <div class="breakeven-box">
+                <div class="breakeven-label">Breakeven Controversy Level</div>
+                <div class="breakeven-value" id="breakevenValue">N/A</div>
+            </div>
+
+            <!-- Recommendation -->
+            <div class="recommendation-box">
+                <div class="recommendation-label">Recommendation</div>
+                <div class="recommendation-value" id="recommendation">Calculate to see recommendation</div>
+            </div>
+
+            <!-- Insight -->
+            <div class="insight-box">
+                <h3>Strategic Insight</h3>
+                <p id="insightText">Adjust the inputs to see how controversy affects sponsorship ROI. Premium brands with high equity face greater risk from controversial partnerships.</p>
+            </div>
+
+            <div class="actions">
+                <button class="btn btn-primary" onclick="exportAnalysis()">Export Analysis</button>
+                <button class="btn btn-secondary" onclick="resetTool()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let roiChart = null;
+
+        const mediaToneLabels = {
+            '-2': 'Very Negative',
+            '-1': 'Negative',
+            '0': 'Neutral',
+            '1': 'Positive',
+            '2': 'Very Positive'
+        };
+
+        const presets = {
+            'liv-premium': {
+                rightsFee: 15,
+                impressions: 300,
+                engagementRate: 1.0,
+                conversionRate: 4,
+                avgPurchase: 120,
+                boycottProb: 15,
+                employeeImpact: 10,
+                mediaTone: -2,
+                brandEquity: 300
+            },
+            'liv-challenger': {
+                rightsFee: 8,
+                impressions: 200,
+                engagementRate: 0.8,
+                conversionRate: 3,
+                avgPurchase: 60,
+                boycottProb: 5,
+                employeeImpact: 3,
+                mediaTone: -1,
+                brandEquity: 50
+            },
+            'pga-baseline': {
+                rightsFee: 12,
+                impressions: 250,
+                engagementRate: 0.9,
+                conversionRate: 3.5,
+                avgPurchase: 100,
+                boycottProb: 0,
+                employeeImpact: 0,
+                mediaTone: 1,
+                brandEquity: 200
+            },
+            'custom': {
+                rightsFee: 10,
+                impressions: 200,
+                engagementRate: 0.8,
+                conversionRate: 3,
+                avgPurchase: 80,
+                boycottProb: 0,
+                employeeImpact: 0,
+                mediaTone: 0,
+                brandEquity: 100
+            }
+        };
+
+        function toggleSection(header) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.toggle-icon');
+            const isExpanded = content.classList.contains('expanded');
+
+            content.classList.toggle('expanded');
+            icon.classList.toggle('expanded');
+            header.setAttribute('aria-expanded', !isExpanded);
+        }
+
+        function handleKeydown(event, element) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleSection(element);
+            }
+        }
+
+        function loadPreset(presetName) {
+            const preset = presets[presetName];
+
+            // Update button states
+            document.querySelectorAll('.preset-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Set all values
+            document.getElementById('rightsFee').value = preset.rightsFee;
+            document.getElementById('impressions').value = preset.impressions;
+            document.getElementById('engagementRate').value = preset.engagementRate;
+            document.getElementById('conversionRate').value = preset.conversionRate;
+            document.getElementById('avgPurchase').value = preset.avgPurchase;
+            document.getElementById('boycottProb').value = preset.boycottProb;
+            document.getElementById('employeeImpact').value = preset.employeeImpact;
+            document.getElementById('mediaTone').value = preset.mediaTone;
+            document.getElementById('brandEquity').value = preset.brandEquity;
+
+            calculate();
+        }
+
+        function formatMoney(value) {
+            if (Math.abs(value) >= 1) {
+                return `$${value.toFixed(1)}M`;
+            } else {
+                return `$${(value * 1000).toFixed(0)}K`;
+            }
+        }
+
+        function calculate() {
+            // Get standard ROI inputs
+            const rightsFee = parseFloat(document.getElementById('rightsFee').value);
+            const impressions = parseFloat(document.getElementById('impressions').value);
+            const engagementRate = parseFloat(document.getElementById('engagementRate').value);
+            const conversionRate = parseFloat(document.getElementById('conversionRate').value);
+            const avgPurchase = parseFloat(document.getElementById('avgPurchase').value);
+
+            // Get risk factors
+            const boycottProb = parseFloat(document.getElementById('boycottProb').value);
+            const employeeImpact = parseFloat(document.getElementById('employeeImpact').value);
+            const mediaTone = parseInt(document.getElementById('mediaTone').value);
+            const brandEquity = parseFloat(document.getElementById('brandEquity').value);
+
+            // Update displays
+            document.getElementById('rightsFeeDisplay').textContent = `$${rightsFee}M`;
+            document.getElementById('impressionsDisplay').textContent = `${impressions}M`;
+            document.getElementById('engagementRateDisplay').textContent = `${engagementRate}%`;
+            document.getElementById('conversionRateDisplay').textContent = `${conversionRate}%`;
+            document.getElementById('avgPurchaseDisplay').textContent = `$${avgPurchase}`;
+            document.getElementById('boycottProbDisplay').textContent = `${boycottProb}%`;
+            document.getElementById('employeeImpactDisplay').textContent = `${employeeImpact}%`;
+            document.getElementById('mediaToneDisplay').textContent = mediaToneLabels[mediaTone.toString()];
+            document.getElementById('brandEquityDisplay').textContent = `$${brandEquity}M`;
+
+            // Calculate Raw ROI
+            // Engaged users = impressions * engagement rate
+            const engagedUsers = impressions * 1000000 * (engagementRate / 100);
+            // Conversions = engaged users * conversion rate
+            const conversions = engagedUsers * (conversionRate / 100);
+            // Revenue = conversions * avg purchase
+            const revenueGenerated = (conversions * avgPurchase) / 1000000; // in millions
+            // Raw ROI = revenue - rights fee
+            const rawRoi = revenueGenerated - rightsFee;
+            const rawRoiPercent = ((revenueGenerated / rightsFee) - 1) * 100;
+
+            // Calculate Risk Costs
+            // Boycott cost = boycott probability * expected revenue
+            const boycottCost = (boycottProb / 100) * revenueGenerated;
+
+            // Employee cost = employee impact % * estimated marketing team cost (assume 10% of rights fee)
+            const employeeCost = (employeeImpact / 100) * (rightsFee * 0.5);
+
+            // Media damage = negative media multiplied by brand equity risk
+            // If media is negative (-1 or -2), calculate potential brand damage
+            let mediaCost = 0;
+            if (mediaTone < 0) {
+                mediaCost = Math.abs(mediaTone) * (brandEquity * 0.02); // 2% of brand equity per negative point
+            }
+
+            // Total risk cost
+            const totalRiskCost = boycottCost + employeeCost + mediaCost;
+
+            // Risk-adjusted ROI
+            const adjustedRoi = rawRoi - totalRiskCost;
+            const adjustedRoiPercent = ((revenueGenerated - totalRiskCost) / rightsFee - 1) * 100;
+
+            // Update results
+            document.getElementById('rawRoiValue').textContent = formatMoney(rawRoi);
+            document.getElementById('rawRoiValue').className = `comparison-value ${rawRoi >= 0 ? 'positive' : 'negative'}`;
+            document.getElementById('rawRoiPercent').textContent = `${rawRoiPercent.toFixed(0)}% return`;
+
+            document.getElementById('adjustedRoiValue').textContent = formatMoney(adjustedRoi);
+            document.getElementById('adjustedRoiValue').className = `comparison-value ${adjustedRoi >= 0 ? 'positive' : 'negative'}`;
+            document.getElementById('adjustedRoiPercent').textContent = `${adjustedRoiPercent.toFixed(0)}% return`;
+
+            document.getElementById('riskCost').textContent = `-${formatMoney(totalRiskCost)}`;
+
+            // Update risk breakdown
+            document.getElementById('riskBreakdown').innerHTML = `
+                <div class="risk-item">
+                    <div class="risk-item-label">Boycott Risk</div>
+                    <div class="risk-item-value">-${formatMoney(boycottCost)}</div>
+                </div>
+                <div class="risk-item">
+                    <div class="risk-item-label">Employee Impact</div>
+                    <div class="risk-item-value">-${formatMoney(employeeCost)}</div>
+                </div>
+                <div class="risk-item">
+                    <div class="risk-item-label">Media Damage</div>
+                    <div class="risk-item-value">-${formatMoney(mediaCost)}</div>
+                </div>
+            `;
+
+            // Calculate breakeven
+            let breakevenText = 'N/A';
+            if (rawRoi > 0 && totalRiskCost > 0) {
+                // What controversy level would make adjusted ROI = 0?
+                const breakevenBoycott = ((rawRoi / revenueGenerated) * 100).toFixed(0);
+                breakevenText = `Boycott rate would need to reach ${breakevenBoycott}% to eliminate all returns`;
+            } else if (adjustedRoi < 0 && rawRoi > 0) {
+                breakevenText = `Controversy already exceeds breakeven. Raw ROI positive, but risk-adjusted is negative.`;
+            } else if (rawRoi < 0) {
+                breakevenText = `Deal is unprofitable even without controversy concerns.`;
+            } else {
+                breakevenText = `No controversy factors applied. Raw ROI = Risk-Adjusted ROI.`;
+            }
+            document.getElementById('breakevenValue').textContent = breakevenText;
+
+            // Update recommendation
+            const recEl = document.getElementById('recommendation');
+            if (adjustedRoi > rightsFee * 0.3) { // >30% return
+                recEl.textContent = 'Accept';
+                recEl.className = 'recommendation-value recommendation-accept';
+            } else if (adjustedRoi > 0) {
+                recEl.textContent = 'Accept with caution';
+                recEl.className = 'recommendation-value recommendation-negotiate';
+            } else if (adjustedRoi > -rightsFee * 0.2) { // Small loss
+                recEl.textContent = 'Negotiate lower fee';
+                recEl.className = 'recommendation-value recommendation-negotiate';
+            } else {
+                recEl.textContent = 'Decline';
+                recEl.className = 'recommendation-value recommendation-decline';
+            }
+
+            // Update chart
+            updateChart(rawRoi, adjustedRoi, totalRiskCost);
+
+            // Update insight
+            updateInsight(rawRoi, adjustedRoi, totalRiskCost, boycottProb, brandEquity);
+        }
+
+        function updateChart(rawRoi, adjustedRoi, riskCost) {
+            const ctx = document.getElementById('roiChart').getContext('2d');
+
+            const data = {
+                labels: ['Raw ROI', 'Risk Cost', 'Adjusted ROI'],
+                datasets: [{
+                    data: [rawRoi, -riskCost, adjustedRoi],
+                    backgroundColor: [
+                        'rgba(64, 64, 64, 0.7)',
+                        'rgba(220, 38, 38, 0.7)',
+                        adjustedRoi >= 0 ? 'rgba(22, 163, 74, 0.7)' : 'rgba(220, 38, 38, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(64, 64, 64, 1)',
+                        'rgba(220, 38, 38, 1)',
+                        adjustedRoi >= 0 ? 'rgba(22, 163, 74, 1)' : 'rgba(220, 38, 38, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            };
+
+            if (roiChart) {
+                roiChart.data = data;
+                roiChart.update();
+            } else {
+                roiChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: data,
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
+                        plugins: {
+                            legend: { display: false }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    callback: function(value) {
+                                        return '$' + value + 'M';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        function updateInsight(rawRoi, adjustedRoi, riskCost, boycottProb, brandEquity) {
+            let insight = '';
+
+            if (riskCost === 0) {
+                insight = `With no controversy factors, your sponsorship shows a ${rawRoi > 0 ? 'positive' : 'negative'} ROI of ${formatMoney(rawRoi)}. This is your baseline return without reputation risk adjustments.`;
+            } else if (adjustedRoi < 0 && rawRoi > 0) {
+                insight = `This is the LIV Golf paradox: raw ROI is positive (${formatMoney(rawRoi)}), but controversy costs (${formatMoney(riskCost)}) flip the deal to a net loss. With ${boycottProb}% boycott probability and $${brandEquity}M brand equity at risk, reputation damage exceeds financial gains. This explains why premium brands like Rolex and BMW declined despite attractive economics.`;
+            } else if (adjustedRoi > 0 && riskCost > 0) {
+                insight = `Despite controversy costs of ${formatMoney(riskCost)}, your risk-adjusted ROI remains positive at ${formatMoney(adjustedRoi)}. This scenario mirrors challenger brands that signed with LIV Golf—lower brand equity means less to lose, making the risk-reward calculus more favorable.`;
+            } else if (rawRoi < 0) {
+                insight = `This deal shows negative raw ROI even before controversy adjustments. The sponsorship economics don't work regardless of reputation considerations. Consider negotiating a lower rights fee or seeking properties with better engagement metrics.`;
+            }
+
+            document.getElementById('insightText').textContent = insight;
+        }
+
+        function exportAnalysis() {
+            const rawRoi = document.getElementById('rawRoiValue').textContent;
+            const adjustedRoi = document.getElementById('adjustedRoiValue').textContent;
+            const riskCost = document.getElementById('riskCost').textContent;
+            const recommendation = document.getElementById('recommendation').textContent;
+            const insight = document.getElementById('insightText').textContent;
+
+            const exportText = `BRAND RISK CALCULATOR - ROI ANALYSIS
+=====================================
+Generated: ${new Date().toLocaleString()}
+
+STANDARD ROI METRICS:
+- Rights Fee: $${document.getElementById('rightsFee').value}M
+- Impressions: ${document.getElementById('impressions').value}M
+- Engagement Rate: ${document.getElementById('engagementRate').value}%
+- Conversion Rate: ${document.getElementById('conversionRate').value}%
+- Avg Purchase: $${document.getElementById('avgPurchase').value}
+
+CONTROVERSY RISK FACTORS:
+- Boycott Probability: ${document.getElementById('boycottProb').value}%
+- Employee Impact: ${document.getElementById('employeeImpact').value}%
+- Media Tone: ${mediaToneLabels[document.getElementById('mediaTone').value]}
+- Brand Equity at Risk: $${document.getElementById('brandEquity').value}M
+
+RESULTS:
+- Raw ROI: ${rawRoi}
+- Risk Cost: ${riskCost}
+- Risk-Adjusted ROI: ${adjustedRoi}
+
+RECOMMENDATION: ${recommendation}
+
+STRATEGIC INSIGHT:
+${insight}
+
+---
+Generated by Brand Risk Calculator
+Week 3: Sponsorship & Betting - Business of Sports Marketing`;
+
+            const blob = new Blob([exportText], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'brand-risk-analysis.txt';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function resetTool() {
+            document.querySelectorAll('.preset-btn').forEach(btn => btn.classList.remove('active'));
+            loadPreset('custom');
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            calculate();
+        });
+    </script>
+</body>
+</html>

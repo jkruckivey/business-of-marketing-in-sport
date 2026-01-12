@@ -1,20 +1,24 @@
-# MODULE 5: Group Sprint - Activation Plan
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+# MODULE 5: Sponsorship Strategy Memo
+**Version:** 2.0.0 | **Last Updated:** 2026-01-12
 
-**Purpose:** Collaborative design of sponsorship activation with ROI projections (measures WLO 3.4)
+### Version 2.0.0 Changes
+- **MAJOR:** Changed from Group Sprint to Individual Strategy Memo
+- **NEW:** LIV Golf scenario option added to apply ethical framework
+- **UPDATED:** Aligned with LIV Golf case study from Module 4
+- **UPDATED:** Removed group work requirements (individual submission)
+
+**Purpose:** Individual synthesis of sponsorship frameworks into strategic recommendation memo (measures WLOs 3.3, 3.4, 3.5)
 
 **Uplimit Structure:** Fifth module in Unit 3
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 4 | Type directly | Launches group sprint assignment |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 4 | Type directly | Launches individual memo assignment |
 | 2 | **Infobox (Assessment)** ⬤ Required | Assignment brief and rubric preview | Type directly | Purple variant, 40 points |
-| 3 | **Infobox (Group Work)** ◐ Recommended | Group dynamics and conflict resolution | Type directly | Yellow variant, manages expectations |
-| 4 | **Details** ⬤ Required | Full assignment instructions | Type directly | Accordion - detailed requirements |
-| 5 | **Interactive Widget** ◐ Recommended | Activation Plan Template Builder | Embed iframe | Auto-generates plan structure |
-| 6 | **Video** ◐ Recommended | Group Sprint Tips (2 min) | Upload MP4 | Best practices for collaboration |
-| 7 | **AI Chat Widget** ◐ Recommended | Activation Plan Coach | Configure in Uplimit | Socratic guidance (not answers) |
-| 8 | **Details** ○ Optional | Example activation plans (3 models) | Type directly | Accordion - A/B/C grade examples |
+| 3 | **Details** ⬤ Required | Full assignment instructions | Type directly | Accordion - detailed requirements |
+| 4 | **Interactive Widget** ◐ Recommended | Strategy Memo Template Builder | Embed iframe | Auto-generates memo structure |
+| 5 | **AI Chat Widget** ◐ Recommended | Strategy Memo Coach | Configure in Uplimit | Socratic guidance (not answers) |
+| 6 | **Details** ○ Optional | Example memos (3 quality levels) | Type directly | Accordion - A/B/C grade examples |
 
 ---
 
@@ -23,28 +27,24 @@
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-You've learned the frameworks (sponsorship ROI, betting economics, partnership valuation), practiced with widgets (CPM calculators, ROI models, competitive analysis), and analyzed FanDuel's real-world strategy through an HBS case. Now it's time to create.
+You've built powerful frameworks (sponsorship ROI, betting economics, engagement multipliers), practiced with widgets (CPM calculators, ROI models, risk calculators), and wrestled with ethical complexity through the LIV Golf case. Now it's time to synthesize everything into a professional deliverable.
 
-**Your Challenge:** Design a 1-page sponsorship activation plan for a brand partnering with a sports betting operator. This is your Week 3 graded deliverable (40 points).
+**Your Challenge:** Write a 2-page sponsorship strategy memo advising a real brand on a specific sponsorship decision. This is your Week 3 graded deliverable (40 points).
 
-**Why This Matters:** In the sports marketing industry, brands don't just sign sponsorship deals—they design activation campaigns that turn logo placement into measurable ROI. Your plan must answer three questions:
-1. **What's the strategy?** (Target audience, objectives, key messages)
-2. **How will we activate?** (Channels, tactics, budget allocation)
-3. **How will we measure success?** (KPIs, ROI projections, attribution methods)
+**Why This Matters:** In sports marketing, executives don't want lengthy reports—they want clear, data-driven recommendations in memo format. Your memo must answer three questions:
+1. **What's the recommendation?** (Sponsor or decline? Why?)
+2. **What's the evidence?** (CPM analysis, ROI projections, risk assessment)
+3. **What are the trade-offs?** (What you gain vs. what you risk)
 
-**Format:** 1-page executive summary (max 500 words) + 1-page budget/ROI spreadsheet
+**Format:** 2-page executive memo (max 800 words) including data tables and recommendation
 
 **Deliverable:** PDF upload (due end of Module 6)
 
 **Grading:** 40 points (rubric detailed below)
 
-**Group Work:** Work in groups of 3-4 students (assigned randomly or self-selected). All group members receive the same grade.
+**Individual Work:** This is an individual assignment. You'll apply your personal analysis and ethical framework to make a defensible recommendation.
 
-**Individual Option Available:** Students may complete individually with adjusted scope (see details below). Same rubric, same 40 points—no penalty for individual work.
-
-**Time Allocation:**
-- Group: 45-60 minutes for Module 5 sprint + 30-40 minutes Module 6 finalization
-- Individual: 60-75 minutes for Module 5 sprint + 30-40 minutes Module 6 finalization
+**Time Allocation:** 60-75 minutes for Module 5 memo development + 30-40 minutes Module 6 finalization and PAIRR feedback
 
 Let's begin. Read the full assignment brief in the next element.
 ```
@@ -54,202 +54,104 @@ Let's begin. Read the full assignment brief in the next element.
 ## Element 2: Infobox - Assignment Brief
 
 ```
-Title: ▪ Assessment: Group Sprint - Sponsorship Activation Plan (40 points)
+Title: ▪ Assessment: Sponsorship Strategy Memo (40 points)
 
-**Assignment:** Design a 1-page sponsorship activation plan for a brand partnering with a sports betting operator.
+**Assignment:** Write a 2-page sponsorship strategy memo advising a brand on whether to pursue a specific sponsorship opportunity.
 
 **Format:**
-- Page 1: Executive summary (max 500 words) - Strategy, activation tactics, measurement framework
-- Page 2: Budget allocation table + ROI projections spreadsheet
+- Page 1: Executive recommendation (max 500 words) - Recommendation, rationale, key evidence
+- Page 2: Supporting analysis - CPM/ROI calculations, risk assessment, trade-off summary
 
 **Scenario Options (Choose One):**
-1. **Nike + FanDuel:** Target 18-34 male sneakerheads who bet on NBA
-2. **Coca-Cola + DraftKings:** Mass-market reach across NFL betting audience
-3. **Verizon + BetMGM:** Showcase 5G technology for in-game live betting
-4. **American Express + Caesars:** Premium hospitality for high-value bettors
-5. **Bud Light + FanDuel:** Re-engage post-controversy through sports betting integration
-6. **Custom:** Propose your own brand + operator pairing (requires instructor approval)
 
-**Deliverable:** PDF upload by end of Module 6 (tonight)
+**Standard Scenarios (Sponsorship ROI Focus):**
+1. **Nike + FanDuel:** Should Nike partner with FanDuel for NBA betting integration?
+2. **Coca-Cola + DraftKings:** Should Coke expand NFL partnership to include DraftKings?
+3. **Verizon + BetMGM:** Should Verizon sponsor BetMGM to showcase 5G live betting?
+
+**Ethical Complexity Scenarios (Recommended - Apply Module 4 Framework):**
+4. **BMW + LIV Golf:** Should BMW sponsor LIV Golf given premium brand positioning?
+5. **Mastercard + LIV Golf:** Should Mastercard join LIV Golf despite ESG commitments?
+6. **Budweiser + LIV Golf:** Should AB InBev's Budweiser sponsor LIV Golf?
+
+**Custom Option:**
+7. Propose your own brand + property pairing (requires ethical dimension)
+
+**Deliverable:** PDF upload by end of Module 6
 
 **Grading Rubric (40 points):**
-- Strategic Clarity (10 pts): Clear target audience, measurable objectives, compelling value proposition
-- Activation Design (15 pts): Creative tactics across multiple channels, appropriate budget allocation (2-3× rights fee rule)
-- ROI Justification (10 pts): Realistic projections using course frameworks (CPM, engagement multipliers, attribution modeling)
-- Presentation Quality (5 pts): Professional formatting, clear writing, data visualization
+- Strategic Clarity (10 pts): Clear recommendation with compelling rationale
+- Analytical Rigor (15 pts): Proper use of CPM, ROI, and risk frameworks from course
+- Ethical Framework (10 pts): Thoughtful stakeholder analysis and trade-off assessment
+- Presentation Quality (5 pts): Professional memo format, clear writing, data visualization
 
-**Group Work:** 3-4 students per group. All members receive same grade.
+**Individual Work:** This is an individual assignment.
 ```
 
 ---
 
-## Element 2A: Infobox - Individual Submission Option (UDL Alternative)
-
-```
-Title: ○ Individual Option: Adjusted Scope, Same Assessment Quality
-
-**Prefer to work alone?** You may complete this assessment individually with no grade penalty. Same rubric (40 points), same learning objectives, adjusted scope to match individual workload.
-
-**Adjusted Scope for Individual Submissions:**
-
-1. **Reduced Channel Coverage:** Choose 3 of 5 activation channels instead of all 5
-   - Must include: Advertising, Digital, and one of (Retail/Experiential/Measurement)
-   - Rationale: Groups have 4× capacity for ideation across all channels
-
-2. **Reduced Budget:** $7-10M activation budget instead of $10-15M
-   - Still follows 2-3× rights fee rule (e.g., $3-4M rights fee for mid-tier partnership)
-   - Rationale: Smaller scale activation requires less research and calculation
-
-3. **Simplified ROI Modeling:** Single scenario projection instead of multiple scenarios
-   - Show base case ROI with assumptions clearly stated
-   - No need to model optimistic/pessimistic scenarios
-   - Rationale: Groups can divide sensitivity analysis work, individuals focus on core calculation
-
-**What Stays the Same:**
-- ✅ Same 2-page format (1-page executive summary + 1-page spreadsheet)
-- ✅ Same rubric criteria (Strategic Clarity 10pts, Activation 15pts, ROI 10pts, Presentation 5pts)
-- ✅ Same quality standards (SMART objectives, data-driven projections, professional formatting)
-- ✅ Same access to widgets, AI Coach, templates
-
-**Why This Option Exists:**
-We recognize students have diverse collaboration preferences and circumstances:
-- Time zone challenges for remote/international students
-- Schedule conflicts with other commitments
-- Previous negative group work experiences
-- Learning preferences (some students think better independently)
-
-**Choosing individual work does NOT penalize your grade.** Both paths are assessed equally.
-
-**How to Select Individual Option:**
-- No approval needed—simply work alone and submit using individual file naming: `FirstNameLastName_ActivationPlan_BrandName_OperatorName.pdf`
-- Example: `SarahChen_ActivationPlan_Nike_FanDuel.pdf`
-```
-
----
-
-## Element 2B: Infobox - Group Work Guidelines
-
-```
-Title: ▶ Managing Group Dynamics - Best Practices for Collaboration
-
-Group work is a professional skill. Real marketing agencies collaborate on activation plans daily—here's how to make it work.
-
-**Before You Start:**
-
-1. **Assign Roles (5 minutes):**
-   - **Strategist:** Leads brand-operator selection, target audience definition, objectives
-   - **Analyst:** Owns budget allocation model, ROI projections, CPM calculations
-   - **Creative:** Designs activation tactics, channel mix, campaign concepts
-   - **Editor:** Final formatting, proofreading, ensures 2-page limit compliance
-
-2. **Set Expectations:**
-   - All 4 members contribute equally (~15 minutes work each)
-   - Document individual contributions in Page 1 header: "Strategy: [Name], Analysis: [Name], Creative: [Name], Editor: [Name]"
-   - Use shared Google Doc to track changes (comment history shows who contributed what)
-
-3. **Track Work:**
-   - Start with Google Doc where all can edit simultaneously
-   - Use comments to propose ideas, suggest edits
-   - Save version history as evidence of contributions
-
-**If Problems Arise:**
-
-**Unequal Contribution:**
-- Document in submission notes: "Note: Member X contributed <50% as evidenced by Google Doc edit history"
-- Instructor may adjust individual grades based on documented evidence (10-20% reduction for non-contributors)
-- Evidence required: Google Doc comment history, Zoom meeting notes, email threads, widget export timestamps
-
-**Conflict Over Decisions:**
-- Vote democratically: 4 members = majority rules (3-1 or 2-2 with Strategist breaking tie)
-- If fundamental disagreement: Split into 2 pairs, each submits their own plan (both graded)
-
-**Missing Member:**
-- Contact instructor within 24 hours via Uplimit message (don't wait until deadline)
-- Options: (1) Continue with 3 members (note missing member), (2) Merge with another incomplete group, (3) Individual submission with adjusted scope
-
-**Grade Adjustments:**
-
-- **Default:** All members receive same grade
-- **Individual Adjustment:** If you document "Member X contributed <50%", instructor reviews evidence and may reduce individual grade by 10-20%
-- **Evidence:** Google Doc edit history (with timestamps), meeting attendance logs, email correspondence, widget JSON exports showing who used tools
-- **Timeline:** Flag issues in submission notes, instructor reviews within 5 business days
-
-**This Is Professional Practice:**
-
-Real sports marketing agencies manage group dynamics on every client project. Skills you'll develop:
-- **Conflict resolution:** Navigate disagreements professionally
-- **Accountability:** Document contributions transparently
-- **Delegation:** Assign tasks based on strengths
-- **Quality control:** Review each other's work before submission
-
-**Learn these skills now—you'll use them daily in your marketing career.**
-
-**Next:** Element 3 provides full assignment instructions. Let's sprint!
-```
-
----
-
-## Element 2C: Image - Group Sprint Workflow Diagram
+## Element 2A: Image - Strategy Memo Workflow Diagram
 
 **Element Type:** Image (Recommended)
-**Purpose:** Visual learners need process diagram showing 45-minute sprint phases
+**Purpose:** Visual learners need process diagram showing recommended workflow for completing the strategy memo
 
 **Image Specifications:**
 - **Dimensions:** 1400×900px (landscape)
 - **Format:** PNG or JPG
-- **Alt Text:** "Four-phase group sprint workflow for sponsorship activation plan: Brainstorm (10 min), Activate (15 min), Calculate (15 min), Polish (5 min)"
+- **Alt Text:** "Four-phase strategy memo workflow: Research (15 min), Analyze (20 min), Write (25 min), Polish (10 min)"
 
 **Visual Content to Create:**
 
 ```
 [4-Quadrant Diagram with Timeline Arrow]
 
-PHASE 1: BRAINSTORM (10 minutes)
-Icon: 💡 Lightbulb
+PHASE 1: RESEARCH (15 minutes)
+Icon: 🔍 Magnifying glass
 Tasks:
-- Select brand + operator pairing
-- Define target audience (demographics + psychographics)
-- Write 3 SMART objectives
-Output: Strategic foundation complete
+- Choose your scenario (standard or LIV Golf ethical)
+- Review relevant case data and widget outputs
+- Identify key stakeholders and decision factors
+Output: Decision context mapped
 
 ↓
 
-PHASE 2: ACTIVATE (15 minutes)
-Icon: 🎯 Target with channels
-Tasks:
-- Design tactics for all 5 channels (Advertising, Digital, Retail, Experiential, Measurement)
-- Use Activation Plan Template Builder widget for ideas
-- Allocate $10-15M budget across channels (follow 2-3× rights fee rule)
-Output: Activation tactics + budget table
-
-↓
-
-PHASE 3: CALCULATE (15 minutes)
+PHASE 2: ANALYZE (20 minutes)
 Icon: 📊 Calculator
 Tasks:
-- Calculate CPM using Sponsorship Valuation Calculator widget
-- Model engagement multiplier (35-50%) from Module 3 data
-- Project ROI using attribution assumptions
-- Build Page 2 spreadsheet with formulas
-Output: ROI projections + measurement framework
+- Calculate CPM using Sponsorship Valuation Calculator
+- Run Brand Risk Calculator (if ethical scenario)
+- Model ROI projections with assumptions
+- Complete Ethical Decision Tool stakeholder analysis
+Output: Quantitative analysis complete
 
 ↓
 
-PHASE 4: POLISH (5 minutes)
+PHASE 3: WRITE (25 minutes)
 Icon: ✍️ Document
 Tasks:
-- Write 500-word executive summary (Page 1)
-- Format tables professionally
-- Proofread, export PDF
-- Submit with group member names
-Output: Final 2-page activation plan PDF
+- Draft executive recommendation (Page 1)
+- State your position clearly in opening paragraph
+- Support with evidence from your analysis
+- Address trade-offs and alternatives considered
+Output: Draft memo complete
+
+↓
+
+PHASE 4: POLISH (10 minutes)
+Icon: ✅ Checkmark
+Tasks:
+- Review against rubric criteria
+- Format tables and calculations (Page 2)
+- Proofread for clarity and professionalism
+- Export PDF, verify 2-page limit
+Output: Final strategy memo PDF
 ```
 
 **Design Notes:**
 - Use Uplimit neutral color palette (grays, not colored boxes)
-- Timeline arrow on left showing cumulative time (0 min → 10 min → 25 min → 40 min → 45 min)
+- Timeline arrow on left showing cumulative time (0 min → 15 min → 35 min → 60 min → 70 min)
 - Each phase box shows: Icon, Phase name, Time allocation, 3-4 key tasks, Output deliverable
-- Include small clock icons showing "20 min checkpoint" and "40 min checkpoint" markers (connects to optional checkpoint submissions from previous element)
+- Total time: ~70 minutes (aligns with assignment estimate of 60-75 minutes)
 
 **Production Options:**
 - DIY: Create in Canva (use "Infographic" template, 15-20 minutes)

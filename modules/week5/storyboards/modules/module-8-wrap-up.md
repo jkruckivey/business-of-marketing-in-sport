@@ -380,6 +380,16 @@ Completing this course doesn't mean your learning stops—it means you're ready 
 - **EY: Unlocking the Value of Esports** (Free report)
 - **Statista: Global Sports Betting Market Report** (Summary free, detailed data paid)
 
+### **Week 5 Specific Readings**
+- **Hockey Hall of Fame – Annual Financial Statements (2023/2024)** — Actual revenue breakdown (~$10M range), grounds case assumptions
+- **Charity Intelligence – Hockey Hall of Fame Profile** — Revenue sources, expenses, visitor trends
+- **CFL.ca – "2025 Salary Cap Increase"** — Cap jump to $6.06M supports expansion optimism
+- **3DownNation – "CFL Expansion Interest"** — Ownership interest and market projections
+- **Deloitte – "Future of Sports: Seizing the Moment"** — Women's sports, digital transformation, next-gen fans
+- **Deloitte – "Immersive Sports Fandom"** — VR/AR, metaverse, AI personalization in heritage contexts
+- **Ivey – "Bank of America Sports Sponsorship"** — Brand portfolio evolution and identity
+- **Ivey – "LIV Golf: Sportswashing"** — Tradition vs. innovation, heritage league disruption
+
 ---
 
 ## **Podcasts (30-minute weekly commits)**

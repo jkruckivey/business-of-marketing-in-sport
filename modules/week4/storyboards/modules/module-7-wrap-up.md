@@ -30,7 +30,7 @@ Congratulations on completing Week 4! You've transformed from someone who though
 ## Your Journey This Week
 
 ### **Module 0: The Hook**
-You started with a puzzle: How does Serena Williams build a $500M brand on $94M prize money? Most of that value ($150-200M) came from somewhere other than playing tennis—but where?
+You started with a puzzle: How does Serena Williams build net worth far exceeding her $95M prize money? Her substantial wealth came from somewhere other than playing tennis—but where?
 
 ### **Module 1: The Framework**
 You learned the four capabilities that explain athlete brand building:
@@ -120,8 +120,6 @@ You're leaving Week 4 as a strategic advisor who can:
 
 ## Element 2: Week 4 Concept Map Widget
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 ### ⚙ Interactive Activity: Week 4 Concept Map
 
 **Practice: Synthesis of all Week 4 WLOs (4.1-4.4)**
@@ -142,10 +140,6 @@ Click on any node to explore its definition and connections. Start with the four
 
 ---
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 **Widget Purpose:** Interactive visualization showing how Week 4 frameworks connect
 
 **File:** `week4-concept-map.html`
@@ -162,8 +156,6 @@ Click on any node to explore its definition and connections. Start with the four
 
 **Uplimit Embed Code:**
 ```html
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/week4-concept-map.html"
   width="100%"
@@ -173,19 +165,6 @@ Click on any node to explore its definition and connections. Start with the four
   aria-label="Interactive concept map visualization showing relationships between Week 4 learning outcomes and key frameworks including five revenue streams, equity versus fees, and real athlete examples"
   allowfullscreen
   loading="lazy">
-=======
-=======
->>>>>>> Stashed changes
-<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/week4-concept-map.html"
-        width="900"
-        height="700"
-        title="Week 4 Concept Map - Interactive visualization of athlete brand frameworks"
-        frameborder="0"
-        aria-label="Interactive concept map showing relationships between Week 4 athlete brand frameworks">
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 </iframe>
 ```
 
@@ -396,8 +375,6 @@ Hi! Welcome to Week 4 office hours. I'm here to answer any remaining questions a
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 ## 🎯 FINAL PROJECT CONNECTION
 
 **How Week 4 Supports Your Final Strategic Vision:**
@@ -429,10 +406,54 @@ Your Week 5 strategic vision integrates Week 4's athlete brand frameworks across
 
 ---
 
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+---
+
+## Element 7: Additional Readings - Women's Sports & Emerging Markets
+
+**Uplimit Implementation:**
+1. Select **Details** (accordion) element
+2. Copy markdown below:
+
+```markdown
+Title: Optional Extension Resources: Women's Sports Growth & Emerging Markets
+
+[Expand for additional readings and research]
+
+### Women's Sports Growth & Investment
+
+**1. McKinsey: "Women's Sports Market Growth: A $2.5 Billion Opportunity"**
+Core data on 250-300% revenue/sponsorship growth potential; undervalued assets thesis.
+🔗 [Read Report](https://www.mckinsey.com/industries/media-and-entertainment/our-insights/womens-sports)
+
+**2. Parity: "Beyond Viewership: Why Women's Sports Sponsorships Drive Deeper Brand Engagement"**
+Brand lift and engagement metrics; why women's sports fans convert for sponsors.
+🔗 [Read Article](https://www.parity.org/resources)
+
+**3. Sports Business Journal: "Women's Sports Sponsorships: Changing the Game"**
+Case studies (Ally, Sprouts, etc.) on activation and ROI in women's sports.
+🔗 [Read Article](https://www.sportsbusinessjournal.com)
+
+### Emerging Sports Evaluation
+
+**4. Deloitte: "Future of Sports: Emerging Sports and Fan Experience"**
+How to evaluate new formats (pickleball, esports) for media viability and monetization.
+🔗 [Read Report](https://www2.deloitte.com/us/en/pages/technology-media-and-telecommunications/articles/future-of-sports.html)
+
+**5. Fairgrounds / Matt Rubinoff Case Materials**
+Proof-of-concept methodology for scaling emerging sports; demographics/accessibility focus.
+(Reference your Module 2 executive interview notes)
+
+### Why These Matter
+
+These readings extend Week 4's investment thesis with current market data:
+- McKinsey's growth projections validate WLO 4.3's women's sports thesis
+- Parity's engagement data supports sponsorship ROI calculations
+- Deloitte's emerging sports framework applies to pickleball, esports evaluation
+- Use this research to strengthen your Anchor Project's growth assumptions
+```
+
+---
+
 ### What's Next:
 
 **Immediate:**

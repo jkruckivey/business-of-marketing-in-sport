@@ -82,8 +82,6 @@ This module features advanced simulations that force difficult decisions with in
 
 **Uplimit Embed Code:**
 ```html
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/post-career-wealth-simulator.html"
   width="100%"
@@ -93,19 +91,6 @@ This module features advanced simulations that force difficult decisions with in
   aria-label="Interactive multi-phase simulator where you make strategic decisions across rookie years, peak career, and retirement transition to see how choices affect retirement wealth at age sixty-five"
   allowfullscreen
   loading="lazy">
-=======
-=======
->>>>>>> Stashed changes
-<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/post-career-wealth-simulator.html"
-        width="900"
-        height="800"
-        title="Post-Career Wealth Simulator - See how career decisions affect retirement wealth"
-        frameborder="0"
-        aria-label="Interactive simulation of athlete wealth across career phases with strategic decision points">
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 </iframe>
 ```
 
@@ -140,8 +125,6 @@ After simulating career paths:
 
 **Uplimit Embed Code:**
 ```html
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/athlete-decision-tree.html"
   width="100%"
@@ -151,19 +134,6 @@ After simulating career paths:
   aria-label="Interactive decision tree where you answer five strategic questions about career stage, brand strength, and risk tolerance to receive personalized recommendations on endorsement versus equity investment decisions"
   allowfullscreen
   loading="lazy">
-=======
-=======
->>>>>>> Stashed changes
-<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/athlete-decision-tree.html"
-        width="900"
-        height="700"
-        title="Athlete Decision Tree - Navigate endorsement vs equity strategic trade-offs"
-        frameborder="0"
-        aria-label="Interactive decision tree for evaluating athlete brand strategy decisions">
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 </iframe>
 ```
 
@@ -246,7 +216,7 @@ Magic invested in OWNED BUSINESSES during his playing career. These assets appre
 
 You've built frameworks, experimented with simulations, and analyzed why athletes succeed or fail at wealth building. Now you'll apply everything to analyze Serena Williams' actual brand strategy:
 
-- How she built a $500M brand on $94M prize money
+- How she built substantial net worth far exceeding her $95M prize money
 - Why she prioritized owned businesses over endorsements
 - How Serena Ventures creates post-career value
 - Strategic decisions you would replicate—and what you'd change

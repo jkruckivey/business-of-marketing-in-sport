@@ -1,5 +1,10 @@
 # MODULE 3: Sports Betting Economics (⭐ INTERACTIVE FOCUS)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2026-01-12
+
+### Version 1.4.0 Changes
+- **NEW:** Added Element 11 - Core Readings on Betting, CLV & Attribution
+- **UPDATED:** Transition to Module 4 now references LIV Golf case (not FanDuel)
+- **UPDATED:** FanDuel positioned as data source/examples (not primary case)
 
 **Purpose:** Analyze sports betting as growth driver, understand regulatory landscape, explore fan engagement impact (measures WLOs 3.2, 3.3)
 
@@ -224,7 +229,7 @@ Sports betting fundamentally changes fan behavior. Research shows bettors are mo
 - Bettors attend **1.5x more live games** (betting motivates in-person attendance)
 - Bettors have **35% higher household income** (premium demographic for sponsors)
 
-**Why This Matters:** When a league partners with FanDuel as "Official Betting Partner," they're not just selling logo placement—they're accessing the most engaged 10-15% of their fanbase. That's why betting partnerships command 20-30% premiums over traditional sponsors.
+**Why This Matters:** When a league partners with FanDuel as "Official Betting Partner," they're not just selling logo placement—they're accessing the most engaged 10-15% of their fanbase. That's why betting partnerships often command 20-30% premiums over traditional sponsors.
 
 **Next widget:** Calculate the engagement multiplier effect for your brand.
 ```
@@ -617,12 +622,65 @@ The US approach (post-PASPA) is just one model. Other countries have decades of 
 
 ---
 
+## Element 11: Core Readings - Betting, CLV & Attribution
+
+**Type:** Details (Accordion)
+**Priority:** ◐ Recommended
+
+```
+Title: 📚 Core Readings: Betting Economics & Customer Value
+
+[Expand for required and recommended readings]
+
+## Required Reading
+
+These readings explain the customer economics frameworks you practiced in this module:
+
+• **FairPlay Sports Media – "Building Value for Betting Partners"**
+  Explains CPM/CPA/rev-share hybrids and how betting brands think about acquisition, loyalty, and sponsorship ROI.
+  https://fairplaysportsmedia.com/building-value-betting-partners
+  *Essential context for understanding FanDuel's partnership economics*
+
+• **Altenar – "Boosting Customer Lifetime Value in Sports Betting"**
+  Clear overview of CLV drivers and retention tactics; aligns with your discussion of LTV and aggressive acquisition.
+  https://altenar.com/blog/boosting-customer-lifetime-value-sports-betting
+  *Connects directly to the Customer Economics Calculator*
+
+## Recommended Reading
+
+Go deeper on ARPU trends and loyalty programs:
+
+• **BettingOnline – "Sports Betting ARPU Trends: Why Core Customer Value is Rising in 2025"**
+  Useful background for your CLV/LTV numbers and why operators pay premiums for high-intent audiences.
+  https://www.bettingonline.com/sports-betting-arpu-trends-2025
+  *Supports the engagement multiplier concepts from Element 5*
+
+• **"Why are Sports Betting Rewards Programs So Successful? (5 Reasons)"**
+  Concrete examples of tiers, rewards, engagement; supports your "data-rich, attributable sponsors" narrative.
+  https://www.loyaltyprogramexamples.com/sports-betting-rewards-programs
+  *Shows how operators build the customer relationships that justify high CAC*
+
+## Reading Strategy
+
+**Before Module 4:** Read FairPlay article to understand partnership structures
+**After Module 4:** Read CLV articles to assess whether LIV Golf's player investments make economic sense
+
+Total reading time: 20-25 minutes (required) + 15 minutes (recommended)
+```
+
+**Design Rationale:**
+- Betting economics readings positioned before LIV Golf case analysis
+- Industry sources (not academic) match MBA practitioner focus
+- Direct connections to module widgets and upcoming case analysis
+
+---
+
 ## Module 3 Complete - Transition to Module 4
 
 **Completion Badge:** 🏆 Sports Betting Economics Mastered
 
 **What You've Accomplished:**
-You've analyzed the sports betting regulatory landscape (PASPA repeal, state-by-state legalization), modeled betting market economics (handle, GGR, tax revenue), and quantified betting's fan engagement impact (40% more viewership, 3x app usage). You've calculated why betting partnerships command 20-30% premiums over traditional sponsors using three interactive widgets.
+You've analyzed the sports betting regulatory landscape (PASPA repeal, state-by-state legalization), modeled betting market economics (handle, GGR, tax revenue), and quantified betting's fan engagement impact (40% more viewership, 3x app usage). You've calculated why betting partnerships often command 20-30% premiums over traditional sponsors using three interactive widgets.
 
 **Key Takeaways:**
 - Sports betting is the fastest-growing revenue stream (zero to $119.8B annual handle by 2023)
@@ -630,9 +688,15 @@ You've analyzed the sports betting regulatory landscape (PASPA repeal, state-by-
 - Betting partnerships offer attribution advantages impossible with traditional sponsors (first-party data access)
 - Betting sponsors are now one of the top categories by spending (operators spend $800M-1B annually on sports sponsorships)
 
-**Up Next: Module 4 - FanDuel Case Study**
-Now that you understand betting economics and sponsorship value, let's apply these frameworks to a real case. You'll analyze FanDuel's rise from zero to $50B+ handle by 2024, evaluate their partnership strategy, and assess their competitive positioning against DraftKings, BetMGM, and new entrants. This case analysis prepares you for Module 5's group sprint—designing a sponsorship activation plan.
+**Up Next: Module 4 - LIV Golf Case Study**
+You've learned HOW sponsorship ROI and betting economics work using FanDuel as an example. Now you'll apply those frameworks to a harder question: **SHOULD a brand sponsor a property with ethical concerns?**
 
-Ready to see theory meet reality? Let's dive into the case!
+LIV Golf (Saudi Arabia's $2B+ investment in professional golf) offers the perfect case study. You'll analyze:
+- Why brands like 7UP and Michelob Ultra signed LIV Golf sponsorships
+- How to calculate ROI when brand reputation is at stake
+- The "sportswashing" debate and stakeholder impact
+- Whether PGA Tour's competitive response was strategic or desperate
+
+This is where theory meets real-world complexity. Ready to wrestle with ethical sponsorship decisions?
 
 

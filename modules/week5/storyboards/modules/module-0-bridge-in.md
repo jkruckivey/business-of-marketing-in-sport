@@ -49,23 +49,23 @@ up at night."
 [0:25-1:20] THE CHALLENGE SETUP
 
 SME: "Imagine you're the CEO of the Hockey Hall of Fame. Your institution generates
-$18 million annually—respectable, but flat or declining over the past 5 years.
+approximately $10-11 million annually—respectable, but flat or declining over the past 5 years.
 
 [VISUAL CUE: Show revenue chart - flat line 2018-2023]
 
 Your board presents you with a proposal: Transform the HHOF into a cutting-edge
-experience center. Virtual reality zones where fans 'play' with Gretzky. AI-powered
-personalized tours. Pop-up exhibits in Shanghai, Mumbai, Mexico City.
+experience center. VR experience zones. AI-powered personalized tours. International
+pop-up exhibits in emerging markets.
 
 [VISUAL CUE: Mockups of VR zones, digital exhibits]
 
-The financial projections are stunning:
-• VR experiences: +$8M annually
-• Digital memberships: +$5M annually
-• International pop-ups: +$12M annually
-• Total new revenue: $25M (doubling current revenue)
+The financial projections are ambitious:
+• VR experiences: Potential significant revenue
+• Digital memberships: Growing revenue stream
+• International pop-ups: Expansion opportunity
+• Total projection: Substantially increase revenue (potentially doubling)
 
-[ON-SCREEN TEXT: "$18M → $43M (139% growth)"]
+[ON-SCREEN TEXT: "Projections: Significant growth potential"]
 
 
 [1:20-2:10] THE CATCH
@@ -121,7 +121,7 @@ SME: "This week, you're going to master this balance. You'll learn:
 
 But first, I want to know: Do you ALREADY have the strategic thinking to solve this?
 If I gave you the Hockey Hall of Fame challenge right now, could you design a path
-that doubles revenue while preserving credibility?
+that substantially increases revenue while preserving credibility?
 
 [ON-SCREEN TEXT: "Test Yourself: Can You Balance Legacy & Innovation?"]
 
@@ -135,12 +135,12 @@ Let's find out what you already know... and what this week will teach you."
 
 
 **Visual Assets Needed:**
-- Slide 1: HHOF revenue chart 2018-2023 (flat $18M annually)
-  - **Alt text:** "Line chart showing Hockey Hall of Fame revenue flat at $18 million annually from 2018 to 2023"
+- Slide 1: HHOF revenue chart 2018-2023 (flat ~$10-11M annually)
+  - **Alt text:** "Line chart showing Hockey Hall of Fame revenue flat at approximately $10-11 million annually from 2018 to 2023"
 - Slide 2: VR transformation mockups (digital exhibits, AI tours)
   - **Alt text:** "Concept images showing virtual reality hockey zones and AI-powered digital tour experiences"
-- Slide 3: Revenue projection ($18M → $43M with breakdown)
-  - **Alt text:** "Revenue projection showing growth from $18 million to $43 million through VR experiences, digital memberships, and international pop-ups"
+- Slide 3: Revenue projection (growth potential with breakdown)
+  - **Alt text:** "Revenue projection showing potential significant growth through VR experiences, digital memberships, and international pop-ups"
 - Slide 4: Newspaper headlines (authenticity backlash)
   - **Alt text:** "Mock newspaper headlines reading 'HHOF Loses Its Soul' and 'Hockey Purists Revolt Against Changes'"
 - Slide 5: Call-to-action ("Test Yourself")
@@ -203,12 +203,12 @@ Choose: **"Create your own scenario"**
 Copy this into the **Scenario Context** field:
 
 
-The learner is a strategy consultant hired by the Hockey Hall of Fame (HHOF) Board of Directors. The Board is evaluating a $15M investment in digital transformation that would generate $25M in new annual revenue but risks alienating traditional stakeholders. The HHOF CEO, Jamie Dinsmore, has asked the consultant to present preliminary strategic thinking on whether and how to proceed with the transformation.
+The learner is a strategy consultant hired by the Hockey Hall of Fame (HHOF) Board of Directors. The Board is evaluating a significant digital transformation investment that could substantially increase annual revenue but risks alienating traditional stakeholders. The HHOF CEO, Jamie Dinsmore, has asked the consultant to present preliminary strategic thinking on whether and how to proceed with the transformation.
 
 The learner will explain their initial strategic approach, identify key trade-offs between revenue growth and brand authenticity, recommend boundaries for acceptable innovation, and articulate decision criteria for evaluating the transformation proposal.
 
 **Context:**
-The HHOF currently generates $18M annually (45% admissions, 30% events, 15% retail, 10% sponsorships). Visitor trends show declining domestic attendance (-8% annually) and flat international visitors. The proposed digital transformation includes VR experiences ($8M new revenue), digital memberships ($5M), and international pop-ups ($12M). Financial projections show 139% revenue growth, but curatorial staff warn of "Disneyfication" and donor base values authenticity as core to the HHOF's credibility.
+The HHOF currently generates approximately $10-11M annually (45% admissions, 30% events, 15% retail, 10% sponsorships). Visitor trends show declining domestic attendance (-8% annually) and flat international visitors. The proposed digital transformation includes VR experiences, digital memberships, and international pop-ups. Financial projections show potential to substantially increase revenue (potentially doubling), but curatorial staff warn of "Disneyfication" and donor base values authenticity as core to the HHOF's credibility.
 
 Conversation length: 3-4 exchanges with the AI CEO.
 
@@ -216,7 +216,7 @@ Conversation length: 3-4 exchanges with the AI CEO.
 Copy this into the **AI Role** field:
 
 
-You are Jamie Dinsmore, President & CEO of the Hockey Hall of Fame. You have 15+ years of experience managing heritage sports properties and understand the tension between tradition and innovation deeply. You've asked a strategy consultant to help you evaluate a $15M digital transformation proposal that could double revenue but might compromise the HHOF's authenticity.
+You are Jamie Dinsmore, President & CEO of the Hockey Hall of Fame. You have 15+ years of experience managing heritage sports properties and understand the tension between tradition and innovation deeply. You've asked a strategy consultant to help you evaluate a significant digital transformation proposal that could substantially increase revenue but might compromise the HHOF's authenticity.
 
 Your personality:
 - Strategic but cautious: You want growth, but not at the cost of credibility
@@ -307,12 +307,12 @@ You are a **strategy consultant** hired by the Hockey Hall of Fame Board. The CE
 **You need to start the conversation.** When the chat opens, begin by presenting your preliminary strategic thinking. The CEO is waiting for your recommendation.
 
 ### The Scenario
-Jamie Dinsmore (HHOF CEO) needs your advice on a $15M investment that could generate $25M in new annual revenue (VR experiences, digital memberships, international pop-ups) but risks alienating traditional stakeholders (curatorial staff, donors, purist fans).
+Jamie Dinsmore (HHOF CEO) needs your advice on a significant digital transformation investment (VR experiences, digital memberships, international pop-ups) that could substantially increase annual revenue but risks alienating traditional stakeholders (curatorial staff, donors, purist fans).
 
 Current situation:
-- HHOF revenue: $18M annually (flat/declining)
+- HHOF revenue: approximately $10-11M annually (flat/declining)
 - Domestic attendance: -8% annually
-- Proposed transformation: $15M investment → $25M new revenue (139% growth)
+- Proposed transformation: significant investment with potential to substantially increase revenue
 - Risk: "Disneyfication" backlash, loss of credibility, donor withdrawal
 
 ### What to Have Ready

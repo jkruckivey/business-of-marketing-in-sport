@@ -1,12 +1,13 @@
-# MODULE 6: Assessment & Reflection + Project Milestone 3
-**Version:** 1.4.0 | **Last Updated:** 2025-12-05
+# MODULE 6: Assessment & Reflection
+**Version:** 2.0.0 | **Last Updated:** 2026-01-12
 
-**Purpose:** Submit activation plan, peer review, reflect on Week 3 learning, preview Week 4 (measures all WLOs 3.1-3.4) AND submit CFL Expansion Project Milestone 3
+**Purpose:** Submit strategy memo, PAIRR feedback, reflect on Week 3 learning, preview Week 4 (measures all WLOs 3.1-3.5)
 
-### Version 1.4.0 Changes
-- **NEW:** Added CFL Expansion Project Milestone 3 submission (team-based)
-- Individual activation plan remains as primary assessment
-- Milestone 3 adds team-based sponsorship & betting strategy component
+### Version 2.0.0 Changes
+- **UPDATED:** Changed from group strategy memo to individual strategy memo
+- **UPDATED:** All group references converted to individual work
+- **MOVED:** CFL Milestone 3 moved to Module 7 wrap-up
+- **ALIGNED:** Assessment format matches LIV Golf case study focus
 
 **Uplimit Structure:** Sixth module in Unit 3
 
@@ -31,17 +32,17 @@
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-You've designed your sponsorship activation plan. Now it's time to submit, review a peer group's plan, and reflect on everything you've learned this week.
+You've written your sponsorship strategy memo. Now it's time to submit, get peer and AI feedback, and reflect on everything you've learned this week.
 
 **Module 6 Checklist:**
-1. ✅ **Submit your activation plan** (40 points) - PDF upload below
-2. ✅ **Peer review** (optional, 5 bonus points) - Review another group's plan using structured protocol
+1. ✅ **Submit your strategy memo** (40 points) - PDF upload below
+2. ✅ **PAIRR feedback** (optional, 5 bonus points) - Get peer + AI feedback using structured protocol
 3. ✅ **Reflect on Week 3** (optional, ungraded) - Answer 3 reflection questions to consolidate learning
-4. ✅ **Preview Week 4** - Watch wrap-up video, prepare for Athletes, Brands & Emerging Sports
+4. ✅ **Preview Week 4** - Prepare for Athletes, Brands & Emerging Sports
 
 **Estimated Time:** 30-40 minutes total
 
-Let's finish Week 3 strong. Submit your plan and celebrate what you've built.
+Let's finish Week 3 strong. Submit your memo and celebrate what you've built.
 ```
 
 ---
@@ -54,29 +55,29 @@ Let's finish Week 3 strong. Submit your plan and celebrate what you've built.
 3. Copy markdown below:
 
 ```markdown
-Title: ◉ PAIRR Assessment: Group Activation Plan with Dual Feedback
+Title: ◉ PAIRR Assessment: Individual Strategy Memo with Dual Feedback
 
-This group assignment combines activation plan design with dual feedback (peer + AI) to develop both strategic execution skills and AI literacy.
+This individual assignment combines strategy memo writing with dual feedback (peer + AI) to develop both strategic execution skills and AI literacy.
 
-**Phase 1: Build Your Activation Plan (Due Day 6)**
-- Design activation plan with your group using Module 5 tools
+**Phase 1: Write Your Strategy Memo (Due Day 6)**
+- Write your strategy memo using Module 5 frameworks
 - Submit 80-90% complete draft for feedback (File upload, no points yet)
 
 **Phase 2: Dual Feedback (Due Day 8)**
-- Peer review: Review assigned group's draft using rubric (2 pts bonus)
-- AI review: Generate ChatGPT feedback on your own group's draft (1 pt bonus)
+- Peer review: Review an assigned peer's draft using rubric (2 pts bonus)
+- AI review: Generate ChatGPT feedback on your own draft (1 pt bonus)
 
 **Phase 3: Comparative Reflection (Due Day 8)**
 - Compare peer vs. AI feedback: Which was more useful? (150-250 words, 1 pt bonus)
 
 **Phase 4: Revision (Due Day 10)**
-- Revise activation plan incorporating feedback. Submit final version for grading (40-point rubric).
+- Revise your memo incorporating feedback. Submit final version for grading (40-point rubric).
 
 **Phase 5: Post-Revision Reflection (Due Day 10)**
 - Reflect on revision choices: Which feedback influenced you most? (75-100 words, 1 pt bonus)
 
 **⏱️ Total PAIRR Time Investment:** 3-4 hours spread across the week
-- Group activation plan (Module 5): 60-90 min
+- Strategy memo (Module 5): 60-75 min
 - Draft polish and submission: 20-30 min
 - Peer review (giving): 25-35 min
 - AI feedback generation: 5-10 min
@@ -84,12 +85,12 @@ This group assignment combines activation plan design with dual feedback (peer +
 - Revision: 30-45 min
 - Post-revision reflection: 10-15 min
 
-**Total Possible: 45 points** (40 pts activation plan + 5 pts PAIRR bonus)
+**Total Possible: 45 points** (40 pts strategy memo + 5 pts PAIRR bonus)
 ```
 
 ---
 
-## Element 4: **RENUMBERED** - Text Response - Activation Plan Submission (was Element 3)
+## Element 4: **RENUMBERED** - Text Response - Strategy Memo Submission (was Element 3)
 
 **Element Type:** Text Response (File upload, rubric grading)
 
@@ -99,29 +100,29 @@ This group assignment combines activation plan design with dual feedback (peer +
 
 **Question:**
 ```
-Upload your group's sponsorship activation plan (PDF format, 2 pages max).
+Upload your sponsorship strategy memo (PDF format, 2 pages max).
 ```
 
 **Additional Instructions:**
 ```
 **Submission Requirements:**
 - Format: PDF (2 pages maximum)
-- File Name: `GroupX_ActivationPlan_BrandName_OperatorName.pdf`
-- Page 1: Executive summary (max 500 words)
-- Page 2: Budget allocation table + ROI projections spreadsheet
+- File Name: `LastName_StrategyMemo_BrandName_Property.pdf`
+- Page 1: Executive recommendation (max 500 words)
+- Page 2: Supporting analysis - CPM/ROI calculations, risk assessment
 
-**Group Members:**
-List all group members on Page 1 header. All members receive the same grade unless you note otherwise.
+**Individual Submission:**
+This is an individual assignment. Include your name in the header.
 
 **Late Penalty:**
 10% per day late (max 3 days, then 0 points).
 
 **Before Submitting:**
-- ✅ All sections complete (strategy, tactics, budget, ROI)
-- ✅ ROI projections use course frameworks (widgets)
-- ✅ Specific tactics (not generic)
-- ✅ Professional formatting
-- ✅ Within 2-page limit (appendix allowed but doesn't count toward limit)
+- ✅ Clear recommendation with rationale
+- ✅ CPM/ROI calculations use course frameworks
+- ✅ Ethical framework applied (if LIV Golf scenario)
+- ✅ Professional memo formatting
+- ✅ Within 2-page limit
 ```
 
 **Template Upload:** No template (students create their own)
@@ -143,13 +144,13 @@ List all group members on Page 1 header. All members receive the same grade unle
 Clear target audience, measurable objectives, and compelling rationale for brand-operator pairing.
 
 **Does not meet expectations (0-6 points):**
-The group provides vague or overly broad target audience (e.g., "NFL fans"), unclear or unmeasurable objectives (e.g., "increase sales"), or weak rationale for brand-operator pairing with no supporting logic.
+The student provides vague or overly broad target audience (e.g., "NFL fans"), unclear or unmeasurable objectives (e.g., "increase sales"), or weak rationale for brand-operator pairing with no supporting logic.
 
 **Partially meets expectations (7-8 points):**
-The group defines a reasonable target audience and objectives with some specificity, but may lack demographic precision, measurability (SMART criteria), or compelling strategic logic connecting brand and operator strengths.
+The student defines a reasonable target audience and objectives with some specificity, but may lack demographic precision, measurability (SMART criteria), or compelling strategic logic connecting brand and operator strengths.
 
 **Fully meets expectations (9-10 points):**
-The group defines a specific, quantified target audience (demographics, psychographics, behavioral traits), sets SMART objectives (specific, measurable, achievable, relevant, time-bound), and provides compelling strategic rationale supported by data from course modules (e.g., bettor engagement multipliers, CPM benchmarks).
+The student defines a specific, quantified target audience (demographics, psychographics, behavioral traits), sets SMART objectives (specific, measurable, achievable, relevant, time-bound), and provides compelling strategic rationale supported by data from course modules (e.g., bettor engagement multipliers, CPM benchmarks).
 
 ---
 
@@ -159,13 +160,13 @@ The group defines a specific, quantified target audience (demographics, psychogr
 Creative, integrated tactics across multiple channels with appropriate budget allocation following 2-3× activation rule.
 
 **Does not meet expectations (0-9 points):**
-The group provides generic tactics without specificity (e.g., "social media campaign" with no platform or content details), fails to allocate budget across all required channels, or violates the 2-3× activation rule (activation budget should be 2-3× rights fee).
+The student provides generic tactics without specificity (e.g., "social media campaign" with no platform or content details), fails to allocate budget across all required channels, or violates the 2-3× activation rule (activation budget should be 2-3× rights fee).
 
 **Partially meets expectations (10-12 points):**
-The group provides reasonable tactics across most channels with some specificity, follows budget allocation guidelines, but tactics may lack creativity, integration across channels, or clear connection to betting partnership advantages (e.g., data access, engagement multipliers).
+The student provides reasonable tactics across most channels with some specificity, follows budget allocation guidelines, but tactics may lack creativity, integration across channels, or clear connection to betting partnership advantages (e.g., data access, engagement multipliers).
 
 **Fully meets expectations (13-15 points):**
-The group provides creative, specific tactics for all channels (advertising, digital, retail, experiential, measurement) with concrete examples, demonstrates smart budget allocation with clear justifications, and leverages betting partnership advantages (first-party data, attribution, engagement multipliers). Tactics are integrated and reinforce each other.
+The student provides creative, specific tactics for all channels (advertising, digital, retail, experiential, measurement) with concrete examples, demonstrates smart budget allocation with clear justifications, and leverages betting partnership advantages (first-party data, attribution, engagement multipliers). Tactics are integrated and reinforce each other.
 
 ---
 
@@ -175,13 +176,13 @@ The group provides creative, specific tactics for all channels (advertising, dig
 Realistic, data-driven ROI projections using course frameworks (CPM, engagement multipliers, conversion funnels). Clear attribution methodology.
 
 **Does not meet expectations (0-6 points):**
-The group provides unrealistic projections (e.g., 500% ROI without justification), missing or incomplete calculations, no attribution methodology, or fails to use course frameworks (CPM, engagement rates, conversion rates from widgets).
+The student provides unrealistic projections (e.g., 500% ROI without justification), missing or incomplete calculations, no attribution methodology, or fails to use course frameworks (CPM, engagement rates, conversion rates from widgets).
 
 **Partially meets expectations (7-8 points):**
-The group provides reasonable ROI projections using some course frameworks, but may be missing key assumptions (e.g., churn rate, attribution discount), lack conservative discounting for uncertainty, or not fully explain calculation methodology.
+The student provides reasonable ROI projections using some course frameworks, but may be missing key assumptions (e.g., churn rate, attribution discount), lack conservative discounting for uncertainty, or not fully explain calculation methodology.
 
 **Fully meets expectations (9-10 points):**
-The group provides realistic, data-driven ROI projections using course frameworks (CPM from Sponsorship Valuation Calculator, engagement multipliers from Module 3, CAC/LTV benchmarks from Module 4 FanDuel case, conversion funnels from ROI Calculator), includes clear attribution methodology (promo codes, data partnerships, geo lift studies), acknowledges conservative assumptions and uncertainties, and shows all calculation steps transparently.
+The student provides realistic, data-driven ROI projections using course frameworks (CPM from Sponsorship Valuation Calculator, engagement multipliers from Module 3, CAC/LTV benchmarks from Module 4 FanDuel case, conversion funnels from ROI Calculator), includes clear attribution methodology (promo codes, data partnerships, geo lift studies), acknowledges conservative assumptions and uncertainties, and shows all calculation steps transparently.
 
 ---
 
@@ -212,7 +213,7 @@ The plan demonstrates professional executive summary quality with polished forma
 ```markdown
 # PAIRR Feedback Phase: Peer and AI Review + Reflection
 
-Before submitting your final activation plan, your group will receive feedback from TWO sources: another group (peer review) and an AI writing assistant. Your group's task is to **critically evaluate both sources** and decide which feedback to apply.
+Before submitting your final strategy memo, you will receive feedback from TWO sources: a peer (peer review) and an AI writing assistant. Your task is to **critically evaluate both sources** and decide which feedback to apply.
 
 **Why PAIRR?**
 Sports marketing professionals increasingly use AI tools for campaign planning, content creation, and ROI modeling. This exercise teaches you to:
@@ -223,7 +224,7 @@ Sports marketing professionals increasingly use AI tools for campaign planning, 
 
 **Benefits:**
 1. **Multiple perspectives:** Peers see execution feasibility; AI sees technical patterns and best practices
-2. **Critical thinking:** Your group decides what feedback is valid (not blindly accepting)
+2. **Critical thinking:** You decides what feedback is valid (not blindly accepting)
 3. **Better work:** Two sources catch more issues than one
 4. **Workplace readiness:** Practice balancing AI assistance with human judgment
 
@@ -231,9 +232,9 @@ Sports marketing professionals increasingly use AI tools for campaign planning, 
 
 ## Step 1: Submit Your Draft (Due: [Date] by 11:59 PM)
 
-Upload your group's 80-90% complete draft activation plan to the shared Google Drive folder:
+Upload your 80-90% complete draft strategy memo to the shared Google Drive folder:
 - **Format:** Google Doc (enable "Commenting" permissions) OR PDF
-- **Filename:** `GroupX_ActivationPlan_BrandName_OperatorName_DRAFT.pdf`
+- **Filename:** `LastName_StrategyMemo_BrandName_OperatorName_DRAFT.pdf`
 - **Completeness:** Must have all major sections (strategy, tactics, budget, ROI projections)
 
 **Draft Requirements:**
@@ -245,9 +246,9 @@ Upload your group's 80-90% complete draft activation plan to the shared Google D
 
 ---
 
-## Step 2A: Peer Group Review (Due: [Date + 2 days] by 11:59 PM)
+## Step 2A: Peer Review (Due: [Date + 2 days] by 11:59 PM)
 
-You've been paired with another group (check announcement for your assigned group). Complete the structured peer review form for their activation plan draft.
+You've been paired with a peer (check announcement for your assigned peer). Complete the structured peer review form for their strategy memo draft.
 
 **Time Estimate:** 25-35 minutes
 
@@ -269,14 +270,14 @@ You've been paired with another group (check announcement for your assigned grou
 
 ## Step 2B: AI Feedback (Due: [Date + 2 days] by 11:59 PM)
 
-Have ONE group member use an AI writing assistant (ChatGPT, Claude, or Gemini) to get feedback on the same draft you submitted for peer review.
+Have Submit your use an AI writing assistant (ChatGPT, Claude, or Gemini) to get feedback on the same draft you submitted for peer review.
 
 ### AI Feedback Prompt Template
 
 **Copy this prompt into your AI tool (ChatGPT, Claude, etc.):**
 
 ```
-You are a sports marketing strategy consultant evaluating a 1-page sponsorship activation plan for an MBA course assignment. The assignment asks student groups to design an activation plan for a brand partnering with a sports betting operator (e.g., Nike + FanDuel, Coca-Cola + DraftKings).
+You are a sports marketing strategy consultant evaluating a 1-page sponsorship strategy memo for an MBA course assignment. The assignment asks students to design an strategy memo for a brand partnering with a sports betting operator (e.g., Nike + FanDuel, Coca-Cola + DraftKings).
 
 RUBRIC CRITERIA (40 points total):
 1. Strategic Clarity (10 pts): Clear target audience (specific demographics/psychographics), measurable SMART objectives, compelling rationale for brand-operator pairing supported by data.
@@ -284,8 +285,8 @@ RUBRIC CRITERIA (40 points total):
 3. ROI Justification (10 pts): Realistic, data-driven ROI projections using course frameworks (CPM calculations, engagement multipliers, conversion funnels). Clear attribution methodology. Conservative assumptions acknowledged.
 4. Presentation Quality (5 pts): Professional executive summary format. Clear, concise writing. Effective data visualization (tables, charts). Within 2-page limit.
 
-Please evaluate this activation plan draft against these criteria. For each criterion:
-- Identify what the group did well (specific strengths with examples)
+Please evaluate this strategy memo draft against these criteria. For each criterion:
+- Identify what your peer did well (specific strengths with examples)
 - Identify what could be improved (actionable, specific suggestions)
 - Estimate a score category (Exceeds Expectations / Fully Meets / Partially Meets / Does Not Meet)
 
@@ -294,16 +295,16 @@ Pay special attention to:
 - Do ROI projections use realistic industry benchmarks from the course? (CPM $30-50, engagement multipliers 40% for bettors, conversion rates 2-5%)
 - Is the brand-operator pairing strategically sound? (e.g., premium brand + mass-market operator = mismatch)
 
-Here is the activation plan draft:
+Here is the strategy memo draft:
 
 [PASTE YOUR GROUP'S DRAFT HERE - Include executive summary, tactics, budget table, ROI projections]
 ```
 
 **Important Instructions:**
-1. Use the EXACT prompt above (ensures consistent feedback across groups)
+1. Use the EXACT prompt above (ensures consistent feedback across students)
 2. Copy the AI's response into a Google Doc for later comparison
 3. Take screenshots showing the AI conversation (for comparative reflection)
-4. Share AI feedback document with all group members
+4. Share AI feedback document with all peers
 
 **Time Estimate:** 5-10 minutes
 
@@ -311,20 +312,20 @@ Here is the activation plan draft:
 
 ## Step 3: Comparative Reflection (Due: [Date + 3 days] by 11:59 PM)
 
-Now that your group has feedback from BOTH sources (peer group + AI), critically compare them.
+Now that you has feedback from BOTH sources (peer + AI), critically compare them.
 
-**ONE group member submits this reflection on behalf of the group (150-250 words):**
+**Submit your submits this reflection below (150-250 words):**
 
 ### Comparative Reflection Questions
 
 **Question 1: Feedback Quality Comparison (50-75 words)**
-- What did the peer group notice that the AI missed?
+- What did the peer notice that the AI missed?
 - What did the AI notice that peers missed?
 - Were there areas where they disagreed? Which feedback seemed more accurate for a sports marketing context?
 
 **Question 2: Strengths and Limitations (50-75 words)**
 
-**Peer Group Feedback:**
+**Peer Feedback:**
 - Strength: [What was most valuable? e.g., industry insights, execution feasibility]
 - Limitation: [What was missing or unclear? e.g., lacked technical critique]
 
@@ -333,7 +334,7 @@ Now that your group has feedback from BOTH sources (peer group + AI), critically
 - Limitation: [What was inaccurate or too generic? e.g., couldn't evaluate brand fit without industry context]
 
 **Question 3: Application Strategy (50-100 words)**
-- Which feedback will your group prioritize in revision? Why?
+- Which feedback will you prioritize in revision? Why?
 - What criteria are you using to decide which suggestions to implement?
 - How does this exercise change how you'll use AI in future marketing planning tasks?
 
@@ -353,16 +354,16 @@ Apply insights from BOTH feedback sources:
 - [ ] Stayed within 2-page limit
 - [ ] Used course frameworks (CPM, engagement multipliers, conversion funnels)
 
-**Tip:** You are NOT required to implement ALL suggestions. Use your group's judgment to prioritize changes that most strengthen your strategic argument and ROI justification.
+**Tip:** You are NOT required to implement ALL suggestions. Use your judgment to prioritize changes that most strengthen your strategic argument and ROI justification.
 
 ---
 
 ## Step 5: Post-Revision Reflection (Submit with final plan)
 
-After revising your activation plan, ONE group member completes this brief reflection on behalf of the group (75-100 words):
+After revising your strategy memo, Submit your completes this brief reflection below (75-100 words):
 
 **Prompt:**
-"Which feedback source (peer group or AI) had the most influence on your group's revisions? Give 1-2 specific examples of changes you made based on each source. Did the comparative reflection process help your group make better revision decisions than you would have with a single feedback source? How will you use AI tools differently in future marketing planning projects?"
+"Which feedback source (peer or AI) had the most influence on your revisions? Give 1-2 specific examples of changes you made based on each source. Did the comparative reflection process help you make better revision decisions than you would have with a single feedback source? How will you use AI tools differently in future marketing planning projects?"
 
 **Format:** Include this reflection as Page 3 addendum to your final submission (does not count toward 2-page limit).
 
@@ -372,7 +373,7 @@ After revising your activation plan, ONE group member completes this brief refle
 
 ## PAIRR Participation Bonus: Up to 5 Points
 
-- Completed peer group review form: **2 points**
+- Completed peer review form: **2 points**
 - Obtained AI feedback (verified by screenshot): **1 point**
 - Completed comparative reflection: **1 point**
 - Completed post-revision reflection: **1 point**
@@ -384,7 +385,7 @@ After revising your activation plan, ONE group member completes this brief refle
 ## Why This Matters for Your Career
 
 **Real sports marketing scenario:**
-You're a marketing manager at Nike. Your agency presents a $20M FanDuel partnership activation plan. You also run it through an AI strategy tool (increasingly common in 2024-2025). The agency says "spend 60% on experiential events." The AI says "spend 40% on digital attribution." How do you decide?
+You're a marketing manager at Nike. Your agency presents a $20M FanDuel partnership strategy memo. You also run it through an AI strategy tool (increasingly common in 2024-2025). The agency says "spend 60% on experiential events." The AI says "spend 40% on digital attribution." How do you decide?
 
 **PAIRR teaches you to:**
 1. Leverage multiple information sources (human experts + AI tools)
@@ -409,14 +410,14 @@ This is the future of marketing strategy work. Practice it now.
 
 **Question:**
 ```
-Complete this peer review form for the assigned group's activation plan.
+Complete this peer review form for the assigned peer's strategy memo.
 ```
 
 **Additional Instructions:**
 ```
 **Peer Review Protocol (Answer All Questions)**
 
-**Group Reviewed:** [Group Number/Names]
+**Peer Reviewed:** [Peer's Name]
 
 **1. Strategic Clarity (3-4 sentences)**
 - Is the target audience specific and quantified?
@@ -443,7 +444,7 @@ Complete this peer review form for the assigned group's activation plan.
 - **Suggestions for improvement:**
 
 **5. Overall Assessment (2-3 sentences)**
-- What did this group do exceptionally well?
+- What did this peer do exceptionally well?
 - What's one high-impact improvement they could make?
 - If you were their client (brand CMO), would you approve this plan? Why or why not?
 
@@ -477,14 +478,14 @@ Complete this peer review form for the assigned group's activation plan.
 
 **Question:**
 ```
-Paste the complete ChatGPT (or Claude/Gemini) feedback response for your group's activation plan draft.
+Paste the complete ChatGPT (or Claude/Gemini) feedback response for your strategy memo draft.
 ```
 
 **Additional Instructions:**
 ```
 **AI Feedback Submission**
 
-After your group generated AI feedback using the prompt template in Element 5 (Step 2B), paste the complete AI response here.
+After you generated AI feedback using the prompt template in Element 5 (Step 2B), paste the complete AI response here.
 
 **What to Submit:**
 - The full AI-generated feedback (copy-paste the entire response)
@@ -493,11 +494,11 @@ After your group generated AI feedback using the prompt template in Element 5 (S
 **Grading:**
 You're graded on successfully generating and submitting AI feedback (not on the quality of that feedback, which is out of your control).
 
-This submission verifies your group engaged with AI-assisted learning tools.
+This submission verifies you engaged with AI-assisted learning tools.
 
 **Time Estimate:** 2 minutes (just copy-paste from ChatGPT/Claude/Gemini)
 
-**Submission:** ONE group member submits on behalf of the group.
+**Submission:** Submit your submits below.
 ```
 
 **Template Upload:** No template
@@ -527,25 +528,25 @@ This submission verifies your group engaged with AI-assisted learning tools.
 
 **Question:**
 ```
-Complete this comparative reflection analyzing peer group feedback vs. AI feedback on your activation plan draft (150-250 words total).
+Complete this comparative reflection analyzing peer feedback vs. AI feedback on your strategy memo draft (150-250 words total).
 ```
 
 **Additional Instructions:**
 ```
 **Comparative Reflection: Peer vs. AI Feedback**
 
-Your group received feedback from TWO sources: another student group (peer review) and an AI writing assistant. Now critically compare the quality and usefulness of both sources.
+You received feedback from TWO sources: another student (peer review) and an AI writing assistant. Now critically compare the quality and usefulness of both sources.
 
 **Answer these questions (150-250 words total):**
 
 **Question 1: Feedback Quality Comparison (50-75 words)**
-- What did the peer group notice that the AI missed?
+- What did the peer notice that the AI missed?
 - What did the AI notice that peers missed?
 - Were there areas where they disagreed? Which feedback seemed more accurate for a sports marketing context?
 
 **Question 2: Strengths and Limitations (50-75 words)**
 
-**Peer Group Feedback:**
+**Peer Feedback:**
 - Strength: [What was most valuable? e.g., industry insights, execution feasibility]
 - Limitation: [What was missing or unclear? e.g., lacked technical critique]
 
@@ -554,11 +555,11 @@ Your group received feedback from TWO sources: another student group (peer revie
 - Limitation: [What was inaccurate or too generic? e.g., couldn't evaluate brand fit without industry context]
 
 **Question 3: Application Strategy (50-100 words)**
-- Which feedback will your group prioritize in revision? Why?
+- Which feedback will you prioritize in revision? Why?
 - What criteria are you using to decide which suggestions to implement?
 - How does this exercise change how you'll use AI in future marketing planning tasks?
 
-**Submission:** ONE group member submits on behalf of the group.
+**Submission:** Submit your submits below.
 ```
 
 **Template Upload:** No template
@@ -579,7 +580,7 @@ Your group received feedback from TWO sources: another student group (peer revie
 **Feedback Prompt for AI (if auto-feedback enabled):**
 ```
 This is a bonus comparative reflection exercise. Provide brief encouraging feedback that:
-1. Acknowledges insights the group identified about peer vs. AI feedback differences
+1. Acknowledges insights you identified about peer vs. AI feedback differences
 2. Highlights strong critical thinking if present (e.g., "Your observation that peer feedback caught industry-specific brand fit issues while AI focused on technical presentation is exactly right")
 3. Encourages deeper analysis if answers are surface-level
 4. Maintains positive, growth-oriented tone
@@ -599,23 +600,23 @@ Do NOT assign points or grades. Focus on validating critical evaluation skills.
 
 **Question:**
 ```
-After revising your activation plan using both peer and AI feedback, reflect on which feedback source most influenced your revisions (75-100 words).
+After revising your strategy memo using both peer and AI feedback, reflect on which feedback source most influenced your revisions (75-100 words).
 ```
 
 **Additional Instructions:**
 ```
 **Post-Revision Reflection: Feedback Integration**
 
-Now that you've revised your activation plan based on peer group feedback AND AI feedback, reflect on the revision process.
+Now that you've revised your strategy memo based on peer feedback AND AI feedback, reflect on the revision process.
 
 **Answer this question (75-100 words):**
 
-"Which feedback source (peer group or AI) had the most influence on your group's revisions? Give 1-2 specific examples of changes you made based on each source. Did the comparative reflection process help your group make better revision decisions than you would have with a single feedback source? How will you use AI tools differently in future marketing planning projects?"
+"Which feedback source (peer or AI) had the most influence on your revisions? Give 1-2 specific examples of changes you made based on each source. Did the comparative reflection process help you make better revision decisions than you would have with a single feedback source? How will you use AI tools differently in future marketing planning projects?"
 
 **Examples of strong responses:**
-- "We prioritized the peer group's suggestion to make our TikTok tactic more specific ($50K influencer budget targeting 18-34 sports bettors) because peers understood our target audience better. However, we applied the AI's recommendation to restructure our ROI table for clearer presentation—the AI caught that our CPM calculations were buried in paragraph text instead of a table."
+- "We prioritized the peer's suggestion to make our TikTok tactic more specific ($50K influencer budget targeting 18-34 sports bettors) because peers understood our target audience better. However, we applied the AI's recommendation to restructure our ROI table for clearer presentation—the AI caught that our CPM calculations were buried in paragraph text instead of a table."
 
-**Submission:** ONE group member submits on behalf of the group. Include this reflection as Page 3 addendum to your final activation plan (does not count toward 2-page limit).
+**Submission:** Submit your submits below. Include this reflection as Page 3 addendum to your final strategy memo (does not count toward 2-page limit).
 ```
 
 **Template Upload:** No template
@@ -636,7 +637,7 @@ Now that you've revised your activation plan based on peer group feedback AND AI
 **Feedback Prompt for AI (if auto-feedback enabled):**
 ```
 This is a bonus post-revision reflection. Provide brief encouraging feedback that:
-1. Validates specific examples of feedback integration the group describes
+1. Validates specific examples of feedback integration you describe
 2. Highlights strong metacognitive awareness if present (e.g., "Your realization that AI excels at presentation polish while peers catch domain-specific issues shows sophisticated understanding")
 3. Encourages application of these insights to future work
 4. Maintains positive, growth-oriented tone
@@ -669,7 +670,7 @@ Reflect on your Week 3 learning by answering these 3 questions (250 words total)
 
 **Question 3 (75-100 words):** If you were a brand CMO deciding between a $10M NFL jersey sponsor deal and a $12M FanDuel partnership (20% premium), which would you choose and why? Use frameworks from this week to justify your decision.
 
-**Question 4 (75-100 words) - METACOGNITIVE REFLECTION:** Which learning activity this week helped you understand sponsorship ROI most effectively—interactive widgets (CPM calculator, budget builder, ROI tool), FanDuel case study analysis, group collaboration on activation plan, or executive videos? Why did that modality work best for YOU? How can you apply that insight to optimize your learning in Week 4 (Athletes & Brands)?
+**Question 4 (75-100 words) - METACOGNITIVE REFLECTION:** Which learning activity this week helped you understand sponsorship ROI most effectively—interactive widgets (CPM calculator, budget builder, ROI tool), FanDuel case study analysis, writing your strategy memo, or executive videos? Why did that modality work best for YOU? How can you apply that insight to optimize your learning in Week 4 (Athletes & Brands)?
 
 **Why Reflect?**
 Reflection consolidates learning. Research shows students who reflect on course content retain 30% more information than those who don't. Question 4's metacognitive reflection (thinking about HOW you learn) helps you optimize future learning strategies. This is ungraded—purely for your benefit.
@@ -712,7 +713,7 @@ Do NOT assign points or grades. Focus on learning consolidation.
 **Video Script (2 minutes):**
 ```
 [0:00-0:15] Week 3 Recap
-"Congratulations on completing Week 3: Sponsorship & Betting. You've learned how brands value sports partnerships, why betting sponsors pay 20-30% premiums, and how to design ROI-driven activation plans. Let's review the key takeaways."
+"Congratulations on completing Week 3: Sponsorship & Betting. You've learned how brands value sports partnerships, why betting sponsors often pay 20-30% premiums, and how to design ROI-driven strategy memos. Let's review the key takeaways."
 
 [0:15-0:45] Week 3 Key Takeaways
 "Three frameworks to remember:
@@ -778,8 +779,8 @@ Peer-reviewed memo (individual, not group): "Should Brand X sign Athlete Y?" (30
 - Learned sponsorship ROI frameworks (CPM, activation budgets, reach-engagement-conversion funnels)
 - Analyzed sports betting economics (market modeling, engagement multipliers, partnership premiums)
 - Applied frameworks to FanDuel case study (competitive analysis, customer economics)
-- Designed a sponsorship activation plan in groups (40-point deliverable)
-- Peer reviewed another group's plan (optional 5 bonus points)
+- Designed a sponsorship strategy memo individually (40-point deliverable)
+- Peer reviewed a peer's plan (optional 5 bonus points)
 - Reflected on Week 3 learning
 
 **Total Week 3 Points:**
@@ -806,7 +807,7 @@ Week 3 was the most technical week of the course—you learned the frameworks th
 - **Final project application (Slides 4 & 6):** "Our property delivers 50M impressions at $100 CPM—10× cheaper than TV ads. Title sponsors invest $5M + $10-15M activation and earn 36% ROI through our first-party data partnerships."
 
 **Skill 2: Betting Partnership Economics (Module 3)**
-- **What you learned:** Bettors watch 40% more games, betting sponsors pay 20-30% premiums for attribution data
+- **What you learned:** Bettors watch 40% more games, betting sponsors often pay 20-30% premiums for attribution data
 - **Final project application (Slide 4):** "If our property is in a betting-legal market, we'll offer 'Official Betting Partner' tier at $10-15M (premium pricing justified by engagement multipliers and closed-loop attribution)."
 
 **Skill 3: Case-Based Strategic Analysis (Module 4)**
@@ -848,14 +849,14 @@ After Week 3, you should be able to answer YES to these questions:
 
 **Data You Should Save:**
 1. **Widget Exports (JSON/CSV):** All calculations from Sponsorship Valuation Calculator, ROI Calculator, Activation Budget Builder, Customer Economics Calculator—reuse these in your final project financial appendix
-2. **Your Group's Activation Plan:** This document is your Slide 5 template—adapt it for your property
+2. **Your Strategy Memo:** This document is your Slide 5 template—adapt it for your property
 3. **Peer Review Feedback:** The rubric criteria (strategic clarity, activation design, ROI justification, presentation quality) apply to final project grading too
 
 **Frameworks You Should Remember:**
 - CPM calculation: Rights fee / impressions × 1,000
 - Activation rule: 2-3× rights fee
 - ROI funnel: Reach → Engagement → Conversion
-- Betting premium: 20-30% more for attribution + engagement multipliers
+- Betting premium: Often 20-30% more for attribution + engagement multipliers
 - Partnership economics: CAC, LTV, payback period, profitability
 
 **Skills You Should Apply:**

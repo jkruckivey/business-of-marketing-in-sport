@@ -45,15 +45,15 @@ And I want to start Week 3 with a question that haunts every CMO I know."
 
 [0:20-1:10] THE PARADOX SETUP
 
-SME: "Nike pays over $500 million per year in sports sponsorships. Worldwide.
+SME: "Major brands like Nike spend hundreds of millions annually on sports sponsorships worldwide.
 Every league, every athlete, every major property you can think of.
 
 [VISUAL CUE: Show montage of Nike-sponsored properties]
 
 Your CFO looks at this budget and asks the obvious question:
-'What are we getting for half a billion dollars?'
+'What are we getting for all these sponsorship dollars?'
 
-[ON-SCREEN TEXT: "$500M+/year in sponsorships"]
+[ON-SCREEN TEXT: "Billions spent on sponsorship"]
 
 So you show them the metrics:
 • 15 billion social media impressions
@@ -133,61 +133,7 @@ Ready? Let's see what you know about sponsorship economics."
 **Estimated Time:** 5-7 minutes
 **Learning Outcome Supported:** Prepares for WLO 3.3 (calculate sponsorship ROI) and WLO 3.4 (design activations)
 
-### UPLIMIT CONFIGURATION
-
-**Tab 1: Learning Objective**
-
-**Name:** Sponsorship ROI Diagnostic
-
-**Learning Objective:**
-Students will articulate their current understanding of how brands calculate sponsorship ROI with imperfect attribution data, revealing knowledge gaps before learning Week 3 frameworks. This diagnostic conversation (formative, not graded) helps students identify what they need to focus on during the week.
-
-**Scenario Setup:**
-You are a **sponsorship consultant** hired by a major consumer brand. Your client (the AI) is the CMO who needs to justify their $50M annual sports sponsorship budget to the CFO. They ask you to explain how to calculate ROI when direct attribution is difficult.
-
----
-
-**Tab 2: Scenario**
-
-Copy this into the **Scenario** field:
-
-```
-You are the CMO of a major consumer brand (apparel, beverage, or automotive—your choice) spending $50 million per year on sports sponsorships. Your CFO is skeptical and demands ROI proof before approving next year's budget.
-
-You've hired a sponsorship consultant (the student) to help you build a framework for measuring sponsorship value. You need to understand HOW to calculate ROI when direct "click-to-purchase" attribution isn't possible.
-
-Your role is to ask probing Socratic questions that help the student reveal their current understanding of sponsorship ROI—while gently exposing gaps in their knowledge.
-
-**Conversation Flow:**
-
-1. **Opening**: Thank the student for joining and explain the challenge: "Our CFO wants proof that $50M in sponsorships drives sales. How should we measure ROI when we can't track every customer from logo exposure to purchase?"
-
-2. **Follow-up questions** (adapt based on student responses):
-   - "You mentioned [X metric]. How do I turn that into dollars? What's the formula?"
-   - "We get 500 million impressions from our jersey sponsor. What's that worth?"
-   - "How is sponsorship ROI different from digital advertising ROI?"
-   - "Sports betting sponsors claim 'closed-loop attribution.' What does that mean?"
-   - "If I can't prove causation, how do I justify the spend?"
-
-3. **Gentle challenges** (when student gives incomplete or incorrect answers):
-   - "That's a good start, but Nike spends $500M+/year and still struggles to prove direct causation. What frameworks do they use?"
-   - "You mentioned awareness, but the CFO wants to see revenue impact. How do we connect those dots?"
-
-4. **Closing** (after 3-4 exchanges):
-   - Acknowledge what the student got right
-   - Point out 1-2 specific areas where their understanding is incomplete
-   - Say: "You've got some intuitions about brand value, but there are industry frameworks—like CPM, engagement multipliers, and conversion attribution—that would sharpen your thinking. That's exactly what you'll learn this week. Ready to build ROI models that CFOs actually approve?"
-
-**Tone:** Professional, empathetic (acknowledges ROI is genuinely hard to measure), Socratic
-
-**Goal:** Help students discover WHERE their ROI knowledge gaps are so they know what to focus on during Week 3.
-```
-
----
-
-**Tab 3: Instructions for Students**
-
-Copy this into the **Instructions for Students** field:
+### Student-Facing Instructions (Place as Text element BEFORE AI Roleplay)
 
 ```markdown
 ### Your Role
@@ -196,42 +142,101 @@ You are a **sponsorship consultant** hired by a major consumer brand. The CMO (A
 ### Getting Started
 **You need to start the conversation.** When the chat opens, begin by explaining (in simple terms) how you think brands should measure sponsorship ROI when direct "click-to-purchase" attribution isn't available.
 
-### The Scenario
-The CMO's CFO wants proof that sponsorships drive sales, not just awareness. The CMO needs frameworks to quantify value with imperfect data. They're going to ask you probing questions about your measurement approach.
-
-### What to Have Ready
-- **Your current understanding** of how brands measure sponsorship value (it's okay if this is limited!)
-- **Your best attempt** at explaining ROI calculation with messy attribution
-- **Curiosity** about what you DON'T know yet
-
 ### Your Goal
-⚠️ **This is diagnostic—you're not expected to ace this!** Most students struggle before learning Week 3 content. The goal is to:
-
-1. Start the conversation with your best attempt at explaining sponsorship ROI calculation
-2. Respond to the CMO's probing questions using your current knowledge
-3. Discover gaps in your understanding (this is GOOD—it shows you what to focus on)
-4. Get motivated to learn the ROI frameworks that would help you answer confidently
+⚠️ **This is diagnostic—you're not expected to ace this!** Most students struggle before learning Week 3 content. The goal is to discover gaps in your understanding so you know what to focus on this week.
 
 ### Conversation Length
-- **3-4 exchanges** with the CMO
-- The AI will probe your understanding with 2-3 follow-up questions after your opening explanation
-- If you get stuck, that's the point! Notice where you struggle—those are your learning priorities.
+3-4 exchanges with the CMO. If you get stuck, that's the point—those are your learning priorities.
+```
 
-### What Happens Next
-After this exercise, you'll take a pre-assessment quiz that helps you identify exactly what you need to learn. By the end of Week 3, you'll design a complete activation plan with ROI projections that CFOs would actually approve.
+### UPLIFT CONFIGURATION
+
+**Tab 1: Learning Objective**
+
+**Widget Name:** Sponsorship ROI Diagnostic
+
+**Learning Objective:**
+```
+Students will articulate their current understanding of how brands calculate sponsorship ROI with imperfect attribution data, revealing knowledge gaps before learning Week 3 frameworks. This diagnostic conversation helps students identify three key areas:
+
+1. CPM calculation knowledge (can they convert impressions to dollar values?)
+2. Attribution challenges (do they understand why sponsorship ROI differs from digital advertising?)
+3. Activation multipliers (are they aware of the 2-3× activation spend rule?)
+
+Success = Student finishes knowing exactly what they DON'T know yet, with motivation to learn Week 3 content.
+```
+
+**Scenario Setup:** Diagnostic (pre-learning assessment)
+
+---
+
+**Tab 2: Scenario**
+
+**Context:**
+```
+A major consumer brand (apparel, beverage, or automotive) spends $50 million per year on sports sponsorships. The CFO is skeptical and demands ROI proof before approving next year's budget. The brand's CMO has hired a sponsorship consultant to build a framework for measuring sponsorship value when direct "click-to-purchase" attribution isn't possible. The learner will engage in a diagnostic conversation with the CMO who asks probing Socratic questions to help reveal the learner's current understanding of sponsorship ROI while gently exposing gaps in their knowledge. This formative exercise helps the learner identify what they need to focus on during Week 3.
+```
+
+**Role of AI (CMO):**
+```
+The AI plays the CMO of a major consumer brand who needs to justify $50M in sports sponsorships to a skeptical CFO and is seeking the consultant's help to build a measurement framework.
+```
+
+**Role of Student:**
+```
+The learner plays the role of a sponsorship consultant advising the CMO on how to calculate ROI when direct attribution is challenging.
 ```
 
 ---
 
-**Tab 4: Grading Rubric**
+**Tab 3: Hidden Context**
 
-**Grading:** Not graded (formative diagnostic only)
+```
+**AI Character Context:**
+You are a CMO conducting a diagnostic conversation. The student is encountering sponsorship ROI frameworks for the first time. Most will struggle—this is intentional and pedagogically valuable.
 
-**Why Not Graded:**
-This is a formative assessment designed to reveal knowledge gaps BEFORE learning begins. Students should feel safe exploring and making mistakes. Grading would create anxiety and discourage honest engagement.
+**What Students Typically Miss (use to guide probing):**
+- CPM calculation (Cost Per Mille = rights fee / impressions × 1,000)
+- The 2-3× activation rule (for every $1 in rights, spend $2-3 on activation)
+- Attribution differences (sponsorship vs. digital advertising)
+- Betting sponsor advantages (closed-loop attribution, first-party data)
+- Brand value vs. sales conversion (awareness ≠ revenue)
 
-**Completion Credit:**
-Students receive completion credit for engaging with the AI roleplay (tracked by Uplimit automatically). Actual understanding is measured by the Week 3 Group Sprint Assessment (activation plan with ROI projections).
+**AI Personality Traits:**
+- Professional but empathetic: You acknowledge ROI is genuinely hard to measure
+- Socratic: When they struggle, you ask questions that help them discover gaps rather than lecturing
+- Patient: This is diagnostic, so you don't expect perfection
+- Business-focused: You care about clear explanations backed by strategic reasoning
+
+**Conversation Strategy:**
+
+Wait for the student to start the conversation. They've been asked to explain how to measure sponsorship ROI. Listen to their opening explanation, then respond with probing questions based on what they say:
+
+1. If they mention only impressions/awareness, ask: "We get 500 million impressions from our jersey sponsor. What's that worth in dollars? What's the formula?"
+
+2. If they struggle with CPM, ask: "How is sponsorship ROI different from digital advertising ROI where we can track clicks to purchases?"
+
+3. If they don't mention activation, ask: "So if we pay $5M for a sponsorship, is that our total investment? What else should we budget for?"
+
+4. If they mention betting sponsors, ask: "You mentioned betting sponsors have better data. What's 'closed-loop attribution' and why can't traditional sponsors do that?"
+
+5. Closing (after 3-4 exchanges): Acknowledge their effort and gaps: "You've got some intuitions about brand value, but there are industry frameworks—like CPM, engagement multipliers, and conversion attribution—that would sharpen your thinking. That's exactly what you'll learn this week."
+
+Exit gracefully after 3-4 exchanges even if they're still struggling—the goal is diagnosis, not mastery.
+
+**Success Indicators:**
+- ✅ Student attempts answer (even if incomplete)
+- ✅ Student recognizes their knowledge gaps
+- ✅ Student feels motivated to learn, not defeated
+```
+
+---
+
+**Tab 4: Criteria**
+
+**Grading:** Not graded (formative diagnostic - completion credit only)
+
+No evaluation criteria. Students receive completion credit for engaging with the AI roleplay. This diagnostic is designed to reveal knowledge gaps before learning begins, not to assess mastery.
 
 ---
 
@@ -242,9 +247,9 @@ Students receive completion credit for engaging with the AI roleplay (tracked by
 **Priority:** ⬤ Required
 
 ```
-Title: ⚠️ The $500 Million ROI Challenge
+Title: ⚠️ The Sponsorship ROI Challenge
 
-Nike pays over $500 million per year in sports sponsorships worldwide. They can track
+Major brands like Nike spend hundreds of millions annually on sports sponsorships worldwide. They can track
 billions of impressions and millions of jersey sales. But when their CFO asks,
 "Did this drive shoe sales?"—the answer gets complicated.
 
@@ -298,7 +303,7 @@ By Friday, you'll be able to:
 
 **Evaluate** sports betting as a growth driver (fastest-growing sponsorship category with closed-loop attribution)
 
-**Design** a 1-page activation plan with ROI projections for a real brand/property partnership (your group sprint deliverable)
+**Design** a 2-page strategy memo with ROI projections for a real sponsorship decision (your individual deliverable)
 
 This challenge requires understanding:
 - How brands measure sponsorship value (reach × engagement × conversion)
@@ -421,7 +426,7 @@ Based on what you know right now, what's ONE thing you would include in a sponso
 ```
 Title: 💡 Understanding Your Pre-Assessment Results
 
-Your quiz results create a personalized learning path for this week. Lower scores (0-6/12) suggest spending extra time with Module 2's sponsorship frameworks and Module 3's betting economics—you're building fresh ROI calculation skills, which is perfect for developing rigorous financial analysis. Higher scores (9-12/12) indicate solid marketing intuitions, so challenge yourself with the FanDuel case analysis and the Group Sprint activation plan.
+Your quiz results create a personalized learning path for this week. Lower scores (0-6/12) suggest spending extra time with Module 2's sponsorship frameworks and Module 3's betting economics—you're building fresh ROI calculation skills, which is perfect for developing rigorous financial analysis. Higher scores (9-12/12) indicate solid marketing intuitions, so challenge yourself with the LIV Golf case analysis and the strategy memo assignment.
 
 Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently and identify where to focus your energy. Now that you know where you stand, let's learn the frameworks that will transform how you calculate and justify sponsorship investments.
 ```
@@ -430,26 +435,34 @@ Remember: This quiz isn't graded, it's a diagnostic tool to help you learn effic
 
 ---
 
-## Element 6: Graphic Novel - "All In"
+## Element 6: Graphic Novel - "The New Revenue Frontier"
 
 **Purpose:** Visual narrative that introduces the week's key concepts through storytelling.
 
-**Graphic Novel:** "All In: A Sports Betting Story"
+**Graphic Novel:** "The New Revenue Frontier: Inside Sports Betting's Transformation"
 
-**Location:** `modules/shared-resources/graphic-novels/03-all-in-week3.md`
+**Location:** `modules/shared-resources/graphic-novels/03-new-frontier-week3.md`
 
 **Implementation:** Generated using NotebookLM from the script. Upload resulting PDF or embed images in Uplimit.
 
 **Story Synopsis:**
-Follow Denise Carter, a Black woman in her 40s serving as VP of Partnerships, through the sports betting revolution from underground to mainstream. The story dramatizes how sports organizations navigated the legalization of betting and built new revenue partnerships.
+May 14, 2018: The Supreme Court strikes down PASPA. Inside sports league headquarters across America, partnership teams face an unprecedented question: How do you build a revenue category that didn't exist yesterday?
+
+Follow the parallel journeys of three partnership executives—at a major league, a sports network, and a casino operator—as they navigate the first 100 days after legalization. Each faces the same challenge: convince skeptical leadership that betting partnerships are worth the brand risk, then build activation frameworks that prove ROI.
+
+**Key Story Beats:**
+- **Day 1:** PASPA falls. Partnership teams scramble to understand the opportunity.
+- **Day 30:** First deals signed. How do you price something with no precedent?
+- **Day 60:** Activation begins. Stadium integration, broadcast overlays, mobile apps.
+- **Day 100:** First results. The data shows bettors watch 40% more games. The thesis is validated.
 
 **Learning Connection:**
 This narrative introduces the five sponsorship activations that define modern betting partnerships: Stadium Integration, Broadcast Partnership, Mobile Engagement, Data Licensing, and Responsible Gaming—the core concepts students will analyze this week.
 
 **Accessibility:**
-- Full text script available in `03-all-in-week3.md`
+- Full text script available in `03-new-frontier-week3.md`
 - Alt text for each panel included in script
-- High contrast visual style (Retro Sports Illustrated aesthetic)
+- Clean, modern infographic style with data visualizations
 
 ---
 
@@ -460,7 +473,9 @@ This narrative introduces the five sponsorship activations that define modern be
 ```markdown
 ### From Story to Strategy
 
-Denise Carter's story illustrates how sports betting transformed from underground activity to legitimate revenue stream. The legalization of sports betting created the fastest-growing sponsorship category in sports—with one crucial advantage: closed-loop attribution.
+The 2018 PASPA ruling created the fastest-growing sponsorship category in sports history. Within five years, betting operators became top-10 sports sponsors—not because they had bigger budgets, but because they solved the attribution problem that plagues traditional sponsors.
+
+When FanDuel sponsors an NFL broadcast, they know exactly who downloaded the app, placed a bet, and became a customer. That closed-loop attribution is impossible with jersey sponsors or stadium naming rights.
 
 **What You'll Master:**
 - How brands measure sponsorship ROI with imperfect attribution

@@ -51,6 +51,7 @@ In this module, you'll complete your case analysis:
 
 **Your Task:** Analyze the case systematically, evaluate all three scenarios, and defend a strategic recommendation. Use frameworks from Modules 3-4 (Legacy vs Innovation Matrix, stakeholder analysis) to structure your thinking.
 
+**Reminder on Financial Figures:** This case uses modeled financial projections. Actual HHOF revenue is approximately $10-11 million annually; the case scenarios use an illustrative baseline of ~$18M. Focus on the *relative* trade-offs and growth percentages rather than absolute dollar figures.
 
 ---
 

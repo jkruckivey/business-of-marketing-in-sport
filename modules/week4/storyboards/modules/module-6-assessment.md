@@ -1,12 +1,12 @@
 # MODULE 6: Assessment - Athlete Brand Strategy Memo + Project Milestone 4
-**Version:** 1.4.0 | **Last Updated:** 2025-12-05
+**Version:** 1.5.0 | **Last Updated:** 2026-01-12
 
 **Purpose:** Demonstrate mastery of Week 4 learning outcomes through strategic analysis memo AND submit CFL Expansion Project Milestone 4
 
-### Version 1.4.0 Changes
-- **NEW:** Added CFL Expansion Project Milestone 4 submission (team-based)
-- Individual athlete brand memo remains as primary assessment
-- Milestone 4 adds team-based brand building & launch strategy component
+### Version 1.5.0 Changes
+- **UPDATED:** CFL Milestone 4 converted to individual submission
+- Fact-check corrections applied to Serena Williams references
+- Readings sections added to course modules
 
 **Uplimit Structure:** Seventh module in Unit 4 (Week 4)
 
@@ -267,44 +267,103 @@ Your memo must include these specific calculations (can be in tables or inline t
 
 **Purpose:** Students practice presenting their strategy to athlete client before submitting final memo
 
-**Uplimit Implementation:**
-1. Select **AI Roleplay** element
-2. Configure:
+### Student-Facing Instructions (Place as Text element BEFORE AI Roleplay)
 
-**Scenario Title:** "Practice Pitch: Present Your Strategy to Jordan Taylor"
+```markdown
+### Practice Your Pitch
+Before submitting your final memo, practice presenting your strategy to your athlete client, Jordan Taylor. This optional roleplay helps you test clarity, field questions, and ensure your recommendations are defensible.
 
-**Objective:**
-```
-Students will practice presenting their athlete brand strategy verbally to the client (Jordan Taylor) before submitting their written memo. This optional roleplay helps students refine their recommendations by testing clarity, fielding client questions, and ensuring their strategy is defensible.
-```
+**Your Goal:** Summarize your key recommendations and respond to Jordan's questions. This is practice—not graded. Use this to refine your final memo.
 
-**Scenario Context:**
-```
-Jordan Taylor (your athlete client) has read your draft strategy memo. They've scheduled a 10-minute meeting to ask clarifying questions before you finalize the memo. You'll present your key recommendations and respond to their concerns.
-
-This is practice—not graded. Use this to test your strategy's logic before submitting the final written memo.
-
-Conversation length: 4-5 exchanges
+**Conversation Length:** 4-5 exchanges
 ```
 
-**AI Role:**
-```
-You are Jordan Taylor, a 25-year-old elite athlete who hired the student as your brand strategist. You've read their draft strategy memo and have some questions:
+### UPLIMIT CONFIGURATION
 
-- Ask about specific recommendations that seem risky or unclear
-- Probe their financial projections ("How did you calculate this IRR?")
-- Test whether they've thought through trade-offs ("If I invest $3M in a business, where does that capital come from?")
-- Express realistic athlete concerns ("What if my career ends early due to injury?")
+**Tab 1: Learning Objective**
 
-Your personality: Thoughtful, business-minded, but not an expert in finance—ask clarifying questions like a smart client would.
+**Widget Name:** Practice Pitch: Present Your Strategy to Jordan Taylor
 
-After 4-5 exchanges, thank them for clarifying and encourage them to finalize their memo incorporating this discussion.
+**Learning Objective:**
+```
+Students will practice presenting their athlete brand strategy verbally to the client (Jordan Taylor) before submitting their written memo. This optional roleplay helps students refine their recommendations by:
+
+1. Testing clarity of strategic recommendations
+2. Fielding realistic client questions about financial projections
+3. Ensuring trade-offs and risks have been considered
+4. Building confidence in their analysis before final submission
+
+Success = Student can articulate their strategy clearly and respond to probing questions with evidence-based reasoning.
 ```
 
-**Student Role:**
+**Scenario Setup:** Practice/Formative (optional, not graded)
+
+---
+
+**Tab 2: Scenario**
+
+**Context:**
 ```
-You are presenting your athlete brand strategy to your client, Jordan Taylor. Start by summarizing your key recommendations, then respond to their questions. This practice helps you refine your final memo.
+Jordan Taylor (the learner's athlete client) has read the draft strategy memo. Jordan has scheduled a 10-minute meeting to ask clarifying questions before the memo is finalized. The learner will present key recommendations and respond to Jordan's concerns about revenue streams, financial projections, and risk mitigation. This practice conversation helps the learner refine their final written submission.
 ```
+
+**Role of AI (Jordan Taylor):**
+```
+A 25-year-old elite athlete who hired the learner as their brand strategist. Jordan is thoughtful and business-minded but not an expert in finance, asking clarifying questions like a smart client would.
+```
+
+**Role of Student:**
+```
+The learner plays the role of a brand strategist presenting their athlete brand strategy recommendations to their client, Jordan Taylor, summarizing key recommendations and responding to questions.
+```
+
+---
+
+**Tab 3: Hidden Context**
+
+```
+**AI Character Context:**
+You are Jordan Taylor, a 25-year-old elite athlete reviewing the student's brand strategy memo. You're smart and engaged but not a finance expert—ask questions a thoughtful client would ask.
+
+**Questions to Ask (adapt based on student responses):**
+
+1. **Revenue Streams:** "You recommend I put 40% into owned businesses. Which businesses specifically? Why those?"
+
+2. **Financial Projections:** "You project I'll have $200M by age 50. How did you calculate that? What assumptions did you make about growth rates?"
+
+3. **Trade-offs:** "If I invest $3M in a business, where does that capital come from? Do I take less endorsement money? Borrow?"
+
+4. **Risk Mitigation:** "What if my career ends early due to injury? Does this strategy still work?"
+
+5. **Women's Sports Investment:** "You mention investing in women's sports. Which specific opportunities? What's the timeline for returns?"
+
+6. **Post-Career Transition:** "I'm 25 now. When should I start building these post-career assets? Can I wait until I'm 30?"
+
+**AI Personality Traits:**
+- Curious and engaged: You want to understand the reasoning behind recommendations
+- Business-minded: You care about returns but aren't a finance expert
+- Realistic: You have concerns about risk, capital requirements, and career uncertainty
+- Appreciative: You value the strategist's expertise and want actionable advice
+
+**Conversation Strategy:**
+1. Let student present their opening summary without interruption
+2. Ask 2-3 probing questions based on what they present
+3. Express one realistic concern (injury, timing, capital)
+4. After 4-5 exchanges: "Thanks for walking me through this. I feel more confident about the strategy. Go ahead and finalize the memo—I think we're on the right track."
+
+**Success Indicators:**
+- ✅ Student articulates strategy clearly
+- ✅ Student supports recommendations with evidence from Week 4 content
+- ✅ Student addresses trade-offs and risks thoughtfully
+```
+
+---
+
+**Tab 4: Criteria**
+
+**Grading:** Not graded (optional practice - completion credit only)
+
+No evaluation criteria. This is optional practice to help students refine their final memo submission. Students who complete the roleplay receive completion credit.
 
 ---
 
@@ -372,15 +431,15 @@ Good luck on your assessment! You've got the frameworks—now show us the strate
 ```markdown
 Title: 🏈 CFL Expansion Project - Milestone 4: Brand Building & Launch Strategy
 
-**Team Deliverable:** Brand Launch Plan (4-5 pages)
+**Individual Deliverable:** Brand Launch Plan (4-5 pages)
 **Weight:** 20% of total project grade (20 points)
 **Due:** End of Week 4
 
-Your team will submit ONE document that includes:
+Your submission should include:
 
 **1. Brand Identity**
-- Team name, colors, logo concept (describe, don't design)
-- Brand positioning (how does this team differ from existing CFL teams?)
+- Franchise name, colors, logo concept (describe, don't design)
+- Brand positioning (how does this franchise differ from existing CFL teams?)
 - Brand pillars (3-4 core values)
 - Connection to city/region identity
 
@@ -404,7 +463,7 @@ Your team will submit ONE document that includes:
 
 **Apply Matt Rubinoff's Insights:**
 - Proof of concept thinking—How do you validate demand before full launch?
-- "Marketing-first" approach—Building brand before building team
+- "Marketing-first" approach—Building brand before building roster
 - White space identification—What's missing in this market?
 
 📋 **Full Project Details:** [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
@@ -417,21 +476,20 @@ Your team will submit ONE document that includes:
 **Uplimit Configuration:**
 - **Element Type:** File Upload
 - **Allowed Formats:** PDF, DOCX, Google Docs link
-- **Team Submission:** One submission per team
+- **Individual Submission:** One submission per student
 
 **Submission Instructions:**
 ```markdown
 ## Milestone 4 Submission
 
-Upload your team's Brand Launch Plan here.
+Upload your Brand Launch Plan here.
 
 **Requirements:**
 - 4-5 pages (excluding title page and references)
 - Professional formatting
-- All team member names on title page
-- One submission per team
+- Your name on title page
 
-**Filename Format:** `TeamName_M4_BrandLaunch.pdf`
+**Filename Format:** `LastName_M4_BrandLaunch.pdf`
 
 **Rubric Preview:**
 | Criterion | Points |

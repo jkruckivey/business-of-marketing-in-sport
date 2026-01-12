@@ -781,6 +781,51 @@ Ready to transform a heritage icon? Let's apply your frameworks!
 
 ---
 
+## Additional Readings - Week 5
+
+**Uplimit Implementation:**
+1. Select **Details** element
+2. Title: "📚 Week 5 Readings: Heritage & Future of Sports Business"
+3. Copy content below:
+
+
+[Expand for additional readings supporting Week 5 learning outcomes]
+
+### Heritage & Legacy Monetization
+
+**Hockey Hall of Fame – Annual Financial Statements (2023/2024)**
+Actual revenue breakdown (~$10M range), admission, retail, events—grounds your case assumptions in verified data.
+
+**Charity Intelligence – Hockey Hall of Fame Profile**
+Revenue sources, expenses, visitor trends—shows real constraints on heritage institutions and nonprofit operating models.
+
+### CFL Expansion & League Economics
+
+**CFL.ca – "2025 Salary Cap Increase Driven by 2024 League Revenue Growth"**
+Official announcement of cap jump to $6.06M (+$412K)—supports expansion revenue optimism and validates league health trajectory.
+
+**3DownNation – "CFL Receives Canadian and International Interest in Expansion"**
+Latest on ownership interest, market selection, and revenue projections for new teams—directly relevant to your CFL Expansion Project.
+
+### Future Trends & Innovation
+
+**Deloitte – "Future of Sports: Seizing the Moment"**
+Women's sports growth, digital transformation, next-gen fans, trust—comprehensive synthesis for Week 5's future trends analysis.
+
+**Deloitte – "Immersive Sports Fandom"**
+VR/AR, metaverse, AI personalization—examples of heritage properties experimenting with digital transformation while preserving authenticity.
+
+### Balancing Heritage & Growth (Case Study Context)
+
+**Ivey Publishing – "Bank of America Sports Sponsorship"**
+Brand deciding how to evolve sponsorship portfolio without losing core identity—illustrates tension between tradition and innovation at the sponsor level.
+
+**Ivey Publishing – "LIV Golf: Sportswashing and the End of a Monopoly"**
+Tradition vs. innovation tension—how new entrants challenge heritage leagues. Relevant counterpoint to HHOF's preservation-focused position.
+
+
+---
+
 ## MODULE 3 Complete - Summary
 
 ### Elements Created:

@@ -1,5 +1,10 @@
 # MODULE 2: Sponsorship Framework (⭐ INTERACTIVE FOCUS)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2026-01-12
+
+### Version 1.4.0 Changes
+- **NEW:** Added Element 11 - Core Readings on Sponsorship & ROI
+- **UPDATED:** FanDuel positioned as example data source (not primary case)
+- **UPDATED:** Aligned structure with Week 1/2 module patterns
 
 **Purpose:** Understand sponsorship ROI fundamentals, build activation framework (measures WLOs 3.1, 3.3)
 
@@ -249,7 +254,7 @@ You're the Sponsorship Activation Manager for a global brand. Your brand just si
 
 ## After the Widget
 
-Export your activation budget. You'll use it in Module 5's group sprint to design a complete sponsorship activation plan (40-point assignment).
+Export your activation budget. You'll use it in Module 5's strategy memo to make a sponsorship recommendation (40-point assignment).
 ```
 
 ---
@@ -583,6 +588,60 @@ Sports betting operators share user-level data: Fan creates FanDuel account (spo
 **Why This Matters for Your Activation Plan:**
 Choose activation channels that enable measurement. Digital-first activations (app downloads, promo codes, QR codes) offer better attribution than traditional (billboards, jersey logos). Budget 5-10% of activation spend on measurement infrastructure.
 ```
+
+---
+
+## Element 11: Core Readings - Sponsorship & ROI
+
+**Type:** Details (Accordion)
+**Priority:** ◐ Recommended
+
+```
+Title: 📚 Core Readings: Sponsorship & ROI
+
+[Expand for required and recommended readings]
+
+## Required Reading
+
+These readings provide the industry frameworks you'll apply in this module's widgets:
+
+• **PwC – "Sports Sponsorship Playbook" (The Evolution of Sponsorships / Data Innovation)**
+  Why impressions aren't enough; how teams and brands use fan-level data, cloud, and IoT to prove ROI.
+  https://www.pwc.com/us/en/industries/tmt/library/sports-sponsorships-playbook.html
+  *Read before using the ROI Calculator widget*
+
+• **PwC – "Sports Industry Outlook 2025" (Sponsorship Sections)**
+  Sponsorship growth forecasts, the rise of new categories (betting, fintech), and how sponsors think about return.
+  https://www.pwc.com/us/en/industries/tmt/library/sports-outlook-north-america.html
+  *Focus on pages 12-18 covering sponsorship trends*
+
+## Recommended Reading
+
+Go deeper on data-driven sponsorship and personalization:
+
+• **PwC – "Artificial Intelligence — The MVP for Personalizing Sports"**
+  How AI and analytics personalize fan experiences and make sponsorship more measurable.
+  https://www.pwc.com/us/en/industries/tmt/library/ai-personalizing-sports.html
+  *Connects to the attribution modeling concepts in Element 10*
+
+• **PwC – "Data Monetisation in Sports: Unlocking Opportunities"**
+  Concrete examples of turning fan data into sponsorship and partnership value.
+  https://www.pwc.com/gx/en/industries/tmt/media/outlook/data-monetisation-sports.html
+  *Supports the "attribution loop" theme throughout this module*
+
+## Reading Strategy
+
+**Before widgets:** Read the Sponsorship Playbook to understand why ROI measurement is complex
+**After widgets:** Read AI/Data articles to see how the frameworks you practiced connect to emerging tech
+
+Total reading time: 25-30 minutes (required) + 20 minutes (recommended)
+```
+
+**Design Rationale:**
+- Positions readings BEFORE widgets so students have conceptual framework
+- PwC sources are industry-standard, credible for MBA audience
+- Links directly to module concepts (ROI Calculator, attribution modeling)
+- Separates required vs. recommended to manage cognitive load
 
 ---
 

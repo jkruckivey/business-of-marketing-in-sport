@@ -32,10 +32,10 @@ Now it's time to see these principles in action—by analyzing one of the most s
 
 ### Serena Williams: The Numbers
 
-- **Career prize money:** $94 million (most in tennis history)
-- **Career endorsement earnings:** ~$350 million (Nike, Gatorade, Wilson, etc.)
-- **Estimated brand value:** $500 million
-- **The puzzle:** Where does that extra $150-200 million come from?
+- **Career prize money:** Nearly $95 million over 27 years (most in tennis history)
+- **Career endorsement earnings:** $350+ million (Nike, Gatorade, Wilson, etc.)
+- **Estimated net worth:** ~$350-500 million (depending on valuation date)
+- **The puzzle:** How did she build wealth far exceeding her on-court earnings?
 
 ### What You'll Discover
 
@@ -46,7 +46,7 @@ In this case study, you'll analyze:
 4. **Post-career transition:** How she built assets during her career that sustain value after retirement
 5. **Women's sports thesis:** How her investments in women's sports create compounding returns
 
-By the end of this module, you'll be able to answer: **How did Serena Williams build a $500M brand—and could YOU replicate her strategy?**
+By the end of this module, you'll be able to answer: **How did Serena Williams build wealth far exceeding her tennis earnings—and could YOU replicate her strategy?**
 
 Let's dive into the case.
 ```
@@ -176,7 +176,7 @@ Serena Ventures invested in NWSL teams. Apply the Emerging Sports Investment Too
 **Contrast with Failed Athletes:**
 Allen Iverson earned $200M+ in career but declared bankruptcy. Why? He built no owned businesses or investments during career. When salary/endorsements stopped, income stopped.
 
-**Key Question:** What % of Serena's current wealth comes from assets built during playing career? Would she have $500M brand value if she'd only taken endorsements?
+**Key Question:** What % of Serena's current wealth comes from assets built during playing career? Would she have this level of net worth if she'd only taken endorsements?
 
 ---
 
@@ -207,8 +207,6 @@ This synthesis will form the foundation of your Week 4 assessment.
 
 **Uplimit Embed Code:**
 ```html
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 <iframe
   src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/serena-brand-portfolio-analyzer.html"
   width="100%"
@@ -218,19 +216,6 @@ This synthesis will form the foundation of your Week 4 assessment.
   aria-label="Interactive analyzer pre-loaded with Serena Williams' estimated portfolio allocation where you can test alternative scenarios to see how different strategic decisions create different twenty-year wealth outcomes"
   allowfullscreen
   loading="lazy">
-=======
-=======
->>>>>>> Stashed changes
-<iframe src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/serena-brand-portfolio-analyzer.html"
-        width="900"
-        height="800"
-        title="Serena's Brand Portfolio Analyzer - Map her actual strategy and compare alternatives"
-        frameborder="0"
-        aria-label="Interactive analysis tool for Serena Williams' athlete brand portfolio strategy">
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 </iframe>
 ```
 
@@ -322,7 +307,7 @@ By analyzing Serena's actual strategy, you discovered:
 - Her women's sports investments captured 10-15x returns as first mover
 
 **Key Insight:**
-Serena didn't build a $500M brand by being the best tennis player (though she is). She built it by strategically allocating capital to equity investments, launching owned businesses, and identifying undervalued markets (women's sports, underrepresented founders) where first movers capture outsized returns.
+Serena didn't build her substantial net worth by being the best tennis player (though she is). She built it by strategically allocating capital to equity investments, launching owned businesses, and identifying undervalued markets (women's sports, underrepresented founders) where first movers capture outsized returns.
 
 **Up Next: Module 6 - Strategic Memo Assessment**
 

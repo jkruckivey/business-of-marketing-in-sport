@@ -56,7 +56,7 @@ This week you'll develop **Milestone 4** of your CFL Expansion Project: a compre
 
 This week, you'll apply these same frameworks to **individual athletes as businesses**. Athletes have their own five revenue streams—and just like leagues, they must decide which streams to prioritize for long-term wealth creation.
 
-This week, we shift focus to the **individual athlete** as a business. You'll discover how elite athletes like Serena Williams build $500 million brands that extend decades beyond their playing careers. You'll analyze the fastest-growing investment opportunity in sports: **women's sports** and **emerging sports properties**. And you'll learn why some athletes build generational wealth while others—despite earning tens of millions in salaries and endorsements—struggle financially after retirement.
+This week, we shift focus to the **individual athlete** as a business. You'll discover how elite athletes like Serena Williams build substantial net worth that extends decades beyond their playing careers. You'll analyze the fastest-growing investment opportunity in sports: **women's sports** and **emerging sports properties**. And you'll learn why some athletes build generational wealth while others—despite earning tens of millions in salaries and endorsements—struggle financially after retirement.
 
 **This week's central question:** How do elite athletes strategically build brands and businesses that create long-term wealth, not just short-term income?
 
@@ -107,7 +107,7 @@ You'll be able to identify and analyze the five major revenue streams elite athl
 - Recommend which revenue streams an athlete should prioritize at different career stages (rookie year vs. peak earnings vs. retirement transition)
 
 ### Why This Matters:
-Most athletes chase endorsement deals because they offer immediate cash. But endorsements are fee-based income that stop when relevance fades. Owned businesses and investments create equity that compounds over decades. Understanding this distinction is the difference between earning $100M in a career and building $500M in generational wealth.
+Most athletes chase endorsement deals because they offer immediate cash. But endorsements are fee-based income that stop when relevance fades. Owned businesses and investments create equity that compounds over decades. Understanding this distinction is the difference between earning $100M in a career and building generational wealth that far exceeds your on-field earnings.
 
 ---
 
@@ -296,15 +296,7 @@ The highest-earning retired athletes all share one strategy: they built equity-b
 **Up Next: Module 2 - Executive Perspectives**
 Now that you know what you're learning and why it matters, you'll hear from practitioners who've actually done this work: a sports agent who represents elite athletes, Don Rea from the PGA Tour navigating golf's global expansion, and experts in women's sports investment and athlete brand building. Their insights will ground the frameworks you're about to learn.
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Ready to hear from the experts? Let's go!
-=======
 Ready to hear from the experts? Let's go.
->>>>>>> Stashed changes
-=======
-Ready to hear from the experts? Let's go.
->>>>>>> Stashed changes
 
 ---
 

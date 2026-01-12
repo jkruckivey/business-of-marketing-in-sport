@@ -76,7 +76,7 @@ Use industry frameworks to quantify sponsorship value through reach, engagement,
 **WLO 3.4: Design sponsorship activations that deliver measurable value** (Bloom's: Create)
 Build a 1-page activation plan with ROI projections using real brand and property examples.
 
-**Assessment:** Group sprint - 1-page sponsorship activation plan with ROI projections (40 points)
+**Assessment:** Individual strategy memo - 2-page sponsorship recommendation with ROI analysis (40 points)
 ```
 
 ---
@@ -180,7 +180,7 @@ Watch this interview BEFORE Module 2 (Sponsorship Framework). Update viewing gui
 "We measure three layers: Reach (how many people saw our brand?), Engagement (did they interact?), and Conversion (did they buy?). Reach is easy—broadcast impressions, social media views. Engagement requires data partnerships—app downloads, website visits. Conversion is hardest—tying sales to sponsorship exposure. That's where betting partnerships excel."
 
 [1:15-1:45] Betting Integration Advantage
-"When we partner with FanDuel or DraftKings, we access first-party data: who bet, what they bet on, when they converted. That attribution loop is impossible with traditional jersey sponsors. Sports betting operators offer co-marketing deals where we share customer acquisition costs and conversion data. It's why betting-integrated sponsorships command 20-30% premiums."
+"When we partner with FanDuel or DraftKings, we access first-party data: who bet, what they bet on, when they converted. That attribution loop is impossible with traditional jersey sponsors. Sports betting operators offer co-marketing deals where we share customer acquisition costs and conversion data. It's why betting-integrated sponsorships often command 20-30% premiums due to attribution data."
 
 [1:45-2:00] Conclusion
 "Your activation plan this week needs to answer: What's the reach? What's the engagement mechanism? How do we measure conversion? Think like a CFO, not just a marketer."

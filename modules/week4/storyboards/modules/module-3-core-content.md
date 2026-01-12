@@ -499,6 +499,47 @@ Hi! I can help you understand insights from the Athlete Brand Calculator and Eme
 
 ---
 
+## Element 11: Core Readings - Athlete Equity & Emerging Sports
+
+**Uplimit Implementation:**
+1. Select **Details** (accordion) element
+2. Copy markdown below:
+
+```markdown
+Title: Core Readings: Athlete Equity & Venture Capital
+
+[Expand for required and recommended readings]
+
+### Required Readings (30-40 minutes)
+
+**1. Reuters: "Serena Williams' New Venture Fund Raises $111 Million"**
+Clean background on Serena Ventures' fund size, thesis, and first investments.
+🔗 [Read Article](https://www.reuters.com/article/us-serena-williams-venture-fund/serena-williams-new-venture-fund-raises-111-million-idUSKCN1T02FJ)
+
+**2. Forbes: "Play To Win: Serena Williams Invested In 14 Unicorn Companies"**
+Portfolio overview, returns (e.g., Coinbase), and her VC philosophy.
+🔗 [Read Article](https://www.forbes.com/sites/mattcraig/2023/01/23/play-to-win-serena-williams-invested-in-14-unicorn-companies/)
+
+### Recommended Readings (Optional)
+
+**3. Afrotech: "Serena Williams on Raising VC"**
+How she built her investor network and deal flow; good for project inspiration.
+🔗 [Read Article](https://afrotech.com/serena-williams-vc-funding)
+
+**4. Forbes Athlete Earnings Lists (2025)**
+Prize money vs. endorsements vs. equity returns; shows the "top 5% optimize streams 4-5" point.
+🔗 [View Latest Rankings](https://www.forbes.com/athletes/)
+
+### Application to Week 4
+
+These readings provide real data behind the frameworks you're experimenting with:
+- Serena Ventures fund structure → Apply to WLO 4.1 (revenue streams)
+- Unicorn investments → Evidence for WLO 4.2 (equity vs. fees)
+- Forbes earnings data → Benchmark for Athlete Brand Calculator widget
+```
+
+---
+
 ## Module 3 Complete - Transition to Module 4
 
 **What You've Learned:**

@@ -47,13 +47,13 @@ know about athlete brands."
 
 [0:20-1:10] THE PARADOX SETUP
 
-SME: "In 2020, Forbes valued Serena Williams' brand at $500 million. That's not her career
-prize money—that's just $94 million. It's not even her endorsement earnings—those total about
-$350 million over her career.
+SME: "Forbes estimates Serena Williams' net worth at around $350-500 million—depending on
+valuation date—far exceeding her on-court earnings. Her career prize money totals nearly
+$95 million over 27 years. Her endorsement earnings over her career exceed $350 million.
 
 [VISUAL CUE: Show slide with numbers breakdown]
 
-So where does that extra $150-200 million in brand value come from? And more importantly:
+So where does all that additional value come from? And more importantly:
 How do you BUILD a brand worth 5x your on-field earnings?
 
 [Pause, lean forward]
@@ -66,9 +66,9 @@ But that's not how it actually works.
 
 [1:10-1:50] REFRAMING THE PROBLEM
 
-SME: "Here's what I've learned working with elite athletes: A $500 million brand isn't built
+SME: "Here's what I've learned working with elite athletes: Elite brand value isn't built
 on performance alone. Serena is one of the greatest athletes of all time—but so are dozens of
-other tennis players who never reached even 10% of her brand value.
+other tennis players who never reached even 10% of her net worth.
 
 [ON-SCREEN TEXT: "Performance ≠ Brand Value"]
 
@@ -84,7 +84,7 @@ vehicles, and owned assets that generate value independent of her playing career
 
 [1:50-2:30] LEARNING CHALLENGE & CALL-TO-ACTION
 
-SME: "This week, you're going to learn how elite athletes build $500 million brands. You'll
+SME: "This week, you're going to learn how elite athletes build substantial personal brands. You'll
 understand the five revenue streams athletes use—and which ones create long-term wealth versus
 short-term income. You'll explore why women's sports are the fastest-growing investment
 opportunity in sports business. And you'll analyze Serena Williams' strategic decisions to
@@ -93,7 +93,7 @@ understand exactly how she built generational wealth.
 [Pause]
 
 But first, I want to know: Do you ALREADY understand how athlete brands are built? Can you
-explain where that $500 million value comes from?
+explain where that additional value comes from?
 
 Right now, before you learn anything this week, test yourself. Take the diagnostic exercise
 that follows this video. Be honest. Reveal your knowledge gaps NOW—so we can fill them together.
@@ -106,8 +106,8 @@ Let's find out what you already know... and what you're about to discover."
 ```
 
 **Visual Assets Needed:**
-- Slide 1: Serena Williams brand valuation breakdown ($500M total, $94M prize money, $350M endorsements, $150-200M = ?)
-  - **Alt text:** "Infographic showing Serena Williams brand value breakdown: $500 million total brand value, $94 million career prize money, $350 million endorsement earnings, with question mark for remaining $150-200 million"
+- Slide 1: Serena Williams net worth breakdown (~$350-500M total, $95M prize money, $350M+ endorsements, equity/business value = ?)
+  - **Alt text:** "Infographic showing Serena Williams wealth breakdown: estimated $350-500 million net worth, $95 million career prize money, $350+ million endorsement earnings, with question mark for business equity"
 - Slide 2: The equation (Brand Value ≠ Prize Money + Endorsements)
   - **Alt text:** "Equation showing brand value does not equal prize money plus endorsements"
 - Slide 3: Performance ≠ Brand Value
@@ -134,7 +134,7 @@ Let's find out what you already know... and what you're about to discover."
 
 **Scenario Title:** "The Brand Value Question: Can You Explain It Now?"
 
-**Purpose:** Diagnostic activity that reveals knowledge gaps about athlete branding before content delivery. Students attempt to explain Serena Williams' $500M brand value using current understanding—most will struggle, creating motivation for Week 4 content.
+**Purpose:** Diagnostic activity that reveals knowledge gaps about athlete branding before content delivery. Students attempt to explain Serena Williams' net worth ~$350-500M using current understanding—most will struggle, creating motivation for Week 4 content.
 
 **When to Use:** Immediately after the bridge video (Element 1)
 
@@ -150,7 +150,7 @@ Let's find out what you already know... and what you're about to discover."
 
 **Learning Objective:**
 ```
-Students will demonstrate their current understanding of athlete brand building by attempting to explain a complex valuation problem (Serena Williams' $500M brand value) using their pre-existing knowledge. This diagnostic activity will reveal gaps in three key areas:
+Students will demonstrate their current understanding of athlete brand building by attempting to explain a complex valuation problem (Serena Williams' net worth ~$350-500M) using their pre-existing knowledge. This diagnostic activity will reveal gaps in three key areas:
 
 1. Athlete revenue streams knowledge (can they identify all 5 major sources beyond endorsements?)
 2. Owned assets vs. endorsements (do they understand equity building vs. fee-based income?)
@@ -167,7 +167,7 @@ Success = Student finishes knowing exactly what they DON'T know yet, with motiva
 
 **Context:**
 ```
-A junior analyst at a sports marketing agency has been asked by their supervisor to explain why Serena Williams' brand is valued at $500 million when her career prize money totals only $94 million and endorsement earnings total approximately $350 million. The learner will attempt to explain the brand architecture that creates this additional $150-200 million in value, revealing their current understanding of athlete revenue streams, owned assets versus endorsements, and post-career wealth building. This diagnostic conversation helps identify knowledge gaps before Week 4 content delivery.
+A junior analyst at a sports marketing agency has been asked by their supervisor to explain why Serena Williams' net worth far exceeds her career prize money (nearly $95 million over 27 years) and endorsement earnings ($350+ million). The learner will attempt to explain the brand architecture that creates substantial wealth beyond playing earnings, revealing their current understanding of athlete revenue streams, owned assets versus endorsements, and post-career wealth building. This diagnostic conversation helps identify knowledge gaps before Week 4 content delivery.
 ```
 
 **Role of AI (Supervisor):**
@@ -177,7 +177,7 @@ A senior executive at a sports marketing agency who asks probing questions to he
 
 **Role of Student:**
 ```
-The learner plays the role of a junior analyst attempting to explain Serena Williams' $500M brand valuation to their supervisor using pre-existing knowledge.
+The learner plays the role of a junior analyst attempting to explain Serena Williams' substantial brand valuation to their supervisor using pre-existing knowledge.
 ```
 
 ---
@@ -293,53 +293,20 @@ Check the box: **"Provide feedback but do not grade"**
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-**Student-Facing Instructions** (Copy into Uplimit "Instructions for Students" field):
+### Student-Facing Instructions (Place as Text element BEFORE AI Roleplay)
 
 ```markdown
 ### Your Role
-You are a **junior analyst** who just watched the Serena Williams brand valuation video. Your supervisor has turned to you and asked: "Can you explain where that extra $150-200M in brand value comes from?"
+You are a **junior analyst** who just watched the Serena Williams brand valuation video. Your supervisor has turned to you and asked: "Can you explain how Serena built wealth far beyond her tennis earnings?"
 
 ### Getting Started
-**You need to start the conversation.** When the chat opens, begin by sharing your current thinking about how athletes build wealth beyond prize money and endorsements. Your supervisor is waiting for your opening explanation.
-
-### The Scenario
-Your supervisor knows you're new to athlete brand strategy, so they're patient—but they need a clear explanation of why Serena's $500M brand value exceeds her $94M in prize money and $350M in endorsements.
-
-### What to Have Ready
-- **Your current understanding** of athlete revenue streams (it's okay if this is limited!)
-- **Your best attempt** at explaining where the additional $150-200M value comes from
-- **Curiosity** about what you DON'T know yet
+**You need to start the conversation.** Begin by sharing your current thinking about how athletes build wealth beyond prize money and endorsements. Your supervisor is waiting for your opening explanation.
 
 ### Your Goal
-⚠️ **This is diagnostic—you're not expected to ace this!** Most students struggle before learning Week 4 content. The goal is to:
-
-1. Start the conversation with your best attempt at explaining the brand value gap
-2. Respond to your supervisor's probing questions using your current knowledge
-3. Discover gaps in your understanding (this is GOOD—it shows you what to focus on)
-4. Get motivated to learn the athlete brand architecture concepts that would help you answer confidently
+⚠️ **This is diagnostic—you're not expected to ace this!** Most students struggle before learning Week 4 content. The goal is to discover gaps in your understanding so you know what to focus on this week.
 
 ### Conversation Length
-- **3-4 exchanges** with your supervisor
-- The AI will probe your understanding with 2-3 follow-up questions after your opening explanation
-- If you get stuck, that's the point! Notice where you struggle—those are your learning priorities.
-
-### What Happens Next
-After this exercise, you'll take a pre-assessment quiz that helps you identify exactly what you need to learn. By the end of Week 4, you'll return to this question and answer it confidently using the athlete brand framework.
-=======
-=======
->>>>>>> Stashed changes
-**Student-Facing Instructions** (Optional - if Uplimit provides separate Instructions field):
-
-```
-You are a junior analyst who just watched the Serena Williams brand valuation video. Your supervisor asks: "Can you explain where that extra $150-200M in brand value comes from?"
-
-Start the conversation by sharing your current thinking about how athletes build wealth beyond prize money and endorsements. This is a diagnostic exercise—struggle is expected and helps identify what you need to learn this week. The conversation will last 3-4 exchanges.
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+3-4 exchanges with your supervisor. If you get stuck, that's the point—those are your learning priorities.
 ```
 
 ---
@@ -362,15 +329,13 @@ Start the conversation by sharing your current thinking about how athletes build
 ```markdown
 Title: The Athlete Brand Problem Modern Sports Faces
 
-Elite athletes face a strategic paradox: their playing career (8-12 years) occurs when brand value is highest, yet wealth-building opportunities must sustain them for 50+ years after retirement. This week you'll explore how athletes like Serena Williams build $500M brands by balancing five revenue streams, prioritizing owned businesses over endorsements, and investing in women's sports—the fastest-growing opportunity in sports business. You'll analyze Serena's strategic decisions using real data, but first, let's see what you already know.
+Elite athletes face a strategic paradox: their playing career (8-12 years) occurs when brand value is highest, yet wealth-building opportunities must sustain them for 50+ years after retirement. This week you'll explore how athletes like Serena Williams build substantial brands by balancing five revenue streams, prioritizing owned businesses over endorsements, and investing in women's sports—the fastest-growing opportunity in sports business. You'll analyze Serena's strategic decisions using real data, but first, let's see what you already know.
 ```
 
 **Word count:** 95 words ✓
 
 ---
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 ## Element 4: Athlete Brand Pre-Assessment (Combined Widget)
 
 **Widget Purpose:** Combined challenge text + 10-question self-diagnostic quiz covering all 4 learning outcomes (WLO 4.1, 4.2, 4.3, 4.4)
@@ -413,10 +378,6 @@ Elite athletes face a strategic paradox: their playing career (8-12 years) occur
 
 ---
 
-## Element 5: Infobox - Results Interpretation & Learning Path
-=======
-=======
->>>>>>> Stashed changes
 ## Element 4: Text - Outcomes as "Can You..." Questions
 
 **Uplimit Implementation:**
@@ -515,10 +476,6 @@ Let's see what you've got! ↓
 ---
 
 ## Element 6: Infobox - Results Interpretation & Learning Path
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 **Uplimit Implementation:**
 1. Select **Infobox** element in module builder
@@ -589,15 +546,7 @@ The fact that you struggled with explaining where the $150-200M additional brand
 **Up Next: Module 1 - Learning Outcomes**
 Now that you've seen the problem and identified your knowledge gaps, Module 1 will show you exactly what you're going to learn this week. You'll see the four key challenges you'll be able to solve—challenges that will transform you from someone who thinks "athlete brand = endorsements" into someone who can design a comprehensive wealth-building strategy for elite athletes.
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path!
-=======
 Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
->>>>>>> Stashed changes
-=======
-Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
->>>>>>> Stashed changes
 
 ---
 

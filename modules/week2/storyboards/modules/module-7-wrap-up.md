@@ -1,7 +1,12 @@
 ## MODULE 7: Wrap-Up, Preview & Anchor Project Milestones
-**Version:** 1.7.0 | **Last Updated:** 2026-01-10
+**Version:** 1.8.0 | **Last Updated:** 2026-01-12
 
 **Purpose:** Consolidate Week 2 learning, preview Week 3, complete Anchor Project Milestones 1 & 2
+
+### Version 1.8.0 Changes
+- **NEW:** Added Element 9A - Optional Extension Resources (additional readings on media rights, streaming, fan engagement)
+- **NEW:** Canadian Sports Media section with Rogers/Globe coverage and Cartt.ca
+- **NEW:** Books section with media-focused recommendations
 
 ### Version 1.7.0 Changes
 - **MOVED:** CFL Milestone 2 (Media Strategy) moved here from Module 6
@@ -32,6 +37,7 @@
 | 7 | **File Upload** ⬤ Required | Milestone 2: Media & Content Strategy Memo | Configure in Uplimit | Individual submission, AI grading |
 | 8 | **Text** ◐ Recommended | Preview of Week 3 content | Type directly | Build anticipation |
 | 9 | **Details** ○ Optional | Anchor Project FAQs (optional) | Type directly | Optional guidance |
+| 9A | **Details** ○ Optional | Optional Extension Resources | Type directly | Additional readings for deeper exploration |
 | 10 | **⚙ iFrame** ◐ Recommended | **Learning Outcomes Interactive** - WLO-CLO mapping | Embed `learning-outcomes-module-7.html` | Shows how module outcomes connect to course goals |
 | 11 | **Text** ⬤ Required | Final Project Connection | Type directly | How Week 2 supports capstone |
 | 12 | **Text** ⬤ Required | Module 7 Complete - Transition to Week 3 | Type directly | Recap and preview |
@@ -521,6 +527,103 @@ The tool includes key data points, but deeper research strengthens your proposal
 A: Each week provides frameworks and templates specific to CFL expansion. Use office
 hours for check-ins. The AI chat assistants can help with market analysis questions.
 ```
+
+---
+
+## Element 9A: Optional Extension Resources (Details)
+
+### Details Content - Additional Readings:
+```
+Title: Optional Extension Resources
+
+[Expand for additional reading and resources]
+
+Want to go deeper on media rights, streaming economics, and fan engagement? Check out these resources:
+
+## Media Rights & Broadcast Economics
+
+• **SportsPro – The Sports Media Rights Report**
+  Comprehensive annual analysis of global rights deals, valuations, and market trends.
+  https://www.sportspromedia.com/analysis-reports/sports-media-rights-report
+
+• **Variety – Sports Media Rights: The Business Behind the Billions**
+  Accessible overview of how networks value sports content and why rights fees keep rising.
+  https://variety.com/vip-special-reports/sports-media-rights/
+
+• **Harvard Business Review – Why Sports Is the Last Bastion of Appointment TV**
+  Strategic analysis of why live sports defies cord-cutting trends (referenced in Module 3).
+  https://hbr.org/2023/02/why-sports-is-the-last-bastion-of-appointment-tv
+
+## Streaming & Platform Strategy
+
+• **Deloitte – 2025 Sports Industry Outlook (Streaming Section)**
+  Focus on SVOD-only deals, hybrid models, and what's working in direct-to-consumer sports.
+  https://www.deloitte.com/us/en/insights/industry/technology/technology-media-telecom-outlooks/sports-industry-outlook.html
+
+• **The Athletic – The Great Sports Streaming Experiment**
+  Journalist deep-dive into how leagues are navigating the linear-to-streaming transition.
+  https://theathletic.com/sports-streaming-experiment
+
+• **Axios – Sports Streaming Wars: Who's Winning?**
+  Data-driven analysis of subscriber acquisition costs, churn rates, and platform performance.
+  https://www.axios.com/sports-streaming-wars
+
+## Fan Engagement & Digital Strategy
+
+• **Deloitte – Immersive Sports Fandom**
+  Explores multi-screen viewing, AR/VR integration, and what "immersive" fan journeys look like.
+  https://www.deloitte.com/us/en/insights/industry/sports/immersive-sports-fandom.html
+
+• **McKinsey – The Rising Value of Fan Engagement**
+  Framework for moving fans through the engagement funnel (passive → engaged → super-fan).
+  https://www.mckinsey.com/industries/media-and-entertainment/our-insights/the-rising-value-of-fan-engagement
+
+• **PwC – Sports Survey: Fan Engagement Trends**
+  Annual survey data on how fans consume sports content across platforms and generations.
+  https://www.pwc.com/gx/en/industries/tmt/media/outlook/sports-survey.html
+
+## Canadian Sports Media
+
+• **The Globe and Mail – Rogers NHL Deal Analysis Archive**
+  Ongoing coverage of the Rogers/NHL partnership, including the 2024 renegotiation.
+  https://www.theglobeandmail.com/sports/hockey/rogers-nhl-deal/
+
+• **Cartt.ca – Canadian Broadcasting Industry News**
+  Independent coverage of Canadian media rights, CRTC decisions, and sports broadcasting.
+  https://cartt.ca/
+
+## Books
+
+• *The Sports Strategist* by Irving Rein, Ben Shields, Adam Grossman
+  Chapter 7 covers media strategy in depth.
+
+• *Sportscasting: Principles and Practices* by David Schultz
+  Business-focused look at sports media production and distribution.
+
+• *Streaming, Sharing, Stealing* by Michael D. Smith & Rahul Telang
+  How digital distribution disrupts traditional media (applicable to sports).
+
+## Industry Resources
+
+• Sports Business Journal (subscription) – https://www.sportsbusinessjournal.com
+  Gold standard for sports media deal coverage
+
+• SportsPro Media (free articles) – https://www.sportspromedia.com
+  Global sports business news with strong media focus
+
+• Awful Announcing – https://awfulannouncing.com
+  Sports media criticism and industry analysis
+
+These are optional—not required for any assessment. But if you're interested in sports media
+as a career path or investment opportunity, they're excellent starting points.
+```
+
+**Design Rationale:**
+- **Details accordion** keeps optional content from overwhelming main flow (UDL progressive disclosure)
+- **Categorized sections** help students find resources relevant to their interests
+- **Canadian-specific section** supports Rogers case context and CFL Expansion Project research
+- **Books** provide deeper academic grounding for interested students
+- **Industry resources** connect students to ongoing professional learning
 
 ---
 

@@ -68,6 +68,8 @@ This case presents the Hockey Hall of Fame's strategic transformation challenge.
 
 **Don't analyze yet.** Module 6 will guide you through systematic analysis using MLOs 5.1-5.4. For now, just read and absorb the case facts.
 
+**Note on Financial Figures:** This case uses modeled financial projections for pedagogical purposes. Actual HHOF revenue is approximately $10-11 million annually (2023-2024); the case scenarios use an illustrative baseline of ~$18M to demonstrate strategic trade-offs at a larger scale. Focus on the *relative* growth percentages and trade-off dynamics rather than the absolute dollar figures.
+
 **Reading Time:** 25-30 minutes (case) + 5-10 minutes (exhibits)
 
 

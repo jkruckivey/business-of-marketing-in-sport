@@ -2,7 +2,7 @@
 **Version:** 1.4.0 | **Last Updated:** 2026-01-12
 
 ### Version 1.4.0 Changes
-- **NEW:** Added Element 11 - Core Readings on Sponsorship & ROI
+- **NEW:** Added Element 11 - Recommended Readings on Sponsorship & ROI
 - **UPDATED:** FanDuel positioned as example data source (not primary case)
 - **UPDATED:** Aligned structure with Week 1/2 module patterns
 
@@ -591,57 +591,48 @@ Choose activation channels that enable measurement. Digital-first activations (a
 
 ---
 
-## Element 11: Core Readings - Sponsorship & ROI
+## Element 11: Recommended Readings - Sponsorship & ROI `[v1.1.0]`
 
 **Type:** Details (Accordion)
 **Priority:** ◐ Recommended
 
-```
-Title: 📚 Core Readings: Sponsorship & ROI
+```markdown
+Title: Recommended Readings: Sponsorship & ROI
 
-[Expand for required and recommended readings]
+[Expand for recommended readings that deepen your understanding]
 
-## Required Reading
+### Recommended Readings (45-50 minutes total)
 
-These exercises:
+**1. PwC – "Sports Sponsorship Playbook" (The Evolution of Sponsorships / Data Innovation)**
+Why impressions aren't enough; how teams and brands use fan-level data, cloud, and IoT to prove ROI.
+🔗 [Read Article](https://www.pwc.com/us/en/industries/tmt/library/sports-sponsorships-playbook.html)
+*Read before using the ROI Calculator exercise*
 
-• **PwC – "Sports Sponsorship Playbook" (The Evolution of Sponsorships / Data Innovation)**
-  Why impressions aren't enough; how teams and brands use fan-level data, cloud, and IoT to prove ROI.
-  https://www.pwc.com/us/en/industries/tmt/library/sports-sponsorships-playbook.html
-  *Read before using the ROI Calculator exercise*
+**2. PwC – "Sports Industry Outlook 2025" (Sponsorship Sections)**
+Sponsorship growth forecasts, the rise of new categories (betting, fintech), and how sponsors think about return.
+🔗 [Read Article](https://www.pwc.com/us/en/industries/tmt/library/sports-outlook-north-america.html)
+*Focus on pages 12-18 covering sponsorship trends*
 
-• **PwC – "Sports Industry Outlook 2025" (Sponsorship Sections)**
-  Sponsorship growth forecasts, the rise of new categories (betting, fintech), and how sponsors think about return.
-  https://www.pwc.com/us/en/industries/tmt/library/sports-outlook-north-america.html
-  *Focus on pages 12-18 covering sponsorship trends*
+**3. PwC – "Artificial Intelligence — The MVP for Personalizing Sports"**
+How AI and analytics personalize fan experiences and make sponsorship more measurable.
+🔗 [Read Article](https://www.pwc.com/us/en/industries/tmt/library/ai-personalizing-sports.html)
+*Connects to the attribution modeling concepts in Element 10*
 
-## Recommended Reading
+**4. PwC – "Data Monetisation in Sports: Unlocking Opportunities"**
+Concrete examples of turning fan data into sponsorship and partnership value.
+🔗 [Read Article](https://www.pwc.com/gx/en/industries/tmt/media/outlook/data-monetisation-sports.html)
+*Supports the "attribution loop" theme throughout this module*
 
-Go deeper on data-driven sponsorship and personalization:
+### Reading Strategy
 
-• **PwC – "Artificial Intelligence — The MVP for Personalizing Sports"**
-  How AI and analytics personalize fan experiences and make sponsorship more measurable.
-  https://www.pwc.com/us/en/industries/tmt/library/ai-personalizing-sports.html
-  *Connects to the attribution modeling concepts in Element 10*
-
-• **PwC – "Data Monetisation in Sports: Unlocking Opportunities"**
-  Concrete examples of turning fan data into sponsorship and partnership value.
-  https://www.pwc.com/gx/en/industries/tmt/media/outlook/data-monetisation-sports.html
-  *Supports the "attribution loop" theme throughout this module*
-
-## Reading Strategy
-
-**Before exercises:** Read the Sponsorship Playbook to understand why ROI measurement is complex
-**After exercises:** Read AI/Data articles to see how the frameworks you practiced connect to emerging tech
-
-Total reading time: 25-30 minutes (required) + 20 minutes (recommended)
+**Before exercises:** Read the Sponsorship Playbook (#1) to understand why ROI measurement is complex
+**After exercises:** Read AI/Data articles (#3-4) to see how the frameworks you practiced connect to emerging tech
 ```
 
 **Design Rationale:**
-- Positions readings BEFORE widgets so students have conceptual framework
 - PwC sources are industry-standard, credible for MBA audience
 - Links directly to module concepts (ROI Calculator, attribution modeling)
-- Separates required vs. recommended to manage cognitive load
+- All readings optional—students choose based on interest and time
 
 ---
 

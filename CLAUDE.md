@@ -61,8 +61,8 @@ business-of-sports-marketing/
 - **Widgets**: ROI Calculator, Betting Market Simulator
 
 ### Week 4: Athletes, Brands & Emerging Sports
-- **Case**: Serena Williams: Building a Brand (HBS 517050)
-- **Executives**: Sports agent + Don Rea (PGA) + Niki da Silva + Matt Rubinoff
+- **Case**: Serena Williams: Brand Strategy Analysis (course-developed, using public sources)
+- **Executives**: Matt Rubinoff (Fairgrounds) + Niki da Silva & Tim McLaughlin (Golf Canada)
 - **Focus**: Athlete branding, women's sports, emerging markets
 - **Widgets**: Athlete Brand Calculator, Emerging Sport Investment Tool
 
@@ -91,6 +91,42 @@ business-of-sports-marketing/
 - **ALWAYS** prefer editing existing files over creating new ones
 - Maintain WCAG 2.2 AA compliance in all web content
 - Keep consistent styling and navigation patterns
+
+### Storyboard Versioning Convention
+Every storyboard file must track changes using semantic versioning:
+
+**Header Format (required at top of every storyboard):**
+```markdown
+# MODULE X: Title
+**Version:** X.Y.Z | **Last Updated:** YYYY-MM-DD
+
+### Version X.Y.Z Changes
+- **ADDED:** Element N - Description
+- **REMOVED:** Element N - Description
+- **MODIFIED:** Element N - Description
+- **RENUMBERED:** Elements shifted due to additions/removals
+```
+
+**Version Number Rules:**
+- **X (Major):** Structural overhaul, complete rewrite, or >50% content change
+- **Y (Minor):** Add/remove elements, significant content updates
+- **Z (Patch):** Typo fixes, minor wording changes, formatting
+
+**Element-Level Version Tags:**
+When modifying an element, add the version tag to the element header:
+```markdown
+## Element 5: Text Content - Title `[v1.3.0]`
+```
+
+**Change Log in Element Table:**
+Update the element table to reflect current state. When elements are renumbered, note it in version changes.
+
+**Example Workflow:**
+1. Read file to get current version (e.g., `1.2.0`)
+2. Determine change type → Minor (adding video) → increment to `1.3.0`
+3. Update header with new version, date, and change description
+4. Add `[v1.3.0]` tag to modified/added element headers
+5. Update element table if structure changed
 
 ### Git Workflow
 - Don't commit unless explicitly asked

@@ -1,0 +1,175 @@
+1
+00:00:02,000 --> 00:00:05,948
+Amazon paid $1 billion per year
+for NFL Thursday Night Football.
+
+2
+00:00:05,948 --> 00:00:09,822
+Rogers paid $5.2 billion over 12 years for NHL Canadian rights.
+
+3
+00:00:09,822 --> 00:00:13,478
+How do media companies decide what sports content is worth?
+
+4
+00:00:13,478 --> 00:00:15,890
+The Five-Factor Valuation Framework.
+
+5
+00:00:16,390 --> 00:00:19,022
+Factor 1: Audience Size and Demographics.
+
+6
+00:00:19,022 --> 00:00:22,531
+Larger, more valuable audiences command higher prices.
+
+7
+00:00:22,531 --> 00:00:30,573
+NFL regular season games average 17-19 million viewers with premium
+demographics—males 18-49, a demographic with a high income.
+
+8
+00:00:30,573 --> 00:00:35,179
+Advertisers pay $50 to $70 per thousand
+viewers—double non-sports rates.
+
+9
+00:00:35,679 --> 00:00:40,431
+Here's a critical point: Model viewership
+trends, not just current numbers.
+
+10
+00:00:40,631 --> 00:00:43,324
+Rogers assumed stable NHL ratings.
+
+11
+00:00:43,524 --> 00:00:47,691
+They experienced ratings declines of 12% or more in recent seasons.
+
+12
+00:00:47,691 --> 00:00:50,469
+That's hundreds of millions in lost revenue.
+
+13
+00:00:51,869 --> 00:00:54,354
+Factor 2: Exclusivity and Competition.
+
+14
+00:00:54,554 --> 00:00:57,248
+More bidders equals higher prices.
+
+15
+00:00:57,448 --> 00:01:00,737
+Exclusive rights cost 2-3x more than non-exclusive.
+
+16
+00:01:00,737 --> 00:01:06,220
+When Amazon, Apple, and traditional networks
+compete for NFL rights, prices skyrocket.
+
+17
+00:01:06,220 --> 00:01:13,391
+NFL deal increased significantly from 2011 to 2022, driven by
+competitive bidding among multiple platforms.
+
+18
+00:01:13,391 --> 00:01:16,090
+Factor 3: Content Volume and Scheduling.
+
+19
+00:01:16,090 --> 00:01:18,480
+Quality matters more than quantity.
+
+20
+00:01:18,480 --> 00:01:22,181
+One NFL primetime game is worth 10-15 mid-week NHL games.
+
+21
+00:01:22,181 --> 00:01:29,506
+Concentrated scheduling windows—NFL Sundays—create predictable
+audience habits and higher per-game value.
+
+22
+00:01:32,906 --> 00:01:34,933
+Factor 4: Brand Alignment and Sponsorship.
+
+23
+00:01:34,933 --> 00:01:37,672
+Sponsorship revenue can subsidize 20-35% of rights costs.
+
+24
+00:01:37,672 --> 00:01:43,972
+Strong brand alignment with sponsor categories (automotive, beer,
+financial services) creates premium sponsorship opportunities.
+
+25
+00:01:43,972 --> 00:01:47,588
+Without sponsorship integration, profitability
+becomes harder to achieve.
+
+26
+00:01:48,088 --> 00:01:49,622
+Factor 5: Platform Strategy Fit.
+
+27
+00:01:49,622 --> 00:01:53,511
+Sometimes you pay more than a property is "worth"
+because it serves strategic goals.
+
+28
+00:01:53,511 --> 00:01:56,634
+Amazon's $1 billion per year for NFL drives subscriber acquisition
+
+29
+00:01:56,634 --> 00:02:01,017
+and loyalty for Prime membership, with reported record Prime sign-ups
+during NFL broadcasts.
+
+30
+00:02:01,017 --> 00:02:03,865
+However, strategic value must be measurable and achievable.
+
+31
+00:02:04,365 --> 00:02:07,488
+Warning: Strategic value
+justifications must be grounded in data.
+
+32
+00:02:07,488 --> 00:02:10,610
+Rogers justified overpaying with "subscriber defense" logic—but
+
+33
+00:02:10,610 --> 00:02:14,281
+couldn't prove the relationship between NHL rights
+and subscriber retention.
+
+34
+00:02:14,281 --> 00:02:17,513
+When subscribers left anyway, the case collapsed.NFL deal increased
+
+35
+00:02:17,513 --> 00:02:21,731
+significantly from 2011 to 2022, driven by competitive bidding among
+multiple platforms.
+
+36
+00:02:22,231 --> 00:02:24,587
+The Five Factors: Audience Size and Demographics.
+
+37
+00:02:24,787 --> 00:02:26,711
+Exclusivity and Competition.
+
+38
+00:02:27,111 --> 00:02:29,091
+Content Volume and Scheduling.
+
+39
+00:02:29,491 --> 00:02:31,579
+Brand Alignment and Sponsorship.
+
+40
+00:02:31,779 --> 00:02:37,805
+Platform Strategy Fit.In the Streaming Wars simulation, you'll apply
+this framework to make your own billion-dollar decisions.
+

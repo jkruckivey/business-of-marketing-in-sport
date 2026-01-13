@@ -1,21 +1,25 @@
-# MODULE 0: Bridge In - The $500 Million Paradox (BOPPPS: Bridge + Pre-Assessment)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+# MODULE 0: Bridge-In - The $500 Million Paradox
+**Version:** 2.1.0 | **Last Updated:** 2026-01-13
 
-**Purpose:** Hook students with sponsorship ROI challenge, connect to Weeks 1-2 ecosystem thinking, enable diagnostic self-assessment
+### Version 2.1.0 Changes
+- **RESTORED:** Graphic novel with consistent introduction pattern
 
-**Uplimit Structure:** First module in Unit 3 (Week 3)
+### Version 2.0.0 Changes
+- **STANDARDIZED:** Module structure to match course-wide template
+- **REMOVED:** Transition text (redundant with Module 1 intro)
 
-**LEGEND - Storyboard Notation:**
-- **⬤ Required** / **◐ Recommended** / **○ Optional** = Priority badges (storyboard notation only, not Uplimit elements)
-- Element icons (▶ Video, ⓘ Infobox, ▬ Text, etc.) = Map to Uplimit's actual element types in the builder
+**Purpose:** Hook students with sponsorship ROI challenge, enable diagnostic self-assessment
+
+**Uplimit Structure:** First module in Unit 3
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▶ Video** ⬛ Required | Business problem scenario (3 min) | Upload `week3-bridge-scenario.mp4` + VTT | Nike's $500M+ sponsorship paradox |
-| 2 | **◈ AI Roleplay** ◐ Recommended | Sponsorship ROI diagnostic | Configure in Uplimit | Reveal knowledge gaps about ROI calculation |
-| 3 | **ⓘ Infobox** ⬤ Required | The sponsorship problem statement | Type directly | Use **Callout** variant, strategic challenge |
-| 4 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Sponsorship ROI Challenge + Quiz** | Embed `sponsorship-roi-pre-assessment.html` | Combined challenge text and quiz in single widget |
-| 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
+| 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload `week3-bridge-scenario.mp4` + VTT | Nike's $500M+ sponsorship paradox |
+| 2 | **◈ AI Roleplay** ◐ Recommended | Sponsorship ROI diagnostic | Configure in Uplimit | Reveal knowledge gaps |
+| 3 | **ⓘ Infobox (Callout)** ⬤ Required | The sponsorship problem statement | Type directly | Blue variant |
+| 4 | **⚙ iFrame Widget** ⬤ Required | Pre-Assessment Quiz | Embed `sponsorship-roi-pre-assessment.html` | 12-question diagnostic |
+| 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Personalized guidance |
+| 6 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "The New Revenue Frontier" | Embed PDF or images | Sports betting transformation story |
 
 ---
 
@@ -437,93 +441,38 @@ Remember: This quiz isn't graded, it's a diagnostic tool to help you learn effic
 
 ## Element 6: Graphic Novel - "The New Revenue Frontier"
 
-**Purpose:** Visual narrative that introduces the week's key concepts through storytelling.
+**Uplimit Implementation:**
+1. Select **Text** element for intro
+2. Select **iFrame** or **Image** element for graphic novel
+
+**Introduction Text:**
+```markdown
+### Visual Story: Explore This Week's Concepts
+
+Before diving into the core content, explore this week's concepts through visual storytelling. This graphic novel brings the sponsorship and betting transformation to life.
+```
 
 **Graphic Novel:** "The New Revenue Frontier: Inside Sports Betting's Transformation"
 
 **Location:** `modules/shared-resources/graphic-novels/03-new-frontier-week3.md`
 
-**Implementation:** Generated using NotebookLM from the script. Upload resulting PDF or embed images in Uplimit.
-
 **Story Synopsis:**
-May 14, 2018: The Supreme Court strikes down PASPA. Inside sports league headquarters across America, partnership teams face an unprecedented question: How do you build a revenue category that didn't exist yesterday?
-
-Follow the parallel journeys of three partnership executives—at a major league, a sports network, and a casino operator—as they navigate the first 100 days after legalization. Each faces the same challenge: convince skeptical leadership that betting partnerships are worth the brand risk, then build activation frameworks that prove ROI.
-
-**Key Story Beats:**
-- **Day 1:** PASPA falls. Partnership teams scramble to understand the opportunity.
-- **Day 30:** First deals signed. How do you price something with no precedent?
-- **Day 60:** Activation begins. Stadium integration, broadcast overlays, mobile apps.
-- **Day 100:** First results. The data shows bettors watch 40% more games. The thesis is validated.
+May 14, 2018: The Supreme Court strikes down PASPA. Follow three partnership executives—at a major league, a sports network, and a casino operator—as they navigate the first 100 days after legalization. Each faces the same challenge: convince skeptical leadership that betting partnerships are worth the brand risk, then build activation frameworks that prove ROI.
 
 **Learning Connection:**
 This narrative introduces the five sponsorship activations that define modern betting partnerships: Stadium Integration, Broadcast Partnership, Mobile Engagement, Data Licensing, and Responsible Gaming—the core concepts students will analyze this week.
 
-**Accessibility:**
-- Full text script available in `03-new-frontier-week3.md`
-- Alt text for each panel included in script
-- Clean, modern infographic style with data visualizations
-
 ---
 
-## Element 7: Transition Text - From Story to Strategy
+## Instructor Notes
 
-**Text Content:**
+**Module 0 Purpose:**
+- Create cognitive dissonance (the $500M question challenges assumptions)
+- Reveal knowledge gaps through AI roleplay and pre-assessment
+- Build motivation to learn Week 3 content
+- Graphic novel provides visual entry point for diverse learners
 
-```markdown
-### From Story to Strategy
-
-The 2018 PASPA ruling created the fastest-growing sponsorship category in sports history. Within five years, betting operators became top-10 sports sponsors—not because they had bigger budgets, but because they solved the attribution problem that plagues traditional sponsors.
-
-When FanDuel sponsors an NFL broadcast, they know exactly who downloaded the app, placed a bet, and became a customer. That closed-loop attribution is impossible with jersey sponsors or stadium naming rights.
-
-**What You'll Master:**
-- How brands measure sponsorship ROI with imperfect attribution
-- Why sports betting offers perfect conversion tracking
-- The five activation channels that drive sponsor value
-- How to design activation plans with ROI projections that CFOs approve
-
-Now let's build the frameworks you need to calculate and justify sponsorship investments.
-```
-
----
-
-## Module Summary
-
-**What You've Accomplished:**
-You've been hooked by a real sponsorship challenge—Nike's $500M+ annual spend that's hard to definitively justify to skeptical CFOs—and you've taken your first steps toward solving it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your ROI calculation knowledge stands. That clarity isn't a weakness—it's your competitive advantage for this week.
-
-**Key Insight:**
-The fact that you struggled with ROI calculation in the diagnostic is expected. Sponsorship measurement is MORE COMPLEX than digital advertising because attribution is distributed across time (see jersey sponsor in June, buy shoes in September) and multiple touchpoints (TV exposure + social media + retail activation). Even sophisticated brands like Nike struggle with this. Week 3 teaches you the frameworks that quantify value despite imperfect data—and shows why sports betting has become the fastest-growing category (closed-loop attribution solves the measurement problem).
-
-**Up Next: Module 1 - Learning Outcomes**
-Now that you've seen the problem and identified your knowledge gaps, Module 1 will show you exactly what you're going to learn this week—and how Week 3's frameworks build on Weeks 1-2. You'll see the four key challenges you'll be able to solve by Friday, transforming you from someone who sees sponsorship as "logos on jerseys" into someone who can build activation plans with ROI projections that CFOs actually approve.
-
-Ready to turn those knowledge gaps into financial modeling capabilities? Let's define your learning path.
-
----
-
-## MODULE 0 Complete - Summary
-
-### Elements Created:
-1. ✅ Bridge Video (3 min scenario + script)
-2. ✅ AI Roleplay Scenario (diagnostic conversation with real Uplimit configuration fields)
-3. ✅ Infobox - Problem Statement (Callout variant)
-4. ✅ Pre-Assessment Widget (Challenge preview + 12-question quiz)
-5. ✅ Infobox - Results Interpretation (Insight variant)
-6. ✅ Final Project Connection (links to Week 5 capstone)
-7. ✅ Module Summary (transition to Module 1)
-
-**Total Estimated Time:** 15-20 minutes
-- Video: 3 min
-- AI Roleplay: 5-7 min
-- Pre-Assessment Quiz: 5-7 min
-- Reading/transitions: 2-3 min
-
-**Alignment:**
-- Prepares students for WLO 3.3 (calculate sponsorship ROI)
-- Prepares students for WLO 3.4 (design activations with ROI projections)
-- Creates urgency and motivation for Week 3 learning
-- Reveals knowledge gaps so students know where to focus
-
-**Next Module:** Module 1 (Learning Outcomes & Week Overview)
+**Graphic Novel Notes:**
+- "The New Revenue Frontier" visualizes sponsorship and betting economics
+- Connects to LIV Golf case analysis and sponsorship frameworks
+- Optional but recommended for visual/narrative learners

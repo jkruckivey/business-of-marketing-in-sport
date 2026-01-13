@@ -1,25 +1,27 @@
-# Quick Start: The $100M Question
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+# MODULE 0: Bridge-In - The $100M Question
+**Version:** 2.1.0 | **Last Updated:** 2026-01-13
 
-**Purpose:** Hook students with a compelling business problem, reframe outcomes as challenges, enable self-assessment
+### Version 2.1.0 Changes
+- **RESTORED:** Graphic novels with consistent introduction pattern
+- **STANDARDIZED:** Module structure (7 elements for Week 1, 6 for other weeks)
+
+### Version 2.0.0 Changes
+- **STANDARDIZED:** Module structure to match course-wide template
+- **REMOVED:** Transition text (redundant with Module 1 intro)
+
+**Purpose:** Hook students with compelling business problem, enable diagnostic self-assessment
 
 **Uplimit Structure:** First module in Unit 1
 
-**LEGEND - Storyboard Notation:**
-- **⬤ Required** / **◐ Recommended** / **○ Optional** = Priority badges (storyboard notation only, not Uplimit elements)
-- Element icons (▶ Video, ⓘ Infobox, ▬ Text, etc.) = Map to Uplimit's actual element types in the builder
-
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▶ Video** ⬛ Required | Business problem scenario (3 min) | Upload `week1-bridge-scenario.mp4` + VTT | Real executive facing revenue dilemma |
-| 2 | **📖 Graphic Novel** ⬤ Required | "Expansion Day" - CFL anchor project intro | Link to `shared-resources/graphic-novels/00-expansion-day-course-intro.md` | Introduces 5 streams + semester project |
-| 3 | **◈ AI Roleplay** ◐ Recommended | The $100M Question diagnostic | Configure in Uplimit | Reveal knowledge gaps before learning begins |
-| 4 | **ⓘ Infobox** ⬤ Required | The revenue problem statement | Type directly | Use **Callout** variant, urgent business challenge |
-| 5 | **⚙ iFrame Widget** ⬤ Required | **Pre-Assessment: Revenue Strategy Challenge + Quiz** | Embed `revenue-strategy-pre-assessment.html` | Combined challenge text and quiz in single widget |
-| 6 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
-| 7 | **📖 Graphic Novel** ⬤ Required | "Five Streams" - Nashville Predators revenue story | Link to `shared-resources/graphic-novels/01-five-streams-week1.md` | Visual narrative of 5 revenue streams |
-| 8 | **▬ Text** ⬤ Required | Transition to Week 1 learning journey | Type directly | Connect graphic novel to upcoming modules |
-
+| 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload `week1-bridge-scenario.mp4` + VTT | Connor McDavid revenue paradox |
+| 2 | **◈ AI Roleplay** ◐ Recommended | The $100M Question diagnostic | Configure in Uplimit | Reveal knowledge gaps |
+| 3 | **ⓘ Infobox (Callout)** ⬤ Required | The revenue problem statement | Type directly | Blue variant |
+| 4 | **⚙ iFrame Widget** ⬤ Required | Pre-Assessment Quiz | Embed `revenue-strategy-pre-assessment.html` | 10-question diagnostic |
+| 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Personalized guidance |
+| 6 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "Expansion Day" | Embed PDF or images | CFL anchor project intro |
+| 7 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "Five Streams" | Embed PDF or images | Nashville Predators story |
 
 ---
 
@@ -29,14 +31,11 @@
 **Duration:** 2-3 minutes
 **VTT File:** `week1-bridge-scenario.vtt` (required for accessibility)
 **Format:** Direct-to-camera SME presentation
-**Script:** SME introduces the Connor McDavid revenue paradox
 
-### Video Script: "The $100 Million Question" (SME Direct-to-Camera)
-
-**Recording Setup:** SME on camera, professional background, teleprompter optional
+### Video Script: "The $100 Million Question"
 
 ```
-[0:00-0:20] INTRODUCTION & CREDIBILITY
+[0:00-0:20] INTRODUCTION
 
 SME: "Hi, I'm [NAME], and I've spent [X] years working in professional sport—
 most recently as [ROLE] at [ORGANIZATION]. I've been on both sides of the table
@@ -52,14 +51,10 @@ And I want to start this course with a problem that's kept me up at night."
 SME: "Imagine you're the GM of an NHL team. You just signed Connor McDavid—
 the best player in hockey—to a $100 million, 8-year contract.
 
-[VISUAL CUE: Show slide with contract breakdown]
-
 That's $12.5 million per year. Your CFO tracks the immediate impacts:
 • Ticket sales jump $5 million
 • Jersey sales spike $3 million
 • That's $8 million in new revenue
-
-[Pause, lean forward]
 
 Your board looks at these numbers and asks the obvious question:
 'Why did we just LOSE $4.5 million per year on this deal?'
@@ -80,230 +75,181 @@ He's worth $30 to $40 million per year.
 The problem isn't the numbers. The problem is understanding how sport revenue
 works DIFFERENTLY than almost any other business.
 
-There's a revenue ecosystem at play here—interdependencies that your CFO's
-spreadsheet will never capture. Media deals that hinge on star power.
-Sponsorships that activate around marquee players. Betting handles that spike
-when the best player in the world takes the ice.
 
-
-[1:50-2:30] LEARNING CHALLENGE & CALL-TO-ACTION
+[1:50-2:30] CALL-TO-ACTION
 
 SME: "This week, you're going to learn how to see that ecosystem. You'll map
 five major revenue streams in professional sport. You'll understand why they're
 interdependent. And by the end, you'll be able to defend that $100 million
 contract to a skeptical board—with numbers they can't argue with.
 
-[Pause]
-
 But first, I want to know: Do you ALREADY have the knowledge to solve this
-problem? Can you explain where that missing $22-32 million comes from?
-
-Right now, before you learn anything this week, test yourself. Take the
-diagnostic exercise that follows this video. Be honest. Reveal your knowledge
-gaps NOW—so we can fill them together.
-
-[ON-SCREEN TEXT: "Next: Diagnostic Exercise + Pre-Assessment"]
+problem? Take the diagnostic exercise that follows this video.
 
 Let's find out what you already know... and what you're about to discover."
 
 [END: 2:30]
 ```
 
-**Visual Assets Needed:**
-- Slide 1: Connor McDavid contract breakdown ($100M / 8 years = $12.5M/year)
-  - **Alt text:** "Table showing Connor McDavid contract breakdown: $100 million over 8 years equals $12.5 million per year"
-- Slide 2: Immediate revenue calculation ($5M tickets + $3M merch = $8M)
-  - **Alt text:** "Revenue calculation showing ticket sales increase of $5 million plus merchandise sales of $3 million equals $8 million total direct revenue"
-- Slide 3: The paradox equation ($12.5M cost - $8M revenue = -$4.5M loss?)
-  - **Alt text:** "Equation showing apparent loss: $12.5 million cost minus $8 million revenue equals negative $4.5 million per year"
-- Slide 4: Actual value reveal ($30-40M/year ecosystem value)
-  - **Alt text:** "Text reveal showing actual ecosystem value of $30 to $40 million per year"
-- Slide 5: Call-to-action ("Next: Diagnostic Exercise")
-  - **Alt text:** "Call to action text: Next - Diagnostic Exercise plus Pre-Assessment"
-
-**On-Screen Text Graphics:**
-- "The $100 Million Question" (title card, 0:00)
-- "$12.5M cost - $8M revenue = -$4.5M loss?" (0:50)
-- "Actual Value: $30-40M/year" (1:20)
-- "Next: Diagnostic Exercise + Pre-Assessment" (2:20)
-
-**Teleprompter Notes for SME:**
-- Pause after "$4.5 million loss" question (let it land)
-- Lean forward/gesture when revealing ecosystem concept (1:10)
-- Warm, challenging tone for final call-to-action (don't tell them the answer yet)
-- Optional: Personalize opening with YOUR actual role/experience
-
-**Uplimit Implementation:**
-1. In Uplimit module builder, select **Video** element
-2. Upload `week1-bridge-scenario.mp4`
-3. Upload VTT caption file `week1-bridge-scenario.vtt`
-4. Title: "The $100 Million Question"
-5. Enable transcript download
-
 ---
 
-## Element 2: Graphic Novel - "Expansion Day"
-
-**Purpose:** Introduce the CFL expansion anchor project and the 5 revenue streams framework through visual storytelling. This bridges from the $100M Question to the bigger picture of what students will work on all semester.
-
-**Graphic Novel:** "Expansion Day: A CFL Story"
-
-**Location:** `modules/shared-resources/graphic-novels/00-expansion-day-course-intro.md`
-
-**Implementation:** Generated using NotebookLM from the script. Upload resulting PDF or embed images in Uplimit.
-
-**Transition Text (before graphic novel):**
-```markdown
-Before you try to solve the $100M question, let's zoom out. This course centers on a real challenge: the CFL is expanding to Halifax. Your semester project will be building the business case for this new franchise.
-
-The following graphic novel shows what Expansion Day looks like—and introduces the five revenue streams you'll master this course.
-```
-
-**Story Synopsis:**
-Maya Chen, a sports business analyst, witnesses the historic announcement of Halifax joining the CFL. As she observes the celebration, she maps the five revenue streams that will determine the franchise's success: Media Rights, Ticketing, Sponsorship, Merchandising, and Betting. The story connects students to the anchor project they'll work on throughout the course.
-
-**Learning Connection:**
-- Introduces the CFL expansion anchor project (Weeks 2-5 milestones)
-- Visually presents the 5 revenue streams framework
-- Creates emotional investment in the semester-long challenge
-
-**Accessibility:**
-- Full text script available in `00-expansion-day-course-intro.md`
-- Alt text for each panel included in script
-- High contrast visual style (Retro Sports Illustrated aesthetic)
-
----
-
-## Element 3: AI Roleplay Scenario - The $100M Question
+## Element 2: AI Roleplay Scenario - The $100M Question
 
 **Scenario Title:** "The $100 Million Question: Can You Solve It Now?"
 
-**Purpose:** Diagnostic activity that reveals knowledge gaps and creates cognitive dissonance before content delivery. Students attempt to answer the executive's question from the video using their current understanding—most will struggle, which creates the "need to know" motivation for Week 1 content.
+**Purpose:** Diagnostic activity that reveals knowledge gaps about sports revenue ecosystems before content delivery. Students attempt to explain the Connor McDavid contract paradox using current understanding—most will struggle, creating motivation for Week 1 content.
 
-**When to Use:** After the Expansion Day graphic novel (Element 2) while the narrative momentum is high.
+**When to Use:** Immediately after the bridge video (Element 1)
 
-**Assessment Type:** Diagnostic/Formative (not graded). Students are expected to struggle. The goal is to reveal what they DON'T know yet, making them hungry for the content that follows.
+**Assessment Type:** Diagnostic/Formative (not graded)
 
 ---
 
 ### Uplimit AI Roleplay Configuration
 
-**Step 1: Select "AI Roleplay Scenario" element in Uplimit builder**
+**Tab 1: Learning Objective**
 
-**Step 2: Set Learning Objective**
+**Widget Name:** The $100 Million Question
 
-Choose: **"Add objective myself"** (to test specific skills and ensure learning goals are achieved)
-
-Copy this into the **Objective** field:
-
+**Learning Objective:**
 ```
-Students will demonstrate their current understanding of sports revenue ecosystems by attempting to explain a complex business problem (Connor McDavid's $100M contract apparent loss) using their pre-existing knowledge. This diagnostic activity will reveal gaps in three key areas:
+Students will demonstrate their current understanding of sports revenue ecosystems by attempting to explain the Connor McDavid contract paradox ($12.5M cost vs. $8M direct revenue). This diagnostic activity will reveal gaps in three key areas:
 
-1. Revenue streams knowledge (can they identify all 5 major sources?)
-2. Ecosystem thinking (do they understand interdependence vs. independence?)
-3. Amplification effects (can they articulate indirect revenue impacts?)
+1. Revenue streams knowledge (can they identify all 5 major revenue sources beyond tickets/jerseys?)
+2. Ecosystem thinking (do they understand how revenue streams are interdependent?)
+3. Amplification effects (can they explain how star players create value across multiple streams?)
 
 Success = Student finishes knowing exactly what they DON'T know yet, with motivation to learn Week 1 content.
 ```
 
----
-
-**Step 3: Create Scenario**
-
-Choose: **"Create your own scenario"**
-
-Copy this into the **Scenario Context** field:
-
-```
-You are a junior analyst at an NHL franchise. You just watched your executive present a business problem to the board: The team signed Connor McDavid to a $12.5 million per year contract. Direct revenue increases (tickets $5M + jerseys $3M = $8M) fall short of the cost by $4.5 million annually. The board is questioning the investment.
-
-Your executive has turned to you after the presentation and asked: "Can you explain to the board why this deal makes financial sense despite the apparent loss?"
-
-You know you're new to sports business, so the executive is patient—but they need a clear, business-focused explanation.
-
-Your goal: Attempt to answer using your current knowledge. It's okay to struggle! This is diagnostic—you're discovering what you need to learn this week.
-
-Conversation length: 3-4 exchanges with the AI executive
-```
-
-Copy this into the **AI Role** field:
-
-```
-You are a senior executive at an NHL franchise. The team recently signed Connor McDavid to a $12.5 million per year contract. Direct revenue increases (tickets $5M + jerseys $3M = $8M) fall short of the cost by $4.5 million annually. The board is questioning the investment, and you've asked a junior analyst to explain why this deal makes financial sense.
-
-Your personality:
-- Patient but probing: You know they're new, so you don't expect perfection—but you do want to understand their thinking
-- Business-focused: You care about clear explanations backed by reasoning, not jargon
-- Socratic: When they struggle, you ask questions that help them discover gaps rather than lecturing
-- Realistic: You acknowledge that sports economics is complex and counterintuitive
-
-Your conversation strategy:
-
-Wait for the student to start the conversation. They've been asked to explain why the Connor McDavid contract makes financial sense. Listen to their opening explanation, then respond with probing questions based on what they say:
-
-1. If they mention only direct revenue (tickets/jerseys), ask: "What other ways do you think Connor McDavid might generate revenue for us?"
-
-2. If they struggle to identify streams, ask: "Think about how fans engage with the team. Beyond coming to games and buying jerseys, how else do we make money?"
-
-3. If they list streams but treat them as separate, ask: "Interesting. Do you think those revenue sources are independent of each other, or could they be connected somehow?"
-
-4. Closing (after 3-4 exchanges): Acknowledge their effort and gaps: "You've identified some pieces, but I can tell you're missing the full picture—and that's completely normal before learning the revenue ecosystem framework. This week's content will give you the tools to answer this question confidently."
-
-Exit gracefully after 3-4 exchanges even if they're still struggling—the goal is diagnosis, not mastery.
-```
-
-Copy this into the **Student Role** field:
-
-```
-You are a junior analyst at an NHL franchise who must explain to the executive why the Connor McDavid contract creates value beyond the apparent $4.5M annual loss. Start the conversation by sharing your current thinking. This is diagnostic—struggle is expected and valuable.
-```
-
-**Note:** Keep this field minimal since it displays to students without formatting. The detailed instructions will appear in the "Student Instructions" section (Step 5) with proper markdown formatting.
+**Scenario Setup:** Diagnostic (pre-learning assessment)
 
 ---
 
-**Step 4: Hidden Context (AI-only information)**
+**Tab 2: Scenario**
 
-Copy this into the **Hidden Context** field:
+**Context:**
+```
+A junior analyst at an NHL franchise has been asked by their executive to explain the Connor McDavid contract dilemma to the board. The board sees $12.5M/year in salary cost but only $8M in direct revenue (tickets + jerseys), creating an apparent $4.5M annual loss. The learner will attempt to explain why the deal makes financial sense, revealing their current understanding of sports revenue streams, ecosystem interdependencies, and star player value amplification. This diagnostic conversation helps identify knowledge gaps before Week 1 content delivery.
+```
+
+**Role of AI (Executive):**
+```
+A senior NHL executive who asks probing questions to help the junior analyst discover gaps in their understanding of sports revenue valuation.
+```
+
+**Role of Student:**
+```
+The learner plays the role of a junior analyst attempting to explain the Connor McDavid contract's financial logic to their executive using pre-existing knowledge.
+```
+
+---
+
+**Tab 3: Hidden Context**
 
 ```
 **AI Character Context:**
-You are a senior NHL executive conducting a diagnostic conversation. The student is encountering sports revenue economics for the first time. Most will struggle—this is intentional and pedagogically valuable.
+You are a senior NHL executive conducting a diagnostic conversation. The student is encountering sports revenue ecosystems for the first time. Most will struggle—this is intentional and pedagogically valuable.
 
 **What Students Typically Miss (use to guide probing):**
-- Media rights amplification (star players increase broadcast value by $20-30M annually)
-- Sponsorship activation (brands pay premium to associate with elite talent)
-- Betting handle increases (McDavid games drive 15-20% higher betting volume)
-- Merchandise ecosystem effects (jerseys are just 10% of total merch impact)
-- Long-term competitive effects (stars attract free agents, sustain playoff revenue)
+- Media rights amplification (star players drive TV ratings, which drives media revenue)
+- Sponsorship value (brands pay premium to associate with star players)
+- Merchandise beyond jerseys (memorabilia, licensed products, digital content)
+- Betting and fantasy engagement (star players drive betting volume)
+- Secondary ticket market effects (playoff runs, premium games)
+- League revenue sharing (how individual team success affects league-wide revenue)
+
+**AI Personality Traits:**
+- Patient but probing: You know they're learning, so you don't expect perfection—but you want to understand their thinking
+- Business-focused: You care about clear explanations backed by strategic reasoning, not jargon
+- Socratic: When they struggle, you ask questions that help them discover gaps rather than lecturing
+- Realistic: You acknowledge that sports revenue is complex with interdependent streams
+
+**Conversation Strategy:**
+
+Wait for the student to start the conversation. They've been asked to explain why the McDavid contract makes financial sense. Listen to their opening explanation, then respond with probing questions based on what they say:
+
+1. If they mention only tickets/jerseys, ask: "What other revenue streams does an NHL team have beyond gate receipts and merchandise?"
+
+2. If they list streams but treat them as independent, ask: "Do you think these revenue streams operate independently, or are they connected somehow?"
+
+3. If they don't mention ecosystem effects, ask: "When McDavid scores a highlight-reel goal, who benefits besides the Oilers? Think about the league level."
+
+4. Closing (after 3-4 exchanges): Acknowledge their effort and gaps: "You've identified some pieces, but I can tell you're missing how these revenue streams amplify each other—that's the key to understanding why star players are worth more than the direct revenue suggests. This week's content will give you the framework to answer this question confidently."
+
+Exit gracefully after 3-4 exchanges even if they're still struggling—the goal is diagnosis, not mastery.
 
 **Conversation Objectives (3-4 exchanges):**
 1. **Opening:** Let student explain their initial thinking without interruption
-2. **Probe #1:** If they mention only direct revenue, ask what other revenue streams exist
-3. **Probe #2:** If they list streams independently, ask about interconnections
-4. **Closing:** Acknowledge effort, name specific gaps (e.g., "You identified ticketing but missed how media rights amplify star value"), and encourage them that Week 1 will fill these gaps
+2. **Probe #1:** If they focus only on tickets/jerseys, ask about other revenue streams
+3. **Probe #2:** If they don't see interdependencies, ask about ecosystem effects
+4. **Closing:** Acknowledge effort, name specific gaps (e.g., "You identified merchandise but missed media rights amplification"), and encourage them that Week 1 will fill these gaps
 
 **Success Indicators:**
 - ✅ Student attempts answer (even if incomplete)
 - ✅ Student recognizes their knowledge gaps
 - ✅ Student feels motivated to learn, not defeated
 
-**After 3-4 exchanges:** Provide rubric-aligned feedback using the 3 criteria defined in the rubric.
+**After 3-4 exchanges:** Provide rubric-aligned feedback using the 3 criteria defined in the Criteria tab.
 ```
 
 ---
 
-**Step 5: Configure Feedback Rubric**
+**Tab 4: Criteria**
 
-Uplimit will auto-generate a rubric based on your scenario. Click **"Auto-regenerate"** if needed, then customize:
+**CRITERION 1: Revenue Streams Knowledge**
 
-**Add/Edit these criteria:**
+**Points:** 10
 
-| Criterion | Description |
-|-----------|-------------|
-| **Revenue Streams Knowledge** | Can the student identify multiple revenue sources beyond tickets and jerseys? (Looking for: media rights, sponsorship, merchandising, betting/gaming) |
-| **Ecosystem Thinking** | Does the student recognize that revenue streams are interdependent rather than independent? (Looking for: causal connections between streams, not just lists) |
-| **Amplification Effects** | Can the student articulate how a star player amplifies multiple revenue streams simultaneously? (Looking for: indirect effects, not just direct ticket/jersey sales) |
+**Description:**
+The learner identifies multiple sports revenue sources beyond tickets and jerseys.
+
+**Does not meet expectations:**
+The learner mentions only tickets and jerseys or provides minimal identification of revenue streams without demonstrating understanding of the five major sources (media rights, sponsorship, merchandise, betting/gaming, premium experiences).
+
+**Partially meets expectations:**
+The learner identifies 2-3 revenue streams beyond tickets/jerseys but may miss key streams (media rights, betting) or provide limited explanation of how they contribute to team revenue.
+
+**Fully meets expectations:**
+The learner identifies 4-5 revenue streams beyond tickets/jerseys (media rights, sponsorship, merchandise, betting/gaming, premium experiences) and demonstrates understanding that these represent diverse revenue sources for professional sports teams.
+
+---
+
+**CRITERION 2: Ecosystem Thinking**
+
+**Points:** 10
+
+**Description:**
+The learner recognizes that revenue streams are interdependent rather than independent.
+
+**Does not meet expectations:**
+The learner treats each revenue stream as independent, failing to recognize connections between streams (e.g., how TV ratings affect sponsorship value, how star players affect multiple streams simultaneously).
+
+**Partially meets expectations:**
+The learner demonstrates basic awareness that streams are connected but provides limited explanation of specific interdependencies or misses the cascading/amplification effects.
+
+**Fully meets expectations:**
+The learner clearly articulates how revenue streams are interdependent—explaining how star players drive TV ratings (media), attract sponsors (sponsorship), sell merchandise (retail), increase betting engagement (gaming), and create playoff demand (premium tickets), with effects cascading across the ecosystem.
+
+---
+
+**CRITERION 3: Amplification Effects**
+
+**Points:** 10
+
+**Description:**
+The learner explains how star players create value that exceeds direct, measurable revenue.
+
+**Does not meet expectations:**
+The learner focuses only on direct, measurable revenue (ticket sales, jersey sales) without recognizing amplification effects across the ecosystem.
+
+**Partially meets expectations:**
+The learner mentions that star players have value beyond direct revenue but provides limited explanation of the amplification mechanism or specific examples.
+
+**Fully meets expectations:**
+The learner clearly explains that star players like McDavid create amplification effects—driving $30-40M in total value through media ratings, national broadcast premium, sponsorship uplift, merchandise across the league, and playoff revenue potential—far exceeding the $8M in direct ticket/jersey revenue.
+
+---
 
 **Feedback Approach:** Diagnostic only (not graded)
 
@@ -311,114 +257,37 @@ Check the box: **"Provide feedback but do not grade"**
 
 ---
 
-**Step 6: Student Instructions**
-
-Copy this into the **Instructions for Students** field:
+### Student-Facing Instructions (Place as Text element BEFORE AI Roleplay)
 
 ```markdown
 ### Your Role
-You are a **junior analyst** who just watched your executive present the Connor McDavid contract dilemma. The executive has turned to you and asked: "Can you explain this to the board?"
+You are a **junior analyst** at an NHL franchise. Your executive has just presented the Connor McDavid contract dilemma to the board: $12.5M/year cost, but only $8M in direct revenue. The board is questioning why you'd "lose" $4.5M per year.
 
 ### Getting Started
-**You need to start the conversation.** When the chat opens, begin by explaining why you think the Connor McDavid contract might make financial sense despite the apparent $4.5M annual loss. The executive is waiting for your opening explanation.
-
-### The Scenario
-The executive from the video is waiting for your answer. They know you're new to sports business, so they're patient—but they need a clear explanation of why the $12.5M cost minus $8M in direct revenue doesn't tell the whole story.
-
-### What to Have Ready
-- **Your current understanding** of how sports revenue works (it's okay if this is limited!)
-- **Your best attempt** at explaining why the McDavid contract might create value beyond ticket and jersey sales
-- **Curiosity** about what you DON'T know yet
+**You need to start the conversation.** Begin by explaining to your executive why you think this deal actually makes financial sense despite the apparent loss.
 
 ### Your Goal
-⚠️ **This is diagnostic—you're not expected to ace this!** Most students struggle before learning the Week 1 content. The goal is to:
-
-1. Start the conversation with your best attempt at explaining the contract's value
-2. Respond to the executive's probing questions using your current knowledge
-3. Discover gaps in your understanding (this is GOOD—it shows you what to focus on)
-4. Get motivated to learn the revenue ecosystem concepts that would help you answer confidently
+⚠️ **This is diagnostic—you're not expected to ace this!** Most students struggle before learning Week 1 content. The goal is to discover gaps in your understanding so you know what to focus on this week.
 
 ### Conversation Length
-- **3-4 exchanges** with the executive
-- The AI will probe your understanding with 2-3 follow-up questions after your opening explanation
-- If you get stuck, that's the point! Notice where you struggle—those are your learning priorities.
-
-### What Happens Next
-After this exercise, you'll take a pre-assessment quiz that helps you identify exactly what you need to learn. By the end of Week 1, you'll return to this question and answer it confidently using the revenue ecosystem framework.
+3-4 exchanges with your executive. If you get stuck, that's the point—those are your learning priorities.
 ```
 
 ---
 
-**Step 7: Title and Save**
+## Element 3: Infobox - The Revenue Problem
 
-**Title:** "The $100 Million Question: Can You Solve It Now?"
+```
+Title: ◉ The Revenue Problem Professional Sport Faces
 
-Click **"Save"** to create the AI Roleplay Scenario.
+Professional sports teams operate with a business model that defies conventional logic: competitors must collaborate financially, revenue sources are deeply interdependent, and investments in one area create unpredictable ripple effects across the ecosystem. This week you'll explore why teams "overpay" for star players, how leagues balance entrepreneurial success with competitive fairness, and which revenue streams are growing versus hitting capacity limits. By the end, you'll solve these problems using real NHL data—but first, let's see what you already know.
+```
 
 ---
 
-**Step 8: Post-Creation Configuration**
+## Element 4: Pre-Assessment Widget
 
-After saving, Uplimit will show additional configuration fields:
-
-**Exercise Title (Optional):**
-```
-The $100M Question
-```
-
-**Exercise Instructions (Optional):**
-```
-Add any (optional) instructions for your exercise here...
-```
-Leave this blank - the "Ready to begin your roleplay?" section below will contain all student instructions.
-
-**"Ready to begin your roleplay?" Section:**
-
-This is the student-facing scenario text that appears when they launch the roleplay. Copy the markdown from Step 6 (Student Instructions) into this section - it will display in the roleplay interface as shown.
-
----
-
-### What Students Will Experience
-
-1. **Student starts the conversation** by explaining why they think the Connor McDavid contract makes financial sense
-2. **AI Executive listens** and responds with probing questions based on what the student said
-3. **Student responds** to 2-3 follow-up questions that reveal knowledge gaps
-4. **AI closes** by acknowledging effort and naming specific gaps discovered
-5. **Feedback generated** based on rubric (diagnostic, not graded)
-6. **Student receives** personalized feedback highlighting:
-   - What they demonstrated (strengths)
-   - Primary gaps to address (specific criterion name)
-   - Week 1 focus areas (which modules will help most)
-
----
-
-## Element 4: Infobox - The Revenue Problem
-
-**Uplimit Implementation:**
-1. Select **Infobox** element in module builder
-2. Choose variant: **Callout** (use Uplimit's actual variant name - typically "Callout", "Note", "Warning", or "Insight")
-3. Copy the markdown below into the infobox content field
-
-```markdown
-Title: The Revenue Problem Professional Sport Faces
-
-Professional sports teams operate with a business model that defies conventional logic: competitors must collaborate financially, revenue sources are deeply interdependent, and investments in one area create unpredictable ripple effects across the ecosystem. This week you'll explore why teams "overpay" for star players, how leagues balance entrepreneurial success with competitive fairness, which revenue streams are growing versus hitting capacity limits, and why some leagues share revenue while others don't. By the end, you'll solve these problems using real NHL data—but first, let's see what you already know.
-```
-
-**Note:** If "Callout" variant isn't available in your Uplimit instance, use the closest equivalent (typically the first option in the variant dropdown). Uplimit's standard variants are: Callout, Note, Insight, Warning, or custom institutional variants.
-
----
-
-## Element 5: Revenue Strategy Pre-Assessment (Combined Widget)
-
-**Widget Purpose:** Combined challenge text + 10-question self-diagnostic quiz covering all 4 learning outcomes (WLO 1.1, 1.2, 1.3, 1.4)
-
-**Three-Screen Structure:**
-1. **Challenge Preview:** Four revenue problem scenarios students will learn to solve this week
-2. **Interactive Quiz:** 10 questions testing baseline knowledge with immediate feedback
-3. **Results + Learning Path:** Personalized recommendations based on performance
-
-**Uplimit Implementation:**
+**Widget Purpose:** 10-question diagnostic quiz covering all 4 learning outcomes (WLO 1.1-1.4)
 
 **Widget File:** `revenue-strategy-pre-assessment.html`
 
@@ -429,350 +298,79 @@ Professional sports teams operate with a business model that defies conventional
   width="100%"
   height="800"
   style="border: none; border-radius: 8px;"
-  title="Revenue Strategy Pre-Assessment - Challenge preview and diagnostic quiz"
-  aria-label="Interactive pre-assessment with revenue challenge scenarios and 10-question quiz"
+  title="Revenue Strategy Pre-Assessment"
+  aria-label="10-question diagnostic quiz testing baseline knowledge of sports revenue"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
-**Widget Features:**
-- Challenge preview screen with 4 revenue problem scenarios
-- 10-question diagnostic quiz with immediate feedback
-- Results screen with personalized learning path recommendations
-- WCAG 2.2 AA compliant
-- Uplimit branding (Geist font, neutral grays)
+**Quiz Topics:**
+- Q1-2: Revenue streams knowledge (WLO 1.1)
+- Q3-4: Sport's unique business model (WLO 1.2)
+- Q5-6: Growth potential vs. risk (WLO 1.3)
+- Q7-10: Revenue sharing models (WLO 1.4)
 
 ---
 
-### QUIZ CONTENT REFERENCE (10 Questions)
+## Element 5: Infobox - Results Interpretation
 
-The exercise includes these questions (full content embedded in HTML file):
+```
+Title: ◉ What Your Pre-Assessment Results Mean
 
----
-
-**QUESTION 1** (WLO 1.1 - Revenue Streams Knowledge)
-
-**Question:** Which revenue stream accounts for the largest percentage of total revenue for most major professional leagues?
-
-**Type:** Multiple Choice (single answer)
-
-**Answer Options:**
-- A) Ticketing (20-30%)
-- B) Media rights (40-60%) ✅ **CORRECT**
-- C) Sponsorship (15-25%)
-- D) Merchandising (5-10%)
-
-**Correct Answer:** B
-
-**Feedback for Correct Answer:**
-Correct! Media rights are the largest revenue stream for most major leagues (NFL, NBA, NHL, Premier League), typically accounting for 40-60% of total revenue. The NFL's latest TV deals total $110 billion over 11 years, demonstrating media's dominance.
-
-**Feedback for Incorrect Answers:**
-Not quite. While [selected answer] is important, media rights actually account for the largest share (40-60%) of total revenue in most major leagues. The NFL's $110 billion TV deals demonstrate media's dominance over other streams.
-
----
-
-**QUESTION 2** (WLO 1.1 - Revenue Streams Knowledge)
-
-**Question:** Rank these revenue streams by annual growth rate over the past 5 years (fastest to slowest):
-
-**Type:** Ordering/Ranking
-
-**Items to Rank:**
-1. Betting/Gaming
-2. Media Rights
-3. Sponsorship
-4. Ticketing
-5. Merchandising
-
-**Correct Order:**
-1. Betting/Gaming (30-40% annual growth) ✅
-2. Media Rights (8-12% annual growth) ✅
-3. Sponsorship (5-8% annual growth) ✅
-4. Merchandising (3-5% annual growth) ✅
-5. Ticketing (1-3% annual growth - capacity constrained) ✅
-
-**Feedback:**
-Correct ranking! Betting/gaming is the fastest-growing stream due to legalization waves (30-40% annually), followed by media rights driven by streaming competition (8-12%). Sponsorship grows steadily (5-8%), while merchandising (3-5%) and ticketing (1-3%) face capacity constraints. Ticketing can't grow infinitely—there are only so many seats!
-
----
-
-**QUESTION 3** (WLO 1.2 - Sport's Unique Business Model)
-
-**Question:** In 2-3 sentences, explain why professional sports teams share revenue with competitors.
-
-**Type:** Short Answer (text box, 100-150 words)
-
-**Sample Strong Answer:**
-"Professional sports teams share revenue to maintain competitive balance, which preserves the uncertainty of outcome that makes games compelling. If large-market teams (Toronto, New York) always dominate due to financial advantages, fans in small markets (Winnipeg, Carolina) lose interest, hurting the entire league's product. Revenue sharing ensures all teams can compete, protecting the league-wide brand and maximizing total revenue for everyone."
-
-**Grading Rubric (for AI or manual grading):**
-- ✅ **Strong (8-10 pts):** Mentions competitive balance AND uncertainty of outcome AND league-wide benefit
-- ◐ **Adequate (5-7 pts):** Mentions competitive balance but may miss connection to uncertainty or league benefit
-- ○ **Weak (0-4 pts):** Vague answer about "fairness" without explaining economic rationale
-
-**Feedback for Strong Answer:**
-Excellent! You've identified the core economic logic: competitive balance preserves uncertainty of outcome, which is the product that leagues sell. Revenue sharing is an investment in the league-wide brand, not charity.
-
-**Feedback for Weak Answer:**
-You're on the right track, but dig deeper. Think about why competitive balance matters economically. What happens to fan interest if the same 3 teams always win? How does that affect the entire league's revenue?
-
----
-
-**QUESTION 4** (WLO 1.2 - Sport's Unique Business Model)
-
-**Question:** True or False: Betting legalization creates only one new revenue stream for leagues (betting partnerships).
-
-**Type:** True/False with explanation
-
-**Correct Answer:** False ✅
-
-**Explanation (shown after answer):**
-False! Betting legalization creates MULTIPLE revenue streams and amplifies existing ones:
-1. **Direct betting partnerships** ($100M+ annually for major leagues)
-2. **Increased media rights value** (betting drives live viewership, making broadcasts more valuable)
-3. **Higher sponsorship rates** (betting companies pay premium to advertise during games)
-4. **Enhanced fan engagement** (betting keeps fans watching until final whistle, increasing ad impressions)
-5. **Data licensing fees** (leagues sell real-time data to betting operators)
-
-This is ecosystem thinking—one change ripples across multiple revenue streams.
-
-**Feedback for Correct Answer:**
-Correct! Betting legalization is a perfect example of revenue ecosystem effects. One regulatory change creates new direct revenue (partnerships) while amplifying existing streams (media, sponsorship, engagement). This interconnection is central to sports revenue strategy.
-
-**Feedback for Incorrect Answer:**
-Not quite! Betting legalization does more than create partnerships. It increases media rights value (betting drives live viewership), sponsorship rates (betting companies advertise), fan engagement (betting keeps fans watching), and data licensing fees. One change affects the entire ecosystem—that's the key insight!
-
----
-
-**QUESTION 5** (WLO 1.3 - Growth Potential vs. Risk)
-
-**Question:** The Edmonton Oilers sign Connor McDavid for $12.5M/year. Direct revenue increase: Tickets +$5M, Jerseys +$3M = $8M total. Is this a good investment? Why or why not?
-
-**Type:** Multiple Choice with rationale
-
-**Answer Options:**
-- A) No - the team loses $4.5M annually ($12.5M cost - $8M revenue)
-- B) Yes - but only if they win the Stanley Cup and increase playoff revenue
-- C) Yes - McDavid generates $20-30M in indirect revenue (media rights, sponsorship, betting) beyond direct ticket/jersey sales ✅ **CORRECT**
-- D) No - star players are overvalued and teams should invest in depth players instead
-
-**Correct Answer:** C
-
-**Feedback for Correct Answer:**
-Correct! This is the $100M question from the bridge scenario. McDavid generates massive indirect revenue: media rights increase $20-30M annually (broadcasters pay more for star power), sponsorships pay premiums to associate with elite talent, betting handle spikes when he plays, and merchandise has ecosystem effects beyond jerseys. Direct revenue ($8M) is just the tip of the iceberg. Total value: $30-40M annually.
-
-**Feedback for Incorrect Answers:**
-Think bigger! Direct revenue (tickets $5M + jerseys $3M = $8M) misses the ecosystem effects. McDavid increases media rights value by $20-30M annually (broadcasters pay more for stars), sponsorships pay premiums, betting handle spikes, and merchandise has ripple effects. Total ecosystem value: $30-40M annually. This is why teams "overpay" for elite talent—they're not actually overpaying when you see the full picture.
-
----
-
-**QUESTION 6** (WLO 1.3 - Growth Potential vs. Risk)
-
-**Question:** You have $50M to invest in ONE revenue stream with highest 5-year growth potential. Rank these options by expected return:
-
-**Type:** Multiple Choice (single answer)
-
-**Scenario Context:**
-Your league just legalized betting partnerships, streaming services are bidding aggressively for rights, and your stadium is 15 years old with 18,000 capacity.
-
-**Answer Options:**
-- A) Build new stadium ($50M) to increase capacity to 22,000 seats
-- B) Lock in 10-year media rights deal with traditional broadcaster ($50M guaranteed)
-- C) Launch betting partnerships and data licensing ($5M investment, revenue share model) ✅ **CORRECT**
-- D) Spend on sponsorship sales team and activation ($10M over 5 years)
-
-**Correct Answer:** C
-
-**Feedback for Correct Answer:**
-Correct! Betting partnerships offer 30-40% annual growth with minimal upfront investment ($5M). Your $50M investment would generate $200M+ over 5 years through revenue share models. Stadium capacity is limited (you can't build infinitely), traditional media deals lock you into declining platforms, and sponsorship requires ongoing investment. Betting is high-growth, low-capex, and riding regulatory tailwinds. Risk: regulation could reverse, but growth potential is highest.
-
-**Feedback for Incorrect Answers:**
-Think about growth rates and constraints. Stadiums are capacity-limited (can't grow infinitely), traditional broadcasters are declining (cord-cutting), and sponsorship grows slowly (5-8%). Betting partnerships offer 30-40% annual growth with minimal upfront investment. Regulatory risk exists, but growth potential far exceeds other options. High risk, high reward—classic growth investment.
-
----
-
-**QUESTION 7** (WLO 1.4 - Revenue Sharing Models)
-
-**Question:** Can you explain one advantage AND one disadvantage of revenue sharing for a mid-market team like the Nashville Predators?
-
-**Type:** Short Answer (text box, 100-150 words)
-
-**Sample Strong Answer:**
-"Advantage: The Predators benefit from equal sharing of national media rights (50% of NHL national TV deals). Even though Nashville is a smaller market than Toronto or New York, they receive the same share of lucrative broadcast contracts, which provides financial stability.
-
-Disadvantage: Revenue sharing limits the Predators' ability to capitalize on their local strengths. Nashville has strong corporate support from the music/entertainment industry and passionate fans, but the team must contribute some local revenue to the league pool. This constrains their competitive advantage—entrepreneurial success is taxed to support smaller markets, reducing the Predators' financial upside."
-
-**Grading Rubric:**
-- ✅ **Strong (8-10 pts):** Identifies specific advantage (national media sharing) AND specific disadvantage (limits local revenue potential), uses Predators-specific context
-- ◐ **Adequate (5-7 pts):** Identifies generic advantage/disadvantage but may lack Predators-specific application
-- ○ **Weak (0-4 pts):** Only provides one side (advantage OR disadvantage) or gives vague answers
-
-**Feedback for Strong Answer:**
-Excellent analysis! You've identified the core tension: revenue sharing provides stability (national media benefits) but constrains entrepreneurial upside (local revenue taxation). Mid-market teams like Nashville face this trade-off constantly—they're not big enough to dominate without sharing, but not small enough to be pure recipients. This complexity makes revenue sharing strategy fascinating.
-
-**Feedback for Weak Answer:**
-You're on the right track, but be more specific. Think about which revenue streams are shared (national media, licensing) versus local (tickets, sponsorship). How does this affect a mid-market team like Nashville specifically? What do they gain from sharing? What do they lose?
-
----
-
-**QUESTION 8** (WLO 1.1 - Revenue Streams Knowledge)
-
-**Question:** Match each revenue stream to its primary growth constraint:
-
-**Type:** Matching
-
-**Revenue Streams (Left Column):**
-1. Ticketing
-2. Media Rights
-3. Sponsorship
-4. Merchandising
-5. Betting/Gaming
-
-**Constraints (Right Column):**
-A. Regulatory uncertainty (legalization varies by jurisdiction)
-B. Physical capacity limits (can't build infinite seats)
-C. Brand saturation (too many sponsors dilute value)
-D. Consumer discretionary spending (economic downturns hurt sales)
-E. Fragmentation of viewing audiences (cord-cutting, streaming competition)
-
-**Correct Matches:**
-1. Ticketing → B (Physical capacity limits) ✅
-2. Media Rights → E (Fragmentation of viewing audiences) ✅
-3. Sponsorship → C (Brand saturation) ✅
-4. Merchandising → D (Consumer discretionary spending) ✅
-5. Betting/Gaming → A (Regulatory uncertainty) ✅
-
-**Feedback:**
-Correct matches! Understanding these constraints is crucial for strategy:
-- **Ticketing** can't grow infinitely (stadiums have fixed capacity)
-- **Media Rights** face fragmentation (cord-cutting, streaming wars reduce per-viewer value)
-- **Sponsorship** risks saturation (every surface can't be branded without diminishing value)
-- **Merchandising** suffers in recessions (jerseys are discretionary spending)
-- **Betting** faces regulatory risk (legalization can reverse, creating volatility)
-
-Strategic insight: Diversify across streams with different constraint types to build resilient portfolios.
-
-**Note:** Full quiz content, feedback, and scoring logic are embedded in the exercise.
-
----
-
-**REFERENCE ONLY - QUESTION 9** (WLO 1.3 - Growth Potential vs. Risk)
-
-**Question:** A team invests $300M in a new stadium. Which revenue streams will this investment directly impact? (Select all that apply)
-
-**Type:** Multiple Select (check all that apply)
-
-**Answer Options:**
-- ☑ A) Ticketing (premium seating, suites, increased capacity) ✅ **CORRECT**
-- ☑ B) Sponsorship (naming rights, in-stadium signage, activation spaces) ✅ **CORRECT**
-- ☑ C) Concessions and parking (game-day revenue) ✅ **CORRECT**
-- ☐ D) Media rights (broadcasting deals are independent of stadium quality)
-- ☐ E) Merchandising (jersey sales happen online and in stores, not just stadiums)
-
-**Correct Answers:** A, B, C
-
-**Feedback for Fully Correct (selected A, B, C only):**
-Correct! Stadium investments directly impact ticketing (premium seating, suites, capacity), sponsorship (naming rights, signage, activation), and concessions/parking (game-day revenue). Media rights are negotiated at the league level and don't change based on individual stadium quality. Merchandising happens primarily online and in retail stores, not stadiums. However, there ARE indirect effects: better stadiums improve fan experience, which can boost merchandise sales and make broadcasts more appealing (ecosystem thinking!).
-
-**Feedback for Partial Credit (selected A, B, C plus D or E):**
-You're mostly right! Stadium investments DO directly impact ticketing, sponsorship, and concessions. Media rights are negotiated league-wide and don't directly depend on stadium quality, and merchandising happens mostly online/retail. However, you're thinking about indirect effects—better stadiums CAN improve broadcasts and fan engagement. That's ecosystem thinking! For this question, we're focusing on direct impacts only.
-
-**Feedback for Incorrect (missing A, B, or C):**
-Not quite! Think about what happens inside the stadium on game day. New stadiums allow teams to charge more for premium seating (ticketing), sell naming rights and signage (sponsorship), and increase food/parking revenue (concessions). Media rights are negotiated at the league level, and most merchandising happens online or in stores, not at the venue.
-
----
-
-**QUESTION 10** (WLO 1.4 - Revenue Sharing Models)
-
-**Question:** The NHL shares 50% of national media revenue equally among all 32 teams. The Toronto Maple Leafs generate $200M in local revenue, while the Arizona Coyotes generate $60M locally. Under this system, which statement is TRUE?
-
-**Type:** Multiple Choice (single answer)
-
-**Answer Options:**
-- A) Toronto and Arizona receive equal total revenue (local + shared)
-- B) Toronto receives more total revenue but pays into a pool that redistributes to Arizona ✅ **CORRECT**
-- C) Arizona receives more total revenue because they get larger revenue sharing payments
-- D) Revenue sharing eliminates all financial differences between large and small market teams
-
-**Correct Answer:** B
-
-**Feedback for Correct Answer:**
-Correct! Toronto generates $200M locally + receives equal national media share, while Arizona generates $60M locally + receives equal national media share. Toronto's total revenue is higher ($200M local >> $60M local), but revenue sharing reduces the gap. Toronto is likely a net contributor (pays into the league pool), while Arizona is a net recipient (receives from the pool). Revenue sharing REDUCES inequality but doesn't eliminate it—Toronto still has a financial advantage, just not as large as it would be without sharing.
-
-**Feedback for Incorrect Answers:**
-Think about the math: Toronto's $200M local revenue far exceeds Arizona's $60M, so even with equal national media sharing, Toronto's total revenue is higher. Revenue sharing REDUCES the gap (Toronto might pay $20M into a pool that Arizona receives from), but doesn't eliminate it entirely. The goal is competitive balance, not perfect equality. Toronto still has financial advantages—just smaller ones than they would without revenue sharing.
-
----
-
-## Element 6: Infobox - Results Interpretation & Learning Path
-
-**Uplimit Implementation:**
-1. Select **Infobox** element in module builder
-2. Choose variant: **Insight** (or closest equivalent - typically used for reflective/guidance content)
-3. Copy the markdown below into the infobox content field
-
-```markdown
-Title: What Your Pre-Assessment Results Mean
-
-Your quiz results create a personalized learning path for this week. Lower scores (0-6/10) suggest spending extra time with Module 3's core content and all interactive exercises—you're starting fresh, which is perfect for building strong fundamentals. Higher scores (7-10/10) indicate solid baseline knowledge, so challenge yourself with the Predators case analysis and Revenue Empire Builder strategic simulation. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's solve those revenue problems.
+Your quiz results create a personalized learning path for this week. Lower scores (0-6/10) suggest spending extra time with Module 3's core content and all interactive exercises—you're starting fresh, which is perfect for building strong fundamentals. Higher scores (7-10/10) indicate solid baseline knowledge, so challenge yourself with the Predators case analysis and Revenue Empire Builder simulation. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's build your revenue ecosystem expertise.
 ```
 
-**Note:** If "Insight" variant isn't available, use the variant typically used for reflective content or guidance boxes in your Uplimit instance.
+---
+
+## Element 6: Graphic Novel - "Expansion Day"
+
+**Uplimit Implementation:**
+1. Select **Text** element for intro
+2. Select **iFrame** or **Image** element for graphic novel
+
+**Introduction Text:**
+```markdown
+### Visual Story: Explore This Week's Concepts
+
+Before diving into the core content, explore this week's concepts through visual storytelling. These graphic novels bring sports business scenarios to life.
+```
+
+**Graphic Novel:** "Expansion Day: A CFL Story"
+
+**Location:** `modules/shared-resources/graphic-novels/01-expansion-day-week1.md`
+
+**Story Synopsis:**
+Follow Marcus Chen, a sports executive, as he navigates the high-stakes world of CFL expansion. This story introduces the anchor project you'll develop throughout the course—bringing professional football to a new Canadian market.
+
+**Learning Connection:**
+This narrative introduces the CFL Expansion anchor project that threads through all 5 weeks. You'll apply each week's frameworks to build a comprehensive expansion proposal.
 
 ---
 
 ## Element 7: Graphic Novel - "Five Streams"
 
-**Purpose:** Visual narrative that introduces the 5 revenue streams concept through storytelling before students engage with frameworks and data.
+**Graphic Novel:** "Five Streams: The Nashville Predators Story"
 
-**Graphic Novel:** "Five Streams: A Nashville Predators Story"
-
-**Location:** `modules/shared-resources/graphic-novels/01-five-streams-week1.md`
-
-**Implementation:** The graphic novel is generated using NotebookLM from the script. Upload the resulting PDF or embed images in Uplimit.
+**Location:** `modules/shared-resources/graphic-novels/01b-five-streams-week1.md`
 
 **Story Synopsis:**
-Jessica Torres returns to Nashville to save the Predators franchise from financial decline. She identifies five revenue streams (Tickets, Media, Sponsors, Merchandise, Premium) and builds strategies to grow each one. The story follows her journey from assessment through implementation, including setbacks during COVID-19, culminating in the franchise's transformation from bottom-third to top-third in league revenue.
+Follow the Nashville Predators' journey from struggling expansion team to playoff contender. This story visualizes how the five revenue streams—media, ticketing, sponsorship, merchandise, and betting—work together as an interconnected ecosystem.
 
 **Learning Connection:**
-This visual narrative introduces the same 5 revenue streams students will analyze in the pre-assessment and subsequent modules. The story format creates emotional engagement with the business concepts before diving into frameworks and data.
-
-**Accessibility:**
-- Full text script available in `01-five-streams-week1.md`
-- Alt text for each panel included in script
-- High contrast visual style (Retro Sports Illustrated aesthetic)
+This narrative introduces the five revenue streams you'll analyze this week and sets up the Nashville Predators case study in Module 5.
 
 ---
 
-## Element 8: Transition Text - Ready for Your Learning Journey
+## Instructor Notes
 
-**Text Content:**
+**Module 0 Purpose:**
+- Create cognitive dissonance (the $100M question challenges assumptions)
+- Reveal knowledge gaps through AI roleplay and pre-assessment
+- Build motivation to learn Week 1 content
+- Graphic novels provide visual entry point for diverse learners
 
-```markdown
-### From Story to Strategy
-
-You've just witnessed Jessica Torres transform the Nashville Predators by understanding and growing five revenue streams. Now it's your turn.
-
-The diagnostic exercise revealed where your knowledge gaps are. The graphic novel showed you what mastery looks like in action. The next module will give you the roadmap—the specific learning outcomes and challenges you'll tackle this week.
-
-**What You'll Master:**
-- **Stream 1 - Tickets:** Dynamic pricing, capacity optimization, premium experiences
-- **Stream 2 - Media:** Rights valuation, streaming economics, broadcast strategy
-- **Stream 3 - Sponsors:** Activation strategies, ROI measurement, partnership structures
-- **Stream 4 - Merchandise:** Brand extensions, licensing, fan identity
-- **Stream 5 - Premium:** Suites, clubs, VIP experiences, corporate entertainment
-
-By week's end, you'll be able to defend the McDavid contract—and design revenue strategies like Jessica did.
-
-Ready to build your own five streams? Let's define your learning path.
-```
-
-**Design Rationale:**
-- Graphic novel replaces traditional summary text (more engaging, visual learning)
-- Story-based introduction creates emotional hook before analytical frameworks
-- Transition text explicitly connects narrative to upcoming learning outcomes
-- Removes passive summary in favor of forward momentum
-
-
+**Graphic Novel Notes:**
+- "Expansion Day" introduces the CFL anchor project (connects to Milestone 1 in Module 7)
+- "Five Streams" visualizes revenue concepts (connects to Nashville Predators case in Module 5)
+- Both are optional but recommended for visual/narrative learners

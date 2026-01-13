@@ -23,7 +23,7 @@
 
 ---
 
-## Element 1: Connecting Introduction Text
+## Element 1: The Hockey Hall of Fame Challenge: Analyze & Decide
 
 **Title:** From Reading to Strategic Analysis
 

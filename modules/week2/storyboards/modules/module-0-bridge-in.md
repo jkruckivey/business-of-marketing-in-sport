@@ -1,21 +1,25 @@
-# MODULE 0: Bridge In - The $5.2 Billion Question (BOPPPS: Bridge + Pre-Assessment)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+# MODULE 0: Bridge-In - The $5.2 Billion Question
+**Version:** 2.1.0 | **Last Updated:** 2026-01-13
 
-**Purpose:** Hook students with media rights valuation paradox, connect to Week 1 ecosystem thinking, enable diagnostic self-assessment
+### Version 2.1.0 Changes
+- **RESTORED:** Graphic novel with consistent introduction pattern
 
-**Uplimit Structure:** First module in Unit 2 (Week 2)
+### Version 2.0.0 Changes
+- **STANDARDIZED:** Module structure to match course-wide template
+- **REMOVED:** Transition text (redundant with Module 1 intro)
 
-**LEGEND - Storyboard Notation:**
-- **⬤ Required** / **◐ Recommended** / **○ Optional** = Priority badges (storyboard notation only, not Uplimit elements)
-- Element icons (▶ Video, ⓘ Infobox, ▬ Text, etc.) = Map to Uplimit's actual element types in the builder
+**Purpose:** Hook students with media rights valuation paradox, enable diagnostic self-assessment
+
+**Uplimit Structure:** First module in Unit 2
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▶ Video** ⬛ Required | Business problem scenario (3 min) | Upload `week2-bridge-scenario.mp4` + VTT | Rogers/NHL $5.2B deal paradox |
-| 2 | **◈ AI Roleplay** ◐ Recommended | Media rights valuation diagnostic | Configure in Uplimit | Reveal knowledge gaps about deal valuation |
-| 3 | **ⓘ Infobox** ⬤ Required | The media rights problem statement | Type directly | Use **Callout** variant, strategic challenge |
-| 4 | **⚙ iFrame** ⬤ Required | **Pre-Assessment: Media Rights Challenge + Quiz** | Embed `media-rights-pre-assessment.html` | Combined challenge text and quiz in single tool |
-| 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
+| 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload `week2-bridge-scenario.mp4` + VTT | Rogers/NHL $5.2B deal paradox |
+| 2 | **◈ AI Roleplay** ◐ Recommended | Media rights valuation diagnostic | Configure in Uplimit | Reveal knowledge gaps |
+| 3 | **ⓘ Infobox (Callout)** ⬤ Required | The media rights problem statement | Type directly | Blue variant |
+| 4 | **⚙ iFrame Widget** ⬤ Required | Pre-Assessment Quiz | Embed `media-rights-pre-assessment.html` | 14-question diagnostic |
+| 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Personalized guidance |
+| 6 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "The $5.2 Billion Bet" | Embed PDF or images | Rogers media strategy story |
 
 ---
 
@@ -456,83 +460,38 @@ Remember: This quiz isn't graded, it's a diagnostic tool to help you learn effic
 
 ## Element 6: Graphic Novel - "The $5.2 Billion Bet"
 
-**Purpose:** Visual narrative that introduces the week's key concepts through storytelling.
+**Uplimit Implementation:**
+1. Select **Text** element for intro
+2. Select **iFrame** or **Image** element for graphic novel
+
+**Introduction Text:**
+```markdown
+### Visual Story: Explore This Week's Concepts
+
+Before diving into the core content, explore this week's concepts through visual storytelling. This graphic novel brings the media rights strategy to life.
+```
 
 **Graphic Novel:** "The $5.2 Billion Bet: A Rogers Media Story"
 
 **Location:** `modules/shared-resources/graphic-novels/02-the-bet-week2.md`
 
-**Implementation:** Generated using NotebookLM from the script. Upload resulting PDF or embed images in Uplimit.
-
 **Story Synopsis:**
-Follow Raj Sharma, a South Asian media executive in his 50s, as Rogers Communications makes the historic $5.2 billion NHL rights acquisition. The story dramatizes the strategic thinking behind Canada's largest sports media deal and the risks of betting big on live sports content.
+Follow Raj Sharma, a media executive, as Rogers Communications makes the historic $5.2 billion NHL rights acquisition. The story dramatizes the strategic thinking behind Canada's largest sports media deal and the risks of betting big on live sports content.
 
 **Learning Connection:**
 This narrative introduces the five strategic benefits Rogers hoped to achieve: Cable Retention, Ad Revenue, Streaming Growth, Wireless Bundling, and Competitive Moat—the core concepts students will analyze this week.
 
-**Accessibility:**
-- Full text script available in `02-the-bet-week2.md`
-- Alt text for each panel included in script
-- High contrast visual style (Retro Sports Illustrated aesthetic)
-
 ---
 
-## Element 7: Transition Text - From Story to Strategy
+## Instructor Notes
 
-**Text Content:**
+**Module 0 Purpose:**
+- Create cognitive dissonance (the $5.2B question challenges assumptions)
+- Reveal knowledge gaps through AI roleplay and pre-assessment
+- Build motivation to learn Week 2 content
+- Graphic novel provides visual entry point for diverse learners
 
-```markdown
-### From Story to Strategy
-
-Raj Sharma's story illustrates the high-stakes world of media rights valuation. Rogers bet $5.2 billion that exclusive NHL content would transform their business—but the assumptions underlying that bet proved catastrophically wrong.
-
-**What You'll Master:**
-- How media rights are valued (audience × exclusivity × platform economics)
-- Why sports command premium valuations as the last "appointment viewing"
-- Platform trade-offs between guaranteed fees and upside potential
-- Fan engagement monetization across ads, subscriptions, and betting integration
-
-Now let's build the frameworks you need to evaluate billion-dollar media deals.
-```
-
----
-
-## Module Summary
-
-**What You've Accomplished:**
-You've been hooked by a real media rights case study—the Rogers/NHL $5.2B deal that significantly underperformed expectations—and you've taken your first steps toward understanding it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your media strategy knowledge stands. That clarity isn't a weakness—it's your competitive advantage for this week.
-
-**Key Insight:**
-The fact that you struggled with valuation questions in the diagnostic is expected. Media rights economics is MORE COMPLEX than most revenue streams because you're predicting consumer behavior 10-15 years into the future (cord-cutting, streaming adoption, platform economics). Even experts with decades of data get it wrong. Week 2 teaches you the frameworks that improve your odds—but Module 0 taught you humility: always stress-test your assumptions and plan for scenarios where you're wrong.
-
-**Up Next: Your Week 2 Journey**
-Now that you've seen the problem and identified your knowledge gaps, the next module will show you exactly what you're going to learn this week—and how Week 2's frameworks synthesize with Week 1's revenue ecosystem thinking. You'll see the four key challenges you'll be able to solve by Friday, transforming you from someone who sees the Rogers deal as a mysterious failure into someone who can confidently evaluate billion-dollar media rights strategies.
-
-Ready to turn those knowledge gaps into strategic capabilities? Let's define your learning path.
-
----
-
-## MODULE 0 Complete - Summary
-
-### Elements Created:
-1. ✅ Bridge Video (3 min scenario + script)
-2. ✅ AI Roleplay Scenario (diagnostic conversation with real Uplimit configuration fields)
-3. ✅ Infobox - Problem Statement (Callout variant)
-4. ✅ Pre-Assessment Tool (Challenge preview + 14-question quiz)
-5. ✅ Infobox - Results Interpretation (Insight variant)
-6. ✅ Final Project Connection (links to Week 5 capstone)
-7. ✅ Module Summary (transition to Module 1)
-
-**Total Estimated Time:** 15-20 minutes
-- Video: 3 min
-- AI Roleplay: 5-7 min
-- Pre-Assessment Quiz: 5-7 min
-- Reading/transitions: 2-3 min
-
-**Alignment:**
-- Prepares students for WLO 2.1 (media rights valuation)
-- Prepares students for WLO 2.4 (evaluating Rogers deal)
-- Creates urgency and motivation for Week 2 learning
-- Reveals knowledge gaps so students know where to focus
-
-**Next Module:** Module 1 (Learning Outcomes & Week Overview)
+**Graphic Novel Notes:**
+- "The $5.2 Billion Bet" visualizes media strategy concepts
+- Connects to Rogers/NHL case analysis in Module 5
+- Optional but recommended for visual/narrative learners

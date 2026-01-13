@@ -2,7 +2,7 @@
 **Version:** 1.4.0 | **Last Updated:** 2026-01-12
 
 ### Version 1.4.0 Changes
-- **NEW:** Added Element 11 - Core Readings on Betting, CLV & Attribution
+- **NEW:** Added Element 11 - Recommended Readings on Betting, CLV & Attribution
 - **UPDATED:** Transition to Module 4 now references LIV Golf case (not FanDuel)
 - **UPDATED:** FanDuel positioned as data source/examples (not primary case)
 
@@ -622,56 +622,48 @@ The US approach (post-PASPA) is just one model. Other countries have decades of 
 
 ---
 
-## Element 11: Core Readings - Betting, CLV & Attribution
+## Element 11: Recommended Readings - Betting, CLV & Attribution `[v1.1.0]`
 
 **Type:** Details (Accordion)
 **Priority:** ◐ Recommended
 
-```
-Title: 📚 Core Readings: Betting Economics & Customer Value
+```markdown
+Title: Recommended Readings: Betting Economics & Customer Value
 
-[Expand for required and recommended readings]
+[Expand for recommended readings that deepen your understanding]
 
-## Required Reading
+### Recommended Readings (35-40 minutes total)
 
-These readings explain the customer economics frameworks you practiced in this module:
+**1. FairPlay Sports Media – "Building Value for Betting Partners"**
+Explains CPM/CPA/rev-share hybrids and how betting brands think about acquisition, loyalty, and sponsorship ROI.
+🔗 [Read Article](https://fairplaysportsmedia.com/building-value-betting-partners)
+*Essential context for understanding FanDuel's partnership economics*
 
-• **FairPlay Sports Media – "Building Value for Betting Partners"**
-  Explains CPM/CPA/rev-share hybrids and how betting brands think about acquisition, loyalty, and sponsorship ROI.
-  https://fairplaysportsmedia.com/building-value-betting-partners
-  *Essential context for understanding FanDuel's partnership economics*
+**2. Altenar – "Boosting Customer Lifetime Value in Sports Betting"**
+Clear overview of CLV drivers and retention tactics; aligns with your discussion of LTV and aggressive acquisition.
+🔗 [Read Article](https://altenar.com/blog/boosting-customer-lifetime-value-sports-betting)
+*Connects directly to the Customer Economics Calculator*
 
-• **Altenar – "Boosting Customer Lifetime Value in Sports Betting"**
-  Clear overview of CLV drivers and retention tactics; aligns with your discussion of LTV and aggressive acquisition.
-  https://altenar.com/blog/boosting-customer-lifetime-value-sports-betting
-  *Connects directly to the Customer Economics Calculator*
+**3. BettingOnline – "Sports Betting ARPU Trends: Why Core Customer Value is Rising in 2025"**
+Useful background for your CLV/LTV numbers and why operators pay premiums for high-intent audiences.
+🔗 [Read Article](https://www.bettingonline.com/sports-betting-arpu-trends-2025)
+*Supports the engagement multiplier concepts from Element 5*
 
-## Recommended Reading
+**4. "Why are Sports Betting Rewards Programs So Successful? (5 Reasons)"**
+Concrete examples of tiers, rewards, engagement; supports your "data-rich, attributable sponsors" narrative.
+🔗 [Read Article](https://www.loyaltyprogramexamples.com/sports-betting-rewards-programs)
+*Shows how operators build the customer relationships that justify high CAC*
 
-Go deeper on ARPU trends and loyalty programs:
+### Reading Strategy
 
-• **BettingOnline – "Sports Betting ARPU Trends: Why Core Customer Value is Rising in 2025"**
-  Useful background for your CLV/LTV numbers and why operators pay premiums for high-intent audiences.
-  https://www.bettingonline.com/sports-betting-arpu-trends-2025
-  *Supports the engagement multiplier concepts from Element 5*
-
-• **"Why are Sports Betting Rewards Programs So Successful? (5 Reasons)"**
-  Concrete examples of tiers, rewards, engagement; supports your "data-rich, attributable sponsors" narrative.
-  https://www.loyaltyprogramexamples.com/sports-betting-rewards-programs
-  *Shows how operators build the customer relationships that justify high CAC*
-
-## Reading Strategy
-
-**Before Module 4:** Read FairPlay article to understand partnership structures
-**After Module 4:** Read CLV articles to assess whether LIV Golf's player investments make economic sense
-
-Total reading time: 20-25 minutes (required) + 15 minutes (recommended)
+**Before Module 4:** Read FairPlay article (#1) to understand partnership structures
+**After Module 4:** Read CLV articles (#2-3) to assess whether LIV Golf's player investments make economic sense
 ```
 
 **Design Rationale:**
 - Betting economics readings positioned before LIV Golf case analysis
 - Industry sources (not academic) match MBA practitioner focus
-- Direct connections to module exercises and upcoming case analysis
+- All readings optional—students choose based on interest and time
 
 ---
 

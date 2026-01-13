@@ -1,23 +1,34 @@
-# MODULE 5: Case Study - Serena Williams: Building a Brand (BOPPPS: Practice)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+# MODULE 5: Case Analysis - Serena Williams: Brand Strategy Analysis (BOPPPS: Practice)
+**Version:** 1.6.0 | **Last Updated:** 2026-01-13
 
-**Purpose:** Apply Week 4 frameworks to analyze Serena Williams' actual brand strategy
+### Version 1.6.0 Changes
+- **CORRECTED:** Removed non-existent HBS case reference (517050 does not exist)
+- **REFRAMED:** Now course-developed case analysis using public sources and recommended readings
+
+### Version 1.5.0 Changes
+- **NEW:** Added pre-widget contextual introduction for Serena's Brand Portfolio Analyzer
+
+### Version 1.4.0 Changes
+- **ADDED:** Element 3 - Serena Case Introduction Video (2 min, caption available)
+- **RENUMBERED:** Subsequent elements shifted by 1
+
+**Purpose:** Apply Week 4 frameworks to analyze Serena Williams' actual brand strategy using public sources
 
 **Uplimit Structure:** Sixth module in Unit 4 (Week 4)
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro to case | Type directly | Bridge from simulations to real analysis |
-| 2 | **ⓘ Infobox (Callout)** ⬤ Required | Case access + reading instructions | Type directly | How to access HBS case, time estimate |
-| 3 | **📄 File Attachment** ⬤ Required | Serena Williams: Building a Brand (HBS 517050) | Attach PDF | HBS case study |
-| 4 | **▬ Text** ⬤ Required | Analysis framework: 4 questions to guide reading | Type directly | Structured case analysis approach |
+| 1 | **▬ Text** ⬤ Required | Connecting intro to case analysis | Type directly | Bridge from simulations to real analysis |
+| 2 | **ⓘ Infobox (Callout)** ⬤ Required | Analysis overview + recommended readings | Type directly | Links to Forbes, Reuters, Afrotech articles |
+| 3 | **▶ Video** ⬤ Required | "Serena Williams: Strategic Analysis Framework" (2 min) | Upload MP4 | Introduces 3 strategic pivots before analysis |
+| 4 | **▬ Text** ⬤ Required | Analysis framework: 4 questions to guide analysis | Type directly | Structured case analysis approach |
 | 5 | **⚙ iFrame Widget** ◐ Recommended | **Serena's Brand Portfolio Analyzer** | Embed widget | Interactive analysis of her actual strategy |
 | 6 | **▤ Details** ○ Optional | Serena Ventures portfolio analysis | Type directly | Deep dive on her $111M investment fund |
 | 7 | **◈ AI Chat Widget** ○ Optional | "Case discussion partner" | Configure in Uplimit | On-demand case analysis support |
 
 ---
 
-## Element 1: Connecting Introduction
+## Element 1: Putting It All Together: The Serena Williams Case
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -53,7 +64,7 @@ Let's dive into the case.
 
 ---
 
-## Element 2: Infobox - Case Access Instructions
+## Element 2: Infobox - Analysis Overview & Readings
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -61,20 +72,58 @@ Let's dive into the case.
 3. Copy markdown below:
 
 ```markdown
-Title: 🔗 Case Study Access Instructions
+Title: 📚 Serena Williams Analysis: Background Readings
 
-The Serena Williams: Building a Brand case (HBS 517050, 22 pages) is attached below. Reading time is 45-60 minutes. Download the PDF and read the entire case carefully—strategic insights are in the details, especially Exhibits 4-7 covering financial data and business ventures. Keep the four analysis questions from Element 4 in mind while reading and jot notes referencing specific pages. After reading, use the Serena's Brand Portfolio Analyzer exercise to map her strategy and compare alternatives. Use the AI Chat widget if you need case discussion support.
+Before diving into the analysis, review these recommended readings (20-30 minutes total):
+
+**1. Reuters:** [Serena Williams' New Venture Fund Raises $111 Million](https://www.reuters.com/article/us-serena-williams-venture-fund/serena-williams-new-venture-fund-raises-111-million-idUSKCN1T02FJ) — Fund structure, thesis, early investments
+
+**2. Forbes:** [Play To Win: Serena Williams Invested In 14 Unicorn Companies](https://www.forbes.com/sites/mattcraig/2023/01/23/play-to-win-serena-williams-invested-in-14-unicorn-companies/) — Portfolio returns, VC philosophy, Coinbase exit
+
+**3. Afrotech:** [Serena Williams on Raising VC](https://afrotech.com/serena-williams-vc-funding) — How she built her investor network and deal flow
+
+These articles provide the foundation for analyzing Serena's transition from athlete to investor. Keep the four analysis questions in mind while reading, then use the Brand Portfolio Analyzer to test her strategy against alternatives.
 ```
 
 ---
 
-## Element 3: File Attachment - HBS Case
+## Element 3: Video - Serena Williams Strategic Analysis Framework `[v1.4.0]`
+
+**Video Specifications:**
+- **Length:** 2 minutes
+- **Topic:** "Serena Williams: Strategic Analysis Framework"
+- **Key Points:** Three strategic pivots (endorser→investor, athlete→founder, individual→platform), replicability question
+- **Accessibility:** Captions required, transcript provided
+
+**Video Status:** ✅ Produced - Caption file available
+
+**Caption File:** `Videos/HeyGen Scripts/VIDEO #16 IO - Cohort - BOSM – W4-M4, V1 (Serena Case)-caption.srt`
+
+**Video Content Summary (from caption, ~2 minutes):**
+```
+[0:00-0:17] Hook
+"Serena Williams is not just an exceptional tennis player. She's a case study in how athletes transform athletic excellence into business empires. Your analysis should focus on the strategic decisions, not just the achievements."
+
+[0:22-0:39] The Three Strategic Pivots
+"The case presents three strategic pivots:
+1. From endorser to investor - Serena shifted from taking endorsement cash to taking equity stakes in companies
+2. From athlete to founder - Serena Ventures now manages 85+ companies
+3. From individual to platform - S by Serena isn't just a clothing line, it's a platform for other women entrepreneurs"
+
+[0:39-1:04] The Replicability Question
+"The question isn't whether Serena is successful—it's whether her playbook is replicable. Can other athletes follow this path? What did she have that others don't? What did she do that others could copy?"
+
+[1:04-1:40] Analysis Focus: Timing
+"As you analyze the case, focus on timing. When did she start investing? When did she launch Serena Ventures? How did she balance business building with competing? The sequencing matters—she built business infrastructure while still playing, so she had momentum when she transitioned away from competitive tennis."
+
+[1:40-1:52] Transition to Case Reading
+"The AI Case Coach will help you map Serena's decisions to the five revenue streams framework. Look for the inflection points where she shifted from trading time for money to building compounding assets."
+```
 
 **Uplimit Implementation:**
-1. Select **File Attachment** element
-2. Upload: `serena-williams-building-a-brand-hbs-517050.pdf`
-3. Title: "Serena Williams: Building a Brand (HBS Case 517050)"
-4. Description: "22-page Harvard Business School case study analyzing Serena Williams' athlete brand strategy, endorsement deals, owned businesses, and investment portfolio"
+1. Upload Serena Case video MP4
+2. Add SRT caption file from `Videos/HeyGen Scripts/`
+3. Place after Infobox, before analysis framework
 
 ---
 
@@ -85,9 +134,9 @@ The Serena Williams: Building a Brand case (HBS 517050, 22 pages) is attached be
 2. Copy markdown below:
 
 ```markdown
-# Case Analysis Framework: 4 Questions to Guide Your Reading
+# Analysis Framework: 4 Questions to Guide Your Analysis
 
-As you read the Serena Williams case, analyze her strategy through these 4 lenses (corresponding to Week 4's learning outcomes):
+As you analyze Serena Williams' brand strategy (using the recommended readings and your Week 4 frameworks), examine her approach through these 4 lenses:
 
 ---
 
@@ -96,11 +145,11 @@ As you read the Serena Williams case, analyze her strategy through these 4 lense
 **Analyze:** How did Serena allocate her time, brand equity, and capital across the five revenue streams?
 
 **Look for evidence of:**
-- **Endorsements:** Which deals did she prioritize? Nike, Gatorade, Wilson—what terms? (Exhibits 4-5)
-- **Owned Businesses:** S by Serena clothing line—why launch this vs. just endorse Nike? (Pages 12-15)
-- **Investments:** Serena Ventures $111M fund—what's the strategy? Who does she invest in? (Pages 16-18)
-- **Media/Content:** Production company ventures, media appearances—how does she monetize content? (Pages 14-15)
-- **Licensing:** Name/likeness licensing deals—what IP does she own? (Exhibit 6)
+- **Endorsements:** Which deals did she prioritize? Nike, Gatorade, Wilson—what terms?
+- **Owned Businesses:** S by Serena clothing line—why launch this vs. just endorse Nike?
+- **Investments:** Serena Ventures $111M fund—what's the strategy? Who does she invest in?
+- **Media/Content:** Production company ventures, media appearances—how does she monetize content?
+- **Licensing:** Name/likeness licensing deals—what IP does she own?
 
 **Key Question:** Did Serena prioritize fee-based income (endorsements) or equity-based wealth (owned businesses, investments)? Estimate the % allocation.
 
@@ -112,7 +161,7 @@ As you read the Serena Williams case, analyze her strategy through these 4 lense
 
 **Analyze:** When did Serena choose to build owned businesses instead of taking endorsement fees—and why?
 
-**Critical Strategic Decision (Page 13):**
+**Critical Strategic Decision:**
 Serena launched S by Serena clothing line in 2018. She could have instead:
 - Option A: Signed larger Nike endorsement deal for guaranteed $10-15M/year
 - Option B: Invested $2-3M to launch her own brand, owning 100% equity
@@ -132,7 +181,7 @@ Serena launched S by Serena clothing line in 2018. She could have instead:
 
 **Analyze:** Why did Serena focus Serena Ventures on companies founded by women and people of color—and does this create superior returns?
 
-**Serena Ventures Strategy (Pages 16-18):**
+**Serena Ventures Strategy (from Forbes and Reuters readings):**
 - $111M fund launched 2014
 - Investment focus: Women founders, people of color founders, underserved markets
 - Portfolio includes: MasterClass, Tonal, Daily Harvest, Impossible Foods, Billie (women's shaving), NWSL teams
@@ -141,7 +190,7 @@ Serena launched S by Serena clothing line in 2018. She could have instead:
 **Evaluate the Investment Logic:**
 - **Financial thesis:** Are women-founded companies undervalued (arbitrage opportunity)?
 - **Non-financial thesis:** Is Serena willing to accept lower returns for social impact?
-- **Actual returns:** Has the fund outperformed VC benchmarks? (Check case exhibits)
+- **Actual returns:** Has the fund outperformed VC benchmarks? (Check Forbes article on unicorn investments)
 
 **Women's Sports Specific:**
 Serena Ventures invested in NWSL teams. Apply the Emerging Sports Investment Tool framework:
@@ -193,11 +242,39 @@ This synthesis will form the foundation of your Week 4 assessment.
 
 ---
 
-## Element 5: Serena's Brand Portfolio Analyzer Widget
+## Element 5: Serena's Brand Portfolio Analyzer Widget `[v2.1.0]`
 
 **Widget Purpose:** Interactive tool to map Serena's actual strategy and compare to alternatives
 
 **File:** `serena-brand-portfolio-analyzer.html`
+
+### Pre-Widget Context (Copy to Uplimit as Text element BEFORE widget):
+
+```markdown
+## Practice: Apply WLO 4.1 & 4.2 to a Real Case
+
+You've read about Serena's strategy. Now test it.
+
+This analyzer is pre-loaded with Serena Williams' estimated actual portfolio allocation across all five revenue streams. But here's your challenge: **Was her strategy optimal?**
+
+Use the "what if" sliders to explore alternative paths:
+- What if she'd taken 100% endorsements and skipped Serena Ventures entirely?
+- What if she'd invested even more heavily in owned businesses?
+- What if she'd prioritized liquidity over long-term equity?
+
+**Why this matters:** It's easy to praise Serena's strategy in hindsight. But you're about to see exactly how much wealth she left on the table—or captured—with each decision. The numbers make her strategic genius (or luck?) concrete.
+
+**What you'll discover:**
+- How Serena's actual allocation compares to "typical" elite athletes (hint: she's not typical)
+- The specific 20-year wealth difference between her strategy and the endorsement-heavy alternative
+- Which of her decisions contributed most to long-term wealth creation
+- Trade-offs she accepted that you might not have
+
+*Time commitment: 8-10 minutes*
+*Learning outcomes practiced: WLO 4.1 (Five revenue streams), WLO 4.2 (Owned assets vs. endorsements)*
+```
+
+---
 
 **Functionality:**
 - Pre-loaded with Serena's estimated actual allocations
@@ -278,15 +355,15 @@ Serena proved that investing in underrepresented founders is NOT a trade-off bet
 
 **System Prompt:**
 ```
-You are a knowledgeable case discussion partner helping MBA students analyze the Serena Williams: Building a Brand (HBS 517050) case study. Help students:
+You are a knowledgeable case discussion partner helping MBA students analyze Serena Williams' brand strategy. Help students:
 
-- Interpret financial data from case exhibits
+- Analyze her revenue stream allocation across endorsements, owned businesses, and investments
 - Apply Week 4 frameworks (revenue streams, equity vs. fees, women's sports investment thesis, post-career strategy)
-- Answer questions about Serena's strategic decisions
-- Compare her strategy to alternatives
-- Connect case insights to their Anchor Project
+- Answer questions about Serena's strategic decisions using the recommended readings (Reuters, Forbes, Afrotech)
+- Compare her strategy to alternatives using the Brand Portfolio Analyzer
+- Connect analysis insights to their Anchor Project
 
-Provide Socratic guidance—ask probing questions rather than giving answers directly. Reference specific pages/exhibits from the case when relevant.
+Provide Socratic guidance—ask probing questions rather than giving answers directly. Reference the recommended readings and Week 4 frameworks when relevant.
 ```
 
 **Welcome Message:**

@@ -173,22 +173,23 @@
 
 ### Week 4: Athletes, Brands & Emerging Sports
 **CLO 4:** Build Athlete & Emerging Sport Brands
-**Primary Case:** Serena Williams (HBS 517050) — *To be acquired*
+**Primary Case:** Serena Williams: Brand Strategy Analysis (BOSM-W4-001) — Course-developed
 **Supplementary:** NHL Enterprises Canada (9B00M002) — Merchandising context
 
 | Module | Case Integration | Purpose | WLO Alignment |
 |--------|-----------------|---------|---------------|
 | Module 3 (Core Content) | Athlete brand framework | Personal brand building methodology | WLO 4.1 |
 | Module 4 (Interactive) | Athlete Brand Calculator | Brand equity simulation | WLO 4.2 |
-| Module 5 (Case Study) | **Serena Williams (if acquired)** | Athlete brand evolution | WLO 4.3 |
+| Module 5 (Case Study) | **Serena Williams Analysis** | Athlete brand evolution | WLO 4.3 |
 | Module 6 (Assessment) | Emerging sport investment | Brand strategy recommendation | WLO 4.4 |
 
 **Integration Details:**
 
-*Status Note:* Serena Williams case not currently in inventory. Options:
-1. Acquire HBS 517050 ($4.25 per student)
-2. Develop custom athlete branding case using public domain materials
-3. Use executive interviews to cover athlete brand content
+*Serena Williams Case (BOSM-W4-001):*
+- Course-developed analysis using public sources
+- Recommended readings: Reuters, Forbes, Afrotech articles on Serena Ventures
+- Focus: Revenue stream allocation, equity vs. endorsements, VC strategy
+- Interactive: Serena's Brand Portfolio Analyzer widget
 
 *NHL Enterprises Canada Integration (9B00M002):*
 - Historical context for merchandising and licensing decisions
@@ -233,6 +234,7 @@
 | Nashville Predators (9B09A006) | Ready | OneDrive cases folder |
 | Nashville Predators TN (8B09A06) | Ready | OneDrive cases folder |
 | Rogers NHL (BOSM-W2-001) | Custom created | modules/week2/cases/ |
+| Serena Williams (BOSM-W4-001) | Custom created | Uses public readings |
 | IPL Media Rights (W36172) | Ready | OneDrive cases folder |
 | IPL Media Rights TN (W36173) | Ready | OneDrive cases folder |
 | LIV Golf (W33366) | Ready | OneDrive cases folder |
@@ -240,11 +242,6 @@
 | Bank of America (910406) | Ready | OneDrive cases folder |
 | NHL Enterprises Canada (9B00M002) | Ready | OneDrive cases folder |
 | NHL Enterprises Canada TN (8B00M02) | Ready | OneDrive cases folder |
-
-### Needs Acquisition
-| Case | Source | Est. Cost | Priority |
-|------|--------|-----------|----------|
-| Serena Williams (517050) | HBS | $4.25/student | High (Week 4 core) |
 
 ### Needs Development
 | Case | Scope | Est. Hours | Priority |

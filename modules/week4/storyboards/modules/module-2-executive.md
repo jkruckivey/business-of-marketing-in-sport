@@ -21,7 +21,7 @@
 
 ---
 
-## Element 1: Connecting Introduction Text
+## Element 1: From Learning to Listening: Executive Perspectives
 
 **Uplimit Implementation:**
 1. Select **Text** element

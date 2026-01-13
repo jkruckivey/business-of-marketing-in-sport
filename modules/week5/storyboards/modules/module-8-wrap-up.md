@@ -1,5 +1,9 @@
 # MODULE 8: Wrap-Up & Course Synthesis (BOPPPS: Summary + Closure)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2026-01-12
+
+### Version 1.4.0 Changes
+- **ADDED:** Element 2 - Course Synthesis Video (2 min, caption available)
+- **RENUMBERED:** Subsequent elements shifted by 1
 
 **Purpose:** Consolidate Week 5 learning AND synthesize entire 5-week course, celebrate achievements, and prepare students for applied work beyond the classroom
 
@@ -8,17 +12,18 @@
 | Order | Element | Content/Purpose | Source | Priority | Time |
 |-------|---------|----------------|--------|----------|------|
 | 1 | **Infobox (Callout)** | Week 5 key takeaways | Type directly | ⬤ Required | 1 min |
-| 2 | **Text** | Your Week 5 Journey (Module 0-7 retrospective) | Type directly | ⬤ Required | 4 min |
-| 3 | **⚙ iFrame Widget** | **Week 5 Concept Map** | Embed widget | ⬀ Recommended | 5 min |
-| 4 | **Text** | 5-Week Course Integration (CLO 1-5 threading recap) | Type directly | ⬀ Recommended | 5 min |
-| 5 | **Text** | Industry Outlook: The Future of Sports Business | Type directly | ⬀ Recommended | 4 min |
-| 6 | **Details** | Continued Learning Resources (optional) | Type directly | ○ Optional | 5 min |
-| 7 | **Text** | Final Reflection: Your Role in Sports Business | Type directly | ⬀ Recommended | 3 min |
-| 8 | **Infobox (Callout)** | Course Completion & Next Steps | Type directly | ⬀ Recommended | 2 min |
+| 2 | **▶ Video** | Course Synthesis (2 min) | Upload MP4 | ⬤ Required | 2 min |
+| 3 | **Text** | Your Week 5 Journey (Module 0-7 retrospective) | Type directly | ⬤ Required | 4 min |
+| 4 | **⚙ iFrame Widget** | **Week 5 Concept Map** | Embed widget | ⬀ Recommended | 5 min |
+| 5 | **Text** | 5-Week Course Integration (CLO 1-5 threading recap) | Type directly | ⬀ Recommended | 5 min |
+| 6 | **Text** | Industry Outlook: The Future of Sports Business | Type directly | ⬀ Recommended | 4 min |
+| 7 | **Details** | Continued Learning Resources (optional) | Type directly | ○ Optional | 5 min |
+| 8 | **Text** | Final Reflection: Your Role in Sports Business | Type directly | ⬀ Recommended | 3 min |
+| 9 | **Infobox (Callout)** | Course Completion & Next Steps | Type directly | ⬀ Recommended | 2 min |
 
 ---
 
-## Element 1: Infobox Content - Week 5 Synthesis
+## Element 1: Course Complete: Your Sports Business Journey
 
 **Uplimit Implementation:**
 1. Select **Infobox** element in module builder
@@ -33,7 +38,44 @@ You've mastered the most sophisticated strategic challenge in sports business: b
 
 ---
 
-## Element 2: Text Content - Your Week 5 Journey
+## Element 2: Video - Course Synthesis `[v1.4.0]`
+
+**Video Specifications:**
+- **Length:** 2 minutes
+- **Topic:** "Course Synthesis: Connecting All 5 Weeks"
+- **Key Points:** Week 1-5 recap, integrated framework, capstone preparation
+- **Accessibility:** Captions required, transcript provided
+
+**Video Status:** ✅ Produced - Caption file available
+
+**Caption File:** `Videos/HeyGen Scripts/VIDEO #21 IO - Cohort - BOSM – W5-M6, V1 (Course Synthesis)-caption.srt`
+
+**Video Content Summary (from caption, ~2 minutes):**
+```
+[0:00-0:09] Opening
+"Congratulations! You've completed five weeks of the Business of Sports Marketing. You now have frameworks that working professionals use to make million-dollar decisions. Let's connect everything before your capstone."
+
+[0:14-0:40] Week-by-Week Recap
+"Week 1 taught you revenue ecosystems—the five streams and how they interconnect. Week 2 showed you media rights economics—how streaming changes valuations and the risks of long-term contracts. Week 3 covered sponsorship and betting—ROI frameworks and the attribution advantage. Week 4 explored athlete brands and emerging sports—the five revenue streams and evaluation frameworks. Week 5 added the final piece: Heritage and future trends. Not everything should be optimized for short-term revenue. Sometimes preservation creates long-term value."
+
+[0:40-0:57] Capstone Integration
+"Your capstone project—developing a strategy for an emerging sports franchise—requires you to integrate all five weeks. You're not just designing a brand. You're building a business case that considers: Revenue ecosystem design from Week 1, Media rights implications from Week 2, Sponsorship strategy from Week 3, Market positioning and athlete partnerships from Week 4, And heritage balance and future trends from Week 5."
+
+[0:57-1:15] Multiple Objectives
+"Your strategy needs to achieve multiple objectives. It should build sustainable revenue across all five streams. It should position your franchise competitively. It should be financially viable from day one."
+
+[1:15-1:38] Real Strategic Thinking
+"This is real strategic thinking. The frameworks you've learned aren't academic exercises—they're the same tools executives use to make these decisions. Good luck with your capstone. You have everything you need. Now show us what you can build."
+```
+
+**Uplimit Implementation:**
+1. Upload Course Synthesis video MP4
+2. Add SRT caption file from `Videos/HeyGen Scripts/`
+3. Place after Week 5 Key Takeaways infobox, before journey recap text
+
+---
+
+## Element 3: Text Content - Your Week 5 Journey
 
 **Uplimit Implementation:**
 1. Select **Text** element in module builder

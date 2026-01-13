@@ -16,7 +16,7 @@
 
 ---
 
-### Element 1: Infobox Content
+### Element 1: Design Your Heritage Transformation Strategy
 
 
 Title: ◉ Activity: Design Your Heritage Transformation Strategy

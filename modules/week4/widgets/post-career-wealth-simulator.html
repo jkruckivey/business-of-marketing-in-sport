@@ -502,11 +502,11 @@
         <div style="background: white; padding: 16px; border-radius: var(--border-radius); border: 1px solid var(--color-neutral-200); margin-bottom: 24px;">
             <div style="font-weight: 600; margin-bottom: 12px; color: var(--color-neutral-900);">Quick Load Scenario:</div>
             <div class="preset-buttons">
-                <button class="preset-btn" data-preset="lifestyle-trap">Lifestyle Trap</button>
-                <button class="preset-btn" data-preset="conservative">Conservative Builder</button>
-                <button class="preset-btn" data-preset="equity-max">Equity Maximizer</button>
-                <button class="preset-btn" data-preset="magic">Magic Johnson</button>
-                <button class="preset-btn" data-preset="iverson">Allen Iverson</button>
+                <button class="preset-btn" data-preset="lifestyle-trap" title="High spending, low investing, minimal equity">Lifestyle Trap</button>
+                <button class="preset-btn" data-preset="conservative" title="High savings rate, diversified portfolio, moderate equity">Conservative Builder</button>
+                <button class="preset-btn" data-preset="equity-max" title="Maximum savings, aggressive equity and business investments">Equity Maximizer</button>
+                <button class="preset-btn" data-preset="magic" title="Moderate spending, aggressive equity stakes in businesses">Magic Johnson-style</button>
+                <button class="preset-btn" data-preset="iverson" title="High lifestyle spending, conservative investments, depleted assets">Allen Iverson-style</button>
             </div>
         </div>
 
@@ -747,6 +747,8 @@
                 </div>
             </div>
 
+            <p style="font-size: 0.85rem; color: var(--color-neutral-600); margin-bottom: 12px; font-style: italic;">All dollar amounts are illustrative model outputs, not audited biographies. They're designed to show how savings rates and equity ownership change long-term outcomes.</p>
+
             <div class="comparison-table">
                 <table>
                     <thead>
@@ -781,7 +783,7 @@
                             <td>0</td>
                         </tr>
                         <tr>
-                            <td>Magic Johnson</td>
+                            <td>Magic Johnson-style Equity Builder</td>
                             <td>$48M</td>
                             <td>$180M</td>
                             <td>$1200M+</td>
@@ -1182,7 +1184,14 @@
                     updatePhase2Output();
                     updatePhase3Output();
 
-                    announceToScreenReader(`Loaded ${presetKey} scenario`);
+                    const presetNames = {
+                        'lifestyle-trap': 'Lifestyle Trap',
+                        'conservative': 'Conservative Builder',
+                        'equity-max': 'Equity Maximizer',
+                        'magic': 'Magic Johnson-style Equity Builder',
+                        'iverson': 'Allen Iverson-style'
+                    };
+                    announceToScreenReader(`Loaded ${presetNames[presetKey] || presetKey} scenario`);
                 });
             });
         }

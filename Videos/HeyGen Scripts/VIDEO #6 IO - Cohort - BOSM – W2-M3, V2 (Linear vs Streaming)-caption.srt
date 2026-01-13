@@ -1,0 +1,168 @@
+1
+00:00:02,000 --> 00:00:09,020
+For 50 years, sports media economics were simple:
+Broadcast games on TV, sell ads, make money.
+
+2
+00:00:09,220 --> 00:00:11,587
+Then streaming arrived.
+
+3
+00:00:11,787 --> 00:00:16,496
+Linear TV vs. Streaming: Fundamentally different economics.
+
+4
+00:00:16,696 --> 00:00:19,774
+Let's compare them side-by-side.
+
+5
+00:00:21,574 --> 00:00:23,318
+Revenue Models.
+
+6
+00:00:24,918 --> 00:00:29,628
+Linear TV: Advertising at 70-80% plus carriage fees at 20-30%.
+
+7
+00:00:29,628 --> 00:00:34,249
+Cable providers distribute sports networks to subscribers.
+
+8
+00:00:34,249 --> 00:00:38,603
+Ad rates: $40-70 per thousand viewers for premium sports.
+
+9
+00:00:38,603 --> 00:00:43,402
+Streaming: Subscriptions at 80-95% plus optional ads at 5-20%.
+
+10
+00:00:43,402 --> 00:00:46,068
+Fans pay $10-30 per month directly.
+
+11
+00:00:46,068 --> 00:00:52,022
+More predictable revenue—subscribers pay monthly
+regardless of viewership.
+
+12
+00:00:52,022 --> 00:00:55,399
+Key difference: Linear monetizes audience.
+
+13
+00:00:55,599 --> 00:00:58,765
+Streaming monetizes subscribers.
+
+14
+00:01:00,565 --> 00:01:02,398
+Cost Structures.
+
+15
+00:01:02,598 --> 00:01:09,174
+Linear TV: Rights fees at 60-70% plus production at 20-30% plus low
+distribution costs.
+
+16
+00:01:09,174 --> 00:01:12,906
+Infrastructure already exists—cable networks.
+
+17
+00:01:12,906 --> 00:01:20,193
+Streaming: Rights fees at 40-50% plus technology at 25-35% plus
+customer acquisition at 20-30%.
+
+18
+00:01:20,193 --> 00:01:25,081
+Must build platform from scratch—$50-100M initial investment.
+
+19
+00:01:25,081 --> 00:01:29,814
+Customer acquisition cost: $50-200 per subscriber.
+
+20
+00:01:29,814 --> 00:01:34,127
+Front-loaded costs—heavy Year 1-3 investment.
+
+21
+00:01:38,627 --> 00:01:40,484
+Profitability Timelines.
+
+22
+00:01:40,984 --> 00:01:43,567
+Linear TV: Immediate if priced right.
+
+23
+00:01:43,567 --> 00:01:49,703
+If ad revenue plus carriage fees exceeds rights plus production,
+you're profitable Day 1.
+
+24
+00:01:49,703 --> 00:01:57,292
+But assumes stable viewership—cord-cutting risk.Streaming: 3-5 years
+using customer lifetime value model.
+
+25
+00:01:57,292 --> 00:02:01,732
+Year 1-2: Heavy losses building platform, acquiring customers.
+
+26
+00:02:01,932 --> 00:02:04,854
+Year 3-4: Approaching break-even.
+
+27
+00:02:05,254 --> 00:02:07,450
+Year 5+: Profitability.
+
+28
+00:02:07,650 --> 00:02:13,382
+Requires customer lifetime value exceeding customer
+acquisition cost.Key Risks.
+
+29
+00:02:13,882 --> 00:02:18,887
+Linear TV: Cord-cutting, audience fragmentation,
+generational shift.
+
+30
+00:02:18,887 --> 00:02:23,731
+Canadian market: Traditional pay TV declined from approximately 11.2
+
+31
+00:02:23,731 --> 00:02:28,414
+million subscribers in 2014 to 9.7 million in 2024—about 13% decline
+
+32
+00:02:28,414 --> 00:02:35,760
+over a decade.Streaming: High churn, price sensitivity, competition
+from tech giants, technology costs.
+
+33
+00:02:35,760 --> 00:02:43,349
+Sports-specific streaming services experience higher seasonal churn
+driven by sports calendar variations.
+
+34
+00:02:43,849 --> 00:02:45,706
+Most successful strategy?
+
+35
+00:02:45,906 --> 00:02:46,971
+Hybrid.
+
+36
+00:02:47,171 --> 00:02:52,580
+Maintain linear TV cash flow while building streaming for the
+future.The risk?
+
+37
+00:02:52,580 --> 00:02:56,536
+Cord-cutting cannibalizes faster than streaming grows.
+
+38
+00:02:56,536 --> 00:03:01,380
+This is what happened to Rogers—lost cable subscribers before gaining
+
+39
+00:03:01,380 --> 00:03:08,081
+enough streaming subscribers.In your simulation, you'll choose:
+Linear, streaming, or hybrid?
+

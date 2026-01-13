@@ -1,471 +1,151 @@
-# MODULE 7: Wrap-Up & Reflection (BOPPPS: Summary)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+# MODULE 7: Wrap-Up & Anchor Project Milestone 4
+**Version:** 2.0.0 | **Last Updated:** 2026-01-13
 
-**Purpose:** Consolidate Week 4 learning, reflect on journey, connect to Anchor Project Milestone 3
+### Version 2.0.0 Changes
+- **STANDARDIZED:** Minimal exit structure (Key Takeaways + Milestone + What's Next)
+- **REMOVED:** Concept map widget, reflection prompts, detailed instructions, optional resources, AI chat
+- **CONSOLIDATED:** Week 5 preview into single "What's Next" infobox
 
-**Uplimit Structure:** Final module in Unit 4 (Week 4)
+**Purpose:** Complete CFL Expansion Milestone 4, transition to Week 5
+
+**Uplimit Structure:** Final module in Unit 4
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Week 4 journey recap | Type directly | Summarize what students learned |
-| 2 | **⚙ iFrame Widget** ◐ Recommended | **Week 4 Concept Map** | Embed widget | Interactive visualization of frameworks |
-| 3 | **▬ Text** ⬤ Required | Reflection prompts | Type directly | Process learning, connect to big picture |
-| 4 | **ⓘ Infobox (Callout)** ⬤ Required | Anchor Project Milestone 3 reminder | Type directly | Due this week, application of Week 4 |
-| 5 | **▬ Text** ◐ Recommended | Preview Week 5 | Type directly | Build anticipation for final week |
-| 6 | **◈ AI Chat Widget** ○ Optional | "Office hours" | Configure in Uplimit | Final questions before moving on |
+| 1 | **ⓘ Infobox (Callout)** ⬤ Required | Week 4 key takeaways | Type directly | 5 critical insights |
+| 2 | **▬ Text** ⬤ Required | Anchor Project Milestone 4 Introduction | Type directly | Sets context for milestone |
+| 3 | **ⓘ Infobox (Assessment)** ⬤ Required | Milestone 4 Brief | Type directly | Purple variant, 20 points |
+| 4 | **📤 File Response** ⬤ Required | Milestone 4 Submission | Configure in Uplimit | File upload |
+| 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Week 5 |
 
 ---
 
-## Element 1: Week 4 Journey Recap
+## Element 1: Infobox Content
+
+```
+Title: ◉ Week 4 Key Takeaways
+
+You've completed your deep dive into athlete brands and emerging sports! The five critical insights: (1) athletes build wealth through five revenue streams—endorsements, owned businesses, investments, media/content, and licensing—not just prize money, (2) equity compounds while fees don't, making owned assets dramatically more valuable than endorsement deals over time, (3) women's sports and emerging markets offer first-mover opportunities with 300%+ growth rates versus established leagues, (4) post-career planning must happen during playing career when brand value is highest—78% of NFL players go broke because they didn't build equity, and (5) the Serena Williams playbook (30% endorsements / 70% equity) creates generational wealth that endorsement-heavy portfolios cannot match. This foundation prepares you for Week 5's focus on legacy properties, cultural impact, and the future of sports business—plus your final capstone presentation. Well done!
+
+**Up Next:** CFL Expansion Milestone 4, then Week 5 preview.
+```
+
+---
+
+## Element 2: Anchor Project Milestone 4 Introduction
 
 **Uplimit Implementation:**
 1. Select **Text** element
 2. Copy markdown below:
 
 ```markdown
-# Week 4 Complete: From Athlete Brands to Generational Wealth
+## CFL Expansion Project: Milestone 4 - Brand Ambassador & Launch Strategy
 
-Congratulations on completing Week 4! You've transformed from someone who thought "athlete brand = endorsements" into a strategic advisor who can design comprehensive wealth-building architectures for elite athletes.
+Your CFL expansion franchise needs more than sponsors—it needs faces. In Milestones 1-3, you analyzed the market, designed media strategy, and built a sponsorship portfolio. Now you'll create a brand ambassador strategy and launch campaign.
 
-## Your Journey This Week
+**Your Challenge:** Design a brand ambassador and launch strategy for your CFL expansion team that leverages athlete brands to build market presence.
 
-### **Module 0: The Hook**
-You started with a puzzle: How does Serena Williams build net worth far exceeding her $95M prize money? Her substantial wealth came from somewhere other than playing tennis—but where?
+**Why This Matters:** New franchises lack the 50-year history that established teams use to build fan loyalty. Athlete ambassadors can accelerate brand building by lending their personal brands to your new franchise.
 
-### **Module 1: The Framework**
-You learned the four capabilities that explain athlete brand building:
-- **WLO 4.1:** Five revenue streams (endorsements, owned businesses, investments, media/content, licensing)
-- **WLO 4.2:** Owned assets vs. endorsement strategy (equity building vs. fee income)
-- **WLO 4.3:** Women's sports and emerging sports investment opportunities (first-mover advantages)
-- **WLO 4.4:** Post-career transition strategy (sustaining wealth after retirement)
-
-### **Module 2: The Practitioners**
-You heard from experts who've actually built athlete brands:
-- Sports agent explaining when to take endorsements vs. build equity
-- Don Rea (PGA Tour) discussing golf's global expansion into emerging markets
-- Women's sports investment experts sharing why NWSL offers better returns than MLS
-
-### **Module 3: The Experimentation**
-You built athlete portfolios using interactive exercises and discovered:
-- Why equity compounds while fees don't (the math behind Michael Jordan's $2.6B Nike royalties)
-- How NWSL's 18% IRR compares to S&P 500's 10% (and whether the risk is worth it)
-- Why Serena's 70% equity allocation creates 160% more wealth than 70% endorsements
-
-### **Module 4: The Simulation**
-You simulated career paths and saw:
-- How lifestyle spending (30% vs. 80% of income) affects retirement wealth by $150M+
-- Why 78% of NFL players go broke (they built no equity during playing career)
-- How Magic Johnson's business empire ($1.2B) exceeded his playing earnings by 25x
-
-### **Module 5: The Real Case**
-You analyzed Serena Williams' actual strategy and discovered:
-- She allocated 30% endorsements / 70% equity—not by accident, by design
-- Serena Ventures ($111M fund) delivered 25-35% IRR by investing in underrepresented founders
-- Her NWSL investments captured 10-15x returns as first mover
-- S by Serena and Serena Ventures were built DURING career to sustain value AFTER retirement
-
-### **Module 6: The Assessment**
-You demonstrated mastery by designing a 10-year athlete brand strategy for a hypothetical client, applying all four frameworks and proving you can solve real strategic problems.
-
----
-
-## What You Can Do Now That You Couldn't Do Before
-
-**Before Week 4, you thought:**
-- Athlete brands = endorsements + prize money
-- Success = signing biggest deals
-- Women's sports are risky because revenue is low
-- Post-career planning happens after retirement
-
-**After Week 4, you know:**
-- Athlete brands = strategic portfolio across 5 revenue streams, prioritizing equity over fees
-- Success = building generational wealth ($200M+), not maximizing short-term income
-- Women's sports are opportunity because growth rate (35%) exceeds men's (7%) despite lower revenue
-- Post-career planning MUST happen during playing career when brand value is highest
-
-**The difference? Strategic frameworks that separate elite wealth builders from broke retired athletes.**
-
----
-
-## Key Insights You'll Remember
-
-### **1. The Mathematics of Wealth**
-Equity beats fees over time because of compounding. Michael Jordan's $2.6B from Nike royalties vs. $93M playing salary isn't luck—it's mathematics. Ownership creates exponential returns; fees create linear income.
-
-### **2. The Women's Sports Arbitrage**
-NWSL franchises grew from $3M (2015) to $40M+ (2023) while MLS franchises grew from $300M to $500M. The 13x return vs. 1.7x return isn't random—it's first-mover advantage in undervalued markets.
-
-### **3. The Post-Career Cliff**
-Athlete brand value declines 60-80% within 5 years of retirement unless sustained by owned assets. The difference between broke and wealthy isn't career earnings—it's what you built with those earnings.
-
-### **4. The Serena Williams Playbook**
-Live on 30-40% of income. Invest 50-60% in owned businesses and equity. Build assets during peak brand value (ages 25-35) that compound for 50 years post-retirement. Own, don't endorse.
-
----
-
-## Your Transformation This Week
-
-You entered Week 4 thinking athlete branding was about landing endorsement deals.
-
-You're leaving Week 4 as a strategic advisor who can:
-- Design 10-year wealth-building portfolios
-- Calculate NPV trade-offs between endorsements and equity
-- Identify first-mover opportunities in emerging markets
-- Build post-career transition plans that preserve wealth for 50+ years
-
-**That's not incremental learning. That's transformation.**
+**Apply Week 4 Frameworks:**
+- Identify potential brand ambassadors (current/former CFL players, local athletes)
+- Apply the owned vs. endorsed analysis to your ambassador strategy
+- Consider how women's sports athletes might open new fan segments
+- Design a launch campaign that builds buzz before the first game
 ```
 
 ---
 
-## Element 2: Week 4 Concept Map Widget
-
-### ⚙ Interactive Activity: Week 4 Concept Map
-
-**Practice: Synthesis of all Week 4 WLOs (4.1-4.4)**
-
-You've learned four distinct frameworks this week—five revenue streams, owned assets vs. endorsements, women's sports investment thesis, and post-career wealth preservation. But how do these frameworks connect? This interactive concept map reveals the relationships you might have missed. It's a visual knowledge network showing how every concept, athlete example, and strategic principle links together.
-
-Click on any node to explore its definition and connections. Start with the four Module Learning Outcomes at the center, then trace outward to revenue streams, strategic concepts (equity vs. fees, compounding returns, first-mover advantage), and real athlete examples (Serena, LeBron, Michael Jordan, Magic Johnson). You'll see patterns emerge: why certain athletes succeeded where others failed, how strategic decisions cascade into long-term outcomes, and which frameworks apply to which situations.
-
-**What you'll discover:**
-
-- Visual connections between all four WLOs—see how revenue streams feed into equity decisions, which inform investment choices, which enable post-career wealth
-- Concept relationships: How "equity vs. fees" connects to "compounding returns" connects to "wealth preservation" in a logical strategic chain
-- Athlete pattern recognition: Why Serena, LeBron, and Magic all prioritized owned businesses despite different sports and eras
-- Strategic synthesis: The underlying principles that make athlete brand-building successful across all contexts
-
-**Time commitment:** 10-15 minutes
-**Learning outcomes practiced:** Synthesis and integration of all Week 4 WLOs (4.1, 4.2, 4.3, 4.4)
-
----
-
-**Widget Purpose:** Interactive visualization showing how Week 4 frameworks connect
-
-**File:** `week4-concept-map.html`
-
-**Functionality:**
-- Visual node-link diagram showing relationships between:
-  - 5 revenue streams
-  - Owned assets vs. endorsements
-  - Women's sports investment thesis
-  - Post-career transition strategy
-  - Real examples (Serena, LeBron, MJ, Magic Johnson)
-- Click nodes to see definitions and key insights
-- Shows learning progression from Module 0 → Module 6
-
-**Uplimit Embed Code:**
-```html
-<iframe
-  src="https://jkruckivey.github.io/business-of-sports-marketing/widgets/week4-concept-map.html"
-  width="100%"
-  height="700"
-  style="border: none; border-radius: 8px;"
-  title="Week 4 Concept Map - Interactive visualization of athlete brand frameworks"
-  aria-label="Interactive concept map visualization showing relationships between Week 4 learning outcomes and key frameworks including five revenue streams, equity versus fees, and real athlete examples"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
----
-
-## Element 3: Reflection Prompts
-
-**Uplimit Implementation:**
-1. Select **Text** element
-2. Copy markdown below:
-
-```markdown
-# Reflect: What Will You Remember from Week 4?
-
-Take 10 minutes to reflect on your Week 4 journey. These prompts will help you consolidate learning and connect to your broader goals.
-
----
-
-## **Reflection Prompt 1: Personal Insight**
-
-**What was your biggest "aha!" moment this week?**
-
-Was it:
-- Seeing the mathematics of why equity beats fees (NPV calculations in Module 3)?
-- Discovering that NWSL offers better ROI than MLS (Emerging Sports Investment Tool)?
-- Understanding why 78% of NFL players go broke (lifestyle spending + no equity)?
-- Analyzing Serena Ventures' 25-35% IRR (underrepresented founders = undervalued assets)?
-
-Write 2-3 sentences describing what clicked for you—and why it matters.
-
----
-
-## **Reflection Prompt 2: Strategic Application**
-
-**How will Week 4's frameworks change your approach to your Anchor Project?**
-
-Specifically:
-- Are you building fee-based income or equity-based wealth in your project?
-- If your project involves partnerships, should you structure as revenue share (equity) or flat fees?
-- If your project targets emerging markets or women's sports, can you apply the first-mover advantage thesis?
-- How does your project create long-term value that compounds over time?
-
-Write 3-4 sentences connecting Week 4 insights to specific Anchor Project decisions.
-
----
-
-## **Reflection Prompt 3: Long-Term Career Impact**
-
-**What's one athlete brand principle you'll apply to your own career?**
-
-Even if you never work with athletes, the wealth-building principles apply:
-- Prioritize equity (ownership in startups, businesses) over salary (W-2 income)
-- Invest in undervalued markets where you can be a first mover
-- Build assets during peak earning years (ages 30-50) that compound for decades
-- Plan for 50-year career (20 years building + 30 years compounding)
-
-Write 2-3 sentences describing how you'll apply athlete brand strategy to your own wealth building.
-
----
-
-## **Reflection Prompt 4: Connecting the Weeks**
-
-**How does Week 4 build on Weeks 1-3?**
-
-- **Week 1:** You learned how leagues and teams generate revenue (5 streams, revenue sharing)
-- **Week 2:** You learned how media and content drive fan engagement
-- **Week 3:** You learned how sponsorship and betting amplify revenue ecosystems
-- **Week 4:** You learned how individual athletes build brands and wealth within those ecosystems
-
-Write 2-3 sentences connecting this week's athlete focus to prior weeks' league/team focus. How do these layers interact?
-
----
-
-## Consolidate Your Learning
-
-After reflecting, write down:
-- **1 framework you'll definitely use** (from Modules 1-6)
-- **1 insight you'll share** (with classmates, colleagues, or on LinkedIn)
-- **1 question you still have** (explore further or ask in office hours)
-
-**Remember:** Reflection isn't busy work—it's how learning becomes long-term memory and actionable capability.
-```
-
----
-
-## Element 4: Infobox - Anchor Project Milestone 3 Reminder
+## Element 3: Infobox - Milestone 4 Brief
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
-2. Choose variant: **Callout**
+2. Choose variant: **Assessment** (purple)
 3. Copy markdown below:
 
 ```markdown
-Title: ⏰ Reminder: Anchor Project Milestone 3 Due This Week
+Title: ▪ Anchor Project Milestone 4: Brand Ambassador & Launch Strategy (20 points)
 
-Anchor Project Milestone 3 (Implementation Roadmap) is due end of Week 4. Your submission should include a 12-18 month execution plan, resource allocation across revenue streams, strategic partnerships, risk mitigation strategies, and financial projections. Apply Week 4 learning: Use WLO 4.1 to map revenue streams, WLO 4.2 to structure partnerships as equity joint ventures, WLO 4.3 to justify growth projections in women's sports or emerging markets, and WLO 4.4 to design long-term value sustainability. Reference your Week 4 athlete brand memo as a proven framework. Submit to Anchor Project portal by Sunday 11:59 PM.
+**Deliverable:** 2-3 page brand ambassador and launch strategy
+
+**Required Components:**
+1. **Ambassador Strategy** (1 page): 2-3 target ambassadors with rationale, roles, and activation plans
+2. **Launch Campaign Timeline** (1 page): 18-month pre-launch to first game campaign with key milestones
+3. **Community Integration** (0.5 page): Youth programs, school partnerships, and local talent pipeline
+
+**Grading Rubric (20 points):**
+- Ambassador Selection (6 pts): Strategic ambassador choices with clear rationale and fit
+- Launch Campaign (6 pts): Creative, feasible timeline with measurable milestones
+- Community Integration (4 pts): Authentic local connections beyond transactional sponsorship
+- Professional Presentation (4 pts): Clear writing, logical organization
+
+**Due:** End of Week 4
+
+**Connection to Final Proposal:** Milestone 4 completes your franchise strategy. Week 5 synthesizes Milestones 1-4 into your final CFL expansion proposal.
 ```
 
 ---
 
-## Element 5: Preview Week 5
+## Element 4: File Response Question - Milestone 4 Submission
 
 **Uplimit Implementation:**
-1. Select **Text** element
-2. Copy markdown below:
+1. Select **Exercise → File Response Question**
+2. Configure the following fields:
 
-```markdown
-# Preview Week 5: Legacy, Culture & the Future of Sports Business
-
-You've mastered the fundamentals of sports business over four weeks:
-- **Week 1:** Where revenue comes from (5 streams, revenue sharing, ecosystem thinking)
-- **Week 2:** How media and content drive engagement (streaming wars, fan monetization)
-- **Week 3:** How sponsorship and betting amplify revenue (ROI, integration, growth drivers)
-- **Week 4:** How athletes build brands and wealth (equity, emerging markets, post-career strategy)
-
-**Week 5 brings it all together** with a focus on legacy, culture, and what's next:
-
----
-
-## **Week 5 Theme: Legacy, Culture & Future of Sports**
-
-**Case Study:** Hockey Hall of Fame (Custom Case Study)
-
-**Executive Perspectives:**
-- Jamie Dinsmore, President & CEO, Hockey Hall of Fame (heritage property management)
-- Keith Pelley, President & CEO, MLSE (Toronto Maple Leafs, Raptors, TFC—legacy franchises balancing tradition and innovation)
-
-**Core Focus:**
-- Heritage properties: How to monetize nostalgia and tradition (Hall of Fame, legacy teams)
-- Balancing tradition vs. innovation (respecting history while adopting new technology)
-- Future trends in sports business (AI, virtual experiences, global expansion, climate impact)
-- Cultural impact of sports (social justice, inclusion, community connection)
-- Your final Anchor Project presentation (synthesis of 5 weeks)
-
-**Capstone Experience:**
-Week 5 culminates with your **Final Anchor Project Presentation** where you'll present your fully developed sports business opportunity to peers and faculty, demonstrating mastery of all 5 weeks' frameworks.
-
----
-
-## **What to Expect Next Week**
-
-Unlike Weeks 1-4 which focused on building specific capabilities, Week 5 is **integrative and forward-looking**:
-
-- Module 1: The business of nostalgia (how heritage properties generate revenue)
-- Module 2: Balancing tradition and innovation (case studies of successful and failed attempts)
-- Module 3: Future trends shaping sports business (AI, VR, sustainability, global expansion)
-- Module 4: Cultural and social impact of sports (beyond financial metrics)
-- Module 5: Capstone - Final Anchor Project Presentations
-- Module 6: Course wrap-up and final reflection
-
-**Week 5 Tests:** Can you synthesize 5 weeks of learning to analyze complex, ambiguous problems and present strategic recommendations with confidence?
-
-**Get Ready:** Rest this weekend, complete Milestone 3, and come back Monday ready for the final push!
+**Question:**
+```
+Submit your CFL Expansion Milestone 4: Brand Ambassador & Launch Strategy. Your submission should be 2-3 pages and include all 3 required components: Ambassador Strategy, Launch Campaign Timeline, and Community Integration.
 ```
 
+**Additional Instructions (optional):**
+```
+Your submission will be evaluated using the rubric below (20 points total):
+
+• Ambassador Selection (6 pts) - Strategic choices with clear rationale
+• Launch Campaign (6 pts) - Creative, feasible timeline with milestones
+• Community Integration (4 pts) - Authentic local connections
+• Professional Presentation (4 pts) - Clear writing, logical organization
+
+Accepted formats: PDF, DOCX
+Filename suggestion: LastName_M4_LaunchStrategy.pdf
+```
+
+**Template:** No template required
+
 ---
 
-## Element 6: AI Chat Widget - Office Hours
+## Element 5: Infobox - What's Next
 
 **Uplimit Implementation:**
-1. Select **AI Chat** element
-2. Configure:
+1. Select **Infobox** element
+2. Choose variant: **Next Steps** (green)
+3. Copy markdown below:
 
-**Widget Name:** "Week 4 Office Hours"
-
-**System Prompt:**
 ```
-You are a teaching assistant providing Week 4 office hours for MBA students completing the Athletes, Brands & Emerging Sports unit. Help students with:
+Title: ✓ What's Next: Week 5
 
-- Clarifying Week 4 frameworks and concepts
-- Connecting Week 4 learning to Anchor Project Milestone 3
-- Answering questions about the athlete brand assessment
-- Providing feedback on draft strategies (if requested)
-- Explaining financial calculations (NPV, IRR, projections)
-- Previewing Week 5 and answering questions about what's coming
+**Week 5: Legacy, Culture & The Future of Sports**
 
-Provide supportive, clear guidance. Ask probing questions to help students discover answers rather than giving direct answers immediately.
-```
+The final week brings everything together. You'll explore how heritage properties balance tradition with innovation, analyze emerging trends shaping sports business, and synthesize all four weeks into your final CFL expansion proposal.
 
-**Welcome Message:**
-```
-Hi! Welcome to Week 4 office hours. I'm here to answer any remaining questions about athlete brand frameworks, your assessment, or how Week 4 connects to your Anchor Project. What can I help clarify?
+**Core Case:** Hockey Hall of Fame: Heritage Monetization
+**Focus Areas:** Legacy vs. innovation tension, future trends (AI, VR, sustainability), cultural impact, strategic synthesis
+
+**Milestone 5 (Final Proposal):** Synthesize Milestones 1-4 into a comprehensive CFL expansion proposal for the league's Board of Governors. This is your capstone deliverable.
+
+See you in Week 5—the home stretch!
 ```
 
 ---
 
-## MODULE 7 Complete - Week 4 Complete!
+## Instructor Notes
 
-**Congratulations!** You've completed Week 4: Athletes, Brands & Emerging Sports.
+**Module 7 Purpose:**
+- Consolidate Week 4 learning through key takeaways
+- Complete Milestone 4 submission
+- Clean transition to Week 5 capstone
 
-### Week 4 Summary:
-
-**Modules:** 7 modules (Bridge In → Core Content → Case Study → Assessment → Wrap-Up)
-
-**Learning Outcomes Mastered:**
-- ✅ WLO 4.1: Five athlete revenue streams (endorsements, owned businesses, investments, media/content, licensing)
-- ✅ WLO 4.2: Owned assets vs. endorsement strategy (equity building vs. fee income)
-- ✅ WLO 4.3: Women's sports and emerging sports investment opportunities
-- ✅ WLO 4.4: Post-career transition strategies for wealth preservation
-
-**Case Study:** Serena Williams: Building a Brand (HBS 517050)
-
-**Assessment:** Athlete Brand Strategy Memo (1200-1500 words demonstrating all 4 WLOs)
-
-**Time Investment:** ~4-5 hours (videos 30 min, case 60 min, widgets 90 min, assessment 90 min)
-
-**Anchor Project Connection:** Milestone 3 (Implementation Roadmap) due end of Week 4
-
----
-
-## 🎯 FINAL PROJECT CONNECTION
-
-**How Week 4 Supports Your Final Strategic Vision:**
-
-Week 4 taught you how athletes build generational wealth and how to identify high-growth investment opportunities. This strategic thinking applies directly to your Week 5 capstone.
-
-**What You Mastered:**
-- Five athlete revenue streams and which create equity-based wealth vs. fee-based income
-- Owned asset strategy (businesses, investments) vs. endorsement strategy (short-term cash flow)
-- Women's sports and emerging sports investment thesis (undervalued assets with 300% faster growth)
-- Post-career transition strategies that preserve wealth over decades
-
-**How to Apply This to Your Final Project:**
-
-Your Week 5 strategic vision integrates Week 4's athlete brand frameworks across multiple dimensions:
-
-- **Partnership Strategy:** If your property involves athlete deals, use Week 4's equity vs. endorsement framework to structure relationships. Prioritize long-term alignment over short-term transactions.
-- **Growth Opportunities:** If your property targets women's sports or emerging markets, reference Week 4's investment thesis with quantitative growth data. This justifies premium valuations and aggressive investment.
-- **Long-Term Value Creation:** Week 4 taught that equity compounds, income doesn't. Apply this principle throughout your vision: prioritize investments that build enterprise value over those that generate one-time revenue.
-
-**Integration Across All Weeks:**
-- Week 1 = Revenue ecosystem foundation
-- Week 2 = Media rights specialization
-- Week 3 = Sponsorship/betting specialization
-- **Week 4 = Athlete brand & emerging sports specialization**
-- Week 5 = Synthesis into 5-year vision
-
-**Real-World Application:** The athlete wealth-building strategies you mastered apply to property-level strategy. Your Week 5 capstone must demonstrate you can build assets, not just generate revenue—Week 4 taught you how.
-
----
-
----
-
-## Element 7: Additional Readings - Women's Sports & Emerging Markets
-
-**Uplimit Implementation:**
-1. Select **Details** (accordion) element
-2. Copy markdown below:
-
-```markdown
-Title: Optional Extension Resources: Women's Sports Growth & Emerging Markets
-
-[Expand for additional readings and research]
-
-### Women's Sports Growth & Investment
-
-**1. McKinsey: "Women's Sports Market Growth: A $2.5 Billion Opportunity"**
-Core data on 250-300% revenue/sponsorship growth potential; undervalued assets thesis.
-🔗 [Read Report](https://www.mckinsey.com/industries/media-and-entertainment/our-insights/womens-sports)
-
-**2. Parity: "Beyond Viewership: Why Women's Sports Sponsorships Drive Deeper Brand Engagement"**
-Brand lift and engagement metrics; why women's sports fans convert for sponsors.
-🔗 [Read Article](https://www.parity.org/resources)
-
-**3. Sports Business Journal: "Women's Sports Sponsorships: Changing the Game"**
-Case studies (Ally, Sprouts, etc.) on activation and ROI in women's sports.
-🔗 [Read Article](https://www.sportsbusinessjournal.com)
-
-### Emerging Sports Evaluation
-
-**4. Deloitte: "Future of Sports: Emerging Sports and Fan Experience"**
-How to evaluate new formats (pickleball, esports) for media viability and monetization.
-🔗 [Read Report](https://www2.deloitte.com/us/en/pages/technology-media-and-telecommunications/articles/future-of-sports.html)
-
-**5. Fairgrounds / Matt Rubinoff Case Materials**
-Proof-of-concept methodology for scaling emerging sports; demographics/accessibility focus.
-(Reference your Module 2 executive interview notes)
-
-### Why These Matter
-
-These readings extend Week 4's investment thesis with current market data:
-- McKinsey's growth projections validate WLO 4.3's women's sports thesis
-- Parity's engagement data supports sponsorship ROI calculations
-- Deloitte's emerging sports framework applies to pickleball, esports evaluation
-- Use this research to strengthen your Anchor Project's growth assumptions
-```
-
----
-
-### What's Next:
-
-**Immediate:**
-1. Complete Anchor Project Milestone 3 (due end of week)
-2. Review Week 4 reflection prompts (consolidate learning)
-3. Rest and prepare for Week 5 (final week!)
-
-**Week 5 Preview:**
-- Hockey Hall of Fame case study (heritage properties + future trends)
-- Final Anchor Project Presentation (capstone experience)
-- Course wrap-up and final reflection
-
----
-
-**See you in Week 5—the final push!**
+**Grading Notes:**
+- Ambassador choices should fit the chosen market from Milestone 1
+- Launch campaign should demonstrate understanding of athlete brand value
+- Community integration should feel authentic, not performative

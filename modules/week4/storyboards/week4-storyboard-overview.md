@@ -22,7 +22,7 @@ Analyze how elite athletes build strategic brands and assess emerging sports inv
 **Executive Guest:**
 - **Matt Rubinoff (Fairgrounds Co-Founder)** - Emerging sports, brand building, scaling from zero (~38 min interview)
 
-**Case Study:** Serena Williams: Building a Brand (HBS 517050)
+**Case Study:** Serena Williams: Brand Strategy Analysis (course-developed)
 
 **Key Assessment:** Athlete brand strategy recommendation (individual assignment)
 

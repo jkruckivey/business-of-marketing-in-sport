@@ -1,0 +1,90 @@
+1
+00:00:02,000 --> 00:00:06,451
+Why does Coca-Cola pay FIFA hundreds of millions
+to sponsor the World Cup?
+
+2
+00:00:06,451 --> 00:00:11,043
+Because 3.5 billion people watch it— but that's
+not the whole story.
+
+3
+00:00:11,043 --> 00:00:19,083
+Sponsorship has two costs: rights fees—what you pay the property—and
+activation costs—what you spend amplifying the partnership.
+
+4
+00:00:19,083 --> 00:00:22,960
+If a brand pays a property $300M per year in rights, they'll spend
+
+5
+00:00:22,960 --> 00:00:29,274
+$600-900M in activation— ads during matches,
+retail displays, hospitality, branded content.
+
+6
+00:00:29,274 --> 00:00:31,643
+The rights fee is just the entry ticket.
+
+7
+00:00:31,643 --> 00:00:34,371
+In exchange, sponsors receive three things.
+
+8
+00:00:34,371 --> 00:00:38,751
+First, Reach—logo exposure across broadcasts, stadiums, anddigital.
+
+9
+00:00:39,251 --> 00:00:43,845
+Second, Engagement—branded activations,
+hospitality, fan experiences.
+
+10
+00:00:44,345 --> 00:00:49,873
+Third, Category exclusivity—major sponsors block
+competitors from the same tournament.
+
+11
+00:00:49,873 --> 00:00:53,821
+That exclusivity premium is worth 30-50% of the rights fee alone.
+
+12
+00:00:53,821 --> 00:00:59,562
+Brands measure sponsorship like advertising: cost per thousand
+impressions, or CPM.
+
+13
+00:00:59,562 --> 00:01:03,007
+Premium sports advertising reaches $5,000-10,000 CPM.
+
+14
+00:01:03,007 --> 00:01:07,656
+Sponsorship properties typically command lower CPMs based on
+frequency and context.
+
+15
+00:01:07,856 --> 00:01:09,120
+Why lower CPM?
+
+16
+00:01:09,520 --> 00:01:10,657
+Frequency.
+
+17
+00:01:10,857 --> 00:01:13,467
+Fans see a jersey sponsor 20-30 times per season.
+
+18
+00:01:13,467 --> 00:01:16,842
+That repetition builds brand recall better than one-time ads.
+
+19
+00:01:18,242 --> 00:01:22,317
+Next, you'll use the Sponsorship Valuation
+Calculator to model real deals.
+
+20
+00:01:22,317 --> 00:01:28,293
+Input reach, frequency, and costs to calculate CPM and exposure
+value— the first step in ROI analysis.
+

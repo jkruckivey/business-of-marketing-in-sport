@@ -1,31 +1,53 @@
-# MODULE 0: Bridge In - The Heritage Monetization Dilemma (BOPPPS: Bridge + Pre-Assessment)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+# MODULE 0: Bridge-In - The Heritage Monetization Dilemma
+**Version:** 2.1.0 | **Last Updated:** 2026-01-13
 
-**Purpose:** Hook students with the tradition vs. innovation tension, reframe outcomes as challenges, enable self-assessment
+### Version 2.1.0 Changes
+- **RESTORED:** Graphic novel with consistent introduction pattern
 
-**Uplimit Structure:** First module in Unit 5 (Week 5)
+### Version 2.0.0 Changes
+- **STANDARDIZED:** Module structure to match course-wide template
+- **REMOVED:** Transition text (redundant with Module 1 intro)
 
-**LEGEND - Storyboard Notation:**
-- **⬤ Required** / **◐ Recommended** / **○ Optional** = Priority badges (storyboard notation only, not Uplimit elements)
-- Element icons (▶ Video, ⓘ Infobox, ▬ Text, etc.) = Map to Uplimit's actual element types in the builder
+**Purpose:** Hook students with tradition vs. innovation tension, enable diagnostic self-assessment
+
+**Uplimit Structure:** First module in Unit 5
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▶ Video** ⬤ Required | Heritage monetization dilemma (3-4 min) | Upload `week5-bridge-scenario.mp4` + VTT | Real executive facing legacy property challenge |
-| 2 | **◈ AI Roleplay** ◐ Recommended | The Heritage Dilemma diagnostic | Configure in Uplimit | Reveal knowledge gaps before learning begins |
-| 3 | **ⓘ Infobox** ⬤ Required | The tradition vs. innovation problem statement | Type directly | Use **Callout** variant, urgent strategic challenge |
-| 4 | **⚙ iFrame Widget** ⬤ Required | **Heritage Strategy Pre-Assessment** (Challenges + 10-Question Quiz) | Embed widget | Combined challenge preview with self-diagnostic quiz |
-| 5 | **ⓘ Infobox** ◐ Recommended | What your results mean + learning path | Type directly | Use **Insight** variant, personalized guidance |
+| 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload `week5-bridge-scenario.mp4` + VTT | Hockey Hall of Fame dilemma |
+| 2 | **◈ AI Roleplay** ◐ Recommended | The Heritage Dilemma diagnostic | Configure in Uplimit | Reveal knowledge gaps |
+| 3 | **ⓘ Infobox (Callout)** ⬤ Required | The heritage monetization problem statement | Type directly | Blue variant |
+| 4 | **⚙ iFrame Widget** ⬤ Required | Pre-Assessment Quiz | Embed `heritage-strategy-pre-assessment.html` | 10-question diagnostic |
+| 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Personalized guidance |
+| 6 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "The Hall" | Embed PDF or images | Hockey heritage story |
 
 ---
 
-## Element 1: Bridge Video Scenario
+## Element 1: Bridge Video Scenario `[v1.4.0]`
 
-**File:** `week5-bridge-scenario.mp4`
-**Duration:** 3-4 minutes
-**VTT File:** `week5-bridge-scenario.vtt` (required for accessibility)
-**Format:** Direct-to-camera SME presentation OR b-roll with voiceover
-**Script:** SME introduces the Hockey Hall of Fame's heritage monetization challenge
+**Video Title:** "The Heritage Monetization Dilemma"
+**Caption File:** `Videos/HeyGen Scripts/VIDEO #17 IO - Cohort - BOSM – W5-M0, V1 (Bridge-In Hook)-caption.srt`
+**Video Status:** ✅ Produced - Caption file available
+**Duration:** 2 minutes
+**Format:** Direct-to-camera AI presenter
+
+**Video Content Summary (from caption):**
+```
+[0:00-0:08] The Dilemma
+"Executives at heritage sports properties face an impossible choice: Preserve tradition and watch revenues decline, or innovate aggressively and risk losing your soul."
+
+[0:13-0:30] The Scenario
+"Imagine you're CEO of a heritage institution. Your institution generates steady annual revenue—respectable, but flat over several years. Your board proposes transformation: VR experiences, AI-powered tours, pop-ups in new markets. The projections show you could increase annual revenue substantially."
+
+[0:30-0:46] The Catch
+"But there's a catch. Your curatorial staff resigns in protest—they call it commercialization. Long-time members cancel. Donors who value authenticity threaten to leave. If you lose credibility, you lose donations AND your position as the authoritative voice in your field."
+
+[0:46-1:02] The Question
+"The question isn't 'Can we make more money?' It's 'Can we grow WITHOUT losing what makes us valuable?' This is the heritage monetization dilemma."
+
+[1:02-1:18] Week Preview & Diagnostic
+"This week, you'll learn frameworks for balancing tradition with innovation. You'll hear from executives who've made these decisions. And you'll develop your own strategic vision. But first: Could you solve this now? Take the diagnostic to find out."
+```
 
 ### Video Script: "The Heritage Dilemma" (SME Direct-to-Camera)
 
@@ -495,101 +517,47 @@ Let's see what you've got! ↓
 3. Copy the markdown below into the infobox content field
 
 
-Title: What Your Pre-Assessment Results Mean
+Title: 💡 What Your Pre-Assessment Results Mean
 
-Your quiz results create a personalized learning path for this final week. Lower scores (0-4/14) suggest spending extra time with Module 3's Legacy vs Innovation Matrix framework and all interactive exercises—you're building heritage property strategy from scratch, which is perfect for developing strong synthesis skills. Higher scores (10-14/14) indicate solid strategic thinking, so challenge yourself with the Hockey Hall of Fame Transformation Simulation and final Strategic Vision Memo. Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently and identify where to focus your energy. Now that you know where you stand, let's solve those heritage strategy problems and create your 5-year vision.
+Your quiz results create a personalized learning path for this final week. Lower scores (0-4/10) suggest spending extra time with Module 3's Legacy vs Innovation Matrix framework and all interactive exercises—you're building heritage property strategy from scratch, which is perfect for developing strong synthesis skills. Higher scores (7-10/10) indicate solid strategic thinking, so challenge yourself with the Hockey Hall of Fame Transformation Simulation and final Strategic Vision Memo. Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's master the art of balancing legacy with innovation.
+```
 
 ---
 
 ## Element 6: Graphic Novel - "The Hall"
 
-**Purpose:** Visual narrative that introduces the week's key concepts through storytelling.
+**Uplimit Implementation:**
+1. Select **Text** element for intro
+2. Select **iFrame** or **Image** element for graphic novel
+
+**Introduction Text:**
+```markdown
+### Visual Story: Explore This Week's Concepts
+
+Before diving into the core content, explore this week's concepts through visual storytelling. This graphic novel brings the heritage property strategic challenge to life.
+```
 
 **Graphic Novel:** "The Hall: A Hockey Heritage Story"
 
 **Location:** `modules/shared-resources/graphic-novels/05-the-hall-week5.md`
 
-**Implementation:** Generated using NotebookLM from the script. Upload resulting PDF or embed images in Uplimit.
-
 **Story Synopsis:**
-Follow Elena Kowalski, a Ukrainian-Canadian woman in her 50s serving as museum CEO, as she transforms the Hockey Hall of Fame by balancing tradition with innovation. The story dramatizes the strategic tension between preserving heritage and embracing change.
+Follow Elena Kowalski, a Ukrainian-Canadian museum CEO in her 50s, as she transforms the Hockey Hall of Fame by balancing tradition with innovation. The story dramatizes the strategic tension between preserving heritage and embracing change—and the stakeholders who must be convinced along the way.
 
 **Learning Connection:**
-This narrative introduces the five strategic pillars for heritage properties: Immersive Experiences, Oral Archives, Virtual Access, New Narratives, and Global Community—the core concepts students will analyze this week.
-
-**Accessibility:**
-- Full text script available in `05-the-hall-week5.md`
-- Alt text for each panel included in script
-- High contrast visual style (Retro Sports Illustrated aesthetic)
+This narrative introduces the five strategic pillars for heritage properties: Immersive Experiences, Oral Archives, Virtual Access, New Narratives, and Global Community—the core concepts students will analyze this week through the HHOF case.
 
 ---
 
-## Element 7: Transition Text - From Story to Strategy
+## Instructor Notes
 
-**Text Content:**
+**Module 0 Purpose:**
+- Create cognitive dissonance (the heritage dilemma challenges revenue-first thinking)
+- Reveal knowledge gaps through AI roleplay and pre-assessment
+- Build motivation to learn Week 5 content
+- Graphic novel provides visual entry point for diverse learners
 
-```markdown
-### From Story to Strategy
-
-Elena Kowalski's story illustrates how heritage properties can honor the past while building the future. The Hockey Hall of Fame's transformation shows that innovation isn't the enemy of tradition—it's the delivery mechanism.
-
-**What You'll Master:**
-- How to evaluate heritage properties as revenue assets
-- Frameworks for balancing tradition with innovation
-- Forecasting future trends and integrating them strategically
-- Creating 5-year visions that grow revenue without compromising authenticity
-
-Now let's build the frameworks you need to design heritage property strategies.
-```
-
----
-
-## Module Summary
-
-**What You've Accomplished:**
-You've been hooked by a real strategic dilemma—the Hockey Hall of Fame's tradition vs. innovation challenge—and you've taken your first steps toward solving it. Through the diagnostic conversation and pre-assessment quiz, you've discovered exactly where your strategic thinking excels and where it needs refinement. That self-awareness isn't a weakness—it's your competitive advantage for this week.
-
-**Key Insight:**
-The fact that you struggled with trade-off analysis in the diagnostic is expected. Heritage property strategy is MORE COMPLEX than professional sports business strategy because you're optimizing TWO variables (revenue AND authenticity), not just one (revenue). The frameworks from Weeks 1-4 still matter, but Week 5 adds a new dimension: Brand authenticity is as valuable as profit. Some strategies that maximize revenue fail the authenticity test and must be rejected. That's the tension you'll master this week.
-
-**Up Next: Module 1 - Learning Outcomes**
-Now that you've seen the problem and identified your knowledge gaps, Module 1 will show you exactly what you're going to learn this week—and how it synthesizes everything from Weeks 1-5 into comprehensive strategic thinking. You'll see the four key challenges you'll be able to solve by week's end, transforming you from someone who sees heritage properties as "nice to have" museums into someone who can design 5-year strategic visions that balance growth with authenticity.
-
-Ready to master the art of balancing legacy with innovation? Let's define your learning path!
-
----
-
-## MODULE 0 Complete - Summary
-
-### Elements Created:
-1. ✅ Bridge Video (3-4 min scenario + script with Hockey Hall of Fame dilemma)
-2. ✅ AI Roleplay Scenario (diagnostic conversation with Jamie Dinsmore, full Uplimit config)
-3. ✅ Infobox - Callout variant (heritage monetization problem statement, 93 words)
-4. ✅ iFrame Widget (Heritage Strategy Pre-Assessment: challenge preview + 10-question quiz with personalized learning paths)
-5. ✅ Infobox - Insight variant (results interpretation and learning path guidance)
-
-### Uplimit Compatibility:
-- ✅ AI Roleplay uses actual Uplimit configuration fields (Objective, Scenario Context, AI Role, Student Role, Hidden Context, Feedback Rubric)
-- ✅ Infoboxes use simple paragraph format, 50-100 words, proper variants (Callout, Insight)
-- ✅ Priority badges clearly marked as storyboard notation only
-- ✅ Element icons include legend clarifying they map to Uplimit element types
-- ✅ All content copy-paste ready
-
-### Pedagogical Goals Preserved:
-- ✅ Hook: Hockey Hall of Fame heritage dilemma creates immediate engagement
-- ✅ Diagnostic: AI Roleplay reveals strategic thinking gaps before learning
-- ✅ Pre-assessment: Quiz provides self-diagnostic and personalized learning path specific to Week 5
-- ✅ Motivation: Students discover where their Week 1-4 frameworks DON'T apply, creating "need to know" for Week 5 content
-
-### Total Time Estimate:
-- Video: 3-4 minutes
-- AI Roleplay: 6-8 minutes
-- Reading (Infoboxes + Text): 5-6 minutes
-- Quiz: 12-15 minutes
-- **Total Module 0 time: 26-33 minutes**
-
----
-
-**Ready for implementation!** This Module 0 can be copy-pasted directly into Uplimit using the actual platform configuration fields.
-
-**Next File:** [MODULE 1: Welcome & Learning Objectives](module-1-welcome.md)
+**Graphic Novel Notes:**
+- "The Hall" visualizes heritage property strategy challenges
+- Connects to Hockey Hall of Fame case analysis
+- Optional but recommended for visual/narrative learners

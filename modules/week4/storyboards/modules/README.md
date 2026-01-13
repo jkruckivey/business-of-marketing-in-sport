@@ -2,7 +2,7 @@
 
 **Course:** Business of Sports Marketing
 **Week Focus:** Athlete Brands, Women's Sports Investment, Emerging Sports
-**Primary Case Study:** Serena Williams: Building a Brand (HBS 517050)
+**Primary Case Study:** Serena Williams: Brand Strategy Analysis (course-developed)
 **Executive Guest:** Matt Rubinoff (Fairgrounds Co-Founder)
 
 **Version:** 1.0.0 | **Last Updated:** 2026-01-12
@@ -44,7 +44,7 @@
 **File:** [module-5-case-study.md](module-5-case-study.md)
 **Time:** 30-40 minutes
 **Purpose:** Apply frameworks to Serena Williams' actual brand strategy
-**Case:** Serena Williams: Building a Brand (HBS 517050)
+**Analysis:** Serena Williams' brand strategy using public sources
 
 ### Module 6: Assessment - Brand Strategy Memo
 **File:** [module-6-assessment.md](module-6-assessment.md)

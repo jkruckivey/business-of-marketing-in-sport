@@ -1,5 +1,10 @@
 # MODULE 4: Advanced Interactive Simulations (BOPPPS: Practice)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.5.0 | **Last Updated:** 2026-01-13
+
+### Version 1.5.0 Changes
+- **NEW:** Added pre-widget contextual introductions for Post-Career Wealth Simulator and Athlete Decision Tree
+- **NEW:** Each widget now has student-facing setup explaining purpose, what they'll discover, and time commitment
+- **REMOVED:** Element 5 ("Why 78% of Athletes Go Broke") - content redundant with simulator's built-in context
 
 **Purpose:** Apply athlete brand frameworks to complex scenarios and strategic trade-offs
 
@@ -11,11 +16,10 @@
 | 2 | **⚙ iFrame Widget** ⬤ Required | **Post-Career Wealth Simulator** | Embed widget | Simulate retirement scenarios, see wealth preservation  |
 | 3 | **▬ Text** ◐ Recommended | Reflection prompt | Type directly | Process insights from simulation |
 | 4 | **⚙ iFrame Widget** ◐ Recommended | **Athlete Decision Tree** | Embed widget | Navigate endorsement vs. equity trade-offs |
-| 5 | **▤ Details** ○ Optional | Case study: Why 78% of NFL players go broke | Type directly | Real data on wealth preservation failure |
 
 ---
 
-## Element 1: Module Introduction
+## Element 1: From Theory to Practice: Complex Strategic Scenarios
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -37,11 +41,39 @@ This module features advanced simulations that force difficult decisions with in
 
 ---
 
-## Element 2: Post-Career Wealth Simulator Widget
+## Element 2: Post-Career Wealth Simulator Widget `[v1.3.0]`
 
 **Widget Purpose:** Simulate how different career decisions create dramatically different retirement wealth outcomes
 
 **File:** `post-career-wealth-simulator.html`
+
+### Pre-Widget Context (Copy to Uplimit as Text element BEFORE widget):
+
+```markdown
+## Practice: WLO 4.1 & 4.2 (Career-Stage Wealth Building)
+
+You're about to make 30 years of financial decisions in 10 minutes.
+
+This simulator puts you in control of an elite athlete's career—from rookie years ($2-5M salary) through peak earnings ($10-25M) to the post-career transition when income drops 60-80%. At each phase, you'll make critical decisions about lifestyle spending, savings rates, endorsement deals vs. equity investments, and wealth preservation strategy.
+
+**The stakes are real:** 78% of NFL players are broke within 3 years of retirement. 60% of NBA players face the same fate within 5 years. These athletes earned millions—but made career decisions that destroyed their wealth. You'll see exactly how those decisions compound over decades.
+
+**What you'll discover:**
+- Which career phase has the BIGGEST impact on retirement wealth (hint: it's not what you'd expect)
+- The minimum savings rate during peak years to avoid going broke
+- Why Magic Johnson turned $48M in career earnings into a $1.2 billion empire—and why Allen Iverson turned $200M into bankruptcy
+- How lifestyle spending choices (30% vs. 80% of income) create 10x wealth differences at age 65
+
+**Try the preset scenarios** to see how different strategies play out:
+- **Lifestyle Trap:** High spending, low investing → Broke at 45
+- **Conservative Builder:** Steady savings → $334M at 65
+- **Magic Johnson-style:** Equity investments → $1.2B+
+
+*Time commitment: 10-15 minutes*
+*Learning outcomes practiced: WLO 4.1 (Five revenue streams), WLO 4.2 (Owned assets vs. endorsements)*
+```
+
+---
 
 ### Widget Functionality:
 
@@ -119,9 +151,36 @@ After simulating career paths:
 
 ---
 
-## Element 4: Athlete Decision Tree Widget
+## Element 4: Athlete Decision Tree Widget `[v1.3.0]`
 
 **Widget Purpose:** Interactive decision tree navigating endorsement vs. equity trade-offs
+
+### Pre-Widget Context (Copy to Uplimit as Text element BEFORE widget):
+
+```markdown
+## Practice: WLO 4.2 (Owned Assets vs. Endorsements Strategic Trade-offs)
+
+You're a sports agent advising an elite athlete who just received two competing offers:
+- **(A)** $10 million per year to endorse Nike for three years (guaranteed $30M)
+- **(B)** Invest $2 million to launch their own athletic wear brand (risky but potentially worth $100M+)
+
+Which do you recommend?
+
+This interactive decision tree guides you through the strategic trade-offs athletes face when choosing between guaranteed endorsement fees and risky equity investments.
+
+Unlike the calculators that show you the math, this tool walks you through the **decision-making process** step by step. You'll answer five strategic questions about career stage, brand strength, risk tolerance, capital availability, and time horizon—then receive a personalized recommendation with 20-year wealth projections, risk assessments, and real athlete examples who followed similar paths. It's like having a strategic conversation with a financial advisor.
+
+**What you'll discover:**
+- How career stage (rookie vs. peak vs. veteran) fundamentally changes the endorsement vs. equity calculation
+- Why even a conservative athlete at peak earnings should consider equity (risk is manageable when you have capital buffer)
+- Strategic decision paths: When to take the guaranteed $10M endorsement vs. when to invest in owned businesses
+- Real recommendations: See how LeBron, Serena, and Magic Johnson navigated similar decisions—with 20-year outcome data
+
+*Time commitment: 10-15 minutes*
+*Learning outcomes practiced: WLO 4.2 (Owned assets vs. endorsement strategy and trade-off evaluation)*
+```
+
+---
 
 **Uplimit Embed Code:**
 ```html
@@ -135,71 +194,6 @@ After simulating career paths:
   allowfullscreen
   loading="lazy">
 </iframe>
-```
-
----
-
-## Element 5: Details - Case Study: Why Athletes Go Broke
-
-```markdown
-Title: Case Study: Why 78% of NFL Players Are Broke Within 3 Years of Retirement
-
-[Expand for detailed analysis]
-
-### The Wealth Preservation Crisis
-
-**Statistics:**
-- 78% of NFL players are broke or under financial stress within 3 years of retirement
-- 60% of NBA players are broke within 5 years of retirement
-- Average NFL career: 3.3 years, average earnings: $6.7M total
-- Average NBA career: 4.5 years, average earnings: $24M total
-
-### Why Does This Happen? (Not Lack of Earnings)
-
-**Failed Strategy #1: Fee-Based Income Mindset**
-- Athletes treat playing career as a job (earn salary, spend salary)
-- Don't build equity or investments during peak earning years
-- When salary stops, income stops → No wealth engine
-
-**Failed Strategy #2: Lifestyle Inflation**
-- Rookie earning $2M/year lives like earning $2M/year
-- Peak athlete earning $20M/year lives like earning $20M/year
-- Retirement income $0/year → Can't sustain $20M lifestyle → Broke
-
-**Failed Strategy #3: No Post-Career Plan**
-- Endorsements tied to playing career expire when relevance fades
-- No owned businesses or investments built during career
-- Brand value declines 60-80% post-retirement
-- Forced to liquidate assets to fund lifestyle
-
-### Contrast: Magic Johnson's Wealth-Building Strategy
-
-**Magic's Playing Career (1979-1991):**
-- NBA salary: $18M total
-- Endorsements: $30M total
-- **Total career earnings: $48M**
-
-**Magic's Post-Career Wealth (1991-Present):**
-- Business investments during career: Starbucks franchises, movie theaters, real estate
-- Sold Starbucks stake (2010): $75M
-- Current business empire valuation: **$1.2 BILLION**
-- **Post-career wealth: 25x playing career earnings**
-
-**Key Difference:**
-Magic invested in OWNED BUSINESSES during his playing career. These assets appreciated for 30 years post-retirement, compounding to $1.2B. He built wealth engines, not income streams.
-
-### Lessons for Strategy
-
-**For Athletes:**
-1. Live on 30-40% of income during peak years, invest 50-60%
-2. Build owned businesses and equity investments during career
-3. Transition endorsement income to equity investments
-4. Plan for 50+ year post-career life, not just next contract
-
-**For Your Anchor Project:**
-1. Are you building fee-based income or equity-based wealth?
-2. Does your business model create compounding assets or fixed revenues?
-3. How will your opportunity sustain value long-term?
 ```
 
 ---

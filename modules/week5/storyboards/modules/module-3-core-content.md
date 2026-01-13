@@ -1,5 +1,14 @@
 # MODULE 3: Core Content - Legacy vs Innovation (BOPPPS: Presentation) • **V3 INTERACTIVE-FIRST REDESIGN**
-**Version:** 1.4.0 | **Last Updated:** 2025-12-05
+**Version:** 1.6.0 | **Last Updated:** 2026-01-12
+
+### Version 1.5.0 Changes
+- **REMOVED:** Element 5 "Legacy vs Innovation Trade-Off" video (no caption available)
+- **UPDATED:** Element 2 now references production caption file
+- **RENUMBERED:** Elements 6-10 → 5-9
+
+### Version 1.6.0 Changes
+- **UPDATED:** Element 2 - Title aligned to caption ("The Heritage Balance Framework"), added video content summary
+- **UPDATED:** Element 7 - Title aligned to caption ("Five Trends Reshaping Sports Business"), added video content summary
 
 **Purpose:** Interactive discovery of heritage monetization strategies and future trends through experimentation
 
@@ -9,10 +18,10 @@
 
 **Content Summary:**
 - **Total text:** ~800 words broken into 3 micro-readings (200-300 words each, ~1-2 minutes each)
-- **Total video:** 6 minutes (3 × 2-min instructional videos)
+- **Total video:** 4 minutes (2 × 2-min instructional videos)
 - **Interactive exercises:** 2 major exercises, ~33 minutes total hands-on engagement
 - **Visual elements:** 2 infoboxes, 2 text blocks, 1 details accordion, 1 AI chat widget (optional)
-- **Total time:** 61-73 minutes (approximately **70% ACTIVE engagement** through exercises)
+- **Total time:** 59-71 minutes (approximately **70% ACTIVE engagement** through exercises)
 
 **Content Priority Badges:**
 - ⬤ **Required** - Core content essential for learning outcomes and assessments
@@ -25,16 +34,15 @@
 | 2 | **▶ Video** ⬤ Required | "Heritage Properties as Business Assets" (2 min) | 2 min | Upload MP4 | Introduces heritage property economics before matrix widget |
 | 3 | **⚙ iFrame Widget** ⬤ Required | **Legacy vs Innovation Matrix** | 8-10 min | Embed widget | Map strategic decisions balancing tradition & growth |
 | 4 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Process learning from strategic mapping |
-| 5 | **▶ Video** ⬤ Required | "The Legacy vs Innovation Trade-Off" (2 min) | 2 min | Upload MP4 | Explains 4 strategic quadrants before trends predictor |
-| 6 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
-| 7 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
-| 8 | **▶ Video** ◐ Recommended | "Future Trends in Sports Business" (2 min) | 2 min | Upload MP4 | Introduces 6 megatrends before deep dive |
-| 9 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
-| 10 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Variable | Configure in Uplimit | On-demand support for strategic planning |
+| 5 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
+| 6 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
+| 7 | **▶ Video** ◐ Recommended | "Future Trends in Sports Business" (2 min) | 2 min | Upload MP4 | Introduces 6 megatrends before deep dive |
+| 8 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
+| 9 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Variable | Configure in Uplimit | On-demand support for strategic planning |
 
 ---
 
-## Element 1: Module Introduction
+## Element 1: Learn by Doing: Interactive Heritage Strategy Exploration
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -76,17 +84,31 @@ Ready? Let's experiment.
 
 ---
 
-## Element 2: Instructional Video - Heritage Properties as Business Assets
+## Element 2: Instructional Video - The Heritage Balance Framework `[v1.6.0]`
 
-**Video Specifications:**
-- **Length:** 2 minutes
-- **Topic:** "Heritage Properties as Business Assets"
-- **Key Points:** Heritage property challenge (HHOF -8% attendance), five revenue sources, the innovation imperative
-- **Accessibility:** Captions required, transcript provided
+**Video Title:** "The Heritage Balance Framework"
+**Caption File:** `Videos/HeyGen Scripts/VIDEO #18 IO - Cohort - BOSM – W5-M2, V1 (Heritage Framework)-caption.srt`
+**Video Status:** ✅ Produced - Caption file available
+**Length:** 2 minutes
+**Accessibility:** Captions required, transcript provided
 
-**Video Status:** 📝 Script complete, awaiting production
+**Video Content Summary (from caption):**
+```
+[0:00-0:11] The Core Constraint
+"Heritage properties face a unique constraint: Your authenticity IS your asset. Monetize too aggressively, and you destroy the very thing people value. But refuse to evolve, and you become irrelevant."
 
-**Video Script Reference:** See `modules/week5/video-scripts/week5-instructional-videos-2min.md` - Video 1
+[0:16-0:29] The Heritage Balance Grid
+"Use the Heritage Balance Grid. On one axis: Revenue Impact—how much money does this generate? On the other axis: Authenticity Risk—how much does this threaten our credibility? Plot every opportunity on this grid."
+
+[0:29-0:47] The Quadrants
+"High revenue, low risk: Digital archive access, expanded merchandise, membership tiers. These are obvious wins. Low revenue, high risk: Branded experiences that feel disconnected from mission. These require extreme caution. The dangerous quadrant is high revenue, high risk."
+
+[0:47-1:05] The Key Insight
+"The question isn't whether it makes money—it's whether it makes money AND preserves what matters. Here's the key insight: Authenticity is not binary. You can extend reach without replacing substance."
+
+[1:05-1:22] Three Tests
+"Three tests for any initiative: First, does it serve your mission or replace it? Second, would your most loyal stakeholders accept it? Third, is it reversible? Experiments are fine; permanent damage isn't."
+```
 
 **Video Script Summary (2 minutes):**
 ```
@@ -235,7 +257,7 @@ Students drag initiatives onto the matrix:
 
 ---
 
-## Element 3: **RENUMBERED** - Reflection Prompt After Widget 1 (was Element 2)
+## Element 4: Reflection Prompt After Widget 1
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -269,44 +291,7 @@ The Hockey Hall of Fame faces this exact dilemma. Jamie Dinsmore (President & CE
 
 ---
 
-## Element 5: Instructional Video - The Legacy vs Innovation Trade-Off
-
-**Video Specifications:**
-- **Length:** 2 minutes
-- **Topic:** "The Legacy vs Innovation Trade-Off"
-- **Key Points:** Four strategic quadrants (Purist, Innovator, Stagnant, Balanced), real examples (The Masters, Olympics, NFL)
-- **Accessibility:** Captions required, transcript provided
-
-**Video Status:** 📝 Script complete, awaiting production
-
-**Video Script Reference:** See `modules/week5/video-scripts/week5-instructional-videos-2min.md` - Video 2
-
-**Video Script Summary (2 minutes):**
-```
-[0:00-0:15] Hook
-"The Masters bans cell phones, limits commercials, and changes nothing. The Olympics add breakdancing, esports, and 3×3 basketball. Both are heritage properties. Both are successful. They just made different strategic choices."
-
-[0:15-0:45] The Four Quadrants
-Every strategy falls into one quadrant: (1) Purist (high tradition, low growth) - Augusta National, (2) Innovator (low tradition, high growth) - UFC, F1, (3) Stagnant (low both) - danger zone, (4) Balanced (high both) - NFL, Premier League.
-
-[0:45-1:15] Finding the Balance
-Three questions: (1) What's our irreplaceable core? (2) What's negotiable? (3) What would destroy our credibility? For HHOF: Stanley Cup ceremony = untouchable, digital experiences = negotiable.
-
-[1:15-1:45] Real Examples
-The Masters: Core = azaleas, green jackets, limited commercials. Innovation = app, streaming, international qualifying. Result: $200M+ revenue, brand intact. Olympics: Core = ceremony, unity. Innovation = new sports, social media. Result: Record engagement, ongoing debates.
-
-[1:45-2:00] Transition
-"Next, you'll use the Heritage Property Analyzer to model different transformation scenarios and see the 10-year revenue impact."
-```
-
-**Uplimit Implementation:**
-1. Upload `week5-video2-legacy-innovation.mp4`
-2. Add VTT caption file
-3. Place before Future Trends Predictor exercise
-
----
-
-## Element 6: Future Trends Predictor Widget
+## Element 5: Future Trends Predictor Widget
 
 ### ⚙ Interactive Activity: Future Trends Predictor
 
@@ -452,7 +437,7 @@ Based on trend choices, widget plots your organization on 2x2 matrix:
 
 ---
 
-## Element 5: **RENUMBERED** - Reflection Prompt After Widget 2 (was Element 4)
+## Element 6: Reflection Prompt After Widget 2
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -502,17 +487,34 @@ This Future Trends widget helps you see how emerging trends will reshape the ent
 
 ---
 
-## Element 8: Instructional Video - Future Trends in Sports Business
+## Element 7: Instructional Video - Five Trends Reshaping Sports Business `[v1.6.0]`
 
-**Video Specifications:**
-- **Length:** 2 minutes
-- **Topic:** "Future Trends in Sports Business"
-- **Key Points:** Six megatrends (AI, VR/AR, DTC, demographics, betting, sustainability), implications for sports marketing
-- **Accessibility:** Captions required, transcript provided
+**Video Title:** "Five Trends Reshaping Sports Business"
+**Caption File:** `Videos/HeyGen Scripts/VIDEO #19 IO - Cohort - BOSM – W5-M3, V1 (Future Trends)-caption.srt`
+**Video Status:** ✅ Produced - Caption file available
+**Length:** 2 minutes
+**Accessibility:** Captions required, transcript provided
 
-**Video Status:** 📝 Script complete, awaiting production
+**Video Content Summary (from caption):**
+```
+[0:00-0:12] Opening Question
+"What will sports business look like in 2030? Five trends are reshaping the industry. Understanding them helps you build strategies that last, not just strategies that work today."
 
-**Video Script Reference:** See `modules/week5/video-scripts/week5-instructional-videos-2min.md` - Video 3
+[0:17-0:40] Trend 1: Direct-to-Consumer
+"Trend one: Direct-to-consumer everything. Leagues and teams are building their own streaming platforms, apps, and membership programs. Why share revenue with broadcasters when you can own the customer relationship?"
+
+[0:40-1:02] Trend 2: Sports Betting Integration
+"Trend two: Sports betting integration deepens. We're moving from sponsorship to embedded products. Imagine watching a game where betting is integrated into the broadcast—odds updating in real-time, one-click wagering."
+
+[1:02-1:22] Trend 3: Women's Sports Parity
+"Trend three: Women's sports reach parity economics. Within the next decade, top women's leagues will command valuations comparable to men's second-tier leagues. Early investors will see significant returns."
+
+[1:22-1:39] Trend 4: AI Transformation
+"Trend four: AI transforms operations. From ticket pricing to injury prediction to fan engagement, AI is being deployed across every function."
+
+[1:39-2:02] Trend 5: Heritage as Advantage
+"Trend five: Heritage becomes competitive advantage. As sports become more commercial, the properties with authentic history become more valuable. Storied franchises and legacy organizations aren't just teams—they're cultural institutions."
+```
 
 **Video Script Summary (2 minutes):**
 ```
@@ -539,7 +541,7 @@ Media rights valued on engagement, not just eyeballs. Sponsorship requires data 
 
 ---
 
-## Element 9: Details Accordion - Deep Dive: Heritage Property Economics
+## Element 8: Details Accordion - Deep Dive: Heritage Property Economics
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -721,7 +723,7 @@ Your Strategic Vision Memo must make this trade-off explicit and justify it base
 
 ---
 
-## Element 7: **RENUMBERED** - AI Chat Widget Configuration (was Element 6)
+## Element 9: AI Chat Widget Configuration
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element

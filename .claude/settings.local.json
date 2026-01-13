@@ -72,7 +72,8 @@
       "Bash(git rm:*)",
       "Bash(git remote set-url:*)",
       "Bash(open:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "WebFetch(domain:hbsp.harvard.edu)"
     ],
     "deny": [],
     "ask": [],

@@ -469,7 +469,7 @@
     <div class="container">
         <div class="header">
             <h1>Emerging Sports Investment Tool</h1>
-            <p>Evaluate investment opportunities in emerging sports properties. Adjust variables to see risk-adjusted returns, benchmark comparisons, and sensitivity analysis.</p>
+            <p>Evaluate investment opportunities in emerging sports properties. Adjust variables to see risk-adjusted returns, benchmark comparisons, and sensitivity analysis. All calculations use your selected time horizon (default: 10 years).</p>
         </div>
 
         <!-- Investment Selection -->
@@ -587,8 +587,8 @@
                     <thead>
                         <tr>
                             <th>Benchmark</th>
-                            <th>Return</th>
-                            <th>Risk</th>
+                            <th>Annual Return (%)</th>
+                            <th>Risk (%)</th>
                             <th>Future Value</th>
                             <th>Outperformance</th>
                         </tr>
@@ -645,7 +645,7 @@
                     <tbody>
                         <tr class="scenario-best">
                             <td><strong>Best Case</strong></td>
-                            <td id="sens-best-assumptions">+50% growth, -30% risk, +2x exit</td>
+                            <td id="sens-best-assumptions">+50% growth, −30% risk, +2x exit (vs. base)</td>
                             <td id="sens-best-value">$387M</td>
                             <td id="sens-best-irr">26.7%</td>
                             <td id="sens-best-sharpe">3.24</td>
@@ -659,7 +659,7 @@
                         </tr>
                         <tr class="scenario-worst">
                             <td><strong>Worst Case</strong></td>
-                            <td id="sens-worst-assumptions">-50% growth, +50% risk, -50% exit</td>
+                            <td id="sens-worst-assumptions">−50% growth, +50% risk, −50% exit (vs. base)</td>
                             <td id="sens-worst-value">$41M</td>
                             <td id="sens-worst-irr">0.3%</td>
                             <td id="sens-worst-sharpe">-0.19</td>

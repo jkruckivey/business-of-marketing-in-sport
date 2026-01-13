@@ -1,5 +1,21 @@
 # MODULE 3: Core Content - Athlete Brand Frameworks (BOPPPS: Presentation)
-**Version:** 1.4.0 | **Last Updated:** 2025-12-05
+**Version:** 1.8.0 | **Last Updated:** 2026-01-13
+
+### Version 1.8.0 Changes
+- **NEW:** Added pre-widget contextual introductions for Athlete Brand Calculator and Emerging Sports Investment Tool
+- **NEW:** Each widget now has student-facing setup explaining purpose, what they'll discover, and time commitment
+
+### Version 1.5.0 Changes
+- **REPLACED:** "NIL and the New Athlete Economy" video → "Women's Sports: The Investment Opportunity" (caption available)
+- **UPDATED:** Element 8 video now has production caption file
+
+### Version 1.6.0 Changes
+- **UPDATED:** Element 2 - Title aligned to caption ("The Five Athlete Revenue Streams"), added caption file reference
+- **UPDATED:** Element 5 - Added caption file reference for "The Emerging Sports Opportunity"
+
+### Version 1.7.0 Changes
+- **REPLACED:** Element 4 - Reflection prompt → Discussion Board "Athlete Brand Strategy Debate"
+- **FIXED:** Element 7 - Renumbered from duplicate "Element 5", updated Anchor Project reference to CFL Expansion Project
 
 **Purpose:** Interactive discovery of athlete revenue streams and brand building strategies through exercises
 
@@ -10,17 +26,17 @@
 | 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | Type directly | Sets interactive learning approach |
 | 2 | **▶ Video** ⬤ Required | "The Five Revenue Streams of Athlete Wealth" (2 min) | Upload MP4 | Introduces athlete diversification before calculator widget |
 | 3 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
-| 4 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Process learning from experimentation |
+| 4 | **💬 Discussion** ◐ Recommended | Athlete Brand Strategy Debate | Configure in Uplimit | Share strategies, debate trade-offs with peers |
 | 5 | **▶ Video** ⬤ Required | "The Emerging Sports Opportunity" (2 min) | Upload MP4 | Explains valuation gaps before investment tool |
 | 6 | **⚙ iFrame Widget** ⬤ Required | **Emerging Sports Investment Tool** | Embed widget | Evaluate women's sports & emerging market opportunities |
 | 7 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize investment insights |
-| 8 | **▶ Video** ◐ Recommended | "NIL and the New Athlete Economy" (2 min) | Upload MP4 | Explains NIL rules and marketing implications |
+| 8 | **▶ Video** ◐ Recommended | "Women's Sports: The Investment Opportunity" (2 min) | Upload MP4 | NWSL/WNBA growth, valuation gaps, smart money thesis |
 | 9 | **▤ Details** ○ Optional | Deep dive: Why equity beats fees | Type directly | Mathematical proof with NPV calculations |
 | 10 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Configure in Uplimit | On-demand support for struggling students |
 
 ---
 
-## Element 1: Module Introduction
+## Element 1: From Theory to Practice: Athlete Brand Frameworks
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -31,7 +47,7 @@
 
 **Connecting to Weeks 1-3:** In Week 1, you learned leagues generate revenue through five streams—now you'll see athletes have their own five streams. In Week 2, you learned media rights valuations depend on CPM and engagement metrics—athletes similarly value their brands using reach and conversion data. In Week 3, you learned sponsorship ROI calculations and the 2-3× activation rule—athletes face the same trade-offs when deciding between endorsement fees and equity investments.
 
-**Module 2 Connection:** Remember Kevin Abrams' insight about managing salary cap "like a portfolio, not a checking account"? Athletes must apply the same thinking to their career earnings—diversifying across revenue streams rather than spending linearly.
+**Week 1 Connection:** Remember Kevin Abrams' insight about managing salary cap "like a portfolio, not a checking account"? Athletes must apply the same thinking to their career earnings—diversifying across revenue streams rather than spending linearly.
 
 You've seen the theory from practitioners. Now it's time to experiment hands-on.
 
@@ -61,17 +77,13 @@ Ready? Let's experiment.
 
 ---
 
-## Element 2: Instructional Video - Five Revenue Streams of Athlete Wealth
+## Element 2: Instructional Video - The Five Athlete Revenue Streams `[v1.5.0]`
 
-**Video Specifications:**
-- **Length:** 2 minutes
-- **Topic:** "The Five Revenue Streams of Athlete Wealth"
-- **Key Points:** LeBron's $1.2B net worth breakdown, five streams (salary, endorsements, owned businesses, media/content, investments), equity vs. fees
-- **Accessibility:** Captions required, transcript provided
-
-**Video Status:** 📝 Script complete, awaiting production
-
-**Video Script Reference:** See `modules/week4/video-scripts/week4-instructional-videos-2min.md` - Video 1
+**Video Title:** "The Five Athlete Revenue Streams"
+**Caption File:** `Videos/HeyGen Scripts/VIDEO #13 IO - Cohort - BOSM – W4-M1, V1 (Athlete Revenue Streams)-caption.srt`
+**Video Status:** ✅ Produced - Caption file available
+**Length:** 2 minutes
+**Accessibility:** Captions required, transcript provided
 
 **Video Script Summary (2 minutes):**
 ```
@@ -98,11 +110,39 @@ Athletes have five revenue streams: (1) Salary/bonuses, (2) Endorsements, (3) Ow
 
 ---
 
-## Element 3: Athlete Brand Calculator Widget
+## Element 3: Athlete Brand Calculator Widget `[v1.8.0]`
 
 **Widget Purpose:** Interactive tool for building athlete revenue portfolios and comparing 20-year wealth outcomes
 
 **File:** `athlete-brand-calculator.html`
+
+### Pre-Widget Context (Copy to Uplimit as Text element BEFORE widget):
+
+```markdown
+## Practice: WLO 4.1 (Five Athlete Revenue Streams)
+
+You're now the financial architect for an elite athlete with $50 million to allocate across their brand portfolio. How will you build their wealth?
+
+This calculator lets you experiment with different allocation strategies across all five revenue streams: endorsements, owned businesses, investment portfolios, media/content, and licensing. As you adjust the sliders, you'll see how your choices compound over 20 years—and how dramatically different strategies create different wealth outcomes.
+
+**The stakes are real:** The difference between a "Conservative Athlete" (70% endorsements) and a "Wealth Builder" (70% equity) can be $200M+ over 20 years. You'll see exactly why.
+
+**What you'll discover:**
+- Why $10M in endorsements today ≠ $10M in owned businesses (compounding changes everything)
+- How Serena Williams, LeBron James, and Michael Jordan actually allocated their portfolios
+- The diversification sweet spot: enough risk for growth, enough stability to sleep at night
+- Why the "obvious" strategy (maximize endorsements) often underperforms long-term
+
+**Try these experiments:**
+1. Max out endorsements (70%+) and watch 20-year wealth plateau
+2. Max out owned businesses (70%+) and see exponential growth—with higher risk
+3. Match Serena's actual portfolio and compare to your strategy
+
+*Time commitment: 10-12 minutes*
+*Learning outcomes practiced: WLO 4.1 (Five revenue streams and portfolio construction)*
+```
+
+---
 
 ### Widget Functionality:
 
@@ -156,47 +196,54 @@ Athletes have five revenue streams: (1) Salary/bonuses, (2) Endorsements, (3) Ow
 
 ---
 
-## Element 3: Reflection Prompt After Widget 1
+## Element 4: Discussion Board - Athlete Brand Strategy Debate `[v1.7.0]`
 
 **Uplimit Implementation:**
-1. Select **Text** element
-2. Copy markdown below:
+1. Select **Discussion** element in module builder
+2. Copy the prompt and configuration below
+
+**Discussion Prompt:**
 
 ```markdown
-### What Did You Discover?
+## 💬 Share Your Athlete Brand Strategy
 
-After experimenting with the Athlete Brand Calculator, take 2 minutes to reflect:
+You just experimented with the Athlete Brand Calculator, allocating $50M across five revenue streams. Now share your strategy and learn from your peers.
 
-**1. What surprised you most?**
-- Which revenue stream created the most wealth over 20 years?
-- How different were the outcomes between "70% endorsements" and "70% equity"?
-- At what point did compounding become dramatically visible?
+### Your Post (150-200 words):
 
-**2. Which strategy would YOU choose?**
-- If you were a 25-year-old athlete with 10-year peak career ahead, how would you allocate $50M?
-- Would you prioritize income (endorsements) or wealth (equity)? Why?
-- How much risk are you willing to take?
+**1. Share your allocation strategy:**
+- How did you distribute across the five streams (endorsements, owned businesses, investments, media/content, licensing)?
+- What was your 20-year wealth projection?
 
-**3. How does this apply to your Anchor Project?**
-- If your project involves athlete partnerships, which revenue streams should you prioritize?
-- If analyzing a sports business, are you building fee-based income or equity-based wealth?
+**2. Defend your approach:**
+- Why did you prioritize certain streams over others?
+- What trade-offs did you accept (e.g., higher risk for higher returns, or stability over growth)?
 
-**Actionable Insight:** Write down ONE strategic decision you'll make differently in your Anchor Project based on this experimentation.
+**3. Name one athlete whose strategy influenced your thinking:**
+- Did you model after Serena (equity-focused), LeBron (diversified empire), or take a different path?
+- What would you do differently than they did?
+
+### Respond to 1 Peer:
+Find someone with a **different** allocation strategy than yours. Ask them ONE question about a trade-off they made that you wouldn't have made.
+
+**Example:** "You put 40% in owned businesses—what happens if those ventures fail during your playing career when you can't pivot?"
 ```
+
+**Discussion Configuration:**
+- **Minimum word count:** 150 words
+- **Required responses:** 1 peer reply
+- **Grading:** Participation-based (Complete/Incomplete)
+- **Visibility:** Post-before-viewing peer responses (encourages original thinking)
 
 ---
 
-## Element 5: Instructional Video - The Emerging Sports Opportunity
+## Element 5: Instructional Video - The Emerging Sports Opportunity `[v1.5.0]`
 
-**Video Specifications:**
-- **Length:** 2 minutes
-- **Topic:** "The Emerging Sports Opportunity"
-- **Key Points:** NWSL vs. MLS valuation gap, women's sports growth metrics, investment thesis for emerging markets
-- **Accessibility:** Captions required, transcript provided
-
-**Video Status:** 📝 Script complete, awaiting production
-
-**Video Script Reference:** See `modules/week4/video-scripts/week4-instructional-videos-2min.md` - Video 2
+**Video Title:** "The Emerging Sports Opportunity"
+**Caption File:** `Videos/HeyGen Scripts/VIDEO #15 IO - Cohort - BOSM – W4-M3, V1 (Emerging Sports)-caption.srt`
+**Video Status:** ✅ Produced - Caption file available
+**Length:** 2 minutes
+**Accessibility:** Captions required, transcript provided
 
 **Video Script Summary (2 minutes):**
 ```
@@ -223,11 +270,39 @@ If NWSL team bought at $75M reaches 25% of MLS valuations in 10 years = $100M+ r
 
 ---
 
-## Element 6: Emerging Sports Investment Tool Widget
+## Element 6: Emerging Sports Investment Tool Widget `[v1.8.0]`
 
 **Widget Purpose:** Interactive tool for evaluating women's sports and emerging market investment opportunities
 
 **File:** `emerging-sports-investment-tool.html`
+
+### Pre-Widget Context (Copy to Uplimit as Text element BEFORE widget):
+
+```markdown
+## Practice: WLO 4.3 (Emerging Sports Investment Analysis)
+
+You're an investor evaluating the women's sports boom. NWSL franchises sold for $40M in 2024—up from near-zero a decade ago. Is this a historic buying opportunity or a bubble?
+
+This investment tool lets you model returns across five emerging sports opportunities: NWSL, WNBA, European women's soccer, pickleball, and women's rugby. Adjust growth rates, risk premiums, time horizons, and exit multiples to calculate expected IRR and compare to established benchmarks.
+
+**The investment thesis:** Women's sports properties are valued at roughly 1/10th of comparable men's leagues despite similar or higher growth rates. Either the market is wrong—or there's a first-mover opportunity.
+
+**What you'll discover:**
+- Why a 15% growth rate over 10 years produces vastly different outcomes than 35% growth (the math is dramatic)
+- How risk-adjusted returns compare to the S&P 500 and established sports franchises
+- The "valuation gap" between women's and men's properties—and when it might close
+- Why timing matters: entering at $40M vs. waiting until $100M fundamentally changes your return profile
+
+**Try these scenarios:**
+1. NWSL Conservative (15% growth) vs. NWSL Aggressive (35% growth)—how much does optimism cost if you're wrong?
+2. Compare WNBA returns to an NBA franchise at 10× the entry price
+3. Explore pickleball's speculative upside—and its bust risk
+
+*Time commitment: 15-20 minutes*
+*Learning outcomes practiced: WLO 4.3 (Emerging sports investment evaluation and growth projection)*
+```
+
+---
 
 ### Widget Functionality:
 
@@ -290,7 +365,7 @@ If NWSL team bought at $75M reaches 25% of MLS valuations in 10 years = $100M+ r
 
 ---
 
-## Element 5: Reflection Prompt After Widget 2
+## Element 7: Reflection Prompt After Widget 2 `[v1.7.0]`
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -314,48 +389,53 @@ After experimenting with the Emerging Sports Investment Tool, reflect:
 - Why are NWSL franchises $40M when MLS franchises are $500M despite similar growth rates?
 - Does this represent market inefficiency (opportunity) or accurate risk pricing (caution)?
 
-**4. Application to Your Analysis**
-- If your Anchor Project involves women's sports or emerging markets, what growth assumptions will you use?
-- How will you justify your projections to skeptical investors?
+**4. Broader Strategic Thinking**
+- The CFL faces its own "valuation gap" compared to the NFL—what parallels do you see?
+- How do first-mover advantages apply when evaluating any emerging or undervalued sports property?
 
-**Actionable Insight:** Based on this analysis, would YOU invest $40M in an NWSL franchise today? Write your 2-sentence investment thesis.
+**Actionable Insight:** Based on this analysis, what's ONE framework or principle about sports valuations that could apply to ANY league facing growth opportunities?
 ```
 
 ---
 
-## Element 8: Instructional Video - NIL and the New Athlete Economy
+## Element 8: Instructional Video - Women's Sports Investment Opportunity `[v1.5.0]`
 
 **Video Specifications:**
 - **Length:** 2 minutes
-- **Topic:** "NIL and the New Athlete Economy"
-- **Key Points:** NIL rules post-2021, $1.17B market size, college athlete branding, marketing implications
+- **Topic:** "Women's Sports: The Investment Opportunity"
+- **Key Points:** NWSL/WNBA sponsorship growth, valuation gaps, why now, smart money thesis
 - **Accessibility:** Captions required, transcript provided
 
-**Video Status:** 📝 Script complete, awaiting production
+**Video Status:** ✅ Produced - Caption file available
 
-**Video Script Reference:** See `modules/week4/video-scripts/week4-instructional-videos-2min.md` - Video 3
+**Caption File:** `Videos/HeyGen Scripts/VIDEO #14 IO - Cohort - BOSM – W4-M2, V1 (Women's Sports)-caption.srt`
 
-**Video Script Summary (2 minutes):**
+**Video Content Summary (from caption, ~2 minutes):**
 ```
-[0:00-0:15] Hook
-"In 2021, college athletes couldn't legally earn a dollar from their name. In 2024, they earned $1.17 billion through NIL deals. The athlete economy changed overnight."
+[0:00-0:06] Hook
+"Women's sports sponsorship is experiencing rapid growth."
 
-[0:15-0:45] What Is NIL?
-NIL = Name, Image, Likeness. Pre-2021 NCAA rules prohibited monetization. Now college athletes can sign endorsements, create content, sell merchandise.
+[0:06-0:25] The Growth Story
+NWSL quadrupled sponsorship revenue over five years to ~$60 million (2024). WNBA more than doubled to $55 million. "This isn't charity—it's smart money recognizing an undervalued asset."
 
-[0:45-1:15] The NIL Economy
-$1.17B total deals in 2024. Top athletes earn $1-5M/year. Women athletes over-index: 2× NIL per follower vs. male counterparts (higher engagement rates).
+[0:30-0:55] The Investment Thesis
+Women's sports audiences growing rapidly (2023 Women's World Cup, women's college basketball). Yet sponsorship dollars lag far behind. "That gap is the opportunity."
 
-[1:15-1:45] Marketing Implications
-Opportunity: Access athletes earlier, lower costs, authentic connections. Risk: Unregulated, no standard contracts. Kevin Abrams: "Players are coming out of college now where they are brands."
+[0:58-1:27] Why Now? Three Converging Factors
+1. Media coverage caught up—streaming platforms need content
+2. Brands discovered women's sports fans are more loyal, more likely to purchase
+3. Athletes like Serena Williams, Megan Rapinoe, Caitlin Clark proved individual stars drive massive engagement
 
-[1:45-2:00] Transition
-"NIL is reshaping how athletes build brands from day one. In the next module, you'll apply these concepts to the Serena Williams case study."
+[1:27-1:50] Smart Money Moving Fast
+Major media companies securing women's sports rights. Financial services brands becoming jersey sponsors. Investment rounds filling quickly. "These aren't feel-good investments—they're bets on a market underpriced for decades."
+
+[1:50-2:03] The Question for Brands
+"Do you sponsor women's sports now while valuations are relatively low, or wait until prices catch up? Your analysis should factor in this growth trajectory."
 ```
 
 **Uplimit Implementation:**
-1. Upload `week4-video3-nil-economy.mp4`
-2. Add VTT caption file
+1. Upload women's sports video MP4
+2. Add SRT caption file from `Videos/HeyGen Scripts/`
 3. Place after reflection prompt, before deep dive accordion
 
 ---
@@ -499,18 +579,18 @@ Hi! I can help you understand insights from the Athlete Brand Calculator and Eme
 
 ---
 
-## Element 11: Core Readings - Athlete Equity & Emerging Sports
+## Element 11: Recommended Readings - Athlete Equity & Emerging Sports `[v1.7.0]`
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
 2. Copy markdown below:
 
 ```markdown
-Title: Core Readings: Athlete Equity & Venture Capital
+Title: Recommended Readings: Athlete Equity & Venture Capital
 
-[Expand for required and recommended readings]
+[Expand for recommended readings that deepen your understanding]
 
-### Required Readings (30-40 minutes)
+### Recommended Readings (30-40 minutes total)
 
 **1. Reuters: "Serena Williams' New Venture Fund Raises $111 Million"**
 Clean background on Serena Ventures' fund size, thesis, and first investments.
@@ -520,8 +600,6 @@ Clean background on Serena Ventures' fund size, thesis, and first investments.
 Portfolio overview, returns (e.g., Coinbase), and her VC philosophy.
 🔗 [Read Article](https://www.forbes.com/sites/mattcraig/2023/01/23/play-to-win-serena-williams-invested-in-14-unicorn-companies/)
 
-### Recommended Readings (Optional)
-
 **3. Afrotech: "Serena Williams on Raising VC"**
 How she built her investor network and deal flow; good for project inspiration.
 🔗 [Read Article](https://afrotech.com/serena-williams-vc-funding)
@@ -530,7 +608,7 @@ How she built her investor network and deal flow; good for project inspiration.
 Prize money vs. endorsements vs. equity returns; shows the "top 5% optimize streams 4-5" point.
 🔗 [View Latest Rankings](https://www.forbes.com/athletes/)
 
-### Application to Week 4
+### How These Readings Connect to Week 4
 
 These readings provide real data behind the frameworks you're experimenting with:
 - Serena Ventures fund structure → Apply to WLO 4.1 (revenue streams)
@@ -572,7 +650,7 @@ Ready to tackle complex wealth-building scenarios? Let's apply your frameworks!
 5. ✅ Video 2: "The Emerging Sports Opportunity" (2 min)
 6. ✅ Emerging Sports Investment Tool Widget (full specifications, embed code)
 7. ✅ Reflection Prompt 2 (process widget 2 insights)
-8. ✅ Video 3: "NIL and the New Athlete Economy" (2 min)
+8. ✅ Video 3: "Women's Sports: The Investment Opportunity" (2 min)
 9. ✅ Details Accordion - Deep Dive on Equity vs. Fees (mathematical proof with NPV calculations)
 10. ✅ AI Chat Widget - Test Your Understanding
 

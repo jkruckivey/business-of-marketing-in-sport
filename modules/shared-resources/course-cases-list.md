@@ -63,13 +63,16 @@ This document lists all case studies used in the course, organized by week, with
 
 ### Week 4: Athletes, Brands & Emerging Sports
 
-**Serena Williams: Building a Brand**
-- **Case ID:** 517050
-- **Source:** Harvard Business Publishing
-- **Pages:** ~20
-- **Purchase Link:** https://hbsp.harvard.edu/product/517050-PDF-ENG
-- **Status:** Needs acquisition ($4.25/student)
-- **Focus:** Athlete brand evolution, personal brand strategy, business portfolio
+**Serena Williams: Brand Strategy Analysis**
+- **Case ID:** BOSM-W4-001
+- **Source:** Custom (course-developed using public sources)
+- **Pages:** N/A (uses recommended readings)
+- **Recommended Readings:**
+  - Reuters: "Serena Williams' New Venture Fund Raises $111 Million"
+  - Forbes: "Play To Win: Serena Williams Invested In 14 Unicorn Companies"
+  - Afrotech: "Serena Williams on Raising VC"
+- **Status:** Ready
+- **Focus:** Athlete brand evolution, equity vs. endorsements, VC strategy
 
 **Supplementary: NHL Enterprises Canada**
 - **Case ID:** 9B00M002
@@ -100,7 +103,7 @@ This document lists all case studies used in the course, organized by week, with
 | 1 | Nashville Predators | Ivey | 9B09A006 | Ready |
 | 2 | Rogers NHL Deal | Custom | BOSM-W2-001 | Ready |
 | 3 | LIV Golf | Ivey | W33366 | Ready |
-| 4 | Serena Williams | HBS | 517050 | Needs acquisition |
+| 4 | Serena Williams | Custom | BOSM-W4-001 | Ready |
 | 5 | Hockey Hall of Fame | Custom | BOSM-W5-001 | In development |
 
 ---

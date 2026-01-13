@@ -1,19 +1,24 @@
 ## MODULE 5: Case Study - Hockey Hall of Fame (Part 1: Read & Context) (BOPPPS: Participatory - Case Reading)
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2026-01-12
+
+### Version 1.4.0 Changes
+- **ADDED:** Element 3 - HHOF Case Introduction Video (2 min, caption available)
+- **RENUMBERED:** Subsequent elements shifted by 1
 
 **Purpose:** Introduce HHOF case context, strategic situation, and three transformation scenarios before analysis
 
 **Uplimit Structure:** Fifth module in Unit 5 (Week 5)
 
-**Time Estimate:** 30-40 minutes (case reading + exhibits)
+**Time Estimate:** 32-42 minutes (case reading + video + exhibits)
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 4 simulation | Type directly | Bridges simulation to real case analysis |
 | 2 | **ⓘ Infobox (Callout)** ⬤ Required | Case overview and reading instructions | Type directly | Blue variant, frames case reading approach |
-| 3 | **▬ Text** ⬤ Required | Full case narrative Parts 1-2 (4,000 words) | **🔗 ATTACH CASE HERE:** Copy markdown below or upload PDF | Case background and three strategic scenarios |
-| 4 | **▬ Table** ◐ Recommended | HHOF vs. Heritage Property Benchmarks | Type directly | Comparative financial metrics for context |
-| 5 | **⟱ Details** ⬤ Required | Exhibit A: HHOF Revenue & Visitor Data (5-Year) | Type or upload PDF | Accordion - financial and attendance trends |
+| 3 | **▶ Video** ⬤ Required | "HHOF Case: Strategic Analysis Framework" (2 min) | Upload MP4 | Frames heritage dilemma before case reading |
+| 4 | **▬ Text** ⬤ Required | Full case narrative Parts 1-2 (4,000 words) | **🔗 ATTACH CASE HERE:** Copy markdown below or upload PDF | Case background and three strategic scenarios |
+| 5 | **▬ Table** ◐ Recommended | HHOF vs. Heritage Property Benchmarks | Type directly | Comparative financial metrics for context |
+| 6 | **⟱ Details** ⬤ Required | Exhibit A: HHOF Revenue & Visitor Data (5-Year) | Type or upload PDF | Accordion - financial and attendance trends |
 
 **Content Priority Badges:**
 - ⬤ **Required** - Core content essential for learning outcomes and assessments
@@ -22,7 +27,7 @@
 
 ---
 
-## Element 1: Connecting Introduction Text
+## Element 1: The Hockey Hall of Fame Challenge: Read the Case
 
 **Title:** From Simulation to Real Case Analysis
 
@@ -75,7 +80,47 @@ This case presents the Hockey Hall of Fame's strategic transformation challenge.
 
 ---
 
-## Element 3: Case Study Text - Hockey Hall of Fame
+## Element 3: Video - HHOF Case Strategic Analysis Framework `[v1.4.0]`
+
+**Video Specifications:**
+- **Length:** 2 minutes
+- **Topic:** "HHOF Case: Strategic Analysis Framework"
+- **Key Points:** Heritage property dilemma, growth vs authenticity tension, strategic traps to avoid
+- **Accessibility:** Captions required, transcript provided
+
+**Video Status:** ✅ Produced - Caption file available
+
+**Caption File:** `Videos/HeyGen Scripts/VIDEO #20 IO - Cohort - BOSM – W5-M4, V1 (HHOF Case)-caption.srt`
+
+**Video Content Summary (from caption, ~2 minutes):**
+```
+[0:00-0:11] Hook
+"This case study isn't about hockey specifically. It's about every heritage property facing the same dilemma: How do you grow without becoming something you're not?"
+
+[0:16-0:39] The Real Strategic Tension
+"The case presents a real strategic tension. The Hockey Hall of Fame generates revenue from admission, retail, and hospitality. The board wants to propose growth initiatives that could substantially increase annual revenue. The staff and donors want to preserve the institution's integrity. Both sides have legitimate arguments."
+
+[0:39-0:56] Why This Case Is Hard
+"Here's what makes this case hard: The growth opportunities ARE real. VR experiences could attract younger audiences. International pop-ups could tap new markets. The revenue projections aren't fantasy. But the risks are also real. Heritage institutions that over-commercialize lose credibility permanently."
+
+[0:56-1:16] The Credibility Risk
+"Once you're perceived as a theme park, you can't go back to being a serious cultural institution. The curatorial staff and donors aren't being stubborn—they're protecting something valuable."
+
+[1:16-1:30] Two Traps to Avoid
+"Your analysis should avoid two traps. Trap one: Assuming growth always wins. Sometimes preservation IS the strategy. Trap two: Assuming tradition always wins. Institutions that refuse all change become irrelevant."
+
+[1:30-1:55] The Central Question
+"Where exactly is the line between acceptable innovation and mission-compromise? That line is different for every organization—your job is to find where it is for a heritage institution. As you watch the executive interviews, note how each leader defines their boundaries. Their answers reveal different philosophies about heritage and growth."
+```
+
+**Uplimit Implementation:**
+1. Upload HHOF Case video MP4
+2. Add SRT caption file from `Videos/HeyGen Scripts/`
+3. Place after Infobox, before case text
+
+---
+
+## Element 4: Case Study Text - Hockey Hall of Fame
 
 **HOCKEY HALL OF FAME: MANAGING TRADITION AND GROWTH**
 
@@ -397,7 +442,7 @@ HHOF's executive team, led by CEO Jamie Dinsmore, has developed three distinct s
 
 ---
 
-## Element 4: Comparative Table - HHOF vs. Heritage Property Benchmarks
+## Element 5: Comparative Table - HHOF vs. Heritage Property Benchmarks
 
 **Title:** Heritage Property Industry Benchmarks
 
@@ -427,7 +472,7 @@ HHOF's executive team, led by CEO Jamie Dinsmore, has developed three distinct s
 
 ---
 
-## Element 5: Details - Exhibit A
+## Element 6: Details - Exhibit A
 
 **Title:** Exhibit A: HHOF Revenue & Visitor Data (2019-2024)
 

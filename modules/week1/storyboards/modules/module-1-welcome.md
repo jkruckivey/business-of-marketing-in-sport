@@ -1,11 +1,12 @@
-# Your Week 1 Journey
-**Version:** 1.4.0 | **Last Updated:** 2025-12-01
+# MODULE 1: Welcome & Learning Outcomes
+**Version:** 1.5.0 | **Last Updated:** 2026-01-13
 
 **Purpose:** Orient students to Week 1, establish learning expectations
 **Estimated Time:** 5-7 minutes
 
-### Version 1.4.0 Changes
-- **NEW:** Added stock photo suggestion after Element 2 introduction text to enhance visual engagement
+### Version 1.5.0 Changes
+- **STANDARDIZED:** Module structure to match course-wide template (4 elements)
+- **REMOVED:** CFL Project Tie-In Widget (milestone info moved to Module 7)
 
 **Uplimit Structure:** First module in Unit 1
 
@@ -23,45 +24,7 @@
 
 ---
 
-### Element 5: CFL Project Tie-In Widget
-
-**Widget Purpose:** Interactive overview of the CFL League Expansion Project showing all 5 milestones with current week highlighted
-
-**Uplimit Implementation:**
-
-**Widget File:** `cfl-project-tie-in.html`
-
-**Embed Code:**
-```html
-<iframe
-  src="../../widgets/cfl-project-tie-in.html"
-  width="100%"
-  height="520"
-  style="border: none; border-radius: 8px;"
-  title="CFL League Expansion Project Overview"
-  aria-label="Interactive exercise showing course project milestones across 5 weeks with Week 1 highlighted"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
-
-**Widget Features:**
-- Displays all 5 project milestones with deliverables
-- Current week (Week 1) highlighted with accent color
-- "This Week" section explains what students will work on
-- Responsive design for mobile viewing
-- WCAG 2.2 AA compliant with keyboard navigation
-
-**Design Notes:**
-- Uses toned-down neutral color palette matching other course exercises
-- Sage green accent (`#6b9085`) for project elements
-- Replaces markdown table that renders poorly in Uplimit
-
-📋 **Full Project Details:** See [CFL Expansion Project Guide](../../shared-resources/cfl-expansion-project.md)
-
----
-
-### Element 1: Infobox Content
+## Element 1: Infobox Content
 ```
 Title: ◉ Week 1 Learning Outcomes
 

@@ -1,10 +1,16 @@
 # MODULE 3: Core Content - Legacy vs Innovation (BOPPPS: Presentation) • **V3 INTERACTIVE-FIRST REDESIGN**
-**Version:** 1.6.0 | **Last Updated:** 2026-01-12
+**Version:** 1.7.0 | **Last Updated:** 2026-01-13
 
 ### Version 1.5.0 Changes
 - **REMOVED:** Element 5 "Legacy vs Innovation Trade-Off" video (no caption available)
 - **UPDATED:** Element 2 now references production caption file
 - **RENUMBERED:** Elements 6-10 → 5-9
+
+### Version 1.7.0 Changes
+- **FIXED:** Element 1 - Updated executive reference from Keith Pelley (removed) to Stewart Johnston
+- **FIXED:** All elements - Changed "Strategic Vision Memo" to "CFL Expansion Final Proposal" for consistency with Module 7
+- **FIXED:** Widget embed code formatting (proper closing code blocks)
+- **ALIGNED:** Element 6 - Restructured to match Element 4 reflection format pattern
 
 ### Version 1.6.0 Changes
 - **UPDATED:** Element 2 - Title aligned to caption ("The Heritage Balance Framework"), added video content summary
@@ -32,11 +38,14 @@
 |-------|---------|----------------|------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | 2 min | Type directly | Sets interactive learning approach for heritage properties |
 | 2 | **▶ Video** ⬤ Required | "Heritage Properties as Business Assets" (2 min) | 2 min | Upload MP4 | Introduces heritage property economics before matrix widget |
+| 2B | **✓ Quiz (MC)** ⬤ Required | 4 MC questions on heritage framework | 3 min | Configure quiz | Comprehension check before widget |
 | 3 | **⚙ iFrame Widget** ⬤ Required | **Legacy vs Innovation Matrix** | 8-10 min | Embed widget | Map strategic decisions balancing tradition & growth |
-| 4 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Process learning from strategic mapping |
+| 4 | **✓ Quiz (MC)** ⬤ Required | 4 MC questions on matrix concepts | 3 min | Configure quiz | Test strategic trade-off understanding |
+| 4B | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Process learning from strategic mapping |
 | 5 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
 | 6 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
-| 7 | **▶ Video** ◐ Recommended | "Future Trends in Sports Business" (2 min) | 2 min | Upload MP4 | Introduces 6 megatrends before deep dive |
+| 7 | **▶ Video** ◐ Recommended | "Future Trends in Sports Business" (2 min) | 2 min | Upload MP4 | Introduces 5 megatrends |
+| 7B | **✓ Quiz (MC)** ◐ Recommended | 5 MC questions on future trends | 4 min | Configure quiz | Test trend knowledge |
 | 8 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
 | 9 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Variable | Configure in Uplimit | On-demand support for strategic planning |
 
@@ -53,7 +62,7 @@
 
 You've explored revenue streams, media rights, sponsorships, and athlete branding. Now for the final challenge: How do you monetize history without compromising authenticity?
 
-**From Executive Insights to Frameworks:** In Module 2, you heard Jamie Dinsmore (Hockey Hall of Fame) and Keith Pelley (MLSE) describe the heritage vs innovation tension from their executive perspectives. Jamie emphasized the "authenticity constraint"—how curatorial veto power and donor expectations limit growth options. Keith contrasted this with franchise freedom, where heritage becomes a growth asset rather than a constraint. Now you'll learn the FRAMEWORKS both executives use to make these decisions systematically. The Legacy vs Innovation Matrix translates their intuition into a tool YOU can apply to any heritage property.
+**From Executive Insights to Frameworks:** In Module 2, you heard Jamie Dinsmore (Hockey Hall of Fame) and Stewart Johnston (CFL Commissioner) describe the heritage vs innovation tension from their executive perspectives. Jamie emphasized the "authenticity constraint"—how curatorial veto power and donor expectations limit growth options. Stewart provided league-level perspective on how tradition and expansion can coexist when managed strategically. Now you'll learn the FRAMEWORKS both executives use to make these decisions systematically. The Legacy vs Innovation Matrix translates their intuition into a tool YOU can apply to any heritage property.
 
 This module features two powerful interactive exercises that let you discover heritage monetization principles through experimentation—not passive reading:
 
@@ -74,7 +83,7 @@ Forecast how emerging trends (AI, VR/AR, new demographics, emerging sports) will
 **Learning Approach:**
 Don't just follow instructions. **Experiment boldly**: Create an all-tradition portfolio (100% preservation, 0% innovation). Then try the opposite (100% innovation, 0% tradition). See what breaks. Ask "what if?" and test your hypotheses.
 
-The insights you discover through experimentation—and through making intentionally bad decisions—will prepare you for the final Strategic Vision Memo where you must integrate everything from Weeks 1-5.
+The insights you discover through experimentation—and through making intentionally bad decisions—will prepare you for the CFL Expansion Final Proposal where you must integrate everything from Weeks 1-5.
 
 **Context: Why This Week is Different**
 Weeks 1-4 focused on growth: maximize revenue, expand audience, increase returns. Week 5 introduces **constraint**: You can't just maximize revenue if it destroys authenticity. Heritage properties face a unique tension that requires strategic trade-offs.
@@ -132,6 +141,75 @@ Two paths: Preserve (accept declining attendance) or Transform (embrace digital,
 1. Upload `week5-video1-heritage-properties.mp4`
 2. Add VTT caption file
 3. Place before Legacy vs Innovation Matrix exercise
+
+---
+
+## Element 2B: Multiple Choice Questions - Heritage Balance Framework
+
+**Uplimit Implementation:**
+1. Select **Quiz** element in module builder
+2. Add 4 multiple choice questions on the Heritage Balance Framework
+3. Set as "Practice Quiz" (not graded) for self-assessment
+
+---
+
+### Question 1: Heritage Property Constraint
+
+What unique constraint do heritage properties face that growth-focused sports businesses don't?
+
+A) They have smaller stadiums
+B) Their authenticity IS their asset - aggressive monetization destroys value ✅
+C) They can't sell merchandise
+D) They have no media rights
+
+**Feedback (Correct):** Correct! Heritage properties face a unique constraint: authenticity is the core asset. Monetize too aggressively and you destroy what people value. This is fundamentally different from a professional team that can maximize revenue without mission constraints.
+
+**Feedback (Incorrect):** The video explains that heritage properties' authenticity IS their asset. Unlike growth-focused businesses, they can't simply maximize revenue - doing so risks destroying the very thing that makes them valuable.
+
+---
+
+### Question 2: Heritage Balance Grid
+
+The Heritage Balance Grid plots opportunities on two axes. What are they?
+
+A) Cost and Time
+B) Revenue Impact and Authenticity Risk ✅
+C) Attendance and Merchandise Sales
+D) Media Rights and Sponsorship Value
+
+**Feedback (Correct):** Correct! The Heritage Balance Grid uses Revenue Impact (how much money does this generate?) and Authenticity Risk (how much does this threaten credibility?) to evaluate every opportunity.
+
+**Feedback (Incorrect):** Review the Heritage Balance Framework video. The grid plots Revenue Impact on one axis and Authenticity Risk on the other, helping heritage properties evaluate opportunities systematically.
+
+---
+
+### Question 3: Three Tests for Initiatives
+
+The video suggests three tests for any heritage property initiative. Which is NOT one of the three tests?
+
+A) Does it serve your mission or replace it?
+B) Would your most loyal stakeholders accept it?
+C) Is it reversible?
+D) Does it maximize short-term revenue? ✅
+
+**Feedback (Correct):** Correct! The three tests are: (1) Does it serve your mission or replace it? (2) Would your most loyal stakeholders accept it? (3) Is it reversible? Short-term revenue maximization is NOT a test - in fact, it's often the trap heritage properties must avoid.
+
+**Feedback (Incorrect):** The three tests are mission alignment, stakeholder acceptance, and reversibility. "Maximize short-term revenue" is actually a trap that heritage properties should avoid.
+
+---
+
+### Question 4: Key Insight
+
+What is the key insight about authenticity from the Heritage Balance Framework?
+
+A) Authenticity is binary - you either have it or you don't
+B) Authenticity doesn't matter for revenue generation
+C) Authenticity is not binary - you can extend reach without replacing substance ✅
+D) Authenticity can be easily rebuilt once lost
+
+**Feedback (Correct):** Correct! The key insight is that authenticity is NOT binary. You can extend reach (digital memberships, pop-up exhibits) without replacing substance (curatorial standards, artifact preservation). This enables growth without mission compromise.
+
+**Feedback (Incorrect):** The video emphasizes that authenticity is not binary. Heritage properties CAN grow and innovate - the key is extending reach without replacing the substance that makes them authentic.
 
 ---
 
@@ -213,7 +291,7 @@ Students drag initiatives onto the matrix:
 - **Experimentation First:** Let students try extreme allocations and see consequences
 - **No "Right Answer":** Multiple viable strategies depending on institutional values
 - **Strategic Tension:** Forces explicit acknowledgment of trade-offs
-- **Application to Anchor Project:** Direct relevance for final Strategic Vision Memo
+- **Application to Anchor Project:** Direct relevance for final CFL Expansion Final Proposal
 
 **Technical Specifications:**
 - **Drag-and-drop interface:** Move initiative cards onto matrix quadrants
@@ -236,7 +314,7 @@ Students drag initiatives onto the matrix:
   allowfullscreen
   loading="lazy">
 </iframe>
-
+```
 
 **Widget Scenarios to Test:**
 
@@ -257,7 +335,76 @@ Students drag initiatives onto the matrix:
 
 ---
 
-## Element 4: Reflection Prompt After Widget 1
+## Element 4: Multiple Choice Questions - Legacy vs Innovation Matrix
+
+**Uplimit Implementation:**
+1. Select **Quiz** element in module builder
+2. Add 4 multiple choice questions on the matrix concepts
+3. Set as "Practice Quiz" (not graded) for self-assessment
+
+---
+
+### Question 1: Matrix Quadrants
+
+In the Legacy vs Innovation Matrix, what happens to organizations that position in the "Museum Trap" quadrant (High Tradition Preservation, Low Revenue Growth)?
+
+A) They achieve the best of both worlds
+B) They become financially unsustainable while maintaining authenticity ✅
+C) They maximize revenue and lose credibility
+D) They find the strategic "sweet spot"
+
+**Feedback (Correct):** Correct! The "Museum Trap" quadrant represents high authenticity but financial stagnation. These organizations maintain their heritage perfectly but become increasingly irrelevant to younger audiences and may require subsidies to survive.
+
+**Feedback (Incorrect):** The Museum Trap means you've preserved authenticity but failed to generate growth. While you maintain credibility, financial sustainability becomes a challenge - you may need government or league subsidies to operate.
+
+---
+
+### Question 2: Disneyfication Risk
+
+What does "Disneyfication" mean in the context of heritage property strategy?
+
+A) Creating a family-friendly museum experience
+B) Aggressive commercialization that destroys authenticity for revenue ✅
+C) Adding rides and attractions to a museum
+D) Partnering with Disney for licensing deals
+
+**Feedback (Correct):** Correct! "Disneyfication" refers to the Top-Left quadrant: high revenue growth but low tradition preservation. The organization maximizes commercial opportunities but loses its authentic identity, becoming an entertainment venue rather than a heritage institution.
+
+**Feedback (Incorrect):** In heritage strategy, "Disneyfication" is a warning about prioritizing revenue over authenticity. It's the Top-Left quadrant where institutions chase growth at the cost of their credibility and mission.
+
+---
+
+### Question 3: Sweet Spot Strategy
+
+What characterizes a "Sweet Spot" strategy in the Legacy vs Innovation Matrix?
+
+A) Maximizing tradition preservation at all costs
+B) Maximizing revenue growth at all costs
+C) Balancing high authenticity with sustainable revenue growth ✅
+D) Avoiding all innovation to protect heritage
+
+**Feedback (Correct):** Correct! The Sweet Spot (Top-Right quadrant) represents the strategic balance: maintaining high authenticity while achieving sustainable revenue growth. This requires careful selection of initiatives that serve the mission while enabling financial sustainability.
+
+**Feedback (Incorrect):** The Sweet Spot isn't about maximizing either dimension alone. It's about finding initiatives that score high on BOTH tradition preservation AND revenue growth - serving the mission while building financial sustainability.
+
+---
+
+### Question 4: Real-World Benchmarks
+
+Based on the widget's benchmark data, how does the Hockey Hall of Fame position its strategy?
+
+A) All preservation, no innovation
+B) All innovation, no preservation
+C) Hybrid strategy (approximately 60% preservation, 40% innovation) ✅
+D) Equal split with high risk tolerance
+
+**Feedback (Correct):** Correct! The Hockey Hall of Fame uses a hybrid strategy, prioritizing preservation (60%) while allowing strategic innovation (40%). This reflects Jamie Dinsmore's principle: "Don't lose core, then look to grow."
+
+**Feedback (Incorrect):** The HHOF doesn't use an extreme strategy. As Jamie Dinsmore explained in Module 2, they prioritize preservation while selectively embracing innovation - approximately a 60/40 split favoring heritage.
+
+---
+
+## Element 4B: Reflection Prompt After Matrix Widget
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -278,12 +425,12 @@ After experimenting with the Legacy vs Innovation Matrix, take 2 minutes to refl
 - Would you prioritize preservation (risk: irrelevance) or innovation (risk: lost authenticity)?
 - What's your personal "acceptable trade-off"?
 
-**3. How does this apply to your Strategic Vision Memo?**
+**3. How does this apply to your CFL Expansion Final Proposal?**
 - If analyzing a heritage property (Hall of Fame, Olympic legacy, historic venue), which quadrant will you target?
 - If analyzing a modern sports business, what traditions/heritage should you preserve (if any)?
 - How will you justify your trade-offs to stakeholders with different values?
 
-**Actionable Insight:** Write down the ONE strategic initiative from the matrix that you will include in your final Strategic Vision Memo. Why did you choose it?
+**Actionable Insight:** Write down the ONE strategic initiative from the matrix that you will include in your CFL Expansion Final Proposal. Why did you choose it?
 
 **Real-World Context:**
 The Hockey Hall of Fame faces this exact dilemma. Jamie Dinsmore (President & CEO) must balance inducting only true legends (high bar = authenticity) vs. expanding to international players and women's hockey (broader appeal = growth). Neither pure preservation nor pure innovation works—the answer is strategic balance based on institutional mission.
@@ -411,7 +558,7 @@ Based on trend choices, widget plots your organization on 2x2 matrix:
 - **Mobile responsive:** Touch-enabled sliders, works on all devices
 - **WCAG 2.2 AA compliant:** Keyboard navigation, screen reader support, color contrast
 - **Uplimit branding:** Consistent with platform aesthetic
-- **Export to PDF:** Investment thesis document for Strategic Vision Memo
+- **Export to PDF:** Investment thesis document for CFL Expansion Final Proposal
 - **Historical data visualization:** Chart showing 2020-2025 actual trends vs. 2025-2030 forecast
 
 **Uplimit Embed Code:**
@@ -426,7 +573,7 @@ Based on trend choices, widget plots your organization on 2x2 matrix:
   allowfullscreen
   loading="lazy">
 </iframe>
-
+```
 
 **Widget Learning Objectives:**
 1. **Forecast future trends** using data-driven scenario analysis (WLO 5.3)
@@ -444,45 +591,31 @@ Based on trend choices, widget plots your organization on 2x2 matrix:
 2. Copy markdown below:
 
 
-### Future Vision Insights: What Did the Forecast Reveal?
+### What Did You Discover About Future Trends?
 
-**WLO 5.3 Practice:** This reflection helps you assess emerging trends (AI, VR/AR, new demographics, emerging markets) and their business impact—a critical skill for Week 5's capstone assessment.
+After experimenting with the Future Trends Predictor, take 2 minutes to reflect:
 
-After experimenting with the Future Trends Predictor, take 10 minutes to reflect on your strategic bets:
-
-**1. Which Trends Did You Prioritize—and Why?**
+**1. Which trends did you prioritize—and why?**
 - Did you choose high-certainty trends (women's sports, streaming) or high-risk bets (Web3, VR/AR)?
 - What was your time horizon: Quick wins (1-3 years) or long-term transformation (5-10 years)?
 - How much risk are you personally willing to accept in exchange for higher returns?
 
-**2. How Did Your Forecast Compare to Expert Predictions?**
+**2. How did your forecast compare to expert predictions?**
 - Where did you align with McKinsey/Deloitte consensus?
 - Where did you diverge—and what conviction led you to bet differently?
 - In the Optimistic vs. Pessimistic scenarios, which felt more realistic to you?
 
-**3. Impact on Revenue Streams (Week 1 Callback)**
-- Which of the 5 revenue streams (media, ticketing, sponsorship, merch, betting) benefited most from your trend allocation?
-- Were there any streams that declined or stagnated with your choices?
-- Did you create a balanced portfolio or concentrate on specific streams?
-
-**4. Application to Your Strategic Vision Memo**
+**3. How does this apply to your CFL Expansion Final Proposal?**
 - Which 3 trends will you prioritize in your final 5-year strategic vision?
-- How will you justify your $50M investment allocation to skeptical stakeholders?
+- How will you justify your investment allocation to skeptical stakeholders (the CFL Board of Governors)?
 - What metrics will you use to measure success over 5 years?
 
-**✅ Required Action (WLO 5.3):** Write your 2-sentence investment thesis explaining which trends you prioritized and why. This will directly inform your Strategic Vision Memo in Module 7.
+**Actionable Insight:** Write your 2-sentence investment thesis explaining which trends you prioritized and why. This will directly inform your CFL Expansion Final Proposal in Module 7.
 
-Example: "I'm allocating 40% to women's sports growth because it's the highest-certainty opportunity with 20%+ CAGR potential. The remaining 60% goes to AI and direct fan relationships to future-proof against disruption."
+*Example: "I'm allocating 40% to women's sports growth because it's the highest-certainty opportunity with 20%+ CAGR potential. The remaining 60% goes to AI and direct fan relationships to future-proof against disruption."*
 
-**Strategic Context:**
-Your Strategic Vision Memo (final assessment) must integrate frameworks from all 5 weeks:
-- **Week 1:** Revenue ecosystem (5 streams)
-- **Week 2:** Media rights strategy (traditional vs. streaming)
-- **Week 3:** Sponsorship ROI and betting integration
-- **Week 4:** Athlete branding and emerging sports
-- **Week 5:** Heritage preservation and future trends
-
-This Future Trends widget helps you see how emerging trends will reshape the entire business model you've been studying all course long.
+**Course Integration:**
+Your CFL Expansion Final Proposal must integrate frameworks from all 5 weeks: revenue ecosystem (Week 1), media rights strategy (Week 2), sponsorship ROI (Week 3), brand building (Week 4), and heritage/innovation balance (Week 5). This Future Trends widget helps you see how emerging trends will reshape the entire business model you've been studying.
 
 
 ---
@@ -538,6 +671,90 @@ Media rights valued on engagement, not just eyeballs. Sponsorship requires data 
 1. Upload `week5-video3-future-trends.mp4`
 2. Add VTT caption file
 3. Place after reflection prompt, before deep dive accordion
+
+---
+
+## Element 7B: Multiple Choice Questions - Future Trends
+
+**Uplimit Implementation:**
+1. Select **Quiz** element in module builder
+2. Add 5 multiple choice questions on future trends
+3. Set as "Practice Quiz" (not graded) for self-assessment
+
+---
+
+### Question 1: Direct-to-Consumer Trend
+
+According to the video, why are leagues and teams building their own streaming platforms?
+
+A) Because traditional broadcasters are going bankrupt
+B) To own the customer relationship and keep more revenue ✅
+C) Because streaming is cheaper to produce
+D) Government regulations require it
+
+**Feedback (Correct):** Correct! The DTC trend is about ownership. "Why share revenue with broadcasters when you can own the customer relationship?" Leagues want direct access to fans and the data that comes with it.
+
+**Feedback (Incorrect):** The DTC trend is driven by revenue and relationship ownership. Leagues can keep more money and build direct fan relationships by bypassing traditional broadcasters.
+
+---
+
+### Question 2: Sports Betting Integration
+
+How is sports betting integration evolving beyond simple sponsorship?
+
+A) Betting companies are buying sports teams
+B) Betting is becoming embedded into broadcasts with real-time odds and one-click wagering ✅
+C) Leagues are banning all betting partnerships
+D) Betting is moving entirely to cryptocurrency
+
+**Feedback (Correct):** Correct! The trend is moving "from sponsorship to embedded products." Imagine watching a game where betting is integrated into the broadcast - odds updating in real-time, one-click wagering from the screen.
+
+**Feedback (Incorrect):** Betting integration is deepening beyond logos and sponsorships. The future involves embedded betting within broadcasts - real-time odds, instant wagering, seamless integration with viewing.
+
+---
+
+### Question 3: Women's Sports Economics
+
+What does the video predict about women's sports economics within the next decade?
+
+A) Women's sports will disappear due to lack of interest
+B) Women's sports will remain at current valuation levels
+C) Top women's leagues will command valuations comparable to men's second-tier leagues ✅
+D) Women's sports will surpass men's sports in total revenue
+
+**Feedback (Correct):** Correct! The video predicts women's sports will reach "parity economics" - top women's leagues commanding valuations comparable to men's second-tier leagues. Early investors will see significant returns.
+
+**Feedback (Incorrect):** The video is optimistic about women's sports growth. While not predicting dominance over men's sports, it forecasts top women's leagues reaching valuations comparable to men's second-tier leagues.
+
+---
+
+### Question 4: AI Transformation
+
+How is AI being deployed across sports business functions?
+
+A) Only for video game development
+B) From ticket pricing to injury prediction to fan engagement - across every function ✅
+C) Exclusively for player contracts
+D) AI has been rejected by sports organizations
+
+**Feedback (Correct):** Correct! AI is transforming operations across ALL functions: ticket pricing optimization, injury prediction, fan engagement personalization, and more. It's a horizontal trend affecting every aspect of sports business.
+
+**Feedback (Incorrect):** AI isn't limited to one application. The video emphasizes it's being deployed across every function - pricing, analytics, injury prediction, engagement, content creation, and more.
+
+---
+
+### Question 5: Heritage as Competitive Advantage
+
+Why does the video argue that heritage becomes MORE valuable as sports become more commercial?
+
+A) Heritage organizations have more money
+B) Properties with authentic history become cultural institutions, not just teams ✅
+C) Heritage properties don't need marketing
+D) Commercial sports are becoming illegal
+
+**Feedback (Correct):** Correct! As sports become more commercial and transactional, properties with authentic history differentiate themselves. "Storied franchises and legacy organizations aren't just teams - they're cultural institutions." Authenticity becomes rare and therefore valuable.
+
+**Feedback (Incorrect):** The video argues that in an increasingly commercial landscape, authenticity stands out. Heritage properties aren't competing on the same terms - they offer cultural significance that pure commercial ventures can't replicate.
 
 ---
 
@@ -676,7 +893,7 @@ Museums, halls of fame, Olympic legacy sites, and historic venues face a strateg
 
 ---
 
-### Application to Your Strategic Vision Memo
+### Application to Your CFL Expansion Final Proposal
 
 If your chosen sports property involves heritage, tradition, or history:
 
@@ -718,7 +935,7 @@ Heritage properties cannot maximize profit without risk to mission. You must exp
 
 **There is no "right" answer—but there are consequences for each choice.**
 
-Your Strategic Vision Memo must make this trade-off explicit and justify it based on stakeholder values, market conditions, and long-term sustainability.
+Your CFL Expansion Final Proposal must make this trade-off explicit and justify it based on stakeholder values, market conditions, and long-term sustainability.
 
 
 ---
@@ -740,14 +957,14 @@ You are a knowledgeable assistant helping MBA students understand heritage sport
 - Heritage property business models (museums, halls of fame, Olympic legacies)
 - How to balance tradition preservation with revenue growth
 - How emerging trends (AI, VR/AR, women's sports, Web3, etc.) will impact the 5 revenue streams from Week 1
-- How to apply these frameworks to their Strategic Vision Memo (final assessment)
+- How to apply these frameworks to their CFL Expansion Final Proposal (final assessment)
 
 Provide clear, business-focused explanations with specific numbers and examples. Help students synthesize knowledge from all 5 weeks of the course. Encourage them to think critically about trade-offs and stakeholder priorities.
 
 
 **Welcome Message:**
 
-Hi! I can help you understand strategic insights from the Legacy vs Innovation Matrix and Future Trends Predictor. What questions do you have about heritage property strategies, trend forecasting, or how to integrate these frameworks into your Strategic Vision Memo?
+Hi! I can help you understand strategic insights from the Legacy vs Innovation Matrix and Future Trends Predictor. What questions do you have about heritage property strategies, trend forecasting, or how to integrate these frameworks into your CFL Expansion Final Proposal?
 
 
 ---
@@ -777,7 +994,7 @@ Through hands-on experimentation with strategic frameworks, you've discovered:
 - **Week 5:** Heritage properties → How to preserve tradition while embracing innovation
 
 **Up Next: Module 4 - Hockey Hall of Fame Transformation Simulation**
-You've built strategic frameworks. Now you'll apply them to a real case: Transform the Hockey Hall of Fame for the next 10 years. This simulation prepares you for the final Strategic Vision Memo assessment.
+You've built strategic frameworks. Now you'll apply them to a real case: Transform the Hockey Hall of Fame for the next 10 years. This simulation prepares you for the final CFL Expansion Final Proposal assessment.
 
 Ready to transform a heritage icon? Let's apply your frameworks!
 
@@ -850,7 +1067,7 @@ Tradition vs. innovation tension—how new entrants challenge heritage leagues. 
 - **Learn by doing:** Experimentation before explanation
 - **Strategic trade-offs:** No "right answer"—forces value-based decisions
 - **Synthesis opportunity:** Integrates all 5 weeks of course content
-- **Application-focused:** Direct preparation for final Strategic Vision Memo
+- **Application-focused:** Direct preparation for final CFL Expansion Final Proposal
 - **Real-world context:** Benchmarks against actual heritage properties and expert forecasts
 
 ### Total Time Estimate:

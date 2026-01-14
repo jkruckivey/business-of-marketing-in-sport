@@ -19,11 +19,14 @@
 | 5 | **Text** ⬤ Required | Exclusivity & competition dynamics (150 words) | 1 min | Embedded markdown below |
 | 6 | **🎮 iFrame** ◐ Recommended | Tool 2: Exclusivity Bidding Simulator | 3 min | Phase 2 tool (NEEDS TO BE BUILT) |
 | 7 | **Infobox (Note)** ⬤ Required | Key insight: Appointment viewing | 1 min | Yellow variant |
+| 7A | **📝 Practice Quiz** ⬤ Required | Media Valuation Check (4 questions) | 3 min | Configure in Uplift |
 | 8 | **Text** ⬤ Required | Linear TV vs. Streaming intro (120 words) | 1 min | Embedded markdown below |
 | 9 | **Table** ⬤ Required | Platform economics comparison | 1 min | Type directly |
 | 10 | **🎮 iFrame** ◐ Recommended | Tool 3: Platform Economics Visualizer | 4 min | Phase 2 tool (NEEDS TO BE BUILT) |
+| 10A | **📝 Practice Quiz** ⬤ Required | Platform Economics Check (4 questions) | 3 min | Configure in Uplift |
 | 11 | **Text** ⬤ Required | Fan engagement monetization (150 words) | 1 min | Embedded markdown below |
 | 12 | **🎮 iFrame** ◐ Recommended | Tool 4: Engagement Value Chain Builder | 3 min | Phase 3 tool (NEEDS TO BE BUILT) |
+| 12A | **📝 Practice Quiz** ⬤ Required | Fan Engagement Check (3 questions) | 2 min | Configure in Uplift |
 
 **V3 Metrics:**
 - **Total Time:** 12-15 minutes (down from 15-18 min in V1)
@@ -376,6 +379,75 @@ This unique characteristic explains why sports rights command prices that seem e
 
 ---
 
+### Element 7A: Practice Quiz - Media Valuation Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 4 multiple choice questions:
+
+---
+
+### Question 1: Primary Valuation Factor
+
+According to the 5-factor framework, which factor typically has the LARGEST impact on media rights valuation?
+
+A) Brand alignment with broadcaster
+B) Audience size and demographics ✅
+C) Content volume (number of games)
+D) Platform strategy fit
+
+**Feedback (Correct):** Correct! Audience size is the foundational driver—larger audiences command higher fees because they deliver more advertising impressions. The NFL's $10B/year deal is built on 17M average viewers per game, compared to MLS's $250M deal with 300K viewers. Demographics (coveted 18-49 demo) add a premium multiplier.
+
+**Feedback (Incorrect):** All five factors matter, but one is foundational. Think about what advertisers are ultimately paying for—what metric directly determines how many people see their ads?
+
+---
+
+### Question 2: Exclusivity Premium
+
+Why do exclusive rights typically cost 2-3x more than non-exclusive packages?
+
+A) Regulators require higher payments for exclusive content
+B) Exclusive content drives subscriptions and differentiation in a crowded market ✅
+C) Non-exclusive rights are illegal in most markets
+D) Exclusive deals have shorter contract terms
+
+**Feedback (Correct):** Correct! Exclusivity creates competitive advantage: "Watch your team ONLY on our platform." Apple TV+ paid premium for exclusive MLS rights because it differentiates them in the streaming wars. Amazon's exclusive Thursday Night NFL does the same for Prime subscriptions.
+
+**Feedback (Incorrect):** Think about WHY a platform would pay more to be the ONLY place to watch certain content. What advantage does exclusivity create in a market with dozens of streaming options?
+
+---
+
+### Question 3: Appointment Viewing
+
+Why does "appointment viewing" make sports content uniquely valuable to advertisers?
+
+A) Sports fans are wealthier than other viewers
+B) Live sports create simultaneous audiences that can't time-shift, commanding premium ad rates ✅
+C) Sports have more commercial breaks than other programming
+D) Sports advertisers get tax benefits
+
+**Feedback (Correct):** Correct! Sports are the last true appointment viewing—you can't watch a game "later" without risking spoilers. This creates predictable, simultaneous audiences (rare in the DVR/streaming era) that justify $50-70 CPM versus $15-25 for scripted TV. Advertisers know viewers are actually watching live.
+
+**Feedback (Incorrect):** The key insight is about HOW people watch sports versus other content. What makes sports different from a Netflix show that you can watch anytime?
+
+---
+
+### Question 4: Bidding War Dynamics
+
+When Amazon entered NFL rights bidding in 2021, what happened to overall rights prices?
+
+A) Prices decreased because Amazon accepted lower advertising rates
+B) Prices increased 75% as traditional networks raised bids to compete ✅
+C) Prices stayed the same because the NFL set fixed prices
+D) Amazon withdrew after being outbid by ESPN
+
+**Feedback (Correct):** Correct! Adding a well-funded bidder (especially a tech giant with strategic rather than purely financial goals) drives up prices for everyone. Traditional networks like CBS, FOX, and NBC had to raise their bids to compete, resulting in a 75% increase despite stable viewership.
+
+**Feedback (Incorrect):** Think about basic auction dynamics. When a new bidder with deep pockets enters a competitive auction, what typically happens to the final price?
+
+---
+
 ### Element 9: Text - Linear TV vs. Streaming Intro (120 words)
 
 Copy the markdown below directly into Uplimit:
@@ -552,6 +624,75 @@ This visualizer shows why streaming platforms lose money for years while linear 
 
 ---
 
+### Element 10A: Practice Quiz - Platform Economics Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 4 multiple choice questions:
+
+---
+
+### Question 1: Revenue Model Difference
+
+What is the PRIMARY revenue source difference between linear TV and streaming platforms?
+
+A) Linear TV relies mainly on subscriptions; streaming relies on advertising
+B) Linear TV relies mainly on advertising (80%); streaming relies on subscriptions (90%) ✅
+C) Both platforms rely equally on advertising and subscriptions
+D) Linear TV has no advertising; streaming has no subscriptions
+
+**Feedback (Correct):** Correct! Linear TV generates ~80% from advertising and ~20% from carriage fees paid by cable providers. Streaming generates ~90% from subscriptions with emerging ad-supported tiers adding ~10%. These different models create fundamentally different profitability timelines and risk profiles.
+
+**Feedback (Incorrect):** Review the Platform Economics comparison table. The key difference is WHERE each platform makes its money, which affects how they can justify paying for sports rights.
+
+---
+
+### Question 2: Profitability Timeline
+
+Why do streaming platforms typically accept 3-5 year payback periods while linear TV expects immediate profitability?
+
+A) Streaming has lower production costs
+B) Streaming uses customer lifetime value (LTV) thinking—investing now to acquire subscribers who pay for years ✅
+C) Streaming platforms have government subsidies
+D) Linear TV has higher advertising rates
+
+**Feedback (Correct):** Correct! Streaming platforms think in customer lifetime value: pay $50 to acquire a subscriber who pays $15/month for 3 years = $540 LTV minus $50 CAC = $490 profit. They accept early losses because each subscriber delivers value over years. Linear TV must profit immediately because advertising revenue is immediate.
+
+**Feedback (Incorrect):** Think about the TIME dimension of each business model. When does a cable advertiser pay? When does a streaming subscriber pay? How does this affect willingness to invest upfront?
+
+---
+
+### Question 3: Cord-Cutting Risk
+
+According to the module, cord-cutting poses the greatest risk to which type of platform?
+
+A) Streaming platforms (fewer potential subscribers)
+B) Linear TV platforms (declining subscriber base erodes both ad revenue and carriage fees) ✅
+C) Both equally affected
+D) Neither—cord-cutting doesn't affect sports viewership
+
+**Feedback (Correct):** Correct! Cord-cutting devastates linear TV because it reduces BOTH revenue streams: fewer cable subscribers means lower carriage fees AND smaller audiences for advertisers. The Rogers NHL case shows this: projected 15% subscriber decline over 10 years, actual was 28%—nearly doubling their losses.
+
+**Feedback (Incorrect):** Think about what happens to a linear TV platform when people cancel cable. They lose carriage fees directly, AND their audience shrinks, reducing advertising revenue. It's a double hit.
+
+---
+
+### Question 4: Tech Giant Strategy
+
+Why can tech giants like Apple and Amazon afford to "overpay" for sports rights compared to traditional broadcasters?
+
+A) They have better advertising technology
+B) They value subscriber acquisition and retention, not immediate content ROI ✅
+C) They receive government subsidies for content acquisition
+D) They have exclusive deals with sports leagues
+
+**Feedback (Correct):** Correct! Apple and Amazon don't need sports to be profitable—they need sports to drive subscriptions. If MLS rights cost Apple $250M/year but reduce Prime cancellations worth $500M, it's profitable even if MLS content itself loses money. This strategic lens explains "irrational" bidding.
+
+**Feedback (Incorrect):** Tech giants evaluate sports rights differently than ESPN or NBC. They're not asking "Will this content generate profit?" They're asking something else about their core subscription business.
+
+---
+
 ### Element 11: Text - Fan Engagement Monetization (150 words)
 
 Copy the markdown below directly into Uplimit:
@@ -709,6 +850,60 @@ This builder shows how fan engagement creates revenue beyond just watching games
 
 **If you're stuck:** Build two chains — one for a casual fan (watches some games) and one for a superfan (watches everything, plays fantasy, bets, buys merch). Compare the LTV difference.
 ```
+
+---
+
+### Element 12A: Practice Quiz - Fan Engagement Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 3 multiple choice questions:
+
+---
+
+### Question 1: Fan Value Tiers
+
+According to the engagement value chain, approximately how much more valuable is a "super-fan" compared to a "passive viewer"?
+
+A) 2-3x more ($15-30 vs. $5-10)
+B) 5-10x more ($50-100 vs. $5-15)
+C) 20-40x more ($300-500 vs. $5-15) ✅
+D) 100x more ($500-1000 vs. $5-10)
+
+**Feedback (Correct):** Correct! A passive viewer generates $5-15/year (just ad impressions). A super-fan who watches everything, plays fantasy, bets, and subscribes to exclusive content generates $300-500+/year. This 20-40x difference explains why platforms invest heavily in engagement features.
+
+**Feedback (Incorrect):** Review the three fan tiers: Passive Viewer ($5-15), Engaged Fan ($50-100), and Super-Fan ($300-500+). The gap between the lowest and highest tiers is substantial.
+
+---
+
+### Question 2: Betting Integration Value
+
+Why does betting partnership integration have $0 cost but high value in the engagement model?
+
+A) Betting companies pay platforms to be included
+B) Betting works on revenue share—platforms get a cut of bets without upfront investment ✅
+C) Betting doesn't require any technology integration
+D) Government subsidizes betting partnerships
+
+**Feedback (Correct):** Correct! Betting partnerships typically operate on revenue share: the platform gets 10-20% of betting revenue generated through their integration without paying upfront costs. A fan who bets adds ~$30/year in value while costing the platform nothing to acquire.
+
+**Feedback (Incorrect):** Think about the business model of betting partnerships. Unlike building an app ($2M cost) or creating exclusive content ($3M cost), betting partnerships work differently. Who bears the cost?
+
+---
+
+### Question 3: Strategic Implication
+
+Why can platforms with strong engagement capabilities (ESPN Bet, DraftKings partnerships) justify paying MORE for media rights?
+
+A) They have access to government funding
+B) They can extract more value per viewer through multiple revenue streams ✅
+C) They have exclusive contracts with all leagues
+D) They face less competition from other bidders
+
+**Feedback (Correct):** Correct! If Platform A can only monetize passive viewing ($10/fan) but Platform B can drive betting + fantasy + subscriptions ($100/fan), Platform B can afford to pay 10x more for rights and still be profitable. Engagement capabilities change the math of rights valuation.
+
+**Feedback (Incorrect):** Think about the engagement value chain math. If a platform can convert 10% of viewers into super-fans worth $300-500 each, how does that change what they can afford to pay for content rights?
 
 ---
 

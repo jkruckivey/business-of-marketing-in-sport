@@ -24,6 +24,7 @@
 | 5 | **Details** ⬤ Required | Exhibit A: Nashville Predators income statement | Type directly from case Exhibit 14 | Accordion - financial baseline |
 | 6 | **Details** ⬤ Required | Exhibit B: Marketing effectiveness data | Type directly from case Exhibits 18-18.4 | Accordion - promotional analysis |
 | 7 | **Details** ⬤ Required | Exhibit C: City demographic comparison | Type directly from case Exhibits 15-16 | Accordion - market context |
+| 7A | **📝 Practice Quiz** ⬤ Required | Case Comprehension Check (5 questions) | Configure in Uplift | Tests understanding before roleplay |
 | 8 | **Image** ○ Optional | Revenue flow diagram or city comparison map | Upload PNG + alt text | Visual aid if helpful |
 | 9 | **AI Chat Widget (Roleplay)** ◐ Recommended | Pitch to potential ownership group | Configure in Uplimit | Present market recommendation |
 
@@ -255,6 +256,92 @@ Title: Exhibit C: City Demographics and Market Context
 
 Source: Case Exhibits 15, 16, 19
 ```
+
+---
+
+### Element 7A: Practice Quiz - Case Comprehension Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 5 multiple choice questions:
+
+**Purpose:** Ensure students have understood the key case data before proceeding to the AI Roleplay ownership pitch.
+
+---
+
+### Question 1: Nashville's Current Financial Position
+
+Based on Exhibit A, what is the Nashville Predators' estimated EBITDA for 2007/08?
+
+A) +$5.3 million profit
+B) -$5.3 million loss ✅
+C) Break-even ($0)
+D) -$15 million loss
+
+**Feedback (Correct):** Correct! The Predators are losing approximately $5.3 million annually ($58M revenue vs. $63.3M expenses). This financial pressure drives the strategic question: can Nashville be turned around, or should the franchise relocate?
+
+**Feedback (Incorrect):** Review Exhibit A carefully. Compare total revenue ($58M) against total expenses ($63.3M). The difference represents whether the team is profitable or losing money.
+
+---
+
+### Question 2: Corporate Revenue Weakness
+
+According to the case data, what percentage of Nashville's ticket revenue comes from corporate purchases versus the NHL average?
+
+A) Nashville: 60%, NHL average: 30%
+B) Nashville: 45%, NHL average: 60%
+C) Nashville: 30%, NHL average: 60% ✅
+D) Nashville: 50%, NHL average: 50%
+
+**Feedback (Correct):** Correct! Nashville's corporate ticket purchases are only 30% versus the NHL average of 60%. This represents a major revenue opportunity—if corporate support could match league average, ticket revenue would increase substantially.
+
+**Feedback (Incorrect):** Review the Key Observations in Exhibit A. Corporate support is one of Nashville's biggest weaknesses compared to other NHL markets. Look for the comparison between Nashville's performance and the NHL average.
+
+---
+
+### Question 3: Marketing Efficiency
+
+Based on Exhibit B, which city has the MOST efficient marketing cost per incremental ticket sold?
+
+A) Nashville ($750/ticket)
+B) Houston ($545/ticket)
+C) Hamilton ($375/ticket) ✅
+D) Las Vegas ($625/ticket)
+
+**Feedback (Correct):** Correct! Hamilton has the most efficient marketing at $375/incremental ticket. This reflects the strong existing hockey culture from Toronto spillover—fans are already interested, requiring less promotional spending to convert them to ticket buyers.
+
+**Feedback (Incorrect):** Review Exhibit B's TV/Radio Advertising data. Marketing efficiency is calculated as cost divided by incremental tickets gained. Traditional hockey markets tend to be more efficient because fans are already interested.
+
+---
+
+### Question 4: Corporate Sponsorship Potential
+
+Which city offers the HIGHEST estimated corporate sponsorship potential for 2008/09?
+
+A) Las Vegas ($8.5M - gaming industry)
+B) Winnipeg ($7.5M - historic hockey market)
+C) Kansas City ($5.0M - Fortune 500 base)
+D) Hamilton ($10M - Toronto market access) ✅
+
+**Feedback (Correct):** Correct! Hamilton offers the highest corporate sponsorship potential at $10M, benefiting from proximity to Toronto's massive corporate base. Houston ($9M) is second, followed by Las Vegas ($8.5M). Nashville's current sponsorship revenue of $5M ranks among the lowest.
+
+**Feedback (Incorrect):** Review Exhibit C's Estimated Corporate Sponsorship section. Consider which markets have the deepest corporate bases and strongest business communities to support NHL-level sponsorship deals.
+
+---
+
+### Question 5: Strategic Trade-offs
+
+Based on all three exhibits, what is the MAIN strategic trade-off when comparing Hamilton vs. Houston as relocation options?
+
+A) Hamilton has better weather; Houston has a larger population
+B) Hamilton requires territorial fees and new arena costs; Houston has more corporate support but no hockey culture ✅
+C) Hamilton fans will pay more; Houston arena is newer
+D) Hamilton has better media deals; Houston has cheaper player salaries
+
+**Feedback (Correct):** Correct! Hamilton's strengths (passionate fans, Toronto spillover, high sponsorship) come with significant costs: $100M+ territorial fees to NHL and need for a new $200M arena. Houston offers excellent corporate support and the largest market, but must develop hockey culture from scratch. This trade-off illustrates why relocation decisions are complex.
+
+**Feedback (Incorrect):** Think about what makes each city attractive AND what challenges each presents. Hamilton has strong hockey culture but faces what barriers? Houston has what advantages but lacks what element? The strategic decision involves weighing multiple factors.
 
 ---
 

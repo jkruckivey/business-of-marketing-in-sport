@@ -31,7 +31,7 @@ This storyboard has been split into individual module files for easier navigatio
 3. **[Voices from Heritage Properties](modules/module-2-executives.md)** (~25 KB)
    - **✅ Available:** Golf Canada (Niki DaSilva & Tim McLaughlin) - Heritage SPORT transformation (~45 min)
    - **✅ Available:** Jamie Dinsmore (Hockey Hall of Fame CEO) - Heritage INSTITUTION management (~18 min)
-   - ⏳ Pending: Keith Pelley (MLSE CEO) - Modern franchise perspective
+   - ⏳ Pending: Stewart Johnston (MLSE CEO) - Modern franchise perspective
    - Real-world context on heritage vs. growth tension
    - **Time**: ~85-90 minutes (63 min viewing + reflection)
 
@@ -186,7 +186,7 @@ Students recommend 1 of 3 paths:
 
 ---
 
-## Week 5 Assessment: Strategic Vision Memo
+## Week 5 Assessment: CFL Expansion Final Proposal
 
 **Assignment Structure**:
 
@@ -228,7 +228,7 @@ Students recommend 1 of 3 paths:
 ### Phase 1: Content Preparation (Before Uplimit Build)
 - ☐ Finalize Hockey Hall of Fame custom case study (4,000 words)
 - ☐ Record or source Jamie Dinsmore executive video (20 min)
-- ☐ Record or source Keith Pelley executive video (20 min)
+- ☐ Record or source Stewart Johnston executive video (20 min)
 - ☐ Build Widget 1: Legacy vs Innovation Matrix
 - ☐ Build Widget 2: Heritage Property Analyzer
 - ☐ Build Widget 3: Future Trends Simulator

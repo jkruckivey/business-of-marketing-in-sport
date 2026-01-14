@@ -519,7 +519,7 @@ Let's see what you've got! ↓
 
 Title: 💡 What Your Pre-Assessment Results Mean
 
-Your quiz results create a personalized learning path for this final week. Lower scores (0-4/10) suggest spending extra time with Module 3's Legacy vs Innovation Matrix framework and all interactive exercises—you're building heritage property strategy from scratch, which is perfect for developing strong synthesis skills. Higher scores (7-10/10) indicate solid strategic thinking, so challenge yourself with the Hockey Hall of Fame Transformation Simulation and final Strategic Vision Memo. Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's master the art of balancing legacy with innovation.
+Your quiz results create a personalized learning path for this final week. Lower scores (0-4/10) suggest spending extra time with Module 3's Legacy vs Innovation Matrix framework and all interactive exercises—you're building heritage property strategy from scratch, which is perfect for developing strong synthesis skills. Higher scores (7-10/10) indicate solid strategic thinking, so challenge yourself with the Hockey Hall of Fame Transformation Simulation and final CFL Expansion Final Proposal. Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's master the art of balancing legacy with innovation.
 ```
 
 ---

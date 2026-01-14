@@ -8,17 +8,16 @@
 
 ## Module Structure
 
-Week 5 contains 9 modules organized in this directory:
+Week 5 contains 8 modules organized in this directory:
 
 0. **module-0-bridge-in.md** - Bridge In: Heritage Monetization Dilemma (diagnostic + pre-assessment)
 1. **module-1-welcome.md** - Welcome & Learning Objectives (WLOs 5.1-5.4)
-2. **module-2-executives.md** - Executive Leader Perspectives (HHOF/MLSE dual perspective)
+2. **module-2-executives.md** - Executive Leader Perspectives (Jamie Dinsmore + Stewart Johnston)
 3. **module-3-core-content.md** - Core Content - Legacy vs Innovation (V3 INTERACTIVE-FIRST)
 4. **module-4-interactive.md** - Interactive Activity - Heritage Transformation Strategist
-5. **module-5-case-study-read.md** - Hockey Hall of Fame Case Study Part 1 (Read & Context)
-6. **module-6-case-study-analyze.md** - Hockey Hall of Fame Case Study Part 2 (Analysis & Decision)
-7. **module-7-assessment.md** - Capstone Assessment - Strategic Vision (4 format options)
-8. **module-8-wrap-up.md** - Wrap-Up, Reflection & Course Conclusion
+5. **module-5-case-study.md** - Hockey Hall of Fame Case Study (Read & Analyze)
+6. **module-6-assessment.md** - CFL Expansion Final Proposal (Milestone 5)
+7. **module-7-wrap-up.md** - Wrap-Up, Reflection & Course Conclusion
 
 ---
 
@@ -38,23 +37,22 @@ Week 5 contains 9 modules organized in this directory:
 2. **CLO 2:** Evaluate Media & Fan Monetization strategies
 3. **CLO 3:** Design Sponsorship & Betting Strategies
 4. **CLO 4:** Build Athlete & Emerging Sport Brands
-5. **CLO 5:** Balance Legacy & Innovation in sport marketing ⭐ *Week 5 Focus*
+5. **CLO 5:** Balance Legacy & Innovation in sport marketing *Week 5 Focus*
 
 ### Week 5 Assessment
-- **Capstone Assessment:** Strategic Vision (100 points)
-- **Format Options:** Written Memo (1,500-2,000 words) OR Live Presentation (8-10 min) OR Video Presentation (8-10 min) OR Digital Campaign
-- **Integration:** Synthesizes all five weeks (CLOs 1-5) into comprehensive strategic plan
-- **⏱️ Estimated Time:** 10-12 hours total
+- **Capstone Assessment:** CFL Expansion Final Proposal (40 points - Milestone 5)
+- **Format:** Executive Presentation (15-20 slides) + Executive Summary (2 pages)
+- **Integration:** Synthesizes all five weeks (CLOs 1-5) into comprehensive expansion proposal
+- **Estimated Time:** 10-12 hours total
 
 ---
 
 ## Key Features
 
 **Capstone Week Integration:**
-- Module 7 Strategic Vision (4 format options) integrates frameworks from Weeks 1-5
+- Module 6 CFL Expansion Final Proposal integrates frameworks from Weeks 1-5
 - All modules include Final Project Connection blocks showing how content applies to capstone
 - Comprehensive synthesis: revenue ecosystems + media strategy + sponsorship ROI + athlete branding + heritage positioning
-- Students choose submission format: Written Memo, Live Presentation, Video Presentation, or Digital Campaign
 
 **V3 Interactive-First Redesign:**
 - Module 3 uses two major interactive exercises (Legacy vs Innovation Matrix, Future Trends Predictor)
@@ -62,15 +60,15 @@ Week 5 contains 9 modules organized in this directory:
 - Text reduced, active engagement increased to 70-75%
 
 **Real-World Focus:**
-- Dual executive perspectives: Jamie Dinsmore (HHOF CEO) + Keith Pelley (MLSE President)
+- Two executive perspectives: Jamie Dinsmore (HHOF President & CEO) + Stewart Johnston (CFL Commissioner) *CAPSTONE*
 - Comprehensive Hockey Hall of Fame case study with financial exhibits
 - Authentic strategic decision-making scenarios balancing tradition with growth
+- Stewart Johnston interview provides critical context for CFL expansion project
 
 **Assessment Integration:**
-- All modules connect explicitly to Week 5 capstone (Strategic Vision)
-- Module 7 features AI Roleplay practice (Board of Directors pitch) before final submission
-- 100-point rubric evaluating all five CLOs (format-agnostic)
-- Students select format that best demonstrates their strategic communication strengths
+- All modules connect explicitly to Week 5 capstone (CFL Expansion Final Proposal)
+- Module 4 features Strategic Transformation Defense (35 points) as preparation
+- Module 6 is Anchor Project Milestone 5 (40 points)
 
 ---
 
@@ -80,13 +78,12 @@ Week 5 contains 9 modules organized in this directory:
 |------|------|--------------|-------------|---------------|
 | `module-0-bridge-in.md` | 32 KB | Bridge In: Heritage Monetization Dilemma | Video hook, AI Roleplay diagnostic, Pre-assessment quiz | 20-25 min |
 | `module-1-welcome.md` | 6 KB | Welcome & Learning Objectives | Week overview, WLOs 5.1-5.4, strategic focus areas | 5-7 min |
-| `module-2-executives.md` | 50 KB | Executive Leader Perspectives | Jamie Dinsmore (HHOF) + Keith Pelley (MLSE) video sessions | 65-80 min |
+| `module-2-executives.md` | 50 KB | Executive Leader Perspectives | Jamie Dinsmore (HHOF) + Stewart Johnston (CFL) video sessions | ~53 min |
 | `module-3-core-content.md` | 37 KB | Core Content - Legacy vs Innovation | Legacy vs Innovation Matrix, Future Trends Predictor exercises | 55-67 min |
 | `module-4-interactive.md` | 21 KB | Interactive Activity | Heritage Transformation Strategist simulation + written defense | 95-125 min |
-| `module-5-case-study-read.md` | 28 KB | HHOF Case Study Part 1 (Read) | Case background, strategic options, Exhibit A (financial data) | 30-40 min |
-| `module-6-case-study-analyze.md` | 49 KB | HHOF Case Study Part 2 (Analyze) | Strategic dilemma, Exhibits B-C, discussion questions, AI Roleplay | 60-70 min |
-| `module-7-assessment.md` | 62 KB | Capstone Assessment | Strategic Vision (4 format options), AI Roleplay practice, 100-point rubric | 180-240 min |
-| `module-8-wrap-up.md` | 49 KB | Wrap-Up & Course Conclusion | 5-week synthesis, reflection prompts, course celebration | 30-40 min |
+| `module-5-case-study.md` | 65 KB | HHOF Case Study | Case background, strategic options, analysis, AI Roleplay | 90-110 min |
+| `module-6-assessment.md` | 5 KB | CFL Expansion Final Proposal | Anchor Project Milestone 5 (40 points) | 180-240 min |
+| `module-7-wrap-up.md` | 30 KB | Wrap-Up & Course Conclusion | 5-week synthesis, reflection prompts, course celebration | 30-40 min |
 
 **Total Week 5 Time:** 10-12 hours (capstone week)
 
@@ -95,12 +92,12 @@ Week 5 contains 9 modules organized in this directory:
 ## Related Files
 
 - **Text content:** `../text-content/` (if applicable - markdown files for import)
-- **Video scripts:** Module 2 contains full executive interview scripts (Jamie Dinsmore, Keith Pelley)
+- **Video scripts:** Module 2 contains executive interview context (Jamie Dinsmore, Stewart Johnston)
 - **Widgets:** `../widgets/` (interactive HTML widgets)
   - `legacy-innovation-matrix.html`
   - `future-trends-predictor.html`
   - `heritage-transformation-strategist.html`
-  - `learning-outcomes-module-0.html` through `learning-outcomes-module-8.html`
+  - `learning-outcomes-module-0.html` through `learning-outcomes-module-7.html`
 
 ---
 
@@ -110,7 +107,7 @@ Week 5 contains 9 modules organized in this directory:
 - BOPPPS framework identification (Bridge-In, Outcomes, Presentation, Participatory, Post-Assessment, Summary)
 - Content Priority Badges (⬤ Required, ◐ Recommended, ○ Optional)
 - Element-by-element Uplimit implementation tables
-- Final Project Connection blocks (showing how module supports Strategic Vision Memo)
+- Final Project Connection blocks (showing how module supports CFL Expansion Final Proposal)
 
 ---
 
@@ -126,25 +123,31 @@ Week 5 contains 9 modules organized in this directory:
 
 ## Consistency Updates
 
-**Recent Changes (October 31, 2025):**
-- ✅ Added Final Project Connection blocks to all modules (0-8)
-- ✅ Added Content Priority Badges section to Module 1
-- ✅ Fixed Module 3 formatting to match V3 Interactive-First structure (Week 1 standard)
-- ✅ Standardized Content Priority Badge symbols in Module 5 (⬌ → ⬤)
-- ✅ **Split Case Study into Module 5 (Read) and Module 6 (Analyze)** to manage cognitive load (1,331 lines → 28KB + 49KB)
-- ✅ **Added 4 format options to Module 7** (Written Memo, Live Presentation, Video Presentation, Digital Campaign)
-- ✅ **Renumbered modules** to clean 0-8 sequence (removed 5A/5B naming)
-- ✅ Created this README.md
+**Recent Changes (January 13, 2026):**
+- **MERGED:** Module 5 (Read) and Module 6 (Analyze) into single module-5-case-study.md
+- **RENUMBERED:** Module 7 → Module 6, Module 8 → Module 7
+- **ALIGNED:** Week 5 now follows 8-module structure (0-7) matching Weeks 1-4
+- **REMOVED:** Keith Pelley (MLSE) - interview was scripted but never recorded
+- **UPDATED:** Executive perspectives now Jamie Dinsmore (HHOF) + Stewart Johnston (CFL)
+- **RENAMED:** "Strategic Vision Memo" → "CFL Expansion Final Proposal" throughout
+- **FIXED:** Module 4 element numbering and formatting
+- **FIXED:** Module 3 executive references and project naming
+
+**Previous Changes (October 31, 2025):**
+- Added Final Project Connection blocks to all modules
+- Added Content Priority Badges section to Module 1
+- Fixed Module 3 formatting to match V3 Interactive-First structure (Week 1 standard)
 
 **Quality Standards:**
-- All modules use consistent ⬤/◐/○ symbols (no ⬜ or ⬌)
+- All modules use consistent ⬤/◐/○ symbols
 - All modules include estimated time for student planning
-- All modules connect explicitly to capstone Strategic Vision Memo
+- All modules connect explicitly to CFL Expansion Final Proposal capstone
 - V3 Interactive-First modules clearly marked with content summaries
+- **8-module structure (0-7) consistent with Weeks 1-4**
 
 ---
 
-**Last Updated:** October 31, 2025
+**Last Updated:** January 13, 2026
 **Structure Status:** Complete and consistent with Weeks 1-4
 **Ready for:** Uplimit platform implementation
 

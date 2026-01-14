@@ -10,6 +10,7 @@
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 1 | Type directly | Sets context for executive perspective |
 | 2 | **ⓘ Infobox (Callout)** ⬤ Required | Context about Andrew Sneyd + viewing guide | Type directly | Blue variant, sets viewing expectations |
 | 3 | **▶ Video** ⬤ Required | Andrew Sneyd Interview (~45 min) | Upload MP4 + transcript | FanDuel CMO on betting marketing, brand building |
+| 3A | **📝 Practice Quiz** ⬤ Required | Andrew Sneyd Interview Check (5 questions) | Configure in Uplift | Ungraded, tests interview insights |
 | 4 | **▤ Details** ○ Optional | Video transcript & executive bio | Type directly | Accordion for text version |
 | 5 | **◈ AI Chat Widget** ○ Optional | "Ask questions about betting marketing" | Configure in Uplimit | Named: "Betting Marketing Q&A" |
 
@@ -97,6 +98,90 @@ Supports WLO 3.1, 3.2, and 3.3.
 **Career Advice:**
 - "Be curious—those little earworms make such a difference"
 - Building a career in sports marketing
+
+---
+
+### Element 3A: Practice Quiz - Andrew Sneyd Interview Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 5 multiple choice questions:
+
+---
+
+### Question 1: Brand Pillars
+
+What are FanDuel's three brand pillars that guide all marketing decisions?
+
+A) Speed, Excitement, Winning
+B) Trust, Easy, Fun ✅
+C) Data, Growth, Innovation
+D) Safe, Simple, Social
+
+**Feedback (Correct):** Correct! Andrew emphasizes "Trust, Easy, Fun" as the foundation for all FanDuel marketing decisions. "Trust" addresses integrity concerns (your money is safe, games are fair), "Easy" reduces friction in a complex category, and "Fun" connects betting to entertainment rather than gambling.
+
+**Feedback (Incorrect):** Andrew explicitly states FanDuel's three pillars early in the interview. These guide every campaign and creative decision—listen for how he describes the brand's core promise to customers.
+
+---
+
+### Question 2: Kick of Destiny Campaign
+
+According to Andrew, what was the REAL risk FanDuel faced with the Kick of Destiny Super Bowl campaign?
+
+A) The kicker might miss the field goal on live TV
+B) The campaign might offend non-bettors watching the Super Bowl
+C) No one would pay attention—the campaign would go unnoticed ✅
+D) Competitors would copy the concept before launch
+
+**Feedback (Correct):** Correct! Andrew says "the risk was in no one paying attention." In a cluttered Super Bowl advertising environment, being ignored is worse than being controversial. The Kick of Destiny cut through because it was unprecedented—a live field goal attempt with real stakes during the biggest TV event of the year.
+
+**Feedback (Incorrect):** Andrew reframes the typical risk assessment. Most marketers worry about campaigns being too bold—Andrew worried about the opposite. What did he say was the real threat in a crowded advertising environment?
+
+---
+
+### Question 3: Marketing Budget Scale
+
+Approximately how much does FanDuel spend annually on TV and media advertising?
+
+A) $100 million
+B) $500 million
+C) $1 billion+ ✅
+D) $2.5 billion
+
+**Feedback (Correct):** Correct! Andrew mentions FanDuel spends over $1 billion on TV and media annually—and critically, all of it pays back within 18 months. This massive budget makes FanDuel one of the largest advertisers in sports, rivaling traditional giants like Anheuser-Busch.
+
+**Feedback (Incorrect):** Andrew provides specific scale numbers about FanDuel's marketing investment. The figure is larger than most traditional sports sponsors—think about what budget would make FanDuel one of the top 10 advertisers in all of sports.
+
+---
+
+### Question 4: Customer Behavior Insight
+
+What percentage of sports bets are player prop bets (individual player performance) versus game outcome bets?
+
+A) 20% props, 80% game outcomes
+B) 50% props, 50% game outcomes
+C) 80% props, 20% game outcomes ✅
+D) 95% props, 5% game outcomes
+
+**Feedback (Correct):** Correct! Andrew reveals that 80% of sports bets are player props (Will Patrick Mahomes throw over 2.5 touchdowns?), not game outcomes (Chiefs vs. 49ers spread). This insight shapes product development and marketing—bettors are engaged with individual players, not just teams.
+
+**Feedback (Incorrect):** This statistic surprised many in the industry. Andrew shares it to explain why FanDuel focuses marketing on player-level content and why their app prominently features player prop bets.
+
+---
+
+### Question 5: Marketing Philosophy
+
+How does Andrew describe the balance between data science and creativity in marketing?
+
+A) 100% data-driven—creativity is irrelevant at scale
+B) 50/50 split between data analysis and creative intuition
+C) "Equal parts science and art... the art is still 33%" ✅
+D) 90% creative, 10% data—gut instinct wins
+
+**Feedback (Correct):** Correct! Andrew acknowledges data is essential ("you can only measure what's happened in the past") but insists creativity remains critical—roughly one-third of marketing success. Data tells you what worked; creativity imagines what could work. FanDuel uses both to outperform competitors.
+
+**Feedback (Incorrect):** Andrew pushes back on the assumption that a $1 billion budget means pure data optimization. He values creativity even at scale. What specific percentage does he assign to "the art" of marketing?
 
 ---
 

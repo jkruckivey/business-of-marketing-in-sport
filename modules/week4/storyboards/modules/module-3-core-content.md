@@ -26,9 +26,11 @@
 | 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | Type directly | Sets interactive learning approach |
 | 2 | **▶ Video** ⬤ Required | "The Five Revenue Streams of Athlete Wealth" (2 min) | Upload MP4 | Introduces athlete diversification before calculator widget |
 | 3 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
+| 3A | **📝 Practice Quiz** ⬤ Required | Athlete Revenue Streams Check (4 questions) | Configure in Uplift | Tests concepts from video and widget |
 | 4 | **💬 Discussion** ◐ Recommended | Athlete Brand Strategy Debate | Configure in Uplimit | Share strategies, debate trade-offs with peers |
 | 5 | **▶ Video** ⬤ Required | "The Emerging Sports Opportunity" (2 min) | Upload MP4 | Explains valuation gaps before investment tool |
 | 6 | **⚙ iFrame Widget** ⬤ Required | **Emerging Sports Investment Tool** | Embed widget | Evaluate women's sports & emerging market opportunities |
+| 6A | **📝 Practice Quiz** ⬤ Required | Emerging Sports Investment Check (4 questions) | Configure in Uplift | Tests investment concepts |
 | 7 | **▬ Text** ◐ Recommended | Reflection prompt after widget | Type directly | Synthesize investment insights |
 | 8 | **▶ Video** ◐ Recommended | "Women's Sports: The Investment Opportunity" (2 min) | Upload MP4 | NWSL/WNBA growth, valuation gaps, smart money thesis |
 | 9 | **▤ Details** ○ Optional | Deep dive: Why equity beats fees | Type directly | Mathematical proof with NPV calculations |
@@ -193,6 +195,75 @@ This calculator lets you experiment with different allocation strategies across 
   loading="lazy">
 </iframe>
 ```
+
+---
+
+### Element 3A: Practice Quiz - Athlete Revenue Streams Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 4 multiple choice questions:
+
+---
+
+### Question 1: Revenue Stream Dominance
+
+According to the video, what percentage of Michael Jordan's wealth came from playing basketball vs. Nike royalties?
+
+A) 90% playing, 10% Nike
+B) 50% playing, 50% Nike
+C) 10% playing, 90% Nike ✅
+D) Playing earnings exceeded Nike earnings
+
+**Feedback (Correct):** Correct! Jordan earned $93M playing basketball but his Nike royalty deal (equity-like structure) generates $130M+ annually—over $2.6 billion to date. His playing career represents less than 10% of his total wealth. This demonstrates why equity beats fees over long time horizons.
+
+**Feedback (Incorrect):** Review the video's comparison of Jordan's playing earnings ($93M total) versus his Nike royalties ($130M per year, ongoing). Which number is larger over a 20+ year period?
+
+---
+
+### Question 2: Compounding Math
+
+If an athlete invests $1M in equity at 20% annual growth, approximately how much will it be worth in 20 years?
+
+A) $5 million
+B) $10 million
+C) $20 million
+D) $38 million ✅
+
+**Feedback (Correct):** Correct! $1M × (1.20)^20 = $38.3M. This is the power of compounding—the same $1M taken as an endorsement fee stays at $1M forever. Equity grows exponentially while fees are linear.
+
+**Feedback (Incorrect):** Use the compound growth formula: Principal × (1 + growth rate)^years. At 20% growth for 20 years, the multiplication factor exceeds 38x.
+
+---
+
+### Question 3: Career Duration
+
+What is the average NFL career length, and why does this matter for athlete brand strategy?
+
+A) 7.5 years—athletes have time to build businesses later
+B) 3.3 years—athletes must build non-playing assets quickly ✅
+C) 12 years—athletes can focus solely on endorsements
+D) 1 year—most players never establish brands
+
+**Feedback (Correct):** Correct! Average NFL career is just 3.3 years. This short window means athletes must either: (1) build equity-based assets during their career, or (2) watch their brand value evaporate when playing stops. Endorsement fees decline rapidly post-retirement.
+
+**Feedback (Incorrect):** The video mentions this statistic to emphasize urgency. If careers are short, when should athletes start building business assets? During their career or after?
+
+---
+
+### Question 4: Diversification Purpose
+
+Why do successful athlete brand portfolios include multiple revenue streams (endorsements, owned businesses, investments, media, licensing)?
+
+A) Tax laws require athletes to diversify income sources
+B) Diversification reduces risk while capturing upside across different assets ✅
+C) All five streams must be equal for optimal returns
+D) Agents require athletes to sign contracts in multiple categories
+
+**Feedback (Correct):** Correct! Diversification follows modern portfolio theory: spreading investments across uncorrelated assets reduces risk without sacrificing expected returns. If one business fails, others sustain wealth. Serena Williams' portfolio shows this—Serena Ventures, S by Serena, and endorsements all contribute.
+
+**Feedback (Incorrect):** Think about risk management. What happens to an athlete with 100% endorsements when they retire or get injured? What happens to an athlete with 30% endorsements, 70% owned businesses?
 
 ---
 
@@ -362,6 +433,75 @@ This investment tool lets you model returns across five emerging sports opportun
   loading="lazy">
 </iframe>
 ```
+
+---
+
+### Element 6A: Practice Quiz - Emerging Sports Investment Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 4 multiple choice questions:
+
+---
+
+### Question 1: The Valuation Gap
+
+According to the video, an MLS team sells for $700M while an NWSL team sells for $53M. What does this represent?
+
+A) Accurate market pricing based on risk
+B) A market inefficiency creating investment opportunity ✅
+C) Proof that women's sports are less valuable
+D) Temporary pricing that will correct immediately
+
+**Feedback (Correct):** Correct! The video frames this gap as an opportunity: "Same number of fans, same stadium capacity, same 90-minute games. That's not a market inefficiency. That's an opportunity." The 13× valuation gap reflects historical underinvestment, not fundamental value differences.
+
+**Feedback (Incorrect):** The video explicitly frames this gap as opportunity, not accurate pricing. What would happen if NWSL valuations reached even 25% of MLS levels?
+
+---
+
+### Question 2: Growth Rate Impact
+
+Using the Emerging Sports Investment Tool, what happens to returns when you increase growth rate from 15% to 35% over a 10-year horizon?
+
+A) Returns double (2× improvement)
+B) Returns increase modestly (1.5× improvement)
+C) Returns increase dramatically (3-4× improvement) ✅
+D) Returns stay roughly the same due to risk offset
+
+**Feedback (Correct):** Correct! Compounding magnifies growth rate differences dramatically over time. At 15% growth, $40M becomes ~$162M in 10 years. At 35% growth, $40M becomes ~$809M. That's a 5× difference from a 20-percentage-point growth rate change—demonstrating exponential math.
+
+**Feedback (Incorrect):** The widget demonstrates compounding effects. Try extreme scenarios: compare 15% vs. 35% growth over 10 years. The difference is more dramatic than you might expect because of exponential math.
+
+---
+
+### Question 3: First-Mover Advantage
+
+Why does the video suggest investing in NWSL now at $40M rather than waiting until valuations stabilize at $80M?
+
+A) Lower entry price captures more upside if thesis proves correct ✅
+B) NWSL franchises will be unavailable later
+C) Tax advantages expire after 2025
+D) League rules require investment before expansion
+
+**Feedback (Correct):** Correct! First-mover advantage means lower entry prices capture more upside. If NWSL valuations reach $200M in 10 years, entering at $40M yields 5× return while entering at $80M yields only 2.5× return. The "risk" of entering early is offset by the upside if the growth thesis proves correct.
+
+**Feedback (Incorrect):** Think about the math: If you believe NWSL will reach $200M valuation, would you rather enter at $40M (5× return) or $80M (2.5× return)? What's the trade-off for waiting?
+
+---
+
+### Question 4: Risk-Adjusted Returns
+
+How do emerging sports investments compare to established alternatives like the S&P 500?
+
+A) Emerging sports offer lower returns but guaranteed principal
+B) Emerging sports offer higher potential returns but require higher risk tolerance ✅
+C) S&P 500 always outperforms sports investments on a risk-adjusted basis
+D) Both investments have identical risk-return profiles
+
+**Feedback (Correct):** Correct! The widget shows NWSL's 18% IRR vs. S&P 500's 10% IRR—but with higher risk premium (10% vs. 5%). Investors must decide: Is the extra 8% return worth the extra 5% risk? This is the fundamental risk-return trade-off in emerging sports investing.
+
+**Feedback (Incorrect):** The investment tool calculates risk-adjusted returns (Sharpe ratio) for exactly this comparison. What does the comparison show? Is higher return always better, or does risk matter?
 
 ---
 

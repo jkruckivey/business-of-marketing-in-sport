@@ -28,6 +28,7 @@
 | 8 | **Text** ⬤ Required | Performance overview (150 words) | 1 min | Embedded markdown below |
 | 9 | **🎮 iFrame** ◐ Recommended | Tool 6: Projections vs. Actuals Visualizer | 4 min | Phase 2 tool |
 | 10 | **Infobox (Note)** ⬤ Required | Key insight: Why forecasts failed | 1 min | Yellow variant |
+| 10A | **📝 Practice Quiz** ⬤ Required | Rogers Deal Analysis Check (5 questions) | 4 min | Tests case comprehension |
 | 11 | **Text** ⬤ Required | Audience trends (150 words) | 1 min | Embedded markdown below |
 | 12 | **🎮 iFrame** ◐ Recommended | Tool 7: Viewership Trends Analyzer | 3 min | Phase 2 tool |
 | 13 | **Text** ⬤ Required | Competitive landscape (150 words) | 1 min | Embedded markdown below |
@@ -447,6 +448,92 @@ Rogers' projections failed for three interconnected reasons:
 
 **Lesson:** Media rights deals require scenario planning. Rogers optimized for "base case" and had no hedge for downside risks. NHL's next deal will include flexibility clauses.
 ```
+
+---
+
+### Element 10A: Practice Quiz - Rogers Deal Analysis Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 5 multiple choice questions:
+
+**Purpose:** Ensure students understand key case data before proceeding to 2026 decision analysis and AI roleplay.
+
+---
+
+### Question 1: Deal Cost Premium
+
+How much more per year did Rogers pay compared to the previous CBC/TSN deal?
+
+A) 50% more ($210M/year vs. $140M/year)
+B) 100% more ($280M/year vs. $140M/year)
+C) 209% more ($433M/year vs. $140M/year) ✅
+D) 300% more ($560M/year vs. $140M/year)
+
+**Feedback (Correct):** Correct! Rogers paid $433M/year versus the previous $140M/year—a 209% premium. This massive increase reflected exclusivity (TSN locked out entirely), digital rights (streaming platforms), and competitive bidding pressure from Bell/TSN.
+
+**Feedback (Incorrect):** Review the Deal Terms comparison. The previous deal was $1.4B over 10 years ($140M/year). Rogers' deal was $5.2B over 12 years. Calculate the per-year cost and compare.
+
+---
+
+### Question 2: Streaming Target Miss
+
+By Year 10, how did Sportsnet NOW subscribers compare to Rogers' original Year 5 target?
+
+A) Exceeded target (1.2M vs. 1M target)
+B) Met target exactly (1M subscribers)
+C) Missed by 25% (750K vs. 1M target)
+D) Missed by 55% (450K vs. 1M target) ✅
+
+**Feedback (Correct):** Correct! Rogers projected 1 million Sportsnet NOW subscribers by Year 5. By Year 10, they had only reached 450,000—a 55% shortfall. This represents ~$150M/year in missing subscription revenue and was a major driver of deal losses.
+
+**Feedback (Incorrect):** Review the streaming performance data. Rogers' original target was 1M subscribers by Year 5. Compare that to actual performance—even by Year 10, they hadn't reached the Year 5 goal.
+
+---
+
+### Question 3: Break-Even Achievement
+
+According to the case, when did Rogers achieve break-even ($433M annual revenue) on the NHL deal?
+
+A) Year 5 (as originally projected)
+B) Year 7 (delayed due to COVID)
+C) Year 10 (finally achieved)
+D) Never achieved in 10 years ✅
+
+**Feedback (Correct):** Correct! Rogers NEVER crossed the $433M break-even threshold in 10 years. Best year was approximately $380M (Year 10), still $53M short. Cumulative estimated losses exceeded $1.5 billion.
+
+**Feedback (Incorrect):** Look at the Projections vs. Actuals data. The green break-even line sits at $433M/year. In which year (if ever) did the actual revenue line cross that threshold?
+
+---
+
+### Question 4: Primary Failure Driver
+
+According to the case, which factor contributed MOST to Rogers' financial shortfall?
+
+A) Player strikes and lockouts
+B) Poor marketing of Sportsnet brand
+C) Cord-cutting reducing linear TV revenue faster than streaming growth offset it ✅
+D) Competition from American streaming services
+
+**Feedback (Correct):** Correct! Rogers assumed cord-cutting would reduce cable subscribers by 15% over 10 years; actual decline was 28% (nearly double). This devastated advertising revenue while Sportsnet NOW streaming growth couldn't compensate. The model assumed linear TV would hold while streaming grew—instead, linear collapsed faster than streaming could scale.
+
+**Feedback (Incorrect):** Review the "Three Critical Failures" section. While all factors contributed, one was the foundational assumption that collapsed. Think about what Rogers was trying to PROTECT with the NHL deal and what happened to that business.
+
+---
+
+### Question 5: Strategic Defense Rationale
+
+What percentage of Canadians cited hockey as the "must-have" reason for keeping cable, according to Rogers' 2013 research?
+
+A) 15%
+B) 28%
+C) 42% ✅
+D) 65%
+
+**Feedback (Correct):** Correct! Rogers' research showed 42% of Canadians said hockey was the must-have content keeping them subscribed to cable. This justified the defensive strategy: pay $433M/year to protect billions in cable revenue from cord-cutting. The logic was sound—the execution failed because cord-cutting accelerated anyway.
+
+**Feedback (Incorrect):** Review the Strategic Rationale section. Rogers justified the premium price partly as a defensive move to protect their cable business. What survey data supported this defensive logic?
 
 ---
 

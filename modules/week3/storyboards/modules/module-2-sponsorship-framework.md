@@ -18,9 +18,11 @@
 | 4 | **▬ Text** ◐ Recommended | Activation vs. Rights Fees (150 words) | Type directly | Explains 1:2-3 activation multiplier |
 | 5 | **Interactive Widget** ⬤ Required | Activation Budget Builder | Embed iframe | Design activation mix across channels |
 | 6 | **Infobox (Insight)** ◐ Recommended | Industry Standard: $2-3 Activation per $1 Rights | Type directly | Yellow variant, memorable rule |
+| 6A | **📝 Practice Quiz** ⬤ Required | Sponsorship Fundamentals Check (4 questions) | Configure in Uplift | Tests CPM, activation concepts |
 | 7 | **▬ Text** ◐ Recommended | ROI Measurement Framework (150 words) | Type directly | Reach → Engagement → Conversion funnel |
 | 8 | **Interactive Widget** ⬤ Required | ROI Calculator | Embed iframe | Model sponsorship ROI with real metrics |
 | 9 | **Table** ◐ Recommended | Sponsorship Category Benchmarks | Type directly | CPM ranges by sport/category |
+| 9A | **📝 Practice Quiz** ⬤ Required | ROI Framework Check (3 questions) | Configure in Uplift | Tests funnel stages, benchmarks |
 | 10 | **Details** ○ Optional | Advanced: Attribution Modeling | Type directly | Accordion - optional depth on conversion tracking |
 
 ---
@@ -371,6 +373,75 @@ Industry standard: For every $1 in sponsorship rights fees, brands spend $2-3 on
 
 ---
 
+### Element 6A: Practice Quiz - Sponsorship Fundamentals Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 4 multiple choice questions:
+
+---
+
+### Question 1: CPM Calculation
+
+A brand pays $20M in rights fees for an NBA arena sponsorship. The deal delivers 120 million total impressions (broadcast + stadium + digital). What is the CPM?
+
+A) $60
+B) $167 ✅
+C) $600
+D) $1,667
+
+**Feedback (Correct):** Correct! CPM = (Rights fee / Total impressions) × 1,000 = ($20M / 120M) × 1,000 = $167. This is an excellent CPM—premium sports sponsorships typically achieve $500-1,500 CPM. At $167, the brand is getting exceptional value per impression.
+
+**Feedback (Incorrect):** Remember the CPM formula: (Rights fee / Total impressions) × 1,000. Divide the rights fee by impressions first, then multiply by 1,000 to get cost per THOUSAND impressions.
+
+---
+
+### Question 2: Activation Multiplier
+
+Following the industry standard "1:2-3 rule," if Nike pays the NFL $138M/year in rights fees, approximately how much should they budget for activation?
+
+A) $50-100M
+B) $138M (match the rights fee)
+C) $276-414M (2-3× the rights fee) ✅
+D) $500M+ (5× the rights fee)
+
+**Feedback (Correct):** Correct! The 1:2-3 rule means activation costs 2-3× the rights fee. $138M × 2 = $276M; $138M × 3 = $414M. Nike likely spends $275-400M annually on Super Bowl ads, retail displays, fantasy integrations, and content—that's where the real ROI comes from.
+
+**Feedback (Incorrect):** Review the 1:2-3 activation rule: for every $1 in rights fees, brands spend $2-3 on activation. Multiply the rights fee by 2 and 3 to find the range.
+
+---
+
+### Question 3: Activation Purpose
+
+Why do brands spend 2-3× more on activation than they pay in rights fees?
+
+A) Leagues require minimum activation spending in sponsorship contracts
+B) Rights fees buy access (logo placement); activation extracts value (connects logos to sales) ✅
+C) Activation spending is tax-deductible while rights fees are not
+D) Competitors will steal sponsorship value if activation is underfunded
+
+**Feedback (Correct):** Correct! A logo on a jersey reaches millions, but without activation (ads, retail promotions, hospitality, content), it delivers awareness without driving sales. Activation is HOW brands convert sponsorship visibility into customer acquisition and revenue.
+
+**Feedback (Incorrect):** Think about what a brand gets from rights fees alone (logo on jersey, stadium signage). What's missing? How do fans connect that logo to purchasing the brand's products?
+
+---
+
+### Question 4: Category Fit
+
+A mass-market beer brand (Budweiser) is designing their activation mix for an NFL sponsorship. Which allocation pattern makes the most strategic sense?
+
+A) 50% hospitality, 20% digital, 20% advertising, 10% retail
+B) 40-50% advertising, 25-30% retail, 15% digital, 5-10% hospitality ✅
+C) 40% events, 30% digital, 20% measurement, 10% advertising
+D) Equal distribution (16.7% each across all 6 channels)
+
+**Feedback (Correct):** Correct! Mass-market brands need broad reach to justify their scale. Heavy advertising (40-50%) delivers mass awareness, retail (25-30%) drives point-of-purchase conversion, while hospitality is less critical (beer brands don't need VIP client entertainment like B2B companies).
+
+**Feedback (Incorrect):** Consider Budweiser's target customer: millions of everyday beer drinkers. Which channels reach the most people? Compare to a premium B2B brand (American Express) that needs hospitality for client entertainment.
+
+---
+
 ## Element 7: **RENUMBERED** - Text - ROI Measurement Framework (was Element 6)
 
 **Copy this markdown directly into Uplimit:**
@@ -559,6 +630,60 @@ Title: Sponsorship CPM Benchmarks by Sport & Category
 
 **Key Takeaway:** Premium sports (NFL, EPL, F1) command higher CPMs due to reach, affluence, and engagement. Emerging categories (esports, MLS) offer lower CPMs but higher growth potential.
 ```
+
+---
+
+### Element 9A: Practice Quiz - ROI Framework Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 3 multiple choice questions:
+
+---
+
+### Question 1: ROI Funnel Stages
+
+The sponsorship ROI funnel has three stages. Which correctly lists them in order from easiest to hardest to measure?
+
+A) Conversion → Engagement → Reach
+B) Reach → Engagement → Conversion ✅
+C) Engagement → Reach → Conversion
+D) All three stages are equally easy to measure
+
+**Feedback (Correct):** Correct! Reach (impressions) is easiest—you can count broadcast viewers. Engagement (interactions) is harder—tracking app downloads and social mentions requires analytics. Conversion (sales) is hardest—linking purchases to sponsorship exposure requires attribution modeling.
+
+**Feedback (Incorrect):** Think about the data required for each stage. Counting TV viewers (reach) requires basic ratings. Tracking who clicked an ad (engagement) requires digital analytics. Proving someone bought a product because of a sponsorship (conversion) requires what?
+
+---
+
+### Question 2: Attribution Challenge
+
+Why do most traditional sponsorships measure Reach well, Engagement moderately, and Conversion poorly?
+
+A) Leagues prohibit conversion tracking in sponsorship contracts
+B) Conversion requires linking purchases to sponsorship exposure—data that traditional sponsors don't own ✅
+C) Conversion happens too quickly to measure accurately
+D) Conversion tracking technology doesn't exist yet
+
+**Feedback (Correct):** Correct! A fan sees a Nike logo on an NFL jersey, then buys shoes 3 weeks later at Foot Locker. Did the sponsorship cause the sale? Nike doesn't have customer data linking the two events. This is why betting partnerships are valuable—operators share first-party data enabling closed-loop attribution.
+
+**Feedback (Incorrect):** Think about the data gap: who knows that a specific customer saw the sponsorship AND bought the product? Traditional sponsors and teams don't share customer databases. What type of partner DOES have this data?
+
+---
+
+### Question 3: CPM Benchmarks
+
+According to the benchmark table, why do NFL jersey sponsors pay $500-1,500 CPM while Super Bowl ads cost $7,000 CPM?
+
+A) NFL jerseys have smaller logos than Super Bowl ads
+B) Frequency: jersey sponsors get 20-30 exposures per season versus one Super Bowl ad ✅
+C) Super Bowl ads are more entertaining than jersey sponsorships
+D) NFL jersey sponsorships include hospitality while Super Bowl ads don't
+
+**Feedback (Correct):** Correct! Super Bowl delivers one massive exposure (120M viewers for 30 seconds). Jersey sponsorships deliver repeated exposure over a full season (17M viewers × 17 games × multiple on-screen moments = thousands of impressions). Repetition builds brand recall more effectively than one-time ads—hence the lower CPM.
+
+**Feedback (Incorrect):** Compare the exposure patterns: Super Bowl ad runs once, jersey sponsorship appears in every game. Which approach gives more total impressions? And what effect does repetition have on brand recall compared to a single exposure?
 
 ---
 

@@ -15,12 +15,15 @@
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 2 | Type directly | Transitions from sponsorship to betting |
 | 2 | **Video** ⬤ Required | Sports Betting 101 - Regulatory Landscape (2 min) | Upload MP4 | PASPA repeal, state-by-state legalization |
 | 3 | **Interactive Widget** ⬤ Required | Betting Market Simulator | Embed iframe | Model betting handle, operator revenue, taxes |
+| 3A | **📝 Practice Quiz** ⬤ Required | Betting Market Check (3 questions) | Configure in Uplift | Tests market economics |
 | 4 | **▬ Text** ◐ Recommended | Fan Engagement Impact (150 words) | Type directly | Bettors watch 40% more, engage 3x |
 | 5 | **Interactive Widget** ⬤ Required | Engagement Multiplier Calculator | Embed iframe | Compare bettor vs. non-bettor behavior |
 | 6 | **Infobox (Insight)** ◐ Recommended | Bettors = 40% More Viewership | Type directly | Yellow variant, engagement data |
+| 6A | **📝 Practice Quiz** ⬤ Required | Engagement Impact Check (3 questions) | Configure in Uplift | Tests bettor behavior |
 | 7 | **▬ Text** ◐ Recommended | Why Betting Partnerships Are Valuable (150 words) | Type directly | Data access, attribution, exclusivity |
 | 8 | **Table** ◐ Recommended | Top 10 Sports Betting Sponsors (2024) | Type directly | FanDuel, DraftKings, BetMGM, Caesars rankings |
 | 9 | **Interactive Widget** ⬤ Required | Partnership Valuation Tool | Embed iframe | Calculate betting sponsor value premium |
+| 9A | **📝 Practice Quiz** ⬤ Required | Partnership Premium Check (3 questions) | Configure in Uplift | Tests premium justification |
 | 10 | **Details** ○ Optional | Advanced: International Betting Models | Type directly | Accordion - UK, Australia comparison |
 
 ---
@@ -205,6 +208,60 @@ You'll input key parameters—state population, participation rates, average wag
 
 ---
 
+### Element 3A: Practice Quiz - Betting Market Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 3 multiple choice questions:
+
+---
+
+### Question 1: Handle vs. GGR
+
+A state has $10 billion in annual betting handle (total money wagered). If operators have a 7% margin (house edge), what is the Gross Gaming Revenue (GGR)?
+
+A) $70 million
+B) $700 million ✅
+C) $1 billion
+D) $7 billion
+
+**Feedback (Correct):** Correct! GGR = Handle × Operator margin = $10B × 7% = $700M. This is the operator's gross profit BEFORE marketing costs and taxes. Handle sounds impressive ($10B!), but operators only keep 7%—understanding this distinction is critical for evaluating market economics.
+
+**Feedback (Incorrect):** Remember: Handle is total dollars wagered; GGR is what operators keep after paying out winnings. Apply the 7% margin to the handle figure.
+
+---
+
+### Question 2: Tax Rate Impact
+
+New York has a 51% tax rate on GGR (the highest in the US). If an operator generates $200M GGR in New York, how much goes to state taxes versus operator net revenue (assuming 35% marketing costs)?
+
+A) $102M state taxes, $98M operator net
+B) $102M state taxes, $30M operator net (loss after marketing) ✅
+C) $40M state taxes, $130M operator net
+D) $51M state taxes, $100M operator net
+
+**Feedback (Correct):** Correct! State tax: $200M × 51% = $102M. Remaining: $200M - $102M = $98M. Marketing costs: $200M × 35% = $70M. Operator net: $98M - $70M = $28M (approximately $30M). At 51% tax rates, operators barely break even—which is why many operators lobbied against New York's rate.
+
+**Feedback (Incorrect):** Calculate step by step: (1) State tax = GGR × 51%, (2) Remaining after tax, (3) Marketing costs = GGR × 35%, (4) Operator net = Remaining - Marketing. At 51% tax rates, what's left for operators?
+
+---
+
+### Question 3: State Incentive
+
+Why did 38 states legalize sports betting within 5 years of the 2018 PASPA repeal?
+
+A) Federal law required states to legalize by 2023
+B) Tax revenue potential—states project $100M-$500M annually from betting taxes ✅
+C) Leagues threatened to relocate teams from states without legal betting
+D) Betting operators paid states to legalize
+
+**Feedback (Correct):** Correct! States rushed to legalize because betting taxes represent significant new revenue. New Jersey generates $100M+ annually; New York projects $500M+. This revenue funds education, infrastructure, and social programs—creating strong political incentive for legalization.
+
+**Feedback (Incorrect):** Think about what motivates state legislatures. PASPA repeal gave states the OPTION to legalize—it didn't require it. What financial benefit drives states to move quickly?
+
+---
+
 ## Element 4: **RENUMBERED** - Text - Fan Engagement Impact (was Element 3)
 
 **Copy this markdown directly into Uplimit:**
@@ -384,6 +441,60 @@ Media rights holders (ESPN, NBC, Fox) pay premiums for betting-legal markets. Mo
 **Why This Matters for Sponsors:**
 Bettors are the most engaged segment of your fanbase. Partner with betting operators (FanDuel, DraftKings) to access this audience.
 ```
+
+---
+
+### Element 6A: Practice Quiz - Engagement Impact Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 3 multiple choice questions:
+
+---
+
+### Question 1: Viewing Behavior
+
+According to Nielsen research, how many more games per season do sports bettors watch compared to non-bettors?
+
+A) 10% more games
+B) 25% more games
+C) 40% more games ✅
+D) 100% more games (double)
+
+**Feedback (Correct):** Correct! Bettors watch 40% more games per season. If an NFL non-bettor watches 10 games, a bettor watches 14. This increased viewership is why leagues embraced betting partnerships—more viewing hours mean more advertising impressions and media rights value.
+
+**Feedback (Incorrect):** Review the engagement statistics from Nielsen (2023). The 40% figure is consistent across multiple studies and explains why leagues shifted from opposing betting to embracing it.
+
+---
+
+### Question 2: Viewership Contribution
+
+If 15% of NFL viewers are bettors who watch 40% more games, approximately what percentage of TOTAL viewing hours do bettors contribute?
+
+A) 15% (same as their population share)
+B) 20-25% (higher due to engagement multiplier) ✅
+C) 40% (same as their engagement boost)
+D) 55% (sum of 15% + 40%)
+
+**Feedback (Correct):** Correct! The math: Non-bettors (85%) × 100% viewing = 85% of baseline. Bettors (15%) × 140% viewing = 21% of baseline. Total: 106%. Bettor share: 21/106 = ~20%. Bettors are 15% of fans but contribute 20%+ of viewing volume—overrepresented in the metrics that drive media rights value.
+
+**Feedback (Incorrect):** This requires engagement multiplier math. Bettors don't just add their 40% boost on top—they're a smaller group watching more. Calculate each group's contribution separately, then find the bettor share of total.
+
+---
+
+### Question 3: Strategic Implication
+
+Why do media rights holders (ESPN, NBC) pay premiums for broadcasts in states with legal betting?
+
+A) Betting operators subsidize the broadcast rights directly
+B) Bettors in those markets watch more content, increasing ad inventory value ✅
+C) Federal law requires higher payments for legal betting states
+D) Broadcasters save money on integrity monitoring in legal states
+
+**Feedback (Correct):** Correct! More engaged viewers = more impressions = higher ad rates. A 40% viewership boost among 15% of fans increases total impressions by ~6%—worth millions in a $100M+ media deal. Rogers' NHL rights are more valuable in Ontario (legal betting since 2021) than they were pre-legalization.
+
+**Feedback (Incorrect):** Connect the engagement data to media economics. If bettors watch 40% more games, what does that mean for the total number of ad impressions broadcasters can sell?
 
 ---
 
@@ -571,6 +682,60 @@ You'll compare traditional sponsorship CPM to betting sponsor CPM by factoring i
   loading="lazy">
 </iframe>
 ```
+
+---
+
+### Element 9A: Practice Quiz - Partnership Premium Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 3 multiple choice questions:
+
+---
+
+### Question 1: Premium Justification
+
+FanDuel offers to pay $32M/year for an NFL jersey sponsorship (28% more than Nike's $25M offer). According to the module, what THREE factors justify this premium?
+
+A) Brand awareness, social media followers, celebrity endorsements
+B) First-party data access, category exclusivity, engagement premium (most valuable fans) ✅
+C) Lower production costs, faster contract negotiation, flexible terms
+D) International expansion potential, government subsidies, tax advantages
+
+**Feedback (Correct):** Correct! (1) First-party data = attribution paradise (FanDuel knows who signed up, bet, converted). (2) Category exclusivity = scarcity (only 1-3 official betting partners vs. 20+ beer sponsors). (3) Engagement premium = bettors watch 40% more, use apps 3x more, spend 2x on merch.
+
+**Feedback (Incorrect):** Review the "Three Reasons Betting Partnerships Command Premiums" section. The advantages are unique to betting partners—things traditional sponsors like Nike can't offer or access.
+
+---
+
+### Question 2: Attribution Advantage
+
+Why can betting partnerships prove ROI more precisely than traditional sponsorships?
+
+A) Betting operators have larger marketing budgets for tracking studies
+B) Betting operators share user-level conversion data (closed-loop attribution) ✅
+C) Betting partnerships include free attribution consulting
+D) Federal law requires betting operators to report sponsorship performance
+
+**Feedback (Correct):** Correct! When Budweiser co-sponsors with FanDuel, they can track: Fan sees co-branded ad → downloads FanDuel app → sees Budweiser offer → purchases product. FanDuel shares first-party data enabling this closed loop. Nike can't do this because they don't have customer purchase data from jersey-wearing fans.
+
+**Feedback (Incorrect):** Think about what data betting operators have that traditional sponsors don't. When someone downloads FanDuel, creates an account, and makes a bet—what does FanDuel know about that customer's behavior?
+
+---
+
+### Question 3: Sponsorship Spending Shift
+
+According to the Top 10 Betting Sponsors table, approximately how much do betting operators spend annually on sports sponsorships, and how does this compare to beer sponsors?
+
+A) $500M (half of beer sponsors' $1B)
+B) $800M-1.37B (comparable to or exceeding beer sponsors' ~$1.2B) ✅
+C) $200M (about 20% of beer sponsors' spending)
+D) $3B (triple beer sponsors' spending)
+
+**Feedback (Correct):** Correct! Betting operators now spend $800M-1.37B annually on sports sponsorships—comparable to or exceeding the ~$1.2B beer sponsors spend. In 2018, betting operators spent $0 (illegal). In just 5 years, they became the #1 sponsorship category by spending.
+
+**Feedback (Incorrect):** Review the Top 10 table total and the comparison to beer sponsors. The key insight is how quickly betting went from zero (illegal) to #1 category.
 
 ---
 

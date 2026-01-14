@@ -1,13 +1,17 @@
 # Inside the Sports Business
-**Version:** 1.6.0 | **Last Updated:** 2025-12-07
+**Version:** 1.7.0 | **Last Updated:** 2026-01-13
 
-**Purpose:** Deliver expert practitioner perspectives on revenue ecosystems through focused concept videos and executive interviews (supports WLO 1.1, 1.2)
+**Purpose:** Deliver expert practitioner perspectives on revenue ecosystems through focused concept videos and executive interview (supports WLO 1.1, 1.2)
+
+### Version 1.7.0 Changes
+- **REMOVED:** Stewart Johnston (CFL Commissioner) interview - moved to Week 5 as capstone interview
+- Single executive perspective: Kevin Abrams (NFL franchise ops) provides franchise-level revenue strategy
+- Stewart's league expansion content better suited for Week 5 when students work on CFL expansion project
+- Updated time estimates to reflect ~36 minutes total viewing (4 min concept + 32 min Kevin)
 
 ### Version 1.6.0 Changes
-- **NEW:** Added Stewart Johnston (CFL Commissioner) executive interview as Element 6
+- Added Stewart Johnston (CFL Commissioner) executive interview as Element 6
 - Two executive perspectives: Kevin Abrams (NFL franchise ops) + Stewart Johnston (league-level strategy)
-- Updated AI Chat widget with both interview contexts
-- Updated time estimates to reflect ~54 minutes total viewing (4 min concept + 32 min Kevin + 18 min Stewart)
 
 ### Version 1.5.0 Changes
 - Added Kevin Abrams (NY Giants SVP) executive interview as Element 5
@@ -24,10 +28,11 @@
 | 2 | **ⓘ Infobox (Callout)** ⬛ Required | Context about videos + viewing instructions | Type directly | Blue variant, sets viewing expectations |
 | 3 | **▶ Video 1** ⬛ Required | Revenue Streams Overview (2 min) | Upload MP4 + VTT transcript | Introduction to 5 revenue streams |
 | 4 | **▶ Video 2** ▣ Recommended | Revenue Sharing Models (2 min) | Upload MP4 + VTT transcript | NHL/NFL/EPL comparison |
+| 4A | **📝 Practice Quiz** ⬤ Required | Revenue Concepts Check (4 questions) | Configure in Uplift | Ungraded, tests videos 1-2 |
 | 5 | **▶ Video 3** ⬛ Required | Kevin Abrams Interview (~32 min) | Upload MP4 + transcript | NY Giants SVP on team operations, salary cap, revenue |
-| 6 | **▶ Video 4** ⬛ Required ✅ | Stewart Johnston Interview (~18 min) | Upload MP4 + transcript | CFL Commissioner on league revenue strategy, expansion |
-| 7 | **▤ Details** ▢ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
-| 8 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about revenue concepts" | Configure in Uplimit | Named: "Revenue Ecosystem Q&A" |
+| 5A | **📝 Practice Quiz** ⬤ Required | Kevin Abrams Interview Check (5 questions) | Configure in Uplift | Ungraded, tests interview insights |
+| 6 | **▤ Details** ▢ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
+| 7 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about revenue concepts" | Configure in Uplift | Named: "Revenue Ecosystem Q&A" |
 
 ### Element 1: Connecting Introduction Text
 **Copy this markdown directly into Uplimit:**
@@ -53,26 +58,22 @@ Before diving into the details of each stream, you need context from someone who
 ```
 Title: ◉ Understanding Revenue Ecosystems
 
-This module features two short concept videos (2 minutes each) introducing professional sport's unique revenue model, plus two executive interviews offering complementary perspectives: franchise operations (Kevin Abrams, NY Giants) and league-level strategy (Stewart Johnston, CFL Commissioner).
+This module features two short concept videos (2 minutes each) introducing professional sport's unique revenue model, plus an executive interview offering franchise-level perspective on how these concepts play out in a $10 billion organization.
 
 **Concept Videos (4 min total):**
 • Video 1: Five major revenue streams and their relative importance
 • Video 2: Revenue sharing models (NFL, NHL, EPL comparison)
 
-**Executive Interview 1 - Kevin Abrams (~32 min):**
+**Executive Interview - Kevin Abrams (~32 min):**
 Kevin Abrams, SVP Football Operations & Strategy at the NY Giants, shares how a $10 billion franchise manages salary cap as a portfolio (not a checking account), uses AI for talent evaluation, and integrates business operations with football operations.
-
-**Executive Interview 2 - Stewart Johnston (~18 min):**
-Stewart Johnston, CFL Commissioner (former Bell Media executive), reveals league-level revenue strategy—the two biggest revenue drivers (media rights + partnerships), how data-driven decisions led to 60 more touchdowns, and his vision for expansion to a 10th team within 10 years.
 
 **Viewing Guide:**
 • Concept videos: How revenue streams interconnect and influence each other
 • Kevin Abrams: Watch for salary cap portfolio thinking, AI implementation, business-football integration
-• Stewart Johnston: Watch for league-level revenue drivers, data-driven innovation, heritage vs. growth balance
 
 Videos directly support WLO 1.1 (mapping revenue streams) and WLO 1.2 (understanding sport's unique model).
 
-**Total viewing time:** ~54 minutes (4 min concept + 32 min Kevin + 18 min Stewart)
+**Total viewing time:** ~36 minutes (4 min concept + 32 min Kevin)
 ```
 
 ---
@@ -211,6 +212,75 @@ affect decisions about franchise success and potential relocation.
 
 ---
 
+### Element 4A: Practice Quiz - Revenue Concepts Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 4 multiple choice questions:
+
+---
+
+### Question 1: Largest Revenue Stream
+
+Based on Video 1, which revenue stream generates the LARGEST percentage of revenue for most professional sports organizations?
+
+A) Ticketing & Live Events (20-30%)
+B) Media Rights (40-60%) ✅
+C) Sponsorship & Partnerships (15-25%)
+D) Betting & Gaming (2-8%)
+
+**Feedback (Correct):** Correct! Media rights represent 40-60% of total revenue for most major leagues. The NFL's current media deal totals $110 billion over 11 years, demonstrating why broadcasting and streaming rights form the foundation of modern sports economics.
+
+**Feedback (Incorrect):** Review Video 1's breakdown of revenue percentages. While all five streams are important, one stream dominates at 40-60% of total revenue—it's the foundation of modern sports economics and involves broadcasting and streaming deals.
+
+---
+
+### Question 2: Revenue Ecosystem Concept
+
+The video emphasizes that revenue streams don't exist in isolation—they function as an "interconnected ecosystem." What does this mean for sports business strategy?
+
+A) Teams should focus on maximizing one revenue stream at a time
+B) Investment in one stream can amplify revenue from other streams ✅
+C) Revenue streams compete against each other for fan attention
+D) Smaller teams should ignore certain revenue streams entirely
+
+**Feedback (Correct):** Correct! The ecosystem concept means revenue streams reinforce each other. For example, strong media presence drives sponsorship value, which increases exposure, which attracts betting partnerships, which creates content for media. Successful organizations build these connections intentionally.
+
+**Feedback (Incorrect):** The key insight from Video 1 is that successful organizations build revenue "ecosystems, not portfolios." Think about how investment in media presence might affect sponsorship attractiveness, or how live event experience might drive merchandise sales.
+
+---
+
+### Question 3: Revenue Sharing Models
+
+According to Video 2, which league has the HIGHEST level of revenue sharing, creating the greatest competitive parity?
+
+A) English Premier League (tiered distribution)
+B) NHL (50% shared)
+C) NFL (60% shared) ✅
+D) All leagues share revenue equally
+
+**Feedback (Correct):** Correct! The NFL shares nearly 60% of all revenue equally among teams. This "maximum socialism" approach explains why the Green Bay Packers (population 105,000) can generate similar revenue to the New York Giants. It creates the highest competitive parity in professional sports.
+
+**Feedback (Incorrect):** Review Video 2's comparison of the three models. One league is described as practicing "maximum socialism" with the result that a small-market team like Green Bay can compete financially with New York.
+
+---
+
+### Question 4: Canadian NHL Challenge
+
+Video 2 mentions a specific challenge facing Canadian NHL teams. What creates this financial complication?
+
+A) Lower ticket prices in Canadian markets
+B) Earning revenue in Canadian dollars but paying players in U.S. dollars ✅
+C) Smaller national media contracts in Canada
+D) Higher arena operating costs due to weather
+
+**Feedback (Correct):** Correct! Canadian teams face currency risk because they earn significant revenue in Canadian dollars (ticket sales, local sponsorships) but must pay player salaries in U.S. dollars as required by the NHL CBA. When the Canadian dollar weakens, their effective costs increase substantially.
+
+**Feedback (Incorrect):** The video specifically mentions a complication related to currency that creates "major challenges" for Canadian teams. Think about what currency players are paid in versus what currency Canadian fans use.
+
+---
+
 ### Element 5: Video 3 - Kevin Abrams (NY Giants) Interview
 
 **File:** `Interviews/Kevin Abrams, SVP Football Operations and Strategy New York Giants.mp4`
@@ -264,71 +334,95 @@ affect decisions about franchise success and potential relocation.
 
 ---
 
-### Element 6: Video 4 - Stewart Johnston (CFL Commissioner) Interview ✅ AVAILABLE
+### Element 5A: Practice Quiz - Kevin Abrams Interview Check
 
-**File:** `Interviews/Stewart Johnston_Captions_English (United States).txt` (with corresponding video)
-**Duration:** ~18 minutes
-**Transcript:** Available in Interviews folder
-**Video Title:** "Stewart Johnston: Leading the CFL into Its Next Century"
-**Video Caption:** "CFL Commissioner shares league-level revenue strategy, data-driven innovation, and expansion vision"
-
-#### Interview Content - Key Topics Covered:
-
-**Career Journey & Background (00:00-04:00)** - 27 years at TSN/Bell Media, led 3,600 employees across entertainment, news, sports, and ad sales. Left comfortable SVP role for commissioner position because "timing seemed right" and ownership group is strongest he's seen.
-
-**Commissioner Role = CEO (04:00-08:00)** - "I'm not here to kiss babies and take pictures"—this is a CEO job focused on delivering growth to nine team owners. Daily work spans stakeholder relationships, communications, game operations, player associations, and commercial negotiations.
-
-**Two Biggest Revenue Drivers (08:00-12:00)** - Media rights and commercial partnerships (sponsorships) are the two biggest league office revenue sources. Gate revenue critical for teams. Strategy: Make content so valuable it drives subscription and advertising dollars for partners.
-
-**Balancing Heritage vs. Innovation (12:00-16:00)** - CFL has 110+ year legacy with passionate, long-tenured fans ("30-year season ticket holders"). Challenge: attract younger audiences without alienating core. Solution: "Relentless focus on entertainment" while protecting core Canadian football (3 downs, 12 players, wide field, unlimited motion).
-
-**Data-Driven Rule Changes (14:00-18:00)** - Moved goalposts from middle of end zone to back. Asked game ops team to "run the data"—3 months of analysis projected 60 additional touchdowns per year. "We're not doing anything on a whim."
-
-**Digital & Youth Strategy (18:00-22:00)** - Launching new CFL app and redesigned website (10-year-old platforms). Season-long fantasy game. "Drive to Survive" style content (CFL All Access). Flag football partnerships with provincial organizations. 2028 Olympics flag football with CFL players on Team Canada.
-
-**Three Strategic Priorities (27:00-30:00)**:
-1. **Relentless focus on entertainment** - Machine Gun Kelly halftime show drove 12-34 year old ratings spike
-2. **Getting footballs into kids' hands** - Physical education partnerships, flag football grassroots
-3. **Create nine profitable teams** - "We're not there yet"
-
-**Expansion Vision (30:00-33:00)** - "If we haven't got a 10th team in Canada by ten years from now, I'll be disappointed." Multiple great markets across country could support expansion. Football is "having a moment."
-
-**Gray Cup Success (throughout)** - 12% ratings increase for 2024 Gray Cup—"huge numbers relative to any other sport." Winnipeg model franchise: sold out every game, beautiful stadium, "really got something special going."
-
-#### Viewing Guide for Students:
-- **League vs. Franchise Revenue**: Compare Stewart's league-level view (media rights + partnerships) to Kevin Abrams' franchise-level view (salary cap, gate, sponsorship)
-- **Data-Driven Decision Making**: How Stewart used 3 months of data analysis to justify rule changes—evidence-based innovation
-- **Heritage/Innovation Balance**: 110-year-old league making changes to attract younger audiences while respecting "30-year season ticket holders"
-- **Commissioner as CEO**: Different accountability structure than franchise SVP—reporting to nine team owners
-- **Expansion Strategy**: Not a top-3 priority but "incredibly important"—must build foundation first
-
-#### Connection to Week 1 Themes:
-- **Revenue Streams (WLO 1.1)**: Stewart names media rights and partnerships as top two league-level drivers
-- **Unique Business Model (WLO 1.2)**: CFL's 9-team structure, scarcity of product (only 9 home games), heritage brand challenges
-- **Revenue Sharing**: League office generates revenue distributed to teams; parallels NHL model from Video 2
-- **Fan Engagement**: Digital strategy, fantasy sports, content creation—all tie to Week 2's streaming/engagement themes
-
-**Embed Code:**
-```html
-<iframe
-  src="[Uplimit video URL - Interviews/Stewart Johnston.mp4]"
-  width="100%"
-  height="700"
-  style="border: none; border-radius: 8px;"
-  title="Stewart Johnston - CFL Commissioner on League Revenue Strategy"
-  aria-label="Video interview with Stewart Johnston, CFL Commissioner, discussing league revenue drivers, data-driven innovation, digital strategy, and expansion vision"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 5 multiple choice questions:
 
 ---
 
-### Element 7: Details Accordion Content
-```
-Title: Video Transcripts & Executive Bios (Text Versions)
+### Question 1: Salary Cap Evolution
 
-[Expand for text versions of video content and executive backgrounds]
+Kevin describes how the Giants' approach to salary cap management has evolved. What metaphor does he use to describe their current approach?
+
+A) Checking account (track expenses in/out)
+B) Investment portfolio (manage assets for returns) ✅
+C) Spreadsheet (optimize numbers)
+D) Budget committee (annual planning cycle)
+
+**Feedback (Correct):** Correct! Kevin describes evolving from a "checking account" mentality (simple expense tracking) to a "portfolio" approach where salary cap dollars are viewed as investments requiring consensus building across stakeholders with different time horizons (coaches vs. GMs).
+
+**Feedback (Incorrect):** Kevin specifically contrasts their old approach with their current, more sophisticated method. Listen for how he describes the evolution—the new approach involves thinking about cap dollars as assets that require investment committee-style consensus building.
+
+---
+
+### Question 2: AI Implementation
+
+According to Kevin, what determines the quality of output from their enterprise ChatGPT implementation?
+
+A) The processing power of the system
+B) The amount of training data available
+C) The quality of prompts users create ✅
+D) The number of employees using it
+
+**Feedback (Correct):** Correct! Kevin emphasizes that "quality of prompts dictates output" when discussing their AI rollout. This principle applies broadly: AI tools are only as useful as the questions and instructions given to them. The Giants are learning prompt engineering across departments.
+
+**Feedback (Incorrect):** Kevin discusses their enterprise AI rollout and mentions a specific factor that determines success. It's not about the technology itself—it's about how employees interact with it. Think about what input users provide.
+
+---
+
+### Question 3: Business-Football Integration
+
+Kevin mentions that heavyweight sponsors like Moody's and MetLife serve a function beyond just paying for naming rights. What additional value do they provide?
+
+A) They recruit talent from their companies to work for the Giants
+B) They serve as an advisory board for facility planning and business decisions ✅
+C) They provide free financial services to players
+D) They handle all stadium construction contracts
+
+**Feedback (Correct):** Correct! Kevin explains that sponsors like Moody's (analytics/financial expertise) and MetLife (risk management) serve as informal advisors on facility planning and business strategy. It's a win-win: the Giants get expert consultation, and sponsors gain deeper integration with the organization.
+
+**Feedback (Incorrect):** Kevin describes an unexpected benefit from their corporate sponsors. Beyond the money, these Fortune 500 companies bring expertise in their fields. Think about what a financial analytics firm or insurance giant could advise on.
+
+---
+
+### Question 4: Career Path Insight
+
+Based on Kevin's career journey from Canada to NY Giants leadership, what factor does he emphasize as critical for breaking into sports business?
+
+A) Having an MBA from a top business school
+B) Geographic and financial flexibility in early career ✅
+C) Family connections to team ownership
+D) Previous professional athletic experience
+
+**Feedback (Correct):** Correct! Kevin completed 6-7 internships before landing his first full-time role. He emphasizes knowing your "geographic and financial flexibility"—being willing to relocate and accept lower initial pay. He also advises saying yes to everything early in your career and doing research before meetings.
+
+**Feedback (Incorrect):** Kevin shares his career advice based on completing multiple internships before his first full-time position. He emphasizes practical considerations about what you're willing to sacrifice early in your career to get your foot in the door.
+
+---
+
+### Question 5: NIL Era Impact
+
+How does Kevin describe the Giants' approach to player branding in the NIL (Name, Image, Likeness) era?
+
+A) They prohibit players from pursuing outside brand deals
+B) They help connect players to corporate partners, creating win-win-win outcomes ✅
+C) They require players to share all NIL revenue with the team
+D) They discourage player marketing to minimize distractions
+
+**Feedback (Correct):** Correct! Kevin describes a "win-win-win" approach: players earn more, sponsors get authentic athlete partnerships, and the team benefits from reduced off-field distractions and increased organizational integration. Players now arrive as established brands from college NIL experience.
+
+**Feedback (Incorrect):** Kevin describes the NIL era positively and explains how the Giants work with it rather than against it. Think about how connecting players with the team's existing corporate partners (like Moody's, MetLife) could benefit everyone involved.
+
+---
+
+### Element 6: Details Accordion Content
+```
+Title: Video Transcripts & Executive Bio (Text Versions)
+
+[Expand for text versions of video content and executive background]
 
 **Video 1: Five Revenue Streams in Professional Sports**
 [Full transcript of Video 1 - see FULL SCRIPT above]
@@ -360,62 +454,32 @@ His career path exemplifies persistence: 6-7 internships across sports organizat
 - Data-driven decision making (Pro Football Focus, tracking data, computer vision)
 - Business-football integration (sponsorships, player marketing, facility planning)
 
----
-
-**Video 4: Stewart Johnston Executive Interview**
-
-**Full Transcript:** See `Interviews/Stewart Johnston_Captions_English (United States).txt`
-
-**Executive Bio:**
-Stewart Johnston is the Commissioner of the Canadian Football League (CFL), appointed in 2024 after a 27-year career at TSN/Bell Media. He led 3,600 employees across entertainment, news, sports, ad sales, and distribution, including overseeing Bell's streaming platform Crave.
-
-His transition to Commissioner represents a shift from media partner to league leadership—bringing deep understanding of both sides of media rights negotiations. Stewart emphasizes that the commissioner role is fundamentally a CEO position: "I'm not here to kiss babies and take pictures. This is a CEO job."
-
-**Career Highlights:**
-- 27 years at TSN/Bell Media (1997-2024)
-- Led teams of 3,600+ across 4-5 business units
-- 25 years of partnership with CFL as media partner—now leading the league
-- Delivered 12% Gray Cup ratings increase in first year
-- Implemented data-driven rule changes (60 additional touchdowns projected)
-
-**Industry Expertise:**
-- Media rights strategy (from both buyer and seller perspectives)
-- Commercial partnerships and sponsorship activation
-- Digital transformation (app development, website redesign, fantasy sports)
-- Balancing heritage with innovation ("110+ year legacy" meets "relentless focus on entertainment")
-- League expansion strategy and market analysis
-
-**Key Quote:**
-"The two biggest drivers of revenue at the league office are within the media rights and commercial partnerships with sponsors. And so I've got to make sure I'm driving those two things as hard as I can."
-
 These transcripts are provided for accessibility and for students who prefer reading to watching videos.
 ```
 
 ---
 
-### Element 8: AI Chat Widget Configuration
+### Element 7: AI Chat Widget Configuration
 - **Widget Name:** "Revenue Ecosystem Q&A"
-- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand revenue ecosystems in professional sport based on the concept videos and two executive interviews (Kevin Abrams, NY Giants SVP; Stewart Johnston, CFL Commissioner). Answer questions about the five revenue streams (media rights 40-60%, ticketing 20-30%, sponsorship 15-25%, merchandising 5-10%, betting 2-8%), revenue sharing models (NFL 60%, NHL 50%, EPL tiered), and insights from both executives. Kevin Abrams covered: salary cap as portfolio management, AI/ChatGPT implementation, business-football integration, NIL athlete brands, career advice. Stewart Johnston covered: league-level revenue drivers (media rights + partnerships), data-driven innovation (goalpost change = 60 more TDs), heritage vs. growth balance, digital strategy (app, fantasy, CFL All Access content), expansion vision (10th team within 10 years), and his three priorities (entertainment focus, footballs in kids' hands, nine profitable teams). Compare franchise-level (Kevin) vs. league-level (Stewart) perspectives when relevant. Provide clear, business-focused explanations with specific examples."
-- **Welcome Message:** "Hi! I can help explain concepts from the revenue ecosystem videos and both executive interviews. What questions do you have about revenue streams, revenue sharing, or how the NY Giants and CFL approach their business strategies?"
+- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand revenue ecosystems in professional sport based on the concept videos and Kevin Abrams executive interview (NY Giants SVP). Answer questions about the five revenue streams (media rights 40-60%, ticketing 20-30%, sponsorship 15-25%, merchandising 5-10%, betting 2-8%), revenue sharing models (NFL 60%, NHL 50%, EPL tiered), and insights from Kevin Abrams. Kevin Abrams covered: salary cap as portfolio management, AI/ChatGPT implementation, business-football integration, NIL athlete brands, career advice. Provide clear, business-focused explanations with specific examples from a $10B NFL franchise perspective."
+- **Welcome Message:** "Hi! I can help explain concepts from the revenue ecosystem videos and Kevin Abrams' executive interview. What questions do you have about revenue streams, revenue sharing, or how the NY Giants approach their business strategy?"
 - **Show System Prompt to User:** No
 
 **Design Rationale:**
 - **Two 2-minute concept videos** provide foundational knowledge in digestible chunks (prevents cognitive overload)
 - **Kevin Abrams interview (~32 min)** delivers franchise-level perspective on how revenue concepts play out in a $10B organization
-- **Stewart Johnston interview (~18 min)** delivers league-level perspective on revenue drivers, innovation, and expansion strategy
-- **Two executive perspectives** allow comparison of franchise operations (Kevin) vs. league management (Stewart)—complementary views on the same revenue ecosystem
 - **VTT transcripts** ensure accessibility and allow text-based review
 - **▤ Details** provides text versions for students who prefer reading (UDL choice)
 - **AI Chat** offers on-demand support for confused students (UDL scaffolding)
 - Multiple means of representation: video (visual+audio), transcript (text), chat (interactive)
-- Executive perspectives continue throughout course (Week 2: Al Dak/Rogers, Week 3: Andrew Sneyd/FanDuel, Week 4: Matt Rubinoff/Fairgrounds, Week 5: Jamie Dinsmore/HHOF + Golf Canada)
-- Total viewing time: ~54 minutes (4 min concept + 32 min Kevin + 18 min Stewart)
+- Executive perspectives continue throughout course (Week 2: Al Dak/Rogers, Week 3: Andrew Sneyd/FanDuel, Week 4: Matt Rubinoff/Fairgrounds + Golf Canada, Week 5: Jamie Dinsmore/HHOF + Keith Pelley/MLSE + Stewart Johnston/CFL)
+- Total viewing time: ~36 minutes (4 min concept + 32 min Kevin)
 
 ---
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, concept videos, and two executive interviews (~54 minutes of video content)
+**You've completed:** Welcome, learning objectives, concept videos, and executive interview (~36 minutes of video content)
 **Coming next:** Interactive revenue streams exploration (8 hands-on exercises, ~35 minutes)
 
 **Take a moment to:**
@@ -423,7 +487,7 @@ These transcripts are provided for accessibility and for students who prefer rea
 - Get water or a quick snack
 - Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
 
-**Progress:** You're 30% through Week 1 content! You've learned the theory AND heard from two executives—Kevin Abrams on how the NY Giants manage their $10B operation, and Stewart Johnston on how the CFL drives league-level revenue and balances heritage with innovation. Next up is the most interactive module—you'll manipulate revenue models, test pricing strategies, and explore ecosystem dynamics through hands-on exercises.
+**Progress:** You're 30% through Week 1 content! You've learned the theory AND heard from Kevin Abrams on how the NY Giants manage their $10B operation—salary cap as portfolio, AI implementation, and business-football integration. Next up is the most interactive module—you'll manipulate revenue models, test pricing strategies, and explore ecosystem dynamics through hands-on exercises.
 
 *This break is optional but recommended. Return when you're ready to dive into interactive discovery.*
 

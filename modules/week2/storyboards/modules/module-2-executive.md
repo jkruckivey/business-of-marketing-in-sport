@@ -12,8 +12,9 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Infobox (Callout)** ⬤ Required | Context about executive + viewing guide | Type directly | Blue variant, sets expectations |
 | 2 | **Video** ◐ Recommended | 45-minute executive interview (Al Dak) | Upload MP4 + VTT transcript | Hosted video with captions |
+| 2A | **📝 Practice Quiz** ⬤ Required | Al Dak Interview Check (5 questions) | Configure in Uplift | Ungraded, tests interview insights |
 | 3 | **Details** ○ Optional | Executive bio and background (optional) | Type directly | Accordion for optional depth |
-| 4 | **AI Coach** ◐ Recommended | Your Learning Coach for media strategy concepts | Configure in Uplimit | Named: "Media Strategy Q&A" |
+| 4 | **AI Coach** ◐ Recommended | Your Learning Coach for media strategy concepts | Configure in Uplift | Named: "Media Strategy Q&A" |
 
 **Detailed Content Specifications:**
 
@@ -72,6 +73,90 @@ Supports WLO 2.1, 2.2, 2.3, and 2.4.
 - **Fan Engagement Transformation** (26:36-29:11): How advertisers measure ROI through creative feedback loops and attribution
 - **Linear vs. Streaming Future** (31:53-35:50): Cable won't reach zero - evolution to bundled streaming apps
 - **Career Advice** (37:25-42:55): Initiative, creativity, team sports mindset, and non-linear career paths
+
+### Element 2A: Practice Quiz - Al Dak Interview Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 5 multiple choice questions:
+
+---
+
+### Question 1: Rogers NHL Deal Rationale
+
+According to Al Dak, what was the PRIMARY strategic rationale for Rogers paying $5.2 billion for NHL rights?
+
+A) To maximize immediate advertising revenue
+B) To protect cable subscribers from cord-cutting and leverage NHL across Rogers' ecosystem ✅
+C) To outbid TSN for prestige reasons
+D) To acquire the Toronto Maple Leafs
+
+**Feedback (Correct):** Correct! Al explains that the NHL deal was primarily defensive—hockey is what keeps Canadians subscribed to cable. Rogers could justify the premium because NHL rights protected their core cable business while providing leverage across advertising, team ownership, and distribution.
+
+**Feedback (Incorrect):** Review Al's explanation of the strategic rationale. The $5.2B wasn't about immediate ROI—it was about protecting a larger business. What was Rogers most worried about losing if they didn't have NHL?
+
+---
+
+### Question 2: Three-Channel Revenue Strategy
+
+Al describes Rogers' revenue strategy as having "three channels." What are these three approaches?
+
+A) Television, streaming, and radio advertising
+B) Long-term agency deals, dynamic game-by-game pricing, and real-time inventory management ✅
+C) National sponsors, regional sponsors, and local sponsors
+D) Corporate sales, consumer sales, and international sales
+
+**Feedback (Correct):** Correct! Al describes a sophisticated three-channel approach: (1) long-term agency commitments negotiated annually, (2) dynamic pricing that adjusts game-by-game based on matchups and playoff implications, and (3) real-time inventory management during broadcasts. This is "portfolio management" thinking applied to media sales.
+
+**Feedback (Incorrect):** Al uses the phrase "three channels" to describe how Rogers optimizes advertising revenue. Think about time horizons—how do they manage revenue from long-term commitments down to real-time decisions?
+
+---
+
+### Question 3: Data Analytics Evolution
+
+How does Al describe the transformation of data analytics in sports media over his career?
+
+A) From basic viewership ratings to comprehensive brand health tracking and attribution ✅
+B) From paper reports to digital dashboards
+C) From Nielsen ratings to social media followers
+D) From internal analysis to outsourced consulting
+
+**Feedback (Correct):** Correct! Al describes data evolving from a "necessary evil" to the "lifeblood" of the business. Today, Rogers provides 90% of sponsors with brand health studies showing awareness, consideration, and purchase intent changes—moving from "did anyone see the ad?" to "did it change behavior?"
+
+**Feedback (Incorrect):** Al emphasizes how data went from something clients demanded reluctantly to something that drives the entire business. Think about what sponsors want to know now versus 20 years ago.
+
+---
+
+### Question 4: Sportsnet Growth
+
+By approximately how much did Al say Sportsnet's advertising revenue grow following the NHL rights acquisition?
+
+A) 2x (doubled)
+B) 4x (quadrupled)
+C) 6x (from ~$90M to ~$540M) ✅
+D) 10x (from $50M to $500M)
+
+**Feedback (Correct):** Correct! Al mentions that Sportsnet ad revenue grew approximately 6x—from around $90 million to roughly $540 million—following the NHL acquisition. This demonstrates how exclusive rights can transform a broadcaster's competitive position and justify premium pricing.
+
+**Feedback (Incorrect):** Review the section where Al discusses Sportsnet's transformation from "distant third" to Canada's #1 sports network. He provides specific revenue growth figures that illustrate the deal's impact.
+
+---
+
+### Question 5: Linear vs. Streaming Future
+
+What does Al predict about the future of linear (cable) television?
+
+A) It will disappear entirely within 5 years
+B) It will remain but evolve—cable won't reach zero, and streaming will bundle into apps ✅
+C) It will grow as audiences reject streaming complexity
+D) It will merge with gaming platforms
+
+**Feedback (Correct):** Correct! Al pushes back on the "cable is dead" narrative, arguing that linear TV won't reach zero—instead, cable will evolve, and streaming services will increasingly bundle into app-based ecosystems. The future is hybrid, not replacement.
+
+**Feedback (Incorrect):** Al offers a more nuanced view than "streaming wins, cable dies." Think about what he says will happen to both platforms over time. Does he predict either one dominating completely?
+
+---
 
 ### Details Accordion Content:
 ```

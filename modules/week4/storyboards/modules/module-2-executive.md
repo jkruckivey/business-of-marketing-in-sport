@@ -15,7 +15,9 @@
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 1 | Type directly | Sets context, connects narrative |
 | 2 | **ⓘ Infobox (Callout)** ⬤ Required | Context about videos + viewing instructions | Type directly | Sets viewing expectations |
 | 3 | **▶ Video 1** ⬤ Required | Matt Rubinoff (Fairgrounds) Interview (~38 min) | Upload MP4 + transcript | Emerging sports, brand building, scaling |
+| 3A | **📝 Practice Quiz** ⬤ Required | Matt Rubinoff Interview Check (4 questions) | Configure in Uplift | Ungraded, tests interview insights |
 | 4 | **▶ Video 2** ⬤ Required | Niki DaSilva & Tim McLaughlin (Golf Canada) Interview (~45 min) | Upload MP4 + transcript | NSO marketing, athlete brands, women's sports |
+| 4A | **📝 Practice Quiz** ⬤ Required | Golf Canada Interview Check (4 questions) | Configure in Uplift | Ungraded, tests interview insights |
 | 5 | **▤ Details** ○ Optional | Video transcripts & executive bios | Type directly | Accordion for text versions |
 | 6 | **◈ AI Chat Widget** ○ Optional | "Ask questions about emerging sports and athlete brands" | Configure in Uplimit | Named: "Emerging Sports & Athlete Brands Q&A" |
 
@@ -126,6 +128,75 @@ This module features two executive interviews with practitioners spanning emergi
 
 ---
 
+### Element 3A: Practice Quiz - Matt Rubinoff Interview Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 4 multiple choice questions:
+
+---
+
+### Question 1: White Space Identification
+
+Matt describes Fairgrounds as addressing a "white space" in the racquet sports market. What does he mean?
+
+A) Building courts in underutilized parking lots
+B) Targeting the gap between unusable public facilities and exclusive private clubs ✅
+C) Only offering white/neutral aesthetic design for clubs
+D) Operating only in suburban areas with low competition
+
+**Feedback (Correct):** Correct! Matt identified that public facilities were often in poor condition (unusable), while private clubs required expensive memberships and dress codes (inaccessible). Fairgrounds targets the massive middle market—people who want quality facilities without exclusivity barriers.
+
+**Feedback (Incorrect):** Matt describes a market positioning between two extremes. Think about what options existed for pickleball/paddle players before Fairgrounds. What was wrong with public facilities? What was wrong with private clubs?
+
+---
+
+### Question 2: Proof of Concept Methodology
+
+What did Fairgrounds' initial proof of concept (5 courts at Yonge/Eglinton) demonstrate?
+
+A) Traditional advertising is essential for sports facility success
+B) 7,000 members in 3 months with zero marketing spend proved massive demand ✅
+C) Outdoor facilities cannot succeed in Canadian winters
+D) Pickleball requires premium pricing to be profitable
+
+**Feedback (Correct):** Correct! 7,000 members signing up for 5 courts with zero marketing spend validated that demand was real and organic. This proof of concept allowed them to confidently invest in permanent indoor locations and scale rapidly.
+
+**Feedback (Incorrect):** Matt specifically mentions what made the proof of concept convincing: the number of members and the amount spent on marketing. What combination showed that demand was genuine?
+
+---
+
+### Question 3: Competitive Differentiation
+
+According to Matt, what makes Fairgrounds different from franchise operators entering the pickleball market?
+
+A) Lower pricing and budget facilities
+B) Marketing-first team (not club operators) creating brand/community/aesthetic ✅
+C) More courts per location than competitors
+D) Focus exclusively on competitive players
+
+**Feedback (Correct):** Correct! Matt emphasizes that Fairgrounds hired marketers who love sports, not traditional club operators stuck in "archaic" models. The colorful, fun environments and community focus differentiate them from sterile franchise courts.
+
+**Feedback (Incorrect):** Matt explicitly contrasts his team composition with competitors. The difference isn't in the number of courts or pricing—it's in WHO is building the experience and what they prioritize.
+
+---
+
+### Question 4: Emerging Sport Assessment
+
+What criteria does Matt use to determine if an emerging sport has "legs" vs. being a "flash in the pan"?
+
+A) Celebrity endorsements and social media presence
+B) Wide demographic appeal + accessibility + high skill ceiling ✅
+C) Tournament prize money and television contracts
+D) Corporate sponsorship interest
+
+**Feedback (Correct):** Correct! Matt looks for: (1) Wide demographic (16-year-olds playing with 75-year-olds), (2) Accessibility (easy to learn, like ping pong), and (3) High skill ceiling (room to improve keeps players engaged). Pickleball meets all three criteria.
+
+**Feedback (Incorrect):** Matt provides specific criteria for evaluating emerging sports viability. The criteria focus on the sport itself and its appeal to participants—not external factors like media or sponsors.
+
+---
+
 ## Element 4: Video 2 - Niki DaSilva & Tim McLaughlin (Golf Canada) Interview
 
 **File:** `Interviews/Niki DaSilva & Tim McLaughlin - CPO & CMO, Golf Canada.mp4`
@@ -168,6 +239,75 @@ This module features two executive interviews with practitioners spanning emergi
   loading="lazy">
 </iframe>
 ```
+
+---
+
+### Element 4A: Practice Quiz - Golf Canada Interview Check
+
+**Uplift Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 4 multiple choice questions:
+
+---
+
+### Question 1: NSO Revenue Model
+
+According to Niki and Tim, what is Golf Canada's average revenue per member (400,000 members)?
+
+A) $5 per member
+B) $18 per member ✅
+C) $50 per member
+D) $100 per member
+
+**Feedback (Correct):** Correct! Golf Canada generates approximately $18 per member annually—a modest amount that explains why NSOs must diversify revenue through events, partnerships, and hospitality rather than relying solely on membership fees.
+
+**Feedback (Incorrect):** Niki provides this specific figure when discussing Golf Canada's business model. The number is relatively low, which explains why NSOs need multiple revenue streams beyond membership.
+
+---
+
+### Question 2: Athlete Brand Building Without Contracts
+
+How does Golf Canada build Brooke Henderson's brand despite not having a direct commercial contract with her?
+
+A) They pay her appearance fees for each Canadian event
+B) They provide platform amplification—events, media, sponsor connections ✅
+C) They manage her social media accounts directly
+D) They take a percentage of her endorsement deals
+
+**Feedback (Correct):** Correct! Golf Canada builds Brooke's brand by providing platforms (RBC Canadian Open, CPKC Women's Open), media coverage, and connections to sponsors like RBC. It's a symbiotic relationship—she elevates their events, they elevate her profile.
+
+**Feedback (Incorrect):** The relationship between Brooke Henderson and Golf Canada is collaborative, not contractual in the traditional endorsement sense. Think about what Golf Canada CAN provide that benefits an athlete's brand.
+
+---
+
+### Question 3: Women's Sports Growth Strategy
+
+What is the name of Golf Canada's initiative focused on growing women's participation in golf?
+
+A) Women on Course
+B) She Plays Golf ✅
+C) Ladies First Golf
+D) Golf for Her
+
+**Feedback (Correct):** Correct! "She Plays Golf" is Golf Canada's strategic initiative to grow women's participation. With 33% of Canadian golfers being women (an underrepresented segment), this represents a major growth opportunity.
+
+**Feedback (Incorrect):** Tim mentions this specific program name when discussing women's golf as a growth driver. The initiative targets a significant demographic opportunity.
+
+---
+
+### Question 4: Digital Transformation
+
+How many active users does Golf Canada's Score Centre app have, and why is this significant?
+
+A) 100,000 users—shows modest digital engagement
+B) 535,000 users—represents one of Canada's largest sports app audiences ✅
+C) 1.5 million users—exceeds membership significantly
+D) 50,000 users—indicates need for digital investment
+
+**Feedback (Correct):** Correct! 535,000 active users makes Golf Canada's Score Centre one of the largest sports app audiences in Canada. This digital platform enables data-driven understanding of golfer behavior and creates sponsorship value beyond traditional event attendance.
+
+**Feedback (Incorrect):** Tim highlights this number as a significant achievement. Consider: Golf Canada has 400,000 members, so having 535,000+ app users shows digital reach BEYOND their membership base.
 
 ---
 

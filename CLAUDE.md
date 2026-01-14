@@ -44,7 +44,7 @@ business-of-sports-marketing/
 
 ### Week 1: The Business of Sport - Where the Money Flows
 - **Case**: Nashville Predators: Marketing Strategy for an NHL Franchise (Ivey 9B09A006)
-- **Executive**: Kevin Abrams (NY Giants) + Stewart Johnston (CFL Commissioner)
+- **Executive**: Kevin Abrams (NY Giants)
 - **Focus**: 5 revenue streams (media, ticketing, sponsorship, merch, betting), market feasibility
 - **Widgets**: Revenue Mix Slider, Dynamic Pricing Simulator, Ecosystem Cascade
 
@@ -68,7 +68,7 @@ business-of-sports-marketing/
 
 ### Week 5: Legacy, Culture & Future
 - **Case**: Hockey Hall of Fame (custom case)
-- **Executives**: Jamie Dinsmore (HHOF) + Keith Pelley (MLSE)
+- **Executives**: Jamie Dinsmore (HHOF) + Stewart Johnston (CFL) ⭐ CAPSTONE
 - **Focus**: Heritage properties, future trends, tradition vs innovation
 - **Widgets**: Legacy vs Innovation Matrix, Future Trends Predictor
 

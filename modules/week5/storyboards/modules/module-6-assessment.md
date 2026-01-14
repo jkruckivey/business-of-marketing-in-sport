@@ -1,5 +1,9 @@
-# MODULE 7: Wrap-Up & Anchor Project Milestone 5 (Final Proposal)
-**Version:** 3.0.0 | **Last Updated:** 2026-01-13
+# MODULE 6: Wrap-Up & Anchor Project Milestone 5 (Final Proposal)
+**Version:** 3.1.0 | **Last Updated:** 2026-01-13
+
+### Version 3.1.0 Changes
+- **RENUMBERED:** Module 7 → Module 6 (case study modules merged)
+- **ALIGNED:** Now follows 8-module structure matching Weeks 1-4
 
 ### Version 3.0.0 Changes
 - **STANDARDIZED:** Minimal exit structure (Key Takeaways + Milestone + Course Complete)
@@ -8,7 +12,7 @@
 
 **Purpose:** Complete CFL Expansion Final Proposal, celebrate course completion
 
-**Uplimit Structure:** Final module in Unit 5
+**Uplimit Structure:** Assessment module in Unit 5
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
@@ -23,9 +27,9 @@
 ## Element 1: Infobox Content
 
 ```
-Title: ◉ Week 5 Key Takeaways
+Title: Week 5 Key Takeaways
 
-You've completed your deep dive into legacy, culture, and the future of sports business! The five critical insights: (1) heritage properties monetize nostalgia and tradition through experiences, not just artifacts—the Hockey Hall of Fame shows how to balance preservation with revenue generation, (2) legacy vs. innovation requires explicit trade-off analysis because you can't preserve everything while transforming—successful properties draw clear boundaries, (3) future trends including AI, VR/AR, sustainability, and global expansion will reshape sports business within the next decade, (4) cultural and social impact considerations are increasingly strategic decisions, not just PR—stakeholders expect authentic engagement, and (5) strategic synthesis means integrating all frameworks into a coherent vision where media, sponsorship, athlete brands, and legacy management reinforce each other. You've now mastered the complete sports business toolkit. Congratulations on completing this 5-week journey!
+You've completed your deep dive into legacy, culture, and the future of sports business! The five critical insights: (1) heritage properties monetize nostalgia and tradition through experiences, not just artifacts-the Hockey Hall of Fame shows how to balance preservation with revenue generation, (2) legacy vs. innovation requires explicit trade-off analysis because you can't preserve everything while transforming-successful properties draw clear boundaries, (3) future trends including AI, VR/AR, sustainability, and global expansion will reshape sports business within the next decade, (4) cultural and social impact considerations are increasingly strategic decisions, not just PR-stakeholders expect authentic engagement, and (5) strategic synthesis means integrating all frameworks into a coherent vision where media, sponsorship, athlete brands, and legacy management reinforce each other. You've now mastered the complete sports business toolkit. Congratulations on completing this 5-week journey!
 
 **Up Next:** CFL Expansion Milestone 5 (Final Proposal).
 ```
@@ -45,7 +49,7 @@ This is it. You've spent four weeks developing your CFL expansion franchise: mar
 
 **Your Challenge:** Create a board-ready expansion proposal that integrates Milestones 1-4 with financial projections, risk analysis, and a compelling 5-year vision.
 
-**Why This Matters:** This is the real work sports executives do. Expansion proposals aren't academic exercises—they're multi-million dollar decisions that determine whether leagues grow, markets get teams, and careers are made.
+**Why This Matters:** This is the real work sports executives do. Expansion proposals aren't academic exercises-they're multi-million dollar decisions that determine whether leagues grow, markets get teams, and careers are made.
 
 **Apply ALL Course Frameworks:**
 - Revenue ecosystem analysis (Week 1) for financial projections
@@ -65,7 +69,7 @@ This is it. You've spent four weeks developing your CFL expansion franchise: mar
 3. Copy markdown below:
 
 ```markdown
-Title: ▪ Anchor Project Milestone 5: Final Expansion Proposal (40 points)
+Title: Anchor Project Milestone 5: Final Expansion Proposal (40 points)
 
 **Deliverable:** Executive Presentation (15-20 slides) + Executive Summary (2 pages)
 
@@ -93,7 +97,7 @@ Title: ▪ Anchor Project Milestone 5: Final Expansion Proposal (40 points)
 ## Element 4: File Response Question - Milestone 5 Submission
 
 **Uplimit Implementation:**
-1. Select **Exercise → File Response Question**
+1. Select **Exercise - File Response Question**
 2. Configure the following fields:
 
 **Question:**
@@ -105,10 +109,10 @@ Submit your CFL Expansion Final Proposal (Milestone 5). Include both the Executi
 ```
 Your submission will be evaluated using the rubric below (40 points total):
 
-• Strategic Coherence (12 pts) - Milestones 1-4 integrated into unified vision
-• Financial Rigor (10 pts) - Realistic projections, sound assumptions, clear P&L
-• Risk Assessment (8 pts) - Thoughtful identification and mitigation of key risks
-• Professional Presentation (10 pts) - Board-ready quality, compelling narrative
+- Strategic Coherence (12 pts) - Milestones 1-4 integrated into unified vision
+- Financial Rigor (10 pts) - Realistic projections, sound assumptions, clear P&L
+- Risk Assessment (8 pts) - Thoughtful identification and mitigation of key risks
+- Professional Presentation (10 pts) - Board-ready quality, compelling narrative
 
 Accepted formats: PDF, PPTX
 Filename suggestion: LastName_M5_FinalProposal.pdf
@@ -126,7 +130,7 @@ Filename suggestion: LastName_M5_FinalProposal.pdf
 3. Copy markdown below:
 
 ```
-Title: ✓ Course Complete! Congratulations!
+Title: Course Complete! Congratulations!
 
 **You've mastered the business of sports marketing.**
 
@@ -151,7 +155,7 @@ Thank you for your engagement and hard work. You've earned this accomplishment!
 
 ## Instructor Notes
 
-**Module 7 Purpose:**
+**Module 6 Purpose:**
 - Consolidate Week 5 and full course learning
 - Complete capstone deliverable
 - Celebrate course completion
@@ -160,4 +164,4 @@ Thank you for your engagement and hard work. You've earned this accomplishment!
 - Focus on integration and synthesis, not just compilation of prior milestones
 - Financial projections should show sophisticated understanding of sports economics
 - Risk analysis should demonstrate strategic thinking, not just listing concerns
-- Presentation quality matters—this is board-ready work
+- Presentation quality matters-this is board-ready work

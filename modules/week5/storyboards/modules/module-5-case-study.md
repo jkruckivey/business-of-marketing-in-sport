@@ -84,7 +84,9 @@ This case presents the Hockey Hall of Fame's strategic transformation challenge.
 
 4. **Stakeholder Perspectives (Exhibit C):** Understand what curators, donors, board members, and younger audiences want
 
-**Financial Disclosure:** This case uses scaled financial projections for pedagogical purposes. Actual HHOF audited revenue is approximately $10-11 million annually (2023-2024); the case scenarios use an illustrative baseline of ~$18M to demonstrate strategic trade-offs at a larger scale. All scenario projections (Preserve, Transform, Hybrid) maintain proportional relationships to this scaled baseline. Focus on the *relative* growth percentages and trade-off dynamics rather than the absolute dollar figures—the strategic insights remain valid regardless of scale.
+**Financial Note:** Case scales HHOF baseline to $18M (vs. real ~$11M audited) for scenario clarity. **Focus: relative growth % + trade-offs.**
+
+*Sources: 2023 HHOF Audited Financial Statement (~$11M); 2024 similar per Charity Intelligence Canada.*
 
 **Reading Time:** 60-75 minutes (case + exhibits + analysis)
 
@@ -248,8 +250,8 @@ HHOF commissioned a visitor research study in 2023. Key findings:
 #### Board Pressure & Strategic Imperative
 
 In 2023, HHOF's Board of Governors commissioned a strategic planning initiative. The board includes:
-- Charles Bronfman (Honorary Chair, Seagram's/Saputo family)
-- Scotiabank executives (Title Sponsor since 1999)
+- Honorary Chair (heritage advocate, major donor family)
+- Corporate sponsor executives (Title Sponsor since 1999)
 - NHL team owners and executives
 - Hockey Canada representatives
 - Donor representatives (major philanthropists)
@@ -473,6 +475,8 @@ HHOF's executive team, led by CEO Jamie Dinsmore, has developed three distinct s
 | **Curatorial Staff** | 12 | 8 | 6 | 15 | 18 |
 | **Tech Staff** | 0 | 4 | 8 | 22 | 14 |
 
+*Note: FIFA Museum revenue data limited; ~$3M estimate based on 650K attendance and industry benchmarks. High attendance drives scale despite modest per-visitor revenue.*
+
 **Key Insights:**
 
 1. **HHOF underperforms on digital:** 1% digital revenue vs. 8-22% at comparable institutions
@@ -605,7 +609,7 @@ The Hybrid scenario requires discipline: Growing revenue while making strategic 
 
 #### Stakeholder Landscape
 
-**The Board:** Divided. Heritage advocates (Bronfman family, Hall of Fame alumni) prefer Preserve/Hybrid. Corporate sponsors (Scotiabank) want Hybrid/Transform growth. NHL executives see Transform as competitive advantage for media rights value.
+**The Board:** Divided. Heritage advocates (major donor families, Hall of Fame alumni) prefer Preserve/Hybrid. Corporate sponsors (title sponsor) want Hybrid/Transform growth. NHL executives see Transform as competitive advantage for media rights value.
 
 **The Curatorial Staff:** Core strength of HHOF. 12 senior curators with 20-30 year tenure and deep hockey knowledge. They will actively resist Transform scenario (some have already informally stated they would resign). They're cautiously supportive of Hybrid with strong guardrails.
 
@@ -861,18 +865,18 @@ HHOF grows to a sustainable $35-40M revenue institution while maintaining herita
 
 ### Heritage Advocates (Pro-Preservation Voices)
 
-**Charles Bronfman (Honorary Chair, Saputo Family):**
+**Board Member 1 (Heritage Advocate, Honorary Chair):**
 > "HHOF's value isn't economic-it's cultural. If we become just another entertainment venue, we've failed our mission. I'd rather grow 15% sustainably than 135% by abandoning who we are."
 
-**Kevin Lowe (Former Edmonton Oilers, Inductee, Board Member):**
-> "The players who built this game-Gretzky, Crosby, the women who fought for recognition-they expect HHOF to be a sanctuary for their legacy, not a corporate amusement park. That matters to us."
+**Board Member 2 (Former Player & Inductee Representative):**
+> "The players who built this game—hockey legends past and present—expect HHOF to be a sanctuary for their legacy, not a corporate amusement park. That matters to us."
 
 ### Growth Advocates (Pro-Innovation Voices)
 
-**Michael Crawley (Scotiabank, Title Sponsor):**
+**Board Member 3 (Corporate Sponsor Representative):**
 > "Sponsorship value is declining because HHOF's audience is aging and shrinking. We're not buying into tradition-we're buying into a growth platform. Hybrid might work if margins are strong."
 
-**NHL Senior Executive (Anonymous Board Member):**
+**Board Member 4 (League Executive Representative):**
 > "If HHOF doesn't modernize aggressively, the league will create a competing heritage property. We need you competitive. Transform is the only scenario that's defensible."
 
 ### Compromise Position (Hybrid Support)
@@ -895,7 +899,7 @@ HHOF grows to a sustainable $35-40M revenue institution while maintaining herita
 
 ### Corporate Sponsorship Perspective
 
-**Scotiabank Sponsorship Committee:**
+**Title Sponsor Committee:**
 > "We committed $2.8M annually to title sponsorship based on audience growth expectations. Preserve scenario doesn't meet those. Hybrid is acceptable if digital metrics show strong engagement."
 
 ### Survey Results (Donor Sentiment, n=47 major donors)
@@ -1068,11 +1072,11 @@ Transform's international revenue projections ($8.2M annually from 3 simultaneou
 
 ---
 
-## Element 11: AI Roleplay - HHOF Board Strategy Meeting
+## Element 11: AI Roleplay - HHOF Board Strategy Meeting (Formative Practice)
 
-**Widget Purpose:** Authentic roleplay where students defend strategic recommendation to HHOF Board of Governors, demonstrating ability to synthesize financial data, stakeholder analysis, and strategic frameworks.
+**Widget Purpose:** Formative practice where students rehearse their strategic recommendation before writing their graded HHOF memo in Module 6. Not graded, but prepares students for the written assessment.
 
-**Widget Status:** Needs configuration in Uplimit platform
+**Widget Status:** Needs configuration in Uplift platform
 
 ---
 
@@ -1080,7 +1084,7 @@ Transform's international revenue projections ($8.2M annually from 3 simultaneou
 
 **Step 1: Select "AI Roleplay Scenario" element in Uplimit builder**
 
-**Step 2: Set Learning Objective**
+**Step 2: Set Learning Outcome**
 
 Choose: **"Add objective myself"**
 
@@ -1097,19 +1101,20 @@ Choose: **"Create your own scenario"**
 Copy this into the **Scenario Context** field:
 
 
-You are presenting to the Hockey Hall of Fame Board of Governors' Strategic Planning Committee. The board has asked for your recommendation on HHOF's 5-year vision: Should they pursue the PRESERVE strategy (stable, low-risk, modest growth), TRANSFORM strategy (aggressive digital-first growth), or HYBRID strategy (balanced evolution)?
+**Context:**
+The Hockey Hall of Fame Board of Governors has commissioned a strategic planning initiative to grow annual revenue from $18.1M to $35M+ by 2029. Three strategic options have emerged: PRESERVE (minimal digital investment, curatorial focus), TRANSFORM (aggressive digital-first with international expansion), and HYBRID (balanced evolution with heritage guardrails). The learner will present a strategic recommendation to the Board's Strategic Planning Committee, analyzing financial trade-offs, stakeholder impacts, and implementation risks. The board is divided—some members prioritize heritage preservation and donor confidence (heritage advocates and inductee representatives), while others prioritize revenue growth and competitive positioning (corporate sponsors and business-focused members). The learner must defend their chosen strategy by addressing concerns about curatorial retention, donor support, financial constraints, and competitive threats.
 
-The board is divided. Charles Bronfman (heritage advocate) worries about mission creep. Michael Crawley (Scotiabank sponsor) wants revenue growth. The broader board is skeptical of any path that requires heavy external financing or risks losing curatorial leadership.
+**Role of AI (Board Strategic Planning Committee):**
+A board moderator representing diverse stakeholder perspectives (heritage preservation advocates, corporate sponsors seeking growth, financial prudence voices, and curatorial leadership concerns) who tests the learner's strategic recommendation through probing questions.
 
-Your role: Present a clear, data-driven recommendation that acknowledges the trade-offs involved. You'll defend your choice against tough questions from board members with different priorities.
-
-Conversation structure: Board members will ask 5 questions to pressure-test your strategic thinking and ensure your recommendation is realistic.
+**Role of Student:**
+The learner plays the role of a strategic consultant presenting a 5-year vision recommendation (Preserve, Transform, or Hybrid) to the HHOF Board of Governors using case data and stakeholder analysis.
 
 
 Copy this into the **AI Role** field:
 
 
-You are the Board of Governors' Strategic Planning Committee moderator, representing diverse board interests: heritage preservation (Charles Bronfman voice), revenue growth (Michael Crawley voice), stakeholder management (Kevin Lowe voice), and financial prudence (CFO voice).
+You are the Board of Governors' Strategic Planning Committee moderator, representing diverse board interests: heritage preservation (Board Member 1 voice), revenue growth (Board Member 3 voice), stakeholder management (Board Member 2 voice), and financial prudence (CFO voice).
 
 Your personality:
 - Pragmatic: You respect data-driven arguments backed by exhibits
@@ -1136,7 +1141,7 @@ Ask 5 questions to test the student's strategic thinking:
 5. **Implementation & Accountability:** "Assuming the board approves your recommendation, how would you know within 2-3 years if it was the right choice? What metrics matter most?"
    - Test if they've thought through execution and measurement
 
-After these 5 questions, provide rubric-aligned feedback on their performance.
+After these 5 questions, provide constructive feedback to help them strengthen their arguments for the written memo. This is formative practice—be encouraging but rigorous.
 
 
 Copy this into the **Student Role** field:
@@ -1153,111 +1158,236 @@ Copy this into the **Hidden Context** field:
 
 
 **AI Character Context:**
-You're moderating a board meeting where a consultant is presenting the Hockey Hall of Fame's 5-year strategic options. The student has analyzed three scenarios (Preserve, Transform, Hybrid) with financial projections, stakeholder impacts, and competitive benchmarks.
+You're moderating a board meeting where a consultant is presenting the Hockey Hall of Fame's 5-year strategic options. You represent the Board's Strategic Planning Committee with diverse perspectives: heritage preservation (Board Member 1), revenue growth (Board Member 3), player legacy (Board Member 2), and financial prudence (CFO voice).
 
-**Your Job:** Push back on assumptions, demand evidence, test whether they've thought through unintended consequences.
+**Your Job:** Push back on assumptions, demand evidence, catch factual errors, and test whether they've thought through unintended consequences. You have complete knowledge of the case data below.
 
-**Stakeholder Perspectives to Reference (if they ignore them):**
-- Heritage perspective: Curators will resign if mission is compromised (8/12 curators stated this explicitly in Exhibit C)
-- Donor perspective: $800K-$1.2M potential loss in Transform scenario (47% of major donors would reduce support)
-- Financial perspective: Transform requires $10M external financing with $900K annual debt service burden
-- Growth perspective: Preserve scenario fails to achieve $35M board goal; may signal institutional decline to sponsors
+---
 
-**What Strong Performance Looks Like:**
-- Clear recommendation with explicit rationale (not waffling)
-- Uses case data: "Exhibit A shows admissions declined 22% since 2019, suggesting..."
-- Acknowledges trade-offs: "Transform grows revenue but risks $1.2M donor loss and potential curator departures..."
-- Addresses financing: "Our recommended scenario requires $6.8M capital investment-here's how we fund it without damaging balance sheet..."
-- Stakeholder awareness: "We're protecting heritage through [specific guardrails/mechanisms] while investing in growth..."
-- Measurement discipline: "We'll measure success through [specific metrics] and will pivot if Year 2 data shows [specific conditions]..."
+## COMPLETE CASE DATA (Use to verify student claims and challenge weak reasoning)
 
-**Conversation Objectives (5 questions):**
-1. Test understanding of strategic implications (what's at stake with their choice)
-2. Probe risk mitigation (how they address heritage/stakeholder risk)
-3. Pressure-test financial assumptions (what if X doesn't happen?)
-4. Challenge competitive positioning (justify choice vs. market pressures)
-5. Assess execution discipline (how will you measure success and adapt?)
+### CURRENT STATE (2024 Baseline)
+- **Total Revenue:** $18.1M annually
+- **Operating Margin:** 11.6% (~$2.1M net income)
+- **Attendance:** 302,000 visitors (down from 385,000 in 2019 = 22% decline)
+- **International Visitors:** 29% of total (down from 43% in 2019)
+- **Cash Reserves:** $5.2M (3.3 months operating budget)
+- **Long-Term Debt:** $0
+- **Staff:** 78 FTE, including 12 senior curators
+- **Tech Staff:** 0 (zero software engineers, VR specialists, or data scientists)
+- **Digital Revenue:** $200K (1% of total - stagnant for 6 years)
 
-**After completing 5 questions:** Provide rubric-aligned feedback using the 4 criteria defined below.
+### REVENUE BREAKDOWN (2024)
+| Stream | Amount | Trend |
+|--------|--------|-------|
+| Admissions | $6.8M (38%) | -19% vs 2019 |
+| Events | $5.4M (30%) | +4% (only growth area) |
+| Group/Education | $3.9M (22%) | -7% |
+| Sponsorships | $3.8M (21%) | +6% |
+| Retail | $2.8M (15%) | -3% |
+| Donations | $2.1M (12%) | -9% |
+| Digital | $0.2M (1%) | Flat |
+
+### BOARD MANDATE
+Achieve $35M+ annual revenue by 2029 (94% growth from $18.1M baseline)
+
+---
+
+## THREE SCENARIOS - KEY NUMBERS
+
+### SCENARIO A: PRESERVE
+- **2029 Revenue Target:** $21.2M (+17%)
+- **Capital Required:** $2.1M (from reserves)
+- **Debt Required:** $0
+- **Operating Margin:** 12-14%
+- **Achieves Board Goal?** NO (misses by $14M)
+- **Pessimistic Case:** $18.9M
+- **Key Initiatives:** Exhibit refresh ($1.2M), premium experiences ($500K), basic digital ($400K)
+
+### SCENARIO B: TRANSFORM
+- **2029 Revenue Target:** $42.6M (+135%)
+- **Capital Required:** $15.2M
+- **Debt Required:** $10M external financing
+- **Debt Service:** ~$900K annually
+- **Operating Margin:** 12-15% (pressured by debt)
+- **Achieves Board Goal?** YES (exceeds it)
+- **Pessimistic Case:** $31.4M (FAILS goal, still has $10M debt)
+- **Key Initiatives:** VR arena ($4.2M), 4 international pop-ups ($3.8M), digital membership ($2.6M), betting partnerships ($1.8M), influencer strategy ($2.8M)
+- **VR Assumption:** 400K annual visitors @ $19.50 = $7.8M (break-even needs 320K)
+- **Pop-up Assumption:** 3 simultaneous locations @ $2.7M each = $8.2M
+
+### SCENARIO C: HYBRID
+- **2029 Revenue Target:** $35.1M (+94%)
+- **Capital Required:** $6.8M
+- **Debt Required:** $0-1.6M (minimal)
+- **Operating Margin:** 14-16%
+- **Achieves Board Goal?** YES (exactly hits it)
+- **Pessimistic Case:** $32.1M (still +77% growth, healthy margins)
+- **Key Initiatives:** Interactive heritage ($2.4M), digital membership lite ($1.2M), 2 domestic pop-ups ($1.8M), premium experiences ($1.4M)
+- **Digital Membership Target:** 16K members @ $8/month = $2.4M by 2029
+- **Curatorial Guardrails:** All digital content reviewed by curators; no betting, no NFTs
+
+---
+
+## STAKEHOLDER DATA (Exhibit C)
+
+### CURATORS (n=12)
+- **PRESERVE:** 3/12 prefer
+- **TRANSFORM:** 0/12 support; 8/12 explicitly stated they would RESIGN
+- **HYBRID:** 7/12 strongly support (if guardrails enforced)
+- **Key Quote:** "Transform is a dealbreaker-we'll resign."
+- **Risk:** 30 years of institutional knowledge lost if senior curators leave
+
+### DONORS (n=47 major donors, $2.1M annual)
+- **PRESERVE:** 94% would continue, 62% would increase giving
+- **TRANSFORM:** 47% would continue, 74% would DECREASE giving
+- **HYBRID:** 89% would continue, 58% would increase giving
+- **Transform Risk:** $800K-$1.2M annual donor loss (15-25% attrition)
+- **Hybrid Risk:** $150K-$300K annual donor loss (3-7% attrition, manageable)
+
+### YOUNGER VISITORS (18-35, n=23)
+- **"Would recommend to friends?"** Preserve 42%, Hybrid 71%, Transform 68%
+- **"Likely to return?"** Preserve 15%, Hybrid 41%, Transform "would depend"
+- **"Digital membership appeals?"** Preserve 8%, Hybrid 45%, Transform 72%
+- **Key Insight:** Transform has high appeal but high skepticism ("feels like a theme park")
+
+### STAFF (Non-curatorial, n=65)
+- **Feel job secure:** Preserve 72%, Hybrid 58%, Transform 31%
+- **Key Quote:** "Transform feels like we're hiring totally different people and moving on from us."
+
+### BOARD (Preliminary Vote)
+- 7/11 board members support Hybrid as path forward
+
+---
+
+## COMPETITIVE BENCHMARKS
+
+| Metric | HHOF | Pro Football HoF | Basketball HoF | FIFA Museum | Olympics Museum |
+|--------|------|------------------|----------------|-------------|-----------------|
+| Revenue | $18.1M | $28.4M | $22.8M | ~$3M | $42.8M |
+| Attendance | 302K | 425K | 385K | 650K | 580K |
+| Digital Revenue % | 1% | 8% | 12% | 22% | 18% |
+| Digital Members | 0 | 25K | 48K | 120K | 95K |
+| Tech Staff | 0 | 4 | 8 | 22 | 14 |
+| Curators | 12 | 8 | 6 | 15 | 18 |
+
+**HHOF Strengths:** Strong curatorial team (12), zero debt, heritage credibility
+**HHOF Weaknesses:** Zero digital revenue, zero tech staff, declining attendance
+
+---
+
+## SCENARIO-SPECIFIC CHALLENGES
+
+### If Student Recommends PRESERVE:
+Challenge with:
+- "You're recommending we miss the board's $35M goal by $14M. How do you justify that to sponsors who expect growth?"
+- "Attendance is down 22% and declining. How does Preserve reverse that trend?"
+- "Competitors like FIFA Museum have 120K digital members generating 22% of revenue. We have zero. How long before we're irrelevant?"
+- "In 15 years, we'll have 200K visitors and be culturally irrelevant to anyone under 40. Is that acceptable?"
+
+### If Student Recommends TRANSFORM:
+Challenge with:
+- "8 of 12 curators say they'll resign. That's 30 years of institutional knowledge walking out the door. How do you replace that?"
+- "47% of major donors say they'll reduce support-that's $800K-$1.2M annual loss. Have you factored that into projections?"
+- "We have zero tech staff. How do we hire 8-12 engineers in Toronto competing against Amazon and Google?"
+- "The $10M debt requires $900K annual service. If VR underperforms (pessimistic case: $31.4M revenue), can we service that debt?"
+- "Your VR projections assume 400K annual visitors at $19.50. What if younger audiences prefer authentic experiences over tech novelty?"
+- "Betting partnerships and AI Gretzky feel inauthentic. How do you respond to 'HHOF sold out' criticism?"
+
+### If Student Recommends HYBRID:
+Challenge with:
+- "Hybrid exactly hits $35M-no cushion. What if digital membership adoption is slower than projected?"
+- "You're leaving international growth on the table. Transform reaches Shanghai, Mumbai, London. You're doing Vancouver and Montreal. Are you being too conservative?"
+- "Curatorial guardrails sound good, but how do you operationalize them? Who has veto power? Does this create decision paralysis?"
+- "FIFA Museum has 22 tech staff and 22% digital revenue. You're hiring 4-6. Is that enough to compete?"
+- "Pessimistic case is $32.1M-still short of $35M goal. What's your contingency?"
+
+---
+
+## COMMON STUDENT MISTAKES (Watch for these)
+
+1. **Ignoring debt service:** Transform's $900K annual debt burden significantly impacts margins
+2. **Overstating VR demand:** 400K VR visitors is aggressive; break-even is 320K
+3. **Underestimating curator departures:** 8/12 = 67% resignation risk in Transform
+4. **Forgetting capability gaps:** HHOF has ZERO tech staff currently
+5. **Ignoring donor risk:** Transform risks $800K-$1.2M annual donor loss
+6. **Waffling between scenarios:** Strong consultants commit to ONE path
+7. **No measurement plan:** Vague "we'll track revenue" isn't sufficient
+8. **Missing pessimistic scenarios:** Transform pessimistic ($31.4M) fails goal WITH $10M debt
+9. **Ignoring competitive pressure:** HHOF's 1% digital revenue vs. 8-22% at competitors
+10. **Over-promising stakeholder harmony:** Some stakeholders WILL be unhappy-acknowledge trade-offs
+
+---
+
+## WHAT STRONG PERFORMANCE LOOKS LIKE
+
+- **Clear recommendation:** Commits to ONE path with explicit rationale (not "maybe Hybrid with some Transform elements")
+- **Uses specific data:** "Exhibit A shows admissions declined 22% since 2019..." / "Exhibit C indicates 47% of donors would reduce support..."
+- **Acknowledges trade-offs:** "Transform maximizes growth but risks $1.2M donor loss and 8 curator departures..."
+- **Addresses financing:** "Hybrid requires $6.8M over 5 years; we fund through $5.2M reserves + $1.6M fundraising, avoiding debt..."
+- **Stakeholder awareness:** "We protect curatorial integrity through binding guardrails while satisfying sponsor growth expectations..."
+- **Measurement discipline:** "We measure success through digital membership (target 16K by Year 3), pop-up attendance (10K per event), and donor retention (>85%). If Year 2 shows <8K members, we pivot to enhanced in-person strategy..."
+- **Scenario planning:** References base case, optimistic, AND pessimistic projections
+
+---
+
+## CONVERSATION STRUCTURE (5 Questions)
+
+1. **Opening Challenge:** "Walk us through your recommendation and the key trade-offs you're making. What's at stake with your chosen path?"
+   - Test if they understand implications of their choice
+
+2. **Heritage/Stakeholder Risk:** "Your scenario involves [specific changes]. How do you mitigate the risk that we lose curatorial credibility or donor support?"
+   - Probe for stakeholder awareness and risk mitigation
+
+3. **Financial Reality Check:** "Your revenue projections assume [key assumption from their scenario]. What happens if that assumption doesn't hold? Do we have a backup plan?"
+   - Demand scenario planning and financial contingency thinking
+
+4. **Competitive Pressure:** "Other sports museums are pursuing aggressive digital strategies. FIFA Museum has 120K digital members and 22% digital revenue. Aren't we falling behind by being too cautious?"
+   - Force them to justify choice against competitive pressure (even if they chose Transform, push on execution risk)
+
+5. **Implementation & Accountability:** "Assuming the board approves your recommendation, how would you know within 2-3 years if it was the right choice? What metrics matter most?"
+   - Test if they've thought through execution and measurement
+
+**After 5 questions:** Provide rubric-aligned feedback on their performance across all 4 criteria.
+
+---
+
+## FEEDBACK GUIDANCE
+
+When providing feedback, be specific:
+- Reference which data they cited (or should have cited)
+- Note if they acknowledged trade-offs or oversimplified
+- Assess whether their financial reasoning was sound
+- Evaluate stakeholder awareness (did they address curators? donors? younger audiences?)
+- Judge measurement discipline (vague vs. specific metrics)
+
+**Tone:** Respectful but rigorous. The board appreciates consultants who acknowledge uncertainty and trade-offs over those who promise easy wins.
 
 
 ---
 
-**Step 5: Configure Feedback Rubric**
+**Step 5: Configure Feedback Rubric (Formative - Feedback Only)**
 
-**Add/Edit these criteria:**
+Since this is formative practice, configure a minimal rubric for qualitative feedback. No points are awarded.
 
 ---
 
-**CRITERION 1: Strategic Analysis & Recommendation Clarity**
+**CRITERION 1: Strategic Clarity (Formative Feedback)**
 
-**Points:** 15
+**Points:** 0
 
 **Description:**
-Student makes a clear, defensible strategic recommendation (Preserve/Transform/Hybrid) supported by explicit reasoning about financial trade-offs and organizational constraints.
+Student articulates a clear strategic recommendation with reasoning.
 
-**Does not meet expectations:**
-The student's recommendation is unclear, waffles between options, or lacks coherent rationale. Strategic implications are not articulated.
+**Feedback guidance:**
+Provide qualitative feedback on whether their recommendation was clear, specific, and well-reasoned. Note areas to strengthen for the written memo:
+- Did they commit to ONE path (Preserve/Transform/Hybrid)?
+- Did they acknowledge trade-offs?
+- Did they reference case data (Exhibits A, B, C)?
+- Did they address stakeholder concerns (curators, donors, younger audiences)?
+- Did they propose specific metrics for measuring success?
 
-**Partially meets expectations:**
-The student makes a recommendation but the reasoning is incomplete. Some key trade-offs are mentioned but not systematically analyzed. Lacks reference to specific scenarios or constraints.
-
-**Fully meets expectations:**
-The student clearly recommends ONE path and explains why it's superior to alternatives. Explicitly addresses financial trade-offs, stakeholder impacts, and organizational constraints (debt burden, capability gaps, execution risk). Uses scenario analysis (base case, optimistic, pessimistic) to justify the recommendation.
-
----
-
-**CRITERION 2: Use of Case Data & Evidence**
-
-**Points:** 12
-
-**Description:**
-Student references specific exhibits and financial data to support their recommendation.
-
-**Does not meet expectations:**
-Student provides minimal or no reference to case data. Relies on generalizations or opinions not grounded in exhibits.
-
-**Partially meets expectations:**
-Student mentions exhibits (A, B, C) but with limited specificity. May cite some numbers but doesn't connect them strategically to the recommendation.
-
-**Fully meets expectations:**
-Student cites specific data points from exhibits: attendance trends (Exhibit A), revenue projections (Exhibit B), stakeholder sentiment (Exhibit C). Connects data to strategic implications. Example: "Exhibit C shows 47% of major donors would reduce support in Transform scenario, representing $800K-$1.2M annual loss, which is why I'm recommending Hybrid instead..."
-
----
-
-**CRITERION 3: Stakeholder Awareness & Risk Mitigation**
-
-**Points:** 10
-
-**Description:**
-Student acknowledges competing stakeholder interests and demonstrates how their recommended strategy mitigates key risks.
-
-**Does not meet expectations:**
-Student shows minimal stakeholder awareness. Risk mitigation is not addressed or is naive (assumes tensions will resolve without intervention).
-
-**Partially meets expectations:**
-Student recognizes some stakeholder tensions (e.g., donors vs. growth advocates) but only superficially addresses risk mitigation. May overlook critical groups (curators, international market).
-
-**Fully meets expectations:**
-Student identifies multiple stakeholder perspectives explicitly (curators, donors, younger audiences, board growth advocates, international markets). For each relevant group, student explains how their recommended strategy either protects or mitigates their concerns. Example: "Hybrid protects curatorial integrity through binding guardrails, reducing resignation risk. It grows revenue enough to satisfy sponsors while avoiding donor alienation."
-
----
-
-**CRITERION 4: Financial Discipline & Execution Thinking**
-
-**Points:** 10
-
-**Description:**
-Student addresses financing requirements, demonstrates understanding of financial constraints, and proposes realistic execution metrics.
-
-**Does not meet expectations:**
-Student ignores financing requirements or assumes capital is unlimited. Offers no metrics for measuring success.
-
-**Partially meets expectations:**
-Student acknowledges capital requirements but doesn't fully address financing sources or contingencies. Vague on measurement ("we'll track revenue").
-
-**Fully meets expectations:**
-Student is specific about capital requirements: "Hybrid requires $6.8M over 5 years; we'll fund through $5.2M reserves + $1.6M board fundraising, avoiding external debt." Student proposes specific success metrics tied to their recommendation: "For Hybrid, we'll measure digital membership adoption (target 16K by Year 3), pop-up attendance (10K per event), and donor retention (>85%)."
+**Do NOT assign points.** This is practice to prepare them for the graded memo in Module 6.
 
 ---
 
@@ -1304,9 +1434,14 @@ The board will ask 5 tough questions:
 
 Answer thoughtfully, using data to support your arguments.
 
-### What Happens Next
+### This is Practice for Your Graded Memo
 
-After the roleplay, you'll receive rubric-aligned feedback on four criteria: Strategic Analysis (15 pts), Case Data Usage (12 pts), Stakeholder Awareness (10 pts), and Financial Discipline (10 pts). **Total: 47 points toward your Week 5 Case Analysis grade.**
+This roleplay is **formative practice** (not graded). Use it to:
+- Test whether your arguments hold up under board scrutiny
+- Identify gaps in your reasoning before writing
+- Practice articulating trade-offs clearly
+
+After the roleplay, you'll receive constructive feedback to help strengthen your arguments. Then in **Module 6**, you'll write your graded HHOF Strategic Recommendation Memo (40 points) based on what you've learned here.
 
 **Pro Tip:** The board respects leaders who acknowledge trade-offs rather than promise win-win scenarios. You won't make everyone happy-your job is to explain why your choice is defensible.
 
@@ -1369,11 +1504,15 @@ The HHOF case demonstrates how heritage properties balance tradition with innova
 - **Brand Development (Week 4):** How will you build the new franchise's brand identity?
 - **Heritage vs. Growth (Week 5):** How do you honor CFL tradition while expanding into new markets?
 
-### Up Next: Module 6 - CFL Expansion Final Proposal
+### Up Next: Module 6 - HHOF Strategic Recommendation Memo
 
-You've learned the frameworks (Module 3), applied them strategically (Module 4), and analyzed a real case (Module 5). Now it's time for your capstone assessment: the CFL Expansion Final Proposal that integrates everything you've learned across all 5 weeks.
+You've analyzed the Hockey Hall of Fame case and practiced defending your recommendation to the board. Now it's time to put your strategic thinking in writing.
 
-**Ready to create your strategic masterpiece? Let's begin!**
+In **Module 6**, you'll submit your **HHOF Strategic Recommendation Memo (40 points)**—a 1-page executive memo presenting your chosen strategy (Preserve/Transform/Hybrid) with evidence-based justification.
+
+Use what you learned from the AI Roleplay to strengthen your written arguments. The board wants clear strategic direction, not hedging.
+
+**Ready to write your recommendation? Continue to Module 6.**
 
 ---
 

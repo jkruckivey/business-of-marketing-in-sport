@@ -1,5 +1,8 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 3
-**Version:** 2.0.0 | **Last Updated:** 2026-01-13
+**Version:** 2.1.0 | **Last Updated:** 2026-01-14
+
+### Version 2.1.0 Changes
+- **ADDED:** Element 6 - Recommended Readings (PwC Sponsorship Playbook + Altenar CLV)
 
 ### Version 2.0.0 Changes
 - **STANDARDIZED:** Minimal exit structure (Key Takeaways + Milestone + What's Next)
@@ -17,10 +20,11 @@
 | 3 | **ⓘ Infobox (Assessment)** ⬤ Required | Milestone 3 Brief | Type directly | Purple variant, 25 points |
 | 4 | **📤 File Response** ⬤ Required | Milestone 3 Submission | Configure in Uplimit | File upload |
 | 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Week 4 |
+| 6 | **⊞ Details** ◐ Recommended | Recommended Readings | Type directly | Accordion, external industry sources |
 
 ---
 
-## Element 1: Infobox Content
+## Element 1: Week 3 Key Takeaways - Sponsorship & Betting
 
 ```
 Title: ◉ Week 3 Key Takeaways
@@ -135,6 +139,34 @@ Next week shifts from team/league sponsorship to individual athlete brands and e
 **Milestone 4 Preview:** You'll design a brand ambassador strategy for your CFL franchise—which athletes could help build your expansion team's brand in a new market?
 
 See you in Week 4!
+```
+
+---
+
+## Element 6: Details - Recommended Readings
+
+**Uplimit Implementation:**
+1. Select **Details** element
+2. Copy content below:
+
+```
+Title: 📚 Recommended Readings
+
+**PwC "Sports Sponsorship Playbook"**
+Comprehensive guide to sponsorship valuation and activation. Covers CPM calculations (500-1,500 premium range), the 1:2-3 activation rule (activation spend should be 2-3x rights fees), and betting attribution data including FanDuel/DraftKings' combined $1.37B marketing spend.
+
+*Focus on:* CPM calculation methods, activation budget ratios, sponsorship category benchmarks.
+
+[Link to PwC Sponsorship Playbook]
+
+---
+
+**Altenar "Boosting CLV in Sports Betting"**
+Sports betting customer economics analysis. Key metrics include average bettor lifetime value ($1,008), engagement multipliers (bettors watch 40% more games), and ARPU trends across betting markets.
+
+*Focus on:* Customer lifetime value calculations, engagement multiplier data for partnership valuations.
+
+[Link to Altenar Report]
 ```
 
 ---

@@ -23,7 +23,7 @@
 **Time:** 5-7 minutes
 **Purpose:** Connect Week 2 to Week 3, activate prior knowledge with Nike sponsorship puzzle
 
-### Module 1: Welcome & Learning Objectives
+### Module 1: Welcome & Learning Outcomes
 **File:** [module-1-welcome.md](module-1-welcome.md)
 **Time:** 14-17 minutes
 **Purpose:** Establish learning outcomes, preview week structure, executive video introduction

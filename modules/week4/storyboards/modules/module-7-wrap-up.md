@@ -1,5 +1,11 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 4
-**Version:** 2.0.0 | **Last Updated:** 2026-01-13
+**Version:** 2.2.0 | **Last Updated:** 2026-01-14
+
+### Version 2.2.0 Changes
+- **ADDED:** Element 6 - Recommended Readings (Serena Williams Brand Strategy)
+
+### Version 2.1.0 Changes
+- **NEW:** Element 2A - Brand Package Creator widget with bridging framing (connects athlete branding content to team brand design)
 
 ### Version 2.0.0 Changes
 - **STANDARDIZED:** Minimal exit structure (Key Takeaways + Milestone + What's Next)
@@ -14,9 +20,11 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **ⓘ Infobox (Callout)** ⬤ Required | Week 4 key takeaways | Type directly | 5 critical insights |
 | 2 | **▬ Text** ⬤ Required | Anchor Project Milestone 4 Introduction | Type directly | Sets context for milestone |
+| 2A | **▬ Text + ⚙ iFrame** ◐ Recommended | Brand Package Creator | Type + Embed widget | Bridges athlete branding → team brand |
 | 3 | **ⓘ Infobox (Assessment)** ⬤ Required | Milestone 4 Brief | Type directly | Purple variant, 20 points |
 | 4 | **📤 File Response** ⬤ Required | Milestone 4 Submission | Configure in Uplimit | File upload |
 | 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Week 5 |
+| 6 | **⊞ Details** ◐ Recommended | Recommended Readings | Type directly | Accordion, external industry sources |
 
 ---
 
@@ -53,6 +61,60 @@ Your CFL expansion franchise needs more than sponsors—it needs faces. In Miles
 - Consider how women's sports athletes might open new fan segments
 - Design a launch campaign that builds buzz before the first game
 ```
+
+---
+
+## Element 2A: Brand Package Creator `[v2.1.0]`
+
+**Element Type:** Text + iFrame Widget
+
+**Uplimit Implementation:**
+1. Select **Text** element for the introduction
+2. Add **iFrame** element for the widget
+
+### Introduction Text (Copy to Uplimit):
+
+```markdown
+## Design Your Team Brand: What Would Attract Your Target Athletes?
+
+You've learned that athletes like Serena Williams carefully protect and grow their personal brands. They don't partner with just anyone—they choose brands that align with their values and amplify their image.
+
+Now flip the perspective: **What kind of team brand would attract the athletes YOU want as ambassadors?**
+
+Before identifying specific ambassadors, define your franchise's visual identity. A strong team brand—compelling name, distinctive colors, memorable mascot—makes it easier to recruit athlete partners who want to be associated with your franchise.
+
+Use this tool to design your team's brand identity. Think about:
+- What team name reflects your market's identity? (Halifax Schooners? Quebec Voyageurs?)
+- What colors will look great on jerseys AND appeal to sponsors?
+- What mascot could become a beloved local icon?
+
+Your brand choices should align with the athlete ambassadors you'll identify in your milestone submission.
+```
+
+### Widget Embed:
+
+**File:** `brand-package-creator.html`
+
+```html
+<iframe
+  src="https://jkruckivey.github.io/business-of-sports-marketing/modules/week4/widgets/brand-package-creator.html"
+  width="100%"
+  height="800"
+  style="border: none; border-radius: 8px;"
+  title="CFL Brand Package Creator - Design your expansion team's identity"
+  aria-label="Interactive brand builder where you design your CFL expansion team's name, colors, jersey mockups, mascot, and logo concept"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Accessibility:**
+- ✅ Keyboard navigation functional
+- ✅ Color pickers with hex value display
+- ✅ Form labels on all inputs
+- ✅ Export function for brand package text file
+
+**Note:** This tool is recommended but not required. Students who have already defined their team identity can skip to the milestone brief.
 
 ---
 
@@ -134,6 +196,25 @@ The final week brings everything together. You'll explore how heritage propertie
 **Milestone 5 (Final Proposal):** Synthesize Milestones 1-4 into a comprehensive CFL expansion proposal for the league's Board of Governors. This is your capstone deliverable.
 
 See you in Week 5—the home stretch!
+```
+
+---
+
+## Element 6: Details - Recommended Readings
+
+**Uplimit Implementation:**
+1. Select **Details** element
+2. Copy content below:
+
+```
+Title: 📚 Recommended Readings
+
+**Serena Williams Brand Strategy** (Forbes/HBR case analysis)
+Analysis of how Serena Williams built a $260M+ net worth with only 30% from endorsements and 70% from equity positions. Covers the owned vs. endorsed assets framework, Serena Ventures portfolio strategy, and the playbook for building generational wealth versus fee-based income.
+
+*Focus on:* Five athlete revenue streams, equity compounding vs. endorsement fees, women's sports investment thesis, post-career transition planning.
+
+[Link to Forbes/HBR Coverage]
 ```
 
 ---

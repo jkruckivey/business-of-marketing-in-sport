@@ -1,9 +1,12 @@
 ## MODULE 5: Rogers NHL Case Study (V3 INTERACTIVE-FIRST REDESIGN)
-**Version:** 1.5.0 | **Last Updated:** 2025-01-08
+**Version:** 1.6.0 | **Last Updated:** 2026-01-14
 
 **Purpose:** Analyze the Rogers/NHL $5.2B deal: structure, performance, and 2026 decision (supports ALL WLOs 2.1-2.4)
 
 **Case Document:** `modules/week2/cases/rogers-nhl-case.md` (Case ID: BOSM-W2-001)
+
+### Version 1.6.0 Changes
+- **NEW:** Element 2A - Case Study Access + Reading Guide (download link, reading paths, 4 focus areas)
 
 ### Version 1.5.0 Changes
 - **NEW:** Full Rogers case document created (5 sections, B-epilogue, 6 exhibits, 12 discussion questions)
@@ -21,7 +24,8 @@
 |-------|---------|----------------|------|---------------------|
 | 1 | **Text** ⬤ Required | Connecting introduction from Module 4 | 1 min | Pattern: "You've just [previous] → Now [current]" |
 | 2 | **Infobox** ⬤ Required | Case overview + key questions | 1 min | Blue variant |
-| 4 | **Text** ⬤ Required | Case background: Rogers + NHL 2013 (150 words) | 1 min | Embedded markdown below |
+| 2A | **Text** ⬤ Required | 📚 Case Study Access + Reading Guide | 2 min | Download link + 4 focus areas |
+| 3 | **Text** ⬤ Required | Case background: Rogers + NHL 2013 (150 words) | 1 min | Embedded markdown below |
 | 5 | **🎮 iFrame** ◐ Recommended | Tool 5: Rogers Deal Terms Explorer | 3 min | Phase 2 tool |
 | 6 | **Text** ⬤ Required | Strategic rationale: Why $5.2B? (150 words) | 1 min | Embedded markdown below |
 | 7 | **Video** ◐ Recommended | Executive retrospective (2 min) | 2 min | week2-rogers-retrospective.mp4 |
@@ -52,6 +56,8 @@
 
 ## Element 1: Connecting Introduction
 
+# The $5.2 Billion Bet: Analyzing the Rogers NHL Deal
+
 You've just simulated building a sports streaming platform from scratch in Streaming Wars Strategy, experiencing firsthand the tension between content costs, subscriber growth, and profitability timelines. Now you'll analyze a **real-world $5.2 billion bet** where those same decisions played out with far higher stakes.
 
 In this module, you'll examine Rogers Communications' 2013 acquisition of exclusive NHL rights—the largest sports media deal in Canadian history. You'll explore what Rogers bought for $5.2B, why they believed it would work, what actually happened over 10 years, and what Rogers should do when the contract expires in 2026. This comprehensive case study will test your ability to evaluate mega-deals using all Week 2 frameworks.
@@ -79,6 +85,45 @@ This case addresses all Week 2 WLOs:
 • WLO 2.2: Platform strategy (linear Sportsnet + streaming)
 • WLO 2.3: Fan engagement and monetization tactics
 • WLO 2.4: Evaluation of mega-deal success/failure
+```
+
+---
+
+## Element 2A: Case Study Access + Reading Guide `[v1.6.0]`
+
+**Element Type:** Text block with download link + reading guide
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+## 📚 Case Study: Rogers Communications and the NHL
+
+**Access the case:**
+- [Download case PDF from course files](#) ← *Instructor: Upload PDF to Uplimit course files and insert link here*
+
+**Case Details:**
+- **Case ID:** BOSM-W2-001
+- **Length:** ~15 pages (5 sections + exhibits)
+- **Reading Time:** 20-25 minutes (or skim key sections in 10 minutes)
+
+**How to Use This Case:**
+
+This module is designed for **two learning paths:**
+
+1. **Interactive-First (Recommended):** Work through the module's interactive tools and text snippets WITHOUT reading the full case first. The tools scaffold you through the analysis progressively. Read the full case afterward to consolidate.
+
+2. **Case-First (Traditional):** Read the full case document first (20-25 min), then use the interactive tools to deepen your analysis.
+
+**Reading Guide - 4 Focus Areas:**
+
+| Section | Focus Question | Connects To |
+|---------|---------------|-------------|
+| **Section 1:** Background | Why was Rogers desperate enough to bid $5.2B? | Tool 5: Deal Terms Explorer |
+| **Section 2-3:** Deal & Thesis | What assumptions justified the investment? | Financial Analysis Tutorial |
+| **Section 4:** Performance | Where exactly did projections fail? | Tool 6: Projections vs. Actuals |
+| **Section 5:** 2026 Decision | What are the real options and trade-offs? | Tool 8: Decision Simulator |
+
+**After completing this module:** The full case narrative is available in the Details accordion (Element 17) for reference during your memo writing.
 ```
 
 ---
@@ -194,7 +239,7 @@ In this interactive activity, you'll explore 5 tabs revealing what Rogers acquir
 - **Per-game cost:** Previous: $140K/game → Rogers: $433K/game (3x increase)
 - **Justification:** Exclusivity premium + digital rights + inflation + NHL's growing Canadian fanbase
 
-**Learning Objectives:**
+**Learning Outcomes:**
 - **WLO 2.4:** Understand comprehensive scope of rights deal (not just TV games)
 - **WLO 2.1:** Recognize valuation factors (exclusivity, platform flexibility, content volume)
 - Appreciate why Rogers paid 3x more than previous deal (exclusivity + digital platforms)
@@ -374,7 +419,7 @@ In this interactive activity, you'll scrub through a 10-year timeline (2014-2024
    - **Variance:** $XXM (XX% below/above)
    - **Key Event:** What happened that year
 
-**Learning Objectives:**
+**Learning Outcomes:**
 - **WLO 2.4:** Analyze where and why Rogers' projections failed
 - **WLO 2.2:** Understand streaming adoption challenges (target 1M subs, achieved 450K)
 - **WLO 2.1:** Recognize importance of scenario planning (COVID was unforeseeable, but contract had no flexibility)
@@ -609,7 +654,7 @@ In this interactive activity, you'll explore 3 tabs of audience data: (1) Linear
    - **Tab 2: Sportsnet NOW Subscribers** (Streaming growth vs. targets)
    - **Tab 3: Demographic Breakdown** (Age, gender, regional trends)
 
-**Learning Objectives:**
+**Learning Outcomes:**
 - **WLO 2.4:** Analyze viewership trends and identify market dynamics
 - **WLO 2.3:** Understand fan engagement challenges (younger demos not engaging with full games)
 - Recognize importance of demographic trends for long-term rights valuation
@@ -803,7 +848,7 @@ This capstone simulation integrates EVERYTHING you've learned in Week 2. You'll 
 - Student writes brief recommendation (text box, 250 words max)
 - Export full analysis (assumptions + projections + recommendation) as PDF
 
-**Learning Objectives (CAPSTONE):**
+**Learning Outcomes (CAPSTONE):**
 - **WLO 2.1:** Apply rights valuation framework to new deal terms
 - **WLO 2.2:** Compare platform strategies (exclusive streaming vs. split package vs. exit)
 - **WLO 2.3:** Evaluate fan engagement opportunities (betting integration, app features)
@@ -930,11 +975,11 @@ There is NO single right answer—this is a strategic judgment call with legitim
 
 ## UPLIMIT CONFIGURATION
 
-### Tab 1: Learning Objective
+### Tab 1: Learning Outcome
 
 **Name:** Rogers 2026 Strategy Briefing
 
-**Learning Objective:**
+**Learning Outcome:**
 Students will synthesize Week 2 media rights frameworks to analyze the Rogers NHL deal performance and develop a defensible strategic recommendation for the 2026 contract decision. This supports WLO 2.4 (Evaluate the Rogers $5.2B NHL deal) at the Evaluation/Synthesis level.
 
 **Scenario Setup:** Strategy Briefing

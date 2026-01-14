@@ -13,72 +13,45 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Sets context from Module 5 |
-| 2 | **ⓘ Infobox (Assessment)** ⬤ Required | Assessment overview | Type directly | Purple variant, 40 points |
-| 3 | **◈ AI Roleplay** ◐ Recommended | Practice pitch to CMO | Configure in Uplimit | Brand CMO character |
-| 4 | **📤 File Response** ⬤ Required | Memo submission | Configure in Uplimit | File upload, rubric grading |
-| 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 7 |
+| 1 | **▬ Text** ⬤ Required | Finalize and submit intro | Type directly | Acknowledges work done, frames submission |
+| 2 | **◈ AI Roleplay** ◐ Recommended | Practice pitch to CMO | Configure in Uplimit | Brand CMO character |
+| 3 | **📤 File Response** ⬤ Required | Memo submission | Configure in Uplimit | File upload, rubric grading |
 
 ---
 
-## Element 1: Connecting Introduction
+## Element 1: Ready to Submit Your Memo
 
 **Uplimit Implementation:**
 1. Select **Text** element
 2. Copy markdown below:
 
 ```markdown
-You've explored sponsorship economics through interactive tools, analyzed the LIV Golf controversy using the Ethical Decision Framework, and calculated controversy-adjusted ROI. You've seen how sponsorship decisions balance financial value with stakeholder impact.
+# Finalize and Submit Your Strategy Memo
 
-Now it's time to demonstrate what you've learned. You'll write an executive memo advising a brand (BMW, Mastercard, Budweiser, or Rolex) on whether to sponsor LIV Golf—synthesizing stakeholder analysis, ROI calculations, and ethical frameworks.
+You've built your analysis using the Ethical Sponsorship Decision Tool and Brand Risk Calculator. You've reviewed the rubric and seen example memos at different grade levels. Now it's time to finalize and submit.
+
+**Before you submit**, use the AI Roleplay below to practice your pitch. Presenting to a skeptical CMO will help you stress-test your recommendation and identify any gaps in your argument.
+
+**Then submit your 2-page memo** using the file upload below.
 ```
 
 ---
 
-## Element 2: Infobox - Assessment Overview
-
-**Uplimit Implementation:**
-1. Select **Infobox** element
-2. Choose variant: **Assessment** (purple)
-3. Copy markdown below:
-
-```markdown
-Title: ▪ Assessment: LIV Golf Sponsorship Strategy Memo (40 points)
-
-**Your Task:** Write a 2-page executive memo advising a brand on whether to sponsor LIV Golf.
-
-**Choose Your Brand:** BMW, Mastercard, Budweiser, or Rolex
-
-**Required Components:**
-1. Clear recommendation in the first sentence with brand-specific rationale
-2. Stakeholder impact analysis with weighted scores
-3. Controversy-adjusted ROI calculation with stated assumptions
-4. Trade-off acknowledgment (what you gain vs. what you risk)
-
-**Grading Rubric (40 points):**
-- Strategic Clarity (10 pts): Clear recommendation with brand-specific rationale
-- Analytical Rigor (15 pts): Complete stakeholder and ROI analysis using Module 4 tools
-- Ethical Framework (10 pts): Thoughtful stakeholder weighting with sportswashing engagement
-- Presentation Quality (5 pts): Professional memo format, clear tables
-
-**Preparation:** Use the AI Roleplay below to practice your pitch before writing.
-```
-
----
-
-## Element 3: AI Roleplay - Brand CMO Practice Pitch
+## Element 2: AI Roleplay - Brand CMO Practice Pitch
 
 **Scenario Title:** "CMO Sponsorship Decision"
 
-**Purpose:** Formative practice where students rehearse their recommendation before writing.
+**Purpose:** Stress-test your recommendation before finalizing your memo.
 
 ### Uplimit Configuration
 
 **Scenario Context:**
 ```
-You are a sponsorship consultant presenting to the CMO of a major brand (your choice: BMW, Mastercard, Budweiser, or Rolex). The CMO is considering a $10M LIV Golf sponsorship and wants your recommendation. They need to defend this decision to the board, so they're looking for rigorous analysis—not just opinions.
+You've drafted your sponsorship strategy memo. Before you submit, pitch your recommendation to the CMO who will receive it.
 
-This roleplay is formative practice (not graded) to help you rehearse before writing your final memo.
+You are a sponsorship consultant presenting to the CMO of your chosen brand (BMW, Mastercard, Budweiser, or Rolex). The CMO is considering a $10M LIV Golf sponsorship and wants your recommendation. They need to defend this decision to the board, so they're looking for rigorous analysis—not just opinions.
+
+Use this roleplay to stress-test your arguments. If the CMO finds gaps, revise your memo before submitting.
 ```
 
 **AI Role:**
@@ -90,21 +63,21 @@ Conversation flow:
 2. Probe the stakeholder analysis (who wins, who loses, how did they weight it?)
 3. Challenge the ROI calculation (what assumptions are baked in?)
 4. Ask about the sportswashing angle (how will customers react?)
-5. Request their bottom-line advice
+5. Push back with a counter-argument to their recommendation
 
-Be professional but challenging. After 5-6 exchanges, wrap up: "Okay, I need this in a memo for the board. Make sure the numbers support your recommendation."
+Be professional but challenging. After 5-6 exchanges, wrap up: "Good analysis. If your memo is as tight as this pitch, the board will be convinced. Submit it."
 ```
 
 **Student Instructions:**
 ```
-You are a sponsorship consultant advising a brand CMO on whether to sponsor LIV Golf. The CMO needs a clear recommendation backed by stakeholder analysis and ROI calculations.
+You are a sponsorship consultant presenting your LIV Golf recommendation to a brand CMO. Pitch your analysis as if presenting the memo you've drafted.
 
-This is practice—use it to test your arguments before writing your memo.
+Use this to stress-test your arguments. If the CMO finds gaps, revise your memo before submitting.
 ```
 
 ---
 
-## Element 4: File Response - Memo Submission
+## Element 3: File Response - Memo Submission
 
 **Uplimit Implementation:**
 1. Select **Exercise → File Response Question**
@@ -136,35 +109,11 @@ Filename suggestion: LastName_Week3_LIVGolf_[BrandName].pdf
 
 ---
 
-## Element 5: Infobox - What's Next
-
-**Uplimit Implementation:**
-1. Select **Infobox** element
-2. Choose variant: **Next Steps** (green)
-3. Copy markdown below:
-
-```
-Title: ✓ What's Next: Module 7
-
-**After submitting your memo:**
-
-Module 7 wraps up Week 3 with key takeaways and your CFL Expansion Project Milestone 3. You'll apply the sponsorship frameworks to design a sponsor strategy for your expansion franchise.
-
-**Coming Up:**
-- Week 3 Key Takeaways (5 critical insights)
-- CFL Expansion Milestone 3: Sponsorship Portfolio & ROI Projections
-
-Complete your memo submission, then continue to Module 7.
-```
-
----
-
 ## Instructor Notes
 
-**Module 6 Purpose:**
+**Purpose:**
 - Assess Week 3 learning through authentic executive communication task
 - AI Roleplay provides formative practice before summative assessment
-- Clean handoff to Module 7 (milestone submission)
 
 **AI Feedback Option (Optional):**
 If you want students to get AI feedback before submitting, provide this prompt:
@@ -182,6 +131,6 @@ Evaluate the memo against these criteria, identifying strengths and specific imp
 
 **Grading Notes:**
 - Focus on brand-specific analysis (BMW vs. Budweiser have different stakeholder weights)
-- Look for evidence of Module 4 exercise outputs (Ethical Decision Tool, Brand Risk Calculator)
+- Look for evidence of analysis tool outputs (Ethical Decision Tool, Brand Risk Calculator)
 - Ethical framework criterion rewards nuanced engagement with sportswashing debate
 - Trade-off acknowledgment shows sophisticated thinking (not just "sponsor" or "don't sponsor")

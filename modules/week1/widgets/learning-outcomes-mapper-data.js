@@ -63,7 +63,7 @@ const moduleConfigs = {
     },
     'module-1': {
         moduleNumber: 'MODULE 1',
-        moduleTitle: 'Welcome & Learning Objectives',
+        moduleTitle: 'Welcome & Learning Outcomes',
         mlos: [
             week1MLOs['mlo-1-1'],
             week1MLOs['mlo-1-2'],

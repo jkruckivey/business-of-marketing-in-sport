@@ -357,7 +357,7 @@ Good luck with your Mini-Case Memo.
 - **Audio Description:** Narration already describes all visuals (animation-friendly)
 - **Transcript Download:** Available as PDF
 
-### Learning Objectives Addressed
+### Learning Outcomes Addressed
 - **MLO 2.4:** Evaluate the Rogers $5.2B NHL deal ✓
 - **MLO 2.1:** Understand rights valuation (what Rogers got wrong) ✓
 - **MLO 2.2:** Platform strategy (linear vs. streaming hybrid) ✓

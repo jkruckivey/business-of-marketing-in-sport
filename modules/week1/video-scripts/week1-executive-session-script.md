@@ -682,7 +682,7 @@ Which of the "emerging revenue streams" (betting, streaming DTC, international e
 - **During Video:** Encourage students to take notes on key quotes, data points, and frameworks. Provide guided note-taking template if needed.
 - **After Video:** Assign discussion forum prompts. Use AI Chat Widget ("Revenue Ecosystem Q&A") to answer clarification questions.
 
-### Key Learning Objectives Addressed
+### Key Learning Outcomes Addressed
 - **MLO 1.1:** Map the major revenue streams in professional sport ✓
 - **MLO 1.2:** Understand sport's unique business model characteristics ✓
 - **MLO 1.3:** Debate the vulnerabilities and growth potential of each revenue stream ✓

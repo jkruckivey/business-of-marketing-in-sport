@@ -8,7 +8,7 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Text** ⬤ Required | Connecting introduction from Module 3 | Type directly | Pattern: "You've just [previous] → Now [current]" |
-| 2 | **Infobox (Callout)** ⬤ Required | Activity instructions and learning objectives | Type directly | Blue variant, clear task |
+| 2 | **Infobox (Callout)** ⬤ Required | Activity instructions and learning outcomes | Type directly | Blue variant, clear task |
 | 3 | **iFrame** ◐ Recommended | Streaming Wars Strategy tool | Custom tool hosted | Interactive simulation |
 | 5 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to WLOs |
 | 6 | **AI Coach** ◐ Recommended | Your Strategy Coach for simulation decisions | Configure in Uplimit | Named: "Platform Strategy Assistant" |
@@ -23,6 +23,8 @@
 ---
 
 ## Element 1: Connecting Introduction
+
+# Build Your Streaming Platform: Strategy in Action
 
 You've just explored media rights valuation, exclusivity dynamics, and platform economics through frameworks and knowledge checks in Media Rights Frameworks. Now you'll **apply these concepts** in a strategic simulation where you build a sports streaming platform from scratch.
 

@@ -29,20 +29,20 @@ Style Note: Corporate boardroom tension with cool lighting.
 
 [PANEL 1]
 Shot Type & Angle: Wide shot of boardroom.
-Visual Description: A tense boardroom with wood-paneled walls. HERBERT FRITCH, the owner (70s, silver hair, cowboy boots under his suit), sits at the head of a polished table surrounded by nervous executives. A chart on the wall shows "REVENUE vs. LEAGUE AVERAGE" with Nashville's bar much shorter than average.
-Dialogue (HERBERT): "Gentlemen, I didn't build this franchise to watch it die. We're $40 million behind the league average in revenue. Explain."
-Caption: Owner Herbert Fritch had saved the team from relocation in 2007. Now he was watching it slip away again.
+Visual Description: A tense boardroom with wood-paneled walls. HOWARD FLETCHER, the owner (70s, silver hair, cowboy boots under his suit), sits at the head of a polished table surrounded by nervous executives. A chart on the wall shows "REVENUE vs. LEAGUE AVERAGE" with Nashville's bar much shorter than average.
+Dialogue (HOWARD): "Gentlemen, I didn't build this franchise to watch it die. We're $40 million behind the league average in revenue. Explain."
+Caption: Owner Howard Fletcher had saved the team from relocation in 2007. Now he was watching it slip away again.
 
 [PANEL 2]
 Shot Type & Angle: Medium shot over-shoulder.
 Visual Description: A nervous VP gestures at a pie chart showing revenue breakdown with five slices labeled: "TICKETS 35%", "SPONSORS 25%", "MEDIA 20%", "MERCH 12%", "PREMIUM 8%". Each slice is smaller than the "League Leaders" comparison chart beside it.
 Dialogue (VP): "Sir, it's the market. Nashville is... smaller. We can't compete with Toronto or New York—"
-Dialogue (HERBERT): "Don't tell me what we can't do."
+Dialogue (HOWARD): "Don't tell me what we can't do."
 
 [PANEL 3]
 Shot Type & Angle: Close-up on hands pushing a folder.
-Visual Description: Herbert's weathered hands push a folder across the table. The folder is labeled "CANDIDATE: J. TORRES" with a photo of a confident professional woman clipped to it.
-Dialogue (HERBERT): "I found someone who thinks different. A Nashville girl who learned from the best in Toronto. She starts Monday."
+Visual Description: Howard's weathered hands push a folder across the table. The folder is labeled "CANDIDATE: J. TORRES" with a photo of a confident professional woman clipped to it.
+Dialogue (HOWARD): "I found someone who thinks different. A Nashville girl who learned from the best in Toronto. She starts Monday."
 Caption: Jessica Torres was about to inherit a sinking ship. Her job: find the five streams of gold that could save it.
 
 ---
@@ -224,8 +224,8 @@ Caption: The streams thawed. And came back stronger.
 
 [PANEL 2]
 Shot Type & Angle: Medium shot of presentation.
-Visual Description: Jessica presents to owners. Charts all pointing UP. "REVENUE VS LEAGUE AVERAGE" shows Nashville ABOVE the line. Herbert Fritch leads a standing ovation.
-Dialogue (HERBERT): "You did what they said couldn't be done. Nashville isn't a small market anymore. We made ourselves BIG."
+Visual Description: Jessica presents to owners. Charts all pointing UP. "REVENUE VS LEAGUE AVERAGE" shows Nashville ABOVE the line. Howard Fletcher leads a standing ovation.
+Dialogue (HOWARD): "You did what they said couldn't be done. Nashville isn't a small market anymore. We made ourselves BIG."
 
 [PANEL 3]
 Shot Type & Angle: Close-up on chart.

@@ -825,7 +825,7 @@ Make your recommendation with clear strategic rationale.
 - Watch Rogers case discussion with executive analysis
 - Prepare Mini-Case Memo
 
-### Key Learning Objectives Addressed
+### Key Learning Outcomes Addressed
 - **MLO 2.1:** Explore how media rights deals are valued and monetized ✓
 - **MLO 2.2:** Compare linear broadcasting to streaming/DTC models ✓
 - **MLO 2.3:** Understand fan engagement monetization strategies ✓

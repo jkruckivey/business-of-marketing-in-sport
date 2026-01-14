@@ -11,7 +11,7 @@
 Week 2 contains 8 modules organized in this directory:
 
 0. **module-0-bridge-in.md** - Bridge In: The $5.2 Billion Question (diagnostic + pre-assessment)
-1. **module-1-welcome.md** - Welcome & Learning Objectives (WLOs 2.1-2.4)
+1. **module-1-welcome.md** - Welcome & Learning Outcomes (WLOs 2.1-2.4)
 2. **module-2-executive.md** - Executive Leader Perspective (TSN/DAZN insights)
 3. **module-3-core-content.md** - Media Rights Framework (V3 INTERACTIVE-FIRST)
 4. **module-4-interactive.md** - Streaming Wars Strategy Simulation

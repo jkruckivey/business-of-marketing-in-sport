@@ -216,7 +216,7 @@ Current Portfolio (Rogers Sports & Media):
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and executive insights
+**You've completed:** Welcome, learning outcomes, and executive insights
 **Coming next:** Interactive media rights framework (12-15 minutes)
 
 **Take a moment to:**

@@ -200,7 +200,7 @@ Let's find out what you already know... and what this week will teach you."
 
 **Step 1: Select "AI Roleplay Scenario" element in Uplimit builder**
 
-**Step 2: Set Learning Objective**
+**Step 2: Set Learning Outcome**
 
 Choose: **"Add objective myself"** (to test specific skills)
 

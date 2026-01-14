@@ -1,7 +1,11 @@
 # Five Revenue Streams That Power Sports
-**Version:** 1.4.0 | **Last Updated:** 2025-12-01
+**Version:** 1.5.0 | **Last Updated:** 2026-01-14
 
 **Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports WLO 1.1, 1.2, 1.3)
+
+### Version 1.5.0 Changes
+- **ADDED:** Deep-dive readings as Details accordions throughout module (Element 5B, 12B, 20B, 23B)
+- **RESTORED:** ~2,400 words of reading content from text-content files, now sprinkled as optional expandable sections
 
 ### Version 1.4.0 Changes
 - **NEW:** Added stock photo suggestions throughout text-heavy sections to enhance visual engagement
@@ -12,11 +16,12 @@
 ### V3 Module 3 Structure (30 Elements)
 
 **Content Summary:**
-- **Total text:** ~1,000 words broken into 9 micro-readings (100-120 words each, ~1 minute each)
+- **Total text:** ~1,000 words in micro-readings (100-120 words each, ~1 minute each)
+- **Deep-dive readings:** ~2,400 words in 4 optional Details accordions (Elements 5B, 12B, 20B, 23B)
 - **Total video:** 4 minutes (2 videos - one at start, one at midpoint for mental break)
 - **Interactive exercises:** 8 exercises, ~25 minutes total hands-on engagement
-- **Visual elements:** 3 images, 1 table, 3 infoboxes, 1 vertical list, 1 tiles, 1 details accordion
-- **Total time:** ~35 minutes (higher than V2, but **75% ACTIVE engagement**)
+- **Visual elements:** 3 images, 1 table, 3 infoboxes, 1 vertical list, 1 tiles, 5 details accordions
+- **Total time:** ~35 minutes core + ~15 minutes optional deep-dive readings
 
 ### Section 1: Introduction & Overview (Elements 1-4)
 
@@ -63,7 +68,7 @@ As you work through this module, pay attention to how these streams interconnect
 #### Element 2: Video - Five Revenue Streams Overview
 - **File:** `week1-video1-revenue-streams.mp4`
 - **Duration:** 2 minutes
-- **VTT Transcript:** `week1-video1-revenue-streams.vtt`
+- **Caption File:** `Videos/HeyGen Scripts/VIDEO #1 IO - Cohort - BOSM – W1-M3, V1 (Five Revenue Streams)-caption.srt`
 - **Video Title:** "Five Revenue Streams in Professional Sports"
 - **Video Caption:** "2-minute overview of media rights, ticketing, sponsorship, merchandising, and betting"
 
@@ -168,7 +173,7 @@ In this interactive activity, you'll build your own revenue portfolio by allocat
 - Growth projection calculated (weighted by stream growth trends)
 - Export allocation as JSON for student portfolios
 
-**Learning Objectives:**
+**Learning Outcomes:**
 - WLO 1.1: Understand relative size of each revenue stream
 - WLO 1.3: Explore trade-offs between high-growth (high-risk) and stable streams
 
@@ -236,6 +241,49 @@ For leagues, broadcast deals provide **predictable, long-term revenue** (often 9
 - **Search Terms:** `sports broadcast control room`, `TV production studio sports`, `live sports media production`
 - **Purpose:** Visualizes the media infrastructure that commands 40-60% of sports revenue
 - **Size:** Full width, max 800px
+
+---
+
+#### Element 5B: Details - Media Rights Deep Dive (NEW v1.5.0)
+```
+Title: Go Deeper: Media Rights - The Foundation
+
+[Expand for detailed reading on media rights economics]
+
+**Why Sports Command Premium Value**
+
+Traditional broadcasting involves selling exclusive or non-exclusive rights to television networks. Broadcasters generate revenue by selling advertising during games and, in cable/satellite models, through carriage fees (the monthly fee cable companies pay to carry channels like ESPN or TSN).
+
+The economic logic is straightforward: **sports content attracts large, engaged, live audiences**—a rarity in an era of on-demand entertainment. Advertisers pay premium rates because viewers can't fast-forward through commercials during live games. Cost per thousand viewers (CPM) for premium sports can reach **$50-70**, compared to **$15-25** for scripted television.
+
+**The Streaming Disruption**
+
+The rise of streaming has fundamentally disrupted sports media economics. Companies like Amazon (NFL Thursday Night Football - **$1 billion/year**), Apple (MLS - **$250 million/year**), and DAZN (boxing, soccer) have entered bidding wars, driving rights values higher while introducing new business models.
+
+Streaming platforms operate differently than traditional broadcasters:
+- **Revenue model:** Primarily subscription-based rather than advertising-dependent
+- **Geographic reach:** Global distribution vs. regional licensing
+- **Engagement data:** Detailed viewer analytics vs. aggregated ratings
+- **Profitability timeline:** 3-5 year payback periods vs. immediate ROI expectations
+
+Leagues increasingly split rights packages—selling traditional TV rights to one partner and streaming rights to another, or creating their own direct-to-consumer platforms (NBA League Pass, NHL.TV, NFL+). This **"hybrid model"** maximizes total revenue while hedging against uncertainty about the future of television.
+
+**What Makes Rights Valuable?**
+
+Media companies evaluate sports rights deals using five key factors:
+
+1. **Audience size and demographics** - Larger audiences and coveted demographics (males 18-49, high income) command higher fees
+2. **Exclusivity** - Exclusive rights cost 2-3× more than non-exclusive rights
+3. **Content volume** - More games provide more inventory, but quality matters more than quantity
+4. **Scheduling flexibility** - Properties that can be programmed in prime windows (NFL Sundays) are more valuable
+5. **Strategic fit** - Rights that help platforms achieve broader goals justify premium pricing
+
+For leagues, broadcast deals provide **predictable, long-term revenue**. The NHL's Canadian deal with Rogers runs 12 years; the NBA's U.S. deals span 9 years. This stability allows teams to make long-term financial commitments like player contracts and facility investments.
+
+The most sophisticated valuations also consider **revenue interdependencies**: how rights deals affect sponsorship revenue, ticketing demand, and merchandise sales. A strong broadcast partner doesn't just pay rights fees—they create marketing value that amplifies other streams.
+
+**Reading Time:** 3-4 minutes
+```
 
 ---
 
@@ -482,6 +530,66 @@ Over a full season, dynamic pricing can **increase ticketing revenue by 15-25%**
 
 ---
 
+#### Element 12B: Details - Ticketing Deep Dive (NEW v1.5.0)
+```
+Title: Go Deeper: Ticketing and Live Events - The Fan Experience
+
+[Expand for detailed reading on ticketing economics]
+
+**The Premium Seating Revolution**
+
+The evolution of stadium economics has shifted dramatically from a "fill the seats" model to a "maximize per-capita revenue" model. Modern venues are designed with tiered experiences:
+
+**General Admission:**
+- Standard seats with basic amenities
+- Priced based on location (lower bowl vs. upper deck)
+- Often sold as season ticket packages or individual games
+- Declining as percentage of total ticketing revenue
+
+**Premium Seating:**
+- Luxury suites (**$100,000-500,000 per season**)
+- Club seats with exclusive lounges (**$5,000-15,000 per seat per season**)
+- Courtside/field level seats with concierge service
+- VIP experiences (meet-and-greets, behind-the-scenes access)
+
+Here's the critical insight: Premium seating generates **40-50% of ticketing revenue** despite representing only **10-15% of capacity**. This explains why virtually every stadium renovation or new construction prioritizes premium inventory expansion.
+
+**Dynamic Pricing Strategies**
+
+Dynamic pricing—adjusting ticket prices based on demand—has become standard practice across professional sports. Prices fluctuate based on:
+- **Opponent quality** (Yankees vs. Orioles vs. Red Sox)
+- **Team performance** (playoff contention increases demand)
+- **Day of week** (weekend vs. weekday games)
+- **Special events** (giveaways, jersey retirements, rivalry games)
+- **Time to event** (last-minute purchases may cost more or less)
+
+Technology platforms like SeatGeek, Ticketmaster, and proprietary systems analyze real-time demand, weather, team news, and historical data to optimize pricing thousands of times per day.
+
+**Beyond the Ticket: Gameday Revenue**
+
+The modern sports venue is designed as a revenue-generating destination, not just a place to watch games. Non-ticket gameday revenue includes:
+
+**Concessions:** Food and beverage sales ($10 beers, $8 hot dogs), premium catering in suites and clubs, branded partnerships (Bud Light patios, Pepsi lounges). Average per-capita spending: **$15-30**.
+
+**Parking and Transportation:** Premium parking (**$50-100 per game**), general parking (**$20-40 per game**), valet and ride-share pickup fees.
+
+**Merchandise:** In-venue retail shops, game-day only items (commemorative shirts, playoff gear), personalized jersey customization.
+
+**Sponsorship Activation:** Branded photo booths and interactive experiences, sampling stations and giveaways, contests and promotions with corporate partners.
+
+Total non-ticket revenue can reach **$40-50 per attendee**, turning a $100 ticket into $140-150 in total venue spending. This is why teams view declining attendance with concern—it's not just ticket revenue at stake, but the entire in-venue ecosystem.
+
+**The Capacity Constraint Challenge**
+
+The fundamental limitation of ticketing revenue: it's **capacity-constrained**. You can only sell so many seats, and there are only so many games. Teams can increase per-seat prices and per-capita spending, but there's a ceiling.
+
+This explains the industry's pivot toward **unconstrained digital revenue**—media rights, sponsorship, and betting integration aren't limited by physical capacity. Smart teams view live events not just as revenue sources, but as **content creation engines** that fuel other streams.
+
+**Reading Time:** 4-5 minutes
+```
+
+---
+
 #### Element 13: iFrame Widget - Dynamic Pricing Simulator
 
 ### ⚙ Interactive Activity: Dynamic Pricing Simulator
@@ -520,7 +628,7 @@ In this simulator, you'll set ticket prices for Toronto Raptors games based on o
   - Comparison vs. static pricing
 - **Real Examples:** Lakers (Saturday, winning) = $400 | Pistons (Tuesday, losing) = $120
 
-**Learning Objectives:**
+**Learning Outcomes:**
 - WLO 1.1: Understand ticketing revenue stream mechanics
 - WLO 1.3: Evaluate revenue optimization strategies and trade-offs
 
@@ -669,7 +777,7 @@ Total non-ticket revenue can reach **$40-50 per attendee** (concessions $15-30, 
 #### Element 19: Video - Sponsorship & Merchandising Overview
 - **File:** `week1-video2-sponsorship-merch.mp4`
 - **Duration:** 2 minutes
-- **VTT Transcript:** `week1-video2-sponsorship-merch.vtt`
+- **Caption File:** `Videos/HeyGen Scripts/VIDEO #2 IO - Cohort - BOSM – W1-M3, V2 (Sponsorship)-caption.srt`
 - **Video Title:** "Sponsorship & Merchandising: Brand-Driven Revenue"
 - **Video Caption:** "2-minute overview of corporate partnerships and licensed products"
 
@@ -788,6 +896,79 @@ The best sponsors **activate** beyond logos—creating fan experiences that buil
 
 ---
 
+#### Element 20B: Details - Sponsorship Deep Dive (NEW v1.5.0)
+```
+Title: Go Deeper: Sponsorship and Partnerships - Brand Alignment
+
+[Expand for detailed reading on sponsorship economics]
+
+**Naming Rights: Geographic Brand Ownership**
+
+Stadium and arena naming rights are the most visible (and valuable) sponsorship deals:
+
+**Major Market Examples:**
+- **Scotiabank Arena** (Toronto Maple Leafs/Raptors): ~$800 million over 20 years (**$40M/year**)
+- **Chase Center** (Golden State Warriors): ~$300 million over 20 years (**$15M/year**)
+- **Climate Pledge Arena** (Seattle Kraken): Estimated $200-300M over 15 years
+
+Naming rights provide consistent brand exposure—mentioned in broadcasts, printed on tickets, embedded in digital content, and used in everyday conversation ("I'm going to Chase tonight"). For sponsors, it's not just signage; it's **geographic brand ownership**.
+
+The most valuable naming rights are in major markets (New York, Los Angeles, Toronto) with multiple professional teams. Chase's $300 million Golden State investment buys association with one of the NBA's most valuable franchises during a dynasty era—far different from naming a stadium for a struggling team in a small market.
+
+**Jersey and Uniform Sponsorship**
+
+The NBA pioneered jersey sponsorship in North America in 2017, allowing teams to sell a 2.5" x 2.5" patch on uniforms. Deals range from **$5 million** (small market teams) to **$30 million per year** (major market teams):
+
+- **Golden State Warriors + Rakuten:** ~$20M/year
+- **Los Angeles Lakers + Bibigo:** ~$12-14M/year
+- **Boston Celtics + Vistaprint:** ~$7-10M/year
+
+European soccer has decades of experience with shirt sponsorship, with top deals exceeding **$80 million per year** (Manchester United + TeamViewer, Barcelona + Spotify).
+
+Jersey sponsorship is particularly valuable because:
+1. **Guaranteed visibility** - Every broadcast shows the logo
+2. **Fan adoption** - Replica jerseys carry sponsor brands into everyday life
+3. **Global reach** - Highlights, social media, and international broadcasts amplify exposure
+
+The NHL approved helmet sponsorship during COVID (2020-21), generating **$2-5 million per team annually**. Full jersey sponsorship is expected within 5-10 years.
+
+**Category Partnerships and Activation**
+
+Most teams sell **category-exclusive partnerships**: "official beer," "official airline," "official bank," etc. These deals range from **$500,000 to $10 million annually** depending on category value and market size.
+
+**High-Value Categories:**
+- Automotive (official vehicle)
+- Financial services (official bank/credit card)
+- Telecommunications (official wireless provider)
+- Alcoholic beverages (official beer/spirits)
+- Airlines (official carrier)
+
+Category deals bundle multiple assets: in-venue signage and PA announcements, broadcast integrations ("This power play brought to you by..."), digital content and social media, hospitality and premium seating, community programs and player appearances.
+
+**Activation: Beyond the Logo**
+
+**Poor Activation:** Logo on a rink board. Fans barely notice.
+
+**Great Activation:** Scotiabank's "Scene+ Night" at Leafs games—loyalty program integration, exclusive ticket offers, in-arena experiences. Fans associate Scotiabank with positive memories, not just a logo.
+
+**Excellent Activation:** Delta's partnership with the Los Angeles Lakers includes exclusive lounges, travel content series, "Delta Deck" premium seating, and behind-the-scenes player content.
+
+Sponsors measure success through:
+- **Brand awareness** (how many people saw/remembered the logo?)
+- **Brand favorability** (did the sponsorship improve perception?)
+- **Customer acquisition** (did we gain new customers?)
+
+**In-Venue Advertising Inventory**
+
+Traditional in-venue advertising includes LED boards, ribbon displays, ice/field/court signage, concourse banners, and video board commercials. These deals are typically smaller (**$50,000-500,000 per season**) but aggregate to significant revenue.
+
+The advantage: **inventory isn't limited**. Teams can sell dozens of in-venue advertising positions simultaneously. Increasingly, venues use digital signage that rotates multiple sponsors throughout games, maximizing inventory value.
+
+**Reading Time:** 4-5 minutes
+```
+
+---
+
 #### Element 21: iFrame Widget - Sponsorship ROI Calculator
 
 ### ⚙ Interactive Activity: Sponsorship ROI Calculator
@@ -870,6 +1051,95 @@ Merchandising and licensing revenue represents **5-10% of revenue** for most tea
 - **Search Terms:** `sports team store interior`, `jersey store merchandise`, `sports apparel retail`
 - **Purpose:** Visualizes the retail experience and merchandise that drives fan spending
 - **Size:** Full width, max 800px
+
+---
+
+#### Element 23B: Details - Merchandising & Betting Deep Dive (NEW v1.5.0)
+```
+Title: Go Deeper: Merchandising & Betting - Established and Emerging Streams
+
+[Expand for detailed reading on merchandising and betting economics]
+
+**MERCHANDISING: Brand Extension**
+
+**Centralized vs. Decentralized Models**
+
+Professional leagues take different approaches to merchandise:
+
+**Centralized Model (NFL, NHL, MLB):**
+- League office manages all licensing
+- Revenue pooled and distributed equally to all teams
+- Protects small-market teams from revenue imbalance
+- Prevents Yankees/Cowboys from dominating merchandise sales
+
+**Decentralized Model (European Soccer):**
+- Teams control their own merchandise rights
+- Popular clubs (Manchester United, Real Madrid) generate 10-20× more than smaller clubs
+- Creates wealth disparity but rewards brand-building
+
+**Hybrid Model (NBA):**
+- League manages licensing for most products
+- Teams have some flexibility for team-specific deals
+- Star player merchandise shared between player, team, and league
+
+**Revenue Drivers and Spikes**
+
+Merchandise sales spike during:
+- **Championship runs** - Sales increase **200-400%** during playoffs
+- **Star acquisitions** - LeBron James trade to Lakers generated **$1 million+ in jersey sales within hours**
+- **Milestone moments** - Record-breaking performances, jersey retirements
+- **New uniform designs** - "City Edition" NBA jerseys generate **$100M+ annually**
+
+Digital commerce has transformed merchandise economics. Teams can test new designs instantly, collect customer data, and sell globally without retail partnerships. The Toronto Raptors ship merchandise to **85+ countries** through their online store.
+
+---
+
+**BETTING & GAMING: The Emerging Frontier**
+
+**Legalization's Impact**
+
+The 2018 U.S. Supreme Court decision striking down the federal sports betting ban (PASPA) opened the floodgates:
+- **2018:** Sports betting legal in 8 U.S. states
+- **2024:** Legal in **38+ states** covering 70%+ of U.S. population
+- **Canada:** Single-game betting legalized **August 2021**
+
+Global sports betting market estimated at **$200+ billion annually**. As legalization progresses, leagues capture value previously controlled by offshore operators and illegal bookmakers.
+
+**How Leagues Monetize Betting**
+
+Leagues generate betting revenue through multiple channels:
+
+**1. Official Partner Designations ($50-200M/year):**
+FanDuel, DraftKings, BetMGM pay leagues for "official betting partner" status, providing legitimacy and preferential marketing access.
+
+**2. Data Licensing ($10-50M/year):**
+Leagues sell real-time game data for live betting odds—player tracking data, injury reports, weather conditions essential for in-game betting.
+
+**3. Media Integration:**
+Betting odds displayed in broadcasts, betting-focused content (ESPN Bet), stadium signage and promotional integration.
+
+**Strategic Value Beyond Direct Revenue**
+
+Betting's impact extends far beyond direct revenue—it fundamentally changes **fan engagement**:
+
+**Increased Viewership:** Fans with bets watch entire games, not just highlights. Studies show betting users watch **30-40% more sports content**. Games between weak teams gain interest through spread betting.
+
+**Extended Engagement:** In-game betting keeps fans engaged throughout games. Prop bets create continuous excitement. Fantasy sports integration (DFS, season-long leagues).
+
+**Data Value Creation:** Betting drives mobile app usage. Enriched user profiles valuable for sponsors. First-party data increasingly valuable as cookies disappear.
+
+**Risks and Regulatory Concerns**
+
+Betting integration introduces significant risks:
+
+**Game Integrity:** Player corruption (point shaving, match fixing), referee manipulation, inside information leaks. Leagues invest heavily in monitoring through real-time betting pattern analysis and partnerships with data firms (Genius Sports, Sportradar).
+
+**Problem Gambling:** Addiction concerns, especially among younger users. Leagues face criticism for normalizing gambling. Regulatory pressure for responsible gaming messages.
+
+Despite risks, leagues have collectively decided betting integration is inevitable—better to regulate directly than leave to black markets.
+
+**Reading Time:** 4-5 minutes
+```
 
 ---
 
@@ -1133,7 +1403,7 @@ In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to
 - **Alternative scenarios:** Compare star player vs. new arena vs. betting deal
 - **Export:** Save ecosystem analysis as PDF
 
-**Learning Objectives:**
+**Learning Outcomes:**
 - WLO 1.1: See how revenue streams interconnect (ecosystem vs. portfolio)
 - WLO 1.2: Understand sport's unique business model (why teams "overpay")
 - WLO 1.3: Evaluate strategic investment decisions across multiple streams

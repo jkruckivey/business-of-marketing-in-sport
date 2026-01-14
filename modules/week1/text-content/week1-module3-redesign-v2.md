@@ -296,4 +296,4 @@ While V1 broke up the 3,500-word text block into 14 elements, user feedback iden
 
 ---
 
-**This V2 redesign maintains the same learning objectives and total time (~20 minutes) while DRAMATICALLY reducing text density through strategic visual breaks, a second video at midpoint, and more interactive elements.**
+**This V2 redesign maintains the same learning outcomes and total time (~20 minutes) while DRAMATICALLY reducing text density through strategic visual breaks, a second video at midpoint, and more interactive elements.**

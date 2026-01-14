@@ -131,11 +131,11 @@ Ready? Let's find out what you know—and what you don't—about valuing media r
 
 ### UPLIMIT CONFIGURATION
 
-**Tab 1: Learning Objective**
+**Tab 1: Learning Outcome**
 
 **Name:** Media Rights Valuation Diagnostic
 
-**Learning Objective:**
+**Learning Outcome:**
 Students will articulate their current understanding of how media rights deals are valued, revealing knowledge gaps and misconceptions before learning Week 2 frameworks. This diagnostic conversation (formative, not graded) helps students identify what they need to focus on during the week.
 
 **Scenario Setup:**

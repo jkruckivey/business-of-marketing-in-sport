@@ -27,7 +27,7 @@
 
 ---
 
-## Element 1: Connecting Introduction Text
+## Element 1: Why Brands Pay - The Sponsorship Value Proposition
 
 **Copy this markdown directly into Uplimit:**
 
@@ -149,7 +149,7 @@ This calculator empowers you to input real deal parameters—rights fees, broadc
 3. Widget displays: Total impressions, CPM, benchmark chart, value grade (Excellent/Good/Fair/Poor)
 4. 5 presets: NFL jersey sponsor ($25M), EPL shirt sponsor (£50M), MLS jersey (£5M), NBA court ad ($3M), MLB dugout suite ($1M)
 
-**Learning Objective:** WLO 3.3 (Calculate how brands measure ROI) - Students practice industry-standard CPM calculations
+**Learning Outcome:** WLO 3.3 (Calculate how brands measure ROI) - Students practice industry-standard CPM calculations
 
 **Real-World Data Examples:**
 - **Scotiabank (Toronto Raptors):** $20M/year rights fee, 1.5M avg viewers × 82 games, 19,800 attendance × 41 home games = ~123M impressions, CPM = $163
@@ -300,7 +300,7 @@ You'll apply the activation multiplier to calculate your total investment, then 
 4. Widget shows: Budget allocation pie chart, channel spend ($M), industry benchmark comparison, strategic fit score
 5. 3 presets: Coca-Cola World Cup (mass market, heavy advertising/retail), American Express PGA (premium, heavy hospitality), Red Bull F1 (digital-first, heavy content/events)
 
-**Learning Objective:** WLO 3.4 (Design activations) - Students practice building balanced activation budgets
+**Learning Outcome:** WLO 3.4 (Design activations) - Students practice building balanced activation budgets
 
 **Real-World Data Examples:**
 - **Coca-Cola FIFA World Cup:** $300M rights, $900M activation (70% advertising/retail, 15% events, 10% digital, 5% hospitality)
@@ -548,7 +548,7 @@ You'll model the full customer journey from initial reach (total impressions) th
 3. Widget displays: Funnel visualization (Reach → Engagement → Conversion), revenue breakdown, ROI percentage, payback period, breakeven point
 4. 5 presets with real data: Nike NFL ($400M investment, 5B impressions, 0.02% engagement, 1.5% conversion, $120 avg purchase = 37% ROI), Red Bull F1 (180% ROI), Gatorade NBA (52% ROI)
 
-**Learning Objective:** WLO 3.3 (Calculate ROI) - Students practice full ROI modeling with realistic assumptions
+**Learning Outcome:** WLO 3.3 (Calculate ROI) - Students practice full ROI modeling with realistic assumptions
 
 **Real-World Data Examples:**
 - **Nike NFL Partnership:** $400M total investment, 5B impressions (broadcast + digital), 0.02% engagement rate (1M engaged), 1.5% conversion rate (15,000 customers), $120 avg purchase = $1.8M revenue, ROI = -$398.2M... wait, that's wrong. Let me recalculate.
@@ -782,7 +782,7 @@ Ready to discover why betting changed everything? Let's dive in!
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and sponsorship ROI framework with 3 interactive calculators
+**You've completed:** Welcome, learning outcomes, and sponsorship ROI framework with 3 interactive calculators
 **Coming next:** Sports betting economics and fan engagement analysis (~15 minutes)
 
 **Take a moment to:**

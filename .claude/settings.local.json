@@ -73,7 +73,9 @@
       "Bash(git remote set-url:*)",
       "Bash(open:*)",
       "Bash(grep:*)",
-      "WebFetch(domain:hbsp.harvard.edu)"
+      "WebFetch(domain:hbsp.harvard.edu)",
+      "Bash(do if grep -q \"Learning Objective\\\\|learning objective\" \"$file\")",
+      "Bash(do if grep -q \"Learning Objective\" \"$file\")"
     ],
     "deny": [],
     "ask": [],

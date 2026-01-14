@@ -28,7 +28,7 @@
 
 ---
 
-## Element 1: Connecting Introduction Text
+## Element 1: From PASPA to $50 Billion - The Betting Revolution
 
 **Copy this markdown directly into Uplimit:**
 
@@ -155,7 +155,7 @@ You'll input key parameters—state population, participation rates, average wag
 3. Widget displays: Market size funnel (Handle → GGR → Net Revenue), state tax revenue, operator profitability, comparison to state benchmarks
 4. 5 presets: New Jersey (mature market), New York (highest handle), Pennsylvania, Michigan, Ohio (new market)
 
-**Learning Objective:** WLO 3.2 (Analyze betting as growth driver) - Students model betting market economics
+**Learning Outcome:** WLO 3.2 (Analyze betting as growth driver) - Students model betting market economics
 
 **Real-World Data Examples:**
 - **New Jersey:** 9.3M population, 12% participation, $2,400 avg wager, 7% margin = $2.4B handle, $168M GGR, $29M state tax (17.5% rate)
@@ -371,7 +371,7 @@ You'll compare viewing behavior between bettors and non-bettors by inputting fan
 3. Widget displays: Viewership breakdown chart, engagement comparison (bettors vs. non-bettors), bettor revenue premium
 4. 3 presets: NFL (15% bettors, 40% multiplier), NBA (12% bettors, 50% multiplier), NHL (10% bettors, 35% multiplier)
 
-**Learning Objective:** WLO 3.2 (Analyze betting impact) - Students quantify betting's engagement effects
+**Learning Outcome:** WLO 3.2 (Analyze betting impact) - Students quantify betting's engagement effects
 
 **Real-World Example:**
 - **NFL:** 200M fan base, 15% bet (30M bettors), 272 games, 17M avg viewers, 40% engagement boost
@@ -636,7 +636,7 @@ You'll compare traditional sponsorship CPM to betting sponsor CPM by factoring i
 3. Widget displays: Value comparison, premium justification, ROI comparison
 4. 3 presets: NFL jersey sponsor (20% premium), NBA court ad (25% premium), NHL betting kiosk (35% premium)
 
-**Learning Objective:** WLO 3.3 (Calculate ROI) - Students quantify betting partnership premiums
+**Learning Outcome:** WLO 3.3 (Calculate ROI) - Students quantify betting partnership premiums
 
 **Real-World Example:**
 - **NFL Jersey Sponsor (Traditional):** $25M rights fee, $1,200 CPM, 5B impressions = 4.17B effective impressions

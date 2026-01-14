@@ -16,7 +16,7 @@
 **Time:** 22-27 minutes
 **Purpose:** Hook students with athlete brand valuation paradox, diagnostic pre-assessment
 
-### Module 1: Welcome & Learning Objectives
+### Module 1: Welcome & Learning Outcomes
 **File:** [module-1-welcome.md](module-1-welcome.md)
 **Time:** 10-13 minutes
 **Purpose:** Establish learning outcomes (WLO 4.1-4.4), preview week structure

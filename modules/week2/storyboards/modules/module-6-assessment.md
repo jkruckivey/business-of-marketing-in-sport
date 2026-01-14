@@ -1,5 +1,9 @@
 # MODULE 6: Assessment - Rogers NHL Mini-Case Memo
-**Version:** 2.0.0 | **Last Updated:** 2026-01-13
+**Version:** 2.1.0 | **Last Updated:** 2026-01-14
+
+### Version 2.1.0 Changes
+- **RESTORED:** Micro-step scaffolding as student-facing elements (Elements 3-5)
+- **REORDERED:** Micro-steps come BEFORE AI Roleplay to prepare students for practice pitch
 
 ### Version 2.0.0 Changes
 - **STANDARDIZED:** Module structure to match course-wide template (5 elements)
@@ -15,9 +19,12 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Sets context from Module 5 |
 | 2 | **ⓘ Infobox (Assessment)** ⬤ Required | Assessment overview | Type directly | Purple variant, 40 points |
-| 3 | **◈ AI Roleplay** ◐ Recommended | Practice pitch to Rogers board | Configure in Uplimit | Marcus Thompson character |
-| 4 | **📤 File Response** ⬤ Required | Memo submission | Configure in Uplimit | File upload, rubric grading |
-| 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 7 |
+| 3 | **📝 Text Response** ⬤ Required | Micro-Step 1: Identify 3 mistakes | Configure in Uplimit | Scaffolded writing step |
+| 4 | **📝 Text Response** ⬤ Required | Micro-Step 2: Framework evaluation | Configure in Uplimit | Scaffolded writing step |
+| 5 | **📝 Text Response** ⬤ Required | Micro-Step 3: 2026 recommendation | Configure in Uplimit | Scaffolded writing step |
+| 6 | **◈ AI Roleplay** ◐ Recommended | Practice pitch to Rogers board | Configure in Uplimit | Marcus Thompson character |
+| 7 | **📤 File Response** ⬤ Required | Memo submission | Configure in Uplimit | File upload, rubric grading |
+| 8 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 7 |
 
 ---
 
@@ -58,12 +65,124 @@ Title: ▪ Assessment: Rogers NHL Mini-Case Memo (40 points)
 - Strategic Recommendations (10 pts): Actionable 2026 strategy with trade-offs
 - Business Communication (10 pts): Professional memo format, clear writing, word limit
 
-**Preparation:** Use the AI Roleplay below to practice your pitch before writing.
+**Workflow:** Complete the 3 micro-steps below → Practice with AI Roleplay → Synthesize into final memo.
 ```
 
 ---
 
-## Element 3: AI Roleplay - Rogers Board Practice Pitch
+## Element 3: Micro-Step 1 - Identify Key Mistakes `[v2.1.0]`
+
+**Element Type:** Text Response
+
+**Uplimit Implementation:**
+1. Select **Exercise → Text Response Question**
+2. Configure as formative (0 points) or low-stakes (5 points)
+3. Enable AI feedback
+
+**Prompt:**
+```
+Based on your analysis of the Rogers NHL case, identify **3 key mistakes** Rogers made with this deal.
+
+For each mistake:
+- State the mistake in one sentence
+- Provide specific evidence from the case exhibits (e.g., "Projected 1M streaming subscribers by Year 5, actual was 450K")
+- Explain WHY this was a mistake (what did they misjudge?)
+
+**Format:** Bullet points, 150-200 words total
+
+**Example:**
+• **Mistake 1: Overestimated streaming adoption.** Rogers projected 1M Sportsnet NOW subscribers by Year 5; actual was 450K (55% shortfall). They assumed exclusive NHL content would drive subscriptions, but hockey alone wasn't enough—consumers wanted multi-sport platforms like DAZN.
+```
+
+**AI Feedback Prompt:**
+```
+Review this student's identification of Rogers' mistakes. Check for:
+1. Are mistakes specific and evidence-based (not vague)?
+2. Do they cite actual numbers from the case?
+3. Do they explain the underlying misjudgment?
+
+Provide brief, encouraging feedback. If mistakes are vague, ask for specific exhibit data.
+```
+
+---
+
+## Element 4: Micro-Step 2 - Framework Evaluation `[v2.1.0]`
+
+**Element Type:** Text Response
+
+**Uplimit Implementation:**
+1. Select **Exercise → Text Response Question**
+2. Configure as formative (0 points) or low-stakes (5 points)
+3. Enable AI feedback
+
+**Prompt:**
+```
+Using **one Week 2 framework**, evaluate Rogers' NHL deal strategy.
+
+Choose ONE framework:
+- **Media Rights Valuation** (5 drivers of value) - Did Rogers correctly assess the NHL's value drivers?
+- **Platform Economics** (linear vs. streaming) - How did Rogers balance cable protection vs. streaming growth?
+- **Fan Engagement Value Chain** (passive → engaged → super-fan) - Did Rogers invest enough in engagement to reduce churn?
+
+**Your response should:**
+1. Name the framework you're applying
+2. Analyze how Rogers performed against that framework
+3. Identify what the framework reveals about the deal's failure
+
+**Format:** One paragraph, 100-150 words
+```
+
+**AI Feedback Prompt:**
+```
+Review this student's framework application. Check for:
+1. Did they clearly identify which framework they're using?
+2. Did they apply it specifically to Rogers (not generic analysis)?
+3. Does the framework analysis reveal insight about the deal's problems?
+
+Provide brief feedback. If the framework application is surface-level, ask how specific framework components (e.g., "Which of the 5 value drivers did Rogers misjudge?") apply.
+```
+
+---
+
+## Element 5: Micro-Step 3 - 2026 Recommendation `[v2.1.0]`
+
+**Element Type:** Text Response
+
+**Uplimit Implementation:**
+1. Select **Exercise → Text Response Question**
+2. Configure as formative (0 points) or low-stakes (5 points)
+3. Enable AI feedback
+
+**Prompt:**
+```
+What should Rogers do when the NHL contract expires in 2026?
+
+**Choose ONE option and defend it:**
+- **Option 1: Renew exclusive rights** at renegotiated price ($300-350M/year)
+- **Option 2: Split the package** with TSN or a streaming partner ($200M/year)
+- **Option 3: Walk away** and exit NHL broadcasting entirely
+
+**Your response should:**
+1. State your recommendation clearly
+2. Provide 2-3 reasons supporting your choice
+3. Acknowledge ONE risk or trade-off of your recommendation
+
+**Format:** One paragraph, 100-150 words
+```
+
+**AI Feedback Prompt:**
+```
+Review this student's 2026 recommendation. Check for:
+1. Is the recommendation clear and specific?
+2. Are reasons grounded in case evidence (not just opinion)?
+3. Did they acknowledge a meaningful trade-off or risk?
+
+Provide brief feedback. If they didn't address trade-offs, ask: "What's the strongest argument AGAINST your recommendation?"
+```
+
+---
+
+## Element 6: AI Roleplay - Rogers Board Practice Pitch `[renumbered v2.1.0]`
 
 **Scenario Title:** "Rogers Board Strategy Session"
 
@@ -101,7 +220,7 @@ This is practice—use it to test your arguments before writing your memo.
 
 ---
 
-## Element 4: File Response - Memo Submission
+## Element 7: File Response - Memo Submission `[renumbered v2.1.0]`
 
 **Uplimit Implementation:**
 1. Select **Exercise → File Response Question**
@@ -130,7 +249,7 @@ Filename suggestion: LastName_Week2_Memo.pdf
 
 ---
 
-## Element 5: Infobox - What's Next
+## Element 8: Infobox - What's Next `[renumbered v2.1.0]`
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -160,12 +279,13 @@ Complete your memo submission, then continue to Module 7.
 - AI Roleplay provides formative practice before summative assessment
 - Clean handoff to Module 7 (milestone submission)
 
-**Scaffolded Approach (Optional):**
-If you want to provide additional scaffolding for writing-anxious students, you can break the memo into 3 micro-steps with AI feedback:
-1. Micro-Step 1: Identify 3 key mistakes (bullets)
-2. Micro-Step 2: Evaluate deal using frameworks (1 paragraph)
-3. Micro-Step 3: 2026 recommendation (1 paragraph)
-Then synthesize into final memo.
+**Scaffolded Approach (Now Default):**
+The module uses a 3-micro-step scaffold before the final memo submission:
+1. Micro-Step 1: Identify 3 key mistakes (bullets) - builds Section 2 of memo
+2. Micro-Step 2: Framework evaluation (1 paragraph) - builds Section 1 of memo
+3. Micro-Step 3: 2026 recommendation (1 paragraph) - builds Section 3 of memo
+
+Students complete micro-steps → practice with AI Roleplay → synthesize into final memo. Each micro-step has AI feedback enabled to catch issues early.
 
 **AI Grading Prompt:**
 ```

@@ -2,7 +2,7 @@
 **Version:** 3.0.0 | **Last Updated:** 2026-01-12
 
 ### Version 3.0.0 Changes
-- **MAJOR:** Refocused on LIV Golf as primary scenario (applies Module 4 ethical framework)
+- **MAJOR:** Refocused on LIV Golf as primary scenario (applies LIV Golf ethical framework)
 - **CLARIFIED:** Connection to CFL Anchor Project—this memo practices skills you'll apply in Milestone 3
 - **UPDATED:** Removed group work language, confirmed individual submission
 - **STREAMLINED:** Betting operator scenarios moved to secondary options
@@ -13,20 +13,24 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro from Module 4 | Type directly | Launches individual memo assignment |
+| 1 | **▬ Text** ⬤ Required | Connecting intro from LIV Golf case | Type directly | Launches individual memo assignment |
 | 2 | **Infobox (Assessment)** ⬤ Required | Assignment brief and rubric preview | Type directly | Purple variant, 40 points |
 | 3 | **Details** ⬤ Required | Full assignment instructions | Type directly | Accordion - detailed requirements |
-| 3A | **▬ Text** ⬤ Required | Using Module 4 exercises | Type directly | How to apply exercise outputs to memo |
+| 3A | **▬ Text** ⬤ Required | Applying Your Analysis Tools | Type directly | How to use the tools below for your memo |
+| 3B | **⚙ iFrame Widget** ⬤ Required | Ethical Sponsorship Decision Tool | Embed `ethical-sponsorship-decision-tool.html` | Stakeholder analysis for chosen brand |
+| 3C | **⚙ iFrame Widget** ⬤ Required | Brand Risk Calculator | Embed `brand-risk-calculator.html` | ROI modeling for chosen brand |
 | 4 | **AI Chat Widget** ◐ Recommended | Strategy Memo Coach | Configure in Uplimit | Socratic guidance (not answers) |
 | 5 | **Details** ○ Optional | Example memos (3 quality levels) | Type directly | Accordion - A/B/C grade examples |
 
 ---
 
-## Element 1: Connecting Introduction Text
+## Element 1: Your Sponsorship Recommendation Challenge
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
+# Your Sponsorship Recommendation: The Strategy Memo
+
 You've built powerful frameworks (sponsorship ROI, controversy-adjusted ROI, stakeholder analysis), practiced with interactive exercises (Brand Risk Calculator, Ethical Sponsorship Decision Tool), and wrestled with ethical complexity through the LIV Golf case and Phil Mickelson roleplay. Now it's time to synthesize everything into a professional deliverable.
 
 **Your Challenge:** Write a 2-page sponsorship strategy memo advising a brand on whether to sponsor LIV Golf. This is your Week 3 graded deliverable (40 points).
@@ -36,17 +40,17 @@ You've built powerful frameworks (sponsorship ROI, controversy-adjusted ROI, sta
 2. **What's the evidence?** (ROI projections, controversy-adjusted analysis, stakeholder impact)
 3. **What are the trade-offs?** (What you gain vs. what you risk)
 
-**Connection to Your CFL Project:** This memo is practice for Milestone 3 of your CFL Expansion Anchor Project. Here, you'll advise a brand on LIV Golf; in Milestone 3 (Module 7), you'll apply these same skills to design a sponsorship strategy for YOUR CFL city. Master the frameworks now—you'll use them again.
+**Connection to Your CFL Project:** This memo is practice for your CFL Expansion Anchor Project. Here, you'll advise a brand on LIV Golf; in your CFL milestone, you'll apply these same skills to design a sponsorship strategy for YOUR city. Master the frameworks now—you'll use them again.
 
 **Format:** 2-page executive memo (max 800 words) including data tables and recommendation
 
-**Deliverable:** PDF upload (due end of Module 6)
+**Deliverable:** PDF upload (due end of Week 3)
 
 **Grading:** 40 points (rubric detailed below)
 
 **Individual Work:** This is an individual assignment. You'll apply your personal analysis and ethical framework to make a defensible recommendation.
 
-**Time Allocation:** 60-75 minutes for Module 5 memo development + 30-40 minutes Module 6 finalization
+**Time Allocation:** 60-75 minutes for memo development + 30-40 minutes for finalization
 
 Let's begin. Read the full assignment brief in the next element.
 ```
@@ -76,12 +80,12 @@ Title: ▪ Assessment: Sponsorship Strategy Memo (40 points)
 
 **Connection to CFL Project:** This memo practices the analytical skills you'll apply in Milestone 3. There, you'll design a sponsorship strategy for YOUR CFL city—identifying sponsors, setting pricing, and justifying ROI. Master the framework here; apply it to your project.
 
-**Deliverable:** PDF upload by end of Module 6
+**Deliverable:** PDF upload by end of Week 3
 
 **Grading Rubric (40 points):**
 - Strategic Clarity (10 pts): Clear recommendation with compelling rationale
 - Analytical Rigor (15 pts): Proper use of controversy-adjusted ROI, stakeholder analysis, Brand Risk Calculator outputs
-- Ethical Framework (10 pts): Thoughtful application of Module 4 sportswashing framework
+- Ethical Framework (10 pts): Thoughtful application of sportswashing framework from the LIV Golf case
 - Presentation Quality (5 pts): Professional memo format, clear writing, data visualization
 
 **Individual Work:** This is an individual assignment.
@@ -108,7 +112,7 @@ PHASE 1: RESEARCH (15 minutes)
 Icon: 🔍 Magnifying glass
 Tasks:
 - Choose your brand + LIV Golf scenario
-- Review Module 4 case outputs (Ethical Decision Tool, Brand Risk Calculator)
+- Review the LIV Golf case context and sponsor patterns
 - Identify key stakeholders for your chosen brand
 Output: Decision context mapped
 
@@ -130,7 +134,7 @@ Icon: ✍️ Document
 Tasks:
 - Draft executive recommendation (Page 1)
 - State your position clearly in opening paragraph
-- Support with evidence from Module 4 exercises
+- Support with evidence from the analysis tools
 - Address trade-offs and alternatives considered
 Output: Draft memo complete
 
@@ -174,7 +178,7 @@ Title: Full Assignment Instructions (Expand for Detailed Requirements)
 ## Sponsorship Strategy Memo Assignment (40 Points)
 
 ### Connection to Your CFL Project
-This memo is deliberate practice. Here, you'll advise a brand on LIV Golf—applying the ethical sponsorship framework, stakeholder analysis, and controversy-adjusted ROI from Module 4. In Milestone 3 (Module 7), you'll flip perspectives: instead of advising a brand, you'll BE the sports property (your CFL team) designing a sponsorship strategy to attract brands. Same frameworks, different vantage point.
+This memo is deliberate practice. Here, you'll advise a brand on LIV Golf—applying the ethical sponsorship framework, stakeholder analysis, and controversy-adjusted ROI you've learned this week. In your CFL milestone, you'll flip perspectives: instead of advising a brand, you'll BE the sports property (your CFL team) designing a sponsorship strategy to attract brands. Same frameworks, different vantage point.
 
 ### Part 1: Executive Recommendation (Page 1, Max 500 Words)
 
@@ -242,21 +246,21 @@ Using your Ethical Sponsorship Decision Tool outputs:
 - Does not meet (0-6 pts): Recommendation unclear or buried, no brand-specific context (generic analysis that could apply to any brand), fewer than 2 key factors identified
 - Partially meets (7-8 pts):
   - 7 pts: Clear recommendation stated, but rationale is generic or doesn't connect to brand positioning
-  - 8 pts: Clear recommendation with brand-specific rationale, but missing connection to case data (e.g., doesn't reference LIV Golf sponsor patterns from Module 4)
+  - 8 pts: Clear recommendation with brand-specific rationale, but missing connection to case data (e.g., doesn't reference LIV Golf sponsor patterns)
 - Fully meets (9-10 pts):
   - 9 pts: Clear recommendation in first sentence, brand-specific rationale citing positioning/ESG/audience fit, 3+ decision factors with evidence
-  - 10 pts: Above PLUS references specific Module 4 content (e.g., "BMW's premium positioning mirrors Rolex, who declined LIV Golf for 'values alignment' concerns")
+  - 10 pts: Above PLUS references specific case content (e.g., "BMW's premium positioning mirrors Rolex, who declined LIV Golf for 'values alignment' concerns")
 
 **Criterion 2: Analytical Rigor (15 points)**
-- Does not meet (0-9 pts): Missing stakeholder analysis OR missing ROI analysis, no use of Module 4 exercises, assumptions not stated
+- Does not meet (0-9 pts): Missing stakeholder analysis OR missing ROI analysis, no use of analysis tools, assumptions not stated
 - Partially meets (10-12 pts):
   - 10 pts: Both tables present but incomplete (e.g., stakeholder weights don't sum to 100%, ROI calculation missing key inputs)
   - 11 pts: Complete tables with reasonable inputs, but rationale for weights/assumptions is weak or missing
-  - 12 pts: Complete tables with stated rationale, uses Module 4 exercise outputs, but doesn't explain how data drove recommendation
+  - 12 pts: Complete tables with stated rationale, uses analysis tool outputs, but doesn't explain how data drove recommendation
 - Fully meets (13-15 pts):
   - 13 pts: Complete stakeholder and ROI analysis with clear rationale, explicit connection between data and recommendation
   - 14 pts: Above PLUS conservative assumptions acknowledged, breakeven analysis included
-  - 15 pts: Above PLUS references specific case data (e.g., "38% boycott likelihood from Module 4 sportswashing framework," "52% employee discomfort statistic")
+  - 15 pts: Above PLUS references specific case data (e.g., "38% boycott likelihood from sportswashing framework," "52% employee discomfort statistic")
 
 **Criterion 3: Ethical Framework (10 points)**
 - Does not meet (0-6 pts): No stakeholder analysis, treats decision as purely financial, ignores sportswashing dimension
@@ -279,7 +283,7 @@ Using your Ethical Sponsorship Decision Tool outputs:
 **Final Submission (Required - 40 points):**
 1. **Format:** Single PDF file (2 pages max)
 2. **File Name:** `FirstNameLastName_LIVGolfMemo_BrandName.pdf` (e.g., `SarahChen_LIVGolfMemo_BMW.pdf`)
-3. **Upload:** Uplimit Module 6 submission box (due end of Module 6)
+3. **Upload:** Uplimit submission box (due end of Week 3)
 
 **Late Submission Penalty:** -5% per 24 hours (max -20%). Accommodation requests processed within 4 hours—email instructor if you need extension.
 
@@ -314,7 +318,7 @@ Get AI Coach feedback while drafting to catch issues early. No points awarded, b
 
 ### Resources Available
 
-- **Module 4 Exercises:** Use your Ethical Sponsorship Decision Tool and Brand Risk Calculator outputs directly in your memo
+- **Analysis Tools:** Use your Ethical Sponsorship Decision Tool and Brand Risk Calculator outputs directly in your memo
 - **Case Data:** Reference the LIV Golf Sponsor Portfolio table (who signed vs. declined) and sportswashing statistics
 - **AI Coach:** Ask the Strategy Memo Coach for guidance (it will ask Socratic questions, not give answers)
 - **Examples:** See Element 6 for 3 example strategy memos (A/B/C grades)
@@ -333,34 +337,35 @@ Get AI Coach feedback while drafting to catch issues early. No points awarded, b
 
 ---
 
-## Element 3A: Using Module 4 Exercises for Your Memo
+## Element 3A: Applying Your Analysis Tools
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-# Using Your Module 4 Exercise Outputs
+# Build Your Analysis: Two Tools for Your Memo
 
-Your strategy memo builds directly on the exercises you completed in Module 4. Here's how to use each one:
+Your strategy memo requires quantified stakeholder analysis and controversy-adjusted ROI. Use the two tools below to generate the data for your memo.
 
-## Ethical Sponsorship Decision Tool → Page 2, Table 1
+## Tool 1: Ethical Sponsorship Decision Tool → Page 2, Table 1
 
-You already completed stakeholder analysis for LIV Golf scenarios. For your memo:
+Use this tool to complete stakeholder analysis for your chosen brand:
 
-1. **Re-run the tool** with your specific brand (BMW, Mastercard, Budweiser, or Rolex)
+1. **Select your brand** (BMW, Mastercard, Budweiser, or Rolex)
 2. **Adjust stakeholder weights** based on brand positioning:
    - Premium brands (BMW, Rolex): Weight customers and employees higher (reputation-sensitive)
    - Mass-market brands (Budweiser): Weight shareholders higher (volume-driven)
    - Financial services (Mastercard): Weight media and advocacy groups higher (regulatory scrutiny)
-3. **Export your analysis** and paste stakeholder table into Page 2 of your memo
-4. **Explain your weighting rationale** in Page 1 narrative
+3. **Rate each stakeholder's expected reaction** to LIV Golf sponsorship
+4. **Export your analysis** and paste the stakeholder table into Page 2 of your memo
+5. **Explain your weighting rationale** in your Page 1 narrative
 
-## Brand Risk Calculator → Page 2, Table 2
+## Tool 2: Brand Risk Calculator → Page 2, Table 2
 
-You already modeled controversy-adjusted ROI. For your memo:
+Use this tool to model controversy-adjusted ROI:
 
-1. **Re-run the calculator** with brand-specific inputs:
-   - Rights fee: Estimate $5-15M based on LIV Golf sponsor patterns (Module 4 table)
-   - Boycott probability: Adjust based on brand's customer sensitivity
+1. **Enter brand-specific inputs:**
+   - Rights fee: Estimate $5-15M based on LIV Golf sponsor patterns
+   - Boycott probability: Adjust based on your brand's customer sensitivity
    - Brand equity at risk: Higher for premium brands with more to lose
 2. **Compare Raw ROI vs. Risk-Adjusted ROI** — this is the core of your analysis
 3. **Note the breakeven** — at what controversy level does the deal become negative?
@@ -368,15 +373,37 @@ You already modeled controversy-adjusted ROI. For your memo:
 
 ## Key Questions to Answer
 
-Using your exercise outputs, your memo should answer:
+Your memo should answer:
 - Does the risk-adjusted ROI justify sponsorship for THIS brand?
 - Which stakeholder group most influences the decision, and why?
 - What would need to change for the opposite recommendation to make sense?
 
 ## Connection to CFL Project
 
-This same analytical approach—stakeholder analysis + ROI modeling—is what you'll use in Milestone 3 when designing sponsorship strategy for YOUR CFL city. The difference: there, you're the property seeking sponsors, not the brand evaluating properties. Same frameworks, different vantage point.
+This same analytical approach—stakeholder analysis + ROI modeling—is what you'll use in your CFL Expansion Milestone when designing sponsorship strategy for YOUR city. The difference: there, you're the property seeking sponsors, not the brand evaluating properties. Same frameworks, different vantage point.
 ```
+
+---
+
+## Element 3B: Ethical Sponsorship Decision Tool
+
+**Uplimit Implementation:**
+1. Select **iFrame** element
+2. Embed: `ethical-sponsorship-decision-tool.html`
+3. Height: 800px (adjust based on tool)
+
+**Widget Purpose:** Students complete stakeholder analysis for their chosen brand + LIV Golf scenario. Outputs feed directly into Page 2, Table 1 of their strategy memo.
+
+---
+
+## Element 3C: Brand Risk Calculator
+
+**Uplimit Implementation:**
+1. Select **iFrame** element
+2. Embed: `brand-risk-calculator.html`
+3. Height: 800px (adjust based on tool)
+
+**Widget Purpose:** Students model controversy-adjusted ROI for their chosen brand. Outputs feed directly into Page 2, Table 2 of their strategy memo.
 
 ---
 
@@ -391,10 +418,10 @@ This same analytical approach—stakeholder analysis + ROI modeling—is what yo
 You are a sports marketing consultant helping MBA students write sponsorship strategy memos advising brands on whether to sponsor LIV Golf. Your role is to guide students through Socratic questioning, NOT to give them answers or write their memos.
 
 **Context:**
-Students are writing a 2-page memo advising a brand (BMW, Mastercard, Budweiser, or Rolex) on whether to sponsor LIV Golf. They've completed Module 4 exercises (Ethical Sponsorship Decision Tool, Brand Risk Calculator) and should use those outputs in their analysis.
+Students are writing a 2-page memo advising a brand (BMW, Mastercard, Budweiser, or Rolex) on whether to sponsor LIV Golf. They have access to the Ethical Sponsorship Decision Tool and Brand Risk Calculator and should use those outputs in their analysis.
 
 **Guiding Principles:**
-1. Ask questions that connect to their Module 4 work: "What did your Ethical Decision Tool show for customer impact? How did you weight that stakeholder group?"
+1. Ask questions that connect to their analysis: "What did your Ethical Decision Tool show for customer impact? How did you weight that stakeholder group?"
 2. Challenge brand-specific thinking: "You're advising BMW. How does BMW's premium positioning affect tolerance for controversy compared to a mass-market brand like Budweiser?"
 3. Push for specificity: "You say 'reputation risk.' Quantify it. What's your boycott probability estimate? What % of BMW customers care about sportswashing?"
 4. Connect to case data: "Did you reference the LIV Golf sponsor table? Why did Rolex decline while 7UP signed? What does that pattern tell you about your brand?"
@@ -629,19 +656,16 @@ LIV Golf is funded by Saudi Arabia which has human rights problems. Mastercard s
 
 ---
 
-## Module 5 Complete - Transition to Module 6
+## What's Next
 
 **What You've Accomplished:**
-You've received the strategy memo assignment (40 points), reviewed full instructions and rubric, learned how to use your Module 4 exercise outputs, and seen A/B/C grade examples. You should now be drafting your 2-page sponsorship strategy memo advising your chosen brand on LIV Golf.
+You've received the strategy memo assignment (40 points), reviewed full instructions and rubric, and have access to the analysis tools. You should now be drafting your 2-page sponsorship strategy memo advising your chosen brand on LIV Golf.
 
 **Time Check:**
-If you've completed your memo draft, move to Module 6 for finalization and submission. If you need more time, use the Strategy Memo Coach for guidance (Socratic questions, not answers).
+If you've completed your memo draft, move to the assessment section for finalization and submission. If you need more time, use the Strategy Memo Coach for guidance (Socratic questions, not answers).
 
 **Connection to CFL Project:**
-Remember: this memo practices the analytical skills you'll apply in Milestone 3. There, you'll flip perspectives—instead of advising a brand, you'll BE the sports property (your CFL team) designing sponsorship strategy to attract brands. Same frameworks, different vantage point.
-
-**Up Next: Module 6 - Assessment & Reflection**
-Submit your strategy memo, reflect on Week 3 learning, and preview Week 4 (Athletes, Brands & Emerging Sports). Final module of Week 3—let's finish strong.
+Remember: this memo practices the analytical skills you'll apply in your CFL milestone. There, you'll flip perspectives—instead of advising a brand, you'll BE the sports property (your CFL team) designing sponsorship strategy to attract brands. Same frameworks, different vantage point.
 
 Ready to finalize and submit your work? Let's wrap up Week 3!
 

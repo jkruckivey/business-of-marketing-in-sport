@@ -305,7 +305,7 @@ All widgets use consistent structure:
 
 - ☐ Create Unit 1 in Uplimit (with dates: Aug 25-Sep 1)
 - ☐ Create all 7 modules within Unit 1
-- ☐ Add all Infoboxes with learning objectives
+- ☐ Add all Infoboxes with learning outcomes
 - ☐ Type all element titles and descriptions (no content yet)
 
 ### Week 2: Text Content (10-12 hours)

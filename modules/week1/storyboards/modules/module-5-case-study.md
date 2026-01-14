@@ -363,11 +363,11 @@ D) Hamilton has better media deals; Houston has cheaper player salaries
 
 ## UPLIMIT CONFIGURATION
 
-### Tab 1: Learning Objective
+### Tab 1: Learning Outcome
 
 **Name:** Predators Ownership Pitch: Market Feasibility Analysis
 
-**Learning Objective:**
+**Learning Outcome:**
 Students will analyze market feasibility for an NHL franchise by evaluating six potential cities, developing revenue projections, and presenting a strategic recommendation that balances financial returns with market development potential. This supports WLO 1.3 (evaluate growth potential) and WLO 1.4 (analyze revenue models) at the Analysis level.
 
 **Scenario Setup:** Consulting Presentation

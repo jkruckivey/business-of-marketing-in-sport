@@ -251,4 +251,4 @@ Betting is transforming fan engagement from passive viewing to active participat
 
 ---
 
-**This redesigned module maintains the same content and learning objectives while dramatically improving student engagement through varied delivery methods.**
+**This redesigned module maintains the same content and learning outcomes while dramatically improving student engagement through varied delivery methods.**

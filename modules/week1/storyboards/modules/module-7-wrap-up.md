@@ -1,5 +1,11 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 1
-**Version:** 2.0.0 | **Last Updated:** 2026-01-13
+**Version:** 2.2.0 | **Last Updated:** 2026-01-14
+
+### Version 2.2.0 Changes
+- **ADDED:** Element 2A - CFL City Selector widget (was built but never embedded)
+
+### Version 2.1.0 Changes
+- **ADDED:** Element 6 - Recommended Readings (PwC Sports Industry Outlook)
 
 ### Version 2.0.0 Changes
 - **STANDARDIZED:** Minimal exit structure (Key Takeaways + Milestone + What's Next)
@@ -14,9 +20,11 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **ⓘ Infobox (Callout)** ⬤ Required | Week 1 key takeaways | Type directly | 5 critical insights |
 | 2 | **▬ Text** ⬤ Required | Anchor Project Milestone 1 Introduction | Type directly | Sets context for milestone |
+| 2A | **⚙ iFrame Widget** ◐ Recommended | CFL City Selector | Embed `cfl-city-selector.html` | Interactive city comparison tool |
 | 3 | **ⓘ Infobox (Assessment)** ⬤ Required | Milestone 1 Brief | Type directly | Purple variant, 15 points |
 | 4 | **📤 File Response** ⬤ Required | Milestone 1 Submission | Configure in Uplimit | File upload |
 | 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Week 2 |
+| 6 | **⊞ Details** ◐ Recommended | Recommended Readings | Type directly | Accordion, external industry sources |
 
 ---
 
@@ -54,6 +62,33 @@ Welcome to your first Anchor Project milestone! Throughout this course, you'll d
 
 **Suggested Cities:** Halifax, Quebec City, Saskatoon, London ON, Moncton—or propose your own with justification!
 ```
+
+---
+
+## Element 2A: CFL City Selector Widget `[v2.2.0]`
+
+**Widget Purpose:** Interactive tool for comparing Canadian expansion city options using market data, demographics, and sports landscape factors.
+
+**Embed Code:**
+```html
+<iframe
+  src="../../widgets/cfl-city-selector.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="CFL City Selector - Compare expansion market options"
+  aria-label="Interactive tool for comparing Canadian cities as CFL expansion candidates based on population, demographics, corporate base, and existing sports landscape"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Compare 5+ Canadian cities on key expansion criteria
+- Population, demographics, corporate base data
+- Existing sports landscape analysis
+- Stadium options and football culture indicators
+- Export comparison data for milestone submission
 
 ---
 
@@ -133,6 +168,25 @@ Next week goes deep on the largest and most dynamic revenue stream: media rights
 **Milestone 2 Preview:** You'll develop your CFL franchise's media strategy—how will your new team maximize media value and build fans before the first game?
 
 See you in Week 2!
+```
+
+---
+
+## Element 6: Details - Recommended Readings
+
+**Uplimit Implementation:**
+1. Select **Details** element
+2. Copy content below:
+
+```
+Title: 📚 Recommended Readings
+
+**PwC Sports Industry Outlook 2025** (pp. 12-18)
+Industry benchmark report covering revenue mix across professional sports: media rights (40-60%), ticketing (20-30%), sponsorship growth forecasts, and betting market projections (2-8%, growing 30-40% annually). Essential context for understanding how the five revenue streams compare across leagues.
+
+*Focus on:* Revenue mix benchmarks by league, sponsorship growth trajectories, emerging revenue categories.
+
+[Link to PwC Sports Outlook Report]
 ```
 
 ---

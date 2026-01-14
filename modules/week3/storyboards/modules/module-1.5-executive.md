@@ -16,7 +16,7 @@
 
 ---
 
-## Element 1: Connecting Introduction Text
+## Element 1: Setting Up Andrew Sneyd's Perspective
 
 **Copy this markdown directly into Uplimit:**
 

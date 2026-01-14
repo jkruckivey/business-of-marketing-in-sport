@@ -162,11 +162,11 @@ Let's find out what you already know... and what you're about to discover."
 
 ### Uplimit AI Roleplay Configuration
 
-**Tab 1: Learning Objective**
+**Tab 1: Learning Outcome**
 
 **Widget Name:** The Brand Value Question
 
-**Learning Objective:**
+**Learning Outcome:**
 ```
 Students will demonstrate their current understanding of athlete brand building by attempting to explain a complex valuation problem (Serena Williams' net worth ~$350-500M) using their pre-existing knowledge. This diagnostic activity will reveal gaps in three key areas:
 

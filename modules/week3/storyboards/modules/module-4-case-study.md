@@ -29,11 +29,13 @@
 
 ---
 
-## Element 1: Connecting Introduction Text
+## Element 1: When ROI Meets Ethics - The LIV Golf Dilemma
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
+# When ROI Meets Ethics: The LIV Golf Dilemma
+
 **From Theory to Ethical Complexity:** In Modules 2 and 3, you built powerful frameworks: CPM calculations, activation budgets, ROI funnels, betting economics, engagement multipliers. These tools answer "HOW do we measure sponsorship value?"
 
 Now comes the harder question: **"SHOULD a brand sponsor a property when ethical concerns exist?"**
@@ -201,7 +203,7 @@ You'll assess a sponsorship opportunity across five stakeholder groups (customer
 4. Widget calculates weighted decision score (-100 to +100)
 5. Widget shows: Stakeholder impact radar chart, weighted score, decision recommendation
 
-**Learning Objective:** WLO 3.5 (Evaluate ethical considerations) - Students practice stakeholder analysis
+**Learning Outcome:** WLO 3.5 (Evaluate ethical considerations) - Students practice stakeholder analysis
 
 **Presets:**
 - **LIV Golf (Conservative Brand):** Heavy customer/employee weighting → Negative score → "Decline"
@@ -364,7 +366,7 @@ You'll input standard sponsorship metrics (rights fee, impressions, engagement) 
    - **Risk-Adjusted ROI:** Raw ROI - Reputation Risk Discount
 4. Widget shows: Side-by-side comparison, breakeven analysis, recommendation
 
-**Learning Objective:** WLO 3.3 (Calculate ROI) - Students add risk adjustment to ROI models
+**Learning Outcome:** WLO 3.3 (Calculate ROI) - Students add risk adjustment to ROI models
 
 **Presets:**
 - **LIV Golf (Premium Brand):** 15% boycott risk, high equity → Negative adjusted ROI
@@ -534,11 +536,11 @@ Before the roleplay exercise, let's check your understanding of the key concepts
 
 ## UPLIMIT CONFIGURATION
 
-### Tab 1: Learning Objective
+### Tab 1: Learning Outcome
 
 **Name:** Phil Mickelson's Decision: LIV Golf Offer
 
-**Learning Objective:**
+**Learning Outcome:**
 Students will demonstrate ethical decision-making skills by roleplaying as Phil Mickelson weighing a $200M LIV Golf offer against ethical concerns. This formative activity develops three key competencies: (1) Stakeholder analysis—identifying who is affected by the decision, (2) Ethical reasoning—articulating concerns about sportswashing, and (3) Decision defense—justifying choices with reasoned arguments. This supports WLO 3.5 (Evaluate ethical considerations in sponsorship decisions) at the Evaluation level.
 
 **Scenario Setup:** Recruitment Meeting

@@ -575,7 +575,7 @@ Based on trend choices, widget plots your organization on 2x2 matrix:
 </iframe>
 ```
 
-**Widget Learning Objectives:**
+**Widget Learning Outcomes:**
 1. **Forecast future trends** using data-driven scenario analysis (WLO 5.3)
 2. **Allocate investments** across competing priorities with limited budget (strategic trade-offs)
 3. **Assess risk-adjusted returns** comparing optimistic vs. pessimistic outcomes

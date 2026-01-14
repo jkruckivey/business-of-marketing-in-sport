@@ -71,7 +71,7 @@
 - Reduces "why am I learning this?" confusion
 - Provides concrete templates for applying frameworks to their chosen property
 - Creates motivation by showing cumulative value of course learning
-- Supports QM Standard 2 (learning objectives clearly aligned with activities and assessments)
+- Supports QM Standard 2 (learning outcomes clearly aligned with activities and assessments)
 
 **Status:** ✅ **COMPLETE** - All weeks (1-5) now have consistent Final Project Connection scaffolding
 
@@ -79,11 +79,11 @@
 
 ## HIGH-PRIORITY CONSISTENCY FIXES (October 31, 2025)
 
-### Issue 1: Inconsistent "Learning Objectives" vs "Learning Outcomes" Terminology
+### Issue 1: Inconsistent "Learning Outcomes" vs "Learning Outcomes" Terminology
 
 **Problem Identified:**
-- Week 1 M1: Used "Learning Objectives" ❌
-- Week 3 M1: Used "Learning Objectives" ❌
+- Week 1 M1: Used "Learning Outcomes" ❌
+- Week 3 M1: Used "Learning Outcomes" ❌
 - Week 4 M1: Used "Learning Outcomes" ✅
 
 **QM Standard**: Quality Matters requires consistent terminology for measurable learning statements. "Learning Outcomes" is preferred as it emphasizes student achievement.
@@ -91,8 +91,8 @@
 **Fixes Applied:**
 
 **Week 1 Module 1** (`modules/week1/storyboards/modules/module-1-welcome.md`)
-- Line 1: Changed title from "Learning Objectives" → "Learning Outcomes"
-- Line 20: Changed Infobox title from "Week 1 Learning Objectives" → "Week 1 Learning Outcomes"
+- Line 1: Changed title from "Learning Outcomes" → "Learning Outcomes"
+- Line 20: Changed Infobox title from "Week 1 Learning Outcomes" → "Week 1 Learning Outcomes"
 
 **Status**: ✅ **FIXED** - All M1 modules now use "Learning Outcomes"
 
@@ -335,7 +335,7 @@ After this exercise, you'll take a pre-assessment quiz...
 ### ✅ COMPLETED IN STORYBOARD FILES:
 
 **Issue 1: Terminology Standardization**
-- Week 1 M1: "Learning Objectives" → "Learning Outcomes" ✅
+- Week 1 M1: "Learning Outcomes" → "Learning Outcomes" ✅
 - Result: All modules use consistent QM-aligned terminology
 
 **Issue 2: M0 Closing Section Headings**
@@ -458,7 +458,7 @@ Compare revenue sharing approaches (NFL vs. NBA vs. European soccer) and determi
 ```markdown
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and executive insights on revenue ecosystems
+**You've completed:** Welcome, learning outcomes, and executive insights on revenue ecosystems
 **Coming next:** Interactive revenue streams exploration (8 hands-on widgets, ~35 minutes)
 
 **Take a moment to:**
@@ -521,7 +521,7 @@ Compare revenue sharing approaches (NFL vs. NBA vs. European soccer) and determi
 
 **Location**: `modules/week2/uplimit-week2-storyboard.md`
 
-### Module 1: Welcome & Learning Objectives
+### Module 1: Welcome & Learning Outcomes
 
 #### Change 1: MLO Formatting with Bloom's Taxonomy (Lines 79-89)
 
@@ -614,7 +614,7 @@ In this interactive activity, you'll calculate the estimated media rights value 
 - **Closing Question**: Added engagement question to "Up Next" section:
   - "Ready to see why sponsorship and betting are transforming the business model of sport?"
 
-### Module 1: Welcome & Learning Objectives
+### Module 1: Welcome & Learning Outcomes
 - **Mental Break**: Added "🌟 MENTAL BREAK #1: Pause & Recharge" after Module 1
 - **Closing Question**: Added to "Up Next" section:
   - "Ready to hear from the executives who've built billion-dollar partnerships?"
@@ -675,7 +675,7 @@ Ready to turn those knowledge gaps into strategic capabilities? Let's define you
 
 ---
 
-### Module 1: Welcome & Learning Objectives
+### Module 1: Welcome & Learning Outcomes
 - **MLO Bloom's Taxonomy**: Already present (no changes needed) ✅
 - **Closing Question**: Added to transition section ✅
 
@@ -689,7 +689,7 @@ Ready to turn those knowledge gaps into strategic capabilities? Let's define you
 ```markdown
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and executive insights on athlete brands, women's sports, and emerging markets (32-38 minutes of video content)
+**You've completed:** Welcome, learning outcomes, and executive insights on athlete brands, women's sports, and emerging markets (32-38 minutes of video content)
 **Coming next:** Interactive athlete brand building with hands-on calculators and investment tools (~35 minutes)
 
 **Take a moment to:**

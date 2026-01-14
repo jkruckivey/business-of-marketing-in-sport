@@ -11,13 +11,13 @@
 Week 5 contains 8 modules organized in this directory:
 
 0. **module-0-bridge-in.md** - Bridge In: Heritage Monetization Dilemma (diagnostic + pre-assessment)
-1. **module-1-welcome.md** - Welcome & Learning Objectives (WLOs 5.1-5.4)
+1. **module-1-welcome.md** - Welcome & Learning Outcomes (WLOs 5.1-5.4)
 2. **module-2-executives.md** - Executive Leader Perspectives (Jamie Dinsmore + Stewart Johnston)
 3. **module-3-core-content.md** - Core Content - Legacy vs Innovation (V3 INTERACTIVE-FIRST)
 4. **module-4-interactive.md** - Interactive Activity - Heritage Transformation Strategist
 5. **module-5-case-study.md** - Hockey Hall of Fame Case Study (Read & Analyze)
-6. **module-6-assessment.md** - CFL Expansion Final Proposal (Milestone 5)
-7. **module-7-wrap-up.md** - Wrap-Up, Reflection & Course Conclusion
+6. **module-6-assessment.md** - Assessment - Heritage Strategy Reflection Memo (40 points)
+7. **module-7-wrap-up.md** - Wrap-Up & Anchor Project Milestone 5 (Final Proposal)
 
 ---
 
@@ -68,7 +68,8 @@ Week 5 contains 8 modules organized in this directory:
 **Assessment Integration:**
 - All modules connect explicitly to Week 5 capstone (CFL Expansion Final Proposal)
 - Module 4 features Strategic Transformation Defense (35 points) as preparation
-- Module 6 is Anchor Project Milestone 5 (40 points)
+- Module 6 is Heritage Strategy Reflection Memo (40 points) - weekly assessment
+- Module 7 is Anchor Project Milestone 5 (40 points) - matches Weeks 1-4 pattern
 
 ---
 
@@ -77,13 +78,13 @@ Week 5 contains 8 modules organized in this directory:
 | File | Size | Module Title | Key Content | Time Estimate |
 |------|------|--------------|-------------|---------------|
 | `module-0-bridge-in.md` | 32 KB | Bridge In: Heritage Monetization Dilemma | Video hook, AI Roleplay diagnostic, Pre-assessment quiz | 20-25 min |
-| `module-1-welcome.md` | 6 KB | Welcome & Learning Objectives | Week overview, WLOs 5.1-5.4, strategic focus areas | 5-7 min |
+| `module-1-welcome.md` | 6 KB | Welcome & Learning Outcomes | Week overview, WLOs 5.1-5.4, strategic focus areas | 5-7 min |
 | `module-2-executives.md` | 50 KB | Executive Leader Perspectives | Jamie Dinsmore (HHOF) + Stewart Johnston (CFL) video sessions | ~53 min |
 | `module-3-core-content.md` | 37 KB | Core Content - Legacy vs Innovation | Legacy vs Innovation Matrix, Future Trends Predictor exercises | 55-67 min |
 | `module-4-interactive.md` | 21 KB | Interactive Activity | Heritage Transformation Strategist simulation + written defense | 95-125 min |
 | `module-5-case-study.md` | 65 KB | HHOF Case Study | Case background, strategic options, analysis, AI Roleplay | 90-110 min |
-| `module-6-assessment.md` | 5 KB | CFL Expansion Final Proposal | Anchor Project Milestone 5 (40 points) | 180-240 min |
-| `module-7-wrap-up.md` | 30 KB | Wrap-Up & Course Conclusion | 5-week synthesis, reflection prompts, course celebration | 30-40 min |
+| `module-6-assessment.md` | 5 KB | Assessment - Heritage Strategy Memo | Weekly assessment (40 points), AI Roleplay practice | 45-60 min |
+| `module-7-wrap-up.md` | 10 KB | Wrap-Up & Milestone 5 | Key takeaways, Milestone 5 submission (40 pts), course completion | 25 min + capstone |
 
 **Total Week 5 Time:** 10-12 hours (capstone week)
 
@@ -123,7 +124,13 @@ Week 5 contains 8 modules organized in this directory:
 
 ## Consistency Updates
 
-**Recent Changes (January 13, 2026):**
+**Recent Changes (January 14, 2026):**
+- **RESTRUCTURED:** Module 6 now contains weekly assessment only (Heritage Strategy Reflection Memo)
+- **RESTRUCTURED:** Module 7 now contains Milestone 5 + Course Completion (matches Weeks 1-4 pattern)
+- **MOVED:** Milestone 5 content from Module 6 to Module 7
+- **ADDED:** New Heritage Strategy Reflection Memo assessment (40 points) in Module 6
+
+**Previous Changes (January 13, 2026):**
 - **MERGED:** Module 5 (Read) and Module 6 (Analyze) into single module-5-case-study.md
 - **RENUMBERED:** Module 7 → Module 6, Module 8 → Module 7
 - **ALIGNED:** Week 5 now follows 8-module structure (0-7) matching Weeks 1-4
@@ -147,8 +154,8 @@ Week 5 contains 8 modules organized in this directory:
 
 ---
 
-**Last Updated:** January 13, 2026
-**Structure Status:** Complete and consistent with Weeks 1-4
+**Last Updated:** January 14, 2026
+**Structure Status:** Complete and consistent with Weeks 1-4 (milestones in Module 7)
 **Ready for:** Uplimit platform implementation
 
 ---

@@ -1,5 +1,8 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 2
-**Version:** 2.0.0 | **Last Updated:** 2026-01-13
+**Version:** 2.1.0 | **Last Updated:** 2026-01-14
+
+### Version 2.1.0 Changes
+- **ADDED:** Element 6 - Recommended Readings (FairPlay "Building Value for Betting Partners")
 
 ### Version 2.0.0 Changes
 - **STANDARDIZED:** Minimal exit structure (Key Takeaways + Milestone + What's Next)
@@ -17,6 +20,7 @@
 | 3 | **ⓘ Infobox (Assessment)** ⬤ Required | Milestone 2 Brief | Type directly | Purple variant, 20 points |
 | 4 | **📤 File Response** ⬤ Required | Milestone 2 Submission | Configure in Uplimit | File upload |
 | 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Week 3 |
+| 6 | **⊞ Details** ◐ Recommended | Recommended Readings | Type directly | Accordion, external industry sources |
 
 ---
 
@@ -134,6 +138,25 @@ Next week shifts to the fastest-growing revenue streams: corporate sponsorship a
 **Milestone 3 Preview:** You'll develop your CFL franchise's sponsorship inventory and betting partnership strategy—revenue streams that amplify your media value from this week.
 
 See you in Week 3!
+```
+
+---
+
+## Element 6: Details - Recommended Readings
+
+**Uplimit Implementation:**
+1. Select **Details** element
+2. Copy content below:
+
+```
+Title: 📚 Recommended Readings
+
+**FairPlay "Building Value for Betting Partners"**
+Industry analysis of media rights monetization in the betting era. Covers CPM/CPA hybrid models, the Rogers $5.2B NHL deal case study, and linear vs. streaming ROI comparisons. Essential reading for understanding how sports betting partnerships are reshaping media rights valuations.
+
+*Focus on:* Media rights valuation frameworks, betting partner integration models, case analysis of long-term rights deal risks.
+
+[Link to FairPlay Report]
 ```
 
 ---

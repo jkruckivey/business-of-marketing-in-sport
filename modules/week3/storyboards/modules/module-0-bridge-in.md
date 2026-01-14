@@ -155,11 +155,11 @@ You are a **sponsorship consultant** hired by a major consumer brand. The CMO (A
 
 ### UPLIFT CONFIGURATION
 
-**Tab 1: Learning Objective**
+**Tab 1: Learning Outcome**
 
 **Widget Name:** Sponsorship ROI Diagnostic
 
-**Learning Objective:**
+**Learning Outcome:**
 ```
 Students will articulate their current understanding of how brands calculate sponsorship ROI with imperfect attribution data, revealing knowledge gaps before learning Week 3 frameworks. This diagnostic conversation helps students identify three key areas:
 

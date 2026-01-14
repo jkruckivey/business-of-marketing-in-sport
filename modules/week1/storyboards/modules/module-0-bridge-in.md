@@ -15,7 +15,7 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload `week1-bridge-scenario.mp4` + VTT | Connor McDavid revenue paradox |
+| 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload MP4 + SRT ⚠️ PENDING | Connor McDavid revenue paradox |
 | 2 | **◈ AI Roleplay** ◐ Recommended | The $100M Question diagnostic | Configure in Uplimit | Reveal knowledge gaps |
 | 3 | **ⓘ Infobox (Callout)** ⬤ Required | The revenue problem statement | Type directly | Blue variant |
 | 4 | **⚙ iFrame Widget** ⬤ Required | Pre-Assessment Quiz | Embed `revenue-strategy-pre-assessment.html` | 10-question diagnostic |
@@ -29,7 +29,7 @@
 
 **File:** `week1-bridge-scenario.mp4`
 **Duration:** 2-3 minutes
-**VTT File:** `week1-bridge-scenario.vtt` (required for accessibility)
+**Caption File:** ⚠️ **PENDING PRODUCTION** - Needs HeyGen video + SRT caption file
 **Format:** Direct-to-camera SME presentation
 
 ### Video Script: "The $100 Million Question"
@@ -107,11 +107,11 @@ Let's find out what you already know... and what you're about to discover."
 
 ### Uplimit AI Roleplay Configuration
 
-**Tab 1: Learning Objective**
+**Tab 1: Learning Outcome**
 
 **Widget Name:** The $100 Million Question
 
-**Learning Objective:**
+**Learning Outcome:**
 ```
 Students will demonstrate their current understanding of sports revenue ecosystems by attempting to explain the Connor McDavid contract paradox ($12.5M cost vs. $8M direct revenue). This diagnostic activity will reveal gaps in three key areas:
 

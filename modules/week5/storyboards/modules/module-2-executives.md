@@ -650,7 +650,7 @@ Ready to build your heritage strategy toolkit? Let's go!
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning objectives, and two executive perspectives on heritage strategy and league leadership (Jamie Dinsmore from HHOF and Stewart Johnston from CFL - ~53 minutes of video)
+**You've completed:** Welcome, learning outcomes, and two executive perspectives on heritage strategy and league leadership (Jamie Dinsmore from HHOF and Stewart Johnston from CFL - ~53 minutes of video)
 **Coming next:** Heritage monetization frameworks and interactive future trends analysis (~42 minutes)
 
 **Take a moment to:**

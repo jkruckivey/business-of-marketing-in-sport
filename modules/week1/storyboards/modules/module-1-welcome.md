@@ -21,6 +21,7 @@
 | 2 | **▬ Text** ⬤ Required | Week 1 introduction (3 paragraphs) | Embedded below | Sets context for revenue ecosystem topic |
 | 3 | **◫ Tiles** ◐ Recommended | 4 revenue stream categories (preview) | Type directly in Uplimit | Blue variant, one tile per stream |
 | 4 | **⚙ iFrame Widget** ◐ Recommended | **Learning Outcomes Widget** - Interactive WLO-CLO mapping | Embed `learning-outcomes-week.html` | Shows how week outcomes connect to course goals |
+| 5 | **⚙ iFrame Widget** ◐ Recommended | **CFL Project Tie-In** - Your milestone this week | Embed `cfl-project-tie-in.html` | Shows project progression, current week highlighted |
 
 ---
 
@@ -122,9 +123,38 @@ Create 5 tiles:
 - WCAG 2.2 AA compliant with keyboard navigation and screen reader support
 
 **Design Rationale:**
-- **ⓘ Infobox (Callout)** makes learning objectives visible (QM Standard 2, UDL engagement)
+- **ⓘ Infobox (Callout)** makes learning outcomes visible (QM Standard 2, UDL engagement)
 - **Text** provides narrative context (UDL representation)
 - **◫ Tiles** create visual preview and chunking (UDL engagement, scannable overview)
 - Students immediately understand week's scope and expectations
+
+---
+
+### Element 5: CFL Project Tie-In Widget
+
+**Widget Purpose:** Orient students to this week's milestone in the course-long CFL Expansion Project
+
+**Uplimit Implementation:**
+
+**Widget File:** `cfl-project-tie-in.html`
+
+**Embed Code:**
+```html
+<iframe
+  src="../../widgets/cfl-project-tie-in.html"
+  width="100%"
+  height="500"
+  style="border: none; border-radius: 8px;"
+  title="CFL Expansion Project - Week 1 Milestone"
+  aria-label="Interactive project tracker showing Week 1 milestone in the CFL Expansion Project"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows 5-week milestone progression with Week 1 highlighted
+- "This Week" section explains what students will build toward their project
+- Links milestone to week's learning content
 
 

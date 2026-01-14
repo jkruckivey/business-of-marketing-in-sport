@@ -1,7 +1,11 @@
 ## MODULE 3: Media Rights Framework (V3 INTERACTIVE-FIRST REDESIGN)
-**Version:** 1.4.0 | **Last Updated:** 2025-12-01
+**Version:** 1.5.0 | **Last Updated:** 2026-01-14
 
 **Purpose:** Provide foundational knowledge about media economics and rights valuation through interactive exploration (supports WLO 2.1, 2.2, 2.3)
+
+### Version 1.5.0 Changes
+- **ADDED:** Deep-dive readings as Details accordions throughout module (Element 1B, 6B, 9B, 11B)
+- **RESTORED:** ~2,000 words of reading content from archived text-content files, now sprinkled as optional expandable sections
 
 ### Version 1.4.0 Changes
 - **NEW:** Added stock photo suggestions after Element 1 (media rights intro), Element 6 (exclusivity text), Element 9 (linear vs streaming), and Element 11 (fan engagement)
@@ -65,6 +69,45 @@ This module explores HOW broadcasters value these rights deals.
 - **Search Terms:** `sports broadcast camera crew sideline`, `professional sports media production`, `live sports broadcast equipment`
 - **Purpose:** Visualizes the massive media infrastructure that supports the $110B+ sports broadcasting industry
 - **Size:** Full width, max 800px
+
+---
+
+### Element 1B: Details - Five Drivers of Rights Valuation Deep Dive (NEW v1.5.0)
+```
+Title: Go Deeper: Why Sports Content Costs Billions
+
+[Expand for detailed reading on media rights valuation]
+
+**Introduction: The Unique Value of Sports**
+
+Professional sports content commands premium valuations that often seem economically irrational—until you understand the unique characteristics that make live sports indispensable to media companies. In 2013, Rogers Communications paid $5.2 billion for 12 years of NHL Canadian broadcast rights, effectively betting the company's future on hockey's enduring value.
+
+Unlike movies, scripted television, or documentary content, sports programming cannot be time-shifted without losing value. Viewers must watch games live or risk spoilers from social media, news alerts, or workplace conversations. This creates simultaneous, predictable audiences—a rarity in today's fragmented media landscape.
+
+**The Five Drivers Explained**
+
+Media companies evaluate sports properties using five interconnected factors:
+
+**1. Audience Size and Demographics**
+The foundation of any valuation is reach: how many people will watch? But not all audiences are equal. Advertisers pay premium rates for coveted demographics—typically adults 18-49 with above-average household income. The NFL exemplifies this: with 17+ million average viewers, advertisers pay $6-7 million for a 30-second Super Bowl commercial because they cannot reach 100+ million simultaneous viewers through any other medium.
+
+**2. Exclusivity and Competition**
+Exclusive rights create bidding wars. When multiple media companies compete for limited inventory, prices escalate. Amazon paid $1 billion annually for exclusive Thursday Night Football—not because the games generate immediate ROI, but because exclusive NFL content differentiates Prime Video from Netflix, Disney+, and other streamers.
+
+**3. Content Volume and Scheduling Flexibility**
+Media companies value inventory: how many hours of programming does the property provide? The NHL's 82-game regular season offers vastly more content than the NFL's 17-game schedule, but each NFL game commands higher per-game value due to scarcity and cultural importance.
+
+**4. Brand Alignment and Sponsorship Activation**
+Sports properties that align with broadcaster brand identity attract corporate sponsors, helping offset rights costs. TSN's positioning as "Canada's Sports Leader" is reinforced by Canadian-centric properties (CFL, curling, FIFA World Cup), allowing premium advertising rates.
+
+**5. Platform Strategy Fit**
+Perhaps most important: Does acquiring this property advance long-term goals, even if short-term ROI is negative? Traditional broadcasters view sports as defensive (retaining subscribers); streaming platforms view sports as offensive (acquiring new subscribers).
+
+**The Rogers Example**
+Rogers' $5.2B NHL bet wasn't purely financial—it was strategic. Owning exclusive Canadian hockey rights positioned Rogers/Sportsnet as essential for Canadian cable subscribers, making it harder to cancel service.
+
+**Reading Time:** 4-5 minutes
+```
 
 ---
 
@@ -159,7 +202,7 @@ In this interactive activity, you'll calculate the estimated media rights value 
 - **NHL:** 1.5M avg viewers, 1,271 games → **$2B/year**
 - **MLS:** 300K avg viewers, 408 games → **$250M/year**
 
-**Learning Objectives:**
+**Learning Outcomes:**
 - WLO 2.1: Understand audience size as primary valuation driver
 - Recognize "total eyeballs" matters more than per-game ratings
 - Calculate simple rights valuations using audience metrics
@@ -254,6 +297,51 @@ When Amazon entered NFL rights bidding (2021), traditional networks had to raise
 
 ---
 
+### Element 6B: Details - Exclusivity Economics Deep Dive (NEW v1.5.0)
+```
+Title: Go Deeper: The Economics of Exclusive Rights
+
+[Expand for detailed reading on exclusivity and competition dynamics]
+
+**Why Exclusivity Commands 2-3x Premium**
+
+Non-exclusive rights command a fraction of exclusive prices. A league that allows multiple broadcasters to air the same games dilutes scarcity value and reduces each broadcaster's incentive to invest in promotion and production quality.
+
+The 2021 NFL media rights renewal exemplifies competitive dynamics. Amazon, Apple, traditional networks (NBC, CBS, Fox), and streaming platforms all bid aggressively. The result? Rights increased 75% from the previous deal despite stable viewership—simply because new bidders entered the auction.
+
+**The Strategic Logic for Each Bidder Type**
+
+**Traditional Broadcasters (ESPN, FOX, CBS, NBC):**
+- View sports rights as defensive—protecting cable bundle relevance
+- Must bid to prevent cord-cutting acceleration
+- Face declining subscriber bases but still have scale advantages
+- Risk: Overpaying for declining linear audiences
+
+**Streaming Platforms (Amazon, Apple, Netflix):**
+- View sports rights as offensive—acquiring subscribers and differentiating
+- Willing to "overpay" by traditional ROI metrics because sports reduce churn
+- Have deep pockets from other business lines (e-commerce, devices, subscriptions)
+- Risk: Sports-specific economics may never work at scale
+
+**Tech Giants (Google, Meta):**
+- Primarily interested in data and engagement, not content monetization
+- Could enter any auction and disrupt pricing with "irrational" bids
+- YouTube's NFL Sunday Ticket deal ($2B/year) changed the landscape
+
+**Case Study: Amazon's Thursday Night Football**
+
+Amazon's $1B/year exclusive Thursday Night Football deal illustrates strategic bidding. Traditional ROI analysis would reject the deal—advertising revenue alone doesn't justify the cost. But Amazon's calculus is different:
+
+- **Subscriber acquisition:** TNF promotes Prime membership ($139/year)
+- **Reduced churn:** Sports fans cancel Prime less frequently
+- **Shopping integration:** Viewers browse Amazon during commercials
+- **Brand halo:** Association with NFL elevates Amazon's brand
+
+When bidding, Amazon isn't competing with ESPN's financial model—they're competing with their own customer acquisition costs. If TNF prevents 500,000 Prime cancellations worth $69.5M and acquires 200,000 new subscribers worth $27.8M, the $1B investment looks more reasonable.
+
+**Reading Time:** 3-4 minutes
+```
+
 ---
 
 ### Element 7: Tool 2 - Exclusivity Bidding Simulator
@@ -295,7 +383,7 @@ In this simulation, you're the NHL commissioner in 2025 facing three bidders for
    - **Exclusive Apple ($700M/year):** Pros: Predictable revenue, single partner. Cons: Canadian fans need subscription, lower total revenue
    - **Split Package ($1.15B/year):** Pros: 64% higher revenue, better accessibility. Cons: Complex coordination, potential conflicts
 
-**Learning Objectives:**
+**Learning Outcomes:**
 - WLO 2.1: Understand exclusivity premium
 - Experience competitive bidding dynamics
 - Recognize trade-offs: Highest bidder vs. accessibility vs. total revenue
@@ -483,6 +571,57 @@ Traditional linear broadcasting and direct-to-consumer streaming have **fundamen
 
 ---
 
+### Element 9B: Details - Platform Economics Deep Dive (NEW v1.5.0)
+```
+Title: Go Deeper: Linear vs. Streaming Business Models
+
+[Expand for detailed reading on platform economics]
+
+**Linear Broadcasting Economics**
+
+Traditional television broadcasting operates on a mature, well-understood economic model refined over decades.
+
+**Revenue Model: Advertising + Carriage Fees**
+Linear broadcasters generate revenue from two primary sources:
+
+**Advertising Revenue:** Networks sell commercial airtime based on audience size and demographics. Sports command premium advertising rates (CPM: cost per thousand viewers) due to live viewing—viewers can't skip commercials when watching in real-time. A 30-second NHL playoff commercial might cost $50,000-$150,000 depending on market and game importance.
+
+**Carriage Fees:** Cable and satellite providers pay networks per-subscriber fees. Sports networks command higher carriage fees due to "must-have" status. Sportsnet receives approximately $0.75-$1.25 per subscriber per month from operators—generating $100M+ annually.
+
+**The Profitability Equation:**
+Linear broadcasting profits when: (Advertising + Carriage Fees) > (Rights Fees + Production Costs)
+
+The challenge? Cord-cutting erodes BOTH revenue streams simultaneously. Fewer cable subscribers = lower carriage fees + smaller audiences = reduced advertising revenue.
+
+---
+
+**Streaming/Direct-to-Consumer Economics**
+
+Streaming platforms operate under fundamentally different economics.
+
+**Revenue Model: Subscriptions (Primarily)**
+Streaming services generate revenue primarily through monthly subscription fees. Unlike linear broadcasting's dual revenue streams, streaming relies almost entirely on subscription growth and retention.
+
+Ad revenue per viewer is significantly lower than linear TV due to:
+- Smaller simultaneous audiences (viewers watch on-demand)
+- Less viewer tolerance for ads when paying subscription fees
+- Technical challenges inserting ads into streaming content
+
+**Cost Structure: Rights + Technology + Customer Acquisition**
+Streaming platforms face the same rights fees as linear broadcasters plus significant additional costs:
+
+- **Technology Infrastructure:** Content delivery networks, encoding, storage, streaming quality optimization, app development. These can exceed $50M annually.
+- **Customer Acquisition Cost (CAC):** Marketing, promotions, free trials. Industry benchmarks: $50-$200 per subscriber.
+- **Churn Management:** Retaining subscribers requires continuous investment.
+
+**The Profitability Challenge:**
+Streaming profitability requires: (Subscriber LTV) > (CAC + Rights Fees + Technology)
+
+Most sports streaming services experience 25-40% annual churn. Subscribers join for a specific season and cancel in off-season. Industry consensus: most sports streaming services lose money for 3-5 years while building scale.
+
+**Reading Time:** 4-5 minutes
+```
+
 ---
 
 ### Element 10: Table - Platform Economics Comparison
@@ -540,7 +679,7 @@ In this interactive activity, you'll toggle between Linear TV and Streaming/DTC 
 - **DAZN Canada (Streaming):** $50M rights, 50K → 500K subs, profitable Year 4 (+$200M by Year 10)
 - **Apple TV+ MLS (Streaming):** $250M rights, 0 → 2M subs, profitable Year 5 IF targets met
 
-**Learning Objectives:**
+**Learning Outcomes:**
 - WLO 2.2: Compare linear vs. streaming profitability through manipulation
 - Understand why streaming "loses money for years"
 - Recognize cord-cutting impact on linear TV
@@ -737,6 +876,60 @@ Platforms that drive engagement (interactive features, fantasy integration, bett
 
 ---
 
+### Element 11B: Details - Fan Engagement Monetization Deep Dive (NEW v1.5.0)
+```
+Title: Go Deeper: From Eyeballs to Engagement
+
+[Expand for detailed reading on fan engagement monetization]
+
+**The Shift from Passive to Active**
+
+Modern sports media has evolved beyond passive viewership. "Engagement" has become a critical revenue driver, extending monetization through data, personalization, and interactive experiences.
+
+Traditional broadcasting measured success by eyeballs: how many people watched? Streaming platforms measure engagement: how actively did viewers participate?
+
+Engaged fans:
+- Watch longer (higher ad exposure or subscription retention)
+- Interact more (second-screen apps, social media, fantasy sports)
+- Generate data (preferences, behaviors, viewing patterns)
+- Tolerate sponsorship integration (branded content, product placement)
+
+This shift from passive to active consumption creates new monetization opportunities that traditional broadcasting couldn't access.
+
+**Data Value and Personalization**
+
+Streaming platforms collect granular data: what viewers watch, when they pause, which highlights they replay, which stats they check. This data has dual value:
+
+**Direct Value:** Personalization improves user experience, reducing churn. Recommending similar games, curating highlights, sending game-day notifications—all increase engagement and retention.
+
+**Indirect Value:** Anonymized, aggregated data can be monetized. Understanding that 60% of viewers check player stats during commercial breaks informs sponsorship integration opportunities. Demographic insights enable targeted advertising.
+
+Privacy regulations (GDPR, CCPA) constrain explicit data sales, but first-party data remains incredibly valuable for platforms' own advertising optimization and sponsorship activation.
+
+**Sponsorship Activation Opportunities**
+
+Engaged viewers create richer sponsorship inventory beyond traditional 30-second commercials:
+
+- **In-app branded experiences:** FanDuel betting odds integrated into game interface
+- **Gamification:** Prediction games, trivia, fantasy leagues sponsored by brands
+- **Shoppable content:** "Buy this jersey" overlays during gameplay
+- **Social integration:** "Share this highlight" sponsored by brand
+
+These activations command premium pricing because they're interactive, measurable, and less intrusive than commercial interruptions. A beer brand might pay $2M for in-stream integration that feels native to viewing experience vs. $500K for commercial spots viewers ignore.
+
+**The Strategic Calculus**
+
+Media rights valuation is both art and science. Financial models provide foundation—projected audiences, advertising rates, subscription forecasts, cost structures. But strategic considerations often trump pure ROI:
+
+- **Competitive Defense:** What happens if our competitor owns exclusive rights?
+- **Platform Positioning:** Does this property define our brand identity?
+- **Future Optionality:** Will owning these rights position us for emerging opportunities (betting, international expansion)?
+
+**Reading Time:** 4-5 minutes
+```
+
+---
+
 ### Element 12: Tool 4 - Engagement Value Chain Builder
 
 ### ⚙ Interactive Activity: Engagement Value Chain Builder
@@ -761,7 +954,7 @@ In this interactive activity, you'll construct an engagement strategy by selecti
 
 **🎮 Tool Purpose:** Let students construct an engagement strategy and see how different tactics increase fan value and justify higher rights costs.
 
-**Status:** ⭕ Phase 3 tool - NEEDS TO BE BUILT (5-6 hours estimated)
+**Status:** ✅ Built - `engagement-value-chain-builder.html`
 
 **How It Works:**
 1. Choose sport type (NHL, NBA, MLS, NFL, EPL)
@@ -783,7 +976,7 @@ In this interactive activity, you'll construct an engagement strategy by selecti
 - **NBA + DraftKings:** Fan value $12 → $45/year (fantasy + betting)
 - **Premier League + Social:** International fan value $5 → $18/year
 
-**Learning Objectives:**
+**Learning Outcomes:**
 - WLO 2.3: Understand how engagement extends monetization beyond passive viewing
 - Evaluate trade-offs: High-cost/high-value vs. low-cost/broad-reach
 - Understand why platforms with engagement capabilities pay more for rights

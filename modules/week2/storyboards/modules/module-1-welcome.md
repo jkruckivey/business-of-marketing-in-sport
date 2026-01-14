@@ -17,6 +17,7 @@
 | 2 | **▬ Text** ⬤ Required | Week 2 introduction | Type directly | Connects to Week 1 revenue foundations |
 | 3 | **◫ Tiles** ◐ Recommended | 3 media strategy topics | Type directly | Blue variant |
 | 4 | **⚙ iFrame Widget** ◐ Recommended | Learning Outcomes Widget | Embed `learning-outcomes-week.html` | WLO-CLO mapping |
+| 5 | **⚙ iFrame Widget** ◐ Recommended | CFL Project Tie-In | Embed `cfl-project-tie-in.html` | Shows project progression, Week 2 highlighted |
 
 ---
 
@@ -90,3 +91,28 @@ Create 3 tiles:
   loading="lazy">
 </iframe>
 ```
+
+---
+
+## Element 5: CFL Project Tie-In Widget
+
+**Widget Purpose:** Orient students to this week's milestone in the course-long CFL Expansion Project
+
+**Embed Code:**
+```html
+<iframe
+  src="../../widgets/cfl-project-tie-in.html"
+  width="100%"
+  height="500"
+  style="border: none; border-radius: 8px;"
+  title="CFL Expansion Project - Week 2 Milestone"
+  aria-label="Interactive project tracker showing Week 2 milestone in the CFL Expansion Project"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+**Widget Features:**
+- Shows 5-week milestone progression with Week 2 highlighted (Week 1 marked complete)
+- "This Week" section explains the media strategy milestone
+- Links milestone to week's learning content

@@ -13,39 +13,41 @@ Visual Description: Painted illustration of a Black woman in her 40s (DENISE CAR
 
 [PAGE 1]
 Layout Note: Full page cinematic splash.
-Style Note: Dark, underground atmosphere - the old world of betting.
+Style Note: Warm stadium atmosphere - the magic of live sports.
 
 [PANEL 1]
-Shot Type & Angle: Wide shot of a dingy backroom.
-Visual Description: A smoky backroom in 1990s New Jersey. Men huddle around a table covered in cash and betting slips. A small TV shows a football game. The atmosphere is tense, illegal, hidden. A young girl, DENISE (age 10), peeks through a doorway, watching her uncle count money.
-Caption: Newark, New Jersey. 1995. Before it was legal. Before it was an industry.
-Caption: Denise Carter's first lesson in sports betting came from watching her uncle run numbers.
-Dialogue (UNCLE - distant): "Giants by three. Lock of the week."
+Shot Type & Angle: Wide shot of a vibrant stadium interior.
+Visual Description: Giants Stadium, 1995. A packed house on game day. DENISE (age 10) sits in the stands with her FATHER, MARCUS SR. (40s, wearing a Giants Stadium staff polo), who works in stadium operations. The crowd roars around them. Denise watches not just the game, but the fans—their reactions, their phones, their attention drifting during timeouts.
+Caption: East Rutherford, New Jersey. 1995. Game day magic.
+Caption: Denise Carter's first lesson in sports business came from her father, who ran stadium operations at Giants Stadium.
+Dialogue (MARCUS SR.): "Watch the crowd, Denise. Not the game. The game is just the start."
 
 ---
 
 [PAGE 2]
 Layout Note: 3 horizontal panels showing time progression.
-Style Note: Transitioning from dark past to bright corporate present.
+Style Note: Transitioning from childhood wonder to professional insight.
 
 [PANEL 1]
-Shot Type & Angle: Medium shot of young adult Denise.
-Visual Description: Denise in her 20s, now in a corporate suit, sits in a marketing meeting at a beverage company. A presentation shows "SPORTS SPONSORSHIP ROI" with disappointing numbers. She looks bored and frustrated.
-Caption: 2008. Denise had escaped Newark, earned an MBA, climbed the corporate ladder.
-Caption: But traditional sponsorship felt broken. Logos on jerseys. Banners in stadiums. No way to measure if it worked.
-Dialogue (EXECUTIVE): "Brand awareness is up 2%. We call that a win."
-Dialogue (DENISE - thought): "Two percent? We spent $20 million for two percent?"
+Shot Type & Angle: Medium shot of teenage Denise working at the stadium.
+Visual Description: Denise at 16, working a summer job at Giants Stadium alongside her father. She hands programs to fans, but her eyes are on a sponsor activation booth that's empty while the game plays. Her father notices her watching.
+Caption: 2001. Denise spent every summer at the stadium. Her father taught her the business behind the spectacle.
+Caption: She noticed something: fans loved the game, but sponsors struggled to reach them.
+Dialogue (MARCUS SR.): "See that booth? Company paid $500,000 and nobody's stopping by."
+Dialogue (DENISE): "Because they're watching the game. You'd need to make them care about both at the same time."
 
 [PANEL 2]
-Shot Type & Angle: Close-up on newspaper headline.
-Visual Description: A newspaper front page: "SUPREME COURT TO HEAR NEW JERSEY SPORTS BETTING CASE." Denise's hand holds the paper. Coffee cup visible.
-Caption: Then everything changed.
-Dialogue (DENISE - thought): "What if fans didn't just watch the game... what if they had something at stake?"
+Shot Type & Angle: Medium shot of young adult Denise in corporate setting.
+Visual Description: Denise in her 20s, now in a corporate suit, sits in a marketing meeting at a beverage company. A presentation shows "SPORTS SPONSORSHIP ROI" with disappointing numbers. She leans forward, engaged but frustrated.
+Caption: 2008. After earning her MBA, Denise worked in sports marketing. But traditional sponsorship felt broken.
+Dialogue (EXECUTIVE): "Brand awareness is up 2%. We call that a win."
+Dialogue (DENISE - thought): "Two percent? My dad could have told you that 20 years ago. There has to be a better way."
 
 [PANEL 3]
 Shot Type & Angle: Wide shot of FanDuel office lobby.
-Visual Description: Modern, sleek FanDuel headquarters lobby. Digital screens show fantasy sports and betting interfaces. Denise, now in her late 30s, walks through the door for an interview, looking determined.
-Caption: 2016. Fantasy sports was booming. FanDuel was hiring. Denise saw her moment.
+Visual Description: Modern, sleek FanDuel headquarters lobby. Digital screens show fantasy sports and betting interfaces. Denise, now in her late 30s, walks through the door for an interview, looking determined. A newspaper headline visible on her phone: "SUPREME COURT TO HEAR SPORTS BETTING CASE."
+Caption: 2016. Fantasy sports was booming. And Denise finally saw the answer to what she'd wondered about since childhood.
+Caption: What if fans didn't just watch the game... what if they had something at stake?
 Dialogue (DENISE): "I'm here about the partnerships role. I have some ideas about what comes next."
 
 ---
@@ -207,7 +209,7 @@ Style Note: Warm, forward-looking.
 Shot Type & Angle: Medium shot of Denise mentoring young employee.
 Visual Description: Denise walks through FanDuel headquarters with a young Latina woman, SOFIA, who holds a tablet with partnership proposals. Through windows, you can see a bustling open office with diverse employees.
 Dialogue (SOFIA): "How did you know betting would transform sponsorship? Everyone thought you were crazy."
-Dialogue (DENISE): "I grew up watching the underground version. I knew what fans really wanted. They wanted to matter. To have skin in the game."
+Dialogue (DENISE): "I grew up in stadiums, watching fans. My father taught me to see what sponsors missed. Fans wanted to matter. To have skin in the game."
 
 [PANEL 2]
 Shot Type & Angle: Wide shot of Denise looking at wall of partnership logos.

@@ -19,16 +19,20 @@
 | 1 | **Text** ⬤ Required | Why media rights matter (120 words) | 1 min | Embedded markdown below |
 | 2 | **Video** ◐ Recommended | Media rights valuation overview | 2 min | week2-video1-valuation-framework.mp4 |
 | 3 | **Vertical List** ⬤ Required | 5 valuation factors at a glance | 1 min | Type directly |
+| 3A | **Text** ⬤ Required | Widget Introduction - Audience Size Calculator | 2 min | Structured intro |
 | 4 | **🎮 iFrame** ◐ Recommended | Tool 1: Audience Size Calculator | 4 min | Phase 3 tool (NEEDS TO BE BUILT) |
 | 5 | **Text** ⬤ Required | Exclusivity & competition dynamics (150 words) | 1 min | Embedded markdown below |
+| 5A | **Text** ⬤ Required | Widget Introduction - Exclusivity Bidding Simulator | 2 min | Structured intro |
 | 6 | **🎮 iFrame** ◐ Recommended | Tool 2: Exclusivity Bidding Simulator | 3 min | Phase 2 tool (NEEDS TO BE BUILT) |
 | 7 | **Infobox (Note)** ⬤ Required | Key insight: Appointment viewing | 1 min | Yellow variant |
 | 7A | **📝 Practice Quiz** ⬤ Required | Media Valuation Check (4 questions) | 3 min | Configure in Uplift |
 | 8 | **Text** ⬤ Required | Linear TV vs. Streaming intro (120 words) | 1 min | Embedded markdown below |
 | 9 | **Table** ⬤ Required | Platform economics comparison | 1 min | Type directly |
+| 9A | **Text** ⬤ Required | Widget Introduction - Platform Economics Visualizer | 2 min | Structured intro |
 | 10 | **🎮 iFrame** ◐ Recommended | Tool 3: Platform Economics Visualizer | 4 min | Phase 2 tool (NEEDS TO BE BUILT) |
 | 10A | **📝 Practice Quiz** ⬤ Required | Platform Economics Check (4 questions) | 3 min | Configure in Uplift |
 | 11 | **Text** ⬤ Required | Fan engagement monetization (150 words) | 1 min | Embedded markdown below |
+| 11A | **Text** ⬤ Required | Widget Introduction - Engagement Value Chain Builder | 2 min | Structured intro |
 | 12 | **🎮 iFrame** ◐ Recommended | Tool 4: Engagement Value Chain Builder | 3 min | Phase 3 tool (NEEDS TO BE BUILT) |
 | 12A | **📝 Practice Quiz** ⬤ Required | Fan Engagement Check (3 questions) | 2 min | Configure in Uplift |
 
@@ -156,7 +160,49 @@ Create 5 numbered items:
 
 ---
 
-### Element 5: Tool 1 - Audience Size Calculator
+### Element 3A: Widget Introduction - Audience Size Calculator
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Calculate Media Rights Value
+
+You've learned that media rights often represent 40-60% of league revenue. But what actually determines how much a league can charge for those rights? The answer starts with audience size and demographics—and you can calculate it yourself.
+
+## Your Challenge
+
+You're a media rights consultant advising a sports league entering negotiations with broadcasters. The league asks: "What's our content worth?" You'll use the **Audience Size Calculator** to build a data-driven valuation from audience metrics.
+
+## What You'll Practice
+
+- Calculating total audience reach (viewers × games per season)
+- Understanding how demographic premiums affect rights value
+- Comparing rights valuations across NFL, NHL, NBA, MLS, and Premier League
+- Recognizing why "total eyeballs" matters more than per-game ratings
+
+## How the Calculator Works
+
+1. **Select a League:** Choose NFL, NHL, NBA, MLS, Premier League, or create a custom league
+2. **Input Audience Data:** Average viewers per game (millions), number of games per season
+3. **Set Demographics:** Percentage of viewers in "coveted demo" (18-49, $75K+ income)
+4. **Choose CPM:** Advertising cost per thousand viewers (varies by sport: $30-$80)
+5. **See Results:** Total reach, premium multiplier, advertising revenue potential, estimated rights value
+
+## Strategic Considerations
+
+- **NFL dominates because of total reach:** 17M avg viewers × 272 games = 4.6 billion total impressions annually. That's why they command $10B/year.
+- **NHL's game count advantage:** Only 1.5M average viewers, but 1,271 games creates massive total reach. Different strategy, comparable results.
+- **Demographics create premiums:** The "coveted demo" (18-49, high income) can multiply rights value by 1.3-1.5×. Golf and tennis punch above their weight because of affluent viewers.
+- **CPM varies dramatically:** Super Bowl ads cost $7M for 30 seconds ($233 CPM). Regular season MLS might be $15 CPM. Same audience size, wildly different value.
+
+## After the Calculator
+
+Export your valuation results. Compare your league's estimated value to actual deals—how close did the formula get? Use these insights when analyzing the Rogers NHL deal in Module 5.
+```
+
+---
+
+### Element 4: Tool 1 - Audience Size Calculator
 
 ### ⚙ Interactive Activity: Audience Size Calculator
 
@@ -344,7 +390,48 @@ When bidding, Amazon isn't competing with ESPN's financial model—they're compe
 
 ---
 
-### Element 7: Tool 2 - Exclusivity Bidding Simulator
+### Element 5A: Widget Introduction - Exclusivity Bidding Simulator
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Navigate the Bidding War
+
+You've calculated what drives rights value. But leagues don't just accept the highest bid—they make strategic decisions about exclusivity, partnership mix, and long-term positioning. Now you'll experience that decision.
+
+## Your Challenge
+
+You're the NHL commissioner in 2025. Canadian national rights are up for renewal. Three bidders are competing: Rogers (cautious after losing money), DAZN (aggressive growth strategy), and Apple TV+ (strategic platform play). Do you take Apple's massive exclusive offer? Or split rights across all three for more total revenue but less exclusivity? The board wants your recommendation.
+
+## What You'll Practice
+
+- Evaluating single-bidder exclusivity vs. multi-bidder packages
+- Understanding why "highest bid" doesn't always win
+- Calculating the premium bidders pay for exclusive rights
+- Weighing strategic factors beyond pure revenue (accessibility, partner reliability, market reach)
+
+## How the Simulator Works
+
+1. **Review the Bids:** See each bidder's offer, their strategic motivations, and financial constraints
+2. **Analyze Trade-offs:** Exclusivity premium vs. total revenue, partner reliability vs. growth potential
+3. **Choose Your Strategy:** Accept Apple's exclusive $700M, or split across all three for $1.15B total
+4. **See Consequences:** Each choice triggers different 5-year outcomes (subscriber access, revenue stability, partner satisfaction)
+
+## Strategic Considerations
+
+- **Exclusivity creates premium:** Apple pays $700M to be the ONLY platform. If they have to share with Rogers and DAZN, they'd pay far less.
+- **Split packages increase complexity:** Three broadcast partners means three sets of negotiations, three content strategies, potential conflicts.
+- **Accessibility matters:** Exclusive Apple TV+ deal means only Apple subscribers can watch. Is that good for growing hockey fandom?
+- **Partner track record:** Rogers lost money on their last NHL deal. DAZN has struggled with profitability. Apple has unlimited resources. Who's most reliable long-term?
+
+## After the Simulator
+
+Export your decision rationale. Compare your choice to what actually happened in real NHL negotiations. Use these insights when analyzing the Rogers case in Module 5.
+```
+
+---
+
+### Element 6: Tool 2 - Exclusivity Bidding Simulator
 
 ### ⚙ Interactive Activity: Exclusivity Bidding Simulator
 
@@ -637,7 +724,50 @@ Most sports streaming services experience 25-40% annual churn. Subscribers join 
 
 ---
 
-### Element 11: Tool 3 - Platform Economics Visualizer
+### Element 9A: Widget Introduction - Platform Economics Visualizer
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Compare Platform Profitability
+
+Linear TV and streaming platforms operate on fundamentally different economics. But what does that actually mean for profitability? Why do streaming platforms lose money for years while traditional broadcasters either profit immediately—or never break even?
+
+## Your Challenge
+
+You're a media analyst comparing two business models. Your client asks: "Should we pursue traditional broadcasting or streaming?" You'll use the **Platform Economics Visualizer** to model 10-year profitability projections for each approach and explain the trade-offs.
+
+## What You'll Practice
+
+- Modeling linear TV economics (upfront rights costs, ad revenue, declining viewership)
+- Modeling streaming economics (customer acquisition, churn, lifetime value)
+- Understanding why streaming platforms lose money for 3-5 years before profitability
+- Recreating real scenarios (Rogers' $1.5B NHL loss, DAZN's path to profitability)
+
+## How the Visualizer Works
+
+1. **Choose Platform Type:** Toggle between Linear TV and Streaming/DTC models
+2. **Set Rights Cost:** Annual cost for sports content ($100M-$500M)
+3. **Adjust Revenue Variables:** For Linear: ad rates, viewership trends. For Streaming: subscription price, subscriber count, churn rate
+4. **Set Cost Variables:** For Linear: production costs. For Streaming: customer acquisition cost (CAC)
+5. **See 10-Year Projection:** Watch cumulative profit/loss chart update in real time
+6. **Compare Scenarios:** Save different configurations, compare side-by-side
+
+## Strategic Considerations
+
+- **Linear TV's declining economics:** If cord-cutting reduces your audience 5% annually, your ad revenue drops 5%—but rights costs stay fixed. Rogers signed a $5.2B deal expecting stable viewership; cord-cutting destroyed the math.
+- **Streaming's J-curve:** Streaming platforms lose money for years (customer acquisition + rights costs > subscription revenue), then become highly profitable once scale is achieved and CAC drops.
+- **Tech giants play a different game:** Apple and Amazon don't need sports to be profitable—they need sports to prevent Prime/Apple TV+ cancellations. A $1B "loss" on rights might prevent $1.5B in subscription churn.
+- **Churn is the silent killer:** 10% monthly churn means you lose your entire subscriber base every 10 months. Engagement features (betting, fantasy, social) reduce churn and dramatically improve unit economics.
+
+## After the Visualizer
+
+Export your profitability projections for both models. Use these insights when analyzing Rogers' decision-making in Module 5—could they have seen the loss coming?
+```
+
+---
+
+### Element 10: Tool 3 - Platform Economics Visualizer
 
 ### ⚙ Interactive Activity: Platform Economics Visualizer
 
@@ -926,6 +1056,48 @@ Media rights valuation is both art and science. Financial models provide foundat
 - **Future Optionality:** Will owning these rights position us for emerging opportunities (betting, international expansion)?
 
 **Reading Time:** 4-5 minutes
+```
+
+---
+
+### Element 11A: Widget Introduction - Engagement Value Chain Builder
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Build Your Fan Engagement Strategy
+
+Passive viewing generates only $5-15 per fan per year. The real value comes from **engagement**—converting passive viewers into active participants who bet, play fantasy, subscribe to exclusive content, and interact with team apps. Now you'll build an engagement strategy and see fan value transform.
+
+## Your Challenge
+
+You're the VP of Fan Engagement for a sports streaming platform. Your CEO asks: "How do we increase the value of our audience without acquiring more viewers?" You'll use the **Engagement Value Chain Builder** to design a strategy that multiplies fan value through engagement tactics.
+
+## What You'll Practice
+
+- Understanding the "engagement value chain" (passive viewer → engaged fan → super-fan)
+- Calculating ROI on engagement investments (mobile app, fantasy, betting, exclusive content)
+- Discovering why a betting fan is worth 6-10× more than a passive viewer
+- Building the optimal engagement mix for different audience profiles
+
+## How the Builder Works
+
+1. **Start with Your Audience:** 1 million passive fans worth $10M/year ($10 per fan)
+2. **Select Engagement Tactics:** Choose from mobile app, fantasy integration, betting partnerships, exclusive content, social media, gamification
+3. **See Cost/Benefit for Each:** Betting partnerships cost $0 (revenue share) but add $3M+ value. Exclusive content costs $3M but adds $4M+ value.
+4. **Build Your Stack:** Add tactics and watch total fan value climb
+5. **Convert to Super-Fans:** See how 10% of fans becoming "super-fans" worth $300-500 each changes the math
+
+## Strategic Considerations
+
+- **Betting is the highest-ROI engagement tactic:** $0 cost (revenue share model), but bettors watch 40% more games and are worth $30-50 per year vs. $5-10 for passive viewers.
+- **Fantasy creates habit:** Fantasy players check standings, follow injuries, consume more content. They're 3× less likely to cancel subscriptions.
+- **Exclusive content is expensive but sticky:** Behind-the-scenes, player access, and premium analysis cost $3M+ to produce but dramatically reduce churn.
+- **The super-fan multiplier:** Converting just 10% of your audience to "super-fans" (spend $300-500/year) can double total fan value.
+
+## After the Builder
+
+Export your engagement strategy and fan value projections. Compare your approach to what ESPN, DAZN, and streaming platforms actually prioritize. Use these insights to evaluate Rogers' engagement (or lack thereof) in Module 5.
 ```
 
 ---

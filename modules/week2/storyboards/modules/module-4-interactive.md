@@ -9,8 +9,9 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Text** ⬤ Required | Connecting introduction from Module 3 | Type directly | Pattern: "You've just [previous] → Now [current]" |
 | 2 | **Infobox (Callout)** ⬤ Required | Activity instructions and learning outcomes | Type directly | Blue variant, clear task |
+| 2A | **Text** ⬤ Required | Widget Introduction - Streaming Wars Strategy | Type directly | Structured intro with Your Challenge, How It Works |
 | 3 | **iFrame** ◐ Recommended | Streaming Wars Strategy tool | Custom tool hosted | Interactive simulation |
-| 5 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to WLOs |
+| 4 | **Text** ⬤ Required | Reflection prompt | Type directly | Connect activity to WLOs |
 | 6 | **AI Coach** ◐ Recommended | Your Strategy Coach for simulation decisions | Configure in Uplimit | Named: "Platform Strategy Assistant" |
 | 7 | **Details** ○ Optional | Hints and strategic considerations | Type directly | Accordion for struggling students |
 | 8 | **Text** ⬤ Required | Discussion Prompt #2 - Share Your Strategy | Type directly | Forum post with screenshot requirement |
@@ -41,6 +42,49 @@ In this module, you'll step into the role of VP of Content Strategy for a Canadi
 Title: ■ Activity: Streaming Wars Strategy Simulation
 
 You are the VP of Content Strategy for a new Canadian streaming platform with one goal: build a profitable sports streaming service by acquiring rights, setting pricing, and managing subscriber growth versus content costs. You'll apply media rights valuation (WLO 2.1), compare linear and streaming economics (WLO 2.2), and balance content investment with fan engagement tactics (WLO 2.3). Choose sports properties to bid on, set subscription pricing, make quarterly decisions about rights renewal and pricing changes, then achieve profitability within 5 years while managing churn. Time: 30-45 minutes, completable in multiple sessions.
+```
+
+---
+
+### Element 2A: Widget Introduction - Streaming Wars Strategy
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Build Your Streaming Platform
+
+You've learned the frameworks for valuing media rights and comparing linear vs. streaming economics. Now you'll **experience these trade-offs** firsthand by building a Canadian sports streaming platform from scratch.
+
+## Your Challenge
+
+You're the VP of Content Strategy for a new Canadian streaming platform. Your ownership group has one question: "Can we build a profitable sports streaming service?" You'll make the same high-stakes decisions that Rogers, DAZN, and TSN executives face—which rights to acquire, how to price subscriptions, and how to balance content costs against subscriber growth.
+
+## What You'll Practice
+
+- Bidding on sports rights with limited budget (hockey vs. soccer vs. emerging sports)
+- Setting subscription pricing to balance growth against revenue per user
+- Managing subscriber churn through engagement features
+- Navigating the 3-5 year break-even timeline that defines streaming economics
+- Understanding why content costs create massive downside risk
+
+## How the Simulator Works
+
+1. **Choose Your Rights Portfolio:** Allocate budget across hockey ($40M/year), basketball ($25M/year), soccer ($15M/year), and emerging sports ($5M/year). Exclusive rights cost 2-3× non-exclusive.
+2. **Set Subscription Price:** Choose $9.99-$29.99/month. Lower prices drive growth; higher prices improve unit economics.
+3. **Make Quarterly Decisions:** Each quarter, decide whether to renew rights, adjust pricing, or invest in engagement features (fantasy, betting integration, social features).
+4. **Track Key Metrics:** Subscriber count, monthly churn rate, monthly recurring revenue (MRR), content costs, and profitability timeline.
+5. **Navigate Random Events:** Competitor launches, recession hits, star player trades, playoff runs—respond strategically.
+
+## Strategic Considerations
+
+- **Content costs are fixed, subscribers are variable:** You pay $40M/year for hockey rights whether you have 100K or 1M subscribers. High subscriber count = profitable. Low subscriber count = catastrophic losses.
+- **Churn is the silent killer:** 10% monthly churn means you lose your entire subscriber base every 10 months. You must constantly acquire new subscribers just to stay flat.
+- **Exclusive vs. non-exclusive:** Exclusive NHL rights cost 2-3× more but prevent competitors from offering the same content. Non-exclusive saves money but commoditizes your platform.
+- **The 3-5 year timeline:** Streaming platforms typically lose money for years before reaching profitability. Can you survive long enough?
+
+## After the Simulator
+
+Export your final results—subscriber count, profitability timeline, and key decisions. You'll reference this experience when analyzing Rogers' $5.2B NHL deal in The Rogers Challenge (Module 5).
 ```
 
 ---

@@ -17,7 +17,7 @@ Style Note: Contrast between determined beginnings and established success.
 
 [PANEL 1]
 Shot Type & Angle: Split screen - left side 1998, right side 2023.
-Visual Description: LEFT: A public tennis center in California, early morning. A young Black girl (MAYA, age 12) practices serves with focused intensity while her mother, PATRICIA (professionally dressed, arms crossed with pride), watches and coaches from the sideline. The court is simple but well-maintained. Maya's form is perfect—she's clearly been practicing for hours. RIGHT: The same Maya, now in her 40s, walks through her corporate headquarters. Floor-to-ceiling windows. Her name on the wall: "MAYA JORDAN VENTURES." She wears a designer blazer and carries herself like a CEO.
+Visual Description: LEFT: A well-funded community tennis academy in California, early morning. Pristine green courts, professional lighting, and clean facilities. A young Black girl (MAYA, age 12) practices serves with focused intensity while her mother, PATRICIA (professionally dressed, arms crossed with pride), watches and coaches from the sideline. Maya's form is perfect—she's clearly been practicing for hours. RIGHT: The same Maya, now in her 40s, walks through her corporate headquarters. Floor-to-ceiling windows. Her name on the wall: "MAYA JORDAN VENTURES." She wears a designer blazer and carries herself like a CEO.
 Caption: 1998. California. No one knew her name yet.
 Caption: 2023. Manhattan. Everyone knows her empire.
 Dialogue (YOUNG MAYA): "Mom, I'm going to be the best in the world."

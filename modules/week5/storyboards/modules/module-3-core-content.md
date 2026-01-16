@@ -38,16 +38,16 @@
 |-------|---------|----------------|------|--------|---------------------|
 | 1 | **▬ Text** ⬤ Required | Module intro: Learn by doing | 2 min | Type directly | Sets interactive learning approach for heritage properties |
 | 2 | **▶ Video** ⬤ Required | "Heritage Properties as Business Assets" (2 min) | 2 min | Upload MP4 | Introduces heritage property economics before matrix widget |
-| 2B | **✓ Quiz (MC)** ⬤ Required | 4 MC questions on heritage framework | 3 min | Configure quiz | Comprehension check before widget |
+| 2A | **📝 Practice Quiz** ⬤ Required | Heritage Framework Check (4 questions) | 3 min | Configure in Uplimit | Comprehension check before widget |
 | 3 | **⚙ iFrame Widget** ⬤ Required | **Legacy vs Innovation Matrix** | 8-10 min | Embed widget | Map strategic decisions balancing tradition & growth |
-| 4 | **✓ Quiz (MC)** ⬤ Required | 4 MC questions on matrix concepts | 3 min | Configure quiz | Test strategic trade-off understanding |
-| 4B | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Process learning from strategic mapping |
-| 5 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
-| 6 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
-| 7 | **▶ Video** ◐ Recommended | "Future Trends in Sports Business" (2 min) | 2 min | Upload MP4 | Introduces 5 megatrends |
-| 7B | **✓ Quiz (MC)** ◐ Recommended | 5 MC questions on future trends | 4 min | Configure quiz | Test trend knowledge |
-| 8 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
-| 9 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Variable | Configure in Uplimit | On-demand support for strategic planning |
+| 3A | **📝 Practice Quiz** ⬤ Required | Matrix Concepts Check (4 questions) | 3 min | Configure in Uplimit | Test strategic trade-off understanding |
+| 3B | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Process learning from strategic mapping |
+| 4 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
+| 5 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
+| 6 | **▶ Video** ◐ Recommended | "Future Trends in Sports Business" (2 min) | 2 min | Upload MP4 | Introduces 5 megatrends |
+| 6A | **📝 Practice Quiz** ◐ Recommended | Future Trends Check (5 questions) | 4 min | Configure in Uplimit | Test trend knowledge |
+| 7 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
+| 8 | **◈ AI Chat Widget** ○ Optional | "Test your understanding" | Variable | Configure in Uplimit | On-demand support for strategic planning |
 
 ---
 
@@ -144,10 +144,10 @@ Two paths: Preserve (accept declining attendance) or Transform (embrace digital,
 
 ---
 
-## Element 2B: Multiple Choice Questions - Heritage Balance Framework
+## Element 2A: Practice Quiz - Heritage Framework Check
 
 **Uplimit Implementation:**
-1. Select **Quiz** element in module builder
+1. Select **Exercise - Practice Quiz** element
 2. Add 4 multiple choice questions on the Heritage Balance Framework
 3. Set as "Practice Quiz" (not graded) for self-assessment
 
@@ -335,10 +335,10 @@ Students drag initiatives onto the matrix:
 
 ---
 
-## Element 4: Multiple Choice Questions - Legacy vs Innovation Matrix
+## Element 3A: Practice Quiz - Matrix Concepts Check
 
 **Uplimit Implementation:**
-1. Select **Quiz** element in module builder
+1. Select **Exercise - Practice Quiz** element
 2. Add 4 multiple choice questions on the matrix concepts
 3. Set as "Practice Quiz" (not graded) for self-assessment
 
@@ -404,7 +404,7 @@ D) Equal split with high risk tolerance
 
 ---
 
-## Element 4B: Reflection Prompt After Matrix Widget
+## Element 3B: Reflection Prompt After Matrix Widget
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -438,7 +438,7 @@ The Hockey Hall of Fame faces this exact dilemma. Jamie Dinsmore (President & CE
 
 ---
 
-## Element 5: Future Trends Predictor Widget
+## Element 4: Future Trends Predictor Widget
 
 ### ⚙ Interactive Activity: Future Trends Predictor
 
@@ -584,7 +584,7 @@ Based on trend choices, widget plots your organization on 2x2 matrix:
 
 ---
 
-## Element 6: Reflection Prompt After Widget 2
+## Element 5: Reflection Prompt After Widget 2
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -620,7 +620,7 @@ Your CFL Expansion Final Proposal must integrate frameworks from all 5 weeks: re
 
 ---
 
-## Element 7: Instructional Video - Five Trends Reshaping Sports Business `[v1.6.0]`
+## Element 6: Instructional Video - Five Trends Reshaping Sports Business `[v1.6.0]`
 
 **Video Title:** "Five Trends Reshaping Sports Business"
 **Caption File:** `Videos/HeyGen Scripts/VIDEO #19 IO - Cohort - BOSM – W5-M3, V1 (Future Trends)-caption.srt`
@@ -674,10 +674,10 @@ Media rights valued on engagement, not just eyeballs. Sponsorship requires data 
 
 ---
 
-## Element 7B: Multiple Choice Questions - Future Trends
+## Element 6A: Practice Quiz - Future Trends Check
 
 **Uplimit Implementation:**
-1. Select **Quiz** element in module builder
+1. Select **Exercise - Practice Quiz** element
 2. Add 5 multiple choice questions on future trends
 3. Set as "Practice Quiz" (not graded) for self-assessment
 
@@ -758,7 +758,7 @@ D) Commercial sports are becoming illegal
 
 ---
 
-## Element 8: Details Accordion - Deep Dive: Heritage Property Economics
+## Element 7: Details Accordion - Deep Dive: Heritage Property Economics
 
 **Uplimit Implementation:**
 1. Select **Details** (accordion) element
@@ -940,7 +940,7 @@ Your CFL Expansion Final Proposal must make this trade-off explicit and justify 
 
 ---
 
-## Element 9: AI Chat Widget Configuration
+## Element 8: AI Chat Widget Configuration
 
 **Uplimit Implementation:**
 1. Select **AI Chat** element

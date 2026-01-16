@@ -787,7 +787,6 @@
             });
 
             updateSummary();
-            updateSliderMaxValues();
         }
 
         function updateAllocation(streamId, value) {
@@ -796,21 +795,6 @@
 
             document.getElementById(`amount-${streamId}`).textContent = formatCurrency(stream.allocation);
             updateSummary();
-            updateSliderMaxValues();
-        }
-
-        function updateSliderMaxValues() {
-            const totalAllocated = gameState.streams.reduce((sum, s) => sum + s.allocation, 0);
-            const remaining = gameState.budget - totalAllocated;
-
-            // Update each slider's max value to be current allocation + remaining budget
-            gameState.streams.forEach(stream => {
-                const slider = document.getElementById(`slider-${stream.id}`);
-                if (slider) {
-                    const maxForThisStream = stream.allocation + remaining;
-                    slider.max = maxForThisStream;
-                }
-            });
         }
 
         function updateSummary() {
@@ -851,6 +835,11 @@
 
         function confirmAllocation() {
             const totalAllocated = gameState.streams.reduce((sum, s) => sum + s.allocation, 0);
+
+            if (totalAllocated > gameState.budget) {
+                alert('You have exceeded your budget. Please reduce allocations to continue.');
+                return;
+            }
 
             if (totalAllocated < gameState.budget * 0.8) {
                 alert('You should allocate at least 80% of your budget to maximize growth.');

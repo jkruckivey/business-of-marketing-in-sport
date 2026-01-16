@@ -1,5 +1,8 @@
 ## MODULE 5: Case Study - Hockey Hall of Fame (BOPPPS: Participatory - Case Analysis)
-**Version:** 2.0.0 | **Last Updated:** 2026-01-13
+**Version:** 2.1.0 | **Last Updated:** 2026-01-15
+
+### Version 2.1.0 Changes
+- **ADDED:** Element 3A - Practice Quiz (5 questions) for case comprehension check
 
 ### Version 2.0.0 Changes
 - **MERGED:** Combined Module 5 (Read) and Module 6 (Analyze) into single comprehensive module
@@ -17,6 +20,7 @@
 | 1 | **▬ Text** ⬤ Required | Connecting intro from Module 4 simulation | Type directly | Bridges simulation to real case analysis |
 | 2 | **ⓘ Infobox (Callout)** ⬤ Required | Case overview and reading instructions | Type directly | Blue variant, frames case reading approach |
 | 3 | **▶ Video** ⬤ Required | "HHOF Case: Strategic Analysis Framework" (2 min) | Upload MP4 | Frames heritage dilemma before case reading |
+| 3A | **📝 Practice Quiz** ⬤ Required | HHOF Case Comprehension Check (5 questions) | Configure in Uplimit | Tests case comprehension before analysis |
 | 4 | **▬ Text** ⬤ Required | Full case narrative Parts 1-2 (4,000 words) | Embedded below | Case background and three strategic scenarios |
 | 5 | **▬ Table** ◐ Recommended | HHOF vs. Heritage Property Benchmarks | Type directly | Comparative financial metrics for context |
 | 6 | **⟱ Details** ⬤ Required | Exhibit A: HHOF Revenue & Visitor Data (5-Year) | Type or upload PDF | Accordion - financial and attendance trends |
@@ -130,6 +134,90 @@ This case presents the Hockey Hall of Fame's strategic transformation challenge.
 1. Upload HHOF Case video MP4
 2. Add SRT caption file from `Videos/HeyGen Scripts/`
 3. Place after Infobox, before case text
+
+---
+
+## Element 3A: Practice Quiz - HHOF Case Comprehension Check
+
+**Uplimit Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 5 multiple choice questions:
+
+---
+
+### Question 1: Core Strategic Tension
+
+According to the video, what is the central tension heritage properties like HHOF face?
+
+A) Maximizing ticket prices vs. maintaining accessibility
+B) How to grow without becoming something you're not ✅
+C) Choosing between domestic and international audiences
+D) Deciding whether to merge with competing museums
+
+**Feedback (Correct):** Correct! The video explicitly states: "How do you grow without becoming something you're not?" This captures the fundamental heritage property dilemma—growth opportunities exist, but pursuing them aggressively can erode the authenticity that makes heritage properties valuable in the first place.
+
+**Feedback (Incorrect):** The video frames a specific strategic tension that applies to all heritage institutions. It's not about pricing or geography—it's about identity. What happens when growth initiatives change the fundamental nature of an institution?
+
+---
+
+### Question 2: The Two Strategic Traps
+
+The video warns analysts to avoid two strategic traps. Which pair correctly identifies both traps?
+
+A) Trap 1: Assuming preservation is always wrong; Trap 2: Assuming transformation is always right
+B) Trap 1: Assuming growth always wins; Trap 2: Assuming tradition always wins ✅
+C) Trap 1: Ignoring financial constraints; Trap 2: Ignoring competitive pressure
+D) Trap 1: Over-investing in VR; Trap 2: Under-investing in curators
+
+**Feedback (Correct):** Correct! The video states: "Trap one: Assuming growth always wins. Sometimes preservation IS the strategy. Trap two: Assuming tradition always wins. Institutions that refuse all change become irrelevant." Neither pure growth nor pure preservation is automatically correct—the strategic task is finding the right balance.
+
+**Feedback (Incorrect):** The video explicitly names two opposite traps that represent flawed assumptions. One trap favors change; the other favors the status quo. Both extremes lead to strategic failure for different reasons.
+
+---
+
+### Question 3: Credibility Risk
+
+What does the video identify as the irreversible risk of over-commercialization?
+
+A) Losing international licensing agreements
+B) Being perceived as a theme park instead of a cultural institution ✅
+C) Facing regulatory penalties for misleading marketing
+D) Having to lay off technology staff when trends change
+
+**Feedback (Correct):** Correct! The video warns: "Once you're perceived as a theme park, you can't go back to being a serious cultural institution." Heritage credibility, once lost, cannot be recovered. This explains why curatorial staff and donors resist aggressive transformation—they're protecting something valuable and irreplaceable.
+
+**Feedback (Incorrect):** The video identifies a specific reputational risk that heritage institutions face when pursuing aggressive digital and entertainment strategies. Once stakeholders perceive the institution has "sold out," that perception is permanent.
+
+---
+
+### Question 4: Stakeholder Legitimacy
+
+According to the video, why shouldn't curatorial staff and donors be dismissed as "stubborn" when they resist transformation?
+
+A) They control the institution's governance through board votes
+B) They have legal contracts that prevent major changes
+C) They're protecting something valuable—heritage authenticity ✅
+D) They represent the majority of the institution's revenue
+
+**Feedback (Correct):** Correct! The video states: "The curatorial staff and donors aren't being stubborn—they're protecting something valuable." Their resistance to aggressive transformation isn't irrational conservatism; it's informed protection of the authenticity that makes heritage institutions credible and differentiated from entertainment venues.
+
+**Feedback (Incorrect):** The video reframes stakeholder resistance as something other than mere stubbornness. Consider what these stakeholders are trying to preserve and why that preservation has strategic value for the institution's long-term credibility.
+
+---
+
+### Question 5: Analytical Task
+
+The video concludes by describing what your job is as a strategic analyst. What does it say your task is?
+
+A) Calculate the highest possible revenue growth scenario
+B) Recommend whichever option the board prefers
+C) Find where the line is between acceptable innovation and mission-compromise ✅
+D) Prove that digital transformation is always the right choice
+
+**Feedback (Correct):** Correct! The video concludes: "Where exactly is the line between acceptable innovation and mission-compromise? That line is different for every organization—your job is to find where it is for a heritage institution." This is the analytical task: not maximizing growth OR preserving tradition, but identifying the specific boundary where innovation enhances rather than undermines heritage mission.
+
+**Feedback (Incorrect):** The video doesn't ask you to maximize any single variable. It frames a more nuanced analytical task about finding balance. What boundary does the video say you need to identify for HHOF specifically?
 
 ---
 

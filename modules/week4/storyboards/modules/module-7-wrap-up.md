@@ -20,7 +20,8 @@
 |-------|---------|----------------|--------|---------------------|
 | 1 | **ⓘ Infobox (Callout)** ⬤ Required | Week 4 key takeaways | Type directly | 5 critical insights |
 | 2 | **▬ Text** ⬤ Required | Anchor Project Milestone 4 Introduction | Type directly | Sets context for milestone |
-| 2A | **▬ Text + ⚙ iFrame** ◐ Recommended | Brand Package Creator | Type + Embed widget | Bridges athlete branding → team brand |
+| 2A | **▬ Text** ⬤ Required | Widget Introduction - Brand Package Creator | Type directly | Structured intro |
+| 2B | **⚙ iFrame** ◐ Recommended | Brand Package Creator widget | Embed widget | Interactive brand builder |
 | 3 | **ⓘ Infobox (Assessment)** ⬤ Required | Milestone 4 Brief | Type directly | Purple variant, 20 points |
 | 4 | **📤 File Response** ⬤ Required | Milestone 4 Submission | Configure in Uplimit | File upload |
 | 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Week 5 |
@@ -64,34 +65,49 @@ Your CFL expansion franchise needs more than sponsors—it needs faces. In Miles
 
 ---
 
-## Element 2A: Brand Package Creator `[v2.1.0]`
+### Element 2A: Widget Introduction - Brand Package Creator
 
-**Element Type:** Text + iFrame Widget
-
-**Uplimit Implementation:**
-1. Select **Text** element for the introduction
-2. Add **iFrame** element for the widget
-
-### Introduction Text (Copy to Uplimit):
+**Copy this markdown directly into Uplimit:**
 
 ```markdown
-## Design Your Team Brand: What Would Attract Your Target Athletes?
+# Practice: Design Your CFL Franchise Brand
 
-You've learned that athletes like Serena Williams carefully protect and grow their personal brands. They don't partner with just anyone—they choose brands that align with their values and amplify their image.
+You've learned that athletes like Serena Williams carefully protect and grow their personal brands. They don't partner with just anyone—they choose brands that align with their values and amplify their image. Now flip the perspective: **What kind of team brand would attract the athletes YOU want as ambassadors?**
 
-Now flip the perspective: **What kind of team brand would attract the athletes YOU want as ambassadors?**
+## Your Challenge
 
-Before identifying specific ambassadors, define your franchise's visual identity. A strong team brand—compelling name, distinctive colors, memorable mascot—makes it easier to recruit athlete partners who want to be associated with your franchise.
+You're the Chief Marketing Officer for your CFL expansion franchise. Before recruiting brand ambassadors, you need a compelling team identity. Design a brand package that will attract top athletes, resonate with local fans, and appeal to sponsors. Your brand choices will directly influence which ambassadors want to partner with you.
 
-Use this tool to design your team's brand identity. Think about:
-- What team name reflects your market's identity? (Halifax Schooners? Quebec Voyageurs?)
-- What colors will look great on jerseys AND appeal to sponsors?
-- What mascot could become a beloved local icon?
+## What You'll Practice
 
-Your brand choices should align with the athlete ambassadors you'll identify in your milestone submission.
+- Creating a team name that reflects your market's identity and culture
+- Selecting primary and secondary colors that work on jerseys AND in sponsor materials
+- Designing a mascot concept that could become a beloved local icon
+- Building a cohesive brand identity that attracts athlete ambassadors
+
+## How the Brand Package Creator Works
+
+1. **Enter Team Name:** Choose a name that reflects your expansion city (Halifax Schooners? Quebec Voyageurs? Saskatoon Rush?)
+2. **Select Colors:** Pick primary and secondary colors using the color picker—see hex values for sponsor consistency
+3. **Design Jersey Mockup:** Watch your colors appear on a jersey template in real-time
+4. **Create Mascot Concept:** Describe your mascot character and its connection to local culture
+5. **Export Brand Package:** Download a text file with all your brand specifications
+
+## Strategic Considerations
+
+- **Name should resonate locally:** The best team names connect to regional identity (Roughriders = prairie toughness, Argonauts = Toronto's maritime history)
+- **Colors matter for merchandise:** High-contrast combinations sell better. Avoid colors that clash with major local competitors.
+- **Mascot = content engine:** A great mascot creates social media content, youth program opportunities, and sponsor activation options
+- **Think about athlete fit:** Would Serena Williams want to be associated with your brand? Would local CFL stars be proud to represent it?
+
+## After the Widget
+
+Export your brand package. Reference these choices in your Milestone 4 submission when explaining why specific ambassadors would want to partner with your franchise.
 ```
 
-### Widget Embed:
+---
+
+### Element 2B: iFrame Widget - Brand Package Creator
 
 **File:** `brand-package-creator.html`
 

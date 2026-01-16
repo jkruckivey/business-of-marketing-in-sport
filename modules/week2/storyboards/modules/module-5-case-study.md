@@ -26,18 +26,22 @@
 | 2 | **Infobox** ⬤ Required | Case overview + key questions | 1 min | Blue variant |
 | 2A | **Text** ⬤ Required | 📚 Case Study Access + Reading Guide | 2 min | Download link + 4 focus areas |
 | 3 | **Text** ⬤ Required | Case background: Rogers + NHL 2013 (150 words) | 1 min | Embedded markdown below |
+| 4A | **Text** ⬤ Required | Widget Introduction - Rogers Deal Terms Explorer | 2 min | Structured intro |
 | 5 | **🎮 iFrame** ◐ Recommended | Tool 5: Rogers Deal Terms Explorer | 3 min | Phase 2 tool |
 | 6 | **Text** ⬤ Required | Strategic rationale: Why $5.2B? (150 words) | 1 min | Embedded markdown below |
 | 7 | **Video** ◐ Recommended | Executive retrospective (2 min) | 2 min | week2-rogers-retrospective.mp4 |
 | 8 | **Text** ⬤ Required | Performance overview (150 words) | 1 min | Embedded markdown below |
+| 8A | **Text** ⬤ Required | Widget Introduction - Projections vs. Actuals Visualizer | 2 min | Structured intro |
 | 9 | **🎮 iFrame** ◐ Recommended | Tool 6: Projections vs. Actuals Visualizer | 4 min | Phase 2 tool |
 | 10 | **Infobox (Note)** ⬤ Required | Key insight: Why forecasts failed | 1 min | Yellow variant |
 | 10A | **📝 Practice Quiz** ⬤ Required | Rogers Deal Analysis Check (5 questions) | 4 min | Tests case comprehension |
 | 11 | **Text** ⬤ Required | Audience trends (150 words) | 1 min | Embedded markdown below |
+| 11A | **Text** ⬤ Required | Widget Introduction - Viewership Trends Analyzer | 2 min | Structured intro |
 | 12 | **🎮 iFrame** ◐ Recommended | Tool 7: Viewership Trends Analyzer | 3 min | Phase 2 tool |
 | 13 | **Text** ⬤ Required | Competitive landscape (150 words) | 1 min | Embedded markdown below |
 | 14 | **Table** ⬤ Required | Rogers vs. Competitors comparison | 1 min | Type directly |
 | 15 | **Text** ⬤ Required | The 2026 decision (150 words) | 1 min | Embedded markdown below |
+| 15A | **Text** ⬤ Required | Widget Introduction - 2026 Decision Simulator | 2 min | Structured intro |
 | 16 | **🎮 iFrame** ⬤ Required | Tool 8: 2026 Decision Simulator (CAPSTONE) | 5 min | Phase 3 tool |
 | 17 | **Details** ○ Optional | Full case narrative (optional) | Optional | Accordion for deep dive |
 | 18 | **Text** ⬤ Required | Reflection Prompt #3 - Your Rogers 2026 Recommendation | Submit reflection | Required position statement |
@@ -163,7 +167,49 @@ Copy the markdown below directly into Uplimit:
 
 ---
 
-## Element 4: Tool 5 - Rogers Deal Terms Explorer
+### Element 4A: Widget Introduction - Rogers Deal Terms Explorer
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Explore the $5.2 Billion Deal
+
+Rogers paid $5.2 billion for 12 years of NHL rights—$433 million per year, 209% more than the previous deal. What exactly did that money buy? And was it worth it? Let's find out.
+
+## Your Challenge
+
+You're a media analyst presenting to Rogers' board in 2014. They've just approved the NHL deal and want you to explain exactly what $5.2 billion purchased. You'll use the **Rogers Deal Terms Explorer** to walk through every component of the agreement.
+
+## What You'll Practice
+
+- Understanding the components of a major media rights deal
+- Analyzing why exclusivity commands premium pricing
+- Evaluating Rogers' original financial projections
+- Comparing the deal to its predecessor to assess whether Rogers "overpaid"
+
+## How the Explorer Works
+
+1. **Rights Included Tab:** See every game package Rogers acquired (1,000+ games/season)
+2. **Platforms Covered Tab:** Explore distribution across linear TV, streaming, digital, and radio
+3. **Exclusivity Terms Tab:** Understand Rogers' near-monopoly on NHL in Canada (TSN lost access entirely)
+4. **Revenue Projections Tab:** Review Rogers' internal forecasts (break-even by Year 5, 1M streaming subscribers)
+5. **Deal Comparison Tab:** See how 2014 terms compared to the previous CBC/TSN deal
+
+## Strategic Considerations
+
+- **Exclusivity was the expensive part:** Rogers didn't just buy rights—they bought out TSN and blocked competitors. That defensive move cost billions.
+- **Internal projections were aggressive:** Rogers assumed cord-cutting would slow and streaming growth would accelerate. Neither happened as planned.
+- **The "strategic" case vs. the "financial" case:** Even if the deal lost money, Rogers argued it protected their core cable business. Was that worth $1.5B in losses?
+- **Hindsight is 20/20:** In 2014, the deal looked aggressive but defensible. By 2020, it looked like the worst media rights deal in Canadian history.
+
+## After the Explorer
+
+Note which deal components surprised you most. When we analyze performance in the next tool, you'll see which of Rogers' assumptions proved accurate—and which failed catastrophically.
+```
+
+---
+
+## Element 5: Tool 5 - Rogers Deal Terms Explorer
 
 ### ⚙ Interactive Activity: Rogers Deal Terms Explorer
 
@@ -376,7 +422,49 @@ Rogers' optimistic projections collided with harsh market realities.
 
 ---
 
-## Element 7: Tool 6 - Projections vs. Actuals Visualizer
+### Element 8A: Widget Introduction - Projections vs. Actuals Visualizer
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Track Where the Deal Went Wrong
+
+Rogers projected break-even by Year 5 with $500M in revenue. By Year 10, they were still losing $50-150M annually. But where exactly did the projections go wrong? And when should Rogers have known?
+
+## Your Challenge
+
+You're a financial analyst preparing a post-mortem for Rogers' executive team. They ask: "Show us exactly where our assumptions failed." You'll use the **Projections vs. Actuals Visualizer** to build a year-by-year variance analysis.
+
+## What You'll Practice
+
+- Comparing financial projections to actual results over a 10-year period
+- Identifying variance drivers (cord-cutting, streaming adoption, COVID-19)
+- Recognizing early warning signs that a deal is underperforming
+- Understanding cumulative loss calculations in media rights deals
+
+## How the Visualizer Works
+
+1. **Timeline Scrubber:** Move through Years 1-10 (2014-2024) to see how performance evolved
+2. **Three Lines:** Blue = Rogers' original projections, Red = Actual revenue, Green = Break-even threshold ($433M/year)
+3. **Hover for Details:** Each year shows projected revenue, actual revenue, variance percentage, and key events
+4. **Variance Breakdown:** See which factors drove underperformance (cord-cutting, streaming, advertising rates)
+5. **Cumulative Loss Tracker:** Watch total losses accumulate over the deal's lifetime
+
+## Strategic Considerations
+
+- **Year 1 warning signs:** Even in Year 1, actuals fell 15% short of projections. Was this a temporary miss or a structural problem?
+- **The cord-cutting acceleration:** Rogers projected 3% annual cord-cutting. Actual rates were 5-8%. That 2-5 point gap compounded catastrophically over 12 years.
+- **Streaming never materialized:** Rogers projected 1M Sportsnet NOW subscribers by Year 5. They peaked at ~400,000. The streaming pivot that was supposed to save the deal never happened.
+- **COVID was bad—but not the main problem:** Year 7 (COVID) crushed revenue by 64%. But even in normal years, Rogers never hit break-even. COVID exposed the problem; it didn't create it.
+
+## After the Visualizer
+
+Note the year when Rogers should have recognized the deal was failing. In 2026, they'll face a renewal decision. How should this performance data inform that choice?
+```
+
+---
+
+## Element 9: Tool 6 - Projections vs. Actuals Visualizer
 
 ### ⚙ Interactive Activity: Projections vs. Actuals Visualizer
 
@@ -622,7 +710,49 @@ Beyond financial projections, Rogers faced declining and fragmented audiences.
 
 ---
 
-## Element 10: Tool 7 - Viewership Trends Analyzer
+### Element 11A: Widget Introduction - Viewership Trends Analyzer
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Analyze the Audience Trends
+
+Rogers lost $1.5B on the NHL deal. But what were the underlying **audience trends** driving those losses? Did viewership decline? Did younger fans stop watching? Did streaming adoption stall? The financial data tells you WHAT happened—the audience data tells you WHY.
+
+## Your Challenge
+
+You're a market research analyst briefing Rogers' strategy team. They ask: "Who stopped watching, and where did they go?" You'll use the **Viewership Trends Analyzer** to build a comprehensive audience profile.
+
+## What You'll Practice
+
+- Analyzing linear TV ratings trends over a 10-year period
+- Tracking streaming subscriber growth vs. targets
+- Understanding demographic shifts (age, gender, region)
+- Identifying which audience segments are most valuable—and which are disappearing
+
+## How the Analyzer Works
+
+1. **Linear TV Ratings Tab:** Hockey Night in Canada Saturday viewership 2014-2024
+2. **Streaming Subscribers Tab:** Sportsnet NOW growth curve vs. Rogers' 1M target
+3. **Demographic Breakdown Tab:** Filter by age group, gender, and region
+4. **Year Filter:** Compare any year to 2014 baseline
+5. **Trend Lines:** See whether changes are gradual erosion or sudden collapse
+
+## Strategic Considerations
+
+- **The 18-34 crisis:** Viewers aged 18-34 declined 50% over 10 years. Viewers 55+ held steady. Hockey's audience is aging out—and that demographic shift has profound implications for advertising rates.
+- **Streaming didn't save them:** Rogers projected 1M Sportsnet NOW subscribers. They peaked at 450K. Why? Hockey alone wasn't enough to justify a streaming subscription—subscribers wanted broader content libraries.
+- **Regional disparities matter:** Toronto and Montreal ratings held relatively steady. Vancouver and Calgary declined sharply. Not all Canadian hockey markets are equal.
+- **Steady erosion, not sudden collapse:** Ratings didn't crash—they declined 3-5% annually. That steady erosion was harder to react to than a dramatic drop would have been.
+
+## After the Analyzer
+
+Identify the 2-3 audience trends that explain Rogers' losses. When we evaluate the 2026 renewal decision, you'll need to project whether these trends will continue, accelerate, or reverse.
+```
+
+---
+
+## Element 12: Tool 7 - Viewership Trends Analyzer
 
 ### ⚙ Interactive Activity: Viewership Trends Analyzer
 
@@ -793,7 +923,51 @@ Rogers' NHL contract expires after the 2025-26 season. The company must decide i
 
 ---
 
-## Element 14: Tool 8 - 2026 Decision Simulator (CAPSTONE)
+### Element 15A: Widget Introduction - 2026 Decision Simulator
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Make the 2026 Decision (CAPSTONE)
+
+The year is 2026. Rogers' $5.2 billion NHL contract expires. After estimated losses exceeding $1.5 billion over 12 years, the CEO asks: "Should we renew? If so, at what price and on what terms? Or should we walk away?" There's no right answer—only defensible strategic recommendations supported by evidence.
+
+## Your Challenge
+
+You're Rogers' Chief Strategy Officer presenting to the board. You have 3 options: renew with exclusive rights ($300-350M/year), split the package with competitors ($200M/year), or walk away entirely. Each choice has profound implications for Rogers' future. What do you recommend?
+
+## What You'll Practice
+
+- Synthesizing ALL Week 2 frameworks into a single strategic recommendation
+- Setting market assumptions and defending them with evidence
+- Comparing financial projections across different strategic options
+- Writing a clear, persuasive executive recommendation (250 words)
+
+## How the Simulator Works
+
+1. **Set Market Assumptions:** Choose your projections for cord-cutting rate (3-8%), streaming growth, NHL viewership trends, competitive intensity, and betting revenue
+2. **Choose Your Strategy:** Select renew exclusive, split package, or walk away
+3. **View 10-Year Projections:** See financial impact of your choice (revenue, costs, cumulative profit/loss)
+4. **Compare Alternatives:** View all three options side-by-side with your assumptions
+5. **Write Recommendation:** Draft 250-word executive summary justifying your choice
+6. **Export PDF:** Download complete analysis for your Week 2 reflection
+
+## Strategic Considerations
+
+- **Renew Exclusive ($300-350M/year):** Lower price than 2014 reflects market reality. Maintains sports brand identity. Still risky if cord-cutting accelerates.
+- **Split Package ($200M/year):** Share costs and risks with TSN/Bell. Lose exclusivity advantage. More financially defensible.
+- **Walk Away ($0):** Cut losses entirely. Reallocate capital to wireless/5G. Risk accelerating cord-cutting (NHL was retention tool).
+- **Betting changes everything:** If Rogers can integrate betting partnerships, the economics improve dramatically. But regulatory uncertainty remains.
+- **Streaming pivot:** Has Rogers learned from Sportsnet NOW's failures? Can they build a compelling streaming product in 2026?
+
+## After the Simulator
+
+Export your full analysis. Your recommendation will form the foundation of your Week 2 reflection memo. Be prepared to defend your assumptions—reasonable people can disagree on market projections, but your logic must be sound.
+```
+
+---
+
+## Element 16: Tool 8 - 2026 Decision Simulator (CAPSTONE)
 
 ### ⚙ CAPSTONE Activity: 2026 Decision Simulator
 

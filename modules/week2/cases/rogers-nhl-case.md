@@ -1,12 +1,5 @@
 # Rogers Communications and the NHL: Betting $5.2 Billion on Hockey
 
-**Case ID:** BOSM-W2-001
-**Version:** 1.0
-**Last Updated:** January 2025
-**Case Type:** A-Case with B-Epilogue
-**Course Position:** Week 2 Core Case
-**Target WLOs:** 2.1-2.4 (Valuation, Platform Strategy, Fan Monetization, Synthesis)
-
 ---
 
 ## Case Synopsis

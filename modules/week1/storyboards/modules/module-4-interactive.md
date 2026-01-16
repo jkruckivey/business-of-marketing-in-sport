@@ -10,9 +10,9 @@
 | 1 | **Infobox (Callout)** ⬤ Required | Brief activity introduction | Type directly | Blue variant, sets context |
 | 2 | **Text** ⬤ Required | Detailed instructions and strategic considerations | Type directly | Full setup and guidance |
 | 3 | **iFrame** ⬤ Required | Revenue Empire Builder widget | Custom widget hosted | Interactive simulation |
-| 4 | **Text Response** ⬤ Required | Board Strategy Defense submission | Configure in Uplimit | Written defense with 30-point rubric |
-| 5 | **AI Chat Widget** ○ Optional | Board Strategy Coach (optional) | Configure in Uplimit | Named: "Board Strategy Coach" |
-| 6 | **Details** ○ Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
+| 4 | **AI Chat Widget** ○ Optional | Board Strategy Coach (optional) | Configure in Uplimit | Named: "Board Strategy Coach" |
+| 5 | **Details** ○ Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
+| 6 | **📤 Response (Text + File)** ⬤ Required | Board Strategy Defense submission | Configure in Uplimit | Text entry OR PDF upload, 30-point rubric |
 
 ### Element 1: Infobox Content
 ```
@@ -107,9 +107,59 @@ Once you complete the Revenue Empire Builder, you'll write an executive memo (75
 
 ---
 
-### Element 4: Text Response - Board Strategy Defense
+### Element 4: AI Chat Widget Configuration
+- **Widget Name:** "Board Strategy Coach"
+- **System Prompt:** "You are a helpful strategy coach for MBA students preparing their Board Strategy Defense memo. Help them think critically about their Revenue Empire Builder results and how to articulate their strategy. Do NOT write their memo for them. Instead, ask probing questions: What trade-offs did you consider? How do your streams create synergies? What risks emerged during the simulation? How would you defend that allocation choice? Focus on: strategic justification, risk management, ecosystem thinking, and professional communication. If students ask you to write content, redirect them to develop their own analysis with your guidance."
+- **Welcome Message:** "Ready to prepare your Board Strategy Defense? I can help you think through your allocation decisions, identify key risks, and structure your argument. What aspect of your strategy are you working on?"
+- **Show System Prompt:** No
+
+---
+
+### Element 5: Details Content
+```
+Title: ◆ Strategy Hints (Open if you're stuck)
+
+Not sure how to approach this? Here are some strategic considerations:
+
+**Diversification:**
+Don't put all your eggs in one basket. Even high-growth streams have risks.
+A balanced portfolio can weather market changes better.
+
+**Media Rights:**
+High revenue potential but requires long-term contracts. Once you commit, you're
+locked in. Make sure you're negotiating from strength (winning teams get better deals).
+
+**Ticketing:**
+Capacity-limited. You can only sell so many seats. Premium seating and dynamic
+pricing can increase yield, but there's a ceiling. Consider this a stable base,
+not a growth engine.
+
+**Sponsorship:**
+Relationship-dependent. Building strong partnerships takes time but can be very
+profitable. Brand alignment matters - don't just chase the biggest check.
+
+**Betting/Gaming:**
+High growth potential but regulatory risk. Early movers can capture value, but
+stay flexible in case laws change.
+
+**Key Question:**
+Which streams create synergies? (Hint: Better players → better content → higher
+media rights → more resources for players...)
+```
+
+---
+
+### Element 6: Response (Text + File Upload) - Board Strategy Defense
 
 **Assessment Type:** Written submission with rubric evaluation
+
+**Uplimit Configuration:**
+1. Select **Exercise - Response** element
+2. Enable **Text response** (for direct typing)
+3. Enable **File upload** (for PDF submission)
+4. Set accepted file types: **PDF only**
+5. Configure rubric with 4 criteria (30 points total)
+6. Enable AI-assisted grading
 
 **Question Text:**
 ```
@@ -194,48 +244,6 @@ Before submitting, check that you have:
 - ✅ Enable automated AI grading
 - ✅ Include evaluation levels (Excellent / Proficient / Developing / Needs Improvement)
 - ✅ Apply points (30 total)
-
----
-
-### Element 5: AI Chat Widget Configuration
-- **Widget Name:** "Board Strategy Coach"
-- **System Prompt:** "You are a helpful strategy coach for MBA students preparing their Board Strategy Defense memo. Help them think critically about their Revenue Empire Builder results and how to articulate their strategy. Do NOT write their memo for them. Instead, ask probing questions: What trade-offs did you consider? How do your streams create synergies? What risks emerged during the simulation? How would you defend that allocation choice? Focus on: strategic justification, risk management, ecosystem thinking, and professional communication. If students ask you to write content, redirect them to develop their own analysis with your guidance."
-- **Welcome Message:** "Ready to prepare your Board Strategy Defense? I can help you think through your allocation decisions, identify key risks, and structure your argument. What aspect of your strategy are you working on?"
-- **Show System Prompt:** No
-
----
-
-### Element 6: Details Content
-```
-Title: ◆ Strategy Hints (Open if you're stuck)
-
-Not sure how to approach this? Here are some strategic considerations:
-
-**Diversification:**
-Don't put all your eggs in one basket. Even high-growth streams have risks.
-A balanced portfolio can weather market changes better.
-
-**Media Rights:**
-High revenue potential but requires long-term contracts. Once you commit, you're
-locked in. Make sure you're negotiating from strength (winning teams get better deals).
-
-**Ticketing:**
-Capacity-limited. You can only sell so many seats. Premium seating and dynamic
-pricing can increase yield, but there's a ceiling. Consider this a stable base,
-not a growth engine.
-
-**Sponsorship:**
-Relationship-dependent. Building strong partnerships takes time but can be very
-profitable. Brand alignment matters - don't just chase the biggest check.
-
-**Betting/Gaming:**
-High growth potential but regulatory risk. Early movers can capture value, but
-stay flexible in case laws change.
-
-**Key Question:**
-Which streams create synergies? (Hint: Better players → better content → higher
-media rights → more resources for players...)
-```
 
 **Design Rationale:**
 - **iFrame widget** provides hands-on, experiential learning (UDL engagement, Application level)

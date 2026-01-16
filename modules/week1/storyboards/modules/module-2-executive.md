@@ -25,9 +25,13 @@
 | 5 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about Kevin's insights" | Configure in Uplift | Named: "Executive Q&A" |
 
 ### Element 1: Connecting Introduction Text
+**Title:** From Frameworks to Practice
+
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
+## From Frameworks to Practice
+
 You now understand where you're headed this week—the four learning outcomes that will transform how you analyze sports business. You've been introduced to the five major revenue streams and seen why they operate as an interconnected ecosystem rather than independent channels.
 
 Before diving into the details of each stream, you need context from someone who's actually done this work. In this module, you'll hear directly from Kevin Abrams, SVP of Football Operations & Strategy at the New York Giants—a $10 billion organization. His insights on salary cap management, AI implementation, and business-football integration will ground the theory you're about to explore with real-world examples and strategic trade-offs.

@@ -1,5 +1,8 @@
 # MODULE 0: Bridge-In - The $100M Question
-**Version:** 2.1.0 | **Last Updated:** 2026-01-13
+**Version:** 2.2.0 | **Last Updated:** 2026-01-15
+
+### Version 2.2.0 Changes
+- **ADDED:** Element 5B - Anchor Project overview infobox (introduces 5-week project before graphic novels)
 
 ### Version 2.1.0 Changes
 - **RESTORED:** Graphic novels with consistent introduction pattern
@@ -20,6 +23,7 @@
 | 3 | **ⓘ Infobox (Callout)** ⬤ Required | The revenue problem statement | Type directly | Blue variant |
 | 4 | **⚙ iFrame Widget** ⬤ Required | Pre-Assessment Quiz | Embed `revenue-strategy-pre-assessment.html` | 10-question diagnostic |
 | 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Personalized guidance |
+| 5B | **ⓘ Infobox (Callout)** ⬤ Required | Anchor Project overview | Type directly | Introduces 5-week CFL Expansion project |
 | 6 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "Expansion Day" | Embed PDF or images | CFL anchor project intro |
 | 7 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "Five Streams" | Embed PDF or images | Nashville Predators story |
 
@@ -323,42 +327,72 @@ Your quiz results create a personalized learning path for this week. Lower score
 
 ---
 
+## Element 5B: Infobox - Anchor Project Overview
+
+**Uplimit Implementation:**
+1. Select **Infobox** element
+2. Choose variant: **Callout** (blue)
+3. Copy markdown below:
+
+```
+Title: ◉ Your Anchor Project: CFL Expansion Proposal
+
+Throughout this course, you'll develop a comprehensive business proposal for a new CFL franchise. This isn't hypothetical—the CFL actively evaluates expansion markets, and you'll use real frameworks to build a professional-grade analysis.
+
+**The Project:**
+You'll select a Canadian city and build a complete expansion proposal, applying each week's frameworks as you go.
+
+**4 Milestones Across 5 Weeks:**
+- **Milestone 1 (Week 1):** Market Selection & Revenue Projections — Choose your city and project 5-year revenue using the five-stream model
+- **Milestone 2 (Week 2):** Media & Fan Engagement Strategy — Design your franchise's media rights approach and fan acquisition plan
+- **Milestone 3 (Weeks 3-4):** Sponsorship & Brand Strategy — Build sponsorship packages and develop your franchise brand identity
+- **Milestone 4 (Week 5):** Final Proposal & Presentation — Integrate everything into a board-ready expansion pitch
+
+**This Week's Focus:**
+By the end of Week 1, you'll submit Milestone 1: a 2-3 page Market Analysis Brief selecting your expansion city and projecting its revenue potential.
+
+**Coming Up Next:**
+Two graphic novels introduce this week's concepts. "Expansion Day" follows Maya Chen's fight to bring CFL football to Halifax—the same challenge you'll tackle in your project. "Five Streams" shows how Jessica Torres saved the Nashville Predators by mastering the five revenue streams you'll learn this week.
+```
+
+---
+
 ## Element 6: Graphic Novel - "Expansion Day"
 
 **Uplimit Implementation:**
 1. Select **Text** element for intro
 2. Select **iFrame** or **Image** element for graphic novel
 
-**Introduction Text:**
+**Introduction Text (Copy to Uplimit):**
 ```markdown
 ### Visual Story: Explore This Week's Concepts
 
-Before diving into the core content, explore this week's concepts through visual storytelling. These graphic novels bring sports business scenarios to life.
-```
-
-**Graphic Novel:** "Expansion Day: A CFL Story"
-
-**Location:** `modules/shared-resources/graphic-novels/01-expansion-day-week1.md`
-
-**Story Synopsis:**
-Follow Marcus Chen, a sports executive, as he navigates the high-stakes world of CFL expansion. This story introduces the anchor project you'll develop throughout the course—bringing professional football to a new Canadian market.
-
-**Learning Connection:**
-This narrative introduces the CFL Expansion anchor project that threads through all 5 weeks. You'll apply each week's frameworks to build a comprehensive expansion proposal.
+Before diving into the core content, explore this week's concepts through visual storytelling. These two graphic novels bring sports business scenarios to life.
 
 ---
 
-## Element 7: Graphic Novel - "Five Streams"
+**"Expansion Day: A CFL Story"**
 
-**Graphic Novel:** "Five Streams: The Nashville Predators Story"
+Follow Maya Chen, a former VP at Maple Leaf Sports who left Toronto to bring football home to the Maritimes. When the CFL announces it's considering expansion, Maya must build a business case for Halifax that balances revenue potential with competitive balance—the same challenge you'll tackle in your anchor project.
 
-**Location:** `modules/shared-resources/graphic-novels/01b-five-streams-week1.md`
+**Why read this?** This story introduces the CFL Expansion project you'll develop throughout all 5 weeks. Each milestone builds on Marcus's journey as you create your own comprehensive expansion proposal.
 
-**Story Synopsis:**
-Follow the Nashville Predators' journey from struggling expansion team to playoff contender. This story visualizes how the five revenue streams—media, ticketing, sponsorship, merchandise, and betting—work together as an interconnected ecosystem.
+*Reading time: ~10 minutes*
 
-**Learning Connection:**
-This narrative introduces the five revenue streams you'll analyze this week and sets up the Nashville Predators case study in Module 5.
+---
+
+**"Five Streams: The Nashville Predators Story"**
+
+Follow Jessica Torres, a Nashville native who built her career at Maple Leaf Sports, as she returns home to save the struggling Predators. When the franchise is bleeding $40 million behind the league average, Jessica must activate all five revenue streams—media, ticketing, sponsorship, merchandise, and premium experiences—to turn the team around.
+
+**Why read this?** The story visualizes how the five revenue streams work as an interconnected ecosystem, not isolated channels. You'll analyze Nashville's real turnaround in the case study later this week.
+
+*Reading time: ~8 minutes*
+```
+
+**Graphic Novel Files:**
+- "Expansion Day": `modules/shared-resources/graphic-novels/01-expansion-day-week1.md`
+- "Five Streams": `modules/shared-resources/graphic-novels/01b-five-streams-week1.md`
 
 ---
 

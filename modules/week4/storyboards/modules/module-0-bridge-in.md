@@ -400,22 +400,24 @@ Your quiz results create a personalized learning path for this week. Lower score
 1. Select **Text** element for intro
 2. Select **iFrame** or **Image** element for graphic novel
 
-**Introduction Text:**
+**Introduction Text (Copy to Uplimit):**
 ```markdown
 ### Visual Story: Explore This Week's Concepts
 
-Before diving into the core content, explore this week's concepts through visual storytelling. This graphic novel brings the athlete brand-building journey to life.
+Before diving into the core content, explore this week's concepts through visual storytelling.
+
+---
+
+**"Building an Empire: An Athlete Brand Story"**
+
+Follow Maya Jordan, a tennis champion approaching 40, as she faces a critical question: What happens to a $50 million brand when you stop playing? The story dramatizes how elite athletes transform athletic success into generational wealth—balancing endorsements, owned businesses, investments, and media production across five brand pillars.
+
+**Why read this?** This narrative introduces the strategic choices you'll analyze in the Serena Williams case: Sports Legacy, Fashion Empire, Beauty Brand, Media Production, and Venture Capital. You'll use these frameworks to build athlete brand portfolios and evaluate emerging sports investments.
+
+*Reading time: ~10 minutes*
 ```
 
-**Graphic Novel:** "Building an Empire: An Athlete Brand Story"
-
-**Location:** `modules/shared-resources/graphic-novels/04-building-an-empire-week4.md`
-
-**Story Synopsis:**
-Follow Maya Jordan, a tennis champion in her 40s, as she builds a business empire beyond the court. The story dramatizes how elite athletes transform athletic success into generational wealth through strategic brand architecture—balancing endorsements, owned businesses, investments, and media production.
-
-**Learning Connection:**
-This narrative introduces the five brand pillars that create lasting athlete value: Sports Legacy, Fashion Empire, Beauty Brand, Media Production, and Venture Capital—the core concepts students will analyze this week through the Serena Williams case.
+**Graphic Novel File:** `modules/shared-resources/graphic-novels/04-building-an-empire-week4.md`
 
 ---
 

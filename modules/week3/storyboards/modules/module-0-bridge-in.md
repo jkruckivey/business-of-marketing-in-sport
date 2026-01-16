@@ -445,22 +445,24 @@ Remember: This quiz isn't graded, it's a diagnostic tool to help you learn effic
 1. Select **Text** element for intro
 2. Select **iFrame** or **Image** element for graphic novel
 
-**Introduction Text:**
+**Introduction Text (Copy to Uplimit):**
 ```markdown
 ### Visual Story: Explore This Week's Concepts
 
-Before diving into the core content, explore this week's concepts through visual storytelling. This graphic novel brings the sponsorship and betting transformation to life.
+Before diving into the core content, explore this week's concepts through visual storytelling.
+
+---
+
+**"The New Revenue Frontier: Inside Sports Betting's Transformation"**
+
+May 14, 2018: The Supreme Court strikes down PASPA, opening the door to legal sports betting across America. Follow three partnership executives—at a major league, a sports network, and a casino operator—as they navigate the first 100 days after legalization. Each faces the same challenge: convince skeptical leadership that betting partnerships are worth the brand risk, then build activation frameworks that prove ROI.
+
+**Why read this?** The story introduces the five sponsorship activations you'll analyze this week: Stadium Integration, Broadcast Partnership, Mobile Engagement, Data Licensing, and Responsible Gaming. You'll use these frameworks to evaluate real betting partnerships and calculate sponsorship ROI.
+
+*Reading time: ~12 minutes*
 ```
 
-**Graphic Novel:** "The New Revenue Frontier: Inside Sports Betting's Transformation"
-
-**Location:** `modules/shared-resources/graphic-novels/03-new-frontier-week3.md`
-
-**Story Synopsis:**
-May 14, 2018: The Supreme Court strikes down PASPA. Follow three partnership executives—at a major league, a sports network, and a casino operator—as they navigate the first 100 days after legalization. Each faces the same challenge: convince skeptical leadership that betting partnerships are worth the brand risk, then build activation frameworks that prove ROI.
-
-**Learning Connection:**
-This narrative introduces the five sponsorship activations that define modern betting partnerships: Stadium Integration, Broadcast Partnership, Mobile Engagement, Data Licensing, and Responsible Gaming—the core concepts students will analyze this week.
+**Graphic Novel File:** `modules/shared-resources/graphic-novels/03-new-frontier-week3.md`
 
 ---
 

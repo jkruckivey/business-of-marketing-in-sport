@@ -464,22 +464,24 @@ Remember: This quiz isn't graded, it's a diagnostic tool to help you learn effic
 1. Select **Text** element for intro
 2. Select **iFrame** or **Image** element for graphic novel
 
-**Introduction Text:**
+**Introduction Text (Copy to Uplimit):**
 ```markdown
 ### Visual Story: Explore This Week's Concepts
 
-Before diving into the core content, explore this week's concepts through visual storytelling. This graphic novel brings the media rights strategy to life.
+Before diving into the core content, explore this week's concepts through visual storytelling.
+
+---
+
+**"The $5.2 Billion Bet: A Rogers Media Story"**
+
+Follow Raj Sharma, a media executive, as Rogers Communications makes the historic $5.2 billion NHL rights acquisition—the largest sports media deal in Canadian history. When skeptics question whether any content is worth that price, Raj must defend a strategy built on five strategic benefits: Cable Retention, Ad Revenue, Streaming Growth, Wireless Bundling, and Competitive Moat.
+
+**Why read this?** The story dramatizes the strategic thinking you'll analyze this week. Was Rogers right to bet big on live sports? You'll evaluate the deal's 10-year performance in the case study and decide what Rogers should do when the contract expires in 2026.
+
+*Reading time: ~10 minutes*
 ```
 
-**Graphic Novel:** "The $5.2 Billion Bet: A Rogers Media Story"
-
-**Location:** `modules/shared-resources/graphic-novels/02-the-bet-week2.md`
-
-**Story Synopsis:**
-Follow Raj Sharma, a media executive, as Rogers Communications makes the historic $5.2 billion NHL rights acquisition. The story dramatizes the strategic thinking behind Canada's largest sports media deal and the risks of betting big on live sports content.
-
-**Learning Connection:**
-This narrative introduces the five strategic benefits Rogers hoped to achieve: Cable Retention, Ad Revenue, Streaming Growth, Wireless Bundling, and Competitive Moat—the core concepts students will analyze this week.
+**Graphic Novel File:** `modules/shared-resources/graphic-novels/02-the-bet-week2.md`
 
 ---
 

@@ -530,22 +530,24 @@ Your quiz results create a personalized learning path for this final week. Lower
 1. Select **Text** element for intro
 2. Select **iFrame** or **Image** element for graphic novel
 
-**Introduction Text:**
+**Introduction Text (Copy to Uplimit):**
 ```markdown
 ### Visual Story: Explore This Week's Concepts
 
-Before diving into the core content, explore this week's concepts through visual storytelling. This graphic novel brings the heritage property strategic challenge to life.
+Before diving into the core content, explore this week's concepts through visual storytelling.
+
+---
+
+**"The Hall: A Hockey Heritage Story"**
+
+Follow Elena Kowalski, a museum CEO in her 50s, as she confronts the Hockey Hall of Fame's existential challenge: attendance is down 22%, younger fans aren't visiting, and the board wants aggressive growth. But every innovation risks alienating the curators, donors, and hockey legends who built the institution. Can she transform the Hall without destroying what makes it special?
+
+**Why read this?** The story dramatizes the strategic tension you'll analyze in the HHOF case: Preserve (protect heritage), Transform (embrace digital), or Hybrid (balanced evolution). You'll evaluate these scenarios using financial data and stakeholder analysis, then defend your recommendation to the board.
+
+*Reading time: ~12 minutes*
 ```
 
-**Graphic Novel:** "The Hall: A Hockey Heritage Story"
-
-**Location:** `modules/shared-resources/graphic-novels/05-the-hall-week5.md`
-
-**Story Synopsis:**
-Follow Elena Kowalski, a Ukrainian-Canadian museum CEO in her 50s, as she transforms the Hockey Hall of Fame by balancing tradition with innovation. The story dramatizes the strategic tension between preserving heritage and embracing change—and the stakeholders who must be convinced along the way.
-
-**Learning Connection:**
-This narrative introduces the five strategic pillars for heritage properties: Immersive Experiences, Oral Archives, Virtual Access, New Narratives, and Global Community—the core concepts students will analyze this week through the HHOF case.
+**Graphic Novel File:** `modules/shared-resources/graphic-novels/05-the-hall-week5.md`
 
 ---
 

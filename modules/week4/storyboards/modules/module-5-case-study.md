@@ -1,5 +1,8 @@
 # MODULE 5: Case Analysis - Serena Williams: Brand Strategy Analysis (BOPPPS: Practice)
-**Version:** 1.6.0 | **Last Updated:** 2026-01-13
+**Version:** 1.7.0 | **Last Updated:** 2026-01-15
+
+### Version 1.7.0 Changes
+- **ADDED:** Element 3A - Practice Quiz (5 questions) for case comprehension check
 
 ### Version 1.6.0 Changes
 - **CORRECTED:** Removed non-existent HBS case reference (517050 does not exist)
@@ -21,6 +24,7 @@
 | 1 | **▬ Text** ⬤ Required | Connecting intro to case analysis | Type directly | Bridge from simulations to real analysis |
 | 2 | **ⓘ Infobox (Callout)** ⬤ Required | Analysis overview + recommended readings | Type directly | Links to Forbes, Reuters, Afrotech articles |
 | 3 | **▶ Video** ⬤ Required | "Serena Williams: Strategic Analysis Framework" (2 min) | Upload MP4 | Introduces 3 strategic pivots before analysis |
+| 3A | **📝 Practice Quiz** ⬤ Required | Serena Williams Case Check (5 questions) | Configure in Uplimit | Tests case comprehension before analysis |
 | 4 | **▬ Text** ⬤ Required | Analysis framework: 4 questions to guide analysis | Type directly | Structured case analysis approach |
 | 5 | **⚙ iFrame Widget** ◐ Recommended | **Serena's Brand Portfolio Analyzer** | Embed widget | Interactive analysis of her actual strategy |
 | 6 | **▤ Details** ○ Optional | Serena Ventures portfolio analysis | Type directly | Deep dive on her $111M investment fund |
@@ -124,6 +128,90 @@ These articles provide the foundation for analyzing Serena's transition from ath
 1. Upload Serena Case video MP4
 2. Add SRT caption file from `Videos/HeyGen Scripts/`
 3. Place after Infobox, before analysis framework
+
+---
+
+## Element 3A: Practice Quiz - Serena Williams Case Check
+
+**Uplimit Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Configure as ungraded self-assessment
+3. Add the following 5 multiple choice questions:
+
+---
+
+### Question 1: Revenue Stream Allocation
+
+Based on the video and readings, what distinguishes Serena's wealth-building approach from most elite athletes?
+
+A) She earned more prize money than any other athlete in history
+B) She prioritized equity-based income (owned businesses, investments) over fee-based income (endorsements) ✅
+C) She negotiated the largest endorsement contracts in sports history
+D) She focused exclusively on tennis and avoided business distractions
+
+**Feedback (Correct):** Correct! The video explicitly states Serena shifted "from taking endorsement cash to taking equity stakes in companies." While most athletes optimize for endorsement fees (guaranteed income), Serena allocated ~70% of her brand value to equity-based wealth builders—Serena Ventures and S by Serena—that appreciate over time.
+
+**Feedback (Incorrect):** The case emphasizes Serena's strategic choice between fee-based income (endorsements, prize money) and equity-based wealth (owned businesses, investments). Review the video's first strategic pivot: "from endorser to investor."
+
+---
+
+### Question 2: The Three Strategic Pivots
+
+The video identifies three strategic pivots that define Serena's business transformation. Which correctly lists all three?
+
+A) Tennis→Business, American→Global, Athlete→Celebrity
+B) Endorser→Investor, Athlete→Founder, Individual→Platform ✅
+C) Player→Coach, Competitor→Commentator, Athlete→Agent
+D) Amateur→Pro, Singles→Doubles, Court→Corporation
+
+**Feedback (Correct):** Correct! The three strategic pivots are: (1) Endorser→Investor (taking equity instead of endorsement fees), (2) Athlete→Founder (launching Serena Ventures with 85+ portfolio companies), and (3) Individual→Platform (S by Serena as a platform for other women entrepreneurs, not just a personal brand).
+
+**Feedback (Incorrect):** The video clearly outlines three specific pivots that transformed Serena from a traditional athlete into a business mogul. Each pivot represents a fundamental shift in how she captured value from her brand equity.
+
+---
+
+### Question 3: Serena Ventures Investment Thesis
+
+What is the core investment thesis behind Serena Ventures' $111M fund?
+
+A) Investing exclusively in sports and fitness companies
+B) Maximizing short-term returns through high-risk tech bets
+C) Investing in founders who are women and people of color, who receive only 2% of VC funding ✅
+D) Building a celebrity endorsement network across portfolio companies
+
+**Feedback (Correct):** Correct! Serena Ventures invests in underrepresented founders—78% of their portfolio are women or people of color founders. This isn't charity; it's identifying systematically undervalued assets. Women-founded companies receive only 2% of VC funding despite representing 40% of entrepreneurs, creating an arbitrage opportunity that has delivered 25-35% IRR.
+
+**Feedback (Incorrect):** The Forbes and Reuters readings detail Serena Ventures' investment philosophy. Consider what Serena said: "Investing in people who look like the world we live in." What market inefficiency does this strategy exploit?
+
+---
+
+### Question 4: Strategic Timing
+
+According to the video, why was the TIMING of Serena's business building critical to her success?
+
+A) She waited until after retirement to avoid distractions from tennis
+B) She built business infrastructure while still playing, creating momentum for her transition ✅
+C) She started businesses during her off-seasons only
+D) She delegated all business decisions to family members until retirement
+
+**Feedback (Correct):** Correct! The video emphasizes: "She built business infrastructure while still playing, so she had momentum when she transitioned away from competitive tennis." Serena launched Serena Ventures in 2014 (age 32) and S by Serena in 2018 (age 36)—both during her active playing career, not after. This sequencing ensured her businesses had traction before her athletic career and brand relevance declined.
+
+**Feedback (Incorrect):** The video explicitly discusses timing: "When did she start investing? When did she launch Serena Ventures? How did she balance business building with competing?" The answer reveals why sequencing matters for athlete wealth preservation.
+
+---
+
+### Question 5: Replicability Assessment
+
+The video frames a critical question: "Is Serena's playbook replicable?" Which statement best captures why this matters for analysis?
+
+A) Her strategy only works for tennis players, not other sports
+B) Understanding what she did that others could copy vs. what required unique advantages helps identify transferable lessons ✅
+C) Her success was entirely due to her on-court dominance and cannot be learned
+D) Replication is impossible because she had family wealth to start investing
+
+**Feedback (Correct):** Correct! The video asks: "What did she have that others don't? What did she do that others could copy?" This analytical lens separates unique advantages (global fame, established brand) from replicable strategies (equity focus, early investment timing, platform thinking). Your Week 4 assessment asks you to identify which 3 strategic decisions from her playbook YOU would replicate.
+
+**Feedback (Incorrect):** The video poses the replicability question to frame your analysis. It's not asking whether replication is possible—it's asking you to distinguish between Serena's unique advantages and her strategic choices that any athlete could adopt.
 
 ---
 

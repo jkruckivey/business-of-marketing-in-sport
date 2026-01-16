@@ -142,21 +142,65 @@ Create 5 numbered items:
 **Item 5 - Title:** "Betting & Gaming"
 **Item 5 - Description:** "Sports betting partnerships and data licensing. Emerging stream, growing rapidly. Risk: Regulatory changes and integrity concerns."
 
+### Element 3A: Widget Introduction - Revenue Mix Slider
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Build Your Revenue Portfolio
+
+Now that you understand the five major revenue streams, let's practice building a balanced portfolio—the same challenge facing every sports organization.
+
+## Your Challenge
+
+You're a strategic consultant advising a new professional sports franchise. The ownership group asks: "How should we allocate focus across revenue streams to balance growth with stability?" Your task: build a revenue portfolio that reflects your strategic priorities.
+
+## What You'll Practice
+
+- Allocating resources across media rights, ticketing, sponsorship, merchandising, and betting
+- Understanding the risk/reward profile of each stream (stable vs. high-growth)
+- Seeing how portfolio composition affects overall organizational risk
+- Comparing your strategy to real league allocations (NFL, NBA, EPL)
+
+## How the Revenue Mix Slider Works
+
+1. **Adjust Sliders:** Move each slider to set your percentage allocation (must total 100%)
+2. **Watch the Pie Chart:** See your portfolio visualized in real time
+3. **Check Risk Score:** Higher allocations to betting = higher risk; higher media/ticketing = stability
+4. **Check Growth Projection:** See projected 5-year growth based on your mix
+5. **Compare to Presets:** Click "NFL Model," "NBA Model," or "EPL Model" to see real allocations
+
+## Strategic Considerations
+
+- **Media Rights (40-60%):** Most leagues depend heavily on media—but these contracts are locked for 9-12 years. High stability, moderate growth.
+- **Ticketing (20-30%):** Capacity-constrained. You can't sell more than your stadium holds. Stable but limited ceiling.
+- **Sponsorship (15-25%):** Relationship-driven with high growth potential, but requires brand investment.
+- **Merchandising (5-10%):** Tied to team performance and star players. Spikes during championships.
+- **Betting (2-8%):** Highest growth (30-40% annually) but regulatory risk and integrity concerns.
+
+## After the Widget
+
+Export your portfolio allocation—you'll reference it when writing your Board Strategy Defense memo in Module 4.
+```
+
+---
+
 #### Element 4: iFrame Widget - Revenue Mix Slider
 
 ### ⚙ Interactive Activity: Revenue Mix Slider
 
 **Practice: WLO 1.1 (Map major revenue streams) & WLO 1.3 (Evaluate growth potential and risks)**
 
-You've just learned about the five major revenue streams in professional sport. Now it's time to see how they work together as an ecosystem.
+You've learned about the five major revenue streams that power professional sports. Now it's time to apply that knowledge by building your own revenue portfolio—the same strategic challenge facing every franchise CFO and league commissioner.
 
-In this interactive activity, you'll build your own revenue portfolio by allocating 100% across the five streams: Media Rights, Ticketing, Sponsorship, Merchandising, and Betting. As you adjust the sliders, you'll see real-time feedback on your portfolio's risk level and growth potential.
+In this interactive exercise, you'll allocate 100% of focus across the five streams using intuitive sliders. As you adjust each allocation, the widget calculates your portfolio's overall risk score (based on the volatility of each stream) and projects 5-year growth potential (based on industry trends). You'll see why most leagues concentrate 40-60% in media rights, and discover the trade-offs between high-growth streams like betting and stable foundations like ticketing.
 
 **What you'll discover:**
 
-- Why most leagues depend heavily on media rights (40-60%)
-- The trade-offs between high-growth streams (Betting) and stable streams (Ticketing)
-- How different allocation strategies create different risk profiles
+- Why most leagues depend heavily on media rights (40-60%) despite limited growth potential
+- The mathematical trade-offs between high-growth streams (Betting at 30-40% annual growth) and stable streams (Ticketing with capacity constraints)
+- How different allocation strategies create dramatically different risk profiles—and why there's no single "right" answer
+- Real-world portfolio comparisons: NFL's "maximum stability" vs. EPL's "brand-driven" approach
 
 **Time commitment:** 3 minutes
 **Learning outcomes practiced:** WLO 1.1 (Mapping revenue streams), WLO 1.3 (Evaluating growth potential and risks)
@@ -287,21 +331,64 @@ The most sophisticated valuations also consider **revenue interdependencies**: h
 
 ---
 
+### Element 5C: Widget Introduction - Media Rights Calculator
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Calculate Media Rights Value
+
+You've learned that media rights represent 40-60% of league revenue. But how do broadcasters and leagues arrive at those massive numbers? This calculator reveals the formula.
+
+## Your Challenge
+
+You're a league executive negotiating your next media rights deal. ESPN, Amazon, and Apple are all bidding. To evaluate offers, you need to understand what drives deal value. Your task: model different scenarios to see how audience size, advertising rates, and contract terms combine to create deals worth billions.
+
+## What You'll Practice
+
+- Calculating total media deal value from key inputs (audience, CPM, games, contract length)
+- Understanding why the NFL commands $110B while MLS gets $250M
+- Seeing how CPM (cost per thousand viewers) drives advertising economics
+- Comparing shared vs. local media revenue models
+
+## How the Calculator Works
+
+1. **Set League Parameters:** Number of teams, games per season, average audience size
+2. **Input Ad Economics:** CPM rate ($15-70 based on demographic value)
+3. **Set Contract Terms:** Length (3-12 years), annual escalation percentage
+4. **Calculate Deal Value:** Widget shows total contract value, per-team share, and revenue percentage
+5. **Toggle Revenue Sharing:** See how shared vs. local models affect individual team economics
+
+## Strategic Considerations
+
+- **Audience is King:** The NFL's 17M average viewers drives its premium. The NHL's 500K average explains its smaller deals.
+- **CPM Varies by Demo:** Sports attract males 18-49 (high CPM $50-70). Women's sports attract different demos (growing CPM).
+- **Length = Stability:** Longer contracts lock in value but limit upside if viewership grows.
+- **Streaming Changes Math:** Tech companies value subscribers differently than advertisers—same audience, different economics.
+
+## After the Widget
+
+You'll use this understanding in the Streaming Wars Decision Game next, where you'll choose between traditional TV and streaming offers.
+```
+
+---
+
 #### Element 6: iFrame Widget - Media Rights Calculator
 
 ### ⚙ Interactive Activity: Media Rights Calculator
 
 **Practice: WLO 1.1 (Map major revenue streams) & WLO 1.3 (Evaluate growth potential)**
 
-You've learned that media rights are the largest revenue stream for most leagues (40-60% of total revenue). But what determines how much a media deal is worth?
+You've learned that media rights dominate league economics at 40-60% of total revenue. Now you'll learn the math behind those massive deals by building valuations from first principles—the same process broadcasters and league executives use during negotiations.
 
-In this interactive calculator, you'll input key factors—league size, audience reach, advertising rates (CPM), and contract length—to calculate total media deal value. You'll see how variables like viewership and cost-per-thousand viewers multiply to create deals worth billions.
+In this interactive calculator, you'll input the key variables that drive media deal value: league size (number of teams and games), audience reach (average viewers per game), advertising economics (CPM—cost per thousand impressions), and contract structure (length and escalation). Watch how these inputs multiply together to produce deals ranging from $250 million (MLS) to $110 billion (NFL). You'll understand why small changes in viewership or CPM create billion-dollar swings in contract value.
 
 **What you'll discover:**
-- Why the NFL's $110B deal dwarfs other leagues
-- How audience size and advertising rates interact
-- The impact of contract length on total deal value
-- The difference between shared vs. local media revenue
+
+- The mathematical formula that produces the NFL's $110B deal vs. MLS's $250M—and why the gap is so enormous
+- How audience size and CPM interact multiplicatively (doubling audience AND doubling CPM = 4× value)
+- Why contract length matters: 12-year deals lock in stability but sacrifice upside from growing audiences
+- The economic difference between shared revenue (NFL model) and local media rights (MLB model)
 
 **Time commitment:** 4 minutes
 **Learning outcomes practiced:** WLO 1.1 (Understanding media rights mechanics), WLO 1.3 (Evaluating what drives growth)
@@ -374,21 +461,64 @@ Leagues increasingly split rights packages to maximize total revenue: sell tradi
 
 **Table Note:** "Streaming platforms' different economics explain why tech companies can outbid traditional broadcasters—they're valuing strategic fit, not just immediate revenue."
 
+### Element 10A: Widget Introduction - Streaming Wars Decision Game
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Navigate the Streaming Wars
+
+Traditional TV vs. streaming—this is the defining strategic question in sports media today. Every major league has wrestled with this decision, and now you will too.
+
+## Your Challenge
+
+You're the NHL commissioner. Two media companies have submitted final offers for your next rights package. ESPN offers traditional TV with guaranteed advertising revenue. Apple TV+ offers streaming with higher total value but subscriber-dependent returns. Your decision will shape the league's economics for the next decade. Which path do you choose?
+
+## What You'll Practice
+
+- Evaluating competing media offers with different risk/reward profiles
+- Understanding the economic differences between advertising and subscription models
+- Projecting financial outcomes under different market scenarios (cord-cutting accelerates vs. stabilizes)
+- Making strategic decisions under uncertainty—the core skill of sports business leadership
+
+## How the Game Works
+
+1. **Review the Offers:** ESPN ($8B/10 years, guaranteed, ad-based) vs. Apple TV+ ($10B/10 years, subscriber-dependent, global)
+2. **Analyze the Trade-offs:** Higher guaranteed revenue vs. higher upside with risk
+3. **Make Your Decision:** Choose one platform OR propose a hybrid split
+4. **See 5-Year Projections:** Watch how your choice plays out under different scenarios (cord-cutting accelerates, streaming grows, market stabilizes)
+5. **Compare to Reality:** See what the real NHL actually did—and why
+
+## Strategic Considerations
+
+- **Guaranteed vs. Upside:** ESPN's $8B is locked in. Apple's $10B depends on subscriber growth hitting targets.
+- **Cord-Cutting Risk:** Traditional TV audiences decline 5-7% annually. Will this accelerate or stabilize?
+- **Global Reach:** Streaming reaches international fans. Traditional TV is geographically limited.
+- **Hybrid Hedging:** Most leagues split packages to capture value from both worlds—but complexity increases.
+
+## After the Widget
+
+You've now seen why media rights negotiations are so complex. The "right" answer depends on risk tolerance and market predictions—there's no objectively correct choice. This ambiguity is what makes sports business strategy fascinating.
+```
+
+---
+
 #### Element 11: iFrame Widget - Streaming Wars Decision Game
 
 ### ⚙ Interactive Activity: Streaming Wars Decision Game
 
 **Practice: WLO 1.1 (Understand media rights options) & WLO 1.3 (Evaluate strategic trade-offs)**
 
-Leagues increasingly face a critical question: traditional TV with guaranteed revenue, or streaming with global reach and uncertain returns? The NHL, NBA, and NFL have all split rights packages to hedge their bets.
+Leagues increasingly face a critical strategic question: traditional TV with guaranteed revenue, or streaming with global reach and uncertain returns? The NHL, NBA, and NFL have all navigated this decision—and now you'll experience the same pressure and uncertainty that commissioners face during negotiations.
 
-In this decision game, you're the NHL commissioner choosing between two media offers: ESPN (traditional, $8B/10 years, advertising-based) or Apple TV+ (streaming, $10B/10 years, subscription-based, global reach). You'll see 5-year financial projections and understand why "hybrid deals" became the industry standard.
+In this decision game, you step into the role of NHL commissioner with two competing offers on your desk. ESPN offers the traditional path: $8 billion over 10 years, guaranteed, advertising-based. Apple TV+ offers the disruptive path: $10 billion over 10 years, but subscriber-dependent with global reach potential. After making your choice, you'll watch 5-year financial projections unfold under different market scenarios—cord-cutting accelerating, streaming surging, or markets stabilizing. You'll discover firsthand why "hybrid deals" became the industry standard and why there's rarely a clear "right" answer.
 
 **What you'll discover:**
-- Why streaming offers higher total value but more uncertainty
-- The trade-offs between guaranteed ad revenue vs. subscription growth
-- How cord-cutting trends impact long-term broadcast value
-- Why leagues split rights packages instead of choosing one platform
+
+- Why streaming offers higher total value ($10B vs. $8B) but introduces significant uncertainty around subscriber growth
+- The fundamental trade-offs between guaranteed advertising revenue (stable but declining) vs. subscription growth (volatile but expanding)
+- How cord-cutting trends create long-term risk for traditional broadcast deals—and why that risk is hard to quantify
+- Why leagues increasingly split rights packages between traditional and streaming partners instead of choosing one platform
 
 **Time commitment:** 5 minutes
 **Learning outcomes practiced:** WLO 1.1 (Understanding media rights landscape), WLO 1.3 (Evaluating strategic media decisions)
@@ -590,21 +720,65 @@ This explains the industry's pivot toward **unconstrained digital revenue**—me
 
 ---
 
+### Element 12C: Widget Introduction - Dynamic Pricing Simulator
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Master Dynamic Pricing
+
+Airlines do it. Hotels do it. Now every professional sports team does it. Dynamic pricing—adjusting ticket prices based on demand—can increase annual revenue by 15-25%. This simulator puts you in the ticket pricing seat.
+
+## Your Challenge
+
+You're the VP of Ticketing for the Toronto Raptors. The season schedule just dropped: 41 home games against opponents ranging from the Lakers (high demand) to the Pistons (low demand). Your task: set optimal prices for each game type to maximize total revenue while maintaining acceptable attendance.
+
+## What You'll Practice
+
+- Identifying the demand factors that drive ticket pricing (opponent, day, team record, special events)
+- Finding the revenue-maximizing price point (higher prices vs. lower attendance trade-off)
+- Calculating how dynamic pricing outperforms static pricing over a full season
+- Understanding why the same seat costs $400 for one game and $120 for another
+
+## How the Simulator Works
+
+1. **Select Game Scenario:** Choose opponent strength (weak/medium/strong), day of week, team record, special events
+2. **Set Your Price:** Use the slider to set ticket price ($50-$500)
+3. **See Demand Response:** Widget shows projected attendance based on your price (higher price = lower attendance)
+4. **Calculate Revenue:** Price × Attendance = Game Revenue
+5. **Compare Strategies:** See how dynamic pricing (varying by game) beats static pricing (same price all season)
+
+## Strategic Considerations
+
+- **Opponent Effect:** Lakers/Warriors/Celtics games command 2-3× higher prices than rebuilding teams
+- **Day of Week:** Weekend games (Sat/Sun) see 20-30% higher demand than weekday games
+- **Team Performance:** Playoff contention increases willingness-to-pay by 15-25%
+- **Special Events:** Giveaways, jersey retirements, and rivalries create demand spikes
+- **The Trade-off:** Pushing prices too high increases per-ticket revenue but decreases volume—find the balance
+
+## After the Widget
+
+You'll apply this understanding in the Stadium Revenue Optimizer next, where you'll design the premium vs. general admission mix for an entire arena.
+```
+
+---
+
 #### Element 13: iFrame Widget - Dynamic Pricing Simulator
 
 ### ⚙ Interactive Activity: Dynamic Pricing Simulator
 
 **Practice: WLO 1.1 (Understand ticketing mechanics) & WLO 1.3 (Evaluate revenue optimization strategies)**
 
-Ticketing generates 20-30% of team revenue, but not all games are equal. Dynamic pricing lets teams adjust prices based on demand factors—and can increase annual revenue by 15-25%.
+Ticketing generates 20-30% of team revenue, but not all games are created equal. A Tuesday night game against a rebuilding team might struggle to fill seats, while a Saturday showdown against championship contenders sells out instantly. Dynamic pricing captures this reality—and can increase annual ticketing revenue by 15-25% compared to static pricing.
 
-In this simulator, you'll set ticket prices for Toronto Raptors games based on opponent strength, day of week, team record, and special events. Watch how these factors impact attendance and total revenue in real time.
+In this simulator, you'll take on the role of VP of Ticketing for the Toronto Raptors, setting prices for different game scenarios. Adjust opponent strength, day of week, team performance, and special events, then set your ticket price and watch how demand responds. You'll see the fundamental trade-off: higher prices increase per-ticket revenue but decrease attendance. Find the revenue-maximizing sweet spot for each game type, and calculate how much more revenue dynamic pricing generates over a full 41-game home season.
 
 **What you'll discover:**
-- Why Lakers tickets cost $400 but Pistons tickets cost $120
-- The trade-off between higher prices and lower attendance
-- How dynamic pricing captures more value than static pricing
-- Which factors have the biggest impact on demand
+
+- Why Lakers tickets cost $400 while Pistons tickets cost $120—the same seat, wildly different prices
+- The mathematical trade-off between higher prices and lower attendance (and where the revenue maximum lies)
+- How dynamic pricing captures 15-25% more annual revenue than static "one price fits all" approaches
+- Which demand factors have the biggest impact: opponent quality, day of week, team record, or special events
 
 **Time commitment:** 5 minutes
 **Learning outcomes practiced:** WLO 1.1 (Understanding ticketing revenue stream), WLO 1.3 (Evaluating optimization strategies)
@@ -687,21 +861,64 @@ The evolution of stadium economics has shifted dramatically from a **"fill the s
 
 ---
 
+### Element 15B: Widget Introduction - Stadium Revenue Optimizer
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Design Your Arena's Revenue Mix
+
+Modern stadiums aren't just places to watch games—they're revenue engines designed to maximize per-capita spending. This optimizer reveals the economics behind every arena renovation and new construction.
+
+## Your Challenge
+
+You're the arena designer for a new 18,000-seat basketball venue. Ownership gives you one directive: "Maximize ticketing revenue while maintaining some affordable seating for regular fans." You must allocate capacity across luxury suites, club seats, and general admission. How do you balance revenue maximization with fan accessibility?
+
+## What You'll Practice
+
+- Understanding why premium seating (10-15% of capacity) generates 40-50% of ticketing revenue
+- Designing seating mixes that balance revenue goals with accessibility
+- Calculating how different allocation strategies affect total annual revenue
+- Seeing why every stadium renovation prioritizes premium inventory expansion
+
+## How the Optimizer Works
+
+1. **Set Total Capacity:** Default 18,000 seats (adjustable for different venue sizes)
+2. **Allocate Percentages:** Use sliders to set % luxury suites, % club seats, % general admission (must total 100%)
+3. **See Revenue Calculations:** Widget applies pricing (Suites $200K/season, Club $10K/seat, GA $75/game × 41 games)
+4. **View Revenue Breakdown:** Pie chart shows revenue contribution by section
+5. **Compare Scenarios:** See how 5% more suites vs. 5% more GA affects total revenue
+
+## Strategic Considerations
+
+- **The 40-50% Rule:** Premium seating represents 10-15% of capacity but generates 40-50% of revenue. This economic reality drives every arena design decision.
+- **Price Multipliers:** Suite pricing ($200K/season for 12 seats) vs. GA ($3,075/season for 1 seat) = 5× revenue per seat
+- **Accessibility Trade-off:** Maximizing suites alienates regular fans and risks community backlash
+- **Corporate vs. Fan Base:** Suites serve corporate clients; GA serves your passionate fans. Both matter for different reasons.
+
+## After the Widget
+
+You'll see these economics applied when you analyze the Nashville Predators case—how they transformed their arena's revenue mix during their turnaround.
+```
+
+---
+
 #### Element 16: iFrame Widget - Stadium Revenue Optimizer
 
 ### ⚙ Interactive Activity: Stadium Revenue Optimizer
 
 **Practice: WLO 1.1 (Understand ticketing revenue structure) & WLO 1.3 (Evaluate revenue optimization strategies)**
 
-Modern stadium economics have shifted from a "fill the seats" model to a "maximize per-capita revenue" model. Premium seating (luxury suites, club seats) represents only 10-15% of capacity but generates 40-50% of ticketing revenue.
+Modern stadium economics have fundamentally shifted from a "fill the seats" model to a "maximize per-capita revenue" model. This transformation explains why every new arena and major renovation prioritizes premium seating expansion—even when it reduces total capacity.
 
-In this optimizer, you'll design the seating mix for an 18,000-seat arena by adjusting the percentage of luxury suites, club seats, and general admission. Watch how total revenue changes as you prioritize premium inventory—and discover why virtually every stadium renovation expands premium seating.
+In this optimizer, you'll design the seating allocation for an 18,000-seat arena. Using allocation sliders, distribute capacity across luxury suites ($200K per season), club seats ($10K per seat per season), and general admission ($75 per game × 41 games). Watch how small changes in premium allocation create dramatic revenue swings. You'll discover the counterintuitive truth: removing 500 GA seats to add 20 luxury suites often INCREASES total revenue—and understand the ethical tension between revenue optimization and fan accessibility.
 
 **What you'll discover:**
-- Why 10-15% of capacity generates 40-50% of revenue
-- The trade-off between maximizing revenue and maintaining fan accessibility
-- How premium seating pricing creates exponential returns
-- Why teams prioritize luxury suite expansion in renovations
+
+- Why 10-15% of capacity generates 40-50% of revenue—the exponential math of premium pricing
+- The strategic trade-off between maximizing revenue and maintaining affordable seating for regular fans
+- How premium seating pricing (5× revenue per seat vs. GA) creates compounding returns on investment
+- Why virtually every stadium renovation in the past 20 years has expanded premium inventory at the expense of GA
 
 **Time commitment:** 4 minutes
 **Learning outcomes practiced:** WLO 1.1 (Understanding premium seating economics), WLO 1.3 (Evaluating revenue optimization vs. accessibility)
@@ -969,22 +1186,64 @@ The advantage: **inventory isn't limited**. Teams can sell dozens of in-venue ad
 
 ---
 
+### Element 20C: Widget Introduction - Sponsorship ROI Calculator
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Calculate Sponsorship Value
+
+Sponsors don't write $40 million checks for logos—they're investing in measurable brand outcomes. This calculator reveals how teams and sponsors evaluate deal value.
+
+## Your Challenge
+
+You're a brand manager evaluating a sports sponsorship investment. Your CFO asks: "What will we get for our money?" You need to model brand impressions, estimated brand lift, and deal value to justify the investment. Your task: demonstrate that activation strategy matters more than logo size.
+
+## What You'll Practice
+
+- Calculating brand impressions from different sponsorship types (naming rights, jersey, category)
+- Understanding how market size affects deal value (Toronto vs. Winnipeg)
+- Seeing how activation level transforms ROI ("logo only" vs. "full integration")
+- Building the business case for sponsorship investment
+
+## How the Calculator Works
+
+1. **Select Deal Type:** Naming rights ($15-50M), jersey patch ($5-30M), or category partner ($500K-10M)
+2. **Choose Market Size:** Large (Toronto/NY), Medium (Edmonton/Denver), Small (Winnipeg/Sacramento)
+3. **Set Activation Level:** Logo only, Event presence, or Full integration
+4. **See Outputs:** Brand impressions (millions), estimated brand lift (%), customer acquisition estimate, deal value ($M/year)
+5. **Compare Scenarios:** See how activation level transforms the same rights fee into dramatically different returns
+
+## Strategic Considerations
+
+- **Market Size Multiplier:** Scotiabank Arena ($40M/year in Toronto) vs. similar deal in Winnipeg ($10M/year)—same activation opportunities, different reach.
+- **Activation Transforms Value:** "Logo only" captures maybe 30% of potential value. "Full integration" (loyalty programs, hospitality, content) captures 100%+.
+- **Beyond Visibility:** The best sponsors measure brand favorability, consideration intent, and customer acquisition—not just impressions.
+- **Long-Term Relationships:** Naming rights are 15-20 year commitments. Jersey sponsors sign 3-5 year deals. Different time horizons, different valuations.
+
+## After the Widget
+
+You'll see sponsorship activation in action when you study the Nashville Predators case—how they rebuilt sponsor relationships during their turnaround.
+```
+
+---
+
 #### Element 21: iFrame Widget - Sponsorship ROI Calculator
 
 ### ⚙ Interactive Activity: Sponsorship ROI Calculator
 
 **Practice: WLO 1.1 (Understand sponsorship mechanics) & WLO 1.3 (Evaluate activation strategies)**
 
-Sponsorship generates 15-25% of team revenue, but not all sponsorships are equal. The best sponsors activate beyond logos—creating fan experiences that build positive brand associations.
+Sponsorship generates 15-25% of team revenue, but the gap between mediocre and excellent sponsorships is enormous. The difference isn't the logo size or the rights fee—it's activation. Brands that fully integrate their partnerships generate 3-5× more value than those who simply place a logo and hope for results.
 
-In this calculator, you'll input deal type (naming rights, jersey patch, category partner), market size, and activation level to calculate brand impressions, estimated brand lift, and deal value. You'll see why activation matters more than logo placement alone.
+In this calculator, you'll build sponsorship valuations from the brand's perspective. Select deal type (naming rights, jersey patch, category partner), market size (which determines reach), and activation level (which determines value extraction). The widget calculates brand impressions, estimated brand lift, customer acquisition potential, and implied deal value. You'll discover why Scotiabank pays $40M/year for their Toronto arena while similar deals in smaller markets cost $10M—and why activation strategy matters more than geography.
 
 **What you'll discover:**
 
-- Why Scotiabank Arena costs $40M/year but smaller markets pay $10M
-- How "full integration" drives 3-5× more value than "logo only"
-- The relationship between brand impressions and sponsorship value
-- Why sponsors measure success beyond visibility
+- Why Scotiabank Arena costs $40M/year in Toronto while similar naming rights in smaller markets cost $10M—the market size multiplier
+- How "full integration" activation drives 3-5× more value than "logo only" approaches with identical rights fees
+- The relationship between brand impressions (reach) and brand lift (impact)—why more isn't always better
+- Why sophisticated sponsors measure success through customer acquisition and brand favorability, not just visibility metrics
 
 **Time commitment:** 4 minutes
 **Learning outcomes practiced:** WLO 1.1 (Understanding sponsorship revenue stream), WLO 1.3 (Evaluating activation strategies)
@@ -1266,21 +1525,64 @@ Sports betting represents the **newest and fastest-growing revenue stream**, cur
 
 ---
 
+### Element 25B: Widget Introduction - Betting Market Simulator
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: Navigate the Betting Opportunity
+
+Sports betting went from illegal to a $200+ billion global market in just six years. This simulator helps you understand the strategic decisions leagues face in this rapidly evolving landscape.
+
+## Your Challenge
+
+You're the Chief Revenue Officer for a professional sports league. The Supreme Court just struck down the federal betting ban, and your phone is ringing off the hook with partnership offers from FanDuel, DraftKings, BetMGM, and others. How do you maximize revenue while managing integrity risks? Your task: design a betting strategy that balances opportunity with responsibility.
+
+## What You'll Practice
+
+- Understanding the multiple revenue streams from betting (partnerships, data licensing, media integration)
+- Evaluating trade-offs between exclusive partnerships vs. open market approaches
+- Seeing how data licensing creates value independent of direct betting partnerships
+- Assessing integrity risks and responsible gaming obligations
+
+## How the Simulator Works
+
+1. **Choose Partnership Strategy:** Exclusive partner (one operator, higher guarantee), multiple partners (competition, less control), or no official partners (open market, less revenue)
+2. **Set Data Licensing Approach:** Sell to operators, keep proprietary, or create your own betting product
+3. **Configure Media Integration:** Odds in broadcasts, betting-focused content, or minimal integration
+4. **See Revenue Projections:** Widget calculates partnership revenue, data licensing revenue, and engagement multiplier
+5. **Assess Risk Exposure:** Higher integration = higher revenue but higher integrity risk
+
+## Strategic Considerations
+
+- **Exclusive vs. Multiple Partners:** FanDuel might pay $200M/year for exclusivity; four operators might pay $75M each. Math favors multiple partners, but control favors exclusivity.
+- **Data Is Gold:** Real-time player tracking, injury reports, and game data are essential for live betting. This data has value independent of partnership deals.
+- **Engagement Multiplier:** Fans with active bets watch 30-40% more content. This drives media value, not just betting revenue.
+- **Integrity Investment:** More integration requires more monitoring. Budget 5-10% of betting revenue for integrity systems.
+
+## After the Widget
+
+You've now explored all five revenue streams. Next, the Ecosystem Cascade Simulator ties everything together—showing how a single strategic decision (signing a star player) creates ripple effects across ALL streams.
+```
+
+---
+
 #### Element 26: iFrame Widget - Betting Market Simulator
 
 ### ⚙ Interactive Activity: Betting Market Simulator
 
 **Practice: WLO 1.1 (Map emerging revenue streams) & WLO 1.3 (Evaluate growth potential and risks)**
 
-Sports betting is the fastest-growing revenue stream (30-40% year-over-year growth), currently representing 2-8% of league revenue. Legalization has fundamentally changed how leagues monetize fan engagement.
+Sports betting is the fastest-growing revenue stream in professional sports, expanding 30-40% year-over-year since legalization. Currently representing 2-8% of league revenue, betting has fundamentally changed how organizations think about fan engagement, data value, and media integration.
 
-In this simulator, you'll make strategic decisions about betting partnerships, data licensing deals, and media integration. You'll see how different approaches impact revenue, fan engagement, and risk exposure.
+In this simulator, you'll step into the role of a league Chief Revenue Officer navigating the post-legalization landscape. Make strategic decisions about partnership structure (exclusive vs. multiple operators), data licensing approach (sell, keep proprietary, or build your own product), and media integration level (minimal, moderate, or full). Watch how each decision affects projected revenue, fan engagement metrics, and integrity risk exposure. You'll understand why leagues have embraced betting despite integrity concerns—the engagement multiplier (30-40% more content consumed by bettors) drives value across ALL revenue streams.
 
 **What you'll discover:**
-- How betting legalization creates multiple revenue opportunities
-- Trade-offs between official partnerships vs. open market approaches
-- Why data licensing is a separate (and valuable) revenue stream
-- How betting integration drives increased viewership across all content
+
+- How betting legalization creates multiple revenue opportunities beyond direct partnerships (data licensing, media integration, engagement amplification)
+- The strategic trade-offs between exclusive partnerships (higher guarantee, less control) vs. open market approaches (more competition, more complexity)
+- Why data licensing is a separate and valuable revenue stream—real-time player tracking and game data are essential for live betting
+- How betting integration drives increased viewership across all content, creating value in media rights, sponsorship, and ticketing
 
 **Time commitment:** 3 minutes
 **Learning outcomes practiced:** WLO 1.1 (Understanding betting revenue stream), WLO 1.3 (Evaluating growth potential and regulatory risks)
@@ -1368,21 +1670,64 @@ This explains why teams "overpay" for stars. They're investing in **ecosystem am
 
 ---
 
+### Element 28B: Widget Introduction - Ecosystem Cascade Simulator
+
+**Copy this markdown directly into Uplimit:**
+
+```markdown
+# Practice: See the Revenue Ecosystem in Action
+
+This is the synthesis exercise—where everything you've learned comes together. You've explored each revenue stream individually. Now see how they form an interconnected ecosystem where one strategic decision creates cascading effects across all streams.
+
+## Your Challenge
+
+You're the Edmonton Oilers' ownership group evaluating whether to sign Connor McDavid to an 8-year, $100 million contract ($12.5M/year). Your CFO presents the direct analysis: ticket revenue increase ~$5M/year, merchandise increase ~$3M/year. Total direct revenue: $8M/year. "We're losing $4.5M per year on this deal," she says. Is she right?
+
+## What You'll Practice
+
+- Seeing how a single investment cascades through all five revenue streams simultaneously
+- Understanding the difference between direct effects (easily measured) and indirect effects (harder to measure but often larger)
+- Applying "ecosystem thinking" vs. "portfolio thinking" to sports business decisions
+- Defending strategic investments that appear to "lose money" on traditional ROI analysis
+
+## How the Simulator Works
+
+1. **See the Investment:** McDavid contract: $12.5M/year salary cost
+2. **View Direct Effects:** Click to reveal ticketing (+$5M) and merchandising (+$3M) = $8M direct revenue
+3. **Reveal Indirect Effects:** Click to reveal media rights (+$10M), sponsorship (+$5M), playoff revenue (+$15M average), betting engagement (+$2M)
+4. **See Total Ecosystem Value:** $30-40M+ annually—far exceeding the $12.5M cost
+5. **Compare Scenarios:** Toggle between "Star Player," "New Arena," and "Betting Partnership" to see different cascade patterns
+
+## Strategic Considerations
+
+- **Direct vs. Indirect:** Direct effects (tickets, merchandise) are easy to measure but capture only 25-30% of total value. Indirect effects require ecosystem thinking.
+- **Why Teams "Overpay":** Traditional ROI analysis only sees the $8M direct return. Ecosystem analysis sees the $30-40M total value. This is why star players command "irrational" salaries.
+- **Time Horizon Matters:** Some indirect effects (playoff revenue, franchise valuation) take years to materialize. Short-term ROI analysis misses long-term value.
+- **The $100 Million Question Answered:** Remember the bridge video? Now you can answer it. McDavid isn't worth $8M—he's worth $30-40M annually because of ecosystem amplification.
+
+## After the Widget
+
+Export your ecosystem analysis. You'll use this framework in Module 4's Revenue Empire Builder simulation and your Board Strategy Defense memo—defending strategic investments using ecosystem thinking, not just direct ROI.
+```
+
+---
+
 #### Element 29: iFrame Widget - Ecosystem Cascade Simulator
 
 ### ⚙ Interactive Activity: Ecosystem Cascade Simulator
 
 **Practice: WLO 1.1 (See revenue stream interconnections) & WLO 1.2 (Understand sport's unique business model) & WLO 1.3 (Evaluate strategic investments)**
 
-This is where everything comes together. You've explored each revenue stream individually—now it's time to see how they form an **ecosystem** rather than a portfolio.
+This is where everything comes together. You've explored each revenue stream individually—media rights, ticketing, sponsorship, merchandising, and betting. Now it's time to see how they form an interconnected **ecosystem** rather than a collection of independent streams. This distinction—portfolio thinking vs. ecosystem thinking—is the critical insight that separates expert sports business analysts from novices.
 
-In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to an $8-year, $100 million contract. At first glance, it looks like a losing investment: $12.5M salary vs. $8M direct revenue. But click to reveal the **indirect effects** and watch the ecosystem amplification unfold.
+In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to an 8-year, $100 million contract. At first glance, the numbers look bad: $12.5M annual salary cost generates only ~$8M in direct revenue (tickets and merchandise). A $4.5M annual loss? Not when you apply ecosystem thinking. Click to progressively reveal the **indirect effects**—how McDavid amplifies media rights value (+$10M), sponsorship renewals (+$5M), playoff revenue potential (+$15-20M per deep run), franchise valuation (+$50-100M), and betting engagement (+$2M). Watch the cascade unfold and see why the true ecosystem value reaches $30-40M+ annually, far exceeding the salary cost.
 
 **What you'll discover:**
-- How a single investment cascades through all five revenue streams
-- Why teams "overpay" for stars (ecosystem thinking vs. direct ROI)
-- The difference between direct effects (tickets, merchandise) and indirect effects (media, sponsorship, playoffs, betting)
-- How strategic decisions create ripple effects worth $30-40M+ annually
+
+- How a single strategic investment cascades through all five revenue streams simultaneously—the definition of ecosystem thinking
+- Why teams "overpay" for star players when analyzed through direct ROI but create massive value through ecosystem amplification
+- The critical difference between direct effects (tickets, merchandise—easy to measure) and indirect effects (media, sponsorship, playoffs, betting—harder to measure but often 3-5× larger)
+- How strategic decisions create ripple effects worth $30-40M+ annually—answering "The $100 Million Question" from the bridge video
 
 **Time commitment:** 5 minutes
 **Learning outcomes practiced:** WLO 1.1 (Seeing interconnections), WLO 1.2 (Understanding sport's unique model), WLO 1.3 (Evaluating strategic investments)

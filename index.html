@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business of Sports Marketing - Course Resources</title>
+    <title>Interactive Widget Index - Business of Sports Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-purple: #d5cae0;
+            --color-green: #c0d1cd;
+            --color-turquoise: #bfe5e7;
+            --color-sand: #f0ede0;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --border-radius: 8px;
+            --border-radius-sm: 4px;
+        }
+
+        *:focus {
+            outline: 2px solid #3182ce;
+            outline-offset: 2px;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,141 +40,487 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
-            color: white;
+            font-family: var(--font-family-primary);
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-800);
+            padding: 20px;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem;
         }
 
         .container {
-            max-width: 800px;
-            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 32px;
+            border: 1px solid var(--color-neutral-200);
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: white;
+            color: var(--color-neutral-900);
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-align: center;
         }
 
         .subtitle {
-            font-size: 1.2rem;
-            color: #c5b783;
-            margin-bottom: 3rem;
-        }
-
-        .resource-grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        .resource-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(197, 183, 131, 0.3);
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: white;
-            display: block;
-        }
-
-        .resource-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            border-color: #c5b783;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(197, 183, 131, 0.2);
-        }
-
-        .resource-card h2 {
-            font-size: 1.5rem;
-            color: #c5b783;
-            margin-bottom: 0.5rem;
-        }
-
-        .resource-card p {
-            color: #d0d0d0;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .resource-tag {
-            display: inline-block;
-            background: rgba(197, 183, 131, 0.2);
-            color: #c5b783;
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 1rem;
-        }
-
-        .footer {
             text-align: center;
-            margin-top: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(197, 183, 131, 0.2);
-            color: #999;
-            font-size: 0.9rem;
+            color: var(--color-neutral-500);
+            font-size: 16px;
+            margin-bottom: 32px;
         }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
+        .week-section {
+            margin-bottom: 32px;
+        }
+
+        .week-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--color-neutral-200);
+        }
+
+        .week-number {
+            background: var(--color-neutral-900);
+            color: white;
+            padding: 6px 14px;
+            border-radius: var(--border-radius-sm);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .week-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--color-neutral-800);
+        }
+
+        .widget-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .widget-card {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 16px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .widget-card:hover {
+            border-color: var(--color-neutral-400);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .widget-card:focus {
+            border-color: #3182ce;
+        }
+
+        .widget-name {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--color-neutral-800);
+        }
+
+        .widget-type {
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: var(--border-radius-sm);
+            width: fit-content;
+            font-weight: 500;
+        }
+
+        .type-simulator {
+            background: var(--color-turquoise);
+            color: var(--color-neutral-700);
+        }
+
+        .type-calculator {
+            background: var(--color-green);
+            color: var(--color-neutral-700);
+        }
+
+        .type-tool {
+            background: var(--color-purple);
+            color: var(--color-neutral-700);
+        }
+
+        .type-assessment {
+            background: var(--color-sand);
+            color: var(--color-neutral-700);
+        }
+
+        .type-learning {
+            background: var(--color-neutral-200);
+            color: var(--color-neutral-700);
+        }
+
+        .widget-count {
+            color: var(--color-neutral-500);
+            font-size: 14px;
+        }
+
+        .stats-bar {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 32px;
+            padding: 16px;
+            background: var(--color-neutral-100);
+            border-radius: var(--border-radius);
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--color-neutral-500);
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            color: var(--color-neutral-600);
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: var(--border-radius-sm);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
             }
 
-            .subtitle {
-                font-size: 1rem;
+            .widget-grid {
+                grid-template-columns: 1fr;
             }
 
-            .resource-card {
-                padding: 1.5rem;
+            .stats-bar {
+                flex-wrap: wrap;
+                gap: 16px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Business of Sports Marketing</h1>
-        <p class="subtitle">MBA Course Resources & Documentation</p>
+        <h1>Interactive Widget Index</h1>
+        <p class="subtitle">Business of Sports Marketing - All Interactive Learning Tools</p>
 
-        <div class="resource-grid">
-            <a href="marketing-cheat-sheet.html" class="resource-card">
-                <h2>📋 Marketing Cheat Sheet</h2>
-                <p>Internal reference guide with embedded widget demos, detailed executive interview profiles, anchor project breakdown, and key marketing messages. Perfect for sharing with prospects or training new team members.</p>
-                <span class="resource-tag">For Marketing Team</span>
-            </a>
-
-            <a href="course-outline.html" class="resource-card">
-                <h2>📚 Course Outline</h2>
-                <p>Complete course structure with 5 Course Learning Outcomes (CLOs), week-by-week module breakdown, assessment architecture, and detailed anchor project milestone progression. Includes UDL and QM alignment documentation.</p>
-                <span class="resource-tag">Academic Planning</span>
-            </a>
-
-            <a href="course-marketing.html" class="resource-card">
-                <h2>🎯 Marketing Page</h2>
-                <p>External-facing marketing page showcasing the course's interactive scenarios, AI-enhanced learning methodology, executive insights, and comprehensive anchor project structure. Designed for prospective students.</p>
-                <span class="resource-tag">Student Recruitment</span>
-            </a>
-
-            <a href="course-index.html" class="resource-card">
-                <h2>🗂️ Student Hub</h2>
-                <p>Student-facing navigation hub for accessing all course materials, weekly modules, interactive widgets, case studies, and assessment resources. Central access point during course delivery.</p>
-                <span class="resource-tag">Course Delivery</span>
-            </a>
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-number">46</div>
+                <div class="stat-label">Total Widgets</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Weeks</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">9</div>
+                <div class="stat-label">Simulators</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">11</div>
+                <div class="stat-label">Calculators</div>
+            </div>
         </div>
 
-        <div class="footer">
-            <p>The Business of Sports Marketing | MBA-Level Course</p>
-            <p>5 Weeks • 40+ Interactive Scenarios • 8 Industry Executives • 105-Point Capstone</p>
+        <div class="legend" role="list" aria-label="Widget type legend">
+            <div class="legend-item" role="listitem">
+                <div class="legend-dot" style="background: var(--color-turquoise);"></div>
+                <span>Simulator</span>
+            </div>
+            <div class="legend-item" role="listitem">
+                <div class="legend-dot" style="background: var(--color-green);"></div>
+                <span>Calculator</span>
+            </div>
+            <div class="legend-item" role="listitem">
+                <div class="legend-dot" style="background: var(--color-purple);"></div>
+                <span>Tool</span>
+            </div>
+            <div class="legend-item" role="listitem">
+                <div class="legend-dot" style="background: var(--color-sand);"></div>
+                <span>Assessment</span>
+            </div>
+            <div class="legend-item" role="listitem">
+                <div class="legend-dot" style="background: var(--color-neutral-200);"></div>
+                <span>Learning Resource</span>
+            </div>
         </div>
+
+        <!-- Week 1 -->
+        <section class="week-section" aria-labelledby="week1-heading">
+            <div class="week-header">
+                <span class="week-number">Week 1</span>
+                <h2 id="week1-heading" class="week-title">The Business of Sport - Where the Money Flows</h2>
+                <span class="widget-count">(13 widgets)</span>
+            </div>
+            <div class="widget-grid">
+                <a href="modules/week1/widgets/learning-outcomes-week.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">Week 1 Learning Outcomes</span>
+                </a>
+                <a href="modules/week1/widgets/revenue-strategy-pre-assessment.html" class="widget-card">
+                    <span class="widget-type type-assessment">Assessment</span>
+                    <span class="widget-name">Revenue Strategy Pre-Assessment</span>
+                </a>
+                <a href="modules/week1/widgets/revenue-mix-slider.html" class="widget-card">
+                    <span class="widget-type type-simulator">Simulator</span>
+                    <span class="widget-name">Revenue Mix Slider</span>
+                </a>
+                <a href="modules/week1/widgets/dynamic-pricing-simulator.html" class="widget-card">
+                    <span class="widget-type type-simulator">Simulator</span>
+                    <span class="widget-name">Dynamic Pricing Simulator</span>
+                </a>
+                <a href="modules/week1/widgets/ecosystem-cascade-simulator.html" class="widget-card">
+                    <span class="widget-type type-simulator">Simulator</span>
+                    <span class="widget-name">Ecosystem Cascade Simulator</span>
+                </a>
+                <a href="modules/week1/widgets/betting-market-simulator.html" class="widget-card">
+                    <span class="widget-type type-simulator">Simulator</span>
+                    <span class="widget-name">Betting Market Simulator</span>
+                </a>
+                <a href="modules/week1/widgets/stadium-revenue-optimizer.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Stadium Revenue Optimizer</span>
+                </a>
+                <a href="modules/week1/widgets/revenue-empire-builder.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Revenue Empire Builder</span>
+                </a>
+                <a href="modules/week1/widgets/sponsorship-roi-calculator.html" class="widget-card">
+                    <span class="widget-type type-calculator">Calculator</span>
+                    <span class="widget-name">Sponsorship ROI Calculator</span>
+                </a>
+                <a href="modules/week1/widgets/media-rights-calculator.html" class="widget-card">
+                    <span class="widget-type type-calculator">Calculator</span>
+                    <span class="widget-name">Media Rights Calculator</span>
+                </a>
+                <a href="modules/week1/widgets/cfl-city-selector.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">CFL City Selector</span>
+                </a>
+                <a href="modules/week1/widgets/cfl-project-tie-in.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">CFL Project Tie-In</span>
+                </a>
+                <a href="modules/week1/widgets/guided-memo-demo.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Guided Memo Demo</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Week 2 -->
+        <section class="week-section" aria-labelledby="week2-heading">
+            <div class="week-header">
+                <span class="week-number">Week 2</span>
+                <h2 id="week2-heading" class="week-title">Media, Content & Fan Engagement</h2>
+                <span class="widget-count">(5 widgets)</span>
+            </div>
+            <div class="widget-grid">
+                <a href="modules/week2/widgets/learning-outcomes-week.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">Week 2 Learning Outcomes</span>
+                </a>
+                <a href="modules/week2/widgets/media-rights-pre-assessment.html" class="widget-card">
+                    <span class="widget-type type-assessment">Assessment</span>
+                    <span class="widget-name">Media Rights Pre-Assessment</span>
+                </a>
+                <a href="modules/week2/widgets/streaming-wars-strategy.html" class="widget-card">
+                    <span class="widget-type type-simulator">Simulator</span>
+                    <span class="widget-name">Streaming Wars Strategy</span>
+                </a>
+                <a href="modules/week2/widgets/engagement-value-chain-builder.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Engagement Value Chain Builder</span>
+                </a>
+                <a href="modules/week2/widgets/cfl-project-tie-in.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">CFL Project Tie-In</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Week 3 -->
+        <section class="week-section" aria-labelledby="week3-heading">
+            <div class="week-header">
+                <span class="week-number">Week 3</span>
+                <h2 id="week3-heading" class="week-title">Sponsorship & Betting</h2>
+                <span class="widget-count">(11 widgets)</span>
+            </div>
+            <div class="widget-grid">
+                <a href="modules/week3/widgets/sponsorship-roi-pre-assessment.html" class="widget-card">
+                    <span class="widget-type type-assessment">Assessment</span>
+                    <span class="widget-name">Sponsorship ROI Pre-Assessment</span>
+                </a>
+                <a href="modules/week3/widgets/roi-calculator.html" class="widget-card">
+                    <span class="widget-type type-calculator">Calculator</span>
+                    <span class="widget-name">ROI Calculator</span>
+                </a>
+                <a href="modules/week3/widgets/sponsorship-valuation-calculator.html" class="widget-card">
+                    <span class="widget-type type-calculator">Calculator</span>
+                    <span class="widget-name">Sponsorship Valuation Calculator</span>
+                </a>
+                <a href="modules/week3/widgets/engagement-multiplier-calculator.html" class="widget-card">
+                    <span class="widget-type type-calculator">Calculator</span>
+                    <span class="widget-name">Engagement Multiplier Calculator</span>
+                </a>
+                <a href="modules/week3/widgets/brand-risk-calculator.html" class="widget-card">
+                    <span class="widget-type type-calculator">Calculator</span>
+                    <span class="widget-name">Brand Risk Calculator</span>
+                </a>
+                <a href="modules/week3/widgets/betting-market-simulator.html" class="widget-card">
+                    <span class="widget-type type-simulator">Simulator</span>
+                    <span class="widget-name">Betting Market Simulator</span>
+                </a>
+                <a href="modules/week3/widgets/partnership-valuation-tool.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Partnership Valuation Tool</span>
+                </a>
+                <a href="modules/week3/widgets/activation-budget-builder.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Activation Budget Builder</span>
+                </a>
+                <a href="modules/week3/widgets/ethical-sponsorship-decision-tool.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Ethical Sponsorship Decision Tool</span>
+                </a>
+                <a href="modules/week3/widgets/cfl-project-tie-in.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">CFL Project Tie-In</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Week 4 -->
+        <section class="week-section" aria-labelledby="week4-heading">
+            <div class="week-header">
+                <span class="week-number">Week 4</span>
+                <h2 id="week4-heading" class="week-title">Athletes, Brands & Emerging Sports</h2>
+                <span class="widget-count">(11 widgets)</span>
+            </div>
+            <div class="widget-grid">
+                <a href="modules/week4/widgets/learning-outcomes-week.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">Week 4 Learning Outcomes</span>
+                </a>
+                <a href="modules/week4/widgets/athlete-brand-pre-assessment.html" class="widget-card">
+                    <span class="widget-type type-assessment">Assessment</span>
+                    <span class="widget-name">Athlete Brand Pre-Assessment</span>
+                </a>
+                <a href="modules/week4/widgets/week4-concept-map.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">Week 4 Concept Map</span>
+                </a>
+                <a href="modules/week4/widgets/serena-williams-comic.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">Serena Williams Comic</span>
+                </a>
+                <a href="modules/week4/widgets/athlete-brand-calculator.html" class="widget-card">
+                    <span class="widget-type type-calculator">Calculator</span>
+                    <span class="widget-name">Athlete Brand Calculator</span>
+                </a>
+                <a href="modules/week4/widgets/serena-brand-portfolio-analyzer.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Serena Brand Portfolio Analyzer</span>
+                </a>
+                <a href="modules/week4/widgets/athlete-decision-tree.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Athlete Decision Tree</span>
+                </a>
+                <a href="modules/week4/widgets/emerging-sports-investment-tool.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Emerging Sports Investment Tool</span>
+                </a>
+                <a href="modules/week4/widgets/post-career-wealth-simulator.html" class="widget-card">
+                    <span class="widget-type type-simulator">Simulator</span>
+                    <span class="widget-name">Post-Career Wealth Simulator</span>
+                </a>
+                <a href="modules/week4/widgets/brand-package-creator.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Brand Package Creator</span>
+                </a>
+                <a href="modules/week4/widgets/cfl-project-tie-in.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">CFL Project Tie-In</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Week 5 -->
+        <section class="week-section" aria-labelledby="week5-heading">
+            <div class="week-header">
+                <span class="week-number">Week 5</span>
+                <h2 id="week5-heading" class="week-title">Legacy, Culture & Future</h2>
+                <span class="widget-count">(7 widgets)</span>
+            </div>
+            <div class="widget-grid">
+                <a href="modules/week5/widgets/learning-outcomes-week.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">Week 5 Learning Outcomes</span>
+                </a>
+                <a href="modules/week5/widgets/heritage-strategy-pre-assessment.html" class="widget-card">
+                    <span class="widget-type type-assessment">Assessment</span>
+                    <span class="widget-name">Heritage Strategy Pre-Assessment</span>
+                </a>
+                <a href="modules/week5/widgets/week5-concept-map.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">Week 5 Concept Map</span>
+                </a>
+                <a href="modules/week5/widgets/legacy-innovation-matrix.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Legacy vs Innovation Matrix</span>
+                </a>
+                <a href="modules/week5/widgets/heritage-transformation-strategist.html" class="widget-card">
+                    <span class="widget-type type-tool">Tool</span>
+                    <span class="widget-name">Heritage Transformation Strategist</span>
+                </a>
+                <a href="modules/week5/widgets/future-trends-predictor.html" class="widget-card">
+                    <span class="widget-type type-simulator">Simulator</span>
+                    <span class="widget-name">Future Trends Predictor</span>
+                </a>
+                <a href="modules/week5/widgets/cfl-project-tie-in.html" class="widget-card">
+                    <span class="widget-type type-learning">Learning Resource</span>
+                    <span class="widget-name">CFL Project Tie-In</span>
+                </a>
+            </div>
+        </section>
+
     </div>
 </body>
 </html>

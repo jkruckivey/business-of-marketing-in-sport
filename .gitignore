@@ -4,6 +4,9 @@
 # Course materials (keep out of repo)
 Course Materials/
 
+# Case studies (copyrighted materials)
+**/cases/
+
 # OS files
 .DS_Store
 Thumbs.db

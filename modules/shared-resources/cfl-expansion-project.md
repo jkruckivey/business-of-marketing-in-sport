@@ -124,7 +124,7 @@ Stewart identified the **two biggest league-level revenue drivers**: media right
    - Platform strategy (TSN+, YouTube, team app)
    - Second-screen experience
 
-**Apply Al Dak's Insights:**
+**Apply Al Dark's Insights:**
 - How would Rogers/TSN view this expansion market?
 - What's the "1:2-3 activation multiplier" opportunity?
 - Data and analytics strategy for proving fan engagement
@@ -367,7 +367,7 @@ Stewart said: "If we haven't got a 10th team in Canada by ten years from now, I'
 | Week | Executive | Relevance to Project |
 |------|-----------|---------------------|
 | 1 | Kevin Abrams (NY Giants) | Franchise operations, revenue management |
-| 2 | Al Dak (Rogers) | Media rights, Canadian sports media landscape |
+| 2 | Al Dark (Rogers) | Media rights, Canadian sports media landscape |
 | 3 | Andrew Sneyd (FanDuel) | Betting partnerships, brand building |
 | 4 | Matt Rubinoff (Fairgrounds) | Building brand from scratch, proof of concept |
 | 5 | Golf Canada / CFL Commissioner (TBD) | Heritage sports, league-level strategy |

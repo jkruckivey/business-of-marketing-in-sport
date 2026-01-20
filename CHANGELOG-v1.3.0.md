@@ -146,7 +146,7 @@ Ready to see theory meet reality? Let's dive into the case!
 
 **After:**
 ```
-| 2 | **Video** ◐ Recommended | 45-minute executive interview (Al Dak) | Upload MP4 + VTT transcript | Hosted video with captions |
+| 2 | **Video** ◐ Recommended | 45-minute executive interview (Al Dark) | Upload MP4 + VTT transcript | Hosted video with captions |
 ```
 
 ---
@@ -241,20 +241,20 @@ Media rights—fees paid by broadcasters and streaming platforms to air games—
 ---
 
 #### 5. Threaded "Dynamic Pricing" Concept (Modules 4 & 7)
-**Issue:** Al Dak's "checking account to portfolio management" insight introduced in Module 2 but never referenced again (orphaned concept).
+**Issue:** Al Dark's "checking account to portfolio management" insight introduced in Module 2 but never referenced again (orphaned concept).
 
 **Location 1:** `module-4-interactive.md` - "What you'll discover" section
 
 **Added bullet:**
 ```
-- How dynamic pricing (recall Al Dak's "checking account to portfolio management" insight from Module 2) applies to streaming subscriptions
+- How dynamic pricing (recall Al Dark's "checking account to portfolio management" insight from Module 2) applies to streaming subscriptions
 ```
 
 **Location 2:** `module-7-wrap-up.md` - Key Takeaways Infobox
 
 **Added bullet:**
 ```
-✓ Dynamic pricing (Al Dak's "checking account to portfolio management") applies across media inventory
+✓ Dynamic pricing (Al Dark's "checking account to portfolio management") applies across media inventory
 ```
 
 ---

@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy Comparison Tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafafa;
+            color: #171717;
+            line-height: 1.6;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #171717;
+        }
+
+        .subtitle {
+            color: #525252;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+
+        .input-section {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .input-section h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #171717;
+        }
+
+        .slider-group {
+            margin-bottom: 16px;
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+
+        .slider-label {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #171717;
+        }
+
+        .slider-value {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #171717;
+            background: #f5f5f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            min-width: 45px;
+            text-align: center;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 3px;
+            background: #e5e5e5;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #171717;
+            cursor: pointer;
+            transition: transform 0.15s ease;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+        }
+
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 16px;
+            border-top: 1px solid #e5e5e5;
+            margin-top: 8px;
+        }
+
+        .total-label {
+            font-weight: 600;
+            color: #171717;
+        }
+
+        .total-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 4px;
+        }
+
+        .total-valid {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .total-invalid {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .remaining-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 8px;
+            margin-top: 8px;
+        }
+
+        .remaining-label {
+            font-size: 0.9rem;
+            color: #525252;
+        }
+
+        .remaining-value {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #d97706;
+            background: #fef3c7;
+            padding: 2px 10px;
+            border-radius: 4px;
+        }
+
+        .compare-btn {
+            width: 100%;
+            padding: 12px 24px;
+            background: #171717;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            margin-top: 16px;
+        }
+
+        .compare-btn:hover:not(:disabled) {
+            background: #404040;
+        }
+
+        .compare-btn:disabled {
+            background: #a3a3a3;
+            cursor: not-allowed;
+        }
+
+        .results-section {
+            display: none;
+        }
+
+        .results-section.visible {
+            display: block;
+        }
+
+        .chart-container {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .chart-container h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #171717;
+        }
+
+        .chart-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .chart-label {
+            width: 140px;
+            font-size: 0.85rem;
+            color: #525252;
+            flex-shrink: 0;
+        }
+
+        .chart-bars {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .bar-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .bar-name {
+            width: 80px;
+            font-size: 0.75rem;
+            color: #737373;
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .bar-container {
+            flex: 1;
+            height: 16px;
+            background: #f5f5f5;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .bar {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.5s ease;
+        }
+
+        .bar-yours {
+            background: #171717;
+        }
+
+        .bar-archetype {
+            background: #a3a3a3;
+        }
+
+        .bar-value {
+            width: 40px;
+            font-size: 0.75rem;
+            color: #525252;
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        .legend {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: #525252;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+        }
+
+        .match-section {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .match-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .match-badge {
+            background: #171717;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .match-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #171717;
+        }
+
+        .match-team {
+            color: #525252;
+            font-size: 0.95rem;
+        }
+
+        .match-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .match-detail {
+            background: #fafafa;
+            padding: 12px;
+            border-radius: 6px;
+        }
+
+        .match-detail-label {
+            font-size: 0.8rem;
+            color: #737373;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 4px;
+        }
+
+        .match-detail-value {
+            font-size: 0.95rem;
+            color: #171717;
+        }
+
+        .differences-section {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 6px;
+            padding: 16px;
+        }
+
+        .differences-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #92400e;
+            margin-bottom: 8px;
+        }
+
+        .difference-item {
+            font-size: 0.9rem;
+            color: #78350f;
+            margin-bottom: 4px;
+        }
+
+        .archetype-selector {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .archetype-selector h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #171717;
+        }
+
+        .archetype-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .archetype-btn {
+            padding: 8px 16px;
+            border: 1px solid #e5e5e5;
+            background: white;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .archetype-btn:hover {
+            border-color: #171717;
+        }
+
+        .archetype-btn.active {
+            background: #171717;
+            color: white;
+            border-color: #171717;
+        }
+
+        .reflection-section {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .reflection-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #166534;
+            margin-bottom: 8px;
+        }
+
+        .reflection-question {
+            font-size: 0.95rem;
+            color: #15803d;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .match-details {
+                grid-template-columns: 1fr;
+            }
+
+            .chart-label {
+                width: 100px;
+            }
+
+            .bar-name {
+                width: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Strategy Comparison Tool</h1>
+        <p class="subtitle">Compare your Revenue Empire Builder strategy to real-world team archetypes</p>
+
+        <div class="input-section">
+            <h2>Enter Your Strategy Allocation</h2>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Media Rights</span>
+                    <span class="slider-value" id="media-value">40%</span>
+                </div>
+                <input type="range" id="media" min="0" max="70" value="40">
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Ticketing & Game-Day</span>
+                    <span class="slider-value" id="tickets-value">25%</span>
+                </div>
+                <input type="range" id="tickets" min="0" max="50" value="25">
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Sponsorship</span>
+                    <span class="slider-value" id="sponsors-value">20%</span>
+                </div>
+                <input type="range" id="sponsors" min="0" max="40" value="20">
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Merchandising</span>
+                    <span class="slider-value" id="merch-value">10%</span>
+                </div>
+                <input type="range" id="merch" min="0" max="25" value="10">
+            </div>
+
+            <div class="slider-group">
+                <div class="slider-header">
+                    <span class="slider-label">Betting & Gaming</span>
+                    <span class="slider-value" id="betting-value">5%</span>
+                </div>
+                <input type="range" id="betting" min="0" max="25" value="5">
+            </div>
+
+            <div class="total-row">
+                <span class="total-label">Total Allocation</span>
+                <span class="total-value total-valid" id="total-value">100%</span>
+            </div>
+
+            <div class="remaining-row" id="remaining-row" style="display: none;">
+                <span class="remaining-label">Remaining to allocate:</span>
+                <span class="remaining-value" id="remaining-value">0%</span>
+            </div>
+
+            <button class="compare-btn" id="compare-btn">Compare to Archetypes</button>
+        </div>
+
+        <div class="results-section" id="results">
+            <div class="archetype-selector">
+                <h2>Compare Against Archetype</h2>
+                <div class="archetype-buttons">
+                    <button class="archetype-btn active" data-archetype="match">Best Match</button>
+                    <button class="archetype-btn" data-archetype="cowboys">Commercial Maximizer</button>
+                    <button class="archetype-btn" data-archetype="packers">Community Anchor</button>
+                    <button class="archetype-btn" data-archetype="nfl">Media Play</button>
+                    <button class="archetype-btn" data-archetype="msg">Venue Operator</button>
+                    <button class="archetype-btn" data-archetype="vegas">Growth Gambler</button>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>Your Strategy vs. <span id="comparison-name">Best Match</span></h2>
+
+                <div id="chart-content">
+                    <!-- Charts will be inserted here -->
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #171717;"></div>
+                        <span>Your Strategy</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #a3a3a3;"></div>
+                        <span>Archetype</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="match-section" id="match-section">
+                <div class="match-header">
+                    <span class="match-badge">Closest Match</span>
+                    <span class="match-name" id="match-name">The Commercial Maximizer</span>
+                </div>
+                <p class="match-team" id="match-team">Dallas Cowboys Model</p>
+
+                <div class="match-details">
+                    <div class="match-detail">
+                        <div class="match-detail-label">Philosophy</div>
+                        <div class="match-detail-value" id="match-philosophy">Maximize every revenue opportunity</div>
+                    </div>
+                    <div class="match-detail">
+                        <div class="match-detail-label">Works Best In</div>
+                        <div class="match-detail-value" id="match-market">Large markets, strong brands, owner-controlled venues</div>
+                    </div>
+                </div>
+
+                <div class="differences-section" id="differences-section">
+                    <div class="differences-title">Key Differences From Archetype</div>
+                    <div id="differences-list">
+                        <!-- Differences will be inserted here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="reflection-section">
+                <div class="reflection-title">Reflection Question</div>
+                <p class="reflection-question">Does this archetype match the market you had in mind when building your strategy? If not, what would you adjust to better fit your target market?</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Archetype data (updated with verified sources 2026-01-20)
+        const archetypes = {
+            cowboys: {
+                name: "The Commercial Maximizer",
+                team: "Dallas Cowboys Model",
+                philosophy: "Maximize every revenue opportunity",
+                market: "Large markets, strong brands, owner-controlled venues",
+                mix: { media: 35, tickets: 25, sponsors: 25, merch: 10, betting: 5 },
+                tradeoff: "Fan criticism of over-commercialization"
+            },
+            packers: {
+                name: "The Community Anchor",
+                team: "Green Bay Packers Model",
+                philosophy: "Fan experience and tradition first",
+                market: "Small markets, passionate fanbases, community ownership",
+                mix: { media: 45, tickets: 30, sponsors: 15, merch: 8, betting: 2 },
+                tradeoff: "Lower per-game revenue than possible"
+            },
+            nfl: {
+                name: "The Media Play",
+                team: "NFL Average Model",
+                philosophy: "Ride the media rights wave",
+                market: "Leagues with strong national deals, less venue control",
+                mix: { media: 50, tickets: 22, sponsors: 18, merch: 7, betting: 3 },
+                tradeoff: "Dependent on league-level negotiations"
+            },
+            msg: {
+                name: "The Venue Operator",
+                team: "Madison Square Garden Model",
+                philosophy: "Control the building, control the revenue",
+                market: "Premium urban locations, owned venues, year-round events",
+                mix: { media: 32, tickets: 37, sponsors: 22, merch: 9, betting: 0 },
+                tradeoff: "Massive capital investment required"
+            },
+            vegas: {
+                name: "The Growth Gambler",
+                team: "Vegas Golden Knights Model",
+                philosophy: "Bet on emerging revenue streams",
+                market: "Tech-forward markets, younger demographics, betting-legal states",
+                mix: { media: 35, tickets: 25, sponsors: 22, merch: 13, betting: 5 },
+                tradeoff: "Unproven long-term sustainability; post-championship trajectory critical"
+            }
+        };
+
+        const streamLabels = {
+            media: "Media Rights",
+            tickets: "Ticketing",
+            sponsors: "Sponsorship",
+            merch: "Merchandising",
+            betting: "Betting"
+        };
+
+        let userStrategy = {};
+        let currentArchetype = 'match';
+        let bestMatch = 'cowboys';
+
+        // Initialize sliders
+        const sliders = ['media', 'tickets', 'sponsors', 'merch', 'betting'];
+
+        function getOtherSlidersTotal(excludeSlider) {
+            return sliders.reduce((sum, slider) => {
+                if (slider === excludeSlider) return sum;
+                return sum + parseInt(document.getElementById(slider).value);
+            }, 0);
+        }
+
+        sliders.forEach(slider => {
+            const input = document.getElementById(slider);
+            const value = document.getElementById(`${slider}-value`);
+
+            input.addEventListener('input', () => {
+                const otherTotal = getOtherSlidersTotal(slider);
+                const maxAllowed = 100 - otherTotal;
+
+                // Cap the value if it would exceed 100%
+                if (parseInt(input.value) > maxAllowed) {
+                    input.value = maxAllowed;
+                }
+
+                value.textContent = `${input.value}%`;
+                updateTotal();
+            });
+        });
+
+        function updateTotal() {
+            const total = sliders.reduce((sum, slider) => {
+                return sum + parseInt(document.getElementById(slider).value);
+            }, 0);
+
+            const totalEl = document.getElementById('total-value');
+            const remainingRow = document.getElementById('remaining-row');
+            const remainingValue = document.getElementById('remaining-value');
+
+            totalEl.textContent = `${total}%`;
+
+            const remaining = 100 - total;
+
+            // Total should never exceed 100 now, but can be less
+            if (total === 100) {
+                totalEl.classList.remove('total-invalid');
+                totalEl.classList.add('total-valid');
+                document.getElementById('compare-btn').disabled = false;
+                remainingRow.style.display = 'none';
+            } else {
+                totalEl.classList.remove('total-valid');
+                totalEl.classList.add('total-invalid');
+                document.getElementById('compare-btn').disabled = true;
+                remainingRow.style.display = 'flex';
+                remainingValue.textContent = `${remaining}%`;
+            }
+        }
+
+        function getUserStrategy() {
+            return {
+                media: parseInt(document.getElementById('media').value),
+                tickets: parseInt(document.getElementById('tickets').value),
+                sponsors: parseInt(document.getElementById('sponsors').value),
+                merch: parseInt(document.getElementById('merch').value),
+                betting: parseInt(document.getElementById('betting').value)
+            };
+        }
+
+        function findBestMatch(strategy) {
+            let bestMatchKey = 'cowboys';
+            let lowestDiff = Infinity;
+
+            Object.keys(archetypes).forEach(key => {
+                const archetype = archetypes[key];
+                let diff = 0;
+
+                Object.keys(strategy).forEach(stream => {
+                    diff += Math.abs(strategy[stream] - archetype.mix[stream]);
+                });
+
+                if (diff < lowestDiff) {
+                    lowestDiff = diff;
+                    bestMatchKey = key;
+                }
+            });
+
+            return bestMatchKey;
+        }
+
+        function getDifferences(strategy, archetypeKey) {
+            const archetype = archetypes[archetypeKey];
+            const differences = [];
+
+            Object.keys(strategy).forEach(stream => {
+                const diff = strategy[stream] - archetype.mix[stream];
+                if (Math.abs(diff) >= 5) {
+                    const direction = diff > 0 ? 'higher' : 'lower';
+                    differences.push({
+                        stream: streamLabels[stream],
+                        diff: Math.abs(diff),
+                        direction
+                    });
+                }
+            });
+
+            differences.sort((a, b) => b.diff - a.diff);
+            return differences.slice(0, 3);
+        }
+
+        function renderChart(strategy, archetypeKey) {
+            const archetype = archetypes[archetypeKey];
+            const chartContent = document.getElementById('chart-content');
+
+            let html = '';
+            Object.keys(streamLabels).forEach(stream => {
+                const userVal = strategy[stream];
+                const archVal = archetype.mix[stream];
+
+                html += `
+                    <div class="chart-row">
+                        <div class="chart-label">${streamLabels[stream]}</div>
+                        <div class="chart-bars">
+                            <div class="bar-row">
+                                <span class="bar-name">Yours</span>
+                                <div class="bar-container">
+                                    <div class="bar bar-yours" style="width: ${userVal}%;"></div>
+                                </div>
+                                <span class="bar-value">${userVal}%</span>
+                            </div>
+                            <div class="bar-row">
+                                <span class="bar-name">${archetype.team.split(' ')[0]}</span>
+                                <div class="bar-container">
+                                    <div class="bar bar-archetype" style="width: ${archVal}%;"></div>
+                                </div>
+                                <span class="bar-value">${archVal}%</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            chartContent.innerHTML = html;
+        }
+
+        function renderMatchInfo(archetypeKey) {
+            const archetype = archetypes[archetypeKey];
+
+            document.getElementById('match-name').textContent = archetype.name;
+            document.getElementById('match-team').textContent = archetype.team;
+            document.getElementById('match-philosophy').textContent = archetype.philosophy;
+            document.getElementById('match-market').textContent = archetype.market;
+
+            const differences = getDifferences(userStrategy, archetypeKey);
+            const diffList = document.getElementById('differences-list');
+
+            if (differences.length === 0) {
+                diffList.innerHTML = '<div class="difference-item">Your strategy closely matches this archetype!</div>';
+            } else {
+                diffList.innerHTML = differences.map(d =>
+                    `<div class="difference-item">Your ${d.stream} is ${d.diff}% ${d.direction} than the ${archetypes[archetypeKey].team.split(' ')[0]} model</div>`
+                ).join('');
+            }
+        }
+
+        function updateComparison(archetypeKey) {
+            const actualKey = archetypeKey === 'match' ? bestMatch : archetypeKey;
+
+            document.getElementById('comparison-name').textContent =
+                archetypeKey === 'match' ? 'Best Match' : archetypes[actualKey].name;
+
+            renderChart(userStrategy, actualKey);
+            renderMatchInfo(actualKey);
+
+            // Update active button
+            document.querySelectorAll('.archetype-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.archetype === archetypeKey) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        // Compare button click
+        document.getElementById('compare-btn').addEventListener('click', () => {
+            userStrategy = getUserStrategy();
+            bestMatch = findBestMatch(userStrategy);
+            currentArchetype = 'match';
+
+            document.getElementById('results').classList.add('visible');
+            updateComparison('match');
+
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Archetype button clicks
+        document.querySelectorAll('.archetype-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                currentArchetype = btn.dataset.archetype;
+                updateComparison(currentArchetype);
+            });
+        });
+
+        // Initialize
+        updateTotal();
+    </script>
+</body>
+</html>

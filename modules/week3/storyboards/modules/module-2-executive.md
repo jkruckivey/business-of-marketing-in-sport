@@ -23,7 +23,7 @@
 ```markdown
 You now understand where you're headed this week—the four learning outcomes that will transform how you analyze sponsorship ROI and sports betting's role as a growth engine. Before diving into the frameworks, you need context from someone who's actually done this work at the highest level.
 
-**Connecting to Weeks 1-2:** You've heard from Kevin Abrams (NY Giants) about revenue ecosystems, and from Al Dak (Rogers) about media rights strategy. Now you'll hear from the marketing leader who helped build the largest sports betting brand in America.
+**Connecting to Weeks 1-2:** You've heard from Kevin Abrams (NY Giants) about revenue ecosystems, and from Al Dark (Rogers) about media rights strategy. Now you'll hear from the marketing leader who helped build the largest sports betting brand in America.
 
 In this module, you'll hear from **Andrew Sneyd, Chief Marketing Officer at FanDuel**. Andrew led FanDuel's explosive growth from scrappy startup to the #1 sports betting operator in the US, overseeing a marketing budget exceeding $1 billion. His insights on brand building, customer acquisition, and "Trust, Easy, Fun" will ground the sponsorship and betting frameworks you're about to explore.
 

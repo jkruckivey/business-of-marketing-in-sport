@@ -468,7 +468,7 @@ Ready to experiment with these frameworks? Let's go!
 
 ### Course Executive Distribution:
 - **Week 1:** Kevin Abrams (NY Giants) - sports business operations
-- **Week 2:** Al Dak (Rogers) - media rights and content
+- **Week 2:** Al Dark (Rogers) - media rights and content
 - **Week 3:** Andrew Sneyd (FanDuel) - betting marketing
 - **Week 4:** Matt Rubinoff (Fairgrounds) + Golf Canada ← YOU ARE HERE
 - **Week 5:** Jamie Dinsmore (HHOF) + Keith Pelley (MLSE) + Stewart Johnston (CFL) - CAPSTONE

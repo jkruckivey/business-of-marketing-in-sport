@@ -105,7 +105,7 @@ As VP of Content Strategy, you'll make the same high-stakes decisions that Roger
 - How subscriber churn forces constant growth to maintain revenue (10% monthly cancellation is industry average)
 - The 3-5 year break-even timeline for streaming (very different from linear TV's immediate ROI)
 - Strategic trade-offs between exclusive rights (2-3× cost) versus non-exclusive broader portfolios
-- How dynamic pricing (recall Al Dak's "checking account to portfolio management" insight from Inside the Media Business) applies to streaming subscriptions
+- How dynamic pricing (recall Al Dark's "checking account to portfolio management" insight from Inside the Media Business) applies to streaming subscriptions
 
 **Connecting to the Fan Engagement Framework:**
 Remember the fan engagement value chain from Media Rights Frameworks (passive viewer → engaged fan → super-fan)? In this simulation, you'll invest in engagement tactics that move subscribers up that chain—betting integration, fantasy features, social communities—to reduce churn and increase lifetime value.

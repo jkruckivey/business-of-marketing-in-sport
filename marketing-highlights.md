@@ -26,7 +26,7 @@ Five exclusive executive interviews featuring senior leaders from the NY Giants,
 
 ---
 
-## Week 2: Al Dak
+## Week 2: Al Dark
 **SVP Revenue, Rogers Sports Media**
 
 ### Quotable Soundbites
@@ -135,7 +135,7 @@ Five exclusive executive interviews featuring senior leaders from the NY Giants,
 | Executive | Organization | Experience |
 |-----------|--------------|------------|
 | Kevin Abrams | NY Giants | 25+ years in NFL operations |
-| Al Dak | Rogers Sports Media | Led $5.2B NHL rights monetization |
+| Al Dark | Rogers Sports Media | Led $5.2B NHL rights monetization |
 | Andrew Sneyd | FanDuel | CMO during explosive US growth |
 | Matt Rubinoff | Fairgrounds | Built 75K-member sports brand from zero |
 | Niki DaSilva | Golf Canada | Ivey HBA '03, MLSE, Deloitte |

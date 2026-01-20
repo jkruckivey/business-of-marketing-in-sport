@@ -175,7 +175,7 @@ Ready to learn from someone who's done it? Let's hear the executive perspective.
 ---
 
 ## Inside Media Rights
-**Purpose:** Deliver practitioner insights on media strategy from Al Dak, former SVP Revenue at Rogers Sports & Media (supports WLO 2.1, 2.2, 2.3)
+**Purpose:** Deliver practitioner insights on media strategy from Al Dark, former SVP Revenue at Rogers Sports & Media (supports WLO 2.1, 2.2, 2.3)
 
 **Uplimit Structure:** Second module in Unit 2
 
@@ -190,9 +190,9 @@ Ready to learn from someone who's done it? Let's hear the executive perspective.
 
 ### Infobox Content:
 ```
-Title: Executive Session with Al Dak, Former SVP Revenue - Rogers Sports & Media
+Title: Executive Session with Al Dark, Former SVP Revenue - Rogers Sports & Media
 
-Al Dak led revenue operations at Rogers Sports & Media, overseeing the sales strategy
+Al Dark led revenue operations at Rogers Sports & Media, overseeing the sales strategy
 for hockey (including the $5.2B NHL rights deal), Blue Jays baseball, and the broader
 Sportsnet portfolio. With 25+ years in Canadian sports media, he's negotiated with
 major advertisers, managed dynamic pricing strategies, and navigated the transition
@@ -210,11 +210,11 @@ Supports WLO 2.1, 2.2, 2.3, and 2.4.
 ```
 
 ### Video Specifications:
-- **File:** `Interviews/Al Dak, Transcript.txt` (transcript available)
+- **File:** `Interviews/Al Dark, Transcript.txt` (transcript available)
 - **Duration:** ~45 minutes
-- **VTT Transcript:** Generate from `Interviews/Al Dak, Transcript.txt`
+- **VTT Transcript:** Generate from `Interviews/Al Dark, Transcript.txt`
 - **Poster Image:** `week2-executive-poster.jpg` (thumbnail)
-- **Video Title:** "Executive Session: Al Dak on Rogers Sports Media, NHL Rights & Canadian Market Dynamics"
+- **Video Title:** "Executive Session: Al Dark on Rogers Sports Media, NHL Rights & Canadian Market Dynamics"
 - **Video Caption:** "Former Rogers Sports & Media SVP shares insights on the $5.2B NHL deal, dynamic pricing, and sports media strategy"
 
 **Video Content - Key Topics Covered:**
@@ -229,9 +229,9 @@ Supports WLO 2.1, 2.2, 2.3, and 2.4.
 
 ### Details Accordion Content:
 ```
-Title: About Al Dak
+Title: About Al Dark
 
-Al Dak served as SVP Revenue at Rogers Sports & Media, leading revenue operations for
+Al Dark served as SVP Revenue at Rogers Sports & Media, leading revenue operations for
 Canada's largest sports media portfolio including Sportsnet, the Toronto Blue Jays,
 and the historic $5.2B NHL rights deal.
 
@@ -257,8 +257,8 @@ Notable Context:
 
 ### AI Chat Widget Configuration:
 - **Widget Name:** "Media Strategy Q&A"
-- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand media rights economics and sports content strategy based on Al Dak's interview. Al Dak was SVP Revenue at Rogers Sports & Media, managing the $5.2B NHL deal monetization. Key topics: (1) Rogers' multi-layered NHL strategy (cable protection, advertiser leverage, MLSE ownership), (2) Dynamic pricing evolution (fixed → airline-style game-by-game), (3) Canadian market uniqueness (70%+ cable penetration, 10x playoff revenue with Canadian teams, currency challenges), (4) Data-driven fan engagement (brand health studies for 90% of sponsors), (5) Streaming vs. linear future (cable as an app, bundle evolution). Provide clear, business-focused explanations with real-world examples from the interview."
-- **Welcome Message:** "Hi! I can help clarify concepts from Al Dak's interview on media strategy at Rogers Sports & Media. What questions do you have about the NHL rights deal, dynamic pricing, Canadian market dynamics, or data-driven fan engagement?"
+- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand media rights economics and sports content strategy based on Al Dark's interview. Al Dark was SVP Revenue at Rogers Sports & Media, managing the $5.2B NHL deal monetization. Key topics: (1) Rogers' multi-layered NHL strategy (cable protection, advertiser leverage, MLSE ownership), (2) Dynamic pricing evolution (fixed → airline-style game-by-game), (3) Canadian market uniqueness (70%+ cable penetration, 10x playoff revenue with Canadian teams, currency challenges), (4) Data-driven fan engagement (brand health studies for 90% of sponsors), (5) Streaming vs. linear future (cable as an app, bundle evolution). Provide clear, business-focused explanations with real-world examples from the interview."
+- **Welcome Message:** "Hi! I can help clarify concepts from Al Dark's interview on media strategy at Rogers Sports & Media. What questions do you have about the NHL rights deal, dynamic pricing, Canadian market dynamics, or data-driven fan engagement?"
 - **Show System Prompt to User:** No
 
 **Design Rationale:**
@@ -285,7 +285,7 @@ Inside Media Rights delivered practitioner insights from executives who negotiat
 
 When you design your 5-year media strategy in Week 5, reference the executive frameworks from Inside Media Rights:
 
-- **Platform Selection Rationale:** Justify your media partner choice using executive decision criteria. Example: "Following Rogers' strategy of leveraging anchor sports content to extract larger media commitments across the portfolio (Week 2 executive interview with Al Dak), our property will pursue bundled deals that maximize total advertiser value."
+- **Platform Selection Rationale:** Justify your media partner choice using executive decision criteria. Example: "Following Rogers' strategy of leveraging anchor sports content to extract larger media commitments across the portfolio (Week 2 executive interview with Al Dark), our property will pursue bundled deals that maximize total advertiser value."
 - **Stakeholder Management:** Your vision must satisfy multiple stakeholders. Executives taught you that boards want revenue stability, fans want accessibility, and partners want exclusivity. Show how your media strategy balances these tensions.
 - **Realistic Constraints:** Acknowledge market realities. If you're a small-market property, you won't command Rogers' $5.2B valuations. The executive insights from Inside Media Rights help you set realistic expectations.
 
@@ -296,7 +296,7 @@ When you design your 5-year media strategy in Week 5, reference the executive fr
 ## Inside Media Rights Complete - Transition to The Billion-Dollar Core Product
 
 **What You've Accomplished:**
-You've heard directly from Al Dak, former SVP Revenue at Rogers Sports & Media, who managed the monetization strategy for the $5.2B NHL rights deal. You now understand how Rogers transformed Sportsnet from #3 regional network to Canada's #1 sports brand, how dynamic pricing evolved from fixed rates to airline-style game-by-game optimization, and why Canadian market dynamics (currency, cable penetration, playoff economics) create unique challenges and opportunities.
+You've heard directly from Al Dark, former SVP Revenue at Rogers Sports & Media, who managed the monetization strategy for the $5.2B NHL rights deal. You now understand how Rogers transformed Sportsnet from #3 regional network to Canada's #1 sports brand, how dynamic pricing evolved from fixed rates to airline-style game-by-game optimization, and why Canadian market dynamics (currency, cable penetration, playoff economics) create unique challenges and opportunities.
 
 **Key Takeaways:**
 - **Rogers' NHL strategy was multi-layered:** protect cable ecosystem, leverage hockey/Jays to extract larger advertiser commitments, build toward team ownership (MLSE)
@@ -2970,11 +2970,11 @@ Your Week 5 strategic vision must integrate Week 2's media frameworks comprehens
 - "Rogers NHL Deal: 10 Years Later" (14 min) - Module 5
 
 **Executive Interview:**
-- Al Dak (SVP Revenue, Rogers Sports Media) - ~45 min - Module 2
-- File: `Interviews/Al Dak SVP, Revenue, Rogers Sports and Media.mp4`
-- Transcript: `Interviews/Al Dak, Transcript.txt`
+- Al Dark (SVP Revenue, Rogers Sports Media) - ~45 min - Module 2
+- File: `Interviews/Al Dark SVP, Revenue, Rogers Sports and Media.mp4`
+- Transcript: `Interviews/Al Dark, Transcript.txt`
 
-**Key Marketing Highlights from Al Dak Interview:**
+**Key Marketing Highlights from Al Dark Interview:**
 
 > "Sports **swims upstream** against fragmentation"
 

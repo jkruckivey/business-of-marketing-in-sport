@@ -251,7 +251,7 @@ This transcript is provided for accessibility and for students who prefer readin
 - **▤ Details** provides text version for students who prefer reading (UDL choice)
 - **AI Chat** offers on-demand support for questions about interview content (UDL scaffolding)
 - Multiple means of representation: video (visual+audio), transcript (text), chat (interactive)
-- Executive perspectives continue throughout course (Week 2: Al Dak/Rogers, Week 3: Andrew Sneyd/FanDuel, Week 4: Matt Rubinoff/Fairgrounds + Golf Canada, Week 5: Jamie Dinsmore/HHOF + Stewart Johnston/CFL)
+- Executive perspectives continue throughout course (Week 2: Al Dark/Rogers, Week 3: Andrew Sneyd/FanDuel, Week 4: Matt Rubinoff/Fairgrounds + Golf Canada, Week 5: Jamie Dinsmore/HHOF + Stewart Johnston/CFL)
 - Total viewing time: ~32 minutes
 
 ---

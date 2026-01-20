@@ -11,8 +11,8 @@
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Infobox (Callout)** ⬤ Required | Context about executive + viewing guide | Type directly | Blue variant, sets expectations |
-| 2 | **Video** ◐ Recommended | 45-minute executive interview (Al Dak) | Upload MP4 + VTT transcript | Hosted video with captions |
-| 2A | **📝 Practice Quiz** ⬤ Required | Al Dak Interview Check (5 questions) | Configure in Uplift | Ungraded, tests interview insights |
+| 2 | **Video** ◐ Recommended | 45-minute executive interview (Al Dark) | Upload MP4 + VTT transcript | Hosted video with captions |
+| 2A | **📝 Practice Quiz** ⬤ Required | Al Dark Interview Check (5 questions) | Configure in Uplift | Ungraded, tests interview insights |
 | 3 | **Details** ○ Optional | Executive bio and background (optional) | Type directly | Accordion for optional depth |
 | 4 | **AI Coach** ◐ Recommended | Your Learning Coach for media strategy concepts | Configure in Uplift | Named: "Media Strategy Q&A" |
 
@@ -20,9 +20,9 @@
 
 ### Infobox Content:
 ```
-Title: Executive Session with Al Dak, SVP Revenue, Rogers Sports and Media
+Title: Executive Session with Al Dark, SVP Revenue, Rogers Sports and Media
 
-Al Dak leads revenue strategy for Rogers Sports and Media, overseeing sales,
+Al Dark leads revenue strategy for Rogers Sports and Media, overseeing sales,
 sponsorships, and partnerships for Sportsnet, the Toronto Blue Jays, and Rogers'
 NHL properties. He spent 20+ years in Canadian sports media, including leadership
 roles at CBC (Hockey Night in Canada, Sochi Olympics) and TSN. At Rogers, he's
@@ -58,11 +58,11 @@ Supports WLO 2.1, 2.2, 2.3, and 2.4.
 ---
 
 ### Video Specifications:
-- **File:** `Interviews/Al Dak SVP, Revenue, Rogers Sports and Media.mp4`
+- **File:** `Interviews/Al Dark SVP, Revenue, Rogers Sports and Media.mp4`
 - **Duration:** 45 minutes (full interview)
-- **Transcript:** `Interviews/Al Dak, Transcript.txt` (required for accessibility)
+- **Transcript:** `Interviews/Al Dark, Transcript.txt` (required for accessibility)
 - **Poster Image:** `week2-al-dak-poster.jpg` (thumbnail - to be created)
-- **Video Title:** "Al Dak: Media Rights Strategy & the Rogers Sports Empire"
+- **Video Title:** "Al Dark: Media Rights Strategy & the Rogers Sports Empire"
 - **Video Caption:** "Rogers SVP reveals how the $5.2B NHL deal, data analytics, and vertical integration transformed Canadian sports media"
 
 **Video Content - Key Topics Covered:**
@@ -74,7 +74,7 @@ Supports WLO 2.1, 2.2, 2.3, and 2.4.
 - **Linear vs. Streaming Future** (31:53-35:50): Cable won't reach zero - evolution to bundled streaming apps
 - **Career Advice** (37:25-42:55): Initiative, creativity, team sports mindset, and non-linear career paths
 
-### Element 2A: Practice Quiz - Al Dak Interview Check
+### Element 2A: Practice Quiz - Al Dark Interview Check
 
 **Uplift Implementation:**
 1. Select **Exercise - Practice Quiz** element
@@ -85,7 +85,7 @@ Supports WLO 2.1, 2.2, 2.3, and 2.4.
 
 ### Question 1: Rogers NHL Deal Rationale
 
-According to Al Dak, what was the PRIMARY strategic rationale for Rogers paying $5.2 billion for NHL rights?
+According to Al Dark, what was the PRIMARY strategic rationale for Rogers paying $5.2 billion for NHL rights?
 
 A) To maximize immediate advertising revenue
 B) To protect cable subscribers from cord-cutting and leverage NHL across Rogers' ecosystem ✅
@@ -160,9 +160,9 @@ D) It will merge with gaming platforms
 
 ### Details Accordion Content:
 ```
-Title: About Al Dak
+Title: About Al Dark
 
-Al Dak serves as SVP, Revenue at Rogers Sports and Media, where he oversees all
+Al Dark serves as SVP, Revenue at Rogers Sports and Media, where he oversees all
 sales, sponsorship, and revenue strategy for Rogers' sports portfolio including
 Sportsnet, the Toronto Blue Jays, and NHL properties. His career spans 20+ years
 in Canadian sports media, starting at media agency work in Windsor before joining
@@ -200,9 +200,9 @@ Current Portfolio (Rogers Sports & Media):
 ```
 
 ### AI Coach Configuration:
-- **Name:** "Al Dak Interview: Media Strategy Q&A"
-- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand media rights economics and sports content strategy based on Al Dak's interview. Al is SVP Revenue at Rogers Sports and Media. Answer questions about topics he covered including: (1) Rogers' $5.2B NHL deal rationale (cable protection, advertising leverage, team ownership vision), (2) dynamic pricing and inventory management (game-by-game pricing like airlines), (3) data analytics evolution (brand health studies, fan engagement tracking, attribution), (4) vertical integration strategy (rights + teams + distribution), (5) linear vs. streaming economics and future bundling models, (6) the 1:2-3 activation multiplier (how Rogers leverages NHL/Jays to extract larger agency deals). Provide clear, business-focused explanations with specific examples from Al's interview when possible. If students ask about content not covered in the interview, acknowledge the limitation and provide general industry context."
-- **Welcome Message:** "Hi! I can help clarify concepts from Al Dak's interview on media strategy. Al discussed Rogers' NHL deal, dynamic pricing, data-driven fan engagement, and the future of streaming. What questions do you have about media rights valuation, platform economics, or Rogers' strategy?"
+- **Name:** "Al Dark Interview: Media Strategy Q&A"
+- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand media rights economics and sports content strategy based on Al Dark's interview. Al is SVP Revenue at Rogers Sports and Media. Answer questions about topics he covered including: (1) Rogers' $5.2B NHL deal rationale (cable protection, advertising leverage, team ownership vision), (2) dynamic pricing and inventory management (game-by-game pricing like airlines), (3) data analytics evolution (brand health studies, fan engagement tracking, attribution), (4) vertical integration strategy (rights + teams + distribution), (5) linear vs. streaming economics and future bundling models, (6) the 1:2-3 activation multiplier (how Rogers leverages NHL/Jays to extract larger agency deals). Provide clear, business-focused explanations with specific examples from Al's interview when possible. If students ask about content not covered in the interview, acknowledge the limitation and provide general industry context."
+- **Welcome Message:** "Hi! I can help clarify concepts from Al Dark's interview on media strategy. Al discussed Rogers' NHL deal, dynamic pricing, data-driven fan engagement, and the future of streaming. What questions do you have about media rights valuation, platform economics, or Rogers' strategy?"
 - **Show System Prompt to User:** No
 
 **Design Rationale:**

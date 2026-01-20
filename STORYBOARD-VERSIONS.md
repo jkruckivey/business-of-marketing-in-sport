@@ -35,7 +35,7 @@ Addressed high-priority issues identified through three edtools plugin reviews (
 - **Fixed WLO verbs** - WLO 2.1 "Explore" → "Explain", WLO 2.3 "Understand" → "Describe" (measurable verbs)
 - **Fixed Module 3 element numbering** - Corrected duplicate Element 11, renumbered sequentially 1-12
 - **Added Week 1 callback** in Module 3 - Explicit reference to five revenue streams framework
-- **Threaded "Dynamic Pricing" concept** - Added Al Dak callback ("checking account to portfolio") in Modules 4 and 7
+- **Threaded "Dynamic Pricing" concept** - Added Al Dark callback ("checking account to portfolio") in Modules 4 and 7
 - **Threaded "Fan Engagement" concept** - Added value chain callback (passive → engaged → super-fan) in Modules 4 and 7
 - **Threaded "PAIRR methodology"** - Added to Module 7 key takeaways (AI literacy skills)
 - **Added PAIRR time estimate** in Module 6 - Total 2-3 hours with activity breakdown

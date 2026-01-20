@@ -45,7 +45,7 @@ You've been introduced to the heritage monetization dilemma—the challenge ever
 
 **Connecting to Weeks 1-4:** As you listen to this week's executives, notice how they apply frameworks you've already learned:
 - **Week 1 (Kevin Abrams):** Revenue ecosystems—how different streams interconnect in a $10B organization
-- **Week 2 (Al Dak):** Media rights strategy, streaming vs. broadcast, fan engagement data
+- **Week 2 (Al Dark):** Media rights strategy, streaming vs. broadcast, fan engagement data
 - **Week 3 (Andrew Sneyd):** Brand building, innovation, measuring what matters
 - **Week 4 (Matt Rubinoff + Golf Canada):** Emerging sports, proof-of-concept, balancing growth with brand identity, NSO marketing
 
@@ -678,7 +678,7 @@ Ready to build your heritage strategy toolkit? Let's go!
 
 ### Course Executive Distribution:
 - **Week 1:** Kevin Abrams (NY Giants) - sports business operations
-- **Week 2:** Al Dak (Rogers) - media rights and content
+- **Week 2:** Al Dark (Rogers) - media rights and content
 - **Week 3:** Andrew Sneyd (FanDuel) - betting marketing
 - **Week 4:** Matt Rubinoff (Fairgrounds) + Golf Canada - emerging sports, athlete brands
 - **Week 5:** Jamie Dinsmore (HHOF) + Stewart Johnston (CFL) ⭐ CAPSTONE

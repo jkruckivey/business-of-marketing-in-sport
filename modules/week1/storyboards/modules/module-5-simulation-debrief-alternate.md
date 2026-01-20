@@ -1,7 +1,14 @@
 # Revenue Strategy Debrief
-**Version:** 1.0.0 | **Last Updated:** 2026-01-20
+**Version:** 1.2.0 | **Last Updated:** 2026-01-20
 
 **Purpose:** Reflect on simulation decisions, analyze trade-offs, compare strategies with peers, and connect to real-world outcomes (supports WLO 1.3, 1.4 - Analysis level)
+
+### Version 1.2.0 Changes
+- **BUILT:** Element 6 Strategy Comparison Tool widget (`strategy-comparison-tool.html`)
+
+### Version 1.1.0 Changes
+- **REPLACED:** Element 4 iFrame widget with AI Chat Widget (Strategy Reflection Coach)
+- **UPDATED:** Element table to reflect AI Chat configuration
 
 ### Version 1.0.0 Notes
 - **NEW:** Alternative to case-based Module 5 (Nashville Predators case removed)
@@ -23,9 +30,9 @@
 | 1 | **▬ Text** ⬛ Required | Connecting intro from Revenue Empire Builder | 2 min | Type directly | Sets reflective tone |
 | 2 | **Image** ◐ Recommended | Strategy planning visual | - | Stock photo | Reinforces analytical mindset |
 | 3 | **Infobox (Callout)** ⬛ Required | "No Right Answer" - context-dependent strategy | 2 min | Type directly | Blue variant, frames reflection |
-| 4 | **⚙ iFrame Widget** ⬛ Required | **Strategy Reflection Tool** | 5 min | Embed widget | Guided self-assessment |
+| 4 | **◈ AI Chat Widget** ⬛ Required | **Strategy Reflection Coach** | 5-8 min | Configure in Uplift | Guided reflection conversation |
 | 5 | **▬ Text** ⬛ Required | Real-world strategy examples intro | 2 min | Type directly | Transition to examples |
-| 6 | **⚙ iFrame Widget** ⬛ Required | **Strategy Comparison Tool** | 5 min | Embed widget | Compare to team archetypes |
+| 6 | **⚙ iFrame Widget** ⬛ Required | **Strategy Comparison Tool** | 5 min | `strategy-comparison-tool.html` | Compare to team archetypes |
 | 7 | **Details** ◐ Recommended | Real-World Examples: How Actual Teams Balance Streams | 3 min | Type directly | Public data examples |
 | 8 | **💬 Discussion** ⬛ Required | Peer Strategy Exchange | 8 min | Configure in Uplimit | Structured peer comparison |
 | 9 | **AI Chat Widget** ○ Optional | Strategy Advisor - get feedback on your choices | 5 min | Configure in Uplimit | Supportive, not evaluative |
@@ -103,56 +110,185 @@ Some owners optimize for profit. Others prioritize championships (spending on pl
 
 ---
 
-## Element 4: Strategy Reflection Tool
+## Element 4: AI Chat Widget - Strategy Reflection Coach
 
-**Widget Purpose:** Guided self-assessment where students articulate and examine their Revenue Empire Builder decisions.
+**Widget Purpose:** Guided conversation where students articulate and examine their Revenue Empire Builder decisions through AI-facilitated reflection.
 
-**Widget Status:** ⭕ Needs development
+**Element Type:** AI Chat Widget
 
-**Element Type:** iFrame Widget
+**Time:** 5-8 minutes
 
-**Widget Specifications:**
+---
+
+### Uplimit AI Chat Configuration
+
+**Widget Name:** Strategy Reflection Coach
+
+**System Prompt:**
 
 ```
-STRATEGY REFLECTION TOOL
+You are a supportive sports business coach helping an MBA student reflect on their Revenue Empire Builder simulation decisions. Your goal is to help them articulate their strategy choices and understand the trade-offs they made.
 
-SECTION 1: Your Strategy Summary
-[Auto-populated if possible, or student enters]
-- Top revenue priority: [dropdown: Media / Ticketing / Sponsorship / Merch / Betting]
-- Secondary priority: [dropdown]
-- Risk tolerance: [slider: Conservative --- Aggressive]
-- Growth vs. Stability focus: [slider]
+=== COURSE CONTENT REFERENCE ===
 
-SECTION 2: Reflection Questions
-For each question, students write 2-3 sentences:
+THE FIVE REVENUE STREAMS (what students learned in Week 1):
 
-1. "What was the MAIN trade-off you made in your strategy?"
-   [text area]
-   Helper text: "Example: I prioritized media rights growth over ticketing innovation because..."
+1. MEDIA RIGHTS (typically 40-60% of revenue)
+   - Broadcasting and streaming deals
+   - NFL's current media rights: $110 billion over 11 years
+   - Most stable, predictable stream
+   - Driven by: league popularity, market size, exclusive content value
+   - Risk: Cord-cutting, streaming fragmentation
 
-2. "What assumption about your market did your strategy rely on?"
-   [text area]
-   Helper text: "Example: My strategy assumes a large corporate base willing to pay premium prices..."
+2. TICKETING & GAME-DAY (typically 15-25% of revenue)
+   - Gate revenue, parking, concessions
+   - Dynamic pricing now standard (prices change based on demand)
+   - Premium seating (suites, club seats) drives margins
+   - Driven by: winning, star players, venue quality, market size
+   - Risk: Economic downturns, team performance
 
-3. "What's the BIGGEST RISK in your approach?"
-   [text area]
-   Helper text: "Example: If streaming rights decrease in value, my media-heavy strategy would..."
+3. SPONSORSHIP & PARTNERSHIPS (typically 15-25% of revenue)
+   - Corporate partnerships, naming rights, signage
+   - Activation spending typically 2-3x the rights fee
+   - B2B sponsors (insurance, financial services) vs. consumer brands
+   - Driven by: brand exposure, hospitality assets, exclusivity
+   - Risk: Economic cycles, brand safety concerns
 
-4. "What type of market would your strategy work BEST in?"
-   [text area]
-   Helper text: "Example: Large market with strong corporate presence, or small market with passionate fanbase..."
+4. MERCHANDISING & LICENSING (typically 5-10% of revenue)
+   - Apparel, collectibles, licensed products
+   - Revenue sharing varies by league (NFL shares equally; NBA/MLB favor big markets)
+   - Global reach extends beyond local market
+   - Driven by: star players, winning, fashion trends
+   - Risk: Counterfeit goods, player movement
 
-SECTION 3: Summary Statement
-"In one sentence, describe your revenue philosophy:"
-[text area - exports for discussion]
+5. BETTING & GAMING (typically 2-8%, growing 15-20% annually)
+   - Sportsbook partnerships, data licensing, media integration
+   - Newest revenue stream (post-2018 PASPA ruling)
+   - Growing fastest but regulatory uncertainty
+   - Driven by: fan engagement, data rights, state legalization
+   - Risk: Regulatory changes, integrity concerns, public backlash
 
-[SAVE REFLECTION] button - saves for peer discussion
+KEY CONCEPT: REVENUE ECOSYSTEM
+Unlike traditional businesses where revenue sources operate independently, sport revenue streams are deeply interconnected:
+- Winning → higher attendance → more sponsorship value → better media ratings → increased merchandise sales
+- Star players → media attention → sponsorship deals → merchandise sales → betting engagement
+- This interconnection is why sports business is an "ecosystem" not just a "portfolio"
+
+CONTEXTUAL FACTORS THAT AFFECT STRATEGY:
+- Market Size: NYC teams can command premium sponsorships that Green Bay cannot
+- Fan Culture: Some fanbases prioritize tradition over commercial optimization
+- Venue Ownership: Teams that own venues capture 100% of ancillary revenue; leased venues may lose 40%
+- Competition: Only major league team in town vs. competing with 3-4 other franchises
+- Owner Objectives: Profit vs. championships vs. civic legacy
+
+TEAM ARCHETYPES (students will compare their strategy to these):
+
+1. "THE COMMERCIAL MAXIMIZER" (Dallas Cowboys model)
+   - Mix: Media 35% | Tickets 25% | Sponsors 25% | Merch 10% | Betting 5%
+   - Philosophy: Maximize every revenue opportunity
+   - Works best in: Large markets, strong brands, owner-controlled venues
+   - Example: Cowboys generate $1.1B annually despite no Super Bowl since 1996
+   - Trade-off: Fan criticism of over-commercialization
+
+2. "THE COMMUNITY ANCHOR" (Green Bay Packers model)
+   - Mix: Media 45% | Tickets 30% | Sponsors 15% | Merch 8% | Betting 2%
+   - Philosophy: Fan experience and tradition first
+   - Works best in: Small markets, passionate fanbases, community ownership
+   - Example: Only publicly-owned franchise; 100,000+ person ticket waitlist
+   - Trade-off: Lower per-game revenue than possible
+
+3. "THE MEDIA PLAY" (NFL Average model)
+   - Mix: Media 50% | Tickets 22% | Sponsors 18% | Merch 7% | Betting 3%
+   - Philosophy: Ride the media rights wave
+   - Works best in: Leagues with strong national deals, less venue control
+   - Trade-off: Dependent on league-level negotiations
+
+4. "THE VENUE OPERATOR" (Madison Square Garden model)
+   - Mix: Media 30% | Tickets 35% | Sponsors 20% | Merch 10% | Betting 5%
+   - Philosophy: Control the building, control the revenue
+   - Works best in: Premium urban locations, owned venues, year-round events
+   - Trade-off: Massive capital investment required
+
+5. "THE GROWTH GAMBLER" (Vegas Golden Knights model)
+   - Mix: Media 35% | Tickets 20% | Sponsors 20% | Merch 10% | Betting 15%
+   - Philosophy: Bet on emerging revenue streams
+   - Works best in: Tech-forward markets, younger demographics, betting-legal states
+   - Trade-off: Unproven long-term sustainability
+
+=== YOUR CONVERSATION APPROACH ===
+
+Guide students through these four reflection areas (one at a time):
+
+1. STRATEGY SUMMARY: Ask them to describe their top revenue priorities and overall approach
+2. KEY TRADE-OFF: Help them identify the main trade-off they made
+3. MARKET ASSUMPTIONS: Explore what assumptions their strategy relies on
+4. RISK AWARENESS: Discuss the biggest risk in their approach
+
+HOW TO ENGAGE:
+- Start by asking about their overall strategy approach
+- Listen to their response, then ask a follow-up that deepens their thinking
+- Use their specific answers to ask more targeted questions
+- Reference the team archetypes when relevant (e.g., "That sounds similar to the Cowboys' Commercial Maximizer approach...")
+- Keep each exchange focused—don't overwhelm with multiple questions
+
+TONE:
+- Curious and supportive, never evaluative
+- Help them discover insights, don't lecture
+- Validate their thinking while gently probing assumptions
+- No strategy is "wrong"—explore contexts where it would/wouldn't work
+
+CONVERSATION FLOW:
+1. Opening: "Tell me about your Revenue Empire Builder strategy. What were your top revenue priorities?"
+2. After they share: Probe deeper—ask WHY they chose that priority
+3. Connect to archetypes: "That approach sounds like [archetype]. Does that fit what you were imagining?"
+4. Ask about trade-offs: "What did you sacrifice to prioritize [X]?"
+5. Explore assumptions: "What kind of market were you imagining? Large or small? Strong corporate base?"
+6. Discuss risks: "Given your heavy allocation to [X], what happens if [relevant risk]?"
+7. Wrap up (after 4-5 exchanges): "Great reflection! Your philosophy seems to be [summary]. Keep that in mind as you discuss with peers and apply this to your CFL expansion project."
+
+WHAT TO AVOID:
+- Grading or evaluating their choices
+- Saying any approach is "wrong"
+- Asking multiple questions at once
+- Going beyond 5-6 exchanges
+- Lecturing about concepts—let them discover through questions
 ```
 
-**Design Notes:**
-- Clean, minimal interface matching course design system
-- Responses save locally for use in peer discussion (Element 8)
-- No scoring - purely reflective
+---
+
+### Student-Facing Instructions
+
+**Place this as Text element BEFORE the AI Chat:**
+
+```markdown
+### Reflect on Your Strategy
+
+Before comparing your approach with peers, take a few minutes to articulate your Revenue Empire Builder strategy.
+
+**Talk through your decisions with the Strategy Reflection Coach.** The coach will ask you about:
+- Your revenue priorities and overall approach
+- The main trade-off you made
+- What market assumptions drove your strategy
+- The biggest risk in your approach
+
+**This is reflection, not evaluation.** There's no right answer—the goal is to clearly articulate your thinking so you can explain it to peers and apply it to your CFL project.
+
+**Time:** 5-8 minutes (4-5 exchanges)
+
+**Tip:** Start by describing your top 2 revenue priorities and why you chose them.
+```
+
+---
+
+### Success Indicators
+
+Students successfully complete this element when they can:
+- ✅ Articulate their top revenue priorities with reasoning
+- ✅ Identify a specific trade-off they made
+- ✅ Describe the market conditions their strategy assumes
+- ✅ Acknowledge at least one risk in their approach
+
+**Assessment Type:** Formative (not graded) - prepares students for peer discussion
 
 ---
 
@@ -174,54 +310,27 @@ Use the **Strategy Comparison Tool** below to see how your allocation compares t
 
 ## Element 6: Strategy Comparison Tool
 
-**Widget Purpose:** Interactive comparison showing how student's strategy aligns with real-world team archetypes.
+**Widget Purpose:** Interactive comparison showing how student's strategy aligns with real-world team archetypes with visual bar charts.
 
-**Widget Status:** ⭕ Needs development
+**Widget File:** `strategy-comparison-tool.html`
 
 **Element Type:** iFrame Widget
 
-**Widget Specifications:**
-
+```html
+<iframe
+  src="../../widgets/strategy-comparison-tool.html"
+  width="100%"
+  height="700"
+  title="Strategy Comparison Tool"
+></iframe>
 ```
-STRATEGY COMPARISON TOOL
 
-YOUR STRATEGY vs. TEAM ARCHETYPES
-
-[Visual: Bar chart or radar chart comparing allocations]
-
-TEAM ARCHETYPES (based on public Forbes/industry data):
-
-1. "THE COMMERCIAL MAXIMIZER" (Dallas Cowboys model)
-   - Media: 35% | Tickets: 25% | Sponsors: 25% | Merch: 10% | Betting: 5%
-   - Philosophy: Maximize every revenue opportunity
-   - Works best in: Large markets, strong brands, owner-controlled venues
-
-2. "THE COMMUNITY ANCHOR" (Green Bay Packers model)
-   - Media: 45% | Tickets: 30% | Sponsors: 15% | Merch: 8% | Betting: 2%
-   - Philosophy: Fan experience and tradition first
-   - Works best in: Small markets, passionate fanbases, community ownership
-
-3. "THE MEDIA PLAY" (NFL Average model)
-   - Media: 50% | Tickets: 22% | Sponsors: 18% | Merch: 7% | Betting: 3%
-   - Philosophy: Ride the media rights wave
-   - Works best in: Leagues with strong national deals, less venue control
-
-4. "THE VENUE OPERATOR" (Madison Square Garden model)
-   - Media: 30% | Tickets: 35% | Sponsors: 20% | Merch: 10% | Betting: 5%
-   - Philosophy: Control the building, control the revenue
-   - Works best in: Premium urban locations, owned venues, year-round events
-
-5. "THE GROWTH GAMBLER" (Emerging market model)
-   - Media: 35% | Tickets: 20% | Sponsors: 20% | Merch: 10% | Betting: 15%
-   - Philosophy: Bet on emerging revenue streams
-   - Works best in: Tech-forward markets, younger demographics, betting-legal states
-
-YOUR CLOSEST MATCH: [Calculated based on student inputs]
-KEY DIFFERENCES: [Highlights where student diverges from archetype]
-
-REFLECTION PROMPT:
-"Does this archetype match the market you had in mind? If not, what would you adjust?"
-```
+**What students do:**
+- Enter their Revenue Empire Builder allocation (5 sliders)
+- See bar chart comparing their mix to 5 team archetypes
+- Get matched to closest archetype with explanation
+- See key differences highlighted
+- Reflect on whether the match fits their intended market
 
 ---
 
@@ -471,9 +580,11 @@ In the coming weeks, you'll apply these frameworks to a real market analysis. Th
 
 ## Implementation Notes
 
-**Widgets Needed:**
-1. **Strategy Reflection Tool** - New build (simple form + text areas)
-2. **Strategy Comparison Tool** - New build (comparison visualization)
+**Widgets Built:**
+1. **Strategy Comparison Tool** (Element 6) - `modules/week1/widgets/strategy-comparison-tool.html`
+
+**AI Chat to Configure:**
+1. **Strategy Reflection Coach** (Element 4) - Configure in Uplimit per specs above
 
 **Content to Repurpose:**
 - Revenue Empire Builder outputs can feed into reflection
@@ -486,7 +597,8 @@ In the coming weeks, you'll apply these frameworks to a real market analysis. Th
 - Ownership pitch roleplay
 
 **What's Added:**
-- Two new reflection/comparison widgets
+- AI Chat for guided reflection (Element 4)
+- Strategy Comparison Tool widget (Element 6)
 - Peer discussion with structured exchange
-- Supportive AI advisor (optional)
+- Supportive AI advisor (optional, Element 9)
 - Explicit CFL project bridge

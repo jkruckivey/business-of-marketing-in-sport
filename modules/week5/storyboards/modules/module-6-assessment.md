@@ -1,11 +1,12 @@
-# MODULE 6: Assessment - HHOF Strategic Recommendation Memo
-**Version:** 5.0.0 | **Last Updated:** 2026-01-14
+# MODULE 6: Assessment - HHOF Strategic Recommendation
+**Version:** 6.0.0 | **Last Updated:** 2026-01-20
 
-### Version 5.0.0 Changes
-- **REVISED:** Assessment now focuses on HHOF specifically (not generic heritage property)
-- **REMOVED:** AI Roleplay element (formative practice moved to Module 5)
-- **ALIGNED:** Module 6 memo builds directly on Module 5 case analysis and roleplay practice
-- **SIMPLIFIED:** 4 elements (intro, assessment, submission, next steps)
+### Version 6.0.0 Changes
+- **ALIGNED:** Assessment now matches simplified Module 5 (interactive tools, not case reading)
+- **REDUCED:** From 40 points to 25 points (lighter assessment)
+- **SIMPLIFIED:** 300-word recommendation instead of 500-word memo
+- **UPDATED:** Rubric references scenario tables and decision tool, not case exhibits
+- **ADDED:** Option to use decision tool export as submission
 
 **Purpose:** Assess student understanding of Week 5 content through HHOF strategic recommendation (measures WLO 5.1-5.4)
 
@@ -13,9 +14,9 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Bridges from Module 5 roleplay practice |
-| 2 | **ⓘ Infobox (Assessment)** ⬤ Required | HHOF Memo assessment overview | Type directly | Purple variant, 40 points |
-| 3 | **📤 File Response** ⬤ Required | Memo submission | Configure in Uplimit | File upload, rubric grading |
+| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Bridges from Module 5 exploration |
+| 2 | **ⓘ Infobox (Assessment)** ⬤ Required | Assessment overview | Type directly | Purple variant, 25 points |
+| 3 | **📝 Text Response** ⬤ Required | Strategic recommendation | Configure in Uplimit | 300-word text response |
 | 4 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 7 |
 
 ---
@@ -27,15 +28,15 @@
 2. Copy markdown below:
 
 ```markdown
-## From Practice to Performance
+## Make Your Call
 
-In Module 5, you analyzed the Hockey Hall of Fame case in depth—reading the case narrative, reviewing financial exhibits, examining stakeholder perspectives, and practicing your recommendation with the HHOF Board through the AI Roleplay.
+In Module 5, you explored the Hockey Hall of Fame's strategic dilemma:
+- Watched the video on the two traps to avoid
+- Compared the three scenarios (Preserve, Transform, Hybrid)
+- Used the Heritage Strategy Decision Tool to test different priorities
+- Saw how each path affects different stakeholders
 
-Now it's time to put your strategic thinking in writing.
-
-The board has heard your pitch. They were impressed, but they want it formalized. They need a clear, data-driven executive memo that captures your recommendation and the reasoning behind it.
-
-**Your Task:** Write a 1-page HHOF Strategic Recommendation Memo presenting your chosen strategy (Preserve, Transform, or Hybrid) with evidence-based justification.
+Now make your recommendation. No fence-sitting—pick a path and defend it.
 ```
 
 ---
@@ -48,144 +49,119 @@ The board has heard your pitch. They were impressed, but they want it formalized
 3. Copy markdown below:
 
 ```markdown
-Title: ▪ Assessment: HHOF Strategic Recommendation Memo (40 points)
+Title: ▪ Assessment: HHOF Strategic Recommendation (25 points)
 
-**Your Task:** Write a 1-page executive memo (500 words max) to the HHOF Board of Governors presenting your strategic recommendation.
+**Your Task:** In 300 words or less, recommend ONE strategic path for HHOF and defend your choice.
 
-**Required Components:**
+**Your recommendation must include:**
 
-1. **Strategic Recommendation (Clear Choice)**
-   - Commit to ONE path: PRESERVE, TRANSFORM, or HYBRID
-   - Explain why this path is superior to the alternatives
-   - Acknowledge the trade-offs you're accepting
+1. **Your Choice** - Preserve, Transform, or Hybrid (pick ONE)
+2. **Why This Path** - What makes it better than the alternatives?
+3. **The Trade-off** - What are you sacrificing by NOT choosing the other paths?
+4. **One Key Risk** - What could go wrong, and how would you mitigate it?
 
-2. **Evidence-Based Justification**
-   - Reference specific case data (Exhibits A, B, C)
-   - Use financial projections to support your argument
-   - Address stakeholder concerns (curators, donors, younger audiences)
+**Grading (25 points):**
+- Clear recommendation with reasoning (10 pts)
+- Trade-off acknowledgment (8 pts)
+- Risk awareness (7 pts)
 
-3. **Implementation & Risk**
-   - Identify capital requirements and financing approach
-   - Propose 2-3 metrics to measure success
-   - Acknowledge key risks and mitigation strategies
-
-**Grading Rubric (40 points):**
-- Strategic Clarity (10 pts): Clear recommendation with explicit trade-off acknowledgment
-- Case Evidence (10 pts): References specific exhibits and financial data
-- Stakeholder Awareness (10 pts): Addresses competing interests and risk mitigation
-- Business Communication (10 pts): Memo format, clear writing, 500-word limit
-
-**Preparation:** If you haven't already, complete the AI Roleplay in Module 5 to practice your arguments before writing.
+**Tip:** Reference the scenario comparison table and stakeholder impact table from Module 5. Specific numbers beat vague claims.
 ```
 
 ---
 
-## Element 3: File Response - Memo Submission
+## Element 3: Text Response - Strategic Recommendation
 
 **Uplimit Implementation:**
-1. Select **Exercise → File Response Question**
+1. Select **Exercise → Text Response Question**
 2. Configure the following fields:
 
 **Question:**
 ```
-Submit your HHOF Strategic Recommendation Memo (1-page, 500 words max).
+What strategic path should the Hockey Hall of Fame pursue? Make your recommendation in 300 words or less.
 ```
 
 **Additional Instructions:**
 ```
-Your memo will be evaluated using the rubric below (40 points total):
+Your response will be evaluated on:
 
-**Strategic Clarity (10 pts)**
-- Commits to ONE path (Preserve/Transform/Hybrid) with explicit reasoning
-- Acknowledges trade-offs (what you're giving up by NOT choosing the alternatives)
-- Explains why your chosen path is superior for HHOF
+**Clear Recommendation (10 pts)**
+- Commits to ONE path (Preserve/Transform/Hybrid)
+- Explains why this path fits HHOF's situation
+- Uses specific data (e.g., "$35M target," "8/12 curators," "89% donor retention")
 
-**Case Evidence (10 pts)**
-- References specific data from Exhibit A (attendance, revenue trends)
-- Uses financial projections from Exhibit B (capital requirements, margins, scenarios)
-- Incorporates stakeholder perspectives from Exhibit C
+**Trade-off Acknowledgment (8 pts)**
+- Names what you're giving up by not choosing alternatives
+- Shows you understand the downsides of your choice
+- Demonstrates strategic thinking, not just cheerleading
 
-**Stakeholder Awareness (10 pts)**
-- Addresses curator concerns (resignation risk, curatorial guardrails)
-- Addresses donor concerns (mission integrity, authenticity)
-- Addresses growth advocates (revenue targets, competitive positioning)
-- Proposes specific risk mitigation strategies
+**Risk Awareness (7 pts)**
+- Identifies at least one meaningful risk
+- Proposes how to mitigate or monitor it
+- Shows realistic thinking about implementation
 
-**Business Communication (10 pts)**
-- Professional memo format (To, From, Date, Subject, Body)
-- Clear, concise writing
-- 500-word limit respected
-- Logical structure and flow
+**Reference the Module 5 tables:**
+- Three Scenarios table (revenue, capital, debt, goal achievement)
+- Stakeholder Impact table (who wins/loses in each scenario)
+```
 
-Accepted formats: PDF, DOCX
-Filename suggestion: LastName_HHOF_Memo.pdf
+**AI Feedback Prompt:**
+```
+Evaluate this HHOF strategic recommendation. Check for:
+1. Did they commit to ONE clear path (not hedging)?
+2. Did they reference specific numbers from the scenario tables?
+3. Did they acknowledge trade-offs (what they're giving up)?
+4. Did they identify a real risk and mitigation?
+
+Provide brief, encouraging feedback. If they hedged or were vague, ask them to commit more clearly.
 ```
 
 **Rubric Configuration:**
 
 ---
 
-**CRITERION 1: Strategic Clarity**
+**CRITERION 1: Clear Recommendation**
 
 **Points:** 10
 
 **Does not meet expectations (0-3 pts):**
-Recommendation is unclear or waffles between options. No acknowledgment of trade-offs. Strategic implications not articulated.
+Recommendation is unclear, hedges between options, or doesn't commit to a path. No specific reasoning or data cited.
 
 **Partially meets expectations (4-6 pts):**
-Makes a recommendation but reasoning is incomplete. Some trade-offs mentioned but not systematically analyzed. Doesn't clearly explain why this path beats alternatives.
+Makes a recommendation but reasoning is generic. May cite some data but doesn't connect it to the argument. Could apply to any heritage property.
 
 **Fully meets expectations (7-10 pts):**
-Clearly commits to ONE path with explicit reasoning. Acknowledges what's being sacrificed by not choosing alternatives. Uses scenario analysis (base case, pessimistic) to justify the choice. Example: "I recommend Hybrid because it achieves the board's $35M target while avoiding the $10M debt and curator resignation risks of Transform."
+Clearly commits to ONE path with HHOF-specific reasoning. Cites specific data (revenue targets, stakeholder percentages, capital requirements). Explains why this path fits HHOF's unique situation.
 
 ---
 
-**CRITERION 2: Case Evidence**
+**CRITERION 2: Trade-off Acknowledgment**
 
-**Points:** 10
+**Points:** 8
 
-**Does not meet expectations (0-3 pts):**
-Minimal or no reference to case data. Relies on generalizations or opinions not grounded in exhibits.
+**Does not meet expectations (0-2 pts):**
+No mention of trade-offs. Presents chosen path as having no downsides. One-sided argument.
 
-**Partially meets expectations (4-6 pts):**
-Mentions exhibits but with limited specificity. May cite some numbers but doesn't connect them to the strategic argument.
+**Partially meets expectations (3-5 pts):**
+Mentions trade-offs but superficially. May acknowledge one downside but not systematically compare to alternatives.
 
-**Fully meets expectations (7-10 pts):**
-Cites specific data: "Exhibit A shows attendance down 22% since 2019" / "Exhibit B projects Hybrid reaching $35.1M with 14-16% margins" / "Exhibit C indicates 8/12 curators would resign under Transform." Data directly supports the recommendation.
-
----
-
-**CRITERION 3: Stakeholder Awareness**
-
-**Points:** 10
-
-**Does not meet expectations (0-3 pts):**
-Ignores stakeholder concerns. Assumes tensions will resolve without intervention. No risk mitigation.
-
-**Partially meets expectations (4-6 pts):**
-Recognizes some stakeholder tensions but addresses them superficially. May overlook critical groups (curators, donors, younger audiences).
-
-**Fully meets expectations (7-10 pts):**
-Explicitly addresses multiple stakeholder groups and their concerns. Explains how the recommendation mitigates risks for each. Example: "Hybrid protects curatorial integrity through binding guardrails (preventing curator resignations), maintains 89% donor support (vs. 47% in Transform), and offers digital membership to engage younger audiences."
+**Fully meets expectations (6-8 pts):**
+Explicitly names what's being sacrificed. Example: "By choosing Hybrid over Transform, we cap growth at $35M instead of $42M, but we avoid $10M debt risk and curator resignations." Shows mature strategic thinking.
 
 ---
 
-**CRITERION 4: Business Communication**
+**CRITERION 3: Risk Awareness**
 
-**Points:** 10
+**Points:** 7
 
-**Does not meet expectations (0-3 pts):**
-Not in memo format. Exceeds 500 words significantly. Unclear or disorganized writing.
+**Does not meet expectations (0-2 pts):**
+No risks identified. Assumes the chosen path will work perfectly. No contingency thinking.
 
-**Partially meets expectations (4-6 pts):**
-Memo format attempted but incomplete. Writing is adequate but could be clearer. May be slightly over/under word limit.
+**Partially meets expectations (3-4 pts):**
+Identifies a risk but vaguely. May not propose mitigation or monitoring approach.
 
-**Fully meets expectations (7-10 pts):**
-Professional memo format (To, From, Date, Subject, Body). Clear, concise writing. 500-word limit respected. Logical flow from recommendation → evidence → risk mitigation → metrics.
-
----
-
-**Template:** No template required (students should demonstrate professional memo formatting)
+**Fully meets expectations (5-7 pts):**
+Identifies a specific, meaningful risk (e.g., "If digital membership adoption is slower than projected, we may miss the $35M target"). Proposes realistic mitigation (e.g., "We'd monitor Year 2 subscriber numbers and pivot to enhanced in-person premium experiences if below 8K").
 
 ---
 
@@ -199,7 +175,7 @@ Professional memo format (To, From, Date, Subject, Body). Clear, concise writing
 ```
 Title: ✓ What's Next: Module 7
 
-**After submitting your memo:**
+**After submitting your recommendation:**
 
 Module 7 wraps up Week 5 with key takeaways and your CFL Expansion Final Proposal (Milestone 5). You'll synthesize everything you've learned across all five weeks into a comprehensive expansion proposal.
 
@@ -208,7 +184,7 @@ Module 7 wraps up Week 5 with key takeaways and your CFL Expansion Final Proposa
 - CFL Expansion Milestone 5: Final Expansion Proposal (40 points)
 - Course Completion & Celebration
 
-Complete your HHOF memo submission, then continue to Module 7.
+Submit your HHOF recommendation, then continue to Module 7.
 ```
 
 ---
@@ -216,33 +192,29 @@ Complete your HHOF memo submission, then continue to Module 7.
 ## Instructor Notes
 
 **Module 6 Purpose:**
-- Assess Week 5 learning through HHOF strategic recommendation
-- Builds directly on Module 5 case analysis and formative roleplay practice
-- Clean handoff to Module 7 (CFL Expansion milestone submission)
+- Assess Week 5 learning through strategic recommendation
+- Lighter assessment aligned with simplified Module 5 exploration
+- Clean handoff to Module 7 (CFL Expansion final proposal)
 
-**Assessment Flow (Modules 5-6):**
-1. Module 5: Students read HHOF case, analyze exhibits, practice recommendation via AI Roleplay (formative)
-2. Module 6: Students write formal memo presenting their recommendation (summative, 40 pts)
+**Assessment Flow (Simplified Modules 5-6):**
+1. Module 5: Students explore HHOF dilemma through video, tables, and decision tool (~20 min)
+2. Module 6: Students write 300-word recommendation defending their choice (25 pts)
 
-**Why HHOF-Specific (Not Generic):**
-- Students invested 90+ minutes in HHOF case analysis
-- Generic "any heritage property" memo wastes that investment
-- HHOF-specific memo tests whether they actually learned the case, not just frameworks
-- Cleaner pedagogical flow: practice → write about SAME topic
+**Why Lighter Assessment:**
+- Simplified Module 5 is ~20 minutes of exploration, not 90+ minutes of case analysis
+- Assessment should match the learning investment
+- 300 words is enough to demonstrate strategic thinking without requiring deep case knowledge
+- Students who want to go deeper can read the optional case background in Module 5
 
-**UDL Learning Supports (Optional):**
-If you want to provide additional scaffolding, these resources can be developed:
-- **Guided Demo Video** (6 min): SME think-aloud walkthrough of memo writing
-- **Annotated Exemplar Explorer**: Interactive side-by-side comparison (developing → exemplary)
-- **Audio Instructions** (4 min): Voice-narrated assignment overview
-
-These can be added as optional Details elements or linked from the LMS.
+**For Students Who Want More Challenge:**
+Students who read the full case background (Module 5 accordion) can reference the detailed exhibits in their response. This isn't required but will strengthen their arguments.
 
 **Grading Notes:**
-- Look for clear commitment to ONE path (not hedging)
-- Verify they reference specific exhibit data (not just "the data shows...")
-- Trade-off acknowledgment is key: What are they giving up by not choosing alternatives?
-- Memo format matters: This is an executive communication skill
+- Look for clear commitment to ONE path (not "it depends" or "all three have merit")
+- Trade-off acknowledgment is the key differentiator between surface and deep responses
+- Accept any of the three paths if well-defended—there's no "right answer"
+- Specific numbers from the tables beat vague generalizations
 
-**Alternative Assessment:**
-Students who prefer not to write can request to submit a 3-minute video presentation instead, evaluated on the same rubric criteria.
+**Alternative Formats:**
+- Students can also submit a screenshot of their Heritage Strategy Decision Tool results with a brief explanation
+- Video response (90 seconds) acceptable for accessibility

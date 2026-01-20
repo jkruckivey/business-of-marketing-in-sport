@@ -1,11 +1,12 @@
-# MODULE 6: Assessment - Revenue Ecosystem Reflection Memo
-**Version:** 2.0.0 | **Last Updated:** 2026-01-13
+# MODULE 6: Assessment - Revenue Ecosystem Reflection
+**Version:** 3.0.0 | **Last Updated:** 2026-01-20
 
-### Version 2.0.0 Changes
-- **STANDARDIZED:** Module structure to match course-wide template (5 elements)
-- **MOVED:** UDL Learning Supports (video demo, exemplar explorer, audio) to instructor notes
-- **REMOVED:** Rubric details accordion, AI Chat widget (rubric in submission instructions)
-- **ADDED:** Element 5 "What's Next" infobox for clean transition
+### Version 3.0.0 Changes
+- **ALIGNED:** Assessment now matches simplified Module 5 (simulation debrief, not case study)
+- **REDUCED:** From 40 points to 25 points (lighter assessment)
+- **SIMPLIFIED:** 300-word reflection instead of 500-word memo
+- **UPDATED:** Rubric references simulation experience, not Nashville case
+- **REMOVED:** File upload - now text response
 
 **Purpose:** Assess student understanding of Week 1 content (measures WLO 1.1-1.4)
 
@@ -13,11 +14,10 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Sets context from Module 5 |
-| 2 | **ⓘ Infobox (Assessment)** ⬤ Required | Assessment overview | Type directly | Purple variant, 40 points |
-| 3 | **◈ AI Roleplay** ◐ Recommended | Practice pitch to PE investor | Configure in Uplimit | Sarah Chen character |
-| 4 | **📤 File Response** ⬤ Required | Memo submission | Configure in Uplimit | File upload, rubric grading |
-| 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 7 |
+| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Bridges from Module 5 simulation debrief |
+| 2 | **ⓘ Infobox (Assessment)** ⬤ Required | Assessment overview | Type directly | Purple variant, 25 points |
+| 3 | **📝 Text Response** ⬤ Required | Revenue ecosystem reflection | Configure in Uplimit | 300-word text response |
+| 4 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 7 |
 
 ---
 
@@ -28,9 +28,11 @@
 2. Copy markdown below:
 
 ```markdown
-You've explored revenue streams through interactive discovery, built a five-year strategy in Build Your Revenue Empire, and analyzed the Nashville Predators' real-world challenges. You've seen how revenue ecosystems work in theory and in practice.
+## What Did You Learn?
 
-Now it's time to demonstrate what you've learned. You'll write an executive memo advising a private equity firm considering investing in a professional sports team. They need to understand whether sports teams operate like other businesses—and if not, what makes them different.
+You've explored revenue streams through interactive discovery, built a strategy in Build Your Revenue Empire, and reflected on what worked (and what didn't) in the simulation.
+
+Now capture what you learned. This isn't about getting the "right answer"—it's about showing you understand how sports revenue ecosystems work.
 ```
 
 ---
@@ -43,93 +45,122 @@ Now it's time to demonstrate what you've learned. You'll write an executive memo
 3. Copy markdown below:
 
 ```markdown
-Title: ▪ Assessment: Revenue Ecosystem Reflection Memo (40 points)
+Title: ▪ Assessment: Revenue Ecosystem Reflection (25 points)
 
-**Your Task:** Write a 1-page executive memo (500 words max) advising a private equity firm considering investing in a professional sports team.
+**Your Task:** In 300 words or less, reflect on what you learned about sports revenue ecosystems.
 
-**Required Components:**
-1. Explain sport's unique revenue characteristics (how it differs from traditional business)
-2. Analyze at least 3 revenue streams showing interdependencies
-3. Identify 2-3 investment decision factors with evidence
+**Your reflection should address:**
 
-**Grading Rubric (40 points):**
-- Revenue Stream Analysis (10 pts): Analyzes 3+ streams with interdependencies
-- Investment Factors (10 pts): 2-3 specific factors with evidence
-- Application of Concepts (10 pts): References course content, case study
-- Business Communication (10 pts): Memo format, clear writing, 500-word limit
+1. **The Big Picture** - What makes sports revenue different from other businesses?
+2. **Interdependencies** - How do revenue streams connect to each other? Give one example.
+3. **Your Strategy** - What worked in your simulation? What would you do differently?
 
-**Preparation:** Use the AI Roleplay below to practice your pitch before writing.
+**Grading (25 points):**
+- Revenue ecosystem understanding (10 pts)
+- Interdependency example (8 pts)
+- Strategic reflection (7 pts)
+
+**Tip:** Be specific. "Media drives everything" is vague. "Media rights fund player salaries, which drive on-field success, which increases ticket demand" shows ecosystem thinking.
 ```
 
 ---
 
-## Element 3: AI Roleplay - Private Equity Practice Pitch
-
-**Scenario Title:** "Private Equity Investment Pitch"
-
-**Purpose:** Formative practice where students rehearse their recommendation before writing.
-
-### Uplimit Configuration
-
-**Scenario Context:**
-```
-Brookfield Capital, a private equity firm, is considering investing $500M-$1B in acquiring a mid-market professional sports team. The Managing Partner, Sarah Chen, has hired you as a sports business consultant. Sarah has done deals in hospitality and retail—but never in sports. She needs you to explain what makes sports unique, where the money comes from, and whether this is a good investment.
-
-This roleplay is formative practice (not graded) to help you rehearse before writing your final memo.
-```
-
-**AI Role:**
-```
-You are Sarah Chen, Managing Partner at Brookfield Capital with 15 years of PE experience in traditional industries. You're smart, curious, and genuinely want to understand sports economics.
-
-Conversation flow:
-1. Ask them to explain how sports teams make money
-2. Probe for specifics on revenue streams (percentages, growth rates)
-3. Ask about what makes sports different from traditional businesses
-4. Request 2-3 investment factors to prioritize
-5. Ask for their bottom-line recommendation
-
-Be warm and collaborative. After 5-6 exchanges, wrap up: "This is really helpful. I feel confident presenting this to my partners."
-```
-
-**Student Instructions:**
-```
-You are a sports business consultant advising Brookfield Capital on a potential $500M-$1B sports team investment. Sarah Chen wants to understand sports economics before presenting to her partners.
-
-This is practice—use it to test your arguments before writing your memo.
-```
-
----
-
-## Element 4: File Response - Memo Submission
+## Element 3: Text Response - Revenue Ecosystem Reflection
 
 **Uplimit Implementation:**
-1. Select **Exercise → File Response Question**
+1. Select **Exercise → Text Response Question**
 2. Configure the following fields:
 
 **Question:**
 ```
-Submit your Revenue Ecosystem Reflection Memo (1-page, 500 words max).
+What did you learn about sports revenue ecosystems? Reflect in 300 words or less.
 ```
 
 **Additional Instructions:**
 ```
-Your memo will be evaluated using the rubric below (40 points total):
+Your response will be evaluated on:
 
-• Revenue Stream Analysis (10 pts) - Analyzes 3+ streams with interdependencies
-• Investment Factors (10 pts) - 2-3 specific factors with evidence
-• Application of Concepts (10 pts) - References course content and case study
-• Business Communication (10 pts) - Memo format, clear writing, 500-word limit
+**Revenue Ecosystem Understanding (10 pts)**
+- Explains what makes sports revenue unique (not like traditional businesses)
+- Shows understanding of the five revenue streams
+- Demonstrates "ecosystem thinking" (not just listing streams)
 
-Accepted formats: PDF, DOCX
-Filename suggestion: LastName_Week1_Memo.pdf
+**Interdependency Example (8 pts)**
+- Provides a specific example of how streams connect
+- Shows cause-and-effect relationship
+- Example: "Winning increases ticket demand, which increases sponsorship value, which funds better players..."
+
+**Strategic Reflection (7 pts)**
+- Reflects honestly on simulation experience
+- Identifies what worked and what didn't
+- Shows learning from the experience (not just describing what happened)
+
+**Reference your simulation:**
+- What strategy did you try?
+- What surprised you about the results?
+- What would you do differently next time?
 ```
 
-**Template:** No template required
+**AI Feedback Prompt:**
+```
+Evaluate this revenue ecosystem reflection. Check for:
+1. Do they understand what makes sports revenue unique?
+2. Did they provide a specific interdependency example (not vague)?
+3. Did they reflect on their simulation experience (not just describe it)?
+
+Provide brief, encouraging feedback. If their interdependency example is vague, ask for more specifics.
+```
+
+**Rubric Configuration:**
 
 ---
 
-## Element 5: Infobox - What's Next
+**CRITERION 1: Revenue Ecosystem Understanding**
+
+**Points:** 10
+
+**Does not meet expectations (0-3 pts):**
+Lists revenue streams without explaining what makes sports unique. No ecosystem thinking—treats streams as independent.
+
+**Partially meets expectations (4-6 pts):**
+Shows some understanding of sports revenue characteristics. May mention interdependencies but doesn't develop them fully.
+
+**Fully meets expectations (7-10 pts):**
+Clearly articulates what makes sports revenue unique (e.g., emotional fan attachment, media value of live content, league revenue sharing). Demonstrates ecosystem thinking—understands that streams reinforce each other.
+
+---
+
+**CRITERION 2: Interdependency Example**
+
+**Points:** 8
+
+**Does not meet expectations (0-2 pts):**
+No specific example provided, or example is too vague to demonstrate understanding (e.g., "all streams are connected").
+
+**Partially meets expectations (3-5 pts):**
+Provides an example but doesn't fully develop the cause-and-effect chain. May only show two streams connecting, not the broader ecosystem.
+
+**Fully meets expectations (6-8 pts):**
+Provides a specific, well-developed example showing how multiple streams connect. Example: "My simulation showed that investing in player talent increased winning percentage, which drove 15% higher ticket sales, which made our sponsorship packages more valuable because brands wanted access to a winning team's engaged fans."
+
+---
+
+**CRITERION 3: Strategic Reflection**
+
+**Points:** 7
+
+**Does not meet expectations (0-2 pts):**
+No reflection on simulation experience. Just describes what happened without learning insights.
+
+**Partially meets expectations (3-4 pts):**
+Some reflection present but surface-level. May say "I would do things differently" without specifying what or why.
+
+**Fully meets expectations (5-7 pts):**
+Honest, specific reflection on simulation experience. Identifies what worked, what surprised them, and what they'd change. Shows genuine learning—not just "I should have invested more in X" but explains the reasoning.
+
+---
+
+## Element 4: Infobox - What's Next
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -139,7 +170,7 @@ Filename suggestion: LastName_Week1_Memo.pdf
 ```
 Title: ✓ What's Next: Module 7
 
-**After submitting your memo:**
+**After submitting your reflection:**
 
 Module 7 wraps up Week 1 with key takeaways and your first CFL Expansion Project milestone. You'll apply the revenue ecosystem frameworks to select an expansion city and project 5-year revenue.
 
@@ -147,7 +178,7 @@ Module 7 wraps up Week 1 with key takeaways and your first CFL Expansion Project
 - Week 1 Key Takeaways (5 critical insights)
 - CFL Expansion Milestone 1: Market Selection & Revenue Projections
 
-Complete your memo submission, then continue to Module 7.
+Submit your reflection, then continue to Module 7.
 ```
 
 ---
@@ -155,22 +186,29 @@ Complete your memo submission, then continue to Module 7.
 ## Instructor Notes
 
 **Module 6 Purpose:**
-- Assess Week 1 learning through authentic executive communication task
-- AI Roleplay provides formative practice before summative assessment
-- Clean handoff to Module 7 (milestone submission)
+- Assess Week 1 learning through reflection on simulation experience
+- Lighter assessment aligned with simplified Module 5 (simulation debrief)
+- Clean handoff to Module 7 (CFL Expansion milestone)
 
-**UDL Learning Supports (Optional):**
-If you want to provide additional scaffolding, these resources were developed for this assessment:
-- **Guided Demo Video** (6 min): SME think-aloud walkthrough of memo writing
-- **Annotated Exemplar Explorer**: Interactive side-by-side comparison (developing → exemplary)
-- **Audio Instructions** (4 min): Voice-narrated assignment overview
+**Assessment Flow (Simplified Modules 5-6):**
+1. Module 5: Students debrief their simulation, compare strategies with peers (~30-40 min)
+2. Module 6: Students write 300-word reflection on what they learned (25 pts)
 
-These can be added as optional Details elements or linked from the LMS.
+**Why Lighter Assessment:**
+- Simplified Module 5 focuses on simulation debrief, not Nashville case analysis
+- Assessment should match the learning investment
+- 300 words is enough to demonstrate ecosystem understanding
+- Reflection format encourages honest learning insights over "right answers"
 
-**AI Roleplay Configuration:**
-The Sarah Chen character uses hidden reference data to guide probing questions without revealing answers. Full configuration available in v1.7.0 archive.
+**For Students Who Want More Challenge:**
+Students who engaged deeply with the simulation can provide more detailed strategy analysis. The rubric rewards specificity—students who can explain *why* their strategy worked (or didn't) with specific numbers will score higher.
 
 **Grading Notes:**
-- Focus on ecosystem thinking (interdependencies) not just listing streams
-- Investment factors should be specific and actionable, not generic
-- Predators case references demonstrate application of learning
+- Look for ecosystem thinking (interdependencies), not just stream listing
+- The interdependency example is the key differentiator between surface and deep responses
+- Accept any reasonable reflection on simulation strategy—no "right answer"
+- Specific examples and numbers beat vague generalizations
+
+**Alternative Formats:**
+- Video response (90 seconds) acceptable for accessibility
+- Screenshot of simulation results with brief explanation acceptable

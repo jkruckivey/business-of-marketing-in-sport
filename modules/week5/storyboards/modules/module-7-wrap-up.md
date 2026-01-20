@@ -182,7 +182,7 @@ Filename suggestion: LastName_M5_FinalProposal.pdf
 
 1. **Milestone Feedback:** Your CFL Expansion Final Proposal will be reviewed within 5 business days. You'll receive detailed feedback on strategic coherence, financial rigor, and presentation quality.
 
-2. **HHOF Memo Grade:** Your Week 5 HHOF Strategic Recommendation Memo (Module 6) will be graded within 48 hours.
+2. **HHOF Recommendation Grade:** Your Week 5 HHOF Strategic Recommendation (Module 6, 25 points) will be graded within 48 hours.
 
 3. **Course Completion:** Once all assessments are graded:
    - Your final course grade will be posted to your profile

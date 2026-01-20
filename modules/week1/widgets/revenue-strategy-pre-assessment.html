@@ -609,11 +609,11 @@
         <!-- Screen 2: Quiz -->
         <div id="screen-2" class="screen">
             <div class="quiz-header">
-                <h1>Legacy & Innovation Knowledge Quiz</h1>
-                <p class="subtitle">10 questions covering heritage property strategy</p>
+                <h1>Revenue Strategy Knowledge Quiz</h1>
+                <p class="subtitle">10 questions covering sports business revenue fundamentals</p>
                 <div class="progress-indicator" id="progress-dots"></div>
                 <div class="info-box">
-                    <strong>This quiz is not graded.</strong> Answer honestly to identify your knowledge gaps and get a personalized learning path for Week 5.
+                    <strong>This quiz is not graded.</strong> Answer honestly to identify your knowledge gaps and get a personalized learning path for Week 1.
                 </div>
             </div>
 
@@ -643,31 +643,31 @@
 
                 <div class="outcome-breakdown">
                     <div class="outcome-card">
-                        <h4>MLO 5.1: Heritage as Revenue Asset</h4>
-                        <div class="outcome-score" id="outcome-5-1">0/3</div>
+                        <h4>WLO 1.1: Revenue Streams</h4>
+                        <div class="outcome-score" id="outcome-1-1">0/3</div>
                         <div class="progress-bar">
-                            <div class="progress-fill" id="progress-5-1" style="width: 0%"></div>
+                            <div class="progress-fill" id="progress-1-1" style="width: 0%"></div>
                         </div>
                     </div>
                     <div class="outcome-card">
-                        <h4>MLO 5.2: Tradition vs Innovation</h4>
-                        <div class="outcome-score" id="outcome-5-2">0/3</div>
+                        <h4>WLO 1.2: Sport Business Model</h4>
+                        <div class="outcome-score" id="outcome-1-2">0/3</div>
                         <div class="progress-bar">
-                            <div class="progress-fill" id="progress-5-2" style="width: 0%"></div>
+                            <div class="progress-fill" id="progress-1-2" style="width: 0%"></div>
                         </div>
                     </div>
                     <div class="outcome-card">
-                        <h4>MLO 5.3: Future Trends</h4>
-                        <div class="outcome-score" id="outcome-5-3">0/2</div>
+                        <h4>WLO 1.3: Growth vs. Risk</h4>
+                        <div class="outcome-score" id="outcome-1-3">0/2</div>
                         <div class="progress-bar">
-                            <div class="progress-fill" id="progress-5-3" style="width: 0%"></div>
+                            <div class="progress-fill" id="progress-1-3" style="width: 0%"></div>
                         </div>
                     </div>
                     <div class="outcome-card">
-                        <h4>MLO 5.4: Strategic Vision Integration</h4>
-                        <div class="outcome-score" id="outcome-5-4">0/4</div>
+                        <h4>WLO 1.4: Revenue Sharing</h4>
+                        <div class="outcome-score" id="outcome-1-4">0/2</div>
                         <div class="progress-bar">
-                            <div class="progress-fill" id="progress-5-4" style="width: 0%"></div>
+                            <div class="progress-fill" id="progress-1-4" style="width: 0%"></div>
                         </div>
                     </div>
                 </div>
@@ -686,45 +686,81 @@
         const quizData = [
             {
                 number: 1,
-                outcome: 'MLO5.1',
+                outcome: 'WLO1.1',
                 type: 'Multiple Choice',
-                question: 'Which revenue stream typically accounts for the LARGEST percentage of total revenue for heritage sports properties like halls of fame?',
+                question: 'Which revenue stream typically accounts for the LARGEST percentage of total revenue for major professional sports leagues like the NFL?',
                 options: [
-                    { value: 'A', text: 'A) Admissions/Ticketing (40-50%)' },
-                    { value: 'B', text: 'B) Events & Venue Rentals (25-35%)' },
-                    { value: 'C', text: 'C) Retail & Merchandise (10-20%)' },
-                    { value: 'D', text: 'D) Sponsorships & Partnerships (5-15%)' }
+                    { value: 'A', text: 'A) Ticketing & Live Events (20-30%)' },
+                    { value: 'B', text: 'B) Media Rights (40-60%)' },
+                    { value: 'C', text: 'C) Sponsorship & Partnerships (15-25%)' },
+                    { value: 'D', text: 'D) Merchandising & Licensing (5-10%)' }
                 ],
-                correct: 'A',
+                correct: 'B',
                 points: 1,
                 feedback: {
-                    correct: "Correct! Admissions and ticketing typically account for 40-50% of revenue for heritage properties like the Hockey Hall of Fame, Baseball Hall of Fame, and Olympic Museums. Unlike professional sports teams (where media rights dominate at 40-60%), heritage properties rely heavily on in-person visitation because their core product is the physical experience of history. This creates a strategic challenge: You can't grow infinitely by raising prices (price elasticity) or building bigger venues (contradicts intimate experience).",
-                    incorrect: "Not quite. While [selected answer] is important, admissions/ticketing actually account for the largest share (40-50%) of heritage property revenue. Unlike professional sports teams where media rights dominate, heritage properties rely on in-person visitation as their core product. This creates unique strategic constraints—you can't just optimize for revenue growth without considering experience quality and visitor capacity limits."
+                    correct: "Correct! Media rights typically account for 40-60% of total revenue for major professional sports leagues. The NFL's current media rights deal totals $110 billion over 11 years. This dominance of media rights is a defining feature of modern sports economics and explains why leagues prioritize broadcast partnerships and streaming deals.",
+                    incorrect: "Not quite. While all revenue streams matter, media rights actually account for the largest share (40-60%) of major league revenue. The NFL's $110 billion media deal demonstrates how broadcasting and streaming have become the foundation of modern sports economics. This week, you'll learn why media rights dominate and how the other streams interconnect."
                 }
             },
             {
                 number: 2,
-                outcome: 'MLO5.1',
+                outcome: 'WLO1.1',
                 type: 'Multiple Choice',
-                question: 'The Hockey Hall of Fame faces declining domestic attendance (-8% annually). Which strategy would BEST address this while preserving brand authenticity?',
+                question: 'What is the PRIMARY reason sports revenue streams are described as an "ecosystem" rather than a "portfolio"?',
                 options: [
-                    { value: 'A', text: 'A) Lower admission prices to attract price-sensitive visitors' },
-                    { value: 'B', text: 'B) Partner with sports betting companies for in-venue betting lounges' },
-                    { value: 'C', text: 'C) Launch VR/digital experiences for remote fans who can\'t visit Toronto' },
-                    { value: 'D', text: 'D) Host non-hockey events (concerts, corporate parties) to diversify revenue' }
+                    { value: 'A', text: 'A) Each stream can be optimized independently without affecting others' },
+                    { value: 'B', text: 'B) Success in one stream creates ripple effects that impact all other streams' },
+                    { value: 'C', text: 'C) Teams should diversify equally across all five streams' },
+                    { value: 'D', text: 'D) Revenue streams are regulated by different governing bodies' }
                 ],
-                correct: 'C',
+                correct: 'B',
                 points: 1,
                 feedback: {
-                    correct: "Correct! Digital/VR experiences allow HHOF to reach fans who can't physically visit Toronto (international, younger demographics) WITHOUT compromising the in-person museum experience. This is 'innovation that extends reach' rather than 'innovation that changes core product.' Comparable example: The Baseball Hall of Fame launched a digital membership ($25/year) that provides virtual tours, exclusive content, and streaming access to 200K+ members who never visit Cooperstown. Result: +$5M annual revenue with no impact on physical museum operations.",
-                    incorrect: "Consider the trade-offs. [Selected answer] might generate short-term revenue but could undermine brand authenticity. Lowering prices signals declining value. Betting lounges risk 'Disneyfication' backlash. Non-hockey events dilute brand focus. The best strategy EXTENDS reach (digital/VR) without changing core product (physical museum experience). Think: How can we serve fans we're NOT reaching currently, without compromising what makes us valuable?"
+                    correct: "Correct! Sports revenue streams are deeply interconnected. A star player signing (affecting payroll) drives jersey sales (merchandising), increases TV ratings (media rights), attracts premium sponsors (sponsorship), and fills seats (ticketing). This ecosystem thinking—understanding how streams amplify or constrain each other—separates strategic sports business leaders from purely financial operators.",
+                    incorrect: "Think about interconnection. The 'ecosystem' metaphor captures how sports revenue streams are interdependent—success in one area creates ripple effects across all others. A star player doesn't just affect one revenue line; they drive jersey sales, TV ratings, sponsor interest, and ticket demand simultaneously. This week, you'll explore these connections in depth."
                 }
             },
             {
                 number: 3,
-                outcome: 'MLO5.2',
+                outcome: 'WLO1.1',
+                type: 'Multiple Choice',
+                question: 'Which revenue stream has shown the HIGHEST growth rate in professional sports over the past 5 years?',
+                options: [
+                    { value: 'A', text: 'A) Ticketing & Live Events' },
+                    { value: 'B', text: 'B) Traditional Merchandising' },
+                    { value: 'C', text: 'C) Betting & Gaming' },
+                    { value: 'D', text: 'D) Stadium Naming Rights' }
+                ],
+                correct: 'C',
+                points: 1,
+                feedback: {
+                    correct: "Correct! Betting and gaming has been the fastest-growing revenue stream in sports, expanding rapidly since the 2018 U.S. Supreme Court decision allowing states to legalize sports betting. While still a smaller percentage of total revenue (2-8%), the growth trajectory and partnership opportunities have made it a strategic priority for leagues and teams.",
+                    incorrect: "Consider recent industry changes. Betting and gaming has been the fastest-growing stream since the 2018 legalization of sports betting in the U.S. While it's still a smaller portion of total revenue, the growth rate and strategic partnerships in this space have been remarkable. This week, you'll learn about both mature streams and emerging opportunities."
+                }
+            },
+            {
+                number: 4,
+                outcome: 'WLO1.2',
+                type: 'Multiple Choice',
+                question: 'Why do professional sports leagues require competitors to collaborate financially (through revenue sharing, salary caps, and draft systems)?',
+                options: [
+                    { value: 'A', text: 'A) Government regulations require equal distribution of sports revenue' },
+                    { value: 'B', text: 'B) Competitive balance creates uncertainty of outcome, which is the core product fans pay for' },
+                    { value: 'C', text: 'C) Owners prefer cooperation over competition for personal relationships' },
+                    { value: 'D', text: 'D) Smaller market teams would otherwise relocate to larger markets' }
+                ],
+                correct: 'B',
+                points: 1,
+                feedback: {
+                    correct: "Correct! Unlike traditional businesses where crushing competitors is the goal, sports leagues need competitive balance because uncertainty of outcome IS the product. If one team won every game, fans would lose interest. Revenue sharing, salary caps, and draft systems exist to maintain enough parity that games remain compelling—this is what makes sports economics fundamentally different from other industries.",
+                    incorrect: "Think about what fans are actually paying for. Sports is unique because the 'product' is uncertainty of outcome—the excitement of not knowing who will win. If one team dominated every season, fan interest (and revenue) would collapse. Revenue sharing and salary caps aren't about fairness or regulation; they're strategic tools to maintain competitive balance and protect the core product."
+                }
+            },
+            {
+                number: 5,
+                outcome: 'WLO1.2',
                 type: 'True/False',
-                question: 'True or False: Heritage properties should apply the same revenue optimization frameworks (from Weeks 1-4) as professional sports teams.',
+                question: 'True or False: A sports team can maximize long-term value by focusing solely on winning championships, even if it means operating at a financial loss.',
                 options: [
                     { value: 'True', text: 'True' },
                     { value: 'False', text: 'False' }
@@ -732,130 +768,98 @@
                 correct: 'False',
                 points: 1,
                 feedback: {
-                    correct: "Correct! Heritage properties require a modified strategic approach. Revenue matters (Week 1 frameworks still apply), but brand authenticity creates constraints. You can't just maximize every revenue stream—some innovations would generate short-term revenue but destroy long-term credibility. This week, you'll learn frameworks for evaluating which innovations preserve authenticity vs. which cross the line into 'Disneyfication.'",
-                    incorrect: "Not quite! While Week 1-4 revenue frameworks are useful, heritage properties face an additional constraint: Brand authenticity is as valuable as profit. Professional teams can aggressively monetize without existential risk, but heritage properties risk losing credibility (and thus their entire value proposition) if they over-commercialize. This week, you'll learn how to balance revenue optimization with authenticity preservation."
-                }
-            },
-            {
-                number: 4,
-                outcome: 'MLO5.2',
-                type: 'Multiple Choice',
-                question: 'You\'re designing a VR experience for the Hockey Hall of Fame. Which feature would be MOST likely to cross the line into "Disneyfication"?',
-                options: [
-                    { value: 'A', text: 'A) Virtual tour of the Great Hall with 360-degree views of actual exhibits' },
-                    { value: 'B', text: 'B) AI-powered Q&A with archival footage of legendary players' },
-                    { value: 'C', text: 'C) VR game where users play hockey AS Wayne Gretzky against cartoon opponents' },
-                    { value: 'D', text: 'D) Interactive timeline exploring hockey\'s evolution with primary source documents' }
-                ],
-                correct: 'C',
-                points: 1,
-                feedback: {
-                    correct: "Correct! Option C crosses into 'Disneyfication' because it gamifies hockey history and prioritizes entertainment over education/preservation. Cartoon opponents trivialize the sport's heritage. Playing 'AS Gretzky' shifts from honoring his legacy to exploiting it for engagement metrics. Boundary-setting principle: Innovation that EXTENDS your core mission (preservation, education, celebration) is acceptable. Innovation that REPLACES your core mission with entertainment is 'Disneyfication.'",
-                    incorrect: "Think about mission alignment. [Selected answer] uses technology to extend the HHOF's core mission (preservation, education, celebration). Option C crosses the line because it prioritizes entertainment over education—playing hockey as Gretzky against cartoon opponents trivializes history. The boundary is: Does this innovation SERVE the heritage mission, or does it EXPLOIT the heritage for engagement metrics? Acceptable innovation = serve. Disneyfication = exploit."
-                }
-            },
-            {
-                number: 5,
-                outcome: 'MLO5.2',
-                type: 'Multiple Choice',
-                question: 'Where should a heritage sports property draw the line between acceptable innovation and "Disneyfication"?',
-                options: [
-                    { value: 'A', text: 'A) Any digital innovation risks Disneyfication - stick to traditional museum exhibits only' },
-                    { value: 'B', text: 'B) Innovation that serves the heritage mission (preservation, education) is acceptable; innovation that replaces the mission with entertainment crosses the line' },
-                    { value: 'C', text: 'C) All innovation is acceptable as long as revenue increases - the mission evolves with market demand' },
-                    { value: 'D', text: 'D) Innovation is acceptable only if approved unanimously by curatorial staff and historians' }
-                ],
-                correct: 'B',
-                points: 1,
-                feedback: {
-                    correct: "Correct! The boundary is mission alignment: Innovation that EXTENDS the core mission (preservation, education, celebration of heritage) is acceptable. Innovation that REPLACES the mission with entertainment is Disneyfication. Examples: VR tours that increase access = acceptable. Gamification that trivializes history = Disneyfication. The test: Does this innovation serve our heritage mission or exploit it for engagement metrics?",
-                    incorrect: "Think about mission alignment. [Selected answer] is too extreme. The key criterion is whether innovation SERVES the heritage mission (preservation, education) or REPLACES it with entertainment. Digital tools like VR tours, AI-powered guides, and digital archives can EXTEND access and education. But gamification that trivializes history or sponsorships that undermine credibility cross into Disneyfication. The boundary isn't about technology—it's about whether innovation honors or exploits the heritage."
+                    correct: "Correct! While winning matters, sustainable sports business requires balancing competitive success with financial health. Teams that overspend on players may win short-term but face salary cap penalties, reduced investment capacity, and potential ownership instability. The most valuable franchises (Cowboys, Yankees, Lakers) have found ways to be both competitive AND profitable.",
+                    incorrect: "Consider sustainability. While winning drives fan engagement, teams that consistently operate at losses face real consequences: reduced ability to invest in facilities, player development, and fan experience; potential ownership changes; and salary cap constraints in leagues that penalize overspending. Successful sports businesses balance competitive ambition with financial discipline."
                 }
             },
             {
                 number: 6,
-                outcome: 'MLO5.3',
-                type: 'Ranking',
-                question: 'Rank these 4 trends by their likely impact on heritage sports properties over the next 5 years (1 = highest impact, 4 = lowest impact):',
-                isRanking: true,
-                items: [
-                    'AI-powered personalization (customized tours, content recommendations)',
-                    'VR/AR experiences (immersive historical recreations)',
-                    'International expansion (pop-up exhibits, digital reach to global markets)',
-                    'Gen Z engagement strategies (social media, gamification, short-form content)'
-                ],
-                correct: ['AI-powered personalization (customized tours, content recommendations)', 'International expansion (pop-up exhibits, digital reach to global markets)', 'Gen Z engagement strategies (social media, gamification, short-form content)', 'VR/AR experiences (immersive historical recreations)'],
-                points: 1,
-                feedback: "Correct ranking! 1) AI-powered personalization (Highest impact): AI enhances EVERY visitor experience without requiring new infrastructure. Cost: Low. Reach: Everyone. Museums implementing AI see 25-40% increases in visitor engagement. 2) International expansion (High impact): Heritage properties are inherently LOCAL, but digital and pop-up exhibits can reach global markets, doubling addressable market. 3) Gen Z engagement (Medium-high impact): Critical for long-term sustainability. 4) VR/AR experiences (Medium impact): High wow-factor but expensive ($500K-$2M), requires hardware maintenance, appeals to tech-enthusiast niche more than broad audiences."
-            },
-            {
-                number: 7,
-                outcome: 'MLO5.3',
+                outcome: 'WLO1.2',
                 type: 'Multiple Choice',
-                question: 'Which future trend poses the BIGGEST RISK to heritage sports properties if they ignore it?',
+                question: 'What makes a sports franchise fundamentally different from a typical consumer goods company like Nike?',
                 options: [
-                    { value: 'A', text: 'A) Decline of traditional TV viewership (cord-cutting)' },
-                    { value: 'B', text: 'B) Generational shift in how younger audiences consume content (TikTok, Instagram, short-form)' },
-                    { value: 'C', text: 'C) Rise of sports betting and gambling normalization' },
-                    { value: 'D', text: 'D) Increased competition from streaming entertainment (Netflix, gaming)' }
+                    { value: 'A', text: 'A) Sports franchises have higher profit margins' },
+                    { value: 'B', text: 'B) Sports franchises need their competitors to succeed for the league product to have value' },
+                    { value: 'C', text: 'C) Sports franchises don\'t face competition for consumer spending' },
+                    { value: 'D', text: 'D) Sports franchises have simpler revenue models' }
                 ],
                 correct: 'B',
                 points: 1,
                 feedback: {
-                    correct: "Correct! Generational shift in content consumption is the existential threat. Heritage properties rely on FUTURE visitors to remain relevant. If Gen Z and Gen Alpha (ages 0-27) never develop the habit of visiting museums, your institution dies when Boomers and Gen X age out. Data point: Only 23% of Gen Z visit museums annually (vs. 54% of Boomers). Strategic implication: Invest in Gen Z engagement NOW (social media content, TikTok partnerships, interactive exhibits) or accept irrelevance in 20 years.",
-                    incorrect: "Think about existential vs. incremental threats. [Selected answer] affects heritage properties, but the BIGGEST risk is losing the next generation of visitors entirely. Gen Z (ages 12-27) visits museums at HALF the rate of Boomers and consumes content in 8-second TikTok clips, not 90-minute museum visits. If you don't adapt to generational shifts in content consumption, your institution becomes irrelevant in 20 years when current audiences age out."
+                    correct: "Correct! This is the fundamental paradox of sports business: You need your competitors to be strong. If Nike crushes Adidas, Nike wins. But if the Yankees crush every other MLB team, the entire league suffers because fans lose interest. Sports franchises compete on the field but collaborate on the business of making the league valuable. This 'coopetition' model is unique to sports.",
+                    incorrect: "Think about the competitive dynamic. Nike benefits if Adidas fails. But the Yankees don't benefit if every other MLB team fails—that would make the league unwatchable and destroy the product. Sports franchises exist in a 'coopetition' model where they compete on the field but must collaborate to maintain a valuable league product. This fundamentally changes strategic thinking."
+                }
+            },
+            {
+                number: 7,
+                outcome: 'WLO1.3',
+                type: 'Multiple Choice',
+                question: 'Which revenue stream faces the MOST significant "ceiling effect" (natural limit on growth)?',
+                options: [
+                    { value: 'A', text: 'A) Media Rights' },
+                    { value: 'B', text: 'B) Ticketing & Live Events' },
+                    { value: 'C', text: 'C) Digital/Streaming Content' },
+                    { value: 'D', text: 'D) International Licensing' }
+                ],
+                correct: 'B',
+                points: 1,
+                feedback: {
+                    correct: "Correct! Ticketing faces hard physical constraints: stadiums have fixed capacity, there are only so many home games per season, and there's a limit to how much fans will pay. A 50,000-seat stadium can't become 100,000 seats. In contrast, media rights can grow with new platforms, international expansion, and cord-cutting migration to streaming. Understanding ceiling effects helps prioritize growth investments.",
+                    incorrect: "Consider physical constraints. Ticketing is limited by stadium capacity (you can't add seats indefinitely), number of home games, and price elasticity. Media rights, streaming, and international markets can scale without these physical limits. When evaluating growth potential, understanding which streams face ceiling effects helps prioritize investment decisions."
                 }
             },
             {
                 number: 8,
-                outcome: 'MLO5.4',
-                type: 'Ranking',
-                question: 'You\'re creating a 5-year strategic vision for the Hockey Hall of Fame that integrates Weeks 1-5 frameworks. Rank these initiatives by implementation sequence (what to tackle first → last):',
-                isRanking: true,
-                items: [
-                    'Digital transformation (AI-powered tours, VR experiences, digital memberships)',
-                    'Stakeholder engagement (rebuilding trust with donors, curatorial staff, NHL partnerships)',
-                    'International expansion (pop-up exhibits in Asia, Europe)',
-                    'Revenue model diversification (reducing reliance on admissions, growing events/sponsorships)'
-                ],
-                correct: ['Stakeholder engagement (rebuilding trust with donors, curatorial staff, NHL partnerships)', 'Revenue model diversification (reducing reliance on admissions, growing events/sponsorships)', 'Digital transformation (AI-powered tours, VR experiences, digital memberships)', 'International expansion (pop-up exhibits in Asia, Europe)'],
-                points: 2,
-                feedback: "Correct sequencing! Year 1: Stakeholder Engagement (Foundation) - Before ANY innovation, rebuild trust with stakeholders who enable your success. Years 1-2: Revenue Model Diversification (Financial Stability) - Reduce dependence on declining admissions. Years 2-4: Digital Transformation (Growth Driver) - With stakeholder buy-in and financial stability, invest in digital initiatives. Years 3-5: International Expansion (Scale) - Requires strong brand reputation, financial cushion, and proven digital capabilities. Strategic principle: Build foundation before growth."
-            },
-            {
-                number: 9,
-                outcome: 'MLO5.4',
+                outcome: 'WLO1.3',
                 type: 'Multiple Choice',
-                question: 'A 5-year strategic vision for the Hockey Hall of Fame should integrate frameworks from Weeks 1-5. Which approach BEST demonstrates framework integration?',
+                question: 'A team is deciding whether to invest heavily in their betting/gaming partnerships. What is the PRIMARY risk they should consider?',
                 options: [
-                    { value: 'A', text: 'A) Apply Week 1 revenue streams in Year 1, Week 2 media in Year 2, Week 3 sponsorship in Year 3, Week 4 branding in Year 4, Week 5 legacy in Year 5 (sequential application)' },
-                    { value: 'B', text: 'B) Use revenue ecosystem thinking (Week 1) to diversify streams, media strategy (Week 2) for digital content, sponsorship ROI (Week 3) for aligned partners, and legacy/innovation balance (Week 5) to set boundaries—applied together across all 5 years' },
-                    { value: 'C', text: 'C) Focus only on Week 5 frameworks since heritage properties are unique and Weeks 1-4 apply only to professional teams' },
-                    { value: 'D', text: 'D) Choose the single most important framework (e.g., revenue optimization from Week 1) and apply it consistently for 5 years' }
-                ],
-                correct: 'B',
-                points: 2,
-                feedback: {
-                    correct: "Excellent! True framework integration means applying MULTIPLE frameworks SIMULTANEOUSLY, not sequentially. Your 5-year vision should use: Revenue ecosystem thinking (Week 1) to identify stream interdependencies, media strategy (Week 2) to create digital content, sponsorship ROI (Week 3) to select mission-aligned partners, and legacy/innovation balance (Week 5) to filter options that compromise authenticity. These frameworks work TOGETHER across all 5 years—that's synthesis, not just application.",
-                    incorrect: "Think about synthesis vs. sequential application. [Selected answer] misses the point of integration. You don't apply frameworks ONE AT A TIME (sequential) or choose ONE framework to the exclusion of others. True strategic thinking integrates MULTIPLE frameworks SIMULTANEOUSLY: Use revenue ecosystem (Week 1) to diversify streams, media strategy (Week 2) for content, sponsorship ROI (Week 3) for partners, and legacy/innovation (Week 5) as a filter. They work together, not in isolation."
-                }
-            },
-            {
-                number: 10,
-                outcome: 'MLO5.4',
-                type: 'Multiple Choice',
-                question: 'Which statement BEST describes the role of Week 5 (Legacy & Innovation) frameworks in a comprehensive sports business strategy?',
-                options: [
-                    { value: 'A', text: 'A) Week 5 replaces Week 1-4 frameworks when working with heritage properties' },
-                    { value: 'B', text: 'B) Week 5 adds a constraint filter to Week 1-4 frameworks: "Does this compromise authenticity?"' },
-                    { value: 'C', text: 'C) Week 5 only applies to museums and halls of fame, not professional teams or leagues' },
-                    { value: 'D', text: 'D) Week 5 is the capstone summary of Weeks 1-4, reviewing concepts without adding new ones' }
+                    { value: 'A', text: 'A) Betting revenue is too small to matter strategically' },
+                    { value: 'B', text: 'B) Regulatory uncertainty could change the landscape quickly' },
+                    { value: 'C', text: 'C) Fans universally oppose betting partnerships' },
+                    { value: 'D', text: 'D) Betting partnerships reduce media rights value' }
                 ],
                 correct: 'B',
                 points: 1,
                 feedback: {
-                    correct: "Correct! Week 5 frameworks don't REPLACE Weeks 1-4—they ADD A FILTER. Revenue streams still matter (Week 1), media strategy still applies (Week 2), sponsorships still drive growth (Week 3), brand positioning still matters (Week 4). BUT: For heritage properties, brand authenticity creates constraints. Mental model: Week 1-4 frameworks generate strategic OPTIONS. Week 5 framework FILTERS those options, eliminating strategies that compromise authenticity regardless of revenue potential. This is ADDITIVE strategic thinking.",
-                    incorrect: "Think about framework integration. Week 5 doesn't replace (A), only apply to heritage properties (C), or just summarize (D) previous weeks—it ADDS a strategic filter. Revenue optimization frameworks from Weeks 1-4 still apply, but heritage properties must ask an additional question: 'Does this strategy compromise authenticity?' Some high-revenue strategies fail this test and must be rejected. This is why heritage property strategy is MORE complex than professional team strategy—you're optimizing TWO variables (revenue AND authenticity), not just one (revenue)."
+                    correct: "Correct! While betting/gaming offers high growth potential, it faces significant regulatory uncertainty. Laws vary by state/province, regulations continue to evolve, and public sentiment could shift. Teams investing heavily in this space must consider scenario planning: What happens if regulations tighten? Balancing growth opportunity with regulatory risk is a key strategic challenge.",
+                    incorrect: "Think about external factors beyond the team's control. Betting revenue is growing fast and fans are generally accepting, but regulatory uncertainty is the key risk. Laws differ by jurisdiction, continue to evolve, and could change direction. Smart strategy involves weighing growth potential against factors you can't control—and having contingency plans."
+                }
+            },
+            {
+                number: 9,
+                outcome: 'WLO1.4',
+                type: 'Multiple Choice',
+                question: 'The NFL shares approximately 60% of all revenue equally among teams. Which team type benefits MOST from this arrangement?',
+                options: [
+                    { value: 'A', text: 'A) Large-market teams like the Dallas Cowboys' },
+                    { value: 'B', text: 'B) Small-market teams like the Green Bay Packers' },
+                    { value: 'C', text: 'C) Teams with new stadiums' },
+                    { value: 'D', text: 'D) Teams with losing records' }
+                ],
+                correct: 'B',
+                points: 1,
+                feedback: {
+                    correct: "Correct! Revenue sharing redistributes money from large-market teams (who generate more local revenue) to small-market teams (who benefit from the shared national pool). Green Bay, the smallest market in the NFL, can remain competitive because they receive equal shares of the massive national TV contracts. Without revenue sharing, small markets couldn't afford competitive rosters.",
+                    incorrect: "Think about where money flows. Revenue sharing takes from teams that generate more (large markets like Dallas, New York) and distributes equally to all teams. Small-market teams like Green Bay, which couldn't generate comparable local revenue, benefit most from equal shares of national TV money. This is how the NFL maintains competitive balance despite market size disparities."
+                }
+            },
+            {
+                number: 10,
+                outcome: 'WLO1.4',
+                type: 'Multiple Choice',
+                question: 'A large-market NHL team owner argues against revenue sharing, saying "We earned this money, why should we subsidize smaller markets?" What is the STRONGEST counter-argument?',
+                options: [
+                    { value: 'A', text: 'A) Revenue sharing is required by the collective bargaining agreement' },
+                    { value: 'B', text: 'B) Large-market teams benefit when the overall league is strong and competitive' },
+                    { value: 'C', text: 'C) Small-market fans deserve access to winning teams too' },
+                    { value: 'D', text: 'D) Revenue sharing reduces player salaries league-wide' }
+                ],
+                correct: 'B',
+                points: 1,
+                feedback: {
+                    correct: "Correct! The strongest business argument is self-interest: large-market teams benefit from a strong league. If small-market teams fold or become permanently uncompetitive, the league product suffers—fewer compelling matchups, reduced national TV value, weaker playoffs. The Yankees need competitive opponents for their games to matter. Revenue sharing isn't charity; it's an investment in league-wide value that benefits everyone.",
+                    incorrect: "Think about enlightened self-interest. The strongest argument isn't about rules, fairness, or salaries—it's that large-market teams themselves benefit from a strong league. The Yankees need competitive opponents; a league of weak teams would reduce national TV value, playoff excitement, and ultimately franchise values. Revenue sharing protects the ecosystem that makes large-market teams valuable in the first place."
                 }
             }
         ];
@@ -865,10 +869,10 @@
         let currentQuestion = 0;
         let answers = {};
         let outcomeScores = {
-            'MLO5.1': { correct: 0, total: 3, maxPoints: 2 },
-            'MLO5.2': { correct: 0, total: 4, maxPoints: 3 },
-            'MLO5.3': { correct: 0, total: 2, maxPoints: 2 },
-            'MLO5.4': { correct: 0, total: 3, maxPoints: 4 }
+            'WLO1.1': { correct: 0, total: 3, maxPoints: 3 },
+            'WLO1.2': { correct: 0, total: 3, maxPoints: 3 },
+            'WLO1.3': { correct: 0, total: 2, maxPoints: 2 },
+            'WLO1.4': { correct: 0, total: 2, maxPoints: 2 }
         };
 
         function goToQuiz() {
@@ -1137,46 +1141,46 @@
             if (totalPoints <= 3) {
                 level = 'Foundation Builder';
                 levelClass = 'foundation';
-                levelTitle = 'You\'re starting fresh with heritage property strategy!';
-                pathDescription = "Focus heavily on Module 3's core frameworks and all interactive widgets. Spend extra time with the Legacy vs Innovation Matrix and Hockey Hall of Fame case. Don't skip the Details accordions—they'll build your foundation.";
+                levelTitle = 'You\'re starting fresh with sports revenue strategy!';
+                pathDescription = "Focus heavily on Module 3's Five Revenue Streams content and all interactive widgets. Spend extra time with the Revenue Mix Slider and Ecosystem Cascade Simulator. Don't skip the Details accordions—they'll build your foundation.";
                 recommendations = [
-                    'Module 3: Legacy vs. Innovation Matrix framework (spend extra time here)',
-                    'All interactive widgets for hands-on learning',
-                    'Hockey Hall of Fame case study (Module 5) - read carefully',
+                    'Module 3: Five Revenue Streams framework (spend extra time here)',
+                    'Revenue Mix Slider widget - experiment with different allocations',
+                    'Ecosystem Cascade Simulator - see how streams interconnect',
                     'Discussion forums - ask questions and engage with peers'
                 ];
             } else if (totalPoints <= 6) {
                 level = 'Strategic Intuition';
                 levelClass = 'intuition';
-                levelTitle = 'You have good business thinking that partially transfers to heritage contexts!';
-                pathDescription = "Focus on Module 3's boundary-setting concepts and the Hockey Hall of Fame case in Module 5. Your challenge: Understanding WHERE traditional revenue frameworks apply vs. where brand authenticity constraints override them.";
+                levelTitle = 'You have good business instincts that apply to sports!';
+                pathDescription = "Focus on understanding the ecosystem connections between revenue streams and the unique aspects of sports economics (competitive balance, revenue sharing). The simulators will help you see these dynamics in action.";
                 recommendations = [
-                    'Module 3: Boundary-setting between innovation and Disneyfication',
-                    'Hockey Hall of Fame case (Module 5) - apply your frameworks',
-                    'HHOF Transformation Simulation (Module 4) - test trade-off analysis',
-                    'Compare heritage properties to professional teams you studied in Weeks 1-4'
+                    'Module 3: Revenue ecosystem and interdependencies',
+                    'Dynamic Pricing Simulator - explore ticketing strategy',
+                    'Revenue Empire Builder - test your strategic thinking',
+                    'Compare different league revenue sharing models'
                 ];
             } else if (totalPoints <= 8) {
                 level = 'Advanced Strategist';
                 levelClass = 'advanced';
                 levelTitle = 'Strong baseline knowledge!';
-                pathDescription = "Challenge yourself with the HHOF Transformation Simulation in Module 4 and the Strategic Vision Memo in Module 6. Your focus: Synthesizing Weeks 1-5 into cohesive strategic plans, not just understanding individual frameworks.";
+                pathDescription = "Challenge yourself with the Revenue Empire Builder simulation and focus on the nuances of growth vs. risk trade-offs. Your focus: Applying frameworks to real strategic decisions, not just understanding concepts.";
                 recommendations = [
-                    'HHOF Transformation Simulation (Module 4) - strategic decision-making',
-                    'Strategic Vision Memo (Module 6) - synthesis challenge',
-                    'Hockey Hall of Fame case (Module 5) - apply all frameworks',
+                    'Revenue Empire Builder - build and defend your strategy',
+                    'Betting Market Simulator - explore emerging revenue streams',
+                    'Module 5: Apply concepts to real-world analysis',
                     'Help classmates in discussion forums - teaching reinforces learning'
                 ];
             } else {
                 level = 'Strategic Master';
                 levelClass = 'master';
-                levelTitle = 'You already understand heritage property strategy well!';
-                pathDescription = "Speed through Modules 2-3, then dive deep into the Hockey Hall of Fame case (Module 5) and Strategic Vision Memo (Module 6). Consider: How would YOU innovate the model beyond what's taught in the course?";
+                levelTitle = 'You already understand sports revenue strategy well!';
+                pathDescription = "Speed through the foundational content and dive deep into the strategic simulations. Consider: How would YOU build a revenue strategy for a new expansion franchise? What trade-offs would you prioritize?";
                 recommendations = [
-                    'Hockey Hall of Fame case (Module 5) - deep strategic analysis',
-                    'Strategic Vision Memo (Module 6) - showcase your expertise',
+                    'Revenue Empire Builder - push for advanced strategies',
+                    'CFL Expansion Project - start thinking about your city selection',
                     'Mentor classmates in discussion forums',
-                    'Think critically: Where do you disagree with the frameworks? Why?'
+                    'Think critically: Where do current league strategies fall short?'
                 ];
             }
 
@@ -1202,7 +1206,7 @@
             Object.keys(outcomeScores).forEach(outcome => {
                 const score = outcomeScores[outcome].correct;
                 const total = outcomeScores[outcome].maxPoints;
-                const outcomeNum = outcome.replace('MLO', '');
+                const outcomeNum = outcome.replace('WLO', '').replace('.', '-');
 
                 document.getElementById(`outcome-${outcomeNum}`).textContent = `${score}/${total}`;
                 document.getElementById(`progress-${outcomeNum}`).style.width = `${(score / total) * 100}%`;

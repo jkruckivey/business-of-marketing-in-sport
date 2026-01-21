@@ -409,6 +409,42 @@
             color: var(--color-success);
         }
 
+        .stream-projected.at-cap {
+            color: var(--color-warning);
+        }
+
+        .cap-badge {
+            display: inline-block;
+            background: var(--color-warning);
+            color: var(--color-neutral-900);
+            font-size: 0.65rem;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+            margin-left: 0.25rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-neutral-900);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .toast.show {
+            opacity: 1;
+        }
+
         /* Summary Section */
         .projection-summary {
             background: var(--color-neutral-900);
@@ -981,7 +1017,8 @@
             const warning = document.getElementById('focus-warning');
             if (totalFocus !== 100) {
                 warning.style.display = 'block';
-                warning.textContent = `Total focus: ${totalFocus}% (should equal 100% for optimal allocation)`;
+                const diff = totalFocus > 100 ? `${totalFocus - 100}% over` : `${100 - totalFocus}% under`;
+                warning.textContent = `Total focus: ${totalFocus}% (${diff}) — must equal exactly 100% to proceed`;
             } else {
                 warning.style.display = 'none';
             }
@@ -1020,8 +1057,13 @@
                 // Update stream projected display
                 const projectedEl = document.getElementById(`projected-${stream.id}`);
                 if (projectedEl) {
-                    const capIndicator = atCap ? ' (capped)' : '';
-                    projectedEl.textContent = `→ ${formatShortCurrency(projectedValue)}${capIndicator}`;
+                    if (atCap) {
+                        projectedEl.innerHTML = `→ ${formatShortCurrency(projectedValue)} <span class="cap-badge">capped</span>`;
+                        projectedEl.classList.add('at-cap');
+                    } else {
+                        projectedEl.innerHTML = `→ ${formatShortCurrency(projectedValue)}`;
+                        projectedEl.classList.remove('at-cap');
+                    }
                 }
 
                 // Calculate weighted risk
@@ -1046,9 +1088,9 @@
         function confirmYear() {
             const totalFocus = gameState.streams.reduce((sum, s) => sum + s.focus, 0);
 
-            // Validation
-            if (totalFocus < 50) {
-                alert('Please allocate at least 50% total focus across your revenue streams.');
+            // Validation - must equal exactly 100%
+            if (totalFocus !== 100) {
+                alert(`Total focus must equal exactly 100%. Currently at ${totalFocus}%. Please adjust your allocation.`);
                 return;
             }
 
@@ -1252,15 +1294,70 @@ Generated: ${new Date().toLocaleString()}
 Business of Sports Marketing - Week 1
 `;
 
-            const blob = new Blob([content], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = 'revenue-empire-results.txt';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+            // Try download first, fallback to clipboard
+            try {
+                const blob = new Blob([content], { type: 'text/plain' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'revenue-empire-results.txt';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                showToast('Summary downloaded!');
+            } catch (downloadError) {
+                // Fallback: copy to clipboard
+                copyToClipboard(content);
+            }
+        }
+
+        function copyToClipboard(text) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => {
+                    showToast('Summary copied to clipboard!');
+                }).catch(() => {
+                    fallbackCopyToClipboard(text);
+                });
+            } else {
+                fallbackCopyToClipboard(text);
+            }
+        }
+
+        function fallbackCopyToClipboard(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                showToast('Summary copied to clipboard!');
+            } catch (err) {
+                showToast('Could not copy. Please try again.');
+            }
+            document.body.removeChild(textarea);
+        }
+
+        function showToast(message) {
+            // Remove existing toast if any
+            const existingToast = document.querySelector('.toast');
+            if (existingToast) existingToast.remove();
+
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            // Trigger animation
+            setTimeout(() => toast.classList.add('show'), 10);
+
+            // Remove after 3 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
         }
 
         function showScreen(screenId) {

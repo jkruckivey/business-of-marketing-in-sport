@@ -1,5 +1,9 @@
 # MODULE 5: Case Study - LIV Golf: Sportswashing & Ethical Sponsorship
-**Version:** 3.0.0 | **Last Updated:** 2026-01-15
+**Version:** 3.1.0 | **Last Updated:** 2026-01-20
+
+### Version 3.1.0 Changes
+- **REMOVED:** Element 11 (Discussion Board) - replaced by Module 6 reflection
+- **REMOVED:** Element 12 (Case Analysis Coach) - streamlined module flow
 
 ### Version 3.0.0 Changes
 - **RENAMED:** From module-4-case-study.md to module-5-case-study.md
@@ -29,9 +33,7 @@
 | 7A | **▬ Text** ⬤ Required | Widget Introduction - Brand Risk Calculator | Type directly | Structured intro |
 | 8 | **Interactive Widget** ⬤ Required | Brand Risk Calculator | Embed iframe | Model sponsorship value vs. reputation cost |
 | 9 | **📝 Practice Quiz** ⬤ Required | LIV Golf Case Comprehension Check (5 questions) | Configure in Uplimit | Tests understanding before roleplay |
-| 10 | **AI Chat Widget** ⬤ Required | AI Roleplay: Phil Mickelson's Decision | Configure in Uplimit | Student plays Mickelson weighing LIV offer |
-| 11 | **Text Response** ⬤ Required | Reflection: Your Position (150 words) | Configure in Uplimit | Personal synthesis after roleplay |
-| 12 | **AI Chat Widget** ◐ Recommended | Case Analysis Coach | Configure in Uplimit | Socratic guidance for ethical analysis |
+| 10 | **◈ AI Roleplay** ⬤ Required | Phil Mickelson's Decision | Configure in Uplimit | Student plays Mickelson weighing LIV offer |
 
 ---
 
@@ -822,153 +824,10 @@ Student makes a clear decision and defends it with multi-faceted reasoning that 
 
 ---
 
-## Element 11: Discussion Board - Your Position on Sportswashing
-
-**Element Type:** Discussion Board
-
-**Module:** Module 4 (After AI Roleplay)
-
-**Timing:** Post-roleplay reflection and peer debate
-
-**Purpose:** Articulate personal ethical framework on sportswashing; learn from peers' perspectives on this genuinely debatable issue
-
----
-
-**Prompt:**
-You just experienced Phil Mickelson's decision from the inside. Now step OUT of Mickelson's shoes and share YOUR position on sportswashing with your classmates.
-
-**Your Task:**
-
-1. **State your position on athletes:**
-   - Should professional athletes accept guaranteed money from sportswashing sources (Saudi PIF, Qatari investment funds, etc.)?
-   - What factors would change your answer? (age, career stage, sport, visibility level?)
-
-2. **State your position on brands:**
-   - If you were advising a brand as a marketing consultant, would your ethical framework differ from the advice you'd give an individual athlete?
-   - Reference concepts from this module (stakeholder analysis, controversy-adjusted ROI, the LIV Golf sponsor decision patterns)
-
-3. **Engage with classmates:**
-   - Read at least 2 classmates' positions
-   - Respond to someone who took a DIFFERENT position than you—engage with their reasoning respectfully
-
-**Guidelines:**
-- Initial post: 150-200 words
-- Respond to at least 2 classmates (75-100 words each)
-- Due: [Date] by 11:59 PM
-
-**Evaluation Criteria:**
-- Quality of ethical reasoning (uses module concepts, not just opinions): 40%
-- Specificity (references stakeholder analysis, ROI tools, sponsor patterns): 30%
-- Peer engagement (thoughtful responses to different viewpoints): 30%
-
-**Sample Strong Response:**
-> "Athletes face a different calculus than brands. Mickelson at 51 with declining performance had a narrow window for guaranteed wealth—I understand why he took it, even though I wouldn't advise it for younger athletes with more to lose.
->
-> **My athlete framework:** Career stage matters. Athletes over 40 with declining performance? Acceptable—they're maximizing a closing window. Athletes under 30 building a brand? Risky—the reputational damage compounds over decades.
->
-> **My brand framework:** Stricter standards apply. The Brand Risk Calculator showed that even 10% boycott probability devastates ROI for mass-market brands. My stakeholder analysis weighted employees heavily—52% would be 'uncomfortable' with LIV sponsorship. Brands have alternatives; athletes facing a $200M offer don't.
->
-> **The asymmetry matters:** Individual athletes can make personal choices accepting reputational risk; brands have fiduciary duties to shareholders AND responsibilities to employees that require higher ethical thresholds."
-
-**Instructor Facilitation:**
-- Highlight 2-3 posts that demonstrate strong ethical reasoning in weekly announcement
-- Pose follow-up question: "For those who said 'it depends'—where exactly is YOUR line?"
-- Connect discussion to Week 4 athlete branding module
-
----
-
-## Element 12: AI Chat Widget - LIV Golf Case Analysis Coach
-
-**Element Type:** AI Chat Widget (Socratic coaching for case analysis)
-
-**Widget Name:** "LIV Golf Case Analysis Coach"
-
-**Purpose:** Help students think through ethical sponsorship questions using Socratic method
-
----
-
-### System Prompt Configuration
-
-**Copy this into Uplimit AI Chat Widget settings:**
-
-```
-You are a case study teaching assistant helping MBA students analyze the LIV Golf case, focusing on ethical sponsorship decisions and sportswashing dynamics. Your role is to guide students through critical thinking using SOCRATIC QUESTIONING, not to provide answers.
-
-CASE CONTEXT:
-- LIV Golf is backed by Saudi Arabia's Public Investment Fund ($2B+ investment)
-- Offers golfers 3-5× PGA Tour earnings (Phil Mickelson $200M, etc.)
-- Most major sponsors declined; primarily Saudi-aligned or regional brands signed
-- Critics call it "sportswashing"—using sports to improve reputation
-- June 2023: PGA Tour and LIV Golf announced merger/alliance
-
-IMPORTANT RULES:
-1. NEVER write analysis for students or give direct answers
-2. NEVER tell students what they "should" conclude about ethics
-3. ALWAYS ask guiding questions that prompt deeper thinking
-4. Reference the 2 interactive exercises: Ethical Decision Tool, Brand Risk Calculator
-5. Present multiple perspectives fairly—this is a genuine ethical debate
-
-STUDENT QUESTIONS YOU'LL ENCOUNTER:
-
-**Topic 1: Should brands sponsor LIV Golf?**
-- Ask: "What stakeholders did you identify in the Ethical Decision Tool? How did you weight them?"
-- Ask: "What would change if you were advising a challenger brand vs. a premium brand?"
-- Ask: "The case shows 7UP signed but Rolex declined. What explains that difference?"
-- Do NOT: Tell them sponsorship is "right" or "wrong"
-
-**Topic 2: Is LIV Golf "sportswashing"?**
-- Ask: "How would you define sportswashing? Does Coca-Cola sponsoring Olympics fit that definition?"
-- Ask: "What evidence would prove or disprove that Saudi Arabia's reputation improved?"
-- Ask: "If sportswashing 'works,' does that make it more or less concerning?"
-- Do NOT: Declare sportswashing is "bad" or "acceptable"
-
-**Topic 3: ROI vs. Ethics**
-- Ask: "Use the Brand Risk Calculator: At what controversy level does the deal become negative NPV?"
-- Ask: "How would you quantify 'employee discomfort' in dollar terms?"
-- Ask: "Is there a premium at which YOU would accept the ethical risk? What's your number?"
-- Do NOT: Suggest ethics should override or be subordinate to ROI
-
-**Topic 4: PGA Tour Merger**
-- Ask: "The merger means PGA Tour now partners with the same entity. What does that imply for brands who declined LIV Golf?"
-- Ask: "Did the merger validate LIV Golf's strategy or represent PGA Tour's failure?"
-- Ask: "How should sponsors react to the merged entity?"
-- Do NOT: Declare merger was "good" or "bad"
-
-RESPONSE STYLE:
-- Start with: "That's a thoughtful question. Let's examine it from multiple angles..."
-- Use questions like: "What assumptions are you making about..." "How would you respond to someone who argues..." "What data would change your view?"
-- If student is stuck: "Try this: Open the [Widget Name] and test scenario [X]. What do you observe?"
-- End with: "What does this tell you about how YOUR organization should approach similar decisions?"
-
-TONE: Neutral facilitator who presents multiple perspectives. This is a genuine ethical debate—your job is to help students think, not to tell them what to think.
-```
-
----
-
-### Welcome Message
-
-```
-👋 Hi! I'm your LIV Golf Case Analysis Coach. I'm here to help you think through this complex case—not to tell you what to conclude.
-
-This case has no "right answer." Reasonable people disagree about sportswashing, ethical sponsorship, and the LIV Golf-PGA Tour merger. My job is to help you develop YOUR framework for these decisions.
-
-**Ready to start?** Tell me which question you're wrestling with:
-- Q1: Should a brand I advise sponsor LIV Golf?
-- Q2: Is LIV Golf actually "sportswashing"?
-- Q3: How do I balance ROI vs. ethical concerns?
-- Q4: What does the PGA Tour merger mean for sponsors?
-
-Or just say "I'm stuck on..." and I'll help!
-```
-
----
-
-## Module 4 Complete - Transition to Module 5
-
-**Completion Badge:** 🏆 Ethical Sponsorship Analysis Complete
+## Module 5 Complete - Transition to Module 6
 
 **What You've Accomplished:**
-You've read the LIV Golf case and applied sponsorship ROI frameworks to an ethically complex scenario. You mapped stakeholder impacts using the Ethical Sponsorship Decision Tool, calculated controversy-adjusted ROI with the Brand Risk Calculator, tested your comprehension, and then experienced the decision from the inside through the Phil Mickelson roleplay. Finally, you articulated your own position on sportswashing—distinguishing between advice for athletes vs. brands. Most importantly, you've wrestled with genuine ambiguity—there's no "right answer" to whether brands should sponsor LIV Golf.
+You've read the LIV Golf case and applied sponsorship ROI frameworks to an ethically complex scenario. You mapped stakeholder impacts using the Ethical Sponsorship Decision Tool, calculated controversy-adjusted ROI with the Brand Risk Calculator, tested your comprehension, and experienced the decision from the inside through the Phil Mickelson roleplay.
 
 **Key Takeaways:**
 - Sportswashing is real but its effectiveness is debated (Saudi favorability +15% among sports fans)
@@ -977,7 +836,5 @@ You've read the LIV Golf case and applied sponsorship ROI frameworks to an ethic
 - The PGA Tour-LIV Golf merger complicates the "boycott" narrative
 - Your personal ethical framework matters—different reasonable people reach different conclusions
 
-**Up Next: Module 5 - Sponsorship Strategy Memo**
-Now it's time to synthesize everything you've learned. You'll write a 2-page sponsorship strategy memo advising a real brand on whether to sponsor a specific property. You'll apply your CPM calculations, activation design, ROI projections, and ethical framework to make a defensible recommendation. This is your Week 3 graded deliverable (40 points).
-
-Ready to make your recommendation? Let's build your memo.
+**Up Next: Module 6 - Ethical Sponsorship Reflection**
+Now capture what you learned. You'll reflect on the ethical tensions in sponsorship decisions and articulate your own framework for navigating these dilemmas.

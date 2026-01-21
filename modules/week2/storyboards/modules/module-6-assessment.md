@@ -1,15 +1,12 @@
-# MODULE 6: Assessment - Rogers NHL Mini-Case Memo
-**Version:** 2.1.0 | **Last Updated:** 2026-01-14
+# MODULE 6: Assessment - Media Rights Reflection
+**Version:** 3.0.0 | **Last Updated:** 2026-01-20
 
-### Version 2.1.0 Changes
-- **RESTORED:** Micro-step scaffolding as student-facing elements (Elements 3-5)
-- **REORDERED:** Micro-steps come BEFORE AI Roleplay to prepare students for practice pitch
-
-### Version 2.0.0 Changes
-- **STANDARDIZED:** Module structure to match course-wide template (5 elements)
-- **MOVED:** Micro-step scaffolding, AI feedback workflow, rubric details accordion to instructor notes
-- **REMOVED:** AI Coach widget (AI Roleplay provides formative practice)
-- **ADDED:** Element 5 "What's Next" infobox for clean transition
+### Version 3.0.0 Changes
+- **ALIGNED:** Assessment now matches simplified Module 5 (text tables + AI chat, not case study)
+- **REDUCED:** From 40 points to 25 points (lighter assessment)
+- **SIMPLIFIED:** 300-word reflection instead of 1000-word memo
+- **REMOVED:** 3 micro-steps, AI Roleplay, file upload
+- **UPDATED:** Rubric references Module 5 content (tables, AI decision advisor)
 
 **Purpose:** Assess student understanding of Week 2 content (measures WLO 2.1-2.4)
 
@@ -17,14 +14,10 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Sets context from Module 5 |
-| 2 | **ⓘ Infobox (Assessment)** ⬤ Required | Assessment overview | Type directly | Purple variant, 40 points |
-| 3 | **📝 Text Response** ⬤ Required | Micro-Step 1: Identify 3 mistakes | Configure in Uplimit | Scaffolded writing step |
-| 4 | **📝 Text Response** ⬤ Required | Micro-Step 2: Framework evaluation | Configure in Uplimit | Scaffolded writing step |
-| 5 | **📝 Text Response** ⬤ Required | Micro-Step 3: 2026 recommendation | Configure in Uplimit | Scaffolded writing step |
-| 6 | **◈ AI Roleplay** ◐ Recommended | Practice pitch to Rogers board | Configure in Uplimit | Marcus Thompson character |
-| 7 | **📤 File Response** ⬤ Required | Memo submission | Configure in Uplimit | File upload, rubric grading |
-| 8 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 7 |
+| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Bridges from Module 5 |
+| 2 | **ⓘ Infobox (Assessment)** ⬤ Required | Assessment overview | Type directly | Purple variant, 25 points |
+| 3 | **📝 Text Response** ⬤ Required | Media rights reflection | Configure in Uplimit | 300-word text response |
+| 4 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 7 |
 
 ---
 
@@ -35,9 +28,11 @@
 2. Copy markdown below:
 
 ```markdown
-You've analyzed the Rogers/NHL mega-deal through multiple lenses—watching the 10-year retrospective, exploring financial exhibits, and using interactive tools to project scenarios. You understand the deal's context, structure, and outcomes.
+## What Did You Learn?
 
-Now it's time to demonstrate what you've learned. You'll write an executive memo as a consultant hired by Rogers to assess the NHL deal's performance and recommend next steps for the 2026 decision.
+You've explored the Rogers NHL deal through data tables showing what went wrong, and you advised the CEO on the 2026 decision through the AI advisor.
+
+Now capture what you learned. This isn't about getting the "right answer"—it's about showing you understand media rights economics and can apply that thinking to real decisions.
 ```
 
 ---
@@ -50,206 +45,122 @@ Now it's time to demonstrate what you've learned. You'll write an executive memo
 3. Copy markdown below:
 
 ```markdown
-Title: ▪ Assessment: Rogers NHL Mini-Case Memo (40 points)
+Title: ▪ Assessment: Media Rights Reflection (25 points)
 
-**Your Task:** Write a 2-page executive memo (max 1000 words) evaluating the Rogers NHL deal and providing strategic recommendations.
+**Your Task:** In 300 words or less, reflect on what you learned about media rights economics from the Rogers NHL case.
 
-**Required Components:**
-1. Evaluate the $5.2B investment using Week 2 frameworks (valuation, platform economics, engagement)
-2. Identify 2-3 key mistakes Rogers made with supporting evidence from case exhibits
-3. Recommend Rogers' 2026 strategy with clear trade-off analysis
+**Your reflection should address:**
 
-**Grading Rubric (40 points):**
-- Deal Evaluation (10 pts): Applies Week 2 frameworks with evidence-based analysis
-- Mistake Identification (10 pts): 2-3 specific mistakes with exhibit data
-- Strategic Recommendations (10 pts): Actionable 2026 strategy with trade-offs
-- Business Communication (10 pts): Professional memo format, clear writing, word limit
+1. **The Big Mistake** - What was Rogers' single biggest miscalculation, and why did it matter?
+2. **The Framework** - How does the "projections vs. actuals" comparison illustrate media rights risk?
+3. **Your 2026 Call** - What did you recommend to the AI advisor, and what trade-off did you accept?
 
-**Workflow:** Complete the 3 micro-steps below → Practice with AI Roleplay → Synthesize into final memo.
+**Grading (25 points):**
+- Mistake analysis with reasoning (10 pts)
+- Framework understanding (8 pts)
+- Decision trade-off awareness (7 pts)
+
+**Tip:** Be specific. "They paid too much" is vague. "They projected 3-5% viewership growth but got -40% due to cord-cutting" shows framework thinking.
 ```
 
 ---
 
-## Element 3: Micro-Step 1 - Identify Key Mistakes `[v2.1.0]`
-
-**Element Type:** Text Response
+## Element 3: Text Response - Media Rights Reflection
 
 **Uplimit Implementation:**
 1. Select **Exercise → Text Response Question**
-2. Configure as formative (0 points) or low-stakes (5 points)
-3. Enable AI feedback
-
-**Prompt:**
-```
-Based on your analysis of the Rogers NHL case, identify **3 key mistakes** Rogers made with this deal.
-
-For each mistake:
-- State the mistake in one sentence
-- Provide specific evidence from the case exhibits (e.g., "Projected 1M streaming subscribers by Year 5, actual was 450K")
-- Explain WHY this was a mistake (what did they misjudge?)
-
-**Format:** Bullet points, 150-200 words total
-
-**Example:**
-• **Mistake 1: Overestimated streaming adoption.** Rogers projected 1M Sportsnet NOW subscribers by Year 5; actual was 450K (55% shortfall). They assumed exclusive NHL content would drive subscriptions, but hockey alone wasn't enough—consumers wanted multi-sport platforms like DAZN.
-```
-
-**AI Feedback Prompt:**
-```
-Review this student's identification of Rogers' mistakes. Check for:
-1. Are mistakes specific and evidence-based (not vague)?
-2. Do they cite actual numbers from the case?
-3. Do they explain the underlying misjudgment?
-
-Provide brief, encouraging feedback. If mistakes are vague, ask for specific exhibit data.
-```
-
----
-
-## Element 4: Micro-Step 2 - Framework Evaluation `[v2.1.0]`
-
-**Element Type:** Text Response
-
-**Uplimit Implementation:**
-1. Select **Exercise → Text Response Question**
-2. Configure as formative (0 points) or low-stakes (5 points)
-3. Enable AI feedback
-
-**Prompt:**
-```
-Using **one Week 2 framework**, evaluate Rogers' NHL deal strategy.
-
-Choose ONE framework:
-- **Media Rights Valuation** (5 drivers of value) - Did Rogers correctly assess the NHL's value drivers?
-- **Platform Economics** (linear vs. streaming) - How did Rogers balance cable protection vs. streaming growth?
-- **Fan Engagement Value Chain** (passive → engaged → super-fan) - Did Rogers invest enough in engagement to reduce churn?
-
-**Your response should:**
-1. Name the framework you're applying
-2. Analyze how Rogers performed against that framework
-3. Identify what the framework reveals about the deal's failure
-
-**Format:** One paragraph, 100-150 words
-```
-
-**AI Feedback Prompt:**
-```
-Review this student's framework application. Check for:
-1. Did they clearly identify which framework they're using?
-2. Did they apply it specifically to Rogers (not generic analysis)?
-3. Does the framework analysis reveal insight about the deal's problems?
-
-Provide brief feedback. If the framework application is surface-level, ask how specific framework components (e.g., "Which of the 5 value drivers did Rogers misjudge?") apply.
-```
-
----
-
-## Element 5: Micro-Step 3 - 2026 Recommendation `[v2.1.0]`
-
-**Element Type:** Text Response
-
-**Uplimit Implementation:**
-1. Select **Exercise → Text Response Question**
-2. Configure as formative (0 points) or low-stakes (5 points)
-3. Enable AI feedback
-
-**Prompt:**
-```
-What should Rogers do when the NHL contract expires in 2026?
-
-**Choose ONE option and defend it:**
-- **Option 1: Renew exclusive rights** at renegotiated price ($300-350M/year)
-- **Option 2: Split the package** with TSN or a streaming partner ($200M/year)
-- **Option 3: Walk away** and exit NHL broadcasting entirely
-
-**Your response should:**
-1. State your recommendation clearly
-2. Provide 2-3 reasons supporting your choice
-3. Acknowledge ONE risk or trade-off of your recommendation
-
-**Format:** One paragraph, 100-150 words
-```
-
-**AI Feedback Prompt:**
-```
-Review this student's 2026 recommendation. Check for:
-1. Is the recommendation clear and specific?
-2. Are reasons grounded in case evidence (not just opinion)?
-3. Did they acknowledge a meaningful trade-off or risk?
-
-Provide brief feedback. If they didn't address trade-offs, ask: "What's the strongest argument AGAINST your recommendation?"
-```
-
----
-
-## Element 6: AI Roleplay - Rogers Board Practice Pitch `[renumbered v2.1.0]`
-
-**Scenario Title:** "Rogers Board Strategy Session"
-
-**Purpose:** Formative practice where students rehearse their analysis before writing.
-
-### Uplimit Configuration
-
-**Scenario Context:**
-```
-You are a strategy consultant hired by Rogers Communications. The board is meeting to review the NHL deal's performance and decide what to do when rights expire in 2026. CEO Marcus Thompson wants to hear your analysis before the full board presentation.
-
-This roleplay is formative practice (not graded) to help you rehearse before writing your final memo.
-```
-
-**AI Role:**
-```
-You are Marcus Thompson, CEO of Rogers Communications, meeting with a strategy consultant about the NHL rights deal. You're frustrated that the $5.2B investment never achieved projected returns, but you need objective analysis—not finger-pointing.
-
-Conversation flow:
-1. Ask them to explain where the deal went wrong
-2. Probe for specifics (which assumptions failed? by how much?)
-3. Ask about the streaming vs. linear trade-offs
-4. Request their 2026 recommendation with clear reasoning
-5. Challenge their recommendation with a counter-argument
-
-Be direct but professional. After 5-6 exchanges, wrap up: "Good analysis. I want this in memo format for the board by end of week."
-```
-
-**Student Instructions:**
-```
-You are a strategy consultant presenting to Rogers CEO Marcus Thompson about the NHL deal. He wants honest analysis of what went wrong and a recommendation for 2026.
-
-This is practice—use it to test your arguments before writing your memo.
-```
-
----
-
-## Element 7: File Response - Memo Submission `[renumbered v2.1.0]`
-
-**Uplimit Implementation:**
-1. Select **Exercise → File Response Question**
 2. Configure the following fields:
 
 **Question:**
 ```
-Submit your Rogers NHL Mini-Case Memo (2 pages, max 1000 words).
+What did you learn about media rights economics from the Rogers NHL case? Reflect in 300 words or less.
 ```
 
 **Additional Instructions:**
 ```
-Your memo will be evaluated using the rubric below (40 points total):
+Your response will be evaluated on:
 
-• Deal Evaluation (10 pts) - Applies Week 2 frameworks with evidence
-• Mistake Identification (10 pts) - 2-3 specific mistakes with exhibit data
-• Strategic Recommendations (10 pts) - Actionable 2026 strategy with trade-offs
-• Business Communication (10 pts) - Professional format, clear writing, word limit
+**Mistake Analysis (10 pts)**
+- Identifies Rogers' biggest miscalculation
+- Explains WHY it was a mistake (not just WHAT happened)
+- Uses specific data (e.g., "viewership down 40%", "cable subs down 35%")
 
-Format: Executive memo (To/From/Date/Re)
-Accepted formats: PDF, DOCX
-Filename suggestion: LastName_Week2_Memo.pdf
+**Framework Understanding (8 pts)**
+- Shows understanding of media rights valuation risk
+- References the projections vs. actuals gap
+- Demonstrates "ecosystem thinking" about cord-cutting, streaming, etc.
+
+**Decision Trade-off (7 pts)**
+- States the 2026 recommendation clearly (renew, renegotiate, or walk)
+- Acknowledges the trade-off or risk in that choice
+- Shows strategic reasoning, not just opinion
+
+**Reference the Module 5 content:**
+- The deal terms table
+- The projections vs. actuals comparison
+- Your 2026 Decision Advisor conversation
 ```
 
-**Template:** No template required
+**AI Feedback Prompt:**
+```
+Evaluate this media rights reflection. Check for:
+1. Did they identify a specific mistake with reasoning (not just "paid too much")?
+2. Did they reference data from the tables (viewership, subscriber, revenue numbers)?
+3. Did they acknowledge a trade-off in their 2026 recommendation?
+
+Provide brief, encouraging feedback. If their analysis is vague, ask for specific numbers.
+```
+
+**Rubric Configuration:**
 
 ---
 
-## Element 8: Infobox - What's Next `[renumbered v2.1.0]`
+**CRITERION 1: Mistake Analysis**
+
+**Points:** 10
+
+**Does not meet expectations (0-3 pts):**
+Mistake is vague or generic (e.g., "paid too much"). No explanation of WHY it was a mistake. No data cited.
+
+**Partially meets expectations (4-6 pts):**
+Identifies a mistake but explanation is surface-level. May cite some data but doesn't connect it to the reasoning.
+
+**Fully meets expectations (7-10 pts):**
+Clearly identifies a specific miscalculation (e.g., "projected viewership growth, got decline"). Explains the underlying misjudgment (cord-cutting, streaming cannibalization). Cites specific numbers from the case tables.
+
+---
+
+**CRITERION 2: Framework Understanding**
+
+**Points:** 8
+
+**Does not meet expectations (0-2 pts):**
+No evidence of framework thinking. Just describes what happened without analyzing why.
+
+**Partially meets expectations (3-5 pts):**
+Shows some framework understanding but doesn't fully apply it. May mention projections vs. actuals without explaining the significance.
+
+**Fully meets expectations (6-8 pts):**
+Demonstrates understanding of media rights valuation risk. Connects cord-cutting, streaming shifts, and viewership decline into coherent analysis. Shows how projections vs. actuals reveals systematic overconfidence.
+
+---
+
+**CRITERION 3: Decision Trade-off**
+
+**Points:** 7
+
+**Does not meet expectations (0-2 pts):**
+No clear 2026 recommendation, or recommendation without reasoning. No trade-off acknowledged.
+
+**Partially meets expectations (3-4 pts):**
+States a recommendation but trade-off analysis is weak or missing. May say "I'd renegotiate" without explaining what they're giving up.
+
+**Fully meets expectations (5-7 pts):**
+Clear recommendation with reasoning. Explicitly acknowledges what they're sacrificing (e.g., "Walking away means losing Sportsnet's anchor, but avoids another $2B loss"). Shows strategic maturity.
+
+---
+
+## Element 4: Infobox - What's Next
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -259,7 +170,7 @@ Filename suggestion: LastName_Week2_Memo.pdf
 ```
 Title: ✓ What's Next: Module 7
 
-**After submitting your memo:**
+**After submitting your reflection:**
 
 Module 7 wraps up Week 2 with key takeaways and your CFL Expansion Project Milestone 2. You'll apply the media rights frameworks to design a broadcast strategy for your expansion franchise.
 
@@ -267,7 +178,7 @@ Module 7 wraps up Week 2 with key takeaways and your CFL Expansion Project Miles
 - Week 2 Key Takeaways (5 critical insights)
 - CFL Expansion Milestone 2: Media Strategy & Broadcast Partnerships
 
-Complete your memo submission, then continue to Module 7.
+Submit your reflection, then continue to Module 7.
 ```
 
 ---
@@ -275,30 +186,25 @@ Complete your memo submission, then continue to Module 7.
 ## Instructor Notes
 
 **Module 6 Purpose:**
-- Assess Week 2 learning through authentic executive communication task
-- AI Roleplay provides formative practice before summative assessment
-- Clean handoff to Module 7 (milestone submission)
+- Assess Week 2 learning through reflection on Rogers case exploration
+- Lighter assessment aligned with simplified Module 5 (text tables + AI chat)
+- Clean handoff to Module 7 (CFL Expansion milestone)
 
-**Scaffolded Approach (Now Default):**
-The module uses a 3-micro-step scaffold before the final memo submission:
-1. Micro-Step 1: Identify 3 key mistakes (bullets) - builds Section 2 of memo
-2. Micro-Step 2: Framework evaluation (1 paragraph) - builds Section 1 of memo
-3. Micro-Step 3: 2026 recommendation (1 paragraph) - builds Section 3 of memo
+**Assessment Flow (Simplified Modules 5-6):**
+1. Module 5: Students explore Rogers deal through tables and AI decision advisor (~15 min)
+2. Module 6: Students write 300-word reflection on what they learned (25 pts)
 
-Students complete micro-steps → practice with AI Roleplay → synthesize into final memo. Each micro-step has AI feedback enabled to catch issues early.
+**Why Lighter Assessment:**
+- Simplified Module 5 is ~15 minutes of exploration, not 90+ minutes of case analysis
+- Assessment should match the learning investment
+- 300 words is enough to demonstrate framework understanding
+- Reflection format encourages insight over recitation
 
-**AI Grading Prompt:**
-```
-Evaluate this Rogers NHL Deal memo against these criteria:
-1. DEAL EVALUATION: Applies Week 2 frameworks (valuation, platform economics, engagement) with evidence
-2. MISTAKE IDENTIFICATION: 2-3 specific mistakes with supporting exhibit data
-3. STRATEGIC RECOMMENDATIONS: Actionable 2026 strategy with trade-off analysis
-4. BUSINESS COMMUNICATION: Professional memo format, clear writing, within word limit
-
-Be encouraging but specific. Highlight what they did well and suggest 1-2 areas for improvement.
-```
+**For Students Who Want More Challenge:**
+Students who engaged deeply with the 2026 Decision Advisor can reference their conversation in detail. The rubric rewards specificity—students who can explain their trade-off reasoning with specific numbers will score higher.
 
 **Grading Notes:**
-- Focus on framework application (valuation drivers, platform economics), not just listing mistakes
-- Recommendations should acknowledge trade-offs and competitive landscape
-- Evidence from case exhibits demonstrates engagement with course content
+- Look for framework thinking (why projections failed), not just describing what happened
+- The trade-off acknowledgment is the key differentiator between surface and deep responses
+- Accept any of the three 2026 options if well-defended—no "right answer"
+- Specific numbers from the tables beat vague generalizations

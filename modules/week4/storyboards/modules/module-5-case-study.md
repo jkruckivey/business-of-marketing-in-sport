@@ -1,5 +1,12 @@
 # MODULE 5: Case Analysis - Serena Williams: Brand Strategy Analysis (BOPPPS: Practice)
-**Version:** 1.7.0 | **Last Updated:** 2026-01-15
+**Version:** 2.0.0 | **Last Updated:** 2026-01-20
+
+### Version 2.0.0 Changes
+- **REMOVED:** Element 3A - Practice Quiz (streamlined flow)
+- **REMOVED:** Element 4 - Analysis Framework (video covers key points)
+- **REMOVED:** Element 6 - Serena Ventures Deep Dive (optional content cut)
+- **REMOVED:** Element 7 - AI Chat Discussion Partner (streamlined flow)
+- **SIMPLIFIED:** Now 4 elements: Intro → Readings → Video → Widget
 
 ### Version 1.7.0 Changes
 - **ADDED:** Element 3A - Practice Quiz (5 questions) for case comprehension check
@@ -21,14 +28,10 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro to case analysis | Type directly | Bridge from simulations to real analysis |
-| 2 | **ⓘ Infobox (Callout)** ⬤ Required | Analysis overview + recommended readings | Type directly | Links to Forbes, Reuters, Afrotech articles |
-| 3 | **▶ Video** ⬤ Required | "Serena Williams: Strategic Analysis Framework" (2 min) | Upload MP4 | Introduces 3 strategic pivots before analysis |
-| 3A | **📝 Practice Quiz** ⬤ Required | Serena Williams Case Check (5 questions) | Configure in Uplimit | Tests case comprehension before analysis |
-| 4 | **▬ Text** ⬤ Required | Analysis framework: 4 questions to guide analysis | Type directly | Structured case analysis approach |
-| 5 | **⚙ iFrame Widget** ◐ Recommended | **Serena's Brand Portfolio Analyzer** | Embed widget | Interactive analysis of her actual strategy |
-| 6 | **▤ Details** ○ Optional | Serena Ventures portfolio analysis | Type directly | Deep dive on her $111M investment fund |
-| 7 | **◈ AI Chat Widget** ○ Optional | "Case discussion partner" | Configure in Uplimit | On-demand case analysis support |
+| 1 | **▬ Text** ⬤ Required | Connecting intro to case analysis | Type directly | The Serena puzzle |
+| 2 | **ⓘ Infobox (Callout)** ○ Optional | Background readings | Type directly | Links to Forbes, Reuters, Afrotech articles |
+| 3 | **▶ Video** ⬤ Required | "Serena Williams: Strategic Analysis Framework" (2 min) | Upload MP4 | Three strategic pivots |
+| 4 | **⚙ iFrame Widget** ⬤ Required | **Serena's Brand Portfolio Analyzer** | Embed widget | Interactive analysis of her actual strategy |
 
 ---
 
@@ -131,206 +134,7 @@ These articles provide the foundation for analyzing Serena's transition from ath
 
 ---
 
-## Element 3A: Practice Quiz - Serena Williams Case Check
-
-**Uplimit Implementation:**
-1. Select **Exercise - Practice Quiz** element
-2. Configure as ungraded self-assessment
-3. Add the following 5 multiple choice questions:
-
----
-
-### Question 1: Revenue Stream Allocation
-
-Based on the video and readings, what distinguishes Serena's wealth-building approach from most elite athletes?
-
-A) She earned more prize money than any other athlete in history
-B) She prioritized equity-based income (owned businesses, investments) over fee-based income (endorsements) ✅
-C) She negotiated the largest endorsement contracts in sports history
-D) She focused exclusively on tennis and avoided business distractions
-
-**Feedback (Correct):** Correct! The video explicitly states Serena shifted "from taking endorsement cash to taking equity stakes in companies." While most athletes optimize for endorsement fees (guaranteed income), Serena allocated ~70% of her brand value to equity-based wealth builders—Serena Ventures and S by Serena—that appreciate over time.
-
-**Feedback (Incorrect):** The case emphasizes Serena's strategic choice between fee-based income (endorsements, prize money) and equity-based wealth (owned businesses, investments). Review the video's first strategic pivot: "from endorser to investor."
-
----
-
-### Question 2: The Three Strategic Pivots
-
-The video identifies three strategic pivots that define Serena's business transformation. Which correctly lists all three?
-
-A) Tennis→Business, American→Global, Athlete→Celebrity
-B) Endorser→Investor, Athlete→Founder, Individual→Platform ✅
-C) Player→Coach, Competitor→Commentator, Athlete→Agent
-D) Amateur→Pro, Singles→Doubles, Court→Corporation
-
-**Feedback (Correct):** Correct! The three strategic pivots are: (1) Endorser→Investor (taking equity instead of endorsement fees), (2) Athlete→Founder (launching Serena Ventures with 85+ portfolio companies), and (3) Individual→Platform (S by Serena as a platform for other women entrepreneurs, not just a personal brand).
-
-**Feedback (Incorrect):** The video clearly outlines three specific pivots that transformed Serena from a traditional athlete into a business mogul. Each pivot represents a fundamental shift in how she captured value from her brand equity.
-
----
-
-### Question 3: Serena Ventures Investment Thesis
-
-What is the core investment thesis behind Serena Ventures' $111M fund?
-
-A) Investing exclusively in sports and fitness companies
-B) Maximizing short-term returns through high-risk tech bets
-C) Investing in founders who are women and people of color, who receive only 2% of VC funding ✅
-D) Building a celebrity endorsement network across portfolio companies
-
-**Feedback (Correct):** Correct! Serena Ventures invests in underrepresented founders—78% of their portfolio are women or people of color founders. This isn't charity; it's identifying systematically undervalued assets. Women-founded companies receive only 2% of VC funding despite representing 40% of entrepreneurs, creating an arbitrage opportunity that has delivered 25-35% IRR.
-
-**Feedback (Incorrect):** The Forbes and Reuters readings detail Serena Ventures' investment philosophy. Consider what Serena said: "Investing in people who look like the world we live in." What market inefficiency does this strategy exploit?
-
----
-
-### Question 4: Strategic Timing
-
-According to the video, why was the TIMING of Serena's business building critical to her success?
-
-A) She waited until after retirement to avoid distractions from tennis
-B) She built business infrastructure while still playing, creating momentum for her transition ✅
-C) She started businesses during her off-seasons only
-D) She delegated all business decisions to family members until retirement
-
-**Feedback (Correct):** Correct! The video emphasizes: "She built business infrastructure while still playing, so she had momentum when she transitioned away from competitive tennis." Serena launched Serena Ventures in 2014 (age 32) and S by Serena in 2018 (age 36)—both during her active playing career, not after. This sequencing ensured her businesses had traction before her athletic career and brand relevance declined.
-
-**Feedback (Incorrect):** The video explicitly discusses timing: "When did she start investing? When did she launch Serena Ventures? How did she balance business building with competing?" The answer reveals why sequencing matters for athlete wealth preservation.
-
----
-
-### Question 5: Replicability Assessment
-
-The video frames a critical question: "Is Serena's playbook replicable?" Which statement best captures why this matters for analysis?
-
-A) Her strategy only works for tennis players, not other sports
-B) Understanding what she did that others could copy vs. what required unique advantages helps identify transferable lessons ✅
-C) Her success was entirely due to her on-court dominance and cannot be learned
-D) Replication is impossible because she had family wealth to start investing
-
-**Feedback (Correct):** Correct! The video asks: "What did she have that others don't? What did she do that others could copy?" This analytical lens separates unique advantages (global fame, established brand) from replicable strategies (equity focus, early investment timing, platform thinking). Your Week 4 assessment asks you to identify which 3 strategic decisions from her playbook YOU would replicate.
-
-**Feedback (Incorrect):** The video poses the replicability question to frame your analysis. It's not asking whether replication is possible—it's asking you to distinguish between Serena's unique advantages and her strategic choices that any athlete could adopt.
-
----
-
-## Element 4: Analysis Framework - 4 Guiding Questions
-
-**Uplimit Implementation:**
-1. Select **Text** element
-2. Copy markdown below:
-
-```markdown
-# Analysis Framework: 4 Questions to Guide Your Analysis
-
-As you analyze Serena Williams' brand strategy (using the recommended readings and your Week 4 frameworks), examine her approach through these 4 lenses:
-
----
-
-## **Question 1: Revenue Stream Allocation (WLO 4.1)**
-
-**Analyze:** How did Serena allocate her time, brand equity, and capital across the five revenue streams?
-
-**Look for evidence of:**
-- **Endorsements:** Which deals did she prioritize? Nike, Gatorade, Wilson—what terms?
-- **Owned Businesses:** S by Serena clothing line—why launch this vs. just endorse Nike?
-- **Investments:** Serena Ventures $111M fund—what's the strategy? Who does she invest in?
-- **Media/Content:** Production company ventures, media appearances—how does she monetize content?
-- **Licensing:** Name/likeness licensing deals—what IP does she own?
-
-**Key Question:** Did Serena prioritize fee-based income (endorsements) or equity-based wealth (owned businesses, investments)? Estimate the % allocation.
-
-**Reference the frameworks:** Compare her strategy to the Athlete Brand Calculator exercise you used in Module 3. Does her portfolio match "Wealth Builder" (70% equity) or something else?
-
----
-
-## **Question 2: Owned Assets vs. Endorsement Strategy (WLO 4.2)**
-
-**Analyze:** When did Serena choose to build owned businesses instead of taking endorsement fees—and why?
-
-**Critical Strategic Decision:**
-Serena launched S by Serena clothing line in 2018. She could have instead:
-- Option A: Signed larger Nike endorsement deal for guaranteed $10-15M/year
-- Option B: Invested $2-3M to launch her own brand, owning 100% equity
-
-**Calculate the trade-off:**
-- What's the 20-year NPV of Option A (guaranteed fees)?
-- What's the 20-year NPV of Option B (equity in growing business)?
-- Which did she choose? Why?
-
-**Reference the frameworks:** Apply the "Deep Dive: Equity vs. Fees" analysis from Module 3. If S by Serena grows at 25% annually and exits at 5x revenue, what's her return vs. endorsement fees?
-
-**Key Question:** Was the S by Serena decision financially rational, or driven by non-financial motivations (creative control, legacy, representation)?
-
----
-
-## **Question 3: Women's Sports Investment Thesis (WLO 4.3)**
-
-**Analyze:** Why did Serena focus Serena Ventures on companies founded by women and people of color—and does this create superior returns?
-
-**Serena Ventures Strategy (from Forbes and Reuters readings):**
-- $111M fund launched 2014
-- Investment focus: Women founders, people of color founders, underserved markets
-- Portfolio includes: MasterClass, Tonal, Daily Harvest, Impossible Foods, Billie (women's shaving), NWSL teams
-- Thesis: "Investing in people who look like the world we live in"
-
-**Evaluate the Investment Logic:**
-- **Financial thesis:** Are women-founded companies undervalued (arbitrage opportunity)?
-- **Non-financial thesis:** Is Serena willing to accept lower returns for social impact?
-- **Actual returns:** Has the fund outperformed VC benchmarks? (Check Forbes article on unicorn investments)
-
-**Women's Sports Specific:**
-Serena Ventures invested in NWSL teams. Apply the Emerging Sports Investment Tool framework:
-- Entry valuation: ~$3M (2015) → Current valuation: ~$40M (2023)
-- IRR calculation: What return did early NWSL investors capture?
-- Compare to MLS franchises: $500M valuation but slower growth
-
-**Key Question:** Is Serena's women's sports investment thesis paying off financially? Or is this legacy-building?
-
----
-
-## **Question 4: Post-Career Transition Strategy (WLO 4.4)**
-
-**Analyze:** How did Serena build assets DURING her playing career that will sustain value AFTER retirement?
-
-**Career Timeline:**
-- Peak playing years: 2002-2017 (ages 20-35)—highest brand value, highest endorsement fees
-- Retirement transition: 2018-2022 (ages 36-40)—declining playing, building businesses
-- Post-retirement: 2023+ (age 41+)—what generates income now?
-
-**Asset Longevity Analysis:**
-
-| Asset Type | Built When? | Value During Career | Value Post-Retirement | Longevity |
-|------------|-------------|---------------------|----------------------|-----------|
-| Endorsements (Nike, Gatorade) | 2003-2022 | $350M total | Declining (relevance fades) | 5-10 years post-retirement |
-| S by Serena (owned brand) | 2018 | $5-10M valuation | Growing (independent of playing) | 50+ years |
-| Serena Ventures (investments) | 2014 | $111M AUM | Compounding (VC returns) | Infinite (fund continues) |
-| Media/Content (production) | 2016-present | Modest income | Growing (IP portfolio) | 50+ years |
-
-**Key Insight:** Which assets decline post-retirement vs. which appreciate?
-
-**Contrast with Failed Athletes:**
-Allen Iverson earned $200M+ in career but declared bankruptcy. Why? He built no owned businesses or investments during career. When salary/endorsements stopped, income stopped.
-
-**Key Question:** What % of Serena's current wealth comes from assets built during playing career? Would she have this level of net worth if she'd only taken endorsements?
-
----
-
-## Synthesis Question (Connects All 4)
-
-**After analyzing the case through these 4 lenses, answer:**
-
-**"If YOU were a 25-year-old elite athlete with 10-year peak career ahead, what 3 strategic decisions from Serena's playbook would you replicate—and what 1 thing would you do differently?"**
-
-Be specific. Reference frameworks from Modules 3-4 and financial analysis from the case.
-
-This synthesis will form the foundation of your Week 4 assessment.
-```
-
----
-
-## Element 5: Serena's Brand Portfolio Analyzer Widget `[v2.1.0]`
+## Element 4: Serena's Brand Portfolio Analyzer Widget
 
 **Widget Purpose:** Interactive tool to map Serena's actual strategy and compare to alternatives
 
@@ -386,98 +190,18 @@ Use the "what if" sliders to explore alternative paths:
 
 ---
 
-## Element 6: Details - Serena Ventures Deep Dive
-
-```markdown
-Title: Deep Dive: Serena Ventures Portfolio Analysis
-
-[Expand for detailed investment portfolio breakdown]
-
-### Serena Ventures: $111M Fund (Launched 2014)
-
-**Investment Thesis:**
-"We want to be a part of diversifying the industry by investing in people who look like the world we live in."
-
-**Portfolio Highlights (60+ companies):**
-
-**Exits / High Returns:**
-- **MasterClass** (invested 2015, valued $2.75B in 2021) → Estimated 50-100x return
-- **Tonal** (invested 2019, valued $1.6B in 2021) → Estimated 30x return
-- **Daily Harvest** (invested 2016, valued $1.1B in 2021) → Estimated 40x return
-
-**Active Investments:**
-- **Impossible Foods** (plant-based meat)
-- **Billie** (women's shaving, sold to P&G)
-- **Propel** (fitness water, Gatorade competitor)
-- **Multiple NWSL teams** (women's soccer franchises)
-
-**Investment Focus:**
-- 78% of portfolio: Women or people of color founders
-- Sectors: Health/wellness, consumer goods, sports/fitness, food/beverage
-- Stage: Primarily Series A-B (early but not seed)
-- Check size: $100K - $5M
-
-**Fund Performance:**
-- Internal Rate of Return (IRR): Estimated 25-35% (VC benchmark: 15-20%)
-- Total portfolio valuation (2023): Estimated $500M+ (4.5x multiple on $111M invested)
-- Conclusion: **Outperforming VC benchmarks while maintaining social impact focus**
-
-**Strategic Insight:**
-Serena proved that investing in underrepresented founders is NOT a trade-off between returns and impact—it's actually an arbitrage opportunity. Women-founded companies receive only 2% of VC funding despite representing 40% of entrepreneurs, creating systematic undervaluation.
-
-**Application to Your Analysis:**
-- Financial thesis validated: Serena Ventures delivers top-quartile VC returns
-- Women's sports investments (NWSL teams) showing 10-15x returns over 8 years
-- This isn't charity—it's smart investing in mispriced assets
-```
-
----
-
-## Element 7: AI Chat Widget - Case Discussion Partner
-
-**Uplimit Implementation:**
-1. Select **AI Chat** element
-2. Configure:
-
-**Widget Name:** "Case Discussion Partner"
-
-**System Prompt:**
-```
-You are a knowledgeable case discussion partner helping MBA students analyze Serena Williams' brand strategy. Help students:
-
-- Analyze her revenue stream allocation across endorsements, owned businesses, and investments
-- Apply Week 4 frameworks (revenue streams, equity vs. fees, women's sports investment thesis, post-career strategy)
-- Answer questions about Serena's strategic decisions using the recommended readings (Reuters, Forbes, Afrotech)
-- Compare her strategy to alternatives using the Brand Portfolio Analyzer
-- Connect analysis insights to their Anchor Project
-
-Provide Socratic guidance—ask probing questions rather than giving answers directly. Reference the recommended readings and Week 4 frameworks when relevant.
-```
-
-**Welcome Message:**
-```
-Hi! I'm here to discuss the Serena Williams case with you. What questions do you have about her brand strategy, investment decisions, or how to apply the frameworks from Modules 3-4?
-```
-
----
-
 ## MODULE 5 Complete - Transition to Module 6
 
 **What You've Learned:**
-By analyzing Serena's actual strategy, you discovered:
+By exploring Serena's actual strategy through the Portfolio Analyzer, you discovered:
 - She allocated ~30% to endorsements (income), ~70% to owned businesses/investments (wealth)
 - S by Serena decision was strategic equity building, not just creative expression
-- Serena Ventures delivered top-quartile VC returns while focusing on underrepresented founders
 - She built assets during career (2014-2018) that generate value post-retirement (2023+)
 - Her women's sports investments captured 10-15x returns as first mover
 
 **Key Insight:**
-Serena didn't build her substantial net worth by being the best tennis player (though she is). She built it by strategically allocating capital to equity investments, launching owned businesses, and identifying undervalued markets (women's sports, underrepresented founders) where first movers capture outsized returns.
+Serena didn't build her substantial net worth by being the best tennis player (though she is). She built it by strategically allocating capital to equity investments and identifying undervalued markets.
 
-**Up Next: Module 6 - Strategic Memo Assessment**
+**Up Next: Module 6 - Athlete Brand Strategy Reflection**
 
-You've analyzed Serena's strategy. Now you'll apply these frameworks to a strategic problem:
-
-**Assessment Prompt:** "An elite 25-year-old athlete has hired you as brand strategist. They have 10-year peak career ahead and want to build generational wealth. Using frameworks from Week 4 and lessons from Serena's case, design their 10-year brand strategy."
-
-Ready to demonstrate mastery? Let's go.
+Now capture what you learned about athlete brand strategy and how you'd apply these frameworks.

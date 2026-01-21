@@ -1,5 +1,8 @@
 # MODULE 3: Core Content - Legacy vs Innovation (BOPPPS: Presentation) • **V3 INTERACTIVE-FIRST REDESIGN**
-**Version:** 1.7.0 | **Last Updated:** 2026-01-13
+**Version:** 1.7.1 | **Last Updated:** 2026-01-20
+
+### Version 1.7.1 Changes
+- **FIXED:** Elements 1, 3B, 5 - Added missing markdown code fence wrappers around content to copy
 
 ### Version 1.5.0 Changes
 - **REMOVED:** Element 5 "Legacy vs Innovation Trade-Off" video (no caption available)
@@ -43,7 +46,7 @@
 | 3A | **📝 Practice Quiz** ⬤ Required | Matrix Concepts Check (4 questions) | 3 min | Configure in Uplimit | Test strategic trade-off understanding |
 | 3B | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Process learning from strategic mapping |
 | 4 | **⚙ iFrame Widget** ⬤ Required | **Future Trends Predictor** | 15-20 min | Embed widget | Forecast 5-year sports business evolution |
-| 5 | **▬ Text** ◐ Recommended | Reflection prompt after widget | 3 min | Type directly | Synthesize future vision insights |
+| 5 | **📝 Text Response** ◐ Recommended | Future Trends Reflection | 3 min | Configure in Uplimit | Synthesize future vision insights |
 | 6 | **▶ Video** ◐ Recommended | "Future Trends in Sports Business" (2 min) | 2 min | Upload MP4 | Introduces 5 megatrends |
 | 6A | **📝 Practice Quiz** ◐ Recommended | Future Trends Check (5 questions) | 4 min | Configure in Uplimit | Test trend knowledge |
 | 7 | **▤ Details** ○ Optional | Deep dive: Heritage property economics | 12 min | Type directly | Financial analysis of museums, halls of fame, legacy events |
@@ -57,7 +60,7 @@
 1. Select **Text** element
 2. Copy markdown below:
 
-
+```markdown
 # Learn by Doing: Interactive Heritage Strategy Exploration
 
 You've explored revenue streams, media rights, sponsorships, and athlete branding. Now for the final challenge: How do you monetize history without compromising authenticity?
@@ -89,7 +92,7 @@ The insights you discover through experimentation—and through making intention
 Weeks 1-4 focused on growth: maximize revenue, expand audience, increase returns. Week 5 introduces **constraint**: You can't just maximize revenue if it destroys authenticity. Heritage properties face a unique tension that requires strategic trade-offs.
 
 Ready? Let's experiment.
-
+```
 
 ---
 
@@ -410,7 +413,7 @@ D) Equal split with high risk tolerance
 1. Select **Text** element
 2. Copy markdown below:
 
-
+```markdown
 ### What Did You Discover About Strategic Trade-Offs?
 
 After experimenting with the Legacy vs Innovation Matrix, take 2 minutes to reflect:
@@ -434,7 +437,7 @@ After experimenting with the Legacy vs Innovation Matrix, take 2 minutes to refl
 
 **Real-World Context:**
 The Hockey Hall of Fame faces this exact dilemma. Jamie Dinsmore (President & CEO) must balance inducting only true legends (high bar = authenticity) vs. expanding to international players and women's hockey (broader appeal = growth). Neither pure preservation nor pure innovation works—the answer is strategic balance based on institutional mission.
-
+```
 
 ---
 
@@ -584,39 +587,39 @@ Based on trend choices, widget plots your organization on 2x2 matrix:
 
 ---
 
-## Element 5: Reflection Prompt After Widget 2
+## Element 5: Text Response - Future Trends Reflection `[v1.7.1]`
 
 **Uplimit Implementation:**
-1. Select **Text** element
-2. Copy markdown below:
+1. Select **Exercise → Text Response Question**
+2. Configure the following fields:
 
+**Question:**
+```
+What did you discover about future trends from the Future Trends Predictor? Write a 2-sentence investment thesis explaining which trends you prioritized and why.
+```
 
-### What Did You Discover About Future Trends?
+**Additional Instructions:**
+```
+Your reflection should address:
 
-After experimenting with the Future Trends Predictor, take 2 minutes to reflect:
+1. **Which trends did you prioritize—and why?** Did you choose high-certainty trends (women's sports, streaming) or high-risk bets (Web3, VR/AR)? What was your time horizon?
 
-**1. Which trends did you prioritize—and why?**
-- Did you choose high-certainty trends (women's sports, streaming) or high-risk bets (Web3, VR/AR)?
-- What was your time horizon: Quick wins (1-3 years) or long-term transformation (5-10 years)?
-- How much risk are you personally willing to accept in exchange for higher returns?
+2. **How did your forecast compare to expert predictions?** Where did you align with or diverge from McKinsey/Deloitte consensus?
 
-**2. How did your forecast compare to expert predictions?**
-- Where did you align with McKinsey/Deloitte consensus?
-- Where did you diverge—and what conviction led you to bet differently?
-- In the Optimistic vs. Pessimistic scenarios, which felt more realistic to you?
+3. **How does this apply to your CFL Expansion Final Proposal?** Which trends will you prioritize in your 5-year strategic vision?
 
-**3. How does this apply to your CFL Expansion Final Proposal?**
-- Which 3 trends will you prioritize in your final 5-year strategic vision?
-- How will you justify your investment allocation to skeptical stakeholders (the CFL Board of Governors)?
-- What metrics will you use to measure success over 5 years?
+**Example thesis:** "I'm allocating 40% to women's sports growth because it's the highest-certainty opportunity with 20%+ CAGR potential. The remaining 60% goes to AI and direct fan relationships to future-proof against disruption."
+```
 
-**Actionable Insight:** Write your 2-sentence investment thesis explaining which trends you prioritized and why. This will directly inform your CFL Expansion Final Proposal in Module 7.
+**AI Feedback Prompt:**
+```
+Evaluate this future trends reflection. Check for:
+1. Did they identify specific trends with reasoning (not just "I picked the popular ones")?
+2. Did they acknowledge trade-offs between risk and certainty?
+3. Did they connect their choices to their CFL Expansion strategy?
 
-*Example: "I'm allocating 40% to women's sports growth because it's the highest-certainty opportunity with 20%+ CAGR potential. The remaining 60% goes to AI and direct fan relationships to future-proof against disruption."*
-
-**Course Integration:**
-Your CFL Expansion Final Proposal must integrate frameworks from all 5 weeks: revenue ecosystem (Week 1), media rights strategy (Week 2), sponsorship ROI (Week 3), brand building (Week 4), and heritage/innovation balance (Week 5). This Future Trends widget helps you see how emerging trends will reshape the entire business model you've been studying.
-
+Provide brief, encouraging feedback. If their reasoning is vague, ask what specific data or insight led them to prioritize those trends.
+```
 
 ---
 

@@ -1,5 +1,11 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 5
-**Version:** 3.1.0 | **Last Updated:** 2026-01-14
+**Version:** 4.0.0 | **Last Updated:** 2026-01-20
+
+### Version 4.0.0 Changes
+- **SIMPLIFIED:** Milestone 5 deliverable now Executive Summary (3-4 pages) only
+- **REMOVED:** 15-20 slide presentation requirement
+- **UPDATED:** Rubric and grading criteria for written format
+- **ADDED:** Element 5A - Course Reflection (ungraded, 200-300 words)
 
 ### Version 3.1.0 Changes
 - **ADDED:** Element 7A - Recommended Readings placeholder (Week 5 reading TBD)
@@ -21,6 +27,7 @@
 | 3 | **ⓘ Infobox (Assessment)** | Milestone 5 Brief | Type directly | ⬤ Required | 2 min |
 | 4 | **📤 File Response** | Milestone 5 Submission | Configure in Uplimit | ⬤ Required | — |
 | 5 | **▶ Video** | Course Synthesis (2 min) | Upload MP4 | ⬤ Required | 2 min |
+| 5A | **📝 Text Response** | Course Reflection | Configure in Uplimit | ⬤ Required | 5 min |
 | 6 | **▬ Text** | Course Completion (What's Next, Reflection, Journey) | Type directly | ⬤ Required | 5 min |
 | 7 | **⚙ iFrame Widget** | Week 5 Concept Map | Embed widget | ○ Optional | 5 min |
 | 7A | **⊞ Details** | Recommended Readings | Type directly | ◐ Recommended | 2 min |
@@ -81,23 +88,21 @@ This is it. You've spent four weeks developing your CFL expansion franchise: mar
 ```markdown
 Title: ▪ Anchor Project Milestone 5: Final Expansion Proposal (40 points)
 
-**Deliverable:** Executive Presentation (15-20 slides) + Executive Summary (2 pages)
+**Deliverable:** Executive Summary (3-4 pages)
 
-**Required Components:**
-1. **Executive Summary** (2 pages): Standalone document summarizing your proposal
-2. **Market & Revenue Analysis** (Synthesize M1): City selection, 5-year revenue projections
-3. **Media Strategy** (Synthesize M2): Broadcast partnerships, digital presence, fan engagement
-4. **Sponsorship Portfolio** (Synthesize M3): Sponsor categories, CPM analysis, activation concepts
-5. **Brand & Launch Strategy** (Synthesize M4): Ambassador strategy, launch timeline, community integration
-6. **Financial Summary** (NEW): 5-year P&L, investment required, break-even analysis
-7. **Risk Analysis** (NEW): Key risks and mitigation strategies
-8. **5-Year Vision** (NEW): Where this franchise will be in 2031
+**Required Sections:**
+1. **Executive Overview** (~0.5 page): Investment thesis—why this market, why now
+2. **Market & Revenue Analysis** (~1 page): City selection rationale, 5-year revenue projections by stream
+3. **Strategic Pillars** (~1 page): Media strategy, sponsorship portfolio, brand/launch approach
+4. **Financial Summary** (~0.5 page): 5-year P&L snapshot, investment required, break-even timeline
+5. **Risk Analysis** (~0.5 page): Top 3 risks and mitigation strategies
+6. **5-Year Vision** (~0.5 page): Where this franchise will be in 2031
 
 **Grading Rubric (40 points):**
 - Strategic Coherence (12 pts): Milestones 1-4 integrated into unified vision
 - Financial Rigor (10 pts): Realistic projections, sound assumptions, clear P&L
 - Risk Assessment (8 pts): Thoughtful identification and mitigation of key risks
-- Professional Presentation (10 pts): Board-ready quality, clear communication, compelling narrative
+- Professional Communication (10 pts): Board-ready quality, clear writing, compelling narrative
 
 **Due:** End of Week 5
 ```
@@ -112,7 +117,7 @@ Title: ▪ Anchor Project Milestone 5: Final Expansion Proposal (40 points)
 
 **Question:**
 ```
-Submit your CFL Expansion Final Proposal (Milestone 5). Include both the Executive Presentation (15-20 slides) and Executive Summary (2 pages) as a single PDF or as separate files.
+Submit your CFL Expansion Final Proposal (Milestone 5) as a 3-4 page Executive Summary.
 ```
 
 **Additional Instructions (optional):**
@@ -122,11 +127,80 @@ Your submission will be evaluated using the rubric below (40 points total):
 - Strategic Coherence (12 pts) - Milestones 1-4 integrated into unified vision
 - Financial Rigor (10 pts) - Realistic projections, sound assumptions, clear P&L
 - Risk Assessment (8 pts) - Thoughtful identification and mitigation of key risks
-- Professional Presentation (10 pts) - Board-ready quality, compelling narrative
+- Professional Communication (10 pts) - Board-ready quality, compelling narrative
 
-Accepted formats: PDF, PPTX
+**Format Requirements:**
+- 3-4 pages maximum (single-spaced, 11pt font)
+- Include all six required sections from the brief
+- Tables and figures count toward page limit
+
+Accepted format: PDF
 Filename suggestion: LastName_M5_FinalProposal.pdf
 ```
+
+**Rubric Configuration:**
+
+---
+
+**CRITERION 1: Strategic Coherence**
+
+**Points:** 12
+
+**Does not meet expectations (0-4 pts):**
+Milestones appear as separate sections without integration. No clear thread connecting market analysis, media strategy, sponsorship portfolio, and brand approach. Reads like four independent proposals pasted together.
+
+**Partially meets expectations (5-8 pts):**
+Some connections between milestones, but integration is surface-level. May reference prior work without showing how decisions in one area affect others. Missing logical flow from market selection → strategy → financials.
+
+**Fully meets expectations (9-12 pts):**
+Milestones 1-4 clearly integrated into unified vision. Shows how market characteristics (M1) drive media strategy (M2), which informs sponsorship approach (M3), which shapes brand positioning (M4). Each decision logically builds on previous choices. Reader understands why THIS strategy for THIS market.
+
+---
+
+**CRITERION 2: Financial Rigor**
+
+**Points:** 10
+
+**Does not meet expectations (0-3 pts):**
+Financial projections missing, unrealistic, or unsupported. No clear assumptions stated. P&L incomplete or contains obvious errors. Break-even analysis absent or implausible.
+
+**Partially meets expectations (4-6 pts):**
+Financial projections present but assumptions unclear or optimistic without justification. P&L shows basic structure but may miss key revenue streams or cost categories. Break-even timeline stated but not well-supported.
+
+**Fully meets expectations (7-10 pts):**
+Realistic 5-year projections with clearly stated assumptions. P&L covers all five revenue streams with reasonable growth rates. Investment requirements and break-even timeline grounded in comparable franchise data or industry benchmarks. Shows understanding of sports business economics.
+
+---
+
+**CRITERION 3: Risk Assessment**
+
+**Points:** 8
+
+**Does not meet expectations (0-2 pts):**
+Risks not identified, or only generic risks listed ("competition," "economy") without specificity to this market/franchise. No mitigation strategies provided.
+
+**Partially meets expectations (3-5 pts):**
+Identifies relevant risks but analysis is shallow. Mitigation strategies generic ("monitor closely," "adjust as needed") rather than specific actionable plans.
+
+**Fully meets expectations (6-8 pts):**
+Identifies 3 specific, material risks tied to this market and strategy. For each risk: explains why it matters, quantifies potential impact where possible, and provides concrete mitigation strategy. Shows strategic thinking about what could go wrong and how to respond.
+
+---
+
+**CRITERION 4: Professional Communication**
+
+**Points:** 10
+
+**Does not meet expectations (0-3 pts):**
+Document exceeds page limit, lacks clear structure, or contains significant grammar/formatting issues. Not appropriate for board presentation. Key information buried or missing.
+
+**Partially meets expectations (4-6 pts):**
+Meets page limit and basic structure, but writing could be more concise. Some sections stronger than others. Adequate for internal review but needs polish for board presentation.
+
+**Fully meets expectations (7-10 pts):**
+Board-ready quality. Concise, clear executive writing. Strong opening that captures investment thesis. Effective use of tables/figures to convey complex information. Professional formatting. A busy executive could read this in 10 minutes and understand the complete proposal.
+
+---
 
 **Template:** No template required
 
@@ -165,59 +239,80 @@ Filename suggestion: LastName_M5_FinalProposal.pdf
 **Uplimit Implementation:**
 1. Upload Course Synthesis video MP4
 2. Add SRT caption file from `Videos/HeyGen Scripts/`
-3. Place after Milestone 5 submission, before journey recap text
+3. Place after Milestone 5 submission, before course reflection
 
 ---
 
-## Element 6: Text Content - Course Completion
+## Element 5A: Text Response - Course Reflection `[v4.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Exercise → Text Response Question**
+2. Configure the following fields:
+
+**Question:**
+```
+Looking back on your 5-week journey through sports business, what's your most valuable takeaway—and how will you apply it?
+```
+
+**Additional Instructions:**
+```
+This is an ungraded reflection to capture your learning. In 200-300 words, address:
+
+1. **Your Key Insight**: What concept, framework, or case changed how you think about sports business? Be specific—not "I learned a lot about media rights" but "I didn't realize streaming contracts carry more risk than traditional broadcast deals because of subscriber churn."
+
+2. **The Surprise**: What challenged an assumption you held coming into the course? What did you think you knew that turned out to be more complex?
+
+3. **Your Application**: How will you use what you learned? This could be in your current role, a future career move, conversations with colleagues, or how you consume sports as a fan.
+
+**Examples of strong reflections:**
+- "The athlete brand framework changed how I view endorsement deals. I assumed more endorsements = better, but Serena's case showed that equity-based investments outperform fee-based income long-term. I'll apply this when advising clients on partnership structures."
+- "I was surprised by how interconnected the five revenue streams are. The ecosystem cascade simulator showed that a media rights decision ripples through sponsorship, ticketing, and merchandise. I'll think more systemically about business decisions."
+
+This reflection is for you—capture the insight while it's fresh.
+```
+
+**AI Feedback Prompt:**
+```
+This is an ungraded course reflection. Provide brief, encouraging feedback:
+- Acknowledge their specific insight
+- If they connected learning to application, note that positively
+- If vague ("I learned a lot"), gently ask what specific moment or framework led to that learning
+
+Keep feedback to 2-3 sentences. This closes their learning journey on a reflective note.
+```
+
+---
+
+## Element 6: Text Content - Course Completion `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Text** element in module builder
 2. Copy the markdown below directly into the text field
 
 ```markdown
-# Course Complete!
+# You Did It!
 
-**What Happens Next:**
-
-1. **Milestone Feedback:** Your CFL Expansion Final Proposal will be reviewed within 5 business days. You'll receive detailed feedback on strategic coherence, financial rigor, and presentation quality.
-
-2. **HHOF Recommendation Grade:** Your Week 5 HHOF Strategic Recommendation (Module 6, 25 points) will be graded within 48 hours.
-
-3. **Course Completion:** Once all assessments are graded:
-   - Your final course grade will be posted to your profile
-   - Your certificate of completion will be available for download
-   - You'll receive an email confirmation with next steps
+You've successfully completed **The Business of Sports Marketing**. Whether you breezed through or worked hard on challenging concepts, you've built a foundation in sports business strategy that will serve you throughout your career.
 
 ---
 
-**Reflection:**
+## What You've Accomplished
 
-You've built a complete sports business toolkit that integrates:
-- **Revenue ecosystem analysis** - Understanding how the five streams interconnect
-- **Media rights valuation** - Evaluating broadcast deals and streaming strategies
-- **Sponsorship ROI frameworks** - Measuring partnership value and attribution
-- **Athlete brand strategy** - Building equity beyond endorsements
-- **Heritage property management** - Balancing tradition with innovation
+- Mastered the **five revenue streams** (media, ticketing, sponsorship, merchandise, betting) and how they interconnect
 
-These are the exact skills that sports executives, media companies, league offices, and investment firms use to make million-dollar decisions. Whether you work in marketing, finance, operations, or strategy, you now have the analytical foundation to evaluate sports business opportunities and make data-driven recommendations.
+- Learned to evaluate **media rights deals** and understand why streaming changes everything
 
----
+- Applied **sponsorship ROI frameworks** to measure partnership value and attribution
 
-**What's Next?**
+- Built **athlete brand strategy** skills—understanding why equity beats fees and timing matters
 
-Consider these paths to continue building your sports business expertise:
+- Analyzed **heritage properties** and the tension between tradition and innovation
 
-- **Industry Certifications:** Sports Management Worldwide, Columbia Sports Management
-- **Networking:** Sports Business Journal conferences, MIT Sloan Sports Analytics Conference
-- **Advanced Topics:** Sports analytics, salary cap management, facility financing, esports business models
-- **Career Paths:** Team front offices, league operations, media companies, sponsorship agencies, athlete representation
+- Designed a complete **CFL expansion franchise** from market selection to 5-year vision
 
 ---
 
-**Your 5-Week Journey:**
-
-You've traveled from Connor McDavid's $100M paradox through five weeks of transformative learning:
+## Your 5-Week Journey
 
 | Week | Focus | Key Skill |
 |------|-------|-----------|
@@ -227,9 +322,41 @@ You've traveled from Connor McDavid's $100M paradox through five weeks of transf
 | **Week 4** | Athletes & Emerging Sports | Brand equity strategy |
 | **Week 5** | Legacy, Culture & Future | Heritage vs. innovation trade-offs |
 
-Your CFL Expansion Proposal demonstrates you can synthesize all five frameworks into a cohesive strategic vision. You've done the same work that league executives do when evaluating expansion opportunities.
+---
 
-**Thank you for your engagement and hard work throughout this course!**
+## Keep Learning
+
+Your learning journey continues. Explore more opportunities to build on what you've learned.
+
+**Self-paced courses**
+- Fundamentals of Accounting
+- Fundamentals of Analytics and Excel
+- Fundamentals of Financial Analysis
+- Fundamentals of Strategy
+- Fundamentals of AI for Business
+
+**Cohort courses**
+- Igniting AI Transformation
+- AI Prototyping for Business Innovation
+- Managing Innovation
+
+---
+
+## Thank You
+
+Thank you for completing this course! We truly appreciate your commitment and participation throughout this learning journey.
+
+We hope this course has provided you with knowledge, confidence, and practical frameworks to tackle real-world sports business challenges and make an impact in your role.
+
+Your coursework is now being assessed. If you've completed all required activities and successfully passed the final assessment, you can expect to receive an email from Credly with your digital certificate. This process may take up to 7 business days.
+
+Your achievement is something to celebrate—earning this credential demonstrates your dedication to continuous learning and professional growth.
+
+Stay tuned for your certificate, and keep applying what you've learned to drive results!
+
+Thank you again for being part of this program. We're excited to see how you leverage these sports business insights in your career.
+
+—The Ivey Online Team
 ```
 
 ---
@@ -352,7 +479,7 @@ Your certificate of completion will be available once final grades are posted. C
 - Focus on integration and synthesis, not just compilation of prior milestones
 - Financial projections should show sophisticated understanding of sports economics
 - Risk analysis should demonstrate strategic thinking, not just listing concerns
-- Presentation quality matters—this is board-ready work
+- Writing quality matters—this is board-ready work (concise, clear, executive-level)
 
 **Time Estimate:**
 - Key Takeaways: 1 min
@@ -360,15 +487,16 @@ Your certificate of completion will be available once final grades are posted. C
 - Milestone Brief: 2 min
 - Milestone Submission: Variable (180-240 min work time)
 - Course Synthesis Video: 2 min
+- Course Reflection: 5 min
 - Journey Recap: 5 min
 - Concept Map (optional): 5 min
 - Resources (optional): 5 min
 - Course Complete: 1 min
-- **Total Module 7 reading/viewing: ~25 min** (plus capstone work time)
+- **Total Module 7 reading/viewing: ~30 min** (plus capstone work time)
 
 ---
 
 **Module 7 Status:** COMPLETE - Ready for Uplimit Build
 
-**Last Updated:** 2026-01-14
-**Version:** 3.0.0
+**Last Updated:** 2026-01-20
+**Version:** 4.0.0

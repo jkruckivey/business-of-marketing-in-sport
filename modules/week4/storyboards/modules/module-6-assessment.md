@@ -1,11 +1,15 @@
-# MODULE 6: Assessment - Athlete Brand Strategy Memo
-**Version:** 2.0.0 | **Last Updated:** 2026-01-13
+# MODULE 6: Assessment - Athlete Brand Strategy Reflection
+**Version:** 3.0.0 | **Last Updated:** 2026-01-20
+
+### Version 3.0.0 Changes
+- **ALIGNED:** Assessment now matches simplified Module 5 (video + widget exploration)
+- **REDUCED:** From 40 points to 25 points (lighter assessment)
+- **SIMPLIFIED:** 300-word reflection instead of 1200-1500 word memo
+- **REMOVED:** File upload - now text response
+- **KEPT:** AI Roleplay as optional formative practice
 
 ### Version 2.0.0 Changes
-- **STANDARDIZED:** Module structure to match course-wide template (5 elements)
-- **MOVED:** Assessment FAQs, detailed prompt structure to instructor notes
-- **REMOVED:** Details accordion
-- **ADDED:** Element 5 "What's Next" infobox for clean transition
+- **STANDARDIZED:** Module structure to match course-wide template
 
 **Purpose:** Assess student understanding of Week 4 content (measures WLO 4.1-4.4)
 
@@ -13,11 +17,10 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Sets context from Module 5 |
-| 2 | **ⓘ Infobox (Assessment)** ⬤ Required | Assessment overview | Type directly | Purple variant, 40 points |
-| 3 | **◈ AI Roleplay** ◐ Recommended | Practice pitch to athlete client | Configure in Uplimit | Jordan Taylor character |
-| 4 | **📤 File Response** ⬤ Required | Memo submission | Configure in Uplimit | File upload, rubric grading |
-| 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 7 |
+| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Bridges from Module 5 |
+| 2 | **ⓘ Infobox (Assessment)** ⬤ Required | Assessment overview | Type directly | Purple variant, 25 points |
+| 3 | **📝 Text Response** ⬤ Required | Athlete brand strategy reflection | Configure in Uplimit | 300-word text response |
+| 4 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 7 |
 
 ---
 
@@ -28,9 +31,11 @@
 2. Copy markdown below:
 
 ```markdown
-You've explored athlete revenue streams through interactive tools, analyzed Serena Williams' brand architecture using the five-stream model, and calculated the NPV difference between endorsements and owned businesses. You understand how elite athletes build generational wealth.
+## What Did You Learn?
 
-Now it's time to demonstrate what you've learned. You'll write an executive memo as a brand strategist hired by a 25-year-old elite athlete. Your client wants to build $200M+ net worth by age 50—and they're counting on your strategic plan.
+You've explored athlete brand strategy through Serena Williams' case—watching how she transformed from endorser to investor, athlete to founder, individual to platform. You tested her strategy against alternatives using the Portfolio Analyzer.
+
+Now capture what you learned. This isn't about getting the "right answer"—it's about showing you understand how elite athletes build wealth beyond their playing careers.
 ```
 
 ---
@@ -43,100 +48,122 @@ Now it's time to demonstrate what you've learned. You'll write an executive memo
 3. Copy markdown below:
 
 ```markdown
-Title: ▪ Assessment: Athlete Brand Strategy Memo (40 points)
+Title: ▪ Assessment: Athlete Brand Strategy Reflection (25 points)
 
-**Your Task:** Write a 1200-1500 word strategic memo advising Jordan Taylor (25-year-old elite athlete) on building a $200M+ brand by age 50.
+**Your Task:** In 300 words or less, reflect on what you learned about athlete brand strategy from the Serena Williams case.
 
-**Required Components:**
-1. Revenue stream allocation strategy with % breakdown by career phase
-2. Owned assets vs. endorsement analysis with NPV comparison
-3. 2-3 investment opportunities with IRR projections
-4. Post-career transition plan with age 50 net worth projection
+**Your reflection should address:**
 
-**Grading Rubric (40 points):**
-- Revenue Stream Allocation (10 pts): Maps all 5 streams with justified % allocation
-- Owned vs. Endorsed Strategy (10 pts): NPV comparison, specific recommendations
-- Investment Opportunities (10 pts): 2-3 opportunities with IRR, risk assessment
-- Post-Career Transition (10 pts): Wealth preservation, age 50 projection
+1. **The Strategic Shift** - What distinguishes Serena's approach from typical athletes? Why does equity beat fees?
+2. **The Timing Question** - Why did building businesses DURING her playing career matter?
+3. **Your Application** - If you were advising a 25-year-old elite athlete, what's the ONE strategic decision from Serena's playbook you'd prioritize—and why?
 
-**Preparation:** Use the AI Roleplay below to practice your pitch before writing.
+**Grading (25 points):**
+- Strategic shift understanding (10 pts)
+- Timing/sequencing insight (8 pts)
+- Application with reasoning (7 pts)
+
+**Tip:** Be specific. "Build owned businesses" is vague. "Launch an equity-based venture by age 28 while brand value is highest, because endorsement income disappears at retirement but equity compounds" shows framework thinking.
 ```
 
 ---
 
-## Element 3: AI Roleplay - Practice Pitch to Client
-
-**Scenario Title:** "Client Strategy Presentation"
-
-**Purpose:** Formative practice where students rehearse their strategy before writing.
-
-### Uplimit Configuration
-
-**Scenario Context:**
-```
-Jordan Taylor (25-year-old elite athlete) has reviewed your draft strategy. You've scheduled a quick meeting for Jordan to ask clarifying questions before you finalize your memo. Jordan wants to understand the reasoning behind your recommendations.
-
-This roleplay is formative practice (not graded) to help you test your arguments before writing your final memo.
-```
-
-**AI Role:**
-```
-You are Jordan Taylor, a 25-year-old elite athlete reviewing your brand strategist's recommendations. You're smart and engaged but not a finance expert—ask questions like a thoughtful client would.
-
-Conversation flow:
-1. Ask them to summarize the key recommendations
-2. Probe the revenue allocation (why those percentages?)
-3. Ask about owned businesses (which specific ones? why?)
-4. Question the financial projections (how did you calculate $200M?)
-5. Express one realistic concern (injury risk, timing, capital)
-
-Be appreciative but curious. After 5-6 exchanges, wrap up: "Thanks for walking me through this. I feel confident. Finalize the memo—I think we're on the right track."
-```
-
-**Student Instructions:**
-```
-You are a brand strategist presenting your recommendations to athlete client Jordan Taylor. Jordan wants to understand the reasoning behind your strategic plan for building $200M+ net worth by age 50.
-
-This is practice—use it to test your arguments before writing your memo.
-```
-
----
-
-## Element 4: File Response - Memo Submission
+## Element 3: Text Response - Athlete Brand Strategy Reflection
 
 **Uplimit Implementation:**
-1. Select **Exercise → File Response Question**
+1. Select **Exercise → Text Response Question**
 2. Configure the following fields:
 
 **Question:**
 ```
-Submit your Athlete Brand Strategy Memo for Jordan Taylor (1200-1500 words).
+What did you learn about athlete brand strategy from the Serena Williams case? Reflect in 300 words or less.
 ```
 
 **Additional Instructions:**
 ```
-Your memo will be evaluated using the rubric below (40 points total):
+Your response will be evaluated on:
 
-• Revenue Stream Allocation (10 pts) - Maps all 5 streams with justified % allocation by career phase
-• Owned vs. Endorsed Strategy (10 pts) - NPV comparison, specific business recommendations, trade-offs
-• Investment Opportunities (10 pts) - 2-3 opportunities with IRR projections, risk assessment
-• Post-Career Transition (10 pts) - Wealth preservation plan, age 50 net worth projection
+**Strategic Shift Understanding (10 pts)**
+- Explains the difference between fee-based income (endorsements) and equity-based wealth (owned businesses, investments)
+- References Serena's ~30/70 allocation strategy
+- Shows understanding of why equity compounds while fees don't
 
-Required elements:
-- Revenue stream allocation table
-- NPV comparison (endorsement vs. owned business)
-- Investment IRR projections
-- Age 50 net worth projection
+**Timing/Sequencing Insight (8 pts)**
+- Explains why Serena built businesses DURING her playing career (not after)
+- References the career timeline (Serena Ventures 2014, S by Serena 2018)
+- Shows understanding of brand value decay post-retirement
 
-Accepted formats: PDF, DOCX
-Filename suggestion: LastName_Week4_AthleteBrand.pdf
+**Application with Reasoning (7 pts)**
+- Identifies ONE specific strategic decision to prioritize
+- Explains WHY this decision matters most
+- Shows strategic reasoning, not just opinion
+
+**Reference the Module 5 content:**
+- The video's three strategic pivots
+- The Portfolio Analyzer results
+- Serena's actual allocation choices
 ```
 
-**Template:** No template required
+**AI Feedback Prompt:**
+```
+Evaluate this athlete brand strategy reflection. Check for:
+1. Did they explain the equity vs. fees distinction (not just that Serena had businesses)?
+2. Did they reference timing/sequencing (building during career, not after)?
+3. Did they prioritize ONE specific strategic decision with reasoning (not a list)?
+
+Provide brief, encouraging feedback. If their analysis is vague, ask for specific numbers or examples from the Serena case.
+```
+
+**Rubric Configuration:**
 
 ---
 
-## Element 5: Infobox - What's Next
+**CRITERION 1: Strategic Shift Understanding**
+
+**Points:** 10
+
+**Does not meet expectations (0-3 pts):**
+Describes what Serena did without explaining WHY it matters strategically. No distinction between fee-based and equity-based wealth.
+
+**Partially meets expectations (4-6 pts):**
+Shows some understanding of equity vs. fees but doesn't fully develop it. May mention "owned businesses" without explaining the compounding advantage.
+
+**Fully meets expectations (7-10 pts):**
+Clearly articulates the strategic shift: "Most athletes optimize for endorsement fees (guaranteed but finite), while Serena allocated ~70% to equity-based assets (owned businesses, investments) that compound over time." References the Portfolio Analyzer comparison.
+
+---
+
+**CRITERION 2: Timing/Sequencing Insight**
+
+**Points:** 8
+
+**Does not meet expectations (0-2 pts):**
+No mention of timing. Treats Serena's strategy as something that happened without explaining WHEN it happened.
+
+**Partially meets expectations (3-5 pts):**
+Mentions timing but doesn't fully explain why it matters. May note she started businesses "early" without connecting to brand value decay.
+
+**Fully meets expectations (6-8 pts):**
+Explains the sequencing logic: "Serena launched Serena Ventures (2014) and S by Serena (2018) while still competing, so her businesses had traction before her playing career ended. Brand value declines post-retirement, so starting early captures peak leverage."
+
+---
+
+**CRITERION 3: Application with Reasoning**
+
+**Points:** 7
+
+**Does not meet expectations (0-2 pts):**
+No clear application, or lists multiple items without prioritizing. No reasoning provided.
+
+**Partially meets expectations (3-4 pts):**
+Identifies a strategic decision but reasoning is thin. May say "start investing early" without explaining why this beats other options.
+
+**Fully meets expectations (5-7 pts):**
+Clear prioritization with reasoning: "The ONE decision I'd prioritize: launch an owned business by age 28. Why? Endorsement income peaks during playing years but equity value grows independently. A 25-year-old has 10+ years of peak brand value to leverage—waiting until retirement wastes that window."
+
+---
+
+## Element 4: Infobox - What's Next
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -146,15 +173,15 @@ Filename suggestion: LastName_Week4_AthleteBrand.pdf
 ```
 Title: ✓ What's Next: Module 7
 
-**After submitting your memo:**
+**After submitting your reflection:**
 
-Module 7 wraps up Week 4 with key takeaways and your CFL Expansion Project Milestone 4. You'll design a brand ambassador and launch strategy for your expansion franchise.
+Module 7 wraps up Week 4 with key takeaways and your CFL Expansion Project Milestone 4. You'll apply the athlete brand frameworks to design an athlete ambassador strategy for your expansion franchise.
 
 **Coming Up:**
 - Week 4 Key Takeaways (5 critical insights)
-- CFL Expansion Milestone 4: Brand Ambassador & Launch Strategy
+- CFL Expansion Milestone 4: Athlete Partnerships & Brand Strategy
 
-Complete your memo submission, then continue to Module 7.
+Submit your reflection, then continue to Module 7.
 ```
 
 ---
@@ -162,19 +189,25 @@ Complete your memo submission, then continue to Module 7.
 ## Instructor Notes
 
 **Module 6 Purpose:**
-- Assess Week 4 learning through authentic strategic planning task
-- AI Roleplay provides formative practice before summative assessment
-- Clean handoff to Module 7 (milestone submission)
+- Assess Week 4 learning through reflection on Serena Williams case
+- Lighter assessment aligned with simplified Module 5 (video + widget)
+- Clean handoff to Module 7 (CFL Expansion milestone)
 
-**Detailed Assessment Structure (Optional):**
-For students who want more guidance, the memo should address:
-- Section 1 (Revenue Streams): % allocation for ages 25-27 vs. 28-35
-- Section 2 (Owned vs. Endorsed): 20-year NPV of $10M endorsement vs. $3M business investment
-- Section 3 (Investments): Specific opportunities (NWSL, VC fund, real estate)
-- Section 4 (Post-Career): Which assets sustain value, which depreciate
+**Assessment Flow (Simplified Modules 5-6):**
+1. Module 5: Students watch video, explore Portfolio Analyzer (~15-20 min)
+2. Module 6: Students write 300-word reflection on what they learned (25 pts)
+
+**Why Lighter Assessment:**
+- Module 5 provides focused learning through video and interactive widget
+- Assessment should match the learning investment
+- 300 words is enough to demonstrate strategic thinking
+- Reflection format encourages synthesis over recitation
+
+**For Students Who Want More Challenge:**
+Students who explored multiple scenarios in the Portfolio Analyzer can provide more detailed analysis of the trade-offs. The rubric rewards specificity—students who can articulate specific numbers and timing will score higher.
 
 **Grading Notes:**
-- Focus on application of Week 4 frameworks (cite modules, widgets, Serena case)
-- Financial projections should be realistic with stated assumptions
-- Recommendations should be specific (name actual opportunities) not generic
-- Trade-off acknowledgment shows sophisticated thinking
+- Look for equity vs. fees distinction (the core insight)
+- The timing criterion is the key differentiator between surface and deep responses
+- Accept any reasonable prioritization if well-defended
+- Specific references to video and widget beat vague generalizations

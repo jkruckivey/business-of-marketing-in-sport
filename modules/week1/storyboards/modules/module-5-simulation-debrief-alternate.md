@@ -1,7 +1,11 @@
 # Revenue Strategy Debrief
-**Version:** 1.2.0 | **Last Updated:** 2026-01-20
+**Version:** 1.3.0 | **Last Updated:** 2026-01-20
 
-**Purpose:** Reflect on simulation decisions, analyze trade-offs, compare strategies with peers, and connect to real-world outcomes (supports WLO 1.3, 1.4 - Analysis level)
+**Purpose:** Reflect on simulation decisions, analyze trade-offs, and connect to real-world outcomes (supports WLO 1.3, 1.4 - Analysis level)
+
+### Version 1.3.0 Changes
+- **REPLACED:** Element 8 Discussion → Text Response Reflection (no peer interaction required)
+- **UPDATED:** Content summary to remove peer activity reference
 
 ### Version 1.2.0 Changes
 - **BUILT:** Element 6 Strategy Comparison Tool widget (`strategy-comparison-tool.html`)
@@ -22,7 +26,7 @@
 **Content Summary:**
 - **Total text:** ~800 words in micro-readings
 - **Interactive exercises:** 3 exercises, ~20 minutes total hands-on engagement
-- **Peer activity:** 1 discussion prompt with structured peer exchange
+- **Reflection:** 1 text response reflection
 - **Total time:** ~30 minutes
 
 | Order | Element | Content/Purpose | Time | Source | Implementation Notes |
@@ -34,7 +38,7 @@
 | 5 | **▬ Text** ⬛ Required | Real-world strategy examples intro | 2 min | Type directly | Transition to examples |
 | 6 | **⚙ iFrame Widget** ⬛ Required | **Strategy Comparison Tool** | 5 min | `strategy-comparison-tool.html` | Compare to team archetypes |
 | 7 | **Details** ◐ Recommended | Real-World Examples: How Actual Teams Balance Streams | 3 min | Type directly | Public data examples |
-| 8 | **💬 Discussion** ⬛ Required | Peer Strategy Exchange | 8 min | Configure in Uplimit | Structured peer comparison |
+| 8 | **📝 Text Response** ⬛ Required | Strategy Reflection | 5 min | Configure in Uplimit | Written reflection on strategy choices |
 | 9 | **AI Chat Widget** ○ Optional | Strategy Advisor - get feedback on your choices | 5 min | Configure in Uplimit | Supportive, not evaluative |
 | 10 | **▬ Text** ⬛ Required | CFL Bridge - connecting to Anchor Project | 2 min | Type directly | Sets up project work |
 
@@ -388,43 +392,46 @@ Expansion franchise (2017) that immediately became one of the most valuable in t
 
 ---
 
-## Element 8: Discussion - Peer Strategy Exchange
+## Element 8: Text Response - Strategy Reflection `[v1.3.0]`
 
-**Uplimit Discussion Configuration:**
+**Uplimit Implementation:**
+1. Select **Exercise → Text Response Question**
+2. Configure the following fields:
 
-**Prompt:**
-
-```markdown
-### Peer Strategy Exchange
-
-Your Revenue Empire Builder strategy reflects your assumptions about what works in sports business. Now let's see what happens when different strategies collide.
-
-**Your Task:**
-
-1. **Share your strategy summary** (from the Reflection Tool):
-   - Your top 2 revenue priorities
-   - The market type your strategy targets
-   - Your one-sentence revenue philosophy
-
-2. **Find a classmate with a DIFFERENT approach** and reply to their post:
-   - What did they prioritize that you didn't?
-   - What market conditions would make THEIR strategy outperform yours?
-   - What's one thing you'd "steal" from their approach?
-
-3. **Respond to someone who commented on YOUR strategy:**
-   - Did their feedback change how you think about your approach?
-   - What would you adjust if you ran the simulation again?
-
-**Post length:** 150-200 words initial post, 75-100 words per reply
-
-**Example opening:**
-> "My strategy prioritized media rights (45%) and sponsorship (25%), targeting a large-market team with strong corporate presence. My philosophy: 'Build the brand nationally, monetize locally.' I assumed consistent media rights growth and Fortune 500 headquarters nearby. The biggest risk? Media rights bubble bursting—I'm exposed if streaming economics shift..."
+**Question:**
+```
+Reflect on your Revenue Empire Builder strategy and the team archetype comparison. What did you learn about your approach?
 ```
 
-**Discussion Settings:**
-- Require initial post before viewing others
-- Minimum 1 reply required
-- Instructor participation encouraged but not required
+**Additional Instructions:**
+```
+In 150-200 words, address:
+
+1. **Your Strategy Summary:**
+   - What were your top 2 revenue priorities?
+   - What market type were you targeting (large/small, corporate-heavy, tourist)?
+
+2. **Archetype Comparison:**
+   - Which team archetype did your strategy most resemble?
+   - Was this match intentional, or did it surprise you?
+
+3. **Key Insight:**
+   - What's one thing you'd change if you ran the simulation again?
+   - Why?
+
+**Example response:**
+"My strategy prioritized media rights (45%) and sponsorship (25%), targeting a large-market team with strong corporate presence. The Strategy Comparison Tool matched me to the 'Commercial Maximizer' archetype—which made sense given my focus on maximizing every revenue opportunity. What surprised me was how dependent this strategy is on market size. If I ran it again, I'd increase ticketing allocation because venue control provides more stability than chasing corporate sponsors who can leave during economic downturns."
+```
+
+**AI Feedback Prompt:**
+```
+Evaluate this strategy reflection. Check for:
+1. Did they clearly identify their top 2 revenue priorities?
+2. Did they reference their archetype match from the comparison tool?
+3. Did they provide a specific insight about what they'd change?
+
+Provide brief, encouraging feedback. If their response is vague, ask for a specific example.
+```
 
 ---
 

@@ -1,7 +1,11 @@
 ## MODULE 3: Media Rights Framework (V3 INTERACTIVE-FIRST REDESIGN)
-**Version:** 1.5.0 | **Last Updated:** 2026-01-14
+**Version:** 1.6.0 | **Last Updated:** 2026-01-20
 
 **Purpose:** Provide foundational knowledge about media economics and rights valuation through interactive exploration (supports WLO 2.1, 2.2, 2.3)
+
+### Version 1.6.0 Changes
+- **ADDED:** Element 13 - Media Rights Framework Reflection as proper Text Response element
+- **FORMATTED:** Reflection now follows Uplimit Text Response structure with AI feedback prompt
 
 ### Version 1.5.0 Changes
 - **ADDED:** Deep-dive readings as Details accordions throughout module (Element 1B, 6B, 9B, 11B)
@@ -35,6 +39,7 @@
 | 11A | **Text** ⬤ Required | Widget Introduction - Engagement Value Chain Builder | 2 min | Structured intro |
 | 12 | **🎮 iFrame** ◐ Recommended | Tool 4: Engagement Value Chain Builder | 3 min | Phase 3 tool (NEEDS TO BE BUILT) |
 | 12A | **📝 Practice Quiz** ⬤ Required | Fan Engagement Check (3 questions) | 2 min | Configure in Uplift |
+| 13 | **📝 Text Response** ⬤ Required | Media Rights Framework Reflection | 3 min | 50-word minimum, 5 pts |
 
 **V3 Metrics:**
 - **Total Time:** 12-15 minutes (down from 15-18 min in V1)
@@ -1283,25 +1288,40 @@ D) They face less competition from other bidders
 
 ---
 
-## 💬 REFLECTION PROMPT #1: Media Rights Framework Takeaway
+## Element 13: Text Response - Media Rights Framework Reflection
 
-**Submit Reflection** (⬤ Required - 5 points)
+**Uplimit Implementation:**
+1. Select **Exercise → Text Response Question**
+2. Configure the following fields:
 
-**Prompt:**
-What's your #1 takeaway from the media rights framework? What surprised you most about how sports content is valued and monetized?
+**Question:**
+```
+What's your #1 takeaway from the media rights framework? What surprised you most about how sports content is valued and monetized? (50 words minimum)
+```
 
-**Requirements:**
-- **Your Response:** 50 words minimum
-- **Deadline:** Before moving to Module 4 simulation
+**Additional Instructions:**
+```
+Your reflection should include:
+- A specific insight from the tools or content (not just "I learned a lot")
+- Why this surprised you or challenged your assumptions
+- How you might apply this insight going forward
 
-**Example Starter:**
-"The biggest surprise for me was [insight]. This challenges my assumption that [previous belief]. Going forward, I'll think differently about [application]..."
+Example starter: "The biggest surprise for me was [insight]. This challenges my assumption that [previous belief]. Going forward, I'll think differently about [application]..."
+```
 
-**Why This Matters:**
-Articulating your key insight helps you process what you've learned through the tools and prepares you to apply frameworks in the simulation.
+**AI Feedback Prompt:**
+```
+Evaluate this media rights reflection. Check for:
+1. Did they identify a specific insight (not vague)?
+2. Did they explain why it surprised them or challenged assumptions?
+3. Is the response at least 50 words?
 
-**Grading:** 5 participation points (included in Week 2's 40% weekly engagement grade)
-- 5 points: Thoughtful reflection (50+ words) with specific insight
+Provide brief, encouraging feedback. If their insight is vague ("media rights are expensive"), ask them to be more specific about WHAT surprised them and WHY.
+```
+
+**Grading:** 5 points (participation)
+- 5 points: Thoughtful reflection with specific insight (50+ words)
+- 0 points: Not submitted or does not meet minimum requirements
 
 ---
 

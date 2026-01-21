@@ -1,5 +1,8 @@
 # MODULE 3: Core Content - Athlete Brand Frameworks (BOPPPS: Presentation)
-**Version:** 1.8.0 | **Last Updated:** 2026-01-13
+**Version:** 1.9.0 | **Last Updated:** 2026-01-20
+
+### Version 1.9.0 Changes
+- **REPLACED:** Element 4 Discussion → Text Response Reflection (no peer interaction required)
 
 ### Version 1.8.0 Changes
 - **NEW:** Added pre-widget contextual introductions for Athlete Brand Calculator and Emerging Sports Investment Tool
@@ -27,7 +30,7 @@
 | 2 | **▶ Video** ⬤ Required | "The Five Revenue Streams of Athlete Wealth" (2 min) | Upload MP4 | Introduces athlete diversification before calculator widget |
 | 3 | **⚙ iFrame Widget** ⬤ Required | **Athlete Brand Calculator** | Embed widget | Build athlete revenue portfolios, compare strategies |
 | 3A | **📝 Practice Quiz** ⬤ Required | Athlete Revenue Streams Check (4 questions) | Configure in Uplift | Tests concepts from video and widget |
-| 4 | **💬 Discussion** ◐ Recommended | Athlete Brand Strategy Debate | Configure in Uplimit | Share strategies, debate trade-offs with peers |
+| 4 | **📝 Text Response** ◐ Recommended | Athlete Brand Strategy Reflection | Configure in Uplimit | Written reflection on strategy choices |
 | 5 | **▶ Video** ⬤ Required | "The Emerging Sports Opportunity" (2 min) | Upload MP4 | Explains valuation gaps before investment tool |
 | 6 | **⚙ iFrame Widget** ⬤ Required | **Emerging Sports Investment Tool** | Embed widget | Evaluate women's sports & emerging market opportunities |
 | 6A | **📝 Practice Quiz** ⬤ Required | Emerging Sports Investment Check (4 questions) | Configure in Uplift | Tests investment concepts |
@@ -267,44 +270,46 @@ D) Agents require athletes to sign contracts in multiple categories
 
 ---
 
-## Element 4: Discussion Board - Athlete Brand Strategy Debate `[v1.7.0]`
+## Element 4: Text Response - Athlete Brand Strategy Reflection `[v1.9.0]`
 
 **Uplimit Implementation:**
-1. Select **Discussion** element in module builder
-2. Copy the prompt and configuration below
+1. Select **Exercise → Text Response Question**
+2. Configure the following fields:
 
-**Discussion Prompt:**
+**Question:**
+```
+Reflect on your Athlete Brand Calculator experience. What strategy did you build, and what did you learn?
+```
 
-```markdown
-## 💬 Share Your Athlete Brand Strategy
+**Additional Instructions:**
+```
+In 150-200 words, address:
 
-You just experimented with the Athlete Brand Calculator, allocating $50M across five revenue streams. Now share your strategy and learn from your peers.
-
-### Your Post (150-200 words):
-
-**1. Share your allocation strategy:**
+**1. Your Allocation Strategy:**
 - How did you distribute across the five streams (endorsements, owned businesses, investments, media/content, licensing)?
 - What was your 20-year wealth projection?
 
-**2. Defend your approach:**
+**2. Your Trade-off Rationale:**
 - Why did you prioritize certain streams over others?
-- What trade-offs did you accept (e.g., higher risk for higher returns, or stability over growth)?
+- What risks did you accept for potential rewards?
 
-**3. Name one athlete whose strategy influenced your thinking:**
-- Did you model after Serena (equity-focused), LeBron (diversified empire), or take a different path?
-- What would you do differently than they did?
+**3. Key Insight:**
+- What surprised you about the results?
+- If you could advise an athlete starting their career today, what would you recommend based on what you learned?
 
-### Respond to 1 Peer:
-Find someone with a **different** allocation strategy than yours. Ask them ONE question about a trade-off they made that you wouldn't have made.
-
-**Example:** "You put 40% in owned businesses—what happens if those ventures fail during your playing career when you can't pivot?"
+**Example response:**
+"I allocated 40% to owned businesses and 30% to investments, projecting $180M over 20 years. I prioritized equity over endorsements because the calculator showed compound growth significantly outpaces flat fees. The trade-off was higher short-term risk—if my businesses failed early, I'd have less to reinvest. My key insight: even small equity stakes (5-10%) compound dramatically over 20 years. I'd advise new athletes to negotiate equity in every endorsement deal, even if it means lower upfront fees."
 ```
 
-**Discussion Configuration:**
-- **Minimum word count:** 150 words
-- **Required responses:** 1 peer reply
-- **Grading:** Participation-based (Complete/Incomplete)
-- **Visibility:** Post-before-viewing peer responses (encourages original thinking)
+**AI Feedback Prompt:**
+```
+Evaluate this athlete brand strategy reflection. Check for:
+1. Did they clearly describe their allocation across the five streams?
+2. Did they explain the trade-off rationale (not just list percentages)?
+3. Did they provide a specific insight or recommendation?
+
+Provide brief, encouraging feedback. If their response lacks specificity, ask for an example.
+```
 
 ---
 

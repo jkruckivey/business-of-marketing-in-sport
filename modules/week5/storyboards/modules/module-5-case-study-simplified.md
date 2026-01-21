@@ -1,231 +1,310 @@
-# MODULE 5: Hockey Hall of Fame - Interactive Strategy Analysis
-**Version:** 1.0.0 | **Last Updated:** 2026-01-20
+# MODULE 5: Test Your Strategy (BOPPPS: Practice)
+**Version:** 2.1.0 | **Last Updated:** 2026-01-20
 
-**Purpose:** Explore HHOF's strategic dilemma through interactive analysis (supports WLOs 5.1-5.4)
+### Version 2.1.0 Changes
+- **ADDED:** Element 4 - AI Roleplay (defend simulation results)
+- **RENUMBERED:** What's Next infobox moved to Element 5
 
-### Simplified Version Changes
+### Version 2.0.0 Changes
+- **RESTRUCTURED:** Now widget application module (follows Module 4 HHOF context)
+- **REPLACED:** Heritage Strategy Decision Tool with Heritage Transformation Strategist
+- **ADDED:** HHOF-specific pre-widget context
+- **REMOVED:** Video, scenario tables (moved to Module 4)
+- **PURPOSE:** Context (M4) → Application (M5) → Reflection (M6) flow
+
+### Version 1.0.0 Changes
 - **REMOVED:** 4,000-word case reading, practice quiz, required roleplay, discussion questions
 - **KEPT:** Video, scenario comparison table, strategic decision tool
 - **RESULT:** ~20 minutes, 75% active engagement
 
-**Uplimit Structure:** Fifth module in Unit 5
+**Purpose:** Apply HHOF strategic context using Heritage Transformation Strategist (supports WLOs 5.1-5.4)
 
-| Order | Element | Content/Purpose | Time | Notes |
-|-------|---------|-----------------|------|-------|
-| 1 | **Text** Required | Quick intro (100 words) | 1 min | Sets up the dilemma |
-| 2 | **Video** Required | "HHOF Case: Strategic Analysis" (2 min) | 2 min | Two traps to avoid |
-| 3 | **Table** Required | Three scenarios at a glance | 3 min | Preserve vs. Transform vs. Hybrid |
-| 4 | **iFrame Widget** Required | Heritage Strategy Decision Tool | 10 min | Test different strategies |
-| 5 | **Table** Required | Stakeholder impact summary | 2 min | Who wins/loses in each scenario |
-| 6 | **Details** Optional | Full case background + exhibits | Optional | For those who want more |
-| 7 | **AI Coach** Optional | Heritage strategy discussion | Optional | Ask questions if curious |
+**Uplimit Structure:** Fifth module in Unit 5 (Week 5)
 
-**Total Time:** ~20 minutes (core), +45-60 optional
-**Active Engagement:** 75%+
+| Order | Element | Content/Purpose | Source | Implementation Notes |
+|-------|---------|----------------|--------|---------------------|
+| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Bridges from Module 4 |
+| 2 | **▬ Text** ⬤ Required | Pre-widget context | Type directly | HHOF-specific framing |
+| 3 | **⚙ iFrame Widget** ⬤ Required | Heritage Transformation Strategist | Embed widget | Interactive simulation |
+| 4 | **◈ AI Roleplay** ◐ Recommended | Defend Your Strategy | Configure in Uplimit | 3 questions, ~5-8 min |
+| 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Module 6 |
 
 ---
 
-## Element 1: The Heritage Dilemma
+## Element 1: Connecting Introduction
+
+**Uplift Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
 
 ```markdown
-# How Do You Grow Without Losing Your Soul?
+## Your Turn: Design HHOF's Transformation Strategy
 
-The Hockey Hall of Fame faces a choice every heritage property confronts:
+You've seen the Hockey Hall of Fame's dilemma:
+- $35M revenue target by 2029
+- Three strategic paths with different trade-offs
+- Stakeholder tensions (curators vs. sponsors, heritage vs. growth)
 
-- **The Problem:** Attendance down 22% since 2019. Digital revenue is 1% (competitors: 18-22%). Zero tech staff.
-- **The Board's Mandate:** Grow from $18M to $35M revenue by 2029.
-- **The Tension:** Aggressive growth might destroy the credibility that makes HHOF valuable.
-
-Three paths. Each has trade-offs. None is obviously right.
-
-**Your task:** Explore the scenarios and decide which trade-offs you'd accept.
+Now put yourself in the strategic director's seat. The Heritage Transformation Strategist lets you test different approaches—and see the consequences.
 ```
 
 ---
 
-## Element 2: Video - Strategic Analysis Framework
+## Element 2: Pre-Widget Context
 
-- **File:** `week5-hhof-strategic-analysis.mp4`
-- **Duration:** 2 minutes
-- **Title:** "HHOF Case: Strategic Analysis Framework"
-- **Content:** The heritage dilemma, two traps to avoid (assuming growth always wins; assuming tradition always wins), the credibility risk
+**Uplift Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
 
-**Key Quote:** "Once you're perceived as a theme park, you can't go back to being a serious cultural institution."
+```markdown
+## Practice: Apply WLO 5.1, 5.2 & 5.4 to the Hockey Hall of Fame
+
+You've learned HHOF's strategic context. Now test whether you can hit their $35M target without destroying institutional credibility.
+
+**Setup for HHOF:**
+- Property type: **Hall of Fame**
+- Current state: **Declining** (22% attendance drop, 1% digital revenue)
+- Your budget: $25M transformation fund
+
+**Try these scenarios:**
+- What happens if you prioritize Heritage Preservation? (PRESERVE path)
+- What if you go heavy on Digital Transformation and Audience Expansion? (TRANSFORM path)
+- Can you find a balanced allocation that achieves $35M with stakeholder support? (HYBRID path)
+
+**Why this matters:** Module 4's tables showed the projected outcomes. This simulation shows *why* those outcomes happen—the compounding effect of stakeholder decisions over 5 years.
+
+**What you'll discover:**
+- How budget allocation affects your 5-year revenue and authenticity score
+- How stakeholder decisions (traditionalists vs. growth advocates) compound over time
+- Whether your instincts align with the HHOF board's 7-4 Hybrid vote
+- The trade-offs between short-term revenue and long-term credibility
+
+*Time commitment: 15-20 minutes*
+*Learning outcomes practiced: WLO 5.1 (Heritage assets), WLO 5.2 (Balance tradition/innovation), WLO 5.4 (5-year vision)*
+```
 
 ---
 
-## Element 3: Three Scenarios at a Glance
+## Element 3: iFrame Widget - Heritage Transformation Strategist
 
-**Table: Strategic Options Comparison**
+**Widget Name:** "Heritage Transformation Strategist"
+**Widget File:** `heritage-transformation-strategist.html`
 
-| Factor | PRESERVE | TRANSFORM | HYBRID |
-|--------|----------|-----------|--------|
-| **2029 Revenue** | $21.2M (+17%) | $42.6M (+135%) | $35.1M (+94%) |
-| **Capital Required** | $2.1M | $15.2M | $6.8M |
-| **Debt Required** | $0 | $10M | $0-1.6M |
-| **Achieves $35M Goal?** | No | Yes | Yes |
-| **Risk if it fails** | Slow decline | $10M debt + crisis | Manageable |
-| **Heritage preserved?** | Yes | At risk | Protected |
-| **Curator support** | Full | 8/12 would resign | Supported |
-| **Donor support** | 94% retain | 47% retain | 89% retain |
-
----
-
-## Element 4: Heritage Strategy Decision Tool
-
-**Widget:** `heritage-strategy-decision-tool.html`
-
+**Uplimit Embed Code:**
 ```html
 <iframe
-  src="../../widgets/heritage-strategy-decision-tool.html"
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week5/widgets/heritage-transformation-strategist.html"
   width="100%"
   height="700"
-  title="Heritage Strategy Decision Tool"
-></iframe>
+  style="border: none; border-radius: 8px;"
+  title="Heritage Transformation Strategist - Design HHOF transformation strategy"
+  aria-label="Interactive strategy builder where you allocate budget across five categories and navigate stakeholder decisions to balance tradition preservation with revenue growth for the Hockey Hall of Fame"
+  allowfullscreen
+  loading="lazy">
+</iframe>
 ```
 
-**What students do:**
-- Adjust priorities: revenue growth vs. heritage preservation vs. stakeholder harmony
-- See how different weightings change the recommended path
-- Test "what if" scenarios (What if VR underperforms? What if donors leave?)
-- Compare your recommendation to board's preliminary vote (7/11 chose Hybrid)
+**Widget Features:**
+- Heritage property type selector → Select "Hall of Fame"
+- Current state assessment → Select "Declining"
+- 5-category budget allocation sliders ($25M total):
+  - Experience Innovation
+  - Digital Transformation
+  - Audience Expansion
+  - Revenue Optimization
+  - Heritage Preservation (minimum required)
+- 4-5 stakeholder decision points per year
+- Real-time dashboard: revenue growth %, authenticity score, stakeholder sentiment
+- Final 5-year outcome summary with strategy grade
+- Export option for CFL Expansion Final Proposal reference
+
+**HHOF-Specific Note:**
+Students should select:
+- **Property Type:** Hall of Fame
+- **Current State:** Declining
+
+This matches the HHOF case context from Module 4.
 
 ---
 
-## Element 5: Stakeholder Impact Summary
+## Element 4: AI Roleplay - Defend Your Strategy `[v2.1.0]`
 
-**Table: Who Wins, Who Loses**
+**Scenario Title:** "Defend Your Strategy"
 
-| Stakeholder | PRESERVE | TRANSFORM | HYBRID |
-|-------------|----------|-----------|--------|
-| **Curators** (12 senior staff) | Happy | 8 resign | Supported |
-| **Major Donors** ($2.1M/year) | 94% stay | 47% stay | 89% stay |
-| **Corporate Sponsors** | Disappointed | Excited | Satisfied |
-| **Younger Visitors** (18-35) | 15% return | "Would depend" | 41% return |
-| **Non-curator Staff** (65 FTE) | 72% feel secure | 31% feel secure | 58% feel secure |
-| **Board** | Frustrated (miss goal) | Divided | 7/11 support |
+**Purpose:** Brief formative practice where students defend their simulation results to a board member. Not graded—prepares them for Module 6 reflection.
 
-**Key Insight:** No scenario makes everyone happy. Transform maximizes growth but loses curators and donors. Preserve protects heritage but fails the board mandate. Hybrid requires strategic discipline.
+**When to Use:** Immediately after the Heritage Transformation Strategist widget (Element 3)
+
+**Assessment Type:** Formative (not graded)
 
 ---
 
-## Element 6: Want the Full Case? (Optional)
+### Uplimit AI Roleplay Configuration
 
-**Accordion Title:** Full case background, exhibits, and financial projections
+**Tab 1: Learning Outcome**
+
+**Widget Name:** Defend Your Strategy
+
+**Learning Outcome:**
+```
+Students will defend their Heritage Transformation Strategist simulation results by explaining their budget allocation choices, stakeholder trade-offs, and whether their strategy would work for HHOF. (WLOs 5.2, 5.4 - Application level)
+```
+
+**Scenario Setup:** Formative practice (post-simulation debrief)
+
+---
+
+**Tab 2: Scenario**
+
+**Context:**
+```
+The learner just completed the Heritage Transformation Strategist simulation, testing a 5-year transformation strategy for a heritage property like the Hockey Hall of Fame. They made budget allocation decisions across 5 categories and navigated stakeholder decisions. Now an HHOF board member wants to understand their approach before the full board presentation.
+```
+
+**Role of AI (Board Member):**
+```
+A pragmatic HHOF board member who wants to understand the learner's simulation choices. Genuinely curious about their reasoning and whether their approach would work for HHOF's real situation ($35M target, curator concerns, donor retention).
+```
+
+**Role of Student:**
+```
+The learner explains and defends the strategy they tested in the simulation, connecting their choices to HHOF's actual constraints.
+```
+
+---
+
+**Tab 3: Hidden Context**
+
+```
+**AI Character Context:**
+You are a pragmatic HHOF board member reviewing the learner's simulation results. You're genuinely curious, not hostile.
+
+**Your personality:**
+- Practical: You want to understand why they made specific allocation choices
+- Concerned about stakeholders: You care about curators and donors
+- Results-oriented: You want to know if their strategy hit the $35M target
+
+**Ask exactly 3 questions, then provide brief encouraging feedback:**
+
+Question 1 - Your Approach:
+"Walk me through your simulation. How did you allocate the $25M budget? What was your strategy—more like Preserve, Transform, or Hybrid?"
+
+Question 2 - Stakeholder Trade-offs:
+"What happened when you faced stakeholder decisions? Did you side with traditionalists or growth advocates? What were the consequences?"
+
+Question 3 - Would It Work for HHOF?:
+"Based on your simulation results—your final revenue, authenticity score, and stakeholder satisfaction—would you recommend this approach for HHOF? Why or why not?"
+
+**After 3 questions, provide brief feedback:**
+- Acknowledge their strategic thinking
+- Note one strength in their reasoning
+- Suggest one thing to consider for Module 6 reflection
+
+**HHOF Key Numbers (use to evaluate their responses):**
+- Current revenue: $18.1M
+- Board target: $35M by 2029 (94% growth needed)
+- Three paths: PRESERVE ($21M, misses goal), TRANSFORM ($42M, high risk), HYBRID ($35M, balanced)
+- Curators: 8/12 would resign under TRANSFORM
+- Donors: 47% would reduce giving under TRANSFORM, 89% stay under HYBRID
+- Board preliminary vote: 7/11 support HYBRID
+
+**Widget Categories:**
+Students allocated $25M across: Experience Innovation, Digital Transformation, Audience Expansion, Revenue Optimization, Heritage Preservation
+
+**Keep it brief:** This is a 3-question check-in, not a deep interrogation. Be encouraging—this prepares them for Module 6.
+```
+
+---
+
+### Student-Facing Instructions (Place as Text element BEFORE AI Roleplay)
 
 ```markdown
-### Part 1: The Heritage Challenge
+### Defend Your Simulation Results
 
-The Hockey Hall of Fame controls:
-- The official induction ceremony
-- The Stanley Cup (8 months/year physical custody)
-- 40,000+ artifacts
-- Partnerships with NHL, Hockey Canada
+You just tested a transformation strategy in the Heritage Transformation Strategist. Now explain your choices to an HHOF board member.
 
-**Current Revenue:** $18.1M
-- Admissions: $6.8M (down 19%)
-- Events: $5.4M (only growth area)
-- Sponsorship: $3.8M
-- Digital: $0.2M (1%)
+**Be ready to discuss:**
+1. How you allocated the $25M budget (which categories got priority?)
+2. How you handled stakeholder decisions (traditionalists vs. growth advocates)
+3. Your final results (revenue, authenticity score, stakeholder satisfaction)
+4. Whether your approach would work for HHOF's real situation
 
-**Competitive Gap:**
-| Metric | HHOF | FIFA Museum | Olympics Museum |
-|--------|------|-------------|-----------------|
-| Digital Revenue % | 1% | 22% | 18% |
-| Tech Staff | 0 | 22 | 14 |
-| Digital Members | 0 | 120K | 95K |
+**This is practice, not graded.** Use it to clarify your thinking before Module 6's reflection.
 
----
-
-### Part 2: The Three Scenarios
-
-**PRESERVE:** Curatorial excellence, premium in-person experiences, basic digital refresh. Safe but misses growth target.
-
-**TRANSFORM:** VR arena, 4 international pop-ups, betting partnerships, influencer strategy. High growth but risks identity crisis.
-
-**HYBRID:** Interactive heritage, selective digital membership, 2 domestic pop-ups, curatorial guardrails. Balanced but harder to execute.
-
----
-
-### Exhibit A: 5-Year Financial Projections
-
-**PRESERVE:**
-- 2029 Revenue: $21.2M
-- Pessimistic: $18.9M
-- No debt
-
-**TRANSFORM:**
-- 2029 Revenue: $42.6M
-- Pessimistic: $31.4M (fails goal + carries $10M debt)
-- Requires $10M financing
-
-**HYBRID:**
-- 2029 Revenue: $35.1M
-- Pessimistic: $32.1M (still +77% growth)
-- Self-fundable
-
----
-
-### Exhibit B: Stakeholder Quotes
-
-**Senior Curator:** "Transform is a dealbreaker—we'll resign."
-
-**Heritage Donor:** "If you become just another entertainment venue, we'd redirect our donations."
-
-**Corporate Sponsor:** "We're not buying into tradition—we're buying into a growth platform."
-
-**Young Visitor (24):** "It felt like a museum from the 90s."
+*Time: ~5-8 minutes (3 questions)*
 ```
 
 ---
 
-## Element 7: AI Coach (Optional)
+**Implementation Notes:**
+- Title: "Defend Your Strategy"
+- Total conversation: 3 exchanges
+- Board member initiates with first question
+- Click **"Save"** to create the AI Roleplay Scenario
 
-**Name:** "Heritage Strategy Discussion"
+---
 
-**System Prompt:**
-```
-You help students think through heritage property strategic dilemmas. Topics include:
-- The tension between growth and authenticity
-- Stakeholder trade-offs (curators vs. sponsors vs. younger audiences)
-- Financial risk assessment (debt vs. self-funding)
-- How to operationalize "curatorial guardrails"
+## Element 5: Infobox - What's Next
 
-Be balanced—don't moralize. Help students see why reasonable people disagree on this.
-```
+**Uplift Implementation:**
+1. Select **Infobox** element
+2. Choose variant: **Next Steps** (green)
+3. Copy markdown below:
 
-**Student Instructions:**
 ```markdown
-### Have Questions? (Optional)
+Title: ✓ What's Next: Module 6
 
-Curious about the HHOF case? Want to debate whether Hybrid is a compromise or strategic discipline? Ask the AI coach. No pressure—just here if you want to dig deeper.
+**After exploring the simulation:**
+
+You've tested different transformation strategies for HHOF. You've seen how budget allocations and stakeholder decisions compound over 5 years.
+
+Module 6 captures what you learned. The 25-point reflection asks you to synthesize your insights from Modules 3-5:
+- The Legacy vs Innovation Matrix (Module 3)
+- Future trends you'd prioritize (Module 3)
+- Your HHOF transformation approach (Modules 4-5)
+
+**Coming Up:**
+- 300-word reflection on heritage property strategy
+- Connect your simulation experience to your CFL Expansion Final Proposal
+
+Continue to Module 6 when ready.
 ```
 
 ---
 
-## Comparison: Original vs. Simplified
+## Instructor Notes
 
-| Aspect | Original | Simplified |
-|--------|----------|------------|
-| Time | ~90-110 min | ~20 min core |
-| Case reading | 4,000 words required | Moved to optional |
-| Practice quiz | Required (5 questions) | Removed |
-| Interactive tools | 1 AI roleplay | 1 widget + tables |
-| Discussion questions | 12 questions | Removed |
-| AI Roleplay | Required | Removed (practice in Module 6) |
-| AI Coach | N/A | Optional |
-| Feeling | Case assignment | Exploration |
+**Module 5 Purpose:**
+- Apply HHOF context from Module 4 in an interactive simulation
+- Brief AI roleplay to articulate and defend choices
+- ~20-25 minutes of experiential learning
+- No graded assessment—exploration prepares for Module 6 reflection
+
+**Module Flow (4-5-6):**
+1. Module 4: HHOF context (video + tables) - understand the dilemma (~10-15 min)
+2. Module 5: Apply to HHOF using Heritage Transformation Strategist + defend choices (~20-25 min)
+3. Module 6: 25-point reflection on strategic insights
+
+**Why Heritage Transformation Strategist (not Heritage Strategy Decision Tool):**
+- Strategist widget allows experimentation with budget allocation
+- Students can try multiple approaches (Preserve, Transform, Hybrid)
+- Stakeholder decision points show consequences of choices
+- More active engagement than comparison tool
+
+**Why AI Roleplay After Widget:**
+- Forces articulation of choices (not just clicking through)
+- Connects simulation to HHOF's real constraints
+- Prepares thinking for Module 6 written reflection
+- Brief format (3 questions) respects time
+
+**HHOF Configuration:**
+Instruct students to select "Hall of Fame" + "Declining" to match the HHOF case. This ensures their simulation experience directly connects to Module 4's context.
+
+**Total Time Estimate:**
+- Widget exploration: 15-20 minutes
+- AI roleplay: 5-8 minutes
+- **Total Module 5 time: ~20-25 minutes**
 
 ---
 
-## Connection to Module 6
-
-The simplified Module 5 gives students enough context to engage with the HHOF strategic dilemma. For the Module 6 assessment, students who want to go deeper can:
-
-1. Read the full case background (Element 6 accordion)
-2. Use the AI Coach to test their thinking
-3. Reference the scenario comparison tables in their memo
-
-The graded assessment in Module 6 can include the option to either:
-- Write a strategic memo (for those who read the full case)
-- Complete a shorter strategic recommendation using the decision tool outputs
+**File Status:** ✅ Complete and ready for Uplimit implementation

@@ -528,29 +528,97 @@
 
             document.getElementById('portfolioType').textContent = portfolioType;
 
-            generateInsights(current, portfolioType);
+            generateInsights(current, portfolioType, riskText, growthText, stabilityText);
         }
 
-        function generateInsights(current, portfolioType) {
+        function generateInsights(current, portfolioType, riskText, growthText, stabilityText) {
             const insights = [];
 
+            // Calculate actual scores for consistency (same formulas as calculateMetrics)
+            const riskScore = (current.betting * 2 + current.media * 0.5 + current.sponsorship * 1.5 +
+                              current.ticketing * 1 + current.merchandising * 0.8) / 100;
+            const growthScore = (current.betting * 2 + current.media * 1.2 + current.sponsorship * 1.3 +
+                                current.ticketing * 0.5 + current.merchandising * 0.8) / 100;
+            const stabilityScore = (current.media * 2 + current.ticketing * 1.8 + current.sponsorship * 1.2 +
+                                   current.merchandising * 1.5 + current.betting * 0.3) / 100;
+
+            // Check for truly balanced portfolio (all streams in reasonable ranges)
+            const isTypicalMix = current.media >= 35 && current.media <= 55 &&
+                                 current.ticketing >= 15 && current.ticketing <= 30 &&
+                                 current.sponsorship >= 10 && current.sponsorship <= 25 &&
+                                 current.merchandising >= 5 && current.merchandising <= 15 &&
+                                 current.betting >= 0 && current.betting <= 10;
+
+            // Metric-aligned insights
+            if (riskText === 'High') {
+                if (current.betting > 15) {
+                    insights.push('High risk: Betting-heavy portfolio carries significant regulatory and market uncertainty.');
+                } else if (current.sponsorship > 35) {
+                    insights.push('High risk: Heavy sponsorship dependence is vulnerable to economic downturns and brand crises.');
+                } else {
+                    insights.push('High risk: This allocation exposes you to significant market volatility.');
+                }
+            } else if (riskText === 'Low') {
+                insights.push('Low risk: This conservative mix prioritizes stability over aggressive growth.');
+            }
+
+            if (growthText === 'Low') {
+                if (current.ticketing > 35) {
+                    insights.push('Limited growth: Ticketing is capacity-constrained—stadiums can\'t expand indefinitely.');
+                } else if (current.merchandising > 25) {
+                    insights.push('Limited growth: Merchandising alone rarely drives major revenue expansion.');
+                } else if (current.betting === 0 && current.media < 40) {
+                    insights.push('Limited growth: Missing high-growth streams (betting, strong media) constrains upside potential.');
+                } else {
+                    insights.push('Limited growth: This mix lacks the high-growth drivers needed for significant revenue expansion.');
+                }
+            } else if (growthText === 'High') {
+                insights.push('High growth potential: This mix positions you for revenue expansion, but monitor the associated risks.');
+            }
+
+            if (stabilityText === 'Unstable') {
+                insights.push('Warning: Low stability—revenue could swing dramatically with market changes or regulatory shifts.');
+            } else if (stabilityText === 'Stable' && growthText === 'Low') {
+                insights.push('Trade-off: High stability often comes at the cost of growth potential.');
+            }
+
+            // Specific allocation warnings
             if (current.media > 60) {
-                insights.push('Heavy media dependence creates vulnerability to cord-cutting and streaming disruption.');
+                insights.push('Media concentration risk: Heavy dependence on media rights creates vulnerability to cord-cutting and streaming disruption.');
             }
-            if (current.betting > 15) {
-                insights.push('High betting allocation offers growth potential but carries regulatory risk.');
+            if (current.media < 25 && current.media > 0) {
+                insights.push('Low media share may limit leverage in revenue-sharing negotiations with the league.');
             }
-            if (current.ticketing > 35) {
-                insights.push('Ticketing-heavy model is capacity-limited—difficult to scale revenue.');
+            if (current.ticketing > 40) {
+                insights.push('Ticketing ceiling: Physical capacity limits make this difficult to scale beyond current levels.');
             }
-            if (current.sponsorship + current.merchandising > 45) {
-                insights.push('Brand-driven revenue requires strong team performance and market presence.');
+            if (current.betting > 20) {
+                insights.push('Regulatory exposure: Betting regulations vary by jurisdiction and could change quickly.');
             }
-            if (current.media < 30) {
-                insights.push('Low media rights may limit ability to attract top talent in revenue-sharing leagues.');
+            if (current.merchandising > 30) {
+                insights.push('Merchandising is performance-dependent—revenue will fluctuate with team success and star power.');
             }
-            if (current.media >= 35 && current.media <= 50 && current.ticketing >= 20 && current.ticketing <= 30) {
-                insights.push('This mix resembles a typical major league portfolio—balanced and proven.');
+
+            // Portfolio type insight
+            if (isTypicalMix) {
+                insights.push('Balanced portfolio: This mix resembles a typical major league allocation—diversified and proven.');
+            } else if (portfolioType === 'Media-Dependent') {
+                insights.push('Media-dependent model: Common in top leagues, but requires strong broadcast partnerships.');
+            } else if (portfolioType === 'Traditional/Conservative') {
+                insights.push('Traditional model: Prioritizes game-day revenue over emerging streams.');
+            } else if (portfolioType === 'High-Growth Aggressive') {
+                insights.push('Aggressive growth model: Betting on emerging revenue streams for future upside.');
+            } else if (portfolioType === 'Brand-Driven') {
+                insights.push('Brand-driven model: Success depends heavily on team performance and market presence.');
+            }
+
+            // Missing streams warning
+            const zeroStreams = [];
+            if (current.media === 0) zeroStreams.push('media rights');
+            if (current.ticketing === 0) zeroStreams.push('ticketing');
+            if (current.sponsorship === 0) zeroStreams.push('sponsorship');
+            if (zeroStreams.length >= 2) {
+                insights.push(`Concentration warning: Eliminating ${zeroStreams.join(' and ')} creates heavy dependence on remaining streams.`);
             }
 
             const container = document.getElementById('insightsContainer');

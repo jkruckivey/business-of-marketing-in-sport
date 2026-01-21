@@ -639,15 +639,21 @@
             const totalMultiplier = oppMultiplier * dayMultiplier * teamMultiplier;
             const recommendedPrice = Math.round(BASE_PRICE * totalMultiplier);
 
-            // Calculate attendance (higher prices reduce attendance slightly)
-            const priceElasticity = 0.3; // 10% price increase = 3% attendance decrease
-            const priceRatio = recommendedPrice / BASE_PRICE;
-            const attendanceMultiplier = Math.max(0.7, Math.min(1.0, 1.2 - (priceRatio - 1) * priceElasticity));
+            // Calculate attendance based on DEMAND factors (not price)
+            // High demand = high prices AND high attendance (they're correlated, not inverse)
+            //
+            // Demand score: average of all multipliers normalized to 0-1 scale
+            // - Low demand (all factors low): ~65% capacity
+            // - Average demand (all factors mid): ~82% capacity
+            // - High demand (all factors high): ~98% capacity
+            const avgDemandMultiplier = (oppMultiplier + dayMultiplier + teamMultiplier) / 3;
 
-            // Base attendance varies by factors
-            const baseAttendance = CAPACITY * 0.85; // 85% base
-            const demandBoost = (oppMultiplier - 1) * 0.15 + (teamMultiplier - 1) * 0.10;
-            const attendance = Math.round(Math.min(CAPACITY, baseAttendance * (1 + demandBoost) * attendanceMultiplier));
+            // Convert demand multiplier to capacity percentage
+            // Multiplier range: ~0.5 (lowest) to ~1.5 (highest)
+            // Map to capacity: 60% to 100%
+            const demandNormalized = (avgDemandMultiplier - 0.5) / 1.0; // 0 to 1 scale
+            const capacityPercent = 0.60 + (demandNormalized * 0.40); // 60% to 100%
+            const attendance = Math.round(Math.min(CAPACITY, CAPACITY * Math.min(1.0, capacityPercent)));
 
             // Calculate revenue
             const ticketRevenue = recommendedPrice * attendance;
@@ -684,82 +690,110 @@
         function generateInsights(price, attendance, capacityPct, oppQuality, day, teamPerf) {
             const insights = [];
 
-            // Price insights
-            if (price > BASE_PRICE * 1.5) {
-                insights.push({
-                    type: 'warning',
-                    icon: '',
-                    text: `High premium pricing ($${price}). Monitor fan satisfaction and consider loyalty discounts for season ticket holders.`
-                });
-            } else if (price < BASE_PRICE * 0.85) {
+            // Calculate price change for context
+            const priceChangePercent = Math.round(((price - BASE_PRICE) / BASE_PRICE) * 100);
+
+            // ALWAYS explain the price-attendance relationship first
+            if (priceChangePercent > 50 && capacityPct > 85) {
                 insights.push({
                     type: 'info',
                     icon: '',
-                    text: `Low-demand game. Consider promotional offers (family packs, student discounts) to boost attendance.`
+                    text: `High demand drives both premium pricing (+${priceChangePercent}%) AND strong attendance (${capacityPct}%). This is the ideal dynamic pricing scenario—fans will pay more for marquee matchups.`
+                });
+            } else if (priceChangePercent > 50 && capacityPct <= 85) {
+                insights.push({
+                    type: 'warning',
+                    icon: '',
+                    text: `Premium pricing (+${priceChangePercent}%) with moderate attendance (${capacityPct}%). Consider whether the price ceiling is limiting sales, or test demand with early-bird discounts.`
+                });
+            } else if (priceChangePercent < -10 && capacityPct < 75) {
+                insights.push({
+                    type: 'info',
+                    icon: '',
+                    text: `Low demand scenario: Discounted pricing (${priceChangePercent}%) reflects weaker demand factors, resulting in ${capacityPct}% projected attendance.`
+                });
+            } else if (priceChangePercent < -10 && capacityPct >= 75) {
+                insights.push({
+                    type: 'success',
+                    icon: '',
+                    text: `Value pricing (${priceChangePercent}%) is attracting solid attendance (${capacityPct}%). Consider whether modest price increases could boost revenue without hurting turnout.`
                 });
             }
 
-            // Capacity insights
+            // Explain what's driving the attendance projection
+            const demandFactors = [];
+            if (oppQuality >= 4) demandFactors.push('premium opponent');
+            if (oppQuality <= 2) demandFactors.push('low-profile opponent');
+            if (day === 'saturday' || day === 'sunday') demandFactors.push('weekend game');
+            if (day === 'tuesday' || day === 'monday') demandFactors.push('weekday slot');
+            if (teamPerf >= 4) demandFactors.push('team in contention');
+            if (teamPerf <= 2) demandFactors.push('team struggles');
+
+            if (demandFactors.length > 0) {
+                const positiveFactors = demandFactors.filter(f =>
+                    f.includes('premium') || f.includes('weekend') || f.includes('contention')
+                );
+                const negativeFactors = demandFactors.filter(f =>
+                    f.includes('low-profile') || f.includes('weekday') || f.includes('struggles')
+                );
+
+                if (positiveFactors.length > 0 && negativeFactors.length === 0) {
+                    insights.push({
+                        type: 'success',
+                        icon: '',
+                        text: `Attendance drivers: ${positiveFactors.join(', ')}. These factors support both higher prices and stronger turnout.`
+                    });
+                } else if (negativeFactors.length > 0 && positiveFactors.length === 0) {
+                    insights.push({
+                        type: 'warning',
+                        icon: '',
+                        text: `Attendance challenges: ${negativeFactors.join(', ')}. Consider promotional strategies to offset weaker demand.`
+                    });
+                } else if (positiveFactors.length > 0 && negativeFactors.length > 0) {
+                    insights.push({
+                        type: 'info',
+                        icon: '',
+                        text: `Mixed demand signals: ${positiveFactors.join(', ')} vs. ${negativeFactors.join(', ')}. Price reflects the net effect of these factors.`
+                    });
+                }
+            }
+
+            // Capacity-specific recommendations
             if (capacityPct > 95) {
                 insights.push({
                     type: 'success',
                     icon: '',
-                    text: `Near sell-out expected (${capacityPct}%). Consider dynamic pricing increases 48 hours before game.`
+                    text: `Near sell-out expected (${capacityPct}%). Consider last-minute dynamic price increases—demand is strong enough to absorb higher prices.`
                 });
-            } else if (capacityPct < 75) {
+            } else if (capacityPct < 70) {
                 insights.push({
                     type: 'warning',
                     icon: '',
-                    text: `Low projected attendance (${capacityPct}%). Consider flash sales or group ticket promotions.`
+                    text: `Low projected attendance (${capacityPct}%). Consider flash sales, group ticket promotions, or corporate partnership nights to fill seats.`
                 });
             }
 
-            // Day-specific insights
+            // Day-specific tactical insights
             if (day === 'saturday' || day === 'sunday') {
                 insights.push({
-                    type: 'success',
+                    type: 'info',
                     icon: '',
-                    text: `Weekend game commands premium pricing. Family-friendly promotions could boost concession revenue.`
+                    text: `Weekend premium: Family attendance typically higher. Boost concession revenue with kid-friendly promotions.`
                 });
             } else if (day === 'tuesday' || day === 'monday') {
                 insights.push({
                     type: 'info',
                     icon: '',
-                    text: `Weekday game. Consider corporate partnership nights or local community discounts to fill seats.`
+                    text: `Weekday strategy: Consider $2 beer nights, corporate group sales, or community nights to offset lower demand.`
                 });
             }
 
-            // Opponent-specific insights
-            if (oppQuality >= 4) {
+            // Revenue optimization insight
+            if (price > 200 && capacityPct > 90) {
                 insights.push({
                     type: 'success',
                     icon: '',
-                    text: `Premium opponent. Highlight star players in marketing. Secondary market prices may exceed face value.`
-                });
-            }
-
-            // Team performance insights
-            if (teamPerf >= 4) {
-                insights.push({
-                    type: 'success',
-                    icon: '',
-                    text: `Team in playoff contention. Season ticket renewal rates likely high. Good time for upsell campaigns.`
-                });
-            } else if (teamPerf <= 2) {
-                insights.push({
-                    type: 'warning',
-                    icon: '',
-                    text: `Team struggling. Focus marketing on fan experience, arena amenities, and opponent star power.`
-                });
-            }
-
-            // Revenue optimization insights
-            const revenuePerSeat = price;
-            if (revenuePerSeat > 200 && capacityPct > 90) {
-                insights.push({
-                    type: 'success',
-                    icon: '',
-                    text: `Optimal revenue scenario. High prices with strong demand. Monitor real-time sales for micro-adjustments.`
+                    text: `Optimal revenue scenario: High prices ($${price}) with strong demand (${capacityPct}%). This is dynamic pricing working as intended.`
                 });
             }
 

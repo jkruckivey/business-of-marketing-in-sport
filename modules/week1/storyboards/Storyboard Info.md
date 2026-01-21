@@ -142,13 +142,13 @@ Throughout this storyboard, elements are marked with priority:
 - **Accessibility:** WCAG 2.2 AA compliant
 - **Hosted:** `https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/dynamic-pricing-simulator.html`
 
-#### 3. Ecosystem Cascade Simulator ✅ COMPLETE
+#### 3. Ecosystem Cascade Infographic ✅ COMPLETE
 
-- **File:** `ecosystem-cascade-simulator.html`
-- **Status:** Built and tested
+- **File:** `ecosystem-cascade-infographic.html`
+- **Status:** Built and tested (converted from simulator to infographic)
 - **Build Time:** 5-6 hours
 - **Accessibility:** WCAG 2.2 AA compliant
-- **Hosted:** `https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/ecosystem-cascade-simulator.html`
+- **Hosted:** `https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/ecosystem-cascade-infographic.html`
 
 ### Phase 2: High-Value Widgets ✅ ALL BUILT
 
@@ -186,13 +186,13 @@ Throughout this storyboard, elements are marked with priority:
 - **Accessibility:** WCAG 2.2 AA compliant
 - **Priority:** Optional (Module 3, Element 11)
 
-#### 8. Betting Market Simulator ✅ COMPLETE
+#### 8. Betting Market Comparison ✅ COMPLETE
 
-- **File:** `betting-market-simulator.html`
-- **Status:** Built and ready
+- **File:** `betting-market-comparison.html`
+- **Status:** Built and ready (converted from simulator to comparison table)
 - **Build Time:** 5 hours
 - **Priority:** Optional (Module 3, Element 26)
-- **Location:** `module-3/widgets/betting-market-simulator.html`
+- **Location:** `modules/week1/widgets/betting-market-comparison.html`
 
 ### Widget Base Template
 
@@ -246,7 +246,7 @@ All widgets use consistent structure:
 
 - ✅ `revenue-mix-slider.html`
 - ✅ `dynamic-pricing-simulator.html`
-- ✅ `ecosystem-cascade-simulator.html`
+- ✅ `ecosystem-cascade-infographic.html`
 
 **Phase 2 (High-Value):** ✅ ALL COMPLETE
 
@@ -257,7 +257,7 @@ All widgets use consistent structure:
 **Phase 3 (Nice-to-Have):** ✅ ALL BUILT
 
 - ✅ `streaming-wars-game.html`
-- ✅ `betting-market-simulator.html`
+- ✅ `betting-market-comparison.html`
 
 **Module 4 Widget:**
 

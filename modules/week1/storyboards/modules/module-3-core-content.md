@@ -1490,7 +1490,7 @@ D) Player birthday promotions (targeted 25% increase)
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
 | 25 | **▬ Text** ⬛ Required | Betting growth | 1 min | 100 | Type directly |
-| 26 | **⚙ iFrame Widget** ▢ Optional | **Betting Market Simulator** | 3 min | - | Embed `betting-market-simulator.html` |
+| 26 | **⚙ iFrame Widget** ▢ Optional | **Betting Market Comparison** | 2 min | - | Embed `betting-market-comparison.html` |
 | 27 | **ⓘ Infobox** ▣ Recommended | Betting growth statistics | 1 min | - | Type directly |
 
 #### Element 25: Betting Growth Text
@@ -1525,99 +1525,96 @@ Sports betting represents the **newest and fastest-growing revenue stream**, cur
 
 ---
 
-### Element 25B: Widget Introduction - Betting Market Simulator
+### Element 25B: Widget Introduction - Betting Market Comparison `[v1.5.0]`
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-# Practice: Navigate the Betting Opportunity
+# Global Betting Markets: A Strategic Comparison
 
-Sports betting went from illegal to a $200+ billion global market in just six years. This simulator helps you understand the strategic decisions leagues face in this rapidly evolving landscape.
+Sports betting went from illegal to a $200+ billion global market in just six years. This comparison helps you understand how market characteristics, regulations, and opportunities vary dramatically across key betting markets.
 
-## Your Challenge
+## The Question
 
-You're the Chief Revenue Officer for a professional sports league. The Supreme Court just struck down the federal betting ban, and your phone is ringing off the hook with partnership offers from FanDuel, DraftKings, BetMGM, and others. How do you maximize revenue while managing integrity risks? Your task: design a betting strategy that balances opportunity with responsibility.
+A professional sports league wants to expand its betting partnerships internationally. Which markets offer the best combination of growth potential, favorable regulations, and manageable risk? How do Canada, the US, UK, and Ontario differ in strategic value?
 
-## What You'll Practice
+## What You'll See
 
-- Understanding the multiple revenue streams from betting (partnerships, data licensing, media integration)
-- Evaluating trade-offs between exclusive partnerships vs. open market approaches
-- Seeing how data licensing creates value independent of direct betting partnerships
-- Assessing integrity risks and responsible gaming obligations
+- **Market Metrics:** Size ($4.6B to $93B), growth rates (4% to 45%), and penetration levels across four key markets
+- **Regulatory Environments:** Tax rates ranging from 15% (UK) to 51% (NY), licensing models, and advertising restrictions
+- **Market Characteristics:** Population, top sports, mobile handle percentages, and market maturity stages
+- **Opportunities & Risks:** Key strategic factors for each market including competition intensity and regulatory trends
 
-## How the Simulator Works
+## How to Use This Comparison
 
-1. **Choose Partnership Strategy:** Exclusive partner (one operator, higher guarantee), multiple partners (competition, less control), or no official partners (open market, less revenue)
-2. **Set Data Licensing Approach:** Sell to operators, keep proprietary, or create your own betting product
-3. **Configure Media Integration:** Odds in broadcasts, betting-focused content, or minimal integration
-4. **See Revenue Projections:** Widget calculates partnership revenue, data licensing revenue, and engagement multiplier
-5. **Assess Risk Exposure:** Higher integration = higher revenue but higher integrity risk
+1. **Review Market Overview:** Compare size, growth, penetration, and operator counts at a glance
+2. **Analyze Regulations:** Understand how tax rates and licensing models affect profitability
+3. **Consider Market Stage:** Mature (UK), rapid growth (US), or nascent (Ontario) markets require different strategies
+4. **Evaluate Opportunities & Risks:** Each market has distinct advantages and challenges
 
-## Strategic Considerations
+## Key Insights
 
-- **Exclusive vs. Multiple Partners:** FanDuel might pay $200M/year for exclusivity; four operators might pay $75M each. Math favors multiple partners, but control favors exclusivity.
-- **Data Is Gold:** Real-time player tracking, injury reports, and game data are essential for live betting. This data has value independent of partnership deals.
-- **Engagement Multiplier:** Fans with active bets watch 30-40% more content. This drives media value, not just betting revenue.
-- **Integrity Investment:** More integration requires more monitoring. Budget 5-10% of betting revenue for integrity systems.
+- **Highest Growth:** Ontario at +45%—but concentrated in a single province
+- **Largest Scale:** US at $93B—but intense competition and variable taxes (6.75% to 51%)
+- **Most Sophisticated:** UK market—but mature with limited growth (4%)
+- **Best Entry Point:** Canada—limited operators, provincial expansion ahead
 
-## After the Widget
+## After This Comparison
 
-You've now explored all five revenue streams. Next, the Ecosystem Cascade Simulator ties everything together—showing how a single strategic decision (signing a star player) creates ripple effects across ALL streams.
+You've now explored all five revenue streams. Next, see how these streams interconnect in the Revenue Ecosystem infographic—showing how a single strategic decision creates ripple effects across ALL streams.
 ```
 
 ---
 
-#### Element 26: iFrame Widget - Betting Market Simulator
+#### Element 26: iFrame Widget - Betting Market Comparison `[v1.5.0]`
 
-### ⚙ Interactive Activity: Betting Market Simulator
+### ⚙ Interactive Activity: Betting Market Comparison
 
 **Practice: WLO 1.1 (Map emerging revenue streams) & WLO 1.3 (Evaluate growth potential and risks)**
 
-Sports betting is the fastest-growing revenue stream in professional sports, expanding 30-40% year-over-year since legalization. Currently representing 2-8% of league revenue, betting has fundamentally changed how organizations think about fan engagement, data value, and media integration.
-
-In this simulator, you'll step into the role of a league Chief Revenue Officer navigating the post-legalization landscape. Make strategic decisions about partnership structure (exclusive vs. multiple operators), data licensing approach (sell, keep proprietary, or build your own product), and media integration level (minimal, moderate, or full). Watch how each decision affects projected revenue, fan engagement metrics, and integrity risk exposure. You'll understand why leagues have embraced betting despite integrity concerns—the engagement multiplier (30-40% more content consumed by bettors) drives value across ALL revenue streams.
+Sports betting is the fastest-growing revenue stream in professional sports, expanding 30-40% year-over-year since legalization. This side-by-side comparison presents four key betting markets—Canada, United States, United Kingdom, and Ontario—allowing you to quickly analyze market size, growth rates, regulatory environments, and strategic opportunities.
 
 **What you'll discover:**
 
-- How betting legalization creates multiple revenue opportunities beyond direct partnerships (data licensing, media integration, engagement amplification)
-- The strategic trade-offs between exclusive partnerships (higher guarantee, less control) vs. open market approaches (more competition, more complexity)
-- Why data licensing is a separate and valuable revenue stream—real-time player tracking and game data are essential for live betting
-- How betting integration drives increased viewership across all content, creating value in media rights, sponsorship, and ticketing
+- **Market Scale:** How the US ($93B) dwarfs Canada ($4.6B) but faces intense competition and tax variability
+- **Growth Trajectories:** Why Ontario (+45%) leads in growth while the UK (+4%) is mature and saturated
+- **Regulatory Differences:** Tax rates ranging from 15% (UK) to 51% (NY) and how they impact profitability
+- **Strategic Trade-offs:** Which markets favor new entrants, established operators, or specific sports leagues
 
-**Time commitment:** 3 minutes
+**Time commitment:** 2 minutes
 **Learning outcomes practiced:** WLO 1.1 (Understanding betting revenue stream), WLO 1.3 (Evaluating growth potential and regulatory risks)
 
 ---
 
-**Widget Purpose:** Explore betting market strategies and understand revenue opportunities from legalization.
+**Widget Purpose:** Compare betting market characteristics across key North American and international markets.
 
-**Widget Status:** ✅ Built and Ready (located in module-3/widgets/)
+**Widget Status:** ✅ Built and Ready
 
-**File Location:** `modules/week1/module-3/widgets/betting-market-simulator.html`
+**File Location:** `modules/week1/widgets/betting-market-comparison.html`
 
-**How It Works:**
-- **Inputs:** Partnership strategy selection, data licensing approach, media integration level
-- **Outputs:** Revenue projections, engagement metrics, risk assessment
-- **Scenarios:** Official partner deals, data licensing, media integration
-- **Learning:** Understand how betting creates multiple revenue streams
+**Format:** Side-by-side comparison tables presenting:
+- Market metrics (size, growth, penetration, operators)
+- Regulatory environment (status, licensing, tax rates, advertising)
+- Market characteristics (population, top sports, mobile handle)
+- Opportunities and risks by market
 
 **Uplimit Implementation:**
 ```html
 <iframe
-  src="https://jkruckivey.github.io/business-of-marketing-in-sport/module-3/widgets/betting-market-simulator.html"
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/betting-market-comparison.html"
   width="100%"
   height="700"
   style="border: none; border-radius: 8px;"
-  title="Betting Market Simulator - Explore betting revenue strategies"
-  aria-label="Interactive simulator for sports betting partnerships where you make strategic decisions about data licensing and media integration"
+  title="Betting Market Comparison - Compare Canada, US, UK, and Ontario betting markets"
+  aria-label="Side-by-side comparison tables showing betting market size, regulations, and opportunities across four key markets"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
 **Accessibility:**
-- ✅ Keyboard navigation for all controls
-- ✅ ARIA labels on interactive elements
+- ✅ Semantic table structure with proper headers
+- ✅ ARIA labels on tables
 - ✅ Screen reader compatible
 - ✅ High contrast mode support
 - ✅ WCAG 2.2 AA compliant
@@ -1636,7 +1633,7 @@ The sports betting market has exploded since legalization: global sports betting
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
 | 28 | **▬ Text** ⬛ Required | Ecosystem principle intro | 1 min | 100 | Type directly |
-| 29 | **⚙ iFrame Widget** ⬛ Required | **Ecosystem Cascade Simulator** | 5 min | - | Embed `ecosystem-cascade-simulator.html` |
+| 29 | **⚙ iFrame Widget** ⬛ Required | **Ecosystem Cascade Infographic** | 3 min | - | Embed `ecosystem-cascade-infographic.html` |
 | 30 | **▭ Image** ▣ Recommended | Revenue ecosystem diagram | 1 min | - | Upload `revenue-ecosystem-diagram.png` |
 | 30A | **📝 Practice Quiz** ⬤ Required | Module Synthesis Check (4 questions) | 3 min | - | Configure in Uplift |
 
@@ -1670,112 +1667,68 @@ This explains why teams "overpay" for stars. They're investing in **ecosystem am
 
 ---
 
-### Element 28B: Widget Introduction - Ecosystem Cascade Simulator
+### Element 28B: Infographic Introduction - Ecosystem Cascade
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-# Practice: See the Revenue Ecosystem in Action
+# The Revenue Ecosystem: Where $8M Becomes $40M
 
-This is the synthesis exercise—where everything you've learned comes together. You've explored each revenue stream individually. Now see how they form an interconnected ecosystem where one strategic decision creates cascading effects across all streams.
+You've explored each revenue stream individually. This infographic shows how they connect—why a $12.5M player salary that generates only $8M in direct revenue is actually worth $30-40M annually.
 
-## Your Challenge
+## The Question
 
-You're the Edmonton Oilers' ownership group evaluating whether to sign Connor McDavid to an 8-year, $100 million contract ($12.5M/year). Your CFO presents the direct analysis: ticket revenue increase ~$5M/year, merchandise increase ~$3M/year. Total direct revenue: $8M/year. "We're losing $4.5M per year on this deal," she says. Is she right?
+The Edmonton Oilers sign Connor McDavid for $12.5M/year. Direct revenue impact: ~$8M/year (tickets + merchandise). Is this a losing investment?
 
-## What You'll Practice
+## What You'll See
 
-- Seeing how a single investment cascades through all five revenue streams simultaneously
-- Understanding the difference between direct effects (easily measured) and indirect effects (harder to measure but often larger)
-- Applying "ecosystem thinking" vs. "portfolio thinking" to sports business decisions
-- Defending strategic investments that appear to "lose money" on traditional ROI analysis
+This infographic reveals the **ecosystem cascade**—how one strategic investment ripples through all five revenue streams. Use the tabs to explore three scenarios:
 
-## How the Simulator Works
+- **Superstar Signing:** How a $12.5M salary generates $45M in total ecosystem value
+- **New Arena:** How a $50M annual investment unlocks $125M across real estate, naming rights, and premium seating
+- **Betting Partnership:** The fastest-growing revenue stream and its 288% ROI
 
-1. **See the Investment:** McDavid contract: $12.5M/year salary cost
-2. **View Direct Effects:** Click to reveal ticketing (+$5M) and merchandising (+$3M) = $8M direct revenue
-3. **Reveal Indirect Effects:** Click to reveal media rights (+$10M), sponsorship (+$5M), playoff revenue (+$15M average), betting engagement (+$2M)
-4. **See Total Ecosystem Value:** $30-40M+ annually—far exceeding the $12.5M cost
-5. **Compare Scenarios:** Toggle between "Star Player," "New Arena," and "Betting Partnership" to see different cascade patterns
+Pay attention to the **time horizons**—some effects are immediate (Year 1), while others take 2-5 years to materialize. This explains why short-term ROI analysis often misses long-term value.
 
-## Strategic Considerations
+## Key Insight
 
-- **Direct vs. Indirect:** Direct effects (tickets, merchandise) are easy to measure but capture only 25-30% of total value. Indirect effects require ecosystem thinking.
-- **Why Teams "Overpay":** Traditional ROI analysis only sees the $8M direct return. Ecosystem analysis sees the $30-40M total value. This is why star players command "irrational" salaries.
-- **Time Horizon Matters:** Some indirect effects (playoff revenue, franchise valuation) take years to materialize. Short-term ROI analysis misses long-term value.
-- **The $100 Million Question Answered:** Remember the bridge video? Now you can answer it. McDavid isn't worth $8M—he's worth $30-40M annually because of ecosystem amplification.
+The difference between direct effects (easy to measure, ~25% of value) and indirect effects (harder to measure, ~75% of value) is why teams "overpay" for stars. They're not overpaying—they're investing in ecosystem amplification.
 
-## After the Widget
-
-Export your ecosystem analysis. You'll use this framework in Module 4's Revenue Empire Builder simulation and your Board Strategy Defense memo—defending strategic investments using ecosystem thinking, not just direct ROI.
+You'll apply this ecosystem framework in Module 4's Revenue Empire Builder activity and your Board Strategy Defense memo.
 ```
 
 ---
 
-#### Element 29: iFrame Widget - Ecosystem Cascade Simulator
+#### Element 29: iFrame - Ecosystem Cascade Infographic
 
-### ⚙ Interactive Activity: Ecosystem Cascade Simulator
+**Supports:** WLO 1.1, WLO 1.2, WLO 1.3 | **Time:** 3 minutes | **Status:** ✅ BUILT AND READY
 
-**Practice: WLO 1.1 (See revenue stream interconnections) & WLO 1.2 (Understand sport's unique business model) & WLO 1.3 (Evaluate strategic investments)**
-
-This is where everything comes together. You've explored each revenue stream individually—media rights, ticketing, sponsorship, merchandising, and betting. Now it's time to see how they form an interconnected **ecosystem** rather than a collection of independent streams. This distinction—portfolio thinking vs. ecosystem thinking—is the critical insight that separates expert sports business analysts from novices.
-
-In this simulation, you'll analyze the Edmonton Oilers signing Connor McDavid to an 8-year, $100 million contract. At first glance, the numbers look bad: $12.5M annual salary cost generates only ~$8M in direct revenue (tickets and merchandise). A $4.5M annual loss? Not when you apply ecosystem thinking. Click to progressively reveal the **indirect effects**—how McDavid amplifies media rights value (+$10M), sponsorship renewals (+$5M), playoff revenue potential (+$15-20M per deep run), franchise valuation (+$50-100M), and betting engagement (+$2M). Watch the cascade unfold and see why the true ecosystem value reaches $30-40M+ annually, far exceeding the salary cost.
-
-**What you'll discover:**
-
-- How a single strategic investment cascades through all five revenue streams simultaneously—the definition of ecosystem thinking
-- Why teams "overpay" for star players when analyzed through direct ROI but create massive value through ecosystem amplification
-- The critical difference between direct effects (tickets, merchandise—easy to measure) and indirect effects (media, sponsorship, playoffs, betting—harder to measure but often 3-5× larger)
-- How strategic decisions create ripple effects worth $30-40M+ annually—answering "The $100 Million Question" from the bridge video
-
-**Time commitment:** 5 minutes
-**Learning outcomes practiced:** WLO 1.1 (Seeing interconnections), WLO 1.2 (Understanding sport's unique model), WLO 1.3 (Evaluating strategic investments)
-
----
-
-**Widget Purpose:** Demonstrate how one strategic investment (signing Connor McDavid) creates cascading effects across all revenue streams.
-
-**Widget Status:** ✅ Phase 1 widget - BUILT AND READY
-
-**How It Works:**
-- **Scenario:** Edmonton Oilers sign Connor McDavid ($12.5M/year salary)
-- **Click to reveal effects:**
-  - **Direct Effects:** Ticketing (+$5M), Merchandising (+$3M) = $8M total
-  - **Indirect Effects:** Media rights (+$10M), Sponsorship (+$5M), Playoff revenue (+$15M), Betting (+$2M) = $32M total
-  - **Net ecosystem value:** $30M+ gain (far exceeding $12.5M cost)
-- **Visual:** Animated cascade showing money flowing from one stream to others
-- **Alternative scenarios:** Compare star player vs. new arena vs. betting deal
-- **Export:** Save ecosystem analysis as PDF
-
-**Learning Outcomes:**
-- WLO 1.1: See how revenue streams interconnect (ecosystem vs. portfolio)
-- WLO 1.2: Understand sport's unique business model (why teams "overpay")
-- WLO 1.3: Evaluate strategic investment decisions across multiple streams
+**Infographic Features:**
+- **Tabbed scenarios:** Superstar Signing, New Arena, Betting Partnership
+- **Visual flow:** Investment → Direct Effects → Indirect Effects → Total Ecosystem Value
+- **Time horizons:** Each effect shows when it materializes (Year 1, Years 2-5, Years 3-20)
+- **Key insight box:** Strategic takeaway for each scenario
 
 **Uplimit Implementation:**
 ```html
 <iframe
-  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/ecosystem-cascade-simulator.html"
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/ecosystem-cascade-infographic.html"
   width="100%"
-  height="700"
+  height="650"
   style="border: none; border-radius: 8px;"
-  title="Ecosystem Cascade Simulator - Connor McDavid investment analysis"
-  aria-label="Interactive simulator showing how signing Connor McDavid creates cascading effects across all revenue streams with direct and indirect value calculations"
+  title="Ecosystem Cascade Infographic - Strategic investment analysis"
+  aria-label="Interactive infographic showing how strategic investments create cascading effects across all revenue streams with time horizons and ROI calculations"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
 **Accessibility:**
-- ✅ Keyboard navigation (Tab, Space, Enter to reveal cascades)
-- ✅ ARIA live regions announce each cascade effect
-- ✅ Screen reader reads full calculation breakdown
-- ✅ High contrast mode for visual effects
-- ✅ Alternative text descriptions for visual animations
-- ✅ Color-coded by effect type (red = cost, yellow = direct, green = indirect)
+- ✅ Keyboard navigation (Tab between scenario tabs)
+- ✅ Semantic HTML structure for screen readers
+- ✅ High contrast text and clear visual hierarchy
 
-**Pedagogical Note:** This is the **synthesis exercise** that ties the entire module together. Students should have completed Elements 1-28 before encountering this, so they can see how all concepts (media rights, ticketing, sponsorship, merchandising, betting) interconnect in real strategic decisions.
+**Pedagogical Note:** This infographic ties the module together. Students should have completed Elements 1-28 before viewing, so the ecosystem connections between media rights, ticketing, sponsorship, merchandising, and betting are meaningful.
 
 #### Element 30: Image - Revenue Ecosystem Diagram
 - **File:** `revenue-ecosystem-diagram.png`

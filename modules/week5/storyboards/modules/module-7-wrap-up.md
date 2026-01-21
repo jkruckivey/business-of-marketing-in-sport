@@ -146,13 +146,16 @@ Filename suggestion: LastName_M5_FinalProposal.pdf
 
 **Points:** 12
 
-**Does not meet expectations (0-4 pts):**
+**Description:**
+Student integrates Milestones 1-4 into a unified strategic vision where market analysis, media strategy, sponsorship approach, and brand positioning reinforce each other.
+
+**Does not meet expectations:** 0 points
 Milestones appear as separate sections without integration. No clear thread connecting market analysis, media strategy, sponsorship portfolio, and brand approach. Reads like four independent proposals pasted together.
 
-**Partially meets expectations (5-8 pts):**
+**Partially meets expectations:** 6 points
 Some connections between milestones, but integration is surface-level. May reference prior work without showing how decisions in one area affect others. Missing logical flow from market selection → strategy → financials.
 
-**Fully meets expectations (9-12 pts):**
+**Fully meets expectations:** 12 points
 Milestones 1-4 clearly integrated into unified vision. Shows how market characteristics (M1) drive media strategy (M2), which informs sponsorship approach (M3), which shapes brand positioning (M4). Each decision logically builds on previous choices. Reader understands why THIS strategy for THIS market.
 
 ---
@@ -161,13 +164,16 @@ Milestones 1-4 clearly integrated into unified vision. Shows how market characte
 
 **Points:** 10
 
-**Does not meet expectations (0-3 pts):**
+**Description:**
+Student presents realistic 5-year financial projections with clear assumptions, complete P&L, and credible break-even analysis.
+
+**Does not meet expectations:** 0 points
 Financial projections missing, unrealistic, or unsupported. No clear assumptions stated. P&L incomplete or contains obvious errors. Break-even analysis absent or implausible.
 
-**Partially meets expectations (4-6 pts):**
+**Partially meets expectations:** 5 points
 Financial projections present but assumptions unclear or optimistic without justification. P&L shows basic structure but may miss key revenue streams or cost categories. Break-even timeline stated but not well-supported.
 
-**Fully meets expectations (7-10 pts):**
+**Fully meets expectations:** 10 points
 Realistic 5-year projections with clearly stated assumptions. P&L covers all five revenue streams with reasonable growth rates. Investment requirements and break-even timeline grounded in comparable franchise data or industry benchmarks. Shows understanding of sports business economics.
 
 ---
@@ -176,13 +182,16 @@ Realistic 5-year projections with clearly stated assumptions. P&L covers all fiv
 
 **Points:** 8
 
-**Does not meet expectations (0-2 pts):**
+**Description:**
+Student identifies material risks specific to this market and strategy, with concrete mitigation plans for each.
+
+**Does not meet expectations:** 0 points
 Risks not identified, or only generic risks listed ("competition," "economy") without specificity to this market/franchise. No mitigation strategies provided.
 
-**Partially meets expectations (3-5 pts):**
+**Partially meets expectations:** 4 points
 Identifies relevant risks but analysis is shallow. Mitigation strategies generic ("monitor closely," "adjust as needed") rather than specific actionable plans.
 
-**Fully meets expectations (6-8 pts):**
+**Fully meets expectations:** 8 points
 Identifies 3 specific, material risks tied to this market and strategy. For each risk: explains why it matters, quantifies potential impact where possible, and provides concrete mitigation strategy. Shows strategic thinking about what could go wrong and how to respond.
 
 ---
@@ -191,13 +200,16 @@ Identifies 3 specific, material risks tied to this market and strategy. For each
 
 **Points:** 10
 
-**Does not meet expectations (0-3 pts):**
+**Description:**
+Student delivers a board-ready executive summary with concise writing, compelling narrative, and effective use of tables and figures.
+
+**Does not meet expectations:** 0 points
 Document exceeds page limit, lacks clear structure, or contains significant grammar/formatting issues. Not appropriate for board presentation. Key information buried or missing.
 
-**Partially meets expectations (4-6 pts):**
+**Partially meets expectations:** 5 points
 Meets page limit and basic structure, but writing could be more concise. Some sections stronger than others. Adequate for internal review but needs polish for board presentation.
 
-**Fully meets expectations (7-10 pts):**
+**Fully meets expectations:** 10 points
 Board-ready quality. Concise, clear executive writing. Strong opening that captures investment thesis. Effective use of tables/figures to convey complex information. Professional formatting. A busy executive could read this in 10 minutes and understand the complete proposal.
 
 ---

@@ -1,10 +1,13 @@
 # Week 3: Sponsorship & Betting - The Growth Engines
 ## Uplimit Course Storyboard - Business of Sports Marketing
 
-**Version:** 1.1
-**Last Updated:** 2025-12-05
+**Version:** 1.2
+**Last Updated:** 2026-01-21
 **Target Platform:** Uplimit
 **Total Time:** 5-6 hours (across 7 modules)
+
+### Version 1.2 Changes
+- **UPDATED:** Case study changed from FanDuel to LIV Golf (Ivey W33366)
 
 ### Version 1.1 Changes
 - **NEW:** Added Module 1.5 - Executive Insights with Andrew Sneyd (FanDuel CMO)
@@ -27,7 +30,7 @@ Calculate sponsorship ROI and assess sports betting's role as a growth engine in
 **Executive Guest:**
 - **Andrew Sneyd (FanDuel CMO)** - Sports betting marketing, brand building, customer acquisition (~45 min interview)
 
-**Case Study:** FanDuel: Betting on Sports (HBS 520038)
+**Case Study:** LIV Golf: Sportswashing and the End of a Monopoly (Ivey W33366)
 
 **Key Assessment:** Group sprint - 1-page sponsorship activation plan with ROI projections (40 points)
 

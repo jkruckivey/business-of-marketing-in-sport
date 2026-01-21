@@ -146,6 +146,80 @@ Filename suggestion: LastName_M1_MarketAnalysis.pdf
 
 **Template:** No template required
 
+**Rubric Configuration:**
+
+---
+
+**CRITERION 1: City Selection Justification**
+
+**Points:** 5
+
+**Description:**
+Student selects a Canadian city for CFL expansion and justifies the choice using market data including population, demographics, corporate base, and venue options.
+
+**Does not meet expectations:** 0 points
+City choice lacks justification or uses only superficial criteria (e.g., "I like this city"). Missing key market data on population, demographics, corporate base, or venue options. No analysis of why this market would support a CFL franchise.
+
+**Partially meets expectations:** 3 points
+City selection includes some market data but analysis is incomplete. May address population and demographics but miss corporate base or venue considerations. Justification present but doesn't fully convince reader this is a viable CFL market.
+
+**Fully meets expectations:** 5 points
+Comprehensive market analysis with clear rationale. Addresses population, demographics, sports landscape, corporate base, and venue options. Shows understanding of what makes a CFL expansion market viable. Reader understands why THIS city is a strong candidate.
+
+---
+
+**CRITERION 2: Revenue Projections**
+
+**Points:** 5
+
+**Description:**
+Student projects 5-year revenue across all five streams (media, ticketing, sponsorship, merchandise, betting) with clear assumptions grounded in CFL economics.
+
+**Does not meet expectations:** 0 points
+Revenue projections missing or incomplete. Fewer than 3 of 5 revenue streams addressed. No assumptions stated. Numbers appear arbitrary or unrealistic for CFL scale.
+
+**Partially meets expectations:** 3 points
+All 5 revenue streams addressed but projections lack detail or clear assumptions. Some numbers may be optimistic without justification. Shows basic understanding of revenue streams but doesn't demonstrate how market characteristics affect projections.
+
+**Fully meets expectations:** 5 points
+All 5 revenue streams projected with clear assumptions. Numbers grounded in CFL benchmarks or comparable markets. Shows how market characteristics (from city selection) influence revenue potential. Projections realistic for expansion franchise in years 1-5.
+
+---
+
+**CRITERION 3: Competitive Analysis**
+
+**Points:** 3
+
+**Description:**
+Student identifies key competitors for entertainment dollars in the chosen market and explains how a CFL franchise would position against them.
+
+**Does not meet expectations:** 0 points
+No competitive analysis or only generic statements ("there is competition"). Doesn't identify specific competitors for entertainment dollars in the chosen market.
+
+**Partially meets expectations:** 2 points
+Identifies some competitors but analysis is surface-level. May list other sports teams without explaining how CFL would compete. Missing analysis of non-sports entertainment competition.
+
+**Fully meets expectations:** 3 points
+Identifies key competitors (other sports, entertainment options) specific to chosen market. Explains how CFL franchise would position against them. Shows understanding of the competitive landscape for entertainment spending in this market.
+
+---
+
+**CRITERION 4: Professional Presentation**
+
+**Points:** 2
+
+**Description:**
+Student delivers a clear, well-organized document with professional writing appropriate for business review.
+
+**Does not meet expectations:** 0 points
+Document poorly organized, contains significant errors, or exceeds page limit substantially. Difficult to follow or missing required sections.
+
+**Partially meets expectations:** 1 point
+Meets basic requirements but writing could be clearer. Some organizational issues or minor errors. Adequate but not polished.
+
+**Fully meets expectations:** 2 points
+Clear, professional writing. Logical organization with all required sections. Appropriate length (2-3 pages). Ready for business review.
+
 ---
 
 ## Element 5: Infobox - What's Next

@@ -31,7 +31,7 @@ This storyboard has been split into individual module files for easier navigatio
 3. **[Voices from Heritage Properties](modules/module-2-executives.md)** (~25 KB)
    - **✅ Available:** Golf Canada (Niki DaSilva & Tim McLaughlin) - Heritage SPORT transformation (~45 min)
    - **✅ Available:** Jamie Dinsmore (Hockey Hall of Fame CEO) - Heritage INSTITUTION management (~18 min)
-   - ⏳ Pending: Stewart Johnston (MLSE CEO) - Modern franchise perspective
+   - **✅ Available:** Stewart Johnston (CFL Commissioner) - League expansion, tradition vs. innovation (~35 min) ⭐ CAPSTONE
    - Real-world context on heritage vs. growth tension
    - **Time**: ~85-90 minutes (63 min viewing + reflection)
 
@@ -255,9 +255,13 @@ Students recommend 1 of 3 paths:
 
 ---
 
-**Last Updated**: 2025-12-05
-**Version**: 1.1
+**Last Updated**: 2026-01-21
+**Version**: 1.2
 **Status**: Ready for implementation
+
+### Version 1.2 Changes
+- **UPDATED:** Stewart Johnston now confirmed as CFL Commissioner (not MLSE CEO)
+- Stewart Johnston interview serves as CAPSTONE connecting to CFL expansion project
 
 ### Version 1.1 Changes
 - Added video script references section

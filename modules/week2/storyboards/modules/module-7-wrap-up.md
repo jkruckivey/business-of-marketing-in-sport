@@ -116,6 +116,80 @@ Filename suggestion: LastName_M2_MediaStrategy.pdf
 
 **Template:** No template required
 
+**Rubric Configuration:**
+
+---
+
+**CRITERION 1: Media Rights Analysis**
+
+**Points:** 6
+
+**Description:**
+Student demonstrates understanding of the CFL media landscape, including the TSN deal structure and revenue-sharing implications for an expansion franchise.
+
+**Does not meet expectations:** 0 points
+Little or no understanding of CFL media landscape demonstrated. Missing context on CFL-TSN relationship or how expansion affects media rights. No connection between media strategy and league economics.
+
+**Partially meets expectations:** 3 points
+Shows basic understanding of CFL media landscape but analysis lacks depth. May mention TSN deal without explaining revenue-sharing implications for expansion team. Some gaps in connecting media rights to franchise economics.
+
+**Fully meets expectations:** 6 points
+Demonstrates clear understanding of CFL-TSN deal structure and how expansion team fits. Explains revenue-sharing implications and what new franchise can expect. Shows how media economics differ for expansion vs. established teams.
+
+---
+
+**CRITERION 2: Local Media Strategy**
+
+**Points:** 6
+
+**Description:**
+Student develops a comprehensive local media strategy covering broadcast partnerships, digital presence, and streaming approach tailored to the chosen market.
+
+**Does not meet expectations:** 0 points
+Media strategy missing or generic. Doesn't address broadcast, digital, and streaming components. No consideration of local market characteristics from Milestone 1.
+
+**Partially meets expectations:** 3 points
+Addresses some media channels but strategy incomplete. May focus on one area (e.g., digital) while neglecting others (e.g., local broadcast partnerships). Limited connection to specific market characteristics.
+
+**Fully meets expectations:** 6 points
+Comprehensive strategy covering broadcast partnerships, digital presence, and streaming approach. Strategy tailored to specific market from Milestone 1. Shows understanding of how different channels reach different audience segments.
+
+---
+
+**CRITERION 3: Content & Engagement Plan**
+
+**Points:** 5
+
+**Description:**
+Student creates an actionable content and fan engagement plan to build audience before the franchise's first game.
+
+**Does not meet expectations:** 0 points
+No content strategy or only vague statements ("use social media"). Doesn't address how to build fans before first game. Missing actionable tactics.
+
+**Partially meets expectations:** 2 points
+Includes content ideas but plan lacks specificity or timeline. May list tactics without explaining how they build toward launch. Some connection to market but could be more tailored.
+
+**Fully meets expectations:** 5 points
+Actionable content and engagement plan tailored to chosen market. Explains how to build fan base before first game. Specific tactics for social media, community building, and behind-the-scenes content. Clear connection between content strategy and market characteristics.
+
+---
+
+**CRITERION 4: Professional Presentation**
+
+**Points:** 3
+
+**Description:**
+Student delivers a clear, well-organized document with professional writing appropriate for business review.
+
+**Does not meet expectations:** 0 points
+Document poorly organized, contains significant errors, or exceeds page limit substantially. Missing required sections or difficult to follow.
+
+**Partially meets expectations:** 2 points
+Meets basic requirements but writing could be clearer. Some organizational issues or minor errors. Adequate but not polished.
+
+**Fully meets expectations:** 3 points
+Clear, professional writing. Logical organization with all required sections. Appropriate length (2-3 pages). Ready for business review.
+
 ---
 
 ## Element 5: Infobox - What's Next

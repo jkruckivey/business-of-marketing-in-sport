@@ -190,6 +190,80 @@ Filename suggestion: LastName_M4_LaunchStrategy.pdf
 
 **Template:** No template required
 
+**Rubric Configuration:**
+
+---
+
+**CRITERION 1: Ambassador Selection**
+
+**Points:** 6
+
+**Description:**
+Student selects strategic brand ambassadors with clear rationale for how they fit the market and franchise brand positioning.
+
+**Does not meet expectations:** 0 points
+Ambassador choices missing or inappropriate (e.g., selecting global superstars unrealistic for CFL budget). No rationale for selections. No connection between ambassadors and market characteristics or brand positioning.
+
+**Partially meets expectations:** 3 points
+Ambassador choices present but rationale incomplete. May select appropriate athletes without explaining strategic fit. Limited connection to market from Milestone 1 or brand identity.
+
+**Fully meets expectations:** 6 points
+Strategic ambassador choices with clear rationale. Explains why these athletes fit the market and brand. Considers local connections, CFL alumni, emerging athletes, or community figures. Shows understanding of Week 4 athlete brand frameworks.
+
+---
+
+**CRITERION 2: Launch Campaign**
+
+**Points:** 6
+
+**Description:**
+Student creates a feasible launch campaign timeline with clear milestones from pre-announcement through the first game.
+
+**Does not meet expectations:** 0 points
+No campaign timeline or only vague ideas. Missing key milestones. No clear path from announcement to first game. Timeline unrealistic or not feasible.
+
+**Partially meets expectations:** 3 points
+Campaign timeline present but incomplete. May have good ideas without clear sequencing. Some milestones identified but missing measurable outcomes. Timeline feasible but lacks creativity.
+
+**Fully meets expectations:** 6 points
+Creative, feasible 18-month timeline from pre-launch to first game. Clear milestones with measurable outcomes. Shows understanding of how to build anticipation and convert interest to ticket sales. Campaign tactics appropriate for market size and budget.
+
+---
+
+**CRITERION 3: Community Integration**
+
+**Points:** 4
+
+**Description:**
+Student develops authentic community integration strategies that build long-term relationships beyond transactional sponsorship.
+
+**Does not meet expectations:** 0 points
+No community strategy or only transactional approaches ("sponsor local events"). Doesn't demonstrate understanding of how sports franchises build authentic community connections.
+
+**Partially meets expectations:** 2 points
+Community ideas present but feel generic. May list programs without explaining how they build long-term relationships. Limited connection to specific community characteristics of chosen market.
+
+**Fully meets expectations:** 4 points
+Authentic community integration beyond transactional sponsorship. Specific programs tailored to market (youth programs, school partnerships, charitable foundation). Shows how franchise becomes part of community fabric. Demonstrates Week 4 understanding of brand building through community.
+
+---
+
+**CRITERION 4: Professional Presentation**
+
+**Points:** 4
+
+**Description:**
+Student delivers a clear, well-organized document with professional writing and effective use of visual elements.
+
+**Does not meet expectations:** 0 points
+Document poorly organized, contains significant errors, or exceeds page limit substantially. Missing required sections or difficult to follow.
+
+**Partially meets expectations:** 2 points
+Meets basic requirements but writing could be clearer. Some organizational issues or minor errors. Adequate but not polished.
+
+**Fully meets expectations:** 4 points
+Clear, professional writing. Logical organization with all required sections. Appropriate length (2-3 pages). Visual elements (timeline, diagrams) used effectively. Ready for business review.
+
 ---
 
 ## Element 5: Infobox - What's Next

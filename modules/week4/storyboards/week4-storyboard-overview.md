@@ -1,8 +1,8 @@
 # Week 4: Athletes, Brands & Emerging Sports
 ## Uplift Course Storyboard - Business of Sports Marketing
 
-**Version:** 1.0
-**Last Updated:** 2025-12-05
+**Version:** 1.1
+**Last Updated:** 2026-01-21
 **Target Platform:** Uplimit
 **Total Time:** 5-6 hours (across 8 modules)
 
@@ -19,8 +19,9 @@ Analyze how elite athletes build strategic brands and assess emerging sports inv
 - WLO 4.3: Analyze emerging sports opportunities (women's sports, pickleball, padel)
 - WLO 4.4: Design athlete brand strategies that create generational wealth
 
-**Executive Guest:**
+**Executive Guests:**
 - **Matt Rubinoff (Fairgrounds Co-Founder)** - Emerging sports, brand building, scaling from zero (~38 min interview)
+- **Niki DaSilva & Tim McLaughlin (Golf Canada CPO & CMO)** - NSO marketing, athlete brands (Brooke Henderson), women's sports growth (~45 min interview)
 
 **Case Study:** Serena Williams: Brand Strategy Analysis (course-developed)
 

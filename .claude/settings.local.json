@@ -75,7 +75,9 @@
       "Bash(grep:*)",
       "WebFetch(domain:hbsp.harvard.edu)",
       "Bash(do if grep -q \"Learning Objective\\\\|learning objective\" \"$file\")",
-      "Bash(do if grep -q \"Learning Objective\" \"$file\")"
+      "Bash(do if grep -q \"Learning Objective\" \"$file\")",
+      "Bash(git stash:*)",
+      "Bash(do echo \"=== WEEK $week ===\" grep -A30 \"File Response\\\\|AI.*[Gg]rading\\\\|[Cc]riteria\\\\|Rubric\" modules/week$week/storyboards/modules/module-7-wrap-up.md)"
     ],
     "deny": [],
     "ask": [],

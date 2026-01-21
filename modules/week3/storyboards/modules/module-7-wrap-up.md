@@ -117,6 +117,80 @@ Filename suggestion: LastName_M3_Sponsorship.pdf
 
 **Template:** No template required
 
+**Rubric Configuration:**
+
+---
+
+**CRITERION 1: Sponsor Portfolio**
+
+**Points:** 8
+
+**Description:**
+Student identifies appropriate sponsor categories and realistic brand targets with clear strategic fit to the chosen market.
+
+**Does not meet expectations:** 0 points
+Sponsor categories missing or inappropriate for CFL scale. Brand targets unrealistic (e.g., Fortune 100 companies for expansion franchise) or missing entirely. No strategic fit between sponsors and market characteristics.
+
+**Partially meets expectations:** 4 points
+Identifies relevant sponsor categories but selection lacks strategic rationale. Some brand targets appropriate, others unrealistic. Limited connection between sponsor portfolio and specific market from Milestone 1.
+
+**Fully meets expectations:** 8 points
+Comprehensive sponsor portfolio with appropriate categories (naming rights, jersey, category partners). Brand targets realistic for CFL expansion franchise. Clear strategic fit between sponsors and market characteristics. Shows understanding of what sponsors want from CFL partnership.
+
+---
+
+**CRITERION 2: Financial Analysis**
+
+**Points:** 8
+
+**Description:**
+Student applies CPM calculations and sponsorship valuation frameworks to project realistic revenue for the expansion franchise.
+
+**Does not meet expectations:** 0 points
+CPM calculations missing or incorrect. Revenue projections arbitrary or missing assumptions. No connection between sponsorship value and market reach/demographics.
+
+**Partially meets expectations:** 4 points
+CPM calculations attempted but may contain errors. Revenue projections present but assumptions unclear. Some understanding of sponsorship valuation but analysis incomplete.
+
+**Fully meets expectations:** 8 points
+Correct CPM calculations using Week 3 framework. Reasonable revenue projections with clear assumptions. Shows how market size and demographics affect sponsorship value. Projections realistic for CFL expansion franchise.
+
+---
+
+**CRITERION 3: Activation Design**
+
+**Points:** 5
+
+**Description:**
+Student designs a creative, feasible sponsorship activation concept that goes beyond signage to create value for sponsors and fans.
+
+**Does not meet expectations:** 0 points
+No activation concept or only generic ideas ("logo on jersey"). Doesn't demonstrate understanding of how sponsors activate partnerships beyond signage.
+
+**Partially meets expectations:** 2 points
+Activation concept present but lacks creativity or feasibility. May describe interesting ideas without explaining execution. Limited connection to sponsor objectives or fan experience.
+
+**Fully meets expectations:** 5 points
+Creative, feasible activation concept that goes beyond signage. Shows understanding of how sponsors create value through partnerships. Activation tied to specific sponsor category and fan experience. Demonstrates Week 3 framework application.
+
+---
+
+**CRITERION 4: Ethical Framework**
+
+**Points:** 4
+
+**Description:**
+Student demonstrates ethical reasoning by thoughtfully addressing at least one complex sponsorship decision with stakeholder considerations.
+
+**Does not meet expectations:** 0 points
+No ethical consideration or only superficial mention ("we will be ethical"). Doesn't identify any complex sponsorship decisions or stakeholder concerns.
+
+**Partially meets expectations:** 2 points
+Identifies an ethical consideration but analysis shallow. May mention a concern without exploring stakeholder impacts or how to navigate the tension.
+
+**Fully meets expectations:** 4 points
+Thoughtful consideration of at least one complex sponsorship decision (e.g., betting partner selection, category conflicts, community concerns). Explores stakeholder impacts and demonstrates ethical reasoning. Shows understanding of Week 3 ethical frameworks.
+
 ---
 
 ## Element 5: Infobox - What's Next

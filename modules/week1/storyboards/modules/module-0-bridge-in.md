@@ -342,11 +342,12 @@ Throughout this course, you'll develop a comprehensive business proposal for a n
 **The Project:**
 You'll select a Canadian city and build a complete expansion proposal, applying each week's frameworks as you go.
 
-**4 Milestones Across 5 Weeks:**
+**5 Milestones Across 5 Weeks:**
 - **Milestone 1 (Week 1):** Market Selection & Revenue Projections — Choose your city and project 5-year revenue using the five-stream model
-- **Milestone 2 (Week 2):** Media & Fan Engagement Strategy — Design your franchise's media rights approach and fan acquisition plan
-- **Milestone 3 (Weeks 3-4):** Sponsorship & Brand Strategy — Build sponsorship packages and develop your franchise brand identity
-- **Milestone 4 (Week 5):** Final Proposal & Presentation — Integrate everything into a board-ready expansion pitch
+- **Milestone 2 (Week 2):** Media & Content Strategy — Design your franchise's media rights approach and fan engagement plan
+- **Milestone 3 (Week 3):** Sponsorship & Betting Strategy — Build sponsorship packages and betting integration plan
+- **Milestone 4 (Week 4):** Brand Strategy & Launch — Develop your franchise brand identity and launch campaign
+- **Milestone 5 (Week 5):** Final Proposal — Integrate everything into a board-ready expansion pitch
 
 **This Week's Focus:**
 By the end of Week 1, you'll submit Milestone 1: a 2-3 page Market Analysis Brief selecting your expansion city and projecting its revenue potential.

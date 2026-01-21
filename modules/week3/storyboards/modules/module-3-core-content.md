@@ -1,5 +1,8 @@
 # MODULE 3: Core Content - Sponsorship Framework (⭐ INTERACTIVE FOCUS)
-**Version:** 2.0.0 | **Last Updated:** 2026-01-15
+**Version:** 2.1.0 | **Last Updated:** 2026-01-21
+
+### Version 2.1.0 Changes
+- **ADDED:** Element 5A - Kraft Hockeyville video (real-world activation case study)
 
 ### Version 2.0.0 Changes
 - **RENAMED:** From module-2-sponsorship-framework.md to module-3-core-content.md
@@ -23,6 +26,7 @@
 | 4 | **▬ Text** ◐ Recommended | Activation vs. Rights Fees (150 words) | Type directly | Explains 1:2-3 activation multiplier |
 | 4A | **▬ Text** ⬤ Required | Widget Introduction - Activation Budget Builder | Type directly | Structured intro |
 | 5 | **Interactive Widget** ⬤ Required | Activation Budget Builder | Embed iframe | Design activation mix across channels |
+| 5A | **▶ Video** ◐ Recommended | Kraft Hockeyville: Activation in Action (~4 min) | Upload MP4 + captions | Real-world activation case study |
 | 6 | **Infobox (Insight)** ◐ Recommended | Industry Standard: $2-3 Activation per $1 Rights | Type directly | Yellow variant, memorable rule |
 | 6A | **📝 Practice Quiz** ⬤ Required | Sponsorship Fundamentals Check (4 questions) | Configure in Uplift | Tests CPM, activation concepts |
 | 7 | **▬ Text** ◐ Recommended | ROI Measurement Framework (150 words) | Type directly | Reach → Engagement → Conversion funnel |
@@ -361,6 +365,50 @@ You'll apply the activation multiplier to calculate your total investment, then 
   loading="lazy">
 </iframe>
 ```
+
+---
+
+## Element 5A: Video - Kraft Hockeyville: Activation in Action `[v2.1.0]`
+
+**Video Specifications:**
+- **Length:** ~4 minutes
+- **Topic:** "Kraft Hockeyville: How a Sponsorship Activation Became a 20-Year Evergreen Program"
+- **Speaker:** Matt Chicken (former Kraft marketing, NHLPA, Capital C agency)
+- **File:** `Kraft Hockeyville-caption.srt` (captions ready)
+- **Accessibility:** Captions required, transcript provided
+
+**Copy this introduction text directly into Uplimit:**
+
+```markdown
+## Real-World Activation: Kraft Hockeyville
+
+You just designed an activation budget. Now see how theory becomes practice.
+
+In this video, Matt Chicken shares the origin story of **Kraft Hockeyville**—Canada's longest-running sports promotion (20+ years). Matt's unique career path (Kraft Foods → NHLPA → marketing agency) gave him the relationships and insights to create a program that:
+
+- **Drove retail sales:** Grocery stores became voting headquarters with massive Kraft product displays
+- **Built brand affinity:** Communities rallied around hockey, connecting Kraft to family, food, and fun
+- **Created evergreen value:** The winning town is still announced by NHL Commissioner Gary Bettman during Stanley Cup Finals
+
+**Watch for:**
+- How the brief ("do something big, evergreen, that sells product") shaped the creative solution
+- The role of the NHL lockout in creating opportunity
+- Why "win-win-win" (fans, brand, sport) became the success formula
+- How retail activation drove measurable sales, not just awareness
+
+This is what great sponsorship activation looks like—community engagement driving commercial results.
+```
+
+**Video Context:**
+The speaker shares his journey from Kraft Foods (working on sports promotions) to the NHLPA (learning athlete relationships) to leading the agency that created Kraft Hockeyville. Key insights:
+
+1. **The Brief:** "Do something big, evergreen, that sells Kraft product" - combining reality TV trends with hockey passion
+2. **The Timing:** NHL lockout created opportunity to bring goodwill back to hockey communities
+3. **The Concept:** Communities compete to show hockey passion; winner gets NHL exhibition game + $100K-$250K rink upgrade
+4. **The Retail Tie-In:** Grocery stores became voting HQ, creating massive in-store displays filled with Kraft products
+5. **The Results:** 20-year program, winner announced during Stanley Cup Finals, drives sales + affinity + community involvement
+
+**Learning Connection:** This video illustrates WLO 3.4 (Design sponsorship activations that deliver measurable value) with a real case showing how activation channels (retail, community events, broadcast integration) combine to create sustained commercial success.
 
 ---
 

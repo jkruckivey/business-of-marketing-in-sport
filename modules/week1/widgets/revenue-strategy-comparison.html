@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Strategy Comparison</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-success: #16a34a;
+            --color-warning: #ca8a04;
+            --color-info: #0284c7;
+            --color-green-bg: #f0fdf4;
+            --color-sand: #f0ede0;
+            --color-turquoise: #bfe5e7;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --border-radius: 8px;
+        }
+
+        *:focus { outline: 2px solid #3182ce; outline-offset: 2px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: white;
+            color: var(--color-neutral-900);
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--color-neutral-500);
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+        }
+
+        .key-insight {
+            background: var(--color-neutral-100);
+            border-left: 4px solid var(--color-neutral-700);
+            padding: 1rem 1.25rem;
+            margin-bottom: 2rem;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        }
+
+        .key-insight strong {
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        /* Strategy Cards */
+        .strategies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .strategy-card {
+            background: white;
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .strategy-card:hover {
+            border-color: var(--color-neutral-400);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .strategy-card.selected {
+            border-color: var(--color-neutral-800);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .strategy-card.winner {
+            border-color: var(--color-success);
+        }
+
+        .strategy-header {
+            padding: 1.25rem;
+            background: var(--color-neutral-800);
+            color: white;
+        }
+
+        .strategy-card.winner .strategy-header {
+            background: var(--color-success);
+        }
+
+        .strategy-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .strategy-description {
+            font-size: 0.85rem;
+            opacity: 0.85;
+        }
+
+        .strategy-body {
+            padding: 1.25rem;
+        }
+
+        .allocation-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--color-neutral-500);
+            margin-bottom: 0.5rem;
+        }
+
+        .allocation-bar {
+            display: flex;
+            height: 24px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .allocation-segment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: white;
+            min-width: 20px;
+        }
+
+        .seg-media { background: #404040; }
+        .seg-ticketing { background: #525252; }
+        .seg-sponsorship { background: #737373; }
+        .seg-merch { background: #a3a3a3; }
+        .seg-betting { background: #d4d4d4; color: #404040; }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+
+        .result-item {
+            background: var(--color-neutral-50);
+            padding: 0.75rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .result-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--color-neutral-500);
+            margin-bottom: 0.25rem;
+        }
+
+        .result-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .result-value.highlight {
+            color: var(--color-success);
+        }
+
+        .result-value.warning {
+            color: var(--color-warning);
+        }
+
+        .winner-badge {
+            display: inline-block;
+            background: var(--color-success);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        /* Comparison Table */
+        .comparison-section {
+            margin-top: 2rem;
+        }
+
+        .comparison-section h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-neutral-200);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 0.875rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        .comparison-table th {
+            background: var(--color-neutral-100);
+            font-weight: 600;
+            color: var(--color-neutral-700);
+        }
+
+        .comparison-table th:first-child {
+            width: 180px;
+        }
+
+        .comparison-table tbody tr:hover {
+            background: var(--color-neutral-50);
+        }
+
+        .cap-note {
+            font-size: 0.75rem;
+            color: var(--color-warning);
+            font-style: italic;
+        }
+
+        /* Insights Section */
+        .insights-section {
+            margin-top: 2rem;
+            background: var(--color-sand);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+        }
+
+        .insights-section h2 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .insight-list {
+            list-style: none;
+        }
+
+        .insight-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--color-neutral-700);
+        }
+
+        .insight-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--color-neutral-500);
+        }
+
+        .insight-list li strong {
+            color: var(--color-neutral-900);
+        }
+
+        /* Legend */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--color-neutral-200);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--color-neutral-600);
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            .strategies-grid { grid-template-columns: 1fr; }
+            .comparison-table { font-size: 0.8rem; }
+            .comparison-table th, .comparison-table td { padding: 0.625rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>5-Year Revenue Strategy Comparison</h1>
+        <p class="subtitle">Compare four different resource allocation strategies and see how they perform over a 5-year period. Which approach maximizes franchise value?</p>
+
+        <div class="key-insight">
+            <strong>The Question</strong>
+            You're the CFO of an NHL expansion franchise. You have limited resources to invest across five revenue streams. Should you focus heavily on one stream, or diversify across all five?
+        </div>
+
+        <!-- Strategy Cards -->
+        <div class="strategies-grid">
+            <!-- Balanced Strategy -->
+            <div class="strategy-card winner" tabindex="0" role="button" aria-label="Balanced Portfolio strategy - winner">
+                <div class="strategy-header">
+                    <div class="strategy-name">Balanced Portfolio <span class="winner-badge">Best ROI</span></div>
+                    <div class="strategy-description">Equal investment across all streams</div>
+                </div>
+                <div class="strategy-body">
+                    <div class="allocation-label">Resource Allocation</div>
+                    <div class="allocation-bar">
+                        <div class="allocation-segment seg-media" style="flex: 20;" title="Media 20%">20</div>
+                        <div class="allocation-segment seg-ticketing" style="flex: 20;" title="Ticketing 20%">20</div>
+                        <div class="allocation-segment seg-sponsorship" style="flex: 20;" title="Sponsorship 20%">20</div>
+                        <div class="allocation-segment seg-merch" style="flex: 20;" title="Merch 20%">20</div>
+                        <div class="allocation-segment seg-betting" style="flex: 20;" title="Betting 20%">20</div>
+                    </div>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <div class="result-label">Year 5 Revenue</div>
+                            <div class="result-value highlight">$156M</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">5-Year Growth</div>
+                            <div class="result-value highlight">+56%</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Risk Profile</div>
+                            <div class="result-value">Moderate</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Streams Capped</div>
+                            <div class="result-value">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media-Heavy Strategy -->
+            <div class="strategy-card" tabindex="0" role="button" aria-label="Media-Heavy strategy">
+                <div class="strategy-header">
+                    <div class="strategy-name">Media-Heavy</div>
+                    <div class="strategy-description">Bet on broadcasting rights growth</div>
+                </div>
+                <div class="strategy-body">
+                    <div class="allocation-label">Resource Allocation</div>
+                    <div class="allocation-bar">
+                        <div class="allocation-segment seg-media" style="flex: 50;" title="Media 50%">50</div>
+                        <div class="allocation-segment seg-ticketing" style="flex: 15;" title="Ticketing 15%">15</div>
+                        <div class="allocation-segment seg-sponsorship" style="flex: 15;" title="Sponsorship 15%">15</div>
+                        <div class="allocation-segment seg-merch" style="flex: 10;" title="Merch 10%">10</div>
+                        <div class="allocation-segment seg-betting" style="flex: 10;" title="Betting 10%">10</div>
+                    </div>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <div class="result-label">Year 5 Revenue</div>
+                            <div class="result-value">$148M</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">5-Year Growth</div>
+                            <div class="result-value">+48%</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Risk Profile</div>
+                            <div class="result-value">Low</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Streams Capped</div>
+                            <div class="result-value warning">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ticketing-Heavy Strategy -->
+            <div class="strategy-card" tabindex="0" role="button" aria-label="Ticketing-Heavy strategy">
+                <div class="strategy-header">
+                    <div class="strategy-name">Ticketing-Heavy</div>
+                    <div class="strategy-description">Maximize game-day experience</div>
+                </div>
+                <div class="strategy-body">
+                    <div class="allocation-label">Resource Allocation</div>
+                    <div class="allocation-bar">
+                        <div class="allocation-segment seg-media" style="flex: 10;" title="Media 10%">10</div>
+                        <div class="allocation-segment seg-ticketing" style="flex: 50;" title="Ticketing 50%">50</div>
+                        <div class="allocation-segment seg-sponsorship" style="flex: 15;" title="Sponsorship 15%">15</div>
+                        <div class="allocation-segment seg-merch" style="flex: 15;" title="Merch 15%">15</div>
+                        <div class="allocation-segment seg-betting" style="flex: 10;" title="Betting 10%">10</div>
+                    </div>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <div class="result-label">Year 5 Revenue</div>
+                            <div class="result-value">$132M</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">5-Year Growth</div>
+                            <div class="result-value">+32%</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Risk Profile</div>
+                            <div class="result-value">Low</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Streams Capped</div>
+                            <div class="result-value warning">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Betting-Heavy Strategy -->
+            <div class="strategy-card" tabindex="0" role="button" aria-label="Betting-Heavy strategy">
+                <div class="strategy-header">
+                    <div class="strategy-name">Betting-Heavy</div>
+                    <div class="strategy-description">Chase the fastest-growing stream</div>
+                </div>
+                <div class="strategy-body">
+                    <div class="allocation-label">Resource Allocation</div>
+                    <div class="allocation-bar">
+                        <div class="allocation-segment seg-media" style="flex: 10;" title="Media 10%">10</div>
+                        <div class="allocation-segment seg-ticketing" style="flex: 10;" title="Ticketing 10%">10</div>
+                        <div class="allocation-segment seg-sponsorship" style="flex: 15;" title="Sponsorship 15%">15</div>
+                        <div class="allocation-segment seg-merch" style="flex: 15;" title="Merch 15%">15</div>
+                        <div class="allocation-segment seg-betting" style="flex: 50;" title="Betting 50%">50</div>
+                    </div>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <div class="result-label">Year 5 Revenue</div>
+                            <div class="result-value">$143M</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">5-Year Growth</div>
+                            <div class="result-value">+43%</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Risk Profile</div>
+                            <div class="result-value warning">High</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Streams Capped</div>
+                            <div class="result-value">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Legend -->
+        <div class="legend">
+            <div class="legend-item"><div class="legend-color seg-media"></div> Media Rights</div>
+            <div class="legend-item"><div class="legend-color seg-ticketing"></div> Ticketing</div>
+            <div class="legend-item"><div class="legend-color seg-sponsorship"></div> Sponsorship</div>
+            <div class="legend-item"><div class="legend-color seg-merch"></div> Merchandising</div>
+            <div class="legend-item"><div class="legend-color seg-betting"></div> Betting</div>
+        </div>
+
+        <!-- Detailed Comparison -->
+        <div class="comparison-section">
+            <h2>5-Year Revenue by Stream</h2>
+            <table class="comparison-table" role="table" aria-label="Detailed revenue comparison by stream">
+                <thead>
+                    <tr>
+                        <th scope="col">Revenue Stream</th>
+                        <th scope="col">Balanced</th>
+                        <th scope="col">Media-Heavy</th>
+                        <th scope="col">Ticketing-Heavy</th>
+                        <th scope="col">Betting-Heavy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Media Rights</strong><br><span class="cap-note">Cap: $80M (contract)</span></td>
+                        <td>$59M</td>
+                        <td>$80M <span class="cap-note">(capped)</span></td>
+                        <td>$49M</td>
+                        <td>$49M</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ticketing</strong><br><span class="cap-note">Cap: $37M (capacity)</span></td>
+                        <td>$33M</td>
+                        <td>$29M</td>
+                        <td>$37M <span class="cap-note">(capped)</span></td>
+                        <td>$28M</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sponsorship</strong><br><span class="cap-note">No cap</span></td>
+                        <td>$35M</td>
+                        <td>$29M</td>
+                        <td>$29M</td>
+                        <td>$29M</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Merchandising</strong><br><span class="cap-note">No cap</span></td>
+                        <td>$16M</td>
+                        <td>$12M</td>
+                        <td>$14M</td>
+                        <td>$14M</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Betting/Gaming</strong><br><span class="cap-note">No cap (regulatory risk)</span></td>
+                        <td>$13M</td>
+                        <td>$8M</td>
+                        <td>$8M</td>
+                        <td>$23M</td>
+                    </tr>
+                    <tr style="background: var(--color-neutral-100); font-weight: 700;">
+                        <td>TOTAL (Year 5)</td>
+                        <td style="color: var(--color-success);">$156M</td>
+                        <td>$148M</td>
+                        <td>$132M</td>
+                        <td>$143M</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Key Insights -->
+        <div class="insights-section">
+            <h2>What This Reveals</h2>
+            <ul class="insight-list">
+                <li><strong>Diversification wins.</strong> The balanced portfolio outperforms all focused strategies by 5-18% over 5 years.</li>
+                <li><strong>Caps kill concentration.</strong> Ticketing-heavy hits the $37M capacity ceiling by Year 4. Media-heavy hits the $80M contract cap. Growth stops while diversified strategies keep compounding.</li>
+                <li><strong>High growth ≠ best strategy.</strong> Betting grows 35%/year but starts small ($5M). Even at 50% focus, it only reaches $23M—less than media at base growth.</li>
+                <li><strong>Risk matters.</strong> Betting-heavy has highest volatility. One regulatory change could devastate the portfolio.</li>
+                <li><strong>Real sports teams diversify.</strong> This is why leagues invest in media deals, premium seating, sponsorship activation, and betting partnerships simultaneously.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

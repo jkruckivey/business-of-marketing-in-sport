@@ -112,59 +112,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Progress Steps */
-        .progress-steps {
-            display: flex;
-            justify-content: center;
-            gap: 0;
-            margin-bottom: 2rem;
-        }
-
-        .step {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: var(--color-neutral-100);
-            color: var(--color-neutral-500);
-            font-weight: 500;
-            font-size: 0.9rem;
-            border: 1px solid var(--color-neutral-200);
-            transition: all 0.3s;
-        }
-
-        .step:first-child {
-            border-radius: var(--border-radius) 0 0 var(--border-radius);
-        }
-
-        .step:last-child {
-            border-radius: 0 var(--border-radius) var(--border-radius) 0;
-        }
-
-        .step.active {
-            background: var(--color-accent-dark);
-            color: white;
-            border-color: var(--color-accent-dark);
-        }
-
-        .step.completed {
-            background: var(--color-success);
-            color: white;
-            border-color: var(--color-success);
-        }
-
-        .step-number {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            font-weight: 700;
-        }
-
         /* City Cards Grid */
         .cities-section {
             margin-bottom: 2rem;
@@ -496,102 +443,99 @@
             background: var(--color-neutral-200);
         }
 
-        .rationale-section h4 {
-            font-size: 1rem;
+        /* City Details Section */
+        .city-details-section {
+            margin-bottom: 2rem;
+        }
+
+        .city-details-section h4 {
+            font-size: 1.1rem;
             font-weight: 600;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             color: var(--color-neutral-800);
         }
 
-        .rationale-prompt {
-            font-size: 0.9rem;
-            color: var(--color-neutral-600);
-            margin-bottom: 1rem;
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
         }
 
-        .rationale-prompts-list {
-            background: var(--color-accent);
-            border-left: 4px solid var(--color-accent-dark);
+        .detail-item {
+            background: var(--color-neutral-50);
             padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+            border-radius: var(--border-radius-sm);
+            border-left: 3px solid var(--color-accent-dark);
         }
 
-        .rationale-prompts-list strong {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: var(--color-neutral-800);
-        }
-
-        .rationale-prompts-list ul {
-            margin: 0;
-            padding-left: 1.25rem;
-            color: var(--color-neutral-700);
-            font-size: 0.9rem;
-        }
-
-        .rationale-prompts-list li {
+        .detail-item .detail-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--color-neutral-500);
             margin-bottom: 0.25rem;
         }
 
-        .rationale-textarea {
-            width: 100%;
-            min-height: 180px;
-            padding: 1rem;
-            border: 1px solid var(--color-neutral-300);
-            border-radius: var(--border-radius-sm);
-            font-family: inherit;
-            font-size: 1rem;
-            resize: vertical;
-            transition: border-color 0.2s;
-        }
-
-        .rationale-textarea:focus {
-            border-color: var(--color-accent-dark);
-        }
-
-        .rationale-footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 1rem;
-        }
-
-        .word-count {
-            font-size: 0.85rem;
-            color: var(--color-neutral-500);
-        }
-
-        .word-count.warning {
-            color: var(--color-warning);
-        }
-
-        .word-count.success {
-            color: var(--color-success);
-        }
-
-        .export-btn {
-            padding: 0.75rem 2rem;
-            background: var(--color-neutral-800);
-            color: white;
-            border: none;
-            border-radius: var(--border-radius-sm);
-            font-family: inherit;
-            font-size: 1rem;
+        .detail-item .detail-value {
             font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
+            color: var(--color-neutral-800);
+            margin-bottom: 0.25rem;
         }
 
-        .export-btn:hover:not(:disabled) {
-            background: var(--color-neutral-900);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
+        .detail-item .detail-extra {
+            font-size: 0.85rem;
+            color: var(--color-neutral-600);
         }
 
-        .export-btn:disabled {
-            background: var(--color-neutral-300);
-            cursor: not-allowed;
+        .strengths-challenges-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .detail-box {
+            padding: 1.25rem;
+            border-radius: var(--border-radius-sm);
+        }
+
+        .detail-box h5 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .strengths-box {
+            background: var(--color-correct-bg);
+            border: 1px solid var(--color-correct);
+        }
+
+        .strengths-box h5 {
+            color: var(--color-success-dark);
+        }
+
+        .challenges-box {
+            background: var(--color-incorrect-bg);
+            border: 1px solid var(--color-incorrect);
+        }
+
+        .challenges-box h5 {
+            color: var(--color-warning-dark);
+        }
+
+        .detail-box ul {
+            margin: 0;
+            padding-left: 1.25rem;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .strengths-box ul {
+            color: var(--color-success-dark);
+        }
+
+        .challenges-box ul {
+            color: var(--color-warning-dark);
         }
 
         /* Responsive */
@@ -655,22 +599,7 @@
             <p>Select a Canadian market for your CFL expansion franchise. Your choice will shape your entire project - analyze each city's potential carefully.</p>
         </header>
 
-        <!-- Progress Steps -->
-        <div class="progress-steps" role="navigation" aria-label="Project progress">
-            <div class="step active">
-                <span class="step-number">1</span>
-                <span>Select City</span>
-            </div>
-            <div class="step">
-                <span class="step-number">2</span>
-                <span>Write Rationale</span>
-            </div>
-            <div class="step">
-                <span class="step-number">3</span>
-                <span>Export Proposal</span>
-            </div>
-        </div>
-
+        
         <!-- Cities Section -->
         <section class="cities-section" aria-label="Expansion city options">
             <div class="section-header">
@@ -718,27 +647,23 @@
                 <button class="change-selection-btn" onclick="clearSelection()">Change Selection</button>
             </div>
 
-            <div class="rationale-section">
-                <h4>Why This City? Write Your Rationale</h4>
-                <p class="rationale-prompt">Explain why this market represents the best opportunity for CFL expansion. Your rationale will be included in your Milestone 1 submission.</p>
+            <!-- Full City Details for Reference -->
+            <div class="city-details-section" id="city-details-section">
+                <h4>Complete Market Profile</h4>
 
-                <div class="rationale-prompts-list">
-                    <strong>Consider addressing:</strong>
-                    <ul>
-                        <li>What market opportunity does this city offer the CFL?</li>
-                        <li>How will you address the competitive sports landscape?</li>
-                        <li>What stadium/venue strategy will you pursue?</li>
-                        <li>How strong is the corporate sponsorship potential?</li>
-                        <li>What unique marketing challenges will you face?</li>
-                    </ul>
+                <div class="details-grid" id="details-grid">
+                    <!-- Populated by JS -->
                 </div>
 
-                <label for="rationale" class="sr-only">Your rationale (minimum 100 words)</label>
-                <textarea id="rationale" class="rationale-textarea" placeholder="Begin your rationale here. Aim for 200-300 words explaining your strategic thinking..." oninput="updateWordCount()"></textarea>
-
-                <div class="rationale-footer">
-                    <span class="word-count" id="word-count">0 / 200 words (minimum 100)</span>
-                    <button class="export-btn" id="export-btn" onclick="exportProposal()" disabled>Export City Proposal</button>
+                <div class="strengths-challenges-grid">
+                    <div class="detail-box strengths-box">
+                        <h5>Key Strengths</h5>
+                        <ul id="strengths-list"></ul>
+                    </div>
+                    <div class="detail-box challenges-box">
+                        <h5>Key Challenges</h5>
+                        <ul id="challenges-list"></ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -991,7 +916,6 @@
             renderCityCards();
             renderComparisonTable();
             showSelectionPanel();
-            updateProgressSteps();
 
             // Scroll to selection panel
             document.getElementById('selection-panel').scrollIntoView({ behavior: 'smooth' });
@@ -1005,47 +929,66 @@
             document.getElementById('selected-icon').textContent = selectedCity.abbrev;
             document.getElementById('selected-city-name').textContent = selectedCity.name;
             document.getElementById('selected-city-province').textContent = selectedCity.province;
+
+            // Populate detailed city info
+            populateCityDetails();
         }
 
+        // Populate city details
+        function populateCityDetails() {
+            const detailsGrid = document.getElementById('details-grid');
+            detailsGrid.innerHTML = `
+                <div class="detail-item">
+                    <div class="detail-label">Metro Population</div>
+                    <div class="detail-value">${selectedCity.metro}</div>
+                    <div class="detail-extra">City proper: ${selectedCity.population}</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Market Viability</div>
+                    <div class="detail-value">${selectedCity.viability.charAt(0).toUpperCase() + selectedCity.viability.slice(1)}</div>
+                    <div class="detail-extra">${selectedCity.description.split('.')[0]}.</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Stadium Status</div>
+                    <div class="detail-value">${selectedCity.stadiumStatus}</div>
+                    <div class="detail-extra">${selectedCity.stadiumDetails}</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Competitive Landscape</div>
+                    <div class="detail-value">${selectedCity.competition}</div>
+                    <div class="detail-extra">${selectedCity.competitionDetails}</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Corporate Base</div>
+                    <div class="detail-value">${selectedCity.corporateBase}</div>
+                    <div class="detail-extra">${selectedCity.corporateDetails}</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Football Culture</div>
+                    <div class="detail-value">${selectedCity.footballCulture.split(' - ')[0]}</div>
+                    <div class="detail-extra">${selectedCity.footballCulture.includes(' - ') ? selectedCity.footballCulture.split(' - ')[1] : ''}</div>
+                </div>
+            `;
+
+            // Populate strengths
+            const strengthsList = document.getElementById('strengths-list');
+            strengthsList.innerHTML = selectedCity.positives.map(p => `<li>${p}</li>`).join('');
+
+            // Populate challenges
+            const challengesList = document.getElementById('challenges-list');
+            challengesList.innerHTML = selectedCity.challenges.map(c => `<li>${c}</li>`).join('');
+        }
+
+        
         // Clear selection
         function clearSelection() {
             selectedCity = null;
             document.getElementById('selection-panel').classList.remove('visible');
-            document.getElementById('rationale').value = '';
-            updateWordCount();
             renderCityCards();
             renderComparisonTable();
-            updateProgressSteps();
         }
 
-        // Update progress steps
-        function updateProgressSteps() {
-            const steps = document.querySelectorAll('.step');
-            const wordCount = getWordCount();
-
-            // Step 1: City selection
-            if (selectedCity) {
-                steps[0].classList.remove('active');
-                steps[0].classList.add('completed');
-                steps[1].classList.add('active');
-            } else {
-                steps[0].classList.add('active');
-                steps[0].classList.remove('completed');
-                steps[1].classList.remove('active');
-            }
-
-            // Step 2: Rationale
-            if (wordCount >= 100) {
-                steps[1].classList.remove('active');
-                steps[1].classList.add('completed');
-                steps[2].classList.add('active');
-            } else {
-                steps[1].classList.remove('completed');
-                steps[2].classList.remove('active');
-                if (selectedCity) steps[1].classList.add('active');
-            }
-        }
-
+        
         // View toggle
         function setView(view) {
             currentView = view;
@@ -1067,97 +1010,6 @@
                 grid.style.display = 'none';
                 table.classList.add('visible');
             }
-        }
-
-        // Word count
-        function getWordCount() {
-            const text = document.getElementById('rationale').value;
-            return text.trim().split(/\s+/).filter(w => w.length > 0).length;
-        }
-
-        function updateWordCount() {
-            const words = getWordCount();
-            const counter = document.getElementById('word-count');
-            const exportBtn = document.getElementById('export-btn');
-
-            counter.textContent = `${words} / 200 words (minimum 100)`;
-
-            if (words >= 100) {
-                counter.className = 'word-count success';
-                exportBtn.disabled = false;
-            } else if (words >= 50) {
-                counter.className = 'word-count warning';
-                exportBtn.disabled = true;
-            } else {
-                counter.className = 'word-count';
-                exportBtn.disabled = true;
-            }
-
-            updateProgressSteps();
-        }
-
-        // Export proposal
-        function exportProposal() {
-            if (!selectedCity) return;
-
-            const rationale = document.getElementById('rationale').value;
-            const words = getWordCount();
-            const date = new Date().toLocaleDateString('en-CA');
-
-            const content = `
-CFL EXPANSION PROJECT - MILESTONE 1
-City Selection Proposal
-=====================================
-
-SELECTED CITY: ${selectedCity.name}, ${selectedCity.province}
-Date: ${date}
-
-MARKET PROFILE
---------------
-Population (Metro): ${selectedCity.metro}
-Stadium Status: ${selectedCity.stadiumStatus}
-  - ${selectedCity.stadiumDetails}
-
-Competitive Landscape: ${selectedCity.competition}
-  - ${selectedCity.competitionDetails}
-
-Corporate Base: ${selectedCity.corporateBase}
-  - ${selectedCity.corporateDetails}
-
-Football Culture: ${selectedCity.footballCulture}
-
-Market Viability: ${selectedCity.viability.toUpperCase()}
-
-KEY STRENGTHS
--------------
-${selectedCity.positives.map(p => `• ${p}`).join('\n')}
-
-KEY CHALLENGES
---------------
-${selectedCity.challenges.map(c => `• ${c}`).join('\n')}
-
-SELECTION RATIONALE (${words} words)
-------------------------------------
-${rationale}
-
-=====================================
-Generated by CFL Expansion City Selector
-Business of Sports Marketing - Anchor Project
-            `.trim();
-
-            // Download
-            const blob = new Blob([content], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `CFL-Expansion-${selectedCity.name.replace(/\s+/g, '-')}-Proposal.txt`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-
-            // Success feedback
-            alert(`Proposal exported successfully!\n\nCity: ${selectedCity.name}\nRationale: ${words} words\n\nInclude this file with your Milestone 1 submission.`);
         }
 
         // Initialize on load

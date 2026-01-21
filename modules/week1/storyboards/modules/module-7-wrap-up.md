@@ -1,5 +1,8 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 1
-**Version:** 2.2.0 | **Last Updated:** 2026-01-14
+**Version:** 2.3.0 | **Last Updated:** 2026-01-21
+
+### Version 2.3.0 Changes
+- **MODIFIED:** Element 2A - CFL City Selector simplified to reference tool (removed rationale textarea and export, students submit via LMS)
 
 ### Version 2.2.0 Changes
 - **ADDED:** Element 2A - CFL City Selector widget (was built but never embedded)
@@ -55,19 +58,34 @@ Welcome to your first Anchor Project milestone! Throughout this course, you'll d
 
 **Why This Matters:** Before any professional sports league expands, they conduct rigorous market analysis. You're doing the same work that real league executives do when evaluating expansion opportunities.
 
-**Apply Week 1 Frameworks:**
-- Use the 5-stream revenue model to project comprehensive revenue
-- Consider how revenue sharing affects your franchise's economics
-- Think about ecosystem effects—how do investments in one stream cascade to others?
+### Step 1: Select Your City
 
-**Suggested Cities:** Halifax, Quebec City, Saskatoon, London ON, Moncton—or propose your own with justification!
+Use the City Selector tool below to explore seven potential expansion markets. You can view cities as cards or compare them side-by-side in a table. When you select a city, you'll see the complete market profile including:
+
+- Population and demographics
+- Stadium status and venue options
+- Competitive sports landscape
+- Corporate sponsorship base
+- Football culture and fan potential
+- Key strengths and challenges
+
+Use this information to write the "City Selection & Justification" section of your Market Analysis Brief.
+
+### Step 2: Apply Week 1 Frameworks
+
+After selecting your city, you'll need to:
+- Project 5-year revenue across all 5 streams (media, ticketing, sponsorship, merchandise, betting)
+- Consider how CFL revenue sharing affects your franchise economics
+- Analyze what competes for entertainment dollars in your market
+
+Your complete brief is submitted as a file upload after the City Selector.
 ```
 
 ---
 
-## Element 2A: CFL City Selector Widget `[v2.2.0]`
+## Element 2A: CFL City Selector Widget `[v2.3.0]`
 
-**Widget Purpose:** Interactive tool for comparing Canadian expansion city options using market data, demographics, and sports landscape factors.
+**Widget Purpose:** Reference tool for exploring and comparing Canadian expansion city options. Students use this data to write their Market Analysis Brief (submitted separately in the LMS).
 
 **Embed Code:**
 ```html
@@ -84,11 +102,21 @@ Welcome to your first Anchor Project milestone! Throughout this course, you'll d
 ```
 
 **Widget Features:**
-- Compare 5+ Canadian cities on key expansion criteria
-- Population, demographics, corporate base data
-- Existing sports landscape analysis
-- Stadium options and football culture indicators
-- Export comparison data for milestone submission
+- Compare 7 Canadian cities (Halifax, Quebec City, Saskatoon, London, Moncton, Victoria, Kitchener-Waterloo)
+- Card view or side-by-side comparison table
+- Select a city to see complete market profile:
+  - Metro population & demographics
+  - Stadium status & options
+  - Competitive sports landscape
+  - Corporate base strength
+  - Football culture assessment
+  - Key strengths and challenges
+
+**How Students Use It:**
+1. Explore cities using cards or comparison table
+2. Select a city to view full market profile
+3. Use the displayed data to write their 1-page "City Selection & Justification" section
+4. Submit completed Market Analysis Brief via file upload (Element 4)
 
 ---
 

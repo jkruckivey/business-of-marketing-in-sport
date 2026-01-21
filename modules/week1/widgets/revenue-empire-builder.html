@@ -303,6 +303,47 @@
             font-style: italic;
         }
 
+        .cap-badge {
+            display: inline-block;
+            background: var(--color-warning);
+            color: var(--color-neutral-800);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-left: 0.5rem;
+        }
+
+        .stream-projected.at-cap {
+            color: var(--color-warning);
+        }
+
+        .capacity-alert {
+            background: linear-gradient(90deg, var(--color-warning), #fbbf24);
+            color: var(--color-neutral-900);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: none;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .capacity-alert.visible {
+            display: flex;
+        }
+
+        .capacity-alert-icon {
+            font-size: 1.1rem;
+        }
+
+        .capacity-alert strong {
+            font-weight: 700;
+        }
+
         /* Stream Cards */
         .streams-section h3 {
             font-size: 1rem;
@@ -755,6 +796,10 @@
                     <div class="focus-warning" id="focus-warning" style="display: none;">
                         Total focus should equal 100% for optimal resource allocation
                     </div>
+                    <div class="capacity-alert" id="capacity-alert">
+                        <span class="capacity-alert-icon">⚠️</span>
+                        <span id="capacity-alert-text">Ticketing approaching capacity ceiling</span>
+                    </div>
                 </div>
 
                 <div class="action-row">
@@ -992,8 +1037,9 @@
                             <input type="range" class="slider" id="slider-${stream.id}"
                                    min="0" max="100" step="5" value="${stream.focus}"
                                    oninput="updateFocus('${stream.id}', this.value)"
-                                   aria-label="Set focus for ${stream.name}">
-                            <div class="focus-display" id="focus-${stream.id}">${stream.focus}%</div>
+                                   aria-label="Set focus for ${stream.name}"
+                                   title="0% = minimal growth (0.5x), 50% = base growth (1x), 100% = maximum growth (1.5x)">
+                            <div class="focus-display" id="focus-${stream.id}" title="Percentage of resources allocated to ${stream.name}">${stream.focus}%</div>
                         </div>
                         <div class="stream-projected" id="projected-${stream.id}">→ ${formatShortCurrency(stream.currentValue * (1 + stream.baseGrowth))}</div>
                     </div>
@@ -1026,6 +1072,7 @@
             // Calculate projected revenue for each stream
             let projectedTotal = 0;
             let weightedRisk = 0;
+            let capacityWarnings = [];
 
             gameState.streams.forEach(stream => {
                 // Base growth + focus amplification
@@ -1068,7 +1115,31 @@
 
                 // Calculate weighted risk
                 weightedRisk += stream.riskFactor * (stream.focus / 100);
+
+                // Track capacity warnings
+                if (stream.maxValue) {
+                    const capacityUsed = stream.currentValue / stream.maxValue;
+                    const projectedCapacity = projectedValue / stream.maxValue;
+                    if (projectedCapacity >= 0.95) {
+                        capacityWarnings.push({
+                            stream: stream.name,
+                            status: atCap ? 'at ceiling' : 'near ceiling (' + Math.round(projectedCapacity * 100) + '%)',
+                            atCap: atCap
+                        });
+                    }
+                }
             });
+
+            // Show capacity alert if any streams approaching/at cap
+            const capacityAlert = document.getElementById('capacity-alert');
+            const capacityAlertText = document.getElementById('capacity-alert-text');
+            if (capacityWarnings.length > 0) {
+                const warnings = capacityWarnings.map(w => `<strong>${w.stream}</strong> ${w.status}`).join(', ');
+                capacityAlertText.innerHTML = warnings + ' — growth limited by physical/contractual constraints';
+                capacityAlert.classList.add('visible');
+            } else {
+                capacityAlert.classList.remove('visible');
+            }
 
             // Update projection summary
             const growthPercent = ((projectedTotal - gameState.currentRevenue) / gameState.currentRevenue * 100).toFixed(0);

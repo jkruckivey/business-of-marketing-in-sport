@@ -238,7 +238,7 @@
             flex-direction: column;
             justify-content: center;
             transition: all 0.3s;
-            cursor: help;
+            cursor: default;
         }
 
         .seating-tier:hover {
@@ -405,6 +405,16 @@
         <h1>Stadium Revenue Optimizer</h1>
         <p class="subtitle">Design the optimal seating mix to maximize revenue while maintaining fan accessibility</p>
 
+        <div class="assumptions-box" style="background: var(--color-sand); border: 1px solid var(--color-neutral-300); border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; font-size: 0.9rem;">
+            <strong style="display: block; margin-bottom: 0.5rem;">Model Assumptions</strong>
+            <ul style="margin-left: 1.25rem; color: var(--color-neutral-600); line-height: 1.6;">
+                <li><strong>Market context:</strong> Competitive market with strong demand (playoff-caliber team in major metro)</li>
+                <li><strong>Pricing:</strong> Suite $200K/season, Club $10K/season, GA $75/game—varies significantly by market</li>
+                <li><strong>Occupancy:</strong> Assumes 100% sell-through at all tiers (real-world fill rates vary 70-95%)</li>
+                <li><strong>Simplified model:</strong> Does not account for secondary revenue (F&B, parking), demand elasticity, or market saturation</li>
+            </ul>
+        </div>
+
         <div class="content-grid">
             <!-- Controls Section -->
             <div class="card">
@@ -559,7 +569,7 @@
                     <tbody id="comparison-tbody"></tbody>
                 </table>
 
-                <button class="btn" onclick="exportAnalysis()" aria-label="Download revenue analysis">Download Analysis</button>
+                <button class="btn" onclick="exportAnalysis()" aria-label="Download revenue analysis as CSV">Download Analysis (CSV)</button>
             </div>
         </div>
     </div>
@@ -670,43 +680,75 @@
 
         function generateInsights(totalRevenue, premiumPct, accessibilityScore, suitesRevenue, clubRevenue, gaRevenue) {
             const insights = [];
+            const risks = [];
 
             // Revenue insights
             if (totalRevenue > 100000000) {
-                insights.push('Excellent revenue optimization! Your configuration generates over $100M annually.');
+                insights.push('Strong revenue potential at $100M+, but this assumes a competitive team with high demand in a major market.');
             } else if (totalRevenue > 80000000) {
-                insights.push('Strong revenue performance. Consider increasing premium seating for higher revenue.');
+                insights.push('Solid revenue configuration. Consider market demand before increasing premium allocation.');
             } else {
-                insights.push('Revenue can be improved. Increase luxury suites and club seats to maximize revenue per seat.');
+                insights.push('Conservative revenue model. May be appropriate for smaller markets or rebuilding teams.');
             }
 
-            // Premium seating insights
+            // Premium seating insights with clarified assumptions
             const premiumRevenueShare = ((suitesRevenue + clubRevenue) / totalRevenue) * 100;
             if (premiumRevenueShare > 50) {
-                insights.push(`Premium seating generates ${premiumRevenueShare.toFixed(0)}% of total revenue despite being only ${premiumPct.toFixed(0)}% of capacity. This is the "premium paradox" in action.`);
+                insights.push(`Premium seating generates ${premiumRevenueShare.toFixed(0)}% of revenue from ${premiumPct.toFixed(0)}% of capacity—but only if demand exists. This "premium paradox" works in strong markets; weaker markets may struggle to fill premium inventory.`);
+            }
+
+            // RISK FLAGS - Accessibility and sustainability concerns
+            if (accessibilityScore < 60) {
+                risks.push(`⚠️ RISK: Only ${accessibilityScore}% general admission creates sustainability concerns. Premium-heavy models require consistent winning and corporate demand.`);
+            }
+
+            if (accessibilityScore < 55) {
+                risks.push(`🚨 HIGH RISK: ${accessibilityScore}% GA severely limits fan base development. Few teams successfully sustain 45%+ premium configurations long-term.`);
+            }
+
+            if (premiumPct > 35) {
+                risks.push(`⚠️ DEMAND RISK: ${premiumPct.toFixed(0)}% premium allocation requires exceptional market conditions. Even top-tier teams rarely exceed 30% premium.`);
+            }
+
+            // Check if suites percentage is extreme
+            const suitesPct = parseInt(document.getElementById('suites-slider').value);
+            if (suitesPct > 10) {
+                risks.push(`⚠️ SUITE RISK: ${suitesPct}% luxury suites (${Math.round(TOTAL_CAPACITY * suitesPct / 100)} seats) may exceed corporate demand. Most arenas cap suites at 5-8%.`);
             }
 
             // Accessibility insights
             if (accessibilityScore > 75) {
-                insights.push('High accessibility score ensures broad fan access. Great for fan loyalty and community support.');
-            } else if (accessibilityScore < 60) {
-                insights.push('Low accessibility score may limit fan access and reduce community support. Consider balancing revenue with accessibility.');
+                insights.push('High accessibility (75%+ GA) builds broad fan base and community support, though it may leave premium revenue opportunity untapped.');
+            } else if (accessibilityScore >= 60 && accessibilityScore <= 75) {
+                insights.push('Balanced accessibility allows revenue optimization while maintaining fan access. This is the typical range for successful franchises.');
             }
 
             // Comparison insights
             if (suitesRevenue > clubRevenue + gaRevenue) {
-                insights.push('Luxury suites alone generate more revenue than all other seating combined. This shows the power of high-margin premium inventory.');
+                insights.push('Suites generate more than all other seating combined—a high-risk, high-reward model dependent on corporate demand.');
             }
 
             // Strategic insights
-            if (premiumPct > 25) {
-                insights.push('Heavy premium focus maximizes revenue but may create perception issues around affordability and fan experience.');
+            if (premiumPct > 25 && premiumPct <= 35) {
+                insights.push('Premium focus (25-35%) is aggressive but achievable in strong markets. Monitor fill rates and adjust pricing if demand softens.');
             } else if (premiumPct < 15) {
-                insights.push('Conservative premium allocation leaves revenue on the table. Most teams allocate 20-30% to premium seating.');
+                insights.push('Conservative premium allocation (under 15%) may be appropriate for smaller markets or teams prioritizing fan access over revenue maximization.');
             }
 
             const insightsList = document.getElementById('insights-list');
             insightsList.innerHTML = '';
+
+            // Show risks first (if any) with distinct styling
+            risks.forEach(risk => {
+                const li = document.createElement('li');
+                li.className = 'insight-item risk-item';
+                li.style.color = '#b91c1c';
+                li.style.fontWeight = '600';
+                li.textContent = risk;
+                insightsList.appendChild(li);
+            });
+
+            // Then show insights
             insights.forEach(insight => {
                 const li = document.createElement('li');
                 li.className = 'insight-item';
@@ -729,55 +771,53 @@
             const gaRevenue = gaSeats * PRICING.ga * GAMES_PER_SEASON;
             const totalRevenue = suitesRevenue + clubRevenue + gaRevenue;
 
-            let content = `
-STADIUM REVENUE OPTIMIZER - ANALYSIS
-═══════════════════════════════════════
+            // Generate CSV content
+            let csvContent = 'STADIUM REVENUE OPTIMIZER - ANALYSIS\n';
+            csvContent += 'Generated,' + new Date().toLocaleString() + '\n\n';
 
-SEATING CONFIGURATION
-─────────────────────
-Total Capacity: ${TOTAL_CAPACITY.toLocaleString()} seats
+            // Model Assumptions
+            csvContent += 'MODEL ASSUMPTIONS\n';
+            csvContent += 'Assumption,Value\n';
+            csvContent += 'Market Context,Competitive market with strong demand (playoff-caliber team in major metro)\n';
+            csvContent += 'Occupancy Assumed,100% sell-through at all tiers (real-world: 70-95%)\n';
+            csvContent += 'Suite Pricing,$200K/season (varies by market)\n';
+            csvContent += 'Club Pricing,$10K/season (varies by market)\n';
+            csvContent += 'GA Pricing,$75/game (varies by market)\n';
+            csvContent += 'Games per Season,' + GAMES_PER_SEASON + '\n\n';
 
-Luxury Suites: ${suitesPct}% (${suitesSeats.toLocaleString()} seats)
-Club Seats: ${clubPct}% (${clubSeats.toLocaleString()} seats)
-General Admission: ${gaPct}% (${gaSeats.toLocaleString()} seats)
+            // Seating Configuration
+            csvContent += 'SEATING CONFIGURATION\n';
+            csvContent += 'Category,Percentage,Seats,Price,Revenue,% of Total\n';
+            csvContent += `Luxury Suites,${suitesPct}%,${suitesSeats},$${PRICING.suites.toLocaleString()}/season,$${suitesRevenue},${((suitesRevenue / totalRevenue) * 100).toFixed(1)}%\n`;
+            csvContent += `Club Seats,${clubPct}%,${clubSeats},$${PRICING.club.toLocaleString()}/season,$${clubRevenue},${((clubRevenue / totalRevenue) * 100).toFixed(1)}%\n`;
+            csvContent += `General Admission,${gaPct}%,${gaSeats},$${PRICING.ga}/game x ${GAMES_PER_SEASON},$${gaRevenue},${((gaRevenue / totalRevenue) * 100).toFixed(1)}%\n`;
+            csvContent += `TOTAL,100%,${TOTAL_CAPACITY},-,$${totalRevenue},100%\n\n`;
 
-REVENUE BREAKDOWN
-─────────────────
-Luxury Suites: $${(suitesRevenue / 1000000).toFixed(2)}M (${((suitesRevenue / totalRevenue) * 100).toFixed(1)}%)
-  - ${suitesSeats.toLocaleString()} seats × $${PRICING.suites.toLocaleString()}/season
+            // Key Metrics
+            csvContent += 'KEY METRICS\n';
+            csvContent += 'Metric,Value\n';
+            csvContent += `Total Revenue,$${(totalRevenue / 1000000).toFixed(2)}M\n`;
+            csvContent += `Revenue per Seat,$${Math.round(totalRevenue / TOTAL_CAPACITY)}\n`;
+            csvContent += `Premium Seating %,${Math.round(suitesPct + clubPct)}%\n`;
+            csvContent += `Accessibility Score,${gaPct}/100\n\n`;
 
-Club Seats: $${(clubRevenue / 1000000).toFixed(2)}M (${((clubRevenue / totalRevenue) * 100).toFixed(1)}%)
-  - ${clubSeats.toLocaleString()} seats × $${PRICING.club.toLocaleString()}/season
-
-General Admission: $${(gaRevenue / 1000000).toFixed(2)}M (${((gaRevenue / totalRevenue) * 100).toFixed(1)}%)
-  - ${gaSeats.toLocaleString()} seats × $${PRICING.ga}/game × ${GAMES_PER_SEASON} games
-
-TOTAL ANNUAL REVENUE: $${(totalRevenue / 1000000).toFixed(2)}M
-
-KEY METRICS
-───────────
-Revenue per Seat: $${Math.round(totalRevenue / TOTAL_CAPACITY).toLocaleString()}
-Premium Seating %: ${Math.round((suitesPct + clubPct))}%
-Accessibility Score: ${gaPct}/100
-
-STRATEGIC INSIGHTS
-──────────────────
-`;
-
+            // Strategic Insights
+            csvContent += 'STRATEGIC INSIGHTS\n';
+            csvContent += 'Priority,Insight\n';
             const insights = document.querySelectorAll('#insights-list .insight-item');
             insights.forEach((item, i) => {
-                content += `${i + 1}. ${item.textContent}\n`;
+                // Escape commas and quotes for CSV
+                const text = item.textContent.replace(/"/g, '""');
+                const isRisk = item.classList.contains('risk-item') ? 'RISK' : 'Insight';
+                csvContent += `${isRisk},"${text}"\n`;
             });
 
-            content += `\n\nGenerated: ${new Date().toLocaleString()}
-Business of Sports Marketing - Week 1 Module 3
-`;
-
-            const blob = new Blob([content], { type: 'text/plain' });
+            // Create and download CSV
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
             const url = URL.createObjectURL(blob);
             const a = document.createElement('a');
             a.href = url;
-            a.download = 'stadium-revenue-analysis.txt';
+            a.download = 'stadium-revenue-analysis.csv';
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);

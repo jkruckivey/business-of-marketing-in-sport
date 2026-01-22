@@ -369,7 +369,7 @@
                 totalCascade,
                 hitTarget,
                 grade,
-                pathCode: `${strategyId.charAt(0).toUpperCase()}-${eventChoices.map(c => c.charAt(0).toUpperCase()).join('-')}`
+                pathCode: `${strategyId.substring(0,3).toUpperCase()}-${eventChoices.join('/')}`
             };
         }
 

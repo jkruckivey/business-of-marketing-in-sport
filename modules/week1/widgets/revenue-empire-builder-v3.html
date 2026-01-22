@@ -1,0 +1,1937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Empire Builder v3 - 5-Year Simulation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-danger: #ef4444;
+            --color-purple: #d5cae0;
+            --color-green: #c0d1cd;
+            --color-turquoise: #bfe5e7;
+            --color-sand: #f0ede0;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            padding: 1.5rem;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--color-neutral-900);
+            margin-bottom: 0.25rem;
+            font-size: 1.75rem;
+        }
+
+        .subtitle {
+            color: var(--color-neutral-500);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .screen {
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        /* Intro Screen */
+        .intro-screen {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .intro-screen h2 {
+            color: var(--color-neutral-900);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .intro-screen p {
+            color: var(--color-neutral-600);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .scenario-box {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .scenario-box h3 {
+            color: var(--color-neutral-900);
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+        }
+
+        .scenario-box ul {
+            margin-left: 1.25rem;
+            color: var(--color-neutral-700);
+            line-height: 1.7;
+        }
+
+        /* Ecosystem Hint Box */
+        .ecosystem-hint {
+            background: linear-gradient(135deg, var(--color-green) 0%, var(--color-turquoise) 100%);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .ecosystem-hint h3 {
+            color: var(--color-neutral-800);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .ecosystem-hint p {
+            color: var(--color-neutral-700);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .ecosystem-hint strong {
+            color: var(--color-neutral-900);
+        }
+
+        .btn {
+            background: var(--color-neutral-900);
+            color: white;
+            border: none;
+            padding: 0.875rem 2rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: var(--color-neutral-700);
+            transform: translateY(-1px);
+        }
+
+        .btn:focus {
+            outline: 3px solid var(--color-neutral-500);
+            outline-offset: 2px;
+        }
+
+        .btn:disabled {
+            background: var(--color-neutral-300);
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-neutral-900);
+            border: 2px solid var(--color-neutral-300);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-neutral-50);
+            border-color: var(--color-neutral-900);
+        }
+
+        /* Strategy Selection Screen */
+        .strategy-screen {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .strategy-screen h2 {
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .strategy-screen .lead {
+            color: var(--color-neutral-600);
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .strategy-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .strategy-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .strategy-card {
+            background: var(--color-neutral-50);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .strategy-card:hover {
+            border-color: var(--color-neutral-400);
+            transform: translateY(-2px);
+        }
+
+        .strategy-card.selected {
+            border-color: var(--color-neutral-900);
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .strategy-card input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .strategy-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .strategy-card h3 {
+            color: var(--color-neutral-900);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .strategy-card .tagline {
+            color: var(--color-neutral-500);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .strategy-allocation {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        .strategy-card.selected .strategy-allocation {
+            background: var(--color-neutral-50);
+        }
+
+        .allocation-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            padding: 0.25rem 0;
+            color: var(--color-neutral-600);
+        }
+
+        .allocation-row .stream-name {
+            color: var(--color-neutral-700);
+        }
+
+        .allocation-row .stream-pct {
+            font-weight: 600;
+            color: var(--color-neutral-900);
+        }
+
+        .allocation-row.driver .stream-name {
+            color: var(--color-success);
+            font-weight: 500;
+        }
+
+        .allocation-row.driver .stream-pct {
+            color: var(--color-success);
+        }
+
+        .strategy-card.ecosystem .strategy-icon { color: #059669; }
+        .strategy-card.balanced .strategy-icon { color: #0891b2; }
+        .strategy-card.growth .strategy-icon { color: #dc2626; }
+
+        .strategy-hint {
+            font-size: 0.75rem;
+            color: var(--color-neutral-500);
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--color-neutral-200);
+            font-style: italic;
+        }
+
+        .action-row {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        /* Year Screen */
+        .year-header {
+            background: var(--color-neutral-900);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .year-header h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .year-header .context {
+            font-size: 1rem;
+            color: var(--color-neutral-200);
+            font-weight: 500;
+        }
+
+        .year-header .revenue-baseline {
+            font-size: 0.9rem;
+            color: var(--color-neutral-400);
+            margin-top: 0.25rem;
+        }
+
+        .year-content {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-top: none;
+            border-radius: 0 0 12px 12px;
+            padding: 1.5rem;
+        }
+
+        /* Revenue Status */
+        .revenue-status {
+            background: var(--color-turquoise);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .revenue-status-item {
+            text-align: center;
+        }
+
+        .revenue-status-label {
+            font-size: 0.75rem;
+            color: var(--color-neutral-600);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .revenue-status-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .revenue-status-value.highlight {
+            color: var(--color-success);
+        }
+
+        /* Strategy Badge */
+        .strategy-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--color-neutral-100);
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .strategy-badge.ecosystem { background: #d1fae5; border-color: #6ee7b7; color: #047857; }
+        .strategy-badge.balanced { background: #cffafe; border-color: #67e8f9; color: #0e7490; }
+        .strategy-badge.growth { background: #fee2e2; border-color: #fca5a5; color: #b91c1c; }
+
+        /* Event Branch */
+        .event-branch {
+            background: var(--color-sand);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .event-branch h3 {
+            font-size: 1rem;
+            color: var(--color-neutral-800);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .event-type-badge {
+            display: inline-block;
+            background: var(--color-neutral-800);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .event-type-badge.crisis {
+            background: var(--color-danger);
+        }
+
+        .event-description {
+            color: var(--color-neutral-600);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .event-choices {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .event-choice {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            background: white;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .event-choice:hover {
+            border-color: var(--color-neutral-400);
+        }
+
+        .event-choice.selected {
+            border-color: var(--color-neutral-900);
+            background: var(--color-neutral-50);
+        }
+
+        .event-choice input[type="radio"] {
+            margin-top: 0.2rem;
+            width: 18px;
+            height: 18px;
+            accent-color: var(--color-neutral-900);
+        }
+
+        .event-choice-content {
+            flex: 1;
+        }
+
+        .event-choice-title {
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.25rem;
+        }
+
+        .event-choice-impact {
+            font-size: 0.8rem;
+            color: var(--color-neutral-500);
+        }
+
+        /* Cascade Panel */
+        .cascade-panel {
+            background: linear-gradient(135deg, var(--color-green) 0%, var(--color-turquoise) 100%);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cascade-panel h4 {
+            font-size: 0.9rem;
+            color: var(--color-neutral-800);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .cascade-flows {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .cascade-flow {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--color-neutral-700);
+            background: rgba(255,255,255,0.6);
+            padding: 0.4rem 0.75rem;
+            border-radius: 4px;
+            flex-wrap: wrap;
+        }
+
+        .cascade-source {
+            font-weight: 600;
+            color: var(--color-neutral-800);
+            min-width: 100px;
+        }
+
+        .cascade-arrow {
+            color: var(--color-neutral-400);
+        }
+
+        .cascade-targets {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem 0.5rem;
+        }
+
+        .cascade-target {
+            color: #059669;
+            font-weight: 500;
+        }
+
+        .cascade-total {
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-neutral-800);
+        }
+
+        .cascade-total-value {
+            color: #059669;
+        }
+
+        .no-cascade-message {
+            font-size: 0.85rem;
+            color: var(--color-neutral-600);
+            font-style: italic;
+        }
+
+        /* Stream Summary */
+        .streams-summary {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .streams-summary h4 {
+            font-size: 0.9rem;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.75rem;
+        }
+
+        .stream-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        .stream-row:last-child {
+            border-bottom: none;
+        }
+
+        .stream-name {
+            font-weight: 500;
+            color: var(--color-neutral-800);
+        }
+
+        .stream-name.driver {
+            color: var(--color-success);
+        }
+
+        .stream-values {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.9rem;
+            align-items: center;
+        }
+
+        .stream-current {
+            color: var(--color-neutral-500);
+            min-width: 70px;
+        }
+
+        .stream-projected {
+            font-weight: 600;
+            color: var(--color-success);
+            min-width: 80px;
+        }
+
+        .stream-projected.negative {
+            color: var(--color-danger);
+        }
+
+        .stream-projected.capped {
+            color: var(--color-warning);
+        }
+
+        .stream-cascade {
+            font-size: 0.75rem;
+            color: #059669;
+            min-width: 80px;
+        }
+
+        /* Projection Summary */
+        .projection-summary {
+            background: var(--color-neutral-900);
+            color: white;
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .projection-summary h4 {
+            font-size: 0.85rem;
+            color: var(--color-neutral-400);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .projection-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .projection-item {
+            text-align: center;
+        }
+
+        .projection-label {
+            font-size: 0.75rem;
+            color: var(--color-neutral-400);
+            margin-bottom: 0.25rem;
+        }
+
+        .projection-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .projection-value.revenue { color: var(--color-success); }
+        .projection-value.growth { color: var(--color-turquoise); }
+        .projection-value.cascade { color: #34d399; }
+        .projection-value.target { color: var(--color-sand); }
+
+        /* Results Screen */
+        .results-screen {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .final-score {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .final-score h2 {
+            font-size: 1.75rem;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .score-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-neutral-800);
+        }
+
+        .score-label {
+            font-size: 1rem;
+            color: var(--color-neutral-500);
+        }
+
+        .performance-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .performance-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .projection-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .performance-card {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .performance-card h3 {
+            color: var(--color-neutral-500);
+            font-size: 0.8rem;
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .performance-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .performance-value.cascade-highlight {
+            color: #059669;
+        }
+
+        /* Trajectory */
+        .trajectory-section {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .trajectory-section h3 {
+            font-size: 1rem;
+            color: var(--color-neutral-800);
+            margin-bottom: 1rem;
+        }
+
+        .trajectory-bar {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 120px;
+            gap: 0.5rem;
+        }
+
+        .trajectory-year {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .trajectory-fill {
+            width: 100%;
+            background: var(--color-neutral-800);
+            border-radius: 4px 4px 0 0;
+            transition: height 0.5s;
+            position: relative;
+        }
+
+        .trajectory-cascade-fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #34d399;
+            border-radius: 0 0 0 0;
+        }
+
+        .trajectory-label {
+            font-size: 0.75rem;
+            color: var(--color-neutral-500);
+            margin-top: 0.5rem;
+        }
+
+        .trajectory-amount {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--color-neutral-700);
+            margin-top: 0.25rem;
+        }
+
+        /* Decision Timeline */
+        .decision-timeline {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .decision-timeline h3 {
+            font-size: 1rem;
+            color: var(--color-neutral-800);
+            margin-bottom: 1rem;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 1rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        .timeline-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline-year {
+            font-weight: 700;
+            color: var(--color-neutral-900);
+            min-width: 60px;
+        }
+
+        .timeline-event {
+            flex: 1;
+        }
+
+        .timeline-event-name {
+            font-weight: 500;
+            color: var(--color-neutral-700);
+        }
+
+        .timeline-choice {
+            font-size: 0.85rem;
+            color: var(--color-neutral-500);
+        }
+
+        .timeline-cascade {
+            font-size: 0.8rem;
+            color: #059669;
+            font-weight: 500;
+        }
+
+        /* Insights */
+        .insights {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .insights h3 {
+            color: var(--color-neutral-900);
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .insights ul {
+            margin-left: 1.25rem;
+            color: var(--color-neutral-600);
+            line-height: 1.8;
+        }
+
+        .insights li {
+            margin-bottom: 0.5rem;
+        }
+
+        .insights li strong {
+            color: var(--color-neutral-800);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-neutral-900);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .toast.show {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 1rem; }
+            .revenue-status { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Revenue Empire Builder</h1>
+        <p class="subtitle">Grow your team's revenue through strategic decisions over 5 years</p>
+
+        <!-- Intro Screen -->
+        <div class="screen active" id="intro-screen">
+            <div class="intro-screen">
+                <h2>Welcome, CFO!</h2>
+                <p>You've been appointed Chief Financial Officer of a mid-market professional sports team generating <strong>$100M in annual revenue</strong>. Your mission: grow that revenue over 5 years through strategic decisions.</p>
+
+                <div class="scenario-box">
+                    <h3>Your Challenge:</h3>
+                    <ul>
+                        <li><strong>Starting Revenue:</strong> $100M annually across 5 streams</li>
+                        <li><strong>Your Role:</strong> Choose a strategy, then navigate market events</li>
+                        <li><strong>Goal:</strong> Grow to $200+ million by Year 5</li>
+                        <li><strong>Reality:</strong> Each decision has trade-offs and consequences</li>
+                    </ul>
+                </div>
+
+                <p><strong>Revenue Streams:</strong></p>
+                <ul style="margin-left: 1.25rem; color: var(--color-neutral-600); line-height: 1.7; margin-bottom: 1rem;">
+                    <li><strong>Media Rights:</strong> $40M (8% base growth) - stable contracts, capped at $80M</li>
+                    <li><strong>Ticketing:</strong> $25M (5% base growth) - capacity-limited, capped at $30M</li>
+                    <li><strong>Sponsorship:</strong> $20M (12% base growth) - relationship-driven</li>
+                    <li><strong>Merchandising:</strong> $10M (10% base growth) - performance-dependent</li>
+                    <li><strong>Betting/Gaming:</strong> $5M (35% base growth) - high risk, high reward</li>
+                </ul>
+
+                <div class="ecosystem-hint">
+                    <h3>💡 Strategic Insight: The Ecosystem Effect</h3>
+                    <p>Not all revenue streams are equal. Some streams are <strong>"ecosystem drivers"</strong> that amplify others—like how signing a star player (ticketing investment) boosts merchandise sales, media ratings, and betting engagement. Other streams are <strong>"receivers"</strong> that benefit from ecosystem effects but don't generate them. <em>Understanding this difference is key to hitting your $200M target.</em></p>
+                </div>
+
+                <button class="btn" onclick="showScreen('strategy-screen')" aria-label="Begin the simulation">Choose Your Strategy</button>
+            </div>
+        </div>
+
+        <!-- Strategy Selection Screen -->
+        <div class="screen" id="strategy-screen">
+            <div class="strategy-screen">
+                <h2>Choose Your 5-Year Strategy</h2>
+                <p class="lead">Your strategy determines resource allocation across all 5 years. Choose based on your understanding of how revenue streams interact.</p>
+
+                <div class="strategy-cards">
+                    <label class="strategy-card ecosystem" onclick="selectStrategy('ecosystem')">
+                        <input type="radio" name="strategy" value="ecosystem">
+                        <div class="strategy-icon">🌳</div>
+                        <h3>Ecosystem Builder</h3>
+                        <p class="tagline">Invest in drivers that amplify everything</p>
+                        <div class="strategy-allocation">
+                            <div class="allocation-row driver">
+                                <span class="stream-name">Media Rights ⚡</span>
+                                <span class="stream-pct">30%</span>
+                            </div>
+                            <div class="allocation-row driver">
+                                <span class="stream-name">Ticketing ⚡</span>
+                                <span class="stream-pct">35%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Sponsorship</span>
+                                <span class="stream-pct">20%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Merchandising</span>
+                                <span class="stream-pct">10%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Betting/Gaming</span>
+                                <span class="stream-pct">5%</span>
+                            </div>
+                        </div>
+                        <p class="strategy-hint">⚡ = Ecosystem drivers that boost other streams</p>
+                    </label>
+
+                    <label class="strategy-card balanced" onclick="selectStrategy('balanced')">
+                        <input type="radio" name="strategy" value="balanced">
+                        <div class="strategy-icon">⚖️</div>
+                        <h3>Balanced Portfolio</h3>
+                        <p class="tagline">Spread resources evenly across all streams</p>
+                        <div class="strategy-allocation">
+                            <div class="allocation-row">
+                                <span class="stream-name">Media Rights</span>
+                                <span class="stream-pct">20%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Ticketing</span>
+                                <span class="stream-pct">20%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Sponsorship</span>
+                                <span class="stream-pct">20%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Merchandising</span>
+                                <span class="stream-pct">20%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Betting/Gaming</span>
+                                <span class="stream-pct">20%</span>
+                            </div>
+                        </div>
+                        <p class="strategy-hint">Traditional diversification approach</p>
+                    </label>
+
+                    <label class="strategy-card growth" onclick="selectStrategy('growth')">
+                        <input type="radio" name="strategy" value="growth">
+                        <div class="strategy-icon">🚀</div>
+                        <h3>Growth Chaser</h3>
+                        <p class="tagline">Maximize exposure to high-growth streams</p>
+                        <div class="strategy-allocation">
+                            <div class="allocation-row">
+                                <span class="stream-name">Media Rights</span>
+                                <span class="stream-pct">10%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Ticketing</span>
+                                <span class="stream-pct">10%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Sponsorship</span>
+                                <span class="stream-pct">20%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Merchandising</span>
+                                <span class="stream-pct">25%</span>
+                            </div>
+                            <div class="allocation-row">
+                                <span class="stream-name">Betting/Gaming</span>
+                                <span class="stream-pct">35%</span>
+                            </div>
+                        </div>
+                        <p class="strategy-hint">Betting has 35% base growth—the highest!</p>
+                    </label>
+                </div>
+
+                <div class="action-row">
+                    <button class="btn btn-secondary" onclick="showScreen('intro-screen')">Back</button>
+                    <button class="btn" id="start-btn" onclick="startSimulation()" disabled>Lock In Strategy & Start</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Year Screen -->
+        <div class="screen" id="year-screen">
+            <div class="year-header">
+                <h2 id="year-title">Year 1</h2>
+                <div class="context" id="year-context">Review your projected growth</div>
+                <div class="revenue-baseline" id="revenue-baseline">Current Annual Revenue: $100,000,000</div>
+            </div>
+            <div class="year-content">
+                <!-- Strategy Badge -->
+                <div class="strategy-badge" id="strategy-badge">
+                    <span id="strategy-badge-icon">⚖️</span>
+                    <span id="strategy-badge-name">Balanced Strategy</span>
+                </div>
+
+                <!-- Revenue Status -->
+                <div class="revenue-status">
+                    <div class="revenue-status-item">
+                        <div class="revenue-status-label">Current Revenue</div>
+                        <div class="revenue-status-value" id="current-revenue">$100M</div>
+                    </div>
+                    <div class="revenue-status-item">
+                        <div class="revenue-status-label">Progress</div>
+                        <div class="revenue-status-value highlight" id="progress">Baseline</div>
+                    </div>
+                    <div class="revenue-status-item">
+                        <div class="revenue-status-label">Target</div>
+                        <div class="revenue-status-value">$200M+</div>
+                    </div>
+                </div>
+
+                <!-- Event Branch (Years 2-5) -->
+                <div class="event-branch" id="event-branch" style="display: none;">
+                    <h3>
+                        <span class="event-type-badge" id="event-type">Opportunity</span>
+                        <span id="event-title">Market Event</span>
+                    </h3>
+                    <p class="event-description" id="event-description"></p>
+                    <div class="event-choices" id="event-choices"></div>
+                </div>
+
+                <!-- Cascade Panel -->
+                <div class="cascade-panel" id="cascade-panel">
+                    <h4>🔄 Ecosystem Cascade Effects</h4>
+                    <div id="cascade-content">
+                        <p class="no-cascade-message">Cascade effects will appear based on your strategy's investment in ecosystem drivers.</p>
+                    </div>
+                </div>
+
+                <!-- Streams Summary -->
+                <div class="streams-summary">
+                    <h4>Revenue Stream Projections</h4>
+                    <div id="streams-container"></div>
+                </div>
+
+                <!-- Projection Summary -->
+                <div class="projection-summary">
+                    <h4>Year-End Projection</h4>
+                    <div class="projection-grid">
+                        <div class="projection-item">
+                            <div class="projection-label">Projected Revenue</div>
+                            <div class="projection-value revenue" id="projected-revenue">$108M</div>
+                        </div>
+                        <div class="projection-item">
+                            <div class="projection-label">Year Growth</div>
+                            <div class="projection-value growth" id="projected-growth">+8%</div>
+                        </div>
+                        <div class="projection-item">
+                            <div class="projection-label">Cascade Bonus</div>
+                            <div class="projection-value cascade" id="projected-cascade">+$0</div>
+                        </div>
+                        <div class="projection-item">
+                            <div class="projection-label">vs. Target</div>
+                            <div class="projection-value target" id="vs-target">$92M to go</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-row">
+                    <button class="btn" id="confirm-btn" onclick="confirmYear()">Confirm & Proceed to Year 2</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="screen" id="results-screen">
+            <div class="results-screen">
+                <div class="final-score">
+                    <h2>5-Year Performance Summary</h2>
+                    <div class="score-value" id="final-revenue">$0</div>
+                    <div class="score-label">Final Annual Revenue</div>
+                </div>
+
+                <div class="performance-grid">
+                    <div class="performance-card">
+                        <h3>Total Growth</h3>
+                        <div class="performance-value" id="final-growth">0%</div>
+                    </div>
+                    <div class="performance-card">
+                        <h3>Strategy</h3>
+                        <div class="performance-value" id="final-strategy">-</div>
+                    </div>
+                    <div class="performance-card">
+                        <h3>Cascade Value</h3>
+                        <div class="performance-value cascade-highlight" id="final-cascade">$0</div>
+                    </div>
+                    <div class="performance-card">
+                        <h3>Grade</h3>
+                        <div class="performance-value" id="final-grade">-</div>
+                    </div>
+                </div>
+
+                <div class="trajectory-section">
+                    <h3>Revenue Trajectory (green = cascade contribution)</h3>
+                    <div class="trajectory-bar" id="trajectory-bar"></div>
+                </div>
+
+                <div class="decision-timeline">
+                    <h3>Your Decision Path</h3>
+                    <div id="timeline-container"></div>
+                </div>
+
+                <div class="insights">
+                    <h3>Strategic Insights</h3>
+                    <ul id="insights-list"></ul>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" onclick="location.reload()">Play Again</button>
+                    <button class="btn" onclick="exportResults()">Download Summary</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Strategy allocations - designed to demonstrate ecosystem effects
+        const STRATEGIES = {
+            ecosystem: {
+                name: 'Ecosystem Builder',
+                icon: '🌳',
+                allocations: { media: 30, ticketing: 35, sponsorship: 20, merchandising: 10, betting: 5 },
+                description: 'Heavy investment in ecosystem drivers'
+            },
+            balanced: {
+                name: 'Balanced Portfolio',
+                icon: '⚖️',
+                allocations: { media: 20, ticketing: 20, sponsorship: 20, merchandising: 20, betting: 20 },
+                description: 'Even distribution across all streams'
+            },
+            growth: {
+                name: 'Growth Chaser',
+                icon: '🚀',
+                allocations: { media: 10, ticketing: 10, sponsorship: 20, merchandising: 25, betting: 35 },
+                description: 'Focused on high base-growth streams'
+            }
+        };
+
+        // Ecosystem cascade effects - the key teaching mechanic
+        // When you invest in stream X, stream Y gets a bonus
+        // DRIVERS (ticketing, media) have strong cascade effects
+        // RECEIVERS (betting, merch) have weak cascade effects
+        const cascadeEffects = {
+            ticketing: {
+                // Fan experience investment → amplifies other streams (STRONG DRIVER)
+                media: 0.25,        // Better attendance → better TV product
+                merchandising: 0.40, // Engaged fans buy more gear
+                betting: 0.35,      // Live attendance drives betting engagement
+                sponsorship: 0.20   // Better atmosphere → sponsor value
+            },
+            media: {
+                // Better media exposure → brand amplification (STRONG DRIVER)
+                sponsorship: 0.45,  // More eyeballs → sponsor value increases
+                merchandising: 0.25, // Broader reach → more merchandise sales
+                betting: 0.15       // Media integration drives betting
+            },
+            sponsorship: {
+                // Sponsor activations → moderate cascade
+                ticketing: 0.12,    // Sponsor promotions drive attendance
+                merchandising: 0.10  // Co-branded merchandise
+            },
+            merchandising: {
+                // Brand visibility → minimal cascade (RECEIVER)
+                media: 0.05         // Merchandise visibility = brand awareness
+            },
+            betting: {
+                // Betting partnerships → weak cascade (RECEIVER, not driver)
+                media: 0.06,        // Betting content drives some viewership
+                ticketing: 0.04     // Betting promotions at venue
+            }
+        };
+
+        // Game State
+        const gameState = {
+            currentYear: 1,
+            selectedStrategy: null,
+            baseRevenue: 100000000,
+            currentRevenue: 100000000,
+            revenueTrajectory: [100000000],
+            cascadeTrajectory: [0],
+            totalCascadeValue: 0,
+            selectedEventChoice: null,
+            yearlyDecisions: [],
+            streams: [
+                { id: 'media', name: 'Media Rights', baseValue: 40000000, baseGrowth: 0.08, maxValue: 80000000, isDriver: true },
+                { id: 'ticketing', name: 'Ticketing', baseValue: 25000000, baseGrowth: 0.05, maxValue: 40000000, isDriver: true },
+                { id: 'sponsorship', name: 'Sponsorship', baseValue: 20000000, baseGrowth: 0.12, maxValue: null, isDriver: false },
+                { id: 'merchandising', name: 'Merchandising', baseValue: 10000000, baseGrowth: 0.10, maxValue: null, isDriver: false },
+                { id: 'betting', name: 'Betting/Gaming', baseValue: 5000000, baseGrowth: 0.35, maxValue: null, isDriver: false }
+            ],
+            events: {
+                2: {
+                    type: 'Opportunity',
+                    title: 'Streaming Platform Deal',
+                    description: 'A major streaming platform wants exclusive digital rights. This could boost media revenue but locks you into a 3-year contract.',
+                    choices: [
+                        { id: 'accept', title: 'Accept Exclusive Deal', impact: 'Media +20% this year', effects: { media: 1.20 } },
+                        { id: 'decline', title: 'Keep Options Open', impact: 'No change, maintain flexibility', effects: {} },
+                        { id: 'hybrid', title: 'Non-Exclusive Partnership', impact: 'Media +10% this year', effects: { media: 1.10 } }
+                    ]
+                },
+                3: {
+                    type: 'Opportunity',
+                    title: 'Title Sponsorship Offer',
+                    description: 'A Fortune 500 company offers a title sponsorship deal worth $8M/year, but requires category exclusivity.',
+                    choices: [
+                        { id: 'accept', title: 'Accept Title Sponsor', impact: 'Sponsorship +25% this year', effects: { sponsorship: 1.25 } },
+                        { id: 'decline', title: 'Maintain Flexibility', impact: 'No change, keep options open', effects: {} },
+                        { id: 'counter', title: 'Counter with Premium Tier', impact: 'Sponsorship +15% this year', effects: { sponsorship: 1.15 } }
+                    ]
+                },
+                4: {
+                    type: 'Crisis',
+                    title: 'Economic Recession',
+                    description: 'A recession hits. Consumer spending drops 15% and corporate marketing budgets are being slashed. How do you respond?',
+                    choices: [
+                        { id: 'invest', title: 'Double Down on Fan Experience', impact: 'Ticketing +10%, Sponsorship/Merch -10%', effects: { ticketing: 1.10, sponsorship: 0.90, merchandising: 0.90 } },
+                        { id: 'cut', title: 'Defensive Positioning', impact: 'All streams -5%', effects: { media: 0.95, ticketing: 0.95, sponsorship: 0.95, merchandising: 0.95, betting: 0.95 } },
+                        { id: 'pivot', title: 'Accelerate Digital/Betting', impact: 'Betting +40%, Sponsorship -15%', effects: { betting: 1.40, sponsorship: 0.85 } }
+                    ]
+                },
+                5: {
+                    type: 'Opportunity',
+                    title: 'Championship Season',
+                    description: 'Your team makes a deep playoff run! Fan engagement is at an all-time high. How do you capitalize?',
+                    choices: [
+                        { id: 'lock', title: 'Lock in Long-Term Deals', impact: 'All streams +12%', effects: { media: 1.12, ticketing: 1.12, sponsorship: 1.12, merchandising: 1.12, betting: 1.12 } },
+                        { id: 'maximize', title: 'Maximize Short-Term', impact: 'Merch +50%, Ticketing +30%', effects: { merchandising: 1.50, ticketing: 1.30 } },
+                        { id: 'balanced', title: 'Balanced Approach', impact: 'All streams +18%', effects: { media: 1.18, ticketing: 1.18, sponsorship: 1.18, merchandising: 1.18, betting: 1.18 } }
+                    ]
+                }
+            }
+        };
+
+        function selectStrategy(strategy) {
+            gameState.selectedStrategy = strategy;
+
+            document.querySelectorAll('.strategy-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            document.querySelector(`.strategy-card.${strategy}`).classList.add('selected');
+            document.getElementById('start-btn').disabled = false;
+        }
+
+        function startSimulation() {
+            if (!gameState.selectedStrategy) return;
+
+            // Initialize stream values
+            gameState.streams.forEach(s => {
+                s.currentValue = s.baseValue;
+            });
+
+            // Record strategy choice
+            gameState.yearlyDecisions.push({
+                year: 1,
+                type: 'strategy',
+                choice: gameState.selectedStrategy,
+                choiceName: STRATEGIES[gameState.selectedStrategy].name
+            });
+
+            showScreen('year-screen');
+            renderYear(1);
+        }
+
+        function renderYear(year) {
+            gameState.currentYear = year;
+            gameState.selectedEventChoice = null;
+
+            const strategy = STRATEGIES[gameState.selectedStrategy];
+
+            // Update header
+            if (year === 1) {
+                document.getElementById('year-title').textContent = 'Year 1: Launch Your Strategy';
+                document.getElementById('year-context').textContent = 'Your strategy is now in effect. Watch how ecosystem effects unfold.';
+            } else {
+                const event = gameState.events[year];
+                document.getElementById('year-title').textContent = `Year ${year}: ${event.title}`;
+                document.getElementById('year-context').textContent = 'Respond to the market event to shape your growth.';
+            }
+
+            document.getElementById('revenue-baseline').textContent = `Current Annual Revenue: ${formatCurrency(gameState.currentRevenue)}`;
+
+            // Update strategy badge
+            document.getElementById('strategy-badge').className = `strategy-badge ${gameState.selectedStrategy}`;
+            document.getElementById('strategy-badge-icon').textContent = strategy.icon;
+            document.getElementById('strategy-badge-name').textContent = strategy.name;
+
+            // Update revenue status
+            document.getElementById('current-revenue').textContent = formatShortCurrency(gameState.currentRevenue);
+            const growthFromStart = ((gameState.currentRevenue - gameState.baseRevenue) / gameState.baseRevenue * 100);
+            document.getElementById('progress').textContent = year === 1 ? 'Baseline' : `+${growthFromStart.toFixed(0)}% from start`;
+
+            // Show/hide event branch
+            if (year > 1) {
+                renderEventBranch(year);
+                document.getElementById('event-branch').style.display = 'block';
+            } else {
+                document.getElementById('event-branch').style.display = 'none';
+            }
+
+            // Render streams and projections
+            renderStreams();
+            updateProjections();
+
+            // Update button
+            const btnText = year < 5 ? `Confirm & Proceed to Year ${year + 1}` : 'Confirm & View Results';
+            document.getElementById('confirm-btn').textContent = btnText;
+            document.getElementById('confirm-btn').disabled = (year > 1); // Require event selection for years 2-5
+        }
+
+        function renderEventBranch(year) {
+            const event = gameState.events[year];
+            const typeBadge = document.getElementById('event-type');
+            typeBadge.textContent = event.type;
+            typeBadge.className = `event-type-badge ${event.type.toLowerCase()}`;
+
+            document.getElementById('event-title').textContent = event.title;
+            document.getElementById('event-description').textContent = event.description;
+
+            const choicesContainer = document.getElementById('event-choices');
+            choicesContainer.innerHTML = '';
+
+            event.choices.forEach((choice) => {
+                const label = document.createElement('label');
+                label.className = 'event-choice';
+                label.innerHTML = `
+                    <input type="radio" name="event-choice" value="${choice.id}" onchange="selectEventChoice('${choice.id}')">
+                    <div class="event-choice-content">
+                        <div class="event-choice-title">${choice.title}</div>
+                        <div class="event-choice-impact">${choice.impact}</div>
+                    </div>
+                `;
+                choicesContainer.appendChild(label);
+            });
+        }
+
+        function selectEventChoice(choiceId) {
+            gameState.selectedEventChoice = choiceId;
+
+            document.querySelectorAll('.event-choice').forEach(el => {
+                el.classList.remove('selected');
+                if (el.querySelector(`input[value="${choiceId}"]`)) {
+                    el.classList.add('selected');
+                }
+            });
+
+            document.getElementById('confirm-btn').disabled = false;
+            updateProjections();
+        }
+
+        function renderStreams() {
+            const container = document.getElementById('streams-container');
+            container.innerHTML = '';
+            const strategy = STRATEGIES[gameState.selectedStrategy];
+
+            gameState.streams.forEach(stream => {
+                const row = document.createElement('div');
+                row.className = 'stream-row';
+                row.id = `stream-row-${stream.id}`;
+
+                const nameClass = stream.isDriver ? 'stream-name driver' : 'stream-name';
+                const driverBadge = stream.isDriver ? ' ⚡' : '';
+                const focusPct = strategy.allocations[stream.id];
+
+                row.innerHTML = `
+                    <span class="${nameClass}">${stream.name}${driverBadge} (${focusPct}%)</span>
+                    <div class="stream-values">
+                        <span class="stream-current">Now: ${formatShortCurrency(stream.currentValue)}</span>
+                        <span class="stream-cascade" id="cascade-${stream.id}"></span>
+                        <span class="stream-projected" id="projected-${stream.id}">→ ${formatShortCurrency(stream.currentValue)}</span>
+                    </div>
+                `;
+                container.appendChild(row);
+            });
+        }
+
+        function calculateCascadeEffects(strategy) {
+            const cascadeBonuses = {};
+            const cascadeDetails = [];
+
+            gameState.streams.forEach(sourceStream => {
+                const sourceFocus = strategy.allocations[sourceStream.id] / 100;
+
+                if (sourceFocus > 0.1 && cascadeEffects[sourceStream.id]) {
+                    const sourceInvestment = sourceStream.currentValue * sourceFocus;
+                    const streamCascades = [];
+
+                    Object.entries(cascadeEffects[sourceStream.id]).forEach(([targetId, multiplier]) => {
+                        if (!cascadeBonuses[targetId]) cascadeBonuses[targetId] = 0;
+
+                        // Cascade = source investment × multiplier × focus (rewards concentrated investment)
+                        const cascadeBonus = sourceInvestment * multiplier * sourceFocus;
+                        cascadeBonuses[targetId] += cascadeBonus;
+
+                        if (cascadeBonus > 50000) {
+                            const targetStream = gameState.streams.find(s => s.id === targetId);
+                            streamCascades.push({
+                                target: targetStream.name,
+                                bonus: cascadeBonus
+                            });
+                        }
+                    });
+
+                    if (streamCascades.length > 0) {
+                        cascadeDetails.push({
+                            source: sourceStream.name,
+                            focus: strategy.allocations[sourceStream.id],
+                            targets: streamCascades
+                        });
+                    }
+                }
+            });
+
+            return { cascadeBonuses, cascadeDetails };
+        }
+
+        function updateProjections() {
+            const strategy = STRATEGIES[gameState.selectedStrategy];
+
+            // Calculate cascade effects
+            const { cascadeBonuses, cascadeDetails } = calculateCascadeEffects(strategy);
+            let totalCascade = Object.values(cascadeBonuses).reduce((sum, b) => sum + b, 0);
+
+            // Update cascade panel
+            updateCascadePanel(cascadeDetails, totalCascade);
+
+            // Calculate stream projections
+            let projectedTotal = 0;
+
+            gameState.streams.forEach(stream => {
+                const focus = strategy.allocations[stream.id];
+                // Focus multiplier: baseline 1.0×, higher focus = bonus (up to 1.5×)
+                const focusMultiplier = 1.0 + (focus / 100) * 0.5;
+                let effectiveGrowth = stream.baseGrowth * focusMultiplier;
+
+                // Apply event effects
+                if (gameState.currentYear > 1 && gameState.selectedEventChoice) {
+                    const event = gameState.events[gameState.currentYear];
+                    const choice = event.choices.find(c => c.id === gameState.selectedEventChoice);
+                    if (choice && choice.effects && choice.effects[stream.id]) {
+                        effectiveGrowth *= choice.effects[stream.id];
+                    }
+                }
+
+                let projectedValue = stream.currentValue * (1 + effectiveGrowth);
+
+                // Add cascade bonus
+                const cascadeBonus = cascadeBonuses[stream.id] || 0;
+                projectedValue += cascadeBonus;
+
+                // Apply cap
+                let isCapped = false;
+                if (stream.maxValue && projectedValue > stream.maxValue) {
+                    projectedValue = stream.maxValue;
+                    isCapped = true;
+                }
+
+                projectedTotal += projectedValue;
+
+                // Update stream display
+                const projectedEl = document.getElementById(`projected-${stream.id}`);
+                const cascadeEl = document.getElementById(`cascade-${stream.id}`);
+
+                if (projectedEl) {
+                    const change = projectedValue - stream.currentValue;
+                    const changePercent = (change / stream.currentValue * 100).toFixed(0);
+                    let className = 'stream-projected';
+
+                    if (isCapped) {
+                        className += ' capped';
+                        projectedEl.textContent = `→ ${formatShortCurrency(projectedValue)} (capped)`;
+                    } else if (change < 0) {
+                        className += ' negative';
+                        projectedEl.textContent = `→ ${formatShortCurrency(projectedValue)} (${changePercent}%)`;
+                    } else {
+                        projectedEl.textContent = `→ ${formatShortCurrency(projectedValue)} (+${changePercent}%)`;
+                    }
+                    projectedEl.className = className;
+                }
+
+                if (cascadeEl) {
+                    if (cascadeBonus > 50000) {
+                        cascadeEl.textContent = `+${formatShortCurrency(cascadeBonus)} cascade`;
+                    } else {
+                        cascadeEl.textContent = '';
+                    }
+                }
+            });
+
+            // Update projection summary
+            const yearGrowth = ((projectedTotal - gameState.currentRevenue) / gameState.currentRevenue * 100).toFixed(0);
+            const toTarget = 200000000 - projectedTotal;
+
+            document.getElementById('projected-revenue').textContent = formatShortCurrency(projectedTotal);
+            document.getElementById('projected-growth').textContent = `+${yearGrowth}%`;
+            document.getElementById('projected-cascade').textContent = totalCascade > 100000 ? `+${formatShortCurrency(totalCascade)}` : '$0';
+
+            if (toTarget > 0) {
+                document.getElementById('vs-target').textContent = `${formatShortCurrency(toTarget)} to go`;
+            } else {
+                document.getElementById('vs-target').textContent = `Target exceeded!`;
+            }
+        }
+
+        function updateCascadePanel(cascadeDetails, totalBonus) {
+            const content = document.getElementById('cascade-content');
+
+            if (cascadeDetails.length === 0 || totalBonus < 100000) {
+                content.innerHTML = '<p class="no-cascade-message">Minimal cascade effects. Higher investment in ecosystem drivers (Media, Ticketing) would amplify other streams.</p>';
+                return;
+            }
+
+            let html = '<div class="cascade-flows">';
+
+            cascadeDetails.forEach(detail => {
+                const targetsHtml = detail.targets.map(t =>
+                    `<span class="cascade-target">${t.target} +${formatShortCurrency(t.bonus)}</span>`
+                ).join(', ');
+
+                html += `
+                    <div class="cascade-flow">
+                        <span class="cascade-source">${detail.source} (${detail.focus}%)</span>
+                        <span class="cascade-arrow">→</span>
+                        <span class="cascade-targets">${targetsHtml}</span>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+
+            html += `
+                <div class="cascade-total">
+                    Year Cascade Bonus: <span class="cascade-total-value">+${formatShortCurrency(totalBonus)}</span>
+                </div>
+            `;
+
+            content.innerHTML = html;
+        }
+
+        function confirmYear() {
+            // Validation for events
+            if (gameState.currentYear > 1 && !gameState.selectedEventChoice) {
+                alert('Please select a response to the market event before proceeding.');
+                return;
+            }
+
+            const strategy = STRATEGIES[gameState.selectedStrategy];
+
+            // Calculate cascade effects
+            const { cascadeBonuses } = calculateCascadeEffects(strategy);
+            const yearCascade = Object.values(cascadeBonuses).reduce((sum, b) => sum + b, 0);
+
+            // Apply growth to streams
+            let newRevenue = 0;
+
+            gameState.streams.forEach(stream => {
+                const focus = strategy.allocations[stream.id];
+                // Focus multiplier: baseline 1.0×, higher focus = bonus (up to 1.5×)
+                const focusMultiplier = 1.0 + (focus / 100) * 0.5;
+                let effectiveGrowth = stream.baseGrowth * focusMultiplier;
+
+                // Apply event effects
+                if (gameState.currentYear > 1 && gameState.selectedEventChoice) {
+                    const event = gameState.events[gameState.currentYear];
+                    const choice = event.choices.find(c => c.id === gameState.selectedEventChoice);
+                    if (choice && choice.effects && choice.effects[stream.id]) {
+                        effectiveGrowth *= choice.effects[stream.id];
+                    }
+                }
+
+                stream.currentValue = stream.currentValue * (1 + effectiveGrowth);
+
+                // Add cascade bonus
+                if (cascadeBonuses[stream.id]) {
+                    stream.currentValue += cascadeBonuses[stream.id];
+                }
+
+                // Apply cap
+                if (stream.maxValue && stream.currentValue > stream.maxValue) {
+                    stream.currentValue = stream.maxValue;
+                }
+
+                newRevenue += stream.currentValue;
+            });
+
+            // Record decision
+            if (gameState.currentYear > 1) {
+                const event = gameState.events[gameState.currentYear];
+                const choice = event.choices.find(c => c.id === gameState.selectedEventChoice);
+                gameState.yearlyDecisions.push({
+                    year: gameState.currentYear,
+                    type: 'event',
+                    event: event.title,
+                    choice: gameState.selectedEventChoice,
+                    choiceName: choice.title,
+                    cascade: yearCascade
+                });
+            } else {
+                // Update year 1 decision with cascade
+                gameState.yearlyDecisions[0].cascade = yearCascade;
+            }
+
+            gameState.currentRevenue = newRevenue;
+            gameState.revenueTrajectory.push(newRevenue);
+            gameState.cascadeTrajectory.push(yearCascade);
+            gameState.totalCascadeValue += yearCascade;
+
+            // Next year or results
+            if (gameState.currentYear < 5) {
+                renderYear(gameState.currentYear + 1);
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            const finalRevenue = gameState.currentRevenue;
+            const growthPercent = ((finalRevenue - gameState.baseRevenue) / gameState.baseRevenue * 100).toFixed(1);
+            const hitTarget = finalRevenue >= 200000000;
+
+            // Grade - adjusted to make ecosystem strategy achieve B+ or better
+            let grade = 'F';
+            if (finalRevenue >= 250000000) grade = 'A+';
+            else if (finalRevenue >= 225000000) grade = 'A';
+            else if (finalRevenue >= 200000000) grade = 'B+';
+            else if (finalRevenue >= 175000000) grade = 'B';
+            else if (finalRevenue >= 150000000) grade = 'C';
+            else if (finalRevenue >= 125000000) grade = 'D';
+
+            document.getElementById('final-revenue').textContent = formatCurrency(finalRevenue);
+            document.getElementById('final-growth').textContent = `+${growthPercent}%`;
+            document.getElementById('final-strategy').textContent = STRATEGIES[gameState.selectedStrategy].name.split(' ')[0];
+            document.getElementById('final-cascade').textContent = formatShortCurrency(gameState.totalCascadeValue);
+            document.getElementById('final-grade').textContent = grade;
+
+            renderTrajectory();
+            renderTimeline();
+            generateInsights(finalRevenue, hitTarget);
+            showScreen('results-screen');
+        }
+
+        function renderTrajectory() {
+            const container = document.getElementById('trajectory-bar');
+            container.innerHTML = '';
+
+            const maxRevenue = Math.max(...gameState.revenueTrajectory, 200000000);
+
+            gameState.revenueTrajectory.forEach((revenue, index) => {
+                const year = document.createElement('div');
+                year.className = 'trajectory-year';
+
+                const heightPercent = (revenue / maxRevenue) * 100;
+                const cascadeValue = gameState.cascadeTrajectory[index] || 0;
+                const cascadePercent = revenue > 0 ? (cascadeValue / revenue) * heightPercent : 0;
+
+                year.innerHTML = `
+                    <div class="trajectory-fill" style="height: ${heightPercent}%">
+                        <div class="trajectory-cascade-fill" style="height: ${cascadePercent > 0 ? (cascadePercent / heightPercent * 100) : 0}%"></div>
+                    </div>
+                    <div class="trajectory-label">Year ${index}</div>
+                    <div class="trajectory-amount">${formatShortCurrency(revenue)}</div>
+                `;
+                container.appendChild(year);
+            });
+        }
+
+        function renderTimeline() {
+            const container = document.getElementById('timeline-container');
+            container.innerHTML = '';
+
+            gameState.yearlyDecisions.forEach(decision => {
+                const item = document.createElement('div');
+                item.className = 'timeline-item';
+
+                const cascadeHtml = decision.cascade && decision.cascade > 100000
+                    ? `<div class="timeline-cascade">Cascade: +${formatShortCurrency(decision.cascade)}</div>`
+                    : '';
+
+                if (decision.type === 'strategy') {
+                    item.innerHTML = `
+                        <div class="timeline-year">Year ${decision.year}</div>
+                        <div class="timeline-event">
+                            <div class="timeline-event-name">Strategy Selected</div>
+                            <div class="timeline-choice">${decision.choiceName}</div>
+                            ${cascadeHtml}
+                        </div>
+                    `;
+                } else {
+                    item.innerHTML = `
+                        <div class="timeline-year">Year ${decision.year}</div>
+                        <div class="timeline-event">
+                            <div class="timeline-event-name">${decision.event}</div>
+                            <div class="timeline-choice">${decision.choiceName}</div>
+                            ${cascadeHtml}
+                        </div>
+                    `;
+                }
+                container.appendChild(item);
+            });
+        }
+
+        function generateInsights(finalRevenue, hitTarget) {
+            const insights = [];
+
+            // Target insight
+            if (hitTarget) {
+                insights.push('<strong>Target Achieved!</strong> You successfully grew revenue past $200M through strategic ecosystem thinking.');
+            } else {
+                const shortfall = 200000000 - finalRevenue;
+                insights.push(`<strong>Target Missed</strong> by ${formatShortCurrency(shortfall)}. Understanding ecosystem cascade effects is key to hitting $200M+.`);
+            }
+
+            // Strategy-specific insights
+            if (gameState.selectedStrategy === 'ecosystem') {
+                insights.push('<strong>Ecosystem Builder Strategy:</strong> By investing heavily in Media Rights and Ticketing (ecosystem drivers), you generated <strong>' + formatShortCurrency(gameState.totalCascadeValue) + '</strong> in cascade effects that amplified Sponsorship, Merchandising, and Betting revenue.');
+                if (hitTarget) {
+                    insights.push('This demonstrates the "Connor McDavid Effect" from Module 3: star player investment (ticketing/fan experience) creates ripple effects across the entire revenue ecosystem.');
+                }
+            } else if (gameState.selectedStrategy === 'growth') {
+                insights.push('<strong>Growth Chaser Strategy:</strong> Despite Betting having 35% base growth (the highest!), it\'s a "receiver" not a "driver" in the revenue ecosystem. It benefits from cascade effects but doesn\'t generate them.');
+                insights.push('Your cascade value of ' + formatShortCurrency(gameState.totalCascadeValue) + ' was limited because Betting and Merchandising don\'t amplify other streams the way Media and Ticketing do.');
+            } else {
+                insights.push('<strong>Balanced Portfolio Strategy:</strong> Even distribution spread resources too thin to generate strong cascade effects. Concentrated investment in ecosystem drivers would have produced more amplification.');
+            }
+
+            // Cascade comparison
+            const ecosystemEstimate = 45000000; // Approximate ecosystem strategy cascade
+            if (gameState.selectedStrategy !== 'ecosystem' && gameState.totalCascadeValue < ecosystemEstimate * 0.6) {
+                insights.push('<strong>Key Learning:</strong> The Ecosystem Builder strategy generates roughly 2-3× more cascade value because it concentrates investment in streams that amplify others.');
+            }
+
+            // Event-specific insight
+            const recessionChoice = gameState.yearlyDecisions.find(d => d.year === 4);
+            if (recessionChoice && recessionChoice.choice === 'pivot') {
+                insights.push('Pivoting to Digital/Betting during the recession increased betting revenue but reduced ecosystem synergies since betting is a receiver, not a driver.');
+            }
+
+            const insightsList = document.getElementById('insights-list');
+            insightsList.innerHTML = '';
+            insights.forEach(insight => {
+                const li = document.createElement('li');
+                li.innerHTML = insight;
+                insightsList.appendChild(li);
+            });
+        }
+
+        function exportResults() {
+            const strategy = STRATEGIES[gameState.selectedStrategy];
+            let content = `REVENUE EMPIRE BUILDER v3 - PERFORMANCE SUMMARY
+═══════════════════════════════════════════════
+
+FINAL RESULTS
+─────────────
+Starting Revenue: ${formatCurrency(gameState.baseRevenue)}
+Final Revenue: ${formatCurrency(gameState.currentRevenue)}
+Total Growth: +${((gameState.currentRevenue - gameState.baseRevenue) / gameState.baseRevenue * 100).toFixed(1)}%
+Target ($200M): ${gameState.currentRevenue >= 200000000 ? 'ACHIEVED ✓' : 'NOT MET'}
+Grade: ${document.getElementById('final-grade').textContent}
+
+ECOSYSTEM CASCADE ANALYSIS
+──────────────────────────
+Total 5-Year Cascade Value: ${formatCurrency(gameState.totalCascadeValue)}
+This represents revenue generated through ecosystem amplification effects.
+
+STRATEGY
+────────
+${strategy.name}
+- Media Rights: ${strategy.allocations.media}% ${strategy.allocations.media >= 25 ? '(Driver)' : ''}
+- Ticketing: ${strategy.allocations.ticketing}% ${strategy.allocations.ticketing >= 25 ? '(Driver)' : ''}
+- Sponsorship: ${strategy.allocations.sponsorship}%
+- Merchandising: ${strategy.allocations.merchandising}%
+- Betting/Gaming: ${strategy.allocations.betting}%
+
+REVENUE TRAJECTORY
+──────────────────
+`;
+            gameState.revenueTrajectory.forEach((rev, i) => {
+                const cascade = gameState.cascadeTrajectory[i] || 0;
+                content += `Year ${i}: ${formatCurrency(rev)}${cascade > 100000 ? ` (cascade: +${formatCurrency(cascade)})` : ''}\n`;
+            });
+
+            content += `
+DECISIONS
+─────────
+`;
+            gameState.yearlyDecisions.forEach(d => {
+                if (d.type === 'strategy') {
+                    content += `Year ${d.year}: Selected ${d.choiceName}\n`;
+                } else {
+                    content += `Year ${d.year}: ${d.event} → ${d.choiceName}\n`;
+                }
+            });
+
+            content += `
+KEY INSIGHT
+───────────
+Media Rights and Ticketing are "ecosystem drivers" that amplify other streams.
+Betting has high base growth but is a "receiver" - it benefits from cascades
+but doesn't generate them. Understanding this ecosystem is key to $200M+.
+
+Generated: ${new Date().toLocaleString()}
+Business of Sports Marketing - Week 1
+`;
+
+            try {
+                const blob = new Blob([content], { type: 'text/plain' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'revenue-empire-results.txt';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                showToast('Summary downloaded!');
+            } catch (err) {
+                navigator.clipboard.writeText(content).then(() => {
+                    showToast('Summary copied to clipboard!');
+                });
+            }
+        }
+
+        function showToast(message) {
+            const existing = document.querySelector('.toast');
+            if (existing) existing.remove();
+
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+
+            setTimeout(() => toast.classList.add('show'), 10);
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+        }
+
+        function formatCurrency(value) {
+            return '$' + Math.round(value).toLocaleString();
+        }
+
+        function formatShortCurrency(value) {
+            if (value >= 1000000000) return '$' + (value / 1000000000).toFixed(1) + 'B';
+            if (value >= 1000000) return '$' + (value / 1000000).toFixed(0) + 'M';
+            return formatCurrency(value);
+        }
+    </script>
+</body>
+</html>

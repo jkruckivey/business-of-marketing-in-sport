@@ -1,7 +1,11 @@
 # Build Your Revenue Empire
-**Version:** 1.4.0 | **Last Updated:** 2026-01-22
+**Version:** 1.5.0 | **Last Updated:** 2026-01-22
 
 **Purpose:** Active learning - build a revenue strategy (supports WLO 1.1, 1.3 - Application level)
+
+### Version 1.5.0 Changes
+- **UPDATED:** Element 3 now uses `ecosystem-roleplay.html` (MCQs removed from widget)
+- **ADDED:** Elements 3A, 3B, 3C - MC questions after roleplay (built in Uplimit)
 
 ---
 
@@ -28,7 +32,10 @@ The complex Revenue Empire Builder simulation has been replaced with a **simplif
 |-------|---------|----------------|--------|---------------------|
 | 1 | **Infobox (Callout)** ⬤ Required | Brief activity introduction | Type directly | Blue variant, sets context |
 | 2 | **Text** ⬤ Required | Detailed instructions and strategic considerations | Type directly | Full setup and guidance |
-| 3 | **iFrame** ⬤ Required | Revenue Empire Builder widget | Custom widget hosted | Interactive simulation |
+| 3 | **iFrame** ⬤ Required | Ecosystem Roleplay widget | Custom widget hosted | Branching simulation (8 endings) |
+| 3A | **❓ MC Question** ⬤ Required | Growth Chaser underperformance | Configure in Uplimit | Tests ecosystem understanding |
+| 3B | **❓ MC Question** ⬤ Required | Ecosystem drivers definition | Configure in Uplimit | Tests driver vs receiver concept |
+| 3C | **❓ MC Question** ⬤ Required | Optimal strategy sequence | Configure in Uplimit | Tests sequencing insight |
 | 4 | **AI Chat Widget** ○ Optional | Board Strategy Coach (optional) | Configure in Uplimit | Named: "Board Strategy Coach" |
 | 5 | **Details** ○ Optional | Hints and strategy tips (optional) | Type directly | Accordion for struggling students |
 | 6 | **📤 Response (Text + File)** ⬤ Required | Board Strategy Defense submission | Configure in Uplimit | Text entry OR PDF upload, 30-point rubric |
@@ -104,25 +111,98 @@ Once you complete the Revenue Empire Builder, you'll write an executive memo (75
 ```
 
 ### Element 3: iFrame Specifications
-- **Widget Name:** "Revenue Empire Builder"
-- **Widget File:** `revenue-empire-builder.html` (custom interactive simulation)
-- **Hosted URL:** `https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/revenue-empire-builder.html`
-- **iFrame Size:** 800px × 600px
+- **Widget Name:** "Ecosystem Branching Roleplay"
+- **Widget File:** `ecosystem-roleplay.html` (branching simulation)
+- **Hosted URL:** `https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/ecosystem-roleplay.html`
+- **iFrame Size:** 800px × 700px
 - **Modal Size:** 1200px × 800px (for pop-out)
 
 **Widget Features:**
-- Interactive budget allocation sliders
-- Scenario-based decision points (e.g., "New streaming service offers rights deal - accept?")
-- Real-time feedback on revenue performance
-- Risk indicators for each stream
-- Final score/performance summary
-- Uses `ivey-widget-base.css` for consistent styling
+- 3 strategic decisions leading to 8 different endings
+- Shows how sequence of investments affects total revenue
+- Demonstrates "driver" vs "receiver" revenue streams
+- Reveals ecosystem cascade effects
+- MCQs removed - built natively in Uplimit below
 
 **Widget Accessibility:**
 - Keyboard navigation functional ✅
 - ARIA labels on all interactive elements ✅
 - Color-blind safe color scheme ✅
 - Screen reader compatible ✅
+
+**Uplimit Implementation:**
+```html
+<iframe
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/ecosystem-roleplay.html"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Ecosystem Branching Roleplay - Make 3 strategic decisions"
+  aria-label="Interactive branching simulation where you make 3 investment decisions and see how sequence affects total revenue through ecosystem cascade effects"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+---
+
+### Element 3A: MC Question - Growth Chaser Underperformance `[v1.5.0]`
+
+**Question:**
+Why did the "Growth Chaser" strategy (focusing on betting) underperform despite betting's 35% growth rate?
+
+**Options:**
+- A) Betting revenue was capped by regulations
+- B) Betting is a "receiver"—it benefits from fan engagement but doesn't create cascade effects ✓
+- C) The recession hurt betting more than other streams
+
+**Correct Answer:** B
+
+**Feedback - Correct:**
+Exactly! Betting has a high growth rate, but it's a "receiver" in the revenue ecosystem. It benefits from engaged fans but doesn't create the engagement that drives other streams. Ticketing and media create fans; betting monetizes existing fans. Without the drivers, the receiver has nothing to receive.
+
+**Feedback - Incorrect:**
+The key insight is about ecosystem dynamics, not regulations or external factors. Betting is a "receiver" stream—it benefits from engaged fans but doesn't create cascade effects that boost other streams. Growth rate alone doesn't determine strategic value; sequence and ecosystem role matter more.
+
+---
+
+### Element 3B: MC Question - Ecosystem Drivers Definition `[v1.5.0]`
+
+**Question:**
+What are "ecosystem drivers" in sports revenue?
+
+**Options:**
+- A) Revenue streams with the highest growth rates
+- B) Revenue streams that are most profitable
+- C) Revenue streams that create ripple effects, boosting other streams ✓
+
+**Correct Answer:** C
+
+**Feedback - Correct:**
+Correct! Ecosystem drivers like ticketing and media create ripple effects—engaged fans buy merchandise, watch broadcasts, bet on games, and attract sponsors. They don't just generate direct revenue; they amplify ALL other revenue streams. This multiplier effect is why sequence matters.
+
+**Feedback - Incorrect:**
+"Ecosystem drivers" isn't about growth rate or profitability in isolation. It's about ripple effects—streams that create fan engagement which then boosts OTHER streams. Ticketing creates engaged fans → who watch broadcasts → who buy merchandise → who attract sponsors → who bet on games. Drivers create; receivers benefit.
+
+---
+
+### Element 3C: MC Question - Optimal Strategy Sequence `[v1.5.0]`
+
+**Question:**
+Based on the simulation, which strategy sequence would likely produce the best results?
+
+**Options:**
+- A) Start with betting/merch, then add ticketing later
+- B) Build ticketing/media first, then layer betting/merch on top ✓
+- C) Spread investment equally across all streams
+
+**Correct Answer:** B
+
+**Feedback - Correct:**
+Exactly right! The simulation showed that building ecosystem drivers first (ticketing/media) creates cascade effects that multiply returns on growth streams added later. You need engaged fans before you can monetize them through betting and merchandise. Sequence matters as much as allocation.
+
+**Feedback - Incorrect:**
+Think about the ecosystem logic: you need fans before you can monetize fans. Building drivers (ticketing, media) creates the engaged audience that receivers (betting, merch) need to thrive. Equal distribution ignores the cascade effects, and starting with receivers means building on a weak foundation.
 
 ---
 

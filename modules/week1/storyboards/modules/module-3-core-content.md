@@ -1,7 +1,13 @@
 # Five Revenue Streams That Power Sports
-**Version:** 1.8.0 | **Last Updated:** 2026-01-22
+**Version:** 1.9.0 | **Last Updated:** 2026-01-22
 
 **Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports WLO 1.1, 1.2, 1.3)
+
+### Version 1.9.0 Changes
+- **REPLACED:** Element 13 - `dynamic-pricing-simulator.html` → `dynamic-pricing-explorer.html` (simplified widget, MCQs removed)
+- **ADDED:** Elements 13A, 13B, 13C - MC questions for dynamic pricing section (built in Uplimit)
+- **REPLACED:** Element 26 - `betting-market-comparison.html` → `betting-basics-explorer.html` (simplified widget, MCQs removed)
+- **ADDED:** Elements 26A, 26B, 26C - MC questions for betting section (built in Uplimit)
 
 ### Version 1.8.0 Changes
 - **REPLACED:** Element 6 - `media-rights-calculator.html` → `media-rights-explorer.html` (simplified widget)
@@ -20,11 +26,11 @@
 
 | Old Complex Widget | New Simplified Widget | Format |
 |--------------------|----------------------|--------|
-| `revenue-mix-slider.html` | `revenue-streams-explorer.html` | Visual explorer (MCQs in Uplimit) |
-| `media-rights-calculator.html` | `media-rights-explorer.html` | Visual explorer (MCQs in Uplimit) |
-| `dynamic-pricing-simulator.html` | `dynamic-pricing-explorer.html` | Pre-check + Sliders + 3 MCQs |
-| `betting-market-simulator.html` | `betting-basics-explorer.html` | Revenue models + 3 MCQs |
-| `ecosystem-cascade-infographic.html` | `ecosystem-roleplay.html` | Branching (8 endings) + 3 MCQs |
+| `revenue-mix-slider.html` | `revenue-streams-explorer.html` | Visual explorer (MCQs in Uplimit) ✅ |
+| `media-rights-calculator.html` | `media-rights-explorer.html` | Visual explorer (MCQs in Uplimit) ✅ |
+| `dynamic-pricing-simulator.html` | `dynamic-pricing-explorer.html` | Pre-check + Sliders (MCQs in Uplimit) ✅ |
+| `betting-market-simulator.html` | `betting-basics-explorer.html` | Pre-check + Revenue models (MCQs in Uplimit) ✅ |
+| `ecosystem-cascade-infographic.html` | `ecosystem-roleplay.html` | Branching (8 endings) (MCQs in Uplimit) |
 | NEW | `nashville-case-quiz.html` | Case comprehension 5 MCQs |
 
 **Integration Notes:**
@@ -749,7 +755,10 @@ D) Revenue sharing only applies to international broadcast deals
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
 | 12 | **▬ Text** ⬛ Required | Ticketing basics | 1 min | 100 | Type directly |
-| 13 | **⚙ iFrame Widget** ⬛ Required | **Dynamic Pricing Simulator** | 5 min | - | Embed `dynamic-pricing-simulator.html` |
+| 13 | **⚙ iFrame Widget** ⬛ Required | **Dynamic Pricing Explorer** | 5 min | - | Embed `dynamic-pricing-explorer.html` |
+| 13A | **❓ MC Question** ⬛ Required | Largest impact factor | 1 min | - | Configure in Uplimit |
+| 13B | **❓ MC Question** ⬛ Required | Revenue maximization scenario | 1 min | - | Configure in Uplimit |
+| 13C | **❓ MC Question** ⬛ Required | Fan loyalty trade-off | 1 min | - | Configure in Uplimit |
 | 14 | **▭ Image** ▣ Recommended | Premium seating breakdown | 1 min | - | Upload `premium-seating-breakdown.png` |
 | 15 | **▬ Text** ⬛ Required | Premium seating strategy | 1 min | 120 | Type directly |
 | 16 | **⚙ iFrame Widget** ▢ Optional (Phase 3) | **Stadium Revenue Optimizer** | 4 min | - | Embed `stadium-revenue-optimizer.html` |
@@ -931,12 +940,12 @@ In this simulator, you'll take on the role of VP of Ticketing for the Toronto Ra
 **Uplimit Implementation:**
 ```html
 <iframe
-  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/dynamic-pricing-simulator.html"
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/dynamic-pricing-explorer.html"
   width="100%"
   height="700"
   style="border: none; border-radius: 8px;"
-  title="Dynamic Pricing Simulator - Optimize Raptors ticket prices"
-  aria-label="Interactive ticket pricing simulator where you adjust prices based on opponent strength, day of week, and team performance to maximize revenue"
+  title="Dynamic Pricing Explorer - Discover how demand factors affect ticket prices"
+  aria-label="Interactive pricing explorer where you adjust demand factors and see how ticket prices respond"
   allowfullscreen
   loading="lazy">
 </iframe>
@@ -948,6 +957,71 @@ In this simulator, you'll take on the role of VP of Ticketing for the Toronto Ra
 - ✅ Screen reader friendly output announcements
 - ✅ High contrast mode with WCAG AA compliance
 - ✅ Focus indicators on all interactive elements
+
+---
+
+#### Element 13A: MC Question - Largest Impact Factor `[v1.9.0]`
+
+**Question:**
+Which factor typically has the LARGEST impact on dynamic ticket pricing?
+
+**Options:**
+- A) Weather forecast
+- B) Remaining inventory (scarcity) ✓
+- C) Day of the week
+- D) Team's current record
+
+**Correct Answer:** B
+
+**Feedback - Correct:**
+Excellent! Scarcity (remaining inventory) typically drives the largest price changes. When only 5% of tickets remain, prices can increase 40-60% because demand far exceeds supply. This is why dynamic pricing algorithms weight inventory levels heavily—even a weak opponent game commands premium prices when nearly sold out.
+
+**Feedback - Incorrect:**
+Not quite. While all these factors matter, scarcity (remaining inventory) typically has the LARGEST impact. When only 5% of tickets remain, prices can jump 40-60% regardless of other factors. Review the Dynamic Pricing Explorer—notice how the inventory slider creates the biggest price swings.
+
+---
+
+#### Element 13B: MC Question - Revenue Maximization Scenario `[v1.9.0]`
+
+**Question:**
+A team plays their biggest rival on Saturday night, but only 10% of tickets remain. What pricing strategy would maximize revenue?
+
+**Options:**
+- A) Lower prices to fill the stadium completely
+- B) Keep prices stable to maintain fan trust
+- C) Increase prices significantly—demand exceeds supply ✓
+- D) Offer discounts to season ticket holders only
+
+**Correct Answer:** C
+
+**Feedback - Correct:**
+Correct! With a rivalry game, Saturday timing, AND scarcity (only 10% remaining), demand is extremely high. Dynamic pricing would significantly increase prices because fans are willing to pay premium prices for this high-value experience. The remaining 10% represents the most motivated buyers—price sensitivity is lowest here.
+
+**Feedback - Incorrect:**
+Consider the scenario more carefully: rivalry game + Saturday + 90% sold = extremely high demand with very limited supply. Lowering prices or keeping them stable leaves money on the table. The 10% of remaining buyers are highly motivated—they'll pay premium prices because missing this game has high opportunity cost.
+
+---
+
+#### Element 13C: MC Question - Fan Loyalty Trade-off `[v1.9.0]`
+
+**Question:**
+Why might a team intentionally NOT maximize prices during a playoff push?
+
+**Options:**
+- A) Dynamic pricing systems can't adjust fast enough
+- B) To reward loyal fans and build long-term relationships ✓
+- C) League rules prevent playoff price increases
+- D) Lower prices always result in more total revenue
+
+**Correct Answer:** B
+
+**Feedback - Correct:**
+Exactly right! Teams balance short-term revenue with long-term fan relationships. Extracting maximum value during exciting moments can damage trust and accessibility, potentially reducing season ticket renewals and merchandise purchases over time. Smart teams think about lifetime customer value, not just tonight's gate.
+
+**Feedback - Incorrect:**
+Think beyond immediate revenue. Teams balance short-term gains against long-term fan relationships. "Gouging" during playoff runs can damage trust, reducing season ticket renewals and creating perception problems. The question is about strategic restraint—choosing relationship-building over revenue maximization.
+
+---
 
 #### Element 14: Image - Premium Seating Breakdown
 - **File:** `premium-seating-breakdown.png`
@@ -1612,7 +1686,10 @@ D) Player birthday promotions (targeted 25% increase)
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
 | 25 | **▬ Text** ⬛ Required | Betting growth | 1 min | 100 | Type directly |
-| 26 | **⚙ iFrame Widget** ▢ Optional | **Betting Market Comparison** | 2 min | - | Embed `betting-market-comparison.html` |
+| 26 | **⚙ iFrame Widget** ⬛ Required | **Betting Basics Explorer** | 3 min | - | Embed `betting-basics-explorer.html` |
+| 26A | **❓ MC Question** ⬛ Required | Primary monetization method | 1 min | - | Configure in Uplimit |
+| 26B | **❓ MC Question** ⬛ Required | Data licensing value | 1 min | - | Configure in Uplimit |
+| 26C | **❓ MC Question** ⬛ Required | Partnership concerns | 1 min | - | Configure in Uplimit |
 | 27 | **ⓘ Infobox** ▣ Recommended | Betting growth statistics | 1 min | - | Type directly |
 
 #### Element 25: Betting Growth Text
@@ -1647,99 +1724,150 @@ Sports betting represents the **newest and fastest-growing revenue stream**, cur
 
 ---
 
-### Element 25B: Widget Introduction - Betting Market Comparison `[v1.5.0]`
+### Element 25B: Widget Introduction - Betting Basics Explorer `[v1.9.0]`
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-# Global Betting Markets: A Strategic Comparison
+# How Teams Monetize Betting Partnerships
 
-Sports betting went from illegal to a $200+ billion global market in just six years. This comparison helps you understand how market characteristics, regulations, and opportunities vary dramatically across key betting markets.
+Sports betting has exploded since legalization, but how do teams actually make money from it? The answer isn't what most people assume—teams don't get a cut of the bets themselves. This explorer reveals the real revenue models behind betting partnerships.
 
-## The Question
+## The Key Question
 
-A professional sports league wants to expand its betting partnerships internationally. Which markets offer the best combination of growth potential, favorable regulations, and manageable risk? How do Canada, the US, UK, and Ontario differ in strategic value?
+A professional sports team signs a deal with a major sportsbook (like FanDuel or DraftKings). How does the team actually make money from this partnership?
 
-## What You'll See
+## What You'll Discover
 
-- **Market Metrics:** Size ($4.6B to $93B), growth rates (4% to 45%), and penetration levels across four key markets
-- **Regulatory Environments:** Tax rates ranging from 15% (UK) to 51% (NY), licensing models, and advertising restrictions
-- **Market Characteristics:** Population, top sports, mobile handle percentages, and market maturity stages
-- **Opportunities & Risks:** Key strategic factors for each market including competition intensity and regulatory trends
+- **Sponsorship Deals:** Fixed annual payments ($10-50M) for branding rights, signage, and "Official Partner" status
+- **Data Licensing:** Leagues sell real-time game data that sportsbooks need for live betting
+- **Media Integration:** Betting content in broadcasts drives affiliate revenue
+- **Venue Sportsbooks:** Physical betting lounges inside stadiums share revenue with teams
 
-## How to Use This Comparison
+## The Core Insight
 
-1. **Review Market Overview:** Compare size, growth, penetration, and operator counts at a glance
-2. **Analyze Regulations:** Understand how tax rates and licensing models affect profitability
-3. **Consider Market Stage:** Mature (UK), rapid growth (US), or nascent (Ontario) markets require different strategies
-4. **Evaluate Opportunities & Risks:** Each market has distinct advantages and challenges
+Teams don't get a cut of actual bets. Instead, they monetize betting through traditional sponsorship models—selling access to their brand, data, and venue rights to sportsbook companies eager to reach sports fans.
 
-## Key Insights
+## After This Explorer
 
-- **Highest Growth:** Ontario at +45%—but concentrated in a single province
-- **Largest Scale:** US at $93B—but intense competition and variable taxes (6.75% to 51%)
-- **Most Sophisticated:** UK market—but mature with limited growth (4%)
-- **Best Entry Point:** Canada—limited operators, provincial expansion ahead
-
-## After This Comparison
-
-You've now explored all five revenue streams. Next, see how these streams interconnect in the Revenue Ecosystem infographic—showing how a single strategic decision creates ripple effects across ALL streams.
+You've now explored all five revenue streams. Next, see how these streams interconnect in the Revenue Ecosystem—showing how betting, as a "receiver" stream, depends on engaged fans created by "driver" streams like ticketing and media.
 ```
 
 ---
 
-#### Element 26: iFrame Widget - Betting Market Comparison `[v1.5.0]`
+#### Element 26: iFrame Widget - Betting Basics Explorer `[v1.9.0]`
 
-### ⚙ Interactive Activity: Betting Market Comparison
+### ⚙ Interactive Activity: Betting Basics Explorer
 
 **Practice: WLO 1.1 (Map emerging revenue streams) & WLO 1.3 (Evaluate growth potential and risks)**
 
-Sports betting is the fastest-growing revenue stream in professional sports, expanding 30-40% year-over-year since legalization. This side-by-side comparison presents four key betting markets—Canada, United States, United Kingdom, and Ontario—allowing you to quickly analyze market size, growth rates, regulatory environments, and strategic opportunities.
+Sports betting is the fastest-growing revenue stream in professional sports, expanding 30-40% year-over-year since legalization. But how do teams actually make money from betting? This explorer walks you through a pre-check to test your assumptions, then reveals the four primary revenue models teams use to monetize betting partnerships.
 
 **What you'll discover:**
 
-- **Market Scale:** How the US ($93B) dwarfs Canada ($4.6B) but faces intense competition and tax variability
-- **Growth Trajectories:** Why Ontario (+45%) leads in growth while the UK (+4%) is mature and saturated
-- **Regulatory Differences:** Tax rates ranging from 15% (UK) to 51% (NY) and how they impact profitability
-- **Strategic Trade-offs:** Which markets favor new entrants, established operators, or specific sports leagues
+- **The Misconception:** Teams don't get commissions on bets—the revenue model is sponsorship-based
+- **Revenue Models:** Sponsorship deals, data licensing, media integration, venue sportsbooks
+- **Real Examples:** Caesars paying $10M/year to the NY Giants, MLB's $80M data deal with MGM
+- **Strategic Concerns:** Integrity perception and conflicts of interest
 
-**Time commitment:** 2 minutes
+**Time commitment:** 3 minutes
 **Learning outcomes practiced:** WLO 1.1 (Understanding betting revenue stream), WLO 1.3 (Evaluating growth potential and regulatory risks)
 
 ---
 
-**Widget Purpose:** Compare betting market characteristics across key North American and international markets.
+**Widget Purpose:** Explore how teams monetize betting partnerships through sponsorship, data licensing, and media integration.
 
-**Widget Status:** ✅ Built and Ready
+**Widget Status:** ✅ Built and Ready (MCQs removed - build in Uplimit)
 
-**File Location:** `modules/week1/widgets/betting-market-comparison.html`
+**File Location:** `modules/week1/widgets/betting-basics-explorer.html`
 
-**Format:** Side-by-side comparison tables presenting:
-- Market metrics (size, growth, penetration, operators)
-- Regulatory environment (status, licensing, tax rates, advertising)
-- Market characteristics (population, top sports, mobile handle)
-- Opportunities and risks by market
+**Format:** Pre-check → Interactive exploration of 4 revenue models → Key insights
 
 **Uplimit Implementation:**
 ```html
 <iframe
-  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/betting-market-comparison.html"
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/betting-basics-explorer.html"
   width="100%"
   height="700"
   style="border: none; border-radius: 8px;"
-  title="Betting Market Comparison - Compare Canada, US, UK, and Ontario betting markets"
-  aria-label="Side-by-side comparison tables showing betting market size, regulations, and opportunities across four key markets"
+  title="Betting Basics Explorer - Discover how teams monetize betting partnerships"
+  aria-label="Interactive explorer showing the four ways teams make money from sports betting: sponsorship, data licensing, media integration, and venue sportsbooks"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
 
 **Accessibility:**
-- ✅ Semantic table structure with proper headers
-- ✅ ARIA labels on tables
+- ✅ Keyboard navigation for all controls
+- ✅ ARIA labels and live regions
 - ✅ Screen reader compatible
 - ✅ High contrast mode support
 - ✅ WCAG 2.2 AA compliant
+
+---
+
+#### Element 26A: MC Question - Primary Monetization Method `[v1.9.0]`
+
+**Question:**
+What is the PRIMARY way professional sports teams currently monetize betting partnerships?
+
+**Options:**
+- A) Commission on individual bets placed
+- B) Fixed sponsorship fees and data licensing ✓
+- C) Revenue share from sportsbook profits
+- D) Operating their own betting platforms
+
+**Correct Answer:** B
+
+**Feedback - Correct:**
+Exactly right! Teams primarily earn through fixed sponsorship deals (branding rights, signage, "official partner" status) and data licensing agreements. They don't typically receive commissions on individual bets or profit shares. This sponsorship-based model provides predictable revenue regardless of whether bettors win or lose.
+
+**Feedback - Incorrect:**
+Common misconception! Teams don't get a cut of individual bets or sportsbook profits. The primary revenue model is traditional sponsorship—fixed annual payments ($10-50M) for branding rights, official partner status, and data licensing. Review the Betting Basics Explorer to see how these deals are structured.
+
+---
+
+#### Element 26B: MC Question - Data Licensing Value `[v1.9.0]`
+
+**Question:**
+Why is 'data licensing' becoming increasingly valuable for leagues and teams?
+
+**Options:**
+- A) Fans pay to access advanced statistics
+- B) Sportsbooks need real-time data for live in-game betting ✓
+- C) Government requires teams to share data publicly
+- D) Data helps teams make better player decisions
+
+**Correct Answer:** B
+
+**Feedback - Correct:**
+Correct! Live in-game betting is the fastest-growing segment of sports wagering (now 50%+ of all bets in some markets). Sportsbooks need official, real-time data—pitch velocity, player positions, time of possession—to offer accurate live odds. This makes leagues' proprietary data extremely valuable, worth $10-80M annually per league.
+
+**Feedback - Incorrect:**
+Think about who NEEDS this data and why. Live in-game betting requires instant, accurate data to set odds—pitch velocity, player positions, possession stats. Sportsbooks can't offer live betting without official data feeds, making leagues' real-time data extremely valuable ($10-80M/year per league).
+
+---
+
+#### Element 26C: MC Question - Partnership Concerns `[v1.9.0]`
+
+**Question:**
+A team is considering a betting partnership. Which concern should they weigh most carefully?
+
+**Options:**
+- A) The sportsbook might not have enough customers
+- B) Perception of integrity and conflicts of interest ✓
+- C) The sponsorship fee might decrease over time
+- D) Fans might not understand the partnership
+
+**Correct Answer:** B
+
+**Feedback - Correct:**
+Exactly! The biggest concern is maintaining perceived integrity. If fans believe betting partnerships could influence game outcomes or team decisions, it damages trust in the sport itself—a much bigger threat than revenue fluctuations. This is why leagues implement strict integrity policies and separation between operations and betting partnerships.
+
+**Feedback - Incorrect:**
+While all business concerns matter, integrity perception is THE critical issue. If fans start believing games might be influenced by betting relationships, trust in the entire sport erodes. This existential risk is why leagues implement strict integrity policies and why "perception of conflicts" outweighs financial considerations.
+
+---
 
 #### Element 27: Infobox - Betting Growth Statistics
 ```

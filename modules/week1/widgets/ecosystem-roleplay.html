@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Ecosystem Roleplay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-400: #a3a3a3;
+            --color-neutral-500: #737373;
+            --color-neutral-600: #525252;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-danger: #ef4444;
+            --color-info: #3b82f6;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: var(--color-neutral-100);
+            color: var(--color-neutral-800);
+            min-height: 100vh;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Screen system */
+        .screen { display: none; }
+        .screen.active { display: block; }
+
+        /* Card styling */
+        .card {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .card-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .year-badge {
+            display: inline-block;
+            background: var(--color-neutral-900);
+            color: white;
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.75rem;
+        }
+
+        .year-badge.intro { background: var(--color-info); }
+        .year-badge.decision { background: var(--color-warning); }
+        .year-badge.consequence { background: var(--color-neutral-600); }
+        .year-badge.ending { background: var(--color-success); }
+
+        h1 {
+            font-size: 1.5rem;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--color-neutral-500);
+            font-size: 0.95rem;
+        }
+
+        .narrative {
+            color: var(--color-neutral-700);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .narrative p {
+            margin-bottom: 1rem;
+        }
+
+        .narrative strong {
+            color: var(--color-neutral-900);
+        }
+
+        /* Stats display */
+        .stats-bar {
+            display: flex;
+            justify-content: space-between;
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            color: var(--color-neutral-500);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+        }
+
+        .stat-value.positive { color: var(--color-success); }
+        .stat-value.negative { color: var(--color-danger); }
+        .stat-value.neutral { color: var(--color-warning); }
+
+        /* Choices */
+        .choices {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .choice-btn {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            background: var(--color-neutral-50);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s;
+        }
+
+        .choice-btn:hover {
+            border-color: var(--color-neutral-400);
+            background: white;
+        }
+
+        .choice-btn:focus {
+            outline: 3px solid var(--color-info);
+            outline-offset: 2px;
+        }
+
+        .choice-letter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--color-neutral-200);
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: var(--color-neutral-700);
+            flex-shrink: 0;
+        }
+
+        .choice-content {
+            flex: 1;
+        }
+
+        .choice-title {
+            font-weight: 600;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.25rem;
+        }
+
+        .choice-desc {
+            font-size: 0.85rem;
+            color: var(--color-neutral-500);
+        }
+
+        /* Consequence callout */
+        .consequence-box {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .consequence-box.positive {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+        }
+
+        .consequence-box.negative {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+        }
+
+        .consequence-box h3 {
+            font-size: 0.9rem;
+            color: var(--color-neutral-800);
+            margin-bottom: 0.5rem;
+        }
+
+        .consequence-box p {
+            font-size: 0.9rem;
+            color: var(--color-neutral-700);
+            line-height: 1.5;
+        }
+
+        /* Revenue visualization */
+        .revenue-viz {
+            background: var(--color-neutral-900);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .revenue-viz h4 {
+            color: var(--color-neutral-300);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1rem;
+        }
+
+        .revenue-bars {
+            display: flex;
+            align-items: flex-end;
+            gap: 0.5rem;
+            height: 100px;
+        }
+
+        .revenue-bar {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bar-fill {
+            width: 100%;
+            background: var(--color-success);
+            border-radius: 4px 4px 0 0;
+            transition: height 0.5s ease;
+        }
+
+        .bar-label {
+            font-size: 0.65rem;
+            color: var(--color-neutral-400);
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        .bar-value {
+            font-size: 0.75rem;
+            color: white;
+            font-weight: 600;
+            margin-top: 0.25rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.875rem 1.75rem;
+            background: var(--color-neutral-900);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--color-neutral-700);
+        }
+
+        .btn:focus {
+            outline: 3px solid var(--color-info);
+            outline-offset: 2px;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-neutral-900);
+            border: 2px solid var(--color-neutral-300);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--color-neutral-900);
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        /* Ending grades */
+        .grade-display {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .grade-value {
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .grade-value.grade-a { color: var(--color-success); }
+        .grade-value.grade-b { color: var(--color-warning); }
+        .grade-value.grade-c { color: var(--color-danger); }
+        .grade-value.grade-d { color: var(--color-danger); }
+
+        .grade-label {
+            color: var(--color-neutral-500);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Progress indicator */
+        .progress-bar {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .progress-step {
+            flex: 1;
+            height: 4px;
+            background: var(--color-neutral-200);
+            border-radius: 2px;
+        }
+
+        .progress-step.complete {
+            background: var(--color-neutral-900);
+        }
+
+        .progress-step.current {
+            background: var(--color-info);
+        }
+
+        /* Key insight callout */
+        .key-insight {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .key-insight h3 {
+            font-size: 0.85rem;
+            color: var(--color-info);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-insight p {
+            color: var(--color-neutral-800);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 1rem; }
+            .card { padding: 1.5rem; }
+            .stats-bar { flex-wrap: wrap; gap: 1rem; }
+            .stat { flex: 1 1 40%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- INTRO SCREEN -->
+        <div class="screen active" id="intro">
+            <div class="card">
+                <div class="card-header">
+                    <span class="year-badge intro">Roleplay</span>
+                    <h1>Revenue Ecosystem Challenge</h1>
+                    <p class="subtitle">Make 3 decisions. See the consequences.</p>
+                </div>
+
+                <div class="narrative">
+                    <p>You've just been hired as <strong>Chief Revenue Officer</strong> of a mid-market NHL expansion team. The owners have set a clear mandate:</p>
+                    <p><strong>Grow annual revenue from $100M to $200M within 5 years.</strong></p>
+                    <p>You'll face three critical decisions over the next five years. Each choice has consequences that ripple through your entire revenue ecosystem.</p>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-label">Current Revenue</div>
+                        <div class="stat-value">$100M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Target</div>
+                        <div class="stat-value">$200M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Timeline</div>
+                        <div class="stat-value">5 Years</div>
+                    </div>
+                </div>
+
+                <div class="key-insight">
+                    <h3>Revenue Streams</h3>
+                    <p><strong>Media Rights</strong> ($40M) • <strong>Ticketing</strong> ($25M) • <strong>Sponsorship</strong> ($20M) • <strong>Merchandise</strong> ($10M) • <strong>Betting/Gaming</strong> ($5M)</p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn" onclick="showScreen('decision1')">Begin Challenge</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- DECISION 1: Investment Philosophy -->
+        <div class="screen" id="decision1">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step current"></div>
+                    <div class="progress-step"></div>
+                    <div class="progress-step"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge decision">Year 1 Decision</span>
+                    <h1>Investment Philosophy</h1>
+                    <p class="subtitle">Where will you focus your growth investment?</p>
+                </div>
+
+                <div class="narrative">
+                    <p>Your analytics team presents two strategic options. The board wants your recommendation by end of week.</p>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-label">Revenue</div>
+                        <div class="stat-value">$100M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Investment Budget</div>
+                        <div class="stat-value">$15M</div>
+                    </div>
+                </div>
+
+                <div class="choices">
+                    <button class="choice-btn" onclick="makeChoice(1, 'growth')">
+                        <span class="choice-letter">A</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Chase the Growth</div>
+                            <div class="choice-desc">Focus on Betting/Gaming (35% annual growth!) and Merchandise (10% growth). These are the fastest-growing revenue streams in sports.</div>
+                        </div>
+                    </button>
+                    <button class="choice-btn" onclick="makeChoice(1, 'ecosystem')">
+                        <span class="choice-letter">B</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Build the Foundation</div>
+                            <div class="choice-desc">Focus on Ticketing and Media Rights. Lower growth rates (5-8%), but your VP of Partnerships claims they "drive everything else."</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONSEQUENCE 1A: Growth Path -->
+        <div class="screen" id="consequence1-growth">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step"></div>
+                    <div class="progress-step"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge consequence">Years 1-2 Results</span>
+                    <h1>Betting Boom</h1>
+                </div>
+
+                <div class="consequence-box">
+                    <h3>What Happened</h3>
+                    <p>Your betting partnership exceeded projections! Gaming revenue jumped 40%. Merchandise sales grew 12%. The board is impressed with the early numbers.</p>
+                </div>
+
+                <div class="revenue-viz">
+                    <h4>Revenue by Year</h4>
+                    <div class="revenue-bars">
+                        <div class="revenue-bar">
+                            <div class="bar-fill" style="height: 50%"></div>
+                            <div class="bar-label">Y0</div>
+                            <div class="bar-value">$100M</div>
+                        </div>
+                        <div class="revenue-bar">
+                            <div class="bar-fill" style="height: 58%"></div>
+                            <div class="bar-label">Y1</div>
+                            <div class="bar-value">$116M</div>
+                        </div>
+                        <div class="revenue-bar">
+                            <div class="bar-fill" style="height: 67%"></div>
+                            <div class="bar-label">Y2</div>
+                            <div class="bar-value">$134M</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-label">Current Revenue</div>
+                        <div class="stat-value positive">$134M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Growth</div>
+                        <div class="stat-value positive">+34%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Remaining Gap</div>
+                        <div class="stat-value">$66M</div>
+                    </div>
+                </div>
+
+                <div class="narrative">
+                    <p>However, your VP of Partnerships notes something concerning: <em>"Our betting revenue grew, but it didn't lift anything else. Sponsorship and media stayed flat."</em></p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn" onclick="showScreen('decision2-growth')">Continue to Year 3</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONSEQUENCE 1B: Ecosystem Path -->
+        <div class="screen" id="consequence1-ecosystem">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step"></div>
+                    <div class="progress-step"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge consequence">Years 1-2 Results</span>
+                    <h1>Foundation Building</h1>
+                </div>
+
+                <div class="consequence-box positive">
+                    <h3>What Happened</h3>
+                    <p>Your premium ticketing initiative sold out. Season ticket renewals hit 94%. Media ratings climbed 18%. And something unexpected: merchandise sales jumped 25% without any direct investment.</p>
+                </div>
+
+                <div class="revenue-viz">
+                    <h4>Revenue by Year</h4>
+                    <div class="revenue-bars">
+                        <div class="revenue-bar">
+                            <div class="bar-fill" style="height: 50%"></div>
+                            <div class="bar-label">Y0</div>
+                            <div class="bar-value">$100M</div>
+                        </div>
+                        <div class="revenue-bar">
+                            <div class="bar-fill" style="height: 60%"></div>
+                            <div class="bar-label">Y1</div>
+                            <div class="bar-value">$120M</div>
+                        </div>
+                        <div class="revenue-bar">
+                            <div class="bar-fill" style="height: 73%"></div>
+                            <div class="bar-label">Y2</div>
+                            <div class="bar-value">$146M</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-label">Current Revenue</div>
+                        <div class="stat-value positive">$146M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Growth</div>
+                        <div class="stat-value positive">+46%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Remaining Gap</div>
+                        <div class="stat-value">$54M</div>
+                    </div>
+                </div>
+
+                <div class="key-insight">
+                    <h3>Cascade Effect Observed</h3>
+                    <p>Your VP explains: <em>"Engaged fans in the arena buy more merchandise, watch more broadcasts, and bet more on games. Ticketing investment created a ripple effect across all streams."</em></p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn" onclick="showScreen('decision2-ecosystem')">Continue to Year 3</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- DECISION 2: Recession (Growth Path) -->
+        <div class="screen" id="decision2-growth">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step current"></div>
+                    <div class="progress-step"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge decision">Year 3 Decision</span>
+                    <h1>Economic Downturn</h1>
+                    <p class="subtitle">A recession hits. Consumer spending drops 15%.</p>
+                </div>
+
+                <div class="narrative">
+                    <p>Corporate sponsors are cutting budgets. Your betting partner warns of regulatory headwinds. The board is nervous.</p>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-label">Revenue</div>
+                        <div class="stat-value">$134M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Market Outlook</div>
+                        <div class="stat-value negative">-15%</div>
+                    </div>
+                </div>
+
+                <div class="choices">
+                    <button class="choice-btn" onclick="makeChoice(2, 'cut')">
+                        <span class="choice-letter">A</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Cut Costs</div>
+                            <div class="choice-desc">Reduce spending across all departments by 20%. Protect the bottom line and weather the storm.</div>
+                        </div>
+                    </button>
+                    <button class="choice-btn" onclick="makeChoice(2, 'double')">
+                        <span class="choice-letter">B</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Double Down</div>
+                            <div class="choice-desc">Maintain investment in your growth strategy. Betting and gaming might be recession-resistant entertainment.</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- DECISION 2: Recession (Ecosystem Path) -->
+        <div class="screen" id="decision2-ecosystem">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step current"></div>
+                    <div class="progress-step"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge decision">Year 3 Decision</span>
+                    <h1>Economic Downturn</h1>
+                    <p class="subtitle">A recession hits. Consumer spending drops 15%.</p>
+                </div>
+
+                <div class="narrative">
+                    <p>Your strong season ticket base provides some stability, but sponsors are nervous. Media partners are renegotiating contracts downward across the league.</p>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-label">Revenue</div>
+                        <div class="stat-value">$146M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Market Outlook</div>
+                        <div class="stat-value negative">-15%</div>
+                    </div>
+                </div>
+
+                <div class="choices">
+                    <button class="choice-btn" onclick="makeChoice(2, 'cut')">
+                        <span class="choice-letter">A</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Cut Costs</div>
+                            <div class="choice-desc">Reduce spending across all departments by 20%. Protect the bottom line and weather the storm.</div>
+                        </div>
+                    </button>
+                    <button class="choice-btn" onclick="makeChoice(2, 'double')">
+                        <span class="choice-letter">B</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Double Down</div>
+                            <div class="choice-desc">Invest even more in fan experience. Loyal fans will stick around, and you'll emerge stronger.</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONSEQUENCE 2: Growth + Cut -->
+        <div class="screen" id="consequence2-growth-cut">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge consequence">Years 3-4 Results</span>
+                    <h1>Survival Mode</h1>
+                </div>
+
+                <div class="consequence-box negative">
+                    <h3>What Happened</h3>
+                    <p>Cost cuts worked short-term, but betting revenue plateaued as competitors outspent you on marketing. Without fan experience investment, engagement metrics dropped 22%.</p>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-label">Current Revenue</div>
+                        <div class="stat-value neutral">$138M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">2-Year Growth</div>
+                        <div class="stat-value neutral">+3%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Remaining Gap</div>
+                        <div class="stat-value negative">$62M</div>
+                    </div>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn" onclick="showScreen('decision3-growth-cut')">Continue to Year 5</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONSEQUENCE 2: Growth + Double -->
+        <div class="screen" id="consequence2-growth-double">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge consequence">Years 3-4 Results</span>
+                    <h1>Betting on Betting</h1>
+                </div>
+
+                <div class="consequence-box">
+                    <h3>What Happened</h3>
+                    <p>Your betting revenue grew another 25%, but regulatory concerns limited expansion. More concerning: without strong ticketing fundamentals, your betting users came from competitor platforms, not your own fanbase. Customer acquisition costs tripled.</p>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-label">Current Revenue</div>
+                        <div class="stat-value">$152M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">2-Year Growth</div>
+                        <div class="stat-value">+13%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Remaining Gap</div>
+                        <div class="stat-value negative">$48M</div>
+                    </div>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn" onclick="showScreen('decision3-growth-double')">Continue to Year 5</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONSEQUENCE 2: Ecosystem + Cut -->
+        <div class="screen" id="consequence2-ecosystem-cut">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge consequence">Years 3-4 Results</span>
+                    <h1>Holding Steady</h1>
+                </div>
+
+                <div class="consequence-box">
+                    <h3>What Happened</h3>
+                    <p>Your loyal season ticket holders mostly renewed, cushioning the blow. But reduced marketing spend meant fewer new fans. The cascade effects you'd built began to weaken as engagement dropped.</p>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-label">Current Revenue</div>
+                        <div class="stat-value">$156M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">2-Year Growth</div>
+                        <div class="stat-value neutral">+7%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Remaining Gap</div>
+                        <div class="stat-value">$44M</div>
+                    </div>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn" onclick="showScreen('decision3-ecosystem-cut')">Continue to Year 5</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONSEQUENCE 2: Ecosystem + Double -->
+        <div class="screen" id="consequence2-ecosystem-double">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge consequence">Years 3-4 Results</span>
+                    <h1>Counter-Cyclical Win</h1>
+                </div>
+
+                <div class="consequence-box positive">
+                    <h3>What Happened</h3>
+                    <p>While competitors cut back, you invested in premium experiences. Season ticket waitlist grew to 8,000 names. Sponsors noticed your engaged fanbase and actually <em>increased</em> their commitments. The cascade effect accelerated.</p>
+                </div>
+
+                <div class="stats-bar">
+                    <div class="stat">
+                        <div class="stat-label">Current Revenue</div>
+                        <div class="stat-value positive">$178M</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">2-Year Growth</div>
+                        <div class="stat-value positive">+22%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-label">Remaining Gap</div>
+                        <div class="stat-value positive">$22M</div>
+                    </div>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn" onclick="showScreen('decision3-ecosystem-double')">Continue to Year 5</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- DECISION 3 screens (4 variations based on path) -->
+        <div class="screen" id="decision3-growth-cut">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step current"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge decision">Year 5 Decision</span>
+                    <h1>Championship Run</h1>
+                    <p class="subtitle">Your team makes the playoffs! Fan interest surges.</p>
+                </div>
+
+                <div class="narrative">
+                    <p>This is your chance to close the gap. Revenue is at $138M. You need $200M. The playoffs create a short window of intense fan engagement.</p>
+                </div>
+
+                <div class="choices">
+                    <button class="choice-btn" onclick="showEnding('growth-cut-short')">
+                        <span class="choice-letter">A</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Maximize the Moment</div>
+                            <div class="choice-desc">Jack up prices, push merchandise hard, and capture every dollar from this playoff run.</div>
+                        </div>
+                    </button>
+                    <button class="choice-btn" onclick="showEnding('growth-cut-long')">
+                        <span class="choice-letter">B</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Build for the Future</div>
+                            <div class="choice-desc">Use playoff momentum to lock in long-term season ticket commitments and multi-year sponsor deals.</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="decision3-growth-double">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step current"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge decision">Year 5 Decision</span>
+                    <h1>Championship Run</h1>
+                    <p class="subtitle">Your team makes the playoffs! Fan interest surges.</p>
+                </div>
+
+                <div class="narrative">
+                    <p>Revenue is at $152M. The $200M target is within reach if you play this right. Betting engagement spikes during playoffs.</p>
+                </div>
+
+                <div class="choices">
+                    <button class="choice-btn" onclick="showEnding('growth-double-short')">
+                        <span class="choice-letter">A</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Maximize the Moment</div>
+                            <div class="choice-desc">Push betting promotions hard during playoffs. Capture the gambling surge.</div>
+                        </div>
+                    </button>
+                    <button class="choice-btn" onclick="showEnding('growth-double-long')">
+                        <span class="choice-letter">B</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Build for the Future</div>
+                            <div class="choice-desc">Convert playoff bettors into season ticket holders and long-term fans.</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="decision3-ecosystem-cut">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step current"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge decision">Year 5 Decision</span>
+                    <h1>Championship Run</h1>
+                    <p class="subtitle">Your team makes the playoffs! Fan interest surges.</p>
+                </div>
+
+                <div class="narrative">
+                    <p>Revenue is at $156M. The $200M target is ambitious but possible. Your loyal fanbase is energized.</p>
+                </div>
+
+                <div class="choices">
+                    <button class="choice-btn" onclick="showEnding('ecosystem-cut-short')">
+                        <span class="choice-letter">A</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Maximize the Moment</div>
+                            <div class="choice-desc">Premium playoff pricing and merchandise blitz to capture maximum revenue now.</div>
+                        </div>
+                    </button>
+                    <button class="choice-btn" onclick="showEnding('ecosystem-cut-long')">
+                        <span class="choice-letter">B</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Build for the Future</div>
+                            <div class="choice-desc">Reward loyal fans with playoff access priority. Lock in 5-year sponsorship renewals.</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="decision3-ecosystem-double">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step current"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge decision">Year 5 Decision</span>
+                    <h1>Championship Run</h1>
+                    <p class="subtitle">Your team makes the playoffs! Fan interest surges.</p>
+                </div>
+
+                <div class="narrative">
+                    <p>Revenue is at $178M. You're close! The cascade effects are in full swing—every playoff game boosts merchandise, betting, and sponsor visibility.</p>
+                </div>
+
+                <div class="choices">
+                    <button class="choice-btn" onclick="showEnding('ecosystem-double-short')">
+                        <span class="choice-letter">A</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Maximize the Moment</div>
+                            <div class="choice-desc">Aggressive playoff pricing. The demand is there—capture it all now.</div>
+                        </div>
+                    </button>
+                    <button class="choice-btn" onclick="showEnding('ecosystem-double-long')">
+                        <span class="choice-letter">B</span>
+                        <div class="choice-content">
+                            <div class="choice-title">Build for the Future</div>
+                            <div class="choice-desc">Convert the playoff energy into permanent ecosystem growth. Long-term deals everywhere.</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8 ENDING SCREENS -->
+        <div class="screen" id="ending-growth-cut-short">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge ending">Final Results</span>
+                    <h1>Short-Term Thinking</h1>
+                </div>
+
+                <div class="grade-display">
+                    <div class="grade-value grade-d">D</div>
+                    <div class="grade-label">$156M Final Revenue</div>
+                </div>
+
+                <div class="consequence-box negative">
+                    <h3>What Happened</h3>
+                    <p>You squeezed $18M from the playoff run, but burned goodwill. Season ticket renewals dropped to 71%. Without ecosystem foundations or fan loyalty, you're left chasing volatile betting revenue.</p>
+                </div>
+
+                <div class="key-insight">
+                    <h3>The Lesson</h3>
+                    <p><strong>Betting is a "receiver," not a driver.</strong> It benefits from fan engagement but doesn't create it. Without investing in the ecosystem (ticketing, media), you had no foundation to amplify.</p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn btn-secondary" onclick="location.reload()">Try Different Path</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="ending-growth-cut-long">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge ending">Final Results</span>
+                    <h1>Too Little, Too Late</h1>
+                </div>
+
+                <div class="grade-display">
+                    <div class="grade-value grade-c">C</div>
+                    <div class="grade-label">$162M Final Revenue</div>
+                </div>
+
+                <div class="consequence-box">
+                    <h3>What Happened</h3>
+                    <p>You tried to pivot to long-term thinking, but years of chasing growth without building fan engagement left you without the loyalty base to convert. New sponsors saw through the playoff spike.</p>
+                </div>
+
+                <div class="key-insight">
+                    <h3>The Lesson</h3>
+                    <p><strong>Ecosystem effects compound over time.</strong> Starting with the foundation (ticketing, media) creates cascades that accelerate growth. Starting with "growth" streams means building on sand.</p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn btn-secondary" onclick="location.reload()">Try Different Path</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="ending-growth-double-short">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge ending">Final Results</span>
+                    <h1>The Betting Ceiling</h1>
+                </div>
+
+                <div class="grade-display">
+                    <div class="grade-value grade-c">C</div>
+                    <div class="grade-label">$174M Final Revenue</div>
+                </div>
+
+                <div class="consequence-box">
+                    <h3>What Happened</h3>
+                    <p>Playoff betting promotions worked, adding $22M. But regulatory scrutiny increased, and you hit the ceiling of what betting can deliver without a loyal fanbase driving it.</p>
+                </div>
+
+                <div class="key-insight">
+                    <h3>The Lesson</h3>
+                    <p><strong>High-growth streams have hidden constraints.</strong> Betting's 35% growth rate is real, but it doesn't compound the same way ecosystem investments do. It's a receiver, not a driver.</p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn btn-secondary" onclick="location.reload()">Try Different Path</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="ending-growth-double-long">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge ending">Final Results</span>
+                    <h1>Partial Recovery</h1>
+                </div>
+
+                <div class="grade-display">
+                    <div class="grade-value grade-b">B-</div>
+                    <div class="grade-label">$181M Final Revenue</div>
+                </div>
+
+                <div class="consequence-box">
+                    <h3>What Happened</h3>
+                    <p>Converting playoff bettors to season ticket holders partially worked. You're building the ecosystem now—but you lost three years where those cascade effects could have been compounding.</p>
+                </div>
+
+                <div class="key-insight">
+                    <h3>The Lesson</h3>
+                    <p><strong>Sequence matters.</strong> Build the ecosystem first (ticketing, media), then layer on growth streams (betting, merch). The cascade effects multiply everything that comes after.</p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn btn-secondary" onclick="location.reload()">Try Different Path</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="ending-ecosystem-cut-short">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge ending">Final Results</span>
+                    <h1>Missed Opportunity</h1>
+                </div>
+
+                <div class="grade-display">
+                    <div class="grade-value grade-b">B</div>
+                    <div class="grade-label">$189M Final Revenue</div>
+                </div>
+
+                <div class="consequence-box">
+                    <h3>What Happened</h3>
+                    <p>Your ecosystem foundation held, and playoff revenue spiked. But the recession-era cuts weakened your cascade effects. You were close—but the $11M gap hurts.</p>
+                </div>
+
+                <div class="key-insight">
+                    <h3>The Lesson</h3>
+                    <p><strong>Consistency matters.</strong> You built the right foundation, but cutting investment during the recession disrupted the flywheel. Ecosystem effects need continuous nurturing.</p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn btn-secondary" onclick="location.reload()">Try Different Path</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="ending-ecosystem-cut-long">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge ending">Final Results</span>
+                    <h1>Solid Performance</h1>
+                </div>
+
+                <div class="grade-display">
+                    <div class="grade-value grade-b">B+</div>
+                    <div class="grade-label">$198M Final Revenue</div>
+                </div>
+
+                <div class="consequence-box">
+                    <h3>What Happened</h3>
+                    <p>Long-term deals during the playoffs rebuilt the momentum you lost during cost cuts. You're just shy of target, but your foundation is strong for Year 6 and beyond.</p>
+                </div>
+
+                <div class="key-insight">
+                    <h3>The Lesson</h3>
+                    <p><strong>Ecosystem thinking + long-term orientation wins.</strong> Even with a mid-game stumble, the fundamental strategy of building cascade effects outperformed chasing growth rates.</p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn btn-secondary" onclick="location.reload()">Try Different Path</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="ending-ecosystem-double-short">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge ending">Final Results</span>
+                    <h1>Target Hit!</h1>
+                </div>
+
+                <div class="grade-display">
+                    <div class="grade-value grade-a">A-</div>
+                    <div class="grade-label">$212M Final Revenue</div>
+                </div>
+
+                <div class="consequence-box positive">
+                    <h3>What Happened</h3>
+                    <p>Your ecosystem was so strong that aggressive playoff pricing worked without backlash. Fans understood the value exchange. You hit target with room to spare.</p>
+                </div>
+
+                <div class="key-insight">
+                    <h3>The Lesson</h3>
+                    <p><strong>A strong ecosystem gives you options.</strong> When fans are loyal and engaged, you can be aggressive when opportunities arise. The foundation supports the spike.</p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn btn-secondary" onclick="location.reload()">Try Different Path</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="ending-ecosystem-double-long">
+            <div class="card">
+                <div class="progress-bar">
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                    <div class="progress-step complete"></div>
+                </div>
+
+                <div class="card-header">
+                    <span class="year-badge ending">Final Results</span>
+                    <h1>Best in Class</h1>
+                </div>
+
+                <div class="grade-display">
+                    <div class="grade-value grade-a">A</div>
+                    <div class="grade-label">$224M Final Revenue</div>
+                </div>
+
+                <div class="consequence-box positive">
+                    <h3>What Happened</h3>
+                    <p>The full ecosystem flywheel is spinning. Long-term deals locked in during the playoffs mean Year 6 starts at $224M with 5-year sponsor commitments, a waitlist of 12,000 for season tickets, and media rights renewal at +40%.</p>
+                </div>
+
+                <div class="key-insight">
+                    <h3>The Lesson</h3>
+                    <p><strong>Ecosystem + Consistency + Long-term thinking = Maximum growth.</strong> Ticketing and media rights drive cascade effects that amplify everything else. Betting and merchandise follow—they don't lead.</p>
+                </div>
+
+                <div class="btn-row">
+                    <button class="btn btn-secondary" onclick="location.reload()">Try Different Path</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // State tracking
+        const state = {
+            path: [],
+            d1: null, // decision 1
+            d2: null, // decision 2
+            d3: null  // decision 3
+        };
+
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+            document.getElementById(screenId).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        function makeChoice(decision, choice) {
+            if (decision === 1) {
+                state.d1 = choice;
+                state.path.push(choice);
+                showScreen(`consequence1-${choice}`);
+            } else if (decision === 2) {
+                state.d2 = choice;
+                state.path.push(choice);
+                showScreen(`consequence2-${state.d1}-${choice}`);
+            }
+        }
+
+        function showEnding(endingKey) {
+            state.d3 = endingKey.split('-').pop();
+            state.path.push(state.d3);
+            showScreen(`ending-${endingKey}`);
+        }
+
+    </script>
+</body>
+</html>

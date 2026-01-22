@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nashville Predators Case Study Quiz</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --primary-light: #2c5282;
+            --secondary: #2d3748;
+            --accent: #3182ce;
+            --gold: #d69e2e;
+            --success: #38a169;
+            --warning: #d69e2e;
+            --danger: #e53e3e;
+            --bg: #f7fafc;
+            --card-bg: #ffffff;
+            --text: #1a202c;
+            --text-muted: #718096;
+            --border: #e2e8f0;
+            --radius: 12px;
+            /* Predators colors */
+            --preds-gold: #ffb81c;
+            --preds-navy: #041e42;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 24px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+            background: linear-gradient(135deg, var(--preds-navy), var(--primary-light));
+            padding: 32px 24px;
+            border-radius: var(--radius);
+            color: white;
+        }
+
+        .case-badge {
+            display: inline-block;
+            background: var(--preds-gold);
+            color: var(--preds-navy);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            margin-bottom: 24px;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--preds-gold), var(--accent));
+            transition: width 0.3s ease;
+        }
+
+        .progress-text {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .card-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, var(--preds-gold), var(--gold));
+        }
+
+        .question-number {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        /* Question Styling */
+        .question-text {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+
+        .context-box {
+            background: #fffbeb;
+            border-left: 4px solid var(--preds-gold);
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95rem;
+            color: #744210;
+        }
+
+        .context-box strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* Options */
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-btn {
+            padding: 16px 20px;
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            background: var(--card-bg);
+            cursor: pointer;
+            text-align: left;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .option-btn:hover {
+            border-color: var(--accent);
+            background: #ebf8ff;
+        }
+
+        .option-btn:focus {
+            outline: 3px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .option-btn.selected {
+            border-color: var(--accent);
+            background: #ebf8ff;
+        }
+
+        .option-btn.correct {
+            border-color: var(--success);
+            background: #f0fff4;
+        }
+
+        .option-btn.incorrect {
+            border-color: var(--danger);
+            background: #fff5f5;
+        }
+
+        .option-btn:disabled {
+            cursor: not-allowed;
+        }
+
+        .option-letter {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.875rem;
+            flex-shrink: 0;
+        }
+
+        .option-btn.selected .option-letter {
+            background: var(--accent);
+            color: white;
+        }
+
+        .option-btn.correct .option-letter {
+            background: var(--success);
+            color: white;
+        }
+
+        .option-btn.incorrect .option-letter {
+            background: var(--danger);
+            color: white;
+        }
+
+        .option-text {
+            flex: 1;
+            padding-top: 2px;
+        }
+
+        /* Feedback */
+        .feedback {
+            margin-top: 20px;
+            padding: 16px;
+            border-radius: var(--radius);
+            display: none;
+        }
+
+        .feedback.show {
+            display: block;
+        }
+
+        .feedback.correct {
+            background: #f0fff4;
+            border: 1px solid var(--success);
+            color: #276749;
+        }
+
+        .feedback.incorrect {
+            background: #fff5f5;
+            border: 1px solid var(--danger);
+            color: #c53030;
+        }
+
+        .feedback strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn:focus {
+            outline: 3px solid var(--accent);
+            outline-offset: 2px;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-light);
+        }
+
+        .btn-primary:disabled {
+            background: var(--border);
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: var(--bg);
+            color: var(--text);
+            border: 2px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Results Phase */
+        .results-card {
+            text-align: center;
+        }
+
+        .score-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--preds-navy), var(--primary-light));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            color: white;
+        }
+
+        .score-value {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .score-label {
+            font-size: 0.875rem;
+            opacity: 0.9;
+            margin-top: 4px;
+        }
+
+        .score-message {
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+
+        .mastery-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.875rem;
+            margin-bottom: 24px;
+        }
+
+        .badge-gold {
+            background: linear-gradient(135deg, var(--preds-gold), #ecc94b);
+            color: var(--preds-navy);
+        }
+
+        .badge-silver {
+            background: linear-gradient(135deg, #a0aec0, #718096);
+            color: white;
+        }
+
+        .badge-bronze {
+            background: linear-gradient(135deg, #dd6b20, #c05621);
+            color: white;
+        }
+
+        .results-breakdown {
+            text-align: left;
+            margin-top: 24px;
+        }
+
+        .results-breakdown h3 {
+            font-size: 1rem;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+
+        .result-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px;
+            background: var(--bg);
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .result-icon {
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .result-text {
+            font-size: 0.95rem;
+        }
+
+        .result-text strong {
+            color: var(--primary);
+        }
+
+        /* Coach Prompt */
+        .coach-prompt {
+            background: linear-gradient(135deg, #ebf8ff, #e6fffa);
+            border: 2px solid var(--accent);
+            border-radius: var(--radius);
+            padding: 20px;
+            margin-top: 24px;
+            text-align: left;
+        }
+
+        .coach-prompt h4 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .coach-prompt p {
+            color: var(--secondary);
+            margin-bottom: 12px;
+        }
+
+        .coach-questions {
+            list-style: none;
+            padding: 0;
+        }
+
+        .coach-questions li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--text-muted);
+        }
+
+        .coach-questions li::before {
+            content: "?";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* Hidden phases */
+        .phase {
+            display: none;
+        }
+
+        .phase.active {
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+            }
+
+            header {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .btn-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="case-badge">Ivey Case Study</span>
+            <h1>Nashville Predators: Case Comprehension</h1>
+            <p class="subtitle">Test your understanding of the marketing challenges faced by an NHL franchise in a non-traditional market</p>
+        </header>
+
+        <div class="progress-container" id="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+            </div>
+            <div class="progress-text">
+                <span id="progress-label">Question 1 of 5</span>
+                <span id="progress-percent">0% Complete</span>
+            </div>
+        </div>
+
+        <div aria-live="polite" id="announcer" class="sr-only"></div>
+
+        <!-- Quiz Phase -->
+        <section id="phase-quiz" class="phase active" aria-labelledby="quiz-title">
+            <div class="card" id="question-card">
+                <!-- Questions loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Results Phase -->
+        <section id="phase-results" class="phase" aria-labelledby="results-title">
+            <div class="card results-card">
+                <div class="score-circle">
+                    <span class="score-value" id="score-value">0</span>
+                    <span class="score-label">out of 5</span>
+                </div>
+
+                <div class="mastery-badge" id="mastery-badge"></div>
+
+                <p class="score-message" id="score-message"></p>
+
+                <div class="results-breakdown">
+                    <h3>Question Breakdown</h3>
+                    <div id="results-breakdown"></div>
+                </div>
+
+                <div class="coach-prompt">
+                    <h4>🤖 Discuss with AI Coach</h4>
+                    <p>Deepen your understanding by exploring these questions:</p>
+                    <ul class="coach-questions">
+                        <li>How did Nashville's approach differ from traditional hockey markets like Toronto or Boston?</li>
+                        <li>What lessons from the Predators case apply to other non-traditional sports markets?</li>
+                        <li>How might the Predators' strategy need to evolve as the team's on-ice success fluctuates?</li>
+                    </ul>
+                </div>
+
+                <div class="btn-group" style="justify-content: center;">
+                    <button id="restart-btn" class="btn btn-secondary">Try Again</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Quiz questions based on Nashville Predators case
+        const questions = [
+            {
+                context: "The Nashville Predators entered the NHL as an expansion team in 1998, bringing hockey to a city known for country music, not ice sports.",
+                question: "What was the PRIMARY challenge facing the Predators' marketing team in Nashville?",
+                options: [
+                    { letter: 'A', text: 'Competition from other NHL teams in the region', value: 'competition' },
+                    { letter: 'B', text: 'Building a fan base in a market with no hockey tradition', value: 'tradition' },
+                    { letter: 'C', text: 'The team\'s poor on-ice performance', value: 'performance' },
+                    { letter: 'D', text: 'High ticket prices compared to other entertainment options', value: 'prices' }
+                ],
+                correct: 'tradition',
+                explanation: 'Nashville had no hockey tradition - most residents had never attended an NHL game. The marketing team\'s primary challenge was educating fans about hockey while simultaneously making the experience entertaining and accessible to newcomers.'
+            },
+            {
+                context: "The Predators emphasized the in-arena experience over purely focusing on the sport itself.",
+                question: "Why did the Predators invest heavily in game-day entertainment beyond the hockey action?",
+                options: [
+                    { letter: 'A', text: 'They couldn\'t afford high-profile players so needed distractions', value: 'distraction' },
+                    { letter: 'B', text: 'NHL rules required minimum entertainment spending', value: 'rules' },
+                    { letter: 'C', text: 'To create value for fans who didn\'t yet understand or appreciate hockey', value: 'value' },
+                    { letter: 'D', text: 'To compete with Nashville\'s music venues for tourist dollars', value: 'compete' }
+                ],
+                correct: 'value',
+                explanation: 'In non-traditional markets, fans may not appreciate the nuances of the sport. By creating an exciting atmosphere with music, interactive elements, and entertainment, the Predators ensured fans had a great time regardless of their hockey knowledge - building loyalty while they learned to love the game.'
+            },
+            {
+                context: "The Predators developed unique promotional strategies that connected hockey to Nashville's existing culture.",
+                question: "How did the Predators adapt their marketing to fit Nashville's identity?",
+                options: [
+                    { letter: 'A', text: 'They renamed the team to reflect local history', value: 'rename' },
+                    { letter: 'B', text: 'They integrated country music and local culture into the game experience', value: 'culture' },
+                    { letter: 'C', text: 'They moved games to outdoor venues', value: 'outdoor' },
+                    { letter: 'D', text: 'They offered free tickets to country music artists', value: 'free' }
+                ],
+                correct: 'culture',
+                explanation: 'The Predators brilliantly integrated Nashville\'s identity - country music performances, local celebrity involvement, and Southern hospitality - into the hockey experience. This helped fans see the team as authentically "Nashville" rather than an imported sport.'
+            },
+            {
+                context: "Building corporate partnerships was essential for revenue diversification in a market where individual ticket sales alone couldn't sustain the franchise.",
+                question: "Why were corporate partnerships particularly important for the Predators?",
+                options: [
+                    { letter: 'A', text: 'Corporations provided free players to the team', value: 'players' },
+                    { letter: 'B', text: 'Individual ticket revenue was unreliable in a market still learning to love hockey', value: 'unreliable' },
+                    { letter: 'C', text: 'The NHL mandated corporate sponsorship minimums', value: 'mandates' },
+                    { letter: 'D', text: 'Corporate partners owned the arena', value: 'arena' }
+                ],
+                correct: 'unreliable',
+                explanation: 'In an emerging market, fan attendance can be volatile - dependent on team performance and novelty. Corporate partnerships provide stable, predictable revenue regardless of win-loss records, giving the team financial stability while building its fan base.'
+            },
+            {
+                context: "The case presents a decision point about the Predators' marketing strategy going forward.",
+                question: "What strategic tension does the Predators case highlight for sports teams in non-traditional markets?",
+                options: [
+                    { letter: 'A', text: 'Whether to focus on winning versus entertainment', value: 'winning' },
+                    { letter: 'B', text: 'Balancing short-term attendance with long-term fan development', value: 'balance' },
+                    { letter: 'C', text: 'Choosing between local and national broadcast deals', value: 'broadcast' },
+                    { letter: 'D', text: 'Deciding whether to relocate to a traditional market', value: 'relocate' }
+                ],
+                correct: 'balance',
+                explanation: 'The core tension is between tactics that drive immediate attendance (promotions, discounts, entertainment) versus building deep, lasting fan loyalty that survives losing seasons. Sustainable franchises need both - but the balance differs by market maturity.'
+            }
+        ];
+
+        // State
+        const state = {
+            currentQuestion: 0,
+            answers: [],
+            score: 0
+        };
+
+        // DOM elements
+        const questionCard = document.getElementById('question-card');
+        const progressFill = document.getElementById('progress-fill');
+        const progressLabel = document.getElementById('progress-label');
+        const progressPercent = document.getElementById('progress-percent');
+        const announcer = document.getElementById('announcer');
+
+        function announce(message) {
+            announcer.textContent = message;
+        }
+
+        function updateProgress() {
+            const percent = ((state.currentQuestion) / questions.length) * 100;
+            progressFill.style.width = `${percent}%`;
+            progressLabel.textContent = `Question ${state.currentQuestion + 1} of ${questions.length}`;
+            progressPercent.textContent = `${Math.round(percent)}% Complete`;
+        }
+
+        function loadQuestion(index) {
+            state.currentQuestion = index;
+            updateProgress();
+
+            const question = questions[index];
+
+            questionCard.innerHTML = `
+                <div class="card-header">
+                    <div class="card-icon">📋</div>
+                    <div>
+                        <span class="question-number">Question ${index + 1} of ${questions.length}</span>
+                        <h2 class="card-title" id="quiz-title">Case Analysis</h2>
+                    </div>
+                </div>
+
+                <div class="context-box">
+                    <strong>Case Context:</strong>
+                    ${question.context}
+                </div>
+
+                <p class="question-text">${question.question}</p>
+
+                <div class="options" role="radiogroup" aria-label="Answer options">
+                    ${question.options.map(opt => `
+                        <button class="option-btn" data-value="${opt.value}" role="radio" aria-checked="false">
+                            <span class="option-letter">${opt.letter}</span>
+                            <span class="option-text">${opt.text}</span>
+                        </button>
+                    `).join('')}
+                </div>
+
+                <div id="feedback" class="feedback"></div>
+
+                <div class="btn-group">
+                    <button id="submit-btn" class="btn btn-primary" disabled>Check Answer</button>
+                </div>
+            `;
+
+            // Attach event listeners
+            const options = questionCard.querySelectorAll('.option-btn');
+            const submitBtn = document.getElementById('submit-btn');
+            let selectedValue = null;
+
+            options.forEach(option => {
+                option.addEventListener('click', () => {
+                    if (option.disabled) return;
+
+                    options.forEach(opt => {
+                        opt.classList.remove('selected');
+                        opt.setAttribute('aria-checked', 'false');
+                    });
+                    option.classList.add('selected');
+                    option.setAttribute('aria-checked', 'true');
+                    selectedValue = option.dataset.value;
+                    submitBtn.disabled = false;
+                });
+            });
+
+            submitBtn.addEventListener('click', () => {
+                const isCorrect = selectedValue === question.correct;
+
+                if (isCorrect) {
+                    state.score++;
+                }
+
+                state.answers.push({
+                    question: index,
+                    correct: isCorrect,
+                    selected: selectedValue
+                });
+
+                // Disable all options
+                options.forEach(opt => {
+                    opt.disabled = true;
+                    if (opt.dataset.value === question.correct) {
+                        opt.classList.add('correct');
+                    } else if (opt.classList.contains('selected') && !isCorrect) {
+                        opt.classList.add('incorrect');
+                    }
+                });
+
+                // Show feedback
+                const feedback = document.getElementById('feedback');
+                feedback.classList.add('show', isCorrect ? 'correct' : 'incorrect');
+                feedback.innerHTML = `
+                    <strong>${isCorrect ? 'Correct!' : 'Not quite.'}</strong>
+                    ${question.explanation}
+                `;
+
+                // Update button
+                submitBtn.textContent = index < questions.length - 1 ? 'Next Question' : 'See Results';
+                submitBtn.disabled = false;
+                submitBtn.onclick = () => {
+                    if (index < questions.length - 1) {
+                        loadQuestion(index + 1);
+                    } else {
+                        showResults();
+                    }
+                };
+
+                announce(isCorrect ? 'Correct!' : 'Incorrect. ' + question.explanation);
+            });
+
+            announce(`Question ${index + 1}: ${question.question}`);
+        }
+
+        function showResults() {
+            document.getElementById('phase-quiz').classList.remove('active');
+            document.getElementById('phase-results').classList.add('active');
+            document.getElementById('progress-container').style.display = 'none';
+
+            const scoreValue = document.getElementById('score-value');
+            const scoreMessage = document.getElementById('score-message');
+            const masteryBadge = document.getElementById('mastery-badge');
+            const breakdown = document.getElementById('results-breakdown');
+
+            scoreValue.textContent = state.score;
+
+            if (state.score === 5) {
+                masteryBadge.textContent = 'Case Study Master';
+                masteryBadge.className = 'mastery-badge badge-gold';
+                scoreMessage.textContent = 'Excellent! You\'ve demonstrated deep understanding of the Nashville Predators case and its strategic implications.';
+            } else if (state.score >= 3) {
+                masteryBadge.textContent = 'Strong Understanding';
+                masteryBadge.className = 'mastery-badge badge-silver';
+                scoreMessage.textContent = 'Good work! You understand the key concepts. Review the missed questions to strengthen your analysis.';
+            } else {
+                masteryBadge.textContent = 'Review Recommended';
+                masteryBadge.className = 'mastery-badge badge-bronze';
+                scoreMessage.textContent = 'Consider re-reading the case study and trying again. Focus on the marketing challenges and strategic decisions.';
+            }
+
+            breakdown.innerHTML = state.answers.map((answer, i) => `
+                <div class="result-item">
+                    <span class="result-icon">${answer.correct ? '✅' : '❌'}</span>
+                    <span class="result-text">
+                        <strong>Q${i + 1}:</strong> ${questions[i].question.substring(0, 60)}...
+                    </span>
+                </div>
+            `).join('');
+
+            document.getElementById('restart-btn').addEventListener('click', () => {
+                state.currentQuestion = 0;
+                state.answers = [];
+                state.score = 0;
+                document.getElementById('phase-results').classList.remove('active');
+                document.getElementById('phase-quiz').classList.add('active');
+                document.getElementById('progress-container').style.display = 'block';
+                loadQuestion(0);
+            });
+
+            announce(`Quiz complete. You scored ${state.score} out of ${questions.length}.`);
+        }
+
+        // Initialize
+        loadQuestion(0);
+    </script>
+</body>
+</html>

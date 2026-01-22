@@ -1,7 +1,26 @@
 # Build Your Revenue Empire
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2026-01-22
 
 **Purpose:** Active learning - build a revenue strategy (supports WLO 1.1, 1.3 - Application level)
+
+---
+
+### ⚠️ SIMPLIFIED WIDGET AVAILABLE (v1.4.0)
+
+The complex Revenue Empire Builder simulation has been replaced with a **simplified branching roleplay** for better testability and Uplimit integration:
+
+| **NEW Widget** | **File** | **Format** |
+|----------------|----------|------------|
+| Ecosystem Branching Roleplay | `ecosystem-roleplay.html` | 3 decisions → 8 endings + 3 MCQs |
+
+**Why the change:**
+- Old simulator had too many variables (sliders) to test reliably
+- No verifiable data generated for Uplimit tracking
+- New format: Explore → Verify (MCQs) → Discuss (AI Coach)
+
+**Recommendation:** Use `ecosystem-roleplay.html` instead of `revenue-empire-builder.html` for the main activity. Put MCQs in Uplimit for grading. Use AI Chat widget for post-activity discussion.
+
+---
 
 **Uplimit Structure:** Fourth module in Unit 1
 

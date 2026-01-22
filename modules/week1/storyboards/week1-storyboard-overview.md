@@ -55,6 +55,32 @@ This storyboard has been split into individual module files for easier navigatio
 
 ---
 
+## NEW Simplified Widget Set (January 2026)
+
+The following **simplified explorers** replace the complex simulators for better testability and Uplimit MCQ integration:
+
+| New Widget | Replaces | Format |
+|------------|----------|--------|
+| `revenue-streams-explorer.html` | `revenue-mix-slider.html` | Visual + 2 MCQs |
+| `dynamic-pricing-explorer.html` | `dynamic-pricing-simulator.html` | Pre-check + Sliders + 3 MCQs |
+| `betting-basics-explorer.html` | `betting-market-simulator.html` | Revenue models + 3 MCQs |
+| `ecosystem-roleplay.html` | `ecosystem-cascade-simulator.html` | Branching (8 endings) + 3 MCQs |
+| `nashville-case-quiz.html` | NEW | Case comprehension 5 MCQs |
+
+**Design Philosophy:**
+1. **Pre-check** → Assess prior knowledge
+2. **Explore** → Interactive visual discovery
+3. **Verify** → MCQs confirm understanding
+4. **Discuss** → AI Coach prompts for deeper exploration
+
+**Storyboard Integration Notes:**
+- Replace complex simulator iFrames with new explorer widgets
+- Move challenges/graded activities to Uplimit's native MCQ system
+- Use AI Chat widget coach for post-exploration discussions
+- Legacy widgets remain available for instructor reference
+
+---
+
 ## Week 1 Learning Outcomes
 
 By the end of this week, students will be able to:
@@ -122,5 +148,5 @@ By the end of this week, students will be able to:
 
 ---
 
-**Last Updated**: 2025-12-05
-**Version**: 3.1 (Added video script references, executive highlights)
+**Last Updated**: 2026-01-22
+**Version**: 3.2 (Added simplified widget mapping - Explorer + MCQ format replaces complex simulators)

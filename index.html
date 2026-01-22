@@ -167,6 +167,16 @@
             color: var(--color-neutral-700);
         }
 
+        .type-explorer {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .type-quiz {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
         .widget-count {
             color: var(--color-neutral-500);
             font-size: 14px;
@@ -242,7 +252,7 @@
 
         <div class="stats-bar">
             <div class="stat">
-                <div class="stat-number">51</div>
+                <div class="stat-number">56</div>
                 <div class="stat-label">Total Widgets</div>
             </div>
             <div class="stat">
@@ -250,12 +260,12 @@
                 <div class="stat-label">Weeks</div>
             </div>
             <div class="stat">
-                <div class="stat-number">11</div>
-                <div class="stat-label">Simulators</div>
+                <div class="stat-number">4</div>
+                <div class="stat-label">Explorers</div>
             </div>
             <div class="stat">
                 <div class="stat-number">11</div>
-                <div class="stat-label">Calculators</div>
+                <div class="stat-label">Simulators</div>
             </div>
         </div>
 
@@ -280,6 +290,14 @@
                 <div class="legend-dot" style="background: var(--color-neutral-200);"></div>
                 <span>Learning Resource</span>
             </div>
+            <div class="legend-item" role="listitem">
+                <div class="legend-dot" style="background: #fef3c7;"></div>
+                <span>Explorer</span>
+            </div>
+            <div class="legend-item" role="listitem">
+                <div class="legend-dot" style="background: #dbeafe;"></div>
+                <span>Quiz</span>
+            </div>
         </div>
 
         <!-- Week 1 -->
@@ -287,9 +305,31 @@
             <div class="week-header">
                 <span class="week-number">Week 1</span>
                 <h2 id="week1-heading" class="week-title">The Business of Sport - Where the Money Flows</h2>
-                <span class="widget-count">(17 widgets)</span>
+                <span class="widget-count">(22 widgets)</span>
             </div>
             <div class="widget-grid">
+                <!-- NEW SIMPLIFIED WIDGETS (Exploration + MCQ Verification) -->
+                <a href="modules/week1/widgets/revenue-streams-explorer.html" class="widget-card">
+                    <span class="widget-type type-explorer">Explorer</span>
+                    <span class="widget-name">Revenue Streams Explorer</span>
+                </a>
+                <a href="modules/week1/widgets/dynamic-pricing-explorer.html" class="widget-card">
+                    <span class="widget-type type-explorer">Explorer</span>
+                    <span class="widget-name">Dynamic Pricing Explorer</span>
+                </a>
+                <a href="modules/week1/widgets/betting-basics-explorer.html" class="widget-card">
+                    <span class="widget-type type-explorer">Explorer</span>
+                    <span class="widget-name">Sports Betting Revenue Explorer</span>
+                </a>
+                <a href="modules/week1/widgets/ecosystem-roleplay.html" class="widget-card">
+                    <span class="widget-type type-explorer">Explorer</span>
+                    <span class="widget-name">Ecosystem Branching Roleplay</span>
+                </a>
+                <a href="modules/week1/widgets/nashville-case-quiz.html" class="widget-card">
+                    <span class="widget-type type-quiz">Quiz</span>
+                    <span class="widget-name">Nashville Case Comprehension</span>
+                </a>
+                <!-- CORE WIDGETS -->
                 <a href="modules/week1/widgets/learning-outcomes-week.html" class="widget-card">
                     <span class="widget-type type-learning">Learning Resource</span>
                     <span class="widget-name">Week 1 Learning Outcomes</span>
@@ -298,37 +338,38 @@
                     <span class="widget-type type-assessment">Assessment</span>
                     <span class="widget-name">Revenue Strategy Pre-Assessment</span>
                 </a>
-                <a href="modules/week1/widgets/revenue-mix-slider.html" class="widget-card">
-                    <span class="widget-type type-simulator">Simulator</span>
+                <!-- LEGACY COMPLEX SIMULATORS (kept for reference) -->
+                <a href="modules/week1/widgets/revenue-mix-slider.html" class="widget-card" style="opacity: 0.7;">
+                    <span class="widget-type type-simulator">Legacy</span>
                     <span class="widget-name">Revenue Mix Slider</span>
                 </a>
-                <a href="modules/week1/widgets/dynamic-pricing-simulator.html" class="widget-card">
-                    <span class="widget-type type-simulator">Simulator</span>
+                <a href="modules/week1/widgets/dynamic-pricing-simulator.html" class="widget-card" style="opacity: 0.7;">
+                    <span class="widget-type type-simulator">Legacy</span>
                     <span class="widget-name">Dynamic Pricing Simulator</span>
                 </a>
-                <a href="modules/week1/widgets/ecosystem-cascade-simulator.html" class="widget-card">
-                    <span class="widget-type type-simulator">Simulator</span>
+                <a href="modules/week1/widgets/ecosystem-cascade-simulator.html" class="widget-card" style="opacity: 0.7;">
+                    <span class="widget-type type-simulator">Legacy</span>
                     <span class="widget-name">Ecosystem Cascade Simulator</span>
                 </a>
-                <a href="modules/week1/widgets/betting-market-simulator.html" class="widget-card">
-                    <span class="widget-type type-simulator">Simulator</span>
+                <a href="modules/week1/widgets/betting-market-simulator.html" class="widget-card" style="opacity: 0.7;">
+                    <span class="widget-type type-simulator">Legacy</span>
                     <span class="widget-name">Betting Market Simulator</span>
                 </a>
-                <a href="modules/week1/widgets/stadium-revenue-optimizer.html" class="widget-card">
-                    <span class="widget-type type-tool">Tool</span>
+                <a href="modules/week1/widgets/stadium-revenue-optimizer.html" class="widget-card" style="opacity: 0.7;">
+                    <span class="widget-type type-tool">Legacy</span>
                     <span class="widget-name">Stadium Revenue Optimizer</span>
                 </a>
-                <a href="modules/week1/widgets/revenue-empire-builder.html" class="widget-card">
-                    <span class="widget-type type-tool">Tool</span>
-                    <span class="widget-name">Revenue Empire Builder (v1 - Sliders)</span>
+                <a href="modules/week1/widgets/revenue-empire-builder.html" class="widget-card" style="opacity: 0.7;">
+                    <span class="widget-type type-tool">Legacy</span>
+                    <span class="widget-name">Revenue Empire Builder v1</span>
                 </a>
-                <a href="modules/week1/widgets/revenue-empire-builder-v2.html" class="widget-card">
-                    <span class="widget-type type-simulator">Simulator</span>
+                <a href="modules/week1/widgets/revenue-empire-builder-v2.html" class="widget-card" style="opacity: 0.7;">
+                    <span class="widget-type type-simulator">Legacy</span>
                     <span class="widget-name">Revenue Empire Builder v2</span>
                 </a>
-                <a href="modules/week1/widgets/revenue-empire-builder-v3.html" class="widget-card">
-                    <span class="widget-type type-simulator">Simulator</span>
-                    <span class="widget-name">Revenue Empire Builder v3 (Ecosystem)</span>
+                <a href="modules/week1/widgets/revenue-empire-builder-v3.html" class="widget-card" style="opacity: 0.7;">
+                    <span class="widget-type type-simulator">Legacy</span>
+                    <span class="widget-name">Revenue Empire Builder v3</span>
                 </a>
                 <a href="modules/week1/widgets/sponsorship-roi-calculator.html" class="widget-card">
                     <span class="widget-type type-calculator">Calculator</span>

@@ -1,7 +1,38 @@
 # Five Revenue Streams That Power Sports
-**Version:** 1.5.0 | **Last Updated:** 2026-01-14
+**Version:** 1.8.0 | **Last Updated:** 2026-01-22
 
 **Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports WLO 1.1, 1.2, 1.3)
+
+### Version 1.8.0 Changes
+- **REPLACED:** Element 6 - `media-rights-calculator.html` → `media-rights-explorer.html` (simplified widget)
+- **ADDED:** Elements 6A, 6B - MC questions for media rights section (built in Uplimit)
+
+### Version 1.7.0 Changes
+- **REPLACED:** Element 4 - `revenue-mix-slider.html` → `revenue-streams-explorer.html` (simplified widget)
+- **FIXED:** Embed URL now uses correct path: `modules/week1/widgets/`
+- **UPDATED:** Element 3A introduction text to match new widget
+
+### Version 1.6.0 Changes
+- **NEW:** Simplified widget replacements available (see table below)
+- **RECOMMENDATION:** Replace complex simulators with new Explorer widgets for better testability
+
+### ⚠️ SIMPLIFIED WIDGET REPLACEMENTS
+
+| Old Complex Widget | New Simplified Widget | Format |
+|--------------------|----------------------|--------|
+| `revenue-mix-slider.html` | `revenue-streams-explorer.html` | Visual explorer (MCQs in Uplimit) |
+| `media-rights-calculator.html` | `media-rights-explorer.html` | Visual explorer (MCQs in Uplimit) |
+| `dynamic-pricing-simulator.html` | `dynamic-pricing-explorer.html` | Pre-check + Sliders + 3 MCQs |
+| `betting-market-simulator.html` | `betting-basics-explorer.html` | Revenue models + 3 MCQs |
+| `ecosystem-cascade-infographic.html` | `ecosystem-roleplay.html` | Branching (8 endings) + 3 MCQs |
+| NEW | `nashville-case-quiz.html` | Case comprehension 5 MCQs |
+
+**Integration Notes:**
+- Embed new Explorer widgets via iFrame
+- Move MCQ verification to Uplimit's native system for grading
+- Use AI Chat widget for post-exploration discussion prompts
+
+---
 
 ### Version 1.5.0 Changes
 - **ADDED:** Deep-dive readings as Details accordions throughout module (Element 5B, 12B, 20B, 23B)
@@ -23,14 +54,16 @@
 - **Visual elements:** 3 images, 1 table, 3 infoboxes, 1 vertical list, 1 tiles, 5 details accordions
 - **Total time:** ~35 minutes core + ~15 minutes optional deep-dive readings
 
-### Section 1: Introduction & Overview (Elements 1-4)
+### Section 1: Introduction & Overview (Elements 1-4B)
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
 | 1 | **▬ Text** ⬛ Required | Brief intro + 5 streams list | 1 min | 100 | Type directly |
 | 2 | **▶ Video** ⬛ Required | 5 Revenue Streams (animated) | 2 min | - | Upload `week1-video1-revenue-streams.mp4` |
 | 3 | **⊞ Vertical List** ⬛ Required | 5 streams at a glance | 1 min | - | Type directly |
-| 4 | **⚙ iFrame Widget** ⬛ Required | **Revenue Mix Slider** | 3 min | - | Embed `revenue-mix-slider.html` |
+| 4 | **⚙ iFrame Widget** ⬛ Required | **Revenue Streams Explorer** | 3 min | - | Embed `revenue-streams-explorer.html` |
+| 4A | **❓ MC Question** ⬛ Required | Largest revenue stream | 1 min | - | Configure in Uplimit |
+| 4B | **❓ MC Question** ⬛ Required | Growth vs. size tradeoff | 1 min | - | Configure in Uplimit |
 
 
 #### Element 1: Introduction Text
@@ -142,80 +175,71 @@ Create 5 numbered items:
 **Item 5 - Title:** "Betting & Gaming"
 **Item 5 - Description:** "Sports betting partnerships and data licensing. Emerging stream, growing rapidly. Risk: Regulatory changes and integrity concerns."
 
-### Element 3A: Widget Introduction - Revenue Mix Slider
+### Element 3A: Widget Introduction - Revenue Streams Explorer `[v1.7.0]`
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-# Practice: Build Your Revenue Portfolio
+# Explore: The Five Revenue Streams
 
-Now that you understand the five major revenue streams, let's practice building a balanced portfolio—the same challenge facing every sports organization.
+Now that you understand the five major revenue streams, let's explore them visually and test your understanding.
 
 ## Your Challenge
 
-You're a strategic consultant advising a new professional sports franchise. The ownership group asks: "How should we allocate focus across revenue streams to balance growth with stability?" Your task: build a revenue portfolio that reflects your strategic priorities.
+You're a strategic consultant advising a new professional sports franchise. The ownership group asks: "Which revenue streams should we prioritize?" Explore each stream's characteristics to build your recommendation.
 
-## What You'll Practice
+## What You'll Explore
 
-- Allocating resources across media rights, ticketing, sponsorship, merchandising, and betting
-- Understanding the risk/reward profile of each stream (stable vs. high-growth)
-- Seeing how portfolio composition affects overall organizational risk
-- Comparing your strategy to real league allocations (NFL, NBA, EPL)
+- How the five streams compare in size (percentage of total revenue)
+- Growth potential vs. stability trade-offs for each stream
+- Real-world examples from NFL, NBA, NHL, and EPL
+- Key risks and opportunities for each stream
 
-## How the Revenue Mix Slider Works
+## How It Works
 
-1. **Adjust Sliders:** Move each slider to set your percentage allocation (must total 100%)
-2. **Watch the Pie Chart:** See your portfolio visualized in real time
-3. **Check Risk Score:** Higher allocations to betting = higher risk; higher media/ticketing = stability
-4. **Check Growth Projection:** See projected 5-year growth based on your mix
-5. **Compare to Presets:** Click "NFL Model," "NBA Model," or "EPL Model" to see real allocations
+1. **Explore Visually:** See how revenue is distributed across the five streams (pie chart)
+2. **Review Each Stream:** Learn about growth rates, stability, and key characteristics
+3. **Note the Key Insight:** Consider why growth rate alone doesn't tell the whole story
+4. **Answer Questions:** Complete the practice quiz that follows this widget in Uplimit
 
 ## Strategic Considerations
 
-- **Media Rights (40-60%):** Most leagues depend heavily on media—but these contracts are locked for 9-12 years. High stability, moderate growth.
-- **Ticketing (20-30%):** Capacity-constrained. You can't sell more than your stadium holds. Stable but limited ceiling.
-- **Sponsorship (15-25%):** Relationship-driven with high growth potential, but requires brand investment.
-- **Merchandising (5-10%):** Tied to team performance and star players. Spikes during championships.
-- **Betting (2-8%):** Highest growth (30-40% annually) but regulatory risk and integrity concerns.
-
-## After the Widget
-
-Export your portfolio allocation—you'll reference it when writing your Board Strategy Defense memo in Module 4.
+- **Media Rights (40-60%):** Most leagues depend heavily on media—predictable, long-term contracts but limited growth.
+- **Ticketing (20-30%):** Capacity-constrained by stadium size. Stable but has a ceiling.
+- **Sponsorship (15-25%):** Relationship-driven with high growth potential.
+- **Merchandising (5-10%):** Tied to team performance and star players.
+- **Betting (2-8%):** Highest growth (30-40% annually) but regulatory uncertainty.
 ```
 
 ---
 
-#### Element 4: iFrame Widget - Revenue Mix Slider
+#### Element 4: iFrame Widget - Revenue Streams Explorer `[v1.7.0]`
 
-### ⚙ Interactive Activity: Revenue Mix Slider
+### ⚙ Interactive Activity: Revenue Streams Explorer
 
 **Practice: WLO 1.1 (Map major revenue streams) & WLO 1.3 (Evaluate growth potential and risks)**
 
-You've learned about the five major revenue streams that power professional sports. Now it's time to apply that knowledge by building your own revenue portfolio—the same strategic challenge facing every franchise CFO and league commissioner.
-
-In this interactive exercise, you'll allocate 100% of focus across the five streams using intuitive sliders. As you adjust each allocation, the widget calculates your portfolio's overall risk score (based on the volatility of each stream) and projects 5-year growth potential (based on industry trends). You'll see why most leagues concentrate 40-60% in media rights, and discover the trade-offs between high-growth streams like betting and stable foundations like ticketing.
+You've learned about the five major revenue streams that power professional sports. Now explore them visually with this interactive widget.
 
 **What you'll discover:**
 
-- Why most leagues depend heavily on media rights (40-60%) despite limited growth potential
-- The mathematical trade-offs between high-growth streams (Betting at 30-40% annual growth) and stable streams (Ticketing with capacity constraints)
-- How different allocation strategies create dramatically different risk profiles—and why there's no single "right" answer
-- Real-world portfolio comparisons: NFL's "maximum stability" vs. EPL's "brand-driven" approach
+- The relative size of each revenue stream (visualized as a pie chart)
+- Growth rate and stability rating for each stream
+- Key characteristics and risks for each stream
+- Why growth rate alone doesn't tell the whole story
 
 **Time commitment:** 3 minutes
 **Learning outcomes practiced:** WLO 1.1 (Mapping revenue streams), WLO 1.3 (Evaluating growth potential and risks)
 
 ---
 
-**Widget Purpose:** Interactive portfolio builder where students allocate 100% across 5 revenue streams and see real-time feedback on risk/growth projections.
+**Widget Purpose:** Visual explorer showing the five revenue streams with details on growth, stability, and characteristics.
 
 **How It Works:**
-- 5 sliders for each revenue stream (Media Rights, Ticketing, Sponsorship, Merchandising, Betting)
-- Sliders automatically adjust so total = 100%
-- Real-time pie chart visualization
-- Risk score calculated (weighted by stream risk levels)
-- Growth projection calculated (weighted by stream growth trends)
-- Export allocation as JSON for student portfolios
+- Pie chart visualization of revenue stream percentages
+- Cards for each stream showing growth rate, stability, and description
+- Key insight callout highlighting growth vs. size paradox
+- MCQs built separately in Uplimit (not in widget)
 
 **Learning Outcomes:**
 - WLO 1.1: Understand relative size of each revenue stream
@@ -224,12 +248,12 @@ In this interactive exercise, you'll allocate 100% of focus across the five stre
 **Uplimit Implementation:**
 ```html
 <iframe
-  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/revenue-mix-slider.html"
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/revenue-streams-explorer.html"
   width="100%"
   height="700"
   style="border: none; border-radius: 8px;"
-  title="Revenue Mix Slider - Build your revenue portfolio"
-  aria-label="Interactive revenue portfolio builder where you allocate 100% across 5 revenue streams using sliders to see risk and growth projections"
+  title="Revenue Streams Explorer - Explore the five major revenue streams"
+  aria-label="Interactive explorer showing the five major sports revenue streams with growth rates, stability ratings, and key characteristics"
   allowfullscreen
   loading="lazy">
 </iframe>
@@ -237,12 +261,60 @@ In this interactive exercise, you'll allocate 100% of focus across the five stre
 
 **Accessibility:**
 - ✅ Keyboard navigation (Tab, Arrow keys, Enter)
-- ✅ ARIA labels on all sliders
-- ✅ Screen reader announcements for value changes
+- ✅ ARIA labels on all interactive elements
+- ✅ Screen reader announcements
 - ✅ High contrast mode support
-- ✅ Color-blind safe palette (gold, blue, green, orange, purple)
+- ✅ Color-blind safe palette
 
-**Status:** ✅ Phase 1 widget - BUILT AND READY
+**Status:** ✅ Simplified widget - BUILT AND READY
+
+**Note:** The original `revenue-mix-slider.html` (complex portfolio builder) is archived at `modules/week1/widgets/revenue-mix-slider.html` for instructor reference.
+
+---
+
+#### Element 4A: MC Question - Largest Revenue Stream `[v1.7.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+Which revenue stream is the largest for a typical professional sports team?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | Betting/Gaming (fastest growth) | Not quite. Betting has the highest growth rate (35%/year) but is the smallest stream at only 5% of revenue. Don't confuse growth rate with current size. |
+| B ✅ | Media Rights (TV and streaming) | Correct! Media rights account for 40% of typical team revenue—the largest single stream despite moderate growth rates. Long-term broadcast contracts provide the financial foundation for most professional sports organizations. |
+| C | Ticketing (game day revenue) | Close, but ticketing typically accounts for 25% of revenue—second largest. Media rights at 40% is the dominant stream for most leagues. |
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+#### Element 4B: MC Question - Growth vs. Size Tradeoff `[v1.7.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+Why might a team NOT want to focus all investment on betting (35% annual growth) instead of ticketing (5% annual growth)?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | Betting is illegal in most locations | Incorrect. While betting faces regulatory variation, it's now legal in most US states and Canadian provinces. The real concern isn't legality but regulatory uncertainty—rules can change quickly. |
+| B | Ticketing has higher profit margins | Not the primary reason. The key issue is that betting starts from a much smaller base and faces risks that ticketing doesn't. |
+| C ✅ | Betting is small ($5M), faces regulatory risk, and depends on fan engagement that ticketing creates | Correct! Betting's 35% growth sounds impressive, but it's growing from a tiny base ($5M vs $25M for ticketing). It also faces regulatory uncertainty and actually depends on the engaged fanbase that attending games helps build. Growth rate alone doesn't tell the whole story. |
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
@@ -251,7 +323,9 @@ In this interactive exercise, you'll allocate 100% of focus across the five stre
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
 | 5 | **▬ Text** ⬛ Required | Why media is 40-60% | 1 min | 100 | Type directly |
-| 6 | **⚙ iFrame Widget** ▣ Recommended | **Media Rights Calculator** | 4 min | - | Embed `media-rights-calculator.html` |
+| 6 | **⚙ iFrame Widget** ⬛ Required | **Media Rights Explorer** | 3 min | - | Embed `media-rights-explorer.html` |
+| 6A | **❓ MC Question** ⬛ Required | Why NFL worth 16× NHL | 1 min | - | Configure in Uplimit |
+| 6B | **❓ MC Question** ⬛ Required | Appointment viewing value | 1 min | - | Configure in Uplimit |
 | 7 | **ⓘ Infobox** ⬛ Required | Key insight: Appointment viewing | 1 min | 50 | Type directly |
 | 8 | **▭ Image** ▣ Recommended | Media rights timeline | 1 min | - | Upload `media-rights-timeline.png` |
 | 9 | **▬ Text** ⬛ Required | Streaming vs. Traditional | 1 min | 120 | Type directly |
@@ -373,52 +447,100 @@ You'll use this understanding in the Streaming Wars Decision Game next, where yo
 
 ---
 
-#### Element 6: iFrame Widget - Media Rights Calculator
+#### Element 6: iFrame Widget - Media Rights Explorer `[v1.7.0]`
 
-### ⚙ Interactive Activity: Media Rights Calculator
+### ⚙ Interactive Activity: Media Rights Explorer
 
 **Practice: WLO 1.1 (Map major revenue streams) & WLO 1.3 (Evaluate growth potential)**
 
-You've learned that media rights dominate league economics at 40-60% of total revenue. Now you'll learn the math behind those massive deals by building valuations from first principles—the same process broadcasters and league executives use during negotiations.
-
-In this interactive calculator, you'll input the key variables that drive media deal value: league size (number of teams and games), audience reach (average viewers per game), advertising economics (CPM—cost per thousand impressions), and contract structure (length and escalation). Watch how these inputs multiply together to produce deals ranging from $250 million (MLS) to $110 billion (NFL). You'll understand why small changes in viewership or CPM create billion-dollar swings in contract value.
+You've learned that media rights dominate league economics at 40-60% of total revenue. Now explore what makes some deals worth billions while others are worth millions.
 
 **What you'll discover:**
 
-- The mathematical formula that produces the NFL's $110B deal vs. MLS's $250M—and why the gap is so enormous
-- How audience size and CPM interact multiplicatively (doubling audience AND doubling CPM = 4× value)
-- Why contract length matters: 12-year deals lock in stability but sacrifice upside from growing audiences
-- The economic difference between shared revenue (NFL model) and local media rights (MLB model)
+- Why the NFL deal ($10B/year) is worth 16× more than the NHL deal ($625M/year)
+- The 4 value drivers: audience size, demographics, exclusivity, and scarcity
+- Why sports command 3-4× higher ad rates (CPM) than scripted TV
+- The "appointment viewing" concept that explains sports' unique value
 
-**Time commitment:** 4 minutes
-**Learning outcomes practiced:** WLO 1.1 (Understanding media rights mechanics), WLO 1.3 (Evaluating what drives growth)
+**Time commitment:** 3 minutes
+**Learning outcomes practiced:** WLO 1.1 (Understanding media rights value), WLO 1.3 (Evaluating what drives growth)
 
 ---
 
-**Widget Purpose:** Calculate media rights value based on inputs (league size, audience, ad rates, contract length).
-
-**Widget Status:** ✅ Phase 2 widget - BUILT AND READY
+**Widget Purpose:** Visual explorer showing what makes media rights valuable through deal comparisons and value driver cards.
 
 **How It Works:**
-- **Inputs:** League size, audience (millions), ad rate (CPM), contract length
-- **Outputs:** Total deal value, per-team share, % of revenue
-- **Examples:** NFL ($110B), NHL ($5.2B), MLS ($250M)
-- **Learning:** Understand what drives media rights valuation
-- **Bonus:** Toggle "shared vs. local" to see revenue sharing impact
+- NFL vs NHL deal comparison (poses the question: why 16× difference?)
+- 4 value driver cards with NFL/NHL comparisons
+- CPM bar chart showing sports vs. scripted vs. reality TV
+- Key insight on "appointment viewing"
+- MCQs built separately in Uplimit (not in widget)
 
 **Uplimit Implementation:**
 ```html
 <iframe
-  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/media-rights-calculator.html"
+  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/media-rights-explorer.html"
   width="100%"
   height="700"
   style="border: none; border-radius: 8px;"
-  title="Media Rights Calculator - Calculate media rights value"
-  aria-label="Interactive calculator for media rights valuation based on league size, audience reach, advertising rates, and contract length"
+  title="Media Rights Explorer - Understand what makes media rights valuable"
+  aria-label="Interactive explorer showing the four value drivers that determine media rights pricing with NFL vs NHL comparisons"
   allowfullscreen
   loading="lazy">
 </iframe>
 ```
+
+**Note:** The original `media-rights-calculator.html` (complex valuation tool) is archived for instructor reference.
+
+---
+
+#### Element 6A: MC Question - Why NFL Worth 16× NHL `[v1.7.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+The NFL's media rights deal ($10B/year) is worth 16× more than the NHL's deal ($625M/year). What is the PRIMARY driver of this difference?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | The NFL has more teams (32 vs 32) | Incorrect. Both leagues have 32 teams, so team count doesn't explain the difference. The primary driver is audience size—NFL games average 17M viewers vs NHL's 500K. |
+| B ✅ | NFL games average 17M viewers vs NHL's 500K | Correct! Audience size is the primary driver. With 34× more viewers per game, the NFL can command dramatically higher advertising rates. More eyeballs = more ad impressions = more value to broadcasters. |
+| C | The NFL plays fewer games, making each more valuable | Partially true but not the primary driver. While scarcity helps, the 34× audience difference is far more significant than the game count difference. |
+| D | NFL has better demographics (18-49 audience) | Demographics matter but the difference is modest (45% vs 38%). The massive audience size gap is the primary driver of the 16× value difference. |
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+#### Element 6B: MC Question - Appointment Viewing Value `[v1.7.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+Why do advertisers pay 3-4× more (CPM) for live sports compared to scripted TV?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | Sports fans are wealthier than scripted TV viewers | Demographics help, but this isn't the primary reason for the 3-4× premium. The key factor is viewing behavior, not viewer wealth. |
+| B | Sports have more exciting visuals for advertising | Creative quality doesn't explain the systematic price premium across all sports. The answer relates to how people watch, not what they watch. |
+| C ✅ | Live sports viewers watch in real-time and don't skip ads | Correct! Sports are "appointment viewing"—fans watch live because outcomes matter in real-time and social media spoilers are immediate. Unlike DVR'd shows where 70%+ of ads are skipped, sports viewers actually watch the ads. This captive, engaged audience commands premium pricing. |
+| D | There's less competition for sports ad inventory | Actually, sports ad inventory is highly competitive. The premium comes from viewer behavior (watching live, not skipping), not supply constraints. |
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
 
 #### Element 7: Infobox - Appointment Viewing Insight
 ```

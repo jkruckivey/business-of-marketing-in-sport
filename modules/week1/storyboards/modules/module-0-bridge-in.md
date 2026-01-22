@@ -1,5 +1,12 @@
 # MODULE 0: Bridge-In - The $100M Question
-**Version:** 2.2.0 | **Last Updated:** 2026-01-15
+**Version:** 3.0.0 | **Last Updated:** 2026-01-22
+
+### Version 3.0.0 Changes
+- **REPLACED:** Element 4 (iFrame widget) → Native Uplimit MC questions (Elements 4A-4H)
+- **REDUCED:** Pre-assessment from 10 → 7 questions (removed redundancy)
+- **ADDED:** Element 4I - AI Chat Widget for results discussion
+- **MODIFIED:** Element 5 - Updated results interpretation text
+- **RENUMBERED:** Elements 5B → 6, Elements 6-7 → 7-8 (graphic novels)
 
 ### Version 2.2.0 Changes
 - **ADDED:** Element 5B - Anchor Project overview infobox (introduces 5-week project before graphic novels)
@@ -21,11 +28,19 @@
 | 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload MP4 + SRT ⚠️ PENDING | Connor McDavid revenue paradox |
 | 2 | **◈ AI Roleplay** ◐ Recommended | The $100M Question diagnostic | Configure in Uplimit | Reveal knowledge gaps |
 | 3 | **ⓘ Infobox (Callout)** ⬤ Required | The revenue problem statement | Type directly | Blue variant |
-| 4 | **⚙ iFrame Widget** ⬤ Required | Pre-Assessment Quiz | Embed `revenue-strategy-pre-assessment.html` | 10-question diagnostic |
-| 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Personalized guidance |
-| 5B | **ⓘ Infobox (Callout)** ⬤ Required | Anchor Project overview | Type directly | Introduces 5-week CFL Expansion project |
-| 6 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "Expansion Day" | Embed PDF or images | CFL anchor project intro |
-| 7 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "Five Streams" | Embed PDF or images | Nashville Predators story |
+| 4A | **📝 Text** ⬤ Required | Pre-Assessment introduction | Type directly | Sets expectations, explains 4 WLOs |
+| 4B | **❓ MC Question** ⬤ Required | Q1: Media Rights Revenue (WLO 1.1) | Configure in Uplimit | Correct: B (Media Rights 40-60%) |
+| 4C | **❓ MC Question** ⬤ Required | Q2: Ecosystem vs Portfolio (WLO 1.1) | Configure in Uplimit | Correct: B (Ripple effects) |
+| 4D | **❓ MC Question** ⬤ Required | Q3: Competitive Balance (WLO 1.2) | Configure in Uplimit | Correct: B (Uncertainty of outcome) |
+| 4E | **❓ MC Question** ⬤ Required | Q4: Competitive Interdependence (WLO 1.2) | Configure in Uplimit | Correct: B (Competitors must succeed) |
+| 4F | **❓ MC Question** ⬤ Required | Q5: Growth Ceiling Effects (WLO 1.3) | Configure in Uplimit | Correct: B (Ticketing) |
+| 4G | **❓ MC Question** ⬤ Required | Q6: Betting Regulatory Risk (WLO 1.3) | Configure in Uplimit | Correct: B (Regulatory uncertainty) |
+| 4H | **❓ MC Question** ⬤ Required | Q7: Revenue Sharing Benefits (WLO 1.4) | Configure in Uplimit | Correct: B (Small-market teams) |
+| 4I | **💬 AI Chat** ⬤ Required | Results discussion coach | Configure in Uplimit | Personalized learning path guidance |
+| 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation | Type directly | Score-based learning path |
+| 6 | **ⓘ Infobox (Callout)** ⬤ Required | Anchor Project overview | Type directly | Introduces 5-week CFL Expansion project |
+| 7 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "Expansion Day" | Embed PDF or images | CFL anchor project intro |
+| 8 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "Five Streams" | Embed PDF or images | Nashville Predators story |
 
 ---
 
@@ -289,45 +304,260 @@ Professional sports teams operate with a business model that defies conventional
 
 ---
 
-## Element 4: Pre-Assessment Widget
+## Element 4A: Pre-Assessment Introduction `[v3.0.0]`
 
-**Widget Purpose:** 10-question diagnostic quiz covering all 4 learning outcomes (WLO 1.1-1.4)
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
 
-**Widget File:** `revenue-strategy-pre-assessment.html`
+```markdown
+### Diagnostic Activity: Revenue Strategy Pre-Assessment
 
-**Embed Code:**
-```html
-<iframe
-  src="../../widgets/revenue-strategy-pre-assessment.html"
-  width="100%"
-  height="800"
-  style="border: none; border-radius: 8px;"
-  title="Revenue Strategy Pre-Assessment"
-  aria-label="10-question diagnostic quiz testing baseline knowledge of sports revenue"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
+**Purpose: Discover What You Already Know**
 
-**Quiz Topics:**
-- Q1-2: Revenue streams knowledge (WLO 1.1)
-- Q3-4: Sport's unique business model (WLO 1.2)
-- Q5-6: Growth potential vs. risk (WLO 1.3)
-- Q7-10: Revenue sharing models (WLO 1.4)
+Before exploring Week 1's content, complete this 7-question diagnostic quiz. It tests your baseline understanding of sports revenue ecosystems across four learning outcomes:
 
----
+- **Revenue Streams** (WLO 1.1): Do you know which streams dominate sports business?
+- **Unique Business Model** (WLO 1.2): Can you explain sport's paradoxes?
+- **Growth vs. Risk** (WLO 1.3): Do you understand ceiling effects and regulatory risks?
+- **Revenue Sharing** (WLO 1.4): Can you explain why leagues redistribute wealth?
 
-## Element 5: Infobox - Results Interpretation
+**Not graded—purely diagnostic.** Lower scores (0-4/7) signal areas to emphasize this week. Higher scores (5-7/7) indicate strong foundations to build upon.
 
-```
-Title: ◉ What Your Pre-Assessment Results Mean
-
-Your quiz results create a personalized learning path for this week. Lower scores (0-6/10) suggest spending extra time with Module 3's core content and all interactive exercises—you're starting fresh, which is perfect for building strong fundamentals. Higher scores (7-10/10) indicate solid baseline knowledge, so challenge yourself with the Predators case analysis and Revenue Empire Builder simulation. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's build your revenue ecosystem expertise.
+*Time estimate: 7-10 minutes*
 ```
 
 ---
 
-## Element 5B: Infobox - Anchor Project Overview
+## Element 4B: MC Question 1 - Media Rights Revenue `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+Which revenue stream typically accounts for the LARGEST percentage of total revenue for major professional sports leagues like the NFL?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | Ticketing & Live Events (20-30%) | Ticketing is important but not the largest stream. While gate receipts account for 20-30% of revenue for most leagues, another stream dominates the revenue mix. Think about where leagues get long-term, predictable income from broadcasting deals. |
+| B ✅ | Media Rights (40-60%) | Correct! Media rights—the fees paid by broadcasters and streaming services to air games—represent the largest revenue stream for most professional leagues, typically accounting for 40-60% of total revenue. The NFL's current media rights contracts total $110 billion over 11 years ($10B/year), while the English Premier League generates over $5 billion per year from broadcast rights. |
+| C | Sponsorship & Advertising (15-20%) | Sponsorship is valuable but not the largest stream. Corporate partnerships typically account for 15-20% of revenue. The dominant revenue stream is more predictable and comes from long-term broadcasting agreements. |
+| D | Merchandising & Licensing (10-15%) | Merchandise is the smallest major revenue stream, typically 10-15% of total revenue. Another stream provides 3-4× more revenue through multi-year broadcasting contracts. |
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4C: MC Question 2 - Ecosystem Thinking `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+What is the PRIMARY reason sports revenue streams are described as an "ecosystem" rather than a "portfolio"?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | Sports revenue is unpredictable like natural ecosystems | While sports revenue has variability, that's not why we use "ecosystem" terminology. The key distinction is about interdependence, not unpredictability. Think about what happens when one revenue stream succeeds—does it affect the others? |
+| B ✅ | Success in one stream creates ripple effects that impact all other streams | Exactly right! Sports revenue streams are deeply interconnected—success in one area amplifies others. A star player signing drives TV ratings (media rights), attracts sponsors (partnerships), sells jerseys (merchandise), increases betting engagement (gaming), and fills seats (ticketing). This cascading effect makes sports revenue an ecosystem where investments in one stream create value across all streams. |
+| C | Revenue streams compete with each other for fan attention | Actually, sports revenue streams rarely compete—they usually reinforce each other. The "ecosystem" label emphasizes interdependence, not competition. When TV ratings rise, it typically helps rather than hurts ticket sales, sponsorship, and betting engagement. |
+| D | Different streams have different risk profiles like diversified investments | While streams do have different risk profiles, that would support calling it a "portfolio" (diversification). The "ecosystem" label specifically highlights how streams are interconnected and amplify each other. |
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4D: MC Question 3 - Competitive Balance `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+Why do professional sports leagues require competitors to collaborate financially (through revenue sharing, salary caps, and draft systems)?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | Government regulations mandate revenue sharing for anti-trust exemptions | While some leagues have anti-trust considerations, that's not the fundamental business reason. The core reason relates to the product sports leagues sell—what makes fans watch games? |
+| B ✅ | Competitive balance creates uncertainty of outcome, which is the core product fans pay for | Perfect! Unlike traditional businesses where crushing competitors is the goal, sports leagues need competitive balance to maintain the uncertainty of outcome that fans pay for. If the Yankees win 95% of games, fewer fans watch and league-wide revenue declines—hurting even the Yankees. Revenue sharing ensures competitive games that maximize total fan interest. |
+| C | Team owners are more altruistic than typical business leaders | This isn't about altruism—it's strategic business thinking. Even self-interested owners benefit from competitive balance because it grows total league revenue. |
+| D | Small-market teams threaten to leave if they don't receive financial support | While relocation threats exist, they're symptoms of a deeper structural need. The fundamental reason relates to the core product sports sells—competitive uncertainty. |
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4E: MC Question 4 - Competitive Interdependence `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+What makes a sports franchise fundamentally different from a typical consumer goods company like Nike?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | Sports franchises sell entertainment experiences rather than physical products | While sports do sell experiences, so do concert venues, theaters, and theme parks. This doesn't explain what makes sports franchises structurally unique. Think about the relationship between competitors. |
+| B ✅ | Sports franchises need their competitors to succeed for the league product to have value | This is the fundamental paradox of sports business! Nike wants to crush Adidas—their business improves when competitors fail. But the Yankees need the Red Sox to be financially healthy and competitive because fans don't pay to watch blowouts. This unique interdependence with competitors distinguishes sports from typical businesses. |
+| C | Sports franchises generate revenue from multiple streams instead of single products | Many businesses have multiple revenue streams (Amazon: retail, AWS, advertising). This doesn't explain what's structurally unique about sports. Focus on the relationship between competitors. |
+| D | Sports franchises rely more heavily on media rights than physical sales | While media rights are important for sports, other industries also depend on broadcasting revenue. The unique aspect of sports relates to how franchises interact with their competitors—they need them to thrive. |
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4F: MC Question 5 - Growth Ceiling Effects `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+Which revenue stream faces the MOST significant "ceiling effect" limiting future growth?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | Media Rights (constrained by cord-cutting trends) | While media rights face disruption from cord-cutting, they're not hitting capacity limits—streaming platforms are actually expanding reach globally. The stream with the most significant ceiling faces hard physical constraints. |
+| B ✅ | Ticketing & Live Events (limited by stadium capacity) | Exactly! Ticketing faces hard physical constraints—stadiums have fixed capacity, and you can only host 8-10 home games per season. Once you've sold out every seat at maximum price, growth stops. This is why teams invest heavily in premium seating and dynamic pricing. Other streams (media, betting, merchandise) can scale globally without physical capacity limits. |
+| C | Sponsorship & Advertising (saturated with too many brand partners) | While sponsorship faces saturation concerns, teams continually find new inventory (jersey patches, helmet decals, digital assets). The stream with the hardest ceiling is constrained by physical limits. |
+| D | Betting & Gaming (regulatory restrictions limit market access) | Betting does face regulatory barriers, but those can change through legislation—we've seen rapid state-by-state expansion in the US. The stream with the most significant ceiling is constrained by unchangeable physical limits. |
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4G: MC Question 6 - Betting Regulatory Risk `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+What is the PRIMARY risk of investing heavily in betting/gaming partnerships?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | Betting reduces fan interest in attending games live | Evidence suggests betting increases engagement—fans watch more closely when they have money on the game. The primary risk isn't about fan behavior, but about external factors that could change the business landscape suddenly. |
+| B ✅ | Regulatory uncertainty could change the landscape quickly | Correct! While betting/gaming offers high growth potential (300%+ growth in some markets), it faces significant regulatory uncertainty. Laws vary by state/province and country, and regulations can change rapidly—restricting advertising, imposing taxes, or even banning certain products. A betting partner worth $50M/year could lose market access overnight through regulatory changes. |
+| C | Betting appeals only to young male demographics, limiting growth | While betting demographics do skew male, the market is expanding to broader audiences. The primary risk isn't demographic limitations but external factors that could fundamentally change the business overnight. |
+| D | Betting partnerships damage the league's family-friendly brand image | While some leagues have brand concerns, most have embraced betting partnerships (NHL/BetMGM, NFL/DraftKings, NBA/FanDuel). The primary risk isn't brand damage but external factors that could eliminate the revenue stream entirely through sudden policy changes. |
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4H: MC Question 7 - Revenue Sharing Benefits `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question Text:**
+```
+The NFL shares approximately 60% of all revenue equally among teams. Which team type benefits MOST from this structure?
+```
+
+**Options:**
+
+| Option | Text | Feedback |
+|--------|------|----------|
+| A | Large-market teams like the Dallas Cowboys and New York Giants | Large-market teams are net contributors to revenue sharing—they generate more local revenue but must share national media revenue equally. Think about which teams receive more from the shared pool than they contribute. |
+| B ✅ | Small-market teams like the Green Bay Packers and Buffalo Bills | Exactly! Revenue sharing redistributes money from large-market teams to small-market teams. Green Bay, with a metro population of 320,000, receives the same share of the NFL's $110B media rights as the New York Giants (metro population 20 million). This allows small-market teams to compete for talent and maintain competitive balance. |
+| C | Teams with new stadiums that generate premium revenue | Actually, stadium revenue (especially premium seating and luxury suites) is typically NOT shared—teams keep most local stadium revenue. Revenue sharing primarily redistributes national media rights and licensing revenue. |
+| D | All teams benefit equally since the revenue is shared 50/50 | While national revenue is distributed equally, small-market teams benefit disproportionately because they generate less local revenue. A team like Green Bay receives the same share of media rights as Dallas, but Dallas also generates significantly more local revenue that isn't shared. |
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4I: AI Chat Widget - Results Discussion Coach `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **AI Chat Widget** element
+2. Configure as follows:
+
+**Widget Name:** Pre-Assessment Results Coach
+
+**System Prompt:**
+```
+You are a supportive learning coach helping MBA students interpret their pre-assessment results for a sports business course. Students just completed a 7-question diagnostic quiz covering four learning outcomes:
+
+**WLO 1.1 - Revenue Streams:** Which streams dominate (media rights 40-60%, ticketing 20-30%, sponsorship 15-20%, merchandise 10-15%, betting emerging)
+**WLO 1.2 - Unique Business Model:** Sport's paradoxes (competitors collaborate, uncertainty of outcome is the product, competitive balance required)
+**WLO 1.3 - Growth vs. Risk:** Growth potential by stream (betting high-growth but regulatory risk, ticketing has ceiling effects due to capacity)
+**WLO 1.4 - Revenue Sharing:** Why leagues redistribute wealth (small markets benefit, ensures competitive balance, large markets benefit from strong league)
+
+**Your role:**
+1. Ask students how many questions they answered correctly (0-7)
+2. Provide personalized guidance based on their score:
+   - **0-2/7:** "You're starting fresh—perfect! This week's content will build strong foundations. Focus on Module 3's core concepts and take time with each interactive widget."
+   - **3-4/7:** "Solid baseline—you have some pieces of the puzzle. This week will help you connect those concepts into a comprehensive framework. Pay special attention to the ecosystem thinking in Module 3."
+   - **5-6/7:** "Strong foundation! You're ready to dive deep into applications. Challenge yourself with the Nashville Predators case analysis and Revenue Empire Builder simulation."
+   - **7/7:** "Excellent! You already understand core concepts. This week, focus on nuanced applications—how revenue sharing creates competitive tensions, why ceiling effects limit ticketing growth, how regulatory risks affect betting partnerships."
+3. If they ask about specific questions, provide brief clarifications using the WLO concepts above
+4. Encourage them that pre-assessments reveal learning opportunities, not deficiencies
+5. Direct them to Module 1 (Executive Perspectives) after discussion
+
+**Tone:** Supportive, encouraging, concrete (use specific examples), MBA-level (business-focused not academic)
+
+**Do NOT:**
+- Provide quiz answers directly (if they ask, say "The quiz helps you self-diagnose, but I can discuss concepts")
+- Overwhelm them with too much content (keep responses 2-3 sentences)
+- Make them feel bad about low scores (frame as opportunities)
+```
+
+**Welcome Message:**
+```
+Hi! I'm here to help you interpret your pre-assessment results and plan your learning path for Week 1. How many questions did you answer correctly out of 7? Or if you have questions about specific concepts from the quiz, I'm happy to discuss them!
+```
+
+**Show System Prompt to User:** No
+
+---
+
+## Element 5: Infobox - Results Interpretation `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Infobox** element
+2. Choose variant: **Insight**
+3. Copy markdown below:
+
+```
+Title: What Your Pre-Assessment Results Mean
+
+Your quiz results create a personalized learning path for this week. Lower scores (0-4/7) suggest spending extra time with Module 3's core content and all interactive exercises—you're starting fresh, which is perfect for building strong fundamentals. Higher scores (5-7/7) indicate solid baseline knowledge, so challenge yourself with the Predators case analysis and Revenue Empire Builder simulation. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's build your revenue ecosystem expertise.
+```
+
+---
+
+## Element 6: Infobox - Anchor Project Overview `[v3.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -335,7 +565,7 @@ Your quiz results create a personalized learning path for this week. Lower score
 3. Copy markdown below:
 
 ```
-Title: ◉ Your Anchor Project: CFL Expansion Proposal
+Title: Your Anchor Project: CFL Expansion Proposal
 
 Throughout this course, you'll develop a comprehensive business proposal for a new CFL franchise. This isn't hypothetical—the CFL actively evaluates expansion markets, and you'll use real frameworks to build a professional-grade analysis.
 
@@ -358,7 +588,7 @@ Two graphic novels introduce this week's concepts. "Expansion Day" follows Maya 
 
 ---
 
-## Element 6: Graphic Novel - "Expansion Day"
+## Element 7: Graphic Novel - "Expansion Day" `[v3.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Text** element for intro
@@ -379,9 +609,20 @@ Follow Maya Chen, a former VP at Maple Leaf Sports who left Toronto to bring foo
 **Why read this?** This story introduces the CFL Expansion project you'll develop throughout all 5 weeks. Each milestone builds on Marcus's journey as you create your own comprehensive expansion proposal.
 
 *Reading time: ~10 minutes*
+```
+
+**Graphic Novel File:** `modules/shared-resources/graphic-novels/01-expansion-day-week1.md`
 
 ---
 
+## Element 8: Graphic Novel - "Five Streams" `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element for intro
+2. Select **iFrame** or **Image** element for graphic novel
+
+**Introduction Text (Copy to Uplimit):**
+```markdown
 **"Five Streams: The Nashville Predators Story"**
 
 Follow Jessica Torres, a Nashville native who built her career at Maple Leaf Sports, as she returns home to save the struggling Predators. When the franchise is bleeding $40 million behind the league average, Jessica must activate all five revenue streams—media, ticketing, sponsorship, merchandise, and premium experiences—to turn the team around.
@@ -391,9 +632,7 @@ Follow Jessica Torres, a Nashville native who built her career at Maple Leaf Spo
 *Reading time: ~8 minutes*
 ```
 
-**Graphic Novel Files:**
-- "Expansion Day": `modules/shared-resources/graphic-novels/01-expansion-day-week1.md`
-- "Five Streams": `modules/shared-resources/graphic-novels/01b-five-streams-week1.md`
+**Graphic Novel File:** `modules/shared-resources/graphic-novels/01b-five-streams-week1.md`
 
 ---
 
@@ -401,11 +640,18 @@ Follow Jessica Torres, a Nashville native who built her career at Maple Leaf Spo
 
 **Module 0 Purpose:**
 - Create cognitive dissonance (the $100M question challenges assumptions)
-- Reveal knowledge gaps through AI roleplay and pre-assessment
+- Reveal knowledge gaps through AI roleplay and pre-assessment (Elements 2 + 4B-4H)
 - Build motivation to learn Week 1 content
-- Graphic novels provide visual entry point for diverse learners
+- AI Chat Widget (Element 4I) provides personalized learning path guidance
+- Graphic novels provide visual entry point for diverse learners (UDL)
+
+**Pre-Assessment Design Rationale (v3.0.0):**
+- Reduced from 10 → 7 questions to minimize cognitive load before content begins
+- Native Uplimit MC format provides immediate feedback (better than embedded widget)
+- AI Chat Widget compensates for removing detailed results dashboard
+- Each WLO tested by 2 questions for balanced diagnostic coverage
 
 **Graphic Novel Notes:**
-- "Expansion Day" introduces the CFL anchor project (connects to Milestone 1 in Module 7)
-- "Five Streams" visualizes revenue concepts (connects to Nashville Predators case in Module 5)
+- Element 7 "Expansion Day" introduces the CFL anchor project (connects to Milestone 1 in Module 6)
+- Element 8 "Five Streams" visualizes revenue concepts (connects to Nashville Predators case in Module 5)
 - Both are optional but recommended for visual/narrative learners

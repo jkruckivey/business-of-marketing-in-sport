@@ -77,7 +77,12 @@
       "Bash(do if grep -q \"Learning Objective\\\\|learning objective\" \"$file\")",
       "Bash(do if grep -q \"Learning Objective\" \"$file\")",
       "Bash(git stash:*)",
-      "Bash(do echo \"=== WEEK $week ===\" grep -A30 \"File Response\\\\|AI.*[Gg]rading\\\\|[Cc]riteria\\\\|Rubric\" modules/week$week/storyboards/modules/module-7-wrap-up.md)"
+      "Bash(do echo \"=== WEEK $week ===\" grep -A30 \"File Response\\\\|AI.*[Gg]rading\\\\|[Cc]riteria\\\\|Rubric\" modules/week$week/storyboards/modules/module-7-wrap-up.md)",
+      "mcp__executeautomation-playwright-server__playwright_navigate",
+      "mcp__executeautomation-playwright-server__playwright_screenshot",
+      "mcp__executeautomation-playwright-server__playwright_click",
+      "mcp__executeautomation-playwright-server__playwright_evaluate",
+      "mcp__executeautomation-playwright-server__playwright_close"
     ],
     "deny": [],
     "ask": [],

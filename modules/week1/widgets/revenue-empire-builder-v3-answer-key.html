@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Empire Builder v3 - Answer Key Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-neutral-50: #fafafa;
+            --color-neutral-100: #f5f5f5;
+            --color-neutral-200: #e5e5e5;
+            --color-neutral-300: #d4d4d4;
+            --color-neutral-500: #737373;
+            --color-neutral-700: #404040;
+            --color-neutral-800: #262626;
+            --color-neutral-900: #171717;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --color-danger: #ef4444;
+            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-family-primary);
+            background: var(--color-neutral-50);
+            color: var(--color-neutral-900);
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-size: 1.75rem;
+        }
+
+        .subtitle {
+            color: var(--color-neutral-500);
+            margin-bottom: 2rem;
+        }
+
+        .controls {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .btn {
+            background: var(--color-neutral-900);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--color-neutral-700);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-neutral-900);
+            border: 2px solid var(--color-neutral-300);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--color-neutral-900);
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .summary-card {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .summary-card h3 {
+            font-size: 0.8rem;
+            color: var(--color-neutral-500);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+        }
+
+        .summary-card .value {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .summary-card .value.success { color: var(--color-success); }
+        .summary-card .value.warning { color: var(--color-warning); }
+        .summary-card .value.danger { color: var(--color-danger); }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--color-neutral-200);
+            font-size: 0.85rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-neutral-200);
+        }
+
+        th {
+            background: var(--color-neutral-100);
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--color-neutral-700);
+        }
+
+        tr:hover {
+            background: var(--color-neutral-50);
+        }
+
+        .grade-A, .grade-A\\+ { color: var(--color-success); font-weight: 700; }
+        .grade-B, .grade-B\\+ { color: var(--color-warning); font-weight: 600; }
+        .grade-C, .grade-D, .grade-F { color: var(--color-danger); font-weight: 600; }
+
+        .target-hit { color: var(--color-success); }
+        .target-miss { color: var(--color-danger); }
+
+        .strategy-ecosystem { background: #d1fae5; color: #047857; padding: 0.2rem 0.5rem; border-radius: 4px; font-weight: 500; }
+        .strategy-balanced { background: #cffafe; color: #0e7490; padding: 0.2rem 0.5rem; border-radius: 4px; font-weight: 500; }
+        .strategy-growth { background: #fee2e2; color: #b91c1c; padding: 0.2rem 0.5rem; border-radius: 4px; font-weight: 500; }
+
+        .path-code {
+            font-family: monospace;
+            font-size: 0.75rem;
+            color: var(--color-neutral-500);
+        }
+
+        .insights-section {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .insights-section h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .insights-section ul {
+            margin-left: 1.5rem;
+            color: var(--color-neutral-700);
+        }
+
+        .insights-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media print {
+            .controls { display: none; }
+            body { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Revenue Empire Builder v3 - Answer Key</h1>
+        <p class="subtitle">Instructor Reference: 36 Sample Paths (3 strategies × 12 event combinations)</p>
+
+        <div class="controls">
+            <button class="btn" onclick="generateAnswerKey()">Generate Answer Key</button>
+            <button class="btn btn-secondary" onclick="exportCSV()">Export CSV</button>
+            <button class="btn btn-secondary" onclick="window.print()">Print</button>
+        </div>
+
+        <div class="summary-grid" id="summary-grid" style="display: none;">
+            <div class="summary-card">
+                <h3>Paths Tested</h3>
+                <div class="value" id="paths-tested">0</div>
+            </div>
+            <div class="summary-card">
+                <h3>Target Hit Rate</h3>
+                <div class="value" id="target-rate">0%</div>
+            </div>
+            <div class="summary-card">
+                <h3>Ecosystem Avg</h3>
+                <div class="value success" id="ecosystem-avg">$0</div>
+            </div>
+            <div class="summary-card">
+                <h3>Balanced Avg</h3>
+                <div class="value warning" id="balanced-avg">$0</div>
+            </div>
+            <div class="summary-card">
+                <h3>Growth Avg</h3>
+                <div class="value danger" id="growth-avg">$0</div>
+            </div>
+        </div>
+
+        <div id="results-container"></div>
+
+        <div class="insights-section" id="insights-section" style="display: none;">
+            <h2>Key Pedagogical Insights</h2>
+            <ul id="insights-list"></ul>
+        </div>
+    </div>
+
+    <script>
+        // ========== SIMULATION ENGINE (copied from v3) ==========
+
+        const STRATEGIES = {
+            ecosystem: {
+                name: 'Ecosystem Builder',
+                allocations: { media: 30, ticketing: 35, sponsorship: 20, merchandising: 10, betting: 5 }
+            },
+            balanced: {
+                name: 'Balanced Portfolio',
+                allocations: { media: 20, ticketing: 20, sponsorship: 20, merchandising: 20, betting: 20 }
+            },
+            growth: {
+                name: 'Growth Chaser',
+                allocations: { media: 10, ticketing: 10, sponsorship: 20, merchandising: 25, betting: 35 }
+            }
+        };
+
+        const cascadeEffects = {
+            ticketing: { media: 0.25, merchandising: 0.40, betting: 0.35, sponsorship: 0.20 },
+            media: { sponsorship: 0.45, merchandising: 0.25, betting: 0.15 },
+            sponsorship: { ticketing: 0.12, merchandising: 0.10 },
+            merchandising: { media: 0.05 },
+            betting: { media: 0.06, ticketing: 0.04 }
+        };
+
+        const baseStreams = [
+            { id: 'media', baseValue: 40000000, baseGrowth: 0.08, maxValue: 80000000 },
+            { id: 'ticketing', baseValue: 25000000, baseGrowth: 0.05, maxValue: 40000000 },
+            { id: 'sponsorship', baseValue: 20000000, baseGrowth: 0.12, maxValue: null },
+            { id: 'merchandising', baseValue: 10000000, baseGrowth: 0.10, maxValue: null },
+            { id: 'betting', baseValue: 5000000, baseGrowth: 0.35, maxValue: null }
+        ];
+
+        const events = {
+            2: {
+                title: 'Streaming Platform Deal',
+                choices: [
+                    { id: 'accept', title: 'Accept Exclusive', effects: { media: 1.20 } },
+                    { id: 'decline', title: 'Keep Options Open', effects: {} },
+                    { id: 'hybrid', title: 'Non-Exclusive', effects: { media: 1.10 } }
+                ]
+            },
+            3: {
+                title: 'Title Sponsorship',
+                choices: [
+                    { id: 'accept', title: 'Accept Title Sponsor', effects: { sponsorship: 1.25 } },
+                    { id: 'decline', title: 'Maintain Flexibility', effects: {} },
+                    { id: 'counter', title: 'Counter Premium Tier', effects: { sponsorship: 1.15 } }
+                ]
+            },
+            4: {
+                title: 'Economic Recession',
+                choices: [
+                    { id: 'invest', title: 'Double Down Fan Exp', effects: { ticketing: 1.10, sponsorship: 0.90, merchandising: 0.90 } },
+                    { id: 'cut', title: 'Defensive Position', effects: { media: 0.95, ticketing: 0.95, sponsorship: 0.95, merchandising: 0.95, betting: 0.95 } },
+                    { id: 'pivot', title: 'Accelerate Digital', effects: { betting: 1.40, sponsorship: 0.85 } }
+                ]
+            },
+            5: {
+                title: 'Championship Season',
+                choices: [
+                    { id: 'lock', title: 'Lock Long-Term', effects: { media: 1.12, ticketing: 1.12, sponsorship: 1.12, merchandising: 1.12, betting: 1.12 } },
+                    { id: 'maximize', title: 'Maximize Short-Term', effects: { merchandising: 1.50, ticketing: 1.30 } },
+                    { id: 'balanced', title: 'Balanced Approach', effects: { media: 1.18, ticketing: 1.18, sponsorship: 1.18, merchandising: 1.18, betting: 1.18 } }
+                ]
+            }
+        };
+
+        function simulatePath(strategyId, eventChoices) {
+            const strategy = STRATEGIES[strategyId];
+            const streams = baseStreams.map(s => ({ ...s, currentValue: s.baseValue }));
+            let totalCascade = 0;
+
+            for (let year = 1; year <= 5; year++) {
+                // Calculate cascade effects
+                const cascadeBonuses = {};
+                streams.forEach(sourceStream => {
+                    const sourceFocus = strategy.allocations[sourceStream.id] / 100;
+                    if (sourceFocus > 0.1 && cascadeEffects[sourceStream.id]) {
+                        const sourceInvestment = sourceStream.currentValue * sourceFocus;
+                        Object.entries(cascadeEffects[sourceStream.id]).forEach(([targetId, multiplier]) => {
+                            if (!cascadeBonuses[targetId]) cascadeBonuses[targetId] = 0;
+                            cascadeBonuses[targetId] += sourceInvestment * multiplier * sourceFocus;
+                        });
+                    }
+                });
+                const yearCascade = Object.values(cascadeBonuses).reduce((sum, b) => sum + b, 0);
+                totalCascade += yearCascade;
+
+                // Apply growth
+                streams.forEach(stream => {
+                    const focus = strategy.allocations[stream.id];
+                    const focusMultiplier = 1.0 + (focus / 100) * 0.5;
+                    let effectiveGrowth = stream.baseGrowth * focusMultiplier;
+
+                    // Apply event effects (years 2-5)
+                    if (year > 1) {
+                        const eventChoice = events[year].choices.find(c => c.id === eventChoices[year - 2]);
+                        if (eventChoice && eventChoice.effects && eventChoice.effects[stream.id]) {
+                            effectiveGrowth *= eventChoice.effects[stream.id];
+                        }
+                    }
+
+                    stream.currentValue = stream.currentValue * (1 + effectiveGrowth);
+                    if (cascadeBonuses[stream.id]) {
+                        stream.currentValue += cascadeBonuses[stream.id];
+                    }
+                    if (stream.maxValue && stream.currentValue > stream.maxValue) {
+                        stream.currentValue = stream.maxValue;
+                    }
+                });
+            }
+
+            const finalRevenue = streams.reduce((sum, s) => sum + s.currentValue, 0);
+            const growth = ((finalRevenue - 100000000) / 100000000 * 100);
+            const hitTarget = finalRevenue >= 200000000;
+
+            let grade = 'F';
+            if (finalRevenue >= 250000000) grade = 'A+';
+            else if (finalRevenue >= 225000000) grade = 'A';
+            else if (finalRevenue >= 200000000) grade = 'B+';
+            else if (finalRevenue >= 175000000) grade = 'B';
+            else if (finalRevenue >= 150000000) grade = 'C';
+            else if (finalRevenue >= 125000000) grade = 'D';
+
+            return {
+                strategy: strategyId,
+                strategyName: strategy.name,
+                eventChoices,
+                finalRevenue,
+                growth,
+                totalCascade,
+                hitTarget,
+                grade,
+                pathCode: `${strategyId.charAt(0).toUpperCase()}-${eventChoices.map(c => c.charAt(0).toUpperCase()).join('-')}`
+            };
+        }
+
+        // ========== ANSWER KEY GENERATION ==========
+
+        // 12 representative event paths (sampling key combinations)
+        const sampleEventPaths = [
+            ['accept', 'accept', 'invest', 'balanced'],   // All positive, balanced finish
+            ['accept', 'accept', 'invest', 'lock'],       // All positive, conservative finish
+            ['accept', 'accept', 'invest', 'maximize'],   // All positive, aggressive finish
+            ['accept', 'accept', 'cut', 'balanced'],      // Defensive recession
+            ['accept', 'accept', 'pivot', 'balanced'],    // Digital pivot recession
+            ['decline', 'decline', 'invest', 'balanced'], // Decline early opps
+            ['hybrid', 'counter', 'invest', 'balanced'],  // Middle-ground choices
+            ['accept', 'decline', 'invest', 'maximize'],  // Mixed strategy
+            ['decline', 'accept', 'cut', 'lock'],         // Conservative mixed
+            ['accept', 'counter', 'pivot', 'maximize'],   // Aggressive mixed
+            ['hybrid', 'accept', 'invest', 'lock'],       // Hybrid media start
+            ['decline', 'counter', 'cut', 'balanced'],    // Cautious throughout
+        ];
+
+        let results = [];
+
+        function generateAnswerKey() {
+            results = [];
+
+            ['ecosystem', 'balanced', 'growth'].forEach(strategyId => {
+                sampleEventPaths.forEach(eventPath => {
+                    results.push(simulatePath(strategyId, eventPath));
+                });
+            });
+
+            // Sort by final revenue descending
+            results.sort((a, b) => b.finalRevenue - a.finalRevenue);
+
+            renderResults();
+            renderSummary();
+            renderInsights();
+        }
+
+        function renderResults() {
+            const container = document.getElementById('results-container');
+
+            let html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Strategy</th>
+                            <th>Path Code</th>
+                            <th>Y2: Streaming</th>
+                            <th>Y3: Sponsor</th>
+                            <th>Y4: Recession</th>
+                            <th>Y5: Championship</th>
+                            <th>Final Revenue</th>
+                            <th>Growth</th>
+                            <th>Cascade</th>
+                            <th>Target</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            results.forEach((r, i) => {
+                const strategyClass = `strategy-${r.strategy}`;
+                const targetClass = r.hitTarget ? 'target-hit' : 'target-miss';
+                const gradeClass = `grade-${r.grade.replace('+', '\\+')}`;
+
+                html += `
+                    <tr>
+                        <td>${i + 1}</td>
+                        <td><span class="${strategyClass}">${r.strategyName.split(' ')[0]}</span></td>
+                        <td class="path-code">${r.pathCode}</td>
+                        <td>${r.eventChoices[0]}</td>
+                        <td>${r.eventChoices[1]}</td>
+                        <td>${r.eventChoices[2]}</td>
+                        <td>${r.eventChoices[3]}</td>
+                        <td>$${(r.finalRevenue / 1000000).toFixed(1)}M</td>
+                        <td>+${r.growth.toFixed(1)}%</td>
+                        <td>$${(r.totalCascade / 1000000).toFixed(0)}M</td>
+                        <td class="${targetClass}">${r.hitTarget ? '✓ Hit' : '✗ Miss'}</td>
+                        <td class="${gradeClass}">${r.grade}</td>
+                    </tr>
+                `;
+            });
+
+            html += '</tbody></table>';
+            container.innerHTML = html;
+        }
+
+        function renderSummary() {
+            document.getElementById('summary-grid').style.display = 'grid';
+
+            const targetHits = results.filter(r => r.hitTarget).length;
+            document.getElementById('paths-tested').textContent = results.length;
+            document.getElementById('target-rate').textContent = `${((targetHits / results.length) * 100).toFixed(0)}%`;
+
+            const ecosystemResults = results.filter(r => r.strategy === 'ecosystem');
+            const balancedResults = results.filter(r => r.strategy === 'balanced');
+            const growthResults = results.filter(r => r.strategy === 'growth');
+
+            const avg = arr => arr.reduce((sum, r) => sum + r.finalRevenue, 0) / arr.length;
+
+            document.getElementById('ecosystem-avg').textContent = `$${(avg(ecosystemResults) / 1000000).toFixed(0)}M`;
+            document.getElementById('balanced-avg').textContent = `$${(avg(balancedResults) / 1000000).toFixed(0)}M`;
+            document.getElementById('growth-avg').textContent = `$${(avg(growthResults) / 1000000).toFixed(0)}M`;
+        }
+
+        function renderInsights() {
+            document.getElementById('insights-section').style.display = 'block';
+
+            const ecosystemResults = results.filter(r => r.strategy === 'ecosystem');
+            const balancedResults = results.filter(r => r.strategy === 'balanced');
+            const growthResults = results.filter(r => r.strategy === 'growth');
+
+            const ecosystemHitRate = (ecosystemResults.filter(r => r.hitTarget).length / ecosystemResults.length * 100).toFixed(0);
+            const balancedHitRate = (balancedResults.filter(r => r.hitTarget).length / balancedResults.length * 100).toFixed(0);
+            const growthHitRate = (growthResults.filter(r => r.hitTarget).length / growthResults.length * 100).toFixed(0);
+
+            const avgCascadeEcosystem = ecosystemResults.reduce((sum, r) => sum + r.totalCascade, 0) / ecosystemResults.length;
+            const avgCascadeGrowth = growthResults.reduce((sum, r) => sum + r.totalCascade, 0) / growthResults.length;
+
+            const bestPath = results[0];
+            const worstPath = results[results.length - 1];
+
+            const insights = [
+                `<strong>Ecosystem Builder</strong> hits the $200M target in <strong>${ecosystemHitRate}%</strong> of paths tested.`,
+                `<strong>Balanced Portfolio</strong> hits the target in <strong>${balancedHitRate}%</strong> of paths.`,
+                `<strong>Growth Chaser</strong> hits the target in only <strong>${growthHitRate}%</strong> of paths, despite betting's 35% base growth.`,
+                `<strong>Cascade differential:</strong> Ecosystem generates ~$${(avgCascadeEcosystem / 1000000).toFixed(0)}M in cascade effects vs Growth's ~$${(avgCascadeGrowth / 1000000).toFixed(0)}M.`,
+                `<strong>Best path:</strong> ${bestPath.strategyName} with ${bestPath.pathCode} → $${(bestPath.finalRevenue / 1000000).toFixed(1)}M (${bestPath.grade})`,
+                `<strong>Worst path:</strong> ${worstPath.strategyName} with ${worstPath.pathCode} → $${(worstPath.finalRevenue / 1000000).toFixed(1)}M (${worstPath.grade})`,
+                `<strong>Key lesson:</strong> Media Rights and Ticketing are "ecosystem drivers" that amplify other streams. Betting is a "receiver" with high base growth but weak cascade effects.`
+            ];
+
+            document.getElementById('insights-list').innerHTML = insights.map(i => `<li>${i}</li>`).join('');
+        }
+
+        function exportCSV() {
+            if (results.length === 0) {
+                alert('Generate the answer key first!');
+                return;
+            }
+
+            let csv = 'Rank,Strategy,Path Code,Y2 Streaming,Y3 Sponsor,Y4 Recession,Y5 Championship,Final Revenue,Growth %,Cascade Value,Target Hit,Grade\n';
+
+            results.forEach((r, i) => {
+                csv += `${i + 1},${r.strategyName},${r.pathCode},${r.eventChoices[0]},${r.eventChoices[1]},${r.eventChoices[2]},${r.eventChoices[3]},${r.finalRevenue.toFixed(0)},${r.growth.toFixed(1)},${r.totalCascade.toFixed(0)},${r.hitTarget ? 'Yes' : 'No'},${r.grade}\n`;
+            });
+
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'revenue-empire-builder-v3-answer-key.csv';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Auto-generate on load
+        window.onload = generateAnswerKey;
+    </script>
+</body>
+</html>

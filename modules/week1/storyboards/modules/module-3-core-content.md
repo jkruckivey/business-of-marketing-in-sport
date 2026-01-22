@@ -1,7 +1,18 @@
 # Five Revenue Streams That Power Sports
-**Version:** 1.8.0 | **Last Updated:** 2026-01-22
+**Version:** 2.0.0 | **Last Updated:** 2026-01-22
 
 **Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports WLO 1.1, 1.2, 1.3)
+
+### Version 2.0.0 Changes
+- **REPLACED:** Element 21 - Sponsorship ROI Calculator (iFrame) → Activation Examples (markdown)
+- **REMOVED:** Element 20C - Widget introduction (redundant with new Element 21)
+- **UPDATED:** Section 4 element table to reflect simplified sponsorship content
+- **RATIONALE:** ROI calculator too complex for Week 1 intro; saved for Week 3 deep-dive
+
+### Version 1.9.0 Changes
+- **REPLACED:** Element 26 - iFrame widget → Markdown tables (Betting Market Comparison)
+- **SIMPLIFIED:** Element 25B - Removed misplaced transition line, shortened to brief intro
+- **UPDATED:** Section 5 element table to reflect markdown instead of iFrame
 
 ### Version 1.8.0 Changes
 - **REPLACED:** Element 6 - `media-rights-calculator.html` → `media-rights-explorer.html` (simplified widget)
@@ -62,7 +73,7 @@
 | 2 | **▶ Video** ⬛ Required | 5 Revenue Streams (animated) | 2 min | - | Upload `week1-video1-revenue-streams.mp4` |
 | 3 | **⊞ Vertical List** ⬛ Required | 5 streams at a glance | 1 min | - | Type directly |
 | 4 | **⚙ iFrame Widget** ⬛ Required | **Revenue Streams Explorer** | 3 min | - | Embed `revenue-streams-explorer.html` |
-| 4A | **❓ MC Question** ⬛ Required | Largest revenue stream | 1 min | - | Configure in Uplimit |
+| 4A | **❓ MC Question** ⬛ ediRequired | Largest revenue stream | 1 min | - | Configure in Uplimit |
 | 4B | **❓ MC Question** ⬛ Required | Growth vs. size tradeoff | 1 min | - | Configure in Uplimit |
 
 
@@ -494,49 +505,73 @@ You've learned that media rights dominate league economics at 40-60% of total re
 
 ---
 
-#### Element 6A: MC Question - Why NFL Worth 16× NHL `[v1.7.0]`
+#### Element 6A: MC Question - Why NFL Worth 16× NHL `[v1.8.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
 2. Configure as follows:
 
-**Question Text:**
+**Question:**
 ```
 The NFL's media rights deal ($10B/year) is worth 16× more than the NHL's deal ($625M/year). What is the PRIMARY driver of this difference?
 ```
 
 **Options:**
+- A: The NFL has more teams (32 vs 32)
+- B: NFL games average 17M viewers vs NHL's 500K ✅
+- C: The NFL plays fewer games, making each more valuable
+- D: NFL has better demographics (18-49 audience)
 
-| Option | Text | Feedback |
-|--------|------|----------|
-| A | The NFL has more teams (32 vs 32) | Incorrect. Both leagues have 32 teams, so team count doesn't explain the difference. The primary driver is audience size—NFL games average 17M viewers vs NHL's 500K. |
-| B ✅ | NFL games average 17M viewers vs NHL's 500K | Correct! Audience size is the primary driver. With 34× more viewers per game, the NFL can command dramatically higher advertising rates. More eyeballs = more ad impressions = more value to broadcasters. |
-| C | The NFL plays fewer games, making each more valuable | Partially true but not the primary driver. While scarcity helps, the 34× audience difference is far more significant than the game count difference. |
-| D | NFL has better demographics (18-49 audience) | Demographics matter but the difference is modest (45% vs 38%). The massive audience size gap is the primary driver of the 16× value difference. |
+**After Submission:**
+```
+Media rights value is fundamentally driven by audience size. More eyeballs = more ad impressions = more value to broadcasters and sponsors.
+```
+
+**Feedback for correct answers:**
+```
+Correct! With 34× more viewers per game (17M vs 500K), the NFL commands dramatically higher advertising rates.
+```
+
+**Feedback for incorrect answers:**
+```
+Both leagues have 32 teams, and while scarcity and demographics help, the massive audience size gap (34×) is the primary driver.
+```
 
 **Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-#### Element 6B: MC Question - Appointment Viewing Value `[v1.7.0]`
+#### Element 6B: MC Question - Appointment Viewing Value `[v1.8.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
 2. Configure as follows:
 
-**Question Text:**
+**Question:**
 ```
 Why do advertisers pay 3-4× more (CPM) for live sports compared to scripted TV?
 ```
 
 **Options:**
+- A: Sports fans are wealthier than scripted TV viewers
+- B: Sports have more exciting visuals for advertising
+- C: Live sports viewers watch in real-time and don't skip ads ✅
+- D: There's less competition for sports ad inventory
 
-| Option | Text | Feedback |
-|--------|------|----------|
-| A | Sports fans are wealthier than scripted TV viewers | Demographics help, but this isn't the primary reason for the 3-4× premium. The key factor is viewing behavior, not viewer wealth. |
-| B | Sports have more exciting visuals for advertising | Creative quality doesn't explain the systematic price premium across all sports. The answer relates to how people watch, not what they watch. |
-| C ✅ | Live sports viewers watch in real-time and don't skip ads | Correct! Sports are "appointment viewing"—fans watch live because outcomes matter in real-time and social media spoilers are immediate. Unlike DVR'd shows where 70%+ of ads are skipped, sports viewers actually watch the ads. This captive, engaged audience commands premium pricing. |
-| D | There's less competition for sports ad inventory | Actually, sports ad inventory is highly competitive. The premium comes from viewer behavior (watching live, not skipping), not supply constraints. |
+**After Submission:**
+```
+The premium for live sports advertising comes from viewer behavior, not content quality or demographics. How people watch matters more than what they watch.
+```
+
+**Feedback for correct answers:**
+```
+Correct! Sports are "appointment viewing"—fans watch live because outcomes matter in real-time. Unlike DVR'd shows where 70%+ of ads are skipped, sports viewers actually watch the ads.
+```
+
+**Feedback for incorrect answers:**
+```
+Demographics and visuals help, but the key factor is viewing behavior: sports fans watch live and can't skip ads because they don't want to miss the action.
+```
 
 **Points:** 1 | **Shuffle options:** Yes
 
@@ -1101,17 +1136,21 @@ Total non-ticket revenue can reach **$40-50 per attendee** (concessions $15-30, 
 
 ---
 
-### Section 4: Sponsorship & Merchandising (Elements 19-24)
+### Section 4: Sponsorship & Merchandising (Elements 19-24) `[v2.0.0]`
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
 | 19 | **▶ Video** ⬛ Required | Sponsorship & Merchandising (2 min) | 2 min | - | Upload `week1-video2-sponsorship-merch.mp4` |
 | 20 | **▬ Text** ⬛ Required | Sponsorship basics | 1 min | 100 | Type directly |
-| 21 | **⚙ iFrame Widget** ⬛ Required | **Sponsorship ROI Calculator** | 4 min | - | Embed `sponsorship-roi-calculator.html` |
+| 20A | **▭ Picture** ▣ Recommended | Stadium branding | - | - | Stock photo |
+| 20B | **◇ Details** ○ Optional | Sponsorship deep dive | 4 min | 600 | Type directly |
+| 21 | **▬ Text** ⬛ Required | **Sponsorship Activation Examples** (markdown) | 2 min | 300 | Type directly |
 | 22 | **▭ Image** ▣ Recommended | Sponsorship activation pyramid | 1 min | - | Upload `sponsorship-activation-pyramid.png` |
 | 23 | **▬ Text** ⬛ Required | Merchandising models | 1 min | 100 | Type directly |
+| 23A | **▭ Picture** ▣ Recommended | Team merchandise store | - | - | Stock photo |
+| 23B | **◇ Details** ○ Optional | Merchandising deep dive | 3 min | 400 | Type directly |
 | 24 | **◫ Tiles** ▣ Recommended | 3 merchandising spikes | 1 min | - | Type directly |
-| 24A | **📝 Practice Quiz** ⬤ Required | Sponsorship & Merch Check (4 questions) | 3 min | - | Configure in Uplift |
+| 24A | **📝 Practice Quiz** ⬤ Required | Sponsorship & Merch Check (4 questions) | 3 min | - | Configure in Uplimit |
 
 #### Element 19: Video - Sponsorship & Merchandising Overview
 - **File:** `week1-video2-sponsorship-merch.mp4`
@@ -1308,100 +1347,56 @@ The advantage: **inventory isn't limited**. Teams can sell dozens of in-venue ad
 
 ---
 
-### Element 20C: Widget Introduction - Sponsorship ROI Calculator
+### Element 21: Sponsorship Activation Examples `[v2.0.0]`
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-# Practice: Calculate Sponsorship Value
+# The Activation Difference: Why Strategy Beats Logo Size
 
-Sponsors don't write $40 million checks for logos—they're investing in measurable brand outcomes. This calculator reveals how teams and sponsors evaluate deal value.
+Sponsors don't write $40 million checks for logos—they're investing in measurable brand outcomes. The difference between mediocre and excellent sponsorships isn't the rights fee or logo placement. It's **activation**.
 
-## Your Challenge
+## Activation Levels: From Logo to Integration
 
-You're a brand manager evaluating a sports sponsorship investment. Your CFO asks: "What will we get for our money?" You need to model brand impressions, estimated brand lift, and deal value to justify the investment. Your task: demonstrate that activation strategy matters more than logo size.
+| Level | What It Looks Like | Value Multiplier | Example |
+|-------|-------------------|------------------|---------|
+| **Logo Only** | Rink board, static signage | 1× | Generic corporate logo on arena boards |
+| **Event Presence** | Branded gates, giveaways, PA mentions | 2× | "Tonight's game brought to you by..." |
+| **Digital Integration** | Social content, app features, email campaigns | 2.5× | Sponsor-branded highlights, push notifications |
+| **Experience Creation** | Premium lounges, exclusive events, player access | 3× | Delta Sky360 Club at Lakers games |
+| **Full Brand Integration** | Loyalty programs, content series, community programs | 3-5× | Scotiabank Scene+ Night at Leafs games |
 
-## What You'll Practice
+## Real-World Activation Examples
 
-- Calculating brand impressions from different sponsorship types (naming rights, jersey, category)
-- Understanding how market size affects deal value (Toronto vs. Winnipeg)
-- Seeing how activation level transforms ROI ("logo only" vs. "full integration")
-- Building the business case for sponsorship investment
+### Scotiabank + Toronto Maple Leafs (Full Integration)
+- **Rights Fee:** ~$40M/year (naming rights)
+- **Activation:** Scene+ loyalty integration, exclusive ticket presales, in-arena experiences, community hockey programs
+- **Result:** Bank customers associate Scotiabank with positive Leafs memories—not just a logo on a building
 
-## How the Calculator Works
+### Delta + Los Angeles Lakers (Experience Creation)
+- **Rights Fee:** ~$5-8M/year (category partner)
+- **Activation:** Delta Sky360 premium lounge, travel content series, behind-the-scenes player content, exclusive fan experiences
+- **Result:** Premium brand association that extends beyond game nights
 
-1. **Select Deal Type:** Naming rights ($15-50M), jersey patch ($5-30M), or category partner ($500K-10M)
-2. **Choose Market Size:** Large (Toronto/NY), Medium (Edmonton/Denver), Small (Winnipeg/Sacramento)
-3. **Set Activation Level:** Logo only, Event presence, or Full integration
-4. **See Outputs:** Brand impressions (millions), estimated brand lift (%), customer acquisition estimate, deal value ($M/year)
-5. **Compare Scenarios:** See how activation level transforms the same rights fee into dramatically different returns
+### Generic Sponsor + Small Market Team (Logo Only)
+- **Rights Fee:** ~$500K/year
+- **Activation:** Dasher board ads, occasional PA mention
+- **Result:** Minimal brand recall, unclear ROI, unlikely to renew
 
-## Strategic Considerations
+## The Key Insight
 
-- **Market Size Multiplier:** Scotiabank Arena ($40M/year in Toronto) vs. similar deal in Winnipeg ($10M/year)—same activation opportunities, different reach.
-- **Activation Transforms Value:** "Logo only" captures maybe 30% of potential value. "Full integration" (loyalty programs, hospitality, content) captures 100%+.
-- **Beyond Visibility:** The best sponsors measure brand favorability, consideration intent, and customer acquisition—not just impressions.
-- **Long-Term Relationships:** Naming rights are 15-20 year commitments. Jersey sponsors sign 3-5 year deals. Different time horizons, different valuations.
+**Same rights fee, different activation = dramatically different returns.**
 
-## After the Widget
+A $5M sponsorship with full integration generates more value than a $10M sponsorship with logo-only activation. Smart sponsors budget 1:1 (activation spend = rights fee). The best sponsors budget 2:1.
 
-You'll see sponsorship activation in action when you study the Nashville Predators case—how they rebuilt sponsor relationships during their turnaround.
+This is why sponsorship valuation is complex—it's not just "how big is the logo?" It's "how deeply is the brand woven into the fan experience?"
 ```
 
----
-
-#### Element 21: iFrame Widget - Sponsorship ROI Calculator
-
-### ⚙ Interactive Activity: Sponsorship ROI Calculator
-
-**Practice: WLO 1.1 (Understand sponsorship mechanics) & WLO 1.3 (Evaluate activation strategies)**
-
-Sponsorship generates 15-25% of team revenue, but the gap between mediocre and excellent sponsorships is enormous. The difference isn't the logo size or the rights fee—it's activation. Brands that fully integrate their partnerships generate 3-5× more value than those who simply place a logo and hope for results.
-
-In this calculator, you'll build sponsorship valuations from the brand's perspective. Select deal type (naming rights, jersey patch, category partner), market size (which determines reach), and activation level (which determines value extraction). The widget calculates brand impressions, estimated brand lift, customer acquisition potential, and implied deal value. You'll discover why Scotiabank pays $40M/year for their Toronto arena while similar deals in smaller markets cost $10M—and why activation strategy matters more than geography.
-
-**What you'll discover:**
-
-- Why Scotiabank Arena costs $40M/year in Toronto while similar naming rights in smaller markets cost $10M—the market size multiplier
-- How "full integration" activation drives 3-5× more value than "logo only" approaches with identical rights fees
-- The relationship between brand impressions (reach) and brand lift (impact)—why more isn't always better
-- Why sophisticated sponsors measure success through customer acquisition and brand favorability, not just visibility metrics
-
-**Time commitment:** 4 minutes
-**Learning outcomes practiced:** WLO 1.1 (Understanding sponsorship revenue stream), WLO 1.3 (Evaluating activation strategies)
-
----
-
-**Widget Purpose:** Calculate sponsor value from brand exposure based on deal type, market size, and activation level.
-
-**Widget Status:** ✅ Phase 2 widget - BUILT AND READY
-
-**How It Works:**
-- **Inputs:**
-  - Deal type: Naming rights, jersey patch, category partner
-  - Market size: Large (Toronto), Medium (Edmonton), Small (Winnipeg)
-  - Activation level: Logo only, Event presence, Full integration
-- **Outputs:**
-  - Brand impressions (millions)
-  - Estimated brand lift (%)
-  - Customer acquisition (estimated)
-  - Deal value ($M/year)
-- **Examples:** Scotiabank Arena ($40M), Warriors + Rakuten ($20M)
-- **Learning:** Why activation matters more than logo placement
-
-**Uplimit Implementation:**
-```html
-<iframe
-  src="https://jkruckivey.github.io/business-of-marketing-in-sport/widgets/sponsorship-roi-calculator.html"
-  width="100%"
-  height="700"
-  style="border: none; border-radius: 8px;"
-  title="Sponsorship ROI Calculator - Calculate brand value"
-  aria-label="Interactive calculator for sponsorship value based on deal type, market size, and activation level to estimate brand impressions and ROI"
-  allowfullscreen
-  loading="lazy">
-</iframe>
-```
+**Design Rationale:**
+- Replaces complex 12-input ROI calculator with clear activation examples
+- Teaches the same concept (activation > logo) through real examples
+- Appropriate for Week 1 intro level—detailed ROI calculation saved for Week 3
+- Markdown tables render natively in Uplimit without iFrame overhead
 
 #### Element 22: Image - Sponsorship Activation Pyramid
 - **File:** `sponsorship-activation-pyramid.png`
@@ -1607,12 +1602,14 @@ D) Player birthday promotions (targeted 25% increase)
 
 ---
 
-### Section 5: Betting & Gaming (Elements 25-27)
+### Section 5: Betting & Gaming (Elements 25-27) `[v1.9.0]`
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
-| 25 | **▬ Text** ⬛ Required | Betting growth | 1 min | 100 | Type directly |
-| 26 | **⚙ iFrame Widget** ▢ Optional | **Betting Market Comparison** | 2 min | - | Embed `betting-market-comparison.html` |
+| 25 | **▬ Text** ⬛ Required | Betting growth intro | 1 min | 100 | Type directly |
+| 25A | **▭ Picture** ▣ Recommended | Sportsbook environment | - | - | Stock photo |
+| 25B | **▬ Text** ⬛ Required | Tables introduction | 0.5 min | 50 | Type directly |
+| 26 | **▬ Text** ⬛ Required | **Betting Market Comparison Tables** (markdown) | 3 min | 400 | Type directly |
 | 27 | **ⓘ Infobox** ▣ Recommended | Betting growth statistics | 1 min | - | Type directly |
 
 #### Element 25: Betting Growth Text
@@ -1647,99 +1644,118 @@ Sports betting represents the **newest and fastest-growing revenue stream**, cur
 
 ---
 
-### Element 25B: Widget Introduction - Betting Market Comparison `[v1.5.0]`
+### Element 25B: Tables Introduction - Global Betting Markets `[v1.9.0]`
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
 # Global Betting Markets: A Strategic Comparison
 
-Sports betting went from illegal to a $200+ billion global market in just six years. This comparison helps you understand how market characteristics, regulations, and opportunities vary dramatically across key betting markets.
+Sports betting went from illegal to a $200+ billion global market in just six years. The comparison below shows how market characteristics, regulations, and opportunities vary dramatically across key betting markets.
 
-## The Question
-
-A professional sports league wants to expand its betting partnerships internationally. Which markets offer the best combination of growth potential, favorable regulations, and manageable risk? How do Canada, the US, UK, and Ontario differ in strategic value?
-
-## What You'll See
-
-- **Market Metrics:** Size ($4.6B to $93B), growth rates (4% to 45%), and penetration levels across four key markets
-- **Regulatory Environments:** Tax rates ranging from 15% (UK) to 51% (NY), licensing models, and advertising restrictions
-- **Market Characteristics:** Population, top sports, mobile handle percentages, and market maturity stages
-- **Opportunities & Risks:** Key strategic factors for each market including competition intensity and regulatory trends
-
-## How to Use This Comparison
-
-1. **Review Market Overview:** Compare size, growth, penetration, and operator counts at a glance
-2. **Analyze Regulations:** Understand how tax rates and licensing models affect profitability
-3. **Consider Market Stage:** Mature (UK), rapid growth (US), or nascent (Ontario) markets require different strategies
-4. **Evaluate Opportunities & Risks:** Each market has distinct advantages and challenges
-
-## Key Insights
-
-- **Highest Growth:** Ontario at +45%—but concentrated in a single province
-- **Largest Scale:** US at $93B—but intense competition and variable taxes (6.75% to 51%)
-- **Most Sophisticated:** UK market—but mature with limited growth (4%)
-- **Best Entry Point:** Canada—limited operators, provincial expansion ahead
-
-## After This Comparison
-
-You've now explored all five revenue streams. Next, see how these streams interconnect in the Revenue Ecosystem infographic—showing how a single strategic decision creates ripple effects across ALL streams.
+**The Question:** A professional sports league wants to expand its betting partnerships internationally. Which markets offer the best combination of growth potential, favorable regulations, and manageable risk?
 ```
 
 ---
 
-#### Element 26: iFrame Widget - Betting Market Comparison `[v1.5.0]`
+#### Element 26: Betting Market Comparison Tables `[v1.9.0]`
 
-### ⚙ Interactive Activity: Betting Market Comparison
+**Copy this markdown directly into Uplimit:**
 
-**Practice: WLO 1.1 (Map emerging revenue streams) & WLO 1.3 (Evaluate growth potential and risks)**
+```markdown
+## Market Overview
 
-Sports betting is the fastest-growing revenue stream in professional sports, expanding 30-40% year-over-year since legalization. This side-by-side comparison presents four key betting markets—Canada, United States, United Kingdom, and Ontario—allowing you to quickly analyze market size, growth rates, regulatory environments, and strategic opportunities.
+| Metric | Canada | United States | United Kingdom | Ontario |
+|--------|--------|---------------|----------------|---------|
+| **Market Size** | $4.6B | $93B | £14B | $1.8B |
+| **Annual Growth** | +12% | +15% | +4% | +45% |
+| **Market Penetration** | 12% | 18% | 48% | 15% |
+| **Licensed Operators** | 15+ | 30+ | 50+ | 12 |
 
-**What you'll discover:**
+## Regulatory Environment
 
-- **Market Scale:** How the US ($93B) dwarfs Canada ($4.6B) but faces intense competition and tax variability
-- **Growth Trajectories:** Why Ontario (+45%) leads in growth while the UK (+4%) is mature and saturated
-- **Regulatory Differences:** Tax rates ranging from 15% (UK) to 51% (NY) and how they impact profitability
-- **Strategic Trade-offs:** Which markets favor new entrants, established operators, or specific sports leagues
+| Factor | Canada | United States | United Kingdom | Ontario |
+|--------|--------|---------------|----------------|---------|
+| **Legal Status** | Nationwide since 2021 | Legal in 38 states + DC | Legal since 2005 | Legal since April 2022 |
+| **Licensing Model** | Provincial licensing | State-by-state | UK Gambling Commission | iGaming Ontario |
+| **Tax Rate (GGR)** | 20% | 6.75% (NV) to 51% (NY) | 15% | 20% |
+| **Advertising** | Permitted with restrictions | Varies by state | Heavily regulated, jersey ban | Self-regulated with restrictions |
+| **Mobile Handle** | 90% | 85% | 80% | 95% |
 
-**Time commitment:** 2 minutes
-**Learning outcomes practiced:** WLO 1.1 (Understanding betting revenue stream), WLO 1.3 (Evaluating growth potential and regulatory risks)
+## Market Characteristics
 
----
+| Characteristic | Canada | United States | United Kingdom | Ontario |
+|----------------|--------|---------------|----------------|---------|
+| **Population** | 38M total | 335M (270M in legal states) | 67M (32M adults gamble) | 15M (39% of Canada) |
+| **Top Sports** | NHL, NBA, NFL, MLS | NFL, NBA, MLB, NCAA | Football, horse racing, cricket | NHL (Leafs/Sens), NBA, NFL |
+| **Market Stage** | Early growth | Rapid expansion | Mature (20+ years) | Nascent (high growth) |
+| **Key Dynamic** | Provincial expansion, hockey-centric culture | NFL drives 35% of handle, intense competition | Most sophisticated market globally | Grey market conversion, Leafs/Raptors focus |
 
-**Widget Purpose:** Compare betting market characteristics across key North American and international markets.
+## Opportunities & Risks by Market
 
-**Widget Status:** ✅ Built and Ready
+### Canada
+**Opportunities:**
+- Provincial expansion (BC, Alberta, Quebec next)
+- Limited operators = less competition
+- TSN/Sportsnet media integration
+- Grey market conversion to legal operators
 
-**File Location:** `modules/week1/widgets/betting-market-comparison.html`
+**Risks:**
+- Fragmented provincial regulations
+- Marketing restrictions tightening
+- Potential tax rate increases
 
-**Format:** Side-by-side comparison tables presenting:
-- Market metrics (size, growth, penetration, operators)
-- Regulatory environment (status, licensing, tax rates, advertising)
-- Market characteristics (population, top sports, mobile handle)
-- Opportunities and risks by market
+### United States
+**Opportunities:**
+- Largest sports betting market globally
+- ESPN Bet, FanDuel TV, DraftKings Network
+- Micro-betting innovation (next play)
+- March Madness = $3B+ wagered
 
-**Uplimit Implementation:**
-```html
-<iframe
-  src="https://jkruckivey.github.io/business-of-marketing-in-sport/modules/week1/widgets/betting-market-comparison.html"
-  width="100%"
-  height="700"
-  style="border: none; border-radius: 8px;"
-  title="Betting Market Comparison - Compare Canada, US, UK, and Ontario betting markets"
-  aria-label="Side-by-side comparison tables showing betting market size, regulations, and opportunities across four key markets"
-  allowfullscreen
-  loading="lazy">
-</iframe>
+**Risks:**
+- $400-$600 customer acquisition cost
+- 30+ operators = intense competition
+- NY 51% tax kills margins
+
+### United Kingdom
+**Opportunities:**
+- Most sophisticated betting market
+- Proven tech platforms (Bet365, William Hill)
+- In-play and exchange betting mature
+- Global expansion expertise
+
+**Risks:**
+- Affordability checks may reduce handle
+- Jersey sponsorship and TV ad bans
+- Market saturation, low growth (4%)
+
+### Ontario
+**Opportunities:**
+- Highest growth rate (+45%)
+- MLSE partnerships (Leafs, Raptors)
+- First-mover brand building advantage
+- Cross-border US event betting
+
+**Risks:**
+- Single province concentration risk
+- Well-funded US giants entering
+- Advertising scrutiny increasing
+
+## Strategic Takeaways
+
+| Strategic Question | Best Market | Rationale |
+|--------------------|-------------|-----------|
+| Highest growth potential? | **Ontario** | +45% growth, nascent market, grey market conversion opportunity |
+| Largest revenue opportunity? | **United States** | $93B market, but high competition and CAC challenges |
+| Most favorable regulations? | **UK / Canada** | 15-20% tax rates vs. US variability (6.75-51%) |
+| Best for new entrants? | **Canada** | Limited operators, provincial expansion ahead, lower competition |
 ```
 
-**Accessibility:**
-- ✅ Semantic table structure with proper headers
-- ✅ ARIA labels on tables
-- ✅ Screen reader compatible
-- ✅ High contrast mode support
-- ✅ WCAG 2.2 AA compliant
+**Design Rationale for Markdown Tables:**
+- No JavaScript required—static content suitable for markdown copy/paste
+- Tables render natively in Uplimit without iFrame overhead
+- Maintains same information as previous widget in simpler format
+- Better accessibility (native table support vs. embedded iFrame)
 
 #### Element 27: Infobox - Betting Growth Statistics
 ```
@@ -1816,7 +1832,7 @@ Pay attention to the **time horizons**—some effects are immediate (Year 1), wh
 
 The difference between direct effects (easy to measure, ~25% of value) and indirect effects (harder to measure, ~75% of value) is why teams "overpay" for stars. They're not overpaying—they're investing in ecosystem amplification.
 
-You'll apply this ecosystem framework in Module 4's Revenue Empire Builder activity and your Board Strategy Defense memo.
+You'll experience this ecosystem framework firsthand in Module 4's Revenue Ecosystem Challenge, where your decisions create cascade effects across all five revenue streams.
 ```
 
 ---
@@ -1958,5 +1974,4 @@ D) Wait until the video board technology becomes cheaper in 5-10 years
 **Total Time:** ~35 minutes
 **Active Engagement:** 25 minutes (75%)
 **Passive Reading:** 8 minutes (25%)
-
 

@@ -1,5 +1,11 @@
 # MODULE 0: Bridge-In - The $5.2 Billion Question
-**Version:** 2.1.0 | **Last Updated:** 2026-01-13
+**Version:** 3.0.0 | **Last Updated:** 2026-01-22
+
+### Version 3.0.0 Changes
+- **RESTRUCTURED:** Pre-assessment into 4 challenges with MC questions underneath each
+- **REPLACED:** iFrame widget → Native Uplimit MC questions (8 questions)
+- **SIMPLIFIED:** MC feedback to 3 fields (After Submission, Correct, Incorrect)
+- **REMOVED:** Short-answer questions (not supported in native MC format)
 
 ### Version 2.1.0 Changes
 - **RESTORED:** Graphic novel with consistent introduction pattern
@@ -17,7 +23,19 @@
 | 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload `week2-bridge-scenario.mp4` + VTT | Rogers/NHL $5.2B deal paradox |
 | 2 | **◈ AI Roleplay** ◐ Recommended | Media rights valuation diagnostic | Configure in Uplimit | Reveal knowledge gaps |
 | 3 | **ⓘ Infobox (Callout)** ⬤ Required | The media rights problem statement | Type directly | Blue variant |
-| 4 | **⚙ iFrame Widget** ⬤ Required | Pre-Assessment Quiz | Embed `media-rights-pre-assessment.html` | 14-question diagnostic |
+| 4A | **📝 Text** ⬤ Required | Pre-Assessment introduction | Type directly | Sets expectations, explains 4 challenges |
+| 4B | **📝 Text** ⬤ Required | Challenge 1: Value Media Rights | Type directly | WLO 2.1 context |
+| 4C | **❓ MC Question** ⬤ Required | Q1: Why Rogers Paid Premium | Configure in Uplimit | Correct: B (Streaming revenue) |
+| 4D | **❓ MC Question** ⬤ Required | Q2: Valuation Formula | Configure in Uplimit | Correct: C (Audience × engagement × exclusivity) |
+| 4E | **📝 Text** ⬤ Required | Challenge 2: Compare Platform Economics | Type directly | WLO 2.2 context |
+| 4F | **❓ MC Question** ⬤ Required | Q3: Streaming vs Broadcasting | Configure in Uplimit | Correct: A (Subscriptions vs advertising) |
+| 4G | **❓ MC Question** ⬤ Required | Q4: Appointment Viewing | Configure in Uplimit | Correct: B (Live viewing required) |
+| 4H | **📝 Text** ⬤ Required | Challenge 3: Structure Media Deals | Type directly | WLO 2.3 context |
+| 4I | **❓ MC Question** ⬤ Required | Q5: Exclusivity Definition | Configure in Uplimit | Correct: A (One broadcaster) |
+| 4J | **❓ MC Question** ⬤ Required | Q6: Guaranteed vs Revenue Share | Configure in Uplimit | Correct: A (Fixed vs variable) |
+| 4K | **📝 Text** ⬤ Required | Challenge 4: Evaluate the Rogers Deal | Type directly | WLO 2.4 context |
+| 4L | **❓ MC Question** ⬤ Required | Q7: Biggest Broadcaster Risk | Configure in Uplimit | Correct: B (Cord-cutting) |
+| 4M | **❓ MC Question** ⬤ Required | Q8: Rogers 2026 Strategy | Configure in Uplimit | Correct: C (Renegotiate) |
 | 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Personalized guidance |
 | 6 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "The $5.2 Billion Bet" | Embed PDF or images | Rogers media strategy story |
 
@@ -265,179 +283,403 @@ where to focus your learning energy this week.
 
 ---
 
-## Element 4: Pre-Assessment Tool (iFrame)
+## Element 4A: Pre-Assessment Introduction `[v3.0.0]`
 
-**Name:** Media Rights Pre-Assessment
-**File:** `media-rights-pre-assessment.html`
-**Type:** iFrame
-**Purpose:** Combined challenge preview + quiz assessing baseline media rights knowledge
-**Estimated Time:** 5-7 minutes
-**Learning Outcome:** Diagnostic assessment for WLOs 2.1-2.4
-
-### Tool Structure
-
-**Section 1: Challenge Preview (Non-Interactive Text)**
-
-Display this text at the top of the tool:
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
 
 ```markdown
-## Week 2 Challenge: Evaluate the Rogers/NHL Deal
+### Diagnostic Activity: Media Rights Pre-Assessment
 
-By Friday, you'll be able to:
+**Purpose: Discover What You Already Know**
 
-**Analyze** Rogers Communications' $5.2B NHL deal using media rights valuation frameworks
+Before exploring Week 2's content, test yourself with 4 challenges. Each challenge presents a business problem you'll need to solve this week, followed by questions that reveal your current knowledge.
 
-**Compare** linear broadcasting vs. streaming platform economics and assess Rogers' strategic choices
+**Not graded—purely diagnostic.** Lower scores signal areas to emphasize this week. Higher scores indicate strong foundations to build upon.
 
-**Evaluate** where Rogers' projections went wrong and recommend what they should do when the deal expires in 2026
-
-**Design** a media rights strategy for YOUR chosen property (Anchor Project) using industry-standard frameworks
-
-This challenge requires understanding:
-- How media rights are valued (audience × exclusivity × platform economics)
-- Why sports command premium valuations (last "appointment viewing")
-- Platform trade-offs (guaranteed fees vs. upside potential, reach vs. engagement)
-- Fan engagement monetization (ads, subscriptions, betting integration)
-
-**Before you learn these frameworks, let's see what you already know...**
+*Time estimate: 7-10 minutes*
 ```
-
-**Section 2: Pre-Assessment Quiz (14 Questions)**
-
-Format: Multiple choice + short answer
-
-**Question 1 (MC):**
-Rogers paid $433M/year for NHL rights. The previous deal was $180M/year. Why would Rogers pay 2.4× more per year?
-
-a) Hockey became 2.4× more popular
-b) They believed streaming would unlock new revenue streams ✓
-c) The NHL forced them to overpay
-d) They wanted to prevent competitors from getting the rights
-
-**Question 2 (MC):**
-Which factor is MOST important when valuing sports media rights?
-
-a) Total population size
-b) Average household income
-c) Audience size × engagement × exclusivity ✓
-d) Historical TV ratings
-
-**Question 3 (MC):**
-How do streaming platforms (like DAZN) make money differently than traditional broadcasters (like TSN)?
-
-a) Streaming platforms rely on subscriptions; broadcasters rely on advertising ✓
-b) They both make money the same way (advertising)
-c) Streaming platforms don't make money yet
-d) Broadcasters make more money per viewer
-
-**Question 4 (SA - 2-3 sentences):**
-Rogers projected profitability by Year 7 but never achieved it. What's ONE factor you think caused their projections to fail?
-
-[Expected concepts: cord-cutting, streaming costs, COVID-19, advertising decline, overoptimistic assumptions]
-
-**Question 5 (MC):**
-What does "exclusivity" mean in media rights deals?
-
-a) Only one broadcaster can show games in a specific market ✓
-b) The league can sell rights to multiple broadcasters
-c) Fans can only watch games in person
-d) The broadcaster owns the team
-
-**Question 6 (MC):**
-Why do media companies call sports content the last "appointment viewing"?
-
-a) You need appointments to watch games
-b) Sports must be watched live; you can't spoil a game result ✓
-c) Sports are more expensive than other content
-d) Only older audiences watch sports
-
-**Question 7 (SA - 2-3 sentences):**
-If you were advising a sports league on media strategy today, would you recommend selling rights to a traditional broadcaster (like ESPN) or launching your own streaming service (like NBA League Pass)? Why?
-
-[Expected concepts: guaranteed revenue vs. upside potential, reach vs. control, investment required, risk tolerance]
-
-**Question 8 (MC):**
-How does fan engagement affect media rights value?
-
-a) It doesn't—only viewership numbers matter
-b) Engaged fans watch longer, interact more, and drive higher ad/subscription revenue ✓
-c) Engagement makes rights less valuable (harder to monetize)
-d) Only social media engagement matters
-
-**Question 9 (MC):**
-What is the biggest risk for broadcasters paying billions for sports rights?
-
-a) The sport becomes less popular
-b) Cord-cutting reduces their subscriber base ✓
-c) Players go on strike
-d) Weather cancels games
-
-**Question 10 (SA - 2-3 sentences):**
-Rogers earned revenue from advertising and subscriptions. Which do you think declined faster than they projected, and why?
-
-[Expected concepts: cord-cutting → fewer subscribers, advertising rates declined, streaming cannibalized linear]
-
-**Question 11 (MC):**
-What's the difference between a "guaranteed fee" deal and a "revenue share" deal?
-
-a) Guaranteed fee = broadcaster pays fixed amount; revenue share = payment varies with performance ✓
-b) They're the same thing
-c) Guaranteed fee is always better for leagues
-d) Revenue share means the league takes all the risk
-
-**Question 12 (MC):**
-Why would a league like the NHL accept LESS money upfront from a streaming platform compared to a traditional broadcaster?
-
-a) They wouldn't—always take more money
-b) Streaming platforms offer upside potential and direct fan relationships ✓
-c) Streaming platforms are more prestigious
-d) Traditional broadcasters aren't interested anymore
-
-**Question 13 (SA - 2-3 sentences):**
-Based on what you know right now, what's ONE mistake you think Rogers made that you would avoid if negotiating a media deal?
-
-[Expected concepts: overoptimistic projections, no flexibility clause, underestimated disruption, overpaid for exclusivity]
-
-**Question 14 (MC):**
-If Rogers' deal expires in 2026, what should they do?
-
-a) Renew at the same price (sunk cost doesn't matter)
-b) Walk away entirely (cut losses)
-c) Renegotiate for lower fees and more flexibility ✓
-d) Sell the rights to a competitor
-
-**Quiz Scoring:**
-- 11-14 correct: Strong baseline understanding of media economics
-- 7-10 correct: Solid intuitions, but Week 2 will fill important gaps
-- 3-6 correct: Limited exposure to media strategy—focus on Modules 2-3 frameworks
-- 0-2 correct: Fresh slate! Week 2 will build your media valuation foundations from scratch
 
 ---
 
-### Element 4A: Details - Tool Instructions (Expandable)
+## Element 4B: Challenge 1 - Value Media Rights `[v3.0.0]`
 
-**Details Element Title:** `Need help? About this pre-assessment`
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
 
+```markdown
+---
+
+### Challenge 1: Value Media Rights
+
+**The Problem:** A sports league asks you: "We're negotiating our next media deal. How much are our rights worth?" Can you explain how media rights are valued and what drives premium pricing?
+
+**What you'll need to know:**
+- The formula: Audience × Engagement × Exclusivity
+- Why Rogers paid 2.4× more than the previous NHL deal
+- What makes sports content uniquely valuable to broadcasters
+
+**Test yourself:** Can you explain why a broadcaster would pay billions for content they might never profit from?
 ```
-This diagnostic quiz reveals your current understanding of media rights — there's no grade, just insights.
 
-**What to expect:**
-- 14 questions covering media valuation, platform economics, and deal structure
-- Mix of multiple choice and scenario-based questions
-- Takes 5-7 minutes
+---
 
-**How to approach it:**
-- Answer based on what you know NOW, before the week's content
-- Don't guess randomly — "I don't know" is valuable data
-- Your score helps personalize your learning path
+## Element 4C: MC Question 1 - Why Rogers Paid Premium `[v3.0.0]`
 
-**After completing:**
-- Score 0-6: Focus extra time on Module 3's frameworks
-- Score 7-9: You have solid foundations, challenge yourself with case analysis
-- Score 10-14: Strong intuitions — focus on nuance and edge cases
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
 
-**Remember:** This isn't graded. Lower scores just mean you'll learn more this week!
+**Question:**
 ```
+Rogers paid $433M/year for NHL rights. The previous deal was $180M/year. Why would Rogers pay 2.4× more per year?
+```
+
+**Options:**
+- A: Hockey became 2.4× more popular
+- B: They believed streaming would unlock new revenue streams ✅
+- C: The NHL forced them to overpay
+- D: They wanted to prevent competitors from getting the rights
+
+**After Submission:**
+```
+Premium pricing reflects expected future value, not just current performance. Rogers bet that streaming would create new monetization opportunities beyond traditional broadcasting.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Rogers believed streaming, bundling with wireless, and digital engagement would unlock revenue streams that justified the premium—though those projections didn't materialize as expected.
+```
+
+**Feedback for incorrect answers:**
+```
+Hockey popularity was stable, not growing 2.4×. Think about what NEW value Rogers expected to create—streaming, digital, and bundling opportunities drove their willingness to pay more.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4D: MC Question 2 - Valuation Formula `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+Which factor is MOST important when valuing sports media rights?
+```
+
+**Options:**
+- A: Total population size
+- B: Average household income
+- C: Audience size × engagement × exclusivity ✅
+- D: Historical TV ratings
+
+**After Submission:**
+```
+Media rights valuation combines multiple factors. Raw audience size matters, but engagement (how fans watch) and exclusivity (who else can show it) multiply the value significantly.
+```
+
+**Feedback for correct answers:**
+```
+Correct! The valuation formula combines audience (how many watch), engagement (how intensely they watch), and exclusivity (competitive scarcity). This is why the NFL commands 16× more than the NHL despite only 3× the audience.
+```
+
+**Feedback for incorrect answers:**
+```
+Population and income matter, but they're inputs to audience potential. Historical ratings show past performance, not future value. The key is the combination: Audience × Engagement × Exclusivity.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4E: Challenge 2 - Compare Platform Economics `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 2: Compare Platform Economics
+
+**The Problem:** A league executive asks: "Should we sell to ESPN or launch our own streaming service?" Can you explain how different platforms monetize content and what trade-offs each involves?
+
+**What you'll need to know:**
+- How streaming platforms make money (subscriptions) vs. broadcasters (advertising)
+- Why sports are called "appointment viewing"
+- The trade-off between guaranteed fees and upside potential
+
+**Test yourself:** Can you explain why a league might accept LESS money from a streaming platform than a traditional broadcaster?
+```
+
+---
+
+## Element 4F: MC Question 3 - Streaming vs Broadcasting `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+How do streaming platforms (like DAZN) make money differently than traditional broadcasters (like TSN)?
+```
+
+**Options:**
+- A: Streaming platforms rely on subscriptions; broadcasters rely on advertising ✅
+- B: They both make money the same way (advertising)
+- C: Streaming platforms don't make money yet
+- D: Broadcasters make more money per viewer
+
+**After Submission:**
+```
+Platform economics fundamentally differ: broadcasters aggregate audiences for advertisers, while streaming platforms build direct subscriber relationships. This affects how they value content.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Streaming = subscription revenue (predictable, scales with subscribers). Broadcasting = advertising revenue (varies with ratings, advertiser demand). This difference drives different bidding strategies for rights.
+```
+
+**Feedback for incorrect answers:**
+```
+While some streaming platforms include ads, the core business model differs. Streaming platforms primarily monetize through subscriptions; broadcasters primarily monetize through advertising.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4G: MC Question 4 - Appointment Viewing `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+Why do media companies call sports content the last "appointment viewing"?
+```
+
+**Options:**
+- A: You need appointments to watch games
+- B: Sports must be watched live; you can't spoil a game result ✅
+- C: Sports are more expensive than other content
+- D: Only older audiences watch sports
+
+**After Submission:**
+```
+"Appointment viewing" means content that must be consumed at a specific time. Sports lose value when watched later because results become known, making live sports uniquely valuable.
+```
+
+**Feedback for correct answers:**
+```
+Correct! Unlike Netflix shows you can watch anytime, sports outcomes are revealed in real-time. Fans watch live to avoid spoilers and experience the drama. This makes sports the last content that commands live audiences—and premium ad rates.
+```
+
+**Feedback for incorrect answers:**
+```
+The term refers to viewing behavior, not scheduling or cost. Sports must be watched live because results spread instantly via social media. You can't "save" a game for later without knowing who won.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4H: Challenge 3 - Structure Media Deals `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 3: Structure Media Deals
+
+**The Problem:** A broadcaster offers your league $500M guaranteed over 5 years. A streaming platform offers $300M guaranteed plus 20% revenue share. Which deal is better? Can you explain deal structures and their trade-offs?
+
+**What you'll need to know:**
+- What "exclusivity" means and why it commands premium pricing
+- The difference between guaranteed fees and revenue share deals
+- How to evaluate risk vs. upside potential
+
+**Test yourself:** Can you explain when a league should accept less guaranteed money for more upside potential?
+```
+
+---
+
+## Element 4I: MC Question 5 - Exclusivity Definition `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+What does "exclusivity" mean in media rights deals?
+```
+
+**Options:**
+- A: Only one broadcaster can show games in a specific market ✅
+- B: The league can sell rights to multiple broadcasters
+- C: Fans can only watch games in person
+- D: The broadcaster owns the team
+
+**After Submission:**
+```
+Exclusivity is a key value driver in media rights. When only one broadcaster can show content, they capture all the audience—and can charge premium advertising rates.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Exclusivity means one broadcaster controls access in a market. This is why Rogers paid premium for "exclusive Canadian rights"—no competitor could show NHL games, giving Rogers monopoly pricing power.
+```
+
+**Feedback for incorrect answers:**
+```
+Exclusivity refers to broadcasting rights, not attendance or ownership. It means only one media company can show the content in a specific geographic market.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4J: MC Question 6 - Guaranteed vs Revenue Share `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+What's the difference between a "guaranteed fee" deal and a "revenue share" deal?
+```
+
+**Options:**
+- A: Guaranteed fee = broadcaster pays fixed amount; revenue share = payment varies with performance ✅
+- B: They're the same thing
+- C: Guaranteed fee is always better for leagues
+- D: Revenue share means the league takes all the risk
+
+**After Submission:**
+```
+Deal structure determines who bears risk and who captures upside. Guaranteed fees provide certainty; revenue share deals align incentives but introduce variability.
+```
+
+**Feedback for correct answers:**
+```
+Correct! Guaranteed fee = predictable income regardless of performance. Revenue share = payment tied to actual results (ratings, subscribers, ad sales). Leagues choose based on risk tolerance and growth expectations.
+```
+
+**Feedback for incorrect answers:**
+```
+These are fundamentally different structures. Guaranteed = fixed payment (league bears no risk but has no upside). Revenue share = variable payment (league shares both risk and reward).
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4K: Challenge 4 - Evaluate the Rogers Deal `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 4: Evaluate the Rogers Deal
+
+**The Problem:** Rogers' $5.2B NHL deal expires in 2026. They've lost an estimated $1.5B over 10 years. Should they renew, walk away, or renegotiate? Can you analyze what went wrong and recommend a path forward?
+
+**What you'll need to know:**
+- The biggest risks broadcasters face when paying billions for rights
+- What assumptions Rogers got wrong
+- How to evaluate whether a deal should be renewed or restructured
+
+**Test yourself:** Can you identify ONE major assumption Rogers got wrong—and how you'd avoid the same mistake?
+```
+
+---
+
+## Element 4L: MC Question 7 - Biggest Broadcaster Risk `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+What is the biggest risk for broadcasters paying billions for sports rights?
+```
+
+**Options:**
+- A: The sport becomes less popular
+- B: Cord-cutting reduces their subscriber base ✅
+- C: Players go on strike
+- D: Weather cancels games
+
+**After Submission:**
+```
+Broadcaster economics depend on distribution reach. When subscribers cancel cable ("cord-cutting"), the revenue base that supports rights fees shrinks—even if the sport remains popular.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Rogers' model assumed stable cable subscriber bases. But cord-cutting accelerated faster than projected, reducing both subscription revenue and advertising reach. The sport stayed popular; the distribution model collapsed.
+```
+
+**Feedback for incorrect answers:**
+```
+While popularity and labor issues matter, they're less predictable and less impactful than structural changes. Cord-cutting directly attacks broadcaster economics regardless of content quality.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4M: MC Question 8 - Rogers 2026 Strategy `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+If Rogers' deal expires in 2026, what should they do?
+```
+
+**Options:**
+- A: Renew at the same price (sunk cost doesn't matter)
+- B: Walk away entirely (cut losses)
+- C: Renegotiate for lower fees and more flexibility ✅
+- D: Sell the rights to a competitor
+
+**After Submission:**
+```
+Past losses are sunk costs—they shouldn't drive future decisions. The question is whether NHL rights are worth it at a DIFFERENT price with DIFFERENT terms that reflect current market realities.
+```
+
+**Feedback for correct answers:**
+```
+Correct! Sunk costs are irrelevant to future decisions. Rogers should negotiate a deal that reflects 2026 realities: lower linear value, streaming economics, and flexibility clauses for market changes. The content still has value—just not $433M/year of value.
+```
+
+**Feedback for incorrect answers:**
+```
+Walking away abandons a valuable asset; renewing at the same price repeats the mistake. The content has value—but at a price reflecting current (not 2013) market conditions.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
@@ -489,9 +731,21 @@ Follow Raj Sharma, a media executive, as Rogers Communications makes the histori
 
 **Module 0 Purpose:**
 - Create cognitive dissonance (the $5.2B question challenges assumptions)
-- Reveal knowledge gaps through AI roleplay and pre-assessment
+- Reveal knowledge gaps through AI roleplay and pre-assessment (Elements 2 + 4A-4M)
 - Build motivation to learn Week 2 content
-- Graphic novel provides visual entry point for diverse learners
+- Graphic novel provides visual entry point for diverse learners (UDL)
+
+**Pre-Assessment Design Rationale (v3.0.0):**
+- Restructured into 4 challenges with MC questions underneath each
+- Each challenge presents a business problem → questions test related knowledge
+- Simplified feedback to 3 fields: After Submission, Correct, Incorrect
+- Reduced from 14 → 8 questions (removed short-answer for native MC compatibility)
+- WLO coverage: Challenge 1 (2.1) → 2 Qs, Challenge 2 (2.2) → 2 Qs, Challenge 3 (2.3) → 2 Qs, Challenge 4 (2.4) → 2 Qs
+
+**Challenge Structure:**
+- **The Problem:** Business scenario framing the question
+- **What you'll need to know:** Key concepts being tested
+- **Test yourself:** Self-check prompt before attempting questions
 
 **Graphic Novel Notes:**
 - "The $5.2 Billion Bet" visualizes media strategy concepts

@@ -1,5 +1,10 @@
 # MODULE 0: Bridge-In - The $100M Question
-**Version:** 3.0.0 | **Last Updated:** 2026-01-22
+**Version:** 4.0.0 | **Last Updated:** 2026-01-22
+
+### Version 4.0.0 Changes
+- **RESTRUCTURED:** Pre-assessment into 4 challenges with MC questions underneath each
+- **SIMPLIFIED:** MC feedback to 3 fields (After Submission, Correct, Incorrect)
+- **IMPROVED:** Challenge format with Problem, What You'll Need to Know, Test Yourself sections
 
 ### Version 3.0.0 Changes
 - **REPLACED:** Element 4 (iFrame widget) → Native Uplimit MC questions (Elements 4A-4H)
@@ -28,15 +33,19 @@
 | 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload MP4 + SRT ⚠️ PENDING | Connor McDavid revenue paradox |
 | 2 | **◈ AI Roleplay** ◐ Recommended | The $100M Question diagnostic | Configure in Uplimit | Reveal knowledge gaps |
 | 3 | **ⓘ Infobox (Callout)** ⬤ Required | The revenue problem statement | Type directly | Blue variant |
-| 4A | **📝 Text** ⬤ Required | Pre-Assessment introduction | Type directly | Sets expectations, explains 4 WLOs |
-| 4B | **❓ MC Question** ⬤ Required | Q1: Media Rights Revenue (WLO 1.1) | Configure in Uplimit | Correct: B (Media Rights 40-60%) |
-| 4C | **❓ MC Question** ⬤ Required | Q2: Ecosystem vs Portfolio (WLO 1.1) | Configure in Uplimit | Correct: B (Ripple effects) |
-| 4D | **❓ MC Question** ⬤ Required | Q3: Competitive Balance (WLO 1.2) | Configure in Uplimit | Correct: B (Uncertainty of outcome) |
-| 4E | **❓ MC Question** ⬤ Required | Q4: Competitive Interdependence (WLO 1.2) | Configure in Uplimit | Correct: B (Competitors must succeed) |
-| 4F | **❓ MC Question** ⬤ Required | Q5: Growth Ceiling Effects (WLO 1.3) | Configure in Uplimit | Correct: B (Ticketing) |
-| 4G | **❓ MC Question** ⬤ Required | Q6: Betting Regulatory Risk (WLO 1.3) | Configure in Uplimit | Correct: B (Regulatory uncertainty) |
-| 4H | **❓ MC Question** ⬤ Required | Q7: Revenue Sharing Benefits (WLO 1.4) | Configure in Uplimit | Correct: B (Small-market teams) |
-| 4I | **💬 AI Chat** ⬤ Required | Results discussion coach | Configure in Uplimit | Personalized learning path guidance |
+| 4A | **📝 Text** ⬤ Required | Pre-Assessment introduction | Type directly | Sets expectations, explains 4 challenges |
+| 4B | **📝 Text** ⬤ Required | Challenge 1: Map the Revenue Ecosystem | Type directly | WLO 1.1 context |
+| 4C | **❓ MC Question** ⬤ Required | Q1: Media Rights Revenue | Configure in Uplimit | Correct: B (Media Rights 40-60%) |
+| 4D | **❓ MC Question** ⬤ Required | Q2: Ecosystem vs Portfolio | Configure in Uplimit | Correct: B (Ripple effects) |
+| 4E | **📝 Text** ⬤ Required | Challenge 2: Explain Sport's Paradoxes | Type directly | WLO 1.2 context |
+| 4F | **❓ MC Question** ⬤ Required | Q3: Competitive Balance | Configure in Uplimit | Correct: B (Uncertainty of outcome) |
+| 4G | **❓ MC Question** ⬤ Required | Q4: Competitive Interdependence | Configure in Uplimit | Correct: B (Competitors must succeed) |
+| 4H | **📝 Text** ⬤ Required | Challenge 3: Assess Growth vs. Risk | Type directly | WLO 1.3 context |
+| 4I | **❓ MC Question** ⬤ Required | Q5: Growth Ceiling Effects | Configure in Uplimit | Correct: B (Ticketing) |
+| 4J | **❓ MC Question** ⬤ Required | Q6: Betting Regulatory Risk | Configure in Uplimit | Correct: B (Regulatory uncertainty) |
+| 4K | **📝 Text** ⬤ Required | Challenge 4: Defend Revenue Sharing | Type directly | WLO 1.4 context |
+| 4L | **❓ MC Question** ⬤ Required | Q7: Revenue Sharing Benefits | Configure in Uplimit | Correct: B (Small-market teams) |
+| 4M | **💬 AI Chat** ⬤ Required | Results discussion coach | Configure in Uplimit | Personalized learning path guidance |
 | 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation | Type directly | Score-based learning path |
 | 6 | **ⓘ Infobox (Callout)** ⬤ Required | Anchor Project overview | Type directly | Introduces 5-week CFL Expansion project |
 | 7 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "Expansion Day" | Embed PDF or images | CFL anchor project intro |
@@ -304,7 +313,7 @@ Professional sports teams operate with a business model that defies conventional
 
 ---
 
-## Element 4A: Pre-Assessment Introduction `[v3.0.0]`
+## Element 4A: Pre-Assessment Introduction `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Text** element
@@ -315,189 +324,360 @@ Professional sports teams operate with a business model that defies conventional
 
 **Purpose: Discover What You Already Know**
 
-Before exploring Week 1's content, complete this 7-question diagnostic quiz. It tests your baseline understanding of sports revenue ecosystems across four learning outcomes:
+Before exploring Week 1's content, test yourself with 4 challenges. Each challenge presents a business problem you'll need to solve this week, followed by questions that reveal your current knowledge.
 
-- **Revenue Streams** (WLO 1.1): Do you know which streams dominate sports business?
-- **Unique Business Model** (WLO 1.2): Can you explain sport's paradoxes?
-- **Growth vs. Risk** (WLO 1.3): Do you understand ceiling effects and regulatory risks?
-- **Revenue Sharing** (WLO 1.4): Can you explain why leagues redistribute wealth?
-
-**Not graded—purely diagnostic.** Lower scores (0-4/7) signal areas to emphasize this week. Higher scores (5-7/7) indicate strong foundations to build upon.
+**Not graded—purely diagnostic.** Lower scores signal areas to emphasize this week. Higher scores indicate strong foundations to build upon.
 
 *Time estimate: 7-10 minutes*
 ```
 
 ---
 
-## Element 4B: MC Question 1 - Media Rights Revenue `[v3.0.0]`
+## Element 4B: Challenge 1 - Map the Revenue Ecosystem `[v4.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 1: Map the Revenue Ecosystem
+
+**The Problem:** A private equity firm asks you: "Where does sport revenue come from, and which streams matter most?" Can you map the five major revenue sources and explain how they interconnect?
+
+**What you'll need to know:**
+- Media rights, ticketing, sponsorship, merchandising, betting/gaming
+- Relative size and growth trajectory of each stream
+- Why sport revenue streams are interdependent (ecosystem vs. portfolio)
+
+**Test yourself:** Can you name all five major revenue streams and estimate their percentage of total revenue?
+```
+
+---
+
+## Element 4C: MC Question 1 - Media Rights Revenue `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
 2. Configure as follows:
 
-**Question Text:**
+**Question:**
 ```
 Which revenue stream typically accounts for the LARGEST percentage of total revenue for major professional sports leagues like the NFL?
 ```
 
 **Options:**
+- A: Ticketing & Live Events (20-30%)
+- B: Media Rights (40-60%) ✅
+- C: Sponsorship & Advertising (15-20%)
+- D: Merchandising & Licensing (10-15%)
 
-| Option | Text | Feedback |
-|--------|------|----------|
-| A | Ticketing & Live Events (20-30%) | Ticketing is important but not the largest stream. While gate receipts account for 20-30% of revenue for most leagues, another stream dominates the revenue mix. Think about where leagues get long-term, predictable income from broadcasting deals. |
-| B ✅ | Media Rights (40-60%) | Correct! Media rights—the fees paid by broadcasters and streaming services to air games—represent the largest revenue stream for most professional leagues, typically accounting for 40-60% of total revenue. The NFL's current media rights contracts total $110 billion over 11 years ($10B/year), while the English Premier League generates over $5 billion per year from broadcast rights. |
-| C | Sponsorship & Advertising (15-20%) | Sponsorship is valuable but not the largest stream. Corporate partnerships typically account for 15-20% of revenue. The dominant revenue stream is more predictable and comes from long-term broadcasting agreements. |
-| D | Merchandising & Licensing (10-15%) | Merchandise is the smallest major revenue stream, typically 10-15% of total revenue. Another stream provides 3-4× more revenue through multi-year broadcasting contracts. |
+**After Submission:**
+```
+Media rights—fees from broadcasters and streaming services—represent the largest revenue stream for most professional leagues. Understanding the relative size of each stream is foundational to sports business strategy.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Media rights typically account for 40-60% of total revenue. The NFL's current contracts total $110 billion over 11 years.
+```
+
+**Feedback for incorrect answers:**
+```
+Not quite. Think about where leagues get long-term, predictable income—broadcasting deals are the dominant source.
+```
 
 **Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-## Element 4C: MC Question 2 - Ecosystem Thinking `[v3.0.0]`
+## Element 4D: MC Question 2 - Ecosystem Thinking `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
 2. Configure as follows:
 
-**Question Text:**
+**Question:**
 ```
 What is the PRIMARY reason sports revenue streams are described as an "ecosystem" rather than a "portfolio"?
 ```
 
 **Options:**
+- A: Sports revenue is unpredictable like natural ecosystems
+- B: Success in one stream creates ripple effects that impact all other streams ✅
+- C: Revenue streams compete with each other for fan attention
+- D: Different streams have different risk profiles like diversified investments
 
-| Option | Text | Feedback |
-|--------|------|----------|
-| A | Sports revenue is unpredictable like natural ecosystems | While sports revenue has variability, that's not why we use "ecosystem" terminology. The key distinction is about interdependence, not unpredictability. Think about what happens when one revenue stream succeeds—does it affect the others? |
-| B ✅ | Success in one stream creates ripple effects that impact all other streams | Exactly right! Sports revenue streams are deeply interconnected—success in one area amplifies others. A star player signing drives TV ratings (media rights), attracts sponsors (partnerships), sells jerseys (merchandise), increases betting engagement (gaming), and fills seats (ticketing). This cascading effect makes sports revenue an ecosystem where investments in one stream create value across all streams. |
-| C | Revenue streams compete with each other for fan attention | Actually, sports revenue streams rarely compete—they usually reinforce each other. The "ecosystem" label emphasizes interdependence, not competition. When TV ratings rise, it typically helps rather than hurts ticket sales, sponsorship, and betting engagement. |
-| D | Different streams have different risk profiles like diversified investments | While streams do have different risk profiles, that would support calling it a "portfolio" (diversification). The "ecosystem" label specifically highlights how streams are interconnected and amplify each other. |
+**After Submission:**
+```
+The "ecosystem" label highlights how sports revenue streams are deeply interconnected—success in one area amplifies others across the entire system.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! A star player signing drives TV ratings, attracts sponsors, sells jerseys, increases betting engagement, and fills seats—cascading effects across all streams.
+```
+
+**Feedback for incorrect answers:**
+```
+Think about what happens when one revenue stream succeeds. Does it affect the others? The ecosystem concept is about interdependence, not unpredictability or competition.
+```
 
 **Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-## Element 4D: MC Question 3 - Competitive Balance `[v3.0.0]`
+## Element 4E: Challenge 2 - Explain Sport's Paradoxes `[v4.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 2: Explain Sport's Paradoxes
+
+**The Problem:** A tech entrepreneur asks: "Why would competitors ever share revenue? In my industry, we crush the competition." Can you explain sport's unique business model where rivals must collaborate?
+
+**What you'll need to know:**
+- Why competitors need each other to succeed (competitive interdependence)
+- What "uncertainty of outcome" means and why it's the core product
+- How salary caps, drafts, and revenue sharing create competitive balance
+
+**Test yourself:** Can you explain why the Yankees need the Red Sox to be financially healthy?
+```
+
+---
+
+## Element 4F: MC Question 3 - Competitive Balance `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
 2. Configure as follows:
 
-**Question Text:**
+**Question:**
 ```
 Why do professional sports leagues require competitors to collaborate financially (through revenue sharing, salary caps, and draft systems)?
 ```
 
 **Options:**
+- A: Government regulations mandate revenue sharing for anti-trust exemptions
+- B: Competitive balance creates uncertainty of outcome, which is the core product fans pay for ✅
+- C: Team owners are more altruistic than typical business leaders
+- D: Small-market teams threaten to leave if they don't receive financial support
 
-| Option | Text | Feedback |
-|--------|------|----------|
-| A | Government regulations mandate revenue sharing for anti-trust exemptions | While some leagues have anti-trust considerations, that's not the fundamental business reason. The core reason relates to the product sports leagues sell—what makes fans watch games? |
-| B ✅ | Competitive balance creates uncertainty of outcome, which is the core product fans pay for | Perfect! Unlike traditional businesses where crushing competitors is the goal, sports leagues need competitive balance to maintain the uncertainty of outcome that fans pay for. If the Yankees win 95% of games, fewer fans watch and league-wide revenue declines—hurting even the Yankees. Revenue sharing ensures competitive games that maximize total fan interest. |
-| C | Team owners are more altruistic than typical business leaders | This isn't about altruism—it's strategic business thinking. Even self-interested owners benefit from competitive balance because it grows total league revenue. |
-| D | Small-market teams threaten to leave if they don't receive financial support | While relocation threats exist, they're symptoms of a deeper structural need. The fundamental reason relates to the core product sports sells—competitive uncertainty. |
+**After Submission:**
+```
+Sports leagues are unique: they need competitive balance to maintain the uncertainty of outcome that fans pay for. Unlike typical businesses, crushing your competitors hurts everyone.
+```
+
+**Feedback for correct answers:**
+```
+Perfect! If the Yankees win 95% of games, fewer fans watch and league-wide revenue declines—hurting even the Yankees.
+```
+
+**Feedback for incorrect answers:**
+```
+Think about what makes fans watch games. It's not altruism or regulations—it's about the core product sports sells: competitive uncertainty.
+```
 
 **Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-## Element 4E: MC Question 4 - Competitive Interdependence `[v3.0.0]`
+## Element 4G: MC Question 4 - Competitive Interdependence `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
 2. Configure as follows:
 
-**Question Text:**
+**Question:**
 ```
 What makes a sports franchise fundamentally different from a typical consumer goods company like Nike?
 ```
 
 **Options:**
+- A: Sports franchises sell entertainment experiences rather than physical products
+- B: Sports franchises need their competitors to succeed for the league product to have value ✅
+- C: Sports franchises generate revenue from multiple streams instead of single products
+- D: Sports franchises rely more heavily on media rights than physical sales
 
-| Option | Text | Feedback |
-|--------|------|----------|
-| A | Sports franchises sell entertainment experiences rather than physical products | While sports do sell experiences, so do concert venues, theaters, and theme parks. This doesn't explain what makes sports franchises structurally unique. Think about the relationship between competitors. |
-| B ✅ | Sports franchises need their competitors to succeed for the league product to have value | This is the fundamental paradox of sports business! Nike wants to crush Adidas—their business improves when competitors fail. But the Yankees need the Red Sox to be financially healthy and competitive because fans don't pay to watch blowouts. This unique interdependence with competitors distinguishes sports from typical businesses. |
-| C | Sports franchises generate revenue from multiple streams instead of single products | Many businesses have multiple revenue streams (Amazon: retail, AWS, advertising). This doesn't explain what's structurally unique about sports. Focus on the relationship between competitors. |
-| D | Sports franchises rely more heavily on media rights than physical sales | While media rights are important for sports, other industries also depend on broadcasting revenue. The unique aspect of sports relates to how franchises interact with their competitors—they need them to thrive. |
+**After Submission:**
+```
+The fundamental paradox of sports business: your success depends on your competitors' success. This is structurally different from any other industry.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Nike wants to crush Adidas. But the Yankees need the Red Sox to be financially healthy because fans don't pay to watch blowouts.
+```
+
+**Feedback for incorrect answers:**
+```
+Many businesses sell experiences or have multiple revenue streams. What's unique about sports is the relationship between competitors—they need each other.
+```
 
 **Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-## Element 4F: MC Question 5 - Growth Ceiling Effects `[v3.0.0]`
+## Element 4H: Challenge 3 - Assess Growth vs. Risk `[v4.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 3: Assess Growth vs. Risk
+
+**The Problem:** An investment committee asks: "Which revenue streams have the most upside? Which have the most risk?" Can you rank the five streams by growth potential and identify their ceiling effects?
+
+**What you'll need to know:**
+- Which streams face physical capacity constraints (ceiling effects)
+- Which streams have the highest growth potential
+- Where regulatory and market risks create uncertainty
+
+**Test yourself:** Can you explain why ticketing revenue has a hard ceiling while betting revenue doesn't?
+```
+
+---
+
+## Element 4I: MC Question 5 - Growth Ceiling Effects `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
 2. Configure as follows:
 
-**Question Text:**
+**Question:**
 ```
 Which revenue stream faces the MOST significant "ceiling effect" limiting future growth?
 ```
 
 **Options:**
+- A: Media Rights (constrained by cord-cutting trends)
+- B: Ticketing & Live Events (limited by stadium capacity) ✅
+- C: Sponsorship & Advertising (saturated with too many brand partners)
+- D: Betting & Gaming (regulatory restrictions limit market access)
 
-| Option | Text | Feedback |
-|--------|------|----------|
-| A | Media Rights (constrained by cord-cutting trends) | While media rights face disruption from cord-cutting, they're not hitting capacity limits—streaming platforms are actually expanding reach globally. The stream with the most significant ceiling faces hard physical constraints. |
-| B ✅ | Ticketing & Live Events (limited by stadium capacity) | Exactly! Ticketing faces hard physical constraints—stadiums have fixed capacity, and you can only host 8-10 home games per season. Once you've sold out every seat at maximum price, growth stops. This is why teams invest heavily in premium seating and dynamic pricing. Other streams (media, betting, merchandise) can scale globally without physical capacity limits. |
-| C | Sponsorship & Advertising (saturated with too many brand partners) | While sponsorship faces saturation concerns, teams continually find new inventory (jersey patches, helmet decals, digital assets). The stream with the hardest ceiling is constrained by physical limits. |
-| D | Betting & Gaming (regulatory restrictions limit market access) | Betting does face regulatory barriers, but those can change through legislation—we've seen rapid state-by-state expansion in the US. The stream with the most significant ceiling is constrained by unchangeable physical limits. |
+**After Submission:**
+```
+"Ceiling effects" refer to hard constraints that limit growth potential. Some streams face physical limits that can't be overcome, while others face soft constraints that can change.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Stadiums have fixed capacity and limited home games per season. Once you've sold out every seat at maximum price, growth stops. Other streams can scale globally.
+```
+
+**Feedback for incorrect answers:**
+```
+Think about which constraint is truly fixed. Cord-cutting, saturation, and regulations can all change over time—but stadium capacity is a physical limit.
+```
 
 **Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-## Element 4G: MC Question 6 - Betting Regulatory Risk `[v3.0.0]`
+## Element 4J: MC Question 6 - Betting Regulatory Risk `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
 2. Configure as follows:
 
-**Question Text:**
+**Question:**
 ```
 What is the PRIMARY risk of investing heavily in betting/gaming partnerships?
 ```
 
 **Options:**
+- A: Betting reduces fan interest in attending games live
+- B: Regulatory uncertainty could change the landscape quickly ✅
+- C: Betting appeals only to young male demographics, limiting growth
+- D: Betting partnerships damage the league's family-friendly brand image
 
-| Option | Text | Feedback |
-|--------|------|----------|
-| A | Betting reduces fan interest in attending games live | Evidence suggests betting increases engagement—fans watch more closely when they have money on the game. The primary risk isn't about fan behavior, but about external factors that could change the business landscape suddenly. |
-| B ✅ | Regulatory uncertainty could change the landscape quickly | Correct! While betting/gaming offers high growth potential (300%+ growth in some markets), it faces significant regulatory uncertainty. Laws vary by state/province and country, and regulations can change rapidly—restricting advertising, imposing taxes, or even banning certain products. A betting partner worth $50M/year could lose market access overnight through regulatory changes. |
-| C | Betting appeals only to young male demographics, limiting growth | While betting demographics do skew male, the market is expanding to broader audiences. The primary risk isn't demographic limitations but external factors that could fundamentally change the business overnight. |
-| D | Betting partnerships damage the league's family-friendly brand image | While some leagues have brand concerns, most have embraced betting partnerships (NHL/BetMGM, NFL/DraftKings, NBA/FanDuel). The primary risk isn't brand damage but external factors that could eliminate the revenue stream entirely through sudden policy changes. |
+**After Submission:**
+```
+High-growth revenue streams often carry proportional risks. Understanding the source and nature of these risks is critical for strategic planning.
+```
+
+**Feedback for correct answers:**
+```
+Correct! Betting offers 300%+ growth potential but laws vary by jurisdiction and can change overnight. A $50M/year partner could lose market access through regulatory changes.
+```
+
+**Feedback for incorrect answers:**
+```
+Evidence shows betting increases engagement, demographics are expanding, and most leagues have embraced these partnerships. The primary risk is external—regulatory uncertainty.
+```
 
 **Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-## Element 4H: MC Question 7 - Revenue Sharing Benefits `[v3.0.0]`
+## Element 4K: Challenge 4 - Defend Revenue Sharing `[v4.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 4: Defend Revenue Sharing
+
+**The Problem:** A large-market team owner argues: "Why should we subsidize our competitors? We earned this revenue." Can you defend why revenue sharing benefits even the teams that contribute more than they receive?
+
+**What you'll need to know:**
+- How revenue sharing works in major leagues (NFL shares ~60%)
+- Who benefits most from redistribution (small vs. large markets)
+- Why large-market teams accept this structure
+
+**Test yourself:** Can you explain why the Dallas Cowboys benefit from subsidizing Green Bay, even though Dallas contributes more than it receives?
+```
+
+---
+
+## Element 4L: MC Question 7 - Revenue Sharing Benefits `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
 2. Configure as follows:
 
-**Question Text:**
+**Question:**
 ```
 The NFL shares approximately 60% of all revenue equally among teams. Which team type benefits MOST from this structure?
 ```
 
 **Options:**
+- A: Large-market teams like the Dallas Cowboys and New York Giants
+- B: Small-market teams like the Green Bay Packers and Buffalo Bills ✅
+- C: Teams with new stadiums that generate premium revenue
+- D: All teams benefit equally since the revenue is shared 50/50
 
-| Option | Text | Feedback |
-|--------|------|----------|
-| A | Large-market teams like the Dallas Cowboys and New York Giants | Large-market teams are net contributors to revenue sharing—they generate more local revenue but must share national media revenue equally. Think about which teams receive more from the shared pool than they contribute. |
-| B ✅ | Small-market teams like the Green Bay Packers and Buffalo Bills | Exactly! Revenue sharing redistributes money from large-market teams to small-market teams. Green Bay, with a metro population of 320,000, receives the same share of the NFL's $110B media rights as the New York Giants (metro population 20 million). This allows small-market teams to compete for talent and maintain competitive balance. |
-| C | Teams with new stadiums that generate premium revenue | Actually, stadium revenue (especially premium seating and luxury suites) is typically NOT shared—teams keep most local stadium revenue. Revenue sharing primarily redistributes national media rights and licensing revenue. |
-| D | All teams benefit equally since the revenue is shared 50/50 | While national revenue is distributed equally, small-market teams benefit disproportionately because they generate less local revenue. A team like Green Bay receives the same share of media rights as Dallas, but Dallas also generates significantly more local revenue that isn't shared. |
+**After Submission:**
+```
+Revenue sharing redistributes wealth across the league to maintain competitive balance. Understanding who benefits most—and why other teams accept it—reveals the economics of league governance.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Green Bay (population 320,000) receives the same share of $110B in media rights as the NY Giants (population 20M). This allows small markets to compete for talent.
+```
+
+**Feedback for incorrect answers:**
+```
+Think about which teams receive more from the shared pool than they contribute. Large-market teams generate more local revenue but must share national revenue equally.
+```
 
 **Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-## Element 4I: AI Chat Widget - Results Discussion Coach `[v3.0.0]`
+## Element 4M: AI Chat Widget - Results Discussion Coach `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **AI Chat Widget** element
@@ -542,7 +722,7 @@ Hi! I'm here to help you interpret your pre-assessment results and plan your lea
 
 ---
 
-## Element 5: Infobox - Results Interpretation `[v3.0.0]`
+## Element 5: Infobox - Results Interpretation `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -557,7 +737,7 @@ Your quiz results create a personalized learning path for this week. Lower score
 
 ---
 
-## Element 6: Infobox - Anchor Project Overview `[v3.0.0]`
+## Element 6: Infobox - Anchor Project Overview `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Infobox** element
@@ -588,7 +768,7 @@ Two graphic novels introduce this week's concepts. "Expansion Day" follows Maya 
 
 ---
 
-## Element 7: Graphic Novel - "Expansion Day" `[v3.0.0]`
+## Element 7: Graphic Novel - "Expansion Day" `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Text** element for intro
@@ -615,7 +795,7 @@ Follow Maya Chen, a former VP at Maple Leaf Sports who left Toronto to bring foo
 
 ---
 
-## Element 8: Graphic Novel - "Five Streams" `[v3.0.0]`
+## Element 8: Graphic Novel - "Five Streams" `[v4.0.0]`
 
 **Uplimit Implementation:**
 1. Select **Text** element for intro
@@ -640,16 +820,22 @@ Follow Jessica Torres, a Nashville native who built her career at Maple Leaf Spo
 
 **Module 0 Purpose:**
 - Create cognitive dissonance (the $100M question challenges assumptions)
-- Reveal knowledge gaps through AI roleplay and pre-assessment (Elements 2 + 4B-4H)
+- Reveal knowledge gaps through AI roleplay and pre-assessment (Elements 2 + 4B-4L)
 - Build motivation to learn Week 1 content
-- AI Chat Widget (Element 4I) provides personalized learning path guidance
+- AI Chat Widget (Element 4M) provides personalized learning path guidance
 - Graphic novels provide visual entry point for diverse learners (UDL)
 
-**Pre-Assessment Design Rationale (v3.0.0):**
-- Reduced from 10 → 7 questions to minimize cognitive load before content begins
-- Native Uplimit MC format provides immediate feedback (better than embedded widget)
-- AI Chat Widget compensates for removing detailed results dashboard
-- Each WLO tested by 2 questions for balanced diagnostic coverage
+**Pre-Assessment Design Rationale (v4.0.0):**
+- Restructured into 4 challenges with MC questions underneath each
+- Each challenge presents a business problem → questions test related knowledge
+- Simplified feedback to 3 fields: After Submission, Correct, Incorrect
+- Challenge format creates clearer connection between problems and questions
+- WLO coverage: Challenge 1 (1.1) → 2 Qs, Challenge 2 (1.2) → 2 Qs, Challenge 3 (1.3) → 2 Qs, Challenge 4 (1.4) → 1 Q
+
+**Challenge Structure:**
+- **The Problem:** Business scenario framing the question
+- **What you'll need to know:** Key concepts being tested
+- **Test yourself:** Self-check prompt before attempting questions
 
 **Graphic Novel Notes:**
 - Element 7 "Expansion Day" introduces the CFL anchor project (connects to Milestone 1 in Module 6)

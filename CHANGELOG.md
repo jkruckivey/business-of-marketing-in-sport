@@ -2,6 +2,155 @@
 
 For current project status and working guidelines, see [CLAUDE.md](CLAUDE.md).
 
+---
+
+## 2026-01-23: Week 2 Widget Simplification
+
+### Week 2 Module 3: Engagement Widget Simplification (v1.7.0 → v1.8.0)
+- **SIMPLIFIED:** Replaced `engagement-value-chain-builder.html` (1057 lines, 64 checkbox combinations, Chart.js dependency) with `engagement-strategy-explorer.html` (320 lines, 4 bounded strategy cards)
+- **Philosophy:** Follows Week 1 pattern—bounded choices teach principles better than infinite combinations
+- **Key Insight Preserved:** Betting integration delivers 800% ROI due to revenue share model ($0.5M investment → $4M net gain)
+- **Files Changed:**
+  - `engagement-strategy-explorer.html` (NEW) - 4 strategy cards, comparison table, pre-selected betting to surface insight
+  - `engagement-value-chain-builder.html` → archived to `widgets/archive/`
+  - `module-3-core-content.md` (v1.8.0) - Updated Element 11A intro, Element 12 tool section, Element 12A instructions
+
+### CFL Project Tie-In Widget Fix (all 5 weeks)
+- **Fixed:** Milestones appeared clickable but weren't links
+- **Change:** Removed fake `<a>` link wrapper and `.milestone-link` CSS styles
+- **Files:** `cfl-project-tie-in.html` in week1, week2, week3, week4, week5
+
+### Week 2 Widget Enhancements (earlier in session)
+- **streaming-wars-strategy.html:** Added tooltip system, summary dashboard, restart functionality, ARIA labels
+- **engagement-value-chain-builder.html:** Added help icons with tooltips, expanded Strategic Insights (before archival)
+- **media-rights-pre-assessment.html:** Added export functionality, ARIA labels on progress dots
+
+### Discussion Prompts (NEW)
+- **Created** `modules/shared-resources/weekly-discussion-prompts.md`
+- 5 weeks of discussion themes with 3 prompts each
+- Icebreaker suggestion for Week 1
+
+---
+
+## 2026-01-23: Widget Philosophy & Agent Updates
+
+### Week 1 Module 5: Debrief Refinement (v2.2.0 → v2.3.0)
+- **v2.2.0**: Reframed Element 2 (Four Paths infobox) from declarative to exploratory
+  - Changed from assuming specific AI roleplay outcomes to presenting paths as "reference points"
+  - AI roleplay is conversational—students may explore different paths
+- **v2.3.0**: Removed Element 3 (Ecosystem Reflection Coach AI Chat Widget)
+  - Redundant: students just completed AI roleplay in Module 4
+  - Added connective text "From Simulation to Reality" to Real-World Examples
+  - Reduced from 6 to 5 elements, time from ~30 to ~15 min
+
+### Week 1 MC Question Standardization
+- **Module 2 (v2.1.0)**: Standardized 5 Kevin Abrams interview quiz questions to correct format
+  - Format: Question → Options → After Submission → Feedback correct → Feedback incorrect
+- **Module 3 (v2.1.0)**: Standardized 8 MC questions (4 Media Rights + 4 Sponsorship/Merchandising)
+
+### Widget Principles Manifest (NEW)
+- **Created** `modules/week1/widget-principles.md` (v1.0.0)
+  - Central reference documenting underlying principle, answer key, and expected understanding for each widget
+  - Covers: Revenue Streams Explorer, Media Rights Explorer, Dynamic Pricing Simulator, Revenue Ecosystem Challenge
+  - Documents deprecated widgets and why (iFrame issues, platform-native preference, complexity reduction)
+  - Includes agent integration instructions (Widget Optimizer, AI Coach, QA Testing)
+
+### Widget Philosophy Codified
+Identified core principles driving widget simplification decisions:
+1. **Right-size for learning stage** - Week 1 intro ≠ Week 4 deep-dive complexity
+2. **Platform-native first** - Uplimit AI Roleplay > iFrame roleplay widget
+3. **Markdown over JavaScript** - When equivalent learning value, use simpler format
+4. **Separate interaction from assessment** - Roleplay teaches; rubric assesses
+5. **Discovery over allocation** - Bounded paths (3-4 choices) > infinite sliders
+6. **Bounded choices + AI complexity** - Widgets teach frameworks; AI handles nuance
+
+### Education Toolkit Agent Updates (education-toolkit repo)
+- **widget-tester.md**: Added Section 7: Pedagogical Correctness (Principle Validation)
+  - Check for widget-principles.md file
+  - Answer Key Check (do personas arrive at correct understanding?)
+  - Bounded Choices Philosophy integration
+  - Updated output format with Pedagogical Score and Principle Validation section
+- **widget-designer.md**: Added Widget Philosophy section
+  - Pre-Build Questions (Does this need to be a widget? Is complexity appropriate? What's the ONE principle?)
+  - Bounded Choices Philosophy (why 3-4 paths > infinite sliders)
+  - Complexity Ladder (Level 1-5 from markdown to multi-variable simulations)
+  - Step 0: Validate Widget Need (REQUIRED before gathering requirements)
+  - Step 7: Generate Principle Card (REQUIRED with every widget delivery)
+  - Updated IMPORTANT NOTES with philosophy reminder
+
+---
+
+## 2026-01-22: Widget Simplification & Pre-Assessment Restructuring
+
+### Week 1 Module 0: Pre-Assessment Overhaul (v4.0.0)
+- **Restructured** challenge-based format: MC questions now appear underneath associated challenges
+- **Simplified** feedback to 3 fields per question (After Submission, Correct, Incorrect)
+- **Organized** into 4 challenges with 7 MC questions total, aligned to WLOs 1.1-1.4
+
+### Week 1 Module 3: Widget Simplification (v1.8.0 → v2.0.0)
+- **v1.8.0**: Updated Elements 6A/6B MC questions to simplified 3-field feedback format
+- **v1.9.0**: Replaced Betting Market Comparison iFrame widget with markdown tables (Element 26)
+  - Same content, no JavaScript dependency, native Uplimit rendering
+- **v2.0.0**: Replaced Sponsorship ROI Calculator iFrame with Activation Examples markdown (Element 21)
+  - 12-input calculator was too complex for Week 1 intro
+  - New content teaches activation > logo placement through real examples (Scotiabank, Delta, etc.)
+  - Calculator preserved for Week 3 deep-dive
+
+### Week 1 Module 4: Native AI Roleplay Conversion (v2.0.0 → v2.3.0)
+- **Renamed** "Build Your Revenue Empire" → "Revenue Ecosystem Challenge"
+- **Replaced** HTML iFrame roleplay widget with native Uplimit AI Roleplay element
+- **Created** full 4-tab AI Roleplay configuration (Patricia Chen, Board Chair character)
+- **Updated** rubric criteria: Strategic Reasoning (10), Ecosystem Understanding (10), Adaptive Decision-Making (10)
+- **Removed** Element 5 (Strategic Decision Analysis, 750-1000 words) to reduce redundant work
+- **Expanded** Hidden Context (v2.3.0) with comprehensive course knowledge:
+  - All 4 WLOs with Bloom's levels
+  - Full Patricia Chen character (background, communication style)
+  - All 5 revenue streams with ecosystem effects and key insights
+  - Detailed consequence scripts for all 4 decision paths
+  - Edge case handling
+
+### Week 1 Module 5: Debrief Rewrite (v2.0.0 → v2.1.0)
+- **Archived** `module-5-case-study.md` → `module-5-case-study.md.archive` (Nashville Predators case removed)
+- **Renamed** `module-5-simulation-debrief-alternate.md` → `module-5-debrief.md`
+- **Rewrote** entire module to align with Revenue Ecosystem Challenge (decision-based, not allocation-based)
+- **Removed** Strategy Comparison Tool (percentage-based widget no longer fits)
+- **Simplified** from 10 elements to 6 elements
+- **New structure:**
+  - Connecting intro (reflection on 5-year journey)
+  - The Four Paths infobox (Growth/Foundation × Cut/Double outcomes)
+  - Ecosystem Reflection Coach (AI chat about cascade effects)
+  - Real-World Cascade Examples (Cowboys, Packers, Vegas)
+  - CFL Bridge (apply ecosystem lens to project)
+  - What's Next (transition to Module 6)
+- **v2.1.0 Enhancements:**
+  - Expanded Element 4 with detailed real-world examples including citations:
+    - Dallas Cowboys: Commercial Maximizer (~$1.2B revenue, AT&T Stadium, ~$250M sponsorship)
+    - Green Bay Packers: Community Anchor (148,000 season ticket waiting list, $72.9M 2025 NFL Draft impact)
+    - Vegas Golden Knights: Growth Gambler ($500M→$1.85B valuation, 2023 Stanley Cup)
+  - Added comparative analysis table (Primary Revenue Driver, Growth Trajectory, Risk Profile, Sustainability)
+  - Verified all text reflects student position (post-Module 4 roleplay, pre-Module 6 assessment)
+
+### Week 2 Module 0: Pre-Assessment Alignment (v3.0.0)
+- **Converted** from 14-question iFrame widget to 8 native MC questions
+- **Restructured** into 4 challenges aligned to WLOs 2.1-2.4
+- **Applied** simplified 3-field feedback format matching Week 1
+
+### Media Rights Explorer Widget
+- **Applied** 10 credibility fixes including:
+  - NHL rights context (U.S. vs global)
+  - Softened 16× multiplier claim
+  - Replaced precise demographics with qualitative descriptions
+  - Added structural insight about predictability
+  - Added comparative benchmarks (NFL vs World Series/NBA Finals/Oscars)
+
+### Cross-Module Consistency Fixes
+- **Fixed** "Uplift" → "Uplimit" typos across Modules 2, 3, 5, 7
+- **Updated** Module 5 & 6 references from "Revenue Empire Builder" to "Revenue Ecosystem Challenge"
+- **Corrected** Module 7 Week 2 executive: Stewart Johnston → Al Dak (SVP Revenue, Rogers Sports and Media)
+- **Updated** Module 3 widget table to mark `ecosystem-roleplay.html` as deprecated
+
+---
+
 ## 2024-08-27: Initial Project Setup
 - Project initialization and structure planning
 - Reviewed course proposal PDF (comprehensive 4-page document)

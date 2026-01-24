@@ -191,15 +191,7 @@
             background: var(--color-project);
         }
 
-        .milestone-link {
-            color: var(--color-project);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .milestone-link:hover {
-            text-decoration: underline;
-        }
+        /* Removed .milestone-link styles - milestones are not clickable */
 
         .this-week-section {
             background: white;
@@ -345,16 +337,7 @@
             weekCell.textContent = `Week ${m.week}`;
 
             const milestoneCell = document.createElement('td');
-            if (m.week <= currentWeek) {
-                const link = document.createElement('a');
-                link.href = '#';
-                link.className = 'milestone-link';
-                link.textContent = m.milestone;
-                link.onclick = (e) => e.preventDefault();
-                milestoneCell.appendChild(link);
-            } else {
-                milestoneCell.textContent = m.milestone;
-            }
+            milestoneCell.textContent = m.milestone;
 
             const deliverableCell = document.createElement('td');
             deliverableCell.textContent = m.deliverable;

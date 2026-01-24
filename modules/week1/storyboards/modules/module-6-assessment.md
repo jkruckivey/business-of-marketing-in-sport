@@ -30,7 +30,7 @@
 ```markdown
 ## What Did You Learn?
 
-You've explored revenue streams through interactive discovery, built a strategy in Build Your Revenue Empire, and reflected on what worked (and what didn't) in the simulation.
+You've explored revenue streams through interactive discovery, experienced ecosystem dynamics in the Revenue Ecosystem Challenge, and reflected on what worked (and what didn't) in your strategic decisions.
 
 Now capture what you learned. This isn't about getting the "right answer"—it's about showing you understand how sports revenue ecosystems work.
 ```

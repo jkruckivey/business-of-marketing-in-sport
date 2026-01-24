@@ -24,7 +24,7 @@
 | 5 | **Details** ⬤ Required | Exhibit A: Nashville Predators income statement | Type directly from case Exhibit 14 | Accordion - financial baseline |
 | 6 | **Details** ⬤ Required | Exhibit B: Marketing effectiveness data | Type directly from case Exhibits 18-18.4 | Accordion - promotional analysis |
 | 7 | **Details** ⬤ Required | Exhibit C: City demographic comparison | Type directly from case Exhibits 15-16 | Accordion - market context |
-| 7A | **📝 Practice Quiz** ⬤ Required | Case Comprehension Check (5 questions) | Configure in Uplift | Tests understanding before roleplay |
+| 7A | **📝 Practice Quiz** ⬤ Required | Case Comprehension Check (5 questions) | Configure in Uplimit | Tests understanding before roleplay |
 | 8 | **Image** ○ Optional | Revenue flow diagram or city comparison map | Upload PNG + alt text | Visual aid if helpful |
 | 9 | **AI Chat Widget (Roleplay)** ◐ Recommended | Pitch to potential ownership group | Configure in Uplimit | Present market recommendation |
 
@@ -39,7 +39,7 @@
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-You've now built your own theoretical revenue strategy through the Revenue Empire Builder simulation, making allocation decisions across all five streams while managing growth and risk. You've written a Board Strategy Defense memo justifying your choices.
+You've now experienced revenue ecosystem dynamics firsthand through the Revenue Ecosystem Challenge, making strategic decisions as CRO while observing how your choices created ripple effects across all five streams. You've written a Strategic Decision Analysis reflecting on what you learned.
 
 Now it's time to see how theory meets reality. The Nashville Predators face actual constraints that your simulation didn't include: market size limitations, competition from other sports, arena economics, and the challenge of building a hockey fanbase in the American South. In this module, you'll analyze real financial data, real strategic dilemmas, and real stakeholder tensions. This is where sports business gets messy—and interesting.
 ```
@@ -261,7 +261,7 @@ Source: Case Exhibits 15, 16, 19
 
 ### Element 7A: Practice Quiz - Case Comprehension Check
 
-**Uplift Implementation:**
+**Uplimit Implementation:**
 1. Select **Exercise - Practice Quiz** element
 2. Configure as ungraded self-assessment
 3. Add the following 5 multiple choice questions:

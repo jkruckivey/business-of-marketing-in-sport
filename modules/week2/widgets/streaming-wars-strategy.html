@@ -363,6 +363,124 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Tooltip system for jargon */
+        .tooltip-term {
+            text-decoration: underline dotted;
+            text-decoration-color: var(--color-neutral-400);
+            cursor: help;
+            position: relative;
+        }
+
+        .tooltip-term:hover::after,
+        .tooltip-term:focus::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-neutral-800);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            width: 250px;
+            z-index: 1000;
+            text-align: left;
+            font-weight: 400;
+            line-height: 1.4;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .tooltip-term:hover::before,
+        .tooltip-term:focus::before {
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(8px);
+            border: 6px solid transparent;
+            border-top-color: var(--color-neutral-800);
+        }
+
+        /* Screen reader only text */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Restart button */
+        .btn-secondary {
+            background: white;
+            color: var(--color-neutral-900);
+            border: 2px solid var(--color-neutral-300);
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 1rem;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--color-neutral-900);
+            background: var(--color-neutral-50);
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        /* Summary dashboard */
+        .summary-dashboard {
+            background: var(--color-neutral-50);
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .summary-dashboard h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-neutral-900);
+        }
+
+        .summary-item {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .summary-item h4 {
+            font-size: 1rem;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.5rem;
+        }
+
+        .summary-item p {
+            color: var(--color-neutral-600);
+            font-size: 0.9rem;
+        }
+
+        .summary-item .decision {
+            font-weight: 600;
+            color: var(--color-neutral-900);
+        }
     </style>
 </head>
 <body>
@@ -382,7 +500,7 @@
                 icon: '',
                 title: 'The Streaming Offer',
                 label: 'Scenario 1 of 3',
-                description: 'You are the media rights director for a mid-market professional league. Your current 5-year broadcast deal with a traditional network generates $10M/year and expires in 2 years. A major streaming platform approaches you with an early buyout offer: $18M/year for 7 years, exclusive digital rights.',
+                description: 'You are the media rights director for a mid-market professional league. <strong>Your baseline: $10M/year</strong> from a traditional 5-year broadcast deal expiring in 2 years. A major streaming platform approaches you with an early buyout offer: $18M/year for 7 years, exclusive digital rights. <em>(All percentage changes below are relative to your $10M/year baseline.)</em>',
                 context: {
                     title: 'Key Considerations:',
                     points: [
@@ -493,7 +611,7 @@
                             description: 'International viewership grows from 50K to 400K within 18 months. Three European sponsors join ($2M combined). Merchandise sales in Europe increase 300%. The league develops a small but passionate international fanbase. Time zones remain challenging, but VOD viewing thrives.',
                             insights: [
                                 'International markets offer untapped growth potential',
-                                'VOD (video on demand) compensates for time zone challenges',
+                                'VOD (Video On Demand) compensates for time zone challenges - fans watch replays instead of live broadcasts',
                                 'Small passionate fanbases in new markets can drive disproportionate merchandise revenue',
                                 'International expansion creates new sponsor categories (e.g., European brands)'
                             ]
@@ -644,10 +762,16 @@
         function renderProgressTracker() {
             const tracker = document.getElementById('progress-tracker');
             tracker.innerHTML = '';
+            tracker.setAttribute('role', 'status');
+            tracker.setAttribute('aria-label', `Progress: Scenario ${gameState.currentScenario + 1} of ${scenarios.length}`);
 
             scenarios.forEach((s, index) => {
                 const dot = document.createElement('div');
                 dot.className = 'progress-dot';
+                const status = index < gameState.currentScenario ? 'completed' :
+                               index === gameState.currentScenario ? 'current' : 'upcoming';
+                dot.setAttribute('aria-label', `Scenario ${index + 1}: ${status}`);
+                dot.setAttribute('role', 'status');
                 if (index === gameState.currentScenario) {
                     dot.classList.add('active');
                 } else if (index < gameState.currentScenario) {
@@ -730,12 +854,12 @@
                 `;
 
                 optionCard.onclick = () => selectOption(scenario.id, option.id, optionCard);
-                optionCard.onkeypress = (e) => {
+                optionCard.addEventListener('keydown', (e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
                         e.preventDefault();
                         selectOption(scenario.id, option.id, optionCard);
                     }
-                };
+                });
 
                 optionsContainer.appendChild(optionCard);
             });
@@ -796,9 +920,42 @@
                 submitBtn.textContent = 'Continue to Next Scenario';
                 submitBtn.onclick = nextScenario;
             } else {
-                submitBtn.textContent = 'Download Summary';
+                // Show summary dashboard
+                showSummaryDashboard();
+                submitBtn.textContent = 'Download Summary (TXT)';
                 submitBtn.onclick = exportResults;
             }
+        }
+
+        function showSummaryDashboard() {
+            const container = document.getElementById('scenarios-container');
+            const summaryHTML = `
+                <div class="summary-dashboard">
+                    <h3>Your Strategic Journey - Summary</h3>
+                    ${gameState.selections.map((s, i) => `
+                        <div class="summary-item">
+                            <h4>Scenario ${i + 1}: ${scenarios[i].title}</h4>
+                            <p><span class="decision">Decision:</span> ${s.option.title}</p>
+                            <p><span class="decision">Outcome:</span> ${s.option.outcome.title}</p>
+                        </div>
+                    `).join('')}
+                </div>
+                <div class="button-group">
+                    <button class="btn" id="export-btn" onclick="exportResults()">Download Summary (TXT)</button>
+                    <button class="btn-secondary" onclick="restartGame()">Try Different Strategies</button>
+                </div>
+            `;
+            container.insertAdjacentHTML('beforeend', summaryHTML);
+        }
+
+        function restartGame() {
+            gameState = {
+                currentScenario: 0,
+                selections: []
+            };
+            renderProgressTracker();
+            renderScenario(scenarios[0]);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function nextScenario() {

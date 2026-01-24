@@ -1,7 +1,10 @@
 # Five Revenue Streams That Power Sports
-**Version:** 2.0.0 | **Last Updated:** 2026-01-22
+**Version:** 2.1.0 | **Last Updated:** 2026-01-22
 
 **Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports WLO 1.1, 1.2, 1.3)
+
+### Version 2.1.0 Changes
+- **STANDARDIZED:** Element 11A & 24A Practice Quizzes - all 8 MC questions reformatted to standard format (Question/Options/After Submission/Feedback for correct/Feedback for incorrect)
 
 ### Version 2.0.0 Changes
 - **REPLACED:** Element 21 - Sponsorship ROI Calculator (iFrame) → Activation Examples (markdown)
@@ -35,7 +38,7 @@
 | `media-rights-calculator.html` | `media-rights-explorer.html` | Visual explorer (MCQs in Uplimit) |
 | `dynamic-pricing-simulator.html` | `dynamic-pricing-explorer.html` | Pre-check + Sliders + 3 MCQs |
 | `betting-market-simulator.html` | `betting-basics-explorer.html` | Revenue models + 3 MCQs |
-| `ecosystem-cascade-infographic.html` | `ecosystem-roleplay.html` | Branching (8 endings) + 3 MCQs |
+| `ecosystem-cascade-infographic.html` | ~~`ecosystem-roleplay.html`~~ → **Native Uplimit AI Roleplay** (Module 4) | Configured in platform |
 | NEW | `nashville-case-quiz.html` | Case comprehension 5 MCQs |
 
 **Integration Notes:**
@@ -342,7 +345,7 @@ Why might a team NOT want to focus all investment on betting (35% annual growth)
 | 9 | **▬ Text** ⬛ Required | Streaming vs. Traditional | 1 min | 120 | Type directly |
 | 10 | **▦ Table** ⬛ Required | Streaming vs. Traditional comparison | 1 min | - | Type directly |
 | 11 | **⚙ iFrame Widget** ▢ Optional | **Streaming Wars Decision Game** | 5 min | - | Embed `streaming-wars-game.html` |
-| 11A | **📝 Practice Quiz** ⬤ Required | Media Rights Check (4 questions) | 3 min | - | Configure in Uplift |
+| 11A | **📝 Practice Quiz** ⬤ Required | Media Rights Check (4 questions) | 3 min | - | Configure in Uplimit |
 
 #### Element 5: Media Rights Text
 **Copy this markdown directly into Uplimit:**
@@ -712,70 +715,138 @@ In this decision game, you step into the role of NHL commissioner with two compe
 
 ### Element 11A: Practice Quiz - Media Rights Check
 
-**Uplift Implementation:**
+**Uplimit Implementation:**
 1. Select **Exercise - Practice Quiz** element
 2. Configure as ungraded self-assessment
 3. Add the following 4 multiple choice questions:
 
 ---
 
-### Question 1: Media Rights Dominance
+**Question 1: Media Rights Dominance**
 
+**Question:**
+```
 Why do media rights represent 40-60% of total revenue for most professional leagues?
+```
 
-A) Broadcast companies have government mandates to show sports
-B) Sports are the last "appointment viewing" commanding premium ad rates ($50-70 CPM) ✅
-C) Players contractually require all games to be televised
-D) Media companies lose money on sports but use them for prestige
+**Options:**
+- A: Broadcast companies have government mandates to show sports
+- B: Sports are the last "appointment viewing" commanding premium ad rates ($50-70 CPM) ✅
+- C: Players contractually require all games to be televised
+- D: Media companies lose money on sports but use them for prestige
 
-**Feedback (Correct):** Correct! Sports command premium advertising rates ($50-70 CPM) because they're the last true "appointment viewing"—fans watch live to avoid spoilers. This is 3-4× higher than scripted television ($15-25 CPM), explaining why leagues can negotiate deals like the NFL's $110 billion over 11 years.
+**After Submission:**
+```
+Media rights dominate sports revenue because of a unique characteristic: fans must watch live to avoid spoilers. This "appointment viewing" makes sports more valuable to advertisers than almost any other content.
+```
 
-**Feedback (Incorrect):** Review the "Appointment Viewing" insight. Sports have a unique characteristic that makes them more valuable to advertisers than other content. Think about why you can't watch a game "later" without risking spoilers.
+**Feedback for correct answers:**
+```
+Correct! Sports command premium advertising rates ($50-70 CPM) because they're the last true "appointment viewing"—fans watch live to avoid spoilers. This is 3-4× higher than scripted television ($15-25 CPM), explaining why leagues can negotiate deals like the NFL's $110 billion over 11 years.
+```
+
+**Feedback for incorrect answers:**
+```
+Review the "Appointment Viewing" insight. Sports have a unique characteristic that makes them more valuable to advertisers than other content. Think about why you can't watch a game "later" without risking spoilers.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-### Question 2: Streaming vs. Traditional
+**Question 2: Streaming vs. Traditional**
 
+**Question:**
+```
 What is a key difference between streaming platforms and traditional broadcasters when bidding for sports rights?
+```
 
-A) Streaming platforms only want exclusive rights while traditional TV wants shared rights
-B) Streaming platforms accept longer payback periods (3-5 years) and use subscription revenue models ✅
-C) Traditional broadcasters have lower operating costs than streaming services
-D) Streaming platforms pay upfront while traditional broadcasters pay per-view
+**Options:**
+- A: Streaming platforms only want exclusive rights while traditional TV wants shared rights
+- B: Streaming platforms accept longer payback periods (3-5 years) and use subscription revenue models ✅
+- C: Traditional broadcasters have lower operating costs than streaming services
+- D: Streaming platforms pay upfront while traditional broadcasters pay per-view
 
-**Feedback (Correct):** Correct! Streaming platforms operate with different economics: subscription-based revenue, global distribution, and willingness to accept 3-5 year payback periods. This explains why tech companies can outbid traditional broadcasters—they're valuing strategic fit, not just immediate advertising revenue.
+**After Submission:**
+```
+Streaming and traditional broadcasters operate with fundamentally different economics. Understanding these differences explains why tech companies can outbid traditional media for sports rights.
+```
 
-**Feedback (Incorrect):** Review the Streaming vs. Traditional comparison table. The key insight is about revenue models and how each platform makes money from sports content.
+**Feedback for correct answers:**
+```
+Correct! Streaming platforms operate with different economics: subscription-based revenue, global distribution, and willingness to accept 3-5 year payback periods. This explains why tech companies can outbid traditional broadcasters—they're valuing strategic fit, not just immediate advertising revenue.
+```
+
+**Feedback for incorrect answers:**
+```
+Review the Streaming vs. Traditional comparison table. The key insight is about revenue models and how each platform makes money from sports content.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-### Question 3: Hybrid Model Strategy
+**Question 3: Hybrid Model Strategy**
 
+**Question:**
+```
 Why have leagues increasingly adopted "hybrid" media rights deals (splitting between traditional TV and streaming)?
+```
 
-A) Regulators require content to be available on both platforms
-B) It hedges against uncertainty about the future of television while maximizing total revenue ✅
-C) Streaming platforms refuse to pay for full rights packages
-D) Traditional broadcasters can't afford full rights packages anymore
+**Options:**
+- A: Regulators require content to be available on both platforms
+- B: It hedges against uncertainty about the future of television while maximizing total revenue ✅
+- C: Streaming platforms refuse to pay for full rights packages
+- D: Traditional broadcasters can't afford full rights packages anymore
 
-**Feedback (Correct):** Correct! The hybrid model hedges against uncertainty: sell traditional TV rights to one partner (NBC, ESPN), sell streaming rights to another (Apple, Amazon), and create direct-to-consumer platforms (NBA League Pass, NHL.TV). This captures value from both worlds while managing risk.
+**After Submission:**
+```
+Media consumption is rapidly changing. Leagues face uncertainty about which platforms will dominate in 5-10 years, making strategic hedging increasingly important.
+```
 
-**Feedback (Incorrect):** Think about the strategic logic from the league's perspective. With media consumption rapidly changing, what's the safest approach for maximizing revenue? Consider why putting "all your eggs in one basket" might be risky.
+**Feedback for correct answers:**
+```
+Correct! The hybrid model hedges against uncertainty: sell traditional TV rights to one partner (NBC, ESPN), sell streaming rights to another (Apple, Amazon), and create direct-to-consumer platforms (NBA League Pass, NHL.TV). This captures value from both worlds while managing risk.
+```
+
+**Feedback for incorrect answers:**
+```
+Think about the strategic logic from the league's perspective. With media consumption rapidly changing, what's the safest approach for maximizing revenue? Consider why putting "all your eggs in one basket" might be risky.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-### Question 4: Revenue Sharing Impact
+**Question 4: Revenue Sharing Impact**
 
+**Question:**
+```
 According to the module, what happens to media rights revenue in leagues with strong revenue sharing (like the NFL's 60% shared model)?
+```
 
-A) Large-market teams keep all their local media revenue
-B) Small-market teams like Green Bay can generate similar revenue to large-market teams like NY Giants ✅
-C) Teams compete against each other to sell their own broadcasting rights
-D) Revenue sharing only applies to international broadcast deals
+**Options:**
+- A: Large-market teams keep all their local media revenue
+- B: Small-market teams like Green Bay can generate similar revenue to large-market teams like NY Giants ✅
+- C: Teams compete against each other to sell their own broadcasting rights
+- D: Revenue sharing only applies to international broadcast deals
 
-**Feedback (Correct):** Correct! The NFL's "maximum socialism" approach (60% shared) creates competitive parity. Green Bay (population 105,000) generates similar revenue to the New York Giants because national media rights—the largest revenue stream—are shared equally. This maintains competitive balance across markets.
+**After Submission:**
+```
+Revenue sharing is one of sport's most distinctive business practices. It explains why small-market teams can compete financially with franchises in major cities—a dynamic unique to professional sports.
+```
 
-**Feedback (Incorrect):** Review the Revenue Sharing Models video content. Think about why the NFL has the highest competitive parity in professional sports. What allows small-market teams to compete financially?
+**Feedback for correct answers:**
+```
+Correct! The NFL's "maximum socialism" approach (60% shared) creates competitive parity. Green Bay (population 105,000) generates similar revenue to the New York Giants because national media rights—the largest revenue stream—are shared equally. This maintains competitive balance across markets.
+```
+
+**Feedback for incorrect answers:**
+```
+Review the Revenue Sharing Models video content. Think about why the NFL has the highest competitive parity in professional sports. What allows small-market teams to compete financially?
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
@@ -1535,70 +1606,138 @@ Create 3 tiles (1x3 horizontal layout):
 
 ### Element 24A: Practice Quiz - Sponsorship & Merchandising Check
 
-**Uplift Implementation:**
+**Uplimit Implementation:**
 1. Select **Exercise - Practice Quiz** element
 2. Configure as ungraded self-assessment
 3. Add the following 4 multiple choice questions:
 
 ---
 
-### Question 1: Sponsorship Value
+**Question 1: Sponsorship Value**
 
+**Question:**
+```
 What distinguishes the BEST sponsorship deals from mediocre ones, according to the module?
+```
 
-A) The size of the logo on the jersey or stadium
-B) Activation beyond logos—creating fan experiences that build positive associations ✅
-C) The length of the contract (longer = better)
-D) Having exclusive category rights in every product category
+**Options:**
+- A: The size of the logo on the jersey or stadium
+- B: Activation beyond logos—creating fan experiences that build positive associations ✅
+- C: The length of the contract (longer = better)
+- D: Having exclusive category rights in every product category
 
-**Feedback (Correct):** Correct! The best sponsors "activate" beyond logos. Scotiabank's "Scene+ Night" at Leafs games integrates loyalty programs with ticket offers. Delta's Lakers partnership includes exclusive lounges and player content. These experiences build positive associations that translate to brand value.
+**After Submission:**
+```
+The most valuable sponsorship deals go far beyond logo placement. The key differentiator is how sponsors engage with fans to build meaningful brand associations.
+```
 
-**Feedback (Incorrect):** Review the "Activation: Beyond the Logo" section. The key insight is about HOW sponsors engage with fans, not just HOW MUCH they pay. Logo placement is the baseline, not the differentiator.
+**Feedback for correct answers:**
+```
+Correct! The best sponsors "activate" beyond logos. Scotiabank's "Scene+ Night" at Leafs games integrates loyalty programs with ticket offers. Delta's Lakers partnership includes exclusive lounges and player content. These experiences build positive associations that translate to brand value.
+```
+
+**Feedback for incorrect answers:**
+```
+Review the "Activation: Beyond the Logo" section. The key insight is about HOW sponsors engage with fans, not just HOW MUCH they pay. Logo placement is the baseline, not the differentiator.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-### Question 2: Naming Rights Economics
+**Question 2: Naming Rights Economics**
 
+**Question:**
+```
 The Scotiabank Arena naming rights deal pays approximately $40 million per year. What does this investment represent for the sponsor?
+```
 
-A) A charitable contribution to support Canadian sports
-B) A multi-decade brand exposure and association strategy ✅
-C) A one-time marketing expense with no measurable ROI
-D) A requirement for operating a business in Toronto
+**Options:**
+- A: A charitable contribution to support Canadian sports
+- B: A multi-decade brand exposure and association strategy ✅
+- C: A one-time marketing expense with no measurable ROI
+- D: A requirement for operating a business in Toronto
 
-**Feedback (Correct):** Correct! Naming rights are strategic brand investments ($15-50M/year) providing decades of exposure. Every time fans say "Scotiabank Arena," the bank gets brand reinforcement. The $800 million over 20 years represents consistent, long-term brand building tied to positive entertainment experiences.
+**After Submission:**
+```
+Naming rights represent one of the largest single sponsorship investments in sports. Understanding the strategic logic behind these deals reveals how brands think about long-term value creation.
+```
 
-**Feedback (Incorrect):** Consider what Scotiabank gets for $40 million annually: their name spoken by millions of fans, appearing on tickets, broadcasts, and news coverage. This is about strategic brand positioning, not charity or compliance.
+**Feedback for correct answers:**
+```
+Correct! Naming rights are strategic brand investments ($15-50M/year) providing decades of exposure. Every time fans say "Scotiabank Arena," the bank gets brand reinforcement. The $800 million over 20 years represents consistent, long-term brand building tied to positive entertainment experiences.
+```
+
+**Feedback for incorrect answers:**
+```
+Consider what Scotiabank gets for $40 million annually: their name spoken by millions of fans, appearing on tickets, broadcasts, and news coverage. This is about strategic brand positioning, not charity or compliance.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-### Question 3: Merchandising Models
+**Question 3: Merchandising Models**
 
+**Question:**
+```
 Why do most North American leagues (NFL, NHL, MLB) use a CENTRALIZED merchandising model where revenue is shared equally?
+```
 
-A) Teams are legally required to share all merchandise revenue
-B) It maintains competitive balance and prevents wealthy teams from dominating ✅
-C) Individual teams lack the expertise to manage their own merchandise
-D) Fans prefer buying league-branded merchandise over team-specific items
+**Options:**
+- A: Teams are legally required to share all merchandise revenue
+- B: It maintains competitive balance and prevents wealthy teams from dominating ✅
+- C: Individual teams lack the expertise to manage their own merchandise
+- D: Fans prefer buying league-branded merchandise over team-specific items
 
-**Feedback (Correct):** Correct! The centralized model protects competitive balance. Without it, the Yankees and Cowboys would dominate merchandise sales, creating massive revenue gaps. By pooling and sharing equally, small-market teams remain financially competitive with large-market powerhouses.
+**After Submission:**
+```
+Merchandising models vary by league and reflect broader strategic choices about competitive balance. The centralized approach serves the same purpose as media rights revenue sharing.
+```
 
-**Feedback (Incorrect):** Think about what would happen if teams kept all their own merchandise revenue. Would the Green Bay Packers (population 105,000) compete with the New York Yankees? The centralized model serves the same purpose as media rights revenue sharing.
+**Feedback for correct answers:**
+```
+Correct! The centralized model protects competitive balance. Without it, the Yankees and Cowboys would dominate merchandise sales, creating massive revenue gaps. By pooling and sharing equally, small-market teams remain financially competitive with large-market powerhouses.
+```
+
+**Feedback for incorrect answers:**
+```
+Think about what would happen if teams kept all their own merchandise revenue. Would the Green Bay Packers (population 105,000) compete with the New York Yankees? The centralized model serves the same purpose as media rights revenue sharing.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-### Question 4: Merchandise Revenue Spikes
+**Question 4: Merchandise Revenue Spikes**
 
+**Question:**
+```
 According to the module, which event creates the LARGEST percentage increase in merchandise sales?
+```
 
-A) Regular season home games (steady sales throughout season)
-B) Championship runs (200-400% sales increases during playoffs) ✅
-C) Annual jersey releases (predictable 50% increase)
-D) Player birthday promotions (targeted 25% increase)
+**Options:**
+- A: Regular season home games (steady sales throughout season)
+- B: Championship runs (200-400% sales increases during playoffs) ✅
+- C: Annual jersey releases (predictable 50% increase)
+- D: Player birthday promotions (targeted 25% increase)
 
-**Feedback (Correct):** Correct! Championship runs drive 200-400% sales increases during playoffs. Winning teams sell championship gear, commemorative items, and celebration merchandise. This explains why even small-market teams invest in playoff runs despite the player salary costs.
+**After Submission:**
+```
+Merchandise revenue isn't steady throughout the year—it spikes dramatically around certain events. Understanding these patterns helps teams plan inventory and capitalize on peak demand.
+```
 
-**Feedback (Incorrect):** Review the three merchandising spikes: championships, star acquisitions, and limited designs. One of these creates the most dramatic percentage increase in sales—think about when fans are MOST excited to buy team gear.
+**Feedback for correct answers:**
+```
+Correct! Championship runs drive 200-400% sales increases during playoffs. Winning teams sell championship gear, commemorative items, and celebration merchandise. This explains why even small-market teams invest in playoff runs despite the player salary costs.
+```
+
+**Feedback for incorrect answers:**
+```
+Review the three merchandising spikes: championships, star acquisitions, and limited designs. One of these creates the most dramatic percentage increase in sales—think about when fans are MOST excited to buy team gear.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
@@ -1773,7 +1912,7 @@ The sports betting market has exploded since legalization: global sports betting
 | 28 | **▬ Text** ⬛ Required | Ecosystem principle intro | 1 min | 100 | Type directly |
 | 29 | **⚙ iFrame Widget** ⬛ Required | **Ecosystem Cascade Infographic** | 3 min | - | Embed `ecosystem-cascade-infographic.html` |
 | 30 | **▭ Image** ▣ Recommended | Revenue ecosystem diagram | 1 min | - | Upload `revenue-ecosystem-diagram.png` |
-| 30A | **📝 Practice Quiz** ⬤ Required | Module Synthesis Check (4 questions) | 3 min | - | Configure in Uplift |
+| 30A | **📝 Practice Quiz** ⬤ Required | Module Synthesis Check (4 questions) | 3 min | - | Configure in Uplimit |
 
 #### Element 28: Ecosystem Principle Text
 **Copy this markdown directly into Uplimit:**
@@ -1884,7 +2023,7 @@ You'll experience this ecosystem framework firsthand in Module 4's Revenue Ecosy
 
 ### Element 30A: Practice Quiz - Module Synthesis Check
 
-**Uplift Implementation:**
+**Uplimit Implementation:**
 1. Select **Exercise - Practice Quiz** element
 2. Configure as ungraded self-assessment
 3. Add the following 4 multiple choice questions:

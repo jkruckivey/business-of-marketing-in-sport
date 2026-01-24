@@ -1,7 +1,16 @@
 ## MODULE 3: Media Rights Framework (V3 INTERACTIVE-FIRST REDESIGN)
-**Version:** 1.6.0 | **Last Updated:** 2026-01-20
+**Version:** 1.8.0 | **Last Updated:** 2026-01-23
 
 **Purpose:** Provide foundational knowledge about media economics and rights valuation through interactive exploration (supports WLO 2.1, 2.2, 2.3)
+
+### Version 1.8.0 Changes
+- **SIMPLIFIED:** Element 12 - Replaced `engagement-value-chain-builder.html` with `engagement-strategy-explorer.html`
+- **CHANGED:** From free-form checkbox builder (64 combinations) to bounded strategy comparison (4 strategies)
+- **RATIONALE:** Follows Week 1 philosophy - bounded choices teach principles better than infinite options
+
+### Version 1.7.0 Changes
+- **UPDATED:** Element 12 - Engagement Value Chain Builder now ✅ Built with iFrame embed
+- **ADDED:** Help icons with tooltips, expanded Strategic Insights, chart notes for accessibility
 
 ### Version 1.6.0 Changes
 - **ADDED:** Element 13 - Media Rights Framework Reflection as proper Text Response element
@@ -37,7 +46,7 @@
 | 10A | **📝 Practice Quiz** ⬤ Required | Platform Economics Check (4 questions) | 3 min | Configure in Uplift |
 | 11 | **Text** ⬤ Required | Fan engagement monetization (150 words) | 1 min | Embedded markdown below |
 | 11A | **Text** ⬤ Required | Widget Introduction - Engagement Value Chain Builder | 2 min | Structured intro |
-| 12 | **🎮 iFrame** ◐ Recommended | Tool 4: Engagement Value Chain Builder | 3 min | Phase 3 tool (NEEDS TO BE BUILT) |
+| 12 | **🎮 iFrame** ◐ Recommended | Tool 4: Engagement Strategy Explorer | 3 min | ✅ SIMPLIFIED - `engagement-strategy-explorer.html` |
 | 12A | **📝 Practice Quiz** ⬤ Required | Fan Engagement Check (3 questions) | 2 min | Configure in Uplift |
 | 13 | **📝 Text Response** ⬤ Required | Media Rights Framework Reflection | 3 min | 50-word minimum, 5 pts |
 
@@ -1065,160 +1074,153 @@ Media rights valuation is both art and science. Financial models provide foundat
 
 ---
 
-### Element 11A: Widget Introduction - Engagement Value Chain Builder
+### Element 11A: Widget Introduction - Engagement Strategy Explorer `[v1.8.0]`
 
 **Copy this markdown directly into Uplimit:**
 
 ```markdown
-# Practice: Build Your Fan Engagement Strategy
+# Practice: Compare Engagement Strategies
 
-Passive viewing generates only $5-15 per fan per year. The real value comes from **engagement**—converting passive viewers into active participants who bet, play fantasy, subscribe to exclusive content, and interact with team apps. Now you'll build an engagement strategy and see fan value transform.
+Passive viewing generates only $5-15 per fan per year. The real value comes from **engagement**—converting passive viewers into active participants who bet, play fantasy, and subscribe to exclusive content. But which strategy delivers the best ROI?
 
 ## Your Challenge
 
-You're the VP of Fan Engagement for a sports streaming platform. Your CEO asks: "How do we increase the value of our audience without acquiring more viewers?" You'll use the **Engagement Value Chain Builder** to design a strategy that multiplies fan value through engagement tactics.
+You're advising a sports streaming platform on engagement strategy. The CEO asks: "We have budget for ONE major initiative. Which approach gives us the best return?" You'll use the **Engagement Strategy Explorer** to compare four proven strategies and discover which delivers the highest ROI.
 
 ## What You'll Practice
 
-- Understanding the "engagement value chain" (passive viewer → engaged fan → super-fan)
-- Calculating ROI on engagement investments (mobile app, fantasy, betting, exclusive content)
-- Discovering why a betting fan is worth 6-10× more than a passive viewer
-- Building the optimal engagement mix for different audience profiles
+- Comparing investment costs vs. revenue gains across different strategies
+- Understanding why betting integration delivers 800% ROI despite lower total revenue
+- Recognizing the trade-off between highest total value and highest ROI
+- Making strategic recommendations based on platform goals
 
-## How the Builder Works
+## How the Explorer Works
 
-1. **Start with Your Audience:** 1 million passive fans worth $10M/year ($10 per fan)
-2. **Select Engagement Tactics:** Choose from mobile app, fantasy integration, betting partnerships, exclusive content, social media, gamification
-3. **See Cost/Benefit for Each:** Betting partnerships cost $0 (revenue share) but add $3M+ value. Exclusive content costs $3M but adds $4M+ value.
-4. **Build Your Stack:** Add tactics and watch total fan value climb
-5. **Convert to Super-Fans:** See how 10% of fans becoming "super-fans" worth $300-500 each changes the math
+1. **Click a Strategy Card:** Choose from Broadcast-Only, Digital Engagement, Betting-Integrated, or Premium Content
+2. **See the Breakdown:** Each strategy shows investment cost, revenue generated, and net gain
+3. **Compare Key Metrics:** ROI percentage, cost efficiency, and strategic implications
+4. **Discover the Insight:** Why does betting cost $0.5M but generate $4M net gain?
 
 ## Strategic Considerations
 
-- **Betting is the highest-ROI engagement tactic:** $0 cost (revenue share model), but bettors watch 40% more games and are worth $30-50 per year vs. $5-10 for passive viewers.
-- **Fantasy creates habit:** Fantasy players check standings, follow injuries, consume more content. They're 3× less likely to cancel subscriptions.
-- **Exclusive content is expensive but sticky:** Behind-the-scenes, player access, and premium analysis cost $3M+ to produce but dramatically reduce churn.
-- **The super-fan multiplier:** Converting just 10% of your audience to "super-fans" (spend $300-500/year) can double total fan value.
+- **Broadcast-Only ($10M):** No investment, no upside—this is your baseline
+- **Digital Engagement ($15.6M):** High investment ($3.5M), moderate ROI (160%)
+- **Betting-Integrated ($14.5M):** Low investment ($0.5M), exceptional ROI (800%)—the winner on efficiency
+- **Premium Content ($16.5M):** Highest total value, but also highest investment ($5M)
 
-## After the Builder
+## The Key Insight
 
-Export your engagement strategy and fan value projections. Compare your approach to what ESPN, DAZN, and streaming platforms actually prioritize. Use these insights to evaluate Rogers' engagement (or lack thereof) in Module 5.
+Betting partnerships work on **revenue share**—you get a cut of every bet without upfront costs. That's why $0.5M investment generates $4.5M in new revenue. This explains why ESPN, DraftKings, and FanDuel are racing to integrate betting.
 ```
 
 ---
 
-### Element 12: Tool 4 - Engagement Value Chain Builder
+### Element 12: Tool 4 - Engagement Strategy Explorer `[v1.8.0]`
 
-### ⚙ Interactive Activity: Engagement Value Chain Builder
+### ⚙ Interactive Activity: Engagement Strategy Explorer
 
 **Practice: WLO 2.3 (Understand fan engagement monetization strategies)**
 
-You've explored how platforms make money from media rights. But passive viewing generates only $5-15 per fan per year. The real value comes from ENGAGEMENT—converting passive viewers into active participants who bet, play fantasy, subscribe to exclusive content, and interact with team apps.
+You've explored how platforms make money from media rights. But passive viewing generates only $5-15 per fan per year. The real value comes from ENGAGEMENT—converting passive viewers into active participants who bet, play fantasy, and subscribe to exclusive content.
 
-In this interactive activity, you'll construct an engagement strategy by selecting tactics (mobile app, fantasy integration, betting partnerships, exclusive content, social media, gamification) and watching your fan value transform. Start with 1M passive fans worth $10M/year—then see how adding betting partnerships alone can increase value to $13M+ despite costing nothing (revenue share model). Build the optimal engagement mix.
+In this simplified interactive activity, you'll compare four proven engagement strategies and discover why betting integration delivers 800% ROI despite generating less total revenue than premium content approaches. Click each strategy card to see the investment vs. return breakdown.
 
 **What you'll discover:**
 
-- Why a fan who bets is worth 6-10x more than a passive viewer ($30 vs. $5 per year)
-- How engagement tactics have vastly different cost/benefit profiles (betting = $0 cost, high value; exclusive content = $3M cost, high value)
-- Why platforms with engagement capabilities (ESPN Bet, DraftKings partnerships) can justify paying more for rights
-- The mathematics of converting 10% of your audience to "super-fans" worth $300-500 each
+- Why betting integration costs $0.5M but generates $4M net gain (revenue share model)
+- The trade-off between highest total value (Premium Content: $16.5M) and highest ROI (Betting: 800%)
+- Why ESPN, DraftKings, and FanDuel are racing to integrate betting partnerships
+- How to make strategic recommendations based on platform goals (growth vs. efficiency)
 
-**Time commitment:** 5-6 minutes
+**Time commitment:** 3 minutes
 **Learning outcomes practiced:** WLO 2.3 (Understand fan engagement monetization beyond passive viewing)
 
 ---
 
-**🎮 Tool Purpose:** Let students construct an engagement strategy and see how different tactics increase fan value and justify higher rights costs.
+**🎮 Tool Purpose:** Let students compare bounded strategy options and discover the ROI insight about betting partnerships.
 
-**Status:** ✅ Built - `engagement-value-chain-builder.html`
+**Status:** ✅ SIMPLIFIED - `engagement-strategy-explorer.html`
+
+**Simplification Rationale (v1.8.0):**
+- **Previous:** 64 checkbox combinations with Chart.js visualization (1057 lines)
+- **New:** 4 bounded strategy cards with comparison table (320 lines)
+- **Philosophy:** Bounded choices teach principles better than infinite options (Week 1 pattern)
+- **Key Insight Preserved:** Betting = 800% ROI due to revenue share model
 
 **How It Works:**
-1. Choose sport type (NHL, NBA, MLS, NFL, EPL)
-2. Set baseline: 1M fans, $10/year passive value
-3. Select engagement tactics (checkboxes with costs/benefits):
-   - **Mobile App:** +$2M cost → 30% adopt → +$5/fan value
-   - **Fantasy Integration:** +$500K cost → 15% participate → +$15/fan value
-   - **Betting Partnerships:** $0 cost (revenue share) → 10% engage → +$30/fan value
-   - **Exclusive Content:** +$3M cost → 20% subscribe → +$25/fan value
-   - **Social Media Strategy:** +$1M cost → 50% follow → +$8/fan value
-   - **Gamification:** +$1.5M cost → 25% participate → +$12/fan value
-4. View results:
-   - Engagement funnel visualization (passive → engaged → super-fan)
-   - Total fan value: $XX.XM/year
-   - ROI: (Total value - costs) / costs
-   - Rights affordability: "With engagement, you can afford $XXM/year in rights"
+1. View four strategy cards with total fan value displayed
+2. Click any card to select and see detailed breakdown
+3. Comparison table shows: Investment, Revenue, Net Gain, ROI
+4. "Betting-Integrated" pre-selected to highlight the 800% ROI insight
 
-**Real Examples:**
-- **NBA + DraftKings:** Fan value $12 → $45/year (fantasy + betting)
-- **Premier League + Social:** International fan value $5 → $18/year
+**The Four Strategies:**
+- **Broadcast-Only ($10M):** Baseline—no engagement investment, no upside
+- **Digital Engagement ($15.6M):** Mobile app + fantasy ($3.5M investment, 160% ROI)
+- **Betting-Integrated ($14.5M):** Betting partnerships ($0.5M investment, 800% ROI) ⭐
+- **Premium Content ($16.5M):** Exclusive content + gamification ($5M investment, 130% ROI)
 
 **Learning Outcomes:**
 - WLO 2.3: Understand how engagement extends monetization beyond passive viewing
-- Evaluate trade-offs: High-cost/high-value vs. low-cost/broad-reach
-- Understand why platforms with engagement capabilities pay more for rights
-
-**Technical Specifications:**
-```javascript
-const engagementTactics = [
-  { name: "Mobile App", cost: 2000000, adoptionRate: 0.30, valuePerFan: 5 },
-  { name: "Fantasy Integration", cost: 500000, adoptionRate: 0.15, valuePerFan: 15 },
-  { name: "Betting Partnerships", cost: 0, adoptionRate: 0.10, valuePerFan: 30 },
-  { name: "Exclusive Content", cost: 3000000, adoptionRate: 0.20, valuePerFan: 25 },
-  { name: "Social Media", cost: 1000000, adoptionRate: 0.50, valuePerFan: 8 },
-  { name: "Gamification", cost: 1500000, adoptionRate: 0.25, valuePerFan: 12 }
-];
-
-function calculateEngagementValue(baseFans, baseFanValue, selectedTactics) {
-  let totalValue = baseFans * baseFanValue;
-  let totalCost = 0;
-  selectedTactics.forEach(tactic => {
-    const engagedFans = baseFans * tactic.adoptionRate;
-    totalValue += engagedFans * tactic.valuePerFan;
-    totalCost += tactic.cost;
-  });
-  const roi = ((totalValue - totalCost) / totalCost) * 100;
-  const affordableRights = totalValue * 0.70; // 30% profit margin
-  return { totalValue, totalCost, roi, affordableRights };
-}
-```
+- Recognize betting's exceptional ROI due to revenue share model
+- Compare investment efficiency vs. total value generation
 
 **Accessibility:**
-- ✅ Keyboard navigation (Tab, Space to toggle checkboxes)
-- ✅ ARIA labels on all tactics
-- ✅ Screen reader announcements for calculations
-- ✅ High contrast funnel visualization
-- ✅ Focus indicators on checkboxes
+- ✅ Keyboard navigation (Tab, Enter/Space to select)
+- ✅ ARIA labels and aria-pressed states on cards
+- ✅ Screen reader announcements via role="status"
+- ✅ High contrast design (WCAG 2.2 AA)
+- ✅ Focus indicators (3px solid outline)
 
-**Implementation Notes:** Checkbox form with 6 tactics, real-time calculations, stacked bar chart (engagement funnel), strategic insights panel, JSON export.
+**Uplimit Implementation:**
 
-### Element 12A: Details - Tool Instructions (Expandable)
+```html
+<iframe
+  src="https://jkruckivey.github.io/business-of-sports-marketing/modules/week2/widgets/engagement-strategy-explorer.html"
+  width="100%"
+  height="650"
+  style="border: none; border-radius: 8px;"
+  title="Engagement Strategy Explorer - Compare fan monetization strategies"
+  aria-label="Interactive explorer where you compare four engagement strategies and discover why betting delivers 800% ROI"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
 
-**Details Element Title:** `Need help? How to use this builder`
+**Features:**
+- 4 bounded strategy cards (no infinite combinations)
+- Pre-selected "Betting-Integrated" to surface key insight
+- Comparison table with Investment/Revenue/Net Gain/ROI
+- Key Insight callout explaining revenue share model
+- No Chart.js dependency (simpler, faster loading)
+
+### Element 12A: Details - Tool Instructions (Expandable) `[v1.8.0]`
+
+**Details Element Title:** `Need help? How to use this explorer`
 
 ```
-This builder shows how fan engagement creates revenue beyond just watching games.
+This explorer shows how different engagement strategies deliver different ROI.
 
 **Step-by-step:**
 
-1. **Start with a touchpoint:** Select an initial fan interaction (live game viewing, highlight clip, social post, etc.)
+1. **Review the four strategy cards:** Each shows total fan value (from $10M baseline to $16.5M with premium content)
 
-2. **Build the engagement chain:** Add downstream touchpoints that flow from the first:
-   - Viewing → App download → Fantasy play → Betting → Merchandise purchase
-   - Each step has a conversion rate and revenue value
+2. **Click any card to select it:** The comparison table updates to show that strategy's breakdown
 
-3. **See total fan value:** The tool calculates lifetime value based on your engagement chain
+3. **Compare the key metrics:**
+   - Investment: How much does this strategy cost?
+   - Revenue: What does it generate?
+   - Net Gain: Revenue minus investment
+   - ROI: Net gain divided by investment (percentage return)
 
-4. **Compare chains:** Try different starting points and see which generates more total value:
-   - Does a social media fan become as valuable as a TV viewer?
-   - How much does adding betting integration increase fan LTV?
+4. **Notice the insight:** Betting-Integrated has the highest ROI (800%) despite not having the highest total value
 
 **What to notice:**
-- Passive viewers have low LTV — engagement multiplies value
-- Betting integration can 3-5x fan value (but not all fans convert)
-- The most valuable chains have 4-5 touchpoints, not just 1-2
+- Broadcast-Only is your baseline ($10M, no investment, no upside)
+- Premium Content generates the MOST total value ($16.5M) but requires $5M investment
+- Betting generates LESS total value ($14.5M) but only costs $0.5M — that's 800% ROI
+- The "best" strategy depends on your goal: maximum revenue or maximum efficiency?
 
-**If you're stuck:** Build two chains — one for a casual fan (watches some games) and one for a superfan (watches everything, plays fantasy, bets, buys merch). Compare the LTV difference.
+**The key insight:** Betting partnerships work on revenue share — you get a cut of bets without upfront costs. That's why $0.5M generates $4M net gain.
 ```
 
 ---

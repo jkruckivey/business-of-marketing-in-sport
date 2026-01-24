@@ -1,7 +1,10 @@
 # Executive Perspective: Kevin Abrams
-**Version:** 2.0.0 | **Last Updated:** 2026-01-14
+**Version:** 2.1.0 | **Last Updated:** 2026-01-22
 
 **Purpose:** Deliver executive practitioner perspective on sports business operations through NY Giants SVP interview (supports WLO 1.1, 1.2)
+
+### Version 2.1.0 Changes
+- **STANDARDIZED:** Element 3A Practice Quiz - all 5 MC questions reformatted to standard format (Question/Options/After Submission/Feedback for correct/Feedback for incorrect)
 
 ### Version 2.0.0 Changes
 - **REMOVED:** Concept videos (Five Revenue Streams, Revenue Sharing) - moved to Module 3 where they belong
@@ -20,9 +23,9 @@
 | 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Sets context for executive interview |
 | 2 | **ⓘ Infobox (Callout)** ⬛ Required | Interview overview + viewing guide | Type directly | Blue variant, sets viewing expectations |
 | 3 | **▶ Video** ⬛ Required | Kevin Abrams Interview (~32 min) | Upload MP4 + transcript | NY Giants SVP on team operations, salary cap, AI |
-| 3A | **📝 Practice Quiz** ⬤ Required | Kevin Abrams Interview Check (5 questions) | Configure in Uplift | Ungraded, tests interview insights |
+| 3A | **📝 Practice Quiz** ⬤ Required | Kevin Abrams Interview Check (5 questions) | Configure in Uplimit | Ungraded, tests interview insights |
 | 4 | **▤ Details** ▢ Optional | Interview transcript & executive bio | Type directly | Accordion for text version |
-| 5 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about Kevin's insights" | Configure in Uplift | Named: "Executive Q&A" |
+| 5 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about Kevin's insights" | Configure in Uplimit | Named: "Executive Q&A" |
 
 ### Element 1: Connecting Introduction Text
 **Title:** From Frameworks to Practice
@@ -126,85 +129,170 @@ This interview supports WLO 1.1 and 1.2 by showing how revenue concepts play out
 
 ### Element 3A: Practice Quiz - Kevin Abrams Interview Check
 
-**Uplift Implementation:**
+**Uplimit Implementation:**
 1. Select **Exercise - Practice Quiz** element
 2. Configure as ungraded self-assessment
 3. Add the following 5 multiple choice questions:
 
 ---
 
-### Question 1: Salary Cap Evolution
+**Question 1: Salary Cap Evolution**
 
+**Question:**
+```
 Kevin describes how the Giants' approach to salary cap management has evolved. What metaphor does he use to describe their current approach?
+```
 
-A) Checking account (track expenses in/out)
-B) Investment portfolio (manage assets for returns) ✅
-C) Spreadsheet (optimize numbers)
-D) Budget committee (annual planning cycle)
+**Options:**
+- A: Checking account (track expenses in/out)
+- B: Investment portfolio (manage assets for returns) ✅
+- C: Spreadsheet (optimize numbers)
+- D: Budget committee (annual planning cycle)
 
-**Feedback (Correct):** Correct! Kevin describes evolving from a "checking account" mentality (simple expense tracking) to a "portfolio" approach where salary cap dollars are viewed as investments requiring consensus building across stakeholders with different time horizons (coaches vs. GMs).
+**After Submission:**
+```
+Salary cap management has evolved from simple expense tracking to sophisticated investment thinking. Understanding this evolution helps explain how successful franchises maximize player value.
+```
 
-**Feedback (Incorrect):** Kevin specifically contrasts their old approach with their current, more sophisticated method. Listen for how he describes the evolution—the new approach involves thinking about cap dollars as assets that require investment committee-style consensus building.
+**Feedback for correct answers:**
+```
+Correct! Kevin describes evolving from a "checking account" mentality to a "portfolio" approach where salary cap dollars are viewed as investments requiring consensus building across stakeholders with different time horizons (coaches vs. GMs).
+```
+
+**Feedback for incorrect answers:**
+```
+Kevin specifically contrasts their old approach with their current method. Listen for how he describes the evolution—the new approach involves thinking about cap dollars as assets that require investment committee-style consensus building.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-### Question 2: AI Implementation
+**Question 2: AI Implementation**
 
+**Question:**
+```
 According to Kevin, what determines the quality of output from their enterprise ChatGPT implementation?
+```
 
-A) The processing power of the system
-B) The amount of training data available
-C) The quality of prompts users create ✅
-D) The number of employees using it
+**Options:**
+- A: The processing power of the system
+- B: The amount of training data available
+- C: The quality of prompts users create ✅
+- D: The number of employees using it
 
-**Feedback (Correct):** Correct! Kevin emphasizes that "quality of prompts dictates output" when discussing their AI rollout. This principle applies broadly: AI tools are only as useful as the questions and instructions given to them. The Giants are learning prompt engineering across departments.
+**After Submission:**
+```
+AI implementation success depends heavily on how users interact with the technology. This principle applies across industries adopting generative AI tools.
+```
 
-**Feedback (Incorrect):** Kevin discusses their enterprise AI rollout and mentions a specific factor that determines success. It's not about the technology itself—it's about how employees interact with it. Think about what input users provide.
+**Feedback for correct answers:**
+```
+Correct! Kevin emphasizes that "quality of prompts dictates output" when discussing their AI rollout. This principle applies broadly: AI tools are only as useful as the questions and instructions given to them. The Giants are learning prompt engineering across departments.
+```
+
+**Feedback for incorrect answers:**
+```
+Kevin discusses their enterprise AI rollout and mentions a specific factor that determines success. It's not about the technology itself—it's about how employees interact with it. Think about what input users provide.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-### Question 3: Business-Football Integration
+**Question 3: Business-Football Integration**
 
+**Question:**
+```
 Kevin mentions that heavyweight sponsors like Moody's and MetLife serve a function beyond just paying for naming rights. What additional value do they provide?
+```
 
-A) They recruit talent from their companies to work for the Giants
-B) They serve as an advisory board for facility planning and business decisions ✅
-C) They provide free financial services to players
-D) They handle all stadium construction contracts
+**Options:**
+- A: They recruit talent from their companies to work for the Giants
+- B: They serve as an advisory board for facility planning and business decisions ✅
+- C: They provide free financial services to players
+- D: They handle all stadium construction contracts
 
-**Feedback (Correct):** Correct! Kevin explains that sponsors like Moody's (analytics/financial expertise) and MetLife (risk management) serve as informal advisors on facility planning and business strategy. It's a win-win: the Giants get expert consultation, and sponsors gain deeper integration with the organization.
+**After Submission:**
+```
+Corporate sponsors often bring expertise beyond their financial contributions. Understanding these hidden value exchanges reveals why certain partnerships succeed while others remain transactional.
+```
 
-**Feedback (Incorrect):** Kevin describes an unexpected benefit from their corporate sponsors. Beyond the money, these Fortune 500 companies bring expertise in their fields. Think about what a financial analytics firm or insurance giant could advise on.
+**Feedback for correct answers:**
+```
+Correct! Kevin explains that sponsors like Moody's (analytics/financial expertise) and MetLife (risk management) serve as informal advisors on facility planning and business strategy. It's a win-win: the Giants get expert consultation, and sponsors gain deeper integration with the organization.
+```
+
+**Feedback for incorrect answers:**
+```
+Kevin describes an unexpected benefit from their corporate sponsors. Beyond the money, these Fortune 500 companies bring expertise in their fields. Think about what a financial analytics firm or insurance giant could advise on.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-### Question 4: Career Path Insight
+**Question 4: Career Path Insight**
 
+**Question:**
+```
 Based on Kevin's career journey from Canada to NY Giants leadership, what factor does he emphasize as critical for breaking into sports business?
+```
 
-A) Having an MBA from a top business school
-B) Geographic and financial flexibility in early career ✅
-C) Family connections to team ownership
-D) Previous professional athletic experience
+**Options:**
+- A: Having an MBA from a top business school
+- B: Geographic and financial flexibility in early career ✅
+- C: Family connections to team ownership
+- D: Previous professional athletic experience
 
-**Feedback (Correct):** Correct! Kevin completed 6-7 internships before landing his first full-time role. He emphasizes knowing your "geographic and financial flexibility"—being willing to relocate and accept lower initial pay. He also advises saying yes to everything early in your career and doing research before meetings.
+**After Submission:**
+```
+Breaking into sports business often requires different strategies than traditional corporate careers. Understanding what successful executives actually did reveals more actionable advice than conventional wisdom.
+```
 
-**Feedback (Incorrect):** Kevin shares his career advice based on completing multiple internships before his first full-time position. He emphasizes practical considerations about what you're willing to sacrifice early in your career to get your foot in the door.
+**Feedback for correct answers:**
+```
+Correct! Kevin completed 6-7 internships before landing his first full-time role. He emphasizes knowing your "geographic and financial flexibility"—being willing to relocate and accept lower initial pay. He also advises saying yes to everything early in your career and doing research before meetings.
+```
+
+**Feedback for incorrect answers:**
+```
+Kevin shares his career advice based on completing multiple internships before his first full-time position. He emphasizes practical considerations about what you're willing to sacrifice early in your career to get your foot in the door.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 
-### Question 5: NIL Era Impact
+**Question 5: NIL Era Impact**
 
+**Question:**
+```
 How does Kevin describe the Giants' approach to player branding in the NIL (Name, Image, Likeness) era?
+```
 
-A) They prohibit players from pursuing outside brand deals
-B) They help connect players to corporate partners, creating win-win-win outcomes ✅
-C) They require players to share all NIL revenue with the team
-D) They discourage player marketing to minimize distractions
+**Options:**
+- A: They prohibit players from pursuing outside brand deals
+- B: They help connect players to corporate partners, creating win-win-win outcomes ✅
+- C: They require players to share all NIL revenue with the team
+- D: They discourage player marketing to minimize distractions
 
-**Feedback (Correct):** Correct! Kevin describes a "win-win-win" approach: players earn more, sponsors get authentic athlete partnerships, and the team benefits from reduced off-field distractions and increased organizational integration. Players now arrive as established brands from college NIL experience.
+**After Submission:**
+```
+The NIL era has fundamentally changed how teams interact with player brands. Organizations that adapt their approach can create mutual value rather than viewing player marketing as a distraction.
+```
 
-**Feedback (Incorrect):** Kevin describes the NIL era positively and explains how the Giants work with it rather than against it. Think about how connecting players with the team's existing corporate partners (like Moody's, MetLife) could benefit everyone involved.
+**Feedback for correct answers:**
+```
+Correct! Kevin describes a "win-win-win" approach: players earn more, sponsors get authentic athlete partnerships, and the team benefits from reduced off-field distractions and increased organizational integration. Players now arrive as established brands from college NIL experience.
+```
+
+**Feedback for incorrect answers:**
+```
+Kevin describes the NIL era positively and explains how the Giants work with it rather than against it. Think about how connecting players with the team's existing corporate partners (like Moody's, MetLife) could benefit everyone involved.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
 
 ---
 

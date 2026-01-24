@@ -521,6 +521,45 @@
             transition: width 0.5s ease;
         }
 
+        /* Export button styling */
+        .export-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: var(--color-neutral-800);
+            color: var(--color-white);
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .export-btn:hover {
+            background: var(--color-neutral-700);
+        }
+
+        .export-btn:focus {
+            outline: 2px solid var(--color-info);
+            outline-offset: 2px;
+        }
+
+        /* Screen reader only text */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -691,6 +730,10 @@
                     <p id="path-description"></p>
                     <ul id="path-recommendations"></ul>
                 </div>
+
+                <button class="export-btn" onclick="exportResults()">
+                    Download Results (TXT)
+                </button>
             </div>
         </div>
     </div>
@@ -909,10 +952,13 @@
         function renderProgressDots() {
             const dotsContainer = document.getElementById('progress-dots');
             dotsContainer.innerHTML = '';
+            dotsContainer.setAttribute('role', 'status');
+            dotsContainer.setAttribute('aria-label', `Progress: Question 1 of ${quizData.length}`);
             for (let i = 0; i < quizData.length; i++) {
                 const dot = document.createElement('div');
                 dot.className = 'progress-dot' + (i === 0 ? ' active' : '');
                 dot.id = `dot-${i}`;
+                dot.setAttribute('aria-label', `Question ${i + 1}: ${i === 0 ? 'Current' : 'Not started'}`);
                 dotsContainer.appendChild(dot);
             }
         }
@@ -945,7 +991,7 @@
                 <div class="submit-btn-container">
                     <button class="submit-btn" onclick="submitAnswer(${index})">Submit Answer</button>
                 </div>
-                <div class="feedback">
+                <div class="feedback" role="alert" aria-live="assertive">
                     <strong></strong>
                     <p></p>
                 </div>
@@ -1015,8 +1061,14 @@
             container.querySelector('.submit-btn').textContent = 'Answer Submitted';
 
             // Update progress dots
-            document.getElementById(`dot-${index}`).classList.remove('active');
-            document.getElementById(`dot-${index}`).classList.add('completed');
+            const currentDot = document.getElementById(`dot-${index}`);
+            currentDot.classList.remove('active');
+            currentDot.classList.add('completed');
+            currentDot.setAttribute('aria-label', `Question ${index + 1}: ${isCorrect ? 'Correct' : 'Incorrect'}`);
+
+            // Update progress indicator aria-label
+            const dotsContainer = document.getElementById('progress-dots');
+            dotsContainer.setAttribute('aria-label', `Progress: Completed ${index + 1} of ${quizData.length} questions`);
 
             // Enable next button
             document.getElementById('next-btn').disabled = false;
@@ -1024,7 +1076,9 @@
 
         function nextQuestion() {
             if (currentQuestion < quizData.length - 1) {
-                document.getElementById(`dot-${currentQuestion + 1}`).classList.add('active');
+                const nextDot = document.getElementById(`dot-${currentQuestion + 1}`);
+                nextDot.classList.add('active');
+                nextDot.setAttribute('aria-label', `Question ${currentQuestion + 2}: Current`);
                 renderQuestion(currentQuestion + 1);
                 document.getElementById('next-btn').disabled = true;
                 window.scrollTo(0, 0);
@@ -1115,6 +1169,62 @@
                 document.getElementById(`outcome-${outcomeNum}`).textContent = `${score}/${total}`;
                 document.getElementById(`progress-${outcomeNum}`).style.width = `${(score / total) * 100}%`;
             });
+        }
+
+        function exportResults() {
+            const totalPoints = Object.values(answers).reduce((sum, a) => sum + a.points, 0);
+            const level = document.getElementById('level-badge').textContent;
+            const pathDescription = document.getElementById('path-description').textContent;
+            const recommendations = Array.from(document.getElementById('path-recommendations').querySelectorAll('li')).map(li => li.textContent);
+
+            let content = `MEDIA RIGHTS PRE-ASSESSMENT RESULTS\n`;
+            content += `${'='.repeat(50)}\n\n`;
+            content += `Date: ${new Date().toLocaleString()}\n\n`;
+            content += `OVERALL SCORE: ${totalPoints}/10\n`;
+            content += `LEVEL: ${level}\n\n`;
+
+            content += `OUTCOME BREAKDOWN\n`;
+            content += `${'-'.repeat(30)}\n`;
+            Object.keys(outcomeScores).forEach(outcome => {
+                const score = outcomeScores[outcome].correct;
+                const total = outcomeScores[outcome].maxPoints;
+                const outcomeNames = {
+                    'MLO2.1': 'Media Rights Valuation',
+                    'MLO2.2': 'Platform Economics',
+                    'MLO2.3': 'Content Strategy',
+                    'MLO2.4': 'Strategic Trade-offs'
+                };
+                content += `${outcomeNames[outcome]}: ${score}/${total}\n`;
+            });
+
+            content += `\nQUESTION-BY-QUESTION RESULTS\n`;
+            content += `${'-'.repeat(30)}\n`;
+            Object.keys(answers).forEach(qNum => {
+                const answer = answers[qNum];
+                content += `Q${qNum}: ${answer.correct ? 'Correct' : 'Incorrect'} (${answer.outcome})\n`;
+            });
+
+            content += `\nYOUR PERSONALIZED LEARNING PATH\n`;
+            content += `${'-'.repeat(30)}\n`;
+            content += `${pathDescription}\n\n`;
+            content += `RECOMMENDATIONS:\n`;
+            recommendations.forEach((rec, i) => {
+                content += `${i + 1}. ${rec}\n`;
+            });
+
+            content += `\n${'='.repeat(50)}\n`;
+            content += `Business of Marketing in Sport - Week 2\n`;
+            content += `Media, Content & Fan Engagement\n`;
+
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `media-rights-preassessment-${new Date().toISOString().split('T')[0]}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
         }
     </script>
 </body>

@@ -447,6 +447,52 @@
             }
         }
 
+        /* Tooltip system for metric explanations */
+        .help-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 16px;
+            height: 16px;
+            background: var(--color-neutral-400);
+            color: white;
+            border-radius: 50%;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: help;
+            margin-left: 4px;
+            position: relative;
+        }
+
+        .help-icon:hover::after,
+        .help-icon:focus::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-neutral-800);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 400;
+            width: 220px;
+            z-index: 1000;
+            text-align: left;
+            line-height: 1.4;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin-bottom: 8px;
+        }
+
+        .chart-note {
+            font-size: 0.85rem;
+            color: var(--color-neutral-600);
+            text-align: center;
+            margin-bottom: 12px;
+            font-style: italic;
+        }
+
         /* Accessibility */
         .sr-only {
             position: absolute;
@@ -501,11 +547,11 @@
                             <span class="stat-value">$2.0M</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-label">Adoption</span>
+                            <span class="stat-label">Adoption <span class="help-icon" tabindex="0" data-tooltip="Percentage of your 1M fans who will use this tactic. Higher adoption = more fans engaged.">?</span></span>
                             <span class="stat-value">30%</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-label">Value/Fan</span>
+                            <span class="stat-label">Value/Fan <span class="help-icon" tabindex="0" data-tooltip="Additional annual revenue per fan who engages with this tactic (through ads, purchases, data, etc.)">?</span></span>
                             <span class="stat-value">+$5</span>
                         </div>
                     </div>
@@ -650,12 +696,12 @@
                 </div>
 
                 <div class="result-card">
-                    <div class="result-label">ROI (Return on Investment)</div>
+                    <div class="result-label">ROI (Return on Investment) <span class="help-icon" tabindex="0" data-tooltip="ROI = (Revenue Gained - Cost) / Cost. Shows percentage return on your engagement investment.">?</span></div>
                     <div class="result-value positive" id="roi">N/A</div>
                 </div>
 
                 <div class="result-card">
-                    <div class="result-label">Affordable Rights Budget</div>
+                    <div class="result-label">Affordable Rights Budget <span class="help-icon" tabindex="0" data-tooltip="Industry standard: leagues can spend up to 70% of fan value on media rights, reserving 30% for operations and profit.">?</span></div>
                     <div class="result-value" id="affordable-rights">$7.0M/year</div>
                 </div>
 
@@ -676,8 +722,9 @@
             </div>
             <div class="section-content" id="funnel-content">
                 <div class="section-inner">
+                    <p class="chart-note">Super-Fans = fans engaged with high-value tactics ($20+/fan), such as betting, exclusive content, or fantasy</p>
                     <div class="chart-container">
-                        <canvas id="funnelChart"></canvas>
+                        <canvas id="funnelChart" aria-label="Bar chart showing distribution of passive viewers, engaged fans, and super-fans based on selected tactics" role="img"></canvas>
                     </div>
                 </div>
             </div>
@@ -685,11 +732,11 @@
 
         <!-- Section 4: Strategic Insights -->
         <div class="section">
-            <div class="section-header" onclick="toggleSection('insights')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('insights');}" tabindex="0" role="button" aria-expanded="false" aria-controls="insights-content">
+            <div class="section-header" onclick="toggleSection('insights')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('insights');}" tabindex="0" role="button" aria-expanded="true" aria-controls="insights-content">
                 <h2>Strategic Insights</h2>
-                <span class="toggle-icon" aria-hidden="true">▼</span>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
             </div>
-            <div class="section-content" id="insights-content">
+            <div class="section-content expanded" id="insights-content">
                 <div class="section-inner">
                     <ul class="insights-list" id="insights-list">
                         <li>Select engagement tactics above to see personalized insights</li>

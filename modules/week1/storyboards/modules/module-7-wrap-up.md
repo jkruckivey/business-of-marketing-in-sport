@@ -17,7 +17,7 @@
 
 **Purpose:** Complete CFL Expansion Milestone 1, transition to Week 2
 
-**Uplift Structure:** Final module in Unit 1
+**Uplimit Structure:** Final module in Unit 1
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
@@ -264,8 +264,8 @@ Title: ✓ What's Next: Week 2
 
 Next week goes deep on the largest and most dynamic revenue stream: media rights. You'll learn how rights are valued and negotiated, compare linear broadcasting to streaming economics, and analyze the Rogers/NHL $5.2B deal.
 
-**Executive Leader:** Stewart Johnston, President of Media, Bell Media/TSN
-**Core Case:** Rogers Communications and the NHL Rights Deal
+**Executive Leader:** Al Dak, SVP Revenue, Rogers Sports and Media
+**Core Case:** Rogers Communications: Sportsnet and NHL Rights (W16179)
 
 **Milestone 2 Preview:** You'll develop your CFL franchise's media strategy—how will your new team maximize media value and build fans before the first game?
 

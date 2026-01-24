@@ -1,5 +1,12 @@
 ## MODULE 4: Interactive Activity - Streaming Wars Strategy
-**Version:** 1.3.0 | **Last Updated:** 2025-01-27
+**Version:** 1.4.0 | **Last Updated:** 2026-01-23
+
+### Version 1.4.0 Changes
+- **ADDED:** Tooltip system for jargon (VOD, baseline context) for Maria persona
+- **ADDED:** Summary dashboard showing all decisions before export
+- **ADDED:** Restart functionality to replay simulation
+- **FIXED:** Deprecated `onkeypress` → `keydown` for keyboard navigation
+- **ENHANCED:** ARIA labels on progress tracker dots with completion status
 
 **Purpose:** Active learning - simulate platform strategy decisions (supports WLO 2.2 - Application/Analysis level)
 
@@ -162,12 +169,19 @@ Remember the fan engagement value chain from Media Rights Frameworks (passive vi
 ```
 
 **Accessibility:**
-- ✅ Keyboard navigation functional (Tab, Arrow keys, Enter)
+- ✅ Keyboard navigation functional (Tab, Arrow keys, Enter) - fixed deprecated `onkeypress`
 - ✅ ARIA labels on all sliders and controls
+- ✅ Progress tracker with role="status" and per-dot aria-labels (current/completed status)
 - ✅ Screen reader announcements for quarterly results
 - ✅ High contrast mode support
 - ✅ Color-blind safe visualization (blue, orange, gray palette)
 - ✅ Focus indicators on all interactive elements
+
+**Features (v1.4.0):**
+- Tooltip system: Hover/focus on underlined terms (VOD, baseline) for definitions
+- Summary dashboard: Review all decisions before exporting
+- Restart button: Replay simulation with different strategy
+- Export button: "Download Summary (TXT)" for portfolio documentation
 
 ---
 

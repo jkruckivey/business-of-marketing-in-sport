@@ -1,5 +1,9 @@
 # MODULE 0: Bridge-In - The $500 Million Paradox
-**Version:** 3.0.0 | **Last Updated:** 2026-01-25
+**Version:** 3.1.0 | **Last Updated:** 2026-01-25
+
+### Version 3.1.0 Changes
+- **FIXED:** Element 5 - Corrected score ranges (was 0-6/12, now 0-3/8 to match 8-question quiz)
+- **ADDED:** Instructor Notes - Pre-Assessment Design Rationale and Challenge Structure documentation
 
 ### Version 3.0.0 Changes
 - **REPLACED:** Element 4 (iFrame widget) → Native Uplimit MC questions (Elements 4A-4N)
@@ -756,7 +760,7 @@ Hi! I'm here to help you interpret your pre-assessment results and plan your lea
 
 ---
 
-## Element 5: Infobox - What Your Results Mean
+## Element 5: Infobox - What Your Results Mean `[v3.1.0]`
 
 **Type:** Infobox (Insight variant)
 **Priority:** ◐ Recommended
@@ -764,7 +768,7 @@ Hi! I'm here to help you interpret your pre-assessment results and plan your lea
 ```
 Title: 💡 Understanding Your Pre-Assessment Results
 
-Your quiz results create a personalized learning path for this week. Lower scores (0-6/12) suggest spending extra time with Module 2's sponsorship frameworks and Module 3's betting economics—you're building fresh ROI calculation skills, which is perfect for developing rigorous financial analysis. Higher scores (9-12/12) indicate solid marketing intuitions, so challenge yourself with the LIV Golf case analysis and the strategy memo assignment.
+Your quiz results create a personalized learning path for this week. Lower scores (0-3/8) suggest spending extra time with Module 2's sponsorship frameworks and Module 3's betting economics—you're building fresh ROI calculation skills, which is perfect for developing rigorous financial analysis. Higher scores (5-8/8) indicate solid marketing intuitions, so challenge yourself with the LIV Golf case analysis and the strategy memo assignment.
 
 Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently and identify where to focus your energy. Now that you know where you stand, let's learn the frameworks that will transform how you calculate and justify sponsorship investments.
 ```
@@ -804,9 +808,22 @@ May 14, 2018: The Supreme Court strikes down PASPA, opening the door to legal sp
 
 **Module 0 Purpose:**
 - Create cognitive dissonance (the $500M question challenges assumptions)
-- Reveal knowledge gaps through AI roleplay and pre-assessment
+- Reveal knowledge gaps through AI roleplay and pre-assessment (Elements 2 + 4A-4M)
 - Build motivation to learn Week 3 content
-- Graphic novel provides visual entry point for diverse learners
+- AI Chat Widget (Element 4N) provides personalized learning path guidance
+- Graphic novel provides visual entry point for diverse learners (UDL)
+
+**Pre-Assessment Design Rationale (v3.0.0):**
+- Restructured into 4 challenges with MC questions underneath each
+- Each challenge presents a business problem → questions test related knowledge
+- Simplified feedback to 3 fields: After Submission, Correct, Incorrect
+- 8 total MC questions matching Week 2 pattern
+- WLO coverage: Challenge 1 (3.1) → 2 Qs, Challenge 2 (3.3) → 2 Qs, Challenge 3 (3.2) → 2 Qs, Challenge 4 (3.4) → 2 Qs
+
+**Challenge Structure:**
+- **The Problem:** Business scenario framing the question
+- **What you'll need to know:** Key concepts being tested
+- **Test yourself:** Self-check prompt before attempting questions
 
 **Graphic Novel Notes:**
 - "The New Revenue Frontier" visualizes sponsorship and betting economics

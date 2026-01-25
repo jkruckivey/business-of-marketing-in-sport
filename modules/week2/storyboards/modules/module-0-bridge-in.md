@@ -1,5 +1,8 @@
 # MODULE 0: Bridge-In - The $5.2 Billion Question
-**Version:** 3.0.0 | **Last Updated:** 2026-01-22
+**Version:** 3.1.0 | **Last Updated:** 2026-01-25
+
+### Version 3.1.0 Changes
+- **FIXED:** Element 5 - Corrected score ranges (was 0-6/14, now 0-3/8 to match 8-question quiz)
 
 ### Version 3.0.0 Changes
 - **RESTRUCTURED:** Pre-assessment into 4 challenges with MC questions underneath each
@@ -683,7 +686,7 @@ Walking away abandons a valuable asset; renewing at the same price repeats the m
 
 ---
 
-## Element 5: Infobox - What Your Results Mean
+## Element 5: Infobox - What Your Results Mean `[v3.1.0]`
 
 **Type:** Infobox (Insight variant)
 **Priority:** ◐ Recommended
@@ -691,7 +694,7 @@ Walking away abandons a valuable asset; renewing at the same price repeats the m
 ```
 Title: 💡 Understanding Your Pre-Assessment Results
 
-Your quiz results create a personalized learning path for this week. Lower scores (0-6/14) suggest spending extra time with Module 3's media rights valuation frameworks and the interactive tools—you're building fresh foundations, which is perfect for developing strong analytical skills. Higher scores (10-14/14) indicate solid media strategy intuitions, so challenge yourself with the Rogers case analysis and Streaming Wars simulation.
+Your quiz results create a personalized learning path for this week. Lower scores (0-3/8) suggest spending extra time with Module 3's media rights valuation frameworks and the interactive tools—you're building fresh foundations, which is perfect for developing strong analytical skills. Higher scores (5-8/8) indicate solid media strategy intuitions, so challenge yourself with the Rogers case analysis and Streaming Wars simulation.
 
 Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently and identify where to focus your energy. Now that you know where you stand, let's learn the frameworks that will transform how you evaluate billion-dollar media deals.
 ```

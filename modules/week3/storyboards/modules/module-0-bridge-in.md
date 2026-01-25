@@ -1,5 +1,9 @@
 # MODULE 0: Bridge-In - The $500 Million Paradox
-**Version:** 3.1.0 | **Last Updated:** 2026-01-25
+**Version:** 3.2.0 | **Last Updated:** 2026-01-25
+
+### Version 3.2.0 Changes
+- **REFORMATTED:** MC options now in individual markdown code boxes (no letter prefixes)
+- **VARIED:** Correct answer positions distributed across all 4 positions (not always B/C)
 
 ### Version 3.1.0 Changes
 - **FIXED:** Element 5 - Corrected score ranges (was 0-6/12, now 0-3/8 to match 8-question quiz)
@@ -348,7 +352,7 @@ Before exploring Week 3's content, test yourself with 4 challenges. Each challen
 
 ---
 
-## Element 4C: MC Question 1 - Attribution Challenge `[v3.0.0]`
+## Element 4C: MC Question 1 - Attribution Challenge `[v3.2.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
@@ -360,10 +364,22 @@ Nike pays $500M+/year in sports sponsorships worldwide. Why can't they easily pr
 ```
 
 **Options:**
-- A: They don't track impressions or media value
-- B: Attribution is difficult—consumers see sponsorships but buy products months later ✅
-- C: Sports sponsorships don't actually drive sales
-- D: CFOs don't understand marketing metrics
+
+```
+They don't track impressions or media value
+```
+
+```
+Sports sponsorships don't actually drive sales
+```
+
+```
+Attribution is difficult—consumers see sponsorships but buy products months later ✅
+```
+
+```
+CFOs don't understand marketing metrics
+```
 
 **After Submission:**
 ```
@@ -384,7 +400,7 @@ Nike tracks billions of impressions. The challenge isn't data collection—it's 
 
 ---
 
-## Element 4D: MC Question 2 - Sponsorship Scale `[v3.0.0]`
+## Element 4D: MC Question 2 - Sponsorship Scale `[v3.2.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
@@ -396,10 +412,22 @@ Which revenue stream is typically LARGER for most professional sports leagues?
 ```
 
 **Options:**
-- A: Ticketing and live event revenue
-- B: Sponsorship and partnership revenue ✅
-- C: Merchandise and licensing revenue
-- D: Concessions and hospitality revenue
+
+```
+Sponsorship and partnership revenue ✅
+```
+
+```
+Ticketing and live event revenue
+```
+
+```
+Merchandise and licensing revenue
+```
+
+```
+Concessions and hospitality revenue
+```
 
 **After Submission:**
 ```
@@ -443,7 +471,7 @@ While ticketing feels most visible to fans, sponsorship has grown substantially.
 
 ---
 
-## Element 4F: MC Question 3 - CPM Basics `[v3.0.0]`
+## Element 4F: MC Question 3 - CPM Basics `[v3.2.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
@@ -455,10 +483,22 @@ What does "CPM" mean in sponsorship measurement?
 ```
 
 **Options:**
-- A: Cost Per Mille (cost per thousand impressions) ✅
-- B: Cost Per Match (price per game sponsored)
-- C: Corporate Partnership Model
-- D: Customer Purchase Metric
+
+```
+Cost Per Match (price per game sponsored)
+```
+
+```
+Corporate Partnership Model
+```
+
+```
+Customer Purchase Metric
+```
+
+```
+Cost Per Mille (cost per thousand impressions) ✅
+```
 
 **After Submission:**
 ```
@@ -479,7 +519,7 @@ CPM stands for "Cost Per Mille" (mille = thousand in Latin). It measures cost pe
 
 ---
 
-## Element 4G: MC Question 4 - ROI Calculation `[v3.0.0]`
+## Element 4G: MC Question 4 - ROI Calculation `[v3.2.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
@@ -496,10 +536,22 @@ If they paid $10M for the sponsorship, what's the ROI?
 ```
 
 **Options:**
-- A: 50% ($5M profit ÷ $10M cost)
-- B: 150% ($15M profit ÷ $10M cost) ✅
-- C: 250% ($25M revenue ÷ $10M cost)
-- D: ROI cannot be calculated from this data
+
+```
+50% ($5M profit ÷ $10M cost)
+```
+
+```
+150% ($15M profit ÷ $10M cost) ✅
+```
+
+```
+250% ($25M revenue ÷ $10M cost)
+```
+
+```
+ROI cannot be calculated from this data
+```
 
 **After Submission:**
 ```
@@ -543,7 +595,7 @@ Remember: ROI = (Revenue - Cost) ÷ Cost × 100. First subtract the cost from re
 
 ---
 
-## Element 4I: MC Question 5 - Betting Growth Driver `[v3.0.0]`
+## Element 4I: MC Question 5 - Betting Growth Driver `[v3.2.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
@@ -555,10 +607,22 @@ Why is sports betting the fastest-growing sponsorship category?
 ```
 
 **Options:**
-- A: Betting companies have larger marketing budgets than traditional sponsors
-- B: It offers closed-loop attribution—every bet can be tracked directly to the sponsor ✅
-- C: All sports fans want to gamble on games they watch
-- D: Traditional sponsors are abandoning sports partnerships
+
+```
+Betting companies have larger marketing budgets than traditional sponsors
+```
+
+```
+All sports fans want to gamble on games they watch
+```
+
+```
+Traditional sponsors are abandoning sports partnerships
+```
+
+```
+It offers closed-loop attribution—every bet can be tracked directly to the sponsor ✅
+```
 
 **After Submission:**
 ```
@@ -579,7 +643,7 @@ The key differentiator is attribution. Betting sponsors can track every customer
 
 ---
 
-## Element 4J: MC Question 6 - Betting vs. Traditional `[v3.0.0]`
+## Element 4J: MC Question 6 - Betting vs. Traditional `[v3.2.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
@@ -591,10 +655,22 @@ What makes betting sponsorships unique compared to traditional categories like b
 ```
 
 **Options:**
-- A: Betting sponsors pay significantly more money per deal
-- B: Betting offers immediate attribution—fan sees ad, places bet, sponsor tracks conversion ✅
-- C: Betting is legal in all 50 US states now
-- D: Traditional sponsors no longer see value in sports partnerships
+
+```
+Betting offers immediate attribution—fan sees ad, places bet, sponsor tracks conversion ✅
+```
+
+```
+Betting sponsors pay significantly more money per deal
+```
+
+```
+Betting is legal in all 50 US states now
+```
+
+```
+Traditional sponsors no longer see value in sports partnerships
+```
 
 **After Submission:**
 ```
@@ -638,7 +714,7 @@ While betting sponsors do pay well, the key advantage is attribution. Traditiona
 
 ---
 
-## Element 4L: MC Question 7 - Activation Definition `[v3.0.0]`
+## Element 4L: MC Question 7 - Activation Definition `[v3.2.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
@@ -650,10 +726,22 @@ What is a sponsorship "activation"?
 ```
 
 **Options:**
-- A: The moment a brand signs the sponsorship contract
-- B: Marketing activities that bring the partnership to life beyond logo placement ✅
-- C: When fans purchase products from the sponsor
-- D: The press release announcing the sponsorship deal
+
+```
+The moment a brand signs the sponsorship contract
+```
+
+```
+When fans purchase products from the sponsor
+```
+
+```
+Marketing activities that bring the partnership to life beyond logo placement ✅
+```
+
+```
+The press release announcing the sponsorship deal
+```
 
 **After Submission:**
 ```
@@ -674,7 +762,7 @@ Activation happens AFTER signing the deal. It's the marketing activities—fan z
 
 ---
 
-## Element 4M: MC Question 8 - Revenue Impact Calculation `[v3.0.0]`
+## Element 4M: MC Question 8 - Revenue Impact Calculation `[v3.2.0]`
 
 **Uplimit Implementation:**
 1. Select **Multiple Choice Question** element
@@ -691,10 +779,22 @@ What's the estimated revenue impact?
 ```
 
 **Options:**
-- A: $1.5M (reach × engagement rate)
-- B: $3M (50M × 3% × $2 per fan)
-- C: $3M (1.5M engaged × 2% × $100) ✅
-- D: Cannot be calculated without more data
+
+```
+$1.5M (reach × engagement rate)
+```
+
+```
+Cannot be calculated without more data
+```
+
+```
+$3M (50M × 3% × $2 per fan)
+```
+
+```
+$3M (1.5M engaged × 2% × $100) ✅
+```
 
 **After Submission:**
 ```

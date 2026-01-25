@@ -675,10 +675,10 @@
             benchmarkChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['Your Sponsorship', 'Super Bowl Ad', 'Social Media'],
+                    labels: ['Your Sponsorship', 'Super Bowl Ad (30s)', 'Social Media'],
                     datasets: [{
                         label: 'CPM ($)',
-                        data: [sponsorshipCPM, 7000, 30],
+                        data: [sponsorshipCPM, 60, 8],  // Super Bowl: ~$7M/123M viewers = $57 CPM; Social: $5-10 CPM
                         backgroundColor: [
                             getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-700') + 'cc',
                             getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400') + 'cc',

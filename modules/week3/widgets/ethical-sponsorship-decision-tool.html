@@ -645,6 +645,9 @@
                     </div>
 
                     <div class="weight-total" id="weightTotal">Total: 100%</div>
+                    <div id="weightWarning" class="weight-warning" style="display: none; color: #dc2626; font-size: 0.8rem; margin-top: 0.5rem; text-align: right;">
+                        Weights must sum to 100% for accurate analysis
+                    </div>
                 </div>
             </div>
         </div>
@@ -804,6 +807,10 @@
             const weightTotalEl = document.getElementById('weightTotal');
             weightTotalEl.textContent = `Total: ${totalWeight}%`;
             weightTotalEl.className = `weight-total ${totalWeight === 100 ? 'valid' : 'invalid'}`;
+
+            // Show/hide weight warning
+            const weightWarning = document.getElementById('weightWarning');
+            weightWarning.style.display = totalWeight === 100 ? 'none' : 'block';
 
             // Calculate weighted score (normalize to -100 to +100)
             let weightedSum = 0;
@@ -975,6 +982,21 @@
         }
 
         function exportAnalysis() {
+            // Validate weights sum to 100%
+            const weights = {
+                customers: parseInt(document.getElementById('weightCustomers').value),
+                employees: parseInt(document.getElementById('weightEmployees').value),
+                shareholders: parseInt(document.getElementById('weightShareholders').value),
+                media: parseInt(document.getElementById('weightMedia').value),
+                advocacy: parseInt(document.getElementById('weightAdvocacy').value)
+            };
+            const totalWeight = Object.values(weights).reduce((a, b) => a + b, 0);
+
+            if (totalWeight !== 100) {
+                alert(`Weights must sum to 100% before exporting. Current total: ${totalWeight}%\n\nPlease adjust your stakeholder weights.`);
+                return;
+            }
+
             const score = document.getElementById('decisionScore').textContent;
             const recommendation = document.getElementById('recommendation').textContent;
             const insight = document.getElementById('insightText').textContent;

@@ -467,6 +467,10 @@
         <h1>Sponsorship ROI Calculator</h1>
         <p class="subtitle">Model sponsorship ROI using reach, engagement, and conversion metrics with industry-standard assumptions.</p>
 
+        <div class="insight-box" style="margin-bottom: 1.5rem; background: var(--color-sand);">
+            <p><strong>Try a preset first:</strong> Click Nike, Red Bull, or Gatorade above to see how successful sponsorships achieve positive ROI. Then adjust the sliders to explore what drives sponsorship performance.</p>
+        </div>
+
         <div class="section">
             <div class="section-header" onclick="toggleSection('inputs')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSection('inputs');}" tabindex="0" role="button" aria-expanded="true" aria-controls="inputs-content">
                 <h2>Sponsorship Inputs</h2>
@@ -499,11 +503,11 @@
                     <div class="input-group">
                         <label for="engagementRate">Engagement Rate (%)</label>
                         <div class="input-with-value">
-                            <input type="range" id="engagementRate" min="0.01" max="0.10" value="0.02" step="0.01"
+                            <input type="range" id="engagementRate" min="1" max="10" value="3" step="0.5"
                                    oninput="updateCalculations()" aria-describedby="engagementValue">
-                            <span class="value-display" id="engagementValue" aria-live="polite">0.02%</span>
+                            <span class="value-display" id="engagementValue" aria-live="polite">3%</span>
                         </div>
-                        <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">% who interact (app download, retail visit, social engage)</p>
+                        <p style="font-size: 0.75rem; color: var(--color-neutral-600); margin-top: 0.25rem;">% who interact (app download, retail visit, social engage). Industry range: 2-8%.</p>
                     </div>
 
                     <div class="input-group">
@@ -606,21 +610,21 @@
             nike: {
                 investment: 400,
                 impressions: 5000,
-                engagementRate: 0.02,
+                engagementRate: 4,      // 4% engagement rate
                 conversionRate: 1.5,
                 avgPurchase: 120
             },
             redbull: {
                 investment: 150,
                 impressions: 2000,
-                engagementRate: 0.05,
+                engagementRate: 7,      // 7% engagement rate (extreme sports = high engagement)
                 conversionRate: 2.5,
                 avgPurchase: 85
             },
             gatorade: {
                 investment: 80,
                 impressions: 1200,
-                engagementRate: 0.03,
+                engagementRate: 5,      // 5% engagement rate
                 conversionRate: 2.0,
                 avgPurchase: 65
             }
@@ -852,7 +856,7 @@
         function resetCalculator() {
             document.getElementById('investment').value = 100;
             document.getElementById('impressions').value = 1000;
-            document.getElementById('engagementRate').value = 0.02;
+            document.getElementById('engagementRate').value = 3;
             document.getElementById('conversionRate').value = 1.5;
             document.getElementById('avgPurchase').value = 75;
 

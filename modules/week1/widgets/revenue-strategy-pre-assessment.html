@@ -19,14 +19,10 @@
             --color-neutral-700: #404040;
             --color-neutral-800: #262626;
             --color-neutral-900: #171717;
+            --color-accent: #6b9085;
+            --color-accent-light: #c0d1cd;
             --color-error: #ef4444;
             --color-success: #c0d1cd;
-            --color-warning: #f0ede0;
-            --color-info: #bfe5e7;
-            --color-purple: #d5cae0;
-            --color-green: #c0d1cd;
-            --color-turquoise: #bfe5e7;
-            --color-sand: #f0ede0;
             --border-radius: 8px;
             --border-radius-sm: 4px;
         }
@@ -47,16 +43,19 @@
             background: white;
             color: var(--color-neutral-900);
             line-height: 1.6;
-            padding: 20px;
+            padding: 1.5rem;
         }
 
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: white;
-            border-radius: 8px;
-            border: 1px solid #d4d4d4;
-            padding: 40px;
+        }
+
+        .widget-box {
+            background: var(--color-neutral-50);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
         }
 
         /* Screen Management */
@@ -86,16 +85,16 @@
         }
 
         h1 {
-            font-size: 1.8rem;
+            font-size: 1.25rem;
             font-weight: 700;
             color: var(--color-neutral-900);
-            margin-bottom: 10px;
+            margin-bottom: 0.25rem;
         }
 
         .subtitle {
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: var(--color-neutral-600);
-            margin-bottom: 20px;
+            margin-bottom: 1.5rem;
         }
 
         .info-box {
@@ -537,6 +536,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="widget-box">
         <!-- Screen 1: Challenge Preview -->
         <div id="screen-1" class="screen active challenge-preview">
             <header>
@@ -678,6 +678,7 @@
                     <ul id="path-recommendations"></ul>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 

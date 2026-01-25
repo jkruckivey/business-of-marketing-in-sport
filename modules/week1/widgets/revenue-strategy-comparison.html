@@ -19,12 +19,11 @@
             --color-neutral-700: #404040;
             --color-neutral-800: #262626;
             --color-neutral-900: #171717;
+            --color-accent: #6b9085;
+            --color-accent-light: #c0d1cd;
             --color-success: #16a34a;
             --color-warning: #ca8a04;
-            --color-info: #0284c7;
-            --color-green-bg: #f0fdf4;
             --color-sand: #f0ede0;
-            --color-turquoise: #bfe5e7;
             --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             --border-radius: 8px;
         }
@@ -36,32 +35,39 @@
             font-family: var(--font-family-primary);
             background: white;
             color: var(--color-neutral-900);
-            padding: 2rem;
+            padding: 1.5rem;
             line-height: 1.6;
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
+        .widget-box {
+            background: var(--color-neutral-50);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+        }
+
         h1 {
-            font-size: 1.75rem;
+            font-size: 1.25rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
         }
 
         .subtitle {
-            color: var(--color-neutral-500);
+            color: var(--color-neutral-600);
+            font-size: 0.85rem;
             margin-bottom: 1.5rem;
-            max-width: 700px;
         }
 
         .key-insight {
             background: var(--color-neutral-100);
-            border-left: 4px solid var(--color-neutral-700);
+            border-left: 4px solid var(--color-accent);
             padding: 1rem 1.25rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
         }
 
@@ -318,6 +324,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="widget-box">
         <h1>5-Year Revenue Strategy Comparison</h1>
         <p class="subtitle">Compare four different resource allocation strategies and see how they perform over a 5-year period. Which approach maximizes franchise value?</p>
 
@@ -552,6 +559,7 @@
                 <li><strong>Risk matters.</strong> Betting-heavy has highest volatility. One regulatory change could devastate the portfolio.</li>
                 <li><strong>Real sports teams diversify.</strong> This is why leagues invest in media deals, premium seating, sponsorship activation, and betting partnerships simultaneously.</li>
             </ul>
+        </div>
         </div>
     </div>
 </body>

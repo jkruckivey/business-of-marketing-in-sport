@@ -21,26 +21,21 @@
             --color-neutral-800: #262626;
             --color-neutral-900: #171717;
 
+            /* Accent Colors */
+            --color-accent: #6b9085;
+            --color-accent-light: #c0d1cd;
+            --color-focus: #3182ce;
+
             /* Semantic Colors */
             --color-success: #22c55e;
             --color-success-light: #dcfce7;
             --color-success-dark: #15803d;
-            --color-error: #ef4444;
-            --color-error-light: #fee2e2;
-            --color-error-dark: #b91c1c;
             --color-warning: #f59e0b;
             --color-warning-light: #fcd34d;
             --color-warning-dark: #d97706;
             --color-info: #3b82f6;
             --color-info-light: #93c5fd;
             --color-info-dark: #1d4ed8;
-
-            /* Accent Colors */
-            --color-accent: #bfe5e7;
-            --color-accent-dark: #5a9ea1;
-            --color-mlo: #5a9ea1;
-            --color-clo: #6b9085;
-            --color-focus: #3182ce;
 
             /* Knowledge Check Feedback */
             --color-correct: #c0d1cd;
@@ -49,8 +44,8 @@
             --color-incorrect-bg: #faf9f5;
 
             /* Layout */
-            --border-radius: 12px;
-            --border-radius-sm: 6px;
+            --border-radius: 8px;
+            --border-radius-sm: 4px;
             --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
             --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
             --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
@@ -69,32 +64,40 @@
 
         body {
             font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--color-neutral-50);
+            background: white;
             color: var(--color-neutral-800);
             line-height: 1.6;
+            padding: 1.5rem;
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 2rem;
+        }
+
+        .widget-box {
+            background: var(--color-neutral-50);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
         }
 
         /* Header */
         .header {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .header h1 {
-            font-size: 2rem;
+            font-size: 1.25rem;
             font-weight: 700;
             color: var(--color-neutral-900);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
         }
 
         .header p {
             color: var(--color-neutral-600);
+            font-size: 0.85rem;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -103,13 +106,13 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: var(--color-accent-dark);
+            background: var(--color-accent);
             color: white;
             padding: 0.25rem 0.75rem;
             border-radius: 20px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
 
         /* City Cards Grid */
@@ -172,7 +175,7 @@
         }
 
         .city-card:hover {
-            border-color: var(--color-accent-dark);
+            border-color: var(--color-accent);
             transform: translateY(-4px);
             box-shadow: var(--shadow-lg);
         }
@@ -296,7 +299,7 @@
         .select-btn {
             width: 100%;
             padding: 0.75rem;
-            background: var(--color-accent-dark);
+            background: var(--color-accent);
             color: white;
             border: none;
             font-family: inherit;
@@ -362,7 +365,7 @@
 
         .table-select-btn {
             padding: 0.5rem 1rem;
-            background: var(--color-accent-dark);
+            background: var(--color-accent);
             color: white;
             border: none;
             border-radius: var(--border-radius-sm);
@@ -466,7 +469,7 @@
             background: var(--color-neutral-50);
             padding: 1rem;
             border-radius: var(--border-radius-sm);
-            border-left: 3px solid var(--color-accent-dark);
+            border-left: 3px solid var(--color-accent);
         }
 
         .detail-item .detail-label {
@@ -592,6 +595,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="widget-box">
         <!-- Header -->
         <header class="header">
             <div class="project-badge">CFL EXPANSION PROJECT</div>
@@ -667,6 +671,7 @@
                 </div>
             </div>
         </section>
+        </div>
     </div>
 
     <script>

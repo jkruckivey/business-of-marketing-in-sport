@@ -1,5 +1,12 @@
 # MODULE 0: Bridge-In - The $500 Million Paradox
-**Version:** 2.1.0 | **Last Updated:** 2026-01-13
+**Version:** 3.0.0 | **Last Updated:** 2026-01-25
+
+### Version 3.0.0 Changes
+- **REPLACED:** Element 4 (iFrame widget) → Native Uplimit MC questions (Elements 4A-4N)
+- **REDUCED:** Pre-assessment from 12 → 8 questions (removed SA questions, kept MC only)
+- **ADDED:** Element 4N - AI Chat Widget for results discussion
+- **MODIFIED:** Element 5 - Updated results interpretation text
+- **RENUMBERED:** Element 6 remains graphic novel
 
 ### Version 2.1.0 Changes
 - **RESTORED:** Graphic novel with consistent introduction pattern
@@ -17,8 +24,21 @@
 | 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload `week3-bridge-scenario.mp4` + VTT | Nike's $500M+ sponsorship paradox |
 | 2 | **◈ AI Roleplay** ◐ Recommended | Sponsorship ROI diagnostic | Configure in Uplimit | Reveal knowledge gaps |
 | 3 | **ⓘ Infobox (Callout)** ⬤ Required | The sponsorship problem statement | Type directly | Blue variant |
-| 4 | **⚙ iFrame Widget** ⬤ Required | Pre-Assessment Quiz | Embed `sponsorship-roi-pre-assessment.html` | 12-question diagnostic |
-| 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Personalized guidance |
+| 4A | **▬ Text** ⬤ Required | Pre-Assessment Introduction | Type directly | Diagnostic activity intro |
+| 4B | **▬ Text** ⬤ Required | Challenge 1: Prove Sponsorship Value | Type directly | WLO 3.1 context |
+| 4C | **❓ MC** ⬤ Required | Q1: Attribution Challenge | Configure in Uplimit | Nike ROI question |
+| 4D | **❓ MC** ⬤ Required | Q2: Sponsorship Scale | Configure in Uplimit | Sponsorship vs ticketing |
+| 4E | **▬ Text** ⬤ Required | Challenge 2: Calculate ROI | Type directly | WLO 3.3 context |
+| 4F | **❓ MC** ⬤ Required | Q3: CPM Basics | Configure in Uplimit | CPM definition |
+| 4G | **❓ MC** ⬤ Required | Q4: ROI Calculation | Configure in Uplimit | Calculate ROI % |
+| 4H | **▬ Text** ⬤ Required | Challenge 3: Evaluate Betting Economics | Type directly | WLO 3.2 context |
+| 4I | **❓ MC** ⬤ Required | Q5: Betting Growth Driver | Configure in Uplimit | Closed-loop attribution |
+| 4J | **❓ MC** ⬤ Required | Q6: Betting vs Traditional | Configure in Uplimit | Attribution uniqueness |
+| 4K | **▬ Text** ⬤ Required | Challenge 4: Design Activations | Type directly | WLO 3.4 context |
+| 4L | **❓ MC** ⬤ Required | Q7: Activation Definition | Configure in Uplimit | What is activation |
+| 4M | **❓ MC** ⬤ Required | Q8: Revenue Impact Calculation | Configure in Uplimit | Funnel calculation |
+| 4N | **💬 AI Chat** ◐ Recommended | Results Discussion Coach | Configure in Uplimit | Personalized learning path |
+| 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Score-based guidance |
 | 6 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "The New Revenue Frontier" | Embed PDF or images | Sports betting transformation story |
 
 ---
@@ -281,144 +301,458 @@ where to focus your learning energy this week.
 
 ---
 
-## Element 4: Pre-Assessment Widget (iFrame)
+## Element 4A: Pre-Assessment Introduction `[v3.0.0]`
 
-**Widget Name:** Sponsorship ROI Pre-Assessment
-**File:** `sponsorship-roi-pre-assessment.html`
-**Type:** iFrame Widget
-**Purpose:** Combined challenge preview + quiz assessing baseline sponsorship knowledge
-**Estimated Time:** 5-7 minutes
-**Learning Outcome:** Diagnostic assessment for WLOs 3.1-3.4
-
-### Widget Structure
-
-**Section 1: Challenge Preview (Non-Interactive Text)**
-
-Display this text at the top of the widget:
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
 
 ```markdown
-## Week 3 Challenge: Design a Sponsorship Activation Plan
+### Diagnostic Activity: Sponsorship ROI Pre-Assessment
 
-By Friday, you'll be able to:
+**Purpose: Discover What You Already Know**
 
-**Analyze** why sponsorship is sport's financial backbone (generates more than ticketing for most leagues)
+Before exploring Week 3's content, test yourself with 4 challenges. Each challenge presents a business problem you'll need to solve this week, followed by questions that reveal your current knowledge.
 
-**Calculate** sponsorship ROI using industry frameworks (CPM, engagement multipliers, conversion attribution)
+**Not graded—purely diagnostic.** Lower scores signal areas to emphasize this week. Higher scores indicate strong foundations to build upon.
 
-**Evaluate** sports betting as a growth driver (fastest-growing sponsorship category with closed-loop attribution)
-
-**Design** a 2-page strategy memo with ROI projections for a real sponsorship decision (your individual deliverable)
-
-This challenge requires understanding:
-- How brands measure sponsorship value (reach × engagement × conversion)
-- Why attribution is hard (you see jersey sponsorship in June, buy shoes in September)
-- How betting sponsorships differ (closed-loop attribution = every bet tracked)
-- What activations actually deliver ROI (turnkey packages across 5 channels)
-
-**Before you learn these frameworks, let's see what you already know...**
+*Time estimate: 7-10 minutes*
 ```
 
-**Section 2: Pre-Assessment Quiz (12 Questions)**
+---
 
-Format: Multiple choice + short answer
+## Element 4B: Challenge 1 - Prove Sponsorship Value `[v3.0.0]`
 
-**Question 1 (MC):**
-Nike pays $500M+/year in sports sponsorships. Why can't they easily prove ROI?
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
 
-a) They don't track impressions
-b) Attribution is difficult—consumers see sponsorships but buy products later ✓
-c) Sports sponsorships don't work anymore
-d) The CFO doesn't understand marketing
+```markdown
+---
 
-**Question 2 (MC):**
-Which revenue stream is larger for most professional leagues?
+### Challenge 1: Prove Sponsorship Value
 
-a) Ticketing
-b) Sponsorship ✓
-c) Merchandise
-d) Concessions
+**The Problem:** A CFO asks: "We spend $50M on sports sponsorships. What are we getting for it?" Can you explain why proving sponsorship ROI is fundamentally harder than proving digital advertising ROI?
 
-**Question 3 (MC):**
+**What you'll need to know:**
+- Why attribution is difficult (time lag, multiple touchpoints)
+- How sponsorship compares to other revenue streams
+- Basic measurement concepts (CPM, impressions)
+
+**Test yourself:** Can you explain why Nike struggles to prove their $500M+ sponsorship investment works?
+```
+
+---
+
+## Element 4C: MC Question 1 - Attribution Challenge `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+Nike pays $500M+/year in sports sponsorships worldwide. Why can't they easily prove ROI to their CFO?
+```
+
+**Options:**
+- A: They don't track impressions or media value
+- B: Attribution is difficult—consumers see sponsorships but buy products months later ✅
+- C: Sports sponsorships don't actually drive sales
+- D: CFOs don't understand marketing metrics
+
+**After Submission:**
+```
+The attribution gap is the fundamental challenge of sponsorship measurement. Unlike digital ads (click → purchase → track), sponsorship value is distributed across time and touchpoints.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! You see LeBron's Nike jersey in June. You buy shoes in September. Was that BECAUSE of the sponsorship? This time lag makes ROI proof extremely difficult.
+```
+
+**Feedback for incorrect answers:**
+```
+Nike tracks billions of impressions. The challenge isn't data collection—it's connecting those impressions to actual purchases when there's a months-long gap between exposure and buying.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4D: MC Question 2 - Sponsorship Scale `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+Which revenue stream is typically LARGER for most professional sports leagues?
+```
+
+**Options:**
+- A: Ticketing and live event revenue
+- B: Sponsorship and partnership revenue ✅
+- C: Merchandise and licensing revenue
+- D: Concessions and hospitality revenue
+
+**After Submission:**
+```
+Sponsorship has grown to exceed ticketing for most major leagues, making it the "financial backbone" of professional sports—even though fans often think tickets drive most revenue.
+```
+
+**Feedback for correct answers:**
+```
+Correct! Sponsorship typically generates 15-25% of revenue, often exceeding ticketing (especially post-pandemic). Understanding this scale is critical for sports business strategy.
+```
+
+**Feedback for incorrect answers:**
+```
+While ticketing feels most visible to fans, sponsorship has grown substantially. For many leagues, corporate partnerships now exceed gate receipts as a revenue source.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4E: Challenge 2 - Calculate ROI `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 2: Calculate ROI
+
+**The Problem:** A brand VP asks: "I paid $10M for this sponsorship. Was it worth it?" Can you use industry frameworks to quantify sponsorship value?
+
+**What you'll need to know:**
+- CPM (Cost Per Mille) calculation and benchmarks
+- The reach × engagement × conversion formula
+- How to calculate actual ROI percentage
+
+**Test yourself:** Can you calculate whether a $10M sponsorship generating 500M impressions is a good deal?
+```
+
+---
+
+## Element 4F: MC Question 3 - CPM Basics `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
 What does "CPM" mean in sponsorship measurement?
+```
 
-a) Cost Per Million impressions ✓
-b) Cost Per Match
-c) Corporate Partnership Model
-d) Customer Purchase Metric
+**Options:**
+- A: Cost Per Mille (cost per thousand impressions) ✅
+- B: Cost Per Match (price per game sponsored)
+- C: Corporate Partnership Model
+- D: Customer Purchase Metric
 
-**Question 4 (SA - 2-3 sentences):**
-A brand pays $10M/year for jersey sponsorship that generates 500 million impressions. How would you calculate if that's a good deal? (Don't worry about having the exact formula—explain your thinking)
+**After Submission:**
+```
+CPM (Cost Per Mille) is the foundational metric for valuing media exposure. "Mille" = thousand in Latin. A $20 CPM means paying $20 for every 1,000 impressions.
+```
 
-[Expected concepts: CPM calculation, compare to industry benchmarks, consider engagement quality not just quantity, factor in activation opportunities beyond logo]
+**Feedback for correct answers:**
+```
+Exactly! CPM lets you compare sponsorship value across different properties. If a jersey sponsor pays $10M for 500M impressions, that's a $20 CPM ($10M ÷ 500,000 thousands).
+```
 
-**Question 5 (MC):**
-Why is sports betting the fastest-growing sponsorship category?
+**Feedback for incorrect answers:**
+```
+CPM stands for "Cost Per Mille" (mille = thousand in Latin). It measures cost per 1,000 impressions and is the standard metric for comparing media value across platforms.
+```
 
-a) It's cheaper than traditional sponsorships
-b) It offers closed-loop attribution—every bet can be tracked to the sponsor ✓
-c) All sports fans love gambling
-d) Traditional sponsors are leaving sports
+**Points:** 1 | **Shuffle options:** Yes
 
-**Question 6 (MC):**
-What is a sponsorship "activation"?
+---
 
-a) The moment a brand signs the contract
-b) Marketing activities that bring the partnership to life beyond just logo placement ✓
-c) When fans buy products
-d) The press release announcing the deal
+## Element 4G: MC Question 4 - ROI Calculation `[v3.0.0]`
 
-**Question 7 (SA - 2-3 sentences):**
-FanDuel pays leagues/teams for "Official Sports Betting Partner" status. Beyond logo placement, what value does FanDuel get from these partnerships?
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
 
-[Expected concepts: in-game integrations, betting content during broadcasts, access to fan data, exclusive promotions, credibility/legitimacy, customer acquisition]
-
-**Question 8 (MC):**
-A brand sponsors an NBA team for $8M/year. They calculate:
-- Reach: 50M fans
-- Engagement: 3% interact with brand content
-- Conversion: 2% of engaged fans purchase ($100 average)
-
-What's the revenue impact?
-a) $1M (reach × engagement)
-b) $3M (50M × 3% × $2)
-c) $30M (50M × 3% × 2% × $100) ✓
-d) Cannot be calculated
-
-**Question 9 (SA - 2-3 sentences):**
-In your own words, why is sponsorship ROI harder to prove than digital advertising ROI?
-
-[Expected concepts: attribution gap, time lag between exposure and purchase, multiple touchpoints, brand equity vs. direct sales, can't isolate sponsorship impact from other marketing]
-
-**Question 10 (MC):**
-What makes betting sponsorships unique compared to traditional categories (beer, automotive)?
-
-a) Betting sponsors pay more money
-b) Betting offers immediate attribution—fan sees ad, places bet, sponsor tracks conversion ✓
-c) Betting is legal in all 50 states
-d) Traditional sponsors don't work anymore
-
-**Question 11 (MC):**
+**Question:**
+```
 A brand's sponsorship generates:
 - 100M impressions
 - 5% engagement rate (5M engaged fans)
 - $25M in attributed sales
 
 If they paid $10M for the sponsorship, what's the ROI?
-a) 50% ($5M profit / $10M cost)
-b) 150% ($15M profit / $10M cost) ✓
-c) 250% ($25M revenue / $10M cost)
-d) ROI cannot be calculated
+```
 
-**Question 12 (SA - 2-3 sentences):**
-Based on what you know right now, what's ONE thing you would include in a sponsorship activation plan to help prove ROI to a skeptical CFO?
+**Options:**
+- A: 50% ($5M profit ÷ $10M cost)
+- B: 150% ($15M profit ÷ $10M cost) ✅
+- C: 250% ($25M revenue ÷ $10M cost)
+- D: ROI cannot be calculated from this data
 
-[Expected concepts: trackable promo codes, engagement metrics, conversion tracking, A/B testing, surveys, closed-loop attribution, customer lifetime value analysis]
+**After Submission:**
+```
+ROI = (Revenue - Cost) ÷ Cost × 100. With $25M revenue and $10M cost, profit is $15M. ROI = $15M ÷ $10M = 150%.
+```
 
-**Quiz Scoring:**
-- 10-12 correct: Strong baseline understanding of sponsorship economics
-- 7-9 correct: Solid intuitions, but Week 3 will fill important ROI calculation gaps
-- 4-6 correct: Limited exposure to sponsorship measurement—focus on Modules 2-3 frameworks
-- 0-3 correct: Fresh slate! Week 3 will build your sponsorship ROI foundations from scratch
+**Feedback for correct answers:**
+```
+Perfect calculation! ROI = (Revenue - Cost) ÷ Cost. ($25M - $10M) ÷ $10M = 150%. This sponsorship returned $1.50 for every $1 invested.
+```
+
+**Feedback for incorrect answers:**
+```
+Remember: ROI = (Revenue - Cost) ÷ Cost × 100. First subtract the cost from revenue to get profit ($25M - $10M = $15M), then divide by cost ($15M ÷ $10M = 150%).
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4H: Challenge 3 - Evaluate Betting Economics `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 3: Evaluate Betting Economics
+
+**The Problem:** A league commissioner asks: "Why are betting companies suddenly our biggest sponsors?" Can you explain what makes betting partnerships different from traditional categories?
+
+**What you'll need to know:**
+- Why betting is the fastest-growing sponsorship category
+- What "closed-loop attribution" means
+- How betting differs from beer, automotive, and other traditional sponsors
+
+**Test yourself:** Can you explain why FanDuel can prove ROI but Budweiser can't?
+```
+
+---
+
+## Element 4I: MC Question 5 - Betting Growth Driver `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+Why is sports betting the fastest-growing sponsorship category?
+```
+
+**Options:**
+- A: Betting companies have larger marketing budgets than traditional sponsors
+- B: It offers closed-loop attribution—every bet can be tracked directly to the sponsor ✅
+- C: All sports fans want to gamble on games they watch
+- D: Traditional sponsors are abandoning sports partnerships
+
+**After Submission:**
+```
+Closed-loop attribution solves sponsorship's biggest problem: proving ROI. When a fan sees a FanDuel ad and places a bet, every dollar can be tracked directly to that sponsorship.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! FanDuel knows: "This fan saw our courtside sign, downloaded our app, and bet $500 this month." No other sponsor category can track the full journey from impression to purchase.
+```
+
+**Feedback for incorrect answers:**
+```
+The key differentiator is attribution. Betting sponsors can track every customer from ad impression to app download to actual bets placed—something beer and auto sponsors can't do.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4J: MC Question 6 - Betting vs. Traditional `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+What makes betting sponsorships unique compared to traditional categories like beer or automotive?
+```
+
+**Options:**
+- A: Betting sponsors pay significantly more money per deal
+- B: Betting offers immediate attribution—fan sees ad, places bet, sponsor tracks conversion ✅
+- C: Betting is legal in all 50 US states now
+- D: Traditional sponsors no longer see value in sports partnerships
+
+**After Submission:**
+```
+The fundamental difference is attribution speed and precision. Betting creates an immediate, trackable action that traditional sponsors can't replicate.
+```
+
+**Feedback for correct answers:**
+```
+Correct! When you see a Budweiser ad, you might buy beer next week at a grocery store—untraceable. When you see a FanDuel ad, you might bet immediately on your phone—every dollar tracked.
+```
+
+**Feedback for incorrect answers:**
+```
+While betting sponsors do pay well, the key advantage is attribution. Traditional sponsors can't connect their courtside sign to a beer purchase at Walmart. Betting sponsors can track every bet.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4K: Challenge 4 - Design Activations `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 4: Design Activations
+
+**The Problem:** A brand director says: "We paid for the logo on the jersey. Isn't that enough?" Can you explain why activation matters and what makes activations effective?
+
+**What you'll need to know:**
+- What "activation" means beyond logo placement
+- The 2-3× activation spending rule
+- How to design activations that prove ROI
+
+**Test yourself:** Can you name three activation tactics that go beyond putting a logo on a jersey?
+```
+
+---
+
+## Element 4L: MC Question 7 - Activation Definition `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+What is a sponsorship "activation"?
+```
+
+**Options:**
+- A: The moment a brand signs the sponsorship contract
+- B: Marketing activities that bring the partnership to life beyond logo placement ✅
+- C: When fans purchase products from the sponsor
+- D: The press release announcing the sponsorship deal
+
+**After Submission:**
+```
+Activation is everything a brand does to leverage their sponsorship beyond the basic logo exposure. The best sponsors spend 2-3× their rights fee on activation.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Activation includes fan experiences, social campaigns, retail promotions, athlete appearances, and branded content. Industry rule: spend $2-3 on activation for every $1 on rights.
+```
+
+**Feedback for incorrect answers:**
+```
+Activation happens AFTER signing the deal. It's the marketing activities—fan zones, social campaigns, athlete partnerships, retail promotions—that make the sponsorship actually work.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4M: MC Question 8 - Revenue Impact Calculation `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+A brand sponsors an NBA team for $8M/year. They calculate:
+- Reach: 50M fans exposed to brand
+- Engagement: 3% interact with brand content (1.5M fans)
+- Conversion: 2% of engaged fans purchase ($100 average order)
+
+What's the estimated revenue impact?
+```
+
+**Options:**
+- A: $1.5M (reach × engagement rate)
+- B: $3M (50M × 3% × $2 per fan)
+- C: $3M (1.5M engaged × 2% × $100) ✅
+- D: Cannot be calculated without more data
+
+**After Submission:**
+```
+The reach → engagement → conversion funnel: 50M reach × 3% = 1.5M engaged. 1.5M × 2% conversion = 30,000 purchases. 30,000 × $100 = $3M revenue.
+```
+
+**Feedback for correct answers:**
+```
+Perfect! You followed the funnel correctly. With $3M revenue on $8M cost, ROI is negative—which is why activation matters. Strong activations improve engagement and conversion rates.
+```
+
+**Feedback for incorrect answers:**
+```
+Follow the funnel: Start with reach (50M), apply engagement rate (3% = 1.5M engaged fans), apply conversion rate (2% = 30,000 buyers), multiply by average order ($100) = $3M.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4N: AI Chat Widget - Results Discussion Coach `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **AI Chat Widget** element
+2. Configure as follows:
+
+**Widget Name:** Pre-Assessment Results Coach
+
+**System Prompt:**
+```
+You are a supportive learning coach helping MBA students interpret their pre-assessment results for Week 3 of a sports business course. Students just completed an 8-question diagnostic quiz covering four learning outcomes:
+
+**WLO 3.1 - Sponsorship Economics:** Why sponsorship exceeds ticketing, the attribution challenge, why Nike can't easily prove ROI
+**WLO 3.2 - Betting as Growth Driver:** Closed-loop attribution, why betting is fastest-growing category, how betting differs from traditional sponsors
+**WLO 3.3 - ROI Calculation:** CPM basics, reach × engagement × conversion formula, calculating actual ROI percentage
+**WLO 3.4 - Activation Design:** What activation means, the 2-3× spending rule, designing activations that prove ROI
+
+**Your role:**
+1. Ask students how many questions they answered correctly (0-8)
+2. Provide personalized guidance based on their score:
+   - **0-2/8:** "You're starting fresh—perfect! This week's content will build strong foundations. Focus on Module 2's sponsorship frameworks and take time with each ROI calculator."
+   - **3-4/8:** "Solid baseline—you have some pieces of the puzzle. This week will help you connect sponsorship economics to ROI measurement. Pay special attention to the activation tools in Module 4."
+   - **5-6/8:** "Strong foundation! You're ready to dive deep into applications. Challenge yourself with the LIV Golf case analysis and Sponsorship Activation Builder."
+   - **7-8/8:** "Excellent! You already understand core concepts. This week, focus on nuanced applications—how betting changes sponsorship dynamics, why activation spending matters more than rights fees."
+3. If they ask about specific questions, provide brief clarifications using the WLO concepts above
+4. Encourage them that pre-assessments reveal learning opportunities, not deficiencies
+5. Direct them to Module 1 (Executive Perspectives) after discussion
+
+**Tone:** Supportive, encouraging, concrete (use specific examples), MBA-level (business-focused not academic)
+
+**Do NOT:**
+- Provide quiz answers directly (if they ask, say "The quiz helps you self-diagnose, but I can discuss concepts")
+- Overwhelm them with too much content (keep responses 2-3 sentences)
+- Make them feel bad about low scores (frame as opportunities)
+```
+
+**Welcome Message:**
+```
+Hi! I'm here to help you interpret your pre-assessment results and plan your learning path for Week 3. How many questions did you answer correctly out of 8? Or if you have questions about specific concepts from the quiz, I'm happy to discuss them!
+```
+
+**Show System Prompt to User:** No
 
 ---
 

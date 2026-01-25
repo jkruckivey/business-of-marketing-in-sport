@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
+            --color-accent: #6b9085;
+            --color-accent-light: #c0d1cd;
             --color-neutral-50: #fafafa;
             --color-neutral-100: #f5f5f5;
             --color-neutral-200: #e5e5e5;
@@ -20,6 +22,7 @@
             --color-neutral-800: #262626;
             --color-neutral-900: #171717;
             --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --border-radius: 8px;
         }
 
         * {
@@ -32,7 +35,7 @@
             font-family: var(--font-family-primary);
             background: white;
             color: var(--color-neutral-800);
-            padding: 24px;
+            padding: 1.5rem;
             line-height: 1.6;
         }
 
@@ -41,19 +44,24 @@
             margin: 0 auto;
         }
 
+        .widget-box {
+            background: var(--color-neutral-50);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+        }
+
         h1 {
-            font-size: 1.75rem;
+            font-size: 1.25rem;
             font-weight: 700;
-            text-align: center;
-            margin-bottom: 8px;
+            margin-bottom: 0.25rem;
             color: var(--color-neutral-900);
         }
 
         .subtitle {
-            text-align: center;
-            color: var(--color-neutral-500);
-            margin-bottom: 24px;
-            font-size: 0.95rem;
+            color: var(--color-neutral-600);
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
         }
 
         /* Scenario Tabs */
@@ -250,7 +258,7 @@
         /* Key Insight */
         .key-insight {
             background: var(--color-neutral-50);
-            border-left: 4px solid var(--color-neutral-600);
+            border-left: 4px solid var(--color-accent);
             padding: 16px;
             margin-top: 20px;
             border-radius: 0 8px 8px 0;
@@ -291,6 +299,7 @@
 </head>
 <body>
     <div class="container">
+        <div class="widget-box">
         <h1>Revenue Ecosystem Cascade</h1>
         <p class="subtitle">How one strategic investment amplifies across all revenue streams</p>
 
@@ -622,6 +631,7 @@
                 <div class="key-insight-title">Fastest-Growing Revenue Stream (With Risk)</div>
                 <div class="key-insight-text">Betting revenue grew 40% annually (2020-2024). The media synergy is key: live betting increases broadcast viewing time by 18-25%, which networks pay premium for. However, regulatory risk is real—38 US states have legalized, but federal regulation remains uncertain. Early movers secured $5-20M annual deals before market saturation.</div>
             </div>
+        </div>
         </div>
     </div>
 

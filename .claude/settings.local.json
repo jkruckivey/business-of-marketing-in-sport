@@ -82,7 +82,10 @@
       "mcp__executeautomation-playwright-server__playwright_screenshot",
       "mcp__executeautomation-playwright-server__playwright_click",
       "mcp__executeautomation-playwright-server__playwright_evaluate",
-      "mcp__executeautomation-playwright-server__playwright_close"
+      "mcp__executeautomation-playwright-server__playwright_close",
+      "Bash(python -c:*)",
+      "Bash(dir:*)",
+      "Bash(powershell -Command:*)"
     ],
     "deny": [],
     "ask": [],

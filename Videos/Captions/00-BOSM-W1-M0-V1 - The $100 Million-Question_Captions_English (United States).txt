@@ -1,0 +1,97 @@
+1
+00:00:05,090 --> 00:00:08,330
+[Auto-generated transcript. Edits may have been applied for clarity.]
+I'm Matthew Diamond and I'll be your instructor for this course.
+
+2
+00:00:08,870 --> 00:00:12,530
+I want to start this course with a problem that's kept me up at night.
+
+3
+00:00:13,070 --> 00:00:16,070
+Imagine you're the GM of an NHL team.
+
+4
+00:00:16,400 --> 00:00:24,530
+You just signed Connor McDavid, the best player in hockey, to a $100 million, eight year contract.
+
+5
+00:00:25,160 --> 00:00:28,250
+That's $12.5 million per year.
+
+6
+00:00:28,850 --> 00:00:34,670
+Your CFO tracks the immediate impacts. Ticket sales jump $5 million.
+
+7
+00:00:35,000 --> 00:00:40,400
+Jersey sales spike $3 million. That's $8 million in new revenue.
+
+8
+00:00:41,060 --> 00:00:45,320
+But your board looks at these numbers and asks the obvious question.
+
+9
+00:00:46,240 --> 00:00:51,790
+Why did we just lose $4.5 million per year on this deal?
+
+10
+00:00:51,910 --> 00:01:00,220
+If you're asking that question, you're measuring the wrong things because Connor McDavid isn't worth $8 million for your organization.
+
+11
+00:01:00,760 --> 00:01:04,060
+He's worth 30 to $40 million per year.
+
+12
+00:01:04,510 --> 00:01:12,550
+The problem isn't the numbers. The problem is understanding how sport revenue works differently than almost any other business.
+
+13
+00:01:13,520 --> 00:01:20,690
+There's a revenue ecosystem at play here, interdependencies that your CFO spreadsheet will never capture.
+
+14
+00:01:21,260 --> 00:01:23,899
+Media deals that hinge on star power.
+
+15
+00:01:23,900 --> 00:01:31,760
+Sponsorships that activate around marquee players, betting handles that spike when the best player in the world takes the ice.
+
+16
+00:01:31,970 --> 00:01:35,360
+This week, you're going to learn how to see that ecosystem.
+
+17
+00:01:36,050 --> 00:01:39,800
+You'll map five major revenue streams in professional sport.
+
+18
+00:01:40,430 --> 00:01:50,620
+You'll understand why they're interdependent, and by the end, you'll be able to defend that $100 million contract to a skeptical board with numbers.
+
+19
+00:01:50,630 --> 00:01:57,470
+They can't argue it. But first, I want to know, do you already have the knowledge to solve this problem?
+
+20
+00:01:57,980 --> 00:02:03,350
+Can you explain where that missing 22 to $32 million comes from?
+
+21
+00:02:03,950 --> 00:02:07,880
+Right now, before you learn anything this week, test yourself.
+
+22
+00:02:08,300 --> 00:02:11,570
+Take the diagnostic exercise that follows this video.
+
+23
+00:02:12,140 --> 00:02:17,930
+Be honest. Reveal your knowledge gaps now so we can fill them together.
+
+24
+00:02:18,620 --> 00:02:22,700
+Let's find out what you already know and what you're about to discover.
+

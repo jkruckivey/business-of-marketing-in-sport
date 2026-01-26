@@ -1,5 +1,8 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 1
-**Version:** 2.3.0 | **Last Updated:** 2026-01-21
+**Version:** 2.4.0 | **Last Updated:** 2026-01-25
+
+### Version 2.4.0 Changes
+- **ADDED:** Element 5A - Rogers NHL Deal video (Week 2 preview, 1:44)
 
 ### Version 2.3.0 Changes
 - **MODIFIED:** Element 2A - CFL City Selector simplified to reference tool (removed rationale textarea and export, students submit via LMS)
@@ -27,6 +30,7 @@
 | 3 | **ⓘ Infobox (Assessment)** ⬤ Required | Milestone 1 Brief | Type directly | Purple variant, 15 points |
 | 4 | **📤 File Response** ⬤ Required | Milestone 1 Submission | Configure in Uplimit | File upload |
 | 5 | **ⓘ Infobox (Next Steps)** ⬤ Required | What's Next | Type directly | Green variant, transition to Week 2 |
+| 5A | **▶ Video** ⬤ Required | Rogers NHL Deal (1:44) | Upload MP4 + SRT | W1-M7-V1 - Week 2 preview case |
 | 6 | **⊞ Details** ◐ Recommended | Recommended Readings | Type directly | Accordion, external industry sources |
 
 ---
@@ -271,6 +275,41 @@ Next week goes deep on the largest and most dynamic revenue stream: media rights
 
 See you in Week 2!
 ```
+
+---
+
+## Element 5A: Video - Rogers NHL Deal `[v2.4.0]`
+
+**Uplimit Implementation:**
+1. Select **Video** element
+2. Upload video file
+3. Upload caption file (SRT format)
+
+**Video Details:**
+- **File:** `04-BOSM-W1-M7-V1 - Rogers NHL Deal.mp4`
+- **Caption File:** `04-BOSM-W1-M7-V1 - Rogers NHL Deal_Captions_English (United States).srt`
+- **Duration:** 1:44
+- **Purpose:** Week 2 preview—introduces the Rogers/NHL case that students will analyze in depth
+
+**Transcript Summary:**
+November 2013: Rogers Communications paid $5.2 billion for exclusive Canadian NHL rights—12 years, all platforms, all games. The largest sports media deal in Canadian history.
+
+**Rogers' Three Strategic Goals:**
+1. **Defend cable subscribers** — Believed NHL rights would prevent cord cutting. Reality: Canadian TV subscriptions declined significantly during contract period.
+2. **Build streaming dominance** — Projected 1M+ Sportsnet Now subscribers. Reality: Reached only 450,000 by 2024, missing targets substantially.
+3. **Brand positioning** — Become Canada's #1 sports network. Partial success: Built brand equity, though profitability questions remained.
+
+**Key Challenges:**
+- Annual rights fees escalated from $300M to $500M across contract
+- Streaming platform didn't generate sufficient offsetting revenue
+- COVID impact (2020-21): Full rights fees paid with minimal live content
+
+**Lessons Learned:**
+- Content alone isn't enough—streaming experience and platform architecture matter
+- Long-term deals require flexibility clauses for market disruptions
+- Media landscape disruption creates risks for fixed-price, multi-year commitments
+
+**Week 2 Connection:** "You'll analyze this deal in depth and examine Rogers' strategic options as the market evolves."
 
 ---
 

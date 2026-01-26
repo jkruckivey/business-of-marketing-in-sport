@@ -1,7 +1,11 @@
 # Five Revenue Streams That Power Sports
-**Version:** 2.0.0 | **Last Updated:** 2026-01-22
+**Version:** 2.1.0 | **Last Updated:** 2026-01-25
 
 **Purpose:** Provide foundational knowledge about each revenue stream through INTERACTIVE DISCOVERY and hands-on manipulation (supports WLO 1.1, 1.2, 1.3)
+
+### Version 2.1.0 Changes
+- **ADDED:** Element 18A - Revenue Sharing Models video (W1-M5-V1) between Ticketing and Sponsorship sections
+- **RATIONALE:** Bridges team-level streams (Media, Ticketing) with league-wide economics; explains why merchandising is centralized
 
 ### Version 2.0.0 Changes
 - **REPLACED:** Element 21 - Sponsorship ROI Calculator (iFrame) → Activation Examples (markdown)
@@ -60,10 +64,10 @@
 **Content Summary:**
 - **Total text:** ~1,000 words in micro-readings (100-120 words each, ~1 minute each)
 - **Deep-dive readings:** ~2,400 words in 4 optional Details accordions (Elements 5B, 12B, 20B, 23B)
-- **Total video:** 4 minutes (2 videos - one at start, one at midpoint for mental break)
+- **Total video:** 5.5 minutes (3 videos - two at start covering streams + sharing models, one at midpoint for mental break)
 - **Interactive exercises:** 8 exercises, ~25 minutes total hands-on engagement
 - **Visual elements:** 3 images, 1 table, 3 infoboxes, 1 vertical list, 1 tiles, 5 details accordions
-- **Total time:** ~35 minutes core + ~15 minutes optional deep-dive readings
+- **Total time:** ~37 minutes core + ~15 minutes optional deep-dive readings
 
 ### Section 1: Introduction & Overview (Elements 1-4B)
 
@@ -73,7 +77,7 @@
 | 2 | **▶ Video** ⬛ Required | 5 Revenue Streams (animated) | 2 min | - | Upload `week1-video1-revenue-streams.mp4` |
 | 3 | **⊞ Vertical List** ⬛ Required | 5 streams at a glance | 1 min | - | Type directly |
 | 4 | **⚙ iFrame Widget** ⬛ Required | **Revenue Streams Explorer** | 3 min | - | Embed `revenue-streams-explorer.html` |
-| 4A | **❓ MC Question** ⬛ ediRequired | Largest revenue stream | 1 min | - | Configure in Uplimit |
+| 4A | **❓ MC Question** ⬛ Required | Largest revenue stream | 1 min | - | Configure in Uplimit |
 | 4B | **❓ MC Question** ⬛ Required | Growth vs. size tradeoff | 1 min | - | Configure in Uplimit |
 
 
@@ -668,7 +672,7 @@ You've now seen why media rights negotiations are so complex. The "right" answer
 
 Leagues increasingly face a critical strategic question: traditional TV with guaranteed revenue, or streaming with global reach and uncertain returns? The NHL, NBA, and NFL have all navigated this decision—and now you'll experience the same pressure and uncertainty that commissioners face during negotiations.
 
-In this decision game, you step into the role of NHL commissioner with two competing offers on your desk. ESPN offers the traditional path: $8 billion over 10 years, guaranteed, advertising-based. Apple TV+ offers the disruptive path: $10 billion over 10 years, but subscriber-dependent with global reach potential. After making your choice, you'll watch 5-year financial projections unfold under different market scenarios—cord-cutting accelerating, streaming surging, or markets stabilizing. You'll discover firsthand why "hybrid deals" became the industry standard and why there's rarely a clear "right" answer.
+In this decision game, you step into the role of NHL commissioner with three competing offers on your desk: ESPN Traditional ($8B/10 years, guaranteed ad revenue), Apple TV+ ($10B/10 years, subscriber-based with global reach), or a Hybrid Split ($9B/10 years, combining both approaches). After making your choice, you'll watch 10-year financial projections unfold under different market scenarios—cord-cutting accelerating, streaming surging, or markets stabilizing. You'll discover firsthand why "hybrid deals" became the industry standard and why there's rarely a clear "right" answer.
 
 **What you'll discover:**
 
@@ -682,16 +686,17 @@ In this decision game, you step into the role of NHL commissioner with two compe
 
 ---
 
-**Widget Purpose:** Choose between traditional TV vs. streaming offers to understand strategic trade-offs.
+**Widget Purpose:** Choose between traditional TV, streaming, or hybrid offers to understand strategic trade-offs.
 
 **Widget Status:** ✅ Built and Ready
 
-**Scenario:** You're the NHL commissioner. Two offers:
+**Scenario:** You're the NHL commissioner. Three offers:
 
-- **ESPN (Traditional):** $8B over 10 years, guaranteed, ad-based
-- **Apple TV+ (Streaming):** $10B over 10 years, subscription-based, global reach
+- **ESPN (Traditional):** $8B over 10 years, guaranteed, ad-based, US/Canada only
+- **Apple TV+ (Streaming):** $10B over 10 years, subscription-based, global reach (190+ countries)
+- **Hybrid Split:** $9B over 10 years, ESPN national games + Apple streaming rights
 
-**Decision:** Students choose and see 5-year projection
+**Decision:** Students choose and see 10-year projection under 3 market scenarios (Base Case, Streaming Booms, Cord-Cutting Accelerates)
 **Learning:** Why leagues split rights packages (hedge strategy)
 
 **Uplimit Implementation:**
@@ -779,7 +784,7 @@ D) Revenue sharing only applies to international broadcast deals
 
 ---
 
-### Section 3: Ticketing Economics (Elements 12-18)
+### Section 3: Ticketing Economics (Elements 12-18A)
 
 | Order | Element | Content/Purpose | Time | Words | Source |
 |-------|---------|----------------|------|-------|--------|
@@ -790,6 +795,7 @@ D) Revenue sharing only applies to international broadcast deals
 | 16 | **⚙ iFrame Widget** ▢ Optional (Phase 3) | **Stadium Revenue Optimizer** | 4 min | - | Embed `stadium-revenue-optimizer.html` |
 | 17 | **ⓘ Infobox** ▣ Recommended | Premium seat economics insight | 1 min | 50 | Type directly |
 | 18 | **▤ Details** ▢ Optional | PSL case study (SoFi Stadium) | 1 min | - | Type directly |
+| 18A | **▶ Video** ⬛ Required | Revenue Sharing Models | 1.5 min | - | Upload `03-BOSM-W1-M5-V1 - Revenue Sharing Models.mp4` |
 
 #### Element 12: Ticketing Basics Text
 **Copy this markdown directly into Uplimit:**
@@ -1133,6 +1139,34 @@ Fans pay thousands just for the *right* to buy expensive tickets. This creates a
 **Beyond the Ticket:**
 Total non-ticket revenue can reach **$40-50 per attendee** (concessions $15-30, parking $20-100, merchandise). This turns a $100 ticket into **$140-150 in total venue spending**—why teams view declining attendance as a crisis affecting the entire in-venue ecosystem.
 ```
+
+---
+
+#### Element 18A: Video - Revenue Sharing Models `[v2.1.0]`
+
+**Uplimit Implementation:**
+1. Select **Video** element
+2. Upload video file
+3. Upload caption file (SRT format)
+
+**Video Details:**
+- **File:** `03-BOSM-W1-M5-V1 - Revenue Sharing Models.mp4`
+- **Caption File:** `03-BOSM-W1-M5-V1 - Revenue Sharing Models_Captions_English (United States).srt`
+- **Duration:** 1:32
+- **Video Title:** "Revenue Sharing Models"
+- **Video Caption:** "How NFL, NHL, and Premier League distribute revenue—and why it matters for competitive balance"
+
+**Pedagogical Note:** This video bridges the team-level revenue streams (Media Rights, Ticketing) with the league-wide economics that affect Sponsorship and Merchandising. Understanding revenue sharing explains why merchandising is centralized for competitive balance.
+
+**Transcript Summary:**
+Unlike most industries, professional sports leagues need their competitors to thrive—because competitive balance creates a better product and makes everyone more money. This is the logic behind revenue sharing.
+
+**Three Models Compared:**
+- **NFL Maximum Sharing (60%):** Nearly all revenue shared equally. Result: Green Bay Packers (population 105,000) generates similar revenue to the New York Giants. Highest competitive parity in sports.
+- **NHL Moderate Sharing (50%):** National media, streaming, and merchandise shared; local media and tickets stay with teams; plus a revenue sharing pool for struggling teams. Complication: Canadian teams earn CAD but pay players in USD—currency fluctuations create major challenges.
+- **Premier League Tier Distribution:** TV revenue split three ways—50% equal, 25% based on finishing position, 25% based on TV appearances. Rewards success while maintaining baseline competitiveness.
+
+**Why This Matters:** Revenue sharing limits strategic options, creates governance tensions, and affects team valuations.
 
 ---
 

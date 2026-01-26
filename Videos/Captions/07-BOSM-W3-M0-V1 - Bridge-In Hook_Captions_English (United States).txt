@@ -1,0 +1,57 @@
+1
+00:00:04,800 --> 00:00:09,210
+[Auto-generated transcript. Edits may have been applied for clarity.]
+I want to start week three with a problem that haunts every CMO I know.
+
+2
+00:00:09,660 --> 00:00:14,610
+Major brands spend hundreds of millions of dollars annually on sports sponsorships globally.
+
+3
+00:00:15,000 --> 00:00:22,200
+For example, Nike's comprehensive sports sponsorship portfolio spans every league, athlete and major property you can think of.
+
+4
+00:00:22,620 --> 00:00:26,760
+Your CFO looks at this budget and asks, what are we getting for this investment?
+
+5
+00:00:27,180 --> 00:00:28,560
+So you show them the metrics.
+
+6
+00:00:28,590 --> 00:00:36,840
+Billions of social media impressions, billions of TV viewers reached high brand awareness among sports fans, and they ask the killer follow up.
+
+7
+00:00:37,050 --> 00:00:42,180
+How many shoes did that sell? Silence. Because here's the uncomfortable truth.
+
+8
+00:00:42,540 --> 00:00:47,310
+Most sponsorship ROI is fuzzy. We measure impressions, not conversions.
+
+9
+00:00:47,760 --> 00:00:53,790
+But something changed in 2018. Sports betting legalization created sponsors who can measure conversion.
+
+10
+00:00:53,910 --> 00:00:56,310
+FanDuel. DraftKings. Bet MGM.
+
+11
+00:00:56,730 --> 00:01:03,270
+When a betting operator sponsors a team, they know exactly how many people downloaded the app, placed a bet, and became customers.
+
+12
+00:01:03,690 --> 00:01:07,530
+That attribution loop changes everything about sponsorship valuation.
+
+13
+00:01:07,800 --> 00:01:14,010
+This week, you'll learn to think like both sides the brand trying to prove ROI and the betting operator who actually tan.
+
+14
+00:01:14,250 --> 00:01:19,470
+By the end of this week, you'll design an activation plan that answers the Cfo's question with data, not hope.
+

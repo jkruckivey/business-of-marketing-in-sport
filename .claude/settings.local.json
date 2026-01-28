@@ -87,7 +87,8 @@
       "Bash(git pull:*)",
       "Bash(python -c:*)",
       "Bash(dir:*)",
-      "Bash(powershell -Command:*)"
+      "Bash(powershell -Command:*)",
+      "Bash(findstr:*)"
     ],
     "deny": [],
     "ask": [],

@@ -1,16 +1,21 @@
 ## MODULE 3: Media Rights Framework (V3 INTERACTIVE-FIRST REDESIGN)
-**Version:** 1.8.0 | **Last Updated:** 2026-01-23
+**Version:** 1.9.0 | **Last Updated:** 2026-01-26
 
 **Purpose:** Provide foundational knowledge about media economics and rights valuation through interactive exploration (supports WLO 2.1, 2.2, 2.3)
 
-### Version 1.8.0 Changes
+### Version 1.9.0 Changes
 - **SIMPLIFIED:** Element 12 - Replaced `engagement-value-chain-builder.html` with `engagement-strategy-explorer.html`
 - **CHANGED:** From free-form checkbox builder (64 combinations) to bounded strategy comparison (4 strategies)
 - **RATIONALE:** Follows Week 1 philosophy - bounded choices teach principles better than infinite options
 
+### Version 1.8.0 Changes
+- **UPDATED:** Widget introductions to match redesigned compact widgets
+- **SIMPLIFIED:** Platform Economics Visualizer reduced from 11 to 6 sliders (3 per model)
+- **UPDATED:** Time estimates reduced for more compact widget designs
+
 ### Version 1.7.0 Changes
-- **UPDATED:** Element 12 - Engagement Value Chain Builder now ✅ Built with iFrame embed
-- **ADDED:** Help icons with tooltips, expanded Strategic Insights, chart notes for accessibility
+- **RESTORED:** Tools 1, 2, 3 from archive - all 4 interactive widgets now built
+- **UPDATED:** Status for Audience Size Calculator, Exclusivity Bidding Simulator, Platform Economics Visualizer
 
 ### Version 1.6.0 Changes
 - **ADDED:** Element 13 - Media Rights Framework Reflection as proper Text Response element
@@ -32,17 +37,17 @@
 | 1 | **Text** ⬤ Required | Why media rights matter (120 words) | 1 min | Embedded markdown below |
 | 2 | **Video** ◐ Recommended | Media rights valuation overview | 2 min | week2-video1-valuation-framework.mp4 |
 | 3 | **Vertical List** ⬤ Required | 5 valuation factors at a glance | 1 min | Type directly |
-| 3A | **Text** ⬤ Required | Widget Introduction - Audience Size Calculator | 2 min | Structured intro |
-| 4 | **🎮 iFrame** ◐ Recommended | Tool 1: Audience Size Calculator | 4 min | Phase 3 tool (NEEDS TO BE BUILT) |
+| 3A | **Text** ⬤ Required | Widget Introduction - Audience Size Calculator | 1 min | Structured intro |
+| 4 | **🎮 iFrame** ◐ Recommended | Tool 1: Audience Size Calculator | 3 min | ✅ Built - audience-size-calculator.html |
 | 5 | **Text** ⬤ Required | Exclusivity & competition dynamics (150 words) | 1 min | Embedded markdown below |
-| 5A | **Text** ⬤ Required | Widget Introduction - Exclusivity Bidding Simulator | 2 min | Structured intro |
-| 6 | **🎮 iFrame** ◐ Recommended | Tool 2: Exclusivity Bidding Simulator | 3 min | Phase 2 tool (NEEDS TO BE BUILT) |
+| 5A | **Text** ⬤ Required | Widget Introduction - Exclusivity Bidding Simulator | 1 min | Structured intro |
+| 6 | **🎮 iFrame** ◐ Recommended | Tool 2: Exclusivity Bidding Simulator | 2 min | ✅ Built - exclusivity-bidding-simulator.html |
 | 7 | **Infobox (Note)** ⬤ Required | Key insight: Appointment viewing | 1 min | Yellow variant |
 | 7A | **📝 Practice Quiz** ⬤ Required | Media Valuation Check (4 questions) | 3 min | Configure in Uplift |
 | 8 | **Text** ⬤ Required | Linear TV vs. Streaming intro (120 words) | 1 min | Embedded markdown below |
 | 9 | **Table** ⬤ Required | Platform economics comparison | 1 min | Type directly |
-| 9A | **Text** ⬤ Required | Widget Introduction - Platform Economics Visualizer | 2 min | Structured intro |
-| 10 | **🎮 iFrame** ◐ Recommended | Tool 3: Platform Economics Visualizer | 4 min | Phase 2 tool (NEEDS TO BE BUILT) |
+| 9A | **Text** ⬤ Required | Widget Introduction - Platform Economics Visualizer | 1 min | Structured intro |
+| 10 | **🎮 iFrame** ◐ Recommended | Tool 3: Platform Economics Visualizer | 3 min | ✅ Built - platform-economics-visualizer.html |
 | 10A | **📝 Practice Quiz** ⬤ Required | Platform Economics Check (4 questions) | 3 min | Configure in Uplift |
 | 11 | **Text** ⬤ Required | Fan engagement monetization (150 words) | 1 min | Embedded markdown below |
 | 11A | **Text** ⬤ Required | Widget Introduction - Engagement Value Chain Builder | 2 min | Structured intro |
@@ -51,10 +56,10 @@
 | 13 | **📝 Text Response** ⬤ Required | Media Rights Framework Reflection | 3 min | 50-word minimum, 5 pts |
 
 **V3 Metrics:**
-- **Total Time:** 12-15 minutes (down from 15-18 min in V1)
-- **Reading Time:** 5-6 minutes (down from 15-18 min)
-- **Interactive Time:** 14 minutes (up from 0 min)
-- **Active Engagement:** 60% (up from 10%)
+- **Total Time:** 10-12 minutes (down from 15-18 min in V1)
+- **Reading Time:** 4-5 minutes (down from 15-18 min)
+- **Interactive Time:** 11 minutes (up from 0 min)
+- **Active Engagement:** 65% (up from 10%)
 
 ---
 
@@ -196,11 +201,10 @@ You're a media rights consultant advising a sports league entering negotiations 
 
 ## How the Calculator Works
 
-1. **Select a League:** Choose NFL, NHL, NBA, MLS, Premier League, or create a custom league
-2. **Input Audience Data:** Average viewers per game (millions), number of games per season
-3. **Set Demographics:** Percentage of viewers in "coveted demo" (18-49, $75K+ income)
-4. **Choose CPM:** Advertising cost per thousand viewers (varies by sport: $30-$80)
-5. **See Results:** Total reach, premium multiplier, advertising revenue potential, estimated rights value
+1. **Select a League:** Choose NFL, NHL, NBA, MLS, or Premier League presets
+2. **Adjust Sliders:** Fine-tune audience size, game count, demographics, and CPM
+3. **See Results:** Total reach, demographic multiplier, ad revenue, and estimated rights value update instantly
+4. **Compare:** Bar chart shows your selection vs. NFL baseline
 
 ## Strategic Considerations
 
@@ -233,25 +237,25 @@ In this interactive activity, you'll calculate the estimated media rights value 
 - Why the NFL commands $10B annually while MLS gets $250M despite similar game counts
 - That rights valuation is formula-driven, not arbitrary—you can calculate it yourself
 
-**Time commitment:** 4-5 minutes
+**Time commitment:** 3-4 minutes
 **Learning outcomes practiced:** WLO 2.1 (Explore media rights valuation frameworks)
 
 ---
 
 **🎮 Tool Purpose:** Demonstrate how audience size and demographics drive rights valuations using real league examples.
 
-**Status:** ⭕ Phase 3 tool - NEEDS TO BE BUILT (4-5 hours estimated)
+**Status:** ✅ Built - `audience-size-calculator.html`
 
 **How It Works:**
-1. Select league: NFL, NHL, NBA, MLS, Premier League, or Custom
-2. Input fields auto-populate with real data (or allow custom):
+1. Select league preset: NFL, NHL, NBA, MLS, or Premier League
+2. Adjust 4 sliders (pre-filled with real data):
    - Average viewership per game (millions)
    - Number of games per season
    - Coveted demo % (18-49 with $75K+ income)
    - CPM (cost per thousand viewers) advertising rate
 3. Real-time calculations display:
    - Total audience reach (viewers × games)
-   - Premium audience value (demo multiplier)
+   - Demographic multiplier
    - Advertising revenue potential
    - Estimated annual rights value ($M)
    - Per-game rights value
@@ -426,10 +430,9 @@ You're the NHL commissioner in 2025. Canadian national rights are up for renewal
 
 ## How the Simulator Works
 
-1. **Review the Bids:** See each bidder's offer, their strategic motivations, and financial constraints
-2. **Analyze Trade-offs:** Exclusivity premium vs. total revenue, partner reliability vs. growth potential
-3. **Choose Your Strategy:** Accept Apple's exclusive $700M, or split across all three for $1.15B total
-4. **See Consequences:** Each choice triggers different 5-year outcomes (subscriber access, revenue stability, partner satisfaction)
+1. **Reveal Bids:** Click to see all three bidders' offers and their rationales
+2. **Choose Your Strategy:** Accept Apple's exclusive $700M, or split across all three for $1.15B total
+3. **See Analysis:** Each choice shows strategic pros/cons and real-world parallels (NFL split model)
 
 ## Strategic Considerations
 
@@ -462,14 +465,14 @@ In this simulation, you're the NHL commissioner in 2025 facing three bidders for
 - The hidden costs of split rights packages (coordination complexity, partner conflicts)
 - Why leagues sometimes choose lower bids for strategic reasons (accessibility, partner reliability)
 
-**Time commitment:** 5-6 minutes
+**Time commitment:** 3-4 minutes
 **Learning outcomes practiced:** WLO 2.1 (Explore media rights valuation and competitive dynamics)
 
 ---
 
 **🎮 Tool Purpose:** Let students experience competitive bidding dynamics and understand why exclusive rights command premium prices.
 
-**Status:** ⭕ Phase 2 tool - NEEDS TO BE BUILT (5-6 hours estimated)
+**Status:** ✅ Built - `exclusivity-bidding-simulator.html`
 
 **How It Works:**
 1. **Scenario:** You are NHL commissioner in 2025. Three bidders want Canadian national rights:
@@ -511,40 +514,34 @@ function calculatePackageValue(exclusiveOption, splitOptions) {
 - ✅ High contrast mode
 - ✅ Focus indicators on interactive cards
 
-**Implementation Notes:** Card-based interface with reveal animation, comparison logic, strategic insights panel. Preset scenarios for NHL, NFL, Premier League.
+**Implementation Notes:** Card-based interface with reveal animation, comparison logic, strategic insights panel. NHL Canadian rights scenario with three bidders (Rogers, DAZN, Apple TV+).
 
 ### Element 7A: Details - Tool Instructions (Expandable)
 
 **Details Element Title:** `Need help? How to use this simulator`
 
 ```
-This simulator shows why exclusive rights cost 2-3x more than shared rights — and when that premium is worth paying.
+This simulator shows why split packages generate more total revenue than exclusive deals — the key insight behind modern sports media negotiations.
 
 **Step-by-step:**
 
-1. **Set up the auction:**
-   - Choose a property (NHL Canadian rights, NFL Sunday package, etc.)
-   - Select number of bidders (2-5 competing networks/streamers)
-   - Set your budget ceiling
+1. **Review the scenario:** You're the NHL Commissioner. Canada's NHL rights are expiring and three companies want them: Rogers, DAZN, and Apple TV+.
 
-2. **Choose your bid strategy:**
-   - **Aggressive:** Bid high early to scare off competitors
-   - **Patient:** Wait for others to drop out, then bid
-   - **Value-based:** Set a max price based on your ROI model and don't exceed it
+2. **Reveal the bids:** Click "Reveal All Bids" to see what each company is willing to pay annually. Notice how each bidder has different motivations and risk tolerance.
 
-3. **Watch the auction unfold** — other bidders respond based on their strategies and budgets
+3. **Make your decision:** Choose between two deal structures:
+   - **Exclusive Deal ($700M/yr):** Accept Apple's highest bid for ALL rights
+   - **Split Package ($1.15B/yr):** Divide rights among multiple partners (Rogers regional + DAZN national + Apple streaming)
 
-4. **See the outcome:**
-   - Did you win? At what price?
-   - What's your projected ROI based on the price you paid?
-   - How did exclusivity vs. shared rights affect the final price?
+4. **Review the analysis:** After choosing, read the strategic analysis explaining the trade-offs of your decision.
 
 **What to notice:**
-- Adding just one more bidder can increase final price by 30-50%
-- Tech giants (Apple, Amazon) often bid above "rational" ROI because they value subscriber acquisition
-- Exclusive rights create winner-take-all dynamics — second place gets nothing
+- The split package generates 64% MORE revenue than the exclusive deal
+- Each partner pays a premium for THEIR slice of rights
+- This mirrors the NFL model (CBS, FOX, NBC, ESPN, Amazon all pay separately)
+- Exclusive deals are simpler but leave money on the table
 
-**If you're stuck:** Run the same auction twice — once with 2 bidders, once with 4. Compare final prices.
+**Key insight:** The highest single bid is rarely the best deal. Competition at multiple levels maximizes total value.
 ```
 
 ---
@@ -760,12 +757,12 @@ You're a media analyst comparing two business models. Your client asks: "Should 
 
 ## How the Visualizer Works
 
-1. **Choose Platform Type:** Toggle between Linear TV and Streaming/DTC models
-2. **Set Rights Cost:** Annual cost for sports content ($100M-$500M)
-3. **Adjust Revenue Variables:** For Linear: ad rates, viewership trends. For Streaming: subscription price, subscriber count, churn rate
-4. **Set Cost Variables:** For Linear: production costs. For Streaming: customer acquisition cost (CAC)
-5. **See 10-Year Projection:** Watch cumulative profit/loss chart update in real time
-6. **Compare Scenarios:** Save different configurations, compare side-by-side
+1. **Select a Preset:** Choose Rogers (Linear), DAZN (Streaming), or Apple TV+ (Streaming) to load real-world scenarios
+2. **Adjust 3 Key Sliders:** Each model focuses on the variables that matter most:
+   - **Linear TV:** Rights cost, starting subscribers, annual decline rate
+   - **Streaming:** Rights cost, monthly price, net subscriber growth
+3. **See 10-Year Projection:** Watch cumulative profit/loss chart update in real time
+4. **Compare Models:** Toggle between Linear and Streaming to see different economics
 
 ## Strategic Considerations
 
@@ -798,25 +795,25 @@ In this interactive activity, you'll toggle between Linear TV and Streaming/DTC 
 - Why tech giants like Apple can "overpay" for rights—they're buying subscribers, not immediate profit
 - The mathematics behind Rogers' $1.5B loss on the NHL deal (subscriber decline killed them)
 
-**Time commitment:** 6-7 minutes
+**Time commitment:** 4-5 minutes
 **Learning outcomes practiced:** WLO 2.2 (Compare linear vs. streaming economics and profitability models)
 
 ---
 
 **🎮 Tool Purpose:** Let students manipulate platform economics variables and see how profitability timelines differ between linear TV and streaming models.
 
-**Status:** ⭕ Phase 2 tool - NEEDS TO BE BUILT (6-7 hours estimated)
+**Status:** ✅ Built - `platform-economics-visualizer.html`
 
 **How It Works:**
-1. Toggle between **Linear TV** and **Streaming/DTC**
-2. Adjust variables with sliders:
-   - **Linear TV:** Rights cost, ad CPM, carriage fee, starting subscribers, annual decline %
-   - **Streaming:** Rights cost, subscription price, starting subs, monthly growth %, churn rate, CAC
-3. View 10-year projection:
-   - Line chart: Annual revenue vs. costs
+1. Select preset: **Rogers (Linear)**, **DAZN (Streaming)**, or **Apple TV+ (Streaming)**
+2. Toggle between **Linear TV** and **Streaming/DTC** models
+3. Adjust 3 key sliders per model:
+   - **Linear TV:** Rights cost, starting subscribers, annual decline %
+   - **Streaming:** Rights cost, monthly price, net monthly growth %
+4. View 10-year projection:
+   - Line chart: Cumulative profit/loss over time
    - Break-even year (or "Never")
-   - Cumulative profit/loss
-   - Strategic insights (dynamic based on inputs)
+   - Total profit/loss figure
 
 **Real-World Presets:**
 - **Rogers NHL (Linear):** $433M rights, 11.2M → 8.1M subs, NEVER profitable (loss ~$1.5B over 10 years)

@@ -8,7 +8,8 @@ This directory contains individual module files split from the main Week 1 story
 |------|------|-------|-------------|
 | `module-0-bridge-in.md` | 24 KB | Quick Start: The $100M Question | Video script, AI Roleplay, Pre-assessment |
 | `module-1-welcome.md` | 3.3 KB | Your Week 1 Journey | Week overview, MLOs |
-| `module-2-executive.md` | 3.6 KB | Inside the Sports Business | SME video session |
+| `module-2-executive.md` | 3.6 KB | Executive Perspective: Kevin Abrams | NY Giants SVP interview (~32 min) |
+| `stewart-johnston-interview.md` | 15 KB | Leadership at League Level: Stewart Johnston | CFL Commissioner (~35 min), Anchor Project essential |
 | `module-3-core-content.md` | 43 KB | Five Revenue Streams That Power Sports | 8 interactive exercises, V3 redesign |
 | `module-4-interactive.md` | 11 KB | Build Your Revenue Empire | Revenue Empire Builder simulation |
 | `module-5-case-study.md` | 12 KB | The Predators Problem | NHL Nashville Predators case (9B09A006) |

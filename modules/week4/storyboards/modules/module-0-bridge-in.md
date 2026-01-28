@@ -1,5 +1,12 @@
 # MODULE 0: Bridge-In - The Athlete Brand Problem
-**Version:** 2.1.0 | **Last Updated:** 2026-01-13
+**Version:** 3.0.0 | **Last Updated:** 2026-01-25
+
+### Version 3.0.0 Changes
+- **REPLACED:** Element 4 (iFrame widget) → Native Uplimit MC questions (Elements 4A-4N)
+- **REDUCED:** Pre-assessment from 10 → 8 questions (matching Week 2/3 pattern)
+- **ADDED:** Element 4N - AI Chat Widget for results discussion
+- **REFORMATTED:** MC options in individual markdown code boxes (no letter prefixes)
+- **VARIED:** Correct answer positions distributed across all 4 positions
 
 ### Version 2.1.0 Changes
 - **RESTORED:** Graphic novel with consistent introduction pattern
@@ -17,8 +24,21 @@
 | 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload `week4-bridge-scenario.mp4` + VTT | Serena Williams brand paradox |
 | 2 | **◈ AI Roleplay** ◐ Recommended | The Brand Value Question diagnostic | Configure in Uplimit | Reveal knowledge gaps |
 | 3 | **ⓘ Infobox (Callout)** ⬤ Required | The athlete brand problem statement | Type directly | Blue variant |
-| 4 | **⚙ iFrame Widget** ⬤ Required | Pre-Assessment Quiz | Embed `athlete-brand-pre-assessment.html` | 10-question diagnostic |
-| 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Personalized guidance |
+| 4A | **📝 Text** ⬤ Required | Pre-Assessment introduction | Type directly | Sets expectations, explains 4 challenges |
+| 4B | **📝 Text** ⬤ Required | Challenge 1: Map Athlete Revenue Streams | Type directly | WLO 4.1 context |
+| 4C | **❓ MC Question** ⬤ Required | Q1: Revenue Stream Identification | Configure in Uplimit | Correct: Position 1 |
+| 4D | **❓ MC Question** ⬤ Required | Q2: Highest Growth Stream | Configure in Uplimit | Correct: Position 4 |
+| 4E | **📝 Text** ⬤ Required | Challenge 2: Compare Owned vs. Endorsed | Type directly | WLO 4.2 context |
+| 4F | **❓ MC Question** ⬤ Required | Q3: Equity vs. Fees | Configure in Uplimit | Correct: Position 3 |
+| 4G | **❓ MC Question** ⬤ Required | Q4: LeBron's Strategy | Configure in Uplimit | Correct: Position 2 |
+| 4H | **📝 Text** ⬤ Required | Challenge 3: Evaluate Women's Sports | Type directly | WLO 4.3 context |
+| 4I | **❓ MC Question** ⬤ Required | Q5: Women's Sports Growth | Configure in Uplimit | Correct: Position 4 |
+| 4J | **❓ MC Question** ⬤ Required | Q6: Investment Thesis | Configure in Uplimit | Correct: Position 1 |
+| 4K | **📝 Text** ⬤ Required | Challenge 4: Plan Post-Career Transition | Type directly | WLO 4.4 context |
+| 4L | **❓ MC Question** ⬤ Required | Q7: Brand Value Timing | Configure in Uplimit | Correct: Position 3 |
+| 4M | **❓ MC Question** ⬤ Required | Q8: Post-Career Decline | Configure in Uplimit | Correct: Position 2 |
+| 4N | **💬 AI Chat** ◐ Recommended | Results Discussion Coach | Configure in Uplimit | Personalized learning path |
+| 5 | **ⓘ Infobox (Insight)** ◐ Recommended | Results interpretation + learning path | Type directly | Score-based guidance |
 | 6 | **⚙ iFrame Widget** ◐ Recommended | Graphic Novel: "Building an Empire" | Embed PDF or images | Athlete brand story |
 
 ---
@@ -354,42 +374,555 @@ Elite athletes face a strategic paradox: their playing career (8-12 years) occur
 
 ---
 
-## Element 4: Pre-Assessment Widget
+## Element 4A: Pre-Assessment Introduction `[v3.0.0]`
 
-**Widget Purpose:** 10-question self-diagnostic quiz covering all 4 learning outcomes (WLO 4.1-4.4)
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
 
-**Widget File:** `athlete-brand-pre-assessment.html`
+```markdown
+### Diagnostic Activity: Athlete Brand Pre-Assessment
 
-**Embed Code:**
-```html
-<iframe
-  src="../../widgets/athlete-brand-pre-assessment.html"
-  width="100%"
-  height="800"
-  style="border: none; border-radius: 8px;"
-  title="Athlete Brand Pre-Assessment"
-  aria-label="10-question diagnostic quiz testing baseline knowledge of athlete branding"
-  allowfullscreen
-  loading="lazy">
-</iframe>
+**Purpose: Discover What You Already Know**
+
+Before exploring Week 4's content, test yourself with 4 challenges. Each challenge presents a business problem you'll need to solve this week, followed by questions that reveal your current knowledge.
+
+**Not graded—purely diagnostic.** Lower scores signal areas to emphasize this week. Higher scores indicate strong foundations to build upon.
+
+*Time estimate: 7-10 minutes*
 ```
-
-**Quiz Topics:**
-- Q1-3: Five athlete revenue streams (WLO 4.1)
-- Q4-5: Owned assets vs. endorsement strategy (WLO 4.2)
-- Q6-7: Women's sports investment thesis (WLO 4.3)
-- Q8-10: Post-career transition strategy (WLO 4.4)
 
 ---
 
-## Element 5: Infobox - Results Interpretation
+## Element 4B: Challenge 1 - Map Athlete Revenue Streams `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 1: Map Athlete Revenue Streams
+
+**The Problem:** A sports agent asks: "My client wants to build generational wealth, not just cash checks. What are the options beyond endorsements?" Can you identify the five major revenue streams elite athletes use?
+
+**What you'll need to know:**
+- The five athlete revenue streams (endorsements, owned businesses, investments, media/content, licensing)
+- Which streams generate fees vs. which build equity
+- Which streams have the highest growth potential
+
+**Test yourself:** Can you name five ways Serena Williams generates income beyond playing tennis?
+```
+
+---
+
+## Element 4C: MC Question 1 - Revenue Stream Identification `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+Which of the following is NOT typically considered one of the five major athlete revenue streams?
+```
+
+**Options:**
+
+```
+Salary from team contracts ✅
+```
+
+```
+Endorsement deals with brands
+```
+
+```
+Owned businesses and equity stakes
+```
+
+```
+Media and content production
+```
+
+**After Submission:**
+```
+The five major athlete revenue streams are: endorsements, owned businesses, investments, media/content production, and licensing. Team salary is employment income, not a brand-building revenue stream.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Team salary is employment compensation, separate from brand monetization. The five streams that build athlete brands are: endorsements, owned businesses, investments, media/content, and licensing.
+```
+
+**Feedback for incorrect answers:**
+```
+Endorsements, owned businesses, and media production are all athlete brand revenue streams. Team salary is different—it's employment income, not brand monetization.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4D: MC Question 2 - Highest Growth Stream `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+Which athlete revenue stream has shown the HIGHEST growth potential over the past decade?
+```
+
+**Options:**
+
+```
+Traditional endorsement deals
+```
+
+```
+Appearance fees and speaking engagements
+```
+
+```
+Licensing and merchandise royalties
+```
+
+```
+Owned businesses and venture investments ✅
+```
+
+**After Submission:**
+```
+Athletes who own equity in businesses—rather than just endorsing them—capture exponentially more value. LeBron's stake in Blaze Pizza and Serena's venture fund exemplify this shift.
+```
+
+**Feedback for correct answers:**
+```
+Correct! Athletes like LeBron ($300M from Blaze Pizza stake) and Serena (Serena Ventures portfolio) have generated more wealth from owned businesses than from endorsement fees.
+```
+
+**Feedback for incorrect answers:**
+```
+While endorsements and licensing provide steady income, owned businesses and investments create equity that compounds over time—the highest-growth opportunity for athletes.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4E: Challenge 2 - Compare Owned vs. Endorsed `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 2: Compare Owned vs. Endorsed
+
+**The Problem:** An athlete asks: "Should I sign this $5M endorsement deal, or invest $2M to launch my own brand?" Can you explain the trade-offs between fee-based income and equity ownership?
+
+**What you'll need to know:**
+- Why endorsement fees are "renting" your brand vs. "owning" value
+- How equity compounds over time while fees stay flat
+- When each strategy makes sense (career stage, risk tolerance)
+
+**Test yourself:** Can you explain why Michael Jordan's Nike deal structure made him a billionaire while other athletes with similar endorsement fees aren't?
+```
+
+---
+
+## Element 4F: MC Question 3 - Equity vs. Fees `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+What is the PRIMARY advantage of owned businesses over endorsement deals for athletes?
+```
+
+**Options:**
+
+```
+Owned businesses require less time commitment
+```
+
+```
+Endorsement deals have more brand risk
+```
+
+```
+Equity ownership compounds value; endorsement fees stay flat ✅
+```
+
+```
+Owned businesses are easier to exit
+```
+
+**After Submission:**
+```
+Endorsement fees are "renting" your brand—you get paid, then it's over. Equity ownership means the value you help create compounds over time and belongs to you.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! A $5M/year endorsement = $50M over 10 years. But $2M invested in a business you help grow to $100M = $20M+ in equity. Ownership compounds; fees don't.
+```
+
+**Feedback for incorrect answers:**
+```
+Time commitment and exit strategies vary. The key difference is value capture: endorsement fees end when contracts end, but equity ownership builds wealth that compounds.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4G: MC Question 4 - LeBron's Strategy `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+LeBron James earned approximately $300M from his stake in Blaze Pizza. What made this different from a typical endorsement deal?
+```
+
+**Options:**
+
+```
+Blaze Pizza paid him more per year than other sponsors
+```
+
+```
+He took equity instead of (or in addition to) endorsement fees ✅
+```
+
+```
+The pizza industry has higher profit margins than sportswear
+```
+
+```
+He appeared in more Blaze Pizza commercials than other brands
+```
+
+**After Submission:**
+```
+LeBron's Blaze Pizza strategy exemplifies the shift from "endorser" to "owner." By taking equity, he captured value from the company's growth rather than just collecting fees.
+```
+
+**Feedback for correct answers:**
+```
+Perfect! LeBron invested early and took equity. When Blaze grew from 50 to 300+ locations, his stake multiplied in value—something endorsement fees can never do.
+```
+
+**Feedback for incorrect answers:**
+```
+The difference wasn't payment amount or ad frequency—it was ownership structure. LeBron owned equity in Blaze, so when the company grew, his stake grew with it.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4H: Challenge 3 - Evaluate Women's Sports `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 3: Evaluate Women's Sports Investment
+
+**The Problem:** An investor asks: "Everyone says women's sports are the next big opportunity. Is this real or just hype?" Can you explain the investment thesis for women's sports?
+
+**What you'll need to know:**
+- Why women's sports are considered "undervalued"
+- Key growth metrics (viewership, sponsorship, valuations)
+- The risks and timeline for returns
+
+**Test yourself:** Can you explain why WNBA team valuations have increased faster than NBA team valuations recently?
+```
+
+---
+
+## Element 4I: MC Question 5 - Women's Sports Growth `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+What is driving the rapid growth in women's sports valuations and investment?
+```
+
+**Options:**
+
+```
+Government regulations requiring equal investment
+```
+
+```
+Men's sports leagues are declining in popularity
+```
+
+```
+Women's sports have always been equally valued
+```
+
+```
+Historically undervalued assets are being repriced as viewership and sponsorship grow ✅
+```
+
+**After Submission:**
+```
+Women's sports represent a market correction: assets that were systematically undervalued are being repriced as viewership, sponsorship, and media rights demonstrate their true market value.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Women's sports were underinvested for decades. Now, growing viewership (WNBA up 16%), new media deals, and sponsor demand are revealing the true market value.
+```
+
+**Feedback for incorrect answers:**
+```
+The growth isn't from regulation or men's sports declining. Women's sports were historically undervalued, and the market is now recognizing their true potential.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4J: MC Question 6 - Investment Thesis `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+Why are athletes like Serena Williams and Kevin Durant investing in women's sports teams?
+```
+
+**Options:**
+
+```
+First-mover advantage in an undervalued, high-growth market ✅
+```
+
+```
+Tax benefits specific to women's sports ownership
+```
+
+```
+Required by their existing sponsorship contracts
+```
+
+```
+Women's teams are cheaper to operate than men's teams
+```
+
+**After Submission:**
+```
+Smart investors recognize that women's sports represent asymmetric opportunity: relatively low entry costs with high growth potential as the market matures.
+```
+
+**Feedback for correct answers:**
+```
+Correct! WNBA teams purchased for $10-20M a few years ago are now valued at $100M+. Athletes with visibility and capital are positioning themselves in an emerging market.
+```
+
+**Feedback for incorrect answers:**
+```
+Tax benefits and operating costs aren't the drivers. Athletes are investing because they see an undervalued market with significant growth potential—classic first-mover opportunity.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4K: Challenge 4 - Plan Post-Career Transition `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Text** element
+2. Copy markdown below:
+
+```markdown
+---
+
+### Challenge 4: Plan Post-Career Transition
+
+**The Problem:** A 28-year-old athlete asks: "I have maybe 5-7 years left playing. How do I make sure I'm set for the next 50 years?" Can you explain when and how athletes should build post-career assets?
+
+**What you'll need to know:**
+- Why timing matters (brand value peaks during playing career)
+- How much brand value typically declines post-retirement
+- Which assets to build during vs. after playing career
+
+**Test yourself:** Can you explain why athletes need to start building businesses at 25, not 35?
+```
+
+---
+
+## Element 4L: MC Question 7 - Brand Value Timing `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+When is an athlete's brand value typically at its PEAK?
+```
+
+**Options:**
+
+```
+Immediately after retirement when nostalgia peaks
+```
+
+```
+5-10 years after retirement when legacy is established
+```
+
+```
+During their prime playing years (typically ages 25-35) ✅
+```
+
+```
+Brand value stays constant throughout their lifetime
+```
+
+**After Submission:**
+```
+Brand value is highest when athletes are actively competing, visible, and generating headlines. This window is the critical time to convert attention into owned assets.
+```
+
+**Feedback for correct answers:**
+```
+Exactly! Athletes have maximum leverage during their playing prime. Media attention, sponsor interest, and deal flow all peak when they're winning—the time to build assets.
+```
+
+**Feedback for incorrect answers:**
+```
+Nostalgia and legacy matter, but brand value peaks during active competition. Post-retirement, attention and opportunities decline significantly—often 60-80%.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4M: MC Question 8 - Post-Career Decline `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Multiple Choice Question** element
+2. Configure as follows:
+
+**Question:**
+```
+By how much does athlete brand value typically decline within 2-3 years of retirement?
+```
+
+**Options:**
+
+```
+10-20% decline
+```
+
+```
+60-80% decline ✅
+```
+
+```
+Brand value usually increases after retirement
+```
+
+```
+No change—brand value is permanent
+```
+
+**After Submission:**
+```
+The harsh reality: most athletes see dramatic brand value decline post-retirement. Only those who built owned assets and businesses during their career maintain long-term wealth.
+```
+
+**Feedback for correct answers:**
+```
+Correct! Studies show endorsement value drops 60-80% within 2-3 years of retirement. This is why building owned assets DURING the playing career is critical.
+```
+
+**Feedback for incorrect answers:**
+```
+Brand value doesn't increase or stay flat. Most athletes experience 60-80% decline in endorsement value within 2-3 years of retirement—making career-stage planning essential.
+```
+
+**Points:** 1 | **Shuffle options:** Yes
+
+---
+
+## Element 4N: AI Chat Widget - Results Discussion Coach `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **AI Chat Widget** element
+2. Configure as follows:
+
+**Widget Name:** Pre-Assessment Results Coach
+
+**System Prompt:**
+```
+You are a supportive learning coach helping MBA students interpret their pre-assessment results for Week 4 of a sports business course. Students just completed an 8-question diagnostic quiz covering four learning outcomes:
+
+**WLO 4.1 - Athlete Revenue Streams:** Five streams (endorsements, owned businesses, investments, media/content, licensing), which build equity vs. generate fees
+**WLO 4.2 - Owned vs. Endorsed:** Equity compounds while fees stay flat, LeBron's Blaze Pizza model, when to prioritize ownership
+**WLO 4.3 - Women's Sports Investment:** Undervalued market thesis, growth metrics, first-mover advantage
+**WLO 4.4 - Post-Career Transition:** Brand value peaks during playing years, 60-80% post-retirement decline, building assets early
+
+**Your role:**
+1. Ask students how many questions they answered correctly (0-8)
+2. Provide personalized guidance based on their score:
+   - **0-2/8:** "You're starting fresh—perfect! This week's content will build strong foundations. Focus on Module 3's athlete revenue framework and the Athlete Brand Calculator."
+   - **3-4/8:** "Solid baseline—you have some pieces of the puzzle. This week will help you connect revenue streams to wealth-building strategy. Pay attention to the owned vs. endorsed comparison."
+   - **5-6/8:** "Strong foundation! You're ready to dive deep into applications. Challenge yourself with the Serena Williams case analysis and Emerging Sports Investment Tool."
+   - **7-8/8:** "Excellent! You already understand core concepts. Focus on nuanced applications—timing of asset building, women's sports investment thesis, post-career transition planning."
+3. If they ask about specific questions, provide brief clarifications using the WLO concepts above
+4. Encourage them that pre-assessments reveal learning opportunities, not deficiencies
+5. Direct them to Module 1 (Executive Perspectives) after discussion
+
+**Tone:** Supportive, encouraging, concrete (use specific examples), MBA-level (business-focused not academic)
+
+**Do NOT:**
+- Provide quiz answers directly (if they ask, say "The quiz helps you self-diagnose, but I can discuss concepts")
+- Overwhelm them with too much content (keep responses 2-3 sentences)
+- Make them feel bad about low scores (frame as opportunities)
+```
+
+**Welcome Message:**
+```
+Hi! I'm here to help you interpret your pre-assessment results and plan your learning path for Week 4. How many questions did you answer correctly out of 8? Or if you have questions about specific concepts from the quiz, I'm happy to discuss them!
+```
+
+**Show System Prompt to User:** No
+
+---
+
+## Element 5: Infobox - Results Interpretation `[v3.0.0]`
 
 **Type:** Infobox (Insight variant)
 
 ```
 Title: 💡 What Your Pre-Assessment Results Mean
 
-Your quiz results create a personalized learning path for this week. Lower scores (0-6/10) suggest spending extra time with Module 3's core content on athlete revenue streams and the Athlete Brand Calculator exercise—you're building fresh foundations. Higher scores (7-10/10) indicate solid baseline knowledge, so challenge yourself with the Serena Williams case analysis and the Emerging Sports Investment Tool. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's build those athlete brand strategies.
+Your quiz results create a personalized learning path for this week. Lower scores (0-3/8) suggest spending extra time with Module 3's core content on athlete revenue streams and the Athlete Brand Calculator exercise—you're building fresh foundations. Higher scores (5-8/8) indicate solid baseline knowledge, so challenge yourself with the Serena Williams case analysis and the Emerging Sports Investment Tool. Remember: this quiz isn't graded, it's a diagnostic tool to help you learn efficiently. Now that you know where you stand, let's build those athlete brand strategies.
 ```
 
 ---
@@ -425,9 +958,22 @@ Follow Maya Jordan, a tennis champion approaching 40, as she faces a critical qu
 
 **Module 0 Purpose:**
 - Create cognitive dissonance (the brand value question challenges assumptions)
-- Reveal knowledge gaps through AI roleplay and pre-assessment
+- Reveal knowledge gaps through AI roleplay and pre-assessment (Elements 2 + 4A-4M)
 - Build motivation to learn Week 4 content
-- Graphic novel provides visual entry point for diverse learners
+- AI Chat Widget (Element 4N) provides personalized learning path guidance
+- Graphic novel provides visual entry point for diverse learners (UDL)
+
+**Pre-Assessment Design Rationale (v3.0.0):**
+- Restructured into 4 challenges with MC questions underneath each
+- Each challenge presents a business problem → questions test related knowledge
+- Simplified feedback to 3 fields: After Submission, Correct, Incorrect
+- 8 total MC questions matching Week 2/3 pattern
+- WLO coverage: Challenge 1 (4.1) → 2 Qs, Challenge 2 (4.2) → 2 Qs, Challenge 3 (4.3) → 2 Qs, Challenge 4 (4.4) → 2 Qs
+
+**Challenge Structure:**
+- **The Problem:** Business scenario framing the question
+- **What you'll need to know:** Key concepts being tested
+- **Test yourself:** Self-check prompt before attempting questions
 
 **Graphic Novel Notes:**
 - "Building an Empire" visualizes athlete brand-building journey

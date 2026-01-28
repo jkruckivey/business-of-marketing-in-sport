@@ -1,5 +1,8 @@
 # MODULE 0: Bridge-In - The $5.2 Billion Question
-**Version:** 3.1.1 | **Last Updated:** 2026-01-23
+**Version:** 3.2.0 | **Last Updated:** 2026-01-26
+
+### Version 3.2.0 Changes
+- **MODIFIED:** Element 1 - Updated video reference to use existing W1-M7-V1 Rogers NHL Deal video (no new bridge video available)
 
 ### Version 3.1.1 Changes
 - **FIXED:** Element 5 - Updated scoring references from /14 to /8 to match native MC question count
@@ -27,7 +30,7 @@
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▶ Video** ⬤ Required | Business problem scenario (2-3 min) | Upload `week2-bridge-scenario.mp4` + VTT | Rogers/NHL $5.2B deal paradox |
+| 1 | **▶ Video** ⬤ Required | Rogers NHL Deal (1:44) | Upload `04-BOSM-W1-M7-V1 - Rogers NHL Deal.mp4` + SRT | Rogers/NHL $5.2B deal introduction |
 | 2 | **◈ AI Roleplay** ◐ Recommended | Media rights valuation diagnostic | Configure in Uplimit | Reveal knowledge gaps |
 | 3 | **ⓘ Infobox (Callout)** ⬤ Required | The media rights problem statement | Type directly | Blue variant |
 | 4A | **📝 Text** ⬤ Required | Pre-Assessment introduction | Type directly | Sets expectations, explains 4 challenges |
@@ -50,11 +53,10 @@
 
 ## Element 1: Bridge Video Scenario
 
-**File:** `week2-bridge-scenario.mp4`
-**Duration:** 2-3 minutes
-**VTT File:** `week2-bridge-scenario.vtt` (required for accessibility)
-**Format:** Direct-to-camera SME presentation
-**Script:** SME introduces the Rogers/NHL $5.2B valuation paradox
+**File:** `04-BOSM-W1-M7-V1 - Rogers NHL Deal.mp4`
+**Duration:** 1:44
+**Caption File:** `04-BOSM-W1-M7-V1 - Rogers NHL Deal_Captions_English (United States).srt`
+**Note:** This is the same video used in Week 1 Module 7 as a preview. It introduces the Rogers/NHL $5.2B deal that frames Week 2's learning.
 
 ### Video Script: "The $5.2 Billion Question" (SME Direct-to-Camera)
 
@@ -690,7 +692,7 @@ Walking away abandons a valuable asset; renewing at the same price repeats the m
 
 ---
 
-## Element 5: Infobox - What Your Results Mean
+## Element 5: Infobox - What Your Results Mean `[v3.1.0]`
 
 **Type:** Infobox (Insight variant)
 **Priority:** ◐ Recommended
@@ -698,7 +700,7 @@ Walking away abandons a valuable asset; renewing at the same price repeats the m
 ```
 Title: 💡 Understanding Your Pre-Assessment Results
 
-Your quiz results create a personalized learning path for this week. Lower scores (0-3/8) suggest spending extra time with Module 3's media rights valuation frameworks and the interactive tools—you're building fresh foundations, which is perfect for developing strong analytical skills. Higher scores (6-8/8) indicate solid media strategy intuitions, so challenge yourself with the Rogers case analysis and Streaming Wars simulation.
+Your quiz results create a personalized learning path for this week. Lower scores (0-3/8) suggest spending extra time with Module 3's media rights valuation frameworks and the interactive tools—you're building fresh foundations, which is perfect for developing strong analytical skills. Higher scores (5-8/8) indicate solid media strategy intuitions, so challenge yourself with the Rogers case analysis and Streaming Wars simulation.
 
 Remember: This quiz isn't graded, it's a diagnostic tool to help you learn efficiently and identify where to focus your energy. Now that you know where you stand, let's learn the frameworks that will transform how you evaluate billion-dollar media deals.
 ```

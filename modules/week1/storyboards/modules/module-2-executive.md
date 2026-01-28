@@ -1,7 +1,13 @@
-# Executive Perspective: Kevin Abrams
-**Version:** 2.1.0 | **Last Updated:** 2026-01-22
+# Executive Perspectives: Kevin Abrams & Stewart Johnston
+**Version:** 3.0.0 | **Last Updated:** 2026-01-28
 
-**Purpose:** Deliver executive practitioner perspective on sports business operations through NY Giants SVP interview (supports WLO 1.1, 1.2)
+**Purpose:** Deliver executive practitioner perspectives on sports business operations through two interviews - NY Giants SVP and CFL Commissioner (supports WLO 1.1, 1.2, 1.4)
+
+### Version 3.0.0 Changes
+- **ADDED:** Stewart Johnston (CFL Commissioner) interview (~35 min) - moved from Week 5 to provide CFL context early for Anchor Project
+- **ADDED:** Stewart Johnston practice quiz (6 questions)
+- **RENAMED:** Module title to "Executive Perspectives: Kevin Abrams & Stewart Johnston"
+- **UPDATED:** Element table to include both executive interviews
 
 ### Version 2.1.0 Changes
 - **STANDARDIZED:** Element 3A Practice Quiz - all 5 MC questions reformatted to standard format (Question/Options/After Submission/Feedback for correct/Feedback for incorrect)
@@ -13,19 +19,22 @@
 - **SIMPLIFIED:** Module now focuses solely on Kevin Abrams executive interview
 - **RENUMBERED:** All elements shifted due to removals
 
-### Version 1.7.0 Changes
+### Version 1.7.0 Changes (now reversed)
 - **REMOVED:** Stewart Johnston (CFL Commissioner) interview - moved to Week 5 as capstone interview
 
 **Uplimit Structure:** Second module in Unit 1
 
 | Order | Element | Content/Purpose | Source | Implementation Notes |
 |-------|---------|----------------|--------|---------------------|
-| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Sets context for executive interview |
+| 1 | **▬ Text** ⬤ Required | Connecting intro | Type directly | Sets context for executive interviews |
 | 2 | **ⓘ Infobox (Callout)** ⬛ Required | Interview overview + viewing guide | Type directly | Blue variant, sets viewing expectations |
 | 3 | **▶ Video** ⬛ Required | Kevin Abrams Interview (~32 min) | Upload MP4 + transcript | NY Giants SVP on team operations, salary cap, AI |
 | 3A | **📝 Practice Quiz** ⬤ Required | Kevin Abrams Interview Check (5 questions) | Configure in Uplimit | Ungraded, tests interview insights |
-| 4 | **▤ Details** ▢ Optional | Interview transcript & executive bio | Type directly | Accordion for text version |
-| 5 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about Kevin's insights" | Configure in Uplimit | Named: "Executive Q&A" |
+| 4 | **▤ Details** ▢ Optional | Kevin Abrams transcript & executive bio | Type directly | Accordion for text version |
+| 5 | **▶ Video** ⬛ Required | Stewart Johnston Interview (~35 min) | Upload MP4 + transcript | CFL Commissioner on league strategy, expansion |
+| 5A | **📝 Practice Quiz** ⬤ Required | Stewart Johnston Interview Check (6 questions) | Configure in Uplimit | Ungraded + Anchor Project connection |
+| 6 | **▤ Details** ▢ Optional | Stewart Johnston transcript & executive bio | Type directly | Accordion for text version |
+| 7 | **◈ AI Chat Widget** ▢ Optional | "Ask questions about the executives' insights" | Configure in Uplimit | Named: "Executive Q&A" |
 
 ### Element 1: Connecting Introduction Text
 **Title:** From Frameworks to Practice
@@ -37,7 +46,13 @@
 
 You now understand where you're headed this week—the four learning outcomes that will transform how you analyze sports business. You've been introduced to the five major revenue streams and seen why they operate as an interconnected ecosystem rather than independent channels.
 
-Before diving into the details of each stream, you need context from someone who's actually done this work. In this module, you'll hear directly from Kevin Abrams, SVP of Football Operations & Strategy at the New York Giants—a $10 billion organization. His insights on salary cap management, AI implementation, and business-football integration will ground the theory you're about to explore with real-world examples and strategic trade-offs.
+Before diving into the details of each stream, you need context from leaders who've actually done this work. In this module, you'll hear from two executives with very different perspectives:
+
+**Kevin Abrams, SVP Football Operations & Strategy, NY Giants (~32 min)** — Inside a $10 billion NFL franchise. His insights on salary cap management, AI implementation, and business-football integration will ground the theory you're about to explore.
+
+**Stewart Johnston, Commissioner, Canadian Football League (~35 min)** — Leading a league through transformation. His vision for CFL expansion, balancing tradition with innovation, and media rights strategy will directly inform your Anchor Project throughout this course.
+
+Pay attention to how these leaders think about revenue streams, strategic priorities, and growth—you'll apply their frameworks throughout this course.
 ```
 
 ### Element 1A: Picture - Executive Leadership (NEW v1.4.0)
@@ -53,23 +68,29 @@ Before diving into the details of each stream, you need context from someone who
 
 ### Element 2: Infobox Content
 ```
-Title: ◉ Executive Interview: Kevin Abrams
+Title: ◉ Executive Interviews: Two Perspectives on Sports Business
 
-This module features an in-depth executive interview offering franchise-level perspective on how sports business operates inside a $10 billion organization.
+This module features two executive interviews offering complementary perspectives on sports business—from franchise operations to league leadership.
 
-**Kevin Abrams, SVP Football Operations & Strategy, NY Giants (~32 min):**
-Kevin shares how the Giants manage salary cap as a portfolio (not a checking account), use AI for talent evaluation, and integrate business operations with football operations.
+**Session 1: Kevin Abrams, SVP Football Operations & Strategy, NY Giants (~32 min)**
+Kevin shares how the Giants manage salary cap as a portfolio, use AI for talent evaluation, and integrate business operations with football operations.
 
 **Viewing Guide - Watch for:**
-• **Salary Cap as Portfolio**: Evolution from expense tracking to investment committee consensus building
-• **AI Implementation**: Enterprise ChatGPT rollout, prompt engineering, weekly improvements
-• **Business-Football Integration**: How sponsors (Moody's, MetLife) advise on facility planning
-• **NIL & Player Brands**: Connecting players to corporate partners for win-win-win outcomes
-• **Career Path**: 6-7 internships before first full-time role—persistence and flexibility matter
+• **Salary Cap as Portfolio**: Evolution from expense tracking to investment committee
+• **AI Implementation**: Enterprise ChatGPT rollout, prompt engineering
+• **Business-Football Integration**: How sponsors advise on facility planning
+• **NIL & Player Brands**: Connecting players to corporate partners
 
-This interview supports WLO 1.1 and 1.2 by showing how revenue concepts play out in practice.
+**Session 2: Stewart Johnston, Commissioner, Canadian Football League (~35 min)** ⭐ ANCHOR PROJECT
+Stewart discusses league leadership, media rights strategy, and his vision for CFL expansion—directly relevant to your Anchor Project.
 
-**Total viewing time:** ~32 minutes
+**Viewing Guide - Watch for:**
+• **Commissioner as CEO**: Real accountability to nine team owners
+• **Three Strategic Priorities**: Entertainment, youth engagement, nine profitable teams
+• **Tradition vs. Innovation**: Respecting loyal fans while growing new audiences
+• **10-Year Expansion Vision**: "If we haven't got a 10th team... I'll be disappointed"
+
+**Total viewing time:** ~67 minutes (can be split across sessions)
 ```
 
 ---
@@ -327,26 +348,205 @@ This transcript is provided for accessibility and for students who prefer readin
 
 ---
 
-### Element 5: AI Chat Widget Configuration
+### Element 5: Stewart Johnston (CFL Commissioner) Interview `[v3.0.0]`
+
+**File:** `Interviews/Stewart Johnston - Commissioner, Canadian Football League.mp4`
+**Duration:** ~35 minutes
+**Transcript:** `Interviews/Stewart Johnston - Commissioner, Canadian Football League.txt`
+**Video Title:** "Stewart Johnston: Leading the CFL into the Future - Tradition, Growth & Expansion"
+**Video Caption:** "CFL Commissioner Stewart Johnston discusses balancing passionate traditional fans with growth imperatives, media rights strategy, and his 10-year vision including league expansion"
+
+#### Interview Content - Key Topics Covered:
+
+**Career Journey & TSN/Bell Background (00:00-04:30)** - 27 years at Bell Media/TSN, led 3,600+ person team across entertainment, news, sports, and ad sales. Deep CFL partnership history from the media side before transitioning to commissioner role.
+
+**Commissioner as CEO Role (04:30-10:00)** - Approaches role as CEO, not just figurehead. Primary revenue drivers: media rights and commercial partnerships. Gate revenue critical for teams. Accountability to nine team owners who "have to deliver returns."
+
+**Media Rights & Revenue Strategy (10:00-15:00)** - Media rights and sponsorship as league's biggest revenue buckets. Ratings as fandom indicator. Must make content "so valuable" it drives subscriptions AND advertising.
+
+**Tradition vs. Innovation Challenge (15:00-22:00)** - Core challenge: loyal 30-40 year season ticket holders vs. need to grow new customer base. Must respect passionate traditionalist fans while innovating to attract younger audiences.
+
+**Three Strategic Priorities (22:00-28:00)** - (1) Relentless focus on entertainment (Machine Gun Kelly halftime, music integration), (2) Getting footballs into kids' hands (youth engagement), (3) Creating nine profitable teams ("we're not there yet"). Olympics flag football as growth opportunity.
+
+**10-Year Vision & Expansion (28:00-35:00)** - Expansion NOT in top 3 priorities, but expects 10th team within 10 years. "Great markets across this country that could support a team." Brand positioning as key strategic goal.
+
+#### Anchor Project Connection ⭐
+
+Stewart's interview provides direct insight into how a commissioner thinks about expansion. When students design their CFL expansion franchise, they should consider Stewart's priorities:
+1. Does the expansion enhance entertainment value?
+2. Does it grow youth engagement?
+3. Can the 10th team be profitable?
+4. How does it strengthen CFL's brand positioning?
+
+**Embed Code:**
+```html
+<iframe
+  src="[Uplimit video URL - Interviews/Stewart Johnston.mp4]"
+  width="100%"
+  height="700"
+  style="border: none; border-radius: 8px;"
+  title="Stewart Johnston - CFL Commissioner on League Leadership and Expansion"
+  aria-label="Video interview with Stewart Johnston, CFL Commissioner, discussing league strategy, tradition vs. innovation, media rights, and 10-year expansion vision"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+```
+
+---
+
+### Element 5A: Practice Quiz - Stewart Johnston Interview Check `[v3.0.0]`
+
+**Uplimit Implementation:**
+1. Select **Exercise - Practice Quiz** element
+2. Add 6 multiple choice questions based on Stewart's interview
+3. Set as "Practice Quiz" (not graded) for self-assessment
+
+---
+
+#### Question 1: Commissioner Role
+
+Stewart explicitly describes his commissioner role as what type of position?
+
+A) A ceremonial figurehead role
+B) A CEO position with real accountability ✅
+C) A mediator between team owners
+D) A public relations spokesperson
+
+**Feedback (Correct):** Correct! Stewart emphasizes: "This is a CEO job." He's accountable to nine team owners who expect growth and profitability, not just someone who "kisses babies and takes pictures."
+
+**Feedback (Incorrect):** Stewart clearly distinguishes his role from ceremonial commissioner positions. He states explicitly that he approaches it as a CEO role with real business accountability.
+
+---
+
+#### Question 2: League Revenue Drivers
+
+According to Stewart, what are the TWO biggest revenue drivers at the CFL league office?
+
+A) Merchandise sales and ticket revenue
+B) Media rights and commercial sponsorships ✅
+C) Broadcasting fees and player transfers
+D) Licensing deals and stadium operations
+
+**Feedback (Correct):** Correct! Stewart states: "The two biggest drivers of revenue at the league office are within the media rights and commercial partnerships with sponsors." Gate revenue goes to individual teams, not the league.
+
+**Feedback (Incorrect):** Review Stewart's discussion of league-level revenue. He emphasizes that media rights and commercial partnerships (sponsorships) are his primary focus as commissioner.
+
+---
+
+#### Question 3: Strategic Priorities
+
+Stewart identifies three strategic priorities for the CFL. Which is NOT one of his top three priorities?
+
+A) Relentless focus on entertainment
+B) Getting footballs into kids' hands (youth engagement)
+C) Creating nine profitable teams
+D) Expanding to a 10th team ✅
+
+**Feedback (Correct):** Correct! Stewart explicitly states that expansion is NOT in his top 3 priorities, even though he expects a 10th team within 10 years. His priorities are: (1) entertainment, (2) youth engagement, and (3) nine profitable teams.
+
+**Feedback (Incorrect):** Stewart clearly says expansion is not in his top three priorities. His three priorities are entertainment, youth engagement, and making all nine current teams profitable.
+
+---
+
+#### Question 4: Fan Base Challenge
+
+Stewart describes the CFL's core fans as having what characteristic?
+
+A) They're primarily young, tech-savvy viewers
+B) They're 30-40 year season ticket holders who are passionately loyal ✅
+C) They're casual viewers who tune in occasionally
+D) They're primarily international audiences
+
+**Feedback (Correct):** Correct! Stewart describes the challenge of serving loyal 30-40 year season ticket holders who are "absolutely passionate" while also growing new audiences. This creates a tradition vs. innovation tension.
+
+**Feedback (Incorrect):** Stewart specifically mentions that the CFL's core fans are long-term (30-40 year) season ticket holders. This creates a strategic challenge: how to grow new audiences without alienating passionate traditionalists.
+
+---
+
+#### Question 5: Expansion Timeline
+
+What is Stewart's expectation for CFL expansion?
+
+A) No expansion is planned
+B) 10th team within 10 years ✅
+C) Immediate expansion to 12 teams
+D) Expansion is the top priority for next year
+
+**Feedback (Correct):** Correct! Stewart expects a 10th team within 10 years, though he notes expansion is not in his top 3 priorities. He mentions there are "great markets across this country that could support a team."
+
+**Feedback (Incorrect):** Stewart discusses a realistic timeline for expansion. He's not rushing it (not top 3 priority), but he expects the league to have a 10th team within the next decade.
+
+---
+
+#### Question 6: Anchor Project Application
+
+Based on Stewart's interview, which factor is MOST important when evaluating a CFL expansion market?
+
+A) The city's population size alone
+B) Alignment with the three strategic priorities (entertainment, youth, profitability) ✅
+C) Proximity to existing CFL teams
+D) The number of hockey fans in the market
+
+**Feedback (Correct):** Correct! Your CFL expansion proposal should demonstrate how your market enhances entertainment value, grows youth engagement, and can be profitable. Stewart's three priorities become your evaluation criteria.
+
+**Feedback (Incorrect):** Stewart's three priorities (entertainment, youth engagement, profitability) should guide expansion decisions. A great market is one where the expansion team advances these priorities, not just one with a large population.
+
+---
+
+### Element 6: Details - Stewart Johnston Transcript & Bio `[v3.0.0]`
+
+```
+Title: Stewart Johnston Interview Transcript & Executive Bio
+
+[Expand for text version of interview and executive background]
+
+**Full Transcript:** See `Interviews/Stewart Johnston - Commissioner, Canadian Football League.txt`
+
+**Executive Bio:**
+Stewart Johnston is Commissioner of the Canadian Football League (CFL), appointed in 2024 after a 27-year career at TSN/Bell Media. He led 3,600 employees across entertainment, news, sports, ad sales, and distribution, including overseeing Bell's streaming platform Crave. His transition to Commissioner represents a shift from media partner to league leadership—bringing deep understanding of both sides of media rights negotiations.
+
+**Career Highlights:**
+- 27 years at Bell Media/TSN, rising to President of Media
+- Led 3,600+ person team across entertainment, news, sports, and ad sales
+- Deep CFL partnership history from the media side
+- Appointed CFL Commissioner in 2024
+- Brings "both sides of the table" perspective to media rights
+
+**Strategic Vision for CFL:**
+- Commissioner as CEO: Real accountability, not ceremonial
+- Three priorities: Entertainment, youth engagement, nine profitable teams
+- 10-year expansion goal: 10th team in a "great market"
+- Balance tradition (loyal fans) with innovation (new audiences)
+
+This transcript is provided for accessibility and for students who prefer reading to watching videos.
+```
+
+---
+
+### Element 7: AI Chat Widget Configuration
 - **Widget Name:** "Executive Q&A"
-- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand sports business operations based on the Kevin Abrams executive interview (NY Giants SVP). Kevin Abrams covered: salary cap as portfolio management (not checking account), AI/ChatGPT implementation (prompt quality matters), business-football integration (sponsors like Moody's/MetLife advise on facility planning), NIL athlete brands (win-win-win partnerships), career advice (6-7 internships, geographic flexibility). The Giants are a $10B organization. Provide clear, business-focused explanations with specific examples from Kevin's insights."
-- **Welcome Message:** "Hi! I can help explain concepts from Kevin Abrams' executive interview. What questions do you have about salary cap management, AI in sports, business-football integration, or building a sports business career?"
+- **System Prompt:** "You are a knowledgeable assistant helping MBA students understand sports business operations based on two executive interviews: (1) Kevin Abrams (NY Giants SVP) - covered salary cap as portfolio management, AI/ChatGPT implementation, business-football integration, NIL athlete brands, career advice (6-7 internships, geographic flexibility). Giants are a $10B organization. (2) Stewart Johnston (CFL Commissioner) - covered commissioner as CEO role, media rights and sponsorship as league revenue drivers, three strategic priorities (entertainment, youth engagement, nine profitable teams), tradition vs. innovation challenge with loyal fans, 10-year expansion vision for 10th team. Provide clear, business-focused explanations with specific examples from either interview."
+- **Welcome Message:** "Hi! I can help explain concepts from the Kevin Abrams and Stewart Johnston executive interviews. What questions do you have about NFL franchise operations, CFL league strategy, media rights, expansion, or building a sports business career?"
 - **Show System Prompt to User:** No
 
 **Design Rationale:**
 - **Kevin Abrams interview (~32 min)** delivers franchise-level perspective on how a $10B organization operates
-- **Transcript** ensures accessibility and allows text-based review
+- **Stewart Johnston interview (~35 min)** delivers league-level perspective and CFL expansion context for Anchor Project
+- **Transcripts** ensure accessibility and allow text-based review
 - **▤ Details** provides text version for students who prefer reading (UDL choice)
 - **AI Chat** offers on-demand support for questions about interview content (UDL scaffolding)
 - Multiple means of representation: video (visual+audio), transcript (text), chat (interactive)
-- Executive perspectives continue throughout course (Week 2: Al Dark/Rogers, Week 3: Andrew Sneyd/FanDuel, Week 4: Matt Rubinoff/Fairgrounds + Golf Canada, Week 5: Jamie Dinsmore/HHOF + Stewart Johnston/CFL)
-- Total viewing time: ~32 minutes
+- Executive perspectives continue throughout course (Week 2: Al Dark/Rogers, Week 3: Andrew Sneyd/FanDuel, Week 4: Matt Rubinoff/Fairgrounds + Golf Canada, Week 5: Jamie Dinsmore/HHOF)
+- Total viewing time: ~67 minutes
 
 ---
 
 ## 🌟 MENTAL BREAK #1: Pause & Recharge
 
-**You've completed:** Welcome, learning outcomes, and Kevin Abrams executive interview (~32 minutes of video content)
+**You've completed:** Welcome, learning outcomes, and two executive interviews (~67 minutes of video content)
+- Kevin Abrams (NY Giants) on franchise operations, salary cap, AI, and career paths
+- Stewart Johnston (CFL) on league leadership, expansion, and media rights
+
 **Coming next:** Five Revenue Streams deep dive with interactive exercises (~35 minutes)
 
 **Take a moment to:**
@@ -354,7 +554,7 @@ This transcript is provided for accessibility and for students who prefer readin
 - Get water or a quick snack
 - Look away from your screen (20-20-20 rule: every 20 min, look 20 feet away for 20 seconds)
 
-**Progress:** You're 25% through Week 1 content! You've heard directly from Kevin Abrams on how the NY Giants manage their $10B operation—salary cap as portfolio, AI implementation, and business-football integration. Next up you'll explore the five revenue streams in depth through videos and hands-on interactive exercises.
+**Progress:** You're 30% through Week 1 content! You've heard from two executives with very different perspectives—Kevin Abrams on how the NY Giants manage their $10B operation, and Stewart Johnston on how he's leading the CFL toward expansion and growth. Stewart's insights will directly inform your Anchor Project. Next up: the five revenue streams in depth.
 
 *This break is optional but recommended. Return when you're ready to dive into revenue streams.*
 

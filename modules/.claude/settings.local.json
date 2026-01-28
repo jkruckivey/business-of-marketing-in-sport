@@ -29,9 +29,18 @@
       "Bash(do if grep -q ..*btn.*{ $file)",
       "Bash(then if ! grep -q 'font-family: inherit' $file)",
       "Bash(then echo $file)",
-      "Bash(fi)"
+      "Bash(fi)",
+      "Bash(dir:*)",
+      "Bash(git checkout:*)"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "executeautomation-playwright-server",
+    "memory",
+    "fetch",
+    "chrome-devtools"
+  ]
 }

@@ -1,5 +1,10 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 5
-**Version:** 4.0.0 | **Last Updated:** 2026-01-20
+**Version:** 5.0.0 | **Last Updated:** 2026-01-27
+
+### Version 5.0.0 Changes
+- **REDESIGNED:** Milestone 5 now format-flexible (slides, visual presentation, or video)
+- **REMOVED:** Page limits - replaced with "board-ready" quality standard
+- **UPDATED:** Rubric emphasizes board readiness over format compliance
 
 ### Version 4.0.0 Changes
 - **SIMPLIFIED:** Milestone 5 deliverable now Executive Summary (3-4 pages) only
@@ -88,21 +93,28 @@ This is it. You've spent four weeks developing your CFL expansion franchise: mar
 ```markdown
 Title: ▪ Anchor Project Milestone 5: Final Expansion Proposal (40 points)
 
-**Deliverable:** Executive Summary (3-4 pages)
+**Deliverable:** Board-Ready Expansion Pitch
 
-**Required Sections:**
-1. **Executive Overview** (~0.5 page): Investment thesis—why this market, why now
-2. **Market & Revenue Analysis** (~1 page): City selection rationale, 5-year revenue projections by stream
-3. **Strategic Pillars** (~1 page): Media strategy, sponsorship portfolio, brand/launch approach
-4. **Financial Summary** (~0.5 page): 5-year P&L snapshot, investment required, break-even timeline
-5. **Risk Analysis** (~0.5 page): Top 3 risks and mitigation strategies
-6. **5-Year Vision** (~0.5 page): Where this franchise will be in 2031
+**Choose Your Format:**
+- Slide deck (PDF or PowerPoint)
+- Visual presentation (designed document, infographic-style)
+- Video presentation (recorded pitch)
+
+No page or slide limits—focus on what a CFL Board of Governors would need to make a decision.
+
+**Required Content (adapt to your chosen format):**
+1. **Executive Overview**: Investment thesis—why this market, why now
+2. **Market & Revenue Analysis**: City selection rationale, 5-year revenue projections by stream
+3. **Strategic Pillars**: Media strategy, sponsorship portfolio, founding sponsor, brand/launch approach
+4. **Financial Summary**: 5-year P&L snapshot, investment required, break-even timeline
+5. **Risk Analysis**: Top 3 risks and mitigation strategies
+6. **5-Year Vision**: Where this franchise will be in 2031
 
 **Grading Rubric (40 points):**
 - Strategic Coherence (12 pts): Milestones 1-4 integrated into unified vision
 - Financial Rigor (10 pts): Realistic projections, sound assumptions, clear P&L
 - Risk Assessment (8 pts): Thoughtful identification and mitigation of key risks
-- Professional Communication (10 pts): Board-ready quality, clear writing, compelling narrative
+- Board-Ready Communication (10 pts): Professional quality, compelling narrative, appropriate for executive audience
 
 **Due:** End of Week 5
 ```
@@ -117,7 +129,7 @@ Title: ▪ Anchor Project Milestone 5: Final Expansion Proposal (40 points)
 
 **Question:**
 ```
-Submit your CFL Expansion Final Proposal (Milestone 5) as a 3-4 page Executive Summary.
+Submit your CFL Expansion Final Proposal (Milestone 5) as a board-ready pitch in your chosen format.
 ```
 
 **Additional Instructions (optional):**
@@ -127,15 +139,17 @@ Your submission will be evaluated using the rubric below (40 points total):
 - Strategic Coherence (12 pts) - Milestones 1-4 integrated into unified vision
 - Financial Rigor (10 pts) - Realistic projections, sound assumptions, clear P&L
 - Risk Assessment (8 pts) - Thoughtful identification and mitigation of key risks
-- Professional Communication (10 pts) - Board-ready quality, compelling narrative
+- Board-Ready Communication (10 pts) - Professional quality, compelling narrative, appropriate for executive audience
 
-**Format Requirements:**
-- 3-4 pages maximum (single-spaced, 11pt font)
-- Include all six required sections from the brief
-- Tables and figures count toward page limit
+**Format Options:**
+- Slide deck (PDF or PowerPoint)
+- Visual presentation (designed document, infographic-style PDF)
+- Video presentation (MP4, MOV, or link to hosted video)
 
-Accepted format: PDF
-Filename suggestion: LastName_M5_FinalProposal.pdf
+No page or slide limits. Focus on what a CFL Board of Governors would need to make a decision. Include all six required content areas from the brief.
+
+Accepted formats: PDF, PPTX, MP4, MOV, or video link
+Filename suggestion: LastName_M5_FinalProposal.[extension]
 ```
 
 **Rubric Configuration:**
@@ -196,21 +210,21 @@ Identifies 3 specific, material risks tied to this market and strategy. For each
 
 ---
 
-**CRITERION 4: Professional Communication**
+**CRITERION 4: Board-Ready Communication**
 
 **Points:** 10
 
 **Description:**
-Student delivers a board-ready executive summary with concise writing, compelling narrative, and effective use of tables and figures.
+Student delivers a board-ready presentation (in their chosen format) with compelling narrative, professional quality, and appropriate depth for executive decision-making.
 
 **Does not meet expectations:** 0 points
-Document exceeds page limit, lacks clear structure, or contains significant grammar/formatting issues. Not appropriate for board presentation. Key information buried or missing.
+Presentation lacks clear structure, contains significant quality issues, or is not appropriate for a board audience. Key information buried, missing, or poorly organized. Format choice doesn't serve the content.
 
 **Partially meets expectations:** 5 points
-Meets page limit and basic structure, but writing could be more concise. Some sections stronger than others. Adequate for internal review but needs polish for board presentation.
+Adequate structure and quality, but presentation could be more polished or compelling. Some sections stronger than others. Works for internal review but needs refinement for board presentation.
 
 **Fully meets expectations:** 10 points
-Board-ready quality. Concise, clear executive writing. Strong opening that captures investment thesis. Effective use of tables/figures to convey complex information. Professional formatting. A busy executive could read this in 10 minutes and understand the complete proposal.
+Board-ready quality regardless of format chosen. Strong opening that captures investment thesis. Clear narrative arc that builds to compelling conclusion. Professional polish—a CFL Board of Governors member could engage with this and understand the complete proposal. Format choice enhances (not distracts from) the content.
 
 ---
 

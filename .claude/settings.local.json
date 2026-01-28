@@ -84,7 +84,10 @@
       "mcp__executeautomation-playwright-server__playwright_evaluate",
       "mcp__executeautomation-playwright-server__playwright_close",
       "Bash(git fetch:*)",
-      "Bash(git pull:*)"
+      "Bash(git pull:*)",
+      "Bash(python -c:*)",
+      "Bash(dir:*)",
+      "Bash(powershell -Command:*)"
     ],
     "deny": [],
     "ask": [],

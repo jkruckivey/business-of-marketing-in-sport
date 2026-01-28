@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Rights Explorer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Neutral Palette */
             --color-neutral-50: #fafafa;
             --color-neutral-100: #f5f5f5;
             --color-neutral-200: #e5e5e5;
@@ -20,68 +17,100 @@
             --color-neutral-700: #404040;
             --color-neutral-800: #262626;
             --color-neutral-900: #171717;
-
-            /* Semantic Colors */
-            --color-success: #22c55e;
-            --color-success-dark: #15803d;
-            --color-warning: #f59e0b;
-            --color-warning-dark: #d97706;
+            --color-success: #c0d1cd;
+            --color-project: #6b9085;
+            --color-project-light: #c0d1cd;
             --color-info: #3b82f6;
             --color-info-dark: #1d4ed8;
-
-            /* Accent Colors */
-            --color-accent: #bfe5e7;
-            --color-accent-dark: #5a9ea1;
-
-            --font-family-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --border-radius: 8px;
+            --border-radius-sm: 4px;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *:focus {
+            outline: 2px solid #3182ce;
+            outline-offset: 2px;
+        }
 
         body {
-            font-family: var(--font-family-primary);
-            background: var(--color-neutral-100);
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: white;
             color: var(--color-neutral-800);
-            min-height: 100vh;
             padding: 1.5rem;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        .card {
-            background: white;
-            border: 1px solid var(--color-neutral-200);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
+        .widget-box {
+            background: var(--color-neutral-50);
+            border: 2px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 1.75rem;
         }
 
-        h1 {
-            font-size: 1.5rem;
+        .widget-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .widget-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--color-neutral-800);
+            color: white;
+            padding: 0.375rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .widget-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--color-project);
+            border-radius: 50%;
+        }
+
+        .widget-title {
+            font-size: 1.375rem;
+            font-weight: 700;
             color: var(--color-neutral-900);
             margin-bottom: 0.5rem;
         }
 
-        .subtitle {
-            color: var(--color-neutral-500);
+        .widget-description {
             font-size: 0.95rem;
-            margin-bottom: 1.5rem;
+            color: var(--color-neutral-600);
+            margin-bottom: 1.25rem;
+            line-height: 1.65;
         }
 
         /* Deal comparison */
-        .deals-comparison {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        .deals-row {
+            display: flex;
             gap: 1rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
 
         .deal-card {
-            padding: 1.25rem;
-            border-radius: 8px;
+            flex: 1;
+            padding: 1rem 1.25rem;
+            border-radius: var(--border-radius-sm);
             border: 1px solid var(--color-neutral-200);
         }
 
@@ -92,15 +121,15 @@
         }
 
         .deal-card.nhl {
-            background: var(--color-neutral-50);
+            background: white;
         }
 
         .deal-league {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.375rem;
             opacity: 0.8;
         }
 
@@ -109,9 +138,9 @@
         }
 
         .deal-value {
-            font-size: 2rem;
+            font-size: 1.75rem;
             font-weight: 700;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.125rem;
         }
 
         .deal-card.nhl .deal-value {
@@ -119,7 +148,7 @@
         }
 
         .deal-detail {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             opacity: 0.9;
         }
 
@@ -129,11 +158,13 @@
 
         .comparison-question {
             text-align: center;
-            padding: 1rem;
-            background: var(--color-neutral-100);
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
+            padding: 0.875rem 1rem;
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius-sm);
+            margin-bottom: 1.25rem;
             font-weight: 500;
+            font-size: 0.9rem;
             color: var(--color-neutral-700);
         }
 
@@ -141,67 +172,70 @@
             color: var(--color-info-dark);
         }
 
-        /* Value drivers */
+        /* Section title */
         .section-title {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
             color: var(--color-neutral-900);
-            margin-bottom: 1rem;
+            margin-bottom: 0.875rem;
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--color-neutral-200);
+            border-bottom: 1px solid var(--color-neutral-200);
         }
 
+        /* Value drivers - 2x2 grid */
         .drivers-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1.25rem;
         }
 
         .driver-card {
-            padding: 1rem;
-            background: var(--color-neutral-50);
+            padding: 0.875rem 1rem;
+            background: white;
             border: 1px solid var(--color-neutral-200);
-            border-radius: 8px;
+            border-radius: var(--border-radius-sm);
         }
 
         .driver-header {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.375rem;
         }
 
         .driver-icon {
-            width: 32px;
-            height: 32px;
-            border-radius: 6px;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1rem;
-            background: var(--color-accent);
-            color: var(--color-accent-dark);
+            font-size: 0.75rem;
+            font-weight: 700;
+            background: var(--color-neutral-200);
+            color: var(--color-neutral-700);
         }
 
         .driver-name {
             font-weight: 600;
+            font-size: 0.9rem;
             color: var(--color-neutral-900);
         }
 
         .driver-desc {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--color-neutral-600);
-            line-height: 1.5;
-            margin-bottom: 0.75rem;
+            line-height: 1.45;
+            margin-bottom: 0.5rem;
         }
 
         .driver-comparison {
             display: flex;
             justify-content: space-between;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             padding-top: 0.5rem;
-            border-top: 1px solid var(--color-neutral-200);
+            border-top: 1px solid var(--color-neutral-100);
         }
 
         .driver-stat {
@@ -216,44 +250,54 @@
 
         .driver-stat-value {
             font-weight: 600;
-            color: var(--color-neutral-800);
+            color: var(--color-neutral-700);
         }
 
         .driver-stat-value.high {
-            color: var(--color-success-dark);
+            color: #15803d;
         }
 
-        /* CPM comparison */
+        /* CPM comparison - horizontal bars */
         .cpm-section {
-            margin-bottom: 1.5rem;
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius-sm);
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .cpm-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-neutral-800);
+            margin-bottom: 0.75rem;
         }
 
         .cpm-bars {
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 0.5rem;
         }
 
         .cpm-row {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.75rem;
         }
 
         .cpm-label {
-            width: 120px;
-            font-size: 0.85rem;
+            width: 100px;
+            font-size: 0.8rem;
             font-weight: 500;
-            color: var(--color-neutral-700);
+            color: var(--color-neutral-600);
         }
 
         .cpm-bar-container {
             flex: 1;
-            height: 28px;
+            height: 24px;
             background: var(--color-neutral-100);
             border-radius: 4px;
             overflow: hidden;
-            position: relative;
         }
 
         .cpm-bar {
@@ -262,8 +306,8 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            padding-right: 0.75rem;
-            font-size: 0.85rem;
+            padding-right: 0.5rem;
+            font-size: 0.75rem;
             font-weight: 600;
             color: white;
         }
@@ -274,49 +318,59 @@
         }
 
         .cpm-bar.scripted {
-            width: 35%;
+            width: 38%;
             background: var(--color-neutral-400);
         }
 
         .cpm-bar.reality {
-            width: 20%;
+            width: 17%;
             background: var(--color-neutral-300);
             color: var(--color-neutral-700);
         }
 
         .cpm-note {
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--color-neutral-500);
             margin-top: 0.5rem;
-            font-style: italic;
         }
 
         /* Key insight */
-        .insight-box {
-            background: var(--color-accent);
-            border-left: 4px solid var(--color-accent-dark);
-            border-radius: 8px;
-            padding: 1.25rem;
+        .insight-section {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-left: 3px solid var(--color-project);
+            padding: 1rem 1.25rem;
+            border-radius: var(--border-radius-sm);
         }
 
-        .insight-box h3 {
-            font-size: 0.85rem;
-            color: var(--color-accent-dark);
+        .insight-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--color-project);
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.375rem;
         }
 
-        .insight-box p {
+        .insight-text {
+            font-size: 0.9rem;
+            color: var(--color-neutral-700);
+            line-height: 1.55;
+        }
+
+        .insight-text strong {
             color: var(--color-neutral-800);
-            font-size: 0.95rem;
-            line-height: 1.6;
         }
 
-        @media (max-width: 600px) {
+        .insight-text + .insight-text {
+            margin-top: 0.625rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
             body { padding: 1rem; }
-            .card { padding: 1.5rem; }
-            .deals-comparison { grid-template-columns: 1fr; }
+            .widget-box { padding: 1.25rem; }
+            .deals-row { flex-direction: column; }
             .drivers-grid { grid-template-columns: 1fr; }
             .deal-value { font-size: 1.5rem; }
         }
@@ -324,12 +378,18 @@
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <h1>What Makes Media Rights Valuable?</h1>
-            <p class="subtitle">Understanding why broadcasters pay billions for sports</p>
+        <div class="widget-box">
+            <div class="widget-header">
+                <span class="widget-badge">Media Rights</span>
+            </div>
+
+            <h1 class="widget-title">What Makes Media Rights Valuable?</h1>
+            <p class="widget-description">
+                Understanding why broadcasters pay billions for sports—and what drives the massive gap between leagues.
+            </p>
 
             <!-- Deal comparison -->
-            <div class="deals-comparison">
+            <div class="deals-row">
                 <div class="deal-card nfl">
                     <div class="deal-league">NFL</div>
                     <div class="deal-value">$10B/year</div>
@@ -338,12 +398,12 @@
                 <div class="deal-card nhl">
                     <div class="deal-league">NHL (U.S. Rights)</div>
                     <div class="deal-value">~$625M/year</div>
-                    <div class="deal-detail">$5B over 8 years (ESPN/TNT)<br><span style="font-size: 0.75rem; opacity: 0.8;">Global rights total ~$1B+/year</span></div>
+                    <div class="deal-detail">$5B over 8 years (ESPN/TNT)</div>
                 </div>
             </div>
 
             <div class="comparison-question">
-                The NFL deal is roughly <strong>10-16× larger</strong>, depending on how NHL rights are measured. Why?
+                The NFL deal is roughly <strong>16× larger</strong>. Why such a massive gap?
             </div>
 
             <!-- Value drivers -->
@@ -355,16 +415,14 @@
                         <div class="driver-icon">1</div>
                         <span class="driver-name">Audience Size</span>
                     </div>
-                    <div class="driver-desc">
-                        More viewers = more ad impressions = higher value. NFL averages 17M viewers; NHL national broadcasts typically draw 0.5-1.2M.
-                    </div>
+                    <p class="driver-desc">More viewers = more ad impressions = higher value.</p>
                     <div class="driver-comparison">
                         <div class="driver-stat">
-                            <span class="driver-stat-label">NFL</span>
-                            <span class="driver-stat-value high">17M avg</span>
+                            <span class="driver-stat-label">NFL avg</span>
+                            <span class="driver-stat-value high">17M</span>
                         </div>
                         <div class="driver-stat">
-                            <span class="driver-stat-label">NHL</span>
+                            <span class="driver-stat-label">NHL avg</span>
                             <span class="driver-stat-value">0.5-1.2M</span>
                         </div>
                     </div>
@@ -375,9 +433,7 @@
                         <div class="driver-icon">2</div>
                         <span class="driver-name">Demographics</span>
                     </div>
-                    <div class="driver-desc">
-                        Advertisers pay premium for the 18-49 demographic. Sports audiences skew younger and more affluent than most scripted TV.
-                    </div>
+                    <p class="driver-desc">Advertisers pay premium for 18-49, affluent viewers.</p>
                     <div class="driver-comparison">
                         <div class="driver-stat">
                             <span class="driver-stat-label">Key demo</span>
@@ -393,19 +449,17 @@
                 <div class="driver-card">
                     <div class="driver-header">
                         <div class="driver-icon">3</div>
-                        <span class="driver-name">Exclusivity</span>
+                        <span class="driver-name">Live Viewing</span>
                     </div>
-                    <div class="driver-desc">
-                        Live sports lose value when watched later, so audiences watch in real time. Viewers see ads because they won't skip ahead.
-                    </div>
+                    <p class="driver-desc">Sports lose value when watched later—viewers see ads live.</p>
                     <div class="driver-comparison">
                         <div class="driver-stat">
                             <span class="driver-stat-label">Sports</span>
-                            <span class="driver-stat-value high">Mostly live</span>
+                            <span class="driver-stat-value high">95% live</span>
                         </div>
                         <div class="driver-stat">
                             <span class="driver-stat-label">Scripted</span>
-                            <span class="driver-stat-value">Often delayed</span>
+                            <span class="driver-stat-value">~50% live</span>
                         </div>
                     </div>
                 </div>
@@ -415,9 +469,7 @@
                         <div class="driver-icon">4</div>
                         <span class="driver-name">Scarcity</span>
                     </div>
-                    <div class="driver-desc">
-                        The NFL concentrates massive audiences into a small number of nationally televised games, creating scarcity that drives bidding wars.
-                    </div>
+                    <p class="driver-desc">Limited national games create bidding wars among networks.</p>
                     <div class="driver-comparison">
                         <div class="driver-stat">
                             <span class="driver-stat-label">NFL nat'l/wk</span>
@@ -432,14 +484,13 @@
             </div>
 
             <!-- CPM comparison -->
-            <h2 class="section-title">Why Sports Command Premium Ad Rates</h2>
-
             <div class="cpm-section">
+                <div class="cpm-title">Why Sports Command Premium Ad Rates (CPM)</div>
                 <div class="cpm-bars">
                     <div class="cpm-row">
                         <span class="cpm-label">Live Sports</span>
                         <div class="cpm-bar-container">
-                            <div class="cpm-bar sports">$50-70 CPM</div>
+                            <div class="cpm-bar sports">$50-70</div>
                         </div>
                     </div>
                     <div class="cpm-row">
@@ -455,14 +506,18 @@
                         </div>
                     </div>
                 </div>
-                <p class="cpm-note">CPM = Cost per thousand viewers. Sports deliver 3-4× the ad value of scripted programming. <em>Typical ranges; actual CPM varies by event and network.</em></p>
+                <p class="cpm-note">CPM = Cost per thousand viewers. Sports deliver 3-4× the ad value of scripted programming.</p>
             </div>
 
             <!-- Key insight -->
-            <div class="insight-box">
-                <h3>Key Insight</h3>
-                <p>Sports are <strong>"appointment viewing"</strong> — fans watch live because outcomes matter in real-time. This makes sports one of the last reliable sources of mass, engaged audiences in a fragmented media landscape. The average NFL game attracts more viewers than the World Series, NBA Finals, or Oscars.</p>
-                <p style="margin-top: 0.75rem;">Media rights value is driven not just by audience size, but by <strong>predictability and advertiser confidence</strong>. That's why broadcasters pay billions: not just for viewers, but for viewers who actually watch the ads.</p>
+            <div class="insight-section">
+                <div class="insight-label">Key Insight</div>
+                <p class="insight-text">
+                    Sports are <strong>"appointment viewing"</strong>—fans watch live because outcomes matter in real-time. This makes sports one of the last reliable sources of mass, engaged audiences in a fragmented media landscape.
+                </p>
+                <p class="insight-text">
+                    Media rights value is driven not just by audience size, but by <strong>predictability and advertiser confidence</strong>. Broadcasters pay billions for viewers who actually watch the ads.
+                </p>
             </div>
         </div>
     </div>

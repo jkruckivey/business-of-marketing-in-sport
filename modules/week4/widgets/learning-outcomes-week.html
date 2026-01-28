@@ -34,35 +34,37 @@
         *:focus { outline: 2px solid #3182ce; outline-offset: 2px; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Geist', -apple-system, sans-serif; background: white; color: var(--color-neutral-800); padding: 1.5rem; line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; }
-        .header { text-align: center; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 2px solid var(--color-neutral-200); }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 2px solid var(--color-neutral-200); }
         .week-badge { display: inline-block; background: var(--color-neutral-800); color: white; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; margin-bottom: 0.75rem; }
         .header h2 { color: var(--color-neutral-900); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
         .header p { color: var(--color-neutral-500); font-size: 0.95rem; }
-        .outcomes-section { margin-bottom: 2rem; }
-        .outcomes-section h3 { color: var(--color-neutral-900); font-size: 1.1rem; font-weight: 600; margin-bottom: 1rem; }
-        .outcome-card { background: white; border: 2px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1rem; transition: all 0.2s ease; cursor: pointer; }
+        .outcomes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: start; }
+        .outcomes-section { margin-bottom: 0; }
+        .outcomes-section h3 { color: var(--color-neutral-900); font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
+        .outcome-card { background: white; border: 2px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1rem; margin-bottom: 0.75rem; transition: all 0.2s ease; cursor: pointer; }
         .outcome-card:hover { border-color: var(--color-wlo); box-shadow: 0 2px 8px rgba(90,158,161,0.15); }
         .outcome-card.active { border-color: var(--color-wlo); border-width: 2px; background: white; box-shadow: 0 4px 12px rgba(90,158,161,0.2); }
-        .outcome-header { display: flex; align-items: flex-start; gap: 0.75rem; }
-        .outcome-code { background: var(--color-wlo); color: white; padding: 0.25rem 0.625rem; border-radius: var(--border-radius-sm); font-size: 0.8rem; font-weight: 600; white-space: nowrap; flex-shrink: 0; }
-        .outcome-text { color: var(--color-neutral-700); font-size: 0.95rem; flex-grow: 1; }
-        .clo-connection { color: var(--color-neutral-500); font-size: 0.8rem; margin-top: 0.5rem; padding-left: calc(0.75rem + 60px); display: none; }
+        .outcome-header { display: flex; align-items: flex-start; gap: 0.5rem; }
+        .outcome-code { background: var(--color-wlo); color: white; padding: 0.2rem 0.5rem; border-radius: var(--border-radius-sm); font-size: 0.75rem; font-weight: 600; white-space: nowrap; flex-shrink: 0; }
+        .outcome-text { color: var(--color-neutral-700); font-size: 0.875rem; flex-grow: 1; }
+        .clo-connection { color: var(--color-neutral-500); font-size: 0.75rem; margin-top: 0.5rem; display: none; }
         .outcome-card.active .clo-connection { display: block; }
-        .clo-section { background: var(--color-neutral-50); border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; }
-        .clo-section h3 { color: var(--color-neutral-900); font-size: 1rem; font-weight: 600; margin-bottom: 1rem; }
-        .clo-item { background: white; border: 1px solid var(--color-neutral-200); border-radius: 6px; padding: 1rem; margin-bottom: 0.75rem; opacity: 0.5; transition: all 0.3s ease; }
+        .clo-section { background: var(--color-neutral-50); border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1rem; }
+        .clo-section h3 { color: var(--color-neutral-900); font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; }
+        .clo-item { background: white; border: 1px solid var(--color-neutral-200); border-radius: 6px; padding: 0.75rem; margin-bottom: 0.5rem; opacity: 0.5; transition: all 0.3s ease; }
+        .clo-item:last-child { margin-bottom: 0; }
         .clo-item.highlighted { opacity: 1; border-color: var(--color-clo); border-width: 2px; box-shadow: 0 4px 12px rgba(107,144,133,0.2); }
-        .clo-header { display: flex; align-items: flex-start; gap: 0.75rem; }
-        .clo-code { background: var(--color-neutral-500); color: white; padding: 0.25rem 0.5rem; border-radius: var(--border-radius-sm); font-size: 0.75rem; font-weight: 600; white-space: nowrap; }
+        .clo-header { display: flex; align-items: flex-start; gap: 0.5rem; }
+        .clo-code { background: var(--color-neutral-500); color: white; padding: 0.2rem 0.4rem; border-radius: var(--border-radius-sm); font-size: 0.7rem; font-weight: 600; white-space: nowrap; }
         .clo-item.highlighted .clo-code { background: var(--color-clo); }
-        .clo-text { color: var(--color-neutral-700); font-size: 0.9rem; }
-        .help-text { background: var(--color-neutral-50); border-left: 3px solid var(--color-wlo); padding: 0.75rem 1rem; margin-top: 1.5rem; border-radius: var(--border-radius-sm); }
-        .help-text p { color: var(--color-neutral-600); font-size: 0.85rem; }
-        @media (max-width: 640px) {
+        .clo-text { color: var(--color-neutral-700); font-size: 0.8rem; }
+        .help-text { background: var(--color-neutral-50); border-left: 3px solid var(--color-wlo); padding: 0.75rem 1rem; margin-top: 1.25rem; border-radius: var(--border-radius-sm); }
+        .help-text p { color: var(--color-neutral-600); font-size: 0.8rem; }
+        @media (max-width: 768px) {
+            .outcomes-grid { grid-template-columns: 1fr; gap: 1.25rem; }
             body { padding: 1rem; }
             .outcome-header, .clo-header { flex-direction: column; gap: 0.5rem; }
-            .clo-connection { padding-left: 0; }
         }
     </style>
 </head>
@@ -73,14 +75,16 @@
             <h2>Athletes, Brands & Emerging Sports</h2>
         </div>
 
-        <div class="outcomes-section">
-            <h3>Week Learning Outcomes</h3>
-            <div id="mlo-list"></div>
-        </div>
+        <div class="outcomes-grid">
+            <div class="outcomes-section">
+                <h3>Week Learning Outcomes</h3>
+                <div id="mlo-list"></div>
+            </div>
 
-        <div class="clo-section">
-            <h3>Course Learning Outcomes Connection</h3>
-            <div id="clo-list"></div>
+            <div class="clo-section">
+                <h3>Course Learning Outcomes</h3>
+                <div id="clo-list"></div>
+            </div>
         </div>
 
         <div class="help-text">

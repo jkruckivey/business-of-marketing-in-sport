@@ -1,5 +1,11 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 1
-**Version:** 2.3.0 | **Last Updated:** 2026-01-21
+**Version:** 2.5.0 | **Last Updated:** 2026-01-26
+
+### Version 2.5.0 Changes
+- **REMOVED:** Element 5A - Rogers NHL Deal video (moved to Week 2 Module 0 bridge-in to avoid redundancy)
+
+### Version 2.4.0 Changes
+- **ADDED:** Element 5A - Rogers NHL Deal video (Week 2 preview, 1:44)
 
 ### Version 2.3.0 Changes
 - **MODIFIED:** Element 2A - CFL City Selector simplified to reference tool (removed rationale textarea and export, students submit via LMS)

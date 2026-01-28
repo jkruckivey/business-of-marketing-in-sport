@@ -18,6 +18,9 @@ package-lock.json
 # Claude Code settings
 .claude/
 
+# Large media files
+*.mp4
+
 # Interviews folder - development artifacts
 Interviews/create-docx.js
 Interviews/package.json

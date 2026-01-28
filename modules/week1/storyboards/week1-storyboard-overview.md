@@ -27,29 +27,34 @@ This storyboard has been split into individual module files for easier navigatio
    - Week overview and learning outcomes
    - Course navigation and expectations
 
-3. **[Inside the Sports Business](modules/module-2-executive.md)** (3.6 KB)
-   - Recorded session with sports business executive
-   - Real-world context and industry insights
+3. **[Executive Perspective: Kevin Abrams](modules/module-2-executive.md)** (3.6 KB)
+   - NY Giants SVP Football Operations & Strategy (~32 min)
+   - Salary cap as portfolio, AI implementation, business-football integration
 
-4. **[Five Revenue Streams That Power Sports](modules/module-3-core-content.md)** (43 KB)
+4. **[Leadership at League Level: Stewart Johnston](modules/stewart-johnston-interview.md)** (15 KB) ⭐ ANCHOR PROJECT
+   - CFL Commissioner (~35 min)
+   - Three strategic priorities, 10-year expansion vision
+   - **Essential context for your CFL expansion project**
+
+5. **[Five Revenue Streams That Power Sports](modules/module-3-core-content.md)** (43 KB)
    - **V3 INTERACTIVE-FIRST REDESIGN** (75% active engagement)
    - 8 interactive widgets demonstrating revenue concepts
    - Text reduced from 3,500 → 1,000 words
    - **Time**: ~35 minutes
 
-5. **[Build Your Revenue Empire](modules/module-4-interactive.md)** (11 KB)
+6. **[Build Your Revenue Empire](modules/module-4-interactive.md)** (11 KB)
    - Simulation: Build $500M revenue portfolio
    - Strategic decision-making with trade-offs
 
-6. **[The Predators Problem](modules/module-5-case-study.md)** (12 KB)
+7. **[The Predators Problem](modules/module-5-case-study.md)** (12 KB)
    - Real case analysis applying Week 1 frameworks
    - Nashville Predators market feasibility and marketing strategy
 
-7. **[Your Executive Memo](modules/module-6-assessment.md)** (25 KB)
+8. **[Your Executive Memo](modules/module-6-assessment.md)** (25 KB)
    - Executive memo assignment (WLO 1.1-1.4)
    - QM-aligned rubric with detailed criteria
 
-8. **[Looking Ahead to Week 2](modules/module-7-wrap-up.md)** (5 KB)
+9. **[Looking Ahead to Week 2](modules/module-7-wrap-up.md)** (5 KB)
    - Week 1 synthesis and Week 2 preview
    - Discussion forum and peer review
 
@@ -126,27 +131,30 @@ By the end of this week, students will be able to:
 - "Revenue Sharing - Why Sports Leagues Are Different" (8 min)
 - "The Rogers NHL Deal - A $5.2 Billion Case Study" (10 min)
 
-**Executive Interview:**
-- Kevin Abrams (SVP Football Operations & Strategy, NY Giants) - ~32 min - Module 2
-- File: `Interviews/Kevin Abrams Interview.mp4`
+**Executive Interviews:**
+
+**Kevin Abrams** (SVP Football Operations & Strategy, NY Giants) - ~32 min - Module 3
+- File: `Interviews/Kevin Abrams, SVP Football Operations and Strategy New York Giants.mp4`
 - Transcript: Available
 
-**Key Marketing Highlights from Kevin Abrams Interview:**
-
 > "We're a **$10 billion mom and pop shop**"
-
 > "We used to treat the salary cap like a **checking account**, now we understand it's a **portfolio**"
-
 > "The **quality of the prompt dictates the quality of the output**" — on AI implementation
 
-> "Players are coming out of college now where **they are brands**" — on the NIL era
+**Stewart Johnston** (Commissioner, Canadian Football League) - ~35 min - Module 4 ⭐ ANCHOR PROJECT
+- File: `Interviews/Stewart Johnston - Commissioner, Canadian Football League.mp4`
+- Transcript: Available
 
-**Key Stats:**
-- 25+ years with NY Giants organization
-- $10B franchise valuation (most valuable in NFL)
-- Enterprise AI deployed across talent evaluation, HR, and operations
+> "This is a **CEO job**. The nine team owners have to deliver returns."
+> "If we haven't got a **10th team in 10 years**, I'll be disappointed."
+> "Entertainment, getting footballs into kids' hands, creating nine profitable teams—**those come first**."
+
+**Key Context:**
+- Kevin Abrams: 25+ years with NY Giants, $10B franchise, AI implementation leader
+- Stewart Johnston: 27 years at Bell/TSN, CFL Commissioner since 2024, media rights expert
+- **Total executive viewing time:** ~67 minutes
 
 ---
 
-**Last Updated**: 2026-01-22
-**Version**: 3.2 (Added simplified widget mapping - Explorer + MCQ format replaces complex simulators)
+**Last Updated**: 2026-01-26
+**Version**: 3.3 (Added Stewart Johnston interview as standalone module; split executive interviews into separate pages)

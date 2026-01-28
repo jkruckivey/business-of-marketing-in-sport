@@ -1,5 +1,10 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 4
-**Version:** 2.2.0 | **Last Updated:** 2026-01-14
+**Version:** 2.3.0 | **Last Updated:** 2026-01-27
+
+### Version 2.3.0 Changes
+- **ADDED:** Founding Sponsor Partner as required component (connects to Week 3 sponsorship content)
+- **RENAMED:** "Ambassador Strategy" → "Athlete Ambassador Strategy" for clarity
+- **REDISTRIBUTED:** Rubric points to accommodate new sponsor partner criterion (still 20 pts total)
 
 ### Version 2.2.0 Changes
 - **ADDED:** Element 6 - Recommended Readings (Serena Williams Brand Strategy)
@@ -48,16 +53,17 @@ You've completed your deep dive into athlete brands and emerging sports! The fiv
 2. Copy markdown below:
 
 ```markdown
-## CFL Expansion Project: Milestone 4 - Brand Ambassador & Launch Strategy
+## CFL Expansion Project: Milestone 4 - Sponsor, Ambassador & Launch Strategy
 
-Your CFL expansion franchise needs more than sponsors—it needs faces. In Milestones 1-3, you analyzed the market, designed media strategy, and built a sponsorship portfolio. Now you'll create a brand ambassador strategy and launch campaign.
+Your CFL expansion franchise needs a founding sponsor partner and athlete ambassadors to build credibility before the first game. In Milestones 1-3, you analyzed the market, designed media strategy, and built a sponsorship portfolio. Now you'll identify your primary sponsor, recruit athlete ambassadors, and design a launch campaign.
 
-**Your Challenge:** Design a brand ambassador and launch strategy for your CFL expansion team that leverages athlete brands to build market presence.
+**Your Challenge:** Identify your founding sponsor partner, design an athlete ambassador strategy, and create a launch campaign for your CFL expansion team.
 
-**Why This Matters:** New franchises lack the 50-year history that established teams use to build fan loyalty. Athlete ambassadors can accelerate brand building by lending their personal brands to your new franchise.
+**Why This Matters:** New franchises lack the 50-year history that established teams use to build fan loyalty. A credible founding sponsor signals market viability, while athlete ambassadors accelerate brand building by lending their personal brands to your new franchise.
 
-**Apply Week 4 Frameworks:**
-- Identify potential brand ambassadors (current/former CFL players, local athletes)
+**Apply Week 3 & 4 Frameworks:**
+- Identify a founding sponsor partner that fits your market (Week 3 sponsorship frameworks)
+- Select athlete ambassadors (current/former CFL players, local athletes, community figures)
 - Apply the owned vs. endorsed analysis to your ambassador strategy
 - Consider how women's sports athletes might open new fan segments
 - Design a launch campaign that builds buzz before the first game
@@ -142,20 +148,22 @@ Export your brand package. Reference these choices in your Milestone 4 submissio
 3. Copy markdown below:
 
 ```markdown
-Title: ▪ Anchor Project Milestone 4: Brand Ambassador & Launch Strategy (20 points)
+Title: ▪ Anchor Project Milestone 4: Sponsor, Ambassador & Launch Strategy (20 points)
 
-**Deliverable:** 2-3 page brand ambassador and launch strategy
+**Deliverable:** 2-3 page sponsor, ambassador, and launch strategy
 
 **Required Components:**
-1. **Ambassador Strategy** (1 page): 2-3 target ambassadors with rationale, roles, and activation plans
-2. **Launch Campaign Timeline** (1 page): 18-month pre-launch to first game campaign with key milestones
-3. **Community Integration** (0.5 page): Youth programs, school partnerships, and local talent pipeline
+1. **Founding Sponsor Partner** (0.5 page): Identify your primary corporate sponsor (e.g., naming rights, jersey sponsor) with strategic rationale for why this brand fits your market and team
+2. **Athlete Ambassador Strategy** (0.5-1 page): 2-3 target athlete ambassadors (CFL players, local athletes, community figures) with rationale, roles, and activation plans
+3. **Launch Campaign Timeline** (1 page): 18-month pre-launch to first game campaign with key milestones
+4. **Community Integration** (0.5 page): Youth programs, school partnerships, and local talent pipeline
 
 **Grading Rubric (20 points):**
-- Ambassador Selection (6 pts): Strategic ambassador choices with clear rationale and fit
+- Founding Sponsor Partner (4 pts): Strategic sponsor selection with clear fit to market and brand
+- Athlete Ambassador Selection (4 pts): Strategic athlete choices with clear rationale and fit
 - Launch Campaign (6 pts): Creative, feasible timeline with measurable milestones
-- Community Integration (4 pts): Authentic local connections beyond transactional sponsorship
-- Professional Presentation (4 pts): Clear writing, logical organization
+- Community Integration (3 pts): Authentic local connections beyond transactional sponsorship
+- Professional Presentation (3 pts): Clear writing, logical organization
 
 **Due:** End of Week 4
 
@@ -172,17 +180,18 @@ Title: ▪ Anchor Project Milestone 4: Brand Ambassador & Launch Strategy (20 po
 
 **Question:**
 ```
-Submit your CFL Expansion Milestone 4: Brand Ambassador & Launch Strategy. Your submission should be 2-3 pages and include all 3 required components: Ambassador Strategy, Launch Campaign Timeline, and Community Integration.
+Submit your CFL Expansion Milestone 4: Sponsor, Ambassador & Launch Strategy. Your submission should be 2-3 pages and include all 4 required components: Founding Sponsor Partner, Athlete Ambassador Strategy, Launch Campaign Timeline, and Community Integration.
 ```
 
 **Additional Instructions (optional):**
 ```
 Your submission will be evaluated using the rubric below (20 points total):
 
-• Ambassador Selection (6 pts) - Strategic choices with clear rationale
+• Founding Sponsor Partner (4 pts) - Strategic sponsor selection with clear fit to market and brand
+• Athlete Ambassador Selection (4 pts) - Strategic athlete choices with clear rationale
 • Launch Campaign (6 pts) - Creative, feasible timeline with milestones
-• Community Integration (4 pts) - Authentic local connections
-• Professional Presentation (4 pts) - Clear writing, logical organization
+• Community Integration (3 pts) - Authentic local connections
+• Professional Presentation (3 pts) - Clear writing, logical organization
 
 Accepted formats: PDF, DOCX
 Filename suggestion: LastName_M4_LaunchStrategy.pdf
@@ -194,25 +203,43 @@ Filename suggestion: LastName_M4_LaunchStrategy.pdf
 
 ---
 
-**CRITERION 1: Ambassador Selection**
+**CRITERION 1: Founding Sponsor Partner**
 
-**Points:** 6
+**Points:** 4
 
 **Description:**
-Student selects strategic brand ambassadors with clear rationale for how they fit the market and franchise brand positioning.
+Student identifies a primary corporate sponsor with strategic rationale for why this brand fits their market and team positioning.
+
+**Does not meet expectations:** 0 points
+No sponsor identified, or selection is unrealistic (e.g., global brands unlikely to sponsor a CFL expansion team). No rationale for why this sponsor fits the market or team brand. Doesn't demonstrate understanding of Week 3 sponsorship frameworks.
+
+**Partially meets expectations:** 2 points
+Sponsor identified but rationale incomplete. May select an appropriate brand without explaining strategic fit. Limited connection to market characteristics from Milestone 1 or sponsorship value proposition.
+
+**Fully meets expectations:** 4 points
+Strategic sponsor selection with clear rationale. Explains why this brand fits the market (e.g., regional headquarters, target demographics, brand values alignment). Identifies specific sponsorship assets (naming rights, jersey, in-stadium). Shows understanding of Week 3 sponsorship valuation and activation frameworks.
+
+---
+
+**CRITERION 2: Athlete Ambassador Selection**
+
+**Points:** 4
+
+**Description:**
+Student selects strategic athlete ambassadors with clear rationale for how they fit the market and franchise brand positioning.
 
 **Does not meet expectations:** 0 points
 Ambassador choices missing or inappropriate (e.g., selecting global superstars unrealistic for CFL budget). No rationale for selections. No connection between ambassadors and market characteristics or brand positioning.
 
-**Partially meets expectations:** 3 points
+**Partially meets expectations:** 2 points
 Ambassador choices present but rationale incomplete. May select appropriate athletes without explaining strategic fit. Limited connection to market from Milestone 1 or brand identity.
 
-**Fully meets expectations:** 6 points
-Strategic ambassador choices with clear rationale. Explains why these athletes fit the market and brand. Considers local connections, CFL alumni, emerging athletes, or community figures. Shows understanding of Week 4 athlete brand frameworks.
+**Fully meets expectations:** 4 points
+Strategic athlete ambassador choices with clear rationale. Explains why these athletes fit the market and brand. Considers local connections, CFL alumni, emerging athletes, or community figures. Shows understanding of Week 4 athlete brand frameworks.
 
 ---
 
-**CRITERION 2: Launch Campaign**
+**CRITERION 3: Launch Campaign**
 
 **Points:** 6
 
@@ -230,9 +257,9 @@ Creative, feasible 18-month timeline from pre-launch to first game. Clear milest
 
 ---
 
-**CRITERION 3: Community Integration**
+**CRITERION 4: Community Integration**
 
-**Points:** 4
+**Points:** 3
 
 **Description:**
 Student develops authentic community integration strategies that build long-term relationships beyond transactional sponsorship.
@@ -240,17 +267,17 @@ Student develops authentic community integration strategies that build long-term
 **Does not meet expectations:** 0 points
 No community strategy or only transactional approaches ("sponsor local events"). Doesn't demonstrate understanding of how sports franchises build authentic community connections.
 
-**Partially meets expectations:** 2 points
+**Partially meets expectations:** 1.5 points
 Community ideas present but feel generic. May list programs without explaining how they build long-term relationships. Limited connection to specific community characteristics of chosen market.
 
-**Fully meets expectations:** 4 points
-Authentic community integration beyond transactional sponsorship. Specific programs tailored to market (youth programs, school partnerships, charitable foundation). Shows how franchise becomes part of community fabric. Demonstrates Week 4 understanding of brand building through community.
+**Fully meets expectations:** 3 points
+Authentic community integration beyond transactional sponsorship. Specific programs tailored to market (youth programs, school partnerships, charitable foundation). Shows how franchise becomes part of community fabric.
 
 ---
 
-**CRITERION 4: Professional Presentation**
+**CRITERION 5: Professional Presentation**
 
-**Points:** 4
+**Points:** 3
 
 **Description:**
 Student delivers a clear, well-organized document with professional writing and effective use of visual elements.
@@ -258,10 +285,10 @@ Student delivers a clear, well-organized document with professional writing and 
 **Does not meet expectations:** 0 points
 Document poorly organized, contains significant errors, or exceeds page limit substantially. Missing required sections or difficult to follow.
 
-**Partially meets expectations:** 2 points
+**Partially meets expectations:** 1.5 points
 Meets basic requirements but writing could be clearer. Some organizational issues or minor errors. Adequate but not polished.
 
-**Fully meets expectations:** 4 points
+**Fully meets expectations:** 3 points
 Clear, professional writing. Logical organization with all required sections. Appropriate length (2-3 pages). Visual elements (timeline, diagrams) used effectively. Ready for business review.
 
 ---

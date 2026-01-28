@@ -31,7 +31,8 @@
       "Bash(then echo $file)",
       "Bash(fi)",
       "Bash(dir:*)",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\modules\\\\shared-resources\\\\CFL-SME-FEEDBACK-UPDATES.md\")"
     ],
     "deny": [],
     "ask": []

@@ -1,7 +1,7 @@
 # CFL League Expansion Project
 ## Team-Based Capstone Project - Business of Sports Marketing
 
-**Version:** 1.1.0 | **Last Updated:** 2025-12-07
+**Version:** 1.2.0 | **Last Updated:** 2026-01-27
 **Status:** Ready for implementation
 
 ---
@@ -58,14 +58,16 @@ Your expansion proposal must demonstrate how a 10th team advances these prioriti
    - Population and demographics (minimum viable market size)
    - Existing sports landscape (competition for attention/dollars)
    - Corporate base for sponsorship potential
-   - Stadium/venue options (existing or new build)
+   - **Stadium/venue options (existing or new build)** - CFL identifies this as the #1 barrier to expansion
    - Historical CFL presence or football culture
+   - Potential stadium development partners (sponsors who could fund a new facility)
 
 2. **5-Year Revenue Projections**
    Using the Week 1 revenue stream framework, project Year 1-5 revenue across:
-   - Media rights allocation (CFL revenue sharing model)
+   - Media rights allocation (league revenue sharing—you receive a share, you don't negotiate)
+   - Local radio/audio rights (what you control directly)
    - Ticketing (capacity, pricing tiers, attendance projections)
-   - Sponsorship (local market potential)
+   - Sponsorship (local market potential + stadium partner)
    - Merchandising (new market dynamics)
    - Betting partnerships (provincial regulations)
 
@@ -102,27 +104,32 @@ Stewart identified the **two biggest league-level revenue drivers**: media right
 
 #### Deliverable: Media Strategy Memo (3-4 pages)
 
-**How will your franchise maximize media value?**
+**How will your franchise maximize media value within CFL's league-wide structure?**
 
-1. **CFL Media Rights Context**
-   - Current CFL-TSN deal structure
-   - How does expansion affect league-wide media rights?
-   - Revenue sharing implications for new franchise
+> **CFL Reality Check:** Media rights are negotiated at the **LEAGUE level only**—the CFL-TSN deal covers all teams. An expansion franchise cannot negotiate its own broadcast or streaming deals. Your team controls only **Local Radio** and **Local Audio** rights, plus content strategy.
 
-2. **Local Media Strategy**
-   - Local broadcast partnerships
-   - Regional sports network opportunities
-   - Digital/streaming presence
+1. **CFL Media Rights Context (What You Receive)**
+   - Current CFL-TSN deal structure (league-wide, not team-negotiated)
+   - Revenue sharing model: How does your franchise receive media revenue?
+   - How does adding a 10th team strengthen the league's media rights value?
+
+2. **Local Media Rights (What You Control)**
+   - **Local Radio partnerships** - play-by-play, pre/post-game shows
+   - **Local Audio rights** - podcasts, digital audio content
+   - Shoulder season content opportunities (limited windows)
+   - Note: TV/streaming rights remain with TSN through league deal
 
 3. **Content & Fan Engagement Plan**
    - Social media strategy for new market
    - Content creation (behind-the-scenes, player features)
    - Community building before first game
+   - How your content adds value to the league-wide TSN package
 
-4. **Streaming vs. Traditional**
+4. **Digital Integration**
    - Target audience media consumption habits
-   - Platform strategy (TSN+, YouTube, team app)
-   - Second-screen experience
+   - Integration with CFL platforms (TSN+, CFL app, fantasy game)
+   - Team-specific digital presence (website, social, YouTube)
+   - Second-screen experience for game days
 
 **Apply Al Dark's Insights:**
 - How would Rogers/TSN view this expansion market?
@@ -137,7 +144,7 @@ Stewart brings 27 years of Bell Media/TSN experience—he's been on both sides o
 - **Youth engagement**: Content on platforms where younger demographics consume media (YouTube, social-first)
 
 **Stewart's Unique Perspective:**
-As former Bell Media executive, Stewart understands what makes content valuable to broadcasters. Your media strategy should address how your franchise makes the CFL more valuable to TSN.
+As former Bell Media executive, Stewart understands what makes content valuable to broadcasters. Your content strategy should address how your franchise makes the **entire CFL** more valuable to TSN—not how you negotiate your own deal.
 
 **Rubric Alignment:** WLO 2.1, 2.2, 2.3, 2.4
 
@@ -148,28 +155,42 @@ As former Bell Media executive, Stewart understands what makes content valuable 
 
 #### Deliverable: Sponsorship Acquisition Plan (3-4 pages)
 
-**How will your franchise generate sponsorship revenue?**
+**How will your franchise generate sponsorship revenue—starting with the stadium?**
 
-1. **Sponsorship Inventory**
-   - Naming rights (stadium, practice facility)
+> **CFL Reality Check:** The **#1 barrier to expansion is the BUILDING**. Any expansion city needs a facility to host games. This creates the most significant sponsorship opportunity: a founding partner who helps fund the stadium bid and construction in exchange for naming rights and long-term partnership.
+
+1. **Stadium Development Partnership (Critical Path)**
+   - **The expansion barrier:** Your city needs a CFL-ready stadium (minimum 20,000+ capacity)
+   - **The sponsorship opportunity:** A founding sponsor who partners on:
+     - Supporting the expansion bid itself
+     - Stadium construction or renovation funding
+     - Long-term naming rights (15-25 year deal)
+   - **Example:** London, ON → "London Life Stadium" (London Life supports bid + funds construction + naming rights)
+   - This is your **anchor deal**—the partnership that makes expansion viable
+   - Identify 2-3 potential stadium partners in your market (insurance, banking, telecom, major employers)
+
+2. **Sponsorship Inventory**
+   - Stadium naming rights (tied to stadium partner above)
+   - Practice facility naming rights
    - Jersey sponsors (front, sleeve, helmet)
    - Category partnerships (automotive, banking, telecom, beer)
    - Community partnerships (local businesses)
 
-2. **Tiered Sponsorship Structure**
+3. **Tiered Sponsorship Structure**
+   - **Stadium Partner tier** ($XX million, 15-25 year commitment) - NEW
    - Founding Partner tier ($X million, multi-year)
    - Premier Partner tier
    - Official Partner tier
    - Community Partner tier
    - Pricing and ROI projections for each tier
 
-3. **Activation Strategy**
+4. **Activation Strategy**
    - How will sponsors activate beyond logo placement?
    - Fan experience integrations
    - Digital/social activations
    - Community program sponsorships
 
-4. **Sports Betting Integration**
+5. **Sports Betting Integration**
    - Provincial betting regulations in your market
    - Betting operator partnership opportunities
    - In-stadium betting experience
@@ -180,6 +201,9 @@ As former Bell Media executive, Stewart understands what makes content valuable 
 - "Trust, Easy, Fun" - How does this apply to sponsor relationships?
 - Customer acquisition through betting partnerships
 - Measuring sponsorship ROI
+
+**CFL Insight on Stadium Partnership:**
+The CFL has emphasized that stadium development is the critical path to expansion. Your sponsorship strategy must address HOW your city will have a stadium—and the founding sponsor who makes it possible. This isn't just naming rights; it's a strategic partnership that unlocks the expansion opportunity.
 
 **Rubric Alignment:** WLO 3.1, 3.2, 3.3, 3.4
 
@@ -454,8 +478,10 @@ Stewart said: "If we haven't got a 10th team in Canada by ten years from now, I'
 
 | Version | Date | Changes |
 |---------|------|---------|
+| 1.2.0 | 2026-01-27 | Updated per CFL feedback: (1) Media rights clarified as league-level only—teams control Local Radio/Audio only; (2) Stadium Development Partnership added as #1 barrier and top-tier sponsorship opportunity |
+| 1.1.0 | 2025-12-07 | Added Stewart Johnston interview connections throughout |
 | 1.0.0 | 2025-12-05 | Initial creation - replaces previous Anchor Project |
 
 ---
 
-**Note:** CFL Commissioner interview (TBD) will provide additional context on league expansion strategy and may inform project requirements once available.
+**Note:** This project incorporates direct feedback from the CFL, who reviewed the assignment scope and confirmed: (1) media rights are league-level only, and (2) stadium development is the critical barrier to expansion—making it the most significant sponsorship opportunity.

@@ -1,5 +1,9 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 3
-**Version:** 2.1.0 | **Last Updated:** 2026-01-14
+**Version:** 2.2.0 | **Last Updated:** 2026-01-27
+
+### Version 2.2.0 Changes
+- **UPDATED:** Milestone 3 brief to reflect CFL feedback—Stadium Development Partnership is #1 barrier and top sponsorship opportunity
+- **ADDED:** Stadium Partner as new required component in milestone deliverable
 
 ### Version 2.1.0 Changes
 - **ADDED:** Element 6 - Recommended Readings (PwC Sponsorship Playbook + Altenar CLV)
@@ -45,17 +49,19 @@ You've completed your deep dive into sponsorship and betting economics! The five
 ```markdown
 ## CFL Expansion Project: Milestone 3 - Sponsorship & Partnership Strategy
 
-Your CFL expansion city needs sponsors. In Milestone 1, you analyzed market feasibility. In Milestone 2, you designed media and fan engagement strategy. Now you'll build the sponsorship portfolio for your chosen city.
+Your CFL expansion city needs sponsors—and more importantly, it needs a STADIUM. In Milestone 1, you analyzed market feasibility. In Milestone 2, you designed media and content strategy. Now you'll build the sponsorship portfolio for your chosen city, starting with the most critical partnership of all.
 
-**Your Challenge:** Design a sponsorship strategy for your CFL expansion team that identifies target sponsor categories, calculates expected revenue using CPM benchmarks, and addresses ethical considerations.
+**CFL Reality Check:** The CFL has identified **BUILDING a stadium** as the #1 barrier to expansion. Any expansion city needs a CFL-ready facility. This creates your biggest sponsorship opportunity: a founding partner who helps fund the stadium bid and construction in exchange for naming rights and long-term partnership.
 
-**Why This Matters:** Sponsorship accounts for 15-25% of professional sports revenue. Your expansion team needs sponsors to survive financially—but the wrong sponsors can damage brand equity before you've built it.
+**Your Challenge:** Design a sponsorship strategy that starts with your anchor deal—the Stadium Development Partner—and builds out a complete sponsorship portfolio. Calculate expected revenue using CPM benchmarks and address ethical considerations.
+
+**Why This Matters:** The stadium partner isn't just naming rights—it's the deal that makes expansion viable. Without a committed stadium partner, your city can't host CFL games.
 
 **Apply Week 3 Frameworks:**
+- Identify potential stadium development partners in your market
 - Use CPM calculations to value your sponsorship assets
 - Apply the 1:2-3 activation rule to project total partnership value
 - Consider engagement multipliers if pursuing betting partnerships
-- Reference your Milestone 1-2 work for market-specific sponsor targeting
 ```
 
 ---
@@ -72,21 +78,25 @@ Title: ▪ Anchor Project Milestone 3: Sponsorship Strategy (25 points)
 
 **Deliverable:** 2-3 page sponsorship strategy for your CFL expansion city
 
+> **CFL Reality:** The #1 barrier to expansion is the STADIUM. Your sponsorship strategy must address how your city will have a CFL-ready facility—and who will fund it. This is your anchor deal.
+
 **Required Components:**
-1. **Sponsor Category Matrix** (Table): 3-5 categories with target brands, estimated value, strategic fit
-2. **CPM Analysis** (Calculation): Value your key sponsorship assets using Week 3 framework
-3. **Activation Concept** (200 words): One detailed activation for your naming rights or jersey sponsor
-4. **Ethical Consideration** (150 words): Address one sponsorship decision with complexity
+1. **Stadium Development Partnership** (0.5 page): Who is your anchor sponsor? How do they support the bid, fund construction, and secure naming rights? (e.g., "London Life Stadium")
+2. **Sponsor Category Matrix** (Table): 3-5 additional categories with target brands, estimated value, strategic fit
+3. **CPM Analysis** (Calculation): Value your key sponsorship assets using Week 3 framework
+4. **Activation Concept** (200 words): One detailed activation for your stadium partner or jersey sponsor
+5. **Ethical Consideration** (150 words): Address one sponsorship decision with complexity
 
 **Grading Rubric (25 points):**
-- Sponsor Portfolio (8 pts): Appropriate categories, realistic brand targets, strategic fit with market
-- Financial Analysis (8 pts): Correct CPM calculations, reasonable revenue projections
-- Activation Design (5 pts): Creative, feasible activation concept
-- Ethical Framework (4 pts): Thoughtful consideration of at least one complex decision
+- Stadium Partnership (6 pts): Realistic stadium partner identified with clear value proposition
+- Sponsor Portfolio (6 pts): Appropriate categories, realistic brand targets, strategic fit
+- Financial Analysis (6 pts): Correct CPM calculations, reasonable revenue projections
+- Activation Design (4 pts): Creative, feasible activation concept
+- Ethical Framework (3 pts): Thoughtful consideration of at least one complex decision
 
 **Due:** End of Week 3
 
-**Connection to Final Proposal:** Milestone 3 builds toward your comprehensive CFL expansion business plan. Your sponsorship strategy will be refined in Week 5's final proposal.
+**Connection to Final Proposal:** Milestone 3 builds toward your comprehensive CFL expansion business plan. Your sponsorship strategy—especially your stadium partner—will be central to Week 5's final proposal.
 ```
 
 ---
@@ -99,17 +109,20 @@ Title: ▪ Anchor Project Milestone 3: Sponsorship Strategy (25 points)
 
 **Question:**
 ```
-Submit your CFL Expansion Milestone 3: Sponsorship Strategy. Your submission should be 2-3 pages and include all 4 required components: Sponsor Category Matrix, CPM Analysis, Activation Concept, and Ethical Consideration.
+Submit your CFL Expansion Milestone 3: Sponsorship Strategy. Your submission should be 2-3 pages and include all 5 required components: Stadium Development Partnership, Sponsor Category Matrix, CPM Analysis, Activation Concept, and Ethical Consideration.
 ```
 
 **Additional Instructions (optional):**
 ```
 Your submission will be evaluated using the rubric below (25 points total):
 
-• Sponsor Portfolio (8 pts) - Appropriate categories, realistic brand targets
-• Financial Analysis (8 pts) - Correct CPM calculations, reasonable projections
-• Activation Design (5 pts) - Creative, feasible activation concept
-• Ethical Framework (4 pts) - Thoughtful consideration of complex decision
+• Stadium Partnership (6 pts) - Realistic stadium partner with clear value proposition
+• Sponsor Portfolio (6 pts) - Appropriate categories, realistic brand targets
+• Financial Analysis (6 pts) - Correct CPM calculations, reasonable projections
+• Activation Design (4 pts) - Creative, feasible activation concept
+• Ethical Framework (3 pts) - Thoughtful consideration of complex decision
+
+Note: The CFL identifies stadium development as the #1 barrier to expansion. Your anchor sponsorship deal must address this.
 
 Accepted formats: PDF, DOCX
 Filename suggestion: LastName_M3_Sponsorship.pdf
@@ -121,27 +134,45 @@ Filename suggestion: LastName_M3_Sponsorship.pdf
 
 ---
 
-**CRITERION 1: Sponsor Portfolio**
+**CRITERION 1: Stadium Development Partnership**
 
-**Points:** 8
+**Points:** 6
+
+**Description:**
+Student identifies a realistic stadium development partner who can support the expansion bid, fund construction, and secure naming rights. This is the #1 barrier to CFL expansion.
+
+**Does not meet expectations:** 0 points
+No stadium partner identified, or partner unrealistic for the market. Doesn't address how the city will have a CFL-ready facility. Missing connection between stadium funding and sponsorship opportunity.
+
+**Partially meets expectations:** 3 points
+Stadium partner identified but value proposition unclear. May name a company without explaining why they'd invest in a stadium. Limited detail on how the partnership enables expansion.
+
+**Fully meets expectations:** 6 points
+Realistic stadium partner identified with clear rationale (e.g., major employer, regional HQ, brand alignment). Explains how partner supports bid, funds construction, and benefits from naming rights. Shows understanding that this is the anchor deal that makes expansion viable.
+
+---
+
+**CRITERION 2: Sponsor Portfolio**
+
+**Points:** 6
 
 **Description:**
 Student identifies appropriate sponsor categories and realistic brand targets with clear strategic fit to the chosen market.
 
 **Does not meet expectations:** 0 points
-Sponsor categories missing or inappropriate for CFL scale. Brand targets unrealistic (e.g., Fortune 100 companies for expansion franchise) or missing entirely. No strategic fit between sponsors and market characteristics.
+Sponsor categories missing or inappropriate for CFL scale. Brand targets unrealistic or missing entirely. No strategic fit between sponsors and market characteristics.
 
-**Partially meets expectations:** 4 points
-Identifies relevant sponsor categories but selection lacks strategic rationale. Some brand targets appropriate, others unrealistic. Limited connection between sponsor portfolio and specific market from Milestone 1.
+**Partially meets expectations:** 3 points
+Identifies relevant sponsor categories but selection lacks strategic rationale. Some brand targets appropriate, others unrealistic. Limited connection to specific market.
 
-**Fully meets expectations:** 8 points
-Comprehensive sponsor portfolio with appropriate categories (naming rights, jersey, category partners). Brand targets realistic for CFL expansion franchise. Clear strategic fit between sponsors and market characteristics. Shows understanding of what sponsors want from CFL partnership.
+**Fully meets expectations:** 6 points
+Comprehensive sponsor portfolio with appropriate categories (jersey, category partners, community). Brand targets realistic for CFL expansion. Clear strategic fit with market characteristics.
 
 ---
 
-**CRITERION 2: Financial Analysis**
+**CRITERION 3: Financial Analysis**
 
-**Points:** 8
+**Points:** 6
 
 **Description:**
 Student applies CPM calculations and sponsorship valuation frameworks to project realistic revenue for the expansion franchise.
@@ -149,17 +180,17 @@ Student applies CPM calculations and sponsorship valuation frameworks to project
 **Does not meet expectations:** 0 points
 CPM calculations missing or incorrect. Revenue projections arbitrary or missing assumptions. No connection between sponsorship value and market reach/demographics.
 
-**Partially meets expectations:** 4 points
+**Partially meets expectations:** 3 points
 CPM calculations attempted but may contain errors. Revenue projections present but assumptions unclear. Some understanding of sponsorship valuation but analysis incomplete.
 
-**Fully meets expectations:** 8 points
+**Fully meets expectations:** 6 points
 Correct CPM calculations using Week 3 framework. Reasonable revenue projections with clear assumptions. Shows how market size and demographics affect sponsorship value. Projections realistic for CFL expansion franchise.
 
 ---
 
-**CRITERION 3: Activation Design**
+**CRITERION 4: Activation Design**
 
-**Points:** 5
+**Points:** 4
 
 **Description:**
 Student designs a creative, feasible sponsorship activation concept that goes beyond signage to create value for sponsors and fans.
@@ -168,16 +199,16 @@ Student designs a creative, feasible sponsorship activation concept that goes be
 No activation concept or only generic ideas ("logo on jersey"). Doesn't demonstrate understanding of how sponsors activate partnerships beyond signage.
 
 **Partially meets expectations:** 2 points
-Activation concept present but lacks creativity or feasibility. May describe interesting ideas without explaining execution. Limited connection to sponsor objectives or fan experience.
+Activation concept present but lacks creativity or feasibility. May describe interesting ideas without explaining execution.
 
-**Fully meets expectations:** 5 points
-Creative, feasible activation concept that goes beyond signage. Shows understanding of how sponsors create value through partnerships. Activation tied to specific sponsor category and fan experience. Demonstrates Week 3 framework application.
+**Fully meets expectations:** 4 points
+Creative, feasible activation concept that goes beyond signage. Shows understanding of how sponsors create value through partnerships. Activation tied to specific sponsor category and fan experience.
 
 ---
 
-**CRITERION 4: Ethical Framework**
+**CRITERION 5: Ethical Framework**
 
-**Points:** 4
+**Points:** 3
 
 **Description:**
 Student demonstrates ethical reasoning by thoughtfully addressing at least one complex sponsorship decision with stakeholder considerations.
@@ -188,7 +219,7 @@ No ethical consideration or only superficial mention ("we will be ethical"). Doe
 **Partially meets expectations:** 2 points
 Identifies an ethical consideration but analysis shallow. May mention a concern without exploring stakeholder impacts or how to navigate the tension.
 
-**Fully meets expectations:** 4 points
+**Fully meets expectations:** 3 points
 Thoughtful consideration of at least one complex sponsorship decision (e.g., betting partner selection, category conflicts, community concerns). Explores stakeholder impacts and demonstrates ethical reasoning. Shows understanding of Week 3 ethical frameworks.
 
 ---

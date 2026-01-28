@@ -19,15 +19,20 @@ Students develop a comprehensive expansion proposal for a **10th CFL franchise**
 
 ### Milestone 2: Media & Content Strategy (Week 2)
 **Deliverable:** Media Strategy Memo (2–3 pages)
-- CFL–TSN deal structure and revenue-sharing implications
-- Local media strategy (broadcast, digital, streaming)
+- CFL–TSN deal structure and revenue-sharing implications (league-level—what you receive)
+- **Local Radio & Audio strategy** (the only media rights you control directly)
 - Content and fan engagement plan (social media, behind the scenes, community building)
+
+> **Note:** Media rights are negotiated at the LEAGUE level. Expansion teams control Local Radio/Audio only.
 
 ### Milestone 3: Sponsorship & Betting Strategy (Week 3)
 **Deliverable:** Sponsorship Strategy (2–3 pages)
-- Sponsorship inventory (naming rights, jersey, category partners)
+- **Stadium Development Partnership** (the #1 barrier to expansion—who funds/builds the facility?)
+- Sponsorship inventory (stadium naming rights, jersey, category partners)
 - Tiered partnership structure with pricing and ROI projections
 - Sports betting integration (provincial regulations, operator partnerships, responsible gambling)
+
+> **Note:** The CFL identifies BUILDING a stadium as the largest barrier to expansion. Your anchor sponsorship deal should address this (e.g., "London Life Stadium" in London, ON).
 
 ### Milestone 4: Brand Building & Launch Strategy (Week 4)
 **Deliverable:** Brand Ambassador & Launch Strategy (2–3 pages)
@@ -51,9 +56,9 @@ Students must project 5-year revenue across all five streams:
 
 | Revenue Stream | What Students Analyse |
 |----------------|----------------------|
-| **1. Media Rights** | CFL–TSN revenue sharing, local broadcast partnerships, streaming strategy |
+| **1. Media Rights** | CFL–TSN revenue sharing (league-level), **Local Radio/Audio** (team-level control), content strategy |
 | **2. Ticketing** | Stadium capacity, pricing tiers, attendance projections, game-day experience |
-| **3. Sponsorship** | Naming rights, jersey sponsors, tiered partnership structure, activation plans |
+| **3. Sponsorship** | **Stadium development partner**, naming rights, jersey sponsors, tiered partnership structure |
 | **4. Merchandise** | New market dynamics, retail strategy, e-commerce, licensing |
 | **5. Betting** | Provincial regulations, operator partnerships, in-stadium experience, data licensing |
 
@@ -71,15 +76,17 @@ Each milestone is assessed on:
 
 ## Suggested Expansion Cities
 
-| City | Population | Key Consideration |
-|------|------------|-------------------|
-| **Halifax** | 450K | No major pro sports, strong football culture, Atlantic market |
-| **Quebec City** | 550K | Francophone opportunity, passionate sports market |
-| **Kitchener-Waterloo** | 600K | Tech hub, young demographics, proximity to Toronto |
-| **London, ON** | 500K | Proximity to GTA, university presence, corporate base |
-| **Moncton** | 170K | Atlantic alternative, existing stadium, smaller-market risk |
-| **Victoria** | 400K | No CFL presence, limited corporate base |
-| **Saskatoon** | 330K | Proven CFL market, but Roughriders cannibalization risk |
+| City | Population | Key Consideration | Stadium Status |
+|------|------------|-------------------|----------------|
+| **Halifax** | 450K | No major pro sports, strong football culture, Atlantic market | Needs new build |
+| **Quebec City** | 550K | Francophone opportunity, passionate sports market | Existing options |
+| **Kitchener-Waterloo** | 600K | Tech hub, young demographics, proximity to Toronto | Needs new build |
+| **London, ON** | 500K | Proximity to GTA, university presence, corporate base | TD Stadium (expandable) |
+| **Moncton** | 170K | Atlantic alternative, existing stadium, smaller-market risk | Existing stadium |
+| **Victoria** | 400K | No CFL presence, limited corporate base | Needs new build |
+| **Saskatoon** | 330K | Proven CFL market, but Roughriders cannibalization risk | Existing options |
+
+> **Stadium is the #1 barrier.** Your sponsorship strategy must address how the stadium gets built/funded.
 
 ---
 
@@ -96,3 +103,5 @@ Each milestone builds on weekly course content:
 ---
 
 *The Business of Sports Marketing | Ivey Business School*
+
+*Updated January 2026 with direct CFL feedback on media rights structure and stadium development requirements.*

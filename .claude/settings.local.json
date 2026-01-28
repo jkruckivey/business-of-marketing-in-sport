@@ -85,7 +85,8 @@
       "mcp__executeautomation-playwright-server__playwright_close",
       "Bash(python -c:*)",
       "Bash(dir:*)",
-      "Bash(powershell -Command:*)"
+      "Bash(powershell -Command:*)",
+      "Bash(findstr:*)"
     ],
     "deny": [],
     "ask": [],

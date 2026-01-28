@@ -1,5 +1,9 @@
 # MODULE 7: Wrap-Up & Anchor Project Milestone 2
-**Version:** 2.1.0 | **Last Updated:** 2026-01-14
+**Version:** 2.2.0 | **Last Updated:** 2026-01-27
+
+### Version 2.2.0 Changes
+- **UPDATED:** Milestone 2 brief to reflect CFL feedback—media rights are LEAGUE-level only; teams control Local Radio/Audio
+- **MODIFIED:** Rubric criteria updated to align with realistic team-level media scope
 
 ### Version 2.1.0 Changes
 - **ADDED:** Element 6 - Recommended Readings (FairPlay "Building Value for Betting Partners")
@@ -45,17 +49,19 @@ You've completed your deep dive into media rights and fan engagement! The five c
 ```markdown
 ## CFL Expansion Project: Milestone 2 - Media & Content Strategy
 
-Building on your market selection from Milestone 1, you'll now develop a comprehensive media and content strategy for your CFL expansion franchise.
+Building on your market selection from Milestone 1, you'll now develop a media and content strategy for your CFL expansion franchise.
 
-**Your Challenge:** How will your new CFL franchise maximize media value? What's your content strategy for building fans before the first game?
+**Your Challenge:** How will your new CFL franchise maximize value within the league's media structure? What local audio partnerships can you secure? What's your content strategy for building fans before the first game?
 
-**Why This Matters:** Media rights typically represent 40-60% of professional sports revenue. Your expansion team needs a compelling media strategy to attract broadcast partners, build digital audience, and create fan engagement in a market with no existing CFL presence.
+**Important CFL Context:** Unlike some leagues, CFL media rights are negotiated at the **league level only**—the CFL-TSN deal covers all teams. Your expansion franchise will receive a share of league media revenue, but you won't negotiate your own TV or streaming deals. What you DO control: **Local Radio** and **Local Audio** rights.
+
+**Why This Matters:** Your media strategy isn't about negotiating broadcast deals—it's about (1) understanding what revenue share you'll receive, (2) maximizing your local radio/audio presence, and (3) creating content that builds your fanbase and adds value to the league-wide package.
 
 **Apply Week 2 Frameworks:**
-- Use media rights valuation frameworks to estimate your franchise's media value
-- Compare linear vs. streaming strategies for your market
+- Understand league-level media economics and revenue sharing
+- Design local radio/audio partnerships for your market
 - Design fan engagement tactics that move passive viewers to super-fans
-- Reference the Rogers/NHL case lessons for deal structure considerations
+- Reference the Rogers/NHL case lessons for understanding long-term deal structures
 ```
 
 ---
@@ -72,14 +78,16 @@ Title: ▪ Anchor Project Milestone 2: Media & Content Strategy (20 points)
 
 **Deliverable:** 2-3 page Media Strategy Memo
 
+> **CFL Reality:** Media rights are negotiated at the LEAGUE level—the CFL-TSN deal covers all teams. Your expansion team controls only **Local Radio** and **Local Audio** rights. Your strategy should focus on what you receive (league revenue share) and what you control (local audio + content).
+
 **Required Components:**
-1. **CFL Media Rights Context** (0.5 page): How current CFL-TSN deal works, how expansion affects revenue sharing
-2. **Local Media Strategy** (1 page): Broadcast partnerships, regional opportunities, digital/streaming presence
-3. **Content & Fan Engagement Plan** (1 page): Social media strategy, content creation, community building before first game
+1. **CFL Media Rights Context** (0.5 page): How the league-wide CFL-TSN deal works; what revenue share your expansion team receives; how adding a 10th team strengthens league media value
+2. **Local Media Rights Strategy** (0.5 page): Local Radio partnerships, Local Audio strategy (podcasts, digital audio)—the rights you actually control
+3. **Content & Fan Engagement Plan** (1 page): Social media strategy, content creation, community building before first game, integration with CFL digital platforms
 
 **Grading Rubric (20 points):**
-- Media Rights Analysis (6 pts): Demonstrates understanding of CFL media landscape and expansion impact
-- Local Media Strategy (6 pts): Comprehensive broadcast, digital, and streaming approach
+- Media Rights Analysis (6 pts): Demonstrates understanding of league-level media structure and revenue sharing
+- Local Audio Strategy (6 pts): Comprehensive Local Radio/Audio approach for your market
 - Content & Engagement Plan (5 pts): Actionable tactics tailored to chosen market
 - Professional Presentation (3 pts): Clear writing, logical organization
 
@@ -98,17 +106,19 @@ Title: ▪ Anchor Project Milestone 2: Media & Content Strategy (20 points)
 
 **Question:**
 ```
-Submit your CFL Expansion Milestone 2: Media & Content Strategy Memo. Your memo should be 2-3 pages and include all 3 required sections: CFL Media Rights Context, Local Media Strategy, and Content & Fan Engagement Plan.
+Submit your CFL Expansion Milestone 2: Media & Content Strategy Memo. Your memo should be 2-3 pages and include all 3 required sections: CFL Media Rights Context (league-level), Local Media Rights Strategy (radio/audio), and Content & Fan Engagement Plan.
 ```
 
 **Additional Instructions (optional):**
 ```
 Your memo will be evaluated using the rubric below (20 points total):
 
-• Media Rights Analysis (6 pts) - Demonstrates understanding of CFL media landscape
-• Local Media Strategy (6 pts) - Comprehensive broadcast, digital, and streaming approach
+• Media Rights Analysis (6 pts) - Demonstrates understanding of league-level CFL media structure
+• Local Audio Strategy (6 pts) - Comprehensive Local Radio/Audio approach for your market
 • Content & Engagement Plan (5 pts) - Actionable tactics tailored to your market
 • Professional Presentation (3 pts) - Clear writing, logical organization
+
+Note: CFL media rights are league-level (CFL-TSN deal). Your team controls Local Radio and Local Audio only.
 
 Accepted formats: PDF, DOCX
 Filename suggestion: LastName_M2_MediaStrategy.pdf
@@ -138,21 +148,21 @@ Demonstrates clear understanding of CFL-TSN deal structure and how expansion tea
 
 ---
 
-**CRITERION 2: Local Media Strategy**
+**CRITERION 2: Local Audio Strategy**
 
 **Points:** 6
 
 **Description:**
-Student develops a comprehensive local media strategy covering broadcast partnerships, digital presence, and streaming approach tailored to the chosen market.
+Student develops a comprehensive Local Radio and Local Audio strategy—the media rights an expansion team actually controls (TV/streaming are league-level).
 
 **Does not meet expectations:** 0 points
-Media strategy missing or generic. Doesn't address broadcast, digital, and streaming components. No consideration of local market characteristics from Milestone 1.
+Local audio strategy missing or generic. Doesn't address Local Radio partnerships or audio content strategy. Incorrectly assumes team can negotiate TV/streaming deals.
 
 **Partially meets expectations:** 3 points
-Addresses some media channels but strategy incomplete. May focus on one area (e.g., digital) while neglecting others (e.g., local broadcast partnerships). Limited connection to specific market characteristics.
+Addresses Local Radio but strategy incomplete. May focus on one area while neglecting audio content opportunities (podcasts, digital audio). Limited connection to specific market characteristics from Milestone 1.
 
 **Fully meets expectations:** 6 points
-Comprehensive strategy covering broadcast partnerships, digital presence, and streaming approach. Strategy tailored to specific market from Milestone 1. Shows understanding of how different channels reach different audience segments.
+Comprehensive Local Radio/Audio strategy tailored to specific market. Identifies realistic local radio partners, podcast/audio content opportunities. Shows understanding that TV/streaming rights are league-level while maximizing what team actually controls.
 
 ---
 

@@ -120,6 +120,22 @@
         .summary-label { color: var(--color-neutral-600); }
         .summary-value { font-weight: 600; color: var(--color-neutral-800); }
 
+        /* Tooltips */
+        .tooltip-wrapper { position: relative; display: inline-flex; align-items: center; gap: 0.25rem; }
+        .tooltip-icon { width: 14px; height: 14px; border-radius: 50%; background: var(--color-neutral-300); color: var(--color-neutral-600); font-size: 0.65rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; cursor: help; flex-shrink: 0; }
+        .tooltip-icon:hover { background: var(--color-neutral-400); color: white; }
+        .tooltip-content { position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: var(--color-neutral-800); color: white; padding: 0.5rem 0.75rem; border-radius: var(--border-radius-sm); font-size: 0.75rem; font-weight: 400; line-height: 1.5; width: 220px; text-align: left; opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .tooltip-content::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-top-color: var(--color-neutral-800); }
+        .tooltip-wrapper:hover .tooltip-content, .tooltip-wrapper:focus-within .tooltip-content { opacity: 1; visibility: visible; }
+
+        /* Strategy presets */
+        .presets-section { margin-bottom: 1rem; }
+        .presets-label { font-size: 0.7rem; font-weight: 600; color: var(--color-neutral-500); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+        .presets-row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .preset-btn { background: white; border: 1px solid var(--color-neutral-300); border-radius: var(--border-radius-sm); padding: 0.375rem 0.75rem; font-size: 0.7rem; font-weight: 500; cursor: pointer; font-family: inherit; transition: all 0.2s; color: var(--color-neutral-600); }
+        .preset-btn:hover { border-color: var(--color-neutral-500); color: var(--color-neutral-800); }
+        .preset-btn.active { background: var(--color-accent); border-color: var(--color-accent); color: white; }
+
         /* Responsive */
         @media (max-width: 640px) {
             body { padding: 1rem; }
@@ -144,6 +160,16 @@
                 <div class="scenario-box">
                     <div class="scenario-label">Your Role: VP of Content Strategy</div>
                     <p class="scenario-text">You're launching a Canadian sports streaming service with a $100M annual content budget. Choose your rights portfolio, set exclusivity levels, and pricing—then see how your platform performs over 5 years.</p>
+                </div>
+
+                <div class="presets-section">
+                    <div class="presets-label">Quick Start: Strategy Templates</div>
+                    <div class="presets-row">
+                        <button class="preset-btn" data-preset="netflix">Netflix-Style Scale</button>
+                        <button class="preset-btn" data-preset="apple">Apple Exclusivity</button>
+                        <button class="preset-btn" data-preset="dazn">DAZN Lean</button>
+                        <button class="preset-btn" data-preset="niche">Niche Focus</button>
+                    </div>
                 </div>
 
                 <div class="setup-grid">
@@ -223,9 +249,30 @@
                         <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--color-neutral-200);">
                             <div class="panel-title" style="border: none; padding: 0; margin-bottom: 0.5rem;">Strategy Preview</div>
                             <div style="font-size: 0.75rem; color: var(--color-neutral-600);">
-                                <div style="margin-bottom: 0.25rem;"><strong>Content Appeal:</strong> <span id="appeal-preview">High</span></div>
-                                <div style="margin-bottom: 0.25rem;"><strong>Expected Churn:</strong> <span id="churn-preview">5%/month</span></div>
-                                <div><strong>Market Position:</strong> <span id="position-preview">Premium multi-sport</span></div>
+                                <div style="margin-bottom: 0.25rem;">
+                                    <span class="tooltip-wrapper">
+                                        <strong>Content Appeal:</strong>
+                                        <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info">?</span>
+                                        <span class="tooltip-content">How attractive your content portfolio is to potential subscribers. More sports + exclusive rights = higher appeal = more initial subscribers and faster growth.</span>
+                                    </span>
+                                    <span id="appeal-preview">High</span>
+                                </div>
+                                <div style="margin-bottom: 0.25rem;">
+                                    <span class="tooltip-wrapper">
+                                        <strong>Expected Churn:</strong>
+                                        <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info">?</span>
+                                        <span class="tooltip-content">Monthly cancellation rate. Strong content reduces churn; high prices increase it. At 5% churn, you lose half your subscribers in ~14 months if you don't acquire new ones.</span>
+                                    </span>
+                                    <span id="churn-preview">5%/month</span>
+                                </div>
+                                <div>
+                                    <span class="tooltip-wrapper">
+                                        <strong>Market Position:</strong>
+                                        <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info">?</span>
+                                        <span class="tooltip-content">How your platform competes. "Exclusive destination" commands premium pricing. "Value multi-sport" competes on breadth. "Niche player" serves a smaller but loyal audience.</span>
+                                    </span>
+                                    <span id="position-preview">Premium multi-sport</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -305,6 +352,34 @@
             emerging: { name: 'Emerging Sports', baseCost: 5, appeal: 0.08, churnReduction: 0.005 }
         };
 
+        // Strategy presets
+        const strategyPresets = {
+            netflix: {
+                name: 'Netflix-Style Scale',
+                description: 'Broad content, aggressive pricing to maximize subscribers',
+                selections: { hockey: 'shared', basketball: 'shared', soccer: 'shared', emerging: 'shared' },
+                price: 12.99
+            },
+            apple: {
+                name: 'Apple Exclusivity',
+                description: 'Premium exclusive content, premium pricing',
+                selections: { hockey: 'exclusive', basketball: 'none', soccer: 'none', emerging: 'none' },
+                price: 24.99
+            },
+            dazn: {
+                name: 'DAZN Lean',
+                description: 'Focused content, moderate pricing, controlled costs',
+                selections: { hockey: 'shared', basketball: 'none', soccer: 'shared', emerging: 'none' },
+                price: 14.99
+            },
+            niche: {
+                name: 'Niche Focus',
+                description: 'Own one category completely with exclusive rights',
+                selections: { hockey: 'none', basketball: 'none', soccer: 'exclusive', emerging: 'exclusive' },
+                price: 19.99
+            }
+        };
+
         // State
         let selections = {
             hockey: 'shared',
@@ -316,6 +391,7 @@
         let currentScenario = 'base';
         let chart = null;
         let projectionData = null;
+        let activePreset = null;
 
         // DOM elements
         const priceSlider = document.getElementById('price-slider');
@@ -668,6 +744,54 @@ Business of Sports Marketing - Week 2
             a.click();
             URL.revokeObjectURL(a.href);
         });
+
+        // Preset buttons
+        const presetBtns = document.querySelectorAll('.preset-btn');
+        presetBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const presetId = btn.dataset.preset;
+                const preset = strategyPresets[presetId];
+                if (!preset) return;
+
+                // Update active state
+                presetBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activePreset = presetId;
+
+                // Apply selections
+                selections = { ...preset.selections };
+                price = preset.price;
+
+                // Update UI - rights toggles
+                document.querySelectorAll('.rights-row').forEach(row => {
+                    const rightId = row.dataset.right;
+                    const mode = selections[rightId];
+                    row.querySelectorAll('.toggle-btn').forEach(b => {
+                        b.classList.toggle('active', b.dataset.mode === mode);
+                    });
+                });
+
+                // Update UI - price slider
+                priceSlider.value = price;
+                priceDisplay.textContent = '$' + price.toFixed(2);
+
+                // Update displays
+                updateBudget();
+                updatePreview();
+            });
+        });
+
+        // Clear preset when user manually changes settings
+        function clearActivePreset() {
+            presetBtns.forEach(b => b.classList.remove('active'));
+            activePreset = null;
+        }
+
+        // Modify existing toggle listeners to clear preset
+        document.querySelectorAll('.rights-row .toggle-btn').forEach(btn => {
+            btn.addEventListener('click', clearActivePreset);
+        });
+        priceSlider.addEventListener('input', clearActivePreset);
 
         // Initialize
         updateBudget();

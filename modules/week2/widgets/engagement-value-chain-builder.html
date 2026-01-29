@@ -80,6 +80,17 @@
         .btn-primary { background: var(--color-neutral-800); color: white; }
         .btn-primary:hover { background: var(--color-neutral-700); }
 
+        /* Tooltips */
+        .tooltip-wrapper { position: relative; display: inline-flex; align-items: center; gap: 0.25rem; }
+        .tooltip-icon { width: 14px; height: 14px; border-radius: 50%; background: var(--color-neutral-300); color: var(--color-neutral-600); font-size: 0.65rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; cursor: help; flex-shrink: 0; }
+        .tooltip-icon:hover { background: var(--color-neutral-400); color: white; }
+        .tooltip-content { position: absolute; bottom: calc(100% + 8px); left: 0; background: var(--color-neutral-800); color: white; padding: 0.5rem 0.75rem; border-radius: var(--border-radius-sm); font-size: 0.75rem; font-weight: 400; line-height: 1.5; width: 200px; text-align: left; opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .tooltip-content::after { content: ''; position: absolute; top: 100%; left: 20px; border: 6px solid transparent; border-top-color: var(--color-neutral-800); }
+        .tooltip-wrapper:hover .tooltip-content, .tooltip-wrapper:focus-within .tooltip-content { opacity: 1; visibility: visible; }
+
+        /* Model note */
+        .model-note { background: #fef3c7; border: 1px solid #fcd34d; border-radius: var(--border-radius-sm); padding: 0.5rem 0.75rem; font-size: 0.75rem; color: #92400e; margin-bottom: 1rem; }
+
         /* Responsive */
         @media (max-width: 640px) {
             body { padding: 1rem; }
@@ -104,6 +115,10 @@
                 <div class="baseline-text">1,000,000 fans × $10/year = <strong>$10M/year</strong> (passive viewing only)</div>
             </div>
 
+            <div class="model-note">
+                <strong>Note:</strong> This is a simplified model for strategic thinking. In reality, adoption rates overlap — a fan using the app might also play fantasy. Actual engaged fan counts would be lower than the sum of individual tactics.
+            </div>
+
             <div class="two-col">
                 <div class="tactics-panel">
                     <div class="panel-label">Select Engagement Tactics</div>
@@ -111,7 +126,13 @@
                     <label class="tactic-item" for="tactic-app">
                         <input type="checkbox" id="tactic-app" data-tactic="app">
                         <div class="tactic-info">
-                            <div class="tactic-name">Mobile App</div>
+                            <div class="tactic-name">
+                                <span class="tooltip-wrapper">
+                                    Mobile App
+                                    <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info">?</span>
+                                    <span class="tooltip-content">Team/league app with scores, news, and notifications. High reach but modest per-fan value — it's a gateway to deeper engagement.</span>
+                                </span>
+                            </div>
                             <div class="tactic-stats">
                                 <span>Cost: <strong>$2M</strong></span>
                                 <span>Adopt: <strong>30%</strong></span>
@@ -123,7 +144,13 @@
                     <label class="tactic-item" for="tactic-fantasy">
                         <input type="checkbox" id="tactic-fantasy" data-tactic="fantasy">
                         <div class="tactic-info">
-                            <div class="tactic-name">Fantasy Integration</div>
+                            <div class="tactic-name">
+                                <span class="tooltip-wrapper">
+                                    Fantasy Integration
+                                    <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info">?</span>
+                                    <span class="tooltip-content">Partnership with fantasy platforms. Fantasy players watch ~40% more games and engage across multiple teams, not just their favorite.</span>
+                                </span>
+                            </div>
                             <div class="tactic-stats">
                                 <span>Cost: <strong>$0.5M</strong></span>
                                 <span>Adopt: <strong>15%</strong></span>
@@ -135,7 +162,13 @@
                     <label class="tactic-item" for="tactic-betting">
                         <input type="checkbox" id="tactic-betting" data-tactic="betting">
                         <div class="tactic-info">
-                            <div class="tactic-name">Betting Partnerships</div>
+                            <div class="tactic-name">
+                                <span class="tooltip-wrapper">
+                                    Betting Partnerships
+                                    <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info">?</span>
+                                    <span class="tooltip-content">Revenue-share deals with sportsbooks. Zero cost to the league — the betting company pays for access. Highest value per fan but lower adoption.</span>
+                                </span>
+                            </div>
                             <div class="tactic-stats">
                                 <span>Cost: <strong>$0</strong></span>
                                 <span>Adopt: <strong>10%</strong></span>
@@ -147,7 +180,13 @@
                     <label class="tactic-item" for="tactic-content">
                         <input type="checkbox" id="tactic-content" data-tactic="content">
                         <div class="tactic-info">
-                            <div class="tactic-name">Exclusive Content</div>
+                            <div class="tactic-name">
+                                <span class="tooltip-wrapper">
+                                    Exclusive Content
+                                    <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info">?</span>
+                                    <span class="tooltip-content">Behind-the-scenes docs, player interviews, archive games. Creates "must-have" content that justifies premium pricing or subscription.</span>
+                                </span>
+                            </div>
                             <div class="tactic-stats">
                                 <span>Cost: <strong>$3M</strong></span>
                                 <span>Adopt: <strong>20%</strong></span>
@@ -159,7 +198,13 @@
                     <label class="tactic-item" for="tactic-social">
                         <input type="checkbox" id="tactic-social" data-tactic="social">
                         <div class="tactic-info">
-                            <div class="tactic-name">Social Media Strategy</div>
+                            <div class="tactic-name">
+                                <span class="tooltip-wrapper">
+                                    Social Media Strategy
+                                    <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info">?</span>
+                                    <span class="tooltip-content">Active presence on TikTok, Instagram, X. Highest reach (50%) but lower direct revenue — value comes from brand awareness and driving traffic to other channels.</span>
+                                </span>
+                            </div>
                             <div class="tactic-stats">
                                 <span>Cost: <strong>$1M</strong></span>
                                 <span>Adopt: <strong>50%</strong></span>
@@ -171,7 +216,13 @@
                     <label class="tactic-item" for="tactic-gamification">
                         <input type="checkbox" id="tactic-gamification" data-tactic="gamification">
                         <div class="tactic-info">
-                            <div class="tactic-name">Gamification</div>
+                            <div class="tactic-name">
+                                <span class="tooltip-wrapper">
+                                    Gamification
+                                    <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info">?</span>
+                                    <span class="tooltip-content">Predictions, leaderboards, badges, rewards. Turns passive viewers into active participants competing with friends.</span>
+                                </span>
+                            </div>
                             <div class="tactic-stats">
                                 <span>Cost: <strong>$1.5M</strong></span>
                                 <span>Adopt: <strong>25%</strong></span>
@@ -337,7 +388,7 @@
             if (tactics.length === 0) {
                 insights.push('Select engagement tactics to see personalized insights');
                 insights.push('Each tactic increases fan value and justifies higher media rights costs');
-                insights.push('Real example: NBA + DraftKings increased fan value from $12 → $45/year');
+                insights.push('Leagues with strong engagement strategies can command 2-4x higher rights fees');
             } else {
                 const multiplier = (totalValue / (baseFans * baseFanValue)).toFixed(2);
                 insights.push(`Strategy increases total fan value by ${multiplier}x ($10M → ${formatCurrency(totalValue)})`);

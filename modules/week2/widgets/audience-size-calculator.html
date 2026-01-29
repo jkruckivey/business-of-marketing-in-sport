@@ -218,11 +218,11 @@
             document.getElementById('demo-value').textContent = demoPercent + '%';
             document.getElementById('cpm-value').textContent = '$' + cpm;
 
-            // Calculate
+            // Calculate (scaled to produce realistic values - NFL preset ≈ $10B)
             const totalReach = avgViewers * numGames;
             const demoMultiplier = 1 + (demoPercent / 100);
             const adRevenue = (totalReach * cpm) / 1000;
-            const rightsValue = adRevenue * demoMultiplier * 0.4;
+            const rightsValue = adRevenue * demoMultiplier * 23; // Scaled to match real-world values
             const perGame = rightsValue / numGames;
 
             // Update results
@@ -245,6 +245,14 @@
             return '$' + val.toFixed(0) + 'M';
         }
 
+        function calculateRightsValue(preset) {
+            const p = presets[preset];
+            const totalReach = p.avgViewers * p.numGames;
+            const demoMultiplier = 1 + (p.demoPercent / 100);
+            const adRevenue = (totalReach * p.cpm) / 1000;
+            return adRevenue * demoMultiplier * 23;
+        }
+
         function updateChart(currentValue) {
             const ctx = document.getElementById('comparisonChart').getContext('2d');
             if (chart) chart.destroy();
@@ -259,7 +267,7 @@
             };
 
             const selectedName = leagueNames[currentPreset];
-            const nflBaseline = 10000; // NFL baseline $10B
+            const nflCalculated = calculateRightsValue('nfl'); // Calculate NFL value using same formula
 
             // Always compare selected sport to NFL benchmark
             let labels, values, colors, borders;
@@ -271,9 +279,9 @@
                 colors = ['rgba(107, 144, 133, 0.7)'];
                 borders = ['#6b9085'];
             } else {
-                // Compare selected sport to NFL baseline
+                // Compare selected sport to NFL calculated benchmark
                 labels = [selectedName + ' (Your Selection)', 'NFL (Benchmark)'];
-                values = [currentValue, nflBaseline];
+                values = [currentValue, nflCalculated];
                 colors = ['rgba(38, 38, 38, 0.7)', 'rgba(107, 144, 133, 0.4)'];
                 borders = ['#262626', '#6b9085'];
             }

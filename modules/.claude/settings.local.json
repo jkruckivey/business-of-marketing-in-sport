@@ -33,7 +33,14 @@
       "Bash(dir:*)",
       "Bash(git checkout:*)",
       "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\modules\\\\shared-resources\\\\CFL-SME-FEEDBACK-UPDATES.md\")",
-      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\index.html\")"
+      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\index.html\")",
+      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\modules\\\\week2\\\\widgets\\\\audience-size-calculator.html\")",
+      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\modules\\\\week2\\\\widgets\\\\exclusivity-bidding-simulator.html\")",
+      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\modules\\\\week2\\\\widgets\\\\platform-economics-visualizer.html\")",
+      "Bash(move:*)",
+      "Bash(git mv:*)",
+      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\modules\\\\week2\\\\widgets\\\\engagement-value-chain-builder.html\")",
+      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\modules\\\\week2\\\\widgets\\\\streaming-wars-strategy.html\")"
     ],
     "deny": [],
     "ask": []

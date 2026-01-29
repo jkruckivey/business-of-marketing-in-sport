@@ -32,7 +32,8 @@
       "Bash(fi)",
       "Bash(dir:*)",
       "Bash(git checkout:*)",
-      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\modules\\\\shared-resources\\\\CFL-SME-FEEDBACK-UPDATES.md\")"
+      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\modules\\\\shared-resources\\\\CFL-SME-FEEDBACK-UPDATES.md\")",
+      "Bash(start \"\" \"C:\\\\Users\\\\jkruck\\\\Ivey Business School\\\\EdTech Lab - Documents\\\\Github\\\\business-of-marketing-in-sport\\\\index.html\")"
     ],
     "deny": [],
     "ask": []

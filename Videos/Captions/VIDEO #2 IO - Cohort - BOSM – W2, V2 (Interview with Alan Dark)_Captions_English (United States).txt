@@ -1,0 +1,1637 @@
+1
+00:00:01,260 --> 00:00:08,940
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Before we dive into the complexities of the Rogers NHL deal this week, I want you to hear from someone who actually sat at the negotiating table.
+
+2
+00:00:09,300 --> 00:00:13,950
+First on one side, then on the other. I have known Alan Dark for years.
+
+3
+00:00:14,250 --> 00:00:17,640
+We worked together early in our careers at a scrappy internet startup,
+
+4
+00:00:17,940 --> 00:00:21,750
+and I've watched him build an impressive trajectory through Canadian sports media.
+
+5
+00:00:22,140 --> 00:00:30,780
+When Rogers made that $5.2 billion bet on the NHL, I was at CBC on the other side of the table working on Hockey Night in Canada.
+
+6
+00:00:31,200 --> 00:00:38,100
+Within weeks of the deal closing, he got a call from Rogers asking him to join them to help make that massive investment pay off.
+
+7
+00:00:39,650 --> 00:00:42,980
+This isn't a theoretical case study for Al. He lived it.
+
+8
+00:00:43,460 --> 00:00:46,490
+He helped build the strategy to protect cable ecosystems.
+
+9
+00:00:46,850 --> 00:00:52,819
+Leverage hockey rights to extract more value from agency deals, and transform Sportsnet from a distant,
+
+10
+00:00:52,820 --> 00:00:56,840
+third place regional network into Canada's dominant sports brand.
+
+11
+00:00:57,200 --> 00:00:59,660
+He has seen ad revenues grow six times.
+
+12
+00:01:00,080 --> 00:01:06,440
+He's managed the shift from treating media inventory like a checking account to managing it like an investment portfolio.
+
+13
+00:01:07,310 --> 00:01:14,030
+What you're about to watch is a candid 45 minute conversation about how these mega deals actually work the strategy,
+
+14
+00:01:14,030 --> 00:01:19,820
+the pricing, the data, the real time adjustments when Canadian teams make unexpected playoff runs.
+
+15
+00:01:20,390 --> 00:01:24,440
+Pay attention to how he describes the three channel approach to revenue optimization,
+
+16
+00:01:24,770 --> 00:01:29,030
+and why sports became the strategic anchor for Rogers's entire media business.
+
+17
+00:01:29,450 --> 00:01:40,269
+This is the reality behind the theory you're studying this week. Okay, everyone, this is our next session in the Ivy business of sports marketing,
+
+18
+00:01:40,270 --> 00:01:47,169
+and it gives me great pleasure to welcome Alan Darke, who I've actually had the privilege of knowing for many years.
+
+19
+00:01:47,170 --> 00:01:51,040
+We worked together way back when in this fun little internet startup.
+
+20
+00:01:51,550 --> 00:01:56,710
+And then I kind of watched afar as he kept adding more and more and more on to his career.
+
+21
+00:01:57,100 --> 00:02:07,030
+Um, you know, eventually, as the SVP, revenue, Rogers Sports and Media, um, he's up to some really cool stuff these days.
+
+22
+00:02:07,390 --> 00:02:12,879
+Um, but al, before we sort of jump into that stuff, I always like to ask everyone the little question.
+
+23
+00:02:12,880 --> 00:02:16,480
+The warm people, what was it, ten year old Alan Dark like?
+
+24
+00:02:18,550 --> 00:02:29,560
+Uh, ten year old Al Dark was, uh, growing up in Windsor, Ontario, and was addicted to hockey and golf.
+
+25
+00:02:30,490 --> 00:02:34,480
+Uh, spent a lot of time both my brother and I played Triple-A hockey.
+
+26
+00:02:34,570 --> 00:02:37,060
+I have a brother who's two and a half years younger.
+
+27
+00:02:37,570 --> 00:02:48,370
+And so my parents, for ten, 12 years, um, were literally in different parts of the country and in the US at different times,
+
+28
+00:02:48,610 --> 00:02:56,290
+one with me and kind of my trying to, you know, foster my, uh, dreams of becoming an NHL player.
+
+29
+00:02:56,290 --> 00:02:59,469
+And the other one with my brother doing the exact same thing.
+
+30
+00:02:59,470 --> 00:03:08,350
+So our our winters were full of travel and travel hockey, and our summers were full of of golf, uh, golf with the family.
+
+31
+00:03:09,350 --> 00:03:15,919
+Okay, so that's a beautiful lead in to the next question, which is clearly with some of that love for sports early on,
+
+32
+00:03:15,920 --> 00:03:21,409
+like what were some of the other drivers or influencers for you to sort of end up, you know,
+
+33
+00:03:21,410 --> 00:03:27,380
+having a career in media, but one that, of course, for you towards the end had a huge view into sports.
+
+34
+00:03:29,400 --> 00:03:35,940
+Yeah, I think the honest truth is I, I kind of fell into it.
+
+35
+00:03:36,210 --> 00:03:44,910
+Right. Like when, when the dream of becoming an NHL player kind of eroded around 18 or 19 years old,
+
+36
+00:03:45,510 --> 00:03:50,219
+you know, I figured, oh, wow, I better get my [INAUDIBLE] together and, you know,
+
+37
+00:03:50,220 --> 00:03:56,910
+really start focusing on school and ended up at the University of Windsor and then, uh, you know,
+
+38
+00:03:56,910 --> 00:04:05,040
+kind of finished off my school at Saint Clair College in a, in a, in a marketing and advertising specific, uh, program.
+
+39
+00:04:05,610 --> 00:04:09,389
+And then it was really I just wanted to get out of Windsor.
+
+40
+00:04:09,390 --> 00:04:17,850
+I wanted just, you know, do something different. And, and my last couple of years in school, I did very, very well.
+
+41
+00:04:17,880 --> 00:04:23,730
+And so when I came into the media industry, I actually graduated, uh, with,
+
+42
+00:04:23,730 --> 00:04:31,860
+with honors and was given an award that at the time, my media director Ann Bodden,
+
+43
+00:04:31,860 --> 00:04:38,399
+who was one of the iconic media people in, in Canada, uh, and quite frankly,
+
+44
+00:04:38,400 --> 00:04:45,030
+a reputation around the world was sitting behind me when I got the award and kind of put me under her wing.
+
+45
+00:04:45,330 --> 00:04:48,000
+And that kind of kicked off my media career.
+
+46
+00:04:48,540 --> 00:04:58,260
+Uh, very quickly, I discovered I was a better I had a I was more passionate about selling media than I was about planning media.
+
+47
+00:04:58,590 --> 00:05:06,960
+I mean, I planned media for Pepsi and Chrysler and a number of BC hydro being, you know, media spenders at the time.
+
+48
+00:05:07,560 --> 00:05:14,610
+But I was always really engaged with the people who came in to try to sell me media packages.
+
+49
+00:05:15,030 --> 00:05:21,480
+And so about two and a half years, three years into my career, I was approached by,
+
+50
+00:05:21,510 --> 00:05:27,180
+uh, a gentleman by the name of David, who used to be the president of Canwest Global.
+
+51
+00:05:27,450 --> 00:05:30,569
+And he offered me a job, uh, in their sales division.
+
+52
+00:05:30,570 --> 00:05:33,690
+So, you know, it kind of kicked off there.
+
+53
+00:05:34,260 --> 00:05:41,340
+Um, and, you know, behind the scenes, I always still had this, you know, this very heavy passion for sports.
+
+54
+00:05:41,460 --> 00:05:47,400
+I was lucky enough to work on some on some, you know, some big sports entities.
+
+55
+00:05:47,730 --> 00:05:56,070
+Spent some time at TSN and, and then was asked to head up the sales organization at CBC,
+
+56
+00:05:57,120 --> 00:06:05,550
+uh, which was really the first leadership role I had with kind of sports at the core.
+
+57
+00:06:06,150 --> 00:06:12,330
+So it was Hockey Night in Canada being the biggest asset for CBC at the time.
+
+58
+00:06:12,450 --> 00:06:16,560
+And we were also doing an Olympics and, uh, World Cup.
+
+59
+00:06:17,130 --> 00:06:30,210
+And so, uh, my team packaged and sold Sochi Olympics in 2010, I believe. No, 2014.
+
+60
+00:06:30,360 --> 00:06:40,290
+And um, and then obviously the time I spent on Hockey Night in Canada and traveling across the country from coast to coast to coast, uh,
+
+61
+00:06:40,290 --> 00:06:48,459
+on that iconic show with customers, um, and that that eventually that role led me to the,
+
+62
+00:06:48,460 --> 00:06:54,900
+uh, to the to the role at Rogers when when Rogers bought the rights.
+
+63
+00:06:54,900 --> 00:06:59,160
+So I was on the other end of the table negotiating with the NHL.
+
+64
+00:06:59,700 --> 00:07:08,309
+And when Rogers, uh, won the rights about two weeks later, three weeks later, uh, Keith Pelley,
+
+65
+00:07:08,310 --> 00:07:15,830
+who was the president of Rogers Sports and Media at the time, he phoned and, uh, asked me to join.
+
+66
+00:07:16,110 --> 00:07:28,180
+So. Amazing. So I mean incredible, by the way, incredible sort of roots, um, and experience and threading in those different sort of sports themes.
+
+67
+00:07:28,540 --> 00:07:30,639
+So let's maybe jump into it a little bit.
+
+68
+00:07:30,640 --> 00:07:41,260
+Like for a lot of the folks on here who may have never worked in media, let alone whether it was CBC Hockey Night in Canada, Rogers Olympics, like,
+
+69
+00:07:41,890 --> 00:07:51,879
+what's the day to day like when you are either leading those teams or in those rooms with those clients and you've got these incredible media rights,
+
+70
+00:07:51,880 --> 00:07:55,780
+like, what is it like, what's the day to day like?
+
+71
+00:07:55,780 --> 00:07:59,230
+And what does success look like in, in the in these roles that you've had.
+
+72
+00:08:00,370 --> 00:08:07,899
+So my so my role was really focused on, you know, being in front of the team a good six months out.
+
+73
+00:08:07,900 --> 00:08:11,230
+So we were always defining and trying to set strategy.
+
+74
+00:08:12,550 --> 00:08:16,210
+Around the. Upcoming season.
+
+75
+00:08:17,050 --> 00:08:21,280
+So there was an element of long term deals.
+
+76
+00:08:22,030 --> 00:08:29,200
+So you're in front of those customers who have a sports strategy who are committed to.
+
+77
+00:08:29,950 --> 00:08:36,970
+And I'll use hockey as an example. We could use baseball as an example from puck drop to that to the Stanley Cup.
+
+78
+00:08:38,300 --> 00:08:43,790
+Uh, being awarded in baseball the same thing. First pitch to the World Series.
+
+79
+00:08:45,050 --> 00:08:50,430
+So you're working on strategy around okay. There's a certain amount of revenue that needs to be driven.
+
+80
+00:08:50,450 --> 00:08:56,720
+There's a number of assets and elements that we've created that we have commercial targets against.
+
+81
+00:08:57,140 --> 00:09:06,650
+And so you're working with the team to define key accounts, people that you want to go after, businesses that you think would make sense and fit,
+
+82
+00:09:06,650 --> 00:09:18,120
+really streamline with the content, add value to their business, add value to your business, and also could add value to the viewer.
+
+83
+00:09:18,140 --> 00:09:25,330
+From an engagement perspective, I know we're going to talk a little bit about that, but there's a lot of thought and process that goes into that.
+
+84
+00:09:25,340 --> 00:09:33,370
+It's not. You know, I would say 20 years ago we were in a, in a, you know, kind of a sit back wait.
+
+85
+00:09:33,370 --> 00:09:40,300
+People would come. Now, I think because these rights have progressed to having such a value,
+
+86
+00:09:40,900 --> 00:09:46,960
+you need to have a very specific game plan going into the season and fill that.
+
+87
+00:09:48,540 --> 00:09:53,010
+Um, that strategy with all of your key partners.
+
+88
+00:09:53,520 --> 00:09:56,550
+Okay, so that's one element. You're always on top of.
+
+89
+00:09:57,030 --> 00:10:00,629
+The second one is always pricing. And that's evolved over time.
+
+90
+00:10:00,630 --> 00:10:08,190
+I remember a point in time where we used to set a value against us, a specific game or a day Saturday night.
+
+91
+00:10:08,220 --> 00:10:11,790
+Let's use that as an example. And the price was set at X.
+
+92
+00:10:11,790 --> 00:10:15,000
+And then you made move it 2 or 3 times throughout the year.
+
+93
+00:10:15,840 --> 00:10:19,890
+And you know off you went nowadays.
+
+94
+00:10:20,900 --> 00:10:26,570
+With data and with the analytics that we have and with, um, how we manage.
+
+95
+00:10:27,940 --> 00:10:37,630
+AD placement within those linear feeds, both through your linear television signals which are being distributed by your cable content layers,
+
+96
+00:10:38,500 --> 00:10:49,570
+but also your digital inventory, which is a completely different load of advertisers, potentially in in places like Sportsnet plus.
+
+97
+00:10:51,520 --> 00:10:56,080
+You are always thinking about and managing that inventory, much like.
+
+98
+00:10:57,540 --> 00:11:01,800
+The airlines do today. So while game by game pricing.
+
+99
+00:11:02,860 --> 00:11:07,040
+Supply and demand. Do we have incremental inventory in this game?
+
+100
+00:11:07,060 --> 00:11:10,630
+Not as popular. This game is very hot.
+
+101
+00:11:11,080 --> 00:11:16,240
+Pricing is very different. And so we're constantly managing those throttles.
+
+102
+00:11:17,080 --> 00:11:23,230
+And then you have kind of that third layer which is none of us have silver.
+
+103
+00:11:24,190 --> 00:11:34,820
+You know, the ability to see into the future. And so sports is crazy because you get these these things happen and we just live live through it.
+
+104
+00:11:34,840 --> 00:11:41,979
+The Blue Jays not sure this would have necessarily suggested in our strategy last year that you need
+
+105
+00:11:41,980 --> 00:11:48,160
+to be planning World Series pricing for the Jays felt good that they were going to make the playoffs,
+
+106
+00:11:48,580 --> 00:11:53,470
+but we really didn't think that they had the the horses to kind of go all the way.
+
+107
+00:11:53,800 --> 00:12:01,180
+And so same with hockey two years ago and even last year Edmonton Oilers fighting their way to the Stanley Cup finals.
+
+108
+00:12:01,390 --> 00:12:08,170
+So in those instances you are literally dealing day to day and managing your sales team and, you know,
+
+109
+00:12:08,590 --> 00:12:16,930
+motivating them to get on the phones and get out to their T accounts and, you know, you know, work the communication lines.
+
+110
+00:12:17,200 --> 00:12:22,959
+And we are moving inventory literally on a daily basis because games are popping up.
+
+111
+00:12:22,960 --> 00:12:29,110
+And in Canada it's a little bit different because it really is feast or famine.
+
+112
+00:12:29,590 --> 00:12:38,139
+You have Canadian teams that are going on in the Stanley Cup Finals is very different than if you have two American teams going now.
+
+113
+00:12:38,140 --> 00:12:45,640
+The units are the same, but the value of those units because of the engagement and the audience associated with them, hugely different.
+
+114
+00:12:45,910 --> 00:12:53,950
+Same thing with and even worse in in Major League Baseball, you have the Blue Jays in the playoffs and going into into the,
+
+115
+00:12:54,340 --> 00:12:57,940
+you know, the divisional series and that conference series.
+
+116
+00:12:59,590 --> 00:13:06,910
+The value of that inventory is ten x, what it would regularly be if it weren't for the Jays being in it.
+
+117
+00:13:07,150 --> 00:13:18,190
+If it was two American teams playing, the audiences and engagement are substantially, uh, depleted during, you know, during those those times.
+
+118
+00:13:18,340 --> 00:13:22,630
+So I think super fascinating and super interesting.
+
+119
+00:13:23,020 --> 00:13:28,540
+Yeah. Um, and so you're constantly throttling of those three.
+
+120
+00:13:30,000 --> 00:13:33,240
+Um, you know, kind of those three channels.
+
+121
+00:13:33,510 --> 00:13:39,480
+Um, because you've the job of the team is maximizing the potential of of those.
+
+122
+00:13:39,510 --> 00:13:41,070
+Uh, of that inventory.
+
+123
+00:13:42,090 --> 00:13:50,700
+Now, you mentioned a couple of keywords in that, obviously the data and analytics that clearly, I'm sure you've seen from evolve a lot.
+
+124
+00:13:51,060 --> 00:13:55,130
+Um, from what you've managed over, you know, your, your time across these great properties.
+
+125
+00:13:55,140 --> 00:14:09,600
+So my question is sort of twofold. One. Um, you know, what do you think is sort of the real important driver in those relationships between balancing,
+
+126
+00:14:09,600 --> 00:14:13,290
+you know, the advertisers needs, the property and the network.
+
+127
+00:14:13,740 --> 00:14:21,930
+And then like in your own words, um, how important are sports in the Canadian media landscape today?
+
+128
+00:14:23,940 --> 00:14:31,780
+Let me take that one first. Um. Because the industry is changing a lot and it continues to evolve.
+
+129
+00:14:32,440 --> 00:14:39,700
+You know, as we have the American streaming companies, the global streaming companies coming into Canada,
+
+130
+00:14:39,700 --> 00:14:44,350
+it really is having an effect on viewership behavior, right?
+
+131
+00:14:45,400 --> 00:14:50,080
+Traditional broadcasters are competing with from an entertainment perspective.
+
+132
+00:14:51,270 --> 00:14:57,480
+Um content producers and distributors who have no limitations or regulations.
+
+133
+00:14:58,950 --> 00:15:02,040
+Um, the traditional broadcasters have.
+
+134
+00:15:03,020 --> 00:15:07,100
+Regulations against them and in some ways are handcuffed.
+
+135
+00:15:07,700 --> 00:15:11,090
+Uh, based on distribution and distribution patterns.
+
+136
+00:15:11,990 --> 00:15:16,270
+So. Sports. Quite frankly.
+
+137
+00:15:16,450 --> 00:15:25,180
+Is it? You know, I. Well, I'm sure we're going to talk a little bit about this kind of how it's changed the direction of,
+
+138
+00:15:25,480 --> 00:15:28,630
+uh, strategy for many of the big broadcasters in Canada.
+
+139
+00:15:29,380 --> 00:15:34,080
+Um. But sports is that is the kind of.
+
+140
+00:15:35,900 --> 00:15:43,850
+Swims upstream against that. So from a from a company like Rogers who has sports networks.
+
+141
+00:15:44,420 --> 00:15:48,290
+Yeah. Sports platforms. Cable platforms.
+
+142
+00:15:49,380 --> 00:15:53,130
+Uh, and distributes television services.
+
+143
+00:15:54,760 --> 00:16:00,520
+Sports was a big part of their strategy that was defined many years ago.
+
+144
+00:16:01,660 --> 00:16:13,510
+And so when Rogers got those NHL rights, it was kind of their first foray into going head to head with at the time,
+
+145
+00:16:13,510 --> 00:16:19,750
+Bell and Clark, who kind of held the crown jewels of sports in Canada.
+
+146
+00:16:20,780 --> 00:16:25,580
+Um, and I would suggest that it's, it's changed the landscape completely.
+
+147
+00:16:26,330 --> 00:16:33,530
+At the time, Sportsnet was a very distant number three regional sports network.
+
+148
+00:16:34,320 --> 00:16:37,710
+Mhm. Um. Revenues
+
+149
+00:16:39,580 --> 00:16:43,480
+in the, you know, like the high 90 million mark.
+
+150
+00:16:44,740 --> 00:16:47,740
+Um, just from an ad perspective.
+
+151
+00:16:49,300 --> 00:16:58,990
+And. Nowadays that numbers six x that number, and they're the number one sports network.
+
+152
+00:16:59,530 --> 00:17:07,110
+Yeah. And and brand in Canada. And and that is all a derivative of quite frankly.
+
+153
+00:17:07,170 --> 00:17:11,950
+And well, it's there's two pieces. One, the popularity of the Jays in the summertime.
+
+154
+00:17:12,340 --> 00:17:18,370
+They've had a perfect storm. They've had the number one asset in sports in Canada.
+
+155
+00:17:19,440 --> 00:17:30,459
+In hockey. Um, and then you've seen this massive resurgence over the last several years of the Jays and kind of they work very well together,
+
+156
+00:17:30,460 --> 00:17:34,750
+one in the winter and one in the summer. They don't really compete against each other.
+
+157
+00:17:34,930 --> 00:17:45,340
+They line up very well. And then there's the element of obviously them owning the Jays and now owning MLSE as well.
+
+158
+00:17:46,120 --> 00:17:52,810
+So that strategy obviously was much larger than many people knew at the time.
+
+159
+00:17:53,350 --> 00:17:59,919
+But it is coming to fruition the way that they had planned in terms of not just owning the distribution,
+
+160
+00:17:59,920 --> 00:18:10,060
+not owning just the rights and the broadcast rights, uh, and their ability to integrate their brand into those assets.
+
+161
+00:18:10,540 --> 00:18:16,720
+But now in team ownership as well, beyond the Jays.
+
+162
+00:18:17,590 --> 00:18:26,470
+So you've kind of just touched on it. Um, and I know you said you were on the other side, meaning you were CBC Hockey Night in Canada,
+
+163
+00:18:27,220 --> 00:18:29,799
+and then you got the phone call shortly after the deal was done.
+
+164
+00:18:29,800 --> 00:18:39,730
+But but from obviously what you saw, either side like that was such a monumental moment, if you will, for sports in this country.
+
+165
+00:18:39,730 --> 00:18:46,780
+So like, what was the I guess, a two part question, the strategy besides, hey, we want to get into hockey.
+
+166
+00:18:46,780 --> 00:18:55,540
+Like what was the strategy? And then how once you were there, let's say, how do you off of a $5.2 billion rights acquisition.
+
+167
+00:18:56,230 --> 00:19:03,880
+What's the thought process for okay. How do we start to drive ROI against this huge investment we've just made?
+
+168
+00:19:04,390 --> 00:19:10,060
+Yeah. So I wasn't there at the time, but.
+
+169
+00:19:11,010 --> 00:19:21,890
+Understanding what the strategy was. Now if it. They had the vision of all of these things add value.
+
+170
+00:19:23,060 --> 00:19:30,430
+To team ownership. Mhm. You can make your money back on the marketing side.
+
+171
+00:19:30,450 --> 00:19:36,660
+You can. We see a world where these rights are going to have a bigger value to consumers.
+
+172
+00:19:37,170 --> 00:19:44,700
+And so the world of getting $7 ish per cable household was going to change.
+
+173
+00:19:45,880 --> 00:19:52,570
+So it wasn't even just about the marketing and ad revenue that they knew was going to increase in value,
+
+174
+00:19:52,570 --> 00:19:57,550
+because entertainment was going to become so fragmented across all of these platforms.
+
+175
+00:19:57,760 --> 00:20:03,100
+This was going to be the really true last mass medium.
+
+176
+00:20:04,280 --> 00:20:16,470
+Asset where there is. Enormous engagement from the people that love and adore those teams and tune in for every game.
+
+177
+00:20:20,000 --> 00:20:24,830
+And I think at the time. They were.
+
+178
+00:20:25,950 --> 00:20:31,320
+They had this vision of kind of owning the full piece of the puzzle,
+
+179
+00:20:31,800 --> 00:20:37,200
+i.e. it's not just about protecting our cable ecosystem, which is hugely important.
+
+180
+00:20:37,740 --> 00:20:44,430
+And they needed something to protect that. And sports on Sportsnet are distributed via cable.
+
+181
+00:20:45,150 --> 00:20:51,870
+Many of you don't know this, but in Canada, cable penetration is still in the low 70% in this country.
+
+182
+00:20:52,410 --> 00:20:57,360
+There was an article out this morning that in in the U.S. it's now dipped below 50%.
+
+183
+00:20:58,050 --> 00:21:07,620
+Yeah. And a big part of that is earlier on a lot of those sports rights started to trickle to other entities, other platforms.
+
+184
+00:21:08,130 --> 00:21:12,750
+And so the strategy here was, hey, we want to slow that erosion down.
+
+185
+00:21:13,200 --> 00:21:18,930
+We want to protect our cable ecosystems. And sports is going to be a big part of that play.
+
+186
+00:21:20,100 --> 00:21:30,590
+So I would say check. Second piece wise, you know, in terms of the, you know, uh, our role in revenue was driving the pie,
+
+187
+00:21:30,600 --> 00:21:37,590
+the larger pie for revenue for Roger Sports and Media and yeah, sports was a big part of that, but so was all of our other assets.
+
+188
+00:21:38,280 --> 00:21:43,770
+Well, when we go into negotiate and you know, this, that coming from the agency world and you spend some time there,
+
+189
+00:21:43,950 --> 00:21:52,350
+when I went in to negotiate my agency deals every year, and these are hundreds of million dollar commitments from these media buying houses.
+
+190
+00:21:53,590 --> 00:22:00,790
+I could extract way more value from them, because I had two of the assets that they absolutely needed to have,
+
+191
+00:22:00,790 --> 00:22:03,220
+and that was hockey, some hockey and Blue Jays baseball.
+
+192
+00:22:03,910 --> 00:22:12,460
+So I leverage those assets to get far bigger extractions of media spend within Rogers for immediate larger portfolio.
+
+193
+00:22:13,120 --> 00:22:15,540
+Mhm. Check that works.
+
+194
+00:22:15,550 --> 00:22:24,730
+And then the third piece is quite frankly was, you know, the bigger play which is the which is the valuation and the and the ownership of these teams.
+
+195
+00:22:25,480 --> 00:22:32,770
+And there's a larger strategy in play there that will come to fruition over the next year to 18 months.
+
+196
+00:22:33,460 --> 00:22:36,580
+And people will go, okay, I kind of understand it.
+
+197
+00:22:36,670 --> 00:22:45,450
+Right. Um. In Toronto specifically and, you know, Canada in general.
+
+198
+00:22:45,840 --> 00:22:57,300
+Even if you think about North America, there isn't a bigger owner of sports rights teams and valuations in North America now than Rogers.
+
+199
+00:22:58,140 --> 00:23:07,350
+Like, yeah, amazing. Like when you think about the MLSE deal and acquiring Bell's, uh, piece,
+
+200
+00:23:08,280 --> 00:23:21,870
+now owning 75% of that organization and what that means and the valuation of those teams, it is that longer term vision is coming together.
+
+201
+00:23:22,870 --> 00:23:26,260
+And they will be the biggest sports entity in North America.
+
+202
+00:23:27,460 --> 00:23:30,310
+Insane. So you know. Yes.
+
+203
+00:23:30,310 --> 00:23:38,860
+It's very good grounding that people sort of understand now, this huge empire and that MLSE acquisition, which is which is no small thing.
+
+204
+00:23:39,370 --> 00:23:44,259
+So, you know, take me through if you can sort of on the inside.
+
+205
+00:23:44,260 --> 00:23:51,730
+So, you know, there are all these incredible assets, as you said, you know, there's huge dollars that being being put into play.
+
+206
+00:23:52,240 --> 00:24:01,330
+Um, and then there are all of these data points now that are available, right, that we've never had before.
+
+207
+00:24:01,840 --> 00:24:11,350
+Um, how are those things taken into account for, you know, the teams that you led or inside the scoop at Rogers?
+
+208
+00:24:11,620 --> 00:24:16,060
+You know, how things actually today are measured and evaluated.
+
+209
+00:24:16,360 --> 00:24:20,260
+And, you know, how important is that to the overall mix?
+
+210
+00:24:23,580 --> 00:24:27,030
+I would say it is the lifeblood of all of those businesses now.
+
+211
+00:24:27,590 --> 00:24:33,450
+Hmm. So I'll use an example from a marketing perspective like we are constantly analyzing.
+
+212
+00:24:35,150 --> 00:24:39,810
+And tracking every data point that we can from a broadcast perspective.
+
+213
+00:24:39,830 --> 00:24:42,910
+So the general audiences are baseline.
+
+214
+00:24:43,370 --> 00:24:50,960
+But when you think about we do brand health studies for every single one of our partners on a yearly basis.
+
+215
+00:24:51,410 --> 00:25:02,570
+We're constantly getting feedback from the market on how their markets are or how their brands are leaving our consumers feeling.
+
+216
+00:25:03,140 --> 00:25:06,710
+And we we produce those research studies for them.
+
+217
+00:25:06,920 --> 00:25:18,770
+We leverage them. We use them when we go back to renegotiate our deals and develop our creative activations that we then sew into our productions.
+
+218
+00:25:19,490 --> 00:25:25,490
+It's a great example from a marketing perspective. And I'll tell you, ten years ago we didn't do any of that.
+
+219
+00:25:25,940 --> 00:25:32,090
+Right? Right. You may do one brand health study a year for your biggest partner.
+
+220
+00:25:32,510 --> 00:25:43,790
+We're now doing multiple brand health studies and creative feedback studies, uh, in-market for 90% of our sponsors.
+
+221
+00:25:45,210 --> 00:25:48,580
+Every year. So that is a big part.
+
+222
+00:25:49,180 --> 00:25:52,209
+If you look at the JS, for instance,
+
+223
+00:25:52,210 --> 00:26:01,210
+and the work that they did from a fan engagement perspective on all of the redesign and investment that went into.
+
+224
+00:26:01,890 --> 00:26:07,990
+Yeah, the Roger center. Yeah. Massive amounts of feedback, data points,
+
+225
+00:26:08,440 --> 00:26:18,280
+constantly communicating through apps and other things to make sure that and monitor engagement around the ballpark.
+
+226
+00:26:19,270 --> 00:26:24,340
+What you know is in spaces, are we not taking advantage of how do we.
+
+227
+00:26:25,740 --> 00:26:33,120
+Uptick ticket prices. How do we ensure that people who are coming to the ballpark are coming more often on a yearly basis,
+
+228
+00:26:33,510 --> 00:26:37,750
+are spending a little bit more money when they come to the ballpark?
+
+229
+00:26:37,770 --> 00:26:42,810
+By giving them the things that they want, not the things that we necessarily want to sell them.
+
+230
+00:26:43,380 --> 00:26:47,400
+And so that's a big part of I think.
+
+231
+00:26:48,560 --> 00:26:56,570
+Not just the Toronto Blue Jays, but I think, you know, MLSE has done really well with with kind of some of their engagement studies,
+
+232
+00:26:56,600 --> 00:27:01,880
+uh, and, and data points that they're getting and listening to from their consumers.
+
+233
+00:27:02,780 --> 00:27:06,740
+Um, and so I think, you know, with without those things.
+
+234
+00:27:09,000 --> 00:27:16,680
+The executives were constantly shooting in the dark, and now they have a much clearer picture of what their biggest and best fans.
+
+235
+00:27:17,760 --> 00:27:22,919
+And they're their light fans want and they want to create experiences within their
+
+236
+00:27:22,920 --> 00:27:30,420
+environments that feed all of those fans to ensure that there is engaged as they can be.
+
+237
+00:27:31,260 --> 00:27:36,960
+So I think you've helped define some of it, but I'm glad you brought up that word, which is fan engagement.
+
+238
+00:27:37,770 --> 00:27:45,569
+And, you know, you talked about the example obviously with the Jays and, you know, in the Rogers Center and how that whole ecosystem works.
+
+239
+00:27:45,570 --> 00:27:53,190
+But, um, how would you look at the definition of fan engagement and how it has really,
+
+240
+00:27:53,190 --> 00:27:59,010
+truly changed and how advertisers now value that, maybe in a different way than, as you said they did ten years ago.
+
+241
+00:28:02,080 --> 00:28:05,080
+In the past, it was always just about, I'm buying an audience.
+
+242
+00:28:05,140 --> 00:28:10,580
+I'm looking to reach a specific audience. And there's still an element of that.
+
+243
+00:28:11,740 --> 00:28:17,260
+But the reality is, is they they want they want to create that feedback loop.
+
+244
+00:28:18,380 --> 00:28:24,020
+They want to make sure that they're creative is hitting home. They want to make sure that they are reaching the right audiences.
+
+245
+00:28:24,440 --> 00:28:30,620
+They may want, um. They may want to deliver a different message to a different audience.
+
+246
+00:28:31,130 --> 00:28:37,310
+So it's buying the same media, but the placement will be different based on the platform that I'm on,
+
+247
+00:28:37,310 --> 00:28:42,110
+because I can in the digital ecosystem, I can more narrowly target.
+
+248
+00:28:42,860 --> 00:28:49,850
+So yeah, I'm putting that same unit or same piece of creative into a, uh, into a live game.
+
+249
+00:28:50,480 --> 00:28:57,200
+But it's there might be five pieces of creative in Sportsnet now that are delivered to different
+
+250
+00:28:57,200 --> 00:29:03,410
+households or different devices based on the data that we know about those households or individuals.
+
+251
+00:29:04,130 --> 00:29:07,580
+Um, because the technology allows us to do that.
+
+252
+00:29:07,760 --> 00:29:14,899
+So and then it's this feedback loop. So it's like, okay, talk to me about how long they were.
+
+253
+00:29:14,900 --> 00:29:21,410
+They pay attention. Did they skip through a certain ad. Did they um, you know, did they,
+
+254
+00:29:21,410 --> 00:29:30,800
+did they click on or are they or do we see an uptick in traffic when we were pushing this specific offer in that linear feed?
+
+255
+00:29:31,190 --> 00:29:35,990
+And so we are constantly managing and monitoring all of these things both.
+
+256
+00:29:37,230 --> 00:29:49,620
+Feedback from the consumer, but also, you know, how it's driving engagement potentially on their platform during that live game and beyond.
+
+257
+00:29:50,580 --> 00:30:01,770
+So now we know if, for instance, you're watching Sports Net Plus on a mobile device and you hit the, you know, we run an ad with a with a URL on it.
+
+258
+00:30:02,310 --> 00:30:10,530
+We know if you've hit that URL within five days, ten days, 20 days, and we're managing that and we're monitoring that,
+
+259
+00:30:10,530 --> 00:30:18,720
+and we're giving that information back to the advertiser so that they understand how the creative works,
+
+260
+00:30:19,290 --> 00:30:26,610
+what they want out of it, how quickly they want that feedback or that action to take place.
+
+261
+00:30:27,270 --> 00:30:35,720
+Um. The industry is changing very rapidly and is honestly driving so many parts.
+
+262
+00:30:36,130 --> 00:30:45,590
+Yeah, of of that fan engagement, uh, which is good and bad because sometimes, you know, man, you work with a lot of marketers.
+
+263
+00:30:45,590 --> 00:30:47,090
+You've been a marketer yourself.
+
+264
+00:30:47,090 --> 00:30:57,739
+It's sometimes you can over tilt based on feedback that you think is a blip or a trend or that turns out to be nothing,
+
+265
+00:30:57,740 --> 00:31:05,330
+and there's a lot of time wasted. And yeah, it's it's, you know, these to have that phrase of, uh, analysis paralysis.
+
+266
+00:31:05,960 --> 00:31:11,510
+Um, and, you know, data is great and I'm a big fan of it, but, you know, that stuff that you and I, I think grew up with,
+
+267
+00:31:11,510 --> 00:31:21,319
+which is just strategic intent and really thoughtfulness around the right thing to do has to be balanced with all of the data analysis,
+
+268
+00:31:21,320 --> 00:31:23,479
+you know, no, no different than what we just actually saw.
+
+269
+00:31:23,480 --> 00:31:30,170
+Ironically, in the World Series, they talk about all the data analytics, and then when you watch your pitcher who seems to be on fire,
+
+270
+00:31:30,170 --> 00:31:33,740
+you maybe ignore the fact that they're only supposed to throw 82 pitches tonight.
+
+271
+00:31:34,130 --> 00:31:38,360
+Uh, I mean, you get the right result. So I'm totally on board now.
+
+272
+00:31:38,360 --> 00:31:47,780
+What I love what I love that if you think about and I'll use the JS run like the most memorable and I, you know.
+
+273
+00:31:49,090 --> 00:31:58,850
+I can't talk about the research, but. You know, if you think about how some of the biggest sponsors wrap their arms around the playoffs as,
+
+274
+00:31:58,850 --> 00:32:07,610
+as the, as they progressed, um, the biggest and the best ones had a very specific strategy and ran creative.
+
+275
+00:32:08,040 --> 00:32:13,969
+Yeah. Was completely tied to the fan and the engagement so that, you know,
+
+276
+00:32:13,970 --> 00:32:22,400
+I think of the home hardware ads and I always think of the TV ads that they were very focused, the Rogers stuff,
+
+277
+00:32:22,400 --> 00:32:30,229
+like they were very focused on, uh, the Blue Jays fan and being part of this family and, and,
+
+278
+00:32:30,230 --> 00:32:36,290
+and engaging with them in a different way that I know struck the right chord with many of those folks.
+
+279
+00:32:36,590 --> 00:32:42,830
+And that comes from data like, you don't get there, you don't land them creatively with them,
+
+280
+00:32:43,100 --> 00:32:46,160
+you know, getting that feedback loop and understanding how.
+
+281
+00:32:47,160 --> 00:32:50,580
+Those viewers, you know, want to engage with your brand.
+
+282
+00:32:50,610 --> 00:32:53,850
+And I think it was a celebration of the Jays, some great.
+
+283
+00:32:54,910 --> 00:33:02,890
+Totally agree. Yeah. Um, you know, one other area I want to explore before we kind of wrap things up, which is, um, you know.
+
+284
+00:33:03,830 --> 00:33:09,500
+This battle between streaming and linear. And, you know, you started with a little bit of that start to say, hey, you know,
+
+285
+00:33:09,500 --> 00:33:13,370
+it's actually still pretty high in terms of cable penetration in Canada.
+
+286
+00:33:13,370 --> 00:33:18,800
+The US just dipped below. Um, but in your opinion, when you're looking out.
+
+287
+00:33:19,160 --> 00:33:27,740
+Yeah. Do you see a day where at some point Canadian fans will completely migrate over to streaming platforms?
+
+288
+00:33:28,040 --> 00:33:33,429
+Like where do you see this, this headed? It's it's it's interesting.
+
+289
+00:33:33,430 --> 00:33:40,320
+Right? Like. My fast answer is I don't think we'll ever get to zero.
+
+290
+00:33:40,920 --> 00:33:51,330
+Mhm. And I say that because I think that the technology will evolve so that let's call it cable television.
+
+291
+00:33:51,930 --> 00:33:59,800
+Yeah. Looks very different in the future. To me, cable will eventually look like an app on your TV.
+
+292
+00:34:00,380 --> 00:34:04,270
+Um, right. Cable was always just a bundle.
+
+293
+00:34:04,900 --> 00:34:08,590
+We're going to have all these great assets together. Yeah.
+
+294
+00:34:08,800 --> 00:34:15,940
+Back then, it was stations. Yep. And we're going to bundle them in this one place, and we're going to give you access,
+
+295
+00:34:15,940 --> 00:34:21,940
+and we're going to give you great penetration, and we're going to give it to you at a really reasonable price.
+
+296
+00:34:22,180 --> 00:34:30,020
+When you think of 400 station universe and it's going to be easy because we're going to give you a device to find it.
+
+297
+00:34:30,040 --> 00:34:36,430
+I mean, that's the hardest thing when you think about it is as these streaming services keep popping up.
+
+298
+00:34:37,780 --> 00:34:43,989
+People are going to have a really tough time remembering, oh my God, where what what's you know, what's that show on?
+
+299
+00:34:43,990 --> 00:34:47,380
+I can't because that's really what they care about. It's the content. Right.
+
+300
+00:34:48,460 --> 00:34:54,400
+And I do think and you starting to see it already right in the US and now it's trickle into Canada.
+
+301
+00:34:54,670 --> 00:34:56,680
+It's all about the bundle. Yeah.
+
+302
+00:34:56,740 --> 00:35:03,460
+You can get this platform, this platform and this platform and bring them together at a lower price than buying them individually.
+
+303
+00:35:04,000 --> 00:35:12,020
+Yep. And I think that will continue. But I also think in the meantime, the cable industry, the TV providers,
+
+304
+00:35:12,620 --> 00:35:18,530
+they've not been sitting on their hands and they've been working on new platforms and different ways of bringing those services together.
+
+305
+00:35:19,010 --> 00:35:33,660
+And so. I think that you will end up in a world a with less stations for sure, because the current model will not continue for another ten years.
+
+306
+00:35:33,900 --> 00:35:44,680
+I just don't think they'll be able to. Survive in a in a universe where there were their ad revenues are going to dip substantially and they will.
+
+307
+00:35:45,340 --> 00:35:52,330
+Mhm. So there will be less local station which isn't great for Canadians, I don't think it's not.
+
+308
+00:35:52,870 --> 00:35:56,379
+And that's how we get a lot of our news and information.
+
+309
+00:35:56,380 --> 00:36:02,140
+And so I'm not a big fan of that. But I think it is it's part of the evolution.
+
+310
+00:36:02,890 --> 00:36:10,600
+Um, but I do think that there is probably a world where you get access to some of your streaming assets,
+
+311
+00:36:11,500 --> 00:36:17,530
+you get access to live linear TV, what's left of it.
+
+312
+00:36:18,850 --> 00:36:22,620
+Um. And sports is a big part of that.
+
+313
+00:36:23,130 --> 00:36:26,850
+Yeah. Um, but it's distributed like.
+
+314
+00:36:27,990 --> 00:36:33,180
+Uh, it's straight. You stream it so your access is untethered.
+
+315
+00:36:33,960 --> 00:36:37,050
+You can take it with you. It's in your pocket.
+
+316
+00:36:37,530 --> 00:36:43,910
+It's on any device you want. Um, and so it'll be interesting, you know?
+
+317
+00:36:43,920 --> 00:36:48,899
+Does it become a world of standalone? Or do we get back to this world where these.
+
+318
+00:36:48,900 --> 00:36:55,680
+There are these services where you can get all of these services bundled, still streamed?
+
+319
+00:36:57,180 --> 00:37:02,070
+You don't need a cable into your house to get it. You don't need a box to access it.
+
+320
+00:37:02,790 --> 00:37:07,110
+Yeah. But I do think there is a place for.
+
+321
+00:37:08,810 --> 00:37:14,330
+A Rogers a bell to have a TV service that is robust and can compete.
+
+322
+00:37:15,350 --> 00:37:21,380
+Um, because the reality is, is those because there is no regulation in place.
+
+323
+00:37:23,230 --> 00:37:28,900
+For the streamers. They don't necessarily want to produce content here.
+
+324
+00:37:28,930 --> 00:37:34,990
+It's inefficient for them. That's right. Right. They want to produce content that can be widely distributed.
+
+325
+00:37:36,160 --> 00:37:40,270
+Um, and they can make as much money off of it as possible.
+
+326
+00:37:40,900 --> 00:37:45,490
+So, you know, I, I do think there will we will find a.
+
+327
+00:37:46,560 --> 00:37:50,370
+It won't be. It won't look like it feels like today. But it will, it will.
+
+328
+00:37:50,400 --> 00:37:58,420
+It will be a streaming service. That brings all of the best things together in in one location.
+
+329
+00:37:59,110 --> 00:38:02,470
+Love it. Now, it's an interesting vision for sure.
+
+330
+00:38:02,770 --> 00:38:11,980
+Yeah. Um, well, to kind of wrap some of this up, here's what uh, to to to to a little part of future question.
+
+331
+00:38:13,030 --> 00:38:21,520
+One is if you're sitting here and these are like some of our learners students, uh, you know, current business people, whatever.
+
+332
+00:38:21,910 --> 00:38:28,959
+Yeah. And they're listening to you sing. Gosh, Al's had an awesome run at this thing, and he's had incredible experience.
+
+333
+00:38:28,960 --> 00:38:33,490
+He's got great insight. I want to get into the sports media landscape.
+
+334
+00:38:33,490 --> 00:38:40,840
+If you were to say three key skills, that you would encourage them to really hone in on, what would those three things be?
+
+335
+00:38:40,840 --> 00:38:44,000
+And then the part B is fast. Fast forward.
+
+336
+00:38:44,020 --> 00:38:49,930
+Al, I asked you what you were like at ten years old. What do you think the next ten years and ten years out, what I was going to be doing?
+
+337
+00:38:50,680 --> 00:38:54,190
+Yeah. Okay. Three skill sets. Yeah.
+
+338
+00:38:56,760 --> 00:39:01,700
+Uh. I would say the first one is.
+
+339
+00:39:02,880 --> 00:39:07,560
+I. I meet a lot of kids who reach out to me from the universities.
+
+340
+00:39:08,550 --> 00:39:11,010
+And I and I, the ones who reach out to me.
+
+341
+00:39:12,240 --> 00:39:23,820
+I always set aside a little bit of time for them because to me, if they are willing to reach out and set up time for a coffee.
+
+342
+00:39:24,420 --> 00:39:30,210
+Mhm. I love that they are taking the initiative to reach out directly to me.
+
+343
+00:39:30,660 --> 00:39:37,140
+Spend a little time explaining who they are and where they want to go and what they're most interested in.
+
+344
+00:39:37,950 --> 00:39:42,140
+Right. That's the number one thing. You can't be afraid to ask right?
+
+345
+00:39:42,450 --> 00:39:52,500
+For help. Yeah. And lean in to people in the industry to provide you with, because most people will take the time to sit down with you.
+
+346
+00:39:53,070 --> 00:39:55,350
+Yeah. And at least meet with you for a coffee.
+
+347
+00:39:55,350 --> 00:40:02,610
+And if they like what they see or hear, they're going to at least open their network up to you and try to help kind of stream you along.
+
+348
+00:40:03,210 --> 00:40:07,410
+So I have a lot of respect for kids who are willing to kind of lean in and.
+
+349
+00:40:08,570 --> 00:40:12,320
+And put their hand up and say, hey, Mr. Dark, I'm really happy.
+
+350
+00:40:12,350 --> 00:40:15,410
+You know, I'd love to meet you for a coffee. So I love that.
+
+351
+00:40:15,740 --> 00:40:23,600
+Number two is creativity, right? This industry is evolving so quickly and changing so fast.
+
+352
+00:40:24,110 --> 00:40:29,210
+And what I love about the kids that are coming in today is they've grown up in a completely different environment.
+
+353
+00:40:29,510 --> 00:40:33,050
+They feel like I have got a 22 year old and a 19 year old.
+
+354
+00:40:33,470 --> 00:40:39,110
+Sports fans, huge sports fans. And they consume media very differently in some aspects.
+
+355
+00:40:39,620 --> 00:40:43,560
+Yeah. And I get and in some ways very similar to the way that I consume.
+
+356
+00:40:44,240 --> 00:40:54,920
+And they're also growing up good or bad, in a world in a time when things like sports betting are in play, which is we don't even talk about that.
+
+357
+00:40:54,920 --> 00:41:02,570
+But that's a whole different level of engagement for many individuals and has changed the face.
+
+358
+00:41:04,040 --> 00:41:07,880
+And production of sports both in Canada and the United States.
+
+359
+00:41:08,570 --> 00:41:15,200
+Yeah. So you got to come with ideas and creativity and a team.
+
+360
+00:41:17,010 --> 00:41:24,540
+Um, I look at a team aspect to that, you to your approach, because these things don't happen individually.
+
+361
+00:41:24,570 --> 00:41:31,250
+You got to realize that these are massive teams of people working together to bring these things to life.
+
+362
+00:41:31,260 --> 00:41:44,280
+And so if you don't, I always love kids who have played team sports in some way, shape or form because they understand how that dynamic works.
+
+363
+00:41:45,270 --> 00:41:52,170
+I actually just had a call with someone yesterday, um, who said there's a new piece of research out, especially for women,
+
+364
+00:41:52,800 --> 00:42:01,560
+that said, number of executives in business that have a strong correlation between teams sports was off the charts.
+
+365
+00:42:02,700 --> 00:42:08,910
+It doesn't surprise me at all, because at a young age you learn a bunch of things, right?
+
+366
+00:42:09,090 --> 00:42:15,300
+You learn how to win and lose. Yes. And losing is just as important to learn, right?
+
+367
+00:42:15,900 --> 00:42:20,670
+You learn to be part of a team and playing a part and playing a role.
+
+368
+00:42:20,880 --> 00:42:24,090
+And sometimes you're not always going to be the star of the team.
+
+369
+00:42:24,450 --> 00:42:33,570
+And so playing a secondary or a tourist or, you know, a role, a support role within an organization is important.
+
+370
+00:42:34,020 --> 00:42:40,020
+Yeah. And I've seen kids who just think they're going to go from A to Z in 3.2 seconds, and that's not reality.
+
+371
+00:42:40,560 --> 00:42:46,200
+Yeah. So you got to bring that to the table. And then I would say the, the last one is.
+
+372
+00:42:47,870 --> 00:42:51,320
+An openness to understand that in this industry.
+
+373
+00:42:52,660 --> 00:42:56,710
+And I'm a great example of it. And I've got many friends who are great examples of it.
+
+374
+00:42:58,510 --> 00:43:01,930
+It's not always in a to be straight line. Mhm.
+
+375
+00:43:02,770 --> 00:43:04,900
+I mean a lot of kids who were like oh my god.
+
+376
+00:43:05,020 --> 00:43:12,069
+Uh, you know what, I made these great TikTok videos and I'm on Instagram and I know I would be awesome next week.
+
+377
+00:43:12,070 --> 00:43:15,390
+Can you read on Sports on Central. Yeah.
+
+378
+00:43:15,400 --> 00:43:19,090
+So can you, uh, can I get can you put me in front of whomever.
+
+379
+00:43:19,500 --> 00:43:27,610
+Yeah. And I'm like, listen. There is a process to going from A to that seat.
+
+380
+00:43:28,390 --> 00:43:35,410
+You know, Ivanka did a lot of things. Kenny did a lot of things in his career to get to the to that point.
+
+381
+00:43:35,830 --> 00:43:42,130
+And so I'm always telling kids, got to realize that it's not a straight line and not always do you need to go,
+
+382
+00:43:42,490 --> 00:43:48,550
+you know, into a creative role, into a production role, you know, into an on air role.
+
+383
+00:43:49,000 --> 00:43:54,069
+Sometimes you can start in the marketing department or in the sales division and
+
+384
+00:43:54,070 --> 00:44:00,790
+working with customers and clients and still find your way to being an on air talent.
+
+385
+00:44:01,570 --> 00:44:09,550
+Nina, actually, and what I would say, an on air talent who has a better, more rounded view of the sports business.
+
+386
+00:44:10,330 --> 00:44:16,750
+And the reality is that is as important today as just being a good commentator for a good.
+
+387
+00:44:17,560 --> 00:44:23,420
+Yeah. Uh, on air personality. Excellent perspective, as always.
+
+388
+00:44:23,440 --> 00:44:27,810
+And so ten years out from now, is it hitting the links?
+
+389
+00:44:27,820 --> 00:44:34,110
+Is it staying in the media world like, you know, it's hard to have a crystal ball, but what where where is al ten years out.
+
+390
+00:44:34,580 --> 00:44:40,360
+Listen, I've learned through, you know, spending a little bit of downtime.
+
+391
+00:44:40,870 --> 00:44:43,930
+Yeah. That. I'm not.
+
+392
+00:44:44,620 --> 00:44:45,909
+I need to be active.
+
+393
+00:44:45,910 --> 00:44:55,360
+I need to be very involved in this industry so I can see myself playing a part in some way, shape or another, uh, for at least ten years.
+
+394
+00:44:55,960 --> 00:45:01,780
+Um. I'm 55 now, so, uh, you do.
+
+395
+00:45:01,780 --> 00:45:07,750
+I want to slow down a little bit. Absolutely. It's been, you know, pedal to the metal for many, many, many years.
+
+396
+00:45:08,260 --> 00:45:18,010
+But I do see myself playing a part, whether it's on boards or working as a consultant, working with teams, working with marketers.
+
+397
+00:45:18,610 --> 00:45:26,049
+Um, I'll always have my, my hand in it in some way, shape or form until I get to the point where my wife's like,
+
+398
+00:45:26,050 --> 00:45:29,790
+okay, we're not going to be around, we're traveling too much.
+
+399
+00:45:29,800 --> 00:45:33,850
+Uh, you're not going to have time for that anymore. So nice.
+
+400
+00:45:34,070 --> 00:45:42,340
+Yeah, yeah. Well, um, first and foremost, thank you so much for sharing some incredible insights, as always.
+
+401
+00:45:42,340 --> 00:45:47,620
+And, uh, I especially like some of your key learnings at the end in those three rules.
+
+402
+00:45:47,620 --> 00:45:51,400
+Um, and yeah, I couldn't agree more. Life is not really linear.
+
+403
+00:45:51,760 --> 00:45:59,350
+And, uh, you know, I think part of the conclusion is that the landscape in Canada, people often undervalue,
+
+404
+00:45:59,350 --> 00:46:05,440
+to your point, just how powerful some of the big players are and how much of an impact it drives,
+
+405
+00:46:05,440 --> 00:46:14,290
+not just in the world of sports, but the overall economic footprint of our country and these businesses and media and sport.
+
+406
+00:46:14,290 --> 00:46:18,669
+It's a massive, massive industry, and you've been at the forefront of it for many years.
+
+407
+00:46:18,670 --> 00:46:26,620
+So thank you for sharing and, uh, excited, uh, keep, keep in touch and see what al is up to in the next ten years.
+
+408
+00:46:27,040 --> 00:46:30,099
+It's been a blast, Matt. Good. Good catching up with you, buddy. Yeah.
+
+409
+00:46:30,100 --> 00:46:31,180
+You too. You do.
+

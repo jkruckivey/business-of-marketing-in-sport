@@ -104,11 +104,67 @@
         }
 
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+
+        /* Concentration Toggle */
+        .concentration-toggle { display: flex; gap: 0.375rem; margin-top: 0.375rem; }
+        .conc-btn { flex: 1; padding: 0.375rem 0.5rem; background: var(--color-neutral-100); color: var(--color-neutral-600); border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius-sm); font-family: inherit; font-size: 0.75rem; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+        .conc-btn:hover { background: var(--color-neutral-200); border-color: var(--color-neutral-300); }
+        .conc-btn.active { background: var(--color-neutral-700); color: white; border-color: var(--color-neutral-700); }
+        .concentration-hint { font-size: 0.7rem; color: var(--color-neutral-500); margin-top: 0.375rem; font-style: italic; }
+
+        /* Splash Screen Styles */
+        .splash-screen { text-align: center; padding: 2rem 1.5rem; }
+        .splash-title { font-size: 1.25rem; font-weight: 700; color: var(--color-neutral-900); margin-bottom: 0.5rem; }
+        .splash-subtitle { font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 1.5rem; }
+        .splash-box { background: white; border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1.5rem; text-align: left; }
+        .splash-box-title { font-size: 0.8rem; font-weight: 600; color: var(--color-neutral-700); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .splash-box ul { list-style: none; padding: 0; margin: 0; }
+        .splash-box li { font-size: 0.85rem; color: var(--color-neutral-600); padding: 0.4rem 0; padding-left: 1.25rem; position: relative; line-height: 1.5; }
+        .splash-box li::before { content: "•"; position: absolute; left: 0; color: var(--color-neutral-400); }
+        .splash-disclaimer { font-size: 0.75rem; color: var(--color-neutral-500); font-style: italic; margin-bottom: 1.5rem; line-height: 1.5; }
+        .splash-btn { padding: 0.75rem 2rem; background: var(--color-neutral-800); color: white; border: none; border-radius: 6px; font-family: inherit; font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: background 0.2s; }
+        .splash-btn:hover { background: var(--color-neutral-700); }
+        .splash-btn:focus { outline: 3px solid var(--color-neutral-900); outline-offset: 2px; }
+        .simulator-screen { display: none; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="widget-box">
+            <!-- Splash Screen -->
+            <div class="splash-screen" id="splashScreen">
+                <h1 class="splash-title">Betting Market Simulator</h1>
+                <p class="splash-subtitle">Explore the economics of state sports betting markets</p>
+
+                <div class="splash-box">
+                    <div class="splash-box-title">What This Tool Does</div>
+                    <ul>
+                        <li>Models the revenue funnel: population → bettors → handle → GGR → operator profit → state tax</li>
+                        <li>Shows how parameters like participation rate, wager size, and tax rate affect outcomes</li>
+                        <li>Provides benchmarks against real state markets (illustrative comparisons)</li>
+                    </ul>
+                </div>
+
+                <div class="splash-box">
+                    <div class="splash-box-title">Model Simplifications</div>
+                    <ul>
+                        <li><strong>Steady-state assumption:</strong> Markets are dynamic — new states grow rapidly, mature markets stabilize. This model shows a single snapshot.</li>
+                        <li><strong>Uniform behavior assumed:</strong> In reality, a small % of heavy bettors drive most handle; this model uses averages</li>
+                        <li><strong>Operator costs simplified:</strong> We use 35% of GGR for costs, but actual margins vary by operator and competitive intensity</li>
+                        <li><strong>Early-stage volatility ignored:</strong> New markets often operate at losses due to promotional spending; this model assumes mature-market economics</li>
+                        <li><strong>Social costs excluded:</strong> Problem gambling, regulatory enforcement, and other externalities are not modeled</li>
+                    </ul>
+                </div>
+
+                <p class="splash-disclaimer">
+                    State presets use approximate public data for educational purposes. Actual market performance varies by competitive dynamics, promotion spending, and regulatory changes. Different stakeholders (states, operators, bettors, communities) experience these outcomes very differently.
+                </p>
+
+                <button class="splash-btn" onclick="startSimulator()">I Understand — Explore the Model</button>
+            </div>
+
+            <!-- Main Simulator (hidden until splash acknowledged) -->
+            <div class="simulator-screen" id="simulatorScreen">
             <div class="widget-header">
                 <span class="widget-badge">Interactive Tool</span>
             </div>
@@ -167,6 +223,16 @@
                             <span class="value-badge" id="taxValue">20%</span>
                         </div>
                     </div>
+
+                    <div class="input-group">
+                        <label class="input-label">Heavy Bettor Concentration</label>
+                        <div class="concentration-toggle" role="radiogroup" aria-label="Heavy bettor concentration level">
+                            <button type="button" class="conc-btn active" data-level="low" onclick="setConcentration('low')" aria-pressed="true">Low</button>
+                            <button type="button" class="conc-btn" data-level="medium" onclick="setConcentration('medium')" aria-pressed="false">Medium</button>
+                            <button type="button" class="conc-btn" data-level="high" onclick="setConcentration('high')" aria-pressed="false">High</button>
+                        </div>
+                        <div class="concentration-hint" id="concentrationHint">20% of bettors → 50% of handle</div>
+                    </div>
                 </div>
 
                 <div class="results-panel" role="region" aria-label="Market results" aria-live="polite">
@@ -215,6 +281,7 @@
             <div class="insight-section">
                 <p class="insight-text" id="profitabilityText"></p>
                 <p class="insight-text" id="stateBenefitText"></p>
+                <p class="insight-text" id="concentrationText"></p>
                 <p class="insight-text" id="benchmarkText"></p>
             </div>
 
@@ -222,11 +289,37 @@
                 <button class="btn btn-secondary" onclick="resetSimulator()">Reset</button>
                 <button class="btn btn-primary" onclick="exportData()">Export CSV</button>
             </div>
+            </div><!-- End simulator-screen -->
         </div>
     </div>
 
     <script>
+        function startSimulator() {
+            document.getElementById('splashScreen').style.display = 'none';
+            document.getElementById('simulatorScreen').style.display = 'block';
+        }
+
         let funnelChart = null;
+        let currentConcentration = 'low';
+
+        // Heavy bettor concentration levels
+        // Shows what % of bettors generate what % of handle
+        const concentrationLevels = {
+            low: { bettorPct: 20, handlePct: 50, label: '20% of bettors → 50% of handle' },
+            medium: { bettorPct: 10, handlePct: 65, label: '10% of bettors → 65% of handle' },
+            high: { bettorPct: 5, handlePct: 80, label: '5% of bettors → 80% of handle' }
+        };
+
+        function setConcentration(level) {
+            currentConcentration = level;
+            document.querySelectorAll('.conc-btn').forEach(btn => {
+                const isActive = btn.dataset.level === level;
+                btn.classList.toggle('active', isActive);
+                btn.setAttribute('aria-pressed', isActive);
+            });
+            document.getElementById('concentrationHint').textContent = concentrationLevels[level].label;
+            updateCalculations();
+        }
 
         const presets = {
             nj: { population: 9.3, participation: 12, avgWager: 2400, operatorMargin: 7, taxRate: 17.5 },
@@ -275,25 +368,33 @@
             document.getElementById('operatorNet').textContent = `$${(operatorNet / 1000000).toFixed(1)}M`;
             document.getElementById('stateTax').textContent = `$${(stateTaxRevenue / 1000000).toFixed(1)}M`;
 
-            updateInsights(operatorNet, totalHandle, stateTaxRevenue, ggr);
+            updateInsights(operatorNet, totalHandle, stateTaxRevenue, ggr, bettors);
             updateFunnelChart(totalHandle, ggr, operatorNet, stateTaxRevenue);
             updateFunnelTable(totalHandle, ggr, operatorNet, stateTaxRevenue);
         }
 
-        function updateInsights(operatorNet, totalHandle, stateTax, ggr) {
+        function updateInsights(operatorNet, totalHandle, stateTax, ggr, bettors) {
             const profitMargin = ((operatorNet / totalHandle) * 100).toFixed(1);
             document.getElementById('profitabilityText').textContent =
-                `Operators earn $${(operatorNet / 1000000).toFixed(1)}M net profit (${profitMargin}% margin on handle after marketing costs).`;
+                `Under these assumptions, operators earn $${(operatorNet / 1000000).toFixed(1)}M net profit (${profitMargin}% margin on handle after estimated marketing costs).`;
 
-            const teacherSalaries = Math.floor(stateTax / 65000);
+            const publicSalaries = Math.floor(stateTax / 65000);
             document.getElementById('stateBenefitText').textContent =
-                `State collects $${(stateTax / 1000000).toFixed(1)}M in annual tax revenue—equivalent to ${teacherSalaries.toLocaleString()} teacher salaries.`;
+                `State collects $${(stateTax / 1000000).toFixed(1)}M in annual tax revenue—comparable to funding ~${publicSalaries.toLocaleString()} public-sector salaries (illustrative).`;
+
+            // Heavy bettor concentration insight
+            const conc = concentrationLevels[currentConcentration];
+            const heavyBettors = Math.round(bettors * (conc.bettorPct / 100));
+            const heavyHandle = totalHandle * (conc.handlePct / 100);
+            const avgHeavyWager = heavyHandle / heavyBettors;
+            document.getElementById('concentrationText').textContent =
+                `Bettor concentration (${currentConcentration}): ~${heavyBettors.toLocaleString()} heavy bettors (${conc.bettorPct}%) generate $${(heavyHandle / 1000000000).toFixed(2)}B (${conc.handlePct}%) of handle—averaging $${Math.round(avgHeavyWager).toLocaleString()}/year each.`;
 
             let benchmark = '';
-            if (ggr / 1000000 > 200) benchmark = 'Major betting market comparable to New York or New Jersey.';
-            else if (ggr / 1000000 > 100) benchmark = 'Strong mid-tier market comparable to Pennsylvania or Michigan.';
-            else if (ggr / 1000000 > 50) benchmark = 'Developing market with growth potential.';
-            else benchmark = 'Small or emerging market with limited scale.';
+            if (ggr / 1000000 > 200) benchmark = 'Market scale similar to large U.S. states (illustrative).';
+            else if (ggr / 1000000 > 100) benchmark = 'Market scale similar to mid-sized U.S. states (illustrative).';
+            else if (ggr / 1000000 > 50) benchmark = 'Developing market scale with growth potential.';
+            else benchmark = 'Small or emerging market scale.';
             document.getElementById('benchmarkText').textContent = benchmark;
         }
 

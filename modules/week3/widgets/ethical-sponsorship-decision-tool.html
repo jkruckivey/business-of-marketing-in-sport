@@ -486,6 +486,99 @@
             border: 0;
         }
 
+        /* Splash Screen Styles */
+        .splash-screen {
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .splash-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .splash-subtitle {
+            font-size: 0.9rem;
+            color: var(--color-neutral-600);
+            margin-bottom: 1.5rem;
+        }
+
+        .splash-box {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .splash-box-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .splash-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .splash-box li {
+            font-size: 0.85rem;
+            color: var(--color-neutral-600);
+            padding: 0.4rem 0;
+            padding-left: 1.25rem;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .splash-box li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-neutral-400);
+        }
+
+        .splash-disclaimer {
+            font-size: 0.75rem;
+            color: var(--color-neutral-500);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .splash-btn {
+            padding: 0.75rem 2rem;
+            background: var(--color-neutral-800);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .splash-btn:hover {
+            background: var(--color-neutral-700);
+        }
+
+        .splash-btn:focus {
+            outline: 3px solid var(--color-neutral-900);
+            outline-offset: 2px;
+        }
+
+        .simulator-screen {
+            display: none;
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 1rem;
@@ -508,6 +601,39 @@
 </head>
 <body>
     <div class="container">
+        <!-- Splash Screen -->
+        <div class="splash-screen" id="splashScreen">
+            <h1 class="splash-title">Ethical Sponsorship Decision Tool</h1>
+            <p class="splash-subtitle">A framework for systematic stakeholder impact analysis</p>
+
+            <div class="splash-box">
+                <div class="splash-box-title">What This Tool Does</div>
+                <ul>
+                    <li>Helps you systematically evaluate controversial sponsorship opportunities by weighing stakeholder impacts</li>
+                    <li>Forces explicit trade-offs between customers, employees, shareholders, media, and advocacy groups</li>
+                    <li>Generates a weighted decision score based on YOUR value judgments</li>
+                </ul>
+            </div>
+
+            <div class="splash-box">
+                <div class="splash-box-title">Important: This is a Decision Framework, Not a Prediction</div>
+                <ul>
+                    <li><strong>Your score reflects your weights:</strong> Two people with identical impact assessments but different stakeholder weights will get different recommendations</li>
+                    <li><strong>Real impacts are uncertain:</strong> Estimating "customer boycott probability" involves significant guesswork — the tool helps structure thinking, not eliminate uncertainty</li>
+                    <li><strong>Context matters:</strong> A +30 score for one brand may be a -30 for another based on their specific stakeholder relationships</li>
+                    <li><strong>No "correct" answer:</strong> The tool surfaces trade-offs, but ethical decisions involve values that can't be mathematically optimized</li>
+                </ul>
+            </div>
+
+            <p class="splash-disclaimer">
+                This tool is designed for learning stakeholder analysis methodology. Real sponsorship decisions involve legal, regulatory, and reputational factors beyond this framework's scope.
+            </p>
+
+            <button class="splash-btn" onclick="startSimulator()">I Understand — Begin Analysis</button>
+        </div>
+
+        <!-- Main Simulator (hidden until splash acknowledged) -->
+        <div class="simulator-screen" id="simulatorScreen">
         <h1>Ethical Sponsorship Decision Tool</h1>
         <p class="subtitle">Evaluate controversial sponsorship opportunities using stakeholder impact analysis. Practice systematic decision-making for properties like LIV Golf.</p>
 
@@ -691,9 +817,14 @@
                 <button class="btn btn-secondary" onclick="resetTool()">Reset</button>
             </div>
         </div>
+        </div><!-- End simulator-screen -->
     </div>
 
     <script>
+        function startSimulator() {
+            document.getElementById('splashScreen').style.display = 'none';
+            document.getElementById('simulatorScreen').style.display = 'block';
+        }
         let radarChart = null;
 
         const impactLabels = {

@@ -341,6 +341,54 @@
             line-height: 1.6;
         }
 
+        .confidence-band {
+            background: white;
+            border: 1px solid var(--color-neutral-300);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .confidence-band h3 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.75rem;
+        }
+
+        .scenario-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            margin-bottom: 0.25rem;
+        }
+
+        .scenario-row.highlight {
+            background: var(--color-neutral-100);
+            font-weight: 600;
+        }
+
+        .scenario-label {
+            font-size: 0.8rem;
+            color: var(--color-neutral-600);
+        }
+
+        .scenario-value {
+            font-size: 0.8rem;
+            color: var(--color-neutral-800);
+            font-weight: 500;
+        }
+
+        .scenario-note {
+            font-size: 0.7rem;
+            color: var(--color-neutral-500);
+            font-style: italic;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
         .actions {
             display: flex;
             gap: 0.75rem;
@@ -437,10 +485,137 @@
             white-space: nowrap;
             border-width: 0;
         }
+
+        /* Splash Screen Styles */
+        .splash-screen {
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .splash-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-neutral-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .splash-subtitle {
+            font-size: 0.9rem;
+            color: var(--color-neutral-600);
+            margin-bottom: 1.5rem;
+        }
+
+        .splash-box {
+            background: white;
+            border: 1px solid var(--color-neutral-200);
+            border-radius: var(--border-radius);
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .splash-box-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--color-neutral-700);
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .splash-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .splash-box li {
+            font-size: 0.85rem;
+            color: var(--color-neutral-600);
+            padding: 0.4rem 0;
+            padding-left: 1.25rem;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .splash-box li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-neutral-400);
+        }
+
+        .splash-disclaimer {
+            font-size: 0.75rem;
+            color: var(--color-neutral-500);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .splash-btn {
+            padding: 0.75rem 2rem;
+            background: var(--color-neutral-800);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .splash-btn:hover {
+            background: var(--color-neutral-700);
+        }
+
+        .splash-btn:focus {
+            outline: 3px solid var(--color-neutral-900);
+            outline-offset: 2px;
+        }
+
+        .simulator-screen {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Splash Screen -->
+        <div class="splash-screen" id="splashScreen">
+            <h1 class="splash-title">Partnership Valuation Tool</h1>
+            <p class="splash-subtitle">Explore the economics of betting sponsor premiums</p>
+
+            <div class="splash-box">
+                <div class="splash-box-title">What This Tool Does</div>
+                <ul>
+                    <li>Compares the value proposition of traditional sponsors vs. betting sponsors</li>
+                    <li>Shows why betting companies can pay premium prices for sponsorship rights</li>
+                    <li>Illustrates the role of engagement multipliers and attribution data</li>
+                </ul>
+            </div>
+
+            <div class="splash-box">
+                <div class="splash-box-title">Model Simplifications</div>
+                <ul>
+                    <li><strong>CPM premiums are illustrative:</strong> Real premiums vary by market, property, and negotiation — the 20-35% ranges shown are plausible but not universal</li>
+                    <li><strong>Engagement boost is hard to measure:</strong> "Bettors watch 40% more" is based on survey data, not direct observation — actual figures are proprietary</li>
+                    <li><strong>Overlap treated as incremental:</strong> The model treats increased engagement as additional effective impressions, even though bettors are already part of the baseline audience</li>
+                    <li><strong>Attribution advantage is real but complex:</strong> Betting sponsors can track conversions, but attribution models vary significantly</li>
+                    <li><strong>Linear relationships assumed:</strong> Real value curves are likely nonlinear with diminishing returns</li>
+                </ul>
+            </div>
+
+            <p class="splash-disclaimer">
+                The numbers are illustrative, not forecasts. This tool helps build intuition for why betting sponsors command premiums, not to calculate precise valuations.
+            </p>
+
+            <button class="splash-btn" onclick="startSimulator()">I Understand — Explore the Model</button>
+        </div>
+
+        <!-- Main Simulator (hidden until splash acknowledged) -->
+        <div class="simulator-screen" id="simulatorScreen">
         <h1>Partnership Valuation Tool</h1>
         <p class="subtitle">Calculate betting sponsor value premium over traditional sponsors using engagement multipliers and attribution advantages.</p>
 
@@ -518,19 +693,19 @@
 
             <div class="metric-grid">
                 <div class="metric">
-                    <div class="metric-label">Traditional Effective Reach</div>
+                    <div class="metric-label">Traditional Weighted Engagement</div>
                     <div class="metric-value" id="tradReach" aria-live="polite">0B</div>
-                    <div class="metric-subtext">Impressions</div>
+                    <div class="metric-subtext">Engagement index</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-label">Betting Effective Reach</div>
+                    <div class="metric-label">Betting Weighted Engagement</div>
                     <div class="metric-value" id="bettingReach" aria-live="polite">0B</div>
-                    <div class="metric-subtext">Impressions</div>
+                    <div class="metric-subtext">Engagement index</div>
                 </div>
                 <div class="metric">
-                    <div class="metric-label">Incremental Value</div>
+                    <div class="metric-label">Incremental Engagement</div>
                     <div class="metric-value" id="incrementalValue" aria-live="polite">0B</div>
-                    <div class="metric-subtext">Additional impressions</div>
+                    <div class="metric-subtext">Additional engagement value</div>
                 </div>
             </div>
                 </div>
@@ -563,6 +738,23 @@
                         <h3>Premium Justification</h3>
                         <p id="justificationText"></p>
                     </div>
+
+                    <div class="confidence-band" role="complementary" aria-label="Scenario sensitivity">
+                        <h3>Scenario Sensitivity</h3>
+                        <div class="scenario-row">
+                            <span class="scenario-label">Conservative</span>
+                            <span class="scenario-value" id="conservativeScenario">—</span>
+                        </div>
+                        <div class="scenario-row highlight">
+                            <span class="scenario-label">Base Case</span>
+                            <span class="scenario-value" id="baseScenario">—</span>
+                        </div>
+                        <div class="scenario-row">
+                            <span class="scenario-label">Aggressive</span>
+                            <span class="scenario-value" id="aggressiveScenario">—</span>
+                        </div>
+                        <p class="scenario-note">Engagement boost ±15 percentage points from base case</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -571,9 +763,15 @@
             <button class="btn btn-primary" onclick="exportData()">Export Valuation</button>
             <button class="btn btn-secondary" onclick="resetTool()">Reset Tool</button>
         </div>
+        </div><!-- End simulator-screen -->
     </div>
 
     <script>
+        function startSimulator() {
+            document.getElementById('splashScreen').style.display = 'none';
+            document.getElementById('simulatorScreen').style.display = 'block';
+        }
+
         let valueChart = null;
 
         const presets = {
@@ -648,17 +846,32 @@
 
             // Update justification
             const justifiedPremium = Math.abs(pricePremium - reachPremium) < 10;
-            let justification = `Betting sponsor pays ${pricePremium.toFixed(1)}% more (${(bettingCPM - tradCPM).toFixed(0)} CPM premium) but delivers ${reachPremium.toFixed(1)}% more effective reach (${(incrementalImpressions / 1000000000).toFixed(2)}B additional impressions). `;
+            let justification = `Betting sponsor pays ${pricePremium.toFixed(1)}% more (${(bettingCPM - tradCPM).toFixed(0)} CPM premium) but delivers ${reachPremium.toFixed(1)}% more weighted engagement (${(incrementalImpressions / 1000000000).toFixed(2)}B incremental engagement value). `;
 
             if (justifiedPremium) {
-                justification += `This premium is well-justified by the engagement advantage. Additionally, betting sponsors gain attribution data—they can track which bettors came through the sponsorship, providing measurable ROI that traditional sponsors cannot access.`;
+                justification += `Under these assumptions, the premium appears economically defensible based on the engagement advantage. Additionally, betting sponsors gain enhanced attribution data—they can track conversions through the sponsorship, providing clearer ROI measurement than traditional sponsors typically access.`;
             } else if (pricePremium > reachPremium) {
-                justification += `The price premium exceeds the reach advantage, but betting sponsors may justify this through attribution data and direct conversion tracking unavailable to traditional sponsors.`;
+                justification += `The price premium exceeds the engagement advantage under these assumptions, though betting sponsors may justify this through enhanced attribution data and conversion tracking.`;
             } else {
-                justification += `Betting sponsors are getting exceptional value—paying less premium than the reach advantage they receive, plus gaining attribution data for measurable ROI.`;
+                justification += `Under these assumptions, betting sponsors appear to be getting favorable terms—paying less premium than the engagement advantage they receive, plus gaining enhanced attribution data.`;
             }
+            justification += ` These advantages coexist with regulatory, reputational, and ethical risks that are not captured in this model.`;
 
             document.getElementById('justificationText').textContent = justification;
+
+            // Update scenario sensitivity (Upgrade 6)
+            const conservativeBoost = Math.max(0.05, engagementBoost - 0.15);
+            const aggressiveBoost = engagementBoost + 0.15;
+
+            const conservativeImpressions = tradImpressions * (1 + (conservativeBoost * bettorPercent));
+            const aggressiveImpressions = tradImpressions * (1 + (aggressiveBoost * bettorPercent));
+
+            const conservativePremium = ((conservativeImpressions - tradImpressions) / tradImpressions) * 100;
+            const aggressivePremium = ((aggressiveImpressions - tradImpressions) / tradImpressions) * 100;
+
+            document.getElementById('conservativeScenario').textContent = `+${conservativePremium.toFixed(1)}% engagement (${(conservativeBoost * 100).toFixed(0)}% boost)`;
+            document.getElementById('baseScenario').textContent = `+${reachPremium.toFixed(1)}% engagement (${(engagementBoost * 100).toFixed(0)}% boost)`;
+            document.getElementById('aggressiveScenario').textContent = `+${aggressivePremium.toFixed(1)}% engagement (${(aggressiveBoost * 100).toFixed(0)}% boost)`;
 
             // Update chart
             updateValueChart(tradImpressions, bettingImpressions);
@@ -682,16 +895,16 @@
                     premium: `${pricePremium.toFixed(1)}%`
                 },
                 {
-                    metric: 'Effective Reach',
+                    metric: 'Weighted Engagement',
                     trad: `${(tradImpressions / 1000000000).toFixed(2)}B`,
                     betting: `${(bettingImpressions / 1000000000).toFixed(2)}B`,
                     premium: `${reachPremium.toFixed(1)}%`
                 },
                 {
                     metric: 'Attribution Data',
-                    trad: 'No',
-                    betting: 'Yes',
-                    premium: 'Major advantage'
+                    trad: 'Limited',
+                    betting: 'Enhanced',
+                    premium: 'Significant advantage'
                 }
             ];
 
@@ -718,7 +931,7 @@
                 data: {
                     labels: ['Traditional Sponsor', 'Betting Sponsor'],
                     datasets: [{
-                        label: 'Effective Reach (Billions)',
+                        label: 'Weighted Engagement Index',
                         data: [tradImpressions / 1000000000, bettingImpressions / 1000000000],
                         backgroundColor: [
                             getComputedStyle(document.documentElement).getPropertyValue('--color-neutral-400') + 'cc',
@@ -740,7 +953,7 @@
                         },
                         title: {
                             display: true,
-                            text: 'Effective Reach Comparison',
+                            text: 'Weighted Engagement Comparison',
                             font: {
                                 family: 'Geist',
                                 size: 14,
@@ -754,7 +967,7 @@
                             beginAtZero: true,
                             title: {
                                 display: true,
-                                text: 'Effective Impressions (Billions)',
+                                text: 'Weighted Engagement Index',
                                 font: {
                                     family: 'Geist',
                                     size: 12

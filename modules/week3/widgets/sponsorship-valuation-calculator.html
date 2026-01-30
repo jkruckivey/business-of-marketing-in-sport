@@ -102,11 +102,59 @@
         }
 
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+
+        /* Splash Screen Styles */
+        .splash-screen { text-align: center; padding: 2rem 1.5rem; }
+        .splash-title { font-size: 1.25rem; font-weight: 700; color: var(--color-neutral-900); margin-bottom: 0.5rem; }
+        .splash-subtitle { font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 1.5rem; }
+        .splash-box { background: white; border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1.5rem; text-align: left; }
+        .splash-box-title { font-size: 0.8rem; font-weight: 600; color: var(--color-neutral-700); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .splash-box ul { list-style: none; padding: 0; margin: 0; }
+        .splash-box li { font-size: 0.85rem; color: var(--color-neutral-600); padding: 0.4rem 0; padding-left: 1.25rem; position: relative; line-height: 1.5; }
+        .splash-box li::before { content: "•"; position: absolute; left: 0; color: var(--color-neutral-400); }
+        .splash-disclaimer { font-size: 0.75rem; color: var(--color-neutral-500); font-style: italic; margin-bottom: 1.5rem; line-height: 1.5; }
+        .splash-btn { padding: 0.75rem 2rem; background: var(--color-neutral-800); color: white; border: none; border-radius: 6px; font-family: inherit; font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: background 0.2s; }
+        .splash-btn:hover { background: var(--color-neutral-700); }
+        .splash-btn:focus { outline: 3px solid var(--color-neutral-900); outline-offset: 2px; }
+        .simulator-screen { display: none; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="widget-box">
+            <!-- Splash Screen -->
+            <div class="splash-screen" id="splashScreen">
+                <h1 class="splash-title">Sponsorship Valuation Calculator</h1>
+                <p class="splash-subtitle">Explore how deal parameters affect cost efficiency</p>
+
+                <div class="splash-box">
+                    <div class="splash-box-title">What This Tool Does</div>
+                    <ul>
+                        <li>Calculates CPM (Cost Per Thousand impressions) — a standard industry metric for comparing advertising efficiency</li>
+                        <li>Breaks down total impressions by channel: broadcast, stadium, and digital</li>
+                        <li>Compares your scenario against illustrative benchmarks</li>
+                    </ul>
+                </div>
+
+                <div class="splash-box">
+                    <div class="splash-box-title">Model Simplifications</div>
+                    <ul>
+                        <li><strong>All impressions treated equally:</strong> This model counts raw impressions — real-world valuations weight impressions by visibility, duration, and context (broadcast typically valued higher than digital)</li>
+                        <li><strong>Impressions ≠ impact:</strong> This tool counts impressions, not engagement quality or conversion — a 2-second logo flash counts the same as a 30-second feature</li>
+                        <li><strong>Real deals are more complex:</strong> Actual sponsorship valuation includes intangibles like brand association, hospitality rights, and category exclusivity</li>
+                        <li><strong>Benchmarks vary widely:</strong> Super Bowl and social media CPMs shown are illustrative; actual rates depend on targeting, format, and market conditions</li>
+                    </ul>
+                </div>
+
+                <p class="splash-disclaimer">
+                    This tool illustrates how assumptions shape CPM calculations. Use it to build intuition about sponsorship economics, not to make actual pricing decisions.
+                </p>
+
+                <button class="splash-btn" onclick="startSimulator()">I Understand — Explore the Calculator</button>
+            </div>
+
+            <!-- Main Simulator (hidden until splash acknowledged) -->
+            <div class="simulator-screen" id="simulatorScreen">
             <div class="widget-header">
                 <span class="widget-badge">Interactive Tool</span>
             </div>
@@ -115,11 +163,11 @@
             <p class="widget-disclaimer">This simulator illustrates how assumptions shape outcomes. Real-world results vary widely.</p>
 
             <div class="presets" role="group" aria-label="Preset sponsorship deals">
-                <button class="preset-btn" onclick="loadPreset('nfl')">NFL Jersey ($25M)</button>
-                <button class="preset-btn" onclick="loadPreset('epl')">EPL Shirt (£50M)</button>
-                <button class="preset-btn" onclick="loadPreset('mls')">MLS ($5M)</button>
-                <button class="preset-btn" onclick="loadPreset('nba')">NBA Court ($3M)</button>
-                <button class="preset-btn" onclick="loadPreset('mlb')">MLB Dugout ($1M)</button>
+                <button class="preset-btn" onclick="loadPreset('nfl')">NFL-style Jersey (~$25M)</button>
+                <button class="preset-btn" onclick="loadPreset('epl')">EPL-style Shirt (~£50M)</button>
+                <button class="preset-btn" onclick="loadPreset('mls')">MLS-style (~$5M)</button>
+                <button class="preset-btn" onclick="loadPreset('nba')">NBA-style Court (~$3M)</button>
+                <button class="preset-btn" onclick="loadPreset('mlb')">MLB-style Dugout (~$1M)</button>
             </div>
 
             <div class="two-col">
@@ -211,10 +259,16 @@
                 <button class="btn btn-secondary" onclick="resetCalculator()">Reset</button>
                 <button class="btn btn-primary" onclick="exportData()">Export CSV</button>
             </div>
+            </div><!-- End simulator-screen -->
         </div>
     </div>
 
     <script>
+        function startSimulator() {
+            document.getElementById('splashScreen').style.display = 'none';
+            document.getElementById('simulatorScreen').style.display = 'block';
+        }
+
         let benchmarkChart = null;
 
         const presets = {
@@ -252,11 +306,21 @@
             document.getElementById('digitalImpressionsValue').textContent = `${document.getElementById('digitalImpressions').value}M`;
             document.getElementById('logoExposureValue').textContent = `${document.getElementById('logoExposure').value}%`;
 
+            // Raw impression counts (unweighted)
             const broadcastImpressions = broadcastReach * gamesPerSeason * logoExposure;
             const attendanceImpressions = attendance * gamesPerSeason;
             const totalImpressions = broadcastImpressions + attendanceImpressions + digitalImpressions;
 
+            // Weighted impressions (closer to real valuations)
+            // Broadcast: 1.0x (high attention, long duration)
+            // Stadium: 0.3x (limited attention, ambient)
+            // Digital: 0.1x (low attention, scroll-past)
+            const weightedImpressions = (broadcastImpressions * 1.0) + (attendanceImpressions * 0.3) + (digitalImpressions * 0.1);
+
+            // CPM based on raw impressions (displayed to user)
             const cpm = (rightsFee * 1000000 / totalImpressions) * 1000;
+            // Note: A more realistic "weighted CPM" would use weightedImpressions
+            // const weightedCpm = (rightsFee * 1000000 / weightedImpressions) * 1000;
 
             // Calculate value breakdown
             const broadcastPct = broadcastImpressions / totalImpressions;
@@ -271,21 +335,21 @@
 
             let grade, gradeClass, gradeText;
             if (cpm < 500) {
-                grade = 'Excellent';
+                grade = 'Cost-efficient';
                 gradeClass = 'grade-excellent';
-                gradeText = `Your CPM of $${cpm.toFixed(0)} is excellent — well below typical sponsorship benchmarks ($500-1,500). This deal offers strong value per impression.`;
+                gradeText = `At $${cpm.toFixed(0)} CPM, this deal appears cost-efficient on a raw impression basis — below typical sponsorship ranges ($500–1,500). Actual value depends on impression quality and brand fit.`;
             } else if (cpm < 1500) {
-                grade = 'Good';
+                grade = 'Typical';
                 gradeClass = 'grade-good';
-                gradeText = `Your CPM of $${cpm.toFixed(0)} is good — within the typical premium sponsorship range ($500-1,500). Standard market pricing.`;
+                gradeText = `At $${cpm.toFixed(0)} CPM, this deal falls within typical premium sponsorship ranges ($500–1,500). Whether it's "good value" depends on factors outside this model.`;
             } else if (cpm < 3000) {
-                grade = 'Fair';
+                grade = 'Premium';
                 gradeClass = 'grade-fair';
-                gradeText = `Your CPM of $${cpm.toFixed(0)} is fair — approaching upper limits. Consider negotiating or increasing activation to justify the premium.`;
+                gradeText = `At $${cpm.toFixed(0)} CPM, this deal is priced at the premium end. This may be justified by exclusivity, brand fit, or high-quality impressions not captured here.`;
             } else {
-                grade = 'High';
+                grade = 'Very premium';
                 gradeClass = 'grade-poor';
-                gradeText = `Your CPM of $${cpm.toFixed(0)} is high — significantly above typical benchmarks. Renegotiate or ensure intangible value (brand fit, exclusivity) justifies the cost.`;
+                gradeText = `At $${cpm.toFixed(0)} CPM, this deal is priced well above typical ranges. Premium pricing may reflect scarcity, exclusivity, or intangible value not visible in raw impression counts.`;
             }
 
             document.getElementById('gradeBadge').innerHTML = `<span class="grade-badge ${gradeClass}">${grade}</span>`;

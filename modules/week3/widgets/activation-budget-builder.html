@@ -115,11 +115,67 @@
         }
 
         .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0; }
+
+        /* Splash Screen Styles */
+        .splash-screen { text-align: center; padding: 2rem 1.5rem; }
+        .splash-title { font-size: 1.25rem; font-weight: 700; color: var(--color-neutral-900); margin-bottom: 0.5rem; }
+        .splash-subtitle { font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 1.5rem; }
+        .splash-box { background: white; border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1.5rem; text-align: left; }
+        .splash-box-title { font-size: 0.8rem; font-weight: 600; color: var(--color-neutral-700); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .splash-box ul { list-style: none; padding: 0; margin: 0; }
+        .splash-box li { font-size: 0.85rem; color: var(--color-neutral-600); padding: 0.4rem 0; padding-left: 1.25rem; position: relative; line-height: 1.5; }
+        .splash-box li::before { content: "•"; position: absolute; left: 0; color: var(--color-neutral-400); }
+        .splash-disclaimer { font-size: 0.75rem; color: var(--color-neutral-500); font-style: italic; margin-bottom: 1.5rem; line-height: 1.5; }
+        .splash-btn { padding: 0.75rem 2rem; background: var(--color-neutral-800); color: white; border: none; border-radius: 6px; font-family: inherit; font-size: 0.9rem; font-weight: 500; cursor: pointer; transition: background 0.2s; }
+        .splash-btn:hover { background: var(--color-neutral-700); }
+        .splash-btn:focus { outline: 3px solid var(--color-neutral-900); outline-offset: 2px; }
+        .simulator-screen { display: none; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="widget-box">
+            <!-- Splash Screen -->
+            <div class="splash-screen" id="splashScreen">
+                <h1 class="splash-title">Activation Budget Builder</h1>
+                <p class="splash-subtitle">Design your sponsorship activation mix across channels</p>
+
+                <div class="splash-box">
+                    <div class="splash-box-title">What This Tool Does</div>
+                    <ul>
+                        <li>Helps you allocate activation budget across channels: advertising, hospitality, retail, digital, events, measurement</li>
+                        <li>Compares your allocation against industry benchmarks for different category strategies</li>
+                        <li>Calculates total spend based on the industry rule-of-thumb: activation runs 2-3× rights fees</li>
+                    </ul>
+                </div>
+
+                <div class="splash-box">
+                    <div class="splash-box-title">Model Simplifications</div>
+                    <ul>
+                        <li><strong>Benchmarks are illustrative:</strong> "Mass Market" and "Premium" allocations reflect general patterns, not specific company data</li>
+                        <li><strong>2-3× multiplier varies:</strong> Some sponsors spend 1× (under-activated), others spend 5× (heavily activated). Context matters.</li>
+                        <li><strong>"Benchmark Alignment" ≠ effectiveness:</strong> The score measures similarity to category norms, not actual ROI or strategic fit</li>
+                        <li><strong>Linear returns assumed:</strong> In reality, channels often exhibit diminishing or nonlinear effects — doubling digital spend rarely doubles impact</li>
+                        <li><strong>Categories overlap:</strong> Real activations blur boundaries — a hospitality event might also be digital content</li>
+                    </ul>
+                </div>
+
+                <div class="splash-box">
+                    <div class="splash-box-title">Strategic Note</div>
+                    <ul>
+                        <li><strong>Differentiation is valid:</strong> Some winning strategies intentionally overweight one channel (Red Bull's extreme events focus, Amex's hospitality dominance). Low benchmark alignment can signal innovation, not error.</li>
+                    </ul>
+                </div>
+
+                <p class="splash-disclaimer">
+                    Company names in presets are used for context only. Allocation patterns are illustrative and do not represent actual proprietary budgets.
+                </p>
+
+                <button class="splash-btn" onclick="startSimulator()">I Understand — Build My Budget</button>
+            </div>
+
+            <!-- Main Simulator (hidden until splash acknowledged) -->
+            <div class="simulator-screen" id="simulatorScreen">
             <div class="widget-header">
                 <span class="widget-badge">Interactive Tool</span>
             </div>
@@ -128,9 +184,9 @@
             <p class="widget-disclaimer">This simulator illustrates how assumptions shape outcomes. Real-world results vary widely.</p>
 
             <div class="presets" role="group" aria-label="Category presets">
-                <button class="preset-btn" onclick="loadPreset('cocacola')">Coca-Cola World Cup</button>
-                <button class="preset-btn" onclick="loadPreset('amex')">American Express PGA</button>
-                <button class="preset-btn" onclick="loadPreset('redbull')">Red Bull F1</button>
+                <button class="preset-btn" onclick="loadPreset('cocacola')">Beverage Brand (Coca-Cola-style)</button>
+                <button class="preset-btn" onclick="loadPreset('amex')">Premium Card (Amex-style)</button>
+                <button class="preset-btn" onclick="loadPreset('redbull')">Energy Drink (Red Bull-style)</button>
             </div>
 
             <div class="two-col">
@@ -274,17 +330,23 @@
 
             <div class="insight-section">
                 <p class="insight-text" id="insightText"></p>
-                <span class="score-badge" id="fitScore">Strategic Fit: 85/100</span>
+                <span class="score-badge" id="fitScore" title="Measures similarity to category norms, not effectiveness. Low scores can indicate inefficiency OR intentional differentiation.">Benchmark Alignment: 85/100</span>
             </div>
 
             <div class="action-row">
                 <button class="btn btn-secondary" onclick="resetBuilder()">Reset</button>
                 <button class="btn btn-primary" onclick="exportData()">Export Budget Plan</button>
             </div>
+            </div><!-- End simulator-screen -->
         </div>
     </div>
 
     <script>
+        function startSimulator() {
+            document.getElementById('splashScreen').style.display = 'none';
+            document.getElementById('simulatorScreen').style.display = 'block';
+        }
+
         let allocationChart = null;
         const channels = ['advertising', 'hospitality', 'retail', 'digital', 'events', 'measurement'];
 
@@ -425,22 +487,25 @@
             });
 
             const fitScore = Math.max(0, 100 - totalDiff);
-            document.getElementById('fitScore').textContent = `Strategic Fit: ${fitScore}/100`;
+            document.getElementById('fitScore').textContent = `Benchmark Alignment: ${fitScore}/100`;
 
             let insightText = `Your allocation `;
             if (fitScore >= 85) {
-                insightText += `aligns well with ${categoryName} best practices. `;
+                insightText += `closely resembles common ${categoryName} patterns. `;
             } else if (fitScore >= 70) {
-                insightText += `is reasonably aligned with ${categoryName} standards. `;
+                insightText += `is reasonably similar to typical ${categoryName} allocations. `;
             } else {
-                insightText += `differs from ${categoryName} benchmarks. `;
+                insightText += `differs from typical ${categoryName} allocations. `;
             }
 
             if (insights.length > 0) {
-                insightText += `Consider adjusting: ${insights.slice(0, 2).join('; ')}.`;
+                insightText += `Gaps vs. benchmark: ${insights.slice(0, 2).join('; ')}. `;
             } else {
-                insightText += `Your mix matches industry leaders in this category.`;
+                insightText += `Your mix resembles common patterns in this category. `;
             }
+
+            // Add innovation framing
+            insightText += `Note: Deviating from benchmarks can signal either inefficiency or intentional strategic differentiation.`;
 
             document.getElementById('insightText').textContent = insightText;
         }
@@ -469,7 +534,7 @@
                 rows.push(`${channelNames[index]},${percent}%,$${amount}M`);
             });
 
-            rows.push('', `Strategic Fit,${document.getElementById('fitScore').textContent}`);
+            rows.push('', `Benchmark Alignment,${document.getElementById('fitScore').textContent}`);
 
             const blob = new Blob([rows.join('\n')], { type: 'text/csv' });
             const a = document.createElement('a');

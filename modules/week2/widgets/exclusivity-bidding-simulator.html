@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exclusivity Bidding Simulator - NHL Rights Deal</title>
+    <title>Exclusivity vs Split Rights - Case Study</title>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -27,381 +27,203 @@
             --border-radius-sm: 4px;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        *:focus { outline: 2px solid #3182ce; outline-offset: 2px; }
-        body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: white; color: var(--color-neutral-800); padding: 1.5rem; line-height: 1.6; }
-        .container { max-width: 950px; margin: 0 auto; }
+        body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: white; color: var(--color-neutral-800); padding: 1.5rem; line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; }
         .widget-box { background: var(--color-neutral-50); border: 2px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.5rem; }
+        .widget-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--color-neutral-600); color: white; padding: 0.25rem 0.75rem; border-radius: var(--border-radius-sm); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.75rem; }
         .widget-title { font-size: 1.25rem; font-weight: 700; color: var(--color-neutral-900); margin-bottom: 0.5rem; }
         .widget-subtitle { font-size: 0.85rem; color: var(--color-neutral-600); margin-bottom: 1.25rem; }
 
-        /* Scenario box */
-        .scenario-box { background: white; border: 1px solid var(--color-neutral-200); border-left: 3px solid var(--color-accent); padding: 1rem; border-radius: var(--border-radius-sm); margin-bottom: 1.25rem; }
-        .scenario-label { font-size: 0.75rem; font-weight: 600; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
-        .scenario-text { font-size: 0.9rem; color: var(--color-neutral-700); }
+        .scenario-box { background: white; border: 1px solid var(--color-neutral-200); border-left: 3px solid var(--color-neutral-800); padding: 1rem; border-radius: var(--border-radius-sm); margin-bottom: 1.25rem; }
+        .scenario-label { font-size: 0.7rem; font-weight: 600; color: var(--color-neutral-500); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+        .scenario-text { font-size: 0.875rem; color: var(--color-neutral-700); }
 
-        /* Bidders row */
-        .bidders-row { display: flex; gap: 0.75rem; margin-bottom: 1.25rem; flex-wrap: wrap; }
-        .bidder-chip { background: white; border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius-sm); padding: 0.5rem 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
-        .bidder-name { font-size: 0.8rem; font-weight: 600; color: var(--color-neutral-700); }
-        .bidder-amount { font-size: 0.85rem; font-weight: 700; color: var(--color-neutral-900); }
+        .bidders-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+        .bidder-chip { background: white; border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius-sm); padding: 0.5rem 0.75rem; }
+        .bidder-name { font-size: 0.75rem; font-weight: 600; color: var(--color-neutral-600); }
+        .bidder-amount { font-size: 0.85rem; font-weight: 700; color: var(--color-neutral-800); }
 
-        /* Options grid */
         .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem; }
-        .option-card { background: white; border: 2px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; cursor: pointer; transition: all 0.2s; }
-        .option-card:hover { border-color: var(--color-neutral-400); }
-        .option-card.selected { border-color: var(--color-accent); background: linear-gradient(to bottom, var(--color-accent-light), white); }
+        .option-card { background: white; border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; }
+        .option-card.preferred { border-left: 3px solid var(--color-accent); }
+        .option-card.risky { border-left: 3px solid var(--color-warning); }
         .option-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem; }
-        .option-title { font-size: 0.95rem; font-weight: 700; color: var(--color-neutral-800); }
-        .option-headline { font-size: 1.5rem; font-weight: 700; color: var(--color-accent); }
-        .option-desc { font-size: 0.8rem; color: var(--color-neutral-600); margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--color-neutral-200); }
+        .option-title { font-size: 0.9rem; font-weight: 700; color: var(--color-neutral-800); }
+        .option-headline { font-size: 1.25rem; font-weight: 700; }
+        .option-headline.stable { color: var(--color-accent); }
+        .option-headline.risky { color: var(--color-warning); }
+        .option-desc { font-size: 0.8rem; color: var(--color-neutral-600); margin-bottom: 1rem; }
 
-        /* Breakdown table */
         .breakdown { margin-bottom: 0.75rem; }
-        .breakdown-row { display: flex; justify-content: space-between; align-items: center; padding: 0.35rem 0; font-size: 0.8rem; }
-        .breakdown-row.indent { padding-left: 0.75rem; }
+        .breakdown-row { display: flex; justify-content: space-between; padding: 0.35rem 0; font-size: 0.8rem; border-bottom: 1px solid var(--color-neutral-100); }
+        .breakdown-row:last-child { border-bottom: none; }
         .breakdown-label { color: var(--color-neutral-600); }
         .breakdown-value { font-weight: 600; color: var(--color-neutral-800); }
         .breakdown-value.positive { color: var(--color-accent); }
         .breakdown-value.negative { color: var(--color-danger); }
         .breakdown-value.warning { color: var(--color-warning); }
-        .breakdown-row.total { border-top: 1px solid var(--color-neutral-300); margin-top: 0.5rem; padding-top: 0.5rem; }
+        .breakdown-row.total { border-top: 2px solid var(--color-neutral-300); margin-top: 0.5rem; padding-top: 0.5rem; }
         .breakdown-row.total .breakdown-label { font-weight: 600; color: var(--color-neutral-800); }
-        .breakdown-row.total .breakdown-value { font-size: 1rem; }
 
-        /* Risk callout */
-        .risk-callout { background: var(--color-warning-light); border: 1px solid var(--color-warning); border-radius: var(--border-radius-sm); padding: 0.625rem 0.75rem; margin-top: 0.75rem; }
-        .risk-callout-title { font-size: 0.75rem; font-weight: 600; color: var(--color-warning); margin-bottom: 0.25rem; }
-        .risk-callout-text { font-size: 0.75rem; color: var(--color-neutral-700); }
+        .callout { padding: 0.75rem; border-radius: var(--border-radius-sm); margin-top: 0.75rem; }
+        .callout-stable { background: var(--color-accent-light); border: 1px solid var(--color-accent); }
+        .callout-risk { background: var(--color-warning-light); border: 1px solid var(--color-warning); }
+        .callout-title { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem; }
+        .callout-title.stable { color: var(--color-accent); }
+        .callout-title.risk { color: var(--color-warning); }
+        .callout-text { font-size: 0.75rem; color: var(--color-neutral-700); }
 
-        /* Certainty callout */
-        .certainty-callout { background: var(--color-accent-light); border: 1px solid var(--color-accent); border-radius: var(--border-radius-sm); padding: 0.625rem 0.75rem; margin-top: 0.75rem; }
-        .certainty-callout-title { font-size: 0.75rem; font-weight: 600; color: var(--color-accent); margin-bottom: 0.25rem; }
-        .certainty-callout-text { font-size: 0.75rem; color: var(--color-neutral-700); }
+        .twist-section { background: var(--color-danger-light); border: 1px solid var(--color-danger); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1.25rem; }
+        .twist-title { font-size: 0.9rem; font-weight: 700; color: var(--color-danger); margin-bottom: 0.5rem; }
+        .twist-text { font-size: 0.85rem; color: var(--color-neutral-700); }
+        .twist-text strong { color: var(--color-neutral-800); }
 
-        /* Decision prompt */
-        .decision-prompt { text-align: center; padding: 1rem; background: white; border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius-sm); margin-bottom: 1.25rem; }
-        .decision-prompt p { font-size: 0.9rem; color: var(--color-neutral-600); margin-bottom: 0.75rem; }
-        .confirm-btn { background: var(--color-neutral-800); color: white; border: none; padding: 0.625rem 1.5rem; font-size: 0.875rem; font-weight: 600; border-radius: var(--border-radius-sm); cursor: pointer; font-family: inherit; transition: background 0.2s; }
-        .confirm-btn:hover:not(:disabled) { background: var(--color-neutral-700); }
-        .confirm-btn:disabled { background: var(--color-neutral-400); cursor: not-allowed; }
+        .comparison-box { background: white; border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1.25rem; }
+        .comparison-title { font-size: 0.85rem; font-weight: 700; color: var(--color-neutral-800); margin-bottom: 0.75rem; }
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.5rem; text-align: center; }
+        .comparison-item { padding: 0.75rem; background: var(--color-neutral-50); border-radius: var(--border-radius-sm); }
+        .comparison-label { font-size: 0.65rem; font-weight: 600; color: var(--color-neutral-500); text-transform: uppercase; margin-bottom: 0.25rem; }
+        .comparison-value { font-size: 1rem; font-weight: 700; }
+        .comparison-value.best { color: var(--color-accent); }
+        .comparison-sub { font-size: 0.65rem; color: var(--color-neutral-500); margin-top: 0.25rem; }
 
-        /* Outcome section */
-        .outcome-section { display: none; }
-        .outcome-section.visible { display: block; }
-        .outcome-box { background: white; border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1rem; }
-        .outcome-title { font-size: 1rem; font-weight: 700; color: var(--color-neutral-800); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
-        .outcome-text { font-size: 0.875rem; color: var(--color-neutral-600); line-height: 1.7; }
-        .outcome-text strong { color: var(--color-neutral-800); }
-        .outcome-highlight { background: var(--color-accent-light); padding: 0.125rem 0.375rem; border-radius: 2px; }
-        .outcome-warning { background: var(--color-warning-light); padding: 0.125rem 0.375rem; border-radius: 2px; }
-        .outcome-danger { background: var(--color-danger-light); padding: 0.125rem 0.375rem; border-radius: 2px; }
-
-        /* Year 2 twist */
-        .twist-box { background: var(--color-danger-light); border: 1px solid var(--color-danger); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1rem; }
-        .twist-title { font-size: 1rem; font-weight: 700; color: var(--color-danger); margin-bottom: 0.5rem; }
-        .twist-text { font-size: 0.875rem; color: var(--color-neutral-700); line-height: 1.7; }
-
-        /* Lesson box */
         .lesson-box { background: var(--color-neutral-100); border: 1px solid var(--color-neutral-300); border-radius: var(--border-radius); padding: 1.25rem; }
         .lesson-title { font-size: 0.85rem; font-weight: 700; color: var(--color-neutral-800); margin-bottom: 0.5rem; }
         .lesson-text { font-size: 0.85rem; color: var(--color-neutral-600); line-height: 1.7; }
+        .lesson-text strong { color: var(--color-neutral-800); }
 
-        /* Action row */
-        .action-row { display: flex; justify-content: flex-end; margin-top: 1rem; }
-        .btn { padding: 0.5rem 1rem; border: none; border-radius: var(--border-radius-sm); font-size: 0.8rem; font-weight: 600; cursor: pointer; font-family: inherit; background: var(--color-neutral-200); color: var(--color-neutral-700); transition: background 0.2s; }
-        .btn:hover { background: var(--color-neutral-300); }
-
-        /* Tooltips */
-        .tooltip-wrapper { position: relative; display: inline-flex; align-items: center; gap: 0.25rem; }
-        .tooltip-icon { width: 14px; height: 14px; border-radius: 50%; background: var(--color-neutral-300); color: var(--color-neutral-600); font-size: 0.65rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; cursor: help; flex-shrink: 0; }
-        .tooltip-icon:hover { background: var(--color-neutral-400); color: white; }
-        .tooltip-content { position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: var(--color-neutral-800); color: white; padding: 0.5rem 0.75rem; border-radius: var(--border-radius-sm); font-size: 0.75rem; font-weight: 400; line-height: 1.5; width: 220px; text-align: left; opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; z-index: 100; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
-        .tooltip-content::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 6px solid transparent; border-top-color: var(--color-neutral-800); }
-        .tooltip-wrapper:hover .tooltip-content, .tooltip-wrapper:focus-within .tooltip-content { opacity: 1; visibility: visible; }
-
-        /* Stakeholder impact */
-        .stakeholder-box { background: white; border: 1px solid var(--color-neutral-200); border-radius: var(--border-radius); padding: 1.25rem; margin-bottom: 1rem; }
-        .stakeholder-title { font-size: 0.9rem; font-weight: 700; color: var(--color-neutral-800); margin-bottom: 0.75rem; }
-        .stakeholder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
-        .stakeholder-item { display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.5rem; background: var(--color-neutral-50); border-radius: var(--border-radius-sm); }
-        .stakeholder-label { font-size: 0.75rem; font-weight: 600; color: var(--color-neutral-700); min-width: 60px; }
-        .stakeholder-impact { font-size: 0.75rem; color: var(--color-neutral-600); }
-        .impact-positive { color: var(--color-accent); }
-        .impact-negative { color: var(--color-danger); }
-        .impact-mixed { color: var(--color-warning); }
-
-        /* Responsive */
         @media (max-width: 700px) {
             body { padding: 1rem; }
             .widget-box { padding: 1rem; }
             .options-grid { grid-template-columns: 1fr; }
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            * { transition: none !important; }
+            .comparison-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="widget-box">
-            <h1 class="widget-title">NHL Rights Bidding Simulator</h1>
-            <p class="widget-subtitle">You're the NHL Commissioner. Canada's broadcast rights are expiring. Make the call.</p>
+            <div class="widget-badge">Case Study Infographic</div>
+            <h1 class="widget-title">Exclusivity vs Split Rights</h1>
+            <p class="widget-subtitle">When is more money NOT the better deal? A lesson in risk-adjusted value.</p>
 
             <div class="scenario-box">
-                <div class="scenario-label">The Situation</div>
-                <p class="scenario-text">Three companies have submitted bids. You can accept Apple's exclusive offer, or split the package among all three bidders. The headline numbers favor splitting — but is the extra revenue worth the complexity and risk?</p>
+                <div class="scenario-label">The Scenario (Illustrative)</div>
+                <p class="scenario-text">You're commissioner of a major hockey league. Your country's broadcast rights are expiring. Three types of companies have submitted bids. Do you take the safer exclusive deal or chase the higher headline number with a split package?</p>
             </div>
 
             <div class="bidders-row">
                 <div class="bidder-chip">
-                    <span class="bidder-name">Rogers:</span>
+                    <span class="bidder-name">Regional Broadcaster (Rogers-style):</span>
                     <span class="bidder-amount">$450M/yr</span>
                 </div>
                 <div class="bidder-chip">
-                    <span class="bidder-name">DAZN:</span>
+                    <span class="bidder-name">Digital Sports Streamer (DAZN-style):</span>
                     <span class="bidder-amount">$400M/yr</span>
                 </div>
                 <div class="bidder-chip">
-                    <span class="bidder-name">Apple TV+:</span>
-                    <span class="bidder-amount">$700M/yr (exclusive) or $300M/yr (streaming only)</span>
+                    <span class="bidder-name">Tech Platform (Apple TV+-style):</span>
+                    <span class="bidder-amount">$700M exclusive / $300M streaming only</span>
                 </div>
             </div>
 
-            <div id="decision-phase">
-                <div class="options-grid" role="radiogroup" aria-label="Choose deal structure">
-                    <div class="option-card" tabindex="0" role="radio" aria-checked="false" data-option="exclusive">
-                        <div class="option-header">
-                            <div class="option-title">Option A: Exclusive Deal</div>
-                            <div class="option-headline">$700M</div>
-                        </div>
-                        <div class="option-desc">Apple TV+ gets all Canadian NHL rights — national, regional, streaming, playoffs.</div>
+            <div class="options-grid">
+                <div class="option-card preferred">
+                    <div class="option-header">
+                        <div class="option-title">Option A: Exclusive Deal</div>
+                        <div class="option-headline stable">$700M</div>
+                    </div>
+                    <p class="option-desc">Tech Platform gets all national rights — regional, streaming, playoffs.</p>
 
-                        <div class="breakdown">
-                            <div class="breakdown-row">
-                                <span class="breakdown-label">Apple TV+ (all rights)</span>
-                                <span class="breakdown-value positive">+$700M</span>
-                            </div>
-                            <div class="breakdown-row total">
-                                <span class="breakdown-label">Guaranteed Annual Revenue</span>
-                                <span class="breakdown-value positive">$700M</span>
-                            </div>
+                    <div class="breakdown">
+                        <div class="breakdown-row">
+                            <span class="breakdown-label">Tech Platform (all rights)</span>
+                            <span class="breakdown-value positive">+$700M</span>
                         </div>
-
-                        <div class="certainty-callout">
-                            <div class="certainty-callout-title">Why This Works</div>
-                            <div class="certainty-callout-text">One partner, one app, one relationship. Fans know where to watch. Apple has deep pockets and won't go bankrupt mid-deal.</div>
+                        <div class="breakdown-row total">
+                            <span class="breakdown-label">Guaranteed Revenue</span>
+                            <span class="breakdown-value positive">$700M/yr</span>
                         </div>
                     </div>
 
-                    <div class="option-card" tabindex="0" role="radio" aria-checked="false" data-option="split">
-                        <div class="option-header">
-                            <div class="option-title">Option B: Split Package</div>
-                            <div class="option-headline">$1.15B*</div>
-                        </div>
-                        <div class="option-desc">Rogers (regional), DAZN (national), Apple (streaming). More revenue on paper.</div>
-
-                        <div class="breakdown">
-                            <div class="breakdown-row">
-                                <span class="breakdown-label">Rogers (regional)</span>
-                                <span class="breakdown-value positive">+$450M</span>
-                            </div>
-                            <div class="breakdown-row">
-                                <span class="breakdown-label">DAZN (national)</span>
-                                <span class="breakdown-value positive">+$400M</span>
-                            </div>
-                            <div class="breakdown-row">
-                                <span class="breakdown-label">Apple TV+ (streaming)</span>
-                                <span class="breakdown-value positive">+$300M</span>
-                            </div>
-                            <div class="breakdown-row">
-                                <span class="breakdown-label">
-                                    <span class="tooltip-wrapper">
-                                        Coordination & ops costs
-                                        <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info about coordination costs">?</span>
-                                        <span class="tooltip-content">Managing 3 broadcast partners requires dedicated staff, legal overhead, and constant scheduling coordination. More partners = more meetings, more conflicts, more cost.</span>
-                                    </span>
-                                </span>
-                                <span class="breakdown-value negative">-$40M</span>
-                            </div>
-                            <div class="breakdown-row">
-                                <span class="breakdown-label">
-                                    <span class="tooltip-wrapper">
-                                        Fan fragmentation impact
-                                        <span class="tooltip-icon" tabindex="0" role="button" aria-label="More info about fan fragmentation">?</span>
-                                        <span class="tooltip-content">When fans can't figure out which app has tonight's game, some just stop watching. Confusion = lower ratings = lower ad revenue = partners pay less next time.</span>
-                                    </span>
-                                </span>
-                                <span class="breakdown-value warning">-$60M</span>
-                            </div>
-                            <div class="breakdown-row total">
-                                <span class="breakdown-label">Risk-Adjusted Revenue</span>
-                                <span class="breakdown-value positive">$1.05B</span>
-                            </div>
-                        </div>
-
-                        <div class="risk-callout">
-                            <div class="risk-callout-title">Hidden Risk: Partner Instability</div>
-                            <div class="risk-callout-text">DAZN has struggled financially in other markets. If they exit mid-contract, you lose $400M/yr and scramble to find replacement coverage.</div>
-                        </div>
+                    <div class="callout callout-stable">
+                        <div class="callout-title stable">Why This Works</div>
+                        <div class="callout-text">One partner, one app, one relationship. Fans know where to watch. Major tech platforms have deep pockets and are unlikely to exit mid-deal.</div>
                     </div>
                 </div>
 
-                <div class="decision-prompt">
-                    <p>The split looks better on paper ($1.05B vs $700M). But is it worth the risk?</p>
-                    <button class="confirm-btn" id="confirm-btn" disabled>Select an option to continue</button>
+                <div class="option-card risky">
+                    <div class="option-header">
+                        <div class="option-title">Option B: Split Package</div>
+                        <div class="option-headline risky">$1.15B*</div>
+                    </div>
+                    <p class="option-desc">Regional Broadcaster + Digital Streamer + Tech Platform. More revenue on paper.</p>
+
+                    <div class="breakdown">
+                        <div class="breakdown-row">
+                            <span class="breakdown-label">Regional Broadcaster</span>
+                            <span class="breakdown-value positive">+$450M</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span class="breakdown-label">Digital Streamer</span>
+                            <span class="breakdown-value positive">+$400M</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span class="breakdown-label">Tech Platform</span>
+                            <span class="breakdown-value positive">+$300M</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span class="breakdown-label">Coordination costs</span>
+                            <span class="breakdown-value negative">-$40M</span>
+                        </div>
+                        <div class="breakdown-row">
+                            <span class="breakdown-label">Fan fragmentation</span>
+                            <span class="breakdown-value warning">-$60M</span>
+                        </div>
+                        <div class="breakdown-row total">
+                            <span class="breakdown-label">Risk-Adjusted Revenue</span>
+                            <span class="breakdown-value warning">$1.05B/yr</span>
+                        </div>
+                    </div>
+
+                    <div class="callout callout-risk">
+                        <div class="callout-title risk">Structural Risk</div>
+                        <div class="callout-text">Multi-partner deals increase exposure to partner instability. If any partner exits mid-contract, you lose their contribution and scramble for replacement coverage. In a best-case scenario, all partners remain stable, and the league captures the full $1.05B value.</div>
+                    </div>
                 </div>
             </div>
 
-            <div class="outcome-section" id="outcome-section">
-                <div class="outcome-box" id="outcome-box">
-                    <div class="outcome-title" id="outcome-title"></div>
-                    <div class="outcome-text" id="outcome-text"></div>
-                </div>
+            <div class="twist-section">
+                <div class="twist-title">One Possible Outcome: Partner Exit</div>
+                <p class="twist-text">In one plausible scenario, a streaming partner pulls out mid-contract citing unsustainable losses. The $400M/year national broadcast deal evaporates. A replacement broadcaster picks up the games at a discount ($250M). <strong>New annual revenue: $960M</strong> — still more than the exclusive deal, but with significant operational complexity and uncertainty.</p>
+            </div>
 
-                <div class="stakeholder-box" id="stakeholder-box">
-                    <div class="stakeholder-title">Who Wins, Who Loses?</div>
-                    <div class="stakeholder-grid" id="stakeholder-grid"></div>
+            <div class="comparison-box">
+                <div class="comparison-title">Final Comparison: Risk-Adjusted Outcomes</div>
+                <div class="comparison-grid">
+                    <div class="comparison-item">
+                        <div class="comparison-label">Exclusive Deal</div>
+                        <div class="comparison-value best">$700M</div>
+                        <div class="comparison-sub">Guaranteed, stable</div>
+                    </div>
+                    <div class="comparison-item">
+                        <div class="comparison-label">Split (Projected)</div>
+                        <div class="comparison-value">$1.05B</div>
+                        <div class="comparison-sub">Risk-adjusted estimate</div>
+                    </div>
+                    <div class="comparison-item">
+                        <div class="comparison-label">Split (Downside)</div>
+                        <div class="comparison-value">$960M</div>
+                        <div class="comparison-sub">If partner exits</div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="twist-box" id="twist-box" style="display: none;">
-                    <div class="twist-title">Year 2 Update: DAZN Exits Canada</div>
-                    <div class="twist-text" id="twist-text"></div>
-                </div>
-
-                <div class="lesson-box">
-                    <div class="lesson-title">The Strategic Lesson</div>
-                    <div class="lesson-text" id="lesson-text"></div>
-                </div>
-
-                <div class="action-row">
-                    <button class="btn" id="reset-btn">Try Again</button>
-                </div>
+            <div class="lesson-box">
+                <div class="lesson-title">The Strategic Lesson</div>
+                <p class="lesson-text"><strong>"More money" isn't always "better deal."</strong> Risk-adjusted value matters. In the downside scenario, the $1.15B headline became $960M — roughly 37% more than the guaranteed deal, but with significantly higher operational complexity and uncertainty.<br><br><strong>Real-world parallel:</strong> The NFL splits its rights (CBS, FOX, NBC, ESPN, Amazon) because it has the market power to manage complexity. Smaller leagues often benefit from exclusive deals that guarantee stability.<br><br><strong>Question to consider:</strong> How would you weigh the potential upside against the operational risk?</p>
             </div>
         </div>
     </div>
-
-    <script>
-        const optionCards = document.querySelectorAll('.option-card');
-        const confirmBtn = document.getElementById('confirm-btn');
-        const decisionPhase = document.getElementById('decision-phase');
-        const outcomeSection = document.getElementById('outcome-section');
-        const outcomeBox = document.getElementById('outcome-box');
-        const outcomeTitle = document.getElementById('outcome-title');
-        const outcomeText = document.getElementById('outcome-text');
-        const twistBox = document.getElementById('twist-box');
-        const twistText = document.getElementById('twist-text');
-        const lessonText = document.getElementById('lesson-text');
-        const stakeholderGrid = document.getElementById('stakeholder-grid');
-        const resetBtn = document.getElementById('reset-btn');
-
-        let selectedOption = null;
-
-        const outcomes = {
-            exclusive: {
-                title: "You chose the Exclusive Apple Deal",
-                text: `<strong>Year 1 Result: $700M in revenue.</strong><br><br>
-                    Fans are happy — one app, one destination for all NHL content. Apple invests heavily in production quality and promotes the NHL globally. Your broadcast partner relationship is simple and stable.<br><br>
-                    <span class="outcome-highlight">You left $350M on the table</span> compared to the split deal's headline number. But you also avoided the coordination headaches and partner risk.`,
-                showTwist: false,
-                lesson: `<strong>The exclusive deal traded upside for certainty.</strong> Like Rogers' 2014 NHL deal, you bet on a single partner. The tradeoff: lower revenue ceiling, but predictable operations and fan experience.<br><br>
-                    <strong>Real-world parallel:</strong> The NFL splits its rights (CBS, FOX, NBC, ESPN, Amazon) because it has the market power to manage complexity. Smaller leagues often benefit from exclusive deals that guarantee stability.`,
-                stakeholders: [
-                    { label: 'Fans', impact: 'One app, easy to find games', positive: true },
-                    { label: 'League', impact: 'Lower revenue, but stable ops', mixed: true },
-                    { label: 'Apple', impact: 'Wins exclusive content', positive: true },
-                    { label: 'Rogers/DAZN', impact: 'Shut out of NHL entirely', negative: true }
-                ]
-            },
-            split: {
-                title: "You chose the Split Package",
-                text: `<strong>Year 1 Result: $1.05B in revenue (after costs).</strong><br><br>
-                    The extra $350M feels good — until the complaints start. Fans are frustrated: <em>"Which app has tonight's game?"</em> Blackout conflicts between Rogers and DAZN create PR nightmares. Your operations team is stretched thin managing three partner relationships.<br><br>
-                    But the money is real. <span class="outcome-highlight">$1.05B beats $700M.</span> If you can manage the complexity, this was the right call... right?`,
-                showTwist: true,
-                twistText: `<strong>Breaking:</strong> DAZN announces it's pulling out of the Canadian market, citing unsustainable losses. Your $400M/year national broadcast deal evaporates mid-contract.<br><br>
-                    <span class="outcome-danger">You scramble to find replacement coverage.</span> TSN picks up the games at a discount ($250M), but you've lost $150M annually AND damaged relationships with Rogers and Apple, who feel blindsided.<br><br>
-                    <strong>New annual revenue: $960M</strong> — still more than the exclusive deal, but the chaos has cost you leverage in future negotiations.`,
-                lesson: `<strong>Split packages maximize revenue but multiply risk.</strong> The NFL can do it because every partner is financially stable and the content is irreplaceable. For other leagues, one partner failure can cascade.<br><br>
-                    <strong>The real lesson:</strong> "More money" isn't always "better deal." Risk-adjusted value matters. The $1.15B headline became $960M reality — only 37% more than the guaranteed $700M, but with significantly more headaches.<br><br>
-                    <strong>Question to consider:</strong> Was the extra $260M worth the operational chaos and damaged relationships?`,
-                stakeholders: [
-                    { label: 'Fans', impact: 'Confused — 3 apps to track games', negative: true },
-                    { label: 'League', impact: 'More revenue, but ops nightmare', mixed: true },
-                    { label: 'Rogers', impact: 'Keeps regional, loses national', mixed: true },
-                    { label: 'DAZN', impact: 'Gets in, but risky bet', mixed: true }
-                ]
-            }
-        };
-
-        optionCards.forEach(card => {
-            const handler = () => {
-                optionCards.forEach(c => {
-                    c.classList.remove('selected');
-                    c.setAttribute('aria-checked', 'false');
-                });
-                card.classList.add('selected');
-                card.setAttribute('aria-checked', 'true');
-                selectedOption = card.dataset.option;
-                confirmBtn.disabled = false;
-                confirmBtn.textContent = selectedOption === 'exclusive'
-                    ? 'Confirm: Take the Exclusive Deal'
-                    : 'Confirm: Split the Package';
-            };
-            card.addEventListener('click', handler);
-            card.addEventListener('keydown', e => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    handler();
-                }
-            });
-        });
-
-        confirmBtn.addEventListener('click', () => {
-            if (!selectedOption) return;
-
-            const outcome = outcomes[selectedOption];
-            decisionPhase.style.display = 'none';
-            outcomeSection.classList.add('visible');
-
-            outcomeTitle.textContent = outcome.title;
-            outcomeText.innerHTML = outcome.text;
-            lessonText.innerHTML = outcome.lesson;
-
-            // Render stakeholder impacts
-            stakeholderGrid.innerHTML = outcome.stakeholders.map(s => {
-                let impactClass = '';
-                if (s.positive) impactClass = 'impact-positive';
-                else if (s.negative) impactClass = 'impact-negative';
-                else if (s.mixed) impactClass = 'impact-mixed';
-                return `
-                    <div class="stakeholder-item">
-                        <span class="stakeholder-label">${s.label}</span>
-                        <span class="stakeholder-impact ${impactClass}">${s.impact}</span>
-                    </div>
-                `;
-            }).join('');
-
-            if (outcome.showTwist) {
-                twistBox.style.display = 'block';
-                twistText.innerHTML = outcome.twistText;
-            } else {
-                twistBox.style.display = 'none';
-            }
-        });
-
-        resetBtn.addEventListener('click', () => {
-            selectedOption = null;
-            confirmBtn.disabled = true;
-            confirmBtn.textContent = 'Select an option to continue';
-            optionCards.forEach(c => {
-                c.classList.remove('selected');
-                c.setAttribute('aria-checked', 'false');
-            });
-            decisionPhase.style.display = 'block';
-            outcomeSection.classList.remove('visible');
-            twistBox.style.display = 'none';
-        });
-    </script>
 </body>
 </html>
